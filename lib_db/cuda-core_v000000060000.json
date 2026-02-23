@@ -1,0 +1,371 @@
+{
+  "__all__": [],
+  "TYPE_CHECKING": [],
+  "__version__": [],
+  "version": [],
+  "__version_tuple__": [],
+  "version_tuple": [],
+  "__commit_id__": [],
+  "commit_id": [],
+  "subdir": [],
+  "_inited": [],
+  "_driver_ver": [],
+  "_lazy_init": [],
+  "GraphDebugPrintOptions": {},
+  "GraphCompleteOptions": {},
+  "GraphBuilder": {
+    "__slots__": [],
+    "__init__": [
+      "self"
+    ],
+    "_init": [
+      "cls",
+      "stream",
+      "is_stream_owner",
+      "conditional_graph",
+      "is_join_required"
+    ],
+    "stream": [
+      "self"
+    ],
+    "is_join_required": [
+      "self"
+    ],
+    "begin_building": [
+      "self",
+      "mode"
+    ],
+    "is_building": [
+      "self"
+    ],
+    "end_building": [
+      "self"
+    ],
+    "complete": [
+      "self",
+      "options"
+    ],
+    "debug_dot_print": [
+      "self",
+      "path",
+      "options"
+    ],
+    "split": [
+      "self",
+      "count"
+    ],
+    "join": [],
+    "__cuda_stream__": [
+      "self"
+    ],
+    "_get_conditional_context": [
+      "self"
+    ],
+    "create_conditional_handle": [
+      "self",
+      "default_value"
+    ],
+    "_cond_with_params": [
+      "self",
+      "node_params"
+    ],
+    "if_cond": [
+      "self",
+      "handle"
+    ],
+    "if_else": [
+      "self",
+      "handle"
+    ],
+    "switch": [
+      "self",
+      "handle",
+      "count"
+    ],
+    "while_loop": [
+      "self",
+      "handle"
+    ],
+    "close": [
+      "self"
+    ],
+    "add_child": [
+      "self",
+      "child_graph"
+    ]
+  },
+  "Graph": {
+    "__slots__": [],
+    "__init__": [
+      "self"
+    ],
+    "_init": [
+      "cls",
+      "graph"
+    ],
+    "close": [
+      "self"
+    ],
+    "handle": [
+      "self"
+    ],
+    "update": [
+      "self",
+      "builder"
+    ],
+    "upload": [
+      "self",
+      "stream"
+    ],
+    "launch": [
+      "self",
+      "stream"
+    ]
+  },
+  "_driver": [],
+  "_driver_input_types": [],
+  "_nvjitlink": [],
+  "_nvjitlink_input_types": [],
+  "_nvjitlink_has_version_symbol": [
+    "inner_nvjitlink"
+  ],
+  "_decide_nvjitlink_or_driver": [],
+  "LinkerOptions": {
+    "__post_init__": [
+      "self"
+    ],
+    "_prepare_nvjitlink_options": [
+      "self",
+      "as_bytes"
+    ],
+    "_prepare_driver_options": [
+      "self"
+    ],
+    "as_bytes": [
+      "self",
+      "backend"
+    ]
+  },
+  "_exception_manager": [
+    "self"
+  ],
+  "nvJitLinkHandleT": [],
+  "LinkerHandleT": [],
+  "Linker": {
+    "__slots__": [],
+    "__init__": [
+      "self"
+    ],
+    "_add_code_object": [
+      "self",
+      "object_code"
+    ],
+    "link": [
+      "self",
+      "target_type"
+    ],
+    "get_error_log": [
+      "self"
+    ],
+    "get_info_log": [
+      "self"
+    ],
+    "_input_type_from_code_type": [
+      "self",
+      "code_type"
+    ],
+    "handle": [
+      "self"
+    ],
+    "backend": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "_warn_deprecated": [],
+  "LegacyPinnedMemoryResource": {
+    "allocate": [
+      "self",
+      "size",
+      "stream"
+    ],
+    "deallocate": [
+      "self",
+      "ptr",
+      "size",
+      "stream"
+    ],
+    "is_device_accessible": [
+      "self"
+    ],
+    "is_host_accessible": [
+      "self"
+    ],
+    "device_id": [
+      "self"
+    ]
+  },
+  "_SynchronousMemoryResource": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "device_id"
+    ],
+    "allocate": [
+      "self",
+      "size",
+      "stream"
+    ],
+    "deallocate": [
+      "self",
+      "ptr",
+      "size",
+      "stream"
+    ],
+    "is_device_accessible": [
+      "self"
+    ],
+    "is_host_accessible": [
+      "self"
+    ],
+    "device_id": [
+      "self"
+    ]
+  },
+  "VirtualMemoryHandleTypeT": [],
+  "VirtualMemoryLocationTypeT": [],
+  "VirtualMemoryGranularityT": [],
+  "VirtualMemoryAccessTypeT": [],
+  "VirtualMemoryAllocationTypeT": [],
+  "VirtualMemoryResourceOptions": {
+    "_a": [],
+    "_access_flags": [],
+    "_h": [],
+    "_handle_types": [],
+    "_g": [],
+    "_granularity": [],
+    "_l": [],
+    "_location_type": [],
+    "_allocation_type": [],
+    "_access_to_flags": [
+      "spec"
+    ],
+    "_allocation_type_to_driver": [
+      "spec"
+    ],
+    "_location_type_to_driver": [
+      "spec"
+    ],
+    "_handle_type_to_driver": [
+      "spec"
+    ],
+    "_granularity_to_driver": [
+      "spec"
+    ]
+  },
+  "VirtualMemoryResource": {
+    "__init__": [
+      "self",
+      "device_id",
+      "config"
+    ],
+    "_align_up": [
+      "size",
+      "gran"
+    ],
+    "modify_allocation": [
+      "self",
+      "buf",
+      "new_size",
+      "config"
+    ],
+    "_grow_allocation_fast_path": [
+      "self",
+      "buf",
+      "new_size",
+      "prop",
+      "aligned_additional_size",
+      "new_ptr"
+    ],
+    "_grow_allocation_slow_path": [
+      "self",
+      "buf",
+      "new_size",
+      "prop",
+      "aligned_additional_size",
+      "total_aligned_size",
+      "addr_align"
+    ],
+    "_build_access_descriptors": [
+      "self",
+      "prop"
+    ],
+    "allocate": [
+      "self",
+      "size",
+      "stream"
+    ],
+    "deallocate": [
+      "self",
+      "ptr",
+      "size",
+      "stream"
+    ],
+    "is_device_accessible": [
+      "self"
+    ],
+    "is_host_accessible": [
+      "self"
+    ],
+    "device_id": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "DRIVER_CU_RESULT_EXPLANATIONS": [],
+  "assert_type": [
+    "obj",
+    "expected_type"
+  ],
+  "assert_type_str_or_bytes_like": [
+    "obj"
+  ],
+  "raise_code_path_meant_to_be_unreachable": [],
+  "RUNTIME_CUDA_ERROR_EXPLANATIONS": [],
+  "NvmlError": [],
+  "UninitializedError": [],
+  "InvalidArgumentError": [],
+  "NotSupportedError": [],
+  "NoPermissionError": [],
+  "AlreadyInitializedError": [],
+  "NotFoundError": [],
+  "InsufficientSizeError": [],
+  "InsufficientPowerError": [],
+  "DriverNotLoadedError": [],
+  "TimeoutError": [],
+  "IrqIssueError": [],
+  "LibraryNotFoundError": [],
+  "FunctionNotFoundError": [],
+  "CorruptedInforomError": [],
+  "GpuIsLostError": [],
+  "ResetRequiredError": [],
+  "OperatingSystemError": [],
+  "LibRmVersionMismatchError": [],
+  "InUseError": [],
+  "MemoryError": [],
+  "NoDataError": [],
+  "VgpuEccNotSupportedError": [],
+  "InsufficientResourcesError": [],
+  "FreqNotSupportedError": [],
+  "ArgumentVersionMismatchError": [],
+  "DeprecatedError": [],
+  "NotReadyError": [],
+  "GpuNotFoundError": [],
+  "InvalidStateError": [],
+  "ResetTypeNotSupportedError": [],
+  "UnknownError": []
+}
