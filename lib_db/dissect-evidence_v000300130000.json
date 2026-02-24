@@ -1,0 +1,606 @@
+{
+  "__all__": [],
+  "Error": {},
+  "FileNotFoundError": {},
+  "IsADirectoryError": {},
+  "NotADirectoryError": {},
+  "NotASymlinkError": {},
+  "EWFError": {},
+  "InvalidSnapshot": {},
+  "InvalidBlock": {},
+  "UnsupportedVersion": {},
+  "catch_sigpipe": [
+    "func"
+  ],
+  "log": [],
+  "main": [],
+  "iterfileobj": [
+    "src"
+  ],
+  "hashfileobj": [
+    "src",
+    "alg"
+  ],
+  "handle_ls": [
+    "snapshot",
+    "args"
+  ],
+  "handle_cat": [
+    "snapshot",
+    "args"
+  ],
+  "handle_hash": [
+    "snapshot",
+    "args"
+  ],
+  "iter_fileobj": [
+    "src"
+  ],
+  "hash_fileobj": [
+    "src",
+    "alg"
+  ],
+  "crc32_filobj": [
+    "src"
+  ],
+  "status": [
+    "line",
+    "verbose"
+  ],
+  "Progress": {
+    "__init__": [
+      "self",
+      "size"
+    ],
+    "update": [
+      "self",
+      "offset"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "copy_stream": [
+    "fhin",
+    "fhout",
+    "length"
+  ],
+  "fill_zero": [
+    "fhout",
+    "length"
+  ],
+  "adcrypt_def": [],
+  "c_adcrypt": [],
+  "is_adcrypt": [
+    "fh"
+  ],
+  "ADCrypt": {
+    "__init__": [
+      "self",
+      "fh"
+    ],
+    "is_locked": [
+      "self"
+    ],
+    "unlock": [
+      "self"
+    ],
+    "wrap": [
+      "self",
+      "fh",
+      "index"
+    ]
+  },
+  "adcrypt_kdf": [
+    "passphrase",
+    "private_key",
+    "salt",
+    "key_len",
+    "count",
+    "algorithm"
+  ],
+  "ADCryptStream": {
+    "__init__": [
+      "self",
+      "fh",
+      "key",
+      "index"
+    ],
+    "_read": [
+      "self",
+      "offset",
+      "length"
+    ]
+  },
+  "ad1_def": [],
+  "c_ad1": [],
+  "EntryType": [],
+  "MetaType": [],
+  "FileClassType": [],
+  "MAX_OPEN_SEGMENTS": [],
+  "find_files": [
+    "path"
+  ],
+  "AD1": {
+    "__init__": [
+      "self",
+      "fh"
+    ],
+    "is_adcrypt": [
+      "self"
+    ],
+    "is_locked": [
+      "self"
+    ],
+    "segment": [
+      "self",
+      "idx"
+    ],
+    "unlock": [
+      "self"
+    ],
+    "_open_ad1": [
+      "self"
+    ],
+    "entry": [
+      "self",
+      "path",
+      "entry"
+    ],
+    "get": [
+      "self",
+      "path"
+    ],
+    "open": [
+      "self",
+      "path"
+    ]
+  },
+  "_hallicinate_root_entries": [
+    "ad1"
+  ],
+  "_create_root_entries": [
+    "ad1",
+    "parent",
+    "path",
+    "parts"
+  ],
+  "SegmentFile": {
+    "__init__": [
+      "self",
+      "fh"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "LogicalImage": {
+    "__init__": [
+      "self",
+      "fh"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "FileEntry": {
+    "__init__": [
+      "self",
+      "ad1",
+      "offset"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "entry": [
+      "self"
+    ],
+    "name": [
+      "self"
+    ],
+    "type": [
+      "self"
+    ],
+    "meta": [
+      "self"
+    ],
+    "children": [
+      "self"
+    ],
+    "size": [
+      "self"
+    ],
+    "atime": [
+      "self"
+    ],
+    "ctime": [
+      "self"
+    ],
+    "mtime": [
+      "self"
+    ],
+    "btime": [
+      "self"
+    ],
+    "md5": [
+      "self"
+    ],
+    "sha1": [
+      "self"
+    ],
+    "is_file": [
+      "self"
+    ],
+    "is_dir": [
+      "self"
+    ],
+    "is_symlink": [
+      "self"
+    ],
+    "listdir": [
+      "self"
+    ],
+    "iterdir": [
+      "self"
+    ],
+    "readlink": [
+      "self"
+    ],
+    "open": [
+      "self"
+    ]
+  },
+  "VirtualEntry": {
+    "__init__": [
+      "self",
+      "ad1",
+      "name"
+    ]
+  },
+  "FileMeta": {
+    "__init__": [
+      "self",
+      "ad1",
+      "offset"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "convert_ts": [
+    "value"
+  ],
+  "AD1Stream": {
+    "__init__": [
+      "self",
+      "ad1"
+    ],
+    "_read": [
+      "self",
+      "offset",
+      "length"
+    ]
+  },
+  "FileStream": {
+    "__init__": [
+      "self",
+      "entry"
+    ],
+    "_read": [
+      "self",
+      "offset",
+      "length"
+    ]
+  },
+  "SnapshotTableEntry": [],
+  "VERSION": [],
+  "DEFAULT_BLOCK_SIZE": [],
+  "MAX_BLOCK_TABLE_SIZE": [],
+  "MAX_IDX": [],
+  "IDX_MEMORY": [],
+  "IDX_METADATA": [],
+  "RESERVED_IDX": [],
+  "FILE_MAGIC": [],
+  "BLOCK_MAGIC": [],
+  "FOOTER_MAGIC": [],
+  "SPARSE_BYTES": [],
+  "AsdfWriter": {
+    "__init__": [
+      "self",
+      "fh",
+      "guid",
+      "compress",
+      "block_crc"
+    ],
+    "add_metadata_file": [
+      "self",
+      "path",
+      "fh",
+      "size"
+    ],
+    "add_bytes": [
+      "self",
+      "data",
+      "idx",
+      "base"
+    ],
+    "copy_bytes": [
+      "self",
+      "source",
+      "offset",
+      "num_bytes",
+      "idx",
+      "base"
+    ],
+    "copy_block": [
+      "self",
+      "source",
+      "offset",
+      "num_blocks",
+      "block_size",
+      "idx",
+      "base"
+    ],
+    "copy_runlist": [
+      "self",
+      "source",
+      "runlist",
+      "runlist_block_size",
+      "idx",
+      "base"
+    ],
+    "close": [
+      "self"
+    ],
+    "_write_header": [
+      "self"
+    ],
+    "_write_block": [
+      "self",
+      "source",
+      "offset",
+      "size",
+      "idx",
+      "base"
+    ],
+    "_write_meta": [
+      "self"
+    ],
+    "_write_table": [
+      "self"
+    ],
+    "_write_footer": [
+      "self"
+    ]
+  },
+  "AsdfSnapshot": {
+    "__init__": [
+      "self",
+      "fh",
+      "recover"
+    ],
+    "_parse_block_table": [
+      "self",
+      "offset",
+      "count"
+    ],
+    "_recover_block_table": [
+      "self"
+    ],
+    "_table_insert": [
+      "self",
+      "idx",
+      "offset",
+      "size",
+      "file_offset"
+    ],
+    "contains": [
+      "self",
+      "idx"
+    ],
+    "open": [
+      "self",
+      "idx"
+    ],
+    "streams": [
+      "self"
+    ],
+    "disks": [
+      "self"
+    ]
+  },
+  "Metadata": {
+    "__init__": [
+      "self",
+      "asdf"
+    ],
+    "names": [
+      "self"
+    ],
+    "members": [
+      "self"
+    ],
+    "open": [
+      "self",
+      "path"
+    ]
+  },
+  "AsdfStream": {
+    "__init__": [
+      "self",
+      "asdf",
+      "idx"
+    ],
+    "_read": [
+      "self",
+      "offset",
+      "length"
+    ]
+  },
+  "scrape_blocks": [
+    "fh",
+    "buffer_size"
+  ],
+  "_table_fit": [
+    "entry_offset",
+    "entry_size",
+    "entry_table",
+    "lookup_table",
+    "getentry"
+  ],
+  "asdf_def": [],
+  "c_asdf": [],
+  "SubStreamBase": {
+    "__init__": [
+      "self",
+      "fh"
+    ],
+    "write": [
+      "self",
+      "b"
+    ],
+    "tell": [
+      "self"
+    ],
+    "seek": [
+      "self",
+      "pos",
+      "whence"
+    ],
+    "close": [
+      "self"
+    ],
+    "finalize": [
+      "self"
+    ]
+  },
+  "Crc32Stream": {
+    "__init__": [
+      "self",
+      "fh"
+    ],
+    "write": [
+      "self",
+      "b"
+    ],
+    "digest": [
+      "self"
+    ],
+    "finalize": [
+      "self"
+    ]
+  },
+  "HashedStream": {
+    "__init__": [
+      "self",
+      "fh",
+      "alg"
+    ],
+    "write": [
+      "self",
+      "b"
+    ],
+    "digest": [
+      "self"
+    ],
+    "hexdigest": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "CompressedStream": {
+    "__init__": [
+      "self",
+      "fh"
+    ],
+    "write": [
+      "self",
+      "b"
+    ],
+    "finalize": [
+      "self"
+    ]
+  },
+  "EWF": {
+    "__init__": [
+      "self",
+      "fh"
+    ],
+    "segment": [
+      "self",
+      "idx"
+    ],
+    "open": [
+      "self"
+    ]
+  },
+  "EWFStream": {
+    "__init__": [
+      "self",
+      "ewf"
+    ],
+    "_read": [
+      "self",
+      "offset",
+      "length"
+    ]
+  },
+  "Segment": {
+    "__init__": [
+      "self",
+      "ewf",
+      "fh"
+    ],
+    "read_sectors": [
+      "self",
+      "sector",
+      "count"
+    ]
+  },
+  "HeaderSection": {
+    "__init__": [
+      "self",
+      "segment",
+      "section"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "VolumeSection": {
+    "__init__": [
+      "self",
+      "segment",
+      "section"
+    ]
+  },
+  "TableSection": {
+    "__init__": [
+      "self",
+      "segment",
+      "section"
+    ],
+    "read_chunk": [
+      "self",
+      "chunk"
+    ],
+    "read_sectors": [
+      "self",
+      "sector",
+      "count"
+    ]
+  },
+  "SectionDescriptor": {
+    "__init__": [
+      "self",
+      "fh"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ewf_def": [],
+  "c_ewf": []
+}
