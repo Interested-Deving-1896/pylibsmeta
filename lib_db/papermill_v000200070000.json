@@ -1,0 +1,2356 @@
+{
+  "version": [],
+  "logger": [],
+  "execute_notebook": [
+    "input_path",
+    "output_path",
+    "parameters",
+    "engine_name",
+    "request_save_on_cell_execute",
+    "prepare_only",
+    "kernel_name",
+    "language",
+    "progress_bar",
+    "log_output",
+    "stdout_file",
+    "stderr_file",
+    "start_timeout",
+    "report_mode",
+    "cwd"
+  ],
+  "prepare_notebook_metadata": [
+    "nb",
+    "input_path",
+    "output_path",
+    "report_mode"
+  ],
+  "ERROR_MARKER_TAG": [],
+  "ERROR_STYLE": [],
+  "ERROR_MESSAGE_TEMPLATE": [],
+  "ERROR_ANCHOR_MSG": [],
+  "remove_error_markers": [
+    "nb"
+  ],
+  "raise_for_execution_errors": [
+    "nb",
+    "output_path"
+  ],
+  "Bucket": {
+    "__init__": [
+      "self",
+      "name",
+      "service"
+    ],
+    "list": [
+      "self",
+      "prefix",
+      "delimiter"
+    ]
+  },
+  "Prefix": {
+    "__init__": [
+      "self",
+      "bucket",
+      "name",
+      "service"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "Key": {
+    "__init__": [
+      "self",
+      "bucket",
+      "name",
+      "size",
+      "etag",
+      "last_modified",
+      "storage_class",
+      "service"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "S3": {
+    "s3_session": [],
+    "lock": [],
+    "__init__": [
+      "self",
+      "keyname"
+    ],
+    "_bucket_name": [
+      "self",
+      "bucket"
+    ],
+    "_clean": [
+      "self",
+      "name"
+    ],
+    "_clean_s3": [
+      "self",
+      "name"
+    ],
+    "_get_key": [
+      "self",
+      "name"
+    ],
+    "_key_name": [
+      "self",
+      "name"
+    ],
+    "_list": [
+      "self",
+      "prefix",
+      "bucket",
+      "delimiter",
+      "keys",
+      "objects",
+      "page_size"
+    ],
+    "_put": [
+      "self",
+      "source",
+      "dest",
+      "num_callbacks",
+      "policy"
+    ],
+    "_put_string": [
+      "self",
+      "source",
+      "dest",
+      "num_callbacks",
+      "policy"
+    ],
+    "_is_s3": [
+      "self",
+      "name"
+    ],
+    "cat": [
+      "self",
+      "source",
+      "buffersize",
+      "memsize",
+      "compressed",
+      "encoding",
+      "raw"
+    ],
+    "cp_string": [
+      "self",
+      "source",
+      "dest"
+    ],
+    "list": [
+      "self",
+      "name",
+      "iterator"
+    ],
+    "listdir": [
+      "self",
+      "name"
+    ],
+    "read": [
+      "self",
+      "source",
+      "compressed",
+      "encoding"
+    ]
+  },
+  "PapermillEngines": {
+    "__init__": [
+      "self"
+    ],
+    "register": [
+      "self",
+      "name",
+      "engine"
+    ],
+    "register_entry_points": [
+      "self"
+    ],
+    "get_engine": [
+      "self",
+      "name"
+    ],
+    "execute_notebook_with_engine": [
+      "self",
+      "engine_name",
+      "nb",
+      "kernel_name"
+    ],
+    "nb_kernel_name": [
+      "self",
+      "engine_name",
+      "nb",
+      "name"
+    ],
+    "nb_language": [
+      "self",
+      "engine_name",
+      "nb",
+      "language"
+    ]
+  },
+  "catch_nb_assignment": [
+    "func"
+  ],
+  "NotebookExecutionManager": {
+    "PENDING": [],
+    "RUNNING": [],
+    "COMPLETED": [],
+    "FAILED": [],
+    "__init__": [
+      "self",
+      "nb",
+      "output_path",
+      "log_output",
+      "progress_bar",
+      "autosave_cell_every"
+    ],
+    "now": [
+      "self"
+    ],
+    "set_timer": [
+      "self"
+    ],
+    "save": [
+      "self"
+    ],
+    "autosave_cell": [
+      "self"
+    ],
+    "notebook_start": [
+      "self"
+    ],
+    "cell_start": [
+      "self",
+      "cell",
+      "cell_index"
+    ],
+    "cell_exception": [
+      "self",
+      "cell",
+      "cell_index"
+    ],
+    "cell_complete": [
+      "self",
+      "cell",
+      "cell_index"
+    ],
+    "notebook_complete": [
+      "self"
+    ],
+    "get_cell_description": [
+      "self",
+      "cell",
+      "escape_str"
+    ],
+    "complete_pbar": [
+      "self"
+    ],
+    "cleanup_pbar": [
+      "self"
+    ],
+    "__del__": [
+      "self"
+    ]
+  },
+  "Engine": {
+    "execute_notebook": [
+      "cls",
+      "nb",
+      "kernel_name",
+      "output_path",
+      "progress_bar",
+      "log_output",
+      "autosave_cell_every"
+    ],
+    "execute_managed_notebook": [
+      "cls",
+      "nb_man",
+      "kernel_name"
+    ],
+    "nb_kernel_name": [
+      "cls",
+      "nb",
+      "name"
+    ],
+    "nb_language": [
+      "cls",
+      "nb",
+      "language"
+    ]
+  },
+  "NBClientEngine": {
+    "execute_managed_notebook": [
+      "cls",
+      "nb_man",
+      "kernel_name",
+      "log_output",
+      "stdout_file",
+      "stderr_file",
+      "start_timeout",
+      "execution_timeout"
+    ]
+  },
+  "papermill_engines": [],
+  "Parameter": [],
+  "any_tagged_cell": [
+    "nb",
+    "tag"
+  ],
+  "nb_kernel_name": [
+    "nb",
+    "name"
+  ],
+  "nb_language": [
+    "nb",
+    "language"
+  ],
+  "find_first_tagged_cell_index": [
+    "nb",
+    "tag"
+  ],
+  "merge_kwargs": [
+    "caller_args"
+  ],
+  "remove_args": [
+    "args"
+  ],
+  "retry": [
+    "num"
+  ],
+  "chdir": [
+    "path"
+  ],
+  "ADL": {
+    "__init__": [
+      "self"
+    ],
+    "_split_url": [
+      "cls",
+      "url"
+    ],
+    "_get_token": [
+      "self"
+    ],
+    "_create_adapter": [
+      "self",
+      "store_name"
+    ],
+    "listdir": [
+      "self",
+      "url"
+    ],
+    "read": [
+      "self",
+      "url"
+    ],
+    "write": [
+      "self",
+      "buf",
+      "url"
+    ]
+  },
+  "INPUT_PIPED": [],
+  "OUTPUT_PIPED": [],
+  "print_papermill_version": [
+    "ctx",
+    "param",
+    "value"
+  ],
+  "papermill": [
+    "click_ctx",
+    "notebook_path",
+    "output_path",
+    "help_notebook",
+    "parameters",
+    "parameters_raw",
+    "parameters_file",
+    "parameters_yaml",
+    "parameters_base64",
+    "inject_input_path",
+    "inject_output_path",
+    "inject_paths",
+    "engine",
+    "request_save_on_cell_execute",
+    "autosave_cell_every",
+    "prepare_only",
+    "kernel",
+    "language",
+    "cwd",
+    "progress_bar",
+    "log_output",
+    "log_level",
+    "start_timeout",
+    "execution_timeout",
+    "report_mode",
+    "stdout_file",
+    "stderr_file"
+  ],
+  "_resolve_type": [
+    "value"
+  ],
+  "_is_int": [
+    "value"
+  ],
+  "_is_float": [
+    "value"
+  ],
+  "_open_notebook": [
+    "notebook_path",
+    "parameters"
+  ],
+  "_infer_parameters": [
+    "nb",
+    "name",
+    "language"
+  ],
+  "display_notebook_help": [
+    "ctx",
+    "notebook_path",
+    "parameters"
+  ],
+  "inspect_notebook": [
+    "notebook_path",
+    "parameters"
+  ],
+  "AwsError": {},
+  "FileExistsError": {},
+  "PapermillException": {},
+  "PapermillMissingParameterException": {},
+  "PapermillExecutionError": {
+    "__init__": [
+      "self",
+      "cell_index",
+      "exec_count",
+      "source",
+      "ename",
+      "evalue",
+      "traceback"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "PapermillRateLimitException": {},
+  "PapermillOptionalDependencyException": {},
+  "PapermillWarning": {},
+  "PapermillParameterOverwriteWarning": {},
+  "_COLORS": [],
+  "strip_color": [
+    "text"
+  ],
+  "missing_dependency_generator": [
+    "package",
+    "dep"
+  ],
+  "missing_environment_variable_generator": [
+    "package",
+    "env_key"
+  ],
+  "fallback_gs_is_retriable": [
+    "e"
+  ],
+  "PapermillIO": {
+    "__init__": [
+      "self"
+    ],
+    "read": [
+      "self",
+      "path",
+      "extensions"
+    ],
+    "write": [
+      "self",
+      "buf",
+      "path",
+      "extensions"
+    ],
+    "listdir": [
+      "self",
+      "path"
+    ],
+    "pretty_path": [
+      "self",
+      "path"
+    ],
+    "reset": [
+      "self"
+    ],
+    "register": [
+      "self",
+      "scheme",
+      "handler"
+    ],
+    "register_entry_points": [
+      "self"
+    ],
+    "get_handler": [
+      "self",
+      "path",
+      "extensions"
+    ]
+  },
+  "HttpHandler": {
+    "read": [
+      "cls",
+      "path"
+    ],
+    "listdir": [
+      "cls",
+      "path"
+    ],
+    "write": [
+      "cls",
+      "buf",
+      "path"
+    ],
+    "pretty_path": [
+      "cls",
+      "path"
+    ]
+  },
+  "LocalHandler": {
+    "__init__": [
+      "self"
+    ],
+    "read": [
+      "self",
+      "path"
+    ],
+    "listdir": [
+      "self",
+      "path"
+    ],
+    "write": [
+      "self",
+      "buf",
+      "path"
+    ],
+    "pretty_path": [
+      "self",
+      "path"
+    ],
+    "cwd": [
+      "self",
+      "new_path"
+    ]
+  },
+  "S3Handler": {
+    "read": [
+      "cls",
+      "path"
+    ],
+    "listdir": [
+      "cls",
+      "path"
+    ],
+    "write": [
+      "cls",
+      "buf",
+      "path"
+    ],
+    "pretty_path": [
+      "cls",
+      "path"
+    ]
+  },
+  "ADLHandler": {
+    "__init__": [
+      "self"
+    ],
+    "_get_client": [
+      "self"
+    ],
+    "read": [
+      "self",
+      "path"
+    ],
+    "listdir": [
+      "self",
+      "path"
+    ],
+    "write": [
+      "self",
+      "buf",
+      "path"
+    ],
+    "pretty_path": [
+      "self",
+      "path"
+    ]
+  },
+  "ABSHandler": {
+    "__init__": [
+      "self"
+    ],
+    "_get_client": [
+      "self"
+    ],
+    "read": [
+      "self",
+      "path"
+    ],
+    "listdir": [
+      "self",
+      "path"
+    ],
+    "write": [
+      "self",
+      "buf",
+      "path"
+    ],
+    "pretty_path": [
+      "self",
+      "path"
+    ]
+  },
+  "GCSHandler": {
+    "RATE_LIMIT_RETRIES": [],
+    "RETRY_DELAY": [],
+    "RETRY_MULTIPLIER": [],
+    "RETRY_MAX_DELAY": [],
+    "__init__": [
+      "self"
+    ],
+    "_get_client": [
+      "self"
+    ],
+    "read": [
+      "self",
+      "path"
+    ],
+    "listdir": [
+      "self",
+      "path"
+    ],
+    "write": [
+      "self",
+      "buf",
+      "path"
+    ],
+    "pretty_path": [
+      "self",
+      "path"
+    ]
+  },
+  "HDFSHandler": {
+    "__init__": [
+      "self"
+    ],
+    "_get_client": [
+      "self"
+    ],
+    "read": [
+      "self",
+      "path"
+    ],
+    "listdir": [
+      "self",
+      "path"
+    ],
+    "write": [
+      "self",
+      "buf",
+      "path"
+    ],
+    "pretty_path": [
+      "self",
+      "path"
+    ]
+  },
+  "GithubHandler": {
+    "__init__": [
+      "self"
+    ],
+    "_get_client": [
+      "self"
+    ],
+    "read": [
+      "self",
+      "path"
+    ],
+    "listdir": [
+      "self",
+      "path"
+    ],
+    "write": [
+      "self",
+      "buf",
+      "path"
+    ],
+    "pretty_path": [
+      "self",
+      "path"
+    ]
+  },
+  "StreamHandler": {
+    "read": [
+      "self",
+      "path"
+    ],
+    "listdir": [
+      "self",
+      "path"
+    ],
+    "write": [
+      "self",
+      "buf",
+      "path"
+    ],
+    "pretty_path": [
+      "self",
+      "path"
+    ]
+  },
+  "NotebookNodeHandler": {
+    "read": [
+      "self",
+      "path"
+    ],
+    "listdir": [
+      "self",
+      "path"
+    ],
+    "write": [
+      "self",
+      "buf",
+      "path"
+    ],
+    "pretty_path": [
+      "self",
+      "path"
+    ]
+  },
+  "NoIOHandler": {
+    "read": [
+      "self",
+      "path"
+    ],
+    "listdir": [
+      "self",
+      "path"
+    ],
+    "write": [
+      "self",
+      "buf",
+      "path"
+    ],
+    "pretty_path": [
+      "self",
+      "path"
+    ]
+  },
+  "NoDatesSafeLoader": {
+    "yaml_implicit_resolvers": []
+  },
+  "papermill_io": [],
+  "read_yaml_file": [
+    "path"
+  ],
+  "write_ipynb": [
+    "nb",
+    "path"
+  ],
+  "load_notebook_node": [
+    "notebook_path"
+  ],
+  "list_notebook_files": [
+    "path"
+  ],
+  "get_pretty_path": [
+    "path"
+  ],
+  "local_file_io_cwd": [
+    "path"
+  ],
+  "PapermillNotebookClient": {
+    "log_output": [],
+    "stdout_file": [],
+    "stderr_file": [],
+    "__init__": [
+      "self",
+      "nb_man",
+      "km",
+      "raise_on_iopub_timeout"
+    ],
+    "execute": [
+      "self"
+    ],
+    "papermill_execute_cells": [
+      "self"
+    ],
+    "log_output_message": [
+      "self",
+      "output"
+    ],
+    "process_message": [
+      "self"
+    ]
+  },
+  "PapermillTranslators": {
+    "__init__": [
+      "self"
+    ],
+    "register": [
+      "self",
+      "language",
+      "translator"
+    ],
+    "find_translator": [
+      "self",
+      "kernel_name",
+      "language"
+    ]
+  },
+  "Translator": {
+    "translate_raw_str": [
+      "cls",
+      "val"
+    ],
+    "translate_escaped_str": [
+      "cls",
+      "str_val"
+    ],
+    "translate_str": [
+      "cls",
+      "val"
+    ],
+    "translate_none": [
+      "cls",
+      "val"
+    ],
+    "translate_int": [
+      "cls",
+      "val"
+    ],
+    "translate_float": [
+      "cls",
+      "val"
+    ],
+    "translate_bool": [
+      "cls",
+      "val"
+    ],
+    "translate_dict": [
+      "cls",
+      "val"
+    ],
+    "translate_list": [
+      "cls",
+      "val"
+    ],
+    "translate": [
+      "cls",
+      "val"
+    ],
+    "comment": [
+      "cls",
+      "cmt_str"
+    ],
+    "assign": [
+      "cls",
+      "name",
+      "str_val"
+    ],
+    "codify": [
+      "cls",
+      "parameters",
+      "comment"
+    ],
+    "inspect": [
+      "cls",
+      "parameters_cell"
+    ]
+  },
+  "PythonTranslator": {
+    "PARAMETER_PATTERN": [],
+    "translate_float": [
+      "cls",
+      "val"
+    ],
+    "translate_bool": [
+      "cls",
+      "val"
+    ],
+    "translate_dict": [
+      "cls",
+      "val"
+    ],
+    "translate_list": [
+      "cls",
+      "val"
+    ],
+    "comment": [
+      "cls",
+      "cmt_str"
+    ],
+    "codify": [
+      "cls",
+      "parameters",
+      "comment"
+    ],
+    "inspect": [
+      "cls",
+      "parameters_cell"
+    ]
+  },
+  "RTranslator": {
+    "translate_none": [
+      "cls",
+      "val"
+    ],
+    "translate_bool": [
+      "cls",
+      "val"
+    ],
+    "translate_dict": [
+      "cls",
+      "val"
+    ],
+    "translate_list": [
+      "cls",
+      "val"
+    ],
+    "comment": [
+      "cls",
+      "cmt_str"
+    ],
+    "assign": [
+      "cls",
+      "name",
+      "str_val"
+    ]
+  },
+  "ScalaTranslator": {
+    "translate_int": [
+      "cls",
+      "val"
+    ],
+    "translate_dict": [
+      "cls",
+      "val"
+    ],
+    "translate_list": [
+      "cls",
+      "val"
+    ],
+    "comment": [
+      "cls",
+      "cmt_str"
+    ],
+    "assign": [
+      "cls",
+      "name",
+      "str_val"
+    ]
+  },
+  "JuliaTranslator": {
+    "translate_none": [
+      "cls",
+      "val"
+    ],
+    "translate_dict": [
+      "cls",
+      "val"
+    ],
+    "translate_list": [
+      "cls",
+      "val"
+    ],
+    "comment": [
+      "cls",
+      "cmt_str"
+    ]
+  },
+  "MatlabTranslator": {
+    "translate_escaped_str": [
+      "cls",
+      "str_val"
+    ],
+    "__translate_char_array": [
+      "str_val"
+    ],
+    "translate_none": [
+      "cls",
+      "val"
+    ],
+    "translate_dict": [
+      "cls",
+      "val"
+    ],
+    "translate_list": [
+      "cls",
+      "val"
+    ],
+    "comment": [
+      "cls",
+      "cmt_str"
+    ],
+    "codify": [
+      "cls",
+      "parameters",
+      "comment"
+    ]
+  },
+  "CSharpTranslator": {
+    "translate_none": [
+      "cls",
+      "val"
+    ],
+    "translate_bool": [
+      "cls",
+      "val"
+    ],
+    "translate_int": [
+      "cls",
+      "val"
+    ],
+    "translate_dict": [
+      "cls",
+      "val"
+    ],
+    "translate_list": [
+      "cls",
+      "val"
+    ],
+    "comment": [
+      "cls",
+      "cmt_str"
+    ],
+    "assign": [
+      "cls",
+      "name",
+      "str_val"
+    ]
+  },
+  "FSharpTranslator": {
+    "translate_none": [
+      "cls",
+      "val"
+    ],
+    "translate_bool": [
+      "cls",
+      "val"
+    ],
+    "translate_int": [
+      "cls",
+      "val"
+    ],
+    "translate_dict": [
+      "cls",
+      "val"
+    ],
+    "translate_list": [
+      "cls",
+      "val"
+    ],
+    "comment": [
+      "cls",
+      "cmt_str"
+    ],
+    "assign": [
+      "cls",
+      "name",
+      "str_val"
+    ]
+  },
+  "PowershellTranslator": {
+    "translate_escaped_str": [
+      "cls",
+      "str_val"
+    ],
+    "translate_float": [
+      "cls",
+      "val"
+    ],
+    "translate_none": [
+      "cls",
+      "val"
+    ],
+    "translate_bool": [
+      "cls",
+      "val"
+    ],
+    "translate_dict": [
+      "cls",
+      "val"
+    ],
+    "translate_list": [
+      "cls",
+      "val"
+    ],
+    "comment": [
+      "cls",
+      "cmt_str"
+    ],
+    "assign": [
+      "cls",
+      "name",
+      "str_val"
+    ]
+  },
+  "BashTranslator": {
+    "translate_none": [
+      "cls",
+      "val"
+    ],
+    "translate_bool": [
+      "cls",
+      "val"
+    ],
+    "translate_escaped_str": [
+      "cls",
+      "str_val"
+    ],
+    "translate_list": [
+      "cls",
+      "val"
+    ],
+    "comment": [
+      "cls",
+      "cmt_str"
+    ],
+    "assign": [
+      "cls",
+      "name",
+      "str_val"
+    ]
+  },
+  "papermill_translators": [],
+  "translate_parameters": [
+    "kernel_name",
+    "language",
+    "parameters",
+    "comment"
+  ],
+  "add_builtin_parameters": [
+    "parameters"
+  ],
+  "parameterize_path": [
+    "path",
+    "parameters"
+  ],
+  "parameterize_notebook": [
+    "nb",
+    "parameters",
+    "report_mode",
+    "comment",
+    "kernel_name",
+    "language",
+    "engine_name"
+  ],
+  "AzureBlobStore": {
+    "_blob_service_client": [
+      "self",
+      "account_name",
+      "sas_token"
+    ],
+    "_split_url": [
+      "self",
+      "url"
+    ],
+    "read": [
+      "self",
+      "url"
+    ],
+    "listdir": [
+      "self",
+      "url"
+    ],
+    "write": [
+      "self",
+      "buf",
+      "url"
+    ]
+  },
+  "TestNotebookHelpers": {
+    "setUp": [
+      "self"
+    ],
+    "tearDown": [
+      "self"
+    ],
+    "test_start_timeout": [
+      "self",
+      "preproc_mock"
+    ],
+    "test_default_start_timeout": [
+      "self",
+      "preproc_mock"
+    ],
+    "test_cell_insertion": [
+      "self"
+    ],
+    "test_no_tags": [
+      "self"
+    ],
+    "test_quoted_params": [
+      "self"
+    ],
+    "test_backslash_params": [
+      "self"
+    ],
+    "test_backslash_quote_params": [
+      "self"
+    ],
+    "test_double_backslash_quote_params": [
+      "self"
+    ],
+    "test_prepare_only": [
+      "self"
+    ]
+  },
+  "TestBrokenNotebook1": {
+    "setUp": [
+      "self"
+    ],
+    "tearDown": [
+      "self"
+    ],
+    "test": [
+      "self"
+    ]
+  },
+  "TestBrokenNotebook2": {
+    "setUp": [
+      "self"
+    ],
+    "tearDown": [
+      "self"
+    ],
+    "test": [
+      "self"
+    ]
+  },
+  "TestReportMode": {
+    "setUp": [
+      "self"
+    ],
+    "tearDown": [
+      "self"
+    ],
+    "test_report_mode": [
+      "self"
+    ]
+  },
+  "TestOutputPathNone": {
+    "test_output_path_of_none": [
+      "self"
+    ]
+  },
+  "TestCWD": {
+    "setUp": [
+      "self"
+    ],
+    "tearDown": [
+      "self"
+    ],
+    "test_local_save_ignores_cwd_assignment": [
+      "self"
+    ],
+    "test_execution_respects_cwd_assignment": [
+      "self"
+    ],
+    "test_pathlib_paths": [
+      "self"
+    ]
+  },
+  "TestSysExit": {
+    "setUp": [
+      "self"
+    ],
+    "tearDown": [
+      "self"
+    ],
+    "test_sys_exit": [
+      "self"
+    ],
+    "test_sys_exit0": [
+      "self"
+    ],
+    "test_sys_exit1": [
+      "self"
+    ],
+    "test_system_exit": [
+      "self"
+    ],
+    "test_line_magic_error": [
+      "self"
+    ]
+  },
+  "TestNotebookValidation": {
+    "setUp": [
+      "self"
+    ],
+    "tearDown": [
+      "self"
+    ],
+    "test_from_version_4_4_upgrades": [
+      "self"
+    ]
+  },
+  "TestMinimalNotebook": {
+    "setUp": [
+      "self"
+    ],
+    "tearDown": [
+      "self"
+    ],
+    "test_no_v3_language_backport": [
+      "self"
+    ]
+  },
+  "TestExecuteWithCustomEngine": {
+    "setUp": [
+      "self"
+    ],
+    "tearDown": [
+      "self"
+    ],
+    "test_custom_kernel_name_and_language": [
+      "self",
+      "translate_parameters",
+      "execute_managed_notebook"
+    ]
+  },
+  "TestNotebookNodeInput": {
+    "setUp": [
+      "self"
+    ],
+    "tearDown": [
+      "self"
+    ],
+    "test_notebook_node_input": [
+      "self"
+    ]
+  },
+  "TestOutputFormatting": {
+    "setUp": [
+      "self"
+    ],
+    "tearDown": [
+      "self"
+    ],
+    "test_output_formatting": [
+      "self"
+    ]
+  },
+  "ADLTest": {
+    "setUp": [
+      "self"
+    ],
+    "test_split_url_raises_exception_on_invalid_url": [
+      "self"
+    ],
+    "test_split_url_splits_valid_url": [
+      "self"
+    ],
+    "test_listdir_calls_ls_on_adl_adapter": [
+      "self"
+    ],
+    "test_read_opens_and_reads_file": [
+      "self"
+    ],
+    "test_write_opens_file_and_writes_to_it": [
+      "self"
+    ],
+    "test_create_adapter": [
+      "self",
+      "azure_dl_filesystem_mock",
+      "auth_mock"
+    ]
+  },
+  "temp_file": [],
+  "test_exceptions_are_unpickleable": [
+    "temp_file",
+    "exc",
+    "args"
+  ],
+  "TestPapermillClientWrapper": {
+    "setUp": [
+      "self"
+    ],
+    "test_logging_stderr_msg": [
+      "self"
+    ],
+    "test_logging_stdout_msg": [
+      "self"
+    ],
+    "test_logging_data_msg": [
+      "self"
+    ]
+  },
+  "MockBytesIO": {
+    "__init__": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "index"
+    ],
+    "seek": [
+      "self",
+      "seed"
+    ]
+  },
+  "ABSTest": {
+    "setUp": [
+      "self"
+    ],
+    "test_split_url_raises_exception_on_invalid_url": [
+      "self"
+    ],
+    "test_split_url_splits_valid_url": [
+      "self"
+    ],
+    "test_split_url_splits_valid_url_no_sas": [
+      "self"
+    ],
+    "test_split_url_splits_valid_url_with_prefix": [
+      "self"
+    ],
+    "test_listdir_calls": [
+      "self"
+    ],
+    "test_reads_file": [
+      "self",
+      "mockBytesIO"
+    ],
+    "test_write_file": [
+      "self"
+    ],
+    "test_blob_service_client": [
+      "self"
+    ],
+    "test_blob_service_client_environment_credentials": [
+      "self"
+    ]
+  },
+  "TestNotebookParametrizing": {
+    "count_nb_injected_parameter_cells": [
+      "self",
+      "nb"
+    ],
+    "test_no_tag_copying": [
+      "self"
+    ],
+    "test_injected_parameters_tag": [
+      "self"
+    ],
+    "test_repeated_run_injected_parameters_tag": [
+      "self"
+    ],
+    "test_no_parameter_tag": [
+      "self"
+    ],
+    "test_repeated_run_no_parameters_tag": [
+      "self"
+    ],
+    "test_custom_comment": [
+      "self"
+    ]
+  },
+  "TestBuiltinParameters": {
+    "test_add_builtin_parameters_keeps_provided_parameters": [
+      "self"
+    ],
+    "test_add_builtin_parameters_adds_dict_of_builtins": [
+      "self"
+    ],
+    "test_add_builtin_parameters_allows_to_override_builtin": [
+      "self"
+    ],
+    "test_builtin_parameters_include_run_uuid": [
+      "self"
+    ],
+    "test_builtin_parameters_include_current_datetime_local": [
+      "self"
+    ],
+    "test_builtin_parameters_include_current_datetime_utc": [
+      "self"
+    ]
+  },
+  "TestPathParameterizing": {
+    "test_plain_text_path_with_empty_parameters_object": [
+      "self"
+    ],
+    "test_plain_text_path_with_none_parameters": [
+      "self"
+    ],
+    "test_plain_text_path_with_unused_parameters": [
+      "self"
+    ],
+    "test_path_with_single_parameter": [
+      "self"
+    ],
+    "test_path_with_boolean_parameter": [
+      "self"
+    ],
+    "test_path_with_dict_parameter": [
+      "self"
+    ],
+    "test_path_with_list_parameter": [
+      "self"
+    ],
+    "test_path_with_none_parameter": [
+      "self"
+    ],
+    "test_path_with_numeric_parameter": [
+      "self"
+    ],
+    "test_path_with_numeric_format_string": [
+      "self"
+    ],
+    "test_path_with_float_format_string": [
+      "self"
+    ],
+    "test_path_with_multiple_parameter": [
+      "self"
+    ],
+    "test_parameterized_path_with_undefined_parameter": [
+      "self"
+    ],
+    "test_parameterized_path_with_none_parameters": [
+      "self"
+    ],
+    "test_path_of_none_returns_none": [
+      "self"
+    ],
+    "test_path_of_notebook_node_returns_input": [
+      "self"
+    ]
+  },
+  "NOTEBOOKS_PATH": [],
+  "_get_fullpath": [
+    "name"
+  ],
+  "click_context": [],
+  "test_inspect_notebook": [
+    "name",
+    "expected"
+  ],
+  "test_str_path": [],
+  "test_display_notebook_help": [
+    "click_context",
+    "name",
+    "expected"
+  ],
+  "test_no_tagged_cell": [],
+  "test_tagged_cell": [],
+  "test_merge_kwargs": [],
+  "test_remove_args": [],
+  "test_retry": [],
+  "test_chdir": [],
+  "mock_gcs_fs_wrapper": [
+    "exception",
+    "max_raises"
+  ],
+  "MockGCSFile": {
+    "__init__": [
+      "self",
+      "exception",
+      "max_raises"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self"
+    ],
+    "read": [
+      "self"
+    ],
+    "write": [
+      "self",
+      "buf"
+    ]
+  },
+  "GCSTest": {
+    "setUp": [
+      "self"
+    ],
+    "test_gcs_read": [
+      "self",
+      "mock_gcs_filesystem"
+    ],
+    "test_gcs_write": [
+      "self",
+      "mock_gcs_filesystem"
+    ],
+    "test_gcs_listdir": [
+      "self",
+      "mock_gcs_filesystem"
+    ],
+    "test_gcs_handle_exception": [
+      "self",
+      "mock_gcs_filesystem"
+    ],
+    "test_gcs_retry": [
+      "self",
+      "mock_gcs_filesystem"
+    ],
+    "test_gcs_retry_older_exception": [
+      "self",
+      "mock_gcs_filesystem"
+    ],
+    "test_gcs_fallback_retry_unknown_failure_code": [
+      "self",
+      "mock_gcs_filesystem",
+      "mock_gcs_retriable"
+    ],
+    "test_gcs_invalid_code": [
+      "self",
+      "mock_gcs_filesystem",
+      "mock_gcs_retriable"
+    ],
+    "test_fallback_gcs_invalid_code": [
+      "self",
+      "mock_gcs_filesystem",
+      "mock_gcs_retriable"
+    ],
+    "test_gcs_unretryable": [
+      "self",
+      "mock_gcs_filesystem"
+    ]
+  },
+  "bucket_no_service": [],
+  "bucket_with_service": [],
+  "bucket_sqs": [],
+  "bucket_ec2": [],
+  "bucket_multiservice": [],
+  "test_bucket_init": [],
+  "test_bucket_defaults": [],
+  "test_bucket_missing_params": [],
+  "test_bucket_list": [
+    "bucket_sqs"
+  ],
+  "test_prefix_init": [],
+  "test_prefix_defaults": [],
+  "test_prefix_str": [
+    "bucket_sqs"
+  ],
+  "test_prefix_repr": [
+    "bucket_sqs"
+  ],
+  "test_key_init": [],
+  "test_key_repr": [],
+  "test_key_defaults": [],
+  "test_s3_defaults": [],
+  "local_dir": [],
+  "test_bucket_name": [],
+  "test_string": [],
+  "test_file_path": [],
+  "test_empty_file_path": [],
+  "no_empty_lines": [],
+  "test_clean_nb_content": [],
+  "read_from_gen": [],
+  "s3_client": [],
+  "test_s3_read": [
+    "s3_client"
+  ],
+  "test_s3_read_empty": [
+    "s3_client"
+  ],
+  "test_s3_write": [
+    "s3_client"
+  ],
+  "test_s3_overwrite": [
+    "s3_client"
+  ],
+  "test_s3_listdir": [
+    "s3_client"
+  ],
+  "kernel_name": [],
+  "get_notebook_path": [],
+  "get_notebook_dir": [],
+  "test_resolve_type": [
+    "test_input",
+    "expected"
+  ],
+  "test_is_float": [
+    "value",
+    "expected"
+  ],
+  "test_is_int": [
+    "value",
+    "expected"
+  ],
+  "TestCLI": {
+    "default_execute_kwargs": [],
+    "setUp": [
+      "self"
+    ],
+    "augment_execute_kwargs": [
+      "self"
+    ],
+    "test_parameters": [
+      "self",
+      "execute_patch"
+    ],
+    "test_parameters_raw": [
+      "self",
+      "execute_patch"
+    ],
+    "test_parameters_file": [
+      "self",
+      "execute_patch"
+    ],
+    "test_parameters_yaml": [
+      "self",
+      "execute_patch"
+    ],
+    "test_parameters_yaml_date": [
+      "self",
+      "execute_patch"
+    ],
+    "test_parameters_empty": [
+      "self",
+      "execute_patch"
+    ],
+    "test_parameters_yaml_override": [
+      "self",
+      "execute_patch"
+    ],
+    "test_parameters_dead_kernel": [
+      "self",
+      "execute_patch"
+    ],
+    "test_parameters_base64": [
+      "self",
+      "execute_patch"
+    ],
+    "test_parameters_base64_date": [
+      "self",
+      "execute_patch"
+    ],
+    "test_inject_input_path": [
+      "self",
+      "execute_patch"
+    ],
+    "test_inject_output_path": [
+      "self",
+      "execute_patch"
+    ],
+    "test_inject_paths": [
+      "self",
+      "execute_patch"
+    ],
+    "test_engine": [
+      "self",
+      "execute_patch"
+    ],
+    "test_prepare_only": [
+      "self",
+      "execute_patch"
+    ],
+    "test_kernel": [
+      "self",
+      "execute_patch"
+    ],
+    "test_language": [
+      "self",
+      "execute_patch"
+    ],
+    "test_set_cwd": [
+      "self",
+      "execute_patch"
+    ],
+    "test_progress_bar": [
+      "self",
+      "execute_patch"
+    ],
+    "test_no_progress_bar": [
+      "self",
+      "execute_patch"
+    ],
+    "test_log_output": [
+      "self",
+      "execute_patch"
+    ],
+    "test_log_output_plus_progress": [
+      "self",
+      "execute_patch"
+    ],
+    "test_no_log_output": [
+      "self",
+      "execute_patch"
+    ],
+    "test_log_level": [
+      "self",
+      "execute_patch"
+    ],
+    "test_start_timeout": [
+      "self",
+      "execute_patch"
+    ],
+    "test_start_timeout_backwards_compatibility": [
+      "self",
+      "execute_patch"
+    ],
+    "test_execution_timeout": [
+      "self",
+      "execute_patch"
+    ],
+    "test_report_mode": [
+      "self",
+      "execute_patch"
+    ],
+    "test_no_report_mode": [
+      "self",
+      "execute_patch"
+    ],
+    "test_version": [
+      "self",
+      "execute_patch"
+    ],
+    "test_help_notebook": [
+      "self",
+      "display_notebook_help",
+      "execute_path"
+    ],
+    "test_many_args": [
+      "self",
+      "execute_patch"
+    ]
+  },
+  "papermill_cli": [
+    "papermill_args"
+  ],
+  "papermill_version": [],
+  "notebook": [],
+  "require_papermill_installed": [],
+  "test_pipe_in_out_auto": [
+    "notebook"
+  ],
+  "test_pipe_in_out_explicit": [
+    "notebook"
+  ],
+  "test_pipe_out_auto": [
+    "tmpdir",
+    "notebook"
+  ],
+  "test_pipe_out_explicit": [
+    "tmpdir",
+    "notebook"
+  ],
+  "test_pipe_in_auto": [
+    "tmpdir",
+    "notebook"
+  ],
+  "test_pipe_in_explicit": [
+    "tmpdir",
+    "notebook"
+  ],
+  "test_stdout_file": [
+    "tmpdir"
+  ],
+  "FIXTURE_PATH": [],
+  "TestPapermillIO": {
+    "setUp": [
+      "self"
+    ],
+    "tearDown": [
+      "self"
+    ],
+    "test_get_handler": [
+      "self"
+    ],
+    "test_get_local_handler": [
+      "self"
+    ],
+    "test_get_no_io_handler": [
+      "self"
+    ],
+    "test_get_notebook_node_handler": [
+      "self"
+    ],
+    "test_entrypoint_register": [
+      "self"
+    ],
+    "test_register_ordering": [
+      "self"
+    ],
+    "test_read": [
+      "self"
+    ],
+    "test_read_bytes": [
+      "self"
+    ],
+    "test_read_with_no_file_extension": [
+      "self"
+    ],
+    "test_read_with_invalid_file_extension": [
+      "self"
+    ],
+    "test_read_with_valid_file_extension": [
+      "self"
+    ],
+    "test_read_yaml_with_no_file_extension": [
+      "self"
+    ],
+    "test_read_yaml_with_invalid_file_extension": [
+      "self"
+    ],
+    "test_read_stdin": [
+      "self"
+    ],
+    "test_listdir": [
+      "self"
+    ],
+    "test_write": [
+      "self"
+    ],
+    "test_write_with_no_file_extension": [
+      "self"
+    ],
+    "test_write_with_path_of_none": [
+      "self"
+    ],
+    "test_write_with_invalid_file_extension": [
+      "self"
+    ],
+    "test_write_stdout": [
+      "self"
+    ],
+    "test_pretty_path": [
+      "self"
+    ]
+  },
+  "TestLocalHandler": {
+    "test_read_utf8": [
+      "self"
+    ],
+    "test_write_utf8": [
+      "self"
+    ],
+    "test_write_no_directory_exists": [
+      "self"
+    ],
+    "test_write_local_directory": [
+      "self"
+    ],
+    "test_write_passed_cwd": [
+      "self"
+    ],
+    "test_local_file_io_cwd": [
+      "self"
+    ],
+    "test_read_from_string": [
+      "self"
+    ],
+    "test_invalid_string": [
+      "self"
+    ]
+  },
+  "TestNoIOHandler": {
+    "test_raises_on_read": [
+      "self"
+    ],
+    "test_raises_on_listdir": [
+      "self"
+    ],
+    "test_write_returns_none": [
+      "self"
+    ],
+    "test_pretty_path": [
+      "self"
+    ]
+  },
+  "TestADLHandler": {
+    "setUp": [
+      "self"
+    ],
+    "test_read": [
+      "self"
+    ],
+    "test_listdir": [
+      "self"
+    ],
+    "test_write": [
+      "self"
+    ]
+  },
+  "TestHttpHandler": {
+    "test_listdir": [
+      "self"
+    ],
+    "test_read": [
+      "self"
+    ],
+    "test_write": [
+      "self"
+    ],
+    "test_write_failure": [
+      "self"
+    ]
+  },
+  "TestStreamHandler": {
+    "test_read_from_stdin": [
+      "self"
+    ],
+    "test_raises_on_listdir": [
+      "self"
+    ],
+    "test_write_to_stdout_buffer": [
+      "self",
+      "mock_stdout"
+    ],
+    "test_write_to_stdout": [
+      "self",
+      "mock_stdout"
+    ],
+    "test_pretty_path_returns_input_path": [
+      "self"
+    ]
+  },
+  "TestNotebookNodeHandler": {
+    "test_read_notebook_node": [
+      "self"
+    ],
+    "test_raises_on_listdir": [
+      "self"
+    ],
+    "test_raises_on_write": [
+      "self"
+    ],
+    "test_pretty_path": [
+      "self"
+    ]
+  },
+  "test_translate_type_python": [
+    "test_input",
+    "expected"
+  ],
+  "test_translate_codify_python": [
+    "parameters",
+    "expected"
+  ],
+  "test_translate_comment_python": [
+    "test_input",
+    "expected"
+  ],
+  "test_inspect_python": [
+    "test_input",
+    "expected"
+  ],
+  "test_translate_type_r": [
+    "test_input",
+    "expected"
+  ],
+  "test_translate_comment_r": [
+    "test_input",
+    "expected"
+  ],
+  "test_translate_codify_r": [
+    "parameters",
+    "expected"
+  ],
+  "test_translate_type_scala": [
+    "test_input",
+    "expected"
+  ],
+  "test_translate_comment_scala": [
+    "test_input",
+    "expected"
+  ],
+  "test_translate_assign_scala": [
+    "input_name",
+    "input_value",
+    "expected"
+  ],
+  "test_translate_codify_scala": [
+    "parameters",
+    "expected"
+  ],
+  "test_translate_type_csharp": [
+    "test_input",
+    "expected"
+  ],
+  "test_translate_comment_csharp": [
+    "test_input",
+    "expected"
+  ],
+  "test_translate_assign_csharp": [
+    "input_name",
+    "input_value",
+    "expected"
+  ],
+  "test_translate_codify_csharp": [
+    "parameters",
+    "expected"
+  ],
+  "test_translate_type_powershell": [
+    "test_input",
+    "expected"
+  ],
+  "test_translate_codify_powershell": [
+    "parameters",
+    "expected"
+  ],
+  "test_translate_assign_powershell": [
+    "input_name",
+    "input_value",
+    "expected"
+  ],
+  "test_translate_comment_powershell": [
+    "test_input",
+    "expected"
+  ],
+  "test_translate_type_fsharp": [
+    "test_input",
+    "expected"
+  ],
+  "test_translate_comment_fsharp": [
+    "test_input",
+    "expected"
+  ],
+  "test_translate_assign_fsharp": [
+    "input_name",
+    "input_value",
+    "expected"
+  ],
+  "test_translate_codify_fsharp": [
+    "parameters",
+    "expected"
+  ],
+  "test_translate_type_julia": [
+    "test_input",
+    "expected"
+  ],
+  "test_translate_codify_julia": [
+    "parameters",
+    "expected"
+  ],
+  "test_translate_comment_julia": [
+    "test_input",
+    "expected"
+  ],
+  "test_translate_type_matlab": [
+    "test_input",
+    "expected"
+  ],
+  "test_translate_codify_matlab": [
+    "parameters",
+    "expected"
+  ],
+  "test_translate_comment_matlab": [
+    "test_input",
+    "expected"
+  ],
+  "test_find_translator_with_exact_kernel_name": [],
+  "test_find_translator_with_exact_language": [],
+  "test_find_translator_with_no_such_kernel_or_language": [],
+  "test_translate_uses_str_representation_of_unknown_types": [],
+  "test_translator_must_implement_translate_dict": [],
+  "test_translator_must_implement_translate_list": [],
+  "test_translator_must_implement_comment": [],
+  "test_translate_type_sh": [
+    "test_input",
+    "expected"
+  ],
+  "test_translate_comment_sh": [
+    "test_input",
+    "expected"
+  ],
+  "test_translate_codify_sh": [
+    "parameters",
+    "expected"
+  ],
+  "MockHadoopFileSystem": {
+    "get_file_info": [
+      "self",
+      "path"
+    ],
+    "open_input_stream": [
+      "self",
+      "path"
+    ],
+    "open_output_stream": [
+      "self",
+      "path"
+    ]
+  },
+  "MockHadoopFile": {
+    "__init__": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self"
+    ],
+    "read": [
+      "self"
+    ],
+    "write": [
+      "self",
+      "new_content"
+    ]
+  },
+  "MockFileInfo": {
+    "__init__": [
+      "self",
+      "path"
+    ]
+  },
+  "HDFSTest": {
+    "setUp": [
+      "self"
+    ],
+    "test_hdfs_listdir": [
+      "self",
+      "mock_hdfs_filesystem"
+    ],
+    "test_hdfs_read": [
+      "self",
+      "mock_hdfs_filesystem"
+    ],
+    "test_hdfs_write": [
+      "self",
+      "mock_hdfs_filesystem"
+    ]
+  },
+  "AnyMock": [
+    "cls"
+  ],
+  "TestNotebookExecutionManager": {
+    "setUp": [
+      "self"
+    ],
+    "test_basic_pbar": [
+      "self"
+    ],
+    "test_no_pbar": [
+      "self"
+    ],
+    "test_set_timer": [
+      "self"
+    ],
+    "test_save": [
+      "self"
+    ],
+    "test_save_no_output": [
+      "self"
+    ],
+    "test_save_new_nb": [
+      "self"
+    ],
+    "test_get_cell_description": [
+      "self"
+    ],
+    "test_notebook_start": [
+      "self"
+    ],
+    "test_notebook_start_new_nb": [
+      "self"
+    ],
+    "test_notebook_start_markdown_code": [
+      "self"
+    ],
+    "test_cell_start": [
+      "self"
+    ],
+    "test_cell_start_new_nb": [
+      "self"
+    ],
+    "test_cell_exception": [
+      "self"
+    ],
+    "test_cell_exception_new_nb": [
+      "self"
+    ],
+    "test_cell_complete_after_cell_start": [
+      "self"
+    ],
+    "test_cell_complete_without_cell_start": [
+      "self"
+    ],
+    "test_cell_complete_after_cell_exception": [
+      "self"
+    ],
+    "test_cell_complete_new_nb": [
+      "self"
+    ],
+    "test_notebook_complete": [
+      "self"
+    ],
+    "test_notebook_complete_new_nb": [
+      "self"
+    ],
+    "test_notebook_complete_cell_status_completed": [
+      "self"
+    ],
+    "test_notebook_complete_cell_status_with_failed": [
+      "self"
+    ]
+  },
+  "TestEngineBase": {
+    "setUp": [
+      "self"
+    ],
+    "test_wrap_and_execute_notebook": [
+      "self"
+    ],
+    "test_cell_callback_execute": [
+      "self"
+    ],
+    "test_no_cell_callback_execute": [
+      "self"
+    ]
+  },
+  "TestNBClientEngine": {
+    "setUp": [
+      "self"
+    ],
+    "test_nb_convert_engine": [
+      "self"
+    ],
+    "test_nb_convert_engine_execute": [
+      "self"
+    ],
+    "test_nb_convert_log_outputs": [
+      "self"
+    ],
+    "test_nb_convert_no_log_outputs": [
+      "self"
+    ]
+  },
+  "TestEngineRegistration": {
+    "setUp": [
+      "self"
+    ],
+    "test_registration": [
+      "self"
+    ],
+    "test_getting": [
+      "self"
+    ],
+    "test_registering_entry_points": [
+      "self"
+    ]
+  },
+  "TestMidCellAutosave": {
+    "setUp": [
+      "self"
+    ],
+    "test_autosave_not_too_fast": [
+      "self"
+    ],
+    "test_autosave_disable": [
+      "self"
+    ],
+    "test_end2end_autosave_slow_notebook": [
+      "self"
+    ]
+  }
+}
