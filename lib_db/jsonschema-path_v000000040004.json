@@ -1,0 +1,322 @@
+{
+  "SchemaAccessor": {
+    "__init__": [
+      "self",
+      "schema",
+      "resolver",
+      "resolved_cache_maxsize"
+    ],
+    "from_schema": [
+      "cls",
+      "schema",
+      "specification",
+      "base_uri",
+      "handlers",
+      "resolved_cache_maxsize"
+    ],
+    "__getitem__": [
+      "self",
+      "parts"
+    ],
+    "stat": [
+      "self",
+      "parts"
+    ],
+    "keys": [
+      "self",
+      "parts"
+    ],
+    "len": [
+      "self",
+      "parts"
+    ],
+    "contains": [
+      "self",
+      "parts",
+      "key"
+    ],
+    "require_child": [
+      "self",
+      "parts",
+      "key"
+    ],
+    "read": [
+      "self",
+      "parts"
+    ],
+    "resolve": [
+      "self",
+      "parts"
+    ],
+    "get_resolved": [
+      "self",
+      "parts"
+    ]
+  },
+  "ResolveResult": {},
+  "CachedPathResolver": {
+    "__init__": [
+      "self",
+      "resolver"
+    ],
+    "resolve": [
+      "self",
+      "node",
+      "parts"
+    ],
+    "_resolve_with_prefix_cache": [
+      "self",
+      "node",
+      "parts"
+    ],
+    "_sync_registry": [
+      "self",
+      "registry"
+    ]
+  },
+  "USE_REQUESTS": [],
+  "SchemaRetriever": {
+    "__init__": [
+      "self",
+      "handlers",
+      "specification"
+    ],
+    "__call__": [
+      "self",
+      "uri"
+    ]
+  },
+  "is_ref": [
+    "item"
+  ],
+  "TDefault": [],
+  "TSchemaPath": [],
+  "SPEC_SEPARATOR": [],
+  "NOTSET": [],
+  "SchemaPath": {
+    "_parse_args": [
+      "cls",
+      "args",
+      "sep"
+    ],
+    "from_dict": [
+      "cls",
+      "data"
+    ],
+    "from_path": [
+      "cls",
+      "path",
+      "resolved_cache_maxsize"
+    ],
+    "from_file_path": [
+      "cls",
+      "file_path",
+      "resolved_cache_maxsize"
+    ],
+    "from_file": [
+      "cls",
+      "fileobj",
+      "base_uri",
+      "spec_url",
+      "resolved_cache_maxsize"
+    ],
+    "str_keys": [
+      "self"
+    ],
+    "str_items": [
+      "self"
+    ],
+    "read_str": [
+      "self",
+      "default"
+    ],
+    "read_str_or_list": [
+      "self",
+      "default"
+    ],
+    "read_bool": [
+      "self",
+      "default"
+    ],
+    "as_uri": [
+      "self"
+    ],
+    "open": [
+      "self"
+    ],
+    "resolve": [
+      "self"
+    ],
+    "_get_resolved": [
+      "self"
+    ]
+  },
+  "__author__": [],
+  "__email__": [],
+  "__version__": [],
+  "__url__": [],
+  "__license__": [],
+  "__all__": [],
+  "SchemaNode": {
+    "_resolve_node": [
+      "cls",
+      "node",
+      "resolver"
+    ]
+  },
+  "FullPathResolvedCache": {
+    "__init__": [
+      "self",
+      "maxsize"
+    ],
+    "_make_key": [
+      "self",
+      "parts"
+    ],
+    "get": [
+      "self",
+      "parts"
+    ],
+    "set": [
+      "self",
+      "parts",
+      "resolved"
+    ],
+    "invalidate": [
+      "self"
+    ]
+  },
+  "PrefixResolvedCache": {
+    "__init__": [
+      "self"
+    ],
+    "seed_root": [
+      "self",
+      "resolved"
+    ],
+    "longest_prefix_hit": [
+      "self",
+      "parts"
+    ],
+    "store_intermediate": [
+      "self",
+      "parts",
+      "index",
+      "resolved"
+    ],
+    "invalidate": [
+      "self"
+    ]
+  },
+  "ResolverHandlers": [],
+  "Schema": [],
+  "is_str_sequence": [
+    "val"
+  ],
+  "LimitedSafeLoader": {
+    "__new__": [
+      "cls",
+      "name",
+      "bases",
+      "namespace",
+      "exclude_resolvers"
+    ]
+  },
+  "JsonschemaSafeLoader": {},
+  "BaseReader": {
+    "read": [
+      "self"
+    ]
+  },
+  "FileReader": {
+    "__init__": [
+      "self",
+      "fileobj"
+    ],
+    "read": [
+      "self"
+    ]
+  },
+  "PathReader": {
+    "__init__": [
+      "self",
+      "path"
+    ],
+    "read": [
+      "self"
+    ]
+  },
+  "FilePathReader": {
+    "__init__": [
+      "self",
+      "file_path"
+    ]
+  },
+  "UrllibHandler": {
+    "__init__": [
+      "self"
+    ],
+    "_open": [
+      "self",
+      "uri"
+    ]
+  },
+  "UrlRequestsHandler": {
+    "__init__": [
+      "self"
+    ],
+    "_open": [
+      "self",
+      "uri"
+    ]
+  },
+  "uri_to_path": [
+    "uri"
+  ],
+  "file_handler": [],
+  "all_urls_handler": [],
+  "default_handlers": [],
+  "SupportsRead": {
+    "read": [
+      "self",
+      "amount"
+    ]
+  },
+  "FileHandler": {
+    "__init__": [
+      "self",
+      "loader"
+    ],
+    "__call__": [
+      "self",
+      "stream"
+    ],
+    "_load": [
+      "self",
+      "stream"
+    ]
+  },
+  "BaseFilePathHandler": {
+    "__init__": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "uri"
+    ],
+    "_open": [
+      "self",
+      "uri"
+    ]
+  },
+  "FilePathHandler": {
+    "allowed_schemes": [],
+    "__init__": [
+      "self"
+    ],
+    "_open": [
+      "self",
+      "uri"
+    ]
+  }
+}

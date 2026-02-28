@@ -1,0 +1,71 @@
+{
+  "_T": [],
+  "logger": [],
+  "parse_val": [
+    "parse_func",
+    "target"
+  ],
+  "AioPikaBroker": {
+    "__init__": [
+      "self",
+      "url",
+      "result_backend",
+      "task_id_generator",
+      "qos",
+      "loop",
+      "exchange",
+      "task_queues",
+      "dead_letter_queue",
+      "delay_queue",
+      "delayed_message_exchange_plugin",
+      "delayed_message_exchange",
+      "label_for_routing",
+      "label_for_priority"
+    ],
+    "startup": [
+      "self"
+    ],
+    "_declare_exchanges": [
+      "self"
+    ],
+    "_declare_dead_letter_queue": [
+      "self",
+      "channel"
+    ],
+    "_declare_queues": [
+      "self",
+      "channel"
+    ],
+    "with_queue": [
+      "self",
+      "queue"
+    ],
+    "with_queues": [
+      "self"
+    ],
+    "kick": [
+      "self",
+      "message"
+    ],
+    "listen": [
+      "self"
+    ],
+    "shutdown": [
+      "self"
+    ]
+  },
+  "__version__": [],
+  "__all__": [],
+  "BaseAioPikaBrokerError": {},
+  "NoStartupError": {},
+  "IncorrectRoutingKeyError": {},
+  "QueueNotDeclaredError": {},
+  "ExchangeNotDeclaredError": {},
+  "QueueType": {
+    "QUORUM": [],
+    "CLASSIC": [],
+    "STREAM": []
+  },
+  "Queue": {},
+  "Exchange": {}
+}
