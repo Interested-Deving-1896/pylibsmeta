@@ -1,0 +1,424 @@
+{
+  "InetAddressField": {
+    "default_error_messages": [],
+    "__init__": [
+      "self",
+      "store_prefix"
+    ],
+    "to_representation": [
+      "self",
+      "value"
+    ],
+    "to_internal_value": [
+      "self",
+      "data"
+    ]
+  },
+  "CidrAddressField": {
+    "default_error_messages": [],
+    "to_representation": [
+      "self",
+      "value"
+    ],
+    "to_internal_value": [
+      "self",
+      "data"
+    ]
+  },
+  "MACAddressField": {
+    "default_error_messages": [],
+    "to_representation": [
+      "self",
+      "value"
+    ],
+    "to_internal_value": [
+      "self",
+      "data"
+    ]
+  },
+  "MACAddress8Field": {
+    "default_error_messages": [],
+    "to_representation": [
+      "self",
+      "value"
+    ],
+    "to_internal_value": [
+      "self",
+      "data"
+    ]
+  },
+  "NetModelSerializer": {},
+  "NetManager": {
+    "use_for_related_fields": [],
+    "filter": [
+      "self"
+    ]
+  },
+  "InetAddressFormField": {
+    "widget": [],
+    "default_error_messages": [],
+    "__init__": [
+      "self"
+    ],
+    "to_python": [
+      "self",
+      "value"
+    ]
+  },
+  "NoPrefixInetAddressFormField": {
+    "widget": [],
+    "default_error_messages": [],
+    "__init__": [
+      "self"
+    ],
+    "to_python": [
+      "self",
+      "value"
+    ]
+  },
+  "CidrAddressFormField": {
+    "widget": [],
+    "default_error_messages": [],
+    "__init__": [
+      "self"
+    ],
+    "to_python": [
+      "self",
+      "value"
+    ]
+  },
+  "MACAddressFormField": {
+    "default_error_messages": [],
+    "__init__": [
+      "self"
+    ],
+    "to_python": [
+      "self",
+      "value"
+    ],
+    "widget_attrs": [
+      "self",
+      "widget"
+    ]
+  },
+  "MACAddress8FormField": {
+    "default_error_messages": [],
+    "__init__": [
+      "self"
+    ],
+    "to_python": [
+      "self",
+      "value"
+    ],
+    "widget_attrs": [
+      "self",
+      "widget"
+    ]
+  },
+  "Macaddr": {
+    "getquoted": [
+      "self"
+    ]
+  },
+  "Macaddr8": {
+    "getquoted": [
+      "self"
+    ]
+  },
+  "CIDRARRAY_OID": [],
+  "CIDRARRAY": [],
+  "MACADDRARRAY_OID": [],
+  "MACADDRARRAY": [],
+  "MACADDRARRAY8_OID": [],
+  "MACADDRARRAY8": [],
+  "Inet": {
+    "__repr__": [
+      "self"
+    ]
+  },
+  "_MacaddrDumper": {
+    "oid": [],
+    "dump": [
+      "self",
+      "obj"
+    ]
+  },
+  "_MacaddrLoader": {
+    "load": [
+      "self",
+      "data"
+    ]
+  },
+  "_Macaddr8Dumper": {
+    "oid": [],
+    "dump": [
+      "self",
+      "obj"
+    ]
+  },
+  "_Macaddr8Loader": {
+    "load": [
+      "self",
+      "data"
+    ]
+  },
+  "Abbrev": {
+    "arity": [],
+    "function": [],
+    "output_field": []
+  },
+  "Broadcast": {
+    "arity": [],
+    "function": [],
+    "output_field": []
+  },
+  "Family": {
+    "arity": [],
+    "function": [],
+    "output_field": []
+  },
+  "Host": {
+    "arity": [],
+    "function": [],
+    "output_field": []
+  },
+  "Hostmask": {
+    "arity": [],
+    "function": [],
+    "output_field": []
+  },
+  "Masklen": {
+    "arity": [],
+    "function": [],
+    "output_field": []
+  },
+  "Netmask": {
+    "arity": [],
+    "function": [],
+    "output_field": []
+  },
+  "Network": {
+    "arity": [],
+    "function": [],
+    "output_field": []
+  },
+  "SetMasklen": {
+    "arity": [],
+    "function": [],
+    "output_field": []
+  },
+  "AsText": {
+    "arity": [],
+    "function": [],
+    "output_field": []
+  },
+  "IsSameFamily": {
+    "arity": [],
+    "function": [],
+    "output_field": []
+  },
+  "Merge": {
+    "arity": [],
+    "function": [],
+    "output_field": []
+  },
+  "Trunc": {
+    "arity": [],
+    "function": []
+  },
+  "Macaddr8Set7bit": {
+    "arity": [],
+    "function": [],
+    "output_field": []
+  },
+  "NetfieldsConfig": {
+    "name": []
+  },
+  "mac_unix_common": {
+    "word_sep": [],
+    "word_fmt": []
+  },
+  "mac_eui64": {
+    "word_size": [],
+    "num_words": [],
+    "max_word": [],
+    "word_sep": [],
+    "word_fmt": [],
+    "word_base": []
+  },
+  "NET_OPERATORS": [],
+  "NET_TEXT_OPERATORS": [],
+  "_NetAddressField": {
+    "empty_strings_allowed": [],
+    "__init__": [
+      "self"
+    ],
+    "from_db_value": [
+      "self",
+      "value",
+      "expression",
+      "connection"
+    ],
+    "to_python": [
+      "self",
+      "value"
+    ],
+    "get_prep_lookup": [
+      "self",
+      "lookup_type",
+      "value"
+    ],
+    "get_prep_value": [
+      "self",
+      "value"
+    ],
+    "get_db_prep_value": [
+      "self",
+      "value",
+      "connection",
+      "prepared"
+    ],
+    "get_db_prep_lookup": [
+      "self",
+      "lookup_type",
+      "value",
+      "connection",
+      "prepared"
+    ],
+    "get_placeholder": [
+      "self",
+      "value",
+      "compiler",
+      "connection"
+    ],
+    "formfield": [
+      "self"
+    ],
+    "deconstruct": [
+      "self"
+    ]
+  },
+  "InvalidLookup": {
+    "as_sql": [
+      "self",
+      "qn",
+      "connection"
+    ]
+  },
+  "InvalidSearchLookup": {
+    "lookup_name": [],
+    "as_sql": [
+      "self",
+      "qn",
+      "connection"
+    ]
+  },
+  "NetFieldDecoratorMixin": {
+    "process_lhs": [
+      "self",
+      "qn",
+      "connection",
+      "lhs"
+    ]
+  },
+  "EndsWith": {},
+  "IEndsWith": {},
+  "StartsWith": {},
+  "IStartsWith": {},
+  "Regex": {},
+  "IRegex": {},
+  "NetworkLookup": {
+    "get_prep_lookup": [
+      "self"
+    ]
+  },
+  "AddressLookup": {
+    "get_prep_lookup": [
+      "self"
+    ]
+  },
+  "NetContains": {
+    "lookup_name": [],
+    "as_sql": [
+      "self",
+      "qn",
+      "connection"
+    ]
+  },
+  "NetContained": {
+    "lookup_name": [],
+    "as_sql": [
+      "self",
+      "qn",
+      "connection"
+    ]
+  },
+  "NetContainsOrEquals": {
+    "lookup_name": [],
+    "as_sql": [
+      "self",
+      "qn",
+      "connection"
+    ]
+  },
+  "NetContainedOrEqual": {
+    "lookup_name": [],
+    "as_sql": [
+      "self",
+      "qn",
+      "connection"
+    ]
+  },
+  "NetOverlaps": {
+    "lookup_name": [],
+    "as_sql": [
+      "self",
+      "qn",
+      "connection"
+    ]
+  },
+  "HostMatches": {
+    "lookup_name": [],
+    "as_sql": [
+      "self",
+      "qn",
+      "connection"
+    ]
+  },
+  "_PrefixlenMixin": {
+    "format_string": [],
+    "as_sql": [
+      "self",
+      "qn",
+      "connection"
+    ],
+    "process_lhs": [
+      "self",
+      "qn",
+      "connection",
+      "lhs"
+    ],
+    "get_prep_lookup": [
+      "self"
+    ]
+  },
+  "MaxPrefixlen": {
+    "lookup_name": [],
+    "format_string": []
+  },
+  "MinPrefixlen": {
+    "lookup_name": [],
+    "format_string": []
+  },
+  "Prefixlen": {
+    "lookup_name": [],
+    "as_sql": [
+      "self",
+      "compiler",
+      "connection"
+    ],
+    "output_field": [
+      "self"
+    ]
+  }
+}
