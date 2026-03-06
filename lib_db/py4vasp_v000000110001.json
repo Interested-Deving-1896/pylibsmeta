@@ -1,0 +1,4157 @@
+{
+  "Batch": {
+    "__init__": [
+      "self"
+    ],
+    "_path_finder": [],
+    "from_paths": [
+      "cls"
+    ],
+    "from_files": [
+      "cls"
+    ],
+    "paths": [
+      "self"
+    ],
+    "files": [
+      "self"
+    ],
+    "number_of_calculations": [
+      "self"
+    ]
+  },
+  "_add_attribute_from_path": [
+    "calc",
+    "class_"
+  ],
+  "_add_attribute_from_file": [
+    "calc",
+    "class_"
+  ],
+  "_add_all_combination_classes": [
+    "calc",
+    "add_single_class"
+  ],
+  "VASP_COLORS": [],
+  "__all__": [],
+  "Py4VaspError": {},
+  "RefinementError": {},
+  "IncorrectUsage": {},
+  "DataMismatch": {},
+  "NotImplemented": {},
+  "NoData": {},
+  "FileAccessError": {},
+  "OutdatedVaspVersion": {},
+  "ModuleNotInstalled": {},
+  "StopExecution": {
+    "_render_traceback_": [
+      "self"
+    ]
+  },
+  "ParserError": {},
+  "_Py4VaspInternalError": {},
+  "__version__": [],
+  "cli": [],
+  "convert": [
+    "quantity",
+    "format",
+    "path",
+    "selection"
+  ],
+  "_convert_to_lammps": [
+    "path",
+    "selection"
+  ],
+  "calculation": [
+    "path",
+    "selection"
+  ],
+  "_create_path_for_data": [
+    "path",
+    "selection"
+  ],
+  "_generate_calculation_data": [
+    "h5f",
+    "selection"
+  ],
+  "_generate_default_data": [
+    "h5f"
+  ],
+  "_generate_collinear_data": [
+    "h5f"
+  ],
+  "_generate_noncollinear_data": [
+    "h5f"
+  ],
+  "_generate_spin_texture_data": [
+    "h5f"
+  ],
+  "_DATA_GENERATORS": [],
+  "Forces": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "Stresses": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "_match_combine_with_refinement": [
+    "combine_name"
+  ],
+  "BaseCombine": {
+    "__init__": [
+      "self"
+    ],
+    "from_paths": [
+      "cls",
+      "paths"
+    ],
+    "from_files": [
+      "cls",
+      "files"
+    ],
+    "_to_dict": [
+      "self"
+    ],
+    "read": [
+      "self"
+    ]
+  },
+  "Energies": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "POSCAR": [
+    "poscar_string"
+  ],
+  "PoscarParser": {
+    "parse_lines": [
+      "self"
+    ],
+    "_parse_scaling_factor": [
+      "self",
+      "result",
+      "remaining_lines"
+    ],
+    "_parse_cell": [
+      "self",
+      "result",
+      "remaining_lines"
+    ],
+    "_get_volume": [
+      "lattice_vectors"
+    ],
+    "_parse_stoichiometry": [
+      "self",
+      "result",
+      "remaining_lines"
+    ],
+    "_parse_ion_lines": [
+      "self",
+      "result",
+      "remaining_lines"
+    ],
+    "_parse_ion_line": [
+      "line",
+      "positions",
+      "selective_dynamics"
+    ],
+    "_to_fractional": [
+      "self",
+      "result",
+      "positions",
+      "coordinate_system"
+    ],
+    "_parse_lattice_velocity": [
+      "self",
+      "result",
+      "remaining_lines"
+    ],
+    "_parse_ion_velocities": [
+      "self",
+      "result",
+      "remaining_lines"
+    ],
+    "_get_inverse_lattice_vectors": [
+      "cell"
+    ],
+    "_convert_direct_to_cartesian": [
+      "cell",
+      "x",
+      "scale"
+    ]
+  },
+  "_put_back": [
+    "iterator",
+    "item"
+  ],
+  "first_char": [
+    "string"
+  ],
+  "Reduction": {
+    "__init__": [
+      "self",
+      "keys"
+    ],
+    "__call__": [
+      "self",
+      "array",
+      "axis"
+    ]
+  },
+  "Selector": {
+    "__init__": [
+      "self",
+      "maps",
+      "data"
+    ],
+    "_make_map": [
+      "self",
+      "maps"
+    ],
+    "_make_number_labels": [
+      "self",
+      "maps"
+    ],
+    "_make_label": [
+      "self",
+      "map_",
+      "number",
+      "index",
+      "size"
+    ],
+    "_make_default_indices": [
+      "self",
+      "maps",
+      "ndim"
+    ],
+    "__getitem__": [
+      "self",
+      "selection"
+    ],
+    "label": [
+      "self",
+      "selection"
+    ],
+    "_get_all_slices": [
+      "self",
+      "selection",
+      "operator"
+    ],
+    "_get_slices_from_single_selection": [
+      "self",
+      "selection",
+      "operator"
+    ],
+    "_read_key": [
+      "self",
+      "key"
+    ],
+    "_read_range": [
+      "self",
+      "range_"
+    ],
+    "_read_dimension": [
+      "self",
+      "range_"
+    ],
+    "_merge_slice": [
+      "self",
+      "range_"
+    ],
+    "_read_pair": [
+      "self",
+      "pair"
+    ],
+    "_evaluate_operation": [
+      "self",
+      "operation",
+      "operator"
+    ],
+    "_read_assignment": [
+      "self",
+      "assignment"
+    ],
+    "_find_indices_in_mapping": [
+      "self",
+      "assignment",
+      "mapping"
+    ],
+    "_cast_to_int": [
+      "self",
+      "key",
+      "value"
+    ],
+    "_cast_to_float": [
+      "self",
+      "key",
+      "value"
+    ],
+    "_raise_error_if_key_not_found": [
+      "self",
+      "key"
+    ],
+    "_raise_error_if_assignment_not_allowed": [
+      "self",
+      "assignment",
+      "mapping"
+    ],
+    "_raise_error_if_only_assignment_allowed": [
+      "self",
+      "key",
+      "mapping"
+    ],
+    "_raise_error_that_argument_not_in_mapping": [
+      "self",
+      "assignment",
+      "mapping"
+    ]
+  },
+  "_merge_operator": [
+    "first_operator",
+    "second_operator"
+  ],
+  "_make_slice": [
+    "indices"
+  ],
+  "_is_range": [
+    "key"
+  ],
+  "_is_pair": [
+    "key"
+  ],
+  "_data_contiguous": [
+    "slice_"
+  ],
+  "_Slices": {
+    "__init__": [
+      "self",
+      "indices"
+    ],
+    "from_merge": [
+      "cls",
+      "left",
+      "right"
+    ],
+    "set": [
+      "self",
+      "dimension",
+      "slice_",
+      "key"
+    ],
+    "set_operator": [
+      "self",
+      "operator"
+    ],
+    "reduce": [
+      "self",
+      "data",
+      "reduction",
+      "axis"
+    ],
+    "label": [
+      "self",
+      "index",
+      "axes",
+      "number_labels"
+    ],
+    "_parse_keys": [
+      "self",
+      "axes",
+      "number_labels"
+    ],
+    "_parse_key": [
+      "self",
+      "key",
+      "number_labels"
+    ]
+  },
+  "_merge_keys": [
+    "left_keys",
+    "right_keys"
+  ],
+  "_merge_indices": [
+    "defaults",
+    "left_indices",
+    "right_indices"
+  ],
+  "_right_is_default": [
+    "right",
+    "default"
+  ],
+  "_raise_error_if_index_used_twice": [
+    "left_key",
+    "right_key"
+  ],
+  "_raise_error_if_list_not_empty": [
+    "list_",
+    "message"
+  ],
+  "_raise_error_if_duplicate_keys": [
+    "maps"
+  ],
+  "_find_duplicates": [
+    "maps"
+  ],
+  "_format_error_message": [
+    "duplicates"
+  ],
+  "_raise_error_if_map_out_of_bounds": [
+    "dimensions",
+    "max_dimension"
+  ],
+  "is_none": [
+    "obj"
+  ],
+  "raise_error_if_not_string": [
+    "test_if_string",
+    "error_message"
+  ],
+  "raise_error_if_not_number": [
+    "test_if_number",
+    "error_message"
+  ],
+  "raise_error_if_not_callable": [
+    "function"
+  ],
+  "combine_db_dicts": [],
+  "_merge_dicts": [
+    "dict1",
+    "dict2"
+  ],
+  "construct_database_data_key": [
+    "group_name",
+    "quantity_name",
+    "selection"
+  ],
+  "should_load": [
+    "quantity",
+    "source",
+    "h5file",
+    "schema",
+    "version",
+    "print_debug"
+  ],
+  "check_version": [
+    "h5f",
+    "required",
+    "schema",
+    "current_version"
+  ],
+  "clean_db_key": [
+    "key",
+    "db_key_suffix",
+    "group_name"
+  ],
+  "clean_db_dict_keys": [
+    "dict_to_clean",
+    "rid_default_selection"
+  ],
+  "get_primitive_ion_numbers": [
+    "number_ion_types"
+  ],
+  "get_formula_and_compound": [
+    "ion_types",
+    "number_ion_types"
+  ],
+  "get_dataclass_fields": [
+    "dataclass"
+  ],
+  "_get_dataclass_field_docstrings": [
+    "dataclass"
+  ],
+  "_find_class_node": [
+    "tree",
+    "class_name"
+  ],
+  "_extract_field_name": [
+    "node"
+  ],
+  "_extract_following_docstring": [
+    "class_body",
+    "index"
+  ],
+  "get_all_possible_keys": [
+    "to_print",
+    "debug"
+  ],
+  "_quantity_label_to_db_key": [
+    "label"
+  ],
+  "_get_constant_value": [
+    "node"
+  ],
+  "_extract_keys_from_file": [
+    "filepath",
+    "debug",
+    "use_legacy"
+  ],
+  "_extract_keys_from_dataclass": [
+    "class_key"
+  ],
+  "_extract_keys_from_function": [
+    "func_node",
+    "tree",
+    "debug"
+  ],
+  "_extract_dict_structure": [
+    "dict_node",
+    "func_node",
+    "tree",
+    "intermediate_dicts"
+  ],
+  "_extract_keys_from_body": [
+    "func_node",
+    "tree",
+    "debug"
+  ],
+  "_get_global_var_items": [
+    "var_name",
+    "tree",
+    "use_dict_values"
+  ],
+  "_extract_keys_from_dict_comp": [
+    "comp_node",
+    "tree"
+  ],
+  "_evaluate_fstring": [
+    "fstring_node",
+    "target_node",
+    "substitution_value"
+  ],
+  "_resolve_return": [
+    "return_node",
+    "intermediate_dicts",
+    "func_node",
+    "tree",
+    "debug"
+  ],
+  "_resolve_call": [
+    "call_node",
+    "func_node",
+    "tree"
+  ],
+  "_track_dict_construction_in_loop": [
+    "for_stmt",
+    "intermediate_dicts",
+    "func_node",
+    "tree"
+  ],
+  "_transform_keys_from_loop": [
+    "source_keys",
+    "slice_node"
+  ],
+  "_extract_all_dict_keys": [
+    "dict_node",
+    "func_node",
+    "tree",
+    "intermediate_dicts"
+  ],
+  "_resolve_call_return": [
+    "call_node",
+    "func_node",
+    "tree",
+    "intermediate_dicts",
+    "debug"
+  ],
+  "did_you_mean": [
+    "selection",
+    "possibilities"
+  ],
+  "range_separator": [],
+  "pair_separator": [],
+  "group_separators": [],
+  "operators": [],
+  "assignment": [],
+  "subtree_characters": [],
+  "all": [],
+  "Tree": {
+    "__init__": [
+      "self",
+      "parent"
+    ],
+    "from_selection": [
+      "cls",
+      "selection"
+    ],
+    "nodes": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "selections": [
+      "self",
+      "selected",
+      "filter",
+      "filter_toplevel"
+    ],
+    "_subtree_selections": [
+      "self",
+      "selected",
+      "filter"
+    ],
+    "_assemble_operation": [
+      "self",
+      "selected",
+      "left_arg",
+      "right_arg"
+    ],
+    "_assemble_assignment": [
+      "self",
+      "selected",
+      "left_arg",
+      "right_arg",
+      "filter"
+    ],
+    "_assemble_group": [
+      "self",
+      "selected",
+      "left_arg",
+      "right_arg"
+    ],
+    "_get_arguments": [
+      "self",
+      "child",
+      "filter"
+    ],
+    "to_mermaid": [
+      "self"
+    ],
+    "_to_mermaid": [
+      "self",
+      "root"
+    ],
+    "_parse_selection_character_by_character": [
+      "self",
+      "selection"
+    ],
+    "_parse_character": [
+      "self",
+      "character"
+    ],
+    "_parse_new_selection": [
+      "self"
+    ],
+    "_finalize_subtree": [
+      "self"
+    ],
+    "_parse_space": [
+      "self"
+    ],
+    "_parse_open_parenthesis": [
+      "self"
+    ],
+    "_parse_close_parenthesis": [
+      "self"
+    ],
+    "_parse_open_bracket": [
+      "self"
+    ],
+    "_parse_close_bracket": [
+      "self"
+    ],
+    "_create_subtree": [
+      "self",
+      "character"
+    ],
+    "_transform_to_subtree": [
+      "self",
+      "character"
+    ],
+    "_next_id": [
+      "self"
+    ],
+    "_parse_end_of_text": [
+      "self"
+    ],
+    "_store_character_in_tree": [
+      "self",
+      "character"
+    ],
+    "_child_is_open_group": [
+      "self"
+    ],
+    "_add_child_if_needed": [
+      "self",
+      "ignore_space"
+    ],
+    "_new_child_needed": [
+      "self",
+      "ignore_space"
+    ],
+    "_raise_error_if_left_hand_side_is_missing": [
+      "self",
+      "separator"
+    ],
+    "_raise_error_if_left_hand_side_is_nested": [
+      "self",
+      "left_op"
+    ],
+    "_raise_error_if_opening_parenthesis_without_argument": [
+      "self"
+    ],
+    "_raise_error_if_superfluous_closing_parenthesis": [
+      "self"
+    ],
+    "_raise_error_if_closing_parenthesis_missing": [
+      "self"
+    ],
+    "_raise_error_if_subtree_misses_right_hand_side": [
+      "self"
+    ],
+    "_content_and_argument_are_compatible": [
+      "self",
+      "argument"
+    ],
+    "_raise_error_that_content_and_argument_are_incompatible": [
+      "self",
+      "argument"
+    ]
+  },
+  "Subtree": {
+    "__str__": [],
+    "__hash__": []
+  },
+  "Group": {
+    "__str__": [],
+    "__hash__": [],
+    "__iadd__": [
+      "self",
+      "character"
+    ]
+  },
+  "Operation": {
+    "__str__": [
+      "self"
+    ],
+    "__hash__": [],
+    "unary": [
+      "self"
+    ]
+  },
+  "Assignment": {
+    "__str__": [
+      "self"
+    ]
+  },
+  "_raise_error_if_parsing_failed": [
+    "error",
+    "selection",
+    "ii"
+  ],
+  "_raise_error_if_not_internal_call": [
+    "internal"
+  ],
+  "selections_to_string": [
+    "selections"
+  ],
+  "_selection_to_string": [
+    "selection"
+  ],
+  "contains": [
+    "selection",
+    "choice",
+    "ignore_case"
+  ],
+  "_part_contains": [
+    "part",
+    "choice",
+    "ignore_case"
+  ],
+  "_choice_in_group": [
+    "group",
+    "choice",
+    "ignore_case"
+  ],
+  "_choice_in_operation": [
+    "part",
+    "choice",
+    "ignore_case"
+  ],
+  "_choice_in_assignment": [
+    "part",
+    "choice",
+    "ignore_case"
+  ],
+  "_part_is_choice": [
+    "part",
+    "choice",
+    "ignore_case"
+  ],
+  "text_to_string": [
+    "text"
+  ],
+  "_attempt_str_conversion": [
+    "string"
+  ],
+  "to_complex": [
+    "array"
+  ],
+  "quantity_name": [
+    "quantity"
+  ],
+  "_to_snakecase": [
+    "word"
+  ],
+  "to_camelcase": [
+    "string",
+    "uppercase_first_letter"
+  ],
+  "to_rgb": [
+    "hex"
+  ],
+  "to_lab": [
+    "hex"
+  ],
+  "_DATA_DICT_PARAMETER": [],
+  "_SLICE_ARGS_PARAMETER": [],
+  "SliceArguments": {
+    "__post_init__": [
+      "self"
+    ],
+    "slice_plane": [
+      "self",
+      "lattice_vectors"
+    ]
+  },
+  "Visualizer": {
+    "__init__": [
+      "self",
+      "structure"
+    ],
+    "to_view": [
+      "self",
+      "data_dict",
+      "supercell"
+    ],
+    "to_contour": [
+      "self",
+      "data_dict",
+      "slice_args",
+      "isolevels"
+    ],
+    "_make_contour": [
+      "self",
+      "data",
+      "label",
+      "plane",
+      "fraction",
+      "supercell",
+      "isolevels"
+    ],
+    "to_quiver": [
+      "self",
+      "data_dict",
+      "slice_args"
+    ],
+    "_make_quiver": [
+      "self",
+      "sel",
+      "label",
+      "plane",
+      "fraction",
+      "supercell"
+    ]
+  },
+  "format": [],
+  "Reader": {
+    "__init__": [
+      "self",
+      "array"
+    ],
+    "error_message": [
+      "self",
+      "key",
+      "err"
+    ],
+    "__getitem__": [
+      "self",
+      "key"
+    ]
+  },
+  "INDICES": [],
+  "AXIS": [],
+  "PLANE": [],
+  "PARAMETERS": [],
+  "Plane": {
+    "map_raw_labels": [
+      "self",
+      "labels"
+    ]
+  },
+  "get_cut": [
+    "a",
+    "b",
+    "c"
+  ],
+  "raise_error_cut_selection_incorrect": [],
+  "grid_scalar": [
+    "data",
+    "plane",
+    "fraction"
+  ],
+  "grid_vector": [
+    "data",
+    "plane",
+    "fraction"
+  ],
+  "_project_vectors_to_plane": [
+    "plane",
+    "data"
+  ],
+  "plane": [
+    "cell",
+    "cut",
+    "normal",
+    "axis_labels"
+  ],
+  "_rotate_first_vector_to_x_axis": [
+    "vectors"
+  ],
+  "_rotate_normal_to_cartesian_axis": [
+    "vectors",
+    "normal"
+  ],
+  "_get_old_normal": [
+    "vectors"
+  ],
+  "_get_index_axis": [
+    "old_normal",
+    "normal"
+  ],
+  "_get_new_normal_from_cartesian_axis": [
+    "old_normal",
+    "index"
+  ],
+  "_get_rotation_matrix": [
+    "vectors"
+  ],
+  "_raise_error_if_labels_invalid": [
+    "labels"
+  ],
+  "_raise_error_if_cut_unknown": [
+    "cut"
+  ],
+  "_raise_error_if_direction_is_not_obvious": [
+    "largest_element"
+  ],
+  "_raise_unknown_normal_error": [
+    "normal"
+  ],
+  "symmetry_reduce": [
+    "tensor"
+  ],
+  "tensor_constants": [
+    "tensor"
+  ],
+  "_ModulePlaceholder": {
+    "__init__": [
+      "self",
+      "name"
+    ],
+    "__getattr__": [
+      "self",
+      "attr"
+    ]
+  },
+  "optional": [
+    "name"
+  ],
+  "is_imported": [
+    "module"
+  ],
+  "MLFFErrorAnalysis": {
+    "TOTAL_ENERGY": [],
+    "__init__": [
+      "self"
+    ],
+    "_from_data": [
+      "cls",
+      "batch"
+    ],
+    "from_paths": [
+      "cls",
+      "dft_data",
+      "mlff_data"
+    ],
+    "from_files": [
+      "cls",
+      "dft_data",
+      "mlff_data"
+    ],
+    "get_energy_error_per_atom": [
+      "self",
+      "normalize_by_configurations"
+    ],
+    "_get_rmse": [
+      "self",
+      "dft_quantity",
+      "mlff_quantity",
+      "degrees_of_freedom"
+    ],
+    "get_force_rmse": [
+      "self",
+      "normalize_by_configurations"
+    ],
+    "get_stress_rmse": [
+      "self",
+      "normalize_by_configurations"
+    ]
+  },
+  "set_appropriate_attrs": [
+    "cls"
+  ],
+  "validate_data": [
+    "cls"
+  ],
+  "set_number_of_configurations": [
+    "cls"
+  ],
+  "set_number_of_ions": [
+    "cls"
+  ],
+  "set_paths_and_files": [
+    "cls"
+  ],
+  "set_energies": [
+    "cls"
+  ],
+  "_dict_to_array": [
+    "data",
+    "key"
+  ],
+  "_dict_to_list": [
+    "data",
+    "key"
+  ],
+  "set_force_related_attributes": [
+    "cls"
+  ],
+  "set_stresses": [
+    "cls"
+  ],
+  "_extract_type_text": [
+    "node"
+  ],
+  "ReturnTypeFinder": {
+    "__init__": [
+      "self",
+      "document"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "find_return_type": [
+      "self",
+      "node"
+    ],
+    "unknown_visit": [
+      "self",
+      "node"
+    ],
+    "unknown_departure": [
+      "self",
+      "node"
+    ],
+    "visit_desc": [
+      "self",
+      "node"
+    ],
+    "visit_desc_signature": [
+      "self",
+      "node"
+    ],
+    "visit_desc_content": [
+      "self",
+      "node"
+    ],
+    "visit_field_list": [
+      "self",
+      "node"
+    ],
+    "visit_field": [
+      "self",
+      "node"
+    ],
+    "_capture_field_body_content": [
+      "self",
+      "field_body_node"
+    ],
+    "depart_field": [
+      "self",
+      "node"
+    ],
+    "visit_desc_returns": [
+      "self",
+      "node"
+    ],
+    "visit_section": [
+      "self",
+      "node"
+    ],
+    "depart_section": [
+      "self",
+      "node"
+    ],
+    "visit_definition_list": [
+      "self",
+      "node"
+    ],
+    "visit_definition_list_item": [
+      "self",
+      "node"
+    ],
+    "_parse_returns_field_body": [
+      "self"
+    ],
+    "_is_type_like": [
+      "self",
+      "text"
+    ],
+    "_set_docstring_return_type_if_applicable": [
+      "self",
+      "term_text"
+    ]
+  },
+  "get_module_and_file_mappings": [
+    "hugo_dir"
+  ],
+  "assign_weights": [
+    "hugo_dir",
+    "dry_run"
+  ],
+  "main": [],
+  "AttributeInfoFinder": {
+    "__init__": [
+      "self",
+      "document"
+    ],
+    "find_attribute_info": [
+      "self",
+      "node"
+    ],
+    "_parse_signature_text": [
+      "self"
+    ],
+    "unknown_visit": [
+      "self",
+      "node"
+    ],
+    "unknown_departure": [
+      "self",
+      "node"
+    ],
+    "visit_desc_signature": [
+      "self",
+      "node"
+    ],
+    "visit_desc_type": [
+      "self",
+      "node"
+    ],
+    "visit_desc_annotation": [
+      "self",
+      "node"
+    ],
+    "visit_pending_xref": [
+      "self",
+      "node"
+    ],
+    "visit_desc_sig_literal_number": [
+      "self",
+      "node"
+    ],
+    "visit_desc_sig_literal_string": [
+      "self",
+      "node"
+    ],
+    "visit_inline": [
+      "self",
+      "node"
+    ],
+    "visit_field_list": [
+      "self",
+      "node"
+    ],
+    "visit_field": [
+      "self",
+      "node"
+    ],
+    "visit_field_name": [
+      "self",
+      "node"
+    ],
+    "visit_field_body": [
+      "self",
+      "node"
+    ],
+    "depart_field": [
+      "self",
+      "node"
+    ],
+    "visit_desc_content": [
+      "self",
+      "node"
+    ]
+  },
+  "JinjaDirective": {
+    "has_content": [],
+    "run": [
+      "self"
+    ]
+  },
+  "tag_role": [
+    "name",
+    "rawtext",
+    "text",
+    "lineno",
+    "inliner",
+    "options",
+    "content"
+  ],
+  "generate_quantity_docs": [
+    "app"
+  ],
+  "should_write": [
+    "app",
+    "folder",
+    "quantity"
+  ],
+  "write_docstring": [
+    "folder",
+    "quantity",
+    "title"
+  ],
+  "write_hidden_docstring": [
+    "folder",
+    "quantity"
+  ],
+  "on_build_finished": [
+    "app",
+    "exception"
+  ],
+  "setup": [
+    "app"
+  ],
+  "HugoBuilder": {
+    "name": [],
+    "format": [],
+    "get_outdated_docs": [
+      "self"
+    ],
+    "prepare_writing": [
+      "self",
+      "docnames"
+    ],
+    "write_doc": [
+      "self",
+      "docname",
+      "doctree"
+    ],
+    "_doctree_to_markdown": [
+      "self",
+      "doctree"
+    ],
+    "get_target_uri": [
+      "self",
+      "docname",
+      "typ"
+    ]
+  },
+  "_construct_hugo_shortcode": [
+    "text"
+  ],
+  "Indentation": {
+    "__init__": [
+      "self",
+      "level",
+      "level_in_first_row"
+    ],
+    "level": [
+      "self"
+    ],
+    "indent": [
+      "self",
+      "line"
+    ]
+  },
+  "HugoTranslator": {
+    "__init__": [
+      "self",
+      "document"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "_shortcode_sphinx": [
+      "self",
+      "close"
+    ],
+    "_shortcode_docstring": [
+      "self",
+      "close"
+    ],
+    "_add_new_line": [
+      "self"
+    ],
+    "_strip_blank_lines": [
+      "self"
+    ],
+    "_move_content_to_lines": [
+      "self"
+    ],
+    "unknown_visit": [
+      "self",
+      "node"
+    ],
+    "unknown_departure": [
+      "self",
+      "node"
+    ],
+    "visit_document": [
+      "self",
+      "node"
+    ],
+    "depart_document": [
+      "self",
+      "node"
+    ],
+    "visit_title": [
+      "self",
+      "node"
+    ],
+    "depart_title": [
+      "self",
+      "node"
+    ],
+    "_create_hugo_front_matter": [
+      "self",
+      "node"
+    ],
+    "visit_section": [
+      "self",
+      "node"
+    ],
+    "depart_section": [
+      "self",
+      "node"
+    ],
+    "visit_paragraph": [
+      "self",
+      "node"
+    ],
+    "depart_paragraph": [
+      "self",
+      "node"
+    ],
+    "visit_rubric": [
+      "self",
+      "node"
+    ],
+    "depart_rubric": [
+      "self",
+      "node"
+    ],
+    "visit_Text": [
+      "self",
+      "node"
+    ],
+    "visit_emphasis": [
+      "self",
+      "node"
+    ],
+    "depart_emphasis": [
+      "self",
+      "node"
+    ],
+    "visit_strong": [
+      "self",
+      "node"
+    ],
+    "depart_strong": [
+      "self",
+      "node"
+    ],
+    "visit_math": [
+      "self",
+      "node"
+    ],
+    "depart_math": [
+      "self",
+      "node"
+    ],
+    "visit_literal": [
+      "self",
+      "node"
+    ],
+    "depart_literal": [
+      "self",
+      "node"
+    ],
+    "visit_bullet_list": [
+      "self",
+      "node"
+    ],
+    "depart_bullet_list": [
+      "self",
+      "node"
+    ],
+    "visit_enumerated_list": [
+      "self",
+      "node"
+    ],
+    "depart_enumerated_list": [
+      "self",
+      "node"
+    ],
+    "_depart_list": [
+      "self"
+    ],
+    "visit_list_item": [
+      "self",
+      "node"
+    ],
+    "depart_list_item": [
+      "self",
+      "node"
+    ],
+    "visit_definition_list": [
+      "self",
+      "node"
+    ],
+    "depart_definition_list": [
+      "self",
+      "node"
+    ],
+    "visit_definition_list_item": [
+      "self",
+      "node"
+    ],
+    "visit_term": [
+      "self",
+      "node"
+    ],
+    "depart_term": [
+      "self",
+      "node"
+    ],
+    "visit_definition": [
+      "self",
+      "node"
+    ],
+    "depart_definition": [
+      "self",
+      "node"
+    ],
+    "visit_comment": [
+      "self",
+      "node"
+    ],
+    "depart_comment": [
+      "self",
+      "node"
+    ],
+    "visit_reference": [
+      "self",
+      "node"
+    ],
+    "depart_reference": [
+      "self",
+      "node"
+    ],
+    "visit_target": [
+      "self",
+      "node"
+    ],
+    "depart_target": [
+      "self",
+      "node"
+    ],
+    "visit_inline": [
+      "self",
+      "node"
+    ],
+    "depart_inline": [
+      "self",
+      "node"
+    ],
+    "visit_pending_xref": [
+      "self",
+      "node"
+    ],
+    "depart_pending_xref": [
+      "self",
+      "node"
+    ],
+    "visit_literal_block": [
+      "self",
+      "node"
+    ],
+    "depart_literal_block": [
+      "self",
+      "node"
+    ],
+    "visit_doctest_block": [
+      "self",
+      "node"
+    ],
+    "depart_doctest_block": [
+      "self",
+      "node"
+    ],
+    "visit_note": [
+      "self",
+      "node"
+    ],
+    "visit_warning": [
+      "self",
+      "node"
+    ],
+    "visit_important": [
+      "self",
+      "node"
+    ],
+    "visit_tip": [
+      "self",
+      "node"
+    ],
+    "visit_caution": [
+      "self",
+      "node"
+    ],
+    "_visit_admonition": [
+      "self",
+      "type"
+    ],
+    "depart_note": [
+      "self",
+      "node"
+    ],
+    "depart_warning": [
+      "self",
+      "node"
+    ],
+    "depart_important": [
+      "self",
+      "node"
+    ],
+    "depart_tip": [
+      "self",
+      "node"
+    ],
+    "depart_caution": [
+      "self",
+      "node"
+    ],
+    "_depart_admonition": [
+      "self"
+    ],
+    "visit_footnote_reference": [
+      "self",
+      "node"
+    ],
+    "depart_footnote_reference": [
+      "self",
+      "node"
+    ],
+    "visit_footnote": [
+      "self",
+      "node"
+    ],
+    "depart_footnote": [
+      "self",
+      "node"
+    ],
+    "visit_label": [
+      "self",
+      "node"
+    ],
+    "depart_label": [
+      "self",
+      "node"
+    ],
+    "visit_compound": [
+      "self",
+      "node"
+    ],
+    "depart_compound": [
+      "self",
+      "node"
+    ],
+    "visit_compact_paragraph": [
+      "self",
+      "node"
+    ],
+    "depart_compact_paragraph": [
+      "self",
+      "node"
+    ],
+    "visit_index": [
+      "self",
+      "node"
+    ],
+    "depart_index": [
+      "self",
+      "node"
+    ],
+    "_get_anchor_id": [
+      "self"
+    ],
+    "_get_breadcrumbs": [
+      "self"
+    ],
+    "_construct_new_anchor_id": [
+      "self",
+      "node"
+    ],
+    "_get_latest_objtype": [
+      "self"
+    ],
+    "_get_latest_name": [
+      "self"
+    ],
+    "visit_desc": [
+      "self",
+      "node"
+    ],
+    "_get_module_name": [
+      "self",
+      "breadcrumbs"
+    ],
+    "depart_desc": [
+      "self",
+      "node"
+    ],
+    "_get_parameter_list_and_types": [
+      "self",
+      "node",
+      "skip_content"
+    ],
+    "_get_formatted_param": [
+      "self",
+      "name",
+      "annotation",
+      "default"
+    ],
+    "_get_parameter_list_str": [
+      "self",
+      "parameters"
+    ],
+    "_get_return_type": [
+      "self",
+      "node"
+    ],
+    "_get_attribute_info": [
+      "self",
+      "node"
+    ],
+    "visit_desc_signature": [
+      "self",
+      "node"
+    ],
+    "depart_desc_signature": [
+      "self",
+      "node"
+    ],
+    "visit_desc_returns": [
+      "self",
+      "node"
+    ],
+    "depart_desc_returns": [
+      "self",
+      "node"
+    ],
+    "visit_desc_content": [
+      "self",
+      "node"
+    ],
+    "depart_desc_content": [
+      "self",
+      "node"
+    ],
+    "visit_desc_addname": [
+      "self",
+      "node"
+    ],
+    "depart_desc_addname": [
+      "self",
+      "node"
+    ],
+    "visit_desc_name": [
+      "self",
+      "node"
+    ],
+    "depart_desc_name": [
+      "self",
+      "node"
+    ],
+    "visit_desc_annotation": [
+      "self",
+      "node"
+    ],
+    "depart_desc_annotation": [
+      "self",
+      "node"
+    ],
+    "visit_desc_sig_space": [
+      "self",
+      "node"
+    ],
+    "depart_desc_sig_space": [
+      "self",
+      "node"
+    ],
+    "visit_desc_parameterlist": [
+      "self",
+      "node"
+    ],
+    "depart_desc_parameterlist": [
+      "self",
+      "node"
+    ],
+    "visit_desc_parameter": [
+      "self",
+      "node"
+    ],
+    "depart_desc_parameter": [
+      "self",
+      "node"
+    ],
+    "visit_desc_sig_name": [
+      "self",
+      "node"
+    ],
+    "depart_desc_sig_name": [
+      "self",
+      "node"
+    ],
+    "visit_desc_sig_punctuation": [
+      "self",
+      "node"
+    ],
+    "depart_desc_sig_punctuation": [
+      "self",
+      "node"
+    ],
+    "visit_desc_sig_operator": [
+      "self",
+      "node"
+    ],
+    "depart_desc_sig_operator": [
+      "self",
+      "node"
+    ],
+    "visit_field_list": [
+      "self",
+      "node"
+    ],
+    "depart_field_list": [
+      "self",
+      "node"
+    ],
+    "_get_formatted_field_header": [
+      "self",
+      "field_name"
+    ],
+    "visit_field": [
+      "self",
+      "node"
+    ],
+    "depart_field": [
+      "self",
+      "node"
+    ],
+    "visit_field_name": [
+      "self",
+      "node"
+    ],
+    "depart_field_name": [
+      "self",
+      "node"
+    ],
+    "_restructure_parameters_field_body": [
+      "self"
+    ],
+    "_restructure_returns_field_body": [
+      "self"
+    ],
+    "_restructure_field_body": [
+      "self"
+    ],
+    "visit_field_body": [
+      "self",
+      "node"
+    ],
+    "depart_field_body": [
+      "self",
+      "node"
+    ],
+    "visit_literal_strong": [
+      "self",
+      "node"
+    ],
+    "depart_literal_strong": [
+      "self",
+      "node"
+    ],
+    "visit_title_reference": [
+      "self",
+      "node"
+    ],
+    "depart_title_reference": [
+      "self",
+      "node"
+    ],
+    "visit_tabular_col_spec": [
+      "self",
+      "node"
+    ],
+    "depart_tabular_col_spec": [
+      "self",
+      "node"
+    ],
+    "visit_autosummary_table": [
+      "self",
+      "node"
+    ],
+    "depart_autosummary_table": [
+      "self",
+      "node"
+    ],
+    "visit_table": [
+      "self",
+      "node"
+    ],
+    "depart_table": [
+      "self",
+      "node"
+    ],
+    "visit_tgroup": [
+      "self",
+      "node"
+    ],
+    "depart_tgroup": [
+      "self",
+      "node"
+    ],
+    "visit_colspec": [
+      "self",
+      "node"
+    ],
+    "depart_colspec": [
+      "self",
+      "node"
+    ],
+    "visit_tbody": [
+      "self",
+      "node"
+    ],
+    "depart_tbody": [
+      "self",
+      "node"
+    ],
+    "visit_row": [
+      "self",
+      "node"
+    ],
+    "depart_row": [
+      "self",
+      "node"
+    ],
+    "visit_transition": [
+      "self",
+      "node"
+    ],
+    "depart_transition": [
+      "self",
+      "node"
+    ],
+    "visit_entry": [
+      "self",
+      "node"
+    ],
+    "depart_entry": [
+      "self",
+      "node"
+    ],
+    "visit_block_quote": [
+      "self",
+      "node"
+    ],
+    "depart_block_quote": [
+      "self",
+      "node"
+    ]
+  },
+  "SIG_TYPE_DEFAULT": [],
+  "_normalize_param_name": [
+    "name"
+  ],
+  "_extract_leading_asterisks": [
+    "name"
+  ],
+  "ParametersInfoFinder": {
+    "__init__": [
+      "self",
+      "document"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "find_parameters_info": [
+      "self",
+      "node",
+      "skip_content"
+    ],
+    "unknown_visit": [
+      "self",
+      "node"
+    ],
+    "unknown_departure": [
+      "self",
+      "node"
+    ],
+    "visit_desc_signature": [
+      "self",
+      "node"
+    ],
+    "depart_desc_signature": [
+      "self",
+      "node"
+    ],
+    "visit_desc_parameterlist": [
+      "self",
+      "node"
+    ],
+    "visit_desc_parameter": [
+      "self",
+      "node"
+    ],
+    "visit_desc_sig_name": [
+      "self",
+      "node"
+    ],
+    "visit_desc_sig_operator": [
+      "self",
+      "node"
+    ],
+    "visit_desc_sig_punctuation": [
+      "self",
+      "node"
+    ],
+    "depart_desc_parameter": [
+      "self",
+      "node"
+    ],
+    "visit_inline": [
+      "self",
+      "node"
+    ],
+    "visit_desc_content": [
+      "self",
+      "node"
+    ],
+    "visit_desc": [
+      "self",
+      "node"
+    ],
+    "visit_field_list": [
+      "self",
+      "node"
+    ],
+    "visit_field": [
+      "self",
+      "node"
+    ],
+    "visit_field_name": [
+      "self",
+      "node"
+    ],
+    "visit_field_body": [
+      "self",
+      "node"
+    ],
+    "depart_field": [
+      "self",
+      "node"
+    ],
+    "_add_param_info_from_node": [
+      "self",
+      "node"
+    ],
+    "visit_paragraph": [
+      "self",
+      "node"
+    ],
+    "visit_bullet_list": [
+      "self",
+      "node"
+    ],
+    "visit_list_item": [
+      "self",
+      "node"
+    ]
+  },
+  "_get_param_raw_info_from_left_string": [
+    "left",
+    "_current_signature_dict",
+    "_construction_dict"
+  ],
+  "AnchorsFinder": {
+    "__init__": [
+      "self",
+      "document"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "find_anchor": [
+      "self",
+      "node"
+    ],
+    "unknown_visit": [
+      "self",
+      "node"
+    ],
+    "unknown_departure": [
+      "self",
+      "node"
+    ],
+    "visit_desc": [
+      "self",
+      "node"
+    ],
+    "visit_desc_signature": [
+      "self",
+      "node"
+    ],
+    "visit_desc_name": [
+      "self",
+      "node"
+    ],
+    "visit_desc_addname": [
+      "self",
+      "node"
+    ]
+  },
+  "VaspData": {
+    "__init__": [
+      "self",
+      "data"
+    ],
+    "__array__": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "is_none": [
+      "self"
+    ],
+    "data": [
+      "self"
+    ],
+    "ndim": [
+      "self"
+    ],
+    "size": [
+      "self"
+    ],
+    "shape": [
+      "self"
+    ],
+    "dtype": [
+      "self"
+    ],
+    "astype": [
+      "self"
+    ]
+  },
+  "_parse_scalar": [
+    "data"
+  ],
+  "DEFAULT_SELECTION": [],
+  "Schema": {
+    "__init__": [
+      "self",
+      "version"
+    ],
+    "add": [
+      "self",
+      "cls",
+      "name",
+      "alias",
+      "file",
+      "required",
+      "data_factory"
+    ],
+    "_raise_error_if_already_in_schema": [
+      "self",
+      "quantity",
+      "label"
+    ],
+    "sources": [
+      "self"
+    ],
+    "version": [
+      "self"
+    ],
+    "selections": [
+      "self",
+      "quantity"
+    ],
+    "unique_selections": [
+      "self",
+      "quantity"
+    ],
+    "_aliases": [
+      "self",
+      "quantity",
+      "selection"
+    ],
+    "verified": [
+      "self"
+    ],
+    "verify": [
+      "self"
+    ],
+    "_verify_source": [
+      "self",
+      "key",
+      "source"
+    ],
+    "_verify_data_factory_present": [
+      "self",
+      "key",
+      "data_factory"
+    ],
+    "_verify_quantity_is_in_schema": [
+      "self",
+      "key",
+      "field"
+    ],
+    "_verify_source_is_defined_for_quantity": [
+      "self",
+      "key",
+      "field"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "Source": {},
+  "Link": {
+    "__str__": []
+  },
+  "Length": {
+    "__str__": []
+  },
+  "Sequence": {
+    "__len__": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "index"
+    ]
+  },
+  "_parse_version": [
+    "version"
+  ],
+  "_parse_quantities": [
+    "quantities"
+  ],
+  "_parse_source": [
+    "quantity",
+    "source",
+    "specification"
+  ],
+  "_parse_specification": [
+    "specification"
+  ],
+  "_parse_field": [
+    "key",
+    "value"
+  ],
+  "_parse_requirement": [
+    "version"
+  ],
+  "error_message": [
+    "schema",
+    "quantity",
+    "source"
+  ],
+  "_get_selections_for_subquantities": [
+    "original_quantity",
+    "original_selection",
+    "ref_schema"
+  ],
+  "_get_processed_selection": [
+    "quantity",
+    "original_quantity",
+    "original_selection",
+    "original_subquantity_selections",
+    "subquantity_chain"
+  ],
+  "write": [
+    "h5f",
+    "raw_data"
+  ],
+  "_write_dataset": [
+    "h5f",
+    "target",
+    "data"
+  ],
+  "structure": [
+    "filename"
+  ],
+  "CONTCAR": [
+    "filename"
+  ],
+  "__SCHEMA_VERSION__": [],
+  "_DBDataMixin": {},
+  "CONTCAR_DB": {},
+  "Dispersion_DB": {},
+  "Stoichiometry_DB": {},
+  "Band_DB": {},
+  "Bandgap_DB": {},
+  "BornEffectiveCharge_DB": {},
+  "DielectricFunction_DB": {},
+  "DielectricTensor_DB": {},
+  "Dos_DB": {},
+  "EffectiveCoulomb_DB": {},
+  "ElasticModulus_DB": {},
+  "ElectronicMinimization_DB": {},
+  "Energy_DB": {},
+  "ExcitonEigenvector_DB": {},
+  "Force_DB": {},
+  "Kpoint_DB": {},
+  "LocalMoment_DB": {},
+  "Nics_DB": {},
+  "PairCorrelation_DB": {},
+  "PhononDos_DB": {},
+  "PhononMode_DB": {},
+  "PiezoelectricTensor_DB": {},
+  "Polarization_DB": {},
+  "Potential_DB": {},
+  "Projector_DB": {},
+  "RunInfo_DB": {},
+  "Stress_DB": {},
+  "Structure_DB": {},
+  "Velocity_DB": {},
+  "Workfunction_DB": {},
+  "DEFAULT_FILE": [],
+  "DEFAULT_SOURCE": [],
+  "VERSION_DATA": [],
+  "schema": [],
+  "get_schema": [],
+  "selections": [
+    "quantity"
+  ],
+  "unique_selections": [
+    "quantity"
+  ],
+  "group": [],
+  "energies": [],
+  "values": [],
+  "input_": [],
+  "result": [],
+  "_access": [
+    "quantity"
+  ],
+  "access": [],
+  "_State": {
+    "__init__": [
+      "self",
+      "path",
+      "file"
+    ],
+    "access": [
+      "self",
+      "quantity",
+      "source"
+    ],
+    "_get_source": [
+      "self",
+      "quantity",
+      "source"
+    ],
+    "_access_data_from_hdf5": [
+      "self",
+      "quantity",
+      "source",
+      "path"
+    ],
+    "_open_file": [
+      "self",
+      "filename"
+    ],
+    "_create_and_enter_context": [
+      "self",
+      "filename"
+    ],
+    "_check_version": [
+      "self",
+      "h5f",
+      "required",
+      "quantity"
+    ],
+    "_get_datasets": [
+      "self",
+      "h5f",
+      "data"
+    ],
+    "_get_valid_indices": [
+      "self",
+      "h5f",
+      "data"
+    ],
+    "_get_dataset": [
+      "self",
+      "h5f",
+      "key",
+      "valid_indices"
+    ],
+    "_resolve_link": [
+      "self",
+      "key"
+    ],
+    "_parse_dataset": [
+      "self",
+      "h5f",
+      "key",
+      "index"
+    ]
+  },
+  "_is_scalar": [
+    "data"
+  ],
+  "NONE": [],
+  "Version": {
+    "__str__": []
+  },
+  "Band": {},
+  "Bandgap": {},
+  "BornEffectiveCharge": {},
+  "Cell": {},
+  "CurrentDensity": {},
+  "CalculationMetaData": {
+    "__post_init__": [
+      "self"
+    ]
+  },
+  "_DatabaseData": {},
+  "Density": {},
+  "DielectricFunction": {},
+  "DielectricTensor": {},
+  "Dispersion": {},
+  "Dos": {},
+  "EffectiveCoulomb": {},
+  "ElasticModulus": {},
+  "ElectronicMinimization": {},
+  "ElectronPhononBandgap": {},
+  "ElectronPhononChemicalPotential": {},
+  "ElectronPhononSelfEnergy": {},
+  "ElectronPhononTransport": {},
+  "Energy": {},
+  "ExcitonDensity": {},
+  "ExcitonEigenvector": {},
+  "Force": {},
+  "ForceConstant": {},
+  "InternalStrain": {},
+  "Kpoint": {},
+  "LocalMoment": {},
+  "Nics": {},
+  "PairCorrelation": {},
+  "PartialDensity": {},
+  "PhononBand": {},
+  "PhononDos": {},
+  "PhononMode": {},
+  "PiezoelectricTensor": {},
+  "Polarization": {},
+  "Potential": {},
+  "Projector": {},
+  "RunInfo": {},
+  "RuntimeData": {
+    "__post_init__": [
+      "self"
+    ]
+  },
+  "Stoichiometry": {},
+  "Stress": {},
+  "Structure": {},
+  "System": {},
+  "Velocity": {},
+  "Workfunction": {},
+  "Mapping": {
+    "__len__": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "try_to_find_key_in_valid_indices": [
+      "self",
+      "key"
+    ],
+    "_as_dict": [
+      "self"
+    ]
+  },
+  "IPython": [],
+  "_ERROR_VERBOSITY": [],
+  "_ALLOWED_VERBOSITIES": [],
+  "set_error_handling": [
+    "verbosity"
+  ],
+  "error_handling": [],
+  "_get_ipython": [],
+  "handle_exception": [
+    "exception"
+  ],
+  "_handle_exception": [
+    "shell",
+    "etype",
+    "evalue",
+    "tb",
+    "tb_offset"
+  ],
+  "_keep_frames_outside_py4vasp": [
+    "frames"
+  ],
+  "interpolate": [],
+  "optimize": [],
+  "AAAConfig": {},
+  "analytic_continuation": [
+    "z_in",
+    "f_in",
+    "z_out"
+  ],
+  "_analytic_continuation_single": [
+    "z_in",
+    "f_in",
+    "z_out",
+    "config"
+  ],
+  "interpolate_with_function": [
+    "function",
+    "x_in",
+    "y_in",
+    "x_out"
+  ],
+  "_interpolate_with_function_single": [
+    "function",
+    "x_in",
+    "y_in",
+    "x_out"
+  ],
+  "ff": [],
+  "go": [],
+  "px": [],
+  "Contour": {
+    "_interpolation_factor": [],
+    "_shift_label_pixels": [],
+    "_interpolation_method": [],
+    "to_plotly": [
+      "self"
+    ],
+    "_is_contour": [
+      "self"
+    ],
+    "_is_heatmap": [
+      "self"
+    ],
+    "_make_contour": [
+      "self",
+      "lattice",
+      "data"
+    ],
+    "_make_heatmap": [
+      "self",
+      "lattice",
+      "data"
+    ],
+    "_interpolate_data_if_necessary": [
+      "self",
+      "lattice",
+      "data"
+    ],
+    "_make_quiver": [
+      "self",
+      "lattice",
+      "data"
+    ],
+    "_subsample_data_quiver": [
+      "self",
+      "data",
+      "subsamples"
+    ],
+    "_extend_data_contour": [
+      "self",
+      "data",
+      "periodic_expand"
+    ],
+    "_limit_number_of_arrows": [
+      "self",
+      "data_size"
+    ],
+    "_interpolation_required": [
+      "self"
+    ],
+    "_interpolate_data": [
+      "self",
+      "lattice",
+      "data"
+    ],
+    "_use_data_without_interpolation": [
+      "self",
+      "lattice",
+      "data"
+    ],
+    "_get_periodic_left": [
+      "self",
+      "periodic_expand"
+    ],
+    "_make_mesh": [
+      "self",
+      "lattice",
+      "num_point",
+      "index",
+      "periodic_expand"
+    ],
+    "_mask_outside_supercell": [
+      "self",
+      "x_out",
+      "y_out",
+      "z_out",
+      "lattice_supercell"
+    ],
+    "_options": [
+      "self"
+    ],
+    "_create_unit_cell": [
+      "self"
+    ],
+    "_get_color_scale": [
+      "self",
+      "z"
+    ],
+    "_get_fallback_colormap": [],
+    "_get_colormap_themes": [],
+    "_get_color_range": [
+      "self",
+      "z"
+    ],
+    "_get_color_bar": [
+      "self"
+    ],
+    "_label_unit_cell_vectors": [
+      "self"
+    ],
+    "_shift_label": [
+      "self",
+      "current_vector",
+      "other_vector"
+    ]
+  },
+  "subplots": [],
+  "pd": [],
+  "Graph": {
+    "_frozen": [],
+    "__setattr__": [
+      "self",
+      "key",
+      "value"
+    ],
+    "__post_init__": [
+      "self"
+    ],
+    "__add__": [
+      "self",
+      "other"
+    ],
+    "__getitem__": [
+      "self",
+      "index"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "to_plotly": [
+      "self"
+    ],
+    "show": [
+      "self"
+    ],
+    "label": [
+      "self",
+      "new_label"
+    ],
+    "_make_label": [
+      "self",
+      "series",
+      "new_label"
+    ],
+    "_ipython_display_": [
+      "self"
+    ],
+    "_generate_plotly_traces": [
+      "self"
+    ],
+    "_make_plotly_figure": [
+      "self"
+    ],
+    "_figure_with_one_or_two_y_axes": [
+      "self"
+    ],
+    "_set_legend": [
+      "self",
+      "figure"
+    ],
+    "_set_xaxis_options": [
+      "self",
+      "figure"
+    ],
+    "_xtick_labels": [
+      "self"
+    ],
+    "_set_yaxis_options": [
+      "self",
+      "figure"
+    ],
+    "_all_are_contour": [
+      "self"
+    ],
+    "_any_are_contour": [
+      "self"
+    ],
+    "to_frame": [
+      "self"
+    ],
+    "to_csv": [
+      "self",
+      "filename"
+    ],
+    "_create_and_populate_df": [
+      "self",
+      "series"
+    ],
+    "_name_column": [
+      "self",
+      "series",
+      "suffix",
+      "idx"
+    ],
+    "_subplot_on": [
+      "self"
+    ]
+  },
+  "_set_color_if_not_present": [
+    "series",
+    "color_iterator"
+  ],
+  "_merge_fields": [
+    "left_graph",
+    "right_graph"
+  ],
+  "_merge_field": [
+    "left_graph",
+    "right_graph",
+    "field_name"
+  ],
+  "Series": {
+    "_frozen": [],
+    "__post_init__": [
+      "self"
+    ],
+    "_raise_error_if_annotations_length_incorrect": [
+      "self"
+    ],
+    "__setattr__": [
+      "self",
+      "key",
+      "value"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "to_plotly": [
+      "self"
+    ],
+    "_make_trace": [
+      "self",
+      "index",
+      "y",
+      "first_trace"
+    ],
+    "_get_weight": [
+      "self",
+      "index"
+    ],
+    "_is_line": [
+      "self"
+    ],
+    "_is_area": [
+      "self"
+    ],
+    "_options_line": [
+      "self",
+      "y"
+    ],
+    "_options_area": [
+      "self",
+      "y",
+      "weight"
+    ],
+    "_options_scaled_points": [
+      "self",
+      "y",
+      "weight"
+    ],
+    "_options_colored_points": [
+      "self",
+      "y",
+      "weight"
+    ],
+    "_common_options": [
+      "self",
+      "first_trace"
+    ],
+    "_convert_annotations": [
+      "self"
+    ],
+    "_convert_annotation": [
+      "self",
+      "index_"
+    ],
+    "_get_element": [
+      "self",
+      "array_or_scalar",
+      "index_"
+    ],
+    "_generate_shapes": [
+      "self"
+    ]
+  },
+  "pio": [],
+  "Mixin": {
+    "to_graph": [
+      "self"
+    ],
+    "plot": [
+      "self"
+    ],
+    "to_plotly": [
+      "self"
+    ],
+    "to_image": [
+      "self"
+    ],
+    "to_frame": [
+      "self"
+    ],
+    "to_csv": [
+      "self"
+    ]
+  },
+  "_merge_graphs": [
+    "graphs"
+  ],
+  "plot": [
+    "x",
+    "y",
+    "label"
+  ],
+  "_parse_series": [
+    "x",
+    "y",
+    "label"
+  ],
+  "Trace": {
+    "to_plotly": [
+      "self"
+    ]
+  },
+  "ase": [],
+  "ase_cube": [],
+  "nglview": [],
+  "vaspview": [],
+  "CUBE_FILENAME": [],
+  "_Arrow3d": {
+    "to_serializable": [
+      "self"
+    ]
+  },
+  "_rotate": [
+    "arrow",
+    "transformation"
+  ],
+  "Isosurface": {},
+  "GridQuantity": {},
+  "IonArrow": {},
+  "_x_axis": [],
+  "_y_axis": [],
+  "_z_axis": [],
+  "_recenter": [
+    "arrow",
+    "origin"
+  ],
+  "View": {
+    "__post_init__": [
+      "self"
+    ],
+    "_ipython_display_": [
+      "self",
+      "mode"
+    ],
+    "to_ngl": [
+      "self"
+    ],
+    "to_vasp_viewer": [
+      "self"
+    ],
+    "_verify": [
+      "self",
+      "mode"
+    ],
+    "_raise_error_if_present_on_multiple_steps": [
+      "self",
+      "attributes",
+      "mode"
+    ],
+    "_raise_error_if_number_steps_inconsistent": [
+      "self"
+    ],
+    "_raise_error_if_any_shape_is_incorrect": [
+      "self"
+    ],
+    "_convert_to_list": [
+      "self",
+      "attribute"
+    ],
+    "_create_atoms": [
+      "self",
+      "step"
+    ],
+    "_iterate_trajectory_frames": [
+      "self"
+    ],
+    "_show_cell": [
+      "self",
+      "widget"
+    ],
+    "_show_axes": [
+      "self",
+      "widget",
+      "trajectory"
+    ],
+    "_set_atoms_in_standard_form": [
+      "self",
+      "atoms"
+    ],
+    "_repeat_isosurface": [
+      "self",
+      "quantity"
+    ],
+    "_show_isosurface": [
+      "self",
+      "widget",
+      "trajectory"
+    ],
+    "_shift_quantity": [
+      "self",
+      "quantity"
+    ],
+    "_show_arrows_at_atoms": [
+      "self",
+      "widget",
+      "trajectory"
+    ]
+  },
+  "electron": [],
+  "ionic": [],
+  "current_density": [
+    "selection"
+  ],
+  "Sr2TiO4": [
+    "randomize"
+  ],
+  "Fe3O4": [
+    "randomize"
+  ],
+  "grid": [
+    "mode",
+    "labels"
+  ],
+  "line_mode": [
+    "mode",
+    "labels"
+  ],
+  "slice_": [
+    "selection"
+  ],
+  "qpoints": [],
+  "dielectric_tensor": [
+    "method",
+    "with_ion"
+  ],
+  "MD": [
+    "randomize"
+  ],
+  "relax": [
+    "randomize"
+  ],
+  "afqmc": [],
+  "_create_energy": [
+    "labels",
+    "randomize"
+  ],
+  "runtime_data": [
+    "system_name"
+  ],
+  "Ba2PbO4": [],
+  "Ca3AsBr3": [],
+  "CaAs3_110": [],
+  "Graphite": [
+    "with_ldipol"
+  ],
+  "Ni100": [],
+  "BN": [],
+  "SrTiO3": [],
+  "ZnS": [],
+  "SiC_fcc_disturbed": [],
+  "single_band": [],
+  "multiple_bands": [
+    "projectors"
+  ],
+  "spin_polarized_bands": [
+    "projectors"
+  ],
+  "noncollinear_bands": [
+    "projectors"
+  ],
+  "spin_texture": [
+    "selection"
+  ],
+  "AXES": [],
+  "NUMBER_ATOMS": [],
+  "NUMBER_BANDS": [],
+  "NUMBER_CHEMICAL_POTENTIALS": [],
+  "NUMBER_CONDUCTION_BANDS": [],
+  "NUMBER_EIGENVECTORS": [],
+  "NUMBER_EXCITONS": [],
+  "NUMBER_FREQUENCIES": [],
+  "NUMBER_MODES": [],
+  "NUMBER_OMEGA": [],
+  "NUMBER_POINTS": [],
+  "NUMBER_SAMPLES": [],
+  "NUMBER_STEPS": [],
+  "NUMBER_TEMPERATURES": [],
+  "NUMBER_VALENCE_BANDS": [],
+  "NUMBER_WANNIER": [],
+  "GRID_DIMENSIONS": [],
+  "NONPOLARIZED": [],
+  "COLLINEAR": [],
+  "NONCOLLINEAR": [],
+  "COMPLEX": [],
+  "wrap_data": [
+    "data"
+  ],
+  "wrap_random_data": [
+    "shape",
+    "present",
+    "seed"
+  ],
+  "wrap_orbital_types": [
+    "use_orbitals",
+    "orbital_types"
+  ],
+  "number_components": [
+    "selection"
+  ],
+  "_shape_projections": [
+    "components",
+    "num_orbitals"
+  ],
+  "phonon": [],
+  "local_moment": [
+    "selection"
+  ],
+  "elastic_modulus": [
+    "selection"
+  ],
+  "bandgap": [
+    "selection"
+  ],
+  "polarization": [],
+  "stats": [],
+  "partial_density": [
+    "selection"
+  ],
+  "piezoelectric_tensor": [
+    "selection"
+  ],
+  "electronic_minimization": [],
+  "crpa": [
+    "two_center"
+  ],
+  "crpar": [
+    "two_center"
+  ],
+  "_shape_C": [
+    "magnetism"
+  ],
+  "_setup_positions": [
+    "two_center"
+  ],
+  "workfunction": [
+    "direction"
+  ],
+  "L_RESOLVED_ORBITALS": [],
+  "LM_RESOLVED_ORBITALS": [],
+  "_make_unitary_matrix": [
+    "n",
+    "seed"
+  ],
+  "transport": [
+    "selection"
+  ],
+  "chemical_potential": [
+    "selection"
+  ],
+  "wrap_nbands_sum": [
+    "selection"
+  ],
+  "wrap_delta": [
+    "selection",
+    "seed"
+  ],
+  "wrap_id_index": [],
+  "wrap_scattering_approximation": [
+    "selection"
+  ],
+  "self_energy": [
+    "selection"
+  ],
+  "Selection": {},
+  "pretty": [],
+  "_COMMON_PARAMETERS": [],
+  "data_access": [
+    "func"
+  ],
+  "Refinery": {
+    "__init__": [
+      "self",
+      "data_context"
+    ],
+    "__post_init__": [
+      "self"
+    ],
+    "from_data": [
+      "cls",
+      "raw_data"
+    ],
+    "from_path": [
+      "cls",
+      "path"
+    ],
+    "from_file": [
+      "cls",
+      "file"
+    ],
+    "path": [
+      "self"
+    ],
+    "_raw_data": [
+      "self"
+    ],
+    "_selection": [
+      "self"
+    ],
+    "print": [
+      "self"
+    ],
+    "read": [
+      "self"
+    ],
+    "_read_to_database": [
+      "self"
+    ],
+    "selections": [
+      "self"
+    ],
+    "_repr_pretty_": [
+      "self",
+      "p",
+      "cycle"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "_quantity": [
+    "cls"
+  ],
+  "_get_path_to_file": [
+    "file"
+  ],
+  "_FunctionWrapper": {
+    "__init__": [
+      "self",
+      "func",
+      "refinery"
+    ],
+    "run": [
+      "self"
+    ],
+    "_find_selection_in_arguments": [
+      "self"
+    ],
+    "_get_selection_from_parameters": [
+      "self",
+      "signature"
+    ],
+    "_get_selection_from_args": [
+      "self",
+      "signature"
+    ],
+    "_parse_selection": [
+      "self",
+      "selection"
+    ],
+    "_find_selection_in_schema": [
+      "self",
+      "selection"
+    ],
+    "_remove_selected_option_if_possible": [
+      "self",
+      "selection",
+      "option"
+    ],
+    "_run_selections": [
+      "self",
+      "bound_arguments",
+      "selections"
+    ],
+    "_run_selection": [
+      "self",
+      "bound_arguments",
+      "selected",
+      "remaining"
+    ],
+    "_set_remaining_selection": [
+      "self",
+      "bound_arguments",
+      "remaining"
+    ],
+    "_use_default_or_empty_string": [
+      "self",
+      "signature"
+    ],
+    "_merge_results": [
+      "self",
+      "results"
+    ],
+    "_raise_error_if_any_remaining_selection": [
+      "self",
+      "remaining"
+    ]
+  },
+  "_raise_error_if_option_was_not_removed": [
+    "selection",
+    "option",
+    "remaining"
+  ],
+  "_DataWrapper": {
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self"
+    ],
+    "set_selection": [
+      "self",
+      "selection"
+    ]
+  },
+  "_DataAccess": {
+    "__init__": [
+      "self",
+      "quantity"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self"
+    ],
+    "set_selection": [
+      "self",
+      "selection"
+    ]
+  },
+  "_ForceReader": {
+    "error_message": [
+      "self",
+      "key",
+      "err"
+    ]
+  },
+  "_kpoints_selection": [],
+  "_last_step": [
+    "lattice_vectors"
+  ],
+  "_line_distances": [
+    "coordinates"
+  ],
+  "_kpoint_label": [
+    "kpoint"
+  ],
+  "_to_latex": [
+    "float"
+  ],
+  "_StressReader": {
+    "error_message": [
+      "self",
+      "key",
+      "err"
+    ]
+  },
+  "BandgapInstance": {
+    "__init__": [
+      "self",
+      "parent",
+      "index"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "_generate_lines": [
+      "self"
+    ],
+    "_format_spin_component": [
+      "self",
+      "component",
+      "num_component"
+    ],
+    "_format_gap_section": [
+      "self",
+      "label",
+      "spin",
+      "data"
+    ],
+    "to_graph": [
+      "self",
+      "selection"
+    ],
+    "to_dict": [
+      "self"
+    ]
+  },
+  "_dielectric_tensor_string": [
+    "tensor",
+    "label"
+  ],
+  "_description": [
+    "method"
+  ],
+  "_calculate_2d_polarizability": [
+    "dielectric_tensor",
+    "cell_"
+  ],
+  "_selection_string": [
+    "default"
+  ],
+  "_SELECTIONS": [],
+  "_DB_KEYS": [],
+  "_YAxes": {
+    "__init__": [
+      "self",
+      "tree"
+    ],
+    "_is_temperature": [
+      "self",
+      "selection"
+    ],
+    "use_y2": [
+      "self",
+      "label"
+    ]
+  },
+  "VALID_KINDS": [],
+  "_COMPONENTS": [],
+  "_PotentialReduction": {
+    "__init__": [
+      "self",
+      "keys"
+    ],
+    "__call__": [
+      "self",
+      "array",
+      "axis"
+    ],
+    "_is_magnetic_potential": [
+      "self",
+      "axis"
+    ]
+  },
+  "_is_nonpolarized": [
+    "potential"
+  ],
+  "_is_collinear": [
+    "potential"
+  ],
+  "_is_noncollinear": [
+    "potential"
+  ],
+  "_raise_error_if_kind_incorrect": [
+    "kind",
+    "valid_kinds"
+  ],
+  "_raise_error_if_component_selected": [
+    "component"
+  ],
+  "_raise_error_if_no_data": [
+    "data",
+    "kind"
+  ],
+  "_raise_error_if_nonpolarized_potential": [
+    "potential"
+  ],
+  "_VACUUM_RATIO": [],
+  "_is_suspected_2d": [
+    "lengths",
+    "dipole_direction"
+  ],
+  "_get_area_2d": [
+    "lattice",
+    "lengths",
+    "idipol_direction"
+  ],
+  "_idipol_to_direction": [
+    "idipol",
+    "ldipol"
+  ],
+  "_LatticeVectors": {
+    "error_message": [
+      "self",
+      "key",
+      "err"
+    ]
+  },
+  "_StringFormatter": {
+    "__post_init__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "line_generator": [
+      "self"
+    ],
+    "_ion_to_string": [
+      "self",
+      "ion"
+    ],
+    "_ion_pair_to_string": [
+      "self",
+      "ion",
+      "jon"
+    ],
+    "_force_constants_to_string": [
+      "self",
+      "ion",
+      "jon"
+    ],
+    "_force_constant_to_string": [
+      "self",
+      "index",
+      "jndex"
+    ]
+  },
+  "ElectronPhononInstance": {
+    "__init__": [
+      "self",
+      "parent",
+      "index"
+    ],
+    "_get_data": [
+      "self",
+      "name"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "print": [
+      "self"
+    ],
+    "_repr_pretty_": [
+      "self",
+      "p",
+      "cycle"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "read_metadata": [
+      "self"
+    ],
+    "_metadata_string": [
+      "self"
+    ],
+    "read": [
+      "self"
+    ]
+  },
+  "mdtraj": [],
+  "_subscript": [],
+  "ion_types_documentation": [],
+  "raw_stoichiometry_from_ase": [
+    "structure"
+  ],
+  "_merge_to_slice_if_possible": [
+    "selections"
+  ],
+  "_is_slice": [
+    "indices"
+  ],
+  "_to_slice": [
+    "indices"
+  ],
+  "ase_io": [],
+  "_Format": {
+    "comment_line": [
+      "self",
+      "stoichiometry",
+      "step_string",
+      "ion_types"
+    ],
+    "scaling_factor": [
+      "self",
+      "scale"
+    ],
+    "ion_list": [
+      "self",
+      "stoichiometry",
+      "ion_types"
+    ],
+    "coordinate_system": [
+      "self"
+    ],
+    "vectors_to_table": [
+      "self",
+      "vectors"
+    ],
+    "_vector_to_row": [
+      "self",
+      "vector"
+    ],
+    "_element_to_string": [
+      "self",
+      "element"
+    ]
+  },
+  "_cell_from_ase": [
+    "structure"
+  ],
+  "_replace_or_set_elements": [
+    "poscar",
+    "elements"
+  ],
+  "_elements_not_in_poscar": [
+    "elements"
+  ],
+  "_raise_error_if_elements_not_set": [
+    "elements"
+  ],
+  "_OCCUPATION_CUTOFF": [],
+  "_to_series": [
+    "array"
+  ],
+  "_ToQuiverReduction": {
+    "__init__": [
+      "self",
+      "keys"
+    ],
+    "__call__": [
+      "self",
+      "array",
+      "axis"
+    ]
+  },
+  "selection_doc": [],
+  "examples": [
+    "instance_name",
+    "function_name",
+    "step"
+  ],
+  "_create_slice_for_current_step_if_possible": [
+    "steps"
+  ],
+  "INPUT_FILES": [],
+  "QUANTITIES": [],
+  "GROUPS": [],
+  "GROUP_TYPE_ALIAS": [],
+  "AUTOSUMMARY_QUANTITIES": [],
+  "AUTOSUMMARY_GROUPS": [],
+  "AUTOSUMMARIES": [],
+  "Calculation": [],
+  "_add_all_refinement_classes": [
+    "calc"
+  ],
+  "_make_property": [
+    "quantity"
+  ],
+  "_make_group": [
+    "group_name",
+    "quantities"
+  ],
+  "DefaultCalculationFactory": {
+    "__getattr__": [
+      "self",
+      "attr"
+    ],
+    "__setattr__": [
+      "self",
+      "attr",
+      "value"
+    ]
+  },
+  "_TensorReduction": {
+    "__init__": [
+      "self",
+      "keys"
+    ],
+    "__call__": [
+      "self",
+      "array",
+      "axis"
+    ],
+    "_reduce": [
+      "self",
+      "array",
+      "axis"
+    ],
+    "_haeberlen_mehring": [
+      "self",
+      "eigenvalues"
+    ]
+  },
+  "_series": [
+    "energies",
+    "data"
+  ],
+  "_flip_down_component": [
+    "name"
+  ],
+  "ALIAS": [],
+  "ElectronPhononAccumulator": {
+    "__init__": [
+      "self",
+      "parent",
+      "raw_data"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "selections": [
+      "self",
+      "base_selections"
+    ],
+    "_remove_missing_data": [
+      "self",
+      "data"
+    ],
+    "_chemical_potential": [
+      "self"
+    ],
+    "chemical_potential_mu_tag": [
+      "self"
+    ],
+    "chemical_potential_label": [
+      "self"
+    ],
+    "select_indices": [
+      "self",
+      "selection"
+    ],
+    "_filter_indices": [
+      "self",
+      "selection",
+      "filters"
+    ],
+    "_raise_error_if_assignment_format_incorrect": [
+      "self",
+      "assignment"
+    ],
+    "_filter_assignment": [
+      "self",
+      "remaining_indices",
+      "key",
+      "value"
+    ],
+    "_match_key_value": [
+      "self",
+      "index_",
+      "key",
+      "value"
+    ],
+    "get_data": [
+      "self",
+      "name",
+      "index"
+    ],
+    "_raise_error_if_not_present": [
+      "self",
+      "name",
+      "expected_name"
+    ]
+  },
+  "DIRECTIONS": [],
+  "UNITS": [],
+  "TransportInstance": {
+    "__str__": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "temperatures": [
+      "self"
+    ],
+    "electronic_conductivity": [
+      "self",
+      "selection"
+    ],
+    "mobility": [
+      "self",
+      "selection"
+    ],
+    "seebeck": [
+      "self",
+      "selection"
+    ],
+    "peltier": [
+      "self",
+      "selection"
+    ],
+    "electronic_thermal_conductivity": [
+      "self",
+      "selection"
+    ],
+    "figure_of_merit": [
+      "self",
+      "kappa_lattice"
+    ],
+    "_thermal_conductivity": [
+      "self",
+      "kappa_lattice"
+    ],
+    "_select_data": [
+      "self",
+      "quantity",
+      "selection"
+    ],
+    "selections": [
+      "self"
+    ],
+    "to_graph": [
+      "self",
+      "selection"
+    ]
+  },
+  "_SeriesBuilderBase": {
+    "__init__": [
+      "self"
+    ],
+    "ylabel": [
+      "self"
+    ],
+    "_get_and_check_quantity": [
+      "self",
+      "selection"
+    ],
+    "_raise_error_if_quantity_inconsistent": [
+      "self",
+      "selected_quantities"
+    ],
+    "_get_quantities_from_selection": [
+      "self",
+      "selection"
+    ],
+    "_raise_error_if_not_exactly_one_quantity": [
+      "self",
+      "selection",
+      "selected_quantities"
+    ],
+    "_get_and_check_direction": [
+      "self",
+      "selection"
+    ],
+    "_get_direction_from_selection": [
+      "self",
+      "selection"
+    ],
+    "_raise_error_if_more_than_one_direction": [
+      "self",
+      "selection",
+      "selected_directions"
+    ],
+    "_get_data_from_instance": [
+      "self",
+      "direction",
+      "instance"
+    ]
+  },
+  "_SeriesBuilderInstance": {
+    "build": [
+      "self",
+      "selection",
+      "instance"
+    ]
+  },
+  "_SeriesBuilderMapping": {
+    "build": [
+      "self",
+      "selection",
+      "instances"
+    ],
+    "_get_metadata": [
+      "self",
+      "instances"
+    ],
+    "_get_temperature": [
+      "self",
+      "selection",
+      "instances"
+    ],
+    "_get_temperature_from_selection": [
+      "self",
+      "selection"
+    ],
+    "_get_temperature_from_instances": [
+      "self",
+      "instances"
+    ],
+    "_find_selected_temperature": [
+      "self",
+      "selected_temperatures",
+      "all_temperatures"
+    ],
+    "_get_transport_data": [
+      "self",
+      "direction",
+      "instances",
+      "mask"
+    ],
+    "_assign_common_label": [
+      "self",
+      "direction"
+    ],
+    "_use_marker_if_metadata_is_different": [
+      "self",
+      "annotations"
+    ]
+  },
+  "_band_structure": [
+    "data",
+    "projections"
+  ],
+  "_make_series": [
+    "data",
+    "label",
+    "weight",
+    "is_spin_projection"
+  ],
+  "_get_bands": [
+    "eigenvalues",
+    "label"
+  ],
+  "_xticks": [
+    "data",
+    "line_length"
+  ],
+  "_degenerate_ticks_and_labels": [
+    "data",
+    "line_length"
+  ],
+  "_tick_labels": [
+    "data"
+  ],
+  "_use_labels_and_line_edges": [
+    "labels",
+    "line_length"
+  ],
+  "_filter_unique": [
+    "ticks",
+    "labels"
+  ],
+  "_index_note": [],
+  "_moment_selection": [],
+  "_ORBITAL_PROJECTION": [],
+  "_sum_over_orbitals": [
+    "quantity",
+    "is_vector"
+  ],
+  "_convert_moment_to_3d_vector": [
+    "moments"
+  ],
+  "_max_length_moments": [
+    "moments"
+  ],
+  "_color": [
+    "selection"
+  ],
+  "_DEFAULT": [],
+  "_INTERNAL": [],
+  "_MAGNETIZATION": [],
+  "_join_with_emphasis": [
+    "data"
+  ],
+  "_raise_error_if_color_is_specified": [
+    "color"
+  ],
+  "_raise_component_not_specified_error": [
+    "selec_tuple"
+  ],
+  "_raise_is_nonpolarized_error": [],
+  "_raise_is_collinear_error": [],
+  "_elastic_modulus_string": [
+    "tensor",
+    "label"
+  ],
+  "_ElasticTensor": {
+    "_diag_indices": [],
+    "_bulk_indices": [],
+    "_shear_indices": [],
+    "__init__": [
+      "self",
+      "C"
+    ],
+    "from_array": [
+      "cls",
+      "C"
+    ],
+    "_row_to_tensor": [
+      "row"
+    ],
+    "_tensor_to_row": [
+      "C"
+    ],
+    "tensor": [
+      "self"
+    ],
+    "row": [
+      "self"
+    ],
+    "compliance_tensor": [
+      "self"
+    ],
+    "_weighted_sum": [
+      "tensor",
+      "indices",
+      "coeffs"
+    ],
+    "get_VRH": [
+      "self"
+    ],
+    "get_hardness": [
+      "self"
+    ],
+    "get_fracture_toughness": [
+      "self",
+      "V0"
+    ]
+  },
+  "_Gap": {},
+  "GAPS": [],
+  "COMPONENTS": [],
+  "_cell_lines": [
+    "cell"
+  ],
+  "_cell_scale": [
+    "scale"
+  ],
+  "_ion_position_lines": [
+    "positions",
+    "selective_dynamics"
+  ],
+  "_lattice_velocity_lines": [
+    "velocities",
+    "cell"
+  ],
+  "_ion_velocity_lines": [
+    "velocities"
+  ],
+  "_vectors_to_lines": [
+    "vectors",
+    "scientific"
+  ],
+  "_vectors_and_flags_to_lines": [
+    "vectors",
+    "flags"
+  ],
+  "_vector_to_line": [
+    "vector",
+    "scientific"
+  ],
+  "_flag_to_line": [
+    "flag"
+  ],
+  "_float_format": [
+    "number",
+    "scientific"
+  ],
+  "_bool_format": [
+    "value"
+  ],
+  "ndimage": [],
+  "_STM_MODES": [],
+  "_SPINS": [],
+  "_raise_error_if_vacuum_too_small": [
+    "vacuum_thickness",
+    "min_vacuum"
+  ],
+  "_raise_error_if_vacuum_not_along_z": [
+    "structure"
+  ],
+  "_get_sanitized_fractional_positions": [
+    "structure"
+  ],
+  "_get_sanitized_cartesian_positions": [
+    "structure"
+  ],
+  "_min_of_z_charge": [
+    "charge",
+    "sigma",
+    "truncate"
+  ],
+  "_tensor_to_string": [
+    "tensor",
+    "label"
+  ],
+  "_extract_tensor": [
+    "raw_tensor"
+  ],
+  "_compute_2d_piezoelectric": [
+    "e_tensor",
+    "cell_"
+  ],
+  "_compute_2d_plane_and_conversion_factor": [
+    "cell_"
+  ],
+  "_compute_bulk_quantities": [
+    "e_tensor"
+  ],
+  "_VelocityReader": {
+    "error_message": [
+      "self",
+      "key",
+      "err"
+    ]
+  },
+  "_CoulombPotential": {},
+  "_OmegaPlotter": {
+    "__init__": [
+      "self",
+      "omega_in",
+      "omega_out",
+      "config",
+      "positions",
+      "radius_max"
+    ],
+    "interpolate_bare_if_necessary": [
+      "self",
+      "potential"
+    ],
+    "interpolate_screened_if_necessary": [
+      "self",
+      "potential"
+    ],
+    "make_all_series": [
+      "self",
+      "potentials"
+    ],
+    "_make_one_series": [
+      "self",
+      "potential",
+      "position"
+    ]
+  },
+  "_RadialPlotter": {
+    "xlabel": [],
+    "__init__": [
+      "self",
+      "positions",
+      "radius_out",
+      "radius_max"
+    ],
+    "interpolate_bare_if_necessary": [
+      "self",
+      "potential"
+    ],
+    "interpolate_screened_if_necessary": [
+      "self",
+      "potential"
+    ],
+    "_ohno_interpolation": [
+      "self",
+      "potential"
+    ],
+    "make_all_series": [
+      "self",
+      "potentials"
+    ],
+    "_make_one_series": [
+      "self",
+      "potential"
+    ]
+  },
+  "transform_positions_to_radial": [
+    "positions",
+    "radius_max"
+  ],
+  "_DEFAULT_SELECTION": [],
+  "SelfEnergyInstance": {
+    "__str__": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "_get_fan": [
+      "self"
+    ],
+    "fan": [
+      "self"
+    ],
+    "debye_waller": [
+      "self"
+    ],
+    "self_energy": [
+      "self"
+    ],
+    "energies": [
+      "self"
+    ],
+    "_make_sparse_tensor": [
+      "self",
+      "tensor_data"
+    ]
+  },
+  "SparseTensor": {
+    "__init__": [
+      "self",
+      "band_kpoint_spin_index",
+      "band_start",
+      "tensor"
+    ],
+    "_get_band_kpoint_spin_index": [
+      "self",
+      "spin",
+      "kpoint",
+      "band"
+    ],
+    "_band_range_string": [
+      "self"
+    ],
+    "valid_bands": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "spin_kpoint_band_tuple"
+    ]
+  },
+  "SPIN_PROJECTION": [],
+  "_add_matrix_string": [
+    "ion_string",
+    "displacement",
+    "matrix"
+  ],
+  "InputFile": {
+    "__init__": [
+      "self",
+      "path"
+    ],
+    "from_string": [
+      "cls",
+      "string",
+      "path"
+    ],
+    "print": [
+      "self"
+    ],
+    "write": [
+      "self",
+      "string"
+    ],
+    "read": [
+      "self"
+    ],
+    "_repr_pretty_": [
+      "self",
+      "p",
+      "cycle"
+    ],
+    "_write_to_file": [
+      "self",
+      "string"
+    ],
+    "_write_to_memory": [
+      "self",
+      "string"
+    ],
+    "_read_from_file": [
+      "self"
+    ],
+    "_read_from_memory": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "KPOINTS": {},
+  "INCAR": {},
+  "get_options": [
+    "args"
+  ],
+  "write_energy_error_file": [
+    "cls",
+    "fname"
+  ],
+  "write_force_error_file": [
+    "cls",
+    "fname"
+  ],
+  "write_stress_error_file": [
+    "cls",
+    "fname"
+  ],
+  "make_plot": [
+    "cls",
+    "show",
+    "pdf",
+    "graph_name"
+  ]
+}
