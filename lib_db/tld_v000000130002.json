@@ -1,0 +1,336 @@
+{
+  "__author__": [],
+  "__copyright__": [],
+  "__license__": [],
+  "__all__": [],
+  "LOGGER": [],
+  "Registry": {
+    "__new__": [
+      "mcs",
+      "name",
+      "bases",
+      "attrs"
+    ],
+    "_uid": [
+      "cls"
+    ],
+    "reset": [
+      "mcs"
+    ],
+    "get": [
+      "mcs",
+      "key",
+      "default"
+    ],
+    "items": [
+      "mcs"
+    ]
+  },
+  "BaseTLDSourceParser": {
+    "validate": [
+      "cls"
+    ],
+    "get_tld_names": [
+      "cls",
+      "fail_silently",
+      "retry_count"
+    ],
+    "update_tld_names": [
+      "cls",
+      "fail_silently"
+    ]
+  },
+  "TrieNode": {
+    "__slots__": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "Trie": {
+    "__init__": [
+      "self"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "add": [
+      "self",
+      "tld",
+      "private"
+    ]
+  },
+  "protocol_re": [],
+  "get_tld_names_container": [],
+  "update_tld_names_container": [
+    "tld_names_local_path",
+    "trie_obj"
+  ],
+  "pop_tld_names_container": [
+    "tld_names_local_path"
+  ],
+  "update_tld_names": [
+    "fail_silently",
+    "parser_uid"
+  ],
+  "update_tld_names_cli": [
+    "argv"
+  ],
+  "get_tld_names": [
+    "fail_silently",
+    "retry_count",
+    "parser_class"
+  ],
+  "BaseMozillaTLDSourceParser": {
+    "get_tld_names": [
+      "cls",
+      "fail_silently",
+      "retry_count"
+    ]
+  },
+  "MozillaTLDSourceParser": {},
+  "MozillaPublicOnlyTLDSourceParser": {},
+  "process_url": [
+    "url",
+    "fail_silently",
+    "fix_protocol",
+    "search_public",
+    "search_private",
+    "parser_class"
+  ],
+  "get_fld": [
+    "url",
+    "fail_silently",
+    "fix_protocol",
+    "search_public",
+    "search_private",
+    "parser_class"
+  ],
+  "get_tld": [
+    "url",
+    "fail_silently",
+    "as_object",
+    "fix_protocol",
+    "search_public",
+    "search_private",
+    "parser_class"
+  ],
+  "parse_tld": [
+    "url",
+    "fail_silently",
+    "fix_protocol",
+    "search_public",
+    "search_private",
+    "parser_class"
+  ],
+  "is_tld": [
+    "value",
+    "search_public",
+    "search_private",
+    "parser_class"
+  ],
+  "reset_tld_names": [
+    "tld_names_local_path"
+  ],
+  "project_dir": [
+    "base"
+  ],
+  "PROJECT_DIR": [],
+  "__title__": [],
+  "__version__": [],
+  "Result": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "tld",
+      "domain",
+      "subdomain",
+      "parsed_url"
+    ],
+    "extension": [
+      "self"
+    ],
+    "suffix": [],
+    "fld": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__repr__": [],
+    "__dict__": [
+      "self"
+    ]
+  },
+  "TldIOError": {},
+  "TldDomainNotFound": {
+    "__init__": [
+      "self",
+      "domain_name"
+    ]
+  },
+  "TldBadUrl": {
+    "__init__": [
+      "self",
+      "url"
+    ]
+  },
+  "TldImproperlyConfigured": {},
+  "Settings": {
+    "__init__": [
+      "self"
+    ],
+    "set": [
+      "self",
+      "name",
+      "value"
+    ],
+    "get": [
+      "self",
+      "name",
+      "default"
+    ],
+    "reset": [
+      "self"
+    ]
+  },
+  "settings": [],
+  "get_setting": [],
+  "set_setting": [],
+  "reset_settings": [],
+  "NAMES_LOCAL_PATH_PARENT": [],
+  "DEBUG": [],
+  "is_internet_available": [
+    "host",
+    "port",
+    "timeout"
+  ],
+  "internet_available_only": [
+    "func"
+  ],
+  "TestCommands": {
+    "setUp": [
+      "self"
+    ],
+    "test_update_tld_names_command": [
+      "self"
+    ],
+    "test_update_tld_names_mozilla_command": [
+      "self"
+    ]
+  },
+  "TestCore": {
+    "setUpClass": [
+      "cls"
+    ],
+    "setUp": [
+      "self"
+    ],
+    "tearDown": [
+      "self"
+    ],
+    "good_url": [
+      "self"
+    ],
+    "bad_url": [
+      "self"
+    ],
+    "get_custom_parser_class": [
+      "self",
+      "uid",
+      "source_url",
+      "local_path"
+    ],
+    "test_tld_names_loaded": [
+      "self"
+    ],
+    "test_update_tld_names": [
+      "self"
+    ],
+    "test_fld_good_patterns_pass": [
+      "self"
+    ],
+    "test_fld_bad_patterns_pass": [
+      "self"
+    ],
+    "test_override_settings": [
+      "self"
+    ],
+    "test_tld_good_patterns_pass_parsed_object": [
+      "self"
+    ],
+    "test_override_full_names_path": [
+      "self"
+    ],
+    "test_public_private": [
+      "self"
+    ],
+    "test_fld_bad_patterns_exceptions": [
+      "self"
+    ],
+    "test_tld_good_patterns_pass": [
+      "self"
+    ],
+    "test_tld_bad_patterns_pass": [
+      "self"
+    ],
+    "test_parse_tld_good_patterns": [
+      "self"
+    ],
+    "test_is_tld_good_patterns": [
+      "self"
+    ],
+    "test_is_tld_bad_patterns": [
+      "self"
+    ],
+    "test_fail_update_tld_names": [
+      "self"
+    ],
+    "test_fail_get_tld_names": [
+      "self"
+    ],
+    "test_fail_get_fld_wrong_kwargs": [
+      "self"
+    ],
+    "test_fail_parse_tld": [
+      "self"
+    ],
+    "test_get_tld_names_and_reset_tld_names": [
+      "self"
+    ],
+    "test_update_tld_names_cli": [
+      "self"
+    ],
+    "test_parse_tld_custom_tld_names_good_patterns": [
+      "self"
+    ],
+    "test_tld_custom_tld_names_good_patterns_pass_parsed_object": [
+      "self"
+    ],
+    "test_reset_tld_names_for_custom_parser": [
+      "self"
+    ],
+    "test_fail_define_custom_parser_class_without_uid": [
+      "self"
+    ],
+    "test_len_trie_nodes": [
+      "self"
+    ],
+    "test_get_tld_names_no_arguments": [
+      "self"
+    ],
+    "test_case": [
+      "self"
+    ],
+    "test_tld_fail_silently_pass": [
+      "self"
+    ],
+    "test_protocols": [
+      "self"
+    ]
+  },
+  "TestRegistry": {
+    "test_import_from_registry": [
+      "self"
+    ]
+  }
+}
