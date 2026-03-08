@@ -1,0 +1,99 @@
+{
+  "__version__": [],
+  "SafeSearchMode": {
+    "STRICT": [],
+    "MODERATE": [],
+    "OFF": []
+  },
+  "SearchResult": {},
+  "RateLimiter": {
+    "__init__": [
+      "self",
+      "requests_per_minute"
+    ],
+    "acquire": [
+      "self"
+    ]
+  },
+  "DuckDuckGoSearcher": {
+    "BASE_URL": [],
+    "HEADERS": [],
+    "__init__": [
+      "self",
+      "safe_search",
+      "default_region"
+    ],
+    "format_results_for_llm": [
+      "self",
+      "results"
+    ],
+    "search": [
+      "self",
+      "query",
+      "ctx",
+      "max_results",
+      "region"
+    ]
+  },
+  "WebContentFetcher": {
+    "__init__": [
+      "self"
+    ],
+    "fetch_and_parse": [
+      "self",
+      "url",
+      "ctx",
+      "start_index",
+      "max_length"
+    ]
+  },
+  "mcp": [],
+  "SAFE_SEARCH_MODE": [],
+  "REGION_CODE": [],
+  "searcher": [],
+  "fetcher": [],
+  "search": [
+    "query",
+    "ctx",
+    "max_results",
+    "region"
+  ],
+  "fetch_content": [
+    "url",
+    "ctx",
+    "start_index",
+    "max_length"
+  ],
+  "main": [],
+  "DummyCtx": {
+    "info": [
+      "self",
+      "message"
+    ],
+    "error": [
+      "self",
+      "message"
+    ]
+  },
+  "TestRateLimiter": {
+    "test_acquire_removes_expired_entries": [
+      "self"
+    ]
+  },
+  "TestDuckDuckGoSearcher": {
+    "test_format_results_for_llm_populates_entries": [
+      "self"
+    ],
+    "test_format_results_for_llm_handles_empty": [
+      "self"
+    ]
+  },
+  "TestWebContentFetcher": {
+    "test_fetch_and_parse_extracts_clean_text": [
+      "self"
+    ],
+    "test_fetch_and_parse_pagination": [
+      "self"
+    ]
+  }
+}
