@@ -1,0 +1,509 @@
+{
+  "SentType": [],
+  "TaskType": [],
+  "__all__": [],
+  "logger": [],
+  "_MDV2_ESCAPE_CHARS": [],
+  "_CODE_ESCAPE_CHARS": [],
+  "_URL_ESCAPE_CHARS": [],
+  "_escape_markdownv2": [
+    "text"
+  ],
+  "_escape_code": [
+    "text"
+  ],
+  "_escape_url": [
+    "url"
+  ],
+  "_utf16_offset_to_pyindex": [
+    "text"
+  ],
+  "_CODE_ENTITY_TYPES": [],
+  "entities_to_markdownv2": [
+    "text",
+    "entities"
+  ],
+  "_get_open_tag": [
+    "ent"
+  ],
+  "_get_close_tag": [
+    "ent"
+  ],
+  "ContentType": {
+    "TEXT": [],
+    "FILE": [],
+    "PHOTO": []
+  },
+  "ContentTypes": [],
+  "ContentTrace": {},
+  "_deprecated_property": [
+    "old",
+    "new",
+    "is_mdv2"
+  ],
+  "Text": {
+    "content": []
+  },
+  "File": {
+    "caption": []
+  },
+  "Photo": {
+    "caption": []
+  },
+  "utf16_len": [
+    "text"
+  ],
+  "MessageEntity": {
+    "to_dict": [
+      "self"
+    ]
+  },
+  "_find_newline_positions": [
+    "text"
+  ],
+  "_build_utf16_offset_table": [
+    "text"
+  ],
+  "split_entities": [
+    "text",
+    "entities",
+    "max_utf16_len"
+  ],
+  "_latex_helper": [],
+  "STANDARD_OPTIONS": [],
+  "_SPOILER_RE": [],
+  "_CODE_REGION_RE": [],
+  "_preprocess_spoilers": [
+    "text"
+  ],
+  "_validate_telegram_emoji": [
+    "url"
+  ],
+  "_LATEX_MATH_P": [],
+  "_LATEX_INLINE_P": [],
+  "_contains_latex_symbols": [
+    "content"
+  ],
+  "_escape_latex": [
+    "text"
+  ],
+  "Segment": {},
+  "_TextBuffer": {
+    "__slots__": [],
+    "__init__": [
+      "self"
+    ],
+    "write": [
+      "self",
+      "text"
+    ],
+    "utf16_offset": [
+      "self"
+    ],
+    "py_offset": [
+      "self"
+    ],
+    "trailing_newline_count": [
+      "self"
+    ],
+    "pop_last": [
+      "self"
+    ],
+    "get_text": [
+      "self"
+    ]
+  },
+  "_EntityScope": {},
+  "EventWalker": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "walk": [
+      "self",
+      "events"
+    ],
+    "_handle_event": [
+      "self",
+      "event"
+    ],
+    "_on_start": [
+      "self",
+      "tag"
+    ],
+    "_on_end": [
+      "self",
+      "tag"
+    ],
+    "_on_text": [
+      "self",
+      "text"
+    ],
+    "_on_soft_break": [
+      "self"
+    ],
+    "_on_hard_break": [
+      "self"
+    ],
+    "_on_rule": [
+      "self"
+    ],
+    "_on_inline_code": [
+      "self",
+      "code"
+    ],
+    "_on_inline_math": [
+      "self",
+      "math"
+    ],
+    "_on_display_math": [
+      "self",
+      "math"
+    ],
+    "_on_inline_html": [
+      "self",
+      "html"
+    ],
+    "_on_task_list_marker": [
+      "self",
+      "checked"
+    ],
+    "_on_start_heading": [
+      "self",
+      "heading_data"
+    ],
+    "_on_end_heading": [
+      "self"
+    ],
+    "_on_start_paragraph": [
+      "self"
+    ],
+    "_on_end_paragraph": [
+      "self"
+    ],
+    "_on_start_code_block": [
+      "self",
+      "kind"
+    ],
+    "_on_end_code_block": [
+      "self"
+    ],
+    "_on_start_blockquote": [
+      "self"
+    ],
+    "_on_end_blockquote": [
+      "self"
+    ],
+    "_on_start_link": [
+      "self",
+      "link_data"
+    ],
+    "_on_start_image": [
+      "self",
+      "image_data"
+    ],
+    "_on_start_list": [
+      "self",
+      "start_number"
+    ],
+    "_on_start_item": [
+      "self"
+    ],
+    "_on_end_item": [
+      "self"
+    ],
+    "_on_end_list": [
+      "self"
+    ],
+    "_on_start_table": [
+      "self",
+      "alignments"
+    ],
+    "_on_end_table_cell": [
+      "self"
+    ],
+    "_on_end_table_row": [
+      "self"
+    ],
+    "_on_end_table": [
+      "self"
+    ],
+    "_format_table": [
+      "self",
+      "rows"
+    ],
+    "_push_entity": [
+      "self",
+      "entity_type"
+    ],
+    "_pop_entity": [
+      "self",
+      "entity_type"
+    ],
+    "_pop_entity_any": [
+      "self"
+    ],
+    "_finalize_entity": [
+      "self",
+      "scope"
+    ],
+    "_ensure_block_spacing": [
+      "self"
+    ]
+  },
+  "convert": [
+    "markdown"
+  ],
+  "convert_with_segments": [
+    "markdown"
+  ],
+  "markdownify": [
+    "content"
+  ],
+  "standardize": [
+    "content"
+  ],
+  "telegramify": [
+    "content"
+  ],
+  "default_language_to_ext": [],
+  "extract_valid_filename": [
+    "line"
+  ],
+  "get_ext": [
+    "language",
+    "lang_map"
+  ],
+  "get_filename": [
+    "line",
+    "language",
+    "lang_map"
+  ],
+  "_strip_newlines_adjust": [
+    "text",
+    "entities"
+  ],
+  "_slice_text_entities": [
+    "full_text",
+    "full_entities",
+    "py_start",
+    "py_end",
+    "utf16_start",
+    "utf16_end"
+  ],
+  "process_markdown": [
+    "content"
+  ],
+  "_append_text_chunks": [
+    "result",
+    "text",
+    "entities",
+    "max_message_length"
+  ],
+  "_handle_code_block": [
+    "result",
+    "seg"
+  ],
+  "_handle_mermaid": [
+    "result",
+    "seg"
+  ],
+  "singleton": [
+    "cls"
+  ],
+  "Symbol": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "RenderConfig": {
+    "__init__": [
+      "self"
+    ],
+    "markdown_symbol": [
+      "self"
+    ],
+    "cite_expandable": [
+      "self",
+      "value"
+    ]
+  },
+  "get_runtime_config": [],
+  "MermaidConfig": {},
+  "download_image": [
+    "url",
+    "session"
+  ],
+  "is_image": [
+    "data"
+  ],
+  "compress_to_deflate": [
+    "data"
+  ],
+  "safe_base64_encode": [
+    "data"
+  ],
+  "generate_pako": [
+    "graph_markdown",
+    "mermaid_config"
+  ],
+  "b64_mermaid_url": [
+    "diagram"
+  ],
+  "get_mermaid_live_url": [
+    "graph_markdown"
+  ],
+  "get_mermaid_ink_url": [
+    "graph_markdown"
+  ],
+  "render_mermaid": [
+    "diagram",
+    "session"
+  ],
+  "support_mermaid": [],
+  "count_text": [
+    "text"
+  ],
+  "LatexToUnicodeHelper": {
+    "is_combining_char": [
+      "char"
+    ],
+    "translate_combining": [
+      "command",
+      "text"
+    ],
+    "make_not": [
+      "negated"
+    ],
+    "try_make_subscript": [
+      "text"
+    ],
+    "make_subscript": [
+      "text"
+    ],
+    "try_make_superscript": [
+      "text"
+    ],
+    "make_superscript": [
+      "text"
+    ],
+    "translate_styles": [
+      "command",
+      "text"
+    ],
+    "make_sqrt": [
+      "index",
+      "radicand"
+    ],
+    "translate_sqrt": [
+      "command",
+      "option",
+      "param"
+    ],
+    "maybe_parenthesize": [
+      "text"
+    ],
+    "make_fraction": [
+      "numerator",
+      "denominator"
+    ],
+    "translate_frac": [
+      "command",
+      "numerator",
+      "denominator"
+    ],
+    "translate_escape": [
+      "name"
+    ],
+    "parse": [
+      "self",
+      "latex"
+    ],
+    "handle_command": [
+      "self",
+      "command",
+      "latex",
+      "index"
+    ],
+    "parse_command": [
+      "latex",
+      "start"
+    ],
+    "parse_block": [
+      "self",
+      "latex",
+      "start"
+    ],
+    "parse_optional": [
+      "self",
+      "latex",
+      "start"
+    ],
+    "parse_spaces": [
+      "latex",
+      "start"
+    ],
+    "_parse_delimiter": [
+      "latex",
+      "index"
+    ],
+    "_parse_env_name": [
+      "latex",
+      "index"
+    ],
+    "_parse_environment": [
+      "self",
+      "latex",
+      "index",
+      "env_name"
+    ],
+    "_MATRIX_TYPES": [],
+    "_ALIGN_TYPES": [],
+    "_render_environment": [
+      "self",
+      "env_name",
+      "content"
+    ],
+    "_render_matrix": [
+      "self",
+      "content",
+      "left",
+      "right",
+      "compact"
+    ],
+    "_render_cases": [
+      "self",
+      "content"
+    ],
+    "_render_align": [
+      "self",
+      "content"
+    ],
+    "_render_array": [
+      "self",
+      "content"
+    ],
+    "convert": [
+      "self",
+      "latex"
+    ]
+  },
+  "LATEX_SYMBOLS": [],
+  "CombiningType": {
+    "FirstChar": [],
+    "LastChar": [],
+    "EveryChar": []
+  },
+  "COMBINING": [],
+  "NOT_MAP": [],
+  "SUBSCRIPTS": [],
+  "SUPERSCRIPTS": [],
+  "BB": [],
+  "BF": [],
+  "CAL": [],
+  "FRAK": [],
+  "IT": [],
+  "TT": [],
+  "LATEX_STYLES": [],
+  "FRAC_MAP": []
+}
