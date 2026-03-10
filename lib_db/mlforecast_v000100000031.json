@@ -1,0 +1,2121 @@
+{
+  "__all__": [],
+  "SaveFeatures": {
+    "__init__": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "new_x"
+    ],
+    "get_features": [
+      "self",
+      "with_step"
+    ]
+  },
+  "FLAVOR_NAME": [],
+  "_MODEL_DATA_SUBPATH": [],
+  "get_default_pip_requirements": [],
+  "get_default_conda_env": [],
+  "save_model": [
+    "model",
+    "path",
+    "conda_env",
+    "code_paths",
+    "mlflow_model",
+    "signature",
+    "input_example",
+    "pip_requirements",
+    "extra_pip_requirements"
+  ],
+  "log_model": [
+    "model",
+    "artifact_path",
+    "conda_env",
+    "code_paths",
+    "registered_model_name",
+    "signature",
+    "input_example",
+    "await_registration_for",
+    "pip_requirements",
+    "extra_pip_requirements"
+  ],
+  "load_model": [
+    "model_uri",
+    "dst_path"
+  ],
+  "_load_pyfunc": [
+    "path"
+  ],
+  "_MLForecastModelWrapper": {
+    "__init__": [
+      "self",
+      "model"
+    ],
+    "predict": [
+      "self",
+      "config_df",
+      "params"
+    ]
+  },
+  "_pascal2camel": [
+    "pascal_str"
+  ],
+  "_normalize_groupby": [
+    "groupby"
+  ],
+  "_BaseLagTransform": {
+    "_get_init_signature": [
+      "self"
+    ],
+    "_set_core_tfm": [
+      "self",
+      "lag"
+    ],
+    "_get_name": [
+      "self",
+      "lag"
+    ],
+    "transform": [
+      "self",
+      "ga"
+    ],
+    "update": [
+      "self",
+      "ga"
+    ],
+    "take": [
+      "self",
+      "idxs"
+    ],
+    "stack": [
+      "transforms"
+    ],
+    "_lag": [
+      "self"
+    ],
+    "update_samples": [
+      "self"
+    ]
+  },
+  "Lag": {
+    "__init__": [
+      "self",
+      "lag"
+    ],
+    "_set_core_tfm": [
+      "self",
+      "_lag"
+    ],
+    "_get_name": [
+      "self",
+      "lag"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "update_samples": [
+      "self"
+    ]
+  },
+  "_RollingBase": {
+    "__init__": [
+      "self",
+      "window_size",
+      "min_samples",
+      "global_",
+      "groupby"
+    ],
+    "update_samples": [
+      "self"
+    ]
+  },
+  "RollingMean": {},
+  "RollingStd": {},
+  "RollingMin": {},
+  "RollingMax": {},
+  "RollingQuantile": {
+    "__init__": [
+      "self",
+      "p",
+      "window_size",
+      "min_samples",
+      "global_",
+      "groupby"
+    ],
+    "_set_core_tfm": [
+      "self",
+      "lag"
+    ]
+  },
+  "_Seasonal_RollingBase": {
+    "__init__": [
+      "self",
+      "season_length",
+      "window_size",
+      "min_samples",
+      "global_",
+      "groupby"
+    ],
+    "update_samples": [
+      "self"
+    ]
+  },
+  "SeasonalRollingMean": {},
+  "SeasonalRollingStd": {},
+  "SeasonalRollingMin": {},
+  "SeasonalRollingMax": {},
+  "SeasonalRollingQuantile": {
+    "__init__": [
+      "self",
+      "p",
+      "season_length",
+      "window_size",
+      "min_samples",
+      "global_",
+      "groupby"
+    ]
+  },
+  "_ExpandingBase": {
+    "__init__": [
+      "self",
+      "global_",
+      "groupby"
+    ],
+    "update_samples": [
+      "self"
+    ]
+  },
+  "ExpandingMean": {},
+  "ExpandingStd": {},
+  "ExpandingMin": {},
+  "ExpandingMax": {},
+  "ExpandingQuantile": {
+    "__init__": [
+      "self",
+      "p",
+      "global_",
+      "groupby"
+    ],
+    "update_samples": [
+      "self"
+    ]
+  },
+  "ExponentiallyWeightedMean": {
+    "__init__": [
+      "self",
+      "alpha",
+      "global_",
+      "groupby"
+    ],
+    "update_samples": [
+      "self"
+    ]
+  },
+  "Offset": {
+    "__init__": [
+      "self",
+      "tfm",
+      "n"
+    ],
+    "_get_name": [
+      "self",
+      "lag"
+    ],
+    "_set_core_tfm": [
+      "self",
+      "lag"
+    ],
+    "update_samples": [
+      "self"
+    ]
+  },
+  "Combine": {
+    "__init__": [
+      "self",
+      "tfm1",
+      "tfm2",
+      "operator"
+    ],
+    "_set_core_tfm": [
+      "self",
+      "lag"
+    ],
+    "_get_name": [
+      "self",
+      "lag"
+    ],
+    "transform": [
+      "self",
+      "ga"
+    ],
+    "update": [
+      "self",
+      "ga"
+    ],
+    "update_samples": [
+      "self"
+    ]
+  },
+  "transform_exog": [
+    "df",
+    "lags",
+    "lag_transforms",
+    "id_col",
+    "time_col",
+    "num_threads"
+  ],
+  "date_features_dtypes": [],
+  "_build_function_transform_name": [
+    "tfm",
+    "lag"
+  ],
+  "_build_lag_transform_name": [
+    "tfm",
+    "lag"
+  ],
+  "_build_transform_name": [
+    "tfm",
+    "lag"
+  ],
+  "_get_model_name": [
+    "model"
+  ],
+  "_name_models": [
+    "current_names"
+  ],
+  "_as_tuple": [
+    "x"
+  ],
+  "Freq": [],
+  "Lags": [],
+  "LagTransform": [],
+  "LagTransforms": [],
+  "DateFeature": [],
+  "Models": [],
+  "TargetTransform": [],
+  "Transforms": [],
+  "_validate_horizon_params": [
+    "max_horizon",
+    "horizons"
+  ],
+  "_parse_transforms": [
+    "lags",
+    "lag_transforms",
+    "namer"
+  ],
+  "TimeSeries": {
+    "__init__": [
+      "self",
+      "freq",
+      "lags",
+      "lag_transforms",
+      "date_features",
+      "num_threads",
+      "target_transforms",
+      "lag_transforms_namer"
+    ],
+    "_get_core_lag_tfms": [
+      "self"
+    ],
+    "_get_global_tfms": [
+      "self"
+    ],
+    "_get_group_tfms": [
+      "self"
+    ],
+    "_get_local_tfms": [
+      "self",
+      "transforms"
+    ],
+    "_check_aligned_ends": [
+      "self"
+    ],
+    "_date_feature_names": [
+      "self"
+    ],
+    "features": [
+      "self"
+    ],
+    "_get_dynamic_exog_cols": [
+      "self",
+      "df_columns"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "_fit": [
+      "self",
+      "df",
+      "id_col",
+      "time_col",
+      "target_col",
+      "static_features",
+      "keep_last_n",
+      "weight_col"
+    ],
+    "_compute_transforms": [
+      "self",
+      "transforms",
+      "updates_only"
+    ],
+    "_compute_date_feature": [
+      "self",
+      "dates",
+      "feature"
+    ],
+    "_transform": [
+      "self",
+      "df",
+      "dropna",
+      "max_horizon",
+      "horizons",
+      "return_X_y",
+      "as_numpy"
+    ],
+    "_transform_per_horizon": [
+      "self",
+      "prep",
+      "original_df",
+      "horizons",
+      "target_col",
+      "as_numpy"
+    ],
+    "fit_transform": [
+      "self",
+      "data",
+      "id_col",
+      "time_col",
+      "target_col",
+      "static_features",
+      "dropna",
+      "keep_last_n",
+      "max_horizon",
+      "horizons",
+      "return_X_y",
+      "as_numpy",
+      "weight_col"
+    ],
+    "_update_y": [
+      "self",
+      "new"
+    ],
+    "_update_features": [
+      "self"
+    ],
+    "_get_raw_predictions": [
+      "self"
+    ],
+    "_get_future_ids": [
+      "self",
+      "h"
+    ],
+    "_get_predictions": [
+      "self"
+    ],
+    "_get_features_for_next_step": [
+      "self",
+      "X_df"
+    ],
+    "_backup": [
+      "self"
+    ],
+    "_predict_setup": [
+      "self"
+    ],
+    "_predict_recursive": [
+      "self",
+      "models",
+      "horizon",
+      "before_predict_callback",
+      "after_predict_callback",
+      "X_df"
+    ],
+    "_predict_multi": [
+      "self",
+      "models",
+      "horizon",
+      "before_predict_callback",
+      "X_df"
+    ],
+    "_has_ga_target_tfms": [
+      "self"
+    ],
+    "_maybe_subset": [
+      "self",
+      "idxs"
+    ],
+    "predict": [
+      "self",
+      "models",
+      "horizon",
+      "before_predict_callback",
+      "after_predict_callback",
+      "X_df",
+      "ids"
+    ],
+    "save": [
+      "self",
+      "path"
+    ],
+    "load": [
+      "path",
+      "protocol"
+    ],
+    "_validate_new_df": [
+      "self",
+      "df"
+    ],
+    "update": [
+      "self",
+      "df",
+      "validate_new_data"
+    ]
+  },
+  "_resolve_num_threads": [
+    "num_threads"
+  ],
+  "generate_daily_series": [
+    "n_series",
+    "min_length",
+    "max_length",
+    "n_static_features",
+    "equal_ends",
+    "static_as_categorical",
+    "with_trend",
+    "seed",
+    "engine"
+  ],
+  "generate_prices_for_series": [
+    "series",
+    "horizon",
+    "seed"
+  ],
+  "PredictionIntervals": {
+    "__init__": [
+      "self",
+      "n_windows",
+      "h",
+      "method"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "_ShortSeriesException": {
+    "__init__": [
+      "self",
+      "idxs"
+    ]
+  },
+  "_add_conformal_distribution_intervals": [
+    "fcst_df",
+    "cs_df",
+    "model_names",
+    "level",
+    "cs_n_windows",
+    "cs_h",
+    "n_series",
+    "horizon"
+  ],
+  "_add_conformal_error_intervals": [
+    "fcst_df",
+    "cs_df",
+    "model_names",
+    "level",
+    "cs_n_windows",
+    "cs_h",
+    "n_series",
+    "horizon"
+  ],
+  "_get_conformal_method": [
+    "method"
+  ],
+  "MLForecast": {
+    "__init__": [
+      "self",
+      "models",
+      "freq",
+      "lags",
+      "lag_transforms",
+      "date_features",
+      "num_threads",
+      "target_transforms",
+      "lag_transforms_namer"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "freq": [
+      "self"
+    ],
+    "from_cv": [
+      "cls",
+      "cv"
+    ],
+    "_validate_data": [
+      "self",
+      "df",
+      "id_col",
+      "time_col"
+    ],
+    "preprocess": [
+      "self",
+      "df",
+      "id_col",
+      "time_col",
+      "target_col",
+      "static_features",
+      "dropna",
+      "keep_last_n",
+      "max_horizon",
+      "horizons",
+      "return_X_y",
+      "as_numpy",
+      "weight_col",
+      "validate_data"
+    ],
+    "fit_models": [
+      "self",
+      "X",
+      "y",
+      "models_fit_kwargs",
+      "generator_factory"
+    ],
+    "_conformity_scores": [
+      "self",
+      "df",
+      "id_col",
+      "time_col",
+      "target_col",
+      "static_features",
+      "dropna",
+      "keep_last_n",
+      "max_horizon",
+      "horizons",
+      "n_windows",
+      "h",
+      "as_numpy"
+    ],
+    "_invert_transforms_fitted": [
+      "self",
+      "df"
+    ],
+    "_extract_X_y": [
+      "self",
+      "prep",
+      "target_col",
+      "weight_col"
+    ],
+    "_compute_fitted_values": [
+      "self",
+      "base",
+      "X",
+      "y",
+      "id_col",
+      "time_col",
+      "target_col",
+      "max_horizon",
+      "weight_col",
+      "original_df"
+    ],
+    "fit": [
+      "self",
+      "df",
+      "id_col",
+      "time_col",
+      "target_col",
+      "static_features",
+      "dropna",
+      "keep_last_n",
+      "max_horizon",
+      "horizons",
+      "prediction_intervals",
+      "fitted",
+      "as_numpy",
+      "weight_col",
+      "models_fit_kwargs",
+      "validate_data"
+    ],
+    "forecast_fitted_values": [
+      "self",
+      "level"
+    ],
+    "make_future_dataframe": [
+      "self",
+      "h"
+    ],
+    "get_missing_future": [
+      "self",
+      "h",
+      "X_df"
+    ],
+    "predict": [
+      "self",
+      "h",
+      "before_predict_callback",
+      "after_predict_callback",
+      "new_df",
+      "level",
+      "X_df",
+      "ids"
+    ],
+    "cross_validation": [
+      "self",
+      "df",
+      "n_windows",
+      "h",
+      "id_col",
+      "time_col",
+      "target_col",
+      "step_size",
+      "static_features",
+      "dropna",
+      "keep_last_n",
+      "refit",
+      "max_horizon",
+      "horizons",
+      "before_predict_callback",
+      "after_predict_callback",
+      "prediction_intervals",
+      "level",
+      "input_size",
+      "fitted",
+      "as_numpy",
+      "weight_col",
+      "validate_data"
+    ],
+    "cross_validation_fitted_values": [
+      "self"
+    ],
+    "save": [
+      "self",
+      "path"
+    ],
+    "load": [
+      "path"
+    ],
+    "update": [
+      "self",
+      "df",
+      "validate_new_data"
+    ]
+  },
+  "validate_update_start_dates": [
+    "df",
+    "id_col",
+    "time_col",
+    "last_dates_df",
+    "freq"
+  ],
+  "validate_continuity": [
+    "df",
+    "id_col",
+    "time_col",
+    "freq"
+  ],
+  "validate_update_df": [
+    "df",
+    "id_col",
+    "time_col",
+    "uids",
+    "last_dates",
+    "freq"
+  ],
+  "validate_df": [
+    "df",
+    "id_col",
+    "time_col",
+    "freq"
+  ],
+  "lightgbm_space": [
+    "trial"
+  ],
+  "xgboost_space": [
+    "trial"
+  ],
+  "catboost_space": [
+    "trial"
+  ],
+  "linear_regression_space": [
+    "trial"
+  ],
+  "ridge_space": [
+    "trial"
+  ],
+  "lasso_space": [
+    "trial"
+  ],
+  "elastic_net_space": [
+    "trial"
+  ],
+  "random_forest_space": [
+    "trial"
+  ],
+  "AutoModel": {
+    "__init__": [
+      "self",
+      "model",
+      "config"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "AutoLightGBM": {
+    "__init__": [
+      "self",
+      "config"
+    ]
+  },
+  "AutoXGBoost": {
+    "__init__": [
+      "self",
+      "config"
+    ]
+  },
+  "AutoCatboost": {
+    "__init__": [
+      "self",
+      "config"
+    ]
+  },
+  "AutoLinearRegression": {
+    "__init__": [
+      "self",
+      "config"
+    ]
+  },
+  "AutoRidge": {
+    "__init__": [
+      "self",
+      "config"
+    ]
+  },
+  "AutoLasso": {
+    "__init__": [
+      "self",
+      "config"
+    ]
+  },
+  "AutoElasticNet": {
+    "__init__": [
+      "self",
+      "config"
+    ]
+  },
+  "AutoRandomForest": {
+    "__init__": [
+      "self",
+      "config"
+    ]
+  },
+  "AutoMLForecast": {
+    "__init__": [
+      "self",
+      "models",
+      "freq",
+      "season_length",
+      "init_config",
+      "fit_config",
+      "num_threads",
+      "reuse_cv_splits"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "_seasonality_based_config": [
+      "self",
+      "h",
+      "min_samples",
+      "min_value"
+    ],
+    "fit": [
+      "self",
+      "df",
+      "n_windows",
+      "h",
+      "num_samples",
+      "step_size",
+      "input_size",
+      "refit",
+      "loss",
+      "id_col",
+      "time_col",
+      "target_col",
+      "study_kwargs",
+      "optimize_kwargs",
+      "fitted",
+      "prediction_intervals",
+      "weight_col"
+    ],
+    "predict": [
+      "self",
+      "h",
+      "X_df",
+      "level"
+    ],
+    "save": [
+      "self",
+      "path"
+    ],
+    "forecast_fitted_values": [
+      "self",
+      "level"
+    ]
+  },
+  "_TrialToConfig": [],
+  "CVSplit": [],
+  "mlforecast_objective": [
+    "df",
+    "config_fn",
+    "loss",
+    "model",
+    "freq",
+    "n_windows",
+    "h",
+    "step_size",
+    "input_size",
+    "refit",
+    "id_col",
+    "time_col",
+    "target_col",
+    "weight_col",
+    "cv_splits"
+  ],
+  "__version__": [],
+  "_mape": [
+    "y_true",
+    "y_pred",
+    "ids",
+    "_dates",
+    "weight_series"
+  ],
+  "_rmse": [
+    "y_true",
+    "y_pred",
+    "ids",
+    "_dates",
+    "weight_series"
+  ],
+  "_metric2fn": [],
+  "_update": [
+    "bst",
+    "n"
+  ],
+  "_predict": [
+    "ts",
+    "bst",
+    "valid",
+    "h",
+    "before_predict_callback",
+    "after_predict_callback",
+    "weight_col"
+  ],
+  "_update_and_predict": [
+    "ts",
+    "bst",
+    "valid",
+    "n",
+    "h",
+    "before_predict_callback",
+    "after_predict_callback",
+    "weight_col"
+  ],
+  "CVResult": [],
+  "LightGBMCV": {
+    "__init__": [
+      "self",
+      "freq",
+      "lags",
+      "lag_transforms",
+      "date_features",
+      "num_threads",
+      "target_transforms"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "setup": [
+      "self",
+      "df",
+      "n_windows",
+      "h",
+      "id_col",
+      "time_col",
+      "target_col",
+      "step_size",
+      "params",
+      "static_features",
+      "dropna",
+      "keep_last_n",
+      "weights",
+      "metric",
+      "input_size",
+      "weight_col"
+    ],
+    "_single_threaded_partial_fit": [
+      "self",
+      "metric_values",
+      "num_iterations",
+      "before_predict_callback",
+      "after_predict_callback",
+      "weight_col"
+    ],
+    "_multithreaded_partial_fit": [
+      "self",
+      "metric_values",
+      "num_iterations",
+      "before_predict_callback",
+      "after_predict_callback",
+      "weight_col"
+    ],
+    "partial_fit": [
+      "self",
+      "num_iterations",
+      "before_predict_callback",
+      "after_predict_callback",
+      "weight_col"
+    ],
+    "should_stop": [
+      "self",
+      "hist",
+      "early_stopping_evals",
+      "early_stopping_pct"
+    ],
+    "find_best_iter": [
+      "self",
+      "hist",
+      "early_stopping_evals"
+    ],
+    "fit": [
+      "self",
+      "df",
+      "n_windows",
+      "h",
+      "id_col",
+      "time_col",
+      "target_col",
+      "step_size",
+      "num_iterations",
+      "params",
+      "static_features",
+      "dropna",
+      "keep_last_n",
+      "eval_every",
+      "weights",
+      "metric",
+      "verbose_eval",
+      "early_stopping_evals",
+      "early_stopping_pct",
+      "compute_cv_preds",
+      "before_predict_callback",
+      "after_predict_callback",
+      "input_size",
+      "weight_col"
+    ],
+    "predict": [
+      "self",
+      "h",
+      "before_predict_callback",
+      "after_predict_callback",
+      "X_df"
+    ]
+  },
+  "BaseTargetTransform": {
+    "set_column_names": [
+      "self",
+      "id_col",
+      "time_col",
+      "target_col"
+    ],
+    "update": [
+      "self",
+      "df"
+    ],
+    "stack": [
+      "transforms"
+    ],
+    "fit_transform": [
+      "self",
+      "df"
+    ],
+    "inverse_transform": [
+      "self",
+      "df"
+    ]
+  },
+  "_BaseGroupedArrayTargetTransform": {
+    "set_num_threads": [
+      "self",
+      "num_threads"
+    ],
+    "update": [
+      "self",
+      "ga"
+    ],
+    "fit_transform": [
+      "self",
+      "ga"
+    ],
+    "inverse_transform": [
+      "self",
+      "ga"
+    ],
+    "inverse_transform_fitted": [
+      "self",
+      "ga"
+    ],
+    "take": [
+      "self",
+      "idxs"
+    ],
+    "stack": [
+      "scalers"
+    ]
+  },
+  "Differences": {
+    "store_fitted": [],
+    "__init__": [
+      "self",
+      "differences"
+    ],
+    "fit_transform": [
+      "self",
+      "ga"
+    ],
+    "update": [
+      "self",
+      "ga"
+    ],
+    "inverse_transform": [
+      "self",
+      "ga"
+    ],
+    "inverse_transform_fitted": [
+      "self",
+      "ga"
+    ],
+    "take": [
+      "self",
+      "idxs"
+    ],
+    "stack": [
+      "scalers"
+    ]
+  },
+  "AutoDifferences": {
+    "store_fitted": [],
+    "__init__": [
+      "self",
+      "max_diffs"
+    ],
+    "_diffs_per_step": [
+      "self",
+      "indptr_dtype"
+    ],
+    "fit_transform": [
+      "self",
+      "ga"
+    ],
+    "update": [
+      "self",
+      "ga"
+    ],
+    "inverse_transform": [
+      "self",
+      "ga"
+    ],
+    "inverse_transform_fitted": [
+      "self",
+      "ga"
+    ],
+    "take": [
+      "self",
+      "idxs"
+    ]
+  },
+  "AutoSeasonalDifferences": {
+    "__init__": [
+      "self",
+      "season_length",
+      "max_diffs",
+      "n_seasons"
+    ]
+  },
+  "AutoSeasonalityAndDifferences": {
+    "__init__": [
+      "self",
+      "max_season_length",
+      "max_diffs",
+      "n_seasons"
+    ],
+    "fit_transform": [
+      "self",
+      "ga"
+    ]
+  },
+  "_BaseLocalScaler": {
+    "update": [
+      "self",
+      "ga"
+    ],
+    "fit_transform": [
+      "self",
+      "ga"
+    ],
+    "inverse_transform": [
+      "self",
+      "ga"
+    ],
+    "take": [
+      "self",
+      "idxs"
+    ]
+  },
+  "LocalStandardScaler": {
+    "scaler_factory": []
+  },
+  "LocalMinMaxScaler": {
+    "scaler_factory": []
+  },
+  "LocalRobustScaler": {
+    "__init__": [
+      "self",
+      "scale"
+    ]
+  },
+  "LocalBoxCox": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "GlobalSklearnTransformer": {
+    "__init__": [
+      "self",
+      "transformer"
+    ],
+    "fit_transform": [
+      "self",
+      "df"
+    ],
+    "inverse_transform": [
+      "self",
+      "df"
+    ],
+    "update": [
+      "self",
+      "df"
+    ],
+    "stack": [
+      "transforms"
+    ]
+  },
+  "_transform_series": [
+    "data",
+    "indptr",
+    "updates_only",
+    "lag",
+    "func"
+  ],
+  "GroupedArray": {
+    "__init__": [
+      "self",
+      "data",
+      "indptr"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "idx"
+    ],
+    "__setitem__": [
+      "self",
+      "idx",
+      "vals"
+    ],
+    "__copy__": [
+      "self"
+    ],
+    "take": [
+      "self",
+      "idxs"
+    ],
+    "apply_transforms": [
+      "self",
+      "transforms",
+      "updates_only"
+    ],
+    "apply_multithreaded_transforms": [
+      "self",
+      "transforms",
+      "num_threads",
+      "updates_only"
+    ],
+    "expand_target": [
+      "self",
+      "max_horizon"
+    ],
+    "take_from_groups": [
+      "self",
+      "idx"
+    ],
+    "append": [
+      "self",
+      "new_data"
+    ],
+    "append_several": [
+      "self",
+      "new_sizes",
+      "new_values",
+      "new_groups"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "WindowInfo": [],
+  "DistributedMLForecast": {
+    "__init__": [
+      "self",
+      "models",
+      "freq",
+      "lags",
+      "lag_transforms",
+      "date_features",
+      "num_threads",
+      "target_transforms",
+      "engine",
+      "num_partitions",
+      "lag_transforms_namer"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "_preprocess_partition": [
+      "part",
+      "base_ts",
+      "id_col",
+      "time_col",
+      "target_col",
+      "static_features",
+      "dropna",
+      "keep_last_n",
+      "window_info",
+      "fit_ts_only",
+      "weight_col"
+    ],
+    "_retrieve_df": [
+      "items"
+    ],
+    "_preprocess_partitions": [
+      "self",
+      "data",
+      "id_col",
+      "time_col",
+      "target_col",
+      "static_features",
+      "dropna",
+      "keep_last_n",
+      "window_info",
+      "fit_ts_only",
+      "weight_col"
+    ],
+    "_preprocess": [
+      "self",
+      "data",
+      "id_col",
+      "time_col",
+      "target_col",
+      "static_features",
+      "dropna",
+      "keep_last_n",
+      "window_info",
+      "weight_col"
+    ],
+    "preprocess": [
+      "self",
+      "df",
+      "id_col",
+      "time_col",
+      "target_col",
+      "static_features",
+      "dropna",
+      "keep_last_n"
+    ],
+    "_fit": [
+      "self",
+      "data",
+      "id_col",
+      "time_col",
+      "target_col",
+      "static_features",
+      "dropna",
+      "keep_last_n",
+      "window_info",
+      "weight_col"
+    ],
+    "fit": [
+      "self",
+      "df",
+      "id_col",
+      "time_col",
+      "target_col",
+      "static_features",
+      "dropna",
+      "keep_last_n",
+      "weight_col"
+    ],
+    "_predict": [
+      "items",
+      "models",
+      "horizon",
+      "before_predict_callback",
+      "after_predict_callback",
+      "X_df",
+      "ids",
+      "schema"
+    ],
+    "_get_predict_schema": [
+      "self"
+    ],
+    "predict": [
+      "self",
+      "h",
+      "before_predict_callback",
+      "after_predict_callback",
+      "X_df",
+      "new_df",
+      "ids"
+    ],
+    "cross_validation": [
+      "self",
+      "df",
+      "n_windows",
+      "h",
+      "id_col",
+      "time_col",
+      "target_col",
+      "step_size",
+      "static_features",
+      "dropna",
+      "keep_last_n",
+      "refit",
+      "before_predict_callback",
+      "after_predict_callback",
+      "input_size",
+      "weight_col"
+    ],
+    "_save_ts": [
+      "items",
+      "path"
+    ],
+    "save": [
+      "self",
+      "path"
+    ],
+    "_load_ts": [
+      "paths",
+      "protocol"
+    ],
+    "load": [
+      "path",
+      "engine"
+    ],
+    "_update": [
+      "items",
+      "new_df"
+    ],
+    "update": [
+      "self",
+      "df"
+    ],
+    "to_local": [
+      "self"
+    ]
+  },
+  "RayLGBMForecast": {
+    "model_": [
+      "self"
+    ]
+  },
+  "RayXGBForecast": {
+    "model_": [
+      "self"
+    ]
+  },
+  "DaskLGBMForecast": {
+    "model_": [
+      "self"
+    ]
+  },
+  "DaskXGBForecast": {
+    "model_": [
+      "self"
+    ]
+  },
+  "SparkLGBMForecast": {
+    "_pre_fit": [
+      "self",
+      "target_col",
+      "weight_col"
+    ],
+    "extract_local_model": [
+      "self",
+      "trained_model"
+    ]
+  },
+  "SparkXGBForecast": {
+    "_pre_fit": [
+      "self",
+      "target_col",
+      "weight_col"
+    ],
+    "extract_local_model": [
+      "self",
+      "trained_model"
+    ]
+  },
+  "setup_series": [],
+  "test_differences_applied": [
+    "setup_series"
+  ],
+  "test_differences_restored": [
+    "setup_series"
+  ],
+  "test_transforms": [
+    "setup_series"
+  ],
+  "test_variable_sizes": [
+    "setup_series"
+  ],
+  "test_short_series": [
+    "setup_series"
+  ],
+  "test_stack": [
+    "setup_series"
+  ],
+  "test_autodifferences": [],
+  "test_autodifferences_restored": [
+    "max_diffs"
+  ],
+  "test_autodifferences_restored_multiple_series": [
+    "max_diffs"
+  ],
+  "test_autoseasonaldifferences": [],
+  "test_autoseasonaldifferences_restored": [
+    "max_diffs"
+  ],
+  "test_autoseasonality_and_differences": [],
+  "test_scaler": [
+    "scaler",
+    "setup_series"
+  ],
+  "mlforecast_setup": [],
+  "test_mlforecast_differences": [
+    "mlforecast_setup"
+  ],
+  "test_mlforecast_polars": [
+    "mlforecast_setup"
+  ],
+  "test_mlforecast_fit_with_preprocessed_autodifferences": [
+    "max_diffs"
+  ],
+  "test_autoseasonality_and_differences_validation": [],
+  "SeasonalNaive": {
+    "fit": [
+      "self",
+      "X",
+      "y"
+    ],
+    "predict": [
+      "self",
+      "X",
+      "y"
+    ]
+  },
+  "series": [],
+  "series_with_exog": [
+    "series"
+  ],
+  "fcst": [],
+  "statics": [
+    "series"
+  ],
+  "exogs": [
+    "series_with_exog",
+    "statics"
+  ],
+  "test_preprocess": [
+    "benchmark",
+    "fcst",
+    "series",
+    "use_exog",
+    "series_with_exog",
+    "statics",
+    "num_threads"
+  ],
+  "test_predict": [
+    "benchmark",
+    "fcst",
+    "series",
+    "use_exog",
+    "series_with_exog",
+    "exogs",
+    "statics",
+    "keep_last_n",
+    "num_threads"
+  ],
+  "weekly_data": [],
+  "config_fn": [
+    "trial"
+  ],
+  "loss": [
+    "df",
+    "train_df"
+  ],
+  "test_optuna_optimization_and_evaluation": [
+    "weekly_data"
+  ],
+  "test_grouped_array_append_several": [],
+  "test_grouped_array": [],
+  "test_grouped_array_iter": [],
+  "setup": [],
+  "test_generate_daily_series": [
+    "setup"
+  ],
+  "test_generate_daily_series_equal_ends": [
+    "setup"
+  ],
+  "test_resolve_num_threads_minus_one": [],
+  "test_resolve_num_threads_cpu_count_returns_none": [],
+  "test_resolve_num_threads_cpu_count_raises_exception": [],
+  "test_resolve_num_threads_zero_raises": [],
+  "test_resolve_num_threads_negative_raises": [],
+  "assert_raises_with_message": [
+    "func",
+    "expected_msg"
+  ],
+  "m4_data": [],
+  "evaluate_on_valid": [
+    "preds",
+    "valid"
+  ],
+  "test_lightgbm_cv_pipeline": [
+    "m4_data",
+    "use_weight_col",
+    "metric"
+  ],
+  "test_lightgbmcv_callback": [],
+  "test_lightgbmcv_custom_metric": [
+    "m4_data"
+  ],
+  "test_lightgbmcv_num_threads_minus_one": [],
+  "serie": [
+    "series"
+  ],
+  "_expanding_mean": [
+    "x"
+  ],
+  "_rolling_mean": [
+    "x",
+    "window_size"
+  ],
+  "test_build_function_transform_name": [],
+  "test_name_models_with_duplicates": [],
+  "test_name_models_without_duplicates": [],
+  "x": [],
+  "test_target_transform_differences": [
+    "x"
+  ],
+  "A": {
+    "fit": [
+      "self",
+      "X"
+    ],
+    "predict": [
+      "self",
+      "X"
+    ]
+  },
+  "namer": [
+    "cls",
+    "lag"
+  ],
+  "ts": [],
+  "test_tfms_namer": [
+    "x",
+    "ts"
+  ],
+  "month_start_or_end": [
+    "dates"
+  ],
+  "flow_config": [],
+  "test_ts_flow_config": [
+    "flow_config"
+  ],
+  "test_y_fp32": [
+    "serie"
+  ],
+  "_shift_array": [
+    "x",
+    "n"
+  ],
+  "test_compute_transforms": [
+    "flow_config",
+    "serie"
+  ],
+  "test_update_y": [
+    "serie"
+  ],
+  "test_update_features": [
+    "flow_config",
+    "serie"
+  ],
+  "test_get_predictions": [
+    "serie"
+  ],
+  "flow_config2": [],
+  "test_ts_fit_transform": [
+    "flow_config2",
+    "series"
+  ],
+  "test_keep_last_n": [
+    "flow_config2",
+    "series"
+  ],
+  "test_unsorted_df": [
+    "flow_config2",
+    "series"
+  ],
+  "test_existing_features": [],
+  "test_non_standard_df": [
+    "flow_config2",
+    "series"
+  ],
+  "identity": [
+    "x"
+  ],
+  "test_integer_timestamps": [
+    "flow_config2",
+    "series"
+  ],
+  "DummyModel": {
+    "predict": [
+      "self",
+      "X"
+    ]
+  },
+  "test_ts_predict": [
+    "flow_config2",
+    "series"
+  ],
+  "test_ts_with_diff_conf": [
+    "flow_config2",
+    "series"
+  ],
+  "PredictPrice": {
+    "predict": [
+      "self",
+      "X"
+    ]
+  },
+  "test_dynamic_features": [
+    "flow_config2"
+  ],
+  "SeasonalNaiveModel": {
+    "predict": [
+      "self",
+      "X"
+    ]
+  },
+  "NaiveModel": {
+    "predict": [
+      "self",
+      "X"
+    ]
+  },
+  "test_ts_update": [
+    "series"
+  ],
+  "test_global_lag_transform": [
+    "engine"
+  ],
+  "test_group_lag_transform": [
+    "engine"
+  ],
+  "test_global_lag_transform_requires_aligned_ends": [
+    "engine"
+  ],
+  "test_group_lag_transform_requires_aligned_ends": [
+    "engine"
+  ],
+  "test_global_update_requires_complete_timestamps": [
+    "engine"
+  ],
+  "test_group_update_requires_complete_timestamps": [
+    "engine"
+  ],
+  "test_group_update_new_group_order": [
+    "engine"
+  ],
+  "test_group_lag_transform_uses_transformed_target": [
+    "engine"
+  ],
+  "test_global_update_y_appends_pandas_times": [],
+  "test_global_rolling_std": [
+    "engine"
+  ],
+  "test_global_expanding_mean": [
+    "engine"
+  ],
+  "test_global_rolling_quantile": [
+    "engine"
+  ],
+  "test_group_rolling_std": [
+    "engine"
+  ],
+  "test_group_expanding_mean": [
+    "engine"
+  ],
+  "test_group_rolling_quantile": [
+    "engine"
+  ],
+  "_generate_series_with_freq": [
+    "n_series",
+    "freq_name",
+    "n_static_features",
+    "engine"
+  ],
+  "_get_freq_config": [
+    "freq_name",
+    "engine"
+  ],
+  "_make_valid_update": [
+    "series",
+    "engine",
+    "freq_config"
+  ],
+  "test_update_validation_valid_continuous": [
+    "engine",
+    "freq_name"
+  ],
+  "test_update_validation_invalid_gap": [
+    "engine",
+    "freq_name"
+  ],
+  "test_update_validation_invalid_start": [
+    "engine",
+    "freq_name"
+  ],
+  "test_update_validation_new_series": [
+    "engine",
+    "freq_name"
+  ],
+  "test_update_validation_frequency_mismatch": [
+    "engine",
+    "freq_name"
+  ],
+  "test_update_validation_misaligned_intermediate_timestamp": [
+    "engine",
+    "freq_name"
+  ],
+  "test_ts_polars": [],
+  "test_target_transform_with_keep_last_n": [
+    "series"
+  ],
+  "test_omit_static_features": [
+    "series"
+  ],
+  "test_pd_vs_pl": [],
+  "test_dropped_series": [
+    "ordered"
+  ],
+  "test_short_series_exception": [],
+  "Lag1PlusOneModel": {
+    "predict": [
+      "self",
+      "X"
+    ]
+  },
+  "test_lag_predict": [
+    "series"
+  ],
+  "test_save_and_load": [],
+  "test_keep_last_n_for_built_in_lag_transforms": [
+    "series"
+  ],
+  "test_target_nulls": [
+    "series"
+  ],
+  "test_timeseries_num_threads_minus_one": [
+    "series"
+  ],
+  "test_transform_exog": [],
+  "test_transform_exog_num_threads_minus_one": [],
+  "configs": [],
+  "train_valid_split": [
+    "group"
+  ],
+  "test_performance": [
+    "group"
+  ],
+  "test_conformal_method": [],
+  "setup_forecast_data": [],
+  "fcst2": [],
+  "fitted_fcst": [
+    "fcst",
+    "setup_forecast_data"
+  ],
+  "predictions": [
+    "fitted_fcst"
+  ],
+  "test_missing_future": [
+    "fcst",
+    "setup_forecast_data"
+  ],
+  "test_fitted_target": [
+    "fcst2",
+    "setup_forecast_data"
+  ],
+  "test_new_df_argument": [
+    "fitted_fcst",
+    "setup_forecast_data",
+    "predictions"
+  ],
+  "fcst_with_intervals": [
+    "fcst",
+    "setup_forecast_data"
+  ],
+  "predictions_w_intervals": [
+    "fcst_with_intervals"
+  ],
+  "test_prediction_intervals_lower_horizon": [
+    "fcst_with_intervals"
+  ],
+  "test_prediction_intervals_error_conditions": [
+    "fcst_with_intervals"
+  ],
+  "test_recover_point_forecasts": [
+    "predictions",
+    "predictions_w_intervals"
+  ],
+  "test_recover_mean_forecasts_level_zero": [
+    "predictions",
+    "fcst_with_intervals"
+  ],
+  "test_prediction_intervals_monotonicity": [
+    "predictions_w_intervals"
+  ],
+  "test_indexed_data_datetime_ds": [],
+  "test_transform_name": [
+    "setup_forecast_data",
+    "fcst",
+    "predictions"
+  ],
+  "test_intervals_multioutput": [
+    "setup_forecast_data",
+    "fcst"
+  ],
+  "test_bad_max_horizon": [
+    "setup_forecast_data"
+  ],
+  "test_fitted_max_horizon": [
+    "setup_forecast_data"
+  ],
+  "test_refit": [
+    "setup_forecast_data"
+  ],
+  "test_cv_no_refit": [
+    "setup_forecast_data"
+  ],
+  "test_cv_weight_col": [
+    "refit"
+  ],
+  "test_cv_input_size": [
+    "setup_forecast_data",
+    "fcst"
+  ],
+  "test_model_per_horizon": [
+    "setup_forecast_data",
+    "fcst"
+  ],
+  "test_model_per_horizon_with_prediction_intervals": [
+    "setup_forecast_data",
+    "fcst"
+  ],
+  "test_wrong_frequency_error": [],
+  "test_best_iter": [
+    "setup_forecast_data"
+  ],
+  "test_preds_day": [],
+  "non_std_series": [],
+  "assert_cross_validation": [
+    "data",
+    "add_exogenous"
+  ],
+  "test_cross_validation": [
+    "non_std_series"
+  ],
+  "test_short_series_in_cv": [],
+  "polars_pandas_test_data": [],
+  "test_polars_pandas_compatibility": [
+    "polars_pandas_test_data",
+    "max_horizon",
+    "as_numpy"
+  ],
+  "test_transforms_inverted_when_series_dropped": [],
+  "test_save_load": [],
+  "test_direct_approach_single_timestamp": [],
+  "test_direct_forecasting_exogenous_alignment": [],
+  "test_direct_forecasting_perfect_exogenous_fit": [],
+  "test_direct_forecasting_perfect_exogenous_fit_with_horizons": [
+    "horizons"
+  ],
+  "test_direct_forecasting_perfect_exogenous_fit_horizons_vs_max_horizon": [],
+  "test_direct_forecasting_perfect_exogenous_fit_multiple_series": [],
+  "test_horizons_basic": [],
+  "test_horizons_mutual_exclusivity": [],
+  "test_horizons_validation_empty": [],
+  "test_horizons_validation_non_positive": [],
+  "test_horizons_validation_non_integer": [],
+  "test_horizons_duplicate_handling": [],
+  "test_horizons_prediction": [],
+  "test_horizons_prediction_partial": [],
+  "test_horizons_cross_validation": [],
+  "test_horizons_backward_compatibility": [],
+  "test_horizons_with_exogenous": [],
+  "test_horizons_with_target_transforms": [],
+  "test_horizons_cross_validation_with_target_transforms": [],
+  "test_fit_with_validate_data_clean": [],
+  "test_fit_with_validate_data_duplicates": [],
+  "test_fit_with_validate_data_missing_dates": [],
+  "test_fit_validate_data_default_true": [],
+  "test_preprocess_with_validate_data": [],
+  "test_cross_validation_with_validate_data": [],
+  "test_mlforecast_num_threads_minus_one": [],
+  "test_transfer_learning_updates_uids": [],
+  "test_transfer_learning_failed_predict_keeps_original_state": [],
+  "test_transfer_learning_then_intervals_raises_clear_error": [],
+  "test_transfer_learning_then_intervals_raises_with_same_series_count": [],
+  "test_transfer_learning_subset_predict_keeps_full_transform_state": [],
+  "test_transfer_learning_with_sparse_horizons": [],
+  "_reset_index_partition": [
+    "partition"
+  ],
+  "_make_partitioned_series": [
+    "df",
+    "npartitions"
+  ],
+  "partitioned_series": [],
+  "small_ordered_series": [],
+  "_RecordingLocalModel": {
+    "__init__": [
+      "self",
+      "sample_weight"
+    ],
+    "predict": [
+      "self",
+      "X"
+    ]
+  },
+  "_RecordingDaskRegressor": {
+    "fit": [
+      "self",
+      "X",
+      "y",
+      "sample_weight"
+    ]
+  },
+  "test_dask_distributed_forecast": [
+    "partitioned_series"
+  ],
+  "test_dask_distributed_weight_col_affects_predictions": [
+    "small_ordered_series"
+  ],
+  "test_automlforecast_pipeline": [
+    "weekly_data"
+  ],
+  "test_automlforecast_weight_col": [
+    "weekly_data"
+  ],
+  "test_automlforecast_errors_and_warnings": [],
+  "test_polars_input_compatibility": [
+    "weekly_data"
+  ],
+  "test_step_size_impact": [
+    "weekly_data"
+  ],
+  "test_nonstandard_column_names": [
+    "weekly_data"
+  ],
+  "test_input_size_speedup": [
+    "weekly_data"
+  ],
+  "test_reuse_cv_splits_same_predictions": [
+    "weekly_data"
+  ],
+  "grouped_array": [],
+  "test_offset_name_and_transform": [
+    "grouped_array"
+  ],
+  "test_combine_name_and_transform": [
+    "grouped_array"
+  ],
+  "test_transform_and_update_consistency": [
+    "grouped_array",
+    "tfm"
+  ],
+  "ray_session": [],
+  "ray_test_cleanup": [],
+  "test_ray_combine_transforms": [],
+  "test_ray_distributed_forecast": [
+    "model_class",
+    "model_kwargs"
+  ],
+  "comment_pat": [],
+  "anchor_pat": [],
+  "output_path": [],
+  "process_files": [
+    "input_dir"
+  ],
+  "copy_readme": [],
+  "df": [],
+  "tst_flags": [],
+  "to_skip": [],
+  "print_execs": [
+    "cell"
+  ],
+  "print_hide": [
+    "cell"
+  ],
+  "other_tests": [
+    "cell"
+  ],
+  "get_markdown": [
+    "cell"
+  ],
+  "get_code": [
+    "cell"
+  ],
+  "extract_dir": [
+    "cell",
+    "dirs"
+  ],
+  "no_dir_and_dir": [
+    "cell",
+    "dir"
+  ],
+  "get_all_tests": [
+    "cell"
+  ],
+  "mapper": [],
+  "print_dir_in_nb": [
+    "nb_path",
+    "dir",
+    "dir_name"
+  ]
+}
