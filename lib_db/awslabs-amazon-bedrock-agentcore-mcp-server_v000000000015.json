@@ -1,0 +1,521 @@
+{
+  "__path__": [],
+  "__version__": [],
+  "Config": {
+    "validate_urls": [
+      "cls",
+      "v"
+    ]
+  },
+  "doc_config": [],
+  "APP_NAME": [],
+  "AGENTCORE_MCP_INSTRUCTIONS": [],
+  "_is_service_enabled": [
+    "name"
+  ],
+  "_browser_cm": [],
+  "_browser_sm": [],
+  "server_lifespan": [
+    "server"
+  ],
+  "mcp": [],
+  "main": [],
+  "_LINKS_LOADED": [],
+  "SNIPPET_HYDRATE_MAX": [],
+  "load_links_only": [],
+  "ensure_ready": [],
+  "ensure_page": [
+    "url"
+  ],
+  "get_index": [],
+  "get_url_cache": [],
+  "get_url_titles": [],
+  "_TOKEN": [],
+  "_MD_HEADER": [],
+  "_MD_CODE_BLOCK": [],
+  "_MD_INLINE_CODE": [],
+  "_MD_LINK_TEXT": [],
+  "Doc": {
+    "model_config": []
+  },
+  "_TITLE_BOOST_EMPTY": [],
+  "_TITLE_BOOST_SHORT": [],
+  "_TITLE_BOOST_LONG": [],
+  "_SHORT_PAGE_THRESHOLD": [],
+  "IndexSearch": {
+    "__init__": [
+      "self"
+    ],
+    "add": [
+      "self",
+      "doc"
+    ],
+    "search": [
+      "self",
+      "query",
+      "k"
+    ]
+  },
+  "_WHITESPACE": [],
+  "_CODE_FENCE": [],
+  "normalize": [
+    "s"
+  ],
+  "title_from_url": [
+    "url"
+  ],
+  "format_display_title": [
+    "url",
+    "extracted",
+    "url_titles"
+  ],
+  "index_title_variants": [
+    "display_title",
+    "url"
+  ],
+  "normalize_for_comparison": [
+    "string"
+  ],
+  "make_snippet": [
+    "page",
+    "display_title",
+    "max_chars"
+  ],
+  "URLValidationError": {},
+  "URLValidator": {
+    "__init__": [
+      "self",
+      "allowed_domain_prefixes"
+    ],
+    "is_url_allowed": [
+      "self",
+      "url"
+    ],
+    "validate_urls": [
+      "self",
+      "urls"
+    ]
+  },
+  "DEFAULT_ALLOWED_DOMAINS": [],
+  "default_validator": [],
+  "validate_urls": [
+    "urls",
+    "allowed_domains"
+  ],
+  "_MD_LINK": [],
+  "_HTML_BLOCK": [],
+  "_TAG": [],
+  "_TITLE_TAG": [],
+  "_H1_TAG": [],
+  "_META_OG": [],
+  "Page": {},
+  "_get": [
+    "url"
+  ],
+  "parse_llms_txt": [
+    "url"
+  ],
+  "_html_to_text": [
+    "raw_html"
+  ],
+  "_extract_html_title": [
+    "raw_html"
+  ],
+  "fetch_and_clean": [
+    "page_url"
+  ],
+  "search_agentcore_docs": [
+    "query",
+    "k"
+  ],
+  "fetch_agentcore_doc": [
+    "uri"
+  ],
+  "manage_agentcore_runtime": [],
+  "manage_agentcore_memory": [],
+  "manage_agentcore_gateway": [],
+  "BrowserConnectionManager": {
+    "__init__": [
+      "self"
+    ],
+    "_ensure_playwright": [
+      "self"
+    ],
+    "connect": [
+      "self",
+      "session_id",
+      "browser_identifier",
+      "region"
+    ],
+    "get_browser": [
+      "self",
+      "session_id"
+    ],
+    "get_context": [
+      "self",
+      "session_id"
+    ],
+    "get_page": [
+      "self",
+      "session_id"
+    ],
+    "set_active_page": [
+      "self",
+      "session_id",
+      "page"
+    ],
+    "is_connected": [
+      "self",
+      "session_id"
+    ],
+    "get_session_ids": [
+      "self"
+    ],
+    "set_dialog_handler": [
+      "self",
+      "session_id",
+      "action",
+      "prompt_text"
+    ],
+    "remove_dialog_handler": [
+      "self",
+      "session_id"
+    ],
+    "disconnect": [
+      "self",
+      "session_id"
+    ],
+    "cleanup": [
+      "self"
+    ]
+  },
+  "RefNotFoundError": {},
+  "INTERACTABLE_ROLES": [],
+  "SKIP_ROLES": [],
+  "SnapshotManager": {
+    "__init__": [
+      "self"
+    ],
+    "capture": [
+      "self",
+      "page",
+      "session_id"
+    ],
+    "_resolve_selector": [
+      "self",
+      "cdp",
+      "selector"
+    ],
+    "_fetch_ax_nodes": [
+      "self",
+      "cdp",
+      "selector"
+    ],
+    "_fetch_full_ax_nodes": [
+      "self",
+      "cdp"
+    ],
+    "_format_cdp_node": [
+      "self",
+      "node_id",
+      "node_map",
+      "children_map",
+      "lines",
+      "indent",
+      "session_id"
+    ],
+    "resolve_ref": [
+      "self",
+      "page",
+      "ref",
+      "session_id"
+    ],
+    "ref_count": [
+      "self",
+      "session_id"
+    ],
+    "previous_snapshot": [
+      "self",
+      "session_id"
+    ],
+    "cleanup_session": [
+      "self",
+      "session_id"
+    ]
+  },
+  "BrowserSessionResponse": {},
+  "BrowserSessionSummary": {},
+  "SessionListResponse": {},
+  "MCP_INTEGRATION_SOURCE": [],
+  "get_browser_client": [
+    "region_name"
+  ],
+  "STALE_SESSION_CHECK_INTERVAL_S": [],
+  "cleanup_stale_sessions": [
+    "connection_manager",
+    "snapshot_manager"
+  ],
+  "register_browser_tools": [
+    "mcp"
+  ],
+  "BROWSER_EVALUATE_DISABLED": [],
+  "ObservationTools": {
+    "__init__": [
+      "self",
+      "connection_manager",
+      "snapshot_manager"
+    ],
+    "register": [
+      "self",
+      "mcp"
+    ],
+    "browser_snapshot": [
+      "self",
+      "ctx",
+      "session_id",
+      "selector"
+    ],
+    "browser_take_screenshot": [
+      "self",
+      "ctx",
+      "session_id",
+      "full_page"
+    ],
+    "browser_wait_for": [
+      "self",
+      "ctx",
+      "session_id",
+      "text",
+      "selector",
+      "timeout"
+    ],
+    "browser_console_messages": [
+      "self",
+      "ctx",
+      "session_id"
+    ],
+    "browser_network_requests": [
+      "self",
+      "ctx",
+      "session_id"
+    ],
+    "browser_evaluate": [
+      "self",
+      "ctx",
+      "session_id",
+      "expression"
+    ]
+  },
+  "error_with_snapshot": [
+    "error_msg",
+    "page",
+    "session_id",
+    "snapshot_manager"
+  ],
+  "safe_capture": [
+    "page",
+    "session_id",
+    "snapshot_manager"
+  ],
+  "ref_not_found_msg": [
+    "ref"
+  ],
+  "ManagementTools": {
+    "__init__": [
+      "self",
+      "connection_manager",
+      "snapshot_manager"
+    ],
+    "register": [
+      "self",
+      "mcp"
+    ],
+    "browser_tabs": [
+      "self",
+      "ctx",
+      "session_id",
+      "action",
+      "tab_index",
+      "url"
+    ],
+    "browser_close": [
+      "self",
+      "ctx",
+      "session_id"
+    ],
+    "browser_resize": [
+      "self",
+      "ctx",
+      "session_id",
+      "width",
+      "height"
+    ]
+  },
+  "DEFAULT_BROWSER_IDENTIFIER": [],
+  "_to_str": [
+    "value"
+  ],
+  "BrowserSessionTools": {
+    "__init__": [
+      "self",
+      "connection_manager",
+      "snapshot_manager"
+    ],
+    "register": [
+      "self",
+      "mcp"
+    ],
+    "start_browser_session": [
+      "self",
+      "ctx",
+      "browser_identifier",
+      "viewport_width",
+      "viewport_height",
+      "timeout_seconds",
+      "proxy_configuration",
+      "profile_configuration",
+      "extensions",
+      "region"
+    ],
+    "get_browser_session": [
+      "self",
+      "ctx",
+      "session_id",
+      "browser_identifier",
+      "region"
+    ],
+    "stop_browser_session": [
+      "self",
+      "ctx",
+      "session_id",
+      "browser_identifier",
+      "region"
+    ],
+    "list_browser_sessions": [
+      "self",
+      "ctx",
+      "browser_identifier",
+      "max_results",
+      "region"
+    ]
+  },
+  "INTERACTION_TIMEOUT_MS": [],
+  "_wait_for_settled": [
+    "page",
+    "timeout_ms"
+  ],
+  "InteractionTools": {
+    "__init__": [
+      "self",
+      "connection_manager",
+      "snapshot_manager"
+    ],
+    "register": [
+      "self",
+      "mcp"
+    ],
+    "browser_click": [
+      "self",
+      "ctx",
+      "session_id",
+      "ref",
+      "double_click",
+      "button"
+    ],
+    "browser_type": [
+      "self",
+      "ctx",
+      "session_id",
+      "ref",
+      "text",
+      "submit",
+      "clear_first"
+    ],
+    "browser_fill_form": [
+      "self",
+      "ctx",
+      "session_id",
+      "fields",
+      "submit_ref"
+    ],
+    "browser_select_option": [
+      "self",
+      "ctx",
+      "session_id",
+      "ref",
+      "value",
+      "label",
+      "index"
+    ],
+    "browser_hover": [
+      "self",
+      "ctx",
+      "session_id",
+      "ref"
+    ],
+    "browser_press_key": [
+      "self",
+      "ctx",
+      "session_id",
+      "key"
+    ],
+    "browser_upload_file": [
+      "self",
+      "ctx",
+      "session_id",
+      "ref",
+      "paths"
+    ],
+    "browser_handle_dialog": [
+      "self",
+      "ctx",
+      "session_id",
+      "action",
+      "prompt_text"
+    ],
+    "browser_mouse_wheel": [
+      "self",
+      "ctx",
+      "session_id",
+      "delta_x",
+      "delta_y"
+    ]
+  },
+  "NAVIGATION_TIMEOUT_MS": [],
+  "_schemes_env": [],
+  "_validate_url_scheme": [
+    "url"
+  ],
+  "NavigationTools": {
+    "__init__": [
+      "self",
+      "connection_manager",
+      "snapshot_manager"
+    ],
+    "register": [
+      "self",
+      "mcp"
+    ],
+    "browser_navigate": [
+      "self",
+      "ctx",
+      "session_id",
+      "url"
+    ],
+    "browser_navigate_back": [
+      "self",
+      "ctx",
+      "session_id"
+    ],
+    "browser_navigate_forward": [
+      "self",
+      "ctx",
+      "session_id"
+    ],
+    "_navigate_history": [
+      "self",
+      "session_id",
+      "direction"
+    ]
+  }
+}
