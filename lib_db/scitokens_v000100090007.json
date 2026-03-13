@@ -1,0 +1,329 @@
+{
+  "__version__": [],
+  "_HEXTOCHR": [],
+  "unquote": [
+    "text",
+    "exceptions"
+  ],
+  "normalize_path": [
+    "path"
+  ],
+  "LOGGER": [],
+  "SciToken": {
+    "__init__": [
+      "self",
+      "key",
+      "algorithm",
+      "key_id",
+      "claims"
+    ],
+    "_derive_algorithm": [
+      "key"
+    ],
+    "claims": [
+      "self"
+    ],
+    "verify": [
+      "self"
+    ],
+    "serialize": [
+      "self",
+      "include_key",
+      "issuer",
+      "lifetime"
+    ],
+    "update_claims": [
+      "self",
+      "claims"
+    ],
+    "__setitem__": [
+      "self",
+      "claim",
+      "value"
+    ],
+    "__getitem__": [
+      "self",
+      "claim"
+    ],
+    "__contains__": [
+      "self",
+      "claim"
+    ],
+    "__delitem__": [
+      "self",
+      "claim"
+    ],
+    "get": [
+      "self",
+      "claim",
+      "default",
+      "verified_only"
+    ],
+    "_deserialize_key": [
+      "self",
+      "key_serialized",
+      "unverified_headers"
+    ],
+    "deserialize": [
+      "serialized_token",
+      "audience",
+      "require_key",
+      "insecure",
+      "public_key"
+    ],
+    "discover": [
+      "audience",
+      "require_key",
+      "insecure",
+      "public_key"
+    ]
+  },
+  "ValidationFailure": {},
+  "NoRegisteredValidator": {},
+  "ClaimInvalid": {},
+  "MissingClaims": {},
+  "Validator": {
+    "__init__": [
+      "self"
+    ],
+    "add_validator": [
+      "self",
+      "claim",
+      "validate_op"
+    ],
+    "validate": [
+      "self",
+      "token",
+      "critical_claims"
+    ],
+    "__call__": [
+      "self",
+      "token"
+    ]
+  },
+  "EnforcementError": {},
+  "InvalidPathError": {},
+  "InvalidAuthorizationResource": {},
+  "Enforcer": {
+    "_authz_requiring_path": [],
+    "_versions_understood": [],
+    "__init__": [
+      "self",
+      "issuer",
+      "audience"
+    ],
+    "_reset_state": [
+      "self"
+    ],
+    "add_validator": [
+      "self",
+      "claim",
+      "validator"
+    ],
+    "test": [
+      "self",
+      "token",
+      "authz",
+      "path"
+    ],
+    "generate_acls": [
+      "self",
+      "token"
+    ],
+    "_validate_exp": [
+      "self",
+      "value"
+    ],
+    "_validate_nbf": [
+      "self",
+      "value"
+    ],
+    "_validate_iss": [
+      "self",
+      "value"
+    ],
+    "_validate_iat": [
+      "self",
+      "value"
+    ],
+    "_validate_aud": [
+      "self",
+      "value"
+    ],
+    "_validate_ver": [
+      "self",
+      "value"
+    ],
+    "_validate_opt": [
+      "self",
+      "value"
+    ],
+    "_validate_sub": [
+      "self",
+      "value"
+    ],
+    "_validate_jti": [
+      "self",
+      "value"
+    ],
+    "_check_scope": [
+      "self",
+      "scope"
+    ],
+    "_decode_scope_path_segment": [
+      "segment"
+    ],
+    "_normalize_scope_path": [
+      "cls",
+      "path"
+    ],
+    "_scope_path_matches": [
+      "requested_path",
+      "allowed_path"
+    ],
+    "_validate_scp": [
+      "self",
+      "value"
+    ],
+    "_validate_scope": [
+      "self",
+      "value"
+    ]
+  },
+  "SciTokensException": {},
+  "MissingKeyException": {},
+  "UnsupportedKeyException": {},
+  "MissingIssuerException": {},
+  "NonHTTPSIssuer": {},
+  "InvalidTokenFormat": {},
+  "UnableToCreateCache": {},
+  "protect": [],
+  "stuff": [
+    "blah",
+    "stuff"
+  ],
+  "long_from_bytes": [
+    "data"
+  ],
+  "decode_base64": [
+    "data"
+  ],
+  "string_from_long": [
+    "data"
+  ],
+  "bytes_from_long": [
+    "data"
+  ],
+  "CONFIG_DEFAULTS": [],
+  "configuration": [],
+  "set_config": [
+    "config"
+  ],
+  "get": [
+    "key",
+    "default"
+  ],
+  "get_int": [
+    "key",
+    "default"
+  ],
+  "CACHE_FILENAME": [],
+  "KEYCACHE_INSTANCE": [],
+  "UnableToWriteKeyCache": {},
+  "KeyCache": {
+    "__init__": [
+      "self"
+    ],
+    "getinstance": [],
+    "addkeyinfo": [
+      "self",
+      "issuer",
+      "key_id",
+      "public_key",
+      "cache_timer",
+      "next_update"
+    ],
+    "_addkeyinfo": [
+      "curs",
+      "issuer",
+      "key_id",
+      "public_key",
+      "cache_timer",
+      "next_update"
+    ],
+    "_parse_key_data": [
+      "self",
+      "issuer",
+      "kid",
+      "keydata"
+    ],
+    "_delete_cache_entry": [
+      "self",
+      "issuer",
+      "key_id"
+    ],
+    "_add_negative_cache_entry": [
+      "self",
+      "issuer",
+      "key_id",
+      "cache_retry_interval"
+    ],
+    "_download_and_add_key": [
+      "self",
+      "issuer",
+      "key_id",
+      "insecure",
+      "force_refresh",
+      "cache_retry_interval"
+    ],
+    "getkeyinfo": [
+      "self",
+      "issuer",
+      "key_id",
+      "insecure",
+      "force_refresh",
+      "cache_retry_interval"
+    ],
+    "_check_validity": [
+      "cls",
+      "key_info"
+    ],
+    "_get_issuer_publickey": [
+      "issuer",
+      "key_id",
+      "insecure"
+    ],
+    "_get_cache_file": [
+      "self"
+    ],
+    "_initialize_cachedb": [
+      "sql_file"
+    ],
+    "list_keys": [
+      "self"
+    ],
+    "remove_key": [
+      "self",
+      "issuer",
+      "key_id"
+    ],
+    "add_key": [
+      "self",
+      "issuer",
+      "key_id",
+      "force_refresh"
+    ],
+    "update_all_keys": [
+      "self",
+      "force_refresh"
+    ]
+  },
+  "token": [
+    "payload"
+  ],
+  "parsed_token": [
+    "payload"
+  ],
+  "main": [],
+  "add_args": []
+}
