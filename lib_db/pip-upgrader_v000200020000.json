@@ -1,0 +1,177 @@
+{
+  "PackagesDetector": {
+    "packages": [],
+    "__init__": [
+      "self",
+      "requirements_files"
+    ],
+    "get_packages": [
+      "self"
+    ],
+    "detect_packages": [
+      "self",
+      "requirements_files"
+    ],
+    "_detect_requirements_packages": [
+      "self",
+      "filename"
+    ],
+    "_detect_pyproject_packages": [
+      "self",
+      "filename"
+    ],
+    "_process_pyproject_dep": [
+      "self",
+      "dep"
+    ],
+    "_process_poetry_dep": [
+      "self",
+      "name",
+      "spec"
+    ],
+    "_process_req_line": [
+      "self",
+      "line"
+    ]
+  },
+  "get_options": [],
+  "main": [],
+  "PackagesStatusDetector": {
+    "packages": [],
+    "packages_status_map": [],
+    "PYPI_API_URL": [],
+    "PYPI_API_TYPE": [],
+    "pip_config_locations": [],
+    "_prerelease": [],
+    "__init__": [
+      "self",
+      "packages",
+      "options"
+    ],
+    "_update_index_url_from_configs": [
+      "self"
+    ],
+    "_prepare_api_url": [
+      "self",
+      "index_url"
+    ],
+    "detect_available_upgrades": [
+      "self",
+      "options"
+    ],
+    "_fetch_index_package_info": [
+      "self",
+      "package_name",
+      "current_version",
+      "max_version"
+    ],
+    "_expand_package": [
+      "self",
+      "package_line"
+    ],
+    "_compute_compatible_upper_bound": [
+      "version_str"
+    ],
+    "_apply_version_constraints": [
+      "self",
+      "versions",
+      "current_version",
+      "max_version"
+    ],
+    "_pick_latest_version": [
+      "self",
+      "all_versions",
+      "filtered_versions",
+      "current_version"
+    ],
+    "_parse_pypi_json_package_info": [
+      "self",
+      "package_name",
+      "current_version",
+      "response",
+      "max_version"
+    ],
+    "_parse_simple_html_package_info": [
+      "self",
+      "package_name",
+      "current_version",
+      "response",
+      "max_version"
+    ]
+  },
+  "PackagesUpgrader": {
+    "selected_packages": [],
+    "requirements_files": [],
+    "upgraded_packages": [],
+    "dry_run": [],
+    "skip_gte": [],
+    "__init__": [
+      "self",
+      "selected_packages",
+      "requirements_files",
+      "options"
+    ],
+    "do_upgrade": [
+      "self"
+    ],
+    "_update_requirements_package": [
+      "self",
+      "package"
+    ],
+    "_maybe_update_line_package": [
+      "self",
+      "line",
+      "package"
+    ]
+  },
+  "RequirementsDetector": {
+    "filenames": [],
+    "__init__": [
+      "self",
+      "requirements_arg"
+    ],
+    "get_filenames": [
+      "self"
+    ],
+    "detect_files": [
+      "self",
+      "requirements_arg"
+    ],
+    "autodetect_files": [
+      "self"
+    ],
+    "_is_valid_requirements_file": [
+      "filename"
+    ],
+    "_is_valid_pyproject": [
+      "filename"
+    ],
+    "_check_inclusions_recursively": [
+      "self"
+    ],
+    "_detect_inclusion": [
+      "self",
+      "filename"
+    ]
+  },
+  "STYLE": [],
+  "PackageInteractiveSelector": {
+    "packages_for_upgrade": [],
+    "selected_packages": [],
+    "__init__": [
+      "self",
+      "packages_map",
+      "options"
+    ],
+    "get_packages": [
+      "self"
+    ],
+    "ask_for_packages": [
+      "self"
+    ],
+    "_select_packages": [
+      "self",
+      "indexes"
+    ]
+  }
+}
