@@ -1,0 +1,132 @@
+{
+  "load_file": [
+    "file_path"
+  ],
+  "save_file": [
+    "path",
+    "content"
+  ],
+  "get_encryption_keys_config": [
+    "keys_file"
+  ],
+  "get_encryption_key": [
+    "version",
+    "keys_file"
+  ],
+  "read_protector_config": [
+    "toml_path"
+  ],
+  "GlobalFilterConfig": {},
+  "EncryptionConfig": {},
+  "ObfuscationConfig": {},
+  "ProtectorConfig": {},
+  "_A": [],
+  "_protect_file_worker": [
+    "args"
+  ],
+  "Protector": {
+    "__init__": [
+      "A"
+    ],
+    "initialize": [
+      "B",
+      "version",
+      "config"
+    ],
+    "protect_file": [
+      "C",
+      "source_path",
+      "distribution_path"
+    ],
+    "protect_files_parallel": [
+      "files",
+      "version",
+      "config"
+    ]
+  },
+  "ProtectionException": {},
+  "hatch_register_build_hook": [],
+  "HatchlingProtectionHook": {
+    "PLUGIN_NAME": [],
+    "__init__": [
+      "A"
+    ],
+    "_get_exclude_config": [
+      "A"
+    ],
+    "initialize": [
+      "A",
+      "version",
+      "build_data"
+    ]
+  },
+  "BUILDTOOLS_CONFIG_FILE": [],
+  "_B": [],
+  "Obfuscation": {
+    "__init__": [
+      "A",
+      "config"
+    ],
+    "should_protect": [
+      "A",
+      "source_path",
+      "distribution_path"
+    ],
+    "protect_file": [
+      "B",
+      "source_path",
+      "distribution_path"
+    ]
+  },
+  "GlobalFilter": {
+    "__init__": [
+      "A",
+      "config"
+    ],
+    "should_protect": [
+      "A",
+      "source_path",
+      "distribution_path"
+    ],
+    "protect_file": [
+      "B",
+      "source_path",
+      "distribution_path"
+    ]
+  },
+  "Encryption": {
+    "__init__": [
+      "A",
+      "version",
+      "config"
+    ],
+    "should_protect": [
+      "A",
+      "source_path",
+      "distribution_path"
+    ],
+    "cipher": [
+      "self"
+    ],
+    "protect_file": [
+      "A",
+      "source_path",
+      "distribution_path"
+    ]
+  },
+  "Protection": {
+    "should_protect": [
+      "A",
+      "source_path",
+      "distribution_path"
+    ],
+    "protect_file": [
+      "A",
+      "source_path",
+      "distribution_path"
+    ],
+    "finalize": [
+      "A"
+    ]
+  }
+}
