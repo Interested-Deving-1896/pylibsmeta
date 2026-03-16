@@ -1,0 +1,6709 @@
+{
+  "logger": [],
+  "graceful_shutdown": [
+    "runtimes"
+  ],
+  "prefetch_model": [
+    "model_path"
+  ],
+  "worker": [],
+  "compute_stagger_delay": [
+    "num_workers",
+    "stagger_delay"
+  ],
+  "launch_workers": [
+    "args",
+    "extra_engine_args_path"
+  ],
+  "main": [],
+  "DYN_NAMESPACE": [],
+  "DEFAULT_ENDPOINT": [],
+  "DEFAULT_PREFILL_ENDPOINT": [],
+  "ProfileDataResult": {
+    "__init__": [
+      "self",
+      "npz_path",
+      "tmpdir"
+    ],
+    "__del__": [
+      "self"
+    ]
+  },
+  "resolve_planner_profile_data": [
+    "planner_profile_data"
+  ],
+  "create_temp_engine_args_file": [
+    "args"
+  ],
+  "validate_worker_type_args": [
+    "args"
+  ],
+  "parse_bootstrap_ports": [
+    "ports_str"
+  ],
+  "parse_args": [],
+  "__version__": [],
+  "TORCH_DTYPE_BYTES": [],
+  "DEFAULT_KV_TRANSFER_BANDWIDTH_GBPS": [],
+  "_normalize_dtype_str": [
+    "dtype"
+  ],
+  "get_kv_cache_dtype_bytes": [
+    "config",
+    "kv_cache_dtype"
+  ],
+  "compute_kv_bytes_per_token": [
+    "model_path",
+    "kv_cache_dtype"
+  ],
+  "convert_profile_results_to_npz": [
+    "profile_results_dir",
+    "output_path",
+    "resolution"
+  ],
+  "is_profile_results_dir": [
+    "path"
+  ],
+  "is_mocker_format_npz": [
+    "path"
+  ],
+  "__all__": [],
+  "get_fs": [
+    "fs_url"
+  ],
+  "get_media_url": [
+    "fs",
+    "storage_path",
+    "base_url"
+  ],
+  "upload_to_fs": [
+    "fs",
+    "storage_path",
+    "data",
+    "base_url"
+  ],
+  "DisaggregationMode": {
+    "AGGREGATED": [],
+    "PREFILL": [],
+    "DECODE": []
+  },
+  "EmbeddingTransferMode": {
+    "LOCAL": [],
+    "NIXL_WRITE": [],
+    "NIXL_READ": []
+  },
+  "pytestmark": [],
+  "TestGetFs": {
+    "test_local_file_url": [
+      "self",
+      "tmp_path"
+    ],
+    "test_local_file_url_auto_mkdir": [
+      "self",
+      "tmp_path"
+    ],
+    "test_no_protocol_defaults_to_file": [
+      "self",
+      "tmp_path"
+    ],
+    "test_s3_url_protocol": [
+      "self"
+    ],
+    "test_gs_url_protocol": [
+      "self"
+    ]
+  },
+  "TestGetMediaUrl": {
+    "_make_fs": [
+      "self",
+      "protocol",
+      "path"
+    ],
+    "test_base_url_rewrite": [
+      "self"
+    ],
+    "test_base_url_trailing_slash_stripped": [
+      "self"
+    ],
+    "test_protocol_fallback_file": [
+      "self"
+    ],
+    "test_protocol_fallback_s3": [
+      "self"
+    ],
+    "test_tuple_protocol_uses_first": [
+      "self"
+    ],
+    "test_list_protocol_uses_first": [
+      "self"
+    ],
+    "test_base_url_none_falls_back_to_protocol": [
+      "self"
+    ],
+    "test_base_url_empty_string_falls_back_to_protocol": [
+      "self"
+    ]
+  },
+  "TestUploadToFs": {
+    "_make_fs": [
+      "self",
+      "protocol",
+      "path"
+    ],
+    "test_calls_pipe_with_correct_args": [
+      "self"
+    ],
+    "test_returns_url_with_base_url": [
+      "self"
+    ],
+    "test_returns_url_with_protocol_fallback": [
+      "self"
+    ],
+    "test_pipe_called_before_url_returned": [
+      "self"
+    ]
+  },
+  "EMBEDDING_SIZE": [],
+  "benchmark": [
+    "sender",
+    "receiver",
+    "tensors",
+    "from_cuda"
+  ],
+  "correctness": [
+    "sender",
+    "receiver",
+    "tensors"
+  ],
+  "TestLocalEmbeddingTransfer": {
+    "test_correctness": [
+      "self"
+    ],
+    "test_benchmark": [
+      "self"
+    ],
+    "test_gpu_benchmark": [
+      "self"
+    ]
+  },
+  "TestNixlWriteEmbeddingTransfer": {
+    "test_correctness": [
+      "self"
+    ],
+    "test_benchmark": [
+      "self"
+    ],
+    "test_gpu_benchmark": [
+      "self"
+    ]
+  },
+  "TestNixlReadEmbeddingTransfer": {
+    "test_correctness": [
+      "self"
+    ],
+    "test_benchmark": [
+      "self"
+    ],
+    "test_gpu_benchmark": [
+      "self"
+    ]
+  },
+  "TestRingBuffer": {
+    "test_simple": [
+      "self"
+    ],
+    "test_release": [
+      "self"
+    ],
+    "test_wrap_around": [
+      "self"
+    ],
+    "test_looping": [
+      "self"
+    ]
+  },
+  "TestAsyncEncoderCacheBasicOperations": {
+    "cache": [
+      "self"
+    ],
+    "test_sync_get_returns_none_for_missing_key": [
+      "self",
+      "cache"
+    ],
+    "test_sync_get_returns_cached_tensor": [
+      "self",
+      "cache"
+    ],
+    "test_get_or_compute_caches_result": [
+      "self",
+      "cache"
+    ],
+    "test_get_or_compute_returns_cached": [
+      "self",
+      "cache"
+    ]
+  },
+  "TestAsyncEncoderCacheRequestCoalescing": {
+    "cache": [
+      "self"
+    ],
+    "test_concurrent_requests_coalesce": [
+      "self",
+      "cache"
+    ],
+    "test_different_keys_compute_separately": [
+      "self",
+      "cache"
+    ]
+  },
+  "TestAsyncEncoderCacheExceptionHandling": {
+    "cache": [
+      "self"
+    ],
+    "test_exception_propagates_to_caller": [
+      "self",
+      "cache"
+    ],
+    "test_exception_propagates_to_all_waiters": [
+      "self",
+      "cache"
+    ],
+    "test_in_flight_cleared_after_exception": [
+      "self",
+      "cache"
+    ]
+  },
+  "TestAsyncEncoderCacheStats": {
+    "cache": [
+      "self"
+    ],
+    "test_stats_includes_in_flight": [
+      "self",
+      "cache"
+    ],
+    "test_stats_reflects_underlying_cache": [
+      "self",
+      "cache"
+    ]
+  },
+  "TestMultimodalEmbeddingCacheManagerBasicOperations": {
+    "test_set_and_get": [
+      "self"
+    ],
+    "test_set_and_get_with_grid": [
+      "self"
+    ],
+    "test_get_nonexistent_key": [
+      "self"
+    ],
+    "test_set_overwrites_existing_key": [
+      "self"
+    ]
+  },
+  "TestMultimodalEmbeddingCacheManagerLRUEviction": {
+    "test_eviction_when_full": [
+      "self"
+    ],
+    "test_get_updates_lru_order": [
+      "self"
+    ],
+    "test_tensor_too_large_for_cache": [
+      "self"
+    ]
+  },
+  "TestMultimodalEmbeddingCacheManagerSizeTracking": {
+    "test_current_bytes_tracking": [
+      "self"
+    ],
+    "test_size_updated_on_overwrite": [
+      "self"
+    ]
+  },
+  "TestMultimodalEmbeddingCacheManagerStats": {
+    "test_hit_miss_tracking": [
+      "self"
+    ],
+    "test_stats_content": [
+      "self"
+    ],
+    "test_utilization_calculation": [
+      "self"
+    ]
+  },
+  "TestMultimodalEmbeddingCacheManagerContiguousTensor": {
+    "test_set_contiguous_tensor_succeeds": [
+      "self"
+    ],
+    "test_set_non_contiguous_tensor_raises": [
+      "self"
+    ]
+  },
+  "TestCachedEmbeddingNamedTuple": {
+    "test_fields": [
+      "self"
+    ],
+    "test_none_grid": [
+      "self"
+    ],
+    "test_unpacking": [
+      "self"
+    ]
+  },
+  "TestEnvOrDefault": {
+    "test_returns_default_when_env_not_set": [
+      "self",
+      "monkeypatch"
+    ],
+    "test_returns_env_when_set": [
+      "self",
+      "monkeypatch"
+    ],
+    "test_bool_conversion_true": [
+      "self",
+      "monkeypatch"
+    ],
+    "test_bool_conversion_false": [
+      "self",
+      "monkeypatch"
+    ],
+    "test_int_conversion": [
+      "self",
+      "monkeypatch"
+    ],
+    "test_float_conversion": [
+      "self",
+      "monkeypatch"
+    ],
+    "test_string_passthrough": [
+      "self",
+      "monkeypatch"
+    ],
+    "test_preserves_default_type": [
+      "self",
+      "monkeypatch"
+    ],
+    "test_none_default_with_no_value_type_returns_raw_env_value": [
+      "self",
+      "monkeypatch"
+    ]
+  },
+  "TestAddArgument": {
+    "test_callable_type_with_none_default_uses_env_and_validates": [
+      "self",
+      "monkeypatch"
+    ],
+    "test_callable_type_with_none_default_uses_none_when_env_unset": [
+      "self",
+      "monkeypatch"
+    ],
+    "test_callable_type_with_invalid_env_value_fails_parse": [
+      "self",
+      "monkeypatch"
+    ]
+  },
+  "TestAddNegatableBool": {
+    "test_positive_flag": [
+      "self"
+    ],
+    "test_negative_flag": [
+      "self"
+    ],
+    "test_uses_default_when_no_flag": [
+      "self",
+      "monkeypatch"
+    ],
+    "test_uses_env_var_when_set": [
+      "self",
+      "monkeypatch"
+    ],
+    "test_converts_hyphens_to_underscores": [
+      "self"
+    ],
+    "test_help_includes_env_var": [
+      "self"
+    ],
+    "test_help_shows_current_default": [
+      "self",
+      "monkeypatch"
+    ]
+  },
+  "_get_package_version": [
+    "dist_name"
+  ],
+  "_get_sglang_version": [],
+  "_get_trtllm_version": [],
+  "_get_vllm_version": [],
+  "_get_dynamo_version": [],
+  "dump_config": [
+    "dump_config_to",
+    "config"
+  ],
+  "get_config_dump": [
+    "config",
+    "extra_info"
+  ],
+  "add_config_dump_args": [
+    "parser"
+  ],
+  "_preprocess_for_encode": [
+    "obj"
+  ],
+  "register_encoder": [
+    "type_class"
+  ],
+  "_preprocess_for_encode_set": [
+    "obj"
+  ],
+  "_preprocess_for_encode_namespace": [
+    "obj"
+  ],
+  "_preprocess_for_encode_enum": [
+    "obj"
+  ],
+  "canonical_json_encoder": [],
+  "get_system_info": [],
+  "get_runtime_info": [],
+  "get_gpu_info": [],
+  "get_package_info": [],
+  "DEFAULT_ENV_PREFIXES": [],
+  "SENSITIVE_PATTERNS": [],
+  "get_environment_vars": [
+    "prefixes",
+    "include_sensitive",
+    "additional_vars"
+  ],
+  "_is_sensitive": [
+    "var_name"
+  ],
+  "LoRASourceProtocol": {
+    "download": [
+      "self",
+      "lora_uri",
+      "dest_path"
+    ],
+    "exists": [
+      "self",
+      "lora_uri"
+    ]
+  },
+  "LoRAManager": {
+    "__init__": [
+      "self",
+      "cache_path"
+    ],
+    "register_custom_source": [
+      "self",
+      "scheme",
+      "source"
+    ],
+    "download_lora": [
+      "self",
+      "lora_uri"
+    ],
+    "is_cached": [
+      "self",
+      "lora_uri"
+    ],
+    "_uri_to_cache_key": [
+      "self",
+      "uri"
+    ]
+  },
+  "normalize_finish_reason": [
+    "finish_reason"
+  ],
+  "get_worker_namespace": [
+    "namespace"
+  ],
+  "get_workspace_dir": [],
+  "WORKSPACE_DIR": [],
+  "parse_endpoint": [
+    "endpoint"
+  ],
+  "create_runtime": [
+    "discovery_backend",
+    "request_plane",
+    "event_plane",
+    "use_kv_events"
+  ],
+  "DEFAULT_VIDEO_WIDTH": [],
+  "DEFAULT_VIDEO_HEIGHT": [],
+  "DEFAULT_VIDEO_FPS": [],
+  "DEFAULT_VIDEO_NUM_FRAMES": [],
+  "parse_size": [
+    "size",
+    "default_w",
+    "default_h"
+  ],
+  "compute_num_frames": [
+    "num_frames",
+    "seconds",
+    "fps",
+    "default_fps",
+    "default_num_frames"
+  ],
+  "normalize_video_frames": [
+    "images"
+  ],
+  "frames_to_numpy": [
+    "images"
+  ],
+  "encode_to_mp4": [
+    "frames",
+    "output_dir",
+    "request_id",
+    "fps"
+  ],
+  "encode_to_mp4_bytes": [
+    "frames",
+    "fps"
+  ],
+  "LabelInjectingCollector": {
+    "__init__": [
+      "self",
+      "source_registry",
+      "labels_to_inject"
+    ],
+    "collect": [
+      "self"
+    ],
+    "describe": [
+      "self"
+    ]
+  },
+  "InputParamManager": {
+    "__init__": [
+      "self",
+      "tokenizer"
+    ],
+    "get_input_param": [
+      "self",
+      "request",
+      "use_tokenizer"
+    ]
+  },
+  "_DEFAULT_GRACE_PERIOD_SECS": [],
+  "_GRACE_PERIOD_ENV": [],
+  "_shutdown_started": [],
+  "get_grace_period_seconds": [],
+  "_unregister_endpoints": [
+    "endpoints"
+  ],
+  "graceful_shutdown_with_discovery": [
+    "runtime",
+    "endpoints",
+    "shutdown_event",
+    "grace_period_s"
+  ],
+  "install_signal_handlers": [
+    "loop",
+    "runtime",
+    "endpoints",
+    "shutdown_event",
+    "grace_period_s"
+  ],
+  "build_trace_headers": [
+    "context"
+  ],
+  "OutputModality": {
+    "TEXT": [],
+    "IMAGE": [],
+    "VIDEO": [],
+    "AUDIO": [],
+    "from_name": [
+      "cls",
+      "name"
+    ],
+    "valid_names": [
+      "cls"
+    ]
+  },
+  "RequestType": {
+    "CHAT_COMPLETION": [],
+    "IMAGE_GENERATION": [],
+    "VIDEO_GENERATION": [],
+    "AUDIO_GENERATION": []
+  },
+  "get_output_modalities": [
+    "cli_input",
+    "model_repo"
+  ],
+  "parse_request_type": [
+    "raw_request",
+    "output_modalities"
+  ],
+  "register_engine_metrics_callback": [
+    "endpoint",
+    "registry",
+    "metric_prefix_filters",
+    "exclude_prefixes",
+    "inject_custom_labels",
+    "namespace_name",
+    "component_name",
+    "endpoint_name",
+    "model_name"
+  ],
+  "_compile_exclude_pattern": [
+    "exclude_prefixes"
+  ],
+  "_compile_include_pattern": [
+    "metric_prefixes"
+  ],
+  "get_prometheus_expfmt": [
+    "registry",
+    "metric_prefix_filters",
+    "exclude_prefixes",
+    "inject_custom_labels"
+  ],
+  "LLMBackendMetrics": {
+    "__init__": [
+      "self",
+      "registry",
+      "model_name",
+      "component_name"
+    ],
+    "set_total_blocks": [
+      "self",
+      "dp_rank",
+      "value"
+    ],
+    "set_gpu_cache_usage": [
+      "self",
+      "dp_rank",
+      "value"
+    ],
+    "set_model_load_time": [
+      "self",
+      "value"
+    ]
+  },
+  "read_decoded_media_via_nixl": [
+    "connector",
+    "decoded_meta",
+    "return_metadata"
+  ],
+  "parse_endpoint_types": [
+    "endpoint_types_str"
+  ],
+  "TestLabelInjectingCollector": {
+    "test_counter_label_injection": [
+      "self"
+    ],
+    "test_gauge_label_injection": [
+      "self"
+    ],
+    "test_histogram_preserves_le_label": [
+      "self"
+    ],
+    "test_summary_preserves_quantile_label": [
+      "self"
+    ],
+    "test_multiple_labels_injection": [
+      "self"
+    ],
+    "test_merge_with_existing_labels": [
+      "self"
+    ],
+    "test_existing_label_not_overwritten": [
+      "self"
+    ],
+    "test_empty_labels_raises_error": [
+      "self"
+    ],
+    "test_reserved_label_le_raises_error": [
+      "self"
+    ],
+    "test_reserved_label_quantile_raises_error": [
+      "self"
+    ],
+    "test_multiple_metrics_all_get_labels": [
+      "self"
+    ],
+    "test_timestamp_preservation": [
+      "self"
+    ]
+  },
+  "_suppress_unhandled_future_exception": [
+    "future"
+  ],
+  "AsyncEncoderCache": {
+    "__init__": [
+      "self",
+      "cache"
+    ],
+    "get": [
+      "self",
+      "key"
+    ],
+    "get_or_compute": [
+      "self",
+      "key",
+      "compute_fn"
+    ],
+    "stats": [
+      "self"
+    ]
+  },
+  "torch_dtype_from_string": [
+    "dtype_str"
+  ],
+  "torch_dtype_to_string": [
+    "dtype"
+  ],
+  "TransferRequest": {},
+  "AbstractEmbeddingReceiver": {
+    "receive_embeddings": [
+      "self",
+      "request"
+    ],
+    "release_tensor": [
+      "self",
+      "tensor_id"
+    ]
+  },
+  "AbstractEmbeddingSender": {
+    "send_embeddings": [
+      "self",
+      "embeddings",
+      "stage_embeddings"
+    ]
+  },
+  "LocalEmbeddingSender": {
+    "__init__": [
+      "self"
+    ],
+    "save_embeddings_to_file": [
+      "self",
+      "embedding_key",
+      "embeddings"
+    ],
+    "send_embeddings": [
+      "self",
+      "embeddings",
+      "stage_embeddings"
+    ]
+  },
+  "LocalEmbeddingReceiver": {
+    "__init__": [
+      "self"
+    ],
+    "receive_embeddings": [
+      "self",
+      "request"
+    ],
+    "release_tensor": [
+      "self",
+      "tensor_id"
+    ]
+  },
+  "MonolithicCounter": {
+    "__init__": [
+      "self"
+    ],
+    "get_next_id": [
+      "self"
+    ]
+  },
+  "RingBuffer": {
+    "BufferId": [],
+    "__init__": [
+      "self",
+      "buffer_size"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "_flush_freed_list": [
+      "self"
+    ],
+    "get_buffer": [
+      "self",
+      "size"
+    ],
+    "release_buffer": [
+      "self",
+      "buffer_id"
+    ]
+  },
+  "NixlTransferRequest": {},
+  "NixlWriteEmbeddingSender": {
+    "__init__": [
+      "self"
+    ],
+    "__del__": [
+      "self"
+    ],
+    "_state_update": [
+      "self"
+    ],
+    "_get_receiver_handshakes": [
+      "self"
+    ],
+    "_complete_transfer": [
+      "self",
+      "tensor_id"
+    ],
+    "send_embeddings": [
+      "self",
+      "embeddings",
+      "stage_embeddings"
+    ]
+  },
+  "NixlWriteEmbeddingReceiver": {
+    "__init__": [
+      "self",
+      "buffer_size"
+    ],
+    "receive_embeddings": [
+      "self",
+      "request",
+      "receive_timeout"
+    ],
+    "release_tensor": [
+      "self",
+      "tensor_id"
+    ]
+  },
+  "PersistentConnector": {
+    "__init__": [
+      "self"
+    ],
+    "_create_connection": [
+      "self"
+    ]
+  },
+  "remote_release_overwrite": [
+    "self"
+  ],
+  "NixlReadEmbeddingSender": {
+    "__init__": [
+      "self"
+    ],
+    "send_embeddings": [
+      "self",
+      "embeddings",
+      "stage_embeddings"
+    ]
+  },
+  "NixlReadEmbeddingReceiver": {
+    "__init__": [
+      "self",
+      "embedding_hidden_size",
+      "max_item_mm_token",
+      "max_items"
+    ],
+    "receive_embeddings": [
+      "self",
+      "request"
+    ],
+    "release_tensor": [
+      "self",
+      "tensor_id"
+    ]
+  },
+  "get_http_client": [
+    "timeout"
+  ],
+  "ImageLoader": {
+    "CACHE_SIZE_MAXIMUM": [],
+    "__init__": [
+      "self",
+      "cache_size",
+      "http_timeout"
+    ],
+    "load_image": [
+      "self",
+      "image_url"
+    ],
+    "load_image_batch": [
+      "self",
+      "image_mm_items",
+      "enable_frontend_decoding",
+      "nixl_connector"
+    ]
+  },
+  "CachedEmbedding": {},
+  "MultimodalEmbeddingCacheManager": {
+    "__init__": [
+      "self",
+      "capacity_bytes"
+    ],
+    "_tensor_size": [
+      "tensor"
+    ],
+    "get": [
+      "self",
+      "key"
+    ],
+    "set": [
+      "self",
+      "key",
+      "entry"
+    ],
+    "stats": [
+      "self"
+    ]
+  },
+  "ConfigBase": {
+    "from_cli_args": [
+      "cls",
+      "args"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "T": [],
+  "env_or_default": [
+    "env_var",
+    "default",
+    "value_type"
+  ],
+  "add_argument": [
+    "parser"
+  ],
+  "add_negatable_bool_argument": [
+    "parser"
+  ],
+  "_build_help_message": [
+    "help_text",
+    "env_var",
+    "default",
+    "obsolete_flag"
+  ],
+  "_get_dest_name": [
+    "flag_name",
+    "dest"
+  ],
+  "ArgGroup": {
+    "add_arguments": [
+      "self",
+      "parser"
+    ]
+  },
+  "DynamoRuntimeConfig": {
+    "validate": [
+      "self"
+    ],
+    "_validate_output_modalities": [
+      "self"
+    ]
+  },
+  "DynamoRuntimeArgGroup": {
+    "add_arguments": [
+      "self",
+      "parser"
+    ]
+  },
+  "VideoNvExt": {},
+  "NvCreateVideoRequest": {},
+  "VideoData": {},
+  "NvVideosResponse": {},
+  "ImageNvExt": {},
+  "NvCreateImageRequest": {},
+  "ImageData": {},
+  "NvImagesResponse": {},
+  "PrefillPoolSelectionStrategy": {
+    "ttft_step": [
+      "self"
+    ],
+    "isl_step": [
+      "self"
+    ],
+    "select_pool": [
+      "self",
+      "isl",
+      "ttft_target"
+    ],
+    "_clamp_index": [
+      "value",
+      "resolution"
+    ]
+  },
+  "DecodePoolSelectionStrategy": {
+    "itl_step": [
+      "self"
+    ],
+    "context_length_step": [
+      "self"
+    ],
+    "select_pool": [
+      "self",
+      "context_length",
+      "itl_target"
+    ],
+    "_clamp_index": [
+      "value",
+      "resolution"
+    ]
+  },
+  "GlobalRouterConfig": {
+    "validate": [
+      "self"
+    ]
+  },
+  "load_config": [
+    "config_path"
+  ],
+  "GlobalRouterHandler": {
+    "__init__": [
+      "self",
+      "runtime",
+      "config_path",
+      "model_name",
+      "default_ttft_target",
+      "default_itl_target"
+    ],
+    "initialize": [
+      "self"
+    ],
+    "handle_prefill": [
+      "self",
+      "request"
+    ],
+    "handle_decode": [
+      "self",
+      "request"
+    ],
+    "get_pool_info": [
+      "self"
+    ]
+  },
+  "DynamoGlobalRouterArgGroup": {
+    "add_arguments": [
+      "self",
+      "parser"
+    ]
+  },
+  "DynamoGlobalRouterConfig": {
+    "validate": [
+      "self"
+    ]
+  },
+  "get_current_k8s_namespace": [],
+  "KubernetesAPI": {
+    "__init__": [
+      "self",
+      "k8s_namespace"
+    ],
+    "_get_graph_deployment_from_name": [
+      "self",
+      "graph_deployment_name"
+    ],
+    "get_graph_deployment": [
+      "self",
+      "graph_deployment_name"
+    ],
+    "update_service_replicas": [
+      "self",
+      "graph_deployment_name",
+      "service_name",
+      "replicas"
+    ],
+    "_update_dgd_replicas": [
+      "self",
+      "graph_deployment_name",
+      "service_name",
+      "replicas"
+    ],
+    "update_graph_replicas": [
+      "self",
+      "graph_deployment_name",
+      "component_name",
+      "replicas"
+    ],
+    "is_deployment_ready": [
+      "self",
+      "deployment"
+    ],
+    "get_service_replica_status": [
+      "self",
+      "deployment",
+      "service_name"
+    ],
+    "wait_for_graph_deployment_ready": [
+      "self",
+      "graph_deployment_name",
+      "max_attempts",
+      "delay_seconds"
+    ]
+  },
+  "TargetReplica": {},
+  "KubernetesConnector": {
+    "__init__": [
+      "self",
+      "dynamo_namespace",
+      "model_name",
+      "k8s_namespace",
+      "parent_dgd_name"
+    ],
+    "add_component": [
+      "self",
+      "sub_component_type",
+      "blocking"
+    ],
+    "remove_component": [
+      "self",
+      "sub_component_type",
+      "blocking"
+    ],
+    "validate_deployment": [
+      "self",
+      "prefill_component_name",
+      "decode_component_name",
+      "require_prefill",
+      "require_decode"
+    ],
+    "get_model_name": [
+      "self",
+      "deployment",
+      "require_prefill",
+      "require_decode"
+    ],
+    "get_gpu_counts": [
+      "self",
+      "deployment",
+      "require_prefill",
+      "require_decode"
+    ],
+    "get_frontend_metrics_url": [
+      "self",
+      "port"
+    ],
+    "wait_for_deployment_ready": [
+      "self"
+    ],
+    "get_actual_worker_counts": [
+      "self",
+      "prefill_component_name",
+      "decode_component_name"
+    ],
+    "set_component_replicas": [
+      "self",
+      "target_replicas",
+      "blocking"
+    ]
+  },
+  "PlannerConnector": {
+    "add_component": [
+      "self",
+      "component_name"
+    ],
+    "remove_component": [
+      "self",
+      "component_name"
+    ]
+  },
+  "SCALING_CHECK_INTERVAL": [],
+  "SCALING_MAX_WAIT_TIME": [],
+  "SCALING_MAX_RETRIES": [],
+  "VirtualConnector": {
+    "__init__": [
+      "self",
+      "runtime",
+      "dynamo_namespace",
+      "model_name"
+    ],
+    "_async_init": [
+      "self"
+    ],
+    "_update_scaling_decision": [
+      "self",
+      "num_prefill",
+      "num_decode"
+    ],
+    "_wait_for_scaling_completion": [
+      "self"
+    ],
+    "add_component": [
+      "self",
+      "sub_component_type",
+      "blocking"
+    ],
+    "remove_component": [
+      "self",
+      "sub_component_type",
+      "blocking"
+    ],
+    "set_component_replicas": [
+      "self",
+      "target_replicas",
+      "blocking"
+    ],
+    "validate_deployment": [
+      "self",
+      "prefill_component_name",
+      "decode_component_name",
+      "require_prefill",
+      "require_decode"
+    ],
+    "wait_for_deployment_ready": [
+      "self"
+    ],
+    "get_model_name": [
+      "self",
+      "require_prefill",
+      "require_decode"
+    ]
+  },
+  "RemotePlannerClient": {
+    "__init__": [
+      "self",
+      "runtime",
+      "central_namespace",
+      "central_component",
+      "connection_timeout",
+      "max_retries"
+    ],
+    "_ensure_client": [
+      "self"
+    ],
+    "send_scale_request": [
+      "self",
+      "request"
+    ]
+  },
+  "ScaleStatus": {
+    "SUCCESS": [],
+    "ERROR": [],
+    "SCALING": []
+  },
+  "ScaleRequest": {},
+  "ScaleResponse": {},
+  "BasePlannerDefaults": {
+    "namespace": [],
+    "no_operation": [],
+    "log_dir": [],
+    "throughput_adjustment_interval": [],
+    "max_gpu_budget": [],
+    "min_endpoint": [],
+    "decode_engine_num_gpu": [],
+    "prefill_engine_num_gpu": [],
+    "metric_reporting_prometheus_port": []
+  },
+  "SLAPlannerDefaults": {
+    "metric_pulling_prometheus_endpoint": [],
+    "profile_results_dir": [],
+    "isl": [],
+    "osl": [],
+    "ttft": [],
+    "itl": [],
+    "load_predictor": [],
+    "prophet_window_size": [],
+    "load_predictor_log1p": [],
+    "kalman_q_level": [],
+    "kalman_q_trend": [],
+    "kalman_r": [],
+    "kalman_min_points": [],
+    "no_correction": [],
+    "throughput_metrics_source": [],
+    "enable_throughput_scaling": [],
+    "enable_load_scaling": [],
+    "load_adjustment_interval": [],
+    "load_learning_window": [],
+    "load_scaling_down_sensitivity": [],
+    "load_metric_samples": [],
+    "load_min_observations": []
+  },
+  "VllmComponentName": {
+    "prefill_worker_k8s_name": [],
+    "prefill_worker_component_name": [],
+    "prefill_worker_endpoint": [],
+    "decode_worker_k8s_name": [],
+    "decode_worker_component_name": [],
+    "decode_worker_endpoint": []
+  },
+  "SGLangComponentName": {
+    "prefill_worker_k8s_name": [],
+    "prefill_worker_component_name": [],
+    "prefill_worker_endpoint": [],
+    "decode_worker_k8s_name": [],
+    "decode_worker_component_name": [],
+    "decode_worker_endpoint": []
+  },
+  "TrtllmComponentName": {
+    "prefill_worker_k8s_name": [],
+    "prefill_worker_component_name": [],
+    "prefill_worker_endpoint": [],
+    "decode_worker_k8s_name": [],
+    "decode_worker_component_name": [],
+    "decode_worker_endpoint": []
+  },
+  "MockerComponentName": {
+    "prefill_worker_k8s_name": [],
+    "prefill_worker_component_name": [],
+    "prefill_worker_endpoint": [],
+    "decode_worker_k8s_name": [],
+    "decode_worker_component_name": [],
+    "decode_worker_endpoint": []
+  },
+  "WORKER_COMPONENT_NAMES": [],
+  "SubComponentType": {
+    "PREFILL": [],
+    "DECODE": []
+  },
+  "break_arguments": [
+    "args"
+  ],
+  "Service": {
+    "number_replicas": [
+      "self"
+    ],
+    "get_model_name": [
+      "self"
+    ],
+    "get_gpu_count": [
+      "self"
+    ]
+  },
+  "get_service_from_sub_component_type_or_name": [
+    "deployment",
+    "sub_component_type",
+    "component_name"
+  ],
+  "GlobalPlannerConnector": {
+    "__init__": [
+      "self",
+      "runtime",
+      "dynamo_namespace",
+      "global_planner_namespace",
+      "global_planner_component",
+      "model_name"
+    ],
+    "_async_init": [
+      "self"
+    ],
+    "set_predicted_load": [
+      "self",
+      "num_requests",
+      "isl",
+      "osl"
+    ],
+    "set_component_replicas": [
+      "self",
+      "target_replicas",
+      "blocking"
+    ],
+    "add_component": [
+      "self",
+      "sub_component_type",
+      "blocking"
+    ],
+    "remove_component": [
+      "self",
+      "sub_component_type",
+      "blocking"
+    ],
+    "validate_deployment": [
+      "self",
+      "prefill_component_name",
+      "decode_component_name"
+    ],
+    "wait_for_deployment_ready": [
+      "self"
+    ],
+    "get_model_name": [
+      "self"
+    ]
+  },
+  "INIT_PLANNER_START_DELAY": [],
+  "start_planner": [
+    "runtime",
+    "config"
+  ],
+  "init_planner": [
+    "runtime",
+    "config"
+  ],
+  "_parse_config": [],
+  "AggPlanner": {
+    "ENGINE_WORKER_TYPE": [],
+    "__init__": [
+      "self",
+      "runtime",
+      "config"
+    ],
+    "_async_init": [
+      "self"
+    ],
+    "run": [
+      "self"
+    ],
+    "_observe_engine_load_stats": [
+      "self"
+    ],
+    "_prefill_scaling_decision": [
+      "self",
+      "num_workers"
+    ],
+    "_decode_scaling_decision": [
+      "self",
+      "num_workers"
+    ],
+    "_load_loop": [
+      "self"
+    ]
+  },
+  "MISSING_PROFILING_DATA_ERROR_MESSAGE": [],
+  "PrefillInterpolator": {
+    "__init__": [
+      "self",
+      "profile_results_dir",
+      "raw_data"
+    ],
+    "interpolate_ttft": [
+      "self",
+      "isl"
+    ],
+    "interpolate_thpt_per_gpu": [
+      "self",
+      "isl"
+    ]
+  },
+  "DecodeInterpolator": {
+    "__init__": [
+      "self",
+      "profile_results_dir",
+      "resolution",
+      "raw_data"
+    ],
+    "compute_idx": [
+      "self",
+      "concurrency",
+      "context_length"
+    ],
+    "interpolate_itl": [
+      "self",
+      "concurrency",
+      "context_length"
+    ],
+    "interpolate_thpt_per_gpu": [
+      "self",
+      "concurrency",
+      "context_length"
+    ],
+    "find_best_throughput_per_gpu": [
+      "self",
+      "itl",
+      "context_length"
+    ]
+  },
+  "PlannerPrometheusMetrics": {
+    "__init__": [
+      "self",
+      "prefix"
+    ]
+  },
+  "PlannerSharedState": {},
+  "_apply_global_gpu_budget": [
+    "next_num_p",
+    "next_num_d",
+    "config"
+  ],
+  "_apply_component_gpu_budget": [
+    "desired_replicas",
+    "engine_num_gpu",
+    "config"
+  ],
+  "_initialize_gpu_counts": [
+    "config",
+    "connector",
+    "require_prefill",
+    "require_decode"
+  ],
+  "BasePlanner": {
+    "__init__": [
+      "self",
+      "runtime",
+      "config",
+      "dryrun",
+      "shared_state",
+      "prometheus_metrics",
+      "prometheus_traffic_client",
+      "prometheus_engine_client",
+      "connector",
+      "start_prometheus_server",
+      "component_type"
+    ],
+    "last_metrics": [
+      "self",
+      "value"
+    ],
+    "_async_init": [
+      "self"
+    ],
+    "_get_model_name": [
+      "self",
+      "require_prefill",
+      "require_decode"
+    ],
+    "_get_or_create_client": [
+      "self",
+      "component_name",
+      "endpoint_name"
+    ],
+    "get_workers_info": [
+      "self",
+      "require_prefill",
+      "require_decode"
+    ],
+    "observe_traffic_stats": [
+      "self",
+      "require_prefill",
+      "require_decode"
+    ],
+    "update_predictors_from_metrics": [
+      "self",
+      "metrics"
+    ],
+    "predict_load": [
+      "self"
+    ],
+    "dryrun_observe_traffic_stats": [
+      "self",
+      "num_req",
+      "isl_avg",
+      "osl_avg"
+    ],
+    "plan_adjustment": [
+      "self"
+    ],
+    "update_predicted_replicas_metric": [
+      "self",
+      "desired_replicas"
+    ],
+    "_compute_replica_requirements": [
+      "self",
+      "next_num_req",
+      "next_isl",
+      "next_osl"
+    ],
+    "_update_correction_factor": [
+      "self"
+    ],
+    "_component_name": [
+      "self"
+    ],
+    "_engine_num_gpu": [
+      "self"
+    ],
+    "apply_component_budget": [
+      "self",
+      "desired_replicas"
+    ],
+    "_apply_scaling": [
+      "self",
+      "desired_replicas"
+    ],
+    "_apply_scaling_blocking": [
+      "self",
+      "desired_replicas"
+    ],
+    "observe_engine_load_stats": [
+      "self"
+    ],
+    "load_plan_adjustment": [
+      "self"
+    ],
+    "_throughput_loop": [
+      "self",
+      "require_prefill",
+      "require_decode"
+    ],
+    "_load_loop": [
+      "self",
+      "require_prefill",
+      "require_decode"
+    ],
+    "run": [
+      "self"
+    ]
+  },
+  "PrefillPlanner": {
+    "component_type": [],
+    "load_plan_adjustment": [
+      "self"
+    ],
+    "_update_correction_factor": [
+      "self"
+    ],
+    "_compute_replica_requirements": [
+      "self",
+      "next_num_req",
+      "next_isl",
+      "next_osl"
+    ],
+    "update_predicted_replicas_metric": [
+      "self",
+      "desired_replicas"
+    ]
+  },
+  "extract_metrics_from_mooncake": [
+    "dataset",
+    "throughput_adjustment_interval"
+  ],
+  "create_dryrun_plot": [
+    "time",
+    "rr",
+    "est_rr",
+    "isl",
+    "est_isl",
+    "osl",
+    "est_osl",
+    "num_p",
+    "p_thpt",
+    "safe_p_thpt",
+    "num_d",
+    "d_thpt",
+    "safe_d_thpt",
+    "output_path",
+    "warmup_time",
+    "warmup_rr",
+    "warmup_isl",
+    "warmup_osl"
+  ],
+  "DecodePlanner": {
+    "component_type": [],
+    "load_plan_adjustment": [
+      "self"
+    ],
+    "_update_correction_factor": [
+      "self"
+    ],
+    "_compute_replica_requirements": [
+      "self",
+      "next_num_req",
+      "next_isl",
+      "next_osl"
+    ],
+    "update_predicted_replicas_metric": [
+      "self",
+      "desired_replicas"
+    ]
+  },
+  "LoadBasedRegressionModel": {
+    "__init__": [
+      "self",
+      "window_size",
+      "min_observations"
+    ],
+    "add_observation": [
+      "self",
+      "x",
+      "y"
+    ],
+    "fit": [
+      "self"
+    ],
+    "predict_x_from_sla": [
+      "self",
+      "target_y"
+    ],
+    "_fallback_x_from_observations": [
+      "self",
+      "target_y"
+    ],
+    "has_sufficient_data": [
+      "self"
+    ],
+    "num_observations": [
+      "self"
+    ],
+    "slope": [
+      "self"
+    ],
+    "intercept": [
+      "self"
+    ]
+  },
+  "BasePredictor": {
+    "__init__": [
+      "self",
+      "minimum_data_points"
+    ],
+    "reset_idle_skip": [
+      "self"
+    ],
+    "add_data_point": [
+      "self",
+      "value"
+    ],
+    "get_last_value": [
+      "self"
+    ],
+    "predict_next": [
+      "self"
+    ]
+  },
+  "ConstantPredictor": {
+    "__init__": [
+      "self",
+      "_config"
+    ],
+    "predict_next": [
+      "self"
+    ]
+  },
+  "ARIMAPredictor": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "get_last_value": [
+      "self"
+    ],
+    "add_data_point": [
+      "self",
+      "value"
+    ],
+    "predict_next": [
+      "self"
+    ]
+  },
+  "ProphetPredictor": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "add_data_point": [
+      "self",
+      "value"
+    ],
+    "get_last_value": [
+      "self"
+    ],
+    "predict_next": [
+      "self"
+    ]
+  },
+  "KalmanPredictor": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "add_data_point": [
+      "self",
+      "value"
+    ],
+    "predict_next": [
+      "self"
+    ]
+  },
+  "LOAD_PREDICTORS": [],
+  "DisaggPlanner": {
+    "__init__": [
+      "self",
+      "runtime",
+      "config"
+    ],
+    "_async_init": [
+      "self"
+    ],
+    "run": [
+      "self"
+    ],
+    "_throughput_loop": [
+      "self"
+    ],
+    "_load_loop": [
+      "self"
+    ]
+  },
+  "PlannerError": {},
+  "DynamoGraphDeploymentNotFoundError": {
+    "__init__": [
+      "self",
+      "deployment_name",
+      "namespace"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ComponentError": {},
+  "ModelNameNotFoundError": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "DeploymentModelNameMismatchError": {
+    "__init__": [
+      "self",
+      "prefill_model_name",
+      "decode_model_name"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "UserProvidedModelNameMismatchError": {
+    "__init__": [
+      "self",
+      "model_name",
+      "user_provided_model_name"
+    ]
+  },
+  "BackendFrameworkNotFoundError": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "BackendFrameworkInvalidError": {
+    "__init__": [
+      "self",
+      "backend_framework"
+    ]
+  },
+  "SubComponentNotFoundError": {
+    "__init__": [
+      "self",
+      "sub_component_type"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "DuplicateSubComponentError": {
+    "__init__": [
+      "self",
+      "sub_component_type",
+      "service_names"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "DeploymentValidationError": {
+    "__init__": [
+      "self",
+      "errors"
+    ]
+  },
+  "EmptyTargetReplicasError": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "run_sla_planner_dryrun": [
+    "config",
+    "dataset",
+    "start_num_p",
+    "start_num_d",
+    "output_plot"
+  ],
+  "NpzFile": {
+    "__init__": [
+      "self",
+      "npz_file_path"
+    ],
+    "show_npz_data": [
+      "self"
+    ],
+    "save_npz_file": [
+      "self",
+      "data",
+      "output_path",
+      "compressed"
+    ]
+  },
+  "MergedNpz": {
+    "__init__": [
+      "self",
+      "npz_file_path"
+    ],
+    "merge": [
+      "self",
+      "other_npz_file_path"
+    ]
+  },
+  "PRE_SWEPT_CONFIG_KEYS": [],
+  "PrefillNpz": {
+    "COLUMNS": [],
+    "__init__": [
+      "self",
+      "npz_file_path",
+      "configs"
+    ]
+  },
+  "DecodeNpz": {
+    "COLUMNS": [],
+    "__init__": [
+      "self",
+      "npz_file_path",
+      "configs"
+    ]
+  },
+  "merge_raw_data": [
+    "raw_data_npz_path",
+    "configs",
+    "mode"
+  ],
+  "PreSweptResultsHelper": {
+    "__init__": [
+      "self",
+      "gpu_type",
+      "framework",
+      "model_name"
+    ],
+    "get_data": [
+      "self",
+      "mode"
+    ],
+    "select_data": [
+      "self",
+      "mode",
+      "configs"
+    ]
+  },
+  "Metrics": {
+    "is_valid": [
+      "self"
+    ]
+  },
+  "CachedLoadMetrics": {},
+  "FrontendMetric": {},
+  "FrontendMetricContainer": {},
+  "PrometheusAPIClient": {
+    "__init__": [
+      "self",
+      "url",
+      "dynamo_namespace",
+      "metrics_source"
+    ],
+    "_get_average_metric": [
+      "self",
+      "full_metric_name",
+      "interval",
+      "operation_name",
+      "model_name"
+    ],
+    "get_avg_inter_token_latency": [
+      "self",
+      "interval",
+      "model_name"
+    ],
+    "get_avg_time_to_first_token": [
+      "self",
+      "interval",
+      "model_name"
+    ],
+    "get_avg_request_duration": [
+      "self",
+      "interval",
+      "model_name"
+    ],
+    "get_avg_request_count": [
+      "self",
+      "interval",
+      "model_name"
+    ],
+    "get_avg_input_sequence_tokens": [
+      "self",
+      "interval",
+      "model_name"
+    ],
+    "get_avg_output_sequence_tokens": [
+      "self",
+      "interval",
+      "model_name"
+    ],
+    "warn_if_router_not_scraped": [
+      "self"
+    ]
+  },
+  "parse_frontend_metric_containers": [
+    "result"
+  ],
+  "_WORKER_METRIC_NAMES": [],
+  "DirectRouterMetricsClient": {
+    "__init__": [
+      "self",
+      "router_metrics_url",
+      "dynamo_namespace"
+    ],
+    "_parse_prometheus_text": [
+      "self",
+      "text"
+    ],
+    "_fetch_and_parse": [
+      "self"
+    ],
+    "run_sampling_loop": [
+      "self",
+      "num_samples",
+      "interval"
+    ],
+    "get_recent_and_averaged_metrics": [
+      "self",
+      "worker_type"
+    ]
+  },
+  "PlannerPreDeploymentSweepMode": {
+    "None_": [],
+    "Rapid": [],
+    "Thorough": []
+  },
+  "PlannerConfig": {
+    "_validate_config": [
+      "self"
+    ],
+    "from_config_arg": [
+      "cls",
+      "config_arg"
+    ],
+    "_load_from_file": [
+      "cls",
+      "path"
+    ],
+    "scaling_enabled": [
+      "self"
+    ]
+  },
+  "DynamoRouterConfig": {
+    "validate": [
+      "self"
+    ]
+  },
+  "DynamoRouterArgGroup": {
+    "name": [],
+    "add_arguments": [
+      "self",
+      "parser"
+    ]
+  },
+  "build_kv_router_config": [
+    "router_config"
+  ],
+  "StandaloneRouterHandler": {
+    "__init__": [
+      "self",
+      "runtime",
+      "worker_endpoint_path",
+      "block_size",
+      "kv_router_config"
+    ],
+    "initialize": [
+      "self"
+    ],
+    "generate": [
+      "self",
+      "request"
+    ],
+    "best_worker_id": [
+      "self",
+      "token_ids",
+      "router_config_override"
+    ]
+  },
+  "_get_bos_token_id_from_tokenizer": [
+    "tokenizer"
+  ],
+  "TrtllmHealthCheckPayload": {
+    "__init__": [
+      "self",
+      "tokenizer"
+    ]
+  },
+  "EncodeHelper": {
+    "_image_loader_lock": [],
+    "_get_image_loader": [
+      "cls"
+    ],
+    "serialize_tensor_dict": [
+      "tensor_dict"
+    ],
+    "deserialize_tensor_dict": [
+      "serialized_dict"
+    ],
+    "get_torch_dtype_from_string": [
+      "dtype_str"
+    ],
+    "read_embeddings_from_encode_response": [
+      "encode_response",
+      "connector"
+    ],
+    "_process_embedding_path_flow": [
+      "embedding_paths",
+      "multimodal_processor",
+      "connector"
+    ],
+    "_process_full_epd_flow": [
+      "prompt_token_ids_from_request",
+      "image_urls",
+      "tokenizer",
+      "model_dir",
+      "model_type",
+      "engine"
+    ],
+    "process_encode_request": [
+      "request",
+      "multimodal_processor",
+      "connector",
+      "tokenizer",
+      "model_dir",
+      "model_type",
+      "engine"
+    ]
+  },
+  "DEFAULT_MODEL": [],
+  "DynamoTrtllmArgGroup": {
+    "add_arguments": [
+      "self",
+      "parser"
+    ]
+  },
+  "DynamoTrtllmConfig": {
+    "validate": [
+      "self"
+    ]
+  },
+  "_UNSUPPORTED_STANDALONE_ENCODER_ARCHS": [],
+  "Backend": {
+    "PYTORCH": [],
+    "AUTODEPLOY": []
+  },
+  "TensorRTLLMEngine": {
+    "__init__": [
+      "self",
+      "engine_args",
+      "disaggregation_mode"
+    ],
+    "encoder_available": [
+      "self"
+    ],
+    "initialize": [
+      "self"
+    ],
+    "cleanup": [
+      "self"
+    ],
+    "llm": [
+      "self"
+    ],
+    "get_attention_dp_size": [
+      "self"
+    ],
+    "_prune_engine_args_for_autodeploy": [
+      "engine_args"
+    ],
+    "_warn_about_unsupported_field": [
+      "field_name"
+    ],
+    "_is_unsupported_encoder_arch": [
+      "model_path"
+    ]
+  },
+  "get_llm_engine": [
+    "engine_args",
+    "disaggregation_mode",
+    "component_gauges"
+  ],
+  "DEFAULT_ENDPOINT_COMPONENT": [],
+  "DEFAULT_PREFILL_COMPONENT": [],
+  "DEFAULT_ENCODE_COMPONENT": [],
+  "DEFAULT_DIFFUSION_COMPONENT": [],
+  "DEFAULT_ENDPOINT_NAME": [],
+  "VALID_TRTLLM_CONNECTORS": [],
+  "Config": {
+    "validate": [
+      "self"
+    ],
+    "has_connector": [
+      "self",
+      "connector_name"
+    ]
+  },
+  "_preprocess_for_encode_config": [
+    "config"
+  ],
+  "_default_endpoint": [
+    "namespace",
+    "modality",
+    "disaggregation_mode"
+  ],
+  "TokenizerProtocol": {
+    "decode": [
+      "self",
+      "token_ids"
+    ]
+  },
+  "MultimodalRequestProcessor": {
+    "__init__": [
+      "self",
+      "model_type",
+      "model_dir",
+      "max_file_size_mb",
+      "tokenizer",
+      "allowed_local_media_path"
+    ],
+    "is_url": [
+      "self",
+      "path"
+    ],
+    "load_tensor_from_path_or_url": [
+      "self",
+      "path"
+    ],
+    "extract_prompt_and_media": [
+      "self",
+      "messages"
+    ],
+    "process_openai_request": [
+      "self",
+      "request",
+      "embeddings",
+      "ep_disaggregated_params"
+    ],
+    "create_response_chunk": [
+      "self",
+      "output",
+      "num_output_tokens_so_far",
+      "request_id",
+      "model_name"
+    ]
+  },
+  "Modality": {
+    "TEXT": [],
+    "MULTIMODAL": [],
+    "VIDEO_DIFFUSION": [],
+    "is_diffusion": [
+      "cls",
+      "modality"
+    ],
+    "is_llm": [
+      "cls",
+      "modality"
+    ]
+  },
+  "DYNAMO_COMPONENT_REGISTRY": [],
+  "_STATS_TIMEOUT_SEC": [],
+  "_KV_EVENTS_TIMEOUT_SEC": [],
+  "_PUBLISH_MIN_SLEEP_SEC": [],
+  "_PUBLISH_MAX_SLEEP_SEC": [],
+  "_PUBLISH_BACKOFF_FACTOR": [],
+  "_KV_EVENTS_MIN_SLEEP_SEC": [],
+  "_KV_EVENTS_MAX_SLEEP_SEC": [],
+  "_KV_EVENTS_BACKOFF_FACTOR": [],
+  "_to_signed_i64": [
+    "value"
+  ],
+  "ZmqKvEventPublisher": {
+    "__init__": [
+      "self",
+      "zmq_endpoint",
+      "kv_block_size",
+      "topic"
+    ],
+    "publish_stored": [
+      "self",
+      "token_ids",
+      "num_block_tokens",
+      "block_hashes",
+      "parent_hash",
+      "block_mm_infos",
+      "attention_dp_rank",
+      "lora_name"
+    ],
+    "publish_removed": [
+      "self",
+      "block_hashes",
+      "attention_dp_rank"
+    ],
+    "publish_all_cleared": [
+      "self"
+    ],
+    "_publish_event": [
+      "self",
+      "event",
+      "attention_dp_rank"
+    ],
+    "shutdown": [
+      "self"
+    ]
+  },
+  "ManagedThread": {
+    "__init__": [
+      "self",
+      "task",
+      "error_queue",
+      "name",
+      "loop"
+    ],
+    "set_loop": [
+      "self",
+      "loop"
+    ],
+    "run": [
+      "self"
+    ],
+    "stop": [
+      "self"
+    ]
+  },
+  "Publisher": {
+    "__init__": [
+      "self",
+      "endpoint",
+      "engine",
+      "worker_id",
+      "kv_block_size",
+      "metrics_labels",
+      "component_gauges",
+      "zmq_endpoint",
+      "enable_local_indexer",
+      "metrics_collector"
+    ],
+    "_create_metrics_publisher_endpoint": [
+      "self"
+    ],
+    "initialize": [
+      "self"
+    ],
+    "_init_publish_metrics_thread": [
+      "self"
+    ],
+    "_init_publish_kv_cache_events_thread": [
+      "self"
+    ],
+    "_polling_loop": [
+      "self",
+      "fetch_fn",
+      "handler_fn",
+      "min_sleep",
+      "max_sleep",
+      "backoff_factor"
+    ],
+    "_publish_stats_task": [
+      "self"
+    ],
+    "_publish_kv_cache_events_task": [
+      "self"
+    ],
+    "_handle_kv_event": [
+      "self",
+      "event"
+    ],
+    "start": [
+      "self"
+    ],
+    "check_error_queue": [
+      "self"
+    ],
+    "cleanup": [
+      "self"
+    ],
+    "update_max_window_size": [
+      "self",
+      "event"
+    ],
+    "should_drop_event": [
+      "self",
+      "event"
+    ]
+  },
+  "get_publisher": [
+    "endpoint",
+    "engine",
+    "worker_id",
+    "kv_block_size",
+    "metrics_labels",
+    "component_gauges",
+    "zmq_endpoint",
+    "enable_local_indexer",
+    "metrics_collector"
+  ],
+  "TrtllmDynamoLogitsAdapter": {
+    "__init__": [
+      "self",
+      "processor"
+    ],
+    "__call__": [
+      "self",
+      "req_ids",
+      "logits",
+      "ids",
+      "stream_ptr",
+      "client_id"
+    ]
+  },
+  "create_trtllm_adapters": [
+    "processors"
+  ],
+  "TestModality": {
+    "test_modality_values_exist": [
+      "self"
+    ],
+    "test_is_diffusion_true_for_video_diffusion": [
+      "self"
+    ],
+    "test_is_diffusion_false_for_text": [
+      "self"
+    ],
+    "test_is_diffusion_false_for_multimodal": [
+      "self"
+    ],
+    "test_is_llm_true_for_text": [
+      "self"
+    ],
+    "test_is_llm_true_for_multimodal": [
+      "self"
+    ],
+    "test_is_llm_false_for_video_diffusion": [
+      "self"
+    ]
+  },
+  "TestDiffusionConfig": {
+    "test_default_values": [
+      "self"
+    ],
+    "test_custom_values": [
+      "self"
+    ],
+    "test_custom_media_storage": [
+      "self"
+    ],
+    "test_str_representation": [
+      "self"
+    ]
+  },
+  "MockDiffusionConfig": {},
+  "MockVideoRequest": {},
+  "TestVideHandlerParseSize": {
+    "setup_method": [
+      "self"
+    ],
+    "test_parse_size_valid": [
+      "self"
+    ],
+    "test_parse_size_different_dimensions": [
+      "self"
+    ],
+    "test_parse_size_none": [
+      "self"
+    ],
+    "test_parse_size_empty_string": [
+      "self"
+    ],
+    "test_parse_size_invalid_format": [
+      "self"
+    ],
+    "test_parse_size_exceeds_max_width": [
+      "self"
+    ],
+    "test_parse_size_exceeds_max_height": [
+      "self"
+    ],
+    "test_parse_size_exceeds_both_dimensions": [
+      "self"
+    ],
+    "test_parse_size_at_max_boundary": [
+      "self"
+    ]
+  },
+  "TestVideoHandlerComputeNumFrames": {
+    "setup_method": [
+      "self"
+    ],
+    "test_compute_num_frames_explicit": [
+      "self"
+    ],
+    "test_compute_num_frames_from_seconds_fps": [
+      "self"
+    ],
+    "test_compute_num_frames_only_seconds": [
+      "self"
+    ],
+    "test_compute_num_frames_only_fps": [
+      "self"
+    ],
+    "test_compute_num_frames_defaults": [
+      "self"
+    ]
+  },
+  "TestNvCreateVideoRequest": {
+    "test_required_fields": [
+      "self"
+    ],
+    "test_required_fields_missing_prompt": [
+      "self"
+    ],
+    "test_required_fields_missing_model": [
+      "self"
+    ],
+    "test_optional_fields_default_none": [
+      "self"
+    ],
+    "test_full_request_valid": [
+      "self"
+    ]
+  },
+  "TestVideoData": {
+    "test_url_only": [
+      "self"
+    ],
+    "test_b64_only": [
+      "self"
+    ],
+    "test_both_fields": [
+      "self"
+    ],
+    "test_empty_defaults": [
+      "self"
+    ]
+  },
+  "TestNvVideosResponse": {
+    "test_default_values": [
+      "self"
+    ],
+    "test_error_response": [
+      "self"
+    ],
+    "test_with_video_data": [
+      "self"
+    ],
+    "test_model_dump": [
+      "self"
+    ]
+  },
+  "ConcurrencyTracker": {
+    "__init__": [
+      "self",
+      "sleep_seconds"
+    ],
+    "generate": [
+      "self"
+    ]
+  },
+  "TestVideoHandlerConcurrency": {
+    "_make_handler": [
+      "self"
+    ],
+    "_make_request": [
+      "self"
+    ],
+    "_drain_generator": [
+      "self",
+      "handler",
+      "request"
+    ],
+    "test_concurrent_requests_are_serialized": [
+      "self"
+    ]
+  },
+  "TestVideoHandlerResponseFormats": {
+    "_make_handler": [
+      "self"
+    ],
+    "test_url_response_format": [
+      "self"
+    ],
+    "test_b64_response_format": [
+      "self"
+    ],
+    "test_default_response_format_is_url": [
+      "self"
+    ],
+    "test_error_response_on_failure": [
+      "self"
+    ]
+  },
+  "MockSamplingParams": {
+    "__post_init__": [
+      "self"
+    ]
+  },
+  "TestOverrideSamplingParams": {
+    "test_falsy_values_are_applied": [
+      "self"
+    ],
+    "test_none_values_are_skipped": [
+      "self"
+    ],
+    "test_truthy_values_are_applied": [
+      "self"
+    ],
+    "test_unknown_attributes_raise_error": [
+      "self"
+    ],
+    "test_mixed_values": [
+      "self"
+    ],
+    "test_unsupported_fields_raise": [
+      "self"
+    ],
+    "test_post_init_called_when_overriding": [
+      "self"
+    ]
+  },
+  "TestGuidedDecodingFromToolChoice": {
+    "GUIDED_DECODING_DICT": [],
+    "test_guided_decoding_dict_is_converted": [
+      "self"
+    ],
+    "test_choice_converted_to_regex": [
+      "self"
+    ],
+    "test_choice_with_special_chars_escaped": [
+      "self"
+    ],
+    "test_choice_not_used_when_regex_present": [
+      "self"
+    ],
+    "test_empty_choice_ignored": [
+      "self"
+    ]
+  },
+  "_ConcreteHandler": {
+    "generate": [
+      "self"
+    ]
+  },
+  "TestHandleCancellationAbortToggle": {
+    "_make_handler": [
+      "self",
+      "disable_request_abort"
+    ],
+    "test_abort_called_by_default": [
+      "self"
+    ],
+    "test_abort_not_called_when_disabled": [
+      "self"
+    ]
+  },
+  "pytest_ignore_collect": [
+    "collection_path",
+    "config"
+  ],
+  "make_cli_args_fixture": [
+    "module_name"
+  ],
+  "create_mock_request_handler_config": [
+    "disaggregation_mode",
+    "encoder_cache_capacity_gb"
+  ],
+  "REPO_ROOT": [],
+  "TEST_DIR": [],
+  "JINJA_TEMPLATE_PATH": [],
+  "mock_trtllm_cli": [],
+  "test_custom_jinja_template_invalid_path": [
+    "mock_trtllm_cli"
+  ],
+  "test_custom_jinja_template_valid_path": [
+    "mock_trtllm_cli"
+  ],
+  "test_custom_jinja_template_env_var_expansion": [
+    "monkeypatch",
+    "mock_trtllm_cli"
+  ],
+  "test_parse_args_returns_config_with_expected_attrs": [
+    "monkeypatch"
+  ],
+  "test_config_use_kv_events_derived_from_publish_events": [
+    "monkeypatch"
+  ],
+  "test_config_has_connector": [
+    "monkeypatch"
+  ],
+  "test_config_multiple_connectors_fails": [
+    "monkeypatch"
+  ],
+  "test_deep_update_nested_merge": [],
+  "test_deep_update_overwrites_scalar_with_value": [],
+  "test_deep_update_empty_source_unchanged": [],
+  "test_deep_update_adds_new_keys": [],
+  "MultimodalProcessorInstantiated": {},
+  "test_init_llm_worker_creates_multimodal_processor": [],
+  "TestGetPrometheusExpfmt": {
+    "TRTLLM_SAMPLE_METRICS": [],
+    "test_trtllm_use_case": [
+      "self"
+    ],
+    "test_no_filtering_all_frameworks": [
+      "self"
+    ],
+    "test_empty_result_handling": [
+      "self"
+    ],
+    "test_prefix_already_exists": [
+      "self"
+    ],
+    "test_error_handling": [
+      "self"
+    ]
+  },
+  "test_tensorrt_llm_metrics_collector_import": [],
+  "test_prometheus_registry_import": [],
+  "test_prometheus_metrics_integration": [],
+  "_PYTORCH_LLM_CLS_NAME": [],
+  "_AUTODEPLOY_LLM_CLS_NAME": [],
+  "TestTensorRTLLMEngine": {
+    "test_raises_on_unsupported_backends": [
+      "self",
+      "backend"
+    ],
+    "test_picks_expected_llm_cls": [
+      "self",
+      "backend",
+      "expected_cls_name"
+    ],
+    "test_unsupported_args_get_pruned_for_autodeploy": [
+      "self",
+      "engine_args",
+      "is_forbidden"
+    ]
+  },
+  "test_get_llm_engine_forwards_backend": [
+    "backend"
+  ],
+  "mock_config": [],
+  "TestRequestHandlerFactory": {
+    "test_invalid_mode_raises": [
+      "self",
+      "mock_config"
+    ],
+    "test_creates_aggregated_handler": [
+      "self",
+      "mock_config"
+    ],
+    "test_creates_prefill_handler": [
+      "self",
+      "mock_config"
+    ],
+    "test_prefill_handler_with_encoder_cache": [
+      "self"
+    ],
+    "test_prefill_handler_without_encoder_cache": [
+      "self"
+    ]
+  },
+  "FETCH_PATCH_PATH": [],
+  "TestAggregatedHandlerGenerate": {
+    "test_embeddings_passed_to_generate_locally": [
+      "self"
+    ],
+    "test_disaggregated_params_passed_to_generate_locally": [
+      "self"
+    ]
+  },
+  "create_mock_encoder_cache": [],
+  "create_mock_context": [
+    "request_id"
+  ],
+  "setup_multimodal_config": [
+    "config",
+    "image_urls"
+  ],
+  "run_generate_with_mock_fetch": [
+    "handler",
+    "fetch_patch_path",
+    "mock_return_value"
+  ],
+  "TestPrefillHandlerInit": {
+    "test_init_with_encoder_cache": [
+      "self"
+    ]
+  },
+  "TestPrefillHandlerGenerate": {
+    "test_embeddings_passed_to_generate_locally": [
+      "self"
+    ],
+    "test_disaggregated_params_passed_to_generate_locally": [
+      "self"
+    ]
+  },
+  "create_mock_encode_client": [
+    "embeddings",
+    "processed_prompt",
+    "prompt_token_ids"
+  ],
+  "encoder_cache": [],
+  "TestFetchEmbeddingsFromEncoder": {
+    "test_partial_cache_no_metadata_update": [
+      "self",
+      "encoder_cache"
+    ],
+    "test_all_cached_no_request_sent": [
+      "self",
+      "encoder_cache"
+    ],
+    "test_no_cache_returns_disaggregated_params": [
+      "self"
+    ],
+    "test_empty_urls_raises_error": [
+      "self",
+      "encoder_cache"
+    ]
+  },
+  "_create_tensor_on_gpu": [],
+  "producer_process": [
+    "create_tensor",
+    "handle_queue",
+    "done_event"
+  ],
+  "consumer_process": [
+    "handle_queue",
+    "result_queue",
+    "done_event"
+  ],
+  "TestExtractEmbeddingsFromHandles": {
+    "test_extracts_all_embeddings": [
+      "self"
+    ]
+  },
+  "init_video_diffusion_worker": [
+    "runtime",
+    "config",
+    "shutdown_event",
+    "shutdown_endpoints"
+  ],
+  "init_worker": [
+    "runtime",
+    "config",
+    "shutdown_event",
+    "shutdown_endpoints"
+  ],
+  "DEFAULT_KV_EVENT_BUFFER_MAX_SIZE": [],
+  "get_engine_runtime_config": [
+    "engine",
+    "config"
+  ],
+  "build_kv_connector_config": [
+    "config"
+  ],
+  "init_llm_worker": [
+    "runtime",
+    "config",
+    "shutdown_event",
+    "shutdown_endpoints"
+  ],
+  "DiffusionModality": {
+    "VIDEO": [],
+    "IMAGE": []
+  },
+  "_DEFAULT_MODALITY": [],
+  "DiffusionEngine": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "initialize": [
+      "self"
+    ],
+    "_build_diffusion_args": [
+      "self"
+    ],
+    "generate": [
+      "self",
+      "prompt",
+      "negative_prompt",
+      "height",
+      "width",
+      "num_frames",
+      "num_inference_steps",
+      "guidance_scale",
+      "seed"
+    ],
+    "cleanup": [
+      "self"
+    ],
+    "is_initialized": [
+      "self"
+    ],
+    "supported_modalities": [
+      "self"
+    ],
+    "device": [
+      "self"
+    ]
+  },
+  "DisaggregatedParamsCodec": {
+    "serialize_first_gen_log_probs": [
+      "params_dict"
+    ],
+    "deserialize_first_gen_log_probs": [
+      "params_dict"
+    ],
+    "decode": [
+      "disaggregated_params"
+    ],
+    "encode": [
+      "disaggregated_params"
+    ]
+  },
+  "deep_update": [
+    "target",
+    "source"
+  ],
+  "BaseGenerativeHandler": {
+    "generate": [
+      "self",
+      "request",
+      "context"
+    ]
+  },
+  "AggregatedHandler": {
+    "__init__": [
+      "self",
+      "config",
+      "encoder_cache"
+    ],
+    "generate": [
+      "self",
+      "request",
+      "context"
+    ]
+  },
+  "RequestHandlerFactory": {
+    "__init__": [
+      "self"
+    ],
+    "get_request_handler": [
+      "self",
+      "config"
+    ]
+  },
+  "get_request_handler": [
+    "config"
+  ],
+  "EncodeHandler": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "generate": [
+      "self",
+      "request",
+      "context"
+    ]
+  },
+  "PrefillHandler": {
+    "__init__": [
+      "self",
+      "config",
+      "encoder_cache"
+    ],
+    "remote_encode_with_nixl": [
+      "self",
+      "request"
+    ],
+    "generate": [
+      "self",
+      "request",
+      "context"
+    ]
+  },
+  "DecodeHandler": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "generate": [
+      "self",
+      "request",
+      "context"
+    ]
+  },
+  "RequestHandlerConfig": {},
+  "HandlerBase": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "check_error": [
+      "self",
+      "result"
+    ],
+    "_extract_logprobs": [
+      "output",
+      "num_output_tokens_so_far"
+    ],
+    "_handle_cancellation": [
+      "self",
+      "generation_result",
+      "context"
+    ],
+    "_cancellation_monitor": [
+      "self",
+      "generation_result",
+      "context"
+    ],
+    "_decode_disaggregated_params_from_prefill": [
+      "self",
+      "prefill_result"
+    ],
+    "_encode_and_pack_disaggregated_params": [
+      "self",
+      "output",
+      "disaggregated_params",
+      "request",
+      "res",
+      "processed_input"
+    ],
+    "_setup_disaggregated_params_for_mode": [
+      "self",
+      "request",
+      "ep_disaggregated_params"
+    ],
+    "_prepare_input_for_generation": [
+      "self",
+      "request",
+      "embeddings",
+      "ep_disaggregated_params",
+      "epd_metadata"
+    ],
+    "_normalize_request_format": [
+      "self",
+      "request"
+    ],
+    "_initiate_shutdown": [
+      "self",
+      "error"
+    ],
+    "generate_locally": [
+      "self",
+      "request",
+      "context",
+      "embeddings",
+      "ep_disaggregated_params"
+    ],
+    "_override_sampling_params": [
+      "sampling_params",
+      "request"
+    ]
+  },
+  "VideoGenerationHandler": {
+    "__init__": [
+      "self",
+      "engine",
+      "config"
+    ],
+    "_parse_size": [
+      "self",
+      "size"
+    ],
+    "_validate_dimensions": [
+      "self",
+      "width",
+      "height"
+    ],
+    "_compute_num_frames": [
+      "self",
+      "req",
+      "nvext"
+    ],
+    "generate": [
+      "self",
+      "request",
+      "context"
+    ],
+    "cleanup": [
+      "self"
+    ]
+  },
+  "extract_embeddings_from_handles": [
+    "handles"
+  ],
+  "_extract_embeddings_sync": [
+    "handles"
+  ],
+  "MultimodalHasher": {
+    "hash_bytes": [
+      "data"
+    ]
+  },
+  "fetch_embeddings_from_encoder": [
+    "image_urls",
+    "request",
+    "encode_client",
+    "encoder_cache"
+  ],
+  "_remote_encode_full_epd": [
+    "request",
+    "encode_client",
+    "update_request_for_decode"
+  ],
+  "_fetch_embeddings_with_cache": [
+    "image_urls",
+    "request",
+    "cache",
+    "encode_fn"
+  ],
+  "_create_request_with_urls": [
+    "original_request",
+    "image_urls"
+  ],
+  "DEFAULT_VIDEO_MODEL_PATH": [],
+  "DiffusionConfig": {
+    "__str__": [
+      "self"
+    ]
+  },
+  "_benchmark_prefill_candidates": [
+    "prefill_candidates",
+    "ops",
+    "isl",
+    "osl",
+    "model",
+    "system",
+    "backend",
+    "deployment_clients",
+    "config_modifier"
+  ],
+  "_benchmark_decode_candidates": [
+    "decode_candidates",
+    "ops",
+    "isl",
+    "osl",
+    "model",
+    "system",
+    "backend",
+    "deployment_clients",
+    "config_modifier"
+  ],
+  "_pick_thorough_best_config": [
+    "prefill_df",
+    "decode_df",
+    "picking_mode",
+    "target_ttft",
+    "target_tpot",
+    "request_latency",
+    "total_gpus",
+    "dgdr"
+  ],
+  "run_thorough": [
+    "dgdr",
+    "ops",
+    "picking_mode",
+    "model",
+    "system",
+    "backend",
+    "total_gpus",
+    "isl",
+    "osl",
+    "target_ttft",
+    "target_tpot",
+    "request_latency",
+    "deployment_clients"
+  ],
+  "console_handler": [],
+  "formatter": [],
+  "_build_k8s_overrides": [
+    "dgdr",
+    "backend"
+  ],
+  "_generate_dgd_from_pick": [
+    "dgdr",
+    "best_config_df",
+    "chosen_exp",
+    "task_configs"
+  ],
+  "_DEFAULT_NAIVE_BACKEND": [],
+  "_run_naive_fallback": [
+    "dgdr",
+    "model",
+    "total_gpus",
+    "system",
+    "backend"
+  ],
+  "_run_autoscale_sim": [
+    "dgdr",
+    "model",
+    "system",
+    "backend",
+    "total_gpus",
+    "isl",
+    "osl",
+    "target_ttft",
+    "target_tpot",
+    "request_latency"
+  ],
+  "_run_default_sim": [
+    "dgdr",
+    "model",
+    "system",
+    "backend",
+    "total_gpus",
+    "isl",
+    "osl",
+    "target_ttft",
+    "target_tpot",
+    "request_latency",
+    "picking_mode"
+  ],
+  "run_rapid": [
+    "dgdr",
+    "picking_mode",
+    "aic_supported",
+    "model",
+    "system",
+    "backend",
+    "total_gpus",
+    "isl",
+    "osl",
+    "target_ttft",
+    "target_tpot",
+    "request_latency"
+  ],
+  "run_interpolation": [
+    "dgdr",
+    "ops",
+    "disagg_config",
+    "best_prefill_config",
+    "best_decode_config",
+    "model",
+    "system",
+    "backend",
+    "isl",
+    "osl",
+    "sweep_max_context_length",
+    "deployment_clients"
+  ],
+  "_CONCRETE_BACKENDS": [],
+  "_apply_tolerations_to_final_config": [
+    "final_config",
+    "tolerations"
+  ],
+  "_check_auto_backend_support": [
+    "model",
+    "system"
+  ],
+  "_extract_profiler_params": [
+    "dgdr"
+  ],
+  "_execute_strategy": [
+    "dgdr",
+    "ops",
+    "picking_mode",
+    "aic_supported",
+    "model",
+    "system",
+    "backend",
+    "total_gpus",
+    "isl",
+    "osl",
+    "target_ttft",
+    "target_tpot",
+    "request_latency",
+    "deployment_clients",
+    "search_strategy"
+  ],
+  "_write_final_output": [
+    "ops",
+    "final_config"
+  ],
+  "run_profile": [
+    "dgdr",
+    "ops"
+  ],
+  "_parse_dgdr_spec": [
+    "config_arg"
+  ],
+  "_parse_args": [],
+  "test_apply_dgd_overrides_strips_envelope": [],
+  "test_apply_dgd_overrides_no_metadata_in_overrides": [],
+  "test_apply_dgd_overrides_metadata_only_identity_keys_dropped_entirely": [],
+  "test_apply_dgd_overrides_extrapodspec_tolerations": [],
+  "test_apply_dgd_overrides_missing_service_skipped_with_warning": [
+    "caplog"
+  ],
+  "_TOLERATION": [],
+  "_BASE_DGD": [],
+  "_OVERRIDE_DGD": [],
+  "test_run_profile_applies_dgd_overrides_before_interpolation": [
+    "tmp_path",
+    "caplog"
+  ],
+  "test_autoscale_sim_resolves_auto_to_default": [],
+  "test_autoscale_sim_returns_resolved_backend": [],
+  "test_naive_fallback_resolves_auto_to_default": [],
+  "test_default_sim_returns_resolved_backend": [],
+  "test_default_naive_backend_is_concrete": [],
+  "_get_action_type": [
+    "action"
+  ],
+  "_build_action_kwargs": [
+    "action",
+    "action_type",
+    "prefix"
+  ],
+  "_get_planner_defaults": [],
+  "_format_arg_for_command_line": [
+    "arg_name",
+    "value",
+    "defaults"
+  ],
+  "_collect_args_from_namespace": [
+    "args",
+    "arg_names",
+    "prefix_to_strip",
+    "defaults"
+  ],
+  "add_planner_arguments_to_parser": [
+    "parser",
+    "prefix"
+  ],
+  "build_planner_args_from_namespace": [
+    "args",
+    "prefix"
+  ],
+  "ProfilerStatus": {
+    "RUNNING": [],
+    "SUCCESS": [],
+    "FAILED": []
+  },
+  "STATUS_FILE_NAME": [],
+  "write_profiler_status": [
+    "output_dir",
+    "status",
+    "message",
+    "error",
+    "outputs"
+  ],
+  "derive_backend_image": [
+    "profiler_image",
+    "backend"
+  ],
+  "DEFAULT_OUTPUT_DIR": [],
+  "DEFAULT_NAMESPACE": [],
+  "DEFAULT_DEPLOYMENT_TIMEOUT": [],
+  "DEFAULT_PREFILL_INTERPOLATION_GRANULARITY": [],
+  "DEFAULT_DECODE_INTERPOLATION_GRANULARITY": [],
+  "DEFAULT_DRY_RUN": [],
+  "ProfilerOperationalConfig": {},
+  "picked_config_from_row": [
+    "prefix",
+    "row"
+  ],
+  "resolve_model_path": [
+    "dgdr"
+  ],
+  "is_planner_enabled": [
+    "dgdr"
+  ],
+  "is_mocker_enabled": [
+    "dgdr"
+  ],
+  "needs_profile_data": [
+    "dgdr"
+  ],
+  "determine_picking_mode": [
+    "dgdr"
+  ],
+  "warn_and_update_sla": [
+    "best_latencies",
+    "target_ttft",
+    "target_tpot"
+  ],
+  "warn_gpu_shortage": [
+    "picking_mode",
+    "best_latencies",
+    "total_gpus"
+  ],
+  "get_profiling_job_tolerations": [
+    "dgdr"
+  ],
+  "inject_tolerations_into_dgd": [
+    "dgd_config",
+    "tolerations"
+  ],
+  "MODEL_GPU_MEM_FRAC_MAX": [],
+  "MOE_MODEL_MAX_NUM_GPU_FACTOR": [],
+  "auto_generate_search_space": [
+    "args"
+  ],
+  "MOCKER_DISAGG_CONFIG_PATH": [],
+  "PLANNER_CONFIG_PREFIX": [],
+  "PLANNER_PROFILE_DATA_PREFIX": [],
+  "PROFILE_DATA_MOUNT": [],
+  "PLANNER_CONFIG_MOUNT": [],
+  "_make_cm_name": [
+    "prefix"
+  ],
+  "assemble_final_config": [
+    "dgdr",
+    "ops",
+    "dgd_config",
+    "best_prefill_config",
+    "best_decode_config"
+  ],
+  "generate_mocker_config": [
+    "dgdr"
+  ],
+  "add_planner_to_config": [
+    "dgdr",
+    "config_dict",
+    "best_prefill_mapping",
+    "best_decode_mapping"
+  ],
+  "add_profile_data_to_config": [
+    "config_dict",
+    "output_dir",
+    "mocker_enabled"
+  ],
+  "_mocker_worker_names": [],
+  "_mount_volume_into_service": [
+    "service_dict",
+    "cm_name",
+    "mount_path"
+  ],
+  "_build_planner_config": [
+    "dgdr",
+    "best_prefill_mapping",
+    "best_decode_mapping"
+  ],
+  "_load_profiling_data": [
+    "output_dir"
+  ],
+  "make_parallel_label": [
+    "tp",
+    "pp",
+    "dp",
+    "moe_tp",
+    "moe_ep"
+  ],
+  "build_prefill_row": [],
+  "build_decode_row": [],
+  "build_disagg_df_from_static": [
+    "prefill_df",
+    "decode_df"
+  ],
+  "get_num_request_range": [
+    "attn_dp_size",
+    "engine_max_concurrency",
+    "granularity"
+  ],
+  "_profile_decode_helper": [
+    "work_dir",
+    "num_gpus",
+    "max_kv_tokens",
+    "max_context_length",
+    "interpolation_granularity",
+    "get_itl_and_thpt_per_gpu",
+    "attention_dp_size"
+  ],
+  "profile_decode": [
+    "work_dir",
+    "model_name",
+    "tokenizer",
+    "url",
+    "num_gpus",
+    "max_kv_tokens",
+    "max_context_length",
+    "interpolation_granularity",
+    "attention_dp_size"
+  ],
+  "profile_decode_aiconfigurator": [
+    "work_dir",
+    "num_gpus",
+    "max_kv_tokens",
+    "max_context_length",
+    "interpolation_granularity",
+    "ai_configurator_perf_estimator",
+    "attention_dp_size"
+  ],
+  "_try_import_aiconfigurator": [],
+  "AIConfiguratorPerfEstimator": {
+    "__init__": [
+      "self",
+      "hf_id",
+      "system",
+      "backend"
+    ],
+    "_get_model": [
+      "self"
+    ],
+    "estimate_perf": [
+      "self",
+      "isl",
+      "osl",
+      "batch_size",
+      "mode"
+    ],
+    "estimate_prefill_perf": [
+      "self",
+      "isl"
+    ],
+    "get_max_batch_size": [
+      "self",
+      "isl",
+      "osl"
+    ],
+    "get_max_kv_tokens": [
+      "self",
+      "isl",
+      "osl"
+    ]
+  },
+  "_profile_prefill_helper": [
+    "work_dir",
+    "num_gpus",
+    "max_context_length",
+    "interpolation_granularity",
+    "get_ttft",
+    "attention_dp_size"
+  ],
+  "profile_prefill": [
+    "work_dir",
+    "model_name",
+    "tokenizer",
+    "url",
+    "num_gpus",
+    "max_context_length",
+    "interpolation_granularity",
+    "attention_dp_size"
+  ],
+  "profile_prefill_aiconfigurator": [
+    "work_dir",
+    "num_gpus",
+    "max_context_length",
+    "interpolation_granularity",
+    "ai_configurator_perf_estimator"
+  ],
+  "Container": {
+    "model_config": []
+  },
+  "PodSpec": {
+    "model_config": []
+  },
+  "ServiceResources": {},
+  "Services": {
+    "model_config": []
+  },
+  "Spec": {
+    "model_config": []
+  },
+  "Metadata": {
+    "model_config": []
+  },
+  "MultinodeConfig": {},
+  "DgdPlannerServiceConfig": {
+    "model_config": []
+  },
+  "remove_valued_arguments": [
+    "args",
+    "key"
+  ],
+  "sanitize_cli_args": [
+    "args"
+  ],
+  "append_argument": [
+    "args",
+    "to_append"
+  ],
+  "find_arg_index": [
+    "args"
+  ],
+  "parse_override_engine_args": [
+    "args"
+  ],
+  "set_multinode_config": [
+    "worker_service",
+    "gpu_count",
+    "num_gpus_per_node"
+  ],
+  "get_service_name_by_type": [
+    "config",
+    "backend",
+    "sub_component_type"
+  ],
+  "get_worker_service_from_config": [
+    "config",
+    "backend",
+    "sub_component_type"
+  ],
+  "setup_worker_service_resources": [
+    "worker_service",
+    "gpu_count",
+    "num_gpus_per_node"
+  ],
+  "validate_and_get_worker_args": [
+    "worker_service",
+    "backend"
+  ],
+  "set_argument_value": [
+    "args",
+    "arg_name",
+    "value"
+  ],
+  "update_image": [
+    "config",
+    "image"
+  ],
+  "valid_dgdr_spec": [
+    "dgdr"
+  ],
+  "_validate_required_fields": [
+    "dgdr"
+  ],
+  "_validate_workload": [
+    "workload"
+  ],
+  "_validate_sla": [
+    "sla"
+  ],
+  "_validate_parallelization_sweeping_mode": [
+    "dgdr"
+  ],
+  "validate_dgdr_dynamo_features": [
+    "dgdr",
+    "aic_supported"
+  ],
+  "_get_common_aiperf_cmd": [
+    "artifact_dir",
+    "seed",
+    "model",
+    "tokenizer",
+    "base_url",
+    "warmup_request_count"
+  ],
+  "get_prefill_aiperf_cmd": [
+    "isl",
+    "artifact_dir",
+    "seed",
+    "model",
+    "tokenizer",
+    "osl",
+    "base_url",
+    "concurrency",
+    "request_count",
+    "warmup_request_count"
+  ],
+  "get_decode_aiperf_cmd": [
+    "isl",
+    "osl",
+    "artifact_dir",
+    "num_request",
+    "seed",
+    "model",
+    "tokenizer",
+    "base_url",
+    "warmup_request_count"
+  ],
+  "get_aiperf_result": [
+    "artifact_dir"
+  ],
+  "benchmark_prefill": [
+    "isl",
+    "aiperf_artifact_dir",
+    "model_name",
+    "tokenizer",
+    "base_url",
+    "concurrency",
+    "request_count",
+    "warmup_request_count"
+  ],
+  "get_prefill_ttft": [
+    "isl",
+    "aiperf_artifact_dir",
+    "model_name",
+    "tokenizer",
+    "base_url",
+    "attention_dp_size",
+    "attn_dp_num_req_ratio"
+  ],
+  "get_decode_itl_and_thpt_per_gpu": [
+    "isl",
+    "osl",
+    "num_request",
+    "aiperf_artifact_dir",
+    "model_name",
+    "tokenizer",
+    "base_url",
+    "num_gpus",
+    "attention_dp_size"
+  ],
+  "benchmark_decode": [
+    "isl",
+    "osl",
+    "num_request",
+    "aiperf_artifact_dir",
+    "model_name",
+    "tokenizer",
+    "base_url",
+    "warmup_request_count"
+  ],
+  "plot_prefill_performance": [
+    "prefill_data",
+    "target_ttft",
+    "output_dir"
+  ],
+  "plot_decode_performance": [
+    "decode_data",
+    "target_itl",
+    "output_dir"
+  ],
+  "plot_prefill_interpolation": [
+    "prefill_isl_np",
+    "prefill_ttft_np",
+    "prefill_thpt_per_gpu_np",
+    "work_dir"
+  ],
+  "plot_decode_3d_surface": [
+    "x_kv_usage",
+    "y_context_length",
+    "z_itl",
+    "z_thpt_per_gpu",
+    "work_dir"
+  ],
+  "plot_pd_joint_results": [
+    "isl",
+    "osl",
+    "prefill_data",
+    "decode_data",
+    "output_dir"
+  ],
+  "resolve_deploy_path": [
+    "rel_path"
+  ],
+  "DYNAMO_RUN_DEFAULT_PORT": [],
+  "DECODE_MAX_CONCURRENCY": [],
+  "PREFILL_MAX_NUM_TOKENS": [],
+  "AIPERF_WARMUP_REQUEST_PER_DP_RANK": [],
+  "AIPERF_PREFILL_BENCHMARK_OSL": [],
+  "AIPERF_PREFILL_ATTN_DP_NUM_REQ_RATIO": [],
+  "DEFAULT_GPU_COST_PER_HOUR": [],
+  "EngineType": {
+    "PREFILL": [],
+    "DECODE": []
+  },
+  "SearchStrategy": {
+    "RAPID": [],
+    "THOROUGH": []
+  },
+  "compute_pareto": [
+    "x",
+    "y"
+  ],
+  "DGDRPhase": {
+    "Pending": [],
+    "Profiling": [],
+    "Ready": [],
+    "Deploying": [],
+    "Deployed": [],
+    "Failed": []
+  },
+  "ProfilingPhase": {
+    "Initializing": [],
+    "SweepingPrefill": [],
+    "SweepingDecode": [],
+    "SelectingConfig": [],
+    "BuildingCurves": [],
+    "GeneratingDGD": [],
+    "Done": []
+  },
+  "GPUSKUType": {
+    "GB200SXM": [],
+    "H200SXM": [],
+    "H100SXM": [],
+    "B200SXM": [],
+    "A100SXM": [],
+    "L40S": []
+  },
+  "BackendType": {
+    "Auto": [],
+    "Sglang": [],
+    "Trtllm": [],
+    "Vllm": []
+  },
+  "WorkloadSpec": {},
+  "SLASpec": {
+    "_validate_sla_options": [
+      "self"
+    ]
+  },
+  "ModelCacheSpec": {},
+  "OverridesSpec": {},
+  "MockerSpec": {},
+  "KVRouterSpec": {},
+  "FeaturesSpec": {},
+  "HardwareSpec": {},
+  "DynamoGraphDeploymentRequestSpec": {},
+  "ParetoConfig": {},
+  "ProfilingResultsStatus": {},
+  "DeploymentInfoStatus": {},
+  "DynamoGraphDeploymentRequestStatus": {},
+  "DynamoGraphDeploymentRequest": {},
+  "DTYPE_BYTES_MAP": [],
+  "CONTEXT_LENGTH_ATTRS": [],
+  "MOE_ARCHITECTURES": [],
+  "MOE_ADDITIONAL_TP_ARCHITECTURES": [],
+  "get_local_model_weight_size": [
+    "model_path"
+  ],
+  "get_model_weight_size_from_hub": [
+    "model_name",
+    "token"
+  ],
+  "get_model_weight_size": [
+    "model_name_or_path"
+  ],
+  "ModelInfo": {},
+  "get_model_info": [
+    "model_name_or_path",
+    "trust_remote_code"
+  ],
+  "DEFAULT_SGLANG_DISAGG_CONFIG_PATH": [],
+  "DEFAULT_SGLANG_AGG_CONFIG_PATH": [],
+  "SGLangConfigModifier": {
+    "BACKEND": [],
+    "load_default_config": [
+      "cls",
+      "mode"
+    ],
+    "update_image": [
+      "cls",
+      "config",
+      "image"
+    ],
+    "convert_config": [
+      "cls",
+      "config",
+      "target",
+      "is_moe_model"
+    ],
+    "set_config_tp_size": [
+      "cls",
+      "config",
+      "tp_size",
+      "component_type"
+    ],
+    "set_config_tep_size": [
+      "cls",
+      "config",
+      "tep_size",
+      "num_gpus_per_node",
+      "component_type"
+    ],
+    "set_config_dep_size": [
+      "cls",
+      "config",
+      "dep_size",
+      "num_gpus_per_node",
+      "component_type"
+    ],
+    "get_model_name": [
+      "cls",
+      "config"
+    ],
+    "get_port": [
+      "cls",
+      "config"
+    ],
+    "get_kv_cache_size_from_dynamo_log": [
+      "cls",
+      "dynamo_log_fn",
+      "attention_dp_size"
+    ],
+    "set_prefill_config": [
+      "cls",
+      "config",
+      "max_batch_size",
+      "max_num_tokens",
+      "component_type"
+    ]
+  },
+  "ParallelizationStrategy": {
+    "TP": [],
+    "TEP": [],
+    "DEP": []
+  },
+  "ParallelizationMapping": {
+    "label": [
+      "self"
+    ],
+    "get_tp_size": [
+      "self"
+    ],
+    "get_expert_split": [
+      "self"
+    ],
+    "get_attn_dp_size": [
+      "self"
+    ],
+    "get_num_gpus": [
+      "self"
+    ]
+  },
+  "PickedParallelConfig": {
+    "num_gpus": [
+      "self"
+    ],
+    "tp_size": [
+      "self"
+    ],
+    "label": [
+      "self"
+    ],
+    "to_parallelization_mapping": [
+      "self"
+    ]
+  },
+  "_check_divisibility": [
+    "value",
+    "divisor",
+    "value_name",
+    "divisor_name",
+    "mapping_label"
+  ],
+  "_validate_intermediate_size": [
+    "mapping",
+    "intermediate_size",
+    "quant_block"
+  ],
+  "get_candidate_parallel_mappings": [
+    "num_gpus",
+    "model_info"
+  ],
+  "apply_parallel_mapping_to_config": [
+    "base_config",
+    "mapping",
+    "phase",
+    "config_modifier",
+    "num_gpus_per_node",
+    "is_aggregated_config"
+  ],
+  "ConfigModifierProtocol": {
+    "convert_config": [
+      "cls",
+      "config",
+      "target",
+      "is_moe_model"
+    ],
+    "set_config_tp_size": [
+      "cls",
+      "config",
+      "tp_size",
+      "component_type"
+    ],
+    "set_config_tep_size": [
+      "cls",
+      "config",
+      "tep_size",
+      "num_gpus_per_node",
+      "component_type"
+    ],
+    "set_config_dep_size": [
+      "cls",
+      "config",
+      "dep_size",
+      "num_gpus_per_node",
+      "component_type"
+    ],
+    "get_model_name": [
+      "cls",
+      "config"
+    ],
+    "set_prefill_config": [
+      "cls",
+      "config",
+      "max_batch_size",
+      "max_num_tokens",
+      "component_type"
+    ],
+    "get_port": [
+      "cls",
+      "config"
+    ],
+    "get_kv_cache_size_from_dynamo_log": [
+      "cls",
+      "dynamo_log_fn",
+      "attention_dp_size"
+    ],
+    "load_default_config": [
+      "cls",
+      "mode"
+    ],
+    "update_model": [
+      "cls",
+      "config",
+      "model_name",
+      "model_path"
+    ],
+    "update_image": [
+      "cls",
+      "config",
+      "image"
+    ],
+    "update_model_from_pvc": [
+      "cls",
+      "config",
+      "model_name",
+      "pvc_name",
+      "pvc_mount_path",
+      "pvc_path"
+    ]
+  },
+  "BaseConfigModifier": {
+    "_get_model_name_and_path_from_args": [
+      "cls",
+      "args"
+    ],
+    "_normalize_model_path": [
+      "cls",
+      "pvc_mount_path",
+      "pvc_path"
+    ],
+    "_ensure_spec_pvc": [
+      "cls",
+      "cfg",
+      "pvc_name"
+    ],
+    "_ensure_service_volume_mount": [
+      "cls",
+      "service",
+      "pvc_name",
+      "mount_path"
+    ],
+    "_update_container_args_preserving_shell_form": [
+      "cls",
+      "container",
+      "update_fn"
+    ],
+    "_update_frontend_cli": [
+      "cls",
+      "cfg",
+      "model_name",
+      "model_path"
+    ],
+    "_apply_model_update_to_cfg": [
+      "cls",
+      "cfg",
+      "model_name",
+      "model_path",
+      "patch_frontend"
+    ],
+    "update_model": [
+      "cls",
+      "config",
+      "model_name",
+      "model_path"
+    ],
+    "update_model_from_pvc": [
+      "cls",
+      "config",
+      "model_name",
+      "pvc_name",
+      "pvc_mount_path",
+      "pvc_path"
+    ],
+    "build_dgd_config": [
+      "cls",
+      "mode",
+      "model_name",
+      "image",
+      "prefill_cli_args",
+      "prefill_replicas",
+      "prefill_gpus",
+      "decode_cli_args",
+      "decode_replicas",
+      "decode_gpus",
+      "agg_cli_args",
+      "agg_replicas",
+      "agg_gpus",
+      "namespace",
+      "model_path",
+      "pvc_name",
+      "pvc_mount_path"
+    ],
+    "_NON_WORKER_SERVICES": [],
+    "_resolve_service_name": [
+      "cls",
+      "cfg",
+      "component_type"
+    ],
+    "_apply_worker_config": [
+      "service",
+      "cli_args",
+      "replicas",
+      "gpus"
+    ],
+    "_apply_disagg_workers": [
+      "cls",
+      "cfg",
+      "prefill_cli_args",
+      "prefill_replicas",
+      "prefill_gpus",
+      "decode_cli_args",
+      "decode_replicas",
+      "decode_gpus"
+    ],
+    "_apply_agg_worker": [
+      "cls",
+      "cfg",
+      "agg_cli_args",
+      "agg_replicas",
+      "agg_gpus"
+    ]
+  },
+  "_OVERRIDE_NON_WORKER_SERVICES": [],
+  "_WORKER_ARGS_SUFFIX": [],
+  "_is_worker_main_container_args": [
+    "path"
+  ],
+  "_deep_merge_overrides": [
+    "target",
+    "overrides",
+    "path"
+  ],
+  "apply_dgd_overrides": [
+    "dgd_config",
+    "overrides"
+  ],
+  "DEFAULT_TRTLLM_DISAGG_CONFIG_PATH": [],
+  "DEFAULT_TRTLLM_AGG_CONFIG_PATH": [],
+  "TrtllmConfigModifier": {
+    "BACKEND": [],
+    "load_default_config": [
+      "cls",
+      "mode"
+    ],
+    "update_image": [
+      "cls",
+      "config",
+      "image"
+    ],
+    "convert_config": [
+      "cls",
+      "config",
+      "target",
+      "is_moe_model"
+    ],
+    "set_config_tp_size": [
+      "cls",
+      "config",
+      "tp_size",
+      "component_type"
+    ],
+    "set_config_tep_size": [
+      "cls",
+      "config",
+      "tep_size",
+      "num_gpus_per_node",
+      "component_type"
+    ],
+    "set_config_dep_size": [
+      "cls",
+      "config",
+      "dep_size",
+      "num_gpus_per_node",
+      "component_type"
+    ],
+    "get_model_name": [
+      "cls",
+      "config"
+    ],
+    "get_port": [
+      "cls",
+      "config"
+    ],
+    "get_kv_cache_size_from_dynamo_log": [
+      "cls",
+      "dynamo_log_fn",
+      "attention_dp_size"
+    ],
+    "set_prefill_config": [
+      "cls",
+      "config",
+      "max_batch_size",
+      "max_num_tokens",
+      "component_type"
+    ]
+  },
+  "DEFAULT_VLLM_DISAGG_CONFIG_PATH": [],
+  "DEFAULT_VLLM_AGG_CONFIG_PATH": [],
+  "VllmV1ConfigModifier": {
+    "BACKEND": [],
+    "WORKER_MODEL_PATH_ARG": [],
+    "load_default_config": [
+      "cls",
+      "mode"
+    ],
+    "update_image": [
+      "cls",
+      "config",
+      "image"
+    ],
+    "convert_config": [
+      "cls",
+      "config",
+      "target",
+      "is_moe_model"
+    ],
+    "set_config_tp_size": [
+      "cls",
+      "config",
+      "tp_size",
+      "component_type"
+    ],
+    "set_config_tep_size": [
+      "cls",
+      "config",
+      "tep_size",
+      "num_gpus_per_node",
+      "component_type"
+    ],
+    "set_config_dep_size": [
+      "cls",
+      "config",
+      "dep_size",
+      "num_gpus_per_node",
+      "component_type"
+    ],
+    "get_model_name": [
+      "cls",
+      "config"
+    ],
+    "get_port": [
+      "cls",
+      "config"
+    ],
+    "get_kv_cache_size_from_dynamo_log": [
+      "cls",
+      "dynamo_log_fn",
+      "attention_dp_size"
+    ],
+    "set_prefill_config": [
+      "cls",
+      "config",
+      "max_batch_size",
+      "max_num_tokens",
+      "component_type"
+    ]
+  },
+  "_selection_complete": [],
+  "add_profiling_error": [
+    "error_message"
+  ],
+  "get_profiling_errors": [],
+  "clear_profiling_errors": [],
+  "dump_yaml_with_header": [
+    "header_lines",
+    "obj"
+  ],
+  "_maybe_add_model_backend_header_lines": [
+    "header_lines",
+    "args"
+  ],
+  "build_single_service_preview_header_lines": [],
+  "build_two_service_preview_header_lines": [],
+  "PlotType": {
+    "PREFILL": [],
+    "DECODE": [],
+    "COST": []
+  },
+  "CHART_COLORS": [],
+  "WEB_UI_SELECTION_TIMEOUT": [],
+  "generate_config_data": [
+    "prefill_data",
+    "decode_data",
+    "args",
+    "write_to_disk"
+  ],
+  "populate_prefill_data": [
+    "data",
+    "prefill_data",
+    "args"
+  ],
+  "populate_decode_data": [
+    "data",
+    "decode_data",
+    "args"
+  ],
+  "populate_cost_data": [
+    "data",
+    "prefill_data",
+    "decode_data",
+    "args"
+  ],
+  "create_selection_handler": [
+    "data_dict_ref",
+    "selection_queue",
+    "prefill_selection",
+    "decode_selection"
+  ],
+  "create_gradio_interface": [
+    "json_data_str",
+    "handle_selection"
+  ],
+  "wait_for_selection": [
+    "demo",
+    "selection_queue",
+    "port"
+  ],
+  "pick_config_with_webui": [
+    "prefill_data",
+    "decode_data",
+    "args"
+  ],
+  "MANAGED_MODEL_NAME": [],
+  "ScaleRequestHandler": {
+    "__init__": [
+      "self",
+      "runtime",
+      "managed_namespaces",
+      "k8s_namespace",
+      "no_operation"
+    ],
+    "scale_request": [
+      "self",
+      "request"
+    ]
+  },
+  "create_global_planner_parser": [],
+  "HealthCheckRequest": {},
+  "_get_bos_token_id_from_engine": [
+    "engine_client"
+  ],
+  "_make_default_payload": [
+    "engine_client",
+    "use_text_input"
+  ],
+  "VllmHealthCheckPayload": {
+    "__init__": [
+      "self",
+      "engine_client",
+      "use_text_input"
+    ]
+  },
+  "VllmPrefillHealthCheckPayload": {
+    "__init__": [
+      "self",
+      "engine_client",
+      "use_text_input"
+    ]
+  },
+  "get_bos_token_from_omni": [
+    "async_omni"
+  ],
+  "VllmOmniHealthCheckPayload": {
+    "__init__": [
+      "self",
+      "bos_token_id"
+    ],
+    "create": [
+      "cls",
+      "async_omni"
+    ]
+  },
+  "CHECKPOINT_SLEEP_MODE_LEVEL": [],
+  "build_headless_namespace": [
+    "config"
+  ],
+  "run_dynamo_headless": [
+    "config"
+  ],
+  "setup_metrics_collection": [
+    "config",
+    "generate_endpoint",
+    "logger"
+  ],
+  "setup_kv_event_publisher": [
+    "config",
+    "generate_endpoint",
+    "vllm_config",
+    "consolidator_enabled",
+    "consolidator_port"
+  ],
+  "setup_vllm_engine": [
+    "config",
+    "stat_logger"
+  ],
+  "register_vllm_model": [
+    "model_input",
+    "model_type",
+    "generate_endpoint",
+    "config",
+    "engine_client",
+    "vllm_config"
+  ],
+  "init_prefill": [
+    "runtime",
+    "config",
+    "shutdown_event",
+    "snapshot_engine"
+  ],
+  "init": [
+    "runtime",
+    "config",
+    "shutdown_event",
+    "snapshot_engine"
+  ],
+  "get_engine_cache_info": [
+    "engine"
+  ],
+  "init_omni": [
+    "runtime",
+    "config",
+    "shutdown_event"
+  ],
+  "REGISTERED_PORT_MIN": [],
+  "REGISTERED_PORT_MAX": [],
+  "_resolve_port": [
+    "env_var",
+    "default_port"
+  ],
+  "__getattr__": [
+    "name"
+  ],
+  "__dir__": [],
+  "is_set": [
+    "name"
+  ],
+  "DynamoVllmArgGroup": {
+    "name": [],
+    "add_arguments": [
+      "self",
+      "parser"
+    ]
+  },
+  "DynamoVllmConfig": {
+    "validate": [
+      "self"
+    ],
+    "_resolve_embedding_transfer_mode": [
+      "self"
+    ],
+    "_resolve_disaggregation_mode": [
+      "self"
+    ],
+    "_count_multimodal_roles": [
+      "self"
+    ],
+    "_validate_multimodal_role_exclusivity": [
+      "self"
+    ],
+    "_validate_multimodal_requires_flag": [
+      "self"
+    ],
+    "_validate_omni_stage_config": [
+      "self"
+    ]
+  },
+  "CheckpointConfig": {
+    "__init__": [
+      "self"
+    ],
+    "checkpoint_exists": [
+      "self"
+    ],
+    "run_lifecycle": [
+      "self",
+      "engine_client",
+      "sleep_level"
+    ],
+    "_install_signal_handlers": [
+      "self"
+    ],
+    "_remove_signal_handlers": [
+      "self"
+    ],
+    "_wait_for_watcher_signal": [
+      "self"
+    ]
+  },
+  "get_checkpoint_config": [],
+  "HEALTH_CHECK_INTERVAL": [],
+  "ENGINE_SHUTDOWN_TIMEOUT": [],
+  "VllmEngineMonitor": {
+    "__init__": [
+      "self",
+      "runtime",
+      "engine_client",
+      "shutdown_event"
+    ],
+    "__del__": [
+      "self"
+    ],
+    "_shutdown_engine": [
+      "self"
+    ],
+    "_check_engine_health": [
+      "self"
+    ],
+    "_periodic_log_stats": [
+      "self"
+    ]
+  },
+  "cross_validate_config": [
+    "dynamo_config",
+    "engine_config"
+  ],
+  "update_dynamo_config_with_engine": [
+    "dynamo_config",
+    "engine_config"
+  ],
+  "update_engine_config_with_dynamo": [
+    "dynamo_config",
+    "engine_config"
+  ],
+  "create_kv_events_config": [
+    "dynamo_config",
+    "engine_config"
+  ],
+  "_uses_nixl_connector": [
+    "engine_config"
+  ],
+  "_uses_dynamo_connector": [
+    "engine_config"
+  ],
+  "_connector_to_kv_transfer_json": [
+    "connectors"
+  ],
+  "_reject_connector_flag": [
+    "dynamo_config"
+  ],
+  "get_host_ip": [],
+  "ensure_side_channel_host": [],
+  "EngineSetupResult": [],
+  "SetupVllmEngineFn": [],
+  "SetupKvEventPublisherFn": [],
+  "RegisterVllmModelFn": [],
+  "WorkerFactory": {
+    "__init__": [
+      "self",
+      "setup_vllm_engine_fn",
+      "setup_kv_event_publisher_fn",
+      "register_vllm_model_fn"
+    ],
+    "handles": [
+      "config"
+    ],
+    "create": [
+      "self",
+      "runtime",
+      "config",
+      "shutdown_event",
+      "shutdown_endpoints",
+      "snapshot_engine"
+    ],
+    "_create_multimodal_worker": [
+      "self",
+      "runtime",
+      "config",
+      "shutdown_event",
+      "shutdown_endpoints",
+      "snapshot_engine"
+    ],
+    "_create_multimodal_encode_worker": [
+      "self",
+      "runtime",
+      "config",
+      "shutdown_event",
+      "shutdown_endpoints"
+    ]
+  },
+  "LoRAInfo": {},
+  "_compute_mm_uuids": [
+    "multi_modal_data"
+  ],
+  "_lora_manager": [],
+  "get_lora_manager": [],
+  "build_sampling_params": [
+    "request",
+    "default_sampling_params",
+    "model_max_len"
+  ],
+  "build_sampling_params_openai": [
+    "request",
+    "default_sampling_params"
+  ],
+  "get_dp_range_for_worker": [
+    "vllm_config"
+  ],
+  "BaseWorkerHandler": {
+    "__init__": [
+      "self",
+      "runtime",
+      "engine",
+      "default_sampling_params",
+      "model_max_len",
+      "enable_multimodal",
+      "generate_endpoint",
+      "config",
+      "use_vllm_tokenizer",
+      "shutdown_event",
+      "enable_frontend_decoding"
+    ],
+    "sleep": [
+      "self",
+      "body"
+    ],
+    "wake_up": [
+      "self",
+      "body"
+    ],
+    "generate": [
+      "self",
+      "request",
+      "context"
+    ],
+    "_monitor_abort": [
+      "self",
+      "context",
+      "request_id",
+      "is_prefill"
+    ],
+    "_abort_monitor": [
+      "self",
+      "context",
+      "request_id",
+      "is_prefill"
+    ],
+    "clear_kv_blocks": [
+      "self",
+      "request"
+    ],
+    "add_temp_dir": [
+      "self",
+      "temp_dir"
+    ],
+    "_to_local_dp_rank": [
+      "self",
+      "dp_rank"
+    ],
+    "_resolve_lora_request": [
+      "self",
+      "model_name"
+    ],
+    "_get_lora_lock": [
+      "self",
+      "lora_name"
+    ],
+    "load_lora": [
+      "self",
+      "request"
+    ],
+    "unload_lora": [
+      "self",
+      "request"
+    ],
+    "list_loras": [
+      "self",
+      "request"
+    ],
+    "cleanup": [
+      "self"
+    ],
+    "_decode_prompt_embeds": [
+      "self",
+      "prompt_embeds_base64"
+    ],
+    "_create_prompt_from_embeddings": [
+      "self",
+      "prompt_embeds_base64"
+    ],
+    "_extract_multimodal_data": [
+      "self",
+      "request"
+    ],
+    "_build_prompt_from_request": [
+      "self",
+      "request",
+      "request_id",
+      "multi_modal_data",
+      "log_prefix"
+    ],
+    "_build_completion_usage": [
+      "request_output",
+      "embedding_sequence_length"
+    ],
+    "_extract_logprobs": [
+      "output",
+      "num_output_tokens_so_far"
+    ],
+    "_log_with_lora_context": [
+      "message",
+      "request_id",
+      "lora_request",
+      "level"
+    ],
+    "generate_tokens": [
+      "self",
+      "prompt",
+      "sampling_params",
+      "request_id",
+      "data_parallel_rank",
+      "lora_request",
+      "embedding_sequence_length",
+      "trace_headers",
+      "priority"
+    ]
+  },
+  "DecodeWorkerHandler": {
+    "__init__": [
+      "self",
+      "runtime",
+      "engine",
+      "default_sampling_params",
+      "model_max_len",
+      "enable_multimodal",
+      "generate_endpoint",
+      "config",
+      "use_vllm_tokenizer",
+      "shutdown_event",
+      "enable_frontend_decoding"
+    ],
+    "generate": [
+      "self",
+      "request",
+      "context"
+    ],
+    "_generate_token_mode": [
+      "self",
+      "request",
+      "context",
+      "request_id"
+    ],
+    "_generate_text_mode": [
+      "self",
+      "request",
+      "context",
+      "request_id"
+    ]
+  },
+  "PrefillWorkerHandler": {
+    "__init__": [
+      "self",
+      "runtime",
+      "engine",
+      "default_sampling_params",
+      "model_max_len",
+      "enable_multimodal",
+      "generate_endpoint",
+      "config",
+      "use_vllm_tokenizer",
+      "shutdown_event",
+      "enable_frontend_decoding"
+    ],
+    "generate": [
+      "self",
+      "request",
+      "context"
+    ],
+    "_generate_token_mode": [
+      "self",
+      "request",
+      "context",
+      "request_id"
+    ]
+  },
+  "DynamoStatLoggerPublisher": {
+    "__init__": [
+      "self",
+      "endpoint",
+      "dp_rank",
+      "component_gauges"
+    ],
+    "_create_endpoint": [
+      "self"
+    ],
+    "set_num_gpu_block": [
+      "self",
+      "num_blocks"
+    ],
+    "record": [
+      "self",
+      "scheduler_stats",
+      "iteration_stats",
+      "engine_idx"
+    ],
+    "init_publish": [
+      "self"
+    ],
+    "log_engine_initialized": [
+      "self"
+    ]
+  },
+  "StatLoggerFactory": {
+    "__init__": [
+      "self",
+      "endpoint",
+      "component_gauges"
+    ],
+    "create_stat_logger": [
+      "self",
+      "dp_rank"
+    ],
+    "__call__": [
+      "self",
+      "vllm_config",
+      "dp_rank"
+    ],
+    "set_num_gpu_blocks_all": [
+      "self",
+      "num_blocks"
+    ],
+    "init_publish": [
+      "self"
+    ]
+  },
+  "CACHE_SIZE_MAXIMUM": [],
+  "ENABLE_ENCODER_CACHE": [],
+  "EmbeddingItem": {},
+  "EncodeWorkerHandler": {
+    "__init__": [
+      "self",
+      "engine_args",
+      "embedding_transfer_mode"
+    ],
+    "check_complete": [
+      "self",
+      "queue"
+    ],
+    "cleanup": [
+      "self"
+    ],
+    "async_init": [
+      "self",
+      "runtime"
+    ],
+    "generate": [
+      "self",
+      "request",
+      "context"
+    ]
+  },
+  "MultimodalDecodeWorkerHandler": {
+    "__init__": [
+      "self",
+      "runtime",
+      "engine_client",
+      "config",
+      "shutdown_event",
+      "generate_endpoint"
+    ],
+    "async_init": [
+      "self",
+      "runtime"
+    ],
+    "generate": [
+      "self",
+      "request",
+      "context"
+    ]
+  },
+  "IMAGE_URL_KEY": [],
+  "MultimodalPDWorkerHandler": {
+    "__init__": [
+      "self",
+      "runtime",
+      "engine_client",
+      "config",
+      "encode_worker_client",
+      "decode_worker_client",
+      "shutdown_event",
+      "generate_endpoint"
+    ],
+    "async_init": [
+      "self",
+      "runtime"
+    ],
+    "_parse_frontend_request": [
+      "self",
+      "raw_request"
+    ],
+    "_load_multimodal_data": [
+      "self",
+      "image_urls",
+      "request_id"
+    ],
+    "_finalize_request_metadata": [
+      "self",
+      "request",
+      "multi_modal_data"
+    ],
+    "_format_engine_output": [
+      "response",
+      "num_output_tokens_so_far"
+    ],
+    "_generate_agg": [
+      "self",
+      "request",
+      "multi_modal_data"
+    ],
+    "_generate_disagg": [
+      "self",
+      "request",
+      "multi_modal_data"
+    ],
+    "generate": [
+      "self",
+      "raw_request",
+      "context"
+    ]
+  },
+  "mock_handler": [],
+  "encode_tensor_to_base64": [
+    "tensor"
+  ],
+  "TestPromptEmbedsDecode": {
+    "test_decode_valid_embeddings_various_shapes": [
+      "self",
+      "mock_handler",
+      "shape",
+      "dtype"
+    ],
+    "test_decode_invalid_inputs": [
+      "self",
+      "mock_handler",
+      "invalid_input",
+      "error_match",
+      "description"
+    ],
+    "test_decode_numpy_format_rejected": [
+      "self",
+      "mock_handler"
+    ],
+    "test_decode_non_tensor_object_rejected": [
+      "self",
+      "mock_handler"
+    ]
+  },
+  "encode_tensor_to_base64_obj": [
+    "obj"
+  ],
+  "TestEmbeddingsDataFormats": {
+    "test_various_embedding_sizes": [
+      "self",
+      "mock_handler",
+      "size"
+    ],
+    "test_embedding_value_ranges_preserved": [
+      "self",
+      "mock_handler",
+      "values"
+    ]
+  },
+  "TestUsageStatistics": {
+    "test_build_completion_usage": [
+      "self",
+      "prompt_token_ids",
+      "embedding_seq_len",
+      "completion_tokens",
+      "expected_prompt",
+      "expected_total"
+    ],
+    "test_build_completion_usage_no_prompt_info": [
+      "self"
+    ],
+    "test_build_completion_usage_with_cached_tokens": [
+      "self"
+    ]
+  },
+  "_TestWorkerHandler": {
+    "generate": [
+      "self",
+      "request",
+      "context"
+    ]
+  },
+  "_make_handler": [],
+  "test_wake_up_before_sleep_is_noop": [],
+  "test_sleep_and_wake_are_idempotent": [],
+  "test_sleep_returns_error_for_unregister_failure": [],
+  "test_wake_up_returns_error_for_register_failure": [],
+  "_vllm": [],
+  "_chat_protocol": [],
+  "_engine_protocol": [],
+  "_inputs_data": [],
+  "_reasoning": [],
+  "_sampling_params": [],
+  "_tool_parsers": [],
+  "_engine": [],
+  "_input_processor_mod": [],
+  "_output_processor_mod": [],
+  "ChatCompletionRequest": [],
+  "DeltaMessage": [],
+  "DeltaToolCall": [],
+  "TokensPrompt": [],
+  "ReasoningParser": [],
+  "ReasoningParserManager": [],
+  "RequestOutputKind": [],
+  "SamplingParams": [],
+  "ToolParser": [],
+  "ToolParserManager": [],
+  "EngineCoreOutput": [],
+  "EngineCoreRequest": [],
+  "FinishReason": [],
+  "InputProcessor": [],
+  "OutputProcessor": [],
+  "OutputProcessorOutput": [],
+  "TestVllmRendererApi": {
+    "test_chat_completion_request_has_required_fields": [
+      "self"
+    ],
+    "test_chat_completion_request_model_validate_contract": [
+      "self"
+    ],
+    "test_delta_tool_call_fields": [
+      "self"
+    ],
+    "test_delta_message_fields": [
+      "self"
+    ],
+    "test_sampling_params_annotations_and_output_kind": [
+      "self"
+    ],
+    "test_tokens_prompt_supports_optional_keys_used_by_frontend": [
+      "self"
+    ],
+    "test_input_processor_method_signatures": [
+      "self"
+    ],
+    "test_input_processor_attributes": [
+      "self"
+    ],
+    "test_output_processor_api_shape": [
+      "self"
+    ],
+    "test_output_processor_request_states_attribute": [
+      "self"
+    ],
+    "test_engine_core_struct_contract": [
+      "self"
+    ],
+    "test_engine_core_output_construction": [
+      "self"
+    ],
+    "test_finish_reason_enum_contract": [
+      "self"
+    ],
+    "test_tool_and_reasoning_parser_manager_contract": [
+      "self"
+    ],
+    "test_tool_parser_method_signatures": [
+      "self"
+    ],
+    "test_reasoning_parser_method_signatures": [
+      "self"
+    ],
+    "test_preprocess_worker_result_picklability": [
+      "self"
+    ]
+  },
+  "mock_engine": [],
+  "_make_monitor": [
+    "engine",
+    "shutdown_event"
+  ],
+  "test_periodic_log_stats_calls_do_log_stats": [
+    "mock_engine"
+  ],
+  "test_periodic_log_stats_skips_when_disabled": [
+    "mock_engine"
+  ],
+  "test_periodic_log_stats_skips_when_interval_zero": [
+    "mock_engine"
+  ],
+  "test_periodic_log_stats_skips_when_interval_negative": [
+    "mock_engine"
+  ],
+  "test_periodic_log_stats_respects_shutdown_event": [
+    "mock_engine"
+  ],
+  "test_periodic_log_stats_handles_exception": [
+    "mock_engine"
+  ],
+  "test_periodic_log_stats_cancellation": [
+    "mock_engine"
+  ],
+  "test_periodic_log_stats_no_shutdown_event": [
+    "mock_engine"
+  ],
+  "test_periodic_log_stats_malformed_interval": [
+    "mock_engine"
+  ],
+  "TestEngineInputs": {
+    "test_defaults": [
+      "self"
+    ]
+  },
+  "TestPrepareImageOutput": {
+    "test_b64_json": [
+      "self"
+    ],
+    "test_b64_default_when_none": [
+      "self"
+    ],
+    "test_invalid_format": [
+      "self"
+    ],
+    "test_multiple_images": [
+      "self"
+    ]
+  },
+  "TestBuildEngineInputs": {
+    "test_chat_completion": [
+      "self"
+    ],
+    "test_image_generation": [
+      "self"
+    ],
+    "test_video_generation": [
+      "self"
+    ],
+    "test_audio_not_implemented": [
+      "self"
+    ]
+  },
+  "TestFormatTextChunk": {
+    "_make_output": [
+      "self",
+      "text",
+      "finish_reason"
+    ],
+    "test_delta_text": [
+      "self"
+    ],
+    "test_no_outputs_returns_error": [
+      "self"
+    ],
+    "test_finish_reason_included": [
+      "self"
+    ],
+    "test_finish_reason_abort_normalized": [
+      "self"
+    ],
+    "test_finish_reason_none_when_not_finished": [
+      "self"
+    ]
+  },
+  "TestFormatImageChunk": {
+    "test_chat_completion_format": [
+      "self"
+    ],
+    "test_image_generation_b64_format": [
+      "self"
+    ],
+    "test_image_generation_default_format_returns_b64": [
+      "self"
+    ],
+    "test_empty_images_returns_error": [
+      "self"
+    ]
+  },
+  "TestFormatVideoChunk": {
+    "test_empty_frames_returns_none": [
+      "self"
+    ],
+    "test_error_returns_failed_status": [
+      "self"
+    ]
+  },
+  "test_extract_user_text_single_message": [],
+  "test_extract_user_text_multiple_text_parts": [],
+  "test_extract_user_text_multi_turn": [],
+  "test_extract_user_text_only_images": [],
+  "test_extract_user_text_empty_messages": [],
+  "test_extract_user_text_no_user_messages": [],
+  "test_extract_user_text_mixed_roles": [],
+  "test_extract_user_text_empty_text_content": [],
+  "_kv_events": [],
+  "BlockStored": [],
+  "BlockRemoved": [],
+  "EventBatch": [],
+  "KVCacheEvent": [],
+  "TestVllmKvEventsApi": {
+    "test_block_stored_fields": [
+      "self"
+    ],
+    "test_block_removed_fields": [
+      "self"
+    ],
+    "test_event_batch_fields": [
+      "self"
+    ],
+    "test_kv_cache_event_uses_array_like": [
+      "self"
+    ],
+    "test_kv_cache_event_uses_tag": [
+      "self"
+    ],
+    "test_block_stored_serialization_format": [
+      "self"
+    ]
+  },
+  "mock_vllm_cli": [],
+  "test_model_express_url_from_cli_arg": [
+    "mock_vllm_cli",
+    "load_format"
+  ],
+  "test_model_express_url_from_env_var": [
+    "monkeypatch",
+    "mock_vllm_cli",
+    "load_format"
+  ],
+  "test_model_express_url_cli_overrides_env": [
+    "monkeypatch",
+    "mock_vllm_cli",
+    "load_format"
+  ],
+  "test_model_express_url_missing_raises": [
+    "monkeypatch",
+    "mock_vllm_cli",
+    "load_format"
+  ],
+  "test_model_express_url_none_for_default_load_format": [
+    "mock_vllm_cli"
+  ],
+  "test_endpoint_overrides_defaults": [
+    "mock_vllm_cli"
+  ],
+  "test_endpoint_not_provided_preserves_defaults": [
+    "mock_vllm_cli"
+  ],
+  "test_endpoint_overrides_with_prefill_worker": [
+    "mock_vllm_cli"
+  ],
+  "test_endpoint_invalid_format_raises": [
+    "mock_vllm_cli"
+  ],
+  "test_connector_nixl_raises_error_with_migration_hint": [
+    "mock_vllm_cli"
+  ],
+  "test_connector_none_raises_error": [
+    "mock_vllm_cli"
+  ],
+  "test_env_var_dyn_connector_raises_error": [
+    "monkeypatch",
+    "mock_vllm_cli"
+  ],
+  "test_prefill_worker_without_kv_transfer_config_raises": [
+    "mock_vllm_cli"
+  ],
+  "test_connector_to_kv_transfer_json_single": [],
+  "test_connector_to_kv_transfer_json_multi": [],
+  "_make_engine_cfg": [
+    "kv_connector",
+    "extra_config"
+  ],
+  "_PD_KVBM_NIXL": [],
+  "test_uses_nixl_connector_direct_and_nested": [],
+  "test_uses_dynamo_connector_direct_and_nested": [],
+  "test_headless_namespace_has_required_fields": [
+    "mock_vllm_cli"
+  ],
+  "test_disaggregation_mode_default": [
+    "mock_vllm_cli"
+  ],
+  "test_disaggregation_mode_prefill": [
+    "mock_vllm_cli"
+  ],
+  "test_disaggregation_mode_decode": [
+    "mock_vllm_cli"
+  ],
+  "test_legacy_is_prefill_worker_emits_deprecation": [
+    "mock_vllm_cli"
+  ],
+  "test_legacy_is_decode_worker_emits_deprecation": [
+    "mock_vllm_cli"
+  ],
+  "test_conflicting_legacy_and_new_flags_raises": [
+    "mock_vllm_cli"
+  ],
+  "test_explicit_default_mode_with_legacy_flag_raises": [
+    "mock_vllm_cli"
+  ],
+  "_make_config": [],
+  "TestHandles": {
+    "test_multimodal_encode_worker": [
+      "self"
+    ],
+    "test_multimodal_worker": [
+      "self"
+    ],
+    "test_multimodal_decode_worker": [
+      "self"
+    ],
+    "test_no_multimodal_flags": [
+      "self"
+    ],
+    "test_omni_not_handled": [
+      "self"
+    ],
+    "test_prefill_only_not_handled": [
+      "self"
+    ]
+  },
+  "TestCreate": {
+    "factory": [
+      "self"
+    ],
+    "test_routes_to_multimodal_encode": [
+      "self",
+      "factory"
+    ],
+    "test_routes_to_multimodal_worker": [
+      "self",
+      "factory"
+    ],
+    "test_routes_multimodal_decode_worker": [
+      "self",
+      "factory"
+    ],
+    "test_passes_snapshot_engine": [
+      "self",
+      "factory"
+    ],
+    "test_raises_when_no_multimodal_flag": [
+      "self",
+      "factory"
+    ]
+  },
+  "_clean_env": [
+    "monkeypatch"
+  ],
+  "_clean_loggers": [],
+  "_simulate_vllm_import_time_logger": [],
+  "test_dictconfig_replaces_vllm_stream_handler": [],
+  "test_vllm_logging_level_controls_vllm_logger": [
+    "monkeypatch"
+  ],
+  "test_dyn_log_does_not_affect_vllm_level": [
+    "monkeypatch"
+  ],
+  "test_no_config_file_written": [],
+  "test_health_check_filter_applied": [],
+  "test_health_check_filter_not_duplicated": [],
+  "_make_raw_frontend_request": [
+    "image_urls"
+  ],
+  "_make_vllm_request": [
+    "request_id"
+  ],
+  "_make_engine_response": [
+    "request_id",
+    "finished"
+  ],
+  "TestInit": {
+    "test_embedding_cache_created_when_capacity_set": [
+      "self"
+    ]
+  },
+  "TestParseFrontendRequest": {
+    "test_extracts_token_ids_and_sampling_params": [
+      "self"
+    ],
+    "test_extracts_image_urls": [
+      "self"
+    ]
+  },
+  "TestLoadMultimodalData": {
+    "test_no_encode_client_returns_empty": [
+      "self"
+    ],
+    "test_no_images_returns_empty": [
+      "self"
+    ],
+    "test_delegates_to_load_multimodal_embeddings": [
+      "self"
+    ],
+    "test_passes_cache_to_load_multimodal_embeddings": [
+      "self"
+    ],
+    "test_passes_model_and_dtype": [
+      "self"
+    ]
+  },
+  "TestGenerateAgg": {
+    "test_streams_serialized_responses": [
+      "self"
+    ]
+  },
+  "TestGenerateDisagg": {
+    "test_prefills_then_forwards_to_decode": [
+      "self"
+    ]
+  },
+  "TestMultiModalUtils": {
+    "test_construct_qwen_decode_mm_data": [
+      "self"
+    ]
+  },
+  "_make_vllm_config": [
+    "capacity_gb"
+  ],
+  "TestVersionCheck": {
+    "test_warns_old_vllm": [
+      "self"
+    ]
+  },
+  "TestSchedulerSideLRU": {
+    "_make_connector": [
+      "self",
+      "capacity_gb"
+    ],
+    "_make_request": [
+      "self",
+      "hashes_and_embeds"
+    ],
+    "test_has_cache_item_miss_then_hit": [
+      "self"
+    ],
+    "test_update_state_plans_save": [
+      "self"
+    ],
+    "test_update_state_plans_load_for_cached": [
+      "self"
+    ],
+    "test_eviction_under_pressure": [
+      "self"
+    ],
+    "test_skip_oversized_item": [
+      "self"
+    ]
+  },
+  "MODEL": [],
+  "DTYPE": [],
+  "TestLoadMultimodalEmbeddings": {
+    "test_all_cached": [
+      "self"
+    ],
+    "test_all_uncached_with_cache": [
+      "self"
+    ],
+    "test_no_cache": [
+      "self"
+    ],
+    "test_mixed_cache": [
+      "self"
+    ]
+  },
+  "extract_user_text": [
+    "messages"
+  ],
+  "EmbeddingCache": {
+    "__init__": [
+      "self"
+    ],
+    "generate_hash_key": [
+      "cls"
+    ],
+    "has_key": [
+      "self",
+      "key"
+    ],
+    "set": [
+      "self",
+      "key",
+      "value"
+    ],
+    "get": [
+      "self",
+      "key"
+    ]
+  },
+  "SPLIT_ENCODE": [],
+  "_PendingRelease": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "receiver"
+    ],
+    "track": [
+      "self",
+      "tensor_id"
+    ],
+    "release_all": [
+      "self"
+    ]
+  },
+  "_accumulate_embeddings": [
+    "multi_modal_data",
+    "model",
+    "embeddings_dtype",
+    "embeddings",
+    "image_grid_thw"
+  ],
+  "_ensure_owned_tensors": [
+    "multi_modal_data"
+  ],
+  "_fetch_from_encode_workers": [
+    "encode_worker_client",
+    "image_urls",
+    "request_id",
+    "receiver"
+  ],
+  "_fetch_embeddings": [
+    "encode_worker_client",
+    "image_urls",
+    "request_id",
+    "receiver",
+    "cache"
+  ],
+  "load_multimodal_embeddings": [
+    "encode_worker_client",
+    "image_urls",
+    "request_id",
+    "receiver"
+  ],
+  "VLLM_ENCODER": [],
+  "get_embedding_hash": [
+    "key"
+  ],
+  "get_qwen_image_features": [
+    "vision_encoder",
+    "image_embeds"
+  ],
+  "encode_image_embeddings": [
+    "model_name",
+    "image_embeds",
+    "vision_encoder",
+    "projector"
+  ],
+  "get_encoder_components": [
+    "model_name",
+    "vision_model"
+  ],
+  "Request": {},
+  "Tokens": {},
+  "PrefillRequest": {},
+  "Response": {},
+  "PrefillResponse": {},
+  "PatchedTokensPrompt": {},
+  "vLLMGenerateRequest": {
+    "parse_sampling_params": [
+      "cls",
+      "v"
+    ],
+    "serialize_sampling_params": [
+      "self",
+      "value"
+    ],
+    "model_config": []
+  },
+  "TextContent": {},
+  "ImageURLDetail": {},
+  "ImageContent": {},
+  "VideoURLDetail": {},
+  "VideoContent": {},
+  "MessageContent": [],
+  "ChatMessage": {},
+  "MultiModalRequest": {
+    "model_config": []
+  },
+  "MultiModalInput": {},
+  "MultiModalGroup": {
+    "model_config": []
+  },
+  "vLLMMultimodalRequest": {
+    "model_config": []
+  },
+  "MyRequestOutput": {
+    "model_config": []
+  },
+  "MINIMUM_VLLM_VERSION": [],
+  "MultimodalEmbeddingCacheConnectorMetadata": {},
+  "DynamoMultimodalEmbeddingCacheConnector": {
+    "__init__": [
+      "self",
+      "vllm_config",
+      "role"
+    ],
+    "has_cache_item": [
+      "self",
+      "identifier"
+    ],
+    "update_state_after_alloc": [
+      "self",
+      "request",
+      "index"
+    ],
+    "build_connector_meta": [
+      "self",
+      "scheduler_output"
+    ],
+    "start_load_caches": [
+      "self",
+      "encoder_cache"
+    ],
+    "save_caches": [
+      "self",
+      "encoder_cache",
+      "mm_hash"
+    ]
+  },
+  "SupportedModels": {
+    "LLAVA_1_5_7B": [],
+    "QWEN_2_VL_2B": [],
+    "QWEN_2_5_VL_3B": [],
+    "QWEN_2_5_VL_7B": [],
+    "QWEN_2_5_VL_32B": [],
+    "QWEN_3_VL_2B": [],
+    "QWEN_3_VL_30B_A3B": [],
+    "QWEN_3_VL_30B_A3B_FP8": [],
+    "QWEN_3_VL_8B_FP8": [],
+    "QWEN_3_VL_4B": [],
+    "QWEN_3_VL_4B_FP8": [],
+    "LLAVA_NEXT_VIDEO_7B": []
+  },
+  "normalize_model_name": [
+    "model_name"
+  ],
+  "is_model_supported": [
+    "model_name",
+    "supported_model"
+  ],
+  "QWEN_VL_MODELS": [],
+  "is_qwen_vl_model": [
+    "model_name"
+  ],
+  "load_vision_model": [
+    "model_id"
+  ],
+  "construct_mm_data": [
+    "model",
+    "embeddings_dtype",
+    "image_embeds",
+    "video_numpy",
+    "image_grid_thw"
+  ],
+  "_construct_qwen_image_data": [
+    "image_embeds",
+    "image_grid_thw"
+  ],
+  "construct_qwen_decode_mm_data": [
+    "image_grid_thw",
+    "embeddings_shape",
+    "request_id"
+  ],
+  "image_to_bytes": [
+    "img"
+  ],
+  "compute_mm_uuids_from_images": [
+    "images"
+  ],
+  "StubEngineClient": {
+    "__init__": [
+      "self",
+      "model_config"
+    ]
+  },
+  "ProcessMixInRequired": {},
+  "ProcessMixIn": {
+    "__init__": [
+      "self"
+    ],
+    "_get_processor": [
+      "self",
+      "raw_request"
+    ],
+    "_parse_raw_request": [
+      "self",
+      "raw_request"
+    ],
+    "_stream_response": [
+      "self",
+      "request",
+      "generator",
+      "request_id",
+      "conversation"
+    ]
+  },
+  "PreprocessResult": {
+    "__init__": [
+      "self",
+      "conversation",
+      "engine_prompt"
+    ]
+  },
+  "ChatProcessor": {
+    "__init__": [
+      "self",
+      "tokenizer",
+      "model_config"
+    ],
+    "parse_raw_request": [
+      "self",
+      "raw_request"
+    ],
+    "preprocess": [
+      "self",
+      "raw_request"
+    ],
+    "stream_response": [
+      "self",
+      "request",
+      "result_generator",
+      "request_id",
+      "conversation"
+    ]
+  },
+  "CompletionsProcessor": {
+    "__init__": [
+      "self",
+      "tokenizer",
+      "model_config"
+    ],
+    "parse_raw_request": [
+      "self",
+      "raw_request"
+    ],
+    "preprocess": [
+      "self",
+      "raw_request"
+    ],
+    "stream_response": [
+      "self",
+      "request",
+      "result_generator",
+      "request_id",
+      "conversation"
+    ]
+  },
+  "EngineInputs": {},
+  "OmniHandler": {
+    "__init__": [
+      "self",
+      "runtime",
+      "config",
+      "default_sampling_params",
+      "shutdown_event",
+      "media_output_fs",
+      "media_output_http_url"
+    ],
+    "generate": [
+      "self",
+      "request",
+      "context"
+    ],
+    "_generate_openai_mode": [
+      "self",
+      "request",
+      "context",
+      "request_id"
+    ],
+    "build_engine_inputs": [
+      "self",
+      "parsed_request",
+      "request_type"
+    ],
+    "_engine_inputs_from_chat": [
+      "self",
+      "request"
+    ],
+    "_engine_inputs_from_image": [
+      "self",
+      "req"
+    ],
+    "_engine_inputs_from_video": [
+      "self",
+      "req"
+    ],
+    "_prepare_image_output": [
+      "self",
+      "images",
+      "request_id",
+      "response_format"
+    ],
+    "_format_image_chunk": [
+      "self",
+      "images",
+      "request_id",
+      "response_format",
+      "request_type"
+    ],
+    "_format_video_chunk": [
+      "self",
+      "images",
+      "request_id",
+      "fps"
+    ],
+    "_format_text_chunk": [
+      "self",
+      "request_output",
+      "request_id",
+      "previous_text"
+    ]
+  },
+  "BaseOmniHandler": {
+    "__init__": [
+      "self",
+      "runtime",
+      "config",
+      "default_sampling_params",
+      "shutdown_event"
+    ],
+    "_build_omni_kwargs": [
+      "self",
+      "config"
+    ],
+    "generate": [
+      "self",
+      "request",
+      "context"
+    ],
+    "_generate_openai_mode": [
+      "self",
+      "request",
+      "context",
+      "request_id"
+    ],
+    "_extract_text_prompt": [
+      "self",
+      "request"
+    ],
+    "_extract_extra_body": [
+      "self",
+      "request"
+    ],
+    "_build_sampling_params": [
+      "self",
+      "request"
+    ],
+    "_error_chunk": [
+      "self",
+      "request_id",
+      "error_message"
+    ],
+    "cleanup": [
+      "self"
+    ]
+  },
+  "_warmup_prefill_engine": [
+    "engine",
+    "server_args"
+  ],
+  "init_decode": [
+    "runtime",
+    "config",
+    "shutdown_event",
+    "shutdown_endpoints",
+    "run_deferred_handlers",
+    "snapshot_engine"
+  ],
+  "init_multimodal_processor": [
+    "runtime",
+    "config",
+    "shutdown_event",
+    "shutdown_endpoints",
+    "run_deferred_handlers"
+  ],
+  "init_multimodal_encode_worker": [
+    "runtime",
+    "config",
+    "shutdown_event",
+    "shutdown_endpoints",
+    "run_deferred_handlers"
+  ],
+  "init_multimodal_worker": [
+    "runtime",
+    "config",
+    "shutdown_event",
+    "shutdown_endpoints",
+    "run_deferred_handlers"
+  ],
+  "init_multimodal_prefill_worker": [
+    "runtime",
+    "config",
+    "shutdown_event",
+    "shutdown_endpoints",
+    "run_deferred_handlers"
+  ],
+  "SglangHealthCheckPayload": {
+    "__init__": [
+      "self",
+      "engine",
+      "use_text_input"
+    ]
+  },
+  "SglangPrefillHealthCheckPayload": {
+    "__init__": [
+      "self",
+      "engine",
+      "use_text_input"
+    ]
+  },
+  "ImageDiffusionHealthCheckPayload": {
+    "__init__": [
+      "self",
+      "model_path"
+    ]
+  },
+  "VideoGenerationHealthCheckPayload": {
+    "__init__": [
+      "self",
+      "model_path"
+    ]
+  },
+  "init_embedding": [
+    "runtime",
+    "config",
+    "shutdown_event",
+    "shutdown_endpoints",
+    "run_deferred_handlers"
+  ],
+  "_register_model_with_runtime_config": [
+    "engine",
+    "endpoint",
+    "server_args",
+    "dynamo_args",
+    "input_type",
+    "output_type"
+  ],
+  "_get_bootstrap_info_for_config": [
+    "engine"
+  ],
+  "_get_runtime_config": [
+    "engine",
+    "server_args",
+    "dynamo_args"
+  ],
+  "register_model_with_readiness_gate": [
+    "engine",
+    "generate_endpoint",
+    "server_args",
+    "dynamo_args",
+    "input_type",
+    "output_type",
+    "readiness_gate"
+  ],
+  "register_image_diffusion_model": [
+    "generator",
+    "endpoint",
+    "server_args",
+    "output_modalities",
+    "readiness_gate"
+  ],
+  "register_video_generation_model": [
+    "generator",
+    "endpoint",
+    "server_args",
+    "readiness_gate"
+  ],
+  "DynamoSGLangArgGroup": {
+    "name": [],
+    "add_arguments": [
+      "self",
+      "parser"
+    ]
+  },
+  "DynamoSGLangConfig": {
+    "validate": [
+      "self"
+    ]
+  },
+  "TokenIdType": [],
+  "StopConditions": {},
+  "SamplingOptions": {},
+  "PreprocessedRequest": {},
+  "EmbeddingInput": [],
+  "EmbeddingRequest": {},
+  "DisaggPreprocessedRequest": {},
+  "SglangMultimodalRequest": {
+    "model_config": []
+  },
+  "DisaggSglangMultimodalRequest": {},
+  "NvExt": {},
+  "CreateImageRequest": {},
+  "ImagesResponse": {},
+  "CreateVideoRequest": {},
+  "VideoGenerationResponse": {},
+  "_SLEEP_MODE_LEVEL": [],
+  "_MEMORY_TAGS": [],
+  "SGLangCheckpointAdapter": {
+    "__init__": [
+      "self",
+      "engine"
+    ],
+    "sleep": [
+      "self",
+      "level"
+    ],
+    "wake_up": [
+      "self"
+    ]
+  },
+  "handle_checkpoint_mode": [
+    "server_args"
+  ],
+  "init_llm_diffusion": [
+    "runtime",
+    "config",
+    "shutdown_event",
+    "shutdown_endpoints",
+    "run_deferred_handlers"
+  ],
+  "init_image_diffusion": [
+    "runtime",
+    "config",
+    "shutdown_endpoints",
+    "run_deferred_handlers"
+  ],
+  "init_video_diffusion": [
+    "runtime",
+    "config",
+    "shutdown_endpoints",
+    "run_deferred_handlers"
+  ],
+  "DynamoConfig": {
+    "validate": [
+      "self"
+    ]
+  },
+  "_validate_parser_flags": [
+    "sglang_val",
+    "dynamo_val",
+    "name"
+  ],
+  "_has_cli_flag": [
+    "args",
+    "flag"
+  ],
+  "_remove_cli_flag_and_value": [
+    "args",
+    "flag"
+  ],
+  "_load_disagg_config_section": [
+    "config_path",
+    "config_key"
+  ],
+  "_dump_disagg_config_section": [
+    "disagg_config"
+  ],
+  "reserve_free_port": [
+    "host"
+  ],
+  "_reserve_disaggregation_bootstrap_port": [],
+  "format_zmq_endpoint": [
+    "endpoint_template",
+    "ip_address"
+  ],
+  "DynamoSglangPublisher": {
+    "__init__": [
+      "self",
+      "engine",
+      "config",
+      "generate_endpoint",
+      "component_gauges",
+      "metrics_labels"
+    ],
+    "run": [
+      "self"
+    ],
+    "cleanup": [
+      "self"
+    ],
+    "init_engine_metrics_publish": [
+      "self"
+    ],
+    "init_kv_event_publish": [
+      "self"
+    ]
+  },
+  "setup_prometheus_registry": [
+    "engine",
+    "generate_endpoint",
+    "config"
+  ],
+  "setup_sgl_metrics": [
+    "engine",
+    "config",
+    "generate_endpoint"
+  ],
+  "handle_non_leader_node": [
+    "engine",
+    "publisher",
+    "metrics_task"
+  ],
+  "SignalCallback": [],
+  "install_graceful_shutdown": [
+    "loop",
+    "runtime",
+    "endpoints",
+    "shutdown_event"
+  ],
+  "mock_generator": [],
+  "mock_fs": [],
+  "mock_context": [],
+  "handler": [
+    "mock_generator",
+    "mock_config",
+    "mock_fs"
+  ],
+  "TestImageDiffusionWorkerHandler": {
+    "test_initialization": [
+      "self",
+      "handler",
+      "mock_generator",
+      "mock_fs"
+    ],
+    "test_initialization_with_url_base": [
+      "self",
+      "mock_generator",
+      "mock_fs"
+    ],
+    "test_cleanup": [
+      "self",
+      "mock_empty_cache",
+      "handler"
+    ],
+    "test_parse_size": [
+      "self",
+      "handler"
+    ],
+    "test_encode_base64": [
+      "self",
+      "handler"
+    ],
+    "test_generate_success_url_format": [
+      "self",
+      "handler",
+      "mock_context"
+    ],
+    "test_generate_success_b64_format": [
+      "self",
+      "handler",
+      "mock_context"
+    ],
+    "test_generate_with_default_num_inference_steps": [
+      "self",
+      "handler",
+      "mock_context"
+    ],
+    "test_generate_error_handling": [
+      "self",
+      "handler",
+      "mock_context"
+    ],
+    "test_upload_to_fs": [
+      "self",
+      "handler"
+    ],
+    "test_generate_images_with_numpy_array": [
+      "self",
+      "handler"
+    ],
+    "test_generate_images_with_pil_image": [
+      "self",
+      "handler"
+    ],
+    "test_generate_images_with_bytes": [
+      "self",
+      "handler"
+    ],
+    "test_generate_with_nvext": [
+      "self",
+      "handler",
+      "mock_context"
+    ]
+  },
+  "_stub_sglang_io_struct": [
+    "monkeypatch"
+  ],
+  "test_resume_before_release_is_noop": [],
+  "test_release_and_resume_are_idempotent": [],
+  "test_resume_uses_default_tags_even_when_request_specifies_subset": [],
+  "test_resume_with_no_sleeping_state_is_noop": [],
+  "test_release_returns_error_when_worker_has_no_tokenizer_manager": [],
+  "test_resume_returns_error_when_worker_has_no_tokenizer_manager": [],
+  "mock_sglang_cli": [],
+  "test_tool_call_parser_valid_with_dynamo_tokenizer": [
+    "mock_sglang_cli"
+  ],
+  "test_tool_call_parser_invalid_with_dynamo_tokenizer": [
+    "mock_sglang_cli"
+  ],
+  "test_tool_call_parser_both_flags_error": [
+    "mock_sglang_cli"
+  ],
+  "test_namespace_flag_drives_default_endpoint_namespace": [
+    "mock_sglang_cli"
+  ],
+  "test_obsolete_dyn_endpoint_types_flag_is_supported": [
+    "mock_sglang_cli"
+  ],
+  "test_disagg_config_requires_disagg_config_key": [
+    "mock_sglang_cli"
+  ],
+  "test_disagg_config_key_requires_disagg_config": [
+    "mock_sglang_cli"
+  ],
+  "test_disagg_config_key_not_found_error": [
+    "tmp_path",
+    "mock_sglang_cli"
+  ],
+  "test_disagg_config_section_must_be_dict": [
+    "tmp_path",
+    "mock_sglang_cli"
+  ],
+  "test_disagg_config_preserves_bootstrap_port": [
+    "tmp_path",
+    "mock_sglang_cli"
+  ],
+  "test_disagg_config_rejects_dynamo_keys": [
+    "tmp_path",
+    "mock_sglang_cli",
+    "capfd"
+  ],
+  "multimodal_request_to_sglang": [
+    "raw_request",
+    "tokenizer",
+    "chat_template"
+  ],
+  "detokenize_sglang_response": [
+    "response_data",
+    "tokenizer"
+  ],
+  "process_sglang_stream_response": [
+    "response_data",
+    "tokenizer",
+    "accumulated_text"
+  ],
+  "DEFAULT_MEMORY_OCCUPATION_TAGS": [],
+  "EmbeddingWorkerHandler": {
+    "__init__": [
+      "self",
+      "engine",
+      "config",
+      "publisher",
+      "shutdown_event"
+    ],
+    "cleanup": [
+      "self"
+    ],
+    "generate": [
+      "self",
+      "request",
+      "context"
+    ],
+    "_transform_response": [
+      "self",
+      "ret",
+      "model_name"
+    ]
+  },
+  "VideoGenerationWorkerHandler": {
+    "__init__": [
+      "self",
+      "generator",
+      "config",
+      "publisher",
+      "fs"
+    ],
+    "cleanup": [
+      "self"
+    ],
+    "generate": [
+      "self",
+      "request",
+      "context"
+    ],
+    "_generate_video": [
+      "self",
+      "prompt",
+      "width",
+      "height",
+      "num_frames",
+      "fps",
+      "num_inference_steps",
+      "guidance_scale",
+      "seed",
+      "request_id",
+      "negative_prompt",
+      "input_reference"
+    ],
+    "_frames_to_video": [
+      "self",
+      "frames",
+      "fps",
+      "codec"
+    ],
+    "_parse_size": [
+      "self",
+      "size_str"
+    ],
+    "_upload_to_fs": [
+      "self",
+      "video_bytes",
+      "request_id"
+    ],
+    "_encode_base64": [
+      "self",
+      "video_bytes"
+    ]
+  },
+  "MultimodalEncodeWorkerHandler": {
+    "__init__": [
+      "self",
+      "config",
+      "pd_worker_client",
+      "shutdown_event"
+    ],
+    "cleanup": [
+      "self"
+    ],
+    "generate": [
+      "self",
+      "request",
+      "context"
+    ],
+    "async_init": [
+      "self",
+      "runtime"
+    ]
+  },
+  "MultimodalConfig": {
+    "EMBEDDINGS_DTYPE": [],
+    "EMBEDDINGS_DEVICE": []
+  },
+  "SglangUtils": {
+    "build_sampling_params": [
+      "request"
+    ]
+  },
+  "EmbeddingsProcessor": {
+    "__init__": [
+      "self"
+    ],
+    "initialize": [
+      "self"
+    ],
+    "process_embeddings": [
+      "self",
+      "request"
+    ],
+    "create_multimodal_item": [
+      "embeddings",
+      "request"
+    ]
+  },
+  "StreamProcessor": {
+    "process_sglang_stream": [
+      "stream_source"
+    ],
+    "create_bootstrap_info": [
+      "bootstrap_host",
+      "bootstrap_port",
+      "bootstrap_room"
+    ]
+  },
+  "ErrorResponseBuilder": {
+    "build_error_response": [
+      "error",
+      "extra_fields"
+    ]
+  },
+  "MultimodalWorkerHandler": {
+    "__init__": [
+      "self",
+      "engine",
+      "config",
+      "prefill_client",
+      "shutdown_event"
+    ],
+    "async_init": [
+      "self"
+    ],
+    "_validate_and_parse_request": [
+      "self",
+      "request"
+    ],
+    "generate": [
+      "self",
+      "request",
+      "context"
+    ],
+    "_generate_disaggregated": [
+      "self",
+      "request"
+    ],
+    "_generate_aggregated": [
+      "self",
+      "request"
+    ],
+    "_get_bootstrap_from_prefill": [
+      "self",
+      "request",
+      "sampling_params"
+    ],
+    "cleanup": [
+      "self"
+    ]
+  },
+  "MultimodalPrefillWorkerHandler": {
+    "__init__": [
+      "self",
+      "engine",
+      "config",
+      "shutdown_event"
+    ],
+    "async_init": [
+      "self"
+    ],
+    "generate": [
+      "self",
+      "disagg_request",
+      "context"
+    ],
+    "_validate_and_parse_disagg_request": [
+      "self",
+      "disagg_request"
+    ],
+    "_process_prefill_generation": [
+      "self",
+      "disagg_request",
+      "bootstrap_room"
+    ],
+    "_consume_results": [
+      "self",
+      "results"
+    ],
+    "cleanup": [
+      "self"
+    ]
+  },
+  "MultimodalProcessorHandler": {
+    "__init__": [
+      "self",
+      "config",
+      "encode_worker_client",
+      "shutdown_event"
+    ],
+    "cleanup": [
+      "self"
+    ],
+    "generate": [
+      "self",
+      "raw_request",
+      "context"
+    ],
+    "_generate": [
+      "self",
+      "raw_request",
+      "multimodal_input"
+    ]
+  },
+  "MAX_NUM_INFERENCE_STEPS": [],
+  "ImageDiffusionWorkerHandler": {
+    "__init__": [
+      "self",
+      "generator",
+      "config",
+      "publisher",
+      "fs"
+    ],
+    "cleanup": [
+      "self"
+    ],
+    "generate": [
+      "self",
+      "request",
+      "context"
+    ],
+    "_generate_images": [
+      "self",
+      "prompt",
+      "width",
+      "height",
+      "num_inference_steps",
+      "guidance_scale",
+      "seed",
+      "negative_prompt"
+    ],
+    "_parse_size": [
+      "self",
+      "size_str"
+    ],
+    "_upload_to_fs": [
+      "self",
+      "image_bytes",
+      "user_id",
+      "request_id"
+    ],
+    "_encode_base64": [
+      "self",
+      "image_bytes"
+    ]
+  },
+  "DiffusionWorkerHandler": {
+    "__init__": [
+      "self",
+      "engine",
+      "config",
+      "publisher",
+      "generate_endpoint",
+      "shutdown_event"
+    ],
+    "generate": [
+      "self",
+      "request",
+      "context"
+    ],
+    "cleanup": [
+      "self"
+    ]
+  },
+  "SKIP_REQUEST_VALIDATION": [],
+  "_get_async_tokenizer": [
+    "tokenizer"
+  ],
+  "_materialize_assistant_tool_calls": [
+    "messages"
+  ],
+  "_prepare_request": [
+    "request"
+  ],
+  "preprocess_chat_request": [
+    "request"
+  ],
+  "preprocess_chat_request_sync": [
+    "request"
+  ],
+  "StreamingPostProcessor": {
+    "__init__": [
+      "self"
+    ],
+    "_merge_tool_call": [
+      "existing",
+      "incoming"
+    ],
+    "_is_control_only_content": [
+      "self",
+      "content"
+    ],
+    "_should_parse_tools": [
+      "self"
+    ],
+    "_compose_delta_message": [
+      "reasoning",
+      "content"
+    ],
+    "_add_tool_call_from_extracted": [
+      "self",
+      "index",
+      "tool_call"
+    ],
+    "_extract_tool_calls_from_text": [
+      "self",
+      "text"
+    ],
+    "_extract_tool_calls_streaming": [
+      "self"
+    ],
+    "_merge_streaming_tool_calls": [
+      "self",
+      "tool_calls"
+    ],
+    "_dump_in_progress_tool_calls": [
+      "self"
+    ],
+    "_emit_tool_calls_choice": [
+      "self",
+      "output"
+    ],
+    "_build_choice": [
+      "output",
+      "delta"
+    ],
+    "process_output": [
+      "self",
+      "output"
+    ]
+  },
+  "validate_model_name": [
+    "value"
+  ],
+  "validate_model_path": [
+    "value"
+  ],
+  "FrontendConfig": {
+    "validate": [
+      "self"
+    ]
+  },
+  "FrontendArgGroup": {
+    "add_arguments": [
+      "self",
+      "parser"
+    ]
+  },
+  "_MASK_64_BITS": [],
+  "random_uuid": [],
+  "map_finish_reason": [
+    "raw_reason"
+  ],
+  "_PreprocessError": {
+    "__init__": [
+      "self",
+      "error_dict"
+    ]
+  },
+  "PreprocessWorkerResult": {},
+  "_init_worker": [
+    "model_path",
+    "tokenizer_mode",
+    "config_format",
+    "load_format",
+    "tool_parser_name"
+  ],
+  "_worker_warmup": [],
+  "_preprocess_worker": [
+    "request",
+    "request_id",
+    "model_name"
+  ],
+  "VllmProcessor": {
+    "__init__": [
+      "self",
+      "tokenizer",
+      "input_processor",
+      "router",
+      "output_processor",
+      "tool_parser_class",
+      "reasoning_parser_class",
+      "debug_perf",
+      "preprocess_pool",
+      "preprocess_workers"
+    ],
+    "generator": [
+      "self",
+      "request"
+    ],
+    "_generator_inner": [
+      "self",
+      "request"
+    ],
+    "_generate_and_stream": [
+      "self",
+      "request_id",
+      "request",
+      "dynamo_preproc",
+      "tokens",
+      "vllm_preproc",
+      "post"
+    ],
+    "_generator_inner_pool": [
+      "self",
+      "request"
+    ]
+  },
+  "EngineFactory": {
+    "__init__": [
+      "self",
+      "runtime",
+      "router_config",
+      "config",
+      "flags",
+      "debug_perf"
+    ],
+    "chat_engine_factory": [
+      "self",
+      "instance_id",
+      "mdc"
+    ]
+  },
+  "setup_engine_factory": [
+    "runtime",
+    "router_config",
+    "config",
+    "vllm_flags"
+  ],
+  "async_main": [],
+  "_active_requests": [],
+  "_peak_requests": [],
+  "enter_generator": [],
+  "exit_generator": [],
+  "get_active_requests": [],
+  "get_peak_requests": []
+}
