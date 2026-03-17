@@ -1,0 +1,198 @@
+{
+  "DelightedError": {
+    "__init__": [
+      "self",
+      "response"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__str__": []
+  },
+  "AuthenticationError": {},
+  "UnsupportedFormatRequestedError": {},
+  "ResourceValidationError": {},
+  "TooManyRequestsError": {
+    "__init__": [
+      "self",
+      "response"
+    ]
+  },
+  "GeneralAPIError": {},
+  "ServiceUnavailableError": {},
+  "Resource": {
+    "__init__": [
+      "self",
+      "attrs"
+    ],
+    "__setattr__": [
+      "self",
+      "k",
+      "v"
+    ],
+    "__getattr__": [
+      "self",
+      "k"
+    ],
+    "_set_client": [
+      "self",
+      "params"
+    ],
+    "_identifier_string": [
+      "self"
+    ]
+  },
+  "AllResource": {
+    "all": [
+      "self"
+    ]
+  },
+  "ListResource": {
+    "list": [
+      "self"
+    ]
+  },
+  "CreateableResource": {
+    "create": [
+      "self"
+    ]
+  },
+  "RetrievableResource": {
+    "retrieve": [
+      "self"
+    ]
+  },
+  "UpdateableResource": {
+    "save": [
+      "self"
+    ]
+  },
+  "DeleteableResource": {
+    "delete": [
+      "self"
+    ]
+  },
+  "Metrics": {
+    "path": [],
+    "singleton_resource": []
+  },
+  "Person": {
+    "path": []
+  },
+  "SurveyRequest": {
+    "path": [],
+    "delete_pending": [
+      "self"
+    ]
+  },
+  "SurveyResponse": {
+    "expandable_attributes": [],
+    "path": []
+  },
+  "Unsubscribe": {
+    "path": []
+  },
+  "Bounce": {
+    "path": []
+  },
+  "AutopilotConfiguration": {
+    "path": []
+  },
+  "AutopilotMembership": {
+    "forEmail": [
+      "self"
+    ],
+    "forSms": [
+      "self"
+    ],
+    "delete": [
+      "self"
+    ]
+  },
+  "AutopilotMembershipForEmail": {
+    "path": []
+  },
+  "AutopilotMembershipForSms": {
+    "path": []
+  },
+  "ListObject": {
+    "__init__": [
+      "self",
+      "klass",
+      "path",
+      "params",
+      "client"
+    ],
+    "auto_paging_iter": [
+      "self",
+      "auto_handle_rate_limits"
+    ]
+  },
+  "__title__": [],
+  "__version__": [],
+  "__author__": [],
+  "__license__": [],
+  "api_key": [],
+  "api_base_url": [],
+  "http_adapter": [],
+  "shared_client": [],
+  "get_shared_client": [],
+  "HTTPResponse": {
+    "__init__": [
+      "self",
+      "status_code",
+      "headers",
+      "body",
+      "links"
+    ]
+  },
+  "Client": {
+    "__init__": [
+      "self",
+      "api_key",
+      "api_base_url",
+      "http_adapter"
+    ],
+    "request": [
+      "self",
+      "method",
+      "url",
+      "headers",
+      "params",
+      "full_url"
+    ],
+    "request_json": [
+      "self",
+      "method",
+      "resource",
+      "headers",
+      "params"
+    ],
+    "_handle_response": [
+      "self",
+      "response"
+    ]
+  },
+  "_encode_datetime": [
+    "dttime"
+  ],
+  "encode": [
+    "data"
+  ],
+  "naive_date_to_datetime": [
+    "naive_date"
+  ],
+  "aware_datetime_to_epoch_seconds": [
+    "localized_datetime"
+  ],
+  "HTTPAdapter": {
+    "request": [
+      "self",
+      "method",
+      "uri",
+      "headers",
+      "data",
+      "params"
+    ]
+  }
+}
