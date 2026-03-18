@@ -1,0 +1,1699 @@
+{
+  "T_Event": [],
+  "T_EventInvariant": [],
+  "T_EventResult": [],
+  "T_HandlerEvent": [],
+  "T_HandlerReturn": [],
+  "EventHandlerCancelledError": {},
+  "EventHandlerTimeoutError": {},
+  "EventHandlerAbortedError": {},
+  "EventHandlerResultSchemaError": {},
+  "EventHandlerFunc": {
+    "__call__": []
+  },
+  "AsyncEventHandlerFunc": {
+    "__call__": []
+  },
+  "EventHandlerMethod": {
+    "__call__": []
+  },
+  "AsyncEventHandlerMethod": {
+    "__call__": []
+  },
+  "EventHandlerClassMethod": {
+    "__call__": []
+  },
+  "AsyncEventHandlerClassMethod": {
+    "__call__": []
+  },
+  "_format_handler_source_path": [
+    "path",
+    "line_no"
+  ],
+  "_HandlerCacheKey": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "handler"
+    ],
+    "__hash__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ]
+  },
+  "_get_callable_handler_file_path": [
+    "handler_key"
+  ],
+  "_normalize_handler_callable": [
+    "handler"
+  ],
+  "EventHandler": {
+    "model_config": [],
+    "_validate_handler_name_field": [
+      "cls",
+      "value"
+    ],
+    "_validate_eventbus_name_field": [
+      "cls",
+      "value"
+    ],
+    "_normalize_handler_registered_at": [
+      "cls",
+      "value"
+    ],
+    "eventbus_label": [
+      "self"
+    ],
+    "get_callable_handler_name": [
+      "handler"
+    ],
+    "_populate_handler_name": [
+      "cls",
+      "data"
+    ],
+    "model_post_init": [
+      "self",
+      "__context"
+    ],
+    "_handler_async": [
+      "self"
+    ],
+    "compute_handler_id": [
+      "self"
+    ],
+    "label": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "event"
+    ],
+    "from_callable": [
+      "cls"
+    ]
+  },
+  "__all__": [],
+  "logger": [],
+  "T_ExpectedEvent": [],
+  "T_OnEvent": [],
+  "EventPatternType": [],
+  "EventBusMiddlewareInput": [],
+  "_as_any": [
+    "value"
+  ],
+  "_FindWaiter": {},
+  "GlobalEventBusRegistry": {
+    "__init__": [
+      "self"
+    ],
+    "add": [
+      "self",
+      "bus"
+    ],
+    "discard": [
+      "self",
+      "bus"
+    ],
+    "has": [
+      "self",
+      "bus"
+    ],
+    "size": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "__contains__": [
+      "self",
+      "bus"
+    ]
+  },
+  "get_current_event": [],
+  "get_current_handler_id": [],
+  "get_current_eventbus": [],
+  "in_handler_context": [],
+  "EventBus": {
+    "__init_subclass__": [
+      "cls"
+    ],
+    "iter_all_instances": [
+      "cls"
+    ],
+    "__init__": [
+      "self",
+      "name",
+      "event_concurrency",
+      "event_handler_concurrency",
+      "event_handler_completion",
+      "max_history_size",
+      "max_history_drop",
+      "event_timeout",
+      "event_slow_timeout",
+      "event_handler_slow_timeout",
+      "event_handler_detect_file_paths",
+      "middlewares",
+      "id"
+    ],
+    "_normalize_middlewares": [
+      "middlewares"
+    ],
+    "__del__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "label": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "event_bus_serial_lock": [
+      "self"
+    ],
+    "event_global_serial_lock": [
+      "self"
+    ],
+    "_stub_handler_callable": [
+      "_event"
+    ],
+    "_event_json_payload": [
+      "cls",
+      "event"
+    ],
+    "_normalize_json_object": [
+      "value"
+    ],
+    "_normalize_json_object_required": [
+      "cls",
+      "value",
+      "error_message"
+    ],
+    "_normalize_json_string_list": [
+      "value"
+    ],
+    "_upsert_handler_index": [
+      "handlers_by_key",
+      "event_pattern",
+      "handler_id"
+    ],
+    "_hydrate_handler_from_event_result": [
+      "cls",
+      "bus",
+      "event",
+      "result_payload"
+    ],
+    "_hydrate_event_result_from_json": [
+      "cls"
+    ],
+    "model_dump": [
+      "self"
+    ],
+    "model_dump_json": [
+      "self"
+    ],
+    "validate": [
+      "cls",
+      "data"
+    ],
+    "on_event_change": [
+      "self",
+      "event",
+      "status"
+    ],
+    "on_event_result_change": [
+      "self",
+      "event",
+      "event_result",
+      "status"
+    ],
+    "remove_event_from_pending_queue": [
+      "self",
+      "event"
+    ],
+    "mark_pending_queue_task_done": [
+      "self"
+    ],
+    "queue_contains_event_id": [
+      "self",
+      "event_id"
+    ],
+    "is_event_inflight_or_queued": [
+      "self",
+      "event_id"
+    ],
+    "is_event_processing": [
+      "self",
+      "event_id"
+    ],
+    "_resolve_find_waiters": [
+      "self",
+      "event"
+    ],
+    "_wait_for_future_match": [
+      "self",
+      "event_key",
+      "matches",
+      "future"
+    ],
+    "on_bus_handlers_change": [
+      "self",
+      "handler",
+      "registered"
+    ],
+    "_schedule_middleware_task": [
+      "self",
+      "task"
+    ],
+    "_notify_handler_change": [
+      "self",
+      "handler",
+      "registered"
+    ],
+    "_flush_pending_handler_changes": [
+      "self"
+    ],
+    "_resolve_event_slow_timeout": [
+      "event",
+      "eventbus"
+    ],
+    "_resolve_handler_slow_timeout": [
+      "event",
+      "handler",
+      "eventbus"
+    ],
+    "_resolve_handler_timeout": [
+      "event",
+      "handler",
+      "eventbus",
+      "timeout_override"
+    ],
+    "_slow_event_warning_monitor": [
+      "self",
+      "event",
+      "event_slow_timeout"
+    ],
+    "_has_inflight_events_fast": [
+      "self"
+    ],
+    "_mark_event_complete_on_all_buses": [
+      "self",
+      "event"
+    ],
+    "events_pending": [
+      "self"
+    ],
+    "events_started": [
+      "self"
+    ],
+    "events_completed": [
+      "self"
+    ],
+    "on": [
+      "self",
+      "event_pattern",
+      "handler"
+    ],
+    "off": [
+      "self",
+      "event_pattern",
+      "handler"
+    ],
+    "emit": [
+      "self",
+      "event"
+    ],
+    "dispatch": [
+      "self",
+      "event"
+    ],
+    "_remove_indexed_handler": [
+      "self",
+      "event_pattern",
+      "handler_id"
+    ],
+    "find": [
+      "self",
+      "event_type",
+      "where",
+      "child_of",
+      "past",
+      "future"
+    ],
+    "event_is_child_of": [
+      "self",
+      "event",
+      "ancestor"
+    ],
+    "event_is_parent_of": [
+      "self",
+      "event",
+      "descendant"
+    ],
+    "_start": [
+      "self"
+    ],
+    "stop": [
+      "self",
+      "timeout",
+      "clear"
+    ],
+    "wait_until_idle": [
+      "self",
+      "timeout"
+    ],
+    "_run_loop_weak": [
+      "bus_ref"
+    ],
+    "_get_next_event": [
+      "self",
+      "wait_for_timeout"
+    ],
+    "_finalize_local_event_processing": [
+      "self",
+      "event"
+    ],
+    "_mark_event_tree_complete_if_ready": [
+      "self",
+      "root_event"
+    ],
+    "step": [
+      "self",
+      "event",
+      "timeout",
+      "wait_for_timeout"
+    ],
+    "_create_slow_event_warning_timer": [
+      "self",
+      "event"
+    ],
+    "_mark_event_complete_if_ready": [
+      "self",
+      "event"
+    ],
+    "_propagate_parent_completion": [
+      "self",
+      "event"
+    ],
+    "_trim_event_history_if_needed": [
+      "self"
+    ],
+    "_process_event": [
+      "self",
+      "event",
+      "timeout"
+    ],
+    "_get_handlers_for_event": [
+      "self",
+      "event"
+    ],
+    "_run_with_handler_dispatch_context": [
+      "self",
+      "event",
+      "handler_id"
+    ],
+    "_finalize_event_timeout": [
+      "self",
+      "event",
+      "timeout_seconds"
+    ],
+    "_run_handler": [
+      "self",
+      "event",
+      "handler_entry",
+      "timeout"
+    ],
+    "_would_create_loop": [
+      "self",
+      "event",
+      "handler_entry"
+    ],
+    "_handler_dispatched_ancestor": [
+      "self",
+      "event",
+      "handler_id",
+      "visited",
+      "depth"
+    ],
+    "log_tree": [
+      "self"
+    ],
+    "_check_total_memory_usage": [
+      "self"
+    ]
+  },
+  "NATSEventBridge": {
+    "__init__": [
+      "self",
+      "server",
+      "subject"
+    ],
+    "on": [
+      "self",
+      "event_pattern",
+      "handler"
+    ],
+    "emit": [
+      "self",
+      "event"
+    ],
+    "dispatch": [
+      "self",
+      "event"
+    ],
+    "start": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "_ensure_started": [
+      "self"
+    ],
+    "_dispatch_inbound_payload": [
+      "self",
+      "payload"
+    ],
+    "_load_nats": []
+  },
+  "R": [],
+  "P": [],
+  "QueueEntryType": [],
+  "_MONOTONIC_DATETIME_REGEX": [],
+  "_MONOTONIC_DATETIME_LENGTH": [],
+  "_MONOTONIC_EPOCH_ANCHOR_NS": [],
+  "_MONOTONIC_CLOCK_ANCHOR_NS": [],
+  "_last_monotonic_datetime_ns": [],
+  "_last_monotonic_datetime_lock": [],
+  "_format_epoch_ns_to_iso": [
+    "epoch_ns"
+  ],
+  "monotonic_datetime": [
+    "isostring"
+  ],
+  "run_with_timeout": [
+    "awaitable",
+    "timeout"
+  ],
+  "cancel_and_await": [
+    "task",
+    "timeout"
+  ],
+  "_run_with_slow_monitor": [
+    "monitor_factory"
+  ],
+  "QueueShutDown": {},
+  "CleanShutdownQueue": {
+    "iter_items": [
+      "self"
+    ],
+    "remove_item": [
+      "self",
+      "item"
+    ],
+    "shutdown": [
+      "self",
+      "immediate"
+    ],
+    "get": [
+      "self"
+    ],
+    "put": [
+      "self",
+      "item"
+    ],
+    "put_nowait": [
+      "self",
+      "item"
+    ],
+    "get_nowait": [
+      "self"
+    ]
+  },
+  "extract_basemodel_generic_arg": [
+    "cls"
+  ],
+  "time_execution": [
+    "additional_text"
+  ],
+  "log_filtered_traceback": [
+    "exc"
+  ],
+  "BUBUS_LOGGING_LEVEL": [],
+  "LIBRARY_VERSION": [],
+  "EventStatus": {
+    "PENDING": [],
+    "STARTED": [],
+    "COMPLETED": []
+  },
+  "validate_event_name": [
+    "s"
+  ],
+  "validate_python_id_str": [
+    "s"
+  ],
+  "validate_event_path_entry_str": [
+    "s"
+  ],
+  "validate_uuid_str": [
+    "s"
+  ],
+  "EventHandlerConcurrencyMode": {
+    "SERIAL": [],
+    "PARALLEL": []
+  },
+  "EventHandlerCompletionMode": {
+    "ALL": [],
+    "FIRST": []
+  },
+  "EventConcurrencyMode": {
+    "GLOBAL_SERIAL": [],
+    "BUS_SERIAL": [],
+    "PARALLEL": []
+  },
+  "T_EventResultType": [],
+  "RESERVED_USER_EVENT_FIELDS": [],
+  "EventResultFilter": [],
+  "_default_format_exception_for_log": [
+    "exc"
+  ],
+  "_normalize_any_dict": [
+    "value"
+  ],
+  "_normalize_any_list": [
+    "value"
+  ],
+  "_normalize_any_tuple": [
+    "value"
+  ],
+  "EventResult": {
+    "model_config": [],
+    "_serialize_datetime_json": [
+      "value"
+    ],
+    "_serialize_error_json": [
+      "value"
+    ],
+    "_serialize_jsonable": [
+      "cls",
+      "value"
+    ],
+    "_hydrate_handler_from_flat_json": [
+      "cls",
+      "data"
+    ],
+    "_serialize_event_result_json": [
+      "self"
+    ],
+    "handler_id": [
+      "self"
+    ],
+    "handler_name": [
+      "self"
+    ],
+    "eventbus_id": [
+      "self"
+    ],
+    "eventbus_name": [
+      "self"
+    ],
+    "eventbus_label": [
+      "self"
+    ],
+    "handler_completed_signal": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__await__": [
+      "self"
+    ],
+    "update": [
+      "self"
+    ],
+    "_create_slow_handler_warning_timer": [
+      "self",
+      "event",
+      "eventbus",
+      "handler_slow_timeout"
+    ],
+    "_slow_handler_monitor": [
+      "self"
+    ],
+    "_call_handler": [
+      "self",
+      "event",
+      "handler",
+      "dispatch_context"
+    ],
+    "_run_with_timeout": [
+      "self",
+      "event"
+    ],
+    "_on_handler_timeout": [
+      "self",
+      "event"
+    ],
+    "_on_handler_error": [
+      "self",
+      "event",
+      "eventbus",
+      "exc"
+    ],
+    "_on_handler_exit": [
+      "self"
+    ],
+    "run_handler": [
+      "self",
+      "event"
+    ],
+    "log_tree": [
+      "self",
+      "indent",
+      "is_last",
+      "event_children_by_parent"
+    ]
+  },
+  "BaseEvent": {
+    "model_config": [],
+    "_deserialize_event_result_type": [
+      "cls",
+      "value"
+    ],
+    "event_result_type_serializer": [
+      "self",
+      "value"
+    ],
+    "__hash__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "_remove_self_from_queue": [
+      "self",
+      "bus"
+    ],
+    "_iter_eventbuses_for_registry": [
+      "registry_owner"
+    ],
+    "_is_queued_on_any_bus": [
+      "self",
+      "ignore_bus"
+    ],
+    "_process_self_on_all_buses": [
+      "self"
+    ],
+    "_wait_for_completion_inside_handler": [
+      "self"
+    ],
+    "__await__": [
+      "self"
+    ],
+    "event_completed": [
+      "self"
+    ],
+    "first": [
+      "self",
+      "timeout"
+    ],
+    "_normalize_and_validate_event_input": [
+      "cls",
+      "data"
+    ],
+    "_hydrate_event_result_types_from_event": [
+      "self"
+    ],
+    "event_completed_signal": [
+      "self"
+    ],
+    "event_children": [
+      "self"
+    ],
+    "_mark_started": [
+      "self",
+      "started_at"
+    ],
+    "_create_pending_handler_results": [
+      "self",
+      "handlers"
+    ],
+    "_is_first_mode_winning_result": [
+      "event_result"
+    ],
+    "_mark_remaining_first_mode_result_cancelled": [
+      "self",
+      "event_result"
+    ],
+    "_run_handlers": [
+      "self"
+    ],
+    "_event_result_is_truthy": [
+      "event_result"
+    ],
+    "_collect_handler_errors": [
+      "self",
+      "include_cancelled"
+    ],
+    "event_result": [
+      "self",
+      "timeout",
+      "include",
+      "raise_if_any",
+      "raise_if_none"
+    ],
+    "event_results_list": [
+      "self",
+      "timeout",
+      "include",
+      "raise_if_any",
+      "raise_if_none"
+    ],
+    "event_result_update": [
+      "self",
+      "handler",
+      "eventbus"
+    ],
+    "_coerce_typed_result_value": [
+      "value"
+    ],
+    "_mark_completed": [
+      "self",
+      "current_bus"
+    ],
+    "_mark_pending": [
+      "self"
+    ],
+    "event_reset": [
+      "self"
+    ],
+    "_get_handler_lock": [
+      "self"
+    ],
+    "_set_handler_lock": [
+      "self",
+      "lock"
+    ],
+    "_get_dispatch_context": [
+      "self"
+    ],
+    "_set_dispatch_context": [
+      "self",
+      "dispatch_context"
+    ],
+    "_are_all_children_complete": [
+      "self",
+      "_visited"
+    ],
+    "_cancel_pending_child_processing": [
+      "self",
+      "error"
+    ],
+    "event_log_safe_summary": [
+      "self"
+    ],
+    "event_log_tree": [
+      "self",
+      "indent",
+      "is_last",
+      "event_children_by_parent"
+    ],
+    "bus": [
+      "self"
+    ],
+    "event_bus": [
+      "self"
+    ]
+  },
+  "attr_name_allowed_on_event": [
+    "key"
+  ],
+  "pydantic_builtin_attrs": [],
+  "event_builtin_attrs": [],
+  "illegal_attrs": [],
+  "JSONLEventBridge": {
+    "__init__": [
+      "self",
+      "path"
+    ],
+    "on": [
+      "self",
+      "event_pattern",
+      "handler"
+    ],
+    "emit": [
+      "self",
+      "event"
+    ],
+    "dispatch": [
+      "self",
+      "event"
+    ],
+    "start": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "_ensure_started": [
+      "self"
+    ],
+    "_listen_loop": [
+      "self"
+    ],
+    "_poll_new_lines": [
+      "self"
+    ],
+    "_dispatch_inbound_payload": [
+      "self",
+      "payload"
+    ],
+    "_read_appended_text": [
+      "self",
+      "offset"
+    ],
+    "_append_line": [
+      "self",
+      "payload"
+    ]
+  },
+  "LockManagerProtocol": {
+    "get_lock_for_event": [
+      "self",
+      "bus",
+      "event"
+    ],
+    "get_lock_for_event_handler": [
+      "self",
+      "bus",
+      "event",
+      "event_result"
+    ],
+    "_run_with_event_lock": [
+      "self",
+      "bus",
+      "event"
+    ],
+    "_run_with_handler_lock": [
+      "self",
+      "bus",
+      "event",
+      "event_result"
+    ],
+    "_run_with_handler_dispatch_context": [
+      "self",
+      "bus",
+      "event"
+    ]
+  },
+  "ReentrantLock": {
+    "__init__": [
+      "self"
+    ],
+    "_get_semaphore": [
+      "self"
+    ],
+    "_depth": [
+      "self"
+    ],
+    "_set_depth": [
+      "self",
+      "depth"
+    ],
+    "mark_held_in_current_context": [
+      "self"
+    ],
+    "reset_context_mark": [
+      "token"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ],
+    "locked": [
+      "self"
+    ]
+  },
+  "LockManager": {
+    "get_lock_for_event": [
+      "self",
+      "bus",
+      "event"
+    ],
+    "get_lock_for_event_handler": [
+      "self",
+      "bus",
+      "event",
+      "event_result"
+    ],
+    "_run_with_event_lock": [
+      "self",
+      "bus",
+      "event"
+    ],
+    "_run_with_handler_lock": [
+      "self",
+      "bus",
+      "event",
+      "event_result"
+    ],
+    "_run_with_handler_dispatch_context": [
+      "self",
+      "bus",
+      "event"
+    ]
+  },
+  "format_timestamp": [
+    "dt"
+  ],
+  "format_result_value": [
+    "value"
+  ],
+  "log_event_tree": [
+    "event",
+    "indent",
+    "is_last",
+    "event_children_by_parent"
+  ],
+  "log_event_result_tree": [
+    "result",
+    "indent",
+    "is_last",
+    "event_children_by_parent"
+  ],
+  "log_eventbus_tree": [
+    "eventbus"
+  ],
+  "log_timeout_tree": [
+    "event",
+    "timed_out_result"
+  ],
+  "_SYNTHETIC_EVENT_SUFFIXES": [],
+  "EventBusMiddleware": {
+    "on_event_change": [
+      "self",
+      "eventbus",
+      "event",
+      "status"
+    ],
+    "on_event_result_change": [
+      "self",
+      "eventbus",
+      "event",
+      "event_result",
+      "status"
+    ],
+    "on_bus_handlers_change": [
+      "self",
+      "eventbus",
+      "handler",
+      "registered"
+    ]
+  },
+  "OtelTracingMiddleware": {
+    "__init__": [
+      "self",
+      "tracer",
+      "trace_api"
+    ],
+    "_event_key": [
+      "eventbus",
+      "event"
+    ],
+    "_handler_key": [
+      "eventbus",
+      "event",
+      "event_result"
+    ],
+    "_start_span": [
+      "self",
+      "name",
+      "parent_span"
+    ],
+    "_find_parent_span": [
+      "self",
+      "event"
+    ],
+    "_ensure_event_span": [
+      "self",
+      "eventbus",
+      "event"
+    ],
+    "on_event_change": [
+      "self",
+      "eventbus",
+      "event",
+      "status"
+    ],
+    "on_event_result_change": [
+      "self",
+      "eventbus",
+      "event",
+      "event_result",
+      "status"
+    ]
+  },
+  "BusHandlerRegisteredEvent": {},
+  "BusHandlerUnregisteredEvent": {},
+  "AutoErrorEvent": {},
+  "AutoReturnEvent": {},
+  "AutoErrorEventMiddleware": {
+    "on_event_result_change": [
+      "self",
+      "eventbus",
+      "event",
+      "event_result",
+      "status"
+    ]
+  },
+  "AutoReturnEventMiddleware": {
+    "on_event_result_change": [
+      "self",
+      "eventbus",
+      "event",
+      "event_result",
+      "status"
+    ]
+  },
+  "AutoHandlerChangeEventMiddleware": {
+    "on_bus_handlers_change": [
+      "self",
+      "eventbus",
+      "handler",
+      "registered"
+    ]
+  },
+  "WALEventBusMiddleware": {
+    "__init__": [
+      "self",
+      "wal_path"
+    ],
+    "on_event_change": [
+      "self",
+      "eventbus",
+      "event",
+      "status"
+    ],
+    "_write_line": [
+      "self",
+      "line"
+    ]
+  },
+  "LoggerEventBusMiddleware": {
+    "__init__": [
+      "self",
+      "log_path"
+    ],
+    "on_event_change": [
+      "self",
+      "eventbus",
+      "event",
+      "status"
+    ],
+    "_write_line": [
+      "self",
+      "line"
+    ]
+  },
+  "SQLiteHistoryMirrorMiddleware": {
+    "__init__": [
+      "self",
+      "db_path"
+    ],
+    "close": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc",
+      "tb"
+    ],
+    "__del__": [
+      "self"
+    ],
+    "on_event_change": [
+      "self",
+      "eventbus",
+      "event",
+      "status"
+    ],
+    "on_event_result_change": [
+      "self",
+      "eventbus",
+      "event",
+      "event_result",
+      "status"
+    ],
+    "_init_db": [
+      "self"
+    ],
+    "_insert_event_snapshot": [
+      "self",
+      "eventbus",
+      "event_id",
+      "event_type",
+      "event_status",
+      "phase",
+      "event_json"
+    ],
+    "_insert_event_result_snapshot": [
+      "self",
+      "event_result_id",
+      "event_id",
+      "handler_id",
+      "handler_name",
+      "eventbus_id",
+      "eventbus_name",
+      "event_type",
+      "status",
+      "phase",
+      "result_repr",
+      "error_repr",
+      "event_result_json"
+    ]
+  },
+  "BaseEventT": [],
+  "TExpectedEvent": [],
+  "EventHistory": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "max_history_size",
+      "max_history_drop"
+    ],
+    "add_event": [
+      "self",
+      "event"
+    ],
+    "get_event": [
+      "self",
+      "event_id"
+    ],
+    "remove_event": [
+      "self",
+      "event_id"
+    ],
+    "has_event": [
+      "self",
+      "event_id"
+    ],
+    "normalize_event_pattern": [
+      "event_pattern"
+    ],
+    "event_is_child_of": [
+      "self",
+      "event",
+      "ancestor"
+    ],
+    "find": [
+      "self",
+      "event_type",
+      "where",
+      "child_of",
+      "past",
+      "future",
+      "event_is_child_of",
+      "wait_for_future_match"
+    ],
+    "trim_event_history": [
+      "self"
+    ]
+  },
+  "EventClass": [],
+  "_BASE_EVENT_FIELD_NAMES": [],
+  "_EMPTY": [],
+  "T_Result": [],
+  "_HasBus": {},
+  "GeneratedEvents": {},
+  "_custom_event_fields": [
+    "event_cls"
+  ],
+  "_event_field_default": [
+    "field"
+  ],
+  "_event_result_annotation": [
+    "event_cls"
+  ],
+  "_callable_params": [
+    "func"
+  ],
+  "_event_payload": [
+    "event"
+  ],
+  "_annotation_allows_none": [
+    "annotation"
+  ],
+  "_make_event_class": [
+    "event_name",
+    "func"
+  ],
+  "make_events": [
+    "events"
+  ],
+  "make_handler": [
+    "func"
+  ],
+  "_build_event_method": [
+    "class_name",
+    "method_name",
+    "event_cls"
+  ],
+  "wrap": [
+    "class_name",
+    "methods"
+  ],
+  "_IDENTIFIER_RE": [],
+  "_EVENT_PAYLOAD_COLUMN": [],
+  "_validate_identifier": [
+    "identifier"
+  ],
+  "_is_str_keyed_dict": [
+    "value"
+  ],
+  "_split_bridge_payload": [
+    "payload"
+  ],
+  "SQLiteEventBridge": {
+    "__init__": [
+      "self",
+      "path",
+      "table"
+    ],
+    "on": [
+      "self",
+      "event_pattern",
+      "handler"
+    ],
+    "emit": [
+      "self",
+      "event"
+    ],
+    "dispatch": [
+      "self",
+      "event"
+    ],
+    "start": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "_ensure_started": [
+      "self"
+    ],
+    "_listen_loop": [
+      "self"
+    ],
+    "_dispatch_inbound_payload": [
+      "self",
+      "payload"
+    ],
+    "_connect": [
+      "self"
+    ],
+    "_init_db": [
+      "self"
+    ],
+    "_refresh_column_cache": [
+      "self"
+    ],
+    "_ensure_columns": [
+      "self",
+      "keys"
+    ],
+    "_ensure_base_indexes": [
+      "self"
+    ],
+    "_upsert_payload": [
+      "self",
+      "payload",
+      "payload_keys"
+    ],
+    "_set_cursor_to_latest_row": [
+      "self"
+    ],
+    "_fetch_new_rows": [
+      "self",
+      "last_event_created_at",
+      "last_event_id"
+    ]
+  },
+  "portalocker_logger": [],
+  "portalocker_root_logger": [],
+  "T": [],
+  "RetryErrorMatcher": [],
+  "RetryOnErrors": [],
+  "GLOBAL_RETRY_SEMAPHORE_LOCK": [],
+  "MULTIPROCESS_SEMAPHORE_DIR": [],
+  "MULTIPROCESS_SEMAPHORE_LOCK": [],
+  "_last_overload_check": [],
+  "_overload_check_interval": [],
+  "_active_retry_operations": [],
+  "_active_operations_lock": [],
+  "_check_system_overload": [],
+  "_get_semaphore_key": [
+    "base_name",
+    "semaphore_scope",
+    "args"
+  ],
+  "_get_or_create_semaphore": [
+    "sem_key",
+    "semaphore_limit",
+    "semaphore_scope"
+  ],
+  "_calculate_semaphore_timeout": [
+    "semaphore_timeout",
+    "timeout",
+    "semaphore_limit"
+  ],
+  "_callable_name": [
+    "func"
+  ],
+  "_resolve_semaphore_name": [
+    "func_name",
+    "semaphore_name",
+    "args"
+  ],
+  "_matches_retry_on_error": [
+    "error",
+    "retry_on_errors"
+  ],
+  "_acquire_multiprocess_semaphore": [
+    "semaphore",
+    "sem_timeout",
+    "sem_key",
+    "semaphore_lax",
+    "semaphore_limit",
+    "timeout"
+  ],
+  "_acquire_asyncio_semaphore": [
+    "semaphore",
+    "sem_timeout",
+    "sem_key",
+    "semaphore_lax",
+    "semaphore_limit",
+    "timeout",
+    "sem_start"
+  ],
+  "_execute_with_retries": [
+    "func",
+    "args",
+    "kwargs",
+    "max_attempts",
+    "timeout",
+    "retry_after",
+    "retry_backoff_factor",
+    "retry_on_errors",
+    "start_time",
+    "sem_start",
+    "semaphore_limit"
+  ],
+  "_track_active_operations": [
+    "increment"
+  ],
+  "_check_system_overload_if_needed": [],
+  "retry": [
+    "retry_after",
+    "max_attempts",
+    "timeout",
+    "retry_on_errors",
+    "retry_backoff_factor",
+    "semaphore_limit",
+    "semaphore_name",
+    "semaphore_lax",
+    "semaphore_scope",
+    "semaphore_timeout"
+  ],
+  "_DEFAULT_POSTGRES_TABLE": [],
+  "_DEFAULT_POSTGRES_CHANNEL": [],
+  "_parse_table_url": [
+    "table_url"
+  ],
+  "_index_name": [
+    "table",
+    "suffix"
+  ],
+  "PostgresEventBridge": {
+    "__init__": [
+      "self",
+      "table_url",
+      "channel"
+    ],
+    "on": [
+      "self",
+      "event_pattern",
+      "handler"
+    ],
+    "emit": [
+      "self",
+      "event"
+    ],
+    "dispatch": [
+      "self",
+      "event"
+    ],
+    "start": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "_ensure_started": [
+      "self"
+    ],
+    "_dispatch_by_event_id": [
+      "self",
+      "event_id"
+    ],
+    "_dispatch_inbound_payload": [
+      "self",
+      "payload"
+    ],
+    "_ensure_table_exists": [
+      "self"
+    ],
+    "_ensure_base_indexes": [
+      "self"
+    ],
+    "_refresh_column_cache": [
+      "self"
+    ],
+    "_ensure_columns": [
+      "self",
+      "keys"
+    ],
+    "_load_asyncpg": []
+  },
+  "UNIX_SOCKET_MAX_PATH_CHARS": [],
+  "_Endpoint": {
+    "__init__": [
+      "self",
+      "raw",
+      "scheme"
+    ]
+  },
+  "_parse_endpoint": [
+    "raw_endpoint"
+  ],
+  "EventBridge": {
+    "__init__": [
+      "self",
+      "send_to",
+      "listen_on"
+    ],
+    "on": [
+      "self",
+      "event_pattern",
+      "handler"
+    ],
+    "emit": [
+      "self",
+      "event"
+    ],
+    "dispatch": [
+      "self",
+      "event"
+    ],
+    "start": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "_ensure_listener_started": [
+      "self"
+    ],
+    "_handle_unix_client": [
+      "self",
+      "reader",
+      "writer"
+    ],
+    "_handle_http_client": [
+      "self",
+      "reader",
+      "writer"
+    ],
+    "_handle_incoming_bytes": [
+      "self",
+      "payload"
+    ],
+    "_send_unix": [
+      "self",
+      "endpoint",
+      "payload"
+    ],
+    "_send_http": [
+      "self",
+      "endpoint",
+      "payload"
+    ],
+    "_write_http_response": [
+      "writer"
+    ]
+  },
+  "HTTPEventBridge": {
+    "__init__": [
+      "self",
+      "send_to",
+      "listen_on"
+    ]
+  },
+  "SocketEventBridge": {
+    "__init__": [
+      "self",
+      "path"
+    ]
+  },
+  "__getattr__": [
+    "name"
+  ],
+  "_NON_PRIMITIVE_SCHEMA_TYPES": [],
+  "JSON_SCHEMA_DRAFT": [],
+  "_get_cached_type_adapter": [
+    "result_type"
+  ],
+  "_as_string_key_dict": [
+    "value"
+  ],
+  "_as_non_string_sequence": [
+    "value"
+  ],
+  "_iter_string_key_dicts": [
+    "value"
+  ],
+  "_extract_non_null_json_schema_type": [
+    "schema"
+  ],
+  "_json_schema_allows_null": [
+    "schema"
+  ],
+  "_nullable_type": [
+    "resolved_type"
+  ],
+  "normalize_result_dict": [
+    "value"
+  ],
+  "_json_schema_primitive_type": [
+    "schema"
+  ],
+  "_json_schema_identifier": [
+    "schema"
+  ],
+  "get_field_params_from_field_schema": [
+    "field_schema"
+  ],
+  "_json_schema_ref_name": [
+    "schema"
+  ],
+  "_build_model_fields_from_schema": [
+    "schema"
+  ],
+  "_create_dynamic_model": [],
+  "pydantic_model_from_json_schema": [
+    "result_type"
+  ],
+  "pydantic_model_to_json_schema": [
+    "result_type"
+  ],
+  "result_type_identifier_from_schema": [
+    "result_type"
+  ],
+  "validate_result_against_type": [
+    "result_type",
+    "result"
+  ],
+  "_DEFAULT_REDIS_CHANNEL": [],
+  "_DB_INIT_KEY": [],
+  "_parse_redis_url": [
+    "redis_url",
+    "channel"
+  ],
+  "RedisEventBridge": {
+    "__init__": [
+      "self",
+      "redis_url",
+      "channel"
+    ],
+    "on": [
+      "self",
+      "event_pattern",
+      "handler"
+    ],
+    "emit": [
+      "self",
+      "event"
+    ],
+    "dispatch": [
+      "self",
+      "event"
+    ],
+    "start": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "_ensure_started": [
+      "self"
+    ],
+    "_listen_loop": [
+      "self"
+    ],
+    "_dispatch_inbound_payload": [
+      "self",
+      "payload"
+    ],
+    "_close_pubsub": [
+      "self",
+      "pubsub"
+    ],
+    "_close_redis_client": [
+      "client"
+    ],
+    "_load_redis_asyncio": []
+  }
+}
