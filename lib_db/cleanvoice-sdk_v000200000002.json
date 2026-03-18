@@ -1,0 +1,480 @@
+{
+  "__version__": [],
+  "__all__": [],
+  "ConfigInput": [],
+  "ProgressCallback": [],
+  "_CleanvoiceBase": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "_coerce_client_config": [
+      "config"
+    ],
+    "from_env": [
+      "cls"
+    ],
+    "_build_processing_config": [
+      "file_input",
+      "config",
+      "overrides"
+    ],
+    "_build_edit_request": [
+      "file_url",
+      "config"
+    ],
+    "_emit_progress": [
+      "progress_callback",
+      "response",
+      "edit_id",
+      "attempt"
+    ],
+    "_transform_result": [
+      "response"
+    ],
+    "_should_download": [
+      "output_path",
+      "download"
+    ],
+    "_failure_message": [
+      "edit_id",
+      "response"
+    ]
+  },
+  "Cleanvoice": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ],
+    "process": [
+      "self",
+      "file_input",
+      "config",
+      "progress_callback"
+    ],
+    "create_edit": [
+      "self",
+      "file_input",
+      "config"
+    ],
+    "get_edit": [
+      "self",
+      "edit_id"
+    ],
+    "upload_file": [
+      "self",
+      "file_path",
+      "filename"
+    ],
+    "download_file": [
+      "self",
+      "url",
+      "output_path"
+    ],
+    "process_and_download": [
+      "self",
+      "file_input",
+      "output_path",
+      "config",
+      "progress_callback"
+    ],
+    "check_auth": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "_poll_for_completion": [
+      "self",
+      "edit_id",
+      "max_attempts",
+      "initial_delay",
+      "progress_callback",
+      "success_result_grace_attempts",
+      "max_transient_errors"
+    ]
+  },
+  "AsyncCleanvoice": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ],
+    "process": [
+      "self",
+      "file_input",
+      "config",
+      "progress_callback"
+    ],
+    "create_edit": [
+      "self",
+      "file_input",
+      "config"
+    ],
+    "get_edit": [
+      "self",
+      "edit_id"
+    ],
+    "upload_file": [
+      "self",
+      "file_path",
+      "filename"
+    ],
+    "download_file": [
+      "self",
+      "url",
+      "output_path"
+    ],
+    "process_and_download": [
+      "self",
+      "file_input",
+      "output_path",
+      "config",
+      "progress_callback"
+    ],
+    "check_auth": [
+      "self"
+    ],
+    "aclose": [
+      "self"
+    ],
+    "_poll_for_completion": [
+      "self",
+      "edit_id",
+      "max_attempts",
+      "initial_delay",
+      "progress_callback",
+      "success_result_grace_attempts",
+      "max_transient_errors"
+    ]
+  },
+  "DEFAULT_V2_BASE_URL": [],
+  "DEFAULT_V1_BASE_URL": [],
+  "USER_AGENT": [],
+  "DEFAULT_MAX_RETRIES": [],
+  "DEFAULT_RETRYABLE_STATUS_CODES": [],
+  "NON_IDEMPOTENT_RETRYABLE_STATUS_CODES": [],
+  "IDEMPOTENT_METHODS": [],
+  "DEFAULT_RETRY_BASE_DELAY": [],
+  "DEFAULT_RETRY_MAX_DELAY": [],
+  "UPLOAD_CHUNK_SIZE": [],
+  "_resolve_v2_base_url": [
+    "config"
+  ],
+  "_resolve_v1_base_url": [
+    "config"
+  ],
+  "_extract_error_details": [
+    "status_code",
+    "response_body",
+    "response_text"
+  ],
+  "_is_idempotent_method": [
+    "method"
+  ],
+  "_should_retry_status": [
+    "method",
+    "status_code"
+  ],
+  "_get_retry_delay": [
+    "retry_count"
+  ],
+  "_should_retry_requests_exception": [
+    "method",
+    "error"
+  ],
+  "_should_retry_httpx_exception": [
+    "method",
+    "error"
+  ],
+  "is_transient_api_error": [
+    "error"
+  ],
+  "_iter_file_chunks": [
+    "file_path",
+    "chunk_size"
+  ],
+  "ApiClient": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "_make_request": [
+      "self",
+      "method",
+      "endpoint",
+      "data",
+      "timeout",
+      "base_url"
+    ],
+    "create_edit": [
+      "self",
+      "request"
+    ],
+    "retrieve_edit": [
+      "self",
+      "edit_id"
+    ],
+    "get_signed_upload_url": [
+      "self",
+      "filename"
+    ],
+    "upload_file": [
+      "self",
+      "file_path",
+      "signed_url"
+    ],
+    "check_auth": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "AsyncApiClient": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "_make_request": [
+      "self",
+      "method",
+      "endpoint",
+      "data",
+      "timeout",
+      "base_url"
+    ],
+    "create_edit": [
+      "self",
+      "request"
+    ],
+    "retrieve_edit": [
+      "self",
+      "edit_id"
+    ],
+    "get_signed_upload_url": [
+      "self",
+      "filename"
+    ],
+    "upload_file": [
+      "self",
+      "file_path",
+      "signed_url"
+    ],
+    "check_auth": [
+      "self"
+    ],
+    "aclose": [
+      "self"
+    ]
+  },
+  "AccountInfo": {},
+  "ProcessingConfig": {
+    "model_config": [],
+    "normalize_legacy_aliases": [
+      "cls",
+      "data"
+    ],
+    "sound_studio": [
+      "self"
+    ]
+  },
+  "EditInput": {},
+  "CreateEditRequest": {},
+  "CreateEditResponse": {},
+  "EditStatus": [],
+  "EditStatistics": {
+    "model_config": []
+  },
+  "Chapter": {},
+  "Summarization": {},
+  "TranscriptionWord": {},
+  "TranscriptionParagraph": {},
+  "DetailedTranscription": {},
+  "SimpleTranscriptionParagraph": {},
+  "Transcription": {},
+  "EditResult": {
+    "validate_summarization": [
+      "cls",
+      "v"
+    ],
+    "validate_transcription": [
+      "cls",
+      "v"
+    ]
+  },
+  "ProcessingProgress": {},
+  "RetrieveEditResponse": {
+    "normalize_empty_result": [
+      "cls",
+      "value"
+    ]
+  },
+  "CleanvoiceConfig": {},
+  "ProcessResult": {
+    "media": [
+      "self"
+    ],
+    "is_video": [
+      "self"
+    ],
+    "download_audio": [
+      "self",
+      "output_path",
+      "as_numpy"
+    ],
+    "download_audio_async": [
+      "self",
+      "output_path",
+      "as_numpy"
+    ],
+    "download_media": [
+      "self",
+      "output_path"
+    ],
+    "download_media_async": [
+      "self",
+      "output_path"
+    ],
+    "download_audio_array": [
+      "self",
+      "output_path"
+    ],
+    "download_audio_array_async": [
+      "self",
+      "output_path"
+    ]
+  },
+  "ApiError": {
+    "__init__": [
+      "self",
+      "message",
+      "status_code",
+      "error_code"
+    ]
+  },
+  "FileValidationError": {},
+  "AudioInfo": {},
+  "VideoInfo": {},
+  "AUDIO_EXTENSIONS": [],
+  "VIDEO_EXTENSIONS": [],
+  "ArrayWithSampleRate": [],
+  "MediaInput": [],
+  "AudioArrayResult": [],
+  "BASE_INSTALL": [],
+  "_missing_media_dependency": [
+    "package_name",
+    "feature"
+  ],
+  "_import_numpy": [
+    "feature"
+  ],
+  "_import_librosa": [
+    "feature"
+  ],
+  "_import_soundfile": [
+    "feature"
+  ],
+  "_import_mutagen_file": [],
+  "_import_av": [],
+  "is_url": [
+    "file_path"
+  ],
+  "is_valid_audio_file": [
+    "file_path"
+  ],
+  "is_valid_video_file": [
+    "file_path"
+  ],
+  "is_valid_media_file": [
+    "file_path"
+  ],
+  "_looks_like_audio_array": [
+    "value"
+  ],
+  "_is_audio_array_with_sample_rate": [
+    "file_input"
+  ],
+  "_coerce_audio_array_input": [
+    "file_input"
+  ],
+  "_write_audio_array_to_temp_file": [
+    "file_input"
+  ],
+  "_resolve_upload_source": [
+    "file_input"
+  ],
+  "_resolve_download_destination": [
+    "url",
+    "destination",
+    "default_filename"
+  ],
+  "signed_url_to_public_url": [
+    "signed_url"
+  ],
+  "download_file": [
+    "url",
+    "destination"
+  ],
+  "load_audio_array": [
+    "file_path"
+  ],
+  "download_file_async": [
+    "url",
+    "destination"
+  ],
+  "load_audio_array_async": [
+    "file_path"
+  ],
+  "get_audio_info": [
+    "file_path"
+  ],
+  "get_video_info": [
+    "file_path"
+  ],
+  "extract_audio_from_video": [
+    "video_path",
+    "output_path"
+  ],
+  "normalize_file_input": [
+    "file_input",
+    "api_client"
+  ],
+  "normalize_file_input_async": [
+    "file_input",
+    "api_client"
+  ],
+  "upload_local_file": [
+    "file_path",
+    "api_client",
+    "filename"
+  ],
+  "upload_local_file_async": [
+    "file_path",
+    "api_client",
+    "filename"
+  ],
+  "validate_config": [
+    "config"
+  ],
+  "get_file_info": [
+    "file_path"
+  ]
+}
