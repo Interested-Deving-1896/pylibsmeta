@@ -1,0 +1,1055 @@
+{
+  "ConfigValidationError": {
+    "__init__": [
+      "self"
+    ],
+    "from_error": [
+      "cls",
+      "err",
+      "title",
+      "desc",
+      "parent",
+      "show_config"
+    ],
+    "_format": [
+      "self"
+    ]
+  },
+  "ARGS_FIELD": [],
+  "ARGS_FIELD_ALIAS": [],
+  "RESERVED_FIELDS": [],
+  "RESERVED_FIELDS_REVERSE": [],
+  "SECTION_PREFIX": [],
+  "VARIABLE_RE": [],
+  "CustomInterpolation": {
+    "before_read": [
+      "self",
+      "parser",
+      "section",
+      "option",
+      "value"
+    ],
+    "_coerce_for_string_context": [
+      "self",
+      "v"
+    ],
+    "before_get": [
+      "self",
+      "parser",
+      "section",
+      "option",
+      "value",
+      "defaults"
+    ],
+    "interpolate": [
+      "self",
+      "parser",
+      "option",
+      "accum",
+      "rest",
+      "section",
+      "map",
+      "depth"
+    ],
+    "_get_section_name": [
+      "self",
+      "name"
+    ]
+  },
+  "get_configparser": [
+    "interpolate"
+  ],
+  "Config": {
+    "__init__": [
+      "self",
+      "data"
+    ],
+    "interpolate": [
+      "self"
+    ],
+    "interpret_config": [
+      "self",
+      "config"
+    ],
+    "replace_section_refs": [
+      "self",
+      "config",
+      "parent"
+    ],
+    "_interpret_value": [
+      "self",
+      "value"
+    ],
+    "_get_section_ref": [
+      "self",
+      "value"
+    ],
+    "copy": [
+      "self"
+    ],
+    "merge": [
+      "self",
+      "updates",
+      "remove_extra"
+    ],
+    "_sort": [
+      "self",
+      "data"
+    ],
+    "_set_overrides": [
+      "self",
+      "config",
+      "overrides"
+    ],
+    "_validate_sections": [
+      "self",
+      "config"
+    ],
+    "from_str": [
+      "self",
+      "text"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "to_bytes": [
+      "self"
+    ],
+    "from_bytes": [
+      "self",
+      "bytes_data"
+    ],
+    "to_disk": [
+      "self",
+      "path"
+    ],
+    "from_disk": [
+      "self",
+      "path"
+    ]
+  },
+  "_mask_positional_args": [
+    "name"
+  ],
+  "try_load_json": [
+    "value"
+  ],
+  "try_dump_json": [
+    "value",
+    "data"
+  ],
+  "deep_merge_configs": [
+    "config",
+    "defaults"
+  ],
+  "__all__": [],
+  "_PromisedType": [],
+  "EmptySchema": {
+    "model_config": []
+  },
+  "Promise": {
+    "return_type": [
+      "self"
+    ],
+    "validate": [
+      "self"
+    ],
+    "resolve": [
+      "self",
+      "validate"
+    ],
+    "from_dict": [
+      "cls",
+      "registry",
+      "values"
+    ]
+  },
+  "_recursive_resolve": [
+    "obj",
+    "validate"
+  ],
+  "registry": {
+    "has": [
+      "cls",
+      "registry_name",
+      "func_name"
+    ],
+    "get": [
+      "cls",
+      "registry_name",
+      "func_name"
+    ],
+    "resolve": [
+      "cls",
+      "config"
+    ],
+    "fill": [
+      "cls",
+      "config"
+    ],
+    "is_promise": [
+      "cls",
+      "obj"
+    ],
+    "get_constructor": [
+      "cls",
+      "obj"
+    ],
+    "parse_args": [
+      "cls",
+      "obj"
+    ],
+    "make_promise_schema": [
+      "cls",
+      "obj"
+    ],
+    "_make_unresolved_schema": [
+      "cls",
+      "schema",
+      "config"
+    ],
+    "_make_unresolved_promise_schema": [
+      "cls",
+      "obj"
+    ]
+  },
+  "_is_config_section": [
+    "obj"
+  ],
+  "_make_dummy_schema": [
+    "config"
+  ],
+  "alias_generator": [
+    "name"
+  ],
+  "fill_config": [
+    "registry",
+    "config",
+    "schema"
+  ],
+  "_is_generator": [
+    "obj"
+  ],
+  "_filter_generators": [
+    "config"
+  ],
+  "validate_resolved": [
+    "config",
+    "schema"
+  ],
+  "fill_defaults": [
+    "registry",
+    "config",
+    "schema"
+  ],
+  "remove_extra_keys": [
+    "config",
+    "schema"
+  ],
+  "insert_promises": [
+    "registry",
+    "config",
+    "resolve",
+    "validate"
+  ],
+  "resolve_promises": [
+    "config",
+    "validate"
+  ],
+  "fix_positionals": [
+    "config"
+  ],
+  "_deep_copy_with_uncopyable": [
+    "obj",
+    "memo"
+  ],
+  "apply_overrides": [
+    "config",
+    "overrides"
+  ],
+  "make_func_schema": [
+    "func"
+  ],
+  "_is_iterable_type": [
+    "annotation"
+  ],
+  "_is_sequence_type": [
+    "annotation"
+  ],
+  "_contains_generator_type": [
+    "annotation"
+  ],
+  "_generator_safe_schema": [
+    "source_type",
+    "handler"
+  ],
+  "_make_generator_safe": [
+    "annotation"
+  ],
+  "_reorder_union_for_generators": [
+    "annotation"
+  ],
+  "process_param_annotation": [
+    "annotation"
+  ],
+  "process_param_default": [
+    "default"
+  ],
+  "get_param_field": [
+    "name",
+    "annotation",
+    "default",
+    "kind"
+  ],
+  "get_func_fields": [
+    "func"
+  ],
+  "_DIn": [],
+  "Decorator": {
+    "__call__": [
+      "self",
+      "name"
+    ]
+  },
+  "PartialT": [],
+  "partial": [
+    "func"
+  ],
+  "Generator": {
+    "__get_pydantic_core_schema__": [
+      "cls",
+      "_source_type",
+      "_handler"
+    ],
+    "__validate__": [
+      "cls",
+      "v",
+      "info"
+    ]
+  },
+  "DEFAULT_FROZEN_DICT_ERROR": [],
+  "DEFAULT_FROZEN_LIST_ERROR": [],
+  "SimpleFrozenDict": {
+    "__init__": [
+      "self"
+    ],
+    "__setitem__": [
+      "self",
+      "key",
+      "value"
+    ],
+    "pop": [
+      "self",
+      "key",
+      "default"
+    ],
+    "update": [
+      "self",
+      "other"
+    ],
+    "__deepcopy__": [
+      "self",
+      "memo"
+    ]
+  },
+  "SimpleFrozenList": {
+    "__init__": [
+      "self"
+    ],
+    "append": [
+      "self"
+    ],
+    "clear": [
+      "self"
+    ],
+    "extend": [
+      "self"
+    ],
+    "insert": [
+      "self"
+    ],
+    "pop": [
+      "self"
+    ],
+    "remove": [
+      "self"
+    ],
+    "reverse": [
+      "self"
+    ],
+    "sort": [
+      "self"
+    ],
+    "__deepcopy__": [
+      "self",
+      "memo"
+    ]
+  },
+  "is_promise": [
+    "obj"
+  ],
+  "make_generator": [],
+  "assert_not_consumed": [
+    "gen",
+    "expected_first"
+  ],
+  "assert_consumed": [
+    "gen"
+  ],
+  "TestPydanticGeneratorBehavior": {
+    "test_generator_annotation": [
+      "self"
+    ],
+    "test_iterator_annotation_not_supported": [
+      "self"
+    ],
+    "test_iterable_annotation": [
+      "self"
+    ],
+    "test_list_annotation": [
+      "self"
+    ]
+  },
+  "TestPydanticUnionBehavior": {
+    "test_union_generator_first": [
+      "self"
+    ],
+    "test_union_generator_last": [
+      "self"
+    ],
+    "test_union_iterator_not_supported": [
+      "self"
+    ],
+    "test_union_iterable_first": [
+      "self"
+    ],
+    "test_union_iterable_last": [
+      "self"
+    ]
+  },
+  "TestPydanticParameterizedTypes": {
+    "test_generator_parameterized": [
+      "self"
+    ],
+    "test_iterator_parameterized_not_supported": [
+      "self"
+    ],
+    "test_iterable_parameterized": [
+      "self"
+    ]
+  },
+  "TestPydanticUnionParameterized": {
+    "test_union_generator_parameterized_last": [
+      "self"
+    ],
+    "test_union_generator_parameterized_first": [
+      "self"
+    ],
+    "test_union_iterable_parameterized_last": [
+      "self"
+    ],
+    "test_union_iterable_parameterized_first": [
+      "self"
+    ]
+  },
+  "TestUnionOrderMatters": {
+    "test_generator_before_list_ok": [
+      "self"
+    ],
+    "test_generator_after_list_consumed": [
+      "self"
+    ],
+    "test_iterable_before_list_ok": [
+      "self"
+    ],
+    "test_iterable_after_list_consumed": [
+      "self"
+    ]
+  },
+  "TestGeneratorSafeWrapper": {
+    "test_generator_safe_wrapper_prevents_consumption": [
+      "self"
+    ],
+    "test_generator_safe_wrapper_allows_other_types": [
+      "self"
+    ],
+    "test_make_func_schema_with_generator_union": [
+      "self"
+    ]
+  },
+  "pytest_addoption": [
+    "parser"
+  ],
+  "pathy_fixture": [],
+  "test_frozen_list": [],
+  "test_frozen_dict": [],
+  "test_frozen_struct_deepcopy": [
+    "frozen_type"
+  ],
+  "FloatOrSeq": [],
+  "InT": [],
+  "OutT": [],
+  "Cat": {},
+  "my_registry_namespace": [],
+  "my_registry": {
+    "namespace": [],
+    "cats": [],
+    "optimizers": [],
+    "schedules": [],
+    "initializers": [],
+    "layers": []
+  },
+  "catsie_v1": [
+    "evil",
+    "cute"
+  ],
+  "catsie_v2": [
+    "evil",
+    "cute",
+    "cute_level"
+  ],
+  "catsie": [
+    "arg"
+  ],
+  "Adam": [
+    "learn_rate"
+  ],
+  "warmup_linear": [
+    "initial_rate",
+    "warmup_steps",
+    "total_steps"
+  ],
+  "int_cat": [
+    "value_in",
+    "value_out"
+  ],
+  "make_my_optimizer": [
+    "learn_rate",
+    "beta1"
+  ],
+  "decaying": [
+    "base_rate",
+    "repeat"
+  ],
+  "mapping_cat": [
+    "mapping_table",
+    "default"
+  ],
+  "string_annotated_mapping_cat": [
+    "mapping_table",
+    "default"
+  ],
+  "make_tempdir": [],
+  "IntsSchema": {
+    "model_config": []
+  },
+  "StrsSchema": {
+    "model_config": []
+  },
+  "DefaultsSchema": {
+    "model_config": []
+  },
+  "LooseSchema": {
+    "model_config": []
+  },
+  "ComplexSchema": {},
+  "good_catsie": [],
+  "ok_catsie": [],
+  "bad_catsie": [],
+  "worst_catsie": [],
+  "cats_var_args": [],
+  "cats_var_args_optional": [],
+  "cats_no_args": [],
+  "cats_str_arg": [
+    "hi"
+  ],
+  "cats_optional_str_arg": [
+    "hi"
+  ],
+  "cats_return_int": [
+    "hi"
+  ],
+  "cats_var_str_args": [],
+  "cats_dict_arg": [
+    "schedules"
+  ],
+  "cat_generic": [
+    "cat"
+  ],
+  "cats_var_args_optional_untyped": [],
+  "test_fill_from_schema": [
+    "config",
+    "schema",
+    "expected"
+  ],
+  "test_fill_from_promises": [
+    "config",
+    "expected"
+  ],
+  "test_fill_from_both": [
+    "config",
+    "schema",
+    "expected"
+  ],
+  "test_resolve": [
+    "config",
+    "expected"
+  ],
+  "test_fill_allow_invalid": [
+    "config",
+    "schema",
+    "expected"
+  ],
+  "test_fill_raise_invalid": [
+    "config",
+    "schema"
+  ],
+  "test_resolve_allow_invalid": [
+    "config",
+    "schema",
+    "expected"
+  ],
+  "test_resolve_raise_invalid": [
+    "config",
+    "schema"
+  ],
+  "test_is_promise": [],
+  "test_get_constructor": [],
+  "test_parse_args": [],
+  "test_make_promise_schema": [],
+  "test_create_registry": [],
+  "test_registry_methods": [],
+  "test_resolve_schema": [],
+  "test_make_config_positional_args": [],
+  "test_make_config_positional_args_complex": [],
+  "test_validation_no_validate": [],
+  "test_validation_generators_iterable": [],
+  "test_validation_unset_type_hints": [],
+  "test_validation_bad_function": [],
+  "test_objects_from_config": [],
+  "test_partials_from_config": [],
+  "test_partials_from_config_nested": [],
+  "schedule1": [],
+  "optimizer1": [
+    "rate"
+  ],
+  "optimizer2": [
+    "schedules"
+  ],
+  "test_fill_validate_generator": [
+    "config",
+    "expected"
+  ],
+  "test_resolve_validate_generator": [
+    "config",
+    "paths"
+  ],
+  "test_handle_generic_type": [],
+  "test_fill_config_dict_return_type": [],
+  "catsie_with_alias": [
+    "validate"
+  ],
+  "catsie_with_model_alias": [
+    "model_config"
+  ],
+  "test_reserved_aliases": [
+    "config",
+    "filled",
+    "resolved"
+  ],
+  "test_config_validation_error_custom": [],
+  "test_config_fill_without_resolve": [],
+  "simple_types": [],
+  "list_types": [],
+  "sequence_types": [],
+  "generator_types": [],
+  "non_union_types": [],
+  "union_types": [
+    "draw"
+  ],
+  "all_annotations": [],
+  "TestProcessParamAnnotation": {
+    "test_empty_annotation_returns_any": [
+      "self"
+    ],
+    "test_simple_types_unchanged": [
+      "self",
+      "annotation"
+    ],
+    "test_list_types_unchanged": [
+      "self",
+      "annotation"
+    ],
+    "test_union_with_generator_wrapped": [
+      "self"
+    ],
+    "test_union_without_generator_unchanged": [
+      "self"
+    ]
+  },
+  "TestProcessParamDefault": {
+    "test_empty_default_returns_ellipsis": [
+      "self"
+    ],
+    "test_int_default_unchanged": [
+      "self",
+      "value"
+    ],
+    "test_str_default_unchanged": [
+      "self",
+      "value"
+    ],
+    "test_bool_default_unchanged": [
+      "self",
+      "value"
+    ],
+    "test_none_default_unchanged": [
+      "self"
+    ],
+    "test_list_default_unchanged": [
+      "self",
+      "value"
+    ]
+  },
+  "TestGetParamField": {
+    "test_required_param": [
+      "self"
+    ],
+    "test_optional_param": [
+      "self"
+    ],
+    "test_no_annotation": [
+      "self"
+    ],
+    "test_var_positional": [
+      "self"
+    ],
+    "test_reserved_field_name_validate": [
+      "self"
+    ]
+  },
+  "TestReorderUnionForGenerators": {
+    "test_non_union_unchanged": [
+      "self"
+    ],
+    "test_union_no_generator_unchanged": [
+      "self"
+    ],
+    "test_union_no_sequence_unchanged": [
+      "self"
+    ],
+    "test_union_generator_after_list_reordered": [
+      "self"
+    ],
+    "test_union_iterable_after_list_reordered": [
+      "self"
+    ]
+  },
+  "test_get_param_field_property": [
+    "name",
+    "annotation",
+    "has_default",
+    "default_value"
+  ],
+  "test_var_positional_wraps_in_sequence": [
+    "name",
+    "annotation"
+  ],
+  "test_union_with_generators_wrapped": [
+    "annotation"
+  ],
+  "EXAMPLE_CONFIG": [],
+  "OPTIMIZER_CFG": [],
+  "HelloIntsSchema": {
+    "model_config": []
+  },
+  "test_read_config": [],
+  "test_optimizer_config": [],
+  "test_config_to_str": [],
+  "test_config_to_str_creates_intermediate_blocks": [],
+  "test_config_to_str_escapes": [],
+  "test_config_roundtrip_bytes": [],
+  "test_config_roundtrip_disk": [],
+  "test_config_roundtrip_disk_respects_path_subclasses": [
+    "pathy_fixture"
+  ],
+  "test_config_to_str_invalid_defaults": [],
+  "test_validation_custom_types": [],
+  "catsie_666": [],
+  "catsie_777": [
+    "y"
+  ],
+  "test_positional_args_round_trip": [
+    "cfg"
+  ],
+  "test_positional_args_fill_round_trip": [
+    "cfg",
+    "expected"
+  ],
+  "test_positional_args_resolve_round_trip": [
+    "cfg",
+    "expected"
+  ],
+  "test_handle_error_duplicate_keys": [
+    "cfg"
+  ],
+  "test_cant_expand_undefined_block": [
+    "cfg",
+    "is_valid"
+  ],
+  "test_resolve_prefilled_values": [],
+  "test_deepcopy_config": [],
+  "test_deepcopy_config_pickle": [],
+  "test_config_to_str_simple_promises": [],
+  "test_config_from_str_invalid_section": [],
+  "test_config_to_str_order": [],
+  "test_config_interpolation": [
+    "d"
+  ],
+  "test_config_interpolation_lists": [],
+  "test_config_interpolation_sections": [
+    "d"
+  ],
+  "test_config_from_str_overrides": [],
+  "test_config_no_interpolation": [
+    "d"
+  ],
+  "test_config_no_interpolation_registry": [],
+  "test_config_deep_merge": [],
+  "test_config_deep_merge_variables": [],
+  "test_config_to_str_roundtrip": [],
+  "test_config_is_interpolated": [],
+  "test_config_serialize_custom_sort": [
+    "section_order",
+    "expected_str",
+    "expected_keys"
+  ],
+  "test_config_custom_sort_preserve": [],
+  "test_config_pickle": [],
+  "test_config_parsing_error": [],
+  "test_config_dataclasses": [],
+  "test_config_interpolates": [
+    "greeting",
+    "value",
+    "expected"
+  ],
+  "test_config_overrides": [
+    "greeting",
+    "value",
+    "expected"
+  ],
+  "test_warn_single_quotes": [],
+  "test_parse_strings_interpretable_as_ints": [],
+  "TestTryLoadJson": {
+    "test_json_literals": [
+      "self",
+      "inp",
+      "expected"
+    ],
+    "test_quoted_strings": [
+      "self",
+      "inp",
+      "expected"
+    ],
+    "test_invalid_json_returned_as_is": [
+      "self",
+      "inp"
+    ]
+  },
+  "TestPlainExtendedInterpolation": {
+    "_parse": [
+      "self",
+      "config_str"
+    ],
+    "_parse_value": [
+      "self",
+      "raw_value"
+    ],
+    "test_unquoted_json_literals": [
+      "self",
+      "ini_value",
+      "expected_type",
+      "expected_value"
+    ],
+    "test_quoted_strings_stay_strings": [
+      "self",
+      "ini_value",
+      "expected"
+    ],
+    "test_value_interpolation": [
+      "self"
+    ]
+  },
+  "assert_values_equal": [
+    "actual",
+    "expected"
+  ],
+  "field_names": [],
+  "scalar_values": [],
+  "DICT_KEY_ALPHABET": [],
+  "config_values": [],
+  "config_section": [],
+  "section_names": [],
+  "nested_config": [
+    "draw"
+  ],
+  "config_with_positional_args": [
+    "draw"
+  ],
+  "config_with_interpolation": [
+    "draw"
+  ],
+  "ini_string_values": [],
+  "ini_int_values": [],
+  "ini_float_values": [],
+  "ini_bool_values": [],
+  "ini_scalar_value": [],
+  "ini_list_value": [],
+  "ini_value": [],
+  "config_string": [
+    "draw"
+  ],
+  "test_config_section_roundtrip": [
+    "section"
+  ],
+  "safe_scalar_values": [],
+  "test_scalar_value_roundtrip": [
+    "value"
+  ],
+  "test_list_value_roundtrip": [
+    "items"
+  ],
+  "test_dict_value_roundtrip": [
+    "mapping"
+  ],
+  "test_multiple_sections_roundtrip": [
+    "section1",
+    "section2"
+  ],
+  "test_nested_sections_roundtrip": [
+    "data"
+  ],
+  "test_positional_args_roundtrip": [
+    "data"
+  ],
+  "test_variable_interpolation": [
+    "data"
+  ],
+  "test_config_string_parsing": [
+    "data"
+  ],
+  "test_config_string_roundtrip": [
+    "data"
+  ],
+  "test_string_with_whitespace_stays_string": [
+    "value"
+  ],
+  "test_numeric_string_stays_string": [
+    "value"
+  ],
+  "test_negative_numeric_string_stays_string": [
+    "value"
+  ],
+  "config_with_catsie": [
+    "draw"
+  ],
+  "config_with_catsie_v2": [
+    "draw"
+  ],
+  "test_registry_resolve_catsie_v1": [
+    "data"
+  ],
+  "test_registry_resolve_catsie_v2": [
+    "data"
+  ],
+  "test_registry_roundtrip_with_resolve": [
+    "data"
+  ],
+  "multiple_registry_sections": [
+    "draw"
+  ],
+  "test_multiple_registry_sections_resolve": [
+    "data"
+  ],
+  "test_registry_fill_adds_defaults": [
+    "evil",
+    "cute"
+  ],
+  "make_test_func_int": [
+    "x"
+  ],
+  "make_test_func_str": [
+    "x"
+  ],
+  "make_test_func_bool": [
+    "x"
+  ],
+  "make_test_func_float": [
+    "x"
+  ],
+  "make_test_func_optional": [
+    "x",
+    "y"
+  ],
+  "make_test_func_all_optional": [
+    "x",
+    "y"
+  ],
+  "make_test_func_list": [
+    "x"
+  ],
+  "make_test_func_typed_list": [
+    "x"
+  ],
+  "TestMakeFuncSchema": {
+    "test_schema_accepts_correct_int": [
+      "self"
+    ],
+    "test_schema_rejects_wrong_type_for_int": [
+      "self"
+    ],
+    "test_schema_accepts_correct_str": [
+      "self"
+    ],
+    "test_schema_accepts_correct_bool": [
+      "self"
+    ],
+    "test_schema_accepts_correct_float": [
+      "self"
+    ],
+    "test_schema_requires_required_param": [
+      "self"
+    ],
+    "test_schema_uses_default_for_optional": [
+      "self"
+    ],
+    "test_schema_all_optional_uses_defaults": [
+      "self"
+    ],
+    "test_schema_rejects_extra_fields": [
+      "self"
+    ],
+    "test_schema_accepts_list": [
+      "self"
+    ]
+  },
+  "test_schema_int_property": [
+    "value"
+  ],
+  "test_schema_str_property": [
+    "value"
+  ],
+  "test_schema_bool_property": [
+    "value"
+  ],
+  "test_schema_float_property": [
+    "value"
+  ],
+  "test_schema_optional_property": [
+    "required",
+    "optional"
+  ],
+  "test_schema_list_property": [
+    "items"
+  ]
+}

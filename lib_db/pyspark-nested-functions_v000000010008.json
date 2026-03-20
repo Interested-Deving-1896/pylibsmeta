@@ -1,0 +1,1019 @@
+{
+  "FIXTURES_DIR": [],
+  "log": [],
+  "SparkSchemaUtilityTest": {
+    "test_one_level_nested_array": [
+      "self"
+    ],
+    "test_field_exist": [
+      "self"
+    ],
+    "test_flatten_schema": [
+      "self"
+    ],
+    "test_fields_flatten_schema_with_parent_fields": [
+      "self"
+    ],
+    "test_fields_for_schema": [
+      "self"
+    ],
+    "test_paren_child_fields_found_correctly": [
+      "self"
+    ],
+    "test_parent_child_fields_raise_exception_if_no_parent": [
+      "self"
+    ]
+  },
+  "parse_df_sample": [
+    "spark",
+    "path"
+  ],
+  "SparkBaseTest": {
+    "__init__": [
+      "self",
+      "methodName"
+    ],
+    "setup": [
+      "self"
+    ],
+    "teardown": [
+      "self"
+    ]
+  },
+  "ExprTest": {
+    "test_validate_email_with_regex_and_lower_email_field": [
+      "self"
+    ],
+    "test_validate_email_with_regex_and_lower_email_field_using_struct": [
+      "self"
+    ],
+    "test_expr_nested_array": [
+      "self"
+    ],
+    "test_expr_on_root_level": [
+      "self"
+    ],
+    "test_expr_factory_throws_exception_if_expr_is_empty": [
+      "self"
+    ],
+    "test_expr_factory_throws_exception_if_non_existing_field_and_parent_of_field": [
+      "self"
+    ],
+    "test_expr_ancestor_struct_is_null": [
+      "self"
+    ]
+  },
+  "HashingWithSaltTest": {
+    "test_root_level_hash_with_salt": [
+      "self"
+    ],
+    "test_root_level_hash_with_salt_empty_field": [
+      "self"
+    ],
+    "test_hash_with_salt_processor_throws_exception_if_field_is_invalid": [
+      "self"
+    ]
+  },
+  "HashingTest": {
+    "test_root_level_hash": [
+      "self"
+    ],
+    "test_root_level_primitive_array": [
+      "self"
+    ],
+    "test_two_level_nested_array": [
+      "self"
+    ],
+    "test_one_level_nested_primitive_array": [
+      "self"
+    ],
+    "test_three_level_nested_array": [
+      "self"
+    ],
+    "test_three_level_nested_field": [
+      "self"
+    ],
+    "test_two_level_nested_field": [
+      "self"
+    ],
+    "test_double_array": [
+      "self"
+    ],
+    "test_hashing_array_with_predicated_on_root_level_works_fine": [
+      "self"
+    ],
+    "test_hashing_array_with_predicated_on_nested_level_works_fine": [
+      "self"
+    ],
+    "test_four_level_primitive_array": [
+      "self"
+    ],
+    "test_hash_processor_throws_exception_if_field_is_invalid": [
+      "self"
+    ]
+  },
+  "hash_udf_str": [
+    "value"
+  ],
+  "hash_udf": [
+    "value"
+  ],
+  "TruncateTest": {
+    "test_primitive_array": [
+      "self"
+    ],
+    "test_primitive_array_negative_supported": [
+      "self"
+    ],
+    "__execute_array_flow": [
+      "self",
+      "field",
+      "size",
+      "expected_result"
+    ],
+    "test_one_level_nested": [
+      "self"
+    ],
+    "test_root_level": [
+      "self"
+    ],
+    "test_root_level_reversed": [
+      "self"
+    ],
+    "__execute_test_root_level": [
+      "self",
+      "field",
+      "size",
+      "expected_result"
+    ],
+    "test_truncate_processor_factory_throws_exception_if_field_is_invalid": [
+      "self"
+    ]
+  },
+  "StringRegexpExtractTest": {
+    "test_regexp_extract_working_fine": [
+      "self"
+    ],
+    "test_factory_throws_if_regexp_is_not_valid": [
+      "self"
+    ],
+    "test_when_field_is_not_found_then_calculation_ignored": [
+      "self"
+    ],
+    "test_regexp_extractor_processor_factory_throws_exception_if_field_is_invalid": [
+      "self"
+    ]
+  },
+  "NullabilityTest": {
+    "test_nullability": [
+      "self"
+    ],
+    "test_nullability_with_predicate": [
+      "self"
+    ],
+    "test_nullify_processor_factory_throws_exception_if_field_is_invalid": [
+      "self"
+    ]
+  },
+  "FieldRenameProcessorTest": {
+    "test_field_name_could_be_renamed": [
+      "self"
+    ]
+  },
+  "AppendNameFn": {
+    "convert_field_name": [
+      "self",
+      "old_field_name"
+    ]
+  },
+  "FillNaTest": {
+    "test_fillna_root": [
+      "self"
+    ],
+    "test_fillna_root_array_is_null": [
+      "self"
+    ],
+    "test_fillna_null_inside_root_array": [
+      "self"
+    ],
+    "test_fillna_boolean_field_within_struct_within_nested_arrays": [
+      "self"
+    ],
+    "test_fillna_integer_field_within_struct_within_nested_arrays": [
+      "self"
+    ],
+    "test_fillna_null_element_within_array_of_arrays": [
+      "self"
+    ],
+    "test_fillna_multiple_root_columns": [
+      "self"
+    ],
+    "test_fillna_ancestor_struct_is_null": [
+      "self"
+    ]
+  },
+  "BinaryGeneralizationProcessorTest": {
+    "test_data_could_be_generalized_if_null": [
+      "self"
+    ],
+    "test_data_could_be_generalized_if_empty": [
+      "self"
+    ],
+    "test_data_could_be_generalized_if_not_empty": [
+      "self"
+    ],
+    "test_binary_processor_factory_throw_exception_in_case_column_contains_illegal_charactes": [
+      "self"
+    ],
+    "__parse_original_sample": [
+      "self"
+    ]
+  },
+  "FilterTest": {
+    "__parse_data": [
+      "df"
+    ],
+    "test_data_could_be_filtered": [
+      "self"
+    ],
+    "test_data_could_be_filtered_string_case": [
+      "self"
+    ]
+  },
+  "DateFormatProcessorTest": {
+    "test_date_formatted_throws_exception_if_field_is_invalid": [
+      "self"
+    ],
+    "test_date_formatted_in_array_with_predicated_on_root_level": [
+      "self"
+    ],
+    "test_date_formatted_no_predicate_test": [
+      "self"
+    ],
+    "test_date_formatted_no_predicate_on_array": [
+      "self"
+    ],
+    "test_date_formatted_null_remains_null": [
+      "self"
+    ],
+    "test_date_formatted_throws_exception_if_input_pattern_is_incorrect": [
+      "self"
+    ],
+    "test_date_formatted_throws_exception_if_output_pattern_is_incorrect": [
+      "self"
+    ],
+    "__parse_data_dateformatting": [
+      "self",
+      "df"
+    ]
+  },
+  "DropTest": {
+    "COMPLEX_SCHEMA": [],
+    "test_drop_parent_because_children_dropped": [
+      "self"
+    ],
+    "test_only_drop_single_field": [
+      "self"
+    ],
+    "test_drop_all_fields": [
+      "self"
+    ],
+    "test_drop_parent_and_one_of_multiple_children": [
+      "self"
+    ],
+    "test_drop_ripples_through": [
+      "self"
+    ],
+    "test_drop_parent_iso_all_childs": [
+      "self"
+    ],
+    "test_drop_parent_and_field_at_same_level": [
+      "self"
+    ],
+    "test_drop_while_walking_tree": [
+      "self"
+    ],
+    "test_drop_3_levels_deep": [
+      "self"
+    ]
+  },
+  "RedactTest": {
+    "test_redact_root_level_preserve_null": [
+      "self"
+    ],
+    "test_redact_root_level": [
+      "self"
+    ],
+    "test_redact_nested_structure": [
+      "self"
+    ],
+    "test_redact_nested_structure_null_value_preserved": [
+      "self"
+    ],
+    "test_redact_throws_exception_if_field_is_not_primitive": [
+      "self"
+    ],
+    "test_redact_does_not_throw_exception_if_field_does_not_exist": [
+      "self"
+    ],
+    "parse_df": [
+      "self"
+    ],
+    "test_default_redacted_values_has_no_casting_issues": [
+      "self"
+    ]
+  },
+  "DuplicateTest": {
+    "test_duplicate_root": [
+      "self"
+    ],
+    "test_duplicate_root_array": [
+      "self"
+    ],
+    "test_duplicate_field_within_struct_within_nested_arrays": [
+      "self"
+    ],
+    "test_duplicate_array_within_arrays": [
+      "self"
+    ]
+  },
+  "AddOperationsTest": {
+    "test_boolean_field_within_struct_within_nested_arrays_to_char_1": [
+      "self"
+    ],
+    "test_add_nested_field_when_ancestor_struct_null": [
+      "self"
+    ]
+  },
+  "StringContactTest": {
+    "test_one_level_nested": [
+      "self"
+    ],
+    "test_str_concat_processor_factory_throws_exception_if_field_is_invalid": [
+      "self"
+    ],
+    "test_str_concat_processor_factory_not_throws_exception_if_field_is_invalid": [
+      "self"
+    ]
+  },
+  "WhitelistTest": {
+    "test_filter_parent_select_root_common_ancestor": [
+      "self"
+    ],
+    "test_filter_parent_select_level_2_common_ancestor": [
+      "self"
+    ],
+    "test_filter_parent_select_level_2_common_ancestor_2": [
+      "self"
+    ],
+    "test_filter_parent_empty_set": [
+      "self"
+    ],
+    "test_filter_parent_single_root_element": [
+      "self"
+    ],
+    "test_filter_parent_two_root_elements": [
+      "self"
+    ],
+    "test_whitelist_select_root_common_ancestor": [
+      "self"
+    ],
+    "test_whitelist_ignored_unknown_fields": [
+      "self"
+    ],
+    "test_whitelist_can_handle_array_in_array": [
+      "self"
+    ],
+    "test_whitelist_non_existing_fields_empty_df_returned": [
+      "self"
+    ],
+    "test_whitelist_drops_nested_structure": [
+      "self"
+    ],
+    "test_whitelist_multiple_root_fields": [
+      "self"
+    ],
+    "test_whitelist_keep_parent_if_only_child_whitelisted": [
+      "self"
+    ]
+  },
+  "FieldValidatorTest": {
+    "test_predicate_processor_parse_input": [
+      "self"
+    ]
+  },
+  "RegexpValidationTest": {
+    "test_regexp_validation": [
+      "self"
+    ]
+  },
+  "string": [],
+  "flatten_schema": [
+    "schema",
+    "parent",
+    "separator",
+    "include_parent_as_field"
+  ],
+  "__find_string_for_schema": [
+    "parent",
+    "field",
+    "separator",
+    "include_parent"
+  ],
+  "__concat_with_parent": [
+    "parent",
+    "field",
+    "separator"
+  ],
+  "SparkSchemaUtility": {
+    "flatten_schema_include_parents_fields": [
+      "schema"
+    ],
+    "flatten_schema": [
+      "schema"
+    ],
+    "does_column_exist": [
+      "schema",
+      "column"
+    ],
+    "parents_for_field": [
+      "field"
+    ],
+    "parent_child_elements": [
+      "column",
+      "raise_exception_if_no_parent"
+    ],
+    "__get_schema_for_field": [
+      "schema",
+      "col"
+    ],
+    "__get_type_for_field": [
+      "schema",
+      "field"
+    ],
+    "is_array": [
+      "schema",
+      "field"
+    ],
+    "is_struct": [
+      "schema",
+      "field"
+    ],
+    "schema_for_field": [
+      "schema",
+      "field"
+    ],
+    "__schema_for_field_rec": [
+      "schema",
+      "field"
+    ]
+  },
+  "distinct": [
+    "sequence"
+  ],
+  "flatten": [
+    "t"
+  ],
+  "binary_generalization": [
+    "df",
+    "field"
+  ],
+  "__binary_generalize": [
+    "primitive_column"
+  ],
+  "str_regx_extract": [
+    "df",
+    "field",
+    "pattern",
+    "group_index_to_extract"
+  ],
+  "__extract": [
+    "primitive_value",
+    "pattern",
+    "group_index_to_extract"
+  ],
+  "df_filter": [
+    "df",
+    "predicate"
+  ],
+  "apply_terminal_operation": [
+    "df",
+    "field",
+    "f"
+  ],
+  "apply_terminal_operation_with_predicate": [
+    "df",
+    "field",
+    "f",
+    "predicate_key",
+    "predicate_value"
+  ],
+  "LambdaBasedTerminalOperation": {
+    "__init__": [
+      "self",
+      "column",
+      "f"
+    ],
+    "transform_primitive": [
+      "self",
+      "primitive_value",
+      "fieldType"
+    ]
+  },
+  "LambdaBasedTerminalOperationPredicate": {
+    "__init__": [
+      "self",
+      "column",
+      "f",
+      "predicate_key",
+      "predicate_value"
+    ],
+    "transform_primitive": [
+      "self",
+      "primitive_value",
+      "fieldType"
+    ]
+  },
+  "drop": [
+    "df",
+    "fields_to_drop"
+  ],
+  "DropProcessor": {
+    "schema_util": [],
+    "__init__": [
+      "self",
+      "fields_to_drop"
+    ],
+    "is_field_or_ancestor_in_fields_to_drop": [
+      "field",
+      "fields_to_drop"
+    ],
+    "consolidate_fields_to_drop": [
+      "cls",
+      "dataframe_schema",
+      "fields_to_drop"
+    ],
+    "process": [
+      "self",
+      "df"
+    ],
+    "_process_field_with": [
+      "self",
+      "schema",
+      "current_column_name",
+      "next",
+      "previous",
+      "current_column"
+    ],
+    "apply_terminal_operation_on_structure": [
+      "self",
+      "schema",
+      "column",
+      "column_name",
+      "previous"
+    ],
+    "apply_terminal_operation_on_root_level": [
+      "self",
+      "df",
+      "column_name"
+    ]
+  },
+  "redact": [
+    "df",
+    "field"
+  ],
+  "MIN_SHORT_VALUE": [],
+  "MIN_INTEGER_VALUE": [],
+  "MIN_BYTE_VALUE": [],
+  "DEFAULT_DECIMAL_TYPE": [],
+  "column_name_with_dedicated_field_type": [
+    "fieldType"
+  ],
+  "RedactProcessor": {
+    "__init__": [
+      "self",
+      "column_to_process"
+    ],
+    "process": [
+      "self",
+      "df"
+    ],
+    "transform_primitive": [
+      "self",
+      "primitive_value",
+      "fieldType"
+    ]
+  },
+  "fillna": [
+    "df",
+    "value",
+    "subset"
+  ],
+  "__col_name_can_be_filled_with_value": [
+    "schema",
+    "col_name",
+    "value"
+  ],
+  "FillNaProcessor": {
+    "__init__": [
+      "self",
+      "column_to_process",
+      "value"
+    ],
+    "__coalesce": [
+      "self",
+      "primitive_value"
+    ],
+    "apply_terminal_operation_on_root_level": [
+      "self",
+      "df",
+      "column_name"
+    ],
+    "apply_terminal_operation_on_structure": [
+      "self",
+      "schema",
+      "column",
+      "column_name",
+      "previous"
+    ]
+  },
+  "str_concat": [
+    "df",
+    "field",
+    "str_to_add"
+  ],
+  "__str_concat": [
+    "primitive_value",
+    "value_to_add"
+  ],
+  "LambdaBasedAddOperation": {
+    "__init__": [
+      "self",
+      "column_to_process",
+      "new_column_name",
+      "f"
+    ],
+    "transform_primitive": [
+      "self",
+      "primitive_value",
+      "fieldType"
+    ]
+  },
+  "add_nested_field": [
+    "df",
+    "column_to_process",
+    "new_column_name",
+    "f"
+  ],
+  "rename": [
+    "df",
+    "rename_func"
+  ],
+  "rename_with_strategy": [
+    "df",
+    "rename_func"
+  ],
+  "rename_to_parquet_compliant": [
+    "df"
+  ],
+  "FieldRenameProcessor": {
+    "__init__": [
+      "self",
+      "rename_strategy"
+    ],
+    "process": [
+      "self",
+      "df"
+    ]
+  },
+  "FieldRenameFunc": {
+    "convert_field_name": [
+      "self",
+      "old_field_name"
+    ]
+  },
+  "RenameLambda": {
+    "__init__": [
+      "self",
+      "rename_func"
+    ],
+    "convert_field_name": [
+      "self",
+      "old_field_name"
+    ]
+  },
+  "SchemaRenamer": {
+    "rename_fields": [
+      "self",
+      "dataTypeArg",
+      "field_rename_func"
+    ],
+    "__update_field_name": [
+      "self",
+      "field",
+      "rename_func"
+    ]
+  },
+  "ParquetComplianceFn": {
+    "convert_field_name": [
+      "self",
+      "old_field_name"
+    ]
+  },
+  "format_date": [
+    "df",
+    "field",
+    "current_date_format",
+    "target_date_format"
+  ],
+  "format_date_with_predicate": [
+    "df",
+    "field",
+    "current_date_format",
+    "target_date_format",
+    "predicate_key",
+    "predicate_value"
+  ],
+  "__format_date": [
+    "primitive_column",
+    "current_date_format",
+    "target_date_format"
+  ],
+  "expr": [
+    "df",
+    "field",
+    "expr"
+  ],
+  "ExprProcessor": {
+    "__init__": [
+      "self",
+      "column_to_process",
+      "param_expr",
+      "new_column_name"
+    ],
+    "apply_terminal_operation_on_root_level": [
+      "self",
+      "df",
+      "column_name"
+    ],
+    "expression": [
+      "self"
+    ],
+    "apply_terminal_operation_on_structure": [
+      "self",
+      "schema",
+      "column",
+      "column_name",
+      "previous"
+    ]
+  },
+  "duplicate": [
+    "df",
+    "column_to_duplicate",
+    "duplicated_column_name"
+  ],
+  "DuplicateProcessor": {
+    "__init__": [
+      "self",
+      "column_to_duplicate",
+      "duplicated_column_name"
+    ],
+    "apply_terminal_operation_on_root_level": [
+      "self",
+      "df",
+      "column_name"
+    ],
+    "apply_terminal_operation_on_structure": [
+      "self",
+      "schema",
+      "column",
+      "column_name",
+      "previous"
+    ]
+  },
+  "truncate": [
+    "df",
+    "field",
+    "character_size"
+  ],
+  "__truncate": [
+    "primitive_value",
+    "character_size"
+  ],
+  "DEFAULT_SALT_SEPARATOR": [],
+  "DEFAULT_SALT_VALUE": [],
+  "hash_field": [
+    "df",
+    "field",
+    "num_bits"
+  ],
+  "hash_field_with_salt": [
+    "df",
+    "field",
+    "salt",
+    "separator",
+    "num_bits"
+  ],
+  "hash_field_with_predicate": [
+    "df",
+    "field",
+    "predicate_key",
+    "predicate_value",
+    "num_bits"
+  ],
+  "__apply_hash": [
+    "c",
+    "num_bits"
+  ],
+  "nullify": [
+    "df",
+    "field"
+  ],
+  "nullify_with_predicate": [
+    "df",
+    "field",
+    "predicate_key",
+    "predicate_value"
+  ],
+  "__nullify": [],
+  "whitelist": [
+    "df",
+    "fields"
+  ],
+  "WhitelistProcessor": {
+    "schema_util": [],
+    "__init__": [
+      "self",
+      "whitelist_fields"
+    ],
+    "process": [
+      "self",
+      "df"
+    ],
+    "find_fields_to_drop": [
+      "flattened_fields",
+      "whitelist_fields"
+    ],
+    "is_field_or_ancestor_in_whitelist_fields": [
+      "field",
+      "whitelist_fields"
+    ],
+    "no_fields_to_select": [
+      "cls",
+      "df",
+      "whitelist_fields"
+    ]
+  },
+  "filter_only_parents_fields": [
+    "fields"
+  ],
+  "__replace_elements_with_roots": [
+    "fields",
+    "roots"
+  ],
+  "__replace_elements_with_root": [
+    "fields",
+    "root"
+  ],
+  "AddOperationProcessor": {
+    "__init__": [
+      "self",
+      "column_to_process",
+      "new_column_name"
+    ],
+    "transform_primitive": [
+      "self",
+      "primitive_value",
+      "fieldType"
+    ],
+    "apply_terminal_operation_on_root_level": [
+      "self",
+      "df",
+      "column_name"
+    ],
+    "apply_terminal_operation_on_structure": [
+      "self",
+      "schema",
+      "column",
+      "column_name",
+      "previous"
+    ]
+  },
+  "TerminalOperationProcessorWithPredicate": {
+    "__init__": [
+      "self",
+      "column_to_process",
+      "p"
+    ],
+    "apply_terminal_operation_on_root_level": [
+      "self",
+      "df",
+      "column_name"
+    ],
+    "apply_complex_transformation": [
+      "self",
+      "current_column",
+      "current_column_name",
+      "fieldType"
+    ]
+  },
+  "PredicateProcessorParameters": {},
+  "TerminalOperationProcessor": {
+    "transform_primitive": [
+      "self",
+      "primitive_value",
+      "fieldType"
+    ],
+    "apply_terminal_operation_on_root_level": [
+      "self",
+      "df",
+      "column_name"
+    ],
+    "apply_terminal_operation_on_structure": [
+      "self",
+      "schema",
+      "column",
+      "column_name",
+      "previous"
+    ],
+    "apply_complex_transformation": [
+      "self",
+      "current_column",
+      "current_column_name",
+      "fieldType"
+    ]
+  },
+  "CoreProcessor": {
+    "process": [
+      "self",
+      "df"
+    ]
+  },
+  "AnyLevelCoreProcessor": {
+    "__init__": [
+      "self",
+      "column_to_process"
+    ],
+    "process": [
+      "self",
+      "df"
+    ],
+    "apply_terminal_operation_on_root_level": [
+      "self",
+      "df",
+      "column_name"
+    ],
+    "apply_terminal_operation_on_structure": [
+      "self",
+      "schema",
+      "column",
+      "column_name",
+      "previous"
+    ],
+    "_process_field_with": [
+      "self",
+      "schema",
+      "current_column_name",
+      "next",
+      "previous",
+      "current_column"
+    ],
+    "_process_field_recursive": [
+      "self",
+      "schema",
+      "current_column_name",
+      "next",
+      "previous",
+      "current_column"
+    ],
+    "__next_column": [
+      "self",
+      "current_column",
+      "current_column_name"
+    ],
+    "__is_root_level_transformation": [
+      "column"
+    ],
+    "__parse_head_tail": [
+      "param"
+    ],
+    "__fill_null_struct_with_null_fields": [
+      "column",
+      "column_name",
+      "dataframe_schema"
+    ]
+  },
+  "VALID_FIELD_NAME_PATTERN": [],
+  "validate_field_name_or_throw": [
+    "field"
+  ],
+  "field_is_valid": [
+    "field"
+  ],
+  "validate_regexp_or_throw": [
+    "pattern"
+  ],
+  "regexp_is_valid": [
+    "pattern"
+  ]
+}
