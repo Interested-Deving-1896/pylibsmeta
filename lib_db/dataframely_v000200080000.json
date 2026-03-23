@@ -1,0 +1,3474 @@
+{
+  "MySchema": {
+    "a": []
+  },
+  "MySchema2": {
+    "a": [],
+    "b": []
+  },
+  "MyCollection": {
+    "a_smaller_ten": [
+      "self"
+    ],
+    "foo": [
+      "self"
+    ]
+  },
+  "test_create_collection_new": [],
+  "test_create_collection_extension": [],
+  "pytestmark": [],
+  "Schema": {
+    "x": [],
+    "y": [],
+    "comment": []
+  },
+  "PydanticModel": {},
+  "LazyPydanticModel": {},
+  "df": [],
+  "invalid_df": [],
+  "lazy_df": [
+    "df"
+  ],
+  "invalid_lazy_df": [
+    "invalid_df"
+  ],
+  "test_validation": [
+    "df"
+  ],
+  "test_validation_lazy": [
+    "lazy_df"
+  ],
+  "test_validation_already_validated": [
+    "df"
+  ],
+  "test_validation_already_validated_lazy": [
+    "df"
+  ],
+  "test_validation_failure": [
+    "invalid_df"
+  ],
+  "test_validation_failure_lazy": [
+    "invalid_lazy_df"
+  ],
+  "test_dict_roundtrip": [
+    "df"
+  ],
+  "test_dict_violates_schema": [
+    "df"
+  ],
+  "test_json_roundtrip": [
+    "df"
+  ],
+  "test_json_violates_schema": [
+    "df"
+  ],
+  "test_fail_schemaless_model": [
+    "df"
+  ],
+  "test_json_schema": [
+    "model"
+  ],
+  "s3_server": [],
+  "s3_bucket": [
+    "s3_server"
+  ],
+  "s3_tmp_path": [
+    "s3_server",
+    "s3_bucket",
+    "monkeypatch"
+  ],
+  "any_tmp_path": [
+    "request"
+  ],
+  "test_decode_json_expression": [],
+  "pipe_df": [
+    "df"
+  ],
+  "pipe_lf": [
+    "df"
+  ],
+  "test_data_frame_lazy": [],
+  "test_lazy_frame_lazy": [],
+  "test_lazy_frame_collect": [],
+  "test_pipe_df": [],
+  "test_pipe_lf": [],
+  "MyFirstSchema": {
+    "a": []
+  },
+  "MySecondSchema": {
+    "a": [],
+    "b": []
+  },
+  "test_collection_concat": [],
+  "test_non_existent_column_access": [],
+  "test_valid_column_access": [],
+  "test_dummy_module": [],
+  "test_config_global": [],
+  "test_config_local": [],
+  "test_config_local_nested": [],
+  "test_config_global_local": [],
+  "generator": [],
+  "test_seeding_constant": [],
+  "test_seeding_nonconstant": [],
+  "test_sample_correct_n": [
+    "generator",
+    "fn",
+    "n"
+  ],
+  "test_sample_correct_null_probability": [
+    "generator",
+    "fn",
+    "null_probability"
+  ],
+  "test_sample_int": [
+    "generator"
+  ],
+  "test_sample_bool": [
+    "generator",
+    "p_true"
+  ],
+  "test_sample_float": [
+    "generator"
+  ],
+  "test_sample_string": [
+    "generator"
+  ],
+  "test_sample_binary": [
+    "generator"
+  ],
+  "test_sample_choice": [
+    "generator"
+  ],
+  "test_sample_choice_weights": [
+    "generator",
+    "weight_factor"
+  ],
+  "test_sample_resolutions": [
+    "generator",
+    "fn",
+    "column_type",
+    "resolution"
+  ],
+  "test_sample_invalid_arg": [
+    "generator",
+    "fn"
+  ],
+  "test_matching_string_length": [
+    "regex",
+    "expected_lower",
+    "expected_upper"
+  ],
+  "test_failing_matching_string_length": [
+    "regex"
+  ],
+  "TEST_REGEXES": [],
+  "test_sample_one": [
+    "regex"
+  ],
+  "test_sample_many": [
+    "regex"
+  ],
+  "test_sample_equal_alternation_probabilities": [],
+  "test_sample_max_repetitions": [],
+  "test_sample_equal_class_probabilities": [],
+  "test_sample_one_seed": [],
+  "test_sample_many_seed": [],
+  "test_skip_if": [
+    "monkeypatch",
+    "env_var"
+  ],
+  "test_single_column_single_rule": [],
+  "test_single_column_multi_rule": [],
+  "test_multi_column_multi_rule": [],
+  "test_cross_column_rule": [],
+  "test_group_rule": [],
+  "test_simple_rule_and_group_rule": [],
+  "test_multiple_group_rules": [],
+  "test_missing_columns": [
+    "casting"
+  ],
+  "test_invalid_dtype": [],
+  "test_cast_only_if_necessary": [
+    "casting"
+  ],
+  "test_retain_original_columns": [],
+  "test_cast_if_required": [
+    "dtype",
+    "column",
+    "expected"
+  ],
+  "partitioned_dataset": [
+    "dataset"
+  ],
+  "FirstSchema": {
+    "idx": [],
+    "elevation": [],
+    "aspect": [],
+    "slope": []
+  },
+  "SecondSchema": {
+    "idx": [],
+    "horizontal_distance_to_hydrology": [],
+    "vertical_distance_to_hydrology": [],
+    "horizontal_distance_to_roadways": []
+  },
+  "SingleFilterCollection": {
+    "one_to_one": [
+      "self"
+    ]
+  },
+  "test_single_filter_validate": [
+    "benchmark",
+    "partitioned_dataset"
+  ],
+  "test_single_filter_filter": [
+    "benchmark",
+    "partitioned_dataset"
+  ],
+  "MultiFilterCollection": {
+    "one_to_one": [
+      "self"
+    ],
+    "one_to_at_least_one": [
+      "self"
+    ],
+    "one_to_at_least_one_reverse": [
+      "self"
+    ]
+  },
+  "test_multi_filter_validate": [
+    "benchmark",
+    "partitioned_dataset"
+  ],
+  "test_multi_filter_filter": [
+    "benchmark",
+    "partitioned_dataset"
+  ],
+  "CastingSchema": {
+    "elevation": [],
+    "aspect": [],
+    "slope": []
+  },
+  "test_cast": [
+    "benchmark",
+    "dataset"
+  ],
+  "RowWiseValidationSchema": {
+    "elevation": [],
+    "aspect": [],
+    "slope": [],
+    "horizontal_distance_to_hydrology": [],
+    "vertical_distance_to_hydrology": []
+  },
+  "test_row_wise_validate": [
+    "benchmark",
+    "dataset"
+  ],
+  "test_row_wise_filter": [
+    "benchmark",
+    "dataset"
+  ],
+  "SinglePrimaryKeySchema": {
+    "sequence": [],
+    "elevation": [],
+    "aspect": [],
+    "slope": []
+  },
+  "test_single_primary_key_validate": [
+    "benchmark",
+    "dataset"
+  ],
+  "test_single_primary_key_filter": [
+    "benchmark",
+    "dataset"
+  ],
+  "MultiPrimaryKeySchema": {
+    "sequence": [],
+    "elevation": [],
+    "aspect": [],
+    "slope": []
+  },
+  "test_multi_primary_key_validate": [
+    "benchmark",
+    "dataset"
+  ],
+  "test_multi_primary_key_filter": [
+    "benchmark",
+    "dataset"
+  ],
+  "SingleGroupBySchema": {
+    "elevation": [],
+    "aspect": [],
+    "slope": [],
+    "average_elevation_at_least_2500": [
+      "cls"
+    ]
+  },
+  "test_single_group_by_validate": [
+    "benchmark",
+    "dataset"
+  ],
+  "test_single_group_by_filter": [
+    "benchmark",
+    "dataset"
+  ],
+  "MultiGroupBySchema": {
+    "elevation": [],
+    "aspect": [],
+    "slope": [],
+    "average_elevation_at_least_2500": [
+      "cls"
+    ],
+    "at_least_one_elevation_2500": [
+      "cls"
+    ],
+    "at_least_50_aspects": [
+      "cls"
+    ],
+    "some_useless_filter": [
+      "cls"
+    ]
+  },
+  "test_multi_group_by_validate": [
+    "benchmark",
+    "dataset"
+  ],
+  "test_multi_group_by_filter": [
+    "benchmark",
+    "dataset"
+  ],
+  "dataset": [],
+  "benchmark_df": [],
+  "test_failure_counts": [
+    "benchmark",
+    "benchmark_df"
+  ],
+  "test_failure_cooccurrence_counts": [
+    "benchmark",
+    "benchmark_df"
+  ],
+  "MyTestSchema": {
+    "shared": [],
+    "u": [],
+    "v": []
+  },
+  "MyTestSchema2": {
+    "shared": [],
+    "id": [],
+    "x": [],
+    "y": []
+  },
+  "MyTestCollection": {
+    "x_greater_u": [
+      "self"
+    ]
+  },
+  "valid_a": [],
+  "valid_b": [],
+  "invalid_b": [],
+  "test_collection_propagate_row_failures_meta": [],
+  "test_collection_propagate_row_failure_no_propagation": [
+    "valid_a",
+    "valid_b"
+  ],
+  "test_collection_propagate_row_failure_with_propagation": [
+    "valid_a",
+    "invalid_b"
+  ],
+  "test_collection_matches_itself": [],
+  "test_collection_matches_different_members": [],
+  "test_collection_matches_different_schemas": [],
+  "test_collection_matches_different_filter_names": [],
+  "test_collection_matches_different_filter_logc": [],
+  "test_collection_matches_different_optional": [],
+  "test_create_empty": [],
+  "TestSchema": {
+    "a": []
+  },
+  "test_collection_optional_member": [],
+  "test_filter_failure_info_keys_only_required": [],
+  "test_filter_failure_info_keys_required_and_optional": [],
+  "MyThirdSchema": {
+    "a": []
+  },
+  "MyCollection2": {},
+  "TESTERS": [],
+  "test_read_write": [
+    "tester",
+    "any_tmp_path",
+    "kwargs",
+    "lazy"
+  ],
+  "test_read_write_optional": [
+    "tester",
+    "any_tmp_path",
+    "kwargs",
+    "lazy"
+  ],
+  "test_read_write_if_schema_matches": [
+    "tester",
+    "any_tmp_path",
+    "mocker",
+    "validation",
+    "lazy"
+  ],
+  "test_read_write_validation_warn_no_schema": [
+    "tester",
+    "any_tmp_path",
+    "mocker",
+    "lazy"
+  ],
+  "test_read_write_validation_warn_invalid_schema": [
+    "tester",
+    "any_tmp_path",
+    "mocker",
+    "lazy"
+  ],
+  "test_read_write_validation_allow_no_schema": [
+    "tester",
+    "any_tmp_path",
+    "mocker",
+    "lazy"
+  ],
+  "test_read_write_validation_allow_invalid_schema": [
+    "tester",
+    "any_tmp_path",
+    "mocker",
+    "lazy"
+  ],
+  "test_read_write_validation_forbid_no_schema": [
+    "tester",
+    "any_tmp_path",
+    "lazy"
+  ],
+  "test_read_write_validation_forbid_invalid_schema": [
+    "tester",
+    "any_tmp_path",
+    "lazy"
+  ],
+  "test_read_write_validation_skip_no_schema": [
+    "tester",
+    "any_tmp_path",
+    "mocker",
+    "lazy"
+  ],
+  "test_read_write_validation_skip_invalid_schema": [
+    "tester",
+    "any_tmp_path",
+    "mocker",
+    "lazy"
+  ],
+  "test_reconcile_collection_types": [
+    "inputs",
+    "output"
+  ],
+  "test_read_write_parquet_schema_json_fallback_corrupt": [
+    "any_tmp_path",
+    "mocker",
+    "validation",
+    "lazy"
+  ],
+  "test_read_unreadable_metadata": [
+    "tester",
+    "any_tmp_path",
+    "mocker",
+    "validation",
+    "lazy"
+  ],
+  "test_read_invalid_parquet_metadata_collection": [
+    "any_tmp_path",
+    "metadata"
+  ],
+  "test_write_nonexistent_directory": [
+    "any_tmp_path"
+  ],
+  "test_write_parquet_fails_without_mkdir": [
+    "tmp_path"
+  ],
+  "test_raise_on_lazy": [],
+  "MyShufflingCollection": {
+    "just_shuffle": [
+      "self"
+    ]
+  },
+  "SimpleCollection": {},
+  "data_without_filter_without_rule_violation": [],
+  "data_without_filter_with_rule_violation": [],
+  "data_with_filter_without_rule_violation": [],
+  "data_with_filter_with_rule_violation": [],
+  "test_filter_without_filter_without_rule_violation": [
+    "data_without_filter_without_rule_violation",
+    "eager"
+  ],
+  "test_filter_without_filter_with_rule_violation": [
+    "data_without_filter_with_rule_violation",
+    "eager"
+  ],
+  "test_filter_with_filter_without_rule_violation": [
+    "data_with_filter_without_rule_violation",
+    "eager"
+  ],
+  "test_filter_with_filter_with_rule_violation": [
+    "data_with_filter_with_rule_violation",
+    "eager"
+  ],
+  "test_validate_without_filter_without_rule_violation": [
+    "data_without_filter_without_rule_violation",
+    "eager"
+  ],
+  "test_validate_without_filter_with_rule_violation_eager": [
+    "data_without_filter_with_rule_violation"
+  ],
+  "test_validate_without_filter_with_rule_violation_lazy": [
+    "data_without_filter_with_rule_violation"
+  ],
+  "test_validate_with_filter_without_rule_violation_eager": [
+    "data_with_filter_without_rule_violation"
+  ],
+  "test_validate_with_filter_without_rule_violation_lazy": [
+    "data_with_filter_without_rule_violation"
+  ],
+  "test_validate_with_filter_with_rule_violation_eager": [
+    "data_with_filter_with_rule_violation"
+  ],
+  "test_validate_with_filter_with_rule_violation_lazy": [
+    "data_with_filter_with_rule_violation"
+  ],
+  "test_maintain_order": [],
+  "test_unknown_rule_outcomes": [
+    "data_without_filter_with_rule_violation"
+  ],
+  "test_annotation_type_failure": [],
+  "test_annotation_union_success": [],
+  "test_annotation_union_with_data_frame": [],
+  "test_annotation_union_too_many_arg_failure": [],
+  "test_annotation_union_conflicting_types_failure": [],
+  "test_annotation_annotated_success": [],
+  "test_annotation_only_none_failure": [],
+  "test_annotation_invalid_type_failure": [],
+  "test_explicit_annotation_type_failure_no_frame_type": [],
+  "test_explicit_annotation_type_failure_too_many_args": [],
+  "test_explicit_annotation_type_failure_arg1_type": [],
+  "test_name_overlap": [],
+  "test_collection_no_primary_key_success": [],
+  "test_collection_no_primary_key_failure": [],
+  "test_collection_primary_key_but_not_common": [],
+  "NonPkSchema": {
+    "x": [],
+    "y": []
+  },
+  "MyInlinedCollection": {},
+  "MyInlinedCollectionWithOptional": {},
+  "SmallCollection": {},
+  "IgnoringCollection": {},
+  "IncorrectOverrideCollection": {
+    "_preprocess_sample": [
+      "cls",
+      "sample",
+      "index",
+      "generator"
+    ]
+  },
+  "test_sample_rows": [
+    "n"
+  ],
+  "test_sample_with_overrides": [],
+  "test_sample_with_primary_key_override": [],
+  "test_sample_inline_with_overrides": [
+    "collection_type"
+  ],
+  "test_sample_without_dependent_members": [
+    "n"
+  ],
+  "test_sample_with_ignored_members": [
+    "n"
+  ],
+  "test_sample_num_rows_mismatch": [],
+  "test_sample_incorrect_override": [],
+  "test_invalid_inline_for_sampling": [],
+  "test_duplicate_column_inlined_for_sampling": [],
+  "test_sample_override_sequence_with_missing_keys": [],
+  "test_simple_serialization": [],
+  "OptionalCollection": {},
+  "test_roundtrip_matches": [
+    "collection"
+  ],
+  "test_deserialize_unknown_format_version": [
+    "strict"
+  ],
+  "test_deserialize_invalid_json_strict_false": [
+    "strict"
+  ],
+  "test_deserialize_invalid_member_schema": [
+    "strict"
+  ],
+  "IgnoredSchema": {
+    "b_id": []
+  },
+  "test_collection_ignore_in_filter_meta": [],
+  "test_collection_ignore_in_filter": [],
+  "test_collection_ignore_in_filter_failure": [],
+  "test_collection_future_annotations": [],
+  "test_collection_missing_required_member": [],
+  "Collection": {},
+  "test_cast_valid": [
+    "df_type"
+  ],
+  "test_cast_valid_optional": [
+    "df_type"
+  ],
+  "test_cast_invalid_members": [
+    "df_type"
+  ],
+  "test_cast_invalid_member_schema_eager": [],
+  "test_cast_invalid_member_schema_lazy": [],
+  "test_repr_collection": [],
+  "test_common_primary_key": [],
+  "test_members": [],
+  "test_member_schemas": [],
+  "test_required_members": [],
+  "test_optional_members": [],
+  "test_to_dict": [
+    "expected"
+  ],
+  "test_collect_all": [],
+  "test_collect_all_optional": [],
+  "test_annotate_func_none_py314": [],
+  "SchemaOne": {
+    "id": [],
+    "name": []
+  },
+  "SchemaTwo": {
+    "id": [],
+    "name": []
+  },
+  "test_join_semi_simple": [
+    "how"
+  ],
+  "test_missing_primary_key_column": [],
+  "CollectionWithIgnoredMembers": {},
+  "test_join_raises_with_ignored_member": [],
+  "CarSchema": {
+    "vin": [],
+    "manufacturer": []
+  },
+  "CarPartSchema": {
+    "vin": [],
+    "part": [],
+    "price": []
+  },
+  "CarFleet": {
+    "not_car_with_vin_123": [
+      "self"
+    ]
+  },
+  "test_valid_failure_infos": [],
+  "test_basic_types": [],
+  "test_nullable_detection": [],
+  "test_datetime_types": [],
+  "test_datetime_with_timezone": [],
+  "test_enum_type": [],
+  "test_decimal_type": [],
+  "test_list_type": [],
+  "test_struct_type": [],
+  "test_list_with_nullable_inner": [],
+  "test_struct_with_nullable_field": [],
+  "test_array_type": [],
+  "test_invalid_identifier": [],
+  "test_python_keyword": [],
+  "test_all_integer_types": [],
+  "test_float_types": [],
+  "test_invalid_schema_name_raises_error": [],
+  "test_default_schema_name": [],
+  "test_binary_type": [],
+  "test_null_type": [],
+  "test_object_type": [],
+  "test_categorical_type": [],
+  "test_duration_type": [],
+  "test_duration_with_time_unit_ms": [],
+  "test_duration_with_time_unit_ns": [],
+  "test_datetime_with_time_unit_ms": [],
+  "test_datetime_with_time_unit_ns": [],
+  "test_decimal_without_scale": [],
+  "test_column_sanitization": [],
+  "test_column_with_spaces": [],
+  "test_column_sanitization_conflict_with_existing": [],
+  "test_inferred_schema_validates_dataframe": [
+    "df"
+  ],
+  "T": [],
+  "_nullable": [
+    "column_type"
+  ],
+  "test_equal_to_polars_schema": [
+    "column_type"
+  ],
+  "test_equal_polars_schema_enum": [
+    "categories"
+  ],
+  "test_equal_polars_schema_list": [
+    "inner"
+  ],
+  "test_equal_polars_schema_array": [
+    "inner",
+    "shape"
+  ],
+  "test_equal_polars_schema_struct": [
+    "inner"
+  ],
+  "test_nullability_information": [
+    "column_type",
+    "nullable"
+  ],
+  "test_nullability_information_enum": [
+    "nullable"
+  ],
+  "test_nullability_information_list": [
+    "inner",
+    "nullable"
+  ],
+  "test_nullability_information_struct": [
+    "inner",
+    "nullable"
+  ],
+  "test_inner_nullability_struct": [
+    "column_type",
+    "inner_nullable"
+  ],
+  "test_inner_nullability_list": [
+    "column_type",
+    "inner_nullable"
+  ],
+  "test_nested_struct_in_list_preserves_nullability": [],
+  "test_nested_list_in_struct_preserves_nullability": [],
+  "test_deeply_nested_nullability": [],
+  "test_multiple_columns": [],
+  "test_datetime_time_unit": [
+    "time_unit"
+  ],
+  "test_duration_time_unit": [
+    "time_unit"
+  ],
+  "test_rule_count_nullability": [
+    "column_type",
+    "nullable"
+  ],
+  "test_nullability_rule_for_primary_key": [
+    "column_type"
+  ],
+  "test_nullability_rule": [
+    "column_type"
+  ],
+  "test_mssql_datatype": [
+    "column",
+    "datatype"
+  ],
+  "test_postgres_datatype": [
+    "column",
+    "datatype"
+  ],
+  "test_sql_nullability": [
+    "column_type",
+    "nullable",
+    "dialect"
+  ],
+  "test_sql_primary_key": [
+    "column_type",
+    "primary_key",
+    "dialect"
+  ],
+  "test_sql_multiple_columns": [
+    "dialect"
+  ],
+  "test_raise_for_list_column": [
+    "dialect"
+  ],
+  "test_raise_for_array_column": [
+    "dialect"
+  ],
+  "test_raise_for_struct_column": [
+    "dialect"
+  ],
+  "test_raise_for_object_column": [
+    "dialect"
+  ],
+  "test_matches": [
+    "lhs",
+    "rhs",
+    "expected"
+  ],
+  "test_matches_enum_attribute_type_mismatch": [],
+  "SchemaWithMetadata": {
+    "a": [],
+    "b": []
+  },
+  "test_metadata": [],
+  "test_default_dtype": [
+    "column",
+    "dtype"
+  ],
+  "test_polars_schema": [],
+  "test_first_non_null_basic": [],
+  "test_first_non_null_allow_null_response": [],
+  "test_first_non_null_with_terminal": [],
+  "test_first_non_null_mixed_types": [],
+  "test_first_non_null_with_kwargs": [],
+  "test_sample_custom_check": [
+    "column_type",
+    "generator"
+  ],
+  "test_sample_valid": [
+    "column_type",
+    "nullable",
+    "generator"
+  ],
+  "test_sample_any": [
+    "generator"
+  ],
+  "test_sample_integer_min_max": [
+    "column_type",
+    "min_kwargs",
+    "max_kwargs",
+    "generator"
+  ],
+  "test_sample_integer_is_in": [
+    "column_type",
+    "generator"
+  ],
+  "test_sample_string_invalid": [
+    "column",
+    "generator"
+  ],
+  "test_sample_decimal": [
+    "generator"
+  ],
+  "test_sample_date": [
+    "generator"
+  ],
+  "test_sample_date_9999": [
+    "generator"
+  ],
+  "test_sample_datetime": [
+    "generator"
+  ],
+  "test_sample_time": [
+    "generator"
+  ],
+  "test_sample_duration": [
+    "generator"
+  ],
+  "test_sample_enum": [
+    "generator"
+  ],
+  "test_sample_list": [
+    "generator"
+  ],
+  "test_sample_array": [
+    "generator"
+  ],
+  "test_sample_struct": [
+    "generator"
+  ],
+  "sample_and_validate": [
+    "column",
+    "generator"
+  ],
+  "test_string_representation": [
+    "column_type"
+  ],
+  "test_string_representation_enum": [],
+  "test_string_representation_list": [],
+  "test_string_representation_array": [],
+  "test_string_representation_struct": [],
+  "test_string_sampling_without_regex": [
+    "min_length",
+    "max_length"
+  ],
+  "CheckSchema": {
+    "a": [],
+    "b": []
+  },
+  "test_check_argument_covariant": [],
+  "test_check": [],
+  "test_check_names": [],
+  "test_no_nullable_primary_key": [
+    "column_type"
+  ],
+  "AliasSchema": {
+    "a": []
+  },
+  "test_column_names": [],
+  "test_alias": [],
+  "test_alias_name": [],
+  "test_alias_unset": [],
+  "test_duplicate_alias_same_schema": [],
+  "test_duplicate_alias_inherited_schema": [],
+  "MockFS": {
+    "__init__": [
+      "self",
+      "protocol"
+    ]
+  },
+  "test_get_file_prefix": [],
+  "test_get_file_prefix_invalid": [
+    "protocol"
+  ],
+  "test_to_delta_table_good": [
+    "tmp_path",
+    "input_type"
+  ],
+  "test_to_delta_table_type_error": [],
+  "test_to_delta_table_does_not_exist": [
+    "tmp_path"
+  ],
+  "test_raise_on_sink_frame": [
+    "tmp_path"
+  ],
+  "test_raise_on_sink_collection": [
+    "tmp_path"
+  ],
+  "test_raise_on_sink_failure_info": [
+    "tmp_path"
+  ],
+  "IntegerSchema": {
+    "a": []
+  },
+  "test_args_consistency_min_max": [
+    "column_type",
+    "kwargs"
+  ],
+  "test_invalid_args": [
+    "column_type",
+    "kwargs"
+  ],
+  "test_any_integer_dtype_passes": [
+    "dtype"
+  ],
+  "test_non_integer_dtype_fails": [
+    "dtype"
+  ],
+  "test_validate_min": [
+    "column_type",
+    "inclusive",
+    "valid"
+  ],
+  "test_validate_max": [
+    "column_type",
+    "inclusive",
+    "valid"
+  ],
+  "test_validate_range": [
+    "column_type",
+    "min_inclusive",
+    "max_inclusive",
+    "valid"
+  ],
+  "test_validate_inf_nan": [
+    "inf",
+    "nan"
+  ],
+  "test_validate_allow_inf_nan": [
+    "inf",
+    "nan"
+  ],
+  "test_sample_unchecked_min_0": [],
+  "test_sample_unchecked_nan": [],
+  "test_sample_unchecked_unbounded": [],
+  "test_sample_unchecked_inf": [],
+  "test_simple_struct": [],
+  "test_validate_dtype": [
+    "column",
+    "dtype",
+    "is_valid"
+  ],
+  "test_invalid_inner_type": [],
+  "test_nested_structs": [],
+  "test_struct_with_pk": [],
+  "test_struct_with_rules": [],
+  "test_nested_struct_with_rules": [],
+  "test_outer_inner_nullability": [],
+  "CustomObject": {
+    "__init__": [
+      "self",
+      "a",
+      "b"
+    ]
+  },
+  "test_simple_object": [],
+  "test_pyarrow_dtype_raises": [],
+  "test_sampling_raises": [],
+  "AnySchema": {
+    "a": []
+  },
+  "test_any_dtype_passes": [
+    "data"
+  ],
+  "test_integer_array": [
+    "inner"
+  ],
+  "test_invalid_shape": [],
+  "test_nested_arrays": [],
+  "test_nested_array": [],
+  "test_array_with_rules": [],
+  "test_array_with_primary_key_rule": [],
+  "test_outer_nullability": [],
+  "test_invalid_args_min_max": [
+    "column_type"
+  ],
+  "test_invalid_args_is_in": [
+    "column_type",
+    "kwargs"
+  ],
+  "test_validate_min_zero": [
+    "column_type",
+    "inclusive"
+  ],
+  "test_validate_max_zero": [
+    "column_type",
+    "inclusive"
+  ],
+  "test_validate_is_in": [
+    "column_type"
+  ],
+  "test_num_bytes": [
+    "column_type",
+    "num_bytes"
+  ],
+  "test_is_unsigned": [
+    "column_type",
+    "is_unsigned"
+  ],
+  "test_type_min_max_values": [
+    "column_type",
+    "min_value",
+    "max_value"
+  ],
+  "test_valid": [
+    "df_type",
+    "dy_enum",
+    "pl_dtype",
+    "valid"
+  ],
+  "test_valid_cast": [
+    "enum",
+    "data",
+    "valid",
+    "df_type"
+  ],
+  "test_different_sequences": [
+    "type1",
+    "type2"
+  ],
+  "test_enum_of_enum_136": [],
+  "test_enum_of_series": [],
+  "test_enum_of_iterable": [],
+  "test_sequences_and_enums": [
+    "categories1",
+    "categories2"
+  ],
+  "test_validate_min_length": [],
+  "test_validate_max_length": [],
+  "test_validate_regex": [],
+  "test_validate_all_rules": [],
+  "BinarySchema": {
+    "a": []
+  },
+  "DecimalSchema": {
+    "a": []
+  },
+  "test_args_zero_and_negative_min_max": [
+    "kwargs"
+  ],
+  "test_int_args_for_min_max": [
+    "kwargs"
+  ],
+  "test_validate_int_args_for_min_max": [],
+  "test_any_decimal_dtype_passes": [
+    "dtype"
+  ],
+  "test_non_decimal_dtype_fails": [
+    "dtype"
+  ],
+  "test_precision_scale_validation": [
+    "schema_precision",
+    "schema_scale",
+    "dtype",
+    "should_pass"
+  ],
+  "test_precision_scale_casting": [
+    "schema_precision",
+    "schema_scale",
+    "input_dtype"
+  ],
+  "test_integer_list": [
+    "inner"
+  ],
+  "test_nested_lists": [],
+  "test_list_with_pk": [],
+  "test_list_with_rules": [],
+  "test_nested_list_with_rules": [],
+  "test_list_length_rules": [],
+  "test_inner_primary_key": [],
+  "test_inner_primary_key_struct": [
+    "inner_primary_key",
+    "second_primary_key",
+    "failure_count",
+    "mask"
+  ],
+  "test_list_sampling_with_min_length": [
+    "min_length"
+  ],
+  "test_args_resolution_invalid": [
+    "column_type",
+    "kwargs"
+  ],
+  "test_args_resolution_valid": [
+    "column_type",
+    "kwargs"
+  ],
+  "test_validate_min_max": [
+    "column",
+    "values",
+    "valid"
+  ],
+  "test_validate_resolution": [
+    "column",
+    "values",
+    "valid"
+  ],
+  "test_sample": [
+    "column"
+  ],
+  "test_dtype_time_zone_validation": [
+    "dtype",
+    "column",
+    "error"
+  ],
+  "ParentSchema": {
+    "a": []
+  },
+  "ChildSchema": {
+    "b": []
+  },
+  "GrandchildSchema": {
+    "c": []
+  },
+  "test_columns": [],
+  "test_reflexivity": [],
+  "test_group_rule_inequality_type_mismatch": [],
+  "test_create_empty_eager": [
+    "with_arg"
+  ],
+  "test_create_empty_lazy": [],
+  "test_create_empty_if_none_non_none": [
+    "lazy_in",
+    "lazy_out"
+  ],
+  "test_create_empty_if_none_none": [
+    "lazy"
+  ],
+  "S": [],
+  "test_read_write_parquet_validation_warn_invalid_schema": [
+    "tester",
+    "any_tmp_path",
+    "mocker",
+    "lazy"
+  ],
+  "test_read_write_parquet_validation_allow_no_schema": [
+    "tester",
+    "any_tmp_path",
+    "mocker",
+    "lazy"
+  ],
+  "test_read_write_parquet_validation_allow_invalid_schema": [
+    "tester",
+    "any_tmp_path",
+    "mocker",
+    "lazy"
+  ],
+  "test_read_write_parquet_validation_forbid_no_schema": [
+    "tester",
+    "any_tmp_path",
+    "lazy"
+  ],
+  "test_read_write_parquet_validation_forbid_invalid_schema": [
+    "tester",
+    "any_tmp_path",
+    "lazy"
+  ],
+  "test_read_write_parquet_validation_skip_no_schema": [
+    "tester",
+    "any_tmp_path",
+    "mocker",
+    "lazy"
+  ],
+  "test_read_write_parquet_validation_skip_invalid_schema": [
+    "tester",
+    "any_tmp_path",
+    "mocker",
+    "lazy"
+  ],
+  "MySimpleSchema": {
+    "a": [],
+    "b": []
+  },
+  "PrimaryKeySchema": {
+    "a": [],
+    "b": []
+  },
+  "ComplexSchema": {
+    "a": [],
+    "b": [],
+    "a_greater_b": [
+      "cls"
+    ],
+    "minimum_two_per_a": [
+      "cls"
+    ]
+  },
+  "LimitedComplexSchema": {
+    "a": [],
+    "b": [],
+    "a_greater_b": [
+      "cls"
+    ],
+    "minimum_two_per_a": [
+      "cls"
+    ]
+  },
+  "OrderedSchema": {
+    "a": [],
+    "b": [],
+    "iter": [],
+    "iter_ordered": [
+      "cls"
+    ],
+    "_sampling_overrides": [
+      "cls"
+    ]
+  },
+  "SchemaWithTypeChangingOverrides": {
+    "a": [],
+    "b": [],
+    "_sampling_overrides": [
+      "cls"
+    ]
+  },
+  "SchemaWithIrrelevantColumnPreProcessing": {
+    "a": [],
+    "_sampling_overrides": [
+      "cls"
+    ]
+  },
+  "MyAdvancedSchema": {
+    "a": [],
+    "b": []
+  },
+  "test_sample_deterministic": [
+    "n"
+  ],
+  "test_sample_fuzzy": [
+    "schema",
+    "n"
+  ],
+  "test_sample_fuzzy_failure": [],
+  "test_sample_overrides": [
+    "n"
+  ],
+  "test_sample_overrides_with_removing_groups": [],
+  "test_sample_overrides_allow_no_fuzzy": [
+    "n"
+  ],
+  "test_sample_overrides_full": [
+    "n"
+  ],
+  "test_sample_overrides_row_layout": [],
+  "test_sample_overrides_invalid_column": [],
+  "test_sample_overrides_invalid_length": [],
+  "test_sample_no_overrides_no_num_rows": [],
+  "test_sample_ordered_works_with_hook": [],
+  "test_sample_ordered_works_with_overrides": [],
+  "test_sample_preprocessing_data_type_change": [],
+  "test_sample_raises_superfluous_column_override": [],
+  "test_sample_invalid_override_values_raises": [
+    "overrides",
+    "failed_column",
+    "failed_rule",
+    "failed_rows"
+  ],
+  "test_sample_empty_override_sequence": [],
+  "test_sample_override_sequence_with_missing_keys_and_resampling": [],
+  "test_serialize_invalid_type": [],
+  "test_serialize_column_subclass": [],
+  "test_deserialize_unknown_column_type": [],
+  "test_deserialize_unknown_rule_type": [],
+  "test_deserialize_invalid_type": [],
+  "_filter_and_collect": [
+    "schema",
+    "df"
+  ],
+  "test_filter_extra_columns": [
+    "df_type",
+    "schema",
+    "expected_columns",
+    "eager"
+  ],
+  "test_filter_dtypes": [
+    "df_type",
+    "schema",
+    "cast",
+    "success",
+    "eager"
+  ],
+  "test_filter_failure": [
+    "df_type",
+    "eager",
+    "data_a",
+    "data_b",
+    "failure_mask",
+    "counts",
+    "cooccurrence_counts"
+  ],
+  "test_filter_no_rules": [
+    "df_type",
+    "eager"
+  ],
+  "test_filter_with_rule_all_valid": [
+    "df_type",
+    "eager"
+  ],
+  "test_filter_cast": [
+    "df_type",
+    "eager"
+  ],
+  "test_filter_nondeterministic_lazyframe": [
+    "eager"
+  ],
+  "test_filter_failure_info_original_dtype": [
+    "eager"
+  ],
+  "test_filter_maintain_order": [
+    "eager"
+  ],
+  "test_filter_details": [
+    "eager"
+  ],
+  "test_group_rule_group_by_error": [],
+  "test_group_rule_primary_key_single": [],
+  "test_group_rule_primary_key_composite": [],
+  "test_group_rule_primary_key_no_pk": [],
+  "test_group_rule_primary_key_mixin": [],
+  "test_rule_column_overlap_error": [],
+  "test_cast_invalid_schema_eager": [],
+  "test_cast_invalid_schema_lazy": [],
+  "test_repr_no_rules": [],
+  "test_repr_only_column_rules": [],
+  "SchemaWithRules": {
+    "a": [],
+    "b": [],
+    "my_rule": [
+      "cls"
+    ],
+    "my_group_rule": [
+      "cls"
+    ]
+  },
+  "test_repr_with_rules": [],
+  "test_repr_enum": [],
+  "MySchemaWithRule": {
+    "a_greater_than_c": [
+      "cls"
+    ]
+  },
+  "test_nullability": [],
+  "test_primary_key": [],
+  "test_no_rule_named_primary_key": [],
+  "test_col": [],
+  "test_name": [],
+  "test_name_in_columns": [],
+  "test_col_in_polars_expression": [],
+  "test_dunder_name": [],
+  "test_dunder_name_with_rule": [],
+  "test_non_column_member_is_allowed": [],
+  "test_user_error_tuple_column": [],
+  "test_user_error_column_type_not_instance": [],
+  "test_user_error_polars_datatype_instance": [],
+  "test_user_error_polars_datatype_type": [],
+  "MyComplexSchema": {
+    "a": [],
+    "b": [],
+    "b_greater_a": [
+      "cls"
+    ],
+    "b_unique_within_a": [
+      "cls"
+    ]
+  },
+  "MyComplexSchemaWithLazyRules": {
+    "a": [],
+    "b": [],
+    "b_greater_a": [
+      "cls"
+    ],
+    "b_unique_within_a": [
+      "cls"
+    ]
+  },
+  "SOME_CONSTANT_DEFINED_LATER": [],
+  "_validate_and_collect": [
+    "schema",
+    "df"
+  ],
+  "test_invalid_dtype_cast": [
+    "df_type",
+    "eager"
+  ],
+  "test_invalid_column_contents": [
+    "df_type",
+    "eager"
+  ],
+  "test_invalid_primary_key": [
+    "df_type",
+    "eager"
+  ],
+  "test_violated_custom_rule": [
+    "df_type",
+    "eager"
+  ],
+  "test_success_multi_row_strip_cast": [
+    "df_type",
+    "eager"
+  ],
+  "test_group_rule_on_nulls": [
+    "df_type",
+    "schema",
+    "eager"
+  ],
+  "test_validate_maintain_order": [],
+  "test_read_invalid_parquet_metadata_schema": [
+    "tmp_path",
+    "metadata"
+  ],
+  "test_write_parquet_non_existing_directory": [
+    "any_tmp_path"
+  ],
+  "test_read_write_missing_metadata": [
+    "tester",
+    "any_tmp_path",
+    "lazy"
+  ],
+  "test_invalid_schema_deserialization": [
+    "tester",
+    "any_tmp_path",
+    "lazy"
+  ],
+  "test_write_parquet_custom_metadata": [
+    "any_tmp_path",
+    "check_non_existent_directory"
+  ],
+  "DepartmentSchema": {
+    "department_id": []
+  },
+  "ManagerSchema": {
+    "department_id": [],
+    "name": []
+  },
+  "EmployeeSchema": {
+    "department_id": [],
+    "employee_number": [],
+    "name": []
+  },
+  "departments": [],
+  "managers": [],
+  "employees": [],
+  "test_one_to_one": [
+    "departments",
+    "managers",
+    "drop_duplicates"
+  ],
+  "test_one_to_one_drop_duplicates_rhs": [
+    "departments",
+    "employees"
+  ],
+  "test_one_to_one_drop_duplicates_lhs": [
+    "employees",
+    "managers"
+  ],
+  "test_one_to_at_least_one": [
+    "departments",
+    "employees"
+  ],
+  "test_concat": [],
+  "test_concat_empty": [],
+  "_mod": [],
+  "project": [],
+  "copyright": [],
+  "author": [],
+  "extensions": [],
+  "html_theme": [],
+  "pygments_style": [],
+  "html_theme_options": [],
+  "html_title": [],
+  "html_static_path": [],
+  "html_css_files": [],
+  "html_favicon": [],
+  "html_show_sourcelink": [],
+  "default_role": [],
+  "maximum_signature_line_length": [],
+  "exclude_patterns": [],
+  "source_suffix": [],
+  "templates_path": [],
+  "autoclass_content": [],
+  "autodoc_default_options": [],
+  "intersphinx_mapping": [],
+  "myst_parser_config": [],
+  "nitpick_ignore": [],
+  "numpydoc_class_members_toctree": [],
+  "numpydoc_show_class_members": [],
+  "overloads_location": [],
+  "linkcode_resolve": [
+    "domain",
+    "info"
+  ],
+  "hide_class_signature": [
+    "app",
+    "what",
+    "name",
+    "obj",
+    "options",
+    "signature",
+    "return_annotation"
+  ],
+  "setup": [
+    "app"
+  ],
+  "TRUTHY_VALUES": [],
+  "skip_if": [
+    "env"
+  ],
+  "ValidationFunction": [],
+  "Rule": {
+    "__init__": [
+      "self",
+      "expr"
+    ],
+    "expr": [
+      "self"
+    ],
+    "matches": [
+      "self",
+      "other"
+    ],
+    "as_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "data"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "DtypeCastRule": {},
+  "GroupRule": {
+    "__init__": [
+      "self",
+      "expr",
+      "group_columns"
+    ],
+    "matches": [
+      "self",
+      "other"
+    ],
+    "as_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "data"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "RuleFactory": {
+    "__init__": [
+      "self",
+      "validation_fn",
+      "group_columns"
+    ],
+    "from_rule": [
+      "cls",
+      "rule"
+    ],
+    "make": [
+      "self",
+      "schema"
+    ]
+  },
+  "rule": [],
+  "with_evaluation_rules": [
+    "lf",
+    "rules"
+  ],
+  "_with_group_rules": [
+    "lf",
+    "rules"
+  ],
+  "rule_from_dict": [
+    "data"
+  ],
+  "UNKNOWN_SCHEMA_NAME": [],
+  "FilterResult": {},
+  "LazyFilterResult": {
+    "collect_all": [
+      "self"
+    ]
+  },
+  "FailureInfo": {
+    "__init__": [
+      "self",
+      "lf",
+      "rule_columns",
+      "schema"
+    ],
+    "_df": [
+      "self"
+    ],
+    "invalid": [
+      "self"
+    ],
+    "details": [
+      "self"
+    ],
+    "counts": [
+      "self"
+    ],
+    "cooccurrence_counts": [
+      "self"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "write_parquet": [
+      "self",
+      "file"
+    ],
+    "sink_parquet": [
+      "self",
+      "file"
+    ],
+    "read_parquet": [
+      "cls",
+      "source"
+    ],
+    "scan_parquet": [
+      "cls",
+      "source"
+    ],
+    "write_delta": [
+      "target"
+    ],
+    "read_delta": [
+      "cls",
+      "source"
+    ],
+    "scan_delta": [
+      "cls",
+      "source"
+    ],
+    "_sink": [
+      "self",
+      "backend"
+    ],
+    "_write": [
+      "self",
+      "backend"
+    ],
+    "_read": [
+      "cls",
+      "backend",
+      "lazy"
+    ]
+  },
+  "_compute_counts": [
+    "df",
+    "rule_columns"
+  ],
+  "_compute_cooccurrence_counts": [
+    "df",
+    "rule_columns"
+  ],
+  "C": [],
+  "Filter": {
+    "__init__": [
+      "self",
+      "logic"
+    ]
+  },
+  "filter": [],
+  "_COLUMN_VALID": [],
+  "read_parquet_metadata_schema": [
+    "source"
+  ],
+  "deserialize_schema": [
+    "data",
+    "strict"
+  ],
+  "_schema_from_dict": [
+    "data"
+  ],
+  "_restore_original_columns": [
+    "lf",
+    "columns"
+  ],
+  "PolarsDataType": [],
+  "FrameType": [],
+  "EPOCH_DATETIME": [],
+  "SECONDS_PER_DAY": [],
+  "date_matches_resolution": [
+    "t",
+    "resolution"
+  ],
+  "datetime_matches_resolution": [
+    "t",
+    "resolution"
+  ],
+  "time_matches_resolution": [
+    "t",
+    "resolution"
+  ],
+  "timedelta_matches_resolution": [
+    "d",
+    "resolution"
+  ],
+  "collect_if": [
+    "lf",
+    "condition"
+  ],
+  "SERIALIZATION_FORMAT_VERSION": [],
+  "serialization_versions": [],
+  "SchemaJSONEncoder": {
+    "encode": [
+      "self",
+      "obj"
+    ],
+    "default": [
+      "self",
+      "obj"
+    ]
+  },
+  "SchemaJSONDecoder": {
+    "__init__": [
+      "self"
+    ],
+    "object_hook": [
+      "self",
+      "dct"
+    ]
+  },
+  "__all__": [],
+  "SchemaError": {},
+  "ValidationError": {},
+  "ImplementationError": {},
+  "AnnotationImplementationError": {
+    "__init__": [
+      "self",
+      "attr",
+      "kls"
+    ]
+  },
+  "ValidationRequiredError": {},
+  "DeserializationError": {},
+  "P": [],
+  "R": [],
+  "Validation": [],
+  "inherit_signature": [
+    "target_fn"
+  ],
+  "DataFrame": {
+    "clear": [
+      "self"
+    ],
+    "clone": [
+      "self"
+    ],
+    "lazy": [
+      "self"
+    ],
+    "pipe": [
+      "self",
+      "function"
+    ],
+    "rechunk": [
+      "self"
+    ],
+    "set_sorted": [
+      "self"
+    ],
+    "shrink_to_fit": [
+      "self"
+    ],
+    "__get_pydantic_core_schema__": [
+      "cls",
+      "source_type",
+      "handler"
+    ],
+    "__get_pydantic_json_schema__": [
+      "cls",
+      "_core_schema",
+      "handler"
+    ]
+  },
+  "LazyFrame": {
+    "cache": [
+      "self"
+    ],
+    "clear": [
+      "self"
+    ],
+    "clone": [
+      "self"
+    ],
+    "collect": [
+      "self"
+    ],
+    "lazy": [
+      "self"
+    ],
+    "pipe": [
+      "self",
+      "function"
+    ],
+    "set_sorted": [
+      "self"
+    ],
+    "__get_pydantic_core_schema__": [
+      "cls",
+      "source_type",
+      "handler"
+    ],
+    "__get_pydantic_json_schema__": [
+      "cls",
+      "_core_schema",
+      "handler"
+    ]
+  },
+  "_COLUMN_ATTR": [],
+  "_RULE_ATTR": [],
+  "ORIGINAL_COLUMN_PREFIX": [],
+  "_build_rules": [
+    "custom",
+    "columns"
+  ],
+  "_primary_key": [
+    "columns"
+  ],
+  "Metadata": {
+    "update": [
+      "self",
+      "other"
+    ]
+  },
+  "SchemaMeta": {
+    "__new__": [
+      "mcs",
+      "name",
+      "bases",
+      "namespace"
+    ],
+    "_get_metadata_recursively": [
+      "kls"
+    ],
+    "_get_metadata": [
+      "source"
+    ],
+    "__repr__": [
+      "cls"
+    ]
+  },
+  "BaseSchema": {
+    "column_names": [
+      "cls"
+    ],
+    "columns": [
+      "cls"
+    ],
+    "primary_key": [
+      "cls"
+    ],
+    "_validation_rules": [
+      "cls"
+    ],
+    "_schema_validation_rules": [
+      "cls"
+    ]
+  },
+  "Options": {},
+  "default_options": [],
+  "Config": {
+    "__init__": [
+      "self"
+    ],
+    "set_max_sampling_iterations": [
+      "iterations"
+    ],
+    "restore_defaults": [],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ]
+  },
+  "match_to_schema": [
+    "lf",
+    "target"
+  ],
+  "_validate_columns_exist": [
+    "actual",
+    "target"
+  ],
+  "_validate_dtypes": [
+    "actual",
+    "target"
+  ],
+  "_cast_if_required": [
+    "expr",
+    "current_dtype",
+    "column"
+  ],
+  "_DummyModule": {
+    "__init__": [
+      "self",
+      "module"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ]
+  },
+  "_polars_version_tuple": [],
+  "require_relationship_one_to_one": [
+    "on"
+  ],
+  "require_relationship_one_to_at_least_one": [
+    "on"
+  ],
+  "concat_collection_members": [],
+  "PLUGIN_PATH": [],
+  "all_rules_horizontal": [
+    "rules"
+  ],
+  "all_rules": [
+    "rules"
+  ],
+  "all_rules_required": [
+    "rules"
+  ],
+  "_S": [],
+  "_dict_to_df": [
+    "schema_type",
+    "data"
+  ],
+  "_validate_df_schema": [
+    "schema_type",
+    "df"
+  ],
+  "_serialize_df": [
+    "df"
+  ],
+  "get_pydantic_core_schema": [
+    "source_type",
+    "_handler",
+    "lazy"
+  ],
+  "get_pydantic_json_schema": [
+    "handler"
+  ],
+  "Generator": {
+    "__init__": [
+      "self",
+      "seed"
+    ],
+    "sample_seed": [
+      "self"
+    ],
+    "sample_int": [
+      "self",
+      "n"
+    ],
+    "sample_bool": [
+      "self",
+      "n"
+    ],
+    "sample_float": [
+      "self",
+      "n"
+    ],
+    "sample_string": [
+      "self",
+      "n"
+    ],
+    "sample_binary": [
+      "self",
+      "n"
+    ],
+    "sample_choice": [
+      "self",
+      "n"
+    ],
+    "sample_time": [
+      "self",
+      "n"
+    ],
+    "sample_date": [
+      "self",
+      "n"
+    ],
+    "sample_datetime": [
+      "self",
+      "n"
+    ],
+    "sample_duration": [
+      "self",
+      "n"
+    ],
+    "_apply_null_mask": [
+      "self",
+      "series",
+      "null_probability"
+    ]
+  },
+  "_time_to_microseconds": [
+    "t"
+  ],
+  "_datetime_to_microseconds": [
+    "dt"
+  ],
+  "create_schema": [
+    "name",
+    "columns",
+    "rules"
+  ],
+  "create_collection": [
+    "name",
+    "schemas",
+    "filters"
+  ],
+  "create_collection_raw": [
+    "name",
+    "annotations",
+    "filters"
+  ],
+  "validation_mask": [
+    "df",
+    "failure"
+  ],
+  "SchemaStorageTester": {
+    "write_typed": [
+      "self",
+      "schema",
+      "df",
+      "path",
+      "lazy"
+    ],
+    "write_untyped": [
+      "self",
+      "df",
+      "path",
+      "lazy"
+    ],
+    "read": [
+      "self",
+      "schema",
+      "path",
+      "lazy",
+      "validation"
+    ],
+    "set_metadata": [
+      "self",
+      "path",
+      "metadata"
+    ]
+  },
+  "ParquetSchemaStorageTester": {
+    "_wrap_path": [
+      "self",
+      "path"
+    ],
+    "write_typed": [
+      "self",
+      "schema",
+      "df",
+      "path",
+      "lazy"
+    ],
+    "write_untyped": [
+      "self",
+      "df",
+      "path",
+      "lazy"
+    ],
+    "read": [
+      "self",
+      "schema",
+      "path",
+      "lazy",
+      "validation"
+    ],
+    "set_metadata": [
+      "self",
+      "path",
+      "metadata"
+    ]
+  },
+  "DeltaSchemaStorageTester": {
+    "write_typed": [
+      "self",
+      "schema",
+      "df",
+      "path",
+      "lazy"
+    ],
+    "write_untyped": [
+      "self",
+      "df",
+      "path",
+      "lazy"
+    ],
+    "read": [
+      "self",
+      "schema",
+      "path",
+      "lazy",
+      "validation"
+    ],
+    "set_metadata": [
+      "self",
+      "path",
+      "metadata"
+    ]
+  },
+  "CollectionStorageTester": {
+    "write_typed": [
+      "self",
+      "collection",
+      "path",
+      "lazy"
+    ],
+    "write_untyped": [
+      "self",
+      "collection",
+      "path",
+      "lazy"
+    ],
+    "read": [
+      "self",
+      "collection",
+      "path",
+      "lazy"
+    ],
+    "set_metadata": [
+      "self",
+      "path",
+      "metadata"
+    ],
+    "_prefix_path": [
+      "self",
+      "path",
+      "fs"
+    ]
+  },
+  "ParquetCollectionStorageTester": {
+    "write_typed": [
+      "self",
+      "collection",
+      "path",
+      "lazy"
+    ],
+    "write_untyped": [
+      "self",
+      "collection",
+      "path",
+      "lazy"
+    ],
+    "read": [
+      "self",
+      "collection",
+      "path",
+      "lazy"
+    ],
+    "set_metadata": [
+      "self",
+      "path",
+      "metadata"
+    ]
+  },
+  "DeltaCollectionStorageTester": {
+    "write_typed": [
+      "self",
+      "collection",
+      "path",
+      "lazy"
+    ],
+    "write_untyped": [
+      "self",
+      "collection",
+      "path",
+      "lazy"
+    ],
+    "read": [
+      "self",
+      "collection",
+      "path",
+      "lazy"
+    ],
+    "set_metadata": [
+      "self",
+      "path",
+      "metadata"
+    ]
+  },
+  "FailureInfoStorageTester": {
+    "write_typed": [
+      "self",
+      "failure_info",
+      "path",
+      "lazy"
+    ],
+    "write_untyped": [
+      "self",
+      "failure_info",
+      "path",
+      "lazy"
+    ],
+    "read": [
+      "self",
+      "path",
+      "lazy"
+    ],
+    "set_metadata": [
+      "self",
+      "path",
+      "metadata"
+    ]
+  },
+  "ParquetFailureInfoStorageTester": {
+    "write_typed": [
+      "self",
+      "failure_info",
+      "path",
+      "lazy"
+    ],
+    "write_untyped": [
+      "self",
+      "failure_info",
+      "path",
+      "lazy"
+    ],
+    "read": [
+      "self",
+      "path",
+      "lazy"
+    ],
+    "set_metadata": [
+      "self",
+      "path",
+      "metadata"
+    ]
+  },
+  "DeltaFailureInfoStorageTester": {
+    "write_typed": [
+      "self",
+      "failure_info",
+      "path",
+      "lazy"
+    ],
+    "write_untyped": [
+      "self",
+      "failure_info",
+      "path",
+      "lazy"
+    ],
+    "read": [
+      "self",
+      "path",
+      "lazy"
+    ],
+    "set_metadata": [
+      "self",
+      "path",
+      "metadata"
+    ]
+  },
+  "rules_from_exprs": [
+    "exprs"
+  ],
+  "evaluate_rules": [
+    "lf",
+    "rules"
+  ],
+  "CollectionFilterResult": {
+    "collect_all": [
+      "self"
+    ]
+  },
+  "_FILTER_COLUMN_PREFIX": [],
+  "read_parquet_metadata_collection": [
+    "source"
+  ],
+  "deserialize_collection": [
+    "data",
+    "strict"
+  ],
+  "_join_all": [],
+  "_extract_keys_if_exist": [
+    "data",
+    "keys"
+  ],
+  "_deserialize_types": [
+    "serialized_collection_types",
+    "strict"
+  ],
+  "_reconcile_collection_types": [
+    "collection_types"
+  ],
+  "_MEMBER_ATTR": [],
+  "_FILTER_ATTR": [],
+  "CollectionMember": {},
+  "_common_primary_key": [
+    "columns"
+  ],
+  "MemberInfo": {},
+  "CollectionMeta": {
+    "__new__": [
+      "mcs",
+      "name",
+      "bases",
+      "namespace"
+    ],
+    "_get_metadata_recursively": [
+      "kls"
+    ],
+    "_get_metadata": [
+      "source"
+    ],
+    "_derive_member_info": [
+      "attr",
+      "type_annotation",
+      "collection_member"
+    ],
+    "__repr__": [
+      "cls"
+    ]
+  },
+  "BaseCollection": {
+    "members": [
+      "cls"
+    ],
+    "member_schemas": [
+      "cls"
+    ],
+    "required_members": [
+      "cls"
+    ],
+    "optional_members": [
+      "cls"
+    ],
+    "ignored_members": [
+      "cls"
+    ],
+    "non_ignored_members": [
+      "cls"
+    ],
+    "_failure_propagating_members": [
+      "cls"
+    ],
+    "common_primary_key": [
+      "cls"
+    ],
+    "_filters": [
+      "cls"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "_init": []
+  },
+  "infer_schema": [
+    "df",
+    "schema_name"
+  ],
+  "_generate_schema_code": [
+    "df",
+    "schema_name"
+  ],
+  "_make_valid_identifier": [
+    "name",
+    "col_index"
+  ],
+  "_get_dtype_args": [
+    "dtype",
+    "series"
+  ],
+  "_format_args": [],
+  "_dtype_to_column_code": [
+    "series"
+  ],
+  "classproperty": {
+    "__get__": []
+  },
+  "map_optional": [
+    "fn",
+    "value"
+  ],
+  "first_non_null": [],
+  "Bool": {
+    "dtype": [
+      "self"
+    ],
+    "sqlalchemy_dtype": [
+      "self",
+      "dialect"
+    ],
+    "pyarrow_dtype": [
+      "self"
+    ],
+    "_sample_unchecked": [
+      "self",
+      "generator",
+      "n"
+    ]
+  },
+  "Binary": {
+    "dtype": [
+      "self"
+    ],
+    "sqlalchemy_dtype": [
+      "self",
+      "dialect"
+    ],
+    "pyarrow_dtype": [
+      "self"
+    ],
+    "_sample_unchecked": [
+      "self",
+      "generator",
+      "n"
+    ]
+  },
+  "Categorical": {
+    "__init__": [
+      "self"
+    ],
+    "dtype": [
+      "self"
+    ],
+    "sqlalchemy_dtype": [
+      "self",
+      "dialect"
+    ],
+    "pyarrow_dtype": [
+      "self"
+    ],
+    "_sample_unchecked": [
+      "self",
+      "generator",
+      "n"
+    ]
+  },
+  "Array": {
+    "__init__": [
+      "self",
+      "inner",
+      "shape"
+    ],
+    "dtype": [
+      "self"
+    ],
+    "validation_rules": [
+      "self",
+      "expr"
+    ],
+    "sqlalchemy_dtype": [
+      "self",
+      "dialect"
+    ],
+    "_pyarrow_field_of_shape": [
+      "self",
+      "shape"
+    ],
+    "pyarrow_dtype": [
+      "self"
+    ],
+    "_sample_unchecked": [
+      "self",
+      "generator",
+      "n"
+    ],
+    "_attributes_match": [
+      "self",
+      "lhs",
+      "rhs",
+      "name",
+      "column_expr"
+    ],
+    "as_dict": [
+      "self",
+      "expr"
+    ],
+    "from_dict": [
+      "cls",
+      "data"
+    ]
+  },
+  "Struct": {
+    "__init__": [
+      "self",
+      "inner"
+    ],
+    "dtype": [
+      "self"
+    ],
+    "validate_dtype": [
+      "self",
+      "dtype"
+    ],
+    "validation_rules": [
+      "self",
+      "expr"
+    ],
+    "sqlalchemy_dtype": [
+      "self",
+      "dialect"
+    ],
+    "pyarrow_dtype": [
+      "self"
+    ],
+    "_sample_unchecked": [
+      "self",
+      "generator",
+      "n"
+    ],
+    "_attributes_match": [
+      "self",
+      "lhs",
+      "rhs",
+      "name",
+      "column_expr"
+    ],
+    "as_dict": [
+      "self",
+      "expr"
+    ],
+    "from_dict": [
+      "cls",
+      "data"
+    ]
+  },
+  "Column": {
+    "__init__": [
+      "self"
+    ],
+    "dtype": [
+      "self"
+    ],
+    "validate_dtype": [
+      "self",
+      "dtype"
+    ],
+    "validation_rules": [
+      "self",
+      "expr"
+    ],
+    "_derive_check_rule_names": [
+      "self",
+      "rules"
+    ],
+    "sqlalchemy_column": [
+      "self",
+      "name",
+      "dialect"
+    ],
+    "sqlalchemy_dtype": [
+      "self",
+      "dialect"
+    ],
+    "pyarrow_field": [
+      "self",
+      "name"
+    ],
+    "pyarrow_dtype": [
+      "self"
+    ],
+    "name": [
+      "self"
+    ],
+    "col": [
+      "self"
+    ],
+    "sample": [
+      "self",
+      "generator",
+      "n"
+    ],
+    "_sample_unchecked": [
+      "self",
+      "generator",
+      "n"
+    ],
+    "_null_probability": [
+      "self"
+    ],
+    "as_dict": [
+      "self",
+      "expr"
+    ],
+    "from_dict": [
+      "cls",
+      "data"
+    ],
+    "matches": [
+      "self",
+      "other",
+      "expr"
+    ],
+    "_attributes_match": [
+      "self",
+      "lhs",
+      "rhs",
+      "name",
+      "column_expr"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "_compare_checks": [
+    "lhs",
+    "rhs",
+    "expr"
+  ],
+  "_check_to_expr": [
+    "check",
+    "expr"
+  ],
+  "_check_from_expr": [
+    "value"
+  ],
+  "Comparable": {
+    "__gt__": [],
+    "__ge__": []
+  },
+  "OrdinalMixin": {
+    "__init__": [
+      "self"
+    ],
+    "validation_rules": [
+      "self",
+      "expr"
+    ]
+  },
+  "U": [],
+  "IsInMixin": {
+    "__init__": [
+      "self"
+    ],
+    "validation_rules": [
+      "self",
+      "expr"
+    ]
+  },
+  "List": {
+    "__init__": [
+      "self",
+      "inner"
+    ],
+    "dtype": [
+      "self"
+    ],
+    "validate_dtype": [
+      "self",
+      "dtype"
+    ],
+    "validation_rules": [
+      "self",
+      "expr"
+    ],
+    "sqlalchemy_dtype": [
+      "self",
+      "dialect"
+    ],
+    "pyarrow_dtype": [
+      "self"
+    ],
+    "_sample_unchecked": [
+      "self",
+      "generator",
+      "n"
+    ],
+    "_attributes_match": [
+      "self",
+      "lhs",
+      "rhs",
+      "name",
+      "column_expr"
+    ],
+    "as_dict": [
+      "self",
+      "expr"
+    ],
+    "from_dict": [
+      "cls",
+      "data"
+    ]
+  },
+  "_list_primary_key_check": [
+    "list_expr",
+    "inner"
+  ],
+  "Date": {
+    "__init__": [
+      "self"
+    ],
+    "dtype": [
+      "self"
+    ],
+    "validation_rules": [
+      "self",
+      "expr"
+    ],
+    "sqlalchemy_dtype": [
+      "self",
+      "dialect"
+    ],
+    "pyarrow_dtype": [
+      "self"
+    ],
+    "_sample_unchecked": [
+      "self",
+      "generator",
+      "n"
+    ]
+  },
+  "Time": {
+    "__init__": [
+      "self"
+    ],
+    "dtype": [
+      "self"
+    ],
+    "validation_rules": [
+      "self",
+      "expr"
+    ],
+    "sqlalchemy_dtype": [
+      "self",
+      "dialect"
+    ],
+    "pyarrow_dtype": [
+      "self"
+    ],
+    "_sample_unchecked": [
+      "self",
+      "generator",
+      "n"
+    ]
+  },
+  "Datetime": {
+    "__init__": [
+      "self"
+    ],
+    "dtype": [
+      "self"
+    ],
+    "validation_rules": [
+      "self",
+      "expr"
+    ],
+    "sqlalchemy_dtype": [
+      "self",
+      "dialect"
+    ],
+    "pyarrow_dtype": [
+      "self"
+    ],
+    "_sample_unchecked": [
+      "self",
+      "generator",
+      "n"
+    ],
+    "_attributes_match": [
+      "self",
+      "lhs",
+      "rhs",
+      "name",
+      "column_expr"
+    ]
+  },
+  "Duration": {
+    "__init__": [
+      "self"
+    ],
+    "dtype": [
+      "self"
+    ],
+    "validation_rules": [
+      "self",
+      "expr"
+    ],
+    "sqlalchemy_dtype": [
+      "self",
+      "dialect"
+    ],
+    "pyarrow_dtype": [
+      "self"
+    ],
+    "_sample_unchecked": [
+      "self",
+      "generator",
+      "n"
+    ]
+  },
+  "_next_date": [
+    "t",
+    "resolution"
+  ],
+  "_next_datetime": [
+    "t",
+    "resolution"
+  ],
+  "_next_time": [
+    "t",
+    "resolution"
+  ],
+  "_next_timedelta": [
+    "t",
+    "resolution"
+  ],
+  "register": [
+    "cls"
+  ],
+  "column_from_dict": [
+    "data"
+  ],
+  "Any": {
+    "__init__": [
+      "self"
+    ],
+    "dtype": [
+      "self"
+    ],
+    "validate_dtype": [
+      "self",
+      "dtype"
+    ],
+    "sqlalchemy_dtype": [
+      "self",
+      "dialect"
+    ],
+    "pyarrow_field": [
+      "self",
+      "name"
+    ],
+    "pyarrow_dtype": [
+      "self"
+    ],
+    "_sample_unchecked": [
+      "self",
+      "generator",
+      "n"
+    ]
+  },
+  "Object": {
+    "__init__": [
+      "self"
+    ],
+    "dtype": [
+      "self"
+    ],
+    "sqlalchemy_dtype": [
+      "self",
+      "dialect"
+    ],
+    "pyarrow_dtype": [
+      "self"
+    ],
+    "_sample_unchecked": [
+      "self",
+      "generator",
+      "n"
+    ]
+  },
+  "Enum": {
+    "__init__": [
+      "self",
+      "categories"
+    ],
+    "dtype": [
+      "self"
+    ],
+    "validate_dtype": [
+      "self",
+      "dtype"
+    ],
+    "sqlalchemy_dtype": [
+      "self",
+      "dialect"
+    ],
+    "pyarrow_dtype": [
+      "self"
+    ],
+    "_sample_unchecked": [
+      "self",
+      "generator",
+      "n"
+    ]
+  },
+  "_BaseFloat": {
+    "__init__": [
+      "self"
+    ],
+    "max_value": [
+      "self"
+    ],
+    "min_value": [
+      "self"
+    ],
+    "_nan_probability": [
+      "self"
+    ],
+    "_inf_probability": [
+      "self"
+    ],
+    "validation_rules": [
+      "self",
+      "expr"
+    ],
+    "_sample_unchecked": [
+      "self",
+      "generator",
+      "n"
+    ]
+  },
+  "Float": {
+    "dtype": [
+      "self"
+    ],
+    "validate_dtype": [
+      "self",
+      "dtype"
+    ],
+    "sqlalchemy_dtype": [
+      "self",
+      "dialect"
+    ],
+    "pyarrow_dtype": [
+      "self"
+    ],
+    "max_value": [
+      "self"
+    ],
+    "min_value": [
+      "self"
+    ]
+  },
+  "Float32": {
+    "dtype": [
+      "self"
+    ],
+    "sqlalchemy_dtype": [
+      "self",
+      "dialect"
+    ],
+    "pyarrow_dtype": [
+      "self"
+    ],
+    "max_value": [
+      "self"
+    ],
+    "min_value": [
+      "self"
+    ]
+  },
+  "Float64": {
+    "dtype": [
+      "self"
+    ],
+    "sqlalchemy_dtype": [
+      "self",
+      "dialect"
+    ],
+    "pyarrow_dtype": [
+      "self"
+    ],
+    "max_value": [
+      "self"
+    ],
+    "min_value": [
+      "self"
+    ]
+  },
+  "DEFAULT_SAMPLING_REGEX": [],
+  "String": {
+    "__init__": [
+      "self"
+    ],
+    "dtype": [
+      "self"
+    ],
+    "validation_rules": [
+      "self",
+      "expr"
+    ],
+    "sqlalchemy_dtype": [
+      "self",
+      "dialect"
+    ],
+    "pyarrow_dtype": [
+      "self"
+    ],
+    "_sample_unchecked": [
+      "self",
+      "generator",
+      "n"
+    ]
+  },
+  "_BaseInteger": {
+    "__init__": [
+      "self"
+    ],
+    "num_bytes": [
+      "self"
+    ],
+    "is_unsigned": [
+      "self"
+    ],
+    "max_value": [
+      "self"
+    ],
+    "min_value": [
+      "self"
+    ],
+    "_sample_unchecked": [
+      "self",
+      "generator",
+      "n"
+    ]
+  },
+  "Integer": {
+    "dtype": [
+      "self"
+    ],
+    "validate_dtype": [
+      "self",
+      "dtype"
+    ],
+    "sqlalchemy_dtype": [
+      "self",
+      "dialect"
+    ],
+    "pyarrow_dtype": [
+      "self"
+    ],
+    "num_bytes": [
+      "self"
+    ],
+    "is_unsigned": [
+      "self"
+    ]
+  },
+  "Int8": {
+    "dtype": [
+      "self"
+    ],
+    "sqlalchemy_dtype": [
+      "self",
+      "dialect"
+    ],
+    "pyarrow_dtype": [
+      "self"
+    ],
+    "num_bytes": [
+      "self"
+    ],
+    "is_unsigned": [
+      "self"
+    ]
+  },
+  "Int16": {
+    "dtype": [
+      "self"
+    ],
+    "sqlalchemy_dtype": [
+      "self",
+      "dialect"
+    ],
+    "pyarrow_dtype": [
+      "self"
+    ],
+    "num_bytes": [
+      "self"
+    ],
+    "is_unsigned": [
+      "self"
+    ]
+  },
+  "Int32": {
+    "dtype": [
+      "self"
+    ],
+    "sqlalchemy_dtype": [
+      "self",
+      "dialect"
+    ],
+    "pyarrow_dtype": [
+      "self"
+    ],
+    "num_bytes": [
+      "self"
+    ],
+    "is_unsigned": [
+      "self"
+    ]
+  },
+  "Int64": {
+    "dtype": [
+      "self"
+    ],
+    "sqlalchemy_dtype": [
+      "self",
+      "dialect"
+    ],
+    "pyarrow_dtype": [
+      "self"
+    ],
+    "num_bytes": [
+      "self"
+    ],
+    "is_unsigned": [
+      "self"
+    ]
+  },
+  "UInt8": {
+    "dtype": [
+      "self"
+    ],
+    "sqlalchemy_dtype": [
+      "self",
+      "dialect"
+    ],
+    "pyarrow_dtype": [
+      "self"
+    ],
+    "num_bytes": [
+      "self"
+    ],
+    "is_unsigned": [
+      "self"
+    ]
+  },
+  "UInt16": {
+    "dtype": [
+      "self"
+    ],
+    "sqlalchemy_dtype": [
+      "self",
+      "dialect"
+    ],
+    "pyarrow_dtype": [
+      "self"
+    ],
+    "num_bytes": [
+      "self"
+    ],
+    "is_unsigned": [
+      "self"
+    ]
+  },
+  "UInt32": {
+    "dtype": [
+      "self"
+    ],
+    "sqlalchemy_dtype": [
+      "self",
+      "dialect"
+    ],
+    "pyarrow_dtype": [
+      "self"
+    ],
+    "num_bytes": [
+      "self"
+    ],
+    "is_unsigned": [
+      "self"
+    ]
+  },
+  "UInt64": {
+    "dtype": [
+      "self"
+    ],
+    "sqlalchemy_dtype": [
+      "self",
+      "dialect"
+    ],
+    "pyarrow_dtype": [
+      "self"
+    ],
+    "num_bytes": [
+      "self"
+    ],
+    "is_unsigned": [
+      "self"
+    ]
+  },
+  "Decimal": {
+    "__init__": [
+      "self",
+      "precision",
+      "scale"
+    ],
+    "dtype": [
+      "self"
+    ],
+    "validate_dtype": [
+      "self",
+      "dtype"
+    ],
+    "sqlalchemy_dtype": [
+      "self",
+      "dialect"
+    ],
+    "pyarrow_dtype": [
+      "self"
+    ],
+    "_sample_unchecked": [
+      "self",
+      "generator",
+      "n"
+    ]
+  },
+  "_validate": [
+    "value",
+    "precision",
+    "scale",
+    "name"
+  ],
+  "_num_digits": [
+    "digits",
+    "exponent"
+  ],
+  "get_file_prefix": [
+    "fs"
+  ],
+  "SerializedSchema": [],
+  "SerializedCollection": [],
+  "SerializedRules": [],
+  "StorageBackend": {
+    "sink_frame": [
+      "self",
+      "lf",
+      "serialized_schema"
+    ],
+    "write_frame": [
+      "self",
+      "df",
+      "serialized_schema"
+    ],
+    "scan_frame": [
+      "self"
+    ],
+    "read_frame": [
+      "self"
+    ],
+    "sink_collection": [
+      "self",
+      "dfs",
+      "serialized_collection",
+      "serialized_schemas"
+    ],
+    "write_collection": [
+      "self",
+      "dfs",
+      "serialized_collection",
+      "serialized_schemas"
+    ],
+    "scan_collection": [
+      "self",
+      "members"
+    ],
+    "read_collection": [
+      "self",
+      "members"
+    ],
+    "sink_failure_info": [
+      "self",
+      "lf",
+      "serialized_rules",
+      "serialized_schema"
+    ],
+    "write_failure_info": [
+      "self",
+      "df",
+      "serialized_rules",
+      "serialized_schema"
+    ],
+    "scan_failure_info": [
+      "self"
+    ],
+    "read_failure_info": [
+      "self"
+    ]
+  },
+  "ParquetStorageBackend": {
+    "sink_frame": [
+      "self",
+      "lf",
+      "serialized_schema"
+    ],
+    "write_frame": [
+      "self",
+      "df",
+      "serialized_schema"
+    ],
+    "scan_frame": [
+      "self"
+    ],
+    "read_frame": [
+      "self"
+    ],
+    "sink_collection": [
+      "self",
+      "dfs",
+      "serialized_collection",
+      "serialized_schemas"
+    ],
+    "write_collection": [
+      "self",
+      "dfs",
+      "serialized_collection",
+      "serialized_schemas"
+    ],
+    "scan_collection": [
+      "self",
+      "members"
+    ],
+    "read_collection": [
+      "self",
+      "members"
+    ],
+    "_collection_from_parquet": [
+      "self",
+      "path",
+      "members",
+      "scan"
+    ],
+    "_member_source_path": [
+      "cls",
+      "base_path",
+      "fs",
+      "name"
+    ],
+    "sink_failure_info": [
+      "self",
+      "lf",
+      "serialized_rules",
+      "serialized_schema"
+    ],
+    "write_failure_info": [
+      "self",
+      "df",
+      "serialized_rules",
+      "serialized_schema"
+    ],
+    "_write_failure_info": [
+      "self",
+      "df",
+      "serialized_rules",
+      "serialized_schema"
+    ],
+    "scan_failure_info": [
+      "self"
+    ]
+  },
+  "_read_serialized_collection": [
+    "path"
+  ],
+  "_read_serialized_schema": [
+    "path"
+  ],
+  "DeltaStorageBackend": {
+    "sink_frame": [
+      "self",
+      "lf",
+      "serialized_schema"
+    ],
+    "write_frame": [
+      "self",
+      "df",
+      "serialized_schema"
+    ],
+    "scan_frame": [
+      "self"
+    ],
+    "read_frame": [
+      "self"
+    ],
+    "sink_collection": [
+      "self",
+      "dfs",
+      "serialized_collection",
+      "serialized_schemas"
+    ],
+    "write_collection": [
+      "self",
+      "dfs",
+      "serialized_collection",
+      "serialized_schemas"
+    ],
+    "scan_collection": [
+      "self",
+      "members"
+    ],
+    "read_collection": [
+      "self",
+      "members"
+    ],
+    "sink_failure_info": [
+      "self",
+      "lf",
+      "serialized_rules",
+      "serialized_schema"
+    ],
+    "write_failure_info": [
+      "self",
+      "df",
+      "serialized_rules",
+      "serialized_schema"
+    ],
+    "scan_failure_info": [
+      "self"
+    ]
+  },
+  "_raise_on_lazy_write": [],
+  "_read_serialized_rules": [
+    "table"
+  ],
+  "_to_delta_table": [
+    "table"
+  ],
+  "assert_failure_info_metadata": [
+    "metadata"
+  ],
+  "SCHEMA_METADATA_KEY": [],
+  "COLLECTION_METADATA_KEY": [],
+  "RULE_METADATA_KEY": []
+}
