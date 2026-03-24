@@ -1,0 +1,160 @@
+{
+  "ProfileRecord": {
+    "create": [
+      "cls",
+      "path",
+      "method",
+      "status_code",
+      "duration_ms",
+      "profile_output"
+    ]
+  },
+  "RouteStats": {
+    "avg_duration_ms": [
+      "self"
+    ],
+    "p95_duration_ms": [
+      "self"
+    ],
+    "p99_duration_ms": [
+      "self"
+    ],
+    "record": [
+      "self",
+      "duration_ms",
+      "status_code"
+    ],
+    "to_dict": [
+      "self"
+    ]
+  },
+  "StatsCollector": {
+    "__init__": [
+      "self",
+      "max_profiles_per_route"
+    ],
+    "_get_lock": [
+      "self"
+    ],
+    "_get_route_key": [
+      "self",
+      "path",
+      "method"
+    ],
+    "record": [
+      "self",
+      "path",
+      "method",
+      "duration_ms",
+      "status_code",
+      "profile_output"
+    ],
+    "get_all_stats": [
+      "self"
+    ],
+    "reset": [
+      "self"
+    ],
+    "get_route_history": [
+      "self",
+      "path",
+      "method",
+      "limit"
+    ]
+  },
+  "__all__": [],
+  "_DASHBOARD_HTML": [],
+  "create_dashboard_router": [
+    "stats_collector",
+    "get_enabled",
+    "set_enabled",
+    "get_config",
+    "set_config"
+  ],
+  "__version__": [],
+  "__author__": [],
+  "logger": [],
+  "OUTPUT_TYPE_TEXT": [],
+  "OUTPUT_TYPE_HTML": [],
+  "OUTPUT_TYPE_PROF": [],
+  "OUTPUT_TYPE_JSON": [],
+  "OUTPUT_TYPE_SPEEDSCOPE": [],
+  "VALID_OUTPUT_TYPES": [],
+  "LOG_FORMAT_TEXT": [],
+  "LOG_FORMAT_JSON": [],
+  "VALID_LOG_FORMATS": [],
+  "PyInstrumentProfilerMiddleware": {
+    "DEFAULT_HTML_FILENAME": [],
+    "DEFAULT_PROF_FILENAME": [],
+    "DEFAULT_JSON_FILENAME": [],
+    "DEFAULT_SPEEDSCOPE_FILENAME": [],
+    "__init__": [
+      "self",
+      "app"
+    ],
+    "_set_enabled": [
+      "self",
+      "value"
+    ],
+    "_get_runtime_config": [
+      "self"
+    ],
+    "_apply_runtime_config": [
+      "self",
+      "config"
+    ],
+    "_is_path_filtered": [
+      "self",
+      "path"
+    ],
+    "_should_sample": [
+      "self"
+    ],
+    "_make_pyinstrument_profiler": [
+      "self"
+    ],
+    "_get_profile_output": [
+      "self",
+      "profiler"
+    ],
+    "_write_profile_to_file": [
+      "self",
+      "content"
+    ],
+    "_emit_request_log": [
+      "self",
+      "method",
+      "path",
+      "duration_ms",
+      "status_code"
+    ],
+    "_resolve_output_file_name": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "scope",
+      "receive",
+      "send"
+    ],
+    "_call_with_pyinstrument": [
+      "self",
+      "scope",
+      "receive",
+      "send",
+      "method",
+      "path"
+    ],
+    "_call_with_cprofile": [
+      "self",
+      "scope",
+      "receive",
+      "send",
+      "method",
+      "path"
+    ],
+    "get_profiler_result": [
+      "self"
+    ]
+  }
+}
