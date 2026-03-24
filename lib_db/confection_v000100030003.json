@@ -1,0 +1,486 @@
+{
+  "ConfectionError": {},
+  "ConfigValidationError": {
+    "__init__": [
+      "self"
+    ],
+    "from_error": [
+      "cls",
+      "err",
+      "title",
+      "desc",
+      "parent",
+      "show_config"
+    ],
+    "_format": [
+      "self"
+    ]
+  },
+  "Config": {
+    "__init__": [
+      "self",
+      "data"
+    ],
+    "interpolate": [
+      "self"
+    ],
+    "copy": [
+      "self"
+    ],
+    "merge": [
+      "self",
+      "updates",
+      "remove_extra"
+    ],
+    "validate": [
+      "self",
+      "schema"
+    ],
+    "fill_defaults": [
+      "self",
+      "schema"
+    ],
+    "from_str": [
+      "self",
+      "text"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "to_bytes": [
+      "self"
+    ],
+    "from_bytes": [
+      "self",
+      "bytes_data"
+    ],
+    "to_disk": [
+      "self",
+      "path"
+    ],
+    "from_disk": [
+      "self",
+      "path"
+    ]
+  },
+  "_fill_defaults_recursive": [
+    "data",
+    "schema"
+  ],
+  "_validate_recursive": [
+    "data",
+    "schema",
+    "config",
+    "parent"
+  ],
+  "deep_merge_configs": [
+    "config",
+    "defaults"
+  ],
+  "parse_config": [
+    "text"
+  ],
+  "_apply_overrides": [
+    "result",
+    "overrides"
+  ],
+  "serialize_config": [
+    "data"
+  ],
+  "_get_configparser": [
+    "interpolate"
+  ],
+  "_validate_configparser": [
+    "config_parser"
+  ],
+  "_validate_overrides": [
+    "config_parser",
+    "overrides"
+  ],
+  "_interpret_value": [
+    "value"
+  ],
+  "_replace_section_refs": [
+    "root",
+    "node",
+    "parent"
+  ],
+  "_get_section_ref": [
+    "root",
+    "value"
+  ],
+  "_CustomInterpolation": {
+    "before_read": [
+      "self",
+      "parser",
+      "section",
+      "option",
+      "value"
+    ],
+    "_coerce_for_string_context": [
+      "self",
+      "v"
+    ],
+    "before_get": [
+      "self",
+      "parser",
+      "section",
+      "option",
+      "value",
+      "defaults"
+    ],
+    "interpolate": [
+      "self",
+      "parser",
+      "option",
+      "accum",
+      "rest",
+      "section",
+      "map",
+      "depth"
+    ],
+    "_get_section_name": [
+      "self",
+      "name"
+    ]
+  },
+  "__all__": [],
+  "TypeCheckError": {
+    "__str__": [
+      "self"
+    ]
+  },
+  "Ctx": {
+    "child": [
+      "self",
+      "segment"
+    ],
+    "fail": [
+      "self",
+      "value",
+      "annotation"
+    ]
+  },
+  "check_type": [
+    "value",
+    "annotation",
+    "custom_handlers",
+    "ctx"
+  ],
+  "check_branch": [
+    "value",
+    "annotation",
+    "custom_handlers",
+    "ctx"
+  ],
+  "get_annot_branches": [
+    "annotation"
+  ],
+  "outer_match": [
+    "value",
+    "annotation"
+  ],
+  "_resolve_dataclass_hints": [
+    "cls"
+  ],
+  "_has_strict_metadata": [
+    "metadata"
+  ],
+  "_strict_match": [
+    "value",
+    "inner_type"
+  ],
+  "_AnySchemaHandler": {
+    "__call__": [
+      "self",
+      "_source_type"
+    ]
+  },
+  "_pydantic_v2_match": [
+    "value",
+    "annotation"
+  ],
+  "_PydanticV1FieldShim": {
+    "__init__": [
+      "self",
+      "typ"
+    ]
+  },
+  "_pydantic_v1_match": [
+    "value",
+    "annotation"
+  ],
+  "decompose": [
+    "value",
+    "annotation",
+    "ctx"
+  ],
+  "VARIABLE_RE": [],
+  "SECTION_PREFIX": [],
+  "ARGS_FIELD": [],
+  "ARGS_FIELD_ALIAS": [],
+  "RESERVED_FIELDS": [],
+  "RESERVED_FIELDS_REVERSE": [],
+  "_PromisedType": [],
+  "Promise": {
+    "return_type": [
+      "self"
+    ],
+    "resolve": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "registry",
+      "values"
+    ]
+  },
+  "_coerce_basemodel_args": [
+    "func",
+    "kwargs"
+  ],
+  "_recursive_resolve": [
+    "obj"
+  ],
+  "registry": {
+    "has": [
+      "cls",
+      "registry_name",
+      "func_name"
+    ],
+    "get": [
+      "cls",
+      "registry_name",
+      "func_name"
+    ],
+    "resolve": [
+      "cls",
+      "config"
+    ],
+    "fill": [
+      "cls",
+      "config"
+    ],
+    "is_promise": [
+      "cls",
+      "obj"
+    ],
+    "get_constructor": [
+      "cls",
+      "obj"
+    ],
+    "parse_args": [
+      "cls",
+      "obj"
+    ]
+  },
+  "_is_config_section": [
+    "obj"
+  ],
+  "alias_generator": [
+    "name"
+  ],
+  "fill_config": [
+    "registry",
+    "config"
+  ],
+  "_fill_defaults": [
+    "registry",
+    "config"
+  ],
+  "_fill_promise_defaults": [
+    "registry",
+    "promise_dict"
+  ],
+  "_validate_promise_args": [
+    "filled",
+    "schema",
+    "func_name",
+    "parent"
+  ],
+  "insert_promises": [
+    "registry",
+    "config",
+    "resolve"
+  ],
+  "resolve_promises": [
+    "config"
+  ],
+  "fix_positionals": [
+    "config"
+  ],
+  "_deep_copy_with_uncopyable": [
+    "obj",
+    "memo"
+  ],
+  "apply_overrides": [
+    "config",
+    "overrides"
+  ],
+  "_DIn": [],
+  "Decorator": {
+    "__call__": [
+      "self",
+      "name"
+    ]
+  },
+  "PartialT": [],
+  "partial": [
+    "func"
+  ],
+  "DEFAULT_FROZEN_DICT_ERROR": [],
+  "DEFAULT_FROZEN_LIST_ERROR": [],
+  "SimpleFrozenDict": {
+    "__init__": [
+      "self"
+    ],
+    "__setitem__": [
+      "self",
+      "key",
+      "value"
+    ],
+    "pop": [
+      "self",
+      "key",
+      "default"
+    ],
+    "update": [],
+    "__deepcopy__": [
+      "self",
+      "memo"
+    ]
+  },
+  "SimpleFrozenList": {
+    "__init__": [
+      "self"
+    ],
+    "append": [
+      "self"
+    ],
+    "clear": [
+      "self"
+    ],
+    "extend": [
+      "self"
+    ],
+    "insert": [
+      "self"
+    ],
+    "pop": [
+      "self"
+    ],
+    "remove": [
+      "self"
+    ],
+    "reverse": [
+      "self"
+    ],
+    "sort": [
+      "self"
+    ],
+    "__deepcopy__": [
+      "self",
+      "memo"
+    ]
+  },
+  "is_promise": [
+    "obj"
+  ],
+  "_PYTHON_LITERALS": [],
+  "try_load_json": [
+    "value"
+  ],
+  "try_dump_json": [
+    "value",
+    "data"
+  ],
+  "StrictBool": {},
+  "PositiveInt": {},
+  "StrictFloat": {},
+  "FieldInfo": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "default"
+    ],
+    "is_required": [
+      "self"
+    ]
+  },
+  "Field": [
+    "default"
+  ],
+  "ValidationError": {
+    "__init__": [
+      "self",
+      "error_list"
+    ],
+    "errors": [
+      "self"
+    ]
+  },
+  "_ValidatedResult": {
+    "__init__": [
+      "self",
+      "data"
+    ]
+  },
+  "Schema": {
+    "__init_subclass__": [
+      "cls"
+    ],
+    "__init__": [
+      "self"
+    ],
+    "model_validate": [
+      "cls",
+      "data"
+    ],
+    "from_function": [
+      "cls",
+      "func"
+    ],
+    "model_dump": [
+      "self"
+    ]
+  },
+  "create_schema": [
+    "__name",
+    "__config__"
+  ],
+  "resolve_type_hints": [
+    "func"
+  ],
+  "_error_type_for": [
+    "annotation"
+  ],
+  "validate_type": [
+    "value",
+    "annotation"
+  ],
+  "_validate_schema": [
+    "data",
+    "fields",
+    "config",
+    "alias_generator"
+  ],
+  "_get_pydantic_validation_error": [],
+  "_is_pydantic_model": [
+    "cls"
+  ],
+  "_pydantic_instance_to_dict": [
+    "obj"
+  ],
+  "_extract_pydantic_fields": [
+    "pydantic_cls"
+  ],
+  "_extract_pydantic_config": [
+    "pydantic_cls"
+  ],
+  "ensure_schema": [
+    "schema_cls"
+  ],
+  "pydantic_cls_name": [
+    "cls"
+  ]
+}
