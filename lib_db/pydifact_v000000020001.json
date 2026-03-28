@@ -1,0 +1,965 @@
+{
+  "__version__": [],
+  "__all__": [],
+  "EDI_DEFAULT_VERSION": [],
+  "EDI_DEFAULT_DIRECTORY": [],
+  "EDI_DEFAULT_SYNTAX": [],
+  "Element": [],
+  "Elements": [],
+  "M": [],
+  "C": [],
+  "service_segments": [],
+  "logger": [],
+  "TokenIterator": {
+    "__init__": [
+      "self",
+      "iterable"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__next__": [
+      "self"
+    ],
+    "push_back": [
+      "self",
+      "token"
+    ]
+  },
+  "Parser": {
+    "__init__": [
+      "self",
+      "factory",
+      "characters",
+      "directory"
+    ],
+    "parse": [
+      "self",
+      "message",
+      "characters"
+    ],
+    "is_payload_start": [
+      "self",
+      "segment"
+    ],
+    "handle_payload": [
+      "self",
+      "tokens"
+    ],
+    "get_control_characters": [
+      "message",
+      "characters"
+    ],
+    "convert_tokens_to_raw_segments": [
+      "self",
+      "tokens"
+    ],
+    "convert_raw_segment_to_segment": [
+      "self",
+      "raw_segment",
+      "directory"
+    ]
+  },
+  "AEKParser": {
+    "is_payload_start": [
+      "self",
+      "segment"
+    ],
+    "handle_payload": [
+      "self",
+      "tokens"
+    ]
+  },
+  "get_syntax_release_version": [
+    "version"
+  ],
+  "EDISyntaxError": {
+    "__init__": [
+      "self",
+      "message",
+      "line_number",
+      "column_number"
+    ]
+  },
+  "ValidationError": {},
+  "MissingImplementationWarning": {},
+  "T": [],
+  "AbstractSegmentsContainer": {
+    "__init__": [
+      "self",
+      "extra_header_elements",
+      "characters"
+    ],
+    "from_str": [
+      "cls",
+      "string",
+      "parser",
+      "characters"
+    ],
+    "from_segments": [
+      "cls",
+      "segments",
+      "characters"
+    ],
+    "get_segments": [
+      "self",
+      "name",
+      "predicate"
+    ],
+    "get_segment": [
+      "self",
+      "name",
+      "predicate"
+    ],
+    "split_by": [
+      "self",
+      "start_segment_tag"
+    ],
+    "add_segments": [
+      "self",
+      "segments"
+    ],
+    "add_segment": [
+      "self",
+      "segment"
+    ],
+    "get_header_segment": [
+      "self"
+    ],
+    "get_footer_segment": [
+      "self"
+    ],
+    "serialize": [
+      "self",
+      "break_lines"
+    ],
+    "validate": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "RawSegmentCollection": {
+    "get_header_segment": [
+      "self"
+    ],
+    "get_footer_segment": [
+      "self"
+    ],
+    "validate": [
+      "self"
+    ]
+  },
+  "Message": {
+    "HEADER_TAG": [],
+    "FOOTER_TAG": [],
+    "__init__": [
+      "self",
+      "reference_number",
+      "identifier"
+    ],
+    "type": [
+      "self"
+    ],
+    "version": [
+      "self"
+    ],
+    "get_header_segment": [
+      "self"
+    ],
+    "get_footer_segment": [
+      "self"
+    ],
+    "validate": [
+      "self"
+    ]
+  },
+  "Interchange": {
+    "HEADER_TAG": [],
+    "FOOTER_TAG": [],
+    "__init__": [
+      "self",
+      "sender",
+      "recipient",
+      "control_reference",
+      "syntax_identifier",
+      "timestamp"
+    ],
+    "get_header_segment": [
+      "self"
+    ],
+    "get_footer_segment": [
+      "self"
+    ],
+    "get_messages": [
+      "self"
+    ],
+    "add_message": [
+      "self",
+      "message"
+    ],
+    "from_file": [
+      "cls",
+      "file",
+      "encoding",
+      "parser"
+    ],
+    "from_segments": [
+      "cls",
+      "segments",
+      "characters"
+    ],
+    "add_segment": [
+      "self",
+      "segment"
+    ],
+    "validate": [
+      "self"
+    ]
+  },
+  "Token": {
+    "__init__": [
+      "self",
+      "token_type",
+      "value"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ]
+  },
+  "Serializer": {
+    "__init__": [
+      "self",
+      "characters"
+    ],
+    "serialize": [
+      "self",
+      "segments",
+      "with_una_header",
+      "break_lines"
+    ],
+    "escape": [
+      "self",
+      "string"
+    ]
+  },
+  "_load_segments_xml": [
+    "directory"
+  ],
+  "Segment": {
+    "__omitted__": [],
+    "tag": [],
+    "__init_subclass__": [
+      "cls"
+    ],
+    "__init__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "__setitem__": [
+      "self",
+      "key",
+      "value"
+    ],
+    "validate": [
+      "self",
+      "syntax_version",
+      "directory"
+    ]
+  },
+  "SegmentFactory": {
+    "create_segment": [
+      "name"
+    ]
+  },
+  "Tokenizer": {
+    "__init__": [
+      "self"
+    ],
+    "get_tokens": [
+      "self",
+      "message",
+      "characters"
+    ],
+    "read_next_char": [
+      "self"
+    ],
+    "get_next_char": [
+      "self"
+    ],
+    "get_next_token": [
+      "self"
+    ],
+    "is_control_character": [
+      "self"
+    ],
+    "store_current_char_and_read_next": [
+      "self"
+    ],
+    "extract_stored_chars": [
+      "self"
+    ],
+    "end_of_message": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "Characters": {
+    "__init__": [
+      "self",
+      "component_separator",
+      "data_separator",
+      "decimal_point",
+      "escape_character",
+      "reserved",
+      "segment_terminator"
+    ],
+    "from_str": [
+      "cls",
+      "string"
+    ],
+    "with_control_character": [
+      "self",
+      "cc_type",
+      "char"
+    ],
+    "service_string_advice": [
+      "self"
+    ],
+    "escaped_syntax_dic": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__len__": [
+      "self"
+    ]
+  },
+  "allowed_alphanum_chars": [],
+  "is_edifact_alphanum": [
+    "s"
+  ],
+  "assert_a": [
+    "s",
+    "length",
+    "message"
+  ],
+  "assert_a_max": [
+    "s",
+    "length",
+    "message"
+  ],
+  "assert_n": [
+    "s",
+    "length",
+    "message"
+  ],
+  "assert_n_max": [
+    "s",
+    "length",
+    "message"
+  ],
+  "assert_an": [
+    "s",
+    "length",
+    "message"
+  ],
+  "assert_an_max": [
+    "s",
+    "length",
+    "message"
+  ],
+  "assert_format": [
+    "s",
+    "fmt_str",
+    "message"
+  ],
+  "Code": {},
+  "DataElement": {
+    "__omitted__": [],
+    "codes": [],
+    "__init__": [
+      "self",
+      "value"
+    ],
+    "validate": [
+      "self",
+      "mandatory",
+      "repr"
+    ]
+  },
+  "CompositeDataElement": {
+    "__init__": [
+      "self",
+      "elements"
+    ],
+    "validate": [
+      "self",
+      "mandatory",
+      "repeat"
+    ]
+  },
+  "DataElementFactory": {
+    "create_data_element": [
+      "code",
+      "value",
+      "validate",
+      "version"
+    ]
+  },
+  "SyntaxVersionNumber": {
+    "code": [],
+    "repr": [],
+    "title": [],
+    "codes": []
+  },
+  "UNASegment": {
+    "version": []
+  },
+  "ServiceStringAdvice": {
+    "code": [],
+    "repr": [],
+    "title": [],
+    "description": []
+  },
+  "SyntaxIdentifier": {
+    "code": [],
+    "title": [],
+    "repr": [],
+    "codes": []
+  },
+  "SenderIdentification": {
+    "code": [],
+    "repr": [],
+    "title": []
+  },
+  "IdentificationCodeQualifier": {
+    "code": [],
+    "repr": [],
+    "title": [],
+    "description": [],
+    "codes": []
+  },
+  "AddressForReverseRouting": {
+    "code": [],
+    "repr": [],
+    "title": []
+  },
+  "RecipientIdentification": {
+    "code": [],
+    "repr": [],
+    "title": [],
+    "description": []
+  },
+  "RoutingAddress": {
+    "code": [],
+    "repr": [],
+    "title": [],
+    "description": []
+  },
+  "Date": {
+    "code": [],
+    "repr": [],
+    "title": [],
+    "description": []
+  },
+  "Time": {
+    "code": [],
+    "repr": [],
+    "title": [],
+    "description": []
+  },
+  "InterchangeControlReference": {
+    "code": [],
+    "repr": [],
+    "title": [],
+    "description": []
+  },
+  "RecipientReferencePassword": {
+    "code": [],
+    "repr": [],
+    "title": [],
+    "description": []
+  },
+  "RecipientReferencePasswordQualifier": {
+    "code": [],
+    "repr": [],
+    "title": [],
+    "description": []
+  },
+  "ApplicationReference": {
+    "code": [],
+    "repr": [],
+    "title": [],
+    "description": []
+  },
+  "ProcessingPriorityCode": {
+    "code": [],
+    "repr": [],
+    "title": [],
+    "description": []
+  },
+  "AcknowledgementRequest": {
+    "code": [],
+    "repr": [],
+    "title": [],
+    "description": []
+  },
+  "CommunicationAgreementID": {
+    "code": [],
+    "repr": [],
+    "title": [],
+    "description": []
+  },
+  "TestIndicator": {
+    "code": [],
+    "repr": [],
+    "title": [],
+    "description": []
+  },
+  "NameAndAddressLine": {
+    "code": [],
+    "desc": [],
+    "repr": []
+  },
+  "PartyName": {
+    "code": [],
+    "desc": [],
+    "repr": []
+  },
+  "PartyNameFormat": {
+    "code": [],
+    "desc": [],
+    "repr": []
+  },
+  "CSyntaxIdentifier": {
+    "code": [],
+    "title": [],
+    "schema": []
+  },
+  "PartyNameComposite": {
+    "code": [],
+    "desc": [],
+    "schema": []
+  },
+  "PartyIdentificationDetails": {
+    "code": [],
+    "schema": []
+  },
+  "CInterchangeSender": {
+    "code": [],
+    "title": [],
+    "schema": []
+  },
+  "CInterchangeRecipient": {
+    "code": [],
+    "title": [],
+    "schema": []
+  },
+  "CDateAndTimeOfPreparation": {
+    "code": [],
+    "schema": []
+  },
+  "CRecipientsReference": {
+    "code": [],
+    "schema": []
+  },
+  "UNBSegment": {
+    "tag": [],
+    "version": [],
+    "schema": []
+  },
+  "partner_identification_codes": [],
+  "InterchangeSenderInternalIdentification": {
+    "code": [],
+    "repr": [],
+    "title": []
+  },
+  "InterchangeRecipientIdentification": {
+    "code": [],
+    "repr": [],
+    "title": []
+  },
+  "InterchangeRecipientInternalIdentification": {
+    "code": [],
+    "repr": [],
+    "title": []
+  },
+  "InterchangeAgreementIdentifier": {
+    "code": [],
+    "repr": [],
+    "title": [],
+    "description": []
+  },
+  "InterchangeSenderInternalSubIdentification": {
+    "code": [],
+    "repr": [],
+    "title": []
+  },
+  "InterchangeRecipientInternalSubIdentification": {
+    "code": [],
+    "repr": [],
+    "title": []
+  },
+  "ControllingAgency": {
+    "code": [],
+    "repr": []
+  },
+  "MessageVersionNumber": {
+    "code": [],
+    "repr": []
+  },
+  "MessageReleaseNumber": {
+    "code": [],
+    "repr": []
+  },
+  "MessageType": {
+    "code": [],
+    "repr": []
+  },
+  "FirstAndLastTransfer": {
+    "code": [],
+    "repr": []
+  },
+  "SectionIdentification": {
+    "code": [],
+    "repr": []
+  },
+  "Action": {
+    "code": [],
+    "repr": []
+  },
+  "SyntaxError": {
+    "code": [],
+    "repr": []
+  },
+  "MessageTypeSubFunctionIdentification": {
+    "code": [],
+    "repr": []
+  },
+  "CharacterEncoding": {
+    "code": [],
+    "repr": []
+  },
+  "ServiceSegmentTag": {
+    "code": [],
+    "repr": []
+  },
+  "TransferPosition": {
+    "code": [],
+    "repr": []
+  },
+  "DuplicateIndicator": {
+    "code": [],
+    "repr": []
+  },
+  "MessageAuthenticationCodeQualifier": {
+    "code": [],
+    "repr": []
+  },
+  "MessageAuthenticationCode": {
+    "code": [],
+    "repr": []
+  },
+  "ServiceCodeListDirectoryVersionNumber": {
+    "code": [],
+    "repr": []
+  },
+  "CRecipientReferencePassword": {
+    "code": [],
+    "schema": []
+  },
+  "EmptyCDataElement": {
+    "code": [],
+    "schema": []
+  },
+  "default_characters": [],
+  "test_empty_UNASegment": [],
+  "test_custom_UNASegment": [],
+  "test_UNASegment_str": [],
+  "test_invalid_characters_length": [],
+  "test_UNASegment_characters": [],
+  "path": [],
+  "test_sage_coala_file": [],
+  "test_message_with_colon_at_end": [],
+  "test_v3_messages": [],
+  "test_v4_messages": [],
+  "test_type": [],
+  "test_value": [],
+  "test_wrong_type": [],
+  "interchange_str": [],
+  "test_from_str": [
+    "interchange_str"
+  ],
+  "test_from_str_with_una": [
+    "interchange_str"
+  ],
+  "test_with_custom_decimal_separator": [
+    "interchange_str"
+  ],
+  "test_with_default_parser": [
+    "interchange_str"
+  ],
+  "test_configured_parser_and_una": [
+    "interchange_str"
+  ],
+  "test_configured_parser_and_differing_una": [
+    "interchange_str"
+  ],
+  "test_configured_parser_and_no_una": [
+    "interchange_str"
+  ],
+  "parser": [],
+  "serializer": [],
+  "interchange": [],
+  "assert_segments": [
+    "serializer",
+    "expected",
+    "segments"
+  ],
+  "test_una_breakline": [
+    "interchange"
+  ],
+  "test_una_integrity1": [
+    "interchange"
+  ],
+  "test_UNA_integrity2": [
+    "interchange"
+  ],
+  "test_empty_segment_list": [],
+  "test_trailing_empty_data_elements1": [],
+  "test_trailing_empty_data_elements2": [],
+  "test_trailing_empty_composite_data_elements1": [],
+  "test_trailing_empty_composite_data_elements2": [],
+  "test_basic1": [
+    "serializer"
+  ],
+  "test_basic2": [
+    "serializer"
+  ],
+  "test_empty_segment": [
+    "serializer"
+  ],
+  "test_with_una_in_segments": [
+    "serializer"
+  ],
+  "test_escape_character": [
+    "serializer"
+  ],
+  "test_escape_component_separator": [
+    "serializer"
+  ],
+  "test_escape_data_separator": [
+    "serializer"
+  ],
+  "test_escape_decimal_point": [
+    "serializer"
+  ],
+  "test_escape_segment_terminator": [
+    "serializer"
+  ],
+  "test_escape_sequence": [
+    "serializer"
+  ],
+  "test_no_mutation": [
+    "serializer"
+  ],
+  "test_interchange_serialization_with_una": [
+    "interchange_str"
+  ],
+  "test_interchange_serialization_without_una": [
+    "interchange_str"
+  ],
+  "test_performance_huge_message": [],
+  "test_message_with_2_UNA_segments": [],
+  "test_from_file": [],
+  "test_create_with_segments": [],
+  "test_get_segments": [],
+  "test_get_segments_doesnt_exist": [],
+  "test_get_segments_w_predicate": [],
+  "test_get_segment": [],
+  "test_get_segment_w_predicate": [],
+  "test_split_by": [],
+  "test_str_serialize": [],
+  "test_get_segment_doesnt_exist": [],
+  "test_malformed_tag1": [],
+  "test_malformed_tag2": [],
+  "test_malformed_tag3": [],
+  "test_malformed_tag4": [],
+  "test_malformed_tag5": [],
+  "message": [],
+  "test_empty_interchange": [
+    "interchange"
+  ],
+  "test_empty_interchange_w_extra_header": [],
+  "test_empty_interchange_from_str": [],
+  "test_empty_interchange_w_una": [],
+  "test_interchange_messages": [
+    "interchange",
+    "message"
+  ],
+  "test_interchange_from_str_multi_messages": [],
+  "test_faulty_interchange__UNH_not_closed": [],
+  "test_faulty_interchange__nested_UNH_not_closed": [],
+  "test_faulty_interchange__UNT_without_UNH": [],
+  "test_empty_message": [
+    "message"
+  ],
+  "test_add_another_footer_element": [
+    "message"
+  ],
+  "test_counting_of_messages": [
+    "interchange",
+    "message"
+  ],
+  "test_interchange_with_extra_header_elements": [],
+  "tokenizer": [],
+  "_assert_tokens": [
+    "collection",
+    "expected",
+    "error_message"
+  ],
+  "test_basic": [],
+  "test_escape": [],
+  "test_double_escape": [],
+  "test_triple_escape": [],
+  "test_quadruple_escape": [],
+  "test_starts_with_escape": [],
+  "expected_crlf": [],
+  "test_ignore_lf": [
+    "expected_crlf"
+  ],
+  "test_ignore_crlf": [
+    "expected_crlf"
+  ],
+  "test_ignore_cr": [
+    "expected_crlf"
+  ],
+  "test_ignore_lfcr": [
+    "expected_crlf"
+  ],
+  "test_ignore_lfcr_combined": [
+    "expected_crlf"
+  ],
+  "test_ignore_whitespace": [
+    "expected_crlf"
+  ],
+  "test_ignore_long_whitespace": [
+    "expected_crlf"
+  ],
+  "test_no_terminator": [],
+  "test_escaped_newline_char": [],
+  "test_wikipedia_file_en": [],
+  "test_wikipedia_file_de": [],
+  "test_invoice_file": [],
+  "test_order_file": [],
+  "test_order2_file": [],
+  "test_patient1_file": [],
+  "default_una_segment": [],
+  "test_setup_special_characters_only": [
+    "parser"
+  ],
+  "test_setup_special_characters_with_message": [
+    "parser"
+  ],
+  "test_setup_special_characters_with_linefeed": [
+    "parser"
+  ],
+  "test_setup_special_characters_with_crlf": [
+    "parser"
+  ],
+  "_assert_segments": [
+    "parser",
+    "default_una_segment",
+    "collection",
+    "segments"
+  ],
+  "test_compare_equal_segments": [
+    "parser",
+    "default_una_segment"
+  ],
+  "test_una_parser1": [
+    "parser"
+  ],
+  "test_una_parser2": [
+    "parser"
+  ],
+  "test_una_parser3": [
+    "parser"
+  ],
+  "test_compound_starts_with_skipped": [
+    "parser",
+    "default_una_segment"
+  ],
+  "test_compound_contains_one_skipped": [
+    "parser",
+    "default_una_segment"
+  ],
+  "test_compound_contains_two_skipped": [
+    "parser",
+    "default_una_segment"
+  ],
+  "test_parsing_with_new_default_characters": [],
+  "test_parsing_with_passed_characters_": [],
+  "test_parsing_with_passed_characters_but_respect_una": [],
+  "test_message_end_without_control_char": [],
+  "test_edifact_text_with_newlines": [],
+  "test_edifact_text_with_newline_at_end": [],
+  "Setup": {},
+  "setup": [],
+  "test_una_segment": [
+    "setup"
+  ],
+  "test_with_separator_identity": [],
+  "test_cc_assigning": [],
+  "test_wrong_cc_assigning": [],
+  "elements": [],
+  "test_get_segment_code_empty": [],
+  "test_get_segment_code": [],
+  "test_all_elements": [],
+  "test_get_single_element": [],
+  "test_get_list_element": [],
+  "test_get_non_existing_element": [],
+  "test_has_plugin": [],
+  "cc": [],
+  "test_wrong_attribute": [
+    "cc"
+  ],
+  "test_wrong_character_size": [
+    "cc"
+  ],
+  "test_correct_parameters": [
+    "cc"
+  ]
+}
