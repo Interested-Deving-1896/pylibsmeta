@@ -1,0 +1,780 @@
+{
+  "__all__": [],
+  "app": [],
+  "main": [],
+  "register_backend_tool_rendering": [
+    "app"
+  ],
+  "get_weather": [
+    "location"
+  ],
+  "get_forecast": [
+    "location",
+    "days"
+  ],
+  "weather_agent": [
+    "client"
+  ],
+  "write_document": [
+    "document"
+  ],
+  "_DOCUMENT_WRITER_INSTRUCTIONS": [],
+  "document_writer_agent": [
+    "client"
+  ],
+  "generate_haiku": [],
+  "create_chart": [],
+  "display_timeline": [],
+  "show_comparison_table": [],
+  "_UI_GENERATOR_INSTRUCTIONS": [],
+  "OptionsT": [],
+  "ui_generator_agent": [
+    "client"
+  ],
+  "StepStatus": {
+    "ENABLED": [],
+    "DISABLED": []
+  },
+  "TaskStep": {},
+  "generate_task_steps": [
+    "steps"
+  ],
+  "human_in_the_loop_agent": [
+    "client"
+  ],
+  "simple_agent": [
+    "client"
+  ],
+  "SkillLevel": {
+    "BEGINNER": [],
+    "INTERMEDIATE": [],
+    "ADVANCED": []
+  },
+  "CookingTime": {
+    "FIVE_MIN": [],
+    "FIFTEEN_MIN": [],
+    "THIRTY_MIN": [],
+    "FORTY_FIVE_MIN": [],
+    "SIXTY_PLUS_MIN": []
+  },
+  "Ingredient": {},
+  "Recipe": {},
+  "update_recipe": [
+    "recipe"
+  ],
+  "_RECIPE_INSTRUCTIONS": [],
+  "recipe_agent": [
+    "client"
+  ],
+  "_create_task_steps_agent": [
+    "client"
+  ],
+  "TaskStepsAgentWithExecution": {
+    "__init__": [
+      "self",
+      "base_agent"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "run": [
+      "self",
+      "input_data"
+    ]
+  },
+  "task_steps_agent_wrapped": [
+    "client"
+  ],
+  "create_calendar_event": [
+    "title",
+    "date",
+    "time"
+  ],
+  "send_email": [
+    "to",
+    "subject",
+    "body"
+  ],
+  "book_meeting_room": [
+    "room_name",
+    "date",
+    "start_time",
+    "end_time"
+  ],
+  "_TASK_PLANNER_INSTRUCTIONS": [],
+  "task_planner_agent": [
+    "client"
+  ],
+  "research_topic": [
+    "topic"
+  ],
+  "create_presentation": [
+    "title",
+    "num_slides"
+  ],
+  "analyze_data": [
+    "dataset"
+  ],
+  "_RESEARCH_ASSISTANT_INSTRUCTIONS": [],
+  "research_assistant_agent": [
+    "client"
+  ],
+  "_STATE_KEY": [],
+  "_PresentFlights": {},
+  "_PresentHotels": {},
+  "_PlanExperiences": {},
+  "_FinalizeTrip": {},
+  "_initial_state": [],
+  "_emit_text_events": [
+    "text"
+  ],
+  "_emit_text": [
+    "ctx",
+    "text"
+  ],
+  "_emit_state_snapshot": [
+    "ctx",
+    "state"
+  ],
+  "_flight_interrupt_value": [],
+  "_hotel_interrupt_value": [],
+  "_normalize_flight": [
+    "value"
+  ],
+  "_normalize_hotel": [
+    "value"
+  ],
+  "_load_state": [
+    "ctx"
+  ],
+  "_SupervisorExecutor": {
+    "__init__": [
+      "self"
+    ],
+    "start": [
+      "self",
+      "message",
+      "ctx"
+    ],
+    "finalize": [
+      "self",
+      "message",
+      "ctx"
+    ]
+  },
+  "_FlightsExecutor": {
+    "__init__": [
+      "self"
+    ],
+    "present_options": [
+      "self",
+      "message",
+      "ctx"
+    ],
+    "handle_selection": [
+      "self",
+      "original_request",
+      "response",
+      "ctx"
+    ]
+  },
+  "_HotelsExecutor": {
+    "__init__": [
+      "self"
+    ],
+    "present_options": [
+      "self",
+      "message",
+      "ctx"
+    ],
+    "handle_selection": [
+      "self",
+      "original_request",
+      "response",
+      "ctx"
+    ]
+  },
+  "_ExperiencesExecutor": {
+    "__init__": [
+      "self"
+    ],
+    "plan": [
+      "self",
+      "message",
+      "ctx"
+    ]
+  },
+  "_build_subgraphs_workflow": [],
+  "_build_subgraphs_workflow_for_thread": [
+    "thread_id"
+  ],
+  "subgraphs_agent": [],
+  "logger": [],
+  "_sanitize_tool_history": [
+    "messages"
+  ],
+  "_deduplicate_messages": [
+    "messages"
+  ],
+  "_parse_multimodal_media_part": [
+    "part"
+  ],
+  "_convert_agui_content_to_framework": [
+    "content"
+  ],
+  "_normalize_snapshot_content": [
+    "content"
+  ],
+  "normalize_agui_input_messages": [
+    "messages"
+  ],
+  "agui_messages_to_agent_framework": [
+    "messages"
+  ],
+  "agent_framework_messages_to_agui": [
+    "messages"
+  ],
+  "extract_text_from_contents": [
+    "contents"
+  ],
+  "agui_messages_to_snapshot_format": [
+    "messages"
+  ],
+  "DEFAULT_TAGS": [],
+  "AGUIChatOptionsT": [],
+  "ResponseModelT": [],
+  "PredictStateConfig": {},
+  "RunMetadata": {},
+  "AgentState": {},
+  "AGUIRequest": {},
+  "AGUIChatOptions": {},
+  "AGUIHttpService": {
+    "__init__": [
+      "self",
+      "endpoint",
+      "http_client",
+      "timeout"
+    ],
+    "post_run": [
+      "self",
+      "thread_id",
+      "run_id",
+      "messages",
+      "state",
+      "tools",
+      "available_interrupts",
+      "resume"
+    ],
+    "close": [
+      "self"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self"
+    ]
+  },
+  "AG_UI_INTERNAL_METADATA_KEYS": [],
+  "_build_safe_metadata": [
+    "thread_metadata"
+  ],
+  "_should_suppress_intermediate_snapshot": [
+    "tool_name",
+    "predict_state_config",
+    "require_confirmation"
+  ],
+  "_extract_approved_state_updates": [
+    "messages",
+    "predictive_handler"
+  ],
+  "_resume_to_tool_messages": [
+    "resume_payload"
+  ],
+  "_normalize_response_stream": [
+    "response_stream"
+  ],
+  "_create_state_context_message": [
+    "current_state",
+    "state_schema"
+  ],
+  "_inject_state_context": [
+    "messages",
+    "current_state",
+    "state_schema"
+  ],
+  "_is_confirm_changes_response": [
+    "messages"
+  ],
+  "_handle_step_based_approval": [
+    "messages"
+  ],
+  "_make_approval_tool_result_events": [
+    "resolved_approval_results"
+  ],
+  "_evict_oldest_approvals": [
+    "registry",
+    "max_size"
+  ],
+  "_resolve_approval_responses": [
+    "messages",
+    "tools",
+    "agent",
+    "run_kwargs",
+    "pending_approvals",
+    "thread_id"
+  ],
+  "_convert_approval_results_to_tool_messages": [
+    "messages"
+  ],
+  "_clean_resolved_approvals_from_snapshot": [
+    "snapshot_messages",
+    "resolved_messages"
+  ],
+  "_build_messages_snapshot": [
+    "flow",
+    "snapshot_messages"
+  ],
+  "run_agent_stream": [
+    "input_data",
+    "agent",
+    "config",
+    "pending_approvals"
+  ],
+  "AGUIEventConverter": {
+    "__init__": [
+      "self"
+    ],
+    "convert_event": [
+      "self",
+      "event"
+    ],
+    "_handle_run_started": [
+      "self",
+      "event"
+    ],
+    "_handle_text_message_start": [
+      "self",
+      "event"
+    ],
+    "_handle_text_message_content": [
+      "self",
+      "event"
+    ],
+    "_handle_text_message_end": [
+      "self",
+      "event"
+    ],
+    "_handle_tool_call_start": [
+      "self",
+      "event"
+    ],
+    "_handle_tool_call_args": [
+      "self",
+      "event"
+    ],
+    "_handle_tool_call_end": [
+      "self",
+      "event"
+    ],
+    "_handle_tool_call_result": [
+      "self",
+      "event"
+    ],
+    "_handle_run_finished": [
+      "self",
+      "event"
+    ],
+    "_handle_run_error": [
+      "self",
+      "event"
+    ],
+    "_handle_custom_event": [
+      "self",
+      "event",
+      "raw_event_type"
+    ]
+  },
+  "AgentConfig": {
+    "__init__": [
+      "self",
+      "state_schema",
+      "predict_state_config",
+      "use_service_session",
+      "require_confirmation"
+    ],
+    "_normalize_state_schema": [
+      "state_schema"
+    ]
+  },
+  "AgentFrameworkAgent": {
+    "__init__": [
+      "self",
+      "agent",
+      "name",
+      "description",
+      "state_schema",
+      "predict_state_config",
+      "require_confirmation",
+      "use_service_session"
+    ],
+    "run": [
+      "self",
+      "input_data"
+    ]
+  },
+  "WorkflowFactory": [],
+  "AgentFrameworkWorkflow": {
+    "__init__": [
+      "self",
+      "workflow"
+    ],
+    "_thread_id_from_input": [
+      "input_data"
+    ],
+    "_resolve_workflow": [
+      "self",
+      "thread_id"
+    ],
+    "clear_thread_workflow": [
+      "self",
+      "thread_id"
+    ],
+    "clear_workflow_cache": [
+      "self"
+    ],
+    "run": [
+      "self",
+      "input_data"
+    ]
+  },
+  "generate_event_id": [],
+  "safe_json_parse": [
+    "value"
+  ],
+  "get_role_value": [
+    "message"
+  ],
+  "normalize_agui_role": [
+    "raw_role"
+  ],
+  "extract_state_from_tool_args": [
+    "args",
+    "tool_arg_name"
+  ],
+  "merge_state": [
+    "current",
+    "update"
+  ],
+  "make_json_safe": [
+    "obj"
+  ],
+  "convert_agui_tools_to_agent_framework": [
+    "agui_tools"
+  ],
+  "convert_tools_to_agui_format": [
+    "tools"
+  ],
+  "get_conversation_id_from_update": [
+    "update"
+  ],
+  "_has_only_tool_calls": [
+    "contents"
+  ],
+  "_normalize_resume_interrupts": [
+    "resume_payload"
+  ],
+  "_extract_resume_payload": [
+    "input_data"
+  ],
+  "_build_run_finished_event": [
+    "run_id",
+    "thread_id",
+    "interrupts"
+  ],
+  "FlowState": {
+    "get_tool_name": [
+      "self",
+      "call_id"
+    ],
+    "get_pending_without_end": [
+      "self"
+    ]
+  },
+  "_emit_tool_call": [
+    "content",
+    "flow",
+    "predictive_handler"
+  ],
+  "_emit_tool_result_common": [
+    "call_id",
+    "raw_result",
+    "flow",
+    "predictive_handler"
+  ],
+  "_emit_tool_result": [
+    "content",
+    "flow",
+    "predictive_handler"
+  ],
+  "_emit_approval_request": [
+    "content",
+    "flow",
+    "predictive_handler",
+    "require_confirmation"
+  ],
+  "_emit_usage": [
+    "content"
+  ],
+  "_emit_oauth_consent": [
+    "content"
+  ],
+  "_emit_mcp_tool_call": [
+    "content",
+    "flow"
+  ],
+  "_emit_mcp_tool_result": [
+    "content",
+    "flow",
+    "predictive_handler"
+  ],
+  "_emit_text_reasoning": [
+    "content",
+    "flow"
+  ],
+  "_emit_content": [
+    "content",
+    "flow",
+    "predictive_handler",
+    "skip_text",
+    "require_confirmation"
+  ],
+  "add_agent_framework_fastapi_endpoint": [
+    "app",
+    "agent",
+    "path",
+    "state_schema",
+    "predict_state_config",
+    "allow_origins",
+    "default_state",
+    "tags",
+    "dependencies"
+  ],
+  "_unwrap_server_function_call_contents": [
+    "contents"
+  ],
+  "BaseChatClientT": [],
+  "_apply_server_function_call_unwrap": [
+    "client"
+  ],
+  "AGUIChatClient": {
+    "OTEL_PROVIDER_NAME": [],
+    "__init__": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self"
+    ],
+    "_register_server_tool_placeholder": [
+      "self",
+      "tool_name"
+    ],
+    "_extract_state_from_messages": [
+      "self",
+      "messages"
+    ],
+    "_convert_messages_to_agui_format": [
+      "self",
+      "messages"
+    ],
+    "_get_thread_id": [
+      "self",
+      "options"
+    ],
+    "_inner_get_response": [
+      "self"
+    ],
+    "_streaming_impl": [
+      "self"
+    ]
+  },
+  "_INTERRUPT_CARD_EVENT_NAME": [],
+  "_pending_request_events": [
+    "workflow"
+  ],
+  "_interrupt_entry_for_request_event": [
+    "request_event"
+  ],
+  "_interrupts_from_pending_requests": [
+    "pending_events"
+  ],
+  "_request_payload_from_request_event": [
+    "request_event"
+  ],
+  "_extract_responses_from_messages": [
+    "messages"
+  ],
+  "_resume_to_workflow_responses": [
+    "resume_payload"
+  ],
+  "_coerce_json_value": [
+    "value"
+  ],
+  "_response_type_name": [
+    "request_event"
+  ],
+  "_coerce_content": [
+    "value"
+  ],
+  "_coerce_message_content": [
+    "content_payload"
+  ],
+  "_coerce_message": [
+    "value"
+  ],
+  "_coerce_response_for_request": [
+    "request_event",
+    "value"
+  ],
+  "_single_pending_response_from_value": [
+    "pending_events",
+    "value"
+  ],
+  "_coerce_responses_for_pending_requests": [
+    "responses",
+    "pending_events"
+  ],
+  "_latest_user_text": [
+    "messages"
+  ],
+  "_workflow_interrupt_event_value": [
+    "request_payload"
+  ],
+  "_message_role_value": [
+    "message"
+  ],
+  "_latest_assistant_contents": [
+    "messages"
+  ],
+  "_text_from_contents": [
+    "contents"
+  ],
+  "_workflow_payload_to_contents": [
+    "payload"
+  ],
+  "_event_name": [
+    "event"
+  ],
+  "_custom_event_value": [
+    "event"
+  ],
+  "_details_message": [
+    "details"
+  ],
+  "_details_code": [
+    "details"
+  ],
+  "run_workflow_stream": [
+    "input_data",
+    "workflow"
+  ],
+  "_collect_mcp_tool_functions": [
+    "mcp_tools"
+  ],
+  "collect_server_tools": [
+    "agent"
+  ],
+  "register_additional_client_tools": [
+    "agent",
+    "client_tools"
+  ],
+  "_has_approval_tools": [
+    "tools"
+  ],
+  "merge_tools": [
+    "server_tools",
+    "client_tools"
+  ],
+  "PredictiveStateHandler": {
+    "__init__": [
+      "self",
+      "predict_state_config",
+      "current_state"
+    ],
+    "reset_streaming": [
+      "self"
+    ],
+    "extract_state_value": [
+      "self",
+      "tool_name",
+      "args"
+    ],
+    "is_predictive_tool": [
+      "self",
+      "tool_name"
+    ],
+    "emit_streaming_deltas": [
+      "self",
+      "tool_name",
+      "argument_chunk"
+    ],
+    "_emit_partial_deltas": [
+      "self",
+      "tool_name"
+    ],
+    "_emit_complete_deltas": [
+      "self",
+      "tool_name",
+      "parsed_args"
+    ],
+    "_create_delta_event": [
+      "self",
+      "state_key",
+      "value"
+    ],
+    "apply_pending_updates": [
+      "self"
+    ]
+  },
+  "pending_tool_call_ids": [
+    "messages"
+  ],
+  "is_state_context_message": [
+    "message"
+  ],
+  "ensure_tool_call_entry": [
+    "tool_call_id",
+    "tool_calls_by_id",
+    "pending_tool_calls"
+  ],
+  "tool_name_for_call_id": [
+    "tool_calls_by_id",
+    "tool_call_id"
+  ],
+  "schema_has_steps": [
+    "schema"
+  ],
+  "select_approval_tool_name": [
+    "client_tools"
+  ],
+  "build_safe_metadata": [
+    "thread_metadata"
+  ],
+  "latest_approval_response": [
+    "messages"
+  ],
+  "approval_steps": [
+    "approval"
+  ],
+  "is_step_based_approval": [
+    "approval",
+    "predict_state_config"
+  ]
+}
