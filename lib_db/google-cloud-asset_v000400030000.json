@@ -1,0 +1,1551 @@
+{
+  "__version__": [],
+  "__all__": [],
+  "__protobuf__": [],
+  "ContentType": {
+    "CONTENT_TYPE_UNSPECIFIED": [],
+    "RESOURCE": [],
+    "IAM_POLICY": [],
+    "ORG_POLICY": [],
+    "ACCESS_POLICY": [],
+    "OS_INVENTORY": [],
+    "RELATIONSHIP": []
+  },
+  "AnalyzeIamPolicyLongrunningMetadata": {},
+  "ExportAssetsRequest": {},
+  "ExportAssetsResponse": {},
+  "ListAssetsRequest": {},
+  "ListAssetsResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "BatchGetAssetsHistoryRequest": {},
+  "BatchGetAssetsHistoryResponse": {},
+  "CreateFeedRequest": {},
+  "GetFeedRequest": {},
+  "ListFeedsRequest": {},
+  "ListFeedsResponse": {},
+  "UpdateFeedRequest": {},
+  "DeleteFeedRequest": {},
+  "OutputConfig": {},
+  "OutputResult": {},
+  "GcsOutputResult": {},
+  "GcsDestination": {},
+  "BigQueryDestination": {},
+  "PartitionSpec": {},
+  "PubsubDestination": {},
+  "FeedOutputConfig": {},
+  "Feed": {},
+  "SearchAllResourcesRequest": {},
+  "SearchAllResourcesResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "SearchAllIamPoliciesRequest": {},
+  "SearchAllIamPoliciesResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "IamPolicyAnalysisQuery": {},
+  "AnalyzeIamPolicyRequest": {},
+  "AnalyzeIamPolicyResponse": {},
+  "IamPolicyAnalysisOutputConfig": {},
+  "AnalyzeIamPolicyLongrunningRequest": {},
+  "AnalyzeIamPolicyLongrunningResponse": {},
+  "SavedQuery": {},
+  "CreateSavedQueryRequest": {},
+  "GetSavedQueryRequest": {},
+  "ListSavedQueriesRequest": {},
+  "ListSavedQueriesResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "UpdateSavedQueryRequest": {},
+  "DeleteSavedQueryRequest": {},
+  "AnalyzeMoveRequest": {},
+  "AnalyzeMoveResponse": {},
+  "MoveAnalysis": {},
+  "MoveAnalysisResult": {},
+  "MoveImpact": {},
+  "QueryAssetsOutputConfig": {},
+  "QueryAssetsRequest": {},
+  "QueryAssetsResponse": {},
+  "QueryResult": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "TableSchema": {},
+  "TableFieldSchema": {},
+  "BatchGetEffectiveIamPoliciesRequest": {},
+  "BatchGetEffectiveIamPoliciesResponse": {},
+  "AnalyzerOrgPolicy": {},
+  "AnalyzerOrgPolicyConstraint": {},
+  "AnalyzeOrgPoliciesRequest": {},
+  "AnalyzeOrgPoliciesResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "AnalyzeOrgPolicyGovernedContainersRequest": {},
+  "AnalyzeOrgPolicyGovernedContainersResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "AnalyzeOrgPolicyGovernedAssetsRequest": {},
+  "AnalyzeOrgPolicyGovernedAssetsResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "ResourceOwners": {},
+  "TemporalAsset": {},
+  "TimeWindow": {},
+  "AssetEnrichment": {},
+  "Asset": {},
+  "Resource": {},
+  "RelatedAssets": {},
+  "RelationshipAttributes": {},
+  "RelatedAsset": {},
+  "Tag": {},
+  "EffectiveTagDetails": {},
+  "ResourceSearchResult": {},
+  "VersionedResource": {},
+  "AttachedResource": {},
+  "RelatedResources": {},
+  "RelatedResource": {},
+  "IamPolicySearchResult": {},
+  "IamPolicyAnalysisState": {},
+  "ConditionEvaluation": {},
+  "IamPolicyAnalysisResult": {},
+  "_LOGGER": [],
+  "AssetServiceAsyncClient": {
+    "DEFAULT_ENDPOINT": [],
+    "DEFAULT_MTLS_ENDPOINT": [],
+    "_DEFAULT_ENDPOINT_TEMPLATE": [],
+    "_DEFAULT_UNIVERSE": [],
+    "access_level_path": [],
+    "parse_access_level_path": [],
+    "access_policy_path": [],
+    "parse_access_policy_path": [],
+    "asset_path": [],
+    "parse_asset_path": [],
+    "feed_path": [],
+    "parse_feed_path": [],
+    "inventory_path": [],
+    "parse_inventory_path": [],
+    "saved_query_path": [],
+    "parse_saved_query_path": [],
+    "service_perimeter_path": [],
+    "parse_service_perimeter_path": [],
+    "common_billing_account_path": [],
+    "parse_common_billing_account_path": [],
+    "common_folder_path": [],
+    "parse_common_folder_path": [],
+    "common_organization_path": [],
+    "parse_common_organization_path": [],
+    "common_project_path": [],
+    "parse_common_project_path": [],
+    "common_location_path": [],
+    "parse_common_location_path": [],
+    "from_service_account_info": [
+      "cls",
+      "info"
+    ],
+    "from_service_account_file": [
+      "cls",
+      "filename"
+    ],
+    "from_service_account_json": [],
+    "get_mtls_endpoint_and_cert_source": [
+      "cls",
+      "client_options"
+    ],
+    "transport": [
+      "self"
+    ],
+    "api_endpoint": [
+      "self"
+    ],
+    "universe_domain": [
+      "self"
+    ],
+    "get_transport_class": [],
+    "__init__": [
+      "self"
+    ],
+    "export_assets": [
+      "self",
+      "request"
+    ],
+    "list_assets": [
+      "self",
+      "request"
+    ],
+    "batch_get_assets_history": [
+      "self",
+      "request"
+    ],
+    "create_feed": [
+      "self",
+      "request"
+    ],
+    "get_feed": [
+      "self",
+      "request"
+    ],
+    "list_feeds": [
+      "self",
+      "request"
+    ],
+    "update_feed": [
+      "self",
+      "request"
+    ],
+    "delete_feed": [
+      "self",
+      "request"
+    ],
+    "search_all_resources": [
+      "self",
+      "request"
+    ],
+    "search_all_iam_policies": [
+      "self",
+      "request"
+    ],
+    "analyze_iam_policy": [
+      "self",
+      "request"
+    ],
+    "analyze_iam_policy_longrunning": [
+      "self",
+      "request"
+    ],
+    "analyze_move": [
+      "self",
+      "request"
+    ],
+    "query_assets": [
+      "self",
+      "request"
+    ],
+    "create_saved_query": [
+      "self",
+      "request"
+    ],
+    "get_saved_query": [
+      "self",
+      "request"
+    ],
+    "list_saved_queries": [
+      "self",
+      "request"
+    ],
+    "update_saved_query": [
+      "self",
+      "request"
+    ],
+    "delete_saved_query": [
+      "self",
+      "request"
+    ],
+    "batch_get_effective_iam_policies": [
+      "self",
+      "request"
+    ],
+    "analyze_org_policies": [
+      "self",
+      "request"
+    ],
+    "analyze_org_policy_governed_containers": [
+      "self",
+      "request"
+    ],
+    "analyze_org_policy_governed_assets": [
+      "self",
+      "request"
+    ],
+    "get_operation": [
+      "self",
+      "request"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self",
+      "exc_type",
+      "exc",
+      "tb"
+    ]
+  },
+  "DEFAULT_CLIENT_INFO": [],
+  "ListAssetsPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListAssetsAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "SearchAllResourcesPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "SearchAllResourcesAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "SearchAllIamPoliciesPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "SearchAllIamPoliciesAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListSavedQueriesPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListSavedQueriesAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "AnalyzeOrgPoliciesPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "AnalyzeOrgPoliciesAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "AnalyzeOrgPolicyGovernedContainersPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "AnalyzeOrgPolicyGovernedContainersAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "AnalyzeOrgPolicyGovernedAssetsPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "AnalyzeOrgPolicyGovernedAssetsAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "AssetServiceClientMeta": {
+    "_transport_registry": [],
+    "get_transport_class": [
+      "cls",
+      "label"
+    ]
+  },
+  "AssetServiceClient": {
+    "_get_default_mtls_endpoint": [
+      "api_endpoint"
+    ],
+    "DEFAULT_ENDPOINT": [],
+    "DEFAULT_MTLS_ENDPOINT": [],
+    "_DEFAULT_ENDPOINT_TEMPLATE": [],
+    "_DEFAULT_UNIVERSE": [],
+    "_use_client_cert_effective": [],
+    "from_service_account_info": [
+      "cls",
+      "info"
+    ],
+    "from_service_account_file": [
+      "cls",
+      "filename"
+    ],
+    "from_service_account_json": [],
+    "transport": [
+      "self"
+    ],
+    "access_level_path": [
+      "access_policy",
+      "access_level"
+    ],
+    "parse_access_level_path": [
+      "path"
+    ],
+    "access_policy_path": [
+      "access_policy"
+    ],
+    "parse_access_policy_path": [
+      "path"
+    ],
+    "asset_path": [],
+    "parse_asset_path": [
+      "path"
+    ],
+    "feed_path": [
+      "project",
+      "feed"
+    ],
+    "parse_feed_path": [
+      "path"
+    ],
+    "inventory_path": [
+      "project",
+      "location",
+      "instance"
+    ],
+    "parse_inventory_path": [
+      "path"
+    ],
+    "saved_query_path": [
+      "project",
+      "saved_query"
+    ],
+    "parse_saved_query_path": [
+      "path"
+    ],
+    "service_perimeter_path": [
+      "access_policy",
+      "service_perimeter"
+    ],
+    "parse_service_perimeter_path": [
+      "path"
+    ],
+    "common_billing_account_path": [
+      "billing_account"
+    ],
+    "parse_common_billing_account_path": [
+      "path"
+    ],
+    "common_folder_path": [
+      "folder"
+    ],
+    "parse_common_folder_path": [
+      "path"
+    ],
+    "common_organization_path": [
+      "organization"
+    ],
+    "parse_common_organization_path": [
+      "path"
+    ],
+    "common_project_path": [
+      "project"
+    ],
+    "parse_common_project_path": [
+      "path"
+    ],
+    "common_location_path": [
+      "project",
+      "location"
+    ],
+    "parse_common_location_path": [
+      "path"
+    ],
+    "get_mtls_endpoint_and_cert_source": [
+      "cls",
+      "client_options"
+    ],
+    "_read_environment_variables": [],
+    "_get_client_cert_source": [
+      "provided_cert_source",
+      "use_cert_flag"
+    ],
+    "_get_api_endpoint": [
+      "api_override",
+      "client_cert_source",
+      "universe_domain",
+      "use_mtls_endpoint"
+    ],
+    "_get_universe_domain": [
+      "client_universe_domain",
+      "universe_domain_env"
+    ],
+    "_validate_universe_domain": [
+      "self"
+    ],
+    "_add_cred_info_for_auth_errors": [
+      "self",
+      "error"
+    ],
+    "api_endpoint": [
+      "self"
+    ],
+    "universe_domain": [
+      "self"
+    ],
+    "__init__": [
+      "self"
+    ],
+    "export_assets": [
+      "self",
+      "request"
+    ],
+    "list_assets": [
+      "self",
+      "request"
+    ],
+    "batch_get_assets_history": [
+      "self",
+      "request"
+    ],
+    "create_feed": [
+      "self",
+      "request"
+    ],
+    "get_feed": [
+      "self",
+      "request"
+    ],
+    "list_feeds": [
+      "self",
+      "request"
+    ],
+    "update_feed": [
+      "self",
+      "request"
+    ],
+    "delete_feed": [
+      "self",
+      "request"
+    ],
+    "search_all_resources": [
+      "self",
+      "request"
+    ],
+    "search_all_iam_policies": [
+      "self",
+      "request"
+    ],
+    "analyze_iam_policy": [
+      "self",
+      "request"
+    ],
+    "analyze_iam_policy_longrunning": [
+      "self",
+      "request"
+    ],
+    "analyze_move": [
+      "self",
+      "request"
+    ],
+    "query_assets": [
+      "self",
+      "request"
+    ],
+    "create_saved_query": [
+      "self",
+      "request"
+    ],
+    "get_saved_query": [
+      "self",
+      "request"
+    ],
+    "list_saved_queries": [
+      "self",
+      "request"
+    ],
+    "update_saved_query": [
+      "self",
+      "request"
+    ],
+    "delete_saved_query": [
+      "self",
+      "request"
+    ],
+    "batch_get_effective_iam_policies": [
+      "self",
+      "request"
+    ],
+    "analyze_org_policies": [
+      "self",
+      "request"
+    ],
+    "analyze_org_policy_governed_containers": [
+      "self",
+      "request"
+    ],
+    "analyze_org_policy_governed_assets": [
+      "self",
+      "request"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "type",
+      "value",
+      "traceback"
+    ],
+    "get_operation": [
+      "self",
+      "request"
+    ]
+  },
+  "_transport_registry": [],
+  "_LoggingClientInterceptor": {
+    "intercept_unary_unary": [
+      "self",
+      "continuation",
+      "client_call_details",
+      "request"
+    ]
+  },
+  "AssetServiceGrpcTransport": {
+    "__init__": [
+      "self"
+    ],
+    "create_channel": [
+      "cls",
+      "host",
+      "credentials",
+      "credentials_file",
+      "scopes",
+      "quota_project_id"
+    ],
+    "grpc_channel": [
+      "self"
+    ],
+    "operations_client": [
+      "self"
+    ],
+    "export_assets": [
+      "self"
+    ],
+    "list_assets": [
+      "self"
+    ],
+    "batch_get_assets_history": [
+      "self"
+    ],
+    "create_feed": [
+      "self"
+    ],
+    "get_feed": [
+      "self"
+    ],
+    "list_feeds": [
+      "self"
+    ],
+    "update_feed": [
+      "self"
+    ],
+    "delete_feed": [
+      "self"
+    ],
+    "search_all_resources": [
+      "self"
+    ],
+    "search_all_iam_policies": [
+      "self"
+    ],
+    "analyze_iam_policy": [
+      "self"
+    ],
+    "analyze_iam_policy_longrunning": [
+      "self"
+    ],
+    "analyze_move": [
+      "self"
+    ],
+    "query_assets": [
+      "self"
+    ],
+    "create_saved_query": [
+      "self"
+    ],
+    "get_saved_query": [
+      "self"
+    ],
+    "list_saved_queries": [
+      "self"
+    ],
+    "update_saved_query": [
+      "self"
+    ],
+    "delete_saved_query": [
+      "self"
+    ],
+    "batch_get_effective_iam_policies": [
+      "self"
+    ],
+    "analyze_org_policies": [
+      "self"
+    ],
+    "analyze_org_policy_governed_containers": [
+      "self"
+    ],
+    "analyze_org_policy_governed_assets": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "get_operation": [
+      "self"
+    ],
+    "kind": [
+      "self"
+    ]
+  },
+  "AssetServiceRestInterceptor": {
+    "pre_analyze_iam_policy": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_analyze_iam_policy": [
+      "self",
+      "response"
+    ],
+    "post_analyze_iam_policy_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_analyze_iam_policy_longrunning": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_analyze_iam_policy_longrunning": [
+      "self",
+      "response"
+    ],
+    "post_analyze_iam_policy_longrunning_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_analyze_move": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_analyze_move": [
+      "self",
+      "response"
+    ],
+    "post_analyze_move_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_analyze_org_policies": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_analyze_org_policies": [
+      "self",
+      "response"
+    ],
+    "post_analyze_org_policies_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_analyze_org_policy_governed_assets": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_analyze_org_policy_governed_assets": [
+      "self",
+      "response"
+    ],
+    "post_analyze_org_policy_governed_assets_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_analyze_org_policy_governed_containers": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_analyze_org_policy_governed_containers": [
+      "self",
+      "response"
+    ],
+    "post_analyze_org_policy_governed_containers_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_batch_get_assets_history": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_batch_get_assets_history": [
+      "self",
+      "response"
+    ],
+    "post_batch_get_assets_history_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_batch_get_effective_iam_policies": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_batch_get_effective_iam_policies": [
+      "self",
+      "response"
+    ],
+    "post_batch_get_effective_iam_policies_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_create_feed": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_create_feed": [
+      "self",
+      "response"
+    ],
+    "post_create_feed_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_create_saved_query": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_create_saved_query": [
+      "self",
+      "response"
+    ],
+    "post_create_saved_query_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_delete_feed": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "pre_delete_saved_query": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "pre_export_assets": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_export_assets": [
+      "self",
+      "response"
+    ],
+    "post_export_assets_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_get_feed": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_get_feed": [
+      "self",
+      "response"
+    ],
+    "post_get_feed_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_get_saved_query": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_get_saved_query": [
+      "self",
+      "response"
+    ],
+    "post_get_saved_query_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_list_assets": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_list_assets": [
+      "self",
+      "response"
+    ],
+    "post_list_assets_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_list_feeds": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_list_feeds": [
+      "self",
+      "response"
+    ],
+    "post_list_feeds_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_list_saved_queries": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_list_saved_queries": [
+      "self",
+      "response"
+    ],
+    "post_list_saved_queries_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_query_assets": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_query_assets": [
+      "self",
+      "response"
+    ],
+    "post_query_assets_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_search_all_iam_policies": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_search_all_iam_policies": [
+      "self",
+      "response"
+    ],
+    "post_search_all_iam_policies_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_search_all_resources": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_search_all_resources": [
+      "self",
+      "response"
+    ],
+    "post_search_all_resources_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_update_feed": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_update_feed": [
+      "self",
+      "response"
+    ],
+    "post_update_feed_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_update_saved_query": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_update_saved_query": [
+      "self",
+      "response"
+    ],
+    "post_update_saved_query_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_get_operation": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_get_operation": [
+      "self",
+      "response"
+    ]
+  },
+  "AssetServiceRestStub": {},
+  "AssetServiceRestTransport": {
+    "__init__": [
+      "self"
+    ],
+    "operations_client": [
+      "self"
+    ],
+    "analyze_iam_policy": [
+      "self"
+    ],
+    "analyze_iam_policy_longrunning": [
+      "self"
+    ],
+    "analyze_move": [
+      "self"
+    ],
+    "analyze_org_policies": [
+      "self"
+    ],
+    "analyze_org_policy_governed_assets": [
+      "self"
+    ],
+    "analyze_org_policy_governed_containers": [
+      "self"
+    ],
+    "batch_get_assets_history": [
+      "self"
+    ],
+    "batch_get_effective_iam_policies": [
+      "self"
+    ],
+    "create_feed": [
+      "self"
+    ],
+    "create_saved_query": [
+      "self"
+    ],
+    "delete_feed": [
+      "self"
+    ],
+    "delete_saved_query": [
+      "self"
+    ],
+    "export_assets": [
+      "self"
+    ],
+    "get_feed": [
+      "self"
+    ],
+    "get_saved_query": [
+      "self"
+    ],
+    "list_assets": [
+      "self"
+    ],
+    "list_feeds": [
+      "self"
+    ],
+    "list_saved_queries": [
+      "self"
+    ],
+    "query_assets": [
+      "self"
+    ],
+    "search_all_iam_policies": [
+      "self"
+    ],
+    "search_all_resources": [
+      "self"
+    ],
+    "update_feed": [
+      "self"
+    ],
+    "update_saved_query": [
+      "self"
+    ],
+    "get_operation": [
+      "self"
+    ],
+    "kind": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "_LoggingClientAIOInterceptor": {
+    "intercept_unary_unary": [
+      "self",
+      "continuation",
+      "client_call_details",
+      "request"
+    ]
+  },
+  "AssetServiceGrpcAsyncIOTransport": {
+    "create_channel": [
+      "cls",
+      "host",
+      "credentials",
+      "credentials_file",
+      "scopes",
+      "quota_project_id"
+    ],
+    "__init__": [
+      "self"
+    ],
+    "grpc_channel": [
+      "self"
+    ],
+    "operations_client": [
+      "self"
+    ],
+    "export_assets": [
+      "self"
+    ],
+    "list_assets": [
+      "self"
+    ],
+    "batch_get_assets_history": [
+      "self"
+    ],
+    "create_feed": [
+      "self"
+    ],
+    "get_feed": [
+      "self"
+    ],
+    "list_feeds": [
+      "self"
+    ],
+    "update_feed": [
+      "self"
+    ],
+    "delete_feed": [
+      "self"
+    ],
+    "search_all_resources": [
+      "self"
+    ],
+    "search_all_iam_policies": [
+      "self"
+    ],
+    "analyze_iam_policy": [
+      "self"
+    ],
+    "analyze_iam_policy_longrunning": [
+      "self"
+    ],
+    "analyze_move": [
+      "self"
+    ],
+    "query_assets": [
+      "self"
+    ],
+    "create_saved_query": [
+      "self"
+    ],
+    "get_saved_query": [
+      "self"
+    ],
+    "list_saved_queries": [
+      "self"
+    ],
+    "update_saved_query": [
+      "self"
+    ],
+    "delete_saved_query": [
+      "self"
+    ],
+    "batch_get_effective_iam_policies": [
+      "self"
+    ],
+    "analyze_org_policies": [
+      "self"
+    ],
+    "analyze_org_policy_governed_containers": [
+      "self"
+    ],
+    "analyze_org_policy_governed_assets": [
+      "self"
+    ],
+    "_prep_wrapped_messages": [
+      "self",
+      "client_info"
+    ],
+    "_wrap_method": [
+      "self",
+      "func"
+    ],
+    "close": [
+      "self"
+    ],
+    "kind": [
+      "self"
+    ],
+    "get_operation": [
+      "self"
+    ]
+  },
+  "AssetServiceTransport": {
+    "AUTH_SCOPES": [],
+    "__init__": [
+      "self"
+    ],
+    "host": [
+      "self"
+    ],
+    "_prep_wrapped_messages": [
+      "self",
+      "client_info"
+    ],
+    "close": [
+      "self"
+    ],
+    "operations_client": [
+      "self"
+    ],
+    "export_assets": [
+      "self"
+    ],
+    "list_assets": [
+      "self"
+    ],
+    "batch_get_assets_history": [
+      "self"
+    ],
+    "create_feed": [
+      "self"
+    ],
+    "get_feed": [
+      "self"
+    ],
+    "list_feeds": [
+      "self"
+    ],
+    "update_feed": [
+      "self"
+    ],
+    "delete_feed": [
+      "self"
+    ],
+    "search_all_resources": [
+      "self"
+    ],
+    "search_all_iam_policies": [
+      "self"
+    ],
+    "analyze_iam_policy": [
+      "self"
+    ],
+    "analyze_iam_policy_longrunning": [
+      "self"
+    ],
+    "analyze_move": [
+      "self"
+    ],
+    "query_assets": [
+      "self"
+    ],
+    "create_saved_query": [
+      "self"
+    ],
+    "get_saved_query": [
+      "self"
+    ],
+    "list_saved_queries": [
+      "self"
+    ],
+    "update_saved_query": [
+      "self"
+    ],
+    "delete_saved_query": [
+      "self"
+    ],
+    "batch_get_effective_iam_policies": [
+      "self"
+    ],
+    "analyze_org_policies": [
+      "self"
+    ],
+    "analyze_org_policy_governed_containers": [
+      "self"
+    ],
+    "analyze_org_policy_governed_assets": [
+      "self"
+    ],
+    "get_operation": [
+      "self"
+    ],
+    "kind": [
+      "self"
+    ]
+  },
+  "_BaseAssetServiceRestTransport": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "StandardResourceMetadata": {},
+  "Permissions": {}
+}
