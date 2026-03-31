@@ -1,0 +1,2828 @@
+{
+  "__version__": [],
+  "__all__": [],
+  "__protobuf__": [],
+  "Attachment": {},
+  "ListAttachmentsRequest": {},
+  "ListAttachmentsResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "GetAttachmentRequest": {},
+  "CreateAttachmentRequest": {},
+  "DeleteAttachmentRequest": {},
+  "ExportArtifactRequest": {},
+  "ExportArtifactResponse": {},
+  "ExportArtifactMetadata": {},
+  "KfpArtifact": {},
+  "Tag": {},
+  "ListTagsRequest": {},
+  "ListTagsResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "GetTagRequest": {},
+  "CreateTagRequest": {},
+  "UpdateTagRequest": {},
+  "DeleteTagRequest": {},
+  "UpstreamPolicy": {},
+  "CleanupPolicyCondition": {},
+  "CleanupPolicyMostRecentVersions": {},
+  "CleanupPolicy": {},
+  "VirtualRepositoryConfig": {},
+  "RemoteRepositoryConfig": {},
+  "Repository": {},
+  "ListRepositoriesRequest": {},
+  "ListRepositoriesResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "GetRepositoryRequest": {},
+  "CreateRepositoryRequest": {},
+  "UpdateRepositoryRequest": {},
+  "DeleteRepositoryRequest": {},
+  "DockerImage": {},
+  "ImageManifest": {},
+  "ListDockerImagesRequest": {},
+  "ListDockerImagesResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "GetDockerImageRequest": {},
+  "MavenArtifact": {},
+  "ListMavenArtifactsRequest": {},
+  "ListMavenArtifactsResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "GetMavenArtifactRequest": {},
+  "NpmPackage": {},
+  "ListNpmPackagesRequest": {},
+  "ListNpmPackagesResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "GetNpmPackageRequest": {},
+  "PythonPackage": {},
+  "ListPythonPackagesRequest": {},
+  "ListPythonPackagesResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "GetPythonPackageRequest": {},
+  "VersionView": {
+    "VERSION_VIEW_UNSPECIFIED": [],
+    "BASIC": [],
+    "FULL": []
+  },
+  "Version": {},
+  "ListVersionsRequest": {},
+  "ListVersionsResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "GetVersionRequest": {},
+  "DeleteVersionRequest": {},
+  "BatchDeleteVersionsRequest": {},
+  "BatchDeleteVersionsMetadata": {},
+  "UpdateVersionRequest": {},
+  "GenericArtifact": {},
+  "ProjectSettings": {},
+  "GetProjectSettingsRequest": {},
+  "UpdateProjectSettingsRequest": {},
+  "YumArtifact": {},
+  "ImportYumArtifactsGcsSource": {},
+  "ImportYumArtifactsRequest": {},
+  "ImportYumArtifactsErrorInfo": {},
+  "ImportYumArtifactsResponse": {},
+  "ImportYumArtifactsMetadata": {},
+  "Hash": {},
+  "File": {},
+  "ListFilesRequest": {},
+  "ListFilesResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "GetFileRequest": {},
+  "DeleteFileRequest": {},
+  "UpdateFileRequest": {},
+  "GoModule": {},
+  "Package": {},
+  "ListPackagesRequest": {},
+  "ListPackagesResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "GetPackageRequest": {},
+  "DeletePackageRequest": {},
+  "UpdatePackageRequest": {},
+  "Rule": {},
+  "ListRulesRequest": {},
+  "ListRulesResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "GetRuleRequest": {},
+  "CreateRuleRequest": {},
+  "UpdateRuleRequest": {},
+  "DeleteRuleRequest": {},
+  "OperationMetadata": {},
+  "VPCSCConfig": {},
+  "GetVPCSCConfigRequest": {},
+  "UpdateVPCSCConfigRequest": {},
+  "AptArtifact": {},
+  "ImportAptArtifactsGcsSource": {},
+  "ImportAptArtifactsRequest": {},
+  "ImportAptArtifactsErrorInfo": {},
+  "ImportAptArtifactsResponse": {},
+  "ImportAptArtifactsMetadata": {},
+  "_LOGGER": [],
+  "ArtifactRegistryAsyncClient": {
+    "DEFAULT_ENDPOINT": [],
+    "DEFAULT_MTLS_ENDPOINT": [],
+    "_DEFAULT_ENDPOINT_TEMPLATE": [],
+    "_DEFAULT_UNIVERSE": [],
+    "apt_artifact_path": [],
+    "parse_apt_artifact_path": [],
+    "attachment_path": [],
+    "parse_attachment_path": [],
+    "docker_image_path": [],
+    "parse_docker_image_path": [],
+    "file_path": [],
+    "parse_file_path": [],
+    "maven_artifact_path": [],
+    "parse_maven_artifact_path": [],
+    "npm_package_path": [],
+    "parse_npm_package_path": [],
+    "package_path": [],
+    "parse_package_path": [],
+    "project_settings_path": [],
+    "parse_project_settings_path": [],
+    "python_package_path": [],
+    "parse_python_package_path": [],
+    "repository_path": [],
+    "parse_repository_path": [],
+    "rule_path": [],
+    "parse_rule_path": [],
+    "secret_version_path": [],
+    "parse_secret_version_path": [],
+    "tag_path": [],
+    "parse_tag_path": [],
+    "version_path": [],
+    "parse_version_path": [],
+    "vpcsc_config_path": [],
+    "parse_vpcsc_config_path": [],
+    "yum_artifact_path": [],
+    "parse_yum_artifact_path": [],
+    "common_billing_account_path": [],
+    "parse_common_billing_account_path": [],
+    "common_folder_path": [],
+    "parse_common_folder_path": [],
+    "common_organization_path": [],
+    "parse_common_organization_path": [],
+    "common_project_path": [],
+    "parse_common_project_path": [],
+    "common_location_path": [],
+    "parse_common_location_path": [],
+    "from_service_account_info": [
+      "cls",
+      "info"
+    ],
+    "from_service_account_file": [
+      "cls",
+      "filename"
+    ],
+    "from_service_account_json": [],
+    "get_mtls_endpoint_and_cert_source": [
+      "cls",
+      "client_options"
+    ],
+    "transport": [
+      "self"
+    ],
+    "api_endpoint": [
+      "self"
+    ],
+    "universe_domain": [
+      "self"
+    ],
+    "get_transport_class": [],
+    "__init__": [
+      "self"
+    ],
+    "list_docker_images": [
+      "self",
+      "request"
+    ],
+    "get_docker_image": [
+      "self",
+      "request"
+    ],
+    "list_maven_artifacts": [
+      "self",
+      "request"
+    ],
+    "get_maven_artifact": [
+      "self",
+      "request"
+    ],
+    "list_npm_packages": [
+      "self",
+      "request"
+    ],
+    "get_npm_package": [
+      "self",
+      "request"
+    ],
+    "list_python_packages": [
+      "self",
+      "request"
+    ],
+    "get_python_package": [
+      "self",
+      "request"
+    ],
+    "import_apt_artifacts": [
+      "self",
+      "request"
+    ],
+    "import_yum_artifacts": [
+      "self",
+      "request"
+    ],
+    "list_repositories": [
+      "self",
+      "request"
+    ],
+    "get_repository": [
+      "self",
+      "request"
+    ],
+    "create_repository": [
+      "self",
+      "request"
+    ],
+    "update_repository": [
+      "self",
+      "request"
+    ],
+    "delete_repository": [
+      "self",
+      "request"
+    ],
+    "list_packages": [
+      "self",
+      "request"
+    ],
+    "get_package": [
+      "self",
+      "request"
+    ],
+    "delete_package": [
+      "self",
+      "request"
+    ],
+    "list_versions": [
+      "self",
+      "request"
+    ],
+    "get_version": [
+      "self",
+      "request"
+    ],
+    "delete_version": [
+      "self",
+      "request"
+    ],
+    "batch_delete_versions": [
+      "self",
+      "request"
+    ],
+    "update_version": [
+      "self",
+      "request"
+    ],
+    "list_files": [
+      "self",
+      "request"
+    ],
+    "get_file": [
+      "self",
+      "request"
+    ],
+    "delete_file": [
+      "self",
+      "request"
+    ],
+    "update_file": [
+      "self",
+      "request"
+    ],
+    "list_tags": [
+      "self",
+      "request"
+    ],
+    "get_tag": [
+      "self",
+      "request"
+    ],
+    "create_tag": [
+      "self",
+      "request"
+    ],
+    "update_tag": [
+      "self",
+      "request"
+    ],
+    "delete_tag": [
+      "self",
+      "request"
+    ],
+    "create_rule": [
+      "self",
+      "request"
+    ],
+    "list_rules": [
+      "self",
+      "request"
+    ],
+    "get_rule": [
+      "self",
+      "request"
+    ],
+    "update_rule": [
+      "self",
+      "request"
+    ],
+    "delete_rule": [
+      "self",
+      "request"
+    ],
+    "set_iam_policy": [
+      "self",
+      "request"
+    ],
+    "get_iam_policy": [
+      "self",
+      "request"
+    ],
+    "test_iam_permissions": [
+      "self",
+      "request"
+    ],
+    "get_project_settings": [
+      "self",
+      "request"
+    ],
+    "update_project_settings": [
+      "self",
+      "request"
+    ],
+    "get_vpcsc_config": [
+      "self",
+      "request"
+    ],
+    "update_vpcsc_config": [
+      "self",
+      "request"
+    ],
+    "update_package": [
+      "self",
+      "request"
+    ],
+    "list_attachments": [
+      "self",
+      "request"
+    ],
+    "get_attachment": [
+      "self",
+      "request"
+    ],
+    "create_attachment": [
+      "self",
+      "request"
+    ],
+    "delete_attachment": [
+      "self",
+      "request"
+    ],
+    "export_artifact": [
+      "self",
+      "request"
+    ],
+    "get_operation": [
+      "self",
+      "request"
+    ],
+    "get_location": [
+      "self",
+      "request"
+    ],
+    "list_locations": [
+      "self",
+      "request"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self",
+      "exc_type",
+      "exc",
+      "tb"
+    ]
+  },
+  "DEFAULT_CLIENT_INFO": [],
+  "ListDockerImagesPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListDockerImagesAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListMavenArtifactsPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListMavenArtifactsAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListNpmPackagesPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListNpmPackagesAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListPythonPackagesPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListPythonPackagesAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListRepositoriesPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListRepositoriesAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListPackagesPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListPackagesAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListVersionsPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListVersionsAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListFilesPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListFilesAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListTagsPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListTagsAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListRulesPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListRulesAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListAttachmentsPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListAttachmentsAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ArtifactRegistryClientMeta": {
+    "_transport_registry": [],
+    "get_transport_class": [
+      "cls",
+      "label"
+    ]
+  },
+  "ArtifactRegistryClient": {
+    "_get_default_mtls_endpoint": [
+      "api_endpoint"
+    ],
+    "DEFAULT_ENDPOINT": [],
+    "DEFAULT_MTLS_ENDPOINT": [],
+    "_DEFAULT_ENDPOINT_TEMPLATE": [],
+    "_DEFAULT_UNIVERSE": [],
+    "_use_client_cert_effective": [],
+    "from_service_account_info": [
+      "cls",
+      "info"
+    ],
+    "from_service_account_file": [
+      "cls",
+      "filename"
+    ],
+    "from_service_account_json": [],
+    "transport": [
+      "self"
+    ],
+    "apt_artifact_path": [
+      "project",
+      "location",
+      "repository",
+      "apt_artifact"
+    ],
+    "parse_apt_artifact_path": [
+      "path"
+    ],
+    "attachment_path": [
+      "project",
+      "location",
+      "repository",
+      "attachment"
+    ],
+    "parse_attachment_path": [
+      "path"
+    ],
+    "docker_image_path": [
+      "project",
+      "location",
+      "repository",
+      "docker_image"
+    ],
+    "parse_docker_image_path": [
+      "path"
+    ],
+    "file_path": [
+      "project",
+      "location",
+      "repository",
+      "file"
+    ],
+    "parse_file_path": [
+      "path"
+    ],
+    "maven_artifact_path": [
+      "project",
+      "location",
+      "repository",
+      "maven_artifact"
+    ],
+    "parse_maven_artifact_path": [
+      "path"
+    ],
+    "npm_package_path": [
+      "project",
+      "location",
+      "repository",
+      "npm_package"
+    ],
+    "parse_npm_package_path": [
+      "path"
+    ],
+    "package_path": [
+      "project",
+      "location",
+      "repository",
+      "package"
+    ],
+    "parse_package_path": [
+      "path"
+    ],
+    "project_settings_path": [
+      "project"
+    ],
+    "parse_project_settings_path": [
+      "path"
+    ],
+    "python_package_path": [
+      "project",
+      "location",
+      "repository",
+      "python_package"
+    ],
+    "parse_python_package_path": [
+      "path"
+    ],
+    "repository_path": [
+      "project",
+      "location",
+      "repository"
+    ],
+    "parse_repository_path": [
+      "path"
+    ],
+    "rule_path": [
+      "project",
+      "location",
+      "repository",
+      "rule"
+    ],
+    "parse_rule_path": [
+      "path"
+    ],
+    "secret_version_path": [
+      "project",
+      "secret",
+      "secret_version"
+    ],
+    "parse_secret_version_path": [
+      "path"
+    ],
+    "tag_path": [
+      "project",
+      "location",
+      "repository",
+      "package",
+      "tag"
+    ],
+    "parse_tag_path": [
+      "path"
+    ],
+    "version_path": [
+      "project",
+      "location",
+      "repository",
+      "package",
+      "version"
+    ],
+    "parse_version_path": [
+      "path"
+    ],
+    "vpcsc_config_path": [
+      "project",
+      "location"
+    ],
+    "parse_vpcsc_config_path": [
+      "path"
+    ],
+    "yum_artifact_path": [
+      "project",
+      "location",
+      "repository",
+      "yum_artifact"
+    ],
+    "parse_yum_artifact_path": [
+      "path"
+    ],
+    "common_billing_account_path": [
+      "billing_account"
+    ],
+    "parse_common_billing_account_path": [
+      "path"
+    ],
+    "common_folder_path": [
+      "folder"
+    ],
+    "parse_common_folder_path": [
+      "path"
+    ],
+    "common_organization_path": [
+      "organization"
+    ],
+    "parse_common_organization_path": [
+      "path"
+    ],
+    "common_project_path": [
+      "project"
+    ],
+    "parse_common_project_path": [
+      "path"
+    ],
+    "common_location_path": [
+      "project",
+      "location"
+    ],
+    "parse_common_location_path": [
+      "path"
+    ],
+    "get_mtls_endpoint_and_cert_source": [
+      "cls",
+      "client_options"
+    ],
+    "_read_environment_variables": [],
+    "_get_client_cert_source": [
+      "provided_cert_source",
+      "use_cert_flag"
+    ],
+    "_get_api_endpoint": [
+      "api_override",
+      "client_cert_source",
+      "universe_domain",
+      "use_mtls_endpoint"
+    ],
+    "_get_universe_domain": [
+      "client_universe_domain",
+      "universe_domain_env"
+    ],
+    "_validate_universe_domain": [
+      "self"
+    ],
+    "_add_cred_info_for_auth_errors": [
+      "self",
+      "error"
+    ],
+    "api_endpoint": [
+      "self"
+    ],
+    "universe_domain": [
+      "self"
+    ],
+    "__init__": [
+      "self"
+    ],
+    "list_docker_images": [
+      "self",
+      "request"
+    ],
+    "get_docker_image": [
+      "self",
+      "request"
+    ],
+    "list_maven_artifacts": [
+      "self",
+      "request"
+    ],
+    "get_maven_artifact": [
+      "self",
+      "request"
+    ],
+    "list_npm_packages": [
+      "self",
+      "request"
+    ],
+    "get_npm_package": [
+      "self",
+      "request"
+    ],
+    "list_python_packages": [
+      "self",
+      "request"
+    ],
+    "get_python_package": [
+      "self",
+      "request"
+    ],
+    "import_apt_artifacts": [
+      "self",
+      "request"
+    ],
+    "import_yum_artifacts": [
+      "self",
+      "request"
+    ],
+    "list_repositories": [
+      "self",
+      "request"
+    ],
+    "get_repository": [
+      "self",
+      "request"
+    ],
+    "create_repository": [
+      "self",
+      "request"
+    ],
+    "update_repository": [
+      "self",
+      "request"
+    ],
+    "delete_repository": [
+      "self",
+      "request"
+    ],
+    "list_packages": [
+      "self",
+      "request"
+    ],
+    "get_package": [
+      "self",
+      "request"
+    ],
+    "delete_package": [
+      "self",
+      "request"
+    ],
+    "list_versions": [
+      "self",
+      "request"
+    ],
+    "get_version": [
+      "self",
+      "request"
+    ],
+    "delete_version": [
+      "self",
+      "request"
+    ],
+    "batch_delete_versions": [
+      "self",
+      "request"
+    ],
+    "update_version": [
+      "self",
+      "request"
+    ],
+    "list_files": [
+      "self",
+      "request"
+    ],
+    "get_file": [
+      "self",
+      "request"
+    ],
+    "delete_file": [
+      "self",
+      "request"
+    ],
+    "update_file": [
+      "self",
+      "request"
+    ],
+    "list_tags": [
+      "self",
+      "request"
+    ],
+    "get_tag": [
+      "self",
+      "request"
+    ],
+    "create_tag": [
+      "self",
+      "request"
+    ],
+    "update_tag": [
+      "self",
+      "request"
+    ],
+    "delete_tag": [
+      "self",
+      "request"
+    ],
+    "create_rule": [
+      "self",
+      "request"
+    ],
+    "list_rules": [
+      "self",
+      "request"
+    ],
+    "get_rule": [
+      "self",
+      "request"
+    ],
+    "update_rule": [
+      "self",
+      "request"
+    ],
+    "delete_rule": [
+      "self",
+      "request"
+    ],
+    "set_iam_policy": [
+      "self",
+      "request"
+    ],
+    "get_iam_policy": [
+      "self",
+      "request"
+    ],
+    "test_iam_permissions": [
+      "self",
+      "request"
+    ],
+    "get_project_settings": [
+      "self",
+      "request"
+    ],
+    "update_project_settings": [
+      "self",
+      "request"
+    ],
+    "get_vpcsc_config": [
+      "self",
+      "request"
+    ],
+    "update_vpcsc_config": [
+      "self",
+      "request"
+    ],
+    "update_package": [
+      "self",
+      "request"
+    ],
+    "list_attachments": [
+      "self",
+      "request"
+    ],
+    "get_attachment": [
+      "self",
+      "request"
+    ],
+    "create_attachment": [
+      "self",
+      "request"
+    ],
+    "delete_attachment": [
+      "self",
+      "request"
+    ],
+    "export_artifact": [
+      "self",
+      "request"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "type",
+      "value",
+      "traceback"
+    ],
+    "get_operation": [
+      "self",
+      "request"
+    ],
+    "get_location": [
+      "self",
+      "request"
+    ],
+    "list_locations": [
+      "self",
+      "request"
+    ]
+  },
+  "_transport_registry": [],
+  "_LoggingClientInterceptor": {
+    "intercept_unary_unary": [
+      "self",
+      "continuation",
+      "client_call_details",
+      "request"
+    ]
+  },
+  "ArtifactRegistryGrpcTransport": {
+    "__init__": [
+      "self"
+    ],
+    "create_channel": [
+      "cls",
+      "host",
+      "credentials",
+      "credentials_file",
+      "scopes",
+      "quota_project_id"
+    ],
+    "grpc_channel": [
+      "self"
+    ],
+    "operations_client": [
+      "self"
+    ],
+    "list_docker_images": [
+      "self"
+    ],
+    "get_docker_image": [
+      "self"
+    ],
+    "list_maven_artifacts": [
+      "self"
+    ],
+    "get_maven_artifact": [
+      "self"
+    ],
+    "list_npm_packages": [
+      "self"
+    ],
+    "get_npm_package": [
+      "self"
+    ],
+    "list_python_packages": [
+      "self"
+    ],
+    "get_python_package": [
+      "self"
+    ],
+    "import_apt_artifacts": [
+      "self"
+    ],
+    "import_yum_artifacts": [
+      "self"
+    ],
+    "list_repositories": [
+      "self"
+    ],
+    "get_repository": [
+      "self"
+    ],
+    "create_repository": [
+      "self"
+    ],
+    "update_repository": [
+      "self"
+    ],
+    "delete_repository": [
+      "self"
+    ],
+    "list_packages": [
+      "self"
+    ],
+    "get_package": [
+      "self"
+    ],
+    "delete_package": [
+      "self"
+    ],
+    "list_versions": [
+      "self"
+    ],
+    "get_version": [
+      "self"
+    ],
+    "delete_version": [
+      "self"
+    ],
+    "batch_delete_versions": [
+      "self"
+    ],
+    "update_version": [
+      "self"
+    ],
+    "list_files": [
+      "self"
+    ],
+    "get_file": [
+      "self"
+    ],
+    "delete_file": [
+      "self"
+    ],
+    "update_file": [
+      "self"
+    ],
+    "list_tags": [
+      "self"
+    ],
+    "get_tag": [
+      "self"
+    ],
+    "create_tag": [
+      "self"
+    ],
+    "update_tag": [
+      "self"
+    ],
+    "delete_tag": [
+      "self"
+    ],
+    "create_rule": [
+      "self"
+    ],
+    "list_rules": [
+      "self"
+    ],
+    "get_rule": [
+      "self"
+    ],
+    "update_rule": [
+      "self"
+    ],
+    "delete_rule": [
+      "self"
+    ],
+    "set_iam_policy": [
+      "self"
+    ],
+    "get_iam_policy": [
+      "self"
+    ],
+    "test_iam_permissions": [
+      "self"
+    ],
+    "get_project_settings": [
+      "self"
+    ],
+    "update_project_settings": [
+      "self"
+    ],
+    "get_vpcsc_config": [
+      "self"
+    ],
+    "update_vpcsc_config": [
+      "self"
+    ],
+    "update_package": [
+      "self"
+    ],
+    "list_attachments": [
+      "self"
+    ],
+    "get_attachment": [
+      "self"
+    ],
+    "create_attachment": [
+      "self"
+    ],
+    "delete_attachment": [
+      "self"
+    ],
+    "export_artifact": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "get_operation": [
+      "self"
+    ],
+    "list_locations": [
+      "self"
+    ],
+    "get_location": [
+      "self"
+    ],
+    "kind": [
+      "self"
+    ]
+  },
+  "ArtifactRegistryRestInterceptor": {
+    "pre_batch_delete_versions": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_batch_delete_versions": [
+      "self",
+      "response"
+    ],
+    "post_batch_delete_versions_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_create_attachment": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_create_attachment": [
+      "self",
+      "response"
+    ],
+    "post_create_attachment_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_create_repository": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_create_repository": [
+      "self",
+      "response"
+    ],
+    "post_create_repository_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_create_rule": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_create_rule": [
+      "self",
+      "response"
+    ],
+    "post_create_rule_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_create_tag": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_create_tag": [
+      "self",
+      "response"
+    ],
+    "post_create_tag_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_delete_attachment": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_delete_attachment": [
+      "self",
+      "response"
+    ],
+    "post_delete_attachment_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_delete_file": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_delete_file": [
+      "self",
+      "response"
+    ],
+    "post_delete_file_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_delete_package": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_delete_package": [
+      "self",
+      "response"
+    ],
+    "post_delete_package_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_delete_repository": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_delete_repository": [
+      "self",
+      "response"
+    ],
+    "post_delete_repository_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_delete_rule": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "pre_delete_tag": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "pre_delete_version": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_delete_version": [
+      "self",
+      "response"
+    ],
+    "post_delete_version_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_export_artifact": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_export_artifact": [
+      "self",
+      "response"
+    ],
+    "post_export_artifact_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_get_attachment": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_get_attachment": [
+      "self",
+      "response"
+    ],
+    "post_get_attachment_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_get_docker_image": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_get_docker_image": [
+      "self",
+      "response"
+    ],
+    "post_get_docker_image_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_get_file": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_get_file": [
+      "self",
+      "response"
+    ],
+    "post_get_file_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_get_iam_policy": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_get_iam_policy": [
+      "self",
+      "response"
+    ],
+    "post_get_iam_policy_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_get_maven_artifact": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_get_maven_artifact": [
+      "self",
+      "response"
+    ],
+    "post_get_maven_artifact_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_get_npm_package": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_get_npm_package": [
+      "self",
+      "response"
+    ],
+    "post_get_npm_package_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_get_package": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_get_package": [
+      "self",
+      "response"
+    ],
+    "post_get_package_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_get_project_settings": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_get_project_settings": [
+      "self",
+      "response"
+    ],
+    "post_get_project_settings_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_get_python_package": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_get_python_package": [
+      "self",
+      "response"
+    ],
+    "post_get_python_package_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_get_repository": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_get_repository": [
+      "self",
+      "response"
+    ],
+    "post_get_repository_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_get_rule": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_get_rule": [
+      "self",
+      "response"
+    ],
+    "post_get_rule_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_get_tag": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_get_tag": [
+      "self",
+      "response"
+    ],
+    "post_get_tag_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_get_version": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_get_version": [
+      "self",
+      "response"
+    ],
+    "post_get_version_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_get_vpcsc_config": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_get_vpcsc_config": [
+      "self",
+      "response"
+    ],
+    "post_get_vpcsc_config_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_import_apt_artifacts": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_import_apt_artifacts": [
+      "self",
+      "response"
+    ],
+    "post_import_apt_artifacts_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_import_yum_artifacts": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_import_yum_artifacts": [
+      "self",
+      "response"
+    ],
+    "post_import_yum_artifacts_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_list_attachments": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_list_attachments": [
+      "self",
+      "response"
+    ],
+    "post_list_attachments_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_list_docker_images": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_list_docker_images": [
+      "self",
+      "response"
+    ],
+    "post_list_docker_images_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_list_files": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_list_files": [
+      "self",
+      "response"
+    ],
+    "post_list_files_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_list_maven_artifacts": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_list_maven_artifacts": [
+      "self",
+      "response"
+    ],
+    "post_list_maven_artifacts_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_list_npm_packages": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_list_npm_packages": [
+      "self",
+      "response"
+    ],
+    "post_list_npm_packages_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_list_packages": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_list_packages": [
+      "self",
+      "response"
+    ],
+    "post_list_packages_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_list_python_packages": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_list_python_packages": [
+      "self",
+      "response"
+    ],
+    "post_list_python_packages_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_list_repositories": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_list_repositories": [
+      "self",
+      "response"
+    ],
+    "post_list_repositories_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_list_rules": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_list_rules": [
+      "self",
+      "response"
+    ],
+    "post_list_rules_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_list_tags": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_list_tags": [
+      "self",
+      "response"
+    ],
+    "post_list_tags_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_list_versions": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_list_versions": [
+      "self",
+      "response"
+    ],
+    "post_list_versions_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_set_iam_policy": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_set_iam_policy": [
+      "self",
+      "response"
+    ],
+    "post_set_iam_policy_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_test_iam_permissions": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_test_iam_permissions": [
+      "self",
+      "response"
+    ],
+    "post_test_iam_permissions_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_update_file": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_update_file": [
+      "self",
+      "response"
+    ],
+    "post_update_file_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_update_package": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_update_package": [
+      "self",
+      "response"
+    ],
+    "post_update_package_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_update_project_settings": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_update_project_settings": [
+      "self",
+      "response"
+    ],
+    "post_update_project_settings_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_update_repository": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_update_repository": [
+      "self",
+      "response"
+    ],
+    "post_update_repository_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_update_rule": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_update_rule": [
+      "self",
+      "response"
+    ],
+    "post_update_rule_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_update_tag": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_update_tag": [
+      "self",
+      "response"
+    ],
+    "post_update_tag_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_update_version": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_update_version": [
+      "self",
+      "response"
+    ],
+    "post_update_version_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_update_vpcsc_config": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_update_vpcsc_config": [
+      "self",
+      "response"
+    ],
+    "post_update_vpcsc_config_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_get_location": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_get_location": [
+      "self",
+      "response"
+    ],
+    "pre_list_locations": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_list_locations": [
+      "self",
+      "response"
+    ],
+    "pre_get_operation": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_get_operation": [
+      "self",
+      "response"
+    ]
+  },
+  "ArtifactRegistryRestStub": {},
+  "ArtifactRegistryRestTransport": {
+    "__init__": [
+      "self"
+    ],
+    "operations_client": [
+      "self"
+    ],
+    "batch_delete_versions": [
+      "self"
+    ],
+    "create_attachment": [
+      "self"
+    ],
+    "create_repository": [
+      "self"
+    ],
+    "create_rule": [
+      "self"
+    ],
+    "create_tag": [
+      "self"
+    ],
+    "delete_attachment": [
+      "self"
+    ],
+    "delete_file": [
+      "self"
+    ],
+    "delete_package": [
+      "self"
+    ],
+    "delete_repository": [
+      "self"
+    ],
+    "delete_rule": [
+      "self"
+    ],
+    "delete_tag": [
+      "self"
+    ],
+    "delete_version": [
+      "self"
+    ],
+    "export_artifact": [
+      "self"
+    ],
+    "get_attachment": [
+      "self"
+    ],
+    "get_docker_image": [
+      "self"
+    ],
+    "get_file": [
+      "self"
+    ],
+    "get_iam_policy": [
+      "self"
+    ],
+    "get_maven_artifact": [
+      "self"
+    ],
+    "get_npm_package": [
+      "self"
+    ],
+    "get_package": [
+      "self"
+    ],
+    "get_project_settings": [
+      "self"
+    ],
+    "get_python_package": [
+      "self"
+    ],
+    "get_repository": [
+      "self"
+    ],
+    "get_rule": [
+      "self"
+    ],
+    "get_tag": [
+      "self"
+    ],
+    "get_version": [
+      "self"
+    ],
+    "get_vpcsc_config": [
+      "self"
+    ],
+    "import_apt_artifacts": [
+      "self"
+    ],
+    "import_yum_artifacts": [
+      "self"
+    ],
+    "list_attachments": [
+      "self"
+    ],
+    "list_docker_images": [
+      "self"
+    ],
+    "list_files": [
+      "self"
+    ],
+    "list_maven_artifacts": [
+      "self"
+    ],
+    "list_npm_packages": [
+      "self"
+    ],
+    "list_packages": [
+      "self"
+    ],
+    "list_python_packages": [
+      "self"
+    ],
+    "list_repositories": [
+      "self"
+    ],
+    "list_rules": [
+      "self"
+    ],
+    "list_tags": [
+      "self"
+    ],
+    "list_versions": [
+      "self"
+    ],
+    "set_iam_policy": [
+      "self"
+    ],
+    "test_iam_permissions": [
+      "self"
+    ],
+    "update_file": [
+      "self"
+    ],
+    "update_package": [
+      "self"
+    ],
+    "update_project_settings": [
+      "self"
+    ],
+    "update_repository": [
+      "self"
+    ],
+    "update_rule": [
+      "self"
+    ],
+    "update_tag": [
+      "self"
+    ],
+    "update_version": [
+      "self"
+    ],
+    "update_vpcsc_config": [
+      "self"
+    ],
+    "get_location": [
+      "self"
+    ],
+    "list_locations": [
+      "self"
+    ],
+    "get_operation": [
+      "self"
+    ],
+    "kind": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "_LoggingClientAIOInterceptor": {
+    "intercept_unary_unary": [
+      "self",
+      "continuation",
+      "client_call_details",
+      "request"
+    ]
+  },
+  "ArtifactRegistryGrpcAsyncIOTransport": {
+    "create_channel": [
+      "cls",
+      "host",
+      "credentials",
+      "credentials_file",
+      "scopes",
+      "quota_project_id"
+    ],
+    "__init__": [
+      "self"
+    ],
+    "grpc_channel": [
+      "self"
+    ],
+    "operations_client": [
+      "self"
+    ],
+    "list_docker_images": [
+      "self"
+    ],
+    "get_docker_image": [
+      "self"
+    ],
+    "list_maven_artifacts": [
+      "self"
+    ],
+    "get_maven_artifact": [
+      "self"
+    ],
+    "list_npm_packages": [
+      "self"
+    ],
+    "get_npm_package": [
+      "self"
+    ],
+    "list_python_packages": [
+      "self"
+    ],
+    "get_python_package": [
+      "self"
+    ],
+    "import_apt_artifacts": [
+      "self"
+    ],
+    "import_yum_artifacts": [
+      "self"
+    ],
+    "list_repositories": [
+      "self"
+    ],
+    "get_repository": [
+      "self"
+    ],
+    "create_repository": [
+      "self"
+    ],
+    "update_repository": [
+      "self"
+    ],
+    "delete_repository": [
+      "self"
+    ],
+    "list_packages": [
+      "self"
+    ],
+    "get_package": [
+      "self"
+    ],
+    "delete_package": [
+      "self"
+    ],
+    "list_versions": [
+      "self"
+    ],
+    "get_version": [
+      "self"
+    ],
+    "delete_version": [
+      "self"
+    ],
+    "batch_delete_versions": [
+      "self"
+    ],
+    "update_version": [
+      "self"
+    ],
+    "list_files": [
+      "self"
+    ],
+    "get_file": [
+      "self"
+    ],
+    "delete_file": [
+      "self"
+    ],
+    "update_file": [
+      "self"
+    ],
+    "list_tags": [
+      "self"
+    ],
+    "get_tag": [
+      "self"
+    ],
+    "create_tag": [
+      "self"
+    ],
+    "update_tag": [
+      "self"
+    ],
+    "delete_tag": [
+      "self"
+    ],
+    "create_rule": [
+      "self"
+    ],
+    "list_rules": [
+      "self"
+    ],
+    "get_rule": [
+      "self"
+    ],
+    "update_rule": [
+      "self"
+    ],
+    "delete_rule": [
+      "self"
+    ],
+    "set_iam_policy": [
+      "self"
+    ],
+    "get_iam_policy": [
+      "self"
+    ],
+    "test_iam_permissions": [
+      "self"
+    ],
+    "get_project_settings": [
+      "self"
+    ],
+    "update_project_settings": [
+      "self"
+    ],
+    "get_vpcsc_config": [
+      "self"
+    ],
+    "update_vpcsc_config": [
+      "self"
+    ],
+    "update_package": [
+      "self"
+    ],
+    "list_attachments": [
+      "self"
+    ],
+    "get_attachment": [
+      "self"
+    ],
+    "create_attachment": [
+      "self"
+    ],
+    "delete_attachment": [
+      "self"
+    ],
+    "export_artifact": [
+      "self"
+    ],
+    "_prep_wrapped_messages": [
+      "self",
+      "client_info"
+    ],
+    "_wrap_method": [
+      "self",
+      "func"
+    ],
+    "close": [
+      "self"
+    ],
+    "kind": [
+      "self"
+    ],
+    "get_operation": [
+      "self"
+    ],
+    "list_locations": [
+      "self"
+    ],
+    "get_location": [
+      "self"
+    ]
+  },
+  "ArtifactRegistryTransport": {
+    "AUTH_SCOPES": [],
+    "__init__": [
+      "self"
+    ],
+    "host": [
+      "self"
+    ],
+    "_prep_wrapped_messages": [
+      "self",
+      "client_info"
+    ],
+    "close": [
+      "self"
+    ],
+    "operations_client": [
+      "self"
+    ],
+    "list_docker_images": [
+      "self"
+    ],
+    "get_docker_image": [
+      "self"
+    ],
+    "list_maven_artifacts": [
+      "self"
+    ],
+    "get_maven_artifact": [
+      "self"
+    ],
+    "list_npm_packages": [
+      "self"
+    ],
+    "get_npm_package": [
+      "self"
+    ],
+    "list_python_packages": [
+      "self"
+    ],
+    "get_python_package": [
+      "self"
+    ],
+    "import_apt_artifacts": [
+      "self"
+    ],
+    "import_yum_artifacts": [
+      "self"
+    ],
+    "list_repositories": [
+      "self"
+    ],
+    "get_repository": [
+      "self"
+    ],
+    "create_repository": [
+      "self"
+    ],
+    "update_repository": [
+      "self"
+    ],
+    "delete_repository": [
+      "self"
+    ],
+    "list_packages": [
+      "self"
+    ],
+    "get_package": [
+      "self"
+    ],
+    "delete_package": [
+      "self"
+    ],
+    "list_versions": [
+      "self"
+    ],
+    "get_version": [
+      "self"
+    ],
+    "delete_version": [
+      "self"
+    ],
+    "batch_delete_versions": [
+      "self"
+    ],
+    "update_version": [
+      "self"
+    ],
+    "list_files": [
+      "self"
+    ],
+    "get_file": [
+      "self"
+    ],
+    "delete_file": [
+      "self"
+    ],
+    "update_file": [
+      "self"
+    ],
+    "list_tags": [
+      "self"
+    ],
+    "get_tag": [
+      "self"
+    ],
+    "create_tag": [
+      "self"
+    ],
+    "update_tag": [
+      "self"
+    ],
+    "delete_tag": [
+      "self"
+    ],
+    "create_rule": [
+      "self"
+    ],
+    "list_rules": [
+      "self"
+    ],
+    "get_rule": [
+      "self"
+    ],
+    "update_rule": [
+      "self"
+    ],
+    "delete_rule": [
+      "self"
+    ],
+    "set_iam_policy": [
+      "self"
+    ],
+    "get_iam_policy": [
+      "self"
+    ],
+    "test_iam_permissions": [
+      "self"
+    ],
+    "get_project_settings": [
+      "self"
+    ],
+    "update_project_settings": [
+      "self"
+    ],
+    "get_vpcsc_config": [
+      "self"
+    ],
+    "update_vpcsc_config": [
+      "self"
+    ],
+    "update_package": [
+      "self"
+    ],
+    "list_attachments": [
+      "self"
+    ],
+    "get_attachment": [
+      "self"
+    ],
+    "create_attachment": [
+      "self"
+    ],
+    "delete_attachment": [
+      "self"
+    ],
+    "export_artifact": [
+      "self"
+    ],
+    "get_operation": [
+      "self"
+    ],
+    "get_location": [
+      "self"
+    ],
+    "list_locations": [
+      "self"
+    ],
+    "kind": [
+      "self"
+    ]
+  },
+  "_BaseArtifactRegistryRestTransport": {
+    "__init__": [
+      "self"
+    ]
+  }
+}
