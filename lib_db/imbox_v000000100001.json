@@ -1,0 +1,398 @@
+{
+  "logger": [],
+  "Messages": {
+    "IMAP_ATTRIBUTE_LOOKUP": [],
+    "__init__": [
+      "self",
+      "connection",
+      "parser_policy"
+    ],
+    "fetch_email_by_uid": [
+      "self",
+      "uid"
+    ],
+    "_fetch_email": [
+      "self",
+      "uid"
+    ],
+    "_query_uids": [
+      "self"
+    ],
+    "_fetch_email_list": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__next__": [
+      "self"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "to_dict_filtered": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "index"
+    ]
+  },
+  "__all__": [],
+  "ParsedEmail": {},
+  "EmailObject": {
+    "flags_utf8": [
+      "self"
+    ],
+    "filtered": [
+      "self"
+    ]
+  },
+  "decode_mail_header": [
+    "value",
+    "default_charset"
+  ],
+  "get_mail_addresses": [
+    "message",
+    "header_name"
+  ],
+  "decode_param": [
+    "param"
+  ],
+  "parse_content_disposition": [
+    "content_disposition"
+  ],
+  "parse_attachment": [
+    "message_part"
+  ],
+  "decode_content": [
+    "message"
+  ],
+  "parse_flags": [
+    "headers"
+  ],
+  "parse_email": [
+    "raw_email",
+    "policy"
+  ],
+  "setup_logger": [
+    "name"
+  ],
+  "get_logger": [
+    "name"
+  ],
+  "cli": [],
+  "messages": [
+    "folder",
+    "unread",
+    "flagged",
+    "unflagged",
+    "sent_from",
+    "sent_to",
+    "subject",
+    "date_lt",
+    "date_gt",
+    "date_on",
+    "uid_range",
+    "raw",
+    "label"
+  ],
+  "folders": [],
+  "str_encode": [
+    "value",
+    "encoding",
+    "errors"
+  ],
+  "str_decode": [
+    "value",
+    "encoding",
+    "errors"
+  ],
+  "date_to_date_text": [
+    "date"
+  ],
+  "__version__": [],
+  "VERSION": [],
+  "messages_run": [
+    "filters"
+  ],
+  "folders_run": [],
+  "ImapTransport": {
+    "__init__": [
+      "self",
+      "hostname",
+      "port",
+      "ssl",
+      "ssl_context",
+      "starttls"
+    ],
+    "list_folders": [
+      "self"
+    ],
+    "connect": [
+      "self",
+      "username",
+      "password"
+    ]
+  },
+  "str_to_bool": [
+    "value"
+  ],
+  "Config": {},
+  "LogOutputType": {
+    "clean": [],
+    "default": []
+  },
+  "Settings": {
+    "imbox_imap_url": [
+      "self"
+    ],
+    "imbox_username": [
+      "self"
+    ],
+    "imbox_password": [
+      "self"
+    ],
+    "imbox_ssl": [
+      "self"
+    ],
+    "imbox_ssl_context": [
+      "self"
+    ],
+    "imbox_starttls": [
+      "self"
+    ],
+    "imbox_port": [
+      "self"
+    ],
+    "output_folder": [
+      "self"
+    ],
+    "output": [
+      "self"
+    ],
+    "output_filename": [
+      "self"
+    ],
+    "output_fields": [
+      "self"
+    ],
+    "debug": [
+      "self"
+    ],
+    "log_output_type": [
+      "self"
+    ],
+    "log_level": [
+      "self"
+    ],
+    "config": [
+      "self"
+    ]
+  },
+  "settings": [],
+  "Imbox": {
+    "authentication_error_message": [],
+    "__init__": [
+      "self",
+      "config",
+      "policy",
+      "vendor"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "value",
+      "traceback"
+    ],
+    "logout": [
+      "self"
+    ],
+    "mark_seen": [
+      "self",
+      "uid"
+    ],
+    "mark_flag": [
+      "self",
+      "uid"
+    ],
+    "delete": [
+      "self",
+      "uid"
+    ],
+    "copy": [
+      "self",
+      "uid",
+      "destination_folder"
+    ],
+    "move": [
+      "self",
+      "uid",
+      "destination_folder"
+    ],
+    "messages": [
+      "self"
+    ],
+    "folders": [
+      "self"
+    ]
+  },
+  "save_to_json": [
+    "messsages"
+  ],
+  "build_search_query": [
+    "imap_attribute_lookup"
+  ],
+  "vendors": [],
+  "hostname_vendorname_dict": [],
+  "name_authentication_string_dict": [],
+  "GmailMessages": {
+    "authentication_error_message": [],
+    "hostname": [],
+    "name": [],
+    "FOLDER_LOOKUP": [],
+    "GMAIL_IMAP_ATTRIBUTE_LOOKUP_DIFF": [],
+    "__init__": [
+      "self",
+      "connection",
+      "parser_policy"
+    ]
+  },
+  "merge_two_dicts": [
+    "x",
+    "y"
+  ],
+  "IMAP_ATTRIBUTE_LOOKUP": [],
+  "GMAIL_ATTRIBUTE_LOOKUP": [],
+  "TestQuery": {
+    "test_all": [
+      "self"
+    ],
+    "test_subject": [
+      "self"
+    ],
+    "test_unread": [
+      "self"
+    ],
+    "test_unflagged": [
+      "self"
+    ],
+    "test_flagged": [
+      "self"
+    ],
+    "test_sent_from": [
+      "self"
+    ],
+    "test_sent_to": [
+      "self"
+    ],
+    "test_date__gt": [
+      "self"
+    ],
+    "test_date__lt": [
+      "self"
+    ],
+    "test_date__on": [
+      "self"
+    ],
+    "test_uid__range": [
+      "self"
+    ],
+    "test_text": [
+      "self"
+    ],
+    "test_gmail_raw": [
+      "self"
+    ],
+    "test_gmail_label": [
+      "self"
+    ]
+  },
+  "TEST_DIR": [],
+  "raw_email": [],
+  "raw_email_encoded": [],
+  "raw_email_encoded_needs_refolding": [],
+  "raw_email_encoded_multipart": [],
+  "raw_email_encoded_bad_multipart": [],
+  "raw_email_encoded_another_bad_multipart": [],
+  "raw_email_with_trailing_semicolon": [],
+  "raw_email_with_long_filename_attachment": [],
+  "raw_email_encoded_encoding_charset_contains_a_minus": [],
+  "raw_email_attachment_only": [],
+  "TestParseEmail": {
+    "test_parse_email": [
+      "self",
+      "raw_email"
+    ],
+    "test_parse_email_encoded": [
+      "self",
+      "raw_email_encoded"
+    ],
+    "test_parse_email_invalid_unicode": [
+      "self"
+    ],
+    "test_parse_email_inline_body": [
+      "self",
+      "raw_email_encoded_another_bad_multipart"
+    ],
+    "test_parse_email_multipart": [
+      "self",
+      "raw_email_encoded_multipart"
+    ],
+    "test_parse_email_bad_multipart": [
+      "self",
+      "raw_email_encoded_bad_multipart"
+    ],
+    "test_parse_email_ignores_header_casing": [
+      "self"
+    ]
+  },
+  "TestParseAttachment": {
+    "test_parse_attachment": [
+      "self",
+      "raw_email_with_trailing_semicolon"
+    ],
+    "test_parse_attachment_with_long_filename": [
+      "self",
+      "raw_email_with_long_filename_attachment"
+    ],
+    "test_parse_email_single_attachment": [
+      "self",
+      "raw_email_attachment_only"
+    ]
+  },
+  "TestParseEmailWithCharset": {
+    "test_parse_email_accept_if_declared_charset_contains_a_minus_character": [
+      "self",
+      "raw_email_encoded_encoding_charset_contains_a_minus"
+    ]
+  },
+  "TestDecodeMailHeader": {
+    "test_decode_mail_header": [
+      "self"
+    ]
+  },
+  "TestGetMailAddresses": {
+    "test_get_mail_addresses_to": [
+      "self"
+    ],
+    "test_get_mail_addresses_from": [
+      "self"
+    ],
+    "test_get_mail_addresses_invalid_encoding": [
+      "self"
+    ]
+  },
+  "TestParseEmailWithPolicy": {
+    "test_parse_email_with_policy": [
+      "self",
+      "raw_email_encoded_needs_refolding"
+    ]
+  }
+}
