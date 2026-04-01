@@ -1,0 +1,7375 @@
+{
+  "MAX_PORT": [],
+  "log_exception_to_telemetry": [
+    "exc",
+    "context"
+  ],
+  "RequestCancelledMiddleware": {
+    "__init__": [
+      "self",
+      "app"
+    ],
+    "dispatch": [
+      "self",
+      "request",
+      "call_next"
+    ]
+  },
+  "JavaScriptMIMETypeMiddleware": {
+    "dispatch": [
+      "self",
+      "request",
+      "call_next"
+    ]
+  },
+  "load_bundles_with_error_handling": [],
+  "warn_about_future_cors_changes": [
+    "settings"
+  ],
+  "get_lifespan": [],
+  "create_app": [],
+  "setup_sentry": [
+    "app"
+  ],
+  "setup_static_files": [
+    "app",
+    "static_files_dir"
+  ],
+  "get_static_files_dir": [],
+  "setup_app": [
+    "static_files_dir"
+  ],
+  "LangflowCompatibilityModule": {
+    "__init__": [
+      "self",
+      "name",
+      "lfx_module_name"
+    ],
+    "_get_lfx_module": [
+      "self"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "__dir__": [
+      "self"
+    ]
+  },
+  "_setup_compatibility_modules": [],
+  "_get_variable_query": [
+    "sender",
+    "sender_name",
+    "session_id",
+    "context_id",
+    "order_by",
+    "order",
+    "flow_id",
+    "limit"
+  ],
+  "get_messages": [
+    "sender",
+    "sender_name",
+    "session_id",
+    "context_id",
+    "order_by",
+    "order",
+    "flow_id",
+    "limit"
+  ],
+  "aget_messages": [
+    "sender",
+    "sender_name",
+    "session_id",
+    "context_id",
+    "order_by",
+    "order",
+    "flow_id",
+    "limit"
+  ],
+  "add_messages": [
+    "messages",
+    "flow_id"
+  ],
+  "aadd_messages": [
+    "messages",
+    "flow_id"
+  ],
+  "aupdate_messages": [
+    "messages"
+  ],
+  "aadd_messagetables": [
+    "messages",
+    "session",
+    "retry_count"
+  ],
+  "delete_messages": [
+    "session_id",
+    "context_id"
+  ],
+  "adelete_messages": [
+    "session_id",
+    "context_id"
+  ],
+  "delete_message": [
+    "id_"
+  ],
+  "store_message": [
+    "message",
+    "flow_id"
+  ],
+  "astore_message": [
+    "message",
+    "flow_id"
+  ],
+  "LCBuiltinChatMemory": {
+    "__init__": [
+      "self",
+      "flow_id",
+      "session_id",
+      "context_id"
+    ],
+    "messages": [
+      "self"
+    ],
+    "aget_messages": [
+      "self"
+    ],
+    "add_messages": [
+      "self",
+      "messages"
+    ],
+    "aadd_messages": [
+      "self",
+      "messages"
+    ],
+    "clear": [
+      "self"
+    ],
+    "aclear": [
+      "self"
+    ]
+  },
+  "main": [],
+  "_launch_with_exec": [],
+  "app": [],
+  "console": [],
+  "ProcessManager": {
+    "__init__": [
+      "self"
+    ],
+    "handle_sigterm": [
+      "self",
+      "_signum",
+      "_frame"
+    ],
+    "handle_sigint": [
+      "self",
+      "_signum",
+      "_frame"
+    ],
+    "shutdown": [
+      "self"
+    ],
+    "print_farewell_message": [
+      "self"
+    ]
+  },
+  "process_manager": [],
+  "get_number_of_workers": [
+    "workers"
+  ],
+  "display_results": [
+    "results"
+  ],
+  "set_var_for_macos_issue": [],
+  "wait_for_server_ready": [
+    "host",
+    "port",
+    "protocol"
+  ],
+  "run": [],
+  "is_port_in_use": [
+    "port",
+    "host"
+  ],
+  "get_free_port": [
+    "port"
+  ],
+  "is_loopback_address": [
+    "host"
+  ],
+  "can_connect": [
+    "host",
+    "port",
+    "timeout"
+  ],
+  "get_best_access_host": [
+    "host",
+    "port"
+  ],
+  "get_letter_from_version": [
+    "version"
+  ],
+  "build_version_notice": [
+    "current_version",
+    "package_name"
+  ],
+  "generate_pip_command": [
+    "package_names",
+    "is_pre_release"
+  ],
+  "stylize_text": [
+    "text",
+    "to_style"
+  ],
+  "print_banner": [
+    "host",
+    "port",
+    "protocol"
+  ],
+  "superuser": [
+    "username",
+    "password",
+    "log_level",
+    "auth_token"
+  ],
+  "_create_superuser": [
+    "username",
+    "password",
+    "auth_token"
+  ],
+  "copy_db": [],
+  "_migration": [],
+  "migration": [
+    "test",
+    "fix"
+  ],
+  "api_key": [
+    "log_level"
+  ],
+  "show_version": [],
+  "version_option": [],
+  "api_key_banner": [
+    "unmasked_api_key"
+  ],
+  "_get_route_keys": [
+    "app"
+  ],
+  "_PluginAppWrapper": {
+    "__init__": [
+      "self",
+      "app",
+      "reserved"
+    ],
+    "_check_and_reserve": [
+      "self",
+      "path",
+      "methods"
+    ],
+    "include_router": [
+      "self",
+      "router",
+      "prefix"
+    ],
+    "get": [
+      "self",
+      "path"
+    ],
+    "post": [
+      "self",
+      "path"
+    ],
+    "put": [
+      "self",
+      "path"
+    ],
+    "delete": [
+      "self",
+      "path"
+    ],
+    "patch": [
+      "self",
+      "path"
+    ],
+    "on_event": [
+      "self",
+      "event_type"
+    ],
+    "openapi": [
+      "self"
+    ],
+    "add_api_route": [
+      "self",
+      "path",
+      "endpoint"
+    ]
+  },
+  "load_plugin_routes": [
+    "app"
+  ],
+  "MaxFileSizeException": {
+    "__init__": [
+      "self",
+      "detail"
+    ]
+  },
+  "ContentSizeLimitMiddleware": {
+    "__init__": [
+      "self",
+      "app"
+    ],
+    "receive_wrapper": [
+      "receive"
+    ],
+    "__call__": [
+      "self",
+      "scope",
+      "receive",
+      "send"
+    ]
+  },
+  "DEV": [],
+  "_set_dev": [
+    "value"
+  ],
+  "set_dev": [
+    "value"
+  ],
+  "LangflowUvicornWorker": {
+    "CONFIG_KWARGS": [],
+    "_has_exited": [],
+    "_install_sigint_handler": [
+      "self"
+    ],
+    "handle_exit": [
+      "self",
+      "sig",
+      "frame"
+    ],
+    "_serve": [
+      "self"
+    ]
+  },
+  "Logger": {
+    "__init__": [
+      "self",
+      "cfg"
+    ],
+    "error": [
+      "self",
+      "msg"
+    ]
+  },
+  "LangflowApplication": {
+    "__init__": [
+      "self",
+      "app",
+      "options"
+    ],
+    "load_config": [
+      "self"
+    ],
+    "load": [
+      "self"
+    ]
+  },
+  "test_celery": [
+    "word"
+  ],
+  "build_vertex": [
+    "self",
+    "vertex"
+  ],
+  "process_graph_cached_task": [],
+  "LOGGING_CONFIGURED": [],
+  "disable_logging": [],
+  "enable_logging": [],
+  "__all__": [],
+  "info": [],
+  "debug": [],
+  "warning": [],
+  "error": [],
+  "critical": [],
+  "exception": [],
+  "aerror": [],
+  "ainfo": [],
+  "adebug": [],
+  "awarning": [],
+  "acritical": [],
+  "aexception": [],
+  "extract_inner_type_from_generic_alias": [
+    "return_type"
+  ],
+  "extract_inner_type": [
+    "return_type"
+  ],
+  "extract_union_types": [
+    "return_type"
+  ],
+  "extract_uniont_types_from_generic_alias": [
+    "return_type"
+  ],
+  "post_process_type": [
+    "type_"
+  ],
+  "extract_union_types_from_generic_alias": [
+    "return_type"
+  ],
+  "MIN_DURATION_THRESHOLD": [],
+  "ProgressIndicator": {
+    "__init__": [
+      "self"
+    ],
+    "add_step": [
+      "self",
+      "title",
+      "description"
+    ],
+    "_animate_step": [
+      "self",
+      "step_index"
+    ],
+    "start_step": [
+      "self",
+      "step_index"
+    ],
+    "complete_step": [
+      "self",
+      "step_index"
+    ],
+    "fail_step": [
+      "self",
+      "step_index",
+      "error_msg"
+    ],
+    "step": [
+      "self",
+      "step_index"
+    ],
+    "print_summary": [
+      "self"
+    ],
+    "print_shutdown_summary": [
+      "self"
+    ]
+  },
+  "create_langflow_progress": [],
+  "create_langflow_shutdown_progress": [],
+  "update_projects_components_with_latest_component_versions": [
+    "project_data",
+    "all_types_dict"
+  ],
+  "scape_json_parse": [
+    "json_string"
+  ],
+  "update_new_output": [
+    "data"
+  ],
+  "update_edges_with_latest_component_versions": [
+    "project_data"
+  ],
+  "log_node_changes": [
+    "node_changes_log"
+  ],
+  "load_starter_projects": [
+    "retries",
+    "delay"
+  ],
+  "copy_profile_pictures": [],
+  "get_project_data": [
+    "project"
+  ],
+  "update_project_file": [
+    "project_path",
+    "project",
+    "updated_project_data"
+  ],
+  "update_existing_project": [
+    "existing_project",
+    "project_name",
+    "project_description",
+    "project_is_component",
+    "updated_at_datetime",
+    "project_data",
+    "project_icon",
+    "project_icon_bg_color"
+  ],
+  "create_new_project": [
+    "session",
+    "project_name",
+    "project_description",
+    "project_is_component",
+    "updated_at_datetime",
+    "project_data",
+    "project_gradient",
+    "project_tags",
+    "project_icon",
+    "project_icon_bg_color",
+    "new_folder_id"
+  ],
+  "get_all_flows_similar_to_project": [
+    "session",
+    "folder_id"
+  ],
+  "delete_starter_projects": [
+    "session",
+    "folder_id"
+  ],
+  "folder_exists": [
+    "session",
+    "folder_name"
+  ],
+  "get_or_create_starter_folder": [
+    "session"
+  ],
+  "get_or_create_assistant_folder": [
+    "session",
+    "user_id"
+  ],
+  "load_agentic_flows": [],
+  "create_or_update_agentic_flows": [
+    "session",
+    "user_id"
+  ],
+  "_is_valid_uuid": [
+    "val"
+  ],
+  "load_flows_from_directory": [],
+  "detect_github_url": [
+    "url"
+  ],
+  "load_bundles_from_urls": [],
+  "upsert_flow_from_file": [
+    "file_content",
+    "filename",
+    "session",
+    "user_id"
+  ],
+  "find_existing_flow": [
+    "session",
+    "flow_id",
+    "flow_endpoint_name"
+  ],
+  "create_or_update_starter_projects": [
+    "all_types_dict"
+  ],
+  "initialize_auto_login_default_superuser": [],
+  "get_or_create_default_folder": [
+    "session",
+    "user_id"
+  ],
+  "sync_flows_from_fs": [],
+  "STARTER_FOLDER_NAME": [],
+  "STARTER_FOLDER_DESCRIPTION": [],
+  "ASSISTANT_FOLDER_NAME": [],
+  "ASSISTANT_FOLDER_DESCRIPTION": [],
+  "get_starter_projects_graphs": [],
+  "get_starter_projects_dump": [],
+  "complex_agent_graph": [],
+  "memory_chatbot_graph": [
+    "template"
+  ],
+  "document_qa_graph": [
+    "template"
+  ],
+  "hierarchical_tasks_agent_graph": [],
+  "sequential_tasks_agent_graph": [],
+  "basic_prompting_graph": [
+    "template"
+  ],
+  "ingestion_graph": [],
+  "rag_graph": [],
+  "vector_store_rag_graph": [],
+  "blog_writer_graph": [
+    "template"
+  ],
+  "__getattr__": [
+    "attr_name"
+  ],
+  "__dir__": [],
+  "_redirected_submodules": [],
+  "get_flow": [
+    "url",
+    "flow_id"
+  ],
+  "make_celery": [
+    "app_name",
+    "config"
+  ],
+  "celery_app": [],
+  "langflow_redis_host": [],
+  "langflow_redis_port": [],
+  "accept_content": [],
+  "_UnserializableSentinel": {
+    "__repr__": [
+      "self"
+    ]
+  },
+  "UNSERIALIZABLE_SENTINEL": [],
+  "get_max_text_length": [],
+  "get_max_items_length": [],
+  "_serialize_str": [
+    "obj",
+    "max_length",
+    "_"
+  ],
+  "_serialize_bytes": [
+    "obj",
+    "max_length",
+    "_"
+  ],
+  "_serialize_datetime": [
+    "obj"
+  ],
+  "_serialize_decimal": [
+    "obj"
+  ],
+  "_serialize_uuid": [
+    "obj"
+  ],
+  "_serialize_document": [
+    "obj",
+    "max_length",
+    "max_items"
+  ],
+  "_serialize_iterator": [
+    "_"
+  ],
+  "_serialize_pydantic": [
+    "obj",
+    "max_length",
+    "max_items"
+  ],
+  "_serialize_pydantic_v1": [
+    "obj",
+    "max_length",
+    "max_items"
+  ],
+  "_serialize_dict": [
+    "obj",
+    "max_length",
+    "max_items"
+  ],
+  "_serialize_list_tuple": [
+    "obj",
+    "max_length",
+    "max_items"
+  ],
+  "_serialize_primitive": [
+    "obj"
+  ],
+  "_serialize_instance": [
+    "obj"
+  ],
+  "_truncate_value": [
+    "value",
+    "max_length",
+    "max_items"
+  ],
+  "_serialize_dataframe": [
+    "obj",
+    "max_length",
+    "max_items"
+  ],
+  "_serialize_series": [
+    "obj",
+    "max_length",
+    "max_items"
+  ],
+  "_is_numpy_type": [
+    "obj"
+  ],
+  "_serialize_numpy_type": [
+    "obj",
+    "max_length",
+    "max_items"
+  ],
+  "_serialize_dispatcher": [
+    "obj",
+    "max_length",
+    "max_items"
+  ],
+  "serialize": [
+    "obj",
+    "max_length",
+    "max_items"
+  ],
+  "serialize_or_str": [
+    "obj",
+    "max_length",
+    "max_items"
+  ],
+  "MigrationPhase": {
+    "EXPAND": [],
+    "MIGRATE": [],
+    "CONTRACT": [],
+    "UNKNOWN": []
+  },
+  "Violation": {},
+  "MigrationValidator": {
+    "VIOLATIONS": [],
+    "__init__": [
+      "self"
+    ],
+    "validate_migration_file": [
+      "self",
+      "filepath"
+    ],
+    "_check_upgrade_operations": [
+      "self",
+      "node",
+      "phase"
+    ],
+    "_check_add_column": [
+      "self",
+      "call",
+      "phase",
+      "func_node"
+    ],
+    "_check_alter_column": [
+      "self",
+      "call",
+      "phase"
+    ],
+    "_check_drop_column": [
+      "self",
+      "call",
+      "phase"
+    ],
+    "_check_contract_phase_requirements": [
+      "self",
+      "content"
+    ],
+    "_check_downgrade_safety": [
+      "self",
+      "node",
+      "phase"
+    ],
+    "_is_op_call": [
+      "self",
+      "call",
+      "method"
+    ],
+    "_has_nullable_true": [
+      "self",
+      "call"
+    ],
+    "_has_server_default": [
+      "self",
+      "call"
+    ],
+    "_has_type_change": [
+      "self",
+      "call"
+    ],
+    "_changes_nullable_to_false": [
+      "self",
+      "call"
+    ],
+    "_has_existence_check_nearby": [
+      "self",
+      "func_node",
+      "target_call"
+    ],
+    "_extract_phase": [
+      "self",
+      "content"
+    ],
+    "_find_function": [
+      "self",
+      "tree",
+      "name"
+    ]
+  },
+  "config": [],
+  "NAMING_CONVENTION": [],
+  "target_metadata": [],
+  "run_migrations_offline": [],
+  "_sqlite_do_connect": [
+    "dbapi_connection",
+    "connection_record"
+  ],
+  "_sqlite_do_begin": [
+    "conn"
+  ],
+  "_do_run_migrations": [
+    "connection"
+  ],
+  "_run_async_migrations": [],
+  "run_migrations_online": [],
+  "upgrade": [],
+  "downgrade": [],
+  "logger": [],
+  "DUPLICATE_SUFFIX_START": [],
+  "BATCH_SIZE": [],
+  "_get_unique_constraints_by_columns": [
+    "inspector",
+    "table",
+    "expected_cols"
+  ],
+  "_split_base_ext": [
+    "name"
+  ],
+  "_escape_like": [
+    "s"
+  ],
+  "_like_for_suffixes": [
+    "base",
+    "ext"
+  ],
+  "_next_available_name": [
+    "conn",
+    "user_id",
+    "base_name"
+  ],
+  "_handle_duplicates_before_upgrade": [
+    "conn"
+  ],
+  "constraint_exists": [
+    "constraint_name",
+    "conn"
+  ],
+  "revision": [],
+  "down_revision": [],
+  "branch_labels": [],
+  "depends_on": [],
+  "modify_nullable": [
+    "conn",
+    "inspector",
+    "table_name",
+    "upgrade"
+  ],
+  "_get_fk_constraint_name": [
+    "conn",
+    "table_name",
+    "column_name"
+  ],
+  "CompactNode": {},
+  "CompactEdge": {},
+  "CompactFlowData": {},
+  "_get_flat_components": [
+    "all_types_dict"
+  ],
+  "_expand_node": [
+    "compact_node",
+    "flat_components"
+  ],
+  "_encode_handle": [
+    "data"
+  ],
+  "_build_source_handle_data": [
+    "node_id",
+    "component_type",
+    "output_name",
+    "output_types"
+  ],
+  "_build_target_handle_data": [
+    "node_id",
+    "field_name",
+    "input_types",
+    "field_type"
+  ],
+  "_expand_edge": [
+    "compact_edge",
+    "expanded_nodes"
+  ],
+  "expand_compact_flow": [
+    "compact_data",
+    "all_types_dict"
+  ],
+  "Result": {},
+  "run_graph_internal": [
+    "graph",
+    "flow_id"
+  ],
+  "run_graph": [
+    "graph",
+    "input_value",
+    "input_type",
+    "output_type"
+  ],
+  "validate_input": [
+    "graph_data",
+    "tweaks"
+  ],
+  "apply_tweaks": [
+    "node",
+    "node_tweaks"
+  ],
+  "apply_tweaks_on_vertex": [
+    "vertex",
+    "node_tweaks"
+  ],
+  "process_tweaks": [
+    "graph_data",
+    "tweaks"
+  ],
+  "process_tweaks_on_graph": [
+    "graph",
+    "tweaks"
+  ],
+  "_import_input_class": [],
+  "_import_output_class": [],
+  "CUSTOM_COMPONENT_SUPPORTED_TYPES": [],
+  "transform_connection_string": [
+    "connection_string"
+  ],
+  "LANGFLOW_GLOBAL_VAR_HEADER_PREFIX": [],
+  "infer_list_type": [
+    "items",
+    "max_samples"
+  ],
+  "get_type_str": [
+    "value"
+  ],
+  "analyze_value": [
+    "value",
+    "max_depth",
+    "current_depth",
+    "path"
+  ],
+  "get_data_structure": [
+    "data_obj",
+    "max_depth",
+    "max_sample_size"
+  ],
+  "get_sample_values": [
+    "data",
+    "max_items"
+  ],
+  "cleanup_mcp_sessions": [],
+  "_kill_mcp_processes": [],
+  "_terminate_child_mcp_processes": [
+    "psutil"
+  ],
+  "_terminate_orphaned_mcp_processes": [
+    "psutil"
+  ],
+  "_try_terminate_mcp_process": [
+    "proc",
+    "psutil"
+  ],
+  "validate_template_structure": [
+    "template_data",
+    "filename"
+  ],
+  "validate_flow_can_build": [
+    "template_data",
+    "filename"
+  ],
+  "validate_flow_code": [
+    "template_data",
+    "filename"
+  ],
+  "validate_flow_execution": [
+    "client",
+    "template_data",
+    "filename",
+    "headers"
+  ],
+  "_validate_event_stream": [
+    "response",
+    "job_id",
+    "filename",
+    "errors"
+  ],
+  "DEFAULT_FIELDS": [],
+  "update_fields": [
+    "build_config",
+    "fields"
+  ],
+  "add_fields": [
+    "build_config",
+    "fields"
+  ],
+  "delete_fields": [
+    "build_config",
+    "fields"
+  ],
+  "get_fields": [
+    "build_config",
+    "fields"
+  ],
+  "update_input_types": [
+    "build_config"
+  ],
+  "set_field_display": [
+    "build_config",
+    "field",
+    "value"
+  ],
+  "set_multiple_field_display": [
+    "build_config",
+    "fields"
+  ],
+  "set_field_advanced": [
+    "build_config",
+    "field",
+    "value"
+  ],
+  "set_multiple_field_advanced": [
+    "build_config",
+    "fields"
+  ],
+  "merge_build_configs": [
+    "base_config",
+    "override_config"
+  ],
+  "set_current_fields": [
+    "build_config",
+    "action_fields",
+    "selected_action",
+    "default_fields",
+    "func"
+  ],
+  "SAMPLE_RATE_24K": [],
+  "VAD_SAMPLE_RATE_16K": [],
+  "FRAME_DURATION_MS": [],
+  "BYTES_PER_SAMPLE": [],
+  "BYTES_PER_24K_FRAME": [],
+  "BYTES_PER_16K_FRAME": [],
+  "resample_24k_to_16k": [
+    "frame_24k_bytes"
+  ],
+  "write_audio_to_file": [
+    "audio_base64",
+    "filename"
+  ],
+  "_write_bytes_to_file": [
+    "data",
+    "filename"
+  ],
+  "_compute_non_prerelease_version": [
+    "prerelease_version"
+  ],
+  "_get_version_info": [],
+  "VERSION_INFO": [],
+  "is_pre_release": [
+    "v"
+  ],
+  "is_nightly": [
+    "v"
+  ],
+  "fetch_latest_version": [
+    "package_name"
+  ],
+  "get_version_info": [],
+  "File": {},
+  "ChatOutputResponse": {
+    "validate_files": [
+      "cls",
+      "files"
+    ],
+    "from_message": [
+      "cls",
+      "message",
+      "sender",
+      "sender_name"
+    ],
+    "validate_message": [
+      "self"
+    ]
+  },
+  "DataOutputResponse": {},
+  "ContainsEnumMeta": {
+    "__contains__": [
+      "cls",
+      "item"
+    ]
+  },
+  "extract_input_variables": [
+    "nodes"
+  ],
+  "get_root_vertex": [
+    "graph"
+  ],
+  "build_json": [
+    "root",
+    "graph"
+  ],
+  "table_exists": [
+    "name",
+    "conn"
+  ],
+  "column_exists": [
+    "table_name",
+    "column_name",
+    "conn"
+  ],
+  "foreign_key_exists": [
+    "table_name",
+    "fk_name",
+    "conn"
+  ],
+  "compress_response": [
+    "data"
+  ],
+  "MAX_RETRY_ATTEMPTS": [],
+  "INGESTION_BATCH_SIZE": [],
+  "EXPONENTIAL_BACKOFF_MULTIPLIER": [],
+  "MIN_KB_NAME_LENGTH": [],
+  "CHUNK_PREVIEW_MULTIPLIER": [],
+  "MAX_DELETE_RETRIES": [],
+  "DELETE_BACKOFF_SECONDS": [],
+  "convert_image_to_base64": [
+    "image_path"
+  ],
+  "create_data_url": [
+    "image_path",
+    "mime_type"
+  ],
+  "create_image_content_dict": [
+    "image_path",
+    "mime_type"
+  ],
+  "_RegisteredEmailCache": {
+    "get_email_model": [
+      "cls"
+    ],
+    "set_email_model": [
+      "cls",
+      "value"
+    ],
+    "is_resolved": [
+      "cls"
+    ]
+  },
+  "get_email_model": [],
+  "_parse_email_registration": [
+    "registration"
+  ],
+  "_create_email_model": [
+    "email"
+  ],
+  "_get_type": [
+    "d"
+  ],
+  "ContentType": [],
+  "ContentBlock": {
+    "__init__": [
+      "self"
+    ],
+    "validate_contents": [
+      "cls",
+      "v"
+    ],
+    "serialize_contents": [
+      "self",
+      "value"
+    ]
+  },
+  "ContentBlockDict": {},
+  "encode_callable": [
+    "obj"
+  ],
+  "encode_datetime": [
+    "obj"
+  ],
+  "CUSTOM_ENCODERS": [],
+  "KnowledgeBaseInfo": {},
+  "BulkDeleteRequest": {},
+  "ColumnConfigItem": {},
+  "CreateKnowledgeBaseRequest": {},
+  "AddSourceRequest": {},
+  "ChunkInfo": {},
+  "PaginatedChunkResponse": {},
+  "ArtifactType": {
+    "TEXT": [],
+    "DATA": [],
+    "OBJECT": [],
+    "ARRAY": [],
+    "STREAM": [],
+    "UNKNOWN": [],
+    "MESSAGE": []
+  },
+  "get_artifact_type": [
+    "value",
+    "build_result"
+  ],
+  "_to_list_of_dicts": [
+    "raw"
+  ],
+  "post_process_raw": [
+    "raw",
+    "artifact_type"
+  ],
+  "Source": {},
+  "Usage": {},
+  "Properties": {
+    "validate_source": [
+      "cls",
+      "v"
+    ],
+    "serialize_source": [
+      "self",
+      "value"
+    ]
+  },
+  "HeaderDict": {},
+  "BaseContent": {
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "data"
+    ],
+    "serialize_model": [
+      "self",
+      "nxt"
+    ]
+  },
+  "ErrorContent": {},
+  "TextContent": {},
+  "MediaContent": {},
+  "JSONContent": {},
+  "CodeContent": {},
+  "ToolContent": {
+    "model_config": []
+  },
+  "timestamp_to_str": [
+    "timestamp"
+  ],
+  "str_to_timestamp": [
+    "timestamp"
+  ],
+  "timestamp_with_fractional_seconds": [
+    "timestamp"
+  ],
+  "timestamp_to_str_validator": [],
+  "timestamp_with_fractional_seconds_validator": [],
+  "str_to_timestamp_validator": [],
+  "dotdict": {
+    "__getattr__": [
+      "self",
+      "attr"
+    ],
+    "__setattr__": [
+      "self",
+      "key",
+      "value"
+    ],
+    "__delattr__": [
+      "self",
+      "key"
+    ],
+    "__missing__": [
+      "self",
+      "key"
+    ]
+  },
+  "LogFunctionType": {
+    "__call__": [
+      "self",
+      "message"
+    ]
+  },
+  "SendMessageFunctionType": {
+    "__call__": [
+      "self",
+      "message",
+      "text",
+      "background_color",
+      "text_color",
+      "icon",
+      "content_blocks",
+      "format_type",
+      "id_"
+    ]
+  },
+  "OnTokenFunctionType": {
+    "__call__": [
+      "self",
+      "data"
+    ]
+  },
+  "PlaygroundEvent": {
+    "model_config": [],
+    "serialize_timestamp": [
+      "cls",
+      "v"
+    ],
+    "validate_id": [
+      "cls",
+      "v"
+    ]
+  },
+  "MessageEvent": {
+    "validate_flow_id": [
+      "cls",
+      "v"
+    ]
+  },
+  "ErrorEvent": {},
+  "WarningEvent": {},
+  "InfoEvent": {},
+  "TokenEvent": {},
+  "create_message": [
+    "text",
+    "category",
+    "properties",
+    "content_blocks",
+    "sender_name",
+    "files",
+    "timestamp",
+    "format_type",
+    "sender",
+    "session_id",
+    "id",
+    "flow_id"
+  ],
+  "create_error": [
+    "text",
+    "properties",
+    "traceback",
+    "title",
+    "timestamp",
+    "id",
+    "flow_id",
+    "session_id",
+    "content_blocks"
+  ],
+  "create_warning": [
+    "message"
+  ],
+  "create_info": [
+    "message"
+  ],
+  "create_token": [
+    "chunk",
+    "id"
+  ],
+  "create_event_by_type": [
+    "event_type"
+  ],
+  "InvalidChatInputError": {},
+  "WorkflowExecutionError": {},
+  "WorkflowTimeoutError": {},
+  "WorkflowValidationError": {},
+  "WorkflowQueueFullError": {},
+  "WorkflowResourceError": {},
+  "WorkflowServiceUnavailableError": {},
+  "ExceptionBody": {},
+  "APIException": {
+    "__init__": [
+      "self",
+      "exception",
+      "flow",
+      "status_code"
+    ],
+    "build_exception_body": [
+      "exc",
+      "flow"
+    ]
+  },
+  "SerializationError": {
+    "__init__": [
+      "self",
+      "detail",
+      "original_error",
+      "data",
+      "status_code"
+    ],
+    "from_exception": [
+      "cls",
+      "exc",
+      "data"
+    ]
+  },
+  "ComponentBuildError": {
+    "__init__": [
+      "self",
+      "message",
+      "formatted_traceback"
+    ]
+  },
+  "StreamingError": {
+    "__init__": [
+      "self",
+      "cause",
+      "source"
+    ]
+  },
+  "initialize_settings_service": [],
+  "initialize_session_service": [],
+  "SSE_QUEUE_MAX_SIZE": [],
+  "SSE_EMIT_TIMEOUT_SECONDS": [],
+  "SECONDS_PER_MINUTE": [],
+  "WebhookEventManager": {
+    "__init__": [
+      "self"
+    ],
+    "record_build_start": [
+      "self",
+      "flow_id",
+      "vertex_id"
+    ],
+    "get_build_duration": [
+      "self",
+      "flow_id",
+      "vertex_id"
+    ],
+    "_format_duration": [
+      "seconds"
+    ],
+    "subscribe": [
+      "self",
+      "flow_id"
+    ],
+    "unsubscribe": [
+      "self",
+      "flow_id",
+      "queue"
+    ],
+    "emit": [
+      "self",
+      "flow_id",
+      "event_type",
+      "data"
+    ],
+    "has_listeners": [
+      "self",
+      "flow_id"
+    ]
+  },
+  "get_webhook_event_manager": [],
+  "webhook_event_manager": [],
+  "WebhookForwardingQueue": {
+    "__init__": [
+      "self",
+      "flow_id",
+      "run_id"
+    ],
+    "put_nowait": [
+      "self",
+      "item"
+    ],
+    "_emit_async": [
+      "self",
+      "event_type",
+      "event_payload"
+    ]
+  },
+  "create_webhook_event_manager": [
+    "flow_id",
+    "run_id"
+  ],
+  "get_service": [
+    "service_type",
+    "default"
+  ],
+  "get_telemetry_service": [],
+  "get_tracing_service": [],
+  "get_state_service": [],
+  "get_storage_service": [],
+  "get_variable_service": [],
+  "is_settings_service_initialized": [],
+  "get_settings_service": [],
+  "get_db_service": [],
+  "get_session": [],
+  "session_scope": [],
+  "get_cache_service": [],
+  "get_shared_component_cache_service": [],
+  "get_session_service": [],
+  "get_task_service": [],
+  "get_chat_service": [],
+  "get_store_service": [],
+  "get_queue_service": [],
+  "get_auth_service": [],
+  "get_job_service": [],
+  "get_or_create_super_user": [
+    "session",
+    "username",
+    "password",
+    "is_default"
+  ],
+  "setup_superuser": [
+    "settings_service",
+    "session"
+  ],
+  "teardown_superuser": [
+    "settings_service",
+    "session"
+  ],
+  "teardown_services": [],
+  "clean_transactions": [
+    "settings_service",
+    "session"
+  ],
+  "clean_vertex_builds": [
+    "settings_service",
+    "session"
+  ],
+  "register_all_service_factories": [],
+  "initialize_services": [],
+  "ServiceFactory": {
+    "__init__": [
+      "self",
+      "service_class"
+    ],
+    "create": [
+      "self"
+    ]
+  },
+  "hash_factory": [
+    "factory"
+  ],
+  "hash_dict": [
+    "d"
+  ],
+  "hash_infer_service_types_args": [
+    "factory",
+    "available_services"
+  ],
+  "infer_service_types": [
+    "factory",
+    "available_services"
+  ],
+  "import_all_services_into_a_dict": [],
+  "Service": {
+    "get_schema": [
+      "self"
+    ],
+    "teardown": [
+      "self"
+    ],
+    "set_ready": [
+      "self"
+    ]
+  },
+  "ServiceType": {
+    "AUTH_SERVICE": [],
+    "CACHE_SERVICE": [],
+    "SHARED_COMPONENT_CACHE_SERVICE": [],
+    "SETTINGS_SERVICE": [],
+    "DATABASE_SERVICE": [],
+    "CHAT_SERVICE": [],
+    "SESSION_SERVICE": [],
+    "TASK_SERVICE": [],
+    "STORE_SERVICE": [],
+    "VARIABLE_SERVICE": [],
+    "STORAGE_SERVICE": [],
+    "STATE_SERVICE": [],
+    "TRACING_SERVICE": [],
+    "TELEMETRY_SERVICE": [],
+    "JOB_QUEUE_SERVICE": [],
+    "MCP_COMPOSER_SERVICE": [],
+    "JOB_SERVICE": []
+  },
+  "session_id_generator": [
+    "size"
+  ],
+  "compute_dict_hash": [
+    "graph_data"
+  ],
+  "SessionServiceFactory": {
+    "__init__": [
+      "self"
+    ],
+    "create": [
+      "self",
+      "cache_service"
+    ]
+  },
+  "SessionService": {
+    "name": [],
+    "__init__": [
+      "self",
+      "cache_service"
+    ],
+    "load_session": [
+      "self",
+      "key",
+      "flow_id",
+      "data_graph"
+    ],
+    "build_key": [
+      "session_id",
+      "data_graph"
+    ],
+    "generate_key": [
+      "self",
+      "session_id",
+      "data_graph"
+    ],
+    "update_session": [
+      "self",
+      "session_id",
+      "value"
+    ],
+    "clear_session": [
+      "self",
+      "session_id"
+    ]
+  },
+  "JobServiceFactory": {
+    "__init__": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ]
+  },
+  "JobService": {
+    "name": [],
+    "__init__": [
+      "self"
+    ],
+    "get_jobs_by_flow_id": [
+      "self",
+      "flow_id",
+      "page",
+      "page_size"
+    ],
+    "get_job_by_job_id": [
+      "self",
+      "job_id"
+    ],
+    "create_job": [
+      "self",
+      "job_id",
+      "flow_id",
+      "job_type",
+      "asset_id",
+      "asset_type"
+    ],
+    "update_job_status": [
+      "self",
+      "job_id",
+      "status"
+    ],
+    "get_latest_jobs_by_asset_ids": [
+      "self",
+      "asset_ids"
+    ],
+    "execute_with_status": [
+      "self",
+      "job_id",
+      "run_coro_func"
+    ]
+  },
+  "process_tags_for_post": [
+    "component_dict"
+  ],
+  "update_components_with_user_data": [
+    "components",
+    "store_service",
+    "store_api_key"
+  ],
+  "get_lf_version_from_pypi": [],
+  "process_component_data": [
+    "nodes_list"
+  ],
+  "CustomError": {
+    "__init__": [
+      "self",
+      "detail",
+      "status_code"
+    ]
+  },
+  "UnauthorizedError": {
+    "__init__": [
+      "self",
+      "detail"
+    ]
+  },
+  "ForbiddenError": {
+    "__init__": [
+      "self",
+      "detail"
+    ]
+  },
+  "APIKeyError": {
+    "__init__": [
+      "self",
+      "detail"
+    ]
+  },
+  "FilterError": {
+    "__init__": [
+      "self",
+      "detail"
+    ]
+  },
+  "StoreServiceFactory": {
+    "__init__": [
+      "self"
+    ],
+    "create": [
+      "self",
+      "settings_service"
+    ]
+  },
+  "user_data_context": [
+    "store_service",
+    "api_key"
+  ],
+  "get_id_from_search_string": [
+    "search_string"
+  ],
+  "StoreService": {
+    "name": [],
+    "__init__": [
+      "self",
+      "settings_service"
+    ],
+    "check_api_key": [
+      "self",
+      "api_key"
+    ],
+    "get": [
+      "self",
+      "url",
+      "api_key",
+      "params"
+    ],
+    "call_webhook": [
+      "self",
+      "api_key",
+      "webhook_url",
+      "component_id"
+    ],
+    "build_tags_filter": [
+      "tags"
+    ],
+    "count_components": [
+      "self",
+      "filter_conditions"
+    ],
+    "build_search_filter_conditions": [
+      "query"
+    ],
+    "build_filter_conditions": [
+      "self"
+    ],
+    "build_liked_filter": [],
+    "query_components": [
+      "self"
+    ],
+    "get_liked_by_user_components": [
+      "self",
+      "component_ids",
+      "api_key"
+    ],
+    "get_components_in_users_collection": [
+      "self",
+      "component_ids",
+      "api_key"
+    ],
+    "download": [
+      "self",
+      "api_key",
+      "component_id"
+    ],
+    "upload": [
+      "self",
+      "api_key",
+      "component_data"
+    ],
+    "update": [
+      "self",
+      "api_key",
+      "component_id",
+      "component_data"
+    ],
+    "get_tags": [
+      "self"
+    ],
+    "get_user_likes": [
+      "self",
+      "api_key"
+    ],
+    "get_component_likes_count": [
+      "self",
+      "component_id",
+      "api_key"
+    ],
+    "like_component": [
+      "self",
+      "api_key",
+      "component_id"
+    ],
+    "get_list_component_response_model": [
+      "self"
+    ]
+  },
+  "TagResponse": {},
+  "UsersLikesResponse": {},
+  "CreateComponentResponse": {},
+  "TagsIdResponse": {},
+  "ListComponentResponse": {
+    "tags_to_list": [
+      "cls",
+      "v"
+    ]
+  },
+  "ListComponentResponseModel": {},
+  "DownloadComponentResponse": {},
+  "StoreComponentCreate": {},
+  "TransactionServiceFactory": {
+    "__init__": [
+      "self"
+    ],
+    "create": [
+      "self",
+      "settings_service"
+    ]
+  },
+  "TransactionService": {
+    "name": [],
+    "__init__": [
+      "self",
+      "settings_service"
+    ],
+    "log_transaction": [
+      "self",
+      "flow_id",
+      "vertex_id",
+      "inputs",
+      "outputs",
+      "status",
+      "target_id",
+      "error"
+    ],
+    "is_enabled": [
+      "self"
+    ]
+  },
+  "NoopSession": {
+    "bind": [],
+    "add": [
+      "self"
+    ],
+    "commit": [
+      "self"
+    ],
+    "rollback": [
+      "self"
+    ],
+    "execute": [
+      "self"
+    ],
+    "query": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "refresh": [
+      "self"
+    ],
+    "delete": [
+      "self"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self",
+      "exc_type",
+      "exc",
+      "tb"
+    ],
+    "get": [
+      "self"
+    ],
+    "exec": [
+      "self"
+    ]
+  },
+  "initialize_database": [],
+  "session_getter": [
+    "db_service"
+  ],
+  "TableResults": {},
+  "DatabaseServiceFactory": {
+    "__init__": [
+      "self"
+    ],
+    "create": [
+      "self",
+      "settings_service"
+    ]
+  },
+  "DatabaseService": {
+    "name": [],
+    "__init__": [
+      "self",
+      "settings_service"
+    ],
+    "initialize_alembic_log_file": [
+      "self"
+    ],
+    "reload_engine": [
+      "self"
+    ],
+    "_sanitize_database_url": [
+      "self"
+    ],
+    "_build_connection_kwargs": [
+      "self"
+    ],
+    "_create_engine": [
+      "self"
+    ],
+    "_create_engine_with_retry": [
+      "self"
+    ],
+    "_get_connect_args": [
+      "self"
+    ],
+    "on_connection": [
+      "self",
+      "dbapi_connection",
+      "_connection_record"
+    ],
+    "_with_session": [
+      "self"
+    ],
+    "assign_orphaned_flows_to_superuser": [
+      "self"
+    ],
+    "_generate_unique_flow_name": [
+      "original_name",
+      "existing_names"
+    ],
+    "_check_schema_health": [
+      "connection"
+    ],
+    "check_schema_health": [
+      "self"
+    ],
+    "init_alembic": [
+      "alembic_cfg"
+    ],
+    "_run_migrations": [
+      "self",
+      "should_initialize_alembic",
+      "fix"
+    ],
+    "run_migrations": [
+      "self"
+    ],
+    "try_downgrade_upgrade_until_success": [
+      "alembic_cfg",
+      "retries"
+    ],
+    "run_migrations_test": [
+      "self"
+    ],
+    "check_table": [
+      "connection",
+      "model"
+    ],
+    "_create_db_and_tables": [
+      "connection"
+    ],
+    "create_db_and_tables_with_retry": [
+      "self"
+    ],
+    "create_db_and_tables": [
+      "self"
+    ],
+    "teardown": [
+      "self"
+    ]
+  },
+  "orjson_dumps": [
+    "v"
+  ],
+  "JobStatus": {
+    "QUEUED": [],
+    "IN_PROGRESS": [],
+    "COMPLETED": [],
+    "FAILED": [],
+    "CANCELLED": [],
+    "TIMED_OUT": []
+  },
+  "JobType": {
+    "WORKFLOW": [],
+    "INGESTION": [],
+    "EVALUATION": []
+  },
+  "JobBase": {},
+  "Job": {
+    "__tablename__": []
+  },
+  "get_jobs_by_flow_id": [
+    "db",
+    "flow_id",
+    "page",
+    "size"
+  ],
+  "get_job_by_job_id": [
+    "db",
+    "job_id"
+  ],
+  "update_job_status": [
+    "db",
+    "job_id",
+    "status"
+  ],
+  "get_latest_jobs_by_asset_ids": [
+    "db",
+    "asset_ids"
+  ],
+  "utc_now": [],
+  "ApiKeyBase": {},
+  "ApiKey": {},
+  "ApiKeyCreate": {
+    "set_created_at": [
+      "cls",
+      "v"
+    ]
+  },
+  "UnmaskedApiKeyRead": {},
+  "ApiKeyRead": {
+    "mask_api_key": [
+      "cls",
+      "v"
+    ]
+  },
+  "get_api_keys": [
+    "session",
+    "user_id"
+  ],
+  "create_api_key": [
+    "session",
+    "api_key_create",
+    "user_id"
+  ],
+  "delete_api_key": [
+    "session",
+    "api_key_id",
+    "user_id"
+  ],
+  "check_key": [
+    "session",
+    "api_key"
+  ],
+  "_check_key_from_db": [
+    "session",
+    "api_key",
+    "settings_service"
+  ],
+  "_check_key_from_env": [
+    "session",
+    "api_key",
+    "settings_service"
+  ],
+  "DEFAULT_FOLDER_DESCRIPTION": [],
+  "DEFAULT_FOLDER_NAME": [],
+  "LEGACY_FOLDER_NAMES": [],
+  "create_default_folder_if_it_doesnt_exist": [
+    "session",
+    "user_id"
+  ],
+  "get_default_folder_id": [
+    "session",
+    "user_id"
+  ],
+  "FolderBase": {},
+  "Folder": {
+    "__table_args__": []
+  },
+  "FolderCreate": {},
+  "FolderRead": {},
+  "FolderReadWithFlows": {},
+  "FolderUpdate": {},
+  "FolderWithPaginatedFlows": {},
+  "MessageBase": {
+    "serialize_timestamp": [
+      "self",
+      "value"
+    ],
+    "validate_files": [
+      "cls",
+      "value"
+    ],
+    "validate_session_id": [
+      "cls",
+      "value"
+    ],
+    "from_message": [
+      "cls",
+      "message",
+      "flow_id"
+    ]
+  },
+  "MessageTable": {
+    "model_config": [],
+    "__tablename__": [],
+    "validate_flow_id": [
+      "cls",
+      "value"
+    ],
+    "validate_properties_or_content_blocks": [
+      "cls",
+      "value"
+    ],
+    "serialize_properties_or_content_blocks": [
+      "cls",
+      "value"
+    ]
+  },
+  "MessageRead": {},
+  "MessageCreate": {},
+  "MessageUpdate": {},
+  "_update_message": [
+    "message_id",
+    "message"
+  ],
+  "update_message": [
+    "message_id",
+    "message"
+  ],
+  "SpanKind": {
+    "INTERNAL": [],
+    "CLIENT": [],
+    "SERVER": [],
+    "PRODUCER": [],
+    "CONSUMER": []
+  },
+  "SpanType": {
+    "CHAIN": [],
+    "LLM": [],
+    "TOOL": [],
+    "RETRIEVER": [],
+    "EMBEDDING": [],
+    "PARSER": [],
+    "AGENT": []
+  },
+  "SpanStatus": {
+    "UNSET": [],
+    "OK": [],
+    "ERROR": []
+  },
+  "TraceBase": {
+    "model_config": [],
+    "validate_flow_id": [
+      "cls",
+      "value"
+    ]
+  },
+  "TraceTable": {
+    "__tablename__": []
+  },
+  "SpanReadResponse": {
+    "model_config": []
+  },
+  "TraceRead": {
+    "model_config": []
+  },
+  "TraceSummaryRead": {
+    "model_config": []
+  },
+  "TraceListResponse": {},
+  "TraceCreate": {},
+  "SpanBase": {
+    "model_config": [],
+    "serialize_inputs": [
+      "self",
+      "data"
+    ],
+    "serialize_outputs": [
+      "self",
+      "data"
+    ],
+    "serialize_attributes": [
+      "self",
+      "data"
+    ]
+  },
+  "SpanTable": {
+    "__tablename__": []
+  },
+  "SpanCreate": {},
+  "SpanUpdate": {},
+  "get_webhook_component_in_flow": [
+    "flow_data"
+  ],
+  "get_all_webhook_components_in_flow": [
+    "flow_data"
+  ],
+  "get_components_versions": [
+    "flow"
+  ],
+  "get_outdated_components": [
+    "flow"
+  ],
+  "HEX_COLOR_LENGTH": [],
+  "AccessTypeEnum": {
+    "PRIVATE": [],
+    "PUBLIC": []
+  },
+  "FlowBase": {
+    "__mapper_args__": [],
+    "validate_endpoint_name": [
+      "cls",
+      "v"
+    ],
+    "validate_icon_bg_color": [
+      "cls",
+      "v"
+    ],
+    "validate_icon_atr": [
+      "cls",
+      "v"
+    ],
+    "validate_json": [
+      "cls",
+      "v"
+    ],
+    "serialize_datetime": [
+      "self",
+      "value"
+    ],
+    "validate_dt": [
+      "cls",
+      "v"
+    ]
+  },
+  "Flow": {
+    "to_data": [
+      "self"
+    ],
+    "__table_args__": []
+  },
+  "FlowCreate": {},
+  "FlowRead": {},
+  "FlowHeader": {
+    "validate_flow_header": [
+      "cls",
+      "value",
+      "info"
+    ]
+  },
+  "FlowUpdate": {
+    "validate_endpoint_name": [
+      "cls",
+      "v"
+    ]
+  },
+  "Tags": {
+    "CHATBOTS": [],
+    "AGENTS": []
+  },
+  "UserOptin": {},
+  "User": {},
+  "UserCreate": {},
+  "UserRead": {},
+  "UserUpdate": {},
+  "get_user_by_username": [
+    "db",
+    "username"
+  ],
+  "get_user_by_id": [
+    "db",
+    "user_id"
+  ],
+  "update_user": [
+    "user_db",
+    "user",
+    "db"
+  ],
+  "update_user_last_login_at": [
+    "user_id",
+    "db"
+  ],
+  "get_all_superusers": [
+    "db"
+  ],
+  "get_file_by_id": [
+    "db",
+    "file_id"
+  ],
+  "SSOUserProfile": {
+    "__tablename__": [],
+    "__table_args__": []
+  },
+  "SSOConfig": {
+    "__tablename__": []
+  },
+  "VertexBuildBase": {
+    "validate_flow_id": [
+      "cls",
+      "value"
+    ],
+    "serialize_timestamp": [
+      "cls",
+      "value"
+    ],
+    "serialize_data": [
+      "self",
+      "data"
+    ],
+    "serialize_artifacts": [
+      "self",
+      "data"
+    ],
+    "serialize_params": [
+      "self",
+      "data"
+    ]
+  },
+  "VertexBuildTable": {
+    "__tablename__": []
+  },
+  "VertexBuildMapModel": {
+    "from_list_of_dicts": [
+      "cls",
+      "vertex_build_dicts"
+    ]
+  },
+  "get_vertex_builds_by_flow_id": [
+    "db",
+    "flow_id",
+    "limit"
+  ],
+  "log_vertex_build": [
+    "db",
+    "vertex_build"
+  ],
+  "delete_vertex_builds_by_flow_id": [
+    "db",
+    "flow_id"
+  ],
+  "get_vertex_builds_by_job_id": [
+    "db",
+    "job_id"
+  ],
+  "SENSITIVE_KEY_NAMES": [],
+  "SENSITIVE_KEYS_PATTERN": [],
+  "EXCLUDED_KEYS": [],
+  "MIN_LENGTH_FOR_PARTIAL_MASK": [],
+  "_mask_sensitive_value": [
+    "value"
+  ],
+  "_is_sensitive_key": [
+    "key"
+  ],
+  "_sanitize_dict": [
+    "data"
+  ],
+  "_sanitize_list": [
+    "data"
+  ],
+  "sanitize_data": [
+    "data"
+  ],
+  "TransactionBase": {
+    "__init__": [
+      "self"
+    ],
+    "validate_flow_id": [
+      "cls",
+      "value"
+    ],
+    "serialize_inputs": [
+      "self",
+      "data"
+    ],
+    "serialize_outputs": [
+      "self",
+      "data"
+    ]
+  },
+  "TransactionTable": {
+    "__tablename__": []
+  },
+  "TransactionReadResponse": {},
+  "TransactionLogsResponse": {
+    "model_config": [],
+    "serialize_inputs": [
+      "self",
+      "data"
+    ],
+    "serialize_outputs": [
+      "self",
+      "data"
+    ]
+  },
+  "get_transactions_by_flow_id": [
+    "db",
+    "flow_id",
+    "limit"
+  ],
+  "log_transaction": [
+    "db",
+    "transaction"
+  ],
+  "transform_transaction_table": [
+    "transaction"
+  ],
+  "transform_transaction_table_for_logs": [
+    "transaction"
+  ],
+  "VariableBase": {},
+  "Variable": {},
+  "VariableCreate": {},
+  "VariableRead": {
+    "validate_value": [
+      "cls",
+      "value",
+      "info"
+    ]
+  },
+  "VariableUpdate": {},
+  "JobQueueServiceFactory": {
+    "__init__": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ]
+  },
+  "JobQueueNotFoundError": {
+    "__init__": [
+      "self",
+      "job_id"
+    ]
+  },
+  "JobQueueService": {
+    "name": [],
+    "__init__": [
+      "self"
+    ],
+    "is_started": [
+      "self"
+    ],
+    "set_ready": [
+      "self"
+    ],
+    "start": [
+      "self"
+    ],
+    "stop": [
+      "self"
+    ],
+    "teardown": [
+      "self"
+    ],
+    "create_queue": [
+      "self",
+      "job_id"
+    ],
+    "start_job": [
+      "self",
+      "job_id",
+      "task_coro"
+    ],
+    "get_queue_data": [
+      "self",
+      "job_id"
+    ],
+    "cleanup_job": [
+      "self",
+      "job_id"
+    ],
+    "_periodic_cleanup": [
+      "self"
+    ],
+    "_cleanup_old_queues": [
+      "self"
+    ],
+    "_create_default_event_manager": [
+      "self",
+      "queue"
+    ]
+  },
+  "CHAT_OUTPUT_NAMES": [],
+  "CHAT_INPUT_NAMES": [],
+  "AGENT_NAMES": [],
+  "FlowMetadata": {},
+  "OpenlayerTracer": {
+    "__init__": [
+      "self",
+      "trace_name",
+      "trace_type",
+      "project_name",
+      "trace_id",
+      "user_id",
+      "session_id"
+    ],
+    "_parse_trace_name": [
+      "trace_name"
+    ],
+    "ready": [
+      "self"
+    ],
+    "setup_openlayer": [
+      "self",
+      "config"
+    ],
+    "add_trace": [
+      "self",
+      "trace_id",
+      "trace_name",
+      "trace_type",
+      "inputs",
+      "metadata",
+      "vertex"
+    ],
+    "end_trace": [
+      "self",
+      "trace_id",
+      "trace_name",
+      "outputs",
+      "error",
+      "logs"
+    ],
+    "end": [
+      "self",
+      "inputs",
+      "outputs",
+      "error",
+      "metadata"
+    ],
+    "_cleanup_sdk_context": [
+      "self"
+    ],
+    "_aggregate_llm_data": [
+      "self",
+      "trace_data"
+    ],
+    "_extract_flow_metadata": [
+      "self",
+      "components",
+      "error"
+    ],
+    "_safe_get_input": [
+      "self",
+      "step",
+      "key",
+      "default"
+    ],
+    "_integrate_langchain_traces": [
+      "self"
+    ],
+    "_convert_langchain_step": [
+      "self",
+      "step"
+    ],
+    "_resolve_root_input": [
+      "self",
+      "flow_inputs",
+      "extracted_metadata"
+    ],
+    "_extract_input_from_components": [
+      "self",
+      "flow_inputs"
+    ],
+    "_resolve_root_output": [
+      "self",
+      "flow_outputs",
+      "error",
+      "extracted_metadata"
+    ],
+    "_build_and_add_hierarchy": [
+      "self",
+      "flow_inputs",
+      "flow_outputs",
+      "error",
+      "flow_metadata"
+    ],
+    "_convert_to_openlayer_types": [
+      "self",
+      "io_dict"
+    ],
+    "_convert_to_openlayer_type": [
+      "self",
+      "value"
+    ],
+    "get_langchain_callback": [
+      "self"
+    ],
+    "_sanitize_flow_name": [
+      "flow_name"
+    ],
+    "_get_config": [
+      "trace_name"
+    ]
+  },
+  "LangFuseTracer": {
+    "__init__": [
+      "self",
+      "trace_name",
+      "trace_type",
+      "project_name",
+      "trace_id",
+      "user_id",
+      "session_id"
+    ],
+    "ready": [
+      "self"
+    ],
+    "setup_langfuse": [
+      "self",
+      "config"
+    ],
+    "add_trace": [
+      "self",
+      "trace_id",
+      "trace_name",
+      "trace_type",
+      "inputs",
+      "metadata",
+      "vertex"
+    ],
+    "end_trace": [
+      "self",
+      "trace_id",
+      "trace_name",
+      "outputs",
+      "error",
+      "logs"
+    ],
+    "end": [
+      "self",
+      "inputs",
+      "outputs",
+      "error",
+      "metadata"
+    ],
+    "get_langchain_callback": [
+      "self"
+    ],
+    "_get_config": []
+  },
+  "convert_to_langchain_type": [
+    "value"
+  ],
+  "convert_to_langchain_types": [
+    "io_dict"
+  ],
+  "TYPE_MAP": [],
+  "NativeTracer": {
+    "__init__": [
+      "self",
+      "trace_name",
+      "trace_type",
+      "project_name",
+      "trace_id",
+      "flow_id",
+      "user_id",
+      "session_id"
+    ],
+    "_is_enabled": [],
+    "ready": [
+      "self"
+    ],
+    "add_trace": [
+      "self",
+      "trace_id",
+      "trace_name",
+      "trace_type",
+      "inputs",
+      "metadata",
+      "vertex"
+    ],
+    "end_trace": [
+      "self",
+      "trace_id",
+      "trace_name",
+      "outputs",
+      "error",
+      "logs"
+    ],
+    "end": [
+      "self",
+      "inputs",
+      "outputs",
+      "error",
+      "metadata"
+    ],
+    "wait_for_flush": [
+      "self"
+    ],
+    "_flush_to_database": [
+      "self",
+      "error"
+    ],
+    "get_langchain_callback": [
+      "self"
+    ],
+    "add_langchain_span": [
+      "self",
+      "span_id",
+      "name",
+      "span_type",
+      "inputs",
+      "parent_span_id",
+      "model_name",
+      "provider"
+    ],
+    "end_langchain_span": [
+      "self",
+      "span_id",
+      "outputs",
+      "error",
+      "latency_ms",
+      "prompt_tokens",
+      "completion_tokens",
+      "total_tokens"
+    ],
+    "_build_completed_span": [],
+    "_map_trace_type": [
+      "trace_type"
+    ]
+  },
+  "_trace_to_base_fields": [
+    "trace",
+    "total_tokens",
+    "summary"
+  ],
+  "fetch_trace_summary_data": [
+    "session",
+    "trace_ids"
+  ],
+  "fetch_traces": [
+    "user_id",
+    "flow_id",
+    "session_id",
+    "status",
+    "query",
+    "start_time",
+    "end_time",
+    "page",
+    "size"
+  ],
+  "fetch_single_trace": [
+    "user_id",
+    "trace_id"
+  ],
+  "LangWatchTracer": {
+    "tracer_provider": [],
+    "__init__": [
+      "self",
+      "trace_name",
+      "trace_type",
+      "project_name",
+      "trace_id"
+    ],
+    "ready": [
+      "self"
+    ],
+    "setup_langwatch": [
+      "self"
+    ],
+    "add_trace": [
+      "self",
+      "trace_id",
+      "trace_name",
+      "trace_type",
+      "inputs",
+      "metadata",
+      "vertex"
+    ],
+    "end_trace": [
+      "self",
+      "trace_id",
+      "trace_name",
+      "outputs",
+      "error",
+      "logs"
+    ],
+    "end": [
+      "self",
+      "inputs",
+      "outputs",
+      "error",
+      "metadata"
+    ],
+    "_convert_to_langwatch_types": [
+      "self",
+      "io_dict"
+    ],
+    "_convert_to_langwatch_type": [
+      "self",
+      "value"
+    ],
+    "get_langchain_callback": [
+      "self"
+    ]
+  },
+  "sanitize_query_string": [
+    "value",
+    "max_len"
+  ],
+  "TracingServiceFactory": {
+    "__init__": [
+      "self"
+    ],
+    "create": [
+      "self",
+      "settings_service"
+    ]
+  },
+  "LANGFLOW_SPAN_NAMESPACE": [],
+  "resolve_span_uuids": [
+    "completed_spans",
+    "trace_id"
+  ],
+  "topological_sort_spans": [
+    "resolved"
+  ],
+  "CollectingSpanProcessor": {
+    "__init__": [
+      "self"
+    ],
+    "on_start": [
+      "self",
+      "span",
+      "parent_context"
+    ],
+    "on_end": [
+      "self",
+      "span"
+    ],
+    "shutdown": [
+      "self"
+    ],
+    "force_flush": [
+      "self",
+      "timeout_millis"
+    ]
+  },
+  "ArizePhoenixTracer": {
+    "__init__": [
+      "self",
+      "trace_name",
+      "trace_type",
+      "project_name",
+      "trace_id",
+      "session_id"
+    ],
+    "ready": [
+      "self"
+    ],
+    "setup_arize_phoenix": [
+      "self"
+    ],
+    "add_trace": [
+      "self",
+      "trace_id",
+      "trace_name",
+      "trace_type",
+      "inputs",
+      "metadata",
+      "vertex"
+    ],
+    "end_trace": [
+      "self",
+      "trace_id",
+      "trace_name",
+      "outputs",
+      "error",
+      "logs"
+    ],
+    "end": [
+      "self",
+      "inputs",
+      "outputs",
+      "error",
+      "metadata"
+    ],
+    "_convert_to_arize_phoenix_types": [
+      "self",
+      "io_dict"
+    ],
+    "_convert_to_arize_phoenix_type": [
+      "self",
+      "value"
+    ],
+    "_error_to_string": [
+      "error"
+    ],
+    "_get_current_timestamp": [],
+    "_safe_json_dumps": [
+      "obj"
+    ],
+    "_set_span_status": [
+      "self",
+      "current_span",
+      "error"
+    ],
+    "get_langchain_callback": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "__del__": [
+      "self"
+    ]
+  },
+  "get_distributed_trace_headers": [
+    "trace_id",
+    "span_id"
+  ],
+  "OpikTracer": {
+    "__init__": [
+      "self",
+      "trace_name",
+      "trace_type",
+      "project_name",
+      "trace_id",
+      "user_id",
+      "session_id"
+    ],
+    "ready": [
+      "self"
+    ],
+    "_setup_opik": [
+      "self",
+      "config",
+      "trace_id"
+    ],
+    "_check_opik_auth": [
+      "self",
+      "opik_client"
+    ],
+    "add_trace": [
+      "self",
+      "trace_id",
+      "trace_name",
+      "trace_type",
+      "inputs",
+      "metadata",
+      "vertex"
+    ],
+    "end_trace": [
+      "self",
+      "trace_id",
+      "trace_name",
+      "outputs",
+      "error",
+      "logs"
+    ],
+    "end": [
+      "self",
+      "inputs",
+      "outputs",
+      "error",
+      "metadata"
+    ],
+    "get_langchain_callback": [
+      "self"
+    ],
+    "_convert_to_opik_types": [
+      "self",
+      "io_dict"
+    ],
+    "_convert_to_opik_type": [
+      "self",
+      "value"
+    ],
+    "_get_config": []
+  },
+  "NativeCallbackHandler": {
+    "__init__": [
+      "self",
+      "tracer",
+      "parent_span_id"
+    ],
+    "_resolve_parent_span_id": [
+      "self",
+      "parent_run_id"
+    ],
+    "_get_span_id": [
+      "self",
+      "run_id"
+    ],
+    "_get_start_time": [
+      "self",
+      "run_id"
+    ],
+    "_calculate_latency": [
+      "self",
+      "run_id"
+    ],
+    "_cleanup_run": [
+      "self",
+      "run_id"
+    ],
+    "_extract_name": [
+      "self",
+      "serialized",
+      "fallback"
+    ],
+    "_extract_llm_model_name": [
+      "kwargs"
+    ],
+    "_detect_provider_from_model": [
+      "model_name"
+    ],
+    "_build_llm_span_name": [
+      "operation",
+      "model_name"
+    ],
+    "_handle_error": [
+      "self",
+      "run_id",
+      "error"
+    ],
+    "on_llm_start": [
+      "self",
+      "serialized",
+      "prompts"
+    ],
+    "on_chat_model_start": [
+      "self",
+      "serialized",
+      "messages"
+    ],
+    "on_llm_end": [
+      "self",
+      "response"
+    ],
+    "_extract_token_usage": [
+      "self",
+      "response"
+    ],
+    "_extract_generations": [
+      "self",
+      "response"
+    ],
+    "on_llm_error": [
+      "self",
+      "error"
+    ],
+    "on_chain_start": [
+      "self",
+      "serialized",
+      "inputs"
+    ],
+    "on_chain_end": [
+      "self",
+      "outputs"
+    ],
+    "on_chain_error": [
+      "self",
+      "error"
+    ],
+    "on_tool_start": [
+      "self",
+      "serialized",
+      "input_str"
+    ],
+    "on_tool_end": [
+      "self",
+      "output"
+    ],
+    "on_tool_error": [
+      "self",
+      "error"
+    ],
+    "on_agent_action": [
+      "self",
+      "action"
+    ],
+    "on_agent_finish": [
+      "self",
+      "finish"
+    ],
+    "on_retriever_start": [
+      "self",
+      "serialized",
+      "query"
+    ],
+    "on_retriever_end": [
+      "self",
+      "documents"
+    ],
+    "on_retriever_error": [
+      "self",
+      "error"
+    ]
+  },
+  "BaseTracer": {
+    "__init__": [
+      "self",
+      "trace_name",
+      "trace_type",
+      "project_name",
+      "trace_id",
+      "user_id",
+      "session_id"
+    ],
+    "ready": [
+      "self"
+    ],
+    "add_trace": [
+      "self",
+      "trace_id",
+      "trace_name",
+      "trace_type",
+      "inputs",
+      "metadata",
+      "vertex"
+    ],
+    "end_trace": [
+      "self",
+      "trace_id",
+      "trace_name",
+      "outputs",
+      "error",
+      "logs"
+    ],
+    "end": [
+      "self",
+      "inputs",
+      "outputs",
+      "error",
+      "metadata"
+    ],
+    "get_langchain_callback": [
+      "self"
+    ]
+  },
+  "LangSmithTracer": {
+    "__init__": [
+      "self",
+      "trace_name",
+      "trace_type",
+      "project_name",
+      "trace_id"
+    ],
+    "ready": [
+      "self"
+    ],
+    "get_run_type": [
+      "self",
+      "run_type"
+    ],
+    "setup_langsmith": [
+      "self"
+    ],
+    "add_trace": [
+      "self",
+      "trace_id",
+      "trace_name",
+      "trace_type",
+      "inputs",
+      "metadata",
+      "vertex"
+    ],
+    "_convert_to_langchain_types": [
+      "self",
+      "io_dict"
+    ],
+    "_convert_to_langchain_type": [
+      "self",
+      "value"
+    ],
+    "end_trace": [
+      "self",
+      "trace_id",
+      "trace_name",
+      "outputs",
+      "error",
+      "logs"
+    ],
+    "_error_to_string": [
+      "error"
+    ],
+    "end": [
+      "self",
+      "inputs",
+      "outputs",
+      "error",
+      "metadata"
+    ],
+    "run_link": [
+      "self"
+    ],
+    "get_langchain_callback": [
+      "self"
+    ]
+  },
+  "_get_langsmith_tracer": [],
+  "_get_langwatch_tracer": [],
+  "_get_langfuse_tracer": [],
+  "_get_arize_phoenix_tracer": [],
+  "_get_opik_tracer": [],
+  "_get_traceloop_tracer": [],
+  "_get_native_tracer": [],
+  "_get_openlayer_tracer": [],
+  "TraceContext": {
+    "__init__": [
+      "self",
+      "run_id",
+      "run_name",
+      "project_name",
+      "user_id",
+      "session_id",
+      "flow_id"
+    ]
+  },
+  "ComponentTraceContext": {
+    "__init__": [
+      "self",
+      "trace_id",
+      "trace_name",
+      "trace_type",
+      "vertex",
+      "inputs",
+      "metadata"
+    ]
+  },
+  "TracingService": {
+    "name": [],
+    "__init__": [
+      "self",
+      "settings_service"
+    ],
+    "_trace_worker": [
+      "self",
+      "trace_context"
+    ],
+    "_start": [
+      "self",
+      "trace_context"
+    ],
+    "_initialize_langsmith_tracer": [
+      "self",
+      "trace_context"
+    ],
+    "_initialize_langwatch_tracer": [
+      "self",
+      "trace_context"
+    ],
+    "_initialize_langfuse_tracer": [
+      "self",
+      "trace_context"
+    ],
+    "_initialize_arize_phoenix_tracer": [
+      "self",
+      "trace_context"
+    ],
+    "_initialize_opik_tracer": [
+      "self",
+      "trace_context"
+    ],
+    "_initialize_traceloop_tracer": [
+      "self",
+      "trace_context"
+    ],
+    "_initialize_native_tracer": [
+      "self",
+      "trace_context"
+    ],
+    "_initialize_openlayer_tracer": [
+      "self",
+      "trace_context"
+    ],
+    "start_tracers": [
+      "self",
+      "run_id",
+      "run_name",
+      "user_id",
+      "session_id",
+      "project_name",
+      "flow_id"
+    ],
+    "_stop": [
+      "self",
+      "trace_context"
+    ],
+    "_end_all_tracers": [
+      "self",
+      "trace_context",
+      "outputs",
+      "error"
+    ],
+    "end_tracers": [
+      "self",
+      "outputs",
+      "error"
+    ],
+    "_cleanup_inputs": [
+      "inputs"
+    ],
+    "_start_component_traces": [
+      "self",
+      "component_trace_context",
+      "trace_context"
+    ],
+    "_end_component_traces": [
+      "self",
+      "component_trace_context",
+      "trace_context",
+      "error"
+    ],
+    "trace_component": [
+      "self",
+      "component",
+      "trace_name",
+      "inputs",
+      "metadata"
+    ],
+    "project_name": [
+      "self"
+    ],
+    "add_log": [
+      "self",
+      "trace_name",
+      "log"
+    ],
+    "set_outputs": [
+      "self",
+      "trace_name",
+      "outputs",
+      "output_metadata"
+    ],
+    "get_tracer": [
+      "self",
+      "tracer_name"
+    ],
+    "get_langchain_callbacks": [
+      "self"
+    ]
+  },
+  "TraceloopTracer": {
+    "__init__": [
+      "self",
+      "trace_name",
+      "trace_type",
+      "project_name",
+      "trace_id",
+      "user_id",
+      "session_id"
+    ],
+    "ready": [
+      "self"
+    ],
+    "_validate_configuration": [
+      "self"
+    ],
+    "_convert_to_traceloop_type": [
+      "self",
+      "value"
+    ],
+    "_convert_to_traceloop_dict": [
+      "self",
+      "io_dict"
+    ],
+    "add_trace": [
+      "self",
+      "trace_id",
+      "trace_name",
+      "trace_type",
+      "inputs",
+      "metadata",
+      "vertex"
+    ],
+    "end_trace": [
+      "self",
+      "trace_id",
+      "trace_name",
+      "outputs",
+      "error",
+      "logs"
+    ],
+    "end": [
+      "self",
+      "inputs",
+      "outputs",
+      "error",
+      "metadata"
+    ],
+    "_get_current_timestamp": [],
+    "get_langchain_callback": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "__del__": [
+      "self"
+    ]
+  },
+  "Log": {
+    "serialize_message": [
+      "self",
+      "value"
+    ]
+  },
+  "_UTC_MIN": [],
+  "_CHAT_INPUT_SPAN_NAME": [],
+  "TraceIO": [],
+  "TraceSummaryData": {},
+  "safe_int_tokens": [
+    "value"
+  ],
+  "span_to_response": [
+    "span"
+  ],
+  "build_span_tree": [
+    "spans"
+  ],
+  "_SpanIORecord": {},
+  "_extract_trace_io": [
+    "records"
+  ],
+  "extract_trace_io_from_spans": [
+    "spans"
+  ],
+  "extract_trace_io_from_rows": [
+    "rows"
+  ],
+  "compute_leaf_token_total": [
+    "span_ids",
+    "parent_ids",
+    "attributes_by_id"
+  ],
+  "StateServiceFactory": {
+    "__init__": [
+      "self"
+    ],
+    "create": [
+      "self",
+      "settings_service"
+    ]
+  },
+  "StateService": {
+    "name": [],
+    "append_state": [
+      "self",
+      "key",
+      "new_state",
+      "run_id"
+    ],
+    "update_state": [
+      "self",
+      "key",
+      "new_state",
+      "run_id"
+    ],
+    "get_state": [
+      "self",
+      "key",
+      "run_id"
+    ],
+    "subscribe": [
+      "self",
+      "key",
+      "observer"
+    ],
+    "unsubscribe": [
+      "self",
+      "key",
+      "observer"
+    ],
+    "notify_observers": [
+      "self",
+      "key",
+      "new_state"
+    ]
+  },
+  "InMemoryStateService": {
+    "__init__": [
+      "self",
+      "settings_service"
+    ],
+    "append_state": [
+      "self",
+      "key",
+      "new_state",
+      "run_id"
+    ],
+    "update_state": [
+      "self",
+      "key",
+      "new_state",
+      "run_id"
+    ],
+    "get_state": [
+      "self",
+      "key",
+      "run_id"
+    ],
+    "subscribe": [
+      "self",
+      "key",
+      "observer"
+    ],
+    "notify_observers": [
+      "self",
+      "key",
+      "new_state"
+    ],
+    "notify_append_observers": [
+      "self",
+      "key",
+      "new_state"
+    ],
+    "unsubscribe": [
+      "self",
+      "key",
+      "observer"
+    ]
+  },
+  "LangflowRunnerExperimental": {
+    "__init__": [
+      "self"
+    ],
+    "run": [
+      "self",
+      "session_id",
+      "flow",
+      "input_value"
+    ],
+    "run_flow": [
+      "self"
+    ],
+    "prepare_flow_and_add_to_db": [
+      "self"
+    ],
+    "process_tweaks": [
+      "self",
+      "flow_dict",
+      "tweaks_values"
+    ],
+    "generate_user": [
+      "self"
+    ],
+    "add_flow_to_db": [
+      "flow_dict",
+      "user_id"
+    ],
+    "run_graph": [
+      "input_value",
+      "input_type",
+      "output_type",
+      "session_id",
+      "graph"
+    ],
+    "create_graph_from_flow": [
+      "session_id",
+      "flow_dict",
+      "user_id"
+    ],
+    "clear_flow_state": [
+      "flow_dict"
+    ],
+    "clear_user_state": [
+      "user_id"
+    ],
+    "init_db_if_needed": [
+      "self"
+    ],
+    "database_exists_check": [],
+    "get_flow_dict": [
+      "flow"
+    ]
+  },
+  "EXPECTED_PATH_PARTS": [],
+  "LocalStorageService": {
+    "__init__": [
+      "self",
+      "session_service",
+      "settings_service"
+    ],
+    "resolve_component_path": [
+      "self",
+      "logical_path"
+    ],
+    "build_full_path": [
+      "self",
+      "flow_id",
+      "file_name"
+    ],
+    "parse_file_path": [
+      "self",
+      "full_path"
+    ],
+    "save_file": [
+      "self",
+      "flow_id",
+      "file_name",
+      "data"
+    ],
+    "get_file": [
+      "self",
+      "flow_id",
+      "file_name"
+    ],
+    "get_file_stream": [
+      "self",
+      "flow_id",
+      "file_name",
+      "chunk_size"
+    ],
+    "list_files": [
+      "self",
+      "flow_id"
+    ],
+    "delete_file": [
+      "self",
+      "flow_id",
+      "file_name"
+    ],
+    "get_file_size": [
+      "self",
+      "flow_id",
+      "file_name"
+    ],
+    "teardown": [
+      "self"
+    ]
+  },
+  "StorageServiceFactory": {
+    "__init__": [
+      "self"
+    ],
+    "create": [
+      "self",
+      "session_service",
+      "settings_service"
+    ]
+  },
+  "S3StorageService": {
+    "__init__": [
+      "self",
+      "session_service",
+      "settings_service"
+    ],
+    "build_full_path": [
+      "self",
+      "flow_id",
+      "file_name"
+    ],
+    "parse_file_path": [
+      "self",
+      "full_path"
+    ],
+    "resolve_component_path": [
+      "self",
+      "logical_path"
+    ],
+    "_get_client": [
+      "self"
+    ],
+    "save_file": [
+      "self",
+      "flow_id",
+      "file_name",
+      "data"
+    ],
+    "get_file": [
+      "self",
+      "flow_id",
+      "file_name"
+    ],
+    "get_file_stream": [
+      "self",
+      "flow_id",
+      "file_name",
+      "chunk_size"
+    ],
+    "list_files": [
+      "self",
+      "flow_id"
+    ],
+    "delete_file": [
+      "self",
+      "flow_id",
+      "file_name"
+    ],
+    "get_file_size": [
+      "self",
+      "flow_id",
+      "file_name"
+    ],
+    "teardown": [
+      "self"
+    ]
+  },
+  "StorageService": {
+    "name": [],
+    "__init__": [
+      "self",
+      "session_service",
+      "settings_service"
+    ],
+    "build_full_path": [
+      "self",
+      "flow_id",
+      "file_name"
+    ],
+    "parse_file_path": [
+      "self",
+      "full_path"
+    ],
+    "set_ready": [
+      "self"
+    ],
+    "save_file": [
+      "self",
+      "flow_id",
+      "file_name",
+      "data"
+    ],
+    "get_file": [
+      "self",
+      "flow_id",
+      "file_name"
+    ],
+    "get_file_stream": [
+      "self",
+      "flow_id",
+      "file_name",
+      "chunk_size"
+    ],
+    "list_files": [
+      "self",
+      "flow_id"
+    ],
+    "get_file_size": [
+      "self",
+      "flow_id",
+      "file_name"
+    ],
+    "delete_file": [
+      "self",
+      "flow_id",
+      "file_name"
+    ],
+    "teardown": [
+      "self"
+    ]
+  },
+  "SharedComponentCacheServiceFactory": {
+    "__init__": [
+      "self"
+    ],
+    "create": [
+      "self",
+      "settings_service"
+    ]
+  },
+  "SharedComponentCacheService": {
+    "name": []
+  },
+  "CACHE_DIR": [],
+  "PREFIX": [],
+  "create_cache_folder": [
+    "func"
+  ],
+  "clear_old_cache_files": [
+    "max_cache_size"
+  ],
+  "filter_json": [
+    "json_data"
+  ],
+  "save_binary_file": [
+    "content",
+    "file_name",
+    "accepted_types"
+  ],
+  "save_uploaded_file": [
+    "file",
+    "folder_name"
+  ],
+  "update_build_status": [
+    "cache_service",
+    "flow_id",
+    "status"
+  ],
+  "AsyncDiskCache": {
+    "__init__": [
+      "self",
+      "cache_dir",
+      "max_size",
+      "expiration_time"
+    ],
+    "get": [
+      "self",
+      "key",
+      "lock"
+    ],
+    "_get": [
+      "self",
+      "key"
+    ],
+    "set": [
+      "self",
+      "key",
+      "value",
+      "lock"
+    ],
+    "_set": [
+      "self",
+      "key",
+      "value"
+    ],
+    "delete": [
+      "self",
+      "key",
+      "lock"
+    ],
+    "_delete": [
+      "self",
+      "key"
+    ],
+    "clear": [
+      "self",
+      "lock"
+    ],
+    "_clear": [
+      "self"
+    ],
+    "upsert": [
+      "self",
+      "key",
+      "value",
+      "lock"
+    ],
+    "_upsert": [
+      "self",
+      "key",
+      "value"
+    ],
+    "contains": [
+      "self",
+      "key"
+    ],
+    "teardown": [
+      "self"
+    ]
+  },
+  "CacheServiceFactory": {
+    "__init__": [
+      "self"
+    ],
+    "create": [
+      "self",
+      "settings_service"
+    ]
+  },
+  "LockType": [],
+  "AsyncLockType": [],
+  "CacheService": {
+    "name": [],
+    "get": [
+      "self",
+      "key",
+      "lock"
+    ],
+    "set": [
+      "self",
+      "key",
+      "value",
+      "lock"
+    ],
+    "upsert": [
+      "self",
+      "key",
+      "value",
+      "lock"
+    ],
+    "delete": [
+      "self",
+      "key",
+      "lock"
+    ],
+    "clear": [
+      "self",
+      "lock"
+    ],
+    "contains": [
+      "self",
+      "key"
+    ],
+    "__contains__": [
+      "self",
+      "key"
+    ],
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "__setitem__": [
+      "self",
+      "key",
+      "value"
+    ],
+    "__delitem__": [
+      "self",
+      "key"
+    ]
+  },
+  "AsyncBaseCacheService": {
+    "name": [],
+    "get": [
+      "self",
+      "key",
+      "lock"
+    ],
+    "set": [
+      "self",
+      "key",
+      "value",
+      "lock"
+    ],
+    "upsert": [
+      "self",
+      "key",
+      "value",
+      "lock"
+    ],
+    "delete": [
+      "self",
+      "key",
+      "lock"
+    ],
+    "clear": [
+      "self",
+      "lock"
+    ],
+    "contains": [
+      "self",
+      "key"
+    ]
+  },
+  "ExternalAsyncBaseCacheService": {
+    "name": [],
+    "is_connected": [
+      "self"
+    ]
+  },
+  "ThreadingInMemoryCache": {
+    "__init__": [
+      "self",
+      "max_size",
+      "expiration_time"
+    ],
+    "get": [
+      "self",
+      "key",
+      "lock"
+    ],
+    "_get_without_lock": [
+      "self",
+      "key"
+    ],
+    "set": [
+      "self",
+      "key",
+      "value",
+      "lock"
+    ],
+    "upsert": [
+      "self",
+      "key",
+      "value",
+      "lock"
+    ],
+    "get_or_set": [
+      "self",
+      "key",
+      "value",
+      "lock"
+    ],
+    "delete": [
+      "self",
+      "key",
+      "lock"
+    ],
+    "clear": [
+      "self",
+      "lock"
+    ],
+    "contains": [
+      "self",
+      "key"
+    ],
+    "__contains__": [
+      "self",
+      "key"
+    ],
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "__setitem__": [
+      "self",
+      "key",
+      "value"
+    ],
+    "__delitem__": [
+      "self",
+      "key"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "RedisCache": {
+    "__init__": [
+      "self",
+      "host",
+      "port",
+      "db",
+      "url",
+      "expiration_time"
+    ],
+    "is_connected": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "key",
+      "lock"
+    ],
+    "set": [
+      "self",
+      "key",
+      "value",
+      "lock"
+    ],
+    "upsert": [
+      "self",
+      "key",
+      "value",
+      "lock"
+    ],
+    "delete": [
+      "self",
+      "key",
+      "lock"
+    ],
+    "clear": [
+      "self",
+      "lock"
+    ],
+    "contains": [
+      "self",
+      "key"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "AsyncInMemoryCache": {
+    "__init__": [
+      "self",
+      "max_size",
+      "expiration_time"
+    ],
+    "get": [
+      "self",
+      "key",
+      "lock"
+    ],
+    "_get": [
+      "self",
+      "key"
+    ],
+    "set": [
+      "self",
+      "key",
+      "value",
+      "lock"
+    ],
+    "_set": [
+      "self",
+      "key",
+      "value"
+    ],
+    "delete": [
+      "self",
+      "key",
+      "lock"
+    ],
+    "_delete": [
+      "self",
+      "key"
+    ],
+    "clear": [
+      "self",
+      "lock"
+    ],
+    "_clear": [
+      "self"
+    ],
+    "upsert": [
+      "self",
+      "key",
+      "value",
+      "lock"
+    ],
+    "_upsert": [
+      "self",
+      "key",
+      "value",
+      "lock"
+    ],
+    "contains": [
+      "self",
+      "key"
+    ]
+  },
+  "AUTO_LOGIN_WARNING": [],
+  "AUTO_LOGIN_ERROR": [],
+  "OAuth2PasswordBearerCookie": {
+    "__call__": [
+      "self",
+      "request"
+    ]
+  },
+  "oauth2_login": [],
+  "API_KEY_NAME": [],
+  "api_key_query": [],
+  "api_key_header": [],
+  "_auth_service": [],
+  "JWTKeyError": {
+    "__init__": [
+      "self",
+      "detail"
+    ]
+  },
+  "get_jwt_verification_key": [
+    "settings_service"
+  ],
+  "get_jwt_signing_key": [
+    "settings_service"
+  ],
+  "api_key_security": [
+    "query_param",
+    "header_param"
+  ],
+  "ws_api_key_security": [
+    "api_key"
+  ],
+  "_auth_error_to_http": [
+    "e"
+  ],
+  "get_current_user": [
+    "token",
+    "query_param",
+    "header_param",
+    "db"
+  ],
+  "get_current_user_from_access_token": [
+    "token",
+    "db"
+  ],
+  "WS_AUTH_REASON": [],
+  "get_current_user_for_websocket": [
+    "websocket",
+    "db"
+  ],
+  "get_current_user_for_sse": [
+    "request",
+    "db"
+  ],
+  "get_optional_user": [
+    "token",
+    "query_param",
+    "header_param",
+    "db"
+  ],
+  "get_webhook_user": [
+    "flow_id",
+    "request"
+  ],
+  "get_current_active_user": [
+    "user"
+  ],
+  "get_current_active_superuser": [
+    "user"
+  ],
+  "get_fernet": [
+    "settings_service"
+  ],
+  "encrypt_api_key": [
+    "api_key",
+    "settings_service"
+  ],
+  "decrypt_api_key": [
+    "encrypted_api_key",
+    "settings_service",
+    "fernet_obj"
+  ],
+  "verify_password": [
+    "plain_password",
+    "hashed_password"
+  ],
+  "get_password_hash": [
+    "password"
+  ],
+  "create_refresh_token": [
+    "refresh_token",
+    "db"
+  ],
+  "create_super_user": [
+    "username",
+    "password",
+    "db"
+  ],
+  "create_user_longterm_token": [
+    "db"
+  ],
+  "get_current_user_mcp": [
+    "token",
+    "query_param",
+    "header_param",
+    "db"
+  ],
+  "get_current_active_user_mcp": [
+    "user"
+  ],
+  "AuthenticationError": {
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "InvalidCredentialsError": {
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "MissingCredentialsError": {
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "InactiveUserError": {
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "InsufficientPermissionsError": {
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "TokenExpiredError": {
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "InvalidTokenError": {
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "AuthServiceFactory": {
+    "name": [],
+    "__init__": [
+      "self"
+    ],
+    "create": [
+      "self",
+      "settings_service"
+    ]
+  },
+  "SENSITIVE_FIELDS": [],
+  "encrypt_auth_settings": [
+    "auth_settings"
+  ],
+  "decrypt_auth_settings": [
+    "auth_settings"
+  ],
+  "is_encrypted": [
+    "value"
+  ],
+  "MINIMUM_KEY_LENGTH": [],
+  "AuthService": {
+    "name": [],
+    "__init__": [
+      "self",
+      "settings_service"
+    ],
+    "settings": [
+      "self"
+    ],
+    "authenticate_with_credentials": [
+      "self",
+      "token",
+      "api_key",
+      "db"
+    ],
+    "_authenticate_with_token": [
+      "self",
+      "token",
+      "db"
+    ],
+    "_authenticate_with_api_key": [
+      "self",
+      "api_key",
+      "db"
+    ],
+    "api_key_security": [
+      "self",
+      "query_param",
+      "header_param",
+      "db"
+    ],
+    "_api_key_security_impl": [
+      "self",
+      "query_param",
+      "header_param",
+      "db",
+      "settings_service"
+    ],
+    "ws_api_key_security": [
+      "self",
+      "api_key"
+    ],
+    "get_current_user": [
+      "self",
+      "token",
+      "query_param",
+      "header_param",
+      "db"
+    ],
+    "get_current_user_from_access_token": [
+      "self",
+      "token",
+      "db"
+    ],
+    "get_current_user_for_websocket": [
+      "self",
+      "token",
+      "api_key",
+      "db"
+    ],
+    "get_current_user_for_sse": [
+      "self",
+      "token",
+      "api_key",
+      "db"
+    ],
+    "get_current_active_user": [
+      "self",
+      "current_user"
+    ],
+    "get_current_active_superuser": [
+      "self",
+      "current_user"
+    ],
+    "get_webhook_user": [
+      "self",
+      "flow_id",
+      "request"
+    ],
+    "verify_password": [
+      "self",
+      "plain_password",
+      "hashed_password"
+    ],
+    "get_password_hash": [
+      "self",
+      "password"
+    ],
+    "create_token": [
+      "self",
+      "data",
+      "expires_delta"
+    ],
+    "create_super_user": [
+      "self",
+      "username",
+      "password",
+      "db"
+    ],
+    "create_user_longterm_token": [
+      "self",
+      "db"
+    ],
+    "create_user_api_key": [
+      "self",
+      "user_id"
+    ],
+    "get_user_id_from_token": [
+      "self",
+      "token"
+    ],
+    "create_user_tokens": [
+      "self",
+      "user_id",
+      "db"
+    ],
+    "create_refresh_token": [
+      "self",
+      "refresh_token",
+      "db"
+    ],
+    "authenticate_user": [
+      "self",
+      "username",
+      "password",
+      "db"
+    ],
+    "_add_padding": [
+      "self",
+      "value"
+    ],
+    "_ensure_valid_key": [
+      "self",
+      "raw_key"
+    ],
+    "_get_fernet": [
+      "self"
+    ],
+    "encrypt_api_key": [
+      "self",
+      "api_key"
+    ],
+    "decrypt_api_key": [
+      "self",
+      "encrypted_api_key"
+    ],
+    "get_current_user_mcp": [
+      "self",
+      "token",
+      "query_param",
+      "header_param",
+      "db"
+    ],
+    "get_current_active_user_mcp": [
+      "self",
+      "current_user"
+    ],
+    "teardown": [
+      "self"
+    ]
+  },
+  "Subject": {
+    "__init__": [
+      "self"
+    ],
+    "attach": [
+      "self",
+      "observer"
+    ],
+    "detach": [
+      "self",
+      "observer"
+    ],
+    "notify": [
+      "self"
+    ]
+  },
+  "AsyncSubject": {
+    "__init__": [
+      "self"
+    ],
+    "attach": [
+      "self",
+      "observer"
+    ],
+    "detach": [
+      "self",
+      "observer"
+    ],
+    "notify": [
+      "self"
+    ]
+  },
+  "cache_service": [],
+  "ChatServiceFactory": {
+    "__init__": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ]
+  },
+  "ChatService": {
+    "name": [],
+    "__init__": [
+      "self"
+    ],
+    "set_cache": [
+      "self",
+      "key",
+      "data",
+      "lock"
+    ],
+    "get_cache": [
+      "self",
+      "key",
+      "lock"
+    ],
+    "clear_cache": [
+      "self",
+      "key",
+      "lock"
+    ]
+  },
+  "GetCache": {
+    "__call__": [
+      "self",
+      "key",
+      "lock"
+    ]
+  },
+  "SetCache": {
+    "__call__": [
+      "self",
+      "key",
+      "data",
+      "lock"
+    ]
+  },
+  "langflow_meter_name": [],
+  "MetricType": {
+    "COUNTER": [],
+    "OBSERVABLE_GAUGE": [],
+    "HISTOGRAM": [],
+    "UP_DOWN_COUNTER": []
+  },
+  "mandatory_label": [],
+  "optional_label": [],
+  "ObservableGaugeWrapper": {
+    "__init__": [
+      "self",
+      "name",
+      "description",
+      "unit"
+    ],
+    "_callback": [
+      "self",
+      "_options"
+    ],
+    "set_value": [
+      "self",
+      "value",
+      "labels"
+    ]
+  },
+  "Metric": {
+    "__init__": [
+      "self",
+      "name",
+      "description",
+      "metric_type",
+      "labels",
+      "unit"
+    ],
+    "validate_labels": [
+      "self",
+      "labels"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ThreadSafeSingletonMetaUsingWeakref": {
+    "__call__": [
+      "cls"
+    ]
+  },
+  "OpenTelemetry": {
+    "_add_metric": [
+      "self",
+      "name",
+      "description",
+      "unit",
+      "metric_type",
+      "labels"
+    ],
+    "_register_metric": [
+      "self"
+    ],
+    "__init__": [
+      "self"
+    ],
+    "_create_metric": [
+      "self",
+      "metric"
+    ],
+    "validate_labels": [
+      "self",
+      "metric_name",
+      "labels"
+    ],
+    "increment_counter": [
+      "self",
+      "metric_name",
+      "labels",
+      "value"
+    ],
+    "up_down_counter": [
+      "self",
+      "metric_name",
+      "value",
+      "labels"
+    ],
+    "update_gauge": [
+      "self",
+      "metric_name",
+      "value",
+      "labels"
+    ],
+    "observe_histogram": [
+      "self",
+      "metric_name",
+      "value",
+      "labels"
+    ],
+    "shutdown": [
+      "self"
+    ]
+  },
+  "TelemetryServiceFactory": {
+    "__init__": [
+      "self"
+    ],
+    "create": [
+      "self",
+      "settings_service"
+    ]
+  },
+  "TelemetryService": {
+    "name": [],
+    "__init__": [
+      "self",
+      "settings_service"
+    ],
+    "telemetry_worker": [
+      "self"
+    ],
+    "send_telemetry_data": [
+      "self",
+      "payload",
+      "path"
+    ],
+    "log_package_run": [
+      "self",
+      "payload"
+    ],
+    "log_package_shutdown": [
+      "self"
+    ],
+    "_queue_event": [
+      "self",
+      "payload"
+    ],
+    "_get_langflow_desktop": [
+      "self"
+    ],
+    "_get_client_type": [
+      "self"
+    ],
+    "_send_email_telemetry": [
+      "self"
+    ],
+    "log_package_version": [
+      "self"
+    ],
+    "log_package_email": [
+      "self",
+      "payload"
+    ],
+    "log_package_playground": [
+      "self",
+      "payload"
+    ],
+    "log_package_component": [
+      "self",
+      "payload"
+    ],
+    "log_package_component_inputs": [
+      "self",
+      "payload"
+    ],
+    "log_component_index": [
+      "self",
+      "payload"
+    ],
+    "log_exception": [
+      "self",
+      "exc",
+      "context"
+    ],
+    "start": [
+      "self"
+    ],
+    "flush": [
+      "self"
+    ],
+    "_cancel_task": [
+      "task",
+      "cancel_msg"
+    ],
+    "stop": [
+      "self"
+    ],
+    "teardown": [
+      "self"
+    ]
+  },
+  "MAX_TELEMETRY_URL_SIZE": [],
+  "BasePayload": {},
+  "RunPayload": {},
+  "ShutdownPayload": {},
+  "EmailPayload": {},
+  "VersionPayload": {},
+  "PlaygroundPayload": {},
+  "ComponentPayload": {},
+  "ComponentInputsPayload": {
+    "_calculate_url_size": [
+      "self",
+      "base_url"
+    ],
+    "_truncate_value_to_fit": [
+      "self",
+      "key",
+      "value",
+      "max_url_size"
+    ],
+    "split_if_needed": [
+      "self",
+      "max_url_size"
+    ]
+  },
+  "ExceptionPayload": {},
+  "ComponentIndexPayload": {},
+  "CREDENTIAL_TYPE": [],
+  "GENERIC_TYPE": [],
+  "KubernetesSecretService": {
+    "__init__": [
+      "self",
+      "settings_service"
+    ],
+    "initialize_user_variables": [
+      "self",
+      "user_id",
+      "session"
+    ],
+    "resolve_variable": [
+      "self",
+      "secret_name",
+      "user_id",
+      "name"
+    ],
+    "get_variable": [
+      "self",
+      "user_id",
+      "name",
+      "field",
+      "session"
+    ],
+    "list_variables": [
+      "self",
+      "user_id",
+      "session"
+    ],
+    "_update_variable": [
+      "self",
+      "user_id",
+      "name",
+      "value"
+    ],
+    "update_variable": [
+      "self",
+      "user_id",
+      "name",
+      "value",
+      "session"
+    ],
+    "_delete_variable": [
+      "self",
+      "user_id",
+      "name"
+    ],
+    "delete_variable": [
+      "self",
+      "user_id",
+      "name",
+      "session"
+    ],
+    "delete_variable_by_id": [
+      "self",
+      "user_id",
+      "variable_id",
+      "session"
+    ],
+    "create_variable": [
+      "self",
+      "user_id",
+      "name",
+      "value"
+    ],
+    "get_all": [
+      "self",
+      "user_id",
+      "session"
+    ],
+    "get_variable_by_id": [
+      "self",
+      "user_id",
+      "variable_id",
+      "session"
+    ],
+    "get_variable_object": [
+      "self",
+      "user_id",
+      "name",
+      "session"
+    ],
+    "update_variable_fields": [
+      "self",
+      "user_id",
+      "variable_id",
+      "variable",
+      "session"
+    ]
+  },
+  "KubernetesSecretManager": {
+    "__init__": [
+      "self",
+      "namespace"
+    ],
+    "create_secret": [
+      "self",
+      "name",
+      "data",
+      "secret_type"
+    ],
+    "upsert_secret": [
+      "self",
+      "secret_name",
+      "data"
+    ],
+    "get_secret": [
+      "self",
+      "name"
+    ],
+    "update_secret": [
+      "self",
+      "name",
+      "data"
+    ],
+    "delete_secret_key": [
+      "self",
+      "name",
+      "key"
+    ],
+    "delete_secret": [
+      "self",
+      "name"
+    ]
+  },
+  "encode_user_id": [
+    "user_id"
+  ],
+  "VariableServiceFactory": {
+    "__init__": [
+      "self"
+    ],
+    "create": [
+      "self",
+      "settings_service"
+    ]
+  },
+  "VariableService": {
+    "name": [],
+    "initialize_user_variables": [
+      "self",
+      "user_id",
+      "session"
+    ],
+    "get_variable": [
+      "self",
+      "user_id",
+      "name",
+      "field",
+      "session"
+    ],
+    "list_variables": [
+      "self",
+      "user_id",
+      "session"
+    ],
+    "update_variable": [
+      "self",
+      "user_id",
+      "name",
+      "value",
+      "session"
+    ],
+    "delete_variable": [
+      "self",
+      "user_id",
+      "name",
+      "session"
+    ],
+    "delete_variable_by_id": [
+      "self",
+      "user_id",
+      "variable_id",
+      "session"
+    ],
+    "create_variable": [
+      "self",
+      "user_id",
+      "name",
+      "value"
+    ],
+    "get_all": [
+      "self",
+      "user_id",
+      "session"
+    ],
+    "get_variable_by_id": [
+      "self",
+      "user_id",
+      "variable_id",
+      "session"
+    ],
+    "get_variable_object": [
+      "self",
+      "user_id",
+      "name",
+      "session"
+    ],
+    "update_variable_fields": [
+      "self",
+      "user_id",
+      "variable_id",
+      "variable",
+      "session"
+    ]
+  },
+  "DatabaseVariableService": {
+    "__init__": [
+      "self",
+      "settings_service"
+    ],
+    "initialize_user_variables": [
+      "self",
+      "user_id",
+      "session"
+    ],
+    "get_variable_object": [
+      "self",
+      "user_id",
+      "name",
+      "session"
+    ],
+    "get_variable": [
+      "self",
+      "user_id",
+      "name",
+      "field",
+      "session"
+    ],
+    "get_all": [
+      "self",
+      "user_id",
+      "session"
+    ],
+    "get_all_decrypted_variables": [
+      "self",
+      "user_id",
+      "session"
+    ],
+    "get_variable_by_id": [
+      "self",
+      "user_id",
+      "variable_id",
+      "session"
+    ],
+    "list_variables": [
+      "self",
+      "user_id",
+      "session"
+    ],
+    "update_variable": [
+      "self",
+      "user_id",
+      "name",
+      "value",
+      "session"
+    ],
+    "update_variable_fields": [
+      "self",
+      "user_id",
+      "variable_id",
+      "variable",
+      "session"
+    ],
+    "delete_variable": [
+      "self",
+      "user_id",
+      "name",
+      "session"
+    ],
+    "delete_variable_by_id": [
+      "self",
+      "user_id",
+      "variable_id",
+      "session"
+    ],
+    "create_variable": [
+      "self",
+      "user_id",
+      "name",
+      "value"
+    ]
+  },
+  "get_celery_worker_status": [
+    "app"
+  ],
+  "cleanup_orphaned_records": [],
+  "CleanupWorker": {
+    "__init__": [
+      "self"
+    ],
+    "start": [
+      "self"
+    ],
+    "stop": [
+      "self"
+    ],
+    "_run": [
+      "self"
+    ]
+  },
+  "cleanup_worker": [],
+  "TaskServiceFactory": {
+    "__init__": [
+      "self"
+    ],
+    "create": [
+      "self",
+      "settings_service"
+    ]
+  },
+  "TaskService": {
+    "name": [],
+    "__init__": [
+      "self",
+      "settings_service"
+    ],
+    "backend_name": [
+      "self"
+    ],
+    "get_backend": [
+      "self"
+    ],
+    "fire_and_forget_task": [
+      "self",
+      "task_func"
+    ],
+    "launch_and_await_task": [
+      "self",
+      "task_func"
+    ],
+    "launch_task": [
+      "self",
+      "task_func"
+    ],
+    "revoke_task": [
+      "self",
+      "task_id"
+    ]
+  },
+  "CeleryBackend": {
+    "name": [],
+    "__init__": [
+      "self"
+    ],
+    "launch_task": [
+      "self",
+      "task_func"
+    ],
+    "get_task": [
+      "self",
+      "task_id"
+    ],
+    "revoke_task": [
+      "self",
+      "task_id"
+    ]
+  },
+  "AnyIOTaskResult": {
+    "__init__": [
+      "self"
+    ],
+    "status": [
+      "self"
+    ],
+    "traceback": [
+      "self"
+    ],
+    "result": [
+      "self"
+    ],
+    "ready": [
+      "self"
+    ],
+    "run": [
+      "self",
+      "func"
+    ]
+  },
+  "AnyIOBackend": {
+    "name": [],
+    "__init__": [
+      "self"
+    ],
+    "launch_task": [
+      "self",
+      "task_func"
+    ],
+    "get_task": [
+      "self",
+      "task_id"
+    ],
+    "cleanup_task": [
+      "self",
+      "task_id"
+    ],
+    "revoke_task": [
+      "self",
+      "task_id"
+    ]
+  },
+  "TaskBackend": {
+    "launch_task": [
+      "self",
+      "task_func"
+    ],
+    "get_task": [
+      "self",
+      "task_id"
+    ],
+    "revoke_task": [
+      "self",
+      "task_id"
+    ]
+  },
+  "generate_unique_folder_name": [
+    "folder_name",
+    "user_id",
+    "session"
+  ],
+  "format_type": [
+    "type_"
+  ],
+  "LANGFLOW_DATABASE_URL": [],
+  "POSTGRESQL_PREFIXES": [],
+  "configure_windows_postgres_event_loop": [
+    "source"
+  ],
+  "docs_to_data": [
+    "documents"
+  ],
+  "data_to_text_list": [
+    "template",
+    "data"
+  ],
+  "data_to_text": [
+    "template",
+    "data",
+    "sep"
+  ],
+  "messages_to_text": [
+    "template",
+    "messages"
+  ],
+  "clean_string": [
+    "s"
+  ],
+  "_serialize_data": [
+    "data"
+  ],
+  "safe_convert": [
+    "data"
+  ],
+  "data_to_dataframe": [
+    "data"
+  ],
+  "TRUE_VALUES": [],
+  "SchemaField": {},
+  "BaseModel": {
+    "model_config": []
+  },
+  "_get_type_annotation": [
+    "type_str"
+  ],
+  "build_model_from_schema": [
+    "schema"
+  ],
+  "coalesce_bool": [
+    "value"
+  ],
+  "get_user_by_flow_id_or_endpoint_name": [
+    "flow_id_or_name"
+  ],
+  "INPUT_TYPE_MAP": [],
+  "SORT_DISPATCHER": [],
+  "list_flows": [],
+  "list_flows_by_flow_folder": [],
+  "list_flows_by_folder_id": [],
+  "get_flow_by_id_or_name": [],
+  "load_flow": [
+    "user_id",
+    "flow_id",
+    "flow_name",
+    "tweaks"
+  ],
+  "find_flow": [
+    "flow_name",
+    "user_id"
+  ],
+  "run_flow": [
+    "inputs",
+    "tweaks",
+    "flow_id",
+    "flow_name",
+    "output_type",
+    "user_id",
+    "run_id",
+    "session_id",
+    "graph"
+  ],
+  "generate_function_for_flow": [
+    "inputs",
+    "flow_id",
+    "user_id"
+  ],
+  "build_function_and_schema": [
+    "flow_data",
+    "graph",
+    "user_id"
+  ],
+  "get_flow_inputs": [
+    "graph"
+  ],
+  "build_schema_from_inputs": [
+    "name",
+    "inputs"
+  ],
+  "get_arg_names": [
+    "inputs"
+  ],
+  "get_flow_by_id_or_endpoint_name": [
+    "flow_id_or_name",
+    "user_id"
+  ],
+  "generate_unique_flow_name": [
+    "flow_name",
+    "user_id",
+    "session"
+  ],
+  "json_schema_from_flow": [
+    "flow"
+  ],
+  "_get_component_toolkit": [],
+  "test_serialize_inputs_excludes_code_key": [],
+  "test_serialize_inputs_handles_none": [],
+  "test_serialize_inputs_handles_non_dict": [],
+  "test_serialize_inputs_handles_empty_dict": [],
+  "test_code_key_not_saved_to_database": [],
+  "client": [],
+  "test_openai_response_stream_error_handling": [
+    "client"
+  ],
+  "get_memory_key": [
+    "langchain_object"
+  ],
+  "update_memory_keys": [
+    "langchain_object",
+    "possible_new_mem_key"
+  ],
+  "instantiate_class": [
+    "vertex",
+    "user_id",
+    "event_manager"
+  ],
+  "get_instance_results": [
+    "custom_component",
+    "custom_params",
+    "vertex"
+  ],
+  "get_params": [
+    "vertex_params"
+  ],
+  "convert_params_to_sets": [
+    "params"
+  ],
+  "convert_kwargs": [
+    "params"
+  ],
+  "update_params_with_load_from_db_fields": [
+    "custom_component",
+    "params",
+    "load_from_db_fields"
+  ],
+  "build_component": [
+    "params",
+    "custom_component"
+  ],
+  "build_custom_component": [
+    "params",
+    "custom_component"
+  ],
+  "ALL": [],
+  "import_module": [
+    "module_path"
+  ],
+  "import_class": [
+    "class_path"
+  ],
+  "replace_none_and_null_with_empty_str": [
+    "data",
+    "required_fields"
+  ],
+  "mcp": [],
+  "DEFAULT_TEMPLATE_FIELDS": [],
+  "DEFAULT_COMPONENT_FIELDS": [],
+  "search_templates": [
+    "query",
+    "fields"
+  ],
+  "get_template": [
+    "template_id",
+    "fields"
+  ],
+  "list_all_tags": [],
+  "count_templates": [],
+  "create_flow_from_template": [
+    "template_id",
+    "user_id",
+    "folder_id"
+  ],
+  "search_components": [
+    "query",
+    "component_type",
+    "fields"
+  ],
+  "get_component": [
+    "component_name",
+    "component_type",
+    "fields"
+  ],
+  "list_component_types": [],
+  "count_components": [
+    "component_type"
+  ],
+  "get_components_by_type_tool": [
+    "component_type",
+    "fields"
+  ],
+  "visualize_flow_graph": [
+    "flow_id_or_name",
+    "user_id"
+  ],
+  "get_flow_ascii_diagram": [
+    "flow_id_or_name",
+    "user_id"
+  ],
+  "get_flow_text_representation": [
+    "flow_id_or_name",
+    "user_id"
+  ],
+  "get_flow_structure_summary": [
+    "flow_id_or_name",
+    "user_id"
+  ],
+  "get_flow_component_details": [
+    "flow_id_or_name",
+    "component_id",
+    "user_id"
+  ],
+  "get_flow_component_field_value": [
+    "flow_id_or_name",
+    "component_id",
+    "field_name",
+    "user_id"
+  ],
+  "update_flow_component_field": [
+    "flow_id_or_name",
+    "component_id",
+    "field_name",
+    "new_value",
+    "user_id"
+  ],
+  "list_flow_component_fields": [
+    "flow_id_or_name",
+    "component_id",
+    "user_id"
+  ],
+  "list_all_components": [
+    "query",
+    "component_type",
+    "fields",
+    "settings_service"
+  ],
+  "get_component_by_name": [
+    "component_name",
+    "component_type",
+    "fields",
+    "settings_service"
+  ],
+  "get_all_component_types": [
+    "settings_service"
+  ],
+  "get_components_count": [
+    "component_type",
+    "settings_service"
+  ],
+  "get_components_by_type": [
+    "component_type",
+    "fields",
+    "settings_service"
+  ],
+  "get_component_details": [
+    "flow_id_or_name",
+    "component_id",
+    "user_id"
+  ],
+  "get_component_field_value": [
+    "flow_id_or_name",
+    "component_id",
+    "field_name",
+    "user_id"
+  ],
+  "update_component_field_value": [
+    "flow_id_or_name",
+    "component_id",
+    "field_name",
+    "new_value",
+    "user_id"
+  ],
+  "list_component_fields": [
+    "flow_id_or_name",
+    "component_id",
+    "user_id"
+  ],
+  "list_templates": [
+    "query",
+    "fields",
+    "tags",
+    "starter_projects_path"
+  ],
+  "get_template_by_id": [
+    "template_id",
+    "fields",
+    "starter_projects_path"
+  ],
+  "get_all_tags": [
+    "starter_projects_path"
+  ],
+  "get_templates_count": [
+    "starter_projects_path"
+  ],
+  "get_flow_graph_representations": [
+    "flow_id_or_name",
+    "user_id"
+  ],
+  "get_flow_ascii_graph": [
+    "flow_id_or_name",
+    "user_id"
+  ],
+  "get_flow_text_repr": [
+    "flow_id_or_name",
+    "user_id"
+  ],
+  "get_flow_graph_summary": [
+    "flow_id_or_name",
+    "user_id"
+  ],
+  "create_flow_from_template_and_get_link": [],
+  "inject_model_into_flow": [
+    "flow_data",
+    "provider",
+    "model_name",
+    "api_key_var"
+  ],
+  "load_and_prepare_flow": [
+    "flow_path",
+    "provider",
+    "model_name",
+    "api_key_var"
+  ],
+  "PREFERRED_PROVIDERS": [],
+  "get_enabled_providers_for_user": [
+    "user_id",
+    "session"
+  ],
+  "check_api_key": [
+    "variable_service",
+    "user_id",
+    "key_name",
+    "session"
+  ],
+  "get_default_provider": [
+    "enabled_providers"
+  ],
+  "get_default_model": [
+    "provider"
+  ],
+  "FLOWS_BASE_PATH": [],
+  "STREAMING_QUEUE_MAX_SIZE": [],
+  "STREAMING_EVENT_TIMEOUT_SECONDS": [],
+  "MAX_VALIDATION_RETRIES": [],
+  "VALIDATION_UI_DELAY_SECONDS": [],
+  "LANGFLOW_ASSISTANT_FLOW": [],
+  "TRANSLATION_FLOW": [],
+  "VALIDATION_RETRY_TEMPLATE": [],
+  "IntentResult": {},
+  "FlowExecutionResult": {
+    "has_error": [
+      "self"
+    ],
+    "has_result": [
+      "self"
+    ]
+  },
+  "_run_graph_with_events": [
+    "graph",
+    "input_value",
+    "global_variables",
+    "user_id",
+    "session_id",
+    "event_manager",
+    "event_queue",
+    "execution_result"
+  ],
+  "execute_flow_file": [
+    "flow_filename",
+    "input_value",
+    "global_variables"
+  ],
+  "execute_flow_file_streaming": [
+    "flow_filename",
+    "input_value",
+    "global_variables"
+  ],
+  "extract_response_text": [
+    "result"
+  ],
+  "execute_flow_with_validation": [
+    "flow_filename",
+    "input_value",
+    "global_variables"
+  ],
+  "execute_flow_with_validation_streaming": [
+    "flow_filename",
+    "input_value",
+    "global_variables"
+  ],
+  "classify_intent": [
+    "text",
+    "global_variables",
+    "user_id",
+    "session_id",
+    "provider",
+    "model_name",
+    "api_key_var"
+  ],
+  "_temporary_sys_path": [
+    "path"
+  ],
+  "_validate_path_within_base": [
+    "candidate",
+    "flow_filename"
+  ],
+  "resolve_flow_path": [
+    "flow_filename"
+  ],
+  "_load_graph_from_python": [
+    "flow_path",
+    "provider",
+    "model_name",
+    "api_key_var"
+  ],
+  "load_graph_for_execution": [
+    "flow_path",
+    "flow_type",
+    "provider",
+    "model_name",
+    "api_key_var"
+  ],
+  "parse_event_data": [
+    "event_data"
+  ],
+  "consume_streaming_events": [
+    "event_queue",
+    "is_disconnected",
+    "cancel_event"
+  ],
+  "PYTHON_CODE_BLOCK_PATTERN": [],
+  "GENERIC_CODE_BLOCK_PATTERN": [],
+  "UNCLOSED_PYTHON_BLOCK_PATTERN": [],
+  "UNCLOSED_GENERIC_BLOCK_PATTERN": [],
+  "extract_python_code": [
+    "text"
+  ],
+  "_find_code_blocks": [
+    "text"
+  ],
+  "_find_unclosed_code_block": [
+    "text"
+  ],
+  "_find_component_code": [
+    "matches"
+  ],
+  "extract_component_code": [],
+  "CLASS_NAME_PATTERN": [],
+  "_extract_class_name_regex": [
+    "code"
+  ],
+  "_safe_extract_class_name": [
+    "code"
+  ],
+  "validate_component_code": [
+    "code"
+  ],
+  "format_progress_event": [
+    "step",
+    "attempt",
+    "max_attempts"
+  ],
+  "format_complete_event": [
+    "data"
+  ],
+  "format_error_event": [
+    "message"
+  ],
+  "format_token_event": [
+    "chunk"
+  ],
+  "format_cancelled_event": [],
+  "MAX_ERROR_MESSAGE_LENGTH": [],
+  "MIN_MEANINGFUL_PART_LENGTH": [],
+  "extract_friendly_error": [
+    "error_msg"
+  ],
+  "_truncate_error_message": [
+    "error_msg"
+  ],
+  "TRANSLATION_PROMPT": [],
+  "_build_model_config": [
+    "provider",
+    "model_name"
+  ],
+  "get_graph": [
+    "provider",
+    "model_name",
+    "api_key_var"
+  ],
+  "ASSISTANT_PROMPT": [],
+  "StepType": [],
+  "AssistantRequest": {},
+  "ValidationResult": {},
+  "router": [],
+  "_AssistantContext": {},
+  "_resolve_assistant_context": [
+    "request",
+    "user_id",
+    "session"
+  ],
+  "execute_named_flow": [
+    "flow_name",
+    "request",
+    "current_user"
+  ],
+  "check_assistant_config": [
+    "current_user",
+    "session"
+  ],
+  "assist": [
+    "request",
+    "current_user",
+    "session"
+  ],
+  "assist_stream": [
+    "request",
+    "current_user",
+    "session"
+  ],
+  "get_input_types_map": [],
+  "instantiate_input": [
+    "input_type",
+    "data"
+  ],
+  "health_check_router": [],
+  "HealthResponse": {
+    "has_error": [
+      "self"
+    ]
+  },
+  "health": [],
+  "health_check": [
+    "session"
+  ],
+  "LimitVertexBuildBackgroundTasks": {
+    "add_task": [
+      "self",
+      "func"
+    ]
+  },
+  "UploadFileResponse": {},
+  "router_v1": [],
+  "router_v2": [],
+  "_include_agentic_router": [],
+  "DisconnectHandlerStreamingResponse": {
+    "__init__": [
+      "self",
+      "content",
+      "status_code",
+      "headers",
+      "media_type",
+      "background",
+      "on_disconnect"
+    ],
+    "listen_for_disconnect": [
+      "self",
+      "receive"
+    ]
+  },
+  "_log_component_input_telemetry": [
+    "vertex",
+    "vertex_id",
+    "component_run_id",
+    "background_tasks",
+    "telemetry_service"
+  ],
+  "start_flow_build": [],
+  "get_flow_events_response": [],
+  "create_flow_response": [
+    "queue",
+    "event_manager",
+    "event_task"
+  ],
+  "generate_flow_events": [],
+  "cancel_flow_build": [],
+  "log_router": [],
+  "NUMBER_OF_NOT_SENT_BEFORE_KEEPALIVE": [],
+  "event_generator": [
+    "request"
+  ],
+  "stream_logs": [
+    "request"
+  ],
+  "logs": [
+    "lines_before",
+    "lines_after",
+    "timestamp"
+  ],
+  "upload_server_config": [
+    "server_config",
+    "current_user",
+    "session",
+    "storage_service",
+    "settings_service"
+  ],
+  "get_server_list": [
+    "current_user",
+    "session",
+    "storage_service",
+    "settings_service"
+  ],
+  "get_server": [
+    "server_name",
+    "current_user",
+    "session",
+    "storage_service",
+    "settings_service",
+    "server_list"
+  ],
+  "get_servers": [
+    "current_user",
+    "session",
+    "storage_service",
+    "settings_service"
+  ],
+  "get_server_endpoint": [
+    "server_name",
+    "current_user",
+    "session",
+    "storage_service",
+    "settings_service"
+  ],
+  "update_server": [
+    "server_name",
+    "server_config",
+    "current_user",
+    "session",
+    "storage_service",
+    "settings_service"
+  ],
+  "add_server": [
+    "server_name"
+  ],
+  "update_server_endpoint": [
+    "server_name"
+  ],
+  "delete_server": [
+    "server_name",
+    "current_user",
+    "session",
+    "storage_service",
+    "settings_service"
+  ],
+  "EXECUTION_TIMEOUT": [],
+  "check_developer_api_enabled": [],
+  "execute_workflow": [
+    "workflow_request",
+    "background_tasks",
+    "http_request",
+    "api_key_user"
+  ],
+  "execute_sync_workflow_with_timeout": [
+    "workflow_request",
+    "flow",
+    "job_id",
+    "api_key_user",
+    "background_tasks",
+    "http_request"
+  ],
+  "execute_sync_workflow": [
+    "workflow_request",
+    "flow",
+    "job_id",
+    "api_key_user",
+    "background_tasks",
+    "http_request"
+  ],
+  "execute_workflow_background": [
+    "workflow_request",
+    "flow",
+    "job_id",
+    "api_key_user",
+    "http_request"
+  ],
+  "get_workflow_status": [
+    "api_key_user",
+    "job_id",
+    "session"
+  ],
+  "stop_workflow": [
+    "request",
+    "api_key_user"
+  ],
+  "reconstruct_workflow_response_from_job_id": [
+    "session",
+    "flow",
+    "job_id",
+    "user_id"
+  ],
+  "MCPServerConfig": {},
+  "MCP_SERVERS_FILE": [],
+  "SAMPLE_DATA_DIR": [],
+  "is_permanent_storage_failure": [
+    "error"
+  ],
+  "get_mcp_file": [
+    "current_user"
+  ],
+  "byte_stream_generator": [
+    "file_input",
+    "chunk_size"
+  ],
+  "fetch_file_object": [
+    "file_id",
+    "current_user",
+    "session"
+  ],
+  "save_file_routine": [
+    "file",
+    "storage_service",
+    "current_user",
+    "file_content",
+    "file_name"
+  ],
+  "upload_user_file": [
+    "file",
+    "session",
+    "current_user",
+    "storage_service",
+    "settings_service"
+  ],
+  "get_file_by_name": [
+    "file_name",
+    "current_user",
+    "session"
+  ],
+  "load_sample_files": [
+    "current_user",
+    "session",
+    "storage_service"
+  ],
+  "list_files": [
+    "current_user",
+    "session"
+  ],
+  "delete_files_batch": [
+    "file_ids",
+    "current_user",
+    "session",
+    "storage_service"
+  ],
+  "download_files_batch": [
+    "file_ids",
+    "current_user",
+    "session",
+    "storage_service"
+  ],
+  "read_file_content": [
+    "file_stream"
+  ],
+  "download_file": [
+    "file_id",
+    "current_user",
+    "session",
+    "storage_service"
+  ],
+  "edit_file_name": [
+    "file_id",
+    "name",
+    "current_user",
+    "session"
+  ],
+  "delete_file": [
+    "file_id",
+    "current_user",
+    "session",
+    "storage_service"
+  ],
+  "delete_all_files": [
+    "current_user",
+    "session",
+    "storage_service"
+  ],
+  "parse_flat_inputs": [
+    "inputs"
+  ],
+  "_extract_nested_value": [
+    "data"
+  ],
+  "_extract_text_from_message": [
+    "content"
+  ],
+  "_extract_model_source": [
+    "raw_content",
+    "vertex_id",
+    "vertex_display_name"
+  ],
+  "_extract_file_path": [
+    "raw_content",
+    "vertex_type"
+  ],
+  "_get_raw_content": [
+    "vertex_output_data"
+  ],
+  "_simplify_output_content": [
+    "content",
+    "output_type"
+  ],
+  "_build_metadata_for_non_output": [
+    "raw_content",
+    "vertex_id",
+    "vertex_display_name",
+    "vertex_type",
+    "output_type"
+  ],
+  "_process_terminal_vertex": [
+    "vertex",
+    "output_data_map"
+  ],
+  "run_response_to_workflow_response": [
+    "run_response",
+    "flow_id",
+    "job_id",
+    "workflow_request",
+    "graph"
+  ],
+  "create_job_response": [
+    "job_id",
+    "flow_id"
+  ],
+  "create_error_response": [
+    "flow_id",
+    "job_id",
+    "workflow_request",
+    "error"
+  ],
+  "RegisterRequest": {},
+  "RegisterResponse": {},
+  "REGISTRATION_FILE": [],
+  "_ensure_registration_file": [],
+  "load_registration": [],
+  "save_registration": [
+    "email"
+  ],
+  "register_user": [
+    "request"
+  ],
+  "_send_email_telemetry": [
+    "email"
+  ],
+  "get_registration": [],
+  "get_user_store_api_key": [
+    "user"
+  ],
+  "get_optional_user_store_api_key": [
+    "user"
+  ],
+  "check_if_store_is_enabled": [],
+  "check_if_store_has_api_key": [
+    "api_key"
+  ],
+  "share_component": [
+    "component",
+    "store_api_key"
+  ],
+  "update_shared_component": [
+    "component_id",
+    "component",
+    "store_api_key"
+  ],
+  "get_components": [],
+  "download_component": [
+    "component_id",
+    "store_api_key"
+  ],
+  "get_tags": [],
+  "get_list_of_components_liked_by_user": [
+    "store_api_key"
+  ],
+  "like_component": [
+    "component_id",
+    "store_api_key"
+  ],
+  "create_folder_redirect": [],
+  "read_folders_redirect": [],
+  "read_folder_redirect": [],
+  "update_folder_redirect": [],
+  "delete_folder_redirect": [],
+  "download_file_redirect": [],
+  "upload_file_redirect": [],
+  "server": [],
+  "handle_list_prompts": [],
+  "handle_global_resources": [],
+  "handle_global_read_resource": [
+    "uri"
+  ],
+  "handle_global_tools": [],
+  "handle_global_call_tool": [
+    "name",
+    "arguments"
+  ],
+  "ResponseNoOp": {
+    "__call__": [
+      "self",
+      "scope",
+      "receive",
+      "send"
+    ]
+  },
+  "find_validation_error": [
+    "exc"
+  ],
+  "sse": [],
+  "im_alive": [],
+  "handle_sse": [
+    "request",
+    "current_user"
+  ],
+  "handle_messages": [
+    "request"
+  ],
+  "StreamableHTTP": {
+    "__init__": [
+      "self"
+    ],
+    "_start_session_manager": [
+      "self"
+    ],
+    "start": [
+      "self"
+    ],
+    "get_manager": [
+      "self"
+    ],
+    "stop": [
+      "self"
+    ],
+    "_cleanup": [
+      "self"
+    ]
+  },
+  "_streamable_http": [],
+  "start_streamable_http_manager": [
+    "stateless"
+  ],
+  "get_streamable_http_manager": [],
+  "stop_streamable_http_manager": [],
+  "streamable_http_route_config": [],
+  "streamable_health": [],
+  "handle_streamable_http": [
+    "request",
+    "current_user"
+  ],
+  "_dispatch_streamable_http": [
+    "request",
+    "current_user"
+  ],
+  "handle_auth_settings_update": [
+    "existing_project",
+    "new_auth_settings"
+  ],
+  "ALL_INTERFACES_HOST": [],
+  "verify_project_auth": [
+    "db",
+    "project_id",
+    "query_param",
+    "header_param"
+  ],
+  "verify_project_auth_conditional": [
+    "project_id",
+    "request"
+  ],
+  "get_project_sse": [
+    "project_id"
+  ],
+  "_build_project_tools_response": [
+    "project_id",
+    "current_user"
+  ],
+  "list_project_tools": [
+    "project_id",
+    "current_user"
+  ],
+  "handle_project_sse": [
+    "project_id",
+    "request",
+    "current_user"
+  ],
+  "_handle_project_sse_messages": [
+    "project_id",
+    "request",
+    "current_user"
+  ],
+  "handle_project_messages": [
+    "project_id",
+    "request",
+    "current_user"
+  ],
+  "_dispatch_project_streamable_http": [
+    "project_id",
+    "request",
+    "current_user"
+  ],
+  "handle_project_streamable_http": [
+    "project_id",
+    "request",
+    "current_user"
+  ],
+  "update_project_mcp_settings": [
+    "project_id",
+    "request",
+    "current_user"
+  ],
+  "is_local_ip": [
+    "ip_str"
+  ],
+  "get_client_ip": [
+    "request"
+  ],
+  "install_mcp_config": [
+    "project_id",
+    "body",
+    "request",
+    "current_user"
+  ],
+  "get_project_composer_url": [
+    "project_id",
+    "current_user"
+  ],
+  "check_installed_mcp_servers": [
+    "project_id",
+    "current_user"
+  ],
+  "_normalize_url_list": [
+    "urls"
+  ],
+  "_args_reference_urls": [
+    "args",
+    "urls"
+  ],
+  "config_contains_server_url": [
+    "config_data",
+    "urls"
+  ],
+  "get_composer_sse_url": [
+    "project"
+  ],
+  "get_config_path": [
+    "client"
+  ],
+  "remove_server_by_urls": [
+    "config_data",
+    "urls"
+  ],
+  "_get_mcp_composer_auth_config": [
+    "project"
+  ],
+  "ProjectMCPServer": {
+    "__init__": [
+      "self",
+      "project_id"
+    ],
+    "ensure_session_manager_running": [
+      "self"
+    ],
+    "_run_session_manager": [
+      "self"
+    ]
+  },
+  "ProjectTaskGroup": {
+    "__init__": [
+      "self"
+    ],
+    "_start_tg": [
+      "self"
+    ],
+    "start": [
+      "self"
+    ],
+    "stop": [
+      "self"
+    ],
+    "start_task": [
+      "self",
+      "func"
+    ],
+    "_cleanup": [
+      "self"
+    ]
+  },
+  "_project_task_group": [],
+  "start_project_task_group": [],
+  "get_project_task_group": [],
+  "stop_project_task_group": [],
+  "get_project_mcp_server": [
+    "project_id"
+  ],
+  "register_project_with_composer": [
+    "project"
+  ],
+  "init_mcp_servers": [],
+  "verify_project_access": [
+    "project_id",
+    "current_user"
+  ],
+  "should_use_mcp_composer": [
+    "project"
+  ],
+  "get_or_start_mcp_composer": [
+    "auth_config",
+    "project_name",
+    "project_id"
+  ],
+  "SILENCE_THRESHOLD": [],
+  "PREFIX_PADDING_MS": [],
+  "SILENCE_DURATION_MS": [],
+  "AUDIO_SAMPLE_THRESHOLD": [],
+  "SESSION_INSTRUCTIONS": [],
+  "LF_TO_OPENAI": [],
+  "LF_TO_CLIENT": [],
+  "OPENAI_TO_LF": [],
+  "CLIENT_TO_LF": [],
+  "get_vad": [],
+  "authenticate_and_get_openai_key": [
+    "session",
+    "user",
+    "websocket"
+  ],
+  "VoiceConfig": {
+    "__init__": [
+      "self",
+      "session_id"
+    ],
+    "barge_in_enabled": [
+      "self"
+    ],
+    "get_session_dict": [
+      "self"
+    ]
+  },
+  "ElevenLabsClientManager": {
+    "_instance": [],
+    "_api_key": [],
+    "get_client": [
+      "cls",
+      "user_id",
+      "session"
+    ]
+  },
+  "get_voice_config": [
+    "session_id"
+  ],
+  "TTSConfig": {
+    "__init__": [
+      "self",
+      "session_id",
+      "openai_key"
+    ],
+    "get_session_dict": [
+      "self"
+    ],
+    "get_openai_client": [
+      "self"
+    ],
+    "get_openai_voice": [
+      "self"
+    ]
+  },
+  "get_tts_config": [
+    "session_id",
+    "openai_key"
+  ],
+  "add_message_to_db": [
+    "message",
+    "session",
+    "flow_id",
+    "session_id",
+    "sender",
+    "sender_name"
+  ],
+  "wait_for_sender_change": [
+    "queue_key",
+    "current_sender",
+    "timeout"
+  ],
+  "process_message_queue": [
+    "queue_key",
+    "session"
+  ],
+  "SendQueues": {
+    "__init__": [
+      "self",
+      "openai_ws",
+      "client_ws",
+      "log_event"
+    ],
+    "openai_send": [
+      "self",
+      "payload"
+    ],
+    "openai_unblock": [
+      "self"
+    ],
+    "__openai_writer": [
+      "self"
+    ],
+    "client_send": [
+      "self",
+      "payload"
+    ],
+    "__client_writer": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "get_create_response": [
+    "send_handler",
+    "session_id"
+  ],
+  "handle_function_call": [
+    "function_call",
+    "function_call_args",
+    "flow_id",
+    "background_tasks",
+    "current_user",
+    "conversation_id",
+    "session_id",
+    "msg_handler"
+  ],
+  "get_flow_desc_from_db": [
+    "flow_id"
+  ],
+  "get_or_create_elevenlabs_client": [
+    "user_id",
+    "session"
+  ],
+  "pcm16_to_float_array": [
+    "pcm_data"
+  ],
+  "text_chunker_with_timeout": [
+    "chunks",
+    "timeout"
+  ],
+  "queue_generator": [
+    "queue"
+  ],
+  "create_event_logger": [],
+  "TTL_SECONDS": [],
+  "mark_response_done": [
+    "response_id"
+  ],
+  "is_response_done": [
+    "response_id"
+  ],
+  "FunctionCall": {
+    "__init__": [
+      "self",
+      "item",
+      "msg_handler",
+      "flow_id",
+      "background_tasks",
+      "current_user",
+      "conversation_id",
+      "session_id"
+    ],
+    "append_args": [
+      "self",
+      "args"
+    ],
+    "execute": [
+      "self"
+    ],
+    "_send_progress_message": [
+      "self"
+    ],
+    "_send_function_call": [
+      "self"
+    ]
+  },
+  "flow_as_tool_websocket_no_session": [
+    "client_websocket",
+    "flow_id",
+    "background_tasks",
+    "session"
+  ],
+  "flow_as_tool_websocket": [
+    "client_websocket",
+    "flow_id",
+    "background_tasks",
+    "session",
+    "session_id"
+  ],
+  "flow_tts_websocket_no_session": [
+    "client_websocket",
+    "flow_id",
+    "background_tasks",
+    "session"
+  ],
+  "flow_tts_websocket": [
+    "client_websocket",
+    "flow_id",
+    "background_tasks",
+    "session",
+    "session_id"
+  ],
+  "extract_transcript": [
+    "json_data"
+  ],
+  "get_elevenlabs_voice_ids": [
+    "current_user",
+    "session"
+  ],
+  "_resolve_kb_path": [
+    "kb_name",
+    "current_user"
+  ],
+  "create_knowledge_base": [
+    "request",
+    "current_user"
+  ],
+  "preview_chunks": [
+    "_current_user",
+    "files",
+    "chunk_size",
+    "chunk_overlap",
+    "separator",
+    "max_chunks"
+  ],
+  "ingest_files_to_knowledge_base": [
+    "kb_name",
+    "current_user",
+    "files",
+    "source_name",
+    "chunk_size",
+    "chunk_overlap",
+    "separator",
+    "column_config"
+  ],
+  "list_knowledge_bases": [
+    "current_user",
+    "job_service"
+  ],
+  "get_knowledge_base": [
+    "kb_name",
+    "current_user"
+  ],
+  "get_knowledge_base_chunks": [
+    "kb_name",
+    "current_user",
+    "page",
+    "limit",
+    "search"
+  ],
+  "delete_knowledge_base": [
+    "kb_name",
+    "current_user"
+  ],
+  "delete_knowledge_bases_bulk": [
+    "request",
+    "current_user"
+  ],
+  "cancel_ingestion": [
+    "kb_name",
+    "current_user",
+    "job_service",
+    "task_service"
+  ],
+  "get_vertex_builds": [
+    "flow_id",
+    "session"
+  ],
+  "delete_vertex_builds": [
+    "flow_id",
+    "session"
+  ],
+  "get_message_sessions": [
+    "session",
+    "current_user",
+    "flow_id"
+  ],
+  "update_session_id": [
+    "old_session_id",
+    "new_session_id",
+    "session"
+  ],
+  "delete_messages_session": [
+    "session_id",
+    "session"
+  ],
+  "get_transactions": [
+    "flow_id",
+    "session",
+    "params"
+  ],
+  "AsyncStreamingLLMCallbackHandleSIO": {
+    "ignore_chain": [
+      "self"
+    ],
+    "__init__": [
+      "self",
+      "session_id"
+    ],
+    "on_llm_new_token": [
+      "self",
+      "token"
+    ],
+    "on_tool_start": [
+      "self",
+      "serialized",
+      "input_str"
+    ],
+    "on_tool_end": [
+      "self",
+      "output"
+    ],
+    "on_tool_error": [
+      "self",
+      "error"
+    ],
+    "on_text": [
+      "self",
+      "text"
+    ],
+    "on_agent_action": [
+      "self",
+      "action"
+    ],
+    "on_agent_finish": [
+      "self",
+      "finish"
+    ]
+  },
+  "post_validate_code": [
+    "code"
+  ],
+  "post_validate_prompt": [
+    "prompt_request"
+  ],
+  "get_api_keys_route": [
+    "db",
+    "current_user"
+  ],
+  "create_api_key_route": [
+    "req",
+    "current_user",
+    "db"
+  ],
+  "delete_api_key_route": [
+    "api_key_id",
+    "db",
+    "current_user"
+  ],
+  "save_store_api_key": [
+    "api_key_request",
+    "response",
+    "current_user",
+    "db"
+  ],
+  "BuildStatus": {
+    "SUCCESS": [],
+    "FAILURE": [],
+    "STARTED": [],
+    "IN_PROGRESS": []
+  },
+  "TweaksRequest": {},
+  "UpdateTemplateRequest": {},
+  "TaskResponse": {},
+  "ProcessResponse": {},
+  "RunResponse": {
+    "serialize": [
+      "self"
+    ]
+  },
+  "PreloadResponse": {},
+  "TaskStatusResponse": {},
+  "ChatMessage": {},
+  "ChatResponse": {
+    "validate_message_type": [
+      "cls",
+      "v"
+    ]
+  },
+  "PromptResponse": {},
+  "FileResponse": {
+    "validate_data_type": [
+      "cls",
+      "v"
+    ]
+  },
+  "FlowListCreate": {},
+  "FlowListIds": {},
+  "FlowListRead": {},
+  "FlowListReadWithFolderName": {},
+  "InitResponse": {},
+  "BuiltResponse": {},
+  "StreamData": {
+    "__str__": [
+      "self"
+    ]
+  },
+  "CustomComponentRequest": {
+    "model_config": []
+  },
+  "CustomComponentResponse": {},
+  "UpdateCustomComponentRequest": {
+    "get_template": [
+      "self"
+    ]
+  },
+  "CustomComponentResponseError": {},
+  "ComponentListCreate": {},
+  "ComponentListRead": {},
+  "UsersResponse": {},
+  "ApiKeyResponse": {},
+  "ApiKeysResponse": {},
+  "CreateApiKeyRequest": {},
+  "Token": {},
+  "ApiKeyCreateRequest": {},
+  "VerticesOrderResponse": {},
+  "ResultDataResponse": {
+    "serialize_results": [
+      "cls",
+      "v"
+    ],
+    "serialize_model": [
+      "self"
+    ]
+  },
+  "VertexBuildResponse": {
+    "serialize_data": [
+      "self",
+      "data"
+    ]
+  },
+  "VerticesBuiltResponse": {},
+  "SimplifiedAPIRequest": {},
+  "FlowDataRequest": {},
+  "BaseConfigResponse": {},
+  "PublicConfigResponse": {
+    "from_settings": [
+      "cls",
+      "settings"
+    ]
+  },
+  "ConfigResponse": {
+    "from_settings": [
+      "cls",
+      "settings",
+      "auth_settings"
+    ]
+  },
+  "CancelFlowResponse": {},
+  "AuthSettings": {
+    "model_post_init": []
+  },
+  "MCPSettings": {},
+  "MCPProjectUpdateRequest": {},
+  "MCPProjectResponse": {},
+  "ComposerUrlResponse": {},
+  "MCPInstallRequest": {},
+  "SSE_HEARTBEAT_TIMEOUT_SECONDS": [],
+  "parse_input_request_from_body": [
+    "http_request"
+  ],
+  "get_all": [],
+  "validate_input_and_tweaks": [
+    "input_request"
+  ],
+  "simple_run_flow": [
+    "flow",
+    "input_request"
+  ],
+  "_get_vertex_ids_from_flow": [
+    "flow"
+  ],
+  "simple_run_flow_task": [
+    "flow",
+    "input_request"
+  ],
+  "consume_and_yield": [
+    "queue",
+    "client_consumed_queue"
+  ],
+  "run_flow_generator": [
+    "flow",
+    "input_request",
+    "api_key_user",
+    "event_manager",
+    "client_consumed_queue",
+    "context"
+  ],
+  "check_flow_user_permission": [
+    "flow",
+    "api_key_user"
+  ],
+  "_run_flow_internal": [],
+  "simplified_run_flow": [],
+  "simplified_run_flow_session": [],
+  "webhook_events_stream": [
+    "flow_id_or_name",
+    "flow",
+    "request"
+  ],
+  "webhook_run_flow": [
+    "flow_id_or_name",
+    "flow",
+    "request"
+  ],
+  "experimental_run_flow": [],
+  "process": [
+    "_flow_id"
+  ],
+  "get_task_status": [
+    "_task_id"
+  ],
+  "create_upload_file": [
+    "file",
+    "flow_id"
+  ],
+  "get_version": [],
+  "custom_component": [
+    "raw_code",
+    "user"
+  ],
+  "custom_component_update": [
+    "code_request",
+    "user"
+  ],
+  "get_config": [
+    "user"
+  ],
+  "DISABLED_MODELS_VAR": [],
+  "ENABLED_MODELS_VAR": [],
+  "DEFAULT_LANGUAGE_MODEL_VAR": [],
+  "DEFAULT_EMBEDDING_MODEL_VAR": [],
+  "MAX_STRING_LENGTH": [],
+  "MAX_BATCH_UPDATE_SIZE": [],
+  "get_provider_from_variable_name": [
+    "variable_name"
+  ],
+  "get_model_names_for_provider": [
+    "provider"
+  ],
+  "ModelStatusUpdate": {
+    "validate_non_empty_string": [
+      "cls",
+      "v"
+    ]
+  },
+  "ValidateProviderRequest": {
+    "validate_provider": [
+      "cls",
+      "v"
+    ]
+  },
+  "ValidateProviderResponse": {},
+  "list_model_providers": [],
+  "list_models": [],
+  "get_model_provider_mapping": [],
+  "get_enabled_providers": [],
+  "validate_provider": [
+    "request",
+    "current_user"
+  ],
+  "_get_disabled_models": [
+    "session",
+    "current_user"
+  ],
+  "_get_enabled_models": [
+    "session",
+    "current_user"
+  ],
+  "_build_model_default_flags": [],
+  "_update_model_sets": [
+    "updates",
+    "disabled_models",
+    "explicitly_enabled_models",
+    "is_default_model"
+  ],
+  "_save_model_list_variable": [
+    "variable_service",
+    "session",
+    "current_user",
+    "var_name",
+    "model_set"
+  ],
+  "get_enabled_models": [],
+  "update_enabled_models": [],
+  "DefaultModelRequest": {
+    "validate_non_empty_string": [
+      "cls",
+      "v"
+    ],
+    "validate_model_type": [
+      "cls",
+      "v"
+    ]
+  },
+  "set_default_model": [],
+  "clear_default_model": [],
+  "T": [],
+  "P": [],
+  "handle_mcp_errors": [
+    "func"
+  ],
+  "with_db_session": [
+    "operation"
+  ],
+  "MCPConfig": {
+    "_instance": [],
+    "__new__": [
+      "cls"
+    ]
+  },
+  "get_mcp_config": [],
+  "handle_list_resources": [
+    "project_id"
+  ],
+  "handle_read_resource": [
+    "uri"
+  ],
+  "handle_call_tool": [
+    "name",
+    "arguments",
+    "server",
+    "project_id"
+  ],
+  "handle_list_tools": [
+    "project_id"
+  ],
+  "DB_TIMEOUT": [],
+  "get_traces": [
+    "current_user",
+    "flow_id",
+    "session_id",
+    "status",
+    "query",
+    "start_time",
+    "end_time",
+    "page",
+    "size"
+  ],
+  "get_trace": [
+    "trace_id",
+    "current_user"
+  ],
+  "delete_trace": [
+    "trace_id",
+    "current_user"
+  ],
+  "delete_traces_by_flow": [
+    "flow_id",
+    "current_user"
+  ],
+  "create_project": [],
+  "read_projects": [],
+  "read_project": [],
+  "update_project": [],
+  "delete_project": [],
+  "upload_file": [],
+  "get_language_model_options_endpoint": [
+    "current_user"
+  ],
+  "get_embedding_model_options_endpoint": [
+    "current_user"
+  ],
+  "add_user": [
+    "user",
+    "session"
+  ],
+  "read_current_user": [
+    "current_user"
+  ],
+  "read_all_users": [],
+  "patch_user": [
+    "user_id",
+    "user_update",
+    "user",
+    "session"
+  ],
+  "reset_password": [
+    "user_id",
+    "user_update",
+    "user",
+    "session"
+  ],
+  "delete_user": [
+    "user_id",
+    "current_user",
+    "session"
+  ],
+  "has_chat_input": [
+    "flow_data"
+  ],
+  "has_chat_output": [
+    "flow_data"
+  ],
+  "run_flow_for_openai_responses": [
+    "flow",
+    "request",
+    "api_key_user"
+  ],
+  "create_response": [
+    "request",
+    "background_tasks",
+    "api_key_user",
+    "telemetry_service",
+    "http_request"
+  ],
+  "_get_allowed_profile_picture_folders": [
+    "settings_service"
+  ],
+  "download_image": [
+    "file_name",
+    "flow_id"
+  ],
+  "download_profile_picture": [
+    "folder_name",
+    "file_name",
+    "settings_service"
+  ],
+  "list_profile_pictures": [
+    "settings_service"
+  ],
+  "SessionResponse": {},
+  "login_to_get_access_token": [
+    "response",
+    "form_data",
+    "db"
+  ],
+  "auto_login": [
+    "response",
+    "db"
+  ],
+  "refresh_token": [
+    "request",
+    "response",
+    "db"
+  ],
+  "logout": [
+    "response"
+  ],
+  "CacheResponse": {},
+  "Code": {},
+  "FrontendNodeRequest": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ValidatePromptRequest": {},
+  "CodeValidationResponse": {
+    "validate_imports": [
+      "cls",
+      "v"
+    ],
+    "validate_function": [
+      "cls",
+      "v"
+    ]
+  },
+  "PromptValidationResponse": {},
+  "_get_safe_flow_path": [
+    "fs_path",
+    "user_id",
+    "storage_service"
+  ],
+  "_verify_fs_path": [
+    "path",
+    "user_id",
+    "storage_service"
+  ],
+  "_save_flow_to_fs": [
+    "flow",
+    "user_id",
+    "storage_service"
+  ],
+  "_new_flow": [],
+  "create_flow": [],
+  "read_flows": [],
+  "_read_flow": [
+    "session",
+    "flow_id",
+    "user_id"
+  ],
+  "read_flow": [],
+  "read_public_flow": [],
+  "update_flow": [],
+  "upsert_flow": [],
+  "_update_existing_flow": [],
+  "delete_flow": [],
+  "create_flows": [],
+  "delete_multiple_flows": [
+    "flow_ids",
+    "user",
+    "db"
+  ],
+  "download_multiple_file": [
+    "flow_ids",
+    "user",
+    "db"
+  ],
+  "read_basic_examples": [],
+  "expand_compact_flow_endpoint": [
+    "compact_data"
+  ],
+  "ViewPort": {},
+  "NodeData": {
+    "model_config": []
+  },
+  "EdgeData": {
+    "model_config": []
+  },
+  "GraphData": {},
+  "GraphDumpResponse": {},
+  "get_starter_projects": [],
+  "retrieve_vertices_order": [],
+  "build_flow": [],
+  "get_build_events": [
+    "job_id",
+    "queue_service"
+  ],
+  "cancel_build": [
+    "job_id",
+    "queue_service"
+  ],
+  "_stream_vertex": [
+    "flow_id",
+    "vertex_id",
+    "chat_service"
+  ],
+  "build_vertex_stream": [
+    "flow_id",
+    "vertex_id"
+  ],
+  "build_flow_and_stream": [
+    "flow_id",
+    "inputs",
+    "background_tasks",
+    "current_user"
+  ],
+  "build_public_tmp": [],
+  "get_build_events_public": [
+    "job_id",
+    "queue_service"
+  ],
+  "cancel_build_public": [
+    "job_id",
+    "queue_service"
+  ],
+  "model_provider_variable_mapping": [],
+  "_cleanup_model_list_variable": [
+    "variable_service",
+    "user_id",
+    "variable_name",
+    "models_to_remove",
+    "session"
+  ],
+  "_cleanup_provider_models": [
+    "variable_service",
+    "user_id",
+    "provider",
+    "session"
+  ],
+  "create_variable": [],
+  "read_variables": [],
+  "update_variable": [],
+  "delete_variable": [],
+  "API_WORDS": [],
+  "MAX_PAGE_SIZE": [],
+  "MIN_PAGE_SIZE": [],
+  "CurrentActiveUser": [],
+  "CurrentActiveMCPUser": [],
+  "DbSession": [],
+  "DbSessionReadOnly": [],
+  "_get_validated_file_name": [
+    "file_name"
+  ],
+  "ValidatedFileName": [],
+  "disable_endpoint_in_astra_cloud_msg": [],
+  "EventDeliveryType": {
+    "STREAMING": [],
+    "DIRECT": [],
+    "POLLING": []
+  },
+  "has_api_terms": [
+    "word"
+  ],
+  "_get_provider_from_template": [
+    "template"
+  ],
+  "remove_api_keys": [
+    "flow"
+  ],
+  "build_input_keys_response": [
+    "langchain_object",
+    "artifacts"
+  ],
+  "validate_is_component": [
+    "flows"
+  ],
+  "get_is_component_from_data": [
+    "data"
+  ],
+  "check_langflow_version": [
+    "component"
+  ],
+  "format_elapsed_time": [
+    "elapsed_time"
+  ],
+  "_get_flow_name": [
+    "flow_id"
+  ],
+  "build_graph_from_data": [
+    "flow_id",
+    "payload"
+  ],
+  "build_graph_from_db_no_cache": [
+    "flow_id",
+    "session"
+  ],
+  "build_graph_from_db": [
+    "flow_id",
+    "session",
+    "chat_service"
+  ],
+  "build_and_cache_graph_from_data": [
+    "flow_id",
+    "chat_service",
+    "graph_data"
+  ],
+  "format_syntax_error_message": [
+    "exc"
+  ],
+  "get_causing_exception": [
+    "exc"
+  ],
+  "format_exception_message": [
+    "exc"
+  ],
+  "get_top_level_vertices": [
+    "graph",
+    "vertices_ids"
+  ],
+  "parse_exception": [
+    "exc"
+  ],
+  "get_suggestion_message": [
+    "outdated_components"
+  ],
+  "parse_value": [
+    "value",
+    "input_type"
+  ],
+  "cascade_delete_flow": [
+    "session",
+    "flow_id"
+  ],
+  "custom_params": [
+    "page",
+    "size"
+  ],
+  "verify_public_flow_and_get_user": [
+    "flow_id",
+    "client_id"
+  ],
+  "extract_global_variables_from_headers": [
+    "headers"
+  ],
+  "raise_error_if_astra_cloud_env": [],
+  "IngestionCancelledError": {},
+  "KBStorageHelper": {
+    "get_root_path": [],
+    "get_directory_size": [
+      "path"
+    ],
+    "get_fresh_chroma_client": [
+      "kb_path"
+    ],
+    "release_chroma_resources": [
+      "kb_path"
+    ],
+    "delete_storage": [
+      "kb_path",
+      "kb_name"
+    ]
+  },
+  "_remove_sqlite_lock_files": [
+    "kb_path"
+  ],
+  "_truncate_sqlite_files": [
+    "kb_path"
+  ],
+  "KBAnalysisHelper": {
+    "get_metadata": [
+      "kb_path"
+    ],
+    "update_text_metrics": [
+      "kb_path",
+      "metadata",
+      "chroma"
+    ],
+    "_detect_embedding_provider": [
+      "kb_path"
+    ],
+    "_detect_embedding_model": [
+      "kb_path"
+    ],
+    "_calculate_text_metrics": [
+      "df",
+      "text_columns"
+    ]
+  },
+  "KBIngestionHelper": {
+    "perform_ingestion": [
+      "kb_name",
+      "kb_path",
+      "files_data",
+      "chunk_size",
+      "chunk_overlap",
+      "separator",
+      "source_name",
+      "current_user",
+      "embedding_provider",
+      "embedding_model",
+      "task_job_id",
+      "job_service"
+    ],
+    "cleanup_chroma_chunks_by_job": [
+      "job_id",
+      "kb_path",
+      "kb_name"
+    ],
+    "_is_job_cancelled": [
+      "job_service",
+      "job_id"
+    ],
+    "_build_embeddings": [
+      "provider",
+      "model",
+      "current_user"
+    ]
+  },
+  "MCPServerValidationResult": {
+    "__init__": [
+      "self"
+    ],
+    "has_conflict": [
+      "self"
+    ],
+    "should_skip": [
+      "self"
+    ],
+    "should_proceed": [
+      "self"
+    ]
+  },
+  "validate_mcp_server_for_project": [
+    "project_id",
+    "project_name",
+    "user",
+    "session",
+    "storage_service",
+    "settings_service",
+    "operation"
+  ],
+  "get_url_by_os": [
+    "host",
+    "port",
+    "url"
+  ],
+  "_get_project_base_url_components": [],
+  "get_project_streamable_http_url": [
+    "project_id"
+  ],
+  "get_project_sse_url": [
+    "project_id"
+  ],
+  "get_composer_streamable_http_url": [
+    "project"
+  ],
+  "auto_configure_starter_projects_mcp": [
+    "session"
+  ],
+  "extract_urls_from_strings": [
+    "strings"
+  ],
+  "auto_configure_agentic_mcp_server": [
+    "session"
+  ],
+  "remove_agentic_mcp_server": [
+    "session"
+  ],
+  "initialize_agentic_global_variables": [
+    "session"
+  ],
+  "initialize_agentic_user_variables": [
+    "user_id",
+    "session"
+  ]
+}
