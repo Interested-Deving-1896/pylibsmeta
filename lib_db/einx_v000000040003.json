@@ -1,0 +1,2483 @@
+{
+  "OperationNotSupportedError": [],
+  "to_numpy_array": [
+    "x",
+    "dtype"
+  ],
+  "test_tensor_conversion": [
+    "setup_backend"
+  ],
+  "test_import": [],
+  "use_backend": [
+    "func"
+  ],
+  "assert_allclose": [
+    "x",
+    "y",
+    "setup"
+  ],
+  "to_version": [
+    "x"
+  ],
+  "DYNAMIC": {},
+  "default_is_static_arg": [
+    "x"
+  ],
+  "default_is_static_kwargs": [
+    "k",
+    "v"
+  ],
+  "wrap_einx_function": [
+    "op_no",
+    "wrap",
+    "is_static_arg",
+    "is_static_kwarg"
+  ],
+  "WrappedEinx": {
+    "__init__": [
+      "self",
+      "wrap"
+    ],
+    "__getattr__": [
+      "self",
+      "attr"
+    ]
+  },
+  "in_new_thread": [
+    "op"
+  ],
+  "einx_multithread": [],
+  "setup_backend": [],
+  "setup_adapt": [],
+  "arrayapi_is_available": [],
+  "numpy_backends": [],
+  "setup": [],
+  "jax_is_available": [],
+  "jax_backends": [],
+  "torch_is_available": [],
+  "torch_backends": [],
+  "mlx_is_available": [],
+  "mlx_backends": [],
+  "tf_is_available": [],
+  "tf_backends": [],
+  "dask_is_available": [],
+  "dask_backends": [],
+  "tinygrad_is_available": [],
+  "tinygrad_backends": [],
+  "pytest_addoption": [
+    "parser"
+  ],
+  "pytest_collection_modifyitems": [
+    "config",
+    "items"
+  ],
+  "pytest_runtest_setup": [
+    "item"
+  ],
+  "pytest_generate_tests": [
+    "metafunc"
+  ],
+  "EinxError": [],
+  "test_shape_adapt_with_vmap": [
+    "setup_adapt"
+  ],
+  "test_shape_adapt_numpylike_elementwise": [
+    "setup_adapt"
+  ],
+  "test_shape_adapt_numpylike_reduce": [
+    "setup_adapt"
+  ],
+  "get_line_of": [
+    "code",
+    "search"
+  ],
+  "test_compilation": [],
+  "test_import_torch": [],
+  "test_backend_resolution": [],
+  "test_values": [
+    "setup_backend"
+  ],
+  "test_compare_backends": [
+    "setup_backend"
+  ],
+  "BackendResolutionError": [],
+  "test_shape_id": [
+    "setup_backend"
+  ],
+  "test_shape_dot": [
+    "setup_backend"
+  ],
+  "test_shape_reduce": [
+    "setup_backend"
+  ],
+  "test_shape_elementwise": [
+    "setup_backend"
+  ],
+  "test_shape_argfind": [
+    "setup_backend"
+  ],
+  "test_shape_index": [
+    "setup_backend"
+  ],
+  "test_shape_preserve_shape": [
+    "setup_backend"
+  ],
+  "test_shape_solve": [],
+  "__version__": [],
+  "get": [],
+  "ExpressionIndicator": {
+    "__init__": [
+      "self",
+      "text"
+    ],
+    "create": [
+      "self",
+      "pos"
+    ],
+    "get_pos_for_literal": [
+      "self",
+      "literal"
+    ],
+    "get_pos_for_exprs": [
+      "self",
+      "exprs"
+    ],
+    "get_pos_for_axisnames": [
+      "self",
+      "exprs",
+      "axisnames"
+    ],
+    "get_pos_for_ellipses": [
+      "self",
+      "exprs"
+    ],
+    "get_pos_for_concat": [
+      "self",
+      "exprs"
+    ],
+    "get_pos_for_brackets": [
+      "self",
+      "exprs"
+    ]
+  },
+  "_idx_to_ordinal": [
+    "idx",
+    "n"
+  ],
+  "_arr_to_str": [
+    "l"
+  ],
+  "solve": [
+    "exprs_in",
+    "exprs_out",
+    "tensor_shapes",
+    "invocation",
+    "parameters",
+    "cse",
+    "cse_concat",
+    "cse_in_brackets",
+    "verbose",
+    "equations_stage3"
+  ],
+  "NamedTensor": {
+    "__init__": [
+      "self",
+      "value",
+      "expr"
+    ],
+    "ndim": [
+      "self"
+    ]
+  },
+  "cse": [
+    "expressions",
+    "cse_concat",
+    "cse_in_brackets",
+    "verbose"
+  ],
+  "_input_expr": [
+    "expr"
+  ],
+  "_get_expansion": [
+    "expr"
+  ],
+  "Equation": {
+    "__init__": [
+      "self",
+      "expr1",
+      "expr2",
+      "depth1",
+      "depth2",
+      "desc1",
+      "desc2"
+    ]
+  },
+  "Expression": {
+    "__init__": [
+      "self",
+      "ellipsis_indices",
+      "begin_pos",
+      "end_pos"
+    ]
+  },
+  "FlattenedAxis": {
+    "create": [
+      "inner",
+      "ellipsis_indices",
+      "begin_pos",
+      "end_pos"
+    ],
+    "__init__": [
+      "self",
+      "inner",
+      "ellipsis_indices",
+      "begin_pos",
+      "end_pos"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "ndim": [
+      "self"
+    ],
+    "value": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__deepcopy__": [
+      "self"
+    ],
+    "nodes": [
+      "self"
+    ]
+  },
+  "List": {
+    "create": [
+      "children",
+      "ellipsis_indices",
+      "begin_pos",
+      "end_pos"
+    ],
+    "__init__": [
+      "self",
+      "children",
+      "ellipsis_indices",
+      "begin_pos",
+      "end_pos"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "ndim": [
+      "self"
+    ],
+    "value": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__deepcopy__": [
+      "self"
+    ],
+    "nodes": [
+      "self"
+    ]
+  },
+  "Axis": {
+    "__init__": [
+      "self",
+      "name",
+      "value",
+      "ellipsis_indices",
+      "begin_pos",
+      "end_pos"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "ndim": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__deepcopy__": [
+      "self"
+    ],
+    "nodes": [
+      "self"
+    ]
+  },
+  "ConcatenatedAxis": {
+    "create": [
+      "children",
+      "ellipsis_indices",
+      "begin_pos",
+      "end_pos"
+    ],
+    "__init__": [
+      "self",
+      "children",
+      "ellipsis_indices",
+      "begin_pos",
+      "end_pos"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "ndim": [
+      "self"
+    ],
+    "value": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__deepcopy__": [
+      "self"
+    ],
+    "nodes": [
+      "self"
+    ]
+  },
+  "Brackets": {
+    "create": [
+      "inner",
+      "ellipsis_indices",
+      "begin_pos",
+      "end_pos"
+    ],
+    "__init__": [
+      "self",
+      "inner",
+      "ellipsis_indices",
+      "begin_pos",
+      "end_pos"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "ndim": [
+      "self"
+    ],
+    "value": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__deepcopy__": [
+      "self"
+    ],
+    "nodes": [
+      "self"
+    ]
+  },
+  "any_parent_is": [
+    "expr",
+    "pred",
+    "include_self"
+  ],
+  "is_in_brackets": [
+    "expr"
+  ],
+  "is_at_root": [
+    "expr"
+  ],
+  "Token": {
+    "__init__": [
+      "self",
+      "pos",
+      "text"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "TokenList": {
+    "__init__": [
+      "self",
+      "tokens",
+      "pos"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "_parentheses": [],
+  "_delimiters_front": [],
+  "_delimiters_back": [],
+  "_nary_ops": [],
+  "_ellipsis": [],
+  "_axis_name": [],
+  "_literals": [],
+  "_delimiter_to_name": [
+    "delimiter"
+  ],
+  "parse_op": [
+    "text"
+  ],
+  "parse_args": [
+    "text"
+  ],
+  "parse_arg": [
+    "text"
+  ],
+  "Ellipsis": {
+    "anonymous_variable_name": [],
+    "create": [
+      "inner",
+      "begin_pos",
+      "end_pos",
+      "ellipsis_id"
+    ],
+    "__init__": [
+      "self",
+      "inner",
+      "begin_pos",
+      "end_pos",
+      "ellipsis_id"
+    ],
+    "nodes": [
+      "self"
+    ],
+    "children": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__deepcopy__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__hash__": [
+      "self"
+    ],
+    "ndim": [
+      "self"
+    ],
+    "value": [
+      "self"
+    ]
+  },
+  "Args": {
+    "create": [
+      "children",
+      "begin_pos",
+      "end_pos"
+    ],
+    "__init__": [
+      "self",
+      "children",
+      "begin_pos",
+      "end_pos"
+    ],
+    "ndim": [
+      "self"
+    ],
+    "value": [
+      "self"
+    ],
+    "nodes": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__deepcopy__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__hash__": [
+      "self"
+    ]
+  },
+  "Op": {
+    "create": [
+      "children",
+      "begin_pos",
+      "end_pos"
+    ],
+    "__init__": [
+      "self",
+      "children",
+      "begin_pos",
+      "end_pos"
+    ],
+    "ndim": [
+      "self"
+    ],
+    "value": [
+      "self"
+    ],
+    "nodes": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__deepcopy__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__hash__": [
+      "self"
+    ]
+  },
+  "map": [
+    "expr",
+    "_map",
+    "include_children"
+  ],
+  "remove": [
+    "expr",
+    "pred",
+    "keep_children"
+  ],
+  "_product": [],
+  "split_concatenated_axes": [
+    "expr"
+  ],
+  "_einsum_diag_string": [
+    "ndim",
+    "axes_in",
+    "axis_out"
+  ],
+  "diagonal": [
+    "einsum"
+  ],
+  "_axis_to_axisint": [
+    "axis",
+    "name"
+  ],
+  "_axis_to_axistuple": [
+    "axis",
+    "name"
+  ],
+  "_associative_binary_to_nary": [
+    "binary_op"
+  ],
+  "_unsqueeze": [
+    "classical",
+    "tensor",
+    "axis"
+  ],
+  "_stack": [
+    "classical",
+    "tensors",
+    "axis"
+  ],
+  "_squeeze_transpose_broadcast": [
+    "classical",
+    "expr_in",
+    "tensor",
+    "expr_out",
+    "broadcast_to_unitary"
+  ],
+  "_squeeze_shape": [
+    "shape"
+  ],
+  "_squeeze_unsqueeze": [
+    "classical",
+    "tensor",
+    "shape"
+  ],
+  "_unravel": [
+    "classical",
+    "tensor",
+    "ravel_shape",
+    "axis"
+  ],
+  "_to_ord_str": [
+    "i"
+  ],
+  "_ensure_output": [
+    "op",
+    "expected_out_shapes",
+    "expected_type",
+    "allow_squeeze_unsqueeze",
+    "classical"
+  ],
+  "_make_concrete_types": [
+    "concrete_types"
+  ],
+  "_has_type": [
+    "x",
+    "types"
+  ],
+  "_is_scalar": [
+    "x"
+  ],
+  "_get_shape": [
+    "x"
+  ],
+  "_to_tensor": [
+    "to_tensor",
+    "forward",
+    "convert"
+  ],
+  "_unsupported_op": [
+    "name",
+    "backend",
+    "message"
+  ],
+  "_tensor_to_string": [
+    "tensor"
+  ],
+  "_kwarg_to_string": [
+    "v"
+  ],
+  "Invocation": {
+    "__init__": [
+      "self",
+      "expression",
+      "name",
+      "tensors",
+      "kwargs"
+    ],
+    "to_call_signature_string": [
+      "self"
+    ]
+  },
+  "_to_el_expr": [
+    "expr"
+  ],
+  "_parse_op": [
+    "description",
+    "el_op",
+    "invocation",
+    "allow_concat",
+    "implicit_output",
+    "mark_reduced_axes",
+    "allow_duplicate_el_axes",
+    "keepdims"
+  ],
+  "_semantic_checks_dot": [
+    "exprs_in",
+    "exprs_out",
+    "invocation"
+  ],
+  "_semantic_checks_get_at": [
+    "exprs_in",
+    "exprs_out",
+    "invocation"
+  ],
+  "_semantic_checks_sort": [
+    "exprs_in",
+    "exprs_out",
+    "invocation"
+  ],
+  "_semantic_checks_update_at": [
+    "exprs_in",
+    "exprs_out",
+    "invocation"
+  ],
+  "_semantic_checks_argfind": [
+    "exprs_in",
+    "exprs_out",
+    "invocation"
+  ],
+  "_cast_shape": [
+    "tensor",
+    "expr"
+  ],
+  "op": [
+    "op",
+    "el_op",
+    "allow_concat",
+    "implicit_output",
+    "mark_reduced_axes",
+    "add_keepdims_param",
+    "check",
+    "cse_in_brackets",
+    "iskwarg",
+    "equations_stage3",
+    "allow_nontrivial_unmarked_reduced_axes",
+    "allow_duplicate_el_axes",
+    "no_el_axis_permute"
+  ],
+  "id": [
+    "op"
+  ],
+  "elementwise": [
+    "op"
+  ],
+  "dot": [
+    "op"
+  ],
+  "_equations_stage3_index_at": [
+    "exprs_in",
+    "exprs_out",
+    "invocation",
+    "is_update"
+  ],
+  "get_at": [
+    "op"
+  ],
+  "update_at": [
+    "op"
+  ],
+  "reduce": [
+    "op"
+  ],
+  "_equations_stage3_argfind": [
+    "exprs_in",
+    "exprs_out",
+    "invocation"
+  ],
+  "argfind": [
+    "op"
+  ],
+  "preserve_shape": [
+    "op"
+  ],
+  "_name_to_op": [],
+  "ops": [
+    "namedtensor_ops"
+  ],
+  "logsumexp": [
+    "classical"
+  ],
+  "logaddexp": [
+    "classical"
+  ],
+  "softmax": [
+    "classical"
+  ],
+  "log_softmax": [
+    "classical"
+  ],
+  "count_nonzero": [
+    "classical"
+  ],
+  "flip": [
+    "classical",
+    "getitem"
+  ],
+  "py_id": [],
+  "Decomposer": {
+    "__init__": [
+      "self",
+      "classical"
+    ],
+    "__call__": [
+      "self",
+      "func"
+    ],
+    "_decompose_single": [
+      "self",
+      "expr",
+      "tensor"
+    ],
+    "_decompose": [
+      "self",
+      "exprs",
+      "tensors"
+    ],
+    "_compose_next": [
+      "self",
+      "exprs_in",
+      "tensors_in",
+      "expr_out"
+    ],
+    "_compose": [
+      "self",
+      "exprs_in",
+      "tensors_in",
+      "exprs_out"
+    ]
+  },
+  "_matchable": [
+    "expr_in",
+    "expr_out"
+  ],
+  "_expr_to_einsumstr": [
+    "exprs_in",
+    "expr_out",
+    "allow_repeat_axes"
+  ],
+  "_op": [
+    "einsum",
+    "name",
+    "allow_repeat_axes"
+  ],
+  "sum": [
+    "einsum"
+  ],
+  "multiply": [
+    "einsum"
+  ],
+  "_call_tensorfactory": [
+    "tensor",
+    "kwargs"
+  ],
+  "_assert_output": [
+    "tensor",
+    "expr",
+    "called",
+    "expected_type"
+  ],
+  "namedtensor_calltensorfactory": {
+    "op": [
+      "op",
+      "expected_type",
+      "context",
+      "kwargs"
+    ],
+    "ops": [
+      "ops",
+      "expected_type",
+      "context",
+      "kwargs"
+    ]
+  },
+  "_expr_to_axis": [
+    "expr"
+  ],
+  "_join_exprs": [
+    "exprs"
+  ],
+  "_ravel": [
+    "classical",
+    "expr_tensor",
+    "coords",
+    "expr_coords",
+    "expr_out",
+    "verbose"
+  ],
+  "get_at_ravelled": [
+    "classical"
+  ],
+  "update_at_ravelled": [
+    "op",
+    "classical"
+  ],
+  "all": [],
+  "TorchDeviceStack": {
+    "__init__": [
+      "self"
+    ],
+    "get_device": [
+      "self"
+    ],
+    "_wrap_namedtensor_op": [
+      "self",
+      "op"
+    ],
+    "_wrap_namedtensor_ops": [
+      "self",
+      "ops"
+    ],
+    "_get_stack": [
+      "self"
+    ],
+    "_enter": [
+      "self",
+      "tensors"
+    ],
+    "_exit": [
+      "self",
+      "tensors"
+    ]
+  },
+  "sort": [
+    "op",
+    "to_tensor"
+  ],
+  "einsum_from_torch": [
+    "torch",
+    "get_device"
+  ],
+  "vmap_from_torch": [
+    "torch",
+    "get_device"
+  ],
+  "vmap_from_mlx": [
+    "mlx"
+  ],
+  "einsum_from_mlx": [
+    "mlx"
+  ],
+  "einsum_from_jax": [
+    "jax"
+  ],
+  "vmap_from_jax": [
+    "op",
+    "to_tensor"
+  ],
+  "einsum_from_tinygrad": [
+    "tinygrad"
+  ],
+  "reshape": [
+    "op",
+    "to_tensor"
+  ],
+  "transpose": [
+    "op",
+    "to_tensor"
+  ],
+  "broadcast_to": [
+    "op",
+    "to_tensor"
+  ],
+  "roll": [
+    "op",
+    "to_tensor",
+    "argname_axis",
+    "argname_shift"
+  ],
+  "matmul": [
+    "op",
+    "to_tensor"
+  ],
+  "arange": [
+    "op",
+    "to_dtype"
+  ],
+  "split": [
+    "op",
+    "to_tensor",
+    "cumulative",
+    "argname_axis"
+  ],
+  "concatenate": [
+    "op",
+    "to_tensor",
+    "argname_axis"
+  ],
+  "_detachscalars": {
+    "__init__": [
+      "self",
+      "einsum",
+      "multiply"
+    ],
+    "__call__": [
+      "self",
+      "equation"
+    ]
+  },
+  "einsum_from_numpy": [
+    "op",
+    "to_tensor",
+    "multiply"
+  ],
+  "einsum_from_arrayapi": [
+    "xp"
+  ],
+  "ArrayApiNamespaceStack": {
+    "__init__": [
+      "self"
+    ],
+    "get_xp": [
+      "self"
+    ],
+    "_wrap_namedtensor_op": [
+      "self",
+      "op"
+    ],
+    "_wrap_namedtensor_ops": [
+      "self",
+      "ops"
+    ],
+    "_get_stack": [
+      "self"
+    ],
+    "_enter": [
+      "self",
+      "tensors"
+    ],
+    "_exit": [
+      "self",
+      "tensors"
+    ],
+    "__call__": [
+      "self",
+      "tensors"
+    ]
+  },
+  "tensortype_from_arrayapi": [
+    "xp"
+  ],
+  "expr_to_ftdims": [
+    "expr",
+    "axisname_to_ftdim",
+    "runtime_axisname_to_ftdims"
+  ],
+  "einsum_from_tensorflow": [
+    "tf"
+  ],
+  "_all": [],
+  "_map": [],
+  "flatten": [
+    "x",
+    "is_leaf"
+  ],
+  "RWLock": {
+    "__init__": [
+      "self"
+    ],
+    "read_acquire": [
+      "self"
+    ],
+    "read_release": [
+      "self"
+    ],
+    "read": [
+      "self"
+    ],
+    "write_acquire": [
+      "self"
+    ],
+    "write_release": [
+      "self"
+    ],
+    "write": [
+      "self"
+    ]
+  },
+  "_thread_local": [],
+  "warn_on_retrace_num": [],
+  "max_cache_size": [],
+  "_freeze_value": [
+    "x"
+  ],
+  "_freeze_args": [
+    "func"
+  ],
+  "_with_retrace_warning": [
+    "func"
+  ],
+  "lru_cache": [
+    "func"
+  ],
+  "Variable": {
+    "__init__": [
+      "self",
+      "id",
+      "name"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__hash__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "sympy": [
+      "self"
+    ]
+  },
+  "Constant": {
+    "__init__": [
+      "self",
+      "value"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__hash__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "sympy": [
+      "self"
+    ]
+  },
+  "Sum": {
+    "maybe": [
+      "children"
+    ],
+    "__init__": [
+      "self",
+      "children"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__hash__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "sympy": [
+      "self"
+    ]
+  },
+  "Product": {
+    "maybe": [
+      "children"
+    ],
+    "__init__": [
+      "self",
+      "children"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__hash__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "sympy": [
+      "self"
+    ]
+  },
+  "_to_expr": [
+    "x"
+  ],
+  "SolveException": {
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "SolveExceptionNoSolution": {
+    "__init__": [
+      "self",
+      "message",
+      "contradicting_variables"
+    ]
+  },
+  "SolveExceptionTooManySolutions": {
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "_get_name": [
+    "op"
+  ],
+  "use_name_of": [
+    "signature_op"
+  ],
+  "RemovedOperationError": {},
+  "vmap": [],
+  "vmap_with_axis": [],
+  "rearrange": [
+    "description"
+  ],
+  "_exprs_to_axes": [
+    "exprs"
+  ],
+  "_solve": [
+    "description",
+    "tensor_shapes",
+    "parameters",
+    "reraise",
+    "cse"
+  ],
+  "solve_shapes": [
+    "description"
+  ],
+  "solve_axes": [
+    "description"
+  ],
+  "matches": [
+    "description"
+  ],
+  "check": [
+    "description"
+  ],
+  "_F": [],
+  "TensorArg": {
+    "__init__": [
+      "self",
+      "value"
+    ]
+  },
+  "_split_tensors": [
+    "signature",
+    "args",
+    "kwargs"
+  ],
+  "_get_signature": [
+    "func"
+  ],
+  "_to_tracer": [
+    "x",
+    "backend",
+    "name"
+  ],
+  "_construct_graph": [
+    "args",
+    "kwargs",
+    "func",
+    "backend"
+  ],
+  "to_ord_str": [
+    "x"
+  ],
+  "_api_withoutbackend": [
+    "func",
+    "signature"
+  ],
+  "_api_withbackend": [
+    "func",
+    "backend",
+    "signature"
+  ],
+  "api": [
+    "func",
+    "backend",
+    "signature"
+  ],
+  "InvalidBackend": {
+    "__init__": [
+      "self",
+      "name",
+      "message",
+      "priority"
+    ],
+    "is_supported_tensor": [
+      "self",
+      "tensor"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "raise_on_import_failure": [
+      "self"
+    ],
+    "__hash__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self"
+    ]
+  },
+  "Backend": {
+    "__init__": [
+      "self",
+      "ops",
+      "name",
+      "priority",
+      "optimizations",
+      "compiler",
+      "is_supported_tensor",
+      "get_shape"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "raise_on_import_failure": [
+      "self"
+    ],
+    "__hash__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self"
+    ]
+  },
+  "Use": {
+    "__init__": [
+      "self",
+      "backend",
+      "registry"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_value",
+      "traceback"
+    ]
+  },
+  "BackendRegistryState": {
+    "__init__": [
+      "self",
+      "state"
+    ],
+    "_invalid_backend_reasons": [
+      "self"
+    ],
+    "_run_factory": [
+      "self",
+      "module_name",
+      "backend_name",
+      "backend_factory"
+    ],
+    "_register": [
+      "self",
+      "backend"
+    ],
+    "_register_on_import": [
+      "self",
+      "module_name",
+      "backend_name",
+      "backend_factory"
+    ],
+    "_check_new_imports": [
+      "self",
+      "has_checked"
+    ],
+    "_get_by_tensors": [
+      "self",
+      "tensors",
+      "has_checked_new_imports"
+    ],
+    "_get_by_name": [
+      "self",
+      "name",
+      "has_checked_new_imports"
+    ],
+    "_get": [
+      "self",
+      "backend",
+      "tensors",
+      "has_checked_new_imports"
+    ],
+    "_enter": [
+      "self",
+      "backend"
+    ],
+    "_exit": [
+      "self",
+      "backend"
+    ],
+    "register": [
+      "self",
+      "backend"
+    ],
+    "register_on_import": [
+      "self",
+      "module_name",
+      "backend_name",
+      "backend_factory"
+    ],
+    "get_by_tensors": [
+      "self",
+      "tensors"
+    ],
+    "get_by_name": [
+      "self",
+      "name"
+    ],
+    "get": [
+      "self",
+      "backend",
+      "tensors"
+    ],
+    "enter": [
+      "self",
+      "backend"
+    ],
+    "exit": [
+      "self",
+      "backend"
+    ]
+  },
+  "BackendRegistry": {
+    "__init__": [
+      "self"
+    ],
+    "register": [
+      "self",
+      "backend"
+    ],
+    "register_on_import": [
+      "self",
+      "module_name",
+      "backend_name",
+      "backend_factory"
+    ],
+    "get_by_tensors": [
+      "self",
+      "tensor"
+    ],
+    "get_by_name": [
+      "self",
+      "name"
+    ],
+    "get": [
+      "self",
+      "backend",
+      "tensors"
+    ],
+    "enter": [
+      "self",
+      "backend"
+    ],
+    "exit": [
+      "self",
+      "backend"
+    ]
+  },
+  "registry": [],
+  "export": [
+    "obj"
+  ],
+  "SyntaxError": {
+    "__init__": [
+      "self",
+      "expression",
+      "message",
+      "pos"
+    ]
+  },
+  "RankError": {
+    "__init__": [
+      "self",
+      "invocation",
+      "message",
+      "pos",
+      "constraints"
+    ]
+  },
+  "AxisSizeError": {
+    "__init__": [
+      "self",
+      "invocation",
+      "message",
+      "pos",
+      "constraints"
+    ]
+  },
+  "SemanticError": {
+    "__init__": [
+      "self",
+      "message",
+      "invocation",
+      "pos"
+    ]
+  },
+  "ImportBackendError": {},
+  "CallOperationError": {
+    "create": [
+      "e",
+      "code"
+    ]
+  },
+  "_args_return": [
+    "single",
+    "kwargs"
+  ],
+  "_make_reduction_doc": [
+    "op",
+    "line1",
+    "output"
+  ],
+  "_keepdims_warning": [
+    "keepdims"
+  ],
+  "mean": [
+    "description",
+    "tensor"
+  ],
+  "var": [
+    "description",
+    "tensor"
+  ],
+  "std": [
+    "description",
+    "tensor"
+  ],
+  "prod": [
+    "description",
+    "tensor"
+  ],
+  "any": [
+    "description",
+    "tensor"
+  ],
+  "max": [
+    "description",
+    "tensor"
+  ],
+  "min": [
+    "description",
+    "tensor"
+  ],
+  "_make_elwise_doc": [
+    "op",
+    "line1",
+    "output",
+    "nargs"
+  ],
+  "add": [
+    "description"
+  ],
+  "subtract": [
+    "description"
+  ],
+  "true_divide": [
+    "description"
+  ],
+  "floor_divide": [
+    "description"
+  ],
+  "divide": [
+    "description"
+  ],
+  "logical_and": [
+    "description"
+  ],
+  "logical_or": [
+    "description"
+  ],
+  "where": [
+    "description",
+    "mask",
+    "x",
+    "y"
+  ],
+  "maximum": [
+    "description"
+  ],
+  "minimum": [
+    "description"
+  ],
+  "less": [
+    "description"
+  ],
+  "less_equal": [
+    "description"
+  ],
+  "greater": [
+    "description"
+  ],
+  "greater_equal": [
+    "description"
+  ],
+  "equal": [
+    "description"
+  ],
+  "not_equal": [
+    "description"
+  ],
+  "_update_at_doc": [
+    "op",
+    "line1",
+    "value1",
+    "value2"
+  ],
+  "set_at": [
+    "description"
+  ],
+  "add_at": [
+    "description"
+  ],
+  "subtract_at": [
+    "description"
+  ],
+  "argsort": [
+    "description",
+    "tensor"
+  ],
+  "_make_argfind_doc": [
+    "op",
+    "find"
+  ],
+  "argmax": [
+    "description",
+    "tensor"
+  ],
+  "argmin": [
+    "description",
+    "tensor"
+  ],
+  "_make_iskwarg": [
+    "op"
+  ],
+  "_get_backend_kwargs": [],
+  "adapt": [
+    "op"
+  ],
+  "adapt_numpylike_reduce": [
+    "op"
+  ],
+  "adapt_numpylike_elementwise": [
+    "op"
+  ],
+  "_backend_creator": [
+    "create"
+  ],
+  "create_backend_numpylike": [
+    "numpy",
+    "classical"
+  ],
+  "create_backend_einsum": [
+    "numpy",
+    "classical"
+  ],
+  "create_backend": [],
+  "_raise_on_invalid_version": [],
+  "_has_allowed_in_graph": [],
+  "_has_allowed_in_graph_lock": [],
+  "_allow_ops_in_graph": [],
+  "adapt_with_vmap": [
+    "op",
+    "signature"
+  ],
+  "create_backend_vmap": [
+    "torch",
+    "classical",
+    "device_stack"
+  ],
+  "_make_doc_adapt_numpylike_reduce": [],
+  "_make_doc_adapt_numpylike_elementwise": [],
+  "_make_doc_adapt_with_vmap": [
+    "framework",
+    "vmap"
+  ],
+  "Tracer": {
+    "__init__": [
+      "self",
+      "origin"
+    ]
+  },
+  "Graph": {
+    "__init__": [
+      "self",
+      "inputs",
+      "output",
+      "name"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ]
+  },
+  "_dependon": [],
+  "DependOn": {
+    "__init__": [
+      "self",
+      "dependencies"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_value",
+      "traceback"
+    ]
+  },
+  "depend_on": [],
+  "get_additional_dependencies": [],
+  "Application": {
+    "__init__": [
+      "self",
+      "inputs",
+      "output"
+    ]
+  },
+  "depends_on": [
+    "x",
+    "predecessor"
+  ],
+  "Cast": {
+    "__init__": [
+      "self",
+      "input",
+      "output"
+    ],
+    "_tracer_transform": [
+      "self",
+      "transform"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ]
+  },
+  "cast": [
+    "input",
+    "output"
+  ],
+  "visualize": [
+    "x"
+  ],
+  "InlineGraph": {
+    "__call__": [
+      "self",
+      "x",
+      "transform"
+    ]
+  },
+  "SkipCast": {
+    "_is_result_of_call": [
+      "self",
+      "x"
+    ],
+    "__call__": [
+      "self",
+      "x",
+      "transform"
+    ]
+  },
+  "_skip_id": [
+    "output"
+  ],
+  "Optimizer": {
+    "__init__": [
+      "self",
+      "optimizations"
+    ],
+    "_set": [
+      "self",
+      "oldobj",
+      "newobj"
+    ],
+    "_optimize": [
+      "self",
+      "x"
+    ]
+  },
+  "optimize": [
+    "x",
+    "optimizations"
+  ],
+  "SkipReshape": {
+    "__init__": [
+      "self",
+      "reshape"
+    ],
+    "_is_result_of_call": [
+      "self",
+      "x"
+    ],
+    "__call__": [
+      "self",
+      "x",
+      "transform"
+    ]
+  },
+  "SkipTranspose": {
+    "__init__": [
+      "self",
+      "transpose"
+    ],
+    "_is_result_of_call": [
+      "self",
+      "x"
+    ],
+    "__call__": [
+      "self",
+      "x",
+      "transform"
+    ]
+  },
+  "SkipConcatenate": {
+    "__init__": [
+      "self",
+      "concatenate"
+    ],
+    "_is_result_of_call": [
+      "self",
+      "x"
+    ],
+    "__call__": [
+      "self",
+      "x",
+      "transform"
+    ]
+  },
+  "SkipBroadcastTo": {
+    "__init__": [
+      "self",
+      "broadcast_to"
+    ],
+    "_is_result_of_call": [
+      "self",
+      "x"
+    ],
+    "__call__": [
+      "self",
+      "x",
+      "transform"
+    ]
+  },
+  "name_to_operator": [],
+  "CompilationCache": {
+    "__init__": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self"
+    ],
+    "_get_new": [
+      "self",
+      "x"
+    ],
+    "__getitem__": [
+      "self",
+      "x"
+    ],
+    "__setitem__": [
+      "self",
+      "x",
+      "concrete"
+    ]
+  },
+  "CompiledGraph": {
+    "__init__": [
+      "self",
+      "graph",
+      "cache"
+    ],
+    "__call__": [
+      "self"
+    ]
+  },
+  "compile": [
+    "object",
+    "return_code"
+  ],
+  "Block": {
+    "__init__": [
+      "self"
+    ],
+    "prepend": [
+      "self",
+      "definition"
+    ],
+    "prepend_after_comments": [
+      "self",
+      "definition"
+    ],
+    "append": [
+      "self",
+      "definition"
+    ],
+    "to_code": [
+      "self",
+      "value_to_code"
+    ]
+  },
+  "Statement": {
+    "__init__": [
+      "self",
+      "to_code",
+      "inputs",
+      "output_variables",
+      "block"
+    ],
+    "input_variables": [
+      "self"
+    ]
+  },
+  "CommentStatement": {
+    "__init__": [
+      "self",
+      "comment",
+      "block"
+    ]
+  },
+  "comment_statement": [
+    "comment",
+    "block"
+  ],
+  "Literal": {
+    "__init__": [
+      "self",
+      "code",
+      "block"
+    ],
+    "used_variables": [
+      "self"
+    ]
+  },
+  "Inlined": {
+    "__init__": [
+      "self",
+      "to_code",
+      "inputs",
+      "block"
+    ],
+    "used_variables": [
+      "self"
+    ]
+  },
+  "CodeObject": {
+    "__init__": [
+      "self",
+      "object"
+    ],
+    "_to_key": [
+      "self",
+      "x"
+    ],
+    "to_code": [
+      "self",
+      "value_to_code"
+    ],
+    "variables": [
+      "self"
+    ],
+    "blocks": [
+      "self"
+    ],
+    "_get_scope_for": [
+      "self",
+      "obj"
+    ],
+    "get_block_for": [
+      "self",
+      "obj"
+    ],
+    "add_variable_for": [
+      "self",
+      "obj",
+      "allow_reusing_name"
+    ],
+    "define": [
+      "self",
+      "obj",
+      "expression",
+      "no_inline",
+      "force_inline"
+    ],
+    "__contains__": [
+      "self",
+      "obj"
+    ],
+    "__getitem__": [
+      "self",
+      "obj"
+    ],
+    "__setitem__": [
+      "self",
+      "obj",
+      "expression"
+    ]
+  },
+  "_debug_value_to_code": [
+    "x"
+  ],
+  "Map": {
+    "__init__": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "key"
+    ]
+  },
+  "get_usages": [
+    "object"
+  ],
+  "Scope": {
+    "__init__": [
+      "self"
+    ],
+    "is_predecessor_of": [
+      "self",
+      "other"
+    ]
+  },
+  "_IntermediateMap": {
+    "__init__": [
+      "self",
+      "global_scope"
+    ],
+    "__contains__": [
+      "self",
+      "x"
+    ],
+    "__getitem__": [
+      "self",
+      "x"
+    ],
+    "__setitem__": [
+      "self",
+      "x",
+      "scopes"
+    ],
+    "items": [
+      "self"
+    ],
+    "all_scopes": [
+      "self"
+    ]
+  },
+  "get_scopes": [
+    "x"
+  ],
+  "GetAttr": {
+    "__init__": [
+      "self",
+      "obj",
+      "key"
+    ],
+    "_tracer_transform": [
+      "self",
+      "transform"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ]
+  },
+  "getattr": [
+    "obj",
+    "key"
+  ],
+  "GetItem": {
+    "__init__": [
+      "self",
+      "obj",
+      "key"
+    ],
+    "_tracer_transform": [
+      "self",
+      "transform"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ]
+  },
+  "getitem": [
+    "obj",
+    "key"
+  ],
+  "UpdateItem": {
+    "__init__": [
+      "self",
+      "obj",
+      "key",
+      "value",
+      "op"
+    ],
+    "_tracer_transform": [
+      "self",
+      "transform"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ]
+  },
+  "setitem": [
+    "obj",
+    "key",
+    "value"
+  ],
+  "additem": [
+    "obj",
+    "key",
+    "value"
+  ],
+  "subtractitem": [
+    "obj",
+    "key",
+    "value"
+  ],
+  "Call": {
+    "__init__": [
+      "self",
+      "function",
+      "args",
+      "kwargs",
+      "additional_dependencies"
+    ],
+    "_tracer_transform": [
+      "self",
+      "transform"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ]
+  },
+  "call": [
+    "func",
+    "args",
+    "kwargs"
+  ],
+  "CallInplace": {
+    "__init__": [
+      "self",
+      "xs",
+      "function",
+      "args",
+      "kwargs",
+      "additional_dependencies"
+    ],
+    "_tracer_transform": [
+      "self",
+      "transform"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ]
+  },
+  "call_inplace": [
+    "xs",
+    "func",
+    "args",
+    "kwargs"
+  ],
+  "Import": {
+    "__init__": [
+      "self",
+      "import_",
+      "from_",
+      "as_"
+    ],
+    "_tracer_transform": [
+      "self",
+      "transform"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ]
+  },
+  "import_": [
+    "import_",
+    "as_",
+    "from_"
+  ],
+  "OperatorApplication": {
+    "__init__": [
+      "self",
+      "operator",
+      "operands"
+    ],
+    "_tracer_transform": [
+      "self",
+      "transform"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ]
+  },
+  "operator": [
+    "operator"
+  ],
+  "mul": [
+    "a",
+    "b"
+  ],
+  "Builtin": {
+    "__init__": [
+      "self",
+      "name"
+    ],
+    "_tracer_transform": [
+      "self",
+      "transform"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ]
+  },
+  "Builtins": {
+    "__getattr__": [
+      "self",
+      "name"
+    ]
+  },
+  "builtins": [],
+  "Assert": {
+    "__init__": [
+      "self",
+      "xs",
+      "condition",
+      "message"
+    ],
+    "_tracer_transform": [
+      "self",
+      "transform"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ]
+  },
+  "assert_": [
+    "xs",
+    "condition",
+    "message"
+  ],
+  "constant": [
+    "value"
+  ],
+  "Value": {
+    "__init__": [
+      "self",
+      "origin"
+    ],
+    "_tracer_type": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__getattr__": [
+      "self",
+      "key"
+    ],
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "__call__": [
+      "self"
+    ]
+  },
+  "function": [
+    "func",
+    "args",
+    "kwargs"
+  ],
+  "ConvertibleTensor": {
+    "__init__": [
+      "self",
+      "origin",
+      "concrete",
+      "shape"
+    ],
+    "_tracer_type": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__hash__": [
+      "self"
+    ],
+    "ndim": [
+      "self"
+    ]
+  },
+  "Tensor": {
+    "__init__": [
+      "self",
+      "origin",
+      "shape"
+    ],
+    "_tracer_type": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__hash__": [
+      "self"
+    ],
+    "ndim": [
+      "self"
+    ]
+  },
+  "numpy": {
+    "__init__": [
+      "self",
+      "np"
+    ]
+  },
+  "torch": {
+    "__init__": [
+      "self",
+      "torch"
+    ]
+  },
+  "math": {
+    "__init__": [
+      "self",
+      "math"
+    ]
+  },
+  "tensorflow": {
+    "__init__": [
+      "self",
+      "tf"
+    ]
+  },
+  "nn": {
+    "__init__": [
+      "self",
+      "nn"
+    ]
+  },
+  "core": {
+    "__init__": [
+      "self",
+      "mx"
+    ]
+  },
+  "mlx": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "jax": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "tinygrad": {
+    "__init__": [
+      "self",
+      "tinygrad"
+    ]
+  },
+  "set_shape": [
+    "op"
+  ],
+  "take": [
+    "op",
+    "argname_axis"
+  ],
+  "inplace": [
+    "op"
+  ],
+  "tensordot": [
+    "op",
+    "argname_axes"
+  ],
+  "einsum": [
+    "op"
+  ],
+  "_to_shapes_inner": [
+    "axes",
+    "shapes_outer"
+  ],
+  "_to_shapes_outer": [
+    "axes",
+    "shapes_inner",
+    "n"
+  ],
+  "at": {
+    "__init__": [
+      "self",
+      "x",
+      "indices"
+    ]
+  },
+  "_at_updater": [
+    "self",
+    "op"
+  ],
+  "Lazy": {
+    "__init__": [
+      "self",
+      "get_xp"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ]
+  },
+  "arrayapi": {
+    "__init__": [
+      "self",
+      "get_xp"
+    ],
+    "int32": [
+      "self"
+    ],
+    "int64": [
+      "self"
+    ],
+    "float32": [
+      "self"
+    ],
+    "float64": [
+      "self"
+    ],
+    "bool": [
+      "self"
+    ]
+  },
+  "report": [],
+  "generate_op": [
+    "func_str"
+  ],
+  "generate_code": [
+    "func_str",
+    "backend"
+  ],
+  "generate": [
+    "func_str"
+  ],
+  "underline": [
+    "text",
+    "char"
+  ],
+  "code": [],
+  "project": [],
+  "copyright": [],
+  "author": [],
+  "extensions": [],
+  "templates_path": [],
+  "exclude_patterns": [],
+  "autosummary_generate": [],
+  "autodoc_type_aliases": [],
+  "autodoc_typehints_format": [],
+  "html_theme": [],
+  "html_theme_options": []
+}
