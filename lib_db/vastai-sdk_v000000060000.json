@@ -1,0 +1,3322 @@
+{
+  "VAST_API_URL": [],
+  "get_api_key": [],
+  "get_download_url": [
+    "deployment_id",
+    "api_key"
+  ],
+  "download_tarball": [
+    "download_url"
+  ],
+  "extract_tarball": [
+    "tarball_path"
+  ],
+  "get_config": [
+    "path"
+  ],
+  "export_envs": [
+    "envs"
+  ],
+  "run_apt_gets": [
+    "packages"
+  ],
+  "run_pip_installs": [
+    "packages"
+  ],
+  "run_scripts": [
+    "runs"
+  ],
+  "main": [],
+  "_vastai": [],
+  "_VAST_LOG_LEVELS": [],
+  "_env_level": [],
+  "_level": [],
+  "logger": [],
+  "__all__": [],
+  "_APIKEY_SENTINEL": [],
+  "_resolve_api_key": [
+    "api_key"
+  ],
+  "_BaseClient": {
+    "__init__": [
+      "self",
+      "api_key",
+      "vast_server"
+    ],
+    "_headers": [
+      "self"
+    ],
+    "_url": [
+      "self",
+      "path"
+    ]
+  },
+  "_regions": [],
+  "reverse_mapping": [
+    "regions"
+  ],
+  "_regions_rev": [],
+  "queryParser": [
+    "kwargs",
+    "instance"
+  ],
+  "queryFormatter": [
+    "state",
+    "obj",
+    "instance"
+  ],
+  "lastOutput": [
+    "state",
+    "obj",
+    "instance"
+  ],
+  "_hooks": [],
+  "VastAI": {
+    "__init__": [
+      "self",
+      "api_key",
+      "server_url",
+      "retry",
+      "raw",
+      "explain",
+      "quiet",
+      "curl"
+    ],
+    "creds_source": [
+      "self"
+    ],
+    "generate_signature_from_argparse": [
+      "self",
+      "parser"
+    ],
+    "import_cli_functions": [
+      "self"
+    ],
+    "create_wrapper": [
+      "self",
+      "func",
+      "method_name"
+    ],
+    "credentials_on_disk": [
+      "self"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ]
+  },
+  "VastAIBase": {
+    "attach_ssh": [
+      "self",
+      "instance_id",
+      "ssh_key"
+    ],
+    "cancel_copy": [
+      "self",
+      "dst"
+    ],
+    "cancel_sync": [
+      "self",
+      "dst"
+    ],
+    "change_bid": [
+      "self",
+      "id",
+      "price"
+    ],
+    "copy": [
+      "self",
+      "src",
+      "dst",
+      "identity"
+    ],
+    "cloud_copy": [
+      "self",
+      "src",
+      "dst",
+      "instance",
+      "connection",
+      "transfer"
+    ],
+    "create_api_key": [
+      "self",
+      "name",
+      "permission_file",
+      "key_params"
+    ],
+    "create_ssh_key": [
+      "self",
+      "ssh_key"
+    ],
+    "create_autogroup": [
+      "self",
+      "test_workers",
+      "gpu_ram",
+      "template_hash",
+      "template_id",
+      "search_params",
+      "launch_args",
+      "endpoint_name",
+      "endpoint_id",
+      "min_load",
+      "target_util",
+      "cold_mult"
+    ],
+    "create_endpoint": [
+      "self",
+      "min_load",
+      "target_util",
+      "cold_mult",
+      "cold_workers",
+      "max_workers",
+      "endpoint_name"
+    ],
+    "create_instance": [
+      "self",
+      "id",
+      "price",
+      "disk",
+      "image",
+      "login",
+      "label",
+      "onstart",
+      "onstart_cmd",
+      "entrypoint",
+      "ssh",
+      "jupyter",
+      "direct",
+      "jupyter_dir",
+      "jupyter_lab",
+      "lang_utf8",
+      "python_utf8",
+      "extra",
+      "env",
+      "args",
+      "force",
+      "cancel_unavail",
+      "template_hash"
+    ],
+    "create_instances": [
+      "self",
+      "ids",
+      "template_hash",
+      "user",
+      "disk",
+      "image",
+      "login",
+      "label",
+      "onstart",
+      "onstart_cmd",
+      "entrypoint",
+      "ssh",
+      "jupyter",
+      "direct",
+      "jupyter_dir",
+      "jupyter_lab",
+      "lang_utf8",
+      "python_utf8",
+      "extra",
+      "env",
+      "args",
+      "force",
+      "cancel_unavail",
+      "bid_price",
+      "create_volume",
+      "link_volume",
+      "volume_size",
+      "mount_path",
+      "volume_label"
+    ],
+    "create_subaccount": [
+      "self",
+      "email",
+      "username",
+      "password",
+      "type"
+    ],
+    "create_team": [
+      "self",
+      "team_name"
+    ],
+    "create_team_role": [
+      "self",
+      "name",
+      "permissions"
+    ],
+    "create_template": [
+      "self",
+      "name",
+      "image",
+      "image_tag",
+      "login",
+      "env",
+      "ssh",
+      "jupyter",
+      "direct",
+      "jupyter_dir",
+      "jupyter_lab",
+      "onstart_cmd",
+      "search_params",
+      "disk_space"
+    ],
+    "delete_api_key": [
+      "self",
+      "id"
+    ],
+    "delete_ssh_key": [
+      "self",
+      "id"
+    ],
+    "delete_autoscaler": [
+      "self",
+      "id"
+    ],
+    "delete_endpoint": [
+      "self",
+      "id"
+    ],
+    "destroy_instance": [
+      "self",
+      "id"
+    ],
+    "destroy_instances": [
+      "self",
+      "ids"
+    ],
+    "destroy_team": [
+      "self"
+    ],
+    "detach_ssh": [
+      "self",
+      "instance_id",
+      "ssh_key_id"
+    ],
+    "execute": [
+      "self",
+      "id",
+      "COMMAND"
+    ],
+    "invite_team_member": [
+      "self",
+      "email",
+      "role"
+    ],
+    "label_instance": [
+      "self",
+      "id",
+      "label"
+    ],
+    "launch_instance": [
+      "gpu_name",
+      "num_gpus",
+      "image",
+      "region",
+      "disk",
+      "limit",
+      "order",
+      "login",
+      "label",
+      "onstart",
+      "onstart_cmd",
+      "entrypoint",
+      "ssh",
+      "jupyter",
+      "direct",
+      "jupyter_dir",
+      "jupyter_lab",
+      "lang_utf8",
+      "python_utf8",
+      "extra",
+      "env",
+      "args",
+      "force",
+      "cancel_unavail",
+      "template_hash",
+      "explain",
+      "raw"
+    ],
+    "logs": [
+      "self",
+      "INSTANCE_ID",
+      "tail"
+    ],
+    "prepay_instance": [
+      "self",
+      "id",
+      "amount"
+    ],
+    "reboot_instance": [
+      "self",
+      "id"
+    ],
+    "recycle_instance": [
+      "self",
+      "id"
+    ],
+    "remove_team_member": [
+      "self",
+      "id"
+    ],
+    "remove_team_role": [
+      "self",
+      "NAME"
+    ],
+    "reports": [
+      "self",
+      "id"
+    ],
+    "reset_api_key": [
+      "self"
+    ],
+    "start_instance": [
+      "self",
+      "id"
+    ],
+    "start_instances": [
+      "self",
+      "ids"
+    ],
+    "stop_instance": [
+      "self",
+      "id"
+    ],
+    "stop_instances": [
+      "self",
+      "ids"
+    ],
+    "search_benchmarks": [
+      "self",
+      "query"
+    ],
+    "search_invoices": [
+      "self",
+      "query"
+    ],
+    "search_offers": [
+      "self",
+      "type",
+      "no_default",
+      "new",
+      "limit",
+      "disable_bundling",
+      "storage",
+      "order",
+      "query"
+    ],
+    "search_templates": [
+      "self",
+      "query"
+    ],
+    "set_api_key": [
+      "self",
+      "new_api_key"
+    ],
+    "set_user": [
+      "self",
+      "file"
+    ],
+    "ssh_url": [
+      "self",
+      "id"
+    ],
+    "scp_url": [
+      "self",
+      "id"
+    ],
+    "show_api_key": [
+      "self",
+      "id"
+    ],
+    "show_api_keys": [
+      "self"
+    ],
+    "show_ssh_keys": [
+      "self"
+    ],
+    "show_autoscalers": [
+      "self"
+    ],
+    "show_endpoints": [
+      "self"
+    ],
+    "show_connections": [
+      "self"
+    ],
+    "show_deposit": [
+      "self",
+      "Id"
+    ],
+    "show_earnings": [
+      "self",
+      "quiet",
+      "start_date",
+      "end_date",
+      "machine_id"
+    ],
+    "show_invoices": [
+      "self",
+      "quiet",
+      "start_date",
+      "end_date",
+      "only_charges",
+      "only_credits",
+      "instance_label"
+    ],
+    "show_instance": [
+      "self",
+      "id"
+    ],
+    "show_instances": [
+      "self",
+      "quiet"
+    ],
+    "show_ipaddrs": [
+      "self"
+    ],
+    "show_user": [
+      "self",
+      "quiet"
+    ],
+    "show_subaccounts": [
+      "self",
+      "quiet"
+    ],
+    "show_team_members": [
+      "self"
+    ],
+    "show_team_role": [
+      "self",
+      "NAME"
+    ],
+    "show_team_roles": [
+      "self"
+    ],
+    "transfer_credit": [
+      "self",
+      "recipient",
+      "amount"
+    ],
+    "update_autoscaler": [
+      "self",
+      "id",
+      "min_load",
+      "target_util",
+      "cold_mult",
+      "test_workers",
+      "gpu_ram",
+      "template_hash",
+      "template_id",
+      "search_params",
+      "launch_args",
+      "endpoint_name",
+      "endpoint_id"
+    ],
+    "update_endpoint": [
+      "self",
+      "id",
+      "min_load",
+      "target_util",
+      "cold_mult",
+      "cold_workers",
+      "max_workers",
+      "endpoint_name"
+    ],
+    "update_team_role": [
+      "self",
+      "id",
+      "name",
+      "permissions"
+    ],
+    "update_ssh_key": [
+      "self",
+      "id",
+      "ssh_key"
+    ],
+    "generate_pdf_invoices": [
+      "self",
+      "quiet",
+      "start_date",
+      "end_date",
+      "only_charges",
+      "only_credits"
+    ],
+    "cleanup_machine": [
+      "self",
+      "id"
+    ],
+    "list_machine": [
+      "self",
+      "id",
+      "price_gpu",
+      "price_disk",
+      "price_inetu",
+      "price_inetd",
+      "discount_rate",
+      "min_chunk",
+      "end_date"
+    ],
+    "list_machines": [
+      "self",
+      "ids",
+      "price_gpu",
+      "price_disk",
+      "price_inetu",
+      "price_inetd",
+      "discount_rate",
+      "min_chunk",
+      "end_date"
+    ],
+    "remove_defjob": [
+      "self",
+      "id"
+    ],
+    "set_defjob": [
+      "self",
+      "id",
+      "price_gpu",
+      "price_inetu",
+      "price_inetd",
+      "image",
+      "args"
+    ],
+    "set_min_bid": [
+      "self",
+      "id",
+      "price"
+    ],
+    "schedule_maint": [
+      "self",
+      "id",
+      "sdate",
+      "duration"
+    ],
+    "cancel_maint": [
+      "self",
+      "id"
+    ],
+    "unlist_machine": [
+      "self",
+      "id"
+    ],
+    "show_machines": [
+      "self",
+      "quiet",
+      "filter"
+    ],
+    "add_network_disk": [
+      "self",
+      "machines",
+      "mount_point",
+      "disk_id"
+    ],
+    "create_cluster": [
+      "self",
+      "subnet",
+      "manager_id"
+    ],
+    "create_network_volume": [
+      "self",
+      "id",
+      "size",
+      "name"
+    ],
+    "create_overlay": [
+      "self",
+      "cluster_id",
+      "name"
+    ],
+    "create_workergroup": [
+      "self",
+      "template_hash",
+      "template_id",
+      "no_default",
+      "launch_args",
+      "endpoint_name",
+      "endpoint_id",
+      "test_workers",
+      "gpu_ram",
+      "search_params",
+      "min_load",
+      "target_util",
+      "cold_mult",
+      "cold_workers"
+    ],
+    "defrag_machines": [
+      "self",
+      "IDs"
+    ],
+    "delete_cluster": [
+      "self",
+      "cluster_id"
+    ],
+    "delete_overlay": [
+      "self",
+      "overlay_identifier"
+    ],
+    "delete_scheduled_job": [
+      "self",
+      "id"
+    ],
+    "delete_workergroup": [
+      "self",
+      "id"
+    ],
+    "get_wrkgrp_logs": [
+      "self",
+      "id",
+      "level",
+      "tail"
+    ],
+    "join_cluster": [
+      "self",
+      "cluster_id",
+      "machine_ids"
+    ],
+    "join_overlay": [
+      "self",
+      "name",
+      "instance_id"
+    ],
+    "list_network_volume": [
+      "self",
+      "disk_id",
+      "price_disk",
+      "end_date",
+      "size"
+    ],
+    "remove_machine_from_cluster": [
+      "self",
+      "cluster_id",
+      "machine_id",
+      "new_manager_id"
+    ],
+    "search_network_volumes": [
+      "self",
+      "no_default",
+      "limit",
+      "storage",
+      "order",
+      "query"
+    ],
+    "show_clusters": [
+      "self"
+    ],
+    "show_invoices_v1": [
+      "self",
+      "invoices",
+      "invoice_type",
+      "charges",
+      "charge_type",
+      "start_date",
+      "end_date",
+      "limit",
+      "next_token",
+      "format",
+      "verbose",
+      "latest_first"
+    ],
+    "show_network_disks": [
+      "self"
+    ],
+    "show_overlays": [
+      "self"
+    ],
+    "show_scheduled_jobs": [
+      "self"
+    ],
+    "show_workergroups": [
+      "self"
+    ],
+    "take_snapshot": [
+      "self",
+      "instance_id",
+      "container_registry",
+      "repo",
+      "docker_login_user",
+      "docker_login_pass",
+      "pause"
+    ],
+    "tfa_activate": [
+      "self",
+      "code",
+      "sms",
+      "secret",
+      "phone_number",
+      "label"
+    ],
+    "tfa_delete": [
+      "self",
+      "id_to_delete",
+      "code",
+      "sms",
+      "secret",
+      "backup_code",
+      "method_id"
+    ],
+    "tfa_login": [
+      "self",
+      "code",
+      "sms",
+      "secret",
+      "backup_code",
+      "method_id"
+    ],
+    "tfa_regen_codes": [
+      "self",
+      "code",
+      "sms",
+      "secret",
+      "backup_code",
+      "method_id"
+    ],
+    "tfa_resend_sms": [
+      "self",
+      "phone_number",
+      "secret"
+    ],
+    "tfa_send_sms": [
+      "self",
+      "phone_number"
+    ],
+    "tfa_status": [
+      "self"
+    ],
+    "tfa_totp_setup": [
+      "self"
+    ],
+    "tfa_update": [
+      "self",
+      "method_id",
+      "label",
+      "set_primary"
+    ],
+    "unlist_network_volume": [
+      "self",
+      "id"
+    ],
+    "unlist_volume": [
+      "self",
+      "id"
+    ],
+    "update_workergroup": [
+      "self",
+      "id",
+      "min_load",
+      "target_util",
+      "cold_mult",
+      "cold_workers",
+      "test_workers",
+      "gpu_ram",
+      "template_hash",
+      "template_id",
+      "search_params",
+      "no_default",
+      "launch_args",
+      "endpoint_name",
+      "endpoint_id"
+    ],
+    "clone_volume": [
+      "self",
+      "source",
+      "dest",
+      "size",
+      "disable_compression"
+    ],
+    "create_env_var": [
+      "self",
+      "name",
+      "value"
+    ],
+    "create_volume": [
+      "self",
+      "id",
+      "size",
+      "name"
+    ],
+    "delete_env_var": [
+      "self",
+      "name"
+    ],
+    "delete_machine": [
+      "self",
+      "id"
+    ],
+    "delete_template": [
+      "self",
+      "template_id",
+      "hash_id"
+    ],
+    "delete_volume": [
+      "self",
+      "id"
+    ],
+    "get_endpt_logs": [
+      "self",
+      "id",
+      "level",
+      "tail"
+    ],
+    "invite_member": [
+      "self",
+      "email",
+      "role"
+    ],
+    "list_volume": [
+      "self",
+      "id",
+      "price_disk",
+      "end_date",
+      "size"
+    ],
+    "list_volumes": [
+      "self",
+      "ids",
+      "price_disk",
+      "end_date",
+      "size"
+    ],
+    "remove_member": [
+      "self",
+      "id"
+    ],
+    "search_volumes": [
+      "self",
+      "query",
+      "storage",
+      "order"
+    ],
+    "self_test_machine": [
+      "self",
+      "machine_id",
+      "debugging",
+      "explain",
+      "raw",
+      "url",
+      "retry",
+      "ignore_requirements"
+    ],
+    "show_audit_logs": [
+      "self"
+    ],
+    "show_env_vars": [
+      "self",
+      "show_values"
+    ],
+    "show_machine": [
+      "self",
+      "Machine",
+      "quiet"
+    ],
+    "show_maints": [
+      "self",
+      "ids",
+      "quiet"
+    ],
+    "show_members": [
+      "self"
+    ],
+    "show_volumes": [
+      "self",
+      "type"
+    ],
+    "update_env_var": [
+      "self",
+      "name",
+      "value"
+    ],
+    "update_instance": [
+      "self",
+      "id",
+      "template_id",
+      "template_hash_id",
+      "image",
+      "args",
+      "env",
+      "onstart"
+    ],
+    "update_template": [
+      "self",
+      "HASH_ID",
+      "name",
+      "image",
+      "env",
+      "onstart_cmd",
+      "search_params",
+      "disk",
+      "ssh",
+      "direct",
+      "jupyter"
+    ]
+  },
+  "PYPI_BASE_PATH": [],
+  "should_check_for_update": [],
+  "ARGS": [],
+  "TABCOMPLETE": [],
+  "server_url_default": [],
+  "parse_version": [
+    "version"
+  ],
+  "get_git_version": [],
+  "get_pip_version": [],
+  "is_pip_package": [],
+  "get_update_command": [
+    "stable_version"
+  ],
+  "get_local_version": [],
+  "get_project_data": [
+    "project_name"
+  ],
+  "get_pypi_version": [
+    "project_data"
+  ],
+  "check_for_update": [],
+  "APP_NAME": [],
+  "VERSION": [],
+  "_HAS_EMOJI": [],
+  "SUCCESS": [],
+  "WARN": [],
+  "FAIL": [],
+  "INFO": [],
+  "CACHE_FILE": [],
+  "CACHE_DURATION": [],
+  "APIKEY_FILE": [],
+  "APIKEY_FILE_HOME": [],
+  "TFAKEY_FILE": [],
+  "api_key_guard": [],
+  "headers": [],
+  "Object": {},
+  "validate_seconds": [
+    "value"
+  ],
+  "strip_strings": [
+    "value"
+  ],
+  "string_to_unix_epoch": [
+    "date_string"
+  ],
+  "unix_to_readable": [
+    "ts"
+  ],
+  "fix_date_fields": [
+    "query",
+    "date_fields"
+  ],
+  "argument": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "hidden_aliases": {
+    "__init__": [
+      "self",
+      "l"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__bool__": [
+      "self"
+    ],
+    "__nonzero__": [
+      "self"
+    ],
+    "append": [
+      "self",
+      "x"
+    ]
+  },
+  "http_request": [
+    "verb",
+    "args",
+    "req_url",
+    "headers",
+    "json_data"
+  ],
+  "http_get": [
+    "args",
+    "req_url",
+    "headers",
+    "json"
+  ],
+  "http_put": [
+    "args",
+    "req_url",
+    "headers",
+    "json"
+  ],
+  "http_post": [
+    "args",
+    "req_url",
+    "headers",
+    "json"
+  ],
+  "http_del": [
+    "args",
+    "req_url",
+    "headers",
+    "json"
+  ],
+  "load_permissions_from_file": [
+    "file_path"
+  ],
+  "complete_instance_machine": [
+    "prefix",
+    "action",
+    "parser",
+    "parsed_args"
+  ],
+  "complete_instance": [
+    "prefix",
+    "action",
+    "parser",
+    "parsed_args"
+  ],
+  "complete_sshkeys": [
+    "prefix",
+    "action",
+    "parser",
+    "parsed_args"
+  ],
+  "apwrap": {
+    "__init__": [
+      "self"
+    ],
+    "fail_with_help": [
+      "self"
+    ],
+    "add_argument": [
+      "self"
+    ],
+    "subparsers": [
+      "self"
+    ],
+    "get_name": [
+      "self",
+      "verb",
+      "obj"
+    ],
+    "command": [
+      "self"
+    ],
+    "parse_args": [
+      "self",
+      "argv"
+    ],
+    "_process_arguments_with_groups": [
+      "self",
+      "parser_obj",
+      "arguments"
+    ],
+    "_add_completer": [
+      "self",
+      "tsp",
+      "arg"
+    ]
+  },
+  "MyWideHelpFormatter": {
+    "__init__": [
+      "self",
+      "prog"
+    ]
+  },
+  "parser": [],
+  "translate_null_strings_to_blanks": [
+    "d"
+  ],
+  "apiurl": [
+    "args",
+    "subpath",
+    "query_args"
+  ],
+  "apiheaders": [
+    "args"
+  ],
+  "deindent": [
+    "message",
+    "add_separator"
+  ],
+  "displayable_fields": [],
+  "displayable_fields_reserved": [],
+  "vol_offers_fields": [],
+  "vol_displayable_fields": [],
+  "nw_vol_displayable_fields": [],
+  "instance_fields": [],
+  "cluster_fields": [],
+  "network_disk_fields": [],
+  "network_disk_machine_fields": [],
+  "overlay_fields": [],
+  "volume_fields": [],
+  "machine_fields": [],
+  "maintenance_fields": [],
+  "ipaddr_fields": [],
+  "audit_log_fields": [],
+  "scheduled_jobs_fields": [],
+  "invoice_fields": [],
+  "user_fields": [],
+  "connection_fields": [],
+  "version_string_sort": [
+    "a",
+    "b"
+  ],
+  "offers_fields": [],
+  "offers_alias": [],
+  "offers_mult": [],
+  "parse_query": [
+    "query_str",
+    "res",
+    "fields",
+    "field_alias",
+    "field_multiplier"
+  ],
+  "BG_DARK_GRAY": [],
+  "BG_LIGHT_GRAY": [],
+  "FG_WHITE": [],
+  "BG_RESET": [],
+  "display_table": [
+    "rows",
+    "fields",
+    "replace_spaces",
+    "auto_width"
+  ],
+  "print_or_page": [
+    "args",
+    "text"
+  ],
+  "VRLException": {},
+  "parse_vast_url": [
+    "url_str"
+  ],
+  "get_ssh_key": [
+    "argstr"
+  ],
+  "attach__ssh": [
+    "args"
+  ],
+  "cancel__copy": [
+    "args"
+  ],
+  "cancel__sync": [
+    "args"
+  ],
+  "default_start_date": [],
+  "default_end_date": [],
+  "convert_timestamp_to_date": [
+    "unix_timestamp"
+  ],
+  "parse_day_cron_style": [
+    "value"
+  ],
+  "parse_hour_cron_style": [
+    "value"
+  ],
+  "change__bid": [
+    "args"
+  ],
+  "clone__volume": [
+    "args"
+  ],
+  "copy": [
+    "args"
+  ],
+  "cloud__copy": [
+    "args"
+  ],
+  "take__snapshot": [
+    "args"
+  ],
+  "validate_frequency_values": [
+    "day_of_the_week",
+    "hour_of_the_day",
+    "frequency"
+  ],
+  "add_scheduled_job": [
+    "args",
+    "req_json",
+    "cli_command",
+    "api_endpoint",
+    "request_method",
+    "instance_id",
+    "contract_end_date"
+  ],
+  "update_scheduled_job": [
+    "cli_command",
+    "schedule_job_url",
+    "frequency",
+    "start_date",
+    "end_date",
+    "request_body"
+  ],
+  "create__api_key": [
+    "args"
+  ],
+  "create__cluster": [
+    "args"
+  ],
+  "create__env_var": [
+    "args"
+  ],
+  "create__ssh_key": [
+    "args"
+  ],
+  "generate_ssh_key": [
+    "auto_yes"
+  ],
+  "create__workergroup": [
+    "args"
+  ],
+  "create__endpoint": [
+    "args"
+  ],
+  "get_runtype": [
+    "args"
+  ],
+  "validate_volume_params": [
+    "args"
+  ],
+  "validate_portal_config": [
+    "json_blob"
+  ],
+  "create_instance": [
+    "id",
+    "args"
+  ],
+  "create__instance": [
+    "args"
+  ],
+  "create__instances": [
+    "args"
+  ],
+  "create__subaccount": [
+    "args"
+  ],
+  "create__team": [
+    "args"
+  ],
+  "create__team_role": [
+    "args"
+  ],
+  "get_template_arguments": [],
+  "create__template": [
+    "args"
+  ],
+  "create__volume": [
+    "args"
+  ],
+  "create__network_volume": [
+    "args"
+  ],
+  "create__overlay": [
+    "args"
+  ],
+  "delete__api_key": [
+    "args"
+  ],
+  "delete__ssh_key": [
+    "args"
+  ],
+  "delete__scheduled_job": [
+    "args"
+  ],
+  "delete__cluster": [
+    "args"
+  ],
+  "delete__workergroup": [
+    "args"
+  ],
+  "delete__endpoint": [
+    "args"
+  ],
+  "delete__env_var": [
+    "args"
+  ],
+  "delete__overlay": [
+    "args"
+  ],
+  "delete__template": [
+    "args"
+  ],
+  "delete__volume": [
+    "args"
+  ],
+  "destroy_instance": [
+    "id",
+    "args"
+  ],
+  "destroy__instance": [
+    "args"
+  ],
+  "destroy__instances": [
+    "args"
+  ],
+  "destroy__team": [
+    "args"
+  ],
+  "detach__ssh": [
+    "args"
+  ],
+  "execute": [
+    "args"
+  ],
+  "get__endpt_logs": [
+    "args"
+  ],
+  "get__wrkgrp_logs": [
+    "args"
+  ],
+  "invite__member": [
+    "args"
+  ],
+  "join__cluster": [
+    "args"
+  ],
+  "join__overlay": [
+    "args"
+  ],
+  "label__instance": [
+    "args"
+  ],
+  "fetch_url_content": [
+    "url"
+  ],
+  "_get_gpu_names": [],
+  "REGIONS": [],
+  "_is_valid_region": [
+    "region"
+  ],
+  "_parse_region": [
+    "region"
+  ],
+  "launch__instance": [
+    "args"
+  ],
+  "logs": [
+    "args"
+  ],
+  "prepay__instance": [
+    "args"
+  ],
+  "reboot__instance": [
+    "args"
+  ],
+  "recycle__instance": [
+    "args"
+  ],
+  "remove__member": [
+    "args"
+  ],
+  "remove__team_role": [
+    "args"
+  ],
+  "reports": [
+    "args"
+  ],
+  "reset__api_key": [
+    "args"
+  ],
+  "exec_with_threads": [
+    "f",
+    "args",
+    "nt",
+    "max_retries"
+  ],
+  "split_into_sublists": [
+    "lst",
+    "k"
+  ],
+  "split_list": [
+    "lst",
+    "k"
+  ],
+  "start_instance": [
+    "id",
+    "args"
+  ],
+  "start__instance": [
+    "args"
+  ],
+  "start__instances": [
+    "args"
+  ],
+  "stop_instance": [
+    "id",
+    "args"
+  ],
+  "stop__instance": [
+    "args"
+  ],
+  "stop__instances": [
+    "args"
+  ],
+  "numeric_version": [
+    "version_str"
+  ],
+  "benchmarks_fields": [],
+  "search__benchmarks": [
+    "args"
+  ],
+  "invoices_fields": [],
+  "search__invoices": [
+    "args"
+  ],
+  "search__offers": [
+    "args"
+  ],
+  "templates_fields": [],
+  "search__templates": [
+    "args"
+  ],
+  "search__volumes": [
+    "args"
+  ],
+  "search__network_volumes": [
+    "args"
+  ],
+  "set__api_key": [
+    "args"
+  ],
+  "set__user": [
+    "args"
+  ],
+  "ssh_url": [
+    "args"
+  ],
+  "scp_url": [
+    "args"
+  ],
+  "_ssh_url": [
+    "args",
+    "protocol"
+  ],
+  "show__api_key": [
+    "args"
+  ],
+  "show__api_keys": [
+    "args"
+  ],
+  "show__audit_logs": [
+    "args"
+  ],
+  "normalize_schedule_fields": [
+    "job"
+  ],
+  "normalize_jobs": [
+    "jobs"
+  ],
+  "show__scheduled_jobs": [
+    "args"
+  ],
+  "show__ssh_keys": [
+    "args"
+  ],
+  "show__workergroups": [
+    "args"
+  ],
+  "show__endpoints": [
+    "args"
+  ],
+  "show__connections": [
+    "args"
+  ],
+  "show__deposit": [
+    "args"
+  ],
+  "show__earnings": [
+    "args"
+  ],
+  "sum": [
+    "X",
+    "k"
+  ],
+  "select": [
+    "X",
+    "k"
+  ],
+  "show__env_vars": [
+    "args"
+  ],
+  "show__invoices": [
+    "args"
+  ],
+  "to_timestamp_": [
+    "val"
+  ],
+  "charge_types": [],
+  "invoice_types": [],
+  "show__invoices_v1": [
+    "args"
+  ],
+  "format_invoices_charges_results": [
+    "args",
+    "results"
+  ],
+  "rich_object_to_string": [
+    "rich_obj",
+    "no_color"
+  ],
+  "create_charges_tree": [
+    "results",
+    "parent",
+    "title"
+  ],
+  "create_rich_table_for_charges": [
+    "args",
+    "results"
+  ],
+  "create_rich_table_for_invoices": [
+    "results"
+  ],
+  "create_rich_table_from_rows": [
+    "rows",
+    "headers",
+    "title",
+    "sort_key"
+  ],
+  "show__instance": [
+    "args"
+  ],
+  "show__instances": [
+    "args",
+    "extra"
+  ],
+  "show__ipaddrs": [
+    "args"
+  ],
+  "show__clusters": [
+    "args"
+  ],
+  "show__overlays": [
+    "args"
+  ],
+  "show__subaccounts": [
+    "args"
+  ],
+  "show__members": [
+    "args"
+  ],
+  "show__team_role": [
+    "args"
+  ],
+  "show__team_roles": [
+    "args"
+  ],
+  "show__user": [
+    "args"
+  ],
+  "show__volumes": [
+    "args"
+  ],
+  "remove_machine_from_cluster": [
+    "args"
+  ],
+  "handle_failed_tfa_verification": [
+    "args",
+    "e"
+  ],
+  "format_backup_codes": [
+    "backup_codes"
+  ],
+  "confirm_destructive_action": [
+    "prompt"
+  ],
+  "save_to_file": [
+    "content",
+    "filepath"
+  ],
+  "get_backup_codes_filename": [],
+  "save_backup_codes": [
+    "backup_codes"
+  ],
+  "build_tfa_verification_payload": [
+    "args"
+  ],
+  "tfa__activate": [
+    "args"
+  ],
+  "tfa__delete": [
+    "args"
+  ],
+  "tfa__login": [
+    "args"
+  ],
+  "tfa__resend_sms": [
+    "args"
+  ],
+  "tfa__regen_codes": [
+    "args"
+  ],
+  "tfa__send_sms": [
+    "args"
+  ],
+  "TFA_METHOD_FIELDS": [],
+  "display_tfa_methods": [
+    "methods"
+  ],
+  "tfa__status": [
+    "args"
+  ],
+  "tfa__totp_setup": [
+    "args"
+  ],
+  "tfa__update": [
+    "args"
+  ],
+  "transfer__credit": [
+    "args"
+  ],
+  "update__workergroup": [
+    "args"
+  ],
+  "update__endpoint": [
+    "args"
+  ],
+  "update__env_var": [
+    "args"
+  ],
+  "update__instance": [
+    "args"
+  ],
+  "update__team_role": [
+    "args"
+  ],
+  "update__template": [
+    "args"
+  ],
+  "update__ssh_key": [
+    "args"
+  ],
+  "convert_dates_to_timestamps": [
+    "args"
+  ],
+  "filter_invoice_items": [
+    "args",
+    "rows"
+  ],
+  "add__network_disk": [
+    "args"
+  ],
+  "cancel__maint": [
+    "args"
+  ],
+  "cleanup_machine": [
+    "args",
+    "machine_id"
+  ],
+  "cleanup__machine": [
+    "args"
+  ],
+  "defrag__machines": [
+    "args"
+  ],
+  "delete__machine": [
+    "args"
+  ],
+  "list_machine": [
+    "args",
+    "id"
+  ],
+  "list__machine": [
+    "args"
+  ],
+  "list__machines": [
+    "args"
+  ],
+  "list__network_volume": [
+    "args"
+  ],
+  "list__volume": [
+    "args"
+  ],
+  "list__volumes": [
+    "args"
+  ],
+  "remove__defjob": [
+    "args"
+  ],
+  "self_test__machine": [
+    "args"
+  ],
+  "set_ask": [
+    "args"
+  ],
+  "set__defjob": [
+    "args"
+  ],
+  "smart_split": [
+    "s",
+    "char"
+  ],
+  "parse_env": [
+    "envs"
+  ],
+  "pretty_print_POST": [
+    "req"
+  ],
+  "set__min_bid": [
+    "args"
+  ],
+  "schedule__maint": [
+    "args"
+  ],
+  "show__machine": [
+    "args"
+  ],
+  "show__machines": [
+    "args"
+  ],
+  "show__maints": [
+    "args"
+  ],
+  "show__network_disks": [
+    "args"
+  ],
+  "unlist__machine": [
+    "args"
+  ],
+  "unlist__network_volume": [
+    "args"
+  ],
+  "unlist__volume": [
+    "args"
+  ],
+  "suppress_stdout": [],
+  "destroy_instance_silent": [
+    "id",
+    "args"
+  ],
+  "progress_print": [
+    "args"
+  ],
+  "debug_print": [
+    "args"
+  ],
+  "instance_exist": [
+    "instance_id",
+    "api_key",
+    "args"
+  ],
+  "run_machinetester": [
+    "ip_address",
+    "port",
+    "instance_id",
+    "machine_id",
+    "delay",
+    "args",
+    "api_key"
+  ],
+  "safe_float": [
+    "value"
+  ],
+  "check_requirements": [
+    "machine_id",
+    "api_key",
+    "args"
+  ],
+  "wait_for_instance": [
+    "instance_id",
+    "api_key",
+    "args",
+    "destroy_args",
+    "timeout",
+    "interval"
+  ],
+  "login_deprecated_message": [],
+  "DEBUG_DEPLOYMENT_TAR": [],
+  "_FullDeployment": {},
+  "P": [],
+  "Deployment": {
+    "__init__": [
+      "self",
+      "api_key",
+      "ttl",
+      "autoscaler_instance",
+      "autoscaler_url",
+      "webserver_url"
+    ],
+    "_compile_env": [
+      "self",
+      "checked_image"
+    ],
+    "_into_deployment_config_and_tarball": [
+      "self",
+      "tar_path"
+    ],
+    "configure_autoscaling": [
+      "self"
+    ],
+    "image": [
+      "self",
+      "from_image",
+      "storage"
+    ],
+    "_collate_config": [
+      "self",
+      "checked_name",
+      "checked_image"
+    ],
+    "_compute_hash_and_filesize_and_make_tar": [
+      "self",
+      "tar_path",
+      "checked_name",
+      "checked_image"
+    ],
+    "_heartbeat_thread": [
+      "self",
+      "deployment",
+      "ttl"
+    ],
+    "async_ensure_ready": [
+      "self"
+    ],
+    "ensure_ready": [
+      "self"
+    ],
+    "_unwrap_worker_response": [
+      "self",
+      "response"
+    ],
+    "_dispatch": [
+      "self",
+      "f_name",
+      "globals",
+      "sig",
+      "args",
+      "kwargs"
+    ],
+    "remote": [
+      "self",
+      "f"
+    ]
+  },
+  "RemoteFunc": {},
+  "T": [],
+  "_sanitize_info": [
+    "info",
+    "arcname"
+  ],
+  "add_file": [
+    "tf",
+    "src_path",
+    "arcname"
+  ],
+  "add_folder": [
+    "tf",
+    "src_path",
+    "arcname"
+  ],
+  "add_string": [
+    "tf",
+    "content",
+    "arcname",
+    "executable"
+  ],
+  "add_path": [
+    "tf",
+    "src_path",
+    "arcname"
+  ],
+  "serialize_config": [
+    "config"
+  ],
+  "is_python_package": [
+    "path"
+  ],
+  "is_python_module": [
+    "path"
+  ],
+  "deployment_arcname": [
+    "deployment_path"
+  ],
+  "IGNORE_COMMENT_BODY": [],
+  "_CLOSE_MULTILINE_RE": [],
+  "_PYTHON_TOKEN_RE": [],
+  "_scan_python_line": [
+    "line",
+    "in_multiline"
+  ],
+  "filter_ignored_lines": [
+    "data"
+  ],
+  "read_file_for_hash": [
+    "path",
+    "filter_comments"
+  ],
+  "hash_update_file": [
+    "hasher",
+    "src_path",
+    "arcname",
+    "filter_comments"
+  ],
+  "hash_update_directory": [
+    "hasher",
+    "src_path",
+    "arcname",
+    "filter_comments"
+  ],
+  "hash_update_path": [
+    "hasher",
+    "src_path",
+    "arcname",
+    "filter_comments"
+  ],
+  "compute_deployment_hash": [
+    "config",
+    "deployment_path",
+    "extra_files"
+  ],
+  "create_deployment_tarball": [
+    "tar_path",
+    "config",
+    "deployment_path",
+    "extra_files"
+  ],
+  "relativize_module": [
+    "mod",
+    "root_module"
+  ],
+  "derelativize_module": [
+    "mod",
+    "root_module"
+  ],
+  "serialize": [
+    "obj",
+    "root_module"
+  ],
+  "deserialize": [
+    "json",
+    "root_module",
+    "globals"
+  ],
+  "serialize_ok": [
+    "obj",
+    "root_module"
+  ],
+  "serialize_err": [
+    "err",
+    "root_module"
+  ],
+  "deserialize_unwrap_error": [
+    "json",
+    "root_module",
+    "globals"
+  ],
+  "DockerLogin": {},
+  "Image": {
+    "__init__": [
+      "self",
+      "from_image",
+      "storage",
+      "worker_port"
+    ],
+    "pip_install": [
+      "self"
+    ],
+    "apt_get": [
+      "self"
+    ],
+    "run_script": [
+      "self",
+      "script"
+    ],
+    "run_cmd": [
+      "self"
+    ],
+    "env": [
+      "self"
+    ],
+    "require": [
+      "self"
+    ],
+    "copy": [
+      "self",
+      "src",
+      "dst"
+    ],
+    "venv": [
+      "self",
+      "path"
+    ],
+    "use_system_python": [
+      "self"
+    ],
+    "publish_port": [
+      "self",
+      "number",
+      "type_"
+    ]
+  },
+  "Autoscaling": {},
+  "Config": {},
+  "DeploymentT": [],
+  "Deployment_": {
+    "__init__": [
+      "self",
+      "name",
+      "tag",
+      "version_label"
+    ],
+    "context": [
+      "self"
+    ],
+    "get_context": [
+      "self",
+      "context_class"
+    ],
+    "name": [
+      "self",
+      "name"
+    ],
+    "lookup": [
+      "cls",
+      "name"
+    ],
+    "relativize": [
+      "self",
+      "f"
+    ],
+    "P": [],
+    "remote": [
+      "self",
+      "f"
+    ],
+    "configure_autoscaling": [
+      "self"
+    ],
+    "image": [
+      "self",
+      "from_image",
+      "storage"
+    ],
+    "ensure_ready": [
+      "self"
+    ]
+  },
+  "RequestPayloadParser": [],
+  "ClientResponseGenerator": [],
+  "WorkloadCalculator": [],
+  "LogActionConfig": {
+    "log_actions": [
+      "self"
+    ]
+  },
+  "BenchmarkConfig": {},
+  "HandlerConfig": {},
+  "WorkerConfig": {},
+  "EndpointHandlerFactory": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "_build_handlers": [
+      "self"
+    ],
+    "_create_handler": [
+      "self",
+      "handler_config"
+    ],
+    "get_handler": [
+      "self",
+      "route"
+    ],
+    "get_all_handlers": [
+      "self"
+    ],
+    "get_benchmark_handler": [
+      "self"
+    ],
+    "has_handlers": [
+      "self"
+    ],
+    "model_server_base_url": [
+      "self"
+    ]
+  },
+  "Worker": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "run_async": [
+      "self"
+    ],
+    "run": [
+      "self"
+    ]
+  },
+  "METRICS_UPDATE_INTERVAL": [],
+  "DELETE_REQUESTS_INTERVAL": [],
+  "log": [],
+  "get_url": [],
+  "Metrics": {
+    "http": [
+      "self"
+    ],
+    "aclose": [
+      "self"
+    ],
+    "_request_id": [
+      "self",
+      "request"
+    ],
+    "_request_start": [
+      "self",
+      "request"
+    ],
+    "_request_end": [
+      "self",
+      "request"
+    ],
+    "_request_success": [
+      "self",
+      "request"
+    ],
+    "_request_errored": [
+      "self",
+      "request",
+      "message"
+    ],
+    "_request_canceled": [
+      "self",
+      "request"
+    ],
+    "_request_reject": [
+      "self",
+      "request"
+    ],
+    "_send_delete_requests_loop": [
+      "self"
+    ],
+    "_send_metrics_loop": [
+      "self"
+    ],
+    "_model_loaded": [
+      "self",
+      "max_throughput"
+    ],
+    "_model_errored": [
+      "self",
+      "error_msg"
+    ],
+    "_set_version": [
+      "self",
+      "version"
+    ],
+    "_set_mtoken": [
+      "self",
+      "mtoken"
+    ],
+    "__send_delete_requests_and_reset": [
+      "self"
+    ],
+    "__send_metrics_and_reset": [
+      "self"
+    ]
+  },
+  "LOG_POLL_INTERVAL": [],
+  "SESSION_GC_INTERVAL": [],
+  "BENCHMARK_INDICATOR_FILE": [],
+  "MAX_PUBKEY_FETCH_ATTEMPTS": [],
+  "Backend": {
+    "reqnum": [],
+    "version": [],
+    "pyworker_update_handler": [
+      "self",
+      "request"
+    ],
+    "session_health_handler": [
+      "self",
+      "request"
+    ],
+    "session_get_handler": [
+      "self",
+      "request"
+    ],
+    "__run_session_on_close": [
+      "self",
+      "session"
+    ],
+    "__close_session": [
+      "self",
+      "session_id"
+    ],
+    "session_end_handler": [
+      "self",
+      "request"
+    ],
+    "generate_session_id": [
+      "self"
+    ],
+    "session_create_handler": [
+      "self",
+      "request"
+    ],
+    "__post_init__": [
+      "self"
+    ],
+    "session": [
+      "self"
+    ],
+    "create_handler": [
+      "self",
+      "handler"
+    ],
+    "_fetch_pubkey": [
+      "self"
+    ],
+    "__handle_request": [
+      "self",
+      "handler",
+      "request"
+    ],
+    "__healthcheck": [
+      "self"
+    ],
+    "_start_tracking": [
+      "self"
+    ],
+    "__lifecycle_startup": [
+      "self"
+    ],
+    "backend_errored": [
+      "self",
+      "msg"
+    ],
+    "__call_backend": [
+      "self",
+      "handler",
+      "payload"
+    ],
+    "__call_api": [
+      "self",
+      "handler",
+      "payload"
+    ],
+    "__call_remote_dispatch_function": [
+      "self",
+      "handler",
+      "payload"
+    ],
+    "__check_signature": [
+      "self",
+      "auth_data"
+    ],
+    "__run_benchmark": [
+      "self"
+    ],
+    "__read_logs": [
+      "self"
+    ],
+    "__session_gc_loop": [
+      "self"
+    ]
+  },
+  "start_server_async": [
+    "backend",
+    "routes"
+  ],
+  "start_server": [
+    "backend",
+    "routes"
+  ],
+  "JsonDataException": {
+    "__init__": [
+      "self",
+      "json_msg"
+    ]
+  },
+  "ApiPayload_T": [],
+  "ApiPayload": {
+    "for_test": [
+      "cls"
+    ],
+    "generate_payload_json": [
+      "self"
+    ],
+    "count_workload": [
+      "self"
+    ],
+    "from_json_msg": [
+      "cls",
+      "json_msg"
+    ]
+  },
+  "AuthData": {
+    "from_json_msg": [
+      "cls",
+      "json_msg"
+    ]
+  },
+  "EndpointHandler": {
+    "endpoint": [
+      "self"
+    ],
+    "healthcheck_endpoint": [
+      "self"
+    ],
+    "payload_cls": [
+      "cls"
+    ],
+    "make_benchmark_payload": [
+      "self"
+    ],
+    "generate_client_response": [
+      "self",
+      "client_request",
+      "model_response"
+    ],
+    "call_remote_dispatch_function": [
+      "self",
+      "params"
+    ],
+    "get_data_from_request": [
+      "cls",
+      "req_data"
+    ]
+  },
+  "Session": {},
+  "RequestMetrics": {},
+  "SystemMetrics": {
+    "get_disk_usage_GB": [],
+    "empty": [
+      "cls"
+    ],
+    "update_disk_usage": [
+      "self"
+    ],
+    "reset": [
+      "self",
+      "expected"
+    ]
+  },
+  "BenchmarkResult": {
+    "is_successful": [
+      "self"
+    ]
+  },
+  "ModelMetrics": {
+    "empty": [
+      "cls"
+    ],
+    "workload_processing": [
+      "self"
+    ],
+    "wait_time": [
+      "self"
+    ],
+    "cur_load": [
+      "self"
+    ],
+    "working_request_idxs": [
+      "self"
+    ],
+    "set_errored": [
+      "self",
+      "error_msg"
+    ],
+    "reset": [
+      "self"
+    ]
+  },
+  "WorkerStatusData": {},
+  "LogAction": {
+    "ModelLoaded": [],
+    "ModelError": [],
+    "Info": []
+  },
+  "R": [],
+  "EndpointDataPartial": {},
+  "Endpoint_": {
+    "__repr__": [
+      "self"
+    ],
+    "__init__": [
+      "self",
+      "client",
+      "name",
+      "id",
+      "api_key",
+      "data",
+      "soft_refresh_threshold",
+      "hard_refresh_threshold"
+    ],
+    "name": [
+      "self"
+    ],
+    "id": [
+      "self"
+    ],
+    "api_key": [
+      "self"
+    ],
+    "refresh": [
+      "self",
+      "block"
+    ],
+    "request": [
+      "self",
+      "route",
+      "payload",
+      "serverless_request",
+      "cost",
+      "retry",
+      "stream",
+      "timeout",
+      "session"
+    ],
+    "close_session": [
+      "self",
+      "session"
+    ],
+    "session_healthcheck": [
+      "self",
+      "session"
+    ],
+    "get_session": [
+      "self",
+      "session_id",
+      "session_auth",
+      "timeout"
+    ],
+    "session": [
+      "self",
+      "cost",
+      "lifetime",
+      "on_close_route",
+      "on_close_payload",
+      "timeout"
+    ],
+    "get_workers": [
+      "self"
+    ],
+    "_route": [
+      "self",
+      "cost",
+      "req_idx",
+      "timeout"
+    ]
+  },
+  "RouteResponse": {
+    "__repr__": [
+      "self"
+    ],
+    "__init__": [
+      "self",
+      "body"
+    ],
+    "get_url": [
+      "self"
+    ]
+  },
+  "Endpoint": [],
+  "_JITTER_CAP_SECONDS": [],
+  "_retryable": [
+    "status"
+  ],
+  "_backoff_delay": [
+    "attempt"
+  ],
+  "_build_kwargs": [],
+  "_iter_sse_json": [
+    "resp"
+  ],
+  "_open_once": [],
+  "_make_request": [
+    "client",
+    "route",
+    "api_key",
+    "url",
+    "body",
+    "params",
+    "method",
+    "retries",
+    "timeout",
+    "stream"
+  ],
+  "ServerlessRequest": {
+    "__init__": [
+      "self",
+      "tracker"
+    ],
+    "status": [
+      "self",
+      "value"
+    ],
+    "create_time": [
+      "self",
+      "value"
+    ],
+    "start_time": [
+      "self",
+      "value"
+    ],
+    "complete_time": [
+      "self",
+      "value"
+    ],
+    "req_idx": [
+      "self",
+      "value"
+    ],
+    "then": [
+      "self",
+      "callback"
+    ]
+  },
+  "_ServerlessBase": {
+    "SSL_CERT_URL": [],
+    "VAST_WEB_URL": [],
+    "VAST_SERVERLESS_URL": [],
+    "__init__": [
+      "self",
+      "api_key"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self",
+      "exc_type",
+      "exc",
+      "tb"
+    ],
+    "_get_session": [
+      "self"
+    ],
+    "is_open": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "get_ssl_context": [
+      "self"
+    ],
+    "get_endpoint": [
+      "self",
+      "name"
+    ],
+    "get_endpoints": [
+      "self"
+    ],
+    "fetch_endpoint": [
+      "self",
+      "endpoint_id"
+    ],
+    "fetch_deployment": [
+      "self",
+      "deployment_id"
+    ],
+    "create_endpoint": [
+      "self",
+      "config"
+    ],
+    "put_deployment": [
+      "self",
+      "config"
+    ],
+    "create_workergroup": [
+      "self",
+      "config"
+    ],
+    "delete_workergroup": [
+      "self",
+      "workergroup_id"
+    ],
+    "update_workers": [
+      "self",
+      "workergroup_id"
+    ],
+    "find_workergroup_for_endpoint": [
+      "self",
+      "endpoint_id"
+    ],
+    "delete_endpoint": [
+      "self",
+      "endpoint_id"
+    ],
+    "get_endpoint_workers": [
+      "self",
+      "endpoint"
+    ],
+    "get_endpoint_session": [
+      "self",
+      "endpoint",
+      "session_id",
+      "session_auth",
+      "timeout"
+    ],
+    "end_endpoint_session": [
+      "self",
+      "session",
+      "timeout"
+    ],
+    "start_endpoint_session": [
+      "self",
+      "endpoint",
+      "cost",
+      "lifetime",
+      "on_close_route",
+      "on_close_payload",
+      "timeout"
+    ],
+    "_do_request": [
+      "self",
+      "endpoint",
+      "worker_route",
+      "worker_payload",
+      "session",
+      "tracker",
+      "cost",
+      "timeout",
+      "worker_timeout",
+      "retry",
+      "max_retries",
+      "stream"
+    ],
+    "queue_endpoint_request": [
+      "self",
+      "endpoint",
+      "worker_route",
+      "worker_payload",
+      "session",
+      "serverless_request",
+      "cost",
+      "timeout",
+      "worker_timeout",
+      "retry",
+      "max_retries",
+      "stream"
+    ]
+  },
+  "Serverless": {
+    "queue_endpoint_request": [
+      "self",
+      "endpoint",
+      "worker_route",
+      "worker_payload",
+      "session",
+      "serverless_request",
+      "cost",
+      "timeout",
+      "worker_timeout",
+      "retry",
+      "max_retries",
+      "stream"
+    ]
+  },
+  "CoroutineServerless": {
+    "queue_endpoint_request": [
+      "self",
+      "endpoint",
+      "worker_route",
+      "worker_payload",
+      "session",
+      "serverless_request",
+      "cost",
+      "timeout",
+      "worker_timeout",
+      "retry",
+      "max_retries",
+      "stream"
+    ]
+  },
+  "RequestStatus": {},
+  "ManagedEndpoint": {
+    "__init__": [
+      "self",
+      "id",
+      "client",
+      "data"
+    ],
+    "id": [
+      "self"
+    ],
+    "invalidate": [
+      "self"
+    ],
+    "_get_routing_endpoint": [
+      "self"
+    ],
+    "request": [
+      "self",
+      "route",
+      "payload"
+    ],
+    "add_workergroup": [
+      "self",
+      "config_or_template_hash"
+    ],
+    "delete": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ManagedDeployment": {
+    "__init__": [
+      "self",
+      "id",
+      "endpoint_id",
+      "client",
+      "data",
+      "put_response"
+    ],
+    "id": [
+      "self"
+    ],
+    "endpoint_id": [
+      "self"
+    ],
+    "action": [
+      "self"
+    ],
+    "workergroup_id": [
+      "self"
+    ],
+    "needs_upload": [
+      "self"
+    ],
+    "upload": [
+      "self",
+      "file_path"
+    ],
+    "endpoint": [
+      "self"
+    ],
+    "get": [
+      "self"
+    ],
+    "invalidate": [
+      "self"
+    ],
+    "sync_heartbeat": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "SyncOffer": {
+    "__init__": [
+      "self",
+      "data",
+      "client"
+    ],
+    "create_instance": [
+      "self",
+      "config"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "SyncInstance": {
+    "__init__": [
+      "self",
+      "data",
+      "client"
+    ],
+    "destroy": [
+      "self"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "SyncClient": {
+    "__init__": [
+      "self",
+      "api_key",
+      "vast_server"
+    ],
+    "search": [
+      "self",
+      "query",
+      "type_",
+      "order",
+      "limit",
+      "allocated_storage",
+      "target_reliability",
+      "disable_bundling",
+      "external",
+      "extra_ids",
+      "has_avx",
+      "gpu_option",
+      "show_incompatible",
+      "sort_option",
+      "template_id"
+    ],
+    "create_instance": [
+      "self",
+      "offer_id",
+      "config"
+    ],
+    "show_instances": [
+      "self"
+    ],
+    "destroy_instance": [
+      "self",
+      "instance_or_id"
+    ]
+  },
+  "EndpointConfig": {
+    "to_dict": [
+      "self"
+    ]
+  },
+  "EndpointData": {
+    "from_dict": [
+      "cls",
+      "d"
+    ]
+  },
+  "InstanceConfig": {
+    "to_dict": [
+      "self"
+    ]
+  },
+  "CreateInstanceResponse": {
+    "from_dict": [
+      "cls",
+      "d"
+    ]
+  },
+  "Instance": {
+    "from_dict": [
+      "cls",
+      "d"
+    ]
+  },
+  "DeploymentConfig": {
+    "to_dict": [
+      "self"
+    ]
+  },
+  "DeploymentPutResponse": {
+    "from_dict": [
+      "cls",
+      "d"
+    ]
+  },
+  "DeploymentData": {
+    "from_dict": [
+      "cls",
+      "d"
+    ]
+  },
+  "WorkergroupConfig": {
+    "to_dict": [
+      "self"
+    ]
+  },
+  "Offer": {
+    "from_dict": [
+      "cls",
+      "d"
+    ]
+  },
+  "Query": {
+    "__init__": [
+      "self",
+      "query_dict"
+    ],
+    "search_defaults": [
+      "cls",
+      "verified",
+      "rentable",
+      "rented"
+    ],
+    "unparse_query": [
+      "self"
+    ],
+    "extend": [
+      "self",
+      "other"
+    ]
+  },
+  "Column": {
+    "__init__": [
+      "self",
+      "name"
+    ],
+    "__eq__": [
+      "self",
+      "value"
+    ],
+    "__ne__": [
+      "self",
+      "value"
+    ],
+    "__lt__": [
+      "self",
+      "value"
+    ],
+    "__le__": [
+      "self",
+      "value"
+    ],
+    "__gt__": [
+      "self",
+      "value"
+    ],
+    "__ge__": [
+      "self",
+      "value"
+    ],
+    "in_": [
+      "self",
+      "values"
+    ],
+    "notin_": [
+      "self",
+      "values"
+    ]
+  },
+  "id_": [],
+  "ask_contract_id": [],
+  "bundle_id": [],
+  "bundled_results": [],
+  "bw_nvlink": [],
+  "compute_cap": [],
+  "cpu_arch": [],
+  "cpu_cores": [],
+  "cpu_cores_effective": [],
+  "cpu_ghz": [],
+  "cpu_name": [],
+  "cpu_ram": [],
+  "credit_discount_max": [],
+  "cuda_max_good": [],
+  "direct_port_count": [],
+  "disk_bw": [],
+  "disk_name": [],
+  "disk_space": [],
+  "dlperf": [],
+  "dlperf_per_dphtotal": [],
+  "dph_base": [],
+  "dph_total": [],
+  "driver_version": [],
+  "driver_vers": [],
+  "duration": [],
+  "end_date": [],
+  "external": [],
+  "flops_per_dphtotal": [],
+  "geolocation": [],
+  "geolocode": [],
+  "gpu_arch": [],
+  "gpu_display_active": [],
+  "gpu_frac": [],
+  "gpu_ids": [],
+  "gpu_lanes": [],
+  "gpu_mem_bw": [],
+  "gpu_name": [],
+  "gpu_ram": [],
+  "gpu_total_ram": [],
+  "gpu_max_power": [],
+  "gpu_max_temp": [],
+  "has_avx": [],
+  "host_id": [],
+  "hosting_type": [],
+  "hostname": [],
+  "inet_down": [],
+  "inet_down_cost": [],
+  "inet_up": [],
+  "inet_up_cost": [],
+  "is_bid": [],
+  "logo": [],
+  "machine_id": [],
+  "min_bid": [],
+  "mobo_name": [],
+  "num_gpus": [],
+  "os_version": [],
+  "pci_gen": [],
+  "pcie_bw": [],
+  "public_ipaddr": [],
+  "reliability": [],
+  "reliability_mult": [],
+  "rentable": [],
+  "rented": [],
+  "score": [],
+  "start_date": [],
+  "static_ip": [],
+  "storage_cost": [],
+  "storage_total_cost": [],
+  "total_flops": [],
+  "verification": [],
+  "vericode": [],
+  "vram_costperhour": [],
+  "webpage": [],
+  "vms_enabled": [],
+  "expected_reliability": [],
+  "is_vm_deverified": [],
+  "resource_type": [],
+  "cluster_id": [],
+  "avail_vol_ask_id": [],
+  "avail_vol_dph": [],
+  "avail_vol_size": [],
+  "nw_disk_min_bw": [],
+  "nw_disk_max_bw": [],
+  "nw_disk_avg_bw": [],
+  "platform_fee": [],
+  "datacenter": [],
+  "verified": [],
+  "allocated_storage": [],
+  "target_reliability": [],
+  "reliability2": [],
+  "dphtotal": [],
+  "gpu_totalram": [],
+  "gpu_totalram_GB": [],
+  "cpu_ram_GB": [],
+  "gpu_ram_GB": [],
+  "ubuntu_version": [],
+  "A10": [],
+  "A10g": [],
+  "A16": [],
+  "A30": [],
+  "A40": [],
+  "A100_PCIE": [],
+  "A100_SXM4": [],
+  "A100_SXM": [],
+  "A100X": [],
+  "A800_PCIE": [],
+  "B200": [],
+  "GH200_SXM": [],
+  "H100_PCIE": [],
+  "H100_SXM": [],
+  "H100_NVL": [],
+  "H200": [],
+  "H200_NVL": [],
+  "L4": [],
+  "L40": [],
+  "L40S": [],
+  "Tesla_K20c": [],
+  "Tesla_K80": [],
+  "Tesla_M40": [],
+  "Tesla_P4": [],
+  "Tesla_P6": [],
+  "Tesla_P40": [],
+  "Tesla_P100": [],
+  "Tesla_T4": [],
+  "Tesla_V100": [],
+  "GeForce_970": [],
+  "GTX_750_Ti": [],
+  "GTX_1050": [],
+  "GTX_1050_Ti": [],
+  "GTX_1060": [],
+  "GTX_1070": [],
+  "GTX_1070_Ti": [],
+  "GTX_1080": [],
+  "GTX_1080_Ti": [],
+  "GTX_1650": [],
+  "GTX_1650_S": [],
+  "GTX_1650_Ti": [],
+  "GTX_1660": [],
+  "GTX_1660_S": [],
+  "GTX_1660_Ti": [],
+  "GTX_TITAN_X": [],
+  "RTX_2060": [],
+  "RTX_2060S": [],
+  "RTX_2070": [],
+  "RTX_2070S": [],
+  "RTX_2080": [],
+  "RTX_2080S": [],
+  "RTX_2080_Ti": [],
+  "RTX_3050": [],
+  "RTX_3060": [],
+  "RTX_3060_laptop": [],
+  "RTX_3060_Ti": [],
+  "RTX_3070": [],
+  "RTX_3070_laptop": [],
+  "RTX_3070_Ti": [],
+  "RTX_3080": [],
+  "RTX_3080_Ti": [],
+  "RTX_3090": [],
+  "RTX_3090_Ti": [],
+  "RTX_4060": [],
+  "RTX_4060_laptop": [],
+  "RTX_4060_Ti": [],
+  "RTX_4070": [],
+  "RTX_4070_laptop": [],
+  "RTX_4070S": [],
+  "RTX_4070S_Ti": [],
+  "RTX_4070_Ti": [],
+  "RTX_4080": [],
+  "RTX_4080_laptop": [],
+  "RTX_4080S": [],
+  "RTX_4090": [],
+  "RTX_4090D": [],
+  "RTX_4090_Ti": [],
+  "RTX_5060": [],
+  "RTX_5060_Ti": [],
+  "RTX_5070": [],
+  "RTX_5070_Ti": [],
+  "RTX_5080": [],
+  "RTX_5090": [],
+  "RTX_5090_Ti": [],
+  "Titan_RTX": [],
+  "Titan_V": [],
+  "TITAN_V_CEO": [],
+  "Titan_X": [],
+  "Titan_Xp": [],
+  "Quadro_K620": [],
+  "Quadro_K2200": [],
+  "Quadro_P2000": [],
+  "Quadro_P4000": [],
+  "Quadro_P5000": [],
+  "Quadro_P6000": [],
+  "Quadro_GP100": [],
+  "Quadro_GV100": [],
+  "Q_RTX_4000": [],
+  "Q_RTX_5000": [],
+  "Q_RTX_6000": [],
+  "Q_RTX_8000": [],
+  "RTX_A2000": [],
+  "RTX_A4000": [],
+  "RTX_A4500": [],
+  "RTX_A5000": [],
+  "RTX_A6000": [],
+  "RTX_2000Ada": [],
+  "RTX_4000Ada": [],
+  "RTX_4500Ada": [],
+  "RTX_5000Ada": [],
+  "RTX_5880Ada": [],
+  "RTX_6000Ada": [],
+  "RTX_PRO_4000": [],
+  "RTX_PRO_4000_Mobile": [],
+  "RTX_PRO_4500": [],
+  "RTX_PRO_5000": [],
+  "RTX_PRO_6000": [],
+  "RTX_PRO_6000_S": [],
+  "RTX_PRO_6000_WS": [],
+  "RTX_PRO_6000_Max_Q": [],
+  "CMP_50HX": [],
+  "CMP_170HX": [],
+  "P104_100": [],
+  "P106_100": [],
+  "InstinctMI50": [],
+  "InstinctMI100": [],
+  "InstinctMI210": [],
+  "InstinctMI250X": [],
+  "PRO_W6800": [],
+  "PRO_W7800": [],
+  "PRO_W7900": [],
+  "Pro_V620": [],
+  "Radeon_VII": [],
+  "Radeon_Pro_VII": [],
+  "RX_6800": [],
+  "RX_6800_XT": [],
+  "RX_6900_XT": [],
+  "RX_6950_XT": [],
+  "RX_7600": [],
+  "RX_7700_XT": [],
+  "RX_7800_XT": [],
+  "RX_7900_GRE": [],
+  "RX_7900_XT": [],
+  "RX_7900_XTX": [],
+  "AsyncOffer": {
+    "__init__": [
+      "self",
+      "data",
+      "client"
+    ],
+    "create_instance": [
+      "self",
+      "config"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "AsyncInstance": {
+    "__init__": [
+      "self",
+      "data",
+      "client"
+    ],
+    "destroy": [
+      "self"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "AsyncClient": {
+    "SSL_CERT_URL": [],
+    "__init__": [
+      "self",
+      "api_key",
+      "vast_server",
+      "connection_limit"
+    ],
+    "get_ssl_context": [
+      "self"
+    ],
+    "_get_session": [
+      "self",
+      "use_context"
+    ],
+    "is_open": [
+      "self"
+    ],
+    "close": [
+      "self",
+      "force"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self",
+      "exc_type",
+      "exc",
+      "tb"
+    ],
+    "search": [
+      "self",
+      "query",
+      "type_",
+      "order",
+      "limit",
+      "allocated_storage",
+      "target_reliability",
+      "disable_bundling",
+      "external",
+      "extra_ids",
+      "has_avx",
+      "gpu_option",
+      "show_incompatible",
+      "sort_option",
+      "template_id"
+    ],
+    "create_instance": [
+      "self",
+      "offer_id",
+      "config"
+    ],
+    "show_instances": [
+      "self"
+    ],
+    "destroy_instance": [
+      "self",
+      "instance_or_id"
+    ],
+    "serverless": [
+      "self"
+    ]
+  }
+}
