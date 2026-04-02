@@ -1,0 +1,3061 @@
+{
+  "OPENAPI_DOC_VERSION": [],
+  "SPEAKEASY_GENERATOR_VERSION": [],
+  "USER_AGENT": [],
+  "Beta": {
+    "__init__": [
+      "self",
+      "sdk_config",
+      "parent_ref"
+    ],
+    "_init_sdks": [
+      "self"
+    ]
+  },
+  "APIKeys": {
+    "list": [
+      "self"
+    ],
+    "list_async": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "create_async": [
+      "self"
+    ],
+    "update": [
+      "self"
+    ],
+    "update_async": [
+      "self"
+    ],
+    "delete": [
+      "self"
+    ],
+    "delete_async": [
+      "self"
+    ],
+    "get": [
+      "self"
+    ],
+    "get_async": [
+      "self"
+    ],
+    "get_current_key_metadata": [
+      "self"
+    ],
+    "get_current_key_metadata_async": [
+      "self"
+    ]
+  },
+  "BaseSDK": {
+    "__init__": [
+      "self",
+      "sdk_config",
+      "parent_ref"
+    ],
+    "_get_url": [
+      "self",
+      "base_url",
+      "url_variables"
+    ],
+    "_build_request_async": [
+      "self",
+      "method",
+      "path",
+      "base_url",
+      "url_variables",
+      "request",
+      "request_body_required",
+      "request_has_path_params",
+      "request_has_query_params",
+      "user_agent_header",
+      "accept_header_value",
+      "_globals",
+      "security",
+      "timeout_ms",
+      "get_serialized_body",
+      "url_override",
+      "http_headers",
+      "allow_empty_value"
+    ],
+    "_build_request": [
+      "self",
+      "method",
+      "path",
+      "base_url",
+      "url_variables",
+      "request",
+      "request_body_required",
+      "request_has_path_params",
+      "request_has_query_params",
+      "user_agent_header",
+      "accept_header_value",
+      "_globals",
+      "security",
+      "timeout_ms",
+      "get_serialized_body",
+      "url_override",
+      "http_headers",
+      "allow_empty_value"
+    ],
+    "_build_request_with_client": [
+      "self",
+      "client",
+      "method",
+      "path",
+      "base_url",
+      "url_variables",
+      "request",
+      "request_body_required",
+      "request_has_path_params",
+      "request_has_query_params",
+      "user_agent_header",
+      "accept_header_value",
+      "_globals",
+      "security",
+      "timeout_ms",
+      "get_serialized_body",
+      "url_override",
+      "http_headers",
+      "allow_empty_value"
+    ],
+    "do_request": [
+      "self",
+      "hook_ctx",
+      "request",
+      "error_status_codes",
+      "stream",
+      "retry_config"
+    ],
+    "do_request_async": [
+      "self",
+      "hook_ctx",
+      "request",
+      "error_status_codes",
+      "stream",
+      "retry_config"
+    ]
+  },
+  "SendAcceptEnum": {
+    "APPLICATION_JSON": [],
+    "TEXT_EVENT_STREAM": []
+  },
+  "Responses": {
+    "send": [
+      "self"
+    ],
+    "send_async": [
+      "self"
+    ]
+  },
+  "Guardrails": {
+    "list": [
+      "self"
+    ],
+    "list_async": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "create_async": [
+      "self"
+    ],
+    "get": [
+      "self"
+    ],
+    "get_async": [
+      "self"
+    ],
+    "update": [
+      "self"
+    ],
+    "update_async": [
+      "self"
+    ],
+    "delete": [
+      "self"
+    ],
+    "delete_async": [
+      "self"
+    ],
+    "list_key_assignments": [
+      "self"
+    ],
+    "list_key_assignments_async": [
+      "self"
+    ],
+    "list_member_assignments": [
+      "self"
+    ],
+    "list_member_assignments_async": [
+      "self"
+    ],
+    "list_guardrail_key_assignments": [
+      "self"
+    ],
+    "list_guardrail_key_assignments_async": [
+      "self"
+    ],
+    "bulk_assign_keys": [
+      "self"
+    ],
+    "bulk_assign_keys_async": [
+      "self"
+    ],
+    "list_guardrail_member_assignments": [
+      "self"
+    ],
+    "list_guardrail_member_assignments_async": [
+      "self"
+    ],
+    "bulk_assign_members": [
+      "self"
+    ],
+    "bulk_assign_members_async": [
+      "self"
+    ],
+    "bulk_unassign_keys": [
+      "self"
+    ],
+    "bulk_unassign_keys_async": [
+      "self"
+    ],
+    "bulk_unassign_members": [
+      "self"
+    ],
+    "bulk_unassign_members_async": [
+      "self"
+    ]
+  },
+  "OAuth": {
+    "exchange_auth_code_for_api_key": [
+      "self"
+    ],
+    "exchange_auth_code_for_api_key_async": [
+      "self"
+    ],
+    "create_auth_code": [
+      "self"
+    ],
+    "create_auth_code_async": [
+      "self"
+    ]
+  },
+  "HttpClient": {
+    "send": [
+      "self",
+      "request"
+    ],
+    "build_request": [
+      "self",
+      "method",
+      "url"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "AsyncHttpClient": {
+    "send": [
+      "self",
+      "request"
+    ],
+    "build_request": [
+      "self",
+      "method",
+      "url"
+    ],
+    "aclose": [
+      "self"
+    ]
+  },
+  "ClientOwner": {},
+  "close_clients": [
+    "owner",
+    "sync_client",
+    "sync_client_supplied",
+    "async_client",
+    "async_client_supplied"
+  ],
+  "Providers": {
+    "list": [
+      "self"
+    ],
+    "list_async": [
+      "self"
+    ]
+  },
+  "Endpoints": {
+    "list": [
+      "self"
+    ],
+    "list_async": [
+      "self"
+    ],
+    "list_zdr_endpoints": [
+      "self"
+    ],
+    "list_zdr_endpoints_async": [
+      "self"
+    ]
+  },
+  "Analytics": {
+    "get_user_activity": [
+      "self"
+    ],
+    "get_user_activity_async": [
+      "self"
+    ]
+  },
+  "Generations": {
+    "get_generation": [
+      "self"
+    ],
+    "get_generation_async": [
+      "self"
+    ]
+  },
+  "Credits": {
+    "get_credits": [
+      "self"
+    ],
+    "get_credits_async": [
+      "self"
+    ],
+    "create_coinbase_charge": [
+      "self"
+    ],
+    "create_coinbase_charge_async": [
+      "self"
+    ]
+  },
+  "SERVER_PRODUCTION": [],
+  "SERVERS": [],
+  "SDKConfiguration": {
+    "get_server_details": [
+      "self"
+    ]
+  },
+  "GenerateAcceptEnum": {
+    "APPLICATION_JSON": [],
+    "TEXT_EVENT_STREAM": []
+  },
+  "Embeddings": {
+    "generate": [
+      "self"
+    ],
+    "generate_async": [
+      "self"
+    ],
+    "list_models": [
+      "self"
+    ],
+    "list_models_async": [
+      "self"
+    ]
+  },
+  "Models": {
+    "count": [
+      "self"
+    ],
+    "count_async": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ],
+    "list_async": [
+      "self"
+    ],
+    "list_for_user": [
+      "self"
+    ],
+    "list_for_user_async": [
+      "self"
+    ]
+  },
+  "Chat": {
+    "send": [
+      "self"
+    ],
+    "send_async": [
+      "self"
+    ]
+  },
+  "OpenRouter": {
+    "_sub_sdk_map": [],
+    "__init__": [
+      "self",
+      "api_key",
+      "http_referer",
+      "x_open_router_title",
+      "x_open_router_categories",
+      "server",
+      "server_url",
+      "url_params",
+      "client",
+      "async_client",
+      "retry_config",
+      "timeout_ms",
+      "debug_logger"
+    ],
+    "dynamic_import": [
+      "self",
+      "modname",
+      "retries"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "__dir__": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ],
+    "__aexit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ]
+  },
+  "BaseModel": {
+    "model_config": []
+  },
+  "Unset": {
+    "serialize_model": [
+      "self"
+    ],
+    "__bool__": [
+      "self"
+    ]
+  },
+  "UNSET": [],
+  "UNSET_SENTINEL": [],
+  "T": [],
+  "__all__": [],
+  "WebSearchUserLocationType": [],
+  "WebSearchUserLocationTypedDict": {},
+  "WebSearchUserLocation": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ReasoningDetailSummaryType": [],
+  "ReasoningDetailSummaryFormat": [],
+  "ReasoningDetailSummaryTypedDict": {},
+  "ReasoningDetailSummary": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "InputImageType": [],
+  "InputImageDetail": [],
+  "InputImageTypedDict": {},
+  "InputImage": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ChatFormatGrammarConfigType": [],
+  "ChatFormatGrammarConfigTypedDict": {},
+  "ChatFormatGrammarConfig": {},
+  "ChatWebSearchServerToolTypeOpenrouterWebSearch": [],
+  "ChatWebSearchServerToolEngine": [],
+  "ChatWebSearchServerToolSearchContextSize": [],
+  "ChatWebSearchServerToolParametersType": [],
+  "ChatWebSearchServerToolUserLocationTypedDict": {},
+  "ChatWebSearchServerToolUserLocation": {},
+  "ChatWebSearchServerToolParametersTypedDict": {},
+  "ChatWebSearchServerToolParameters": {},
+  "ChatWebSearchServerToolTypedDict": {},
+  "ChatWebSearchServerTool": {},
+  "ReasoningDoneEventType": [],
+  "ReasoningDoneEventTypedDict": {},
+  "ReasoningDoneEvent": {},
+  "Preview20250311WebSearchServerToolType": [],
+  "Preview20250311WebSearchServerToolEngine": [],
+  "Preview20250311WebSearchServerToolFiltersTypedDict": {},
+  "Preview20250311WebSearchServerToolFilters": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "Preview20250311WebSearchServerToolTypedDict": {},
+  "Preview20250311WebSearchServerTool": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "SearchContextSizeEnum": [],
+  "PaymentRequiredResponseErrorDataTypedDict": {},
+  "PaymentRequiredResponseErrorData": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "TypeCodeInterpreter": [],
+  "ContainerType": [],
+  "MemoryLimit": [],
+  "ContainerAutoTypedDict": {},
+  "ContainerAuto": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ContainerTypedDict": [],
+  "Container": [],
+  "CodeInterpreterServerToolTypedDict": {},
+  "CodeInterpreterServerTool": {},
+  "By": [],
+  "Partition": [],
+  "ProviderSortConfigTypedDict": {},
+  "ProviderSortConfig": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "BaseReasoningConfigTypedDict": {},
+  "BaseReasoningConfig": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "dynamic_import": [
+    "modname",
+    "retries"
+  ],
+  "__getattr__": [
+    "attr_name"
+  ],
+  "__dir__": [],
+  "ChatStreamOptionsTypedDict": {},
+  "ChatStreamOptions": {},
+  "WebSearchCallInProgressEventType": [],
+  "WebSearchCallInProgressEventTypedDict": {},
+  "WebSearchCallInProgressEvent": {},
+  "EdgeNetworkTimeoutResponseErrorDataTypedDict": {},
+  "EdgeNetworkTimeoutResponseErrorData": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "PDFParserEnginePDFText": [],
+  "PDFParserEngineEnum": [],
+  "PDFParserEngineTypedDict": [],
+  "PDFParserEngine": [],
+  "VariablesTypedDict": [],
+  "Variables": [],
+  "StoredPromptTemplateTypedDict": {},
+  "StoredPromptTemplate": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ReasoningSummaryTextType": [],
+  "ReasoningSummaryTextTypedDict": {},
+  "ReasoningSummaryText": {},
+  "ServiceUnavailableResponseErrorDataTypedDict": {},
+  "ServiceUnavailableResponseErrorData": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "TruncationEnum": [],
+  "ReasoningEffortEnum": [],
+  "ImageGenCallCompletedEventType": [],
+  "ImageGenCallCompletedEventTypedDict": {},
+  "ImageGenCallCompletedEvent": {},
+  "ResponseOutputTextType": [],
+  "ResponseOutputTextTopLogprobTypedDict": {},
+  "ResponseOutputTextTopLogprob": {},
+  "ResponseOutputTextLogprobTypedDict": {},
+  "ResponseOutputTextLogprob": {},
+  "ResponseOutputTextTypedDict": {},
+  "ResponseOutputText": {},
+  "ImageGenerationStatus": [],
+  "ChatAssistantMessageRole": [],
+  "ChatAssistantMessageContentTypedDict": [],
+  "ChatAssistantMessageContent": [],
+  "ChatAssistantMessageTypedDict": {},
+  "ChatAssistantMessage": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "TopProviderInfoTypedDict": {},
+  "TopProviderInfo": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "PreferredMinThroughputTypedDict": [],
+  "PreferredMinThroughput": [],
+  "CodexLocalShellToolType": [],
+  "CodexLocalShellToolTypedDict": {},
+  "CodexLocalShellTool": {},
+  "OutputImageGenerationCallItemType": [],
+  "OutputImageGenerationCallItemTypedDict": {},
+  "OutputImageGenerationCallItem": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "PercentileLatencyCutoffsTypedDict": {},
+  "PercentileLatencyCutoffs": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "RefusalDoneEventType": [],
+  "RefusalDoneEventTypedDict": {},
+  "RefusalDoneEvent": {},
+  "ModelGroup": [],
+  "ChatContentItems1TypedDict": [],
+  "ChatContentItems1": [],
+  "ChatContentItemsTypedDict": [],
+  "ChatContentItems": [],
+  "PercentileThroughputCutoffsTypedDict": {},
+  "PercentileThroughputCutoffs": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "WebSearchCallCompletedEventType": [],
+  "WebSearchCallCompletedEventTypedDict": {},
+  "WebSearchCallCompletedEvent": {},
+  "ToolCallStatusEnum": [],
+  "PerRequestLimitsTypedDict": {},
+  "PerRequestLimits": {},
+  "FileCitationType": [],
+  "FileCitationTypedDict": {},
+  "FileCitation": {},
+  "WebSearchServerToolOpenRouterType": [],
+  "WebSearchServerToolOpenRouterParametersTypedDict": {},
+  "WebSearchServerToolOpenRouterParameters": {},
+  "WebSearchServerToolOpenRouterTypedDict": {},
+  "WebSearchServerToolOpenRouter": {},
+  "OutputMessageRole": [],
+  "OutputMessageType": [],
+  "OutputMessageStatusInProgress": [],
+  "OutputMessageStatusIncomplete": [],
+  "OutputMessageStatusCompleted": [],
+  "OutputMessageStatusUnionTypedDict": [],
+  "OutputMessageStatusUnion": [],
+  "OutputMessageContentTypedDict": [],
+  "OutputMessageContent": [],
+  "OutputMessagePhaseFinalAnswer": [],
+  "OutputMessagePhaseCommentary": [],
+  "OutputMessagePhaseUnionTypedDict": [],
+  "OutputMessagePhaseUnion": [],
+  "OutputMessageTypedDict": {},
+  "OutputMessage": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "OpenAIResponsesAnnotationTypedDict": [],
+  "OpenAIResponsesAnnotation": [],
+  "ChatDeveloperMessageRole": [],
+  "ChatDeveloperMessageContentTypedDict": [],
+  "ChatDeveloperMessageContent": [],
+  "ChatDeveloperMessageTypedDict": {},
+  "ChatDeveloperMessage": {},
+  "PreferredMaxLatencyTypedDict": [],
+  "PreferredMaxLatency": [],
+  "ChatStreamChoiceTypedDict": {},
+  "ChatStreamChoice": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "TypeWebSearchCall": [],
+  "TypeFindInPage": [],
+  "ActionFindInPageTypedDict": {},
+  "ActionFindInPage": {},
+  "TypeOpenPage": [],
+  "ActionOpenPageTypedDict": {},
+  "ActionOpenPage": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "TypeSearch": [],
+  "TypeURL": [],
+  "SourceTypedDict": {},
+  "Source": {},
+  "ActionSearchTypedDict": {},
+  "ActionSearch": {},
+  "ActionTypedDict": [],
+  "Action": [],
+  "OutputWebSearchCallItemTypedDict": {},
+  "OutputWebSearchCallItem": {},
+  "LegacyChatContentVideoType": [],
+  "LegacyChatContentVideoTypedDict": {},
+  "LegacyChatContentVideo": {},
+  "InputTextType": [],
+  "InputTextTypedDict": {},
+  "InputText": {},
+  "ChatContentFileType": [],
+  "FileTypedDict": {},
+  "File": {},
+  "ChatContentFileTypedDict": {},
+  "ChatContentFile": {},
+  "OutputItemImageGenerationCallType": [],
+  "OutputItemImageGenerationCallTypedDict": {},
+  "OutputItemImageGenerationCall": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ChatTokenLogprobTopLogprobTypedDict": {},
+  "ChatTokenLogprobTopLogprob": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ChatTokenLogprobTypedDict": {},
+  "ChatTokenLogprob": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ReasoningConfigTypedDict": {},
+  "ReasoningConfig": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "WebSearchStatus": [],
+  "UnprocessableEntityResponseErrorDataTypedDict": {},
+  "UnprocessableEntityResponseErrorData": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ChatContentVideoInputTypedDict": {},
+  "ChatContentVideoInput": {},
+  "OutputReasoningItemType": [],
+  "OutputReasoningItemStatusInProgress": [],
+  "OutputReasoningItemStatusIncomplete": [],
+  "OutputReasoningItemStatusCompleted": [],
+  "OutputReasoningItemStatusUnionTypedDict": [],
+  "OutputReasoningItemStatusUnion": [],
+  "OutputReasoningItemFormat": [],
+  "OutputReasoningItemTypedDict": {},
+  "OutputReasoningItem": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "OutputModality": [],
+  "ChatAssistantImagesImageURLTypedDict": {},
+  "ChatAssistantImagesImageURL": {},
+  "ChatAssistantImagesTypedDict": {},
+  "ChatAssistantImages": {},
+  "TextDoneEventType": [],
+  "TextDoneEventTopLogprobTypedDict": {},
+  "TextDoneEventTopLogprob": {},
+  "TextDoneEventLogprobTypedDict": {},
+  "TextDoneEventLogprob": {},
+  "TextDoneEventTypedDict": {},
+  "TextDoneEvent": {},
+  "InputAudioType": [],
+  "InputAudioFormat": [],
+  "InputAudioInputAudioTypedDict": {},
+  "InputAudioInputAudio": {},
+  "InputAudioTypedDict": {},
+  "InputAudio": {},
+  "OutputModalityEnum": [],
+  "DataCollection": [],
+  "ChatFormatJSONSchemaConfigType": [],
+  "ChatFormatJSONSchemaConfigTypedDict": {},
+  "ChatFormatJSONSchemaConfig": {},
+  "DefaultParametersTypedDict": {},
+  "DefaultParameters": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "InputFileType": [],
+  "InputFileTypedDict": {},
+  "InputFile": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ImageGenCallInProgressEventType": [],
+  "ImageGenCallInProgressEventTypedDict": {},
+  "ImageGenCallInProgressEvent": {},
+  "ChatWebSearchShorthandType": [],
+  "ChatWebSearchShorthandEngine": [],
+  "ChatWebSearchShorthandSearchContextSize": [],
+  "ChatWebSearchShorthandTypeApproximate": [],
+  "ChatWebSearchShorthandUserLocationTypedDict": {},
+  "ChatWebSearchShorthandUserLocation": {},
+  "ChatWebSearchShorthandParametersEngine": [],
+  "ChatWebSearchShorthandParametersSearchContextSize": [],
+  "ChatWebSearchShorthandParametersType": [],
+  "ChatWebSearchShorthandParametersUserLocationTypedDict": {},
+  "ChatWebSearchShorthandParametersUserLocation": {},
+  "ChatWebSearchShorthandParametersTypedDict": {},
+  "ChatWebSearchShorthandParameters": {},
+  "ChatWebSearchShorthandTypedDict": {},
+  "ChatWebSearchShorthand": {},
+  "TooManyRequestsResponseErrorDataTypedDict": {},
+  "TooManyRequestsResponseErrorData": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "FormatTextConfigType": [],
+  "FormatTextConfigTypedDict": {},
+  "FormatTextConfig": {},
+  "ReasoningDetailTextType": [],
+  "ReasoningDetailTextFormat": [],
+  "ReasoningDetailTextTypedDict": {},
+  "ReasoningDetailText": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ReasoningSummaryPartDoneEventType": [],
+  "ReasoningSummaryPartDoneEventTypedDict": {},
+  "ReasoningSummaryPartDoneEvent": {},
+  "BadRequestResponseErrorDataTypedDict": {},
+  "BadRequestResponseErrorData": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "TypeFileSearch": [],
+  "FiltersType": [],
+  "Value1TypedDict": [],
+  "Value1": [],
+  "Value2TypedDict": [],
+  "Value2": [],
+  "FileSearchServerToolFiltersTypedDict": {},
+  "FileSearchServerToolFilters": {},
+  "FiltersTypedDict": [],
+  "Filters": [],
+  "Ranker": [],
+  "RankingOptionsTypedDict": {},
+  "RankingOptions": {},
+  "FileSearchServerToolTypedDict": {},
+  "FileSearchServerTool": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ChatToolCallType": [],
+  "ChatToolCallFunctionTypedDict": {},
+  "ChatToolCallFunction": {},
+  "ChatToolCallTypedDict": {},
+  "ChatToolCall": {},
+  "ActivityItemTypedDict": {},
+  "ActivityItem": {},
+  "UnauthorizedResponseErrorDataTypedDict": {},
+  "UnauthorizedResponseErrorData": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ChatFinishReasonEnum": [],
+  "CompoundFilterType": [],
+  "CompoundFilterTypedDict": {},
+  "CompoundFilter": {},
+  "ChatMessagesTypedDict": [],
+  "ChatMessages": [],
+  "ReasoningItemType": [],
+  "ReasoningItemStatusInProgress": [],
+  "ReasoningItemStatusIncomplete": [],
+  "ReasoningItemStatusCompleted": [],
+  "ReasoningItemStatusUnionTypedDict": [],
+  "ReasoningItemStatusUnion": [],
+  "ReasoningItemFormat": [],
+  "ReasoningItemTypedDict": {},
+  "ReasoningItem": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "RefusalDeltaEventType": [],
+  "RefusalDeltaEventTypedDict": {},
+  "RefusalDeltaEvent": {},
+  "ChatContentImageType": [],
+  "ChatContentImageDetail": [],
+  "ChatContentImageImageURLTypedDict": {},
+  "ChatContentImageImageURL": {},
+  "ChatContentImageTypedDict": {},
+  "ChatContentImage": {},
+  "ChatStreamToolCallType": [],
+  "ChatStreamToolCallFunctionTypedDict": {},
+  "ChatStreamToolCallFunction": {},
+  "ChatStreamToolCallTypedDict": {},
+  "ChatStreamToolCall": {},
+  "WebSearchServerToolType": [],
+  "WebSearchServerToolFiltersTypedDict": {},
+  "WebSearchServerToolFilters": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "WebSearchServerToolEngine": [],
+  "WebSearchServerToolTypedDict": {},
+  "WebSearchServerTool": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "WebSearchEngine": [],
+  "ChatAudioOutputTypedDict": {},
+  "ChatAudioOutput": {},
+  "GoneResponseErrorDataTypedDict": {},
+  "GoneResponseErrorData": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "OutputFileSearchCallItemType": [],
+  "OutputFileSearchCallItemTypedDict": {},
+  "OutputFileSearchCallItem": {},
+  "OutputFunctionCallItemType": [],
+  "OutputFunctionCallItemStatusInProgress": [],
+  "OutputFunctionCallItemStatusIncomplete": [],
+  "OutputFunctionCallItemStatusCompleted": [],
+  "OutputFunctionCallItemStatusUnionTypedDict": [],
+  "OutputFunctionCallItemStatusUnion": [],
+  "OutputFunctionCallItemTypedDict": {},
+  "OutputFunctionCallItem": {},
+  "BaseInputsTypeFunctionCall": [],
+  "BaseInputsFunctionCallTypedDict": {},
+  "BaseInputsFunctionCall": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "BaseInputsTypeFunctionCallOutput": [],
+  "BaseInputsOutput1TypedDict": [],
+  "BaseInputsOutput1": [],
+  "BaseInputsOutput2TypedDict": [],
+  "BaseInputsOutput2": [],
+  "BaseInputsFunctionCallOutputTypedDict": {},
+  "BaseInputsFunctionCallOutput": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "BaseInputsTypeMessage2": [],
+  "BaseInputsRoleDeveloper2": [],
+  "BaseInputsRoleSystem2": [],
+  "BaseInputsRoleUser2": [],
+  "BaseInputsRoleUnion2TypedDict": [],
+  "BaseInputsRoleUnion2": [],
+  "BaseInputsContent3TypedDict": [],
+  "BaseInputsContent3": [],
+  "BaseInputsMessage2TypedDict": {},
+  "BaseInputsMessage2": {},
+  "BaseInputsTypeMessage1": [],
+  "BaseInputsRoleDeveloper1": [],
+  "BaseInputsRoleAssistant": [],
+  "BaseInputsRoleSystem1": [],
+  "BaseInputsRoleUser1": [],
+  "BaseInputsRoleUnion1TypedDict": [],
+  "BaseInputsRoleUnion1": [],
+  "BaseInputsContent1TypedDict": [],
+  "BaseInputsContent1": [],
+  "BaseInputsContent2TypedDict": [],
+  "BaseInputsContent2": [],
+  "BaseInputsPhaseFinalAnswer": [],
+  "BaseInputsPhaseCommentary": [],
+  "BaseInputsPhaseUnionTypedDict": [],
+  "BaseInputsPhaseUnion": [],
+  "BaseInputsMessage1TypedDict": {},
+  "BaseInputsMessage1": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "BaseInputsUnion1TypedDict": [],
+  "BaseInputsUnion1": [],
+  "BaseInputsUnionTypedDict": [],
+  "BaseInputsUnion": [],
+  "OpenAIResponsesTruncation": [],
+  "OutputServerToolItemStatus": [],
+  "OutputServerToolItemTypedDict": {},
+  "OutputServerToolItem": {
+    "model_config": [],
+    "additional_properties": [
+      "self",
+      "value"
+    ]
+  },
+  "FunctionCallOutputItemTypeFunctionCallOutput": [],
+  "OutputType": [],
+  "FunctionCallOutputItemDetail": [],
+  "OutputInputImageTypedDict": {},
+  "OutputInputImage": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "FunctionCallOutputItemOutputUnion1TypedDict": [],
+  "FunctionCallOutputItemOutputUnion1": [],
+  "FunctionCallOutputItemOutputUnion2TypedDict": [],
+  "FunctionCallOutputItemOutputUnion2": [],
+  "FunctionCallOutputItemTypedDict": {},
+  "FunctionCallOutputItem": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ReasoningDetailUnionTypedDict": [],
+  "ReasoningDetailUnion": [],
+  "TextConfigVerbosity": [],
+  "TextConfigTypedDict": {},
+  "TextConfig": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "OpenAIResponsesToolChoiceTypeWebSearchPreview": [],
+  "OpenAIResponsesToolChoiceTypeWebSearchPreview20250311": [],
+  "TypeTypedDict": [],
+  "Type": [],
+  "OpenAIResponsesToolChoiceTypedDict": {},
+  "OpenAIResponsesToolChoice": {},
+  "OpenAIResponsesToolChoiceTypeFunction": [],
+  "OpenAIResponsesToolChoiceFunctionTypedDict": {},
+  "OpenAIResponsesToolChoiceFunction": {},
+  "OpenAIResponsesToolChoiceRequired": [],
+  "OpenAIResponsesToolChoiceNone": [],
+  "OpenAIResponsesToolChoiceAuto": [],
+  "OpenAIResponsesToolChoiceUnionTypedDict": [],
+  "OpenAIResponsesToolChoiceUnion": [],
+  "PublicPricingTypedDict": {},
+  "PublicPricing": {},
+  "ChatUserMessageRole": [],
+  "ChatUserMessageContentTypedDict": [],
+  "ChatUserMessageContent": [],
+  "ChatUserMessageTypedDict": {},
+  "ChatUserMessage": {},
+  "PreviewWebSearchUserLocationType": [],
+  "PreviewWebSearchUserLocationTypedDict": {},
+  "PreviewWebSearchUserLocation": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ReasoningSummaryTextDeltaEventType": [],
+  "ReasoningSummaryTextDeltaEventTypedDict": {},
+  "ReasoningSummaryTextDeltaEvent": {},
+  "FormatJSONSchemaConfigType": [],
+  "FormatJSONSchemaConfigTypedDict": {},
+  "FormatJSONSchemaConfig": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ResponseIncludesEnum": [],
+  "InputMessageItemTypeMessage": [],
+  "InputMessageItemRoleDeveloper": [],
+  "InputMessageItemRoleSystem": [],
+  "InputMessageItemRoleUser": [],
+  "InputMessageItemRoleUnionTypedDict": [],
+  "InputMessageItemRoleUnion": [],
+  "InputMessageItemContentType": [],
+  "InputMessageItemDetail": [],
+  "InputMessageItemContentInputImageTypedDict": {},
+  "InputMessageItemContentInputImage": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "InputMessageItemContentUnionTypedDict": [],
+  "InputMessageItemContentUnion": [],
+  "InputMessageItemTypedDict": {},
+  "InputMessageItem": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "OpenResponsesResultObject": [],
+  "OpenResponsesResultType": [],
+  "OpenResponsesResultToolFunctionTypedDict": {},
+  "OpenResponsesResultToolFunction": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "OpenResponsesResultToolUnionTypedDict": [],
+  "OpenResponsesResultToolUnion": [],
+  "OpenResponsesResultTypedDict": {},
+  "OpenResponsesResult": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ChatSystemMessageRole": [],
+  "ChatSystemMessageContentTypedDict": [],
+  "ChatSystemMessageContent": [],
+  "ChatSystemMessageTypedDict": {},
+  "ChatSystemMessage": {},
+  "FunctionCallArgsDoneEventType": [],
+  "FunctionCallArgsDoneEventTypedDict": {},
+  "FunctionCallArgsDoneEvent": {},
+  "BadGatewayResponseErrorDataTypedDict": {},
+  "BadGatewayResponseErrorData": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "Quantization": [],
+  "TypeResponseOutputItemDone": [],
+  "StreamEventsResponseOutputItemDoneTypedDict": {},
+  "StreamEventsResponseOutputItemDone": {},
+  "TypeResponseOutputItemAdded": [],
+  "StreamEventsResponseOutputItemAddedTypedDict": {},
+  "StreamEventsResponseOutputItemAdded": {},
+  "TypeResponseFailed": [],
+  "StreamEventsResponseFailedTypedDict": {},
+  "StreamEventsResponseFailed": {},
+  "TypeResponseIncomplete": [],
+  "StreamEventsResponseIncompleteTypedDict": {},
+  "StreamEventsResponseIncomplete": {},
+  "TypeResponseCompleted": [],
+  "StreamEventsResponseCompletedTypedDict": {},
+  "StreamEventsResponseCompleted": {},
+  "TypeResponseInProgress": [],
+  "StreamEventsResponseInProgressTypedDict": {},
+  "StreamEventsResponseInProgress": {},
+  "TypeResponseCreated": [],
+  "StreamEventsResponseCreatedTypedDict": {},
+  "StreamEventsResponseCreated": {},
+  "StreamEventsTypedDict": [],
+  "StreamEvents": [],
+  "InputModality": [],
+  "ChatTokenLogprobsTypedDict": {},
+  "ChatTokenLogprobs": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "Reason": [],
+  "IncompleteDetailsTypedDict": {},
+  "IncompleteDetails": {},
+  "OutputMessageItemRole": [],
+  "OutputMessageItemType": [],
+  "OutputMessageItemStatusInProgress": [],
+  "OutputMessageItemStatusIncomplete": [],
+  "OutputMessageItemStatusCompleted": [],
+  "OutputMessageItemStatusUnionTypedDict": [],
+  "OutputMessageItemStatusUnion": [],
+  "OutputMessageItemContentTypedDict": [],
+  "OutputMessageItemContent": [],
+  "OutputMessageItemPhaseFinalAnswer": [],
+  "OutputMessageItemPhaseCommentary": [],
+  "OutputMessageItemPhaseUnionTypedDict": [],
+  "OutputMessageItemPhaseUnion": [],
+  "OutputMessageItemTypedDict": {},
+  "OutputMessageItem": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ImageGenerationServerToolType": [],
+  "Background": [],
+  "InputFidelity": [],
+  "InputImageMaskTypedDict": {},
+  "InputImageMask": {},
+  "ModelEnum": [],
+  "Moderation": [],
+  "OutputFormat": [],
+  "Quality": [],
+  "Size": [],
+  "ImageGenerationServerToolTypedDict": {},
+  "ImageGenerationServerTool": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ReasoningSummaryVerbosityEnum": [],
+  "OutputDatetimeItemType": [],
+  "OutputDatetimeItemStatus": [],
+  "OutputDatetimeItemTypedDict": {},
+  "OutputDatetimeItem": {},
+  "CompletionTokensDetailsTypedDict": {},
+  "CompletionTokensDetails": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "PromptTokensDetailsTypedDict": {},
+  "PromptTokensDetails": {},
+  "ChatUsageTypedDict": {},
+  "ChatUsage": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "Tokenizer": [],
+  "ArchitectureTypedDict": {},
+  "Architecture": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ListEndpointsResponseTypedDict": {},
+  "ListEndpointsResponse": {},
+  "ContentPartAddedEventType": [],
+  "ContentPartAddedEventPartTypedDict": [],
+  "ContentPartAddedEventPart": [],
+  "ContentPartAddedEventTypedDict": {},
+  "ContentPartAddedEvent": {},
+  "ProviderPreferencesOrderTypedDict": [],
+  "ProviderPreferencesOrder": [],
+  "ProviderPreferencesOnlyTypedDict": [],
+  "ProviderPreferencesOnly": [],
+  "ProviderPreferencesIgnoreTypedDict": [],
+  "ProviderPreferencesIgnore": [],
+  "ProviderPreferencesSortEnum": [],
+  "ProviderPreferencesProviderSortConfigEnum": [],
+  "ProviderPreferencesBy": [],
+  "ProviderPreferencesPartition": [],
+  "ProviderPreferencesProviderSortConfigTypedDict": {},
+  "ProviderPreferencesProviderSortConfig": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ProviderPreferencesProviderSortConfigUnionTypedDict": [],
+  "ProviderPreferencesProviderSortConfigUnion": [],
+  "ProviderPreferencesProviderSort": [],
+  "ProviderPreferencesSortUnionTypedDict": [],
+  "ProviderPreferencesSortUnion": [],
+  "ProviderPreferencesMaxPriceTypedDict": {},
+  "ProviderPreferencesMaxPrice": {},
+  "ProviderPreferencesTypedDict": {},
+  "ProviderPreferences": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ChatRequestOrderTypedDict": [],
+  "ChatRequestOrder": [],
+  "ChatRequestOnlyTypedDict": [],
+  "ChatRequestOnly": [],
+  "ChatRequestIgnoreTypedDict": [],
+  "ChatRequestIgnore": [],
+  "ChatRequestSortEnum": [],
+  "ChatRequestProviderSortConfigEnum": [],
+  "ChatRequestBy": [],
+  "ChatRequestPartition": [],
+  "ChatRequestProviderSortConfigTypedDict": {},
+  "ChatRequestProviderSortConfig": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ChatRequestProviderSortConfigUnionTypedDict": [],
+  "ChatRequestProviderSortConfigUnion": [],
+  "ChatRequestProviderSort": [],
+  "ChatRequestSortUnionTypedDict": [],
+  "ChatRequestSortUnion": [],
+  "ChatRequestMaxPriceTypedDict": {},
+  "ChatRequestMaxPrice": {},
+  "ChatRequestProviderTypedDict": {},
+  "ChatRequestProvider": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ChatRequestIDContextCompression": [],
+  "ChatRequestPluginContextCompressionTypedDict": {},
+  "ChatRequestPluginContextCompression": {},
+  "ChatRequestIDResponseHealing": [],
+  "ChatRequestPluginResponseHealingTypedDict": {},
+  "ChatRequestPluginResponseHealing": {},
+  "ChatRequestIDFileParser": [],
+  "ChatRequestPluginFileParserTypedDict": {},
+  "ChatRequestPluginFileParser": {},
+  "ChatRequestIDWeb": [],
+  "ChatRequestPluginWebTypedDict": {},
+  "ChatRequestPluginWeb": {},
+  "ChatRequestIDModeration": [],
+  "ChatRequestPluginModerationTypedDict": {},
+  "ChatRequestPluginModeration": {},
+  "ChatRequestIDAutoRouter": [],
+  "ChatRequestPluginAutoRouterTypedDict": {},
+  "ChatRequestPluginAutoRouter": {},
+  "ChatRequestPluginUnionTypedDict": [],
+  "ChatRequestPluginUnion": [],
+  "ChatRequestTraceTypedDict": {},
+  "ChatRequestTrace": {
+    "model_config": [],
+    "additional_properties": [
+      "self",
+      "value"
+    ]
+  },
+  "Effort": [],
+  "ReasoningTypedDict": {},
+  "Reasoning": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ResponseFormatTypedDict": [],
+  "ResponseFormat": [],
+  "StopTypedDict": [],
+  "Stop": [],
+  "ChatRequestImageConfigTypedDict": [],
+  "ChatRequestImageConfig": [],
+  "Modality": [],
+  "ChatRequestType": [],
+  "ChatRequestTTL": [],
+  "CacheControlTypedDict": {},
+  "CacheControl": {},
+  "ChatRequestServiceTier": [],
+  "ChatRequestTypedDict": {},
+  "ChatRequest": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "AnnotationAddedEventType": [],
+  "AnnotationAddedEventTypedDict": {},
+  "AnnotationAddedEvent": {},
+  "ChatChoiceTypedDict": {},
+  "ChatChoice": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ChatFormatTextConfigType": [],
+  "ChatFormatTextConfigTypedDict": {},
+  "ChatFormatTextConfig": {},
+  "ForbiddenResponseErrorDataTypedDict": {},
+  "ForbiddenResponseErrorData": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "PDFParserOptionsTypedDict": {},
+  "PDFParserOptions": {},
+  "DataTypedDict": {},
+  "Data": {},
+  "ModelsCountResponseTypedDict": {},
+  "ModelsCountResponse": {},
+  "ConflictResponseErrorDataTypedDict": {},
+  "ConflictResponseErrorData": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ChatJSONSchemaConfigTypedDict": {},
+  "ChatJSONSchemaConfig": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ModelsListResponseTypedDict": {},
+  "ModelsListResponse": {},
+  "OutputItemsTypedDict": [],
+  "OutputItems": [],
+  "NotFoundResponseErrorDataTypedDict": {},
+  "NotFoundResponseErrorData": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "InputVideoType": [],
+  "InputVideoTypedDict": {},
+  "InputVideo": {},
+  "ReasoningSummaryPartAddedEventType": [],
+  "ReasoningSummaryPartAddedEventTypedDict": {},
+  "ReasoningSummaryPartAddedEvent": {},
+  "ProviderName": [],
+  "ChatFormatPythonConfigType": [],
+  "ChatFormatPythonConfigTypedDict": {},
+  "ChatFormatPythonConfig": {},
+  "SecurityTypedDict": {},
+  "Security": {},
+  "TextExtendedConfigVerbosity": [],
+  "TextExtendedConfigTypedDict": {},
+  "TextExtendedConfig": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "PercentileStatsTypedDict": {},
+  "PercentileStats": {},
+  "FilePathType": [],
+  "FilePathTypedDict": {},
+  "FilePath": {},
+  "OpenAIResponsesRefusalContentType": [],
+  "OpenAIResponsesRefusalContentTypedDict": {},
+  "OpenAIResponsesRefusalContent": {},
+  "ShellServerToolType": [],
+  "ShellServerToolTypedDict": {},
+  "ShellServerTool": {},
+  "OpenAIResponsesResponseStatus": [],
+  "WebSearchCallSearchingEventType": [],
+  "WebSearchCallSearchingEventTypedDict": {},
+  "WebSearchCallSearchingEvent": {},
+  "ErrorEventType": [],
+  "ErrorEventTypedDict": {},
+  "ErrorEvent": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ChatStreamDeltaRole": [],
+  "ChatStreamDeltaTypedDict": {},
+  "ChatStreamDelta": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ChatToolChoiceRequired": [],
+  "ChatToolChoiceAuto": [],
+  "ChatToolChoiceNone": [],
+  "ChatToolChoiceTypedDict": [],
+  "ChatToolChoice": [],
+  "ChatNamedToolChoiceType": [],
+  "ChatNamedToolChoiceFunctionTypedDict": {},
+  "ChatNamedToolChoiceFunction": {},
+  "ChatNamedToolChoiceTypedDict": {},
+  "ChatNamedToolChoice": {},
+  "McpServerToolType": [],
+  "AllowedToolsTypedDict": {},
+  "AllowedTools": {},
+  "ConnectorID": [],
+  "RequireApprovalNever": [],
+  "RequireApprovalAlways": [],
+  "NeverTypedDict": {},
+  "Never": {},
+  "AlwaysTypedDict": {},
+  "Always": {},
+  "RequireApprovalTypedDict": {},
+  "RequireApproval": {},
+  "McpServerToolTypedDict": {},
+  "McpServerTool": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ReasoningSummaryTextDoneEventType": [],
+  "ReasoningSummaryTextDoneEventTypedDict": {},
+  "ReasoningSummaryTextDoneEvent": {},
+  "ProviderSort": [],
+  "FunctionCallArgsDeltaEventType": [],
+  "FunctionCallArgsDeltaEventTypedDict": {},
+  "FunctionCallArgsDeltaEvent": {},
+  "DatetimeServerToolType": [],
+  "DatetimeServerToolParametersTypedDict": {},
+  "DatetimeServerToolParameters": {},
+  "DatetimeServerToolTypedDict": {},
+  "DatetimeServerTool": {},
+  "InternalServerResponseErrorDataTypedDict": {},
+  "InternalServerResponseErrorData": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ChatToolMessageRole": [],
+  "ChatToolMessageContentTypedDict": [],
+  "ChatToolMessageContent": [],
+  "ChatToolMessageTypedDict": {},
+  "ChatToolMessage": {},
+  "Parameter": [],
+  "ChatFunctionToolType": [],
+  "ChatFunctionToolFunctionFunctionTypedDict": {},
+  "ChatFunctionToolFunctionFunction": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ChatFunctionToolFunctionTypedDict": {},
+  "ChatFunctionToolFunction": {},
+  "ChatFunctionToolTypedDict": [],
+  "ChatFunctionTool": [],
+  "ChatContentTextType": [],
+  "ChatContentTextTypedDict": {},
+  "ChatContentText": {},
+  "ImageGenCallGeneratingEventType": [],
+  "ImageGenCallGeneratingEventTypedDict": {},
+  "ImageGenCallGeneratingEvent": {},
+  "InstructType": [],
+  "FormatsTypedDict": [],
+  "Formats": [],
+  "ComputerUseServerToolType": [],
+  "Environment": [],
+  "ComputerUseServerToolTypedDict": {},
+  "ComputerUseServerTool": {},
+  "ImageGenCallPartialImageEventType": [],
+  "ImageGenCallPartialImageEventTypedDict": {},
+  "ImageGenCallPartialImageEvent": {},
+  "ContentPartDoneEventType": [],
+  "ContentPartDoneEventPartTypedDict": [],
+  "ContentPartDoneEventPart": [],
+  "ContentPartDoneEventTypedDict": {},
+  "ContentPartDoneEvent": {},
+  "ReasoningDetailEncryptedType": [],
+  "ReasoningDetailEncryptedFormat": [],
+  "ReasoningDetailEncryptedTypedDict": {},
+  "ReasoningDetailEncrypted": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "InputsTypeReasoning": [],
+  "InputsStatusInProgress2": [],
+  "InputsStatusIncomplete2": [],
+  "InputsStatusCompleted2": [],
+  "InputsStatusUnion2TypedDict": [],
+  "InputsStatusUnion2": [],
+  "InputsFormat": [],
+  "InputsReasoningTypedDict": {},
+  "InputsReasoning": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "InputsRole": [],
+  "InputsTypeMessage": [],
+  "InputsStatusInProgress1": [],
+  "InputsStatusIncomplete1": [],
+  "InputsStatusCompleted1": [],
+  "InputsStatusUnion1TypedDict": [],
+  "InputsStatusUnion1": [],
+  "InputsContent1TypedDict": [],
+  "InputsContent1": [],
+  "InputsContent2TypedDict": [],
+  "InputsContent2": [],
+  "InputsPhaseFinalAnswer": [],
+  "InputsPhaseCommentary": [],
+  "InputsPhaseUnionTypedDict": [],
+  "InputsPhaseUnion": [],
+  "InputsMessageTypedDict": {},
+  "InputsMessage": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "InputsUnion1TypedDict": [],
+  "InputsUnion1": [],
+  "InputsUnionTypedDict": [],
+  "InputsUnion": [],
+  "URLCitationType": [],
+  "URLCitationTypedDict": {},
+  "URLCitation": {},
+  "ChatResultObject": [],
+  "ChatResultTypedDict": {},
+  "ChatResult": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ChatContentVideoType": [],
+  "ChatContentVideoTypedDict": {},
+  "ChatContentVideo": {},
+  "EasyInputMessageTypeMessage": [],
+  "EasyInputMessageRoleDeveloper": [],
+  "EasyInputMessageRoleAssistant": [],
+  "EasyInputMessageRoleSystem": [],
+  "EasyInputMessageRoleUser": [],
+  "EasyInputMessageRoleUnionTypedDict": [],
+  "EasyInputMessageRoleUnion": [],
+  "EasyInputMessageContentType": [],
+  "EasyInputMessageDetail": [],
+  "EasyInputMessageContentInputImageTypedDict": {},
+  "EasyInputMessageContentInputImage": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "EasyInputMessageContentUnion1TypedDict": [],
+  "EasyInputMessageContentUnion1": [],
+  "EasyInputMessageContentUnion2TypedDict": [],
+  "EasyInputMessageContentUnion2": [],
+  "EasyInputMessagePhaseFinalAnswer": [],
+  "EasyInputMessagePhaseCommentary": [],
+  "EasyInputMessagePhaseUnionTypedDict": [],
+  "EasyInputMessagePhaseUnion": [],
+  "EasyInputMessageTypedDict": {},
+  "EasyInputMessage": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ChatContentAudioType": [],
+  "ChatContentAudioInputAudioTypedDict": {},
+  "ChatContentAudioInputAudio": {},
+  "ChatContentAudioTypedDict": {},
+  "ChatContentAudio": {},
+  "FunctionCallItemType": [],
+  "FunctionCallItemTypedDict": {},
+  "FunctionCallItem": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "RequestTimeoutResponseErrorDataTypedDict": {},
+  "RequestTimeoutResponseErrorData": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "LegacyWebSearchServerToolType": [],
+  "LegacyWebSearchServerToolFiltersTypedDict": {},
+  "LegacyWebSearchServerToolFilters": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "LegacyWebSearchServerToolEngine": [],
+  "LegacyWebSearchServerToolTypedDict": {},
+  "LegacyWebSearchServerTool": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ChatStreamChunkObject": [],
+  "ErrorTypedDict": {},
+  "Error": {},
+  "ChatStreamChunkTypedDict": {},
+  "ChatStreamChunk": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ContextCompressionEngine": [],
+  "ReasoningDeltaEventType": [],
+  "ReasoningDeltaEventTypedDict": {},
+  "ReasoningDeltaEvent": {},
+  "ReasoningTextContentType": [],
+  "ReasoningTextContentTypedDict": {},
+  "ReasoningTextContent": {},
+  "ResponsesRequestType": [],
+  "ResponsesRequestToolFunctionTypedDict": {},
+  "ResponsesRequestToolFunction": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ResponsesRequestToolUnionTypedDict": [],
+  "ResponsesRequestToolUnion": [],
+  "ResponsesRequestImageConfigTypedDict": [],
+  "ResponsesRequestImageConfig": [],
+  "ResponsesRequestServiceTier": [],
+  "ResponsesRequestOrderTypedDict": [],
+  "ResponsesRequestOrder": [],
+  "ResponsesRequestOnlyTypedDict": [],
+  "ResponsesRequestOnly": [],
+  "ResponsesRequestIgnoreTypedDict": [],
+  "ResponsesRequestIgnore": [],
+  "ResponsesRequestSortTypedDict": [],
+  "ResponsesRequestSort": [],
+  "ResponsesRequestMaxPriceTypedDict": {},
+  "ResponsesRequestMaxPrice": {},
+  "ResponsesRequestProviderTypedDict": {},
+  "ResponsesRequestProvider": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ResponsesRequestIDContextCompression": [],
+  "ResponsesRequestPluginContextCompressionTypedDict": {},
+  "ResponsesRequestPluginContextCompression": {},
+  "ResponsesRequestIDResponseHealing": [],
+  "ResponsesRequestPluginResponseHealingTypedDict": {},
+  "ResponsesRequestPluginResponseHealing": {},
+  "ResponsesRequestIDFileParser": [],
+  "ResponsesRequestPluginFileParserTypedDict": {},
+  "ResponsesRequestPluginFileParser": {},
+  "ResponsesRequestIDWeb": [],
+  "ResponsesRequestPluginWebTypedDict": {},
+  "ResponsesRequestPluginWeb": {},
+  "ResponsesRequestIDModeration": [],
+  "ResponsesRequestPluginModerationTypedDict": {},
+  "ResponsesRequestPluginModeration": {},
+  "ResponsesRequestIDAutoRouter": [],
+  "ResponsesRequestPluginAutoRouterTypedDict": {},
+  "ResponsesRequestPluginAutoRouter": {},
+  "ResponsesRequestPluginUnionTypedDict": [],
+  "ResponsesRequestPluginUnion": [],
+  "ResponsesRequestTraceTypedDict": {},
+  "ResponsesRequestTrace": {
+    "model_config": [],
+    "additional_properties": [
+      "self",
+      "value"
+    ]
+  },
+  "ResponsesRequestTypedDict": {},
+  "ResponsesRequest": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ModelArchitectureInstructType": [],
+  "ModelArchitectureTypedDict": {},
+  "ModelArchitecture": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "InputTokensDetailsTypedDict": {},
+  "InputTokensDetails": {},
+  "OutputTokensDetailsTypedDict": {},
+  "OutputTokensDetails": {},
+  "CostDetailsTypedDict": {},
+  "CostDetails": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "UsageTypedDict": {},
+  "Usage": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ChatDebugOptionsTypedDict": {},
+  "ChatDebugOptions": {},
+  "ModelTypedDict": {},
+  "Model": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ProviderOverloadedResponseErrorDataTypedDict": {},
+  "ProviderOverloadedResponseErrorData": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ChatContentCacheControlType": [],
+  "ChatContentCacheControlTTL": [],
+  "ChatContentCacheControlTypedDict": {},
+  "ChatContentCacheControl": {},
+  "EndpointStatus": [],
+  "Code": [],
+  "ResponsesErrorFieldTypedDict": {},
+  "ResponsesErrorField": {},
+  "PreviewWebSearchServerToolType": [],
+  "PreviewWebSearchServerToolEngine": [],
+  "PreviewWebSearchServerToolFiltersTypedDict": {},
+  "PreviewWebSearchServerToolFilters": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "PreviewWebSearchServerToolTypedDict": {},
+  "PreviewWebSearchServerTool": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "PricingTypedDict": {},
+  "Pricing": {},
+  "PublicEndpointQuantization": [],
+  "PublicEndpointTypedDict": {},
+  "PublicEndpoint": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ApplyPatchServerToolType": [],
+  "ApplyPatchServerToolTypedDict": {},
+  "ApplyPatchServerTool": {},
+  "TypeCustom": [],
+  "FormatTypeGrammar": [],
+  "Syntax": [],
+  "FormatGrammarTypedDict": {},
+  "FormatGrammar": {},
+  "FormatTypeText": [],
+  "FormatTextTypedDict": {},
+  "FormatText": {},
+  "FormatTypedDict": [],
+  "Format": [],
+  "CustomToolTypedDict": {},
+  "CustomTool": {},
+  "ChatReasoningSummaryVerbosityEnum": [],
+  "TextDeltaEventType": [],
+  "TextDeltaEventTopLogprobTypedDict": {},
+  "TextDeltaEventTopLogprob": {},
+  "TextDeltaEventLogprobTypedDict": {},
+  "TextDeltaEventLogprob": {},
+  "TextDeltaEventTypedDict": {},
+  "TextDeltaEvent": {},
+  "FormatJSONObjectConfigType": [],
+  "FormatJSONObjectConfigTypedDict": {},
+  "FormatJSONObjectConfig": {},
+  "PayloadTooLargeResponseErrorDataTypedDict": {},
+  "PayloadTooLargeResponseErrorData": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "PayloadTooLargeResponseError": {
+    "__init__": [
+      "self",
+      "data",
+      "raw_response",
+      "body"
+    ]
+  },
+  "ResponseValidationError": {
+    "__init__": [
+      "self",
+      "message",
+      "raw_response",
+      "cause",
+      "body"
+    ],
+    "cause": [
+      "self"
+    ]
+  },
+  "MAX_MESSAGE_LEN": [],
+  "OpenRouterDefaultError": {
+    "__init__": [
+      "self",
+      "message",
+      "raw_response",
+      "body"
+    ]
+  },
+  "UnprocessableEntityResponseError": {
+    "__init__": [
+      "self",
+      "data",
+      "raw_response",
+      "body"
+    ]
+  },
+  "UnauthorizedResponseError": {
+    "__init__": [
+      "self",
+      "data",
+      "raw_response",
+      "body"
+    ]
+  },
+  "TooManyRequestsResponseError": {
+    "__init__": [
+      "self",
+      "data",
+      "raw_response",
+      "body"
+    ]
+  },
+  "ProviderOverloadedResponseError": {
+    "__init__": [
+      "self",
+      "data",
+      "raw_response",
+      "body"
+    ]
+  },
+  "BadGatewayResponseError": {
+    "__init__": [
+      "self",
+      "data",
+      "raw_response",
+      "body"
+    ]
+  },
+  "PaymentRequiredResponseError": {
+    "__init__": [
+      "self",
+      "data",
+      "raw_response",
+      "body"
+    ]
+  },
+  "InternalServerResponseError": {
+    "__init__": [
+      "self",
+      "data",
+      "raw_response",
+      "body"
+    ]
+  },
+  "NoResponseError": {
+    "__init__": [
+      "self",
+      "message"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "ConflictResponseError": {
+    "__init__": [
+      "self",
+      "data",
+      "raw_response",
+      "body"
+    ]
+  },
+  "ServiceUnavailableResponseError": {
+    "__init__": [
+      "self",
+      "data",
+      "raw_response",
+      "body"
+    ]
+  },
+  "EdgeNetworkTimeoutResponseError": {
+    "__init__": [
+      "self",
+      "data",
+      "raw_response",
+      "body"
+    ]
+  },
+  "GoneResponseError": {
+    "__init__": [
+      "self",
+      "data",
+      "raw_response",
+      "body"
+    ]
+  },
+  "BadRequestResponseError": {
+    "__init__": [
+      "self",
+      "data",
+      "raw_response",
+      "body"
+    ]
+  },
+  "ForbiddenResponseError": {
+    "__init__": [
+      "self",
+      "data",
+      "raw_response",
+      "body"
+    ]
+  },
+  "RequestTimeoutResponseError": {
+    "__init__": [
+      "self",
+      "data",
+      "raw_response",
+      "body"
+    ]
+  },
+  "OpenRouterError": {
+    "__init__": [
+      "self",
+      "message",
+      "raw_response",
+      "body"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "NotFoundResponseError": {
+    "__init__": [
+      "self",
+      "data",
+      "raw_response",
+      "body"
+    ]
+  },
+  "SDKHooks": {
+    "__init__": [
+      "self"
+    ],
+    "register_sdk_init_hook": [
+      "self",
+      "hook"
+    ],
+    "register_before_request_hook": [
+      "self",
+      "hook"
+    ],
+    "register_after_success_hook": [
+      "self",
+      "hook"
+    ],
+    "register_after_error_hook": [
+      "self",
+      "hook"
+    ],
+    "sdk_init": [
+      "self",
+      "config"
+    ],
+    "before_request": [
+      "self",
+      "hook_ctx",
+      "request"
+    ],
+    "after_success": [
+      "self",
+      "hook_ctx",
+      "response"
+    ],
+    "after_error": [
+      "self",
+      "hook_ctx",
+      "response",
+      "error"
+    ]
+  },
+  "HookContext": {
+    "__init__": [
+      "self",
+      "config",
+      "base_url",
+      "operation_id",
+      "oauth2_scopes",
+      "security_source"
+    ]
+  },
+  "BeforeRequestContext": {
+    "__init__": [
+      "self",
+      "hook_ctx"
+    ]
+  },
+  "AfterSuccessContext": {
+    "__init__": [
+      "self",
+      "hook_ctx"
+    ]
+  },
+  "AfterErrorContext": {
+    "__init__": [
+      "self",
+      "hook_ctx"
+    ]
+  },
+  "SDKInitHook": {
+    "sdk_init": [
+      "self",
+      "config"
+    ]
+  },
+  "BeforeRequestHook": {
+    "before_request": [
+      "self",
+      "hook_ctx",
+      "request"
+    ]
+  },
+  "AfterSuccessHook": {
+    "after_success": [
+      "self",
+      "hook_ctx",
+      "response"
+    ]
+  },
+  "AfterErrorHook": {
+    "after_error": [
+      "self",
+      "hook_ctx",
+      "response",
+      "error"
+    ]
+  },
+  "Hooks": {
+    "register_sdk_init_hook": [
+      "self",
+      "hook"
+    ],
+    "register_before_request_hook": [
+      "self",
+      "hook"
+    ],
+    "register_after_success_hook": [
+      "self",
+      "hook"
+    ],
+    "register_after_error_hook": [
+      "self",
+      "hook"
+    ]
+  },
+  "init_hooks": [
+    "hooks"
+  ],
+  "GlobalsTypedDict": {},
+  "Globals": {},
+  "Logger": {
+    "debug": [
+      "self",
+      "msg"
+    ]
+  },
+  "NoOpLogger": {
+    "debug": [
+      "self",
+      "msg"
+    ]
+  },
+  "get_body_content": [
+    "req"
+  ],
+  "get_default_logger": [],
+  "generate_url": [
+    "server_url",
+    "path",
+    "path_params",
+    "gbls"
+  ],
+  "_populate_path_params": [
+    "path_params",
+    "gbls",
+    "path_param_values",
+    "skip_fields"
+  ],
+  "is_optional": [
+    "field"
+  ],
+  "template_url": [
+    "url_with_params",
+    "params"
+  ],
+  "remove_suffix": [
+    "input_string",
+    "suffix"
+  ],
+  "match_content_type": [
+    "content_type",
+    "pattern"
+  ],
+  "match_status_codes": [
+    "status_codes",
+    "status_code"
+  ],
+  "cast_partial": [
+    "typ"
+  ],
+  "get_global_from_env": [
+    "value",
+    "env_key",
+    "type_cast"
+  ],
+  "match_response": [
+    "response",
+    "code",
+    "content_type"
+  ],
+  "_populate_from_globals": [
+    "param_name",
+    "value",
+    "param_metadata_type",
+    "gbls"
+  ],
+  "_val_to_string": [
+    "val"
+  ],
+  "_get_serialized_params": [
+    "metadata",
+    "field_name",
+    "obj",
+    "typ"
+  ],
+  "_is_set": [
+    "value"
+  ],
+  "SecurityMetadata": {
+    "get_field_name": [
+      "self",
+      "default"
+    ]
+  },
+  "ParamMetadata": {},
+  "PathParamMetadata": {},
+  "QueryParamMetadata": {},
+  "HeaderMetadata": {},
+  "RequestMetadata": {},
+  "MultipartFormMetadata": {},
+  "FormMetadata": {},
+  "FieldMetadata": {
+    "__init__": [
+      "self",
+      "security",
+      "path",
+      "query",
+      "header",
+      "request",
+      "form",
+      "multipart"
+    ]
+  },
+  "find_field_metadata": [
+    "field_info",
+    "metadata_type"
+  ],
+  "find_metadata": [
+    "field_info",
+    "metadata_type"
+  ],
+  "unmarshal_json_response": [
+    "typ",
+    "http_res",
+    "body"
+  ],
+  "_populate_form": [
+    "field_name",
+    "explode",
+    "obj",
+    "delimiter",
+    "form"
+  ],
+  "_extract_file_properties": [
+    "file_obj"
+  ],
+  "serialize_multipart_form": [
+    "media_type",
+    "request"
+  ],
+  "serialize_form_data": [
+    "data"
+  ],
+  "get_query_params": [
+    "query_params",
+    "gbls",
+    "allow_empty_value"
+  ],
+  "_populate_query_params": [
+    "query_params",
+    "gbls",
+    "query_param_values",
+    "skip_fields",
+    "allow_empty_value"
+  ],
+  "_populate_deep_object_query_params": [
+    "field_name",
+    "obj",
+    "params"
+  ],
+  "_populate_deep_object_query_params_basemodel": [
+    "prior_params_key",
+    "obj",
+    "params"
+  ],
+  "_populate_deep_object_query_params_dict": [
+    "prior_params_key",
+    "value",
+    "params"
+  ],
+  "_populate_deep_object_query_params_list": [
+    "params_key",
+    "value",
+    "params"
+  ],
+  "_populate_delimited_query_params": [
+    "metadata",
+    "field_name",
+    "obj",
+    "delimiter",
+    "query_param_values"
+  ],
+  "serialize_decimal": [
+    "as_str"
+  ],
+  "validate_decimal": [
+    "d"
+  ],
+  "serialize_float": [
+    "as_str"
+  ],
+  "validate_float": [
+    "f"
+  ],
+  "serialize_int": [
+    "as_str"
+  ],
+  "validate_int": [
+    "b"
+  ],
+  "validate_open_enum": [
+    "is_int"
+  ],
+  "validate_const": [
+    "v"
+  ],
+  "unmarshal_json": [
+    "raw",
+    "typ"
+  ],
+  "unmarshal": [
+    "val",
+    "typ"
+  ],
+  "marshal_json": [
+    "val",
+    "typ"
+  ],
+  "is_nullable": [
+    "field"
+  ],
+  "is_union": [
+    "obj"
+  ],
+  "stream_to_text": [
+    "stream"
+  ],
+  "stream_to_text_async": [
+    "stream"
+  ],
+  "stream_to_bytes": [
+    "stream"
+  ],
+  "stream_to_bytes_async": [
+    "stream"
+  ],
+  "get_pydantic_model": [
+    "data",
+    "typ"
+  ],
+  "_contains_pydantic_model": [
+    "data"
+  ],
+  "_get_typing_objects_by_name_of": [
+    "name"
+  ],
+  "BackoffStrategy": {
+    "__init__": [
+      "self",
+      "initial_interval",
+      "max_interval",
+      "exponent",
+      "max_elapsed_time"
+    ]
+  },
+  "RetryConfig": {
+    "__init__": [
+      "self",
+      "strategy",
+      "backoff",
+      "retry_connection_errors"
+    ]
+  },
+  "Retries": {
+    "__init__": [
+      "self",
+      "config",
+      "status_codes"
+    ]
+  },
+  "TemporaryError": {
+    "__init__": [
+      "self",
+      "response"
+    ]
+  },
+  "PermanentError": {
+    "__init__": [
+      "self",
+      "inner"
+    ]
+  },
+  "_parse_retry_after_header": [
+    "response"
+  ],
+  "_get_sleep_interval": [
+    "exception",
+    "initial_interval",
+    "max_interval",
+    "exponent",
+    "retries"
+  ],
+  "retry": [
+    "func",
+    "retries"
+  ],
+  "retry_async": [
+    "func",
+    "retries"
+  ],
+  "retry_with_backoff": [
+    "func",
+    "initial_interval",
+    "max_interval",
+    "exponent",
+    "max_elapsed_time"
+  ],
+  "retry_with_backoff_async": [
+    "func",
+    "initial_interval",
+    "max_interval",
+    "exponent",
+    "max_elapsed_time"
+  ],
+  "get_security": [
+    "security"
+  ],
+  "get_security_from_env": [
+    "security",
+    "security_class"
+  ],
+  "_parse_security_option": [
+    "headers",
+    "query_params",
+    "option"
+  ],
+  "_parse_security_scheme": [
+    "headers",
+    "query_params",
+    "scheme_metadata",
+    "field_name",
+    "scheme"
+  ],
+  "_parse_security_scheme_value": [
+    "headers",
+    "query_params",
+    "scheme_metadata",
+    "security_metadata",
+    "field_name",
+    "value"
+  ],
+  "_apply_bearer": [
+    "token"
+  ],
+  "_parse_basic_auth_scheme": [
+    "headers",
+    "scheme"
+  ],
+  "get_headers": [
+    "headers_params",
+    "gbls"
+  ],
+  "_populate_headers": [
+    "headers_params",
+    "gbls",
+    "header_values",
+    "skip_fields"
+  ],
+  "_serialize_header": [
+    "explode",
+    "obj"
+  ],
+  "get_response_headers": [
+    "headers"
+  ],
+  "SERIALIZATION_METHOD_TO_CONTENT_TYPE": [],
+  "SerializedRequestBody": {},
+  "serialize_request_body": [
+    "request_body",
+    "nullable",
+    "optional",
+    "serialization_method",
+    "request_body_type"
+  ],
+  "OpenEnumMeta": {},
+  "get_discriminator": [
+    "model",
+    "fieldname",
+    "key"
+  ],
+  "EventStream": {
+    "__init__": [
+      "self",
+      "response",
+      "decoder",
+      "sentinel",
+      "client_ref"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__next__": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ]
+  },
+  "EventStreamAsync": {
+    "__init__": [
+      "self",
+      "response",
+      "decoder",
+      "sentinel",
+      "client_ref"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__anext__": [
+      "self"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ]
+  },
+  "ServerEvent": {},
+  "MESSAGE_BOUNDARIES": [],
+  "stream_events_async": [
+    "response",
+    "decoder",
+    "sentinel"
+  ],
+  "stream_events": [
+    "response",
+    "decoder",
+    "sentinel"
+  ],
+  "_parse_event": [
+    "raw",
+    "decoder",
+    "sentinel"
+  ],
+  "_peek_sequence": [
+    "position",
+    "buffer",
+    "sequence"
+  ],
+  "parse_datetime": [
+    "datetime_string"
+  ],
+  "ListEndpointsZdrGlobalsTypedDict": {},
+  "ListEndpointsZdrGlobals": {},
+  "ListEndpointsZdrRequestTypedDict": {},
+  "ListEndpointsZdrRequest": {},
+  "ListEndpointsZdrResponseTypedDict": {},
+  "ListEndpointsZdrResponse": {},
+  "CreateEmbeddingsGlobalsTypedDict": {},
+  "CreateEmbeddingsGlobals": {},
+  "TypeImageURL": [],
+  "ImageURLTypedDict": {},
+  "ImageURL": {},
+  "ContentImageURLTypedDict": {},
+  "ContentImageURL": {},
+  "TypeText": [],
+  "ContentTextTypedDict": {},
+  "ContentText": {},
+  "ContentTypedDict": [],
+  "Content": [],
+  "InputTypedDict": {},
+  "Input": {},
+  "InputUnionTypedDict": [],
+  "InputUnion": [],
+  "EncodingFormat": [],
+  "CreateEmbeddingsRequestBodyTypedDict": {},
+  "CreateEmbeddingsRequestBody": {},
+  "CreateEmbeddingsRequestTypedDict": {},
+  "CreateEmbeddingsRequest": {},
+  "Object": [],
+  "ObjectEmbedding": [],
+  "EmbeddingTypedDict": [],
+  "Embedding": [],
+  "CreateEmbeddingsDataTypedDict": {},
+  "CreateEmbeddingsData": {},
+  "CreateEmbeddingsResponseBodyTypedDict": {},
+  "CreateEmbeddingsResponseBody": {},
+  "CreateEmbeddingsResponseTypedDict": [],
+  "CreateEmbeddingsResponse": [],
+  "CreateAuthKeysCodeGlobalsTypedDict": {},
+  "CreateAuthKeysCodeGlobals": {},
+  "CreateAuthKeysCodeCodeChallengeMethod": [],
+  "UsageLimitType": [],
+  "CreateAuthKeysCodeRequestBodyTypedDict": {},
+  "CreateAuthKeysCodeRequestBody": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "CreateAuthKeysCodeRequestTypedDict": {},
+  "CreateAuthKeysCodeRequest": {},
+  "CreateAuthKeysCodeDataTypedDict": {},
+  "CreateAuthKeysCodeData": {},
+  "CreateAuthKeysCodeResponseTypedDict": {},
+  "CreateAuthKeysCodeResponse": {},
+  "DeleteKeysGlobalsTypedDict": {},
+  "DeleteKeysGlobals": {},
+  "DeleteKeysRequestTypedDict": {},
+  "DeleteKeysRequest": {},
+  "DeleteKeysResponseTypedDict": {},
+  "DeleteKeysResponse": {},
+  "GetUserActivityGlobalsTypedDict": {},
+  "GetUserActivityGlobals": {},
+  "GetUserActivityRequestTypedDict": {},
+  "GetUserActivityRequest": {},
+  "GetUserActivityResponseTypedDict": {},
+  "GetUserActivityResponse": {},
+  "CreateCoinbaseChargeGlobalsTypedDict": {},
+  "CreateCoinbaseChargeGlobals": {},
+  "CreateCoinbaseChargeRequestTypedDict": {},
+  "CreateCoinbaseChargeRequest": {},
+  "GetCreditsGlobalsTypedDict": {},
+  "GetCreditsGlobals": {},
+  "GetCreditsRequestTypedDict": {},
+  "GetCreditsRequest": {},
+  "GetCreditsDataTypedDict": {},
+  "GetCreditsData": {},
+  "GetCreditsResponseTypedDict": {},
+  "GetCreditsResponse": {},
+  "ListGuardrailsGlobalsTypedDict": {},
+  "ListGuardrailsGlobals": {},
+  "ListGuardrailsRequestTypedDict": {},
+  "ListGuardrailsRequest": {},
+  "ListGuardrailsResetInterval": [],
+  "ListGuardrailsDataTypedDict": {},
+  "ListGuardrailsData": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ListGuardrailsResponseTypedDict": {},
+  "ListGuardrailsResponse": {},
+  "DeleteGuardrailGlobalsTypedDict": {},
+  "DeleteGuardrailGlobals": {},
+  "DeleteGuardrailRequestTypedDict": {},
+  "DeleteGuardrailRequest": {},
+  "DeleteGuardrailResponseTypedDict": {},
+  "DeleteGuardrailResponse": {},
+  "CreateKeysGlobalsTypedDict": {},
+  "CreateKeysGlobals": {},
+  "CreateKeysLimitReset": [],
+  "CreateKeysRequestBodyTypedDict": {},
+  "CreateKeysRequestBody": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "CreateKeysRequestTypedDict": {},
+  "CreateKeysRequest": {},
+  "CreateKeysDataTypedDict": {},
+  "CreateKeysData": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "CreateKeysResponseTypedDict": {},
+  "CreateKeysResponse": {},
+  "UpdateGuardrailGlobalsTypedDict": {},
+  "UpdateGuardrailGlobals": {},
+  "UpdateGuardrailResetIntervalRequest": [],
+  "UpdateGuardrailRequestBodyTypedDict": {},
+  "UpdateGuardrailRequestBody": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "UpdateGuardrailRequestTypedDict": {},
+  "UpdateGuardrailRequest": {},
+  "UpdateGuardrailResetIntervalResponse": [],
+  "UpdateGuardrailDataTypedDict": {},
+  "UpdateGuardrailData": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "UpdateGuardrailResponseTypedDict": {},
+  "UpdateGuardrailResponse": {},
+  "BulkAssignKeysToGuardrailGlobalsTypedDict": {},
+  "BulkAssignKeysToGuardrailGlobals": {},
+  "BulkAssignKeysToGuardrailRequestBodyTypedDict": {},
+  "BulkAssignKeysToGuardrailRequestBody": {},
+  "BulkAssignKeysToGuardrailRequestTypedDict": {},
+  "BulkAssignKeysToGuardrailRequest": {},
+  "BulkAssignKeysToGuardrailResponseTypedDict": {},
+  "BulkAssignKeysToGuardrailResponse": {},
+  "GetGenerationGlobalsTypedDict": {},
+  "GetGenerationGlobals": {},
+  "GetGenerationRequestTypedDict": {},
+  "GetGenerationRequest": {},
+  "APIType": [],
+  "ProviderResponseTypedDict": {},
+  "ProviderResponse": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "GetGenerationDataTypedDict": {},
+  "GetGenerationData": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "GetGenerationResponseTypedDict": {},
+  "GetGenerationResponse": {},
+  "GetGuardrailGlobalsTypedDict": {},
+  "GetGuardrailGlobals": {},
+  "GetGuardrailRequestTypedDict": {},
+  "GetGuardrailRequest": {},
+  "GetGuardrailResetInterval": [],
+  "GetGuardrailDataTypedDict": {},
+  "GetGuardrailData": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "GetGuardrailResponseTypedDict": {},
+  "GetGuardrailResponse": {},
+  "UpdateKeysGlobalsTypedDict": {},
+  "UpdateKeysGlobals": {},
+  "UpdateKeysLimitReset": [],
+  "UpdateKeysRequestBodyTypedDict": {},
+  "UpdateKeysRequestBody": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "UpdateKeysRequestTypedDict": {},
+  "UpdateKeysRequest": {},
+  "UpdateKeysDataTypedDict": {},
+  "UpdateKeysData": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "UpdateKeysResponseTypedDict": {},
+  "UpdateKeysResponse": {},
+  "BulkAssignMembersToGuardrailGlobalsTypedDict": {},
+  "BulkAssignMembersToGuardrailGlobals": {},
+  "BulkAssignMembersToGuardrailRequestBodyTypedDict": {},
+  "BulkAssignMembersToGuardrailRequestBody": {},
+  "BulkAssignMembersToGuardrailRequestTypedDict": {},
+  "BulkAssignMembersToGuardrailRequest": {},
+  "BulkAssignMembersToGuardrailResponseTypedDict": {},
+  "BulkAssignMembersToGuardrailResponse": {},
+  "BulkUnassignKeysFromGuardrailGlobalsTypedDict": {},
+  "BulkUnassignKeysFromGuardrailGlobals": {},
+  "BulkUnassignKeysFromGuardrailRequestBodyTypedDict": {},
+  "BulkUnassignKeysFromGuardrailRequestBody": {},
+  "BulkUnassignKeysFromGuardrailRequestTypedDict": {},
+  "BulkUnassignKeysFromGuardrailRequest": {},
+  "BulkUnassignKeysFromGuardrailResponseTypedDict": {},
+  "BulkUnassignKeysFromGuardrailResponse": {},
+  "GetKeyGlobalsTypedDict": {},
+  "GetKeyGlobals": {},
+  "GetKeyRequestTypedDict": {},
+  "GetKeyRequest": {},
+  "GetKeyDataTypedDict": {},
+  "GetKeyData": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "GetKeyResponseTypedDict": {},
+  "GetKeyResponse": {},
+  "ListGuardrailKeyAssignmentsGlobalsTypedDict": {},
+  "ListGuardrailKeyAssignmentsGlobals": {},
+  "ListGuardrailKeyAssignmentsRequestTypedDict": {},
+  "ListGuardrailKeyAssignmentsRequest": {},
+  "ListGuardrailKeyAssignmentsDataTypedDict": {},
+  "ListGuardrailKeyAssignmentsData": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ListGuardrailKeyAssignmentsResponseTypedDict": {},
+  "ListGuardrailKeyAssignmentsResponse": {},
+  "CreateGuardrailGlobalsTypedDict": {},
+  "CreateGuardrailGlobals": {},
+  "CreateGuardrailResetIntervalRequest": [],
+  "CreateGuardrailRequestBodyTypedDict": {},
+  "CreateGuardrailRequestBody": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "CreateGuardrailRequestTypedDict": {},
+  "CreateGuardrailRequest": {},
+  "CreateGuardrailResetIntervalResponse": [],
+  "CreateGuardrailDataTypedDict": {},
+  "CreateGuardrailData": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "CreateGuardrailResponseTypedDict": {},
+  "CreateGuardrailResponse": {},
+  "ListMemberAssignmentsGlobalsTypedDict": {},
+  "ListMemberAssignmentsGlobals": {},
+  "ListMemberAssignmentsRequestTypedDict": {},
+  "ListMemberAssignmentsRequest": {},
+  "ListMemberAssignmentsDataTypedDict": {},
+  "ListMemberAssignmentsData": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ListMemberAssignmentsResponseTypedDict": {},
+  "ListMemberAssignmentsResponse": {},
+  "ExchangeAuthCodeForAPIKeyGlobalsTypedDict": {},
+  "ExchangeAuthCodeForAPIKeyGlobals": {},
+  "ExchangeAuthCodeForAPIKeyCodeChallengeMethod": [],
+  "ExchangeAuthCodeForAPIKeyRequestBodyTypedDict": {},
+  "ExchangeAuthCodeForAPIKeyRequestBody": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ExchangeAuthCodeForAPIKeyRequestTypedDict": {},
+  "ExchangeAuthCodeForAPIKeyRequest": {},
+  "ExchangeAuthCodeForAPIKeyResponseTypedDict": {},
+  "ExchangeAuthCodeForAPIKeyResponse": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ListKeyAssignmentsGlobalsTypedDict": {},
+  "ListKeyAssignmentsGlobals": {},
+  "ListKeyAssignmentsRequestTypedDict": {},
+  "ListKeyAssignmentsRequest": {},
+  "ListKeyAssignmentsDataTypedDict": {},
+  "ListKeyAssignmentsData": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ListKeyAssignmentsResponseTypedDict": {},
+  "ListKeyAssignmentsResponse": {},
+  "BulkUnassignMembersFromGuardrailGlobalsTypedDict": {},
+  "BulkUnassignMembersFromGuardrailGlobals": {},
+  "BulkUnassignMembersFromGuardrailRequestBodyTypedDict": {},
+  "BulkUnassignMembersFromGuardrailRequestBody": {},
+  "BulkUnassignMembersFromGuardrailRequestTypedDict": {},
+  "BulkUnassignMembersFromGuardrailRequest": {},
+  "BulkUnassignMembersFromGuardrailResponseTypedDict": {},
+  "BulkUnassignMembersFromGuardrailResponse": {},
+  "GetCurrentKeyGlobalsTypedDict": {},
+  "GetCurrentKeyGlobals": {},
+  "GetCurrentKeyRequestTypedDict": {},
+  "GetCurrentKeyRequest": {},
+  "RateLimitTypedDict": {},
+  "RateLimit": {},
+  "GetCurrentKeyDataTypedDict": {},
+  "GetCurrentKeyData": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "GetCurrentKeyResponseTypedDict": {},
+  "GetCurrentKeyResponse": {},
+  "ListModelsCountGlobalsTypedDict": {},
+  "ListModelsCountGlobals": {},
+  "ListModelsCountRequestTypedDict": {},
+  "ListModelsCountRequest": {},
+  "ListGuardrailMemberAssignmentsGlobalsTypedDict": {},
+  "ListGuardrailMemberAssignmentsGlobals": {},
+  "ListGuardrailMemberAssignmentsRequestTypedDict": {},
+  "ListGuardrailMemberAssignmentsRequest": {},
+  "ListGuardrailMemberAssignmentsDataTypedDict": {},
+  "ListGuardrailMemberAssignmentsData": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ListGuardrailMemberAssignmentsResponseTypedDict": {},
+  "ListGuardrailMemberAssignmentsResponse": {},
+  "ListEmbeddingsModelsGlobalsTypedDict": {},
+  "ListEmbeddingsModelsGlobals": {},
+  "ListEmbeddingsModelsRequestTypedDict": {},
+  "ListEmbeddingsModelsRequest": {},
+  "ListGlobalsTypedDict": {},
+  "ListGlobals": {},
+  "ListRequestTypedDict": {},
+  "ListRequest": {},
+  "ListDataTypedDict": {},
+  "ListData": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ListResponseTypedDict": {},
+  "ListResponse": {},
+  "ListModelsUserGlobalsTypedDict": {},
+  "ListModelsUserGlobals": {},
+  "ListModelsUserSecurityTypedDict": {},
+  "ListModelsUserSecurity": {},
+  "ListModelsUserRequestTypedDict": {},
+  "ListModelsUserRequest": {},
+  "SendChatCompletionRequestGlobalsTypedDict": {},
+  "SendChatCompletionRequestGlobals": {},
+  "SendChatCompletionRequestRequestTypedDict": {},
+  "SendChatCompletionRequestRequest": {},
+  "SendChatCompletionRequestResponseBodyTypedDict": {},
+  "SendChatCompletionRequestResponseBody": {},
+  "SendChatCompletionRequestResponseTypedDict": [],
+  "SendChatCompletionRequestResponse": [],
+  "ListProvidersGlobalsTypedDict": {},
+  "ListProvidersGlobals": {},
+  "ListProvidersRequestTypedDict": {},
+  "ListProvidersRequest": {},
+  "Headquarters": [],
+  "Datacenter": [],
+  "ListProvidersDataTypedDict": {},
+  "ListProvidersData": {
+    "serialize_model": [
+      "self",
+      "handler"
+    ]
+  },
+  "ListProvidersResponseTypedDict": {},
+  "ListProvidersResponse": {},
+  "GetModelsGlobalsTypedDict": {},
+  "GetModelsGlobals": {},
+  "Category": [],
+  "GetModelsRequestTypedDict": {},
+  "GetModelsRequest": {},
+  "CreateResponsesGlobalsTypedDict": {},
+  "CreateResponsesGlobals": {},
+  "CreateResponsesRequestTypedDict": {},
+  "CreateResponsesRequest": {},
+  "CreateResponsesResponseBodyTypedDict": {},
+  "CreateResponsesResponseBody": {},
+  "CreateResponsesResponseTypedDict": [],
+  "CreateResponsesResponse": [],
+  "ListEndpointsGlobalsTypedDict": {},
+  "ListEndpointsGlobals": {},
+  "ListEndpointsRequestTypedDict": {},
+  "ListEndpointsRequest": {}
+}
