@@ -1,0 +1,294 @@
+{
+  "__all__": [],
+  "TituloEleitoral": {
+    "__init__": [
+      "self"
+    ],
+    "validate": [
+      "self",
+      "doc"
+    ],
+    "generate": [
+      "self",
+      "mask"
+    ],
+    "mask": [
+      "self",
+      "doc"
+    ],
+    "_compute_first_check_digit": [
+      "self",
+      "doc_digits"
+    ],
+    "_compute_second_check_digit": [
+      "self",
+      "doc_digits",
+      "first_check_digit"
+    ],
+    "_generate_valid_state_identifier": [
+      "self"
+    ]
+  },
+  "CNH": {
+    "__init__": [
+      "self"
+    ],
+    "validate": [
+      "self",
+      "doc"
+    ],
+    "generate": [
+      "self",
+      "mask"
+    ],
+    "mask": [
+      "self",
+      "doc"
+    ],
+    "_generate_first_digit": [
+      "self",
+      "doc"
+    ],
+    "_generate_second_digit": [
+      "self",
+      "doc"
+    ],
+    "_is_repeated_digits": [
+      "self",
+      "doc"
+    ]
+  },
+  "DocumentBase": {
+    "validate": [
+      "self",
+      "doc"
+    ],
+    "generate": [
+      "self",
+      "mask"
+    ],
+    "mask": [
+      "self",
+      "doc"
+    ],
+    "validate_list": [
+      "self",
+      "docs"
+    ],
+    "generate_list": [
+      "self",
+      "number_of_documents",
+      "mask",
+      "repeat"
+    ],
+    "_only_digits": [
+      "self",
+      "doc"
+    ],
+    "_only_digits_and_letters": [
+      "self",
+      "doc"
+    ],
+    "_validate_input": [
+      "self",
+      "doc",
+      "valid_characters",
+      "allow_letters"
+    ]
+  },
+  "CNPJ": {
+    "__init__": [
+      "self"
+    ],
+    "validate": [
+      "self",
+      "doc"
+    ],
+    "generate": [
+      "self",
+      "mask",
+      "digits_only"
+    ],
+    "mask": [
+      "self",
+      "doc"
+    ],
+    "_generate_first_digit": [
+      "self",
+      "doc"
+    ],
+    "_generate_second_digit": [
+      "self",
+      "doc"
+    ],
+    "_is_repeated_characters": [
+      "self",
+      "doc"
+    ]
+  },
+  "FunctionNotImplementedError": {
+    "__init__": [
+      "self",
+      "function_name"
+    ]
+  },
+  "Certidao": {
+    "__init__": [
+      "self"
+    ],
+    "validate": [
+      "self",
+      "doc"
+    ],
+    "_weighted_sum": [
+      "self",
+      "value"
+    ],
+    "generate": [
+      "self",
+      "mask"
+    ],
+    "mask": [
+      "self",
+      "doc"
+    ],
+    "_generate_check_digits": [
+      "self",
+      "doc"
+    ]
+  },
+  "validate_docs": [
+    "documents"
+  ],
+  "CPF": {
+    "__init__": [
+      "self",
+      "repeated_digits"
+    ],
+    "validate": [
+      "self",
+      "doc"
+    ],
+    "generate": [
+      "self",
+      "mask"
+    ],
+    "mask": [
+      "self",
+      "doc"
+    ],
+    "_generate_first_digit": [
+      "self",
+      "doc"
+    ],
+    "_generate_second_digit": [
+      "self",
+      "doc"
+    ],
+    "_check_repeated_digits": [
+      "self",
+      "doc"
+    ],
+    "_complete_with_zeros": [
+      "self",
+      "doc"
+    ]
+  },
+  "PIS": {
+    "MULTIPLIERS": [],
+    "__init__": [
+      "self"
+    ],
+    "validate": [
+      "self",
+      "doc"
+    ],
+    "generate": [
+      "self",
+      "mask"
+    ],
+    "mask": [
+      "self",
+      "doc"
+    ],
+    "_generate_digit": [
+      "self",
+      "doc"
+    ],
+    "_is_repeated_digits": [
+      "self",
+      "doc"
+    ]
+  },
+  "CNS": {
+    "__init__": [
+      "self"
+    ],
+    "validate": [
+      "self",
+      "doc"
+    ],
+    "_validate_first_case": [
+      "self",
+      "doc"
+    ],
+    "_validate_second_case": [
+      "self",
+      "doc"
+    ],
+    "generate": [
+      "self",
+      "mask"
+    ],
+    "mask": [
+      "self",
+      "doc"
+    ],
+    "_generate_first_case": [
+      "self",
+      "cns",
+      "random_digits"
+    ],
+    "_generate_second_case": [
+      "self",
+      "cns"
+    ],
+    "_adjust_cns": [
+      "self",
+      "cns",
+      "position",
+      "remainder"
+    ],
+    "_weighted_sum": [
+      "self",
+      "cns",
+      "length"
+    ],
+    "_check_cns_valid": [
+      "self",
+      "cns"
+    ]
+  },
+  "RENAVAM": {
+    "WEIGHTS": [],
+    "__init__": [
+      "self"
+    ],
+    "validate": [
+      "self",
+      "doc"
+    ],
+    "generate": [
+      "self",
+      "mask"
+    ],
+    "mask": [
+      "self",
+      "doc"
+    ],
+    "_generate_last_digit": [
+      "self",
+      "doc"
+    ]
+  }
+}
