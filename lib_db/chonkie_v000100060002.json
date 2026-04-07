@@ -1,0 +1,2906 @@
+{
+  "__all__": [],
+  "__version__": [],
+  "__name__": [],
+  "__author__": [],
+  "_configured": [],
+  "DISABLED_LOG_LEVEL": [],
+  "DEFAULT_LOG_LEVEL": [],
+  "DEFAULT_FORMAT": [],
+  "_parse_log_setting": [
+    "value"
+  ],
+  "_configure_default": [],
+  "LOG_RECORD_RESERVED_KEYS": [],
+  "LoggerAdapter": {
+    "process": [
+      "self",
+      "msg",
+      "kwargs"
+    ]
+  },
+  "get_logger": [
+    "module_name"
+  ],
+  "configure": [
+    "level",
+    "format"
+  ],
+  "disable": [],
+  "enable": [
+    "level"
+  ],
+  "is_enabled": [],
+  "logger": [],
+  "TokenizerProtocol": {
+    "encode": [
+      "self",
+      "text"
+    ],
+    "decode": [
+      "self",
+      "tokens"
+    ],
+    "tokenize": [
+      "self",
+      "text"
+    ]
+  },
+  "Tokenizer": {
+    "__init__": [
+      "self"
+    ],
+    "defaulttoken2id": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "get_vocab": [
+      "self"
+    ],
+    "get_token2id": [
+      "self"
+    ],
+    "encode": [
+      "self",
+      "text"
+    ],
+    "decode": [
+      "self",
+      "tokens"
+    ],
+    "tokenize": [
+      "self",
+      "text"
+    ],
+    "count_tokens": [
+      "self",
+      "text"
+    ],
+    "encode_batch": [
+      "self",
+      "texts"
+    ],
+    "decode_batch": [
+      "self",
+      "token_sequences"
+    ],
+    "count_tokens_batch": [
+      "self",
+      "texts"
+    ]
+  },
+  "CharacterTokenizer": {
+    "__repr__": [
+      "self"
+    ],
+    "tokenize": [
+      "self",
+      "text"
+    ],
+    "encode": [
+      "self",
+      "text"
+    ],
+    "decode": [
+      "self",
+      "tokens"
+    ],
+    "count_tokens": [
+      "self",
+      "text"
+    ]
+  },
+  "WordTokenizer": {
+    "__repr__": [
+      "self"
+    ],
+    "tokenize": [
+      "self",
+      "text"
+    ],
+    "encode": [
+      "self",
+      "text"
+    ],
+    "decode": [
+      "self",
+      "tokens"
+    ],
+    "count_tokens": [
+      "self",
+      "text"
+    ]
+  },
+  "ByteTokenizer": {
+    "__repr__": [
+      "self"
+    ],
+    "tokenize": [
+      "self",
+      "text"
+    ],
+    "encode": [
+      "self",
+      "text"
+    ],
+    "decode": [
+      "self",
+      "tokens"
+    ],
+    "count_tokens": [
+      "self",
+      "text"
+    ]
+  },
+  "RowTokenizer": {
+    "__repr__": [
+      "self"
+    ],
+    "tokenize": [
+      "self",
+      "text"
+    ],
+    "encode": [
+      "self",
+      "text"
+    ],
+    "decode": [
+      "self",
+      "tokens"
+    ],
+    "count_tokens": [
+      "self",
+      "text"
+    ]
+  },
+  "_chonkie_tokenizer_classes": [],
+  "InvalidTokenizerError": {
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "_create_auto_tokenizer_from_string": [
+    "tokenizer"
+  ],
+  "AutoTokenizer": {
+    "__new__": [
+      "cls",
+      "tokenizer"
+    ],
+    "__init__": [
+      "self",
+      "tokenizer"
+    ],
+    "encode": [
+      "self",
+      "text"
+    ],
+    "decode": [
+      "self",
+      "tokens"
+    ],
+    "count_tokens": [
+      "self",
+      "text"
+    ],
+    "encode_batch": [
+      "self",
+      "texts"
+    ],
+    "decode_batch": [
+      "self",
+      "token_sequences"
+    ],
+    "count_tokens_batch": [
+      "self",
+      "texts"
+    ]
+  },
+  "ChonkieAutoTokenizer": {
+    "_backend": []
+  },
+  "TiktokenAutoTokenizer": {
+    "_backend": []
+  },
+  "TransformersAutoTokenizer": {
+    "_backend": [],
+    "encode": [
+      "self",
+      "text"
+    ],
+    "encode_batch": [
+      "self",
+      "texts"
+    ],
+    "decode_batch": [
+      "self",
+      "token_sequences"
+    ]
+  },
+  "TokenizersAutoTokenizer": {
+    "_backend": [],
+    "encode": [
+      "self",
+      "text"
+    ],
+    "encode_batch": [
+      "self",
+      "texts"
+    ]
+  },
+  "CallableAutoTokenizer": {
+    "_backend": [],
+    "encode": [
+      "self",
+      "text"
+    ],
+    "decode": [
+      "self",
+      "tokens"
+    ],
+    "encode_batch": [
+      "self",
+      "texts"
+    ],
+    "decode_batch": [
+      "self",
+      "token_sequences"
+    ],
+    "count_tokens": [
+      "self",
+      "text"
+    ]
+  },
+  "Pipeline": {
+    "__init__": [
+      "self"
+    ],
+    "from_recipe": [
+      "cls",
+      "name",
+      "path"
+    ],
+    "from_config": [
+      "cls",
+      "config"
+    ],
+    "fetch_from": [
+      "self",
+      "source_type"
+    ],
+    "process_with": [
+      "self",
+      "chef_type"
+    ],
+    "chunk_with": [
+      "self",
+      "chunker_type"
+    ],
+    "refine_with": [
+      "self",
+      "refinery_type"
+    ],
+    "export_with": [
+      "self",
+      "porter_type"
+    ],
+    "store_in": [
+      "self",
+      "handshake_type"
+    ],
+    "run": [
+      "self",
+      "texts"
+    ],
+    "arun": [
+      "self",
+      "texts"
+    ],
+    "_reorder_steps": [
+      "self"
+    ],
+    "_validate_pipeline": [
+      "self",
+      "ordered_steps",
+      "has_text_input"
+    ],
+    "_prepare_step_execution": [
+      "self",
+      "step"
+    ],
+    "_execute_step": [
+      "self",
+      "step",
+      "input_data"
+    ],
+    "_aexecute_step": [
+      "self",
+      "step",
+      "input_data"
+    ],
+    "_get_positional_params": [
+      "step_type"
+    ],
+    "_split_parameters": [
+      "component_class",
+      "kwargs",
+      "step_type"
+    ],
+    "_call_component": [
+      "self",
+      "component",
+      "step_type",
+      "input_data",
+      "kwargs"
+    ],
+    "_acall_component": [
+      "self",
+      "component",
+      "step_type",
+      "input_data",
+      "kwargs"
+    ],
+    "reset": [
+      "self"
+    ],
+    "to_config": [
+      "self",
+      "path"
+    ],
+    "describe": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ComponentType": {
+    "FETCHER": [],
+    "CHEF": [],
+    "CHUNKER": [],
+    "REFINERY": [],
+    "PORTER": [],
+    "HANDSHAKE": []
+  },
+  "Component": {
+    "__post_init__": [
+      "self"
+    ]
+  },
+  "ComponentT": [],
+  "_ComponentRegistry": {
+    "__init__": [
+      "self"
+    ],
+    "register": [
+      "self",
+      "name",
+      "alias",
+      "component_class",
+      "component_type"
+    ],
+    "get_component": [
+      "self",
+      "name_or_alias",
+      "component_type"
+    ],
+    "list_components": [
+      "self",
+      "component_type"
+    ],
+    "get_aliases": [
+      "self",
+      "component_type"
+    ],
+    "get_fetcher": [
+      "self",
+      "alias"
+    ],
+    "get_chef": [
+      "self",
+      "alias"
+    ],
+    "get_chunker": [
+      "self",
+      "alias"
+    ],
+    "get_refinery": [
+      "self",
+      "alias"
+    ],
+    "get_porter": [
+      "self",
+      "alias"
+    ],
+    "get_handshake": [
+      "self",
+      "alias"
+    ],
+    "is_registered": [
+      "self",
+      "name_or_alias"
+    ],
+    "unregister": [
+      "self",
+      "name_or_alias",
+      "component_type"
+    ],
+    "clear": [
+      "self"
+    ]
+  },
+  "pipeline_component": [
+    "alias",
+    "component_type"
+  ],
+  "fetcher": [
+    "alias"
+  ],
+  "chef": [
+    "alias"
+  ],
+  "chunker": [
+    "alias"
+  ],
+  "refinery": [
+    "alias"
+  ],
+  "porter": [
+    "alias"
+  ],
+  "handshake": [
+    "alias"
+  ],
+  "ComponentRegistry": [],
+  "main": [],
+  "app": [],
+  "CHUNKERS": [],
+  "HANDSHAKES": [],
+  "parse_params": [
+    "param_list"
+  ],
+  "merge_params": [
+    "explicit_params",
+    "parsed_params"
+  ],
+  "chunk": [
+    "text",
+    "chunker",
+    "chunk_size",
+    "chunk_overlap",
+    "threshold",
+    "chunker_params",
+    "handshaker"
+  ],
+  "pipeline": [
+    "text",
+    "fetcher",
+    "d",
+    "ext",
+    "chef",
+    "chef_params",
+    "chunker",
+    "chunk_size",
+    "chunk_overlap",
+    "threshold",
+    "chunker_params",
+    "refiner",
+    "refiner_params",
+    "handshaker",
+    "handshaker_params"
+  ],
+  "serve": [
+    "host",
+    "port",
+    "reload",
+    "log_level"
+  ],
+  "EmbeddingsRefinery": {
+    "__init__": [
+      "self",
+      "embedding_model"
+    ],
+    "refine": [
+      "self",
+      "chunks"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "dimension": [
+      "self"
+    ]
+  },
+  "OverlapRefinery": {
+    "__init__": [
+      "self",
+      "tokenizer",
+      "context_size",
+      "mode",
+      "method",
+      "rules",
+      "merge",
+      "inplace"
+    ],
+    "_get_tokens_impl": [
+      "self",
+      "text"
+    ],
+    "_count_tokens_impl": [
+      "self",
+      "text"
+    ],
+    "clear_cache": [
+      "self"
+    ],
+    "cache_info": [
+      "self"
+    ],
+    "_split_text": [
+      "self",
+      "text",
+      "recursive_level",
+      "effective_context_size"
+    ],
+    "_get_token_counts_cached": [
+      "self",
+      "splits"
+    ],
+    "_group_splits": [
+      "self",
+      "splits",
+      "token_counts",
+      "effective_context_size"
+    ],
+    "_prefix_overlap_token": [
+      "self",
+      "chunk",
+      "effective_context_size"
+    ],
+    "_recursive_overlap": [
+      "self",
+      "text",
+      "level",
+      "method",
+      "effective_context_size"
+    ],
+    "_prefix_overlap_recursive": [
+      "self",
+      "chunk",
+      "effective_context_size"
+    ],
+    "_get_prefix_overlap_context": [
+      "self",
+      "chunk",
+      "effective_context_size"
+    ],
+    "_refine_prefix": [
+      "self",
+      "chunks",
+      "effective_context_size"
+    ],
+    "_suffix_overlap_token": [
+      "self",
+      "chunk",
+      "effective_context_size"
+    ],
+    "_suffix_overlap_recursive": [
+      "self",
+      "chunk",
+      "effective_context_size"
+    ],
+    "_get_suffix_overlap_context": [
+      "self",
+      "chunk",
+      "effective_context_size"
+    ],
+    "_refine_suffix": [
+      "self",
+      "chunks",
+      "effective_context_size"
+    ],
+    "_get_overlap_context_size": [
+      "self",
+      "chunks"
+    ],
+    "refine": [
+      "self",
+      "chunks"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "BaseRefinery": {
+    "refine": [
+      "self",
+      "chunks"
+    ],
+    "arefine": [
+      "self",
+      "chunks"
+    ],
+    "refine_document": [
+      "self",
+      "document"
+    ],
+    "arefine_document": [
+      "self",
+      "document"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "chunks"
+    ]
+  },
+  "RecursiveLevel": {
+    "_validate_fields": [
+      "self"
+    ],
+    "__post_init__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "data"
+    ],
+    "from_recipe": [
+      "cls",
+      "name",
+      "lang"
+    ]
+  },
+  "RecursiveRules": {
+    "__post_init__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "index"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "data"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_recipe": [
+      "cls",
+      "name",
+      "lang",
+      "path"
+    ]
+  },
+  "Document": {},
+  "Sentence": {
+    "__post_init__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "data"
+    ]
+  },
+  "generate_id": [
+    "prefix"
+  ],
+  "Chunk": {
+    "__len__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "_preview_embedding": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "index"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "data"
+    ],
+    "copy": [
+      "self"
+    ]
+  },
+  "MergeRule": {},
+  "SplitRule": {},
+  "LanguageConfig": {},
+  "MarkdownTable": {},
+  "MarkdownCode": {},
+  "MarkdownImage": {},
+  "MarkdownDocument": {},
+  "GeminiGenie": {
+    "__init__": [
+      "self",
+      "model",
+      "api_key"
+    ],
+    "generate": [
+      "self",
+      "prompt"
+    ],
+    "generate_json": [
+      "self",
+      "prompt",
+      "schema"
+    ],
+    "_is_available": [
+      "cls"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "CerebrasGenie": {
+    "__init__": [
+      "self",
+      "model",
+      "api_key"
+    ],
+    "_extract_content": [
+      "self",
+      "response"
+    ],
+    "generate": [
+      "self",
+      "prompt"
+    ],
+    "generate_json": [
+      "self",
+      "prompt",
+      "schema"
+    ],
+    "_is_available": [
+      "cls"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "AzureOpenAIGenie": {
+    "__init__": [
+      "self",
+      "azure_endpoint",
+      "model",
+      "deployment",
+      "azure_api_key",
+      "api_version"
+    ],
+    "generate": [
+      "self",
+      "prompt"
+    ],
+    "agenerate": [
+      "self",
+      "prompt"
+    ],
+    "generate_json": [
+      "self",
+      "prompt",
+      "schema"
+    ],
+    "agenerate_json": [
+      "self",
+      "prompt",
+      "schema"
+    ],
+    "_is_available": [
+      "cls"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "GroqGenie": {
+    "__init__": [
+      "self",
+      "model",
+      "api_key"
+    ],
+    "_extract_content": [
+      "self",
+      "response"
+    ],
+    "generate": [
+      "self",
+      "prompt"
+    ],
+    "generate_json": [
+      "self",
+      "prompt",
+      "schema"
+    ],
+    "_is_available": [
+      "cls"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "OpenAIGenie": {
+    "__init__": [
+      "self",
+      "model",
+      "base_url",
+      "api_key"
+    ],
+    "generate": [
+      "self",
+      "prompt"
+    ],
+    "agenerate": [
+      "self",
+      "prompt"
+    ],
+    "generate_json": [
+      "self",
+      "prompt",
+      "schema"
+    ],
+    "agenerate_json": [
+      "self",
+      "prompt",
+      "schema"
+    ],
+    "_is_available": [
+      "cls"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "BaseGenie": {
+    "generate": [
+      "self",
+      "prompt"
+    ],
+    "agenerate": [
+      "self",
+      "prompt"
+    ],
+    "generate_batch": [
+      "self",
+      "prompts"
+    ],
+    "agenerate_batch": [
+      "self",
+      "prompts",
+      "max_concurrency"
+    ],
+    "generate_json": [
+      "self",
+      "prompt",
+      "schema"
+    ],
+    "agenerate_json": [
+      "self",
+      "prompt",
+      "schema"
+    ],
+    "generate_json_batch": [
+      "self",
+      "prompts",
+      "schema"
+    ],
+    "agenerate_json_batch": [
+      "self",
+      "prompts",
+      "schema",
+      "max_concurrency"
+    ]
+  },
+  "MilvusHandshake": {
+    "__init__": [
+      "self",
+      "client",
+      "uri",
+      "collection_name",
+      "embedding_model",
+      "host",
+      "port",
+      "user",
+      "api_key",
+      "alias"
+    ],
+    "_is_available": [
+      "cls"
+    ],
+    "_create_collection_with_schema": [
+      "self"
+    ],
+    "write": [
+      "self",
+      "chunks"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "search": [
+      "self",
+      "query",
+      "embedding",
+      "limit"
+    ]
+  },
+  "PgvectorHandshake": {
+    "__init__": [
+      "self",
+      "client",
+      "host",
+      "port",
+      "database",
+      "user",
+      "password",
+      "connection_string",
+      "collection_name",
+      "embedding_model",
+      "vector_dimensions"
+    ],
+    "_is_available": [
+      "cls"
+    ],
+    "_generate_id": [
+      "self",
+      "index",
+      "chunk"
+    ],
+    "_generate_metadata": [
+      "self",
+      "chunk"
+    ],
+    "write": [
+      "self",
+      "chunks"
+    ],
+    "search": [
+      "self",
+      "query",
+      "limit",
+      "filters",
+      "include_metadata",
+      "include_value"
+    ],
+    "create_index": [
+      "self",
+      "method"
+    ],
+    "delete_collection": [
+      "self"
+    ],
+    "get_collection_info": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "QdrantHandshake": {
+    "__init__": [
+      "self",
+      "client",
+      "collection_name",
+      "embedding_model",
+      "url",
+      "path",
+      "api_key"
+    ],
+    "_is_available": [
+      "cls"
+    ],
+    "_generate_id": [
+      "self",
+      "index",
+      "chunk"
+    ],
+    "_generate_payload": [
+      "self",
+      "chunk"
+    ],
+    "_get_points": [
+      "self",
+      "chunks"
+    ],
+    "write": [
+      "self",
+      "chunks"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "search": [
+      "self",
+      "query",
+      "embedding",
+      "limit"
+    ]
+  },
+  "ADJECTIVES": [],
+  "VERBS": [],
+  "NOUNS": [],
+  "generate_random_collection_name": [
+    "sep"
+  ],
+  "TurbopufferHandshake": {
+    "__init__": [
+      "self",
+      "namespace",
+      "namespace_name",
+      "embedding_model",
+      "api_key",
+      "region"
+    ],
+    "_is_available": [
+      "cls"
+    ],
+    "_generate_id": [
+      "self",
+      "index",
+      "chunk"
+    ],
+    "write": [
+      "self",
+      "chunks"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "search": [
+      "self",
+      "query",
+      "embedding",
+      "limit"
+    ]
+  },
+  "WeaviateHandshake": {
+    "__init__": [
+      "self",
+      "client",
+      "collection_name",
+      "embedding_model",
+      "url",
+      "api_key",
+      "auth_config",
+      "batch_size",
+      "batch_dynamic",
+      "batch_timeout_retries",
+      "additional_headers",
+      "http_secure",
+      "grpc_host",
+      "grpc_port",
+      "grpc_secure"
+    ],
+    "_is_available": [
+      "cls"
+    ],
+    "close": [
+      "self"
+    ],
+    "_collection_exists": [
+      "self",
+      "collection_name"
+    ],
+    "_create_collection": [
+      "self"
+    ],
+    "_generate_id": [
+      "self",
+      "index",
+      "chunk"
+    ],
+    "_generate_properties": [
+      "self",
+      "chunk"
+    ],
+    "write": [
+      "self",
+      "chunks"
+    ],
+    "delete_collection": [
+      "self"
+    ],
+    "get_collection_info": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "search": [
+      "self",
+      "query",
+      "embedding",
+      "limit"
+    ]
+  },
+  "PineconeHandshake": {
+    "__init__": [
+      "self",
+      "client",
+      "api_key",
+      "index_name",
+      "spec",
+      "embedding_model"
+    ],
+    "_is_available": [
+      "cls"
+    ],
+    "_generate_id": [
+      "self",
+      "index",
+      "chunk"
+    ],
+    "_generate_metadata": [
+      "self",
+      "chunk"
+    ],
+    "_get_vectors": [
+      "self",
+      "chunks"
+    ],
+    "write": [
+      "self",
+      "chunks"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "search": [
+      "self",
+      "query",
+      "embedding",
+      "limit"
+    ]
+  },
+  "ElasticHandshake": {
+    "__init__": [
+      "self",
+      "client",
+      "index_name",
+      "embedding_model",
+      "hosts",
+      "cloud_id",
+      "api_key"
+    ],
+    "_is_available": [
+      "cls"
+    ],
+    "_generate_id": [
+      "self",
+      "index",
+      "chunk"
+    ],
+    "_create_bulk_actions": [
+      "self",
+      "chunks"
+    ],
+    "write": [
+      "self",
+      "chunks"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "search": [
+      "self",
+      "query",
+      "embedding",
+      "limit"
+    ]
+  },
+  "BaseHandshake": {
+    "write": [
+      "self",
+      "chunks"
+    ],
+    "awrite": [
+      "self",
+      "chunk"
+    ],
+    "__call__": [
+      "self",
+      "chunks"
+    ]
+  },
+  "ChromaEmbeddingFunction": {
+    "__init__": [
+      "self",
+      "embedding_model"
+    ],
+    "name": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "input"
+    ]
+  },
+  "ChromaHandshake": {
+    "__init__": [
+      "self",
+      "client",
+      "collection_name",
+      "embedding_model",
+      "path"
+    ],
+    "_is_available": [
+      "cls"
+    ],
+    "_generate_id": [
+      "self",
+      "index",
+      "chunk"
+    ],
+    "_generate_metadata": [
+      "self",
+      "chunk"
+    ],
+    "write": [
+      "self",
+      "chunks"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "search": [
+      "self",
+      "query",
+      "embedding",
+      "limit"
+    ]
+  },
+  "MongoDBHandshake": {
+    "__init__": [
+      "self",
+      "client",
+      "uri",
+      "username",
+      "password",
+      "hostname",
+      "port",
+      "db_name",
+      "collection_name",
+      "embedding_model"
+    ],
+    "_is_available": [
+      "cls"
+    ],
+    "_generate_id": [
+      "self",
+      "index",
+      "chunk"
+    ],
+    "_generate_document": [
+      "self",
+      "index",
+      "chunk",
+      "embedding"
+    ],
+    "write": [
+      "self",
+      "chunks"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "search": [
+      "self",
+      "query",
+      "embedding",
+      "limit"
+    ]
+  },
+  "TextChef": {
+    "process": [
+      "self",
+      "path"
+    ],
+    "parse": [
+      "self",
+      "text"
+    ],
+    "process_batch": [
+      "self",
+      "paths"
+    ],
+    "__call__": [
+      "self",
+      "path"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "TableChef": {
+    "__init__": [
+      "self"
+    ],
+    "parse": [
+      "self",
+      "text"
+    ],
+    "process": [
+      "self",
+      "path"
+    ],
+    "process_batch": [
+      "self",
+      "paths"
+    ],
+    "__call__": [
+      "self",
+      "path"
+    ],
+    "_find_html_table_spans": [
+      "self",
+      "text"
+    ],
+    "extract_tables_from_markdown": [
+      "self",
+      "markdown"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "BaseChef": {
+    "process": [
+      "self",
+      "path"
+    ],
+    "aprocess": [
+      "self",
+      "path"
+    ],
+    "parse": [
+      "self",
+      "text"
+    ],
+    "aparse": [
+      "self",
+      "text"
+    ],
+    "process_batch": [
+      "self",
+      "paths"
+    ],
+    "aprocess_batch": [
+      "self",
+      "paths"
+    ],
+    "read": [
+      "self",
+      "path"
+    ],
+    "aread": [
+      "self",
+      "path"
+    ],
+    "__call__": [
+      "self",
+      "path"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "MarkdownChef": {
+    "__init__": [
+      "self",
+      "tokenizer"
+    ],
+    "prepare_tables": [
+      "self",
+      "markdown"
+    ],
+    "prepare_code": [
+      "self",
+      "markdown"
+    ],
+    "extract_images": [
+      "self",
+      "markdown"
+    ],
+    "extract_chunks": [
+      "self",
+      "markdown",
+      "tables",
+      "code",
+      "images"
+    ],
+    "parse": [
+      "self",
+      "text"
+    ],
+    "process": [
+      "self",
+      "path"
+    ]
+  },
+  "DatasetsPorter": {
+    "__init__": [
+      "self"
+    ],
+    "export": [
+      "self",
+      "chunks",
+      "save_to_disk",
+      "path"
+    ],
+    "__call__": [
+      "self",
+      "chunks",
+      "save_to_disk",
+      "path"
+    ]
+  },
+  "JSONPorter": {
+    "__init__": [
+      "self",
+      "lines"
+    ],
+    "_export_lines": [
+      "self",
+      "chunks",
+      "file"
+    ],
+    "_export_json": [
+      "self",
+      "chunks",
+      "file"
+    ],
+    "export": [
+      "self",
+      "chunks",
+      "file"
+    ],
+    "__call__": [
+      "self",
+      "chunks",
+      "file"
+    ]
+  },
+  "BasePorter": {
+    "export": [
+      "self",
+      "chunks"
+    ],
+    "aexport": [
+      "self",
+      "chunks"
+    ],
+    "__call__": [
+      "self",
+      "chunks"
+    ]
+  },
+  "SLUG_PATTERN": [],
+  "PipelineStep": {
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "data"
+    ]
+  },
+  "BASE_URL": [],
+  "VERSION": [],
+  "File": {
+    "from_dict": [
+      "cls",
+      "data"
+    ]
+  },
+  "FileManager": {
+    "__init__": [
+      "self",
+      "api_key"
+    ],
+    "upload": [
+      "self",
+      "path"
+    ]
+  },
+  "RecursiveChunker": {
+    "BASE_URL": [],
+    "VERSION": [],
+    "__init__": [
+      "self",
+      "tokenizer",
+      "chunk_size",
+      "min_characters_per_chunk",
+      "recipe",
+      "lang",
+      "api_key"
+    ],
+    "chunk": [
+      "self",
+      "text",
+      "file"
+    ],
+    "__call__": [
+      "self",
+      "text",
+      "file"
+    ]
+  },
+  "SentenceChunker": {
+    "BASE_URL": [],
+    "VERSION": [],
+    "__init__": [
+      "self",
+      "tokenizer",
+      "chunk_size",
+      "chunk_overlap",
+      "min_sentences_per_chunk",
+      "min_characters_per_sentence",
+      "approximate",
+      "delim",
+      "include_delim",
+      "api_key"
+    ],
+    "chunk": [
+      "self",
+      "text",
+      "file"
+    ],
+    "__call__": [
+      "self",
+      "text",
+      "file"
+    ]
+  },
+  "SlumberChunker": {
+    "BASE_URL": [],
+    "VERSION": [],
+    "__init__": [
+      "self",
+      "tokenizer",
+      "chunk_size",
+      "recipe",
+      "lang",
+      "candidate_size",
+      "min_characters_per_chunk",
+      "api_key"
+    ],
+    "chunk": [
+      "self",
+      "text",
+      "file"
+    ],
+    "__call__": [
+      "self",
+      "text",
+      "file"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "TokenChunker": {
+    "BASE_URL": [],
+    "VERSION": [],
+    "__init__": [
+      "self",
+      "tokenizer",
+      "chunk_size",
+      "chunk_overlap",
+      "api_key"
+    ],
+    "chunk": [
+      "self",
+      "text",
+      "file"
+    ],
+    "__call__": [
+      "self",
+      "text",
+      "file"
+    ]
+  },
+  "LateChunker": {
+    "__init__": [
+      "self",
+      "embedding_model",
+      "chunk_size",
+      "min_characters_per_chunk",
+      "recipe",
+      "lang",
+      "api_key"
+    ],
+    "chunk": [
+      "self",
+      "text",
+      "file"
+    ],
+    "__call__": [
+      "self",
+      "text",
+      "file"
+    ]
+  },
+  "NeuralChunker": {
+    "BASE_URL": [],
+    "VERSION": [],
+    "DEFAULT_MODEL": [],
+    "SUPPORTED_MODELS": [],
+    "__init__": [
+      "self",
+      "model",
+      "min_characters_per_chunk",
+      "api_key"
+    ],
+    "chunk": [
+      "self",
+      "text",
+      "file"
+    ],
+    "__call__": [
+      "self",
+      "text",
+      "file"
+    ]
+  },
+  "CloudChunker": {
+    "BASE_URL": [],
+    "VERSION": [],
+    "chunk": [
+      "self",
+      "text"
+    ],
+    "__call__": [
+      "self",
+      "text"
+    ]
+  },
+  "SemanticChunker": {
+    "BASE_URL": [],
+    "VERSION": [],
+    "__init__": [
+      "self",
+      "embedding_model",
+      "threshold",
+      "chunk_size",
+      "similarity_window",
+      "min_sentences_per_chunk",
+      "min_characters_per_sentence",
+      "delim",
+      "include_delim",
+      "skip_window",
+      "filter_window",
+      "filter_polyorder",
+      "filter_tolerance",
+      "api_key"
+    ],
+    "chunk": [
+      "self",
+      "text",
+      "file"
+    ],
+    "__call__": [
+      "self",
+      "text",
+      "file"
+    ]
+  },
+  "CodeChunker": {
+    "BASE_URL": [],
+    "VERSION": [],
+    "__init__": [
+      "self",
+      "tokenizer",
+      "chunk_size",
+      "language",
+      "api_key"
+    ],
+    "chunk": [
+      "self",
+      "text",
+      "file"
+    ],
+    "__call__": [
+      "self",
+      "text",
+      "file"
+    ]
+  },
+  "JinaEmbeddings": {
+    "AVAILABLE_MODELS": [],
+    "DEFAULT_MODEL": [],
+    "__init__": [
+      "self",
+      "model",
+      "task",
+      "batch_size",
+      "max_retries",
+      "api_key"
+    ],
+    "embed": [
+      "self",
+      "text"
+    ],
+    "embed_batch": [
+      "self",
+      "texts"
+    ],
+    "aembed": [
+      "self",
+      "text"
+    ],
+    "aembed_batch": [
+      "self",
+      "texts"
+    ],
+    "dimension": [
+      "self"
+    ],
+    "get_tokenizer": [
+      "self"
+    ],
+    "_is_available": [
+      "cls"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "CloudflareEmbeddings": {
+    "DEFAULT_MODEL": [],
+    "__init__": [
+      "self",
+      "model",
+      "api_key",
+      "max_retries",
+      "timeout",
+      "batch_size"
+    ],
+    "embed": [
+      "self",
+      "text"
+    ],
+    "embed_batch": [
+      "self",
+      "texts"
+    ],
+    "dimension": [
+      "self"
+    ],
+    "get_tokenizer": [
+      "self"
+    ],
+    "_is_available": [
+      "cls"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "CohereEmbeddings": {
+    "DEFAULT_MODEL": [],
+    "AVAILABLE_MODELS": [],
+    "__init__": [
+      "self",
+      "model",
+      "api_key",
+      "client_name",
+      "max_retries",
+      "timeout",
+      "batch_size",
+      "show_warnings"
+    ],
+    "embed": [
+      "self",
+      "text"
+    ],
+    "embed_batch": [
+      "self",
+      "texts"
+    ],
+    "aembed": [
+      "self",
+      "text"
+    ],
+    "aembed_batch": [
+      "self",
+      "texts"
+    ],
+    "dimension": [
+      "self"
+    ],
+    "get_tokenizer": [
+      "self"
+    ],
+    "_is_available": [
+      "cls"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "LiteLLMEmbeddings": {
+    "KNOWN_DIMENSIONS": [],
+    "DEFAULT_MODEL": [],
+    "__init__": [
+      "self",
+      "model",
+      "api_key",
+      "api_base",
+      "timeout",
+      "max_retries",
+      "batch_size",
+      "dimension"
+    ],
+    "_detect_dimension": [
+      "self"
+    ],
+    "_initialize_tokenizer": [
+      "self"
+    ],
+    "_get_provider": [
+      "self"
+    ],
+    "_prepare_api_call_kwargs": [
+      "self"
+    ],
+    "embed": [
+      "self",
+      "text"
+    ],
+    "embed_batch": [
+      "self",
+      "texts"
+    ],
+    "similarity": [
+      "self",
+      "u",
+      "v"
+    ],
+    "dimension": [
+      "self"
+    ],
+    "get_tokenizer": [
+      "self"
+    ],
+    "_is_available": [
+      "cls"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "GeminiEmbeddings": {
+    "DEFAULT_MODEL": [],
+    "AVAILABLE_MODELS": [],
+    "__init__": [
+      "self",
+      "model",
+      "api_key",
+      "task_type",
+      "max_retries",
+      "batch_size",
+      "show_warnings"
+    ],
+    "embed": [
+      "self",
+      "text"
+    ],
+    "embed_batch": [
+      "self",
+      "texts"
+    ],
+    "aembed": [
+      "self",
+      "text"
+    ],
+    "aembed_batch": [
+      "self",
+      "texts"
+    ],
+    "dimension": [
+      "self"
+    ],
+    "get_tokenizer": [
+      "self"
+    ],
+    "_is_available": [
+      "cls"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "DeepInfraEmbeddings": {
+    "DEFAULT_MODEL": [],
+    "__init__": [
+      "self",
+      "model",
+      "api_key",
+      "max_retries",
+      "timeout",
+      "batch_size"
+    ],
+    "embed": [
+      "self",
+      "text"
+    ],
+    "embed_batch": [
+      "self",
+      "texts"
+    ],
+    "dimension": [
+      "self"
+    ],
+    "get_tokenizer": [
+      "self"
+    ],
+    "_is_available": [
+      "cls"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "NomicEmbeddings": {
+    "DEFAULT_MODEL": [],
+    "__init__": [
+      "self",
+      "model",
+      "api_key",
+      "max_retries",
+      "timeout",
+      "batch_size"
+    ],
+    "embed": [
+      "self",
+      "text"
+    ],
+    "embed_batch": [
+      "self",
+      "texts"
+    ],
+    "dimension": [
+      "self"
+    ],
+    "get_tokenizer": [
+      "self"
+    ],
+    "_is_available": [
+      "cls"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "MistralEmbeddings": {
+    "DEFAULT_MODEL": [],
+    "__init__": [
+      "self",
+      "model",
+      "api_key",
+      "max_retries",
+      "timeout",
+      "batch_size"
+    ],
+    "embed": [
+      "self",
+      "text"
+    ],
+    "embed_batch": [
+      "self",
+      "texts"
+    ],
+    "dimension": [
+      "self"
+    ],
+    "get_tokenizer": [
+      "self"
+    ],
+    "_is_available": [
+      "cls"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "AzureOpenAIEmbeddings": {
+    "AVAILABLE_MODELS": [],
+    "DEFAULT_MODEL": [],
+    "__init__": [
+      "self",
+      "model",
+      "azure_endpoint",
+      "tokenizer",
+      "dimension",
+      "azure_api_key",
+      "api_version",
+      "deployment",
+      "max_retries",
+      "timeout",
+      "batch_size"
+    ],
+    "embed": [
+      "self",
+      "text"
+    ],
+    "embed_batch": [
+      "self",
+      "texts"
+    ],
+    "similarity": [
+      "self",
+      "u",
+      "v"
+    ],
+    "dimension": [
+      "self"
+    ],
+    "get_tokenizer": [
+      "self"
+    ],
+    "_is_available": [
+      "cls"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "VoyageAIEmbeddings": {
+    "AVAILABLE_MODELS": [],
+    "DEFAULT_MODEL": [],
+    "__init__": [
+      "self",
+      "model",
+      "api_key",
+      "max_retries",
+      "timeout",
+      "output_dimension",
+      "batch_size",
+      "truncation"
+    ],
+    "embed": [
+      "self",
+      "text"
+    ],
+    "embed_batch": [
+      "self",
+      "texts"
+    ],
+    "aembed": [
+      "self",
+      "text"
+    ],
+    "aembed_batch": [
+      "self",
+      "texts"
+    ],
+    "dimension": [
+      "self"
+    ],
+    "get_tokenizer": [
+      "self"
+    ],
+    "_is_available": [
+      "cls"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "CatsuEmbeddings": {
+    "__init__": [
+      "self",
+      "model",
+      "provider",
+      "api_keys",
+      "max_retries",
+      "timeout",
+      "verbose",
+      "batch_size"
+    ],
+    "_load_model_info": [
+      "self"
+    ],
+    "embed": [
+      "self",
+      "text"
+    ],
+    "embed_batch": [
+      "self",
+      "texts"
+    ],
+    "aembed": [
+      "self",
+      "text"
+    ],
+    "aembed_batch": [
+      "self",
+      "texts"
+    ],
+    "dimension": [
+      "self"
+    ],
+    "get_tokenizer": [
+      "self"
+    ],
+    "_is_available": [
+      "cls"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "CatsuTokenizerWrapper": {
+    "__init__": [
+      "self",
+      "client",
+      "model",
+      "provider"
+    ],
+    "count": [
+      "self",
+      "text"
+    ],
+    "encode": [
+      "self",
+      "text"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "OpenAIEmbeddings": {
+    "DEFAULT_MODEL": [],
+    "AVAILABLE_MODELS": [],
+    "__init__": [
+      "self",
+      "model",
+      "tokenizer",
+      "dimension",
+      "max_tokens",
+      "base_url",
+      "api_key",
+      "organization",
+      "max_retries",
+      "timeout",
+      "batch_size"
+    ],
+    "embed": [
+      "self",
+      "text"
+    ],
+    "embed_batch": [
+      "self",
+      "texts"
+    ],
+    "aembed": [
+      "self",
+      "text"
+    ],
+    "aembed_batch": [
+      "self",
+      "texts"
+    ],
+    "dimension": [
+      "self"
+    ],
+    "get_tokenizer": [
+      "self"
+    ],
+    "_is_available": [
+      "cls"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "AutoEmbeddings": {
+    "get_embeddings": [
+      "cls",
+      "model"
+    ]
+  },
+  "Model2VecEmbeddings": {
+    "__init__": [
+      "self",
+      "model"
+    ],
+    "dimension": [
+      "self"
+    ],
+    "embed": [
+      "self",
+      "text"
+    ],
+    "embed_batch": [
+      "self",
+      "texts"
+    ],
+    "similarity": [
+      "self",
+      "u",
+      "v"
+    ],
+    "get_tokenizer": [
+      "self"
+    ],
+    "_is_available": [
+      "cls"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "BaseEmbeddings": {
+    "__init__": [
+      "self"
+    ],
+    "embed": [
+      "self",
+      "text"
+    ],
+    "aembed": [
+      "self",
+      "text"
+    ],
+    "embed_batch": [
+      "self",
+      "texts"
+    ],
+    "aembed_batch": [
+      "self",
+      "texts"
+    ],
+    "similarity": [
+      "self",
+      "u",
+      "v"
+    ],
+    "dimension": [
+      "self"
+    ],
+    "get_tokenizer": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "text"
+    ]
+  },
+  "EmbeddingsRegistry": {
+    "register_model": [
+      "cls",
+      "name",
+      "embedding_cls"
+    ],
+    "register_provider": [
+      "cls",
+      "alias",
+      "embeddings_cls"
+    ],
+    "register_pattern": [
+      "cls",
+      "pattern",
+      "embeddings_cls"
+    ],
+    "register_types": [
+      "cls",
+      "types",
+      "embeddings_cls"
+    ],
+    "get_provider": [
+      "cls",
+      "alias"
+    ],
+    "match": [
+      "cls",
+      "identifier"
+    ],
+    "wrap": [
+      "cls",
+      "object"
+    ]
+  },
+  "MixedbreadEmbeddings": {
+    "DEFAULT_MODEL": [],
+    "__init__": [
+      "self",
+      "model",
+      "api_key",
+      "max_retries",
+      "timeout",
+      "batch_size"
+    ],
+    "embed": [
+      "self",
+      "text"
+    ],
+    "embed_batch": [
+      "self",
+      "texts"
+    ],
+    "dimension": [
+      "self"
+    ],
+    "get_tokenizer": [
+      "self"
+    ],
+    "_is_available": [
+      "cls"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "SentenceTransformerEmbeddings": {
+    "__init__": [
+      "self",
+      "model"
+    ],
+    "embed": [
+      "self",
+      "text"
+    ],
+    "embed_batch": [
+      "self",
+      "texts"
+    ],
+    "embed_as_tokens": [
+      "self",
+      "text"
+    ],
+    "embed_as_tokens_batch": [
+      "self",
+      "texts"
+    ],
+    "count_tokens": [
+      "self",
+      "text"
+    ],
+    "count_tokens_batch": [
+      "self",
+      "texts"
+    ],
+    "similarity": [
+      "self",
+      "u",
+      "v"
+    ],
+    "get_tokenizer": [
+      "self"
+    ],
+    "dimension": [
+      "self"
+    ],
+    "max_seq_length": [
+      "self"
+    ],
+    "_is_available": [
+      "cls"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "TogetherEmbeddings": {
+    "DEFAULT_MODEL": [],
+    "__init__": [
+      "self",
+      "model",
+      "api_key",
+      "max_retries",
+      "timeout",
+      "batch_size"
+    ],
+    "embed": [
+      "self",
+      "text"
+    ],
+    "embed_batch": [
+      "self",
+      "texts"
+    ],
+    "dimension": [
+      "self"
+    ],
+    "get_tokenizer": [
+      "self"
+    ],
+    "_is_available": [
+      "cls"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "FileFetcher": {
+    "__init__": [
+      "self"
+    ],
+    "fetch": [
+      "self",
+      "path",
+      "dir",
+      "ext"
+    ],
+    "fetch_file": [
+      "self",
+      "dir",
+      "name"
+    ],
+    "__call__": [
+      "self",
+      "path",
+      "dir",
+      "ext"
+    ]
+  },
+  "BaseFetcher": {
+    "__init__": [
+      "self"
+    ],
+    "fetch": [
+      "self"
+    ],
+    "afetch": [
+      "self"
+    ]
+  },
+  "JSON_PROMPT_TEMPLATE": [],
+  "TEXT_PROMPT_TEMPLATE": [],
+  "SEGMENTATION_URL": [],
+  "TeraflopAIChunker": {
+    "__init__": [
+      "self",
+      "client",
+      "url",
+      "api_key",
+      "tokenizer"
+    ],
+    "chunk": [
+      "self",
+      "text"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "TableChunker": {
+    "__init__": [
+      "self",
+      "tokenizer",
+      "chunk_size"
+    ],
+    "_split_markdown_table": [
+      "self",
+      "table"
+    ],
+    "_find_html_rows": [
+      "self",
+      "body_content"
+    ],
+    "_split_html_table": [
+      "self",
+      "table"
+    ],
+    "chunk": [
+      "self",
+      "text"
+    ],
+    "chunk_document": [
+      "self",
+      "document"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "BaseChunker": {
+    "__init__": [
+      "self",
+      "tokenizer"
+    ],
+    "tokenizer": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "text",
+      "show_progress"
+    ],
+    "_get_optimal_worker_count": [
+      "self"
+    ],
+    "_sequential_batch_processing": [
+      "self",
+      "texts",
+      "show_progress"
+    ],
+    "_parallel_batch_processing": [
+      "self",
+      "texts",
+      "show_progress"
+    ],
+    "chunk": [
+      "self",
+      "text"
+    ],
+    "chunk_batch": [
+      "self",
+      "texts",
+      "show_progress"
+    ],
+    "achunk": [
+      "self",
+      "text"
+    ],
+    "achunk_batch": [
+      "self",
+      "texts",
+      "show_progress"
+    ],
+    "_merge_new_chunks": [
+      "original_chunks",
+      "new_chunk_batches"
+    ],
+    "chunk_document": [
+      "self",
+      "document"
+    ],
+    "achunk_document": [
+      "self",
+      "document"
+    ]
+  },
+  "FastChunker": {
+    "__init__": [
+      "self",
+      "chunk_size",
+      "delimiters",
+      "pattern",
+      "prefix",
+      "consecutive",
+      "forward_fallback"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "chunk": [
+      "self",
+      "text"
+    ],
+    "chunk_batch": [
+      "self",
+      "texts",
+      "show_progress"
+    ]
+  },
+  "get_config_path": [],
+  "login": [
+    "api_key"
+  ],
+  "load_token": [],
+  "LIGHT_THEMES": [],
+  "DARK_THEMES": [],
+  "BODY_BACKGROUND_COLOR_LIGHT": [],
+  "CONTENT_BACKGROUND_COLOR_LIGHT": [],
+  "TEXT_COLOR_LIGHT": [],
+  "BODY_BACKGROUND_COLOR_DARK": [],
+  "CONTENT_BACKGROUND_COLOR_DARK": [],
+  "TEXT_COLOR_DARK": [],
+  "HTML_TEMPLATE": [],
+  "MAIN_TEMPLATE": [],
+  "FOOTER_TEMPLATE": [],
+  "Visualizer": {
+    "HIPPO_SVG_CONTENT": [],
+    "__init__": [
+      "self",
+      "theme"
+    ],
+    "_get_theme": [
+      "self",
+      "theme"
+    ],
+    "_get_color": [
+      "self",
+      "index"
+    ],
+    "_preprocess_chunks": [
+      "self",
+      "chunks",
+      "full_text"
+    ],
+    "_reconstruct_text_from_chunks": [
+      "self",
+      "chunks"
+    ],
+    "_darken_color": [
+      "self",
+      "hex_color",
+      "amount"
+    ],
+    "print": [
+      "self",
+      "chunks",
+      "full_text"
+    ],
+    "save": [
+      "self",
+      "filename",
+      "chunks",
+      "full_text",
+      "title"
+    ],
+    "__call__": [
+      "self",
+      "chunks",
+      "full_text"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "_get_recipe_schema": [
+    "version"
+  ],
+  "Hubbie": {
+    "SCHEMA_VERSION": [],
+    "__init__": [
+      "self"
+    ],
+    "recipe_schema": [
+      "self"
+    ],
+    "get_recipe_schema": [
+      "self"
+    ],
+    "_validate_recipe": [
+      "self",
+      "recipe"
+    ],
+    "get_recipe": [
+      "self",
+      "name",
+      "lang",
+      "path"
+    ],
+    "get_pipeline_recipe": [
+      "self",
+      "name",
+      "path"
+    ]
+  },
+  "_CodeLanguageRegistry": {
+    "__init__": [
+      "self"
+    ],
+    "register": [
+      "self",
+      "language",
+      "config"
+    ],
+    "get": [
+      "self",
+      "language"
+    ],
+    "__contains__": [
+      "self",
+      "language"
+    ],
+    "__getitem__": [
+      "self",
+      "language"
+    ],
+    "keys": [
+      "self"
+    ]
+  },
+  "CodeLanguageRegistry": [],
+  "pyconfig": [],
+  "tsconfig": [],
+  "jsconfig": [],
+  "rustconfig": [],
+  "goconfig": [],
+  "javaconfig": [],
+  "markdownconfig": [],
+  "htmlconfig": [],
+  "cssconfig": [],
+  "cconfig": [],
+  "cppconfig": [],
+  "csharpconfig": [],
+  "_raw_origins": [],
+  "_origins": [],
+  "lifespan": [
+    "app"
+  ],
+  "health": [],
+  "root": [],
+  "Timer": {
+    "__init__": [
+      "self"
+    ],
+    "start": [
+      "self",
+      "name"
+    ],
+    "end": [
+      "self",
+      "name"
+    ],
+    "elapsed": [
+      "self",
+      "name"
+    ]
+  },
+  "fix_escaped_text": [
+    "text"
+  ],
+  "_fix_single": [
+    "text"
+  ],
+  "sanitize_text_encoding": [
+    "text"
+  ],
+  "PipelineStepRequest": {},
+  "PipelineCreateRequest": {},
+  "PipelineUpdateRequest": {},
+  "PipelineExecuteRequest": {},
+  "PipelineResponse": {},
+  "ChunkResponse": {},
+  "ChunkingResponse": [],
+  "TokenChunkerRequest": {},
+  "SentenceChunkerRequest": {},
+  "RecursiveChunkerRequest": {},
+  "SemanticChunkerRequest": {},
+  "CodeChunkerRequest": {},
+  "BaseRefineryRequest": {},
+  "EmbeddingsRefineryRequest": {},
+  "OverlapRefineryRequest": {},
+  "DATABASE_URL": [],
+  "engine": [],
+  "async_session_maker": [],
+  "Base": [],
+  "get_db": [],
+  "init_db": [],
+  "router": [],
+  "log": [],
+  "_chunks_to_response": [
+    "chunks"
+  ],
+  "_chunk_count": [
+    "chunks"
+  ],
+  "token_chunk": [
+    "request"
+  ],
+  "sentence_chunk": [
+    "request"
+  ],
+  "_get_recursive_chunker": [
+    "recipe",
+    "lang",
+    "tokenizer"
+  ],
+  "recursive_chunk": [
+    "request"
+  ],
+  "semantic_chunk": [
+    "request"
+  ],
+  "_get_code_chunker": [
+    "tokenizer",
+    "language"
+  ],
+  "code_chunk": [
+    "request"
+  ],
+  "_run_chunk_step": [
+    "chunker_name",
+    "config",
+    "text"
+  ],
+  "_run_refine_step": [
+    "refinery_name",
+    "config",
+    "chunks"
+  ],
+  "create_pipeline": [
+    "request",
+    "db"
+  ],
+  "list_pipelines": [
+    "db"
+  ],
+  "get_pipeline": [
+    "pipeline_id",
+    "db"
+  ],
+  "update_pipeline": [
+    "pipeline_id",
+    "request",
+    "db"
+  ],
+  "delete_pipeline": [
+    "pipeline_id",
+    "db"
+  ],
+  "execute_pipeline": [
+    "pipeline_id",
+    "request",
+    "db"
+  ],
+  "_dicts_to_chunks": [
+    "chunk_dicts"
+  ],
+  "embeddings_refine": [
+    "request"
+  ],
+  "overlap_refine": [
+    "request"
+  ]
+}
