@@ -1,0 +1,584 @@
+{
+  "_BUFSIZE_NOT_SET": [],
+  "EndOfStream": {},
+  "ProcessInfo": {},
+  "EchoValue": [],
+  "EchoCallback": [],
+  "CapturedProcessStream": {
+    "__init__": [
+      "self",
+      "process",
+      "stream"
+    ],
+    "available": [
+      "self"
+    ],
+    "read": [
+      "self"
+    ],
+    "drain": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__bytes__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__bool__": [
+      "self"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "__contains__": [
+      "self",
+      "item"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ]
+  },
+  "_safe_console_write": [
+    "stream",
+    "line"
+  ],
+  "_normalize_echo_callback": [
+    "echo"
+  ],
+  "_stdin_mode": [
+    "stdin",
+    "has_input"
+  ],
+  "_parse_shebang_command": [
+    "script_path"
+  ],
+  "_validate_expect_stream": [
+    "stream"
+  ],
+  "RunningProcess": {
+    "end_of_stream_type": [],
+    "__init__": [
+      "self",
+      "command",
+      "cwd",
+      "check",
+      "auto_run",
+      "shell",
+      "timeout",
+      "on_timeout",
+      "on_complete",
+      "output_formatter",
+      "use_pty",
+      "env",
+      "creationflags",
+      "capture",
+      "stdin",
+      "nice",
+      "text",
+      "encoding",
+      "errors",
+      "universal_newlines"
+    ],
+    "_ensure_formatter_started": [
+      "self"
+    ],
+    "_finalize_formatter": [
+      "self"
+    ],
+    "_format": [
+      "self",
+      "line"
+    ],
+    "_pty_available": [
+      "self"
+    ],
+    "_create_process_info": [
+      "self"
+    ],
+    "get_command_str": [
+      "self"
+    ],
+    "start": [
+      "self"
+    ],
+    "_handle_timeout": [
+      "self",
+      "timeout"
+    ],
+    "get_next_line": [
+      "self",
+      "timeout"
+    ],
+    "get_next_stdout_line": [
+      "self",
+      "timeout"
+    ],
+    "get_next_stderr_line": [
+      "self",
+      "timeout"
+    ],
+    "get_next_line_non_blocking": [
+      "self"
+    ],
+    "drain_stdout": [
+      "self"
+    ],
+    "drain_stderr": [
+      "self"
+    ],
+    "drain_combined": [
+      "self"
+    ],
+    "has_pending_output": [
+      "self"
+    ],
+    "has_pending_stdout": [
+      "self"
+    ],
+    "has_pending_stderr": [
+      "self"
+    ],
+    "poll": [
+      "self"
+    ],
+    "finished": [
+      "self"
+    ],
+    "_echo_streams": [
+      "self",
+      "stdout_callback",
+      "stderr_callback"
+    ],
+    "wait": [
+      "self",
+      "echo",
+      "timeout"
+    ],
+    "kill": [
+      "self"
+    ],
+    "terminate": [
+      "self"
+    ],
+    "send_interrupt": [
+      "self"
+    ],
+    "pid": [
+      "self"
+    ],
+    "returncode": [
+      "self"
+    ],
+    "exit_status": [
+      "self"
+    ],
+    "start_time": [
+      "self"
+    ],
+    "end_time": [
+      "self"
+    ],
+    "duration": [
+      "self"
+    ],
+    "stdout_stream": [
+      "self"
+    ],
+    "stderr_stream": [
+      "self"
+    ],
+    "combined_stream": [
+      "self"
+    ],
+    "stdout": [
+      "self"
+    ],
+    "stderr": [
+      "self"
+    ],
+    "combined_output": [
+      "self"
+    ],
+    "_captured_stream_value": [
+      "self",
+      "stream"
+    ],
+    "line_iter": [
+      "self",
+      "timeout"
+    ],
+    "write": [
+      "self",
+      "data"
+    ],
+    "expect": [
+      "self",
+      "pattern"
+    ],
+    "run": [
+      "args"
+    ],
+    "exec_script": [
+      "script"
+    ],
+    "pseudo_terminal": [
+      "command"
+    ],
+    "psuedo_terminal": [],
+    "interactive_launch_spec": [
+      "mode"
+    ],
+    "interactive": [
+      "command"
+    ],
+    "run_streaming": [
+      "cls",
+      "cmd",
+      "env",
+      "cwd",
+      "timeout",
+      "stdout_callback",
+      "stderr_callback",
+      "nice"
+    ]
+  },
+  "subprocess_run": [
+    "command",
+    "cwd",
+    "check",
+    "timeout",
+    "on_timeout",
+    "nice"
+  ],
+  "WINDOWS_NO_MEMORY_CODES": [],
+  "ExitStatus": {},
+  "ProcessAbnormalExit": {
+    "__init__": [
+      "self",
+      "status"
+    ]
+  },
+  "classify_exit_status": [
+    "returncode",
+    "interrupted_codes",
+    "platform"
+  ],
+  "_signal_name": [
+    "number"
+  ],
+  "_summary": [],
+  "ExpectPattern": [],
+  "ExpectAction": [],
+  "ExpectMatch": {},
+  "ExpectRule": {},
+  "search_expect_pattern": [
+    "buffer",
+    "pattern"
+  ],
+  "apply_expect_action": [
+    "process",
+    "action",
+    "match"
+  ],
+  "ensure_text": [
+    "value",
+    "encoding",
+    "errors"
+  ],
+  "OutputFormatter": {
+    "begin": [
+      "self"
+    ],
+    "transform": [
+      "self",
+      "line"
+    ],
+    "end": [
+      "self"
+    ]
+  },
+  "NullOutputFormatter": {
+    "begin": [
+      "self"
+    ],
+    "transform": [
+      "self",
+      "line"
+    ],
+    "end": [
+      "self"
+    ]
+  },
+  "TimeDeltaFormatter": {
+    "__init__": [
+      "self",
+      "start_time"
+    ],
+    "begin": [
+      "self"
+    ],
+    "transform": [
+      "self",
+      "line"
+    ],
+    "end": [
+      "self"
+    ]
+  },
+  "RunningProcessManager": {
+    "__init__": [
+      "self"
+    ],
+    "register": [
+      "self",
+      "proc"
+    ],
+    "unregister": [
+      "self",
+      "proc"
+    ],
+    "list_active": [
+      "self"
+    ],
+    "dump_active": [
+      "self"
+    ]
+  },
+  "RunningProcessManagerSingleton": [],
+  "CpuPriority": {
+    "MINIMAL": [],
+    "LOW": [],
+    "NORMAL": [],
+    "HIGH": []
+  },
+  "normalize_nice": [
+    "nice"
+  ],
+  "_priority_to_nice": [
+    "priority"
+  ],
+  "get_process_tree_info": [
+    "pid"
+  ],
+  "kill_process_tree": [
+    "pid"
+  ],
+  "PtyNotAvailableError": {},
+  "InteractiveMode": {
+    "PSEUDO_TERMINAL": [],
+    "CONSOLE_SHARED": [],
+    "CONSOLE_ISOLATED": []
+  },
+  "InteractiveLaunchSpec": {},
+  "InterruptResult": {},
+  "IdleWaitResult": {},
+  "Pty": {
+    "is_available": [
+      "cls"
+    ]
+  },
+  "PseudoTerminalProcess": {
+    "__init__": [
+      "self",
+      "command"
+    ],
+    "start": [
+      "self"
+    ],
+    "available": [
+      "self"
+    ],
+    "read": [
+      "self",
+      "timeout"
+    ],
+    "read_non_blocking": [
+      "self"
+    ],
+    "drain": [
+      "self"
+    ],
+    "write": [
+      "self",
+      "data"
+    ],
+    "resize": [
+      "self",
+      "rows",
+      "cols"
+    ],
+    "send_interrupt": [
+      "self"
+    ],
+    "poll": [
+      "self"
+    ],
+    "wait": [
+      "self",
+      "timeout"
+    ],
+    "terminate": [
+      "self"
+    ],
+    "kill": [
+      "self"
+    ],
+    "pid": [
+      "self"
+    ],
+    "output": [
+      "self"
+    ],
+    "is_running": [
+      "self"
+    ],
+    "expect": [
+      "self",
+      "pattern"
+    ],
+    "exit_status": [
+      "self"
+    ],
+    "interrupt_and_wait": [
+      "self"
+    ],
+    "wait_for_idle": [
+      "self",
+      "idle_timeout"
+    ],
+    "_reader_loop": [
+      "self"
+    ],
+    "_read_chunk": [
+      "self"
+    ],
+    "_ensure_started": [
+      "self"
+    ],
+    "_wait_for_reader": [
+      "self"
+    ],
+    "_decode": [
+      "self",
+      "data"
+    ],
+    "_finalize": [
+      "self",
+      "reason"
+    ],
+    "_interrupt_result": [
+      "self",
+      "fallback_reason"
+    ],
+    "_wait_until_exit": [
+      "self",
+      "timeout"
+    ]
+  },
+  "InteractiveProcess": {
+    "__init__": [
+      "self",
+      "command"
+    ],
+    "start": [
+      "self"
+    ],
+    "poll": [
+      "self"
+    ],
+    "wait": [
+      "self",
+      "timeout"
+    ],
+    "terminate": [
+      "self"
+    ],
+    "kill": [
+      "self"
+    ],
+    "send_interrupt": [
+      "self"
+    ],
+    "pid": [
+      "self"
+    ],
+    "exit_status": [
+      "self"
+    ],
+    "_finalize": [
+      "self",
+      "reason"
+    ],
+    "_wait_for_exit": [
+      "self"
+    ]
+  },
+  "_windows_pty_command": [
+    "command",
+    "shell"
+  ],
+  "_posix_pty_command": [
+    "command",
+    "shell"
+  ],
+  "struct_winsize": [
+    "rows",
+    "cols"
+  ],
+  "_normalize_command": [
+    "command",
+    "shell"
+  ],
+  "_contains_shell_metacharacters": [
+    "command"
+  ],
+  "_split_command": [
+    "command"
+  ],
+  "_apply_process_nice": [
+    "pid",
+    "nice"
+  ],
+  "_windows_priority_class_for_nice": [
+    "nice"
+  ],
+  "_strip_wrapping_quotes": [
+    "value"
+  ],
+  "interactive_launch_spec": [
+    "mode"
+  ],
+  "__version__": [],
+  "__all__": [],
+  "_RunningProcessLineIterator": {
+    "__init__": [
+      "self",
+      "rp",
+      "timeout"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc",
+      "tb"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__next__": [
+      "self"
+    ]
+  }
+}
