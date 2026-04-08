@@ -1,0 +1,362 @@
+{
+  "__version__": [],
+  "__all__": [],
+  "Soundfont": {
+    "path": [
+      "self",
+      "download"
+    ],
+    "exists": [
+      "self"
+    ],
+    "download": [
+      "self"
+    ]
+  },
+  "BuiltInSF3": {
+    "MuseScoreGeneral": []
+  },
+  "BuiltInSF2": {
+    "MuseScoreGeneral": []
+  },
+  "TimeUnit": [],
+  "GeneralTimeUnit": [],
+  "TimeDtype": [],
+  "Note": [],
+  "KeySignature": [],
+  "TimeSignature": [],
+  "ControlChange": [],
+  "Tempo": [],
+  "Pedal": [],
+  "PitchBend": [],
+  "TextMeta": [],
+  "Track": [],
+  "Score": [],
+  "PyVec": [],
+  "NoteList": [],
+  "KeySignatureList": [],
+  "TimeSignatureList": [],
+  "ControlChangeList": [],
+  "TempoList": [],
+  "PedalList": [],
+  "PitchBendList": [],
+  "TextMetaList": [],
+  "TrackList": [],
+  "GeneralNoteList": [],
+  "GeneralKeySignatureList": [],
+  "GeneralTimeSignatureList": [],
+  "GeneralControlChangeList": [],
+  "GeneralTempoList": [],
+  "GeneralPedalList": [],
+  "GeneralPitchBendList": [],
+  "GeneralTextMetaList": [],
+  "GeneralTrackList": [],
+  "_HERE": [],
+  "_BIN": [],
+  "TimeUnitFactory": {
+    "__init__": [
+      "self"
+    ],
+    "tick": [
+      "self"
+    ],
+    "quarter": [
+      "self"
+    ],
+    "second": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "ttype"
+    ],
+    "from_str": [
+      "self",
+      "ttype"
+    ]
+  },
+  "T": [],
+  "Q": [],
+  "S": [],
+  "CoreClasses": {
+    "dispatch": [
+      "self",
+      "ttype"
+    ],
+    "__instancecheck__": [
+      "self",
+      "instance"
+    ]
+  },
+  "NoteFactory": {
+    "__core_classes": [],
+    "__core_lists": [],
+    "__call__": [
+      "self",
+      "time",
+      "duration",
+      "pitch",
+      "velocity",
+      "ttype"
+    ],
+    "__instancecheck__": [
+      "self",
+      "instance"
+    ],
+    "from_numpy": [
+      "self",
+      "time",
+      "duration",
+      "pitch",
+      "velocity",
+      "ttype"
+    ]
+  },
+  "KeySignatureFactory": {
+    "__core_classes": [],
+    "__core_lists": [],
+    "__call__": [
+      "self",
+      "time",
+      "key",
+      "tonality",
+      "ttype"
+    ],
+    "__instancecheck__": [
+      "self",
+      "instance"
+    ],
+    "from_numpy": [
+      "self",
+      "time",
+      "key",
+      "tonality",
+      "ttype"
+    ]
+  },
+  "TimeSignatureFactory": {
+    "__core_classes": [],
+    "__core_lists": [],
+    "__call__": [
+      "self",
+      "time",
+      "numerator",
+      "denominator",
+      "ttype"
+    ],
+    "__instancecheck__": [
+      "self",
+      "instance"
+    ],
+    "from_numpy": [
+      "self",
+      "time",
+      "numerator",
+      "denominator",
+      "ttype"
+    ]
+  },
+  "ControlChangeFactory": {
+    "__core_classes": [],
+    "__core_lists": [],
+    "__call__": [
+      "self",
+      "time",
+      "number",
+      "value",
+      "ttype"
+    ],
+    "__instancecheck__": [
+      "self",
+      "instance"
+    ],
+    "from_numpy": [
+      "self",
+      "time",
+      "number",
+      "value",
+      "ttype"
+    ]
+  },
+  "TempoFactory": {
+    "__core_classes": [],
+    "__core_lists": [],
+    "__call__": [
+      "self",
+      "time",
+      "qpm",
+      "mspq",
+      "ttype"
+    ],
+    "__instancecheck__": [
+      "self",
+      "instance"
+    ],
+    "from_numpy": [
+      "self",
+      "time",
+      "mspq",
+      "ttype"
+    ]
+  },
+  "PedalFactory": {
+    "__core_classes": [],
+    "__core_lists": [],
+    "__call__": [
+      "self",
+      "time",
+      "duration",
+      "ttype"
+    ],
+    "__instancecheck__": [
+      "self",
+      "instance"
+    ],
+    "from_numpy": [
+      "self",
+      "time",
+      "duration",
+      "ttype"
+    ]
+  },
+  "PitchBendFactory": {
+    "__core_classes": [],
+    "__core_lists": [],
+    "__call__": [
+      "self",
+      "time",
+      "value",
+      "ttype"
+    ],
+    "__instancecheck__": [
+      "self",
+      "instance"
+    ],
+    "from_numpy": [
+      "self",
+      "time",
+      "value",
+      "ttype"
+    ]
+  },
+  "TextMetaFactory": {
+    "__core_classes": [],
+    "__core_lists": [],
+    "__call__": [
+      "self",
+      "time",
+      "text",
+      "ttype"
+    ],
+    "__instancecheck__": [
+      "self",
+      "instance"
+    ],
+    "from_numpy": [
+      "self",
+      "time",
+      "text",
+      "ttype"
+    ]
+  },
+  "TrackFactory": {
+    "__core_classes": [],
+    "__call__": [
+      "self",
+      "name",
+      "program",
+      "is_drum",
+      "notes",
+      "controls",
+      "pitch_bends",
+      "pedals",
+      "ttype"
+    ],
+    "__instancecheck__": [
+      "self",
+      "instance"
+    ],
+    "empty": [
+      "self",
+      "ttype"
+    ]
+  },
+  "ScoreFactory": {
+    "__core_classes": [],
+    "__call__": [
+      "self",
+      "x",
+      "ttype",
+      "fmt",
+      "sanitize_data"
+    ],
+    "from_file": [
+      "self",
+      "path",
+      "ttype",
+      "fmt",
+      "sanitize_data",
+      "format"
+    ],
+    "from_midi": [
+      "self",
+      "data",
+      "ttype",
+      "sanitize_data"
+    ],
+    "from_abc": [
+      "self",
+      "abc",
+      "ttype"
+    ],
+    "from_tpq": [
+      "self",
+      "tpq",
+      "ttype"
+    ],
+    "from_other": [
+      "self",
+      "other",
+      "ttype",
+      "min_dur"
+    ],
+    "__instancecheck__": [
+      "self",
+      "instance"
+    ]
+  },
+  "SynthesizerFactory": {
+    "__call__": [
+      "self",
+      "sf_path",
+      "sample_rate",
+      "quality"
+    ],
+    "__instancecheck__": [
+      "self",
+      "instance"
+    ]
+  },
+  "Synthesizer": [],
+  "Widget": {
+    "__init__": [
+      "self",
+      "name",
+      "x"
+    ],
+    "size": [
+      "self"
+    ],
+    "inc": [
+      "self",
+      "by"
+    ],
+    "from_default": [
+      "cls"
+    ],
+    "add": [
+      "a",
+      "b"
+    ]
+  }
+}
