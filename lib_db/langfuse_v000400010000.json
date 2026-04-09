@@ -1,0 +1,4318 @@
+{
+  "__all__": [],
+  "Langfuse": [],
+  "langfuse_logger": [],
+  "httpx_logger": [],
+  "console_handler": [],
+  "formatter": [],
+  "LocalExperimentItem": {},
+  "ExperimentItem": [],
+  "ExperimentData": [],
+  "Evaluation": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "ExperimentItemResult": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "ExperimentResult": {
+    "__init__": [
+      "self"
+    ],
+    "format": [
+      "self"
+    ]
+  },
+  "TaskFunction": {
+    "__call__": [
+      "self"
+    ]
+  },
+  "EvaluatorFunction": {
+    "__call__": [
+      "self"
+    ]
+  },
+  "RunEvaluatorFunction": {
+    "__call__": [
+      "self"
+    ]
+  },
+  "_format_value": [
+    "value"
+  ],
+  "_run_evaluator": [
+    "evaluator"
+  ],
+  "_run_task": [
+    "task",
+    "item"
+  ],
+  "create_evaluator_from_autoevals": [
+    "autoevals_evaluator"
+  ],
+  "SpanLevel": [],
+  "ScoreDataType": [],
+  "ExperimentScoreType": [],
+  "MaskFunction": {
+    "__call__": [
+      "self"
+    ]
+  },
+  "ParsedMediaReference": {},
+  "TraceContext": {},
+  "EvaluatorInputs": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "MapperFunction": {
+    "__call__": [
+      "self"
+    ]
+  },
+  "CompositeEvaluatorFunction": {
+    "__call__": [
+      "self"
+    ]
+  },
+  "EvaluatorStats": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "BatchEvaluationResumeToken": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "BatchEvaluationResult": {
+    "__init__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "BatchEvaluationRunner": {
+    "__init__": [
+      "self",
+      "client"
+    ],
+    "run_async": [
+      "self"
+    ],
+    "_fetch_batch_with_retry": [
+      "self"
+    ],
+    "_process_batch_evaluation_item": [
+      "self",
+      "item",
+      "scope",
+      "mapper",
+      "evaluators",
+      "composite_evaluator",
+      "metadata",
+      "_add_observation_scores_to_trace",
+      "evaluator_stats_dict"
+    ],
+    "_run_evaluator_internal": [
+      "self",
+      "evaluator"
+    ],
+    "_run_mapper": [
+      "self",
+      "mapper",
+      "item"
+    ],
+    "_run_composite_evaluator": [
+      "self",
+      "composite_evaluator",
+      "input",
+      "output",
+      "expected_output",
+      "metadata",
+      "evaluations"
+    ],
+    "_create_score_for_scope": [
+      "self"
+    ],
+    "_build_timestamp_filter": [
+      "self",
+      "original_filter",
+      "resume_from"
+    ],
+    "_get_item_id": [
+      "item",
+      "scope"
+    ],
+    "_get_item_timestamp": [
+      "item",
+      "scope"
+    ],
+    "_get_timestamp_field_for_scope": [
+      "scope"
+    ],
+    "_dedupe_tags": [
+      "tags"
+    ],
+    "_build_result": [
+      "self",
+      "total_items_fetched",
+      "total_items_processed",
+      "total_items_failed",
+      "total_scores_created",
+      "total_composite_scores_created",
+      "total_evaluations_failed",
+      "evaluator_stats_dict",
+      "resume_token",
+      "completed",
+      "start_time",
+      "failed_item_ids",
+      "error_summary",
+      "has_more_items",
+      "item_evaluations"
+    ]
+  },
+  "OpenAiDefinition": {},
+  "OPENAI_METHODS_V0": [],
+  "OPENAI_METHODS_V1": [],
+  "OpenAiArgsExtractor": {
+    "__init__": [
+      "self",
+      "metadata",
+      "name",
+      "langfuse_prompt",
+      "langfuse_public_key",
+      "trace_id",
+      "parent_observation_id"
+    ],
+    "get_langfuse_args": [
+      "self"
+    ],
+    "get_openai_args": [
+      "self"
+    ]
+  },
+  "_langfuse_wrapper": [
+    "func"
+  ],
+  "_extract_responses_prompt": [
+    "kwargs"
+  ],
+  "_extract_chat_prompt": [
+    "kwargs"
+  ],
+  "_process_message": [
+    "message"
+  ],
+  "_extract_chat_response": [
+    "kwargs"
+  ],
+  "_get_langfuse_data_from_kwargs": [
+    "resource",
+    "kwargs"
+  ],
+  "_create_langfuse_update": [
+    "completion",
+    "generation",
+    "completion_start_time",
+    "model",
+    "usage",
+    "metadata"
+  ],
+  "_parse_usage": [
+    "usage"
+  ],
+  "_parse_cost": [
+    "usage"
+  ],
+  "_extract_streamed_response_api_response": [
+    "chunks"
+  ],
+  "_extract_streamed_openai_response": [
+    "resource",
+    "chunks"
+  ],
+  "_get_langfuse_data_from_default_response": [
+    "resource",
+    "response"
+  ],
+  "_is_openai_v1": [],
+  "_is_streaming_response": [
+    "response"
+  ],
+  "_wrap": [
+    "open_ai_resource",
+    "wrapped",
+    "args",
+    "kwargs"
+  ],
+  "_wrap_async": [
+    "open_ai_resource",
+    "wrapped",
+    "args",
+    "kwargs"
+  ],
+  "register_tracing": [],
+  "LangfuseResponseGeneratorSync": {
+    "__init__": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__next__": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_value",
+      "traceback"
+    ],
+    "_finalize": [
+      "self"
+    ]
+  },
+  "LangfuseResponseGeneratorAsync": {
+    "__init__": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__anext__": [
+      "self"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self",
+      "exc_type",
+      "exc_value",
+      "traceback"
+    ],
+    "_finalize": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "aclose": [
+      "self"
+    ]
+  },
+  "get_langfuse_version": [],
+  "__version__": [],
+  "T": [],
+  "LangfuseMedia": {
+    "__init__": [
+      "self"
+    ],
+    "_read_file": [
+      "self",
+      "file_path"
+    ],
+    "_get_media_id": [
+      "self"
+    ],
+    "_content_length": [
+      "self"
+    ],
+    "_content_sha256_hash": [
+      "self"
+    ],
+    "_reference_string": [
+      "self"
+    ],
+    "parse_reference_string": [
+      "reference_string"
+    ],
+    "_parse_base64_data_uri": [
+      "self",
+      "data"
+    ],
+    "resolve_media_references": []
+  },
+  "ChatMessageDict": {},
+  "ChatMessagePlaceholderDict": {},
+  "ChatMessageWithPlaceholdersDict_Message": {},
+  "ChatMessageWithPlaceholdersDict_Placeholder": {},
+  "ChatMessageWithPlaceholdersDict": [],
+  "TemplateParser": {
+    "OPENING": [],
+    "CLOSING": [],
+    "_parse_next_variable": [
+      "content",
+      "start_idx"
+    ],
+    "find_variable_names": [
+      "content"
+    ],
+    "compile_template": [
+      "content",
+      "data"
+    ]
+  },
+  "BasePromptClient": {
+    "__init__": [
+      "self",
+      "prompt",
+      "is_fallback"
+    ],
+    "compile": [
+      "self"
+    ],
+    "variables": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "get_langchain_prompt": [
+      "self"
+    ],
+    "_get_langchain_prompt_string": [
+      "content"
+    ],
+    "_escape_json_for_langchain": [
+      "text"
+    ]
+  },
+  "TextPromptClient": {
+    "__init__": [
+      "self",
+      "prompt",
+      "is_fallback"
+    ],
+    "compile": [
+      "self"
+    ],
+    "variables": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "get_langchain_prompt": [
+      "self"
+    ]
+  },
+  "ChatPromptClient": {
+    "__init__": [
+      "self",
+      "prompt",
+      "is_fallback"
+    ],
+    "compile": [
+      "self"
+    ],
+    "variables": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "get_langchain_prompt": [
+      "self"
+    ]
+  },
+  "PromptClient": [],
+  "KNOWN_LLM_INSTRUMENTATION_SCOPE_PREFIXES": [],
+  "is_langfuse_span": [
+    "span"
+  ],
+  "is_genai_span": [
+    "span"
+  ],
+  "_matches_scope_prefix": [
+    "scope_name",
+    "prefix"
+  ],
+  "is_known_llm_instrumentor": [
+    "span"
+  ],
+  "is_default_export_span": [
+    "span"
+  ],
+  "LANGFUSE_TRACER_NAME": [],
+  "LANGFUSE_SDK_EXPERIMENT_ENVIRONMENT": [],
+  "get_observation_types_list": [
+    "literal_type"
+  ],
+  "_set_current_public_key": [
+    "public_key"
+  ],
+  "_create_client_from_instance": [
+    "instance",
+    "public_key"
+  ],
+  "get_client": [],
+  "span_formatter": [
+    "span"
+  ],
+  "_RunAsyncThread": {
+    "__init__": [
+      "self",
+      "coro"
+    ],
+    "run": [
+      "self"
+    ]
+  },
+  "run_async_safely": [
+    "coro"
+  ],
+  "get_sha256_hash_hex": [
+    "value"
+  ],
+  "LangfuseSpanProcessor": {
+    "__init__": [
+      "self"
+    ],
+    "on_start": [
+      "self",
+      "span",
+      "parent_context"
+    ],
+    "on_end": [
+      "self",
+      "span"
+    ],
+    "_is_blocked_instrumentation_scope": [
+      "self",
+      "span"
+    ],
+    "_is_langfuse_project_span": [
+      "self",
+      "span"
+    ],
+    "_get_scope_name": [
+      "span"
+    ]
+  },
+  "DatasetClient": {
+    "__init__": [
+      "self"
+    ],
+    "run_experiment": [
+      "self"
+    ]
+  },
+  "LANGFUSE_TRACING_ENVIRONMENT": [],
+  "LANGFUSE_RELEASE": [],
+  "LANGFUSE_PUBLIC_KEY": [],
+  "LANGFUSE_SECRET_KEY": [],
+  "LANGFUSE_BASE_URL": [],
+  "LANGFUSE_HOST": [],
+  "LANGFUSE_OTEL_TRACES_EXPORT_PATH": [],
+  "LANGFUSE_DEBUG": [],
+  "LANGFUSE_TRACING_ENABLED": [],
+  "LANGFUSE_MEDIA_UPLOAD_THREAD_COUNT": [],
+  "LANGFUSE_FLUSH_AT": [],
+  "LANGFUSE_FLUSH_INTERVAL": [],
+  "LANGFUSE_SAMPLE_RATE": [],
+  "LANGFUSE_OBSERVE_DECORATOR_IO_CAPTURE_ENABLED": [],
+  "LANGFUSE_MEDIA_UPLOAD_ENABLED": [],
+  "LANGFUSE_TIMEOUT": [],
+  "LANGFUSE_PROMPT_CACHE_DEFAULT_TTL_SECONDS": [],
+  "PropagatedKeys": [],
+  "InternalPropagatedKeys": [],
+  "PropagatedExperimentAttributes": {},
+  "_detach_context_token_safely": [
+    "token"
+  ],
+  "propagate_attributes": [],
+  "_propagate_attributes": [],
+  "_get_propagated_attributes_from_context": [
+    "context"
+  ],
+  "_set_propagated_attribute": [],
+  "_validate_propagated_value": [],
+  "_validate_string_value": [],
+  "_get_propagated_context_key": [
+    "key"
+  ],
+  "LANGFUSE_BAGGAGE_PREFIX": [],
+  "_get_propagated_baggage_key": [
+    "key"
+  ],
+  "_get_span_key_from_baggage_key": [
+    "key"
+  ],
+  "_get_propagated_span_key": [
+    "key"
+  ],
+  "LangfuseOtelSpanAttributes": {
+    "TRACE_NAME": [],
+    "TRACE_USER_ID": [],
+    "TRACE_SESSION_ID": [],
+    "TRACE_TAGS": [],
+    "TRACE_PUBLIC": [],
+    "TRACE_METADATA": [],
+    "TRACE_INPUT": [],
+    "TRACE_OUTPUT": [],
+    "OBSERVATION_TYPE": [],
+    "OBSERVATION_METADATA": [],
+    "OBSERVATION_LEVEL": [],
+    "OBSERVATION_STATUS_MESSAGE": [],
+    "OBSERVATION_INPUT": [],
+    "OBSERVATION_OUTPUT": [],
+    "OBSERVATION_COMPLETION_START_TIME": [],
+    "OBSERVATION_MODEL": [],
+    "OBSERVATION_MODEL_PARAMETERS": [],
+    "OBSERVATION_USAGE_DETAILS": [],
+    "OBSERVATION_COST_DETAILS": [],
+    "OBSERVATION_PROMPT_NAME": [],
+    "OBSERVATION_PROMPT_VERSION": [],
+    "ENVIRONMENT": [],
+    "RELEASE": [],
+    "VERSION": [],
+    "AS_ROOT": [],
+    "EXPERIMENT_ID": [],
+    "EXPERIMENT_NAME": [],
+    "EXPERIMENT_DESCRIPTION": [],
+    "EXPERIMENT_METADATA": [],
+    "EXPERIMENT_DATASET_ID": [],
+    "EXPERIMENT_ITEM_ID": [],
+    "EXPERIMENT_ITEM_EXPECTED_OUTPUT": [],
+    "EXPERIMENT_ITEM_METADATA": [],
+    "EXPERIMENT_ITEM_ROOT_OBSERVATION_ID": []
+  },
+  "create_trace_attributes": [],
+  "create_span_attributes": [],
+  "create_generation_attributes": [],
+  "_serialize": [
+    "obj"
+  ],
+  "_flatten_and_serialize_metadata": [
+    "metadata",
+    "type"
+  ],
+  "LangfuseObservationWrapper": {
+    "__init__": [
+      "self"
+    ],
+    "end": [
+      "self"
+    ],
+    "set_trace_io": [
+      "self"
+    ],
+    "set_trace_as_public": [
+      "self"
+    ],
+    "score": [
+      "self"
+    ],
+    "score_trace": [
+      "self"
+    ],
+    "_set_processed_span_attributes": [
+      "self"
+    ],
+    "_process_media_and_apply_mask": [
+      "self"
+    ],
+    "_mask_attribute": [
+      "self"
+    ],
+    "_process_media_in_attribute": [
+      "self"
+    ],
+    "_set_otel_span_status_if_error": [
+      "self"
+    ],
+    "update": [
+      "self"
+    ],
+    "start_observation": [
+      "self"
+    ],
+    "start_as_current_observation": [
+      "self"
+    ],
+    "create_event": [
+      "self"
+    ]
+  },
+  "LangfuseSpan": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "LangfuseGeneration": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "LangfuseEvent": {
+    "__init__": [
+      "self"
+    ],
+    "update": [
+      "self"
+    ]
+  },
+  "LangfuseAgent": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "LangfuseTool": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "LangfuseChain": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "LangfuseRetriever": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "LangfuseEmbedding": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "LangfuseEvaluator": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "LangfuseGuardrail": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "F": [],
+  "P": [],
+  "R": [],
+  "LangfuseDecorator": {
+    "observe": [
+      "self",
+      "func"
+    ],
+    "_async_observe": [
+      "self",
+      "func"
+    ],
+    "_sync_observe": [
+      "self",
+      "func"
+    ],
+    "_is_method": [
+      "func"
+    ],
+    "_get_input_from_func_args": [
+      "self"
+    ],
+    "_wrap_sync_generator_result": [
+      "self",
+      "langfuse_span_or_generation",
+      "generator",
+      "transform_to_string"
+    ],
+    "_wrap_async_generator_result": [
+      "self",
+      "langfuse_span_or_generation",
+      "generator",
+      "transform_to_string"
+    ]
+  },
+  "_decorator": [],
+  "observe": [],
+  "_ContextPreservedSyncGeneratorWrapper": {
+    "__init__": [
+      "self",
+      "generator",
+      "context",
+      "span",
+      "transform_fn"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__next__": [
+      "self"
+    ]
+  },
+  "_ContextPreservedAsyncGeneratorWrapper": {
+    "__init__": [
+      "self",
+      "generator",
+      "context",
+      "span",
+      "transform_fn"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__anext__": [
+      "self"
+    ]
+  },
+  "LangfuseResourceManager": {
+    "_lock": [],
+    "__new__": [
+      "cls"
+    ],
+    "_initialize_instance": [
+      "self"
+    ],
+    "reset": [
+      "cls"
+    ],
+    "add_score_task": [
+      "self",
+      "event"
+    ],
+    "add_trace_task": [
+      "self",
+      "event"
+    ],
+    "tracer": [
+      "self"
+    ],
+    "get_current_span": [],
+    "_stop_and_join_consumer_threads": [
+      "self"
+    ],
+    "flush": [
+      "self"
+    ],
+    "shutdown": [
+      "self"
+    ]
+  },
+  "_init_tracer_provider": [],
+  "_extract_model_name": [
+    "serialized"
+  ],
+  "_extract_model_from_repr_by_pattern": [
+    "id",
+    "serialized",
+    "pattern",
+    "default"
+  ],
+  "_extract_model_with_regex": [
+    "pattern",
+    "text"
+  ],
+  "_extract_model_by_path_for_id": [
+    "id",
+    "serialized",
+    "kwargs",
+    "keys",
+    "select_from"
+  ],
+  "_extract_model_by_path": [
+    "serialized",
+    "kwargs",
+    "keys",
+    "select_from"
+  ],
+  "LangchainCallbackHandler": {
+    "__init__": [
+      "self"
+    ],
+    "on_llm_new_token": [
+      "self",
+      "token"
+    ],
+    "_get_observation_type_from_serialized": [
+      "self",
+      "serialized",
+      "callback_type"
+    ],
+    "get_langchain_run_name": [
+      "self",
+      "serialized"
+    ],
+    "on_retriever_error": [
+      "self",
+      "error"
+    ],
+    "_parse_langfuse_trace_attributes": [
+      "self"
+    ],
+    "_get_langchain_observation_metadata": [
+      "self"
+    ],
+    "on_chain_start": [
+      "self",
+      "serialized",
+      "inputs"
+    ],
+    "_register_langfuse_prompt": [
+      "self"
+    ],
+    "_deregister_langfuse_prompt": [
+      "self",
+      "run_id"
+    ],
+    "_get_parent_observation": [
+      "self",
+      "parent_run_id"
+    ],
+    "_attach_observation": [
+      "self",
+      "run_id",
+      "observation"
+    ],
+    "_detach_observation": [
+      "self",
+      "run_id"
+    ],
+    "on_agent_action": [
+      "self",
+      "action"
+    ],
+    "on_agent_finish": [
+      "self",
+      "finish"
+    ],
+    "on_chain_end": [
+      "self",
+      "outputs"
+    ],
+    "on_chain_error": [
+      "self",
+      "error"
+    ],
+    "on_chat_model_start": [
+      "self",
+      "serialized",
+      "messages"
+    ],
+    "on_llm_start": [
+      "self",
+      "serialized",
+      "prompts"
+    ],
+    "on_tool_start": [
+      "self",
+      "serialized",
+      "input_str"
+    ],
+    "on_retriever_start": [
+      "self",
+      "serialized",
+      "query"
+    ],
+    "on_retriever_end": [
+      "self",
+      "documents"
+    ],
+    "on_tool_end": [
+      "self",
+      "output"
+    ],
+    "on_tool_error": [
+      "self",
+      "error"
+    ],
+    "__on_llm_action": [
+      "self",
+      "serialized",
+      "run_id",
+      "prompts",
+      "parent_run_id",
+      "tags",
+      "metadata"
+    ],
+    "_parse_model_parameters": [
+      "kwargs"
+    ],
+    "_parse_model_and_log_errors": [
+      "self"
+    ],
+    "_log_model_parse_warning": [
+      "self"
+    ],
+    "on_llm_end": [
+      "self",
+      "response"
+    ],
+    "on_llm_error": [
+      "self",
+      "error"
+    ],
+    "_reset": [
+      "self"
+    ],
+    "_exit_propagation_context": [
+      "self"
+    ],
+    "__join_tags_and_metadata": [
+      "self",
+      "tags",
+      "metadata",
+      "keep_langfuse_trace_attributes"
+    ],
+    "_convert_message_to_dict": [
+      "self",
+      "message"
+    ],
+    "_create_message_dicts": [
+      "self",
+      "messages"
+    ],
+    "_log_debug_event": [
+      "self",
+      "event_name",
+      "run_id",
+      "parent_run_id"
+    ]
+  },
+  "_extract_raw_response": [
+    "last_response"
+  ],
+  "_flatten_comprehension": [
+    "matrix"
+  ],
+  "_parse_usage_model": [
+    "usage"
+  ],
+  "_parse_model": [
+    "response"
+  ],
+  "_parse_model_name_from_metadata": [
+    "metadata"
+  ],
+  "_strip_langfuse_keys_from_dict": [
+    "metadata",
+    "keep_langfuse_trace_attributes"
+  ],
+  "UploadMediaJob": {},
+  "MediaManager": {
+    "__init__": [
+      "self"
+    ],
+    "process_next_media_upload": [
+      "self"
+    ],
+    "_find_and_process_media": [
+      "self"
+    ],
+    "_process_media": [
+      "self"
+    ],
+    "_process_upload_media_job": [
+      "self"
+    ],
+    "_request_with_backoff": [
+      "self",
+      "func"
+    ]
+  },
+  "MediaUploadConsumer": {
+    "__init__": [
+      "self"
+    ],
+    "run": [
+      "self"
+    ],
+    "pause": [
+      "self"
+    ]
+  },
+  "MAX_EVENT_SIZE_BYTES": [],
+  "MAX_BATCH_SIZE_BYTES": [],
+  "ScoreIngestionMetadata": {},
+  "ScoreIngestionConsumer": {
+    "__init__": [
+      "self"
+    ],
+    "_next": [
+      "self"
+    ],
+    "_get_item_size": [
+      "self",
+      "item"
+    ],
+    "run": [
+      "self"
+    ],
+    "upload": [
+      "self"
+    ],
+    "pause": [
+      "self"
+    ],
+    "_upload_batch": [
+      "self",
+      "batch"
+    ]
+  },
+  "_get_timestamp": [],
+  "_create_prompt_context": [
+    "prompt"
+  ],
+  "common_release_envs": [],
+  "get_common_release_envs": [],
+  "LangfuseClient": {
+    "__init__": [
+      "self",
+      "public_key",
+      "secret_key",
+      "base_url",
+      "version",
+      "timeout",
+      "session"
+    ],
+    "generate_headers": [
+      "self"
+    ],
+    "batch_post": [
+      "self"
+    ],
+    "post": [
+      "self"
+    ],
+    "_remove_trailing_slash": [
+      "self",
+      "url"
+    ],
+    "_process_response": [
+      "self",
+      "res",
+      "success_message"
+    ]
+  },
+  "APIError": {
+    "__init__": [
+      "self",
+      "status",
+      "message",
+      "details"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "APIErrors": {
+    "__init__": [
+      "self",
+      "errors"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "SUPPORT_URL": [],
+  "API_DOCS_URL": [],
+  "RBAC_DOCS_URL": [],
+  "INSTALLATION_DOCS_URL": [],
+  "RATE_LIMITS_URL": [],
+  "PYPI_PACKAGE_URL": [],
+  "updatePromptResponse": [],
+  "defaultServerErrorPrompt": [],
+  "defaultErrorResponse": [],
+  "errorResponseByCode": [],
+  "generate_error_message_fern": [
+    "error"
+  ],
+  "handle_fern_exception": [
+    "exception"
+  ],
+  "generate_error_message": [
+    "exception"
+  ],
+  "handle_exception": [
+    "exception"
+  ],
+  "catch_and_log_errors": [
+    "func"
+  ],
+  "auto_decorate_methods_with": [
+    "decorator",
+    "exclude"
+  ],
+  "logger": [],
+  "EventSerializer": {
+    "__init__": [
+      "self"
+    ],
+    "default": [
+      "self",
+      "obj"
+    ],
+    "encode": [
+      "self",
+      "obj"
+    ],
+    "is_js_safe_integer": [
+      "value"
+    ]
+  },
+  "serialize_datetime": [
+    "v"
+  ],
+  "DEFAULT_PROMPT_CACHE_TTL_SECONDS": [],
+  "DEFAULT_PROMPT_CACHE_REFRESH_WORKERS": [],
+  "PromptCacheItem": {
+    "__init__": [
+      "self",
+      "prompt",
+      "ttl_seconds"
+    ],
+    "is_expired": [
+      "self"
+    ],
+    "get_epoch_seconds": []
+  },
+  "PromptCacheRefreshConsumer": {
+    "__init__": [
+      "self",
+      "queue",
+      "identifier"
+    ],
+    "run": [
+      "self"
+    ],
+    "pause": [
+      "self"
+    ]
+  },
+  "PromptCacheTaskManager": {
+    "__init__": [
+      "self",
+      "threads"
+    ],
+    "add_task": [
+      "self",
+      "key",
+      "task"
+    ],
+    "active_tasks": [
+      "self"
+    ],
+    "_wrap_task": [
+      "self",
+      "key",
+      "task"
+    ],
+    "shutdown": [
+      "self"
+    ]
+  },
+  "PromptCache": {
+    "__init__": [
+      "self",
+      "max_prompt_refresh_workers"
+    ],
+    "get": [
+      "self",
+      "key"
+    ],
+    "set": [
+      "self",
+      "key",
+      "value",
+      "ttl_seconds"
+    ],
+    "delete": [
+      "self",
+      "key"
+    ],
+    "invalidate": [
+      "self",
+      "prompt_name"
+    ],
+    "add_refresh_prompt_task": [
+      "self",
+      "key",
+      "fetch_func"
+    ],
+    "clear": [
+      "self"
+    ],
+    "generate_cache_key": [
+      "name"
+    ]
+  },
+  "__getattr__": [
+    "attr_name"
+  ],
+  "__dir__": [],
+  "LangfuseAPI": {
+    "__init__": [
+      "self"
+    ],
+    "annotation_queues": [
+      "self"
+    ],
+    "blob_storage_integrations": [
+      "self"
+    ],
+    "comments": [
+      "self"
+    ],
+    "dataset_items": [
+      "self"
+    ],
+    "dataset_run_items": [
+      "self"
+    ],
+    "datasets": [
+      "self"
+    ],
+    "health": [
+      "self"
+    ],
+    "ingestion": [
+      "self"
+    ],
+    "legacy": [
+      "self"
+    ],
+    "llm_connections": [
+      "self"
+    ],
+    "media": [
+      "self"
+    ],
+    "metrics": [
+      "self"
+    ],
+    "models": [
+      "self"
+    ],
+    "observations": [
+      "self"
+    ],
+    "opentelemetry": [
+      "self"
+    ],
+    "organizations": [
+      "self"
+    ],
+    "projects": [
+      "self"
+    ],
+    "prompt_version": [
+      "self"
+    ],
+    "prompts": [
+      "self"
+    ],
+    "scim": [
+      "self"
+    ],
+    "score_configs": [
+      "self"
+    ],
+    "scores": [
+      "self"
+    ],
+    "sessions": [
+      "self"
+    ],
+    "trace": [
+      "self"
+    ]
+  },
+  "AsyncLangfuseAPI": {
+    "__init__": [
+      "self"
+    ],
+    "annotation_queues": [
+      "self"
+    ],
+    "blob_storage_integrations": [
+      "self"
+    ],
+    "comments": [
+      "self"
+    ],
+    "dataset_items": [
+      "self"
+    ],
+    "dataset_run_items": [
+      "self"
+    ],
+    "datasets": [
+      "self"
+    ],
+    "health": [
+      "self"
+    ],
+    "ingestion": [
+      "self"
+    ],
+    "legacy": [
+      "self"
+    ],
+    "llm_connections": [
+      "self"
+    ],
+    "media": [
+      "self"
+    ],
+    "metrics": [
+      "self"
+    ],
+    "models": [
+      "self"
+    ],
+    "observations": [
+      "self"
+    ],
+    "opentelemetry": [
+      "self"
+    ],
+    "organizations": [
+      "self"
+    ],
+    "projects": [
+      "self"
+    ],
+    "prompt_version": [
+      "self"
+    ],
+    "prompts": [
+      "self"
+    ],
+    "scim": [
+      "self"
+    ],
+    "score_configs": [
+      "self"
+    ],
+    "scores": [
+      "self"
+    ],
+    "sessions": [
+      "self"
+    ],
+    "trace": [
+      "self"
+    ]
+  },
+  "RawMetricsClient": {
+    "__init__": [
+      "self"
+    ],
+    "metrics": [
+      "self"
+    ]
+  },
+  "AsyncRawMetricsClient": {
+    "__init__": [
+      "self"
+    ],
+    "metrics": [
+      "self"
+    ]
+  },
+  "MetricsClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "metrics": [
+      "self"
+    ]
+  },
+  "AsyncMetricsClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "metrics": [
+      "self"
+    ]
+  },
+  "MetricsV2Response": {},
+  "RawLegacyClient": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "AsyncRawLegacyClient": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "LegacyClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "metrics_v1": [
+      "self"
+    ],
+    "observations_v1": [
+      "self"
+    ],
+    "score_v1": [
+      "self"
+    ]
+  },
+  "AsyncLegacyClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "metrics_v1": [
+      "self"
+    ],
+    "observations_v1": [
+      "self"
+    ],
+    "score_v1": [
+      "self"
+    ]
+  },
+  "RawMetricsV1Client": {
+    "__init__": [
+      "self"
+    ],
+    "metrics": [
+      "self"
+    ]
+  },
+  "AsyncRawMetricsV1Client": {
+    "__init__": [
+      "self"
+    ],
+    "metrics": [
+      "self"
+    ]
+  },
+  "MetricsV1Client": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "metrics": [
+      "self"
+    ]
+  },
+  "AsyncMetricsV1Client": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "metrics": [
+      "self"
+    ]
+  },
+  "MetricsResponse": {},
+  "RawObservationsV1Client": {
+    "__init__": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "observation_id"
+    ],
+    "get_many": [
+      "self"
+    ]
+  },
+  "AsyncRawObservationsV1Client": {
+    "__init__": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "observation_id"
+    ],
+    "get_many": [
+      "self"
+    ]
+  },
+  "ObservationsV1Client": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "observation_id"
+    ],
+    "get_many": [
+      "self"
+    ]
+  },
+  "AsyncObservationsV1Client": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "observation_id"
+    ],
+    "get_many": [
+      "self"
+    ]
+  },
+  "Observations": {},
+  "ObservationsViews": {},
+  "OMIT": [],
+  "RawScoreV1Client": {
+    "__init__": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "delete": [
+      "self",
+      "score_id"
+    ]
+  },
+  "AsyncRawScoreV1Client": {
+    "__init__": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "delete": [
+      "self",
+      "score_id"
+    ]
+  },
+  "ScoreV1Client": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "delete": [
+      "self",
+      "score_id"
+    ]
+  },
+  "AsyncScoreV1Client": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "delete": [
+      "self",
+      "score_id"
+    ]
+  },
+  "CreateScoreResponse": {},
+  "CreateScoreRequest": {},
+  "RawProjectsClient": {
+    "__init__": [
+      "self"
+    ],
+    "get": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "update": [
+      "self",
+      "project_id"
+    ],
+    "delete": [
+      "self",
+      "project_id"
+    ],
+    "get_api_keys": [
+      "self",
+      "project_id"
+    ],
+    "create_api_key": [
+      "self",
+      "project_id"
+    ],
+    "delete_api_key": [
+      "self",
+      "project_id",
+      "api_key_id"
+    ]
+  },
+  "AsyncRawProjectsClient": {
+    "__init__": [
+      "self"
+    ],
+    "get": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "update": [
+      "self",
+      "project_id"
+    ],
+    "delete": [
+      "self",
+      "project_id"
+    ],
+    "get_api_keys": [
+      "self",
+      "project_id"
+    ],
+    "create_api_key": [
+      "self",
+      "project_id"
+    ],
+    "delete_api_key": [
+      "self",
+      "project_id",
+      "api_key_id"
+    ]
+  },
+  "ProjectsClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "get": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "update": [
+      "self",
+      "project_id"
+    ],
+    "delete": [
+      "self",
+      "project_id"
+    ],
+    "get_api_keys": [
+      "self",
+      "project_id"
+    ],
+    "create_api_key": [
+      "self",
+      "project_id"
+    ],
+    "delete_api_key": [
+      "self",
+      "project_id",
+      "api_key_id"
+    ]
+  },
+  "AsyncProjectsClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "get": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "update": [
+      "self",
+      "project_id"
+    ],
+    "delete": [
+      "self",
+      "project_id"
+    ],
+    "get_api_keys": [
+      "self",
+      "project_id"
+    ],
+    "create_api_key": [
+      "self",
+      "project_id"
+    ],
+    "delete_api_key": [
+      "self",
+      "project_id",
+      "api_key_id"
+    ]
+  },
+  "ApiKeyDeletionResponse": {},
+  "ApiKeySummary": {},
+  "ApiKeyResponse": {},
+  "Organization": {},
+  "Projects": {},
+  "ProjectDeletionResponse": {},
+  "Project": {},
+  "ApiKeyList": {},
+  "RawDatasetRunItemsClient": {
+    "__init__": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ]
+  },
+  "AsyncRawDatasetRunItemsClient": {
+    "__init__": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ]
+  },
+  "DatasetRunItemsClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ]
+  },
+  "AsyncDatasetRunItemsClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ]
+  },
+  "PaginatedDatasetRunItems": {},
+  "CreateDatasetRunItemRequest": {},
+  "RawIngestionClient": {
+    "__init__": [
+      "self"
+    ],
+    "batch": [
+      "self"
+    ]
+  },
+  "AsyncRawIngestionClient": {
+    "__init__": [
+      "self"
+    ],
+    "batch": [
+      "self"
+    ]
+  },
+  "IngestionClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "batch": [
+      "self"
+    ]
+  },
+  "AsyncIngestionClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "batch": [
+      "self"
+    ]
+  },
+  "IngestionError": {},
+  "CreateEventBody": {},
+  "UpdateSpanEvent": {},
+  "ScoreEvent": {},
+  "OpenAiUsage": {},
+  "CreateObservationEvent": {},
+  "IngestionResponse": {},
+  "CreateGenerationBody": {},
+  "IngestionUsage": [],
+  "UpdateGenerationBody": {},
+  "CreateGenerationEvent": {},
+  "SdkLogEvent": {},
+  "CreateEventEvent": {},
+  "TraceEvent": {},
+  "UpdateGenerationEvent": {},
+  "IngestionEvent_TraceCreate": {},
+  "IngestionEvent_ScoreCreate": {},
+  "IngestionEvent_SpanCreate": {},
+  "IngestionEvent_SpanUpdate": {},
+  "IngestionEvent_GenerationCreate": {},
+  "IngestionEvent_GenerationUpdate": {},
+  "IngestionEvent_EventCreate": {},
+  "IngestionEvent_SdkLog": {},
+  "IngestionEvent_ObservationCreate": {},
+  "IngestionEvent_ObservationUpdate": {},
+  "IngestionEvent": [],
+  "TraceBody": {},
+  "OpenAiResponseUsageSchema": {},
+  "OpenAiCompletionUsageSchema": {},
+  "OptionalObservationBody": {},
+  "IngestionSuccess": {},
+  "UsageDetails": [],
+  "CreateSpanBody": {},
+  "T_Result": [],
+  "ObservationType": {
+    "SPAN": [],
+    "GENERATION": [],
+    "EVENT": [],
+    "AGENT": [],
+    "TOOL": [],
+    "CHAIN": [],
+    "RETRIEVER": [],
+    "EVALUATOR": [],
+    "EMBEDDING": [],
+    "GUARDRAIL": [],
+    "visit": [
+      "self",
+      "span",
+      "generation",
+      "event",
+      "agent",
+      "tool",
+      "chain",
+      "retriever",
+      "evaluator",
+      "embedding",
+      "guardrail"
+    ]
+  },
+  "UpdateObservationEvent": {},
+  "ScoreBody": {},
+  "UpdateEventBody": {},
+  "BaseEvent": {},
+  "UpdateSpanBody": {},
+  "ObservationBody": {},
+  "SdkLogBody": {},
+  "CreateSpanEvent": {},
+  "RawBlobStorageIntegrationsClient": {
+    "__init__": [
+      "self"
+    ],
+    "get_blob_storage_integrations": [
+      "self"
+    ],
+    "upsert_blob_storage_integration": [
+      "self"
+    ],
+    "get_blob_storage_integration_status": [
+      "self",
+      "id"
+    ],
+    "delete_blob_storage_integration": [
+      "self",
+      "id"
+    ]
+  },
+  "AsyncRawBlobStorageIntegrationsClient": {
+    "__init__": [
+      "self"
+    ],
+    "get_blob_storage_integrations": [
+      "self"
+    ],
+    "upsert_blob_storage_integration": [
+      "self"
+    ],
+    "get_blob_storage_integration_status": [
+      "self",
+      "id"
+    ],
+    "delete_blob_storage_integration": [
+      "self",
+      "id"
+    ]
+  },
+  "BlobStorageIntegrationsClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "get_blob_storage_integrations": [
+      "self"
+    ],
+    "upsert_blob_storage_integration": [
+      "self"
+    ],
+    "get_blob_storage_integration_status": [
+      "self",
+      "id"
+    ],
+    "delete_blob_storage_integration": [
+      "self",
+      "id"
+    ]
+  },
+  "AsyncBlobStorageIntegrationsClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "get_blob_storage_integrations": [
+      "self"
+    ],
+    "upsert_blob_storage_integration": [
+      "self"
+    ],
+    "get_blob_storage_integration_status": [
+      "self",
+      "id"
+    ],
+    "delete_blob_storage_integration": [
+      "self",
+      "id"
+    ]
+  },
+  "BlobStorageIntegrationResponse": {},
+  "BlobStorageIntegrationFileType": {
+    "JSON": [],
+    "CSV": [],
+    "JSONL": [],
+    "visit": [
+      "self",
+      "json",
+      "csv",
+      "jsonl"
+    ]
+  },
+  "CreateBlobStorageIntegrationRequest": {},
+  "BlobStorageExportFrequency": {
+    "HOURLY": [],
+    "DAILY": [],
+    "WEEKLY": [],
+    "visit": [
+      "self",
+      "hourly",
+      "daily",
+      "weekly"
+    ]
+  },
+  "BlobStorageIntegrationType": {
+    "S3": [],
+    "S3COMPATIBLE": [],
+    "AZURE_BLOB_STORAGE": [],
+    "visit": [
+      "self",
+      "s3",
+      "s3compatible",
+      "azure_blob_storage"
+    ]
+  },
+  "BlobStorageExportMode": {
+    "FULL_HISTORY": [],
+    "FROM_TODAY": [],
+    "FROM_CUSTOM_DATE": [],
+    "visit": [
+      "self",
+      "full_history",
+      "from_today",
+      "from_custom_date"
+    ]
+  },
+  "BlobStorageIntegrationsResponse": {},
+  "BlobStorageSyncStatus": {
+    "IDLE": [],
+    "QUEUED": [],
+    "UP_TO_DATE": [],
+    "DISABLED": [],
+    "ERROR": [],
+    "visit": [
+      "self",
+      "idle",
+      "queued",
+      "up_to_date",
+      "disabled",
+      "error"
+    ]
+  },
+  "BlobStorageIntegrationStatusResponse": {},
+  "BlobStorageIntegrationDeletionResponse": {},
+  "RawPromptsClient": {
+    "__init__": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "prompt_name"
+    ],
+    "list": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "delete": [
+      "self",
+      "prompt_name"
+    ]
+  },
+  "AsyncRawPromptsClient": {
+    "__init__": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "prompt_name"
+    ],
+    "list": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "delete": [
+      "self",
+      "prompt_name"
+    ]
+  },
+  "PromptsClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "prompt_name"
+    ],
+    "list": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "delete": [
+      "self",
+      "prompt_name"
+    ]
+  },
+  "AsyncPromptsClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "prompt_name"
+    ],
+    "list": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "delete": [
+      "self",
+      "prompt_name"
+    ]
+  },
+  "PromptMeta": {},
+  "PlaceholderMessage": {},
+  "CreateChatPromptRequest": {},
+  "CreateChatPromptType": {
+    "CHAT": [],
+    "visit": [
+      "self",
+      "chat"
+    ]
+  },
+  "Prompt_Chat": {},
+  "Prompt_Text": {},
+  "Prompt": [],
+  "ChatMessageType": {
+    "CHATMESSAGE": [],
+    "visit": [
+      "self",
+      "chatmessage"
+    ]
+  },
+  "PromptMetaListResponse": {},
+  "ChatPrompt": {},
+  "ChatMessage": {},
+  "BasePrompt": {},
+  "TextPrompt": {},
+  "CreatePromptRequest": [],
+  "PromptType": {
+    "CHAT": [],
+    "TEXT": [],
+    "visit": [
+      "self",
+      "chat",
+      "text"
+    ]
+  },
+  "PlaceholderMessageType": {
+    "PLACEHOLDER": [],
+    "visit": [
+      "self",
+      "placeholder"
+    ]
+  },
+  "CreateTextPromptRequest": {},
+  "ChatMessageWithPlaceholders": [],
+  "CreateTextPromptType": {
+    "TEXT": [],
+    "visit": [
+      "self",
+      "text"
+    ]
+  },
+  "RawTraceClient": {
+    "__init__": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "trace_id"
+    ],
+    "delete": [
+      "self",
+      "trace_id"
+    ],
+    "list": [
+      "self"
+    ],
+    "delete_multiple": [
+      "self"
+    ]
+  },
+  "AsyncRawTraceClient": {
+    "__init__": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "trace_id"
+    ],
+    "delete": [
+      "self",
+      "trace_id"
+    ],
+    "list": [
+      "self"
+    ],
+    "delete_multiple": [
+      "self"
+    ]
+  },
+  "TraceClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "trace_id"
+    ],
+    "delete": [
+      "self",
+      "trace_id"
+    ],
+    "list": [
+      "self"
+    ],
+    "delete_multiple": [
+      "self"
+    ]
+  },
+  "AsyncTraceClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "trace_id"
+    ],
+    "delete": [
+      "self",
+      "trace_id"
+    ],
+    "list": [
+      "self"
+    ],
+    "delete_multiple": [
+      "self"
+    ]
+  },
+  "Sort": {},
+  "Traces": {},
+  "DeleteTraceResponse": {},
+  "BaseHttpResponse": {
+    "__init__": [
+      "self",
+      "response"
+    ],
+    "headers": [
+      "self"
+    ]
+  },
+  "HttpResponse": {
+    "__init__": [
+      "self",
+      "response",
+      "data"
+    ],
+    "data": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "AsyncHttpResponse": {
+    "__init__": [
+      "self",
+      "response",
+      "data"
+    ],
+    "data": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "ApiError": {
+    "__init__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "RequestOptions": {},
+  "BaseClientWrapper": {
+    "__init__": [
+      "self"
+    ],
+    "get_headers": [
+      "self"
+    ],
+    "_get_username": [
+      "self"
+    ],
+    "_get_password": [
+      "self"
+    ],
+    "get_custom_headers": [
+      "self"
+    ],
+    "get_base_url": [
+      "self"
+    ],
+    "get_timeout": [
+      "self"
+    ]
+  },
+  "SyncClientWrapper": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "AsyncClientWrapper": {
+    "__init__": [
+      "self"
+    ],
+    "async_get_headers": [
+      "self"
+    ]
+  },
+  "remove_none_from_dict": [
+    "original"
+  ],
+  "FieldMetadata": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "convert_and_respect_annotation_metadata": [],
+  "_convert_mapping": [
+    "object_",
+    "expected_type",
+    "direction"
+  ],
+  "_get_annotation": [
+    "type_"
+  ],
+  "_remove_annotations": [
+    "type_"
+  ],
+  "get_alias_to_field_mapping": [
+    "type_"
+  ],
+  "get_field_to_alias_mapping": [
+    "type_"
+  ],
+  "_get_alias_to_field_name": [
+    "field_to_hint"
+  ],
+  "_get_field_to_alias_name": [
+    "field_to_hint"
+  ],
+  "_get_alias_from_type": [
+    "type_"
+  ],
+  "_alias_key": [
+    "key",
+    "type_",
+    "direction",
+    "aliases_to_field_names"
+  ],
+  "SetIntStr": [],
+  "DictIntStrAny": [],
+  "jsonable_encoder": [
+    "obj",
+    "custom_encoder"
+  ],
+  "traverse_query_dict": [
+    "dict_flat",
+    "key_prefix"
+  ],
+  "single_query_encoder": [
+    "query_key",
+    "query_value"
+  ],
+  "encode_query": [
+    "query"
+  ],
+  "INITIAL_RETRY_DELAY_SECONDS": [],
+  "MAX_RETRY_DELAY_SECONDS": [],
+  "JITTER_FACTOR": [],
+  "_parse_retry_after": [
+    "response_headers"
+  ],
+  "_add_positive_jitter": [
+    "delay"
+  ],
+  "_add_symmetric_jitter": [
+    "delay"
+  ],
+  "_parse_x_ratelimit_reset": [
+    "response_headers"
+  ],
+  "_retry_timeout": [
+    "response",
+    "retries"
+  ],
+  "_should_retry": [
+    "response"
+  ],
+  "_maybe_filter_none_from_multipart_data": [
+    "data",
+    "request_files",
+    "force_multipart"
+  ],
+  "remove_omit_from_dict": [
+    "original",
+    "omit"
+  ],
+  "maybe_filter_request_body": [
+    "data",
+    "request_options",
+    "omit"
+  ],
+  "get_request_body": [],
+  "HttpClient": {
+    "__init__": [
+      "self"
+    ],
+    "get_base_url": [
+      "self",
+      "maybe_base_url"
+    ],
+    "request": [
+      "self",
+      "path"
+    ],
+    "stream": [
+      "self",
+      "path"
+    ]
+  },
+  "AsyncHttpClient": {
+    "__init__": [
+      "self"
+    ],
+    "_get_headers": [
+      "self"
+    ],
+    "get_base_url": [
+      "self",
+      "maybe_base_url"
+    ],
+    "request": [
+      "self",
+      "path"
+    ],
+    "stream": [
+      "self",
+      "path"
+    ]
+  },
+  "FileContent": [],
+  "File": [],
+  "convert_file_dict_to_httpx_tuples": [
+    "d"
+  ],
+  "with_content_type": [],
+  "ForceMultipartDict": {
+    "__bool__": [
+      "self"
+    ]
+  },
+  "FORCE_MULTIPART": [],
+  "IS_PYDANTIC_V2": [],
+  "Model": [],
+  "parse_obj_as": [
+    "type_",
+    "object_"
+  ],
+  "to_jsonable_with_fallback": [
+    "obj",
+    "fallback_serializer"
+  ],
+  "UniversalBaseModel": {
+    "model_construct": [
+      "cls",
+      "_fields_set"
+    ],
+    "construct": [
+      "cls",
+      "_fields_set"
+    ],
+    "json": [
+      "self"
+    ],
+    "dict": [
+      "self"
+    ]
+  },
+  "_union_list_of_pydantic_dicts": [
+    "source",
+    "destination"
+  ],
+  "deep_union_pydantic_dicts": [
+    "source",
+    "destination"
+  ],
+  "encode_by_type": [
+    "o"
+  ],
+  "update_forward_refs": [
+    "model"
+  ],
+  "AnyCallable": [],
+  "universal_root_validator": [
+    "pre"
+  ],
+  "universal_field_validator": [
+    "field_name",
+    "pre"
+  ],
+  "PydanticField": [],
+  "_get_model_fields": [
+    "model"
+  ],
+  "_get_field_default": [
+    "field"
+  ],
+  "EventSource": {
+    "__init__": [
+      "self",
+      "response"
+    ],
+    "_check_content_type": [
+      "self"
+    ],
+    "_get_charset": [
+      "self"
+    ],
+    "response": [
+      "self"
+    ],
+    "iter_sse": [
+      "self"
+    ],
+    "aiter_sse": [
+      "self"
+    ]
+  },
+  "connect_sse": [
+    "client",
+    "method",
+    "url"
+  ],
+  "aconnect_sse": [
+    "client",
+    "method",
+    "url"
+  ],
+  "ServerSentEvent": {
+    "json": [
+      "self"
+    ]
+  },
+  "SSEDecoder": {
+    "__init__": [
+      "self"
+    ],
+    "decode": [
+      "self",
+      "line"
+    ]
+  },
+  "SSEError": {},
+  "RawPromptVersionClient": {
+    "__init__": [
+      "self"
+    ],
+    "update": [
+      "self",
+      "name",
+      "version"
+    ]
+  },
+  "AsyncRawPromptVersionClient": {
+    "__init__": [
+      "self"
+    ],
+    "update": [
+      "self",
+      "name",
+      "version"
+    ]
+  },
+  "PromptVersionClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "update": [
+      "self",
+      "name",
+      "version"
+    ]
+  },
+  "AsyncPromptVersionClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "update": [
+      "self",
+      "name",
+      "version"
+    ]
+  },
+  "RawCommentsClient": {
+    "__init__": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "get": [
+      "self"
+    ],
+    "get_by_id": [
+      "self",
+      "comment_id"
+    ]
+  },
+  "AsyncRawCommentsClient": {
+    "__init__": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "get": [
+      "self"
+    ],
+    "get_by_id": [
+      "self",
+      "comment_id"
+    ]
+  },
+  "CommentsClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "get": [
+      "self"
+    ],
+    "get_by_id": [
+      "self",
+      "comment_id"
+    ]
+  },
+  "AsyncCommentsClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "get": [
+      "self"
+    ],
+    "get_by_id": [
+      "self",
+      "comment_id"
+    ]
+  },
+  "CreateCommentRequest": {},
+  "GetCommentsResponse": {},
+  "CreateCommentResponse": {},
+  "RawHealthClient": {
+    "__init__": [
+      "self"
+    ],
+    "health": [
+      "self"
+    ]
+  },
+  "AsyncRawHealthClient": {
+    "__init__": [
+      "self"
+    ],
+    "health": [
+      "self"
+    ]
+  },
+  "HealthClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "health": [
+      "self"
+    ]
+  },
+  "AsyncHealthClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "health": [
+      "self"
+    ]
+  },
+  "HealthResponse": {},
+  "ServiceUnavailableError": {
+    "__init__": [
+      "self",
+      "headers"
+    ]
+  },
+  "RawLlmConnectionsClient": {
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ],
+    "upsert": [
+      "self"
+    ]
+  },
+  "AsyncRawLlmConnectionsClient": {
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ],
+    "upsert": [
+      "self"
+    ]
+  },
+  "LlmConnectionsClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ],
+    "upsert": [
+      "self"
+    ]
+  },
+  "AsyncLlmConnectionsClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ],
+    "upsert": [
+      "self"
+    ]
+  },
+  "PaginatedLlmConnections": {},
+  "UpsertLlmConnectionRequest": {},
+  "LlmAdapter": {
+    "ANTHROPIC": [],
+    "OPEN_AI": [],
+    "AZURE": [],
+    "BEDROCK": [],
+    "GOOGLE_VERTEX_AI": [],
+    "GOOGLE_AI_STUDIO": [],
+    "visit": [
+      "self",
+      "anthropic",
+      "open_ai",
+      "azure",
+      "bedrock",
+      "google_vertex_ai",
+      "google_ai_studio"
+    ]
+  },
+  "LlmConnection": {},
+  "RawAnnotationQueuesClient": {
+    "__init__": [
+      "self"
+    ],
+    "list_queues": [
+      "self"
+    ],
+    "create_queue": [
+      "self"
+    ],
+    "get_queue": [
+      "self",
+      "queue_id"
+    ],
+    "list_queue_items": [
+      "self",
+      "queue_id"
+    ],
+    "get_queue_item": [
+      "self",
+      "queue_id",
+      "item_id"
+    ],
+    "create_queue_item": [
+      "self",
+      "queue_id"
+    ],
+    "update_queue_item": [
+      "self",
+      "queue_id",
+      "item_id"
+    ],
+    "delete_queue_item": [
+      "self",
+      "queue_id",
+      "item_id"
+    ],
+    "create_queue_assignment": [
+      "self",
+      "queue_id"
+    ],
+    "delete_queue_assignment": [
+      "self",
+      "queue_id"
+    ]
+  },
+  "AsyncRawAnnotationQueuesClient": {
+    "__init__": [
+      "self"
+    ],
+    "list_queues": [
+      "self"
+    ],
+    "create_queue": [
+      "self"
+    ],
+    "get_queue": [
+      "self",
+      "queue_id"
+    ],
+    "list_queue_items": [
+      "self",
+      "queue_id"
+    ],
+    "get_queue_item": [
+      "self",
+      "queue_id",
+      "item_id"
+    ],
+    "create_queue_item": [
+      "self",
+      "queue_id"
+    ],
+    "update_queue_item": [
+      "self",
+      "queue_id",
+      "item_id"
+    ],
+    "delete_queue_item": [
+      "self",
+      "queue_id",
+      "item_id"
+    ],
+    "create_queue_assignment": [
+      "self",
+      "queue_id"
+    ],
+    "delete_queue_assignment": [
+      "self",
+      "queue_id"
+    ]
+  },
+  "AnnotationQueuesClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "list_queues": [
+      "self"
+    ],
+    "create_queue": [
+      "self"
+    ],
+    "get_queue": [
+      "self",
+      "queue_id"
+    ],
+    "list_queue_items": [
+      "self",
+      "queue_id"
+    ],
+    "get_queue_item": [
+      "self",
+      "queue_id",
+      "item_id"
+    ],
+    "create_queue_item": [
+      "self",
+      "queue_id"
+    ],
+    "update_queue_item": [
+      "self",
+      "queue_id",
+      "item_id"
+    ],
+    "delete_queue_item": [
+      "self",
+      "queue_id",
+      "item_id"
+    ],
+    "create_queue_assignment": [
+      "self",
+      "queue_id"
+    ],
+    "delete_queue_assignment": [
+      "self",
+      "queue_id"
+    ]
+  },
+  "AsyncAnnotationQueuesClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "list_queues": [
+      "self"
+    ],
+    "create_queue": [
+      "self"
+    ],
+    "get_queue": [
+      "self",
+      "queue_id"
+    ],
+    "list_queue_items": [
+      "self",
+      "queue_id"
+    ],
+    "get_queue_item": [
+      "self",
+      "queue_id",
+      "item_id"
+    ],
+    "create_queue_item": [
+      "self",
+      "queue_id"
+    ],
+    "update_queue_item": [
+      "self",
+      "queue_id",
+      "item_id"
+    ],
+    "delete_queue_item": [
+      "self",
+      "queue_id",
+      "item_id"
+    ],
+    "create_queue_assignment": [
+      "self",
+      "queue_id"
+    ],
+    "delete_queue_assignment": [
+      "self",
+      "queue_id"
+    ]
+  },
+  "CreateAnnotationQueueItemRequest": {},
+  "PaginatedAnnotationQueues": {},
+  "CreateAnnotationQueueAssignmentResponse": {},
+  "AnnotationQueueObjectType": {
+    "TRACE": [],
+    "OBSERVATION": [],
+    "SESSION": [],
+    "visit": [
+      "self",
+      "trace",
+      "observation",
+      "session"
+    ]
+  },
+  "CreateAnnotationQueueRequest": {},
+  "AnnotationQueueAssignmentRequest": {},
+  "PaginatedAnnotationQueueItems": {},
+  "AnnotationQueue": {},
+  "UpdateAnnotationQueueItemRequest": {},
+  "AnnotationQueueStatus": {
+    "PENDING": [],
+    "COMPLETED": [],
+    "visit": [
+      "self",
+      "pending",
+      "completed"
+    ]
+  },
+  "AnnotationQueueItem": {},
+  "DeleteAnnotationQueueItemResponse": {},
+  "DeleteAnnotationQueueAssignmentResponse": {},
+  "RawScimClient": {
+    "__init__": [
+      "self"
+    ],
+    "get_service_provider_config": [
+      "self"
+    ],
+    "get_resource_types": [
+      "self"
+    ],
+    "get_schemas": [
+      "self"
+    ],
+    "list_users": [
+      "self"
+    ],
+    "create_user": [
+      "self"
+    ],
+    "get_user": [
+      "self",
+      "user_id"
+    ],
+    "delete_user": [
+      "self",
+      "user_id"
+    ]
+  },
+  "AsyncRawScimClient": {
+    "__init__": [
+      "self"
+    ],
+    "get_service_provider_config": [
+      "self"
+    ],
+    "get_resource_types": [
+      "self"
+    ],
+    "get_schemas": [
+      "self"
+    ],
+    "list_users": [
+      "self"
+    ],
+    "create_user": [
+      "self"
+    ],
+    "get_user": [
+      "self",
+      "user_id"
+    ],
+    "delete_user": [
+      "self",
+      "user_id"
+    ]
+  },
+  "ScimClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "get_service_provider_config": [
+      "self"
+    ],
+    "get_resource_types": [
+      "self"
+    ],
+    "get_schemas": [
+      "self"
+    ],
+    "list_users": [
+      "self"
+    ],
+    "create_user": [
+      "self"
+    ],
+    "get_user": [
+      "self",
+      "user_id"
+    ],
+    "delete_user": [
+      "self",
+      "user_id"
+    ]
+  },
+  "AsyncScimClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "get_service_provider_config": [
+      "self"
+    ],
+    "get_resource_types": [
+      "self"
+    ],
+    "get_schemas": [
+      "self"
+    ],
+    "list_users": [
+      "self"
+    ],
+    "create_user": [
+      "self"
+    ],
+    "get_user": [
+      "self",
+      "user_id"
+    ],
+    "delete_user": [
+      "self",
+      "user_id"
+    ]
+  },
+  "UserMeta": {},
+  "EmptyResponse": {},
+  "ServiceProviderConfig": {},
+  "AuthenticationScheme": {},
+  "ResourceMeta": {},
+  "ScimUser": {},
+  "ResourceType": {},
+  "ResourceTypesResponse": {},
+  "BulkConfig": {},
+  "ScimName": {},
+  "SchemasResponse": {},
+  "ScimFeatureSupport": {},
+  "SchemaExtension": {},
+  "FilterConfig": {},
+  "ScimEmail": {},
+  "ScimUsersListResponse": {},
+  "SchemaResource": {},
+  "RawModelsClient": {
+    "__init__": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "id"
+    ],
+    "delete": [
+      "self",
+      "id"
+    ]
+  },
+  "AsyncRawModelsClient": {
+    "__init__": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "id"
+    ],
+    "delete": [
+      "self",
+      "id"
+    ]
+  },
+  "ModelsClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "id"
+    ],
+    "delete": [
+      "self",
+      "id"
+    ]
+  },
+  "AsyncModelsClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "id"
+    ],
+    "delete": [
+      "self",
+      "id"
+    ]
+  },
+  "PaginatedModels": {},
+  "CreateModelRequest": {},
+  "RawScoreConfigsClient": {
+    "__init__": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "get": [
+      "self"
+    ],
+    "get_by_id": [
+      "self",
+      "config_id"
+    ],
+    "update": [
+      "self",
+      "config_id"
+    ]
+  },
+  "AsyncRawScoreConfigsClient": {
+    "__init__": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "get": [
+      "self"
+    ],
+    "get_by_id": [
+      "self",
+      "config_id"
+    ],
+    "update": [
+      "self",
+      "config_id"
+    ]
+  },
+  "ScoreConfigsClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "get": [
+      "self"
+    ],
+    "get_by_id": [
+      "self",
+      "config_id"
+    ],
+    "update": [
+      "self",
+      "config_id"
+    ]
+  },
+  "AsyncScoreConfigsClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "get": [
+      "self"
+    ],
+    "get_by_id": [
+      "self",
+      "config_id"
+    ],
+    "update": [
+      "self",
+      "config_id"
+    ]
+  },
+  "UpdateScoreConfigRequest": {},
+  "CreateScoreConfigRequest": {},
+  "ScoreConfigs": {},
+  "MetaResponse": {},
+  "RawScoresClient": {
+    "__init__": [
+      "self"
+    ],
+    "get_many": [
+      "self"
+    ],
+    "get_by_id": [
+      "self",
+      "score_id"
+    ]
+  },
+  "AsyncRawScoresClient": {
+    "__init__": [
+      "self"
+    ],
+    "get_many": [
+      "self"
+    ],
+    "get_by_id": [
+      "self",
+      "score_id"
+    ]
+  },
+  "ScoresClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "get_many": [
+      "self"
+    ],
+    "get_by_id": [
+      "self",
+      "score_id"
+    ]
+  },
+  "AsyncScoresClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "get_many": [
+      "self"
+    ],
+    "get_by_id": [
+      "self",
+      "score_id"
+    ]
+  },
+  "GetScoresResponseTraceData": {},
+  "GetScoresResponseData_Numeric": {},
+  "GetScoresResponseData_Categorical": {},
+  "GetScoresResponseData_Boolean": {},
+  "GetScoresResponseData_Correction": {},
+  "GetScoresResponseData_Text": {},
+  "GetScoresResponseData": [],
+  "GetScoresResponseDataText": {},
+  "GetScoresResponse": {},
+  "GetScoresResponseDataCorrection": {},
+  "GetScoresResponseDataBoolean": {},
+  "GetScoresResponseDataCategorical": {},
+  "GetScoresResponseDataNumeric": {},
+  "RawSessionsClient": {
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "session_id"
+    ]
+  },
+  "AsyncRawSessionsClient": {
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "session_id"
+    ]
+  },
+  "SessionsClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "session_id"
+    ]
+  },
+  "AsyncSessionsClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "session_id"
+    ]
+  },
+  "PaginatedSessions": {},
+  "RawDatasetsClient": {
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "dataset_name"
+    ],
+    "create": [
+      "self"
+    ],
+    "get_run": [
+      "self",
+      "dataset_name",
+      "run_name"
+    ],
+    "delete_run": [
+      "self",
+      "dataset_name",
+      "run_name"
+    ],
+    "get_runs": [
+      "self",
+      "dataset_name"
+    ]
+  },
+  "AsyncRawDatasetsClient": {
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "dataset_name"
+    ],
+    "create": [
+      "self"
+    ],
+    "get_run": [
+      "self",
+      "dataset_name",
+      "run_name"
+    ],
+    "delete_run": [
+      "self",
+      "dataset_name",
+      "run_name"
+    ],
+    "get_runs": [
+      "self",
+      "dataset_name"
+    ]
+  },
+  "DatasetsClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "dataset_name"
+    ],
+    "create": [
+      "self"
+    ],
+    "get_run": [
+      "self",
+      "dataset_name",
+      "run_name"
+    ],
+    "delete_run": [
+      "self",
+      "dataset_name",
+      "run_name"
+    ],
+    "get_runs": [
+      "self",
+      "dataset_name"
+    ]
+  },
+  "AsyncDatasetsClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "dataset_name"
+    ],
+    "create": [
+      "self"
+    ],
+    "get_run": [
+      "self",
+      "dataset_name",
+      "run_name"
+    ],
+    "delete_run": [
+      "self",
+      "dataset_name",
+      "run_name"
+    ],
+    "get_runs": [
+      "self",
+      "dataset_name"
+    ]
+  },
+  "PaginatedDatasets": {},
+  "PaginatedDatasetRuns": {},
+  "DeleteDatasetRunResponse": {},
+  "CreateDatasetRequest": {},
+  "RawOpentelemetryClient": {
+    "__init__": [
+      "self"
+    ],
+    "export_traces": [
+      "self"
+    ]
+  },
+  "AsyncRawOpentelemetryClient": {
+    "__init__": [
+      "self"
+    ],
+    "export_traces": [
+      "self"
+    ]
+  },
+  "OpentelemetryClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "export_traces": [
+      "self"
+    ]
+  },
+  "AsyncOpentelemetryClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "export_traces": [
+      "self"
+    ]
+  },
+  "OtelTraceResponse": {},
+  "OtelAttributeValue": {},
+  "OtelScopeSpan": {},
+  "OtelScope": {},
+  "OtelResource": {},
+  "OtelResourceSpan": {},
+  "OtelAttribute": {},
+  "OtelSpan": {},
+  "Comment": {},
+  "ObservationsView": {},
+  "Session": {},
+  "DatasetStatus": {
+    "ACTIVE": [],
+    "ARCHIVED": [],
+    "visit": [
+      "self",
+      "active",
+      "archived"
+    ]
+  },
+  "SessionWithTraces": {},
+  "ScoreConfigDataType": {
+    "NUMERIC": [],
+    "BOOLEAN": [],
+    "CATEGORICAL": [],
+    "TEXT": [],
+    "visit": [
+      "self",
+      "numeric",
+      "boolean",
+      "categorical",
+      "text"
+    ]
+  },
+  "DatasetRunItem": {},
+  "DatasetRunWithItems": {},
+  "NumericScoreV1": {},
+  "CommentObjectType": {
+    "TRACE": [],
+    "OBSERVATION": [],
+    "SESSION": [],
+    "PROMPT": [],
+    "visit": [
+      "self",
+      "trace",
+      "observation",
+      "session",
+      "prompt"
+    ]
+  },
+  "Trace": {},
+  "MapValue": [],
+  "ScoreConfig": {},
+  "PricingTierCondition": {},
+  "CorrectionScore": {},
+  "TextScore": {},
+  "TextScoreV1": {},
+  "ScoreV1_Numeric": {},
+  "ScoreV1_Categorical": {},
+  "ScoreV1_Boolean": {},
+  "ScoreV1_Text": {},
+  "ScoreV1": [],
+  "Score_Numeric": {},
+  "Score_Categorical": {},
+  "Score_Boolean": {},
+  "Score_Correction": {},
+  "Score_Text": {},
+  "Score": [],
+  "BaseScore": {},
+  "CategoricalScore": {},
+  "ScoreSource": {
+    "ANNOTATION": [],
+    "API": [],
+    "EVAL": [],
+    "visit": [
+      "self",
+      "annotation",
+      "api",
+      "eval"
+    ]
+  },
+  "ObservationLevel": {
+    "DEBUG": [],
+    "DEFAULT": [],
+    "WARNING": [],
+    "ERROR": [],
+    "visit": [
+      "self",
+      "debug",
+      "default",
+      "warning",
+      "error"
+    ]
+  },
+  "DatasetItem": {},
+  "CategoricalScoreV1": {},
+  "NumericScore": {},
+  "PricingTier": {},
+  "CreateScoreValue": [],
+  "BooleanScoreV1": {},
+  "Observation": {},
+  "BooleanScore": {},
+  "ModelUsageUnit": {
+    "CHARACTERS": [],
+    "TOKENS": [],
+    "MILLISECONDS": [],
+    "SECONDS": [],
+    "IMAGES": [],
+    "REQUESTS": [],
+    "visit": [
+      "self",
+      "characters",
+      "tokens",
+      "milliseconds",
+      "seconds",
+      "images",
+      "requests"
+    ]
+  },
+  "BaseScoreV1": {},
+  "PricingTierOperator": {
+    "GT": [],
+    "GTE": [],
+    "LT": [],
+    "LTE": [],
+    "EQ": [],
+    "NEQ": [],
+    "visit": [
+      "self",
+      "gt",
+      "gte",
+      "lt",
+      "lte",
+      "eq",
+      "neq"
+    ]
+  },
+  "PricingTierInput": {},
+  "ConfigCategory": {},
+  "TraceWithFullDetails": {},
+  "Usage": {},
+  "DatasetRun": {},
+  "Dataset": {},
+  "ModelPrice": {},
+  "ObservationV2": {},
+  "TraceWithDetails": {},
+  "UnauthorizedError": {
+    "__init__": [
+      "self",
+      "body",
+      "headers"
+    ]
+  },
+  "NotFoundError": {
+    "__init__": [
+      "self",
+      "body",
+      "headers"
+    ]
+  },
+  "MethodNotAllowedError": {
+    "__init__": [
+      "self",
+      "body",
+      "headers"
+    ]
+  },
+  "AccessDeniedError": {
+    "__init__": [
+      "self",
+      "body",
+      "headers"
+    ]
+  },
+  "Error": {
+    "__init__": [
+      "self",
+      "body",
+      "headers"
+    ]
+  },
+  "RawMediaClient": {
+    "__init__": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "media_id"
+    ],
+    "patch": [
+      "self",
+      "media_id"
+    ],
+    "get_upload_url": [
+      "self"
+    ]
+  },
+  "AsyncRawMediaClient": {
+    "__init__": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "media_id"
+    ],
+    "patch": [
+      "self",
+      "media_id"
+    ],
+    "get_upload_url": [
+      "self"
+    ]
+  },
+  "MediaClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "media_id"
+    ],
+    "patch": [
+      "self",
+      "media_id"
+    ],
+    "get_upload_url": [
+      "self"
+    ]
+  },
+  "AsyncMediaClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "media_id"
+    ],
+    "patch": [
+      "self",
+      "media_id"
+    ],
+    "get_upload_url": [
+      "self"
+    ]
+  },
+  "GetMediaResponse": {},
+  "GetMediaUploadUrlResponse": {},
+  "PatchMediaBody": {},
+  "MediaContentType": {
+    "IMAGE_PNG": [],
+    "IMAGE_JPEG": [],
+    "IMAGE_JPG": [],
+    "IMAGE_WEBP": [],
+    "IMAGE_GIF": [],
+    "IMAGE_SVG_XML": [],
+    "IMAGE_TIFF": [],
+    "IMAGE_BMP": [],
+    "IMAGE_AVIF": [],
+    "IMAGE_HEIC": [],
+    "AUDIO_MPEG": [],
+    "AUDIO_MP3": [],
+    "AUDIO_WAV": [],
+    "AUDIO_OGG": [],
+    "AUDIO_OGA": [],
+    "AUDIO_AAC": [],
+    "AUDIO_MP4": [],
+    "AUDIO_FLAC": [],
+    "AUDIO_OPUS": [],
+    "AUDIO_WEBM": [],
+    "VIDEO_MP4": [],
+    "VIDEO_WEBM": [],
+    "VIDEO_OGG": [],
+    "VIDEO_MPEG": [],
+    "VIDEO_QUICKTIME": [],
+    "VIDEO_X_MSVIDEO": [],
+    "VIDEO_X_MATROSKA": [],
+    "TEXT_PLAIN": [],
+    "TEXT_HTML": [],
+    "TEXT_CSS": [],
+    "TEXT_CSV": [],
+    "TEXT_MARKDOWN": [],
+    "TEXT_X_PYTHON": [],
+    "APPLICATION_JAVASCRIPT": [],
+    "TEXT_X_TYPESCRIPT": [],
+    "APPLICATION_X_YAML": [],
+    "APPLICATION_PDF": [],
+    "APPLICATION_MSWORD": [],
+    "APPLICATION_MS_EXCEL": [],
+    "APPLICATION_OPENXML_SPREADSHEET": [],
+    "APPLICATION_ZIP": [],
+    "APPLICATION_JSON": [],
+    "APPLICATION_XML": [],
+    "APPLICATION_OCTET_STREAM": [],
+    "APPLICATION_OPENXML_WORD": [],
+    "APPLICATION_OPENXML_PRESENTATION": [],
+    "APPLICATION_RTF": [],
+    "APPLICATION_X_NDJSON": [],
+    "APPLICATION_PARQUET": [],
+    "APPLICATION_GZIP": [],
+    "APPLICATION_X_TAR": [],
+    "APPLICATION_X7Z_COMPRESSED": [],
+    "visit": [
+      "self",
+      "image_png",
+      "image_jpeg",
+      "image_jpg",
+      "image_webp",
+      "image_gif",
+      "image_svg_xml",
+      "image_tiff",
+      "image_bmp",
+      "image_avif",
+      "image_heic",
+      "audio_mpeg",
+      "audio_mp3",
+      "audio_wav",
+      "audio_ogg",
+      "audio_oga",
+      "audio_aac",
+      "audio_mp4",
+      "audio_flac",
+      "audio_opus",
+      "audio_webm",
+      "video_mp4",
+      "video_webm",
+      "video_ogg",
+      "video_mpeg",
+      "video_quicktime",
+      "video_x_msvideo",
+      "video_x_matroska",
+      "text_plain",
+      "text_html",
+      "text_css",
+      "text_csv",
+      "text_markdown",
+      "text_x_python",
+      "application_javascript",
+      "text_x_typescript",
+      "application_x_yaml",
+      "application_pdf",
+      "application_msword",
+      "application_ms_excel",
+      "application_openxml_spreadsheet",
+      "application_zip",
+      "application_json",
+      "application_xml",
+      "application_octet_stream",
+      "application_openxml_word",
+      "application_openxml_presentation",
+      "application_rtf",
+      "application_x_ndjson",
+      "application_parquet",
+      "application_gzip",
+      "application_x_tar",
+      "application_x7z_compressed"
+    ]
+  },
+  "GetMediaUploadUrlRequest": {},
+  "RawObservationsClient": {
+    "__init__": [
+      "self"
+    ],
+    "get_many": [
+      "self"
+    ]
+  },
+  "AsyncRawObservationsClient": {
+    "__init__": [
+      "self"
+    ],
+    "get_many": [
+      "self"
+    ]
+  },
+  "ObservationsClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "get_many": [
+      "self"
+    ]
+  },
+  "AsyncObservationsClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "get_many": [
+      "self"
+    ]
+  },
+  "ObservationsV2Response": {},
+  "ObservationsV2Meta": {},
+  "RawOrganizationsClient": {
+    "__init__": [
+      "self"
+    ],
+    "get_organization_memberships": [
+      "self"
+    ],
+    "update_organization_membership": [
+      "self"
+    ],
+    "delete_organization_membership": [
+      "self"
+    ],
+    "get_project_memberships": [
+      "self",
+      "project_id"
+    ],
+    "update_project_membership": [
+      "self",
+      "project_id"
+    ],
+    "delete_project_membership": [
+      "self",
+      "project_id"
+    ],
+    "get_organization_projects": [
+      "self"
+    ],
+    "get_organization_api_keys": [
+      "self"
+    ]
+  },
+  "AsyncRawOrganizationsClient": {
+    "__init__": [
+      "self"
+    ],
+    "get_organization_memberships": [
+      "self"
+    ],
+    "update_organization_membership": [
+      "self"
+    ],
+    "delete_organization_membership": [
+      "self"
+    ],
+    "get_project_memberships": [
+      "self",
+      "project_id"
+    ],
+    "update_project_membership": [
+      "self",
+      "project_id"
+    ],
+    "delete_project_membership": [
+      "self",
+      "project_id"
+    ],
+    "get_organization_projects": [
+      "self"
+    ],
+    "get_organization_api_keys": [
+      "self"
+    ]
+  },
+  "OrganizationsClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "get_organization_memberships": [
+      "self"
+    ],
+    "update_organization_membership": [
+      "self"
+    ],
+    "delete_organization_membership": [
+      "self"
+    ],
+    "get_project_memberships": [
+      "self",
+      "project_id"
+    ],
+    "update_project_membership": [
+      "self",
+      "project_id"
+    ],
+    "delete_project_membership": [
+      "self",
+      "project_id"
+    ],
+    "get_organization_projects": [
+      "self"
+    ],
+    "get_organization_api_keys": [
+      "self"
+    ]
+  },
+  "AsyncOrganizationsClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "get_organization_memberships": [
+      "self"
+    ],
+    "update_organization_membership": [
+      "self"
+    ],
+    "delete_organization_membership": [
+      "self"
+    ],
+    "get_project_memberships": [
+      "self",
+      "project_id"
+    ],
+    "update_project_membership": [
+      "self",
+      "project_id"
+    ],
+    "delete_project_membership": [
+      "self",
+      "project_id"
+    ],
+    "get_organization_projects": [
+      "self"
+    ],
+    "get_organization_api_keys": [
+      "self"
+    ]
+  },
+  "MembershipRequest": {},
+  "MembershipRole": {
+    "OWNER": [],
+    "ADMIN": [],
+    "MEMBER": [],
+    "VIEWER": [],
+    "visit": [
+      "self",
+      "owner",
+      "admin",
+      "member",
+      "viewer"
+    ]
+  },
+  "MembershipsResponse": {},
+  "OrganizationApiKeysResponse": {},
+  "MembershipDeletionResponse": {},
+  "OrganizationProjectsResponse": {},
+  "MembershipResponse": {},
+  "OrganizationProject": {},
+  "DeleteMembershipRequest": {},
+  "OrganizationApiKey": {},
+  "RawDatasetItemsClient": {
+    "__init__": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "id"
+    ],
+    "list": [
+      "self"
+    ],
+    "delete": [
+      "self",
+      "id"
+    ]
+  },
+  "AsyncRawDatasetItemsClient": {
+    "__init__": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "id"
+    ],
+    "list": [
+      "self"
+    ],
+    "delete": [
+      "self",
+      "id"
+    ]
+  },
+  "DatasetItemsClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "id"
+    ],
+    "list": [
+      "self"
+    ],
+    "delete": [
+      "self",
+      "id"
+    ]
+  },
+  "AsyncDatasetItemsClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "id"
+    ],
+    "list": [
+      "self"
+    ],
+    "delete": [
+      "self",
+      "id"
+    ]
+  },
+  "CreateDatasetItemRequest": {},
+  "DeleteDatasetItemResponse": {},
+  "PaginatedDatasetItems": {}
+}
