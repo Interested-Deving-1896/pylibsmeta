@@ -1,0 +1,1275 @@
+{
+  "format_json": [
+    "data"
+  ],
+  "format_list": [
+    "items",
+    "title"
+  ],
+  "format_project_summary": [
+    "summary"
+  ],
+  "format_run_summary": [
+    "summary"
+  ],
+  "format_metric_values": [
+    "values"
+  ],
+  "format_system_metrics": [
+    "metrics"
+  ],
+  "format_system_metric_names": [
+    "names"
+  ],
+  "format_snapshot": [
+    "snapshot"
+  ],
+  "format_alerts": [
+    "alerts"
+  ],
+  "error_exit": [
+    "message",
+    "code"
+  ],
+  "logger": [],
+  "AlertLevel": {
+    "INFO": [],
+    "WARN": [],
+    "ERROR": []
+  },
+  "ALERT_LEVEL_ORDER": [],
+  "ALERT_COLORS": [],
+  "RESET_COLOR": [],
+  "LEVEL_EMOJI": [],
+  "format_alert_terminal": [
+    "level",
+    "title",
+    "text",
+    "step"
+  ],
+  "_is_slack_url": [
+    "url"
+  ],
+  "_is_discord_url": [
+    "url"
+  ],
+  "_build_slack_payload": [
+    "level",
+    "title",
+    "text",
+    "project",
+    "run",
+    "step"
+  ],
+  "_build_discord_payload": [
+    "level",
+    "title",
+    "text",
+    "project",
+    "run",
+    "step"
+  ],
+  "_build_generic_payload": [
+    "level",
+    "title",
+    "text",
+    "project",
+    "run",
+    "step",
+    "timestamp"
+  ],
+  "parse_alert_level": [
+    "level"
+  ],
+  "resolve_webhook_min_level": [
+    "webhook_min_level"
+  ],
+  "should_send_webhook": [
+    "level",
+    "webhook_min_level"
+  ],
+  "send_webhook": [
+    "url",
+    "level",
+    "title",
+    "text",
+    "project",
+    "run",
+    "step",
+    "timestamp"
+  ],
+  "RESERVED_KEYS": [],
+  "TRACKIO_LOGO_DIR": [],
+  "get_logo_urls": [],
+  "order_metrics_by_plot_preference": [
+    "metrics"
+  ],
+  "persistent_storage_enabled": [],
+  "_get_trackio_dir": [],
+  "TRACKIO_DIR": [],
+  "MEDIA_DIR": [],
+  "get_or_create_project_hash": [
+    "project"
+  ],
+  "generate_readable_name": [
+    "used_names",
+    "space_id"
+  ],
+  "is_in_notebook": [],
+  "block_main_thread_until_keyboard_interrupt": [],
+  "simplify_column_names": [
+    "columns"
+  ],
+  "print_dashboard_instructions": [
+    "project"
+  ],
+  "preprocess_space_and_dataset_ids": [
+    "space_id",
+    "dataset_id",
+    "bucket_id"
+  ],
+  "fibo": [],
+  "format_timestamp": [
+    "timestamp_str"
+  ],
+  "DEFAULT_COLOR_PALETTE": [],
+  "get_color_palette": [],
+  "get_color_mapping": [
+    "runs",
+    "smoothing",
+    "color_palette"
+  ],
+  "downsample": [
+    "df",
+    "x",
+    "y",
+    "color",
+    "x_lim"
+  ],
+  "sort_metrics_by_prefix": [
+    "metrics"
+  ],
+  "group_metrics_by_prefix": [
+    "metrics"
+  ],
+  "get_sync_status": [
+    "scheduler"
+  ],
+  "generate_share_url": [
+    "project",
+    "metrics",
+    "selected_runs",
+    "hide_headers"
+  ],
+  "generate_embed_code": [
+    "project",
+    "metrics",
+    "selected_runs",
+    "hide_headers"
+  ],
+  "serialize_values": [
+    "metrics"
+  ],
+  "deserialize_values": [
+    "metrics"
+  ],
+  "get_full_url": [
+    "base_url",
+    "project",
+    "write_token",
+    "footer"
+  ],
+  "embed_url_in_notebook": [
+    "url"
+  ],
+  "to_json_safe": [
+    "obj"
+  ],
+  "get_space": [],
+  "ordered_subset": [
+    "items",
+    "subset"
+  ],
+  "_get_default_namespace": [],
+  "create_bucket_if_not_exists": [
+    "bucket_id",
+    "private"
+  ],
+  "_list_bucket_file_paths": [
+    "bucket_id",
+    "prefix"
+  ],
+  "download_bucket_to_trackio_dir": [
+    "bucket_id"
+  ],
+  "upload_project_to_bucket": [
+    "project",
+    "bucket_id"
+  ],
+  "_download_db_from_bucket": [
+    "project",
+    "bucket_id",
+    "dest_path"
+  ],
+  "_local_db_has_data": [
+    "project"
+  ],
+  "_export_and_upload_static": [
+    "project",
+    "dest_bucket_id",
+    "db_path",
+    "media_dir"
+  ],
+  "_copy_project_media_between_buckets": [
+    "source_bucket_id",
+    "dest_bucket_id",
+    "project"
+  ],
+  "upload_project_to_bucket_for_static": [
+    "project",
+    "bucket_id"
+  ],
+  "export_from_bucket_for_static": [
+    "source_bucket_id",
+    "dest_bucket_id",
+    "project"
+  ],
+  "FRONTEND_DIR": [],
+  "ASSETS_DIR": [],
+  "_logger": [],
+  "_SPA_SEGMENTS": [],
+  "mount_frontend": [
+    "app"
+  ],
+  "Histogram": {
+    "TYPE": [],
+    "__init__": [
+      "self",
+      "sequence",
+      "np_histogram",
+      "num_bins"
+    ],
+    "_to_dict": [
+      "self"
+    ]
+  },
+  "import_csv": [
+    "csv_path",
+    "project",
+    "name",
+    "space_id",
+    "dataset_id",
+    "private",
+    "force"
+  ],
+  "import_tf_events": [
+    "log_dir",
+    "project",
+    "name",
+    "space_id",
+    "dataset_id",
+    "private",
+    "force"
+  ],
+  "DB_EXT": [],
+  "_JOURNAL_MODE_WHITELIST": [],
+  "_configure_sqlite_pragmas": [
+    "conn"
+  ],
+  "ProcessLock": {
+    "__init__": [
+      "self",
+      "lockfile_path"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ]
+  },
+  "SQLiteStorage": {
+    "_dataset_import_attempted": [],
+    "_scheduler_lock": [],
+    "_get_connection": [
+      "db_path"
+    ],
+    "_get_process_lock": [
+      "project"
+    ],
+    "get_project_db_filename": [
+      "project"
+    ],
+    "get_project_db_path": [
+      "project"
+    ],
+    "init_db": [
+      "project"
+    ],
+    "_flatten_json_column": [
+      "df",
+      "col"
+    ],
+    "_read_table": [
+      "db_path",
+      "table"
+    ],
+    "_flatten_and_write_parquet": [
+      "db_path",
+      "table",
+      "json_col",
+      "parquet_path"
+    ],
+    "export_to_parquet": [],
+    "export_for_static_space": [
+      "project",
+      "output_dir",
+      "db_path_override"
+    ],
+    "_cleanup_wal_sidecars": [
+      "db_path"
+    ],
+    "import_from_parquet": [],
+    "get_scheduler": [],
+    "log": [
+      "project",
+      "run",
+      "metrics",
+      "step"
+    ],
+    "bulk_log": [
+      "project",
+      "run",
+      "metrics_list",
+      "steps",
+      "timestamps",
+      "config",
+      "log_ids",
+      "space_id"
+    ],
+    "bulk_log_system": [
+      "project",
+      "run",
+      "metrics_list",
+      "timestamps",
+      "log_ids",
+      "space_id"
+    ],
+    "bulk_alert": [
+      "project",
+      "run",
+      "titles",
+      "texts",
+      "levels",
+      "steps",
+      "timestamps",
+      "alert_ids"
+    ],
+    "get_alerts": [
+      "project",
+      "run_name",
+      "level",
+      "since"
+    ],
+    "get_alert_count": [
+      "project"
+    ],
+    "get_system_logs": [
+      "project",
+      "run"
+    ],
+    "get_all_system_metrics_for_run": [
+      "project",
+      "run"
+    ],
+    "has_system_metrics": [
+      "project"
+    ],
+    "get_log_count": [
+      "project",
+      "run"
+    ],
+    "get_last_step": [
+      "project",
+      "run"
+    ],
+    "get_logs": [
+      "project",
+      "run",
+      "max_points"
+    ],
+    "load_from_dataset": [],
+    "_ensure_hub_loaded": [],
+    "get_projects": [],
+    "get_runs": [
+      "project"
+    ],
+    "get_max_steps_for_runs": [
+      "project"
+    ],
+    "get_max_step_for_run": [
+      "project",
+      "run"
+    ],
+    "get_run_config": [
+      "project",
+      "run"
+    ],
+    "delete_run": [
+      "project",
+      "run"
+    ],
+    "_update_media_paths": [
+      "obj",
+      "old_prefix",
+      "new_prefix"
+    ],
+    "_rewrite_metrics_rows": [
+      "metrics_rows",
+      "new_run_name",
+      "old_prefix",
+      "new_prefix"
+    ],
+    "_move_media_dir": [
+      "source",
+      "target"
+    ],
+    "rename_run": [
+      "project",
+      "old_name",
+      "new_name"
+    ],
+    "move_run": [
+      "project",
+      "run",
+      "new_project"
+    ],
+    "get_all_run_configs": [
+      "project"
+    ],
+    "get_metric_values": [
+      "project",
+      "run",
+      "metric_name",
+      "step",
+      "around_step",
+      "at_time",
+      "window"
+    ],
+    "get_snapshot": [
+      "project",
+      "run",
+      "step",
+      "around_step",
+      "at_time",
+      "window"
+    ],
+    "get_all_metrics_for_run": [
+      "project",
+      "run"
+    ],
+    "_get_metric_names": [
+      "project",
+      "run",
+      "table",
+      "exclude_keys"
+    ],
+    "set_project_metadata": [
+      "project",
+      "key",
+      "value"
+    ],
+    "get_project_metadata": [
+      "project",
+      "key"
+    ],
+    "get_space_id": [
+      "project"
+    ],
+    "has_pending_data": [
+      "project"
+    ],
+    "get_pending_logs": [
+      "project"
+    ],
+    "clear_pending_logs": [
+      "project",
+      "metric_ids"
+    ],
+    "get_pending_system_logs": [
+      "project"
+    ],
+    "_get_pending": [
+      "project",
+      "table",
+      "extra_fields",
+      "include_config"
+    ],
+    "clear_pending_system_logs": [
+      "project",
+      "metric_ids"
+    ],
+    "_clear_pending": [
+      "project",
+      "table",
+      "ids"
+    ],
+    "get_pending_uploads": [
+      "project"
+    ],
+    "clear_pending_uploads": [
+      "project",
+      "upload_ids"
+    ],
+    "add_pending_upload": [
+      "project",
+      "space_id",
+      "run_name",
+      "step",
+      "file_path",
+      "relative_path"
+    ],
+    "get_all_logs_for_sync": [
+      "project"
+    ],
+    "get_all_system_logs_for_sync": [
+      "project"
+    ],
+    "_get_all_for_sync": [
+      "project",
+      "table",
+      "order_by",
+      "extra_fields",
+      "include_config"
+    ]
+  },
+  "_get_space": [
+    "args"
+  ],
+  "_get_remote": [
+    "args"
+  ],
+  "_handle_status": [],
+  "_handle_sync": [
+    "args"
+  ],
+  "_extract_reports": [
+    "run",
+    "logs",
+    "report_name"
+  ],
+  "main": [],
+  "_handle_skills_add": [
+    "args"
+  ],
+  "SPACE_HOST_URL": [],
+  "SPACE_URL": [],
+  "_BOLD_ORANGE": [],
+  "_RESET": [],
+  "raise_if_space_is_frozen_for_logging": [
+    "space_id"
+  ],
+  "_readme_linked_hub_yaml": [
+    "dataset_id"
+  ],
+  "_SPACE_APP_PY": [],
+  "_retry_hf_write": [
+    "op_name",
+    "fn",
+    "retries",
+    "initial_delay"
+  ],
+  "_get_space_volumes": [
+    "space_id"
+  ],
+  "_get_source_install_dependencies": [],
+  "_is_trackio_installed_from_source": [],
+  "deploy_as_space": [
+    "space_id",
+    "space_storage",
+    "dataset_id",
+    "bucket_id",
+    "private"
+  ],
+  "create_space_if_not_exists": [
+    "space_id",
+    "space_storage",
+    "dataset_id",
+    "bucket_id",
+    "private"
+  ],
+  "_wait_until_space_running": [
+    "space_id",
+    "timeout"
+  ],
+  "wait_until_space_exists": [
+    "space_id"
+  ],
+  "upload_db_to_space": [
+    "project",
+    "space_id",
+    "force"
+  ],
+  "SYNC_BATCH_SIZE": [],
+  "sync_incremental": [
+    "project",
+    "space_id",
+    "private",
+    "pending_only"
+  ],
+  "upload_dataset_for_static": [
+    "project",
+    "dataset_id",
+    "private"
+  ],
+  "deploy_as_static_space": [
+    "space_id",
+    "dataset_id",
+    "project",
+    "bucket_id",
+    "private",
+    "hf_token"
+  ],
+  "sync": [
+    "project",
+    "space_id",
+    "private",
+    "force",
+    "run_in_background",
+    "sdk",
+    "dataset_id",
+    "bucket_id"
+  ],
+  "_get_source_bucket": [
+    "space_id"
+  ],
+  "freeze": [
+    "space_id",
+    "project",
+    "new_space_id",
+    "private",
+    "bucket_id"
+  ],
+  "BATCH_SEND_INTERVAL": [],
+  "MAX_BACKOFF": [],
+  "Run": {
+    "__init__": [
+      "self",
+      "url",
+      "project",
+      "client",
+      "name",
+      "group",
+      "config",
+      "space_id",
+      "auto_log_gpu",
+      "gpu_log_interval",
+      "webhook_url",
+      "webhook_min_level"
+    ],
+    "_get_username": [
+      "self"
+    ],
+    "_local_batch_sender": [
+      "self"
+    ],
+    "_write_logs_to_sqlite": [
+      "self",
+      "logs"
+    ],
+    "_write_system_logs_to_sqlite": [
+      "self",
+      "logs"
+    ],
+    "_write_alerts_to_sqlite": [
+      "self",
+      "alerts"
+    ],
+    "_batch_sender": [
+      "self"
+    ],
+    "_persist_logs_locally": [
+      "self",
+      "logs"
+    ],
+    "_persist_system_logs_locally": [
+      "self",
+      "logs"
+    ],
+    "_persist_uploads_locally": [
+      "self",
+      "uploads"
+    ],
+    "_flush_local_buffer": [
+      "self"
+    ],
+    "_init_client_background": [
+      "self"
+    ],
+    "_queue_upload": [
+      "self",
+      "file_path",
+      "step",
+      "relative_path",
+      "use_run_name"
+    ],
+    "_save_upload_locally": [
+      "self",
+      "file_path",
+      "step",
+      "relative_path",
+      "use_run_name"
+    ],
+    "_process_media": [
+      "self",
+      "value",
+      "step"
+    ],
+    "_scan_and_queue_media_uploads": [
+      "self",
+      "table_dict",
+      "step"
+    ],
+    "_ensure_sender_alive": [
+      "self"
+    ],
+    "log": [
+      "self",
+      "metrics",
+      "step"
+    ],
+    "alert": [
+      "self",
+      "title",
+      "text",
+      "level",
+      "step",
+      "webhook_url"
+    ],
+    "log_system": [
+      "self",
+      "metrics"
+    ],
+    "finish": [
+      "self"
+    ]
+  },
+  "PSUTIL_AVAILABLE": [],
+  "_monitor_lock": [],
+  "_ensure_psutil": [],
+  "is_apple_silicon": [],
+  "get_gpu_info": [],
+  "apple_gpu_available": [],
+  "collect_apple_metrics": [],
+  "AppleGpuMonitor": {
+    "__init__": [
+      "self",
+      "run",
+      "interval"
+    ],
+    "start": [
+      "self"
+    ],
+    "stop": [
+      "self"
+    ],
+    "_monitor_loop": [
+      "self"
+    ]
+  },
+  "log_apple_gpu": [
+    "run"
+  ],
+  "DummyCommitSchedulerLock": {
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exception_type",
+      "exception_value",
+      "exception_traceback"
+    ]
+  },
+  "DummyCommitScheduler": {
+    "__init__": [
+      "self"
+    ],
+    "trigger": [
+      "self"
+    ]
+  },
+  "RemoteClient": {
+    "__init__": [
+      "self",
+      "space",
+      "hf_token"
+    ],
+    "predict": [
+      "self"
+    ]
+  },
+  "Markdown": {
+    "TYPE": [],
+    "__init__": [
+      "self",
+      "text"
+    ],
+    "_to_dict": [
+      "self"
+    ]
+  },
+  "Table": {
+    "TYPE": [],
+    "__init__": [
+      "self",
+      "columns",
+      "data",
+      "dataframe",
+      "rows",
+      "optional",
+      "allow_mixed_types",
+      "log_mode"
+    ],
+    "_has_media_objects": [
+      "self",
+      "dataframe"
+    ],
+    "_process_data": [
+      "self",
+      "project",
+      "run",
+      "step"
+    ],
+    "to_display_format": [
+      "table_data"
+    ],
+    "_to_dict": [
+      "self",
+      "project",
+      "run",
+      "step"
+    ]
+  },
+  "HfApi": [],
+  "_flush_lock": [],
+  "_FLUSH_INTERVAL": [],
+  "_MAX_RETRIES": [],
+  "_enqueue_write": [
+    "kind",
+    "payload"
+  ],
+  "_ensure_flush_thread": [],
+  "_flush_loop": [],
+  "write_token": [],
+  "OAUTH_CALLBACK_PATH": [],
+  "OAUTH_START_PATH": [],
+  "_hf_access_token": [
+    "request"
+  ],
+  "_oauth_redirect_uri": [
+    "request"
+  ],
+  "TrackioServer": {
+    "close": [
+      "self",
+      "verbose"
+    ]
+  },
+  "_OAUTH_STATE_TTL": [],
+  "_OAUTH_SESSION_TTL": [],
+  "_evict_expired_oauth": [],
+  "oauth_hf_start": [
+    "request"
+  ],
+  "oauth_hf_callback": [
+    "request"
+  ],
+  "oauth_logout": [
+    "request"
+  ],
+  "check_hf_token_has_write_access": [
+    "hf_token"
+  ],
+  "_OAUTH_WRITE_CACHE_TTL": [],
+  "check_oauth_token_has_write_access": [
+    "oauth_token"
+  ],
+  "check_write_access": [
+    "request",
+    "token"
+  ],
+  "assert_can_mutate_runs": [
+    "request"
+  ],
+  "get_run_mutation_status": [
+    "request"
+  ],
+  "bulk_upload_media": [
+    "uploads",
+    "hf_token"
+  ],
+  "log": [
+    "project",
+    "run",
+    "metrics",
+    "step",
+    "hf_token"
+  ],
+  "bulk_log": [
+    "logs",
+    "hf_token"
+  ],
+  "bulk_log_system": [
+    "logs",
+    "hf_token"
+  ],
+  "bulk_alert": [
+    "alerts",
+    "hf_token"
+  ],
+  "get_alerts": [
+    "project",
+    "run",
+    "level",
+    "since"
+  ],
+  "get_metric_values": [
+    "project",
+    "run",
+    "metric_name",
+    "step",
+    "around_step",
+    "at_time",
+    "window"
+  ],
+  "get_runs_for_project": [
+    "project"
+  ],
+  "get_metrics_for_run": [
+    "project",
+    "run"
+  ],
+  "filter_metrics_by_regex": [
+    "metrics",
+    "filter_pattern"
+  ],
+  "get_all_projects": [],
+  "get_project_summary": [
+    "project"
+  ],
+  "get_run_summary": [
+    "project",
+    "run"
+  ],
+  "get_system_metrics_for_run": [
+    "project",
+    "run"
+  ],
+  "get_system_logs": [
+    "project",
+    "run"
+  ],
+  "get_snapshot": [
+    "project",
+    "run",
+    "step",
+    "around_step",
+    "at_time",
+    "window"
+  ],
+  "get_logs": [
+    "project",
+    "run"
+  ],
+  "get_settings": [],
+  "get_project_files": [
+    "project"
+  ],
+  "delete_run": [
+    "request",
+    "project",
+    "run"
+  ],
+  "rename_run": [
+    "request",
+    "project",
+    "old_name",
+    "new_name"
+  ],
+  "force_sync": [],
+  "CSS": [],
+  "HEAD": [],
+  "make_trackio_server": [],
+  "PYNVML_AVAILABLE": [],
+  "_nvml_initialized": [],
+  "_nvml_lock": [],
+  "_ensure_pynvml": [],
+  "_init_nvml": [],
+  "get_gpu_count": [],
+  "gpu_available": [],
+  "reset_energy_baseline": [],
+  "collect_gpu_metrics": [
+    "device"
+  ],
+  "GpuMonitor": {
+    "__init__": [
+      "self",
+      "run",
+      "interval"
+    ],
+    "start": [
+      "self"
+    ],
+    "stop": [
+      "self"
+    ],
+    "_monitor_loop": [
+      "self"
+    ]
+  },
+  "log_gpu": [
+    "run",
+    "device"
+  ],
+  "Runs": {
+    "__init__": [
+      "self",
+      "project"
+    ],
+    "_load_runs": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "index"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "Api": {
+    "runs": [
+      "self",
+      "project"
+    ],
+    "alerts": [
+      "self",
+      "project",
+      "run",
+      "level",
+      "since"
+    ]
+  },
+  "LogEntry": {},
+  "SystemLogEntry": {},
+  "AlertEntry": {},
+  "UploadEntry": {},
+  "_FileToUpload": {},
+  "CommitScheduler": {
+    "__init__": [
+      "self"
+    ],
+    "stop": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_value",
+      "traceback"
+    ],
+    "_run_scheduler": [
+      "self"
+    ],
+    "trigger": [
+      "self"
+    ],
+    "_push_to_hub": [
+      "self"
+    ],
+    "push_to_hub": [
+      "self"
+    ]
+  },
+  "__version__": [],
+  "__all__": [],
+  "Image": [],
+  "Video": [],
+  "Audio": [],
+  "config": [],
+  "_atexit_registered": [],
+  "_cleanup_current_run": [],
+  "init": [
+    "project",
+    "name",
+    "group",
+    "space_id",
+    "space_storage",
+    "dataset_id",
+    "bucket_id",
+    "config",
+    "resume",
+    "settings",
+    "private",
+    "embed",
+    "auto_log_gpu",
+    "gpu_log_interval",
+    "webhook_url",
+    "webhook_min_level"
+  ],
+  "log_system": [
+    "metrics"
+  ],
+  "finish": [],
+  "alert": [
+    "title",
+    "text",
+    "level",
+    "webhook_url"
+  ],
+  "delete_project": [
+    "project",
+    "force"
+  ],
+  "save": [
+    "glob_str",
+    "project"
+  ],
+  "show": [
+    "project"
+  ],
+  "check_path": [
+    "file_path"
+  ],
+  "check_ffmpeg_installed": [],
+  "get_project_media_path": [
+    "project",
+    "run",
+    "step",
+    "relative_path"
+  ],
+  "TrackioMedia": {
+    "__init_subclass__": [
+      "cls"
+    ],
+    "__init__": [
+      "self",
+      "value",
+      "caption"
+    ],
+    "_file_extension": [
+      "self"
+    ],
+    "_get_relative_file_path": [
+      "self"
+    ],
+    "_get_absolute_file_path": [
+      "self"
+    ],
+    "_save": [
+      "self",
+      "project",
+      "run",
+      "step"
+    ],
+    "_save_media": [
+      "self",
+      "file_path"
+    ],
+    "_to_dict": [
+      "self"
+    ]
+  },
+  "TrackioImageSourceType": [],
+  "TrackioImage": {
+    "TYPE": [],
+    "__init__": [
+      "self",
+      "value",
+      "caption"
+    ],
+    "_as_pil": [
+      "self"
+    ],
+    "_save_media": [
+      "self",
+      "file_path"
+    ]
+  },
+  "TrackioVideoSourceType": [],
+  "TrackioVideoFormatType": [],
+  "VideoCodec": [],
+  "TrackioVideo": {
+    "TYPE": [],
+    "__init__": [
+      "self",
+      "value",
+      "caption",
+      "fps",
+      "format"
+    ],
+    "_check_array_format": [
+      "video"
+    ],
+    "write_video": [
+      "file_path",
+      "video",
+      "fps",
+      "codec"
+    ],
+    "_codec": [
+      "self"
+    ],
+    "_save_media": [
+      "self",
+      "file_path"
+    ],
+    "_process_ndarray": [
+      "value"
+    ],
+    "_tile_batched_videos": [
+      "video"
+    ]
+  },
+  "SUPPORTED_FORMATS": [],
+  "AudioFormatType": [],
+  "TrackioAudioSourceType": [],
+  "TrackioAudio": {
+    "TYPE": [],
+    "__init__": [
+      "self",
+      "value",
+      "caption",
+      "sample_rate",
+      "format"
+    ],
+    "_save_media": [
+      "self",
+      "file_path"
+    ],
+    "ensure_int16_pcm": [
+      "data"
+    ],
+    "write_audio": [
+      "data",
+      "sample_rate",
+      "filename",
+      "format"
+    ]
+  },
+  "write_audio": [],
+  "write_video": []
+}
