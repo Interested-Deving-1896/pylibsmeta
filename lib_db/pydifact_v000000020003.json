@@ -1,0 +1,683 @@
+{
+  "get_syntax_release_version": [
+    "version"
+  ],
+  "Token": {
+    "__init__": [
+      "self",
+      "token_type",
+      "value"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ]
+  },
+  "T": [],
+  "AbstractSegmentsContainer": {
+    "__init__": [
+      "self",
+      "extra_header_elements",
+      "characters"
+    ],
+    "from_str": [
+      "cls",
+      "string",
+      "parser",
+      "characters"
+    ],
+    "from_segments": [
+      "cls",
+      "segments",
+      "characters"
+    ],
+    "get_segments": [
+      "self",
+      "name",
+      "predicate"
+    ],
+    "get_segment": [
+      "self",
+      "name",
+      "predicate"
+    ],
+    "split_by": [
+      "self",
+      "start_segment_tag"
+    ],
+    "add_segments": [
+      "self",
+      "segments"
+    ],
+    "add_segment": [
+      "self",
+      "segment"
+    ],
+    "get_header_segment": [
+      "self"
+    ],
+    "get_footer_segment": [
+      "self"
+    ],
+    "serialize": [
+      "self",
+      "break_lines"
+    ],
+    "validate": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "RawSegmentCollection": {
+    "get_header_segment": [
+      "self"
+    ],
+    "get_footer_segment": [
+      "self"
+    ],
+    "validate": [
+      "self"
+    ]
+  },
+  "Message": {
+    "HEADER_TAG": [],
+    "FOOTER_TAG": [],
+    "__init__": [
+      "self",
+      "reference_number",
+      "identifier"
+    ],
+    "type": [
+      "self"
+    ],
+    "version": [
+      "self"
+    ],
+    "get_header_segment": [
+      "self"
+    ],
+    "get_footer_segment": [
+      "self"
+    ],
+    "validate": [
+      "self"
+    ]
+  },
+  "Interchange": {
+    "HEADER_TAG": [],
+    "FOOTER_TAG": [],
+    "__init__": [
+      "self",
+      "sender",
+      "recipient",
+      "control_reference",
+      "syntax_identifier",
+      "timestamp"
+    ],
+    "get_header_segment": [
+      "self"
+    ],
+    "get_footer_segment": [
+      "self"
+    ],
+    "get_messages": [
+      "self"
+    ],
+    "add_message": [
+      "self",
+      "message"
+    ],
+    "from_file": [
+      "cls",
+      "file",
+      "encoding",
+      "parser"
+    ],
+    "from_segments": [
+      "cls",
+      "segments",
+      "characters"
+    ],
+    "add_segment": [
+      "self",
+      "segment"
+    ],
+    "validate": [
+      "self"
+    ]
+  },
+  "logger": [],
+  "TokenIterator": {
+    "__init__": [
+      "self",
+      "iterable"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__next__": [
+      "self"
+    ],
+    "push_back": [
+      "self",
+      "token"
+    ]
+  },
+  "Parser": {
+    "__init__": [
+      "self",
+      "factory",
+      "characters",
+      "directory"
+    ],
+    "parse": [
+      "self",
+      "message",
+      "characters"
+    ],
+    "get_control_characters": [
+      "message",
+      "characters"
+    ],
+    "convert_tokens_to_raw_segments": [
+      "self",
+      "tokens"
+    ],
+    "convert_raw_segment_to_segment": [
+      "self",
+      "raw_segment",
+      "directory"
+    ]
+  },
+  "_load_segments_xml": [
+    "directory"
+  ],
+  "Segment": {
+    "__omitted__": [],
+    "tag": [],
+    "__init_subclass__": [
+      "cls"
+    ],
+    "__init__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "__setitem__": [
+      "self",
+      "key",
+      "value"
+    ],
+    "validate": [
+      "self",
+      "syntax_version",
+      "directory"
+    ]
+  },
+  "SegmentFactory": {
+    "create_segment": [
+      "name"
+    ]
+  },
+  "Serializer": {
+    "__init__": [
+      "self",
+      "characters"
+    ],
+    "serialize": [
+      "self",
+      "segments",
+      "with_una_header",
+      "break_lines"
+    ],
+    "escape": [
+      "self",
+      "string"
+    ]
+  },
+  "Tokenizer": {
+    "__init__": [
+      "self"
+    ],
+    "get_tokens": [
+      "self",
+      "message",
+      "characters"
+    ],
+    "read_next_char": [
+      "self"
+    ],
+    "get_next_char": [
+      "self"
+    ],
+    "get_next_token": [
+      "self"
+    ],
+    "is_control_character": [
+      "self"
+    ],
+    "store_current_char_and_read_next": [
+      "self"
+    ],
+    "extract_stored_chars": [
+      "self"
+    ],
+    "end_of_message": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "EDI_DEFAULT_VERSION": [],
+  "EDI_DEFAULT_DIRECTORY": [],
+  "EDI_DEFAULT_SYNTAX": [],
+  "Element": [],
+  "Elements": [],
+  "M": [],
+  "C": [],
+  "service_segments": [],
+  "__version__": [],
+  "__all__": [],
+  "EDISyntaxError": {
+    "__init__": [
+      "self",
+      "message",
+      "line_number",
+      "column_number"
+    ]
+  },
+  "ValidationError": {},
+  "MissingImplementationWarning": {},
+  "Characters": {
+    "__init__": [
+      "self",
+      "component_separator",
+      "data_separator",
+      "decimal_point",
+      "escape_character",
+      "reserved",
+      "segment_terminator"
+    ],
+    "from_str": [
+      "cls",
+      "string"
+    ],
+    "with_control_character": [
+      "self",
+      "cc_type",
+      "char"
+    ],
+    "service_string_advice": [
+      "self"
+    ],
+    "escaped_syntax_dic": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__len__": [
+      "self"
+    ]
+  },
+  "allowed_alphanum_chars": [],
+  "is_edifact_alphanum": [
+    "s"
+  ],
+  "assert_a": [
+    "s",
+    "length",
+    "message"
+  ],
+  "assert_a_max": [
+    "s",
+    "length",
+    "message"
+  ],
+  "assert_n": [
+    "s",
+    "length",
+    "message"
+  ],
+  "assert_n_max": [
+    "s",
+    "length",
+    "message"
+  ],
+  "assert_an": [
+    "s",
+    "length",
+    "message"
+  ],
+  "assert_an_max": [
+    "s",
+    "length",
+    "message"
+  ],
+  "assert_format": [
+    "s",
+    "fmt_str",
+    "message"
+  ],
+  "Code": {},
+  "DataElement": {
+    "__omitted__": [],
+    "codes": [],
+    "__init__": [
+      "self",
+      "value"
+    ],
+    "validate": [
+      "self",
+      "mandatory",
+      "repr"
+    ]
+  },
+  "CompositeDataElement": {
+    "__init__": [
+      "self",
+      "elements"
+    ],
+    "validate": [
+      "self",
+      "mandatory",
+      "repeat"
+    ]
+  },
+  "DataElementFactory": {
+    "create_data_element": [
+      "code",
+      "value",
+      "validate",
+      "version"
+    ]
+  },
+  "SyntaxVersionNumber": {
+    "code": [],
+    "repr": [],
+    "title": [],
+    "codes": []
+  },
+  "UNASegment": {
+    "version": []
+  },
+  "UNBSegment": {
+    "version": []
+  },
+  "partner_identification_codes": [],
+  "ServiceStringAdvice": {
+    "code": [],
+    "repr": [],
+    "title": [],
+    "description": []
+  },
+  "SyntaxIdentifier": {
+    "code": [],
+    "title": [],
+    "repr": [],
+    "codes": []
+  },
+  "SenderIdentification": {
+    "code": [],
+    "repr": [],
+    "title": []
+  },
+  "IdentificationCodeQualifier": {
+    "code": [],
+    "repr": [],
+    "title": [],
+    "description": [],
+    "codes": []
+  },
+  "AddressForReverseRouting": {
+    "code": [],
+    "repr": [],
+    "title": []
+  },
+  "RecipientIdentification": {
+    "code": [],
+    "repr": [],
+    "title": [],
+    "description": []
+  },
+  "RoutingAddress": {
+    "code": [],
+    "repr": [],
+    "title": [],
+    "description": []
+  },
+  "Date": {
+    "code": [],
+    "repr": [],
+    "title": [],
+    "description": []
+  },
+  "Time": {
+    "code": [],
+    "repr": [],
+    "title": [],
+    "description": []
+  },
+  "InterchangeControlReference": {
+    "code": [],
+    "repr": [],
+    "title": [],
+    "description": []
+  },
+  "RecipientReferencePassword": {
+    "code": [],
+    "repr": [],
+    "title": [],
+    "description": []
+  },
+  "RecipientReferencePasswordQualifier": {
+    "code": [],
+    "repr": [],
+    "title": [],
+    "description": []
+  },
+  "ApplicationReference": {
+    "code": [],
+    "repr": [],
+    "title": [],
+    "description": []
+  },
+  "ProcessingPriorityCode": {
+    "code": [],
+    "repr": [],
+    "title": [],
+    "description": []
+  },
+  "AcknowledgementRequest": {
+    "code": [],
+    "repr": [],
+    "title": [],
+    "description": []
+  },
+  "CommunicationAgreementID": {
+    "code": [],
+    "repr": [],
+    "title": [],
+    "description": []
+  },
+  "TestIndicator": {
+    "code": [],
+    "repr": [],
+    "title": [],
+    "description": []
+  },
+  "NameAndAddressLine": {
+    "code": [],
+    "desc": [],
+    "repr": []
+  },
+  "PartyName": {
+    "code": [],
+    "desc": [],
+    "repr": []
+  },
+  "PartyNameFormat": {
+    "code": [],
+    "desc": [],
+    "repr": []
+  },
+  "CSyntaxIdentifier": {
+    "code": [],
+    "title": [],
+    "schema": []
+  },
+  "PartyNameComposite": {
+    "code": [],
+    "desc": [],
+    "schema": []
+  },
+  "PartyIdentificationDetails": {
+    "code": [],
+    "schema": []
+  },
+  "CInterchangeSender": {
+    "code": [],
+    "title": [],
+    "schema": []
+  },
+  "CInterchangeRecipient": {
+    "code": [],
+    "title": [],
+    "schema": []
+  },
+  "CDateAndTimeOfPreparation": {
+    "code": [],
+    "schema": []
+  },
+  "CRecipientsReference": {
+    "code": [],
+    "schema": []
+  },
+  "InterchangeSenderInternalIdentification": {
+    "code": [],
+    "repr": [],
+    "title": []
+  },
+  "InterchangeRecipientIdentification": {
+    "code": [],
+    "repr": [],
+    "title": []
+  },
+  "InterchangeRecipientInternalIdentification": {
+    "code": [],
+    "repr": [],
+    "title": []
+  },
+  "InterchangeAgreementIdentifier": {
+    "code": [],
+    "repr": [],
+    "title": [],
+    "description": []
+  },
+  "InterchangeSenderInternalSubIdentification": {
+    "code": [],
+    "repr": [],
+    "title": []
+  },
+  "InterchangeRecipientInternalSubIdentification": {
+    "code": [],
+    "repr": [],
+    "title": []
+  },
+  "ControllingAgency": {
+    "code": [],
+    "repr": []
+  },
+  "MessageVersionNumber": {
+    "code": [],
+    "repr": []
+  },
+  "MessageReleaseNumber": {
+    "code": [],
+    "repr": []
+  },
+  "MessageType": {
+    "code": [],
+    "repr": []
+  },
+  "FirstAndLastTransfer": {
+    "code": [],
+    "repr": []
+  },
+  "SectionIdentification": {
+    "code": [],
+    "repr": []
+  },
+  "Action": {
+    "code": [],
+    "repr": []
+  },
+  "SyntaxError": {
+    "code": [],
+    "repr": []
+  },
+  "MessageTypeSubFunctionIdentification": {
+    "code": [],
+    "repr": []
+  },
+  "CharacterEncoding": {
+    "code": [],
+    "repr": []
+  },
+  "ServiceSegmentTag": {
+    "code": [],
+    "repr": []
+  },
+  "TransferPosition": {
+    "code": [],
+    "repr": []
+  },
+  "DuplicateIndicator": {
+    "code": [],
+    "repr": []
+  },
+  "MessageAuthenticationCodeQualifier": {
+    "code": [],
+    "repr": []
+  },
+  "MessageAuthenticationCode": {
+    "code": [],
+    "repr": []
+  },
+  "ServiceCodeListDirectoryVersionNumber": {
+    "code": [],
+    "repr": []
+  },
+  "CRecipientReferencePassword": {
+    "code": [],
+    "schema": []
+  }
+}
