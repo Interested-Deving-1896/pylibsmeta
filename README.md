@@ -242,3 +242,6 @@ Continuously improving
 <p align="center">
   Built for scalable developer tooling infrastructure.
 </p>
+<p align="center">
+Donate: UQDZc4_R6v2PzTDCEfHAfgBeeP1VcoQaNH49YI2ayqWfyz4m (Toncoin)
+</p>
