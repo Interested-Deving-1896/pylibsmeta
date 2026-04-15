@@ -1,0 +1,2846 @@
+{
+  "assert_callable_with": [
+    "f"
+  ],
+  "get_json": [
+    "obj",
+    "max_depth"
+  ],
+  "sanitize_message": [
+    "msg"
+  ],
+  "get_output_call_ids": [
+    "messages"
+  ],
+  "hash_api_key": [
+    "api_key"
+  ],
+  "_is_retryable_error": [
+    "exc"
+  ],
+  "_predict_step_with_retry": [
+    "agent_loop",
+    "loop_kwargs",
+    "hooks",
+    "max_retries",
+    "base_delay"
+  ],
+  "ComputerAgent": {
+    "__init__": [
+      "self",
+      "model",
+      "tools",
+      "custom_loop",
+      "only_n_most_recent_images",
+      "callbacks",
+      "instructions",
+      "verbosity",
+      "trajectory_dir",
+      "max_retries",
+      "screenshot_delay",
+      "use_prompt_caching",
+      "max_trajectory_budget",
+      "telemetry_enabled",
+      "trust_remote_code",
+      "api_key",
+      "api_base"
+    ],
+    "_resolve_tools": [
+      "self",
+      "tools",
+      "required_type"
+    ],
+    "_initialize_computers": [
+      "self"
+    ],
+    "_process_input": [
+      "self",
+      "input"
+    ],
+    "_process_tools": [
+      "self"
+    ],
+    "_get_tool": [
+      "self",
+      "name"
+    ],
+    "_on_run_start": [
+      "self",
+      "kwargs",
+      "old_items"
+    ],
+    "_on_run_end": [
+      "self",
+      "kwargs",
+      "old_items",
+      "new_items"
+    ],
+    "_on_run_continue": [
+      "self",
+      "kwargs",
+      "old_items",
+      "new_items"
+    ],
+    "_on_llm_start": [
+      "self",
+      "messages"
+    ],
+    "_on_llm_end": [
+      "self",
+      "messages"
+    ],
+    "_on_responses": [
+      "self",
+      "kwargs",
+      "responses"
+    ],
+    "_on_computer_call_start": [
+      "self",
+      "item"
+    ],
+    "_on_computer_call_end": [
+      "self",
+      "item",
+      "result"
+    ],
+    "_on_function_call_start": [
+      "self",
+      "item"
+    ],
+    "_on_function_call_end": [
+      "self",
+      "item",
+      "result"
+    ],
+    "_on_text": [
+      "self",
+      "item"
+    ],
+    "_on_api_start": [
+      "self",
+      "kwargs"
+    ],
+    "_on_api_end": [
+      "self",
+      "kwargs",
+      "result"
+    ],
+    "_on_usage": [
+      "self",
+      "usage"
+    ],
+    "_on_screenshot": [
+      "self",
+      "screenshot",
+      "name"
+    ],
+    "_handle_item": [
+      "self",
+      "item",
+      "computer",
+      "ignore_call_ids"
+    ],
+    "run": [
+      "self",
+      "messages",
+      "stream",
+      "api_key",
+      "api_base"
+    ],
+    "predict_click": [
+      "self",
+      "instruction",
+      "image_b64"
+    ],
+    "get_capabilities": [
+      "self"
+    ],
+    "open": [
+      "self",
+      "port"
+    ]
+  },
+  "random_id": [],
+  "make_input_image_item": [
+    "image_data"
+  ],
+  "make_reasoning_item": [
+    "reasoning"
+  ],
+  "make_output_text_item": [
+    "content"
+  ],
+  "make_function_call_item": [
+    "function_name",
+    "arguments",
+    "call_id"
+  ],
+  "make_click_item": [
+    "x",
+    "y",
+    "button",
+    "call_id"
+  ],
+  "make_double_click_item": [
+    "x",
+    "y",
+    "call_id"
+  ],
+  "make_drag_item": [
+    "path",
+    "call_id"
+  ],
+  "make_keypress_item": [
+    "keys",
+    "call_id"
+  ],
+  "make_move_item": [
+    "x",
+    "y",
+    "call_id"
+  ],
+  "make_screenshot_item": [
+    "call_id"
+  ],
+  "make_scroll_item": [
+    "x",
+    "y",
+    "scroll_x",
+    "scroll_y",
+    "call_id"
+  ],
+  "make_type_item": [
+    "text",
+    "call_id"
+  ],
+  "make_wait_item": [
+    "call_id"
+  ],
+  "make_left_mouse_down_item": [
+    "x",
+    "y",
+    "call_id"
+  ],
+  "make_left_mouse_up_item": [
+    "x",
+    "y",
+    "call_id"
+  ],
+  "make_failed_tool_call_items": [
+    "tool_name",
+    "tool_kwargs",
+    "error_message",
+    "call_id"
+  ],
+  "make_tool_error_item": [
+    "error_message",
+    "call_id"
+  ],
+  "replace_failed_computer_calls_with_function_calls": [
+    "messages"
+  ],
+  "convert_computer_calls_desc2xy": [
+    "responses_items",
+    "desc2xy"
+  ],
+  "convert_computer_calls_xy2desc": [
+    "responses_items",
+    "desc2xy"
+  ],
+  "get_all_element_descriptions": [
+    "responses_items"
+  ],
+  "convert_responses_items_to_completion_messages": [
+    "messages",
+    "allow_images_in_tool_results",
+    "send_multiple_user_images_per_parallel_tool_results",
+    "use_xml_tools"
+  ],
+  "convert_completion_messages_to_responses_items": [
+    "completion_messages"
+  ],
+  "Messages": [],
+  "Tools": [],
+  "AgentResponse": [],
+  "AgentCapability": [],
+  "ToolError": {},
+  "IllegalArgumentError": {},
+  "AgentConfigInfo": {
+    "matches_model": [
+      "self",
+      "model"
+    ]
+  },
+  "Colors": {
+    "RESET": [],
+    "BOLD": [],
+    "DIM": [],
+    "RED": [],
+    "GREEN": [],
+    "YELLOW": [],
+    "BLUE": [],
+    "MAGENTA": [],
+    "CYAN": [],
+    "WHITE": [],
+    "GRAY": [],
+    "BG_RED": [],
+    "BG_GREEN": [],
+    "BG_YELLOW": [],
+    "BG_BLUE": []
+  },
+  "print_colored": [
+    "text",
+    "color",
+    "bold",
+    "dim",
+    "end",
+    "right"
+  ],
+  "print_action": [
+    "action_type",
+    "details",
+    "total_cost"
+  ],
+  "print_welcome": [
+    "model",
+    "agent_loop",
+    "container_name"
+  ],
+  "ainput": [
+    "prompt"
+  ],
+  "chat_loop": [
+    "agent",
+    "model",
+    "container_name",
+    "initial_prompt",
+    "show_usage"
+  ],
+  "main": [],
+  "register_agent": [
+    "models",
+    "priority",
+    "tool_type"
+  ],
+  "get_agent_configs": [],
+  "_strip_cua_prefix": [
+    "model"
+  ],
+  "find_agent_config": [
+    "model"
+  ],
+  "__all__": [],
+  "__version__": [],
+  "logger": [],
+  "GROUNDED_COMPUTER_TOOL_SCHEMA": [],
+  "_prepare_tools_for_grounded": [
+    "tool_schemas"
+  ],
+  "get_last_computer_call_image": [
+    "messages"
+  ],
+  "ComposedGroundedConfig": {
+    "__init__": [
+      "self"
+    ],
+    "predict_step": [
+      "self",
+      "messages",
+      "model",
+      "tools",
+      "max_retries",
+      "stream",
+      "computer_handler",
+      "use_prompt_caching",
+      "_on_api_start",
+      "_on_api_end",
+      "_on_usage",
+      "_on_screenshot"
+    ],
+    "predict_click": [
+      "self",
+      "model",
+      "image_b64",
+      "instruction"
+    ],
+    "get_capabilities": [
+      "self"
+    ]
+  },
+  "_build_nous_system": [
+    "functions"
+  ],
+  "_parse_tool_call_from_text": [
+    "text"
+  ],
+  "_unnormalize_coordinate": [
+    "args",
+    "dims"
+  ],
+  "convert_qwen_tool_args_to_computer_action": [
+    "args"
+  ],
+  "GenericVlmConfig": {
+    "predict_step": [
+      "self",
+      "messages",
+      "model",
+      "tools",
+      "max_retries",
+      "stream",
+      "computer_handler",
+      "use_prompt_caching",
+      "_on_api_start",
+      "_on_api_end",
+      "_on_usage",
+      "_on_screenshot"
+    ],
+    "get_capabilities": [
+      "self"
+    ],
+    "predict_click": [
+      "self",
+      "model",
+      "image_b64",
+      "instruction"
+    ]
+  },
+  "AsyncAgentConfig": {
+    "predict_step": [
+      "self",
+      "messages",
+      "model",
+      "tools",
+      "max_retries",
+      "stream",
+      "computer_handler",
+      "_on_api_start",
+      "_on_api_end",
+      "_on_usage",
+      "_on_screenshot"
+    ],
+    "predict_click": [
+      "self",
+      "model",
+      "image_b64",
+      "instruction"
+    ],
+    "get_capabilities": [
+      "self"
+    ]
+  },
+  "SYSTEM_PROMPT": [],
+  "extract_coordinates": [
+    "raw_string"
+  ],
+  "smart_resize": [
+    "height",
+    "width",
+    "factor",
+    "min_pixels",
+    "max_pixels"
+  ],
+  "GTA1Config": {
+    "__init__": [
+      "self"
+    ],
+    "predict_step": [
+      "self",
+      "messages",
+      "model",
+      "tools",
+      "max_retries",
+      "stream",
+      "computer_handler",
+      "_on_api_start",
+      "_on_api_end",
+      "_on_usage",
+      "_on_screenshot"
+    ],
+    "predict_click": [
+      "self",
+      "model",
+      "image_b64",
+      "instruction"
+    ],
+    "get_capabilities": [
+      "self"
+    ]
+  },
+  "_lazy_import_genai": [],
+  "_data_url_to_bytes": [
+    "data_url"
+  ],
+  "_bytes_image_size": [
+    "img_bytes"
+  ],
+  "_sanitize_for_json": [
+    "obj"
+  ],
+  "_create_gemini_client": [
+    "original_model",
+    "genai",
+    "kwargs"
+  ],
+  "_find_last_user_text": [
+    "messages"
+  ],
+  "_find_last_screenshot": [
+    "messages"
+  ],
+  "_convert_messages_to_gemini_contents": [
+    "messages",
+    "types"
+  ],
+  "_denormalize": [
+    "v",
+    "size"
+  ],
+  "_has_builtin_computer_use": [
+    "model"
+  ],
+  "_build_custom_function_declarations": [
+    "types"
+  ],
+  "_map_gemini_fc_to_computer_call": [
+    "fc",
+    "screen_w",
+    "screen_h"
+  ],
+  "GeminiComputerUseConfig": {
+    "predict_step": [
+      "self",
+      "messages",
+      "model",
+      "tools",
+      "max_retries",
+      "stream",
+      "computer_handler",
+      "use_prompt_caching",
+      "_on_api_start",
+      "_on_api_end",
+      "_on_usage",
+      "_on_screenshot"
+    ],
+    "predict_click": [
+      "self",
+      "model",
+      "image_b64",
+      "instruction"
+    ],
+    "get_capabilities": [
+      "self"
+    ]
+  },
+  "_strip_hf_prefix": [
+    "model"
+  ],
+  "_maybe_smart_resize": [
+    "image",
+    "model"
+  ],
+  "_build_holo_prompt": [
+    "instruction"
+  ],
+  "_parse_click_json": [
+    "output_text"
+  ],
+  "HoloConfig": {
+    "predict_step": [
+      "self",
+      "messages",
+      "model",
+      "tools",
+      "max_retries",
+      "stream",
+      "computer_handler",
+      "_on_api_start",
+      "_on_api_end",
+      "_on_usage",
+      "_on_screenshot"
+    ],
+    "predict_click": [
+      "self",
+      "model",
+      "image_b64",
+      "instruction"
+    ],
+    "get_capabilities": [
+      "self"
+    ]
+  },
+  "parse_coordinates": [
+    "raw_string"
+  ],
+  "UIInsConfig": {
+    "__init__": [
+      "self"
+    ],
+    "predict_step": [
+      "self",
+      "messages",
+      "model",
+      "tools",
+      "max_retries",
+      "stream",
+      "computer_handler",
+      "_on_api_start",
+      "_on_api_end",
+      "_on_usage",
+      "_on_screenshot"
+    ],
+    "predict_click": [
+      "self",
+      "model",
+      "image_b64",
+      "instruction"
+    ],
+    "get_capabilities": [
+      "self"
+    ]
+  },
+  "RECOMMENDED_MAX_WIDTH": [],
+  "RECOMMENDED_MAX_HEIGHT": [],
+  "_scale_coordinate": [
+    "coord",
+    "scale"
+  ],
+  "MODEL_TOOL_MAPPING": [],
+  "_get_tool_config_for_model": [
+    "model"
+  ],
+  "_map_computer_tool_to_anthropic": [
+    "computer_tool",
+    "tool_version"
+  ],
+  "_prepare_tools_for_anthropic": [
+    "tool_schemas",
+    "model"
+  ],
+  "_convert_responses_items_to_completion_messages": [
+    "messages"
+  ],
+  "_convert_completion_to_responses_items": [
+    "response",
+    "scale_x",
+    "scale_y"
+  ],
+  "_add_cache_control": [
+    "completion_messages"
+  ],
+  "_combine_completion_messages": [
+    "completion_messages"
+  ],
+  "_normalize_content": [
+    "content"
+  ],
+  "_merge_consecutive_text": [
+    "content_list"
+  ],
+  "AnthropicHostedToolsConfig": {
+    "predict_step": [
+      "self",
+      "messages",
+      "model",
+      "tools",
+      "max_retries",
+      "stream",
+      "computer_handler",
+      "use_prompt_caching",
+      "_on_api_start",
+      "_on_api_end",
+      "_on_usage",
+      "_on_screenshot"
+    ],
+    "predict_click": [
+      "self",
+      "model",
+      "image_b64",
+      "instruction"
+    ],
+    "get_capabilities": [
+      "self"
+    ]
+  },
+  "N1_TARGET_WIDTH": [],
+  "N1_TARGET_HEIGHT": [],
+  "N1_COORD_SPACE": [],
+  "_prepare_image_for_n1": [
+    "image_b64"
+  ],
+  "_unnormalize_coordinates": [
+    "coords",
+    "screen_width",
+    "screen_height"
+  ],
+  "_convert_n1_action_to_computer_action": [
+    "fn_name",
+    "args",
+    "screen_width",
+    "screen_height"
+  ],
+  "_convert_images_to_n1_format": [
+    "messages"
+  ],
+  "YutoriN1Config": {
+    "predict_step": [
+      "self",
+      "messages",
+      "model",
+      "tools",
+      "max_retries",
+      "stream",
+      "computer_handler",
+      "use_prompt_caching",
+      "_on_api_start",
+      "_on_api_end",
+      "_on_usage",
+      "_on_screenshot"
+    ],
+    "predict_click": [
+      "self",
+      "model",
+      "image_b64",
+      "instruction"
+    ],
+    "get_capabilities": [
+      "self"
+    ]
+  },
+  "GelatoConfig": {
+    "__init__": [
+      "self"
+    ],
+    "predict_step": [
+      "self",
+      "messages",
+      "model",
+      "tools",
+      "max_retries",
+      "stream",
+      "computer_handler",
+      "_on_api_start",
+      "_on_api_end",
+      "_on_usage",
+      "_on_screenshot"
+    ],
+    "predict_click": [
+      "self",
+      "model",
+      "image_b64",
+      "instruction"
+    ],
+    "get_capabilities": [
+      "self"
+    ]
+  },
+  "extract_coordinates_from_click": [
+    "text"
+  ],
+  "_rescale_coordinate": [
+    "x",
+    "y",
+    "orig_w",
+    "orig_h",
+    "resized_w",
+    "resized_h"
+  ],
+  "OpenCUAConfig": {
+    "__init__": [
+      "self"
+    ],
+    "predict_step": [
+      "self",
+      "messages",
+      "model",
+      "tools",
+      "max_retries",
+      "stream",
+      "computer_handler",
+      "use_prompt_caching",
+      "_on_api_start",
+      "_on_api_end",
+      "_on_usage",
+      "_on_screenshot"
+    ],
+    "predict_click": [
+      "self",
+      "model",
+      "image_b64",
+      "instruction"
+    ],
+    "get_capabilities": [
+      "self"
+    ]
+  },
+  "_NUM": [],
+  "_POINT_PATTERN": [],
+  "_BBOX_PATTERN": [],
+  "_extract_first_point": [
+    "text"
+  ],
+  "_extract_last_bbox": [
+    "text"
+  ],
+  "_scale_norm_to_pixels": [
+    "x_norm",
+    "y_norm",
+    "width",
+    "height"
+  ],
+  "InternVLConfig": {
+    "predict_step": [
+      "self",
+      "messages",
+      "model",
+      "tools",
+      "max_retries",
+      "stream",
+      "computer_handler",
+      "_on_api_start",
+      "_on_api_end",
+      "_on_usage",
+      "_on_screenshot"
+    ],
+    "predict_click": [
+      "self",
+      "model",
+      "image_b64",
+      "instruction"
+    ],
+    "get_capabilities": [
+      "self"
+    ]
+  },
+  "SOM_TOOL_SCHEMA": [],
+  "OMNIPARSER_AVAILABLE": [],
+  "OMNIPARSER_SINGLETON": [],
+  "get_parser": [],
+  "get_last_computer_call_output": [
+    "messages"
+  ],
+  "_prepare_tools_for_omniparser": [
+    "tool_schemas"
+  ],
+  "replace_function_with_computer_call": [
+    "item",
+    "id2xy"
+  ],
+  "replace_computer_call_with_function": [
+    "item",
+    "xy2id"
+  ],
+  "OmniparserConfig": {
+    "predict_step": [
+      "self",
+      "messages",
+      "model",
+      "tools",
+      "max_retries",
+      "stream",
+      "computer_handler",
+      "use_prompt_caching",
+      "_on_api_start",
+      "_on_api_end",
+      "_on_usage",
+      "_on_screenshot"
+    ],
+    "predict_click": [
+      "self",
+      "model",
+      "image_b64",
+      "instruction"
+    ],
+    "get_capabilities": [
+      "self"
+    ]
+  },
+  "Qwen35Config": {
+    "predict_step": [
+      "self",
+      "messages",
+      "model",
+      "tools",
+      "max_retries",
+      "stream",
+      "computer_handler",
+      "use_prompt_caching",
+      "_on_api_start",
+      "_on_api_end",
+      "_on_usage",
+      "_on_screenshot"
+    ],
+    "get_capabilities": [
+      "self"
+    ],
+    "predict_click": [
+      "self",
+      "model",
+      "image_b64",
+      "instruction"
+    ]
+  },
+  "_MOONDREAM_SINGLETON": [],
+  "get_moondream_model": [],
+  "_decode_image_b64": [
+    "image_b64"
+  ],
+  "_image_to_b64": [
+    "img"
+  ],
+  "_supports_vision": [
+    "model"
+  ],
+  "_filter_images_from_completion_messages": [
+    "messages"
+  ],
+  "_annotate_detect_and_label_ui": [
+    "base_img",
+    "model_md"
+  ],
+  "Moondream3PlusConfig": {
+    "__init__": [
+      "self"
+    ],
+    "predict_step": [
+      "self",
+      "messages",
+      "model",
+      "tools",
+      "max_retries",
+      "stream",
+      "computer_handler",
+      "use_prompt_caching",
+      "_on_api_start",
+      "_on_api_end",
+      "_on_usage",
+      "_on_screenshot"
+    ],
+    "predict_click": [
+      "self",
+      "model",
+      "image_b64",
+      "instruction"
+    ],
+    "get_capabilities": [
+      "self"
+    ]
+  },
+  "_map_computer_tool_to_openai": [
+    "computer_handler",
+    "use_native_tool"
+  ],
+  "_is_native_computer_use_model": [
+    "model"
+  ],
+  "_prepare_tools_for_openai": [
+    "tool_schemas",
+    "model"
+  ],
+  "OpenAIComputerUseConfig": {
+    "predict_step": [
+      "self",
+      "messages",
+      "model",
+      "tools",
+      "max_retries",
+      "stream",
+      "computer_handler",
+      "use_prompt_caching",
+      "_on_api_start",
+      "_on_api_end",
+      "_on_usage",
+      "_on_screenshot"
+    ],
+    "predict_click": [
+      "self",
+      "model",
+      "image_b64",
+      "instruction"
+    ],
+    "get_capabilities": [
+      "self"
+    ]
+  },
+  "GLM_ACTION_SPACE": [],
+  "encode_image_to_base64": [
+    "image_path"
+  ],
+  "parse_glm_response": [
+    "response"
+  ],
+  "get_last_image_from_messages": [
+    "messages"
+  ],
+  "convert_responses_items_to_glm45v_pc_prompt": [
+    "messages",
+    "task",
+    "memory"
+  ],
+  "model_dump": [
+    "obj"
+  ],
+  "convert_glm_completion_to_responses_items": [
+    "response",
+    "image_width",
+    "image_height"
+  ],
+  "Glm4vConfig": {
+    "predict_step": [
+      "self",
+      "messages",
+      "model",
+      "tools",
+      "max_retries",
+      "stream",
+      "computer_handler",
+      "use_prompt_caching",
+      "_on_api_start",
+      "_on_api_end",
+      "_on_usage",
+      "_on_screenshot"
+    ],
+    "predict_click": [
+      "self",
+      "model",
+      "image_b64",
+      "instruction"
+    ],
+    "get_capabilities": [
+      "self"
+    ]
+  },
+  "_format_tool_schemas_json_lines": [
+    "schemas"
+  ],
+  "_PROMPT_PREFIX": [],
+  "_PROMPT_SUFFIX": [],
+  "_extract_function_schemas_from_tools": [
+    "tools"
+  ],
+  "_parse_seed_tool_calls": [
+    "text"
+  ],
+  "_normalize_xy_to_uitars": [
+    "x",
+    "y",
+    "width",
+    "height"
+  ],
+  "_denormalize_xy_from_uitars": [
+    "nx",
+    "ny",
+    "width",
+    "height"
+  ],
+  "_map_computer_action_to_function": [
+    "action",
+    "width",
+    "height"
+  ],
+  "_to_uitars_messages": [
+    "messages",
+    "width",
+    "height"
+  ],
+  "_to_response_items": [
+    "actions",
+    "tool_names",
+    "width",
+    "height"
+  ],
+  "UITARS2Config": {
+    "predict_step": [
+      "self",
+      "messages",
+      "model",
+      "tools",
+      "max_retries",
+      "stream",
+      "computer_handler",
+      "use_prompt_caching",
+      "_on_api_start",
+      "_on_api_end",
+      "_on_usage",
+      "_on_screenshot"
+    ],
+    "get_capabilities": [
+      "self"
+    ],
+    "predict_click": [
+      "self",
+      "model",
+      "image_b64",
+      "instruction"
+    ]
+  },
+  "IMAGE_FACTOR": [],
+  "MIN_PIXELS": [],
+  "MAX_PIXELS": [],
+  "MAX_RATIO": [],
+  "FINISH_WORD": [],
+  "WAIT_WORD": [],
+  "ENV_FAIL_WORD": [],
+  "CALL_USER": [],
+  "UITARS_ACTION_SPACE": [],
+  "UITARS_PROMPT_TEMPLATE": [],
+  "GROUNDING_UITARS_PROMPT_TEMPLATE": [],
+  "round_by_factor": [
+    "number",
+    "factor"
+  ],
+  "ceil_by_factor": [
+    "number",
+    "factor"
+  ],
+  "floor_by_factor": [
+    "number",
+    "factor"
+  ],
+  "escape_single_quotes": [
+    "text"
+  ],
+  "parse_action": [
+    "action_str"
+  ],
+  "parse_uitars_response": [
+    "text",
+    "image_width",
+    "image_height"
+  ],
+  "convert_to_computer_actions": [
+    "parsed_responses",
+    "image_width",
+    "image_height"
+  ],
+  "pil_to_base64": [
+    "image"
+  ],
+  "process_image_for_uitars": [
+    "image_data",
+    "max_pixels",
+    "min_pixels"
+  ],
+  "convert_uitars_messages_to_litellm": [
+    "messages"
+  ],
+  "UITARSConfig": {
+    "predict_step": [
+      "self",
+      "messages",
+      "model",
+      "tools",
+      "max_retries",
+      "stream",
+      "computer_handler",
+      "use_prompt_caching",
+      "_on_api_start",
+      "_on_api_end",
+      "_on_usage",
+      "_on_screenshot"
+    ],
+    "predict_click": [
+      "self",
+      "model",
+      "image_b64",
+      "instruction"
+    ],
+    "get_capabilities": [
+      "self"
+    ]
+  },
+  "Qwen3VlConfig": {},
+  "_scale_fara_coordinates": [
+    "args",
+    "original_dims",
+    "resized_dims"
+  ],
+  "_fara_args_to_sdk_item": [
+    "args"
+  ],
+  "FaraVlmConfig": {
+    "predict_step": [
+      "self",
+      "messages",
+      "model",
+      "tools",
+      "max_retries",
+      "stream",
+      "computer_handler",
+      "use_prompt_caching",
+      "_on_api_start",
+      "_on_api_end",
+      "_on_usage",
+      "_on_screenshot"
+    ],
+    "get_capabilities": [
+      "self"
+    ],
+    "predict_click": [
+      "self",
+      "model",
+      "image_b64",
+      "instruction"
+    ]
+  },
+  "FN_CALL_TEMPLATE_QWEN": [],
+  "FN_CALL_TEMPLATE": [],
+  "SPECIAL_CODE_MODE": [],
+  "CODE_TOOL_PATTERN": [],
+  "FN_CALL_TEMPLATE_WITH_CI": [],
+  "NousFnCallPrompt": {
+    "__init__": [
+      "self",
+      "template_name"
+    ],
+    "preprocess_fncall_messages": [
+      "self",
+      "messages",
+      "functions",
+      "lang",
+      "parallel_function_calls",
+      "function_choice"
+    ]
+  },
+  "remove_incomplete_special_tokens": [
+    "text"
+  ],
+  "extract_fn": [
+    "text"
+  ],
+  "build_nous_system": [
+    "functions"
+  ],
+  "fix_fara_tool_call_format": [
+    "messages"
+  ],
+  "parse_tool_call_from_text": [
+    "text"
+  ],
+  "unnormalize_coordinate": [
+    "args",
+    "dims"
+  ],
+  "convert_fara_args_to_browser_tool_format": [
+    "args"
+  ],
+  "_convert_responses_items_to_fara_messages": [
+    "messages",
+    "allow_images_in_tool_results"
+  ],
+  "_sdk_action_to_fara_args": [
+    "action"
+  ],
+  "BaseModelCompatibleDict": {
+    "__getitem__": [
+      "self",
+      "item"
+    ],
+    "__setitem__": [
+      "self",
+      "key",
+      "value"
+    ],
+    "model_dump": [
+      "self"
+    ],
+    "model_dump_json": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "key",
+      "default"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "FunctionCall": {
+    "__init__": [
+      "self",
+      "name",
+      "arguments"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ContentItem": {
+    "__init__": [
+      "self",
+      "text",
+      "image",
+      "file",
+      "audio",
+      "video"
+    ],
+    "check_exclusivity": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "get_type_and_value": [
+      "self"
+    ],
+    "type": [
+      "self"
+    ],
+    "value": [
+      "self"
+    ]
+  },
+  "Message": {
+    "__init__": [
+      "self",
+      "role",
+      "content",
+      "reasoning_content",
+      "name",
+      "function_call",
+      "extra"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "role_checker": [
+      "cls",
+      "value"
+    ]
+  },
+  "test_http_endpoint": [],
+  "curl_examples": [],
+  "test_p2p_client": [],
+  "ResponsesHandler": {
+    "__init__": [
+      "self"
+    ],
+    "setup_computer_agent": [
+      "self",
+      "model",
+      "agent_kwargs",
+      "computer_kwargs"
+    ],
+    "process_request": [
+      "self",
+      "request_data"
+    ],
+    "_convert_input_to_messages": [
+      "self",
+      "input_data"
+    ],
+    "cleanup": [
+      "self"
+    ],
+    "_env_overrides": [
+      "env"
+    ]
+  },
+  "register_tool": [
+    "name",
+    "allow_overwrite"
+  ],
+  "is_tool_schema": [
+    "obj"
+  ],
+  "BaseTool": {
+    "__init__": [
+      "self",
+      "cfg"
+    ],
+    "description": [
+      "self"
+    ],
+    "parameters": [
+      "self"
+    ],
+    "call": [
+      "self",
+      "params"
+    ],
+    "_verify_json_format_args": [
+      "self",
+      "params"
+    ],
+    "function": [
+      "self"
+    ]
+  },
+  "get_registered_tools": [],
+  "get_tool": [
+    "name"
+  ],
+  "BaseComputerTool": {
+    "screenshot": [
+      "self"
+    ]
+  },
+  "BrowserTool": {
+    "__init__": [
+      "self",
+      "interface",
+      "cfg"
+    ],
+    "automation": [
+      "self"
+    ],
+    "_initialize_dimensions": [
+      "self"
+    ],
+    "_proc_coords": [
+      "self",
+      "x",
+      "y"
+    ],
+    "description": [
+      "self"
+    ],
+    "parameters": [
+      "self"
+    ],
+    "call": [
+      "self",
+      "params"
+    ],
+    "_execute_action": [
+      "self",
+      "action",
+      "params"
+    ],
+    "_action_key": [
+      "self",
+      "params"
+    ],
+    "_action_type": [
+      "self",
+      "params"
+    ],
+    "_action_mouse_move": [
+      "self",
+      "params"
+    ],
+    "_action_left_click": [
+      "self",
+      "params"
+    ],
+    "_action_scroll": [
+      "self",
+      "params"
+    ],
+    "_action_visit_url": [
+      "self",
+      "params"
+    ],
+    "_action_web_search": [
+      "self",
+      "params"
+    ],
+    "_action_history_back": [
+      "self",
+      "params"
+    ],
+    "_action_pause_and_memorize_fact": [
+      "self",
+      "params"
+    ],
+    "_action_wait": [
+      "self",
+      "params"
+    ],
+    "_action_terminate": [
+      "self",
+      "params"
+    ],
+    "_action_screenshot": [
+      "self",
+      "params"
+    ],
+    "visit_url": [
+      "self",
+      "url"
+    ],
+    "click": [
+      "self",
+      "x",
+      "y",
+      "button"
+    ],
+    "type": [
+      "self",
+      "text"
+    ],
+    "scroll": [
+      "self",
+      "delta_x",
+      "delta_y",
+      "scroll_x",
+      "scroll_y",
+      "x",
+      "y",
+      "pixels",
+      "coordinate"
+    ],
+    "web_search": [
+      "self",
+      "query"
+    ],
+    "screenshot": [
+      "self"
+    ],
+    "get_current_url": [
+      "self"
+    ],
+    "left_click": [
+      "self",
+      "coordinate",
+      "x",
+      "y"
+    ],
+    "right_click": [
+      "self",
+      "coordinate",
+      "x",
+      "y"
+    ],
+    "middle_click": [
+      "self",
+      "coordinate",
+      "x",
+      "y"
+    ],
+    "double_click": [
+      "self",
+      "coordinate",
+      "x",
+      "y"
+    ],
+    "triple_click": [
+      "self",
+      "coordinate",
+      "x",
+      "y",
+      "button"
+    ],
+    "mouse_move": [
+      "self",
+      "coordinate",
+      "x",
+      "y"
+    ],
+    "move": [
+      "self",
+      "x",
+      "y"
+    ],
+    "left_click_drag": [
+      "self",
+      "coordinate",
+      "start_coordinate",
+      "end_coordinate"
+    ],
+    "key": [
+      "self",
+      "keys"
+    ],
+    "keypress": [
+      "self",
+      "keys"
+    ],
+    "hscroll": [
+      "self",
+      "pixels",
+      "coordinate"
+    ],
+    "wait": [
+      "self",
+      "time"
+    ],
+    "history_back": [
+      "self"
+    ],
+    "terminate": [
+      "self",
+      "status"
+    ]
+  },
+  "global_agent": [],
+  "global_computer": [],
+  "SETTINGS_FILE": [],
+  "load_settings": [],
+  "save_settings": [
+    "settings"
+  ],
+  "is_mac": [],
+  "is_lume_available": [],
+  "MODEL_MAPPINGS": [],
+  "get_model_string": [
+    "model_name",
+    "loop_provider"
+  ],
+  "get_ollama_models": [],
+  "create_computer_instance": [
+    "verbosity",
+    "os_type",
+    "provider_type",
+    "name",
+    "api_key"
+  ],
+  "create_agent": [
+    "model_string",
+    "save_trajectory",
+    "only_n_most_recent_images",
+    "verbosity",
+    "custom_model_name",
+    "computer_os",
+    "computer_provider",
+    "computer_name",
+    "computer_api_key",
+    "max_trajectory_budget"
+  ],
+  "launch_ui": [],
+  "global_messages": [],
+  "create_gradio_ui": [],
+  "PlaygroundServer": {
+    "__init__": [
+      "self",
+      "agent_instance"
+    ],
+    "_setup_middleware": [
+      "self"
+    ],
+    "_setup_routes": [
+      "self"
+    ],
+    "_find_available_port": [
+      "self",
+      "start_port",
+      "max_attempts"
+    ],
+    "start_async": [
+      "self",
+      "port",
+      "open_browser"
+    ],
+    "start": [
+      "self",
+      "port",
+      "open_browser"
+    ],
+    "_run_in_new_loop": [
+      "self",
+      "port",
+      "open_browser"
+    ],
+    "stop": [
+      "self"
+    ]
+  },
+  "sanitize_image_urls": [
+    "data"
+  ],
+  "LoggingCallback": {
+    "__init__": [
+      "self",
+      "logger",
+      "level"
+    ],
+    "_update_usage": [
+      "self",
+      "usage"
+    ],
+    "on_run_start": [
+      "self",
+      "kwargs",
+      "old_items"
+    ],
+    "on_usage": [
+      "self",
+      "usage"
+    ],
+    "on_run_end": [
+      "self",
+      "kwargs",
+      "old_items",
+      "new_items"
+    ],
+    "on_llm_start": [
+      "self",
+      "messages"
+    ],
+    "on_llm_end": [
+      "self",
+      "messages"
+    ],
+    "on_computer_call_start": [
+      "self",
+      "item"
+    ],
+    "on_computer_call_end": [
+      "self",
+      "item",
+      "result"
+    ],
+    "on_function_call_start": [
+      "self",
+      "item"
+    ],
+    "on_function_call_end": [
+      "self",
+      "item",
+      "result"
+    ],
+    "on_text": [
+      "self",
+      "item"
+    ],
+    "on_api_start": [
+      "self",
+      "kwargs"
+    ],
+    "on_api_end": [
+      "self",
+      "kwargs",
+      "result"
+    ],
+    "on_screenshot": [
+      "self",
+      "item",
+      "name"
+    ]
+  },
+  "AsyncCallbackHandler": {
+    "on_run_start": [
+      "self",
+      "kwargs",
+      "old_items"
+    ],
+    "on_run_end": [
+      "self",
+      "kwargs",
+      "old_items",
+      "new_items"
+    ],
+    "on_run_continue": [
+      "self",
+      "kwargs",
+      "old_items",
+      "new_items"
+    ],
+    "on_llm_start": [
+      "self",
+      "messages"
+    ],
+    "on_llm_end": [
+      "self",
+      "output"
+    ],
+    "on_computer_call_start": [
+      "self",
+      "item"
+    ],
+    "on_computer_call_end": [
+      "self",
+      "item",
+      "result"
+    ],
+    "on_function_call_start": [
+      "self",
+      "item"
+    ],
+    "on_function_call_end": [
+      "self",
+      "item",
+      "result"
+    ],
+    "on_text": [
+      "self",
+      "item"
+    ],
+    "on_api_start": [
+      "self",
+      "kwargs"
+    ],
+    "on_api_end": [
+      "self",
+      "kwargs",
+      "result"
+    ],
+    "on_usage": [
+      "self",
+      "usage"
+    ],
+    "on_screenshot": [
+      "self",
+      "screenshot",
+      "name"
+    ],
+    "on_responses": [
+      "self",
+      "kwargs",
+      "responses"
+    ]
+  },
+  "extract_computer_call_outputs": [
+    "items",
+    "screenshot_dir"
+  ],
+  "TrajectorySaverCallback": {
+    "__init__": [
+      "self",
+      "trajectory_dir",
+      "reset_on_run",
+      "screenshot_dir"
+    ],
+    "_get_turn_dir": [
+      "self"
+    ],
+    "_save_artifact": [
+      "self",
+      "name",
+      "artifact"
+    ],
+    "_update_usage": [
+      "self",
+      "usage"
+    ],
+    "on_run_start": [
+      "self",
+      "kwargs",
+      "old_items"
+    ],
+    "on_run_end": [
+      "self",
+      "kwargs",
+      "old_items",
+      "new_items"
+    ],
+    "on_api_start": [
+      "self",
+      "kwargs"
+    ],
+    "on_api_end": [
+      "self",
+      "kwargs",
+      "result"
+    ],
+    "on_screenshot": [
+      "self",
+      "screenshot",
+      "name"
+    ],
+    "on_usage": [
+      "self",
+      "usage"
+    ],
+    "on_responses": [
+      "self",
+      "kwargs",
+      "responses"
+    ],
+    "_draw_crosshair_on_image": [
+      "self",
+      "image_bytes",
+      "x",
+      "y"
+    ],
+    "on_computer_call_end": [
+      "self",
+      "item",
+      "result"
+    ],
+    "on_function_call_end": [
+      "self",
+      "item",
+      "result"
+    ]
+  },
+  "BudgetExceededError": {},
+  "BudgetManagerCallback": {
+    "__init__": [
+      "self",
+      "max_budget",
+      "reset_after_each_run",
+      "raise_error"
+    ],
+    "on_run_start": [
+      "self",
+      "kwargs",
+      "old_items"
+    ],
+    "on_usage": [
+      "self",
+      "usage"
+    ],
+    "on_run_continue": [
+      "self",
+      "kwargs",
+      "old_items",
+      "new_items"
+    ]
+  },
+  "OtelCallback": {
+    "__init__": [
+      "self",
+      "agent"
+    ],
+    "_get_agent_type": [
+      "self"
+    ],
+    "on_run_start": [
+      "self",
+      "kwargs",
+      "old_items"
+    ],
+    "on_run_end": [
+      "self",
+      "kwargs",
+      "old_items",
+      "new_items"
+    ],
+    "on_responses": [
+      "self",
+      "kwargs",
+      "responses"
+    ],
+    "on_usage": [
+      "self",
+      "usage"
+    ],
+    "on_computer_call_start": [
+      "self",
+      "item"
+    ],
+    "on_computer_call_end": [
+      "self",
+      "item",
+      "result"
+    ],
+    "on_api_start": [
+      "self",
+      "kwargs"
+    ],
+    "on_api_end": [
+      "self",
+      "kwargs",
+      "result"
+    ]
+  },
+  "OtelErrorCallback": {
+    "__init__": [
+      "self",
+      "agent"
+    ],
+    "on_error": [
+      "self",
+      "error",
+      "context"
+    ]
+  },
+  "PromptInstructionsCallback": {
+    "__init__": [
+      "self",
+      "instructions"
+    ],
+    "on_llm_start": [
+      "self",
+      "messages"
+    ]
+  },
+  "PIIAnonymizationCallback": {
+    "__init__": [
+      "self"
+    ],
+    "on_llm_start": [
+      "self",
+      "messages"
+    ],
+    "on_llm_end": [
+      "self",
+      "output"
+    ],
+    "_anonymize_message": [
+      "self",
+      "message"
+    ],
+    "_deanonymize_item": [
+      "self",
+      "item"
+    ]
+  },
+  "OperatorNormalizerCallback": {
+    "on_llm_end": [
+      "self",
+      "output"
+    ]
+  },
+  "SYSTEM_INFO": [],
+  "TelemetryCallback": {
+    "__init__": [
+      "self",
+      "agent",
+      "log_trajectory"
+    ],
+    "_record_agent_initialization": [
+      "self"
+    ],
+    "on_run_start": [
+      "self",
+      "kwargs",
+      "old_items"
+    ],
+    "on_run_end": [
+      "self",
+      "kwargs",
+      "old_items",
+      "new_items"
+    ],
+    "on_usage": [
+      "self",
+      "usage"
+    ],
+    "on_responses": [
+      "self",
+      "kwargs",
+      "responses"
+    ],
+    "_get_vm_name": [
+      "self"
+    ],
+    "_calculate_context_size": [
+      "self",
+      "items"
+    ],
+    "_extract_trajectory": [
+      "self",
+      "items"
+    ]
+  },
+  "ImageRetentionCallback": {
+    "__init__": [
+      "self",
+      "only_n_most_recent_images"
+    ],
+    "on_llm_start": [
+      "self",
+      "messages"
+    ],
+    "_apply_image_retention": [
+      "self",
+      "messages"
+    ]
+  },
+  "HumanAdapter": {
+    "__init__": [
+      "self",
+      "base_url",
+      "timeout"
+    ],
+    "_queue_completion": [
+      "self",
+      "messages",
+      "model"
+    ],
+    "_wait_for_completion": [
+      "self",
+      "call_id"
+    ],
+    "_async_wait_for_completion": [
+      "self",
+      "call_id"
+    ],
+    "_generate_response": [
+      "self",
+      "messages",
+      "model"
+    ],
+    "_async_generate_response": [
+      "self",
+      "messages",
+      "model"
+    ],
+    "completion": [
+      "self"
+    ],
+    "acompletion": [
+      "self"
+    ],
+    "streaming": [
+      "self"
+    ],
+    "astreaming": [
+      "self"
+    ]
+  },
+  "CUAAdapter": {
+    "__init__": [
+      "self",
+      "base_url",
+      "api_key"
+    ],
+    "_normalize_model": [
+      "self",
+      "model"
+    ],
+    "_resolve_route": [
+      "self",
+      "model",
+      "api_base"
+    ],
+    "_resolve_api_key": [
+      "self",
+      "kwargs"
+    ],
+    "completion": [
+      "self"
+    ],
+    "acompletion": [
+      "self"
+    ],
+    "streaming": [
+      "self"
+    ],
+    "astreaming": [
+      "self"
+    ]
+  },
+  "HuggingFaceLocalAdapter": {
+    "__init__": [
+      "self",
+      "device",
+      "trust_remote_code"
+    ],
+    "_get_handler": [
+      "self",
+      "model_name"
+    ],
+    "_convert_messages": [
+      "self",
+      "messages"
+    ],
+    "_generate": [
+      "self"
+    ],
+    "completion": [
+      "self"
+    ],
+    "acompletion": [
+      "self"
+    ],
+    "streaming": [
+      "self"
+    ],
+    "astreaming": [
+      "self"
+    ]
+  },
+  "MLXVLMAdapter": {
+    "__init__": [
+      "self"
+    ],
+    "_load_model_and_processor": [
+      "self",
+      "model_name"
+    ],
+    "_process_coordinates": [
+      "self",
+      "text",
+      "original_size",
+      "model_size"
+    ],
+    "_convert_messages": [
+      "self",
+      "messages"
+    ],
+    "_generate": [
+      "self"
+    ],
+    "completion": [
+      "self"
+    ],
+    "acompletion": [
+      "self"
+    ],
+    "streaming": [
+      "self"
+    ],
+    "astreaming": [
+      "self"
+    ]
+  },
+  "YUTORI_API_BASE": [],
+  "YutoriAdapter": {
+    "__init__": [
+      "self",
+      "base_url",
+      "api_key"
+    ],
+    "_normalize_model": [
+      "self",
+      "model"
+    ],
+    "_resolve_api_key": [
+      "self",
+      "kwargs"
+    ],
+    "_build_params": [
+      "self",
+      "kwargs"
+    ],
+    "completion": [
+      "self"
+    ],
+    "acompletion": [
+      "self"
+    ],
+    "streaming": [
+      "self"
+    ],
+    "astreaming": [
+      "self"
+    ]
+  },
+  "AzureMLAdapter": {
+    "__init__": [
+      "self"
+    ],
+    "_get_client": [
+      "self"
+    ],
+    "_get_async_client": [
+      "self"
+    ],
+    "_prepare_request": [
+      "self"
+    ],
+    "completion": [
+      "self"
+    ],
+    "acompletion": [
+      "self"
+    ],
+    "streaming": [
+      "self"
+    ],
+    "astreaming": [
+      "self"
+    ],
+    "__del__": [
+      "self"
+    ]
+  },
+  "GenericHFModel": {
+    "__init__": [
+      "self",
+      "model_name",
+      "device",
+      "trust_remote_code"
+    ],
+    "_load": [
+      "self"
+    ],
+    "generate": [
+      "self",
+      "messages",
+      "max_new_tokens"
+    ]
+  },
+  "Qwen2_5_VLModel": {
+    "__init__": [
+      "self",
+      "model_name",
+      "device",
+      "trust_remote_code"
+    ],
+    "_load": [
+      "self"
+    ],
+    "generate": [
+      "self",
+      "messages",
+      "max_new_tokens"
+    ]
+  },
+  "OpenCUAModel": {
+    "__init__": [
+      "self",
+      "model_name",
+      "device",
+      "trust_remote_code"
+    ],
+    "_load": [
+      "self"
+    ],
+    "_extract_last_image_b64": [
+      "messages"
+    ],
+    "generate": [
+      "self",
+      "messages",
+      "max_new_tokens"
+    ]
+  },
+  "InternVLModel": {
+    "__init__": [
+      "self",
+      "model_name",
+      "device",
+      "trust_remote_code"
+    ],
+    "_load": [
+      "self"
+    ],
+    "IMAGENET_MEAN": [],
+    "IMAGENET_STD": [],
+    "_build_transform": [
+      "self",
+      "input_size"
+    ],
+    "_find_closest_aspect_ratio": [
+      "self",
+      "aspect_ratio",
+      "target_ratios",
+      "width",
+      "height",
+      "image_size"
+    ],
+    "_dynamic_preprocess": [
+      "self",
+      "image",
+      "min_num",
+      "max_num",
+      "image_size",
+      "use_thumbnail"
+    ],
+    "_load_image_from_source": [
+      "self",
+      "src"
+    ],
+    "_images_to_pixel_values": [
+      "self",
+      "images",
+      "input_size",
+      "max_num"
+    ],
+    "generate": [
+      "self",
+      "messages",
+      "max_new_tokens"
+    ]
+  },
+  "load_model": [
+    "model_name",
+    "device",
+    "trust_remote_code"
+  ],
+  "HumanCompletionUI": {
+    "__init__": [
+      "self",
+      "server_url"
+    ],
+    "format_messages_for_chatbot": [
+      "self",
+      "messages"
+    ],
+    "get_pending_calls": [
+      "self"
+    ],
+    "complete_call_with_response": [
+      "self",
+      "call_id",
+      "response"
+    ],
+    "complete_call_with_tool_calls": [
+      "self",
+      "call_id",
+      "tool_calls"
+    ],
+    "complete_call": [
+      "self",
+      "call_id",
+      "response",
+      "tool_calls"
+    ],
+    "get_last_image_from_messages": [
+      "self",
+      "messages"
+    ],
+    "refresh_pending_calls": [
+      "self"
+    ],
+    "on_call_selected": [
+      "self",
+      "selected_choice"
+    ],
+    "submit_response": [
+      "self",
+      "response_text"
+    ],
+    "submit_action": [
+      "self",
+      "action_type"
+    ],
+    "submit_click_action": [
+      "self",
+      "x",
+      "y",
+      "action_type",
+      "button"
+    ],
+    "submit_type_action": [
+      "self",
+      "text"
+    ],
+    "submit_hotkey_action": [
+      "self",
+      "keys"
+    ],
+    "submit_wait_action": [
+      "self"
+    ],
+    "submit_description_click": [
+      "self",
+      "description",
+      "action_type",
+      "button"
+    ],
+    "wait_for_pending_calls": [
+      "self",
+      "max_seconds",
+      "check_interval"
+    ]
+  },
+  "create_ui": [],
+  "CompletionStatus": {
+    "PENDING": [],
+    "COMPLETED": [],
+    "FAILED": []
+  },
+  "CompletionCall": {},
+  "ToolCall": {},
+  "CompletionRequest": {},
+  "CompletionResponse": {},
+  "CompletionQueue": {
+    "__init__": [
+      "self"
+    ],
+    "add_completion": [
+      "self",
+      "messages",
+      "model"
+    ],
+    "get_pending_calls": [
+      "self"
+    ],
+    "get_call_status": [
+      "self",
+      "call_id"
+    ],
+    "complete_call": [
+      "self",
+      "call_id",
+      "response",
+      "tool_calls"
+    ],
+    "fail_call": [
+      "self",
+      "call_id",
+      "error"
+    ],
+    "wait_for_completion": [
+      "self",
+      "call_id",
+      "timeout"
+    ]
+  },
+  "completion_queue": [],
+  "app": [],
+  "queue_completion": [
+    "request"
+  ],
+  "list_pending": [],
+  "get_status": [
+    "call_id"
+  ],
+  "complete_call": [
+    "call_id",
+    "response"
+  ],
+  "fail_call": [
+    "call_id",
+    "error"
+  ],
+  "root": [],
+  "gradio_demo": [],
+  "CUSTOM_PATH": [],
+  "redirect_to_ui": [],
+  "SandboxComputerHandler": {
+    "__init__": [
+      "self",
+      "sandbox"
+    ],
+    "get_environment": [
+      "self"
+    ],
+    "get_dimensions": [
+      "self"
+    ],
+    "screenshot": [
+      "self",
+      "text"
+    ],
+    "click": [
+      "self",
+      "x",
+      "y",
+      "button"
+    ],
+    "double_click": [
+      "self",
+      "x",
+      "y"
+    ],
+    "right_click": [
+      "self",
+      "x",
+      "y"
+    ],
+    "scroll": [
+      "self",
+      "x",
+      "y",
+      "scroll_x",
+      "scroll_y"
+    ],
+    "type": [
+      "self",
+      "text"
+    ],
+    "wait": [
+      "self",
+      "ms"
+    ],
+    "move": [
+      "self",
+      "x",
+      "y"
+    ],
+    "_KEY_NAME_MAP": [],
+    "keypress": [
+      "self",
+      "keys"
+    ],
+    "drag": [
+      "self",
+      "path",
+      "start_x",
+      "start_y",
+      "end_x",
+      "end_y"
+    ],
+    "get_current_url": [
+      "self"
+    ],
+    "terminate": [
+      "self",
+      "status"
+    ],
+    "left_mouse_down": [
+      "self",
+      "x",
+      "y"
+    ],
+    "left_mouse_up": [
+      "self",
+      "x",
+      "y"
+    ]
+  },
+  "AsyncComputerHandler": {
+    "get_environment": [
+      "self"
+    ],
+    "get_dimensions": [
+      "self"
+    ],
+    "screenshot": [
+      "self",
+      "text"
+    ],
+    "click": [
+      "self",
+      "x",
+      "y",
+      "button"
+    ],
+    "double_click": [
+      "self",
+      "x",
+      "y"
+    ],
+    "scroll": [
+      "self",
+      "x",
+      "y",
+      "scroll_x",
+      "scroll_y"
+    ],
+    "type": [
+      "self",
+      "text"
+    ],
+    "wait": [
+      "self",
+      "ms"
+    ],
+    "move": [
+      "self",
+      "x",
+      "y"
+    ],
+    "keypress": [
+      "self",
+      "keys"
+    ],
+    "drag": [
+      "self",
+      "path"
+    ],
+    "get_current_url": [
+      "self"
+    ],
+    "left_mouse_down": [
+      "self",
+      "x",
+      "y"
+    ],
+    "left_mouse_up": [
+      "self",
+      "x",
+      "y"
+    ]
+  },
+  "cuaComputerHandler": {
+    "__init__": [
+      "self",
+      "cua_computer"
+    ],
+    "_initialize": [
+      "self"
+    ],
+    "get_environment": [
+      "self"
+    ],
+    "get_dimensions": [
+      "self"
+    ],
+    "screenshot": [
+      "self",
+      "text"
+    ],
+    "click": [
+      "self",
+      "x",
+      "y",
+      "button"
+    ],
+    "double_click": [
+      "self",
+      "x",
+      "y"
+    ],
+    "right_click": [
+      "self",
+      "x",
+      "y"
+    ],
+    "scroll": [
+      "self",
+      "x",
+      "y",
+      "scroll_x",
+      "scroll_y"
+    ],
+    "type": [
+      "self",
+      "text"
+    ],
+    "wait": [
+      "self",
+      "ms"
+    ],
+    "move": [
+      "self",
+      "x",
+      "y"
+    ],
+    "keypress": [
+      "self",
+      "keys"
+    ],
+    "drag": [
+      "self",
+      "path",
+      "start_x",
+      "start_y",
+      "end_x",
+      "end_y"
+    ],
+    "terminate": [
+      "self",
+      "status"
+    ],
+    "get_current_url": [
+      "self"
+    ],
+    "left_mouse_down": [
+      "self",
+      "x",
+      "y"
+    ],
+    "left_mouse_up": [
+      "self",
+      "x",
+      "y"
+    ],
+    "playwright_exec": [
+      "self",
+      "command",
+      "params"
+    ]
+  },
+  "CustomComputerHandler": {
+    "__init__": [
+      "self",
+      "functions"
+    ],
+    "_call_function": [
+      "self",
+      "func"
+    ],
+    "_get_value": [
+      "self",
+      "attribute"
+    ],
+    "_to_b64_str": [
+      "self",
+      "img"
+    ],
+    "get_environment": [
+      "self"
+    ],
+    "get_dimensions": [
+      "self"
+    ],
+    "screenshot": [
+      "self",
+      "text"
+    ],
+    "click": [
+      "self",
+      "x",
+      "y",
+      "button"
+    ],
+    "double_click": [
+      "self",
+      "x",
+      "y"
+    ],
+    "scroll": [
+      "self",
+      "x",
+      "y",
+      "scroll_x",
+      "scroll_y"
+    ],
+    "type": [
+      "self",
+      "text"
+    ],
+    "wait": [
+      "self",
+      "ms"
+    ],
+    "move": [
+      "self",
+      "x",
+      "y"
+    ],
+    "keypress": [
+      "self",
+      "keys"
+    ],
+    "drag": [
+      "self",
+      "path"
+    ],
+    "get_current_url": [
+      "self"
+    ],
+    "left_mouse_down": [
+      "self",
+      "x",
+      "y"
+    ],
+    "left_mouse_up": [
+      "self",
+      "x",
+      "y"
+    ]
+  },
+  "is_agent_computer": [
+    "computer"
+  ],
+  "make_computer_handler": [
+    "computer"
+  ],
+  "_map_agent_output_to_openai_blocks": [
+    "output_items"
+  ],
+  "_to_plain_dict_list": [
+    "items"
+  ],
+  "FakeAsyncOpenAI": {
+    "__init__": [
+      "self",
+      "computer_agent"
+    ]
+  },
+  "ProxyOperatorAgent": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "MCPComputerAgent": {
+    "__init__": [
+      "self"
+    ],
+    "get_system_messages": [
+      "self"
+    ],
+    "format_blocks": [
+      "self",
+      "blocks"
+    ],
+    "get_response": [
+      "self",
+      "messages"
+    ],
+    "_log_image": [
+      "self",
+      "image_b64"
+    ],
+    "format_tool_results": [
+      "self",
+      "tool_calls",
+      "tool_results"
+    ]
+  },
+  "run_single_task": [
+    "dataset"
+  ],
+  "run_full_dataset": [
+    "dataset"
+  ]
+}
