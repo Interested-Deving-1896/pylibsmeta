@@ -1,0 +1,1887 @@
+{
+  "__path__": [],
+  "__all__": [],
+  "_Args": {},
+  "_Conf": {
+    "from_dict": [
+      "cls",
+      "d"
+    ]
+  },
+  "_parse_args": [
+    "args"
+  ],
+  "_load_resources_from_input": [
+    "input"
+  ],
+  "_apply_mutators": [
+    "bundle",
+    "resources",
+    "mutator_functions"
+  ],
+  "_apply_mutators_for_type": [
+    "bundle",
+    "resources",
+    "tpe",
+    "mutator_functions"
+  ],
+  "_read_conf": [
+    "input"
+  ],
+  "python_mutator": [
+    "args"
+  ],
+  "_parse_bundle_info": [
+    "input"
+  ],
+  "_append_resources": [
+    "bundle",
+    "resources"
+  ],
+  "_get_num_args": [
+    "func"
+  ],
+  "_load_resources": [
+    "bundle",
+    "functions"
+  ],
+  "_load_functions": [
+    "names"
+  ],
+  "_load_resource_mutators": [
+    "names"
+  ],
+  "_load_object": [
+    "qualified_name"
+  ],
+  "_explain_common_import_error": [
+    "exc"
+  ],
+  "_load_function": [
+    "qualified_name"
+  ],
+  "_load_resource_mutator": [
+    "qualified_name"
+  ],
+  "_load_resources_from_function": [
+    "bundle",
+    "function"
+  ],
+  "main": [
+    "argv"
+  ],
+  "_write_diagnostics": [
+    "f",
+    "diagnostics"
+  ],
+  "_write_output": [
+    "f",
+    "bundle"
+  ],
+  "_relativize_locations": [
+    "locations"
+  ],
+  "_relativize_location": [
+    "location"
+  ],
+  "_relativize_path": [
+    "path"
+  ],
+  "_write_locations": [
+    "f",
+    "locations"
+  ],
+  "__version__": [],
+  "_T": [],
+  "Severity": {
+    "WARNING": [],
+    "ERROR": []
+  },
+  "Diagnostic": {
+    "as_dict": [
+      "self"
+    ]
+  },
+  "Diagnostics": {
+    "extend": [
+      "self",
+      "diagnostics"
+    ],
+    "extend_tuple": [
+      "self",
+      "pair"
+    ],
+    "has_error": [
+      "self"
+    ],
+    "has_warning": [
+      "self"
+    ],
+    "create_error": [
+      "cls",
+      "msg"
+    ],
+    "create_warning": [
+      "cls",
+      "msg"
+    ],
+    "from_exception": [
+      "cls",
+      "exc"
+    ]
+  },
+  "_find_union_arg": [
+    "value",
+    "tpe"
+  ],
+  "_transform_variable_or_list": [
+    "cls",
+    "value"
+  ],
+  "_transform_variable_or_dict": [
+    "cls",
+    "value"
+  ],
+  "_transform_variable_or": [
+    "cls",
+    "value"
+  ],
+  "_transform_variable_or_optional": [
+    "cls",
+    "value"
+  ],
+  "_transform_field": [
+    "cls",
+    "field",
+    "value"
+  ],
+  "_transform": [
+    "cls",
+    "value"
+  ],
+  "_unwrap_optional": [
+    "tpe"
+  ],
+  "_unwrap_list": [
+    "tpe"
+  ],
+  "_unwrap_dict": [
+    "type"
+  ],
+  "_unwrap_variable": [
+    "tpe"
+  ],
+  "_base_var_def": [],
+  "_variable_regex": [],
+  "_unwrap_variable_path": [
+    "value"
+  ],
+  "_display_type": [
+    "tpe"
+  ],
+  "_ResourceType": {
+    "all": [
+      "cls"
+    ]
+  },
+  "ResourceMutator": {},
+  "job_mutator": [
+    "function"
+  ],
+  "pipeline_mutator": [
+    "function"
+  ],
+  "schema_mutator": [
+    "function"
+  ],
+  "volume_mutator": [
+    "function"
+  ],
+  "Variable": {
+    "__str__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "value": [
+      "self"
+    ]
+  },
+  "VariableOr": [],
+  "VariableOrOptional": [],
+  "VariableOrList": [],
+  "VariableOrDict": [],
+  "variables": [
+    "cls"
+  ],
+  "Resources": {
+    "__init__": [
+      "self"
+    ],
+    "jobs": [
+      "self"
+    ],
+    "pipelines": [
+      "self"
+    ],
+    "schemas": [
+      "self"
+    ],
+    "volumes": [
+      "self"
+    ],
+    "diagnostics": [
+      "self"
+    ],
+    "add_resource": [
+      "self",
+      "resource_name",
+      "resource"
+    ],
+    "add_job": [
+      "self",
+      "resource_name",
+      "job"
+    ],
+    "add_pipeline": [
+      "self",
+      "resource_name",
+      "pipeline"
+    ],
+    "add_schema": [
+      "self",
+      "resource_name",
+      "schema"
+    ],
+    "add_volume": [
+      "self",
+      "resource_name",
+      "volume"
+    ],
+    "add_location": [
+      "self",
+      "path",
+      "location"
+    ],
+    "add_diagnostics": [
+      "self",
+      "other"
+    ],
+    "add_diagnostic_error": [
+      "self",
+      "msg"
+    ],
+    "add_diagnostic_warning": [
+      "self",
+      "msg"
+    ],
+    "add_resources": [
+      "self",
+      "other"
+    ]
+  },
+  "Location": {
+    "__post_init__": [
+      "self"
+    ],
+    "from_callable": [
+      "fn"
+    ],
+    "from_stack_frame": [
+      "depth"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "Resource": {},
+  "load_resources_from_current_package_module": [],
+  "load_resources_from_package_module": [
+    "package_module"
+  ],
+  "load_resources_from_modules": [
+    "modules"
+  ],
+  "load_resources_from_module": [
+    "module"
+  ],
+  "_parse_locations": [
+    "module"
+  ],
+  "_is_resource": [
+    "member"
+  ],
+  "_transform_to_json_value": [
+    "value"
+  ],
+  "_transform_to_json_object": [
+    "value"
+  ],
+  "_stable_fields": [
+    "value"
+  ],
+  "_VAR_PREFIX": [],
+  "Bundle": {
+    "resolve_variable": [
+      "self",
+      "variable"
+    ],
+    "resolve_variable_list": [
+      "self",
+      "variable"
+    ]
+  },
+  "VolumeGrant": [],
+  "VolumeGrantDict": [],
+  "VolumeGrantParam": [],
+  "VolumeGrantPrivilege": [],
+  "VolumeGrantPrivilegeParam": [],
+  "VolumeType": {
+    "MANAGED": [],
+    "EXTERNAL": []
+  },
+  "VolumeTypeParam": [],
+  "PrivilegeAssignment": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "PrivilegeAssignmentDict": {},
+  "PrivilegeAssignmentParam": [],
+  "Lifecycle": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "LifecycleDict": {},
+  "LifecycleParam": [],
+  "Privilege": {
+    "SELECT": [],
+    "READ_PRIVATE_FILES": [],
+    "WRITE_PRIVATE_FILES": [],
+    "CREATE": [],
+    "USAGE": [],
+    "USE_CATALOG": [],
+    "USE_SCHEMA": [],
+    "CREATE_SCHEMA": [],
+    "CREATE_VIEW": [],
+    "CREATE_EXTERNAL_TABLE": [],
+    "CREATE_MATERIALIZED_VIEW": [],
+    "CREATE_FUNCTION": [],
+    "CREATE_MODEL": [],
+    "CREATE_CATALOG": [],
+    "CREATE_MANAGED_STORAGE": [],
+    "CREATE_EXTERNAL_LOCATION": [],
+    "CREATE_STORAGE_CREDENTIAL": [],
+    "CREATE_SERVICE_CREDENTIAL": [],
+    "ACCESS": [],
+    "CREATE_SHARE": [],
+    "CREATE_RECIPIENT": [],
+    "CREATE_PROVIDER": [],
+    "USE_SHARE": [],
+    "USE_RECIPIENT": [],
+    "USE_PROVIDER": [],
+    "USE_MARKETPLACE_ASSETS": [],
+    "SET_SHARE_PERMISSION": [],
+    "MODIFY": [],
+    "REFRESH": [],
+    "EXECUTE": [],
+    "READ_FILES": [],
+    "WRITE_FILES": [],
+    "CREATE_TABLE": [],
+    "ALL_PRIVILEGES": [],
+    "CREATE_CONNECTION": [],
+    "USE_CONNECTION": [],
+    "APPLY_TAG": [],
+    "CREATE_FOREIGN_CATALOG": [],
+    "CREATE_FOREIGN_SECURABLE": [],
+    "MANAGE_ALLOWLIST": [],
+    "CREATE_VOLUME": [],
+    "CREATE_EXTERNAL_VOLUME": [],
+    "READ_VOLUME": [],
+    "WRITE_VOLUME": [],
+    "MANAGE": [],
+    "BROWSE": [],
+    "CREATE_CLEAN_ROOM": [],
+    "MODIFY_CLEAN_ROOM": [],
+    "EXECUTE_CLEAN_ROOM_TASK": [],
+    "EXTERNAL_USE_SCHEMA": []
+  },
+  "PrivilegeParam": [],
+  "Volume": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "VolumeDict": {},
+  "VolumeParam": [],
+  "PostgresSlotConfig": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "PostgresSlotConfigDict": {},
+  "PostgresSlotConfigParam": [],
+  "PipelinesEnvironment": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "PipelinesEnvironmentDict": {},
+  "PipelinesEnvironmentParam": [],
+  "InitScriptInfo": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "InitScriptInfoDict": {},
+  "InitScriptInfoParam": [],
+  "DbfsStorageInfo": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "DbfsStorageInfoDict": {},
+  "DbfsStorageInfoParam": [],
+  "AutoFullRefreshPolicy": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "AutoFullRefreshPolicyDict": {},
+  "AutoFullRefreshPolicyParam": [],
+  "Notifications": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "NotificationsDict": {},
+  "NotificationsParam": [],
+  "DataStagingOptions": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "DataStagingOptionsDict": {},
+  "DataStagingOptionsParam": [],
+  "EbsVolumeType": {
+    "GENERAL_PURPOSE_SSD": [],
+    "THROUGHPUT_OPTIMIZED_HDD": []
+  },
+  "EbsVolumeTypeParam": [],
+  "SourceCatalogConfig": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "SourceCatalogConfigDict": {},
+  "SourceCatalogConfigParam": [],
+  "MavenLibrary": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "MavenLibraryDict": {},
+  "MavenLibraryParam": [],
+  "NotebookLibrary": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "NotebookLibraryDict": {},
+  "NotebookLibraryParam": [],
+  "AzureAttributes": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "AzureAttributesDict": {},
+  "AzureAttributesParam": [],
+  "S3StorageInfo": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "S3StorageInfoDict": {},
+  "S3StorageInfoParam": [],
+  "AzureAvailability": {
+    "SPOT_AZURE": [],
+    "ON_DEMAND_AZURE": [],
+    "SPOT_WITH_FALLBACK_AZURE": []
+  },
+  "AzureAvailabilityParam": [],
+  "ConnectionParameters": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "ConnectionParametersDict": {},
+  "ConnectionParametersParam": [],
+  "LogAnalyticsInfo": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "LogAnalyticsInfoDict": {},
+  "LogAnalyticsInfoParam": [],
+  "ClusterLogConf": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "ClusterLogConfDict": {},
+  "ClusterLogConfParam": [],
+  "GcpAvailability": {
+    "PREEMPTIBLE_GCP": [],
+    "ON_DEMAND_GCP": [],
+    "PREEMPTIBLE_WITH_FALLBACK_GCP": []
+  },
+  "GcpAvailabilityParam": [],
+  "WorkspaceStorageInfo": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "WorkspaceStorageInfoDict": {},
+  "WorkspaceStorageInfoParam": [],
+  "SourceConfig": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "SourceConfigDict": {},
+  "SourceConfigParam": [],
+  "SchemaSpec": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "SchemaSpecDict": {},
+  "SchemaSpecParam": [],
+  "AwsAvailability": {
+    "SPOT": [],
+    "ON_DEMAND": [],
+    "SPOT_WITH_FALLBACK": []
+  },
+  "AwsAvailabilityParam": [],
+  "RunAs": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "RunAsDict": {},
+  "RunAsParam": [],
+  "ReportSpec": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "ReportSpecDict": {},
+  "ReportSpecParam": [],
+  "PostgresCatalogConfig": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "PostgresCatalogConfigDict": {},
+  "PostgresCatalogConfigParam": [],
+  "TableSpecificConfig": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "TableSpecificConfigDict": {},
+  "TableSpecificConfigParam": [],
+  "IngestionGatewayPipelineDefinition": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "IngestionGatewayPipelineDefinitionDict": {},
+  "IngestionGatewayPipelineDefinitionParam": [],
+  "TableSpecificConfigScdType": {
+    "SCD_TYPE_1": [],
+    "SCD_TYPE_2": [],
+    "APPEND_ONLY": []
+  },
+  "TableSpecificConfigScdTypeParam": [],
+  "OperationTimeWindow": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "OperationTimeWindowDict": {},
+  "OperationTimeWindowParam": [],
+  "IngestionPipelineDefinitionTableSpecificConfigQueryBasedConnectorConfig": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "IngestionPipelineDefinitionTableSpecificConfigQueryBasedConnectorConfigDict": {},
+  "IngestionPipelineDefinitionTableSpecificConfigQueryBasedConnectorConfigParam": [],
+  "PipelineLibrary": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "PipelineLibraryDict": {},
+  "PipelineLibraryParam": [],
+  "IngestionPipelineDefinitionWorkdayReportParametersQueryKeyValue": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "IngestionPipelineDefinitionWorkdayReportParametersQueryKeyValueDict": {},
+  "IngestionPipelineDefinitionWorkdayReportParametersQueryKeyValueParam": [],
+  "PipelinePermission": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "PipelinePermissionDict": {},
+  "PipelinePermissionParam": [],
+  "Pipeline": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "PipelineDict": {},
+  "PipelineParam": [],
+  "DayOfWeek": {
+    "MONDAY": [],
+    "TUESDAY": [],
+    "WEDNESDAY": [],
+    "THURSDAY": [],
+    "FRIDAY": [],
+    "SATURDAY": [],
+    "SUNDAY": []
+  },
+  "DayOfWeekParam": [],
+  "ConnectorType": {
+    "CDC": [],
+    "QUERY_BASED": []
+  },
+  "ConnectorTypeParam": [],
+  "EventLogSpec": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "EventLogSpecDict": {},
+  "EventLogSpecParam": [],
+  "Filters": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "FiltersDict": {},
+  "FiltersParam": [],
+  "PipelineClusterAutoscale": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "PipelineClusterAutoscaleDict": {},
+  "PipelineClusterAutoscaleParam": [],
+  "PathPattern": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "PathPatternDict": {},
+  "PathPatternParam": [],
+  "GcpAttributes": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "GcpAttributesDict": {},
+  "GcpAttributesParam": [],
+  "IngestionConfig": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "IngestionConfigDict": {},
+  "IngestionConfigParam": [],
+  "TableSpec": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "TableSpecDict": {},
+  "TableSpecParam": [],
+  "PipelineCluster": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "PipelineClusterDict": {},
+  "PipelineClusterParam": [],
+  "FileLibrary": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "FileLibraryDict": {},
+  "FileLibraryParam": [],
+  "Adlsgen2Info": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "Adlsgen2InfoDict": {},
+  "Adlsgen2InfoParam": [],
+  "PipelineClusterAutoscaleMode": {
+    "ENHANCED": [],
+    "LEGACY": []
+  },
+  "PipelineClusterAutoscaleModeParam": [],
+  "IngestionPipelineDefinitionWorkdayReportParameters": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "IngestionPipelineDefinitionWorkdayReportParametersDict": {},
+  "IngestionPipelineDefinitionWorkdayReportParametersParam": [],
+  "IngestionPipelineDefinition": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "IngestionPipelineDefinitionDict": {},
+  "IngestionPipelineDefinitionParam": [],
+  "PipelinePermissionLevel": {
+    "CAN_MANAGE": [],
+    "IS_OWNER": [],
+    "CAN_RUN": [],
+    "CAN_VIEW": []
+  },
+  "PipelinePermissionLevelParam": [],
+  "VolumesStorageInfo": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "VolumesStorageInfoDict": {},
+  "VolumesStorageInfoParam": [],
+  "LocalFileInfo": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "LocalFileInfoDict": {},
+  "LocalFileInfoParam": [],
+  "AwsAttributes": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "AwsAttributesDict": {},
+  "AwsAttributesParam": [],
+  "RestartWindow": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "RestartWindowDict": {},
+  "RestartWindowParam": [],
+  "GcsStorageInfo": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "GcsStorageInfoDict": {},
+  "GcsStorageInfoParam": [],
+  "_resolve_recursive_imports": [],
+  "TaskEmailNotifications": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "TaskEmailNotificationsDict": {},
+  "TaskEmailNotificationsParam": [],
+  "ConditionTask": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "ConditionTaskDict": {},
+  "ConditionTaskParam": [],
+  "CronSchedule": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "CronScheduleDict": {},
+  "CronScheduleParam": [],
+  "RCranLibrary": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "RCranLibraryDict": {},
+  "RCranLibraryParam": [],
+  "ModelTriggerConfiguration": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "ModelTriggerConfigurationDict": {},
+  "ModelTriggerConfigurationParam": [],
+  "AlertTask": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "AlertTaskDict": {},
+  "AlertTaskParam": [],
+  "Subscription": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "SubscriptionDict": {},
+  "SubscriptionParam": [],
+  "JobEnvironment": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "JobEnvironmentDict": {},
+  "JobEnvironmentParam": [],
+  "TaskNotificationSettings": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "TaskNotificationSettingsDict": {},
+  "TaskNotificationSettingsParam": [],
+  "Kind": {
+    "CLASSIC_PREVIEW": []
+  },
+  "KindParam": [],
+  "WebhookNotifications": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "WebhookNotificationsDict": {},
+  "WebhookNotificationsParam": [],
+  "SqlTaskAlert": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "SqlTaskAlertDict": {},
+  "SqlTaskAlertParam": [],
+  "Environment": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "EnvironmentDict": {},
+  "EnvironmentParam": [],
+  "JobsHealthMetric": {
+    "RUN_DURATION_SECONDS": [],
+    "STREAMING_BACKLOG_BYTES": [],
+    "STREAMING_BACKLOG_RECORDS": [],
+    "STREAMING_BACKLOG_SECONDS": [],
+    "STREAMING_BACKLOG_FILES": []
+  },
+  "JobsHealthMetricParam": [],
+  "ComputeConfig": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "ComputeConfigDict": {},
+  "ComputeConfigParam": [],
+  "QueueSettings": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "QueueSettingsDict": {},
+  "QueueSettingsParam": [],
+  "GitSource": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "GitSourceDict": {},
+  "GitSourceParam": [],
+  "SparseCheckout": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "SparseCheckoutDict": {},
+  "SparseCheckoutParam": [],
+  "WorkloadType": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "WorkloadTypeDict": {},
+  "WorkloadTypeParam": [],
+  "Library": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "LibraryDict": {},
+  "LibraryParam": [],
+  "SqlTask": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "SqlTaskDict": {},
+  "SqlTaskParam": [],
+  "ModelTriggerConfigurationCondition": {
+    "MODEL_CREATED": [],
+    "MODEL_VERSION_READY": [],
+    "MODEL_ALIAS_SET": []
+  },
+  "ModelTriggerConfigurationConditionParam": [],
+  "ForEachTask": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "ForEachTaskDict": {},
+  "ForEachTaskParam": [],
+  "SparkJarTask": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "SparkJarTaskDict": {},
+  "SparkJarTaskParam": [],
+  "RunJobTask": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "RunJobTaskDict": {},
+  "RunJobTaskParam": [],
+  "ConditionTaskOp": {
+    "EQUAL_TO": [],
+    "GREATER_THAN": [],
+    "GREATER_THAN_OR_EQUAL": [],
+    "LESS_THAN": [],
+    "LESS_THAN_OR_EQUAL": [],
+    "NOT_EQUAL": []
+  },
+  "ConditionTaskOpParam": [],
+  "AlertTaskSubscriber": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "AlertTaskSubscriberDict": {},
+  "AlertTaskSubscriberParam": [],
+  "PowerBiTable": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "PowerBiTableDict": {},
+  "PowerBiTableParam": [],
+  "SqlTaskSubscription": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "SqlTaskSubscriptionDict": {},
+  "SqlTaskSubscriptionParam": [],
+  "PipelineParams": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "PipelineParamsDict": {},
+  "PipelineParamsParam": [],
+  "PowerBiModel": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "PowerBiModelDict": {},
+  "PowerBiModelParam": [],
+  "JobsHealthRules": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "JobsHealthRulesDict": {},
+  "JobsHealthRulesParam": [],
+  "TaskRetryMode": {
+    "NEVER": [],
+    "ON_FAILURE": []
+  },
+  "TaskRetryModeParam": [],
+  "JobCluster": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "JobClusterDict": {},
+  "JobClusterParam": [],
+  "RunIf": {
+    "ALL_SUCCESS": [],
+    "ALL_DONE": [],
+    "NONE_FAILED": [],
+    "AT_LEAST_ONE_SUCCESS": [],
+    "ALL_FAILED": [],
+    "AT_LEAST_ONE_FAILED": []
+  },
+  "RunIfParam": [],
+  "CleanRoomsNotebookTask": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "CleanRoomsNotebookTaskDict": {},
+  "CleanRoomsNotebookTaskParam": [],
+  "DbtPlatformTask": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "DbtPlatformTaskDict": {},
+  "DbtPlatformTaskParam": [],
+  "RuntimeEngine": {
+    "NULL": [],
+    "STANDARD": [],
+    "PHOTON": []
+  },
+  "RuntimeEngineParam": [],
+  "PipelineTask": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "PipelineTaskDict": {},
+  "PipelineTaskParam": [],
+  "DashboardTask": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "DashboardTaskDict": {},
+  "DashboardTaskParam": [],
+  "Task": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "TaskDict": {},
+  "TaskParam": [],
+  "SqlTaskQuery": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "SqlTaskQueryDict": {},
+  "SqlTaskQueryParam": [],
+  "PowerBiTask": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "PowerBiTaskDict": {},
+  "PowerBiTaskParam": [],
+  "PerformanceTarget": {
+    "PERFORMANCE_OPTIMIZED": [],
+    "STANDARD": []
+  },
+  "PerformanceTargetParam": [],
+  "GitProvider": {
+    "GIT_HUB": [],
+    "BITBUCKET_CLOUD": [],
+    "AZURE_DEV_OPS_SERVICES": [],
+    "GIT_HUB_ENTERPRISE": [],
+    "BITBUCKET_SERVER": [],
+    "GIT_LAB": [],
+    "GIT_LAB_ENTERPRISE_EDITION": [],
+    "AWS_CODE_COMMIT": []
+  },
+  "GitProviderParam": [],
+  "Compute": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "ComputeDict": {},
+  "ComputeParam": [],
+  "DockerBasicAuth": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "DockerBasicAuthDict": {},
+  "DockerBasicAuthParam": [],
+  "TriggerSettings": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "TriggerSettingsDict": {},
+  "TriggerSettingsParam": [],
+  "AuthenticationMethod": {
+    "OAUTH": [],
+    "PAT": []
+  },
+  "AuthenticationMethodParam": [],
+  "TableUpdateTriggerConfiguration": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "TableUpdateTriggerConfigurationDict": {},
+  "TableUpdateTriggerConfigurationParam": [],
+  "FileArrivalTriggerConfiguration": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "FileArrivalTriggerConfigurationDict": {},
+  "FileArrivalTriggerConfigurationParam": [],
+  "Webhook": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "WebhookDict": {},
+  "WebhookParam": [],
+  "JobEmailNotifications": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "JobEmailNotificationsDict": {},
+  "JobEmailNotificationsParam": [],
+  "Job": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "JobDict": {},
+  "JobParam": [],
+  "DockerImage": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "DockerImageDict": {},
+  "DockerImageParam": [],
+  "AutoScale": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "AutoScaleDict": {},
+  "AutoScaleParam": [],
+  "NodeTypeFlexibility": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "NodeTypeFlexibilityDict": {},
+  "NodeTypeFlexibilityParam": [],
+  "PythonPyPiLibrary": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "PythonPyPiLibraryDict": {},
+  "PythonPyPiLibraryParam": [],
+  "PythonWheelTask": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "PythonWheelTaskDict": {},
+  "PythonWheelTaskParam": [],
+  "DataSecurityMode": {
+    "NONE": [],
+    "SINGLE_USER": [],
+    "USER_ISOLATION": [],
+    "LEGACY_TABLE_ACL": [],
+    "LEGACY_PASSTHROUGH": [],
+    "LEGACY_SINGLE_USER": [],
+    "LEGACY_SINGLE_USER_STANDARD": [],
+    "DATA_SECURITY_MODE_STANDARD": [],
+    "DATA_SECURITY_MODE_DEDICATED": [],
+    "DATA_SECURITY_MODE_AUTO": []
+  },
+  "DataSecurityModeParam": [],
+  "DbtTask": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "DbtTaskDict": {},
+  "DbtTaskParam": [],
+  "Source": {
+    "WORKSPACE": [],
+    "GIT": []
+  },
+  "SourceParam": [],
+  "PeriodicTriggerConfigurationTimeUnit": {
+    "HOURS": [],
+    "DAYS": [],
+    "WEEKS": []
+  },
+  "PeriodicTriggerConfigurationTimeUnitParam": [],
+  "SparkSubmitTask": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "SparkSubmitTaskDict": {},
+  "SparkSubmitTaskParam": [],
+  "Condition": {
+    "ANY_UPDATED": [],
+    "ALL_UPDATED": []
+  },
+  "ConditionParam": [],
+  "ClientsTypes": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "ClientsTypesDict": {},
+  "ClientsTypesParam": [],
+  "Continuous": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "ContinuousDict": {},
+  "ContinuousParam": [],
+  "GenAiComputeTask": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "GenAiComputeTaskDict": {},
+  "GenAiComputeTaskParam": [],
+  "PeriodicTriggerConfiguration": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "PeriodicTriggerConfigurationDict": {},
+  "PeriodicTriggerConfigurationParam": [],
+  "StorageMode": {
+    "DIRECT_QUERY": [],
+    "IMPORT": [],
+    "DUAL": []
+  },
+  "StorageModeParam": [],
+  "HardwareAcceleratorType": {
+    "GPU_1X_A10": [],
+    "GPU_8X_H100": []
+  },
+  "HardwareAcceleratorTypeParam": [],
+  "JobPermission": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "JobPermissionDict": {},
+  "JobPermissionParam": [],
+  "JobParameterDefinition": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "JobParameterDefinitionDict": {},
+  "JobParameterDefinitionParam": [],
+  "SubscriptionSubscriber": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "SubscriptionSubscriberDict": {},
+  "SubscriptionSubscriberParam": [],
+  "JobNotificationSettings": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "JobNotificationSettingsDict": {},
+  "JobNotificationSettingsParam": [],
+  "JobRunAs": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "JobRunAsDict": {},
+  "JobRunAsParam": [],
+  "ClusterSpec": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "ClusterSpecDict": {},
+  "ClusterSpecParam": [],
+  "JobsHealthRule": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "JobsHealthRuleDict": {},
+  "JobsHealthRuleParam": [],
+  "JobPermissionLevel": {
+    "CAN_MANAGE": [],
+    "IS_OWNER": [],
+    "CAN_MANAGE_RUN": [],
+    "CAN_VIEW": []
+  },
+  "JobPermissionLevelParam": [],
+  "SparkPythonTask": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "SparkPythonTaskDict": {},
+  "SparkPythonTaskParam": [],
+  "NotebookTask": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "NotebookTaskDict": {},
+  "NotebookTaskParam": [],
+  "SqlTaskFile": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "SqlTaskFileDict": {},
+  "SqlTaskFileParam": [],
+  "JobsHealthOperator": {
+    "GREATER_THAN": []
+  },
+  "JobsHealthOperatorParam": [],
+  "PauseStatus": {
+    "UNPAUSED": [],
+    "PAUSED": []
+  },
+  "PauseStatusParam": [],
+  "SqlTaskDashboard": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "SqlTaskDashboardDict": {},
+  "SqlTaskDashboardParam": [],
+  "TaskDependency": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "TaskDependencyDict": {},
+  "TaskDependencyParam": [],
+  "SchemaGrant": [],
+  "SchemaGrantDict": [],
+  "SchemaGrantParam": [],
+  "SchemaGrantPrivilege": [],
+  "SchemaGrantPrivilegeParam": [],
+  "Schema": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "SchemaDict": {},
+  "SchemaParam": [],
+  "CatalogGrant": [],
+  "CatalogGrantDict": [],
+  "CatalogGrantParam": [],
+  "CatalogGrantPrivilege": [],
+  "CatalogGrantPrivilegeParam": [],
+  "Catalog": {
+    "from_dict": [
+      "cls",
+      "value"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "CatalogDict": {},
+  "CatalogParam": []
+}
