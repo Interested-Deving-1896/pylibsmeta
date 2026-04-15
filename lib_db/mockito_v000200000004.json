@@ -1,0 +1,1413 @@
+{
+  "ArgumentError": {},
+  "__tracebackhide__": [],
+  "_invalid_between": [
+    "between"
+  ],
+  "_get_wanted_verification": [
+    "times",
+    "atleast",
+    "atmost",
+    "between"
+  ],
+  "_get_mock": [
+    "obj",
+    "strict"
+  ],
+  "_get_mock_or_raise": [
+    "obj"
+  ],
+  "verify": [
+    "obj",
+    "times",
+    "atleast",
+    "atmost",
+    "between",
+    "inorder",
+    "_factory"
+  ],
+  "_OMITTED": {
+    "__repr__": [
+      "self"
+    ]
+  },
+  "OMITTED": [],
+  "when": [
+    "obj",
+    "strict"
+  ],
+  "when2": [
+    "fn"
+  ],
+  "patch": [
+    "fn",
+    "attr_or_replacement",
+    "replacement"
+  ],
+  "patch_attr": [
+    "obj_or_path",
+    "attr_or_replacement",
+    "replacement"
+  ],
+  "patch_dict": [
+    "mapping_or_path",
+    "values"
+  ],
+  "expect": [
+    "obj",
+    "strict",
+    "times",
+    "atleast",
+    "atmost",
+    "between"
+  ],
+  "unstub": [],
+  "_partition_unstub_targets": [
+    "objs"
+  ],
+  "_is_unstub_attr_pair_arguments": [
+    "objs"
+  ],
+  "_coerce_unstub_attr_target_tuple": [
+    "target"
+  ],
+  "_normalize_unstub_attr_target": [
+    "host",
+    "attr_name"
+  ],
+  "_looks_like_attr_name": [
+    "value"
+  ],
+  "_unstub_attr_target": [
+    "host",
+    "attr_name"
+  ],
+  "_resolve_unstub_attr_target": [
+    "target"
+  ],
+  "_unwrap_unstub_target": [
+    "target"
+  ],
+  "forget_invocations": [],
+  "ensureNoUnverifiedInteractions": [],
+  "verifyZeroInteractions": [],
+  "verifyExpectedInteractions": [],
+  "verifyStubbedInvocationsAreUsed": [],
+  "verifyNoMoreInteractions": [],
+  "verifyNoUnwantedInteractions": [],
+  "NEEDS_OS_PATH_HACK": [],
+  "MISSING_ATTRIBUTE": [],
+  "contains_strict": [
+    "seq",
+    "element"
+  ],
+  "newmethod": [
+    "fn",
+    "obj"
+  ],
+  "get_original_attribute": [
+    "obj",
+    "attr_name",
+    "default"
+  ],
+  "get_function_host": [
+    "fn"
+  ],
+  "FIND_ID": [],
+  "find_invoking_frame_and_try_parse": [],
+  "get_obj": [
+    "path"
+  ],
+  "get_obj_attr_tuple": [
+    "path"
+  ],
+  "_RestoreInformation": {},
+  "restore_patch_contextmanager": [
+    "patch",
+    "yield_value"
+  ],
+  "Patcher": {
+    "__init__": [
+      "self"
+    ],
+    "patch_attribute": [
+      "self",
+      "obj",
+      "attr_name",
+      "replacement"
+    ],
+    "patch_dictionary": [
+      "self",
+      "target",
+      "updates"
+    ],
+    "unstub_matching": [
+      "self",
+      "obj"
+    ],
+    "unstub_attribute": [
+      "self",
+      "obj",
+      "attr_name"
+    ],
+    "unstub_all": [
+      "self"
+    ],
+    "unregister_patch": [
+      "self",
+      "patch"
+    ],
+    "_register_patch": [
+      "self",
+      "patch"
+    ],
+    "capture_restore_information": [
+      "self",
+      "patch"
+    ],
+    "stack_for_attr_patch": [
+      "self",
+      "patch"
+    ],
+    "has_restore_information": [
+      "self",
+      "obj",
+      "attr_name"
+    ],
+    "find_restore_information": [
+      "self",
+      "obj",
+      "attr_name"
+    ],
+    "remove_restore_information": [
+      "self",
+      "restore_info"
+    ]
+  },
+  "_capture_restore_information": [
+    "obj",
+    "attr_name"
+  ],
+  "_restore_original_attribute": [
+    "restore_info"
+  ],
+  "Patch": {
+    "__init__": [
+      "self",
+      "registry"
+    ],
+    "apply": [
+      "self"
+    ],
+    "restore": [
+      "self"
+    ],
+    "matches_unstub_target": [
+      "self",
+      "obj"
+    ],
+    "restore_and_unregister": [
+      "self"
+    ]
+  },
+  "_AttrPatch": {
+    "__init__": [
+      "self",
+      "registry",
+      "obj",
+      "attr_name",
+      "replacement"
+    ],
+    "apply": [
+      "self"
+    ],
+    "restore": [
+      "self"
+    ],
+    "matches_unstub_target": [
+      "self",
+      "obj"
+    ]
+  },
+  "_DictPatch": {
+    "__init__": [
+      "self",
+      "registry",
+      "target",
+      "updates"
+    ],
+    "apply": [
+      "self"
+    ],
+    "restore": [
+      "self"
+    ],
+    "matches_unstub_target": [
+      "self",
+      "obj"
+    ]
+  },
+  "_has_data_descriptor_on_type": [
+    "obj",
+    "attr_name"
+  ],
+  "patcher": [],
+  "InOrder": {
+    "__init__": [
+      "self"
+    ],
+    "verify": [
+      "self",
+      "obj",
+      "times",
+      "atleast",
+      "atmost",
+      "between"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ]
+  },
+  "InOrderImpl": {
+    "__init__": [
+      "self"
+    ],
+    "_is_observed": [
+      "self",
+      "obj"
+    ],
+    "_register_observer": [
+      "self"
+    ],
+    "_unregister_observer": [
+      "self"
+    ],
+    "_attach_all": [
+      "self"
+    ],
+    "_detach_all": [
+      "self"
+    ],
+    "_on_mock_registered": [
+      "self",
+      "obj",
+      "mock"
+    ],
+    "update": [
+      "self",
+      "invocation"
+    ],
+    "verify": [
+      "self",
+      "obj",
+      "times",
+      "atleast",
+      "atmost",
+      "between"
+    ],
+    "close": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ],
+    "_callsite_label_for_obj": [
+      "self",
+      "obj"
+    ],
+    "_label_for_obj": [
+      "self",
+      "obj"
+    ],
+    "_label_for_mock": [
+      "self",
+      "mock"
+    ],
+    "_format_invocation": [
+      "self",
+      "mock",
+      "invocation"
+    ],
+    "_guess_object_labels_from_callsite": [
+      "self",
+      "count"
+    ],
+    "_find_inorder_call_for_lineno": [
+      "self",
+      "tree",
+      "lineno"
+    ],
+    "_is_inorder_constructor_call": [
+      "self",
+      "node"
+    ]
+  },
+  "InOrderVerifiableInvocation": {
+    "__init__": [
+      "self",
+      "mock",
+      "method_name",
+      "verification",
+      "inorder"
+    ],
+    "__call__": [
+      "self"
+    ],
+    "handle_zero_matches_if_allowed": [
+      "self"
+    ]
+  },
+  "__all__": [],
+  "SUPPORTS_MARKCOROUTINEFUNCTION": [],
+  "_CONFIG_ASYNC_PREFIX": [],
+  "_ASYNC_BY_PROTOCOL_METHODS": [],
+  "_Dummy": {
+    "__call__": [
+      "self"
+    ]
+  },
+  "remembered_invocation_builder": [
+    "mock",
+    "method_name",
+    "discard_first_arg"
+  ],
+  "ANSWER_SELECTOR_METHODS": [],
+  "Chain": {
+    "__add__": [
+      "self",
+      "segment"
+    ],
+    "new_segment": [
+      "self",
+      "name"
+    ],
+    "rollback": [
+      "self"
+    ]
+  },
+  "Segment": {},
+  "_chain_segment": [
+    "chain",
+    "name"
+  ],
+  "_wait_for_attr": [
+    "chain"
+  ],
+  "_materialize_method_segment": [
+    "chain",
+    "name",
+    "args",
+    "kwargs"
+  ],
+  "_materialize_property_segment": [
+    "chain",
+    "name"
+  ],
+  "_transition_to_child_chain": [
+    "segments"
+  ],
+  "_ensure_target_is_callable": [
+    "theMock",
+    "method_name"
+  ],
+  "_ensure_target_is_not_callable": [
+    "theMock",
+    "method_name"
+  ],
+  "_should_continue_with_stubbed_invocation": [
+    "value",
+    "allow_classes",
+    "spec"
+  ],
+  "_mocked_property": {
+    "__init__": [
+      "self",
+      "mock",
+      "method_name"
+    ],
+    "__get__": [
+      "self",
+      "obj",
+      "type"
+    ],
+    "__set__": [
+      "self",
+      "obj",
+      "value"
+    ],
+    "__delete__": [
+      "self",
+      "obj"
+    ]
+  },
+  "Mock": {
+    "__init__": [
+      "self",
+      "mocked_obj",
+      "strict",
+      "spec"
+    ],
+    "attach": [
+      "self",
+      "observer"
+    ],
+    "detach": [
+      "self",
+      "observer"
+    ],
+    "remember": [
+      "self",
+      "invocation"
+    ],
+    "finish_stubbing": [
+      "self",
+      "stubbed_invocation"
+    ],
+    "clear_invocations": [
+      "self"
+    ],
+    "continuation_for": [
+      "self",
+      "invoc"
+    ],
+    "set_continuation": [
+      "self",
+      "continuation"
+    ],
+    "_sameish_invocations": [
+      "self",
+      "same"
+    ],
+    "_invocations_are_sameish": [
+      "self",
+      "left",
+      "right"
+    ],
+    "get_original_method": [
+      "self",
+      "method_name"
+    ],
+    "peek_original_method": [
+      "self",
+      "method_name"
+    ],
+    "property_access_context": [
+      "self",
+      "method_name",
+      "obj",
+      "type_"
+    ],
+    "get_current_property_access": [
+      "self",
+      "method_name"
+    ],
+    "_get_original_method_before_stub": [
+      "self",
+      "method_name"
+    ],
+    "replace_method": [
+      "self",
+      "method_name",
+      "original_method"
+    ],
+    "stub": [
+      "self",
+      "method_name"
+    ],
+    "stub_property": [
+      "self",
+      "method_name"
+    ],
+    "forget_stubbed_invocation": [
+      "self",
+      "invocation"
+    ],
+    "unstub_method": [
+      "self",
+      "method_name"
+    ],
+    "unstub": [
+      "self"
+    ],
+    "mark_as_coroutine": [
+      "self",
+      "method_name"
+    ],
+    "is_marked_as_coroutine": [
+      "self",
+      "method_name"
+    ],
+    "method_expects_awaitable": [
+      "self",
+      "method_name",
+      "original_method"
+    ],
+    "has_method": [
+      "self",
+      "method_name"
+    ],
+    "get_signature": [
+      "self",
+      "method_name"
+    ],
+    "will_have_self_or_cls": [
+      "self",
+      "method_name"
+    ],
+    "_takes_implicit_self_or_cls": [
+      "self",
+      "original_method"
+    ]
+  },
+  "_is_coroutine_method": [
+    "method"
+  ],
+  "mock": [
+    "config_or_spec",
+    "spec",
+    "strict"
+  ],
+  "_configure_mock_from_shorthand": [
+    "theMock",
+    "Dummy",
+    "obj",
+    "raw_name",
+    "value",
+    "configured_names"
+  ],
+  "_normalize_config_key": [
+    "raw_name"
+  ],
+  "_stub_from_shorthand": [
+    "theMock",
+    "method_name"
+  ],
+  "_widen_zero_arg_callable": [
+    "function"
+  ],
+  "_normalize_iter_answer": [
+    "value"
+  ],
+  "_normalize_aiter_answer": [
+    "value"
+  ],
+  "_normalize_aiter_result": [
+    "value"
+  ],
+  "spy": [
+    "object"
+  ],
+  "spy2": [
+    "fn"
+  ],
+  "__version__": [],
+  "version": [],
+  "__version_tuple__": [],
+  "version_tuple": [],
+  "__commit_id__": [],
+  "commit_id": [],
+  "builtin_any": [],
+  "_ArgsSentinel": {
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ARGS_SENTINEL": [],
+  "ARGS": [],
+  "args": [],
+  "KWARGS_SENTINEL": [],
+  "KWARGS": [],
+  "kwargs": [],
+  "MatcherError": {},
+  "Matcher": {
+    "matches": [
+      "self",
+      "arg"
+    ]
+  },
+  "Capturing": {
+    "capture_value": [
+      "self",
+      "value"
+    ]
+  },
+  "Any": {
+    "__init__": [
+      "self",
+      "wanted_type"
+    ],
+    "matches": [
+      "self",
+      "arg"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "_any_wanted_type_label": [
+    "wanted_type"
+  ],
+  "_type_label": [
+    "type_"
+  ],
+  "ValueMatcher": {
+    "__init__": [
+      "self",
+      "value"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "Eq": {
+    "matches": [
+      "self",
+      "arg"
+    ]
+  },
+  "Neq": {
+    "matches": [
+      "self",
+      "arg"
+    ]
+  },
+  "Lt": {
+    "matches": [
+      "self",
+      "arg"
+    ]
+  },
+  "Lte": {
+    "matches": [
+      "self",
+      "arg"
+    ]
+  },
+  "Gt": {
+    "matches": [
+      "self",
+      "arg"
+    ]
+  },
+  "Gte": {
+    "matches": [
+      "self",
+      "arg"
+    ]
+  },
+  "And": {
+    "__init__": [
+      "self",
+      "matchers"
+    ],
+    "matches": [
+      "self",
+      "arg"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "Or": {
+    "__init__": [
+      "self",
+      "matchers"
+    ],
+    "matches": [
+      "self",
+      "arg"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "Not": {
+    "__init__": [
+      "self",
+      "matcher"
+    ],
+    "matches": [
+      "self",
+      "arg"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ArgThat": {
+    "__init__": [
+      "self",
+      "predicate"
+    ],
+    "matches": [
+      "self",
+      "arg"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "_arg_that_predicate_label": [
+    "predicate"
+  ],
+  "_arg_that_predicate_label_unchecked": [
+    "predicate"
+  ],
+  "_arg_that_partial_label": [
+    "predicate"
+  ],
+  "_line_of_callable": [
+    "value"
+  ],
+  "_safe_getattr": [
+    "value",
+    "name",
+    "default"
+  ],
+  "_safe_repr": [
+    "value"
+  ],
+  "_label_with_line": [
+    "label",
+    "line_number"
+  ],
+  "Contains": {
+    "__init__": [
+      "self",
+      "sub"
+    ],
+    "matches": [
+      "self",
+      "arg"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "Matches": {
+    "__init__": [
+      "self",
+      "regex",
+      "flags"
+    ],
+    "matches": [
+      "self",
+      "arg"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "_explicit_regex_flags": [
+    "regex",
+    "flags"
+  ],
+  "ArgumentCaptor": {
+    "__init__": [
+      "self",
+      "matcher"
+    ],
+    "matches": [
+      "self",
+      "arg"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "keys": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "value": [
+      "self"
+    ],
+    "capture_value": [
+      "self",
+      "value"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "CallCaptor": {
+    "__init__": [
+      "self"
+    ],
+    "value": [
+      "self"
+    ],
+    "capture_call": [
+      "self",
+      "args",
+      "kwargs"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "CaptorArgsSentinel": {
+    "__init__": [
+      "self",
+      "captor"
+    ],
+    "matches": [
+      "self",
+      "args"
+    ],
+    "capture_value": [
+      "self",
+      "value"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "CaptorKwargsSentinel": {
+    "__init__": [
+      "self",
+      "captor"
+    ],
+    "matches": [
+      "self",
+      "kwargs"
+    ],
+    "capture_value": [
+      "self",
+      "value"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "is_call_captor": [
+    "value"
+  ],
+  "is_captor_args_sentinel": [
+    "value"
+  ],
+  "is_captor_kwargs_sentinel": [
+    "value"
+  ],
+  "is_args_sentinel": [
+    "value"
+  ],
+  "any": [
+    "wanted_type"
+  ],
+  "ANY": [],
+  "any_": [],
+  "eq": [
+    "value"
+  ],
+  "neq": [
+    "value"
+  ],
+  "lt": [
+    "value"
+  ],
+  "lte": [
+    "value"
+  ],
+  "gt": [
+    "value"
+  ],
+  "gte": [
+    "value"
+  ],
+  "and_": [],
+  "or_": [],
+  "not_": [
+    "matcher"
+  ],
+  "arg_that": [
+    "predicate"
+  ],
+  "contains": [
+    "sub"
+  ],
+  "matches": [
+    "regex",
+    "flags"
+  ],
+  "captor": [
+    "matcher"
+  ],
+  "call_captor": [],
+  "times": [
+    "count"
+  ],
+  "get_signature": [
+    "obj",
+    "method_name"
+  ],
+  "match_signature": [
+    "sig",
+    "args",
+    "kwargs"
+  ],
+  "match_signature_allowing_placeholders": [
+    "sig",
+    "args",
+    "kwargs"
+  ],
+  "positional_arguments": [
+    "sig"
+  ],
+  "has_var_keyword": [
+    "sig"
+  ],
+  "VerificationError": {},
+  "VerificationMode": {
+    "verify": [
+      "self",
+      "invocation",
+      "actual_count"
+    ]
+  },
+  "AtLeast": {
+    "__init__": [
+      "self",
+      "wanted_count"
+    ],
+    "verify": [
+      "self",
+      "invocation",
+      "actual_count"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "AtMost": {
+    "__init__": [
+      "self",
+      "wanted_count"
+    ],
+    "verify": [
+      "self",
+      "invocation",
+      "actual_count"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "Between": {
+    "__init__": [
+      "self",
+      "wanted_from",
+      "wanted_to"
+    ],
+    "verify": [
+      "self",
+      "invocation",
+      "actual_count"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "Times": {
+    "__init__": [
+      "self",
+      "wanted_count"
+    ],
+    "verify": [
+      "self",
+      "invocation",
+      "actual_count"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "error_message_for_unmatched_invocation": [
+    "invocation"
+  ],
+  "never": [],
+  "RegisterObserver": [],
+  "K": [],
+  "V": [],
+  "T": [],
+  "MockRegistry": {
+    "__init__": [
+      "self"
+    ],
+    "register": [
+      "self",
+      "obj",
+      "mock"
+    ],
+    "add_register_observer": [
+      "self",
+      "observer"
+    ],
+    "remove_register_observer": [
+      "self",
+      "observer"
+    ],
+    "_prune_dead_register_observers": [
+      "self"
+    ],
+    "mock_for": [
+      "self",
+      "obj"
+    ],
+    "obj_for": [
+      "self",
+      "mock"
+    ],
+    "unstub": [
+      "self",
+      "obj"
+    ],
+    "unstub_mock": [
+      "self",
+      "mock"
+    ],
+    "unstub_all": [
+      "self"
+    ],
+    "get_registered_mocks": [
+      "self"
+    ]
+  },
+  "IdentityMap": {
+    "__init__": [
+      "self"
+    ],
+    "__setitem__": [
+      "self",
+      "key",
+      "value"
+    ],
+    "remove": [
+      "self",
+      "key"
+    ],
+    "pop": [
+      "self",
+      "key"
+    ],
+    "pop_value": [
+      "self",
+      "value"
+    ],
+    "get": [
+      "self",
+      "key",
+      "default"
+    ],
+    "lookup": [
+      "self",
+      "value",
+      "default"
+    ],
+    "values": [
+      "self"
+    ],
+    "clear": [
+      "self"
+    ]
+  },
+  "mock_registry": [],
+  "invocations_are_sameish": [
+    "left",
+    "right"
+  ],
+  "invocations_have_distinct_captors": [
+    "left",
+    "right"
+  ],
+  "_params_are_sameish": [
+    "left",
+    "right"
+  ],
+  "_named_params_are_sameish": [
+    "left",
+    "right"
+  ],
+  "_values_are_sameish": [
+    "left",
+    "right"
+  ],
+  "_matchers_are_sameish": [
+    "left",
+    "right"
+  ],
+  "_values_bind_distinct_captors": [
+    "left",
+    "right"
+  ],
+  "_captor_binding": [
+    "value"
+  ],
+  "_equals_or_identity": [
+    "left",
+    "right"
+  ],
+  "InvocationError": {},
+  "AnswerError": {},
+  "UnconfiguredContinuation": {},
+  "ValueContinuation": {},
+  "ChainContinuation": {},
+  "Continuation": [],
+  "ConfiguredContinuation": [],
+  "Invocation": {
+    "__init__": [
+      "self",
+      "mock",
+      "method_name"
+    ],
+    "_remember_params": [
+      "self",
+      "params",
+      "named_params"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "RealInvocation": {
+    "__init__": [
+      "self",
+      "mock",
+      "method_name"
+    ]
+  },
+  "RememberedInvocation": {
+    "__init__": [
+      "self",
+      "mock",
+      "method_name",
+      "discard_first_arg"
+    ],
+    "ensure_mocked_object_has_method": [
+      "self",
+      "method_name"
+    ],
+    "ensure_signature_matches": [
+      "self",
+      "method_name",
+      "args",
+      "kwargs"
+    ],
+    "__call__": [
+      "self"
+    ]
+  },
+  "RememberedPropertyAccess": {
+    "ensure_mocked_object_has_method": [
+      "self",
+      "method_name"
+    ],
+    "ensure_signature_matches": [
+      "self",
+      "method_name",
+      "args",
+      "kwargs"
+    ]
+  },
+  "RememberedProxyInvocation": {
+    "__call__": [
+      "self"
+    ]
+  },
+  "MatchingInvocation": {
+    "compare": [
+      "p1",
+      "p2"
+    ],
+    "capture_arguments": [
+      "self",
+      "invocation"
+    ],
+    "_remember_params": [
+      "self",
+      "params",
+      "named_params"
+    ],
+    "matches": [
+      "self",
+      "invocation"
+    ],
+    "_get_call_captor": [
+      "self"
+    ]
+  },
+  "VerifiableInvocation": {
+    "__init__": [
+      "self",
+      "mock",
+      "method_name",
+      "verification"
+    ],
+    "__call__": [
+      "self"
+    ],
+    "maybe_check_stubs_as_used": [
+      "self"
+    ]
+  },
+  "verification_has_lower_bound_of_zero": [
+    "verification"
+  ],
+  "StubbedInvocation": {
+    "__init__": [
+      "self",
+      "mock",
+      "method_name",
+      "verification",
+      "strict",
+      "parent_invocation"
+    ],
+    "ensure_mocked_object_has_method": [
+      "self",
+      "method_name"
+    ],
+    "ensure_signature_matches": [
+      "self",
+      "method_name",
+      "args",
+      "kwargs"
+    ],
+    "__call__": [
+      "self"
+    ],
+    "forget_self": [
+      "self"
+    ],
+    "_maybe_forget_parent_chain_invocation": [
+      "self"
+    ],
+    "rollback_if_not_configured_by": [
+      "self",
+      "continuation"
+    ],
+    "get_continuation": [
+      "self"
+    ],
+    "transition_to_value": [
+      "self"
+    ],
+    "transition_to_chain": [
+      "self"
+    ],
+    "pop_verification": [
+      "self"
+    ],
+    "add_answer": [
+      "self",
+      "answer"
+    ],
+    "answer_first": [
+      "self"
+    ],
+    "should_answer": [
+      "self",
+      "invocation"
+    ],
+    "verify": [
+      "self"
+    ],
+    "check_used": [
+      "self"
+    ]
+  },
+  "StubbedPropertyAccess": {
+    "ensure_mocked_object_has_attribute": [
+      "self",
+      "method_name"
+    ],
+    "__call__": [
+      "self"
+    ]
+  },
+  "create_chain_mock": [],
+  "return_": [
+    "value"
+  ],
+  "return_awaitable": [
+    "value"
+  ],
+  "raise_": [
+    "exception"
+  ],
+  "raise_awaitable": [
+    "exception"
+  ],
+  "discard_self": [
+    "function"
+  ],
+  "as_awaitable": [
+    "function"
+  ],
+  "is_awaitable_when_called": [
+    "function"
+  ],
+  "AnswerSelector": {
+    "__init__": [
+      "self",
+      "invocation",
+      "expects_awaitable",
+      "discard_first_arg"
+    ],
+    "thenReturn": [
+      "self"
+    ],
+    "thenRaise": [
+      "self"
+    ],
+    "thenAnswer": [
+      "self"
+    ],
+    "thenCallOriginalImplementation": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self"
+    ],
+    "_property_descriptor_answer": [
+      "self",
+      "descriptor"
+    ],
+    "_then": [
+      "self",
+      "answer"
+    ]
+  },
+  "CompositeAnswer": {
+    "__init__": [
+      "self",
+      "default_answer"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "add": [
+      "self",
+      "answer"
+    ],
+    "answer": [
+      "self"
+    ]
+  }
+}
