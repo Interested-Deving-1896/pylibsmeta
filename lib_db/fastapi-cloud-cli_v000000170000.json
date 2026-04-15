@@ -1,0 +1,385 @@
+{
+  "Settings": {
+    "from_user_settings": [
+      "cls",
+      "config_path"
+    ],
+    "get": [
+      "cls"
+    ]
+  },
+  "setup_logging": [
+    "terminal_width",
+    "level"
+  ],
+  "app": [],
+  "version_callback": [
+    "value"
+  ],
+  "cloud_app": [],
+  "cloud_main": [
+    "version"
+  ],
+  "main": [],
+  "__version__": [],
+  "get_config_folder": [],
+  "get_auth_path": [],
+  "get_cli_config_path": [],
+  "logger": [],
+  "AppConfig": {},
+  "get_app_config": [
+    "path_to_deploy"
+  ],
+  "README": [],
+  "write_app_config": [
+    "path_to_deploy",
+    "app_config"
+  ],
+  "SENTRY_DSN": [],
+  "init_sentry": [],
+  "AuthMode": [],
+  "AuthConfig": {},
+  "write_auth_config": [
+    "auth_data"
+  ],
+  "delete_auth_config": [],
+  "read_auth_config": [],
+  "_get_auth_token": [],
+  "_is_jwt_expired": [
+    "token"
+  ],
+  "Identity": {
+    "__init__": [
+      "self"
+    ],
+    "user_token": [
+      "self"
+    ],
+    "deploy_token": [
+      "self"
+    ],
+    "is_user_token_expired": [
+      "self"
+    ],
+    "is_logged_in": [
+      "self"
+    ],
+    "has_deploy_token": [
+      "self"
+    ]
+  },
+  "ProgressFile": {
+    "__init__": [
+      "self",
+      "file",
+      "progress_callback",
+      "update_interval"
+    ],
+    "read": [
+      "self",
+      "n"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ]
+  },
+  "FastAPIStyle": {
+    "__init__": [
+      "self",
+      "tag_width"
+    ],
+    "_get_tag_segments": [
+      "self",
+      "metadata",
+      "is_animated",
+      "done",
+      "animation_status"
+    ]
+  },
+  "get_rich_toolkit": [
+    "minimal"
+  ],
+  "validate_environment_variable_name": [
+    "name"
+  ],
+  "STREAM_LOGS_MAX_RETRIES": [],
+  "STREAM_LOGS_TIMEOUT": [],
+  "StreamLogError": {
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "TooManyRetriesError": {},
+  "AppLogEntry": {},
+  "BuildLogLineGeneric": {},
+  "BuildLogLineMessage": {},
+  "BuildLogLine": [],
+  "attempt": [
+    "attempt_number"
+  ],
+  "P": [],
+  "T": [],
+  "attempts": [
+    "total_attempts",
+    "timeout"
+  ],
+  "DeploymentStatus": {
+    "waiting_upload": [],
+    "upload_cancelled": [],
+    "ready_for_build": [],
+    "building": [],
+    "extracting": [],
+    "extracting_failed": [],
+    "building_image": [],
+    "building_image_failed": [],
+    "deploying": [],
+    "deploying_failed": [],
+    "verifying": [],
+    "verifying_failed": [],
+    "verifying_skipped": [],
+    "success": [],
+    "expired": [],
+    "failed": [],
+    "to_human_readable": [
+      "cls",
+      "status"
+    ]
+  },
+  "SUCCESSFUL_STATUSES": [],
+  "FAILED_STATUSES": [],
+  "TERMINAL_STATUSES": [],
+  "POLL_INTERVAL": [],
+  "POLL_TIMEOUT": [],
+  "POLL_MAX_RETRIES": [],
+  "_handle_unauthorized": [
+    "auth_mode"
+  ],
+  "handle_http_error": [
+    "error",
+    "default_message",
+    "auth_mode"
+  ],
+  "APIClient": {
+    "__init__": [
+      "self",
+      "use_deploy_token"
+    ],
+    "handle_http_errors": [
+      "self",
+      "progress",
+      "default_message"
+    ],
+    "stream_build_logs": [
+      "self",
+      "deployment_id"
+    ],
+    "_parse_log_line": [
+      "self",
+      "line"
+    ],
+    "stream_app_logs": [
+      "self",
+      "app_id",
+      "tail",
+      "since",
+      "follow"
+    ],
+    "poll_deployment_status": [
+      "self",
+      "app_id",
+      "deployment_id"
+    ]
+  },
+  "unlink": [],
+  "TOKEN_EXPIRES_DAYS": [],
+  "DEFAULT_WORKFLOW_PATH": [],
+  "GitHubSecretError": {},
+  "_get_github_host": [
+    "origin"
+  ],
+  "_repo_slug_from_origin": [
+    "origin"
+  ],
+  "_check_git_installed": [],
+  "_check_gh_cli_installed": [],
+  "_get_remote_origin": [],
+  "_set_github_secret": [
+    "name",
+    "value"
+  ],
+  "_create_token": [
+    "client",
+    "app_id",
+    "token_name"
+  ],
+  "_get_default_branch": [],
+  "_write_workflow_file": [
+    "branch",
+    "workflow_path"
+  ],
+  "setup_ci": [
+    "path",
+    "branch",
+    "secrets_only",
+    "dry_run",
+    "file"
+  ],
+  "validate_app_directory": [
+    "v"
+  ],
+  "AppDirectory": [],
+  "_cancel_upload": [
+    "client",
+    "deployment_id"
+  ],
+  "_get_app_name": [
+    "path"
+  ],
+  "_should_exclude_entry": [
+    "path"
+  ],
+  "archive": [
+    "path",
+    "tar_path"
+  ],
+  "Team": {},
+  "_get_teams": [
+    "client"
+  ],
+  "AppResponse": {},
+  "_update_app": [
+    "client",
+    "app_id",
+    "directory"
+  ],
+  "_create_app": [
+    "client",
+    "team_id",
+    "app_name",
+    "directory"
+  ],
+  "CreateDeploymentResponse": {},
+  "_create_deployment": [
+    "client",
+    "app_id"
+  ],
+  "RequestUploadResponse": {},
+  "_format_size": [
+    "size_in_bytes"
+  ],
+  "_upload_deployment": [
+    "fastapi_client",
+    "deployment_id",
+    "archive_path",
+    "progress"
+  ],
+  "_get_app": [
+    "client",
+    "app_slug"
+  ],
+  "_get_apps": [
+    "client",
+    "team_id"
+  ],
+  "WAITING_MESSAGES": [],
+  "LONG_WAIT_MESSAGES": [],
+  "_configure_app": [
+    "toolkit",
+    "client",
+    "path_to_deploy"
+  ],
+  "_verify_deployment": [
+    "toolkit",
+    "client",
+    "app_id",
+    "deployment"
+  ],
+  "_wait_for_deployment": [
+    "toolkit",
+    "client",
+    "app_id",
+    "deployment"
+  ],
+  "SignupToWaitingList": {},
+  "_send_waitlist_form": [
+    "result",
+    "toolkit"
+  ],
+  "_waitlist_form": [
+    "toolkit"
+  ],
+  "deploy": [
+    "path",
+    "skip_wait",
+    "provided_app_id"
+  ],
+  "LOG_LEVEL_COLORS": [],
+  "SINCE_PATTERN": [],
+  "_validate_since": [
+    "value"
+  ],
+  "_format_log_line": [
+    "log"
+  ],
+  "_process_log_stream": [
+    "toolkit",
+    "app_config",
+    "tail",
+    "since",
+    "follow"
+  ],
+  "logs": [
+    "path",
+    "tail",
+    "since",
+    "follow"
+  ],
+  "whoami": [],
+  "logout": [],
+  "AuthorizationData": {},
+  "TokenResponse": {},
+  "_start_device_authorization": [
+    "client"
+  ],
+  "_fetch_access_token": [
+    "client",
+    "device_code",
+    "interval"
+  ],
+  "login": [],
+  "EnvironmentVariable": {},
+  "EnvironmentVariableResponse": {},
+  "_get_environment_variables": [
+    "client",
+    "app_id"
+  ],
+  "_delete_environment_variable": [
+    "client",
+    "app_id",
+    "name"
+  ],
+  "_set_environment_variable": [
+    "client",
+    "app_id",
+    "name",
+    "value",
+    "is_secret"
+  ],
+  "env_app": [],
+  "list": [
+    "path"
+  ],
+  "delete": [
+    "name",
+    "path"
+  ],
+  "set": [
+    "name",
+    "value",
+    "path",
+    "secret"
+  ],
+  "link": []
+}
