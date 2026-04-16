@@ -1,0 +1,1834 @@
+{
+  "SCHEMA_RULES_PATH": [],
+  "Severity": {
+    "error": [],
+    "warning": []
+  },
+  "AppliesTo": {
+    "format2": [],
+    "native": []
+  },
+  "Scope": {
+    "both": [],
+    "strict": [],
+    "lax": []
+  },
+  "SchemaRuleTests": {},
+  "SchemaRule": {},
+  "load_schema_rules": [],
+  "PathElement": [],
+  "_UNSET": [],
+  "_TYPE_MAP": [],
+  "Assertion": {
+    "model_config": [],
+    "_check_exactly_one_mode": [
+      "self"
+    ]
+  },
+  "TestCase": {},
+  "ExpectationSuite": {
+    "from_yaml": [
+      "cls",
+      "path"
+    ]
+  },
+  "navigate": [
+    "obj",
+    "path"
+  ],
+  "assert_value": [
+    "obj",
+    "expected"
+  ],
+  "assert_value_contains": [
+    "obj",
+    "expected"
+  ],
+  "assert_value_any_contains": [
+    "obj",
+    "expected"
+  ],
+  "assert_value_set": [
+    "obj",
+    "expected_items"
+  ],
+  "assert_value_matches": [
+    "obj",
+    "pattern"
+  ],
+  "assert_value_truthy": [
+    "obj"
+  ],
+  "assert_value_falsy": [
+    "obj"
+  ],
+  "assert_value_type": [
+    "obj",
+    "expected_type"
+  ],
+  "load_expectation_cases": [
+    "expectations_dir"
+  ],
+  "run_assertion": [
+    "obj",
+    "assertion"
+  ],
+  "run_declarative_case": [
+    "case",
+    "operations",
+    "load_fixture"
+  ],
+  "DeclarativeTestSuite": {
+    "__init__": [
+      "self",
+      "operations",
+      "load_fixture",
+      "expectations_dir",
+      "cases"
+    ],
+    "cases": [
+      "self"
+    ],
+    "pytest_params": [
+      "self"
+    ],
+    "run": [
+      "self",
+      "test_id",
+      "case"
+    ]
+  },
+  "CWL_VERSION": [],
+  "SCRIPT_DESCRIPTION": [],
+  "from_dict": [
+    "workflow_dict",
+    "subworkflow"
+  ],
+  "_step_to_abstract": [
+    "step",
+    "requirements"
+  ],
+  "_step_inputs_to_abstract": [
+    "step"
+  ],
+  "_step_outputs_to_abstract": [
+    "step"
+  ],
+  "_inputs_to_abstract": [
+    "inputs"
+  ],
+  "_galaxy_type_to_cwl": [
+    "galaxy_type"
+  ],
+  "_outputs_to_abstract": [
+    "outputs"
+  ],
+  "_ensure_implicit_step_outs": [
+    "nf2"
+  ],
+  "main": [
+    "argv"
+  ],
+  "_parser": [],
+  "__all__": [],
+  "LintLevel": {
+    "ERROR": [],
+    "WARN": [],
+    "ALL": []
+  },
+  "LEVEL_ALL": [],
+  "LEVEL_WARN": [],
+  "LEVEL_ERROR": [],
+  "DEFAULT_TRAINING_LINT": [],
+  "LintMessage": {
+    "__new__": [
+      "cls",
+      "message"
+    ]
+  },
+  "Linter": {},
+  "_escape_pointer_segment": [
+    "segment"
+  ],
+  "LintContext": {
+    "__init__": [
+      "self",
+      "level",
+      "training_topic",
+      "_pointer"
+    ],
+    "child": [
+      "self",
+      "pointer_segment"
+    ],
+    "error": [
+      "self",
+      "message"
+    ],
+    "warn": [
+      "self",
+      "message"
+    ],
+    "_emit": [
+      "self",
+      "message_list",
+      "level",
+      "message",
+      "args",
+      "kwds",
+      "linter",
+      "json_pointer"
+    ],
+    "print_messages": [
+      "self"
+    ]
+  },
+  "EXIT_CODE_SUCCESS": [],
+  "EXIT_CODE_LINT_FAILED": [],
+  "EXIT_CODE_FORMAT_ERROR": [],
+  "EXIT_CODE_FILE_PARSE_FAILED": [],
+  "LINT_FAILED_NO_OUTPUTS": [],
+  "LINT_FAILED_OUTPUT_NO_LABEL": [],
+  "lint_ga": [
+    "lint_context",
+    "nnw",
+    "raw_dict",
+    "path"
+  ],
+  "lint_ga_path": [
+    "lint_context",
+    "path"
+  ],
+  "lint_format2_path": [
+    "lint_context",
+    "path"
+  ],
+  "lint_format2": [
+    "lint_context",
+    "nf2",
+    "raw_dict",
+    "path"
+  ],
+  "_validate_output_sources": [
+    "lint_context",
+    "nf2"
+  ],
+  "_lint_step_errors": [
+    "lint_context",
+    "step_errors"
+  ],
+  "_lint_tool_if_present": [
+    "lint_context",
+    "tool_id"
+  ],
+  "_validate_input_types": [
+    "lint_context",
+    "nf2"
+  ],
+  "_validate_report": [
+    "lint_context",
+    "report"
+  ],
+  "_lint_training": [
+    "lint_context",
+    "tags",
+    "doc_or_annotation"
+  ],
+  "lint_pydantic_validation": [
+    "lint_context",
+    "workflow_dict",
+    "format2"
+  ],
+  "_lint_workflow_top_level": [
+    "lint_context",
+    "nf2"
+  ],
+  "lint_best_practices": [
+    "lint_context",
+    "nf2"
+  ],
+  "_lint_step_best_practices": [
+    "lint_context",
+    "step"
+  ],
+  "SKIP_DISCONNECTED_CHECK_TYPES_NATIVE": [],
+  "_lint_native_step_best_practices": [
+    "lint_context",
+    "step"
+  ],
+  "_try_build_nf2": [
+    "lint_context",
+    "workflow_dict"
+  ],
+  "_try_build_nnw": [
+    "lint_context",
+    "workflow_dict"
+  ],
+  "lint_best_practices_ga": [
+    "lint_context",
+    "workflow_dict"
+  ],
+  "lint_best_practices_format2": [
+    "lint_context",
+    "workflow_dict"
+  ],
+  "_check_json_for_untyped_params": [
+    "j"
+  ],
+  "BLOCK_FENCE_START": [],
+  "BLOCK_FENCE_END": [],
+  "GALAXY_FLAVORED_MARKDOWN_CONTAINER_LINE_PATTERN": [],
+  "VALID_CONTAINER_END_PATTERN": [],
+  "DynamicArguments": {},
+  "DYNAMIC_ARGUMENTS": [],
+  "GALAXY_FLAVORED_MARKDOWN_CONTAINERS": [],
+  "GALAXY_FLAVORED_MARKDOWN_CONTAINER_REGEX": [],
+  "ARG_VAL_REGEX": [],
+  "FUNCTION_ARG": [],
+  "FUNCTION_MULTIPLE_ARGS": [],
+  "FUNCTION_MULTIPLE_ARGS_PATTERN": [],
+  "FUNCTION_CALL_LINE_TEMPLATE": [],
+  "GALAXY_MARKDOWN_FUNCTION_CALL_LINE": [],
+  "WHITE_SPACE_ONLY_PATTERN": [],
+  "validate_galaxy_markdown": [
+    "galaxy_markdown",
+    "internal"
+  ],
+  "_split_markdown_lines": [
+    "markdown"
+  ],
+  "NativeStepKeyNotInteger": {
+    "severity": [],
+    "applies_to": [],
+    "profile": []
+  },
+  "steps": [
+    "workflow_dict",
+    "workflow_path",
+    "options",
+    "expand"
+  ],
+  "inputs": [
+    "workflow_dict",
+    "workflow_path",
+    "options",
+    "expand"
+  ],
+  "outputs": [
+    "workflow_dict",
+    "workflow_path",
+    "options",
+    "expand"
+  ],
+  "steps_normalized": [
+    "workflow_dict",
+    "workflow_path",
+    "options",
+    "expand"
+  ],
+  "inputs_normalized": [
+    "workflow_dict",
+    "workflow_path",
+    "options",
+    "expand"
+  ],
+  "outputs_normalized": [
+    "workflow_dict",
+    "workflow_path",
+    "options",
+    "expand"
+  ],
+  "_dump_list": [
+    "items"
+  ],
+  "_ensure_format2": [
+    "workflow_dict",
+    "workflow_path",
+    "options",
+    "expand"
+  ],
+  "LINT_PROFILES_PATH": [],
+  "LintProfile": {},
+  "load_lint_profiles": [],
+  "lint_profiles_by_id": [],
+  "rules_for_profile": [
+    "profile_id"
+  ],
+  "iwc_rule_ids": [],
+  "ordered_load_path": [
+    "path"
+  ],
+  "ordered_load": [
+    "stream",
+    "Loader"
+  ],
+  "ordered_dump": [
+    "data",
+    "stream",
+    "Dumper"
+  ],
+  "ordered_dump_to_path": [
+    "as_dict",
+    "path"
+  ],
+  "_COMMENT_COMMON_FIELDS": [],
+  "_tuples_to_lists": [
+    "value"
+  ],
+  "flatten_comment_data": [
+    "native_comment"
+  ],
+  "unflatten_comment_data": [
+    "format2_comment"
+  ],
+  "validate_format2": [
+    "wf_dict"
+  ],
+  "validate_format2_strict": [
+    "wf_dict"
+  ],
+  "validate_native": [
+    "wf_dict"
+  ],
+  "validate_native_strict": [
+    "wf_dict"
+  ],
+  "validator_for_fixture": [
+    "fixture_name",
+    "strict"
+  ],
+  "log": [],
+  "NativeStateEncoderFn": [],
+  "ImportOptions": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "yaml_to_workflow": [
+    "has_yaml",
+    "galaxy_interface",
+    "workflow_directory",
+    "import_options"
+  ],
+  "python_to_workflow": [
+    "as_python",
+    "galaxy_interface",
+    "workflow_directory",
+    "import_options"
+  ],
+  "_compat_fixup_native": [
+    "data",
+    "import_options"
+  ],
+  "ConvertToolStateFn": [],
+  "from_galaxy_native": [
+    "native_workflow_dict",
+    "tool_interface",
+    "json_wrapper",
+    "compact",
+    "convert_tool_state"
+  ],
+  "_fixup_format2_dict": [
+    "data"
+  ],
+  "_listify_to_idmap": [
+    "data",
+    "key",
+    "key_field"
+  ],
+  "_steps_to_idmap": [
+    "data"
+  ],
+  "_NativeGalaxyStepType": [],
+  "_GxFormat2StepTypeAlias": [],
+  "_StepTypes": [],
+  "_STEP_TYPES": [],
+  "get_native_step_type": [
+    "gxformat2_step_dict"
+  ],
+  "setup_connected_values": [
+    "value",
+    "key",
+    "append_to"
+  ],
+  "resolve_source_reference": [
+    "value",
+    "known_labels"
+  ],
+  "_connected_value": [],
+  "_is_link": [
+    "value"
+  ],
+  "_join_prefix": [
+    "prefix",
+    "key"
+  ],
+  "_convert_dict_to_id_list_if_needed": [
+    "dict_or_list",
+    "add_label",
+    "mutate"
+  ],
+  "_with_step_ids": [
+    "steps",
+    "inputs_offset"
+  ],
+  "ensure_step_position": [
+    "step",
+    "order_index"
+  ],
+  "steps_as_list": [
+    "format2_workflow",
+    "add_ids",
+    "inputs_offset",
+    "mutate"
+  ],
+  "_append_step_id_to_step_list_elements": [
+    "steps",
+    "inputs_offset"
+  ],
+  "ensure_format2_from_path": [
+    "path"
+  ],
+  "ensure_format2": [
+    "workflow_dict",
+    "ensure_labels"
+  ],
+  "__version__": [],
+  "PROJECT_NAME": [],
+  "PROJECT_OWNER": [],
+  "StateEncodeToNativeFn": [],
+  "StateEncodeToFormat2Fn": [],
+  "UrlResolverFn": [],
+  "TRS_URL_REGEX": [],
+  "MAX_EXPANSION_DEPTH": [],
+  "ConversionOptions": {
+    "__init__": [
+      "self",
+      "workflow_directory",
+      "encode_tool_state_json",
+      "deduplicate_subworkflows",
+      "state_encode_to_native",
+      "state_encode_to_format2",
+      "compact",
+      "url_resolver",
+      "strict_structure"
+    ]
+  },
+  "default_url_resolver": [
+    "url"
+  ],
+  "is_trs_url": [
+    "url"
+  ],
+  "UNLABELED_INPUT_PREFIX": [],
+  "UNLABELED_STEP_PREFIX": [],
+  "Labels": {
+    "__init__": [
+      "self"
+    ],
+    "ensure_new_output_label": [
+      "self",
+      "label"
+    ],
+    "is_anonymous_output_label": [
+      "label"
+    ],
+    "is_unlabeled_input": [
+      "label"
+    ],
+    "is_unlabeled_step": [
+      "label"
+    ],
+    "is_unlabeled": [
+      "label"
+    ]
+  },
+  "_DictMixin": {
+    "to_dict": [
+      "self"
+    ]
+  },
+  "NormalizedNativeStep": {
+    "model_config": [],
+    "_normalize_connections": [
+      "cls",
+      "v"
+    ],
+    "is_tool_step": [
+      "self"
+    ],
+    "is_subworkflow_step": [
+      "self"
+    ],
+    "is_input_step": [
+      "self"
+    ],
+    "is_pause_step": [
+      "self"
+    ],
+    "is_pick_value_step": [
+      "self"
+    ],
+    "connected_paths": [
+      "self"
+    ]
+  },
+  "NormalizedNativeWorkflow": {
+    "model_config": [],
+    "unique_tools": [
+      "self"
+    ],
+    "_collect_tools": [
+      "self",
+      "into"
+    ]
+  },
+  "load_native": [
+    "data"
+  ],
+  "_normalize_native_for_validation": [
+    "data"
+  ],
+  "_normalize_step_for_validation": [
+    "step"
+  ],
+  "_normalize_post_job_actions": [
+    "step"
+  ],
+  "_normalize_tags": [
+    "data"
+  ],
+  "normalized_native": [
+    "workflow"
+  ],
+  "_normalize_workflow": [
+    "wf"
+  ],
+  "_normalize_position": [
+    "position"
+  ],
+  "_normalize_step": [
+    "step"
+  ],
+  "_validate_format2_output": [
+    "result"
+  ],
+  "_validate_native_output": [
+    "result"
+  ],
+  "ExpandedWorkflowStep": {},
+  "ExpandedFormat2": {},
+  "ExpandedNativeStep": {},
+  "ExpandedNativeWorkflow": {},
+  "_ExpansionContext": {
+    "__init__": [
+      "self",
+      "options",
+      "resolving_urls"
+    ],
+    "resolve_url": [
+      "self",
+      "url"
+    ],
+    "resolve_import": [
+      "self",
+      "path"
+    ],
+    "child": [
+      "self",
+      "url"
+    ]
+  },
+  "_resolve_run_reference": [
+    "ref",
+    "ctx"
+  ],
+  "_is_resolvable_url": [
+    "content_id"
+  ],
+  "_ensure_native": [
+    "resolved",
+    "options"
+  ],
+  "ensure_native": [
+    "workflow",
+    "options",
+    "expand"
+  ],
+  "INPUT_STEP_TYPES": [],
+  "native_input_to_format2_type": [
+    "step",
+    "tool_state"
+  ],
+  "_convert_position": [
+    "position"
+  ],
+  "_convert_tool_shed_repo_to_format2": [
+    "repo"
+  ],
+  "to_format2": [
+    "workflow",
+    "options",
+    "expand"
+  ],
+  "_build_format2_workflow": [
+    "wf",
+    "options"
+  ],
+  "_build_input_param": [
+    "step"
+  ],
+  "_build_format2_step": [
+    "step",
+    "label_map",
+    "options"
+  ],
+  "_build_tool_format2_step": [
+    "step",
+    "label_map",
+    "options"
+  ],
+  "_build_user_tool_format2_step": [
+    "step",
+    "label_map",
+    "compact"
+  ],
+  "_build_subworkflow_format2_step": [
+    "step",
+    "label_map",
+    "options"
+  ],
+  "_build_pause_format2_step": [
+    "step",
+    "label_map",
+    "compact"
+  ],
+  "_build_pick_value_format2_step": [
+    "step",
+    "label_map",
+    "compact",
+    "options"
+  ],
+  "_build_format2_step_inputs": [
+    "step",
+    "label_map"
+  ],
+  "_build_format2_step_outputs": [
+    "step"
+  ],
+  "_to_source": [
+    "output_name",
+    "label_map",
+    "step_id"
+  ],
+  "_replace_anonymous_output_references": [
+    "output_params",
+    "fmt2_steps"
+  ],
+  "_convert_creators": [
+    "native_creators"
+  ],
+  "_build_format2_comments": [
+    "wf",
+    "label_map",
+    "compact"
+  ],
+  "_PJADef": {},
+  "to_native": [
+    "workflow",
+    "options",
+    "expand"
+  ],
+  "_register_labels": [
+    "wf",
+    "ctx"
+  ],
+  "_ConversionContext": {
+    "__init__": [
+      "self",
+      "options"
+    ],
+    "step_id": [
+      "self",
+      "label_or_id"
+    ],
+    "step_output": [
+      "self",
+      "value"
+    ],
+    "child_context": [
+      "self"
+    ]
+  },
+  "_build_native_workflow": [
+    "wf",
+    "ctx"
+  ],
+  "_build_input_step": [
+    "inp",
+    "order_index",
+    "ctx"
+  ],
+  "_build_step": [
+    "step",
+    "order_index",
+    "ctx"
+  ],
+  "_resolve_step_type": [
+    "step"
+  ],
+  "_build_tool_step": [
+    "step",
+    "order_index",
+    "ctx"
+  ],
+  "_build_subworkflow_step": [
+    "step",
+    "order_index",
+    "ctx"
+  ],
+  "_build_pause_step": [
+    "step",
+    "order_index",
+    "ctx"
+  ],
+  "_build_pick_value_step": [
+    "step",
+    "order_index",
+    "ctx"
+  ],
+  "_extract_connections": [
+    "step"
+  ],
+  "_build_input_connections": [
+    "connect",
+    "ctx",
+    "is_subworkflow",
+    "subworkflow_ctx"
+  ],
+  "_build_post_job_actions": [
+    "outputs"
+  ],
+  "_wire_workflow_outputs": [
+    "outputs",
+    "native_steps",
+    "ctx"
+  ],
+  "_build_native_comments": [
+    "comments",
+    "ctx"
+  ],
+  "_register_subworkflow_labels": [
+    "sub_wf",
+    "child_ctx"
+  ],
+  "_step_label": [
+    "step"
+  ],
+  "_convert_tool_shed_repo_to_native": [
+    "repo"
+  ],
+  "_default_position": [
+    "position",
+    "order_index"
+  ],
+  "_convert_creators_to_native": [
+    "creators"
+  ],
+  "_join_doc": [
+    "doc"
+  ],
+  "expanded_format2": [
+    "workflow",
+    "options"
+  ],
+  "expanded_native": [
+    "workflow",
+    "options"
+  ],
+  "_expand_format2": [
+    "wf",
+    "ctx"
+  ],
+  "_expand_native": [
+    "wf",
+    "ctx"
+  ],
+  "ToolReference": {},
+  "GalaxyUserToolStub": {
+    "model_config": []
+  },
+  "ImportReference": {
+    "model_config": []
+  },
+  "SourceReference": {},
+  "NormalizedWorkflowStep": {
+    "model_config": [],
+    "_preserve_run_type": [
+      "cls",
+      "v"
+    ],
+    "is_tool_step": [
+      "self"
+    ],
+    "is_subworkflow_step": [
+      "self"
+    ],
+    "is_pause_step": [
+      "self"
+    ],
+    "is_pick_value_step": [
+      "self"
+    ],
+    "connected_paths": [
+      "self"
+    ]
+  },
+  "NormalizedFormat2": {
+    "model_config": [],
+    "known_labels": [
+      "self"
+    ],
+    "resolve_source": [
+      "self",
+      "source"
+    ],
+    "unique_tools": [
+      "self"
+    ],
+    "_collect_tools": [
+      "self",
+      "into"
+    ]
+  },
+  "normalized_format2": [
+    "workflow"
+  ],
+  "INPUT_TYPE_ALIASES": [],
+  "_normalize_input_type": [
+    "value"
+  ],
+  "_validate_input_dict": [
+    "d"
+  ],
+  "_normalize_inputs": [
+    "inputs"
+  ],
+  "_normalize_outputs": [
+    "outputs"
+  ],
+  "_pre_normalize_input_types": [
+    "workflow"
+  ],
+  "_pre_clean_steps": [
+    "workflow"
+  ],
+  "_pre_clean_step": [
+    "step"
+  ],
+  "_normalize_steps": [
+    "steps",
+    "inputs_offset",
+    "strict_structure"
+  ],
+  "_CONNECTED_VALUE": [],
+  "_resolve_links": [
+    "value",
+    "key",
+    "connections"
+  ],
+  "_normalize_step_inputs": [
+    "in_"
+  ],
+  "_normalize_step_outputs": [
+    "out"
+  ],
+  "_COMMENT_TYPE_MAP": [],
+  "_normalize_comments": [
+    "comments"
+  ],
+  "_resolve_graph": [
+    "raw"
+  ],
+  "_is_graph_id_reference": [
+    "run_action"
+  ],
+  "_inline_graph_refs": [
+    "workflow",
+    "lookup"
+  ],
+  "MAIN_TS_PREFIX": [],
+  "cytoscape_elements": [
+    "workflow"
+  ],
+  "_fallback_position": [
+    "order_index"
+  ],
+  "_to_position": [
+    "step_position",
+    "order_index"
+  ],
+  "_input_type_str": [
+    "inp"
+  ],
+  "_input_node": [
+    "inp",
+    "order_index"
+  ],
+  "_step_node": [
+    "step",
+    "order_index"
+  ],
+  "_step_edges": [
+    "step",
+    "nf2"
+  ],
+  "CytoscapePosition": {},
+  "CytoscapeNodeData": {},
+  "CytoscapeEdgeData": {},
+  "CytoscapeNode": {},
+  "CytoscapeEdge": {},
+  "CytoscapeElements": {
+    "to_list": [
+      "self"
+    ]
+  },
+  "to_cytoscape": [
+    "workflow_path",
+    "output_path"
+  ],
+  "CYTOSCAPE_JS_TEMPLATE": [],
+  "render_html": [
+    "elements"
+  ],
+  "EXAMPLES_DIR": [],
+  "FORMAT2_DIR": [],
+  "NATIVE_DIR": [],
+  "ExampleOrigin": {
+    "real": [],
+    "real_hacked": [],
+    "synthetic": [],
+    "converted": []
+  },
+  "ExampleFormat": {
+    "format2": [],
+    "native": []
+  },
+  "CatalogEntry": {
+    "name": [
+      "self"
+    ],
+    "path": [
+      "self"
+    ],
+    "load": [
+      "self"
+    ],
+    "load_contents": [
+      "self"
+    ],
+    "workflow_label": [
+      "self"
+    ],
+    "workflow_annotation": [
+      "self"
+    ]
+  },
+  "load_catalog": [],
+  "get_path": [
+    "name"
+  ],
+  "load": [
+    "name"
+  ],
+  "load_contents": [
+    "name"
+  ],
+  "SHAPE_INPUT": [],
+  "SHAPE_PARAM": [],
+  "SHAPE_TOOL": [],
+  "SHAPE_SUBWORKFLOW": [],
+  "STEP_TYPE_SHAPES": [],
+  "_sanitize_label": [
+    "label"
+  ],
+  "_node_line": [
+    "node_id",
+    "label",
+    "shape"
+  ],
+  "workflow_to_mermaid": [
+    "workflow"
+  ],
+  "to_mermaid": [
+    "workflow_path",
+    "output_path"
+  ],
+  "parser_info": [],
+  "PrimitiveType": {
+    "null": [],
+    "boolean": [],
+    "int": [],
+    "long": [],
+    "float": [],
+    "double": [],
+    "string": []
+  },
+  "GalaxyType": {
+    "null": [],
+    "boolean": [],
+    "int": [],
+    "long": [],
+    "float": [],
+    "double": [],
+    "string": [],
+    "integer": [],
+    "text": [],
+    "File": [],
+    "data": [],
+    "collection": []
+  },
+  "WorkflowStepType": {
+    "tool": [],
+    "subworkflow": [],
+    "pause": [],
+    "pick_value": []
+  },
+  "_discriminate_inputs": [
+    "v"
+  ],
+  "Documented": {
+    "model_config": []
+  },
+  "RecordField": {
+    "model_config": []
+  },
+  "RecordSchema": {
+    "model_config": []
+  },
+  "EnumSchema": {
+    "model_config": []
+  },
+  "ArraySchema": {
+    "model_config": []
+  },
+  "Labeled": {
+    "model_config": []
+  },
+  "Identified": {
+    "model_config": []
+  },
+  "Parameter": {
+    "model_config": []
+  },
+  "InputParameter": {
+    "model_config": []
+  },
+  "OutputParameter": {
+    "model_config": []
+  },
+  "Process": {
+    "model_config": []
+  },
+  "HasUUID": {
+    "model_config": []
+  },
+  "HasStepErrors": {
+    "model_config": []
+  },
+  "HasStepPosition": {
+    "model_config": []
+  },
+  "StepPosition": {
+    "model_config": []
+  },
+  "ReferencesTool": {
+    "model_config": []
+  },
+  "ToolShedRepository": {
+    "model_config": []
+  },
+  "BaseInputParameter": {
+    "model_config": []
+  },
+  "BaseDataParameter": {
+    "model_config": []
+  },
+  "WorkflowDataParameter": {
+    "model_config": []
+  },
+  "WorkflowCollectionParameter": {
+    "model_config": []
+  },
+  "MinMax": {
+    "model_config": []
+  },
+  "WorkflowIntegerParameter": {
+    "model_config": []
+  },
+  "WorkflowFloatParameter": {
+    "model_config": []
+  },
+  "WorkflowTextParameter": {
+    "model_config": []
+  },
+  "WorkflowBooleanParameter": {
+    "model_config": []
+  },
+  "WorkflowInputParameter": {
+    "model_config": []
+  },
+  "WorkflowOutputParameter": {
+    "model_config": []
+  },
+  "WorkflowStep": {
+    "model_config": []
+  },
+  "Sink": {
+    "model_config": []
+  },
+  "WorkflowStepInput": {
+    "model_config": []
+  },
+  "Report": {
+    "model_config": []
+  },
+  "WorkflowStepOutput": {
+    "model_config": []
+  },
+  "BaseComment": {
+    "model_config": []
+  },
+  "TextComment": {
+    "model_config": []
+  },
+  "MarkdownComment": {
+    "model_config": []
+  },
+  "FrameComment": {
+    "model_config": []
+  },
+  "FreehandComment": {
+    "model_config": []
+  },
+  "BaseCreator": {
+    "model_config": []
+  },
+  "CreatorPerson": {
+    "model_config": []
+  },
+  "CreatorOrganization": {
+    "model_config": []
+  },
+  "GalaxyWorkflow": {
+    "model_config": []
+  },
+  "load_document": [
+    "path"
+  ],
+  "_load_single": [
+    "data"
+  ],
+  "input_parameter_class": [
+    "type_value"
+  ],
+  "IdxType": [],
+  "LoadingOptions": {
+    "__init__": [
+      "self",
+      "fetcher",
+      "namespaces",
+      "schemas",
+      "fileuri",
+      "copyfrom",
+      "original_doc",
+      "addl_metadata",
+      "baseuri",
+      "idx",
+      "imports",
+      "includes",
+      "no_link_check",
+      "container"
+    ],
+    "graph": [
+      "self"
+    ]
+  },
+  "Saveable": {
+    "fromDoc": [
+      "cls",
+      "_doc",
+      "baseuri",
+      "loadingOptions",
+      "docRoot"
+    ],
+    "save": [
+      "self",
+      "top",
+      "base_url",
+      "relative_uris"
+    ]
+  },
+  "load_field": [
+    "val",
+    "fieldtype",
+    "baseuri",
+    "loadingOptions",
+    "lc"
+  ],
+  "save_type": [],
+  "extract_type": [
+    "val_type"
+  ],
+  "convert_typing": [
+    "val_type"
+  ],
+  "parse_errors": [
+    "error_message"
+  ],
+  "save": [
+    "val",
+    "top",
+    "base_url",
+    "relative_uris"
+  ],
+  "save_with_metadata": [
+    "val",
+    "valLoadingOpts",
+    "top",
+    "base_url",
+    "relative_uris"
+  ],
+  "expand_url": [
+    "url",
+    "base_url",
+    "loadingOptions",
+    "scoped_id",
+    "vocab_term",
+    "scoped_ref"
+  ],
+  "_Loader": {
+    "load": [
+      "self",
+      "doc",
+      "baseuri",
+      "loadingOptions",
+      "docRoot",
+      "lc"
+    ]
+  },
+  "_AnyLoader": {
+    "load": [
+      "self",
+      "doc",
+      "baseuri",
+      "loadingOptions",
+      "docRoot",
+      "lc"
+    ]
+  },
+  "_PrimitiveLoader": {
+    "__init__": [
+      "self",
+      "tp"
+    ],
+    "load": [
+      "self",
+      "doc",
+      "baseuri",
+      "loadingOptions",
+      "docRoot",
+      "lc"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "_ArrayLoader": {
+    "__init__": [
+      "self",
+      "items"
+    ],
+    "load": [
+      "self",
+      "doc",
+      "baseuri",
+      "loadingOptions",
+      "docRoot",
+      "lc"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "_MapLoader": {
+    "__init__": [
+      "self",
+      "values",
+      "name",
+      "container",
+      "no_link_check"
+    ],
+    "load": [
+      "self",
+      "doc",
+      "baseuri",
+      "loadingOptions",
+      "docRoot",
+      "lc"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "_EnumLoader": {
+    "__init__": [
+      "self",
+      "symbols",
+      "name"
+    ],
+    "load": [
+      "self",
+      "doc",
+      "baseuri",
+      "loadingOptions",
+      "docRoot",
+      "lc"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "_SecondaryDSLLoader": {
+    "__init__": [
+      "self",
+      "inner"
+    ],
+    "load": [
+      "self",
+      "doc",
+      "baseuri",
+      "loadingOptions",
+      "docRoot",
+      "lc"
+    ]
+  },
+  "_RecordLoader": {
+    "__init__": [
+      "self",
+      "classtype",
+      "container",
+      "no_link_check"
+    ],
+    "load": [
+      "self",
+      "doc",
+      "baseuri",
+      "loadingOptions",
+      "docRoot",
+      "lc"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "_ExpressionLoader": {
+    "__init__": [
+      "self",
+      "items"
+    ],
+    "load": [
+      "self",
+      "doc",
+      "baseuri",
+      "loadingOptions",
+      "docRoot",
+      "lc"
+    ]
+  },
+  "_UnionLoader": {
+    "__init__": [
+      "self",
+      "alternates",
+      "name"
+    ],
+    "add_loaders": [
+      "self",
+      "loaders"
+    ],
+    "load": [
+      "self",
+      "doc",
+      "baseuri",
+      "loadingOptions",
+      "docRoot",
+      "lc"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "_URILoader": {
+    "__init__": [
+      "self",
+      "inner",
+      "scoped_id",
+      "vocab_term",
+      "scoped_ref",
+      "no_link_check"
+    ],
+    "load": [
+      "self",
+      "doc",
+      "baseuri",
+      "loadingOptions",
+      "docRoot",
+      "lc"
+    ]
+  },
+  "_TypeDSLLoader": {
+    "__init__": [
+      "self",
+      "inner",
+      "refScope",
+      "salad_version"
+    ],
+    "resolve": [
+      "self",
+      "doc",
+      "baseuri",
+      "loadingOptions"
+    ],
+    "load": [
+      "self",
+      "doc",
+      "baseuri",
+      "loadingOptions",
+      "docRoot",
+      "lc"
+    ]
+  },
+  "_IdMapLoader": {
+    "__init__": [
+      "self",
+      "inner",
+      "mapSubject",
+      "mapPredicate"
+    ],
+    "load": [
+      "self",
+      "doc",
+      "baseuri",
+      "loadingOptions",
+      "docRoot",
+      "lc"
+    ]
+  },
+  "_document_load": [
+    "loader",
+    "doc",
+    "baseuri",
+    "loadingOptions",
+    "addl_metadata_fields"
+  ],
+  "_document_load_by_url": [
+    "loader",
+    "url",
+    "loadingOptions",
+    "addl_metadata_fields"
+  ],
+  "file_uri": [
+    "path",
+    "split_frag"
+  ],
+  "prefix_url": [
+    "url",
+    "namespaces"
+  ],
+  "save_relative_uri": [
+    "uri",
+    "base_url",
+    "scoped_id",
+    "ref_scope",
+    "relative_uris"
+  ],
+  "shortname": [
+    "inputid"
+  ],
+  "_vocab": [],
+  "_rvocab": [],
+  "strtype": [],
+  "inttype": [],
+  "floattype": [],
+  "booltype": [],
+  "None_type": [],
+  "Any_type": [],
+  "PrimitiveTypeLoader": [],
+  "AnyLoader": [],
+  "RecordFieldLoader": [],
+  "RecordSchemaLoader": [],
+  "EnumSchemaLoader": [],
+  "ArraySchemaLoader": [],
+  "StepPositionLoader": [],
+  "ToolShedRepositoryLoader": [],
+  "GalaxyTypeLoader": [],
+  "WorkflowStepTypeLoader": [],
+  "BaseInputParameterLoader": [],
+  "BaseDataParameterLoader": [],
+  "WorkflowDataParameterLoader": [],
+  "WorkflowCollectionParameterLoader": [],
+  "MinMaxLoader": [],
+  "WorkflowIntegerParameterLoader": [],
+  "WorkflowFloatParameterLoader": [],
+  "WorkflowTextParameterLoader": [],
+  "WorkflowBooleanParameterLoader": [],
+  "WorkflowInputParameterLoader": [],
+  "WorkflowOutputParameterLoader": [],
+  "WorkflowStepLoader": [],
+  "WorkflowStepInputLoader": [],
+  "ReportLoader": [],
+  "WorkflowStepOutputLoader": [],
+  "TextCommentLoader": [],
+  "MarkdownCommentLoader": [],
+  "FrameCommentLoader": [],
+  "FreehandCommentLoader": [],
+  "WorkflowCommentLoader": [],
+  "CreatorPersonTypeLoader": [],
+  "CreatorOrganizationTypeLoader": [],
+  "CreatorPersonLoader": [],
+  "CreatorOrganizationLoader": [],
+  "GalaxyWorkflowLoader": [],
+  "array_of_strtype": [],
+  "union_of_None_type_or_strtype_or_array_of_strtype": [],
+  "uri_strtype_True_False_None_None": [],
+  "union_of_PrimitiveTypeLoader_or_RecordSchemaLoader_or_EnumSchemaLoader_or_ArraySchemaLoader_or_strtype": [],
+  "array_of_union_of_PrimitiveTypeLoader_or_RecordSchemaLoader_or_EnumSchemaLoader_or_ArraySchemaLoader_or_strtype": [],
+  "union_of_PrimitiveTypeLoader_or_RecordSchemaLoader_or_EnumSchemaLoader_or_ArraySchemaLoader_or_strtype_or_array_of_union_of_PrimitiveTypeLoader_or_RecordSchemaLoader_or_EnumSchemaLoader_or_ArraySchemaLoader_or_strtype": [],
+  "typedsl_union_of_PrimitiveTypeLoader_or_RecordSchemaLoader_or_EnumSchemaLoader_or_ArraySchemaLoader_or_strtype_or_array_of_union_of_PrimitiveTypeLoader_or_RecordSchemaLoader_or_EnumSchemaLoader_or_ArraySchemaLoader_or_strtype_2": [],
+  "array_of_RecordFieldLoader": [],
+  "union_of_None_type_or_array_of_RecordFieldLoader": [],
+  "idmap_fields_union_of_None_type_or_array_of_RecordFieldLoader": [],
+  "enum_d9cba076fca539106791a4f46d198c7fcfbdb779Loader": [],
+  "typedsl_enum_d9cba076fca539106791a4f46d198c7fcfbdb779Loader_2": [],
+  "uri_array_of_strtype_True_False_None_None": [],
+  "enum_d961d79c225752b9fadb617367615ab176b47d77Loader": [],
+  "typedsl_enum_d961d79c225752b9fadb617367615ab176b47d77Loader_2": [],
+  "uri_union_of_PrimitiveTypeLoader_or_RecordSchemaLoader_or_EnumSchemaLoader_or_ArraySchemaLoader_or_strtype_or_array_of_union_of_PrimitiveTypeLoader_or_RecordSchemaLoader_or_EnumSchemaLoader_or_ArraySchemaLoader_or_strtype_False_True_2_None": [],
+  "enum_d062602be0b4b8fd33e69e29a841317b6ab665bcLoader": [],
+  "typedsl_enum_d062602be0b4b8fd33e69e29a841317b6ab665bcLoader_2": [],
+  "union_of_None_type_or_strtype": [],
+  "uri_union_of_None_type_or_strtype_True_False_None_None": [],
+  "union_of_None_type_or_Any_type": [],
+  "union_of_BaseInputParameterLoader": [],
+  "array_of_union_of_BaseInputParameterLoader": [],
+  "idmap_inputs_array_of_union_of_BaseInputParameterLoader": [],
+  "union_of_WorkflowOutputParameterLoader": [],
+  "array_of_union_of_WorkflowOutputParameterLoader": [],
+  "idmap_outputs_array_of_union_of_WorkflowOutputParameterLoader": [],
+  "union_of_None_type_or_StepPositionLoader": [],
+  "union_of_floattype_or_inttype": [],
+  "union_of_None_type_or_ToolShedRepositoryLoader": [],
+  "union_of_booltype_or_None_type": [],
+  "union_of_None_type_or_array_of_strtype": [],
+  "union_of_strtype_or_None_type": [],
+  "typedsl_union_of_strtype_or_None_type_2": [],
+  "typedsl_strtype_2": [],
+  "union_of_inttype_or_floattype_or_None_type": [],
+  "union_of_GalaxyTypeLoader": [],
+  "array_of_union_of_GalaxyTypeLoader": [],
+  "union_of_GalaxyTypeLoader_or_None_type_or_array_of_union_of_GalaxyTypeLoader": [],
+  "typedsl_union_of_GalaxyTypeLoader_or_None_type_or_array_of_union_of_GalaxyTypeLoader_2": [],
+  "union_of_None_type_or_GalaxyTypeLoader": [],
+  "typedsl_union_of_None_type_or_GalaxyTypeLoader_2": [],
+  "array_of_WorkflowStepInputLoader": [],
+  "union_of_None_type_or_array_of_WorkflowStepInputLoader": [],
+  "idmap_in__union_of_None_type_or_array_of_WorkflowStepInputLoader": [],
+  "union_of_strtype_or_WorkflowStepOutputLoader": [],
+  "array_of_union_of_strtype_or_WorkflowStepOutputLoader": [],
+  "union_of_array_of_union_of_strtype_or_WorkflowStepOutputLoader_or_None_type": [],
+  "idmap_out_union_of_array_of_union_of_strtype_or_WorkflowStepOutputLoader_or_None_type": [],
+  "union_of_None_type_or_WorkflowStepTypeLoader": [],
+  "typedsl_union_of_None_type_or_WorkflowStepTypeLoader_2": [],
+  "uri_union_of_None_type_or_Any_type_False_False_None_None": [],
+  "uri_union_of_None_type_or_strtype_or_array_of_strtype_False_False_2_None": [],
+  "union_of_None_type_or_booltype": [],
+  "union_of_None_type_or_floattype_or_inttype": [],
+  "union_of_strtype_or_inttype": [],
+  "array_of_union_of_strtype_or_inttype": [],
+  "union_of_None_type_or_array_of_union_of_strtype_or_inttype": [],
+  "uri_CreatorPersonTypeLoader_False_True_None_None": [],
+  "uri_CreatorOrganizationTypeLoader_False_True_None_None": [],
+  "GalaxyWorkflow_classLoader": [],
+  "uri_GalaxyWorkflow_classLoader_False_True_None_None": [],
+  "array_of_WorkflowInputParameterLoader": [],
+  "idmap_inputs_array_of_WorkflowInputParameterLoader": [],
+  "array_of_WorkflowOutputParameterLoader": [],
+  "idmap_outputs_array_of_WorkflowOutputParameterLoader": [],
+  "array_of_WorkflowStepLoader": [],
+  "union_of_array_of_WorkflowStepLoader": [],
+  "idmap_steps_union_of_array_of_WorkflowStepLoader": [],
+  "union_of_None_type_or_ReportLoader": [],
+  "union_of_array_of_strtype_or_None_type": [],
+  "idmap_comments_union_of_None_type_or_Any_type": [],
+  "union_of_GalaxyWorkflowLoader": [],
+  "array_of_union_of_GalaxyWorkflowLoader": [],
+  "union_of_GalaxyWorkflowLoader_or_array_of_union_of_GalaxyWorkflowLoader": [],
+  "load_document_with_metadata": [
+    "doc",
+    "baseuri",
+    "loadingOptions",
+    "addl_metadata_fields"
+  ],
+  "load_document_by_string": [
+    "string",
+    "uri",
+    "loadingOptions"
+  ],
+  "load_document_by_yaml": [
+    "yaml",
+    "uri",
+    "loadingOptions"
+  ],
+  "NativeStepType": {
+    "data_input": [],
+    "data_collection_input": [],
+    "parameter_input": [],
+    "tool": [],
+    "subworkflow": [],
+    "pause": [],
+    "pick_value": []
+  },
+  "_discriminate_creator": [
+    "v"
+  ],
+  "_discriminate_comments": [
+    "v"
+  ],
+  "NativeStepInput": {
+    "model_config": []
+  },
+  "NativeStepOutput": {
+    "model_config": []
+  },
+  "NativeWorkflowOutput": {
+    "model_config": []
+  },
+  "NativeInputConnection": {
+    "model_config": []
+  },
+  "NativePostJobAction": {
+    "model_config": []
+  },
+  "NativeTextCommentData": {
+    "model_config": []
+  },
+  "NativeMarkdownCommentData": {
+    "model_config": []
+  },
+  "NativeFrameCommentData": {
+    "model_config": []
+  },
+  "NativeFreehandCommentData": {
+    "model_config": []
+  },
+  "BaseNativeComment": {
+    "model_config": []
+  },
+  "NativeTextComment": {
+    "model_config": []
+  },
+  "NativeMarkdownComment": {
+    "model_config": []
+  },
+  "NativeFrameComment": {
+    "model_config": []
+  },
+  "NativeFreehandComment": {
+    "model_config": []
+  },
+  "NativeStep": {
+    "model_config": []
+  },
+  "NativeReport": {
+    "model_config": []
+  },
+  "BaseNativeCreator": {
+    "model_config": []
+  },
+  "NativeCreatorPerson": {
+    "model_config": []
+  },
+  "NativeCreatorOrganization": {
+    "model_config": []
+  },
+  "NativeSourceMetadata": {
+    "model_config": []
+  },
+  "NativeGalaxyWorkflow": {
+    "model_config": []
+  },
+  "MODE": [],
+  "GxFormat2GenerateJsonSchema": {
+    "generate": [
+      "self",
+      "schema",
+      "mode"
+    ]
+  },
+  "workflow_json_schema": [],
+  "native_workflow_json_schema": [],
+  "workflow_json_schema_string": [],
+  "native_workflow_json_schema_string": [],
+  "NativeStepTypeLoader": [],
+  "NativeStepInputLoader": [],
+  "NativeStepOutputLoader": [],
+  "NativeWorkflowOutputLoader": [],
+  "NativeInputConnectionLoader": [],
+  "NativePostJobActionLoader": [],
+  "NativeTextCommentDataLoader": [],
+  "NativeMarkdownCommentDataLoader": [],
+  "NativeFrameCommentDataLoader": [],
+  "NativeFreehandCommentDataLoader": [],
+  "NativeTextCommentLoader": [],
+  "NativeMarkdownCommentLoader": [],
+  "NativeFrameCommentLoader": [],
+  "NativeFreehandCommentLoader": [],
+  "NativeCommentLoader": [],
+  "NativeStepLoader": [],
+  "NativeReportLoader": [],
+  "NativeCreatorPersonTypeLoader": [],
+  "NativeCreatorOrganizationTypeLoader": [],
+  "NativeCreatorPersonLoader": [],
+  "NativeCreatorOrganizationLoader": [],
+  "NativeCreatorLoader": [],
+  "NativeSourceMetadataLoader": [],
+  "NativeGalaxyWorkflowLoader": [],
+  "typedsl_union_of_None_type_or_strtype_2": [],
+  "union_of_None_type_or_inttype": [],
+  "union_of_None_type_or_NativeTextCommentDataLoader": [],
+  "union_of_None_type_or_NativeMarkdownCommentDataLoader": [],
+  "union_of_None_type_or_NativeFrameCommentDataLoader": [],
+  "array_of_inttype": [],
+  "union_of_None_type_or_array_of_inttype": [],
+  "union_of_None_type_or_NativeFreehandCommentDataLoader": [],
+  "union_of_None_type_or_NativeStepTypeLoader": [],
+  "typedsl_union_of_None_type_or_NativeStepTypeLoader_2": [],
+  "union_of_None_type_or_strtype_or_Any_type": [],
+  "array_of_NativeStepInputLoader": [],
+  "union_of_None_type_or_array_of_NativeStepInputLoader": [],
+  "array_of_NativeStepOutputLoader": [],
+  "union_of_None_type_or_array_of_NativeStepOutputLoader": [],
+  "array_of_NativeWorkflowOutputLoader": [],
+  "union_of_None_type_or_array_of_NativeWorkflowOutputLoader": [],
+  "uri_NativeCreatorPersonTypeLoader_False_True_None_None": [],
+  "uri_NativeCreatorOrganizationTypeLoader_False_True_None_None": [],
+  "NativeGalaxyWorkflow_classLoader": [],
+  "uri_NativeGalaxyWorkflow_classLoader_False_True_None_None": [],
+  "union_of_None_type_or_NativeReportLoader": [],
+  "union_of_None_type_or_NativeSourceMetadataLoader": [],
+  "array_of_NativeCommentLoader": [],
+  "union_of_None_type_or_array_of_NativeCommentLoader": [],
+  "union_of_NativeGalaxyWorkflowLoader": [],
+  "array_of_union_of_NativeGalaxyWorkflowLoader": [],
+  "union_of_NativeGalaxyWorkflowLoader_or_array_of_union_of_NativeGalaxyWorkflowLoader": []
+}
