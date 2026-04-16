@@ -1,0 +1,626 @@
+{
+  "ClaudeSDKError": {},
+  "CLIConnectionError": {},
+  "CLINotFoundError": {
+    "__init__": [
+      "self",
+      "message",
+      "cli_path"
+    ]
+  },
+  "ProcessError": {
+    "__init__": [
+      "self",
+      "message",
+      "exit_code",
+      "stderr"
+    ]
+  },
+  "CLIJSONDecodeError": {
+    "__init__": [
+      "self",
+      "line",
+      "original_error"
+    ]
+  },
+  "MessageParseError": {
+    "__init__": [
+      "self",
+      "message",
+      "data"
+    ]
+  },
+  "__cli_version__": [],
+  "PermissionMode": [],
+  "SdkBeta": [],
+  "SettingSource": [],
+  "SystemPromptPreset": {},
+  "SystemPromptFile": {},
+  "TaskBudget": {},
+  "ToolsPreset": {},
+  "AgentDefinition": {},
+  "PermissionUpdateDestination": [],
+  "PermissionBehavior": [],
+  "PermissionRuleValue": {},
+  "PermissionUpdate": {
+    "to_dict": [
+      "self"
+    ]
+  },
+  "ToolPermissionContext": {},
+  "PermissionResultAllow": {},
+  "PermissionResultDeny": {},
+  "PermissionResult": [],
+  "CanUseTool": [],
+  "HookEvent": [],
+  "BaseHookInput": {},
+  "_SubagentContextMixin": {},
+  "PreToolUseHookInput": {},
+  "PostToolUseHookInput": {},
+  "PostToolUseFailureHookInput": {},
+  "UserPromptSubmitHookInput": {},
+  "StopHookInput": {},
+  "SubagentStopHookInput": {},
+  "PreCompactHookInput": {},
+  "NotificationHookInput": {},
+  "SubagentStartHookInput": {},
+  "PermissionRequestHookInput": {},
+  "HookInput": [],
+  "PreToolUseHookSpecificOutput": {},
+  "PostToolUseHookSpecificOutput": {},
+  "PostToolUseFailureHookSpecificOutput": {},
+  "UserPromptSubmitHookSpecificOutput": {},
+  "SessionStartHookSpecificOutput": {},
+  "NotificationHookSpecificOutput": {},
+  "SubagentStartHookSpecificOutput": {},
+  "PermissionRequestHookSpecificOutput": {},
+  "HookSpecificOutput": [],
+  "AsyncHookJSONOutput": {},
+  "SyncHookJSONOutput": {},
+  "HookJSONOutput": [],
+  "HookContext": {},
+  "HookCallback": [],
+  "HookMatcher": {},
+  "McpStdioServerConfig": {},
+  "McpSSEServerConfig": {},
+  "McpHttpServerConfig": {},
+  "McpSdkServerConfig": {},
+  "McpServerConfig": [],
+  "McpSdkServerConfigStatus": {},
+  "McpClaudeAIProxyServerConfig": {},
+  "McpServerStatusConfig": [],
+  "McpToolAnnotations": {},
+  "McpToolInfo": {},
+  "McpServerInfo": {},
+  "McpServerConnectionStatus": [],
+  "McpServerStatus": {},
+  "McpStatusResponse": {},
+  "ContextUsageCategory": {},
+  "ContextUsageResponse": {},
+  "SdkPluginConfig": {},
+  "SandboxNetworkConfig": {},
+  "SandboxIgnoreViolations": {},
+  "SandboxSettings": {},
+  "TextBlock": {},
+  "ThinkingBlock": {},
+  "ToolUseBlock": {},
+  "ToolResultBlock": {},
+  "ContentBlock": [],
+  "AssistantMessageError": [],
+  "UserMessage": {},
+  "AssistantMessage": {},
+  "SystemMessage": {},
+  "TaskUsage": {},
+  "TaskNotificationStatus": [],
+  "TaskStartedMessage": {},
+  "TaskProgressMessage": {},
+  "TaskNotificationMessage": {},
+  "ResultMessage": {},
+  "StreamEvent": {},
+  "RateLimitStatus": [],
+  "RateLimitType": [],
+  "RateLimitInfo": {},
+  "RateLimitEvent": {},
+  "Message": [],
+  "SDKSessionInfo": {},
+  "SessionMessage": {},
+  "ThinkingConfigAdaptive": {},
+  "ThinkingConfigEnabled": {},
+  "ThinkingConfigDisabled": {},
+  "ThinkingConfig": [],
+  "ClaudeAgentOptions": {},
+  "SDKControlInterruptRequest": {},
+  "SDKControlPermissionRequest": {},
+  "SDKControlInitializeRequest": {},
+  "SDKControlSetPermissionModeRequest": {},
+  "SDKHookCallbackRequest": {},
+  "SDKControlMcpMessageRequest": {},
+  "SDKControlRewindFilesRequest": {},
+  "SDKControlMcpReconnectRequest": {},
+  "SDKControlMcpToggleRequest": {},
+  "SDKControlStopTaskRequest": {},
+  "SDKControlRequest": {},
+  "ControlResponse": {},
+  "ControlErrorResponse": {},
+  "SDKControlResponse": {},
+  "ClaudeSDKClient": {
+    "__init__": [
+      "self",
+      "options",
+      "transport"
+    ],
+    "_convert_hooks_to_internal_format": [
+      "self",
+      "hooks"
+    ],
+    "connect": [
+      "self",
+      "prompt"
+    ],
+    "receive_messages": [
+      "self"
+    ],
+    "query": [
+      "self",
+      "prompt",
+      "session_id"
+    ],
+    "interrupt": [
+      "self"
+    ],
+    "set_permission_mode": [
+      "self",
+      "mode"
+    ],
+    "set_model": [
+      "self",
+      "model"
+    ],
+    "rewind_files": [
+      "self",
+      "user_message_id"
+    ],
+    "reconnect_mcp_server": [
+      "self",
+      "server_name"
+    ],
+    "toggle_mcp_server": [
+      "self",
+      "server_name",
+      "enabled"
+    ],
+    "stop_task": [
+      "self",
+      "task_id"
+    ],
+    "get_mcp_status": [
+      "self"
+    ],
+    "get_context_usage": [
+      "self"
+    ],
+    "get_server_info": [
+      "self"
+    ],
+    "receive_response": [
+      "self"
+    ],
+    "disconnect": [
+      "self"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ]
+  },
+  "__version__": [],
+  "query": [],
+  "logger": [],
+  "T": [],
+  "SdkMcpTool": {},
+  "tool": [
+    "name",
+    "description",
+    "input_schema",
+    "annotations"
+  ],
+  "_python_type_to_json_schema": [
+    "py_type"
+  ],
+  "_typeddict_to_json_schema": [
+    "td_class"
+  ],
+  "create_sdk_mcp_server": [
+    "name",
+    "version",
+    "tools"
+  ],
+  "__all__": [],
+  "InternalClient": {
+    "__init__": [
+      "self"
+    ],
+    "_convert_hooks_to_internal_format": [
+      "self",
+      "hooks"
+    ],
+    "process_query": [
+      "self",
+      "prompt",
+      "options",
+      "transport"
+    ]
+  },
+  "_convert_hook_output_for_cli": [
+    "hook_output"
+  ],
+  "Query": {
+    "__init__": [
+      "self",
+      "transport",
+      "is_streaming_mode",
+      "can_use_tool",
+      "hooks",
+      "sdk_mcp_servers",
+      "initialize_timeout",
+      "agents",
+      "exclude_dynamic_sections"
+    ],
+    "initialize": [
+      "self"
+    ],
+    "start": [
+      "self"
+    ],
+    "spawn_task": [
+      "self",
+      "coro"
+    ],
+    "_spawn_control_request_handler": [
+      "self",
+      "request"
+    ],
+    "_read_messages": [
+      "self"
+    ],
+    "_handle_control_request": [
+      "self",
+      "request"
+    ],
+    "_send_control_request": [
+      "self",
+      "request",
+      "timeout"
+    ],
+    "_handle_sdk_mcp_request": [
+      "self",
+      "server_name",
+      "message"
+    ],
+    "get_mcp_status": [
+      "self"
+    ],
+    "get_context_usage": [
+      "self"
+    ],
+    "interrupt": [
+      "self"
+    ],
+    "set_permission_mode": [
+      "self",
+      "mode"
+    ],
+    "set_model": [
+      "self",
+      "model"
+    ],
+    "rewind_files": [
+      "self",
+      "user_message_id"
+    ],
+    "reconnect_mcp_server": [
+      "self",
+      "server_name"
+    ],
+    "toggle_mcp_server": [
+      "self",
+      "server_name",
+      "enabled"
+    ],
+    "stop_task": [
+      "self",
+      "task_id"
+    ],
+    "wait_for_result_and_end_input": [
+      "self"
+    ],
+    "stream_input": [
+      "self",
+      "stream"
+    ],
+    "receive_messages": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__anext__": [
+      "self"
+    ]
+  },
+  "LITE_READ_BUF_SIZE": [],
+  "MAX_SANITIZED_LENGTH": [],
+  "_UUID_RE": [],
+  "_SKIP_FIRST_PROMPT_PATTERN": [],
+  "_COMMAND_NAME_RE": [],
+  "_SANITIZE_RE": [],
+  "_validate_uuid": [
+    "maybe_uuid"
+  ],
+  "_simple_hash": [
+    "s"
+  ],
+  "_sanitize_path": [
+    "name"
+  ],
+  "_get_claude_config_home_dir": [],
+  "_get_projects_dir": [],
+  "_get_project_dir": [
+    "project_path"
+  ],
+  "_canonicalize_path": [
+    "d"
+  ],
+  "_find_project_dir": [
+    "project_path"
+  ],
+  "_unescape_json_string": [
+    "raw"
+  ],
+  "_extract_json_string_field": [
+    "text",
+    "key"
+  ],
+  "_extract_last_json_string_field": [
+    "text",
+    "key"
+  ],
+  "_extract_first_prompt_from_head": [
+    "head"
+  ],
+  "_LiteSessionFile": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "mtime",
+      "size",
+      "head",
+      "tail"
+    ]
+  },
+  "_read_session_lite": [
+    "file_path"
+  ],
+  "_get_worktree_paths": [
+    "cwd"
+  ],
+  "_parse_session_info_from_lite": [
+    "session_id",
+    "lite",
+    "project_path"
+  ],
+  "_read_sessions_from_dir": [
+    "project_dir",
+    "project_path"
+  ],
+  "_deduplicate_by_session_id": [
+    "sessions"
+  ],
+  "_apply_sort_limit_offset": [
+    "sessions",
+    "limit",
+    "offset"
+  ],
+  "_list_sessions_for_project": [
+    "directory",
+    "limit",
+    "offset",
+    "include_worktrees"
+  ],
+  "_list_all_sessions": [
+    "limit",
+    "offset"
+  ],
+  "list_sessions": [
+    "directory",
+    "limit",
+    "offset",
+    "include_worktrees"
+  ],
+  "get_session_info": [
+    "session_id",
+    "directory"
+  ],
+  "_TRANSCRIPT_ENTRY_TYPES": [],
+  "_TranscriptEntry": [],
+  "_try_read_session_file": [
+    "project_dir",
+    "file_name"
+  ],
+  "_read_session_file": [
+    "session_id",
+    "directory"
+  ],
+  "_parse_transcript_entries": [
+    "content"
+  ],
+  "_build_conversation_chain": [
+    "entries"
+  ],
+  "_is_visible_message": [
+    "entry"
+  ],
+  "_to_session_message": [
+    "entry"
+  ],
+  "get_session_messages": [
+    "session_id",
+    "directory",
+    "limit",
+    "offset"
+  ],
+  "_resolve_session_file_path": [
+    "session_id",
+    "directory"
+  ],
+  "_resolve_subagents_dir": [
+    "session_id",
+    "directory"
+  ],
+  "_collect_agent_files": [
+    "base_dir"
+  ],
+  "_build_subagent_chain": [
+    "entries"
+  ],
+  "list_subagents": [
+    "session_id",
+    "directory"
+  ],
+  "get_subagent_messages": [
+    "session_id",
+    "agent_id",
+    "directory",
+    "limit",
+    "offset"
+  ],
+  "rename_session": [
+    "session_id",
+    "title",
+    "directory"
+  ],
+  "tag_session": [
+    "session_id",
+    "tag",
+    "directory"
+  ],
+  "delete_session": [
+    "session_id",
+    "directory"
+  ],
+  "ForkSessionResult": {},
+  "fork_session": [
+    "session_id",
+    "directory",
+    "up_to_message_id",
+    "title"
+  ],
+  "_find_session_file": [
+    "session_id",
+    "directory"
+  ],
+  "_find_session_file_with_dir": [
+    "session_id",
+    "directory"
+  ],
+  "_TRANSCRIPT_TYPES": [],
+  "_parse_fork_transcript": [
+    "content",
+    "session_id"
+  ],
+  "_append_to_session": [
+    "session_id",
+    "data",
+    "directory"
+  ],
+  "_try_append": [
+    "path",
+    "data"
+  ],
+  "_UNICODE_STRIP_RE": [],
+  "_FORMAT_CATEGORIES": [],
+  "_sanitize_unicode": [
+    "value"
+  ],
+  "parse_message": [
+    "data"
+  ],
+  "_DEFAULT_MAX_BUFFER_SIZE": [],
+  "MINIMUM_CLAUDE_CODE_VERSION": [],
+  "SubprocessCLITransport": {
+    "__init__": [
+      "self",
+      "prompt",
+      "options"
+    ],
+    "_find_cli": [
+      "self"
+    ],
+    "_find_bundled_cli": [
+      "self"
+    ],
+    "_build_settings_value": [
+      "self"
+    ],
+    "_build_command": [
+      "self"
+    ],
+    "connect": [
+      "self"
+    ],
+    "_handle_stderr": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "write": [
+      "self",
+      "data"
+    ],
+    "end_input": [
+      "self"
+    ],
+    "read_messages": [
+      "self"
+    ],
+    "_read_messages_impl": [
+      "self"
+    ],
+    "_check_claude_version": [
+      "self"
+    ],
+    "is_ready": [
+      "self"
+    ]
+  },
+  "Transport": {
+    "connect": [
+      "self"
+    ],
+    "write": [
+      "self",
+      "data"
+    ],
+    "read_messages": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "is_ready": [
+      "self"
+    ],
+    "end_input": [
+      "self"
+    ]
+  }
+}
