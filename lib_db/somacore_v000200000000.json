@@ -1,0 +1,664 @@
+{
+  "_RO_AUTO": [],
+  "PointCloudDataFrame": {
+    "create": [
+      "cls",
+      "uri"
+    ],
+    "read": [
+      "self",
+      "coords",
+      "column_names"
+    ],
+    "read_spatial_region": [
+      "self",
+      "region",
+      "column_names"
+    ],
+    "write": [
+      "self",
+      "values"
+    ],
+    "schema": [
+      "self"
+    ],
+    "index_column_names": [
+      "self"
+    ],
+    "coordinate_space": [
+      "self",
+      "value"
+    ],
+    "domain": [
+      "self"
+    ]
+  },
+  "GeometryDataFrame": {
+    "create": [
+      "cls",
+      "uri"
+    ],
+    "read": [
+      "self",
+      "coords",
+      "column_names"
+    ],
+    "read_spatial_region": [
+      "self",
+      "region",
+      "column_names"
+    ],
+    "write": [
+      "self",
+      "values"
+    ],
+    "schema": [
+      "self"
+    ],
+    "index_column_names": [
+      "self"
+    ],
+    "coordinate_space": [
+      "self",
+      "value"
+    ],
+    "domain": [
+      "self"
+    ]
+  },
+  "MultiscaleImage": {
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "__setitem__": [
+      "self",
+      "key",
+      "value"
+    ],
+    "__delitem__": [
+      "self",
+      "key"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "create": [
+      "cls",
+      "uri"
+    ],
+    "add_new_level": [
+      "self",
+      "key"
+    ],
+    "set": [
+      "self",
+      "key",
+      "value"
+    ],
+    "read_spatial_region": [
+      "self",
+      "level",
+      "region"
+    ],
+    "coordinate_space": [
+      "self",
+      "value"
+    ],
+    "data_axis_order": [
+      "self"
+    ],
+    "get_transform_from_level": [
+      "self",
+      "level"
+    ],
+    "get_transform_to_level": [
+      "self",
+      "level"
+    ],
+    "has_channel_axis": [
+      "self"
+    ],
+    "level_count": [
+      "self"
+    ],
+    "level_shape": [
+      "self",
+      "level"
+    ],
+    "nchannels": [
+      "self"
+    ]
+  },
+  "_T": [],
+  "SpatialRead": {
+    "data": [
+      "self"
+    ],
+    "data_coordinate_space": [
+      "self"
+    ],
+    "output_coordinate_space": [
+      "self"
+    ],
+    "coordinate_transform": [
+      "self"
+    ]
+  },
+  "SOMAObject": {
+    "open": [
+      "cls",
+      "uri",
+      "mode"
+    ],
+    "exists": [
+      "cls",
+      "uri"
+    ],
+    "uri": [
+      "self"
+    ],
+    "context": [
+      "self"
+    ],
+    "metadata": [
+      "self"
+    ],
+    "mode": [
+      "self"
+    ],
+    "closed": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self"
+    ]
+  },
+  "Experiment": {
+    "obs": [
+      "self"
+    ],
+    "ms": [
+      "self"
+    ],
+    "spatial": [
+      "self"
+    ],
+    "obs_spatial_presence": [
+      "self"
+    ],
+    "axis_query": [
+      "self",
+      "measurement_name"
+    ]
+  },
+  "StatusAndReason": [],
+  "is_nonstringy_sequence": [
+    "it"
+  ],
+  "to_string_tuple": [
+    "obj"
+  ],
+  "str_or_seq_length": [
+    "obj"
+  ],
+  "_T_co": [],
+  "Slice": {
+    "start": [
+      "self"
+    ],
+    "stop": [
+      "self"
+    ],
+    "step": [
+      "self"
+    ]
+  },
+  "is_slice_of": [
+    "__obj",
+    "__typ"
+  ],
+  "ContextBase": {},
+  "__all__": [],
+  "__version__": [],
+  "version": [],
+  "__version_tuple__": [],
+  "version_tuple": [],
+  "__commit_id__": [],
+  "commit_id": [],
+  "_Elem": [],
+  "_CT": [],
+  "BaseCollection": {
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "__delitem__": [
+      "self",
+      "key"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "create": [
+      "cls",
+      "uri"
+    ],
+    "add_new_collection": [
+      "self",
+      "key",
+      "kind"
+    ],
+    "add_new_dataframe": [
+      "self",
+      "key"
+    ],
+    "add_new_dense_ndarray": [
+      "self",
+      "key"
+    ],
+    "add_new_sparse_ndarray": [
+      "self",
+      "key"
+    ],
+    "__setitem__": [
+      "self",
+      "key",
+      "value"
+    ],
+    "set": [
+      "self",
+      "key",
+      "value"
+    ]
+  },
+  "Collection": {},
+  "Measurement": {
+    "var": [
+      "self"
+    ],
+    "X": [
+      "self"
+    ],
+    "obsm": [
+      "self"
+    ],
+    "obsp": [
+      "self"
+    ],
+    "varm": [
+      "self"
+    ],
+    "varp": [
+      "self"
+    ],
+    "var_spatial_presence": [
+      "self"
+    ]
+  },
+  "Axis": {
+    "name": [
+      "self"
+    ],
+    "unit": [
+      "self"
+    ]
+  },
+  "CoordinateSpace": {
+    "__len__": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "index"
+    ],
+    "axes": [
+      "self"
+    ],
+    "axis_names": [
+      "self"
+    ]
+  },
+  "CoordinateTransform": {
+    "__matmul__": [
+      "self",
+      "other"
+    ],
+    "inverse_transform": [
+      "self"
+    ],
+    "input_axes": [
+      "self"
+    ],
+    "output_axes": [
+      "self"
+    ]
+  },
+  "Scene": {
+    "img": [
+      "self"
+    ],
+    "obsl": [
+      "self"
+    ],
+    "varl": [
+      "self"
+    ],
+    "create": [
+      "cls",
+      "uri"
+    ],
+    "coordinate_space": [
+      "self",
+      "value"
+    ],
+    "add_new_geometry_dataframe": [
+      "self",
+      "key",
+      "subcollection"
+    ],
+    "add_new_multiscale_image": [
+      "self",
+      "key",
+      "subcollection"
+    ],
+    "add_new_point_cloud_dataframe": [
+      "self",
+      "key",
+      "subcollection"
+    ],
+    "set_transform_to_geometry_dataframe": [
+      "self",
+      "key",
+      "subcollection"
+    ],
+    "set_transform_to_multiscale_image": [
+      "self",
+      "key",
+      "subcollection"
+    ],
+    "set_transform_to_point_cloud_dataframe": [
+      "self",
+      "key",
+      "subcollection"
+    ],
+    "get_transform_from_geometry_dataframe": [
+      "self",
+      "key",
+      "subcollection"
+    ],
+    "get_transform_from_multiscale_image": [
+      "self",
+      "key",
+      "subcollection"
+    ],
+    "get_transform_from_point_cloud_dataframe": [
+      "self",
+      "key",
+      "subcollection"
+    ],
+    "get_transform_to_geometry_dataframe": [
+      "self",
+      "key",
+      "subcollection"
+    ],
+    "get_transform_to_multiscale_image": [
+      "self",
+      "key",
+      "subcollection"
+    ],
+    "get_transform_to_point_cloud_dataframe": [
+      "self",
+      "key",
+      "subcollection"
+    ]
+  },
+  "AxisDomain": [],
+  "Domain": [],
+  "DataFrame": {
+    "create": [
+      "cls",
+      "uri"
+    ],
+    "read": [
+      "self",
+      "coords",
+      "column_names"
+    ],
+    "change_domain": [
+      "self",
+      "newdomain",
+      "check_only"
+    ],
+    "write": [
+      "self",
+      "values"
+    ],
+    "schema": [
+      "self"
+    ],
+    "index_column_names": [
+      "self"
+    ],
+    "domain": [
+      "self"
+    ]
+  },
+  "NDArray": {
+    "create": [
+      "cls",
+      "uri"
+    ],
+    "resize": [
+      "self",
+      "newshape",
+      "check_only"
+    ],
+    "shape": [
+      "self"
+    ],
+    "ndim": [
+      "self"
+    ],
+    "schema": [
+      "self"
+    ]
+  },
+  "DenseNDArray": {
+    "read": [
+      "self",
+      "coords"
+    ],
+    "write": [
+      "self",
+      "coords",
+      "values"
+    ]
+  },
+  "SparseNDArray": {
+    "read": [
+      "self",
+      "coords"
+    ],
+    "write": [
+      "self",
+      "values"
+    ],
+    "nnz": [
+      "self"
+    ]
+  },
+  "ReadIter": {
+    "__next__": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "concat": [
+      "self"
+    ]
+  },
+  "SparseRead": {
+    "coos": [
+      "self"
+    ],
+    "dense_tensors": [
+      "self"
+    ],
+    "record_batches": [
+      "self"
+    ],
+    "tables": [
+      "self"
+    ]
+  },
+  "OpenMode": [],
+  "ReadPartitions": {
+    "__slots__": []
+  },
+  "IOfN": {
+    "_validate": [
+      "self",
+      "_",
+      "__"
+    ]
+  },
+  "BatchSize": {
+    "_validate": [
+      "self",
+      "attr",
+      "value"
+    ]
+  },
+  "PlatformConfig": [],
+  "ResultOrder": {
+    "AUTO": [],
+    "ROW_MAJOR": [],
+    "COLUMN_MAJOR": []
+  },
+  "ResultOrderStr": [],
+  "DenseCoord": [],
+  "DenseNDCoords": [],
+  "ValSliceOrSequence": [],
+  "SparseDFCoord": [],
+  "SparseDFCoords": [],
+  "SparseNDCoord": [],
+  "SparseNDCoords": [],
+  "SpatialRegion": [],
+  "IntegerArray": [],
+  "IndexLike": {
+    "get_indexer": [
+      "self",
+      "target"
+    ]
+  },
+  "IndexFactory": [],
+  "_canonicalize_coords": [
+    "in_coords"
+  ],
+  "_canonicalize_coord": [
+    "coord"
+  ],
+  "AxisQuery": {},
+  "AxisColumnNames": {},
+  "ExperimentAxisQuery": {
+    "obs": [
+      "self"
+    ],
+    "var": [
+      "self"
+    ],
+    "obs_joinids": [
+      "self"
+    ],
+    "var_joinids": [
+      "self"
+    ],
+    "n_obs": [
+      "self"
+    ],
+    "n_vars": [
+      "self"
+    ],
+    "indexer": [
+      "self"
+    ],
+    "X": [
+      "self",
+      "layer_name"
+    ],
+    "obsp": [
+      "self",
+      "layer"
+    ],
+    "varp": [
+      "self",
+      "layer"
+    ],
+    "obsm": [
+      "self",
+      "layer"
+    ],
+    "varm": [
+      "self",
+      "layer"
+    ],
+    "obs_scene_ids": [
+      "self"
+    ],
+    "var_scene_ids": [
+      "self"
+    ],
+    "to_anndata": [
+      "self",
+      "X_name"
+    ],
+    "close": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self"
+    ]
+  },
+  "Numpyable": [],
+  "AxisIndexer": {
+    "by_obs": [
+      "self",
+      "coords"
+    ],
+    "by_var": [
+      "self",
+      "coords"
+    ]
+  },
+  "Experimentish": {
+    "ms": [
+      "self"
+    ],
+    "obs": [
+      "self"
+    ],
+    "context": [
+      "self"
+    ],
+    "obs_spatial_presence": [
+      "self"
+    ]
+  }
+}
