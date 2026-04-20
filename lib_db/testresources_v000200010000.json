@@ -1,0 +1,267 @@
+{
+  "version": [],
+  "__version__": [],
+  "__get_git_version": [],
+  "_digraph_to_graph": [
+    "digraph",
+    "prime_node_mapping"
+  ],
+  "_kruskals_graph_MST": [
+    "graph"
+  ],
+  "_resource_graph": [
+    "resource_sets"
+  ],
+  "split_by_resources": [
+    "tests"
+  ],
+  "_strongly_connected_components": [
+    "graph",
+    "no_resources"
+  ],
+  "_OrderedSet": {
+    "__init__": [
+      "self",
+      "iterable"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "__contains__": [
+      "self",
+      "key"
+    ],
+    "add": [
+      "self",
+      "key"
+    ],
+    "discard": [
+      "self",
+      "key"
+    ],
+    "update": [
+      "self",
+      "iterable"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__reversed__": [
+      "self"
+    ]
+  },
+  "OptimisingTestSuite": {
+    "known_suite_classes": [],
+    "adsorbSuite": [
+      "self",
+      "test_case_or_suite"
+    ],
+    "addTest": [
+      "self",
+      "test_case_or_suite"
+    ],
+    "cost_of_switching": [
+      "self",
+      "old_resource_set",
+      "new_resource_set"
+    ],
+    "switch": [
+      "self",
+      "old_resource_set",
+      "new_resource_set",
+      "result"
+    ],
+    "run": [
+      "self",
+      "result"
+    ],
+    "sortTests": [
+      "self"
+    ],
+    "_getGraph": [
+      "self",
+      "resource_sets"
+    ],
+    "_makeOrder": [
+      "self",
+      "partition"
+    ]
+  },
+  "TestLoader": {
+    "suiteClass": []
+  },
+  "TestResourceManager": {
+    "setUpCost": [],
+    "tearDownCost": [],
+    "__init__": [
+      "self"
+    ],
+    "_call_result_method_if_exists": [
+      "self",
+      "result",
+      "methodname"
+    ],
+    "_clean_all": [
+      "self",
+      "resource",
+      "result"
+    ],
+    "clean": [
+      "self",
+      "resource"
+    ],
+    "dirtied": [
+      "self",
+      "resource"
+    ],
+    "finishedWith": [
+      "self",
+      "resource",
+      "result"
+    ],
+    "getResource": [
+      "self",
+      "result"
+    ],
+    "isDirty": [
+      "self"
+    ],
+    "_make_all": [
+      "self",
+      "result"
+    ],
+    "make": [
+      "self",
+      "dependency_resources"
+    ],
+    "neededResources": [
+      "self"
+    ],
+    "reset": [
+      "self",
+      "old_resource",
+      "result"
+    ],
+    "id": [
+      "self"
+    ],
+    "_reset": [
+      "self",
+      "resource",
+      "dependency_resources"
+    ],
+    "_setResource": [
+      "self",
+      "new_resource"
+    ]
+  },
+  "TestResource": [],
+  "GenericResource": {
+    "__init__": [
+      "self",
+      "resource_factory",
+      "setup_method_name",
+      "teardown_method_name",
+      "id_attribute_name"
+    ],
+    "clean": [
+      "self",
+      "resource"
+    ],
+    "make": [
+      "self",
+      "dependency_resources"
+    ],
+    "isDirty": [
+      "self"
+    ],
+    "id": [
+      "self"
+    ]
+  },
+  "FixtureResource": {
+    "__init__": [
+      "self",
+      "fixture"
+    ],
+    "clean": [
+      "self",
+      "resource"
+    ],
+    "make": [
+      "self",
+      "dependency_resources"
+    ],
+    "id": [
+      "self"
+    ],
+    "_reset": [
+      "self",
+      "resource",
+      "dependency_resources"
+    ],
+    "isDirty": [
+      "self"
+    ],
+    "_dirty": []
+  },
+  "ResourcedTestCase": {
+    "resources": [],
+    "setUp": [
+      "self"
+    ],
+    "setUpResources": [
+      "self"
+    ],
+    "tearDown": [
+      "self"
+    ],
+    "tearDownResources": [
+      "self"
+    ]
+  },
+  "setUpResources": [
+    "test",
+    "resources",
+    "result"
+  ],
+  "tearDownResources": [
+    "test",
+    "resources",
+    "result"
+  ],
+  "neededResources": [
+    "resources"
+  ],
+  "_get_result": [],
+  "ResultWithoutResourceExtensions": {},
+  "ResultWithResourceExtensions": {
+    "__init__": [
+      "self"
+    ],
+    "startCleanResource": [
+      "self",
+      "resource"
+    ],
+    "stopCleanResource": [
+      "self",
+      "resource"
+    ],
+    "startMakeResource": [
+      "self",
+      "resource"
+    ],
+    "stopMakeResource": [
+      "self",
+      "resource"
+    ],
+    "startResetResource": [
+      "self",
+      "resource"
+    ],
+    "stopResetResource": [
+      "self",
+      "resource"
+    ]
+  }
+}
