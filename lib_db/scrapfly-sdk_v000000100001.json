@@ -1,0 +1,2902 @@
+{
+  "_state": [],
+  "_lifecycle_envelope": [
+    "event_name",
+    "action",
+    "stop_reason"
+  ],
+  "test_lifecycle_events": [
+    "event_name",
+    "action",
+    "stop_reason"
+  ],
+  "test_url_visited": [],
+  "test_url_skipped": [],
+  "test_url_discovered": [],
+  "test_url_failed_with_log_and_scrape_links": [],
+  "test_url_failed_with_null_log_link": [],
+  "test_unknown_event_raises_valueerror": [],
+  "test_missing_envelope_field_raises_keyerror": [],
+  "test_missing_required_payload_field_raises_keyerror": [],
+  "test_missing_scrape_link_on_url_failed_raises_keyerror": [],
+  "API_KEY": [],
+  "API_HOST": [],
+  "client": [],
+  "test_url": [],
+  "assert_crawl_successful": [
+    "crawl"
+  ],
+  "TestCrawlerBasicWorkflow": {
+    "test_basic_crawl_workflow": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_crawl_method_chaining": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_cannot_start_twice": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_status_before_start_raises_error": [
+      "self",
+      "client",
+      "test_url"
+    ]
+  },
+  "TestCrawlerStatus": {
+    "test_status_polling": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_status_caching": [
+      "self",
+      "client",
+      "test_url"
+    ]
+  },
+  "TestCrawlerWARC": {
+    "test_get_warc_artifact": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_warc_get_pages": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_warc_iter_responses": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_warc_caching": [
+      "self",
+      "client",
+      "test_url"
+    ]
+  },
+  "TestCrawlerHAR": {
+    "test_get_har_artifact": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_har_get_pages": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_har_iter_responses": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_har_timing_information": [
+      "self",
+      "client",
+      "test_url"
+    ]
+  },
+  "TestContentFormats": {
+    "test_html_format_from_warc": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_markdown_format": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_text_format": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_multiple_formats": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_missing_url_returns_none": [
+      "self",
+      "client",
+      "test_url"
+    ]
+  },
+  "TestContentRetrieval": {
+    "test_read_specific_url": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_read_iter_with_pattern": [
+      "self",
+      "client"
+    ],
+    "test_read_iter_product_pattern": [
+      "self",
+      "client"
+    ],
+    "test_read_batch": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_read_batch_max_limit": [
+      "self",
+      "client",
+      "test_url"
+    ]
+  },
+  "TestCrawlerConfiguration": {
+    "test_page_limit": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_max_depth": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_exclude_paths": [
+      "self",
+      "client"
+    ],
+    "test_include_only_paths": [
+      "self",
+      "client"
+    ]
+  },
+  "TestCrawlerStats": {
+    "test_stats_basic": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_stats_with_artifact": [
+      "self",
+      "client",
+      "test_url"
+    ]
+  },
+  "TestHTTPBinTests": {
+    "test_httpbin_status_codes": [
+      "self",
+      "client"
+    ],
+    "test_httpbin_404_page": [
+      "self",
+      "client"
+    ],
+    "test_httpbin_failed_seed_url": [
+      "self",
+      "client"
+    ]
+  },
+  "TestCrawlerRepr": {
+    "test_repr_before_start": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_repr_after_start": [
+      "self",
+      "client",
+      "test_url"
+    ]
+  },
+  "TestErrorHandling": {
+    "test_read_before_crawl_start": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_warc_before_crawl_start": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_read_iter_before_crawl_start": [
+      "self",
+      "client",
+      "test_url"
+    ]
+  },
+  "TestAsyncCrawler": {
+    "test_async_start_crawl": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_async_get_status": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_async_wait_for_completion": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_async_get_artifact": [
+      "self",
+      "client",
+      "test_url"
+    ]
+  },
+  "TestWebScrapingDevSite": {
+    "test_products_listing": [
+      "self",
+      "client"
+    ],
+    "test_product_details": [
+      "self",
+      "client"
+    ],
+    "test_pagination": [
+      "self",
+      "client"
+    ]
+  },
+  "TestAdvancedConfiguration": {
+    "test_ignore_base_path_restriction": [
+      "self",
+      "client"
+    ],
+    "test_use_sitemaps": [
+      "self",
+      "client"
+    ],
+    "test_cache_enabled": [
+      "self",
+      "client"
+    ],
+    "test_max_concurrency": [
+      "self",
+      "client"
+    ],
+    "test_delay_between_requests": [
+      "self",
+      "client"
+    ],
+    "test_custom_headers": [
+      "self",
+      "client"
+    ],
+    "test_user_agent": [
+      "self",
+      "client"
+    ]
+  },
+  "TestStopReasons": {
+    "test_stop_reason_page_limit": [
+      "self",
+      "client"
+    ],
+    "test_stop_reason_max_duration": [
+      "self",
+      "client"
+    ],
+    "test_stop_reason_no_more_urls": [
+      "self",
+      "client"
+    ]
+  },
+  "TestContentFormatsAdvanced": {
+    "test_clean_html_format": [
+      "self",
+      "client"
+    ],
+    "test_json_format": [
+      "self",
+      "client"
+    ],
+    "test_page_metadata_format": [
+      "self",
+      "client"
+    ],
+    "test_all_formats_simultaneously": [
+      "self",
+      "client"
+    ]
+  },
+  "TestProxyAndASP": {
+    "test_proxy_pool_configuration": [
+      "self",
+      "client"
+    ],
+    "test_country_configuration": [
+      "self",
+      "client"
+    ],
+    "test_asp_enabled": [
+      "self",
+      "client"
+    ]
+  },
+  "TestURLsEndpoint": {
+    "test_get_crawled_urls": [
+      "self",
+      "client"
+    ]
+  },
+  "TestCompleteWorkflow": {
+    "test_polling_workflow_complete": [
+      "self",
+      "client"
+    ],
+    "test_batch_content_workflow": [
+      "self",
+      "client"
+    ],
+    "test_stats_tracking": [
+      "self",
+      "client"
+    ]
+  },
+  "TestContentFormatsBasic": {
+    "test_html_format": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_clean_html_format": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_markdown_format": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_text_format": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_json_format": [
+      "self",
+      "client",
+      "test_url"
+    ]
+  },
+  "TestMultipleFormats": {
+    "test_multiple_formats_request": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_format_conversion_fidelity": [
+      "self",
+      "client",
+      "test_url"
+    ]
+  },
+  "TestPageMetadata": {
+    "test_page_metadata_format": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_extracted_data": [
+      "self",
+      "client",
+      "test_url"
+    ]
+  },
+  "TestFormatComparison": {
+    "test_html_vs_markdown": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_markdown_vs_text": [
+      "self",
+      "client",
+      "test_url"
+    ]
+  },
+  "TestFormatSpecificFeatures": {
+    "test_html_preserves_structure": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_markdown_link_format": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_text_no_formatting": [
+      "self",
+      "client",
+      "test_url"
+    ]
+  },
+  "TestFormatEdgeCases": {
+    "test_invalid_format_request": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_empty_page_content": [
+      "self",
+      "client"
+    ],
+    "test_all_formats_simultaneously": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_clean_html_removes_scripts_styles": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_format_content_size_differences": [
+      "self",
+      "client",
+      "test_url"
+    ]
+  },
+  "TARGET_BASE": [],
+  "REPORT_URL": [],
+  "RESET_URL": [],
+  "_http_client": [],
+  "reset_trap_store": [],
+  "fetch_report": [
+    "trap"
+  ],
+  "hit_count": [
+    "report",
+    "trap_name"
+  ],
+  "run_crawl": [
+    "client"
+  ],
+  "_reset_store_between_tests": [],
+  "TestRobotsTxtCompliance": {
+    "test_respects_robots_txt": [
+      "self",
+      "client"
+    ],
+    "test_violates_robots_when_disabled_negative_control": [
+      "self",
+      "client"
+    ]
+  },
+  "TestNofollowCompliance": {
+    "test_respects_meta_nofollow": [
+      "self",
+      "client"
+    ],
+    "test_respects_rel_nofollow": [
+      "self",
+      "client"
+    ],
+    "test_respects_x_robots_tag_nofollow": [
+      "self",
+      "client"
+    ]
+  },
+  "TestCrawlerTraps": {
+    "test_escapes_redirect_loop": [
+      "self",
+      "client"
+    ],
+    "test_bounds_session_vortex": [
+      "self",
+      "client"
+    ],
+    "test_bounds_infinite_calendar": [
+      "self",
+      "client"
+    ],
+    "test_caps_redirect_chain": [
+      "self",
+      "client"
+    ]
+  },
+  "TestUrlNormalization": {
+    "test_collapses_fragments": [
+      "self",
+      "client"
+    ],
+    "test_normalizes_url_variants": [
+      "self",
+      "client"
+    ]
+  },
+  "TestSitemapHandling": {
+    "test_reads_sitemap_index": [
+      "self",
+      "client"
+    ],
+    "test_tolerates_dead_link_in_sitemap": [
+      "self",
+      "client"
+    ]
+  },
+  "TestExternalBoundary": {
+    "test_does_not_follow_external_redirect": [
+      "self",
+      "client"
+    ]
+  },
+  "TestSubdomainFields": {
+    "test_follow_internal_subdomains_true_round_trips": [
+      "self"
+    ],
+    "test_follow_internal_subdomains_false_round_trips": [
+      "self"
+    ],
+    "test_follow_internal_subdomains_default_is_omitted": [
+      "self"
+    ],
+    "test_allowed_internal_subdomains_round_trips": [
+      "self"
+    ],
+    "test_allowed_internal_subdomains_default_is_omitted": [
+      "self"
+    ],
+    "test_empty_allowed_internal_subdomains_is_omitted": [
+      "self"
+    ]
+  },
+  "TestRespectRobotsTxtTriState": {
+    "test_respect_robots_txt_default_is_omitted": [
+      "self"
+    ],
+    "test_respect_robots_txt_true_round_trips": [
+      "self"
+    ],
+    "test_respect_robots_txt_false_round_trips": [
+      "self"
+    ]
+  },
+  "TestCrawlerUrlEntryConstruction": {
+    "test_minimal_visited_entry": [
+      "self"
+    ],
+    "test_failed_entry_with_reason": [
+      "self"
+    ],
+    "test_empty_url_fails_assertion": [
+      "self"
+    ],
+    "test_empty_status_fails_assertion": [
+      "self"
+    ]
+  },
+  "TestCrawlerUrlsResponseFromText": {
+    "test_empty_body": [
+      "self"
+    ],
+    "test_visited_one_per_line": [
+      "self"
+    ],
+    "test_failed_url_comma_reason": [
+      "self"
+    ],
+    "test_skipped_url_comma_reason": [
+      "self"
+    ],
+    "test_blank_lines_are_ignored": [
+      "self"
+    ],
+    "test_trailing_whitespace_trimmed": [
+      "self"
+    ],
+    "test_iter_yields_entries": [
+      "self"
+    ]
+  },
+  "TestGetCrawlUrlsLive": {
+    "test_crawl_urls_visited": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_crawl_urls_pagination_inputs": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_crawl_urls_via_crawl_wrapper": [
+      "self",
+      "client",
+      "test_url"
+    ]
+  },
+  "TestGetCrawlContentsPlainMode": {
+    "test_plain_mode_markdown": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_plain_mode_requires_url": [
+      "self",
+      "client"
+    ]
+  },
+  "TestConcurrentCrawls": {
+    "test_start_multiple_crawls_parallel": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_monitor_multiple_crawls_status": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_wait_for_multiple_crawls_sequentially": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_retrieve_artifacts_from_multiple_crawls": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_concurrent_same_url_crawls": [
+      "self",
+      "client",
+      "test_url"
+    ]
+  },
+  "TestConcurrentEdgeCases": {
+    "test_rapid_status_checks": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_mixed_crawl_and_scrape_operations": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_early_status_check_doesnt_break_crawl": [
+      "self",
+      "client",
+      "test_url"
+    ]
+  },
+  "TestConcurrentResourceManagement": {
+    "test_max_concurrent_crawls_limit": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_crawl_status_after_completion": [
+      "self",
+      "client",
+      "test_url"
+    ]
+  },
+  "TestResultsURLsRetrieval": {
+    "test_get_urls_via_warc": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_urls_match_status": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_urls_include_seed": [
+      "self",
+      "client",
+      "test_url"
+    ]
+  },
+  "TestResultsContentRead": {
+    "test_read_single_url": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_read_multiple_urls": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_read_nonexistent_url": [
+      "self",
+      "client",
+      "test_url"
+    ]
+  },
+  "TestResultsContentReadIter": {
+    "test_read_iter_basic": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_read_iter_memory_efficient": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_read_iter_with_format": [
+      "self",
+      "client",
+      "test_url"
+    ]
+  },
+  "TestResultsContentReadBatch": {
+    "test_read_batch_basic": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_read_batch_max_100": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_read_batch_with_format": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_read_batch_empty_list": [
+      "self",
+      "client",
+      "test_url"
+    ]
+  },
+  "TestResultsContentFormats": {
+    "test_read_html_format": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_read_markdown_format": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_read_text_format": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_read_multiple_formats": [
+      "self",
+      "client",
+      "test_url"
+    ]
+  },
+  "TestResultsCompleteWorkflow": {
+    "test_crawl_and_retrieve_all_content": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_selective_content_retrieval": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_incremental_content_processing": [
+      "self",
+      "client",
+      "test_url"
+    ]
+  },
+  "TestBasicLimits": {
+    "test_page_limit": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_max_depth": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_combined_limits": [
+      "self",
+      "client",
+      "test_url"
+    ]
+  },
+  "TestPathFiltering": {
+    "test_exclude_paths": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_include_only_paths": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_multiple_exclude_patterns": [
+      "self",
+      "client",
+      "test_url"
+    ]
+  },
+  "TestAdvancedOptions": {
+    "test_custom_headers": [
+      "self",
+      "client",
+      "httpbin_url"
+    ],
+    "test_user_agent": [
+      "self",
+      "client",
+      "httpbin_url"
+    ],
+    "test_delay_between_requests": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_max_concurrency": [
+      "self",
+      "client",
+      "test_url"
+    ]
+  },
+  "TestExternalLinksAndSitemaps": {
+    "test_ignore_external_links": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_use_sitemaps": [
+      "self",
+      "client"
+    ],
+    "test_respect_robots_txt": [
+      "self",
+      "client"
+    ]
+  },
+  "TestCacheOptions": {
+    "test_cache_enabled": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_cache_clear": [
+      "self",
+      "client",
+      "test_url"
+    ]
+  },
+  "TestCrawlLimits": {
+    "test_max_duration": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_max_api_credit": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_combined_limits_duration_and_pages": [
+      "self",
+      "client",
+      "test_url"
+    ]
+  },
+  "TestExternalLinks": {
+    "test_follow_external_links_enabled": [
+      "self",
+      "client"
+    ],
+    "test_allowed_external_domains": [
+      "self",
+      "client"
+    ],
+    "test_ignore_base_path_restriction": [
+      "self",
+      "client"
+    ]
+  },
+  "TestRenderingOptions": {
+    "test_rendering_delay": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_rendering_delay_with_wait": [
+      "self",
+      "client",
+      "test_url"
+    ]
+  },
+  "TestCrawlStrategy": {
+    "test_ignore_no_follow": [
+      "self",
+      "client"
+    ],
+    "test_robots_txt_with_user_agent": [
+      "self",
+      "client"
+    ]
+  },
+  "env_path": [],
+  "httpbin_url": [],
+  "parse_httpbin_headers": [
+    "content"
+  ],
+  "TestEdgeCases": {
+    "test_single_page_crawl": [
+      "self",
+      "client"
+    ],
+    "test_very_small_page_limit": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_empty_content_handling": [
+      "self",
+      "client"
+    ],
+    "test_mutually_exclusive_paths": [
+      "self",
+      "client",
+      "test_url"
+    ]
+  },
+  "TestFailedCrawls": {
+    "test_all_urls_fail": [
+      "self",
+      "client"
+    ],
+    "test_network_timeout": [
+      "self",
+      "client"
+    ],
+    "test_invalid_domain": [
+      "self",
+      "client"
+    ]
+  },
+  "TestCancellation": {
+    "test_cancel_running_crawl": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_cannot_cancel_completed_crawl": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_stop_reason_cancelled": [
+      "self",
+      "client",
+      "test_url"
+    ]
+  },
+  "TestConfigValidation": {
+    "test_negative_page_limit": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_zero_page_limit": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_negative_max_depth": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_invalid_content_format": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_conflicting_path_options": [
+      "self",
+      "client",
+      "test_url"
+    ]
+  },
+  "TestAPIErrors": {
+    "test_status_before_start": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_artifact_before_completion": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_read_before_completion": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_invalid_uuid_status": [
+      "self",
+      "client"
+    ]
+  },
+  "TestRetryAndTimeout": {
+    "test_slow_response_handling": [
+      "self",
+      "client"
+    ],
+    "test_mixed_success_failure_urls": [
+      "self",
+      "client"
+    ]
+  },
+  "TestStopReasonsExtended": {
+    "test_stop_reason_error": [
+      "self",
+      "client"
+    ],
+    "test_stop_reason_max_api_credit": [
+      "self",
+      "client",
+      "test_url"
+    ]
+  },
+  "TestWARCArtifacts": {
+    "test_warc_download": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_warc_is_gzipped": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_warc_parse_records": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_warc_iter_responses": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_warc_get_pages": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_warc_save_to_file": [
+      "self",
+      "client",
+      "test_url",
+      "tmp_path"
+    ],
+    "test_warc_total_pages": [
+      "self",
+      "client",
+      "test_url"
+    ]
+  },
+  "TestHARArtifacts": {
+    "test_har_download": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_har_is_json": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_har_entries": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_har_timing_info": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_har_response_content": [
+      "self",
+      "client",
+      "test_url"
+    ]
+  },
+  "TestArtifactFormats": {
+    "test_warc_vs_har_content": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_warc_default_format": [
+      "self",
+      "client",
+      "test_url"
+    ]
+  },
+  "TestArtifactEdgeCases": {
+    "test_artifact_before_completion": [
+      "self",
+      "client",
+      "test_url"
+    ],
+    "test_empty_warc_handling": [
+      "self",
+      "client",
+      "httpbin_url"
+    ],
+    "test_large_crawl_artifact": [
+      "self",
+      "client",
+      "test_url"
+    ]
+  },
+  "ScreenshotFlag": {
+    "LOAD_IMAGES": [],
+    "DARK_MODE": [],
+    "BLOCK_BANNERS": [],
+    "HIGH_QUALITY": [],
+    "PRINT_MEDIA_FORMAT": []
+  },
+  "Format": {
+    "JSON": [],
+    "TEXT": [],
+    "MARKDOWN": [],
+    "CLEAN_HTML": []
+  },
+  "FormatOption": {
+    "NO_IMAGES": [],
+    "NO_LINKS": [],
+    "ONLY_CONTENT": []
+  },
+  "ScrapeConfigError": {},
+  "ScrapeConfig": {
+    "PUBLIC_DATACENTER_POOL": [],
+    "PUBLIC_RESIDENTIAL_POOL": [],
+    "__init__": [
+      "self",
+      "url",
+      "retry",
+      "method",
+      "country",
+      "render_js",
+      "cache",
+      "cache_clear",
+      "ssl",
+      "dns",
+      "asp",
+      "debug",
+      "raise_on_upstream_error",
+      "cache_ttl",
+      "proxy_pool",
+      "session",
+      "tags",
+      "format",
+      "format_options",
+      "extraction_template",
+      "extraction_ephemeral_template",
+      "extraction_prompt",
+      "extraction_model",
+      "correlation_id",
+      "cookies",
+      "body",
+      "data",
+      "headers",
+      "js",
+      "rendering_wait",
+      "rendering_stage",
+      "wait_for_selector",
+      "screenshots",
+      "screenshot_flags",
+      "session_sticky_proxy",
+      "webhook",
+      "timeout",
+      "js_scenario",
+      "extract",
+      "os",
+      "lang",
+      "auto_scroll",
+      "cost_budget",
+      "browser_brand",
+      "geolocation",
+      "proxified_response"
+    ],
+    "to_api_params": [
+      "self",
+      "key"
+    ],
+    "from_exported_config": [
+      "config"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "scrape_config_dict"
+    ]
+  },
+  "ProxyPool": {
+    "DATACENTER": [],
+    "RESIDENTIAL": []
+  },
+  "OperatingSystem": {
+    "LINUX": [],
+    "WINDOWS": [],
+    "MACOS": []
+  },
+  "BrowserConfig": {
+    "CLOUD_BROWSER_HOST": [],
+    "__init__": [
+      "self",
+      "proxy_pool",
+      "os",
+      "session",
+      "country",
+      "auto_close",
+      "timeout",
+      "debug",
+      "extensions",
+      "block_images",
+      "block_styles",
+      "block_fonts",
+      "block_media",
+      "screenshot",
+      "resolution",
+      "target_url",
+      "cache",
+      "blacklist",
+      "unblock",
+      "unblock_timeout",
+      "browser_brand",
+      "byop_proxy",
+      "enable_mcp"
+    ],
+    "websocket_url": [
+      "self",
+      "api_key",
+      "host"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "browser_config_dict"
+    ]
+  },
+  "logger": [],
+  "NetworkError": [],
+  "ScraperAPI": {
+    "MONITORING_DATA_FORMAT_STRUCTURED": [],
+    "MONITORING_DATA_FORMAT_PROMETHEUS": [],
+    "MONITORING_PERIOD_SUBSCRIPTION": [],
+    "MONITORING_PERIOD_LAST_7D": [],
+    "MONITORING_PERIOD_LAST_24H": [],
+    "MONITORING_PERIOD_LAST_1H": [],
+    "MONITORING_PERIOD_LAST_5m": [],
+    "MONITORING_ACCOUNT_AGGREGATION": [],
+    "MONITORING_PROJECT_AGGREGATION": [],
+    "MONITORING_TARGET_AGGREGATION": []
+  },
+  "MonitoringTargetPeriod": [],
+  "MonitoringAggregation": [],
+  "ScrapflyClient": {
+    "HOST": [],
+    "CLOUD_BROWSER_HOST": [],
+    "CLOUD_BROWSER_API_HOST": [],
+    "DEFAULT_CONNECT_TIMEOUT": [],
+    "DEFAULT_READ_TIMEOUT": [],
+    "DEFAULT_WEBSCRAPING_API_READ_TIMEOUT": [],
+    "DEFAULT_SCREENSHOT_API_READ_TIMEOUT": [],
+    "DEFAULT_EXTRACTION_API_READ_TIMEOUT": [],
+    "DEFAULT_CRAWLER_API_READ_TIMEOUT": [],
+    "CONCURRENCY_AUTO": [],
+    "DATETIME_FORMAT": [],
+    "__init__": [
+      "self",
+      "key",
+      "host",
+      "verify",
+      "debug",
+      "max_concurrency",
+      "connect_timeout",
+      "web_scraping_api_read_timeout",
+      "extraction_api_read_timeout",
+      "screenshot_api_read_timeout",
+      "read_timeout",
+      "default_read_timeout",
+      "reporter",
+      "cloud_browser_host"
+    ],
+    "ua": [
+      "self"
+    ],
+    "_http_handler": [
+      "self"
+    ],
+    "http": [
+      "self"
+    ],
+    "_scrape_request": [
+      "self",
+      "scrape_config"
+    ],
+    "_screenshot_request": [
+      "self",
+      "screenshot_config"
+    ],
+    "_extraction_request": [
+      "self",
+      "extraction_config"
+    ],
+    "account": [
+      "self"
+    ],
+    "classify": [
+      "self",
+      "url",
+      "status_code",
+      "headers",
+      "body",
+      "method"
+    ],
+    "_format_monitoring_dt": [
+      "dt"
+    ],
+    "_monitoring_request": [
+      "self",
+      "path",
+      "params"
+    ],
+    "_build_metrics_params": [
+      "self",
+      "format",
+      "period",
+      "aggregation",
+      "include_webhook"
+    ],
+    "_build_target_params": [
+      "self",
+      "domain",
+      "group_subdomain",
+      "period",
+      "start",
+      "end",
+      "include_webhook"
+    ],
+    "get_monitoring_metrics": [
+      "self",
+      "format",
+      "period",
+      "aggregation",
+      "include_webhook"
+    ],
+    "get_monitoring_target_metrics": [
+      "self",
+      "domain",
+      "group_subdomain",
+      "period",
+      "start",
+      "end",
+      "include_webhook"
+    ],
+    "get_screenshot_monitoring_metrics": [
+      "self",
+      "format",
+      "period",
+      "aggregation",
+      "include_webhook"
+    ],
+    "get_screenshot_monitoring_target_metrics": [
+      "self",
+      "domain",
+      "group_subdomain",
+      "period",
+      "start",
+      "end",
+      "include_webhook"
+    ],
+    "get_extraction_monitoring_metrics": [
+      "self",
+      "format",
+      "period",
+      "aggregation",
+      "include_webhook"
+    ],
+    "get_extraction_monitoring_target_metrics": [
+      "self",
+      "domain",
+      "group_subdomain",
+      "period",
+      "start",
+      "end",
+      "include_webhook"
+    ],
+    "get_crawler_monitoring_metrics": [
+      "self",
+      "format",
+      "period",
+      "aggregation",
+      "include_webhook"
+    ],
+    "get_crawler_monitoring_target_metrics": [
+      "self",
+      "domain",
+      "group_subdomain",
+      "period",
+      "start",
+      "end",
+      "include_webhook"
+    ],
+    "get_browser_monitoring_metrics": [
+      "self",
+      "period",
+      "proxy_pool",
+      "start",
+      "end"
+    ],
+    "get_browser_monitoring_timeseries": [
+      "self",
+      "period",
+      "proxy_pool",
+      "start",
+      "end"
+    ],
+    "resilient_scrape": [
+      "self",
+      "scrape_config",
+      "retry_on_errors",
+      "retry_on_status_code",
+      "tries",
+      "delay"
+    ],
+    "open": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ],
+    "async_scrape": [
+      "self",
+      "scrape_config",
+      "loop"
+    ],
+    "concurrent_scrape": [
+      "self",
+      "scrape_configs",
+      "concurrency"
+    ],
+    "scrape": [
+      "self",
+      "scrape_config",
+      "no_raise"
+    ],
+    "async_screenshot": [
+      "self",
+      "screenshot_config",
+      "loop"
+    ],
+    "screenshot": [
+      "self",
+      "screenshot_config",
+      "no_raise"
+    ],
+    "async_extraction": [
+      "self",
+      "extraction_config",
+      "loop"
+    ],
+    "extract": [
+      "self",
+      "extraction_config",
+      "no_raise"
+    ],
+    "_handle_response": [
+      "self",
+      "response",
+      "scrape_config"
+    ],
+    "_handle_screenshot_response": [
+      "self",
+      "response",
+      "screenshot_config"
+    ],
+    "_handle_extraction_response": [
+      "self",
+      "response",
+      "extraction_config"
+    ],
+    "scrape_batch": [
+      "self",
+      "scrape_configs",
+      "format"
+    ],
+    "save_screenshot": [
+      "self",
+      "screenshot_api_response",
+      "name",
+      "path"
+    ],
+    "save_scrape_screenshot": [
+      "self",
+      "api_response",
+      "name",
+      "path"
+    ],
+    "sink": [
+      "self",
+      "api_response",
+      "content",
+      "path",
+      "name",
+      "file"
+    ],
+    "_handle_scrape_large_objects": [
+      "self",
+      "callback_url",
+      "format"
+    ],
+    "_handle_api_response": [
+      "self",
+      "response",
+      "scrape_config",
+      "raise_on_upstream_error"
+    ],
+    "_handle_screenshot_api_response": [
+      "self",
+      "response",
+      "screenshot_config",
+      "raise_on_upstream_error"
+    ],
+    "_handle_extraction_api_response": [
+      "self",
+      "response",
+      "extraction_config",
+      "raise_on_upstream_error"
+    ],
+    "start_crawl": [
+      "self",
+      "crawler_config"
+    ],
+    "get_crawl_status": [
+      "self",
+      "uuid"
+    ],
+    "cancel_crawl": [
+      "self",
+      "crawl_uuid"
+    ],
+    "get_crawl_artifact": [
+      "self",
+      "uuid",
+      "artifact_type"
+    ],
+    "get_crawl_contents": [
+      "self",
+      "uuid",
+      "format"
+    ],
+    "_handle_crawler_error_response": [
+      "self",
+      "response"
+    ],
+    "cloud_browser": [
+      "self",
+      "browser_config"
+    ],
+    "cloud_browser_unblock": [
+      "self",
+      "url",
+      "proxy_pool",
+      "country",
+      "os",
+      "timeout",
+      "browser_timeout",
+      "headers",
+      "body",
+      "method",
+      "enable_mcp"
+    ],
+    "cloud_browser_session_stop": [
+      "self",
+      "session_id"
+    ],
+    "cloud_browser_playback": [
+      "self",
+      "run_id"
+    ],
+    "cloud_browser_video": [
+      "self",
+      "run_id",
+      "save_path"
+    ],
+    "cloud_browser_extension_list": [
+      "self"
+    ],
+    "cloud_browser_extension_get": [
+      "self",
+      "extension_id"
+    ],
+    "cloud_browser_extension_upload": [
+      "self",
+      "file_path"
+    ],
+    "cloud_browser_extension_upload_from_url": [
+      "self",
+      "extension_url"
+    ],
+    "cloud_browser_extension_delete": [
+      "self",
+      "extension_id"
+    ],
+    "cloud_browser_sessions": [
+      "self"
+    ]
+  },
+  "CompressionFormat": {
+    "GZIP": [],
+    "ZSTD": [],
+    "DEFLATE": []
+  },
+  "ExtractionConfigError": {},
+  "ExtractionConfig": {
+    "__init__": [
+      "self",
+      "body",
+      "content_type",
+      "url",
+      "charset",
+      "extraction_template",
+      "extraction_ephemeral_template",
+      "extraction_prompt",
+      "extraction_model",
+      "is_document_compressed",
+      "document_compression_format",
+      "webhook",
+      "timeout",
+      "raise_on_upstream_error",
+      "template",
+      "ephemeral_template"
+    ],
+    "to_api_params": [
+      "self",
+      "key"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "extraction_config_dict"
+    ]
+  },
+  "detect_compression_format": [
+    "data"
+  ],
+  "Options": {
+    "LOAD_IMAGES": [],
+    "DARK_MODE": [],
+    "BLOCK_BANNERS": [],
+    "PRINT_MEDIA_FORMAT": []
+  },
+  "VisionDeficiency": {
+    "DEUTERANOPIA": [],
+    "PROTANOPIA": [],
+    "TRITANOPIA": [],
+    "ACHROMATOPSIA": [],
+    "REDUCED_CONTRAST": [],
+    "BLURRED_VISION": []
+  },
+  "ScreenshotConfig": {
+    "__init__": [
+      "self",
+      "url",
+      "format",
+      "capture",
+      "resolution",
+      "country",
+      "timeout",
+      "rendering_wait",
+      "wait_for_selector",
+      "options",
+      "auto_scroll",
+      "js",
+      "cache",
+      "cache_ttl",
+      "cache_clear",
+      "vision_deficiency",
+      "webhook",
+      "raise_on_upstream_error"
+    ],
+    "to_api_params": [
+      "self",
+      "key"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "screenshot_config_dict"
+    ]
+  },
+  "ResourceType": {
+    "SCRAPE": [],
+    "PING": [],
+    "CRAWLER": []
+  },
+  "create_server": [
+    "signing_secrets",
+    "callback",
+    "app"
+  ],
+  "WebhookError": {},
+  "WebhookSignatureMissMatch": {},
+  "ContentError": {},
+  "ScrapflyError": {
+    "KIND_HTTP_BAD_RESPONSE": [],
+    "KIND_SCRAPFLY_ERROR": [],
+    "RESOURCE_PROXY": [],
+    "RESOURCE_THROTTLE": [],
+    "RESOURCE_SCRAPE": [],
+    "RESOURCE_ASP": [],
+    "RESOURCE_SCHEDULE": [],
+    "RESOURCE_WEBHOOK": [],
+    "RESOURCE_SESSION": [],
+    "__init__": [
+      "self",
+      "message",
+      "code",
+      "http_status_code",
+      "resource",
+      "is_retryable",
+      "retry_delay",
+      "retry_times",
+      "documentation_url",
+      "api_response"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "EncoderError": {
+    "__init__": [
+      "self",
+      "content"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ExtraUsageForbidden": {},
+  "HttpError": {
+    "__init__": [
+      "self",
+      "request",
+      "response"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "UpstreamHttpError": {},
+  "UpstreamHttpClientError": {},
+  "UpstreamHttpServerError": {},
+  "ApiHttpClientError": {},
+  "BadApiKeyError": {},
+  "PaymentRequired": {},
+  "TooManyRequest": {},
+  "ApiHttpServerError": {},
+  "ScraperAPIError": {},
+  "ScrapflyScrapeError": {},
+  "ScrapflyProxyError": {},
+  "ScrapflyThrottleError": {},
+  "ScrapflyAspError": {},
+  "ScrapflyScheduleError": {},
+  "ScrapflyWebhookError": {},
+  "ScrapflySessionError": {},
+  "TooManyConcurrentRequest": {},
+  "QuotaLimitReached": {},
+  "ScreenshotAPIError": {},
+  "ExtractionAPIError": {},
+  "CrawlerError": {},
+  "ScrapflyCrawlerError": {},
+  "ErrorFactory": {
+    "RESOURCE_TO_ERROR": [],
+    "HTTP_STATUS_TO_ERROR": [],
+    "_get_resource": [
+      "code"
+    ],
+    "create": [
+      "api_response"
+    ]
+  },
+  "_CRLF": [],
+  "_BufferedMultipartReader": {
+    "__init__": [
+      "self",
+      "chunks",
+      "boundary"
+    ],
+    "_read_more": [
+      "self"
+    ],
+    "read_until": [
+      "self",
+      "delimiter"
+    ],
+    "read_exact": [
+      "self",
+      "n"
+    ],
+    "discard_prefix": [
+      "self"
+    ]
+  },
+  "_parse_content_type": [
+    "header_value"
+  ],
+  "iter_batch_parts": [
+    "response"
+  ],
+  "decode_part_body": [
+    "headers",
+    "body",
+    "body_handler"
+  ],
+  "_UPSTREAM_PREFIX": [],
+  "_build_proxified_response_from_part": [
+    "headers",
+    "body",
+    "originating_request"
+  ],
+  "_safe_int": [
+    "value",
+    "default"
+  ],
+  "BaseApiConfig": {
+    "_bool_to_http": [
+      "self",
+      "_bool"
+    ]
+  },
+  "FrozenDict": {
+    "__init__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__hash__": [
+      "self"
+    ],
+    "_immutable": [
+      "self"
+    ],
+    "__setitem__": [],
+    "__delitem__": [],
+    "pop": [],
+    "popitem": [],
+    "clear": [],
+    "update": [],
+    "setdefault": []
+  },
+  "_DATE_FORMAT": [],
+  "_date_parser": [
+    "value"
+  ],
+  "ResponseBodyHandler": {
+    "SUPPORTED_COMPRESSION": [],
+    "SUPPORTED_CONTENT_TYPES": [],
+    "__init__": [
+      "self",
+      "use_brotli",
+      "signing_secrets"
+    ],
+    "support": [
+      "self",
+      "headers"
+    ],
+    "verify": [
+      "self",
+      "message",
+      "signature"
+    ],
+    "read": [
+      "self",
+      "content",
+      "content_encoding",
+      "content_type",
+      "signature"
+    ],
+    "__call__": [
+      "self",
+      "content",
+      "content_type"
+    ]
+  },
+  "ApiResponse": {
+    "__init__": [
+      "self",
+      "request",
+      "response"
+    ],
+    "headers": [
+      "self"
+    ],
+    "status_code": [
+      "self"
+    ],
+    "remaining_quota": [
+      "self"
+    ],
+    "cost": [
+      "self"
+    ],
+    "duration_ms": [
+      "self"
+    ],
+    "error_message": [
+      "self"
+    ],
+    "prevent_extra_usage": [
+      "self"
+    ],
+    "raise_for_result": [
+      "self",
+      "raise_on_upstream_error",
+      "error_class"
+    ]
+  },
+  "ScrapeApiResponse": {
+    "__init__": [
+      "self",
+      "request",
+      "response",
+      "scrape_config",
+      "api_result",
+      "large_object_handler"
+    ],
+    "scrape_result": [
+      "self"
+    ],
+    "config": [
+      "self"
+    ],
+    "context": [
+      "self"
+    ],
+    "content": [
+      "self"
+    ],
+    "success": [
+      "self"
+    ],
+    "scrape_success": [
+      "self"
+    ],
+    "error": [
+      "self"
+    ],
+    "upstream_status_code": [
+      "self"
+    ],
+    "soup": [
+      "self"
+    ],
+    "selector": [
+      "self"
+    ],
+    "handle_api_result": [
+      "self",
+      "api_result"
+    ],
+    "_is_api_error": [
+      "self",
+      "api_result"
+    ],
+    "upstream_result_into_response": [
+      "self",
+      "_class"
+    ],
+    "sink": [
+      "self",
+      "path",
+      "name",
+      "file",
+      "content"
+    ],
+    "raise_for_result": [
+      "self",
+      "raise_on_upstream_error",
+      "error_class"
+    ]
+  },
+  "ScreenshotApiResponse": {
+    "__init__": [
+      "self",
+      "request",
+      "response",
+      "screenshot_config",
+      "api_result"
+    ],
+    "image": [
+      "self"
+    ],
+    "metadata": [
+      "self"
+    ],
+    "screenshot_success": [
+      "self"
+    ],
+    "error": [
+      "self"
+    ],
+    "_is_api_error": [
+      "self",
+      "api_result"
+    ],
+    "handle_api_result": [
+      "self",
+      "api_result"
+    ],
+    "raise_for_result": [
+      "self",
+      "raise_on_upstream_error",
+      "error_class"
+    ]
+  },
+  "ExtractionApiResponse": {
+    "__init__": [
+      "self",
+      "request",
+      "response",
+      "extraction_config",
+      "api_result"
+    ],
+    "extraction_result": [
+      "self"
+    ],
+    "data": [
+      "self"
+    ],
+    "content_type": [
+      "self"
+    ],
+    "extraction_success": [
+      "self"
+    ],
+    "error": [
+      "self"
+    ],
+    "_is_api_error": [
+      "self",
+      "api_result"
+    ],
+    "handle_api_result": [
+      "self",
+      "api_result"
+    ],
+    "raise_for_result": [
+      "self",
+      "raise_on_upstream_error",
+      "error_class"
+    ]
+  },
+  "__version__": [],
+  "ClassifyResult": {
+    "from_dict": [
+      "cls",
+      "data"
+    ]
+  },
+  "ContentFormat": [],
+  "Crawl": {
+    "__init__": [
+      "self",
+      "client",
+      "config"
+    ],
+    "uuid": [
+      "self"
+    ],
+    "started": [
+      "self"
+    ],
+    "crawl": [
+      "self"
+    ],
+    "status": [
+      "self",
+      "refresh"
+    ],
+    "wait": [
+      "self",
+      "poll_interval",
+      "max_wait",
+      "verbose",
+      "allow_cancelled"
+    ],
+    "cancel": [
+      "self"
+    ],
+    "urls": [
+      "self",
+      "status",
+      "page",
+      "per_page"
+    ],
+    "warc": [
+      "self",
+      "artifact_type"
+    ],
+    "har": [
+      "self"
+    ],
+    "read": [
+      "self",
+      "url",
+      "format"
+    ],
+    "read_iter": [
+      "self",
+      "pattern",
+      "format"
+    ],
+    "read_batch": [
+      "self",
+      "urls",
+      "formats"
+    ],
+    "stats": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "HarEntry": {
+    "__init__": [
+      "self",
+      "entry_data"
+    ],
+    "url": [
+      "self"
+    ],
+    "method": [
+      "self"
+    ],
+    "status_code": [
+      "self"
+    ],
+    "status_text": [
+      "self"
+    ],
+    "request_headers": [
+      "self"
+    ],
+    "response_headers": [
+      "self"
+    ],
+    "content": [
+      "self"
+    ],
+    "content_type": [
+      "self"
+    ],
+    "content_size": [
+      "self"
+    ],
+    "started_datetime": [
+      "self"
+    ],
+    "time": [
+      "self"
+    ],
+    "timings": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "HarArchive": {
+    "__init__": [
+      "self",
+      "har_data"
+    ],
+    "version": [
+      "self"
+    ],
+    "creator": [
+      "self"
+    ],
+    "pages": [
+      "self"
+    ],
+    "get_entries": [
+      "self"
+    ],
+    "iter_entries": [
+      "self"
+    ],
+    "get_urls": [
+      "self"
+    ],
+    "find_by_url": [
+      "self",
+      "url"
+    ],
+    "filter_by_status": [
+      "self",
+      "status_code"
+    ],
+    "filter_by_content_type": [
+      "self",
+      "content_type"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "CrawlContent": {
+    "__init__": [
+      "self",
+      "url",
+      "content",
+      "status_code",
+      "headers",
+      "duration",
+      "log_id",
+      "country",
+      "crawl_uuid"
+    ],
+    "log_url": [
+      "self"
+    ],
+    "success": [
+      "self"
+    ],
+    "error": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__len__": [
+      "self"
+    ]
+  },
+  "CrawlerStartResponse": {
+    "__init__": [
+      "self",
+      "response_data"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "CrawlerState": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "state"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "CrawlerStatusResponse": {
+    "STATUS_PENDING": [],
+    "STATUS_RUNNING": [],
+    "STATUS_DONE": [],
+    "STATUS_CANCELLED": [],
+    "__init__": [
+      "self",
+      "response_data"
+    ],
+    "is_complete": [
+      "self"
+    ],
+    "is_running": [
+      "self"
+    ],
+    "is_failed": [
+      "self"
+    ],
+    "is_cancelled": [
+      "self"
+    ],
+    "progress_pct": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "CrawlerUrlEntry": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "url",
+      "status",
+      "reason"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "CrawlerUrlsResponse": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "urls",
+      "page",
+      "per_page"
+    ],
+    "from_text": [
+      "cls",
+      "body",
+      "status_hint",
+      "page",
+      "per_page"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "CrawlerArtifactResponse": {
+    "__init__": [
+      "self",
+      "artifact_data",
+      "artifact_type"
+    ],
+    "artifact_type": [
+      "self"
+    ],
+    "artifact_data": [
+      "self"
+    ],
+    "warc_data": [
+      "self"
+    ],
+    "parser": [
+      "self"
+    ],
+    "iter_records": [
+      "self"
+    ],
+    "iter_responses": [
+      "self"
+    ],
+    "get_pages": [
+      "self"
+    ],
+    "total_pages": [
+      "self"
+    ],
+    "save": [
+      "self",
+      "filepath"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "WarcRecord": {
+    "__repr__": [
+      "self"
+    ]
+  },
+  "WarcParser": {
+    "__init__": [
+      "self",
+      "warc_data"
+    ],
+    "iter_records": [
+      "self"
+    ],
+    "iter_responses": [
+      "self"
+    ],
+    "get_pages": [
+      "self"
+    ],
+    "_read_line": [
+      "self"
+    ],
+    "_read_headers": [
+      "self"
+    ],
+    "_parse_record": [
+      "self",
+      "warc_headers",
+      "content_block"
+    ],
+    "_parse_http_response": [
+      "self",
+      "content_block"
+    ],
+    "_extract_status_code": [
+      "self",
+      "content_block"
+    ]
+  },
+  "parse_warc": [
+    "warc_data"
+  ],
+  "CrawlerConfig": {
+    "WEBHOOK_CRAWLER_STARTED": [],
+    "WEBHOOK_CRAWLER_URL_VISITED": [],
+    "WEBHOOK_CRAWLER_URL_SKIPPED": [],
+    "WEBHOOK_CRAWLER_URL_DISCOVERED": [],
+    "WEBHOOK_CRAWLER_URL_FAILED": [],
+    "WEBHOOK_CRAWLER_STOPPED": [],
+    "WEBHOOK_CRAWLER_CANCELLED": [],
+    "WEBHOOK_CRAWLER_FINISHED": [],
+    "ALL_WEBHOOK_EVENTS": [],
+    "__init__": [
+      "self",
+      "url",
+      "page_limit",
+      "max_depth",
+      "max_duration",
+      "exclude_paths",
+      "include_only_paths",
+      "ignore_base_path_restriction",
+      "follow_external_links",
+      "allowed_external_domains",
+      "follow_internal_subdomains",
+      "allowed_internal_subdomains",
+      "headers",
+      "delay",
+      "user_agent",
+      "max_concurrency",
+      "rendering_delay",
+      "use_sitemaps",
+      "respect_robots_txt",
+      "ignore_no_follow",
+      "cache",
+      "cache_ttl",
+      "cache_clear",
+      "content_formats",
+      "extraction_rules",
+      "asp",
+      "proxy_pool",
+      "country",
+      "webhook_name",
+      "webhook_events",
+      "max_api_credit"
+    ],
+    "to_api_params": [
+      "self",
+      "key"
+    ]
+  },
+  "__all__": [],
+  "CrawlerWebhookEvent": {
+    "CRAWLER_STARTED": [],
+    "CRAWLER_STOPPED": [],
+    "CRAWLER_CANCELLED": [],
+    "CRAWLER_FINISHED": [],
+    "CRAWLER_URL_VISITED": [],
+    "CRAWLER_URL_SKIPPED": [],
+    "CRAWLER_URL_DISCOVERED": [],
+    "CRAWLER_URL_FAILED": []
+  },
+  "CrawlerWebhookBase": {
+    "_parse_base": [
+      "event",
+      "payload"
+    ]
+  },
+  "CrawlerLifecycleWebhook": {
+    "from_payload": [
+      "cls",
+      "event",
+      "payload"
+    ]
+  },
+  "CrawlerScrapeResult": {
+    "from_dict": [
+      "cls",
+      "data"
+    ]
+  },
+  "CrawlerUrlVisitedWebhook": {
+    "from_payload": [
+      "cls",
+      "event",
+      "payload"
+    ]
+  },
+  "CrawlerUrlSkippedWebhook": {
+    "from_payload": [
+      "cls",
+      "event",
+      "payload"
+    ]
+  },
+  "CrawlerUrlDiscoveredWebhook": {
+    "from_payload": [
+      "cls",
+      "event",
+      "payload"
+    ]
+  },
+  "CrawlerUrlFailedWebhook": {
+    "from_payload": [
+      "cls",
+      "event",
+      "payload"
+    ]
+  },
+  "CrawlerWebhook": [],
+  "_DISPATCH": [],
+  "webhook_from_payload": [
+    "payload",
+    "signing_secrets",
+    "signature"
+  ],
+  "cached_property": {
+    "__init__": [
+      "self",
+      "factory"
+    ],
+    "__get__": [
+      "self",
+      "instance",
+      "owner"
+    ]
+  },
+  "ScrapflyHTTPDownloader": {
+    "__init__": [
+      "self",
+      "settings",
+      "crawler"
+    ],
+    "from_crawler": [
+      "cls",
+      "crawler"
+    ],
+    "_cb_bodydone": [
+      "self",
+      "twisted_response",
+      "request",
+      "spider"
+    ],
+    "download_request": [
+      "self",
+      "request",
+      "spider"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "BinaryBody": {
+    "__init__": [
+      "self",
+      "body"
+    ],
+    "encode": [
+      "self",
+      "encoding"
+    ]
+  },
+  "BodyReceiver": {
+    "__init__": [
+      "self",
+      "deferred"
+    ],
+    "dataReceived": [
+      "self",
+      "bytes"
+    ],
+    "connectionLost": [
+      "self",
+      "reason"
+    ]
+  },
+  "BodyProducer": {
+    "__init__": [
+      "self",
+      "body"
+    ],
+    "startProducing": [
+      "self",
+      "consumer"
+    ],
+    "pauseProducing": [
+      "self"
+    ],
+    "stopProducing": [
+      "self"
+    ]
+  },
+  "FilesPipeline": {
+    "get_media_requests": [
+      "self",
+      "item",
+      "info"
+    ]
+  },
+  "ImagesPipeline": {
+    "get_media_requests": [
+      "self",
+      "item",
+      "info"
+    ]
+  },
+  "ScrapflyRefererMiddleware": {
+    "process_spider_output": [
+      "self",
+      "response",
+      "result",
+      "spider"
+    ],
+    "request_scheduled": [
+      "self",
+      "request",
+      "spider"
+    ]
+  },
+  "ScrapflyMiddleware": {
+    "MAX_API_RETRIES": [],
+    "process_request": [
+      "self",
+      "request",
+      "spider"
+    ],
+    "process_exception": [
+      "self",
+      "request",
+      "exception",
+      "spider"
+    ],
+    "process_response": [
+      "self",
+      "request",
+      "response",
+      "spider"
+    ]
+  },
+  "ScrapflyScrapyRequest": {
+    "attributes": [],
+    "__init__": [
+      "self",
+      "scrape_config",
+      "meta"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "data"
+    ],
+    "replace": [
+      "self"
+    ]
+  },
+  "ScrapflySpider": {
+    "_MANDATORY_SETTINGS": [],
+    "_merge_settings": [
+      "cls",
+      "d",
+      "u"
+    ],
+    "update_settings": [
+      "cls",
+      "settings"
+    ],
+    "run_id": [
+      "self"
+    ],
+    "closed": [
+      "self",
+      "reason"
+    ],
+    "start_requests": [
+      "self"
+    ],
+    "retry": [
+      "self",
+      "request",
+      "reason",
+      "delay"
+    ],
+    "from_crawler": [
+      "cls",
+      "crawler"
+    ]
+  },
+  "ScrapflyCrawlSpider": {
+    "_scrape_config_factory": [
+      "self",
+      "rule_index",
+      "link"
+    ],
+    "_build_request": [
+      "self",
+      "rule_index",
+      "link"
+    ],
+    "__init__": [
+      "self"
+    ],
+    "_parse": [
+      "self",
+      "response"
+    ],
+    "parse_start_url": [
+      "self",
+      "response"
+    ],
+    "process_results": [
+      "self",
+      "response",
+      "results"
+    ],
+    "_requests_to_follow": [
+      "self",
+      "response"
+    ],
+    "_callback": [
+      "self",
+      "response"
+    ],
+    "_errback": [
+      "self",
+      "failure"
+    ],
+    "_parse_response": [
+      "self",
+      "response",
+      "callback",
+      "cb_kwargs",
+      "follow"
+    ],
+    "_handle_failure": [
+      "self",
+      "failure",
+      "errback"
+    ],
+    "_compile_rules": [
+      "self"
+    ],
+    "from_crawler": [
+      "cls",
+      "crawler"
+    ]
+  },
+  "ScrapflyScrapyResponse": {
+    "DEFAULT_ENCODING": [],
+    "__init__": [
+      "self",
+      "request",
+      "scrape_api_response"
+    ],
+    "__class__": [
+      "self"
+    ],
+    "sink": [
+      "self",
+      "path",
+      "name",
+      "file"
+    ]
+  },
+  "current_scrapy_version": [],
+  "comparable_version": [
+    "version"
+  ],
+  "SentryReporter": {
+    "__init__": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "error",
+      "scrape_api_response"
+    ]
+  },
+  "ChainReporter": {
+    "__init__": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "error",
+      "scrape_api_response"
+    ]
+  },
+  "PrintReporter": {
+    "__call__": [
+      "self",
+      "error",
+      "scrape_api_response"
+    ]
+  },
+  "NoopReporter": {
+    "__call__": [
+      "self",
+      "error",
+      "scrape_api_response"
+    ]
+  },
+  "Reporter": {
+    "__init__": [
+      "self",
+      "reporter"
+    ],
+    "report": [
+      "self",
+      "error",
+      "scrape_api_response"
+    ]
+  }
+}
