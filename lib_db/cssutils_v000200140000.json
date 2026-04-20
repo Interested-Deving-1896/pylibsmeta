@@ -1,0 +1,3268 @@
+{
+  "chars": [
+    "bytestring"
+  ],
+  "detectencoding_str": [
+    "input",
+    "final"
+  ],
+  "detectencoding_unicode": [
+    "input",
+    "final"
+  ],
+  "_fixencoding": [
+    "input",
+    "encoding",
+    "final"
+  ],
+  "decode": [
+    "input",
+    "errors",
+    "encoding",
+    "force"
+  ],
+  "encode": [
+    "input",
+    "errors",
+    "encoding"
+  ],
+  "_bytes2int": [
+    "bytes"
+  ],
+  "_int2bytes": [
+    "i"
+  ],
+  "IncrementalDecoder": {
+    "__init__": [
+      "self",
+      "errors",
+      "encoding",
+      "force"
+    ],
+    "iterdecode": [
+      "self",
+      "input"
+    ],
+    "decode": [
+      "self",
+      "input",
+      "final"
+    ],
+    "reset": [
+      "self"
+    ],
+    "_geterrors": [
+      "self"
+    ],
+    "_seterrors": [
+      "self",
+      "errors"
+    ],
+    "errors": [],
+    "getstate": [
+      "self"
+    ],
+    "setstate": [
+      "self",
+      "state"
+    ]
+  },
+  "IncrementalEncoder": {
+    "__init__": [
+      "self",
+      "errors",
+      "encoding"
+    ],
+    "iterencode": [
+      "self",
+      "input"
+    ],
+    "encode": [
+      "self",
+      "input",
+      "final"
+    ],
+    "reset": [
+      "self"
+    ],
+    "_geterrors": [
+      "self"
+    ],
+    "_seterrors": [
+      "self",
+      "errors"
+    ],
+    "errors": [],
+    "getstate": [
+      "self"
+    ],
+    "setstate": [
+      "self",
+      "state"
+    ]
+  },
+  "StreamWriter": {
+    "__init__": [
+      "self",
+      "stream",
+      "errors",
+      "encoding",
+      "header"
+    ],
+    "encode": [
+      "self",
+      "input",
+      "errors"
+    ],
+    "_geterrors": [
+      "self"
+    ],
+    "_seterrors": [
+      "self",
+      "errors"
+    ],
+    "errors": []
+  },
+  "StreamReader": {
+    "__init__": [
+      "self",
+      "stream",
+      "errors",
+      "encoding",
+      "force"
+    ],
+    "decode": [
+      "self",
+      "input",
+      "errors"
+    ],
+    "_geterrors": [
+      "self"
+    ],
+    "_seterrors": [
+      "self",
+      "errors"
+    ],
+    "errors": []
+  },
+  "search_function": [
+    "name"
+  ],
+  "cssescape": [
+    "exc"
+  ],
+  "__all__": [],
+  "_TOKENIZER_CACHE": [],
+  "Tokenizer": {
+    "_atkeywords": [],
+    "_linesep": [],
+    "unicodesub": [],
+    "cleanstring": [],
+    "__init__": [
+      "self",
+      "macros",
+      "productions",
+      "doComments"
+    ],
+    "_expand_macros": [
+      "self",
+      "macros",
+      "productions"
+    ],
+    "_compile_productions": [
+      "self",
+      "expanded_productions"
+    ],
+    "push": [
+      "self"
+    ],
+    "clear": [
+      "self"
+    ],
+    "tokenize": [
+      "self",
+      "text",
+      "fullsheet"
+    ]
+  },
+  "has_at": [
+    "text",
+    "pos",
+    "string"
+  ],
+  "suffix_eq": [
+    "text",
+    "pos",
+    "expected"
+  ],
+  "CSSParser": {
+    "__init__": [
+      "self",
+      "log",
+      "loglevel",
+      "raiseExceptions",
+      "fetcher",
+      "parseComments",
+      "validate"
+    ],
+    "__parseSetting": [
+      "self",
+      "parse"
+    ],
+    "parseStyle": [
+      "self",
+      "cssText",
+      "encoding",
+      "validate"
+    ],
+    "parseString": [
+      "self",
+      "cssText",
+      "encoding",
+      "href",
+      "media",
+      "title",
+      "validate"
+    ],
+    "parseFile": [
+      "self",
+      "filename",
+      "encoding",
+      "href",
+      "media",
+      "title",
+      "validate"
+    ],
+    "parseUrl": [
+      "self",
+      "href",
+      "encoding",
+      "media",
+      "title",
+      "validate"
+    ],
+    "setFetcher": [
+      "self",
+      "fetcher"
+    ]
+  },
+  "MACROS": [],
+  "PRODUCTIONS": [],
+  "CSSProductions": {},
+  "ParseError": {},
+  "Done": {},
+  "Exhausted": {},
+  "Missing": {},
+  "NoMatch": {},
+  "Choice": {
+    "__init__": [
+      "self"
+    ],
+    "reset": [
+      "self"
+    ],
+    "matches": [
+      "self",
+      "token"
+    ],
+    "nextProd": [
+      "self",
+      "token"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "Sequence": {
+    "__init__": [
+      "self"
+    ],
+    "matches": [
+      "self",
+      "token"
+    ],
+    "reset": [
+      "self"
+    ],
+    "_currentName": [
+      "self"
+    ],
+    "optional": [],
+    "nextProd": [
+      "self",
+      "token"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "Prod": {
+    "__init__": [
+      "self",
+      "name",
+      "match",
+      "optional",
+      "toSeq",
+      "toStore",
+      "stop",
+      "stopAndKeep",
+      "stopIfNoMoreMatch",
+      "nextSor",
+      "mayEnd",
+      "storeToken",
+      "exception"
+    ],
+    "matches": [
+      "self",
+      "token"
+    ],
+    "reset": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "tokenizer": [],
+  "savedTokens": [],
+  "ProdParser": {
+    "__init__": [
+      "self",
+      "clear"
+    ],
+    "_texttotokens": [
+      "self",
+      "text"
+    ],
+    "_SorTokens": [
+      "self",
+      "tokens",
+      "until"
+    ],
+    "parse": [
+      "self",
+      "text",
+      "name",
+      "productions",
+      "keepS",
+      "checkS",
+      "store",
+      "emptyOk",
+      "debug"
+    ]
+  },
+  "PreDef": {
+    "types": [],
+    "reHexcolor": [],
+    "calc": [
+      "toSeq",
+      "nextSor"
+    ],
+    "char": [
+      "name",
+      "char",
+      "toSeq",
+      "stop",
+      "stopAndKeep",
+      "mayEnd",
+      "stopIfNoMoreMatch",
+      "optional",
+      "nextSor"
+    ],
+    "comma": [
+      "optional",
+      "toSeq"
+    ],
+    "comment": [
+      "parent"
+    ],
+    "dimension": [
+      "nextSor",
+      "stop"
+    ],
+    "function": [
+      "toSeq",
+      "nextSor",
+      "toStore"
+    ],
+    "funcEnd": [
+      "stop",
+      "mayEnd"
+    ],
+    "hexcolor": [
+      "stop",
+      "nextSor"
+    ],
+    "ident": [
+      "stop",
+      "toStore",
+      "nextSor"
+    ],
+    "number": [
+      "stop",
+      "toSeq",
+      "nextSor"
+    ],
+    "percentage": [
+      "stop",
+      "toSeq",
+      "nextSor"
+    ],
+    "string": [
+      "stop",
+      "nextSor"
+    ],
+    "S": [
+      "name",
+      "toSeq",
+      "optional"
+    ],
+    "unary": [
+      "stop",
+      "toSeq",
+      "nextSor"
+    ],
+    "uri": [
+      "stop",
+      "nextSor"
+    ],
+    "unicode_range": [
+      "stop",
+      "nextSor"
+    ],
+    "variable": [
+      "toSeq",
+      "stop",
+      "nextSor",
+      "toStore"
+    ],
+    "unknownrule": [
+      "name",
+      "toStore"
+    ]
+  },
+  "set": [
+    "key",
+    "value"
+  ],
+  "LINK": [],
+  "STYLE": [],
+  "CSSCaptureHTMLParser": {
+    "curtag": [],
+    "sheets": [],
+    "_loweratts": [
+      "self",
+      "atts"
+    ],
+    "handle_starttag": [
+      "self",
+      "tag",
+      "atts"
+    ],
+    "handle_data": [
+      "self",
+      "data"
+    ],
+    "handle_comment": [
+      "self",
+      "data"
+    ],
+    "handle_endtag": [
+      "self",
+      "tag"
+    ]
+  },
+  "CSSCapture": {
+    "__init__": [
+      "self",
+      "ua",
+      "log",
+      "defaultloglevel"
+    ],
+    "_doRequest": [
+      "self",
+      "url"
+    ],
+    "_createStyleSheet": [
+      "self",
+      "href",
+      "media",
+      "parentStyleSheet",
+      "title",
+      "cssText",
+      "encoding"
+    ],
+    "_findStyleSheets": [
+      "self",
+      "docurl",
+      "doctext"
+    ],
+    "_doImports": [
+      "self",
+      "parentStyleSheet",
+      "base"
+    ],
+    "capture": [
+      "self",
+      "url"
+    ],
+    "saveto": [
+      "self",
+      "dir",
+      "saveraw",
+      "minified"
+    ]
+  },
+  "csscombine": [
+    "path",
+    "url",
+    "cssText",
+    "href",
+    "sourceencoding",
+    "targetencoding",
+    "minify",
+    "resolveVariables"
+  ],
+  "ErrorHandler": {
+    "__init__": [
+      "self"
+    ],
+    "error": [
+      "self",
+      "exception",
+      "token"
+    ],
+    "fatal": [
+      "self",
+      "exception",
+      "token"
+    ],
+    "warn": [
+      "self",
+      "exception",
+      "token"
+    ]
+  },
+  "DocumentHandler": {
+    "__init__": [
+      "self"
+    ],
+    "comment": [
+      "self",
+      "text",
+      "line",
+      "col"
+    ],
+    "startDocument": [
+      "self",
+      "encoding"
+    ],
+    "endDocument": [
+      "self",
+      "source",
+      "line",
+      "col"
+    ],
+    "importStyle": [
+      "self",
+      "uri",
+      "media",
+      "name",
+      "line",
+      "col"
+    ],
+    "namespaceDeclaration": [
+      "self",
+      "prefix",
+      "uri",
+      "line",
+      "col"
+    ],
+    "startSelector": [
+      "self",
+      "selectors",
+      "line",
+      "col"
+    ],
+    "endSelector": [
+      "self",
+      "selectors",
+      "line",
+      "col"
+    ],
+    "property": [
+      "self",
+      "name",
+      "value",
+      "important",
+      "line",
+      "col"
+    ],
+    "ignorableAtRule": [
+      "self",
+      "atRule",
+      "line",
+      "col"
+    ]
+  },
+  "EchoHandler": {
+    "__init__": [
+      "self"
+    ],
+    "out": [],
+    "startDocument": [
+      "self",
+      "encoding"
+    ],
+    "importStyle": [
+      "self",
+      "uri",
+      "media",
+      "name",
+      "line",
+      "col"
+    ],
+    "namespaceDeclaration": [
+      "self",
+      "prefix",
+      "uri",
+      "line",
+      "col"
+    ],
+    "startSelector": [
+      "self",
+      "selectors",
+      "line",
+      "col"
+    ],
+    "endSelector": [
+      "self",
+      "selectors",
+      "line",
+      "col"
+    ],
+    "property": [
+      "self",
+      "name",
+      "value",
+      "important",
+      "line",
+      "col"
+    ]
+  },
+  "Parser": {
+    "__init__": [
+      "self",
+      "documentHandler",
+      "errorHandler"
+    ],
+    "parseString": [
+      "self",
+      "cssText",
+      "encoding"
+    ],
+    "setDocumentHandler": [
+      "self",
+      "handler"
+    ],
+    "setErrorHandler": [
+      "self",
+      "handler"
+    ]
+  },
+  "NoSuchProfileException": {},
+  "Profiles": {
+    "CSS_LEVEL_2": [],
+    "CSS3_BACKGROUNDS_AND_BORDERS": [],
+    "CSS3_BASIC_USER_INTERFACE": [],
+    "CSS3_BOX": [],
+    "CSS_BOX_LEVEL_3": [],
+    "CSS3_COLOR": [],
+    "CSS_COLOR_LEVEL_3": [],
+    "CSS3_FONTS": [],
+    "CSS3_FONT_FACE": [],
+    "CSS3_PAGED_MEDIA": [],
+    "CSS3_TEXT": [],
+    "_TOKEN_MACROS": [],
+    "_MACROS": [],
+    "__init__": [
+      "self",
+      "log"
+    ],
+    "_expand_macros": [
+      "self",
+      "dictionary",
+      "macros"
+    ],
+    "_compile_regexes": [
+      "self",
+      "dictionary"
+    ],
+    "__update_knownNames": [
+      "self"
+    ],
+    "_getDefaultProfiles": [
+      "self"
+    ],
+    "_setDefaultProfiles": [
+      "self",
+      "profiles"
+    ],
+    "defaultProfiles": [],
+    "profiles": [],
+    "knownNames": [
+      "self"
+    ],
+    "_resetProperties": [
+      "self",
+      "newMacros"
+    ],
+    "addProfiles": [
+      "self",
+      "profiles"
+    ],
+    "addProfile": [
+      "self",
+      "profile",
+      "properties",
+      "macros"
+    ],
+    "removeProfile": [
+      "self",
+      "profile",
+      "all"
+    ],
+    "propertiesByProfile": [
+      "self",
+      "profiles"
+    ],
+    "validate": [
+      "self",
+      "name",
+      "value"
+    ],
+    "validateWithProfile": [
+      "self",
+      "name",
+      "value",
+      "profiles"
+    ]
+  },
+  "properties": [],
+  "macros": [],
+  "_DXImageTransform": [],
+  "log": [],
+  "_parse_header": [
+    "content_type"
+  ],
+  "_defaultFetcher": [
+    "url"
+  ],
+  "Deprecated": {
+    "__init__": [
+      "self",
+      "msg"
+    ],
+    "__call__": [
+      "self",
+      "func"
+    ]
+  },
+  "_simpleescapes": [],
+  "normalize": [
+    "x"
+  ],
+  "path2url": [
+    "path"
+  ],
+  "pushtoken": [
+    "token",
+    "tokens"
+  ],
+  "string": [
+    "value"
+  ],
+  "stringvalue": [
+    "string"
+  ],
+  "_match_forbidden_in_uri": [],
+  "uri": [
+    "value"
+  ],
+  "urivalue": [
+    "uri"
+  ],
+  "_ErrorHandler": {
+    "__init__": [
+      "self",
+      "log",
+      "defaultloglevel",
+      "raiseExceptions"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "__handle": [
+      "self",
+      "msg",
+      "token",
+      "error",
+      "neverraise",
+      "args"
+    ],
+    "setLog": [
+      "self",
+      "log"
+    ]
+  },
+  "_escapecss": [
+    "e"
+  ],
+  "Preferences": {
+    "__init__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "useDefaults": [
+      "self"
+    ],
+    "useMinified": [
+      "self"
+    ]
+  },
+  "Out": {
+    "__init__": [
+      "self",
+      "ser"
+    ],
+    "_remove_last_if_S": [
+      "self"
+    ],
+    "append": [
+      "self",
+      "val",
+      "type_",
+      "space",
+      "keepS",
+      "indent",
+      "alwaysS"
+    ],
+    "value": [
+      "self",
+      "delim",
+      "end",
+      "keepS"
+    ]
+  },
+  "CSSSerializer": {
+    "__init__": [
+      "self",
+      "prefs"
+    ],
+    "_atkeyword": [
+      "self",
+      "rule"
+    ],
+    "_indentblock": [
+      "self",
+      "text",
+      "level"
+    ],
+    "_propertyname": [
+      "self",
+      "property",
+      "actual"
+    ],
+    "_linenumnbers": [
+      "self",
+      "text"
+    ],
+    "_hash": [
+      "self",
+      "val",
+      "type_"
+    ],
+    "_valid": [
+      "self",
+      "x"
+    ],
+    "do_CSSStyleSheet": [
+      "self",
+      "stylesheet"
+    ],
+    "do_CSSComment": [
+      "self",
+      "rule"
+    ],
+    "do_CSSCharsetRule": [
+      "self",
+      "rule"
+    ],
+    "do_CSSVariablesRule": [
+      "self",
+      "rule"
+    ],
+    "do_CSSFontFaceRule": [
+      "self",
+      "rule"
+    ],
+    "do_CSSImportRule": [
+      "self",
+      "rule"
+    ],
+    "do_CSSNamespaceRule": [
+      "self",
+      "rule"
+    ],
+    "do_CSSMediaRule": [
+      "self",
+      "rule"
+    ],
+    "do_CSSPageRule": [
+      "self",
+      "rule"
+    ],
+    "do_CSSPageRuleSelector": [
+      "self",
+      "seq"
+    ],
+    "do_MarginRule": [
+      "self",
+      "rule"
+    ],
+    "do_CSSUnknownRule": [
+      "self",
+      "rule"
+    ],
+    "do_CSSStyleRule": [
+      "self",
+      "rule"
+    ],
+    "do_css_SelectorList": [
+      "self",
+      "selectorlist"
+    ],
+    "do_css_Selector": [
+      "self",
+      "selector"
+    ],
+    "do_css_CSSVariablesDeclaration": [
+      "self",
+      "variables"
+    ],
+    "do_css_CSSStyleDeclaration": [
+      "self",
+      "style",
+      "separator",
+      "omit"
+    ],
+    "do_Property": [
+      "self",
+      "property"
+    ],
+    "do_Property_priority": [
+      "self",
+      "priorityseq"
+    ],
+    "do_css_PropertyValue": [
+      "self",
+      "value",
+      "valuesOnly"
+    ],
+    "_strip_zeros": [
+      "self",
+      "s"
+    ],
+    "do_css_Value": [
+      "self",
+      "value",
+      "valuesOnly"
+    ],
+    "do_css_ColorValue": [
+      "self",
+      "value",
+      "valuesOnly"
+    ],
+    "do_css_CSSFunction": [
+      "self",
+      "cssvalue",
+      "valuesOnly"
+    ],
+    "do_css_CSSCalc": [
+      "self",
+      "cssvalue",
+      "valuesOnly"
+    ],
+    "do_css_MSValue": [
+      "self",
+      "cssvalue",
+      "valuesOnly"
+    ],
+    "do_css_CSSVariable": [
+      "self",
+      "variable",
+      "IGNORED"
+    ],
+    "do_stylesheets_medialist": [
+      "self",
+      "medialist"
+    ],
+    "do_stylesheets_mediaquery": [
+      "self",
+      "mediaquery"
+    ]
+  },
+  "_get_version": [],
+  "_BaseClass": {
+    "_log": [],
+    "_prods": [],
+    "_checkReadonly": [
+      "self"
+    ],
+    "_valuestr": [
+      "self",
+      "t"
+    ]
+  },
+  "_NewBase": {
+    "__init__": [
+      "self"
+    ],
+    "_setSeq": [
+      "self",
+      "newseq"
+    ],
+    "_clearSeq": [
+      "self"
+    ],
+    "_tempSeq": [
+      "self",
+      "readonly"
+    ],
+    "seq": [
+      "self"
+    ]
+  },
+  "_NewListBase": {
+    "__init__": [
+      "self"
+    ],
+    "__contains__": [
+      "self",
+      "item"
+    ],
+    "__delitem__": [
+      "self",
+      "index"
+    ],
+    "__getitem__": [
+      "self",
+      "index"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "__setitem__": [
+      "self",
+      "index",
+      "item"
+    ],
+    "append": [
+      "self",
+      "item"
+    ]
+  },
+  "Base": {
+    "__tokenizer2": [],
+    "_SHORTHANDPROPERTIES": [],
+    "_normalize": [
+      "x"
+    ],
+    "_splitNamespacesOff": [
+      "self",
+      "text_namespaces_tuple"
+    ],
+    "_tokenize2": [
+      "self",
+      "textortokens"
+    ],
+    "_nexttoken": [
+      "self",
+      "tokenizer",
+      "default"
+    ],
+    "_type": [
+      "self",
+      "token"
+    ],
+    "_tokenvalue": [
+      "self",
+      "token",
+      "normalize"
+    ],
+    "_stringtokenvalue": [
+      "self",
+      "token"
+    ],
+    "_uritokenvalue": [
+      "self",
+      "token"
+    ],
+    "_tokensupto2": [
+      "self",
+      "tokenizer",
+      "starttoken",
+      "blockstartonly",
+      "blockendonly",
+      "mediaendonly",
+      "importmediaqueryendonly",
+      "mediaqueryendonly",
+      "semicolon",
+      "propertynameendonly",
+      "propertyvalueendonly",
+      "propertypriorityendonly",
+      "selectorattendonly",
+      "funcendonly",
+      "listseponly",
+      "separateEnd"
+    ],
+    "_adddefaultproductions": [
+      "self",
+      "productions",
+      "new"
+    ],
+    "_parse": [
+      "self",
+      "expected",
+      "seq",
+      "tokenizer",
+      "productions",
+      "default",
+      "new",
+      "initialtoken"
+    ]
+  },
+  "Base2": {
+    "__init__": [
+      "self"
+    ],
+    "_adddefaultproductions": [
+      "self",
+      "productions",
+      "new"
+    ]
+  },
+  "Seq": {
+    "__init__": [
+      "self",
+      "readonly"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__delitem__": [
+      "self",
+      "i"
+    ],
+    "__getitem__": [
+      "self",
+      "i"
+    ],
+    "__setitem__": [
+      "self",
+      "i",
+      "xxx_todo_changeme"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "append": [
+      "self",
+      "val",
+      "typ",
+      "line",
+      "col"
+    ],
+    "appendItem": [
+      "self",
+      "item"
+    ],
+    "clear": [
+      "self"
+    ],
+    "insert": [
+      "self",
+      "index",
+      "val",
+      "typ",
+      "line",
+      "col"
+    ],
+    "replace": [
+      "self",
+      "index",
+      "val",
+      "typ",
+      "line",
+      "col"
+    ],
+    "rstrip": [
+      "self"
+    ],
+    "appendToVal": [
+      "self",
+      "val",
+      "index"
+    ]
+  },
+  "Item": {
+    "__init__": [
+      "self",
+      "value",
+      "type",
+      "line",
+      "col"
+    ],
+    "type": [],
+    "value": [],
+    "line": [],
+    "col": [],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListSeq": {
+    "__init__": [
+      "self"
+    ],
+    "__contains__": [
+      "self",
+      "item"
+    ],
+    "__delitem__": [
+      "self",
+      "index"
+    ],
+    "__getitem__": [
+      "self",
+      "index"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "__setitem__": [
+      "self",
+      "index",
+      "item"
+    ],
+    "append": [
+      "self",
+      "item"
+    ]
+  },
+  "_Namespaces": {
+    "__init__": [
+      "self",
+      "parentStyleSheet",
+      "log"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__contains__": [
+      "self",
+      "prefix"
+    ],
+    "__delitem__": [
+      "self",
+      "prefix"
+    ],
+    "__getitem__": [
+      "self",
+      "prefix"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "__setitem__": [
+      "self",
+      "prefix",
+      "namespaceURI"
+    ],
+    "__findrule": [
+      "self",
+      "prefix"
+    ],
+    "namespaces": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "prefix",
+      "default"
+    ],
+    "items": [
+      "self"
+    ],
+    "keys": [
+      "self"
+    ],
+    "values": [
+      "self"
+    ],
+    "prefixForNamespaceURI": [
+      "self",
+      "namespaceURI"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "_SimpleNamespaces": {
+    "__init__": [
+      "self",
+      "log"
+    ],
+    "__setitem__": [
+      "self",
+      "prefix",
+      "namespaceURI"
+    ],
+    "namespaces": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "_readUrl": [
+    "url",
+    "fetcher",
+    "overrideEncoding",
+    "parentEncoding"
+  ],
+  "LazyRegex": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "pattern",
+      "flags"
+    ],
+    "ensure": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "string",
+      "pos",
+      "endpos"
+    ],
+    "match": [
+      "self",
+      "string",
+      "pos",
+      "endpos"
+    ],
+    "search": [
+      "self",
+      "string",
+      "pos",
+      "endpos"
+    ],
+    "split": [
+      "self",
+      "string",
+      "maxsplit"
+    ],
+    "findall": [
+      "self",
+      "string",
+      "pos",
+      "endpos"
+    ],
+    "finditer": [
+      "self",
+      "string",
+      "pos",
+      "endpos"
+    ],
+    "sub": [
+      "self",
+      "repl",
+      "string",
+      "count"
+    ],
+    "subn": [
+      "self",
+      "repl",
+      "string",
+      "count"
+    ]
+  },
+  "ser": [],
+  "profile": [],
+  "_ANYNS": [],
+  "DOMImplementationCSS": {
+    "_features": [],
+    "createCSSStyleSheet": [
+      "self",
+      "title",
+      "media"
+    ],
+    "createDocument": [
+      "self"
+    ],
+    "createDocumentType": [
+      "self"
+    ],
+    "hasFeature": [
+      "self",
+      "feature",
+      "version"
+    ]
+  },
+  "_parser_redirect": [
+    "name"
+  ],
+  "parseString": [],
+  "parseFile": [],
+  "parseUrl": [],
+  "parseStyle": [],
+  "setSerializer": [
+    "serializer"
+  ],
+  "_style_declarations": [
+    "base"
+  ],
+  "getUrls": [
+    "sheet"
+  ],
+  "_uri_values": [
+    "style"
+  ],
+  "_flatten": [],
+  "replaceUrls": [
+    "sheet",
+    "replacer",
+    "ignoreImportRules"
+  ],
+  "_": [
+    "style",
+    "replacer",
+    "ignoreImportRules"
+  ],
+  "Replacer": {
+    "__init__": [
+      "self",
+      "base"
+    ],
+    "__call__": [
+      "self",
+      "uri"
+    ],
+    "extract_base": [
+      "uri"
+    ]
+  },
+  "resolveImports": [
+    "sheet",
+    "target"
+  ],
+  "MediaCombineDisallowed": {
+    "check": [
+      "cls",
+      "sheet"
+    ],
+    "failed": [
+      "self"
+    ],
+    "_combinable": [
+      "rule"
+    ]
+  },
+  "_resolve_import": [
+    "rule",
+    "target"
+  ],
+  "_check_media_proxy": [
+    "rule",
+    "importedSheet"
+  ],
+  "MediaList": {
+    "__init__": [
+      "self",
+      "mediaText",
+      "parentRule",
+      "readonly"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "length": [],
+    "_getMediaText": [
+      "self"
+    ],
+    "_setMediaText": [
+      "self",
+      "mediaText"
+    ],
+    "mediaText": [],
+    "__prepareset": [
+      "self",
+      "newMedium"
+    ],
+    "__setitem__": [
+      "self",
+      "index",
+      "newMedium"
+    ],
+    "appendMedium": [
+      "self",
+      "newMedium"
+    ],
+    "append": [
+      "self",
+      "newMedium"
+    ],
+    "deleteMedium": [
+      "self",
+      "oldMedium"
+    ],
+    "item": [
+      "self",
+      "index"
+    ],
+    "parentRule": [],
+    "wellformed": []
+  },
+  "StyleSheetList": {
+    "item": [
+      "self",
+      "index"
+    ],
+    "length": []
+  },
+  "MediaQuery": {
+    "MEDIA_TYPES": [],
+    "__init__": [
+      "self",
+      "mediaText",
+      "readonly",
+      "_partof"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "_getMediaText": [
+      "self"
+    ],
+    "_setMediaText": [
+      "self",
+      "mediaText"
+    ],
+    "mediaText": [],
+    "_setMediaType": [
+      "self",
+      "mediaType"
+    ],
+    "mediaType": [],
+    "wellformed": []
+  },
+  "StyleSheet": {
+    "__init__": [
+      "self",
+      "type",
+      "href",
+      "media",
+      "title",
+      "ownerNode",
+      "parentStyleSheet",
+      "alternate",
+      "disabled",
+      "validating"
+    ],
+    "alternate": [],
+    "href": [],
+    "ownerNode": [],
+    "parentStyleSheet": [],
+    "type": []
+  },
+  "main": [
+    "args"
+  ],
+  "CSSStyleSheet": {
+    "__init__": [
+      "self",
+      "href",
+      "media",
+      "title",
+      "disabled",
+      "ownerNode",
+      "parentStyleSheet",
+      "readonly",
+      "ownerRule",
+      "validating"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "_cleanNamespaces": [
+      "self"
+    ],
+    "_getUsedURIs": [
+      "self"
+    ],
+    "cssRules": [
+      "self",
+      "cssRules"
+    ],
+    "_getCssText": [
+      "self"
+    ],
+    "_setCssText": [
+      "self",
+      "cssText"
+    ],
+    "cssText": [],
+    "_resolveImport": [
+      "self",
+      "url"
+    ],
+    "_setCssTextWithEncodingOverride": [
+      "self",
+      "cssText",
+      "encodingOverride",
+      "encoding"
+    ],
+    "_setFetcher": [
+      "self",
+      "fetcher"
+    ],
+    "_getEncoding": [
+      "self"
+    ],
+    "_setEncoding": [
+      "self",
+      "encoding"
+    ],
+    "encoding": [],
+    "namespaces": [
+      "self"
+    ],
+    "_updateVariables": [
+      "self"
+    ],
+    "variables": [],
+    "add": [
+      "self",
+      "rule"
+    ],
+    "deleteRule": [
+      "self",
+      "index"
+    ],
+    "insertRule": [
+      "self",
+      "rule",
+      "index",
+      "inOrder",
+      "_clean"
+    ],
+    "ownerRule": [],
+    "_getValid": [
+      "self"
+    ],
+    "valid": [],
+    "setSerializer": [
+      "self",
+      "cssserializer"
+    ],
+    "setSerializerPref": [
+      "self",
+      "pref",
+      "value"
+    ]
+  },
+  "CSSMediaRule": {
+    "__init__": [
+      "self",
+      "mediaText",
+      "name",
+      "parentRule",
+      "parentStyleSheet",
+      "readonly"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "_getCssText": [
+      "self"
+    ],
+    "_setCssText": [
+      "self",
+      "cssText"
+    ],
+    "cssText": [],
+    "name": [
+      "self",
+      "name"
+    ],
+    "_setName": [
+      "self",
+      "name"
+    ],
+    "_setMedia": [
+      "self",
+      "media"
+    ],
+    "media": [],
+    "insertRule": [
+      "self",
+      "rule",
+      "index"
+    ],
+    "type": [],
+    "wellformed": []
+  },
+  "CSSVariablesDeclaration": {
+    "__init__": [
+      "self",
+      "cssText",
+      "parentRule",
+      "readonly"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__contains__": [
+      "self",
+      "variableName"
+    ],
+    "__getitem__": [
+      "self",
+      "variableName"
+    ],
+    "__setitem__": [
+      "self",
+      "variableName",
+      "value"
+    ],
+    "__delitem__": [
+      "self",
+      "variableName"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "keys": [
+      "self"
+    ],
+    "_getCssText": [
+      "self"
+    ],
+    "_setCssText": [
+      "self",
+      "cssText"
+    ],
+    "cssText": [],
+    "_setParentRule": [
+      "self",
+      "parentRule"
+    ],
+    "parentRule": [],
+    "getVariableValue": [
+      "self",
+      "variableName"
+    ],
+    "removeVariable": [
+      "self",
+      "variableName"
+    ],
+    "setVariable": [
+      "self",
+      "variableName",
+      "value"
+    ],
+    "item": [
+      "self",
+      "index"
+    ],
+    "length": []
+  },
+  "CSSUnknownRule": {
+    "__init__": [
+      "self",
+      "cssText",
+      "parentRule",
+      "parentStyleSheet",
+      "readonly"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "_getCssText": [
+      "self"
+    ],
+    "_setCssText": [
+      "self",
+      "cssText"
+    ],
+    "cssText": [],
+    "type": [],
+    "wellformed": []
+  },
+  "CSSPageRule": {
+    "__init__": [
+      "self",
+      "selectorText",
+      "style",
+      "parentRule",
+      "parentStyleSheet",
+      "readonly"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__contains__": [
+      "self",
+      "margin"
+    ],
+    "keys": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "margin"
+    ],
+    "__setitem__": [
+      "self",
+      "margin",
+      "style"
+    ],
+    "__delitem__": [
+      "self",
+      "margin"
+    ],
+    "__parseSelectorText": [
+      "self",
+      "selectorText"
+    ],
+    "__parseMarginAndStyle": [
+      "self",
+      "tokens"
+    ],
+    "_getCssText": [
+      "self"
+    ],
+    "_setCssText": [
+      "self",
+      "cssText"
+    ],
+    "cssText": [],
+    "_getSelectorText": [
+      "self"
+    ],
+    "_setSelectorText": [
+      "self",
+      "selectorText"
+    ],
+    "selectorText": [],
+    "_setStyle": [
+      "self",
+      "style"
+    ],
+    "style": [],
+    "insertRule": [
+      "self",
+      "rule",
+      "index"
+    ],
+    "specificity": [],
+    "type": [],
+    "wellformed": []
+  },
+  "CSSStyleRule": {
+    "__init__": [
+      "self",
+      "selectorText",
+      "style",
+      "parentRule",
+      "parentStyleSheet",
+      "readonly"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "_getCssText": [
+      "self"
+    ],
+    "_setCssText": [
+      "self",
+      "cssText"
+    ],
+    "cssText": [],
+    "__getNamespaces": [
+      "self"
+    ],
+    "_namespaces": [],
+    "_setSelectorList": [
+      "self",
+      "selectorList"
+    ],
+    "_selectorList": [],
+    "selectorList": [],
+    "_setSelectorText": [
+      "self",
+      "selectorText"
+    ],
+    "selectorText": [],
+    "_setStyle": [
+      "self",
+      "style"
+    ],
+    "style": [],
+    "type": [],
+    "wellformed": [],
+    "_getValid": [
+      "self"
+    ],
+    "valid": []
+  },
+  "CSSVariablesRule": {
+    "__init__": [
+      "self",
+      "mediaText",
+      "variables",
+      "parentRule",
+      "parentStyleSheet",
+      "readonly"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "_getCssText": [
+      "self"
+    ],
+    "_setCssText": [
+      "self",
+      "cssText"
+    ],
+    "cssText": [],
+    "media": [],
+    "_setVariables": [
+      "self",
+      "variables"
+    ],
+    "variables": [],
+    "type": [],
+    "valid": [],
+    "wellformed": []
+  },
+  "CSSRuleList": {
+    "__init__": [
+      "self"
+    ],
+    "__notimplemented": [
+      "self"
+    ],
+    "append": [],
+    "extend": [],
+    "__setitem__": [],
+    "__setslice__": [],
+    "item": [
+      "self",
+      "index"
+    ],
+    "length": [
+      "self"
+    ],
+    "rulesOfType": [
+      "self",
+      "type"
+    ]
+  },
+  "CSSValue": {
+    "CSS_INHERIT": [],
+    "CSS_PRIMITIVE_VALUE": [],
+    "CSS_VALUE_LIST": [],
+    "CSS_CUSTOM": [],
+    "CSS_VARIABLE": [],
+    "_typestrings": [],
+    "__init__": [
+      "self",
+      "cssText",
+      "parent",
+      "readonly"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "_setCssText": [
+      "self",
+      "cssText"
+    ],
+    "cssText": [],
+    "cssValueType": [],
+    "cssValueTypeString": []
+  },
+  "CSSPrimitiveValue": {
+    "cssValueType": [],
+    "__types": [],
+    "CSS_UNKNOWN": [],
+    "CSS_NUMBER": [],
+    "CSS_PERCENTAGE": [],
+    "CSS_EMS": [],
+    "CSS_EXS": [],
+    "CSS_PX": [],
+    "CSS_CM": [],
+    "CSS_MM": [],
+    "CSS_IN": [],
+    "CSS_PT": [],
+    "CSS_PC": [],
+    "CSS_DEG": [],
+    "CSS_RAD": [],
+    "CSS_GRAD": [],
+    "CSS_MS": [],
+    "CSS_S": [],
+    "CSS_HZ": [],
+    "CSS_KHZ": [],
+    "CSS_DIMENSION": [],
+    "CSS_STRING": [],
+    "CSS_URI": [],
+    "CSS_IDENT": [],
+    "CSS_ATTR": [],
+    "CSS_COUNTER": [],
+    "CSS_RECT": [],
+    "CSS_RGBCOLOR": [],
+    "CSS_RGBACOLOR": [],
+    "CSS_UNICODE_RANGE": [],
+    "_floattypes": [],
+    "_stringtypes": [],
+    "_countertypes": [],
+    "_recttypes": [],
+    "_rbgtypes": [],
+    "_lengthtypes": [],
+    "_converter": [],
+    "__init__": [
+      "self",
+      "cssText",
+      "parent",
+      "readonly"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "_unitnames": [],
+    "_reNumDim": [],
+    "_unitDIMENSION": [
+      "value"
+    ],
+    "_unitFUNCTION": [
+      "value"
+    ],
+    "__unitbytype": [],
+    "__set_primitiveType": [
+      "self"
+    ],
+    "_getPrimitiveType": [
+      "self"
+    ],
+    "primitiveType": [],
+    "_getPrimitiveTypeString": [
+      "self"
+    ],
+    "primitiveTypeString": [],
+    "_getCSSPrimitiveTypeString": [
+      "self",
+      "type"
+    ],
+    "_getNumDim": [
+      "self",
+      "value"
+    ],
+    "getFloatValue": [
+      "self",
+      "unitType"
+    ],
+    "setFloatValue": [
+      "self",
+      "unitType",
+      "floatValue"
+    ],
+    "getStringValue": [
+      "self"
+    ],
+    "setStringValue": [
+      "self",
+      "stringType",
+      "stringValue"
+    ],
+    "getCounterValue": [
+      "self"
+    ],
+    "getRGBColorValue": [
+      "self"
+    ],
+    "getRectValue": [
+      "self"
+    ],
+    "_getCssText": [
+      "self"
+    ],
+    "_setCssText": [
+      "self",
+      "cssText"
+    ],
+    "cssText": []
+  },
+  "CSSValueList": {
+    "cssValueType": [],
+    "__init__": [
+      "self",
+      "cssText",
+      "parent",
+      "readonly"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__items": [
+      "self"
+    ],
+    "item": [
+      "self",
+      "index"
+    ],
+    "length": []
+  },
+  "CSSFunction": {
+    "_functionName": [],
+    "primitiveType": [],
+    "__init__": [
+      "self",
+      "cssText",
+      "parent",
+      "readonly"
+    ],
+    "_productiondefinition": [
+      "self"
+    ],
+    "_setCssText": [
+      "self",
+      "cssText"
+    ],
+    "cssText": [],
+    "funcType": []
+  },
+  "RGBColor": {
+    "_functionName": [],
+    "__init__": [
+      "self",
+      "cssText",
+      "parent",
+      "readonly"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "_setCssText": [
+      "self",
+      "cssText"
+    ],
+    "cssText": [],
+    "colorType": []
+  },
+  "CalcValue": {
+    "_functionName": [],
+    "_productiondefinition": [
+      "self"
+    ],
+    "_getCssText": [
+      "self"
+    ],
+    "_setCssText": [
+      "self",
+      "cssText"
+    ],
+    "cssText": []
+  },
+  "ExpressionValue": {
+    "_functionName": [],
+    "_productiondefinition": [
+      "self"
+    ],
+    "_getCssText": [
+      "self"
+    ],
+    "_setCssText": [
+      "self",
+      "cssText"
+    ],
+    "cssText": []
+  },
+  "CSSVariable": {
+    "__init__": [
+      "self",
+      "cssText",
+      "parent",
+      "readonly"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "_setCssText": [
+      "self",
+      "cssText"
+    ],
+    "cssText": [],
+    "cssValueType": [],
+    "name": [],
+    "_getValue": [
+      "self"
+    ],
+    "value": []
+  },
+  "CSSFontFaceRule": {
+    "__init__": [
+      "self",
+      "style",
+      "parentRule",
+      "parentStyleSheet",
+      "readonly"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "_getCssText": [
+      "self"
+    ],
+    "_setCssText": [
+      "self",
+      "cssText"
+    ],
+    "cssText": [],
+    "_setStyle": [
+      "self",
+      "style"
+    ],
+    "style": [],
+    "type": [],
+    "_getValid": [
+      "self"
+    ],
+    "valid": [],
+    "wellformed": []
+  },
+  "CSS2Properties": {
+    "_getP": [
+      "self",
+      "CSSname"
+    ],
+    "_setP": [
+      "self",
+      "CSSname",
+      "value"
+    ],
+    "_delP": [
+      "self",
+      "CSSname"
+    ]
+  },
+  "_reCSStoDOMname": [],
+  "_toDOMname": [
+    "CSSname"
+  ],
+  "_reDOMtoCSSname": [],
+  "_toCSSname": [
+    "DOMname"
+  ],
+  "__named_property_def": [
+    "DOMname"
+  ],
+  "COLORS": [],
+  "CSSImportRule": {
+    "__init__": [
+      "self",
+      "href",
+      "mediaText",
+      "name",
+      "parentRule",
+      "parentStyleSheet",
+      "readonly"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "_usemedia": [],
+    "_getCssText": [
+      "self"
+    ],
+    "_setCssText": [
+      "self",
+      "cssText"
+    ],
+    "cssText": [],
+    "_setHref": [
+      "self",
+      "href"
+    ],
+    "_href": [],
+    "href": [],
+    "_setMedia": [
+      "self",
+      "media"
+    ],
+    "media": [],
+    "_setName": [
+      "self",
+      "name"
+    ],
+    "_getName": [
+      "self"
+    ],
+    "name": [],
+    "styleSheet": [],
+    "type": [],
+    "_getWellformed": [
+      "self"
+    ],
+    "wellformed": []
+  },
+  "SelectorList": {
+    "__init__": [
+      "self",
+      "selectorText",
+      "parentRule",
+      "readonly"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__setitem__": [
+      "self",
+      "index",
+      "newSelector"
+    ],
+    "__prepareset": [
+      "self",
+      "newSelector",
+      "namespaces"
+    ],
+    "__getNamespaces": [
+      "self"
+    ],
+    "_getUsedUris": [
+      "self"
+    ],
+    "_namespaces": [],
+    "append": [
+      "self",
+      "newSelector"
+    ],
+    "appendSelector": [
+      "self",
+      "newSelector"
+    ],
+    "_getSelectorText": [
+      "self"
+    ],
+    "_setSelectorText": [
+      "self",
+      "selectorText"
+    ],
+    "selectorText": [],
+    "length": [],
+    "parentRule": [],
+    "wellformed": []
+  },
+  "CSSCharsetRule": {
+    "__init__": [
+      "self",
+      "encoding",
+      "parentRule",
+      "parentStyleSheet",
+      "readonly"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "_getCssText": [
+      "self"
+    ],
+    "_setCssText": [
+      "self",
+      "cssText"
+    ],
+    "cssText": [],
+    "_setEncoding": [
+      "self",
+      "encoding"
+    ],
+    "encoding": [],
+    "type": [],
+    "wellformed": []
+  },
+  "CSSStyleDeclaration": {
+    "__init__": [
+      "self",
+      "cssText",
+      "parentRule",
+      "readonly",
+      "validating"
+    ],
+    "__contains__": [
+      "self",
+      "nameOrProperty"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "keys": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "CSSName"
+    ],
+    "__setitem__": [
+      "self",
+      "CSSName",
+      "value"
+    ],
+    "__delitem__": [
+      "self",
+      "CSSName"
+    ],
+    "__setattr__": [
+      "self",
+      "n",
+      "v"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__nnames": [
+      "self"
+    ],
+    "_getP": [
+      "self",
+      "CSSName"
+    ],
+    "_setP": [
+      "self",
+      "CSSName",
+      "value"
+    ],
+    "_delP": [
+      "self",
+      "CSSName"
+    ],
+    "children": [
+      "self"
+    ],
+    "_getCssText": [
+      "self"
+    ],
+    "_setCssText": [
+      "self",
+      "cssText"
+    ],
+    "cssText": [],
+    "getCssText": [
+      "self",
+      "separator"
+    ],
+    "_setParentRule": [
+      "self",
+      "parentRule"
+    ],
+    "parentRule": [],
+    "getProperties": [
+      "self",
+      "name",
+      "all"
+    ],
+    "getProperty": [
+      "self",
+      "name",
+      "normalize"
+    ],
+    "getPropertyCSSValue": [
+      "self",
+      "name",
+      "normalize"
+    ],
+    "getPropertyValue": [
+      "self",
+      "name",
+      "normalize",
+      "default"
+    ],
+    "getPropertyPriority": [
+      "self",
+      "name",
+      "normalize"
+    ],
+    "removeProperty": [
+      "self",
+      "name",
+      "normalize"
+    ],
+    "setProperty": [
+      "self",
+      "name",
+      "value",
+      "priority",
+      "normalize",
+      "replace"
+    ],
+    "item": [
+      "self",
+      "index"
+    ],
+    "length": [],
+    "_getValidating": [
+      "self"
+    ],
+    "_setValidating": [
+      "self",
+      "validating"
+    ],
+    "validating": [],
+    "_getValid": [
+      "self"
+    ],
+    "valid": []
+  },
+  "CSSNamespaceRule": {
+    "__init__": [
+      "self",
+      "namespaceURI",
+      "prefix",
+      "cssText",
+      "parentRule",
+      "parentStyleSheet",
+      "readonly"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "_getCssText": [
+      "self"
+    ],
+    "_setCssText": [
+      "self",
+      "cssText"
+    ],
+    "cssText": [],
+    "_setNamespaceURI": [
+      "self",
+      "namespaceURI"
+    ],
+    "namespaceURI": [],
+    "_replaceNamespaceURI": [
+      "self",
+      "namespaceURI"
+    ],
+    "_setPrefix": [
+      "self",
+      "prefix"
+    ],
+    "prefix": [],
+    "type": [],
+    "wellformed": []
+  },
+  "Constants": {
+    "S": [],
+    "simple_selector_sequence": [],
+    "simple_selector_sequence2": [],
+    "element_name": [],
+    "negation_arg": [],
+    "negationend": [],
+    "attname": [],
+    "attname2": [],
+    "attcombinator": [],
+    "attvalue": [],
+    "attend": [],
+    "expressionstart": [],
+    "expression": [],
+    "combinator": []
+  },
+  "New": {
+    "append": [
+      "self",
+      "seq",
+      "val",
+      "typ",
+      "token"
+    ],
+    "_COMMENT": [
+      "self",
+      "expected",
+      "seq",
+      "token",
+      "tokenizer"
+    ],
+    "_S": [
+      "self",
+      "expected",
+      "seq",
+      "token",
+      "tokenizer"
+    ],
+    "_universal": [
+      "self",
+      "expected",
+      "seq",
+      "token",
+      "tokenizer"
+    ],
+    "_namespace_prefix": [
+      "self",
+      "expected",
+      "seq",
+      "token",
+      "tokenizer"
+    ],
+    "_pseudo": [
+      "self",
+      "expected",
+      "seq",
+      "token",
+      "tokenizer"
+    ],
+    "_expression": [
+      "self",
+      "expected",
+      "seq",
+      "token",
+      "tokenizer"
+    ],
+    "_attcombinator": [
+      "self",
+      "expected",
+      "seq",
+      "token",
+      "tokenizer"
+    ],
+    "_string": [
+      "self",
+      "expected",
+      "seq",
+      "token",
+      "tokenizer"
+    ],
+    "_ident": [
+      "self",
+      "expected",
+      "seq",
+      "token",
+      "tokenizer"
+    ],
+    "_class": [
+      "self",
+      "expected",
+      "seq",
+      "token",
+      "tokenizer"
+    ],
+    "_hash": [
+      "self",
+      "expected",
+      "seq",
+      "token",
+      "tokenizer"
+    ],
+    "_char": [
+      "self",
+      "expected",
+      "seq",
+      "token",
+      "tokenizer"
+    ],
+    "_negation": [
+      "self",
+      "expected",
+      "seq",
+      "token",
+      "tokenizer"
+    ],
+    "_atkeyword": [
+      "self",
+      "expected",
+      "seq",
+      "token",
+      "tokenizer"
+    ],
+    "productions": [
+      "self"
+    ]
+  },
+  "Selector": {
+    "__init__": [
+      "self",
+      "selectorText",
+      "parent",
+      "readonly"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "_getUsedUris": [
+      "self"
+    ],
+    "_getUsedNamespaces": [
+      "self"
+    ],
+    "__getNamespaces": [
+      "self"
+    ],
+    "_namespaces": [],
+    "element": [
+      "self"
+    ],
+    "parent": [],
+    "_getSelectorText": [
+      "self"
+    ],
+    "_setSelectorText": [
+      "self",
+      "selectorText"
+    ],
+    "_prepare_tokens": [
+      "self",
+      "tokenizer"
+    ],
+    "selectorText": [],
+    "specificity": [],
+    "wellformed": [],
+    "_getParentList": [
+      "self"
+    ],
+    "parentList": []
+  },
+  "PropertyValue": {
+    "__init__": [
+      "self",
+      "cssText",
+      "parent",
+      "readonly"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "index"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__items": [
+      "self",
+      "seq"
+    ],
+    "_setCssText": [
+      "self",
+      "cssText"
+    ],
+    "cssText": [],
+    "item": [
+      "self",
+      "index"
+    ],
+    "length": [],
+    "value": []
+  },
+  "Value": {
+    "IDENT": [],
+    "STRING": [],
+    "UNICODE_RANGE": [],
+    "URI": [],
+    "DIMENSION": [],
+    "NUMBER": [],
+    "PERCENTAGE": [],
+    "COLOR_VALUE": [],
+    "HASH": [],
+    "FUNCTION": [],
+    "CALC": [],
+    "VARIABLE": [],
+    "_type": [],
+    "_value": [],
+    "__init__": [
+      "self",
+      "cssText",
+      "parent",
+      "readonly"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "_setCssText": [
+      "self",
+      "cssText"
+    ],
+    "cssText": [],
+    "type": [
+      "self"
+    ],
+    "_setValue": [
+      "self",
+      "value"
+    ],
+    "value": []
+  },
+  "ColorValue": {
+    "_colorType": [],
+    "_red": [],
+    "_green": [],
+    "_blue": [],
+    "_alpha": [],
+    "__str__": [
+      "self"
+    ],
+    "_setCssText": [
+      "self",
+      "cssText"
+    ],
+    "cssText": [],
+    "value": [],
+    "type": [
+      "self"
+    ],
+    "_getName": [
+      "self"
+    ],
+    "colorType": [],
+    "name": [],
+    "red": [],
+    "green": [
+      "self"
+    ],
+    "blue": [
+      "self"
+    ],
+    "alpha": [
+      "self"
+    ]
+  },
+  "DimensionValue": {
+    "__reUnNumDim": [],
+    "_dimension": [],
+    "_sign": [],
+    "__str__": [
+      "self"
+    ],
+    "_setCssText": [
+      "self",
+      "cssText"
+    ],
+    "cssText": [],
+    "dimension": []
+  },
+  "URIValue": {
+    "_type": [],
+    "_uri": [],
+    "__str__": [
+      "self"
+    ],
+    "_setCssText": [
+      "self",
+      "cssText"
+    ],
+    "cssText": [],
+    "_setUri": [
+      "self",
+      "uri"
+    ],
+    "uri": [],
+    "absoluteUri": []
+  },
+  "MSValue": {
+    "_functionName": [],
+    "_productions": [
+      "self"
+    ],
+    "_setCssText": [
+      "self",
+      "cssText"
+    ],
+    "cssText": []
+  },
+  "CSSCalc": {
+    "_functionName": [],
+    "__str__": [
+      "self"
+    ],
+    "_setCssText": [
+      "self",
+      "cssText"
+    ],
+    "cssText": [],
+    "type": []
+  },
+  "_ValueProd": [
+    "parent",
+    "nextSor",
+    "toStore"
+  ],
+  "_DimensionProd": [
+    "parent",
+    "nextSor",
+    "toStore"
+  ],
+  "_URIProd": [
+    "parent",
+    "nextSor",
+    "toStore"
+  ],
+  "reHexcolor": [],
+  "_ColorProd": [
+    "parent",
+    "nextSor",
+    "toStore"
+  ],
+  "_CSSFunctionProd": [
+    "parent",
+    "nextSor",
+    "toStore"
+  ],
+  "_CalcValueProd": [
+    "parent",
+    "nextSor",
+    "toStore"
+  ],
+  "_CSSVariableProd": [
+    "parent",
+    "nextSor",
+    "toStore"
+  ],
+  "_MSValueProd": [
+    "parent",
+    "nextSor"
+  ],
+  "MediaQueryValueProd": [
+    "parent"
+  ],
+  "CSSComment": {
+    "__init__": [
+      "self",
+      "cssText",
+      "parentRule",
+      "parentStyleSheet",
+      "readonly"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "_getCssText": [
+      "self"
+    ],
+    "_setCssText": [
+      "self",
+      "cssText"
+    ],
+    "cssText": [],
+    "type": [],
+    "wellformed": []
+  },
+  "Property": {
+    "__init__": [
+      "self",
+      "name",
+      "value",
+      "priority",
+      "_mediaQuery",
+      "parent"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "_isValidating": [
+      "self"
+    ],
+    "_getCssText": [
+      "self"
+    ],
+    "_setCssText": [
+      "self",
+      "cssText"
+    ],
+    "cssText": [],
+    "_setName": [
+      "self",
+      "name"
+    ],
+    "name": [],
+    "literalname": [],
+    "_setPropertyValue": [
+      "self",
+      "cssText"
+    ],
+    "propertyValue": [],
+    "_getValue": [
+      "self"
+    ],
+    "_setValue": [
+      "self",
+      "value"
+    ],
+    "value": [],
+    "_setPriority": [
+      "self",
+      "priority"
+    ],
+    "priority": [
+      "self",
+      "priority"
+    ],
+    "literalpriority": [],
+    "parent": [
+      "self",
+      "parent"
+    ],
+    "validate": [
+      "self"
+    ],
+    "valid": [],
+    "_getCSSValue": [
+      "self"
+    ],
+    "_setCSSValue": [
+      "self",
+      "cssText"
+    ],
+    "cssValue": []
+  },
+  "CSSRule": {
+    "UNKNOWN_RULE": [],
+    "STYLE_RULE": [],
+    "CHARSET_RULE": [],
+    "IMPORT_RULE": [],
+    "MEDIA_RULE": [],
+    "FONT_FACE_RULE": [],
+    "PAGE_RULE": [],
+    "NAMESPACE_RULE": [],
+    "COMMENT": [],
+    "VARIABLES_RULE": [],
+    "MARGIN_RULE": [],
+    "_typestrings": [],
+    "__init__": [
+      "self",
+      "parentRule",
+      "parentStyleSheet",
+      "readonly"
+    ],
+    "_setAtkeyword": [
+      "self",
+      "keyword"
+    ],
+    "atkeyword": [],
+    "_setCssText": [
+      "self",
+      "cssText"
+    ],
+    "cssText": [],
+    "parent": [
+      "self"
+    ],
+    "parentRule": [],
+    "_getParentStyleSheet": [
+      "self"
+    ],
+    "parentStyleSheet": [],
+    "type": [],
+    "typeString": [],
+    "wellformed": []
+  },
+  "CSSRuleRules": {
+    "__init__": [
+      "self",
+      "parentRule",
+      "parentStyleSheet"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "_setCssRules": [
+      "self",
+      "cssRules"
+    ],
+    "cssRules": [],
+    "deleteRule": [
+      "self",
+      "index"
+    ],
+    "_prepareInsertRule": [
+      "self",
+      "rule",
+      "index"
+    ],
+    "_finishInsertRule": [
+      "self",
+      "rule",
+      "index"
+    ],
+    "add": [
+      "self",
+      "rule"
+    ],
+    "insertRule": [
+      "self",
+      "rule",
+      "index"
+    ]
+  },
+  "MarginRule": {
+    "margins": [],
+    "__init__": [
+      "self",
+      "margin",
+      "style",
+      "parentRule",
+      "parentStyleSheet",
+      "readonly"
+    ],
+    "_setMargin": [
+      "self",
+      "margin"
+    ],
+    "margin": [],
+    "atkeyword": [],
+    "__repr__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "_getCssText": [
+      "self"
+    ],
+    "_setCssText": [
+      "self",
+      "cssText"
+    ],
+    "cssText": [],
+    "_setStyle": [
+      "self",
+      "style"
+    ],
+    "style": [],
+    "type": [],
+    "wellformed": []
+  }
+}
