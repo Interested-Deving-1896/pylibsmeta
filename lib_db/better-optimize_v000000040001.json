@@ -1,0 +1,384 @@
+{
+  "_log": [],
+  "_QUEUE_POLL_INTERVAL": [],
+  "InitStrategy": [],
+  "generate_starts": [
+    "x0",
+    "n_runs",
+    "strategy",
+    "bounds",
+    "init_scale",
+    "rng"
+  ],
+  "ProgressProxy": {
+    "__init__": [
+      "self",
+      "queue",
+      "task_id"
+    ],
+    "update": [
+      "self",
+      "task_id"
+    ],
+    "add_task": [
+      "self"
+    ],
+    "reset": [
+      "self",
+      "task_id"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self"
+    ]
+  },
+  "_drain_progress_queue": [
+    "queue",
+    "progress",
+    "stop"
+  ],
+  "_resolve_n_jobs": [
+    "n_jobs"
+  ],
+  "BlasConfig": {},
+  "setup_blas_cores": [
+    "blas_cores",
+    "n_jobs",
+    "mp_ctx"
+  ],
+  "_is_pickle_error": [
+    "exc"
+  ],
+  "_run_single": [
+    "run_index",
+    "x0",
+    "solver",
+    "solver_kwargs",
+    "progress",
+    "task_id",
+    "blas_cores_per_worker"
+  ],
+  "MultiStartResult": {
+    "ranked": [
+      "self",
+      "ascending"
+    ],
+    "best": [
+      "self"
+    ],
+    "x_best": [
+      "self"
+    ],
+    "fun_best": [
+      "self"
+    ],
+    "top_k": [
+      "self",
+      "k"
+    ],
+    "success_rate": [
+      "self"
+    ],
+    "_format_result_row": [
+      "self",
+      "rank",
+      "res"
+    ],
+    "summary": [
+      "self",
+      "top_k"
+    ],
+    "_result_to_dict": [
+      "self",
+      "rank",
+      "res"
+    ],
+    "to_dataframe": [
+      "self"
+    ]
+  },
+  "_MultiStart": {
+    "__init__": [
+      "self",
+      "solver",
+      "x0",
+      "solver_kwargs",
+      "sort_key",
+      "n_runs",
+      "init_strategy",
+      "bounds",
+      "init_scale",
+      "backend",
+      "n_jobs",
+      "seed",
+      "progressbar",
+      "mp_ctx",
+      "blas_cores"
+    ],
+    "run": [
+      "self"
+    ],
+    "_run_sequential": [
+      "self"
+    ],
+    "_run_parallel": [
+      "self"
+    ],
+    "_SOLVER_LABELS": [],
+    "_task_description": [
+      "self"
+    ],
+    "_is_root": [
+      "self"
+    ],
+    "_build_progress": [
+      "self"
+    ],
+    "_register_tasks": [
+      "self",
+      "progress"
+    ]
+  },
+  "multi_optimize": [
+    "solver",
+    "x0",
+    "solver_kwargs",
+    "sort_key",
+    "n_runs",
+    "init_strategy",
+    "bounds",
+    "init_scale",
+    "backend",
+    "n_jobs",
+    "seed",
+    "progressbar",
+    "mp_ctx",
+    "blas_cores"
+  ],
+  "__all__": [],
+  "version_json": [],
+  "get_versions": [],
+  "build_progress_bar": [],
+  "ObjectiveWrapper": {
+    "__init__": [
+      "self",
+      "f",
+      "jac",
+      "hess",
+      "has_fused_f_and_grad",
+      "args",
+      "maxeval",
+      "progressbar",
+      "progressbar_update_interval",
+      "root",
+      "task"
+    ],
+    "step": [
+      "self",
+      "x"
+    ],
+    "__call__": [
+      "self",
+      "x"
+    ],
+    "callback": [
+      "self"
+    ],
+    "update_progressbar": [
+      "self",
+      "value",
+      "grad",
+      "hess",
+      "completed"
+    ],
+    "initialize_progress_bar": [
+      "self"
+    ]
+  },
+  "optimizer_early_stopping_wrapper": [
+    "f_optim"
+  ],
+  "minimize": [
+    "f",
+    "x0",
+    "method",
+    "jac",
+    "hess",
+    "hessp",
+    "progressbar",
+    "progress_task",
+    "progressbar_update_interval",
+    "verbose",
+    "args"
+  ],
+  "ToggleableProgress": {
+    "__init__": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ],
+    "add_task": [
+      "self"
+    ],
+    "advance": [
+      "self",
+      "task_id",
+      "advance"
+    ],
+    "update": [
+      "self",
+      "task_id"
+    ],
+    "make_tasks_table": [
+      "self",
+      "tasks"
+    ]
+  },
+  "get_option_kwargs": [
+    "method"
+  ],
+  "validate_provided_functions_minimize": [
+    "method",
+    "f_grad",
+    "f_hess",
+    "f_hessp",
+    "has_fused_f_and_grad",
+    "has_fused_f_grad_hess",
+    "verbose"
+  ],
+  "validate_provided_functions_root": [
+    "method",
+    "f",
+    "jac",
+    "has_fused_f_and_grad",
+    "verbose"
+  ],
+  "check_f_is_fused_minimize": [
+    "f",
+    "x0",
+    "args"
+  ],
+  "check_f_is_fused_root": [
+    "f",
+    "x0",
+    "args"
+  ],
+  "determine_maxiter": [
+    "optimizer_kwargs",
+    "method",
+    "n_vars"
+  ],
+  "kwargs_to_options": [
+    "optimizer_kwargs",
+    "method"
+  ],
+  "kwargs_to_jac_options": [
+    "optimizer_kwargs",
+    "method"
+  ],
+  "determine_tolerance": [
+    "optimizer_kwargs",
+    "method"
+  ],
+  "LRUCache1": {
+    "__init__": [
+      "self",
+      "fn",
+      "f_returns_list",
+      "copy_x",
+      "dtype"
+    ],
+    "__call__": [
+      "self",
+      "x"
+    ],
+    "value": [
+      "self",
+      "x"
+    ],
+    "grad": [
+      "self",
+      "x"
+    ],
+    "value_and_grad": [
+      "self",
+      "x"
+    ],
+    "hess": [
+      "self",
+      "x"
+    ],
+    "report": [
+      "self"
+    ],
+    "clear_cache": [
+      "self"
+    ]
+  },
+  "minimize_method": [],
+  "root_method": [],
+  "TOLERANCES": [],
+  "CONSOLE_WIDTH": [],
+  "MINIMIZE_MODE_KWARGS": [],
+  "ROOT_MODE_KWARGS": [],
+  "initialize_progress_bar": [
+    "progressbar",
+    "use_jac",
+    "use_hess"
+  ],
+  "AllowFailureStorage": {
+    "update": [
+      "self",
+      "minres"
+    ]
+  },
+  "AllowFailureBasinHoppingRunner": {
+    "__init__": [
+      "self",
+      "x0",
+      "minimizer",
+      "step_taking",
+      "accept_tests",
+      "accept_on_minimizer_fail",
+      "disp"
+    ]
+  },
+  "basinhopping": [
+    "func",
+    "x0",
+    "niter",
+    "T",
+    "stepsize",
+    "minimizer_kwargs",
+    "take_step",
+    "accept_test",
+    "accept_on_minimizer_fail",
+    "callback",
+    "interval",
+    "progressbar",
+    "verbose",
+    "niter_success",
+    "rng"
+  ],
+  "root": [
+    "f",
+    "x0",
+    "method",
+    "jac",
+    "progressbar",
+    "progress_task",
+    "progressbar_update_interval",
+    "verbose",
+    "args"
+  ],
+  "__version__": []
+}
