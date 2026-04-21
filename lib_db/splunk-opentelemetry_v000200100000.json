@@ -1,0 +1,309 @@
+{
+  "SplunkConfigurator": {
+    "_configure": [
+      "self"
+    ]
+  },
+  "__version__": [],
+  "_DISTRO_NAME": [],
+  "_NO_SERVICE_NAME_WARNING": [],
+  "_DEFAULT_SERVICE_NAME": [],
+  "_X_SF_TOKEN": [],
+  "_pylogger": [],
+  "SplunkDistro": {
+    "__init__": [
+      "self"
+    ],
+    "_configure": [
+      "self"
+    ],
+    "set_env_defaults": [
+      "self"
+    ],
+    "check_service_name": [
+      "self"
+    ],
+    "set_profiling_env": [
+      "self"
+    ],
+    "set_resource_attributes": [
+      "self"
+    ],
+    "handle_realm": [
+      "self"
+    ],
+    "configure_token_headers": [
+      "self"
+    ],
+    "set_server_timing_propagator": [
+      "self"
+    ],
+    "set_callgraphs_propagator": [
+      "self"
+    ]
+  },
+  "_sym_db": [],
+  "DESCRIPTOR": [],
+  "_globals": [],
+  "_DEFAULT_PROF_CALL_STACK_INTERVAL_MILLIS": [],
+  "_SERVICE_NAME_ATTR": [],
+  "_SPLUNK_DISTRO_VERSION_ATTR": [],
+  "_SCOPE_VERSION": [],
+  "_SCOPE_NAME": [],
+  "_thread_states": [],
+  "_context_tracking_started": [],
+  "ProfilingContext": {
+    "_timer": [],
+    "__init__": [
+      "self",
+      "service_name",
+      "interval_millis",
+      "stacktrace_filter",
+      "instrumentation_source"
+    ],
+    "start": [
+      "self"
+    ],
+    "stop": [
+      "self"
+    ],
+    "pause_after": [
+      "self",
+      "seconds"
+    ]
+  },
+  "_start_profiling_if_enabled": [
+    "env"
+  ],
+  "start_profiling": [
+    "env"
+  ],
+  "_mk_resource": [
+    "service_name"
+  ],
+  "start_thread_context_tracking": [],
+  "_wrap_context_attach": [
+    "wrapped",
+    "_instance",
+    "args",
+    "kwargs"
+  ],
+  "_wrap_context_detach": [
+    "wrapped",
+    "_instance",
+    "args",
+    "kwargs"
+  ],
+  "_collect_stacktraces": [],
+  "_ProfileScraper": {
+    "__init__": [
+      "self",
+      "resource",
+      "thread_states",
+      "interval_millis",
+      "logger",
+      "collect_stacktraces_func",
+      "time_func",
+      "stacktrace_filter",
+      "instrumentation_source"
+    ],
+    "tick": [
+      "self"
+    ],
+    "mk_log_record": [
+      "self",
+      "stacktraces"
+    ]
+  },
+  "_pb_profile_to_str": [
+    "pb_profile"
+  ],
+  "_IntervalTimer": {
+    "__init__": [
+      "self",
+      "interval_millis",
+      "target"
+    ],
+    "start": [
+      "self"
+    ],
+    "_loop": [
+      "self"
+    ],
+    "stop": [
+      "self"
+    ],
+    "pause_after": [
+      "self",
+      "seconds"
+    ]
+  },
+  "_StringTable": {
+    "__init__": [
+      "self"
+    ],
+    "index": [
+      "self",
+      "token"
+    ],
+    "keys": [
+      "self"
+    ]
+  },
+  "_get_location": [
+    "functions_table",
+    "str_table",
+    "locations_table",
+    "frame"
+  ],
+  "_get_line": [
+    "functions_table",
+    "str_table",
+    "file_name",
+    "function_name",
+    "line_no"
+  ],
+  "_get_function": [
+    "functions_table",
+    "str_table",
+    "file_name",
+    "function_name"
+  ],
+  "_extract_stack_summary": [
+    "frame"
+  ],
+  "_stacktraces_to_cpu_profile": [
+    "stacktraces",
+    "thread_states",
+    "interval_millis",
+    "time_seconds"
+  ],
+  "DEFAULTS": [],
+  "SPLUNK_OTEL_SYSTEM_METRICS_ENABLED": [],
+  "SPLUNK_ACCESS_TOKEN": [],
+  "SPLUNK_TRACE_RESPONSE_HEADER_ENABLED": [],
+  "SPLUNK_PROFILER_ENABLED": [],
+  "SPLUNK_PROFILER_CALL_STACK_INTERVAL": [],
+  "SPLUNK_PROFILER_LOGS_ENDPOINT": [],
+  "SPLUNK_SNAPSHOT_PROFILER_ENABLED": [],
+  "SPLUNK_SNAPSHOT_SAMPLING_INTERVAL": [],
+  "SPLUNK_SNAPSHOT_SELECTION_PROBABILITY": [],
+  "SPLUNK_REALM": [],
+  "Env": {
+    "__init__": [
+      "self",
+      "store"
+    ],
+    "is_true": [
+      "self",
+      "key",
+      "default"
+    ],
+    "list_append": [
+      "self",
+      "key",
+      "value"
+    ],
+    "getval": [
+      "self",
+      "key",
+      "default"
+    ],
+    "getint": [
+      "self",
+      "key",
+      "default"
+    ],
+    "getfloat": [
+      "self",
+      "key",
+      "default"
+    ],
+    "setval": [
+      "self",
+      "key",
+      "value"
+    ],
+    "setdefault": [
+      "self",
+      "key",
+      "value"
+    ]
+  },
+  "is_true_str": [
+    "s"
+  ],
+  "_SPLUNK_TRACE_SNAPSHOT_VOLUME": [],
+  "ServerTimingResponsePropagator": {
+    "inject": [
+      "self",
+      "carrier",
+      "context",
+      "setter"
+    ]
+  },
+  "_with_volume_baggage": [
+    "is_selected",
+    "context"
+  ],
+  "CallgraphsPropagator": {
+    "__init__": [
+      "self",
+      "selection_probability"
+    ],
+    "extract": [
+      "self",
+      "carrier",
+      "context",
+      "getter"
+    ],
+    "inject": [
+      "self",
+      "carrier",
+      "context",
+      "setter"
+    ],
+    "fields": [
+      "self"
+    ],
+    "_attach_volume_baggage": [
+      "self",
+      "context"
+    ]
+  },
+  "init_splunk_otel": [],
+  "_should_process_context": [
+    "context"
+  ],
+  "CallgraphsSpanProcessor": {
+    "__init__": [
+      "self",
+      "service_name",
+      "sampling_interval"
+    ],
+    "on_start": [
+      "self",
+      "span",
+      "parent_context"
+    ],
+    "on_end": [
+      "self",
+      "span"
+    ],
+    "shutdown": [
+      "self"
+    ],
+    "force_flush": [
+      "self",
+      "timeout_millis"
+    ],
+    "_filter_stacktraces": [
+      "self",
+      "stacktraces",
+      "active_trace_contexts"
+    ]
+  },
+  "_configure_callgraphs_if_enabled": [
+    "env"
+  ]
+}
