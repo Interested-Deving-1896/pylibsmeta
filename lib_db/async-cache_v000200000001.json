@@ -1,0 +1,129 @@
+{
+  "_SENTINEL": [],
+  "AsyncCache": {
+    "__init__": [
+      "self",
+      "maxsize",
+      "default_ttl",
+      "batch_window_ms",
+      "max_batch_size"
+    ],
+    "get": [
+      "self",
+      "key",
+      "loader",
+      "batch_loader",
+      "ttl"
+    ],
+    "_batch_get": [
+      "self",
+      "key",
+      "batch_loader",
+      "ttl"
+    ],
+    "_schedule_flush": [
+      "self"
+    ],
+    "_flush_batch": [
+      "self"
+    ],
+    "set": [
+      "self",
+      "key",
+      "value",
+      "ttl"
+    ],
+    "delete": [
+      "self",
+      "key"
+    ],
+    "clear": [
+      "self"
+    ],
+    "get_metrics": [
+      "self"
+    ],
+    "warmup": [
+      "self",
+      "keys_with_loaders"
+    ]
+  },
+  "AsyncLRU": {
+    "__init__": [
+      "self",
+      "maxsize",
+      "skip_args"
+    ],
+    "clear_cache": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "func"
+    ]
+  },
+  "AsyncTTL": {
+    "__init__": [
+      "self",
+      "time_to_live",
+      "maxsize",
+      "skip_args"
+    ],
+    "clear_cache": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "func"
+    ]
+  },
+  "_to_hashable": [
+    "param"
+  ],
+  "KEY": {
+    "__init__": [
+      "self",
+      "args",
+      "kwargs"
+    ],
+    "__eq__": [
+      "self",
+      "obj"
+    ],
+    "__hash__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "make_key": [
+    "func",
+    "args",
+    "kwargs",
+    "skip_args"
+  ],
+  "LRU": {
+    "__init__": [
+      "self",
+      "maxsize"
+    ],
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "__setitem__": [
+      "self",
+      "key",
+      "value"
+    ],
+    "pop": [
+      "self",
+      "key",
+      "default"
+    ],
+    "clear": [
+      "self"
+    ]
+  }
+}
