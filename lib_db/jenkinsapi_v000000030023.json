@@ -1,0 +1,4124 @@
+{
+  "level": [],
+  "modules": [],
+  "log": [],
+  "pytestmark": [],
+  "_wait_for_input": [
+    "build",
+    "timeout"
+  ],
+  "test_get_pending_input_actions": [
+    "jenkins"
+  ],
+  "test_proceed_input": [
+    "jenkins"
+  ],
+  "test_abort_input": [
+    "jenkins"
+  ],
+  "test_generate_new_api_token": [
+    "jenkins_admin_admin"
+  ],
+  "test_set_concurrent_builds_enable": [
+    "jenkins"
+  ],
+  "test_set_concurrent_builds_disable": [
+    "jenkins"
+  ],
+  "test_block_build_when_downstream_building": [
+    "jenkins"
+  ],
+  "test_unblock_build_when_downstream_building": [
+    "jenkins"
+  ],
+  "test_block_build_when_upstream_building": [
+    "jenkins"
+  ],
+  "test_unblock_build_when_upstream_building": [
+    "jenkins"
+  ],
+  "test_restrict_to_node": [
+    "jenkins"
+  ],
+  "test_restrict_to_node_update": [
+    "jenkins"
+  ],
+  "job_present": [
+    "jenkins",
+    "name"
+  ],
+  "job_absent": [
+    "jenkins",
+    "name"
+  ],
+  "test_create_job": [
+    "jenkins"
+  ],
+  "test_create_job_with_plus": [
+    "jenkins"
+  ],
+  "test_create_dup_job": [
+    "jenkins"
+  ],
+  "test_get_jobs_info": [
+    "jenkins"
+  ],
+  "test_create_job_through_jobs_dict": [
+    "jenkins"
+  ],
+  "test_enable_disable_job": [
+    "jenkins"
+  ],
+  "test_get_job_and_update_config": [
+    "jenkins"
+  ],
+  "test_invoke_job": [
+    "jenkins"
+  ],
+  "test_invocation_object": [
+    "jenkins"
+  ],
+  "test_get_jobs_list": [
+    "jenkins"
+  ],
+  "test_get_job": [
+    "jenkins"
+  ],
+  "test_get_jobs": [
+    "jenkins"
+  ],
+  "test_get_job_that_does_not_exist": [
+    "jenkins"
+  ],
+  "test_has_job": [
+    "jenkins"
+  ],
+  "test_has_no_job": [
+    "jenkins"
+  ],
+  "test_delete_job": [
+    "jenkins"
+  ],
+  "test_rename_job": [
+    "jenkins"
+  ],
+  "test_copy_job": [
+    "jenkins"
+  ],
+  "test_get_master_data": [
+    "jenkins"
+  ],
+  "test_run_groovy_script": [
+    "jenkins"
+  ],
+  "test_get_block_until_build_running": [
+    "jenkins"
+  ],
+  "test_get_block_until_build_complete": [
+    "jenkins"
+  ],
+  "test_mi_and_get_last_build": [
+    "jenkins"
+  ],
+  "test_mi_and_get_build_number": [
+    "jenkins"
+  ],
+  "test_mi_and_delete_build": [
+    "jenkins"
+  ],
+  "test_give_params_on_non_parameterized_job": [
+    "jenkins"
+  ],
+  "test_keep_build_toggle": [
+    "jenkins"
+  ],
+  "test_artifacts": [
+    "jenkins"
+  ],
+  "test_recreate_job_preserves_config": [
+    "jenkins"
+  ],
+  "test_recreate_job_resets_build_history": [
+    "jenkins"
+  ],
+  "test_quiet_down_and_cancel_quiet_down": [
+    "jenkins"
+  ],
+  "slave_node": [
+    "jenkins",
+    "request"
+  ],
+  "test_change_mode_to_exclusive": [
+    "slave_node"
+  ],
+  "test_change_mode_to_normal": [
+    "slave_node"
+  ],
+  "test_change_mode_invalid": [
+    "slave_node"
+  ],
+  "test_set_description": [
+    "jenkins"
+  ],
+  "DEFAULT_JENKINS_PORT": [],
+  "ENABLE_CRUMBS_CONFIG": [],
+  "DISABLE_CRUMBS_CONFIG": [],
+  "SECURITY_SETTINGS": [],
+  "crumbed_jenkins": [
+    "jenkins"
+  ],
+  "test_invoke_job_with_file": [
+    "crumbed_jenkins"
+  ],
+  "test_invoke_job_parameterized": [
+    "jenkins"
+  ],
+  "test_parameterized_job_build_queuing": [
+    "jenkins"
+  ],
+  "test_parameterized_multiple_builds_get_the_same_queue_item": [
+    "jenkins"
+  ],
+  "test_invoke_job_with_file_and_params": [
+    "jenkins"
+  ],
+  "SAFE_PLUGIN": [],
+  "test_unpin_plugin_does_not_raise": [
+    "jenkins"
+  ],
+  "test_downgrade_plugin_does_not_raise": [
+    "jenkins"
+  ],
+  "test_plugin_data": [
+    "jenkins"
+  ],
+  "test_get_missing_plugin": [
+    "jenkins"
+  ],
+  "test_get_single_plugin": [
+    "jenkins"
+  ],
+  "test_get_single_plugin_depth_2": [
+    "jenkins"
+  ],
+  "test_delete_inexistant_plugin": [
+    "jenkins"
+  ],
+  "wait_for_restart": [
+    "jenkins"
+  ],
+  "test_safe_restart_wait": [
+    "jenkins"
+  ],
+  "test_safe_restart_dont_wait": [
+    "jenkins"
+  ],
+  "test_invoke_matrix_job": [
+    "jenkins"
+  ],
+  "test_get_executors": [
+    "jenkins"
+  ],
+  "test_running_executor": [
+    "jenkins"
+  ],
+  "test_idle_executors": [
+    "jenkins"
+  ],
+  "test_pipeline_job_with_git_scm": [
+    "jenkins"
+  ],
+  "test_pipeline_job_scm_prefix_set": [
+    "jenkins"
+  ],
+  "test_pipeline_job_with_null_scm_raises_error": [
+    "jenkins"
+  ],
+  "test_pipeline_job_with_unsupported_scm_raises_error": [
+    "jenkins"
+  ],
+  "test_normal_authentication": [
+    "jenkins_admin_admin"
+  ],
+  "test_disable_plugin": [
+    "jenkins"
+  ],
+  "test_enable_plugin": [
+    "jenkins"
+  ],
+  "test_get_env_vars": [
+    "jenkins"
+  ],
+  "EMPTY_JOB": [],
+  "LONG_RUNNING_JOB": [],
+  "SHORTISH_JOB": [],
+  "SCM_GIT_JOB": [],
+  "JOB_WITH_ARTIFACTS": [],
+  "MATRIX_JOB": [],
+  "JOB_WITH_FILE": [],
+  "JOB_WITH_PARAMETERS": [],
+  "JOB_WITH_FILE_AND_PARAMS": [],
+  "JOB_WITH_ENV_VARS": [],
+  "PIPELINE_SCM_JOB": [],
+  "PIPELINE_SCM_CONFIG": [],
+  "PIPELINE_INPUT_JOB": [],
+  "FOLDER": [],
+  "test_job_credentials_property_accessible": [
+    "jenkins"
+  ],
+  "test_job_credentials_url_construction": [
+    "jenkins"
+  ],
+  "test_credentials_property_is_credentials2x_instance": [
+    "jenkins"
+  ],
+  "test_git_revision_lookup": [
+    "jenkins"
+  ],
+  "test_get_revision_dict_skips_none": [
+    "jenkins"
+  ],
+  "test_reload": [
+    "jenkins"
+  ],
+  "no_executors": [
+    "jenkins",
+    "request"
+  ],
+  "test_queue_item_is_blocked_and_buildable": [
+    "jenkins",
+    "no_executors"
+  ],
+  "test_queue_item_get_age": [
+    "jenkins",
+    "no_executors"
+  ],
+  "test_queue_item_get_eta": [
+    "jenkins",
+    "no_executors"
+  ],
+  "test_queue_item_get_causes": [
+    "jenkins",
+    "no_executors"
+  ],
+  "test_create_and_delete_user": [
+    "jenkins_admin_admin"
+  ],
+  "GROOVY_SCRIPT_INIT_TEST_RESOURCES": [],
+  "jenkins_test_lock_init": [
+    "jenkins_admin_admin"
+  ],
+  "test_lock_name": [],
+  "test_lock_name2": [],
+  "test_lock_label": [],
+  "lockable_resources": [
+    "jenkins_admin_admin",
+    "jenkins_test_lock_init"
+  ],
+  "test_list_lockables": [
+    "lockable_resources"
+  ],
+  "test_reserve_unreserve": [
+    "lockable_resources",
+    "test_lock_name"
+  ],
+  "test_reserve_unreserve_nopoll": [
+    "lockable_resources",
+    "test_lock_name"
+  ],
+  "test_reservation_by_name": [
+    "lockable_resources",
+    "test_lock_name"
+  ],
+  "test_reservation_by_name_list": [
+    "lockable_resources",
+    "test_lock_name",
+    "test_lock_name2"
+  ],
+  "test_reservation_by_label": [
+    "lockable_resources",
+    "test_lock_label"
+  ],
+  "test_custom_retry": [
+    "lockable_resources",
+    "test_lock_name"
+  ],
+  "_get_token_uuids": [
+    "jenkins"
+  ],
+  "test_revoke_api_token": [
+    "jenkins_admin_admin"
+  ],
+  "test_revoke_all_api_tokens": [
+    "jenkins_admin_admin"
+  ],
+  "test_wipe_out_workspace": [
+    "jenkins"
+  ],
+  "test_trigger_scm_poll": [
+    "jenkins"
+  ],
+  "test_safe_exit": [
+    "jenkins"
+  ],
+  "test_get_jobs_by_status_success": [
+    "jenkins"
+  ],
+  "test_get_jobs_by_status_returns_list": [
+    "jenkins"
+  ],
+  "test_get_jobs_by_status_disabled": [
+    "jenkins"
+  ],
+  "create_job": [
+    "jenkins",
+    "job_name"
+  ],
+  "test_make_views": [
+    "jenkins"
+  ],
+  "test_add_job_to_view": [
+    "jenkins"
+  ],
+  "test_create_and_delete_views": [
+    "jenkins"
+  ],
+  "test_create_and_delete_views_by_url": [
+    "jenkins"
+  ],
+  "test_delete_view_which_does_not_exist": [
+    "jenkins"
+  ],
+  "test_update_view_config": [
+    "jenkins"
+  ],
+  "test_make_nested_views": [
+    "jenkins"
+  ],
+  "test_add_to_view_after_copy": [
+    "jenkins"
+  ],
+  "test_get_job_config": [
+    "jenkins"
+  ],
+  "test_remove_job_from_view": [
+    "jenkins"
+  ],
+  "state": [],
+  "ADMIN_USER": [],
+  "ADMIN_PASSWORD": [],
+  "_delete_all_jobs": [
+    "jenkins"
+  ],
+  "_delete_all_views": [
+    "jenkins"
+  ],
+  "_delete_all_credentials": [
+    "jenkins"
+  ],
+  "_create_admin_user": [
+    "launched_jenkins"
+  ],
+  "_disable_security": [
+    "launched_jenkins"
+  ],
+  "docker_image": [
+    "worker_id"
+  ],
+  "launched_jenkins": [
+    "docker_image",
+    "worker_id"
+  ],
+  "ensure_jenkins_up": [
+    "url",
+    "timeout"
+  ],
+  "jenkins": [
+    "launched_jenkins"
+  ],
+  "lazy_jenkins": [
+    "launched_jenkins"
+  ],
+  "jenkins_admin_admin": [
+    "launched_jenkins",
+    "jenkins"
+  ],
+  "VIEW_WITH_FILTER_AND_REGEX": [],
+  "test_jenkins_loads_with_all_plugins": [
+    "jenkins"
+  ],
+  "test_matrix_project_plugin_available": [
+    "jenkins"
+  ],
+  "test_envinject_plugin_available": [
+    "jenkins"
+  ],
+  "test_git_plugin_available": [
+    "jenkins"
+  ],
+  "test_get_queue": [
+    "jenkins"
+  ],
+  "test_invoke_many_jobs": [
+    "jenkins",
+    "no_executors"
+  ],
+  "test_start_and_stop_long_running_job": [
+    "jenkins"
+  ],
+  "test_queueitem_for_why_field": [
+    "jenkins",
+    "no_executors"
+  ],
+  "test_queueitem_from_job": [
+    "jenkins",
+    "no_executors"
+  ],
+  "JOB_CONFIGS": [],
+  "DELAY": [],
+  "test_stream_relationship": [
+    "jenkins"
+  ],
+  "TOOL_KEY": [],
+  "test_online_offline": [
+    "jenkins"
+  ],
+  "test_create_jnlp_node": [
+    "jenkins"
+  ],
+  "test_create_ssh_node": [
+    "jenkins"
+  ],
+  "test_delete_node": [
+    "jenkins"
+  ],
+  "test_delete_all_nodes": [
+    "jenkins"
+  ],
+  "test_get_node_labels": [
+    "jenkins"
+  ],
+  "test_add_node_labels": [
+    "jenkins"
+  ],
+  "test_add_list_node_labels": [
+    "jenkins"
+  ],
+  "test_modify_node_labels": [
+    "jenkins"
+  ],
+  "test_delete_list_node_labels": [
+    "jenkins"
+  ],
+  "test_dryrun_delete_list_node_labels": [
+    "jenkins"
+  ],
+  "test_set_executors": [
+    "jenkins"
+  ],
+  "test_set_master_executors": [
+    "jenkins"
+  ],
+  "test_offline_reason": [
+    "jenkins"
+  ],
+  "test_get_log_text": [
+    "jenkins"
+  ],
+  "test_get_credentials": [
+    "jenkins"
+  ],
+  "test_delete_inexistant_credential": [
+    "jenkins"
+  ],
+  "test_create_user_pass_credential": [
+    "jenkins"
+  ],
+  "test_update_user_pass_credential": [
+    "jenkins"
+  ],
+  "test_create_ssh_credential": [
+    "jenkins"
+  ],
+  "test_delete_credential": [
+    "jenkins"
+  ],
+  "test_create_secret_text_credential": [
+    "jenkins"
+  ],
+  "test_create_file_credential": [
+    "jenkins"
+  ],
+  "test_create_docker_server_credential": [
+    "jenkins"
+  ],
+  "test_change_description": [
+    "jenkins"
+  ],
+  "test_change_description_overwrite": [
+    "jenkins"
+  ],
+  "SPECIAL_CHAR_PASSWORD": [],
+  "SPECIAL_CHAR_USER": [],
+  "_create_user_with_special_chars": [
+    "jenkins_admin_admin"
+  ],
+  "_delete_user_with_special_chars": [
+    "jenkins_admin_admin"
+  ],
+  "jenkins_with_special_char_user": [
+    "launched_jenkins",
+    "jenkins_admin_admin"
+  ],
+  "test_special_char_password_auth_succeeds": [
+    "jenkins_with_special_char_user"
+  ],
+  "test_special_char_password_wrong_password_raises_401": [
+    "jenkins_with_special_char_user"
+  ],
+  "test_special_char_password_encoding_preserved": [
+    "jenkins_with_special_char_user"
+  ],
+  "T": [],
+  "retry": [
+    "max_attempts",
+    "initial_delay",
+    "max_delay",
+    "backoff_multiplier"
+  ],
+  "random_string": [
+    "length"
+  ],
+  "TestJobGetAllBuilds": {
+    "JOB1_DATA": [],
+    "JOB1_ALL_BUILDS_DATA": [],
+    "JOB1_API_URL": [],
+    "JOB2_DATA": [],
+    "JOB2_API_URL": [],
+    "JOB3_DATA": [],
+    "JOB3_ALL_BUILDS_DATA": [],
+    "JOB3_API_URL": [],
+    "URL_DATA": [],
+    "fakeGetData": [
+      "self",
+      "url",
+      "params",
+      "tree"
+    ],
+    "fakeGetDataTree": [
+      "self",
+      "url"
+    ],
+    "setUp": [
+      "self"
+    ],
+    "test_get_build_dict": [
+      "self"
+    ],
+    "test_incomplete_builds_list_will_call_jenkins_twice": [
+      "self"
+    ],
+    "test_lazy_builds_list_will_not_call_jenkins_twice": [
+      "self"
+    ],
+    "test_complete_builds_list_will_call_jenkins_once": [
+      "self"
+    ],
+    "test_nobuilds_get_build_dict": [
+      "self"
+    ],
+    "test_get_build_ids": [
+      "self"
+    ]
+  },
+  "jenkinsbase": [],
+  "test_called_in__poll": [
+    "jenkinsbase",
+    "monkeypatch",
+    "mocker"
+  ],
+  "test_no_folders": [
+    "jenkinsbase"
+  ],
+  "test_empty_folder": [
+    "jenkinsbase",
+    "monkeypatch",
+    "mocker"
+  ],
+  "test_folder_job_mix": [
+    "jenkinsbase",
+    "monkeypatch",
+    "mocker"
+  ],
+  "test_multiple_folders": [
+    "jenkinsbase",
+    "monkeypatch",
+    "mocker"
+  ],
+  "test_multiple_folder_levels": [
+    "jenkinsbase",
+    "monkeypatch",
+    "mocker"
+  ],
+  "dummy_md5": [],
+  "test_object_creation": [
+    "jenkins",
+    "dummy_md5",
+    "monkeypatch"
+  ],
+  "test_valid_for_404": [
+    "jenkins",
+    "dummy_md5",
+    "monkeypatch"
+  ],
+  "test_invalid_for_401": [
+    "jenkins",
+    "dummy_md5",
+    "monkeypatch"
+  ],
+  "test_json_with_null_values_parses_correctly": [],
+  "test_json_with_deeply_nested_null": [],
+  "test_json_loads_handles_normal_responses": [],
+  "_docker_client_or_skip": [],
+  "docker_jenkins": [
+    "docker_image",
+    "worker_id"
+  ],
+  "jenkins_client": [
+    "docker_jenkins"
+  ],
+  "TestDockerJenkins": {
+    "test_dump_plugin_versions_extracts_text_file": [
+      "self",
+      "tmp_path"
+    ],
+    "test_container_starts_successfully": [
+      "self",
+      "docker_jenkins"
+    ],
+    "test_jenkins_api_accessible": [
+      "self",
+      "jenkins_client"
+    ],
+    "test_get_jenkins_info": [
+      "self",
+      "jenkins_client"
+    ],
+    "test_dump_plugin_versions": [
+      "self",
+      "docker_jenkins",
+      "tmp_path"
+    ],
+    "test_restart_jenkins_service": [
+      "self",
+      "docker_jenkins",
+      "jenkins_client"
+    ],
+    "test_jenkins_available_after_restart": [
+      "self",
+      "docker_jenkins"
+    ],
+    "test_container_logs": [
+      "self",
+      "docker_jenkins"
+    ]
+  },
+  "TestDockerJenkinsJobCreation": {
+    "test_create_job": [
+      "self",
+      "jenkins_client"
+    ],
+    "test_list_jobs": [
+      "self",
+      "jenkins_client"
+    ]
+  },
+  "test_no_parameters_uses_default_values": [],
+  "test_all_named_parameters": [],
+  "test_mix_one_unnamed_named_parameters": [],
+  "test_mix_two_unnamed_named_parameters": [],
+  "test_mix_three_unnamed_named_parameters": [],
+  "test_mix_four_unnamed_named_parameters": [],
+  "test_mix_five_unnamed_named_parameters": [],
+  "test_all_unnamed_parameters": [],
+  "test_to_much_unnamed_parameters_raises_error": [],
+  "test_username_without_password_raises_error": [],
+  "test_password_without_username_raises_error": [],
+  "test_get_request_dict_auth": [],
+  "test_get_request_dict_cookie": [],
+  "test_get_request_dict_updatecookie": [],
+  "test_get_request_dict_nocookie": [],
+  "test_get_request_dict_wrong_params": [],
+  "test_get_request_dict_correct_params": [],
+  "test_get_request_dict_wrong_headers": [],
+  "test_get_request_dict_correct_headers": [],
+  "test_get_request_dict_data_passed": [],
+  "test_get_request_dict_data_not_passed": [],
+  "test_get_url_get": [
+    "monkeypatch"
+  ],
+  "test_get_url_post": [
+    "monkeypatch"
+  ],
+  "test_post_xml_empty_xml": [
+    "monkeypatch"
+  ],
+  "test_post_xml_and_confirm_status_some_xml": [
+    "monkeypatch"
+  ],
+  "test_post_and_confirm_status_empty_data": [
+    "monkeypatch"
+  ],
+  "test_post_and_confirm_status_some_data": [
+    "monkeypatch"
+  ],
+  "test_post_and_confirm_status_bad_result": [
+    "monkeypatch"
+  ],
+  "test_get_and_confirm_status": [
+    "monkeypatch"
+  ],
+  "test_get_and_confirm_status_bad_result": [
+    "monkeypatch"
+  ],
+  "test_configure_max_retries": [],
+  "DATA": [],
+  "TWO_JOBS_DATA": [],
+  "MULTIBRANCH_JOBS_DATA": [],
+  "SCAN_MULTIBRANCH_PIPELINE_LOG": [],
+  "test__clone": [
+    "jenkins"
+  ],
+  "test_stored_passwords": [
+    "jenkins"
+  ],
+  "test_create_new_job_fail": [
+    "mocker",
+    "monkeypatch"
+  ],
+  "test_create_multibranch_pipeline_job": [
+    "mocker",
+    "monkeypatch"
+  ],
+  "test_get_jenkins_obj_from_url": [
+    "mocker",
+    "monkeypatch"
+  ],
+  "test_get_jenkins_obj": [
+    "mocker",
+    "monkeypatch"
+  ],
+  "test_get_version": [
+    "monkeypatch"
+  ],
+  "test_get_version_nonexistent": [
+    "mocker"
+  ],
+  "test_get_create_url": [
+    "monkeypatch"
+  ],
+  "test_has_plugin": [
+    "monkeypatch"
+  ],
+  "test_get_use_auth_cookie": [
+    "mocker",
+    "monkeypatch"
+  ],
+  "test_jenkinsapi_version": [],
+  "JOB_DATA": [],
+  "URL_DATA": [],
+  "BUILD_DATA": [],
+  "BUILD_DATA_PIPELINE": [],
+  "BUILD_SCM_DATA": [],
+  "BUILD_ENV_VARS": [],
+  "PIPELINE_INPUT_ACTIONS": [],
+  "test_create_job_in_folder_path": [
+    "jenkins"
+  ],
+  "test_create_job_at_root": [
+    "jenkins"
+  ],
+  "test_normalizes_job_name_for_contains_and_getitem": [],
+  "TestPlugins": {
+    "DATA": [],
+    "setUp": [
+      "self",
+      "_poll_jenkins"
+    ],
+    "test_get_plugins": [
+      "self",
+      "_poll_plugins"
+    ],
+    "test_no_plugins_str": [
+      "self",
+      "_poll_plugins"
+    ],
+    "test_plugins_str": [
+      "self",
+      "_poll_plugins"
+    ],
+    "test_plugins_len": [
+      "self",
+      "_poll_plugins"
+    ],
+    "test_plugins_contains": [
+      "self",
+      "_poll_plugins"
+    ],
+    "test_plugins_values": [
+      "self",
+      "_poll_plugins"
+    ],
+    "test_plugins_keys": [
+      "self",
+      "_poll_plugins"
+    ],
+    "test_plugins_empty": [
+      "self",
+      "_poll_plugins"
+    ],
+    "test_plugin_get_by_name": [
+      "self",
+      "_poll_plugins"
+    ],
+    "test_get_plugin_details": [
+      "self",
+      "_poll_plugins"
+    ],
+    "test_install_plugin_bad_input": [
+      "self",
+      "_post"
+    ],
+    "test_delete_plugin_bad_input": [
+      "self",
+      "_post"
+    ],
+    "test_install_plugin_good_input": [
+      "self",
+      "_reboot",
+      "_post",
+      "_wait",
+      "_restart_required",
+      "already_installed",
+      "_poll_plugins",
+      "_center_dict"
+    ],
+    "test_install_plugins_good_input_no_restart_required": [
+      "self",
+      "_restart",
+      "_post",
+      "_wait",
+      "restart_required",
+      "already_installed",
+      "_poll_plugins",
+      "_center_dict"
+    ],
+    "test_install_plugins_good_input_with_restart_required": [
+      "self",
+      "_restart",
+      "_post",
+      "_wait",
+      "restart_required",
+      "already_installed",
+      "_poll_plugins",
+      "_center_dict"
+    ],
+    "test_get_plugin_dependencies": [
+      "self",
+      "_poll_plugins"
+    ],
+    "test_plugin_version_already_installed": [
+      "self",
+      "_poll_plugins",
+      "_update"
+    ],
+    "test_restart_required_after_plugin_installation": [
+      "self",
+      "status",
+      "_poll_plugins"
+    ],
+    "test_restart_not_required_after_plugin_installation": [
+      "self",
+      "status",
+      "_poll_plugins"
+    ],
+    "test_plugin_repr": [
+      "self"
+    ],
+    "test_downgrade_plugin_accepts_not_found_as_noop": [
+      "self",
+      "post",
+      "_poll_plugins"
+    ],
+    "test_unpin_plugin_accepts_not_found_as_noop": [
+      "self",
+      "post",
+      "_poll_plugins"
+    ]
+  },
+  "find_free_port": [
+    "start_port"
+  ],
+  "parse_worker_id": [
+    "worker_id"
+  ],
+  "generate_container_name": [
+    "worker_id",
+    "base_name"
+  ],
+  "view": [
+    "_view_poll",
+    "_job_poll",
+    "jenkins"
+  ],
+  "jenkins_patch": [],
+  "busy_patch": [],
+  "TestView": {
+    "test_returns_name_when_repr_is_called": [
+      "self",
+      "view"
+    ],
+    "test_returns_name_when_str_method_called": [
+      "self",
+      "view"
+    ],
+    "test_raises_error_when_is_called": [
+      "self",
+      "view"
+    ],
+    "test_returns_name_when_name_property_is_called": [
+      "self",
+      "view"
+    ],
+    "test_iteritems": [
+      "self",
+      "_poll",
+      "view"
+    ],
+    "test_returns_dict_of_job_info_when_job_dict_method_called": [
+      "self",
+      "view"
+    ],
+    "test_returns_len_when_len_is_called": [
+      "self",
+      "view"
+    ],
+    "test_getitem": [
+      "self",
+      "_poll",
+      "view"
+    ],
+    "test_sets_delete_to_true_when_deleted": [
+      "self",
+      "view"
+    ],
+    "test_returns_url_when_get_job_url_is_called": [
+      "self",
+      "view"
+    ],
+    "test_get_job_url_uses_job_name": [
+      "self",
+      "view"
+    ],
+    "test_raises_not_found_when_get_job_url_is_invalid": [
+      "self",
+      "view"
+    ],
+    "test_returns_false_when_adding_wrong_job": [
+      "self",
+      "_get_jenkins",
+      "view",
+      "jenkins_patch"
+    ],
+    "test_returns_false_when_add_existing_job": [
+      "self",
+      "view"
+    ],
+    "test_get_nested_view_dict": [
+      "self",
+      "view"
+    ],
+    "test_returns_jenkins_obj_when_get_jenkins_obj_is_called": [
+      "self",
+      "view"
+    ]
+  },
+  "TestKeys": {
+    "test_returns_key_when_called": [
+      "self",
+      "view"
+    ]
+  },
+  "TestAddJob": {
+    "test_returns_true_when_no_job_provided": [
+      "self",
+      "_poll",
+      "view"
+    ],
+    "test_returns_false_when_already_registered": [
+      "self",
+      "_poll",
+      "view"
+    ],
+    "test_returns_false_when_jenkins_has_job": [
+      "self",
+      "_get_jenkins",
+      "view",
+      "jenkins_patch"
+    ],
+    "test_returns_true_when_jenkins_has_job": [
+      "self",
+      "_poll",
+      "_get_jenkins",
+      "view",
+      "jenkins"
+    ]
+  },
+  "TestRemove": {
+    "test_returns_true_when_job_has_been_removed": [
+      "self",
+      "_poll",
+      "view"
+    ],
+    "test_returns_false_when_job_does_not_exist": [
+      "self",
+      "_poll",
+      "view"
+    ]
+  },
+  "validate_retry_check": [
+    "retry_config",
+    "pass_index",
+    "expected_sleep_count",
+    "expected_pass"
+  ],
+  "test_simple_retry_check": [],
+  "test_simple_retry_check_fail": [],
+  "test_repr": [],
+  "DATAM": [],
+  "DATA0": [],
+  "DATA1": [],
+  "DATA2": [],
+  "DATA3": [],
+  "EXEC0": [],
+  "EXEC1": [],
+  "test_check_url": [
+    "jenkins"
+  ],
+  "testis_idle": [
+    "jenkins",
+    "monkeypatch"
+  ],
+  "test_likely_stuck": [
+    "jenkins",
+    "monkeypatch"
+  ],
+  "test_get_current_executable": [
+    "jenkins",
+    "monkeypatch"
+  ],
+  "test_main_requires_at_least_one_job": [
+    "monkeypatch",
+    "capsys"
+  ],
+  "test_help_text_is_actionable": [
+    "capsys"
+  ],
+  "test_parser_uses_environment_defaults": [
+    "monkeypatch"
+  ],
+  "test_resolve_password_prompts_in_interactive_terminal": [],
+  "test_main_errors_for_non_interactive_missing_password": [
+    "monkeypatch",
+    "capsys"
+  ],
+  "test_invokes_each_requested_job": [
+    "monkeypatch"
+  ],
+  "job": [
+    "monkeypatch",
+    "jenkins"
+  ],
+  "build": [
+    "job",
+    "monkeypatch"
+  ],
+  "build_pipeline": [
+    "job",
+    "monkeypatch"
+  ],
+  "test_timestamp": [
+    "build"
+  ],
+  "test_name": [
+    "build"
+  ],
+  "test_duration": [
+    "build"
+  ],
+  "test_get_causes": [
+    "build"
+  ],
+  "test_get_changeset": [
+    "build"
+  ],
+  "test_get_changeset_pipeline": [
+    "build_pipeline"
+  ],
+  "test_get_description": [
+    "build"
+  ],
+  "test_get_slave": [
+    "build"
+  ],
+  "test_get_revision_no_scm": [
+    "build"
+  ],
+  "test_downstream": [
+    "build"
+  ],
+  "test_get_params": [
+    "build"
+  ],
+  "test_get_build_url": [
+    "build"
+  ],
+  "test_get_params_different_order": [
+    "build"
+  ],
+  "test_only_ParametersAction_parameters_considered": [
+    "build"
+  ],
+  "test_ParametersWithNoValueSetValueNone_issue_583": [
+    "build"
+  ],
+  "test_build_env_vars": [
+    "monkeypatch",
+    "build"
+  ],
+  "test_build_env_vars_wo_injected_env_vars_plugin": [
+    "monkeypatch",
+    "build"
+  ],
+  "test_build_env_vars_other_exception": [
+    "monkeypatch",
+    "build"
+  ],
+  "test_build_get_status": [
+    "build"
+  ],
+  "test_build_get_params_return_empty_dict": [
+    "build"
+  ],
+  "test_build_get_changeset_empty": [
+    "build"
+  ],
+  "test_build_get_changesets_vcs": [
+    "build"
+  ],
+  "test_build_get_number": [
+    "build"
+  ],
+  "test_is_good_returns_true_for_successful_completed_build": [
+    "build"
+  ],
+  "test_is_good_returns_false_when_running": [
+    "build",
+    "monkeypatch"
+  ],
+  "test_is_good_polls_fresh_data": [
+    "build",
+    "monkeypatch"
+  ],
+  "test_build_get_artifacts": [
+    "build"
+  ],
+  "test_build_get_upstream_job_name": [
+    "build"
+  ],
+  "test_build_get_ustream_job_name_none": [
+    "build"
+  ],
+  "test_build_get_master_job_name": [
+    "build"
+  ],
+  "test_build_get_master_build_number": [
+    "build"
+  ],
+  "test_get_stages_pipeline": [
+    "build_pipeline"
+  ],
+  "test_get_stages_non_pipeline": [
+    "build"
+  ],
+  "test_get_stages_missing_data": [
+    "build"
+  ],
+  "_assert_python_files_compile": [
+    "directory"
+  ],
+  "test_how_to_examples_are_valid_python": [],
+  "test_low_level_examples_are_valid_python": [],
+  "artifact": [
+    "mocker"
+  ],
+  "test_verify_download_valid_positive": [
+    "artifact",
+    "monkeypatch"
+  ],
+  "test_verify_download_valid_positive_with_rename": [
+    "artifact",
+    "monkeypatch"
+  ],
+  "test_verify_download_valid_negative": [
+    "artifact",
+    "monkeypatch"
+  ],
+  "test_verify_dl_valid_negative_strict": [
+    "artifact",
+    "monkeypatch"
+  ],
+  "test_verify_download_invalid": [
+    "artifact",
+    "monkeypatch"
+  ],
+  "ArtifactTest": {
+    "setUp": [
+      "self"
+    ],
+    "test_save_has_valid_local_copy": [
+      "self",
+      "mock_exists"
+    ],
+    "test_save_has_invalid_local_copy_dl_again": [
+      "self",
+      "mock_exists"
+    ],
+    "test_has_invalid_lcl_copy_dl_but_invalid": [
+      "self",
+      "mock_exists"
+    ],
+    "test_save_has_no_local_copy": [
+      "self",
+      "mock_exists"
+    ]
+  },
+  "test_git_scm": [
+    "build"
+  ],
+  "test_git_revision_branch": [
+    "build"
+  ],
+  "test_git_repo_url": [
+    "build"
+  ],
+  "MONITOR_FIELDS": [],
+  "get_monitor_expected_value": [
+    "field_key"
+  ],
+  "node": [
+    "monkeypatch",
+    "mocker"
+  ],
+  "test_online": [
+    "node"
+  ],
+  "test_monitor_methods": [
+    "node",
+    "field_key",
+    "method_name"
+  ],
+  "test_architecture": [
+    "node"
+  ],
+  "test_get_monitor_data": [
+    "node",
+    "field_key"
+  ],
+  "test_get_monitor_data_with_poll_false": [
+    "node"
+  ],
+  "test_get_monitor_data_nonexistent_monitor": [
+    "node"
+  ],
+  "MockResponse": {
+    "__init__": [
+      "self",
+      "content"
+    ]
+  },
+  "test_nodes_poll_uses_tree_parameter": [
+    "monkeypatch"
+  ],
+  "test_nodes_default_tree_when_none_specified": [
+    "monkeypatch"
+  ],
+  "queue": [
+    "monkeypatch"
+  ],
+  "test_queue_items_for_job_normalizes_path": [
+    "queue"
+  ],
+  "TestResultSet": {
+    "DATA": [],
+    "setUp": [
+      "self",
+      "_poll"
+    ],
+    "testRepr": [
+      "self"
+    ],
+    "testName": [
+      "self"
+    ],
+    "testBuildComponents": [
+      "self"
+    ]
+  },
+  "CFG_NODE": [],
+  "TestHgJob": {
+    "JOB_DATA": [],
+    "URL_DATA": [],
+    "fakeGetData": [
+      "self",
+      "url"
+    ],
+    "setUp": [
+      "self"
+    ],
+    "configtree_with_branch": [
+      "self"
+    ],
+    "configtree_with_default_branch": [
+      "self"
+    ],
+    "configtree_multibranch_git": [
+      "self"
+    ],
+    "test_hg_attributes": [
+      "self"
+    ],
+    "test_hg_attributes_default_branch": [
+      "self"
+    ],
+    "test_git_attributes_multibranch": [
+      "self"
+    ]
+  },
+  "job_tree": [
+    "jenkins",
+    "monkeypatch"
+  ],
+  "job_tree_empty": [
+    "jenkins",
+    "monkeypatch"
+  ],
+  "test_next_build_number": [
+    "job"
+  ],
+  "test_lastcompleted_build_number": [
+    "job"
+  ],
+  "test_lastgood_build_number": [
+    "job"
+  ],
+  "test_special_urls": [
+    "job"
+  ],
+  "test_get_build_triggerurl": [
+    "job"
+  ],
+  "test_wrong__mk_json_from_build_parameters": [
+    "job"
+  ],
+  "test_unicode_mk_json": [
+    "job"
+  ],
+  "test_wrong_field__build_id_for_type": [
+    "job"
+  ],
+  "test_get_last_good_buildnumber": [
+    "job"
+  ],
+  "test_get_last_stable_buildnumber": [
+    "job"
+  ],
+  "test_get_last_failed_buildnumber": [
+    "job"
+  ],
+  "test_get_last_buildnumber": [
+    "job"
+  ],
+  "test_get_last_completed_buildnumber": [
+    "job"
+  ],
+  "test_get_build_dict": [
+    "job_tree"
+  ],
+  "test_get_build_metadata": [
+    "job_tree"
+  ],
+  "test_nobuilds_get_build_dict": [
+    "job_tree_empty"
+  ],
+  "test_get_build_ids": [
+    "job"
+  ],
+  "test_nobuilds_get_revision_dict": [
+    "jenkins",
+    "monkeypatch"
+  ],
+  "test_nobuilds_get_last_build": [
+    "jenkins",
+    "monkeypatch"
+  ],
+  "test__add_missing_builds_not_all_loaded": [
+    "jenkins",
+    "monkeypatch"
+  ],
+  "test__add_missing_builds_no_first_build": [
+    "job",
+    "mocker"
+  ],
+  "test__add_missing_builds_no_builds": [
+    "job",
+    "mocker"
+  ],
+  "test_get_params_list": [
+    "job"
+  ],
+  "json_equal": [
+    "json_a",
+    "json_b"
+  ],
+  "test_get_json_for_single_param": [],
+  "test_get_json_for_many_params": [],
+  "test__mk_json_from_build_parameters": [
+    "job"
+  ],
+  "test_wrong_mk_json_from_build_parameters": [
+    "job"
+  ],
+  "test_update_config_accepts_bytes": [
+    "job",
+    "mocker"
+  ],
+  "test_change_description_same_value_is_noop": [
+    "job",
+    "mocker"
+  ],
+  "test_set_concurrent_builds_same_value_is_noop": [
+    "job",
+    "mocker"
+  ],
+  "test_wipe_out_workspace_posts_expected_url": [
+    "job",
+    "mocker"
+  ],
+  "test_trigger_scm_poll_posts_expected_url": [
+    "job",
+    "mocker"
+  ],
+  "test_restrict_to_node_sets_assigned_node_and_disables_roaming": [
+    "job",
+    "mocker"
+  ],
+  "test_get_build_by_params": [
+    "jenkins",
+    "monkeypatch",
+    "mocker"
+  ],
+  "test_get_build_by_params_not_found": [
+    "jenkins",
+    "monkeypatch",
+    "mocker"
+  ],
+  "test_credentials_property": [
+    "job",
+    "monkeypatch"
+  ],
+  "DATA_JOB_NAMES": [],
+  "DATA_JOBS": [],
+  "label": [
+    "monkeypatch",
+    "mocker"
+  ],
+  "test_get_tied_job_names": [
+    "label"
+  ],
+  "nodes": [
+    "monkeypatch"
+  ],
+  "fake_node_poll": [
+    "self",
+    "tree"
+  ],
+  "test_baseurl": [
+    "nodes"
+  ],
+  "test_get_master_node": [
+    "nodes",
+    "monkeypatch"
+  ],
+  "test_get_nonmaster_node": [
+    "nodes",
+    "monkeypatch"
+  ],
+  "test_iterkeys": [
+    "nodes"
+  ],
+  "test_keys": [
+    "nodes"
+  ],
+  "items_test_case": [
+    "nodes_method",
+    "monkeypatch"
+  ],
+  "test_iteritems": [
+    "nodes",
+    "monkeypatch"
+  ],
+  "test_items": [
+    "nodes",
+    "monkeypatch"
+  ],
+  "values_test_case": [
+    "nodes_method",
+    "monkeypatch"
+  ],
+  "test_itervalues": [
+    "nodes",
+    "monkeypatch"
+  ],
+  "test_values": [
+    "nodes",
+    "monkeypatch"
+  ],
+  "test_make_credential_recognizes_docker_x509_type": [],
+  "test_file_credentials_create_files_payload_decodes_secret_bytes": [],
+  "Build": {
+    "STR_TOTALCOUNT": [],
+    "STR_TPL_NOTESTS_ERR": [],
+    "__init__": [
+      "self",
+      "url",
+      "buildno",
+      "job",
+      "depth"
+    ],
+    "_poll": [
+      "self",
+      "tree"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "name": [
+      "self"
+    ],
+    "get_description": [
+      "self"
+    ],
+    "get_number": [
+      "self"
+    ],
+    "get_status": [
+      "self"
+    ],
+    "get_slave": [
+      "self"
+    ],
+    "get_revision": [
+      "self"
+    ],
+    "get_revision_branch": [
+      "self"
+    ],
+    "get_repo_url": [
+      "self"
+    ],
+    "get_params": [
+      "self"
+    ],
+    "get_changeset_items": [
+      "self"
+    ],
+    "_get_vcs": [
+      "self"
+    ],
+    "_get_git_rev": [
+      "self"
+    ],
+    "_get_git_rev_branch": [
+      "self"
+    ],
+    "_get_git_repo_url": [
+      "self"
+    ],
+    "get_duration": [
+      "self"
+    ],
+    "get_build_url": [
+      "self"
+    ],
+    "get_artifacts": [
+      "self"
+    ],
+    "get_artifact_dict": [
+      "self"
+    ],
+    "get_upstream_job_name": [
+      "self"
+    ],
+    "get_upstream_job": [
+      "self"
+    ],
+    "get_upstream_build_number": [
+      "self"
+    ],
+    "get_upstream_build": [
+      "self"
+    ],
+    "get_master_job_name": [
+      "self"
+    ],
+    "get_master_job": [
+      "self"
+    ],
+    "get_master_build_number": [
+      "self"
+    ],
+    "get_master_build": [
+      "self"
+    ],
+    "get_downstream_jobs": [
+      "self"
+    ],
+    "get_downstream_job_names": [
+      "self"
+    ],
+    "get_downstream_builds": [
+      "self"
+    ],
+    "get_matrix_runs": [
+      "self"
+    ],
+    "is_running": [
+      "self"
+    ],
+    "block": [
+      "self"
+    ],
+    "is_good": [
+      "self"
+    ],
+    "block_until_complete": [
+      "self",
+      "delay"
+    ],
+    "get_jenkins_obj": [
+      "self"
+    ],
+    "get_result_url": [
+      "self"
+    ],
+    "get_resultset": [
+      "self"
+    ],
+    "has_resultset": [
+      "self"
+    ],
+    "get_actions": [
+      "self"
+    ],
+    "get_causes": [
+      "self"
+    ],
+    "get_timestamp": [
+      "self"
+    ],
+    "get_console": [
+      "self"
+    ],
+    "stream_logs": [
+      "self",
+      "interval"
+    ],
+    "get_estimated_duration": [
+      "self"
+    ],
+    "stop": [
+      "self"
+    ],
+    "get_env_vars": [
+      "self"
+    ],
+    "set_description": [
+      "self",
+      "description"
+    ],
+    "get_pending_input_actions": [
+      "self"
+    ],
+    "proceed_input": [
+      "self",
+      "input_id"
+    ],
+    "abort_input": [
+      "self",
+      "input_id"
+    ],
+    "toggle_keep": [
+      "self"
+    ],
+    "is_kept_forever": [
+      "self"
+    ],
+    "get_stages": [
+      "self"
+    ]
+  },
+  "JENKINS_API": [],
+  "LOAD_TIMEOUT": [],
+  "Fingerprint": {
+    "RE_MD5": [],
+    "__init__": [
+      "self",
+      "baseurl",
+      "id_",
+      "jenkins_obj"
+    ],
+    "get_jenkins_obj": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "valid": [
+      "self"
+    ],
+    "validate_for_build": [
+      "self",
+      "filename",
+      "job",
+      "build"
+    ],
+    "validate": [
+      "self"
+    ],
+    "get_info": [
+      "self"
+    ]
+  },
+  "Artifact": {
+    "__init__": [
+      "self",
+      "filename",
+      "url",
+      "build",
+      "relative_path"
+    ],
+    "save": [
+      "self",
+      "fspath",
+      "strict_validation"
+    ],
+    "get_jenkins_obj": [
+      "self"
+    ],
+    "get_data": [
+      "self"
+    ],
+    "_do_download": [
+      "self",
+      "fspath"
+    ],
+    "_verify_download": [
+      "self",
+      "fspath",
+      "strict_validation"
+    ],
+    "_md5sum": [
+      "self",
+      "fspath",
+      "chunksize"
+    ],
+    "save_to_dir": [
+      "self",
+      "dirpath",
+      "strict_validation"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "Jobs": {
+    "__init__": [
+      "self",
+      "jenkins"
+    ],
+    "_del_data": [
+      "self",
+      "job_name"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "poll": [
+      "self",
+      "tree"
+    ],
+    "__delitem__": [
+      "self",
+      "job_name"
+    ],
+    "__setitem__": [
+      "self",
+      "key",
+      "value"
+    ],
+    "__getitem__": [
+      "self",
+      "job_name"
+    ],
+    "iteritems": [
+      "self"
+    ],
+    "__contains__": [
+      "self",
+      "job_name"
+    ],
+    "iterkeys": [
+      "self"
+    ],
+    "itervalues": [
+      "self"
+    ],
+    "keys": [
+      "self"
+    ],
+    "create": [
+      "self",
+      "job_name",
+      "config"
+    ],
+    "create_multibranch_pipeline": [
+      "self",
+      "job_name",
+      "config",
+      "block",
+      "delay"
+    ],
+    "copy": [
+      "self",
+      "job_name",
+      "new_job_name"
+    ],
+    "_normalize_job_name": [
+      "job_name"
+    ],
+    "_split_job_name": [
+      "self",
+      "job_name"
+    ],
+    "_get_full_name_from_row": [
+      "self",
+      "row"
+    ],
+    "_job_row_matches_name": [
+      "self",
+      "row",
+      "normalized_name"
+    ],
+    "_get_create_url": [
+      "self",
+      "folder_parts"
+    ],
+    "_build_job_url": [
+      "self",
+      "full_name"
+    ],
+    "rename": [
+      "self",
+      "job_name",
+      "new_job_name"
+    ],
+    "build": [
+      "self",
+      "job_name",
+      "params"
+    ]
+  },
+  "Label": {
+    "__init__": [
+      "self",
+      "baseurl",
+      "labelname",
+      "jenkins_obj"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "get_jenkins_obj": [
+      "self"
+    ],
+    "is_online": [
+      "self"
+    ],
+    "get_tied_jobs": [
+      "self"
+    ],
+    "get_tied_job_names": [
+      "self"
+    ]
+  },
+  "Nodes": {
+    "__init__": [
+      "self",
+      "baseurl",
+      "jenkins_obj"
+    ],
+    "get_jenkins_obj": [
+      "self"
+    ],
+    "_poll": [
+      "self",
+      "tree"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__contains__": [
+      "self",
+      "node_name"
+    ],
+    "iterkeys": [
+      "self"
+    ],
+    "keys": [
+      "self"
+    ],
+    "_make_node": [
+      "self",
+      "nodename"
+    ],
+    "iteritems": [
+      "self"
+    ],
+    "items": [
+      "self"
+    ],
+    "itervalues": [
+      "self"
+    ],
+    "values": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "nodename"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "__delitem__": [
+      "self",
+      "item"
+    ],
+    "__setitem__": [
+      "self",
+      "name",
+      "node_dict"
+    ],
+    "create_node": [
+      "self",
+      "name",
+      "node_dict"
+    ],
+    "create_node_with_config": [
+      "self",
+      "name",
+      "config"
+    ]
+  },
+  "JenkinsAPIException": {},
+  "NotFound": {},
+  "ArtifactsMissing": {},
+  "UnknownJob": {},
+  "UnknownView": {},
+  "UnknownNode": {},
+  "UnknownQueueItem": {},
+  "UnknownPlugin": {},
+  "NoBuildData": {},
+  "NotBuiltYet": {},
+  "ArtifactBroken": {},
+  "TimeOut": {},
+  "NoResults": {},
+  "FailedNoResults": {},
+  "BadURL": {},
+  "NotAuthorized": {},
+  "NotSupportSCM": {},
+  "NotConfiguredSCM": {},
+  "NotInQueue": {},
+  "PostRequired": {},
+  "BadParams": {},
+  "AlreadyExists": {},
+  "Executor": {
+    "__init__": [
+      "self",
+      "baseurl",
+      "nodename",
+      "jenkins_obj",
+      "number"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "get_jenkins_obj": [
+      "self"
+    ],
+    "get_progress": [
+      "self"
+    ],
+    "get_number": [
+      "self"
+    ],
+    "is_idle": [
+      "self"
+    ],
+    "likely_stuck": [
+      "self"
+    ],
+    "get_current_executable": [
+      "self"
+    ]
+  },
+  "logger": [],
+  "JenkinsBase": {
+    "__repr__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__init__": [
+      "self",
+      "baseurl",
+      "poll"
+    ],
+    "get_jenkins_obj": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "strip_trailing_slash": [
+      "cls",
+      "url"
+    ],
+    "poll": [
+      "self",
+      "tree"
+    ],
+    "_poll": [
+      "self",
+      "tree"
+    ],
+    "get_data": [
+      "self",
+      "url",
+      "params",
+      "tree"
+    ],
+    "pprint": [
+      "self"
+    ],
+    "resolve_job_folders": [
+      "self",
+      "jobs"
+    ],
+    "process_job_folder": [
+      "self",
+      "folder",
+      "folder_path"
+    ],
+    "python_api_url": [
+      "cls",
+      "url"
+    ]
+  },
+  "Credentials": {
+    "__init__": [
+      "self",
+      "baseurl",
+      "jenkins_obj",
+      "poll"
+    ],
+    "_poll": [
+      "self",
+      "tree"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "get_jenkins_obj": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__contains__": [
+      "self",
+      "description"
+    ],
+    "iterkeys": [
+      "self"
+    ],
+    "keys": [
+      "self"
+    ],
+    "iteritems": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "description"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "__setitem__": [
+      "self",
+      "description",
+      "credential"
+    ],
+    "get": [
+      "self",
+      "item",
+      "default"
+    ],
+    "__delitem__": [
+      "self",
+      "description"
+    ],
+    "_make_credential": [
+      "self",
+      "cred_dict"
+    ]
+  },
+  "Credentials2x": {
+    "_poll": [
+      "self",
+      "tree"
+    ]
+  },
+  "CredentialsById": {
+    "__iter__": [
+      "self"
+    ],
+    "__contains__": [
+      "self",
+      "credential_id"
+    ],
+    "iteritems": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "credential_id"
+    ]
+  },
+  "Plugins": {
+    "__init__": [
+      "self",
+      "url",
+      "jenkins_obj"
+    ],
+    "get_jenkins_obj": [
+      "self"
+    ],
+    "check_updates_server": [
+      "self"
+    ],
+    "update_center_dict": [
+      "self"
+    ],
+    "_poll": [
+      "self",
+      "tree"
+    ],
+    "keys": [
+      "self"
+    ],
+    "__iter__": [],
+    "iteritems": [
+      "self"
+    ],
+    "values": [
+      "self"
+    ],
+    "_get_plugins": [
+      "self"
+    ],
+    "get_plugins_dict": [
+      "self"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "plugin_name"
+    ],
+    "__setitem__": [
+      "self",
+      "shortName",
+      "plugin"
+    ],
+    "_install_plugin_from_updatecenter": [
+      "self",
+      "plugin"
+    ],
+    "update_center_install_status": [
+      "self"
+    ],
+    "restart_required": [
+      "self"
+    ],
+    "_install_specific_version": [
+      "self",
+      "plugin"
+    ],
+    "_get_plugin_dependencies": [
+      "self",
+      "downloaded_plugin"
+    ],
+    "_download_plugin": [
+      "self",
+      "download_link"
+    ],
+    "_plugin_has_finished_installation": [
+      "self",
+      "plugin"
+    ],
+    "plugin_version_is_being_installed": [
+      "self",
+      "plugin"
+    ],
+    "plugin_version_already_installed": [
+      "self",
+      "plugin"
+    ],
+    "__delitem__": [
+      "self",
+      "shortName"
+    ],
+    "_wait_until_plugin_installed": [
+      "self",
+      "plugin",
+      "maxwait",
+      "interval"
+    ],
+    "enable_plugin": [
+      "self",
+      "shortName"
+    ],
+    "downgrade_plugin": [
+      "self",
+      "shortName"
+    ],
+    "disable_plugin": [
+      "self",
+      "shortName"
+    ],
+    "unpin_plugin": [
+      "self",
+      "shortName"
+    ],
+    "__contains__": [
+      "self",
+      "plugin_name"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "MutableJenkinsThing": {
+    "get_delete_url": [
+      "self"
+    ],
+    "get_rename_url": [
+      "self"
+    ]
+  },
+  "Node": {
+    "__init__": [
+      "self",
+      "jenkins_obj",
+      "baseurl",
+      "nodename",
+      "node_dict",
+      "poll"
+    ],
+    "get_node_attributes": [
+      "self"
+    ],
+    "get_jenkins_obj": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "is_online": [
+      "self"
+    ],
+    "is_temporarily_offline": [
+      "self"
+    ],
+    "is_jnlpagent": [
+      "self"
+    ],
+    "is_idle": [
+      "self"
+    ],
+    "set_online": [
+      "self"
+    ],
+    "set_offline": [
+      "self",
+      "message"
+    ],
+    "launch": [
+      "self"
+    ],
+    "toggle_temporarily_offline": [
+      "self",
+      "message"
+    ],
+    "update_offline_reason": [
+      "self",
+      "reason"
+    ],
+    "offline_reason": [
+      "self"
+    ],
+    "_et": [
+      "self"
+    ],
+    "_get_config_element_tree": [
+      "self"
+    ],
+    "get_config": [
+      "self"
+    ],
+    "load_config": [
+      "self"
+    ],
+    "upload_config": [
+      "self",
+      "config_xml"
+    ],
+    "get_labels": [
+      "self"
+    ],
+    "add_labels": [
+      "self",
+      "labels",
+      "dryRun"
+    ],
+    "modify_labels": [
+      "self",
+      "new_labels",
+      "dryRun"
+    ],
+    "delete_labels": [
+      "self",
+      "labels_to_remove",
+      "dryRun"
+    ],
+    "get_num_executors": [
+      "self"
+    ],
+    "set_num_executors": [
+      "self",
+      "value"
+    ],
+    "change_mode": [
+      "self",
+      "mode"
+    ],
+    "get_config_element": [
+      "self",
+      "el_name"
+    ],
+    "set_config_element": [
+      "self",
+      "el_name",
+      "value"
+    ],
+    "get_monitor": [
+      "self",
+      "monitor_name",
+      "poll_monitor"
+    ],
+    "_MONITOR_FIELDS": [],
+    "get_monitor_data": [
+      "self",
+      "monitor_name",
+      "item",
+      "poll_monitor"
+    ],
+    "get_architecture": [
+      "self"
+    ],
+    "get_log_text": [
+      "self"
+    ],
+    "block_until_idle": [
+      "self",
+      "timeout",
+      "poll_time"
+    ]
+  },
+  "_make_monitor_method": [
+    "method_name",
+    "monitor_name",
+    "field_name",
+    "doc"
+  ],
+  "Executors": {
+    "__init__": [
+      "self",
+      "baseurl",
+      "nodename",
+      "jenkins"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "get_jenkins_obj": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ]
+  },
+  "Views": {
+    "LIST_VIEW": [],
+    "NESTED_VIEW": [],
+    "CATEGORIZED_VIEW": [],
+    "MY_VIEW": [],
+    "DASHBOARD_VIEW": [],
+    "PIPELINE_VIEW": [],
+    "__init__": [
+      "self",
+      "jenkins"
+    ],
+    "poll": [
+      "self",
+      "tree"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "__delitem__": [
+      "self",
+      "view_name"
+    ],
+    "__setitem__": [
+      "self",
+      "view_name",
+      "job_names_list"
+    ],
+    "__getitem__": [
+      "self",
+      "view_name"
+    ],
+    "iteritems": [
+      "self"
+    ],
+    "__contains__": [
+      "self",
+      "view_name"
+    ],
+    "iterkeys": [
+      "self"
+    ],
+    "keys": [
+      "self"
+    ],
+    "create": [
+      "self",
+      "view_name",
+      "view_type",
+      "config"
+    ]
+  },
+  "SVN_URL": [],
+  "GIT_URL": [],
+  "HG_URL": [],
+  "GIT_BRANCH": [],
+  "HG_BRANCH": [],
+  "DEFAULT_HG_BRANCH_NAME": [],
+  "Job": {
+    "__init__": [
+      "self",
+      "url",
+      "name",
+      "jenkins_obj"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "get_description": [
+      "self"
+    ],
+    "get_jenkins_obj": [
+      "self"
+    ],
+    "credentials": [
+      "self"
+    ],
+    "_get_hg_branch": [
+      "self",
+      "element_tree"
+    ],
+    "poll": [
+      "self",
+      "tree"
+    ],
+    "_add_missing_builds": [
+      "self",
+      "data"
+    ],
+    "_get_config_element_tree": [
+      "self"
+    ],
+    "get_build_triggerurl": [
+      "self"
+    ],
+    "_mk_json_from_build_parameters": [
+      "build_params",
+      "file_params"
+    ],
+    "mk_json_from_build_parameters": [
+      "build_params",
+      "file_params"
+    ],
+    "invoke": [
+      "self",
+      "securitytoken",
+      "block",
+      "build_params",
+      "cause",
+      "files",
+      "delay",
+      "quiet_period"
+    ],
+    "_buildid_for_type": [
+      "self",
+      "buildtype"
+    ],
+    "get_first_buildnumber": [
+      "self"
+    ],
+    "get_last_stable_buildnumber": [
+      "self"
+    ],
+    "get_last_good_buildnumber": [
+      "self"
+    ],
+    "get_last_failed_buildnumber": [
+      "self"
+    ],
+    "get_last_buildnumber": [
+      "self"
+    ],
+    "get_last_completed_buildnumber": [
+      "self"
+    ],
+    "get_build_dict": [
+      "self"
+    ],
+    "get_build_by_params": [
+      "self",
+      "build_params",
+      "order"
+    ],
+    "get_revision_dict": [
+      "self"
+    ],
+    "get_build_ids": [
+      "self"
+    ],
+    "get_next_build_number": [
+      "self"
+    ],
+    "get_last_stable_build": [
+      "self"
+    ],
+    "get_last_good_build": [
+      "self"
+    ],
+    "get_last_build": [
+      "self"
+    ],
+    "get_first_build": [
+      "self"
+    ],
+    "get_last_build_or_none": [
+      "self"
+    ],
+    "get_last_completed_build": [
+      "self"
+    ],
+    "get_buildnumber_for_revision": [
+      "self",
+      "revision",
+      "refresh"
+    ],
+    "get_build": [
+      "self",
+      "buildnumber"
+    ],
+    "delete_build": [
+      "self",
+      "build_number"
+    ],
+    "get_build_metadata": [
+      "self",
+      "buildnumber"
+    ],
+    "__delitem__": [
+      "self",
+      "build_number"
+    ],
+    "__getitem__": [
+      "self",
+      "buildnumber"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "is_queued_or_running": [
+      "self"
+    ],
+    "is_queued": [
+      "self"
+    ],
+    "get_queue_item": [
+      "self"
+    ],
+    "is_running": [
+      "self"
+    ],
+    "get_config": [
+      "self"
+    ],
+    "load_config": [
+      "self"
+    ],
+    "get_scm_type": [
+      "self"
+    ],
+    "get_scm_url": [
+      "self"
+    ],
+    "get_scm_branch": [
+      "self"
+    ],
+    "modify_scm_branch": [
+      "self",
+      "new_branch",
+      "old_branch"
+    ],
+    "modify_scm_url": [
+      "self",
+      "new_source_url",
+      "old_source_url"
+    ],
+    "get_config_xml_url": [
+      "self"
+    ],
+    "update_config": [
+      "self",
+      "config",
+      "full_response",
+      "encoding"
+    ],
+    "get_downstream_jobs": [
+      "self"
+    ],
+    "get_downstream_job_names": [
+      "self"
+    ],
+    "get_upstream_job_names": [
+      "self"
+    ],
+    "get_upstream_jobs": [
+      "self"
+    ],
+    "is_enabled": [
+      "self"
+    ],
+    "disable": [
+      "self"
+    ],
+    "enable": [
+      "self"
+    ],
+    "delete_from_queue": [
+      "self"
+    ],
+    "get_params": [
+      "self"
+    ],
+    "get_params_list": [
+      "self"
+    ],
+    "has_params": [
+      "self"
+    ],
+    "has_queued_build": [
+      "self",
+      "build_params"
+    ],
+    "get_full_name_from_url_and_baseurl": [
+      "url",
+      "baseurl"
+    ],
+    "get_full_name": [
+      "self"
+    ],
+    "toggle_keep_build": [
+      "self",
+      "build_number"
+    ],
+    "recreate": [
+      "self"
+    ],
+    "wipe_out_workspace": [
+      "self"
+    ],
+    "trigger_scm_poll": [
+      "self"
+    ],
+    "change_description": [
+      "self",
+      "description"
+    ],
+    "set_concurrent_builds": [
+      "self",
+      "enabled"
+    ],
+    "block_build_when_downstream_building": [
+      "self"
+    ],
+    "unblock_build_when_downstream_building": [
+      "self"
+    ],
+    "block_build_when_upstream_building": [
+      "self"
+    ],
+    "unblock_build_when_upstream_building": [
+      "self"
+    ],
+    "_set_build_block": [
+      "self",
+      "element_name",
+      "block"
+    ],
+    "restrict_to_node": [
+      "self",
+      "node_name"
+    ]
+  },
+  "get_latest_test_results": [
+    "jenkinsurl",
+    "jobname",
+    "username",
+    "password",
+    "ssl_verify"
+  ],
+  "get_latest_build": [
+    "jenkinsurl",
+    "jobname",
+    "username",
+    "password",
+    "ssl_verify"
+  ],
+  "get_latest_complete_build": [
+    "jenkinsurl",
+    "jobname",
+    "username",
+    "password",
+    "ssl_verify"
+  ],
+  "get_build": [
+    "jenkinsurl",
+    "jobname",
+    "build_no",
+    "username",
+    "password",
+    "ssl_verify"
+  ],
+  "get_artifacts": [
+    "jenkinsurl",
+    "jobname",
+    "build_no",
+    "username",
+    "password",
+    "ssl_verify"
+  ],
+  "search_artifacts": [
+    "jenkinsurl",
+    "jobname",
+    "artifact_ids",
+    "username",
+    "password",
+    "ssl_verify"
+  ],
+  "grab_artifact": [
+    "jenkinsurl",
+    "jobname",
+    "artifactid",
+    "targetdir",
+    "username",
+    "password",
+    "strict_validation",
+    "ssl_verify"
+  ],
+  "block_until_complete": [
+    "jenkinsurl",
+    "jobs",
+    "maxwait",
+    "interval",
+    "raise_on_timeout",
+    "username",
+    "password",
+    "ssl_verify"
+  ],
+  "get_view_from_url": [
+    "url",
+    "username",
+    "password",
+    "ssl_verify"
+  ],
+  "get_nested_view_from_url": [
+    "url",
+    "username",
+    "password",
+    "ssl_verify"
+  ],
+  "install_artifacts": [
+    "artifacts",
+    "dirstruct",
+    "installdir",
+    "basestaticurl",
+    "strict_validation"
+  ],
+  "search_artifact_by_regexp": [
+    "jenkinsurl",
+    "jobname",
+    "artifactRegExp",
+    "username",
+    "password",
+    "ssl_verify"
+  ],
+  "Result": {
+    "__init__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "identifier": [
+      "self"
+    ]
+  },
+  "STATUS_FAIL": [],
+  "STATUS_ERROR": [],
+  "STATUS_ABORTED": [],
+  "STATUS_REGRESSION": [],
+  "STATUS_SUCCESS": [],
+  "STATUS_FIXED": [],
+  "STATUS_PASSED": [],
+  "RESULTSTATUS_FAILURE": [],
+  "RESULTSTATUS_FAILED": [],
+  "RESULTSTATUS_SKIPPED": [],
+  "STR_RE_SPLIT_VIEW": [],
+  "RE_SPLIT_VIEW_URL": [],
+  "Credential": {
+    "__init__": [
+      "self",
+      "cred_dict",
+      "jenkins_class"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "get_attributes": [
+      "self"
+    ],
+    "get_attributes_xml": [
+      "self"
+    ],
+    "get_files": [
+      "self"
+    ],
+    "_get_attributes_xml": [
+      "self",
+      "data"
+    ]
+  },
+  "UsernamePasswordCredential": {
+    "__init__": [
+      "self",
+      "cred_dict"
+    ],
+    "get_attributes": [
+      "self"
+    ],
+    "get_attributes_xml": [
+      "self"
+    ]
+  },
+  "SecretTextCredential": {
+    "__init__": [
+      "self",
+      "cred_dict"
+    ],
+    "get_attributes": [
+      "self"
+    ],
+    "get_attributes_xml": [
+      "self"
+    ]
+  },
+  "SSHKeyCredential": {
+    "__init__": [
+      "self",
+      "cred_dict"
+    ],
+    "attrs": [
+      "self"
+    ],
+    "get_attributes": [
+      "self"
+    ],
+    "get_attributes_xml": [
+      "self"
+    ]
+  },
+  "FileCredentials": {
+    "__init__": [
+      "self",
+      "cred_dict"
+    ],
+    "get_attributes": [
+      "self"
+    ],
+    "get_files": [
+      "self"
+    ],
+    "get_attributes_xml": [
+      "self"
+    ]
+  },
+  "AmazonWebServicesCredentials": {
+    "__init__": [
+      "self",
+      "cred_dict"
+    ],
+    "get_attributes": [
+      "self"
+    ],
+    "get_attributes_xml": [
+      "self"
+    ]
+  },
+  "DockerServerCredentials": {
+    "__init__": [
+      "self",
+      "cred_dict"
+    ],
+    "get_attributes": [
+      "self"
+    ],
+    "get_attributes_xml": [
+      "self"
+    ]
+  },
+  "View": {
+    "__init__": [
+      "self",
+      "url",
+      "name",
+      "jenkins_obj"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "job_name"
+    ],
+    "__contains__": [
+      "self",
+      "job_name"
+    ],
+    "delete": [
+      "self"
+    ],
+    "keys": [
+      "self"
+    ],
+    "iteritems": [
+      "self"
+    ],
+    "values": [
+      "self"
+    ],
+    "items": [
+      "self"
+    ],
+    "_get_jobs": [
+      "self"
+    ],
+    "get_job_dict": [
+      "self"
+    ],
+    "get_job_url": [
+      "self",
+      "str_job_name"
+    ],
+    "get_jenkins_obj": [
+      "self"
+    ],
+    "add_job": [
+      "self",
+      "job_name",
+      "job"
+    ],
+    "remove_job": [
+      "self",
+      "job_name"
+    ],
+    "_normalize_job_name": [
+      "job_name"
+    ],
+    "_get_nested_views": [
+      "self"
+    ],
+    "get_nested_view_dict": [
+      "self"
+    ],
+    "get_config_xml_url": [
+      "self"
+    ],
+    "get_config": [
+      "self"
+    ],
+    "update_config": [
+      "self",
+      "config"
+    ],
+    "views": [
+      "self"
+    ]
+  },
+  "Queue": {
+    "__init__": [
+      "self",
+      "baseurl",
+      "jenkins_obj"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "get_jenkins_obj": [
+      "self"
+    ],
+    "iteritems": [
+      "self"
+    ],
+    "iterkeys": [
+      "self"
+    ],
+    "itervalues": [
+      "self"
+    ],
+    "keys": [
+      "self"
+    ],
+    "values": [
+      "self"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "item_id"
+    ],
+    "_get_queue_items_for_job": [
+      "self",
+      "job_name"
+    ],
+    "get_queue_items_for_job": [
+      "self",
+      "job_name"
+    ],
+    "get_queue_item_url": [
+      "self",
+      "item"
+    ],
+    "delete_item": [
+      "self",
+      "queue_item"
+    ],
+    "delete_item_by_id": [
+      "self",
+      "item_id"
+    ]
+  },
+  "QueueItem": {
+    "__init__": [
+      "self",
+      "baseurl",
+      "jenkins_obj"
+    ],
+    "queue_id": [
+      "self"
+    ],
+    "name": [
+      "self"
+    ],
+    "why": [
+      "self"
+    ],
+    "get_jenkins_obj": [
+      "self"
+    ],
+    "get_job": [
+      "self"
+    ],
+    "get_parameters": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "get_build": [
+      "self"
+    ],
+    "block_until_complete": [
+      "self",
+      "delay"
+    ],
+    "block_until_building": [
+      "self",
+      "delay"
+    ],
+    "is_running": [
+      "self"
+    ],
+    "is_queued": [
+      "self"
+    ],
+    "get_build_number": [
+      "self"
+    ],
+    "get_job_name": [
+      "self"
+    ],
+    "is_blocked": [
+      "self"
+    ],
+    "is_stuck": [
+      "self"
+    ],
+    "is_buildable": [
+      "self"
+    ],
+    "get_age": [
+      "self"
+    ],
+    "get_eta": [
+      "self"
+    ],
+    "get_causes": [
+      "self"
+    ]
+  },
+  "ResultSet": {
+    "__init__": [
+      "self",
+      "url",
+      "build"
+    ],
+    "get_jenkins_obj": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "name": [
+      "self"
+    ],
+    "keys": [
+      "self"
+    ],
+    "items": [
+      "self"
+    ],
+    "iteritems": [
+      "self"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "key"
+    ]
+  },
+  "__all__": [],
+  "__docformat__": [],
+  "__version__": [],
+  "Plugin": {
+    "__init__": [
+      "self",
+      "plugin_dict"
+    ],
+    "to_plugin": [
+      "self",
+      "plugin_string"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "get_attributes": [
+      "self"
+    ],
+    "is_latest": [
+      "self",
+      "update_center_dict"
+    ],
+    "get_download_link": [
+      "self",
+      "update_center_dict"
+    ]
+  },
+  "LockableResourcePropertyDict": {},
+  "LockableResourceDict": {},
+  "LockableResource": {
+    "__init__": [
+      "self",
+      "parent",
+      "name"
+    ],
+    "data": [
+      "self"
+    ],
+    "is_free": [
+      "self"
+    ],
+    "is_reserved": [
+      "self"
+    ],
+    "reserve": [
+      "self"
+    ],
+    "unreserve": [
+      "self"
+    ]
+  },
+  "HTTP_STATUS_CODE_LOCKED": [],
+  "ResourceLockedError": {},
+  "ResourceReservationTimeoutError": {},
+  "DEFAULT_WAIT_SLEEP_PERIOD": [],
+  "DEFAULT_WAIT_TIMEOUT_PERIOD": [],
+  "DEFAULT_RETRY_CONFIG": [],
+  "LockableResources": {
+    "__init__": [
+      "self",
+      "jenkins_obj",
+      "poll",
+      "poll_after_post"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "get_jenkins_obj": [
+      "self"
+    ],
+    "poll": [
+      "self",
+      "tree"
+    ],
+    "data_list": [
+      "self"
+    ],
+    "data_dict": [
+      "self"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "name"
+    ],
+    "is_free": [
+      "self",
+      "name"
+    ],
+    "is_reserved": [
+      "self",
+      "name"
+    ],
+    "_make_resource_request": [
+      "self",
+      "req",
+      "name"
+    ],
+    "_poll_until_consistent": [
+      "self",
+      "retries",
+      "interval"
+    ],
+    "reserve": [
+      "self",
+      "name"
+    ],
+    "unreserve": [
+      "self",
+      "name"
+    ],
+    "try_reserve": [
+      "self",
+      "selector"
+    ],
+    "wait_reserve": [
+      "self",
+      "selector",
+      "retry"
+    ],
+    "reservation_by_label": [
+      "self",
+      "label",
+      "retry"
+    ],
+    "reservation_by_name": [
+      "self",
+      "name",
+      "retry"
+    ],
+    "reservation_by_name_list": [
+      "self",
+      "name_list",
+      "retry"
+    ]
+  },
+  "ResourceSelector": {
+    "select": [
+      "self",
+      "lockable_resources"
+    ]
+  },
+  "ResourceNameSelector": {
+    "__init__": [
+      "self",
+      "name"
+    ],
+    "select": [
+      "self",
+      "lockable_resources"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ResourceNameListSelector": {
+    "__init__": [
+      "self",
+      "name_list"
+    ],
+    "select": [
+      "self",
+      "lockable_resources"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ResourceLabelSelector": {
+    "__init__": [
+      "self",
+      "label"
+    ],
+    "select": [
+      "self",
+      "lockable_resources"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "LockedResourceReservation": {
+    "__init__": [
+      "self",
+      "api",
+      "selector",
+      "retry"
+    ],
+    "is_active": [
+      "self"
+    ],
+    "locked_resource_name": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self"
+    ]
+  },
+  "Jenkins": {
+    "__init__": [
+      "self",
+      "baseurl",
+      "username",
+      "password",
+      "requester",
+      "lazy",
+      "ssl_verify",
+      "cert",
+      "timeout",
+      "use_crumb",
+      "max_retries"
+    ],
+    "_poll": [
+      "self",
+      "tree"
+    ],
+    "_poll_if_needed": [
+      "self"
+    ],
+    "_clone": [
+      "self"
+    ],
+    "base_server_url": [
+      "self"
+    ],
+    "validate_fingerprint": [
+      "self",
+      "id_"
+    ],
+    "get_artifact_data": [
+      "self",
+      "id_"
+    ],
+    "validate_fingerprint_for_build": [
+      "self",
+      "digest",
+      "filename",
+      "job",
+      "build"
+    ],
+    "get_jenkins_obj": [
+      "self"
+    ],
+    "get_jenkins_obj_from_url": [
+      "self",
+      "url"
+    ],
+    "get_create_url": [
+      "self"
+    ],
+    "get_nodes_url": [
+      "self"
+    ],
+    "jobs": [
+      "self"
+    ],
+    "get_jobs": [
+      "self"
+    ],
+    "get_jobs_info": [
+      "self"
+    ],
+    "get_job": [
+      "self",
+      "jobname"
+    ],
+    "get_job_by_url": [
+      "self",
+      "url",
+      "job_name"
+    ],
+    "has_job": [
+      "self",
+      "jobname"
+    ],
+    "create_job": [
+      "self",
+      "jobname",
+      "xml"
+    ],
+    "create_multibranch_pipeline_job": [
+      "self",
+      "jobname",
+      "xml",
+      "block",
+      "delay"
+    ],
+    "copy_job": [
+      "self",
+      "jobname",
+      "newjobname"
+    ],
+    "build_job": [
+      "self",
+      "jobname",
+      "params"
+    ],
+    "delete_job": [
+      "self",
+      "jobname"
+    ],
+    "rename_job": [
+      "self",
+      "jobname",
+      "newjobname"
+    ],
+    "items": [
+      "self"
+    ],
+    "get_jobs_list": [
+      "self"
+    ],
+    "iterkeys": [
+      "self"
+    ],
+    "iteritems": [
+      "self"
+    ],
+    "keys": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "views": [
+      "self"
+    ],
+    "get_view_by_url": [
+      "self",
+      "view_url"
+    ],
+    "delete_view_by_url": [
+      "self",
+      "viewurl"
+    ],
+    "get_label": [
+      "self",
+      "label_name"
+    ],
+    "__getitem__": [
+      "self",
+      "jobname"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "__contains__": [
+      "self",
+      "jobname"
+    ],
+    "__delitem__": [
+      "self",
+      "job_name"
+    ],
+    "get_node": [
+      "self",
+      "nodename"
+    ],
+    "get_node_url": [
+      "self",
+      "nodename"
+    ],
+    "get_queue_url": [
+      "self"
+    ],
+    "get_queue": [
+      "self"
+    ],
+    "get_nodes": [
+      "self"
+    ],
+    "nodes": [
+      "self"
+    ],
+    "has_node": [
+      "self",
+      "nodename"
+    ],
+    "delete_node": [
+      "self",
+      "nodename"
+    ],
+    "create_node": [
+      "self",
+      "name",
+      "num_executors",
+      "node_description",
+      "remote_fs",
+      "labels",
+      "exclusive"
+    ],
+    "create_node_with_config": [
+      "self",
+      "name",
+      "config"
+    ],
+    "get_plugins_url": [
+      "self",
+      "depth"
+    ],
+    "install_plugin": [
+      "self",
+      "plugin",
+      "restart",
+      "force_restart",
+      "wait_for_reboot",
+      "no_reboot_warning"
+    ],
+    "install_plugins": [
+      "self",
+      "plugin_list",
+      "restart",
+      "force_restart",
+      "wait_for_reboot",
+      "no_reboot_warning"
+    ],
+    "delete_plugin": [
+      "self",
+      "plugin",
+      "restart",
+      "force_restart",
+      "wait_for_reboot",
+      "no_reboot_warning"
+    ],
+    "delete_plugins": [
+      "self",
+      "plugin_list",
+      "restart",
+      "force_restart",
+      "wait_for_reboot",
+      "no_reboot_warning"
+    ],
+    "safe_restart": [
+      "self",
+      "wait_for_reboot"
+    ],
+    "_wait_for_reboot": [
+      "self"
+    ],
+    "__jenkins_is_unavailable": [
+      "self"
+    ],
+    "safe_exit": [
+      "self",
+      "wait_for_exit",
+      "max_wait"
+    ],
+    "_wait_for_exit": [
+      "self",
+      "max_wait"
+    ],
+    "__jenkins_is_unresponsive": [
+      "self",
+      "max_wait"
+    ],
+    "quiet_down": [
+      "self"
+    ],
+    "cancel_quiet_down": [
+      "self"
+    ],
+    "plugins": [
+      "self"
+    ],
+    "get_plugins": [
+      "self",
+      "depth"
+    ],
+    "has_plugin": [
+      "self",
+      "plugin_name"
+    ],
+    "get_executors": [
+      "self",
+      "nodename"
+    ],
+    "get_master_data": [
+      "self"
+    ],
+    "version": [
+      "self"
+    ],
+    "get_credentials": [
+      "self",
+      "cred_class"
+    ],
+    "credentials": [
+      "self"
+    ],
+    "credentials_by_id": [
+      "self"
+    ],
+    "is_quieting_down": [
+      "self"
+    ],
+    "shutdown": [
+      "self"
+    ],
+    "generate_new_api_token": [
+      "self",
+      "new_token_name"
+    ],
+    "revoke_api_token": [
+      "self",
+      "token_uuid"
+    ],
+    "revoke_all_api_tokens": [
+      "self"
+    ],
+    "create_user": [
+      "self",
+      "username",
+      "password",
+      "full_name",
+      "email"
+    ],
+    "delete_user": [
+      "self",
+      "username"
+    ],
+    "run_groovy_script": [
+      "self",
+      "script"
+    ],
+    "use_auth_cookie": [
+      "self"
+    ],
+    "get_lockable_resources": [
+      "self"
+    ],
+    "get_jobs_by_status": [
+      "self",
+      "status"
+    ],
+    "reload": [
+      "self",
+      "wait_for_completion"
+    ]
+  },
+  "Requester": {
+    "VALID_STATUS_CODES": [],
+    "AUTH_COOKIE": [],
+    "__init__": [
+      "self"
+    ],
+    "get_request_dict": [
+      "self",
+      "params",
+      "data",
+      "files",
+      "headers"
+    ],
+    "_redact_dict": [
+      "self",
+      "value"
+    ],
+    "_redact_url": [
+      "self",
+      "url"
+    ],
+    "_log_request": [
+      "self",
+      "method",
+      "url",
+      "params",
+      "headers",
+      "data",
+      "files"
+    ],
+    "_log_response": [
+      "self",
+      "method",
+      "url",
+      "status_code",
+      "elapsed"
+    ],
+    "_update_url_scheme": [
+      "self",
+      "url"
+    ],
+    "get_url": [
+      "self",
+      "url",
+      "params",
+      "headers",
+      "allow_redirects",
+      "stream"
+    ],
+    "post_url": [
+      "self",
+      "url",
+      "params",
+      "data",
+      "files",
+      "headers",
+      "allow_redirects"
+    ],
+    "post_xml_and_confirm_status": [
+      "self",
+      "url",
+      "params",
+      "data",
+      "valid"
+    ],
+    "post_and_confirm_status": [
+      "self",
+      "url",
+      "params",
+      "data",
+      "files",
+      "headers",
+      "valid",
+      "allow_redirects"
+    ],
+    "get_and_confirm_status": [
+      "self",
+      "url",
+      "params",
+      "headers",
+      "valid",
+      "stream"
+    ]
+  },
+  "_resolve_level": [
+    "level"
+  ],
+  "configure_logging": [
+    "level"
+  ],
+  "DEFAULT_IMAGE_NAME": [],
+  "DEFAULT_CONTAINER_NAME": [],
+  "DockerJenkinsError": {},
+  "DockerJenkins": {
+    "__init__": [
+      "self",
+      "image_name",
+      "container_name",
+      "port",
+      "jenkins_home"
+    ],
+    "build_image": [
+      "self",
+      "dockerfile_path"
+    ],
+    "start": [
+      "self",
+      "timeout"
+    ],
+    "_remove_existing_container": [
+      "self"
+    ],
+    "stop": [
+      "self"
+    ],
+    "restart_jenkins_service": [
+      "self",
+      "timeout"
+    ],
+    "wait_for_ready": [
+      "self",
+      "timeout"
+    ],
+    "dump_plugin_versions": [
+      "self",
+      "output_file"
+    ],
+    "get_logs": [
+      "self",
+      "lines"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ]
+  },
+  "jsonp_to_json": [
+    "jsonp"
+  ],
+  "RetryConfig": {
+    "begin": [
+      "self"
+    ]
+  },
+  "RetryState": {
+    "check_retry": [
+      "self"
+    ]
+  },
+  "SimpleRetryConfig": {
+    "begin": [
+      "self"
+    ]
+  },
+  "SimpleRetryState": {
+    "get_current_time": [
+      "self"
+    ],
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "check_retry": [
+      "self"
+    ]
+  },
+  "CrumbRequester": {
+    "__init__": [
+      "self"
+    ],
+    "post_url": [
+      "self",
+      "url",
+      "params",
+      "data",
+      "files",
+      "headers",
+      "allow_redirects"
+    ],
+    "_get_crumb_data": [
+      "self"
+    ],
+    "_post_url_with_crumb": [
+      "self",
+      "crumb_data",
+      "url",
+      "params",
+      "data",
+      "files",
+      "headers",
+      "allow_redirects"
+    ]
+  },
+  "KrbRequester": {
+    "__init__": [
+      "self"
+    ],
+    "get_request_dict": [
+      "self",
+      "params",
+      "data",
+      "files",
+      "headers"
+    ]
+  },
+  "PORT": [],
+  "ServerHandler": {
+    "do_GET": [
+      "self"
+    ],
+    "do_POST": [
+      "self"
+    ]
+  },
+  "_MANIFEST_NAME": [],
+  "InvalidJarError": {},
+  "Manifest": {
+    "__init__": [
+      "self",
+      "main_section",
+      "sections"
+    ]
+  },
+  "read_manifest": [
+    "jar_file_name"
+  ],
+  "_parse_manifest": [
+    "manifest_string"
+  ],
+  "_parse_manifest_section": [
+    "section"
+  ],
+  "JenkinsInvoke": {
+    "mkparser": [
+      "cls"
+    ],
+    "main": [
+      "cls"
+    ],
+    "resolve_password": [
+      "options",
+      "is_interactive",
+      "prompt_password"
+    ],
+    "__init__": [
+      "self",
+      "options",
+      "jobs"
+    ],
+    "_get_api": [
+      "self",
+      "baseurl",
+      "username",
+      "password"
+    ],
+    "__call__": [
+      "self"
+    ],
+    "invokejob": [
+      "self",
+      "jobname",
+      "block",
+      "token"
+    ]
+  },
+  "main": []
+}
