@@ -1,0 +1,685 @@
+{
+  "default_header": [],
+  "header": [],
+  "nse_calendar": [],
+  "validate_param_from_list": [
+    "value",
+    "static_options_list"
+  ],
+  "validate_date_param": [
+    "from_date",
+    "to_date",
+    "period"
+  ],
+  "subtract_months": [
+    "dt",
+    "months"
+  ],
+  "derive_from_and_to_date": [
+    "from_date",
+    "to_date",
+    "period"
+  ],
+  "cleaning_column_name": [
+    "col"
+  ],
+  "cleaning_nse_symbol": [
+    "symbol"
+  ],
+  "nse_urlfetch": [
+    "url",
+    "origin_url"
+  ],
+  "get_nselib_path": [],
+  "get_month_from_date": [
+    "trade_date"
+  ],
+  "trading_holiday_calendar": [],
+  "REPORT_DATE_FORMAT": [],
+  "PRODUCTION_BASE_URL": [],
+  "PILOT_BASE_URL": [],
+  "REQUEST_BASE_URLS": [],
+  "LATEST_PAGE": [],
+  "ARCHIVE_PAGE": [],
+  "ARCHIVE_HIDDEN_FIELDS": [],
+  "BROWSER_EXECUTABLE_CANDIDATES": [],
+  "BROWSER_LAUNCH_ARGS": [],
+  "BROWSER_NAVIGATION_OPTIONS": [],
+  "BROWSER_USER_AGENT": [],
+  "INVESTMENT_COLUMNS": [],
+  "DERIVATIVE_COLUMNS": [],
+  "DAILY_DERIVATIVE_PRODUCTS": [],
+  "NSDLFPIReportBundle": {},
+  "_empty_investment_frame": [],
+  "_empty_derivative_frame": [],
+  "_coerce_trade_date": [
+    "value"
+  ],
+  "_flatten_column_name": [
+    "column"
+  ],
+  "_normalize_text": [
+    "value"
+  ],
+  "_parse_numeric": [
+    "value"
+  ],
+  "_find_browser_executable": [],
+  "_extract_hidden_fields": [
+    "html"
+  ],
+  "_read_tables": [
+    "html"
+  ],
+  "_classify_table": [
+    "table"
+  ],
+  "_parse_investment_table": [
+    "table"
+  ],
+  "_parse_derivative_table": [
+    "table"
+  ],
+  "_parse_report_bundle": [
+    "html",
+    "source_page",
+    "as_of_date"
+  ],
+  "_max_bundle_report_date": [
+    "bundle"
+  ],
+  "NSDLProductionBrowser": {
+    "__init__": [
+      "self"
+    ],
+    "available": [
+      "self"
+    ],
+    "_ensure_loop": [
+      "self"
+    ],
+    "_run": [
+      "self",
+      "coroutine"
+    ],
+    "_ensure_browser": [
+      "self"
+    ],
+    "_new_page": [
+      "self",
+      "url"
+    ],
+    "_latest_html": [
+      "self"
+    ],
+    "_archive_html": [
+      "self",
+      "trade_date"
+    ],
+    "latest_html": [
+      "self"
+    ],
+    "archive_html": [
+      "self",
+      "trade_date"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "NSDLFPIClient": {
+    "__init__": [
+      "self"
+    ],
+    "_resolve_request_base_url": [
+      "self",
+      "page_name"
+    ],
+    "_get_request_page": [
+      "self",
+      "page_name"
+    ],
+    "_archive_request_fields": [
+      "self",
+      "refresh"
+    ],
+    "_get_latest_html": [
+      "self"
+    ],
+    "_get_archive_html": [
+      "self",
+      "trade_date"
+    ],
+    "latest_bundle": [
+      "self"
+    ],
+    "archive_month_bundle": [
+      "self",
+      "trade_date",
+      "max_lookback_days"
+    ]
+  },
+  "fetch_nsdl_fpi_latest_bundle": [],
+  "fetch_nsdl_fpi_month_bundle": [
+    "trade_date"
+  ],
+  "fetch_nsdl_fpi_latest_investment_activity": [],
+  "fetch_nsdl_fpi_latest_derivative_activity": [],
+  "fetch_nsdl_fpi_investment_activity": [
+    "trade_date"
+  ],
+  "fetch_nsdl_fpi_derivative_activity": [
+    "trade_date"
+  ],
+  "ErrorCodeEnum": {
+    "UNKNOWN_ERROR": [],
+    "API_ERROR": [],
+    "CALENDAR_NOT_FOUND": [],
+    "DATA_NOT_FOUND": [],
+    "INVALID_INDEX_CATEGORY": [],
+    "INVALID_INDEX": []
+  },
+  "NSEException": {
+    "__init__": [
+      "self",
+      "message",
+      "error_code"
+    ]
+  },
+  "NSEApiError": {
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "CalenderNotFound": {
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "NSEdataNotFound": {
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "InvalidIndexCategoryError": {
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "InvalidIndexError": {
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "IndexDataNotFound": {
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "dd_mm_yyyy": [],
+  "dd_mmm_yyyy": [],
+  "ddmmyyyy": [],
+  "ddmmyy": [],
+  "mmm_yy": [],
+  "equity_periods": [],
+  "indices_list": [],
+  "price_volume_and_deliverable_position_data_columns": [],
+  "price_volume_data_columns": [],
+  "deliverable_data_columns": [],
+  "bulk_deal_data_columns": [],
+  "block_deals_data_columns": [],
+  "short_selling_data_columns": [],
+  "bhavcopy_old": [],
+  "bhavcopy_new": [],
+  "future_price_volume_data_column": [],
+  "india_vix_data_column": [],
+  "index_data_columns": [],
+  "var_columns": [],
+  "__version__": [],
+  "mylogger": [
+    "logger"
+  ],
+  "securities_available_for_trading": [
+    "trade_date"
+  ],
+  "get_future_price_volume_data": [
+    "symbol",
+    "instrument",
+    "from_date",
+    "to_date"
+  ],
+  "get_option_price_volume_data": [
+    "symbol",
+    "instrument",
+    "option_type",
+    "from_date",
+    "to_date"
+  ],
+  "get_nse_option_chain": [
+    "symbol",
+    "expiry_date"
+  ],
+  "_get_business_growth_fo_segment_data": [
+    "api_path"
+  ],
+  "get_business_growth_fo_segment_yearly": [],
+  "get_business_growth_fo_segment_monthly": [
+    "from_year",
+    "to_year"
+  ],
+  "get_business_growth_fo_segment_daily": [
+    "month",
+    "year"
+  ],
+  "future_price_volume_data": [
+    "symbol",
+    "instrument",
+    "from_date",
+    "to_date",
+    "period"
+  ],
+  "option_price_volume_data": [
+    "symbol",
+    "instrument",
+    "option_type",
+    "from_date",
+    "to_date",
+    "period"
+  ],
+  "fno_bhav_copy": [
+    "trade_date"
+  ],
+  "participant_wise_open_interest": [
+    "trade_date"
+  ],
+  "participant_wise_trading_volume": [
+    "trade_date"
+  ],
+  "daily_volatility": [
+    "trade_date"
+  ],
+  "category_turnover_fo": [
+    "trade_date"
+  ],
+  "fii_derivatives_statistics": [
+    "trade_date"
+  ],
+  "expiry_dates_future": [],
+  "expiry_dates_option_index": [],
+  "nse_live_option_chain": [
+    "symbol",
+    "expiry_date",
+    "oi_mode"
+  ],
+  "fno_security_in_ban_period": [
+    "trade_date"
+  ],
+  "live_most_active_underlying": [],
+  "_normalize_business_growth_fo_segment_financial_year": [
+    "from_year",
+    "to_year"
+  ],
+  "_normalize_business_growth_fo_segment_daily_args": [
+    "month",
+    "year"
+  ],
+  "_business_growth_fo_segment_dataframe": [
+    "data_json"
+  ],
+  "business_growth_fo_segment": [
+    "data_type",
+    "from_year",
+    "to_year",
+    "month",
+    "year"
+  ],
+  "get_class": [
+    "index_category"
+  ],
+  "index_list": [
+    "index_category"
+  ],
+  "validate_index_category": [
+    "index_category"
+  ],
+  "validate_index_name": [
+    "index_category",
+    "index_name"
+  ],
+  "constituent_stock_list": [
+    "index_category",
+    "index_name"
+  ],
+  "live_index_performances": [],
+  "NiftySectoralIndices": {
+    "indices_list": [],
+    "index_constituent_list_urls": [],
+    "index_factsheet_urls": []
+  },
+  "NiftyBroadMarketIndices": {
+    "indices_list": [],
+    "index_constituent_list_urls": [],
+    "index_factsheet_urls": []
+  },
+  "NiftyThematicIndices": {
+    "indices_list": [],
+    "index_constituent_list_urls": [],
+    "index_factsheet_urls": []
+  },
+  "NiftyStrategyIndices": {
+    "indices_list": [],
+    "index_constituent_list_urls": [],
+    "index_factsheet_urls": []
+  },
+  "nsdl_fpi_investment_activity": [
+    "trade_date"
+  ],
+  "nsdl_fpi_latest_investment_activity": [],
+  "nsdl_fpi_derivative_activity": [
+    "trade_date"
+  ],
+  "nsdl_fpi_latest_derivative_activity": [],
+  "amfi_monthly_report_links": [],
+  "amfi_monthly_data": [
+    "report_month",
+    "file_type_priority"
+  ],
+  "amfi_monthly_historical_data": [
+    "from_month",
+    "to_month",
+    "file_type_priority",
+    "include_all_file_variants",
+    "strict"
+  ],
+  "price_volume_and_deliverable_position_data": [
+    "symbol",
+    "from_date",
+    "to_date",
+    "period"
+  ],
+  "price_volume_data": [
+    "symbol",
+    "from_date",
+    "to_date",
+    "period"
+  ],
+  "deliverable_position_data": [
+    "symbol",
+    "from_date",
+    "to_date",
+    "period"
+  ],
+  "india_vix_data": [
+    "from_date",
+    "to_date",
+    "period"
+  ],
+  "index_data": [
+    "index",
+    "from_date",
+    "to_date",
+    "period"
+  ],
+  "bulk_deal_data": [
+    "from_date",
+    "to_date",
+    "period"
+  ],
+  "block_deals_data": [
+    "from_date",
+    "to_date",
+    "period"
+  ],
+  "short_selling_data": [
+    "from_date",
+    "to_date",
+    "period"
+  ],
+  "bhav_copy_with_delivery": [
+    "trade_date"
+  ],
+  "bhav_copy_equities": [
+    "trade_date"
+  ],
+  "bhav_copy_indices": [
+    "trade_date"
+  ],
+  "bhav_copy_sme": [
+    "trade_date"
+  ],
+  "equity_list": [],
+  "fno_equity_list": [],
+  "fno_index_list": [],
+  "nifty50_equity_list": [],
+  "niftynext50_equity_list": [],
+  "niftymidcap150_equity_list": [],
+  "niftysmallcap250_equity_list": [],
+  "market_watch_all_indices": [],
+  "fii_dii_trading_activity": [],
+  "category_turnover_cash": [
+    "trade_date"
+  ],
+  "var_begin_day": [
+    "trade_date"
+  ],
+  "var_1st_intra_day": [
+    "trade_date"
+  ],
+  "var_2nd_intra_day": [
+    "trade_date"
+  ],
+  "var_3rd_intra_day": [
+    "trade_date"
+  ],
+  "var_4th_intra_day": [
+    "trade_date"
+  ],
+  "var_end_of_day": [
+    "trade_date"
+  ],
+  "sme_bhav_copy": [
+    "trade_date"
+  ],
+  "sme_band_complete": [
+    "trade_date"
+  ],
+  "week_52_high_low_report": [
+    "trade_date"
+  ],
+  "financial_results_for_equity": [
+    "from_date",
+    "to_date",
+    "period",
+    "fo_sec",
+    "fin_period"
+  ],
+  "corporate_bond_trade_report": [
+    "trade_date"
+  ],
+  "pe_ratio": [
+    "trade_date"
+  ],
+  "corporate_actions_for_equity": [
+    "from_date",
+    "to_date",
+    "period",
+    "fno_only"
+  ],
+  "event_calendar_for_equity": [
+    "from_date",
+    "to_date",
+    "period",
+    "fno_only"
+  ],
+  "top_gainers_or_losers": [
+    "to_get"
+  ],
+  "most_active_equities": [
+    "fetch_by"
+  ],
+  "total_traded_stocks": [],
+  "_normalize_business_growth_cm_segment_financial_year": [
+    "from_year",
+    "to_year"
+  ],
+  "_normalize_business_growth_cm_segment_daily_args": [
+    "month",
+    "year"
+  ],
+  "_business_growth_cm_segment_dataframe": [
+    "data_json"
+  ],
+  "business_growth_cm_segment": [
+    "data_type",
+    "from_year",
+    "to_year",
+    "month",
+    "year"
+  ],
+  "get_price_volume_and_deliverable_position_data": [
+    "symbol",
+    "from_date",
+    "to_date"
+  ],
+  "get_price_volume_data": [
+    "symbol",
+    "from_date",
+    "to_date"
+  ],
+  "get_deliverable_position_data": [
+    "symbol",
+    "from_date",
+    "to_date"
+  ],
+  "get_india_vix_data": [
+    "from_date",
+    "to_date"
+  ],
+  "get_index_data": [
+    "index",
+    "from_date",
+    "to_date"
+  ],
+  "get_bulk_deal_data": [
+    "from_date",
+    "to_date"
+  ],
+  "get_block_deals_data": [
+    "from_date",
+    "to_date"
+  ],
+  "get_short_selling_data": [
+    "from_date",
+    "to_date"
+  ],
+  "_get_business_growth_cm_segment_data": [
+    "api_path"
+  ],
+  "get_business_growth_cm_segment_yearly": [],
+  "get_business_growth_cm_segment_monthly": [
+    "from_year",
+    "to_year"
+  ],
+  "get_business_growth_cm_segment_daily": [
+    "month",
+    "year"
+  ],
+  "get_financial_results_master": [
+    "from_date",
+    "to_date",
+    "period",
+    "fo_sec",
+    "fin_period"
+  ],
+  "get_top_gainers_or_losers": [
+    "to_get"
+  ],
+  "AMFI_MONTHLY_PAGE_URL": [],
+  "_AMFI_REPORT_LINK_PATTERN": [],
+  "_MONTH_MAP": [],
+  "_DEFAULT_FILE_TYPE_PRIORITY": [],
+  "_OUTPUT_COLUMNS": [],
+  "_amfi_session": [],
+  "_normalize_report_month": [
+    "value"
+  ],
+  "_empty_output_frame": [],
+  "_extract_link_records": [
+    "page_html"
+  ],
+  "_priority_rank": [
+    "file_type",
+    "file_type_priority"
+  ],
+  "_preferred_links": [
+    "links_frame",
+    "file_type_priority"
+  ],
+  "_download_report_content": [
+    "source_url"
+  ],
+  "_coerce_text": [
+    "value"
+  ],
+  "_row_payload_from_values": [
+    "values"
+  ],
+  "_build_output_row": [
+    "report_month",
+    "period_label",
+    "source_url",
+    "source_file_type",
+    "section_name",
+    "table_index",
+    "row_index",
+    "row_payload"
+  ],
+  "_parse_excel_report": [
+    "report_content",
+    "report_month",
+    "period_label",
+    "source_url",
+    "source_file_type"
+  ],
+  "_parse_html_report": [
+    "report_content",
+    "report_month",
+    "period_label",
+    "source_url",
+    "source_file_type"
+  ],
+  "_parse_pdf_report_with_pdfplumber": [
+    "report_content",
+    "report_month",
+    "period_label",
+    "source_url",
+    "source_file_type"
+  ],
+  "_parse_pdf_report_with_pypdf": [
+    "report_content",
+    "report_month",
+    "period_label",
+    "source_url",
+    "source_file_type"
+  ],
+  "_parse_pdf_report": [
+    "report_content",
+    "report_month",
+    "period_label",
+    "source_url",
+    "source_file_type"
+  ],
+  "_parse_report_content": [
+    "report_content",
+    "report_month",
+    "period_label",
+    "source_url",
+    "source_file_type"
+  ]
+}
