@@ -1,0 +1,885 @@
+{
+  "_get_example_client": [
+    "port",
+    "debug",
+    "client_port",
+    "client_host",
+    "client_prefix"
+  ],
+  "get_blue_marble": [],
+  "get_virtual_earth": [],
+  "get_arcgis": [],
+  "get_elevation": [],
+  "get_bahamas": [],
+  "get_landsat": [],
+  "get_landsat7": [],
+  "get_san_francisco": [],
+  "get_oam2": [],
+  "get_elevation_us": [],
+  "load_presidio": [],
+  "get_co_elevation": [],
+  "AppManager": {
+    "__init__": [
+      "self"
+    ],
+    "get_or_create_app": [
+      "cors_all"
+    ],
+    "set_rasterio_env": [
+      "env_dict"
+    ]
+  },
+  "BUILDING_DOCS": [],
+  "DEMO_REMOTE_TILE_SERVER": [],
+  "logger": [],
+  "TilerInterface": {
+    "__init__": [
+      "self",
+      "source"
+    ],
+    "reader": [
+      "self"
+    ],
+    "dataset": [
+      "self"
+    ],
+    "filename": [
+      "self"
+    ],
+    "info": [
+      "self"
+    ],
+    "metadata": [
+      "self"
+    ],
+    "band_names": [
+      "self"
+    ],
+    "min_zoom": [
+      "self"
+    ],
+    "max_zoom": [
+      "self"
+    ],
+    "default_zoom": [
+      "self"
+    ],
+    "bounds": [
+      "self",
+      "projection",
+      "return_polygon",
+      "return_wkt"
+    ],
+    "center": [
+      "self",
+      "projection",
+      "return_point",
+      "return_wkt"
+    ],
+    "tile": [
+      "self",
+      "z",
+      "x",
+      "y",
+      "indexes",
+      "colormap",
+      "vmin",
+      "vmax",
+      "nodata",
+      "output_path",
+      "encoding",
+      "expression",
+      "stretch"
+    ],
+    "statistics": [
+      "self",
+      "indexes",
+      "expression"
+    ],
+    "thumbnail": [
+      "self",
+      "indexes",
+      "colormap",
+      "vmin",
+      "vmax",
+      "nodata",
+      "output_path",
+      "encoding",
+      "max_size",
+      "crs",
+      "expression",
+      "stretch"
+    ],
+    "point": [
+      "self",
+      "lon",
+      "lat"
+    ],
+    "part": [
+      "self",
+      "bbox",
+      "indexes",
+      "colormap",
+      "vmin",
+      "vmax",
+      "nodata",
+      "output_path",
+      "encoding",
+      "max_size",
+      "dst_crs",
+      "bounds_crs",
+      "expression",
+      "stretch"
+    ],
+    "feature": [
+      "self",
+      "geojson",
+      "indexes",
+      "colormap",
+      "vmin",
+      "vmax",
+      "nodata",
+      "output_path",
+      "encoding",
+      "max_size",
+      "dst_crs",
+      "expression",
+      "stretch"
+    ],
+    "_repr_png_": [
+      "self"
+    ]
+  },
+  "TileServerMixin": {
+    "__init__": [
+      "self",
+      "port",
+      "debug",
+      "host",
+      "client_port",
+      "client_host",
+      "client_prefix",
+      "cors_all"
+    ],
+    "shutdown": [
+      "self",
+      "force"
+    ],
+    "__del__": [
+      "self"
+    ],
+    "server": [
+      "self"
+    ],
+    "server_port": [
+      "self"
+    ],
+    "server_host": [
+      "self"
+    ],
+    "server_base_url": [
+      "self"
+    ],
+    "client_port": [
+      "self",
+      "value"
+    ],
+    "client_host": [
+      "self",
+      "value"
+    ],
+    "client_prefix": [
+      "self",
+      "value"
+    ],
+    "enable_colab": [
+      "self"
+    ],
+    "enable_jupyter_loopback": [
+      "self"
+    ],
+    "client_base_url": [
+      "self"
+    ],
+    "_produce_url": [
+      "self",
+      "base"
+    ],
+    "create_url": [
+      "self",
+      "path",
+      "client"
+    ],
+    "get_tile_url": [
+      "self",
+      "indexes",
+      "colormap",
+      "vmin",
+      "vmax",
+      "nodata",
+      "client",
+      "expression",
+      "stretch"
+    ],
+    "as_leaflet_layer": [
+      "self"
+    ],
+    "get_leaflet_map": [
+      "self",
+      "add_bounds"
+    ],
+    "_ipython_display_": [
+      "self"
+    ]
+  },
+  "TileClient": {
+    "__init__": [
+      "self",
+      "source",
+      "port",
+      "debug",
+      "host",
+      "client_port",
+      "client_host",
+      "client_prefix",
+      "cors_all"
+    ]
+  },
+  "STACClient": {
+    "__init__": [
+      "self",
+      "url",
+      "assets",
+      "expression",
+      "port",
+      "debug",
+      "host",
+      "client_port",
+      "client_host",
+      "client_prefix",
+      "cors_all"
+    ],
+    "filename": [
+      "self"
+    ],
+    "_produce_url": [
+      "self",
+      "base"
+    ],
+    "bounds": [
+      "self"
+    ],
+    "center": [
+      "self"
+    ],
+    "default_zoom": [
+      "self"
+    ],
+    "tile": [
+      "self",
+      "z",
+      "x",
+      "y",
+      "assets",
+      "expression",
+      "encoding"
+    ],
+    "thumbnail": [
+      "self",
+      "assets",
+      "expression",
+      "encoding",
+      "max_size",
+      "output_path"
+    ],
+    "stac_info": [
+      "self",
+      "assets"
+    ],
+    "statistics": [
+      "self",
+      "assets"
+    ],
+    "get_tile_url": [
+      "self",
+      "assets",
+      "expression",
+      "client"
+    ],
+    "_repr_png_": [
+      "self"
+    ]
+  },
+  "get_or_create_tile_client": [
+    "source",
+    "port",
+    "debug"
+  ],
+  "__all__": [],
+  "__version__": [],
+  "version": [],
+  "__version_tuple__": [],
+  "version_tuple": [],
+  "__commit_id__": [],
+  "commit_id": [],
+  "validate_cog": [
+    "path",
+    "strict",
+    "quiet"
+  ],
+  "get_extensions_from_driver": [
+    "driver"
+  ],
+  "numpy_to_raster": [
+    "ras_meta",
+    "data",
+    "out_path"
+  ],
+  "save_new_raster": [
+    "src",
+    "data",
+    "out_path"
+  ],
+  "polygon_to_geojson": [
+    "polygon"
+  ],
+  "parse_shapely": [
+    "context"
+  ],
+  "hillshade": [
+    "arr",
+    "azimuth",
+    "altitude"
+  ],
+  "_LOOPBACK_NAMESPACE": [],
+  "get_default_client_params": [
+    "host",
+    "port",
+    "prefix"
+  ],
+  "_warned_missing_extra": [],
+  "_is_disabled": [],
+  "enable_for_port": [
+    "port"
+  ],
+  "enable_jupyter_loopback": [
+    "port"
+  ],
+  "save_file_from_request": [
+    "response",
+    "output_path"
+  ],
+  "add_query_parameters": [
+    "url",
+    "params"
+  ],
+  "Report": {
+    "__init__": [
+      "self",
+      "additional",
+      "ncol",
+      "text_width",
+      "sort"
+    ]
+  },
+  "_is_colab": [],
+  "_get_colab_proxy_url": [
+    "port"
+  ],
+  "DEFAULT_ATTRIBUTION": [],
+  "LocalTileServerLayerMixin": {},
+  "get_leaflet_tile_layer": [
+    "source",
+    "port",
+    "debug",
+    "indexes",
+    "colormap",
+    "vmin",
+    "vmax",
+    "nodata",
+    "attribution",
+    "stretch",
+    "expression"
+  ],
+  "get_folium_tile_layer": [
+    "source",
+    "port",
+    "debug",
+    "indexes",
+    "colormap",
+    "vmin",
+    "vmax",
+    "nodata",
+    "attr",
+    "stretch",
+    "expression"
+  ],
+  "open": [
+    "source",
+    "port",
+    "debug",
+    "host",
+    "client_port",
+    "client_host",
+    "client_prefix",
+    "cors_all"
+  ],
+  "_jupyter_server_extension_points": [],
+  "_load_jupyter_server_extension": [
+    "server_app"
+  ],
+  "cors_all": [],
+  "app": [],
+  "_WEB_DIR": [],
+  "_TEMPLATE_DIR": [],
+  "_STATIC_DIR": [],
+  "create_app": [
+    "url_prefix",
+    "cors_all",
+    "debug",
+    "cesium_token"
+  ],
+  "_build_template_context": [
+    "request",
+    "app",
+    "filename",
+    "cesium_token"
+  ],
+  "run_app": [
+    "filename",
+    "port",
+    "debug",
+    "browser",
+    "cesium_token",
+    "host",
+    "cors_all",
+    "run"
+  ],
+  "click_run_app": [],
+  "sentry_dsn": [],
+  "router": [],
+  "_parse_assets": [
+    "assets"
+  ],
+  "stac_info_view": [
+    "url",
+    "assets"
+  ],
+  "stac_statistics_view": [
+    "url",
+    "assets"
+  ],
+  "stac_tile_view": [
+    "z",
+    "x",
+    "y",
+    "format",
+    "url",
+    "assets",
+    "expression"
+  ],
+  "stac_thumbnail_view": [
+    "format",
+    "url",
+    "assets",
+    "expression",
+    "max_size"
+  ],
+  "get_clean_filename_from_params": [
+    "filename"
+  ],
+  "parse_style_params": [
+    "indexes",
+    "colormap",
+    "vmin",
+    "vmax",
+    "nodata"
+  ],
+  "list_palettes": [],
+  "metadata_view": [
+    "request",
+    "filename"
+  ],
+  "bounds_view": [
+    "request",
+    "filename",
+    "crs"
+  ],
+  "validate_cog_view": [
+    "request",
+    "filename"
+  ],
+  "statistics_view": [
+    "request",
+    "filename",
+    "indexes",
+    "expression"
+  ],
+  "thumbnail_view": [
+    "request",
+    "format",
+    "filename",
+    "indexes",
+    "colormap",
+    "vmin",
+    "vmax",
+    "nodata",
+    "crs",
+    "expression",
+    "stretch"
+  ],
+  "tile_view": [
+    "request",
+    "z",
+    "x",
+    "y",
+    "format",
+    "filename",
+    "indexes",
+    "colormap",
+    "vmin",
+    "vmax",
+    "nodata",
+    "expression",
+    "stretch"
+  ],
+  "part_view": [
+    "request",
+    "format",
+    "bbox",
+    "filename",
+    "indexes",
+    "colormap",
+    "vmin",
+    "vmax",
+    "nodata",
+    "expression",
+    "stretch",
+    "max_size",
+    "dst_crs",
+    "bounds_crs"
+  ],
+  "feature_view": [
+    "request",
+    "format",
+    "geojson",
+    "filename",
+    "indexes",
+    "colormap",
+    "vmin",
+    "vmax",
+    "nodata",
+    "expression",
+    "stretch",
+    "max_size",
+    "dst_crs"
+  ],
+  "_resolve_filename": [
+    "request",
+    "filename"
+  ],
+  "_get_reader": [
+    "filename"
+  ],
+  "_parse_file_list": [
+    "request",
+    "files"
+  ],
+  "mosaic_tile_view": [
+    "request",
+    "z",
+    "x",
+    "y",
+    "format",
+    "files",
+    "indexes"
+  ],
+  "mosaic_thumbnail_view": [
+    "request",
+    "format",
+    "files",
+    "indexes",
+    "max_size"
+  ],
+  "_get_xarray_reader": [
+    "request",
+    "key"
+  ],
+  "xarray_info_view": [
+    "request",
+    "key"
+  ],
+  "xarray_statistics_view": [
+    "request",
+    "key",
+    "indexes"
+  ],
+  "xarray_tile_view": [
+    "request",
+    "z",
+    "x",
+    "y",
+    "format",
+    "key",
+    "indexes"
+  ],
+  "xarray_thumbnail_view": [
+    "request",
+    "format",
+    "key",
+    "indexes",
+    "max_size"
+  ],
+  "_REGISTRY_LOCK": [],
+  "register_colormap": [
+    "colormap_data"
+  ],
+  "get_registered_colormap": [
+    "key"
+  ],
+  "is_rio_cmap": [
+    "name"
+  ],
+  "palette_valid_or_raise": [
+    "name"
+  ],
+  "get_palettes": [],
+  "_check_xarray": [],
+  "get_xarray_reader": [
+    "data_array"
+  ],
+  "get_xarray_tile": [
+    "reader",
+    "z",
+    "x",
+    "y",
+    "img_format",
+    "indexes"
+  ],
+  "get_xarray_preview": [
+    "reader",
+    "img_format",
+    "max_size",
+    "indexes"
+  ],
+  "get_xarray_info": [
+    "reader"
+  ],
+  "get_xarray_statistics": [
+    "reader",
+    "indexes"
+  ],
+  "get_stac_reader": [
+    "url"
+  ],
+  "get_stac_info": [
+    "reader",
+    "assets"
+  ],
+  "get_stac_statistics": [
+    "reader",
+    "assets"
+  ],
+  "get_stac_tile": [
+    "reader",
+    "z",
+    "x",
+    "y",
+    "assets",
+    "expression",
+    "img_format"
+  ],
+  "get_stac_preview": [
+    "reader",
+    "assets",
+    "expression",
+    "img_format",
+    "max_size"
+  ],
+  "ImageBytes": {
+    "__new__": [
+      "cls",
+      "source",
+      "mimetype"
+    ],
+    "mimetype": [
+      "self"
+    ],
+    "_repr_png_": [
+      "self"
+    ],
+    "_repr_jpeg_": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "get_cache_dir": [],
+  "purge_cache": [],
+  "make_vsi": [
+    "url"
+  ],
+  "get_clean_filename": [
+    "filename"
+  ],
+  "_FORMAT_MAP": [],
+  "format_to_encoding": [
+    "fmt"
+  ],
+  "make_crs": [
+    "projection"
+  ],
+  "_tile_reader": [
+    "asset",
+    "x",
+    "y",
+    "z"
+  ],
+  "_preview_reader": [
+    "asset"
+  ],
+  "get_mosaic_tile": [
+    "assets",
+    "z",
+    "x",
+    "y",
+    "img_format",
+    "indexes",
+    "pixel_selection"
+  ],
+  "get_mosaic_preview": [
+    "assets",
+    "img_format",
+    "max_size",
+    "indexes",
+    "pixel_selection"
+  ],
+  "get_reader": [
+    "path"
+  ],
+  "get_meta_data": [
+    "tile_source"
+  ],
+  "get_source_bounds": [
+    "tile_source",
+    "projection",
+    "decimal_places"
+  ],
+  "_handle_band_indexes": [
+    "tile_source",
+    "indexes"
+  ],
+  "_handle_nodata": [
+    "tile_source",
+    "nodata"
+  ],
+  "_handle_vmin_vmax": [
+    "indexes",
+    "vmin",
+    "vmax"
+  ],
+  "STRETCH_MODES": [],
+  "_apply_stretch": [
+    "img",
+    "stretch",
+    "tile_source",
+    "indexes"
+  ],
+  "_render_image": [
+    "tile_source",
+    "img",
+    "indexes",
+    "vmin",
+    "vmax",
+    "colormap",
+    "img_format",
+    "stretch"
+  ],
+  "get_tile": [
+    "tile_source",
+    "z",
+    "x",
+    "y",
+    "indexes",
+    "colormap",
+    "vmin",
+    "vmax",
+    "nodata",
+    "img_format",
+    "expression",
+    "stretch"
+  ],
+  "get_statistics": [
+    "tile_source",
+    "indexes",
+    "expression"
+  ],
+  "get_part": [
+    "tile_source",
+    "bbox",
+    "indexes",
+    "colormap",
+    "vmin",
+    "vmax",
+    "nodata",
+    "img_format",
+    "max_size",
+    "dst_crs",
+    "bounds_crs",
+    "expression",
+    "stretch"
+  ],
+  "get_feature": [
+    "tile_source",
+    "geojson",
+    "indexes",
+    "colormap",
+    "vmin",
+    "vmax",
+    "nodata",
+    "img_format",
+    "max_size",
+    "dst_crs",
+    "expression",
+    "stretch"
+  ],
+  "get_point": [
+    "tile_source",
+    "lon",
+    "lat"
+  ],
+  "get_preview": [
+    "tile_source",
+    "indexes",
+    "colormap",
+    "vmin",
+    "vmax",
+    "nodata",
+    "img_format",
+    "max_size",
+    "crs",
+    "expression",
+    "stretch"
+  ],
+  "DIRECTORY": [],
+  "str_to_bool": [
+    "v"
+  ],
+  "get_building_docs": [],
+  "get_data_path": [
+    "name"
+  ],
+  "get_sf_bay_url": [],
+  "get_elevation_us_url": [],
+  "get_oam2_url": [],
+  "convert_dropbox_url": [
+    "url"
+  ],
+  "clean_url": [
+    "url"
+  ],
+  "get_co_elevation_url": [],
+  "get_landsat_vegas_b30_url": [],
+  "get_landsat_vegas_b70_url": []
+}
