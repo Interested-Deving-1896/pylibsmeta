@@ -1,0 +1,2919 @@
+{
+  "DishkaError": {},
+  "InvalidMarkerError": {
+    "__init__": [
+      "self",
+      "marker"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "T": [],
+  "ExitCallable": [],
+  "Container": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "registry",
+      "parent_container",
+      "context",
+      "lock_factory",
+      "parent_closer",
+      "parent_getter"
+    ],
+    "scope": [
+      "self"
+    ],
+    "context": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "context",
+      "lock_factory",
+      "scope"
+    ],
+    "get": [
+      "self",
+      "dependency_type",
+      "component"
+    ],
+    "_get": [
+      "self",
+      "key"
+    ],
+    "_get_unlocked": [
+      "self",
+      "key"
+    ],
+    "close": [
+      "self",
+      "exception"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exception",
+      "exc_tb"
+    ],
+    "_has": [
+      "self",
+      "marker"
+    ],
+    "_has_context": [
+      "self",
+      "marker"
+    ]
+  },
+  "HasProvider": {
+    "has": [
+      "self",
+      "marker",
+      "container"
+    ],
+    "has_context": [
+      "self",
+      "marker",
+      "container"
+    ]
+  },
+  "make_container": [],
+  "CONTAINER_KEY": [],
+  "CompiledFactory": {
+    "__call__": [
+      "self",
+      "getter",
+      "exits",
+      "cache",
+      "context",
+      "container",
+      "has"
+    ]
+  },
+  "Registry": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "scope"
+    ],
+    "add_factory": [
+      "self",
+      "factory",
+      "provides"
+    ],
+    "collect_deps": [
+      "self",
+      "factory",
+      "activation_only"
+    ],
+    "_compile_deps": [
+      "self",
+      "factory",
+      "activation_only"
+    ],
+    "_compile_deps_async": [
+      "self",
+      "factory",
+      "activation_only"
+    ],
+    "get_compiled": [
+      "self",
+      "dependency"
+    ],
+    "_compile_factory": [
+      "self",
+      "factory"
+    ],
+    "get_compiled_async": [
+      "self",
+      "dependency"
+    ],
+    "_compile_factory_async": [
+      "self",
+      "factory"
+    ],
+    "get_compiled_activation": [
+      "self",
+      "dependency"
+    ],
+    "get_compiled_activation_async": [
+      "self",
+      "dependency"
+    ],
+    "get_factory": [
+      "self",
+      "dependency"
+    ],
+    "get_more_abstract_factories": [
+      "self",
+      "dependency"
+    ],
+    "get_more_concrete_factories": [
+      "self",
+      "dependency"
+    ],
+    "_get_type_var_factory": [
+      "self",
+      "dependency"
+    ],
+    "_specialize_generic": [
+      "self",
+      "factory",
+      "dependency_key"
+    ]
+  },
+  "AsyncContainer": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "registry",
+      "parent_container",
+      "context",
+      "lock_factory",
+      "parent_closer",
+      "parent_getter"
+    ],
+    "scope": [
+      "self"
+    ],
+    "context": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "context",
+      "lock_factory",
+      "scope"
+    ],
+    "get": [
+      "self",
+      "dependency_type",
+      "component"
+    ],
+    "get_sync": [
+      "self",
+      "dependency_type",
+      "component"
+    ],
+    "_get_sync": [
+      "self",
+      "key"
+    ],
+    "_get": [
+      "self",
+      "key"
+    ],
+    "_get_unlocked": [
+      "self",
+      "key"
+    ],
+    "close": [
+      "self",
+      "exception"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self",
+      "exc_type",
+      "exception",
+      "exc_tb"
+    ],
+    "_has": [
+      "self",
+      "marker"
+    ],
+    "_has_sync": [
+      "self",
+      "marker"
+    ],
+    "_has_context": [
+      "self",
+      "marker"
+    ]
+  },
+  "make_async_container": [],
+  "__all__": [],
+  "ContextProxy": {
+    "__init__": [
+      "self",
+      "context",
+      "cache"
+    ],
+    "__setitem__": [
+      "self",
+      "key",
+      "value"
+    ],
+    "__delitem__": [
+      "self",
+      "key"
+    ],
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ]
+  },
+  "_cycle_renderer": [],
+  "_linear_renderer": [],
+  "ExitError": {},
+  "NoContextValueError": {},
+  "UnsupportedFactoryError": {
+    "__init__": [
+      "self",
+      "factory_data"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "InvalidGraphError": {},
+  "InvalidSubfactoryScopeError": {
+    "__init__": [
+      "self",
+      "factory",
+      "subfactory"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "NoActivatorError": {
+    "__init__": [
+      "self",
+      "marker_key",
+      "requesting_factories"
+    ],
+    "_get_when_expression": [
+      "self",
+      "factory"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "ActivatorOverrideError": {
+    "__init__": [
+      "self",
+      "marker",
+      "activators"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "WhenOverrideConflictError": {
+    "__str__": [
+      "self"
+    ]
+  },
+  "NoFactoryError": {
+    "__init__": [
+      "self",
+      "requested",
+      "path",
+      "suggest_other_scopes",
+      "suggest_other_components",
+      "suggest_abstract_factories",
+      "suggest_concrete_factories"
+    ],
+    "add_path": [
+      "self",
+      "requested_by"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "NoActiveFactoryError": {
+    "__init__": [
+      "self",
+      "requested",
+      "variants",
+      "path"
+    ],
+    "add_path": [
+      "self",
+      "requested_by"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "AliasedFactoryNotFoundError": {
+    "__init__": [
+      "self",
+      "dependency",
+      "alias"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "NoChildScopesError": {
+    "__str__": [
+      "self"
+    ]
+  },
+  "NoNonSkippedScopesError": {
+    "__str__": [
+      "self"
+    ]
+  },
+  "ChildScopeNotFoundError": {
+    "__init__": [
+      "self",
+      "assumed_child_scope",
+      "current_scope"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "UnknownScopeError": {
+    "__init__": [
+      "self",
+      "scope",
+      "expected",
+      "factory",
+      "extend_message"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "CycleDependenciesError": {
+    "__init__": [
+      "self",
+      "path"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "GraphMissingFactoryError": {},
+  "ImplicitOverrideDetectedError": {
+    "__init__": [
+      "self",
+      "new",
+      "existing"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "NothingOverriddenError": {
+    "__init__": [
+      "self",
+      "factory"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "render_mermaid": [
+    "container"
+  ],
+  "render_d2": [
+    "container"
+  ],
+  "D2Renderer": {
+    "__init__": [
+      "self"
+    ],
+    "_escape": [
+      "self",
+      "line"
+    ],
+    "_render_node": [
+      "self",
+      "node"
+    ],
+    "_render_node_deps": [
+      "self",
+      "node"
+    ],
+    "_node_type": [
+      "self",
+      "node"
+    ],
+    "_render_group": [
+      "self",
+      "group",
+      "name_prefix"
+    ],
+    "_render_links": [
+      "self",
+      "group"
+    ],
+    "_fill_names": [
+      "self",
+      "groups",
+      "prefix"
+    ],
+    "render": [
+      "self",
+      "groups"
+    ]
+  },
+  "Transformer": {
+    "__init__": [
+      "self"
+    ],
+    "count": [
+      "self",
+      "prefix"
+    ],
+    "_is_empty": [
+      "self",
+      "registry"
+    ],
+    "_is_decorated": [
+      "self",
+      "key"
+    ],
+    "_node_type": [
+      "self",
+      "factory"
+    ],
+    "_make_factories": [
+      "self",
+      "scope",
+      "group",
+      "registry"
+    ],
+    "_fill_dependencies": [
+      "self",
+      "registry",
+      "parent_registries"
+    ],
+    "clean_groups": [
+      "self",
+      "groups"
+    ],
+    "transform": [
+      "self",
+      "container"
+    ]
+  },
+  "GroupType": {
+    "SCOPE": [],
+    "COMPONENT": []
+  },
+  "NodeType": {
+    "CONTEXT": [],
+    "FACTORY": [],
+    "DECORATOR": [],
+    "SELECTOR": [],
+    "COLLECTION": [],
+    "ALIAS": []
+  },
+  "Node": {},
+  "Group": {},
+  "Renderer": {
+    "render": [
+      "self",
+      "groups"
+    ]
+  },
+  "HTML_TEMPLATE": [],
+  "MERMAID_SYMBOLS_SUBST": [],
+  "MermaidRenderer": {
+    "__init__": [
+      "self"
+    ],
+    "_render_node": [
+      "self",
+      "node"
+    ],
+    "_escape": [
+      "self",
+      "line"
+    ],
+    "_render_node_deps": [
+      "self",
+      "node"
+    ],
+    "_node_type": [
+      "self",
+      "node"
+    ],
+    "_render_group": [
+      "self",
+      "group",
+      "name_prefix"
+    ],
+    "_render_links": [
+      "self",
+      "group"
+    ],
+    "_fill_nodes": [
+      "self",
+      "groups"
+    ],
+    "render": [
+      "self",
+      "groups"
+    ]
+  },
+  "ValidationSettings": {},
+  "DEFAULT_VALIDATION": [],
+  "STRICT_VALIDATION": [],
+  "BaseMarker": {
+    "__invert__": [
+      "self"
+    ],
+    "__or__": [
+      "self",
+      "other"
+    ],
+    "__and__": [
+      "self",
+      "other"
+    ]
+  },
+  "Marker": {
+    "__repr__": [
+      "self"
+    ]
+  },
+  "BoolMarker": {
+    "__invert__": [
+      "self"
+    ],
+    "__and__": [
+      "self",
+      "other"
+    ],
+    "__or__": [
+      "self",
+      "other"
+    ]
+  },
+  "NotMarker": {
+    "__invert__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "BinOpMarker": {
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ],
+    "__hash__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "OrMarker": {
+    "__invert__": [
+      "self"
+    ]
+  },
+  "AndMarker": {
+    "__invert__": [
+      "self"
+    ]
+  },
+  "or_markers": [],
+  "combine_when": [
+    "provider_when",
+    "source_when"
+  ],
+  "Has": {
+    "__repr__": [
+      "self"
+    ]
+  },
+  "HasContext": {
+    "__repr__": [
+      "self"
+    ]
+  },
+  "unpack_marker": [
+    "marker"
+  ],
+  "is_ignored_type": [
+    "origin_type"
+  ],
+  "ParentsResolver": {
+    "get_parents": [
+      "self",
+      "child_type"
+    ],
+    "_resolve_parents": [
+      "self",
+      "tp"
+    ],
+    "_fetch_parents": [
+      "self",
+      "tp"
+    ],
+    "_get_parents_of_parametrized_generic": [
+      "self",
+      "parametrized_generic"
+    ],
+    "_unpack_args": [
+      "self",
+      "args"
+    ],
+    "_get_type_var_to_actual": [
+      "self",
+      "type_vars",
+      "args"
+    ],
+    "_parametrize_by_dict": [
+      "self",
+      "type_var_to_actual",
+      "tp"
+    ],
+    "_get_parents": [
+      "self",
+      "tp"
+    ]
+  },
+  "StartingClassIgnoredError": {
+    "__init__": [
+      "self",
+      "hint"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "_FromComponent": {},
+  "FromComponent": [
+    "component"
+  ],
+  "DependencyKey": {
+    "with_component": [
+      "self",
+      "component"
+    ],
+    "replace": [
+      "self",
+      "new_hint"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "is_const": [
+      "self"
+    ],
+    "is_type_var": [
+      "self"
+    ],
+    "get_const_value": [
+      "self"
+    ],
+    "is_marker": [
+      "self"
+    ],
+    "as_compilation_key": [
+      "self"
+    ]
+  },
+  "compilation_to_dependency_key": [
+    "key"
+  ],
+  "const_dependency_key": [
+    "value"
+  ],
+  "dependency_key_to_hint": [
+    "key"
+  ],
+  "hint_to_dependency_key": [
+    "hint"
+  ],
+  "unwrap_type_alias": [
+    "hint"
+  ],
+  "DEFAULT_COMPONENT": [],
+  "FactoryType": {
+    "GENERATOR": [],
+    "ASYNC_GENERATOR": [],
+    "FACTORY": [],
+    "ASYNC_FACTORY": [],
+    "VALUE": [],
+    "ALIAS": [],
+    "CONTEXT": [],
+    "SELECTOR": [],
+    "COLLECTION": []
+  },
+  "FactoryData": {
+    "__slots__": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "_ScopeValue": {},
+  "global_order_counter": [],
+  "new_scope": [
+    "value"
+  ],
+  "BaseScope": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "value"
+    ],
+    "__lt__": [
+      "self",
+      "other"
+    ],
+    "__gt__": [
+      "self",
+      "other"
+    ],
+    "__le__": [
+      "self",
+      "other"
+    ],
+    "__ge__": [
+      "self",
+      "other"
+    ]
+  },
+  "Scope": {
+    "RUNTIME": [],
+    "APP": [],
+    "SESSION": [],
+    "REQUEST": [],
+    "ACTION": [],
+    "STEP": []
+  },
+  "InvalidScopes": {
+    "UNKNOWN_SCOPE": [],
+    "__str__": [
+      "self"
+    ]
+  },
+  "PathRenderer": {
+    "__init__": [
+      "self"
+    ],
+    "_arrow_cycle": [
+      "self",
+      "index",
+      "length"
+    ],
+    "_arrow_line": [
+      "self",
+      "index",
+      "length"
+    ],
+    "_arrow_failed_variant": [
+      "self"
+    ],
+    "_arrow": [
+      "self",
+      "index",
+      "length"
+    ],
+    "_switch_arrow": [
+      "self",
+      "index",
+      "length"
+    ],
+    "_switch_filler": [
+      "self"
+    ],
+    "_switch": [
+      "self",
+      "scope",
+      "component"
+    ],
+    "render": [
+      "self",
+      "path",
+      "last",
+      "variants"
+    ]
+  },
+  "Row": {},
+  "_render_args": [
+    "hint"
+  ],
+  "get_name": [
+    "hint"
+  ],
+  "get_source_name": [
+    "factory"
+  ],
+  "get_key_name": [
+    "key"
+  ],
+  "render_suggestions_for_missing": [
+    "requested_for",
+    "requested_key",
+    "suggest_other_scopes",
+    "suggest_other_components",
+    "suggest_abstract_factories",
+    "suggest_concrete_factories"
+  ],
+  "Special": {
+    "OMITTED": []
+  },
+  "coalesce": [
+    "a",
+    "b"
+  ],
+  "eval_maybe_forward": [
+    "t",
+    "wrapper"
+  ],
+  "eval_maybe_forward_many": [
+    "args",
+    "wrapper"
+  ],
+  "_TypeMatcher": {
+    "__init__": [
+      "self"
+    ],
+    "_is_broader_or_same_generic": [
+      "self",
+      "t1",
+      "t2"
+    ],
+    "_is_bound_broader": [
+      "self",
+      "t1",
+      "t2"
+    ],
+    "_is_constraint_broader": [
+      "self",
+      "t1",
+      "t2"
+    ],
+    "_is_broader_or_same_type_var": [
+      "self",
+      "t1",
+      "t2"
+    ],
+    "_is_literal_same_types": [
+      "self",
+      "t_literal",
+      "types_to_check"
+    ],
+    "is_broader_or_same_type": [
+      "self",
+      "t1",
+      "t2"
+    ]
+  },
+  "is_broader_or_same_type": [
+    "t1",
+    "t2"
+  ],
+  "get_typevar_replacement": [
+    "t1",
+    "t2"
+  ],
+  "UnsupportedGenericBoundsError": {
+    "__init__": [
+      "self",
+      "bounds"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "DependencySource": [],
+  "CompositeDependencySource": {
+    "__init__": [
+      "self",
+      "origin",
+      "dependency_sources",
+      "number"
+    ],
+    "__get__": [
+      "self",
+      "instance",
+      "owner"
+    ],
+    "__call__": [
+      "self"
+    ],
+    "__add__": [
+      "self",
+      "other"
+    ]
+  },
+  "ensure_composite": [
+    "origin"
+  ],
+  "Decorator": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "factory",
+      "provides",
+      "scope",
+      "when"
+    ],
+    "is_generic": [
+      "self"
+    ],
+    "match_type": [
+      "self",
+      "type_"
+    ],
+    "as_factory": [
+      "self"
+    ],
+    "_replace_dep": [
+      "self",
+      "old_key",
+      "new_key",
+      "typevar_replacement"
+    ],
+    "__get__": [
+      "self",
+      "instance",
+      "owner"
+    ],
+    "replace": [
+      "self"
+    ]
+  },
+  "_identity": [
+    "x"
+  ],
+  "Alias": {
+    "__slots__": [],
+    "__init__": [
+      "self"
+    ],
+    "as_factory": [
+      "self",
+      "scope",
+      "component"
+    ],
+    "__get__": [
+      "self",
+      "instance",
+      "owner"
+    ],
+    "replace": [
+      "self"
+    ]
+  },
+  "Factory": {
+    "__slots__": [],
+    "__init__": [
+      "self"
+    ],
+    "__get__": [
+      "self",
+      "instance",
+      "owner"
+    ],
+    "with_component": [
+      "self",
+      "component"
+    ],
+    "with_scope": [
+      "self",
+      "scope"
+    ],
+    "replace": [
+      "self",
+      "scope",
+      "dependencies",
+      "kw_dependencies",
+      "provides",
+      "when_active",
+      "when_override",
+      "when_component",
+      "when_dependencies"
+    ]
+  },
+  "FactoryUnionMode": {
+    "__slots__": [],
+    "__init__": [
+      "self"
+    ],
+    "with_component": [
+      "self",
+      "component"
+    ],
+    "__get__": [
+      "self",
+      "instance",
+      "owner"
+    ],
+    "as_factory": [
+      "self"
+    ]
+  },
+  "StaticEvaluationUnavailable": {
+    "__init__": [
+      "self",
+      "factory"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "Activator": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "factory",
+      "marker",
+      "marker_type"
+    ],
+    "__get__": [
+      "self",
+      "instance",
+      "owner"
+    ],
+    "_replace_dep": [
+      "self",
+      "dependency",
+      "marker"
+    ],
+    "with_component": [
+      "self",
+      "component"
+    ],
+    "as_factory": [
+      "self",
+      "scope",
+      "component",
+      "marker_key"
+    ]
+  },
+  "context_stub": [],
+  "ContextVariable": {
+    "__slots__": [],
+    "__init__": [
+      "self"
+    ],
+    "as_factory": [
+      "self",
+      "component"
+    ],
+    "__get__": [
+      "self",
+      "instance",
+      "owner"
+    ]
+  },
+  "_replace_type": [
+    "type_hint",
+    "old",
+    "new"
+  ],
+  "replace_type": [
+    "type_hint",
+    "old",
+    "new"
+  ],
+  "P": [],
+  "FunctionType": {
+    "GENERATOR": [],
+    "CALLABLE": []
+  },
+  "InjectedFuncType": {
+    "get_injected_func_type": [
+      "cls",
+      "func"
+    ]
+  },
+  "compile_injected_func": [
+    "injected_func_type",
+    "container_getter",
+    "additional_params",
+    "dependencies",
+    "func",
+    "provide_context",
+    "scope"
+  ],
+  "_build_container_get": [],
+  "NOT_ALLOWED_SYMBOLS": [],
+  "MAX_NAME_LENGTH": [],
+  "MAX_ITEMS_PER_LINE": [],
+  "CodeBuilder": {
+    "__init__": [
+      "self"
+    ],
+    "_make_global_name": [
+      "self",
+      "obj",
+      "name"
+    ],
+    "assign_expr": [
+      "self",
+      "target",
+      "value"
+    ],
+    "assign_local": [
+      "self",
+      "name",
+      "value"
+    ],
+    "global_": [
+      "self",
+      "obj",
+      "preferred_name"
+    ],
+    "block": [
+      "self"
+    ],
+    "statement": [
+      "self",
+      "expr"
+    ],
+    "if_": [
+      "self",
+      "expr"
+    ],
+    "elif_": [
+      "self",
+      "expr"
+    ],
+    "else_": [
+      "self"
+    ],
+    "call": [
+      "self",
+      "func"
+    ],
+    "await_": [
+      "self",
+      "expr"
+    ],
+    "return_": [
+      "self",
+      "expr"
+    ],
+    "yield_": [
+      "self",
+      "expr"
+    ],
+    "yield_from": [
+      "self",
+      "expr"
+    ],
+    "def_": [
+      "self",
+      "name",
+      "args"
+    ],
+    "try_": [
+      "self"
+    ],
+    "except_": [
+      "self",
+      "exception",
+      "as_"
+    ],
+    "raise_": [
+      "self",
+      "expr"
+    ],
+    "or_": [
+      "self",
+      "left",
+      "right"
+    ],
+    "and_": [
+      "self",
+      "left",
+      "right"
+    ],
+    "not_": [
+      "self",
+      "expr"
+    ],
+    "with_": [
+      "self",
+      "expr",
+      "name"
+    ],
+    "for_": [
+      "self",
+      "name",
+      "expr"
+    ],
+    "list_literal": [
+      "self"
+    ],
+    "tuple_literal": [
+      "self"
+    ],
+    "compile": [
+      "self",
+      "source_file_name"
+    ]
+  },
+  "FactoryBuilder": {
+    "__init__": [
+      "self"
+    ],
+    "global_": [
+      "self",
+      "obj",
+      "preferred_name"
+    ],
+    "register_provides": [
+      "self",
+      "provides"
+    ],
+    "make_getter": [
+      "self"
+    ],
+    "getter": [
+      "self",
+      "obj",
+      "compiled_deps"
+    ],
+    "cache": [
+      "self",
+      "factory"
+    ],
+    "return_if_cached": [
+      "self",
+      "factory"
+    ],
+    "assign_solved": [
+      "self",
+      "expr"
+    ],
+    "_has_context": [
+      "self",
+      "type_"
+    ],
+    "when": [
+      "self",
+      "marker",
+      "component",
+      "compiled_deps"
+    ],
+    "build_getter": [
+      "self"
+    ],
+    "handle_no_dep": [
+      "self",
+      "factory"
+    ]
+  },
+  "_sync_factory_body": [
+    "builder",
+    "source_call",
+    "factory",
+    "compiled_deps"
+  ],
+  "_async_factory_body": [
+    "builder",
+    "source_call",
+    "factory",
+    "compiled_deps"
+  ],
+  "_generator_body": [
+    "builder",
+    "source_call",
+    "factory",
+    "compiled_deps"
+  ],
+  "_async_generator_body": [
+    "builder",
+    "source_call",
+    "factory",
+    "compiled_deps"
+  ],
+  "_value_factory_body": [
+    "builder",
+    "source_call",
+    "factory",
+    "compiled_deps"
+  ],
+  "_alias_factory_body": [
+    "builder",
+    "source_call",
+    "factory",
+    "compiled_deps"
+  ],
+  "_context_factory_body": [
+    "builder",
+    "source_call",
+    "factory",
+    "compiled_deps"
+  ],
+  "_selector_factory_body": [
+    "builder",
+    "source_call",
+    "factory",
+    "compiled_deps"
+  ],
+  "_collection_factory_body": [
+    "builder",
+    "factory",
+    "compiled_deps"
+  ],
+  "ASYNC_TYPES": [],
+  "_select_when_dependency": [
+    "builder",
+    "factory",
+    "compiled_deps"
+  ],
+  "_make_body": [
+    "builder",
+    "factory",
+    "compiled_deps"
+  ],
+  "_has_deps": [
+    "factory"
+  ],
+  "compile_factory": [],
+  "compile_activation": [],
+  "_empty": [],
+  "_protocol_init": [],
+  "_is_bound_method": [
+    "obj"
+  ],
+  "_resolve_init": [
+    "tp"
+  ],
+  "_get_init_members": [
+    "tp"
+  ],
+  "_get_kw_dependencies": [
+    "hints",
+    "params"
+  ],
+  "_get_dependencies": [
+    "hints",
+    "params"
+  ],
+  "_guess_factory_type": [
+    "source"
+  ],
+  "_type_repr": [
+    "hint"
+  ],
+  "_async_generator_result": [
+    "hint"
+  ],
+  "_generator_result": [
+    "hint"
+  ],
+  "_alias_to_anyof": [
+    "possible_dependency"
+  ],
+  "_clean_result_hint": [
+    "factory_type",
+    "possible_dependency"
+  ],
+  "_params_without_hints": [
+    "func"
+  ],
+  "_make_factory_by_class": [],
+  "_check_self_name": [
+    "source",
+    "self"
+  ],
+  "_make_factory_by_function": [],
+  "_make_factory_by_static_method": [],
+  "calc_override": [],
+  "_make_factory_by_other_callable": [],
+  "_extract_source": [
+    "provides",
+    "source"
+  ],
+  "make_factory": [],
+  "_provide": [],
+  "provide_on_instance": [],
+  "provide": [
+    "source"
+  ],
+  "_provide_all": [],
+  "provide_all": [],
+  "provide_all_on_instance": [],
+  "unpack_factory": [
+    "factory"
+  ],
+  "unpack_decorator": [
+    "decorator"
+  ],
+  "unpack_alias": [
+    "alias"
+  ],
+  "InvalidMarkerAliasError": {
+    "__init__": [
+      "self",
+      "source",
+      "provides"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "alias": [
+    "source"
+  ],
+  "make_root_context_provider": [
+    "providers",
+    "context",
+    "scopes"
+  ],
+  "from_context": [
+    "provides"
+  ],
+  "collect": [
+    "source"
+  ],
+  "is_dependency_source": [
+    "attribute"
+  ],
+  "Provider": {
+    "__init__": [
+      "self",
+      "scope",
+      "component",
+      "when"
+    ],
+    "_init_dependency_sources": [
+      "self"
+    ],
+    "_name": [
+      "self"
+    ],
+    "_source_name": [
+      "self",
+      "factory"
+    ],
+    "_provides_name": [
+      "self",
+      "factory"
+    ],
+    "_add_dependency_sources": [
+      "self",
+      "sources"
+    ],
+    "activate": [
+      "self",
+      "source"
+    ],
+    "collect": [
+      "self",
+      "source"
+    ],
+    "provide": [
+      "self",
+      "source"
+    ],
+    "provide_all": [
+      "self"
+    ],
+    "alias": [
+      "self",
+      "source"
+    ],
+    "decorate": [
+      "self",
+      "source"
+    ],
+    "to_component": [
+      "self",
+      "component"
+    ],
+    "from_context": [
+      "self",
+      "provides"
+    ]
+  },
+  "BaseProvider": {
+    "__init__": [
+      "self",
+      "component"
+    ]
+  },
+  "ProviderWrapper": {
+    "__init__": [
+      "self",
+      "component",
+      "provider"
+    ]
+  },
+  "is_bound_method": [
+    "obj"
+  ],
+  "_get_self_type": [
+    "source"
+  ],
+  "normalize_factory_self": [
+    "self",
+    "factory"
+  ],
+  "normalize_alias_self": [
+    "self",
+    "alias"
+  ],
+  "normalize_decorator_self": [
+    "self",
+    "decorator"
+  ],
+  "normalize_sources_self": [
+    "source",
+    "dep_sources"
+  ],
+  "_decorate": [
+    "source",
+    "provides",
+    "scope"
+  ],
+  "decorate": [
+    "source",
+    "provides",
+    "scope",
+    "when"
+  ],
+  "decorate_on_instance": [
+    "source",
+    "provides",
+    "scope",
+    "when"
+  ],
+  "NoMarkerError": {
+    "__str__": [
+      "self"
+    ]
+  },
+  "_activate": [
+    "source"
+  ],
+  "activate": [
+    "source"
+  ],
+  "activate_on_instance": [
+    "source"
+  ],
+  "NotAFactoryError": {
+    "__init__": [
+      "self",
+      "attempted_factory"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "CannotUseProtocolError": {
+    "__str__": [
+      "self"
+    ]
+  },
+  "UnsupportedGeneratorReturnTypeError": {
+    "__init__": [
+      "self",
+      "name",
+      "guess",
+      "guessed_args"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "MissingHintsError": {
+    "__init__": [
+      "self",
+      "source",
+      "missing_hints"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "UndefinedTypeAnalysisError": {
+    "__init__": [
+      "self",
+      "source",
+      "type_name"
+    ],
+    "_construct_message": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "MissingReturnHintError": {
+    "__init__": [
+      "self",
+      "source"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "NoScopeSetInProvideError": {
+    "__init__": [
+      "self",
+      "provides_name",
+      "src_name",
+      "provider_name"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "NoScopeSetInContextError": {
+    "__init__": [
+      "self",
+      "provides_name",
+      "provider_name"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "IndependentDecoratorError": {
+    "__init__": [
+      "self",
+      "source"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "_true": [],
+  "_false": [],
+  "Requirement": {
+    "__slots__": [],
+    "__init__": [
+      "self"
+    ],
+    "_evaluate": [
+      "self"
+    ],
+    "fail_reason": [
+      "self"
+    ]
+  },
+  "PythonVersionRequirement": {
+    "__init__": [
+      "self",
+      "min_version"
+    ],
+    "_evaluate": [
+      "self"
+    ],
+    "fail_reason": [
+      "self"
+    ]
+  },
+  "DistributionRequirement": {
+    "__init__": [
+      "self",
+      "distribution_name"
+    ],
+    "_evaluate": [
+      "self"
+    ],
+    "fail_reason": [
+      "self"
+    ]
+  },
+  "DistributionVersionRequirement": {
+    "_VERSION_PATTERN": [],
+    "_version_regex": [],
+    "__init__": [
+      "self",
+      "distribution_name",
+      "min_version"
+    ],
+    "_evaluate": [
+      "self"
+    ],
+    "_remove_trailing_zeros": [
+      "self",
+      "data"
+    ],
+    "_make_comparator": [
+      "self",
+      "version"
+    ],
+    "fail_reason": [
+      "self"
+    ]
+  },
+  "PythonImplementationRequirement": {
+    "__init__": [
+      "self",
+      "implementation_name"
+    ],
+    "_evaluate": [
+      "self"
+    ],
+    "fail_reason": [
+      "self"
+    ]
+  },
+  "HAS_PY_310": [],
+  "HAS_TYPE_UNION_OP": [],
+  "HAS_TYPE_GUARD": [],
+  "HAS_TYPE_ALIAS": [],
+  "HAS_PARAM_SPEC": [],
+  "HAS_PY_311": [],
+  "HAS_NATIVE_EXC_GROUP": [],
+  "HAS_TYPED_DICT_REQUIRED": [],
+  "HAS_SELF_TYPE": [],
+  "HAS_TV_TUPLE": [],
+  "HAS_UNPACK": [],
+  "HAS_PY_312": [],
+  "HAS_TV_SYNTAX": [],
+  "HAS_PY_313": [],
+  "HAS_TV_DEFAULT": [],
+  "HAS_SUPPORTED_ATTRS_PKG": [],
+  "HAS_ATTRS_PKG": [],
+  "HAS_SUPPORTED_SQLALCHEMY_PKG": [],
+  "HAS_SQLALCHEMY_PKG": [],
+  "HAS_SUPPORTED_PYDANTIC_PKG": [],
+  "HAS_PYDANTIC_PKG": [],
+  "IS_CPYTHON": [],
+  "IS_PYPY": [],
+  "K_contra": [],
+  "V_co": [],
+  "Loader": [],
+  "Dumper": [],
+  "Converter": [],
+  "Coercer": [],
+  "OneArgCoercer": [],
+  "TypeHint": [],
+  "VarTuple": [],
+  "Catchable": [],
+  "BaseNormType": {
+    "origin": [
+      "self"
+    ],
+    "args": [
+      "self"
+    ],
+    "source": [
+      "self"
+    ]
+  },
+  "_BasicNormType": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "args"
+    ],
+    "args": [
+      "self"
+    ],
+    "source": [
+      "self"
+    ],
+    "__hash__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "_NormType": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "origin",
+      "args"
+    ],
+    "origin": [
+      "self"
+    ]
+  },
+  "_UnionNormType": {
+    "__init__": [
+      "self",
+      "args"
+    ],
+    "origin": [
+      "self"
+    ],
+    "_make_orderable": [
+      "self",
+      "obj"
+    ],
+    "_order_args": [
+      "self",
+      "args"
+    ]
+  },
+  "_type_and_value_iter": [
+    "args"
+  ],
+  "LiteralArg": [],
+  "_LiteralNormType": {
+    "__init__": [
+      "self",
+      "args"
+    ],
+    "origin": [
+      "self"
+    ],
+    "_make_orderable": [
+      "self",
+      "obj"
+    ],
+    "_order_args": [
+      "self",
+      "args"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__hash__": []
+  },
+  "_AnnotatedNormType": {
+    "origin": [
+      "self"
+    ],
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "args"
+    ],
+    "_calc_hash": [
+      "self"
+    ],
+    "__hash__": [
+      "self"
+    ]
+  },
+  "Variance": {
+    "INVARIANT": [],
+    "COVARIANT": [],
+    "CONTRAVARIANT": [],
+    "INFERRED": [],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "Bound": {},
+  "Constraints": {},
+  "TypeVarLimit": [],
+  "NormTV": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "var",
+      "limit"
+    ],
+    "origin": [
+      "self"
+    ],
+    "args": [
+      "self"
+    ],
+    "source": [
+      "self"
+    ],
+    "name": [
+      "self"
+    ],
+    "variance": [
+      "self"
+    ],
+    "limit": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__hash__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ]
+  },
+  "NormTVTuple": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "var"
+    ],
+    "origin": [
+      "self"
+    ],
+    "args": [
+      "self"
+    ],
+    "source": [
+      "self"
+    ],
+    "name": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__hash__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ]
+  },
+  "NormParamSpecMarker": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "param_spec"
+    ],
+    "param_spec": [
+      "self"
+    ],
+    "args": [
+      "self"
+    ],
+    "source": [
+      "self"
+    ],
+    "__hash__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ]
+  },
+  "_NormParamSpecArgs": {
+    "origin": [
+      "self"
+    ]
+  },
+  "_NormParamSpecKwargs": {
+    "origin": [
+      "self"
+    ]
+  },
+  "AnyNormTypeVarLike": [],
+  "NormTypeAlias": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "type_alias",
+      "args",
+      "type_vars"
+    ],
+    "origin": [
+      "self"
+    ],
+    "args": [
+      "self"
+    ],
+    "source": [
+      "self"
+    ],
+    "value": [
+      "self"
+    ],
+    "module": [
+      "self"
+    ],
+    "type_params": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__hash__": [
+      "self"
+    ]
+  },
+  "_PARAM_SPEC_MARKER_TYPES": [],
+  "make_norm_type": [
+    "origin",
+    "args"
+  ],
+  "NoneType": [],
+  "ANY_NT": [],
+  "_create_norm_union": [
+    "args"
+  ],
+  "_dedup": [
+    "inp"
+  ],
+  "_create_norm_literal": [
+    "args"
+  ],
+  "_replace_source": [
+    "norm"
+  ],
+  "_replace_source_with_union": [
+    "norm",
+    "sources"
+  ],
+  "NormAspect": [],
+  "AspectStorage": {
+    "add": [
+      "self",
+      "func"
+    ],
+    "copy": [
+      "self"
+    ]
+  },
+  "NotSubscribedError": {},
+  "N": [],
+  "TN": [],
+  "TypeNormalizer": {
+    "__init__": [
+      "self",
+      "implicit_params_getter"
+    ],
+    "_with_namespace": [
+      "self",
+      "namespace"
+    ],
+    "_with_module_namespace": [
+      "self",
+      "module_name"
+    ],
+    "normalize": [
+      "self",
+      "tp"
+    ],
+    "_norm_forward_ref": [
+      "self",
+      "tp"
+    ],
+    "_aspect_storage": [],
+    "_norm_iter": [
+      "self",
+      "tps"
+    ],
+    "MUST_SUBSCRIBED_ORIGINS": [],
+    "_check_bad_input": [
+      "self",
+      "tp",
+      "origin",
+      "args"
+    ],
+    "_norm_none": [
+      "self",
+      "tp",
+      "origin",
+      "args"
+    ],
+    "_norm_annotated": [
+      "self",
+      "tp",
+      "origin",
+      "args"
+    ],
+    "_get_bound": [
+      "self",
+      "type_var"
+    ],
+    "_norm_type_var": [
+      "self",
+      "tp",
+      "origin",
+      "args"
+    ],
+    "_norm_type_var_tuple": [
+      "self",
+      "tp",
+      "origin",
+      "args"
+    ],
+    "_norm_param_spec": [
+      "self",
+      "tp",
+      "origin",
+      "args"
+    ],
+    "_norm_type_alias_type": [
+      "self",
+      "tp",
+      "origin",
+      "args"
+    ],
+    "_norm_init_var": [
+      "self",
+      "tp",
+      "origin",
+      "args"
+    ],
+    "_norm_new_type": [
+      "self",
+      "tp",
+      "origin",
+      "args"
+    ],
+    "_norm_tuple": [
+      "self",
+      "tp",
+      "origin",
+      "args"
+    ],
+    "_unpack_tuple_elements": [
+      "self",
+      "args"
+    ],
+    "_unpack_generic_elements": [
+      "self",
+      "args"
+    ],
+    "_is_fixed_size_tuple": [
+      "self",
+      "tp"
+    ],
+    "_norm_callable": [
+      "self",
+      "tp",
+      "origin",
+      "args"
+    ],
+    "_norm_literal": [
+      "self",
+      "tp",
+      "origin",
+      "args"
+    ],
+    "_unfold_union_args": [
+      "self",
+      "norm_args"
+    ],
+    "_dedup_union_args": [
+      "self",
+      "args"
+    ],
+    "_merge_literals": [
+      "self",
+      "args"
+    ],
+    "_norm_union": [
+      "self",
+      "tp",
+      "origin",
+      "args"
+    ],
+    "_norm_type": [
+      "self",
+      "tp",
+      "origin",
+      "args"
+    ],
+    "_norm_generic_arg": [
+      "self",
+      "arg"
+    ],
+    "_norm_implicit_param": [
+      "self",
+      "param"
+    ],
+    "_norm_other": [
+      "self",
+      "tp",
+      "origin",
+      "args"
+    ]
+  },
+  "_STD_NORMALIZER": [],
+  "_cached_normalize": [],
+  "normalize_type": [
+    "tp"
+  ],
+  "M": [],
+  "K": [],
+  "MembersStorage": {},
+  "GenericResolver": {
+    "__init__": [
+      "self",
+      "members_getter"
+    ],
+    "get_resolved_members": [
+      "self",
+      "tp"
+    ],
+    "_get_members_of_parametrized_generic": [
+      "self",
+      "parametrized_generic"
+    ],
+    "_unpack_args": [
+      "self",
+      "args"
+    ],
+    "_get_type_var_to_actual": [
+      "self",
+      "type_vars",
+      "args"
+    ],
+    "_parametrize_by_dict": [
+      "self",
+      "type_var_to_actual",
+      "tp"
+    ],
+    "_get_members_by_parents": [
+      "self",
+      "tp"
+    ]
+  },
+  "strip_alias": [
+    "tp"
+  ],
+  "get_type_vars": [
+    "tp"
+  ],
+  "get_generic_args": [
+    "tp"
+  ],
+  "get_all_type_hints": [
+    "obj",
+    "globalns",
+    "localns"
+  ],
+  "make_fragments_collector": [],
+  "default_collector": [],
+  "exec_type_checking": [
+    "module"
+  ],
+  "is_subclass_soft": [
+    "cls",
+    "classinfo"
+  ],
+  "_NEW_TYPE_CLS": [],
+  "is_new_type": [
+    "tp"
+  ],
+  "_TYPED_DICT_MCS": [],
+  "is_typed_dict_class": [
+    "tp"
+  ],
+  "_NAMED_TUPLE_METHODS": [],
+  "is_named_tuple_class": [
+    "tp"
+  ],
+  "is_protocol": [
+    "tp"
+  ],
+  "create_union": [
+    "args"
+  ],
+  "is_parametrized": [
+    "tp"
+  ],
+  "is_generic": [
+    "tp"
+  ],
+  "is_bare_generic": [
+    "tp"
+  ],
+  "is_generic_class": [
+    "cls"
+  ],
+  "get_type_vars_of_parametrized": [
+    "tp"
+  ],
+  "eval_forward_ref": [
+    "namespace",
+    "forward_ref"
+  ],
+  "_TYPE_TAGS": [],
+  "strip_tags": [
+    "norm"
+  ],
+  "is_class_var": [
+    "norm"
+  ],
+  "_AnyStrT": [],
+  "_T1": [],
+  "_T2": [],
+  "_T1_co": [],
+  "_AnyStr_co": [],
+  "ImplicitParamsGetter": {
+    "_process_limit_element": [
+      "self",
+      "type_var",
+      "tp"
+    ],
+    "_process_type_var": [
+      "self",
+      "type_var"
+    ],
+    "get_implicit_params": [
+      "self",
+      "origin"
+    ]
+  },
+  "fill_implicit_params": [
+    "tp"
+  ],
+  "GraphValidator": {
+    "__init__": [
+      "self",
+      "registries"
+    ],
+    "_validate_key": [
+      "self",
+      "key",
+      "registry_index"
+    ],
+    "_validate_factory": [
+      "self",
+      "factory",
+      "registry_index"
+    ],
+    "validate": [
+      "self"
+    ],
+    "_find_other_scope": [
+      "self",
+      "key"
+    ],
+    "_find_other_component": [
+      "self",
+      "key"
+    ]
+  },
+  "BuildResult": {},
+  "GraphBuilder": {
+    "__init__": [
+      "self"
+    ],
+    "add_multicomponent_providers": [
+      "self"
+    ],
+    "add_providers": [
+      "self"
+    ],
+    "_add_provider": [
+      "self",
+      "provider"
+    ],
+    "_add_factory": [
+      "self",
+      "factory"
+    ],
+    "_add_component": [
+      "self",
+      "component"
+    ],
+    "_process_alias": [
+      "self",
+      "component",
+      "src"
+    ],
+    "_process_factory": [
+      "self",
+      "component",
+      "src"
+    ],
+    "_process_context_var": [
+      "self",
+      "component",
+      "src"
+    ],
+    "_collect_decorating_keys": [
+      "self",
+      "src",
+      "component"
+    ],
+    "_is_alias_source_decorated": [
+      "self",
+      "decorator",
+      "component",
+      "factory",
+      "processed_path"
+    ],
+    "_decorate_group": [
+      "self",
+      "decorator",
+      "provides"
+    ],
+    "_process_decorator": [
+      "self",
+      "component",
+      "src"
+    ],
+    "_process_union_mode": [
+      "self",
+      "component",
+      "src"
+    ],
+    "_process_activator": [
+      "self",
+      "component",
+      "src"
+    ],
+    "_get_factory_union_mode": [
+      "self",
+      "key"
+    ],
+    "_register_factory_markers": [
+      "self",
+      "factory"
+    ],
+    "_collect_prepared_factories": [
+      "self"
+    ],
+    "_calc_scope": [
+      "self",
+      "factory",
+      "all_factories",
+      "scopes_cache",
+      "path",
+      "requester_scope"
+    ],
+    "_make_registries": [
+      "self",
+      "factories"
+    ],
+    "_find_activator": [
+      "self",
+      "key"
+    ],
+    "_check_markers": [
+      "self"
+    ],
+    "_collect_markers": [
+      "self",
+      "factories"
+    ],
+    "_get_activator_factories": [
+      "self",
+      "factories",
+      "markers"
+    ],
+    "_fix_missing_scopes": [
+      "self",
+      "factories"
+    ],
+    "build": [
+      "self"
+    ]
+  },
+  "logger": [],
+  "InaccessibleContext": {
+    "_inaccessible": [
+      "self"
+    ],
+    "items": [],
+    "keys": [],
+    "values": [],
+    "__eq__": [],
+    "__iter__": [],
+    "__len__": [],
+    "__getitem__": [],
+    "__contains__": [],
+    "get": []
+  },
+  "INACCESSIBLE_CONTEXT": [],
+  "StaticRegistry": {
+    "__init__": [
+      "self",
+      "scope"
+    ],
+    "_is_static_allowed": [
+      "self",
+      "factory"
+    ],
+    "_compile_factory": [
+      "self",
+      "factory"
+    ],
+    "_compile_factory_async": [
+      "self",
+      "factory"
+    ]
+  },
+  "static_registry": [
+    "registry",
+    "start_scope"
+  ],
+  "ActivationContainer": {
+    "__init__": [
+      "self",
+      "context",
+      "registries",
+      "container_key",
+      "start_scope"
+    ],
+    "_get": [
+      "self",
+      "dep",
+      "scope"
+    ],
+    "is_active": [
+      "self",
+      "factory"
+    ],
+    "_get_context": [
+      "self",
+      "scope"
+    ],
+    "_has": [
+      "self",
+      "marker",
+      "scope"
+    ],
+    "export_caches": [
+      "self"
+    ]
+  },
+  "StaticEvaluator": {
+    "__init__": [
+      "self",
+      "registries",
+      "context",
+      "container_key",
+      "scopes",
+      "start_scope"
+    ],
+    "_eval_activation": [
+      "self",
+      "factory"
+    ],
+    "evaluate_static": [
+      "self"
+    ]
+  },
+  "SelectorGroupProcessor": {
+    "__init__": [
+      "self"
+    ],
+    "_ensure_override_flags": [
+      "self",
+      "factory",
+      "prev_factory"
+    ],
+    "unite": [
+      "self",
+      "union_mode",
+      "provides",
+      "group"
+    ]
+  },
+  "CollectionGroupProcessor": {
+    "__init__": [
+      "self"
+    ],
+    "unite": [
+      "self",
+      "union_mode",
+      "provides",
+      "group",
+      "collection_factory"
+    ]
+  },
+  "MovedObjectsTracker": {
+    "__init__": [
+      "self"
+    ],
+    "move": [
+      "self",
+      "provides"
+    ]
+  },
+  "inject": [
+    "func"
+  ],
+  "inject_websocket": [
+    "func"
+  ],
+  "_inject_wrapper": [
+    "func",
+    "param_name",
+    "param_annotation"
+  ],
+  "_inject_based_on_handler_type": [
+    "value"
+  ],
+  "_inject_route_handlers": [
+    "get_route_handlers"
+  ],
+  "_resolve_value": [
+    "router",
+    "value"
+  ],
+  "DishkaRouter": {
+    "__slots__": [],
+    "register": [
+      "self",
+      "value"
+    ]
+  },
+  "LitestarProvider": {
+    "request": [],
+    "socket": []
+  },
+  "make_add_request_container_middleware": [
+    "app"
+  ],
+  "setup_dishka": [
+    "container",
+    "app"
+  ],
+  "default_parse_dependency": [
+    "parameter",
+    "hint"
+  ],
+  "wrap_injection": [],
+  "is_dishka_injected": [
+    "func"
+  ],
+  "_add_params": [
+    "params",
+    "additional_params"
+  ],
+  "FlaskProvider": {
+    "request": []
+  },
+  "ContainerMiddleware": {
+    "__init__": [
+      "self",
+      "container"
+    ],
+    "enter_request": [
+      "self"
+    ],
+    "exit_request": [
+      "self"
+    ]
+  },
+  "_inject_routes": [
+    "scaffold",
+    "inject_func"
+  ],
+  "StarletteProvider": {
+    "request": [],
+    "websocket": []
+  },
+  "SyncContainerMiddleware": {
+    "__init__": [
+      "self",
+      "app"
+    ],
+    "__call__": [
+      "self",
+      "scope",
+      "receive",
+      "send"
+    ]
+  },
+  "CONTAINER_NAME": [],
+  "TelebotEvent": [],
+  "TelebotProvider": {
+    "message": []
+  },
+  "DishkaTask": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "_inject_commands": [
+    "context",
+    "command",
+    "inject_func"
+  ],
+  "RT": [],
+  "_dishka_scoped_container": [],
+  "GrpcioProvider": {
+    "message": [],
+    "servicer_context": []
+  },
+  "DishkaInterceptor": {
+    "__init__": [
+      "self",
+      "container"
+    ],
+    "intercept_service": [
+      "self",
+      "continuation",
+      "handler_call_details"
+    ]
+  },
+  "DishkaAioInterceptor": {
+    "__init__": [
+      "self",
+      "container"
+    ],
+    "intercept_service": [
+      "self",
+      "continuation",
+      "handler_call_details"
+    ]
+  },
+  "_ParamsP": [],
+  "_ReturnT": [],
+  "_EventT": [],
+  "_OnDialogEventData": [],
+  "_OnProcessResultEventResultT": [],
+  "_WidgetItemT": [],
+  "_WidgetT": [],
+  "_ManagedWidgetT": [],
+  "_DialogManagerT": [],
+  "_container_getter": [
+    "args",
+    "kwargs"
+  ],
+  "AiogramMiddlewareData": [],
+  "AiogramProvider": {
+    "event": [],
+    "middleware_data": []
+  },
+  "AutoInjectMiddleware": {
+    "__init__": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "handler",
+      "event",
+      "data"
+    ]
+  },
+  "inject_router": [
+    "router",
+    "inject_func"
+  ],
+  "inject_handler": [
+    "handler",
+    "inject_func"
+  ],
+  "job_start": [
+    "hook_func"
+  ],
+  "job_end": [
+    "hook_func"
+  ],
+  "AiohttpProvider": {
+    "request": []
+  },
+  "container_middleware": [
+    "request",
+    "handler"
+  ],
+  "_inject_route": [
+    "route",
+    "inject_func"
+  ],
+  "_on_shutdown": [
+    "app"
+  ],
+  "DISHKA_REQUEST_PARAM": [],
+  "DISHKA_WEBSOCKET_PARAM": [],
+  "ContainerSource": {
+    "REQUEST": [],
+    "WEBSOCKET": []
+  },
+  "ContainerResult": {},
+  "_async_depends": [
+    "dependency"
+  ],
+  "_replace_depends": [
+    "func",
+    "depends_factory"
+  ],
+  "_find_context_param": [
+    "func"
+  ],
+  "_wrap_fastapi_injection": [],
+  "inject_sync": [
+    "func"
+  ],
+  "DishkaRoute": {
+    "__init__": [
+      "self",
+      "path",
+      "endpoint"
+    ]
+  },
+  "DishkaSyncRoute": {
+    "__init__": [
+      "self",
+      "path",
+      "endpoint"
+    ]
+  },
+  "FastapiProvider": {
+    "request": [],
+    "websocket": []
+  },
+  "SanicProvider": {
+    "request": []
+  },
+  "_F": [],
+  "TaskiqProvider": {
+    "event": []
+  },
+  "_get_container": [
+    "state",
+    "context"
+  ],
+  "InvalidInjectedFuncTypeError": {
+    "__init__": [
+      "self",
+      "func_name"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "ImproperProvideContextUsageError": {
+    "__str__": [
+      "self"
+    ]
+  },
+  "FastStreamProvider": {
+    "context": [],
+    "message": []
+  },
+  "ApplicationLike": {},
+  "DishkaMiddleware": {
+    "__init__": [
+      "self",
+      "container"
+    ],
+    "__call__": [
+      "self"
+    ]
+  },
+  "_DishkaMiddleware": {
+    "__init__": [
+      "self",
+      "container"
+    ],
+    "consume_scope": [
+      "self",
+      "call_next",
+      "msg"
+    ]
+  },
+  "DISHKA_CONTEXT_PARAM": [],
+  "FASTSTREAM_05": [],
+  "FASTSTREAM_06": []
+}
