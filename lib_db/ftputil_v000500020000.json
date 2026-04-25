@@ -1,0 +1,690 @@
+{
+  "__all__": [],
+  "_maybe_send_opts_utf8_on": [
+    "session",
+    "encoding"
+  ],
+  "session_factory": [
+    "base_class",
+    "port",
+    "use_passive_mode"
+  ],
+  "StatCache": {
+    "_DEFAULT_CACHE_SIZE": [],
+    "__init__": [
+      "self"
+    ],
+    "enable": [
+      "self"
+    ],
+    "disable": [
+      "self"
+    ],
+    "resize": [
+      "self",
+      "new_size"
+    ],
+    "_age": [
+      "self",
+      "path"
+    ],
+    "clear": [
+      "self"
+    ],
+    "invalidate": [
+      "self",
+      "path"
+    ],
+    "__getitem__": [
+      "self",
+      "path"
+    ],
+    "__setitem__": [
+      "self",
+      "path",
+      "stat_result"
+    ],
+    "__contains__": [
+      "self",
+      "path"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "FTPFile": {
+    "_close_timeout": [],
+    "__init__": [
+      "self",
+      "host"
+    ],
+    "_open": [
+      "self",
+      "path",
+      "mode",
+      "buffering",
+      "encoding",
+      "errors",
+      "newline"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__next__": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ],
+    "__getattr__": [
+      "self",
+      "attr_name"
+    ],
+    "close": [
+      "self"
+    ],
+    "__getstate__": [
+      "self"
+    ]
+  },
+  "same_string_type_as": [
+    "type_source",
+    "string",
+    "encoding"
+  ],
+  "as_str": [
+    "string",
+    "encoding"
+  ],
+  "as_str_path": [
+    "path",
+    "encoding"
+  ],
+  "raise_for_empty_path": [
+    "path",
+    "path_argument_name"
+  ],
+  "RUNNING_UNDER_PY39_AND_UP": [],
+  "FTPLIB_PY38_ENCODING": [],
+  "FTPLIB_PY39_ENCODING": [],
+  "DEFAULT_ENCODING": [],
+  "_Path": {
+    "__init__": [
+      "self",
+      "host"
+    ],
+    "abspath": [
+      "self",
+      "path"
+    ],
+    "exists": [
+      "self",
+      "path"
+    ],
+    "getmtime": [
+      "self",
+      "path"
+    ],
+    "getsize": [
+      "self",
+      "path"
+    ],
+    "_is_file_system_entity": [
+      "self",
+      "path",
+      "dir_or_file"
+    ],
+    "isdir": [
+      "self",
+      "path"
+    ],
+    "isfile": [
+      "self",
+      "path"
+    ],
+    "islink": [
+      "self",
+      "path"
+    ],
+    "_walk": [
+      "self",
+      "top",
+      "func",
+      "arg"
+    ],
+    "walk": [
+      "self",
+      "top",
+      "func",
+      "arg"
+    ]
+  },
+  "_UNKNOWN_TIME_SHIFT": [],
+  "_DEFAULT_TIME_SHIFT": [],
+  "FTPHost": {
+    "__init__": [
+      "self"
+    ],
+    "keep_alive": [
+      "self"
+    ],
+    "_make_session": [
+      "self"
+    ],
+    "_copy": [
+      "self"
+    ],
+    "_available_child": [
+      "self"
+    ],
+    "open": [
+      "self",
+      "path",
+      "mode",
+      "buffering",
+      "encoding",
+      "errors",
+      "newline"
+    ],
+    "close": [
+      "self"
+    ],
+    "set_parser": [
+      "self",
+      "parser"
+    ],
+    "__rounded_time_shift": [
+      "time_shift"
+    ],
+    "__assert_valid_time_shift": [
+      "self",
+      "time_shift"
+    ],
+    "_warn_if_time_shift_unset_and_set_default": [
+      "self"
+    ],
+    "_time_shift_warning_suppression": [
+      "self"
+    ],
+    "set_time_shift": [
+      "self",
+      "time_shift"
+    ],
+    "time_shift": [
+      "self"
+    ],
+    "synchronize_times": [
+      "self"
+    ],
+    "copyfileobj": [
+      "source",
+      "target",
+      "max_chunk_size",
+      "callback"
+    ],
+    "_upload_files": [
+      "self",
+      "source_path",
+      "target_path"
+    ],
+    "upload": [
+      "self",
+      "source",
+      "target",
+      "callback"
+    ],
+    "upload_if_newer": [
+      "self",
+      "source",
+      "target",
+      "callback"
+    ],
+    "_download_files": [
+      "self",
+      "source_path",
+      "target_path"
+    ],
+    "download": [
+      "self",
+      "source",
+      "target",
+      "callback"
+    ],
+    "download_if_newer": [
+      "self",
+      "source",
+      "target",
+      "callback"
+    ],
+    "_check_inaccessible_login_directory": [
+      "self"
+    ],
+    "_robust_ftp_command": [
+      "self",
+      "command",
+      "path",
+      "descend_deeply"
+    ],
+    "getcwd": [
+      "self"
+    ],
+    "chdir": [
+      "self",
+      "path"
+    ],
+    "mkdir": [
+      "self",
+      "path",
+      "mode"
+    ],
+    "makedirs": [
+      "self",
+      "path",
+      "mode",
+      "exist_ok"
+    ],
+    "rmdir": [
+      "self",
+      "path"
+    ],
+    "remove": [
+      "self",
+      "path"
+    ],
+    "unlink": [],
+    "rmtree": [
+      "self",
+      "path",
+      "ignore_errors",
+      "onerror"
+    ],
+    "rename": [
+      "self",
+      "source",
+      "target"
+    ],
+    "_dir": [
+      "self",
+      "path"
+    ],
+    "listdir": [
+      "self",
+      "path"
+    ],
+    "lstat": [
+      "self",
+      "path",
+      "_exception_for_missing_path"
+    ],
+    "stat": [
+      "self",
+      "path",
+      "_exception_for_missing_path"
+    ],
+    "walk": [
+      "self",
+      "top",
+      "topdown",
+      "onerror",
+      "followlinks"
+    ],
+    "chmod": [
+      "self",
+      "path",
+      "mode"
+    ],
+    "__getstate__": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ]
+  },
+  "MAX_COPY_CHUNK_SIZE": [],
+  "LocalFile": {
+    "__init__": [
+      "self",
+      "name",
+      "mode"
+    ],
+    "exists": [
+      "self"
+    ],
+    "mtime": [
+      "self"
+    ],
+    "mtime_precision": [
+      "self"
+    ],
+    "fobj": [
+      "self"
+    ]
+  },
+  "RemoteFile": {
+    "__init__": [
+      "self",
+      "ftp_host",
+      "name",
+      "mode"
+    ],
+    "exists": [
+      "self"
+    ],
+    "mtime": [
+      "self"
+    ],
+    "mtime_precision": [
+      "self"
+    ],
+    "fobj": [
+      "self"
+    ]
+  },
+  "source_is_newer_than_target": [
+    "source_file",
+    "target_file"
+  ],
+  "chunks": [
+    "fobj",
+    "max_chunk_size"
+  ],
+  "copyfileobj": [
+    "source_fobj",
+    "target_fobj",
+    "max_chunk_size",
+    "callback"
+  ],
+  "copy_file": [
+    "source_file",
+    "target_file",
+    "conditional",
+    "callback"
+  ],
+  "CHUNK_SIZE": [],
+  "LocalHost": {
+    "open": [
+      "self",
+      "path",
+      "mode"
+    ],
+    "time_shift": [
+      "self"
+    ],
+    "__getattr__": [
+      "self",
+      "attr"
+    ]
+  },
+  "Syncer": {
+    "__init__": [
+      "self",
+      "source",
+      "target"
+    ],
+    "_mkdir": [
+      "self",
+      "target_dir"
+    ],
+    "_sync_file": [
+      "self",
+      "source_file",
+      "target_file"
+    ],
+    "_fix_sep_for_target": [
+      "self",
+      "path"
+    ],
+    "_sync_tree": [
+      "self",
+      "source_dir",
+      "target_dir"
+    ],
+    "sync": [
+      "self",
+      "source_path",
+      "target_path"
+    ]
+  },
+  "__version__": [],
+  "_ftputil_version": [],
+  "_python_version": [],
+  "_python_platform": [],
+  "version_info": [],
+  "__docformat__": [],
+  "DEFAULT_SIZE": [],
+  "CacheKeyError": {},
+  "LRUCache": {
+    "__init__": [
+      "self",
+      "size"
+    ],
+    "clear": [
+      "self"
+    ],
+    "_sort_key": [
+      "self"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "__contains__": [
+      "self",
+      "key"
+    ],
+    "__setitem__": [
+      "self",
+      "key",
+      "obj"
+    ],
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "__delitem__": [
+      "self",
+      "key"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__setattr__": [
+      "self",
+      "name",
+      "value"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "mtime": [
+      "self",
+      "key"
+    ]
+  },
+  "FTPError": {
+    "__init__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "InternalError": {},
+  "RootDirError": {},
+  "InaccessibleLoginDirError": {},
+  "TimeShiftError": {},
+  "ParserError": {},
+  "CacheMissError": {},
+  "NoEncodingError": {},
+  "KeepAliveError": {},
+  "FTPOSError": {},
+  "TemporaryError": {},
+  "PermanentError": {},
+  "CommandNotImplementedError": {},
+  "RecursiveLinksError": {},
+  "SyncError": {},
+  "FtplibErrorToFTPOSError": {
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_value",
+      "traceback"
+    ]
+  },
+  "ftplib_error_to_ftp_os_error": [],
+  "FTPIOError": {},
+  "FtplibErrorToFTPIOError": {
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_value",
+      "traceback"
+    ]
+  },
+  "ftplib_error_to_ftp_io_error": [],
+  "MINUTE_PRECISION": [],
+  "DAY_PRECISION": [],
+  "UNKNOWN_PRECISION": [],
+  "StatResult": {
+    "_index_mapping": [],
+    "__init__": [
+      "self",
+      "sequence"
+    ],
+    "__getattr__": [
+      "self",
+      "attr_name"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "Parser": {
+    "_month_numbers": [],
+    "_total_regex": [],
+    "ignores_line": [
+      "self",
+      "line"
+    ],
+    "parse_line": [
+      "self",
+      "line",
+      "time_shift"
+    ],
+    "parse_unix_mode": [
+      "self",
+      "mode_string"
+    ],
+    "_as_int": [
+      "self",
+      "int_string",
+      "int_description"
+    ],
+    "_datetime": [
+      "year",
+      "month",
+      "day",
+      "hour",
+      "minute",
+      "second"
+    ],
+    "parse_unix_time": [
+      "self",
+      "month_abbreviation",
+      "day",
+      "year_or_time",
+      "time_shift",
+      "with_precision"
+    ],
+    "parse_ms_time": [
+      "self",
+      "date",
+      "time_",
+      "time_shift",
+      "with_precision"
+    ]
+  },
+  "UnixParser": {
+    "_split_line": [
+      "line"
+    ],
+    "parse_line": [
+      "self",
+      "line",
+      "time_shift"
+    ]
+  },
+  "MSParser": {
+    "parse_line": [
+      "self",
+      "line",
+      "time_shift"
+    ]
+  },
+  "_Stat": {
+    "__init__": [
+      "self",
+      "host"
+    ],
+    "_host_dir": [
+      "self",
+      "path"
+    ],
+    "_stat_results_from_dir": [
+      "self",
+      "path"
+    ],
+    "_real_listdir": [
+      "self",
+      "path"
+    ],
+    "_real_lstat": [
+      "self",
+      "path",
+      "_exception_for_missing_path"
+    ],
+    "_real_stat": [
+      "self",
+      "path",
+      "_exception_for_missing_path"
+    ],
+    "__call_with_parser_retry": [
+      "self",
+      "method"
+    ],
+    "_listdir": [
+      "self",
+      "path"
+    ],
+    "_lstat": [
+      "self",
+      "path",
+      "_exception_for_missing_path"
+    ],
+    "_stat": [
+      "self",
+      "path",
+      "_exception_for_missing_path"
+    ]
+  }
+}
