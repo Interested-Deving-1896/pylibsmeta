@@ -1,0 +1,1634 @@
+{
+  "TestBitwiseOperations": {
+    "setUp": [
+      "self"
+    ],
+    "test_left_shift": [
+      "self"
+    ],
+    "test_right_shift": [
+      "self"
+    ],
+    "test_and": [
+      "self"
+    ],
+    "test_or": [
+      "self"
+    ],
+    "test_xor": [
+      "self"
+    ]
+  },
+  "THREAD_COUNT": [],
+  "TestContextManagerThreadSafety": {
+    "test_format_string_isolation": [
+      "self"
+    ],
+    "test_plural_isolation": [
+      "self"
+    ],
+    "test_bestprefix_isolation": [
+      "self"
+    ],
+    "test_issue_83_format_string_race": [
+      "self"
+    ],
+    "test_module_global_unchanged_by_context": [
+      "self"
+    ],
+    "test_format_string_restored_after_exception_in_thread": [
+      "self"
+    ]
+  },
+  "TestInstantiating": {
+    "test_init_no_arguments": [
+      "self"
+    ],
+    "test_init_value": [
+      "self"
+    ],
+    "test_init_bytes": [
+      "self"
+    ],
+    "test_init_bits": [
+      "self"
+    ],
+    "test_bad_init_value_bytes": [
+      "self"
+    ],
+    "test_bad_init_value_bits": [
+      "self"
+    ],
+    "test_bad_init_bytes_bits": [
+      "self"
+    ],
+    "test_bad_init_value_bytes_bits": [
+      "self"
+    ],
+    "test_bitmath_Bitmath_cannot_be_instantiated": [
+      "self"
+    ],
+    "test_ZiB_instantiation": [
+      "self"
+    ],
+    "test_YiB_instantiation": [
+      "self"
+    ],
+    "test_Zib_instantiation": [
+      "self"
+    ],
+    "test_Yib_instantiation": [
+      "self"
+    ],
+    "test_ZiB_in_all_unit_types": [
+      "self"
+    ],
+    "test_YiB_in_all_unit_types": [
+      "self"
+    ],
+    "test_Zib_in_all_unit_types": [
+      "self"
+    ],
+    "test_Yib_in_all_unit_types": [
+      "self"
+    ]
+  },
+  "TestBestPrefixBASE": {
+    "test_byte_round_down": [
+      "self"
+    ],
+    "test_bit_round_up": [
+      "self"
+    ],
+    "test_byte_no_rounding": [
+      "self"
+    ],
+    "test_best_prefix_with_bitmath_input": [
+      "self"
+    ],
+    "test_best_prefix_negative_less_than_a_byte": [
+      "self"
+    ],
+    "test_best_prefix_negative_huge_numbers": [
+      "self"
+    ]
+  },
+  "TestContextManager": {
+    "test_with_format": [
+      "self"
+    ],
+    "test_print_byte_plural": [
+      "self"
+    ],
+    "test_print_byte_plural_fmt_in_mgr": [
+      "self"
+    ],
+    "test_print_GiB_plural_fmt_in_mgr": [
+      "self"
+    ],
+    "test_print_GiB_singular_fmt_in_mgr": [
+      "self"
+    ],
+    "test_bestprefix_in_context_manager": [
+      "self"
+    ],
+    "test_bestprefix_restores_after_context": [
+      "self"
+    ],
+    "test_bestprefix_with_fmt_str": [
+      "self"
+    ],
+    "test_format_restored_after_exception": [
+      "self"
+    ],
+    "test_nested_context_managers": [
+      "self"
+    ]
+  },
+  "TestToBuiltInConversion": {
+    "test_to_int": [
+      "self"
+    ],
+    "test_to_float": [
+      "self"
+    ]
+  },
+  "TestBestPrefixNIST": {
+    "test_simple_round_up": [
+      "self"
+    ],
+    "test_simple_round_down": [
+      "self"
+    ],
+    "test_multi_oom_round_up": [
+      "self"
+    ],
+    "test_multi_oom_round_down": [
+      "self"
+    ],
+    "test_extreme_oom_round_up": [
+      "self"
+    ],
+    "test_extreme_oom_round_down": [
+      "self"
+    ],
+    "test_best_prefix_prefer_NIST_from_SI": [
+      "self"
+    ],
+    "test_best_prefix_prefer_NIST_from_NIST": [
+      "self"
+    ],
+    "test_best_prefix_NIST_default": [
+      "self"
+    ],
+    "test_best_prefix_identical_result": [
+      "self"
+    ],
+    "test_bitmath_best_prefix_NIST": [
+      "self"
+    ],
+    "test_bitmath_best_prefix_NIST_exbi": [
+      "self"
+    ],
+    "test_bit_input_returns_bit_family": [
+      "self"
+    ],
+    "test_bit_input_returns_mib_type": [
+      "self"
+    ],
+    "test_kib_input_returns_mib_type": [
+      "self"
+    ],
+    "test_mib_input_returns_gib_type": [
+      "self"
+    ],
+    "test_bit_multi_oom_round_up": [
+      "self"
+    ],
+    "test_bit_multi_oom_round_down": [
+      "self"
+    ],
+    "test_bit_input_prefer_nist_returns_bit_family": [
+      "self"
+    ]
+  },
+  "TestFutureMath": {
+    "test_bitmath_div_bitmath_is_number": [
+      "self"
+    ],
+    "test_bitmath_div_number_is_bitmath": [
+      "self"
+    ],
+    "test_number_div_bitmath_is_number": [
+      "self"
+    ],
+    "test_number_truediv_bitmath_is_number": [
+      "self"
+    ],
+    "test_bitmath_floordiv_bitmath_is_int": [
+      "self"
+    ],
+    "test_bitmath_floordiv_bitmath_exact_fit": [
+      "self"
+    ],
+    "test_bitmath_floordiv_number_preserves_lhs_type": [
+      "self"
+    ],
+    "test_bitmath_mod_bitmath_preserves_lhs_type": [
+      "self"
+    ],
+    "test_bitmath_mod_bitmath_exact_fit_is_zero": [
+      "self"
+    ],
+    "test_bitmath_mod_number_preserves_lhs_type": [
+      "self"
+    ],
+    "test_mod_roundtrip_identity": [
+      "self"
+    ],
+    "test_bitmath_divmod_bitmath": [
+      "self"
+    ],
+    "test_bitmath_divmod_exact_fit": [
+      "self"
+    ]
+  },
+  "nested": [],
+  "device_file_no": [],
+  "device": [],
+  "non_device_file": [],
+  "windows_device": [],
+  "windows_non_device": [],
+  "TestQueryDeviceCapacity": {
+    "test_query_device_capacity_linux_everything_is_wonderful": [
+      "self"
+    ],
+    "test_query_device_capacity_macos_raises": [
+      "self"
+    ],
+    "test_query_device_capacity_device_not_block": [
+      "self"
+    ],
+    "test_query_device_capacity_windows_everything_is_wonderful": [
+      "self"
+    ],
+    "test_query_device_capacity_windows_non_device_fails": [
+      "self"
+    ],
+    "test_query_device_capacity_unsupported_platform_fails": [
+      "self"
+    ]
+  },
+  "TestRichComparison": {
+    "setUp": [
+      "self"
+    ],
+    "test_less_than": [
+      "self"
+    ],
+    "test_less_than_equal": [
+      "self"
+    ],
+    "test_greater_than": [
+      "self"
+    ],
+    "test_greater_than_equal": [
+      "self"
+    ],
+    "test_less_than_num": [
+      "self"
+    ],
+    "test_less_than_equal_num": [
+      "self"
+    ],
+    "test_greater_than_num": [
+      "self"
+    ],
+    "test_greater_than_equal_num": [
+      "self"
+    ],
+    "test_equal": [
+      "self"
+    ],
+    "test_equal_false": [
+      "self"
+    ],
+    "test_equal_num": [
+      "self"
+    ],
+    "test_equal_false_num": [
+      "self"
+    ],
+    "test_ZiB_equal_direct": [
+      "self"
+    ],
+    "test_ZiB_equal_parsed": [
+      "self"
+    ],
+    "test_YiB_equal_direct": [
+      "self"
+    ],
+    "test_YiB_equal_parsed": [
+      "self"
+    ],
+    "test_Zib_equal_direct": [
+      "self"
+    ],
+    "test_Zib_equal_parsed": [
+      "self"
+    ],
+    "test_Yib_equal_direct": [
+      "self"
+    ],
+    "test_Yib_equal_parsed": [
+      "self"
+    ],
+    "test_ZiB_to_YiB_conversion": [
+      "self"
+    ],
+    "test_Zib_to_Yib_conversion": [
+      "self"
+    ]
+  },
+  "TestInit": {
+    "test___init__invalid_input_types": [
+      "self"
+    ],
+    "test___init_multiple_kwargs": [
+      "self"
+    ],
+    "test___init__valid_inputs": [
+      "self"
+    ]
+  },
+  "TestUtils": {
+    "test_capitalize_first_normal_word": [
+      "self"
+    ],
+    "test_capitalize_first_starts_with_number": [
+      "self"
+    ],
+    "test_capitalize_first_already_capped": [
+      "self"
+    ]
+  },
+  "TestBasicMath": {
+    "setUp": [
+      "self"
+    ],
+    "test_type_raw_int_equality": [
+      "self"
+    ],
+    "test_same_bitmath_types_equality": [
+      "self"
+    ],
+    "test_different_bitmath_types_equality": [
+      "self"
+    ],
+    "test_add_same_type_equal_same_type": [
+      "self"
+    ],
+    "test_add_different_types_equal_bitmath_type": [
+      "self"
+    ],
+    "test_adding_with_different_base_units": [
+      "self"
+    ],
+    "test_subtracting_with_different_base_units": [
+      "self"
+    ],
+    "test_absolute_positive_value": [
+      "self"
+    ],
+    "test_absolute_negative_value": [
+      "self"
+    ],
+    "test_inversion_to_negative": [
+      "self"
+    ],
+    "test_inversion_to_positive": [
+      "self"
+    ],
+    "bitmath_add_bitmath_is_bitmath": [
+      "self"
+    ],
+    "test_bitmath_add_number_is_number": [
+      "self"
+    ],
+    "test_number_add_bitmath_is_number": [
+      "self"
+    ],
+    "test_zero_add_bitmath_is_bitmath": [
+      "self"
+    ],
+    "test_bitmath_sub_bitmath_is_bitmath": [
+      "self"
+    ],
+    "test_bitmath_sub_number_is_number": [
+      "self"
+    ],
+    "test_number_sub_bitmath_is_number": [
+      "self"
+    ],
+    "test_bitmath_mul_bitmath_is_bitmath": [
+      "self"
+    ],
+    "test_bitmath_mul_number_is_bitmath": [
+      "self"
+    ],
+    "test_number_mul_bitmath_is_number": [
+      "self"
+    ],
+    "test_bitmath_div_bitmath_is_number": [
+      "self"
+    ],
+    "test_bitmath_div_number_is_bitmath": [
+      "self"
+    ],
+    "test_number_div_bitmath_is_number": [
+      "self"
+    ]
+  },
+  "TestRepresentation": {
+    "setUp": [
+      "self"
+    ],
+    "test_kB_unit": [
+      "self"
+    ],
+    "test_kB_system": [
+      "self"
+    ],
+    "test_kib_unit": [
+      "self"
+    ],
+    "test_kib_system": [
+      "self"
+    ],
+    "test_kib_binary": [
+      "self"
+    ],
+    "test_kib_bin": [
+      "self"
+    ],
+    "test_kib_base": [
+      "self"
+    ],
+    "test_kib_power": [
+      "self"
+    ],
+    "test_whole_kib_repr": [
+      "self"
+    ],
+    "test_whole_kib_str": [
+      "self"
+    ],
+    "test_half_mib_repr": [
+      "self"
+    ],
+    "test_half_mib_str": [
+      "self"
+    ],
+    "test_print_two_digits_precision": [
+      "self"
+    ],
+    "test_print_scientific_four_digits_precision": [
+      "self"
+    ],
+    "test_longer_formatting_string": [
+      "self"
+    ],
+    "test_change_format_string": [
+      "self"
+    ],
+    "test_print_byte_singular": [
+      "self"
+    ],
+    "test_dunder_format_empty_spec_returns_str": [
+      "self"
+    ],
+    "test_dunder_format_fstring_empty_spec": [
+      "self"
+    ],
+    "test_dunder_format_precision": [
+      "self"
+    ],
+    "test_dunder_format_fstring_with_unit": [
+      "self"
+    ],
+    "test_dunder_format_width_and_precision": [
+      "self"
+    ],
+    "test_dunder_format_columnar_table": [
+      "self"
+    ],
+    "test_dunder_format_zero_precision": [
+      "self"
+    ],
+    "test_dunder_format_scientific": [
+      "self"
+    ]
+  },
+  "TestCli": {
+    "test_cli_script_main_no_options": [
+      "self"
+    ],
+    "test_cli_script_main_no_units": [
+      "self"
+    ],
+    "test_cli_script_main_to_unit": [
+      "self"
+    ],
+    "test_cli_script_main_from_unit": [
+      "self"
+    ],
+    "test_cli_script_main_from_and_to_unit": [
+      "self"
+    ]
+  },
+  "TestParse": {
+    "test_parse_b": [
+      "self"
+    ],
+    "test_parse_B": [
+      "self"
+    ],
+    "test_parse_Gb": [
+      "self"
+    ],
+    "test_parse_MiB": [
+      "self"
+    ],
+    "test_parse_Mio": [
+      "self"
+    ],
+    "test_parse_Eio": [
+      "self"
+    ],
+    "test_parse_Zio": [
+      "self"
+    ],
+    "test_parse_Yio": [
+      "self"
+    ],
+    "test_parse_Mo": [
+      "self"
+    ],
+    "test_parse_Eo": [
+      "self"
+    ],
+    "test_parse_Zo": [
+      "self"
+    ],
+    "test_parse_Yo": [
+      "self"
+    ],
+    "test_parse_bad_float": [
+      "self"
+    ],
+    "test_parse_bad_unit": [
+      "self"
+    ],
+    "test_parse_bad_unit2": [
+      "self"
+    ],
+    "test_parse_no_unit": [
+      "self"
+    ],
+    "test_parse_string_non_string_input": [
+      "self"
+    ],
+    "test_parse_string_unicode": [
+      "self"
+    ],
+    "test_parse_non_strict_bad_input_type": [
+      "self"
+    ],
+    "test_parse_non_strict_invalid_input": [
+      "self"
+    ],
+    "test_parse_non_strict_good_number_input": [
+      "self"
+    ],
+    "test_parse_non_strict_handles_SI_K_unit": [
+      "self"
+    ],
+    "test_parse_non_strict_NIST_units": [
+      "self"
+    ],
+    "test_parse_non_strict_SI": [
+      "self"
+    ],
+    "test_parse_non_strict_NIST": [
+      "self"
+    ],
+    "test_parse_non_strict_default_system_is_NIST": [
+      "self"
+    ],
+    "test_parse_non_strict_explicit_SI": [
+      "self"
+    ],
+    "test_parse_non_strict_number_inputs_unaffected_by_system": [
+      "self"
+    ],
+    "test_parse_non_strict_github_issue_60": [
+      "self"
+    ],
+    "test_parse_non_strict_capital_B_is_Byte": [
+      "self"
+    ],
+    "test_parse_non_strict_lowercase_b_is_Bit": [
+      "self"
+    ],
+    "test_parse_non_strict_bit_word_forms": [
+      "self"
+    ],
+    "test_parse_non_strict_byte_word_forms": [
+      "self"
+    ],
+    "test_parse_string_unsafe_deprecation_warning": [
+      "self"
+    ],
+    "test_parse_string_unsafe_request_NIST": [
+      "self"
+    ]
+  },
+  "TestAttributeProperties": {
+    "setUp": [
+      "self"
+    ],
+    "test_read_bits": [
+      "self"
+    ],
+    "test_read_bytes": [
+      "self"
+    ],
+    "test_read_value": [
+      "self"
+    ],
+    "test_write_property_fails": [
+      "self"
+    ],
+    "test_ZiB_property": [
+      "self"
+    ],
+    "test_YiB_property": [
+      "self"
+    ],
+    "test_Zib_property": [
+      "self"
+    ],
+    "test_Yib_property": [
+      "self"
+    ]
+  },
+  "TestFileSize": {
+    "setUp": [
+      "self"
+    ],
+    "test_getsize_byte_system_NIST": [
+      "self"
+    ],
+    "test_getsize_kibibyte_system_NIST": [
+      "self"
+    ],
+    "test_getsize_byte_system_SI": [
+      "self"
+    ],
+    "test_getsize_kibibyte_system_SI": [
+      "self"
+    ],
+    "test_listdir_nosymlinks": [
+      "self"
+    ],
+    "test_listdir_symlinks_follow": [
+      "self"
+    ],
+    "test_listdir_symlinks_follow_relpath_false": [
+      "self"
+    ],
+    "test_listdir_filtering_nosymlinks": [
+      "self"
+    ],
+    "test_listdir_filtering_empty_match_nosymlinks": [
+      "self"
+    ]
+  },
+  "TestBestPrefixSI": {
+    "test_simple_round_up": [
+      "self"
+    ],
+    "test_simple_round_down": [
+      "self"
+    ],
+    "test_multi_oom_round_up": [
+      "self"
+    ],
+    "test_multi_oom_round_down": [
+      "self"
+    ],
+    "test_extreme_oom_round_up": [
+      "self"
+    ],
+    "test_extreme_oom_round_down": [
+      "self"
+    ],
+    "test_best_prefix_prefer_SI_from_SI": [
+      "self"
+    ],
+    "test_best_prefix_prefer_SI_from_NIST": [
+      "self"
+    ],
+    "test_best_prefix_SI_default": [
+      "self"
+    ],
+    "test_best_prefix_identical_result": [
+      "self"
+    ],
+    "test_bitmath_best_prefix_SI": [
+      "self"
+    ],
+    "test_bitmath_best_prefix_SI_yotta": [
+      "self"
+    ],
+    "test_bit_input_returns_bit_family_si": [
+      "self"
+    ],
+    "test_kb_input_returns_mb_type": [
+      "self"
+    ],
+    "test_mb_input_returns_gb_type": [
+      "self"
+    ],
+    "test_bit_multi_oom_round_up_si": [
+      "self"
+    ],
+    "test_bit_multi_oom_round_down_si": [
+      "self"
+    ],
+    "test_bit_input_prefer_si_returns_bit_family": [
+      "self"
+    ]
+  },
+  "TestFloor": {
+    "test_floor_fractional_returns_same_type": [
+      "self"
+    ],
+    "test_floor_rounds_down": [
+      "self"
+    ],
+    "test_floor_whole_number_unchanged": [
+      "self"
+    ],
+    "test_floor_negative_rounds_toward_negative_infinity": [
+      "self"
+    ],
+    "test_floor_division_result": [
+      "self"
+    ],
+    "test_floor_preserves_unit_across_types": [
+      "self"
+    ]
+  },
+  "TestCeil": {
+    "test_ceil_fractional_returns_same_type": [
+      "self"
+    ],
+    "test_ceil_rounds_up": [
+      "self"
+    ],
+    "test_ceil_whole_number_unchanged": [
+      "self"
+    ],
+    "test_ceil_negative_rounds_toward_zero": [
+      "self"
+    ],
+    "test_ceil_division_result": [
+      "self"
+    ],
+    "test_ceil_preserves_unit_across_types": [
+      "self"
+    ]
+  },
+  "TestRound": {
+    "test_round_no_ndigits_returns_same_type": [
+      "self"
+    ],
+    "test_round_no_ndigits_rounds_to_nearest": [
+      "self"
+    ],
+    "test_round_with_ndigits_returns_same_type": [
+      "self"
+    ],
+    "test_round_with_ndigits": [
+      "self"
+    ],
+    "test_round_whole_number_unchanged": [
+      "self"
+    ],
+    "test_round_negative_value": [
+      "self"
+    ],
+    "test_floor_ceil_round_not_equal_for_fractional": [
+      "self"
+    ]
+  },
+  "TestQueryCapacity": {
+    "test_query_capacity_posix_root": [
+      "self"
+    ],
+    "test_query_capacity_posix_cwd": [
+      "self"
+    ],
+    "test_query_capacity_tuple_unpacking": [
+      "self"
+    ],
+    "test_query_capacity_bestprefix_false_returns_bytes": [
+      "self"
+    ],
+    "test_query_capacity_bestprefix_true_preserves_bytes": [
+      "self"
+    ],
+    "test_query_capacity_system_nist_vs_si": [
+      "self"
+    ],
+    "test_query_capacity_pathlike_input": [
+      "self"
+    ],
+    "test_query_capacity_nonexistent_path_raises": [
+      "self"
+    ],
+    "test_query_capacity_windows_drive_letter_normalization": [
+      "self"
+    ],
+    "test_query_capacity_windows_pathlike_drive_letter": [
+      "self"
+    ]
+  },
+  "TestToTypeConversion": {
+    "setUp": [
+      "self"
+    ],
+    "test_to_same_unit": [
+      "self"
+    ],
+    "test_from_other": [
+      "self"
+    ],
+    "test_to_Bit": [
+      "self"
+    ],
+    "test_to_Byte": [
+      "self"
+    ],
+    "test_to_KiB": [
+      "self"
+    ],
+    "test_to_Kib": [
+      "self"
+    ],
+    "test_to_kb": [
+      "self"
+    ],
+    "test_to_MiB": [
+      "self"
+    ],
+    "test_to_Mib": [
+      "self"
+    ],
+    "test_to_MB": [
+      "self"
+    ],
+    "test_to_Mb": [
+      "self"
+    ],
+    "test_to_GiB": [
+      "self"
+    ],
+    "test_to_Gib": [
+      "self"
+    ],
+    "test_to_GB": [
+      "self"
+    ],
+    "test_to_Gb": [
+      "self"
+    ],
+    "test_to_TiB": [
+      "self"
+    ],
+    "test_to_Tib": [
+      "self"
+    ],
+    "test_to_TB": [
+      "self"
+    ],
+    "test_to_Tb": [
+      "self"
+    ],
+    "test_to_PiB": [
+      "self"
+    ],
+    "test_to_Pib": [
+      "self"
+    ],
+    "test_to_PB": [
+      "self"
+    ],
+    "test_to_Pb": [
+      "self"
+    ],
+    "test_to_EiB": [
+      "self"
+    ],
+    "test_to_Eib": [
+      "self"
+    ],
+    "test_to_EB": [
+      "self"
+    ],
+    "test_to_Eb": [
+      "self"
+    ],
+    "test_to_ZB": [
+      "self"
+    ],
+    "test_to_Zb": [
+      "self"
+    ],
+    "test_to_YB": [
+      "self"
+    ],
+    "test_to_Yb": [
+      "self"
+    ],
+    "test_to_mib_from_bit": [
+      "self"
+    ],
+    "test_converted_up_bitmath_value_equivalency": [
+      "self"
+    ],
+    "test_converted_down_bitmath_value_equivalency": [
+      "self"
+    ],
+    "test_convert_nist_to_si": [
+      "self"
+    ],
+    "test_convert_si_to_nist": [
+      "self"
+    ],
+    "test_from_other_bad_input": [
+      "self"
+    ]
+  },
+  "TestSorting": {
+    "test_sort_homogeneous_list": [
+      "self"
+    ],
+    "test_sort_heterogeneous_list": [
+      "self"
+    ],
+    "test_sort_key_bytes": [
+      "self"
+    ],
+    "test_sort_key_bits": [
+      "self"
+    ],
+    "test_sort_key_value": [
+      "self"
+    ]
+  },
+  "TestSum": {
+    "test_sum_mixed_units_equals_manual_addition": [
+      "self"
+    ],
+    "test_sum_returns_bitmath_instance": [
+      "self"
+    ],
+    "test_sum_builtin_now_works": [
+      "self"
+    ],
+    "test_sum_empty_iterable_returns_byte_zero": [
+      "self"
+    ],
+    "test_sum_empty_iterable_with_custom_start": [
+      "self"
+    ],
+    "test_sum_custom_start_unit": [
+      "self"
+    ],
+    "test_sum_same_units": [
+      "self"
+    ]
+  },
+  "TestCase": {
+    "assertListEqualUnordered": [
+      "self",
+      "l1",
+      "l2",
+      "msg"
+    ]
+  },
+  "SUPPORTED_PLATFORMS": [],
+  "__all__": [],
+  "ALL_UNIT_TYPES": [],
+  "_FORMAT_REPR": [],
+  "NIST": [],
+  "SI": [],
+  "SI_PREFIXES": [],
+  "SI_STEPS": [],
+  "NIST_PREFIXES": [],
+  "NIST_STEPS": [],
+  "format_string": [],
+  "format_plural": [],
+  "_thread_local": [],
+  "_FMT_SENTINEL": [],
+  "_get_format_string": [],
+  "_get_format_plural": [],
+  "_get_bestprefix": [],
+  "capitalize_first": [
+    "s"
+  ],
+  "Bitmath": {
+    "__init__": [
+      "self",
+      "value",
+      "bytes",
+      "bits"
+    ],
+    "_set_prefix_value": [
+      "self"
+    ],
+    "_to_prefix_value": [
+      "self",
+      "value"
+    ],
+    "_setup": [
+      "self"
+    ],
+    "_do_setup": [
+      "self"
+    ],
+    "_norm": [
+      "self",
+      "value"
+    ],
+    "base": [],
+    "binary": [],
+    "bin": [],
+    "bits": [],
+    "bytes": [],
+    "power": [],
+    "system": [
+      "self"
+    ],
+    "unit": [
+      "self"
+    ],
+    "unit_plural": [
+      "self"
+    ],
+    "unit_singular": [
+      "self"
+    ],
+    "value": [],
+    "from_other": [
+      "cls",
+      "item"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__format__": [
+      "self",
+      "fmt_spec"
+    ],
+    "format": [
+      "self",
+      "fmt"
+    ],
+    "best_prefix": [
+      "self",
+      "system"
+    ],
+    "to_Bit": [
+      "self"
+    ],
+    "to_Byte": [
+      "self"
+    ],
+    "Bit": [],
+    "Byte": [],
+    "to_KiB": [
+      "self"
+    ],
+    "to_Kib": [
+      "self"
+    ],
+    "to_kB": [
+      "self"
+    ],
+    "to_kb": [
+      "self"
+    ],
+    "KiB": [],
+    "Kib": [],
+    "kB": [],
+    "kb": [],
+    "to_MiB": [
+      "self"
+    ],
+    "to_Mib": [
+      "self"
+    ],
+    "to_MB": [
+      "self"
+    ],
+    "to_Mb": [
+      "self"
+    ],
+    "MiB": [],
+    "Mib": [],
+    "MB": [],
+    "Mb": [],
+    "to_GiB": [
+      "self"
+    ],
+    "to_Gib": [
+      "self"
+    ],
+    "to_GB": [
+      "self"
+    ],
+    "to_Gb": [
+      "self"
+    ],
+    "GiB": [],
+    "Gib": [],
+    "GB": [],
+    "Gb": [],
+    "to_TiB": [
+      "self"
+    ],
+    "to_Tib": [
+      "self"
+    ],
+    "to_TB": [
+      "self"
+    ],
+    "to_Tb": [
+      "self"
+    ],
+    "TiB": [],
+    "Tib": [],
+    "TB": [],
+    "Tb": [],
+    "to_PiB": [
+      "self"
+    ],
+    "to_Pib": [
+      "self"
+    ],
+    "to_PB": [
+      "self"
+    ],
+    "to_Pb": [
+      "self"
+    ],
+    "PiB": [],
+    "Pib": [],
+    "PB": [],
+    "Pb": [],
+    "to_EiB": [
+      "self"
+    ],
+    "to_Eib": [
+      "self"
+    ],
+    "to_EB": [
+      "self"
+    ],
+    "to_Eb": [
+      "self"
+    ],
+    "EiB": [],
+    "Eib": [],
+    "EB": [],
+    "Eb": [],
+    "to_ZiB": [
+      "self"
+    ],
+    "to_Zib": [
+      "self"
+    ],
+    "to_ZB": [
+      "self"
+    ],
+    "to_Zb": [
+      "self"
+    ],
+    "ZiB": [],
+    "Zib": [],
+    "ZB": [],
+    "Zb": [],
+    "to_YiB": [
+      "self"
+    ],
+    "to_Yib": [
+      "self"
+    ],
+    "to_YB": [
+      "self"
+    ],
+    "to_Yb": [
+      "self"
+    ],
+    "YiB": [],
+    "Yib": [],
+    "YB": [],
+    "Yb": [],
+    "__lt__": [
+      "self",
+      "other"
+    ],
+    "__le__": [
+      "self",
+      "other"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ],
+    "__gt__": [
+      "self",
+      "other"
+    ],
+    "__ge__": [
+      "self",
+      "other"
+    ],
+    "__add__": [
+      "self",
+      "other"
+    ],
+    "__sub__": [
+      "self",
+      "other"
+    ],
+    "__mul__": [
+      "self",
+      "other"
+    ],
+    "__truediv__": [
+      "self",
+      "other"
+    ],
+    "__floordiv__": [
+      "self",
+      "other"
+    ],
+    "__mod__": [
+      "self",
+      "other"
+    ],
+    "__divmod__": [
+      "self",
+      "other"
+    ],
+    "__radd__": [
+      "self",
+      "other"
+    ],
+    "__rsub__": [
+      "self",
+      "other"
+    ],
+    "__rmul__": [
+      "self",
+      "other"
+    ],
+    "__rtruediv__": [
+      "self",
+      "other"
+    ],
+    "__int__": [
+      "self"
+    ],
+    "__float__": [
+      "self"
+    ],
+    "__floor__": [
+      "self"
+    ],
+    "__ceil__": [
+      "self"
+    ],
+    "__round__": [
+      "self",
+      "ndigits"
+    ],
+    "__lshift__": [
+      "self",
+      "other"
+    ],
+    "__rshift__": [
+      "self",
+      "other"
+    ],
+    "__and__": [
+      "self",
+      "other"
+    ],
+    "__xor__": [
+      "self",
+      "other"
+    ],
+    "__or__": [
+      "self",
+      "other"
+    ],
+    "__neg__": [
+      "self"
+    ],
+    "__pos__": [
+      "self"
+    ],
+    "__abs__": [
+      "self"
+    ]
+  },
+  "Byte": {
+    "_setup": [
+      "self"
+    ]
+  },
+  "KiB": {
+    "_setup": [
+      "self"
+    ]
+  },
+  "Kio": [],
+  "MiB": {
+    "_setup": [
+      "self"
+    ]
+  },
+  "Mio": [],
+  "GiB": {
+    "_setup": [
+      "self"
+    ]
+  },
+  "Gio": [],
+  "TiB": {
+    "_setup": [
+      "self"
+    ]
+  },
+  "Tio": [],
+  "PiB": {
+    "_setup": [
+      "self"
+    ]
+  },
+  "Pio": [],
+  "EiB": {
+    "_setup": [
+      "self"
+    ]
+  },
+  "Eio": [],
+  "ZiB": {
+    "_setup": [
+      "self"
+    ]
+  },
+  "Zio": [],
+  "YiB": {
+    "_setup": [
+      "self"
+    ]
+  },
+  "Yio": [],
+  "kB": {
+    "_setup": [
+      "self"
+    ]
+  },
+  "ko": [],
+  "MB": {
+    "_setup": [
+      "self"
+    ]
+  },
+  "Mo": [],
+  "GB": {
+    "_setup": [
+      "self"
+    ]
+  },
+  "Go": [],
+  "TB": {
+    "_setup": [
+      "self"
+    ]
+  },
+  "To": [],
+  "PB": {
+    "_setup": [
+      "self"
+    ]
+  },
+  "Po": [],
+  "EB": {
+    "_setup": [
+      "self"
+    ]
+  },
+  "Eo": [],
+  "ZB": {
+    "_setup": [
+      "self"
+    ]
+  },
+  "Zo": [],
+  "YB": {
+    "_setup": [
+      "self"
+    ]
+  },
+  "Yo": [],
+  "Bit": {
+    "_set_prefix_value": [
+      "self"
+    ],
+    "_setup": [
+      "self"
+    ],
+    "_norm": [
+      "self",
+      "value"
+    ]
+  },
+  "Kib": {
+    "_setup": [
+      "self"
+    ]
+  },
+  "Mib": {
+    "_setup": [
+      "self"
+    ]
+  },
+  "Gib": {
+    "_setup": [
+      "self"
+    ]
+  },
+  "Tib": {
+    "_setup": [
+      "self"
+    ]
+  },
+  "Pib": {
+    "_setup": [
+      "self"
+    ]
+  },
+  "Eib": {
+    "_setup": [
+      "self"
+    ]
+  },
+  "Zib": {
+    "_setup": [
+      "self"
+    ]
+  },
+  "Yib": {
+    "_setup": [
+      "self"
+    ]
+  },
+  "kb": {
+    "_setup": [
+      "self"
+    ]
+  },
+  "Mb": {
+    "_setup": [
+      "self"
+    ]
+  },
+  "Gb": {
+    "_setup": [
+      "self"
+    ]
+  },
+  "Tb": {
+    "_setup": [
+      "self"
+    ]
+  },
+  "Pb": {
+    "_setup": [
+      "self"
+    ]
+  },
+  "Eb": {
+    "_setup": [
+      "self"
+    ]
+  },
+  "Zb": {
+    "_setup": [
+      "self"
+    ]
+  },
+  "Yb": {
+    "_setup": [
+      "self"
+    ]
+  },
+  "best_prefix": [
+    "bytes",
+    "system"
+  ],
+  "_query_device_capacity_windows": [
+    "device_fd"
+  ],
+  "query_device_capacity": [
+    "device_fd"
+  ],
+  "Capacity": {},
+  "_DRIVE_LETTER_RE": [],
+  "query_capacity": [
+    "path",
+    "bestprefix",
+    "system"
+  ],
+  "getsize": [
+    "path",
+    "bestprefix",
+    "system"
+  ],
+  "listdir": [
+    "search_base",
+    "followlinks",
+    "filter",
+    "relpath",
+    "bestprefix",
+    "system"
+  ],
+  "parse_string": [
+    "s",
+    "system",
+    "strict"
+  ],
+  "parse_string_unsafe": [
+    "s",
+    "system"
+  ],
+  "sum": [
+    "iterable",
+    "start"
+  ],
+  "format": [
+    "fmt_str",
+    "plural",
+    "bestprefix"
+  ],
+  "cli_script_main": [
+    "cli_args"
+  ],
+  "cli_script": [],
+  "_version_file": [],
+  "extensions": [],
+  "templates_path": [],
+  "source_suffix": [],
+  "master_doc": [],
+  "project": [],
+  "copyright": [],
+  "version": [],
+  "release": [],
+  "exclude_patterns": [],
+  "pygments_style": [],
+  "html_static_path": [],
+  "html_last_updated_fmt": [],
+  "html_domain_indices": [],
+  "html_use_index": [],
+  "html_show_sourcelink": [],
+  "html_show_sphinx": [],
+  "htmlhelp_basename": [],
+  "latex_elements": [],
+  "latex_documents": [],
+  "man_pages": [],
+  "texinfo_documents": []
+}
