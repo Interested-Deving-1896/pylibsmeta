@@ -1,0 +1,429 @@
+{
+  "mocked_mailjet": [],
+  "test_client_routing_speed": [
+    "benchmark"
+  ],
+  "test_request_cycle_performance": [
+    "benchmark",
+    "mocked_mailjet"
+  ],
+  "boot_test": [],
+  "pytestmark": [],
+  "client_live": [],
+  "client_live_invalid_auth": [],
+  "test_live_send_api_v3_1_sandbox_happy_path": [
+    "client_live"
+  ],
+  "test_live_send_api_v3_1_template_language_and_variables": [
+    "client_live"
+  ],
+  "test_live_email_api_v3_template_lifecycle": [
+    "client_live"
+  ],
+  "test_live_content_api_v1_template_lifecycle": [
+    "client_live"
+  ],
+  "test_live_path_traversal_prevention": [
+    "client_live"
+  ],
+  "test_live_crlf_header_injection_blocked": [
+    "client_live"
+  ],
+  "test_live_send_api_v3_1_bad_payload": [
+    "client_live"
+  ],
+  "test_live_send_api_v3_bad_payload": [
+    "client_live"
+  ],
+  "test_live_content_api_bad_path": [
+    "client_live"
+  ],
+  "test_live_content_api_v1_bearer_auth": [],
+  "test_live_statcounters_happy_path": [
+    "client_live"
+  ],
+  "test_get_no_param": [
+    "client_live"
+  ],
+  "test_post_with_no_param": [
+    "client_live"
+  ],
+  "test_client_initialization_with_invalid_api_key": [
+    "client_live_invalid_auth"
+  ],
+  "test_csv_import_flow": [
+    "client_live"
+  ],
+  "test_live_content_api_images_multipart_upload": [],
+  "test_live_contact_crud_lifecycle": [
+    "client_live"
+  ],
+  "test_live_template_crud_lifecycle": [
+    "client_live"
+  ],
+  "test_live_readonly_endpoints": [
+    "client_live"
+  ],
+  "test_live_auth_failure_handling": [
+    "client_live_invalid_auth"
+  ],
+  "test_legacy_exceptions_exist_and_inherit_properly": [],
+  "test_parse_response_emits_deprecation_warning": [],
+  "test_parse_response_handles_value_error_fallback": [],
+  "test_logging_handler_emits_deprecation_warning": [],
+  "test_legacy_kwargs_emit_deprecation_warning": [
+    "monkeypatch"
+  ],
+  "test_legacy_encoding_injection": [
+    "monkeypatch"
+  ],
+  "test_version_length_equal_three": [],
+  "test_get_version_is_none": [],
+  "test_get_version": [],
+  "test_get_version_raises_exception": [],
+  "client_offline": [],
+  "test_bearer_token_auth_initialization": [],
+  "test_basic_auth_initialization": [],
+  "test_auth_validation_errors": [],
+  "test_config_api_url_validation_scheme": [],
+  "test_config_api_url_validation_hostname": [],
+  "test_config_timeout_invalid_values": [],
+  "test_config_timeout_valid_values": [],
+  "test_url_sanitization_path_traversal": [],
+  "test_client_repr_and_str_redact_secrets": [],
+  "test_client_mount_retry_adapter": [],
+  "test_ambiguity_warnings_logged": [
+    "client_offline",
+    "monkeypatch"
+  ],
+  "test_dynamic_versions_standard_rest": [
+    "version",
+    "resource",
+    "expected_path",
+    "client_offline"
+  ],
+  "test_dynamic_versions_content_api_v1_routing": [
+    "client_offline"
+  ],
+  "test_dynamic_versions_content_api_v1_complex_routing": [
+    "client_offline"
+  ],
+  "test_dynamic_versions_send_api": [
+    "version",
+    "client_offline"
+  ],
+  "test_build_csv_url_all_branches": [
+    "client_offline"
+  ],
+  "test_send_api_v3_bad_path_routing": [
+    "client_offline"
+  ],
+  "test_content_api_bad_path_routing": [
+    "client_offline"
+  ],
+  "test_statcounters_endpoint_routing": [
+    "client_offline"
+  ],
+  "test_camel_case_to_dash_routing": [
+    "client_offline"
+  ],
+  "test_http_methods_and_timeout": [
+    "client_offline",
+    "monkeypatch"
+  ],
+  "test_client_coverage_edge_cases": [
+    "client_offline",
+    "monkeypatch"
+  ],
+  "test_send_api_v3_1_template_language_variables": [
+    "client_offline",
+    "monkeypatch"
+  ],
+  "test_api_call_exceptions_and_logging": [
+    "client_offline",
+    "monkeypatch",
+    "caplog"
+  ],
+  "test_client_custom_version": [],
+  "test_user_agent": [],
+  "test_config_getitem_all_branches": [],
+  "test_legacy_action_id_fallback": [
+    "client_offline",
+    "monkeypatch"
+  ],
+  "test_client_explicit_close": [
+    "monkeypatch"
+  ],
+  "test_client_context_manager_lifecycle": [
+    "monkeypatch"
+  ],
+  "test_client_context_manager_exception_safety": [
+    "monkeypatch"
+  ],
+  "test_endpoint_and_config_use_slots": [
+    "client_offline"
+  ],
+  "test_endpoint_precomputes_routing_strings": [
+    "client_offline"
+  ],
+  "test_client_retry_strategy_is_shared": [],
+  "test_security_guard_crlf_rejection_fast_regex": [],
+  "test_client_dir_includes_dynamic_endpoints": [
+    "client_offline"
+  ],
+  "test_header_constants_immutability": [],
+  "test_endpoint_headers_merge_safely": [
+    "client_offline"
+  ],
+  "test_pep578_audit_hooks_emitted": [
+    "mock_audit",
+    "client_offline",
+    "monkeypatch"
+  ],
+  "test_infinite_timeout_deprecation_warning": [
+    "monkeypatch"
+  ],
+  "test_retry_strategy_respects_headers": [],
+  "__all__": [],
+  "logger": [],
+  "ApiError": {},
+  "CriticalApiError": {},
+  "TimeoutError": {},
+  "AuthorizationError": {},
+  "ActionDeniedError": {},
+  "DoesNotExistError": {},
+  "ValidationError": {},
+  "ApiRateLimitError": {},
+  "logging_handler": [
+    "to_file"
+  ],
+  "parse_response": [
+    "response",
+    "log",
+    "debug"
+  ],
+  "Config": {
+    "__post_init__": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "key"
+    ]
+  },
+  "Endpoint": {
+    "__post_init__": [
+      "self"
+    ],
+    "_build_csv_url": [
+      "base_url",
+      "version",
+      "resource",
+      "name_lower",
+      "id_val"
+    ],
+    "_build_url": [
+      "self",
+      "id_val",
+      "action_id"
+    ],
+    "_build_headers": [
+      "self",
+      "custom_headers"
+    ],
+    "__call__": [
+      "self",
+      "method",
+      "filters",
+      "data",
+      "headers",
+      "id",
+      "action_id",
+      "timeout",
+      "ensure_ascii",
+      "data_encoding"
+    ],
+    "get": [
+      "self",
+      "id",
+      "filters",
+      "action_id"
+    ],
+    "create": [
+      "self",
+      "data",
+      "id",
+      "action_id",
+      "ensure_ascii",
+      "data_encoding"
+    ],
+    "update": [
+      "self",
+      "id",
+      "data",
+      "action_id",
+      "ensure_ascii",
+      "data_encoding"
+    ],
+    "delete": [
+      "self",
+      "id",
+      "action_id"
+    ]
+  },
+  "Client": {
+    "__init__": [
+      "self",
+      "auth",
+      "config"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__dir__": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "api_call": [
+      "self",
+      "method",
+      "url",
+      "filters",
+      "data",
+      "headers",
+      "timeout",
+      "ensure_ascii",
+      "data_encoding"
+    ],
+    "_prepare_payload": [
+      "data",
+      "ensure_ascii",
+      "data_encoding"
+    ],
+    "_log_response": [
+      "response",
+      "method",
+      "url",
+      "trace_str"
+    ],
+    "_extract_telemetry": [
+      "data",
+      "headers"
+    ]
+  },
+  "__version__": [],
+  "clean_version": [
+    "version_str"
+  ],
+  "get_version": [
+    "version"
+  ],
+  "SecurityGuard": {
+    "validate_attribute_access": [
+      "class_name",
+      "name"
+    ],
+    "sanitize_log_trace": [
+      "val"
+    ],
+    "check_request_security": [
+      "kwargs"
+    ],
+    "validate_config_url": [
+      "api_url",
+      "allowed_root_domain"
+    ],
+    "validate_dx_routing": [
+      "version",
+      "name_lower",
+      "resource_lower"
+    ],
+    "validate_crlf_headers": [
+      "custom_headers"
+    ]
+  },
+  "mailjet30": [],
+  "mailjet31": [],
+  "create_a_contact": [],
+  "create_contact_metadata": [],
+  "edit_contact_data": [],
+  "manage_contact_properties": [],
+  "exclude_a_contact_from_campaigns": [],
+  "create_a_contact_list": [],
+  "add_a_contact_to_a_contact_list": [],
+  "manage_the_subscription_status_of_an_existing_contact": [],
+  "manage_multiple_contacts_in_a_list": [],
+  "monitor_the_upload_job": [],
+  "manage_multiple_contacts_across_multiple_lists": [],
+  "upload_the_csv": [],
+  "import_csv_content_to_a_list": [],
+  "using_csv_with_atetime_contact_data": [],
+  "monitor_the_import_progress": [],
+  "error_handling": [],
+  "single_contact_exclusion": [],
+  "using_contact_managemanycontacts": [],
+  "using_csvimport": [],
+  "retrieve_a_contact": [],
+  "delete_the_contact": [],
+  "create_a_template": [],
+  "create_a_template_detailcontent": [],
+  "use_templates_with_send_api": [],
+  "auth_client": [],
+  "generate_token": [],
+  "BEARER_TOKEN": [],
+  "content_client": [],
+  "upload_image": [],
+  "create_a_campaign_draft": [],
+  "by_adding_custom_content": [],
+  "schedule_the_campaign": [],
+  "send_the_campaign_right_away": [],
+  "api_call_requirements": [],
+  "setup_webhook": [],
+  "create_your_segment": [],
+  "create_a_campaign_with_a_segmentation_filter": [],
+  "send_messages": [],
+  "retrieve_messages_from_campaign": [],
+  "retrieve_message": [],
+  "view_message_history": [],
+  "retrieve_statistic": [],
+  "setup_parse_api": [],
+  "create_segmentation_filter": [],
+  "section": [
+    "title"
+  ],
+  "safe_cleanup": [
+    "action",
+    "name"
+  ],
+  "run_readme_tests": [],
+  "basic_setup": [],
+  "validate_an_entire_domain": [],
+  "do_an_immediate_check_via_a_post": [],
+  "host_a_text_file": [],
+  "validation_by_doing_a_post": [],
+  "spf_and_dkim_validation": [],
+  "event_based_vs_message_based_stats_timing": [],
+  "view_the_spread_of_events_over_time": [],
+  "statistics_for_specific_recipient": [],
+  "stats_for_clicked_links": [],
+  "mailbox_provider_statistics": [],
+  "geographical_statistics": []
+}
