@@ -1,0 +1,461 @@
+{
+  "Configurater": {
+    "configuration_file_lst": [],
+    "__init__": [
+      "self",
+      "args"
+    ],
+    "do_parse_arguments": [
+      "self"
+    ],
+    "_do_read_configuration_file": [
+      "self"
+    ],
+    "_do_read_toml_configuration": [
+      "self"
+    ],
+    "_do_read_parser_configuration": [
+      "self"
+    ]
+  },
+  "__version__": [],
+  "description_to_list": [
+    "description",
+    "indentation",
+    "wrap_length"
+  ],
+  "do_clean_excess_whitespace": [
+    "text",
+    "indentation"
+  ],
+  "do_find_shortest_indentation": [
+    "lines"
+  ],
+  "do_normalize_line": [
+    "line",
+    "newline"
+  ],
+  "do_normalize_line_endings": [
+    "lines",
+    "newline"
+  ],
+  "do_normalize_summary": [
+    "summary",
+    "noncap"
+  ],
+  "do_reindent": [
+    "text",
+    "indentation"
+  ],
+  "do_split_description": [
+    "text",
+    "indentation",
+    "wrap_length",
+    "style"
+  ],
+  "do_split_first_sentence": [
+    "text"
+  ],
+  "do_split_summary": [
+    "lines"
+  ],
+  "do_split_summary_and_description": [
+    "contents"
+  ],
+  "do_strip_docstring": [
+    "docstring"
+  ],
+  "do_strip_leading_blank_lines": [
+    "text"
+  ],
+  "unicode": [],
+  "Encoder": {
+    "CR": [],
+    "LF": [],
+    "CRLF": [],
+    "DEFAULT_ENCODING": [],
+    "__init__": [
+      "self"
+    ],
+    "do_detect_encoding": [
+      "self",
+      "filename"
+    ],
+    "do_find_newline": [
+      "self",
+      "source"
+    ],
+    "do_open_with_encoding": [
+      "self",
+      "filename",
+      "mode"
+    ]
+  },
+  "_do_remove_preceding_blank_lines": [
+    "tokens",
+    "blocks"
+  ],
+  "_do_skip_newlines": [
+    "tokens",
+    "docstring_idx"
+  ],
+  "_is_multiline_parameter": [
+    "tokens",
+    "index"
+  ],
+  "_do_update_token_indices": [
+    "tokens"
+  ],
+  "_get_attribute_docstring_newlines": [
+    "tokens",
+    "index"
+  ],
+  "_get_class_docstring_newlines": [
+    "tokens",
+    "index"
+  ],
+  "_get_function_docstring_newlines": [
+    "tokens",
+    "index"
+  ],
+  "_get_module_docstring_newlines": [],
+  "_get_newlines_by_type": [
+    "tokens",
+    "index"
+  ],
+  "_get_num_rows_columns": [
+    "token"
+  ],
+  "_get_start_end_indices": [
+    "token",
+    "prev_token",
+    "num_rows",
+    "num_cols"
+  ],
+  "_get_unmatched_start_end_indices": [
+    "token",
+    "prev_token",
+    "num_rows"
+  ],
+  "FormatResult": {
+    "ok": [],
+    "error": [],
+    "interrupted": [],
+    "format_required": []
+  },
+  "Formatter": {
+    "parser": [],
+    "__init__": [
+      "self",
+      "args",
+      "stderror",
+      "stdin",
+      "stdout"
+    ],
+    "do_format_standard_in": [
+      "self",
+      "parser"
+    ],
+    "do_format_files": [
+      "self"
+    ],
+    "_do_add_blank_lines": [
+      "self",
+      "num_blank_lines",
+      "start_row",
+      "end_row"
+    ],
+    "_do_add_formatted_docstring": [
+      "self",
+      "token",
+      "next_token",
+      "docstring_type",
+      "blank_line_count"
+    ],
+    "_do_add_unformatted_docstring": [
+      "self",
+      "token",
+      "docstring_type"
+    ],
+    "_do_format_file": [
+      "self",
+      "filename"
+    ],
+    "_do_format_code": [
+      "self",
+      "source"
+    ],
+    "_do_format_docstring": [
+      "self",
+      "indentation",
+      "docstring"
+    ],
+    "_do_format_oneline_docstring": [
+      "self",
+      "indentation",
+      "contents",
+      "open_quote"
+    ],
+    "_do_format_multiline_docstring": [
+      "self",
+      "indentation",
+      "summary",
+      "description",
+      "open_quote"
+    ],
+    "_do_rewrite_docstring_blocks": [
+      "self",
+      "tokens"
+    ]
+  },
+  "ABBREVIATIONS": [],
+  "ALEMBIC_REGEX": [],
+  "BULLET_REGEX": [],
+  "CODE_PATTERN_REGEX": [],
+  "ENUM_REGEX": [],
+  "EPYTEXT_REGEX": [],
+  "GOOGLE_REGEX": [],
+  "LITERAL_REGEX": [],
+  "NUMPY_REGEX": [],
+  "NUMPY_SECTION_REGEX": [],
+  "OPTION_REGEX": [],
+  "REST_DIRECTIVE_REGEX": [],
+  "REST_INLINE_REGEX": [],
+  "REST_SECTION_REGEX": [],
+  "SPHINX_FIELD_PATTERNS": [],
+  "SPHINX_REGEX": [],
+  "URL_PATTERNS": [],
+  "URL_REGEX": [],
+  "URL_SKIP_REGEX": [],
+  "MAX_PYTHON_VERSION": [],
+  "DEFAULT_INDENT": [],
+  "HEURISTIC_MIN_LIST_ASPECT_RATIO": [],
+  "STR_QUOTE_TYPES": [],
+  "RAW_QUOTE_TYPES": [],
+  "UCODE_QUOTE_TYPES": [],
+  "QUOTE_TYPES": [],
+  "_PYTHON_LIBS": [],
+  "find_py_files": [
+    "sources",
+    "recursive",
+    "exclude"
+  ],
+  "has_correct_length": [
+    "length_range",
+    "start",
+    "end"
+  ],
+  "is_in_range": [
+    "line_range",
+    "start",
+    "end"
+  ],
+  "prefer_field_over_url": [
+    "field_idx",
+    "url_idx"
+  ],
+  "__all__": [],
+  "PY312": [],
+  "do_find_docstring_blocks": [
+    "tokens"
+  ],
+  "_do_find_anchor_index": [
+    "tokens",
+    "docstring_index",
+    "target"
+  ],
+  "is_attribute_docstring": [
+    "tokens",
+    "index"
+  ],
+  "is_class_docstring": [
+    "tokens",
+    "index"
+  ],
+  "is_closing_quotes": [
+    "token",
+    "prev_token"
+  ],
+  "is_code_line": [
+    "token"
+  ],
+  "is_definition_line": [
+    "token"
+  ],
+  "is_f_string": [
+    "token",
+    "prev_token"
+  ],
+  "is_function_or_method_docstring": [
+    "tokens",
+    "index"
+  ],
+  "is_inline_comment": [
+    "token"
+  ],
+  "is_line_following_indent": [
+    "token",
+    "prev_token"
+  ],
+  "is_module_docstring": [
+    "tokens",
+    "index"
+  ],
+  "is_nested_definition_line": [
+    "token"
+  ],
+  "is_newline_continuation": [
+    "token",
+    "prev_token"
+  ],
+  "is_string_variable": [
+    "token",
+    "prev_token"
+  ],
+  "is_docstring_at_end_of_file": [
+    "tokens",
+    "index"
+  ],
+  "_help": [],
+  "_main": [
+    "argv",
+    "standard_out",
+    "standard_error",
+    "standard_in"
+  ],
+  "main": [],
+  "_create_multiline_windows": [
+    "lines",
+    "window_size"
+  ],
+  "is_type_of_list": [
+    "text",
+    "strict",
+    "style"
+  ],
+  "is_bullet_list": [
+    "line"
+  ],
+  "is_definition_list": [
+    "line"
+  ],
+  "is_enumerated_list": [
+    "line"
+  ],
+  "is_heuristic_list": [
+    "text",
+    "strict"
+  ],
+  "is_option_list": [
+    "line"
+  ],
+  "do_find_rest_directives": [
+    "text"
+  ],
+  "do_find_inline_rest_markup": [
+    "text"
+  ],
+  "do_find_links": [
+    "text"
+  ],
+  "do_skip_link": [
+    "text",
+    "index"
+  ],
+  "is_inline_math": [
+    "line"
+  ],
+  "is_literal_block": [
+    "line"
+  ],
+  "is_probably_beginning_of_sentence": [
+    "line"
+  ],
+  "is_some_sort_of_code": [
+    "text"
+  ],
+  "is_string_constant": [
+    "token"
+  ],
+  "do_find_field_lists": [
+    "text",
+    "style"
+  ],
+  "is_field_list": [
+    "text",
+    "style"
+  ],
+  "is_epytext_field_list": [
+    "line"
+  ],
+  "is_google_field_list": [
+    "line"
+  ],
+  "is_numpy_field_list": [
+    "line"
+  ],
+  "is_sphinx_field_list": [
+    "line"
+  ],
+  "is_user_defined_field_list": [
+    "line"
+  ],
+  "is_alembic_header": [
+    "line"
+  ],
+  "is_numpy_section_header": [
+    "line"
+  ],
+  "is_rest_section_header": [
+    "line"
+  ],
+  "do_unwrap_summary": [
+    "summary"
+  ],
+  "do_wrap_summary": [
+    "summary",
+    "initial_indent",
+    "subsequent_indent",
+    "wrap_length"
+  ],
+  "do_wrap_description": [
+    "text",
+    "indentation",
+    "wrap_length",
+    "force_wrap",
+    "strict",
+    "rest_sections",
+    "style"
+  ],
+  "do_close_description": [
+    "text",
+    "text_idx",
+    "indentation"
+  ],
+  "do_wrap_urls": [
+    "text",
+    "url_idx",
+    "text_idx",
+    "indentation",
+    "wrap_length"
+  ],
+  "do_wrap_field_lists": [
+    "text",
+    "field_idx",
+    "lines",
+    "text_idx",
+    "indentation",
+    "wrap_length"
+  ],
+  "_do_join_field_body": [
+    "text",
+    "field_idx",
+    "idx"
+  ],
+  "_do_wrap_field": [
+    "field_name",
+    "field_body",
+    "indentation",
+    "wrap_length"
+  ]
+}
