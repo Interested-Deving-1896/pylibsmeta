@@ -1,0 +1,702 @@
+{
+  "TestBigramSimilarity": {
+    "test_identical_single_char": [
+      "self"
+    ],
+    "test_different_single_chars": [
+      "self"
+    ],
+    "test_single_char_vs_longer": [
+      "self"
+    ],
+    "test_identical_strings": [
+      "self"
+    ],
+    "test_completely_different": [
+      "self"
+    ],
+    "test_partial_overlap": [
+      "self"
+    ],
+    "test_case_insensitive": [
+      "self"
+    ],
+    "test_empty_strings": [
+      "self"
+    ],
+    "test_one_empty_one_nonempty": [
+      "self"
+    ]
+  },
+  "TestFindSimilarWord": {
+    "test_exact_threshold_is_accepted": [
+      "self"
+    ],
+    "test_below_threshold_is_rejected": [
+      "self"
+    ],
+    "test_most_similar_wins_above_threshold": [
+      "self"
+    ],
+    "test_no_candidates_returns_none": [
+      "self"
+    ],
+    "test_threshold_zero_accepts_any_positive_similarity": [
+      "self"
+    ],
+    "test_zero_similarity_never_returned": [
+      "self"
+    ]
+  },
+  "convert": [
+    "text"
+  ],
+  "TestLeadingHundredWithoutMultiplier": {
+    "test_hundred_twenty_three_million": [
+      "self"
+    ],
+    "test_hundred_as_standalone_leading_scale": [
+      "self"
+    ],
+    "test_hundred_forty_two": [
+      "self"
+    ]
+  },
+  "TestOrdinalNotConcatenatedWithFollowingNumber": {
+    "test_second_one_default": [
+      "self"
+    ],
+    "test_second_one_in_sentence": [
+      "self"
+    ],
+    "test_second_one_with_ordinal_ending": [
+      "self"
+    ],
+    "test_second_one_ordinals_disabled": [
+      "self"
+    ],
+    "test_add_ordinal_ending_does_not_crash": [
+      "self"
+    ]
+  },
+  "TestPunctuationInNumbers": {
+    "test_leading_letter_dot_number": [
+      "self"
+    ],
+    "test_ellipsis_before_number_with_comma": [
+      "self"
+    ],
+    "test_comma_thousands_separator_unchanged": [
+      "self"
+    ],
+    "test_comma_thousands_large": [
+      "self"
+    ],
+    "test_comma_thousands_in_sentence": [
+      "self"
+    ]
+  },
+  "TestHyphenSeparatedNumbers": {
+    "test_full_date": [
+      "self"
+    ],
+    "test_year_range": [
+      "self"
+    ],
+    "test_iso_date": [
+      "self"
+    ],
+    "test_hyphenated_word_numbers_still_work": [
+      "self"
+    ],
+    "test_hyphen_between_digit_and_letter_unchanged": [
+      "self"
+    ]
+  },
+  "TestCommaListOfNumbers": {
+    "test_comma_separated_small_numbers": [
+      "self"
+    ],
+    "test_comma_list_not_multiplied": [
+      "self"
+    ],
+    "test_two_comma_numbers_unchanged": [
+      "self"
+    ],
+    "test_two_comma_numbers_unchanged_variant": [
+      "self"
+    ]
+  },
+  "TestNonStandardEnglishLimitation": {
+    "test_standard_form_correct": [
+      "self"
+    ],
+    "test_non_standard_form_current_behaviour": [
+      "self"
+    ]
+  },
+  "test_str_unchanged_if_no_numbers": [
+    "input_text"
+  ],
+  "test_positive_integers": [
+    "input_text",
+    "expected"
+  ],
+  "test_years": [
+    "input_text",
+    "expected"
+  ],
+  "test_multiple_types_of_numbers": [
+    "input_text",
+    "expected"
+  ],
+  "test_others": [
+    "input_text",
+    "expected"
+  ],
+  "test_spelling_correction": [
+    "input_text",
+    "expected"
+  ],
+  "test_number_literals": [
+    "input_text",
+    "expected"
+  ],
+  "test_decimal_inputs_do_not_crash": [
+    "input_text",
+    "expected"
+  ],
+  "test_trailing_sentence_punctuation": [
+    "input_text",
+    "expected"
+  ],
+  "test_ordinal_conversion_switch_disabled": [
+    "ordinal_input",
+    "convert_ordinals",
+    "add_ordinal_ending",
+    "expected"
+  ],
+  "test_ordinal_at_the_end_of_the_sentence": [
+    "ordinal_input",
+    "convert_ordinals",
+    "add_ordinal_ending",
+    "expected"
+  ],
+  "test_ordinal_multi_occurrence_and_cardinal": [],
+  "test_time_formats": [
+    "input_text",
+    "expected_output"
+  ],
+  "TestNegationTokenType": {
+    "test_negative_is_negation_type": [
+      "self"
+    ],
+    "test_minus_is_negation_type": [
+      "self"
+    ],
+    "test_negation_value_raises": [
+      "self"
+    ],
+    "test_negation_scale_raises": [
+      "self"
+    ],
+    "test_negation_text_returns_word": [
+      "self"
+    ],
+    "test_minus_text_returns_word": [
+      "self"
+    ],
+    "test_negation_is_not_ordinal": [
+      "self"
+    ],
+    "test_negation_has_no_large_scale": [
+      "self"
+    ]
+  },
+  "TestNegationConversion": {
+    "test_negative_single_unit": [
+      "self"
+    ],
+    "test_minus_single_unit": [
+      "self"
+    ],
+    "test_negative_teens": [
+      "self"
+    ],
+    "test_negative_tens": [
+      "self"
+    ],
+    "test_negative_compound": [
+      "self"
+    ],
+    "test_negative_hundreds": [
+      "self"
+    ],
+    "test_negative_large": [
+      "self"
+    ],
+    "test_negative_literal_int": [
+      "self"
+    ],
+    "test_negative_literal_float": [
+      "self"
+    ],
+    "test_negative_in_sentence": [
+      "self"
+    ],
+    "test_negative_not_before_number_is_preserved": [
+      "self"
+    ],
+    "test_minus_not_before_number_is_preserved": [
+      "self"
+    ],
+    "test_multiple_negations": [
+      "self"
+    ],
+    "test_uppercase_negative": [
+      "self"
+    ],
+    "test_uppercase_minus": [
+      "self"
+    ]
+  },
+  "TestDecimalSeparatorTokenType": {
+    "test_point_is_decimal_separator_type": [
+      "self"
+    ],
+    "test_decimal_separator_value_raises": [
+      "self"
+    ],
+    "test_decimal_separator_scale_raises": [
+      "self"
+    ],
+    "test_decimal_separator_text_returns_word": [
+      "self"
+    ],
+    "test_point_is_not_ordinal": [
+      "self"
+    ],
+    "test_point_has_no_large_scale": [
+      "self"
+    ]
+  },
+  "TestDecimalWordConversion": {
+    "test_basic_decimal_word": [
+      "self"
+    ],
+    "test_unit_point_unit": [
+      "self"
+    ],
+    "test_compound_left": [
+      "self"
+    ],
+    "test_compound_right": [
+      "self"
+    ],
+    "test_both_compound": [
+      "self"
+    ],
+    "test_literal_left": [
+      "self"
+    ],
+    "test_literal_right": [
+      "self"
+    ],
+    "test_both_literals": [
+      "self"
+    ],
+    "test_point_in_sentence": [
+      "self"
+    ],
+    "test_point_without_right_number_preserved": [
+      "self"
+    ],
+    "test_point_without_left_number_preserved": [
+      "self"
+    ],
+    "test_multiple_decimals_in_sentence": [
+      "self"
+    ]
+  },
+  "TestNegativeDecimalCombined": {
+    "test_negative_decimal": [
+      "self"
+    ],
+    "test_minus_decimal": [
+      "self"
+    ],
+    "test_negative_compound_decimal": [
+      "self"
+    ],
+    "test_negative_decimal_in_sentence": [
+      "self"
+    ]
+  },
+  "TestEmptyAndTrivialInputs": {
+    "test_empty_string_returns_empty": [
+      "self"
+    ],
+    "test_single_non_number_char": [
+      "self"
+    ],
+    "test_single_number_word": [
+      "self"
+    ],
+    "test_whitespace_only": [
+      "self"
+    ]
+  },
+  "TestConjunctionOnlyInput": {
+    "test_all_conjunctions": [
+      "self"
+    ]
+  },
+  "TestSplitGlues": {
+    "test_basic_split": [
+      "self"
+    ],
+    "test_empty_string": [
+      "self"
+    ],
+    "test_trailing_punctuation_preserved": [
+      "self"
+    ],
+    "test_hyphen_separator": [
+      "self"
+    ],
+    "test_glue_is_preserved": [
+      "self"
+    ]
+  },
+  "TestSimilarityThresholdBoundary": {
+    "test_exact_threshold_match_is_accepted": [
+      "self"
+    ],
+    "test_just_below_threshold_is_rejected": [
+      "self"
+    ]
+  },
+  "TestDecimalSupport": {
+    "test_decimal_scale": [
+      "self"
+    ],
+    "test_decimal_hundred": [
+      "self"
+    ],
+    "test_standalone_decimal_unchanged": [
+      "self"
+    ]
+  },
+  "TestNegativePrefix": {
+    "test_negative_converts_to_unary_minus": [
+      "self"
+    ],
+    "test_negative_in_sentence": [
+      "self"
+    ]
+  },
+  "test_parser_combination_rule": [],
+  "test_parser_concatenation_rule": [],
+  "TestMatchType": {
+    "test_match_type_is_module_level": [
+      "self"
+    ],
+    "test_match_type_members": [
+      "self"
+    ],
+    "test_dual_scale_typo_is_gone": [
+      "self"
+    ],
+    "test_match_type_identity_stable_across_calls": [
+      "self"
+    ]
+  },
+  "TestActionPreconditions": {
+    "test_combination_action_raises_for_empty_list": [
+      "self"
+    ],
+    "test_combination_action_raises_for_single_token": [
+      "self"
+    ],
+    "test_combination_action_error_includes_count": [
+      "self"
+    ],
+    "test_concatenation_action_raises_for_empty_list": [
+      "self"
+    ],
+    "test_concatenation_action_accepts_single_token": [
+      "self"
+    ],
+    "test_combination_action_succeeds_with_two_tokens": [
+      "self"
+    ]
+  },
+  "TestConjunctionHandling": {
+    "_make_tokens": [
+      "self"
+    ],
+    "test_single_conjunction_between_numbers": [
+      "self"
+    ],
+    "test_double_conjunction_does_not_reread_same_index": [
+      "self"
+    ]
+  },
+  "test_lexer": [],
+  "TestOtherTokenValueScale": {
+    "_other_token": [
+      "self"
+    ],
+    "test_value_raises_for_other": [
+      "self"
+    ],
+    "test_scale_raises_for_other": [
+      "self"
+    ],
+    "test_error_message_includes_word": [
+      "self"
+    ],
+    "test_value_valid_for_numword_types": [
+      "self"
+    ],
+    "test_scale_valid_for_numword_types": [
+      "self"
+    ]
+  },
+  "TestOhToken": {
+    "test_oh_type_is_units": [
+      "self"
+    ],
+    "test_oh_is_not_ordinal": [
+      "self"
+    ],
+    "test_oh_value_is_zero": [
+      "self"
+    ],
+    "test_oh_scale_is_one": [
+      "self"
+    ],
+    "test_oh_does_not_collide_with_units_index": [
+      "self"
+    ],
+    "test_phone_number_concatenation": [
+      "self"
+    ],
+    "test_oh_case_insensitive": [
+      "self"
+    ]
+  },
+  "TestOrdinalEndingBreak": {
+    "test_twentieth_resolves_to_twenty": [
+      "self"
+    ],
+    "test_thirtieth_resolves_to_thirty": [
+      "self"
+    ],
+    "test_fortieth_resolves_to_forty": [
+      "self"
+    ],
+    "test_ieth_match_does_not_fall_through_to_th": [
+      "self"
+    ],
+    "test_plain_th_ordinal_still_works": [
+      "self"
+    ]
+  },
+  "NumEntry": {},
+  "WordType": {
+    "OTHER": [],
+    "LITERAL_INT": [],
+    "LITERAL_FLOAT": [],
+    "UNITS": [],
+    "TEENS": [],
+    "TENS": [],
+    "SCALES": [],
+    "CONJUNCTION": [],
+    "REPLACED": [],
+    "NEGATION": [],
+    "DECIMAL_SEPARATOR": []
+  },
+  "Token": {
+    "UNITS": [],
+    "TEENS": [],
+    "TENS": [],
+    "SCALES": [],
+    "SCALE_VALUES": [],
+    "INDIAN_SCALES": [],
+    "CONJUNCTION": [],
+    "NEGATION_WORDS": [],
+    "DECIMAL_SEPARATOR_WORDS": [],
+    "ORDINAL_WORDS": [],
+    "ORDINAL_ENDINGS": [],
+    "_numwords_build": [],
+    "numwords": [],
+    "__init__": [
+      "self",
+      "word",
+      "glue"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "is_ordinal": [
+      "self"
+    ],
+    "has_large_scale": [
+      "self"
+    ],
+    "value": [
+      "self"
+    ],
+    "scale": [
+      "self"
+    ],
+    "text": [
+      "self"
+    ]
+  },
+  "NoneToken": {
+    "__init__": [
+      "self"
+    ],
+    "is_ordinal": [
+      "self"
+    ],
+    "has_large_scale": [
+      "self"
+    ]
+  },
+  "_NUMERIC_TYPES": [],
+  "Text2Digits": {
+    "__init__": [
+      "self",
+      "similarity_threshold",
+      "convert_ordinals",
+      "add_ordinal_ending"
+    ],
+    "convert": [
+      "self",
+      "text"
+    ],
+    "_lex": [
+      "self",
+      "text"
+    ],
+    "_parse": [
+      "self",
+      "tokens"
+    ],
+    "_consume_numeric": [
+      "self",
+      "tokens",
+      "i"
+    ],
+    "_tokens_to_string": [
+      "self",
+      "tokens"
+    ]
+  },
+  "name": [],
+  "__all__": [],
+  "RuleToken": {
+    "__init__": [
+      "self",
+      "original_tokens"
+    ],
+    "is_ordinal": [
+      "self"
+    ],
+    "text": [
+      "self"
+    ]
+  },
+  "CombinedToken": {
+    "__init__": [
+      "self",
+      "original_tokens",
+      "value",
+      "glue"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "value": [
+      "self"
+    ],
+    "scale": [
+      "self"
+    ],
+    "text": [
+      "self"
+    ]
+  },
+  "ConcatenatedToken": {
+    "__init__": [
+      "self",
+      "original_tokens",
+      "text",
+      "glue"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "text": [
+      "self"
+    ]
+  },
+  "bigram_similarity": [
+    "word1",
+    "word2"
+  ],
+  "find_similar_word": [
+    "word",
+    "collection",
+    "threshold"
+  ],
+  "split_glues": [
+    "text",
+    "separator"
+  ],
+  "Rule": {
+    "match": [
+      "self",
+      "tokens"
+    ],
+    "action": [
+      "self",
+      "tokens"
+    ]
+  },
+  "MatchType": {
+    "SINGLE": [],
+    "SCALE": [],
+    "DUAL_SCALE": [],
+    "DUAL_HUNDRED": []
+  },
+  "CombinationRule": {
+    "__init__": [
+      "self"
+    ],
+    "match": [
+      "self",
+      "tokens"
+    ],
+    "action": [
+      "self",
+      "tokens"
+    ]
+  },
+  "ConcatenationRule": {
+    "__init__": [
+      "self"
+    ],
+    "match": [
+      "self",
+      "tokens"
+    ],
+    "action": [
+      "self",
+      "tokens"
+    ]
+  }
+}
