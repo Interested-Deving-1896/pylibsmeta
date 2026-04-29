@@ -1,0 +1,3873 @@
+{
+  "TestCheckImagePath": {
+    "test_valid_path": [
+      "self"
+    ],
+    "test_invalid_paths": [
+      "self"
+    ]
+  },
+  "TestCheckImageURL": {
+    "test_valid_url": [
+      "self"
+    ],
+    "test_invalid_url": [
+      "self"
+    ],
+    "test_url_not_found": [
+      "self"
+    ]
+  },
+  "TestLoadLabelmap": {
+    "test_yaml_dict_names": [
+      "self"
+    ]
+  },
+  "thisdir": [],
+  "TestFolderParser": {
+    "test_parse_chess": [
+      "self"
+    ],
+    "test_parse_sharks_coco": [
+      "self"
+    ],
+    "test_parse_sharks_createml": [
+      "self"
+    ],
+    "test_parse_sharks_yolov9": [
+      "self"
+    ],
+    "test_parse_mosquitos_csv": [
+      "self"
+    ],
+    "test_paligemma_format": [
+      "self"
+    ],
+    "test_parse_classification_folder_structure": [
+      "self"
+    ],
+    "test_parse_multilabel_classification_csv": [
+      "self"
+    ],
+    "test_coco_with_subdir_file_name_should_match_annotations": [
+      "self"
+    ],
+    "test_coco_root_annotation_matches_images_in_subdirs": [
+      "self"
+    ]
+  },
+  "_assertJsonMatchesFile": [
+    "actual",
+    "filename"
+  ],
+  "_FakeModel": {},
+  "_make_fake": [
+    "name"
+  ],
+  "TaskOfModelTypeTest": {
+    "test_detect_defaults": [
+      "self"
+    ],
+    "test_segment": [
+      "self"
+    ],
+    "test_pose": [
+      "self"
+    ],
+    "test_classify": [
+      "self"
+    ],
+    "test_obb": [
+      "self"
+    ]
+  },
+  "DetectYoloTaskTest": {
+    "test_ultralytics_class_names": [
+      "self"
+    ],
+    "test_unrecognized_returns_none": [
+      "self"
+    ]
+  },
+  "DetectRfdetrTaskTest": {
+    "test_segmentation_model_names": [
+      "self"
+    ],
+    "test_detection_model_names": [
+      "self"
+    ],
+    "test_segmentation_head_fallback": [
+      "self"
+    ],
+    "test_model_name_preferred_over_args": [
+      "self"
+    ],
+    "test_unrecognized_returns_none": [
+      "self"
+    ]
+  },
+  "TestVersions": {
+    "test_wrong_dependencies_versions": [
+      "self"
+    ]
+  },
+  "TestGetModelFormat": {
+    "test_get_model_format_with_various_ids": [
+      "self"
+    ]
+  },
+  "__version__": [],
+  "TestListBatches": {
+    "test_success": [
+      "self",
+      "mock_get"
+    ],
+    "test_error": [
+      "self",
+      "mock_get"
+    ]
+  },
+  "TestGetBatch": {
+    "test_success": [
+      "self",
+      "mock_get"
+    ],
+    "test_error": [
+      "self",
+      "mock_get"
+    ]
+  },
+  "TestListAnnotationJobs": {
+    "test_success": [
+      "self",
+      "mock_get"
+    ],
+    "test_error": [
+      "self",
+      "mock_get"
+    ]
+  },
+  "TestGetAnnotationJob": {
+    "test_success": [
+      "self",
+      "mock_get"
+    ],
+    "test_error": [
+      "self",
+      "mock_get"
+    ]
+  },
+  "TestCreateAnnotationJob": {
+    "test_success": [
+      "self",
+      "mock_post"
+    ],
+    "test_success_200": [
+      "self",
+      "mock_post"
+    ],
+    "test_with_assignees": [
+      "self",
+      "mock_post"
+    ],
+    "test_error": [
+      "self",
+      "mock_post"
+    ]
+  },
+  "TestListFolders": {
+    "test_success": [
+      "self",
+      "mock_get"
+    ],
+    "test_error": [
+      "self",
+      "mock_get"
+    ]
+  },
+  "TestGetFolder": {
+    "test_success": [
+      "self",
+      "mock_get"
+    ],
+    "test_error": [
+      "self",
+      "mock_get"
+    ]
+  },
+  "TestCreateFolder": {
+    "test_success": [
+      "self",
+      "mock_post"
+    ],
+    "test_with_parent_and_projects": [
+      "self",
+      "mock_post"
+    ],
+    "test_error": [
+      "self",
+      "mock_post"
+    ]
+  },
+  "TestUpdateFolder": {
+    "test_success": [
+      "self",
+      "mock_post"
+    ],
+    "test_error": [
+      "self",
+      "mock_post"
+    ]
+  },
+  "TestDeleteFolder": {
+    "test_success": [
+      "self",
+      "mock_delete"
+    ],
+    "test_error": [
+      "self",
+      "mock_delete"
+    ]
+  },
+  "TestListWorkflows": {
+    "test_success": [
+      "self",
+      "mock_get"
+    ],
+    "test_error": [
+      "self",
+      "mock_get"
+    ]
+  },
+  "TestGetWorkflow": {
+    "test_success": [
+      "self",
+      "mock_get"
+    ],
+    "test_error": [
+      "self",
+      "mock_get"
+    ]
+  },
+  "TestCreateWorkflow": {
+    "test_success": [
+      "self",
+      "mock_post"
+    ],
+    "test_auto_generates_url_slug": [
+      "self",
+      "mock_post"
+    ],
+    "test_with_config_and_template": [
+      "self",
+      "mock_post"
+    ],
+    "test_config_dict_serialized_to_string": [
+      "self",
+      "mock_post"
+    ],
+    "test_defaults_config_and_template": [
+      "self",
+      "mock_post"
+    ],
+    "test_error": [
+      "self",
+      "mock_post"
+    ],
+    "test_bare_spec_dict_is_auto_wrapped": [
+      "self",
+      "mock_post"
+    ],
+    "test_already_wrapped_config_is_not_double_wrapped": [
+      "self",
+      "mock_post"
+    ],
+    "test_bare_spec_json_string_is_auto_wrapped": [
+      "self",
+      "mock_post"
+    ],
+    "test_non_workflow_dict_is_not_wrapped": [
+      "self",
+      "mock_post"
+    ]
+  },
+  "TestNormalizeWorkflowConfig": {
+    "test_none_returns_empty_object": [
+      "self"
+    ],
+    "test_empty_dict_serialized_to_empty_json": [
+      "self"
+    ],
+    "test_string_without_workflow_keys_preserved_byte_for_byte": [
+      "self"
+    ],
+    "test_non_json_string_passthrough": [
+      "self"
+    ],
+    "test_already_wrapped_json_string_preserved_byte_for_byte": [
+      "self"
+    ],
+    "test_partial_workflow_dict_is_wrapped": [
+      "self"
+    ],
+    "test_json_array_input_preserved": [
+      "self"
+    ],
+    "test_json_scalar_inputs_preserved": [
+      "self"
+    ],
+    "test_utf8_bom_stripped_before_parse": [
+      "self"
+    ],
+    "test_utf8_bom_stripped_when_already_wrapped": [
+      "self"
+    ],
+    "test_utf8_bom_stripped_for_non_workflow_dict_string": [
+      "self"
+    ],
+    "test_utf8_bom_stripped_for_non_json_string": [
+      "self"
+    ],
+    "test_wrapped_output_uses_compact_separators": [
+      "self"
+    ]
+  },
+  "TestUpdateWorkflow": {
+    "test_success": [
+      "self",
+      "mock_post"
+    ],
+    "test_config_string_passthrough": [
+      "self",
+      "mock_post"
+    ],
+    "test_bare_spec_dict_is_auto_wrapped_on_update": [
+      "self",
+      "mock_post"
+    ],
+    "test_error": [
+      "self",
+      "mock_post"
+    ]
+  },
+  "TestListWorkflowVersions": {
+    "test_success": [
+      "self",
+      "mock_get"
+    ],
+    "test_error": [
+      "self",
+      "mock_get"
+    ]
+  },
+  "TestForkWorkflow": {
+    "test_success": [
+      "self",
+      "mock_post"
+    ],
+    "test_success_200": [
+      "self",
+      "mock_post"
+    ],
+    "test_with_name_and_url": [
+      "self",
+      "mock_post"
+    ],
+    "test_error": [
+      "self",
+      "mock_post"
+    ]
+  },
+  "TestGetBillingUsage": {
+    "test_success": [
+      "self",
+      "mock_post"
+    ],
+    "test_error": [
+      "self",
+      "mock_post"
+    ]
+  },
+  "TestGetPlanInfo": {
+    "test_success": [
+      "self",
+      "mock_get"
+    ],
+    "test_error": [
+      "self",
+      "mock_get"
+    ]
+  },
+  "TestGetLabelingStats": {
+    "test_success": [
+      "self",
+      "mock_get"
+    ],
+    "test_error": [
+      "self",
+      "mock_get"
+    ]
+  },
+  "TestGetVideoJobStatus": {
+    "test_success": [
+      "self",
+      "mock_get"
+    ],
+    "test_error": [
+      "self",
+      "mock_get"
+    ]
+  },
+  "TestSearchUniverse": {
+    "test_success": [
+      "self",
+      "mock_get"
+    ],
+    "test_with_type_and_limit": [
+      "self",
+      "mock_get"
+    ],
+    "test_error": [
+      "self",
+      "mock_get"
+    ]
+  },
+  "runner": [],
+  "_make_args": [],
+  "TestImageParserRegistration": {
+    "test_image_subcommand_exists": [
+      "self"
+    ],
+    "test_image_upload_help": [
+      "self"
+    ],
+    "test_image_get_help": [
+      "self"
+    ],
+    "test_image_search_help": [
+      "self"
+    ],
+    "test_image_tag_help": [
+      "self"
+    ],
+    "test_image_delete_help": [
+      "self"
+    ],
+    "test_image_annotate_help": [
+      "self"
+    ]
+  },
+  "TestImageUploadSingle": {
+    "test_upload_single_file": [
+      "self",
+      "mock_rf_cls"
+    ],
+    "test_upload_single_json_mode": [
+      "self",
+      "mock_rf_cls"
+    ]
+  },
+  "TestImageUploadDirectory": {
+    "test_upload_directory": [
+      "self",
+      "mock_rf_cls"
+    ],
+    "test_upload_zip_file_routes_to_directory_handler": [
+      "self",
+      "mock_rf_cls"
+    ],
+    "test_no_wait_forwarded": [
+      "self",
+      "mock_rf_cls"
+    ],
+    "test_zip_flow_uses_server_result_in_output": [
+      "self",
+      "mock_rf_cls"
+    ],
+    "test_zip_upload_flag_defaults_false": [
+      "self",
+      "mock_rf_cls"
+    ]
+  },
+  "TestImageDelete": {
+    "test_delete_images": [
+      "self",
+      "mock_delete_images"
+    ]
+  },
+  "TestImageSearch": {
+    "test_search": [
+      "self",
+      "mock_workspace_search"
+    ]
+  },
+  "TestImageAnnotate": {
+    "test_annotate": [
+      "self",
+      "mock_save_annotation"
+    ]
+  },
+  "TestUploadPathNotFound": {
+    "test_nonexistent_path": [
+      "self"
+    ]
+  },
+  "TestImageTagValidation": {
+    "test_tag_no_add_or_remove": [
+      "self"
+    ]
+  },
+  "TestVideoRegistration": {
+    "test_video_app_exists": [
+      "self"
+    ],
+    "test_video_infer_exists": [
+      "self"
+    ],
+    "test_video_status_exists": [
+      "self"
+    ]
+  },
+  "TestVideoStatus": {
+    "test_status_no_api_key": [
+      "self",
+      "_mock_key"
+    ],
+    "test_status_success": [
+      "self",
+      "_mock_key",
+      "mock_api"
+    ],
+    "test_status_json_output": [
+      "self",
+      "_mock_key",
+      "mock_api"
+    ],
+    "test_status_passes_job_id_to_api": [
+      "self",
+      "_mock_key",
+      "mock_api"
+    ]
+  },
+  "TestFolderRegistration": {
+    "test_folder_app_exists": [
+      "self"
+    ],
+    "test_folder_list_exists": [
+      "self"
+    ],
+    "test_folder_get_exists": [
+      "self"
+    ],
+    "test_folder_create_exists": [
+      "self"
+    ],
+    "test_folder_update_exists": [
+      "self"
+    ],
+    "test_folder_delete_exists": [
+      "self"
+    ]
+  },
+  "TestFolderListHandler": {
+    "test_list_folders_text": [
+      "self",
+      "_mock_key",
+      "_mock_ws",
+      "mock_list"
+    ],
+    "test_list_folders_json": [
+      "self",
+      "_mock_key",
+      "_mock_ws",
+      "mock_list"
+    ],
+    "test_list_folders_no_workspace": [
+      "self",
+      "_mock_ws"
+    ]
+  },
+  "TestFolderGetHandler": {
+    "test_get_folder_text": [
+      "self",
+      "_mock_key",
+      "_mock_ws",
+      "mock_get"
+    ]
+  },
+  "TestFolderCreateHandler": {
+    "test_create_folder_json": [
+      "self",
+      "_mock_key",
+      "_mock_ws",
+      "mock_create"
+    ],
+    "test_create_folder_with_projects": [
+      "self",
+      "_mock_key",
+      "_mock_ws",
+      "mock_create"
+    ]
+  },
+  "TestFolderUpdateHandler": {
+    "test_update_folder_json": [
+      "self",
+      "_mock_key",
+      "_mock_ws",
+      "mock_update"
+    ]
+  },
+  "TestFolderDeleteHandler": {
+    "test_delete_folder_json": [
+      "self",
+      "_mock_key",
+      "_mock_ws",
+      "mock_delete"
+    ],
+    "test_delete_folder_error_json": [
+      "self",
+      "_mock_key",
+      "_mock_ws",
+      "_mock_delete"
+    ]
+  },
+  "_ANSI_RE": [],
+  "_strip_ansi": [
+    "text"
+  ],
+  "TestAuthRegistration": {
+    "test_auth_app_exists": [
+      "self"
+    ],
+    "test_auth_subcommand_exists": [
+      "self"
+    ],
+    "test_auth_login_exists": [
+      "self"
+    ],
+    "test_auth_login_help_shows_flags": [
+      "self"
+    ],
+    "test_auth_set_workspace_exists": [
+      "self"
+    ],
+    "test_auth_logout_exists": [
+      "self"
+    ],
+    "test_handler_functions_exist": [
+      "self"
+    ],
+    "test_mask_key": [
+      "self"
+    ]
+  },
+  "TestTrainRegister": {
+    "test_train_help": [
+      "self"
+    ],
+    "test_train_start_help": [
+      "self"
+    ]
+  },
+  "TestTrainStart": {
+    "_make_args": [
+      "self"
+    ],
+    "test_start_success": [
+      "self",
+      "mock_train"
+    ],
+    "test_start_with_all_options": [
+      "self",
+      "mock_train"
+    ],
+    "test_start_api_error": [
+      "self",
+      "mock_train"
+    ],
+    "test_start_no_api_key": [
+      "self",
+      "_mock_key"
+    ],
+    "test_start_json_error_not_double_encoded": [
+      "self",
+      "mock_train"
+    ]
+  },
+  "TestOutput": {
+    "_make_args": [
+      "self"
+    ],
+    "test_json_mode_prints_json": [
+      "self"
+    ],
+    "test_text_mode_prints_text": [
+      "self"
+    ],
+    "test_text_mode_falls_back_to_json_when_no_text": [
+      "self"
+    ],
+    "test_output_error_json_mode": [
+      "self"
+    ],
+    "test_output_error_text_mode": [
+      "self"
+    ]
+  },
+  "TestTable": {
+    "test_empty_rows": [
+      "self"
+    ],
+    "test_basic_table": [
+      "self"
+    ]
+  },
+  "TestResolver": {
+    "test_single_segment": [
+      "self"
+    ],
+    "test_workspace_project": [
+      "self"
+    ],
+    "test_project_version": [
+      "self"
+    ],
+    "test_full_triple": [
+      "self"
+    ],
+    "test_no_workspace_raises": [
+      "self"
+    ],
+    "test_too_many_segments_raises": [
+      "self"
+    ]
+  },
+  "TestWorkflowRegistration": {
+    "test_workflow_app_exists": [
+      "self"
+    ],
+    "test_workflow_list_exists": [
+      "self"
+    ],
+    "test_workflow_get_exists": [
+      "self"
+    ],
+    "test_workflow_create_exists": [
+      "self"
+    ],
+    "test_workflow_update_exists": [
+      "self"
+    ],
+    "test_workflow_version_list_exists": [
+      "self"
+    ],
+    "test_workflow_fork_exists": [
+      "self"
+    ],
+    "test_workflow_delete_exists": [
+      "self"
+    ],
+    "test_workflow_restore_exists": [
+      "self"
+    ],
+    "test_workflow_build_exists": [
+      "self"
+    ],
+    "test_workflow_run_exists": [
+      "self"
+    ],
+    "test_workflow_deploy_exists": [
+      "self"
+    ]
+  },
+  "TestWorkflowList": {
+    "test_list_workflows_text": [
+      "self",
+      "_mock_key",
+      "mock_list"
+    ],
+    "test_list_workflows_json": [
+      "self",
+      "_mock_key",
+      "mock_list"
+    ],
+    "test_list_workflows_error": [
+      "self",
+      "_mock_key",
+      "mock_list"
+    ]
+  },
+  "TestWorkflowGet": {
+    "test_get_workflow_text": [
+      "self",
+      "_mock_key",
+      "mock_get"
+    ],
+    "test_get_workflow_json": [
+      "self",
+      "_mock_key",
+      "mock_get"
+    ]
+  },
+  "TestWorkflowCreate": {
+    "test_create_workflow_basic": [
+      "self",
+      "_mock_key",
+      "mock_create"
+    ],
+    "test_create_workflow_with_definition": [
+      "self",
+      "_mock_key",
+      "mock_create"
+    ],
+    "test_create_workflow_missing_file": [
+      "self"
+    ],
+    "test_create_workflow_invalid_json": [
+      "self"
+    ]
+  },
+  "TestWorkflowUpdate": {
+    "test_update_workflow": [
+      "self",
+      "_mock_key",
+      "mock_get",
+      "mock_update"
+    ],
+    "test_update_workflow_no_definition": [
+      "self",
+      "_mock_key",
+      "mock_get",
+      "mock_update"
+    ],
+    "test_update_workflow_missing_file": [
+      "self"
+    ]
+  },
+  "TestWorkflowVersionList": {
+    "test_list_versions": [
+      "self",
+      "_mock_key",
+      "mock_versions"
+    ],
+    "test_list_versions_json": [
+      "self",
+      "_mock_key",
+      "mock_versions"
+    ]
+  },
+  "TestWorkflowFork": {
+    "test_fork_workflow_same_workspace": [
+      "self",
+      "_mock_key",
+      "mock_fork"
+    ],
+    "test_fork_workflow_cross_workspace": [
+      "self",
+      "_mock_key",
+      "mock_fork"
+    ],
+    "test_fork_workflow_json": [
+      "self",
+      "_mock_key",
+      "mock_fork"
+    ]
+  },
+  "TestWorkflowStubs": {
+    "test_build_stub": [
+      "self"
+    ],
+    "test_run_stub": [
+      "self"
+    ],
+    "test_deploy_stub": [
+      "self"
+    ]
+  },
+  "TestWorkflowNoWorkspace": {
+    "test_list_no_workspace": [
+      "self",
+      "_mock_resolve"
+    ]
+  },
+  "TestWorkflowDeleteHandler": {
+    "test_delete_calls_rfapi": [
+      "self"
+    ]
+  },
+  "TestWorkflowRestoreHandler": {
+    "test_restore_found_by_url": [
+      "self"
+    ],
+    "test_restore_found_by_id": [
+      "self"
+    ],
+    "test_restore_not_in_trash": [
+      "self"
+    ]
+  },
+  "TestVersionHandlerRegistration": {
+    "test_version_list_exists": [
+      "self"
+    ],
+    "test_version_get_exists": [
+      "self"
+    ],
+    "test_version_download_exists": [
+      "self"
+    ],
+    "test_version_export_exists": [
+      "self"
+    ],
+    "test_version_create_exists": [
+      "self"
+    ],
+    "test_subcommands_visible": [
+      "self"
+    ]
+  },
+  "TestVersionCreate": {
+    "test_create_missing_settings_file": [
+      "self"
+    ],
+    "test_create_invalid_json_file": [
+      "self"
+    ],
+    "test_create_no_api_key": [
+      "self"
+    ],
+    "test_create_json_error_output": [
+      "self"
+    ]
+  },
+  "TestParseUrl": {
+    "test_shorthand": [
+      "self"
+    ],
+    "test_full_url": [
+      "self"
+    ],
+    "test_no_version": [
+      "self"
+    ]
+  },
+  "TestVersionDeleteRestoreRegistration": {
+    "test_version_delete_exists": [
+      "self"
+    ],
+    "test_version_restore_exists": [
+      "self"
+    ]
+  },
+  "TestVersionDeleteHandler": {
+    "_args": [
+      "self",
+      "version_ref"
+    ],
+    "test_delete_calls_rfapi": [
+      "self"
+    ]
+  },
+  "TestVersionRestoreHandler": {
+    "_args": [
+      "self",
+      "version_ref"
+    ],
+    "test_restore_found": [
+      "self"
+    ],
+    "test_restore_wrong_project_not_found": [
+      "self"
+    ]
+  },
+  "TestDeploymentRegistration": {
+    "test_deployment_app_exists": [
+      "self"
+    ],
+    "test_deployment_subcommand_exists": [
+      "self"
+    ],
+    "test_deployment_create_canonical": [
+      "self"
+    ],
+    "test_deployment_machine_type_canonical": [
+      "self"
+    ],
+    "test_deployment_get_exists": [
+      "self"
+    ],
+    "test_deployment_delete_exists": [
+      "self"
+    ],
+    "test_deployment_usage_canonical": [
+      "self"
+    ]
+  },
+  "TestDeploymentErrorWrapping": {
+    "test_wrapped_error_uses_structured_output": [
+      "self"
+    ],
+    "test_wrapped_success_prints_output": [
+      "self"
+    ]
+  },
+  "TestSearchRegistration": {
+    "test_search_command_callable": [
+      "self"
+    ],
+    "test_search_subcommand_exists": [
+      "self"
+    ],
+    "test_search_help_shows_options": [
+      "self"
+    ]
+  },
+  "TestWorkspaceRegistration": {
+    "test_workspace_app_exists": [
+      "self"
+    ],
+    "test_workspace_list_exists": [
+      "self"
+    ],
+    "test_workspace_get_exists": [
+      "self"
+    ],
+    "test_workspace_usage_exists": [
+      "self"
+    ],
+    "test_workspace_plan_exists": [
+      "self"
+    ],
+    "test_workspace_stats_exists": [
+      "self"
+    ],
+    "test_handler_functions_exist": [
+      "self"
+    ]
+  },
+  "TestWorkspaceUsageHandler": {
+    "test_usage_json": [
+      "self",
+      "_mock_key",
+      "_mock_ws",
+      "mock_usage"
+    ],
+    "test_usage_text": [
+      "self",
+      "_mock_key",
+      "_mock_ws",
+      "mock_usage"
+    ],
+    "test_usage_no_workspace": [
+      "self",
+      "_mock_ws"
+    ]
+  },
+  "TestWorkspacePlanHandler": {
+    "test_plan_json": [
+      "self",
+      "_mock_key",
+      "_mock_ws",
+      "mock_plan"
+    ],
+    "test_plan_text": [
+      "self",
+      "_mock_key",
+      "_mock_ws",
+      "mock_plan"
+    ]
+  },
+  "TestWorkspaceStatsHandler": {
+    "test_stats_json": [
+      "self",
+      "_mock_key",
+      "_mock_ws",
+      "mock_stats"
+    ],
+    "test_stats_passes_dates": [
+      "self",
+      "_mock_key",
+      "_mock_ws",
+      "mock_stats"
+    ],
+    "test_stats_text": [
+      "self",
+      "_mock_key",
+      "_mock_ws",
+      "mock_stats"
+    ],
+    "test_stats_error_json": [
+      "self",
+      "_mock_key",
+      "_mock_ws",
+      "_mock_stats"
+    ]
+  },
+  "TestBatchRegistration": {
+    "test_batch_app_exists": [
+      "self"
+    ],
+    "test_batch_create_exists": [
+      "self"
+    ],
+    "test_batch_status_exists": [
+      "self"
+    ],
+    "test_batch_list_exists": [
+      "self"
+    ],
+    "test_batch_results_exists": [
+      "self"
+    ]
+  },
+  "TestRoboflowpyShim": {
+    "test_main_importable": [
+      "self"
+    ],
+    "test_argparser_importable": [
+      "self"
+    ],
+    "test_argparser_returns_object_with_parse_args": [
+      "self"
+    ],
+    "test_argparser_has_print_help": [
+      "self"
+    ],
+    "test_cli_commands_work_via_typer_runner": [
+      "self"
+    ]
+  },
+  "TestCompletionRegistration": {
+    "test_completion_app_exists": [
+      "self"
+    ],
+    "test_completion_bash_exists": [
+      "self"
+    ],
+    "test_completion_zsh_exists": [
+      "self"
+    ],
+    "test_completion_fish_exists": [
+      "self"
+    ]
+  },
+  "TestTrashRegistration": {
+    "test_trash_app_exists": [
+      "self"
+    ],
+    "test_trash_list_exists": [
+      "self"
+    ],
+    "test_permanent_delete_commands_not_exposed": [
+      "self"
+    ],
+    "test_subcommands_visible": [
+      "self"
+    ]
+  },
+  "_args": [],
+  "TestTrashListHandler": {
+    "test_list_text_output": [
+      "self"
+    ],
+    "test_list_empty": [
+      "self"
+    ]
+  },
+  "TestRfapiSurface": {
+    "test_no_trash_delete_immediately": [
+      "self"
+    ],
+    "test_no_empty_trash": [
+      "self"
+    ]
+  },
+  "TestWorkspaceSurface": {
+    "test_no_delete_from_trash": [
+      "self"
+    ],
+    "test_no_empty_trash": [
+      "self"
+    ]
+  },
+  "TestInferRegister": {
+    "test_register_adds_infer_parser": [
+      "self"
+    ],
+    "test_infer_help_shows_options": [
+      "self"
+    ]
+  },
+  "TestInferHandler": {
+    "_make_args": [
+      "self"
+    ],
+    "test_infer_text_output": [
+      "self",
+      "mock_model_cls"
+    ],
+    "test_infer_json_output": [
+      "self",
+      "mock_model_cls"
+    ],
+    "test_infer_auto_detects_type": [
+      "self",
+      "mock_get_project",
+      "mock_model_cls"
+    ],
+    "test_infer_no_api_key": [
+      "self",
+      "_mock_key"
+    ],
+    "test_infer_confidence_converted_to_percentage": [
+      "self",
+      "mock_model_cls"
+    ]
+  },
+  "TestInferVLM": {
+    "_make_args": [
+      "self"
+    ],
+    "test_infer_vlm_json_passthrough": [
+      "self",
+      "mock_model_cls"
+    ],
+    "test_infer_vlm_skips_confidence_overlap": [
+      "self",
+      "mock_model_cls"
+    ]
+  },
+  "TestProjectHandlerRegistration": {
+    "test_project_list_exists": [
+      "self"
+    ],
+    "test_project_list_help_shows_type": [
+      "self"
+    ],
+    "test_project_get_exists": [
+      "self"
+    ],
+    "test_project_create_exists": [
+      "self"
+    ],
+    "test_project_delete_exists": [
+      "self"
+    ],
+    "test_project_restore_exists": [
+      "self"
+    ],
+    "test_subcommands_visible": [
+      "self"
+    ]
+  },
+  "TestProjectDeleteHandler": {
+    "_args": [
+      "self",
+      "project_id"
+    ],
+    "test_delete_calls_rfapi": [
+      "self"
+    ]
+  },
+  "TestProjectRestoreHandler": {
+    "_args": [
+      "self",
+      "project_id"
+    ],
+    "test_restore_found": [
+      "self"
+    ],
+    "test_restore_not_in_trash": [
+      "self"
+    ]
+  },
+  "TestCLIDiscovery": {
+    "test_app_exists": [
+      "self"
+    ],
+    "test_help_shows_commands": [
+      "self"
+    ],
+    "test_version_flag": [
+      "self"
+    ],
+    "test_json_flag": [
+      "self"
+    ],
+    "test_handlers_package_importable": [
+      "self"
+    ],
+    "test_output_module_importable": [
+      "self"
+    ],
+    "test_resolver_module_importable": [
+      "self"
+    ],
+    "test_table_module_importable": [
+      "self"
+    ],
+    "test_compat_module_importable": [
+      "self"
+    ]
+  },
+  "TestGlobalFlagPositioning": {
+    "test_json_at_start": [
+      "self"
+    ],
+    "test_json_at_end": [
+      "self"
+    ],
+    "test_workspace_long_form": [
+      "self"
+    ],
+    "test_api_key_flag": [
+      "self"
+    ]
+  },
+  "TestAliases": {
+    "test_login_alias": [
+      "self"
+    ],
+    "test_whoami_alias": [
+      "self"
+    ],
+    "test_upload_alias": [
+      "self"
+    ],
+    "test_import_alias": [
+      "self"
+    ],
+    "test_download_alias": [
+      "self"
+    ],
+    "test_hidden_aliases_not_in_help": [
+      "self"
+    ],
+    "test_hidden_alias_still_works": [
+      "self"
+    ]
+  },
+  "TestModelRegister": {
+    "test_model_help": [
+      "self"
+    ],
+    "test_model_list_help": [
+      "self"
+    ],
+    "test_model_get_help": [
+      "self"
+    ],
+    "test_model_upload_help": [
+      "self"
+    ]
+  },
+  "TestModelGet": {
+    "_make_args": [
+      "self"
+    ],
+    "test_get_model_success": [
+      "self",
+      "mock_get_project"
+    ],
+    "test_get_model_with_version": [
+      "self",
+      "mock_get_version"
+    ],
+    "test_get_model_no_api_key": [
+      "self",
+      "_mock_key"
+    ]
+  },
+  "TestModelUpload": {
+    "_make_args": [
+      "self"
+    ],
+    "test_upload_single_version": [
+      "self",
+      "mock_rf_cls"
+    ],
+    "test_upload_multi_project": [
+      "self",
+      "mock_rf_cls"
+    ],
+    "test_upload_no_project_errors": [
+      "self",
+      "mock_rf_cls"
+    ]
+  },
+  "TestParseErrorMessage": {
+    "test_plain_string": [
+      "self"
+    ],
+    "test_json_with_nested_error": [
+      "self"
+    ],
+    "test_json_with_string_error": [
+      "self"
+    ]
+  },
+  "TestModelListError": {
+    "_make_args": [
+      "self"
+    ],
+    "test_list_models_project_not_found": [
+      "self",
+      "mock_rf_cls"
+    ]
+  },
+  "TestAnnotationParserRegistration": {
+    "test_annotation_subcommand_exists": [
+      "self"
+    ],
+    "test_annotation_batch_get": [
+      "self"
+    ],
+    "test_annotation_job_list": [
+      "self"
+    ],
+    "test_annotation_job_get": [
+      "self"
+    ],
+    "test_annotation_job_create": [
+      "self"
+    ]
+  },
+  "TestAnnotationStub": {
+    "test_stub_prints_message": [
+      "self"
+    ],
+    "test_stub_json_mode": [
+      "self"
+    ]
+  },
+  "_RESOLVE": [],
+  "TestBatchList": {
+    "test_text_output": [
+      "self",
+      "_resolve",
+      "mock_api"
+    ],
+    "test_json_output": [
+      "self",
+      "_resolve",
+      "mock_api"
+    ],
+    "test_resolve_failure": [
+      "self",
+      "_resolve"
+    ]
+  },
+  "TestBatchGet": {
+    "test_text_output": [
+      "self",
+      "_resolve",
+      "mock_api"
+    ],
+    "test_json_output": [
+      "self",
+      "_resolve",
+      "mock_api"
+    ]
+  },
+  "TestJobList": {
+    "test_text_output": [
+      "self",
+      "_resolve",
+      "mock_api"
+    ],
+    "test_json_output": [
+      "self",
+      "_resolve",
+      "mock_api"
+    ]
+  },
+  "TestJobGet": {
+    "test_text_output": [
+      "self",
+      "_resolve",
+      "mock_api"
+    ]
+  },
+  "TestJobCreate": {
+    "test_text_output": [
+      "self",
+      "_resolve",
+      "mock_rf_cls"
+    ],
+    "test_json_output": [
+      "self",
+      "_resolve",
+      "mock_rf_cls"
+    ],
+    "test_create_requires_all_flags": [
+      "self"
+    ]
+  },
+  "TestUniverseRegistration": {
+    "test_universe_app_exists": [
+      "self"
+    ],
+    "test_universe_search_exists": [
+      "self"
+    ],
+    "test_universe_search_help_shows_options": [
+      "self"
+    ]
+  },
+  "TestUniverseSearch": {
+    "test_search_success": [
+      "self",
+      "_mock_key",
+      "mock_search"
+    ],
+    "test_search_passes_api_key": [
+      "self",
+      "_mock_key",
+      "mock_search"
+    ],
+    "test_search_passes_custom_limit": [
+      "self",
+      "_mock_key",
+      "mock_search"
+    ],
+    "test_search_json_output": [
+      "self",
+      "_mock_key",
+      "mock_search"
+    ],
+    "test_search_api_error_json": [
+      "self",
+      "_mock_key",
+      "mock_search"
+    ]
+  },
+  "TestKeypointDetection": {
+    "api_key": [],
+    "workspace": [],
+    "dataset_id": [],
+    "version": [],
+    "api_url": [],
+    "_default_params": [],
+    "setUp": [
+      "self"
+    ],
+    "test_init_sets_attributes": [
+      "self"
+    ],
+    "test_predict_local_image": [
+      "self"
+    ],
+    "test_predict_with_confidence": [
+      "self"
+    ],
+    "test_predict_error_response": [
+      "self"
+    ]
+  },
+  "MOCK_RESPONSE": [],
+  "TestObjectDetection": {
+    "api_key": [],
+    "workspace": [],
+    "dataset_id": [],
+    "version": [],
+    "api_url": [],
+    "_default_params": [],
+    "setUp": [
+      "self"
+    ],
+    "test_init_sets_attributes": [
+      "self"
+    ],
+    "test_predict_returns_prediction_group": [
+      "self"
+    ],
+    "test_predict_with_local_image_request": [
+      "self"
+    ],
+    "test_predict_with_a_numpy_array_request": [
+      "self"
+    ],
+    "test_predict_with_local_wrong_image_request": [
+      "self"
+    ],
+    "test_predict_with_hosted_image_request": [
+      "self"
+    ],
+    "test_predict_with_confidence_request": [
+      "self"
+    ],
+    "test_predict_with_non_200_response_raises_http_error": [
+      "self"
+    ]
+  },
+  "TestSemanticSegmentation": {
+    "api_key": [],
+    "workspace": [],
+    "dataset_id": [],
+    "version": [],
+    "api_url": [],
+    "_default_params": [],
+    "version_id": [],
+    "test_init_sets_attributes": [
+      "self"
+    ],
+    "test_predict_returns_prediction_group": [
+      "self"
+    ],
+    "test_predict_with_local_image_request": [
+      "self"
+    ],
+    "test_predict_with_hosted_image_request": [
+      "self"
+    ],
+    "test_predict_with_confidence_request": [
+      "self"
+    ],
+    "test_predict_with_non_200_response_raises_http_error": [
+      "self"
+    ]
+  },
+  "TestInstanceSegmentation": {
+    "api_key": [],
+    "workspace": [],
+    "dataset_id": [],
+    "version": [],
+    "api_url": [],
+    "_default_params": [],
+    "setUp": [
+      "self"
+    ],
+    "test_init_sets_attributes": [
+      "self"
+    ],
+    "test_predict_returns_prediction_group": [
+      "self"
+    ],
+    "test_predict_with_local_image_request": [
+      "self"
+    ],
+    "test_predict_with_hosted_image_request": [
+      "self"
+    ],
+    "test_predict_with_confidence_request": [
+      "self"
+    ],
+    "test_predict_with_non_200_response_raises_http_error": [
+      "self"
+    ],
+    "test_predict_with_numpy_array": [
+      "self"
+    ]
+  },
+  "TestVLMModel": {
+    "_make": [
+      "self"
+    ],
+    "test_predict_url_returns_raw_dict": [
+      "self",
+      "mock_get",
+      "_chk"
+    ],
+    "test_predict_forwards_extra_kwargs_as_query": [
+      "self",
+      "mock_get",
+      "_chk"
+    ],
+    "test_predict_non_200_raises": [
+      "self",
+      "mock_get",
+      "_chk"
+    ],
+    "test_predict_local_path_posts_base64": [
+      "self",
+      "mock_post",
+      "mock_open",
+      "_exists"
+    ],
+    "test_predict_missing_local_file_raises": [
+      "self"
+    ],
+    "test_endpoint_uses_id_parts_when_version_unset": [
+      "self"
+    ]
+  },
+  "get_conditional_configuration_variable": [
+    "key",
+    "default"
+  ],
+  "CLASSIFICATION_MODEL": [],
+  "INSTANCE_SEGMENTATION_MODEL": [],
+  "OBJECT_DETECTION_MODEL": [],
+  "SEMANTIC_SEGMENTATION_MODEL": [],
+  "PREDICTION_OBJECT": [],
+  "API_URL": [],
+  "APP_URL": [],
+  "UNIVERSE_URL": [],
+  "INSTANCE_SEGMENTATION_URL": [],
+  "SEMANTIC_SEGMENTATION_URL": [],
+  "OBJECT_DETECTION_URL": [],
+  "CLIP_FEATURIZE_URL": [],
+  "OCR_URL": [],
+  "DEDICATED_DEPLOYMENT_URL": [],
+  "DEMO_KEYS": [],
+  "TYPE_CLASSICATION": [],
+  "TYPE_OBJECT_DETECTION": [],
+  "TYPE_INSTANCE_SEGMENTATION": [],
+  "TYPE_SEMANTIC_SEGMENTATION": [],
+  "TYPE_KEYPOINT_DETECTION": [],
+  "TYPE_TEXT_IMAGE_PAIRS": [],
+  "TASK_DET": [],
+  "TASK_SEG": [],
+  "TASK_POSE": [],
+  "TASK_CLS": [],
+  "TASK_OBB": [],
+  "DEFAULT_BATCH_NAME": [],
+  "DEFAULT_JOB_NAME": [],
+  "RF_WORKSPACES": [],
+  "TQDM_DISABLE": [],
+  "load_roboflow_api_key": [
+    "workspace_url"
+  ],
+  "is_valid_ISO8601_timestamp": [
+    "ts"
+  ],
+  "check_from_to_timestamp": [
+    "from_timestamp",
+    "to_timestamp",
+    "default_timedelta"
+  ],
+  "add_deployment_parser": [
+    "subparsers"
+  ],
+  "list_machine_types": [
+    "args"
+  ],
+  "add_deployment": [
+    "args"
+  ],
+  "get_deployment": [
+    "args"
+  ],
+  "list_deployment": [
+    "args"
+  ],
+  "get_workspace_usage": [
+    "args"
+  ],
+  "get_deployment_usage": [
+    "args"
+  ],
+  "pause_deployment": [
+    "args"
+  ],
+  "resume_deployment": [
+    "args"
+  ],
+  "delete_deployment": [
+    "args"
+  ],
+  "get_deployment_log": [
+    "args"
+  ],
+  "_argparser": [],
+  "__all__": [],
+  "check_key": [
+    "api_key",
+    "model",
+    "notebook",
+    "num_retries"
+  ],
+  "login": [
+    "workspace",
+    "force"
+  ],
+  "active_workspace": [],
+  "initialize_roboflow": [
+    "the_workspace"
+  ],
+  "load_model": [
+    "model_url"
+  ],
+  "download_dataset": [
+    "dataset_url",
+    "model_format",
+    "location"
+  ],
+  "Roboflow": {
+    "__init__": [
+      "self",
+      "api_key",
+      "model_format",
+      "notebook"
+    ],
+    "auth": [
+      "self"
+    ],
+    "workspace": [
+      "self",
+      "the_workspace"
+    ],
+    "project": [
+      "self",
+      "project_name",
+      "the_workspace"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "Dataset": {
+    "__init__": [
+      "self",
+      "name",
+      "version",
+      "model_format",
+      "location"
+    ]
+  },
+  "Workspace": {
+    "__init__": [
+      "self",
+      "info",
+      "api_key",
+      "default_workspace",
+      "model_format"
+    ],
+    "list_projects": [
+      "self"
+    ],
+    "projects": [
+      "self"
+    ],
+    "project": [
+      "self",
+      "project_id"
+    ],
+    "create_project": [
+      "self",
+      "project_name",
+      "project_type",
+      "project_license",
+      "annotation"
+    ],
+    "clip_compare": [
+      "self",
+      "dir",
+      "image_ext",
+      "target_image"
+    ],
+    "two_stage": [
+      "self",
+      "image",
+      "first_stage_model_name",
+      "first_stage_model_version",
+      "second_stage_model_name",
+      "second_stage_model_version"
+    ],
+    "two_stage_ocr": [
+      "self",
+      "image",
+      "first_stage_model_name",
+      "first_stage_model_version"
+    ],
+    "upload_dataset": [
+      "self",
+      "dataset_path",
+      "project_name",
+      "num_workers",
+      "dataset_format",
+      "project_license",
+      "project_type",
+      "batch_name",
+      "num_retries",
+      "is_prediction"
+    ],
+    "_get_or_create_project": [
+      "self",
+      "project_id",
+      "license",
+      "type"
+    ],
+    "active_learning": [
+      "self",
+      "raw_data_location",
+      "raw_data_extension",
+      "inference_endpoint",
+      "upload_destination",
+      "conditionals",
+      "use_localhost",
+      "local_server"
+    ],
+    "deploy_model": [
+      "self",
+      "model_type",
+      "model_path",
+      "project_ids",
+      "model_name",
+      "filename"
+    ],
+    "_upload_zip": [
+      "self",
+      "model_type",
+      "model_path",
+      "project_ids",
+      "model_name",
+      "model_file_name"
+    ],
+    "search": [
+      "self",
+      "query",
+      "page_size",
+      "fields",
+      "continuation_token"
+    ],
+    "delete_images": [
+      "self",
+      "image_ids"
+    ],
+    "search_all": [
+      "self",
+      "query",
+      "page_size",
+      "fields"
+    ],
+    "search_export": [
+      "self",
+      "query",
+      "format",
+      "location",
+      "dataset",
+      "annotation_group",
+      "name",
+      "extract_zip"
+    ],
+    "list_folders": [
+      "self"
+    ],
+    "create_folder": [
+      "self",
+      "name",
+      "parent_id",
+      "project_ids"
+    ],
+    "list_workflows": [
+      "self"
+    ],
+    "get_workflow": [
+      "self",
+      "workflow_url"
+    ],
+    "create_workflow": [
+      "self",
+      "name",
+      "definition"
+    ],
+    "get_usage": [
+      "self"
+    ],
+    "get_plan": [
+      "self"
+    ],
+    "write_vision_event": [
+      "self",
+      "event"
+    ],
+    "write_vision_events_batch": [
+      "self",
+      "events"
+    ],
+    "query_vision_events": [
+      "self",
+      "use_case"
+    ],
+    "query_all_vision_events": [
+      "self",
+      "use_case"
+    ],
+    "list_vision_event_use_cases": [
+      "self",
+      "status"
+    ],
+    "create_vision_event_use_case": [
+      "self",
+      "name"
+    ],
+    "rename_vision_event_use_case": [
+      "self",
+      "use_case",
+      "name"
+    ],
+    "archive_vision_event_use_case": [
+      "self",
+      "use_case"
+    ],
+    "unarchive_vision_event_use_case": [
+      "self",
+      "use_case"
+    ],
+    "get_vision_event_metadata_schema": [
+      "self",
+      "use_case"
+    ],
+    "upload_vision_event_image": [
+      "self",
+      "image_path",
+      "name",
+      "metadata"
+    ],
+    "trash": [
+      "self"
+    ],
+    "restore_from_trash": [
+      "self",
+      "item_type",
+      "item_id",
+      "parent_id"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "_zip_directory": [
+    "src_dir"
+  ],
+  "_poll_zip_status": [
+    "api_key",
+    "workspace_url",
+    "task_id",
+    "poll_interval",
+    "poll_timeout"
+  ],
+  "ACCEPTED_IMAGE_FORMATS": [],
+  "custom_formatwarning": [
+    "msg"
+  ],
+  "Project": {
+    "__init__": [
+      "self",
+      "api_key",
+      "a_project",
+      "model_format"
+    ],
+    "get_version_information": [
+      "self"
+    ],
+    "list_versions": [
+      "self"
+    ],
+    "versions": [
+      "self"
+    ],
+    "generate_version": [
+      "self",
+      "settings"
+    ],
+    "train": [
+      "self",
+      "new_version_settings",
+      "speed",
+      "checkpoint",
+      "plot_in_notebook"
+    ],
+    "version": [
+      "self",
+      "version_number",
+      "local"
+    ],
+    "check_valid_image": [
+      "self",
+      "image_path"
+    ],
+    "upload": [
+      "self",
+      "image_path",
+      "annotation_path",
+      "hosted_image",
+      "image_id",
+      "split",
+      "num_retry_uploads",
+      "batch_name",
+      "tag_names",
+      "is_prediction",
+      "metadata"
+    ],
+    "upload_image": [
+      "self",
+      "image_path",
+      "hosted_image",
+      "split",
+      "num_retry_uploads",
+      "batch_name",
+      "tag_names",
+      "sequence_number",
+      "sequence_size",
+      "metadata"
+    ],
+    "save_annotation": [
+      "self",
+      "annotation_path",
+      "annotation_labelmap",
+      "image_id",
+      "job_name",
+      "is_prediction",
+      "annotation_overwrite",
+      "num_retry_uploads"
+    ],
+    "single_upload": [
+      "self",
+      "image_path",
+      "annotation_path",
+      "annotation_labelmap",
+      "hosted_image",
+      "image_id",
+      "split",
+      "num_retry_uploads",
+      "batch_name",
+      "tag_names",
+      "is_prediction",
+      "annotation_overwrite",
+      "sequence_number",
+      "sequence_size",
+      "metadata"
+    ],
+    "_annotation_params": [
+      "self",
+      "annotation_path"
+    ],
+    "search": [
+      "self",
+      "like_image",
+      "prompt",
+      "offset",
+      "limit",
+      "tag",
+      "class_name",
+      "in_dataset",
+      "batch",
+      "batch_id",
+      "fields"
+    ],
+    "search_all": [
+      "self",
+      "like_image",
+      "prompt",
+      "offset",
+      "limit",
+      "tag",
+      "class_name",
+      "in_dataset",
+      "batch",
+      "batch_id",
+      "fields"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "image": [
+      "self",
+      "image_id"
+    ],
+    "get_annotation_jobs": [
+      "self"
+    ],
+    "get_annotation_job": [
+      "self",
+      "job_id"
+    ],
+    "create_annotation_job": [
+      "self",
+      "name",
+      "batch_id",
+      "num_images",
+      "labeler_email",
+      "reviewer_email"
+    ],
+    "get_batches": [
+      "self"
+    ],
+    "get_batch": [
+      "self",
+      "batch_id"
+    ],
+    "delete_images": [
+      "self",
+      "image_ids"
+    ],
+    "delete": [
+      "self"
+    ],
+    "restore": [
+      "self"
+    ]
+  },
+  "Version": {
+    "__init__": [
+      "self",
+      "version_dict",
+      "type",
+      "api_key",
+      "name",
+      "version",
+      "model_format",
+      "local",
+      "workspace",
+      "project",
+      "public",
+      "colors"
+    ],
+    "__check_if_generating": [
+      "self"
+    ],
+    "__wait_if_generating": [
+      "self",
+      "recurse"
+    ],
+    "download": [
+      "self",
+      "model_format",
+      "location",
+      "overwrite"
+    ],
+    "export": [
+      "self",
+      "model_format"
+    ],
+    "train": [
+      "self",
+      "speed",
+      "model_type",
+      "checkpoint",
+      "plot_in_notebook",
+      "epochs"
+    ],
+    "deploy": [
+      "self",
+      "model_type",
+      "model_path",
+      "filename"
+    ],
+    "_validate_against_project_type": [
+      "self",
+      "model_type"
+    ],
+    "_upload_zip": [
+      "self",
+      "model_type",
+      "model_path",
+      "model_file_name"
+    ],
+    "__download_zip": [
+      "self",
+      "link",
+      "location",
+      "format"
+    ],
+    "__get_download_location": [
+      "self"
+    ],
+    "__get_download_url": [
+      "self",
+      "format"
+    ],
+    "__get_format_identifier": [
+      "self",
+      "format"
+    ],
+    "__reformat_yaml": [
+      "self",
+      "location",
+      "format"
+    ],
+    "delete": [
+      "self"
+    ],
+    "restore": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "unwrap_version_id": [
+    "version_id"
+  ],
+  "Model": {
+    "__init__": [
+      "self",
+      "model"
+    ]
+  },
+  "get_wrong_dependencies_versions": [
+    "dependencies_versions"
+  ],
+  "print_warn_for_wrong_dependencies_versions": [
+    "dependencies_versions",
+    "ask_to_continue"
+  ],
+  "warn_for_wrong_dependencies_versions": [
+    "dependencies_versions"
+  ],
+  "normalize_yolo_model_type": [
+    "model_type"
+  ],
+  "get_model_format": [
+    "model_type"
+  ],
+  "count_class_occurances": [
+    "predictions",
+    "target_class"
+  ],
+  "count_comparisons": [
+    "predictions",
+    "required_objects_count",
+    "required_class_count",
+    "target_class"
+  ],
+  "check_box_size": [
+    "prediction",
+    "minimum_size_requirement",
+    "maximum_size_requirement"
+  ],
+  "base64_encode": [
+    "image_path"
+  ],
+  "clip_encode": [
+    "image1",
+    "image2",
+    "CLIP_FEATURIZE_URL"
+  ],
+  "task_of_model_type": [
+    "model_type"
+  ],
+  "validate_model_type_for_project": [
+    "model_type",
+    "project_type",
+    "project_id"
+  ],
+  "process": [
+    "model_type",
+    "model_path",
+    "filename"
+  ],
+  "_get_processor_function": [
+    "model_type"
+  ],
+  "_detect_yolo_task": [
+    "model_instance"
+  ],
+  "_process_yolo": [
+    "model_type",
+    "model_path",
+    "filename"
+  ],
+  "_detect_rfdetr_task": [
+    "checkpoint"
+  ],
+  "_process_rfdetr": [
+    "model_type",
+    "model_path",
+    "filename"
+  ],
+  "get_classnames_txt_for_rfdetr": [
+    "model_path",
+    "pt_file",
+    "checkpoint"
+  ],
+  "maybe_prepend_dummy_class": [
+    "class_name_file"
+  ],
+  "_process_huggingface": [
+    "model_type",
+    "model_path",
+    "filename"
+  ],
+  "_process_yolonas": [
+    "model_type",
+    "model_path",
+    "filename"
+  ],
+  "amend_data_yaml": [
+    "path",
+    "callback"
+  ],
+  "IMAGE_EXTENSIONS": [],
+  "ANNOTATION_EXTENSIONS": [],
+  "LABELMAPS_EXTENSIONS": [],
+  "_patch_sep": [
+    "filename"
+  ],
+  "parsefolder": [
+    "folder",
+    "is_classification"
+  ],
+  "_alphanumkey": [
+    "s"
+  ],
+  "_list_files": [
+    "folder"
+  ],
+  "_add_indices": [
+    "files"
+  ],
+  "_describe_file": [
+    "f"
+  ],
+  "_map_annotations_to_images_1to1": [
+    "images",
+    "annotations"
+  ],
+  "_map_annotations_to_images_1tomany": [
+    "images",
+    "annotationFiles"
+  ],
+  "_build_image_to_annotationfile_index": [
+    "annotationFiles"
+  ],
+  "_build_image_and_annotation_maps": [
+    "annotationFiles"
+  ],
+  "_filterIndividualAnnotations": [
+    "image",
+    "annotation",
+    "format",
+    "imgRefMap",
+    "annotationMap"
+  ],
+  "_loadAnnotations": [
+    "folder",
+    "annotations"
+  ],
+  "_read_jsonl": [
+    "path"
+  ],
+  "_parseAnnotationCSV": [
+    "filename"
+  ],
+  "_guessAnnotationFileFormat": [
+    "parsed",
+    "extension"
+  ],
+  "_map_labelmaps_to_annotations": [
+    "annotations",
+    "labelmaps"
+  ],
+  "_load_labelmaps": [
+    "folder",
+    "labelmaps"
+  ],
+  "_decide_split": [
+    "images"
+  ],
+  "_infer_classification_labels_from_folders": [
+    "images"
+  ],
+  "plot_image": [
+    "image_path"
+  ],
+  "plot_annotation": [
+    "axes",
+    "prediction",
+    "stroke",
+    "transparency",
+    "colors"
+  ],
+  "Prediction": {
+    "__init__": [
+      "self",
+      "json_prediction",
+      "image_path",
+      "prediction_type",
+      "colors"
+    ],
+    "json": [
+      "self"
+    ],
+    "__load_image": [
+      "self"
+    ],
+    "plot": [
+      "self",
+      "stroke"
+    ],
+    "save": [
+      "self",
+      "output_path",
+      "stroke",
+      "transparency"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "__repr__": []
+  },
+  "PredictionGroup": {
+    "__init__": [
+      "self",
+      "image_dims",
+      "image_path"
+    ],
+    "add_prediction": [
+      "self",
+      "prediction"
+    ],
+    "plot": [
+      "self",
+      "stroke"
+    ],
+    "__load_image": [
+      "self"
+    ],
+    "save": [
+      "self",
+      "output_path",
+      "stroke"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "index"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "__exception_check": [
+      "self",
+      "is_prediction_check",
+      "image_path_check",
+      "prediction_type_check"
+    ],
+    "json": [
+      "self"
+    ],
+    "create_prediction_group": [
+      "json_response",
+      "image_path",
+      "prediction_type",
+      "image_dims",
+      "colors"
+    ]
+  },
+  "pillow_avif": [],
+  "check_image_path": [
+    "image_path"
+  ],
+  "check_image_url": [
+    "url"
+  ],
+  "mask_image": [
+    "image",
+    "encoded_mask",
+    "transparency"
+  ],
+  "validate_image_path": [
+    "image_path"
+  ],
+  "file2jpeg": [
+    "image_path"
+  ],
+  "load_labelmap": [
+    "f"
+  ],
+  "ocr_infer": [
+    "image"
+  ],
+  "write_line": [
+    "line"
+  ],
+  "Retry": {
+    "__init__": [
+      "self",
+      "max_retries",
+      "retry_on"
+    ],
+    "backoff": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "func"
+    ]
+  },
+  "extract_zip": [
+    "location",
+    "desc"
+  ],
+  "_BASE": [],
+  "_auth_headers": [
+    "api_key"
+  ],
+  "write_event": [
+    "api_key",
+    "event"
+  ],
+  "write_batch": [
+    "api_key",
+    "events"
+  ],
+  "query": [
+    "api_key",
+    "query_params"
+  ],
+  "list_use_cases": [
+    "api_key",
+    "status"
+  ],
+  "get_custom_metadata_schema": [
+    "api_key",
+    "use_case_id"
+  ],
+  "create_use_case": [
+    "api_key",
+    "name"
+  ],
+  "rename_use_case": [
+    "api_key",
+    "use_case_id",
+    "name"
+  ],
+  "archive_use_case": [
+    "api_key",
+    "use_case_id"
+  ],
+  "unarchive_use_case": [
+    "api_key",
+    "use_case_id"
+  ],
+  "upload_image": [
+    "api_key",
+    "image_path",
+    "name",
+    "metadata"
+  ],
+  "DeploymentApiError": {},
+  "RoboflowError": {},
+  "ImageUploadError": {
+    "__init__": [
+      "self",
+      "message",
+      "status_code"
+    ]
+  },
+  "AnnotationSaveError": {
+    "__init__": [
+      "self",
+      "message",
+      "status_code"
+    ]
+  },
+  "get_workspace": [
+    "api_key",
+    "workspace_url"
+  ],
+  "get_project": [
+    "api_key",
+    "workspace_url",
+    "project_url"
+  ],
+  "start_version_training": [
+    "api_key",
+    "workspace_url",
+    "project_url",
+    "version"
+  ],
+  "get_version": [
+    "api_key",
+    "workspace_url",
+    "project_url",
+    "version",
+    "nocache"
+  ],
+  "get_version_export": [
+    "api_key",
+    "workspace_url",
+    "project_url",
+    "version",
+    "format"
+  ],
+  "start_search_export": [
+    "api_key",
+    "workspace_url",
+    "query",
+    "format",
+    "session",
+    "dataset",
+    "annotation_group",
+    "name"
+  ],
+  "get_search_export": [
+    "api_key",
+    "workspace_url",
+    "export_id",
+    "session"
+  ],
+  "workspace_search": [
+    "api_key",
+    "workspace_url",
+    "query",
+    "page_size",
+    "fields",
+    "continuation_token"
+  ],
+  "workspace_delete_images": [
+    "api_key",
+    "workspace_url",
+    "image_ids"
+  ],
+  "save_annotation": [
+    "api_key",
+    "project_url",
+    "annotation_name",
+    "annotation_string",
+    "image_id",
+    "job_name",
+    "is_prediction",
+    "annotation_labelmap",
+    "overwrite"
+  ],
+  "_save_annotation_url": [
+    "api_key",
+    "project_url",
+    "name",
+    "image_id",
+    "job_name",
+    "is_prediction",
+    "overwrite"
+  ],
+  "_upload_url": [
+    "api_key",
+    "project_url"
+  ],
+  "_hosted_upload_url": [
+    "api_key",
+    "project_url",
+    "image_path",
+    "split",
+    "batch_name",
+    "tag_names",
+    "kwargs"
+  ],
+  "_local_upload_url": [
+    "api_key",
+    "project_url",
+    "batch_name",
+    "tag_names",
+    "sequence_number",
+    "sequence_size",
+    "kwargs"
+  ],
+  "_save_annotation_error": [
+    "response"
+  ],
+  "init_zip_upload": [
+    "api_key",
+    "workspace_url",
+    "project_url",
+    "split",
+    "tags",
+    "batch_name"
+  ],
+  "upload_zip_to_signed_url": [
+    "signed_url",
+    "zip_path"
+  ],
+  "get_zip_upload_status": [
+    "api_key",
+    "workspace_url",
+    "task_id"
+  ],
+  "list_batches": [
+    "api_key",
+    "workspace_url",
+    "project_url"
+  ],
+  "get_batch": [
+    "api_key",
+    "workspace_url",
+    "project_url",
+    "batch_id"
+  ],
+  "list_annotation_jobs": [
+    "api_key",
+    "workspace_url",
+    "project_url"
+  ],
+  "get_annotation_job": [
+    "api_key",
+    "workspace_url",
+    "project_url",
+    "job_id"
+  ],
+  "create_annotation_job": [
+    "api_key",
+    "workspace_url",
+    "project_url"
+  ],
+  "list_folders": [
+    "api_key",
+    "workspace_url"
+  ],
+  "get_folder": [
+    "api_key",
+    "workspace_url",
+    "group_id"
+  ],
+  "create_folder": [
+    "api_key",
+    "workspace_url",
+    "name"
+  ],
+  "update_folder": [
+    "api_key",
+    "workspace_url",
+    "group_id"
+  ],
+  "delete_folder": [
+    "api_key",
+    "workspace_url",
+    "group_id"
+  ],
+  "_WORKFLOW_SPEC_KEYS": [],
+  "_normalize_workflow_config": [
+    "config"
+  ],
+  "list_workflows": [
+    "api_key",
+    "workspace_url"
+  ],
+  "get_workflow": [
+    "api_key",
+    "workspace_url",
+    "workflow_url"
+  ],
+  "create_workflow": [
+    "api_key",
+    "workspace_url"
+  ],
+  "update_workflow": [
+    "api_key",
+    "workspace_url"
+  ],
+  "list_workflow_versions": [
+    "api_key",
+    "workspace_url",
+    "workflow_url"
+  ],
+  "fork_workflow": [
+    "api_key",
+    "workspace_url"
+  ],
+  "get_billing_usage": [
+    "api_key",
+    "workspace_url"
+  ],
+  "get_plan_info": [
+    "api_key"
+  ],
+  "get_labeling_stats": [
+    "api_key",
+    "workspace_url"
+  ],
+  "get_video_job_status": [
+    "api_key",
+    "job_id"
+  ],
+  "search_universe": [
+    "query"
+  ],
+  "_raise_for_trash_response": [
+    "response"
+  ],
+  "delete_project": [
+    "api_key",
+    "workspace_url",
+    "project_url"
+  ],
+  "delete_version": [
+    "api_key",
+    "workspace_url",
+    "project_url",
+    "version"
+  ],
+  "delete_workflow": [
+    "api_key",
+    "workspace_url",
+    "workflow_url"
+  ],
+  "list_trash": [
+    "api_key",
+    "workspace_url"
+  ],
+  "restore_trash_item": [
+    "api_key",
+    "workspace_url",
+    "item_type",
+    "item_id",
+    "parent_id"
+  ],
+  "format_table": [
+    "rows",
+    "columns",
+    "headers",
+    "max_width"
+  ],
+  "output": [
+    "args",
+    "data",
+    "text"
+  ],
+  "_detect_plan_hint": [
+    "message"
+  ],
+  "_translate_api_hints": [
+    "message"
+  ],
+  "_sanitize_credentials": [
+    "text"
+  ],
+  "_parse_error_message": [
+    "raw"
+  ],
+  "output_error": [
+    "args",
+    "message",
+    "hint",
+    "exit_code"
+  ],
+  "stub": [
+    "args"
+  ],
+  "suppress_sdk_output": [
+    "args"
+  ],
+  "resolve_default_workspace": [
+    "api_key"
+  ],
+  "resolve_resource": [
+    "shorthand",
+    "workspace_override"
+  ],
+  "resolve_ws_and_key": [
+    "args"
+  ],
+  "_DESCRIPTION": [],
+  "app": [],
+  "_version_callback": [
+    "value"
+  ],
+  "_root_callback": [
+    "ctx",
+    "api_key",
+    "json_output",
+    "quiet",
+    "version",
+    "workspace"
+  ],
+  "_print_flattened_help": [],
+  "help_command": [
+    "ctx"
+  ],
+  "_LegacyParserShim": {
+    "parse_args": [
+      "self",
+      "argv"
+    ],
+    "print_help": [
+      "self"
+    ]
+  },
+  "build_parser": [],
+  "_reorder_argv": [
+    "argv"
+  ],
+  "main": [],
+  "_sort_params": [
+    "params"
+  ],
+  "SortedGroup": {
+    "list_commands": [
+      "self",
+      "ctx"
+    ],
+    "format_help": [
+      "self",
+      "ctx",
+      "formatter"
+    ],
+    "get_command": [
+      "self",
+      "ctx",
+      "cmd_name"
+    ]
+  },
+  "ctx_to_args": [
+    "ctx"
+  ],
+  "folder_app": [],
+  "_resolve_ws_and_key": [
+    "args"
+  ],
+  "_list_folders": [
+    "args"
+  ],
+  "_get_folder": [
+    "args"
+  ],
+  "_create_folder": [
+    "args"
+  ],
+  "_update_folder": [
+    "args"
+  ],
+  "_delete_folder": [
+    "args"
+  ],
+  "workspace_app": [],
+  "list_workspaces": [
+    "ctx"
+  ],
+  "workspace_usage": [
+    "ctx"
+  ],
+  "workspace_plan": [
+    "ctx"
+  ],
+  "workspace_stats": [
+    "ctx",
+    "start_date",
+    "end_date"
+  ],
+  "_list_workspaces": [
+    "args"
+  ],
+  "_get_workspace": [
+    "args"
+  ],
+  "_workspace_usage": [
+    "args"
+  ],
+  "_workspace_plan": [
+    "args"
+  ],
+  "_workspace_stats": [
+    "args"
+  ],
+  "auth_app": [],
+  "status": [
+    "ctx"
+  ],
+  "set_workspace": [
+    "ctx",
+    "workspace_id"
+  ],
+  "logout": [
+    "ctx"
+  ],
+  "_get_config_path": [],
+  "_load_config": [],
+  "_save_config": [
+    "config"
+  ],
+  "_mask_key": [
+    "key"
+  ],
+  "_login": [
+    "args"
+  ],
+  "_status": [
+    "args"
+  ],
+  "_set_workspace": [
+    "args"
+  ],
+  "_logout": [
+    "args"
+  ],
+  "vision_events_app": [],
+  "_resolve": [
+    "args"
+  ],
+  "write": [
+    "ctx",
+    "event"
+  ],
+  "_write": [
+    "args"
+  ],
+  "_write_batch": [
+    "args"
+  ],
+  "_query": [
+    "args"
+  ],
+  "use_cases": [
+    "ctx",
+    "status"
+  ],
+  "_use_cases": [
+    "args"
+  ],
+  "_create_use_case": [
+    "args"
+  ],
+  "_rename_use_case": [
+    "args"
+  ],
+  "_archive_use_case": [
+    "args"
+  ],
+  "_unarchive_use_case": [
+    "args"
+  ],
+  "metadata_schema": [
+    "ctx",
+    "use_case"
+  ],
+  "_metadata_schema": [
+    "args"
+  ],
+  "_upload_image": [
+    "args"
+  ],
+  "image_app": [],
+  "get_image": [
+    "ctx",
+    "image_id",
+    "project"
+  ],
+  "search_images": [
+    "ctx",
+    "query",
+    "project",
+    "limit",
+    "cursor",
+    "export",
+    "format",
+    "location",
+    "dataset",
+    "annotation_group",
+    "name",
+    "no_extract"
+  ],
+  "tag_image": [
+    "ctx",
+    "image_id",
+    "project",
+    "add_tags",
+    "remove_tags"
+  ],
+  "delete_images": [
+    "ctx",
+    "image_ids",
+    "project"
+  ],
+  "annotate_image": [
+    "ctx",
+    "image_id",
+    "project",
+    "annotation_file",
+    "annotation_format",
+    "labelmap"
+  ],
+  "_handle_upload": [
+    "args"
+  ],
+  "_handle_upload_single": [
+    "args",
+    "api_key",
+    "path"
+  ],
+  "_handle_upload_directory": [
+    "args",
+    "api_key",
+    "path"
+  ],
+  "_handle_get": [
+    "args"
+  ],
+  "_handle_search": [
+    "args"
+  ],
+  "_handle_tag": [
+    "args"
+  ],
+  "_handle_delete": [
+    "args"
+  ],
+  "_handle_annotate": [
+    "args"
+  ],
+  "_default_workspace": [],
+  "workflow_app": [],
+  "_version_app": [],
+  "build_workflow": [
+    "ctx",
+    "prompt"
+  ],
+  "run_workflow": [
+    "ctx",
+    "workflow_url",
+    "input"
+  ],
+  "deploy_workflow": [
+    "ctx",
+    "workflow_url"
+  ],
+  "restore_workflow_cmd": [
+    "ctx",
+    "workflow_url"
+  ],
+  "_resolve_workspace_and_key": [
+    "args"
+  ],
+  "_read_definition_file": [
+    "args"
+  ],
+  "_list_workflows": [
+    "args"
+  ],
+  "_get_workflow": [
+    "args"
+  ],
+  "_create_workflow": [
+    "args"
+  ],
+  "_update_workflow": [
+    "args"
+  ],
+  "_list_workflow_versions": [
+    "args"
+  ],
+  "_fork_workflow": [
+    "args"
+  ],
+  "_stub_build": [
+    "args"
+  ],
+  "_stub_run": [
+    "args"
+  ],
+  "_stub_deploy": [
+    "args"
+  ],
+  "_delete_workflow": [
+    "args"
+  ],
+  "_restore_workflow": [
+    "args"
+  ],
+  "video_app": [],
+  "infer": [
+    "ctx",
+    "project",
+    "version_number",
+    "video_file",
+    "fps"
+  ],
+  "_video_infer": [
+    "args"
+  ],
+  "_video_status": [
+    "args"
+  ],
+  "_wrap": [
+    "func"
+  ],
+  "deployment_app": [],
+  "machine_type": [
+    "ctx"
+  ],
+  "create_deployment": [
+    "ctx",
+    "deployment_name",
+    "machine_type_opt",
+    "creator_email",
+    "duration",
+    "no_delete_on_expiration",
+    "inference_version",
+    "wait_on_pending"
+  ],
+  "list_deployments": [
+    "ctx"
+  ],
+  "usage": [
+    "ctx",
+    "deployment_name",
+    "from_timestamp",
+    "to_timestamp"
+  ],
+  "deployment_log": [
+    "ctx",
+    "deployment_name",
+    "duration",
+    "tail",
+    "follow"
+  ],
+  "legacy_machine_type": [
+    "ctx",
+    "api_key"
+  ],
+  "legacy_add": [
+    "ctx",
+    "deployment_name",
+    "machine_type_opt",
+    "creator_email",
+    "api_key",
+    "duration",
+    "no_delete_on_expiration",
+    "inference_version",
+    "wait_on_pending"
+  ],
+  "legacy_usage_workspace": [
+    "ctx",
+    "api_key",
+    "from_timestamp",
+    "to_timestamp"
+  ],
+  "legacy_usage_deployment": [
+    "ctx",
+    "deployment_name",
+    "api_key",
+    "from_timestamp",
+    "to_timestamp"
+  ],
+  "train_app": [],
+  "_train_callback": [
+    "ctx",
+    "project",
+    "version_number",
+    "model_type",
+    "checkpoint",
+    "speed",
+    "epochs"
+  ],
+  "start_training": [
+    "ctx",
+    "project",
+    "version_number",
+    "model_type",
+    "checkpoint",
+    "speed",
+    "epochs"
+  ],
+  "_start": [
+    "args"
+  ],
+  "_ensure_export": [
+    "args",
+    "api_key",
+    "workspace_url",
+    "project_slug",
+    "version_str",
+    "model_type"
+  ],
+  "annotation_app": [],
+  "batch_app": [],
+  "job_app": [],
+  "batch_list": [
+    "ctx",
+    "project"
+  ],
+  "batch_get": [
+    "ctx",
+    "batch_id",
+    "project"
+  ],
+  "job_list": [
+    "ctx",
+    "project"
+  ],
+  "job_get": [
+    "ctx",
+    "job_id",
+    "project"
+  ],
+  "job_create": [
+    "ctx",
+    "project",
+    "name",
+    "batch",
+    "num_images",
+    "labeler",
+    "reviewer"
+  ],
+  "_normalize_timestamps": [
+    "obj"
+  ],
+  "_resolve_project_context": [
+    "args"
+  ],
+  "_batch_list": [
+    "args"
+  ],
+  "_batch_get": [
+    "args"
+  ],
+  "_job_list": [
+    "args"
+  ],
+  "_job_get": [
+    "args"
+  ],
+  "_job_create": [
+    "args"
+  ],
+  "trash_app": [],
+  "list_trash_cmd": [
+    "ctx"
+  ],
+  "_resolve_workspace": [
+    "args"
+  ],
+  "_list_trash": [
+    "args"
+  ],
+  "register_hidden_aliases": [
+    "app"
+  ],
+  "completion_app": [],
+  "_generate_completion": [
+    "shell"
+  ],
+  "bash": [],
+  "zsh": [],
+  "fish": [],
+  "ProjectType": {
+    "object_detection": [],
+    "single_label_classification": [],
+    "multi_label_classification": [],
+    "instance_segmentation": [],
+    "semantic_segmentation": [],
+    "keypoint_detection": []
+  },
+  "project_app": [],
+  "list_projects": [
+    "ctx",
+    "type"
+  ],
+  "create_project": [
+    "ctx",
+    "name",
+    "type",
+    "license",
+    "annotation"
+  ],
+  "restore_project": [
+    "ctx",
+    "project_id"
+  ],
+  "_list_projects": [
+    "args"
+  ],
+  "_get_project": [
+    "args"
+  ],
+  "_create_project": [
+    "args"
+  ],
+  "_delete_project": [
+    "args"
+  ],
+  "_restore_project": [
+    "args"
+  ],
+  "version_app": [],
+  "list_versions": [
+    "ctx",
+    "project"
+  ],
+  "download": [
+    "ctx",
+    "url_or_id",
+    "format",
+    "location"
+  ],
+  "export": [
+    "ctx",
+    "version_num",
+    "project",
+    "format"
+  ],
+  "create": [
+    "ctx",
+    "project",
+    "settings"
+  ],
+  "restore_version_cmd": [
+    "ctx",
+    "version_ref"
+  ],
+  "_list_versions": [
+    "args"
+  ],
+  "_format_splits": [
+    "splits"
+  ],
+  "_get_version": [
+    "args"
+  ],
+  "_parse_url": [
+    "url"
+  ],
+  "_download": [
+    "args"
+  ],
+  "_export": [
+    "args"
+  ],
+  "_create": [
+    "args"
+  ],
+  "_delete_version": [
+    "args"
+  ],
+  "_restore_version": [
+    "args"
+  ],
+  "universe_app": [],
+  "search": [
+    "ctx",
+    "query",
+    "type",
+    "limit"
+  ],
+  "_search": [
+    "args"
+  ],
+  "_stub": [
+    "args"
+  ],
+  "list_jobs": [
+    "ctx",
+    "status_filter"
+  ],
+  "results": [
+    "ctx",
+    "job_id",
+    "format"
+  ],
+  "model_app": [],
+  "list_models": [
+    "ctx",
+    "project"
+  ],
+  "get_model": [
+    "ctx",
+    "model_url"
+  ],
+  "model_infer": [
+    "ctx",
+    "file",
+    "model",
+    "confidence",
+    "overlap",
+    "type"
+  ],
+  "upload_model": [
+    "ctx",
+    "model_type",
+    "model_path",
+    "project",
+    "version_number",
+    "filename",
+    "model_name"
+  ],
+  "_list_models": [
+    "args"
+  ],
+  "_get_model": [
+    "args"
+  ],
+  "_upload_model": [
+    "args"
+  ],
+  "search_command": [
+    "app"
+  ],
+  "_do_search": [
+    "args",
+    "workspace"
+  ],
+  "_do_export": [
+    "args",
+    "workspace"
+  ],
+  "infer_command": [
+    "app"
+  ],
+  "_infer": [
+    "args"
+  ],
+  "InstanceSegmentationModel": {
+    "__init__": [
+      "self",
+      "api_key",
+      "version_id",
+      "colors",
+      "preprocessing",
+      "local"
+    ],
+    "predict": [
+      "self",
+      "image_path",
+      "confidence"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "ObjectDetectionModel": {
+    "__init__": [
+      "self",
+      "api_key",
+      "id",
+      "name",
+      "version",
+      "local",
+      "classes",
+      "overlap",
+      "confidence",
+      "stroke",
+      "labels",
+      "format",
+      "colors",
+      "preprocessing"
+    ],
+    "load_model": [
+      "self",
+      "name",
+      "version",
+      "local",
+      "classes",
+      "overlap",
+      "confidence",
+      "stroke",
+      "labels",
+      "format"
+    ],
+    "predict": [
+      "self",
+      "image_path",
+      "hosted",
+      "format",
+      "classes",
+      "overlap",
+      "confidence",
+      "stroke",
+      "labels"
+    ],
+    "webcam": [
+      "self",
+      "webcam_id",
+      "inference_engine_url",
+      "within_jupyter",
+      "confidence",
+      "overlap",
+      "stroke",
+      "labels",
+      "web_cam_res"
+    ],
+    "__exception_check": [
+      "self",
+      "image_path_check"
+    ],
+    "__generate_url": [
+      "self",
+      "local",
+      "classes",
+      "overlap",
+      "confidence",
+      "stroke",
+      "labels",
+      "format",
+      "inference_engine_url"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "KeypointDetectionModel": {
+    "__init__": [
+      "self",
+      "api_key",
+      "id",
+      "name",
+      "version",
+      "confidence",
+      "local"
+    ],
+    "predict": [
+      "self",
+      "image_path",
+      "hosted",
+      "confidence"
+    ],
+    "load_model": [
+      "self",
+      "name",
+      "version"
+    ],
+    "__generate_url": [
+      "self",
+      "confidence"
+    ],
+    "__exception_check": [
+      "self",
+      "image_path_check"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "SUPPORTED_ROBOFLOW_MODELS": [],
+  "SUPPORTED_ADDITIONAL_MODELS": [],
+  "InferenceModel": {
+    "__init__": [
+      "self",
+      "api_key",
+      "version_id",
+      "colors"
+    ],
+    "__get_image_params": [
+      "self",
+      "image_path"
+    ],
+    "predict": [
+      "self",
+      "image_path",
+      "prediction_type"
+    ],
+    "predict_video": [
+      "self",
+      "video_path",
+      "fps",
+      "additional_models",
+      "prediction_type"
+    ],
+    "poll_for_video_results": [
+      "self",
+      "job_id"
+    ],
+    "poll_until_video_results": [
+      "self",
+      "job_id"
+    ],
+    "download": [
+      "self",
+      "format",
+      "location"
+    ]
+  },
+  "CLIPModel": {
+    "__init__": [
+      "self",
+      "api_key"
+    ]
+  },
+  "ACCEPTED_VIDEO_FORMATS": [],
+  "is_valid_mime": [
+    "filename"
+  ],
+  "is_valid_video": [
+    "filename"
+  ],
+  "VideoInferenceModel": {
+    "__init__": [
+      "self",
+      "api_key"
+    ],
+    "predict": [
+      "self",
+      "video_path",
+      "inference_type",
+      "fps",
+      "additional_models"
+    ],
+    "poll_for_results": [
+      "self",
+      "job_id"
+    ],
+    "poll_until_results": [
+      "self",
+      "job_id"
+    ]
+  },
+  "ClassificationModel": {
+    "__init__": [
+      "self",
+      "api_key",
+      "id",
+      "name",
+      "version",
+      "local",
+      "colors",
+      "preprocessing"
+    ],
+    "predict": [
+      "self",
+      "image_path",
+      "hosted"
+    ],
+    "load_model": [
+      "self",
+      "name",
+      "version"
+    ],
+    "__generate_url": [
+      "self"
+    ],
+    "__exception_check": [
+      "self",
+      "image_path_check"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "SemanticSegmentationModel": {
+    "__init__": [
+      "self",
+      "api_key",
+      "version_id"
+    ],
+    "predict": [
+      "self",
+      "image_path",
+      "confidence"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "VLMModel": {
+    "__init__": [
+      "self",
+      "api_key",
+      "id",
+      "name",
+      "version",
+      "local",
+      "colors",
+      "preprocessing"
+    ],
+    "_endpoint": [
+      "self"
+    ],
+    "predict": [
+      "self",
+      "image_path"
+    ]
+  },
+  "GazeModel": {
+    "__init__": [
+      "self",
+      "api_key",
+      "version_id"
+    ]
+  }
+}
