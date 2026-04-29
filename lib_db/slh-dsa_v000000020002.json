@@ -1,0 +1,154 @@
+{
+  "SLHDSAException": {},
+  "SLHDSAVerifyException": {},
+  "SLHDSASignException": {},
+  "SLHDSAKeyException": {},
+  "__all__": [],
+  "__version__": [],
+  "HASH_ALGORITHMS_OID_BY_FUNCTION": [],
+  "HASH_ALGORITHM_FUNCTION_BY_OID": [],
+  "HASH_ALGORITHM_OID_PREFIX": [],
+  "PARAMETER_BY_OID": [],
+  "AlgorithmIdentifier": {},
+  "PrivateKeyInfo": {},
+  "PublicKeyInfo": {},
+  "PublicKey": {
+    "verify": [
+      "self",
+      "msg",
+      "sig"
+    ],
+    "verify_pure": [
+      "self",
+      "msg",
+      "sig",
+      "ctx"
+    ],
+    "verify_hash": [
+      "self",
+      "msg",
+      "sig",
+      "ctx",
+      "prehash"
+    ],
+    "digest": [
+      "self"
+    ],
+    "from_digest": [
+      "cls",
+      "digest",
+      "par"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "from_pkcs": [
+      "cls",
+      "filename"
+    ],
+    "to_pkcs": [
+      "self",
+      "filename"
+    ]
+  },
+  "SecretKey": {
+    "__init__": [
+      "self",
+      "key",
+      "par"
+    ],
+    "sign": [
+      "self",
+      "msg",
+      "randomize"
+    ],
+    "sign_pure": [
+      "self",
+      "msg",
+      "randomize",
+      "ctx"
+    ],
+    "sign_hash": [
+      "self",
+      "msg",
+      "randomize",
+      "ctx",
+      "prehash"
+    ],
+    "digest": [
+      "self"
+    ],
+    "from_digest": [
+      "cls",
+      "digest",
+      "par"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "from_pkcs": [
+      "cls",
+      "filename"
+    ],
+    "to_pkcs": [
+      "self",
+      "filename"
+    ],
+    "pubkey": [
+      "self"
+    ],
+    "keypair": [
+      "self"
+    ]
+  },
+  "KeyPair": {
+    "verify": [
+      "self",
+      "msg",
+      "sig"
+    ],
+    "verify_pure": [
+      "self",
+      "msg",
+      "sig",
+      "ctx"
+    ],
+    "verify_hash": [
+      "self",
+      "msg",
+      "sig",
+      "ctx",
+      "prehash"
+    ],
+    "sign": [
+      "self",
+      "msg",
+      "randomize"
+    ],
+    "sign_pure": [
+      "self",
+      "msg",
+      "randomize",
+      "ctx"
+    ],
+    "sign_hash": [
+      "self",
+      "msg",
+      "randomize",
+      "ctx",
+      "prehash"
+    ],
+    "gen": [
+      "cls",
+      "par"
+    ],
+    "digest": [
+      "self"
+    ],
+    "from_digest": [
+      "cls",
+      "digest",
+      "par"
+    ]
+  }
+}
