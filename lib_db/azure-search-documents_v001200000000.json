@@ -1,0 +1,3643 @@
+{
+  "VERSION": [],
+  "SDK_MONIKER": [],
+  "SearchClient": {
+    "__init__": [
+      "self",
+      "endpoint",
+      "credential",
+      "index_name"
+    ],
+    "send_request": [
+      "self",
+      "request"
+    ],
+    "close": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self"
+    ]
+  },
+  "SearchClientConfiguration": {
+    "__init__": [
+      "self",
+      "endpoint",
+      "credential",
+      "index_name"
+    ],
+    "_infer_policy": [
+      "self"
+    ],
+    "_configure": [
+      "self"
+    ]
+  },
+  "is_retryable_status_code": [
+    "status_code"
+  ],
+  "ApiVersion": {
+    "V2020_06_30": [],
+    "V2023_11_01": [],
+    "V2024_07_01": [],
+    "V2025_09_01": [],
+    "V2026_04_01": []
+  },
+  "DEFAULT_VERSION": [],
+  "SearchIndexingBufferedSender": {
+    "_DEFAULT_AUTO_FLUSH_INTERVAL": [],
+    "_DEFAULT_INITIAL_BATCH_ACTION_COUNT": [],
+    "_DEFAULT_MAX_RETRIES": [],
+    "__init__": [
+      "self",
+      "endpoint",
+      "index_name",
+      "credential"
+    ],
+    "_cleanup": [
+      "self",
+      "flush"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "actions": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "flush": [
+      "self",
+      "timeout"
+    ],
+    "_process": [
+      "self",
+      "timeout"
+    ],
+    "_process_if_needed": [
+      "self"
+    ],
+    "_reset_timer": [
+      "self"
+    ],
+    "upload_documents": [
+      "self",
+      "documents"
+    ],
+    "delete_documents": [
+      "self",
+      "documents"
+    ],
+    "merge_documents": [
+      "self",
+      "documents"
+    ],
+    "merge_or_upload_documents": [
+      "self",
+      "documents"
+    ],
+    "index_documents": [
+      "self",
+      "batch"
+    ],
+    "_index_documents_actions": [
+      "self",
+      "actions"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self"
+    ],
+    "_retry_action": [
+      "self",
+      "action"
+    ],
+    "_callback_succeed": [
+      "self",
+      "action"
+    ],
+    "_callback_fail": [
+      "self",
+      "action"
+    ],
+    "_callback_new": [
+      "self",
+      "actions"
+    ]
+  },
+  "patch_sdk": [],
+  "__version__": [],
+  "__all__": [],
+  "KnowledgeBaseRetrievalClient": {
+    "__init__": [
+      "self",
+      "endpoint",
+      "credential",
+      "knowledge_base_name"
+    ],
+    "send_request": [
+      "self",
+      "request"
+    ],
+    "close": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self"
+    ]
+  },
+  "KnowledgeBaseRetrievalClientConfiguration": {
+    "__init__": [
+      "self",
+      "endpoint",
+      "credential",
+      "knowledge_base_name"
+    ],
+    "_infer_policy": [
+      "self"
+    ],
+    "_configure": [
+      "self"
+    ]
+  },
+  "JSON": [],
+  "T": [],
+  "ClsType": [],
+  "_KnowledgeBaseRetrievalClientOperationsMixin": {
+    "retrieve": [
+      "self",
+      "retrieval_request"
+    ]
+  },
+  "_SERIALIZER": [],
+  "build_knowledge_base_retrieval_retrieve_request": [
+    "knowledge_base_name"
+  ],
+  "TClient": [],
+  "TConfig": [],
+  "ClientMixinABC": {},
+  "quote_etag": [
+    "etag"
+  ],
+  "prep_if_match": [
+    "etag",
+    "match_condition"
+  ],
+  "prep_if_none_match": [
+    "etag",
+    "match_condition"
+  ],
+  "_LOGGER": [],
+  "TZ_UTC": [],
+  "_T": [],
+  "_NONE_TYPE": [],
+  "_timedelta_as_isostr": [
+    "td"
+  ],
+  "_serialize_bytes": [
+    "o",
+    "format"
+  ],
+  "_serialize_datetime": [
+    "o",
+    "format"
+  ],
+  "_is_readonly": [
+    "p"
+  ],
+  "SdkJSONEncoder": {
+    "__init__": [
+      "self"
+    ],
+    "default": [
+      "self",
+      "o"
+    ]
+  },
+  "_VALID_DATE": [],
+  "_VALID_RFC7231": [],
+  "_ARRAY_ENCODE_MAPPING": [],
+  "_deserialize_array_encoded": [
+    "delimit",
+    "attr"
+  ],
+  "_deserialize_datetime": [
+    "attr"
+  ],
+  "_deserialize_datetime_rfc7231": [
+    "attr"
+  ],
+  "_deserialize_datetime_unix_timestamp": [
+    "attr"
+  ],
+  "_deserialize_date": [
+    "attr"
+  ],
+  "_deserialize_time": [
+    "attr"
+  ],
+  "_deserialize_bytes": [
+    "attr"
+  ],
+  "_deserialize_bytes_base64": [
+    "attr"
+  ],
+  "_deserialize_duration": [
+    "attr"
+  ],
+  "_deserialize_decimal": [
+    "attr"
+  ],
+  "_deserialize_int_as_str": [
+    "attr"
+  ],
+  "_DESERIALIZE_MAPPING": [],
+  "_DESERIALIZE_MAPPING_WITHFORMAT": [],
+  "get_deserializer": [
+    "annotation",
+    "rf"
+  ],
+  "_get_type_alias_type": [
+    "module_name",
+    "alias_name"
+  ],
+  "_get_model": [
+    "module_name",
+    "model_name"
+  ],
+  "_UNSET": [],
+  "_MyMutableMapping": {
+    "__init__": [
+      "self",
+      "data"
+    ],
+    "__contains__": [
+      "self",
+      "key"
+    ],
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "__setitem__": [
+      "self",
+      "key",
+      "value"
+    ],
+    "__delitem__": [
+      "self",
+      "key"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ],
+    "keys": [
+      "self"
+    ],
+    "values": [
+      "self"
+    ],
+    "items": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "key",
+      "default"
+    ],
+    "pop": [
+      "self",
+      "key",
+      "default"
+    ],
+    "popitem": [
+      "self"
+    ],
+    "clear": [
+      "self"
+    ],
+    "update": [
+      "self"
+    ],
+    "setdefault": [
+      "self",
+      "key",
+      "default"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "_is_model": [
+    "obj"
+  ],
+  "_serialize": [
+    "o",
+    "format"
+  ],
+  "_get_rest_field": [
+    "attr_to_rest_field",
+    "rest_name"
+  ],
+  "_create_value": [
+    "rf",
+    "value"
+  ],
+  "Model": {
+    "_is_model": [],
+    "__init__": [
+      "self"
+    ],
+    "_init_from_xml": [
+      "self",
+      "element"
+    ],
+    "copy": [
+      "self"
+    ],
+    "__new__": [
+      "cls"
+    ],
+    "__init_subclass__": [
+      "cls",
+      "discriminator"
+    ],
+    "_get_discriminator": [
+      "cls",
+      "exist_discriminators"
+    ],
+    "_deserialize": [
+      "cls",
+      "data",
+      "exist_discriminators"
+    ],
+    "as_dict": [
+      "self"
+    ],
+    "_as_dict_value": [
+      "v",
+      "exclude_readonly"
+    ]
+  },
+  "_deserialize_model": [
+    "model_deserializer",
+    "obj"
+  ],
+  "_deserialize_with_optional": [
+    "if_obj_deserializer",
+    "obj"
+  ],
+  "_deserialize_with_union": [
+    "deserializers",
+    "obj"
+  ],
+  "_deserialize_dict": [
+    "value_deserializer",
+    "module",
+    "obj"
+  ],
+  "_deserialize_multiple_sequence": [
+    "entry_deserializers",
+    "module",
+    "obj"
+  ],
+  "_is_array_encoded_deserializer": [
+    "deserializer"
+  ],
+  "_deserialize_sequence": [
+    "deserializer",
+    "module",
+    "obj"
+  ],
+  "_sorted_annotations": [
+    "types"
+  ],
+  "_get_deserialize_callable_from_annotation": [
+    "annotation",
+    "module",
+    "rf"
+  ],
+  "_deserialize_with_callable": [
+    "deserializer",
+    "value"
+  ],
+  "_deserialize": [
+    "deserializer",
+    "value",
+    "module",
+    "rf",
+    "format"
+  ],
+  "_failsafe_deserialize": [
+    "deserializer",
+    "response",
+    "module",
+    "rf",
+    "format"
+  ],
+  "_failsafe_deserialize_xml": [
+    "deserializer",
+    "response"
+  ],
+  "_RestField": {
+    "__init__": [
+      "self"
+    ],
+    "_class_type": [
+      "self"
+    ],
+    "_rest_name": [
+      "self"
+    ],
+    "__get__": [
+      "self",
+      "obj",
+      "type"
+    ],
+    "__set__": [
+      "self",
+      "obj",
+      "value"
+    ],
+    "_get_deserialize_callable_from_annotation": [
+      "self",
+      "annotation"
+    ]
+  },
+  "rest_field": [],
+  "rest_discriminator": [],
+  "serialize_xml": [
+    "model",
+    "exclude_readonly"
+  ],
+  "_get_xml_ns": [
+    "meta"
+  ],
+  "_resolve_xml_ns": [
+    "prop_meta",
+    "model_meta"
+  ],
+  "_set_xml_attribute": [
+    "element",
+    "name",
+    "value",
+    "prop_meta"
+  ],
+  "_get_element": [
+    "o",
+    "exclude_readonly",
+    "parent_meta",
+    "wrapped_element"
+  ],
+  "_get_wrapped_element": [
+    "v",
+    "exclude_readonly",
+    "meta"
+  ],
+  "_get_primitive_type_value": [
+    "v"
+  ],
+  "_safe_register_namespace": [
+    "prefix",
+    "ns"
+  ],
+  "_create_xml_element": [
+    "tag",
+    "prefix",
+    "ns"
+  ],
+  "_deserialize_xml": [
+    "deserializer",
+    "value"
+  ],
+  "_convert_element": [
+    "e"
+  ],
+  "_BOM": [],
+  "RawDeserializer": {
+    "JSON_REGEXP": [],
+    "CONTEXT_NAME": [],
+    "deserialize_from_text": [
+      "cls",
+      "data",
+      "content_type"
+    ],
+    "deserialize_from_http_generics": [
+      "cls",
+      "body_bytes",
+      "headers"
+    ]
+  },
+  "_FLATTEN": [],
+  "attribute_transformer": [
+    "key",
+    "attr_desc",
+    "value"
+  ],
+  "full_restapi_key_transformer": [
+    "key",
+    "attr_desc",
+    "value"
+  ],
+  "last_restapi_key_transformer": [
+    "key",
+    "attr_desc",
+    "value"
+  ],
+  "_create_xml_node": [
+    "tag",
+    "prefix",
+    "ns"
+  ],
+  "_decode_attribute_map_key": [
+    "key"
+  ],
+  "Serializer": {
+    "basic_types": [],
+    "_xml_basic_types_serializers": [],
+    "days": [],
+    "months": [],
+    "validation": [],
+    "__init__": [
+      "self",
+      "classes"
+    ],
+    "_serialize": [
+      "self",
+      "target_obj",
+      "data_type"
+    ],
+    "body": [
+      "self",
+      "data",
+      "data_type"
+    ],
+    "url": [
+      "self",
+      "name",
+      "data",
+      "data_type"
+    ],
+    "query": [
+      "self",
+      "name",
+      "data",
+      "data_type"
+    ],
+    "header": [
+      "self",
+      "name",
+      "data",
+      "data_type"
+    ],
+    "serialize_data": [
+      "self",
+      "data",
+      "data_type"
+    ],
+    "_get_custom_serializers": [
+      "cls",
+      "data_type"
+    ],
+    "serialize_basic": [
+      "cls",
+      "data",
+      "data_type"
+    ],
+    "serialize_unicode": [
+      "cls",
+      "data"
+    ],
+    "serialize_iter": [
+      "self",
+      "data",
+      "iter_type",
+      "div"
+    ],
+    "serialize_dict": [
+      "self",
+      "attr",
+      "dict_type"
+    ],
+    "serialize_object": [
+      "self",
+      "attr"
+    ],
+    "serialize_enum": [
+      "attr",
+      "enum_obj"
+    ],
+    "serialize_bytearray": [
+      "attr"
+    ],
+    "serialize_base64": [
+      "attr"
+    ],
+    "serialize_decimal": [
+      "attr"
+    ],
+    "serialize_long": [
+      "attr"
+    ],
+    "serialize_date": [
+      "attr"
+    ],
+    "serialize_time": [
+      "attr"
+    ],
+    "serialize_duration": [
+      "attr"
+    ],
+    "serialize_rfc": [
+      "attr"
+    ],
+    "serialize_iso": [
+      "attr"
+    ],
+    "serialize_unix": [
+      "attr"
+    ]
+  },
+  "rest_key_extractor": [
+    "attr",
+    "attr_desc",
+    "data"
+  ],
+  "rest_key_case_insensitive_extractor": [
+    "attr",
+    "attr_desc",
+    "data"
+  ],
+  "last_rest_key_extractor": [
+    "attr",
+    "attr_desc",
+    "data"
+  ],
+  "last_rest_key_case_insensitive_extractor": [
+    "attr",
+    "attr_desc",
+    "data"
+  ],
+  "attribute_key_extractor": [
+    "attr",
+    "_",
+    "data"
+  ],
+  "attribute_key_case_insensitive_extractor": [
+    "attr",
+    "_",
+    "data"
+  ],
+  "_extract_name_from_internal_type": [
+    "internal_type"
+  ],
+  "xml_key_extractor": [
+    "attr",
+    "attr_desc",
+    "data"
+  ],
+  "Deserializer": {
+    "basic_types": [],
+    "valid_date": [],
+    "__init__": [
+      "self",
+      "classes"
+    ],
+    "__call__": [
+      "self",
+      "target_obj",
+      "response_data",
+      "content_type"
+    ],
+    "_deserialize": [
+      "self",
+      "target_obj",
+      "data"
+    ],
+    "_build_additional_properties": [
+      "self",
+      "attribute_map",
+      "data"
+    ],
+    "_classify_target": [
+      "self",
+      "target",
+      "data"
+    ],
+    "failsafe_deserialize": [
+      "self",
+      "target_obj",
+      "data",
+      "content_type"
+    ],
+    "_unpack_content": [
+      "raw_data",
+      "content_type"
+    ],
+    "_instantiate_model": [
+      "self",
+      "response",
+      "attrs",
+      "additional_properties"
+    ],
+    "deserialize_data": [
+      "self",
+      "data",
+      "data_type"
+    ],
+    "deserialize_iter": [
+      "self",
+      "attr",
+      "iter_type"
+    ],
+    "deserialize_dict": [
+      "self",
+      "attr",
+      "dict_type"
+    ],
+    "deserialize_object": [
+      "self",
+      "attr"
+    ],
+    "deserialize_basic": [
+      "self",
+      "attr",
+      "data_type"
+    ],
+    "deserialize_unicode": [
+      "data"
+    ],
+    "deserialize_enum": [
+      "data",
+      "enum_obj"
+    ],
+    "deserialize_bytearray": [
+      "attr"
+    ],
+    "deserialize_base64": [
+      "attr"
+    ],
+    "deserialize_decimal": [
+      "attr"
+    ],
+    "deserialize_long": [
+      "attr"
+    ],
+    "deserialize_duration": [
+      "attr"
+    ],
+    "deserialize_date": [
+      "attr"
+    ],
+    "deserialize_time": [
+      "attr"
+    ],
+    "deserialize_rfc": [
+      "attr"
+    ],
+    "deserialize_iso": [
+      "attr"
+    ],
+    "deserialize_unix": [
+      "attr"
+    ]
+  },
+  "AIServices": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "KnowledgeSourceParams": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "AzureBlobKnowledgeSourceParams": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "CompletedSynchronizationState": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "IndexedOneLakeKnowledgeSourceParams": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "KnowledgeBaseActivityRecord": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "KnowledgeBaseAgenticReasoningActivityRecord": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "KnowledgeBaseReference": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "KnowledgeBaseAzureBlobReference": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "KnowledgeBaseErrorAdditionalInfo": {},
+  "KnowledgeBaseErrorDetail": {},
+  "KnowledgeBaseImageContent": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "KnowledgeBaseIndexedOneLakeReference": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "KnowledgeBaseMessage": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "KnowledgeBaseMessageContent": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "KnowledgeBaseMessageImageContent": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "KnowledgeBaseMessageTextContent": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "KnowledgeBaseModelWebSummarizationActivityRecord": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "KnowledgeBaseRetrievalRequest": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "KnowledgeBaseRetrievalResponse": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "KnowledgeBaseSearchIndexReference": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "KnowledgeBaseWebReference": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "KnowledgeRetrievalIntent": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "KnowledgeRetrievalReasoningEffort": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "KnowledgeRetrievalMinimalReasoningEffort": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "KnowledgeRetrievalSemanticIntent": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "KnowledgeSourceVectorizer": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "KnowledgeSourceAzureOpenAIVectorizer": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "KnowledgeSourceIngestionParameters": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "KnowledgeSourceStatistics": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "KnowledgeSourceStatus": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "KnowledgeSourceSynchronizationError": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "SearchIndexKnowledgeSourceParams": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "SynchronizationState": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "WebKnowledgeSourceParams": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "KnowledgeBaseActivityRecordType": {
+    "SEARCH_INDEX": [],
+    "AZURE_BLOB": [],
+    "INDEXED_ONELAKE": [],
+    "WEB": [],
+    "MODEL_WEB_SUMMARIZATION": [],
+    "AGENTIC_REASONING": []
+  },
+  "KnowledgeBaseMessageContentType": {
+    "TEXT": [],
+    "IMAGE": []
+  },
+  "KnowledgeBaseReferenceType": {
+    "SEARCH_INDEX": [],
+    "AZURE_BLOB": [],
+    "INDEXED_ONELAKE": [],
+    "WEB": []
+  },
+  "KnowledgeRetrievalIntentType": {
+    "SEMANTIC": []
+  },
+  "KnowledgeRetrievalReasoningEffortKind": {
+    "MINIMAL": []
+  },
+  "_ensure_response": [
+    "f"
+  ],
+  "AsyncSearchPageIterator": {
+    "__init__": [
+      "self",
+      "client",
+      "initial_request",
+      "kwargs",
+      "continuation_token"
+    ],
+    "_get_next_cb": [
+      "self",
+      "continuation_token"
+    ],
+    "_extract_data_cb": [
+      "self",
+      "response"
+    ],
+    "get_facets": [
+      "self"
+    ],
+    "get_coverage": [
+      "self"
+    ],
+    "get_count": [
+      "self"
+    ],
+    "get_answers": [
+      "self"
+    ]
+  },
+  "AsyncSearchItemPaged": {
+    "__init__": [
+      "self"
+    ],
+    "_first_iterator_instance": [
+      "self"
+    ],
+    "__anext__": [
+      "self"
+    ],
+    "get_facets": [
+      "self"
+    ],
+    "get_coverage": [
+      "self"
+    ],
+    "get_count": [
+      "self"
+    ],
+    "get_answers": [
+      "self"
+    ]
+  },
+  "_SearchClientOperationsMixin": {
+    "index_documents": [
+      "self",
+      "batch"
+    ],
+    "_index_documents_actions": [
+      "self",
+      "batch"
+    ],
+    "upload_documents": [
+      "self",
+      "documents"
+    ],
+    "delete_documents": [
+      "self",
+      "documents"
+    ],
+    "merge_documents": [
+      "self",
+      "documents"
+    ],
+    "merge_or_upload_documents": [
+      "self",
+      "documents"
+    ],
+    "search": [
+      "self",
+      "search_text"
+    ],
+    "autocomplete": [
+      "self",
+      "search_text",
+      "suggester_name"
+    ],
+    "suggest": [
+      "self",
+      "search_text",
+      "suggester_name"
+    ]
+  },
+  "_convert_search_result": [
+    "result"
+  ],
+  "_pack_continuation_token": [
+    "response",
+    "api_version"
+  ],
+  "_unpack_continuation_token": [
+    "token"
+  ],
+  "_build_search_request": [
+    "search_text"
+  ],
+  "SearchPageIterator": {
+    "__init__": [
+      "self",
+      "client",
+      "initial_request",
+      "kwargs",
+      "continuation_token"
+    ],
+    "_get_next_cb": [
+      "self",
+      "continuation_token"
+    ],
+    "_extract_data_cb": [
+      "self",
+      "response"
+    ],
+    "get_facets": [
+      "self"
+    ],
+    "get_coverage": [
+      "self"
+    ],
+    "get_count": [
+      "self"
+    ],
+    "get_answers": [
+      "self"
+    ]
+  },
+  "SearchItemPaged": {
+    "__init__": [
+      "self"
+    ],
+    "__next__": [
+      "self"
+    ],
+    "_first_iterator_instance": [
+      "self"
+    ],
+    "get_facets": [
+      "self"
+    ],
+    "get_coverage": [
+      "self"
+    ],
+    "get_count": [
+      "self"
+    ],
+    "get_answers": [
+      "self"
+    ]
+  },
+  "build_search_get_document_count_request": [
+    "index_name"
+  ],
+  "build_search_search_get_request": [
+    "index_name"
+  ],
+  "build_search_search_post_request": [
+    "index_name"
+  ],
+  "build_search_get_document_request": [
+    "key",
+    "index_name"
+  ],
+  "build_search_suggest_get_request": [
+    "index_name"
+  ],
+  "build_search_suggest_post_request": [
+    "index_name"
+  ],
+  "build_search_index_request": [
+    "index_name"
+  ],
+  "build_search_autocomplete_get_request": [
+    "index_name"
+  ],
+  "build_search_autocomplete_post_request": [
+    "index_name"
+  ],
+  "SearchIndexClient": {
+    "__init__": [
+      "self",
+      "endpoint",
+      "credential"
+    ],
+    "send_request": [
+      "self",
+      "request"
+    ],
+    "close": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self"
+    ]
+  },
+  "SearchIndexerClient": {
+    "__init__": [
+      "self",
+      "endpoint",
+      "credential"
+    ],
+    "send_request": [
+      "self",
+      "request"
+    ],
+    "close": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self"
+    ]
+  },
+  "SearchIndexClientConfiguration": {
+    "__init__": [
+      "self",
+      "endpoint",
+      "credential"
+    ],
+    "_infer_policy": [
+      "self"
+    ],
+    "_configure": [
+      "self"
+    ]
+  },
+  "SearchIndexerClientConfiguration": {
+    "__init__": [
+      "self",
+      "endpoint",
+      "credential"
+    ],
+    "_infer_policy": [
+      "self"
+    ],
+    "_configure": [
+      "self"
+    ]
+  },
+  "_SearchIndexClientOperationsMixin": {
+    "delete_synonym_map": [
+      "self",
+      "synonym_map"
+    ],
+    "create_or_update_synonym_map": [
+      "self",
+      "synonym_map"
+    ],
+    "delete_index": [
+      "self",
+      "index"
+    ],
+    "create_or_update_index": [
+      "self",
+      "index",
+      "allow_index_downtime"
+    ],
+    "create_or_update_alias": [
+      "self",
+      "alias"
+    ],
+    "delete_alias": [
+      "self",
+      "alias"
+    ],
+    "delete_knowledge_base": [
+      "self",
+      "knowledge_base"
+    ],
+    "create_or_update_knowledge_base": [
+      "self",
+      "knowledge_base"
+    ],
+    "create_or_update_knowledge_source": [
+      "self",
+      "knowledge_source"
+    ],
+    "delete_knowledge_source": [
+      "self",
+      "knowledge_source"
+    ],
+    "list_indexes": [
+      "self"
+    ],
+    "list_index_names": [
+      "self"
+    ],
+    "get_synonym_maps": [
+      "self"
+    ],
+    "get_synonym_map_names": [
+      "self"
+    ],
+    "list_alias_names": [
+      "self"
+    ],
+    "analyze_text": [
+      "self",
+      "index_name",
+      "analyze_request"
+    ],
+    "get_index_statistics": [
+      "self",
+      "index_name"
+    ],
+    "get_search_client": [
+      "self",
+      "index_name"
+    ]
+  },
+  "_SearchIndexerClientOperationsMixin": {
+    "delete_data_source_connection": [
+      "self",
+      "data_source_connection"
+    ],
+    "create_or_update_data_source_connection": [
+      "self",
+      "data_source_connection"
+    ],
+    "delete_indexer": [
+      "self",
+      "indexer"
+    ],
+    "create_or_update_indexer": [
+      "self",
+      "indexer"
+    ],
+    "delete_skillset": [
+      "self",
+      "skillset"
+    ],
+    "create_or_update_skillset": [
+      "self",
+      "skillset"
+    ],
+    "get_skillsets": [
+      "self"
+    ],
+    "get_indexers": [
+      "self"
+    ],
+    "get_indexer_names": [
+      "self"
+    ],
+    "get_data_source_connections": [
+      "self"
+    ],
+    "get_data_source_connection_names": [
+      "self"
+    ],
+    "get_skillset_names": [
+      "self"
+    ]
+  },
+  "_convert_index_response": [
+    "response"
+  ],
+  "build_search_index_create_or_update_synonym_map_request": [
+    "name"
+  ],
+  "build_search_index_delete_synonym_map_request": [
+    "name"
+  ],
+  "build_search_index_get_synonym_map_request": [
+    "name"
+  ],
+  "build_search_index_get_synonym_maps_request": [],
+  "build_search_index_create_synonym_map_request": [],
+  "build_search_index_create_or_update_index_request": [
+    "name"
+  ],
+  "build_search_index_delete_index_request": [
+    "name"
+  ],
+  "build_search_index_get_index_request": [
+    "name"
+  ],
+  "build_search_index_list_indexes_request": [],
+  "build_search_index_list_indexes_with_selected_properties_request": [],
+  "build_search_index_create_index_request": [],
+  "build_search_index_get_index_statistics_request": [
+    "name"
+  ],
+  "build_search_index_analyze_text_request": [
+    "name"
+  ],
+  "build_search_index_create_or_update_alias_request": [
+    "name"
+  ],
+  "build_search_index_delete_alias_request": [
+    "name"
+  ],
+  "build_search_index_get_alias_request": [
+    "name"
+  ],
+  "build_search_index_list_aliases_request": [],
+  "build_search_index_create_alias_request": [],
+  "build_search_index_create_or_update_knowledge_base_request": [
+    "name"
+  ],
+  "build_search_index_delete_knowledge_base_request": [
+    "name"
+  ],
+  "build_search_index_get_knowledge_base_request": [
+    "name"
+  ],
+  "build_search_index_list_knowledge_bases_request": [],
+  "build_search_index_create_knowledge_base_request": [],
+  "build_search_index_create_or_update_knowledge_source_request": [
+    "name"
+  ],
+  "build_search_index_delete_knowledge_source_request": [
+    "name"
+  ],
+  "build_search_index_get_knowledge_source_request": [
+    "name"
+  ],
+  "build_search_index_list_knowledge_sources_request": [],
+  "build_search_index_create_knowledge_source_request": [],
+  "build_search_index_get_knowledge_source_status_request": [
+    "name"
+  ],
+  "build_search_index_get_service_statistics_request": [],
+  "build_search_indexer_create_or_update_data_source_connection_request": [
+    "name"
+  ],
+  "build_search_indexer_delete_data_source_connection_request": [
+    "name"
+  ],
+  "build_search_indexer_get_data_source_connection_request": [
+    "name"
+  ],
+  "build_search_indexer_get_data_source_connections_request": [],
+  "build_search_indexer_create_data_source_connection_request": [],
+  "build_search_indexer_reset_indexer_request": [
+    "name"
+  ],
+  "build_search_indexer_run_indexer_request": [
+    "name"
+  ],
+  "build_search_indexer_create_or_update_indexer_request": [
+    "name"
+  ],
+  "build_search_indexer_delete_indexer_request": [
+    "name"
+  ],
+  "build_search_indexer_get_indexer_request": [
+    "name"
+  ],
+  "build_search_indexer_get_indexers_request": [],
+  "build_search_indexer_create_indexer_request": [],
+  "build_search_indexer_get_indexer_status_request": [
+    "name"
+  ],
+  "build_search_indexer_create_or_update_skillset_request": [
+    "name"
+  ],
+  "build_search_indexer_delete_skillset_request": [
+    "name"
+  ],
+  "build_search_indexer_get_skillset_request": [
+    "name"
+  ],
+  "build_search_indexer_get_skillsets_request": [],
+  "build_search_indexer_create_skillset_request": [],
+  "CognitiveServicesAccount": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "AIServicesAccountIdentity": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "AIServicesAccountKey": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "AnalyzedTokenInfo": {},
+  "AnalyzeResult": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "AnalyzeTextOptions": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "TokenFilter": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "AsciiFoldingTokenFilter": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "AzureActiveDirectoryApplicationCredentials": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "KnowledgeSource": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "AzureBlobKnowledgeSource": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "AzureBlobKnowledgeSourceParameters": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "AzureMachineLearningParameters": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "VectorSearchVectorizer": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "AzureMachineLearningVectorizer": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "SearchIndexerSkill": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "AzureOpenAIEmbeddingSkill": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "AzureOpenAIVectorizer": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "AzureOpenAIVectorizerParameters": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "VectorSearchCompression": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "BinaryQuantizationCompression": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "SimilarityAlgorithm": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "BM25SimilarityAlgorithm": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "CharFilter": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "ChatCompletionCommonModelParameters": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "ChatCompletionResponseFormat": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "ChatCompletionSchema": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "ChatCompletionSchemaProperties": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "ChatCompletionSkill": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "CjkBigramTokenFilter": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "ClassicSimilarityAlgorithm": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "LexicalTokenizer": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "ClassicTokenizer": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "CognitiveServicesAccountKey": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "CommonGramTokenFilter": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "ConditionalSkill": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "ContentUnderstandingSkill": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "ContentUnderstandingSkillChunkingProperties": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "CorsOptions": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "CreatedResources": {},
+  "LexicalAnalyzer": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "CustomAnalyzer": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "CustomEntity": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "CustomEntityAlias": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "CustomEntityLookupSkill": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "LexicalNormalizer": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "CustomNormalizer": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "DataChangeDetectionPolicy": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "DataDeletionDetectionPolicy": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "DataSourceCredentials": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "DefaultCognitiveServicesAccount": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "DictionaryDecompounderTokenFilter": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "ScoringFunction": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "DistanceScoringFunction": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "DistanceScoringParameters": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "DocumentExtractionSkill": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "DocumentIntelligenceLayoutSkill": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "DocumentIntelligenceLayoutSkillChunkingProperties": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "DocumentKeysOrIds": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "EdgeNGramTokenFilter": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "EdgeNGramTokenFilterV2": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "EdgeNGramTokenizer": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "ElisionTokenFilter": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "EntityLinkingSkill": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "EntityRecognitionSkillV3": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "VectorSearchAlgorithmConfiguration": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "ExhaustiveKnnAlgorithmConfiguration": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "ExhaustiveKnnParameters": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "FieldMapping": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "FieldMappingFunction": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "FreshnessScoringFunction": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "FreshnessScoringParameters": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "GetIndexStatisticsResult": {},
+  "HighWaterMarkChangeDetectionPolicy": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "HnswAlgorithmConfiguration": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "HnswParameters": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "ImageAnalysisSkill": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "IndexedOneLakeKnowledgeSource": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "IndexedOneLakeKnowledgeSourceParameters": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "IndexerExecutionResult": {},
+  "IndexerResyncBody": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "IndexingParameters": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "IndexingParametersConfiguration": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "IndexingSchedule": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "InputFieldMappingEntry": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "KeepTokenFilter": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "KeyPhraseExtractionSkill": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "KeywordMarkerTokenFilter": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "KeywordTokenizer": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "KeywordTokenizerV2": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "KnowledgeBase": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "KnowledgeBaseModel": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "KnowledgeBaseAzureOpenAIModel": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "KnowledgeSourceReference": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "LanguageDetectionSkill": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "LengthTokenFilter": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "LimitTokenFilter": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "ListDataSourcesResult": {},
+  "ListIndexersResult": {},
+  "ListSkillsetsResult": {},
+  "ListSynonymMapsResult": {},
+  "LuceneStandardAnalyzer": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "LuceneStandardTokenizer": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "LuceneStandardTokenizerV2": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "MagnitudeScoringFunction": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "MagnitudeScoringParameters": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "MappingCharFilter": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "MergeSkill": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "MicrosoftLanguageStemmingTokenizer": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "MicrosoftLanguageTokenizer": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "NativeBlobSoftDeleteDeletionDetectionPolicy": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "NGramTokenFilter": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "NGramTokenFilterV2": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "NGramTokenizer": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "OcrSkill": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "OutputFieldMappingEntry": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "PathHierarchyTokenizerV2": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "PatternAnalyzer": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "PatternCaptureTokenFilter": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "PatternReplaceCharFilter": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "PatternReplaceTokenFilter": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "PatternTokenizer": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "PhoneticTokenFilter": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "PIIDetectionSkill": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "RescoringOptions": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "ResourceCounter": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "ScalarQuantizationCompression": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "ScalarQuantizationParameters": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "ScoringProfile": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "SearchAlias": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "SearchField": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "SearchIndex": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "SearchIndexer": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "SearchIndexerDataContainer": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "SearchIndexerDataIdentity": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "SearchIndexerDataNoneIdentity": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "SearchIndexerDataSourceConnection": {
+    "__flattened_items": [],
+    "__init__": [
+      "self"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "__setattr__": [
+      "self",
+      "key",
+      "value"
+    ]
+  },
+  "SearchIndexerDataUserAssignedIdentity": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "SearchIndexerError": {},
+  "SearchIndexerIndexProjection": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "SearchIndexerIndexProjectionSelector": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "SearchIndexerIndexProjectionsParameters": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "SearchIndexerKnowledgeStore": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "SearchIndexerKnowledgeStoreProjectionSelector": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "SearchIndexerKnowledgeStoreBlobProjectionSelector": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "SearchIndexerKnowledgeStoreFileProjectionSelector": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "SearchIndexerKnowledgeStoreObjectProjectionSelector": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "SearchIndexerKnowledgeStoreProjection": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "SearchIndexerKnowledgeStoreTableProjectionSelector": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "SearchIndexerLimits": {},
+  "SearchIndexerSkillset": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "SearchIndexerStatus": {},
+  "SearchIndexerWarning": {},
+  "SearchIndexFieldReference": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "SearchIndexKnowledgeSource": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "SearchIndexKnowledgeSourceParameters": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "SearchIndexResponse": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "SearchResourceEncryptionKey": {
+    "__flattened_items": [],
+    "__init__": [
+      "self"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "__setattr__": [
+      "self",
+      "key",
+      "value"
+    ]
+  },
+  "SearchServiceCounters": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "SearchServiceLimits": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "SearchServiceStatistics": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "SearchSuggester": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "SemanticConfiguration": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "SemanticField": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "SemanticPrioritizedFields": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "SemanticSearch": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "SentimentSkillV3": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "ShaperSkill": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "ShingleTokenFilter": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "SkillNames": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "SnowballTokenFilter": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "SoftDeleteColumnDeletionDetectionPolicy": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "SplitSkill": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "SqlIntegratedChangeTrackingPolicy": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "StemmerOverrideTokenFilter": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "StemmerTokenFilter": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "StopAnalyzer": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "StopwordsTokenFilter": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "SynonymMap": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "SynonymTokenFilter": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "TagScoringFunction": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "TagScoringParameters": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "TextTranslationSkill": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "TextWeights": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "TruncateTokenFilter": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "UaxUrlEmailTokenizer": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "UniqueTokenFilter": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "VectorSearch": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "VectorSearchProfile": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "WebApiHttpHeaders": {},
+  "WebApiSkill": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "WebApiVectorizer": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "WebApiVectorizerParameters": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "WebKnowledgeSource": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "WebKnowledgeSourceDomain": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "WebKnowledgeSourceDomains": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "WebKnowledgeSourceParameters": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "WordDelimiterTokenFilter": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "AIFoundryModelCatalogName": {
+    "OPEN_AI_CLIP_IMAGE_TEXT_EMBEDDINGS_VIT_BASE_PATCH32": [],
+    "OPEN_AI_CLIP_IMAGE_TEXT_EMBEDDINGS_VIT_LARGE_PATCH14_336": [],
+    "FACEBOOK_DINO_V2_IMAGE_EMBEDDINGS_VIT_BASE": [],
+    "FACEBOOK_DINO_V2_IMAGE_EMBEDDINGS_VIT_GIANT": [],
+    "COHERE_EMBED_V3_ENGLISH": [],
+    "COHERE_EMBED_V3_MULTILINGUAL": [],
+    "COHERE_EMBED_V4": []
+  },
+  "AzureOpenAIModelName": {
+    "TEXT_EMBEDDING_ADA002": [],
+    "TEXT_EMBEDDING3_LARGE": [],
+    "TEXT_EMBEDDING3_SMALL": [],
+    "GPT_5_MINI": [],
+    "GPT_5_NANO": [],
+    "GPT_5_4_MINI": [],
+    "GPT_5_4_NANO": []
+  },
+  "BlobIndexerDataToExtract": {
+    "STORAGE_METADATA": [],
+    "ALL_METADATA": [],
+    "CONTENT_AND_METADATA": []
+  },
+  "BlobIndexerImageAction": {
+    "NONE": [],
+    "GENERATE_NORMALIZED_IMAGES": [],
+    "GENERATE_NORMALIZED_IMAGE_PER_PAGE": []
+  },
+  "BlobIndexerParsingMode": {
+    "DEFAULT": [],
+    "TEXT": [],
+    "DELIMITED_TEXT": [],
+    "JSON": [],
+    "JSON_ARRAY": [],
+    "JSON_LINES": [],
+    "MARKDOWN": []
+  },
+  "BlobIndexerPDFTextRotationAlgorithm": {
+    "NONE": [],
+    "DETECT_ANGLES": []
+  },
+  "CharFilterName": {
+    "HTML_STRIP": []
+  },
+  "ChatCompletionExtraParametersBehavior": {
+    "PASS_THROUGH": [],
+    "DROP": [],
+    "ERROR": []
+  },
+  "ChatCompletionResponseFormatType": {
+    "TEXT": [],
+    "JSON_OBJECT": [],
+    "JSON_SCHEMA": []
+  },
+  "CjkBigramTokenFilterScripts": {
+    "HAN": [],
+    "HIRAGANA": [],
+    "KATAKANA": [],
+    "HANGUL": []
+  },
+  "ContentUnderstandingSkillChunkingUnit": {
+    "CHARACTERS": []
+  },
+  "ContentUnderstandingSkillExtractionOptions": {
+    "IMAGES": [],
+    "LOCATION_METADATA": []
+  },
+  "CustomEntityLookupSkillLanguage": {
+    "DA": [],
+    "DE": [],
+    "EN": [],
+    "ES": [],
+    "FI": [],
+    "FR": [],
+    "IT": [],
+    "KO": [],
+    "PT": []
+  },
+  "DocumentIntelligenceLayoutSkillChunkingUnit": {
+    "CHARACTERS": []
+  },
+  "DocumentIntelligenceLayoutSkillExtractionOptions": {
+    "IMAGES": [],
+    "LOCATION_METADATA": []
+  },
+  "DocumentIntelligenceLayoutSkillMarkdownHeaderDepth": {
+    "H1": [],
+    "H2": [],
+    "H3": [],
+    "H4": [],
+    "H5": [],
+    "H6": []
+  },
+  "DocumentIntelligenceLayoutSkillOutputFormat": {
+    "TEXT": [],
+    "MARKDOWN": []
+  },
+  "DocumentIntelligenceLayoutSkillOutputMode": {
+    "ONE_TO_MANY": []
+  },
+  "EdgeNGramTokenFilterSide": {
+    "FRONT": [],
+    "BACK": []
+  },
+  "EntityCategory": {
+    "LOCATION": [],
+    "ORGANIZATION": [],
+    "PERSON": [],
+    "QUANTITY": [],
+    "DATETIME": [],
+    "URL": [],
+    "EMAIL": []
+  },
+  "EntityRecognitionSkillLanguage": {
+    "AR": [],
+    "CS": [],
+    "ZH_HANS": [],
+    "ZH_HANT": [],
+    "DA": [],
+    "NL": [],
+    "EN": [],
+    "FI": [],
+    "FR": [],
+    "DE": [],
+    "EL": [],
+    "HU": [],
+    "IT": [],
+    "JA": [],
+    "KO": [],
+    "NO": [],
+    "PL": [],
+    "PT_PT": [],
+    "PT_BR": [],
+    "RU": [],
+    "ES": [],
+    "SV": [],
+    "TR": []
+  },
+  "ImageAnalysisSkillLanguage": {
+    "AR": [],
+    "AZ": [],
+    "BG": [],
+    "BS": [],
+    "CA": [],
+    "CS": [],
+    "CY": [],
+    "DA": [],
+    "DE": [],
+    "EL": [],
+    "EN": [],
+    "ES": [],
+    "ET": [],
+    "EU": [],
+    "FI": [],
+    "FR": [],
+    "GA": [],
+    "GL": [],
+    "HE": [],
+    "HI": [],
+    "HR": [],
+    "HU": [],
+    "ID": [],
+    "IT": [],
+    "JA": [],
+    "KK": [],
+    "KO": [],
+    "LT": [],
+    "LV": [],
+    "MK": [],
+    "MS": [],
+    "NB": [],
+    "NL": [],
+    "PL": [],
+    "PRS": [],
+    "PT_BR": [],
+    "PT": [],
+    "PT_PT": [],
+    "RO": [],
+    "RU": [],
+    "SK": [],
+    "SL": [],
+    "SR_CYRL": [],
+    "SR_LATN": [],
+    "SV": [],
+    "TH": [],
+    "TR": [],
+    "UK": [],
+    "VI": [],
+    "ZH": [],
+    "ZH_HANS": [],
+    "ZH_HANT": []
+  },
+  "ImageDetail": {
+    "CELEBRITIES": [],
+    "LANDMARKS": []
+  },
+  "IndexerExecutionEnvironment": {
+    "STANDARD": [],
+    "PRIVATE": []
+  },
+  "IndexerExecutionStatus": {
+    "TRANSIENT_FAILURE": [],
+    "SUCCESS": [],
+    "IN_PROGRESS": [],
+    "RESET": []
+  },
+  "IndexerResyncOption": {
+    "PERMISSIONS": []
+  },
+  "IndexerStatus": {
+    "UNKNOWN": [],
+    "ERROR": [],
+    "RUNNING": []
+  },
+  "IndexProjectionMode": {
+    "SKIP_INDEXING_PARENT_DOCUMENTS": [],
+    "INCLUDE_INDEXING_PARENT_DOCUMENTS": []
+  },
+  "KeyPhraseExtractionSkillLanguage": {
+    "DA": [],
+    "NL": [],
+    "EN": [],
+    "FI": [],
+    "FR": [],
+    "DE": [],
+    "IT": [],
+    "JA": [],
+    "KO": [],
+    "NO": [],
+    "PL": [],
+    "PT_PT": [],
+    "PT_BR": [],
+    "RU": [],
+    "ES": [],
+    "SV": []
+  },
+  "KnowledgeBaseModelKind": {
+    "AZURE_OPEN_AI": []
+  },
+  "KnowledgeSourceContentExtractionMode": {
+    "MINIMAL": [],
+    "STANDARD": []
+  },
+  "KnowledgeSourceKind": {
+    "SEARCH_INDEX": [],
+    "AZURE_BLOB": [],
+    "INDEXED_ONELAKE": [],
+    "WEB": []
+  },
+  "KnowledgeSourceSynchronizationStatus": {
+    "CREATING": [],
+    "ACTIVE": [],
+    "DELETING": []
+  },
+  "LexicalAnalyzerName": {
+    "AR_MICROSOFT": [],
+    "AR_LUCENE": [],
+    "HY_LUCENE": [],
+    "BN_MICROSOFT": [],
+    "EU_LUCENE": [],
+    "BG_MICROSOFT": [],
+    "BG_LUCENE": [],
+    "CA_MICROSOFT": [],
+    "CA_LUCENE": [],
+    "ZH_HANS_MICROSOFT": [],
+    "ZH_HANS_LUCENE": [],
+    "ZH_HANT_MICROSOFT": [],
+    "ZH_HANT_LUCENE": [],
+    "HR_MICROSOFT": [],
+    "CS_MICROSOFT": [],
+    "CS_LUCENE": [],
+    "DA_MICROSOFT": [],
+    "DA_LUCENE": [],
+    "NL_MICROSOFT": [],
+    "NL_LUCENE": [],
+    "EN_MICROSOFT": [],
+    "EN_LUCENE": [],
+    "ET_MICROSOFT": [],
+    "FI_MICROSOFT": [],
+    "FI_LUCENE": [],
+    "FR_MICROSOFT": [],
+    "FR_LUCENE": [],
+    "GL_LUCENE": [],
+    "DE_MICROSOFT": [],
+    "DE_LUCENE": [],
+    "EL_MICROSOFT": [],
+    "EL_LUCENE": [],
+    "GU_MICROSOFT": [],
+    "HE_MICROSOFT": [],
+    "HI_MICROSOFT": [],
+    "HI_LUCENE": [],
+    "HU_MICROSOFT": [],
+    "HU_LUCENE": [],
+    "IS_MICROSOFT": [],
+    "ID_MICROSOFT": [],
+    "ID_LUCENE": [],
+    "GA_LUCENE": [],
+    "IT_MICROSOFT": [],
+    "IT_LUCENE": [],
+    "JA_MICROSOFT": [],
+    "JA_LUCENE": [],
+    "KN_MICROSOFT": [],
+    "KO_MICROSOFT": [],
+    "KO_LUCENE": [],
+    "LV_MICROSOFT": [],
+    "LV_LUCENE": [],
+    "LT_MICROSOFT": [],
+    "ML_MICROSOFT": [],
+    "MS_MICROSOFT": [],
+    "MR_MICROSOFT": [],
+    "NB_MICROSOFT": [],
+    "NO_LUCENE": [],
+    "FA_LUCENE": [],
+    "PL_MICROSOFT": [],
+    "PL_LUCENE": [],
+    "PT_BR_MICROSOFT": [],
+    "PT_BR_LUCENE": [],
+    "PT_PT_MICROSOFT": [],
+    "PT_PT_LUCENE": [],
+    "PA_MICROSOFT": [],
+    "RO_MICROSOFT": [],
+    "RO_LUCENE": [],
+    "RU_MICROSOFT": [],
+    "RU_LUCENE": [],
+    "SR_CYRILLIC_MICROSOFT": [],
+    "SR_LATIN_MICROSOFT": [],
+    "SK_MICROSOFT": [],
+    "SL_MICROSOFT": [],
+    "ES_MICROSOFT": [],
+    "ES_LUCENE": [],
+    "SV_MICROSOFT": [],
+    "SV_LUCENE": [],
+    "TA_MICROSOFT": [],
+    "TE_MICROSOFT": [],
+    "TH_MICROSOFT": [],
+    "TH_LUCENE": [],
+    "TR_MICROSOFT": [],
+    "TR_LUCENE": [],
+    "UK_MICROSOFT": [],
+    "UR_MICROSOFT": [],
+    "VI_MICROSOFT": [],
+    "STANDARD_LUCENE": [],
+    "STANDARD_ASCII_FOLDING_LUCENE": [],
+    "KEYWORD": [],
+    "PATTERN": [],
+    "SIMPLE": [],
+    "STOP": [],
+    "WHITESPACE": []
+  },
+  "LexicalNormalizerName": {
+    "ASCII_FOLDING": [],
+    "ELISION": [],
+    "LOWERCASE": [],
+    "STANDARD": [],
+    "UPPERCASE": []
+  },
+  "LexicalTokenizerName": {
+    "CLASSIC": [],
+    "EDGE_N_GRAM": [],
+    "KEYWORD": [],
+    "LETTER": [],
+    "LOWERCASE": [],
+    "MICROSOFT_LANGUAGE_TOKENIZER": [],
+    "MICROSOFT_LANGUAGE_STEMMING_TOKENIZER": [],
+    "N_GRAM": [],
+    "PATH_HIERARCHY": [],
+    "PATTERN": [],
+    "STANDARD": [],
+    "UAX_URL_EMAIL": [],
+    "WHITESPACE": []
+  },
+  "MarkdownHeaderDepth": {
+    "H1": [],
+    "H2": [],
+    "H3": [],
+    "H4": [],
+    "H5": [],
+    "H6": []
+  },
+  "MarkdownParsingSubmode": {
+    "ONE_TO_MANY": [],
+    "ONE_TO_ONE": []
+  },
+  "MicrosoftStemmingTokenizerLanguage": {
+    "ARABIC": [],
+    "BANGLA": [],
+    "BULGARIAN": [],
+    "CATALAN": [],
+    "CROATIAN": [],
+    "CZECH": [],
+    "DANISH": [],
+    "DUTCH": [],
+    "ENGLISH": [],
+    "ESTONIAN": [],
+    "FINNISH": [],
+    "FRENCH": [],
+    "GERMAN": [],
+    "GREEK": [],
+    "GUJARATI": [],
+    "HEBREW": [],
+    "HINDI": [],
+    "HUNGARIAN": [],
+    "ICELANDIC": [],
+    "INDONESIAN": [],
+    "ITALIAN": [],
+    "KANNADA": [],
+    "LATVIAN": [],
+    "LITHUANIAN": [],
+    "MALAY": [],
+    "MALAYALAM": [],
+    "MARATHI": [],
+    "NORWEGIAN_BOKMAAL": [],
+    "POLISH": [],
+    "PORTUGUESE": [],
+    "PORTUGUESE_BRAZILIAN": [],
+    "PUNJABI": [],
+    "ROMANIAN": [],
+    "RUSSIAN": [],
+    "SERBIAN_CYRILLIC": [],
+    "SERBIAN_LATIN": [],
+    "SLOVAK": [],
+    "SLOVENIAN": [],
+    "SPANISH": [],
+    "SWEDISH": [],
+    "TAMIL": [],
+    "TELUGU": [],
+    "TURKISH": [],
+    "UKRAINIAN": [],
+    "URDU": []
+  },
+  "MicrosoftTokenizerLanguage": {
+    "BANGLA": [],
+    "BULGARIAN": [],
+    "CATALAN": [],
+    "CHINESE_SIMPLIFIED": [],
+    "CHINESE_TRADITIONAL": [],
+    "CROATIAN": [],
+    "CZECH": [],
+    "DANISH": [],
+    "DUTCH": [],
+    "ENGLISH": [],
+    "FRENCH": [],
+    "GERMAN": [],
+    "GREEK": [],
+    "GUJARATI": [],
+    "HINDI": [],
+    "ICELANDIC": [],
+    "INDONESIAN": [],
+    "ITALIAN": [],
+    "JAPANESE": [],
+    "KANNADA": [],
+    "KOREAN": [],
+    "MALAY": [],
+    "MALAYALAM": [],
+    "MARATHI": [],
+    "NORWEGIAN_BOKMAAL": [],
+    "POLISH": [],
+    "PORTUGUESE": [],
+    "PORTUGUESE_BRAZILIAN": [],
+    "PUNJABI": [],
+    "ROMANIAN": [],
+    "RUSSIAN": [],
+    "SERBIAN_CYRILLIC": [],
+    "SERBIAN_LATIN": [],
+    "SLOVENIAN": [],
+    "SPANISH": [],
+    "SWEDISH": [],
+    "TAMIL": [],
+    "TELUGU": [],
+    "THAI": [],
+    "UKRAINIAN": [],
+    "URDU": [],
+    "VIETNAMESE": []
+  },
+  "OcrLineEnding": {
+    "SPACE": [],
+    "CARRIAGE_RETURN": [],
+    "LINE_FEED": [],
+    "CARRIAGE_RETURN_LINE_FEED": []
+  },
+  "OcrSkillLanguage": {
+    "AF": [],
+    "SQ": [],
+    "ANP": [],
+    "AR": [],
+    "AST": [],
+    "AWA": [],
+    "AZ": [],
+    "BFY": [],
+    "EU": [],
+    "BE": [],
+    "BE_CYRL": [],
+    "BE_LATN": [],
+    "BHO": [],
+    "BI": [],
+    "BRX": [],
+    "BS": [],
+    "BRA": [],
+    "BR": [],
+    "BG": [],
+    "BNS": [],
+    "BUA": [],
+    "CA": [],
+    "CEB": [],
+    "RAB": [],
+    "CH": [],
+    "HNE": [],
+    "ZH_HANS": [],
+    "ZH_HANT": [],
+    "KW": [],
+    "CO": [],
+    "CRH": [],
+    "HR": [],
+    "CS": [],
+    "DA": [],
+    "PRS": [],
+    "DHI": [],
+    "DOI": [],
+    "NL": [],
+    "EN": [],
+    "MYV": [],
+    "ET": [],
+    "FO": [],
+    "FJ": [],
+    "FIL": [],
+    "FI": [],
+    "FR": [],
+    "FUR": [],
+    "GAG": [],
+    "GL": [],
+    "DE": [],
+    "GIL": [],
+    "GON": [],
+    "EL": [],
+    "KL": [],
+    "GVR": [],
+    "HT": [],
+    "HLB": [],
+    "HNI": [],
+    "BGC": [],
+    "HAW": [],
+    "HI": [],
+    "MWW": [],
+    "HOC": [],
+    "HU": [],
+    "IS": [],
+    "SMN": [],
+    "ID": [],
+    "IA": [],
+    "IU": [],
+    "GA": [],
+    "IT": [],
+    "JA": [],
+    "JNS": [],
+    "JV": [],
+    "KEA": [],
+    "KAC": [],
+    "XNR": [],
+    "KRC": [],
+    "KAA_CYRL": [],
+    "KAA": [],
+    "CSB": [],
+    "KK_CYRL": [],
+    "KK_LATN": [],
+    "KLR": [],
+    "KHA": [],
+    "QUC": [],
+    "KO": [],
+    "KFQ": [],
+    "KPY": [],
+    "KOS": [],
+    "KUM": [],
+    "KU_ARAB": [],
+    "KU_LATN": [],
+    "KRU": [],
+    "KY": [],
+    "LKT": [],
+    "LA": [],
+    "LT": [],
+    "DSB": [],
+    "SMJ": [],
+    "LB": [],
+    "BFZ": [],
+    "MS": [],
+    "MT": [],
+    "KMJ": [],
+    "GV": [],
+    "MI": [],
+    "MR": [],
+    "MN": [],
+    "CNR_CYRL": [],
+    "CNR_LATN": [],
+    "NAP": [],
+    "NE": [],
+    "NIU": [],
+    "NOG": [],
+    "SME": [],
+    "NB": [],
+    "NO": [],
+    "OC": [],
+    "OS": [],
+    "PS": [],
+    "FA": [],
+    "PL": [],
+    "PT": [],
+    "PA": [],
+    "KSH": [],
+    "RO": [],
+    "RM": [],
+    "RU": [],
+    "SCK": [],
+    "SM": [],
+    "SA": [],
+    "SAT": [],
+    "SCO": [],
+    "GD": [],
+    "SR": [],
+    "SR_CYRL": [],
+    "SR_LATN": [],
+    "XSR": [],
+    "SRX": [],
+    "SMS": [],
+    "SK": [],
+    "SL": [],
+    "SO": [],
+    "SMA": [],
+    "ES": [],
+    "SW": [],
+    "SV": [],
+    "TG": [],
+    "TT": [],
+    "TET": [],
+    "THF": [],
+    "TO": [],
+    "TR": [],
+    "TK": [],
+    "TYV": [],
+    "HSB": [],
+    "UR": [],
+    "UG": [],
+    "UZ_ARAB": [],
+    "UZ_CYRL": [],
+    "UZ": [],
+    "VO": [],
+    "WAE": [],
+    "CY": [],
+    "FY": [],
+    "YUA": [],
+    "ZA": [],
+    "ZU": [],
+    "UNK": []
+  },
+  "PhoneticEncoder": {
+    "METAPHONE": [],
+    "DOUBLE_METAPHONE": [],
+    "SOUNDEX": [],
+    "REFINED_SOUNDEX": [],
+    "CAVERPHONE1": [],
+    "CAVERPHONE2": [],
+    "COLOGNE": [],
+    "NYSIIS": [],
+    "KOELNER_PHONETIK": [],
+    "HAASE_PHONETIK": [],
+    "BEIDER_MORSE": []
+  },
+  "PIIDetectionSkillMaskingMode": {
+    "NONE": [],
+    "REPLACE": []
+  },
+  "RankingOrder": {
+    "BOOSTED_RERANKER_SCORE": [],
+    "RERANKER_SCORE": []
+  },
+  "RegexFlags": {
+    "CANON_EQ": [],
+    "CASE_INSENSITIVE": [],
+    "COMMENTS": [],
+    "DOT_ALL": [],
+    "LITERAL": [],
+    "MULTILINE": [],
+    "UNICODE_CASE": [],
+    "UNIX_LINES": []
+  },
+  "ScoringFunctionAggregation": {
+    "SUM": [],
+    "AVERAGE": [],
+    "MINIMUM": [],
+    "MAXIMUM": [],
+    "FIRST_MATCHING": [],
+    "PRODUCT": []
+  },
+  "ScoringFunctionInterpolation": {
+    "LINEAR": [],
+    "CONSTANT": [],
+    "QUADRATIC": [],
+    "LOGARITHMIC": []
+  },
+  "SearchFieldDataType": {
+    "STRING": [],
+    "INT32": [],
+    "INT64": [],
+    "DOUBLE": [],
+    "BOOLEAN": [],
+    "DATE_TIME_OFFSET": [],
+    "GEOGRAPHY_POINT": [],
+    "COMPLEX": [],
+    "SINGLE": [],
+    "HALF": [],
+    "INT16": [],
+    "S_BYTE": [],
+    "BYTE": []
+  },
+  "SearchIndexerDataSourceType": {
+    "AZURE_SQL": [],
+    "COSMOS_DB": [],
+    "AZURE_BLOB": [],
+    "AZURE_TABLE": [],
+    "MYSQL": [],
+    "ADLS_GEN2": [],
+    "ONELAKE": [],
+    "SHAREPOINT": []
+  },
+  "SentimentSkillLanguage": {
+    "DA": [],
+    "NL": [],
+    "EN": [],
+    "FI": [],
+    "FR": [],
+    "DE": [],
+    "EL": [],
+    "IT": [],
+    "NO": [],
+    "PL": [],
+    "PT_PT": [],
+    "RU": [],
+    "ES": [],
+    "SV": [],
+    "TR": []
+  },
+  "SnowballTokenFilterLanguage": {
+    "ARMENIAN": [],
+    "BASQUE": [],
+    "CATALAN": [],
+    "DANISH": [],
+    "DUTCH": [],
+    "ENGLISH": [],
+    "FINNISH": [],
+    "FRENCH": [],
+    "GERMAN": [],
+    "GERMAN2": [],
+    "HUNGARIAN": [],
+    "ITALIAN": [],
+    "KP": [],
+    "LOVINS": [],
+    "NORWEGIAN": [],
+    "PORTER": [],
+    "PORTUGUESE": [],
+    "ROMANIAN": [],
+    "RUSSIAN": [],
+    "SPANISH": [],
+    "SWEDISH": [],
+    "TURKISH": []
+  },
+  "SplitSkillLanguage": {
+    "AM": [],
+    "BS": [],
+    "CS": [],
+    "DA": [],
+    "DE": [],
+    "EN": [],
+    "ES": [],
+    "ET": [],
+    "FI": [],
+    "FR": [],
+    "HE": [],
+    "HI": [],
+    "HR": [],
+    "HU": [],
+    "ID": [],
+    "IS": [],
+    "IT": [],
+    "JA": [],
+    "KO": [],
+    "LV": [],
+    "NB": [],
+    "NL": [],
+    "PL": [],
+    "PT": [],
+    "PT_BR": [],
+    "RU": [],
+    "SK": [],
+    "SL": [],
+    "SR": [],
+    "SV": [],
+    "TR": [],
+    "UR": [],
+    "ZH": []
+  },
+  "StemmerTokenFilterLanguage": {
+    "ARABIC": [],
+    "ARMENIAN": [],
+    "BASQUE": [],
+    "BRAZILIAN": [],
+    "BULGARIAN": [],
+    "CATALAN": [],
+    "CZECH": [],
+    "DANISH": [],
+    "DUTCH": [],
+    "DUTCH_KP": [],
+    "ENGLISH": [],
+    "LIGHT_ENGLISH": [],
+    "MINIMAL_ENGLISH": [],
+    "POSSESSIVE_ENGLISH": [],
+    "PORTER2": [],
+    "LOVINS": [],
+    "FINNISH": [],
+    "LIGHT_FINNISH": [],
+    "FRENCH": [],
+    "LIGHT_FRENCH": [],
+    "MINIMAL_FRENCH": [],
+    "GALICIAN": [],
+    "MINIMAL_GALICIAN": [],
+    "GERMAN": [],
+    "GERMAN2": [],
+    "LIGHT_GERMAN": [],
+    "MINIMAL_GERMAN": [],
+    "GREEK": [],
+    "HINDI": [],
+    "HUNGARIAN": [],
+    "LIGHT_HUNGARIAN": [],
+    "INDONESIAN": [],
+    "IRISH": [],
+    "ITALIAN": [],
+    "LIGHT_ITALIAN": [],
+    "SORANI": [],
+    "LATVIAN": [],
+    "NORWEGIAN": [],
+    "LIGHT_NORWEGIAN": [],
+    "MINIMAL_NORWEGIAN": [],
+    "LIGHT_NYNORSK": [],
+    "MINIMAL_NYNORSK": [],
+    "PORTUGUESE": [],
+    "LIGHT_PORTUGUESE": [],
+    "MINIMAL_PORTUGUESE": [],
+    "PORTUGUESE_RSLP": [],
+    "ROMANIAN": [],
+    "RUSSIAN": [],
+    "LIGHT_RUSSIAN": [],
+    "SPANISH": [],
+    "LIGHT_SPANISH": [],
+    "SWEDISH": [],
+    "LIGHT_SWEDISH": [],
+    "TURKISH": []
+  },
+  "StopwordsList": {
+    "ARABIC": [],
+    "ARMENIAN": [],
+    "BASQUE": [],
+    "BRAZILIAN": [],
+    "BULGARIAN": [],
+    "CATALAN": [],
+    "CZECH": [],
+    "DANISH": [],
+    "DUTCH": [],
+    "ENGLISH": [],
+    "FINNISH": [],
+    "FRENCH": [],
+    "GALICIAN": [],
+    "GERMAN": [],
+    "GREEK": [],
+    "HINDI": [],
+    "HUNGARIAN": [],
+    "INDONESIAN": [],
+    "IRISH": [],
+    "ITALIAN": [],
+    "LATVIAN": [],
+    "NORWEGIAN": [],
+    "PERSIAN": [],
+    "PORTUGUESE": [],
+    "ROMANIAN": [],
+    "RUSSIAN": [],
+    "SORANI": [],
+    "SPANISH": [],
+    "SWEDISH": [],
+    "THAI": [],
+    "TURKISH": []
+  },
+  "TextSplitMode": {
+    "PAGES": [],
+    "SENTENCES": []
+  },
+  "TextTranslationSkillLanguage": {
+    "AF": [],
+    "AR": [],
+    "BN": [],
+    "BS": [],
+    "BG": [],
+    "YUE": [],
+    "CA": [],
+    "ZH_HANS": [],
+    "ZH_HANT": [],
+    "HR": [],
+    "CS": [],
+    "DA": [],
+    "NL": [],
+    "EN": [],
+    "ET": [],
+    "FJ": [],
+    "FIL": [],
+    "FI": [],
+    "FR": [],
+    "DE": [],
+    "EL": [],
+    "HT": [],
+    "HE": [],
+    "HI": [],
+    "MWW": [],
+    "HU": [],
+    "IS": [],
+    "ID": [],
+    "IT": [],
+    "JA": [],
+    "SW": [],
+    "TLH": [],
+    "TLH_LATN": [],
+    "TLH_PIQD": [],
+    "KO": [],
+    "LV": [],
+    "LT": [],
+    "MG": [],
+    "MS": [],
+    "MT": [],
+    "NB": [],
+    "FA": [],
+    "PL": [],
+    "PT": [],
+    "PT_BR": [],
+    "PT_PT": [],
+    "OTQ": [],
+    "RO": [],
+    "RU": [],
+    "SM": [],
+    "SR_CYRL": [],
+    "SR_LATN": [],
+    "SK": [],
+    "SL": [],
+    "ES": [],
+    "SV": [],
+    "TY": [],
+    "TA": [],
+    "TE": [],
+    "TH": [],
+    "TO": [],
+    "TR": [],
+    "UK": [],
+    "UR": [],
+    "VI": [],
+    "CY": [],
+    "YUA": [],
+    "GA": [],
+    "KN": [],
+    "MI": [],
+    "ML": [],
+    "PA": []
+  },
+  "TokenCharacterKind": {
+    "LETTER": [],
+    "DIGIT": [],
+    "WHITESPACE": [],
+    "PUNCTUATION": [],
+    "SYMBOL": []
+  },
+  "TokenFilterName": {
+    "ARABIC_NORMALIZATION": [],
+    "APOSTROPHE": [],
+    "ASCII_FOLDING": [],
+    "CJK_BIGRAM": [],
+    "CJK_WIDTH": [],
+    "CLASSIC": [],
+    "COMMON_GRAM": [],
+    "EDGE_N_GRAM": [],
+    "ELISION": [],
+    "GERMAN_NORMALIZATION": [],
+    "HINDI_NORMALIZATION": [],
+    "INDIC_NORMALIZATION": [],
+    "KEYWORD_REPEAT": [],
+    "K_STEM": [],
+    "LENGTH": [],
+    "LIMIT": [],
+    "LOWERCASE": [],
+    "N_GRAM": [],
+    "PERSIAN_NORMALIZATION": [],
+    "PHONETIC": [],
+    "PORTER_STEM": [],
+    "REVERSE": [],
+    "SCANDINAVIAN_NORMALIZATION": [],
+    "SCANDINAVIAN_FOLDING_NORMALIZATION": [],
+    "SHINGLE": [],
+    "SNOWBALL": [],
+    "SORANI_NORMALIZATION": [],
+    "STEMMER": [],
+    "STOPWORDS": [],
+    "TRIM": [],
+    "TRUNCATE": [],
+    "UNIQUE": [],
+    "UPPERCASE": [],
+    "WORD_DELIMITER": []
+  },
+  "VectorEncodingFormat": {
+    "PACKED_BIT": []
+  },
+  "VectorSearchAlgorithmKind": {
+    "HNSW": [],
+    "EXHAUSTIVE_KNN": []
+  },
+  "VectorSearchAlgorithmMetric": {
+    "COSINE": [],
+    "EUCLIDEAN": [],
+    "DOT_PRODUCT": [],
+    "HAMMING": []
+  },
+  "VectorSearchCompressionKind": {
+    "SCALAR_QUANTIZATION": [],
+    "BINARY_QUANTIZATION": []
+  },
+  "VectorSearchCompressionRescoreStorageMethod": {
+    "PRESERVE_ORIGINALS": [],
+    "DISCARD_ORIGINALS": []
+  },
+  "VectorSearchCompressionTarget": {
+    "INT8": []
+  },
+  "VectorSearchVectorizerKind": {
+    "AZURE_OPEN_AI": [],
+    "CUSTOM_WEB_API": [],
+    "AI_SERVICES_VISION": [],
+    "AML": []
+  },
+  "VisualFeature": {
+    "ADULT": [],
+    "BRANDS": [],
+    "CATEGORIES": [],
+    "DESCRIPTION": [],
+    "FACES": [],
+    "OBJECTS": [],
+    "TAGS": []
+  },
+  "_collection_helper": [
+    "typ"
+  ],
+  "Collection": [
+    "typ"
+  ],
+  "SimpleField": [],
+  "SearchableField": [],
+  "ComplexField": [],
+  "AutocompleteItem": {},
+  "AutocompleteResult": {},
+  "DebugInfo": {},
+  "DocumentDebugInfo": {},
+  "ErrorAdditionalInfo": {},
+  "ErrorDetail": {},
+  "ErrorResponse": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "FacetResult": {},
+  "IndexAction": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "IndexDocumentsBatch": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "IndexDocumentsResult": {},
+  "IndexingResult": {},
+  "LookupDocument": {},
+  "QueryAnswerResult": {},
+  "QueryCaptionResult": {},
+  "QueryResultDocumentSubscores": {},
+  "SearchDocumentsResult": {},
+  "SearchRequest": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "SearchResult": {},
+  "SingleVectorFieldResult": {},
+  "SuggestDocumentsResult": {},
+  "SuggestResult": {},
+  "TextResult": {},
+  "VectorQuery": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "VectorizableImageBinaryQuery": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "VectorizableImageUrlQuery": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "VectorizableTextQuery": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "VectorizedQuery": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "VectorsDebugInfo": {},
+  "AutocompleteMode": {
+    "ONE_TERM": [],
+    "TWO_TERMS": [],
+    "ONE_TERM_WITH_CONTEXT": []
+  },
+  "IndexActionType": {
+    "UPLOAD": [],
+    "MERGE": [],
+    "MERGE_OR_UPLOAD": [],
+    "DELETE": []
+  },
+  "QueryAnswerType": {
+    "NONE": [],
+    "EXTRACTIVE": []
+  },
+  "QueryCaptionType": {
+    "NONE": [],
+    "EXTRACTIVE": []
+  },
+  "QueryDebugMode": {
+    "DISABLED": [],
+    "SEMANTIC": [],
+    "VECTOR": [],
+    "QUERY_REWRITES": [],
+    "INNER_HITS": [],
+    "ALL": []
+  },
+  "QueryType": {
+    "SIMPLE": [],
+    "FULL": [],
+    "SEMANTIC": []
+  },
+  "ScoringStatistics": {
+    "LOCAL": [],
+    "GLOBAL": []
+  },
+  "SearchMode": {
+    "ANY": [],
+    "ALL": []
+  },
+  "SemanticErrorMode": {
+    "PARTIAL": [],
+    "FAIL": []
+  },
+  "SemanticErrorReason": {
+    "MAX_WAIT_EXCEEDED": [],
+    "CAPACITY_OVERLOADED": [],
+    "TRANSIENT": []
+  },
+  "SemanticSearchResultsType": {
+    "BASE_RESULTS": [],
+    "RERANKED_RESULTS": []
+  },
+  "VectorFilterMode": {
+    "POST_FILTER": [],
+    "PRE_FILTER": [],
+    "STRICT_POST_FILTER": []
+  },
+  "VectorQueryKind": {
+    "VECTOR": [],
+    "TEXT": [],
+    "IMAGE_URL": [],
+    "IMAGE_BINARY": []
+  },
+  "_flatten_args": [
+    "args"
+  ],
+  "RequestEntityTooLargeError": {}
+}
