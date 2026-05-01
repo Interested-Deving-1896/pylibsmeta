@@ -1,0 +1,525 @@
+{
+  "chat_completions_create_v_old": [
+    "tracer",
+    "logger",
+    "instruments",
+    "capture_content"
+  ],
+  "chat_completions_create_v_new": [
+    "handler"
+  ],
+  "async_chat_completions_create_v_old": [
+    "tracer",
+    "logger",
+    "instruments",
+    "capture_content"
+  ],
+  "async_chat_completions_create_v_new": [
+    "handler"
+  ],
+  "embeddings_create": [
+    "tracer",
+    "instruments",
+    "latest_experimental_enabled"
+  ],
+  "async_embeddings_create": [
+    "tracer",
+    "instruments",
+    "latest_experimental_enabled"
+  ],
+  "_get_embeddings_span_name": [
+    "span_attributes"
+  ],
+  "_record_metrics": [
+    "instruments",
+    "duration",
+    "result",
+    "request_attributes",
+    "error_type",
+    "operation_name"
+  ],
+  "_set_response_attributes": [
+    "span",
+    "result"
+  ],
+  "_set_response_properties": [
+    "chat_invocation",
+    "result",
+    "capture_content"
+  ],
+  "_set_embeddings_response_attributes": [
+    "span",
+    "result"
+  ],
+  "ToolCallBuffer": {
+    "__init__": [
+      "self",
+      "index",
+      "tool_call_id",
+      "function_name"
+    ],
+    "append_arguments": [
+      "self",
+      "arguments"
+    ]
+  },
+  "ChoiceBuffer": {
+    "__init__": [
+      "self",
+      "index"
+    ],
+    "append_text_content": [
+      "self",
+      "content"
+    ],
+    "append_tool_call": [
+      "self",
+      "tool_call"
+    ]
+  },
+  "BaseStreamWrapper": {
+    "__init__": [
+      "self",
+      "stream",
+      "capture_content"
+    ],
+    "_setup": [
+      "self"
+    ],
+    "cleanup": [
+      "self",
+      "error"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ],
+    "close": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__next__": [
+      "self"
+    ],
+    "__anext__": [
+      "self"
+    ],
+    "set_response_model": [
+      "self",
+      "chunk"
+    ],
+    "set_response_id": [
+      "self",
+      "chunk"
+    ],
+    "set_response_service_tier": [
+      "self",
+      "chunk"
+    ],
+    "build_streaming_response": [
+      "self",
+      "chunk"
+    ],
+    "set_usage": [
+      "self",
+      "chunk"
+    ],
+    "process_chunk": [
+      "self",
+      "chunk"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "parse": [
+      "self"
+    ]
+  },
+  "LegacyChatStreamWrapper": {
+    "__init__": [
+      "self",
+      "stream",
+      "span",
+      "logger",
+      "capture_content"
+    ],
+    "cleanup": [
+      "self",
+      "error"
+    ]
+  },
+  "ChatStreamWrapper": {
+    "__init__": [
+      "self",
+      "stream",
+      "invocation",
+      "capture_content"
+    ],
+    "_set_output_messages": [
+      "self"
+    ],
+    "cleanup": [
+      "self",
+      "error"
+    ]
+  },
+  "_OpenAIOmit": [],
+  "is_content_enabled": [],
+  "extract_tool_calls": [
+    "item",
+    "capture_content"
+  ],
+  "get_server_address_and_port": [
+    "client_instance"
+  ],
+  "get_property_value": [
+    "obj",
+    "property_name"
+  ],
+  "message_to_event": [
+    "message",
+    "capture_content"
+  ],
+  "choice_to_event": [
+    "choice",
+    "capture_content"
+  ],
+  "set_span_attributes": [
+    "span",
+    "attributes"
+  ],
+  "set_span_attribute": [
+    "span",
+    "name",
+    "value"
+  ],
+  "is_streaming": [
+    "kwargs"
+  ],
+  "non_numerical_value_is_set": [
+    "value"
+  ],
+  "value_is_set": [
+    "value"
+  ],
+  "_openai_response_format_to_output_type": [
+    "response_format_type"
+  ],
+  "get_llm_request_attributes": [
+    "kwargs",
+    "client_instance",
+    "latest_experimental_enabled",
+    "operation_name"
+  ],
+  "create_chat_invocation": [
+    "handler",
+    "kwargs",
+    "client_instance",
+    "capture_content"
+  ],
+  "get_value": [
+    "v"
+  ],
+  "handle_span_exception": [
+    "span",
+    "error"
+  ],
+  "_is_text_part": [
+    "content"
+  ],
+  "_prepare_input_messages": [
+    "messages"
+  ],
+  "extract_tool_calls_new": [
+    "tool_calls"
+  ],
+  "_prepare_output_messages": [
+    "choices"
+  ],
+  "_instruments": [],
+  "_supports_metrics": [],
+  "_PYDANTIC_V2": [],
+  "GEN_AI_USAGE_CACHE_READ_INPUT_TOKENS": [],
+  "GEN_AI_USAGE_CACHE_CREATION_INPUT_TOKENS": [],
+  "_logger": [],
+  "ModelT": [],
+  "_ExtractorModel": {},
+  "_ResponseTextFormatModel": {},
+  "_ResponseTextConfigModel": {},
+  "_ResponseInputContentModel": {},
+  "_ResponseInputItemModel": {},
+  "_ResponsesRequestModel": {},
+  "_ResponseOutputContentModel": {},
+  "_ResponseOutputItemModel": {},
+  "_UsageDetailsModel": {},
+  "_UsageModel": {},
+  "_ResponsesResultModel": {},
+  "_rebuild_model": [
+    "model_type"
+  ],
+  "_validate_model": [
+    "model_type",
+    "value",
+    "context"
+  ],
+  "_validate_request_kwargs": [
+    "kwargs"
+  ],
+  "_validate_response_result": [
+    "result"
+  ],
+  "_coerce_response_result": [
+    "result"
+  ],
+  "_extract_system_instruction": [
+    "kwargs"
+  ],
+  "_extract_input_messages": [
+    "kwargs"
+  ],
+  "_extract_output_parts": [
+    "content_blocks"
+  ],
+  "_finish_reason_from_status": [
+    "status"
+  ],
+  "_extract_output_messages_from_model": [
+    "result"
+  ],
+  "_extract_output_messages": [
+    "result"
+  ],
+  "_extract_finish_reasons_from_model": [
+    "result"
+  ],
+  "_extract_finish_reasons": [
+    "result"
+  ],
+  "_extract_output_type": [
+    "kwargs"
+  ],
+  "_set_invocation_usage_attributes": [
+    "invocation",
+    "usage"
+  ],
+  "_set_invocation_response_attributes": [
+    "invocation",
+    "result",
+    "capture_content"
+  ],
+  "TextFormatT": [],
+  "ResponseT": [],
+  "_get_stream_response": [
+    "stream"
+  ],
+  "_ResponseProxy": {
+    "__init__": [
+      "self",
+      "response",
+      "finalize"
+    ],
+    "close": [
+      "self"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ]
+  },
+  "_AsyncResponseProxy": {
+    "__init__": [
+      "self",
+      "response",
+      "finalize"
+    ],
+    "aclose": [
+      "self"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ]
+  },
+  "ResponseStreamWrapper": {
+    "__init__": [
+      "self",
+      "stream",
+      "handler",
+      "invocation",
+      "capture_content"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ],
+    "close": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__next__": [
+      "self"
+    ],
+    "get_final_response": [
+      "self"
+    ],
+    "until_done": [
+      "self"
+    ],
+    "parse": [
+      "self"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "response": [
+      "self"
+    ],
+    "_stop": [
+      "self",
+      "result"
+    ],
+    "_fail": [
+      "self",
+      "message",
+      "error_type"
+    ],
+    "_safe_instrumentation": [
+      "context"
+    ],
+    "process_event": [
+      "self",
+      "event"
+    ]
+  },
+  "ResponseStreamManagerWrapper": {
+    "__init__": [
+      "self",
+      "manager",
+      "handler",
+      "invocation",
+      "capture_content"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ],
+    "parse": [
+      "self"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ]
+  },
+  "AsyncResponseStreamWrapper": {
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ],
+    "close": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__anext__": [
+      "self"
+    ],
+    "get_final_response": [
+      "self"
+    ],
+    "until_done": [
+      "self"
+    ],
+    "parse": [
+      "self"
+    ],
+    "response": [
+      "self"
+    ]
+  },
+  "AsyncResponseStreamManagerWrapper": {
+    "__init__": [
+      "self",
+      "manager",
+      "handler",
+      "invocation",
+      "capture_content"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ],
+    "parse": [
+      "self"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ]
+  },
+  "__version__": [],
+  "Instruments": {
+    "__init__": [
+      "self",
+      "meter"
+    ]
+  },
+  "OpenAIInstrumentor": {
+    "__init__": [
+      "self"
+    ],
+    "instrumentation_dependencies": [
+      "self"
+    ],
+    "_instrument": [
+      "self"
+    ],
+    "_uninstrument": [
+      "self"
+    ]
+  }
+}
