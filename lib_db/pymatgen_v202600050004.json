@@ -1,0 +1,6574 @@
+{
+  "MODULE_DIR": [],
+  "__author__": [],
+  "__copyright__": [],
+  "__version__": [],
+  "__email__": [],
+  "__date__": [],
+  "logger": [],
+  "MaterialsProjectDFTMixingScheme": {
+    "__init__": [
+      "self",
+      "structure_matcher",
+      "run_type_1",
+      "run_type_2",
+      "compat_1",
+      "compat_2",
+      "fuzzy_matching",
+      "check_potcar"
+    ],
+    "process_entries": [
+      "self",
+      "entries",
+      "clean",
+      "verbose",
+      "inplace",
+      "mixing_state_data"
+    ],
+    "get_adjustments": [
+      "self",
+      "entry",
+      "mixing_state_data"
+    ],
+    "get_mixing_state_data": [
+      "self",
+      "entries"
+    ],
+    "_filter_and_sort_entries": [
+      "self",
+      "entries",
+      "verbose"
+    ],
+    "_populate_df_row": [
+      "self",
+      "struct_group",
+      "comp",
+      "sg",
+      "n",
+      "pd_type_1",
+      "pd_type_2",
+      "all_entries"
+    ],
+    "display_entries": [
+      "entries"
+    ]
+  },
+  "__maintainer__": [],
+  "__status__": [],
+  "HHI_CSV_PATH": [],
+  "HHIModel": {
+    "__init__": [
+      "self"
+    ],
+    "_get_hhi_el": [
+      "self",
+      "el_or_symbol"
+    ],
+    "get_hhi": [
+      "self",
+      "comp_or_form"
+    ],
+    "get_hhi_production": [
+      "self",
+      "comp_or_form"
+    ],
+    "get_hhi_reserve": [
+      "self",
+      "comp_or_form"
+    ],
+    "get_hhi_designation": [
+      "hhi"
+    ]
+  },
+  "PiezoTensor": {
+    "__new__": [
+      "cls",
+      "input_array",
+      "tol"
+    ],
+    "from_vasp_voigt": [
+      "cls",
+      "input_vasp_array"
+    ]
+  },
+  "DielectricAnalysis": {
+    "__init__": [
+      "self",
+      "energies",
+      "eps_real",
+      "eps_imag"
+    ],
+    "from_vasprun": [
+      "cls",
+      "vasprun"
+    ]
+  },
+  "_load_cross_sections": [
+    "fname"
+  ],
+  "CROSS_SECTIONS": [],
+  "XPS": {
+    "XLABEL": [],
+    "YLABEL": [],
+    "from_dos": [
+      "cls",
+      "dos"
+    ]
+  },
+  "LobsterNeighbors": {
+    "__init__": [
+      "self",
+      "structure",
+      "icoxxlist_obj",
+      "are_coops",
+      "are_cobis",
+      "charge_obj",
+      "valences",
+      "limits",
+      "additional_condition",
+      "only_bonds_to",
+      "perc_strength_icohp",
+      "noise_cutoff",
+      "valences_from_charges",
+      "which_charge",
+      "adapt_extremum_to_add_cond",
+      "add_additional_data_sg",
+      "bonding_list_1",
+      "bonding_list_2",
+      "id_blist_sg1",
+      "id_blist_sg2",
+      "backward_compatibility"
+    ],
+    "from_files": [
+      "cls",
+      "structure_path",
+      "icoxxlist_path",
+      "are_coops",
+      "are_cobis",
+      "charge_path",
+      "blist_sg1_path",
+      "blist_sg2_path",
+      "id_blist_sg1",
+      "id_blist_sg2"
+    ],
+    "structures_allowed": [
+      "self"
+    ],
+    "molecules_allowed": [
+      "self"
+    ],
+    "anion_types": [
+      "self"
+    ],
+    "get_anion_types": [
+      "self"
+    ],
+    "get_nn_info": [
+      "self",
+      "structure",
+      "n",
+      "use_weights"
+    ],
+    "get_light_structure_environment": [
+      "self",
+      "only_cation_environments",
+      "only_indices",
+      "on_error"
+    ],
+    "get_info_icohps_to_neighbors": [
+      "self",
+      "isites",
+      "onlycation_isites"
+    ],
+    "plot_cohps_of_neighbors": [
+      "self",
+      "path_to_cohpcar",
+      "coxxcar_obj",
+      "isites",
+      "onlycation_isites",
+      "only_bonds_to",
+      "per_bond",
+      "summed_spin_channels",
+      "xlim",
+      "ylim",
+      "integrated"
+    ],
+    "get_info_cohps_to_neighbors": [
+      "self",
+      "path_to_cohpcar",
+      "coxxcar_obj",
+      "isites",
+      "only_bonds_to",
+      "onlycation_isites",
+      "per_bond",
+      "summed_spin_channels"
+    ],
+    "_get_plot_label": [
+      "self",
+      "atoms",
+      "per_bond"
+    ],
+    "get_info_icohps_between_neighbors": [
+      "self",
+      "isites",
+      "onlycation_isites"
+    ],
+    "_evaluate_ce": [
+      "self",
+      "lowerlimit",
+      "upperlimit",
+      "only_bonds_to",
+      "additional_condition",
+      "perc_strength_icohp",
+      "adapt_extremum_to_add_cond"
+    ],
+    "_find_environments": [
+      "self",
+      "additional_condition",
+      "lowerlimit",
+      "upperlimit",
+      "only_bonds_to"
+    ],
+    "_find_relevant_atoms_additional_condition": [
+      "self",
+      "site_idx",
+      "icohps",
+      "additional_condition"
+    ],
+    "_get_icohps": [
+      "icohpcollection",
+      "site_idx",
+      "lowerlimit",
+      "upperlimit",
+      "only_bonds_to"
+    ],
+    "_get_atomnumber": [
+      "atomstring"
+    ],
+    "_split_string": [
+      "s"
+    ],
+    "_determine_unit_cell": [
+      "site"
+    ],
+    "_adapt_extremum_to_add_cond": [
+      "self",
+      "list_icohps",
+      "percentage"
+    ],
+    "_get_limit_from_extremum": [
+      "self",
+      "icohpcollection",
+      "percentage",
+      "adapt_extremum_to_add_cond",
+      "additional_condition"
+    ]
+  },
+  "LobsterLightStructureEnvironments": {
+    "from_Lobster": [
+      "cls",
+      "list_ce_symbol",
+      "list_csm",
+      "list_permutation",
+      "list_neighsite",
+      "list_neighisite",
+      "structure",
+      "valences"
+    ],
+    "uniquely_determines_coordination_environments": [
+      "self"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "ICOHPNeighborsInfo": {},
+  "check_ICOHPs": [
+    "lengths_from_ICOHPs",
+    "selected_ICOHPs",
+    "translation",
+    "length_threshold",
+    "energy_threshold"
+  ],
+  "get_dimensionality_larsen": [
+    "bonded_structure"
+  ],
+  "get_structure_components": [
+    "bonded_structure",
+    "inc_orientation",
+    "inc_site_ids",
+    "inc_molecule_graph"
+  ],
+  "calculate_dimensionality_of_site": [
+    "bonded_structure",
+    "site_index",
+    "inc_vertices"
+  ],
+  "zero_d_graph_to_molecule_graph": [
+    "bonded_structure",
+    "graph"
+  ],
+  "get_dimensionality_cheon": [
+    "structure_raw",
+    "tolerance",
+    "ldict",
+    "standardize",
+    "larger_cell"
+  ],
+  "find_connected_atoms": [
+    "struct",
+    "tolerance",
+    "ldict"
+  ],
+  "find_clusters": [
+    "struct",
+    "connected_matrix"
+  ],
+  "get_dimensionality_gorai": [
+    "structure",
+    "max_hkl",
+    "el_radius_updates",
+    "min_slab_size",
+    "min_vacuum_size",
+    "standardize",
+    "bonds"
+  ],
+  "__credits__": [],
+  "ChemicalShielding": {
+    "__new__": [
+      "cls",
+      "cs_matrix",
+      "vscale"
+    ],
+    "principal_axis_system": [
+      "self"
+    ],
+    "haeberlen_values": [
+      "self"
+    ],
+    "mehring_values": [
+      "self"
+    ],
+    "maryland_values": [
+      "self"
+    ],
+    "from_maryland_notation": [
+      "cls",
+      "sigma_iso",
+      "omega",
+      "kappa"
+    ]
+  },
+  "ElectricFieldGradient": {
+    "__new__": [
+      "cls",
+      "efg_matrix",
+      "vscale"
+    ],
+    "principal_axis_system": [
+      "self"
+    ],
+    "V_xx": [
+      "self"
+    ],
+    "V_yy": [
+      "self"
+    ],
+    "V_zz": [
+      "self"
+    ],
+    "asymmetry": [
+      "self"
+    ],
+    "coupling_constant": [
+      "self",
+      "specie"
+    ]
+  },
+  "kb": [],
+  "light_speed": [],
+  "h_plank": [],
+  "ideal_gas_const": [],
+  "R_ha": [],
+  "amu_to_kg": [],
+  "kcal_to_hartree": [],
+  "get_avg_mom_inertia": [
+    "mol"
+  ],
+  "QuasiRRHO": {
+    "__init__": [
+      "self",
+      "mol",
+      "frequencies",
+      "energy",
+      "mult",
+      "sigma_r",
+      "temp",
+      "press",
+      "v0"
+    ],
+    "from_gaussian_output": [
+      "cls",
+      "output"
+    ],
+    "from_qc_output": [
+      "cls",
+      "output"
+    ],
+    "_get_quasirrho_thermo": [
+      "self",
+      "mol",
+      "mult",
+      "sigma_r",
+      "frequencies",
+      "elec_energy"
+    ]
+  },
+  "CostEntry": {
+    "__init__": [
+      "self",
+      "composition",
+      "cost",
+      "name",
+      "reference"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "CostDB": {
+    "get_entries": [
+      "self",
+      "chemsys"
+    ]
+  },
+  "CostDBCSV": {
+    "__init__": [
+      "self",
+      "filename"
+    ],
+    "get_entries": [
+      "self",
+      "chemsys"
+    ]
+  },
+  "CostDBElements": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "CostAnalyzer": {
+    "__init__": [
+      "self",
+      "costdb"
+    ],
+    "get_lowest_decomposition": [
+      "self",
+      "composition"
+    ],
+    "get_cost_per_mol": [
+      "self",
+      "comp"
+    ],
+    "get_cost_per_kg": [
+      "self",
+      "comp"
+    ]
+  },
+  "__credit__": [],
+  "FunctionalGroupExtractor": {
+    "__init__": [
+      "self",
+      "molecule",
+      "optimize"
+    ],
+    "get_heteroatoms": [
+      "self",
+      "elements"
+    ],
+    "get_special_carbon": [
+      "self",
+      "elements"
+    ],
+    "link_marked_atoms": [
+      "self",
+      "atoms"
+    ],
+    "get_basic_functional_groups": [
+      "self",
+      "func_groups"
+    ],
+    "get_all_functional_groups": [
+      "self",
+      "elements",
+      "func_groups",
+      "catch_basic"
+    ],
+    "categorize_functional_groups": [
+      "self",
+      "groups"
+    ]
+  },
+  "ExcitationSpectrum": {
+    "XLABEL": [],
+    "YLABEL": [],
+    "__init__": [
+      "self",
+      "x",
+      "y"
+    ]
+  },
+  "EV_PER_ANG2_TO_JOULES_PER_M2": [],
+  "SlabEntry": {
+    "__init__": [
+      "self",
+      "structure",
+      "energy",
+      "miller_index",
+      "correction",
+      "parameters",
+      "data",
+      "entry_id",
+      "label",
+      "adsorbates",
+      "clean_entry",
+      "marker",
+      "color"
+    ],
+    "as_dict": [
+      "self"
+    ],
+    "gibbs_binding_energy": [
+      "self",
+      "eads"
+    ],
+    "surface_energy": [
+      "self",
+      "ucell_entry",
+      "ref_entries"
+    ],
+    "get_unit_primitive_area": [
+      "self"
+    ],
+    "get_monolayer": [
+      "self"
+    ],
+    "Nads_in_slab": [
+      "self"
+    ],
+    "Nsurfs_ads_in_slab": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "dct"
+    ],
+    "surface_area": [
+      "self"
+    ],
+    "cleaned_up_slab": [
+      "self"
+    ],
+    "create_slab_label": [
+      "self"
+    ],
+    "from_computed_structure_entry": [
+      "cls",
+      "entry",
+      "miller_index",
+      "label",
+      "adsorbates",
+      "clean_entry"
+    ]
+  },
+  "SurfaceEnergyPlotter": {
+    "__init__": [
+      "self",
+      "all_slab_entries",
+      "ucell_entry",
+      "ref_entries"
+    ],
+    "get_stable_entry_at_u": [
+      "self",
+      "miller_index",
+      "delu_dict",
+      "delu_default",
+      "no_doped",
+      "no_clean"
+    ],
+    "wulff_from_chempot": [
+      "self",
+      "delu_dict",
+      "delu_default",
+      "symprec",
+      "no_clean",
+      "no_doped"
+    ],
+    "area_frac_vs_chempot_plot": [
+      "self",
+      "ref_delu",
+      "chempot_range",
+      "delu_dict",
+      "delu_default",
+      "increments",
+      "no_clean",
+      "no_doped"
+    ],
+    "get_surface_equilibrium": [
+      "self",
+      "slab_entries",
+      "delu_dict"
+    ],
+    "stable_u_range_dict": [
+      "self",
+      "chempot_range",
+      "ref_delu",
+      "no_doped",
+      "no_clean",
+      "delu_dict",
+      "miller_index",
+      "dmu_at_0",
+      "return_se_dict"
+    ],
+    "color_palette_dict": [
+      "self",
+      "alpha"
+    ],
+    "chempot_vs_gamma_plot_one": [
+      "self",
+      "ax",
+      "entry",
+      "ref_delu",
+      "chempot_range",
+      "delu_dict",
+      "delu_default",
+      "label",
+      "JPERM2"
+    ],
+    "chempot_vs_gamma": [
+      "self",
+      "ref_delu",
+      "chempot_range",
+      "miller_index",
+      "delu_dict",
+      "delu_default",
+      "JPERM2",
+      "show_unstable",
+      "ylim",
+      "plt",
+      "no_clean",
+      "no_doped",
+      "use_entry_labels",
+      "no_label"
+    ],
+    "monolayer_vs_BE": [
+      "self",
+      "plot_eads"
+    ],
+    "chempot_plot_addons": [
+      "ax",
+      "xrange",
+      "ref_el",
+      "pad",
+      "rect",
+      "ylim"
+    ],
+    "BE_vs_clean_SE": [
+      "self",
+      "delu_dict",
+      "delu_default",
+      "plot_eads",
+      "annotate_monolayer",
+      "JPERM2"
+    ],
+    "surface_chempot_range_map": [
+      "self",
+      "elements",
+      "miller_index",
+      "ranges",
+      "incr",
+      "no_doped",
+      "no_clean",
+      "delu_dict",
+      "ax",
+      "annotate",
+      "show_unphysical_only",
+      "fontsize"
+    ],
+    "set_all_variables": [
+      "self",
+      "delu_dict",
+      "delu_default"
+    ]
+  },
+  "entry_dict_from_list": [
+    "all_slab_entries"
+  ],
+  "WorkFunctionAnalyzer": {
+    "__init__": [
+      "self",
+      "structure",
+      "locpot_along_c",
+      "efermi",
+      "shift",
+      "blength"
+    ],
+    "get_locpot_along_slab_plot": [
+      "self",
+      "label_energies",
+      "plt",
+      "label_fontsize"
+    ],
+    "get_labels": [
+      "self",
+      "plt",
+      "label_fontsize"
+    ],
+    "is_converged": [
+      "self",
+      "min_points_frac",
+      "tol"
+    ],
+    "from_files": [
+      "cls",
+      "poscar_filename",
+      "locpot_filename",
+      "outcar_filename",
+      "shift",
+      "blength"
+    ]
+  },
+  "NanoscaleStability": {
+    "__init__": [
+      "self",
+      "se_analyzers",
+      "symprec"
+    ],
+    "solve_equilibrium_point": [
+      "self",
+      "analyzer1",
+      "analyzer2",
+      "delu_dict",
+      "delu_default",
+      "units"
+    ],
+    "wulff_gform_and_r": [
+      "self",
+      "wulff_shape",
+      "bulk_entry",
+      "r",
+      "from_sphere_area",
+      "r_units",
+      "e_units",
+      "normalize",
+      "scale_per_atom"
+    ],
+    "bulk_gform": [
+      "bulk_entry"
+    ],
+    "scaled_wulff": [
+      "self",
+      "wulff_shape",
+      "r"
+    ],
+    "plot_one_stability_map": [
+      "self",
+      "analyzer",
+      "max_r",
+      "delu_dict",
+      "label",
+      "increments",
+      "delu_default",
+      "ax",
+      "from_sphere_area",
+      "e_units",
+      "r_units",
+      "normalize",
+      "scale_per_atom"
+    ],
+    "plot_all_stability_map": [
+      "self",
+      "max_r",
+      "increments",
+      "delu_dict",
+      "delu_default",
+      "ax",
+      "labels",
+      "from_sphere_area",
+      "e_units",
+      "r_units",
+      "normalize",
+      "scale_per_atom"
+    ]
+  },
+  "sub_chempots": [
+    "gamma_dict",
+    "chempots"
+  ],
+  "get_warren_cowley_parameters": [
+    "structure",
+    "r",
+    "dr"
+  ],
+  "cite_gibbs": [],
+  "QuasiHarmonicDebyeApprox": {
+    "__init__": [
+      "self",
+      "energies",
+      "volumes",
+      "structure",
+      "t_min",
+      "t_step",
+      "t_max",
+      "eos",
+      "pressure",
+      "poisson",
+      "use_mie_gruneisen",
+      "anharmonic_contribution"
+    ],
+    "optimize_gibbs_free_energy": [
+      "self"
+    ],
+    "optimizer": [
+      "self",
+      "temperature"
+    ],
+    "vibrational_free_energy": [
+      "self",
+      "temperature",
+      "volume"
+    ],
+    "vibrational_internal_energy": [
+      "self",
+      "temperature",
+      "volume"
+    ],
+    "debye_temperature": [
+      "self",
+      "volume"
+    ],
+    "debye_integral": [
+      "y"
+    ],
+    "gruneisen_parameter": [
+      "self",
+      "temperature",
+      "volume"
+    ],
+    "thermal_conductivity": [
+      "self",
+      "temperature",
+      "volume"
+    ],
+    "get_summary_dict": [
+      "self"
+    ]
+  },
+  "QuasiharmonicDebyeApprox": {},
+  "EOSBase": {
+    "__init__": [
+      "self",
+      "volumes",
+      "energies"
+    ],
+    "__call__": [
+      "self",
+      "volume"
+    ],
+    "_initial_guess": [
+      "self"
+    ],
+    "fit": [
+      "self"
+    ],
+    "_func": [
+      "self",
+      "volume",
+      "params"
+    ],
+    "func": [
+      "self",
+      "volume"
+    ],
+    "e0": [
+      "self"
+    ],
+    "b0": [
+      "self"
+    ],
+    "b0_GPa": [
+      "self"
+    ],
+    "b1": [
+      "self"
+    ],
+    "v0": [
+      "self"
+    ],
+    "results": [
+      "self"
+    ],
+    "plot": [
+      "self",
+      "width",
+      "height",
+      "ax",
+      "dpi"
+    ],
+    "plot_ax": [
+      "self",
+      "ax",
+      "fontsize"
+    ]
+  },
+  "Murnaghan": {
+    "_func": [
+      "self",
+      "volume",
+      "params"
+    ]
+  },
+  "Birch": {
+    "_func": [
+      "self",
+      "volume",
+      "params"
+    ]
+  },
+  "BirchMurnaghan": {
+    "_func": [
+      "self",
+      "volume",
+      "params"
+    ]
+  },
+  "PourierTarantola": {
+    "_func": [
+      "self",
+      "volume",
+      "params"
+    ]
+  },
+  "Vinet": {
+    "_func": [
+      "self",
+      "volume",
+      "params"
+    ]
+  },
+  "PolynomialEOS": {
+    "_func": [
+      "self",
+      "volume",
+      "params"
+    ],
+    "fit": [
+      "self",
+      "order"
+    ],
+    "_set_params": [
+      "self"
+    ]
+  },
+  "DeltaFactor": {
+    "_func": [
+      "self",
+      "volume",
+      "params"
+    ],
+    "fit": [
+      "self",
+      "order"
+    ],
+    "_set_params": [
+      "self"
+    ]
+  },
+  "NumericalEOS": {
+    "fit": [
+      "self",
+      "min_ndata_factor",
+      "max_poly_order_factor",
+      "min_poly_order"
+    ]
+  },
+  "EOS": {
+    "__init__": [
+      "self",
+      "eos_name"
+    ],
+    "fit": [
+      "self",
+      "volumes",
+      "energies"
+    ]
+  },
+  "EOSError": {},
+  "PourbaixEntry": {
+    "__init__": [
+      "self",
+      "entry",
+      "entry_id",
+      "concentration"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "npH": [
+      "self"
+    ],
+    "nH2O": [
+      "self"
+    ],
+    "nPhi": [
+      "self"
+    ],
+    "name": [
+      "self"
+    ],
+    "energy": [
+      "self"
+    ],
+    "energy_per_atom": [
+      "self"
+    ],
+    "elements": [
+      "self"
+    ],
+    "energy_at_conditions": [
+      "self",
+      "pH",
+      "V"
+    ],
+    "get_element_fraction": [
+      "self",
+      "element"
+    ],
+    "normalized_energy": [
+      "self"
+    ],
+    "normalized_energy_at_conditions": [
+      "self",
+      "pH",
+      "V"
+    ],
+    "conc_term": [
+      "self"
+    ],
+    "as_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "dct"
+    ],
+    "normalization_factor": [
+      "self"
+    ],
+    "composition": [
+      "self"
+    ],
+    "num_atoms": [
+      "self"
+    ],
+    "to_pretty_string": [
+      "self"
+    ]
+  },
+  "MultiEntry": {
+    "__init__": [
+      "self",
+      "entry_list",
+      "weights"
+    ],
+    "__getattr__": [
+      "self",
+      "attr"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "name": [
+      "self"
+    ],
+    "as_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "dct"
+    ]
+  },
+  "IonEntry": {
+    "__init__": [
+      "self",
+      "ion",
+      "energy",
+      "name",
+      "attribute"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "dct"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "ion_or_solid_comp_object": [
+    "formula"
+  ],
+  "PourbaixDiagram": {
+    "__init__": [
+      "self",
+      "entries",
+      "comp_dict",
+      "conc_dict",
+      "filter_solids",
+      "nproc"
+    ],
+    "_convert_entries_to_points": [
+      "self",
+      "pourbaix_entries"
+    ],
+    "_get_hull_in_nph_nphi_space": [
+      "self",
+      "entries"
+    ],
+    "_preprocess_pourbaix_entries": [
+      "self",
+      "entries",
+      "nproc"
+    ],
+    "_generate_multielement_entries": [
+      "self",
+      "entries",
+      "nproc"
+    ],
+    "process_multientry": [
+      "entry_list",
+      "prod_comp",
+      "coeff_threshold"
+    ],
+    "get_pourbaix_domains": [
+      "pourbaix_entries",
+      "limits"
+    ],
+    "find_stable_entry": [
+      "self",
+      "pH",
+      "V"
+    ],
+    "get_decomposition_energy": [
+      "self",
+      "entry",
+      "pH",
+      "V"
+    ],
+    "get_hull_energy": [
+      "self",
+      "pH",
+      "V"
+    ],
+    "get_stable_entry": [
+      "self",
+      "pH",
+      "V"
+    ],
+    "stable_entries": [
+      "self"
+    ],
+    "unstable_entries": [
+      "self"
+    ],
+    "all_entries": [
+      "self"
+    ],
+    "unprocessed_entries": [
+      "self"
+    ],
+    "as_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "dct"
+    ]
+  },
+  "PourbaixPlotter": {
+    "__init__": [
+      "self",
+      "pourbaix_diagram"
+    ],
+    "_generate_entry_label": [
+      "entry"
+    ],
+    "show": [
+      "self"
+    ],
+    "get_pourbaix_plot": [
+      "self",
+      "limits",
+      "title",
+      "label_domains",
+      "label_fontsize",
+      "show_water_lines",
+      "show_neutral_axes",
+      "ax"
+    ],
+    "plot_entry_stability": [
+      "self",
+      "entry",
+      "pH_range",
+      "pH_resolution",
+      "V_range",
+      "V_resolution",
+      "e_hull_max",
+      "cmap",
+      "ax"
+    ],
+    "domain_vertices": [
+      "self",
+      "entry"
+    ]
+  },
+  "hkl_tuple_to_str": [
+    "hkl"
+  ],
+  "get_tri_area": [
+    "pts"
+  ],
+  "WulffFacet": {
+    "__init__": [
+      "self",
+      "normal",
+      "e_surf",
+      "normal_pt",
+      "dual_pt",
+      "index",
+      "m_ind_orig",
+      "miller"
+    ]
+  },
+  "WulffShape": {
+    "__init__": [
+      "self",
+      "lattice",
+      "miller_list",
+      "e_surf_list",
+      "symprec"
+    ],
+    "_get_all_miller_e": [
+      "self"
+    ],
+    "_get_cross_pt_dual_simp": [
+      "self",
+      "dual_simp"
+    ],
+    "_get_simpx_plane": [
+      "self"
+    ],
+    "_get_colors": [
+      "self",
+      "color_set",
+      "alpha",
+      "off_color",
+      "custom_colors"
+    ],
+    "show": [
+      "self"
+    ],
+    "get_line_in_facet": [
+      "self",
+      "facet"
+    ],
+    "get_plot": [
+      "self",
+      "color_set",
+      "grid_off",
+      "axis_off",
+      "show_area",
+      "alpha",
+      "off_color",
+      "direction",
+      "bar_pos",
+      "bar_on",
+      "units_in_JPERM2",
+      "legend_on",
+      "aspect_ratio",
+      "custom_colors"
+    ],
+    "get_plotly": [
+      "self",
+      "color_set",
+      "off_color",
+      "alpha",
+      "custom_colors",
+      "units_in_JPERM2"
+    ],
+    "_get_azimuth_elev": [
+      "self",
+      "miller_index"
+    ],
+    "volume": [
+      "self"
+    ],
+    "miller_area_dict": [
+      "self"
+    ],
+    "miller_energy_dict": [
+      "self"
+    ],
+    "surface_area": [
+      "self"
+    ],
+    "weighted_surface_energy": [
+      "self"
+    ],
+    "area_fraction_dict": [
+      "self"
+    ],
+    "anisotropy": [
+      "self"
+    ],
+    "shape_factor": [
+      "self"
+    ],
+    "effective_radius": [
+      "self"
+    ],
+    "total_surface_energy": [
+      "self"
+    ],
+    "tot_corner_sites": [
+      "self"
+    ],
+    "tot_edges": [
+      "self"
+    ]
+  },
+  "STANDARD_TEMP": [],
+  "ThermoData": {
+    "__init__": [
+      "self",
+      "data_type",
+      "cpdname",
+      "phaseinfo",
+      "formula",
+      "value",
+      "ref",
+      "method",
+      "temp_range",
+      "uncertainty"
+    ],
+    "from_dict": [
+      "cls",
+      "dct"
+    ],
+    "as_dict": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "NEBAnalysis": {
+    "__init__": [
+      "self",
+      "r",
+      "energies",
+      "forces",
+      "structures",
+      "spline_options",
+      "zero_slope_saddle"
+    ],
+    "setup_spline": [
+      "self",
+      "spline_options",
+      "zero_slope_saddle"
+    ],
+    "from_outcars": [
+      "cls",
+      "outcars",
+      "structures"
+    ],
+    "get_extrema": [
+      "self",
+      "normalize_rxn_coordinate"
+    ],
+    "get_plot": [
+      "self",
+      "normalize_rxn_coordinate",
+      "label_barrier"
+    ],
+    "from_dir": [
+      "cls",
+      "root_dir",
+      "relaxation_dirs"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "combine_neb_plots": [
+    "neb_analyses",
+    "arranged_neb_analyses",
+    "reverse_plot"
+  ],
+  "Fragmenter": {
+    "__init__": [
+      "self",
+      "molecule",
+      "edges",
+      "depth",
+      "open_rings",
+      "use_metal_edge_extender",
+      "opt_steps",
+      "prev_unique_frag_dict",
+      "assume_previous_thoroughness"
+    ],
+    "_fragment_one_level": [
+      "self",
+      "old_frag_dict"
+    ],
+    "_open_all_rings": [
+      "self"
+    ]
+  },
+  "open_ring": [
+    "mol_graph",
+    "bond",
+    "opt_steps"
+  ],
+  "InterfacialReactivity": {
+    "EV_TO_KJ_PER_MOL": [],
+    "__init__": [
+      "self",
+      "c1",
+      "c2",
+      "pd",
+      "norm",
+      "use_hull_energy"
+    ],
+    "get_kinks": [
+      "self"
+    ],
+    "plot": [
+      "self",
+      "backend"
+    ],
+    "get_dataframe": [
+      "self"
+    ],
+    "get_critical_original_kink_ratio": [
+      "self"
+    ],
+    "_get_original_composition_ratio": [
+      "self",
+      "reaction"
+    ],
+    "_get_energy": [
+      "self",
+      "x"
+    ],
+    "_get_reactants": [
+      "self",
+      "x"
+    ],
+    "_get_reaction": [
+      "self",
+      "x"
+    ],
+    "_get_elem_amt_in_rxn": [
+      "self",
+      "rxn"
+    ],
+    "_get_plotly_figure": [
+      "self"
+    ],
+    "_get_matplotlib_figure": [
+      "self"
+    ],
+    "_get_xaxis_title": [
+      "self",
+      "latex"
+    ],
+    "_get_plotly_annotations": [
+      "x",
+      "y",
+      "reactions"
+    ],
+    "_get_entry_energy": [
+      "pd",
+      "composition"
+    ],
+    "_convert": [
+      "x",
+      "factor1",
+      "factor2"
+    ],
+    "_reverse_convert": [
+      "x",
+      "factor1",
+      "factor2"
+    ],
+    "get_chempot_correction": [
+      "cls",
+      "element",
+      "temp",
+      "pres"
+    ],
+    "labels": [
+      "self"
+    ],
+    "minimum": [
+      "self"
+    ],
+    "products": [
+      "self"
+    ]
+  },
+  "GrandPotentialInterfacialReactivity": {
+    "__init__": [
+      "self",
+      "c1",
+      "c2",
+      "grand_pd",
+      "pd_non_grand",
+      "include_no_mixing_energy",
+      "norm",
+      "use_hull_energy"
+    ],
+    "get_no_mixing_energy": [
+      "self"
+    ],
+    "_get_reactants": [
+      "self",
+      "x"
+    ],
+    "_get_grand_potential": [
+      "self",
+      "composition"
+    ]
+  },
+  "BornEffectiveCharge": {
+    "__init__": [
+      "self",
+      "structure",
+      "bec",
+      "pointops",
+      "tol"
+    ],
+    "get_BEC_operations": [
+      "self",
+      "eigtol",
+      "opstol"
+    ],
+    "get_rand_BEC": [
+      "self",
+      "max_charge"
+    ]
+  },
+  "InternalStrainTensor": {
+    "__init__": [
+      "self",
+      "structure",
+      "ist",
+      "pointops",
+      "tol"
+    ],
+    "get_IST_operations": [
+      "self",
+      "opstol"
+    ],
+    "get_rand_IST": [
+      "self",
+      "max_force"
+    ]
+  },
+  "ForceConstantMatrix": {
+    "__init__": [
+      "self",
+      "structure",
+      "fcm",
+      "pointops",
+      "sharedops",
+      "tol"
+    ],
+    "get_FCM_operations": [
+      "self",
+      "eigtol",
+      "opstol"
+    ],
+    "get_unstable_FCM": [
+      "self",
+      "max_force"
+    ],
+    "get_symmetrized_FCM": [
+      "self",
+      "unsymmetrized_fcm",
+      "max_force"
+    ],
+    "get_stable_FCM": [
+      "self",
+      "fcm",
+      "fcmasum"
+    ],
+    "get_asum_FCM": [
+      "self",
+      "fcm",
+      "numiter"
+    ],
+    "get_rand_FCM": [
+      "self",
+      "asum",
+      "force"
+    ]
+  },
+  "get_piezo": [
+    "BEC",
+    "IST",
+    "FCM",
+    "rcond"
+  ],
+  "rand_piezo": [
+    "struct",
+    "pointops",
+    "sharedops",
+    "BEC",
+    "IST",
+    "FCM",
+    "anumiter"
+  ],
+  "BondDissociationEnergies": {
+    "__init__": [
+      "self",
+      "molecule_entry",
+      "fragment_entries",
+      "allow_additional_charge_separation",
+      "multibreak"
+    ],
+    "fragment_and_process": [
+      "self",
+      "bonds"
+    ],
+    "search_fragment_entries": [
+      "self",
+      "frag"
+    ],
+    "filter_fragment_entries": [
+      "self",
+      "fragment_entries"
+    ],
+    "build_new_entry": [
+      "self",
+      "frags",
+      "bonds"
+    ]
+  },
+  "SOCSpillage": {
+    "__init__": [
+      "self",
+      "wf_noso",
+      "wf_so"
+    ],
+    "isclose": [
+      "n1",
+      "n2",
+      "rel_tol"
+    ],
+    "orth": [
+      "A"
+    ],
+    "overlap_so_spinpol": [
+      "self"
+    ]
+  },
+  "Ordering": {
+    "FM": [],
+    "AFM": [],
+    "FiM": [],
+    "NM": [],
+    "Unknown": []
+  },
+  "OverwriteMagmomMode": {
+    "none": [],
+    "respect_sign": [],
+    "respect_zeros": [],
+    "replace_all": [],
+    "replace_all_if_undefined": [],
+    "normalize": []
+  },
+  "CollinearMagneticStructureAnalyzer": {
+    "__init__": [
+      "self",
+      "structure",
+      "overwrite_magmom_mode",
+      "round_magmoms",
+      "detect_valences",
+      "make_primitive",
+      "default_magmoms",
+      "set_net_positive",
+      "threshold",
+      "threshold_nonmag",
+      "threshold_ordering"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "_round_magmoms": [
+      "magmoms",
+      "round_magmoms_mode"
+    ],
+    "get_structure_with_spin": [
+      "self"
+    ],
+    "get_structure_with_only_magnetic_atoms": [
+      "self",
+      "make_primitive"
+    ],
+    "get_nonmagnetic_structure": [
+      "self",
+      "make_primitive"
+    ],
+    "get_ferromagnetic_structure": [
+      "self",
+      "make_primitive"
+    ],
+    "is_magnetic": [
+      "self"
+    ],
+    "magmoms": [
+      "self"
+    ],
+    "types_of_magnetic_species": [
+      "self"
+    ],
+    "types_of_magnetic_specie": [
+      "self"
+    ],
+    "magnetic_species_and_magmoms": [
+      "self"
+    ],
+    "number_of_magnetic_sites": [
+      "self"
+    ],
+    "number_of_unique_magnetic_sites": [
+      "self",
+      "symprec",
+      "angle_tolerance"
+    ],
+    "ordering": [
+      "self"
+    ],
+    "get_exchange_group_info": [
+      "self",
+      "symprec",
+      "angle_tolerance"
+    ],
+    "matches_ordering": [
+      "self",
+      "other"
+    ]
+  },
+  "MagneticStructureEnumerator": {
+    "__init__": [
+      "self",
+      "structure",
+      "default_magmoms",
+      "strategies",
+      "automatic",
+      "truncate_by_symmetry",
+      "max_orderings",
+      "transformation_kwargs"
+    ],
+    "_sanitize_input_structure": [
+      "struct"
+    ],
+    "_generate_transformations": [
+      "self",
+      "structure"
+    ],
+    "_generate_ordered_structures": [
+      "self",
+      "sanitized_input_structure",
+      "transformations"
+    ]
+  },
+  "MagneticDeformation": {},
+  "magnetic_deformation": [
+    "structure_A",
+    "structure_B"
+  ],
+  "HeisenbergMapper": {
+    "__init__": [
+      "self",
+      "ordered_structures",
+      "energies",
+      "cutoff",
+      "tol"
+    ],
+    "_get_graphs": [
+      "cutoff",
+      "ordered_structures"
+    ],
+    "_get_unique_sites": [
+      "structure"
+    ],
+    "_get_nn_dict": [
+      "self"
+    ],
+    "_get_exchange_df": [
+      "self"
+    ],
+    "get_exchange": [
+      "self"
+    ],
+    "get_low_energy_orderings": [
+      "self"
+    ],
+    "estimate_exchange": [
+      "self",
+      "fm_struct",
+      "afm_struct",
+      "fm_e",
+      "afm_e"
+    ],
+    "get_mft_temperature": [
+      "self",
+      "j_avg"
+    ],
+    "get_interaction_graph": [
+      "self",
+      "filename"
+    ],
+    "_get_j_exc": [
+      "self",
+      "i",
+      "j",
+      "dist"
+    ],
+    "get_heisenberg_model": [
+      "self"
+    ]
+  },
+  "HeisenbergScreener": {
+    "__init__": [
+      "self",
+      "structures",
+      "energies",
+      "screen"
+    ],
+    "_do_cleanup": [
+      "structures",
+      "energies"
+    ],
+    "_do_screen": [
+      "structures",
+      "energies"
+    ]
+  },
+  "HeisenbergModel": {
+    "__init__": [
+      "self",
+      "formula",
+      "structures",
+      "energies",
+      "cutoff",
+      "tol",
+      "sgraphs",
+      "unique_site_ids",
+      "wyckoff_ids",
+      "nn_interactions",
+      "dists",
+      "ex_mat",
+      "ex_params",
+      "javg",
+      "igraph"
+    ],
+    "as_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "dct"
+    ],
+    "_get_j_exc": [
+      "self",
+      "i",
+      "j",
+      "dist"
+    ]
+  },
+  "JahnTellerAnalyzer": {
+    "__init__": [
+      "self"
+    ],
+    "get_analysis_and_structure": [
+      "self",
+      "structure",
+      "calculate_valences",
+      "guesstimate_spin",
+      "op_threshold"
+    ],
+    "get_analysis": [
+      "self",
+      "structure",
+      "calculate_valences",
+      "guesstimate_spin",
+      "op_threshold"
+    ],
+    "is_jahn_teller_active": [
+      "self",
+      "structure",
+      "calculate_valences",
+      "guesstimate_spin",
+      "op_threshold"
+    ],
+    "tag_structure": [
+      "self",
+      "structure",
+      "calculate_valences",
+      "guesstimate_spin",
+      "op_threshold"
+    ],
+    "_get_number_of_d_electrons": [
+      "species"
+    ],
+    "get_magnitude_of_effect_from_species": [
+      "self",
+      "species",
+      "spin_state",
+      "motif"
+    ],
+    "get_magnitude_of_effect_from_spin_config": [
+      "motif",
+      "spin_config"
+    ],
+    "_estimate_spin_state": [
+      "species",
+      "motif",
+      "known_magmom"
+    ],
+    "mu_so": [
+      "species",
+      "motif",
+      "spin_state"
+    ]
+  },
+  "AFLOW_PROTOTYPE_LIBRARY": [],
+  "WYCKOFF_MULTIPLICITY_DICT": [],
+  "WYCKOFF_POSITION_PARAM_DICT": [],
+  "WYCKOFF_POSITION_RELAB_DICT": [],
+  "CRYSTAL_FAMILY_SYMBOLS": [],
+  "CRYSTAL_LATTICE_PARAMETERS_COUNTS": [],
+  "remove_digits": [],
+  "RE_WYCKOFF_NO_PREFIX": [],
+  "RE_ELEMENT_NO_SUFFIX": [],
+  "RE_WYCKOFF": [],
+  "RE_ANONYMOUS": [],
+  "RE_SUBST_ONE_PREFIX": [],
+  "RE_SUBST_ONE_SUFFIX": [],
+  "AflowPrototypeMatcher": {
+    "__init__": [
+      "self",
+      "initial_ltol",
+      "initial_stol",
+      "initial_angle_tol"
+    ],
+    "_preprocess_structure": [
+      "structure"
+    ],
+    "_match_prototype": [
+      "self",
+      "structure_matcher",
+      "reduced_structure"
+    ],
+    "_match_single_prototype": [
+      "self",
+      "structure"
+    ],
+    "get_prototypes": [
+      "self",
+      "structure"
+    ]
+  },
+  "split_alpha_numeric": [
+    "s"
+  ],
+  "count_values_for_wyckoff": [
+    "element_wyckoffs",
+    "counts",
+    "spg_num",
+    "lookup_dict"
+  ],
+  "get_protostructure_label": [
+    "struct",
+    "method",
+    "raise_errors"
+  ],
+  "get_protostructure_label_from_aflow": [
+    "struct",
+    "raise_errors",
+    "aflow_executable"
+  ],
+  "_get_all_wyckoffs_substring_and_element_dict": [
+    "equivalent_wyckoff_labels",
+    "spg_num"
+  ],
+  "get_protostructure_label_from_spg_analyzer": [
+    "spg_analyzer",
+    "raise_errors"
+  ],
+  "get_protostructure_label_from_spglib": [
+    "struct",
+    "raise_errors",
+    "init_symprec",
+    "fallback_symprec"
+  ],
+  "get_protostructure_label_from_moyopy": [
+    "struct",
+    "raise_errors",
+    "symprec"
+  ],
+  "canonicalize_element_wyckoffs": [
+    "element_wyckoffs",
+    "spg_num"
+  ],
+  "sort_and_score_element_wyckoffs": [
+    "element_wyckoffs"
+  ],
+  "get_prototype_formula_from_composition": [
+    "composition"
+  ],
+  "get_anonymous_formula_from_prototype_formula": [
+    "prototype_formula"
+  ],
+  "get_formula_from_protostructure_label": [
+    "protostructure_label"
+  ],
+  "count_distinct_wyckoff_letters": [
+    "protostructure_label"
+  ],
+  "count_wyckoff_positions": [
+    "protostructure_label"
+  ],
+  "count_crystal_dof": [
+    "protostructure_label"
+  ],
+  "count_crystal_sites": [
+    "protostructure_label"
+  ],
+  "_count_from_dict": [
+    "element_wyckoffs",
+    "lookup_dict",
+    "spg_num"
+  ],
+  "get_prototype_from_protostructure": [
+    "protostructure_label"
+  ],
+  "_get_anonymous_formula_dict": [
+    "anonymous_formula"
+  ],
+  "_find_translations": [
+    "dict1",
+    "dict2"
+  ],
+  "get_protostructures_from_aflow_label_and_composition": [
+    "aflow_label",
+    "composition"
+  ],
+  "get_random_structure_for_protostructure": [
+    "protostructure_label"
+  ],
+  "_get_host": [
+    "structure",
+    "species_to_remove"
+  ],
+  "_perform_grouping": [
+    "args"
+  ],
+  "group_entries_by_structure": [
+    "entries",
+    "species_to_remove",
+    "ltol",
+    "stol",
+    "angle_tol",
+    "primitive_cell",
+    "scale",
+    "comparator",
+    "ncpus"
+  ],
+  "group_entries_by_composition": [
+    "entries",
+    "sort_by_e_per_atom"
+  ],
+  "EntrySet": {
+    "__init__": [
+      "self",
+      "entries"
+    ],
+    "__contains__": [
+      "self",
+      "item"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "add": [
+      "self",
+      "element"
+    ],
+    "discard": [
+      "self",
+      "element"
+    ],
+    "chemsys": [
+      "self"
+    ],
+    "ground_states": [
+      "self"
+    ],
+    "remove_non_ground_states": [
+      "self"
+    ],
+    "is_ground_state": [
+      "self",
+      "entry"
+    ],
+    "get_subset_in_chemsys": [
+      "self",
+      "chemsys"
+    ],
+    "as_dict": [
+      "self"
+    ],
+    "to_csv": [
+      "self",
+      "filename",
+      "latexify_names"
+    ],
+    "from_csv": [
+      "cls",
+      "filename"
+    ]
+  },
+  "ExpEntry": {
+    "__init__": [
+      "self",
+      "composition",
+      "thermodata",
+      "temperature"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "dct"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "GibbsComputedStructureEntry": {
+    "__init__": [
+      "self",
+      "structure",
+      "formation_enthalpy_per_atom",
+      "temp",
+      "gibbs_model",
+      "composition",
+      "correction",
+      "energy_adjustments",
+      "parameters",
+      "data",
+      "entry_id"
+    ],
+    "gf_sisso": [
+      "self"
+    ],
+    "_sum_g_i": [
+      "self"
+    ],
+    "_reduced_mass": [
+      "structure"
+    ],
+    "_g_delta_sisso": [
+      "vol_per_atom",
+      "reduced_mass",
+      "temp"
+    ],
+    "from_pd": [
+      "cls",
+      "pd",
+      "temp",
+      "gibbs_model"
+    ],
+    "from_entries": [
+      "cls",
+      "entries",
+      "temp",
+      "gibbs_model"
+    ],
+    "as_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "dct"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "MP2020_COMPAT_CONFIG": [],
+  "MP_COMPAT_CONFIG": [],
+  "SMOOTH_PES_CONFIG": [],
+  "TypeVarAnyEntry": [],
+  "CompatibilityError": {},
+  "Correction": {
+    "get_correction": [
+      "self",
+      "entry"
+    ],
+    "correct_entry": [
+      "self",
+      "entry"
+    ]
+  },
+  "PotcarCorrection": {
+    "__init__": [
+      "self",
+      "input_set",
+      "check_potcar",
+      "check_hash"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "get_correction": [
+      "self",
+      "entry"
+    ]
+  },
+  "GasCorrection": {
+    "__init__": [
+      "self",
+      "config_file"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "get_correction": [
+      "self",
+      "entry"
+    ]
+  },
+  "AnionCorrection": {
+    "__init__": [
+      "self",
+      "config_file",
+      "correct_peroxide"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "get_correction": [
+      "self",
+      "entry"
+    ]
+  },
+  "AqueousCorrection": {
+    "__init__": [
+      "self",
+      "config_file",
+      "error_file"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "get_correction": [
+      "self",
+      "entry"
+    ]
+  },
+  "UCorrection": {
+    "common_peroxides": [],
+    "common_superoxides": [],
+    "ozonides": [],
+    "__init__": [
+      "self",
+      "config_file",
+      "input_set",
+      "compat_type",
+      "error_file"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "get_correction": [
+      "self",
+      "entry"
+    ]
+  },
+  "Compatibility": {
+    "get_adjustments": [
+      "self",
+      "entry"
+    ],
+    "process_entry": [
+      "self",
+      "entry",
+      "inplace"
+    ],
+    "_process_entry_inplace": [
+      "self",
+      "entry",
+      "clean",
+      "on_error"
+    ],
+    "process_entries": [
+      "self",
+      "entries",
+      "clean",
+      "verbose",
+      "inplace",
+      "n_workers",
+      "on_error"
+    ],
+    "explain": [
+      "self",
+      "entry"
+    ]
+  },
+  "CorrectionsList": {
+    "__init__": [
+      "self",
+      "corrections",
+      "run_types"
+    ],
+    "get_adjustments": [
+      "self",
+      "entry"
+    ],
+    "get_corrections_dict": [
+      "self",
+      "entry"
+    ],
+    "get_explanation_dict": [
+      "self",
+      "entry"
+    ],
+    "explain": [
+      "self",
+      "entry"
+    ]
+  },
+  "MaterialsProjectCompatibility": {
+    "__init__": [
+      "self",
+      "compat_type",
+      "correct_peroxide",
+      "check_potcar_hash"
+    ]
+  },
+  "MaterialsProject2020Compatibility": {
+    "DEFAULT_CONFIG_FILE": [],
+    "__init__": [
+      "self",
+      "compat_type",
+      "correct_peroxide",
+      "strict_anions",
+      "check_potcar",
+      "check_potcar_hash",
+      "config_file"
+    ],
+    "get_adjustments": [
+      "self",
+      "entry"
+    ]
+  },
+  "MITCompatibility": {
+    "__init__": [
+      "self",
+      "compat_type",
+      "correct_peroxide",
+      "check_potcar_hash"
+    ]
+  },
+  "MITAqueousCompatibility": {
+    "__init__": [
+      "self",
+      "compat_type",
+      "correct_peroxide",
+      "check_potcar_hash"
+    ]
+  },
+  "MaterialsProjectAqueousCompatibility": {
+    "__init__": [
+      "self",
+      "solid_compat",
+      "o2_energy",
+      "h2o_energy",
+      "h2o_adjustments"
+    ],
+    "get_adjustments": [
+      "self",
+      "entry"
+    ],
+    "process_entries": [
+      "self",
+      "entries",
+      "clean",
+      "verbose",
+      "inplace",
+      "n_workers",
+      "on_error"
+    ]
+  },
+  "SmoothPESCompatibility": {
+    "DEFAULT_CONFIG_FILE": []
+  },
+  "needs_u_correction": [
+    "comp",
+    "u_config"
+  ],
+  "CorrectionCalculator": {
+    "__init__": [
+      "self",
+      "species",
+      "max_error",
+      "allow_unstable",
+      "exclude_polyanions"
+    ],
+    "compute_from_files": [
+      "self",
+      "exp_gz",
+      "comp_gz"
+    ],
+    "compute_corrections": [
+      "self",
+      "exp_entries",
+      "calc_entries"
+    ],
+    "graph_residual_error": [
+      "self"
+    ],
+    "graph_residual_error_per_species": [
+      "self",
+      "specie"
+    ],
+    "make_yaml": [
+      "self",
+      "name",
+      "dir"
+    ]
+  },
+  "XAS": {
+    "XLABEL": [],
+    "YLABEL": [],
+    "__init__": [
+      "self",
+      "x",
+      "y",
+      "structure",
+      "absorbing_element",
+      "edge",
+      "spectrum_type",
+      "absorbing_index",
+      "zero_negative_intensity"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "stitch": [
+      "self",
+      "other",
+      "num_samples",
+      "mode"
+    ]
+  },
+  "site_weighted_spectrum": [
+    "xas_list",
+    "num_samples"
+  ],
+  "from_bson_voronoi_list2": [
+    "bson_nb_voro_list2",
+    "structure"
+  ],
+  "DetailedVoronoiContainer": {
+    "AC": [],
+    "default_voronoi_cutoff": [],
+    "default_normalized_distance_tolerance": [],
+    "default_normalized_angle_tolerance": [],
+    "__init__": [
+      "self",
+      "structure",
+      "voronoi_list2",
+      "voronoi_cutoff",
+      "isites",
+      "normalized_distance_tolerance",
+      "normalized_angle_tolerance",
+      "additional_conditions",
+      "valences",
+      "maximum_distance_factor",
+      "minimum_angle_factor"
+    ],
+    "setup_voronoi_list": [
+      "self",
+      "indices",
+      "voronoi_cutoff"
+    ],
+    "setup_neighbors_distances_and_angles": [
+      "self",
+      "indices"
+    ],
+    "_precompute_additional_conditions": [
+      "self",
+      "ivoronoi",
+      "voronoi",
+      "valences"
+    ],
+    "_precompute_angle_conditions": [
+      "self",
+      "ivoronoi",
+      "voronoi"
+    ],
+    "neighbors_surfaces": [
+      "self",
+      "isite",
+      "surface_calculation_type",
+      "max_dist"
+    ],
+    "neighbors_surfaces_bounded": [
+      "self",
+      "isite",
+      "surface_calculation_options"
+    ],
+    "_get_vertices_dist_ang_indices": [
+      "parameter_indices_list"
+    ],
+    "maps_and_surfaces": [
+      "self",
+      "isite",
+      "surface_calculation_type",
+      "max_dist",
+      "additional_conditions"
+    ],
+    "maps_and_surfaces_bounded": [
+      "self",
+      "isite",
+      "surface_calculation_options",
+      "additional_conditions"
+    ],
+    "neighbors": [
+      "self",
+      "isite",
+      "distfactor",
+      "angfactor",
+      "additional_condition"
+    ],
+    "voronoi_parameters_bounds_and_limits": [
+      "self",
+      "isite",
+      "plot_type",
+      "max_dist"
+    ],
+    "is_close_to": [
+      "self",
+      "other",
+      "rtol",
+      "atol"
+    ],
+    "get_rdf_figure": [
+      "self",
+      "isite",
+      "normalized",
+      "figsize",
+      "step_function"
+    ],
+    "get_sadf_figure": [
+      "self",
+      "isite",
+      "normalized",
+      "figsize",
+      "step_function"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "to_bson_voronoi_list2": [
+      "self"
+    ],
+    "as_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "dct"
+    ]
+  },
+  "all_cg": [],
+  "symbol_cn_mapping": [],
+  "StructureEnvironments": {
+    "AC": [],
+    "__init__": [
+      "self",
+      "voronoi",
+      "valences",
+      "sites_map",
+      "equivalent_sites",
+      "ce_list",
+      "structure",
+      "neighbors_sets",
+      "info"
+    ],
+    "init_neighbors_sets": [
+      "self",
+      "isite",
+      "additional_conditions",
+      "valences"
+    ],
+    "add_neighbors_set": [
+      "self",
+      "isite",
+      "nb_set"
+    ],
+    "update_coordination_environments": [
+      "self",
+      "isite",
+      "cn",
+      "nb_set",
+      "ce"
+    ],
+    "update_site_info": [
+      "self",
+      "isite",
+      "info_dict"
+    ],
+    "get_coordination_environments": [
+      "self",
+      "isite",
+      "cn",
+      "nb_set"
+    ],
+    "get_csm": [
+      "self",
+      "isite",
+      "mp_symbol"
+    ],
+    "get_csms": [
+      "self",
+      "isite",
+      "mp_symbol"
+    ],
+    "plot_csm_and_maps": [
+      "self",
+      "isite",
+      "max_csm"
+    ],
+    "get_csm_and_maps": [
+      "self",
+      "isite",
+      "max_csm",
+      "figsize",
+      "symmetry_measure_type"
+    ],
+    "get_environments_figure": [
+      "self",
+      "isite",
+      "plot_type",
+      "title",
+      "max_dist",
+      "colormap",
+      "figsize",
+      "strategy"
+    ],
+    "plot_environments": [
+      "self",
+      "isite",
+      "plot_type",
+      "title",
+      "max_dist",
+      "figsize",
+      "strategy"
+    ],
+    "save_environments_figure": [
+      "self",
+      "isite",
+      "imagename",
+      "plot_type",
+      "title",
+      "max_dist",
+      "figsize"
+    ],
+    "differences_wrt": [
+      "self",
+      "other"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "as_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "dct"
+    ]
+  },
+  "LightStructureEnvironments": {
+    "DELTA_MAX_OXIDATION_STATE": [],
+    "DEFAULT_STATISTICS_FIELDS": [],
+    "__init__": [
+      "self",
+      "strategy",
+      "coordination_environments",
+      "all_nbs_sites",
+      "neighbors_sets",
+      "structure",
+      "valences",
+      "valences_origin"
+    ],
+    "from_structure_environments": [
+      "cls",
+      "strategy",
+      "structure_environments",
+      "valences",
+      "valences_origin"
+    ],
+    "setup_statistic_lists": [
+      "self"
+    ],
+    "get_site_info_for_specie_ce": [
+      "self",
+      "specie",
+      "ce_symbol"
+    ],
+    "get_site_info_for_specie_allces": [
+      "self",
+      "specie",
+      "min_fraction"
+    ],
+    "get_statistics": [
+      "self",
+      "statistics_fields",
+      "bson_compatible"
+    ],
+    "contains_only_one_anion_atom": [
+      "self",
+      "anion_atom"
+    ],
+    "contains_only_one_anion": [
+      "self",
+      "anion"
+    ],
+    "site_contains_environment": [
+      "self",
+      "isite",
+      "ce_symbol"
+    ],
+    "site_has_clear_environment": [
+      "self",
+      "isite",
+      "conditions"
+    ],
+    "structure_has_clear_environments": [
+      "self",
+      "conditions",
+      "skip_none",
+      "skip_empty"
+    ],
+    "clear_environments": [
+      "self",
+      "conditions"
+    ],
+    "structure_contains_atom_environment": [
+      "self",
+      "atom_symbol",
+      "ce_symbol"
+    ],
+    "environments_identified": [
+      "self"
+    ],
+    "uniquely_determines_coordination_environments": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "as_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "dct"
+    ]
+  },
+  "ChemicalEnvironments": {
+    "__init__": [
+      "self",
+      "coord_geoms"
+    ],
+    "__getitem__": [
+      "self",
+      "mp_symbol"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "minimum_geometry": [
+      "self",
+      "symmetry_measure_type",
+      "max_csm"
+    ],
+    "minimum_geometries": [
+      "self",
+      "n",
+      "symmetry_measure_type",
+      "max_csm"
+    ],
+    "add_coord_geom": [
+      "self",
+      "mp_symbol",
+      "symmetry_measure",
+      "algo",
+      "permutation",
+      "override",
+      "local2perfect_map",
+      "perfect2local_map",
+      "detailed_voronoi_index",
+      "other_symmetry_measures",
+      "rotation_matrix",
+      "scaling_factor"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "is_close_to": [
+      "self",
+      "other",
+      "rtol",
+      "atol"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "as_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "dct"
+    ]
+  },
+  "UNKNOWN_ENVIRONMENT_SYMBOL": [],
+  "UNCLEAR_ENVIRONMENT_SYMBOL": [],
+  "EXPLICIT_PERMUTATIONS": [],
+  "SEPARATION_PLANE": [],
+  "AbstractChemenvAlgorithm": {
+    "__init__": [
+      "self",
+      "algorithm_type"
+    ],
+    "as_dict": [
+      "self"
+    ],
+    "algorithm_type": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "ExplicitPermutationsAlgorithm": {
+    "__init__": [
+      "self",
+      "permutations"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "permutations": [
+      "self"
+    ],
+    "as_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "dct"
+    ]
+  },
+  "SeparationPlane": {
+    "__init__": [
+      "self",
+      "plane_points",
+      "mirror_plane",
+      "ordered_plane",
+      "point_groups",
+      "ordered_point_groups",
+      "explicit_permutations",
+      "minimum_number_of_points",
+      "explicit_optimized_permutations",
+      "multiplicity",
+      "other_plane_points"
+    ],
+    "permutations": [
+      "self"
+    ],
+    "ref_separation_perm": [
+      "self"
+    ],
+    "argsorted_ref_separation_perm": [
+      "self"
+    ],
+    "safe_separation_permutations": [
+      "self",
+      "ordered_plane",
+      "ordered_point_groups",
+      "add_opposite"
+    ],
+    "as_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "dct"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "CoordinationGeometry": {
+    "CSM_SKIP_SEPARATION_PLANE_ALGO": [],
+    "__init__": [
+      "self",
+      "mp_symbol",
+      "name",
+      "alternative_names",
+      "IUPAC_symbol",
+      "IUCr_symbol",
+      "coordination",
+      "central_site",
+      "points",
+      "solid_angles",
+      "permutations_safe_override",
+      "deactivate",
+      "faces",
+      "edges",
+      "algorithms",
+      "equivalent_indices",
+      "neighbors_sets_hints"
+    ],
+    "as_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "dct"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "distfactor_max": [
+      "self"
+    ],
+    "coordination_number": [
+      "self"
+    ],
+    "pauling_stability_ratio": [
+      "self"
+    ],
+    "mp_symbol": [
+      "self"
+    ],
+    "ce_symbol": [
+      "self"
+    ],
+    "get_coordination_number": [
+      "self"
+    ],
+    "is_implemented": [
+      "self"
+    ],
+    "get_name": [
+      "self"
+    ],
+    "IUPAC_symbol": [
+      "self"
+    ],
+    "IUPAC_symbol_str": [
+      "self"
+    ],
+    "IUCr_symbol": [
+      "self"
+    ],
+    "IUCr_symbol_str": [
+      "self"
+    ],
+    "number_of_permutations": [
+      "self"
+    ],
+    "ref_permutation": [
+      "self",
+      "permutation"
+    ],
+    "algorithms": [
+      "self"
+    ],
+    "get_central_site": [
+      "self"
+    ],
+    "faces": [
+      "self",
+      "sites",
+      "permutation"
+    ],
+    "edges": [
+      "self",
+      "sites",
+      "permutation",
+      "input"
+    ],
+    "solid_angles": [
+      "self",
+      "permutation"
+    ],
+    "get_pmeshes": [
+      "self",
+      "sites",
+      "permutation"
+    ]
+  },
+  "AllCoordinationGeometries": {
+    "__init__": [
+      "self",
+      "permutations_safe_override",
+      "only_symbols"
+    ],
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "__contains__": [
+      "self",
+      "item"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "get_geometries": [
+      "self",
+      "coordination",
+      "returned"
+    ],
+    "get_symbol_name_mapping": [
+      "self",
+      "coordination"
+    ],
+    "get_symbol_cn_mapping": [
+      "self",
+      "coordination"
+    ],
+    "get_implemented_geometries": [
+      "self",
+      "coordination",
+      "returned",
+      "include_deactivated"
+    ],
+    "get_not_implemented_geometries": [
+      "self",
+      "coordination",
+      "returned"
+    ],
+    "get_geometry_from_name": [
+      "self",
+      "name"
+    ],
+    "get_geometry_from_IUPAC_symbol": [
+      "self",
+      "IUPAC_symbol"
+    ],
+    "get_geometry_from_IUCr_symbol": [
+      "self",
+      "IUCr_symbol"
+    ],
+    "get_geometry_from_mp_symbol": [
+      "self",
+      "mp_symbol"
+    ],
+    "is_a_valid_coordination_geometry": [
+      "self",
+      "mp_symbol",
+      "IUPAC_symbol",
+      "IUCr_symbol",
+      "name",
+      "cn"
+    ],
+    "pretty_print": [
+      "self",
+      "type",
+      "maxcn",
+      "additional_info"
+    ]
+  },
+  "MPSYMBOL_TO_CN": [],
+  "ALLCG": [],
+  "StrategyOption": {
+    "as_dict": [
+      "self"
+    ]
+  },
+  "DistanceCutoffFloat": {
+    "allowed_values": [],
+    "__new__": [
+      "cls",
+      "cutoff"
+    ],
+    "as_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "dct"
+    ]
+  },
+  "AngleCutoffFloat": {
+    "allowed_values": [],
+    "__new__": [
+      "cls",
+      "cutoff"
+    ],
+    "as_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "dct"
+    ]
+  },
+  "CSMFloat": {
+    "allowed_values": [],
+    "__new__": [
+      "cls",
+      "cutoff"
+    ],
+    "as_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "dct"
+    ]
+  },
+  "AdditionalConditionInt": {
+    "allowed_values": [],
+    "__new__": [
+      "cls",
+      "integer"
+    ],
+    "as_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "dct"
+    ]
+  },
+  "AbstractChemenvStrategy": {
+    "AC": [],
+    "DEFAULT_SYMMETRY_MEASURE_TYPE": [],
+    "__init__": [
+      "self",
+      "structure_environments",
+      "symmetry_measure_type"
+    ],
+    "symmetry_measure_type": [
+      "self"
+    ],
+    "set_structure_environments": [
+      "self",
+      "structure_environments"
+    ],
+    "prepare_symmetries": [
+      "self"
+    ],
+    "equivalent_site_index_and_transform": [
+      "self",
+      "psite"
+    ],
+    "get_site_neighbors": [
+      "self",
+      "site"
+    ],
+    "uniquely_determines_coordination_environments": [
+      "self"
+    ],
+    "get_site_coordination_environment": [
+      "self",
+      "site"
+    ],
+    "get_site_coordination_environments": [
+      "self",
+      "site"
+    ],
+    "get_site_coordination_environments_fractions": [
+      "self",
+      "site",
+      "isite",
+      "dequivsite",
+      "dthissite",
+      "mysym",
+      "ordered",
+      "min_fraction",
+      "return_maps",
+      "return_strategy_dict_info"
+    ],
+    "get_site_ce_fractions_and_neighbors": [
+      "self",
+      "site",
+      "full_ce_info",
+      "strategy_info"
+    ],
+    "set_option": [
+      "self",
+      "option_name",
+      "option_value"
+    ],
+    "setup_options": [
+      "self",
+      "all_options_dict"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "as_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "dct"
+    ]
+  },
+  "SimplestChemenvStrategy": {
+    "DEFAULT_DISTANCE_CUTOFF": [],
+    "DEFAULT_ANGLE_CUTOFF": [],
+    "DEFAULT_CONTINUOUS_SYMMETRY_MEASURE_CUTOFF": [],
+    "DEFAULT_ADDITIONAL_CONDITION": [],
+    "STRATEGY_DESCRIPTION": [],
+    "__init__": [
+      "self",
+      "structure_environments",
+      "distance_cutoff",
+      "angle_cutoff",
+      "additional_condition",
+      "continuous_symmetry_measure_cutoff",
+      "symmetry_measure_type"
+    ],
+    "uniquely_determines_coordination_environments": [
+      "self"
+    ],
+    "distance_cutoff": [
+      "self",
+      "distance_cutoff"
+    ],
+    "angle_cutoff": [
+      "self",
+      "angle_cutoff"
+    ],
+    "additional_condition": [
+      "self",
+      "additional_condition"
+    ],
+    "continuous_symmetry_measure_cutoff": [
+      "self",
+      "continuous_symmetry_measure_cutoff"
+    ],
+    "get_site_neighbors": [
+      "self",
+      "site",
+      "isite",
+      "dequivsite",
+      "dthissite",
+      "mysym"
+    ],
+    "_get_cn_map_cache": [
+      "self",
+      "isite"
+    ],
+    "get_site_coordination_environment": [
+      "self",
+      "site",
+      "isite",
+      "dequivsite",
+      "dthissite",
+      "mysym",
+      "return_map"
+    ],
+    "get_site_coordination_environments_fractions": [
+      "self",
+      "site",
+      "isite",
+      "dequivsite",
+      "dthissite",
+      "mysym",
+      "ordered",
+      "min_fraction",
+      "return_maps",
+      "return_strategy_dict_info"
+    ],
+    "get_site_coordination_environments": [
+      "self",
+      "site",
+      "isite",
+      "dequivsite",
+      "dthissite",
+      "mysym",
+      "return_maps"
+    ],
+    "add_strategy_visualization_to_subplot": [
+      "self",
+      "subplot",
+      "visualization_options",
+      "plot_type"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "as_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "dct"
+    ]
+  },
+  "SimpleAbundanceChemenvStrategy": {
+    "DEFAULT_MAX_DIST": [],
+    "DEFAULT_ADDITIONAL_CONDITION": [],
+    "STRATEGY_DESCRIPTION": [],
+    "__init__": [
+      "self",
+      "structure_environments",
+      "additional_condition",
+      "symmetry_measure_type"
+    ],
+    "uniquely_determines_coordination_environments": [
+      "self"
+    ],
+    "get_site_neighbors": [
+      "self",
+      "site"
+    ],
+    "get_site_coordination_environment": [
+      "self",
+      "site",
+      "isite",
+      "dequivsite",
+      "dthissite",
+      "mysym",
+      "return_map"
+    ],
+    "get_site_coordination_environments": [
+      "self",
+      "site",
+      "isite",
+      "dequivsite",
+      "dthissite",
+      "mysym",
+      "return_maps"
+    ],
+    "_get_map": [
+      "self",
+      "isite"
+    ],
+    "_get_maps_surfaces": [
+      "self",
+      "isite",
+      "surface_calculation_type"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "as_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "dct"
+    ]
+  },
+  "TargetedPenaltiedAbundanceChemenvStrategy": {
+    "DEFAULT_TARGET_ENVIRONMENTS": [],
+    "__init__": [
+      "self",
+      "structure_environments",
+      "truncate_dist_ang",
+      "additional_condition",
+      "max_nabundant",
+      "target_environments",
+      "target_penalty_type",
+      "max_csm",
+      "symmetry_measure_type"
+    ],
+    "get_site_coordination_environment": [
+      "self",
+      "site",
+      "isite",
+      "dequivsite",
+      "dthissite",
+      "mysym",
+      "return_map"
+    ],
+    "_get_map": [
+      "self",
+      "isite"
+    ],
+    "uniquely_determines_coordination_environments": [
+      "self"
+    ],
+    "as_dict": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "from_dict": [
+      "cls",
+      "dct"
+    ]
+  },
+  "NbSetWeight": {
+    "as_dict": [
+      "self"
+    ],
+    "weight": [
+      "self",
+      "nb_set",
+      "structure_environments",
+      "cn_map",
+      "additional_info"
+    ]
+  },
+  "AngleNbSetWeight": {
+    "SHORT_NAME": [],
+    "__init__": [
+      "self",
+      "aa"
+    ],
+    "weight": [
+      "self",
+      "nb_set",
+      "structure_environments",
+      "cn_map",
+      "additional_info"
+    ],
+    "angle_sum": [
+      "nb_set"
+    ],
+    "angle_sumn": [
+      "self",
+      "nb_set"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "as_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "dct"
+    ]
+  },
+  "NormalizedAngleDistanceNbSetWeight": {
+    "SHORT_NAME": [],
+    "__init__": [
+      "self",
+      "average_type",
+      "aa",
+      "bb"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "as_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "dct"
+    ],
+    "invdist": [
+      "nb_set"
+    ],
+    "invndist": [
+      "self",
+      "nb_set"
+    ],
+    "ang": [
+      "nb_set"
+    ],
+    "angn": [
+      "self",
+      "nb_set"
+    ],
+    "anginvdist": [
+      "nb_set"
+    ],
+    "anginvndist": [
+      "self",
+      "nb_set"
+    ],
+    "angninvdist": [
+      "self",
+      "nb_set"
+    ],
+    "angninvndist": [
+      "self",
+      "nb_set"
+    ],
+    "weight": [
+      "self",
+      "nb_set",
+      "structure_environments",
+      "cn_map",
+      "additional_info"
+    ],
+    "gweight": [
+      "fda_list"
+    ],
+    "aweight": [
+      "fda_list"
+    ]
+  },
+  "get_effective_csm": [
+    "nb_set",
+    "cn_map",
+    "structure_environments",
+    "additional_info",
+    "symmetry_measure_type",
+    "max_effective_csm",
+    "effective_csm_estimator_ratio_function"
+  ],
+  "set_info": [
+    "additional_info",
+    "field",
+    "isite",
+    "cn_map",
+    "value"
+  ],
+  "SelfCSMNbSetWeight": {
+    "SHORT_NAME": [],
+    "DEFAULT_SYMMETRY_MEASURE_TYPE": [],
+    "__init__": [
+      "self",
+      "effective_csm_estimator",
+      "weight_estimator",
+      "symmetry_measure_type"
+    ],
+    "weight": [
+      "self",
+      "nb_set",
+      "structure_environments",
+      "cn_map",
+      "additional_info"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "as_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "dct"
+    ]
+  },
+  "DeltaCSMNbSetWeight": {
+    "SHORT_NAME": [],
+    "DEFAULT_SYMMETRY_MEASURE_TYPE": [],
+    "__init__": [
+      "self",
+      "effective_csm_estimator",
+      "weight_estimator",
+      "delta_cn_weight_estimators",
+      "symmetry_measure_type"
+    ],
+    "weight": [
+      "self",
+      "nb_set",
+      "structure_environments",
+      "cn_map",
+      "additional_info"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "delta_cn_specifics": [
+      "cls",
+      "delta_csm_mins",
+      "delta_csm_maxs",
+      "function",
+      "symmetry_measure_type",
+      "effective_csm_estimator"
+    ],
+    "as_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "dct"
+    ]
+  },
+  "CNBiasNbSetWeight": {
+    "SHORT_NAME": [],
+    "__init__": [
+      "self",
+      "cn_weights",
+      "initialization_options"
+    ],
+    "weight": [
+      "self",
+      "nb_set",
+      "structure_environments",
+      "cn_map",
+      "additional_info"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "as_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "dct"
+    ],
+    "linearly_equidistant": [
+      "cls",
+      "weight_cn1",
+      "weight_cn13"
+    ],
+    "geometrically_equidistant": [
+      "cls",
+      "weight_cn1",
+      "weight_cn13"
+    ],
+    "explicit": [
+      "cls",
+      "cn_weights"
+    ],
+    "from_description": [
+      "cls",
+      "dct"
+    ]
+  },
+  "DistanceAngleAreaNbSetWeight": {
+    "SHORT_NAME": [],
+    "AC": [],
+    "__init__": [
+      "self",
+      "weight_type",
+      "surface_definition",
+      "nb_sets_from_hints",
+      "other_nb_sets",
+      "additional_condition",
+      "smoothstep_distance",
+      "smoothstep_angle"
+    ],
+    "weight": [
+      "self",
+      "nb_set",
+      "structure_environments",
+      "cn_map",
+      "additional_info"
+    ],
+    "w_area_has_intersection": [
+      "self",
+      "nb_set",
+      "structure_environments",
+      "cn_map",
+      "additional_info"
+    ],
+    "w_area_intersection_nbsfh_fbs_onb0": [
+      "self",
+      "nb_set",
+      "structure_environments",
+      "cn_map",
+      "additional_info"
+    ],
+    "rectangle_crosses_area": [
+      "self",
+      "d1",
+      "d2",
+      "a1",
+      "a2"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "as_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "dct"
+    ]
+  },
+  "DistancePlateauNbSetWeight": {
+    "SHORT_NAME": [],
+    "__init__": [
+      "self",
+      "distance_function",
+      "weight_function"
+    ],
+    "weight": [
+      "self",
+      "nb_set",
+      "structure_environments",
+      "cn_map",
+      "additional_info"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "as_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "dct"
+    ]
+  },
+  "AnglePlateauNbSetWeight": {
+    "SHORT_NAME": [],
+    "__init__": [
+      "self",
+      "angle_function",
+      "weight_function"
+    ],
+    "weight": [
+      "self",
+      "nb_set",
+      "structure_environments",
+      "cn_map",
+      "additional_info"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "as_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "dct"
+    ]
+  },
+  "DistanceNbSetWeight": {
+    "SHORT_NAME": [],
+    "__init__": [
+      "self",
+      "weight_function",
+      "nbs_source"
+    ],
+    "weight": [
+      "self",
+      "nb_set",
+      "structure_environments",
+      "cn_map",
+      "additional_info"
+    ],
+    "as_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "dct"
+    ]
+  },
+  "DeltaDistanceNbSetWeight": {
+    "SHORT_NAME": [],
+    "__init__": [
+      "self",
+      "weight_function",
+      "nbs_source"
+    ],
+    "weight": [
+      "self",
+      "nb_set",
+      "structure_environments",
+      "cn_map",
+      "additional_info"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "as_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "dct"
+    ]
+  },
+  "WeightedNbSetChemenvStrategy": {
+    "STRATEGY_DESCRIPTION": [],
+    "__init__": [
+      "self",
+      "structure_environments",
+      "additional_condition",
+      "symmetry_measure_type",
+      "nb_set_weights",
+      "ce_estimator"
+    ],
+    "uniquely_determines_coordination_environments": [
+      "self"
+    ],
+    "get_site_coordination_environments_fractions": [
+      "self",
+      "site",
+      "isite",
+      "dequivsite",
+      "dthissite",
+      "mysym",
+      "ordered",
+      "min_fraction",
+      "return_maps",
+      "return_strategy_dict_info",
+      "return_all"
+    ],
+    "get_site_coordination_environment": [
+      "self",
+      "site"
+    ],
+    "get_site_neighbors": [
+      "self",
+      "site"
+    ],
+    "get_site_coordination_environments": [
+      "self",
+      "site",
+      "isite",
+      "dequivsite",
+      "dthissite",
+      "mysym",
+      "return_maps"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "as_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "dct"
+    ]
+  },
+  "MultiWeightsChemenvStrategy": {
+    "STRATEGY_DESCRIPTION": [],
+    "__init__": [
+      "self",
+      "structure_environments",
+      "additional_condition",
+      "symmetry_measure_type",
+      "dist_ang_area_weight",
+      "self_csm_weight",
+      "delta_csm_weight",
+      "cn_bias_weight",
+      "angle_weight",
+      "normalized_angle_distance_weight",
+      "ce_estimator"
+    ],
+    "stats_article_weights_parameters": [
+      "cls"
+    ],
+    "uniquely_determines_coordination_environments": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "as_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "dct"
+    ]
+  },
+  "AbstractGeometry": {
+    "__init__": [
+      "self",
+      "central_site",
+      "bare_coords",
+      "centering_type",
+      "include_central_site_in_centroid",
+      "optimization"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "from_cg": [
+      "cls",
+      "cg",
+      "centering_type",
+      "include_central_site_in_centroid"
+    ],
+    "points_wcs_csc": [
+      "self",
+      "permutation"
+    ],
+    "points_wocs_csc": [
+      "self",
+      "permutation"
+    ],
+    "points_wcs_ctwcc": [
+      "self",
+      "permutation"
+    ],
+    "points_wocs_ctwcc": [
+      "self",
+      "permutation"
+    ],
+    "points_wcs_ctwocc": [
+      "self",
+      "permutation"
+    ],
+    "points_wocs_ctwocc": [
+      "self",
+      "permutation"
+    ],
+    "cn": [
+      "self"
+    ],
+    "coordination_number": [
+      "self"
+    ]
+  },
+  "symmetry_measure": [
+    "points_distorted",
+    "points_perfect"
+  ],
+  "find_rotation": [
+    "points_distorted",
+    "points_perfect"
+  ],
+  "find_scaling_factor": [
+    "points_distorted",
+    "points_perfect",
+    "rot"
+  ],
+  "LocalGeometryFinder": {
+    "DEFAULT_BVA_DISTANCE_SCALE_FACTOR": [],
+    "STRUCTURE_REFINEMENT_NONE": [],
+    "STRUCTURE_REFINEMENT_REFINED": [],
+    "STRUCTURE_REFINEMENT_SYMMETRIZED": [],
+    "DEFAULT_STRATEGY": [],
+    "__init__": [
+      "self",
+      "permutations_safe_override",
+      "plane_ordering_override",
+      "plane_safe_permutations",
+      "only_symbols"
+    ],
+    "setup_parameters": [
+      "self",
+      "centering_type",
+      "include_central_site_in_centroid",
+      "bva_distance_scale_factor",
+      "structure_refinement",
+      "spg_analyzer_options"
+    ],
+    "setup_parameter": [
+      "self",
+      "parameter",
+      "value"
+    ],
+    "setup_structure": [
+      "self",
+      "structure"
+    ],
+    "get_structure": [
+      "self"
+    ],
+    "set_structure": [
+      "self",
+      "lattice",
+      "species",
+      "coords",
+      "coords_are_cartesian"
+    ],
+    "compute_structure_environments": [
+      "self",
+      "excluded_atoms",
+      "only_atoms",
+      "only_cations",
+      "only_indices",
+      "maximum_distance_factor",
+      "minimum_angle_factor",
+      "max_cn",
+      "min_cn",
+      "only_symbols",
+      "valences",
+      "additional_conditions",
+      "info",
+      "timelimit",
+      "initial_structure_environments",
+      "get_from_hints",
+      "voronoi_normalized_distance_tolerance",
+      "voronoi_normalized_angle_tolerance",
+      "voronoi_distance_cutoff",
+      "recompute",
+      "optimization"
+    ],
+    "compute_coordination_environments": [
+      "self",
+      "structure",
+      "indices",
+      "only_cations",
+      "strategy",
+      "valences",
+      "initial_structure_environments"
+    ],
+    "update_nb_set_environments": [
+      "self",
+      "se",
+      "isite",
+      "cn",
+      "inb_set",
+      "nb_set",
+      "recompute",
+      "optimization"
+    ],
+    "setup_local_geometry": [
+      "self",
+      "isite",
+      "coords",
+      "optimization"
+    ],
+    "setup_test_perfect_environment": [
+      "self",
+      "symbol",
+      "randomness",
+      "max_random_dist",
+      "symbol_type",
+      "indices",
+      "random_translation",
+      "random_rotation",
+      "random_scale",
+      "points"
+    ],
+    "setup_random_structure": [
+      "self",
+      "coordination"
+    ],
+    "setup_random_indices_local_geometry": [
+      "self",
+      "coordination"
+    ],
+    "setup_ordered_indices_local_geometry": [
+      "self",
+      "coordination"
+    ],
+    "setup_explicit_indices_local_geometry": [
+      "self",
+      "explicit_indices"
+    ],
+    "get_coordination_symmetry_measures": [
+      "self",
+      "only_minimum",
+      "all_csms",
+      "optimization"
+    ],
+    "_update_results_all_csms": [
+      "self",
+      "result_dict",
+      "permutations",
+      "imin",
+      "geometry"
+    ],
+    "get_coordination_symmetry_measures_optim": [
+      "self",
+      "only_minimum",
+      "all_csms",
+      "nb_set",
+      "optimization"
+    ],
+    "coordination_geometry_symmetry_measures": [
+      "self",
+      "coordination_geometry",
+      "tested_permutations",
+      "points_perfect",
+      "optimization"
+    ],
+    "coordination_geometry_symmetry_measures_sepplane_optim": [
+      "self",
+      "coordination_geometry",
+      "points_perfect",
+      "nb_set",
+      "optimization"
+    ],
+    "coordination_geometry_symmetry_measures_standard": [
+      "self",
+      "coordination_geometry",
+      "algo",
+      "points_perfect",
+      "optimization"
+    ],
+    "coordination_geometry_symmetry_measures_separation_plane": [
+      "self",
+      "coordination_geometry",
+      "separation_plane_algo",
+      "testing",
+      "tested_permutations",
+      "points_perfect"
+    ],
+    "coordination_geometry_symmetry_measures_separation_plane_optim": [
+      "self",
+      "coordination_geometry",
+      "separation_plane_algo",
+      "points_perfect",
+      "nb_set",
+      "optimization"
+    ],
+    "_cg_csm_separation_plane": [
+      "self",
+      "coordination_geometry",
+      "sep_plane",
+      "local_plane",
+      "plane_separations",
+      "dist_tolerances",
+      "testing",
+      "tested_permutations",
+      "points_perfect"
+    ],
+    "_cg_csm_separation_plane_optim1": [
+      "self",
+      "coordination_geometry",
+      "sepplane",
+      "local_plane",
+      "points_perfect",
+      "separation_indices"
+    ],
+    "_cg_csm_separation_plane_optim2": [
+      "self",
+      "coordination_geometry",
+      "sepplane",
+      "local_plane",
+      "points_perfect",
+      "separation_indices"
+    ],
+    "coordination_geometry_symmetry_measures_fallback_random": [
+      "self",
+      "coordination_geometry",
+      "n_random",
+      "points_perfect"
+    ]
+  },
+  "get_delta": [
+    "node1",
+    "node2",
+    "edge_data"
+  ],
+  "get_all_simple_paths_edges": [
+    "graph",
+    "source",
+    "target",
+    "cutoff",
+    "data"
+  ],
+  "_c2index_isreverse": [
+    "c1",
+    "c2"
+  ],
+  "SimpleGraphCycle": {
+    "__init__": [
+      "self",
+      "nodes",
+      "validate",
+      "ordered"
+    ],
+    "_is_valid": [
+      "self",
+      "check_strict_ordering"
+    ],
+    "validate": [
+      "self",
+      "check_strict_ordering"
+    ],
+    "order": [
+      "self",
+      "raise_on_fail"
+    ],
+    "__hash__": [
+      "self"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "from_edges": [
+      "cls",
+      "edges",
+      "edges_are_ordered"
+    ],
+    "as_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "dct",
+      "validate"
+    ]
+  },
+  "MultiGraphCycle": {
+    "__init__": [
+      "self",
+      "nodes",
+      "edge_indices",
+      "validate",
+      "ordered"
+    ],
+    "_is_valid": [
+      "self",
+      "check_strict_ordering"
+    ],
+    "validate": [
+      "self",
+      "check_strict_ordering"
+    ],
+    "order": [
+      "self",
+      "raise_on_fail"
+    ],
+    "__hash__": [
+      "self"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ]
+  },
+  "get_all_elementary_cycles": [
+    "graph"
+  ],
+  "AbstractRatioFunction": {
+    "__init__": [
+      "self",
+      "function",
+      "options_dict"
+    ],
+    "setup_parameters": [
+      "self",
+      "options_dict"
+    ],
+    "evaluate": [
+      "self",
+      "value"
+    ],
+    "from_dict": [
+      "cls",
+      "dct"
+    ]
+  },
+  "RatioFunction": {
+    "power2_decreasing_exp": [
+      "self",
+      "vals"
+    ],
+    "smootherstep": [
+      "self",
+      "vals"
+    ],
+    "smoothstep": [
+      "self",
+      "vals"
+    ],
+    "inverse_smootherstep": [
+      "self",
+      "vals"
+    ],
+    "inverse_smoothstep": [
+      "self",
+      "vals"
+    ],
+    "power2_inverse_decreasing": [
+      "self",
+      "vals"
+    ],
+    "power2_inverse_power2_decreasing": [
+      "self",
+      "vals"
+    ]
+  },
+  "CSMFiniteRatioFunction": {
+    "power2_decreasing_exp": [
+      "self",
+      "vals"
+    ],
+    "smootherstep": [
+      "self",
+      "vals"
+    ],
+    "smoothstep": [
+      "self",
+      "vals"
+    ],
+    "fractions": [
+      "self",
+      "data"
+    ],
+    "mean_estimator": [
+      "self",
+      "data"
+    ],
+    "ratios": []
+  },
+  "CSMInfiniteRatioFunction": {
+    "power2_inverse_decreasing": [
+      "self",
+      "vals"
+    ],
+    "power2_inverse_power2_decreasing": [
+      "self",
+      "vals"
+    ],
+    "fractions": [
+      "self",
+      "data"
+    ],
+    "mean_estimator": [
+      "self",
+      "data"
+    ],
+    "ratios": []
+  },
+  "DeltaCSMRatioFunction": {
+    "smootherstep": [
+      "self",
+      "vals"
+    ]
+  },
+  "AbstractChemenvError": {
+    "__init__": [
+      "self",
+      "cls",
+      "method",
+      "msg"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "NeighborsNotComputedChemenvError": {
+    "__init__": [
+      "self",
+      "site"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "EquivalentSiteSearchError": {
+    "__init__": [
+      "self",
+      "site"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "SolidAngleError": {
+    "__init__": [
+      "self",
+      "cosinus"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "ChemenvError": {
+    "__init__": [
+      "self",
+      "cls",
+      "method",
+      "msg"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "get_lower_and_upper_f": [
+    "surface_calculation_options"
+  ],
+  "function_comparison": [
+    "f1",
+    "f2",
+    "x1",
+    "x2",
+    "numpoints_check"
+  ],
+  "quarter_ellipsis_functions": [
+    "xx",
+    "yy"
+  ],
+  "spline_functions": [
+    "lower_points",
+    "upper_points",
+    "degree"
+  ],
+  "diamond_functions": [
+    "xx",
+    "yy",
+    "y_x0",
+    "x_y0"
+  ],
+  "rectangle_surface_intersection": [
+    "rectangle",
+    "f_lower",
+    "f_upper",
+    "bounds_lower",
+    "bounds_upper",
+    "check",
+    "numpoints_check"
+  ],
+  "solid_angle": [
+    "center",
+    "coords"
+  ],
+  "vectorsToMatrix": [
+    "aa",
+    "bb"
+  ],
+  "matrixTimesVector": [
+    "MM",
+    "aa"
+  ],
+  "rotateCoords": [
+    "coords",
+    "R"
+  ],
+  "rotateCoordsOpt": [
+    "coords",
+    "R"
+  ],
+  "changebasis": [
+    "uu",
+    "vv",
+    "nn",
+    "pps"
+  ],
+  "collinear": [
+    "p1",
+    "p2",
+    "p3",
+    "tolerance"
+  ],
+  "anticlockwise_sort": [
+    "pps"
+  ],
+  "anticlockwise_sort_indices": [
+    "pps"
+  ],
+  "sort_separation": [
+    "separation"
+  ],
+  "sort_separation_tuple": [
+    "separation"
+  ],
+  "separation_in_list": [
+    "separation_indices",
+    "separation_indices_list"
+  ],
+  "is_anion_cation_bond": [
+    "valences",
+    "ii",
+    "jj"
+  ],
+  "Plane": {
+    "TEST_2D_POINTS": [],
+    "__init__": [
+      "self",
+      "coefficients",
+      "p1",
+      "p2",
+      "p3"
+    ],
+    "init_3points": [
+      "self",
+      "non_zeros",
+      "zeros"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "is_in_plane": [
+      "self",
+      "pp",
+      "dist_tolerance"
+    ],
+    "is_same_plane_as": [
+      "self",
+      "plane"
+    ],
+    "is_in_list": [
+      "self",
+      "plane_list"
+    ],
+    "indices_separate": [
+      "self",
+      "points",
+      "dist_tolerance"
+    ],
+    "distance_to_point": [
+      "self",
+      "point"
+    ],
+    "distances": [
+      "self",
+      "points"
+    ],
+    "distances_indices_sorted": [
+      "self",
+      "points",
+      "sign"
+    ],
+    "distances_indices_groups": [
+      "self",
+      "points",
+      "delta",
+      "delta_factor",
+      "sign"
+    ],
+    "projectionpoints": [
+      "self",
+      "pps"
+    ],
+    "orthonormal_vectors": [
+      "self"
+    ],
+    "project_and_to2dim_ordered_indices": [
+      "self",
+      "pps",
+      "plane_center"
+    ],
+    "project_and_to2dim": [
+      "self",
+      "pps",
+      "plane_center"
+    ],
+    "fit_error": [
+      "self",
+      "points",
+      "fit"
+    ],
+    "fit_least_square_distance_error": [
+      "self",
+      "points"
+    ],
+    "fit_maximum_distance_error": [
+      "self",
+      "points"
+    ],
+    "coefficients": [
+      "self"
+    ],
+    "abcd": [
+      "self"
+    ],
+    "a": [
+      "self"
+    ],
+    "b": [
+      "self"
+    ],
+    "c": [
+      "self"
+    ],
+    "d": [
+      "self"
+    ],
+    "distance_to_origin": [
+      "self"
+    ],
+    "crosses_origin": [
+      "self"
+    ],
+    "from_2points_and_origin": [
+      "cls",
+      "p1",
+      "p2"
+    ],
+    "from_3points": [
+      "cls",
+      "p1",
+      "p2",
+      "p3"
+    ],
+    "from_npoints": [
+      "cls",
+      "points",
+      "best_fit"
+    ],
+    "from_npoints_least_square_distance": [
+      "cls",
+      "points"
+    ],
+    "perpendicular_bisector": [
+      "cls",
+      "p1",
+      "p2"
+    ],
+    "from_npoints_maximum_distance": [
+      "cls",
+      "points"
+    ],
+    "from_coefficients": [
+      "cls",
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "AdditionalConditions": {
+    "NO_ADDITIONAL_CONDITION": [],
+    "ONLY_ANION_CATION_BONDS": [],
+    "NO_ELEMENT_TO_SAME_ELEMENT_BONDS": [],
+    "ONLY_ANION_CATION_BONDS_AND_NO_ELEMENT_TO_SAME_ELEMENT_BONDS": [],
+    "ONLY_ELEMENT_TO_OXYGEN_BONDS": [],
+    "NONE": [],
+    "NO_AC": [],
+    "ONLY_ACB": [],
+    "NO_E2SEB": [],
+    "ONLY_ACB_AND_NO_E2SEB": [],
+    "ONLY_E2OB": [],
+    "ALL": [],
+    "check_condition": [
+      "self",
+      "condition",
+      "structure",
+      "parameters"
+    ]
+  },
+  "_append_es2sequences": [
+    "sequences",
+    "es"
+  ],
+  "_cartesian_product": [
+    "lists"
+  ],
+  "prime_factors": [
+    "n"
+  ],
+  "_factor_generator": [
+    "n"
+  ],
+  "divisors": [
+    "n"
+  ],
+  "get_center_of_arc": [
+    "p1",
+    "p2",
+    "radius"
+  ],
+  "get_linearly_independent_vectors": [
+    "vectors"
+  ],
+  "scale_and_clamp": [
+    "xx",
+    "edge0",
+    "edge1",
+    "clamp0",
+    "clamp1"
+  ],
+  "normal_cdf_step": [
+    "xx",
+    "mean",
+    "scale"
+  ],
+  "smoothstep": [
+    "xx",
+    "edges",
+    "inverse"
+  ],
+  "smootherstep": [
+    "xx",
+    "edges",
+    "inverse"
+  ],
+  "cosinus_step": [
+    "xx",
+    "edges",
+    "inverse"
+  ],
+  "power3_step": [
+    "xx",
+    "edges",
+    "inverse"
+  ],
+  "powern_parts_step": [
+    "xx",
+    "edges",
+    "inverse",
+    "nn"
+  ],
+  "powern_decreasing": [
+    "xx",
+    "edges",
+    "nn"
+  ],
+  "power2_decreasing_exp": [
+    "xx",
+    "edges",
+    "alpha"
+  ],
+  "power2_tangent_decreasing": [
+    "xx",
+    "edges",
+    "prefactor"
+  ],
+  "power2_inverse_decreasing": [
+    "xx",
+    "edges",
+    "prefactor"
+  ],
+  "power2_inverse_power2_decreasing": [
+    "xx",
+    "edges",
+    "prefactor"
+  ],
+  "power2_inverse_powern_decreasing": [
+    "xx",
+    "edges",
+    "prefactor",
+    "powern"
+  ],
+  "ChemEnvConfig": {
+    "__init__": [
+      "self",
+      "package_options"
+    ],
+    "setup": [
+      "self"
+    ],
+    "has_materials_project_access": [
+      "self"
+    ],
+    "setup_package_options": [
+      "self"
+    ],
+    "package_options_description": [
+      "self"
+    ],
+    "save": [
+      "self",
+      "root_dir"
+    ],
+    "auto_load": [
+      "cls",
+      "root_dir"
+    ]
+  },
+  "draw_cg": [
+    "vis",
+    "site",
+    "neighbors",
+    "cg",
+    "perm",
+    "perfect2local_map",
+    "show_perfect",
+    "csm_info",
+    "symmetry_measure_type",
+    "perfect_radius",
+    "show_distorted",
+    "faces_color_override"
+  ],
+  "visualize": [
+    "cg",
+    "zoom",
+    "vis",
+    "factor",
+    "view_index",
+    "faces_color_override"
+  ],
+  "compute_environments": [
+    "chemenv_configuration"
+  ],
+  "ConnectivityFinder": {
+    "__init__": [
+      "self",
+      "multiple_environments_choice"
+    ],
+    "get_structure_connectivity": [
+      "self",
+      "light_structure_environments"
+    ],
+    "setup_parameters": [
+      "self",
+      "multiple_environments_choice"
+    ]
+  },
+  "AbstractEnvironmentNode": {
+    "COORDINATION_ENVIRONMENT": [],
+    "NUMBER_OF_NEIGHBORING_COORDINATION_ENVIRONMENTS": [],
+    "NUMBER_OF_NEIGHBORING_CES": [],
+    "NEIGHBORING_COORDINATION_ENVIRONMENTS": [],
+    "NEIGHBORING_CES": [],
+    "NUMBER_OF_LIGANDS_FOR_EACH_NEIGHBORING_COORDINATION_ENVIRONMENT": [],
+    "NUMBER_OF_LIGANDS_FOR_EACH_NEIGHBORING_CE": [],
+    "LIGANDS_ARRANGEMENT": [],
+    "NEIGHBORS_LIGANDS_ARRANGEMENT": [],
+    "ATOM": [],
+    "CE_NNBCES_NBCES_LIGANDS": [],
+    "DEFAULT_EXTENSIONS": [],
+    "__init__": [
+      "self",
+      "central_site",
+      "i_central_site"
+    ],
+    "isite": [
+      "self"
+    ],
+    "__hash__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__lt__": [
+      "self",
+      "other"
+    ],
+    "everything_equal": [
+      "self",
+      "other"
+    ],
+    "coordination_environment": [
+      "self"
+    ],
+    "ce": [
+      "self"
+    ],
+    "mp_symbol": [
+      "self"
+    ],
+    "ce_symbol": [
+      "self"
+    ],
+    "atom_symbol": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "EnvironmentNode": {
+    "__init__": [
+      "self",
+      "central_site",
+      "i_central_site",
+      "ce_symbol"
+    ],
+    "coordination_environment": [
+      "self"
+    ],
+    "everything_equal": [
+      "self",
+      "other"
+    ]
+  },
+  "get_environment_node": [
+    "central_site",
+    "i_central_site",
+    "ce_symbol"
+  ],
+  "get_delta_image": [
+    "isite1",
+    "isite2",
+    "data1",
+    "data2"
+  ],
+  "StructureConnectivity": {
+    "__init__": [
+      "self",
+      "light_structure_environment",
+      "connectivity_graph",
+      "environment_subgraphs"
+    ],
+    "environment_subgraph": [
+      "self",
+      "environments_symbols",
+      "only_atoms"
+    ],
+    "add_sites": [
+      "self"
+    ],
+    "add_bonds": [
+      "self",
+      "isite",
+      "site_neighbors_set"
+    ],
+    "setup_environment_subgraph": [
+      "self",
+      "environments_symbols",
+      "only_atoms"
+    ],
+    "setup_connectivity_description": [
+      "self"
+    ],
+    "get_connected_components": [
+      "self",
+      "environments_symbols",
+      "only_atoms"
+    ],
+    "setup_atom_environment_subgraph": [
+      "self",
+      "atom_environment"
+    ],
+    "setup_environments_subgraph": [
+      "self",
+      "environments_symbols"
+    ],
+    "setup_atom_environments_subgraph": [
+      "self",
+      "atoms_environments"
+    ],
+    "print_links": [
+      "self"
+    ],
+    "as_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "dct"
+    ]
+  },
+  "draw_network": [
+    "env_graph",
+    "pos",
+    "ax",
+    "sg",
+    "periodicity_vectors"
+  ],
+  "make_supergraph": [
+    "graph",
+    "multiplicity",
+    "periodicity_vectors"
+  ],
+  "ConnectedComponent": {
+    "__init__": [
+      "self",
+      "environments",
+      "links",
+      "environments_data",
+      "links_data",
+      "graph"
+    ],
+    "coordination_sequence": [
+      "self",
+      "source_node",
+      "path_size",
+      "coordination",
+      "include_source"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "compute_periodicity": [
+      "self",
+      "algorithm"
+    ],
+    "compute_periodicity_all_simple_paths_algorithm": [
+      "self"
+    ],
+    "compute_periodicity_cycle_basis": [
+      "self"
+    ],
+    "make_supergraph": [
+      "self",
+      "multiplicity"
+    ],
+    "show_graph": [
+      "self",
+      "graph",
+      "save_file",
+      "drawing_type"
+    ],
+    "graph": [
+      "self"
+    ],
+    "is_periodic": [
+      "self"
+    ],
+    "is_0d": [
+      "self"
+    ],
+    "is_1d": [
+      "self"
+    ],
+    "is_2d": [
+      "self"
+    ],
+    "is_3d": [
+      "self"
+    ],
+    "_order_vectors": [
+      "vectors"
+    ],
+    "_order_periodicity_vectors": [
+      "self"
+    ],
+    "periodicity_vectors": [
+      "self"
+    ],
+    "periodicity": [
+      "self"
+    ],
+    "elastic_centered_graph": [
+      "self",
+      "start_node"
+    ],
+    "_edge_key_to_edge_dict_key": [
+      "key"
+    ],
+    "_edgedictkey_to_edgekey": [
+      "key"
+    ],
+    "_retuplify_edgedata": [
+      "edata"
+    ],
+    "as_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "dct"
+    ],
+    "from_graph": [
+      "cls",
+      "g"
+    ],
+    "description": [
+      "self",
+      "full"
+    ]
+  },
+  "CoherentInterfaceBuilder": {
+    "__init__": [
+      "self",
+      "substrate_structure",
+      "film_structure",
+      "film_miller",
+      "substrate_miller",
+      "zslgen",
+      "termination_ftol",
+      "label_index",
+      "filter_out_sym_slabs"
+    ],
+    "_find_matches": [
+      "self"
+    ],
+    "_find_terminations": [
+      "self"
+    ],
+    "get_interfaces": [
+      "self",
+      "termination",
+      "gap",
+      "vacuum_over_film",
+      "film_thickness",
+      "substrate_thickness",
+      "in_layers"
+    ]
+  },
+  "get_rot_3d_for_2d": [
+    "film_matrix",
+    "sub_matrix"
+  ],
+  "get_2d_transform": [
+    "start",
+    "end"
+  ],
+  "from_2d_to_3d": [
+    "mat"
+  ],
+  "ZSLMatch": {
+    "match_area": [
+      "self"
+    ],
+    "match_transformation": [
+      "self"
+    ]
+  },
+  "ZSLGenerator": {
+    "__init__": [
+      "self",
+      "max_area_ratio_tol",
+      "max_area",
+      "max_length_tol",
+      "max_angle_tol",
+      "bidirectional"
+    ],
+    "generate_sl_transformation_sets": [
+      "self",
+      "film_area",
+      "substrate_area"
+    ],
+    "get_equiv_transformations": [
+      "self",
+      "transformation_sets",
+      "film_vectors",
+      "substrate_vectors"
+    ],
+    "__call__": [
+      "self",
+      "film_vectors",
+      "substrate_vectors",
+      "lowest"
+    ]
+  },
+  "gen_sl_transform_matrices": [
+    "area_multiple"
+  ],
+  "rel_strain": [
+    "vec1",
+    "vec2"
+  ],
+  "rel_angle": [
+    "vec_set1",
+    "vec_set2"
+  ],
+  "fast_norm": [
+    "a"
+  ],
+  "vec_angle": [
+    "a",
+    "b"
+  ],
+  "vec_area": [
+    "a",
+    "b"
+  ],
+  "reduce_vectors": [
+    "a",
+    "b"
+  ],
+  "get_factors": [
+    "n"
+  ],
+  "_unidirectional_is_same_vectors": [
+    "vec_set1",
+    "vec_set2",
+    "max_length_tol",
+    "max_angle_tol"
+  ],
+  "_bidirectional_same_vectors": [
+    "vec_set1",
+    "vec_set2",
+    "max_length_tol",
+    "max_angle_tol"
+  ],
+  "is_same_vectors": [
+    "vec_set1",
+    "vec_set2",
+    "bidirectional",
+    "max_length_tol",
+    "max_angle_tol"
+  ],
+  "SubstrateMatch": {
+    "from_zsl": [
+      "cls",
+      "match",
+      "film",
+      "film_miller",
+      "substrate_miller",
+      "elasticity_tensor",
+      "ground_state_energy"
+    ],
+    "total_energy": [
+      "self"
+    ]
+  },
+  "SubstrateAnalyzer": {
+    "__init__": [
+      "self",
+      "film_max_miller",
+      "substrate_max_miller"
+    ],
+    "generate_surface_vectors": [
+      "self",
+      "film",
+      "substrate",
+      "film_millers",
+      "substrate_millers"
+    ],
+    "calculate": [
+      "self",
+      "film",
+      "substrate",
+      "elasticity_tensor",
+      "film_millers",
+      "substrate_millers",
+      "ground_state_energy",
+      "lowest"
+    ]
+  },
+  "zval_dict_from_potcar": [
+    "potcar"
+  ],
+  "calc_ionic": [
+    "site",
+    "structure",
+    "zval"
+  ],
+  "get_total_ionic_dipole": [
+    "structure",
+    "zval_dict"
+  ],
+  "get_nearest_site": [
+    "struct",
+    "coords",
+    "site",
+    "r"
+  ],
+  "Polarization": {
+    "__init__": [
+      "self",
+      "p_elecs",
+      "p_ions",
+      "structures",
+      "p_elecs_in_cartesian",
+      "p_ions_in_cartesian"
+    ],
+    "from_outcars_and_structures": [
+      "cls",
+      "outcars",
+      "structures",
+      "calc_ionic_from_zval"
+    ],
+    "get_pelecs_and_pions": [
+      "self",
+      "convert_to_muC_per_cm2"
+    ],
+    "get_same_branch_polarization_data": [
+      "self",
+      "convert_to_muC_per_cm2",
+      "all_in_polar"
+    ],
+    "get_lattice_quanta": [
+      "self",
+      "convert_to_muC_per_cm2",
+      "all_in_polar"
+    ],
+    "get_polarization_change": [
+      "self",
+      "convert_to_muC_per_cm2",
+      "all_in_polar"
+    ],
+    "get_polarization_change_norm": [
+      "self",
+      "convert_to_muC_per_cm2",
+      "all_in_polar"
+    ],
+    "same_branch_splines": [
+      "self",
+      "convert_to_muC_per_cm2",
+      "all_in_polar"
+    ],
+    "max_spline_jumps": [
+      "self",
+      "convert_to_muC_per_cm2",
+      "all_in_polar"
+    ],
+    "smoothness": [
+      "self",
+      "convert_to_muC_per_cm2",
+      "all_in_polar"
+    ]
+  },
+  "EnergyTrend": {
+    "__init__": [
+      "self",
+      "energies"
+    ],
+    "spline": [
+      "self"
+    ],
+    "smoothness": [
+      "self"
+    ],
+    "max_spline_jump": [
+      "self"
+    ],
+    "endpoints_minima": [
+      "self",
+      "slope_cutoff"
+    ]
+  },
+  "NDCalculator": {
+    "__init__": [
+      "self",
+      "wavelength",
+      "symprec",
+      "debye_waller_factors"
+    ],
+    "get_pattern": [
+      "self",
+      "structure",
+      "scaled",
+      "two_theta_range"
+    ]
+  },
+  "DiffractionPattern": {
+    "XLABEL": [],
+    "YLABEL": [],
+    "__init__": [
+      "self",
+      "x",
+      "y",
+      "hkls",
+      "d_hkls"
+    ]
+  },
+  "AbstractDiffractionPatternCalculator": {
+    "TWO_THETA_TOL": [],
+    "SCALED_INTENSITY_TOL": [],
+    "get_pattern": [
+      "self",
+      "structure",
+      "scaled",
+      "two_theta_range"
+    ],
+    "get_plot": [
+      "self",
+      "structure",
+      "two_theta_range",
+      "annotate_peaks",
+      "ax",
+      "with_labels",
+      "fontsize"
+    ],
+    "show_plot": [
+      "self",
+      "structure"
+    ],
+    "plot_structures": [
+      "self",
+      "structures",
+      "fontsize"
+    ]
+  },
+  "get_unique_families": [
+    "hkls"
+  ],
+  "TEMCalculator": {
+    "__init__": [
+      "self",
+      "symprec",
+      "voltage",
+      "beam_direction",
+      "camera_length",
+      "debye_waller_factors",
+      "cs"
+    ],
+    "wavelength_rel": [
+      "self"
+    ],
+    "generate_points": [
+      "coord_left",
+      "coord_right"
+    ],
+    "zone_axis_filter": [
+      "self",
+      "points",
+      "laue_zone"
+    ],
+    "get_interplanar_spacings": [
+      "self",
+      "structure",
+      "points"
+    ],
+    "bragg_angles": [
+      "self",
+      "interplanar_spacings"
+    ],
+    "get_s2": [
+      "self",
+      "bragg_angles"
+    ],
+    "x_ray_factors": [
+      "self",
+      "structure",
+      "bragg_angles"
+    ],
+    "electron_scattering_factors": [
+      "self",
+      "structure",
+      "bragg_angles"
+    ],
+    "cell_scattering_factors": [
+      "self",
+      "structure",
+      "bragg_angles"
+    ],
+    "cell_intensity": [
+      "self",
+      "structure",
+      "bragg_angles"
+    ],
+    "get_pattern": [
+      "self",
+      "structure",
+      "scaled",
+      "two_theta_range"
+    ],
+    "normalized_cell_intensity": [
+      "self",
+      "structure",
+      "bragg_angles"
+    ],
+    "is_parallel": [
+      "self",
+      "structure",
+      "plane",
+      "other_plane"
+    ],
+    "get_first_point": [
+      "self",
+      "structure",
+      "points"
+    ],
+    "get_interplanar_angle": [
+      "structure",
+      "p1",
+      "p2"
+    ],
+    "get_plot_coeffs": [
+      "p1",
+      "p2",
+      "p3"
+    ],
+    "get_positions": [
+      "self",
+      "structure",
+      "points"
+    ],
+    "tem_dots": [
+      "self",
+      "structure",
+      "points"
+    ],
+    "get_plot_2d": [
+      "self",
+      "structure"
+    ],
+    "get_plot_2d_concise": [
+      "self",
+      "structure"
+    ]
+  },
+  "WAVELENGTHS": [],
+  "XRDCalculator": {
+    "AVAILABLE_RADIATION": [],
+    "__init__": [
+      "self",
+      "wavelength",
+      "symprec",
+      "debye_waller_factors"
+    ],
+    "get_pattern": [
+      "self",
+      "structure",
+      "scaled",
+      "two_theta_range"
+    ]
+  },
+  "eV_to_recip_cm": [],
+  "get_dir_indir_gap": [
+    "run"
+  ],
+  "to_matrix": [
+    "xx",
+    "yy",
+    "zz",
+    "xy",
+    "yz",
+    "xz"
+  ],
+  "parse_dielectric_data": [
+    "data"
+  ],
+  "absorption_coefficient": [
+    "dielectric"
+  ],
+  "optics": [
+    "path"
+  ],
+  "slme": [
+    "material_energy_for_absorbance_data",
+    "material_absorbance_data",
+    "material_direct_allowed_gap",
+    "material_indirect_gap",
+    "thickness",
+    "temperature",
+    "absorbance_in_inverse_centimeters",
+    "cut_off_absorbance_below_direct_allowed_gap",
+    "plot_current_voltage"
+  ],
+  "quick_view": [
+    "structure",
+    "bonds",
+    "conventional",
+    "transform",
+    "show_box",
+    "bond_tol",
+    "stick_radius"
+  ],
+  "SpectrumPlotter": {
+    "__init__": [
+      "self",
+      "xshift",
+      "yshift",
+      "stack",
+      "color_cycle"
+    ],
+    "add_spectrum": [
+      "self",
+      "label",
+      "spectrum",
+      "color"
+    ],
+    "add_spectra": [
+      "self",
+      "spectra_dict",
+      "key_sort_func"
+    ],
+    "get_plot": [
+      "self",
+      "xlim",
+      "ylim"
+    ],
+    "save_plot": [
+      "self",
+      "filename"
+    ],
+    "show": [
+      "self"
+    ]
+  },
+  "EL_COLORS": [],
+  "StructureVis": {
+    "__init__": [
+      "self",
+      "element_color_mapping",
+      "show_unit_cell",
+      "show_bonds",
+      "show_polyhedron",
+      "poly_radii_tol_factor",
+      "excluded_bonding_elements"
+    ],
+    "rotate_view": [
+      "self",
+      "axis_ind",
+      "angle"
+    ],
+    "write_image": [
+      "self",
+      "filename",
+      "magnification",
+      "image_format"
+    ],
+    "redraw": [
+      "self",
+      "reset_camera"
+    ],
+    "orthogonalize_structure": [
+      "self"
+    ],
+    "display_help": [
+      "self"
+    ],
+    "set_structure": [
+      "self",
+      "structure",
+      "reset_camera",
+      "to_unit_cell"
+    ],
+    "zoom": [
+      "self",
+      "factor"
+    ],
+    "show": [
+      "self"
+    ],
+    "add_site": [
+      "self",
+      "site"
+    ],
+    "add_partial_sphere": [
+      "self",
+      "coords",
+      "radius",
+      "color",
+      "start",
+      "end",
+      "opacity"
+    ],
+    "add_text": [
+      "self",
+      "coords",
+      "text",
+      "color"
+    ],
+    "add_line": [
+      "self",
+      "start",
+      "end",
+      "color",
+      "width"
+    ],
+    "add_polyhedron": [
+      "self",
+      "neighbors",
+      "center",
+      "color",
+      "opacity",
+      "draw_edges",
+      "edges_color",
+      "edges_linewidth"
+    ],
+    "add_triangle": [
+      "self",
+      "neighbors",
+      "color",
+      "center",
+      "opacity",
+      "draw_edges",
+      "edges_color",
+      "edges_linewidth"
+    ],
+    "add_faces": [
+      "self",
+      "faces",
+      "color",
+      "opacity"
+    ],
+    "add_edges": [
+      "self",
+      "edges",
+      "type",
+      "linewidth",
+      "color"
+    ],
+    "add_bonds": [
+      "self",
+      "neighbors",
+      "center",
+      "color",
+      "opacity",
+      "radius"
+    ],
+    "add_picker_fixed": [
+      "self"
+    ],
+    "add_picker": [
+      "self"
+    ]
+  },
+  "StructureInteractorStyle": {
+    "__init__": [
+      "self",
+      "parent"
+    ],
+    "leftButtonPressEvent": [
+      "self",
+      "obj",
+      "event"
+    ],
+    "mouseMoveEvent": [
+      "self",
+      "obj",
+      "event"
+    ],
+    "leftButtonReleaseEvent": [
+      "self",
+      "obj",
+      "event"
+    ],
+    "keyPressEvent": [
+      "self",
+      "obj",
+      "_event"
+    ]
+  },
+  "make_movie": [
+    "structures",
+    "output_filename",
+    "zoom",
+    "fps",
+    "bitrate",
+    "quality"
+  ],
+  "MultiStructuresVis": {
+    "__init__": [
+      "self",
+      "element_color_mapping",
+      "show_unit_cell",
+      "show_bonds",
+      "show_polyhedron",
+      "poly_radii_tol_factor",
+      "excluded_bonding_elements",
+      "animated_movie_options"
+    ],
+    "set_structures": [
+      "self",
+      "structures",
+      "tags"
+    ],
+    "set_structure": [
+      "self",
+      "structure",
+      "reset_camera",
+      "to_unit_cell"
+    ],
+    "apply_tags": [
+      "self"
+    ],
+    "set_animated_movie_options": [
+      "self",
+      "animated_movie_options"
+    ],
+    "display_help": [
+      "self"
+    ],
+    "display_warning": [
+      "self",
+      "warning"
+    ],
+    "erase_warning": [
+      "self"
+    ],
+    "display_info": [
+      "self",
+      "info"
+    ],
+    "erase_info": [
+      "self"
+    ]
+  },
+  "MultiStructuresInteractorStyle": {
+    "__init__": [
+      "self",
+      "parent"
+    ],
+    "keyPressEvent": [
+      "self",
+      "obj",
+      "event"
+    ]
+  },
+  "_lazy_func": [
+    "module_name",
+    "func_name"
+  ],
+  "parse_view": [
+    "args"
+  ],
+  "diff_incar": [
+    "args"
+  ],
+  "main": [
+    "argv"
+  ],
+  "convert_fmt": [
+    "args"
+  ],
+  "analyze_symmetry": [
+    "args"
+  ],
+  "analyze_localenv": [
+    "args"
+  ],
+  "compare_structures": [
+    "args"
+  ],
+  "analyze_structures": [
+    "args"
+  ],
+  "proc_dir": [
+    "dirname",
+    "proc_file_function"
+  ],
+  "gen_potcar": [
+    "dirname",
+    "filename"
+  ],
+  "generate_potcar": [
+    "args"
+  ],
+  "setup_cp2k_data": [
+    "cp2k_data_dirs"
+  ],
+  "setup_potcars": [
+    "potcar_dirs"
+  ],
+  "build_enum": [
+    "fortran_command"
+  ],
+  "build_bader": [
+    "fortran_command"
+  ],
+  "install_software": [
+    "install"
+  ],
+  "add_config_var": [
+    "tokens",
+    "backup_suffix"
+  ],
+  "configure_pmg": [
+    "args"
+  ],
+  "get_dos_plot": [
+    "args"
+  ],
+  "get_chgint_plot": [
+    "args",
+    "ax"
+  ],
+  "get_xrd_plot": [
+    "args"
+  ],
+  "plot": [
+    "args"
+  ],
+  "get_energies": [
+    "rootdir",
+    "reanalyze",
+    "verbose",
+    "quick",
+    "sort",
+    "fmt"
+  ],
+  "get_magnetizations": [
+    "dirc",
+    "ion_list"
+  ],
+  "analyze": [
+    "args"
+  ],
+  "InsertionElectrode": {
+    "from_entries": [
+      "cls",
+      "entries",
+      "working_ion_entry",
+      "strip_structures"
+    ],
+    "get_stable_entries": [
+      "self",
+      "charge_to_discharge"
+    ],
+    "get_unstable_entries": [
+      "self",
+      "charge_to_discharge"
+    ],
+    "get_all_entries": [
+      "self",
+      "charge_to_discharge"
+    ],
+    "fully_charged_entry": [
+      "self"
+    ],
+    "fully_discharged_entry": [
+      "self"
+    ],
+    "get_max_instability": [
+      "self",
+      "min_voltage",
+      "max_voltage"
+    ],
+    "get_min_instability": [
+      "self",
+      "min_voltage",
+      "max_voltage"
+    ],
+    "get_max_muO2": [
+      "self",
+      "min_voltage",
+      "max_voltage"
+    ],
+    "get_min_muO2": [
+      "self",
+      "min_voltage",
+      "max_voltage"
+    ],
+    "get_sub_electrodes": [
+      "self",
+      "adjacent_only",
+      "include_myself"
+    ],
+    "get_summary_dict": [
+      "self",
+      "print_subelectrodes"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "from_dict_legacy": [
+      "cls",
+      "dct"
+    ],
+    "as_dict_legacy": [
+      "self"
+    ]
+  },
+  "InsertionVoltagePair": {
+    "from_entries": [
+      "cls",
+      "entry1",
+      "entry2",
+      "working_ion_entry"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ConversionElectrode": {
+    "initial_comp": [
+      "self"
+    ],
+    "from_composition_and_pd": [
+      "cls",
+      "comp",
+      "pd",
+      "working_ion_symbol",
+      "allow_unstable"
+    ],
+    "from_composition_and_entries": [
+      "cls",
+      "comp",
+      "entries_in_chemsys",
+      "working_ion_symbol",
+      "allow_unstable"
+    ],
+    "get_sub_electrodes": [
+      "self",
+      "adjacent_only"
+    ],
+    "is_super_electrode": [
+      "self",
+      "conversion_electrode"
+    ],
+    "__eq__": [
+      "self",
+      "conversion_electrode"
+    ],
+    "__hash__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "get_summary_dict": [
+      "self",
+      "print_subelectrodes"
+    ]
+  },
+  "ConversionVoltagePair": {
+    "from_steps": [
+      "cls",
+      "step1",
+      "step2",
+      "normalization_els",
+      "framework_formula"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "EV_PER_ATOM_TO_J_PER_MOL": [],
+  "ELECTRON_TO_AMPERE_HOURS": [],
+  "BatteryAnalyzer": {
+    "__init__": [
+      "self",
+      "struct_oxid",
+      "working_ion",
+      "oxi_override"
+    ],
+    "max_ion_removal": [
+      "self"
+    ],
+    "max_ion_insertion": [
+      "self"
+    ],
+    "_get_max_cap_ah": [
+      "self",
+      "remove",
+      "insert"
+    ],
+    "get_max_capgrav": [
+      "self",
+      "remove",
+      "insert"
+    ],
+    "get_max_capvol": [
+      "self",
+      "remove",
+      "insert",
+      "volume"
+    ],
+    "get_removals_int_oxid": [
+      "self"
+    ],
+    "_get_int_removals_helper": [
+      "self",
+      "spec_amts_oxi",
+      "redox_el",
+      "redox_els",
+      "num_a"
+    ]
+  },
+  "is_redox_active_intercalation": [
+    "element"
+  ],
+  "AbstractVoltagePair": {
+    "__post_init__": [
+      "self"
+    ],
+    "working_ion": [
+      "self"
+    ],
+    "framework": [
+      "self"
+    ],
+    "x_charge": [
+      "self"
+    ],
+    "x_discharge": [
+      "self"
+    ]
+  },
+  "AbstractElectrode": {
+    "__post_init__": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "index"
+    ],
+    "__contains__": [
+      "self",
+      "obj"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "working_ion": [
+      "self"
+    ],
+    "framework": [
+      "self"
+    ],
+    "x_charge": [
+      "self"
+    ],
+    "x_discharge": [
+      "self"
+    ],
+    "max_delta_volume": [
+      "self"
+    ],
+    "num_steps": [
+      "self"
+    ],
+    "max_voltage": [
+      "self"
+    ],
+    "min_voltage": [
+      "self"
+    ],
+    "max_voltage_step": [
+      "self"
+    ],
+    "normalization_mass": [
+      "self"
+    ],
+    "normalization_volume": [
+      "self"
+    ],
+    "get_sub_electrodes": [
+      "self",
+      "adjacent_only"
+    ],
+    "get_average_voltage": [
+      "self",
+      "min_voltage",
+      "max_voltage"
+    ],
+    "get_capacity_grav": [
+      "self",
+      "min_voltage",
+      "max_voltage",
+      "use_overall_normalization"
+    ],
+    "get_capacity_vol": [
+      "self",
+      "min_voltage",
+      "max_voltage",
+      "use_overall_normalization"
+    ],
+    "get_specific_energy": [
+      "self",
+      "min_voltage",
+      "max_voltage",
+      "use_overall_normalization"
+    ],
+    "get_energy_density": [
+      "self",
+      "min_voltage",
+      "max_voltage",
+      "use_overall_normalization"
+    ],
+    "_select_in_voltage_range": [
+      "self",
+      "min_voltage",
+      "max_voltage"
+    ],
+    "get_summary_dict": [
+      "self",
+      "print_subelectrodes"
+    ]
+  },
+  "VoltageProfilePlotter": {
+    "__init__": [
+      "self",
+      "xaxis",
+      "hide_negative"
+    ],
+    "add_electrode": [
+      "self",
+      "electrode",
+      "label"
+    ],
+    "get_plot_data": [
+      "self",
+      "electrode",
+      "term_zero"
+    ],
+    "get_plot": [
+      "self",
+      "width",
+      "height",
+      "term_zero",
+      "ax"
+    ],
+    "get_plotly_figure": [
+      "self",
+      "width",
+      "height",
+      "font_dict",
+      "term_zero"
+    ],
+    "_choose_best_x_label": [
+      "self",
+      "formula",
+      "work_ion_symbol"
+    ],
+    "show": [
+      "self",
+      "width",
+      "height"
+    ],
+    "save": [
+      "self",
+      "filename",
+      "width",
+      "height"
+    ]
+  },
+  "AbstractDrone": {
+    "assimilate": [
+      "self",
+      "path"
+    ],
+    "get_valid_paths": [
+      "self",
+      "path"
+    ]
+  },
+  "VaspToComputedEntryDrone": {
+    "__init__": [
+      "self",
+      "inc_structure",
+      "parameters",
+      "data"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "assimilate": [
+      "self",
+      "path"
+    ],
+    "get_valid_paths": [
+      "self",
+      "path"
+    ],
+    "as_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "dct"
+    ]
+  },
+  "SimpleVaspToComputedEntryDrone": {
+    "__init__": [
+      "self",
+      "inc_structure"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "assimilate": [
+      "self",
+      "path"
+    ],
+    "as_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "dct"
+    ]
+  },
+  "GaussianToComputedEntryDrone": {
+    "__init__": [
+      "self",
+      "inc_structure",
+      "parameters",
+      "data",
+      "file_extensions"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "assimilate": [
+      "self",
+      "path"
+    ],
+    "get_valid_paths": [
+      "self",
+      "path"
+    ],
+    "as_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "dct"
+    ]
+  },
+  "_get_transformation_history": [
+    "path"
+  ],
+  "BorgQueen": {
+    "__init__": [
+      "self",
+      "drone",
+      "rootpath",
+      "number_of_drones"
+    ],
+    "parallel_assimilate": [
+      "self",
+      "rootpath"
+    ],
+    "serial_assimilate": [
+      "self",
+      "root"
+    ],
+    "get_data": [
+      "self"
+    ],
+    "save_data": [
+      "self",
+      "filename"
+    ],
+    "load_data": [
+      "self",
+      "filename"
+    ]
+  },
+  "order_assimilation": [
+    "args"
+  ],
+  "handler": [],
+  "Provider": {},
+  "OptimadeRester": {
+    "mandatory_response_fields": [],
+    "__init__": [
+      "self",
+      "aliases_or_resource_urls",
+      "refresh_aliases",
+      "timeout"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "describe": [
+      "self"
+    ],
+    "_get_json": [
+      "self",
+      "url"
+    ],
+    "_build_filter": [
+      "elements",
+      "nelements",
+      "nsites",
+      "chemical_formula_anonymous",
+      "chemical_formula_hill"
+    ],
+    "get_structures": [
+      "self",
+      "elements",
+      "nelements",
+      "nsites",
+      "chemical_formula_anonymous",
+      "chemical_formula_hill"
+    ],
+    "get_snls": [
+      "self",
+      "elements",
+      "nelements",
+      "nsites",
+      "chemical_formula_anonymous",
+      "chemical_formula_hill",
+      "additional_response_fields"
+    ],
+    "get_structures_with_filter": [
+      "self",
+      "optimade_filter"
+    ],
+    "get_snls_with_filter": [
+      "self",
+      "optimade_filter",
+      "additional_response_fields"
+    ],
+    "_get_snls_from_resource": [
+      "json",
+      "url",
+      "identifier"
+    ],
+    "_validate_provider": [
+      "self",
+      "provider_url"
+    ],
+    "_parse_provider": [
+      "self",
+      "provider",
+      "provider_url"
+    ],
+    "_handle_response_fields": [
+      "self",
+      "additional_response_fields"
+    ],
+    "refresh_aliases": [
+      "self",
+      "providers_url"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ]
+  },
+  "COD": {
+    "__init__": [
+      "self",
+      "timeout"
+    ],
+    "get_cod_ids": [
+      "self",
+      "formula"
+    ],
+    "get_structure_by_id": [
+      "self",
+      "cod_id",
+      "timeout"
+    ],
+    "get_structure_by_formula": [
+      "self",
+      "formula"
+    ]
+  },
+  "MP_LOG_FILE": [],
+  "CHUNK_SIZE": [],
+  "MPRester": {
+    "MATERIALS_DOCS": [],
+    "__init__": [
+      "self",
+      "api_key",
+      "include_user_agent"
+    ],
+    "__getattr__": [
+      "self",
+      "item"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ],
+    "request": [
+      "self",
+      "sub_url",
+      "payload",
+      "method",
+      "mp_decode",
+      "timeout"
+    ],
+    "search": [
+      "self",
+      "doc"
+    ],
+    "summary_search": [
+      "self"
+    ],
+    "get_summary": [
+      "self",
+      "criteria",
+      "fields"
+    ],
+    "get_summary_by_material_id": [
+      "self",
+      "material_id",
+      "fields"
+    ],
+    "get_doc": [],
+    "get_material_ids": [
+      "self",
+      "formula"
+    ],
+    "get_materials_ids": [],
+    "get_structures": [
+      "self",
+      "chemsys_formula",
+      "final"
+    ],
+    "get_structure_by_material_id": [
+      "self",
+      "material_id",
+      "conventional_unit_cell"
+    ],
+    "get_initial_structures_by_material_id": [
+      "self",
+      "material_id",
+      "conventional_unit_cell"
+    ],
+    "get_entries": [
+      "self",
+      "criteria"
+    ],
+    "get_entry_by_material_id": [
+      "self",
+      "material_id"
+    ],
+    "get_entries_in_chemsys": [
+      "self",
+      "elements"
+    ],
+    "_retrieve_object_from_s3": [
+      "self",
+      "material_id",
+      "bucket",
+      "prefix",
+      "timeout"
+    ],
+    "get_phonon_bandstructure_by_material_id": [
+      "self",
+      "material_id"
+    ],
+    "get_phonon_dos_by_material_id": [
+      "self",
+      "material_id"
+    ]
+  },
+  "MPRestError": {}
+}
