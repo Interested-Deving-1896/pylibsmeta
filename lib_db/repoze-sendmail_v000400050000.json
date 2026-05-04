@@ -1,0 +1,390 @@
+{
+  "HOSTNAME": [],
+  "PID": [],
+  "RANDMAX": [],
+  "NotAMaildir": {
+    "__init__": [
+      "self",
+      "path"
+    ]
+  },
+  "NoTempfileNamesAvailable": {
+    "__init__": [
+      "self",
+      "subdir_tmp"
+    ]
+  },
+  "TransactionAborted": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "TransactionCommitted": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "_check_maildir": [
+    "path",
+    "create"
+  ],
+  "_unique_filename": [],
+  "_open_unique_filename": [
+    "subdir_tmp",
+    "max_count",
+    "sleep_interval"
+  ],
+  "Maildir": {
+    "__init__": [
+      "self",
+      "path",
+      "create"
+    ],
+    "subdir_cur": [
+      "self"
+    ],
+    "subdir_new": [
+      "self"
+    ],
+    "subdir_tmp": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "add": [
+      "self",
+      "message"
+    ]
+  },
+  "MaildirTransactionalMessage": {
+    "__init__": [
+      "self",
+      "pending_path",
+      "committed_path"
+    ],
+    "commit": [
+      "self"
+    ],
+    "abort": [
+      "self"
+    ],
+    "__del__": [
+      "self"
+    ]
+  },
+  "IMailDelivery": {
+    "transaction_manager": [],
+    "send": [
+      "fromaddr",
+      "toaddrs",
+      "message"
+    ]
+  },
+  "IMailer": {
+    "send": [
+      "fromaddr",
+      "toaddrs",
+      "message"
+    ]
+  },
+  "ADDR_HEADERS": [],
+  "PARAM_HEADERS": [],
+  "cleanup_message": [
+    "message",
+    "addr_headers",
+    "param_headers"
+  ],
+  "encode_message": [
+    "message",
+    "addr_headers",
+    "param_headers"
+  ],
+  "best_charset": [
+    "text"
+  ],
+  "HAVE_SSL": [],
+  "NotAnEmailMessage": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "SSL_NotAvailable": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "TLS_NotAvailable": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "EHLO_Error": {
+    "__init__": [
+      "self",
+      "code",
+      "response"
+    ]
+  },
+  "ESMTP_NotSupported": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "SendmailCommandReturnedNonZero": {
+    "__init__": [
+      "self",
+      "returncode",
+      "args"
+    ]
+  },
+  "SMTPMailer": {
+    "smtp": [],
+    "smtp_ssl": [],
+    "__init__": [
+      "self",
+      "hostname",
+      "port",
+      "username",
+      "password",
+      "no_tls",
+      "force_tls",
+      "ssl",
+      "debug_smtp"
+    ],
+    "smtp_factory": [
+      "self"
+    ],
+    "send": [
+      "self",
+      "fromaddr",
+      "toaddrs",
+      "message"
+    ]
+  },
+  "SendmailMailer": {
+    "sendmail_app": [],
+    "sendmail_template": [],
+    "__init__": [
+      "self",
+      "sendmail_app",
+      "sendmail_template"
+    ],
+    "send": [
+      "self",
+      "fromaddr",
+      "toaddrs",
+      "message"
+    ],
+    "_popen": [
+      "self"
+    ]
+  },
+  "NotInATransaction": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "InAnotherTransaction": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "SubtransactionNotAllowed": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "TPC_InProgress": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "TPC_PhaseError": {
+    "__init__": [
+      "self",
+      "tpc_phase"
+    ]
+  },
+  "TPC_Finished": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "MailDataManagerState": {
+    "INIT": [],
+    "NO_WORK": [],
+    "COMMITTED": [],
+    "ABORTED": [],
+    "TPC_NONE": [],
+    "TPC_BEGIN": [],
+    "TPC_VOTED": [],
+    "TPC_COMMITED": [],
+    "TPC_FINISHED": [],
+    "TPC_ABORTED": []
+  },
+  "MailDataManager": {
+    "__init__": [
+      "self",
+      "callable",
+      "args",
+      "onAbort",
+      "transaction_manager"
+    ],
+    "join_transaction": [
+      "self",
+      "trans"
+    ],
+    "_finish": [
+      "self",
+      "final_state"
+    ],
+    "commit": [
+      "self",
+      "trans"
+    ],
+    "abort": [
+      "self",
+      "trans"
+    ],
+    "sortKey": [
+      "self"
+    ],
+    "savepoint": [
+      "self"
+    ],
+    "tpc_begin": [
+      "self",
+      "trans",
+      "subtransaction"
+    ],
+    "tpc_vote": [
+      "self",
+      "trans"
+    ],
+    "tpc_finish": [
+      "self",
+      "trans"
+    ],
+    "tpc_abort": [
+      "self",
+      "trans"
+    ]
+  },
+  "MailDataSavepoint": {
+    "__init__": [
+      "self",
+      "mail_data_manager"
+    ],
+    "rollback": [
+      "self"
+    ]
+  },
+  "AbstractMailDelivery": {
+    "send": [
+      "self",
+      "fromaddr",
+      "toaddrs",
+      "message"
+    ]
+  },
+  "DirectMailDelivery": {
+    "__init__": [
+      "self",
+      "mailer",
+      "transaction_manager"
+    ],
+    "createDataManager": [
+      "self",
+      "fromaddr",
+      "toaddrs",
+      "message"
+    ]
+  },
+  "QueuedMailDelivery": {
+    "queuePath": [],
+    "processor_thread": [],
+    "__init__": [
+      "self",
+      "queuePath",
+      "transaction_manager"
+    ],
+    "createDataManager": [
+      "self",
+      "fromaddr",
+      "toaddrs",
+      "message"
+    ]
+  },
+  "copy_message": [
+    "message"
+  ],
+  "_log_error": [
+    "msg"
+  ],
+  "MAX_SEND_TIME": [],
+  "boolean": [
+    "s"
+  ],
+  "string_or_none": [
+    "s"
+  ],
+  "QueueProcessor": {
+    "log": [],
+    "__init__": [
+      "self",
+      "mailer",
+      "queue_path",
+      "Maildir",
+      "ignore_transient"
+    ],
+    "send_messages": [
+      "self"
+    ],
+    "_parseMessage": [
+      "self",
+      "fp"
+    ],
+    "_send_message": [
+      "self",
+      "filename"
+    ]
+  },
+  "ConsoleApp": {
+    "_usage": [],
+    "_error": [],
+    "hostname": [],
+    "port": [],
+    "username": [],
+    "password": [],
+    "force_tls": [],
+    "no_tls": [],
+    "ssl": [],
+    "queue_path": [],
+    "debug_smtp": [],
+    "__init__": [
+      "self",
+      "argv"
+    ],
+    "main": [
+      "self"
+    ],
+    "_process_args": [
+      "self",
+      "args"
+    ],
+    "_find_config": [
+      "self"
+    ],
+    "_load_config": [
+      "self",
+      "path"
+    ],
+    "_error_usage": [
+      "self"
+    ]
+  },
+  "run_console": [
+    "argv"
+  ]
+}
