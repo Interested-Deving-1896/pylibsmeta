@@ -1,0 +1,1415 @@
+{
+  "end_marker": [],
+  "quoted_marker": [],
+  "empty": [],
+  "DetailsParser": {},
+  "SimpleDetailsParser": {
+    "__init__": [
+      "self",
+      "state"
+    ],
+    "lineReceived": [
+      "self",
+      "line"
+    ],
+    "get_details": [
+      "self",
+      "style"
+    ],
+    "get_message": [
+      "self"
+    ]
+  },
+  "MultipartDetailsParser": {
+    "__init__": [
+      "self",
+      "state"
+    ],
+    "_look_for_content": [
+      "self",
+      "line"
+    ],
+    "_get_name": [
+      "self",
+      "line"
+    ],
+    "_feed_chunks": [
+      "self",
+      "line"
+    ],
+    "get_details": [
+      "self",
+      "for_skip"
+    ],
+    "get_message": [
+      "self"
+    ],
+    "lineReceived": [
+      "self",
+      "line"
+    ]
+  },
+  "_FINAL_ACTIONS": [],
+  "_ALL_ACTIONS": [],
+  "_CHUNK_SIZE": [],
+  "output_main": [],
+  "parse_arguments": [
+    "args",
+    "ParserClass"
+  ],
+  "set_status_cb": [
+    "option",
+    "opt_str",
+    "value",
+    "parser",
+    "status_name"
+  ],
+  "generate_stream_results": [
+    "args",
+    "output_writer"
+  ],
+  "create_timestamp": [],
+  "utf_8_decode": [],
+  "__all__": [],
+  "SIGNATURE": [],
+  "FMT_8": [],
+  "FMT_16": [],
+  "FMT_24": [],
+  "FMT_32": [],
+  "FMT_TIMESTAMP": [],
+  "FLAG_TEST_ID": [],
+  "FLAG_ROUTE_CODE": [],
+  "FLAG_TIMESTAMP": [],
+  "FLAG_RUNNABLE": [],
+  "FLAG_TAGS": [],
+  "FLAG_MIME_TYPE": [],
+  "FLAG_EOF": [],
+  "FLAG_FILE_CONTENT": [],
+  "EPOCH": [],
+  "NUL_ELEMENT": [],
+  "read_exactly": [
+    "stream",
+    "size"
+  ],
+  "ParseError": {},
+  "StreamResultToBytes": {
+    "status_mask": [],
+    "zero_b": [],
+    "__init__": [
+      "self",
+      "output_stream"
+    ],
+    "startTestRun": [
+      "self"
+    ],
+    "stopTestRun": [
+      "self"
+    ],
+    "status": [
+      "self",
+      "test_id",
+      "test_status",
+      "test_tags",
+      "runnable",
+      "file_name",
+      "file_bytes",
+      "eof",
+      "mime_type",
+      "route_code",
+      "timestamp"
+    ],
+    "_write_utf8": [
+      "self",
+      "a_string",
+      "packet"
+    ],
+    "_write_len16": [
+      "self",
+      "length",
+      "packet"
+    ],
+    "_write_number": [
+      "self",
+      "value",
+      "packet"
+    ],
+    "_encode_number": [
+      "self",
+      "value"
+    ],
+    "_write_packet": [
+      "self",
+      "test_id",
+      "test_status",
+      "test_tags",
+      "runnable",
+      "file_name",
+      "file_bytes",
+      "eof",
+      "mime_type",
+      "route_code",
+      "timestamp"
+    ]
+  },
+  "ByteStreamToStreamResult": {
+    "status_lookup": [],
+    "__init__": [
+      "self",
+      "source",
+      "non_subunit_name"
+    ],
+    "run": [
+      "self",
+      "result"
+    ],
+    "_parse_packet": [
+      "self",
+      "result"
+    ],
+    "_parse_varint": [
+      "self",
+      "data",
+      "pos",
+      "max_3_bytes"
+    ],
+    "_parse": [
+      "self",
+      "packet",
+      "result"
+    ],
+    "__call__": [],
+    "_read_utf8": [
+      "self",
+      "buf",
+      "pos"
+    ]
+  },
+  "SubunitTestRunner": {
+    "__init__": [
+      "self",
+      "verbosity",
+      "failfast",
+      "buffer",
+      "stream",
+      "stdout",
+      "tb_locals"
+    ],
+    "run": [
+      "self",
+      "test"
+    ],
+    "list": [
+      "self",
+      "test",
+      "loader"
+    ],
+    "_list": [
+      "self",
+      "test"
+    ]
+  },
+  "SubunitTestProgram": {
+    "USAGE": [],
+    "usageExit": [
+      "self",
+      "msg"
+    ]
+  },
+  "main": [
+    "argv",
+    "stdout"
+  ],
+  "make_options": [
+    "description"
+  ],
+  "run_tests_from_stream": [
+    "input_stream",
+    "result",
+    "passthrough_stream",
+    "forward_stream",
+    "protocol_version",
+    "passthrough_subunit"
+  ],
+  "filter_by_result": [
+    "result_factory",
+    "output_path",
+    "passthrough",
+    "forward",
+    "input_stream",
+    "protocol_version",
+    "passthrough_subunit"
+  ],
+  "run_filter_script": [
+    "result_factory",
+    "description",
+    "post_run_hook",
+    "protocol_version",
+    "passthrough_subunit"
+  ],
+  "find_stream": [
+    "stdin",
+    "argv"
+  ],
+  "_allocate_path": [
+    "root",
+    "sub"
+  ],
+  "_open_path": [
+    "root",
+    "subpath"
+  ],
+  "_json_time": [
+    "a_time"
+  ],
+  "DiskExporter": {
+    "__init__": [
+      "self",
+      "directory"
+    ],
+    "export": [
+      "self",
+      "test_dict"
+    ]
+  },
+  "to_disk": [
+    "argv",
+    "stdin",
+    "stdout"
+  ],
+  "HookedTestResultDecorator": {
+    "__init__": [
+      "self",
+      "decorated"
+    ],
+    "startTest": [
+      "self",
+      "test"
+    ],
+    "startTestRun": [
+      "self"
+    ],
+    "stopTest": [
+      "self",
+      "test"
+    ],
+    "stopTestRun": [
+      "self"
+    ],
+    "addError": [
+      "self",
+      "test",
+      "err",
+      "details"
+    ],
+    "addFailure": [
+      "self",
+      "test",
+      "err",
+      "details"
+    ],
+    "addSuccess": [
+      "self",
+      "test",
+      "details"
+    ],
+    "addSkip": [
+      "self",
+      "test",
+      "reason",
+      "details"
+    ],
+    "addExpectedFailure": [
+      "self",
+      "test",
+      "err",
+      "details"
+    ],
+    "addUnexpectedSuccess": [
+      "self",
+      "test",
+      "details"
+    ],
+    "progress": [
+      "self",
+      "offset",
+      "whence"
+    ],
+    "wasSuccessful": [
+      "self"
+    ],
+    "shouldStop": [
+      "self"
+    ],
+    "stop": [
+      "self"
+    ],
+    "time": [
+      "self",
+      "a_datetime"
+    ],
+    "addDuration": [
+      "self",
+      "test",
+      "duration"
+    ],
+    "_get_failfast": [
+      "self"
+    ],
+    "_set_failfast": [
+      "self",
+      "value"
+    ],
+    "failfast": []
+  },
+  "AutoTimingTestResultDecorator": {
+    "__init__": [
+      "self",
+      "decorated"
+    ],
+    "_before_event": [
+      "self"
+    ],
+    "progress": [
+      "self",
+      "offset",
+      "whence"
+    ],
+    "shouldStop": [
+      "self"
+    ],
+    "time": [
+      "self",
+      "a_datetime"
+    ]
+  },
+  "TagsMixin": {
+    "__init__": [
+      "self"
+    ],
+    "_clear_tags": [
+      "self"
+    ],
+    "_get_active_tags": [
+      "self"
+    ],
+    "_get_current_scope": [
+      "self"
+    ],
+    "_flush_current_scope": [
+      "self",
+      "tag_receiver"
+    ],
+    "startTestRun": [
+      "self"
+    ],
+    "startTest": [
+      "self",
+      "test"
+    ],
+    "stopTest": [
+      "self",
+      "test"
+    ],
+    "tags": [
+      "self",
+      "new_tags",
+      "gone_tags"
+    ]
+  },
+  "TagCollapsingDecorator": {
+    "__init__": [
+      "self",
+      "result"
+    ],
+    "_before_event": [
+      "self"
+    ],
+    "tags": [
+      "self",
+      "new_tags",
+      "gone_tags"
+    ]
+  },
+  "TimeCollapsingDecorator": {
+    "__init__": [
+      "self",
+      "decorated"
+    ],
+    "_before_event": [
+      "self"
+    ],
+    "time": [
+      "self",
+      "a_time"
+    ]
+  },
+  "and_predicates": [
+    "predicates"
+  ],
+  "make_tag_filter": [
+    "with_tags",
+    "without_tags"
+  ],
+  "_PredicateFilter": {
+    "__init__": [
+      "self",
+      "result",
+      "predicate"
+    ],
+    "filter_predicate": [
+      "self",
+      "test",
+      "outcome",
+      "error",
+      "details"
+    ],
+    "addError": [
+      "self",
+      "test",
+      "err",
+      "details"
+    ],
+    "addFailure": [
+      "self",
+      "test",
+      "err",
+      "details"
+    ],
+    "addSkip": [
+      "self",
+      "test",
+      "reason",
+      "details"
+    ],
+    "addExpectedFailure": [
+      "self",
+      "test",
+      "err",
+      "details"
+    ],
+    "addUnexpectedSuccess": [
+      "self",
+      "test",
+      "details"
+    ],
+    "addSuccess": [
+      "self",
+      "test",
+      "details"
+    ],
+    "_filtered": [
+      "self"
+    ],
+    "startTest": [
+      "self",
+      "test"
+    ],
+    "stopTest": [
+      "self",
+      "test"
+    ],
+    "tags": [
+      "self",
+      "new_tags",
+      "gone_tags"
+    ],
+    "time": [
+      "self",
+      "a_time"
+    ],
+    "id_to_orig_id": [
+      "self",
+      "id"
+    ]
+  },
+  "TestResultFilter": {
+    "__init__": [
+      "self",
+      "result",
+      "filter_error",
+      "filter_failure",
+      "filter_success",
+      "filter_skip",
+      "filter_xfail",
+      "filter_predicate",
+      "fixup_expected_failures",
+      "rename"
+    ],
+    "addError": [
+      "self",
+      "test",
+      "err",
+      "details"
+    ],
+    "addFailure": [
+      "self",
+      "test",
+      "err",
+      "details"
+    ],
+    "addSuccess": [
+      "self",
+      "test",
+      "details"
+    ],
+    "_failure_expected": [
+      "self",
+      "test"
+    ],
+    "_apply_renames": [
+      "self",
+      "test"
+    ]
+  },
+  "TestIdPrintingResult": {
+    "__init__": [
+      "self",
+      "stream",
+      "show_times",
+      "show_exists"
+    ],
+    "startTestRun": [
+      "self"
+    ],
+    "addError": [
+      "self",
+      "test",
+      "err"
+    ],
+    "addFailure": [
+      "self",
+      "test",
+      "err"
+    ],
+    "addSuccess": [
+      "self",
+      "test"
+    ],
+    "addSkip": [
+      "self",
+      "test",
+      "reason",
+      "details"
+    ],
+    "addUnexpectedSuccess": [
+      "self",
+      "test",
+      "details"
+    ],
+    "addExpectedFailure": [
+      "self",
+      "test",
+      "err",
+      "details"
+    ],
+    "reportTest": [
+      "self",
+      "test_id",
+      "duration"
+    ],
+    "startTest": [
+      "self",
+      "test"
+    ],
+    "status": [
+      "self",
+      "test_id",
+      "test_status",
+      "test_tags",
+      "runnable",
+      "file_name",
+      "file_bytes",
+      "eof",
+      "mime_type",
+      "route_code",
+      "timestamp"
+    ],
+    "_end_test": [
+      "self",
+      "test_id"
+    ],
+    "stopTest": [
+      "self",
+      "test"
+    ],
+    "time": [
+      "self",
+      "time"
+    ],
+    "_time": [
+      "self"
+    ],
+    "wasSuccessful": [
+      "self"
+    ],
+    "addDuration": [
+      "self",
+      "test",
+      "duration"
+    ],
+    "stopTestRun": [
+      "self"
+    ]
+  },
+  "CsvResult": {
+    "__init__": [
+      "self",
+      "stream"
+    ],
+    "_on_test": [
+      "self",
+      "test",
+      "status",
+      "start_time",
+      "stop_time",
+      "tags",
+      "details"
+    ],
+    "startTestRun": [
+      "self"
+    ]
+  },
+  "CatFiles": {
+    "__init__": [
+      "self",
+      "byte_stream"
+    ],
+    "status": [
+      "self",
+      "test_id",
+      "test_status",
+      "test_tags",
+      "runnable",
+      "file_name",
+      "file_bytes",
+      "eof",
+      "mime_type",
+      "route_code",
+      "timestamp"
+    ]
+  },
+  "Decoder": {
+    "__init__": [
+      "self",
+      "output",
+      "strict"
+    ],
+    "close": [
+      "self"
+    ],
+    "_finished": [
+      "self"
+    ],
+    "_read_body": [
+      "self"
+    ],
+    "_read_length": [
+      "self"
+    ],
+    "write": [
+      "self",
+      "bytes"
+    ]
+  },
+  "Encoder": {
+    "__init__": [
+      "self",
+      "output"
+    ],
+    "flush": [
+      "self",
+      "extra_len"
+    ],
+    "write": [
+      "self",
+      "bytes"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "ProgressModel": {
+    "__init__": [
+      "self"
+    ],
+    "adjust_width": [
+      "self",
+      "offset"
+    ],
+    "advance": [
+      "self"
+    ],
+    "pop": [
+      "self"
+    ],
+    "pos": [
+      "self"
+    ],
+    "push": [
+      "self"
+    ],
+    "set_width": [
+      "self",
+      "width"
+    ],
+    "width": [
+      "self"
+    ]
+  },
+  "__version__": [],
+  "version_string": [],
+  "PROGRESS_SET": [],
+  "PROGRESS_CUR": [],
+  "PROGRESS_PUSH": [],
+  "PROGRESS_POP": [],
+  "join_dir": [
+    "base_path",
+    "path"
+  ],
+  "tags_to_new_gone": [
+    "tags"
+  ],
+  "DiscardStream": {
+    "fileno": [
+      "self"
+    ],
+    "write": [
+      "self",
+      "bytes"
+    ],
+    "read": [
+      "self",
+      "len"
+    ]
+  },
+  "_ParserState": {
+    "__init__": [
+      "self",
+      "parser"
+    ],
+    "addError": [
+      "self",
+      "offset",
+      "line"
+    ],
+    "addExpectedFail": [
+      "self",
+      "offset",
+      "line"
+    ],
+    "addFailure": [
+      "self",
+      "offset",
+      "line"
+    ],
+    "addSkip": [
+      "self",
+      "offset",
+      "line"
+    ],
+    "addSuccess": [
+      "self",
+      "offset",
+      "line"
+    ],
+    "lineReceived": [
+      "self",
+      "line"
+    ],
+    "lostConnection": [
+      "self"
+    ],
+    "startTest": [
+      "self",
+      "offset",
+      "line"
+    ]
+  },
+  "_InTest": {
+    "_outcome": [
+      "self",
+      "offset",
+      "line",
+      "no_details",
+      "details_state"
+    ],
+    "_error": [
+      "self"
+    ],
+    "addError": [
+      "self",
+      "offset",
+      "line"
+    ],
+    "_xfail": [
+      "self"
+    ],
+    "addExpectedFail": [
+      "self",
+      "offset",
+      "line"
+    ],
+    "_uxsuccess": [
+      "self"
+    ],
+    "addUnexpectedSuccess": [
+      "self",
+      "offset",
+      "line"
+    ],
+    "_failure": [
+      "self"
+    ],
+    "addFailure": [
+      "self",
+      "offset",
+      "line"
+    ],
+    "_skip": [
+      "self"
+    ],
+    "addSkip": [
+      "self",
+      "offset",
+      "line"
+    ],
+    "_succeed": [
+      "self"
+    ],
+    "addSuccess": [
+      "self",
+      "offset",
+      "line"
+    ],
+    "lostConnection": [
+      "self"
+    ]
+  },
+  "_OutSideTest": {
+    "lostConnection": [
+      "self"
+    ],
+    "startTest": [
+      "self",
+      "offset",
+      "line"
+    ]
+  },
+  "_ReadingDetails": {
+    "endDetails": [
+      "self"
+    ],
+    "lineReceived": [
+      "self",
+      "line"
+    ],
+    "lostConnection": [
+      "self"
+    ],
+    "_outcome_label": [
+      "self"
+    ],
+    "set_simple": [
+      "self"
+    ],
+    "set_multipart": [
+      "self"
+    ]
+  },
+  "_ReadingFailureDetails": {
+    "_report_outcome": [
+      "self"
+    ],
+    "_outcome_label": [
+      "self"
+    ]
+  },
+  "_ReadingErrorDetails": {
+    "_report_outcome": [
+      "self"
+    ],
+    "_outcome_label": [
+      "self"
+    ]
+  },
+  "_ReadingExpectedFailureDetails": {
+    "_report_outcome": [
+      "self"
+    ],
+    "_outcome_label": [
+      "self"
+    ]
+  },
+  "_ReadingUnexpectedSuccessDetails": {
+    "_report_outcome": [
+      "self"
+    ],
+    "_outcome_label": [
+      "self"
+    ]
+  },
+  "_ReadingSkipDetails": {
+    "_report_outcome": [
+      "self"
+    ],
+    "_outcome_label": [
+      "self"
+    ]
+  },
+  "_ReadingSuccessDetails": {
+    "_report_outcome": [
+      "self"
+    ],
+    "_outcome_label": [
+      "self"
+    ]
+  },
+  "TestProtocolServer": {
+    "__init__": [
+      "self",
+      "client",
+      "stream",
+      "forward_stream"
+    ],
+    "_handleProgress": [
+      "self",
+      "offset",
+      "line"
+    ],
+    "_handleTags": [
+      "self",
+      "offset",
+      "line"
+    ],
+    "_handleTime": [
+      "self",
+      "offset",
+      "line"
+    ],
+    "lineReceived": [
+      "self",
+      "line"
+    ],
+    "_lostConnectionInTest": [
+      "self",
+      "state_string"
+    ],
+    "lostConnection": [
+      "self"
+    ],
+    "readFrom": [
+      "self",
+      "pipe"
+    ],
+    "_startTest": [
+      "self",
+      "offset",
+      "line"
+    ],
+    "subunitLineReceived": [
+      "self",
+      "line"
+    ],
+    "stdOutLineReceived": [
+      "self",
+      "line"
+    ]
+  },
+  "TestProtocolClient": {
+    "__init__": [
+      "self",
+      "stream"
+    ],
+    "addError": [
+      "self",
+      "test",
+      "error",
+      "details"
+    ],
+    "addExpectedFailure": [
+      "self",
+      "test",
+      "error",
+      "details"
+    ],
+    "addFailure": [
+      "self",
+      "test",
+      "error",
+      "details"
+    ],
+    "_addOutcome": [
+      "self",
+      "outcome",
+      "test",
+      "error",
+      "details",
+      "error_permitted"
+    ],
+    "addSkip": [
+      "self",
+      "test",
+      "reason",
+      "details"
+    ],
+    "addSuccess": [
+      "self",
+      "test",
+      "details"
+    ],
+    "addUnexpectedSuccess": [
+      "self",
+      "test",
+      "details"
+    ],
+    "_test_id": [
+      "self",
+      "test"
+    ],
+    "startTest": [
+      "self",
+      "test"
+    ],
+    "stopTest": [
+      "self",
+      "test"
+    ],
+    "progress": [
+      "self",
+      "offset",
+      "whence"
+    ],
+    "tags": [
+      "self",
+      "new_tags",
+      "gone_tags"
+    ],
+    "time": [
+      "self",
+      "a_datetime"
+    ],
+    "_write_details": [
+      "self",
+      "details"
+    ],
+    "done": [
+      "self"
+    ],
+    "addDuration": [
+      "self",
+      "test",
+      "duration"
+    ]
+  },
+  "RemoteError": [
+    "description"
+  ],
+  "RemotedTestCase": {
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__init__": [
+      "self",
+      "description"
+    ],
+    "error": [
+      "self",
+      "label"
+    ],
+    "setUp": [
+      "self"
+    ],
+    "tearDown": [
+      "self"
+    ],
+    "shortDescription": [
+      "self"
+    ],
+    "id": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "run": [
+      "self",
+      "result"
+    ],
+    "_strclass": [
+      "self"
+    ]
+  },
+  "ExecTestCase": {
+    "__init__": [
+      "self",
+      "methodName"
+    ],
+    "countTestCases": [
+      "self"
+    ],
+    "run": [
+      "self",
+      "result"
+    ],
+    "debug": [
+      "self"
+    ],
+    "_run": [
+      "self",
+      "result"
+    ]
+  },
+  "IsolatedTestCase": {
+    "run": [
+      "self",
+      "result"
+    ]
+  },
+  "IsolatedTestSuite": {
+    "run": [
+      "self",
+      "result"
+    ]
+  },
+  "run_isolated": [
+    "klass",
+    "self",
+    "result"
+  ],
+  "TAP2SubUnit": [
+    "tap",
+    "output_stream"
+  ],
+  "GoJSON2SubUnit": [
+    "gojson",
+    "output_stream"
+  ],
+  "JUnitXML2SubUnit": [
+    "xml_files",
+    "output_stream"
+  ],
+  "_format_junit_detail": [
+    "element"
+  ],
+  "tag_stream": [
+    "original",
+    "filtered",
+    "tags"
+  ],
+  "ProtocolTestCase": {
+    "__init__": [
+      "self",
+      "stream",
+      "passthrough",
+      "forward"
+    ],
+    "__call__": [
+      "self",
+      "result"
+    ],
+    "run": [
+      "self",
+      "result"
+    ]
+  },
+  "TestResultStats": {
+    "__init__": [
+      "self",
+      "stream"
+    ],
+    "total_tests": [
+      "self"
+    ],
+    "addError": [
+      "self",
+      "test",
+      "err",
+      "details"
+    ],
+    "addFailure": [
+      "self",
+      "test",
+      "err",
+      "details"
+    ],
+    "addSkip": [
+      "self",
+      "test",
+      "reason",
+      "details"
+    ],
+    "formatStats": [
+      "self"
+    ],
+    "passed_tests": [
+      "self"
+    ],
+    "tags": [
+      "self",
+      "new_tags",
+      "gone_tags"
+    ],
+    "wasSuccessful": [
+      "self"
+    ],
+    "addDuration": [
+      "self",
+      "test",
+      "duration"
+    ]
+  },
+  "read_test_list": [
+    "path"
+  ],
+  "make_stream_binary": [
+    "stream"
+  ],
+  "_make_binary_on_windows": [
+    "fileno"
+  ],
+  "_unwrap_text": [
+    "stream"
+  ],
+  "GTKTestResult": {
+    "__init__": [
+      "self"
+    ],
+    "stopTest": [
+      "self",
+      "test"
+    ],
+    "_stopTest": [
+      "self"
+    ],
+    "stopTestRun": [
+      "self"
+    ],
+    "addError": [
+      "self",
+      "test",
+      "err"
+    ],
+    "addFailure": [
+      "self",
+      "test",
+      "err"
+    ],
+    "addSuccess": [
+      "self",
+      "test"
+    ],
+    "addSkip": [
+      "self",
+      "test",
+      "reason"
+    ],
+    "addExpectedFailure": [
+      "self",
+      "test",
+      "err"
+    ],
+    "addUnexpectedSuccess": [
+      "self",
+      "test"
+    ],
+    "progress": [
+      "self",
+      "offset",
+      "whence"
+    ],
+    "time": [
+      "self",
+      "a_datetime"
+    ],
+    "addDuration": [
+      "self",
+      "test",
+      "duration"
+    ],
+    "update_counts": [
+      "self"
+    ]
+  },
+  "_VARIABLE_RE": [],
+  "_PrefixingStreamResult": {
+    "__init__": [
+      "self",
+      "target",
+      "prefix"
+    ],
+    "startTestRun": [
+      "self"
+    ],
+    "stopTestRun": [
+      "self"
+    ],
+    "status": [
+      "self",
+      "test_id"
+    ]
+  },
+  "load_config": [
+    "path"
+  ],
+  "_substitute": [
+    "template",
+    "variables"
+  ],
+  "_expand_argv": [
+    "cmd"
+  ],
+  "_select_ids_for_command": [
+    "cmd",
+    "test_ids"
+  ],
+  "_write_idfile": [
+    "test_ids"
+  ],
+  "run_command": [
+    "cmd",
+    "output"
+  ],
+  "combine": [
+    "commands",
+    "output_stream"
+  ],
+  "_read_id_list": [
+    "path"
+  ],
+  "make_parser": [],
+  "parse_args": [
+    "argv"
+  ],
+  "collect_files": [
+    "dirs",
+    "files"
+  ],
+  "only_genuine_failures_callback": [
+    "option",
+    "opt",
+    "value",
+    "parser"
+  ],
+  "_compile_re_from_list": [
+    "list"
+  ],
+  "_make_regexp_filter": [
+    "with_regexps",
+    "without_regexps"
+  ],
+  "_compile_rename": [
+    "patterns"
+  ],
+  "_make_result": [
+    "output",
+    "options",
+    "predicate"
+  ],
+  "notify_of_result": [
+    "result"
+  ]
+}
