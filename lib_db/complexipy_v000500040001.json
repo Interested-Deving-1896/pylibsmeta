@@ -1,0 +1,402 @@
+{
+  "app": [],
+  "console": [],
+  "INVOCATION_PATH": [],
+  "TOML_CONFIG": [],
+  "_version_callback": [
+    "value"
+  ],
+  "main": [
+    "paths",
+    "exclude",
+    "max_complexity_allowed",
+    "snapshot_create",
+    "snapshot_ignore",
+    "quiet",
+    "ignore_complexity",
+    "failed",
+    "color",
+    "sort",
+    "output_format",
+    "output",
+    "output_csv",
+    "output_json",
+    "output_gitlab",
+    "diff",
+    "ratchet",
+    "output_sarif",
+    "top",
+    "plain",
+    "check_script",
+    "version"
+  ],
+  "handle_console_settings": [
+    "color",
+    "quiet",
+    "plain"
+  ],
+  "handle_display": [
+    "console",
+    "files_complexities",
+    "paths",
+    "failed",
+    "sort",
+    "ignore_complexity",
+    "max_complexity_allowed",
+    "active_snapshot_map",
+    "quiet",
+    "plain",
+    "top"
+  ],
+  "handle_results_storage": [
+    "output_formats",
+    "output",
+    "files_complexities",
+    "sort",
+    "show_details",
+    "max_complexity"
+  ],
+  "emit_deprecated_output_warnings": [
+    "legacy_cli_output_flags",
+    "toml_config"
+  ],
+  "resolve_output_formats": [
+    "output_format_values",
+    "legacy_cli_output_flags",
+    "toml_config"
+  ],
+  "resolve_output_paths": [
+    "output_formats",
+    "output"
+  ],
+  "build_output_paths": [
+    "destination",
+    "output_formats"
+  ],
+  "is_directory_output_hint": [
+    "output"
+  ],
+  "ensure_directory_destination": [
+    "destination",
+    "is_directory_hint"
+  ],
+  "handle_snapshot": [
+    "should_run_snapshot_watermark",
+    "quiet",
+    "watermark_messages",
+    "output_snapshot_path",
+    "watermark_success"
+  ],
+  "handle_diff_output": [
+    "diff",
+    "files_complexities",
+    "quiet"
+  ],
+  "validate_ratchet": [
+    "ratchet",
+    "diff"
+  ],
+  "resolve_final_success": [
+    "has_success",
+    "valid_paths",
+    "snapshot_result",
+    "ratchet",
+    "diff_entries",
+    "max_complexity_allowed"
+  ],
+  "ColorTypes": {
+    "auto": [],
+    "yes": [],
+    "no": []
+  },
+  "Sort": {
+    "asc": [],
+    "desc": [],
+    "file_name": []
+  },
+  "OutputFormat": {
+    "csv": [],
+    "json": [],
+    "gitlab": [],
+    "sarif": []
+  },
+  "TOMLTypes": [],
+  "TOMLBase": [],
+  "code_complexity": [
+    "code",
+    "check_script"
+  ],
+  "file_complexity": [
+    "file_path",
+    "check_script"
+  ],
+  "__all__": [],
+  "load_values_from_toml_key": [
+    "key",
+    "value"
+  ],
+  "get_dict_from_pyproject": [
+    "data"
+  ],
+  "load_toml_config": [
+    "invocation_path",
+    "config_file_name"
+  ],
+  "get_complexipy_toml_config": [
+    "invocation_path"
+  ],
+  "template_getter": [
+    "toml_config",
+    "arg_name",
+    "default_value"
+  ],
+  "get_argument_value": [
+    "toml_config",
+    "arg_name",
+    "arg_value",
+    "default_value"
+  ],
+  "get_arguments_value": [
+    "toml_config",
+    "paths",
+    "max_complexity_allowed",
+    "snapshot_create",
+    "snapshot_ignore",
+    "quiet",
+    "ignore_complexity",
+    "failed",
+    "color",
+    "sort_arg",
+    "output_format",
+    "output",
+    "output_csv",
+    "output_json",
+    "output_gitlab",
+    "output_sarif",
+    "exclude",
+    "check_script"
+  ],
+  "CACHE_DIR_NAME": [],
+  "remember_previous_functions": [
+    "invocation_path",
+    "targets",
+    "files_complexities"
+  ],
+  "_build_cache_key": [
+    "invocation_path",
+    "targets"
+  ],
+  "_normalize_targets": [
+    "invocation_path",
+    "targets"
+  ],
+  "_normalize_target": [
+    "invocation_path",
+    "target"
+  ],
+  "_looks_like_remote": [
+    "target"
+  ],
+  "_collect_functions": [
+    "files_complexities"
+  ],
+  "_load_previous_map": [
+    "cache_file"
+  ],
+  "_load_cache": [
+    "cache_file"
+  ],
+  "_build_function_key": [
+    "path",
+    "file_name",
+    "function_name"
+  ],
+  "_persist_cache": [
+    "cache_file",
+    "payload"
+  ],
+  "_ensure_gitignore": [
+    "cache_dir"
+  ],
+  "store_csv": [
+    "output_path",
+    "files_complexities",
+    "sort",
+    "show_details",
+    "max_complexity"
+  ],
+  "_RULE_ID": [],
+  "_SCHEMA": [],
+  "_INFO_URI": [],
+  "_HELP_URI": [],
+  "_get_version": [],
+  "store_sarif": [
+    "output_path",
+    "files",
+    "max_complexity"
+  ],
+  "_CHECK_NAME": [],
+  "_DEFAULT_SEVERITY": [],
+  "_build_description": [
+    "function_name",
+    "complexity",
+    "max_complexity"
+  ],
+  "_build_fingerprint": [
+    "path",
+    "function_name",
+    "line_start"
+  ],
+  "store_gitlab": [
+    "output_path",
+    "files",
+    "max_complexity"
+  ],
+  "output_summary": [
+    "console",
+    "files",
+    "failed_only",
+    "sort",
+    "ignore_complexity",
+    "max_complexity",
+    "previous_functions",
+    "snapshot_map",
+    "plain",
+    "top"
+  ],
+  "output_plain": [
+    "console",
+    "file_entries"
+  ],
+  "truncate_top_n": [
+    "file_entries",
+    "n"
+  ],
+  "output_file_entries": [
+    "console",
+    "file_entries",
+    "failing_functions",
+    "ignore_complexity",
+    "previous_functions",
+    "max_complexity"
+  ],
+  "format_status_text": [
+    "passed"
+  ],
+  "output_delta_text": [
+    "previous_functions",
+    "function",
+    "max_complexity"
+  ],
+  "_is_function_passing": [
+    "function",
+    "file_path",
+    "file_name",
+    "max_complexity",
+    "snapshot_map"
+  ],
+  "build_output_rows": [
+    "files",
+    "failed_only",
+    "sort",
+    "max_complexity",
+    "snapshot_map"
+  ],
+  "sort_functions": [
+    "functions",
+    "sort"
+  ],
+  "normalize_path": [
+    "path",
+    "file_name"
+  ],
+  "print_invalid_paths": [
+    "console",
+    "quiet",
+    "invalid_paths"
+  ],
+  "has_success_functions": [
+    "files",
+    "max_complexity"
+  ],
+  "_STATUS_REGRESSED": [],
+  "_STATUS_IMPROVED": [],
+  "_STATUS_UNCHANGED": [],
+  "_STATUS_NEW": [],
+  "_STATUS_REMOVED": [],
+  "DiffEntry": {
+    "status": [
+      "self"
+    ],
+    "delta": [
+      "self"
+    ]
+  },
+  "_git_root": [
+    "cwd"
+  ],
+  "_file_content_at_ref": [
+    "git_ref",
+    "path_from_root",
+    "cwd"
+  ],
+  "_build_func_map": [
+    "file"
+  ],
+  "compute_diff": [
+    "current_files",
+    "git_ref",
+    "invocation_path"
+  ],
+  "_format_entry": [
+    "e"
+  ],
+  "_build_diff_summary": [
+    "changed"
+  ],
+  "has_regressions": [
+    "entries",
+    "max_complexity"
+  ],
+  "format_diff": [
+    "entries",
+    "git_ref"
+  ],
+  "handle_snapshot_file_creation": [
+    "create_snapshot",
+    "snapshot_file_path",
+    "max_complexity_allowed",
+    "files_complexities"
+  ],
+  "handle_snapshot_functions_load": [
+    "snapshot_file_path"
+  ],
+  "handle_snapshot_watermark": [
+    "snapshot_watermark",
+    "snapshot_exists",
+    "snapshot_file_path",
+    "files_complexities",
+    "snapshot_files",
+    "max_complexity_allowed"
+  ],
+  "build_snapshot_map": [
+    "snapshot_files"
+  ],
+  "_format_function_location": [
+    "path",
+    "file_name",
+    "function_name"
+  ],
+  "_is_legacy_snapshot": [
+    "snapshot_files"
+  ],
+  "DEFAULT_OUTPUT_FILENAMES": [],
+  "LEGACY_OUTPUT_FLAGS": [],
+  "LEGACY_OUTPUT_CONFIG_KEYS": [],
+  "store_json": [
+    "output_path",
+    "files_complexities",
+    "show_details",
+    "max_complexity"
+  ]
+}
