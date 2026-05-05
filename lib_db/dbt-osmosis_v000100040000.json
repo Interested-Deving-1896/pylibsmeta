@@ -1,0 +1,2627 @@
+{
+  "_SCHEMA_VERSION_RE": [],
+  "_KNOWN_FUSION_MANIFEST_SCHEMA_VERSIONS": [],
+  "_set_project_manifest": [
+    "project",
+    "manifest"
+  ],
+  "_cleanup_stale_adapter": [
+    "registered_adapter",
+    "adapter_type"
+  ],
+  "_detect_fusion_manifest": [
+    "project_dir"
+  ],
+  "__all__": [],
+  "discover_project_dir": [],
+  "discover_profiles_dir": [
+    "project_dir"
+  ],
+  "DbtConfiguration": {
+    "__post_init__": [
+      "self"
+    ],
+    "to_interface_config": [
+      "self"
+    ]
+  },
+  "MAX_PREVIEW_LENGTH": [],
+  "DEFAULT_CONNECTION_TTL": [],
+  "DbtProjectContext": {
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ],
+    "close": [
+      "self"
+    ],
+    "from_project": [
+      "cls",
+      "config",
+      "project"
+    ],
+    "runtime_cfg": [
+      "self"
+    ],
+    "manifest": [
+      "self",
+      "value"
+    ],
+    "sql_parser": [
+      "self"
+    ],
+    "macro_parser": [
+      "self"
+    ],
+    "adapter": [
+      "self"
+    ],
+    "manifest_mutex": [
+      "self"
+    ]
+  },
+  "_add_cross_project_references": [
+    "manifest",
+    "dbt_loom",
+    "project_name"
+  ],
+  "_bind_project_adapter": [
+    "project"
+  ],
+  "create_dbt_project_context": [
+    "config"
+  ],
+  "_reload_manifest": [
+    "context"
+  ],
+  "config_to_namespace": [
+    "config"
+  ],
+  "_call_with_retry": [
+    "func",
+    "max_retries",
+    "initial_delay"
+  ],
+  "_redact_credentials": [
+    "text"
+  ],
+  "_normalize_azure_ad_token_scope": [
+    "scope"
+  ],
+  "get_llm_client": [],
+  "_create_llm_prompt_for_model_docs_as_json": [
+    "sql_content",
+    "existing_context",
+    "upstream_docs"
+  ],
+  "_create_llm_prompt_for_column": [
+    "column_name",
+    "existing_context",
+    "table_name",
+    "upstream_docs"
+  ],
+  "_create_llm_prompt_for_table": [
+    "sql_content",
+    "table_name",
+    "upstream_docs"
+  ],
+  "generate_model_spec_as_json": [
+    "sql_content",
+    "upstream_docs",
+    "existing_context",
+    "temperature"
+  ],
+  "generate_column_doc": [
+    "column_name",
+    "existing_context",
+    "table_name",
+    "upstream_docs",
+    "temperature"
+  ],
+  "generate_table_doc": [
+    "sql_content",
+    "table_name",
+    "upstream_docs",
+    "temperature"
+  ],
+  "_create_llm_prompt_for_semantic_analysis": [
+    "column_name",
+    "data_type",
+    "table_name",
+    "model_context",
+    "upstream_columns"
+  ],
+  "analyze_column_semantics": [
+    "column_name",
+    "data_type",
+    "table_name",
+    "model_context",
+    "upstream_columns",
+    "temperature"
+  ],
+  "generate_semantic_description": [
+    "column_name",
+    "semantic_analysis",
+    "table_name",
+    "upstream_description",
+    "temperature"
+  ],
+  "_create_llm_prompt_for_nl_to_sql": [
+    "query",
+    "available_sources",
+    "schema_context"
+  ],
+  "_create_llm_prompt_for_nl_to_dbt_model": [
+    "query",
+    "available_sources",
+    "schema_context"
+  ],
+  "generate_sql_from_nl": [
+    "query",
+    "available_sources",
+    "schema_context",
+    "temperature"
+  ],
+  "generate_dbt_model_from_nl": [
+    "query",
+    "available_sources",
+    "schema_context",
+    "temperature"
+  ],
+  "ColumnTransformation": {
+    "to_sql_select": [
+      "self"
+    ]
+  },
+  "StagingModelSpec": {
+    "to_sql": [
+      "self"
+    ]
+  },
+  "_create_staging_spec_prompt": [
+    "source_name",
+    "columns",
+    "table_description",
+    "source_type"
+  ],
+  "_create_staging_sql_refinement_prompt": [
+    "initial_spec",
+    "feedback"
+  ],
+  "generate_staging_model_spec": [
+    "source_name",
+    "columns",
+    "table_description",
+    "source_type",
+    "temperature"
+  ],
+  "generate_staging_sql": [
+    "source_name",
+    "columns",
+    "table_description",
+    "source_type",
+    "temperature"
+  ],
+  "DocumentationSuggestion": {
+    "__post_init__": [
+      "self"
+    ]
+  },
+  "_create_style_aware_prompt_for_column": [
+    "column_name",
+    "existing_context",
+    "table_name",
+    "upstream_docs",
+    "style_profile",
+    "style_examples",
+    "current_description"
+  ],
+  "_create_style_aware_prompt_for_table": [
+    "sql_content",
+    "table_name",
+    "upstream_docs",
+    "style_profile",
+    "style_examples",
+    "current_description"
+  ],
+  "generate_style_aware_column_doc": [
+    "column_name",
+    "existing_context",
+    "table_name",
+    "upstream_docs",
+    "temperature",
+    "style_profile",
+    "style_examples",
+    "current_description"
+  ],
+  "generate_style_aware_table_doc": [
+    "sql_content",
+    "table_name",
+    "upstream_docs",
+    "temperature",
+    "style_profile",
+    "style_examples",
+    "current_description"
+  ],
+  "suggest_documentation_improvements": [
+    "target",
+    "current_description",
+    "column_name",
+    "table_name",
+    "sql_content",
+    "existing_context",
+    "upstream_docs",
+    "style_profile",
+    "style_examples",
+    "temperature"
+  ],
+  "_order_preserving_union": [
+    "primary",
+    "secondary"
+  ],
+  "TransformOperation": {
+    "result": [
+      "self"
+    ],
+    "metadata": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "context",
+      "node"
+    ],
+    "__rshift__": [
+      "self",
+      "next_op"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "TransformPipeline": {
+    "metadata": [
+      "self"
+    ],
+    "__rshift__": [
+      "self",
+      "next_op"
+    ],
+    "__call__": [
+      "self",
+      "context",
+      "node"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "_transform_op": [
+    "name"
+  ],
+  "inherit_upstream_column_knowledge": [
+    "context",
+    "node"
+  ],
+  "inject_missing_columns": [
+    "context",
+    "node"
+  ],
+  "remove_columns_not_in_database": [
+    "context",
+    "node"
+  ],
+  "sort_columns_as_in_database": [
+    "context",
+    "node"
+  ],
+  "sort_columns_alphabetically": [
+    "context",
+    "node"
+  ],
+  "sort_columns_as_configured": [
+    "context",
+    "node"
+  ],
+  "synchronize_data_types": [
+    "context",
+    "node"
+  ],
+  "_collect_upstream_documents": [
+    "node",
+    "context"
+  ],
+  "_synthesize_bulk_documentation": [
+    "node",
+    "upstream_docs",
+    "context"
+  ],
+  "_synthesize_node_documentation": [
+    "node",
+    "upstream_docs",
+    "context"
+  ],
+  "_synthesize_individual_column_documentation": [
+    "node",
+    "upstream_docs",
+    "context"
+  ],
+  "synthesize_missing_documentation_with_openai": [
+    "context",
+    "node"
+  ],
+  "apply_semantic_analysis": [
+    "context",
+    "node"
+  ],
+  "suggest_improved_documentation": [
+    "context",
+    "node",
+    "threshold",
+    "learning_mode"
+  ],
+  "_llm_available": [],
+  "commit_yamls": [
+    "context"
+  ],
+  "logger": [],
+  "TestSuggestion": {
+    "__test__": [],
+    "to_yaml_dict": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ModelTestAnalysis": {
+    "get_test_summary": [
+      "self"
+    ]
+  },
+  "_iter_node_columns": [
+    "node"
+  ],
+  "_get_manifest_test_name": [
+    "test_metadata"
+  ],
+  "_get_manifest_test_config": [
+    "test_node"
+  ],
+  "_get_existing_tests_for_node": [
+    "manifest",
+    "node"
+  ],
+  "TestPatternExtractor": {
+    "__test__": [],
+    "__init__": [
+      "self",
+      "context"
+    ],
+    "extract_patterns": [
+      "self"
+    ],
+    "_analyze_node": [
+      "self",
+      "node"
+    ],
+    "_get_column_pattern": [
+      "self",
+      "column_name"
+    ],
+    "_analyze_test": [
+      "self",
+      "test",
+      "col_name",
+      "pattern",
+      "data_type"
+    ],
+    "_learn_patterns": [
+      "self"
+    ],
+    "_get_top_tests_for_pattern": [
+      "self",
+      "pattern",
+      "top_n"
+    ],
+    "get_suggestions_for_column": [
+      "self",
+      "column_name",
+      "data_type"
+    ]
+  },
+  "AITestSuggester": {
+    "__init__": [
+      "self",
+      "context",
+      "pattern_extractor"
+    ],
+    "suggest_tests_for_node": [
+      "self",
+      "node",
+      "use_ai",
+      "temperature"
+    ],
+    "_pattern_suggest_tests": [
+      "self",
+      "node"
+    ],
+    "_ai_suggest_tests": [
+      "self",
+      "node",
+      "temperature"
+    ],
+    "_create_test_suggestion_prompt": [
+      "self",
+      "node"
+    ],
+    "_parse_ai_response": [
+      "self",
+      "content"
+    ]
+  },
+  "suggest_tests_for_model": [
+    "context",
+    "node",
+    "use_ai",
+    "temperature"
+  ],
+  "suggest_tests_for_project": [
+    "context",
+    "use_ai",
+    "temperature"
+  ],
+  "MigrationFormat": {
+    "SQL": [],
+    "JSON": [],
+    "MARKDOWN": []
+  },
+  "MigrationStep": {
+    "__str__": [
+      "self"
+    ]
+  },
+  "MigrationPlan": {
+    "has_breaking_changes": [
+      "self"
+    ],
+    "safe_steps": [
+      "self"
+    ],
+    "breaking_steps": [
+      "self"
+    ],
+    "to_sql": [
+      "self"
+    ],
+    "to_markdown": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ]
+  },
+  "MigrationPlanner": {
+    "__init__": [
+      "self",
+      "context"
+    ],
+    "plan_for_result": [
+      "self",
+      "result"
+    ],
+    "plan_for_results": [
+      "self",
+      "results"
+    ],
+    "export_plan": [
+      "self",
+      "plan",
+      "output_path"
+    ],
+    "_detect_dialect": [
+      "self"
+    ],
+    "_sort_changes_by_dependency": [
+      "self",
+      "changes"
+    ],
+    "_plan_change": [
+      "self",
+      "change",
+      "node"
+    ],
+    "_plan_column_added": [
+      "self",
+      "change",
+      "table_name"
+    ],
+    "_plan_column_removed": [
+      "self",
+      "change",
+      "table_name"
+    ],
+    "_plan_column_renamed": [
+      "self",
+      "change",
+      "table_name"
+    ],
+    "_plan_type_changed": [
+      "self",
+      "change",
+      "table_name"
+    ],
+    "_quote_identifier": [
+      "self",
+      "identifier"
+    ]
+  },
+  "_create_yaml_instance": [],
+  "_default_thread_pool_workers": [],
+  "EMPTY_STRING": [],
+  "YamlRefactorSettings": {},
+  "YamlRefactorContext": {
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ],
+    "close": [
+      "self"
+    ],
+    "register_mutations": [
+      "self",
+      "count"
+    ],
+    "register_disk_mutation": [
+      "self",
+      "count"
+    ],
+    "mutation_count": [
+      "self"
+    ],
+    "mutated": [
+      "self"
+    ],
+    "disk_mutation_count": [
+      "self"
+    ],
+    "register_written_file": [
+      "self",
+      "path"
+    ],
+    "written_files": [
+      "self"
+    ],
+    "resolved_formatter": [
+      "self"
+    ],
+    "manifest": [
+      "self"
+    ],
+    "runtime_cfg": [
+      "self"
+    ],
+    "adapter": [
+      "self"
+    ],
+    "project_root": [
+      "self"
+    ],
+    "credentials": [
+      "self"
+    ],
+    "database_type": [
+      "self"
+    ],
+    "fusion_compat": [
+      "self"
+    ],
+    "source_definitions": [
+      "self"
+    ],
+    "ignore_patterns": [
+      "self"
+    ],
+    "yaml_settings": [
+      "self"
+    ],
+    "read_catalog": [
+      "self"
+    ],
+    "_find_first": [
+      "self",
+      "coll",
+      "predicate",
+      "default"
+    ],
+    "__post_init__": [
+      "self"
+    ],
+    "_dbt_thread_count": [
+      "self"
+    ]
+  },
+  "_sync_doc_section": [
+    "context",
+    "node",
+    "doc_section"
+  ],
+  "_get_resource_type_key": [
+    "node"
+  ],
+  "_prepare_yaml_document": [
+    "context",
+    "node",
+    "current_path"
+  ],
+  "_finalize_synced_document": [
+    "context",
+    "target_path",
+    "doc"
+  ],
+  "_get_or_create_source": [
+    "doc",
+    "source_name",
+    "table_name"
+  ],
+  "_get_or_create_source_table": [
+    "doc_source",
+    "table_name"
+  ],
+  "_sync_source_node": [
+    "context",
+    "node",
+    "doc",
+    "resource_key"
+  ],
+  "_deduplicate_model_entries": [
+    "doc_list",
+    "model_name"
+  ],
+  "_get_or_create_model": [
+    "doc_list",
+    "model_name"
+  ],
+  "_deduplicate_versions": [
+    "doc_model"
+  ],
+  "_get_or_create_version": [
+    "doc_model",
+    "version"
+  ],
+  "_sync_versioned_model": [
+    "context",
+    "node",
+    "doc_model"
+  ],
+  "_sync_non_versioned_node": [
+    "context",
+    "node",
+    "doc_model"
+  ],
+  "_sync_model_or_seed_node": [
+    "context",
+    "node",
+    "doc",
+    "resource_key"
+  ],
+  "_validate_no_duplicate_sync_entries": [
+    "doc",
+    "target_path"
+  ],
+  "_preflight_sync_group": [
+    "context",
+    "nodes"
+  ],
+  "_cleanup_empty_sections": [
+    "doc"
+  ],
+  "_resolve_sync_yaml_paths": [
+    "context",
+    "node"
+  ],
+  "_sync_node_group_to_yaml": [
+    "context",
+    "nodes"
+  ],
+  "_order_sync_group_nodes": [
+    "nodes"
+  ],
+  "_sync_single_node_to_yaml": [
+    "context",
+    "node"
+  ],
+  "_group_sync_nodes": [
+    "context"
+  ],
+  "sync_node_to_yaml": [
+    "context",
+    "node"
+  ],
+  "_generation_sort_key": [
+    "generation"
+  ],
+  "_column_to_dict": [
+    "column"
+  ],
+  "_apply_effective_column_metadata": [
+    "column_data"
+  ],
+  "_initialize_column_knowledge": [
+    "column",
+    "node"
+  ],
+  "_strip_progenitor_override_controls": [
+    "column_data"
+  ],
+  "_raw_model_version_value": [
+    "value"
+  ],
+  "_normalize_model_version_value": [
+    "value"
+  ],
+  "_can_use_numeric_version_fallback": [
+    "left",
+    "right"
+  ],
+  "_version_values_match": [
+    "left",
+    "right"
+  ],
+  "_get_member_model_version": [
+    "member"
+  ],
+  "_versioned_model_yaml_view": [
+    "model",
+    "member"
+  ],
+  "_preserve_column_progenitor_override": [
+    "graph_node",
+    "node_yaml",
+    "column_name"
+  ],
+  "_build_node_ancestor_tree": [
+    "manifest",
+    "node",
+    "tree",
+    "visited",
+    "depth",
+    "max_depth"
+  ],
+  "_get_node_yaml": [
+    "context",
+    "member"
+  ],
+  "_collect_column_variants": [
+    "context",
+    "node"
+  ],
+  "_get_unrendered": [
+    "context",
+    "k",
+    "name",
+    "ancestor",
+    "node_column_variants"
+  ],
+  "_build_graph_edge": [
+    "context",
+    "node",
+    "name",
+    "incoming",
+    "ancestor",
+    "node_column_variants"
+  ],
+  "_filter_skipped_inherited_meta_keys": [
+    "context",
+    "graph_edge",
+    "node",
+    "name"
+  ],
+  "_clean_graph_edge": [
+    "context",
+    "graph_edge",
+    "generation",
+    "node",
+    "name"
+  ],
+  "_find_matching_column": [
+    "ancestor",
+    "column_variants"
+  ],
+  "_merge_graph_node_data": [
+    "graph_node",
+    "graph_edge"
+  ],
+  "_get_progenitor_override": [
+    "column_name",
+    "node_yaml"
+  ],
+  "_get_inherited_metadata_from_progenitor": [
+    "context",
+    "column_name",
+    "progenitor_id",
+    "node_column_variants",
+    "progenitor_knowledge_cache"
+  ],
+  "_apply_progenitor_overrides": [
+    "context",
+    "node",
+    "column_knowledge_graph",
+    "progenitor_alternatives",
+    "node_yaml",
+    "node_column_variants"
+  ],
+  "_build_column_knowledge_graph": [
+    "context",
+    "node"
+  ],
+  "SchemaFileLocation": {
+    "is_valid": [
+      "self"
+    ]
+  },
+  "SchemaFileMigration": {},
+  "_get_yaml_path_template": [
+    "context",
+    "node"
+  ],
+  "get_current_yaml_path": [
+    "context",
+    "node"
+  ],
+  "get_target_yaml_path": [
+    "context",
+    "node"
+  ],
+  "build_yaml_file_mapping": [
+    "context",
+    "create_missing_sources"
+  ],
+  "create_missing_source_yamls": [
+    "context"
+  ],
+  "SourceGenerationResult": {},
+  "DocumentationCheckResult": {},
+  "_resolve_staging_output_paths": [
+    "context",
+    "staging_name",
+    "staging_path"
+  ],
+  "_dump_generated_yaml": [
+    "data"
+  ],
+  "generate_sources_from_database": [
+    "context",
+    "source_name",
+    "schema_name",
+    "exclude_schemas",
+    "exclude_tables",
+    "quote_identifiers",
+    "output_path"
+  ],
+  "generate_staging_from_source": [
+    "context",
+    "source_name",
+    "table_name",
+    "use_ai",
+    "staging_path"
+  ],
+  "check_documentation": [
+    "context",
+    "model_filter",
+    "min_model_length",
+    "min_column_length"
+  ],
+  "_get_source_definition": [
+    "context",
+    "source_name",
+    "table_name"
+  ],
+  "_hookspec": [],
+  "hookimpl": [],
+  "get_candidates": [
+    "name",
+    "node",
+    "context"
+  ],
+  "FuzzyCaseMatching": {
+    "get_candidates": [
+      "self",
+      "name",
+      "node",
+      "context"
+    ]
+  },
+  "FuzzyPrefixMatching": {
+    "get_candidates": [
+      "self",
+      "name",
+      "node",
+      "context"
+    ]
+  },
+  "get_plugin_manager": [],
+  "T": [],
+  "_MISSING": [],
+  "_CatalogArtifactProtocol": {
+    "write": [
+      "self",
+      "path"
+    ]
+  },
+  "_CatalogArtifactFactoryProtocol": {
+    "from_dict": [
+      "data"
+    ],
+    "from_results": []
+  },
+  "_catalog_artifact_factory": [],
+  "_as_catalog_results": [
+    "artifact"
+  ],
+  "_WarehouseColumnCacheKey": {},
+  "_COLUMN_LIST_CACHE_LOCK": [],
+  "_build_column_cache_key": [
+    "context",
+    "rendered_relation"
+  ],
+  "ConfigurationError": {
+    "__init__": [
+      "self",
+      "message",
+      "file_path"
+    ]
+  },
+  "ConfigSourceName": {
+    "COLUMN_META": [],
+    "NODE_META": [],
+    "CONFIG_EXTRA": [],
+    "CONFIG_META": [],
+    "UNRENDERED_CONFIG": [],
+    "CONTEXT_SETTINGS": [],
+    "PROJECT_VARS": [],
+    "SUPPLEMENTARY_FILE": [],
+    "FALLBACK": []
+  },
+  "PropertySource": {
+    "MANIFEST": [],
+    "YAML": [],
+    "DATABASE": []
+  },
+  "_get_mapping_value": [
+    "source",
+    "key"
+  ],
+  "_get_options_value": [
+    "options",
+    "kebab_key",
+    "snake_key"
+  ],
+  "_same_setting_value": [
+    "left",
+    "right"
+  ],
+  "_get_explicit_context_setting_value": [
+    "context",
+    "setting_name"
+  ],
+  "_merge_column_meta": [
+    "legacy_meta",
+    "config_meta"
+  ],
+  "_get_effective_column_meta": [
+    "column"
+  ],
+  "_get_effective_column_tags": [
+    "column"
+  ],
+  "ConfigurationSource": {
+    "__init__": [
+      "self",
+      "name"
+    ],
+    "name": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "key"
+    ]
+  },
+  "ConfigMetaSource": {
+    "__init__": [
+      "self",
+      "node"
+    ],
+    "get": [
+      "self",
+      "key"
+    ]
+  },
+  "UnrenderedConfigSource": {
+    "__init__": [
+      "self",
+      "node"
+    ],
+    "get": [
+      "self",
+      "key"
+    ]
+  },
+  "ProjectVarsSource": {
+    "__init__": [
+      "self",
+      "context"
+    ],
+    "get": [
+      "self",
+      "key"
+    ]
+  },
+  "SupplementaryFileSource": {
+    "__init__": [
+      "self",
+      "context"
+    ],
+    "_load_config": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "key"
+    ]
+  },
+  "SettingsResolver": {
+    "resolve": [
+      "self",
+      "setting_name",
+      "node",
+      "column_name"
+    ],
+    "has": [
+      "self",
+      "setting_name",
+      "node",
+      "column_name"
+    ],
+    "get_precedence_chain": [
+      "self",
+      "setting_name",
+      "node",
+      "column_name"
+    ],
+    "get_yaml_path_template": [
+      "self",
+      "node"
+    ]
+  },
+  "_SETTINGS_RESOLVER": [],
+  "_find_first": [
+    "coll",
+    "predicate",
+    "default"
+  ],
+  "normalize_column_name": [
+    "column",
+    "credentials_type"
+  ],
+  "_maybe_use_precise_dtype": [
+    "col",
+    "settings",
+    "node"
+  ],
+  "_get_setting_for_node": [
+    "node",
+    "col"
+  ],
+  "resolve_setting": [
+    "node",
+    "col"
+  ],
+  "get_columns": [
+    "context",
+    "relation"
+  ],
+  "_load_catalog": [
+    "settings"
+  ],
+  "_generate_catalog": [
+    "context"
+  ],
+  "PropertyAccessor": {
+    "__init__": [
+      "self",
+      "context"
+    ],
+    "_get_from_manifest": [
+      "self",
+      "node",
+      "property_key",
+      "column_name"
+    ],
+    "_get_from_yaml": [
+      "self",
+      "node",
+      "property_key",
+      "column_name"
+    ],
+    "_has_unrendered_jinja": [
+      "self",
+      "value"
+    ],
+    "get": [
+      "self",
+      "property_key",
+      "node"
+    ],
+    "get_description": [
+      "self",
+      "node"
+    ],
+    "get_meta": [
+      "self",
+      "node"
+    ],
+    "has_property": [
+      "self",
+      "property_key",
+      "node"
+    ]
+  },
+  "ProjectStyleProfile": {
+    "to_prompt_context": [
+      "self",
+      "max_examples"
+    ]
+  },
+  "_analyze_description_lengths": [
+    "descriptions"
+  ],
+  "_extract_common_phrases": [
+    "descriptions",
+    "min_frequency"
+  ],
+  "_detect_terminology_patterns": [
+    "descriptions",
+    "column_names"
+  ],
+  "_detect_tone_markers": [
+    "descriptions"
+  ],
+  "analyze_project_documentation_style": [
+    "context",
+    "max_nodes",
+    "max_columns_per_node"
+  ],
+  "find_similar_documented_nodes": [
+    "context",
+    "target_node",
+    "max_results"
+  ],
+  "extract_style_examples": [
+    "context",
+    "target_node",
+    "max_examples"
+  ],
+  "LintLevel": {
+    "ERROR": [],
+    "WARNING": [],
+    "INFO": [],
+    "CONVENTION": []
+  },
+  "LintViolation": {
+    "__str__": [
+      "self"
+    ]
+  },
+  "LintResult": {
+    "__bool__": [
+      "self"
+    ],
+    "errors": [
+      "self"
+    ],
+    "warnings": [
+      "self"
+    ],
+    "summary": [
+      "self"
+    ]
+  },
+  "LintRule": {
+    "__init__": [
+      "self",
+      "rule_id",
+      "description",
+      "level"
+    ],
+    "__call__": [
+      "self",
+      "ast",
+      "sql"
+    ],
+    "_find_line_number": [
+      "self",
+      "sql",
+      "snippet"
+    ]
+  },
+  "KeywordCapitalizationRule": {
+    "__init__": [
+      "self",
+      "level",
+      "case"
+    ],
+    "__call__": [
+      "self",
+      "ast",
+      "sql"
+    ]
+  },
+  "LineLengthRule": {
+    "__init__": [
+      "self",
+      "max_length",
+      "level"
+    ],
+    "__call__": [
+      "self",
+      "ast",
+      "sql"
+    ]
+  },
+  "SelectStarRule": {
+    "__init__": [
+      "self",
+      "level"
+    ],
+    "__call__": [
+      "self",
+      "ast",
+      "sql"
+    ]
+  },
+  "TableAliasRule": {
+    "__init__": [
+      "self",
+      "min_length",
+      "level"
+    ],
+    "__call__": [
+      "self",
+      "ast",
+      "sql"
+    ]
+  },
+  "QuotedIdentifierRule": {
+    "__init__": [
+      "self",
+      "level"
+    ],
+    "__call__": [
+      "self",
+      "ast",
+      "sql"
+    ]
+  },
+  "SQLLinter": {
+    "__init__": [
+      "self",
+      "dialect",
+      "enabled_rules",
+      "disabled_rules"
+    ],
+    "_filter_rules": [
+      "self",
+      "enabled_rules",
+      "disabled_rules"
+    ],
+    "add_rule": [
+      "self",
+      "rule"
+    ],
+    "lint": [
+      "self",
+      "sql",
+      "compiled_sql"
+    ],
+    "_lint_dbt_sql": [
+      "self",
+      "context",
+      "raw_sql"
+    ],
+    "_iter_model_nodes": [
+      "self",
+      "context",
+      "fqn_filter"
+    ],
+    "lint_model": [
+      "self",
+      "context",
+      "model_name"
+    ],
+    "lint_project": [
+      "self",
+      "context",
+      "fqn_filter"
+    ]
+  },
+  "lint_sql_code": [
+    "context",
+    "raw_sql",
+    "dialect",
+    "rules",
+    "disabled_rules"
+  ],
+  "_is_fqn_match": [
+    "node",
+    "fqns"
+  ],
+  "_is_file_match": [
+    "node",
+    "paths",
+    "root"
+  ],
+  "_topological_sort": [
+    "candidate_nodes"
+  ],
+  "_iter_candidate_nodes": [
+    "context"
+  ],
+  "DocumentationGap": {
+    "to_dict": [
+      "self"
+    ]
+  },
+  "DiscoveryResult": {
+    "high_priority_gaps": [
+      "self"
+    ],
+    "medium_priority_gaps": [
+      "self"
+    ],
+    "low_priority_gaps": [
+      "self"
+    ],
+    "summary": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ]
+  },
+  "calculate_priority_score": [
+    "node",
+    "manifest",
+    "gap_type",
+    "context"
+  ],
+  "_get_dependents": [
+    "node",
+    "manifest"
+  ],
+  "_is_upstream_model": [
+    "node",
+    "manifest"
+  ],
+  "discover_undocumented_models": [
+    "context",
+    "min_columns",
+    "exclude_sources"
+  ],
+  "discover_undocumented_columns": [
+    "context",
+    "min_priority"
+  ],
+  "_check_model_documentation": [
+    "node",
+    "context"
+  ],
+  "_check_column_documentation": [
+    "col_name",
+    "col",
+    "context"
+  ],
+  "get_documentation_coverage": [
+    "context"
+  ],
+  "StagingGenerationResult": {},
+  "_get_source_table_columns": [
+    "project",
+    "source_name",
+    "table_name"
+  ],
+  "_get_source_table_from_manifest": [
+    "project",
+    "source_name",
+    "table_name"
+  ],
+  "_infer_staging_model_path": [
+    "project",
+    "settings",
+    "staging_name"
+  ],
+  "generate_staging_for_source": [
+    "project",
+    "settings",
+    "source_name",
+    "table_name",
+    "source_type",
+    "temperature"
+  ],
+  "generate_staging_for_all_sources": [
+    "project",
+    "settings",
+    "source_pattern",
+    "exclude_patterns",
+    "temperature"
+  ],
+  "_matches_pattern": [
+    "text",
+    "pattern"
+  ],
+  "write_staging_files": [
+    "result",
+    "dry_run"
+  ],
+  "_generate_staging_yaml": [
+    "spec"
+  ],
+  "ModelValidationStatus": {
+    "SUCCESS": [],
+    "COMPILE_ERROR": [],
+    "EXECUTION_ERROR": [],
+    "TIMEOUT": []
+  },
+  "ModelValidationResult": {},
+  "ValidationReport": {
+    "add_result": [
+      "self",
+      "result"
+    ],
+    "get_failed_models": [
+      "self"
+    ],
+    "get_success_rate": [
+      "self"
+    ]
+  },
+  "_ModelValidationTimeoutError": {
+    "__init__": [
+      "self",
+      "timeout_seconds",
+      "elapsed_seconds",
+      "detail"
+    ]
+  },
+  "_execute_sql_code_with_timeout": [
+    "context",
+    "compiled_sql",
+    "timeout_seconds"
+  ],
+  "validate_models": [
+    "context",
+    "models",
+    "timeout_seconds",
+    "quiet"
+  ],
+  "_validate_single_model": [
+    "context",
+    "node",
+    "unique_id",
+    "timeout_seconds"
+  ],
+  "ChangeCategory": {
+    "COLUMN_ADDED": [],
+    "COLUMN_REMOVED": [],
+    "COLUMN_RENAMED": [],
+    "TYPE_CHANGED": [],
+    "METADATA_CHANGED": []
+  },
+  "ChangeSeverity": {
+    "SAFE": [],
+    "MODERATE": [],
+    "BREAKING": []
+  },
+  "SchemaChange": {
+    "__str__": [
+      "self"
+    ]
+  },
+  "ColumnAdded": {
+    "__post_init__": [
+      "self"
+    ]
+  },
+  "ColumnRemoved": {
+    "__post_init__": [
+      "self"
+    ]
+  },
+  "ColumnRenamed": {
+    "__post_init__": [
+      "self"
+    ]
+  },
+  "ColumnTypeChanged": {
+    "__post_init__": [
+      "self"
+    ]
+  },
+  "SchemaDiffResult": {
+    "summary": [
+      "self"
+    ],
+    "has_changes": [
+      "self"
+    ],
+    "breaking_changes": [
+      "self"
+    ],
+    "safe_changes": [
+      "self"
+    ]
+  },
+  "SchemaDiff": {
+    "__init__": [
+      "self",
+      "context"
+    ],
+    "compare_node": [
+      "self",
+      "node"
+    ],
+    "compare_all": [
+      "self",
+      "nodes"
+    ],
+    "_detect_column_renames": [
+      "self",
+      "removed",
+      "added",
+      "database_columns",
+      "node"
+    ],
+    "_normalize_comparable_type": [
+      "data_type"
+    ],
+    "_classify_type_change": [
+      "self",
+      "old_type",
+      "new_type"
+    ],
+    "_is_type_narrowing": [
+      "self",
+      "old_type",
+      "new_type"
+    ]
+  },
+  "PLAN_OUTPUT_TRUNCATION_LENGTH": [],
+  "RestructureOperation": {},
+  "RestructureDeltaPlan": {},
+  "_generate_minimal_model_yaml": [
+    "node"
+  ],
+  "_generate_minimal_source_yaml": [
+    "node"
+  ],
+  "_create_operations_for_node": [
+    "context",
+    "uid",
+    "loc"
+  ],
+  "draft_restructure_delta_plan": [
+    "context"
+  ],
+  "pretty_print_plan": [
+    "plan"
+  ],
+  "_remove_models": [
+    "existing_doc",
+    "nodes"
+  ],
+  "_remove_seeds": [
+    "existing_doc",
+    "nodes"
+  ],
+  "_remove_sources": [
+    "existing_doc",
+    "nodes"
+  ],
+  "_has_section_content": [
+    "value"
+  ],
+  "_has_remaining_superseded_content": [
+    "existing_doc",
+    "original_doc"
+  ],
+  "_get_original_yaml_for_superseded_file": [
+    "yaml_handler_lock",
+    "path"
+  ],
+  "apply_restructure_plan": [
+    "context",
+    "plan"
+  ],
+  "run_external_formatter": [
+    "formatter_cmd",
+    "files",
+    "cwd",
+    "timeout"
+  ],
+  "_LOG_FILE_FORMAT": [],
+  "_LOG_PATH": [],
+  "_LOGGING_LEVEL": [],
+  "get_rotating_log_handler": [
+    "name",
+    "path",
+    "formatter"
+  ],
+  "get_logger": [
+    "name",
+    "level",
+    "path",
+    "formatter"
+  ],
+  "LOGGER": [],
+  "set_log_level": [
+    "level"
+  ],
+  "LogMethod": {
+    "__call__": []
+  },
+  "__getattr__": [
+    "name"
+  ],
+  "DbtAdapterProtocol": {
+    "acquire_connection": [
+      "self"
+    ],
+    "set_macro_resolver": [
+      "self",
+      "manifest"
+    ]
+  },
+  "DbtRuntimeConfigProtocol": {
+    "to_dict": [
+      "self"
+    ]
+  },
+  "DbtManifestProtocol": {
+    "build_flat_graph": [
+      "self"
+    ]
+  },
+  "DbtProjectContextProtocol": {
+    "runtime_cfg": [
+      "self"
+    ],
+    "manifest": [
+      "self"
+    ],
+    "adapter": [
+      "self"
+    ],
+    "manifest_mutex": [
+      "self"
+    ]
+  },
+  "YamlRefactorContextProtocol": {
+    "project": [
+      "self"
+    ],
+    "mutation_count": [
+      "self"
+    ],
+    "mutated": [
+      "self"
+    ],
+    "source_definitions": [
+      "self"
+    ],
+    "ignore_patterns": [
+      "self"
+    ],
+    "yaml_settings": [
+      "self"
+    ],
+    "fusion_compat": [
+      "self"
+    ],
+    "read_catalog": [
+      "self"
+    ],
+    "register_mutations": [
+      "self",
+      "count"
+    ]
+  },
+  "ColumnInfoProtocol": {
+    "to_dict": [
+      "self",
+      "omit_none"
+    ]
+  },
+  "ResultNodeProtocol": {
+    "is_relational": [
+      "self"
+    ],
+    "is_ephemeral_model": [
+      "self"
+    ]
+  },
+  "ModelNodeProtocol": {
+    "has_documented_parent": [
+      "self"
+    ]
+  },
+  "SourceDefinitionProtocol": {},
+  "SeedNodeProtocol": {},
+  "_has_jinja": [
+    "code"
+  ],
+  "compile_sql_code": [
+    "context",
+    "raw_sql"
+  ],
+  "execute_sql_code": [
+    "context",
+    "raw_sql"
+  ],
+  "OsmosisError": {},
+  "MissingOsmosisConfig": {},
+  "ValidationError": {},
+  "YamlValidationError": {},
+  "YAMLError": {},
+  "PathResolutionError": {},
+  "DatabaseError": {},
+  "IntrospectionError": {},
+  "CatalogGenerationError": {},
+  "TransformError": {},
+  "LLMError": {},
+  "LLMConfigurationError": {},
+  "LLMResponseError": {},
+  "_merge_preserved_sections": [
+    "filtered_data",
+    "original_data"
+  ],
+  "_strip_eof_blank_lines": [
+    "content"
+  ],
+  "_write_unique_temp_file": [
+    "path",
+    "content"
+  ],
+  "_cleanup_temp_path": [
+    "temp_path"
+  ],
+  "_write_yaml": [
+    "yaml_handler",
+    "yaml_handler_lock",
+    "path",
+    "data",
+    "dry_run",
+    "mutation_tracker",
+    "strip_eof_blank_lines",
+    "written_file_tracker",
+    "allow_overwrite"
+  ],
+  "_replace_atomically": [
+    "temp_path",
+    "target_path"
+  ],
+  "MANAGED_RESOURCE_TOP_LEVEL_KEYS": [],
+  "MANAGED_TOP_LEVEL_KEYS": [],
+  "_is_nested_column_description_value": [
+    "dumper",
+    "data"
+  ],
+  "_partition_yaml_top_level_sections": [
+    "data"
+  ],
+  "_filter_yaml_content": [
+    "data"
+  ],
+  "OsmosisYAML": {
+    "load": [
+      "self",
+      "stream"
+    ]
+  },
+  "create_yaml_instance": [
+    "indent_mapping",
+    "indent_sequence",
+    "indent_offset",
+    "width",
+    "preserve_quotes",
+    "default_flow_style",
+    "encoding"
+  ],
+  "ValidationSeverity": {
+    "ERROR": [],
+    "WARNING": [],
+    "INFO": []
+  },
+  "ValidationIssue": {
+    "__str__": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ]
+  },
+  "ValidationResult": {
+    "__post_init__": [
+      "self"
+    ],
+    "add_issue": [
+      "self",
+      "issue"
+    ],
+    "add_error": [
+      "self",
+      "code",
+      "message",
+      "file_path",
+      "line_number",
+      "column_name",
+      "fixable",
+      "context"
+    ],
+    "add_warning": [
+      "self",
+      "code",
+      "message",
+      "file_path",
+      "line_number",
+      "column_name",
+      "fixable",
+      "context"
+    ],
+    "add_info": [
+      "self",
+      "code",
+      "message",
+      "file_path",
+      "line_number",
+      "column_name",
+      "fixable",
+      "context"
+    ],
+    "get_errors": [
+      "self"
+    ],
+    "get_warnings": [
+      "self"
+    ],
+    "get_fixable": [
+      "self"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "__bool__": [
+      "self"
+    ],
+    "summary": [
+      "self"
+    ]
+  },
+  "Validator": {
+    "__init__": [
+      "self",
+      "auto_fix"
+    ],
+    "validate": [
+      "self",
+      "data",
+      "file_path"
+    ],
+    "_validate": [
+      "self",
+      "data",
+      "result",
+      "file_path"
+    ]
+  },
+  "_default_validators": [],
+  "StructureValidator": {
+    "__init__": [
+      "self",
+      "auto_fix"
+    ],
+    "_validate": [
+      "self",
+      "data",
+      "result",
+      "file_path"
+    ]
+  },
+  "TestConfigValidator": {
+    "_VERSION_COLUMN_INCLUDE_ALL": [],
+    "VALID_TESTS": [],
+    "_is_string_list": [
+      "self",
+      "value"
+    ],
+    "_add_version_column_selector_error": [
+      "self",
+      "result",
+      "file_path",
+      "owner_name",
+      "message",
+      "selector",
+      "selector_value"
+    ],
+    "_validate_version_column_control": [
+      "self",
+      "column",
+      "result",
+      "file_path",
+      "owner_name"
+    ],
+    "_validate_resource_tests": [
+      "self",
+      "resource",
+      "result",
+      "file_path",
+      "resource_kind",
+      "resource_name"
+    ],
+    "_validate_columns": [
+      "self",
+      "columns",
+      "result",
+      "file_path",
+      "owner_kind",
+      "owner_name"
+    ],
+    "_validate_tests": [
+      "self",
+      "tests",
+      "result",
+      "file_path",
+      "resource_kind",
+      "resource_name",
+      "column_name"
+    ],
+    "_extract_test_arguments": [
+      "self",
+      "test_name",
+      "config",
+      "result",
+      "file_path",
+      "column_name"
+    ],
+    "_validate_relationships_test": [
+      "self",
+      "config",
+      "result",
+      "file_path",
+      "resource_kind",
+      "resource_name",
+      "column_name"
+    ],
+    "_validate_accepted_values_test": [
+      "self",
+      "config",
+      "result",
+      "file_path",
+      "resource_kind",
+      "resource_name",
+      "column_name"
+    ],
+    "_validate_unique_combination_test": [
+      "self",
+      "config",
+      "result",
+      "file_path",
+      "resource_kind",
+      "resource_name",
+      "column_name"
+    ]
+  },
+  "ModelValidator": {
+    "_validate_versions": [
+      "self",
+      "model",
+      "model_name",
+      "result",
+      "file_path"
+    ],
+    "_validate": [
+      "self",
+      "data",
+      "result",
+      "file_path"
+    ]
+  },
+  "SourceValidator": {
+    "_validate": [
+      "self",
+      "data",
+      "result",
+      "file_path"
+    ]
+  },
+  "SeedValidator": {
+    "_validate": [
+      "self",
+      "data",
+      "result",
+      "file_path"
+    ]
+  },
+  "FormattingValidator": {
+    "FORMAT_CHECKS": [],
+    "__init__": [
+      "self",
+      "auto_fix"
+    ],
+    "_validate": [
+      "self",
+      "data",
+      "result",
+      "file_path"
+    ]
+  },
+  "validate_yaml_structure": [
+    "data",
+    "file_path",
+    "validators"
+  ],
+  "validate_yaml_file": [
+    "file_path",
+    "raw_content",
+    "validators"
+  ],
+  "auto_fix_yaml": [
+    "data",
+    "result"
+  ],
+  "LRUCache": {
+    "__init__": [
+      "self",
+      "maxsize"
+    ],
+    "_evict_one_clean_locked": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "__setitem__": [
+      "self",
+      "key",
+      "value"
+    ],
+    "__contains__": [
+      "self",
+      "key"
+    ],
+    "__delitem__": [
+      "self",
+      "key"
+    ],
+    "setdefault": [
+      "self",
+      "key",
+      "default"
+    ],
+    "mark_dirty": [
+      "self",
+      "key"
+    ],
+    "mark_clean": [
+      "self",
+      "key"
+    ],
+    "clear": [
+      "self"
+    ],
+    "keys": [
+      "self"
+    ],
+    "values": [
+      "self"
+    ],
+    "items": [
+      "self"
+    ],
+    "__len__": [
+      "self"
+    ]
+  },
+  "_YAML_BUFFER_CACHE_LOCK": [],
+  "_QUOTED_SCALAR_STRING_TYPES": [],
+  "_YAML_1_1_BOOLEAN_LIKE_STRINGS": [],
+  "_normalize_quoted_scalar_style": [
+    "value"
+  ],
+  "_nested_column_description_indent": [
+    "path",
+    "indent_mapping"
+  ],
+  "_mark_yaml_caches_dirty": [
+    "path"
+  ],
+  "_discard_yaml_caches": [
+    "path"
+  ],
+  "_has_yaml_anchor": [
+    "value"
+  ],
+  "_normalize_managed_quote_styles": [
+    "value"
+  ],
+  "_read_yaml": [
+    "yaml_handler",
+    "yaml_handler_lock",
+    "path"
+  ],
+  "ALTER_TABLE_MODIFY_COLUMN_COMMENT": [],
+  "ALTER_TABLE_COMMENT": [],
+  "_regex_parse_to_complete_dict": [
+    "sql",
+    "pattern"
+  ],
+  "QueryException": {
+    "__init__": [
+      "self",
+      "response"
+    ]
+  },
+  "DbtSession": {
+    "__init__": [
+      "self",
+      "project"
+    ],
+    "_parse": [
+      "self",
+      "sql"
+    ],
+    "_alter_table_comment_middleware": [
+      "self",
+      "q"
+    ],
+    "query": [
+      "self",
+      "expression",
+      "sql",
+      "attrs"
+    ],
+    "schema": [
+      "self"
+    ]
+  },
+  "mapping_to_columns": [
+    "schema"
+  ],
+  "default_prompt": [],
+  "HACKER_NEWS_RSS_URL": [],
+  "FEED_REQUEST_TIMEOUT_SECONDS": [],
+  "FEED_RESPONSE_MAX_BYTES": [],
+  "_FEED_DISABLED_HTML": [],
+  "_FEED_UNAVAILABLE_HTML": [],
+  "_get_demo_query": [],
+  "_is_http_url": [
+    "url"
+  ],
+  "_safe_url": [
+    "value"
+  ],
+  "_entry_value": [
+    "entry",
+    "key"
+  ],
+  "_fetch_feed_bytes": [
+    "feed_url",
+    "timeout_seconds"
+  ],
+  "_entry_html": [
+    "entry"
+  ],
+  "build_feed_html": [],
+  "_parse_args": [],
+  "_project_config_for_target": [
+    "ctx",
+    "target_name"
+  ],
+  "_model_nodes_for_context": [
+    "ctx"
+  ],
+  "_call_connection_cleanup": [
+    "target",
+    "method_name"
+  ],
+  "_close_context_connections": [
+    "ctx"
+  ],
+  "change_target": [],
+  "inject_model": [],
+  "save_model": [],
+  "sidebar": [
+    "ctx"
+  ],
+  "compile": [
+    "sql"
+  ],
+  "make_json_compat": [
+    "v"
+  ],
+  "run_query": [],
+  "build_profile_report": [
+    "minimal"
+  ],
+  "convert_profile_report_to_html": [
+    "profile"
+  ],
+  "run_profile": [
+    "minimal"
+  ],
+  "main": [],
+  "Renderer": {
+    "initial_state": [],
+    "__init__": [
+      "self"
+    ],
+    "__call__": [
+      "self"
+    ]
+  },
+  "Profiler": {
+    "initial_state": [],
+    "__init__": [
+      "self"
+    ],
+    "__call__": [
+      "self"
+    ]
+  },
+  "ImplementsBool": {
+    "__bool__": [
+      "self"
+    ]
+  },
+  "DarkMode": {
+    "__bool__": [
+      "self"
+    ]
+  },
+  "Dashboard": {
+    "DRAGGABLE_CLASS": [],
+    "__init__": [
+      "self"
+    ],
+    "register": [
+      "self",
+      "item"
+    ],
+    "__call__": [
+      "self"
+    ]
+  },
+  "Preview": {
+    "initial_state": [],
+    "__init__": [
+      "self"
+    ],
+    "__call__": [
+      "self"
+    ]
+  },
+  "TabName": {
+    "SQL": [],
+    "YAML": []
+  },
+  "Editor": {
+    "initial_state": [],
+    "__init__": [
+      "self"
+    ],
+    "_change_tab": [
+      "self",
+      "event",
+      "index"
+    ],
+    "update_content": [
+      "self",
+      "tab_name",
+      "content"
+    ],
+    "get_content": [
+      "self",
+      "tab_name"
+    ],
+    "__call__": [
+      "self"
+    ]
+  },
+  "_UNAVAILABLE_TITLE": [],
+  "_UNAVAILABLE_MESSAGE": [],
+  "_UNAVAILABLE_NEXT_STEP": [],
+  "AIAssistant": {
+    "initial_state": [],
+    "__call__": [
+      "self"
+    ],
+    "_selected_model_name": [],
+    "_selected_model_message": [
+      "model_name"
+    ]
+  },
+  "RssFeed": {
+    "initial_state": [],
+    "__init__": [
+      "self"
+    ],
+    "__call__": [
+      "self"
+    ]
+  },
+  "_CONTEXT": [],
+  "_WORKBENCH_EXTRA_HINT": [],
+  "_WORKBENCH_APP_MODULES": [],
+  "_missing_streamlit_error": [],
+  "_streamlit_executable": [],
+  "_check_workbench_app_dependencies": [],
+  "_run_streamlit_command": [
+    "args",
+    "executable"
+  ],
+  "cli": [],
+  "test_llm_connection": [
+    "llm_client"
+  ],
+  "test_llm": [],
+  "yaml": [],
+  "logging_opts": [
+    "func"
+  ],
+  "sql": [],
+  "test": [],
+  "dbt_opts": [
+    "func"
+  ],
+  "yaml_opts": [
+    "func"
+  ],
+  "_run_formatter_if_configured": [
+    "context"
+  ],
+  "refactor": [
+    "target",
+    "profile",
+    "project_dir",
+    "profiles_dir",
+    "vars",
+    "auto_apply",
+    "check",
+    "threads",
+    "disable_introspection",
+    "synthesize"
+  ],
+  "organize": [
+    "target",
+    "project_dir",
+    "profiles_dir",
+    "check",
+    "profile",
+    "vars",
+    "auto_apply",
+    "threads",
+    "disable_introspection"
+  ],
+  "document": [
+    "target",
+    "profile",
+    "project_dir",
+    "profiles_dir",
+    "vars",
+    "check",
+    "threads",
+    "disable_introspection",
+    "synthesize"
+  ],
+  "nl": [],
+  "generate": [],
+  "_GENERATED_YAML_HANDLER_LOCK": [],
+  "_get_generated_project_root": [
+    "project",
+    "project_dir"
+  ],
+  "_resolve_project_yaml_output_path": [
+    "path",
+    "project_root"
+  ],
+  "_resolve_generated_file_path": [
+    "path",
+    "project_root"
+  ],
+  "_model_schema_data": [
+    "model_spec"
+  ],
+  "_load_generated_yaml_data": [
+    "yaml_content"
+  ],
+  "_prepare_generated_yaml_write": [],
+  "_write_prepared_generated_yaml": [
+    "prepared_write"
+  ],
+  "_echo_planned_writes": [
+    "paths"
+  ],
+  "model": [
+    "query",
+    "model_name",
+    "output_path",
+    "schema_yml",
+    "dry_run",
+    "overwrite",
+    "project_dir",
+    "profiles_dir",
+    "target"
+  ],
+  "sources": [
+    "source_name",
+    "schema_name",
+    "exclude_schemas",
+    "exclude_tables",
+    "quote_identifiers",
+    "output_path",
+    "dry_run",
+    "overwrite",
+    "project_dir",
+    "profiles_dir",
+    "target"
+  ],
+  "staging": [
+    "source_name",
+    "table_name",
+    "ai",
+    "staging_path",
+    "dry_run",
+    "overwrite",
+    "project_dir",
+    "profiles_dir",
+    "target"
+  ],
+  "generate_query": [
+    "query",
+    "execute",
+    "project_dir",
+    "profiles_dir",
+    "target"
+  ],
+  "nl_generate_deprecated": [
+    "query",
+    "model_name",
+    "output_path",
+    "schema_yml",
+    "dry_run",
+    "overwrite",
+    "project_dir",
+    "profiles_dir",
+    "target"
+  ],
+  "query": [
+    "query",
+    "execute",
+    "project_dir",
+    "profiles_dir",
+    "target"
+  ],
+  "workbench": [
+    "ctx",
+    "profiles_dir",
+    "project_dir",
+    "host",
+    "port",
+    "enable_external_feed"
+  ],
+  "run": [
+    "sql",
+    "project_dir",
+    "profiles_dir",
+    "target"
+  ],
+  "diff": [],
+  "schema": [
+    "target",
+    "profile",
+    "project_dir",
+    "profiles_dir",
+    "vars",
+    "threads",
+    "disable_introspection",
+    "fqn",
+    "output_format",
+    "severity",
+    "fuzzy_match_threshold",
+    "detect_column_renames",
+    "include_external",
+    "models"
+  ],
+  "_output_diff_text": [
+    "results",
+    "severity_filter"
+  ],
+  "_output_diff_json": [
+    "results",
+    "severity_filter"
+  ],
+  "_output_diff_markdown": [
+    "results",
+    "severity_filter"
+  ],
+  "suggest": [
+    "target",
+    "profile",
+    "project_dir",
+    "profiles_dir",
+    "vars",
+    "threads",
+    "disable_introspection",
+    "fqn",
+    "use_ai",
+    "pattern_only",
+    "temperature",
+    "output",
+    "format",
+    "models"
+  ],
+  "_output_as_json": [
+    "results",
+    "output_path"
+  ],
+  "_output_as_yaml": [
+    "results",
+    "output_path"
+  ],
+  "_output_as_table": [
+    "results",
+    "output_path"
+  ],
+  "lint": [],
+  "_lint_violation_groups": [
+    "result"
+  ],
+  "lint_file": [
+    "sql",
+    "project_dir",
+    "profiles_dir",
+    "target",
+    "rules",
+    "disable_rules",
+    "dialect"
+  ],
+  "lint_model_command": [
+    "model_name",
+    "project_dir",
+    "profiles_dir",
+    "target",
+    "rules",
+    "disable_rules",
+    "dialect"
+  ],
+  "lint_project_command": [
+    "project_dir",
+    "profiles_dir",
+    "target",
+    "fqn",
+    "rules",
+    "disable_rules",
+    "dialect"
+  ]
+}
