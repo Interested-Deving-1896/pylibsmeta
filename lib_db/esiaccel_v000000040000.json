@@ -1,0 +1,1484 @@
+{
+  "_thisdir": [],
+  "_PortGroup": {},
+  "Generator": {
+    "__init__": [
+      "self",
+      "conn"
+    ],
+    "generate": [
+      "self",
+      "output_dir",
+      "system_name"
+    ]
+  },
+  "CppGenerator": {
+    "language": [],
+    "__init__": [
+      "self",
+      "conn"
+    ],
+    "get_consts_str": [
+      "self",
+      "module_info"
+    ],
+    "_sanitize_id": [
+      "name"
+    ],
+    "_build_module_instance_map": [
+      "self"
+    ],
+    "_cpp_member_type": [
+      "self",
+      "port",
+      "alias_prefix"
+    ],
+    "_port_using_aliases": [
+      "self",
+      "alias_prefix",
+      "port"
+    ],
+    "_cpp_indexed_elem_type": [
+      "self",
+      "port",
+      "alias_prefix"
+    ],
+    "_cpp_ctor_param_type": [
+      "self",
+      "port"
+    ],
+    "_cpp_ctor_param_suffix": [
+      "port"
+    ],
+    "_appid_expr": [
+      "appid"
+    ],
+    "_port_find_code": [
+      "self",
+      "member_name",
+      "port",
+      "appid"
+    ],
+    "_port_make_unique_arg": [
+      "member_name",
+      "port"
+    ],
+    "_port_is_connectable": [
+      "port"
+    ],
+    "_scalar_port_group": [
+      "self",
+      "member_name",
+      "port",
+      "appid"
+    ],
+    "_indexed_ports_group": [
+      "self",
+      "member_name",
+      "appid_name",
+      "port_list"
+    ],
+    "_mixed_struct_group": [
+      "self",
+      "member_name",
+      "appid_name",
+      "port_list"
+    ],
+    "_collect_port_groups": [
+      "self",
+      "ports"
+    ],
+    "_emit_module_class": [
+      "self",
+      "name",
+      "system_name",
+      "module_info",
+      "port_groups",
+      "out"
+    ],
+    "write_modules": [
+      "self",
+      "output_dir",
+      "system_name"
+    ],
+    "generate": [
+      "self",
+      "output_dir",
+      "system_name"
+    ]
+  },
+  "CppTypePlanner": {
+    "__init__": [
+      "self",
+      "type_table"
+    ],
+    "_prepare_types": [
+      "self",
+      "type_table"
+    ],
+    "_sanitize_name": [
+      "self",
+      "name"
+    ],
+    "_reserve_name": [
+      "self",
+      "base",
+      "is_alias"
+    ],
+    "_auto_struct_name": [
+      "self",
+      "struct_type"
+    ],
+    "_auto_union_name": [
+      "self",
+      "union_type"
+    ],
+    "_auto_window_name": [
+      "self",
+      "window_type"
+    ],
+    "_unwrap_aliases": [
+      "self",
+      "wrapped"
+    ],
+    "_is_supported_window": [
+      "self",
+      "current_type"
+    ],
+    "_iter_type_children": [
+      "self",
+      "t"
+    ],
+    "_visit_types": [
+      "self",
+      "t",
+      "visited",
+      "visit_fn"
+    ],
+    "_collect_aliases": [
+      "self",
+      "t",
+      "visited"
+    ],
+    "_collect_structs": [
+      "self",
+      "t",
+      "visited"
+    ],
+    "_collect_windows": [
+      "self",
+      "t",
+      "visited"
+    ],
+    "_collect_decls_from_type": [
+      "self",
+      "wrapped"
+    ],
+    "_collect_decls_from_window": [
+      "self",
+      "window_type"
+    ],
+    "_ordered_emit_types": [
+      "self"
+    ]
+  },
+  "CppTypeEmitter": {
+    "__init__": [
+      "self",
+      "planner"
+    ],
+    "type_identifier": [
+      "self",
+      "type"
+    ],
+    "_cpp_string_literal": [
+      "self",
+      "value"
+    ],
+    "_get_bitvector_str": [
+      "self",
+      "type"
+    ],
+    "_storage_type": [
+      "self",
+      "bit_width",
+      "signed"
+    ],
+    "_type_byte_width": [
+      "self",
+      "wrapped"
+    ],
+    "_array_base_and_dims": [
+      "self",
+      "array_type"
+    ],
+    "_std_array_type": [
+      "self",
+      "array_type"
+    ],
+    "_cpp_type": [
+      "self",
+      "wrapped"
+    ],
+    "_unwrap_aliases": [
+      "self",
+      "wrapped"
+    ],
+    "_format_window_field_decl": [
+      "self",
+      "field_name",
+      "field_type"
+    ],
+    "_format_window_ctor_param": [
+      "self",
+      "field_name",
+      "field_type"
+    ],
+    "_emit_window_field_copy": [
+      "self",
+      "hdr",
+      "dest_expr",
+      "src_expr",
+      "field_type"
+    ],
+    "_field_byte_width": [
+      "self",
+      "field_type"
+    ],
+    "_safe_byte_width": [
+      "self",
+      "esi_type"
+    ],
+    "_emit_size_assert": [
+      "self",
+      "hdr",
+      "type_name",
+      "expected_bytes",
+      "indent"
+    ],
+    "_analyze_window": [
+      "self",
+      "window_type"
+    ],
+    "_emit_struct": [
+      "self",
+      "hdr",
+      "struct_type"
+    ],
+    "_emit_union": [
+      "self",
+      "hdr",
+      "union_type"
+    ],
+    "_emit_window": [
+      "self",
+      "hdr",
+      "window_type"
+    ],
+    "_emit_window_data_accessors": [
+      "self",
+      "hdr",
+      "info"
+    ],
+    "_emit_window_deserializer": [
+      "self",
+      "hdr",
+      "info"
+    ],
+    "_emit_alias": [
+      "self",
+      "hdr",
+      "alias_type"
+    ],
+    "write_header": [
+      "self",
+      "output_dir",
+      "system_name"
+    ]
+  },
+  "run": [
+    "generator",
+    "cmdline_args"
+  ],
+  "run_esiquery": [],
+  "run_esi_cosim": [],
+  "run_cppgen": [],
+  "get_cmake_dir": [],
+  "get_dll_dir": [],
+  "_get_esi_type": [
+    "cpp_type"
+  ],
+  "ESIType": {
+    "__init__": [
+      "self",
+      "id"
+    ],
+    "wrap_cpp": [
+      "cls",
+      "cpp_type"
+    ],
+    "_init_from_cpp": [
+      "self",
+      "cpp_type"
+    ],
+    "id": [
+      "self"
+    ],
+    "supports_host": [
+      "self"
+    ],
+    "is_valid": [
+      "self",
+      "obj"
+    ],
+    "bit_width": [
+      "self"
+    ],
+    "max_size": [
+      "self"
+    ],
+    "serialize": [
+      "self",
+      "obj"
+    ],
+    "deserialize": [
+      "self",
+      "data"
+    ],
+    "__hash__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "ChannelType": {
+    "__init__": [
+      "self",
+      "id",
+      "inner"
+    ],
+    "_init_from_cpp": [
+      "self",
+      "cpp_type"
+    ],
+    "bit_width": [
+      "self"
+    ],
+    "inner": [
+      "self"
+    ],
+    "supports_host": [
+      "self"
+    ],
+    "is_valid": [
+      "self",
+      "obj"
+    ],
+    "serialize": [
+      "self",
+      "obj"
+    ],
+    "deserialize": [
+      "self",
+      "data"
+    ]
+  },
+  "BundleType": {
+    "__init__": [
+      "self",
+      "id",
+      "channels"
+    ],
+    "_init_from_cpp": [
+      "self",
+      "cpp_type"
+    ],
+    "channels": [
+      "self"
+    ]
+  },
+  "VoidType": {
+    "__init__": [
+      "self",
+      "id"
+    ],
+    "is_valid": [
+      "self",
+      "obj"
+    ],
+    "bit_width": [
+      "self"
+    ],
+    "serialize": [
+      "self",
+      "obj"
+    ],
+    "deserialize": [
+      "self",
+      "data"
+    ]
+  },
+  "AnyType": {
+    "__init__": [
+      "self",
+      "id"
+    ],
+    "is_valid": [
+      "self",
+      "obj"
+    ],
+    "bit_width": [
+      "self"
+    ],
+    "serialize": [
+      "self",
+      "obj"
+    ],
+    "deserialize": [
+      "self",
+      "data"
+    ]
+  },
+  "BitsType": {
+    "__init__": [
+      "self",
+      "id",
+      "width"
+    ],
+    "is_valid": [
+      "self",
+      "obj"
+    ],
+    "bit_width": [
+      "self"
+    ],
+    "serialize": [
+      "self",
+      "obj"
+    ],
+    "deserialize": [
+      "self",
+      "data"
+    ]
+  },
+  "IntType": {
+    "__init__": [
+      "self",
+      "id",
+      "width"
+    ],
+    "bit_width": [
+      "self"
+    ]
+  },
+  "UIntType": {
+    "__init__": [
+      "self",
+      "id",
+      "width"
+    ],
+    "is_valid": [
+      "self",
+      "obj"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "serialize": [
+      "self",
+      "obj"
+    ],
+    "deserialize": [
+      "self",
+      "data"
+    ]
+  },
+  "SIntType": {
+    "__init__": [
+      "self",
+      "id",
+      "width"
+    ],
+    "is_valid": [
+      "self",
+      "obj"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "serialize": [
+      "self",
+      "obj"
+    ],
+    "deserialize": [
+      "self",
+      "data"
+    ]
+  },
+  "StructType": {
+    "__init__": [
+      "self",
+      "id",
+      "fields"
+    ],
+    "_init_from_cpp": [
+      "self",
+      "cpp_type"
+    ],
+    "bit_width": [
+      "self"
+    ],
+    "is_valid": [
+      "self",
+      "obj"
+    ],
+    "serialize": [
+      "self",
+      "obj"
+    ],
+    "deserialize": [
+      "self",
+      "data"
+    ]
+  },
+  "ArrayType": {
+    "__init__": [
+      "self",
+      "id",
+      "element_type",
+      "size"
+    ],
+    "_init_from_cpp": [
+      "self",
+      "cpp_type"
+    ],
+    "bit_width": [
+      "self"
+    ],
+    "is_valid": [
+      "self",
+      "obj"
+    ],
+    "serialize": [
+      "self",
+      "lst"
+    ],
+    "deserialize": [
+      "self",
+      "data"
+    ]
+  },
+  "ListType": {
+    "__init__": [
+      "self",
+      "id",
+      "element_type"
+    ],
+    "_init_from_cpp": [
+      "self",
+      "cpp_type"
+    ],
+    "supports_host": [
+      "self"
+    ],
+    "bit_width": [
+      "self"
+    ],
+    "is_valid": [
+      "self",
+      "obj"
+    ],
+    "serialize": [
+      "self",
+      "obj"
+    ],
+    "deserialize": [
+      "self",
+      "data"
+    ]
+  },
+  "WindowType": {
+    "_HOST_UNSUPPORTED_REASON": [],
+    "__init__": [
+      "self",
+      "id",
+      "name",
+      "into_type",
+      "lowered_type",
+      "frames"
+    ],
+    "_init_from_cpp": [
+      "self",
+      "cpp_type"
+    ],
+    "supports_host": [
+      "self"
+    ],
+    "bit_width": [
+      "self"
+    ],
+    "is_valid": [
+      "self",
+      "obj"
+    ],
+    "serialize": [
+      "self",
+      "obj"
+    ],
+    "deserialize": [
+      "self",
+      "data"
+    ]
+  },
+  "UnionType": {
+    "__init__": [
+      "self",
+      "id",
+      "fields"
+    ],
+    "_init_from_cpp": [
+      "self",
+      "cpp_type"
+    ],
+    "bit_width": [
+      "self"
+    ],
+    "is_valid": [
+      "self",
+      "obj"
+    ],
+    "serialize": [
+      "self",
+      "obj"
+    ],
+    "deserialize": [
+      "self",
+      "data"
+    ]
+  },
+  "TypeAlias": {
+    "__init__": [
+      "self",
+      "id",
+      "name",
+      "inner_type"
+    ],
+    "_init_from_cpp": [
+      "self",
+      "cpp_type"
+    ],
+    "bit_width": [
+      "self"
+    ],
+    "is_valid": [
+      "self",
+      "obj"
+    ],
+    "serialize": [
+      "self",
+      "obj"
+    ],
+    "deserialize": [
+      "self",
+      "data"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "Port": {
+    "__init__": [
+      "self",
+      "owner",
+      "cpp_port"
+    ],
+    "connect": [
+      "self",
+      "buffer_size"
+    ],
+    "disconnect": [
+      "self"
+    ]
+  },
+  "WritePort": {
+    "__init__": [
+      "self",
+      "owner",
+      "cpp_port"
+    ],
+    "__serialize_msg": [
+      "self",
+      "msg"
+    ],
+    "write": [
+      "self",
+      "msg"
+    ],
+    "try_write": [
+      "self",
+      "msg"
+    ]
+  },
+  "ReadPort": {
+    "__init__": [
+      "self",
+      "owner",
+      "cpp_port"
+    ],
+    "read": [
+      "self"
+    ]
+  },
+  "BundlePort": {
+    "__new__": [
+      "cls",
+      "owner",
+      "cpp_port"
+    ],
+    "__init__": [
+      "self",
+      "owner",
+      "cpp_port"
+    ],
+    "write_port": [
+      "self",
+      "channel_name"
+    ],
+    "read_port": [
+      "self",
+      "channel_name"
+    ]
+  },
+  "MessageFuture": {
+    "__init__": [
+      "self",
+      "result_type",
+      "cpp_future"
+    ],
+    "running": [
+      "self"
+    ],
+    "done": [
+      "self"
+    ],
+    "result": [
+      "self",
+      "timeout"
+    ],
+    "add_done_callback": [
+      "self",
+      "fn"
+    ]
+  },
+  "MMIORegion": {
+    "__init__": [
+      "self",
+      "owner",
+      "cpp_port"
+    ],
+    "descriptor": [
+      "self"
+    ],
+    "read": [
+      "self",
+      "offset"
+    ],
+    "write": [
+      "self",
+      "offset",
+      "data"
+    ]
+  },
+  "FunctionPort": {
+    "__init__": [
+      "self",
+      "owner",
+      "cpp_port"
+    ],
+    "connect": [
+      "self"
+    ],
+    "call": [
+      "self"
+    ],
+    "__call__": [
+      "self"
+    ]
+  },
+  "CallbackPort": {
+    "__init__": [
+      "self",
+      "owner",
+      "cpp_port"
+    ],
+    "connect": [
+      "self",
+      "cb"
+    ]
+  },
+  "MetricPort": {
+    "__init__": [
+      "self",
+      "owner",
+      "cpp_port"
+    ],
+    "connect": [
+      "self"
+    ],
+    "read": [
+      "self"
+    ]
+  },
+  "ToHostPort": {
+    "__init__": [
+      "self",
+      "owner",
+      "cpp_port"
+    ],
+    "connect": [
+      "self"
+    ],
+    "read": [
+      "self"
+    ]
+  },
+  "FromHostPort": {
+    "__init__": [
+      "self",
+      "owner",
+      "cpp_port"
+    ],
+    "connect": [
+      "self"
+    ],
+    "write": [
+      "self",
+      "data"
+    ]
+  },
+  "LogLevel": [],
+  "Context": {
+    "__init__": [
+      "self",
+      "log_level"
+    ],
+    "default": [],
+    "set_stdio_logger": [
+      "self",
+      "level"
+    ],
+    "connect": [
+      "self",
+      "platform",
+      "connection_str"
+    ]
+  },
+  "AcceleratorConnection": {
+    "__init__": [
+      "self",
+      "ctxt",
+      "cpp_accel"
+    ],
+    "manifest": [
+      "self"
+    ],
+    "sysinfo": [
+      "self"
+    ],
+    "build_accelerator": [
+      "self"
+    ],
+    "get_service_mmio": [
+      "self"
+    ],
+    "get_service_hostmem": [
+      "self"
+    ],
+    "get_accelerator": [
+      "self"
+    ]
+  },
+  "HWModule": {
+    "__init__": [
+      "self",
+      "parent",
+      "cpp_hwmodule"
+    ],
+    "children": [
+      "self"
+    ],
+    "ports": [
+      "self"
+    ],
+    "services": [
+      "self"
+    ]
+  },
+  "MMIO": [],
+  "Instance": {
+    "__init__": [
+      "self",
+      "parent",
+      "cpp_instance"
+    ],
+    "id": [
+      "self"
+    ]
+  },
+  "Accelerator": {
+    "__init__": [
+      "self",
+      "cpp_accelerator"
+    ]
+  },
+  "__all__": [],
+  "connect": [
+    "platform",
+    "connection_str"
+  ],
+  "CallbackTest": {
+    "clk": [],
+    "rst": [],
+    "construct": [
+      "ports"
+    ]
+  },
+  "LoopbackInOutAdd": {
+    "clk": [],
+    "rst": [],
+    "add_amt": [],
+    "construct": [
+      "ports"
+    ]
+  },
+  "StreamingAdder": [
+    "numItems"
+  ],
+  "CoordTranslator": {
+    "clk": [],
+    "rst": [],
+    "construct": [
+      "ports"
+    ]
+  },
+  "SerialCoordTranslator": {
+    "clk": [],
+    "rst": [],
+    "construct": [
+      "ports"
+    ]
+  },
+  "AutoSerialCoordTranslator": {
+    "clk": [],
+    "rst": [],
+    "construct": [
+      "ports"
+    ]
+  },
+  "MMIOAdd": [
+    "add_amt"
+  ],
+  "AddressCommand": [
+    "width"
+  ],
+  "ReadMem": [
+    "width"
+  ],
+  "WriteMem": [
+    "width"
+  ],
+  "ToHostDMATest": [
+    "width"
+  ],
+  "FromHostDMATest": [
+    "width"
+  ],
+  "ChannelTest": {
+    "clk": [],
+    "rst": [],
+    "construct": [
+      "ports"
+    ]
+  },
+  "EsiTester": {
+    "clk": [],
+    "rst": [],
+    "construct": [
+      "ports"
+    ]
+  },
+  "__main__": [
+    "args"
+  ],
+  "OneItemBuffersToHost": [
+    "client_type"
+  ],
+  "OneItemBuffersFromHost": [
+    "client_type"
+  ],
+  "__dir__": [],
+  "AXI_Lite_Read_Resp": {},
+  "AxiMMIOAddrWidth": [],
+  "MMIOSel": {},
+  "MMIOIntermediateCmd": {},
+  "MMIOAxiWriteCombine": {
+    "clk": [],
+    "rst": [],
+    "write_address": [],
+    "write_data": [],
+    "cmd": [],
+    "write_resp": [],
+    "build": [
+      "ports"
+    ]
+  },
+  "MMIOAxiReadWriteMux": {
+    "clk": [],
+    "rst": [],
+    "read_address": [],
+    "write_address": [],
+    "write_data": [],
+    "write_resp": [],
+    "cmd": [],
+    "sel": [],
+    "build": [
+      "ports"
+    ]
+  },
+  "MMIOAxiReadWriteDemux": {
+    "clk": [],
+    "rst": [],
+    "sel": [],
+    "data": [],
+    "read_data": [],
+    "build": [
+      "ports"
+    ]
+  },
+  "XrtBSP": [
+    "user_module"
+  ],
+  "MagicNumber": [],
+  "VersionNumber": [],
+  "IndirectionMagicNumber": [],
+  "IndirectionVersionNumber": [],
+  "ESI_Manifest_ROM": {
+    "module_name": [],
+    "clk": [],
+    "address": [],
+    "data": []
+  },
+  "ESI_Manifest_ROM_Wrapper": {
+    "clk": [],
+    "read": [],
+    "build": [
+      "self"
+    ]
+  },
+  "HeaderMMIO": [
+    "manifest_loc"
+  ],
+  "ChannelDemuxN_HalfStage_ReadyBlocking": [
+    "data_type",
+    "num_outs",
+    "next_sel_width"
+  ],
+  "ChannelDemuxTree_HalfStage_ReadyBlocking": [
+    "data_type",
+    "num_outs",
+    "branching_factor_log2"
+  ],
+  "ChannelMMIO": {
+    "clk": [],
+    "rst": [],
+    "cmd": [],
+    "RegisterSpace": [],
+    "RegisterSpaceBits": [],
+    "AddressMask": [],
+    "generate": [
+      "ports",
+      "bundles"
+    ],
+    "build_table": [
+      "bundles"
+    ],
+    "build_read": [
+      "ports",
+      "manifest_loc",
+      "table"
+    ],
+    "build_addr_read": [
+      "read_addr_chan",
+      "num_clients",
+      "manifest_loc"
+    ]
+  },
+  "MMIOIndirection": {
+    "clk": [],
+    "rst": [],
+    "upstream": [],
+    "downstream": [],
+    "build": [
+      "ports"
+    ]
+  },
+  "TaggedReadGearbox": [
+    "input_bitwidth",
+    "output_bitwidth"
+  ],
+  "HostmemReadProcessor": [
+    "read_width",
+    "hostmem_module",
+    "reqs"
+  ],
+  "TaggedWriteGearbox": [
+    "input_bitwidth",
+    "output_bitwidth"
+  ],
+  "EmitEveryN": [
+    "message_type",
+    "N"
+  ],
+  "HostMemWriteProcessor": [
+    "write_width",
+    "hostmem_module",
+    "reqs"
+  ],
+  "ChannelHostMem": [
+    "read_width",
+    "write_width"
+  ],
+  "DummyToHostEngine": [
+    "client_type"
+  ],
+  "DummyFromHostEngine": [
+    "client_type"
+  ],
+  "ChannelEngineService": [
+    "to_host_engine_gen",
+    "from_host_engine_gen"
+  ],
+  "get_bsp": [
+    "name"
+  ],
+  "__root_dir__": [],
+  "CosimBSP": [
+    "user_module",
+    "emulate_dma"
+  ],
+  "CosimBSP_DMA": [
+    "user_module"
+  ],
+  "LogMatcher": [],
+  "SourceGeneratorFunc": [],
+  "SourceGeneratorArg": [],
+  "_logger": [],
+  "_DEFAULT_FAILURE_PATTERN": [],
+  "_DEFAULT_WARN_PATTERN": [],
+  "_get_env_bool": [
+    "var_name",
+    "default"
+  ],
+  "_get_env_path": [
+    "var_name"
+  ],
+  "_get_pytest_run_id": [],
+  "_get_xdist_worker_id": [],
+  "_get_test_dir_name": [
+    "config"
+  ],
+  "CosimPytestConfig": {},
+  "_ClassCompileCache": {},
+  "_ChildResult": {},
+  "_chdir": [
+    "path"
+  ],
+  "_line_matches": [
+    "matcher",
+    "line",
+    "stream"
+  ],
+  "_scan_logs": [
+    "stdout_lines",
+    "stderr_lines",
+    "config"
+  ],
+  "_render_args": [
+    "args",
+    "tmp_dir"
+  ],
+  "_generate_sources": [
+    "config",
+    "tmp_dir"
+  ],
+  "_create_simulator": [
+    "config",
+    "sources_dir",
+    "run_dir"
+  ],
+  "_run_hw_script": [
+    "script_path",
+    "config",
+    "tmp_dir"
+  ],
+  "_INJECTED_NAMES": [],
+  "_INJECTED_ANNOTATIONS": [],
+  "_is_injected_param": [
+    "name",
+    "annotation"
+  ],
+  "_resolve_injected_params": [
+    "target",
+    "kwargs",
+    "host",
+    "port",
+    "sources_dir"
+  ],
+  "_visible_signature": [
+    "target"
+  ],
+  "_copy_compiled_artifacts": [
+    "compile_dir",
+    "run_dir"
+  ],
+  "_compile_once_for_class": [
+    "config"
+  ],
+  "_run_child": [
+    "result_pipe",
+    "target",
+    "config",
+    "args",
+    "kwargs",
+    "class_cache"
+  ],
+  "_run_isolated": [
+    "target",
+    "config",
+    "args",
+    "kwargs",
+    "class_cache"
+  ],
+  "_decorate_function": [
+    "target",
+    "config",
+    "class_cache_getter"
+  ],
+  "_decorate_class": [
+    "target_cls",
+    "config"
+  ],
+  "cosim_test": [
+    "source_generator",
+    "args",
+    "simulator",
+    "top",
+    "debug",
+    "timeout_s",
+    "failure_matcher",
+    "warning_matcher",
+    "tmp_dir_root",
+    "delete_tmp_dir",
+    "save_waveform"
+  ],
+  "Questa": {
+    "DefaultDriver": [],
+    "__init__": [
+      "self",
+      "sources",
+      "run_dir",
+      "debug",
+      "save_waveform",
+      "run_stdout_callback",
+      "run_stderr_callback",
+      "compile_stdout_callback",
+      "compile_stderr_callback",
+      "make_default_logs",
+      "macro_definitions",
+      "suppressed_questa_errors"
+    ],
+    "UsesStderr": [],
+    "internal_compile_commands": [
+      "self"
+    ],
+    "compile_commands": [
+      "self"
+    ],
+    "run_command": [
+      "self",
+      "gui"
+    ],
+    "run": [
+      "self",
+      "inner_command",
+      "gui",
+      "server_only"
+    ]
+  },
+  "CosimCollateralDir": [],
+  "is_port_open": [
+    "port"
+  ],
+  "SourceFiles": {
+    "__init__": [
+      "self",
+      "top"
+    ],
+    "add_file": [
+      "self",
+      "file"
+    ],
+    "add_dir": [
+      "self",
+      "dir"
+    ],
+    "dpi_so_paths": [
+      "self"
+    ],
+    "rtl_sources": [
+      "self"
+    ]
+  },
+  "SimProcess": {
+    "__init__": [
+      "self",
+      "proc",
+      "port",
+      "threads",
+      "gui"
+    ],
+    "force_stop": [
+      "self"
+    ]
+  },
+  "Simulator": {
+    "CompileCommand": [],
+    "CompileFunction": [],
+    "CompileStep": [],
+    "UsesStderr": [],
+    "__init__": [
+      "self",
+      "sources",
+      "run_dir",
+      "debug",
+      "save_waveform",
+      "run_stdout_callback",
+      "run_stderr_callback",
+      "compile_stdout_callback",
+      "compile_stderr_callback",
+      "make_default_logs",
+      "macro_definitions"
+    ],
+    "get_env": [],
+    "compile_commands": [
+      "self"
+    ],
+    "_run_compile_command": [
+      "self",
+      "cmd"
+    ],
+    "_run_compile_step": [
+      "self",
+      "step"
+    ],
+    "compile": [
+      "self"
+    ],
+    "run_command": [
+      "self",
+      "gui"
+    ],
+    "waveform_extension": [
+      "self"
+    ],
+    "run_proc": [
+      "self",
+      "gui"
+    ],
+    "_start_process_with_callbacks": [
+      "self",
+      "cmd",
+      "env",
+      "cwd",
+      "stdout_cb",
+      "stderr_cb",
+      "wait"
+    ],
+    "run": [
+      "self",
+      "inner_command",
+      "gui",
+      "server_only"
+    ]
+  },
+  "get_simulator": [
+    "name",
+    "sources",
+    "rundir",
+    "debug",
+    "save_waveform"
+  ],
+  "Verilator": {
+    "DefaultDriver": [],
+    "__init__": [
+      "self",
+      "sources",
+      "run_dir",
+      "debug",
+      "save_waveform",
+      "run_stdout_callback",
+      "run_stderr_callback",
+      "compile_stdout_callback",
+      "compile_stderr_callback",
+      "make_default_logs",
+      "macro_definitions"
+    ],
+    "_find_verilator_bin": [
+      "self",
+      "required"
+    ],
+    "_find_verilator_root": [
+      "self",
+      "verilator_bin"
+    ],
+    "_use_cmake": [
+      "self"
+    ],
+    "compile_commands": [
+      "self"
+    ],
+    "_depfile_path": [
+      "self",
+      "obj_dir"
+    ],
+    "_generated_targets": [
+      "self",
+      "depfile"
+    ],
+    "_write_cmake_from_depfile": [
+      "self"
+    ],
+    "_generated_cpp_sources": [
+      "self",
+      "depfile"
+    ],
+    "_write_cmake": [
+      "self",
+      "obj_dir",
+      "generated_sources",
+      "pch_header"
+    ],
+    "waveform_extension": [
+      "self"
+    ],
+    "run_command": [
+      "self",
+      "gui"
+    ]
+  }
+}
