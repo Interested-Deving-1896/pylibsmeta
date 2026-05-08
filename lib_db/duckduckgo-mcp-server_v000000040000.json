@@ -1,0 +1,276 @@
+{
+  "SafeSearchMode": {
+    "STRICT": [],
+    "MODERATE": [],
+    "OFF": []
+  },
+  "SearchResult": {},
+  "RateLimiter": {
+    "__init__": [
+      "self",
+      "requests_per_minute"
+    ],
+    "acquire": [
+      "self"
+    ]
+  },
+  "DuckDuckGoSearcher": {
+    "BASE_URL": [],
+    "HEADERS": [],
+    "__init__": [
+      "self",
+      "safe_search",
+      "default_region"
+    ],
+    "format_results_for_llm": [
+      "self",
+      "results"
+    ],
+    "search": [
+      "self",
+      "query",
+      "ctx",
+      "max_results",
+      "region"
+    ]
+  },
+  "SUPPORTED_FETCH_BACKENDS": [],
+  "_CLOUDFLARE_BODY_SIGNALS": [],
+  "_is_cloudflare_challenge_body": [
+    "html"
+  ],
+  "WebContentFetcher": {
+    "__init__": [
+      "self",
+      "backend"
+    ],
+    "_fetch_httpx": [
+      "self",
+      "url"
+    ],
+    "_fetch_curl": [
+      "self",
+      "url"
+    ],
+    "_fetch_auto": [
+      "self",
+      "url",
+      "ctx"
+    ],
+    "fetch_and_parse": [
+      "self",
+      "url",
+      "ctx",
+      "start_index",
+      "max_length",
+      "backend"
+    ]
+  },
+  "mcp": [],
+  "SAFE_SEARCH_MODE": [],
+  "REGION_CODE": [],
+  "searcher": [],
+  "fetcher": [],
+  "search": [
+    "query",
+    "ctx",
+    "max_results",
+    "region"
+  ],
+  "fetch_content": [
+    "url",
+    "ctx",
+    "start_index",
+    "max_length",
+    "backend"
+  ],
+  "main": [],
+  "DummyCtx": {
+    "info": [
+      "self",
+      "message"
+    ],
+    "error": [
+      "self",
+      "message"
+    ]
+  },
+  "TestRateLimiter": {
+    "test_acquire_removes_expired_entries": [
+      "self"
+    ]
+  },
+  "TestRateLimiterEdgeCases": {
+    "test_acquire_blocks_when_at_capacity": [
+      "self"
+    ],
+    "test_acquire_allows_after_window_expires": [
+      "self"
+    ]
+  },
+  "TestDuckDuckGoSearcher": {
+    "test_format_results_for_llm_populates_entries": [
+      "self"
+    ],
+    "test_format_results_for_llm_handles_empty": [
+      "self"
+    ]
+  },
+  "_make_ddg_html": [
+    "results"
+  ],
+  "_mock_post_response": [
+    "html",
+    "status_code"
+  ],
+  "TestDuckDuckGoSearcherParsing": {
+    "_run_search": [
+      "self",
+      "html",
+      "max_results",
+      "region"
+    ],
+    "test_search_parses_results_from_html": [
+      "self"
+    ],
+    "test_search_cleans_redirect_urls": [
+      "self"
+    ],
+    "test_search_filters_ads": [
+      "self"
+    ],
+    "test_search_respects_max_results": [
+      "self"
+    ],
+    "test_search_handles_missing_snippet": [
+      "self"
+    ],
+    "test_search_returns_empty_on_timeout": [
+      "self"
+    ],
+    "test_search_returns_empty_on_http_error": [
+      "self"
+    ],
+    "test_search_returns_empty_on_no_results": [
+      "self"
+    ]
+  },
+  "_serve_html": [
+    "html_content"
+  ],
+  "_FETCH_BACKENDS_FOR_TESTING": [],
+  "TestWebContentFetcher": {
+    "test_fetch_and_parse_extracts_clean_text": [
+      "self"
+    ],
+    "test_fetch_and_parse_pagination": [
+      "self"
+    ]
+  },
+  "_patch_backend_client": [
+    "backend"
+  ],
+  "TestWebContentFetcherErrors": {
+    "test_fetch_returns_error_on_timeout": [
+      "self"
+    ],
+    "test_fetch_returns_error_on_http_error": [
+      "self"
+    ],
+    "test_fetch_handles_malformed_html": [
+      "self"
+    ]
+  },
+  "TestWebContentFetcherBackend": {
+    "test_init_rejects_unknown_backend": [
+      "self"
+    ],
+    "test_default_backend_is_httpx": [
+      "self"
+    ],
+    "test_supported_backends_tuple": [
+      "self"
+    ],
+    "test_per_call_backend_overrides_default": [
+      "self"
+    ],
+    "test_per_call_unknown_backend_returns_error": [
+      "self"
+    ],
+    "test_curl_backend_missing_dependency_error": [
+      "self"
+    ]
+  },
+  "TestWebContentFetcherAutoFallback": {
+    "test_auto_uses_httpx_when_successful": [
+      "self"
+    ],
+    "test_auto_falls_back_on_403": [
+      "self"
+    ],
+    "test_auto_falls_back_on_cloudflare_challenge": [
+      "self"
+    ],
+    "test_auto_reraises_non_403_http_error": [
+      "self"
+    ]
+  },
+  "_setup_mock_mcp_for_http": [
+    "mock_mcp"
+  ],
+  "TestMainCliArgs": {
+    "test_main_parses_fetch_backend_flag": [
+      "self"
+    ],
+    "test_main_defaults_to_httpx": [
+      "self"
+    ],
+    "test_main_stdio_rejects_mixed_with_http": [
+      "self"
+    ],
+    "test_main_applies_host_and_port_to_settings": [
+      "self"
+    ],
+    "test_main_route_dedup_prevents_duplicates": [
+      "self"
+    ],
+    "test_main_route_dedup_allows_different_methods": [
+      "self"
+    ],
+    "test_main_lifespan_selection": [
+      "self"
+    ],
+    "test_main_stdio_rejects_host_port": [
+      "self"
+    ],
+    "test_main_http_uses_default_host_port": [
+      "self"
+    ]
+  },
+  "TestConfiguration": {
+    "test_safe_search_enum_values": [
+      "self"
+    ],
+    "test_searcher_passes_safe_search_to_request": [
+      "self"
+    ],
+    "test_searcher_passes_region_to_request": [
+      "self"
+    ]
+  },
+  "__version__": [],
+  "ddg_html_factory": [],
+  "local_http_server": [],
+  "test_server_lists_tools": [],
+  "test_fetch_content_tool_e2e": [
+    "local_http_server"
+  ],
+  "test_search_tool_e2e": [
+    "ddg_html_factory"
+  ],
+  "test_fetch_content_tool_accepts_backend_param": [
+    "local_http_server"
+  ],
+  "test_fetch_content_tool_lists_backend_in_schema": [],
+  "test_search_tool_handles_errors": []
+}
