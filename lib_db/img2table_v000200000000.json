@@ -1,0 +1,1214 @@
+{
+  "ValidationError": {},
+  "validate_src": [
+    "src"
+  ],
+  "validate_bool": [
+    "value",
+    "field_name"
+  ],
+  "validate_positive_int": [
+    "value",
+    "field_name"
+  ],
+  "validate_pages": [
+    "pages"
+  ],
+  "validate_ocr_records": [
+    "records",
+    "field_name"
+  ],
+  "CoordinateProvider": {},
+  "TableObject": {
+    "height": [
+      "self"
+    ],
+    "width": [
+      "self"
+    ],
+    "area": [
+      "self"
+    ]
+  },
+  "Line": {
+    "angle": [
+      "self"
+    ],
+    "length": [
+      "self"
+    ],
+    "horizontal": [
+      "self"
+    ],
+    "vertical": [
+      "self"
+    ],
+    "reprocess": [
+      "self"
+    ],
+    "__hash__": [
+      "self"
+    ]
+  },
+  "Cell": {
+    "bbox": [
+      "self",
+      "margin"
+    ],
+    "table_cell": [
+      "self",
+      "image_width",
+      "image_height"
+    ],
+    "__hash__": [
+      "self"
+    ]
+  },
+  "Row": {
+    "nb_columns": [
+      "self"
+    ],
+    "x1": [
+      "self"
+    ],
+    "x2": [
+      "self"
+    ],
+    "y1": [
+      "self"
+    ],
+    "y2": [
+      "self"
+    ],
+    "v_consistent": [
+      "self"
+    ],
+    "add_cells": [
+      "self",
+      "cells"
+    ],
+    "__hash__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ]
+  },
+  "Table": {
+    "set_title_area": [
+      "self",
+      "title_area"
+    ],
+    "set_title": [
+      "self",
+      "title"
+    ],
+    "nb_rows": [
+      "self"
+    ],
+    "nb_columns": [
+      "self"
+    ],
+    "nb_cells": [
+      "self"
+    ],
+    "x1": [
+      "self"
+    ],
+    "x2": [
+      "self"
+    ],
+    "y1": [
+      "self"
+    ],
+    "y2": [
+      "self"
+    ],
+    "cell": [
+      "self"
+    ],
+    "lines": [
+      "self"
+    ],
+    "remove_rows": [
+      "self",
+      "row_ids"
+    ],
+    "remove_columns": [
+      "self",
+      "col_ids"
+    ],
+    "get_content": [
+      "self",
+      "ocr_data",
+      "page_number",
+      "min_confidence"
+    ],
+    "overlaps": [
+      "self",
+      "other",
+      "pct"
+    ],
+    "has_valid_shape": [
+      "self"
+    ],
+    "extracted_table": [
+      "self",
+      "image_width",
+      "image_height"
+    ],
+    "__hash__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ]
+  },
+  "ImgCharacteristics": {
+    "min_line_length": [
+      "self"
+    ]
+  },
+  "TableExtractor": {
+    "__post_init__": [
+      "self"
+    ],
+    "horizontal_lines": [
+      "self"
+    ],
+    "vertical_lines": [
+      "self"
+    ],
+    "extract_bordered_tables": [
+      "self",
+      "implicit_rows",
+      "implicit_columns"
+    ],
+    "extract_borderless_tables": [
+      "self"
+    ],
+    "extract_tables": [
+      "self",
+      "implicit_rows",
+      "implicit_columns",
+      "borderless_tables"
+    ]
+  },
+  "compute_char_length": [
+    "thresh"
+  ],
+  "compute_median_line_sep": [
+    "chars_array",
+    "char_length",
+    "height",
+    "width"
+  ],
+  "compute_img_metrics": [
+    "thresh"
+  ],
+  "identify_straight_lines": [
+    "thresh",
+    "min_line_length",
+    "char_length",
+    "vertical"
+  ],
+  "detect_lines": [
+    "img",
+    "contours",
+    "char_length",
+    "min_line_length"
+  ],
+  "extract_bordered_tables": [
+    "contours",
+    "horizontal_lines",
+    "vertical_lines",
+    "char_length",
+    "implicit_rows",
+    "implicit_columns"
+  ],
+  "deduplicate_cells": [
+    "cells"
+  ],
+  "get_cells_from_lines": [
+    "horizontal_lines",
+    "vertical_lines"
+  ],
+  "get_cells": [
+    "horizontal_lines",
+    "vertical_lines"
+  ],
+  "normalize_table_cells": [
+    "cluster_cells",
+    "char_length"
+  ],
+  "get_tables": [
+    "cells",
+    "elements",
+    "lines",
+    "char_length"
+  ],
+  "remove_unwanted_elements": [
+    "table",
+    "elements"
+  ],
+  "cluster_to_table": [
+    "cluster_cells",
+    "elements"
+  ],
+  "get_adjacent_cells": [
+    "cells"
+  ],
+  "cluster_cells_in_tables": [
+    "cells"
+  ],
+  "ClusterCharacteristics": {
+    "x_min": [
+      "self"
+    ],
+    "x_max": [
+      "self"
+    ],
+    "y_min": [
+      "self"
+    ],
+    "y_max": [
+      "self"
+    ],
+    "width": [
+      "self"
+    ],
+    "height": [
+      "self"
+    ],
+    "h_tolerance": [
+      "self"
+    ],
+    "v_tolerance": [
+      "self"
+    ]
+  },
+  "get_cluster_characteristics": [
+    "cluster",
+    "char_length"
+  ],
+  "get_lines_in_cluster": [
+    "lines",
+    "characteristics"
+  ],
+  "identify_table_dimensions": [
+    "characteristics",
+    "h_lines_cl",
+    "v_lines_cl"
+  ],
+  "has_line_support": [
+    "candidate",
+    "h_lines_cl",
+    "v_lines_cl",
+    "tolerance"
+  ],
+  "identify_potential_new_cells": [
+    "cluster",
+    "h_lines_cl",
+    "v_lines_cl",
+    "left",
+    "right",
+    "top",
+    "bottom",
+    "tolerance"
+  ],
+  "update_cluster_cells": [
+    "cluster",
+    "new_cells",
+    "char_length"
+  ],
+  "add_semi_bordered_cells": [
+    "cluster",
+    "lines",
+    "char_length"
+  ],
+  "implicit_rows_lines": [
+    "table",
+    "contours"
+  ],
+  "implicit_columns_lines": [
+    "table",
+    "contours",
+    "char_length"
+  ],
+  "implicit_content": [
+    "table",
+    "contours",
+    "char_length",
+    "implicit_rows",
+    "implicit_columns"
+  ],
+  "ItemHolder": {
+    "x1": [
+      "self"
+    ],
+    "y1": [
+      "self"
+    ],
+    "x2": [
+      "self"
+    ],
+    "y2": [
+      "self"
+    ],
+    "y_center": [
+      "self"
+    ],
+    "width": [
+      "self"
+    ],
+    "height": [
+      "self"
+    ],
+    "area": [
+      "self"
+    ]
+  },
+  "Whitespace": {
+    "width": [
+      "self"
+    ],
+    "matching_bound": [
+      "self",
+      "other"
+    ],
+    "overlaps": [
+      "self",
+      "other"
+    ],
+    "__hash__": [
+      "self"
+    ]
+  },
+  "MergedRow": {
+    "x1": [
+      "self"
+    ],
+    "y1": [
+      "self"
+    ],
+    "x2": [
+      "self"
+    ],
+    "y2": [
+      "self"
+    ],
+    "compute_whitespaces": [
+      "self",
+      "min_width",
+      "x_min",
+      "x_max"
+    ]
+  },
+  "ColumnSection": {
+    "update": [
+      "self",
+      "row",
+      "whitespaces"
+    ],
+    "nb_columns": [
+      "self"
+    ],
+    "first_y_center": [
+      "self"
+    ],
+    "last_y_center": [
+      "self"
+    ]
+  },
+  "LayoutRegion": {
+    "build": [
+      "cls",
+      "x1",
+      "y1",
+      "x2",
+      "y2",
+      "contours"
+    ]
+  },
+  "RowCharacteristic": {
+    "count": [
+      "self"
+    ],
+    "inner_ws_width": [
+      "self"
+    ]
+  },
+  "compute_whitespaces": [
+    "items",
+    "min_width",
+    "x_min",
+    "x_max"
+  ],
+  "identify_merged_rows": [
+    "cnts"
+  ],
+  "extract_borderless_tables": [
+    "thresh",
+    "lines",
+    "char_length",
+    "existing_tables"
+  ],
+  "VerticalWhitespace": {
+    "width": [
+      "self"
+    ],
+    "height": [
+      "self"
+    ]
+  },
+  "ColumnDelimiters": {
+    "y1": [
+      "self"
+    ],
+    "y2": [
+      "self"
+    ],
+    "relevant": [
+      "self"
+    ],
+    "columns": [
+      "self"
+    ],
+    "as_layout": [
+      "self",
+      "contours"
+    ]
+  },
+  "cut_ws_by_lines": [
+    "ws",
+    "lines",
+    "min_height"
+  ],
+  "identify_vertical_delimiters": [
+    "contours",
+    "lines",
+    "min_width",
+    "width"
+  ],
+  "vertical_ws_matches": [
+    "ws1",
+    "ws2"
+  ],
+  "identify_column_regions": [
+    "vertical_ws",
+    "x_min",
+    "x_max",
+    "width"
+  ],
+  "create_all_layout_areas": [
+    "column_dels",
+    "contours",
+    "y_min",
+    "y_max",
+    "width"
+  ],
+  "identify_layout": [
+    "contours",
+    "lines",
+    "min_width",
+    "width"
+  ],
+  "_mask_detected_lines": [
+    "thresh",
+    "lines",
+    "char_length"
+  ],
+  "_apply_arlsa": [
+    "img",
+    "a",
+    "obstacle_mask"
+  ],
+  "remove_punctuation_marks": [
+    "thresh"
+  ],
+  "identify_text_mask": [
+    "thresh",
+    "lines",
+    "char_length",
+    "existing_tables"
+  ],
+  "regroup_contours": [
+    "cnts",
+    "char_length"
+  ],
+  "identify_image_contours": [
+    "thresh",
+    "lines",
+    "char_length",
+    "existing_tables"
+  ],
+  "identify_image_layout": [
+    "thresh",
+    "lines",
+    "char_length",
+    "existing_tables"
+  ],
+  "matching_whitespaces": [
+    "ws1_list",
+    "ws2_list",
+    "min_width"
+  ],
+  "score_rows": [
+    "row_data",
+    "min_width",
+    "max_gap"
+  ],
+  "compute_column_sections": [
+    "merged_rows",
+    "min_width",
+    "x_min",
+    "x_max",
+    "ratio_vertical_separation"
+  ],
+  "assess_table_whitespace_coherency": [
+    "list_ws_1",
+    "list_ws_2",
+    "min_width",
+    "vertically_close"
+  ],
+  "_flush_sections_group": [
+    "group",
+    "common_ws",
+    "x_min",
+    "x_max"
+  ],
+  "_merge_section_whitespaces": [
+    "sections",
+    "min_width",
+    "x_min",
+    "x_max"
+  ],
+  "merge_column_sections": [
+    "column_sections",
+    "min_width",
+    "max_gap",
+    "x_min",
+    "x_max"
+  ],
+  "ensure_section_bounds_consistency": [
+    "section",
+    "min_width",
+    "x_min",
+    "x_max"
+  ],
+  "assess_columns_relevance": [
+    "section",
+    "min_col_width"
+  ],
+  "ensure_consistent_section": [
+    "section",
+    "min_width",
+    "x_min",
+    "x_max"
+  ],
+  "identify_column_sections": [
+    "layout_region",
+    "min_width"
+  ],
+  "identify_tables": [
+    "column_sections",
+    "char_length",
+    "height",
+    "width"
+  ],
+  "_reference_column_separators": [
+    "section_group"
+  ],
+  "section_group_to_table": [
+    "section_group"
+  ],
+  "bridge_small_discrepancies": [
+    "structured_sections"
+  ],
+  "header_ws_matches": [
+    "header_ws",
+    "ref_ws"
+  ],
+  "update_header_whitespaces": [
+    "header_section",
+    "ref_ws"
+  ],
+  "identify_potentials_headers": [
+    "structured_sections",
+    "table_groups"
+  ],
+  "StructuredSection": {
+    "from_section": [
+      "cls",
+      "idx",
+      "section",
+      "width",
+      "height",
+      "char_length"
+    ],
+    "x_min": [
+      "self"
+    ],
+    "x_max": [
+      "self"
+    ],
+    "y_min": [
+      "self"
+    ],
+    "y_max": [
+      "self"
+    ],
+    "nb_columns": [
+      "self"
+    ],
+    "nb_rows": [
+      "self"
+    ],
+    "cols": [
+      "self"
+    ],
+    "col_cells": [
+      "self"
+    ],
+    "row_ranges": [
+      "self"
+    ],
+    "row_height": [
+      "self"
+    ],
+    "table_score": [
+      "self"
+    ],
+    "is_structured": [
+      "self"
+    ],
+    "table": [
+      "self",
+      "x_min",
+      "x_max",
+      "y_min",
+      "y_max",
+      "ref_whitespaces"
+    ]
+  },
+  "_cell_content_map": [
+    "section"
+  ],
+  "_occupancy_matrix": [
+    "cell_content_map"
+  ],
+  "column_presence_ratios": [
+    "section",
+    "occupancy_matrix"
+  ],
+  "network_connectivity_score": [
+    "section",
+    "occupancy_matrix"
+  ],
+  "row_pattern_consistency_score": [
+    "occupancy_matrix"
+  ],
+  "compute_content_layout_metrics": [
+    "section"
+  ],
+  "full_text_score": [
+    "section"
+  ],
+  "sparsity_score": [
+    "section"
+  ],
+  "_median_absolute_difference": [
+    "values"
+  ],
+  "_col_alignment_score": [
+    "col",
+    "char_length",
+    "width"
+  ],
+  "compute_columns_metrics": [
+    "section"
+  ],
+  "content_spacing_consistency": [
+    "section"
+  ],
+  "TableMetrics": {
+    "score": [
+      "self"
+    ],
+    "from_section": [
+      "cls",
+      "section"
+    ]
+  },
+  "CellPosition": {},
+  "CellSpan": {
+    "colspan": [
+      "self"
+    ],
+    "rowspan": [
+      "self"
+    ],
+    "html_value": [
+      "self"
+    ],
+    "html": [
+      "self"
+    ],
+    "html_cell_span": [
+      "self"
+    ]
+  },
+  "group_cell_positions": [
+    "table"
+  ],
+  "_find_largest_rectangle": [
+    "pos_set",
+    "min_row",
+    "max_row",
+    "min_col",
+    "max_col"
+  ],
+  "create_all_rectangles": [
+    "cell_positions"
+  ],
+  "build_html": [
+    "table"
+  ],
+  "build_worksheet": [
+    "table",
+    "sheet",
+    "cell_fmt"
+  ],
+  "BBox": {
+    "relative": [
+      "self"
+    ]
+  },
+  "RelativeBBox": {},
+  "TableCell": {
+    "__hash__": [
+      "self"
+    ]
+  },
+  "ExtractedTable": {
+    "df": [
+      "self"
+    ],
+    "html": [
+      "self"
+    ],
+    "_to_worksheet": [
+      "self",
+      "sheet",
+      "cell_fmt"
+    ],
+    "html_repr": [
+      "self",
+      "title"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "T": [],
+  "find_components": [
+    "edges"
+  ],
+  "cluster_items": [
+    "items",
+    "clustering_func"
+  ],
+  "_cluster_values": [
+    "values",
+    "median_gap_multiple",
+    "min_gap"
+  ],
+  "threshold_dark_areas": [
+    "img",
+    "char_length"
+  ],
+  "_evaluate_key_separation_value": [
+    "rows",
+    "ref_separation",
+    "y_min",
+    "y_max",
+    "enforce_gap"
+  ],
+  "compute_row_ranges": [
+    "rows",
+    "y_min",
+    "y_max",
+    "enforce_gap"
+  ],
+  "get_title_areas": [
+    "contours",
+    "tables",
+    "median_line_sep"
+  ],
+  "__all__": [],
+  "AzureOCR": {
+    "__init__": [
+      "self",
+      "endpoint",
+      "subscription_key"
+    ],
+    "content": [
+      "self",
+      "document"
+    ],
+    "of": [
+      "self",
+      "document"
+    ]
+  },
+  "RapidOCR": {
+    "__init__": [
+      "self",
+      "params"
+    ],
+    "of": [
+      "self",
+      "document"
+    ]
+  },
+  "TextractOCR": {
+    "__init__": [
+      "self",
+      "aws_access_key_id",
+      "aws_secret_access_key",
+      "aws_session_token",
+      "region"
+    ],
+    "map_response": [
+      "response",
+      "image"
+    ],
+    "of": [
+      "self",
+      "document"
+    ]
+  },
+  "EasyOCR": {
+    "__init__": [
+      "self",
+      "lang",
+      "kw"
+    ],
+    "of": [
+      "self",
+      "document"
+    ]
+  },
+  "OCRInstance": {
+    "of": [
+      "self",
+      "document"
+    ]
+  },
+  "OCRRecord": [],
+  "OCRPageRecords": [],
+  "OCRData": {
+    "__post_init__": [
+      "self"
+    ],
+    "_group_words_by_parent": [
+      "words"
+    ],
+    "get_text_cell": [
+      "self",
+      "cell",
+      "margin",
+      "page_number",
+      "min_confidence"
+    ],
+    "get_text_table": [
+      "self",
+      "table",
+      "page_number",
+      "min_confidence"
+    ],
+    "__hash__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ]
+  },
+  "SuryaOCR": {
+    "__init__": [
+      "self",
+      "langs"
+    ],
+    "of": [
+      "self",
+      "document"
+    ]
+  },
+  "VisionContent": {
+    "__init__": [
+      "self",
+      "timeout"
+    ],
+    "img_to_b64": [
+      "img"
+    ]
+  },
+  "VisionEndpointContent": {
+    "__init__": [
+      "self",
+      "api_key",
+      "timeout"
+    ],
+    "map_response": [
+      "response",
+      "width",
+      "height"
+    ],
+    "get_ocr_image": [
+      "self",
+      "img"
+    ],
+    "of": [
+      "self",
+      "document"
+    ]
+  },
+  "VisionAPIContent": {
+    "__init__": [
+      "self",
+      "timeout"
+    ],
+    "map_response": [
+      "response",
+      "shapes"
+    ],
+    "of": [
+      "self",
+      "document"
+    ]
+  },
+  "VisionOCR": {
+    "__init__": [
+      "self",
+      "api_key",
+      "timeout"
+    ],
+    "of": [
+      "self",
+      "document"
+    ]
+  },
+  "DocTR": {
+    "__init__": [
+      "self",
+      "detect_language",
+      "kw"
+    ],
+    "of": [
+      "self",
+      "document"
+    ]
+  },
+  "PaddleOCR": {
+    "__init__": [
+      "self",
+      "lang",
+      "kw"
+    ],
+    "of": [
+      "self",
+      "document"
+    ]
+  },
+  "Char": {
+    "width": [
+      "self"
+    ],
+    "height": [
+      "self"
+    ],
+    "distance": [
+      "self",
+      "char"
+    ]
+  },
+  "Word": {
+    "add_char": [
+      "self",
+      "char"
+    ],
+    "avg_size": [
+      "self"
+    ],
+    "distance": [
+      "self",
+      "char"
+    ],
+    "corresponds": [
+      "self",
+      "char"
+    ],
+    "asdict": [
+      "self",
+      "page_idx"
+    ]
+  },
+  "get_all_char_data": [
+    "text_page",
+    "n_chars",
+    "page_width",
+    "page_height",
+    "page_rotation",
+    "x_offset",
+    "y_offset"
+  ],
+  "PdfOCR": {
+    "of": [
+      "self",
+      "document"
+    ]
+  },
+  "TesseractOCR": {
+    "__init__": [
+      "self",
+      "n_threads",
+      "lang",
+      "psm",
+      "tessdata_dir"
+    ],
+    "hocr": [
+      "self",
+      "image"
+    ],
+    "of": [
+      "self",
+      "document"
+    ]
+  },
+  "Image": {
+    "__post_init__": [
+      "self"
+    ],
+    "images": [
+      "self"
+    ],
+    "extract_tables": [
+      "self",
+      "ocr",
+      "implicit_rows",
+      "implicit_columns",
+      "borderless_tables",
+      "min_confidence",
+      "max_workers"
+    ]
+  },
+  "MockDocument": {},
+  "Document": {
+    "__post_init__": [
+      "self"
+    ],
+    "images": [
+      "self"
+    ],
+    "file_bytes": [
+      "self"
+    ],
+    "get_table_content": [
+      "self",
+      "tables",
+      "ocr",
+      "min_confidence"
+    ],
+    "extract_tables": [
+      "self",
+      "ocr",
+      "implicit_rows",
+      "implicit_columns",
+      "borderless_tables",
+      "min_confidence",
+      "max_workers"
+    ],
+    "to_xlsx": [
+      "self",
+      "dest",
+      "ocr",
+      "implicit_rows",
+      "implicit_columns",
+      "borderless_tables",
+      "min_confidence",
+      "max_workers"
+    ]
+  },
+  "_detect_tables": [
+    "img",
+    "implicit_rows",
+    "implicit_columns",
+    "borderless_tables"
+  ],
+  "_render_and_detect_tables": [
+    "page_number",
+    "file_bytes",
+    "pdfium_lock",
+    "detect_rotation",
+    "implicit_rows",
+    "implicit_columns",
+    "borderless_tables"
+  ],
+  "PDF": {
+    "__post_init__": [
+      "self"
+    ],
+    "_ensure_pages": [
+      "self"
+    ],
+    "images": [
+      "self"
+    ],
+    "get_table_content": [
+      "self",
+      "tables",
+      "ocr",
+      "min_confidence"
+    ],
+    "extract_tables": [
+      "self",
+      "ocr",
+      "implicit_rows",
+      "implicit_columns",
+      "borderless_tables",
+      "min_confidence",
+      "max_workers"
+    ]
+  },
+  "get_connected_components": [
+    "img"
+  ],
+  "get_relevant_angles": [
+    "centroids",
+    "ref_height",
+    "n_max"
+  ],
+  "rotate_img": [
+    "img",
+    "angle"
+  ],
+  "evaluate_angle": [
+    "img",
+    "angle"
+  ],
+  "estimate_skew": [
+    "angles",
+    "thresh"
+  ],
+  "rotate_img_with_border": [
+    "img",
+    "angle",
+    "background_color"
+  ],
+  "fix_rotation_image": [
+    "img"
+  ]
+}
