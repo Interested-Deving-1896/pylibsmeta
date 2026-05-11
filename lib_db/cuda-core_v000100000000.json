@@ -1,0 +1,240 @@
+{
+  "__all__": [],
+  "__version__": [],
+  "version": [],
+  "__version_tuple__": [],
+  "version_tuple": [],
+  "__commit_id__": [],
+  "commit_id": [],
+  "subdir": [],
+  "_warn_deprecated": [],
+  "NvmlError": [],
+  "UninitializedError": [],
+  "InvalidArgumentError": [],
+  "NotSupportedError": [],
+  "NoPermissionError": [],
+  "AlreadyInitializedError": [],
+  "NotFoundError": [],
+  "InsufficientSizeError": [],
+  "InsufficientPowerError": [],
+  "DriverNotLoadedError": [],
+  "TimeoutError": [],
+  "IrqIssueError": [],
+  "LibraryNotFoundError": [],
+  "FunctionNotFoundError": [],
+  "CorruptedInforomError": [],
+  "GpuIsLostError": [],
+  "ResetRequiredError": [],
+  "OperatingSystemError": [],
+  "LibRmVersionMismatchError": [],
+  "InUseError": [],
+  "MemoryError": [],
+  "NoDataError": [],
+  "VgpuEccNotSupportedError": [],
+  "InsufficientResourcesError": [],
+  "FreqNotSupportedError": [],
+  "ArgumentVersionMismatchError": [],
+  "DeprecatedError": [],
+  "NotReadyError": [],
+  "GpuNotFoundError": [],
+  "InvalidStateError": [],
+  "ResetTypeNotSupportedError": [],
+  "UnknownError": [],
+  "LegacyPinnedMemoryResource": {
+    "allocate": [
+      "self",
+      "size",
+      "stream"
+    ],
+    "deallocate": [
+      "self",
+      "ptr",
+      "size",
+      "stream"
+    ],
+    "is_device_accessible": [
+      "self"
+    ],
+    "is_host_accessible": [
+      "self"
+    ],
+    "device_id": [
+      "self"
+    ]
+  },
+  "_SynchronousMemoryResource": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "device_id"
+    ],
+    "allocate": [
+      "self",
+      "size",
+      "stream"
+    ],
+    "deallocate": [
+      "self",
+      "ptr",
+      "size",
+      "stream"
+    ],
+    "is_device_accessible": [
+      "self"
+    ],
+    "is_host_accessible": [
+      "self"
+    ],
+    "device_id": [
+      "self"
+    ]
+  },
+  "PeerAccessPlan": {},
+  "normalize_peer_access_targets": [
+    "owner_device_id",
+    "requested_devices"
+  ],
+  "plan_peer_access_update": [
+    "owner_device_id",
+    "current_peer_ids",
+    "requested_devices"
+  ],
+  "VirtualMemoryHandleTypeT": [],
+  "VirtualMemoryLocationTypeT": [],
+  "VirtualMemoryGranularityT": [],
+  "VirtualMemoryAccessTypeT": [],
+  "VirtualMemoryAllocationTypeT": [],
+  "VirtualMemoryResourceOptions": {
+    "_a": [],
+    "_access_flags": [],
+    "_h": [],
+    "_handle_types": [],
+    "_g": [],
+    "_granularity": [],
+    "_l": [],
+    "_location_type": [],
+    "_t": [],
+    "_allocation_type": [],
+    "_access_to_flags": [
+      "spec"
+    ],
+    "_allocation_type_to_driver": [
+      "spec"
+    ],
+    "_location_type_to_driver": [
+      "spec"
+    ],
+    "_handle_type_to_driver": [
+      "spec"
+    ],
+    "_granularity_to_driver": [
+      "spec"
+    ]
+  },
+  "VirtualMemoryResource": {
+    "__init__": [
+      "self",
+      "device_id",
+      "config"
+    ],
+    "_align_up": [
+      "size",
+      "gran"
+    ],
+    "modify_allocation": [
+      "self",
+      "buf",
+      "new_size",
+      "config"
+    ],
+    "_grow_allocation_fast_path": [
+      "self",
+      "buf",
+      "new_size",
+      "prop",
+      "aligned_additional_size",
+      "new_ptr"
+    ],
+    "_grow_allocation_slow_path": [
+      "self",
+      "buf",
+      "new_size",
+      "prop",
+      "aligned_additional_size",
+      "total_aligned_size",
+      "addr_align"
+    ],
+    "_build_access_descriptors": [
+      "self",
+      "prop"
+    ],
+    "allocate": [
+      "self",
+      "size",
+      "stream"
+    ],
+    "deallocate": [
+      "self",
+      "ptr",
+      "size",
+      "stream"
+    ],
+    "is_device_accessible": [
+      "self"
+    ],
+    "is_host_accessible": [
+      "self"
+    ],
+    "device_id": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "_load_fallback_explanations": [],
+  "RUNTIME_CUDA_ERROR_EXPLANATIONS": [],
+  "_FALLBACK_EXPLANATIONS": [],
+  "DRIVER_CU_RESULT_EXPLANATIONS": [],
+  "assert_type": [
+    "obj",
+    "expected_type"
+  ],
+  "assert_type_str_or_bytes_like": [
+    "obj"
+  ],
+  "raise_code_path_meant_to_be_unreachable": [],
+  "_MIN_12X_BINDING_VERSION_FOR_ENUM_DOCSTRINGS": [],
+  "_MIN_13X_BINDING_VERSION_FOR_ENUM_DOCSTRINGS": [],
+  "_RST_INLINE_ROLE_RE": [],
+  "_WORDWRAP_HYPHEN_AFTER_RE": [],
+  "_WORDWRAP_HYPHEN_BEFORE_RE": [],
+  "_ExplanationTable": [],
+  "_ExplanationTableLoader": [],
+  "_binding_version": [],
+  "_binding_version_has_usable_enum_docstrings": [
+    "version"
+  ],
+  "_fix_hyphenation_wordwrap_spacing": [
+    "s"
+  ],
+  "clean_enum_member_docstring": [
+    "doc"
+  ],
+  "DocstringBackedExplanations": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "enum_type"
+    ],
+    "get": [
+      "self",
+      "code",
+      "default"
+    ]
+  },
+  "get_best_available_explanations": [
+    "enum_type",
+    "fallback"
+  ]
+}
