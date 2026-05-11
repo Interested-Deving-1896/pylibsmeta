@@ -1,0 +1,275 @@
+{
+  "WheelDestination": {
+    "write_script": [
+      "self",
+      "name",
+      "module",
+      "attr",
+      "section"
+    ],
+    "write_file": [
+      "self",
+      "scheme",
+      "path",
+      "stream",
+      "is_executable"
+    ],
+    "finalize_installation": [
+      "self",
+      "scheme",
+      "record_file_path",
+      "records"
+    ]
+  },
+  "SchemeDictionaryDestination": {
+    "_path_with_destdir": [
+      "self",
+      "scheme",
+      "path"
+    ],
+    "write_to_fs": [
+      "self",
+      "scheme",
+      "path",
+      "stream",
+      "is_executable"
+    ],
+    "write_file": [
+      "self",
+      "scheme",
+      "path",
+      "stream",
+      "is_executable"
+    ],
+    "write_script": [
+      "self",
+      "name",
+      "module",
+      "attr",
+      "section"
+    ],
+    "_compile_bytecode": [
+      "self",
+      "scheme",
+      "record"
+    ],
+    "finalize_installation": [
+      "self",
+      "scheme",
+      "record_file_path",
+      "records"
+    ]
+  },
+  "Scheme": [],
+  "AllSchemes": [],
+  "__all__": [],
+  "_WINDOWS": [],
+  "_COPY_BUFSIZE": [],
+  "_WHEEL_FILENAME_REGEX": [],
+  "WheelFilename": [],
+  "_ENTRYPOINT_REGEX": [],
+  "SCHEME_NAMES": [],
+  "parse_metadata_file": [
+    "contents"
+  ],
+  "canonicalize_name": [
+    "name"
+  ],
+  "parse_wheel_filename": [
+    "filename"
+  ],
+  "copyfileobj_with_hashing": [
+    "source",
+    "dest",
+    "hash_algorithm"
+  ],
+  "get_stream_length": [
+    "source"
+  ],
+  "get_launcher_kind": [],
+  "fix_shebang": [
+    "stream",
+    "interpreter"
+  ],
+  "construct_record_file": [
+    "records",
+    "prefix_for_scheme"
+  ],
+  "parse_entrypoints": [
+    "text"
+  ],
+  "_current_umask": [],
+  "make_file_executable": [
+    "path"
+  ],
+  "_process_WHEEL_file": [
+    "source"
+  ],
+  "_determine_scheme": [
+    "path",
+    "source",
+    "root_scheme"
+  ],
+  "install": [
+    "source",
+    "destination",
+    "additional_metadata"
+  ],
+  "WheelContentElement": [],
+  "WheelSource": {
+    "__init__": [
+      "self",
+      "distribution",
+      "version"
+    ],
+    "dist_info_dir": [
+      "self"
+    ],
+    "data_dir": [
+      "self"
+    ],
+    "dist_info_filenames": [
+      "self"
+    ],
+    "read_dist_info": [
+      "self",
+      "filename"
+    ],
+    "validate_record": [
+      "self"
+    ],
+    "get_contents": [
+      "self"
+    ]
+  },
+  "_WheelFileValidationError": {
+    "__init__": [
+      "self",
+      "issues"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "_WheelFileBadDistInfo": {
+    "__init__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "WheelFile": {
+    "validation_error": [],
+    "__init__": [
+      "self",
+      "f"
+    ],
+    "open": [
+      "cls",
+      "path"
+    ],
+    "dist_info_dir": [
+      "self"
+    ],
+    "dist_info_filenames": [
+      "self"
+    ],
+    "read_dist_info": [
+      "self",
+      "filename"
+    ],
+    "validate_record": [
+      "self"
+    ],
+    "get_contents": [
+      "self"
+    ]
+  },
+  "InvalidRecordEntry": {
+    "__post_init__": [
+      "self"
+    ]
+  },
+  "Hash": {
+    "__str__": [
+      "self"
+    ],
+    "validate": [
+      "self",
+      "data"
+    ],
+    "parse": [
+      "cls",
+      "h"
+    ]
+  },
+  "RecordEntry": {
+    "to_row": [
+      "self",
+      "path_prefix"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "validate": [
+      "self",
+      "data"
+    ],
+    "validate_stream": [
+      "self",
+      "stream"
+    ],
+    "from_elements": [
+      "cls",
+      "path",
+      "hash_",
+      "size"
+    ]
+  },
+  "parse_record_file": [
+    "rows"
+  ],
+  "_SCRIPT_TEMPLATE": [],
+  "InvalidScript": {},
+  "Script": {
+    "_get_launcher_data": [
+      "self",
+      "kind"
+    ],
+    "_get_alternate_executable": [
+      "self",
+      "executable",
+      "kind"
+    ],
+    "generate": [
+      "self",
+      "executable",
+      "kind"
+    ],
+    "_is_executable_simple": [
+      "executable"
+    ],
+    "_build_shebang": [
+      "self",
+      "executable",
+      "forlauncher"
+    ]
+  },
+  "__version__": [],
+  "_get_main_parser": [],
+  "_get_scheme_dict": [
+    "distribution_name",
+    "prefix"
+  ],
+  "_main": [
+    "cli_args",
+    "program"
+  ],
+  "InstallerError": {},
+  "InvalidWheelSource": {}
+}
