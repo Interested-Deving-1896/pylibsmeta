@@ -1,0 +1,721 @@
+{
+  "__author__": [],
+  "__version__": [],
+  "_logger": [
+    "cls"
+  ],
+  "SYMBOLS": [],
+  "MOUSEINPUT": {
+    "MOVE": [],
+    "LEFTDOWN": [],
+    "LEFTUP": [],
+    "RIGHTDOWN": [],
+    "RIGHTUP": [],
+    "MIDDLEDOWN": [],
+    "MIDDLEUP": [],
+    "XDOWN": [],
+    "XUP": [],
+    "WHEEL": [],
+    "HWHEEL": [],
+    "ABSOLUTE": [],
+    "XBUTTON1": [],
+    "XBUTTON2": [],
+    "_fields_": []
+  },
+  "KEYBDINPUT": {
+    "EXTENDEDKEY": [],
+    "KEYUP": [],
+    "SCANCODE": [],
+    "UNICODE": [],
+    "_fields_": []
+  },
+  "HARDWAREINPUT": {
+    "_fields_": []
+  },
+  "INPUT_union": {
+    "_fields_": []
+  },
+  "INPUT": {
+    "MOUSE": [],
+    "KEYBOARD": [],
+    "HARDWARE": [],
+    "_fields_": []
+  },
+  "LPINPUT": [],
+  "VkKeyScan": [],
+  "MapVirtualKey": [],
+  "SendInput": [],
+  "GetCurrentThreadId": [],
+  "MessageLoop": {
+    "WM_STOP": [],
+    "_LPMSG": [],
+    "_GetMessage": [],
+    "_PeekMessage": [],
+    "_PostThreadMessage": [],
+    "PM_NOREMOVE": [],
+    "__init__": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "start": [
+      "self"
+    ],
+    "stop": [
+      "self"
+    ],
+    "post": [
+      "self",
+      "msg",
+      "wparam",
+      "lparam"
+    ]
+  },
+  "SystemHook": {
+    "HC_ACTION": [],
+    "_HOOKPROC": [],
+    "_SetWindowsHookEx": [],
+    "_UnhookWindowsHookEx": [],
+    "_CallNextHookEx": [],
+    "_HOOKS": [],
+    "__init__": [
+      "self",
+      "hook_id",
+      "on_hook"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "value",
+      "traceback"
+    ],
+    "_handler": [
+      "code",
+      "msg",
+      "lpdata"
+    ]
+  },
+  "ListenerMixin": {
+    "_EVENTS": [],
+    "_WM_PROCESS": [],
+    "_WM_NOTIFICATIONS": [],
+    "suppress_event": [
+      "self"
+    ],
+    "_run": [
+      "self"
+    ],
+    "_stop_platform": [
+      "self"
+    ],
+    "_handler": [
+      "self",
+      "code",
+      "msg",
+      "lpdata"
+    ],
+    "_convert": [
+      "self",
+      "code",
+      "msg",
+      "lpdata"
+    ],
+    "_process": [
+      "self",
+      "wparam",
+      "lparam"
+    ],
+    "_handle_message": [
+      "self",
+      "code",
+      "msg",
+      "lpdata"
+    ],
+    "_on_notification": [
+      "self",
+      "code",
+      "wparam",
+      "lparam"
+    ]
+  },
+  "KeyTranslator": {
+    "_GetAsyncKeyState": [],
+    "_GetKeyboardLayout": [],
+    "_GetKeyboardState": [],
+    "_GetKeyState": [],
+    "_MapVirtualKeyEx": [],
+    "_ToUnicodeEx": [],
+    "_MAPVK_VK_TO_VSC": [],
+    "_MAPVK_VSC_TO_VK": [],
+    "_MAPVK_VK_TO_CHAR": [],
+    "__init__": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "vk",
+      "is_press"
+    ],
+    "update_layout": [
+      "self"
+    ],
+    "char_from_scan": [
+      "self",
+      "scan"
+    ],
+    "_generate_layout": [
+      "self"
+    ],
+    "_to_scan": [
+      "self",
+      "vk",
+      "layout"
+    ],
+    "_to_vk": [
+      "self",
+      "scan",
+      "layout"
+    ],
+    "_modifier_state": [
+      "self"
+    ],
+    "_thread_input": [
+      "self"
+    ]
+  },
+  "DEAD_KEYS": [],
+  "KEYPAD_KEYS": [],
+  "CHARS": [],
+  "KEYSYMS": [],
+  "_wrap_value": [
+    "value"
+  ],
+  "_wrapped": [
+    "value"
+  ],
+  "CarbonExtra": {
+    "_Carbon": [],
+    "TISCopyCurrentKeyboardInputSource": [],
+    "TISCopyCurrentASCIICapableKeyboardLayoutInputSource": [],
+    "kTISPropertyUnicodeKeyLayoutData": [],
+    "TISGetInputSourceProperty": [],
+    "LMGetKbdType": [],
+    "kUCKeyActionDisplay": [],
+    "kUCKeyTranslateNoDeadKeysBit": [],
+    "UCKeyTranslate": []
+  },
+  "keycode_context": [],
+  "keycode_to_string": [
+    "context",
+    "keycode",
+    "modifier_state"
+  ],
+  "get_unicode_to_keycode_map": [],
+  "_check_and_initialize": [],
+  "X11Error": {},
+  "display_manager": [
+    "display"
+  ],
+  "_find_mask": [
+    "display",
+    "symbol"
+  ],
+  "alt_mask": [
+    "display"
+  ],
+  "alt_gr_mask": [
+    "display"
+  ],
+  "numlock_mask": [
+    "display"
+  ],
+  "keysym_is_latin_upper": [
+    "keysym"
+  ],
+  "keysym_is_latin_lower": [
+    "keysym"
+  ],
+  "keysym_group": [
+    "ks1",
+    "ks2"
+  ],
+  "keysym_normalize": [
+    "keysym"
+  ],
+  "index_to_shift": [
+    "display",
+    "index"
+  ],
+  "shift_to_index": [
+    "display",
+    "shift"
+  ],
+  "keyboard_mapping": [
+    "display"
+  ],
+  "char_to_keysym": [
+    "char"
+  ],
+  "symbol_to_keysym": [
+    "symbol"
+  ],
+  "LBUTTON": [],
+  "RBUTTON": [],
+  "CANCEL": [],
+  "MBUTTON": [],
+  "XBUTTON1": [],
+  "XBUTTON2": [],
+  "BACK": [],
+  "TAB": [],
+  "CLEAR": [],
+  "RETURN": [],
+  "SHIFT": [],
+  "CONTROL": [],
+  "MENU": [],
+  "PAUSE": [],
+  "CAPITAL": [],
+  "KANA": [],
+  "HANGEUL": [],
+  "HANGUL": [],
+  "JUNJA": [],
+  "FINAL": [],
+  "HANJA": [],
+  "KANJI": [],
+  "ESCAPE": [],
+  "CONVERT": [],
+  "NONCONVERT": [],
+  "ACCEPT": [],
+  "MODECHANGE": [],
+  "SPACE": [],
+  "PRIOR": [],
+  "NEXT": [],
+  "END": [],
+  "HOME": [],
+  "LEFT": [],
+  "UP": [],
+  "RIGHT": [],
+  "DOWN": [],
+  "SELECT": [],
+  "PRINT": [],
+  "EXECUTE": [],
+  "SNAPSHOT": [],
+  "INSERT": [],
+  "DELETE": [],
+  "HELP": [],
+  "LWIN": [],
+  "RWIN": [],
+  "APPS": [],
+  "SLEEP": [],
+  "NUMPAD0": [],
+  "NUMPAD1": [],
+  "NUMPAD2": [],
+  "NUMPAD3": [],
+  "NUMPAD4": [],
+  "NUMPAD5": [],
+  "NUMPAD6": [],
+  "NUMPAD7": [],
+  "NUMPAD8": [],
+  "NUMPAD9": [],
+  "MULTIPLY": [],
+  "ADD": [],
+  "SEPARATOR": [],
+  "SUBTRACT": [],
+  "DECIMAL": [],
+  "DIVIDE": [],
+  "F1": [],
+  "F2": [],
+  "F3": [],
+  "F4": [],
+  "F5": [],
+  "F6": [],
+  "F7": [],
+  "F8": [],
+  "F9": [],
+  "F10": [],
+  "F11": [],
+  "F12": [],
+  "F13": [],
+  "F14": [],
+  "F15": [],
+  "F16": [],
+  "F17": [],
+  "F18": [],
+  "F19": [],
+  "F20": [],
+  "F21": [],
+  "F22": [],
+  "F23": [],
+  "F24": [],
+  "NUMLOCK": [],
+  "SCROLL": [],
+  "OEM_NEC_EQUAL": [],
+  "OEM_FJ_JISHO": [],
+  "OEM_FJ_MASSHOU": [],
+  "OEM_FJ_TOUROKU": [],
+  "OEM_FJ_LOYA": [],
+  "OEM_FJ_ROYA": [],
+  "LSHIFT": [],
+  "RSHIFT": [],
+  "LCONTROL": [],
+  "RCONTROL": [],
+  "LMENU": [],
+  "RMENU": [],
+  "BROWSER_BACK": [],
+  "BROWSER_FORWARD": [],
+  "BROWSER_REFRESH": [],
+  "BROWSER_STOP": [],
+  "BROWSER_SEARCH": [],
+  "BROWSER_FAVORITES": [],
+  "BROWSER_HOME": [],
+  "VOLUME_MUTE": [],
+  "VOLUME_DOWN": [],
+  "VOLUME_UP": [],
+  "MEDIA_NEXT_TRACK": [],
+  "MEDIA_PREV_TRACK": [],
+  "MEDIA_STOP": [],
+  "MEDIA_PLAY_PAUSE": [],
+  "LAUNCH_MAIL": [],
+  "LAUNCH_MEDIA_SELECT": [],
+  "LAUNCH_APP1": [],
+  "LAUNCH_APP2": [],
+  "OEM_1": [],
+  "OEM_PLUS": [],
+  "OEM_COMMA": [],
+  "OEM_MINUS": [],
+  "OEM_PERIOD": [],
+  "OEM_2": [],
+  "OEM_3": [],
+  "OEM_4": [],
+  "OEM_5": [],
+  "OEM_6": [],
+  "OEM_7": [],
+  "OEM_8": [],
+  "OEM_AX": [],
+  "OEM_102": [],
+  "ICO_HELP": [],
+  "ICO_00": [],
+  "PROCESSKEY": [],
+  "ICO_CLEAR": [],
+  "PACKET": [],
+  "OEM_RESET": [],
+  "OEM_JUMP": [],
+  "OEM_PA1": [],
+  "OEM_PA2": [],
+  "OEM_PA3": [],
+  "OEM_WSCTRL": [],
+  "OEM_CUSEL": [],
+  "OEM_ATTN": [],
+  "OEM_FINISH": [],
+  "OEM_COPY": [],
+  "OEM_AUTO": [],
+  "OEM_ENLW": [],
+  "OEM_BACKTAB": [],
+  "ATTN": [],
+  "CRSEL": [],
+  "EXSEL": [],
+  "EREOF": [],
+  "PLAY": [],
+  "ZOOM": [],
+  "NONAME": [],
+  "PA1": [],
+  "OEM_CLEAR": [],
+  "_check": [],
+  "RESOLUTIONS": [],
+  "backend": [
+    "package"
+  ],
+  "prefix": [
+    "base",
+    "cls"
+  ],
+  "AbstractListener": {
+    "_HANDLED_EXCEPTIONS": [],
+    "__init__": [
+      "self",
+      "suppress"
+    ],
+    "suppress": [
+      "self"
+    ],
+    "running": [
+      "self"
+    ],
+    "stop": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "value",
+      "traceback"
+    ],
+    "wait": [
+      "self"
+    ],
+    "run": [
+      "self"
+    ],
+    "_emitter": [
+      "cls",
+      "f"
+    ],
+    "_mark_ready": [
+      "self"
+    ],
+    "_run": [
+      "self"
+    ],
+    "_stop_platform": [
+      "self"
+    ],
+    "_wrap": [
+      "self",
+      "f",
+      "args"
+    ],
+    "join": [
+      "self",
+      "timeout"
+    ]
+  },
+  "Events": {
+    "_Listener": [],
+    "__init__": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__next__": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "timeout"
+    ],
+    "_event_mapper": [
+      "self",
+      "event"
+    ]
+  },
+  "NotifierMixin": {
+    "_emit": [
+      "self",
+      "action"
+    ],
+    "_receiver": [
+      "cls",
+      "listener_class"
+    ],
+    "_listeners": [
+      "cls"
+    ],
+    "_add_listener": [
+      "cls",
+      "listener"
+    ],
+    "_remove_listener": [
+      "cls",
+      "listener"
+    ]
+  },
+  "NX_KEYTYPE_PLAY": [],
+  "NX_KEYTYPE_MUTE": [],
+  "NX_KEYTYPE_SOUND_DOWN": [],
+  "NX_KEYTYPE_SOUND_UP": [],
+  "NX_KEYTYPE_NEXT": [],
+  "NX_KEYTYPE_PREVIOUS": [],
+  "NX_KEYTYPE_EJECT": [],
+  "kSystemDefinedEventMediaKeysSubtype": [],
+  "otherEventWithType": [],
+  "KeyCode": {
+    "_PLATFORM_EXTENSIONS": [],
+    "_is_media": [],
+    "_from_media": [
+      "cls",
+      "vk"
+    ],
+    "_event": [
+      "self",
+      "modifiers",
+      "mapping",
+      "is_pressed"
+    ]
+  },
+  "Key": {
+    "alt": [],
+    "alt_l": [],
+    "alt_r": [],
+    "alt_gr": [],
+    "backspace": [],
+    "caps_lock": [],
+    "cmd": [],
+    "cmd_l": [],
+    "cmd_r": [],
+    "ctrl": [],
+    "ctrl_l": [],
+    "ctrl_r": [],
+    "delete": [],
+    "down": [],
+    "end": [],
+    "enter": [],
+    "esc": [],
+    "f1": [],
+    "f2": [],
+    "f3": [],
+    "f4": [],
+    "f5": [],
+    "f6": [],
+    "f7": [],
+    "f8": [],
+    "f9": [],
+    "f10": [],
+    "f11": [],
+    "f12": [],
+    "f13": [],
+    "f14": [],
+    "f15": [],
+    "f16": [],
+    "f17": [],
+    "f18": [],
+    "f19": [],
+    "f20": [],
+    "home": [],
+    "left": [],
+    "page_down": [],
+    "page_up": [],
+    "right": [],
+    "shift": [],
+    "shift_l": [],
+    "shift_r": [],
+    "space": [],
+    "tab": [],
+    "up": [],
+    "media_play_pause": [],
+    "media_volume_mute": [],
+    "media_volume_down": [],
+    "media_volume_up": [],
+    "media_previous": [],
+    "media_next": [],
+    "media_eject": []
+  },
+  "Controller": {
+    "_KeyCode": [],
+    "_Key": [],
+    "__init__": [
+      "self"
+    ],
+    "_handle": [
+      "self",
+      "key",
+      "is_press"
+    ]
+  },
+  "Listener": {
+    "_EVENTS": [],
+    "_SPECIAL_KEYS": [],
+    "_MODIFIER_FLAGS": [],
+    "__init__": [
+      "self"
+    ],
+    "_run": [
+      "self"
+    ],
+    "_handle_message": [
+      "self",
+      "_proxy",
+      "event_type",
+      "event",
+      "_refcon",
+      "injected"
+    ],
+    "_event_to_key": [
+      "self",
+      "event"
+    ]
+  },
+  "Layout": {
+    "KEYCODE_RE": [],
+    "__init__": [
+      "self"
+    ],
+    "for_vk": [
+      "self",
+      "vk",
+      "modifiers"
+    ],
+    "for_char": [
+      "self",
+      "char"
+    ],
+    "_load": [
+      "self"
+    ],
+    "_parse": [
+      "self",
+      "vk",
+      "name"
+    ]
+  },
+  "_MODIFIER_KEYS": [],
+  "_NORMAL_MODIFIERS": [],
+  "_CONTROL_CODES": [],
+  "HotKey": {
+    "__init__": [
+      "self",
+      "keys",
+      "on_activate"
+    ],
+    "parse": [
+      "keys"
+    ],
+    "press": [
+      "self",
+      "key"
+    ],
+    "release": [
+      "self",
+      "key"
+    ]
+  },
+  "GlobalHotKeys": {
+    "__init__": [
+      "self",
+      "hotkeys"
+    ],
+    "_on_press": [
+      "self",
+      "key",
+      "injected"
+    ],
+    "_on_release": [
+      "self",
+      "key",
+      "injected"
+    ]
+  },
+  "_button_value": [
+    "base_name",
+    "mouse_button"
+  ],
+  "Button": {
+    "unknown": [],
+    "left": [],
+    "middle": [],
+    "right": []
+  },
+  "WHEEL_DELTA": []
+}

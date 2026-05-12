@@ -1,0 +1,1069 @@
+{
+  "EXCLUDES": [],
+  "lc_convert": [
+    "relative_path",
+    "relative"
+  ],
+  "PathListItem": [],
+  "PathListType": [],
+  "PathMockType": [],
+  "Finder": {
+    "__init__": [
+      "self",
+      "root",
+      "mock"
+    ],
+    "process_path": [
+      "self",
+      "path"
+    ],
+    "list_files": [
+      "self",
+      "root",
+      "files",
+      "dirs"
+    ],
+    "has_file": [
+      "self",
+      "name"
+    ],
+    "has_dir": [
+      "self",
+      "name"
+    ],
+    "mask_matches": [
+      "self",
+      "mask"
+    ],
+    "filter_files": [
+      "self",
+      "fileglob",
+      "dirglob"
+    ],
+    "open": [
+      "self",
+      "path",
+      "mode"
+    ]
+  },
+  "TEST_DATA": [],
+  "APITest": {
+    "maxDiff": [],
+    "test_discover": [
+      "self"
+    ],
+    "test_discover_files": [
+      "self"
+    ],
+    "test_cli": [
+      "self"
+    ],
+    "test_no_match": [
+      "self"
+    ]
+  },
+  "FinderTest": {
+    "test_init": [
+      "self"
+    ],
+    "test_find": [
+      "self"
+    ],
+    "test_unreadable_directories_are_skipped": [
+      "self"
+    ],
+    "test_open_mock_file_rejects_non_real_path": [
+      "self"
+    ],
+    "test_generated_directories_are_skipped": [
+      "self"
+    ]
+  },
+  "ResultTest": {
+    "test_lt": [
+      "self"
+    ],
+    "test_lt_unknown_type": [
+      "self"
+    ],
+    "test_repr": [
+      "self"
+    ],
+    "test_pickle": [
+      "self"
+    ]
+  },
+  "DiscoveryTestCase": {
+    "maxDiff": [],
+    "get_finder": [
+      "paths",
+      "dirs"
+    ],
+    "get_real_finder": [],
+    "assert_discovery": [
+      "self",
+      "actual",
+      "expected"
+    ]
+  },
+  "DiscoveryBaseTest": {
+    "test_explicit_source_language_template": [
+      "self"
+    ],
+    "test_hint_without_matching_mask": [
+      "self"
+    ],
+    "test_eager_discovery_without_template": [
+      "self"
+    ],
+    "test_encoding_discovery_without_template_or_new_params": [
+      "self"
+    ],
+    "test_encoding_discovery_without_detection_result": [
+      "self"
+    ],
+    "test_non_english_variant_aliases": [
+      "self"
+    ]
+  },
+  "GettextTest": {
+    "maxDiff": [],
+    "test_basic": [
+      "self"
+    ],
+    "test_duplicate_code": [
+      "self"
+    ],
+    "test_double": [
+      "self"
+    ],
+    "test_uppercase": [
+      "self"
+    ],
+    "test_mono": [
+      "self"
+    ],
+    "test_mono_language": [
+      "self"
+    ],
+    "test_filename": [
+      "self"
+    ],
+    "test_root": [
+      "self"
+    ],
+    "test_new_base": [
+      "self"
+    ],
+    "test_po_pot": [
+      "self"
+    ],
+    "test_po_many": [
+      "self"
+    ]
+  },
+  "QtTest": {
+    "test_basic": [
+      "self"
+    ],
+    "test_po_mono_template": [
+      "self"
+    ]
+  },
+  "AndroidTest": {
+    "test_basic": [
+      "self"
+    ],
+    "test_names": [
+      "self"
+    ],
+    "test_no_template_adjust_format": [
+      "self"
+    ],
+    "test_plural_file_is_moko_resource": [
+      "self"
+    ]
+  },
+  "MOKOTest": {
+    "test_basic": [
+      "self"
+    ]
+  },
+  "OSXTest": {
+    "test_basic": [
+      "self"
+    ],
+    "test_pappl": [
+      "self"
+    ],
+    "test_base_template_preference": [
+      "self"
+    ]
+  },
+  "StringsdictTest": {
+    "test_basic": [
+      "self"
+    ]
+  },
+  "JavaTest": {
+    "test_basic": [
+      "self"
+    ],
+    "test_gwt": [
+      "self"
+    ],
+    "test_xwiki_properties": [
+      "self"
+    ]
+  },
+  "JoomlaTest": {
+    "test_basic": [
+      "self"
+    ]
+  },
+  "RESXTest": {
+    "test_basic": [
+      "self"
+    ]
+  },
+  "ResourceDictionaryTest": {
+    "test_basic": [
+      "self"
+    ]
+  },
+  "XliffTest": {
+    "test_basic": [
+      "self"
+    ],
+    "test_short": [
+      "self"
+    ]
+  },
+  "WebExtensionTest": {
+    "test_basic": [
+      "self"
+    ]
+  },
+  "JSONDiscoveryTest": {
+    "test_basic": [
+      "self"
+    ],
+    "test_shell_chars": [
+      "self"
+    ],
+    "test_json_data": [
+      "self"
+    ],
+    "test_nested_detection_edge_cases": [
+      "self"
+    ],
+    "test_template_less_bilingual_content": [
+      "self"
+    ],
+    "test_template_less_large_bilingual_content": [
+      "self"
+    ],
+    "test_template_less_fixture_content_is_skipped": [
+      "self"
+    ],
+    "test_list_without_id_keeps_nested_format": [
+      "self"
+    ]
+  },
+  "TransifexTest": {
+    "test_basic": [
+      "self"
+    ],
+    "test_windows_paths": [
+      "self"
+    ],
+    "test_unicode_properties": [
+      "self"
+    ],
+    "test_section_without_source_file": [
+      "self"
+    ],
+    "test_po_source_file": [
+      "self"
+    ],
+    "test_po_source_file_discover": [
+      "self"
+    ],
+    "test_po_language_regex_from_source_file": [
+      "self"
+    ]
+  },
+  "AppStoreDiscoveryTest": {
+    "test_basic": [
+      "self"
+    ],
+    "test_hint": [
+      "self"
+    ]
+  },
+  "FluentDiscoveryTest": {
+    "test_basic": [
+      "self"
+    ],
+    "test_non_english_aliases": [
+      "self"
+    ]
+  },
+  "YAMLDiscoveryTest": {
+    "test_basic": [
+      "self"
+    ],
+    "test_workflows": [
+      "self"
+    ],
+    "test_no_template_adjust_format": [
+      "self"
+    ],
+    "test_parser_warning": [
+      "self"
+    ],
+    "test_ruby_yaml_without_filemask": [
+      "self"
+    ],
+    "test_non_matching_single_key_yaml_without_filemask": [
+      "self"
+    ],
+    "test_multi_key_yaml_keeps_format": [
+      "self"
+    ]
+  },
+  "TOMLDiscoveryTest": {
+    "test_basic": [
+      "self"
+    ],
+    "test_no_template_adjust_format": [
+      "self"
+    ],
+    "test_parser_warning": [
+      "self"
+    ]
+  },
+  "ARBDiscoveryTest": {
+    "test_basic": [
+      "self"
+    ],
+    "test_existing_intermediate_is_kept": [
+      "self"
+    ]
+  },
+  "HTMLDiscoveryTest": {
+    "test_basic": [
+      "self"
+    ],
+    "test_template_required": [
+      "self"
+    ]
+  },
+  "CSVDiscoveryTest": {
+    "test_basic": [
+      "self"
+    ],
+    "test_without_template": [
+      "self"
+    ],
+    "test_simple_csv": [
+      "self"
+    ],
+    "test_multi_csv": [
+      "self"
+    ]
+  },
+  "CSVHelperTest": {
+    "_read_rows": [
+      "content"
+    ],
+    "test_decode_content_fallbacks": [
+      "self"
+    ],
+    "test_read_text_sample_open_error": [
+      "self"
+    ],
+    "test_read_csv_rows_with_sniffer_fallback": [
+      "self"
+    ],
+    "test_read_csv_rows_skips_empty_rows": [
+      "self"
+    ],
+    "test_read_csv_rows_limit": [
+      "self"
+    ],
+    "test_read_csv_rows_reader_error": [
+      "self"
+    ],
+    "test_csv_header_empty_rows": [
+      "self"
+    ],
+    "test_csv_multi_requires_context": [
+      "self"
+    ],
+    "test_csv_multi_uses_target_without_source": [
+      "self"
+    ],
+    "test_csv_multi_requires_source_or_target": [
+      "self"
+    ],
+    "test_csv_multi_skips_short_rows": [
+      "self"
+    ],
+    "test_csv_simple_rejects_non_two_column_rows": [
+      "self"
+    ]
+  },
+  "PHPDiscoveryTest": {
+    "test_basic": [
+      "self"
+    ],
+    "test_no_template_adjust_format": [
+      "self"
+    ]
+  },
+  "RCDiscoveryTest": {
+    "test_basic": [
+      "self"
+    ],
+    "test_non_english_aliases": [
+      "self"
+    ]
+  },
+  "TXTDiscoveryTest": {
+    "test_basic": [
+      "self"
+    ],
+    "test_simple_csv": [
+      "self"
+    ],
+    "test_hint": [
+      "self"
+    ]
+  },
+  "ConvertedDocumentDiscoveryTest": {
+    "test_idms": [
+      "self"
+    ],
+    "test_xlsx": [
+      "self"
+    ],
+    "test_wiki_and_asciidoc": [
+      "self"
+    ]
+  },
+  "FormatJSDiscoveryTest": {
+    "test_basic": [
+      "self"
+    ],
+    "test_nontranslated": [
+      "self"
+    ]
+  },
+  "DTDDiscoveryTest": {
+    "test_basic": [
+      "self"
+    ]
+  },
+  "CatkeysDiscoveryTest": {
+    "test_basic": [
+      "self"
+    ]
+  },
+  "FlatXMLDiscoveryTest": {
+    "test_basic": [
+      "self"
+    ],
+    "test_template_required": [
+      "self"
+    ],
+    "test_xwiki_page_properties": [
+      "self"
+    ],
+    "test_xwiki_fullpage": [
+      "self"
+    ]
+  },
+  "CMPDiscoveryTest": {
+    "test_basic": [
+      "self"
+    ]
+  },
+  "Mi18nDiscoveryTest": {
+    "test_basic": [
+      "self"
+    ]
+  },
+  "JSONFormatVariantsTest": {
+    "test_go_i18n_v2": [
+      "self"
+    ],
+    "test_go_i18n_v2_content_detection": [
+      "self"
+    ],
+    "test_nextcloud_json": [
+      "self"
+    ],
+    "test_resjson": [
+      "self"
+    ]
+  },
+  "XLIFFFormatVariantsTest": {
+    "test_apple_xliff": [
+      "self"
+    ],
+    "test_xliff2": [
+      "self"
+    ],
+    "test_xliff2_placeables": [
+      "self"
+    ]
+  },
+  "TOMLFormatVariantsTest": {
+    "test_go_i18n_toml": [
+      "self"
+    ],
+    "test_regular_toml": [
+      "self"
+    ],
+    "test_corrupted_toml_handling": [
+      "self"
+    ]
+  },
+  "FormatJSContentDetectionTest": {
+    "test_formatjs_content_detection": [
+      "self"
+    ]
+  },
+  "XMLFormatNoOverlapTest": {
+    "test_android_vs_cmp_vs_flatxml_no_overlap": [
+      "self"
+    ]
+  },
+  "register_discovery": [
+    "cls"
+  ],
+  "discover": [
+    "root"
+  ],
+  "cli": [
+    "stdout",
+    "args"
+  ],
+  "LANGUAGES_BLACKLIST": [],
+  "__all__": [],
+  "TOKEN_SPLIT": [],
+  "LOCALES": [],
+  "EXTENSION_MAP": [],
+  "TEMPLATE_REPLACEMENTS": [],
+  "BaseDiscovery": {
+    "__init__": [
+      "self",
+      "finder",
+      "source_language"
+    ],
+    "is_country_code": [
+      "code"
+    ],
+    "is_language_code": [
+      "cls",
+      "code"
+    ],
+    "detect_format": [
+      "filemask"
+    ],
+    "get_wildcard": [
+      "self",
+      "part"
+    ],
+    "fill_in_new_base": [
+      "self",
+      "result"
+    ],
+    "has_storage": [
+      "self",
+      "name"
+    ],
+    "get_language_aliases": [
+      "self",
+      "language"
+    ],
+    "possible_templates": [
+      "self",
+      "language",
+      "mask"
+    ],
+    "fill_in_template": [
+      "self",
+      "result",
+      "source_language"
+    ],
+    "fill_in_file_format": [
+      "self",
+      "result"
+    ],
+    "fill_in_file_format_params": [
+      "self",
+      "result"
+    ],
+    "adjust_format": [
+      "self",
+      "result"
+    ],
+    "discover": [
+      "self"
+    ],
+    "masks_list": [
+      "self"
+    ],
+    "filter_files": [
+      "self"
+    ],
+    "get_masks": [
+      "self"
+    ]
+  },
+  "MonoTemplateDiscovery": {
+    "uses_template": [],
+    "fill_in_new_base": [
+      "self",
+      "result"
+    ]
+  },
+  "EncodingDiscovery": {
+    "get_encoding_parameter": [
+      "self",
+      "result"
+    ],
+    "get_managed_encoding_parameters": [
+      "self"
+    ],
+    "normalize_encoding_parameters": [
+      "self",
+      "result"
+    ],
+    "set_encoding_parameter": [
+      "self",
+      "result",
+      "encoding"
+    ],
+    "detect_encoding": [
+      "self",
+      "result"
+    ],
+    "adjust_encoding": [
+      "self",
+      "result"
+    ],
+    "adjust_format": [
+      "self",
+      "result"
+    ]
+  },
+  "EnglishVariantsDiscovery": {
+    "get_language_aliases": [
+      "self",
+      "language"
+    ]
+  },
+  "TransifexDiscovery": {
+    "origin": [],
+    "priority": [],
+    "extract_format": [
+      "self",
+      "transifex"
+    ],
+    "extract_section": [
+      "self",
+      "config",
+      "section"
+    ],
+    "get_language_regex": [
+      "filemask",
+      "source_file"
+    ],
+    "discover": [
+      "self"
+    ],
+    "get_masks": [
+      "self"
+    ]
+  },
+  "LARAVEL_RE": [],
+  "GWT_PLURAL_RE": [],
+  "CSV_SAMPLE_ROWS": [],
+  "SIMPLE_CSV_COLUMNS": [],
+  "CSV_FIELDNAMES": [],
+  "_decode_content": [
+    "content"
+  ],
+  "_read_text_sample": [
+    "finder",
+    "path",
+    "size"
+  ],
+  "_iter_result_paths": [
+    "finder",
+    "result"
+  ],
+  "_read_csv_rows": [
+    "finder",
+    "path"
+  ],
+  "_csv_header": [
+    "rows"
+  ],
+  "_is_csv_multi": [
+    "rows"
+  ],
+  "_is_csv_simple": [
+    "rows"
+  ],
+  "_detect_csv_format": [
+    "finder",
+    "result"
+  ],
+  "GettextDiscovery": {
+    "file_format": [],
+    "mask": [],
+    "new_base_mask": [],
+    "discover": [
+      "self"
+    ],
+    "fill_in_new_base": [
+      "self",
+      "result"
+    ]
+  },
+  "QtDiscovery": {
+    "file_format": [],
+    "mask": [],
+    "new_base_mask": []
+  },
+  "XliffDiscovery": {
+    "file_format": [],
+    "mask": [],
+    "adjust_format": [
+      "self",
+      "result"
+    ]
+  },
+  "JoomlaDiscovery": {
+    "file_format": [],
+    "mask": []
+  },
+  "CSVDiscovery": {
+    "file_format": [],
+    "mask": [],
+    "adjust_format": [
+      "self",
+      "result"
+    ],
+    "discover": [
+      "self"
+    ]
+  },
+  "WebExtensionDiscovery": {
+    "file_format": [],
+    "mask": []
+  },
+  "AndroidDiscovery": {
+    "file_format": [],
+    "get_masks": [
+      "self"
+    ],
+    "adjust_format": [
+      "self",
+      "result"
+    ]
+  },
+  "MOKODiscovery": {
+    "file_format": [],
+    "get_masks": [
+      "self"
+    ]
+  },
+  "OSXDiscovery": {
+    "possible_templates": [
+      "self",
+      "language",
+      "mask"
+    ],
+    "get_masks": [
+      "self"
+    ]
+  },
+  "StringsdictDiscovery": {
+    "file_format": [],
+    "get_masks": [
+      "self"
+    ]
+  },
+  "JavaDiscovery": {
+    "file_format": [],
+    "mask": [],
+    "possible_templates": [
+      "self",
+      "language",
+      "mask"
+    ],
+    "adjust_format": [
+      "self",
+      "result"
+    ]
+  },
+  "RESXDiscovery": {
+    "file_format": [],
+    "mask": [],
+    "possible_templates": [
+      "self",
+      "language",
+      "mask"
+    ],
+    "get_masks": [
+      "self"
+    ]
+  },
+  "ResourceDictionaryDiscovery": {
+    "file_format": [],
+    "mask": [],
+    "new_base_mask": []
+  },
+  "AppStoreDiscovery": {
+    "file_format": [],
+    "mask": [],
+    "filter_files": [
+      "self"
+    ],
+    "has_storage": [
+      "self",
+      "name"
+    ]
+  },
+  "JSONDiscovery": {
+    "file_format": [],
+    "mask": [],
+    "read_json_data": [
+      "self",
+      "path"
+    ],
+    "has_template_less_content": [
+      "self",
+      "result"
+    ],
+    "discover": [
+      "self"
+    ],
+    "is_go_i18n_v2_dict": [
+      "data"
+    ],
+    "_detect_top_level_format": [
+      "self",
+      "data"
+    ],
+    "_detect_first_level_format": [
+      "self",
+      "value"
+    ],
+    "_detect_nested_format": [
+      "self",
+      "data",
+      "level"
+    ],
+    "detect_dict": [
+      "self",
+      "data"
+    ],
+    "adjust_format": [
+      "self",
+      "result"
+    ]
+  },
+  "FluentDiscovery": {
+    "file_format": [],
+    "mask": [],
+    "get_language_aliases": [
+      "self",
+      "language"
+    ]
+  },
+  "YAMLDiscovery": {
+    "file_format": [],
+    "mask": [],
+    "adjust_format": [
+      "self",
+      "result"
+    ]
+  },
+  "SRTDiscovery": {
+    "file_format": [],
+    "mask": []
+  },
+  "SUBDiscovery": {
+    "file_format": [],
+    "mask": []
+  },
+  "ASSDiscovery": {
+    "file_format": [],
+    "mask": []
+  },
+  "SSADiscovery": {
+    "file_format": [],
+    "mask": []
+  },
+  "PHPDiscovery": {
+    "file_format": [],
+    "mask": [],
+    "adjust_format": [
+      "self",
+      "result"
+    ]
+  },
+  "IDMLDiscovery": {
+    "file_format": [],
+    "mask": []
+  },
+  "HTMLDiscovery": {
+    "file_format": [],
+    "mask": [],
+    "requires_template": []
+  },
+  "TXTDiscovery": {
+    "file_format": [],
+    "mask": [],
+    "adjust_format": [
+      "self",
+      "result"
+    ]
+  },
+  "ODFDiscovery": {
+    "file_format": [],
+    "mask": []
+  },
+  "XLSXDiscovery": {
+    "file_format": [],
+    "mask": [],
+    "adjust_format": [
+      "self",
+      "result"
+    ]
+  },
+  "INIDiscovery": {
+    "file_format": [],
+    "mask": []
+  },
+  "InnoSetupDiscovery": {
+    "file_format": [],
+    "mask": []
+  },
+  "TOMLDiscovery": {
+    "file_format": [],
+    "mask": [],
+    "adjust_format": [
+      "self",
+      "result"
+    ]
+  },
+  "ARBDiscovery": {
+    "file_format": [],
+    "mask": [],
+    "fill_in_new_base": [
+      "self",
+      "result"
+    ]
+  },
+  "RCDiscovery": {
+    "file_format": [],
+    "mask": [],
+    "get_language_aliases": [
+      "self",
+      "language"
+    ]
+  },
+  "TBXDiscovery": {
+    "file_format": [],
+    "mask": []
+  },
+  "MarkdownDiscovery": {
+    "file_format": [],
+    "mask": []
+  },
+  "DokuWikiDiscovery": {
+    "file_format": [],
+    "mask": []
+  },
+  "MediaWikiDiscovery": {
+    "file_format": [],
+    "mask": []
+  },
+  "AsciiDocDiscovery": {
+    "file_format": [],
+    "mask": []
+  },
+  "WXLDiscovery": {
+    "file_format": [],
+    "mask": []
+  },
+  "FormatJSDiscovery": {
+    "file_format": [],
+    "get_masks": [
+      "self"
+    ]
+  },
+  "DTDDiscovery": {
+    "file_format": [],
+    "mask": []
+  },
+  "FlatXMLDiscovery": {
+    "file_format": [],
+    "mask": [],
+    "requires_template": [],
+    "adjust_format": [
+      "self",
+      "result"
+    ]
+  },
+  "CatkeysDiscovery": {
+    "file_format": [],
+    "mask": []
+  },
+  "CMPDiscovery": {
+    "file_format": [],
+    "get_masks": [
+      "self"
+    ]
+  },
+  "Mi18nDiscovery": {
+    "file_format": [],
+    "mask": []
+  },
+  "FileFormatParams": [],
+  "ResultMeta": {},
+  "ResultDict": {},
+  "DiscoveryResult": {
+    "__init__": [
+      "self",
+      "data"
+    ],
+    "_sort_key": [
+      "self"
+    ],
+    "match": [
+      "self"
+    ],
+    "__lt__": [
+      "self",
+      "other"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "copy": [
+      "self"
+    ]
+  }
+}

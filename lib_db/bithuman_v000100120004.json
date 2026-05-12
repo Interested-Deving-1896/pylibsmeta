@@ -1,0 +1,293 @@
+{
+  "INT16_MAX": [],
+  "AudioChunk": {
+    "__post_init__": [
+      "self"
+    ],
+    "bytes": [
+      "self"
+    ],
+    "array": [
+      "self"
+    ],
+    "duration": [
+      "self"
+    ],
+    "from_bytes": [
+      "cls",
+      "audio_bytes",
+      "sample_rate",
+      "last_chunk"
+    ]
+  },
+  "Emotion": {
+    "ANGER": [],
+    "DISGUST": [],
+    "FEAR": [],
+    "JOY": [],
+    "NEUTRAL": [],
+    "SADNESS": [],
+    "SURPRISE": []
+  },
+  "EmotionPrediction": {
+    "from_dict": [
+      "cls",
+      "data"
+    ],
+    "to_dict": [
+      "self"
+    ]
+  },
+  "VideoControl": {
+    "is_idle": [
+      "self"
+    ],
+    "is_speaking": [
+      "self"
+    ],
+    "from_audio": [
+      "cls",
+      "audio",
+      "sample_rate",
+      "last_chunk"
+    ]
+  },
+  "VideoFrame": {
+    "has_image": [
+      "self"
+    ],
+    "rgb_image": [
+      "self"
+    ]
+  },
+  "__all__": [],
+  "_EP_BY_NAME": [],
+  "_parse_args": [
+    "argv"
+  ],
+  "_stream_raw_bgr_to_stdout": [
+    "avatar",
+    "audio_path"
+  ],
+  "_encode_mp4": [
+    "avatar",
+    "audio_path",
+    "output_path",
+    "fps",
+    "quality",
+    "mux_audio"
+  ],
+  "_mux_audio": [
+    "video_path",
+    "audio_path",
+    "output_path"
+  ],
+  "main": [
+    "argv"
+  ],
+  "_SAMPLE_RATE_HZ": [],
+  "_FPS": [],
+  "_LOOKBACK_TICKS": [],
+  "_DEFAULT_AUTH_URL": [],
+  "_STREAM_END": [],
+  "_i16_to_f32": [
+    "arr"
+  ],
+  "_resample_linear": [
+    "pcm",
+    "src_sr",
+    "dst_sr"
+  ],
+  "AsyncAvatar": {
+    "__init__": [
+      "self"
+    ],
+    "create": [
+      "cls"
+    ],
+    "set_model": [
+      "self",
+      "model_path"
+    ],
+    "push_audio": [
+      "self",
+      "data",
+      "sample_rate",
+      "last_chunk"
+    ],
+    "push": [
+      "self",
+      "control"
+    ],
+    "flush": [
+      "self"
+    ],
+    "run": [
+      "self"
+    ],
+    "_run_iter": [
+      "self"
+    ],
+    "stop": [
+      "self"
+    ],
+    "_drain_out_queue_until": [
+      "self",
+      "producer_task"
+    ],
+    "shutdown": [
+      "self"
+    ],
+    "set_agent_code": [
+      "self",
+      "agent_code"
+    ],
+    "set_billing_type": [
+      "self",
+      "billing_type"
+    ],
+    "start_token_refresh": [
+      "self"
+    ],
+    "is_token_refresh_running": [
+      "self"
+    ],
+    "stop_token_refresh": [
+      "self"
+    ],
+    "set_identity": [
+      "self",
+      "identity"
+    ],
+    "frame_width": [
+      "self"
+    ],
+    "frame_height": [
+      "self"
+    ],
+    "sample_rate": [
+      "self"
+    ],
+    "fps": [
+      "self"
+    ],
+    "samples_per_tick": [
+      "self"
+    ],
+    "_composed_tag": [
+      "self"
+    ],
+    "_auth_init_blocking": [
+      "self",
+      "fingerprint"
+    ],
+    "_reconfigure_auth": [
+      "self"
+    ],
+    "_load_fixture_blocking": [
+      "self",
+      "model_path"
+    ],
+    "_ensure_running": [
+      "self"
+    ],
+    "_produce_frames": [
+      "self"
+    ],
+    "_emit_ready_ticks": [
+      "self"
+    ]
+  },
+  "_reject_if_expression_model": [
+    "model_path"
+  ],
+  "PathLike": [],
+  "AudioInput": [],
+  "EP": {
+    "CPU": [],
+    "AUTO": [],
+    "COREML": [],
+    "NNAPI": [],
+    "QNN": []
+  },
+  "ComposedFrame": {},
+  "_decode_audio": [
+    "audio"
+  ],
+  "Avatar": {
+    "__init__": [
+      "self",
+      "fixture"
+    ],
+    "load": [
+      "cls",
+      "model_path",
+      "api_secret",
+      "preferred_ep",
+      "intra_op_threads",
+      "tags",
+      "fingerprint",
+      "billing_type"
+    ],
+    "frame_width": [
+      "self"
+    ],
+    "frame_height": [
+      "self"
+    ],
+    "sample_rate": [
+      "self"
+    ],
+    "samples_per_tick": [
+      "self"
+    ],
+    "fps": [
+      "self"
+    ],
+    "cluster_count": [
+      "self"
+    ],
+    "source_frame_count": [
+      "self"
+    ],
+    "active_ep": [
+      "self"
+    ],
+    "compose": [
+      "self",
+      "audio",
+      "preallocated_out",
+      "output_size"
+    ],
+    "close": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ],
+    "__del__": [
+      "self"
+    ],
+    "_require_fixture": [
+      "self"
+    ]
+  },
+  "BithumanError": {},
+  "TokenError": {},
+  "TokenExpiredError": {},
+  "TokenValidationError": {},
+  "TokenRequestError": {},
+  "AccountStatusError": {},
+  "ModelError": {},
+  "ModelNotFoundError": {},
+  "ModelLoadError": {},
+  "ModelSecurityError": {},
+  "ExpressionModelNotSupported": {},
+  "RuntimeNotReadyError": {}
+}
