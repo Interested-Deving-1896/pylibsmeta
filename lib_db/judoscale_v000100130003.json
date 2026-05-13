@@ -1,0 +1,418 @@
+{
+  "__all__": [],
+  "store_queue_time_metric": [
+    "collector"
+  ],
+  "initialize_app_time_metric": [],
+  "store_app_time_metric": [
+    "collector"
+  ],
+  "start_utilization_request_tracking": [],
+  "finish_utilization_request_tracking": [
+    "exception"
+  ],
+  "Judoscale": {
+    "__init__": [
+      "self",
+      "app"
+    ],
+    "init_app": [
+      "self",
+      "app"
+    ]
+  },
+  "DEFAULTS": [],
+  "DramatiqMetricsCollector": {
+    "__init__": [
+      "self",
+      "config",
+      "broker"
+    ],
+    "adapter_config": [
+      "self"
+    ],
+    "_queues": [
+      "self"
+    ],
+    "oldest_message_timestamp": [
+      "self",
+      "queue"
+    ],
+    "collect": [
+      "self"
+    ]
+  },
+  "judoscale_dramatiq": [
+    "broker",
+    "extra_config"
+  ],
+  "BROKER_CONNECTIONS_INFO_THRESHOLD": [],
+  "TaskSentHandler": {
+    "__init__": [
+      "self",
+      "collector",
+      "connection"
+    ],
+    "task_sent": [
+      "self",
+      "event"
+    ],
+    "run": [
+      "self"
+    ]
+  },
+  "CeleryMetricsCollector": {
+    "__init__": [
+      "self",
+      "config",
+      "broker"
+    ],
+    "is_supported_redis_version": [
+      "self"
+    ],
+    "adapter_config": [
+      "self"
+    ],
+    "report_metadata": [
+      "self"
+    ],
+    "_refresh_broker_stats": [
+      "self"
+    ],
+    "_queues": [
+      "self"
+    ],
+    "_scan_queues": [
+      "self"
+    ],
+    "oldest_task_and_timestamp": [
+      "self",
+      "queue"
+    ],
+    "collect": [
+      "self"
+    ]
+  },
+  "before_publish": [],
+  "judoscale_celery": [
+    "celery",
+    "extra_config"
+  ],
+  "logger": [],
+  "JudoscaleDjangoConfig": {
+    "name": [],
+    "label": [],
+    "verbose_name": [],
+    "ready": [
+      "self"
+    ],
+    "install_middleware": [
+      "self"
+    ]
+  },
+  "RequestQueueTimeMiddleware": {
+    "__init__": [
+      "self",
+      "get_response"
+    ],
+    "__call__": [
+      "self",
+      "request"
+    ],
+    "track_utilization": [
+      "self"
+    ]
+  },
+  "RedisHelper": {
+    "redis_connection": [
+      "self",
+      "redis_config"
+    ]
+  },
+  "Collector": {
+    "collect": [
+      "self"
+    ],
+    "should_collect": [
+      "self"
+    ],
+    "report_metadata": [
+      "self"
+    ]
+  },
+  "MetricsCollector": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "should_collect": [
+      "self"
+    ],
+    "report_metadata": [
+      "self"
+    ]
+  },
+  "WebMetricsCollector": {
+    "__init__": [
+      "self",
+      "config",
+      "store"
+    ],
+    "add": [
+      "self",
+      "metric"
+    ],
+    "collect": [
+      "self"
+    ]
+  },
+  "JobMetricsCollector": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "adapter_config": [
+      "self"
+    ],
+    "_queues": [
+      "self"
+    ],
+    "queues": [
+      "self"
+    ],
+    "should_collect": [
+      "self"
+    ],
+    "limit_max_queues": [
+      "self",
+      "queues"
+    ]
+  },
+  "RuntimeContainer": {
+    "is_redundant_instance": [
+      "self"
+    ],
+    "is_release_instance": [
+      "self"
+    ]
+  },
+  "Config": {
+    "__init__": [
+      "self",
+      "runtime_container",
+      "env"
+    ],
+    "initialize": [
+      "cls",
+      "env"
+    ],
+    "is_enabled": [
+      "self"
+    ],
+    "update": [
+      "self",
+      "new_config"
+    ],
+    "merge": [
+      "self",
+      "new_config"
+    ],
+    "for_report": [
+      "self"
+    ],
+    "_prepare_logging": [
+      "self"
+    ]
+  },
+  "config": [],
+  "UtilizationTracker": {
+    "__init__": [
+      "self"
+    ],
+    "is_started": [
+      "self"
+    ],
+    "start": [
+      "self"
+    ],
+    "stop": [
+      "self"
+    ],
+    "incr": [
+      "self"
+    ],
+    "decr": [
+      "self"
+    ],
+    "utilization_pct": [
+      "self",
+      "reset"
+    ],
+    "_get_current_time": [
+      "self"
+    ],
+    "_init_idle_report_cycle": [
+      "self"
+    ],
+    "_reset_idle_report_cycle": [
+      "self",
+      "current_time"
+    ],
+    "_get_idle_ratio": [
+      "self",
+      "current_time"
+    ]
+  },
+  "utilization_tracker": [],
+  "CUTOFF_EPOCH_MS": [],
+  "CUTOFF_EPOCH_US": [],
+  "CUTOFF_EPOCH_NS": [],
+  "convert_ambiguous_timestamp_to_ms": [
+    "timestamp"
+  ],
+  "Metric": {
+    "as_tuple": [
+      "self"
+    ],
+    "new": [
+      "cls",
+      "start_ms"
+    ],
+    "for_web": [
+      "cls",
+      "header_value"
+    ],
+    "for_web_app_time": [
+      "cls",
+      "start",
+      "end"
+    ],
+    "for_web_utilization_pct": [
+      "cls",
+      "utilization_pct"
+    ],
+    "for_queue": [
+      "cls",
+      "queue_name",
+      "oldest_job_ts"
+    ],
+    "for_busy_queue": [
+      "cls",
+      "queue_name",
+      "busy_jobs"
+    ]
+  },
+  "MetricsStore": {
+    "__init__": [
+      "self",
+      "max_flush_interval"
+    ],
+    "add": [
+      "self",
+      "metric"
+    ],
+    "flush": [
+      "self"
+    ],
+    "_pop": [
+      "self"
+    ]
+  },
+  "JUDOSCALE_VERSION": [],
+  "AdapterInfo": {},
+  "Adapter": {
+    "as_tuple": [
+      "self"
+    ]
+  },
+  "Reporter": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "add_adapter": [
+      "self",
+      "adapter"
+    ],
+    "start": [
+      "self"
+    ],
+    "ensure_running": [
+      "self"
+    ],
+    "stop": [
+      "self"
+    ],
+    "is_running": [
+      "self"
+    ],
+    "pid": [
+      "self"
+    ],
+    "_run_loop": [
+      "self"
+    ],
+    "all_metrics": [
+      "self"
+    ],
+    "TRANSIENT_ERRORS": [],
+    "MAX_RETRIES": [],
+    "_report_metrics": [
+      "self"
+    ],
+    "_build_report": [
+      "self",
+      "metrics"
+    ],
+    "_collect_report_metadata": [
+      "self"
+    ]
+  },
+  "reporter": [],
+  "previous_handler": [],
+  "graceful_shutdown": [
+    "signum",
+    "frame"
+  ],
+  "StarletteRequestQueueTimeMiddleware": {
+    "platform": []
+  },
+  "FastAPIRequestQueueTimeMiddleware": {
+    "platform": []
+  },
+  "QuartRequestQueueTimeMiddleware": {
+    "platform": []
+  },
+  "JudoscaleRQConfig": {
+    "name": [],
+    "label": [],
+    "verbose_name": [],
+    "ready": [
+      "self"
+    ]
+  },
+  "RQMetricsCollector": {
+    "__init__": [
+      "self",
+      "config",
+      "redis"
+    ],
+    "adapter_config": [
+      "self"
+    ],
+    "_queues": [
+      "self"
+    ],
+    "oldest_job": [
+      "self",
+      "queue"
+    ],
+    "collect": [
+      "self"
+    ]
+  },
+  "judoscale_rq": [
+    "redis",
+    "extra_config"
+  ]
+}
