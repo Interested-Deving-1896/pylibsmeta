@@ -1,0 +1,757 @@
+{
+  "VERSION": [],
+  "__version__": [],
+  "__all__": [],
+  "BadZipFile": {},
+  "LargeZipFile": {},
+  "error": [],
+  "BadZipfile": [],
+  "ZIP64_LIMIT": [],
+  "ZIP_FILECOUNT_LIMIT": [],
+  "ZIP_MAX_COMMENT": [],
+  "ZIP_STORED": [],
+  "ZIP_DEFLATED": [],
+  "ZIP_BZIP2": [],
+  "ZIP_LZMA": [],
+  "DEFAULT_VERSION": [],
+  "ZIP64_VERSION": [],
+  "BZIP2_VERSION": [],
+  "LZMA_VERSION": [],
+  "MAX_EXTRACT_VERSION": [],
+  "EXTRA_ZIP64": [],
+  "structEndArchive": [],
+  "stringEndArchive": [],
+  "sizeEndCentDir": [],
+  "_ECD_SIGNATURE": [],
+  "_ECD_DISK_NUMBER": [],
+  "_ECD_DISK_START": [],
+  "_ECD_ENTRIES_THIS_DISK": [],
+  "_ECD_ENTRIES_TOTAL": [],
+  "_ECD_SIZE": [],
+  "_ECD_OFFSET": [],
+  "_ECD_COMMENT_SIZE": [],
+  "_ECD_COMMENT": [],
+  "_ECD_LOCATION": [],
+  "structCentralDir": [],
+  "stringCentralDir": [],
+  "sizeCentralDir": [],
+  "_CD_SIGNATURE": [],
+  "_CD_CREATE_VERSION": [],
+  "_CD_CREATE_SYSTEM": [],
+  "_CD_EXTRACT_VERSION": [],
+  "_CD_EXTRACT_SYSTEM": [],
+  "_CD_FLAG_BITS": [],
+  "_CD_COMPRESS_TYPE": [],
+  "_CD_TIME": [],
+  "_CD_DATE": [],
+  "_CD_CRC": [],
+  "_CD_COMPRESSED_SIZE": [],
+  "_CD_UNCOMPRESSED_SIZE": [],
+  "_CD_FILENAME_LENGTH": [],
+  "_CD_EXTRA_FIELD_LENGTH": [],
+  "_CD_COMMENT_LENGTH": [],
+  "_CD_DISK_NUMBER_START": [],
+  "_CD_INTERNAL_FILE_ATTRIBUTES": [],
+  "_CD_EXTERNAL_FILE_ATTRIBUTES": [],
+  "_CD_LOCAL_HEADER_OFFSET": [],
+  "_MASK_ENCRYPTED": [],
+  "_MASK_COMPRESS_OPTION_1": [],
+  "_MASK_COMPRESS_OPTION_2": [],
+  "_MASK_USE_DATA_DESCRIPTOR": [],
+  "_MASK_RESERVED_BIT_4": [],
+  "_MASK_COMPRESSED_PATCH": [],
+  "_MASK_STRONG_ENCRYPTION": [],
+  "_MASK_UNUSED_BIT_7": [],
+  "_MASK_UNUSED_BIT_8": [],
+  "_MASK_UNUSED_BIT_9": [],
+  "_MASK_UNUSED_BIT_10": [],
+  "_MASK_UTF_FILENAME": [],
+  "_MASK_RESERVED_BIT_12": [],
+  "_MASK_ENCRYPTED_CENTRAL_DIR": [],
+  "_MASK_RESERVED_BIT_14": [],
+  "_MASK_RESERVED_BIT_15": [],
+  "structFileHeader": [],
+  "stringFileHeader": [],
+  "sizeFileHeader": [],
+  "_FH_SIGNATURE": [],
+  "_FH_EXTRACT_VERSION": [],
+  "_FH_EXTRACT_SYSTEM": [],
+  "_FH_GENERAL_PURPOSE_FLAG_BITS": [],
+  "_FH_COMPRESSION_METHOD": [],
+  "_FH_LAST_MOD_TIME": [],
+  "_FH_LAST_MOD_DATE": [],
+  "_FH_CRC": [],
+  "_FH_COMPRESSED_SIZE": [],
+  "_FH_UNCOMPRESSED_SIZE": [],
+  "_FH_FILENAME_LENGTH": [],
+  "_FH_EXTRA_FIELD_LENGTH": [],
+  "structEndArchive64Locator": [],
+  "stringEndArchive64Locator": [],
+  "sizeEndCentDir64Locator": [],
+  "structEndArchive64": [],
+  "stringEndArchive64": [],
+  "sizeEndCentDir64": [],
+  "_CD64_SIGNATURE": [],
+  "_CD64_DIRECTORY_RECSIZE": [],
+  "_CD64_CREATE_VERSION": [],
+  "_CD64_EXTRACT_VERSION": [],
+  "_CD64_DISK_NUMBER": [],
+  "_CD64_DISK_NUMBER_START": [],
+  "_CD64_NUMBER_ENTRIES_THIS_DISK": [],
+  "_CD64_NUMBER_ENTRIES_TOTAL": [],
+  "_CD64_DIRECTORY_SIZE": [],
+  "_CD64_OFFSET_START_CENTDIR": [],
+  "_DD_SIGNATURE": [],
+  "_EXTRA_FIELD_STRUCT": [],
+  "_strip_extra": [
+    "extra",
+    "xids"
+  ],
+  "_check_zipfile": [
+    "fp"
+  ],
+  "is_zipfile": [
+    "filename"
+  ],
+  "_EndRecData64": [
+    "fpin",
+    "offset",
+    "endrec"
+  ],
+  "_EndRecData": [
+    "fpin"
+  ],
+  "ZipInfo": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "filename",
+      "date_time"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "is_encrypted": [
+      "self"
+    ],
+    "is_utf_filename": [
+      "self"
+    ],
+    "is_compressed_patch_data": [
+      "self"
+    ],
+    "is_strong_encryption": [
+      "self"
+    ],
+    "use_datadescripter": [
+      "self"
+    ],
+    "encode_datadescripter": [
+      "self",
+      "zip64",
+      "crc",
+      "compress_size",
+      "file_size"
+    ],
+    "datadescripter": [
+      "self",
+      "zip64"
+    ],
+    "get_dosdate": [
+      "self"
+    ],
+    "get_dostime": [
+      "self"
+    ],
+    "encode_local_header": [
+      "self"
+    ],
+    "zip64_local_header": [
+      "self",
+      "zip64",
+      "file_size",
+      "compress_size"
+    ],
+    "zip64_central_header": [
+      "self"
+    ],
+    "FileHeader": [
+      "self",
+      "zip64"
+    ],
+    "encode_central_directory": [
+      "self",
+      "filename",
+      "create_version",
+      "create_system",
+      "extract_version",
+      "reserved",
+      "flag_bits",
+      "compress_type",
+      "dostime",
+      "dosdate",
+      "crc",
+      "compress_size",
+      "file_size",
+      "disk_start",
+      "internal_attr",
+      "external_attr",
+      "header_offset",
+      "extra_data",
+      "comment"
+    ],
+    "central_directory": [
+      "self"
+    ],
+    "_encodeFilenameFlags": [
+      "self"
+    ],
+    "decode_extra_zip64": [
+      "self",
+      "ln",
+      "extra",
+      "is_central_directory"
+    ],
+    "get_extra_decoders": [
+      "self"
+    ],
+    "_decodeExtra": [
+      "self"
+    ],
+    "from_file": [
+      "cls",
+      "filename",
+      "arcname"
+    ],
+    "is_dir": [
+      "self"
+    ]
+  },
+  "_crctable": [],
+  "_gen_crc": [
+    "crc"
+  ],
+  "BaseZipDecrypter": {
+    "decrypt": [
+      "self",
+      "data"
+    ]
+  },
+  "CRCZipDecrypter": {
+    "encryption_header_length": [],
+    "__init__": [
+      "self",
+      "zinfo",
+      "pwd",
+      "encryption_header"
+    ],
+    "crc32": [
+      "self",
+      "ch",
+      "crc"
+    ],
+    "update_keys": [
+      "self",
+      "c"
+    ],
+    "decrypt": [
+      "self",
+      "data"
+    ]
+  },
+  "LZMACompressor": {
+    "LZMA_SDK_MAJOR_VERSION": [],
+    "LZMA_SDK_MINOR_VERSION": [],
+    "__init__": [
+      "self"
+    ],
+    "_init": [
+      "self"
+    ],
+    "compress": [
+      "self",
+      "data"
+    ],
+    "flush": [
+      "self"
+    ]
+  },
+  "LZMADecompressor": {
+    "__init__": [
+      "self"
+    ],
+    "decompress": [
+      "self",
+      "data"
+    ]
+  },
+  "compressor_names": [],
+  "_check_compression": [
+    "compression"
+  ],
+  "_get_compressor": [
+    "compress_type",
+    "compresslevel"
+  ],
+  "_SharedFile": {
+    "__init__": [
+      "self",
+      "file",
+      "pos",
+      "close",
+      "lock",
+      "writing"
+    ],
+    "seek": [
+      "self",
+      "offset",
+      "whence"
+    ],
+    "read": [
+      "self",
+      "n"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "_Tellable": {
+    "__init__": [
+      "self",
+      "fp"
+    ],
+    "write": [
+      "self",
+      "data"
+    ],
+    "tell": [
+      "self"
+    ],
+    "flush": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "ZipExtFile": {
+    "MAX_N": [],
+    "MIN_READ_SIZE": [],
+    "MAX_SEEK_READ": [],
+    "__init__": [
+      "self",
+      "fileobj",
+      "mode",
+      "zipinfo",
+      "close_fileobj",
+      "pwd"
+    ],
+    "read_init": [
+      "self"
+    ],
+    "process_local_header": [
+      "self"
+    ],
+    "raise_for_unsupported_flags": [
+      "self"
+    ],
+    "get_decompressor": [
+      "self",
+      "compress_type"
+    ],
+    "setup_crczipdecrypter": [
+      "self"
+    ],
+    "setup_decrypter": [
+      "self"
+    ],
+    "get_decrypter_kwargs": [
+      "self"
+    ],
+    "get_decrypter": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "readline": [
+      "self",
+      "limit"
+    ],
+    "peek": [
+      "self",
+      "n"
+    ],
+    "readable": [
+      "self"
+    ],
+    "read": [
+      "self",
+      "n"
+    ],
+    "_update_crc": [
+      "self",
+      "newdata"
+    ],
+    "check_crc": [
+      "self"
+    ],
+    "check_integrity": [
+      "self"
+    ],
+    "read1": [
+      "self",
+      "n"
+    ],
+    "_read1": [
+      "self",
+      "n"
+    ],
+    "_read2": [
+      "self",
+      "n"
+    ],
+    "close": [
+      "self"
+    ],
+    "seekable": [
+      "self"
+    ],
+    "seek": [
+      "self",
+      "offset",
+      "whence"
+    ],
+    "tell": [
+      "self"
+    ]
+  },
+  "_ZipWriteFile": {
+    "__init__": [
+      "self",
+      "zf",
+      "zinfo",
+      "zip64",
+      "encrypter"
+    ],
+    "_fileobj": [
+      "self"
+    ],
+    "writable": [
+      "self"
+    ],
+    "write_local_header": [
+      "self"
+    ],
+    "write_encryption_header": [
+      "self"
+    ],
+    "write": [
+      "self",
+      "data"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "ZipFile": {
+    "fp": [],
+    "_windows_illegal_name_trans_table": [],
+    "zipinfo_cls": [],
+    "zipextfile_cls": [],
+    "zipwritefile_cls": [],
+    "__init__": [
+      "self",
+      "file",
+      "mode",
+      "compression",
+      "allowZip64",
+      "compresslevel"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "type",
+      "value",
+      "traceback"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "_RealGetContents": [
+      "self"
+    ],
+    "namelist": [
+      "self"
+    ],
+    "infolist": [
+      "self"
+    ],
+    "printdir": [
+      "self",
+      "file"
+    ],
+    "testzip": [
+      "self"
+    ],
+    "getinfo": [
+      "self",
+      "name"
+    ],
+    "setpassword": [
+      "self",
+      "pwd"
+    ],
+    "setencryption": [
+      "self",
+      "encryption"
+    ],
+    "get_encrypter": [
+      "self"
+    ],
+    "comment": [
+      "self",
+      "comment"
+    ],
+    "read": [
+      "self",
+      "name",
+      "pwd"
+    ],
+    "open": [
+      "self",
+      "name",
+      "mode",
+      "pwd"
+    ],
+    "_open_to_read": [
+      "self",
+      "mode",
+      "zinfo",
+      "pwd"
+    ],
+    "_open_to_write": [
+      "self",
+      "zinfo",
+      "force_zip64",
+      "pwd"
+    ],
+    "extract": [
+      "self",
+      "member",
+      "path",
+      "pwd"
+    ],
+    "extractall": [
+      "self",
+      "path",
+      "members",
+      "pwd"
+    ],
+    "_sanitize_windows_name": [
+      "cls",
+      "arcname",
+      "pathsep"
+    ],
+    "_extract_member": [
+      "self",
+      "member",
+      "targetpath",
+      "pwd"
+    ],
+    "_writecheck": [
+      "self",
+      "zinfo"
+    ],
+    "write": [
+      "self",
+      "filename",
+      "arcname",
+      "compress_type",
+      "compresslevel"
+    ],
+    "writestr": [
+      "self",
+      "zinfo_or_arcname",
+      "data",
+      "compress_type",
+      "compresslevel"
+    ],
+    "__del__": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "_write_end_record": [
+      "self"
+    ],
+    "_fpclose": [
+      "self",
+      "fp"
+    ]
+  },
+  "PyZipFile": {
+    "__init__": [
+      "self",
+      "file",
+      "mode",
+      "compression",
+      "allowZip64",
+      "optimize"
+    ],
+    "writepy": [
+      "self",
+      "pathname",
+      "basename",
+      "filterfunc"
+    ],
+    "_get_codename": [
+      "self",
+      "pathname",
+      "basename"
+    ]
+  },
+  "main": [
+    "args"
+  ],
+  "WZ_AES": [],
+  "WZ_AES_COMPRESS_TYPE": [],
+  "WZ_AES_V1": [],
+  "WZ_AES_V2": [],
+  "WZ_AES_VENDOR_ID": [],
+  "EXTRA_WZ_AES": [],
+  "WZ_SALT_LENGTHS": [],
+  "WZ_KEY_LENGTHS": [],
+  "AESZipDecrypter": {
+    "hmac_size": [],
+    "__init__": [
+      "self",
+      "zinfo",
+      "pwd",
+      "encryption_header"
+    ],
+    "encryption_header_length": [
+      "zinfo"
+    ],
+    "decrypt": [
+      "self",
+      "data"
+    ],
+    "check_hmac": [
+      "self",
+      "hmac_check"
+    ]
+  },
+  "BaseZipEncrypter": {
+    "update_zipinfo": [
+      "self",
+      "zipinfo"
+    ],
+    "finalize_zipinfo": [
+      "self",
+      "zipinfo"
+    ],
+    "encrypt": [
+      "self",
+      "data"
+    ],
+    "encryption_header": [
+      "self"
+    ],
+    "flush": [
+      "self"
+    ]
+  },
+  "AESZipEncrypter": {
+    "hmac_size": [],
+    "__init__": [
+      "self",
+      "pwd",
+      "nbits",
+      "force_wz_aes_version",
+      "conditionally_include_crc",
+      "min_bytes_to_include_crc"
+    ],
+    "compute_aes_version": [
+      "self",
+      "zipinfo"
+    ],
+    "update_zipinfo": [
+      "self",
+      "zipinfo"
+    ],
+    "finalize_zipinfo": [
+      "self",
+      "zipinfo"
+    ],
+    "encryption_header": [
+      "self"
+    ],
+    "encrypt": [
+      "self",
+      "data"
+    ],
+    "flush": [
+      "self"
+    ]
+  },
+  "AESZipInfo": {
+    "__slots__": [],
+    "__init__": [
+      "self"
+    ],
+    "decode_extra_wz_aes": [
+      "self",
+      "ln",
+      "extra"
+    ],
+    "get_extra_decoders": [
+      "self"
+    ],
+    "encode_extra": [
+      "self",
+      "crc",
+      "compress_type"
+    ],
+    "encode_local_header": [
+      "self"
+    ],
+    "encode_central_directory": [
+      "self"
+    ],
+    "encode_datadescripter": [
+      "self",
+      "zip64",
+      "crc",
+      "compress_size",
+      "file_size"
+    ]
+  },
+  "AESZipExtFile": {
+    "setup_aeszipdecrypter": [
+      "self"
+    ],
+    "setup_decrypter": [
+      "self"
+    ],
+    "check_wz_aes": [
+      "self"
+    ],
+    "check_integrity": [
+      "self"
+    ]
+  },
+  "AESZipFile": {
+    "zipinfo_cls": [],
+    "zipextfile_cls": [],
+    "__init__": [
+      "self"
+    ],
+    "get_encrypter": [
+      "self"
+    ]
+  }
+}

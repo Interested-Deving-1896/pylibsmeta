@@ -1,0 +1,3037 @@
+{
+  "VERSION": [],
+  "AutomationClientConfiguration": {
+    "__init__": [
+      "self",
+      "credential",
+      "subscription_id",
+      "cloud_setting"
+    ],
+    "_configure": [
+      "self"
+    ]
+  },
+  "patch_sdk": [],
+  "AutomationClient": {
+    "__init__": [
+      "self",
+      "credential",
+      "subscription_id",
+      "base_url"
+    ],
+    "_send_request": [
+      "self",
+      "request"
+    ],
+    "close": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self"
+    ]
+  },
+  "__version__": [],
+  "__all__": [],
+  "T": [],
+  "ClsType": [],
+  "List": [],
+  "_SERIALIZER": [],
+  "build_list_fields_by_module_and_type_request": [
+    "resource_group_name",
+    "automation_account_name",
+    "module_name",
+    "type_name",
+    "subscription_id"
+  ],
+  "build_list_fields_by_type_request": [
+    "resource_group_name",
+    "automation_account_name",
+    "type_name",
+    "subscription_id"
+  ],
+  "ObjectDataTypesOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "list_fields_by_module_and_type": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "module_name",
+      "type_name"
+    ],
+    "list_fields_by_type": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "type_name"
+    ]
+  },
+  "build_list_by_job_request": [
+    "resource_group_name",
+    "automation_account_name",
+    "job_id",
+    "subscription_id"
+  ],
+  "DscCompilationJobStreamOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "list_by_job": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "job_id"
+    ]
+  },
+  "build_get_request": [
+    "resource_group_name",
+    "automation_account_name",
+    "subscription_id"
+  ],
+  "LinkedWorkspaceOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "automation_account_name"
+    ]
+  },
+  "build_create_or_update_request": [
+    "resource_group_name",
+    "automation_account_name",
+    "source_control_name",
+    "subscription_id"
+  ],
+  "build_update_request": [
+    "resource_group_name",
+    "automation_account_name",
+    "source_control_name",
+    "subscription_id"
+  ],
+  "build_delete_request": [
+    "resource_group_name",
+    "automation_account_name",
+    "source_control_name",
+    "subscription_id"
+  ],
+  "build_list_by_automation_account_request": [
+    "resource_group_name",
+    "automation_account_name",
+    "subscription_id"
+  ],
+  "SourceControlOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "create_or_update": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "source_control_name",
+      "parameters"
+    ],
+    "update": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "source_control_name",
+      "parameters"
+    ],
+    "delete": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "source_control_name"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "source_control_name"
+    ],
+    "list_by_automation_account": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "filter"
+    ]
+  },
+  "JSON": [],
+  "build_list_by_node_request": [
+    "resource_group_name",
+    "automation_account_name",
+    "node_id",
+    "subscription_id"
+  ],
+  "build_get_content_request": [
+    "resource_group_name",
+    "automation_account_name",
+    "node_id",
+    "report_id",
+    "subscription_id"
+  ],
+  "NodeReportsOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "list_by_node": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "node_id",
+      "filter"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "node_id",
+      "report_id"
+    ],
+    "get_content": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "node_id",
+      "report_id"
+    ]
+  },
+  "JobStreamOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "job_name",
+      "job_stream_id",
+      "client_request_id"
+    ],
+    "list_by_job": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "job_name",
+      "filter",
+      "client_request_id"
+    ]
+  },
+  "DscNodeConfigurationOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "delete": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "node_configuration_name"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "node_configuration_name"
+    ],
+    "_create_or_update_initial": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "node_configuration_name",
+      "parameters"
+    ],
+    "begin_create_or_update": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "node_configuration_name",
+      "parameters"
+    ],
+    "list_by_automation_account": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "filter",
+      "skip",
+      "top",
+      "inlinecount"
+    ]
+  },
+  "Python2PackageOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "delete": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "package_name"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "package_name"
+    ],
+    "create_or_update": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "package_name",
+      "parameters"
+    ],
+    "update": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "package_name",
+      "parameters"
+    ],
+    "list_by_automation_account": [
+      "self",
+      "resource_group_name",
+      "automation_account_name"
+    ]
+  },
+  "CredentialOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "delete": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "credential_name"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "credential_name"
+    ],
+    "create_or_update": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "credential_name",
+      "parameters"
+    ],
+    "update": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "credential_name",
+      "parameters"
+    ],
+    "list_by_automation_account": [
+      "self",
+      "resource_group_name",
+      "automation_account_name"
+    ]
+  },
+  "build_create_request": [
+    "resource_group_name",
+    "automation_account_name",
+    "software_update_configuration_name",
+    "subscription_id"
+  ],
+  "build_get_by_name_request": [
+    "resource_group_name",
+    "automation_account_name",
+    "software_update_configuration_name",
+    "subscription_id"
+  ],
+  "build_list_request": [
+    "resource_group_name",
+    "automation_account_name",
+    "subscription_id"
+  ],
+  "SoftwareUpdateConfigurationsOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "create": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "software_update_configuration_name",
+      "parameters",
+      "client_request_id"
+    ],
+    "get_by_name": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "software_update_configuration_name",
+      "client_request_id"
+    ],
+    "delete": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "software_update_configuration_name",
+      "client_request_id"
+    ],
+    "list": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "client_request_id",
+      "filter"
+    ]
+  },
+  "build_start_request": [
+    "resource_group_name",
+    "automation_account_name",
+    "watcher_name",
+    "subscription_id"
+  ],
+  "build_stop_request": [
+    "resource_group_name",
+    "automation_account_name",
+    "watcher_name",
+    "subscription_id"
+  ],
+  "WatcherOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "create_or_update": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "watcher_name",
+      "parameters"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "watcher_name"
+    ],
+    "update": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "watcher_name",
+      "parameters"
+    ],
+    "delete": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "watcher_name"
+    ],
+    "start": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "watcher_name"
+    ],
+    "stop": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "watcher_name"
+    ],
+    "list_by_automation_account": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "filter"
+    ]
+  },
+  "build_get_by_id_request": [
+    "resource_group_name",
+    "automation_account_name",
+    "software_update_configuration_run_id",
+    "subscription_id"
+  ],
+  "SoftwareUpdateConfigurationRunsOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "get_by_id": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "software_update_configuration_run_id",
+      "client_request_id"
+    ],
+    "list": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "client_request_id",
+      "filter",
+      "skip",
+      "top"
+    ]
+  },
+  "NodeCountInformationOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "count_type"
+    ]
+  },
+  "UsagesOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "list_by_automation_account": [
+      "self",
+      "resource_group_name",
+      "automation_account_name"
+    ]
+  },
+  "build_list_by_test_job_request": [
+    "resource_group_name",
+    "automation_account_name",
+    "runbook_name",
+    "subscription_id"
+  ],
+  "TestJobStreamsOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "runbook_name",
+      "job_stream_id"
+    ],
+    "list_by_test_job": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "runbook_name",
+      "filter"
+    ]
+  },
+  "build_publish_request": [
+    "resource_group_name",
+    "automation_account_name",
+    "runbook_name",
+    "subscription_id"
+  ],
+  "RunbookOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "_publish_initial": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "runbook_name"
+    ],
+    "begin_publish": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "runbook_name"
+    ],
+    "get_content": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "runbook_name"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "runbook_name"
+    ],
+    "create_or_update": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "runbook_name",
+      "parameters"
+    ],
+    "update": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "runbook_name",
+      "parameters"
+    ],
+    "delete": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "runbook_name"
+    ],
+    "list_by_automation_account": [
+      "self",
+      "resource_group_name",
+      "automation_account_name"
+    ]
+  },
+  "StatisticsOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "list_by_automation_account": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "filter"
+    ]
+  },
+  "build_list_by_type_request": [
+    "resource_group_name",
+    "automation_account_name",
+    "module_name",
+    "type_name",
+    "subscription_id"
+  ],
+  "FieldsOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "list_by_type": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "module_name",
+      "type_name"
+    ]
+  },
+  "SoftwareUpdateConfigurationMachineRunsOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "get_by_id": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "software_update_configuration_machine_run_id",
+      "client_request_id"
+    ],
+    "list": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "client_request_id",
+      "filter",
+      "skip",
+      "top"
+    ]
+  },
+  "DscConfigurationOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "delete": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "configuration_name"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "configuration_name"
+    ],
+    "create_or_update": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "configuration_name",
+      "parameters"
+    ],
+    "update": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "configuration_name",
+      "parameters"
+    ],
+    "get_content": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "configuration_name"
+    ],
+    "list_by_automation_account": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "filter",
+      "skip",
+      "top",
+      "inlinecount"
+    ]
+  },
+  "build_list_by_sync_job_request": [
+    "resource_group_name",
+    "automation_account_name",
+    "source_control_name",
+    "source_control_sync_job_id",
+    "subscription_id"
+  ],
+  "SourceControlSyncJobStreamsOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "list_by_sync_job": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "source_control_name",
+      "source_control_sync_job_id",
+      "filter"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "source_control_name",
+      "source_control_sync_job_id",
+      "stream_id"
+    ]
+  },
+  "build_list_by_resource_group_request": [
+    "resource_group_name",
+    "subscription_id"
+  ],
+  "AutomationAccountOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "update": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "parameters"
+    ],
+    "create_or_update": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "parameters"
+    ],
+    "delete": [
+      "self",
+      "resource_group_name",
+      "automation_account_name"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "automation_account_name"
+    ],
+    "list_by_resource_group": [
+      "self",
+      "resource_group_name"
+    ],
+    "list": [
+      "self"
+    ]
+  },
+  "build_resume_request": [
+    "resource_group_name",
+    "automation_account_name",
+    "runbook_name",
+    "subscription_id"
+  ],
+  "build_suspend_request": [
+    "resource_group_name",
+    "automation_account_name",
+    "runbook_name",
+    "subscription_id"
+  ],
+  "TestJobOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "create": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "runbook_name",
+      "parameters"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "runbook_name"
+    ],
+    "resume": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "runbook_name"
+    ],
+    "stop": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "runbook_name"
+    ],
+    "suspend": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "runbook_name"
+    ]
+  },
+  "build_get_stream_request": [
+    "resource_group_name",
+    "automation_account_name",
+    "job_id",
+    "job_stream_id",
+    "subscription_id"
+  ],
+  "DscCompilationJobOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "_create_initial": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "compilation_job_name",
+      "parameters"
+    ],
+    "begin_create": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "compilation_job_name",
+      "parameters"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "compilation_job_name"
+    ],
+    "list_by_automation_account": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "filter"
+    ],
+    "get_stream": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "job_id",
+      "job_stream_id"
+    ]
+  },
+  "JobScheduleOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "delete": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "job_schedule_id"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "job_schedule_id"
+    ],
+    "create": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "job_schedule_id",
+      "parameters"
+    ],
+    "list_by_automation_account": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "filter"
+    ]
+  },
+  "build_get_output_request": [
+    "resource_group_name",
+    "automation_account_name",
+    "job_name",
+    "subscription_id"
+  ],
+  "build_get_runbook_content_request": [
+    "resource_group_name",
+    "automation_account_name",
+    "job_name",
+    "subscription_id"
+  ],
+  "JobOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "get_output": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "job_name",
+      "client_request_id"
+    ],
+    "get_runbook_content": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "job_name",
+      "client_request_id"
+    ],
+    "suspend": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "job_name",
+      "client_request_id"
+    ],
+    "stop": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "job_name",
+      "client_request_id"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "job_name",
+      "client_request_id"
+    ],
+    "create": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "job_name",
+      "parameters",
+      "client_request_id"
+    ],
+    "list_by_automation_account": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "filter",
+      "client_request_id"
+    ],
+    "resume": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "job_name",
+      "client_request_id"
+    ]
+  },
+  "build_regenerate_key_request": [
+    "resource_group_name",
+    "automation_account_name",
+    "subscription_id"
+  ],
+  "AgentRegistrationInformationOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "automation_account_name"
+    ],
+    "regenerate_key": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "parameters"
+    ]
+  },
+  "DscNodeOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "delete": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "node_id"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "node_id"
+    ],
+    "update": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "node_id",
+      "dsc_node_update_parameters"
+    ],
+    "list_by_automation_account": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "filter",
+      "skip",
+      "top",
+      "inlinecount"
+    ]
+  },
+  "build_generate_uri_request": [
+    "resource_group_name",
+    "automation_account_name",
+    "subscription_id"
+  ],
+  "WebhookOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "generate_uri": [
+      "self",
+      "resource_group_name",
+      "automation_account_name"
+    ],
+    "delete": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "webhook_name"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "webhook_name"
+    ],
+    "create_or_update": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "webhook_name",
+      "parameters"
+    ],
+    "update": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "webhook_name",
+      "parameters"
+    ],
+    "list_by_automation_account": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "filter"
+    ]
+  },
+  "KeysOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "list_by_automation_account": [
+      "self",
+      "resource_group_name",
+      "automation_account_name"
+    ]
+  },
+  "HybridRunbookWorkerGroupOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "delete": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "hybrid_runbook_worker_group_name"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "hybrid_runbook_worker_group_name"
+    ],
+    "update": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "hybrid_runbook_worker_group_name",
+      "parameters"
+    ],
+    "list_by_automation_account": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "filter"
+    ]
+  },
+  "build_list_by_module_request": [
+    "resource_group_name",
+    "automation_account_name",
+    "module_name",
+    "subscription_id"
+  ],
+  "ActivityOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "module_name",
+      "activity_name"
+    ],
+    "list_by_module": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "module_name"
+    ]
+  },
+  "ConnectionOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "delete": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "connection_name"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "connection_name"
+    ],
+    "create_or_update": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "connection_name",
+      "parameters"
+    ],
+    "update": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "connection_name",
+      "parameters"
+    ],
+    "list_by_automation_account": [
+      "self",
+      "resource_group_name",
+      "automation_account_name"
+    ]
+  },
+  "ConnectionTypeOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "delete": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "connection_type_name"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "connection_type_name"
+    ],
+    "create_or_update": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "connection_type_name",
+      "parameters"
+    ],
+    "list_by_automation_account": [
+      "self",
+      "resource_group_name",
+      "automation_account_name"
+    ]
+  },
+  "CertificateOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "delete": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "certificate_name"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "certificate_name"
+    ],
+    "create_or_update": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "certificate_name",
+      "parameters"
+    ],
+    "update": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "certificate_name",
+      "parameters"
+    ],
+    "list_by_automation_account": [
+      "self",
+      "resource_group_name",
+      "automation_account_name"
+    ]
+  },
+  "ScheduleOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "create_or_update": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "schedule_name",
+      "parameters"
+    ],
+    "update": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "schedule_name",
+      "parameters"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "schedule_name"
+    ],
+    "delete": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "schedule_name"
+    ],
+    "list_by_automation_account": [
+      "self",
+      "resource_group_name",
+      "automation_account_name"
+    ]
+  },
+  "ModuleOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "delete": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "module_name"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "module_name"
+    ],
+    "create_or_update": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "module_name",
+      "parameters"
+    ],
+    "update": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "module_name",
+      "parameters"
+    ],
+    "list_by_automation_account": [
+      "self",
+      "resource_group_name",
+      "automation_account_name"
+    ]
+  },
+  "SourceControlSyncJobOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "create": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "source_control_name",
+      "source_control_sync_job_id",
+      "parameters"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "source_control_name",
+      "source_control_sync_job_id"
+    ],
+    "list_by_automation_account": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "source_control_name",
+      "filter"
+    ]
+  },
+  "build_replace_content_request": [
+    "resource_group_name",
+    "automation_account_name",
+    "runbook_name",
+    "subscription_id"
+  ],
+  "build_undo_edit_request": [
+    "resource_group_name",
+    "automation_account_name",
+    "runbook_name",
+    "subscription_id"
+  ],
+  "RunbookDraftOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "get_content": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "runbook_name"
+    ],
+    "_replace_content_initial": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "runbook_name",
+      "runbook_content"
+    ],
+    "begin_replace_content": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "runbook_name",
+      "runbook_content"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "runbook_name"
+    ],
+    "undo_edit": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "runbook_name"
+    ]
+  },
+  "Operations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ]
+  },
+  "VariableOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "create_or_update": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "variable_name",
+      "parameters"
+    ],
+    "update": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "variable_name",
+      "parameters"
+    ],
+    "delete": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "variable_name"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "automation_account_name",
+      "variable_name"
+    ],
+    "list_by_automation_account": [
+      "self",
+      "resource_group_name",
+      "automation_account_name"
+    ]
+  },
+  "_BOM": [],
+  "RawDeserializer": {
+    "JSON_REGEXP": [],
+    "CONTEXT_NAME": [],
+    "deserialize_from_text": [
+      "cls",
+      "data",
+      "content_type"
+    ],
+    "deserialize_from_http_generics": [
+      "cls",
+      "body_bytes",
+      "headers"
+    ]
+  },
+  "_LOGGER": [],
+  "TZ_UTC": [],
+  "_FLATTEN": [],
+  "attribute_transformer": [
+    "key",
+    "attr_desc",
+    "value"
+  ],
+  "full_restapi_key_transformer": [
+    "key",
+    "attr_desc",
+    "value"
+  ],
+  "last_restapi_key_transformer": [
+    "key",
+    "attr_desc",
+    "value"
+  ],
+  "_create_xml_node": [
+    "tag",
+    "prefix",
+    "ns"
+  ],
+  "Model": {
+    "__init__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "enable_additional_properties_sending": [
+      "cls"
+    ],
+    "is_xml_model": [
+      "cls"
+    ],
+    "_create_xml_node": [
+      "cls"
+    ],
+    "serialize": [
+      "self",
+      "keep_readonly"
+    ],
+    "as_dict": [
+      "self",
+      "keep_readonly",
+      "key_transformer"
+    ],
+    "_infer_class_models": [
+      "cls"
+    ],
+    "deserialize": [
+      "cls",
+      "data",
+      "content_type"
+    ],
+    "from_dict": [
+      "cls",
+      "data",
+      "key_extractors",
+      "content_type"
+    ],
+    "_flatten_subtype": [
+      "cls",
+      "key",
+      "objects"
+    ],
+    "_classify": [
+      "cls",
+      "response",
+      "objects"
+    ],
+    "_get_rest_key_parts": [
+      "cls",
+      "attr_key"
+    ]
+  },
+  "_decode_attribute_map_key": [
+    "key"
+  ],
+  "Serializer": {
+    "basic_types": [],
+    "_xml_basic_types_serializers": [],
+    "days": [],
+    "months": [],
+    "validation": [],
+    "__init__": [
+      "self",
+      "classes"
+    ],
+    "_serialize": [
+      "self",
+      "target_obj",
+      "data_type"
+    ],
+    "body": [
+      "self",
+      "data",
+      "data_type"
+    ],
+    "url": [
+      "self",
+      "name",
+      "data",
+      "data_type"
+    ],
+    "query": [
+      "self",
+      "name",
+      "data",
+      "data_type"
+    ],
+    "header": [
+      "self",
+      "name",
+      "data",
+      "data_type"
+    ],
+    "serialize_data": [
+      "self",
+      "data",
+      "data_type"
+    ],
+    "_get_custom_serializers": [
+      "cls",
+      "data_type"
+    ],
+    "serialize_basic": [
+      "cls",
+      "data",
+      "data_type"
+    ],
+    "serialize_unicode": [
+      "cls",
+      "data"
+    ],
+    "serialize_iter": [
+      "self",
+      "data",
+      "iter_type",
+      "div"
+    ],
+    "serialize_dict": [
+      "self",
+      "attr",
+      "dict_type"
+    ],
+    "serialize_object": [
+      "self",
+      "attr"
+    ],
+    "serialize_enum": [
+      "attr",
+      "enum_obj"
+    ],
+    "serialize_bytearray": [
+      "attr"
+    ],
+    "serialize_base64": [
+      "attr"
+    ],
+    "serialize_decimal": [
+      "attr"
+    ],
+    "serialize_long": [
+      "attr"
+    ],
+    "serialize_date": [
+      "attr"
+    ],
+    "serialize_time": [
+      "attr"
+    ],
+    "serialize_duration": [
+      "attr"
+    ],
+    "serialize_rfc": [
+      "attr"
+    ],
+    "serialize_iso": [
+      "attr"
+    ],
+    "serialize_unix": [
+      "attr"
+    ]
+  },
+  "rest_key_extractor": [
+    "attr",
+    "attr_desc",
+    "data"
+  ],
+  "rest_key_case_insensitive_extractor": [
+    "attr",
+    "attr_desc",
+    "data"
+  ],
+  "last_rest_key_extractor": [
+    "attr",
+    "attr_desc",
+    "data"
+  ],
+  "last_rest_key_case_insensitive_extractor": [
+    "attr",
+    "attr_desc",
+    "data"
+  ],
+  "attribute_key_extractor": [
+    "attr",
+    "_",
+    "data"
+  ],
+  "attribute_key_case_insensitive_extractor": [
+    "attr",
+    "_",
+    "data"
+  ],
+  "_extract_name_from_internal_type": [
+    "internal_type"
+  ],
+  "xml_key_extractor": [
+    "attr",
+    "attr_desc",
+    "data"
+  ],
+  "Deserializer": {
+    "basic_types": [],
+    "valid_date": [],
+    "__init__": [
+      "self",
+      "classes"
+    ],
+    "__call__": [
+      "self",
+      "target_obj",
+      "response_data",
+      "content_type"
+    ],
+    "_deserialize": [
+      "self",
+      "target_obj",
+      "data"
+    ],
+    "_build_additional_properties": [
+      "self",
+      "attribute_map",
+      "data"
+    ],
+    "_classify_target": [
+      "self",
+      "target",
+      "data"
+    ],
+    "failsafe_deserialize": [
+      "self",
+      "target_obj",
+      "data",
+      "content_type"
+    ],
+    "_unpack_content": [
+      "raw_data",
+      "content_type"
+    ],
+    "_instantiate_model": [
+      "self",
+      "response",
+      "attrs",
+      "additional_properties"
+    ],
+    "deserialize_data": [
+      "self",
+      "data",
+      "data_type"
+    ],
+    "deserialize_iter": [
+      "self",
+      "attr",
+      "iter_type"
+    ],
+    "deserialize_dict": [
+      "self",
+      "attr",
+      "dict_type"
+    ],
+    "deserialize_object": [
+      "self",
+      "attr"
+    ],
+    "deserialize_basic": [
+      "self",
+      "attr",
+      "data_type"
+    ],
+    "deserialize_unicode": [
+      "data"
+    ],
+    "deserialize_enum": [
+      "data",
+      "enum_obj"
+    ],
+    "deserialize_bytearray": [
+      "attr"
+    ],
+    "deserialize_base64": [
+      "attr"
+    ],
+    "deserialize_decimal": [
+      "attr"
+    ],
+    "deserialize_long": [
+      "attr"
+    ],
+    "deserialize_duration": [
+      "attr"
+    ],
+    "deserialize_date": [
+      "attr"
+    ],
+    "deserialize_time": [
+      "attr"
+    ],
+    "deserialize_rfc": [
+      "attr"
+    ],
+    "deserialize_iso": [
+      "attr"
+    ],
+    "deserialize_unix": [
+      "attr"
+    ]
+  },
+  "Activity": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ActivityListResult": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ActivityOutputType": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ActivityParameter": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ActivityParameterSet": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ActivityParameterValidationSet": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "AdvancedSchedule": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "AdvancedScheduleMonthlyOccurrence": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "AgentRegistration": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "AgentRegistrationKeys": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "AgentRegistrationRegenerateKeyParameter": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "Resource": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "TrackedResource": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "AutomationAccount": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "AutomationAccountCreateOrUpdateParameters": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "AutomationAccountListResult": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "AutomationAccountUpdateParameters": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "AzureQueryProperties": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ProxyResource": {},
+  "Certificate": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "CertificateCreateOrUpdateParameters": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "CertificateListResult": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "CertificateUpdateParameters": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "CollectionItemUpdateConfiguration": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "Connection": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ConnectionCreateOrUpdateParameters": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ConnectionListResult": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ConnectionType": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ConnectionTypeAssociationProperty": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ConnectionTypeCreateOrUpdateParameters": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ConnectionTypeListResult": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ConnectionUpdateParameters": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ContentHash": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ContentLink": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ContentSource": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "Credential": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "CredentialCreateOrUpdateParameters": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "CredentialListResult": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "CredentialUpdateParameters": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "DscCompilationJob": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "DscCompilationJobCreateParameters": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "DscCompilationJobListResult": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "DscConfiguration": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "DscConfigurationAssociationProperty": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "DscConfigurationCreateOrUpdateParameters": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "DscConfigurationListResult": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "DscConfigurationParameter": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "DscConfigurationUpdateParameters": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "DscMetaConfiguration": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "DscNode": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "DscNodeConfiguration": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "DscNodeConfigurationCreateOrUpdateParameters": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "DscNodeConfigurationListResult": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "DscNodeExtensionHandlerAssociationProperty": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "DscNodeListResult": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "DscNodeReport": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "DscNodeReportListResult": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "DscNodeUpdateParameters": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "DscNodeUpdateParametersProperties": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "DscReportError": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "DscReportResource": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "DscReportResourceNavigation": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ErrorResponse": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "FieldDefinition": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "HybridRunbookWorker": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "HybridRunbookWorkerGroup": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "HybridRunbookWorkerGroupsListResult": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "HybridRunbookWorkerGroupUpdateParameters": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "Job": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "JobCollectionItem": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "JobCreateParameters": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "JobListResultV2": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "JobNavigation": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "JobSchedule": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "JobScheduleCreateParameters": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "JobScheduleListResult": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "JobStream": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "JobStreamListResult": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "Key": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "KeyListResult": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "LinkedWorkspace": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "LinuxProperties": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "Module": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ModuleCreateOrUpdateParameters": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ModuleErrorInfo": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ModuleListResult": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ModuleUpdateParameters": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "NodeCount": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "NodeCountProperties": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "NodeCounts": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "NonAzureQueryProperties": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "Operation": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "OperationDisplay": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "OperationListResult": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "PythonPackageCreateParameters": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "PythonPackageUpdateParameters": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "RunAsCredentialAssociationProperty": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "Runbook": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "RunbookAssociationProperty": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "RunbookCreateOrUpdateDraftParameters": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "RunbookCreateOrUpdateDraftProperties": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "RunbookCreateOrUpdateParameters": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "RunbookDraft": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "RunbookDraftUndoEditResult": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "RunbookListResult": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "RunbookParameter": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "RunbookUpdateParameters": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "Schedule": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ScheduleAssociationProperty": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ScheduleCreateOrUpdateParameters": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ScheduleListResult": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ScheduleProperties": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ScheduleUpdateParameters": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "Sku": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "SoftareUpdateConfigurationRunTaskProperties": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "SoftareUpdateConfigurationRunTasks": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "SoftwareUpdateConfiguration": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "SoftwareUpdateConfigurationCollectionItem": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "SoftwareUpdateConfigurationListResult": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "SoftwareUpdateConfigurationMachineRun": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "SoftwareUpdateConfigurationMachineRunListResult": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "SoftwareUpdateConfigurationRun": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "SoftwareUpdateConfigurationRunListResult": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "SoftwareUpdateConfigurationTasks": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "SourceControl": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "SourceControlCreateOrUpdateParameters": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "SourceControlListResult": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "SourceControlSecurityTokenProperties": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "SourceControlSyncJob": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "SourceControlSyncJobById": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "SourceControlSyncJobCreateParameters": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "SourceControlSyncJobListResult": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "SourceControlSyncJobStream": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "SourceControlSyncJobStreamById": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "SourceControlSyncJobStreamsListBySyncJob": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "SourceControlUpdateParameters": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "Statistics": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "StatisticsListResult": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "TagSettingsProperties": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "TargetProperties": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "TaskProperties": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "TestJob": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "TestJobCreateParameters": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "TypeField": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "TypeFieldListResult": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "UpdateConfiguration": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "UpdateConfigurationNavigation": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "Usage": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "UsageCounterName": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "UsageListResult": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "Variable": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "VariableCreateOrUpdateParameters": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "VariableListResult": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "VariableUpdateParameters": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "Watcher": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "WatcherListResult": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "WatcherUpdateParameters": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "Webhook": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "WebhookCreateOrUpdateParameters": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "WebhookListResult": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "WebhookUpdateParameters": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "WindowsProperties": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "AgentRegistrationKeyName": {
+    "PRIMARY": [],
+    "SECONDARY": []
+  },
+  "AutomationAccountState": {
+    "OK": [],
+    "UNAVAILABLE": [],
+    "SUSPENDED": []
+  },
+  "AutomationKeyName": {
+    "PRIMARY": [],
+    "SECONDARY": []
+  },
+  "AutomationKeyPermissions": {
+    "READ": [],
+    "FULL": []
+  },
+  "ContentSourceType": {
+    "EMBEDDED_CONTENT": [],
+    "URI": []
+  },
+  "CountType": {
+    "STATUS": [],
+    "NODECONFIGURATION": []
+  },
+  "DscConfigurationState": {
+    "NEW": [],
+    "EDIT": [],
+    "PUBLISHED": []
+  },
+  "GroupTypeEnum": {
+    "USER": [],
+    "SYSTEM": []
+  },
+  "HttpStatusCode": {
+    "CONTINUE": [],
+    "SWITCHING_PROTOCOLS": [],
+    "OK": [],
+    "CREATED": [],
+    "ACCEPTED": [],
+    "NON_AUTHORITATIVE_INFORMATION": [],
+    "NO_CONTENT": [],
+    "RESET_CONTENT": [],
+    "PARTIAL_CONTENT": [],
+    "MULTIPLE_CHOICES": [],
+    "AMBIGUOUS": [],
+    "MOVED_PERMANENTLY": [],
+    "MOVED": [],
+    "FOUND": [],
+    "REDIRECT": [],
+    "SEE_OTHER": [],
+    "REDIRECT_METHOD": [],
+    "NOT_MODIFIED": [],
+    "USE_PROXY": [],
+    "UNUSED": [],
+    "TEMPORARY_REDIRECT": [],
+    "REDIRECT_KEEP_VERB": [],
+    "BAD_REQUEST": [],
+    "UNAUTHORIZED": [],
+    "PAYMENT_REQUIRED": [],
+    "FORBIDDEN": [],
+    "NOT_FOUND": [],
+    "METHOD_NOT_ALLOWED": [],
+    "NOT_ACCEPTABLE": [],
+    "PROXY_AUTHENTICATION_REQUIRED": [],
+    "REQUEST_TIMEOUT": [],
+    "CONFLICT": [],
+    "GONE": [],
+    "LENGTH_REQUIRED": [],
+    "PRECONDITION_FAILED": [],
+    "REQUEST_ENTITY_TOO_LARGE": [],
+    "REQUEST_URI_TOO_LONG": [],
+    "UNSUPPORTED_MEDIA_TYPE": [],
+    "REQUESTED_RANGE_NOT_SATISFIABLE": [],
+    "EXPECTATION_FAILED": [],
+    "UPGRADE_REQUIRED": [],
+    "INTERNAL_SERVER_ERROR": [],
+    "NOT_IMPLEMENTED": [],
+    "BAD_GATEWAY": [],
+    "SERVICE_UNAVAILABLE": [],
+    "GATEWAY_TIMEOUT": [],
+    "HTTP_VERSION_NOT_SUPPORTED": []
+  },
+  "JobProvisioningState": {
+    "FAILED": [],
+    "SUCCEEDED": [],
+    "SUSPENDED": [],
+    "PROCESSING": []
+  },
+  "JobStatus": {
+    "NEW": [],
+    "ACTIVATING": [],
+    "RUNNING": [],
+    "COMPLETED": [],
+    "FAILED": [],
+    "STOPPED": [],
+    "BLOCKED": [],
+    "SUSPENDED": [],
+    "DISCONNECTED": [],
+    "SUSPENDING": [],
+    "STOPPING": [],
+    "RESUMING": [],
+    "REMOVING": []
+  },
+  "JobStreamType": {
+    "PROGRESS": [],
+    "OUTPUT": [],
+    "WARNING": [],
+    "ERROR": [],
+    "DEBUG": [],
+    "VERBOSE": [],
+    "ANY": []
+  },
+  "LinuxUpdateClasses": {
+    "UNCLASSIFIED": [],
+    "CRITICAL": [],
+    "SECURITY": [],
+    "OTHER": []
+  },
+  "ModuleProvisioningState": {
+    "CREATED": [],
+    "CREATING": [],
+    "STARTING_IMPORT_MODULE_RUNBOOK": [],
+    "RUNNING_IMPORT_MODULE_RUNBOOK": [],
+    "CONTENT_RETRIEVED": [],
+    "CONTENT_DOWNLOADED": [],
+    "CONTENT_VALIDATED": [],
+    "CONNECTION_TYPE_IMPORTED": [],
+    "CONTENT_STORED": [],
+    "MODULE_DATA_STORED": [],
+    "ACTIVITIES_STORED": [],
+    "MODULE_IMPORT_RUNBOOK_COMPLETE": [],
+    "SUCCEEDED": [],
+    "FAILED": [],
+    "CANCELLED": [],
+    "UPDATING": []
+  },
+  "OperatingSystemType": {
+    "WINDOWS": [],
+    "LINUX": []
+  },
+  "ProvisioningState": {
+    "COMPLETED": [],
+    "FAILED": [],
+    "RUNNING": []
+  },
+  "RunbookState": {
+    "NEW": [],
+    "EDIT": [],
+    "PUBLISHED": []
+  },
+  "RunbookTypeEnum": {
+    "SCRIPT": [],
+    "GRAPH": [],
+    "POWER_SHELL_WORKFLOW": [],
+    "POWER_SHELL": [],
+    "GRAPH_POWER_SHELL_WORKFLOW": [],
+    "GRAPH_POWER_SHELL": [],
+    "PYTHON2": [],
+    "PYTHON3": []
+  },
+  "ScheduleDay": {
+    "MONDAY": [],
+    "TUESDAY": [],
+    "WEDNESDAY": [],
+    "THURSDAY": [],
+    "FRIDAY": [],
+    "SATURDAY": [],
+    "SUNDAY": []
+  },
+  "ScheduleFrequency": {
+    "ONE_TIME": [],
+    "DAY": [],
+    "HOUR": [],
+    "WEEK": [],
+    "MONTH": [],
+    "MINUTE": []
+  },
+  "SkuNameEnum": {
+    "FREE": [],
+    "BASIC": []
+  },
+  "SourceType": {
+    "VSO_GIT": [],
+    "VSO_TFVC": [],
+    "GIT_HUB": []
+  },
+  "StreamType": {
+    "ERROR": [],
+    "OUTPUT": []
+  },
+  "SyncType": {
+    "PARTIAL_SYNC": [],
+    "FULL_SYNC": []
+  },
+  "TagOperators": {
+    "ALL": [],
+    "ANY": []
+  },
+  "TokenType": {
+    "PERSONAL_ACCESS_TOKEN": [],
+    "OAUTH": []
+  },
+  "WindowsUpdateClasses": {
+    "UNCLASSIFIED": [],
+    "CRITICAL": [],
+    "SECURITY": [],
+    "UPDATE_ROLLUP": [],
+    "FEATURE_PACK": [],
+    "SERVICE_PACK": [],
+    "DEFINITION": [],
+    "TOOLS": [],
+    "UPDATES": []
+  }
+}
