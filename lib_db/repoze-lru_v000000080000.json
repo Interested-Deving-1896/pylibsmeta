@@ -1,0 +1,155 @@
+{
+  "_MARKER": [],
+  "_DEFAULT_TIMEOUT": [],
+  "CacheSizeMustBeGreaterThanZero": {
+    "__init__": [
+      "self",
+      "size"
+    ]
+  },
+  "CacheMaxsizeRequired": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "CacheAlreadyInUse": {
+    "__init__": [
+      "self",
+      "name"
+    ]
+  },
+  "Cache": {
+    "__metaclass__": [],
+    "clear": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "key",
+      "default"
+    ],
+    "put": [
+      "self",
+      "key",
+      "val"
+    ],
+    "invalidate": [
+      "self",
+      "key"
+    ]
+  },
+  "UnboundedCache": {
+    "__init__": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "key",
+      "default"
+    ],
+    "clear": [
+      "self"
+    ],
+    "invalidate": [
+      "self",
+      "key"
+    ],
+    "put": [
+      "self",
+      "key",
+      "val"
+    ]
+  },
+  "LRUCache": {
+    "__init__": [
+      "self",
+      "size"
+    ],
+    "clear": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "key",
+      "default"
+    ],
+    "put": [
+      "self",
+      "key",
+      "val"
+    ],
+    "invalidate": [
+      "self",
+      "key"
+    ]
+  },
+  "ExpiringLRUCache": {
+    "__init__": [
+      "self",
+      "size",
+      "default_timeout"
+    ],
+    "clear": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "key",
+      "default"
+    ],
+    "put": [
+      "self",
+      "key",
+      "val",
+      "timeout"
+    ],
+    "invalidate": [
+      "self",
+      "key"
+    ]
+  },
+  "lru_cache": {
+    "__init__": [
+      "self",
+      "maxsize",
+      "cache",
+      "timeout",
+      "ignore_unhashable_args"
+    ],
+    "__call__": [
+      "self",
+      "func"
+    ]
+  },
+  "CacheMaker": {
+    "__init__": [
+      "self",
+      "maxsize",
+      "timeout"
+    ],
+    "_resolve_setting": [
+      "self",
+      "name",
+      "maxsize",
+      "timeout"
+    ],
+    "memoized": [
+      "self",
+      "name"
+    ],
+    "lrucache": [
+      "self",
+      "name",
+      "maxsize"
+    ],
+    "expiring_lrucache": [
+      "self",
+      "name",
+      "maxsize",
+      "timeout"
+    ],
+    "clear": [
+      "self"
+    ]
+  }
+}
