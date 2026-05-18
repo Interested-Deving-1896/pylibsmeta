@@ -1,0 +1,1824 @@
+{
+  "VERSION": [],
+  "HDInsightManagementClientConfiguration": {
+    "__init__": [
+      "self",
+      "credential",
+      "subscription_id",
+      "cloud_setting"
+    ],
+    "_configure": [
+      "self"
+    ]
+  },
+  "__version__": [],
+  "__all__": [],
+  "HDInsightManagementClient": {
+    "__init__": [
+      "self",
+      "credential",
+      "subscription_id",
+      "base_url"
+    ],
+    "_send_request": [
+      "self",
+      "request"
+    ],
+    "close": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self"
+    ]
+  },
+  "patch_sdk": [],
+  "_BOM": [],
+  "JSON": [],
+  "RawDeserializer": {
+    "JSON_REGEXP": [],
+    "CONTEXT_NAME": [],
+    "deserialize_from_text": [
+      "cls",
+      "data",
+      "content_type"
+    ],
+    "deserialize_from_http_generics": [
+      "cls",
+      "body_bytes",
+      "headers"
+    ]
+  },
+  "_LOGGER": [],
+  "TZ_UTC": [],
+  "_FLATTEN": [],
+  "attribute_transformer": [
+    "key",
+    "attr_desc",
+    "value"
+  ],
+  "full_restapi_key_transformer": [
+    "key",
+    "attr_desc",
+    "value"
+  ],
+  "last_restapi_key_transformer": [
+    "key",
+    "attr_desc",
+    "value"
+  ],
+  "_create_xml_node": [
+    "tag",
+    "prefix",
+    "ns"
+  ],
+  "Model": {
+    "__init__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "enable_additional_properties_sending": [
+      "cls"
+    ],
+    "is_xml_model": [
+      "cls"
+    ],
+    "_create_xml_node": [
+      "cls"
+    ],
+    "serialize": [
+      "self",
+      "keep_readonly"
+    ],
+    "as_dict": [
+      "self",
+      "keep_readonly",
+      "key_transformer"
+    ],
+    "_infer_class_models": [
+      "cls"
+    ],
+    "deserialize": [
+      "cls",
+      "data",
+      "content_type"
+    ],
+    "from_dict": [
+      "cls",
+      "data",
+      "key_extractors",
+      "content_type"
+    ],
+    "_flatten_subtype": [
+      "cls",
+      "key",
+      "objects"
+    ],
+    "_classify": [
+      "cls",
+      "response",
+      "objects"
+    ],
+    "_get_rest_key_parts": [
+      "cls",
+      "attr_key"
+    ]
+  },
+  "_decode_attribute_map_key": [
+    "key"
+  ],
+  "Serializer": {
+    "basic_types": [],
+    "_xml_basic_types_serializers": [],
+    "days": [],
+    "months": [],
+    "validation": [],
+    "__init__": [
+      "self",
+      "classes"
+    ],
+    "_serialize": [
+      "self",
+      "target_obj",
+      "data_type"
+    ],
+    "body": [
+      "self",
+      "data",
+      "data_type"
+    ],
+    "url": [
+      "self",
+      "name",
+      "data",
+      "data_type"
+    ],
+    "query": [
+      "self",
+      "name",
+      "data",
+      "data_type"
+    ],
+    "header": [
+      "self",
+      "name",
+      "data",
+      "data_type"
+    ],
+    "serialize_data": [
+      "self",
+      "data",
+      "data_type"
+    ],
+    "_get_custom_serializers": [
+      "cls",
+      "data_type"
+    ],
+    "serialize_basic": [
+      "cls",
+      "data",
+      "data_type"
+    ],
+    "serialize_unicode": [
+      "cls",
+      "data"
+    ],
+    "serialize_iter": [
+      "self",
+      "data",
+      "iter_type",
+      "div"
+    ],
+    "serialize_dict": [
+      "self",
+      "attr",
+      "dict_type"
+    ],
+    "serialize_object": [
+      "self",
+      "attr"
+    ],
+    "serialize_enum": [
+      "attr",
+      "enum_obj"
+    ],
+    "serialize_bytearray": [
+      "attr"
+    ],
+    "serialize_base64": [
+      "attr"
+    ],
+    "serialize_decimal": [
+      "attr"
+    ],
+    "serialize_long": [
+      "attr"
+    ],
+    "serialize_date": [
+      "attr"
+    ],
+    "serialize_time": [
+      "attr"
+    ],
+    "serialize_duration": [
+      "attr"
+    ],
+    "serialize_rfc": [
+      "attr"
+    ],
+    "serialize_iso": [
+      "attr"
+    ],
+    "serialize_unix": [
+      "attr"
+    ]
+  },
+  "rest_key_extractor": [
+    "attr",
+    "attr_desc",
+    "data"
+  ],
+  "rest_key_case_insensitive_extractor": [
+    "attr",
+    "attr_desc",
+    "data"
+  ],
+  "last_rest_key_extractor": [
+    "attr",
+    "attr_desc",
+    "data"
+  ],
+  "last_rest_key_case_insensitive_extractor": [
+    "attr",
+    "attr_desc",
+    "data"
+  ],
+  "attribute_key_extractor": [
+    "attr",
+    "_",
+    "data"
+  ],
+  "attribute_key_case_insensitive_extractor": [
+    "attr",
+    "_",
+    "data"
+  ],
+  "_extract_name_from_internal_type": [
+    "internal_type"
+  ],
+  "xml_key_extractor": [
+    "attr",
+    "attr_desc",
+    "data"
+  ],
+  "Deserializer": {
+    "basic_types": [],
+    "valid_date": [],
+    "__init__": [
+      "self",
+      "classes"
+    ],
+    "__call__": [
+      "self",
+      "target_obj",
+      "response_data",
+      "content_type"
+    ],
+    "_deserialize": [
+      "self",
+      "target_obj",
+      "data"
+    ],
+    "_build_additional_properties": [
+      "self",
+      "attribute_map",
+      "data"
+    ],
+    "_classify_target": [
+      "self",
+      "target",
+      "data"
+    ],
+    "failsafe_deserialize": [
+      "self",
+      "target_obj",
+      "data",
+      "content_type"
+    ],
+    "_unpack_content": [
+      "raw_data",
+      "content_type"
+    ],
+    "_instantiate_model": [
+      "self",
+      "response",
+      "attrs",
+      "additional_properties"
+    ],
+    "deserialize_data": [
+      "self",
+      "data",
+      "data_type"
+    ],
+    "deserialize_iter": [
+      "self",
+      "attr",
+      "iter_type"
+    ],
+    "deserialize_dict": [
+      "self",
+      "attr",
+      "dict_type"
+    ],
+    "deserialize_object": [
+      "self",
+      "attr"
+    ],
+    "deserialize_basic": [
+      "self",
+      "attr",
+      "data_type"
+    ],
+    "deserialize_unicode": [
+      "data"
+    ],
+    "deserialize_enum": [
+      "data",
+      "enum_obj"
+    ],
+    "deserialize_bytearray": [
+      "attr"
+    ],
+    "deserialize_base64": [
+      "attr"
+    ],
+    "deserialize_decimal": [
+      "attr"
+    ],
+    "deserialize_long": [
+      "attr"
+    ],
+    "deserialize_duration": [
+      "attr"
+    ],
+    "deserialize_date": [
+      "attr"
+    ],
+    "deserialize_time": [
+      "attr"
+    ],
+    "deserialize_rfc": [
+      "attr"
+    ],
+    "deserialize_iso": [
+      "attr"
+    ],
+    "deserialize_unix": [
+      "attr"
+    ]
+  },
+  "T": [],
+  "ClsType": [],
+  "List": [],
+  "LocationsOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "get_capabilities": [
+      "self",
+      "location"
+    ],
+    "list_usages": [
+      "self",
+      "location"
+    ],
+    "list_billing_specs": [
+      "self",
+      "location"
+    ],
+    "get_azure_async_operation_status": [
+      "self",
+      "location",
+      "operation_id"
+    ],
+    "check_name_availability": [
+      "self",
+      "location",
+      "parameters"
+    ],
+    "validate_cluster_create_request": [
+      "self",
+      "location",
+      "parameters"
+    ]
+  },
+  "ScriptActionsOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "delete": [
+      "self",
+      "resource_group_name",
+      "cluster_name",
+      "script_name"
+    ],
+    "list_by_cluster": [
+      "self",
+      "resource_group_name",
+      "cluster_name"
+    ],
+    "get_execution_detail": [
+      "self",
+      "resource_group_name",
+      "cluster_name",
+      "script_execution_id"
+    ],
+    "get_execution_async_operation_status": [
+      "self",
+      "resource_group_name",
+      "cluster_name",
+      "operation_id"
+    ]
+  },
+  "Operations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ]
+  },
+  "PrivateLinkResourcesOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "list_by_cluster": [
+      "self",
+      "resource_group_name",
+      "cluster_name"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "cluster_name",
+      "private_link_resource_name"
+    ]
+  },
+  "VirtualMachinesOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "list_hosts": [
+      "self",
+      "resource_group_name",
+      "cluster_name"
+    ],
+    "_restart_hosts_initial": [
+      "self",
+      "resource_group_name",
+      "cluster_name",
+      "hosts"
+    ],
+    "begin_restart_hosts": [
+      "self",
+      "resource_group_name",
+      "cluster_name",
+      "hosts"
+    ],
+    "get_async_operation_status": [
+      "self",
+      "resource_group_name",
+      "cluster_name",
+      "operation_id"
+    ]
+  },
+  "ScriptExecutionHistoryOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "list_by_cluster": [
+      "self",
+      "resource_group_name",
+      "cluster_name"
+    ],
+    "promote": [
+      "self",
+      "resource_group_name",
+      "cluster_name",
+      "script_execution_id"
+    ]
+  },
+  "ApplicationsOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "list_by_cluster": [
+      "self",
+      "resource_group_name",
+      "cluster_name"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "cluster_name",
+      "application_name"
+    ],
+    "_create_initial": [
+      "self",
+      "resource_group_name",
+      "cluster_name",
+      "application_name",
+      "parameters"
+    ],
+    "begin_create": [
+      "self",
+      "resource_group_name",
+      "cluster_name",
+      "application_name",
+      "parameters"
+    ],
+    "_delete_initial": [
+      "self",
+      "resource_group_name",
+      "cluster_name",
+      "application_name"
+    ],
+    "begin_delete": [
+      "self",
+      "resource_group_name",
+      "cluster_name",
+      "application_name"
+    ],
+    "get_azure_async_operation_status": [
+      "self",
+      "resource_group_name",
+      "cluster_name",
+      "application_name",
+      "operation_id"
+    ]
+  },
+  "ConfigurationsOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "resource_group_name",
+      "cluster_name"
+    ],
+    "_update_initial": [
+      "self",
+      "resource_group_name",
+      "cluster_name",
+      "configuration_name",
+      "parameters"
+    ],
+    "begin_update": [
+      "self",
+      "resource_group_name",
+      "cluster_name",
+      "configuration_name",
+      "parameters"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "cluster_name",
+      "configuration_name"
+    ]
+  },
+  "PrivateEndpointConnectionsOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "list_by_cluster": [
+      "self",
+      "resource_group_name",
+      "cluster_name"
+    ],
+    "_create_or_update_initial": [
+      "self",
+      "resource_group_name",
+      "cluster_name",
+      "private_endpoint_connection_name",
+      "parameters"
+    ],
+    "begin_create_or_update": [
+      "self",
+      "resource_group_name",
+      "cluster_name",
+      "private_endpoint_connection_name",
+      "parameters"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "cluster_name",
+      "private_endpoint_connection_name"
+    ],
+    "_delete_initial": [
+      "self",
+      "resource_group_name",
+      "cluster_name",
+      "private_endpoint_connection_name"
+    ],
+    "begin_delete": [
+      "self",
+      "resource_group_name",
+      "cluster_name",
+      "private_endpoint_connection_name"
+    ]
+  },
+  "ClustersOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "_create_initial": [
+      "self",
+      "resource_group_name",
+      "cluster_name",
+      "parameters"
+    ],
+    "begin_create": [
+      "self",
+      "resource_group_name",
+      "cluster_name",
+      "parameters"
+    ],
+    "update": [
+      "self",
+      "resource_group_name",
+      "cluster_name",
+      "parameters"
+    ],
+    "_delete_initial": [
+      "self",
+      "resource_group_name",
+      "cluster_name"
+    ],
+    "begin_delete": [
+      "self",
+      "resource_group_name",
+      "cluster_name"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "cluster_name"
+    ],
+    "list_by_resource_group": [
+      "self",
+      "resource_group_name"
+    ],
+    "_resize_initial": [
+      "self",
+      "resource_group_name",
+      "cluster_name",
+      "role_name",
+      "parameters"
+    ],
+    "begin_resize": [
+      "self",
+      "resource_group_name",
+      "cluster_name",
+      "role_name",
+      "parameters"
+    ],
+    "_update_auto_scale_configuration_initial": [
+      "self",
+      "resource_group_name",
+      "cluster_name",
+      "role_name",
+      "parameters"
+    ],
+    "begin_update_auto_scale_configuration": [
+      "self",
+      "resource_group_name",
+      "cluster_name",
+      "role_name",
+      "parameters"
+    ],
+    "list": [
+      "self"
+    ],
+    "_rotate_disk_encryption_key_initial": [
+      "self",
+      "resource_group_name",
+      "cluster_name",
+      "parameters"
+    ],
+    "begin_rotate_disk_encryption_key": [
+      "self",
+      "resource_group_name",
+      "cluster_name",
+      "parameters"
+    ],
+    "get_gateway_settings": [
+      "self",
+      "resource_group_name",
+      "cluster_name"
+    ],
+    "_update_gateway_settings_initial": [
+      "self",
+      "resource_group_name",
+      "cluster_name",
+      "parameters"
+    ],
+    "begin_update_gateway_settings": [
+      "self",
+      "resource_group_name",
+      "cluster_name",
+      "parameters"
+    ],
+    "get_azure_async_operation_status": [
+      "self",
+      "resource_group_name",
+      "cluster_name",
+      "operation_id"
+    ],
+    "_update_identity_certificate_initial": [
+      "self",
+      "resource_group_name",
+      "cluster_name",
+      "parameters"
+    ],
+    "begin_update_identity_certificate": [
+      "self",
+      "resource_group_name",
+      "cluster_name",
+      "parameters"
+    ],
+    "_execute_script_actions_initial": [
+      "self",
+      "resource_group_name",
+      "cluster_name",
+      "parameters"
+    ],
+    "begin_execute_script_actions": [
+      "self",
+      "resource_group_name",
+      "cluster_name",
+      "parameters"
+    ]
+  },
+  "ExtensionsOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "_enable_monitoring_initial": [
+      "self",
+      "resource_group_name",
+      "cluster_name",
+      "parameters"
+    ],
+    "begin_enable_monitoring": [
+      "self",
+      "resource_group_name",
+      "cluster_name",
+      "parameters"
+    ],
+    "get_monitoring_status": [
+      "self",
+      "resource_group_name",
+      "cluster_name"
+    ],
+    "_disable_monitoring_initial": [
+      "self",
+      "resource_group_name",
+      "cluster_name"
+    ],
+    "begin_disable_monitoring": [
+      "self",
+      "resource_group_name",
+      "cluster_name"
+    ],
+    "_enable_azure_monitor_initial": [
+      "self",
+      "resource_group_name",
+      "cluster_name",
+      "parameters"
+    ],
+    "begin_enable_azure_monitor": [
+      "self",
+      "resource_group_name",
+      "cluster_name",
+      "parameters"
+    ],
+    "get_azure_monitor_status": [
+      "self",
+      "resource_group_name",
+      "cluster_name"
+    ],
+    "_disable_azure_monitor_initial": [
+      "self",
+      "resource_group_name",
+      "cluster_name"
+    ],
+    "begin_disable_azure_monitor": [
+      "self",
+      "resource_group_name",
+      "cluster_name"
+    ],
+    "_create_initial": [
+      "self",
+      "resource_group_name",
+      "cluster_name",
+      "extension_name",
+      "parameters"
+    ],
+    "begin_create": [
+      "self",
+      "resource_group_name",
+      "cluster_name",
+      "extension_name",
+      "parameters"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "cluster_name",
+      "extension_name"
+    ],
+    "_delete_initial": [
+      "self",
+      "resource_group_name",
+      "cluster_name",
+      "extension_name"
+    ],
+    "begin_delete": [
+      "self",
+      "resource_group_name",
+      "cluster_name",
+      "extension_name"
+    ],
+    "get_azure_async_operation_status": [
+      "self",
+      "resource_group_name",
+      "cluster_name",
+      "extension_name",
+      "operation_id"
+    ]
+  },
+  "_SERIALIZER": [],
+  "build_get_capabilities_request": [
+    "location",
+    "subscription_id"
+  ],
+  "build_list_usages_request": [
+    "location",
+    "subscription_id"
+  ],
+  "build_list_billing_specs_request": [
+    "location",
+    "subscription_id"
+  ],
+  "build_get_azure_async_operation_status_request": [
+    "location",
+    "operation_id",
+    "subscription_id"
+  ],
+  "build_check_name_availability_request": [
+    "location",
+    "subscription_id"
+  ],
+  "build_validate_cluster_create_request_request": [
+    "location",
+    "subscription_id"
+  ],
+  "build_delete_request": [
+    "resource_group_name",
+    "cluster_name",
+    "script_name",
+    "subscription_id"
+  ],
+  "build_list_by_cluster_request": [
+    "resource_group_name",
+    "cluster_name",
+    "subscription_id"
+  ],
+  "build_get_execution_detail_request": [
+    "resource_group_name",
+    "cluster_name",
+    "script_execution_id",
+    "subscription_id"
+  ],
+  "build_get_execution_async_operation_status_request": [
+    "resource_group_name",
+    "cluster_name",
+    "operation_id",
+    "subscription_id"
+  ],
+  "build_list_request": [],
+  "build_get_request": [
+    "resource_group_name",
+    "cluster_name",
+    "private_link_resource_name",
+    "subscription_id"
+  ],
+  "build_list_hosts_request": [
+    "resource_group_name",
+    "cluster_name",
+    "subscription_id"
+  ],
+  "build_restart_hosts_request": [
+    "resource_group_name",
+    "cluster_name",
+    "subscription_id"
+  ],
+  "build_get_async_operation_status_request": [
+    "resource_group_name",
+    "cluster_name",
+    "operation_id",
+    "subscription_id"
+  ],
+  "build_promote_request": [
+    "resource_group_name",
+    "cluster_name",
+    "script_execution_id",
+    "subscription_id"
+  ],
+  "build_create_request": [
+    "resource_group_name",
+    "cluster_name",
+    "application_name",
+    "subscription_id"
+  ],
+  "build_update_request": [
+    "resource_group_name",
+    "cluster_name",
+    "configuration_name",
+    "subscription_id"
+  ],
+  "build_create_or_update_request": [
+    "resource_group_name",
+    "cluster_name",
+    "private_endpoint_connection_name",
+    "subscription_id"
+  ],
+  "build_list_by_resource_group_request": [
+    "resource_group_name",
+    "subscription_id"
+  ],
+  "build_resize_request": [
+    "resource_group_name",
+    "cluster_name",
+    "role_name",
+    "subscription_id"
+  ],
+  "build_update_auto_scale_configuration_request": [
+    "resource_group_name",
+    "cluster_name",
+    "role_name",
+    "subscription_id"
+  ],
+  "build_rotate_disk_encryption_key_request": [
+    "resource_group_name",
+    "cluster_name",
+    "subscription_id"
+  ],
+  "build_get_gateway_settings_request": [
+    "resource_group_name",
+    "cluster_name",
+    "subscription_id"
+  ],
+  "build_update_gateway_settings_request": [
+    "resource_group_name",
+    "cluster_name",
+    "subscription_id"
+  ],
+  "build_update_identity_certificate_request": [
+    "resource_group_name",
+    "cluster_name",
+    "subscription_id"
+  ],
+  "build_execute_script_actions_request": [
+    "resource_group_name",
+    "cluster_name",
+    "subscription_id"
+  ],
+  "build_enable_monitoring_request": [
+    "resource_group_name",
+    "cluster_name",
+    "subscription_id"
+  ],
+  "build_get_monitoring_status_request": [
+    "resource_group_name",
+    "cluster_name",
+    "subscription_id"
+  ],
+  "build_disable_monitoring_request": [
+    "resource_group_name",
+    "cluster_name",
+    "subscription_id"
+  ],
+  "build_enable_azure_monitor_request": [
+    "resource_group_name",
+    "cluster_name",
+    "subscription_id"
+  ],
+  "build_get_azure_monitor_status_request": [
+    "resource_group_name",
+    "cluster_name",
+    "subscription_id"
+  ],
+  "build_disable_azure_monitor_request": [
+    "resource_group_name",
+    "cluster_name",
+    "subscription_id"
+  ],
+  "AsyncOperationState": {
+    "IN_PROGRESS": [],
+    "SUCCEEDED": [],
+    "FAILED": []
+  },
+  "CreatedByType": {
+    "USER": [],
+    "APPLICATION": [],
+    "MANAGED_IDENTITY": [],
+    "KEY": []
+  },
+  "DaysOfWeek": {
+    "MONDAY": [],
+    "TUESDAY": [],
+    "WEDNESDAY": [],
+    "THURSDAY": [],
+    "FRIDAY": [],
+    "SATURDAY": [],
+    "SUNDAY": []
+  },
+  "DirectoryType": {
+    "ACTIVE_DIRECTORY": []
+  },
+  "FilterMode": {
+    "EXCLUDE": [],
+    "INCLUDE": [],
+    "RECOMMEND": [],
+    "DEFAULT": []
+  },
+  "HDInsightClusterProvisioningState": {
+    "IN_PROGRESS": [],
+    "FAILED": [],
+    "SUCCEEDED": [],
+    "CANCELED": [],
+    "DELETING": []
+  },
+  "JsonWebKeyEncryptionAlgorithm": {
+    "RSA_OAEP": [],
+    "RSA_OAEP256": [],
+    "RSA1_5": []
+  },
+  "OSType": {
+    "WINDOWS": [],
+    "LINUX": []
+  },
+  "PrivateEndpointConnectionProvisioningState": {
+    "IN_PROGRESS": [],
+    "UPDATING": [],
+    "FAILED": [],
+    "SUCCEEDED": [],
+    "CANCELED": [],
+    "DELETING": []
+  },
+  "PrivateIPAllocationMethod": {
+    "DYNAMIC": [],
+    "STATIC": []
+  },
+  "PrivateLink": {
+    "DISABLED": [],
+    "ENABLED": []
+  },
+  "PrivateLinkConfigurationProvisioningState": {
+    "IN_PROGRESS": [],
+    "FAILED": [],
+    "SUCCEEDED": [],
+    "CANCELED": [],
+    "DELETING": []
+  },
+  "PrivateLinkServiceConnectionStatus": {
+    "APPROVED": [],
+    "REJECTED": [],
+    "PENDING": [],
+    "REMOVED": []
+  },
+  "ResourceIdentityType": {
+    "SYSTEM_ASSIGNED": [],
+    "USER_ASSIGNED": [],
+    "SYSTEM_ASSIGNED_USER_ASSIGNED": [],
+    "NONE": []
+  },
+  "ResourceProviderConnection": {
+    "INBOUND": [],
+    "OUTBOUND": []
+  },
+  "RoleName": {
+    "WORKERNODE": []
+  },
+  "Tier": {
+    "STANDARD": [],
+    "PREMIUM": []
+  },
+  "AaddsResourceDetails": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "Resource": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ProxyResource": {},
+  "Application": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ApplicationGetEndpoint": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ApplicationGetHttpsEndpoint": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ApplicationListResult": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ApplicationProperties": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "AsyncOperationResult": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "Autoscale": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "AutoscaleCapacity": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "AutoscaleConfigurationUpdateParameter": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "AutoscaleRecurrence": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "AutoscaleSchedule": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "AutoscaleTimeAndCapacity": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "AzureMonitorRequest": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "AzureMonitorResponse": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "AzureMonitorSelectedConfigurations": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "AzureMonitorTableConfiguration": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "BillingMeters": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "BillingResources": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "BillingResponseListResult": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "CapabilitiesResult": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ClientGroupInfo": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ResourceAutoGenerated": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "TrackedResource": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "Cluster": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ClusterConfigurations": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ClusterCreateParametersExtended": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ClusterCreateProperties": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ClusterCreateRequestValidationParameters": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ClusterCreateValidationResult": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ClusterDefinition": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ClusterDiskEncryptionParameters": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ClusterGetProperties": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ClusterIdentity": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ClusterListPersistedScriptActionsResult": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ClusterListResult": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ClusterMonitoringRequest": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ClusterMonitoringResponse": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ClusterPatchParameters": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ClusterResizeParameters": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ComputeIsolationProperties": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ComputeProfile": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ConnectivityEndpoint": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "DataDisksGroups": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "Dimension": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "DiskBillingMeters": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "DiskEncryptionProperties": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "EncryptionInTransitProperties": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ErrorResponse": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "Errors": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ExcludedServicesConfig": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ExecuteScriptActionParameters": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "Extension": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "GatewaySettings": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "HardwareProfile": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "HostInfo": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "IPConfiguration": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "KafkaRestProperties": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "LinuxOperatingSystemProfile": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "LocalizedName": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "MetricSpecifications": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "NameAvailabilityCheckRequestParameters": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "NameAvailabilityCheckResult": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "NetworkProperties": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "Operation": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "OperationDisplay": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "OperationListResult": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "OperationProperties": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "OsProfile": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "PrivateEndpoint": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "PrivateEndpointConnection": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "PrivateEndpointConnectionListResult": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "PrivateLinkConfiguration": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "PrivateLinkResource": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "PrivateLinkResourceListResult": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "PrivateLinkServiceConnectionState": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "QuotaCapability": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "QuotaInfo": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "RegionalQuotaCapability": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "RegionsCapability": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ResourceId": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "Role": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "RuntimeScriptAction": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "RuntimeScriptActionDetail": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ScriptAction": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ScriptActionExecutionHistoryList": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ScriptActionExecutionSummary": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ScriptActionPersistedGetResponseSpec": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ScriptActionsList": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "SecurityProfile": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ServiceSpecification": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "SshProfile": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "SshPublicKey": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "StorageAccount": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "StorageProfile": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "SystemData": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "UpdateClusterIdentityCertificateParameters": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "UpdateGatewaySettingsParameters": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "Usage": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "UsagesListResult": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "UserAssignedIdentity": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ValidationErrorInfo": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "VersionsCapability": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "VersionSpec": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "VirtualNetworkProfile": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "VmSizeCompatibilityFilterV2": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "VmSizeProperty": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  }
+}

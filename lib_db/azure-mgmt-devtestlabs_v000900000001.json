@@ -1,0 +1,2872 @@
+{
+  "DevTestLabsClient": {
+    "__init__": [
+      "self",
+      "credential",
+      "subscription_id",
+      "base_url"
+    ],
+    "_send_request": [
+      "self",
+      "request"
+    ],
+    "close": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self"
+    ]
+  },
+  "VERSION": [],
+  "DevTestLabsClientConfiguration": {
+    "__init__": [
+      "self",
+      "credential",
+      "subscription_id",
+      "cloud_setting"
+    ],
+    "_configure": [
+      "self"
+    ]
+  },
+  "__version__": [],
+  "__all__": [],
+  "patch_sdk": [],
+  "_BOM": [],
+  "JSON": [],
+  "RawDeserializer": {
+    "JSON_REGEXP": [],
+    "CONTEXT_NAME": [],
+    "deserialize_from_text": [
+      "cls",
+      "data",
+      "content_type"
+    ],
+    "deserialize_from_http_generics": [
+      "cls",
+      "body_bytes",
+      "headers"
+    ]
+  },
+  "_LOGGER": [],
+  "TZ_UTC": [],
+  "_FLATTEN": [],
+  "attribute_transformer": [
+    "key",
+    "attr_desc",
+    "value"
+  ],
+  "full_restapi_key_transformer": [
+    "key",
+    "attr_desc",
+    "value"
+  ],
+  "last_restapi_key_transformer": [
+    "key",
+    "attr_desc",
+    "value"
+  ],
+  "_create_xml_node": [
+    "tag",
+    "prefix",
+    "ns"
+  ],
+  "Model": {
+    "__init__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "enable_additional_properties_sending": [
+      "cls"
+    ],
+    "is_xml_model": [
+      "cls"
+    ],
+    "_create_xml_node": [
+      "cls"
+    ],
+    "serialize": [
+      "self",
+      "keep_readonly"
+    ],
+    "as_dict": [
+      "self",
+      "keep_readonly",
+      "key_transformer"
+    ],
+    "_infer_class_models": [
+      "cls"
+    ],
+    "deserialize": [
+      "cls",
+      "data",
+      "content_type"
+    ],
+    "from_dict": [
+      "cls",
+      "data",
+      "key_extractors",
+      "content_type"
+    ],
+    "_flatten_subtype": [
+      "cls",
+      "key",
+      "objects"
+    ],
+    "_classify": [
+      "cls",
+      "response",
+      "objects"
+    ],
+    "_get_rest_key_parts": [
+      "cls",
+      "attr_key"
+    ]
+  },
+  "_decode_attribute_map_key": [
+    "key"
+  ],
+  "Serializer": {
+    "basic_types": [],
+    "_xml_basic_types_serializers": [],
+    "days": [],
+    "months": [],
+    "validation": [],
+    "__init__": [
+      "self",
+      "classes"
+    ],
+    "_serialize": [
+      "self",
+      "target_obj",
+      "data_type"
+    ],
+    "body": [
+      "self",
+      "data",
+      "data_type"
+    ],
+    "url": [
+      "self",
+      "name",
+      "data",
+      "data_type"
+    ],
+    "query": [
+      "self",
+      "name",
+      "data",
+      "data_type"
+    ],
+    "header": [
+      "self",
+      "name",
+      "data",
+      "data_type"
+    ],
+    "serialize_data": [
+      "self",
+      "data",
+      "data_type"
+    ],
+    "_get_custom_serializers": [
+      "cls",
+      "data_type"
+    ],
+    "serialize_basic": [
+      "cls",
+      "data",
+      "data_type"
+    ],
+    "serialize_unicode": [
+      "cls",
+      "data"
+    ],
+    "serialize_iter": [
+      "self",
+      "data",
+      "iter_type",
+      "div"
+    ],
+    "serialize_dict": [
+      "self",
+      "attr",
+      "dict_type"
+    ],
+    "serialize_object": [
+      "self",
+      "attr"
+    ],
+    "serialize_enum": [
+      "attr",
+      "enum_obj"
+    ],
+    "serialize_bytearray": [
+      "attr"
+    ],
+    "serialize_base64": [
+      "attr"
+    ],
+    "serialize_decimal": [
+      "attr"
+    ],
+    "serialize_long": [
+      "attr"
+    ],
+    "serialize_date": [
+      "attr"
+    ],
+    "serialize_time": [
+      "attr"
+    ],
+    "serialize_duration": [
+      "attr"
+    ],
+    "serialize_rfc": [
+      "attr"
+    ],
+    "serialize_iso": [
+      "attr"
+    ],
+    "serialize_unix": [
+      "attr"
+    ]
+  },
+  "rest_key_extractor": [
+    "attr",
+    "attr_desc",
+    "data"
+  ],
+  "rest_key_case_insensitive_extractor": [
+    "attr",
+    "attr_desc",
+    "data"
+  ],
+  "last_rest_key_extractor": [
+    "attr",
+    "attr_desc",
+    "data"
+  ],
+  "last_rest_key_case_insensitive_extractor": [
+    "attr",
+    "attr_desc",
+    "data"
+  ],
+  "attribute_key_extractor": [
+    "attr",
+    "_",
+    "data"
+  ],
+  "attribute_key_case_insensitive_extractor": [
+    "attr",
+    "_",
+    "data"
+  ],
+  "_extract_name_from_internal_type": [
+    "internal_type"
+  ],
+  "xml_key_extractor": [
+    "attr",
+    "attr_desc",
+    "data"
+  ],
+  "Deserializer": {
+    "basic_types": [],
+    "valid_date": [],
+    "__init__": [
+      "self",
+      "classes"
+    ],
+    "__call__": [
+      "self",
+      "target_obj",
+      "response_data",
+      "content_type"
+    ],
+    "_deserialize": [
+      "self",
+      "target_obj",
+      "data"
+    ],
+    "_build_additional_properties": [
+      "self",
+      "attribute_map",
+      "data"
+    ],
+    "_classify_target": [
+      "self",
+      "target",
+      "data"
+    ],
+    "failsafe_deserialize": [
+      "self",
+      "target_obj",
+      "data",
+      "content_type"
+    ],
+    "_unpack_content": [
+      "raw_data",
+      "content_type"
+    ],
+    "_instantiate_model": [
+      "self",
+      "response",
+      "attrs",
+      "additional_properties"
+    ],
+    "deserialize_data": [
+      "self",
+      "data",
+      "data_type"
+    ],
+    "deserialize_iter": [
+      "self",
+      "attr",
+      "iter_type"
+    ],
+    "deserialize_dict": [
+      "self",
+      "attr",
+      "dict_type"
+    ],
+    "deserialize_object": [
+      "self",
+      "attr"
+    ],
+    "deserialize_basic": [
+      "self",
+      "attr",
+      "data_type"
+    ],
+    "deserialize_unicode": [
+      "data"
+    ],
+    "deserialize_enum": [
+      "data",
+      "enum_obj"
+    ],
+    "deserialize_bytearray": [
+      "attr"
+    ],
+    "deserialize_base64": [
+      "attr"
+    ],
+    "deserialize_decimal": [
+      "attr"
+    ],
+    "deserialize_long": [
+      "attr"
+    ],
+    "deserialize_duration": [
+      "attr"
+    ],
+    "deserialize_date": [
+      "attr"
+    ],
+    "deserialize_time": [
+      "attr"
+    ],
+    "deserialize_rfc": [
+      "attr"
+    ],
+    "deserialize_iso": [
+      "attr"
+    ],
+    "deserialize_unix": [
+      "attr"
+    ]
+  },
+  "T": [],
+  "ClsType": [],
+  "List": [],
+  "PolicySetsOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "evaluate_policies": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name",
+      "policies"
+    ]
+  },
+  "CostsOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name",
+      "expand"
+    ],
+    "create_or_update": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name",
+      "lab_cost"
+    ]
+  },
+  "ArtifactsOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "artifact_source_name",
+      "expand",
+      "filter",
+      "top",
+      "orderby"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "artifact_source_name",
+      "name",
+      "expand"
+    ],
+    "generate_arm_template": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "artifact_source_name",
+      "name",
+      "generate_arm_template_request"
+    ]
+  },
+  "ServiceFabricsOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "user_name",
+      "expand",
+      "filter",
+      "top",
+      "orderby"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "user_name",
+      "name",
+      "expand"
+    ],
+    "_create_or_update_initial": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "user_name",
+      "name",
+      "service_fabric"
+    ],
+    "begin_create_or_update": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "user_name",
+      "name",
+      "service_fabric"
+    ],
+    "_delete_initial": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "user_name",
+      "name"
+    ],
+    "begin_delete": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "user_name",
+      "name"
+    ],
+    "update": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "user_name",
+      "name",
+      "tags"
+    ],
+    "list_applicable_schedules": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "user_name",
+      "name"
+    ],
+    "_start_initial": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "user_name",
+      "name"
+    ],
+    "begin_start": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "user_name",
+      "name"
+    ],
+    "_stop_initial": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "user_name",
+      "name"
+    ],
+    "begin_stop": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "user_name",
+      "name"
+    ]
+  },
+  "ArtifactSourcesOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "expand",
+      "filter",
+      "top",
+      "orderby"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name",
+      "expand"
+    ],
+    "create_or_update": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name",
+      "artifact_source"
+    ],
+    "delete": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name"
+    ],
+    "update": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name",
+      "tags"
+    ]
+  },
+  "NotificationChannelsOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "expand",
+      "filter",
+      "top",
+      "orderby"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name",
+      "expand"
+    ],
+    "create_or_update": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name",
+      "notification_channel"
+    ],
+    "delete": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name"
+    ],
+    "update": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name",
+      "tags"
+    ],
+    "notify": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name",
+      "event_name",
+      "json_payload"
+    ]
+  },
+  "ArmTemplatesOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "artifact_source_name",
+      "expand",
+      "filter",
+      "top",
+      "orderby"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "artifact_source_name",
+      "name",
+      "expand"
+    ]
+  },
+  "UsersOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "expand",
+      "filter",
+      "top",
+      "orderby"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name",
+      "expand"
+    ],
+    "_create_or_update_initial": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name",
+      "user"
+    ],
+    "begin_create_or_update": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name",
+      "user"
+    ],
+    "_delete_initial": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name"
+    ],
+    "begin_delete": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name"
+    ],
+    "update": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name",
+      "tags"
+    ]
+  },
+  "SchedulesOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "expand",
+      "filter",
+      "top",
+      "orderby"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name",
+      "expand"
+    ],
+    "create_or_update": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name",
+      "schedule"
+    ],
+    "delete": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name"
+    ],
+    "update": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name",
+      "tags"
+    ],
+    "_execute_initial": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name"
+    ],
+    "begin_execute": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name"
+    ],
+    "list_applicable": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name"
+    ]
+  },
+  "Operations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "location_name",
+      "name"
+    ]
+  },
+  "ServiceFabricSchedulesOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "user_name",
+      "service_fabric_name",
+      "expand",
+      "filter",
+      "top",
+      "orderby"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "user_name",
+      "service_fabric_name",
+      "name",
+      "expand"
+    ],
+    "create_or_update": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "user_name",
+      "service_fabric_name",
+      "name",
+      "schedule"
+    ],
+    "delete": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "user_name",
+      "service_fabric_name",
+      "name"
+    ],
+    "update": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "user_name",
+      "service_fabric_name",
+      "name",
+      "tags"
+    ],
+    "_execute_initial": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "user_name",
+      "service_fabric_name",
+      "name"
+    ],
+    "begin_execute": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "user_name",
+      "service_fabric_name",
+      "name"
+    ]
+  },
+  "ServiceRunnersOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name"
+    ],
+    "create_or_update": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name",
+      "service_runner"
+    ],
+    "delete": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name"
+    ]
+  },
+  "GalleryImagesOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "expand",
+      "filter",
+      "top",
+      "orderby"
+    ]
+  },
+  "VirtualMachineSchedulesOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "virtual_machine_name",
+      "expand",
+      "filter",
+      "top",
+      "orderby"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "virtual_machine_name",
+      "name",
+      "expand"
+    ],
+    "create_or_update": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "virtual_machine_name",
+      "name",
+      "schedule"
+    ],
+    "delete": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "virtual_machine_name",
+      "name"
+    ],
+    "update": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "virtual_machine_name",
+      "name",
+      "tags"
+    ],
+    "_execute_initial": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "virtual_machine_name",
+      "name"
+    ],
+    "begin_execute": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "virtual_machine_name",
+      "name"
+    ]
+  },
+  "VirtualMachinesOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "expand",
+      "filter",
+      "top",
+      "orderby"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name",
+      "expand"
+    ],
+    "_create_or_update_initial": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name",
+      "lab_virtual_machine"
+    ],
+    "begin_create_or_update": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name",
+      "lab_virtual_machine"
+    ],
+    "_delete_initial": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name"
+    ],
+    "begin_delete": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name"
+    ],
+    "update": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name",
+      "tags"
+    ],
+    "_add_data_disk_initial": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name",
+      "data_disk_properties"
+    ],
+    "begin_add_data_disk": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name",
+      "data_disk_properties"
+    ],
+    "_apply_artifacts_initial": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name",
+      "artifacts"
+    ],
+    "begin_apply_artifacts": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name",
+      "artifacts"
+    ],
+    "_claim_initial": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name"
+    ],
+    "begin_claim": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name"
+    ],
+    "_detach_data_disk_initial": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name",
+      "existing_lab_disk_id"
+    ],
+    "begin_detach_data_disk": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name",
+      "existing_lab_disk_id"
+    ],
+    "get_rdp_file_contents": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name"
+    ],
+    "list_applicable_schedules": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name"
+    ],
+    "_redeploy_initial": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name"
+    ],
+    "begin_redeploy": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name"
+    ],
+    "_resize_initial": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name",
+      "size"
+    ],
+    "begin_resize": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name",
+      "size"
+    ],
+    "_restart_initial": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name"
+    ],
+    "begin_restart": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name"
+    ],
+    "_start_initial": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name"
+    ],
+    "begin_start": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name"
+    ],
+    "_stop_initial": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name"
+    ],
+    "begin_stop": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name"
+    ],
+    "_transfer_disks_initial": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name"
+    ],
+    "begin_transfer_disks": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name"
+    ],
+    "_un_claim_initial": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name"
+    ],
+    "begin_un_claim": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name"
+    ]
+  },
+  "PoliciesOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "policy_set_name",
+      "expand",
+      "filter",
+      "top",
+      "orderby"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "policy_set_name",
+      "name",
+      "expand"
+    ],
+    "create_or_update": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "policy_set_name",
+      "name",
+      "policy"
+    ],
+    "delete": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "policy_set_name",
+      "name"
+    ],
+    "update": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "policy_set_name",
+      "name",
+      "tags"
+    ]
+  },
+  "EnvironmentsOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "user_name",
+      "expand",
+      "filter",
+      "top",
+      "orderby"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "user_name",
+      "name",
+      "expand"
+    ],
+    "_create_or_update_initial": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "user_name",
+      "name",
+      "dtl_environment"
+    ],
+    "begin_create_or_update": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "user_name",
+      "name",
+      "dtl_environment"
+    ],
+    "_delete_initial": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "user_name",
+      "name"
+    ],
+    "begin_delete": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "user_name",
+      "name"
+    ],
+    "update": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "user_name",
+      "name",
+      "tags"
+    ]
+  },
+  "VirtualNetworksOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "expand",
+      "filter",
+      "top",
+      "orderby"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name",
+      "expand"
+    ],
+    "_create_or_update_initial": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name",
+      "virtual_network"
+    ],
+    "begin_create_or_update": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name",
+      "virtual_network"
+    ],
+    "_delete_initial": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name"
+    ],
+    "begin_delete": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name"
+    ],
+    "update": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name",
+      "tags"
+    ]
+  },
+  "ProviderOperationsOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ]
+  },
+  "LabsOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "list_by_subscription": [
+      "self",
+      "expand",
+      "filter",
+      "top",
+      "orderby"
+    ],
+    "list_by_resource_group": [
+      "self",
+      "resource_group_name",
+      "expand",
+      "filter",
+      "top",
+      "orderby"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "name",
+      "expand"
+    ],
+    "_create_or_update_initial": [
+      "self",
+      "resource_group_name",
+      "name",
+      "lab"
+    ],
+    "begin_create_or_update": [
+      "self",
+      "resource_group_name",
+      "name",
+      "lab"
+    ],
+    "_delete_initial": [
+      "self",
+      "resource_group_name",
+      "name"
+    ],
+    "begin_delete": [
+      "self",
+      "resource_group_name",
+      "name"
+    ],
+    "update": [
+      "self",
+      "resource_group_name",
+      "name",
+      "tags"
+    ],
+    "_claim_any_vm_initial": [
+      "self",
+      "resource_group_name",
+      "name"
+    ],
+    "begin_claim_any_vm": [
+      "self",
+      "resource_group_name",
+      "name"
+    ],
+    "_create_environment_initial": [
+      "self",
+      "resource_group_name",
+      "name",
+      "lab_virtual_machine_creation_parameter"
+    ],
+    "begin_create_environment": [
+      "self",
+      "resource_group_name",
+      "name",
+      "lab_virtual_machine_creation_parameter"
+    ],
+    "_export_resource_usage_initial": [
+      "self",
+      "resource_group_name",
+      "name",
+      "blob_storage_absolute_sas_uri",
+      "usage_start_date"
+    ],
+    "begin_export_resource_usage": [
+      "self",
+      "resource_group_name",
+      "name",
+      "blob_storage_absolute_sas_uri",
+      "usage_start_date"
+    ],
+    "generate_upload_uri": [
+      "self",
+      "resource_group_name",
+      "name",
+      "blob_name"
+    ],
+    "_import_virtual_machine_initial": [
+      "self",
+      "resource_group_name",
+      "name",
+      "source_virtual_machine_resource_id",
+      "destination_virtual_machine_name"
+    ],
+    "begin_import_virtual_machine": [
+      "self",
+      "resource_group_name",
+      "name",
+      "source_virtual_machine_resource_id",
+      "destination_virtual_machine_name"
+    ],
+    "list_vhds": [
+      "self",
+      "resource_group_name",
+      "name"
+    ]
+  },
+  "FormulasOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "expand",
+      "filter",
+      "top",
+      "orderby"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name",
+      "expand"
+    ],
+    "_create_or_update_initial": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name",
+      "formula"
+    ],
+    "begin_create_or_update": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name",
+      "formula"
+    ],
+    "delete": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name"
+    ],
+    "update": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name",
+      "tags"
+    ]
+  },
+  "DisksOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "user_name",
+      "expand",
+      "filter",
+      "top",
+      "orderby"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "user_name",
+      "name",
+      "expand"
+    ],
+    "_create_or_update_initial": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "user_name",
+      "name",
+      "disk"
+    ],
+    "begin_create_or_update": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "user_name",
+      "name",
+      "disk"
+    ],
+    "_delete_initial": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "user_name",
+      "name"
+    ],
+    "begin_delete": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "user_name",
+      "name"
+    ],
+    "update": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "user_name",
+      "name",
+      "tags"
+    ],
+    "_attach_initial": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "user_name",
+      "name",
+      "leased_by_lab_vm_id"
+    ],
+    "begin_attach": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "user_name",
+      "name",
+      "leased_by_lab_vm_id"
+    ],
+    "_detach_initial": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "user_name",
+      "name",
+      "leased_by_lab_vm_id"
+    ],
+    "begin_detach": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "user_name",
+      "name",
+      "leased_by_lab_vm_id"
+    ]
+  },
+  "GlobalSchedulesOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "list_by_subscription": [
+      "self",
+      "expand",
+      "filter",
+      "top",
+      "orderby"
+    ],
+    "list_by_resource_group": [
+      "self",
+      "resource_group_name",
+      "expand",
+      "filter",
+      "top",
+      "orderby"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "name",
+      "expand"
+    ],
+    "create_or_update": [
+      "self",
+      "resource_group_name",
+      "name",
+      "schedule"
+    ],
+    "delete": [
+      "self",
+      "resource_group_name",
+      "name"
+    ],
+    "update": [
+      "self",
+      "resource_group_name",
+      "name",
+      "tags"
+    ],
+    "_execute_initial": [
+      "self",
+      "resource_group_name",
+      "name"
+    ],
+    "begin_execute": [
+      "self",
+      "resource_group_name",
+      "name"
+    ],
+    "_retarget_initial": [
+      "self",
+      "resource_group_name",
+      "name",
+      "current_resource_id",
+      "target_resource_id"
+    ],
+    "begin_retarget": [
+      "self",
+      "resource_group_name",
+      "name",
+      "current_resource_id",
+      "target_resource_id"
+    ]
+  },
+  "SecretsOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "user_name",
+      "expand",
+      "filter",
+      "top",
+      "orderby"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "user_name",
+      "name",
+      "expand"
+    ],
+    "_create_or_update_initial": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "user_name",
+      "name",
+      "secret"
+    ],
+    "begin_create_or_update": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "user_name",
+      "name",
+      "secret"
+    ],
+    "delete": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "user_name",
+      "name"
+    ],
+    "update": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "user_name",
+      "name",
+      "tags"
+    ]
+  },
+  "CustomImagesOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "expand",
+      "filter",
+      "top",
+      "orderby"
+    ],
+    "get": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name",
+      "expand"
+    ],
+    "_create_or_update_initial": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name",
+      "custom_image"
+    ],
+    "begin_create_or_update": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name",
+      "custom_image"
+    ],
+    "_delete_initial": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name"
+    ],
+    "begin_delete": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name"
+    ],
+    "update": [
+      "self",
+      "resource_group_name",
+      "lab_name",
+      "name",
+      "tags"
+    ]
+  },
+  "_SERIALIZER": [],
+  "build_evaluate_policies_request": [
+    "resource_group_name",
+    "lab_name",
+    "name",
+    "subscription_id"
+  ],
+  "build_get_request": [
+    "resource_group_name",
+    "lab_name",
+    "name",
+    "subscription_id"
+  ],
+  "build_create_or_update_request": [
+    "resource_group_name",
+    "lab_name",
+    "name",
+    "subscription_id"
+  ],
+  "build_list_request": [
+    "resource_group_name",
+    "lab_name",
+    "artifact_source_name",
+    "subscription_id"
+  ],
+  "build_generate_arm_template_request": [
+    "resource_group_name",
+    "lab_name",
+    "artifact_source_name",
+    "name",
+    "subscription_id"
+  ],
+  "build_delete_request": [
+    "resource_group_name",
+    "lab_name",
+    "user_name",
+    "name",
+    "subscription_id"
+  ],
+  "build_update_request": [
+    "resource_group_name",
+    "lab_name",
+    "user_name",
+    "name",
+    "subscription_id"
+  ],
+  "build_list_applicable_schedules_request": [
+    "resource_group_name",
+    "lab_name",
+    "user_name",
+    "name",
+    "subscription_id"
+  ],
+  "build_start_request": [
+    "resource_group_name",
+    "lab_name",
+    "user_name",
+    "name",
+    "subscription_id"
+  ],
+  "build_stop_request": [
+    "resource_group_name",
+    "lab_name",
+    "user_name",
+    "name",
+    "subscription_id"
+  ],
+  "build_notify_request": [
+    "resource_group_name",
+    "lab_name",
+    "name",
+    "subscription_id"
+  ],
+  "build_execute_request": [
+    "resource_group_name",
+    "lab_name",
+    "name",
+    "subscription_id"
+  ],
+  "build_list_applicable_request": [
+    "resource_group_name",
+    "lab_name",
+    "name",
+    "subscription_id"
+  ],
+  "build_add_data_disk_request": [
+    "resource_group_name",
+    "lab_name",
+    "name",
+    "subscription_id"
+  ],
+  "build_apply_artifacts_request": [
+    "resource_group_name",
+    "lab_name",
+    "name",
+    "subscription_id"
+  ],
+  "build_claim_request": [
+    "resource_group_name",
+    "lab_name",
+    "name",
+    "subscription_id"
+  ],
+  "build_detach_data_disk_request": [
+    "resource_group_name",
+    "lab_name",
+    "name",
+    "subscription_id"
+  ],
+  "build_get_rdp_file_contents_request": [
+    "resource_group_name",
+    "lab_name",
+    "name",
+    "subscription_id"
+  ],
+  "build_redeploy_request": [
+    "resource_group_name",
+    "lab_name",
+    "name",
+    "subscription_id"
+  ],
+  "build_resize_request": [
+    "resource_group_name",
+    "lab_name",
+    "name",
+    "subscription_id"
+  ],
+  "build_restart_request": [
+    "resource_group_name",
+    "lab_name",
+    "name",
+    "subscription_id"
+  ],
+  "build_transfer_disks_request": [
+    "resource_group_name",
+    "lab_name",
+    "name",
+    "subscription_id"
+  ],
+  "build_un_claim_request": [
+    "resource_group_name",
+    "lab_name",
+    "name",
+    "subscription_id"
+  ],
+  "build_list_by_subscription_request": [
+    "subscription_id"
+  ],
+  "build_list_by_resource_group_request": [
+    "resource_group_name",
+    "subscription_id"
+  ],
+  "build_claim_any_vm_request": [
+    "resource_group_name",
+    "name",
+    "subscription_id"
+  ],
+  "build_create_environment_request": [
+    "resource_group_name",
+    "name",
+    "subscription_id"
+  ],
+  "build_export_resource_usage_request": [
+    "resource_group_name",
+    "name",
+    "subscription_id"
+  ],
+  "build_generate_upload_uri_request": [
+    "resource_group_name",
+    "name",
+    "subscription_id"
+  ],
+  "build_import_virtual_machine_request": [
+    "resource_group_name",
+    "name",
+    "subscription_id"
+  ],
+  "build_list_vhds_request": [
+    "resource_group_name",
+    "name",
+    "subscription_id"
+  ],
+  "build_attach_request": [
+    "resource_group_name",
+    "lab_name",
+    "user_name",
+    "name",
+    "subscription_id"
+  ],
+  "build_detach_request": [
+    "resource_group_name",
+    "lab_name",
+    "user_name",
+    "name",
+    "subscription_id"
+  ],
+  "build_retarget_request": [
+    "resource_group_name",
+    "name",
+    "subscription_id"
+  ],
+  "CostThresholdStatus": {
+    "ENABLED": [],
+    "DISABLED": []
+  },
+  "CostType": {
+    "UNAVAILABLE": [],
+    "REPORTED": [],
+    "PROJECTED": []
+  },
+  "CustomImageOsType": {
+    "WINDOWS": [],
+    "LINUX": [],
+    "NONE": []
+  },
+  "EnableStatus": {
+    "ENABLED": [],
+    "DISABLED": []
+  },
+  "EnvironmentPermission": {
+    "READER": [],
+    "CONTRIBUTOR": []
+  },
+  "FileUploadOptions": {
+    "UPLOAD_FILES_AND_GENERATE_SAS_TOKENS": [],
+    "NONE": []
+  },
+  "HostCachingOptions": {
+    "NONE": [],
+    "READ_ONLY": [],
+    "READ_WRITE": []
+  },
+  "HttpStatusCode": {
+    "CONTINUE": [],
+    "SWITCHING_PROTOCOLS": [],
+    "OK": [],
+    "CREATED": [],
+    "ACCEPTED": [],
+    "NON_AUTHORITATIVE_INFORMATION": [],
+    "NO_CONTENT": [],
+    "RESET_CONTENT": [],
+    "PARTIAL_CONTENT": [],
+    "MULTIPLE_CHOICES": [],
+    "AMBIGUOUS": [],
+    "MOVED_PERMANENTLY": [],
+    "MOVED": [],
+    "FOUND": [],
+    "REDIRECT": [],
+    "SEE_OTHER": [],
+    "REDIRECT_METHOD": [],
+    "NOT_MODIFIED": [],
+    "USE_PROXY": [],
+    "UNUSED": [],
+    "TEMPORARY_REDIRECT": [],
+    "REDIRECT_KEEP_VERB": [],
+    "BAD_REQUEST": [],
+    "UNAUTHORIZED": [],
+    "PAYMENT_REQUIRED": [],
+    "FORBIDDEN": [],
+    "NOT_FOUND": [],
+    "METHOD_NOT_ALLOWED": [],
+    "NOT_ACCEPTABLE": [],
+    "PROXY_AUTHENTICATION_REQUIRED": [],
+    "REQUEST_TIMEOUT": [],
+    "CONFLICT": [],
+    "GONE": [],
+    "LENGTH_REQUIRED": [],
+    "PRECONDITION_FAILED": [],
+    "REQUEST_ENTITY_TOO_LARGE": [],
+    "REQUEST_URI_TOO_LONG": [],
+    "UNSUPPORTED_MEDIA_TYPE": [],
+    "REQUESTED_RANGE_NOT_SATISFIABLE": [],
+    "EXPECTATION_FAILED": [],
+    "UPGRADE_REQUIRED": [],
+    "INTERNAL_SERVER_ERROR": [],
+    "NOT_IMPLEMENTED": [],
+    "BAD_GATEWAY": [],
+    "SERVICE_UNAVAILABLE": [],
+    "GATEWAY_TIMEOUT": [],
+    "HTTP_VERSION_NOT_SUPPORTED": []
+  },
+  "LinuxOsState": {
+    "NON_DEPROVISIONED": [],
+    "DEPROVISION_REQUESTED": [],
+    "DEPROVISION_APPLIED": []
+  },
+  "ManagedIdentityType": {
+    "NONE": [],
+    "SYSTEM_ASSIGNED": [],
+    "USER_ASSIGNED": [],
+    "SYSTEM_ASSIGNED_USER_ASSIGNED": []
+  },
+  "NotificationChannelEventType": {
+    "AUTO_SHUTDOWN": [],
+    "COST": []
+  },
+  "PolicyEvaluatorType": {
+    "ALLOWED_VALUES_POLICY": [],
+    "MAX_VALUE_POLICY": []
+  },
+  "PolicyFactName": {
+    "USER_OWNED_LAB_VM_COUNT": [],
+    "USER_OWNED_LAB_PREMIUM_VM_COUNT": [],
+    "LAB_VM_COUNT": [],
+    "LAB_PREMIUM_VM_COUNT": [],
+    "LAB_VM_SIZE": [],
+    "GALLERY_IMAGE": [],
+    "USER_OWNED_LAB_VM_COUNT_IN_SUBNET": [],
+    "LAB_TARGET_COST": [],
+    "ENVIRONMENT_TEMPLATE": [],
+    "SCHEDULE_EDIT_PERMISSION": []
+  },
+  "PolicyStatus": {
+    "ENABLED": [],
+    "DISABLED": []
+  },
+  "PremiumDataDisk": {
+    "DISABLED": [],
+    "ENABLED": []
+  },
+  "ReportingCycleType": {
+    "CALENDAR_MONTH": [],
+    "CUSTOM": []
+  },
+  "SourceControlType": {
+    "VSO_GIT": [],
+    "GIT_HUB": [],
+    "STORAGE_ACCOUNT": []
+  },
+  "StorageType": {
+    "STANDARD": [],
+    "PREMIUM": [],
+    "STANDARD_SSD": []
+  },
+  "TargetCostStatus": {
+    "ENABLED": [],
+    "DISABLED": []
+  },
+  "TransportProtocol": {
+    "TCP": [],
+    "UDP": []
+  },
+  "UsagePermissionType": {
+    "DEFAULT": [],
+    "DENY": [],
+    "ALLOW": []
+  },
+  "VirtualMachineCreationSource": {
+    "FROM_CUSTOM_IMAGE": [],
+    "FROM_GALLERY_IMAGE": [],
+    "FROM_SHARED_GALLERY_IMAGE": []
+  },
+  "WindowsOsState": {
+    "NON_SYSPREPPED": [],
+    "SYSPREP_REQUESTED": [],
+    "SYSPREP_APPLIED": []
+  },
+  "Resource": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ApplicableSchedule": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "UpdateResource": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ApplicableScheduleFragment": {},
+  "ApplyArtifactsRequest": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ArmTemplate": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ArmTemplateInfo": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ArmTemplateList": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ArmTemplateParameterProperties": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "Artifact": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ArtifactDeploymentStatusProperties": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ArtifactInstallProperties": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ArtifactList": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ArtifactParameterProperties": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ArtifactSource": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ArtifactSourceFragment": {},
+  "ArtifactSourceList": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "AttachDiskProperties": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "AttachNewDataDiskOptions": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "BulkCreationParameters": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "CloudErrorBody": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ComputeDataDisk": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ComputeVmInstanceViewStatus": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ComputeVmProperties": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "CostThresholdProperties": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "CustomImage": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "CustomImageFragment": {},
+  "CustomImageList": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "CustomImagePropertiesCustom": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "CustomImagePropertiesFromPlan": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "CustomImagePropertiesFromVm": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "DataDiskProperties": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "DataDiskStorageTypeInfo": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "DayDetails": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "DetachDataDiskProperties": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "DetachDiskProperties": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "Disk": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "DiskFragment": {},
+  "DiskList": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "DtlEnvironment": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "DtlEnvironmentFragment": {},
+  "DtlEnvironmentList": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "EnvironmentDeploymentProperties": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "EvaluatePoliciesProperties": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "EvaluatePoliciesRequest": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "EvaluatePoliciesResponse": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "Event": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ExportResourceUsageParameters": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ExternalSubnet": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "Formula": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "FormulaFragment": {},
+  "FormulaList": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "FormulaPropertiesFromVm": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "GalleryImage": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "GalleryImageList": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "GalleryImageReference": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "GenerateArmTemplateRequest": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "GenerateUploadUriParameter": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "GenerateUploadUriResponse": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "HourDetails": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "IdentityProperties": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ImportLabVirtualMachineRequest": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "InboundNatRule": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "Lab": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "LabAnnouncementProperties": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "LabCost": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "LabCostDetailsProperties": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "LabCostSummaryProperties": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "LabFragment": {},
+  "LabList": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "LabResourceCostProperties": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "LabSupportProperties": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "LabVhd": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "LabVhdList": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "LabVirtualMachine": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "LabVirtualMachineCreationParameter": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "LabVirtualMachineFragment": {},
+  "LabVirtualMachineList": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "LinuxOsInfo": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "NetworkInterfaceProperties": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "NotificationChannel": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "NotificationChannelFragment": {},
+  "NotificationChannelList": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "NotificationSettings": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "NotifyParameters": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "OperationError": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "OperationMetadata": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "OperationMetadataDisplay": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "OperationResult": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ParameterInfo": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ParametersValueFileInfo": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "PercentageCostThresholdProperties": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "Policy": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "PolicyFragment": {},
+  "PolicyList": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "PolicySetResult": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "PolicyViolation": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "Port": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ProviderOperationResult": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "RdpConnection": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ResizeLabVirtualMachineProperties": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "RetargetScheduleProperties": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "Schedule": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ScheduleCreationParameter": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ScheduleFragment": {},
+  "ScheduleList": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "Secret": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "SecretFragment": {},
+  "SecretList": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ServiceFabric": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ServiceFabricFragment": {},
+  "ServiceFabricList": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ServiceRunner": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ServiceRunnerList": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "SharedPublicIpAddressConfiguration": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ShutdownNotificationContent": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "Subnet": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "SubnetOverride": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "SubnetSharedPublicIpAddressConfiguration": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "TargetCostProperties": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "User": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "UserFragment": {},
+  "UserIdentity": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "UserList": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "UserSecretStore": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "VirtualNetwork": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "VirtualNetworkFragment": {},
+  "VirtualNetworkList": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "WeekDetails": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "WindowsOsInfo": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  }
+}
