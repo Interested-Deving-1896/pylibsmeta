@@ -1,0 +1,5652 @@
+{
+  "AmazonApi": {
+    "__init__": [
+      "self",
+      "key",
+      "secret",
+      "tag",
+      "country",
+      "throttling"
+    ],
+    "get_items": [
+      "self",
+      "items",
+      "condition",
+      "merchant",
+      "currency_of_preference",
+      "languages_of_preference",
+      "include_unavailable"
+    ],
+    "search_items": [
+      "self",
+      "item_count",
+      "item_page",
+      "actor",
+      "artist",
+      "author",
+      "brand",
+      "keywords",
+      "title",
+      "availability",
+      "browse_node_id",
+      "condition",
+      "currency_of_preference",
+      "delivery_flags",
+      "languages_of_preference",
+      "merchant",
+      "max_price",
+      "min_price",
+      "min_saving_percent",
+      "min_reviews_rating",
+      "search_index",
+      "sort_by"
+    ],
+    "get_variations": [
+      "self",
+      "asin",
+      "variation_count",
+      "variation_page",
+      "condition",
+      "currency_of_preference",
+      "languages_of_preference",
+      "merchant"
+    ],
+    "get_browse_nodes": [
+      "self",
+      "browse_node_ids",
+      "languages_of_preference"
+    ],
+    "_throttle": [
+      "self"
+    ]
+  },
+  "__author__": [],
+  "__all__": [],
+  "AmazonError": {
+    "__init__": [
+      "self",
+      "reason"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "AsinNotFound": {},
+  "AssociateValidationError": {},
+  "InvalidArgument": {},
+  "InvalidPartnerTag": {},
+  "ItemsNotFound": {},
+  "MalformedRequest": {},
+  "RequestError": {},
+  "TooManyRequests": {},
+  "sort_items": [
+    "items",
+    "items_ids"
+  ],
+  "MAX_PAGINATION_VALUE": [],
+  "get_items_ids": [
+    "items"
+  ],
+  "check_search_args": [],
+  "check_search_mandatory_args": [],
+  "check_search_pagination_args": [],
+  "check_variations_args": [],
+  "check_browse_nodes_args": [],
+  "HTTP_TOO_MANY_REQUESTS": [],
+  "get_items_request": [
+    "amazon_api",
+    "asin_chunk"
+  ],
+  "get_items_response": [
+    "amazon_api",
+    "request"
+  ],
+  "get_search_items_request": [
+    "amazon_api"
+  ],
+  "get_search_items_response": [
+    "amazon_api",
+    "request"
+  ],
+  "get_variations_request": [
+    "amazon_api"
+  ],
+  "get_variations_response": [
+    "amazon_api",
+    "request"
+  ],
+  "get_browse_nodes_request": [
+    "amazon_api"
+  ],
+  "get_browse_nodes_response": [
+    "amazon_api",
+    "request"
+  ],
+  "_get_request_resources": [
+    "resource_class"
+  ],
+  "_manage_response_exceptions": [
+    "error"
+  ],
+  "get_list_chunks": [
+    "full_list",
+    "chunk_size"
+  ],
+  "get_asin": [
+    "text"
+  ],
+  "ApiPrice": {},
+  "ApiVariationDimension": {},
+  "ApiVariationPrice": {},
+  "ApiVariationSummary": {},
+  "VariationsResult": {},
+  "BrowseNodeChild": {},
+  "BrowseNodeAncestor": {},
+  "BrowseNode": {},
+  "SearchResult": {},
+  "CountryCode": [],
+  "Country": {},
+  "ApiLabelLocale": {},
+  "ApiMultiValuedAttributeStr": {},
+  "ApiDisplayValuesType": {},
+  "ApiMultiValuedAttributeType": {},
+  "ApiUnitBasedAttribute": {},
+  "ApiSingleStringValuedAttribute": {},
+  "ApiSingleBooleanValuedAttribute": {},
+  "ApiSingleIntegerValuedAttribute": {},
+  "ApiImageSize": {},
+  "ApiImageType": {},
+  "ApiImages": {},
+  "ApiByLineInfo": {},
+  "ApiClassifications": {},
+  "ApiContentInfo": {},
+  "ApiContentRating": {},
+  "ApiExternalIds": {},
+  "ApiFeatures": {},
+  "ApiManufactureInfo": {},
+  "ApiItemDimensions": {},
+  "ApiProductInfo": {},
+  "ApiTechnicalInfo": {},
+  "ApiTradeInPrice": {},
+  "ApiTradeInInfo": {},
+  "ApiItemInfo": {},
+  "ApiOfferAvailability": {},
+  "ApiOfferConditionInfo": {},
+  "ApiOfferSubCondition": {},
+  "ApiOfferConditionNote": {},
+  "ApiOfferCondition": {},
+  "ApiOfferDeliveryInfo": {},
+  "ApiOfferLoyaltyPoints": {},
+  "ApiOfferMerchantInfo": {},
+  "ApiOfferSavings": {},
+  "ApiOfferPrice": {},
+  "ApiOfferProgramEligibility": {},
+  "ApiPromotion": {},
+  "ApiListings": {},
+  "ApiOffers": {},
+  "ApiBrowseNode": {},
+  "ApiWebsiteSalesRank": {},
+  "ApiBrowseNodeInfo": {},
+  "ApiMoney": {},
+  "ApiOfferAvailabilityV2": {},
+  "ApiOfferConditionV2": {},
+  "ApiDealDetails": {},
+  "ApiOfferLoyaltyPointsV2": {},
+  "ApiOfferMerchantInfoV2": {},
+  "ApiOfferSavingBasis": {},
+  "ApiOfferSavingsV2": {},
+  "ApiOfferPriceV2": {},
+  "ApiListingsV2": {},
+  "ApiOffersV2": {},
+  "Item": {},
+  "ApiClient": {
+    "PRIMITIVE_TYPES": [],
+    "NATIVE_TYPES_MAPPING": [],
+    "__init__": [
+      "self",
+      "access_key",
+      "secret_key",
+      "host",
+      "region",
+      "configuration",
+      "header_name",
+      "header_value",
+      "cookie"
+    ],
+    "__del__": [
+      "self"
+    ],
+    "user_agent": [
+      "self",
+      "value"
+    ],
+    "set_default_header": [
+      "self",
+      "header_name",
+      "header_value"
+    ],
+    "__call_api": [
+      "self",
+      "resource_path",
+      "method",
+      "api_name",
+      "path_params",
+      "query_params",
+      "header_params",
+      "body",
+      "post_params",
+      "files",
+      "response_type",
+      "auth_settings",
+      "_return_http_data_only",
+      "collection_formats",
+      "_preload_content",
+      "_request_timeout"
+    ],
+    "sanitize_for_serialization": [
+      "self",
+      "obj"
+    ],
+    "deserialize": [
+      "self",
+      "response",
+      "response_type"
+    ],
+    "__deserialize": [
+      "self",
+      "data",
+      "klass"
+    ],
+    "call_api": [
+      "self",
+      "resource_path",
+      "method",
+      "api_name",
+      "path_params",
+      "query_params",
+      "header_params",
+      "body",
+      "post_params",
+      "files",
+      "response_type",
+      "auth_settings",
+      "async_req",
+      "_return_http_data_only",
+      "collection_formats",
+      "_preload_content",
+      "_request_timeout"
+    ],
+    "request": [
+      "self",
+      "method",
+      "url",
+      "query_params",
+      "headers",
+      "post_params",
+      "body",
+      "_preload_content",
+      "_request_timeout"
+    ],
+    "parameters_to_tuples": [
+      "self",
+      "params",
+      "collection_formats"
+    ],
+    "prepare_post_parameters": [
+      "self",
+      "post_params",
+      "files"
+    ],
+    "select_header_accept": [
+      "self",
+      "accepts"
+    ],
+    "select_header_content_type": [
+      "self",
+      "content_types"
+    ],
+    "get_amz_date": [
+      "self",
+      "utc_timestamp"
+    ],
+    "update_params_for_auth": [
+      "self",
+      "headers",
+      "querys",
+      "auth_settings",
+      "api_name",
+      "method",
+      "body",
+      "resource_path"
+    ],
+    "__deserialize_file": [
+      "self",
+      "response"
+    ],
+    "__deserialize_primitive": [
+      "self",
+      "data",
+      "klass"
+    ],
+    "__deserialize_object": [
+      "self",
+      "value"
+    ],
+    "__deserialize_date": [
+      "self",
+      "string"
+    ],
+    "__deserialize_datatime": [
+      "self",
+      "string"
+    ],
+    "__deserialize_model": [
+      "self",
+      "data",
+      "klass"
+    ]
+  },
+  "logger": [],
+  "RESTResponse": {
+    "__init__": [
+      "self",
+      "resp"
+    ],
+    "getheaders": [
+      "self"
+    ],
+    "getheader": [
+      "self",
+      "name",
+      "default"
+    ]
+  },
+  "RESTClientObject": {
+    "__init__": [
+      "self",
+      "configuration",
+      "pools_size",
+      "maxsize"
+    ],
+    "request": [
+      "self",
+      "method",
+      "url",
+      "query_params",
+      "headers",
+      "body",
+      "post_params",
+      "_preload_content",
+      "_request_timeout"
+    ],
+    "GET": [
+      "self",
+      "url",
+      "headers",
+      "query_params",
+      "_preload_content",
+      "_request_timeout"
+    ],
+    "HEAD": [
+      "self",
+      "url",
+      "headers",
+      "query_params",
+      "_preload_content",
+      "_request_timeout"
+    ],
+    "OPTIONS": [
+      "self",
+      "url",
+      "headers",
+      "query_params",
+      "post_params",
+      "body",
+      "_preload_content",
+      "_request_timeout"
+    ],
+    "DELETE": [
+      "self",
+      "url",
+      "headers",
+      "query_params",
+      "body",
+      "_preload_content",
+      "_request_timeout"
+    ],
+    "POST": [
+      "self",
+      "url",
+      "headers",
+      "query_params",
+      "post_params",
+      "body",
+      "_preload_content",
+      "_request_timeout"
+    ],
+    "PUT": [
+      "self",
+      "url",
+      "headers",
+      "query_params",
+      "post_params",
+      "body",
+      "_preload_content",
+      "_request_timeout"
+    ],
+    "PATCH": [
+      "self",
+      "url",
+      "headers",
+      "query_params",
+      "post_params",
+      "body",
+      "_preload_content",
+      "_request_timeout"
+    ]
+  },
+  "ApiException": {
+    "__init__": [
+      "self",
+      "status",
+      "reason",
+      "http_resp"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "TypeWithDefault": {
+    "__init__": [
+      "cls",
+      "name",
+      "bases",
+      "dct"
+    ],
+    "__call__": [
+      "cls"
+    ],
+    "set_default": [
+      "cls",
+      "default"
+    ]
+  },
+  "Configuration": {
+    "__init__": [
+      "self",
+      "connection_pool_maxsize"
+    ],
+    "logger_file": [
+      "self",
+      "value"
+    ],
+    "debug": [
+      "self",
+      "value"
+    ],
+    "logger_format": [
+      "self",
+      "value"
+    ],
+    "get_api_key_with_prefix": [
+      "self",
+      "identifier"
+    ],
+    "auth_settings": [
+      "self"
+    ],
+    "to_debug_report": [
+      "self"
+    ]
+  },
+  "AWSV4Auth": {
+    "__init__": [
+      "self",
+      "access_key",
+      "secret_key",
+      "host",
+      "region",
+      "service",
+      "method_name",
+      "timestamp",
+      "headers",
+      "path",
+      "payload"
+    ],
+    "get_headers": [
+      "self"
+    ],
+    "prepare_canonical_url": [
+      "self"
+    ],
+    "prepare_string_to_sign": [
+      "self",
+      "canonical_request"
+    ],
+    "sign": [
+      "self",
+      "key",
+      "msg"
+    ],
+    "get_signature_key": [
+      "self",
+      "key",
+      "date_stamp",
+      "region_name",
+      "service_name"
+    ],
+    "get_signature": [
+      "self",
+      "signing_key",
+      "string_to_sign"
+    ]
+  },
+  "DefaultApi": {
+    "__init__": [
+      "self",
+      "access_key",
+      "secret_key",
+      "host",
+      "region",
+      "api_client"
+    ],
+    "get_browse_nodes": [
+      "self",
+      "get_browse_nodes_request"
+    ],
+    "get_browse_nodes_with_http_info": [
+      "self",
+      "get_browse_nodes_request"
+    ],
+    "get_items": [
+      "self",
+      "get_items_request"
+    ],
+    "get_items_with_http_info": [
+      "self",
+      "get_items_request"
+    ],
+    "get_variations": [
+      "self",
+      "get_variations_request"
+    ],
+    "get_variations_with_http_info": [
+      "self",
+      "get_variations_request"
+    ],
+    "search_items": [
+      "self",
+      "search_items_request"
+    ],
+    "search_items_with_http_info": [
+      "self",
+      "search_items_request"
+    ]
+  },
+  "GetBrowseNodesRequest": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "browse_node_ids",
+      "languages_of_preference",
+      "marketplace",
+      "partner_tag",
+      "partner_type",
+      "resources"
+    ],
+    "browse_node_ids": [
+      "self",
+      "browse_node_ids"
+    ],
+    "languages_of_preference": [
+      "self",
+      "languages_of_preference"
+    ],
+    "marketplace": [
+      "self",
+      "marketplace"
+    ],
+    "partner_tag": [
+      "self",
+      "partner_tag"
+    ],
+    "partner_type": [
+      "self",
+      "partner_type"
+    ],
+    "resources": [
+      "self",
+      "resources"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "ImageSize": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "url",
+      "height",
+      "width"
+    ],
+    "url": [
+      "self",
+      "url"
+    ],
+    "height": [
+      "self",
+      "height"
+    ],
+    "width": [
+      "self",
+      "width"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "ImageType": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "small",
+      "medium",
+      "large"
+    ],
+    "small": [
+      "self",
+      "small"
+    ],
+    "medium": [
+      "self",
+      "medium"
+    ],
+    "large": [
+      "self",
+      "large"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "ItemInfo": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "by_line_info",
+      "classifications",
+      "content_info",
+      "content_rating",
+      "external_ids",
+      "features",
+      "manufacture_info",
+      "product_info",
+      "technical_info",
+      "title",
+      "trade_in_info"
+    ],
+    "by_line_info": [
+      "self",
+      "by_line_info"
+    ],
+    "classifications": [
+      "self",
+      "classifications"
+    ],
+    "content_info": [
+      "self",
+      "content_info"
+    ],
+    "content_rating": [
+      "self",
+      "content_rating"
+    ],
+    "external_ids": [
+      "self",
+      "external_ids"
+    ],
+    "features": [
+      "self",
+      "features"
+    ],
+    "manufacture_info": [
+      "self",
+      "manufacture_info"
+    ],
+    "product_info": [
+      "self",
+      "product_info"
+    ],
+    "technical_info": [
+      "self",
+      "technical_info"
+    ],
+    "title": [
+      "self",
+      "title"
+    ],
+    "trade_in_info": [
+      "self",
+      "trade_in_info"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "ErrorData": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "code",
+      "message"
+    ],
+    "code": [
+      "self",
+      "code"
+    ],
+    "message": [
+      "self",
+      "message"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "ItemsResult": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "items"
+    ],
+    "items": [
+      "self",
+      "items"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "OfferListingV2": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "availability",
+      "condition",
+      "deal_details",
+      "is_buy_box_winner",
+      "loyalty_points",
+      "merchant_info",
+      "price",
+      "type",
+      "violates_map"
+    ],
+    "availability": [
+      "self",
+      "availability"
+    ],
+    "condition": [
+      "self",
+      "condition"
+    ],
+    "deal_details": [
+      "self",
+      "deal_details"
+    ],
+    "is_buy_box_winner": [
+      "self",
+      "is_buy_box_winner"
+    ],
+    "loyalty_points": [
+      "self",
+      "loyalty_points"
+    ],
+    "merchant_info": [
+      "self",
+      "merchant_info"
+    ],
+    "price": [
+      "self",
+      "price"
+    ],
+    "type": [
+      "self",
+      "type"
+    ],
+    "violates_map": [
+      "self",
+      "violates_map"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "MaxPrice": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "SearchItemsResponse": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "search_result",
+      "errors"
+    ],
+    "search_result": [
+      "self",
+      "search_result"
+    ],
+    "errors": [
+      "self",
+      "errors"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "OfferCount": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "BrowseNodeInfo": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "browse_nodes",
+      "website_sales_rank"
+    ],
+    "browse_nodes": [
+      "self",
+      "browse_nodes"
+    ],
+    "website_sales_rank": [
+      "self",
+      "website_sales_rank"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "OfferListing": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "availability",
+      "condition",
+      "delivery_info",
+      "id",
+      "is_buy_box_winner",
+      "loyalty_points",
+      "merchant_info",
+      "price",
+      "program_eligibility",
+      "promotions",
+      "saving_basis",
+      "violates_map"
+    ],
+    "availability": [
+      "self",
+      "availability"
+    ],
+    "condition": [
+      "self",
+      "condition"
+    ],
+    "delivery_info": [
+      "self",
+      "delivery_info"
+    ],
+    "id": [
+      "self",
+      "id"
+    ],
+    "is_buy_box_winner": [
+      "self",
+      "is_buy_box_winner"
+    ],
+    "loyalty_points": [
+      "self",
+      "loyalty_points"
+    ],
+    "merchant_info": [
+      "self",
+      "merchant_info"
+    ],
+    "price": [
+      "self",
+      "price"
+    ],
+    "program_eligibility": [
+      "self",
+      "program_eligibility"
+    ],
+    "promotions": [
+      "self",
+      "promotions"
+    ],
+    "saving_basis": [
+      "self",
+      "saving_basis"
+    ],
+    "violates_map": [
+      "self",
+      "violates_map"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "SearchItemsRequest": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "actor",
+      "artist",
+      "author",
+      "availability",
+      "brand",
+      "browse_node_id",
+      "condition",
+      "currency_of_preference",
+      "delivery_flags",
+      "item_count",
+      "item_page",
+      "keywords",
+      "languages_of_preference",
+      "marketplace",
+      "max_price",
+      "merchant",
+      "min_price",
+      "min_reviews_rating",
+      "min_saving_percent",
+      "offer_count",
+      "partner_tag",
+      "partner_type",
+      "properties",
+      "resources",
+      "search_index",
+      "sort_by",
+      "title"
+    ],
+    "actor": [
+      "self",
+      "actor"
+    ],
+    "artist": [
+      "self",
+      "artist"
+    ],
+    "author": [
+      "self",
+      "author"
+    ],
+    "availability": [
+      "self",
+      "availability"
+    ],
+    "brand": [
+      "self",
+      "brand"
+    ],
+    "browse_node_id": [
+      "self",
+      "browse_node_id"
+    ],
+    "condition": [
+      "self",
+      "condition"
+    ],
+    "currency_of_preference": [
+      "self",
+      "currency_of_preference"
+    ],
+    "delivery_flags": [
+      "self",
+      "delivery_flags"
+    ],
+    "item_count": [
+      "self",
+      "item_count"
+    ],
+    "item_page": [
+      "self",
+      "item_page"
+    ],
+    "keywords": [
+      "self",
+      "keywords"
+    ],
+    "languages_of_preference": [
+      "self",
+      "languages_of_preference"
+    ],
+    "marketplace": [
+      "self",
+      "marketplace"
+    ],
+    "max_price": [
+      "self",
+      "max_price"
+    ],
+    "merchant": [
+      "self",
+      "merchant"
+    ],
+    "min_price": [
+      "self",
+      "min_price"
+    ],
+    "min_reviews_rating": [
+      "self",
+      "min_reviews_rating"
+    ],
+    "min_saving_percent": [
+      "self",
+      "min_saving_percent"
+    ],
+    "offer_count": [
+      "self",
+      "offer_count"
+    ],
+    "partner_tag": [
+      "self",
+      "partner_tag"
+    ],
+    "partner_type": [
+      "self",
+      "partner_type"
+    ],
+    "properties": [
+      "self",
+      "properties"
+    ],
+    "resources": [
+      "self",
+      "resources"
+    ],
+    "search_index": [
+      "self",
+      "search_index"
+    ],
+    "sort_by": [
+      "self",
+      "sort_by"
+    ],
+    "title": [
+      "self",
+      "title"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "OfferType": {
+    "SUBSCRIBE_AND_SAVE": [],
+    "LIGHTNING_DEAL": [],
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "GetBrowseNodesResource": {
+    "ANCESTOR": [],
+    "CHILDREN": [],
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "OfferConditionV2": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "value",
+      "sub_condition",
+      "condition_note"
+    ],
+    "value": [
+      "self",
+      "value"
+    ],
+    "sub_condition": [
+      "self",
+      "sub_condition"
+    ],
+    "condition_note": [
+      "self",
+      "condition_note"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "TradeInInfo": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "is_eligible_for_trade_in",
+      "price"
+    ],
+    "is_eligible_for_trade_in": [
+      "self",
+      "is_eligible_for_trade_in"
+    ],
+    "price": [
+      "self",
+      "price"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "ContentRating": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "audience_rating"
+    ],
+    "audience_rating": [
+      "self",
+      "audience_rating"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "ProductAdvertisingAPIClientException": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "errors"
+    ],
+    "errors": [
+      "self",
+      "errors"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "TechnicalInfo": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "energy_efficiency_class",
+      "formats"
+    ],
+    "energy_efficiency_class": [
+      "self",
+      "energy_efficiency_class"
+    ],
+    "formats": [
+      "self",
+      "formats"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "MinPrice": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "OfferShippingCharge": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "amount",
+      "currency",
+      "display_amount",
+      "is_rate_tax_inclusive",
+      "type"
+    ],
+    "amount": [
+      "self",
+      "amount"
+    ],
+    "currency": [
+      "self",
+      "currency"
+    ],
+    "display_amount": [
+      "self",
+      "display_amount"
+    ],
+    "is_rate_tax_inclusive": [
+      "self",
+      "is_rate_tax_inclusive"
+    ],
+    "type": [
+      "self",
+      "type"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "SavingBasisType": {
+    "LIST_PRICE": [],
+    "LOWEST_PRICE": [],
+    "LOWEST_PRICE_STRIKETHROUGH": [],
+    "WAS_PRICE": [],
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "BigDecimal": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "ItemIdType": {
+    "ASIN": [],
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "ProductInfo": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "color",
+      "is_adult_product",
+      "item_dimensions",
+      "release_date",
+      "size",
+      "unit_count"
+    ],
+    "color": [
+      "self",
+      "color"
+    ],
+    "is_adult_product": [
+      "self",
+      "is_adult_product"
+    ],
+    "item_dimensions": [
+      "self",
+      "item_dimensions"
+    ],
+    "release_date": [
+      "self",
+      "release_date"
+    ],
+    "size": [
+      "self",
+      "size"
+    ],
+    "unit_count": [
+      "self",
+      "unit_count"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "ProductAdvertisingAPIServiceException": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "message"
+    ],
+    "message": [
+      "self",
+      "message"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "OfferSavingBasis": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "money",
+      "saving_basis_type",
+      "saving_basis_type_label"
+    ],
+    "money": [
+      "self",
+      "money"
+    ],
+    "saving_basis_type": [
+      "self",
+      "saving_basis_type"
+    ],
+    "saving_basis_type_label": [
+      "self",
+      "saving_basis_type_label"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "OfferConditionNote": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "locale",
+      "value"
+    ],
+    "locale": [
+      "self",
+      "locale"
+    ],
+    "value": [
+      "self",
+      "value"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "SearchRefinements": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "browse_node",
+      "other_refinements",
+      "search_index"
+    ],
+    "browse_node": [
+      "self",
+      "browse_node"
+    ],
+    "other_refinements": [
+      "self",
+      "other_refinements"
+    ],
+    "search_index": [
+      "self",
+      "search_index"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "MultiValuedAttribute": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "display_values",
+      "label",
+      "locale"
+    ],
+    "display_values": [
+      "self",
+      "display_values"
+    ],
+    "label": [
+      "self",
+      "label"
+    ],
+    "locale": [
+      "self",
+      "locale"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "DeliveryFlag": {
+    "AMAZONGLOBAL": [],
+    "FREESHIPPING": [],
+    "FULFILLEDBYAMAZON": [],
+    "PRIME": [],
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "TradeInPrice": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "amount",
+      "currency",
+      "display_amount"
+    ],
+    "amount": [
+      "self",
+      "amount"
+    ],
+    "currency": [
+      "self",
+      "currency"
+    ],
+    "display_amount": [
+      "self",
+      "display_amount"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "Merchant": {
+    "ALL": [],
+    "AMAZON": [],
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "Offers": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "listings",
+      "summaries"
+    ],
+    "listings": [
+      "self",
+      "listings"
+    ],
+    "summaries": [
+      "self",
+      "summaries"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "GetItemsResponse": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "errors",
+      "items_result"
+    ],
+    "errors": [
+      "self",
+      "errors"
+    ],
+    "items_result": [
+      "self",
+      "items_result"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "PriceType": {
+    "LIST_PRICE": [],
+    "LOWEST_PRICE": [],
+    "LOWEST_PRICE_STRIKETHROUGH": [],
+    "WAS_PRICE": [],
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "OffersV2": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "listings"
+    ],
+    "listings": [
+      "self",
+      "listings"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "OfferPromotion": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "amount",
+      "currency",
+      "discount_percent",
+      "display_amount",
+      "price_per_unit",
+      "type"
+    ],
+    "amount": [
+      "self",
+      "amount"
+    ],
+    "currency": [
+      "self",
+      "currency"
+    ],
+    "discount_percent": [
+      "self",
+      "discount_percent"
+    ],
+    "display_amount": [
+      "self",
+      "display_amount"
+    ],
+    "price_per_unit": [
+      "self",
+      "price_per_unit"
+    ],
+    "type": [
+      "self",
+      "type"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "MinSavingPercent": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "ExternalIds": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "ea_ns",
+      "isb_ns",
+      "up_cs"
+    ],
+    "ea_ns": [
+      "self",
+      "ea_ns"
+    ],
+    "isb_ns": [
+      "self",
+      "isb_ns"
+    ],
+    "up_cs": [
+      "self",
+      "up_cs"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "OfferSavings": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "amount",
+      "currency",
+      "display_amount",
+      "percentage",
+      "price_per_unit"
+    ],
+    "amount": [
+      "self",
+      "amount"
+    ],
+    "currency": [
+      "self",
+      "currency"
+    ],
+    "display_amount": [
+      "self",
+      "display_amount"
+    ],
+    "percentage": [
+      "self",
+      "percentage"
+    ],
+    "price_per_unit": [
+      "self",
+      "price_per_unit"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "VariationAttribute": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "name",
+      "value"
+    ],
+    "name": [
+      "self",
+      "name"
+    ],
+    "value": [
+      "self",
+      "value"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "Availability": {
+    "AVAILABLE": [],
+    "INCLUDEOUTOFSTOCK": [],
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "SearchItemsResource": {
+    "BROWSENODEINFO_BROWSENODES": [],
+    "BROWSENODEINFO_BROWSENODES_ANCESTOR": [],
+    "BROWSENODEINFO_BROWSENODES_SALESRANK": [],
+    "BROWSENODEINFO_WEBSITESALESRANK": [],
+    "CUSTOMERREVIEWS_COUNT": [],
+    "CUSTOMERREVIEWS_STARRATING": [],
+    "IMAGES_PRIMARY_SMALL": [],
+    "IMAGES_PRIMARY_MEDIUM": [],
+    "IMAGES_PRIMARY_LARGE": [],
+    "IMAGES_VARIANTS_SMALL": [],
+    "IMAGES_VARIANTS_MEDIUM": [],
+    "IMAGES_VARIANTS_LARGE": [],
+    "ITEMINFO_BYLINEINFO": [],
+    "ITEMINFO_CONTENTINFO": [],
+    "ITEMINFO_CONTENTRATING": [],
+    "ITEMINFO_CLASSIFICATIONS": [],
+    "ITEMINFO_EXTERNALIDS": [],
+    "ITEMINFO_FEATURES": [],
+    "ITEMINFO_MANUFACTUREINFO": [],
+    "ITEMINFO_PRODUCTINFO": [],
+    "ITEMINFO_TECHNICALINFO": [],
+    "ITEMINFO_TITLE": [],
+    "ITEMINFO_TRADEININFO": [],
+    "OFFERS_LISTINGS_AVAILABILITY_MAXORDERQUANTITY": [],
+    "OFFERS_LISTINGS_AVAILABILITY_MESSAGE": [],
+    "OFFERS_LISTINGS_AVAILABILITY_MINORDERQUANTITY": [],
+    "OFFERS_LISTINGS_AVAILABILITY_TYPE": [],
+    "OFFERS_LISTINGS_CONDITION": [],
+    "OFFERS_LISTINGS_CONDITION_CONDITIONNOTE": [],
+    "OFFERS_LISTINGS_CONDITION_SUBCONDITION": [],
+    "OFFERS_LISTINGS_DELIVERYINFO_ISAMAZONFULFILLED": [],
+    "OFFERS_LISTINGS_DELIVERYINFO_ISFREESHIPPINGELIGIBLE": [],
+    "OFFERS_LISTINGS_DELIVERYINFO_ISPRIMEELIGIBLE": [],
+    "OFFERS_LISTINGS_DELIVERYINFO_SHIPPINGCHARGES": [],
+    "OFFERS_LISTINGS_ISBUYBOXWINNER": [],
+    "OFFERS_LISTINGS_LOYALTYPOINTS_POINTS": [],
+    "OFFERS_LISTINGS_MERCHANTINFO": [],
+    "OFFERS_LISTINGS_PRICE": [],
+    "OFFERS_LISTINGS_PROGRAMELIGIBILITY_ISPRIMEEXCLUSIVE": [],
+    "OFFERS_LISTINGS_PROGRAMELIGIBILITY_ISPRIMEPANTRY": [],
+    "OFFERS_LISTINGS_PROMOTIONS": [],
+    "OFFERS_LISTINGS_SAVINGBASIS": [],
+    "OFFERS_SUMMARIES_HIGHESTPRICE": [],
+    "OFFERS_SUMMARIES_LOWESTPRICE": [],
+    "OFFERS_SUMMARIES_OFFERCOUNT": [],
+    "OFFERSV2_LISTINGS_AVAILABILITY": [],
+    "OFFERSV2_LISTINGS_CONDITION": [],
+    "OFFERSV2_LISTINGS_DEALDETAILS": [],
+    "OFFERSV2_LISTINGS_ISBUYBOXWINNER": [],
+    "OFFERSV2_LISTINGS_LOYALTYPOINTS": [],
+    "OFFERSV2_LISTINGS_MERCHANTINFO": [],
+    "OFFERSV2_LISTINGS_PRICE": [],
+    "OFFERSV2_LISTINGS_TYPE": [],
+    "PARENTASIN": [],
+    "RENTALOFFERS_LISTINGS_AVAILABILITY_MAXORDERQUANTITY": [],
+    "RENTALOFFERS_LISTINGS_AVAILABILITY_MESSAGE": [],
+    "RENTALOFFERS_LISTINGS_AVAILABILITY_MINORDERQUANTITY": [],
+    "RENTALOFFERS_LISTINGS_AVAILABILITY_TYPE": [],
+    "RENTALOFFERS_LISTINGS_BASEPRICE": [],
+    "RENTALOFFERS_LISTINGS_CONDITION": [],
+    "RENTALOFFERS_LISTINGS_CONDITION_CONDITIONNOTE": [],
+    "RENTALOFFERS_LISTINGS_CONDITION_SUBCONDITION": [],
+    "RENTALOFFERS_LISTINGS_DELIVERYINFO_ISAMAZONFULFILLED": [],
+    "RENTALOFFERS_LISTINGS_DELIVERYINFO_ISFREESHIPPINGELIGIBLE": [],
+    "RENTALOFFERS_LISTINGS_DELIVERYINFO_ISPRIMEELIGIBLE": [],
+    "RENTALOFFERS_LISTINGS_DELIVERYINFO_SHIPPINGCHARGES": [],
+    "RENTALOFFERS_LISTINGS_MERCHANTINFO": [],
+    "SEARCHREFINEMENTS": [],
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "OfferMerchantInfoV2": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "name",
+      "id"
+    ],
+    "name": [
+      "self",
+      "name"
+    ],
+    "id": [
+      "self",
+      "id"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "GetVariationsResource": {
+    "BROWSENODEINFO_BROWSENODES": [],
+    "BROWSENODEINFO_BROWSENODES_ANCESTOR": [],
+    "BROWSENODEINFO_BROWSENODES_SALESRANK": [],
+    "BROWSENODEINFO_WEBSITESALESRANK": [],
+    "CUSTOMERREVIEWS_COUNT": [],
+    "CUSTOMERREVIEWS_STARRATING": [],
+    "IMAGES_PRIMARY_SMALL": [],
+    "IMAGES_PRIMARY_MEDIUM": [],
+    "IMAGES_PRIMARY_LARGE": [],
+    "IMAGES_VARIANTS_SMALL": [],
+    "IMAGES_VARIANTS_MEDIUM": [],
+    "IMAGES_VARIANTS_LARGE": [],
+    "ITEMINFO_BYLINEINFO": [],
+    "ITEMINFO_CONTENTINFO": [],
+    "ITEMINFO_CONTENTRATING": [],
+    "ITEMINFO_CLASSIFICATIONS": [],
+    "ITEMINFO_EXTERNALIDS": [],
+    "ITEMINFO_FEATURES": [],
+    "ITEMINFO_MANUFACTUREINFO": [],
+    "ITEMINFO_PRODUCTINFO": [],
+    "ITEMINFO_TECHNICALINFO": [],
+    "ITEMINFO_TITLE": [],
+    "ITEMINFO_TRADEININFO": [],
+    "OFFERS_LISTINGS_AVAILABILITY_MAXORDERQUANTITY": [],
+    "OFFERS_LISTINGS_AVAILABILITY_MESSAGE": [],
+    "OFFERS_LISTINGS_AVAILABILITY_MINORDERQUANTITY": [],
+    "OFFERS_LISTINGS_AVAILABILITY_TYPE": [],
+    "OFFERS_LISTINGS_CONDITION": [],
+    "OFFERS_LISTINGS_CONDITION_CONDITIONNOTE": [],
+    "OFFERS_LISTINGS_CONDITION_SUBCONDITION": [],
+    "OFFERS_LISTINGS_DELIVERYINFO_ISAMAZONFULFILLED": [],
+    "OFFERS_LISTINGS_DELIVERYINFO_ISFREESHIPPINGELIGIBLE": [],
+    "OFFERS_LISTINGS_DELIVERYINFO_ISPRIMEELIGIBLE": [],
+    "OFFERS_LISTINGS_DELIVERYINFO_SHIPPINGCHARGES": [],
+    "OFFERS_LISTINGS_ISBUYBOXWINNER": [],
+    "OFFERS_LISTINGS_LOYALTYPOINTS_POINTS": [],
+    "OFFERS_LISTINGS_MERCHANTINFO": [],
+    "OFFERS_LISTINGS_PRICE": [],
+    "OFFERS_LISTINGS_PROGRAMELIGIBILITY_ISPRIMEEXCLUSIVE": [],
+    "OFFERS_LISTINGS_PROGRAMELIGIBILITY_ISPRIMEPANTRY": [],
+    "OFFERS_LISTINGS_PROMOTIONS": [],
+    "OFFERS_LISTINGS_SAVINGBASIS": [],
+    "OFFERS_SUMMARIES_HIGHESTPRICE": [],
+    "OFFERS_SUMMARIES_LOWESTPRICE": [],
+    "OFFERS_SUMMARIES_OFFERCOUNT": [],
+    "PARENTASIN": [],
+    "RENTALOFFERS_LISTINGS_AVAILABILITY_MAXORDERQUANTITY": [],
+    "RENTALOFFERS_LISTINGS_AVAILABILITY_MESSAGE": [],
+    "RENTALOFFERS_LISTINGS_AVAILABILITY_MINORDERQUANTITY": [],
+    "RENTALOFFERS_LISTINGS_AVAILABILITY_TYPE": [],
+    "RENTALOFFERS_LISTINGS_BASEPRICE": [],
+    "RENTALOFFERS_LISTINGS_CONDITION": [],
+    "RENTALOFFERS_LISTINGS_CONDITION_CONDITIONNOTE": [],
+    "RENTALOFFERS_LISTINGS_CONDITION_SUBCONDITION": [],
+    "RENTALOFFERS_LISTINGS_DELIVERYINFO_ISAMAZONFULFILLED": [],
+    "RENTALOFFERS_LISTINGS_DELIVERYINFO_ISFREESHIPPINGELIGIBLE": [],
+    "RENTALOFFERS_LISTINGS_DELIVERYINFO_ISPRIMEELIGIBLE": [],
+    "RENTALOFFERS_LISTINGS_DELIVERYINFO_SHIPPINGCHARGES": [],
+    "RENTALOFFERS_LISTINGS_MERCHANTINFO": [],
+    "VARIATIONSUMMARY_PRICE_HIGHESTPRICE": [],
+    "VARIATIONSUMMARY_PRICE_LOWESTPRICE": [],
+    "VARIATIONSUMMARY_VARIATIONDIMENSION": [],
+    "OFFERSV2_LISTINGS_AVAILABILITY": [],
+    "OFFERSV2_LISTINGS_CONDITION": [],
+    "OFFERSV2_LISTINGS_DEALDETAILS": [],
+    "OFFERSV2_LISTINGS_ISBUYBOXWINNER": [],
+    "OFFERSV2_LISTINGS_LOYALTYPOINTS": [],
+    "OFFERSV2_LISTINGS_MERCHANTINFO": [],
+    "OFFERSV2_LISTINGS_PRICE": [],
+    "OFFERSV2_LISTINGS_TYPE": [],
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "BrowseNodesResult": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "browse_nodes"
+    ],
+    "browse_nodes": [
+      "self",
+      "browse_nodes"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "GetItemsResource": {
+    "BROWSENODEINFO_BROWSENODES": [],
+    "BROWSENODEINFO_BROWSENODES_ANCESTOR": [],
+    "BROWSENODEINFO_BROWSENODES_SALESRANK": [],
+    "BROWSENODEINFO_WEBSITESALESRANK": [],
+    "CUSTOMERREVIEWS_COUNT": [],
+    "CUSTOMERREVIEWS_STARRATING": [],
+    "IMAGES_PRIMARY_SMALL": [],
+    "IMAGES_PRIMARY_MEDIUM": [],
+    "IMAGES_PRIMARY_LARGE": [],
+    "IMAGES_VARIANTS_SMALL": [],
+    "IMAGES_VARIANTS_MEDIUM": [],
+    "IMAGES_VARIANTS_LARGE": [],
+    "ITEMINFO_BYLINEINFO": [],
+    "ITEMINFO_CONTENTINFO": [],
+    "ITEMINFO_CONTENTRATING": [],
+    "ITEMINFO_CLASSIFICATIONS": [],
+    "ITEMINFO_EXTERNALIDS": [],
+    "ITEMINFO_FEATURES": [],
+    "ITEMINFO_MANUFACTUREINFO": [],
+    "ITEMINFO_PRODUCTINFO": [],
+    "ITEMINFO_TECHNICALINFO": [],
+    "ITEMINFO_TITLE": [],
+    "ITEMINFO_TRADEININFO": [],
+    "OFFERS_LISTINGS_AVAILABILITY_MAXORDERQUANTITY": [],
+    "OFFERS_LISTINGS_AVAILABILITY_MESSAGE": [],
+    "OFFERS_LISTINGS_AVAILABILITY_MINORDERQUANTITY": [],
+    "OFFERS_LISTINGS_AVAILABILITY_TYPE": [],
+    "OFFERS_LISTINGS_CONDITION": [],
+    "OFFERS_LISTINGS_CONDITION_CONDITIONNOTE": [],
+    "OFFERS_LISTINGS_CONDITION_SUBCONDITION": [],
+    "OFFERS_LISTINGS_DELIVERYINFO_ISAMAZONFULFILLED": [],
+    "OFFERS_LISTINGS_DELIVERYINFO_ISFREESHIPPINGELIGIBLE": [],
+    "OFFERS_LISTINGS_DELIVERYINFO_ISPRIMEELIGIBLE": [],
+    "OFFERS_LISTINGS_DELIVERYINFO_SHIPPINGCHARGES": [],
+    "OFFERS_LISTINGS_ISBUYBOXWINNER": [],
+    "OFFERS_LISTINGS_LOYALTYPOINTS_POINTS": [],
+    "OFFERS_LISTINGS_MERCHANTINFO": [],
+    "OFFERS_LISTINGS_PRICE": [],
+    "OFFERS_LISTINGS_PROGRAMELIGIBILITY_ISPRIMEEXCLUSIVE": [],
+    "OFFERS_LISTINGS_PROGRAMELIGIBILITY_ISPRIMEPANTRY": [],
+    "OFFERS_LISTINGS_PROMOTIONS": [],
+    "OFFERS_LISTINGS_SAVINGBASIS": [],
+    "OFFERS_SUMMARIES_HIGHESTPRICE": [],
+    "OFFERS_SUMMARIES_LOWESTPRICE": [],
+    "OFFERS_SUMMARIES_OFFERCOUNT": [],
+    "PARENTASIN": [],
+    "RENTALOFFERS_LISTINGS_AVAILABILITY_MAXORDERQUANTITY": [],
+    "RENTALOFFERS_LISTINGS_AVAILABILITY_MESSAGE": [],
+    "RENTALOFFERS_LISTINGS_AVAILABILITY_MINORDERQUANTITY": [],
+    "RENTALOFFERS_LISTINGS_AVAILABILITY_TYPE": [],
+    "RENTALOFFERS_LISTINGS_BASEPRICE": [],
+    "RENTALOFFERS_LISTINGS_CONDITION": [],
+    "RENTALOFFERS_LISTINGS_CONDITION_CONDITIONNOTE": [],
+    "RENTALOFFERS_LISTINGS_CONDITION_SUBCONDITION": [],
+    "RENTALOFFERS_LISTINGS_DELIVERYINFO_ISAMAZONFULFILLED": [],
+    "RENTALOFFERS_LISTINGS_DELIVERYINFO_ISFREESHIPPINGELIGIBLE": [],
+    "RENTALOFFERS_LISTINGS_DELIVERYINFO_ISPRIMEELIGIBLE": [],
+    "RENTALOFFERS_LISTINGS_DELIVERYINFO_SHIPPINGCHARGES": [],
+    "RENTALOFFERS_LISTINGS_MERCHANTINFO": [],
+    "OFFERSV2_LISTINGS_AVAILABILITY": [],
+    "OFFERSV2_LISTINGS_CONDITION": [],
+    "OFFERSV2_LISTINGS_DEALDETAILS": [],
+    "OFFERSV2_LISTINGS_ISBUYBOXWINNER": [],
+    "OFFERSV2_LISTINGS_LOYALTYPOINTS": [],
+    "OFFERSV2_LISTINGS_MERCHANTINFO": [],
+    "OFFERSV2_LISTINGS_PRICE": [],
+    "OFFERSV2_LISTINGS_TYPE": [],
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "Images": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "primary",
+      "variants"
+    ],
+    "primary": [
+      "self",
+      "primary"
+    ],
+    "variants": [
+      "self",
+      "variants"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "SearchIndex": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "UnitBasedAttribute": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "display_value",
+      "label",
+      "locale",
+      "unit"
+    ],
+    "display_value": [
+      "self",
+      "display_value"
+    ],
+    "label": [
+      "self",
+      "label"
+    ],
+    "locale": [
+      "self",
+      "locale"
+    ],
+    "unit": [
+      "self",
+      "unit"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "GetVariationsResponse": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "errors",
+      "variations_result"
+    ],
+    "errors": [
+      "self",
+      "errors"
+    ],
+    "variations_result": [
+      "self",
+      "variations_result"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "OfferSummary": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "condition",
+      "highest_price",
+      "lowest_price",
+      "offer_count"
+    ],
+    "condition": [
+      "self",
+      "condition"
+    ],
+    "highest_price": [
+      "self",
+      "highest_price"
+    ],
+    "lowest_price": [
+      "self",
+      "lowest_price"
+    ],
+    "offer_count": [
+      "self",
+      "offer_count"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "OfferListings": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "SingleBooleanValuedAttribute": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "display_value",
+      "label",
+      "locale"
+    ],
+    "display_value": [
+      "self",
+      "display_value"
+    ],
+    "label": [
+      "self",
+      "label"
+    ],
+    "locale": [
+      "self",
+      "locale"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "DurationPrice": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "price",
+      "duration"
+    ],
+    "price": [
+      "self",
+      "price"
+    ],
+    "duration": [
+      "self",
+      "duration"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "VariationSummary": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "page_count",
+      "price",
+      "variation_count",
+      "variation_dimensions"
+    ],
+    "page_count": [
+      "self",
+      "page_count"
+    ],
+    "price": [
+      "self",
+      "price"
+    ],
+    "variation_count": [
+      "self",
+      "variation_count"
+    ],
+    "variation_dimensions": [
+      "self",
+      "variation_dimensions"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "OfferProgramEligibility": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "is_prime_exclusive",
+      "is_prime_pantry"
+    ],
+    "is_prime_exclusive": [
+      "self",
+      "is_prime_exclusive"
+    ],
+    "is_prime_pantry": [
+      "self",
+      "is_prime_pantry"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "CustomerReviews": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "count",
+      "star_rating"
+    ],
+    "count": [
+      "self",
+      "count"
+    ],
+    "star_rating": [
+      "self",
+      "star_rating"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "VariationDimension": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "display_name",
+      "locale",
+      "name",
+      "values"
+    ],
+    "display_name": [
+      "self",
+      "display_name"
+    ],
+    "locale": [
+      "self",
+      "locale"
+    ],
+    "name": [
+      "self",
+      "name"
+    ],
+    "values": [
+      "self",
+      "values"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "Rating": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "value"
+    ],
+    "value": [
+      "self",
+      "value"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "LanguageType": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "display_value",
+      "type"
+    ],
+    "display_value": [
+      "self",
+      "display_value"
+    ],
+    "type": [
+      "self",
+      "type"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "OfferAvailabilityV2": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "message",
+      "max_order_quantity",
+      "min_order_quantity",
+      "type"
+    ],
+    "message": [
+      "self",
+      "message"
+    ],
+    "max_order_quantity": [
+      "self",
+      "max_order_quantity"
+    ],
+    "min_order_quantity": [
+      "self",
+      "min_order_quantity"
+    ],
+    "type": [
+      "self",
+      "type"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "GetItemsRequest": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "condition",
+      "currency_of_preference",
+      "item_ids",
+      "item_id_type",
+      "languages_of_preference",
+      "marketplace",
+      "merchant",
+      "offer_count",
+      "partner_tag",
+      "partner_type",
+      "properties",
+      "resources"
+    ],
+    "condition": [
+      "self",
+      "condition"
+    ],
+    "currency_of_preference": [
+      "self",
+      "currency_of_preference"
+    ],
+    "item_ids": [
+      "self",
+      "item_ids"
+    ],
+    "item_id_type": [
+      "self",
+      "item_id_type"
+    ],
+    "languages_of_preference": [
+      "self",
+      "languages_of_preference"
+    ],
+    "marketplace": [
+      "self",
+      "marketplace"
+    ],
+    "merchant": [
+      "self",
+      "merchant"
+    ],
+    "offer_count": [
+      "self",
+      "offer_count"
+    ],
+    "partner_tag": [
+      "self",
+      "partner_tag"
+    ],
+    "partner_type": [
+      "self",
+      "partner_type"
+    ],
+    "properties": [
+      "self",
+      "properties"
+    ],
+    "resources": [
+      "self",
+      "resources"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "OfferMerchantInfo": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "default_shipping_country",
+      "feedback_count",
+      "feedback_rating",
+      "id",
+      "name"
+    ],
+    "default_shipping_country": [
+      "self",
+      "default_shipping_country"
+    ],
+    "feedback_count": [
+      "self",
+      "feedback_count"
+    ],
+    "feedback_rating": [
+      "self",
+      "feedback_rating"
+    ],
+    "id": [
+      "self",
+      "id"
+    ],
+    "name": [
+      "self",
+      "name"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "DimensionBasedAttribute": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "height",
+      "length",
+      "weight",
+      "width"
+    ],
+    "height": [
+      "self",
+      "height"
+    ],
+    "length": [
+      "self",
+      "length"
+    ],
+    "weight": [
+      "self",
+      "weight"
+    ],
+    "width": [
+      "self",
+      "width"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "OfferLoyaltyPointsV2": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "points"
+    ],
+    "points": [
+      "self",
+      "points"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "ContentInfo": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "edition",
+      "languages",
+      "pages_count",
+      "publication_date"
+    ],
+    "edition": [
+      "self",
+      "edition"
+    ],
+    "languages": [
+      "self",
+      "languages"
+    ],
+    "pages_count": [
+      "self",
+      "pages_count"
+    ],
+    "publication_date": [
+      "self",
+      "publication_date"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "OfferLoyaltyPoints": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "points"
+    ],
+    "points": [
+      "self",
+      "points"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "OfferSavingsV2": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "money",
+      "percentage"
+    ],
+    "money": [
+      "self",
+      "money"
+    ],
+    "percentage": [
+      "self",
+      "percentage"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "Properties": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "Refinement": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "bins",
+      "display_name",
+      "id"
+    ],
+    "bins": [
+      "self",
+      "bins"
+    ],
+    "display_name": [
+      "self",
+      "display_name"
+    ],
+    "id": [
+      "self",
+      "id"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "Price": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "highest_price",
+      "lowest_price"
+    ],
+    "highest_price": [
+      "self",
+      "highest_price"
+    ],
+    "lowest_price": [
+      "self",
+      "lowest_price"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "Languages": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "display_values",
+      "label",
+      "locale"
+    ],
+    "display_values": [
+      "self",
+      "display_values"
+    ],
+    "label": [
+      "self",
+      "label"
+    ],
+    "locale": [
+      "self",
+      "locale"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "OfferCondition": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "display_value",
+      "label",
+      "locale",
+      "value",
+      "sub_condition",
+      "condition_note"
+    ],
+    "display_value": [
+      "self",
+      "display_value"
+    ],
+    "label": [
+      "self",
+      "label"
+    ],
+    "locale": [
+      "self",
+      "locale"
+    ],
+    "value": [
+      "self",
+      "value"
+    ],
+    "sub_condition": [
+      "self",
+      "sub_condition"
+    ],
+    "condition_note": [
+      "self",
+      "condition_note"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "PartnerType": {
+    "ASSOCIATES": [],
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "OfferDeliveryInfo": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "is_amazon_fulfilled",
+      "is_free_shipping_eligible",
+      "is_prime_eligible",
+      "shipping_charges"
+    ],
+    "is_amazon_fulfilled": [
+      "self",
+      "is_amazon_fulfilled"
+    ],
+    "is_free_shipping_eligible": [
+      "self",
+      "is_free_shipping_eligible"
+    ],
+    "is_prime_eligible": [
+      "self",
+      "is_prime_eligible"
+    ],
+    "shipping_charges": [
+      "self",
+      "shipping_charges"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "RefinementBin": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "display_name",
+      "id"
+    ],
+    "display_name": [
+      "self",
+      "display_name"
+    ],
+    "id": [
+      "self",
+      "id"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "ByLineInfo": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "brand",
+      "contributors",
+      "manufacturer"
+    ],
+    "brand": [
+      "self",
+      "brand"
+    ],
+    "contributors": [
+      "self",
+      "contributors"
+    ],
+    "manufacturer": [
+      "self",
+      "manufacturer"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "OfferPrice": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "amount",
+      "currency",
+      "display_amount",
+      "price_per_unit",
+      "price_type",
+      "price_type_label",
+      "savings"
+    ],
+    "amount": [
+      "self",
+      "amount"
+    ],
+    "currency": [
+      "self",
+      "currency"
+    ],
+    "display_amount": [
+      "self",
+      "display_amount"
+    ],
+    "price_per_unit": [
+      "self",
+      "price_per_unit"
+    ],
+    "price_type": [
+      "self",
+      "price_type"
+    ],
+    "price_type_label": [
+      "self",
+      "price_type_label"
+    ],
+    "savings": [
+      "self",
+      "savings"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "OfferSubCondition": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "display_value",
+      "label",
+      "locale",
+      "value"
+    ],
+    "display_value": [
+      "self",
+      "display_value"
+    ],
+    "label": [
+      "self",
+      "label"
+    ],
+    "locale": [
+      "self",
+      "locale"
+    ],
+    "value": [
+      "self",
+      "value"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "RentalOfferListing": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "availability",
+      "base_price",
+      "condition",
+      "delivery_info",
+      "id",
+      "merchant_info"
+    ],
+    "availability": [
+      "self",
+      "availability"
+    ],
+    "base_price": [
+      "self",
+      "base_price"
+    ],
+    "condition": [
+      "self",
+      "condition"
+    ],
+    "delivery_info": [
+      "self",
+      "delivery_info"
+    ],
+    "id": [
+      "self",
+      "id"
+    ],
+    "merchant_info": [
+      "self",
+      "merchant_info"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "GetVariationsRequest": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "asin",
+      "condition",
+      "currency_of_preference",
+      "languages_of_preference",
+      "marketplace",
+      "merchant",
+      "offer_count",
+      "partner_tag",
+      "partner_type",
+      "properties",
+      "resources",
+      "variation_count",
+      "variation_page"
+    ],
+    "asin": [
+      "self",
+      "asin"
+    ],
+    "condition": [
+      "self",
+      "condition"
+    ],
+    "currency_of_preference": [
+      "self",
+      "currency_of_preference"
+    ],
+    "languages_of_preference": [
+      "self",
+      "languages_of_preference"
+    ],
+    "marketplace": [
+      "self",
+      "marketplace"
+    ],
+    "merchant": [
+      "self",
+      "merchant"
+    ],
+    "offer_count": [
+      "self",
+      "offer_count"
+    ],
+    "partner_tag": [
+      "self",
+      "partner_tag"
+    ],
+    "partner_type": [
+      "self",
+      "partner_type"
+    ],
+    "properties": [
+      "self",
+      "properties"
+    ],
+    "resources": [
+      "self",
+      "resources"
+    ],
+    "variation_count": [
+      "self",
+      "variation_count"
+    ],
+    "variation_page": [
+      "self",
+      "variation_page"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "MinReviewsRating": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "ManufactureInfo": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "item_part_number",
+      "model",
+      "warranty"
+    ],
+    "item_part_number": [
+      "self",
+      "item_part_number"
+    ],
+    "model": [
+      "self",
+      "model"
+    ],
+    "warranty": [
+      "self",
+      "warranty"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "OfferPriceV2": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "money",
+      "price_per_unit",
+      "savings",
+      "saving_basis"
+    ],
+    "money": [
+      "self",
+      "money"
+    ],
+    "price_per_unit": [
+      "self",
+      "price_per_unit"
+    ],
+    "savings": [
+      "self",
+      "savings"
+    ],
+    "saving_basis": [
+      "self",
+      "saving_basis"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "Classifications": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "binding",
+      "product_group"
+    ],
+    "binding": [
+      "self",
+      "binding"
+    ],
+    "product_group": [
+      "self",
+      "product_group"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "RentalOffers": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "listings"
+    ],
+    "listings": [
+      "self",
+      "listings"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "SingleStringValuedAttribute": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "display_value",
+      "label",
+      "locale"
+    ],
+    "display_value": [
+      "self",
+      "display_value"
+    ],
+    "label": [
+      "self",
+      "label"
+    ],
+    "locale": [
+      "self",
+      "locale"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "SingleIntegerValuedAttribute": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "display_value",
+      "label",
+      "locale"
+    ],
+    "display_value": [
+      "self",
+      "display_value"
+    ],
+    "label": [
+      "self",
+      "label"
+    ],
+    "locale": [
+      "self",
+      "locale"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "Condition": {
+    "ANY": [],
+    "COLLECTIBLE": [],
+    "NEW": [],
+    "REFURBISHED": [],
+    "USED": [],
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "WebsiteSalesRank": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "context_free_name",
+      "display_name",
+      "id",
+      "sales_rank"
+    ],
+    "context_free_name": [
+      "self",
+      "context_free_name"
+    ],
+    "display_name": [
+      "self",
+      "display_name"
+    ],
+    "id": [
+      "self",
+      "id"
+    ],
+    "sales_rank": [
+      "self",
+      "sales_rank"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "OfferAvailability": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "max_order_quantity",
+      "message",
+      "min_order_quantity",
+      "type"
+    ],
+    "max_order_quantity": [
+      "self",
+      "max_order_quantity"
+    ],
+    "message": [
+      "self",
+      "message"
+    ],
+    "min_order_quantity": [
+      "self",
+      "min_order_quantity"
+    ],
+    "type": [
+      "self",
+      "type"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "GetBrowseNodesResponse": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "browse_nodes_result",
+      "errors"
+    ],
+    "browse_nodes_result": [
+      "self",
+      "browse_nodes_result"
+    ],
+    "errors": [
+      "self",
+      "errors"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "SortBy": {
+    "AVGCUSTOMERREVIEWS": [],
+    "FEATURED": [],
+    "NEWESTARRIVALS": [],
+    "PRICE_HIGHTOLOW": [],
+    "PRICE_LOWTOHIGH": [],
+    "RELEVANCE": [],
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "OfferListingsV2": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "Contributor": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "locale",
+      "name",
+      "role",
+      "role_type"
+    ],
+    "locale": [
+      "self",
+      "locale"
+    ],
+    "name": [
+      "self",
+      "name"
+    ],
+    "role": [
+      "self",
+      "role"
+    ],
+    "role_type": [
+      "self",
+      "role_type"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "Money": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "amount",
+      "currency",
+      "display_amount"
+    ],
+    "amount": [
+      "self",
+      "amount"
+    ],
+    "currency": [
+      "self",
+      "currency"
+    ],
+    "display_amount": [
+      "self",
+      "display_amount"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "DealDetails": {
+    "swagger_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "access_type",
+      "badge",
+      "early_access_duration_in_milliseconds",
+      "end_time",
+      "percent_claimed",
+      "start_time"
+    ],
+    "access_type": [
+      "self",
+      "access_type"
+    ],
+    "badge": [
+      "self",
+      "badge"
+    ],
+    "early_access_duration_in_milliseconds": [
+      "self",
+      "early_access_duration_in_milliseconds"
+    ],
+    "end_time": [
+      "self",
+      "end_time"
+    ],
+    "percent_claimed": [
+      "self",
+      "percent_claimed"
+    ],
+    "start_time": [
+      "self",
+      "start_time"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "RequestSerialized": [],
+  "SUPPORTED_SOCKS_PROXIES": [],
+  "RESTResponseType": [],
+  "is_socks_proxy_url": [
+    "url"
+  ],
+  "JSON_SCHEMA_VALIDATION_KEYWORDS": [],
+  "__version__": [],
+  "OpenApiException": {},
+  "ApiTypeError": {
+    "__init__": [
+      "self",
+      "msg",
+      "path_to_item",
+      "valid_classes",
+      "key_type"
+    ]
+  },
+  "ApiValueError": {
+    "__init__": [
+      "self",
+      "msg",
+      "path_to_item"
+    ]
+  },
+  "ApiAttributeError": {
+    "__init__": [
+      "self",
+      "msg",
+      "path_to_item"
+    ]
+  },
+  "ApiKeyError": {
+    "__init__": [
+      "self",
+      "msg",
+      "path_to_item"
+    ]
+  },
+  "BadRequestException": {},
+  "NotFoundException": {},
+  "UnauthorizedException": {},
+  "ForbiddenException": {},
+  "ServiceException": {},
+  "render_path": [
+    "path_to_item"
+  ],
+  "T": [],
+  "ApiResponse": {
+    "model_config": []
+  },
+  "OAuth2TokenManager": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "get_token": [
+      "self"
+    ],
+    "is_token_valid": [
+      "self"
+    ],
+    "refresh_token": [
+      "self"
+    ],
+    "clear_token": [
+      "self"
+    ]
+  },
+  "OAuth2Config": {
+    "COGNITO_SCOPE": [],
+    "LWA_SCOPE": [],
+    "GRANT_TYPE": [],
+    "__init__": [
+      "self",
+      "credential_id",
+      "credential_secret",
+      "version",
+      "auth_endpoint"
+    ],
+    "determine_token_endpoint": [
+      "self",
+      "version",
+      "auth_endpoint"
+    ],
+    "is_lwa": [
+      "self"
+    ],
+    "get_token_endpoint": [
+      "self",
+      "version"
+    ],
+    "get_credential_id": [
+      "self"
+    ],
+    "get_credential_secret": [
+      "self"
+    ],
+    "get_version": [
+      "self"
+    ],
+    "get_cognito_endpoint": [
+      "self"
+    ],
+    "get_scope": [
+      "self"
+    ],
+    "get_grant_type": [
+      "self"
+    ]
+  },
+  "GetVariationsResponseContent": {
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  },
+  "GetFeedResponseContent": {
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  },
+  "GetReportRequestContent": {
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  },
+  "GetBrowseNodesResponseContent": {
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  },
+  "GetItemsResponseContent": {
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  },
+  "SearchItemsResponseContent": {
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  },
+  "SearchItemsRequestContent": {
+    "actor_validate_regular_expression": [
+      "cls",
+      "value"
+    ],
+    "artist_validate_regular_expression": [
+      "cls",
+      "value"
+    ],
+    "author_validate_regular_expression": [
+      "cls",
+      "value"
+    ],
+    "brand_validate_regular_expression": [
+      "cls",
+      "value"
+    ],
+    "browse_node_id_validate_regular_expression": [
+      "cls",
+      "value"
+    ],
+    "currency_of_preference_validate_regular_expression": [
+      "cls",
+      "value"
+    ],
+    "keywords_validate_regular_expression": [
+      "cls",
+      "value"
+    ],
+    "partner_tag_validate_regular_expression": [
+      "cls",
+      "value"
+    ],
+    "search_index_validate_regular_expression": [
+      "cls",
+      "value"
+    ],
+    "title_validate_regular_expression": [
+      "cls",
+      "value"
+    ],
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  },
+  "UnauthorizedExceptionReason": {
+    "TOKENEXPIRED": [],
+    "INVALIDTOKEN": [],
+    "INVALIDISSUER": [],
+    "MISSINGCLAIM": [],
+    "MISSINGKEYID": [],
+    "UNSUPPORTEDCLIENT": [],
+    "INVALIDCLIENT": [],
+    "MISSINGCREDENTIAL": [],
+    "OTHER": [],
+    "from_json": [
+      "cls",
+      "json_str"
+    ]
+  },
+  "ValidationExceptionResponseContent": {
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  },
+  "ThrottleExceptionResponseContent": {
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  },
+  "GetVariationsRequestContent": {
+    "partner_tag_validate_regular_expression": [
+      "cls",
+      "value"
+    ],
+    "asin_validate_regular_expression": [
+      "cls",
+      "value"
+    ],
+    "currency_of_preference_validate_regular_expression": [
+      "cls",
+      "value"
+    ],
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  },
+  "GetReportResponseContent": {
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  },
+  "ValidationExceptionField": {
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  },
+  "UnauthorizedExceptionResponseContent": {
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  },
+  "AccessDeniedReason": {
+    "ASSOCIATENOTELIGIBLE": [],
+    "AUTHORIZATIONFAILED": [],
+    "OTHER": [],
+    "from_json": [
+      "cls",
+      "json_str"
+    ]
+  },
+  "VariationSummaryPrice": {
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  },
+  "GetItemsRequestContent": {
+    "partner_tag_validate_regular_expression": [
+      "cls",
+      "value"
+    ],
+    "currency_of_preference_validate_regular_expression": [
+      "cls",
+      "value"
+    ],
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  },
+  "ListReportsResponseContent": {
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  },
+  "ResourceNotFoundExceptionResponseContent": {
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  },
+  "ListFeedsResponseContent": {
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  },
+  "AccessDeniedExceptionResponseContent": {
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  },
+  "GetBrowseNodesRequestContent": {
+    "partner_tag_validate_regular_expression": [
+      "cls",
+      "value"
+    ],
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  },
+  "GetFeedRequestContent": {
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  },
+  "InternalServerExceptionResponseContent": {
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  },
+  "ValidationExceptionReason": {
+    "UNKNOWNOPERATION": [],
+    "CANNOTPARSE": [],
+    "FIELDVALIDATIONFAILED": [],
+    "INVALIDASSOCIATE": [],
+    "INVALIDPARTNERTAG": [],
+    "OTHER": [],
+    "from_json": [
+      "cls",
+      "json_str"
+    ]
+  },
+  "ReportMetadata": {
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  },
+  "Feed": {
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  },
+  "AmazonCreatorsApi": {
+    "__init__": [
+      "self",
+      "credential_id",
+      "credential_secret",
+      "version",
+      "tag",
+      "country",
+      "marketplace",
+      "throttling"
+    ],
+    "get_items": [
+      "self",
+      "items",
+      "condition",
+      "currency_of_preference",
+      "languages_of_preference",
+      "resources"
+    ],
+    "search_items": [
+      "self",
+      "keywords",
+      "actor",
+      "artist",
+      "author",
+      "brand",
+      "title",
+      "browse_node_id",
+      "search_index",
+      "item_count",
+      "item_page",
+      "condition",
+      "currency_of_preference",
+      "delivery_flags",
+      "languages_of_preference",
+      "max_price",
+      "min_price",
+      "min_saving_percent",
+      "min_reviews_rating",
+      "sort_by",
+      "resources"
+    ],
+    "get_variations": [
+      "self",
+      "asin",
+      "variation_count",
+      "variation_page",
+      "condition",
+      "currency_of_preference",
+      "languages_of_preference",
+      "resources"
+    ],
+    "get_browse_nodes": [
+      "self",
+      "browse_node_ids",
+      "languages_of_preference",
+      "resources"
+    ],
+    "_throttle": [
+      "self"
+    ],
+    "_handle_api_exception": [
+      "self",
+      "error"
+    ]
+  },
+  "AmazonCreatorsApiError": {},
+  "InvalidArgumentError": {},
+  "ItemsNotFoundError": {},
+  "TooManyRequestsError": {},
+  "AuthenticationError": {},
+  "handle_api_error": [
+    "status_code",
+    "body"
+  ],
+  "ResourceT": [],
+  "get_all_resources": [
+    "resource_class"
+  ],
+  "DEFAULT_THROTTLING": [],
+  "HTTP_NOT_FOUND": [],
+  "validate_and_get_marketplace": [
+    "country",
+    "marketplace"
+  ],
+  "COGNITO_SCOPE": [],
+  "LWA_SCOPE": [],
+  "SCOPE": [],
+  "GRANT_TYPE": [],
+  "TOKEN_EXPIRATION_BUFFER": [],
+  "VERSION_ENDPOINTS": [],
+  "AsyncOAuth2TokenManager": {
+    "__init__": [
+      "self",
+      "credential_id",
+      "credential_secret",
+      "version",
+      "auth_endpoint"
+    ],
+    "_determine_auth_endpoint": [
+      "self",
+      "version",
+      "auth_endpoint"
+    ],
+    "is_lwa": [
+      "self"
+    ],
+    "get_scope": [
+      "self"
+    ],
+    "lock": [
+      "self"
+    ],
+    "get_token": [
+      "self"
+    ],
+    "is_token_valid": [
+      "self"
+    ],
+    "refresh_token": [
+      "self"
+    ],
+    "clear_token": [
+      "self"
+    ]
+  },
+  "API_HOST": [],
+  "ENDPOINT_GET_ITEMS": [],
+  "ENDPOINT_SEARCH_ITEMS": [],
+  "ENDPOINT_GET_VARIATIONS": [],
+  "ENDPOINT_GET_BROWSE_NODES": [],
+  "AsyncAmazonCreatorsApi": {
+    "__init__": [
+      "self",
+      "credential_id",
+      "credential_secret",
+      "version",
+      "tag",
+      "country",
+      "marketplace",
+      "throttling"
+    ],
+    "_validate_version": [
+      "self",
+      "version"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ],
+    "get_items": [
+      "self",
+      "items",
+      "condition",
+      "currency_of_preference",
+      "languages_of_preference",
+      "resources"
+    ],
+    "search_items": [
+      "self",
+      "keywords",
+      "actor",
+      "artist",
+      "author",
+      "brand",
+      "title",
+      "browse_node_id",
+      "search_index",
+      "item_count",
+      "item_page",
+      "condition",
+      "currency_of_preference",
+      "delivery_flags",
+      "languages_of_preference",
+      "max_price",
+      "min_price",
+      "min_saving_percent",
+      "min_reviews_rating",
+      "sort_by",
+      "resources"
+    ],
+    "get_variations": [
+      "self",
+      "asin",
+      "variation_count",
+      "variation_page",
+      "condition",
+      "currency_of_preference",
+      "languages_of_preference",
+      "resources"
+    ],
+    "get_browse_nodes": [
+      "self",
+      "browse_node_ids",
+      "languages_of_preference",
+      "resources"
+    ],
+    "_throttle": [
+      "self"
+    ],
+    "_make_request": [
+      "self",
+      "endpoint",
+      "body"
+    ],
+    "_build_authorization_header": [
+      "self",
+      "token"
+    ],
+    "_handle_error_response": [
+      "self",
+      "status_code",
+      "body"
+    ],
+    "_deserialize_items": [
+      "self",
+      "items_data"
+    ],
+    "_deserialize_search_result": [
+      "self",
+      "search_result_data"
+    ],
+    "_deserialize_variations_result": [
+      "self",
+      "variations_result_data"
+    ],
+    "_deserialize_browse_nodes": [
+      "self",
+      "browse_nodes_data"
+    ]
+  },
+  "DEFAULT_HOST": [],
+  "DEFAULT_TIMEOUT": [],
+  "VERSION": [],
+  "USER_AGENT": [],
+  "AsyncHttpResponse": {
+    "json": [
+      "self"
+    ]
+  },
+  "AsyncHttpClient": {
+    "__init__": [
+      "self",
+      "host",
+      "timeout"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ],
+    "post": [
+      "self",
+      "path",
+      "headers",
+      "body"
+    ]
+  }
+}
