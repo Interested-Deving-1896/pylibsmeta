@@ -1,0 +1,256 @@
+{
+  "__path__": [],
+  "SQLServerRelation": {
+    "get_relation_type": [
+      "cls"
+    ],
+    "render_limited": [
+      "self"
+    ],
+    "__post_init__": [
+      "self"
+    ],
+    "relation_max_name_length": [
+      "self"
+    ],
+    "_render_event_time_filtered": [
+      "self",
+      "event_time_filter"
+    ]
+  },
+  "AZURE_CREDENTIAL_SCOPE": [],
+  "AZURE_AUTH_FUNCTION_TYPE": [],
+  "logger": [],
+  "datatypes": [],
+  "_require_azure_identity": [
+    "authentication"
+  ],
+  "convert_bytes_to_mswindows_byte_string": [
+    "value"
+  ],
+  "convert_access_token_to_mswindows_byte_string": [
+    "token"
+  ],
+  "get_cli_access_token": [
+    "credentials",
+    "scope"
+  ],
+  "get_auto_access_token": [
+    "credentials",
+    "scope"
+  ],
+  "get_environment_access_token": [
+    "credentials",
+    "scope"
+  ],
+  "get_msi_access_token": [
+    "credentials",
+    "scope"
+  ],
+  "get_sp_access_token": [
+    "credentials",
+    "scope"
+  ],
+  "get_pyodbc_attrs_before_credentials": [
+    "credentials"
+  ],
+  "bool_to_connection_string_arg": [
+    "key",
+    "value"
+  ],
+  "byte_array_to_datetime": [
+    "value"
+  ],
+  "SQLServerConnectionManager": {
+    "TYPE": [],
+    "exception_handler": [
+      "self",
+      "sql"
+    ],
+    "open": [
+      "cls",
+      "connection"
+    ],
+    "cancel": [
+      "self",
+      "connection"
+    ],
+    "add_begin_query": [
+      "self"
+    ],
+    "add_commit_query": [
+      "self"
+    ],
+    "add_query": [
+      "self",
+      "sql",
+      "auto_begin",
+      "bindings",
+      "abridge_sql_log",
+      "retryable_exceptions",
+      "retry_limit"
+    ],
+    "get_credentials": [
+      "cls",
+      "credentials"
+    ],
+    "get_response": [
+      "cls",
+      "cursor"
+    ],
+    "data_type_code_to_name": [
+      "cls",
+      "type_code"
+    ],
+    "execute": [
+      "self",
+      "sql",
+      "auto_begin",
+      "fetch",
+      "limit"
+    ]
+  },
+  "SQLServerColumn": {
+    "string_type": [
+      "cls",
+      "size"
+    ],
+    "literal": [
+      "self",
+      "value"
+    ],
+    "data_type": [
+      "self"
+    ],
+    "is_string": [
+      "self"
+    ],
+    "is_number": [
+      "self"
+    ],
+    "is_float": [
+      "self"
+    ],
+    "is_integer": [
+      "self"
+    ],
+    "is_numeric": [
+      "self"
+    ],
+    "string_size": [
+      "self"
+    ],
+    "can_expand_to": [
+      "self",
+      "other_column"
+    ]
+  },
+  "version": [],
+  "SQLServerCredentials": {
+    "_ALIASES": [],
+    "type": [
+      "self"
+    ],
+    "_connection_keys": [
+      "self"
+    ],
+    "unique_field": [
+      "self"
+    ]
+  },
+  "Plugin": [],
+  "__all__": [],
+  "SQLServerAdapter": {
+    "ConnectionManager": [],
+    "Column": [],
+    "AdapterSpecificConfigs": [],
+    "Relation": [],
+    "CONSTRAINT_SUPPORT": [],
+    "_behavior_flags": [
+      "self"
+    ],
+    "get_column_schema_from_query": [
+      "self",
+      "sql"
+    ],
+    "convert_boolean_type": [
+      "cls",
+      "agate_table",
+      "col_idx"
+    ],
+    "convert_datetime_type": [
+      "cls",
+      "agate_table",
+      "col_idx"
+    ],
+    "convert_number_type": [
+      "cls",
+      "agate_table",
+      "col_idx"
+    ],
+    "create_schema": [
+      "self",
+      "relation"
+    ],
+    "convert_text_type": [
+      "cls",
+      "agate_table",
+      "col_idx"
+    ],
+    "convert_time_type": [
+      "cls",
+      "agate_table",
+      "col_idx"
+    ],
+    "date_function": [
+      "cls"
+    ],
+    "timestamp_add_sql": [
+      "self",
+      "add_to",
+      "number",
+      "interval"
+    ],
+    "string_add_sql": [
+      "self",
+      "add_to",
+      "value",
+      "location"
+    ],
+    "get_rows_different_sql": [
+      "self",
+      "relation_a",
+      "relation_b",
+      "column_names",
+      "except_operator"
+    ],
+    "valid_incremental_strategies": [
+      "self"
+    ],
+    "run_sql_for_tests": [
+      "self",
+      "sql",
+      "fetch",
+      "conn"
+    ],
+    "render_column_constraint": [
+      "cls",
+      "constraint"
+    ],
+    "render_model_constraint": [
+      "cls",
+      "constraint"
+    ]
+  },
+  "COLUMNS_EQUAL_SQL": [],
+  "SQLServerConfigs": {},
+  "MAX_CHARACTERS_IN_IDENTIFIER": [],
+  "SQLServerRelationType": {
+    "Table": [],
+    "View": [],
+    "CTE": []
+  },
+  "SQLServerIncludePolicy": {},
+  "SQLServerQuotePolicy": {},
+  "PACKAGE_PATH": []
+}
