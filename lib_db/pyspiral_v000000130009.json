@@ -1,0 +1,3789 @@
+{
+  "T": [],
+  "flatten_struct_table": [
+    "table",
+    "separator"
+  ],
+  "struct_array": [
+    "mask"
+  ],
+  "table": [],
+  "dict_to_struct_array": [
+    "data",
+    "propagate_nulls"
+  ],
+  "__all__": [],
+  "DEFAULT_ROW_INDEX_COLUMN": [],
+  "DEFAULT_BATCH_SIZE": [],
+  "DEFAULT_COMMIT_EVERY": [],
+  "check_huggingface_installed": [],
+  "_add_row_index_column": [
+    "table",
+    "offset"
+  ],
+  "_validate_key_columns": [
+    "schema",
+    "key_columns"
+  ],
+  "_extract_key_schema": [
+    "schema",
+    "key_columns"
+  ],
+  "_reorder_columns_keys_first": [
+    "table",
+    "key_columns"
+  ],
+  "_features_to_arrow_schema": [
+    "features"
+  ],
+  "_ingest_in_memory_dataset": [
+    "dataset",
+    "project",
+    "table_name",
+    "key_columns",
+    "push_down_nulls",
+    "exist_ok"
+  ],
+  "_ingest_iterable_dataset": [
+    "dataset",
+    "project",
+    "table_name",
+    "key_columns",
+    "batch_size",
+    "commit_every",
+    "push_down_nulls",
+    "exist_ok",
+    "total_rows"
+  ],
+  "_rows_to_arrow_table": [
+    "rows",
+    "features",
+    "offset",
+    "key_columns"
+  ],
+  "_ingest_dataset_dict": [
+    "dataset_dict",
+    "project",
+    "table_name",
+    "key_columns",
+    "push_down_nulls",
+    "exist_ok"
+  ],
+  "_ingest_iterable_dataset_dict": [
+    "dataset_dict",
+    "project",
+    "table_name",
+    "key_columns",
+    "batch_size",
+    "commit_every",
+    "push_down_nulls",
+    "exist_ok",
+    "total_rows"
+  ],
+  "ingest_dataset": [
+    "dataset",
+    "project",
+    "table_name"
+  ],
+  "to_iterable_dataset": [
+    "stream"
+  ],
+  "logger": [],
+  "Transaction": {
+    "__init__": [
+      "self",
+      "table",
+      "core"
+    ],
+    "status": [
+      "self"
+    ],
+    "table": [
+      "self"
+    ],
+    "is_empty": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [],
+    "write": [
+      "self",
+      "table",
+      "push_down_nulls"
+    ],
+    "writeback": [
+      "self",
+      "plan"
+    ],
+    "to_ray_datasink": [
+      "self"
+    ],
+    "drop_columns": [
+      "self",
+      "column_paths"
+    ],
+    "compact_column_group": [
+      "self",
+      "column_group",
+      "strategy"
+    ],
+    "column_group_compaction": [
+      "self",
+      "column_group",
+      "strategy"
+    ],
+    "column_group_compaction_execute_tasks": [
+      "self",
+      "tasks"
+    ],
+    "take": [
+      "self"
+    ],
+    "include": [
+      "self",
+      "ops"
+    ],
+    "commit": [
+      "self"
+    ],
+    "load_dumps": [
+      "client"
+    ],
+    "abort": [
+      "self"
+    ]
+  },
+  "Iceberg": {
+    "__init__": [
+      "self",
+      "spiral"
+    ],
+    "catalog": [
+      "self"
+    ]
+  },
+  "_core_video": [],
+  "OutputFrameMapping": [],
+  "VideoIndexHandle": [],
+  "PackedPyramidTranscodeResult": [],
+  "_SPIRAL_H264_INSTALL_HINT": [],
+  "SpiralH264NotFoundError": {},
+  "index_path": [
+    "path"
+  ],
+  "transcode_h264_pyramid": [
+    "source",
+    "output_path"
+  ],
+  "_transcode_source_to_h264_annex_b": [
+    "source",
+    "config_path",
+    "annex_b_path",
+    "metadata_path"
+  ],
+  "_start_pipe_reader": [
+    "stream"
+  ],
+  "_finish_pipe_reader": [
+    "reader"
+  ],
+  "_ensure_spiral_h264_available": [
+    "spiral_h264"
+  ],
+  "_spiral_h264_command": [
+    "spiral_h264"
+  ],
+  "Plan": {
+    "__init__": [
+      "self",
+      "spiral",
+      "scan",
+      "core"
+    ],
+    "limit": [
+      "self"
+    ],
+    "metrics": [
+      "self"
+    ],
+    "schema": [
+      "self"
+    ],
+    "key_schema": [
+      "self"
+    ],
+    "is_empty": [
+      "self"
+    ],
+    "to_record_batches": [
+      "self"
+    ],
+    "to_unordered_record_batches": [
+      "self"
+    ],
+    "to_table": [
+      "self"
+    ],
+    "to_dask": [
+      "self"
+    ],
+    "to_ray": [
+      "self"
+    ],
+    "to_pandas": [
+      "self"
+    ],
+    "to_polars": [
+      "self"
+    ],
+    "to_data_loader": [
+      "self",
+      "seed",
+      "shuffle_buffer_size",
+      "batch_size",
+      "disable_view_types"
+    ],
+    "to_distributed_data_loader": [
+      "self",
+      "world",
+      "shards",
+      "seed",
+      "shuffle_buffer_size",
+      "batch_size",
+      "disable_view_types"
+    ],
+    "resume_data_loader": [
+      "self",
+      "state"
+    ],
+    "to_iterable_dataset": [
+      "self",
+      "shards",
+      "seed",
+      "shuffle_buffer_size",
+      "batch_readahead",
+      "infinite"
+    ],
+    "shards": [
+      "self"
+    ],
+    "_debug": [
+      "self"
+    ],
+    "_dump_metrics": [
+      "self"
+    ]
+  },
+  "_read_shard_task": [
+    "shard"
+  ],
+  "Project": {
+    "__init__": [
+      "self",
+      "spiral",
+      "project_id",
+      "description"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "id": [
+      "self"
+    ],
+    "description": [
+      "self"
+    ],
+    "fetch": [
+      "self"
+    ],
+    "list_tables": [
+      "self"
+    ],
+    "list_text_indexes": [
+      "self"
+    ],
+    "table": [
+      "self",
+      "identifier"
+    ],
+    "create_table": [
+      "self",
+      "identifier"
+    ],
+    "move_table": [
+      "self",
+      "identifier",
+      "new_dataset"
+    ],
+    "rename_table": [
+      "self",
+      "identifier",
+      "new_table"
+    ],
+    "drop_table": [
+      "self",
+      "identifier"
+    ],
+    "_parse_table_identifier": [
+      "self",
+      "identifier"
+    ],
+    "text_index": [
+      "self",
+      "name"
+    ],
+    "create_text_index": [
+      "self",
+      "name"
+    ],
+    "compute": [
+      "self"
+    ]
+  },
+  "Table": {
+    "__init__": [
+      "self",
+      "spiral",
+      "core"
+    ],
+    "table_id": [
+      "self"
+    ],
+    "identifier": [
+      "self"
+    ],
+    "project": [
+      "self"
+    ],
+    "dataset": [
+      "self"
+    ],
+    "name": [
+      "self"
+    ],
+    "last_modified_at": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "item"
+    ],
+    "select": [
+      "self"
+    ],
+    "key_schema": [
+      "self"
+    ],
+    "schema": [
+      "self"
+    ],
+    "write": [
+      "self",
+      "table",
+      "push_down_nulls"
+    ],
+    "enrich": [
+      "self"
+    ],
+    "drop_columns": [
+      "self",
+      "column_paths"
+    ],
+    "snapshot": [
+      "self",
+      "asof"
+    ],
+    "txn": [
+      "self"
+    ],
+    "to_arrow_dataset": [
+      "self"
+    ],
+    "to_polars_lazy_frame": [
+      "self"
+    ],
+    "to_duckdb_relation": [
+      "self"
+    ],
+    "key": [
+      "self"
+    ],
+    "set_metadata": [
+      "self",
+      "metadata"
+    ],
+    "get_metadata": [
+      "self"
+    ],
+    "drop_metadata": [
+      "self",
+      "keys"
+    ],
+    "column_group": [
+      "self"
+    ]
+  },
+  "LazyTable": {
+    "__hash__": [],
+    "__init__": [
+      "self",
+      "client",
+      "node"
+    ],
+    "_try_build": [
+      "self"
+    ],
+    "__ctx__": [
+      "self"
+    ],
+    "__node__": [
+      "self"
+    ],
+    "explain": [
+      "self"
+    ],
+    "plan": [
+      "self"
+    ],
+    "key_schema": [
+      "self"
+    ],
+    "schema": [
+      "self"
+    ],
+    "__bool__": [
+      "self"
+    ],
+    "__dir__": [
+      "self"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "__getitem__": [
+      "self",
+      "name"
+    ],
+    "__add__": [
+      "self",
+      "other"
+    ],
+    "__radd__": [
+      "self",
+      "other"
+    ],
+    "__sub__": [
+      "self",
+      "other"
+    ],
+    "__rsub__": [
+      "self",
+      "other"
+    ],
+    "__mul__": [
+      "self",
+      "other"
+    ],
+    "__rmul__": [
+      "self",
+      "other"
+    ],
+    "__truediv__": [
+      "self",
+      "other"
+    ],
+    "__rtruediv__": [
+      "self",
+      "other"
+    ],
+    "__mod__": [
+      "self",
+      "other"
+    ],
+    "__neg__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ],
+    "__lt__": [
+      "self",
+      "other"
+    ],
+    "__gt__": [
+      "self",
+      "other"
+    ],
+    "__le__": [
+      "self",
+      "other"
+    ],
+    "__ge__": [
+      "self",
+      "other"
+    ],
+    "__and__": [
+      "self",
+      "other"
+    ],
+    "__or__": [
+      "self",
+      "other"
+    ],
+    "__invert__": [
+      "self"
+    ],
+    "cast": [
+      "self",
+      "dtype"
+    ],
+    "round": [
+      "self"
+    ],
+    "floor": [
+      "self"
+    ],
+    "ceil": [
+      "self"
+    ],
+    "abs": [
+      "self"
+    ],
+    "sum": [
+      "self"
+    ],
+    "mean": [
+      "self"
+    ],
+    "count": [
+      "self"
+    ],
+    "min": [
+      "self"
+    ],
+    "max": [
+      "self"
+    ],
+    "first": [
+      "self"
+    ],
+    "last": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ],
+    "any": [
+      "self"
+    ],
+    "all": [
+      "self"
+    ],
+    "select": [
+      "self"
+    ],
+    "where": [
+      "self",
+      "predicate"
+    ],
+    "window": [
+      "self",
+      "frame"
+    ],
+    "regroup": [
+      "self",
+      "key"
+    ],
+    "rekey": [
+      "self",
+      "onto"
+    ],
+    "join": [
+      "self",
+      "other",
+      "method"
+    ],
+    "_binop": [
+      "self",
+      "op",
+      "other"
+    ],
+    "_rbinop": [
+      "self",
+      "op",
+      "other"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "Aggregate": {
+    "__hash__": [],
+    "__init__": [
+      "self",
+      "client",
+      "node"
+    ],
+    "__ctx__": [
+      "self"
+    ],
+    "__node__": [
+      "self"
+    ],
+    "per": [
+      "self",
+      "target"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "_": [],
+  "_coerce_to_node": [
+    "value"
+  ],
+  "Compute": {
+    "__init__": [
+      "self",
+      "api"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_value",
+      "traceback"
+    ],
+    "dask_client": [
+      "self",
+      "n_workers"
+    ]
+  },
+  "send_to_rerun": [],
+  "_send_columns": [
+    "spec",
+    "default_timeline",
+    "batch"
+  ],
+  "Archetype": {
+    "__init__": [],
+    "send_columns": [
+      "self",
+      "entity_path",
+      "default_index",
+      "batch"
+    ]
+  },
+  "ArrowComponentBatchLike": {
+    "__init__": [
+      "self",
+      "array"
+    ],
+    "as_arrow_array": [
+      "self"
+    ]
+  },
+  "_is_listlike": [
+    "t"
+  ],
+  "ListLike": [],
+  "_get": [
+    "field_path",
+    "batch"
+  ],
+  "ArrowTimeColumn": {
+    "__init__": [
+      "self",
+      "name",
+      "array"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "from_name_and_data": [
+      "name",
+      "batch"
+    ],
+    "timeline_name": [
+      "self"
+    ],
+    "as_arrow_array": [
+      "self"
+    ]
+  },
+  "Arrows2D": [],
+  "Arrows3D": [],
+  "Points2D": [],
+  "Points3D": [],
+  "TextLog": [],
+  "Scalars": [],
+  "experimental": [
+    "obj"
+  ],
+  "Snapshot": {
+    "__init__": [
+      "self",
+      "table",
+      "core"
+    ],
+    "asof": [
+      "self"
+    ],
+    "table": [
+      "self"
+    ],
+    "schema": [
+      "self"
+    ],
+    "lazy": [
+      "self"
+    ],
+    "to_arrow_dataset": [
+      "self"
+    ],
+    "to_polars_lazy_frame": [
+      "self"
+    ],
+    "to_duckdb_relation": [
+      "self"
+    ],
+    "_resolve_column": [
+      "self",
+      "column_path"
+    ],
+    "set_column_metadata": [
+      "self",
+      "column_path",
+      "metadata"
+    ],
+    "get_column_metadata": [
+      "self",
+      "column_path"
+    ],
+    "drop_column_metadata": [
+      "self",
+      "column_path",
+      "keys"
+    ]
+  },
+  "_PagedRequest": {},
+  "_PagedResponse": {},
+  "R": [],
+  "paged": [
+    "stub_fn",
+    "request",
+    "page_size"
+  ],
+  "paged_items": [
+    "stub_fn",
+    "request",
+    "collection_name",
+    "page_size"
+  ],
+  "Scan": {
+    "__init__": [
+      "self",
+      "spiral",
+      "plan"
+    ],
+    "schema": [
+      "self"
+    ],
+    "key_schema": [
+      "self"
+    ],
+    "plan": [
+      "self"
+    ],
+    "to_bytes_compressed": [
+      "self"
+    ],
+    "__getstate__": [
+      "self"
+    ],
+    "__setstate__": [
+      "self",
+      "state"
+    ],
+    "metrics": [
+      "self"
+    ],
+    "to_record_batches": [
+      "self"
+    ],
+    "to_unordered_record_batches": [
+      "self"
+    ],
+    "to_table": [
+      "self"
+    ],
+    "to_dask": [
+      "self"
+    ],
+    "to_ray": [
+      "self"
+    ],
+    "to_pandas": [
+      "self"
+    ],
+    "to_polars": [
+      "self"
+    ],
+    "to_data_loader": [
+      "self"
+    ],
+    "to_distributed_data_loader": [
+      "self"
+    ],
+    "resume_data_loader": [
+      "self",
+      "state"
+    ],
+    "to_iterable_dataset": [
+      "self"
+    ],
+    "shards": [
+      "self"
+    ],
+    "_debug": [
+      "self"
+    ],
+    "_dump_metrics": [
+      "self"
+    ]
+  },
+  "SubstraitConverter": {
+    "__init__": [
+      "self",
+      "scope",
+      "schema",
+      "key_schema"
+    ],
+    "convert": [
+      "self",
+      "buffer"
+    ],
+    "_extension_declaration": [
+      "self",
+      "ext"
+    ],
+    "_extension_function": [
+      "self",
+      "ext"
+    ],
+    "_extension_type": [
+      "self",
+      "ext"
+    ],
+    "_extension_type_variation": [
+      "self",
+      "ext"
+    ],
+    "_expr": [
+      "self",
+      "expr"
+    ],
+    "_expr_literal": [
+      "self",
+      "expr"
+    ],
+    "_expr_selection": [
+      "self",
+      "expr"
+    ],
+    "_expr_direct_reference": [
+      "self",
+      "scope",
+      "scope_type",
+      "expr"
+    ],
+    "_expr_masked_reference": [
+      "self",
+      "scope",
+      "scope_type",
+      "expr"
+    ],
+    "_expr_scalar_function": [
+      "self",
+      "expr"
+    ]
+  },
+  "Enrichment": {
+    "__init__": [
+      "self",
+      "table",
+      "projection",
+      "where"
+    ],
+    "table": [
+      "self"
+    ],
+    "projection": [
+      "self"
+    ],
+    "where": [
+      "self"
+    ],
+    "_scan": [
+      "self"
+    ],
+    "run": [
+      "self"
+    ],
+    "run_dask": [
+      "self",
+      "client"
+    ],
+    "run_ray": [
+      "self"
+    ]
+  },
+  "_determine_shards": [
+    "scan",
+    "shards",
+    "checkpoint"
+  ],
+  "_gather_results": [
+    "tx",
+    "futures",
+    "task_shards",
+    "executor"
+  ],
+  "_load_checkpoint": [
+    "checkpoint_path"
+  ],
+  "_save_checkpoint": [
+    "checkpoint_path",
+    "shards"
+  ],
+  "EnrichmentTaskResult": {},
+  "_enrichment_task_ray": [],
+  "_execute_enrichment_task": [
+    "shard"
+  ],
+  "Spiral": {
+    "__init__": [
+      "self"
+    ],
+    "config": [
+      "self"
+    ],
+    "authn": [
+      "self"
+    ],
+    "api": [
+      "self"
+    ],
+    "core": [
+      "self"
+    ],
+    "organization": [
+      "self"
+    ],
+    "list_projects": [
+      "self"
+    ],
+    "create_project": [
+      "self"
+    ],
+    "project": [
+      "self",
+      "project_id"
+    ],
+    "scan": [
+      "self"
+    ],
+    "scan_keys": [
+      "self"
+    ],
+    "open": [
+      "self",
+      "uri"
+    ],
+    "_scan_internal": [
+      "self"
+    ],
+    "sample": [
+      "self"
+    ],
+    "search": [
+      "self",
+      "top_k"
+    ],
+    "resume_scan": [
+      "self",
+      "scan_bytes"
+    ],
+    "compute_shards": [
+      "self"
+    ],
+    "iceberg": [
+      "self"
+    ],
+    "_table": [
+      "self",
+      "table_id"
+    ],
+    "_text_index": [
+      "self",
+      "index_id"
+    ]
+  },
+  "Datasink": {
+    "__init__": [
+      "self",
+      "txn"
+    ],
+    "__getstate__": [
+      "self"
+    ],
+    "__setstate__": [
+      "self",
+      "state"
+    ],
+    "on_write_complete": [
+      "self",
+      "write_result"
+    ],
+    "on_write_failed": [
+      "self",
+      "error"
+    ],
+    "on_write_start": [
+      "self",
+      "schema"
+    ],
+    "write": [
+      "self",
+      "blocks",
+      "ctx"
+    ]
+  },
+  "Compaction": {
+    "__init__": [
+      "self",
+      "txn",
+      "core",
+      "table"
+    ],
+    "column_group": [
+      "self"
+    ],
+    "_get_tasks": [
+      "self"
+    ],
+    "_submit_progress": [
+      "self",
+      "ops",
+      "outputs"
+    ],
+    "run": [
+      "self"
+    ],
+    "run_dask": [
+      "self",
+      "client"
+    ],
+    "run_ray": [
+      "self"
+    ]
+  },
+  "_compaction_task_ray": [],
+  "_execute_compaction_task": [
+    "tasks_json"
+  ],
+  "wait_for_port": [
+    "port",
+    "host",
+    "timeout"
+  ],
+  "wait_for_healthy": [
+    "port",
+    "host",
+    "timeout"
+  ],
+  "validate_metadata": [
+    "metadata"
+  ],
+  "Dataset": {
+    "__init__": [
+      "self",
+      "snapshot"
+    ],
+    "schema": [
+      "self"
+    ],
+    "count_rows": [
+      "self",
+      "filter",
+      "batch_size",
+      "batch_readahead",
+      "fragment_readahead",
+      "fragment_scan_options",
+      "use_threads",
+      "cache_metadata",
+      "memory_pool"
+    ],
+    "filter": [
+      "self",
+      "expression"
+    ],
+    "get_fragments": [
+      "self",
+      "filter"
+    ],
+    "head": [
+      "self",
+      "num_rows",
+      "columns",
+      "filter",
+      "batch_size",
+      "batch_readahead",
+      "fragment_readahead",
+      "fragment_scan_options",
+      "use_threads",
+      "cache_metadata",
+      "memory_pool"
+    ],
+    "join": [
+      "self",
+      "right_dataset",
+      "keys",
+      "right_keys",
+      "join_type",
+      "left_suffix",
+      "right_suffix",
+      "coalesce_keys",
+      "use_threads"
+    ],
+    "join_asof": [
+      "self",
+      "right_dataset",
+      "on",
+      "by",
+      "tolerance",
+      "right_on",
+      "right_by"
+    ],
+    "replace_schema": [
+      "self",
+      "schema"
+    ],
+    "scanner": [
+      "self",
+      "columns",
+      "filter",
+      "batch_size",
+      "batch_readahead",
+      "fragment_readahead",
+      "fragment_scan_options",
+      "use_threads",
+      "cache_metadata",
+      "memory_pool"
+    ],
+    "sort_by": [
+      "self",
+      "sorting"
+    ],
+    "take": [
+      "self",
+      "indices",
+      "columns",
+      "filter",
+      "batch_size",
+      "batch_readahead",
+      "fragment_readahead",
+      "fragment_scan_options",
+      "use_threads",
+      "cache_metadata",
+      "memory_pool"
+    ],
+    "to_batches": [
+      "self",
+      "columns",
+      "filter",
+      "batch_size",
+      "batch_readahead",
+      "fragment_readahead",
+      "fragment_scan_options",
+      "use_threads",
+      "cache_metadata",
+      "memory_pool"
+    ],
+    "to_table": [
+      "self",
+      "columns",
+      "filter",
+      "batch_size",
+      "batch_readahead",
+      "fragment_readahead",
+      "fragment_scan_options",
+      "use_threads",
+      "cache_metadata",
+      "memory_pool"
+    ]
+  },
+  "TableScanner": {
+    "__init__": [
+      "self",
+      "scan",
+      "key_table"
+    ],
+    "schema": [
+      "self"
+    ],
+    "count_rows": [
+      "self"
+    ],
+    "head": [
+      "self",
+      "num_rows"
+    ],
+    "scan_batches": [
+      "self"
+    ],
+    "take": [
+      "self",
+      "indices"
+    ],
+    "to_batches": [
+      "self"
+    ],
+    "to_reader": [
+      "self"
+    ],
+    "to_table": [
+      "self"
+    ]
+  },
+  "_get_cache_dir": [],
+  "_cache_key": [],
+  "_get_cached_table": [
+    "cache_key"
+  ],
+  "_save_to_cache": [
+    "cache_key",
+    "table"
+  ],
+  "_install_duckdb_extension": [
+    "name",
+    "max_retries"
+  ],
+  "demo_project": [
+    "sp"
+  ],
+  "images": [
+    "sp",
+    "limit"
+  ],
+  "gharchive": [
+    "sp",
+    "limit",
+    "period"
+  ],
+  "fineweb": [
+    "sp",
+    "limit"
+  ],
+  "abc": [
+    "sp",
+    "limit"
+  ],
+  "_warn_msg": [],
+  "TEST": [],
+  "CI": [],
+  "APP_DIR": [],
+  "LOG_DIR": [],
+  "PACKAGE_NAME": [],
+  "settings": [],
+  "TextIndex": {
+    "__init__": [
+      "self",
+      "core"
+    ],
+    "index_id": [
+      "self"
+    ],
+    "name": [
+      "self"
+    ]
+  },
+  "World": {
+    "shards": [
+      "self",
+      "shards",
+      "shuffle_seed"
+    ],
+    "from_torch": [
+      "cls"
+    ],
+    "_shuffle": [
+      "cls",
+      "shards",
+      "seed"
+    ]
+  },
+  "_len_and_transform": [
+    "batch",
+    "transform_fn"
+  ],
+  "SpiralDataLoader": {
+    "__init__": [
+      "self",
+      "plan"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "state_dict": [
+      "self"
+    ],
+    "from_state_dict": [
+      "cls",
+      "plan",
+      "state"
+    ]
+  },
+  "integer_median": [
+    "values"
+  ],
+  "evaluate": [
+    "table"
+  ],
+  "_evaluate_dict": [
+    "table"
+  ],
+  "_dict_to_struct_array": [
+    "table"
+  ],
+  "_evaluate_array_like": [
+    "array"
+  ],
+  "_struct_needs_normalization": [
+    "array"
+  ],
+  "_normalize_struct_array": [
+    "array"
+  ],
+  "dot_separated_dict_to_nested": [
+    "expr"
+  ],
+  "_THE_EPOCH": [],
+  "local_tz": [],
+  "timestamp_micros": [
+    "instant"
+  ],
+  "from_timestamp_micros": [
+    "ts"
+  ],
+  "visualize_plan": [
+    "plan"
+  ],
+  "_find_intra_overlaps": [
+    "frags"
+  ],
+  "_range_overlaps_extent": [
+    "key_range",
+    "key_extent"
+  ],
+  "_covered_shard_indices": [
+    "frag",
+    "shards"
+  ],
+  "_level_str": [
+    "level"
+  ],
+  "_get_human_size": [
+    "size_bytes"
+  ],
+  "_maybe_truncate": [
+    "text",
+    "max_length"
+  ],
+  "display_metrics": [
+    "metrics"
+  ],
+  "_format_duration": [
+    "nanoseconds"
+  ],
+  "_format_bytes": [
+    "bytes_value"
+  ],
+  "_format_value": [
+    "value",
+    "metric_type",
+    "metric_name"
+  ],
+  "display_plan_manifests": [
+    "plan"
+  ],
+  "display_manifests": [
+    "key_space_manifest",
+    "column_group_manifests",
+    "key_schema",
+    "max_rows",
+    "column_group_key_schemas",
+    "column_group_schemas"
+  ],
+  "_table_of_fragments": [
+    "manifest",
+    "title",
+    "key_schema",
+    "max_rows",
+    "subtitle"
+  ],
+  "_parse_asof": [
+    "value"
+  ],
+  "app": [],
+  "ask_table": [
+    "project_id",
+    "title"
+  ],
+  "get_table": [
+    "project",
+    "table",
+    "dataset"
+  ],
+  "ls": [
+    "project"
+  ],
+  "head": [
+    "project",
+    "table",
+    "dataset",
+    "n",
+    "asof"
+  ],
+  "validate_non_empty_str": [
+    "text"
+  ],
+  "get_string": [
+    "message",
+    "validate"
+  ],
+  "move": [
+    "project",
+    "table",
+    "dataset",
+    "new_dataset"
+  ],
+  "rename": [
+    "project",
+    "table",
+    "dataset",
+    "new_table"
+  ],
+  "drop": [
+    "project",
+    "table",
+    "dataset"
+  ],
+  "key_schema": [
+    "project",
+    "table",
+    "dataset"
+  ],
+  "schema": [
+    "project",
+    "table",
+    "dataset"
+  ],
+  "wal": [
+    "project",
+    "table",
+    "dataset"
+  ],
+  "flush": [
+    "project",
+    "table",
+    "dataset"
+  ],
+  "truncate": [
+    "project",
+    "table",
+    "dataset"
+  ],
+  "manifests": [
+    "project",
+    "table",
+    "dataset",
+    "max_rows",
+    "asof"
+  ],
+  "fragments": [
+    "project",
+    "table",
+    "dataset",
+    "max_rows",
+    "asof"
+  ],
+  "fragments_scan": [
+    "project",
+    "table",
+    "dataset",
+    "column_group"
+  ],
+  "debug_scan": [
+    "project",
+    "table",
+    "dataset",
+    "column_group"
+  ],
+  "stats": [
+    "project",
+    "table",
+    "dataset"
+  ],
+  "fs_mount": [
+    "project",
+    "table",
+    "dataset",
+    "file_system",
+    "directory"
+  ],
+  "fs_show": [
+    "project",
+    "table",
+    "dataset"
+  ],
+  "version_callback": [
+    "ctx",
+    "value"
+  ],
+  "verbose_callback": [
+    "ctx",
+    "value"
+  ],
+  "_callback": [
+    "ctx",
+    "version",
+    "verbose"
+  ],
+  "main": [],
+  "namespaces": [
+    "project",
+    "namespace"
+  ],
+  "tables": [
+    "project",
+    "namespace"
+  ],
+  "inspect": [
+    "path",
+    "show_frames",
+    "max_gops",
+    "json_output"
+  ],
+  "transcode": [
+    "source",
+    "output",
+    "encoder",
+    "fps",
+    "quality",
+    "multi_track",
+    "size",
+    "preset",
+    "ffmpeg_arg",
+    "x264_param"
+  ],
+  "_default_transcode_output": [
+    "source"
+  ],
+  "_parse_fps_ladder": [
+    "value"
+  ],
+  "_parse_quality_values": [
+    "value"
+  ],
+  "_parse_int_list": [
+    "value",
+    "option_name"
+  ],
+  "_quality_to_encoder_options": [
+    "fps_values",
+    "quality_values"
+  ],
+  "_parse_size_filter": [
+    "value"
+  ],
+  "_join_x264_params": [
+    "values"
+  ],
+  "transcode_annex_b": [
+    "source",
+    "config",
+    "annex_b",
+    "metadata",
+    "ffmpeg",
+    "spiral_h264",
+    "fps",
+    "video_filter",
+    "filter_complex",
+    "map_video",
+    "frames_v"
+  ],
+  "get": [
+    "project"
+  ],
+  "update": [
+    "project",
+    "address",
+    "proxy_address",
+    "public_address",
+    "auth_username",
+    "auth_password"
+  ],
+  "_spiral": [],
+  "MIN_FRAGMENT_SIZE": [],
+  "_compute_overlap": [
+    "spans"
+  ],
+  "FragmentStats": {
+    "avg_fragment_size": [
+      "self"
+    ],
+    "median_fragment_size": [
+      "self"
+    ],
+    "avg_rows_per_fragment": [
+      "self"
+    ],
+    "median_rows_per_fragment": [
+      "self"
+    ],
+    "avg_row_size": [
+      "self"
+    ],
+    "compression_ratio": [
+      "self"
+    ],
+    "overlap": [
+      "self"
+    ],
+    "overlap_ratio": [
+      "self"
+    ],
+    "overlap_avg_depth": [
+      "self"
+    ],
+    "undersized_count": [
+      "self"
+    ]
+  },
+  "ColumnGroupStats": {},
+  "TableStats": {
+    "total_size_bytes": [
+      "self"
+    ],
+    "total_fragments": [
+      "self"
+    ],
+    "total_rows": [
+      "self"
+    ]
+  },
+  "_compute_fragment_stats": [
+    "manifest"
+  ],
+  "_collect_table_stats": [
+    "project_id",
+    "table_resource"
+  ],
+  "_score_bar": [
+    "score",
+    "width"
+  ],
+  "_format_timestamp": [
+    "ts"
+  ],
+  "_friendly_type": [
+    "arrow_type"
+  ],
+  "_schema_rows": [
+    "arrow_type",
+    "name",
+    "depth",
+    "style"
+  ],
+  "_display_schema": [
+    "ts"
+  ],
+  "_display_detail": [
+    "ts"
+  ],
+  "_build_manifest_panel": [
+    "title",
+    "stats"
+  ],
+  "_build_stats_table": [
+    "stats"
+  ],
+  "_build_histogram": [
+    "values",
+    "title",
+    "fmt_fn",
+    "buckets"
+  ],
+  "_action_menu": [
+    "ts"
+  ],
+  "_do_flush": [
+    "ts"
+  ],
+  "_do_compact": [
+    "ts"
+  ],
+  "_show_fragments": [
+    "ts"
+  ],
+  "show_table_stats": [
+    "project_id",
+    "table_resource"
+  ],
+  "create": [
+    "description",
+    "id_prefix"
+  ],
+  "grant": [
+    "project",
+    "role",
+    "org_id",
+    "org_user",
+    "org_role",
+    "workload_id"
+  ],
+  "grants": [
+    "project"
+  ],
+  "M": [],
+  "table_of_models": [
+    "cls",
+    "messages",
+    "fields",
+    "title"
+  ],
+  "_renderable": [
+    "msg",
+    "col"
+  ],
+  "table_of_protos": [
+    "cls",
+    "messages",
+    "fields",
+    "title"
+  ],
+  "proto": [
+    "message",
+    "title",
+    "fields"
+  ],
+  "choose": [
+    "title",
+    "choices"
+  ],
+  "input_text": [
+    "message",
+    "validate"
+  ],
+  "command": [
+    "org_id",
+    "force",
+    "show_token"
+  ],
+  "whoami": [],
+  "logout": [],
+  "show": [
+    "project"
+  ],
+  "ask_provider": [],
+  "list_providers": [],
+  "ask_project": [
+    "title"
+  ],
+  "ProjectArg": [],
+  "_org_default": [],
+  "OrganizationArg": [],
+  "_ensure_not_exists": [
+    "p",
+    "name"
+  ],
+  "_choose_ingest": [],
+  "ingest": [
+    "project",
+    "target_gb",
+    "num_videos",
+    "frame_stride"
+  ],
+  "_choose_table": [
+    "p"
+  ],
+  "_fmt_bytes": [
+    "n"
+  ],
+  "_fmt_duration": [
+    "ns"
+  ],
+  "scan": [
+    "project"
+  ],
+  "profile": [
+    "url",
+    "data_size",
+    "sample_size",
+    "skip_cleanup"
+  ],
+  "sign": [
+    "project",
+    "file_id",
+    "manifest",
+    "fragment",
+    "table",
+    "format"
+  ],
+  "switch": [
+    "org_id"
+  ],
+  "invite": [
+    "email",
+    "role",
+    "expires_in_days"
+  ],
+  "sso": [],
+  "directory": [],
+  "audit_logs": [],
+  "log_streams": [],
+  "domains": [],
+  "keys": [],
+  "_do_action": [
+    "intent"
+  ],
+  "current_org_id": [],
+  "P": [],
+  "CONSOLE": [],
+  "ERR_CONSOLE": [],
+  "AsyncTyper": {
+    "__init__": [
+      "self"
+    ],
+    "callback": [
+      "self"
+    ],
+    "command": [
+      "self"
+    ]
+  },
+  "_ClickGRPCException": {
+    "__init__": [
+      "self",
+      "err"
+    ],
+    "format_message": [
+      "self"
+    ],
+    "show": [
+      "self",
+      "file"
+    ]
+  },
+  "_maybe_run_async": [
+    "decorator",
+    "f"
+  ],
+  "_wrap_exceptions": [
+    "decorator",
+    "f"
+  ],
+  "COMMITTED_AT_STRFTIME": [],
+  "revert": [
+    "table_id",
+    "txn_idx"
+  ],
+  "policy_app": [],
+  "ask_workload": [
+    "project"
+  ],
+  "deactivate": [
+    "workload_id"
+  ],
+  "issue_creds": [
+    "workload_id",
+    "skip_prompt"
+  ],
+  "revoke_creds": [
+    "client_id"
+  ],
+  "build_condition": [],
+  "_do_create_policy": [
+    "workload_id",
+    "issuer",
+    "conditions"
+  ],
+  "github": [
+    "workload_id",
+    "repository",
+    "environment",
+    "ref",
+    "sha",
+    "repository_owner",
+    "actor_id",
+    "repository_visibility",
+    "repository_id",
+    "repository_owner_id",
+    "runner_environment",
+    "actor",
+    "workflow",
+    "head_ref",
+    "base_ref",
+    "event_name",
+    "ref_type",
+    "job_workflow_ref"
+  ],
+  "modal": [
+    "workload_id",
+    "workspace_id",
+    "environment_name",
+    "environment_id",
+    "app_id",
+    "app_name",
+    "function_id",
+    "function_name",
+    "container_id"
+  ],
+  "gcp": [
+    "workload_id",
+    "email",
+    "unique_id"
+  ],
+  "aws": [
+    "workload_id",
+    "account",
+    "role"
+  ],
+  "oidc": [
+    "workload_id",
+    "iss",
+    "conditions"
+  ],
+  "list_policies": [
+    "workload_id"
+  ],
+  "delete_policy": [
+    "policy_id"
+  ],
+  "_ask_org_admin": [
+    "title",
+    "active"
+  ],
+  "sync": [
+    "org_id"
+  ],
+  "create_org": [
+    "name"
+  ],
+  "deactivate_org": [
+    "org_id"
+  ],
+  "reactivate_org": [
+    "org_id"
+  ],
+  "ask_index": [
+    "project_id",
+    "title"
+  ],
+  "get_index_id": [
+    "project",
+    "name"
+  ],
+  "serve": [
+    "project",
+    "index",
+    "region",
+    "cpu",
+    "memory"
+  ],
+  "workers": [
+    "project",
+    "index"
+  ],
+  "shutdown": [
+    "worker_id"
+  ],
+  "default_message_pool": [],
+  "_COMPILER_VERSION": [],
+  "FileMetadata": {},
+  "ParquetFileSpecificMetadata": {},
+  "ProtobufFileSpecificMetadata": {},
+  "VortexFileSpecificMetadata": {},
+  "BoostOpts": {},
+  "FindOpts": {},
+  "IndexOpts": {},
+  "S3GetOpts": {},
+  "TableOpts": {},
+  "TextDTypeOpts": {},
+  "Connectivity": {},
+  "Fetch": {},
+  "FetchRequest": {},
+  "FetchResponse": {},
+  "Metadata": {},
+  "MetadataParquet": {},
+  "Put": {},
+  "PutRequest": {},
+  "PutResponse": {},
+  "Sink": {},
+  "Source": {},
+  "ScandalServiceStub": {
+    "__init__": [
+      "self",
+      "channel"
+    ],
+    "fetch": [
+      "self",
+      "message"
+    ],
+    "put": [
+      "self",
+      "message"
+    ]
+  },
+  "Any": {
+    "pack": [
+      "cls",
+      "message",
+      "message_pool"
+    ],
+    "unpack": [
+      "self",
+      "message_pool"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "value"
+    ]
+  },
+  "Empty": {},
+  "AggregateFunctionAggregationInvocation": {
+    "UNSPECIFIED": [],
+    "ALL": [],
+    "DISTINCT": [],
+    "betterproto_value_to_renamed_proto_names": [
+      "cls"
+    ],
+    "betterproto_renamed_proto_names_to_value": [
+      "cls"
+    ]
+  },
+  "AggregationPhase": {
+    "UNSPECIFIED": [],
+    "INITIAL_TO_INTERMEDIATE": [],
+    "INTERMEDIATE_TO_INTERMEDIATE": [],
+    "INITIAL_TO_RESULT": [],
+    "INTERMEDIATE_TO_RESULT": [],
+    "betterproto_value_to_renamed_proto_names": [
+      "cls"
+    ],
+    "betterproto_renamed_proto_names_to_value": [
+      "cls"
+    ]
+  },
+  "ComparisonJoinKeySimpleComparisonType": {
+    "UNSPECIFIED": [],
+    "EQ": [],
+    "IS_NOT_DISTINCT_FROM": [],
+    "MIGHT_EQUAL": [],
+    "betterproto_value_to_renamed_proto_names": [
+      "cls"
+    ],
+    "betterproto_renamed_proto_names_to_value": [
+      "cls"
+    ]
+  },
+  "DdlRelDdlObject": {
+    "UNSPECIFIED": [],
+    "TABLE": [],
+    "VIEW": [],
+    "betterproto_value_to_renamed_proto_names": [
+      "cls"
+    ],
+    "betterproto_renamed_proto_names_to_value": [
+      "cls"
+    ]
+  },
+  "DdlRelDdlOp": {
+    "UNSPECIFIED": [],
+    "CREATE": [],
+    "CREATE_OR_REPLACE": [],
+    "ALTER": [],
+    "DROP": [],
+    "DROP_IF_EXIST": [],
+    "betterproto_value_to_renamed_proto_names": [
+      "cls"
+    ],
+    "betterproto_renamed_proto_names_to_value": [
+      "cls"
+    ]
+  },
+  "DerivationExpressionBinaryOpBinaryOpType": {
+    "UNSPECIFIED": [],
+    "PLUS": [],
+    "MINUS": [],
+    "MULTIPLY": [],
+    "DIVIDE": [],
+    "MIN": [],
+    "MAX": [],
+    "GREATER_THAN": [],
+    "LESS_THAN": [],
+    "AND": [],
+    "OR": [],
+    "EQUALS": [],
+    "COVERS": [],
+    "betterproto_value_to_renamed_proto_names": [
+      "cls"
+    ],
+    "betterproto_renamed_proto_names_to_value": [
+      "cls"
+    ]
+  },
+  "DerivationExpressionUnaryOpUnaryOpType": {
+    "UNSPECIFIED": [],
+    "BOOLEAN_NOT": [],
+    "betterproto_value_to_renamed_proto_names": [
+      "cls"
+    ],
+    "betterproto_renamed_proto_names_to_value": [
+      "cls"
+    ]
+  },
+  "ExpressionCastFailureBehavior": {
+    "UNSPECIFIED": [],
+    "RETURN_NULL": [],
+    "THROW_EXCEPTION": [],
+    "betterproto_value_to_renamed_proto_names": [
+      "cls"
+    ],
+    "betterproto_renamed_proto_names_to_value": [
+      "cls"
+    ]
+  },
+  "ExpressionSubquerySetComparisonComparisonOp": {
+    "UNSPECIFIED": [],
+    "EQ": [],
+    "NE": [],
+    "LT": [],
+    "GT": [],
+    "LE": [],
+    "GE": [],
+    "betterproto_value_to_renamed_proto_names": [
+      "cls"
+    ],
+    "betterproto_renamed_proto_names_to_value": [
+      "cls"
+    ]
+  },
+  "ExpressionSubquerySetComparisonReductionOp": {
+    "UNSPECIFIED": [],
+    "ANY": [],
+    "ALL": [],
+    "betterproto_value_to_renamed_proto_names": [
+      "cls"
+    ],
+    "betterproto_renamed_proto_names_to_value": [
+      "cls"
+    ]
+  },
+  "ExpressionSubquerySetPredicatePredicateOp": {
+    "UNSPECIFIED": [],
+    "EXISTS": [],
+    "UNIQUE": [],
+    "betterproto_value_to_renamed_proto_names": [
+      "cls"
+    ],
+    "betterproto_renamed_proto_names_to_value": [
+      "cls"
+    ]
+  },
+  "ExpressionWindowFunctionBoundsType": {
+    "UNSPECIFIED": [],
+    "ROWS": [],
+    "RANGE": [],
+    "betterproto_value_to_renamed_proto_names": [
+      "cls"
+    ],
+    "betterproto_renamed_proto_names_to_value": [
+      "cls"
+    ]
+  },
+  "FunctionSignatureFinalArgVariadicParameterConsistency": {
+    "UNSPECIFIED": [],
+    "CONSISTENT": [],
+    "INCONSISTENT": [],
+    "betterproto_value_to_renamed_proto_names": [
+      "cls"
+    ],
+    "betterproto_renamed_proto_names_to_value": [
+      "cls"
+    ]
+  },
+  "FunctionSignatureImplementationType": {
+    "UNSPECIFIED": [],
+    "WEB_ASSEMBLY": [],
+    "TRINO_JAR": [],
+    "betterproto_value_to_renamed_proto_names": [
+      "cls"
+    ],
+    "betterproto_renamed_proto_names_to_value": [
+      "cls"
+    ]
+  },
+  "FunctionSignatureWindowWindowType": {
+    "UNSPECIFIED": [],
+    "STREAMING": [],
+    "PARTITION": [],
+    "betterproto_value_to_renamed_proto_names": [
+      "cls"
+    ],
+    "betterproto_renamed_proto_names_to_value": [
+      "cls"
+    ]
+  },
+  "HashJoinRelJoinType": {
+    "UNSPECIFIED": [],
+    "INNER": [],
+    "OUTER": [],
+    "LEFT": [],
+    "RIGHT": [],
+    "LEFT_SEMI": [],
+    "RIGHT_SEMI": [],
+    "LEFT_ANTI": [],
+    "RIGHT_ANTI": [],
+    "LEFT_SINGLE": [],
+    "RIGHT_SINGLE": [],
+    "LEFT_MARK": [],
+    "RIGHT_MARK": [],
+    "betterproto_value_to_renamed_proto_names": [
+      "cls"
+    ],
+    "betterproto_renamed_proto_names_to_value": [
+      "cls"
+    ]
+  },
+  "JoinRelJoinType": {
+    "UNSPECIFIED": [],
+    "INNER": [],
+    "OUTER": [],
+    "LEFT": [],
+    "RIGHT": [],
+    "LEFT_SEMI": [],
+    "LEFT_ANTI": [],
+    "LEFT_SINGLE": [],
+    "RIGHT_SEMI": [],
+    "RIGHT_ANTI": [],
+    "RIGHT_SINGLE": [],
+    "LEFT_MARK": [],
+    "RIGHT_MARK": [],
+    "betterproto_value_to_renamed_proto_names": [
+      "cls"
+    ],
+    "betterproto_renamed_proto_names_to_value": [
+      "cls"
+    ]
+  },
+  "MergeJoinRelJoinType": {
+    "UNSPECIFIED": [],
+    "INNER": [],
+    "OUTER": [],
+    "LEFT": [],
+    "RIGHT": [],
+    "LEFT_SEMI": [],
+    "RIGHT_SEMI": [],
+    "LEFT_ANTI": [],
+    "RIGHT_ANTI": [],
+    "LEFT_SINGLE": [],
+    "RIGHT_SINGLE": [],
+    "LEFT_MARK": [],
+    "RIGHT_MARK": [],
+    "betterproto_value_to_renamed_proto_names": [
+      "cls"
+    ],
+    "betterproto_renamed_proto_names_to_value": [
+      "cls"
+    ]
+  },
+  "NestedLoopJoinRelJoinType": {
+    "UNSPECIFIED": [],
+    "INNER": [],
+    "OUTER": [],
+    "LEFT": [],
+    "RIGHT": [],
+    "LEFT_SEMI": [],
+    "RIGHT_SEMI": [],
+    "LEFT_ANTI": [],
+    "RIGHT_ANTI": [],
+    "LEFT_SINGLE": [],
+    "RIGHT_SINGLE": [],
+    "LEFT_MARK": [],
+    "RIGHT_MARK": [],
+    "betterproto_value_to_renamed_proto_names": [
+      "cls"
+    ],
+    "betterproto_renamed_proto_names_to_value": [
+      "cls"
+    ]
+  },
+  "RelCommonHintComputationType": {
+    "UNSPECIFIED": [],
+    "HASHTABLE": [],
+    "BLOOM_FILTER": [],
+    "UNKNOWN": [],
+    "betterproto_value_to_renamed_proto_names": [
+      "cls"
+    ],
+    "betterproto_renamed_proto_names_to_value": [
+      "cls"
+    ]
+  },
+  "SetRelSetOp": {
+    "UNSPECIFIED": [],
+    "MINUS_PRIMARY": [],
+    "MINUS_PRIMARY_ALL": [],
+    "MINUS_MULTISET": [],
+    "INTERSECTION_PRIMARY": [],
+    "INTERSECTION_MULTISET": [],
+    "INTERSECTION_MULTISET_ALL": [],
+    "UNION_DISTINCT": [],
+    "UNION_ALL": [],
+    "betterproto_value_to_renamed_proto_names": [
+      "cls"
+    ],
+    "betterproto_renamed_proto_names_to_value": [
+      "cls"
+    ]
+  },
+  "SortFieldSortDirection": {
+    "UNSPECIFIED": [],
+    "ASC_NULLS_FIRST": [],
+    "ASC_NULLS_LAST": [],
+    "DESC_NULLS_FIRST": [],
+    "DESC_NULLS_LAST": [],
+    "CLUSTERED": [],
+    "betterproto_value_to_renamed_proto_names": [
+      "cls"
+    ],
+    "betterproto_renamed_proto_names_to_value": [
+      "cls"
+    ]
+  },
+  "TypeNullability": {
+    "UNSPECIFIED": [],
+    "NULLABLE": [],
+    "REQUIRED": [],
+    "betterproto_value_to_renamed_proto_names": [
+      "cls"
+    ],
+    "betterproto_renamed_proto_names_to_value": [
+      "cls"
+    ]
+  },
+  "WriteRelOutputMode": {
+    "UNSPECIFIED": [],
+    "NO_OUTPUT": [],
+    "MODIFIED_RECORDS": [],
+    "betterproto_value_to_renamed_proto_names": [
+      "cls"
+    ],
+    "betterproto_renamed_proto_names_to_value": [
+      "cls"
+    ]
+  },
+  "WriteRelWriteOp": {
+    "UNSPECIFIED": [],
+    "INSERT": [],
+    "DELETE": [],
+    "UPDATE": [],
+    "CTAS": [],
+    "betterproto_value_to_renamed_proto_names": [
+      "cls"
+    ],
+    "betterproto_renamed_proto_names_to_value": [
+      "cls"
+    ]
+  },
+  "AggregateFunction": {
+    "__post_init__": [
+      "self"
+    ]
+  },
+  "AggregateRel": {},
+  "AggregateRelGrouping": {
+    "__post_init__": [
+      "self"
+    ]
+  },
+  "AggregateRelMeasure": {},
+  "Capabilities": {},
+  "CapabilitiesSimpleExtension": {},
+  "ComparisonJoinKey": {},
+  "ComparisonJoinKeyComparisonType": {},
+  "ConsistentPartitionWindowRel": {},
+  "ConsistentPartitionWindowRelWindowRelFunction": {},
+  "CrossRel": {},
+  "DdlRel": {},
+  "DerivationExpression": {
+    "__post_init__": [
+      "self"
+    ]
+  },
+  "DerivationExpressionBinaryOp": {},
+  "DerivationExpressionExpressionDecimal": {},
+  "DerivationExpressionExpressionFixedBinary": {},
+  "DerivationExpressionExpressionFixedChar": {},
+  "DerivationExpressionExpressionIntervalCompound": {},
+  "DerivationExpressionExpressionIntervalDay": {},
+  "DerivationExpressionExpressionList": {},
+  "DerivationExpressionExpressionMap": {},
+  "DerivationExpressionExpressionNamedStruct": {},
+  "DerivationExpressionExpressionPrecisionTimestamp": {},
+  "DerivationExpressionExpressionPrecisionTimestampTz": {},
+  "DerivationExpressionExpressionStruct": {},
+  "DerivationExpressionExpressionUserDefined": {},
+  "DerivationExpressionExpressionVarChar": {},
+  "DerivationExpressionIfElse": {},
+  "DerivationExpressionReturnProgram": {},
+  "DerivationExpressionReturnProgramAssignment": {},
+  "DerivationExpressionUnaryOp": {},
+  "ExchangeRel": {},
+  "ExchangeRelBroadcast": {},
+  "ExchangeRelExchangeTarget": {},
+  "ExchangeRelMultiBucketExpression": {},
+  "ExchangeRelRoundRobin": {},
+  "ExchangeRelScatterFields": {},
+  "ExchangeRelSingleBucketExpression": {},
+  "ExpandRel": {},
+  "ExpandRelExpandField": {},
+  "ExpandRelSwitchingField": {},
+  "Expression": {
+    "__post_init__": [
+      "self"
+    ]
+  },
+  "ExpressionCast": {},
+  "ExpressionEmbeddedFunction": {},
+  "ExpressionEmbeddedFunctionPythonPickleFunction": {},
+  "ExpressionEmbeddedFunctionWebAssemblyFunction": {},
+  "ExpressionEnum": {
+    "__post_init__": [
+      "self"
+    ]
+  },
+  "ExpressionEnumEmpty": {
+    "__post_init__": [
+      "self"
+    ]
+  },
+  "ExpressionFieldReference": {},
+  "ExpressionFieldReferenceOuterReference": {},
+  "ExpressionFieldReferenceRootReference": {},
+  "ExpressionIfThen": {},
+  "ExpressionIfThenIfClause": {},
+  "ExpressionLiteral": {
+    "__post_init__": [
+      "self"
+    ]
+  },
+  "ExpressionLiteralDecimal": {},
+  "ExpressionLiteralIntervalCompound": {},
+  "ExpressionLiteralIntervalDayToSecond": {
+    "__post_init__": [
+      "self"
+    ]
+  },
+  "ExpressionLiteralIntervalYearToMonth": {},
+  "ExpressionLiteralList": {},
+  "ExpressionLiteralMap": {},
+  "ExpressionLiteralMapKeyValue": {},
+  "ExpressionLiteralPrecisionTimestamp": {},
+  "ExpressionLiteralStruct": {},
+  "ExpressionLiteralUserDefined": {},
+  "ExpressionLiteralVarChar": {},
+  "ExpressionMaskExpression": {},
+  "ExpressionMaskExpressionListSelect": {},
+  "ExpressionMaskExpressionListSelectListSelectItem": {},
+  "ExpressionMaskExpressionListSelectListSelectItemListElement": {},
+  "ExpressionMaskExpressionListSelectListSelectItemListSlice": {},
+  "ExpressionMaskExpressionMapSelect": {},
+  "ExpressionMaskExpressionMapSelectMapKey": {},
+  "ExpressionMaskExpressionMapSelectMapKeyExpression": {},
+  "ExpressionMaskExpressionSelect": {},
+  "ExpressionMaskExpressionStructItem": {},
+  "ExpressionMaskExpressionStructSelect": {},
+  "ExpressionMultiOrList": {},
+  "ExpressionMultiOrListRecord": {},
+  "ExpressionNested": {},
+  "ExpressionNestedList": {},
+  "ExpressionNestedMap": {},
+  "ExpressionNestedMapKeyValue": {},
+  "ExpressionNestedStruct": {},
+  "ExpressionReferenceSegment": {},
+  "ExpressionReferenceSegmentListElement": {},
+  "ExpressionReferenceSegmentMapKey": {},
+  "ExpressionReferenceSegmentStructField": {},
+  "ExpressionScalarFunction": {
+    "__post_init__": [
+      "self"
+    ]
+  },
+  "ExpressionSingularOrList": {},
+  "ExpressionSubquery": {},
+  "ExpressionSubqueryInPredicate": {},
+  "ExpressionSubqueryScalar": {},
+  "ExpressionSubquerySetComparison": {},
+  "ExpressionSubquerySetPredicate": {},
+  "ExpressionSwitchExpression": {},
+  "ExpressionSwitchExpressionIfValue": {},
+  "ExpressionWindowFunction": {
+    "__post_init__": [
+      "self"
+    ]
+  },
+  "ExpressionWindowFunctionBound": {},
+  "ExpressionWindowFunctionBoundCurrentRow": {},
+  "ExpressionWindowFunctionBoundFollowing": {},
+  "ExpressionWindowFunctionBoundPreceding": {},
+  "ExpressionWindowFunctionBoundUnbounded": {},
+  "ExpressionReference": {},
+  "ExtendedExpression": {},
+  "ExtensionLeafRel": {},
+  "ExtensionMultiRel": {},
+  "ExtensionObject": {},
+  "ExtensionSingleRel": {},
+  "FetchRel": {},
+  "FilterRel": {},
+  "FunctionArgument": {},
+  "FunctionOption": {},
+  "FunctionSignature": {},
+  "FunctionSignatureAggregate": {},
+  "FunctionSignatureArgument": {},
+  "FunctionSignatureArgumentEnumArgument": {},
+  "FunctionSignatureArgumentTypeArgument": {},
+  "FunctionSignatureArgumentValueArgument": {},
+  "FunctionSignatureDescription": {},
+  "FunctionSignatureFinalArgNormal": {},
+  "FunctionSignatureFinalArgVariadic": {},
+  "FunctionSignatureImplementation": {},
+  "FunctionSignatureScalar": {},
+  "FunctionSignatureWindow": {},
+  "HashJoinRel": {
+    "__post_init__": [
+      "self"
+    ]
+  },
+  "JoinRel": {},
+  "MergeJoinRel": {
+    "__post_init__": [
+      "self"
+    ]
+  },
+  "NamedObjectWrite": {},
+  "NamedStruct": {},
+  "NestedLoopJoinRel": {},
+  "ParameterizedType": {
+    "__post_init__": [
+      "self"
+    ]
+  },
+  "ParameterizedTypeIntegerOption": {},
+  "ParameterizedTypeIntegerParameter": {},
+  "ParameterizedTypeNullableInteger": {},
+  "ParameterizedTypeParameterizedDecimal": {},
+  "ParameterizedTypeParameterizedFixedBinary": {},
+  "ParameterizedTypeParameterizedFixedChar": {},
+  "ParameterizedTypeParameterizedIntervalCompound": {},
+  "ParameterizedTypeParameterizedIntervalDay": {},
+  "ParameterizedTypeParameterizedList": {},
+  "ParameterizedTypeParameterizedMap": {},
+  "ParameterizedTypeParameterizedNamedStruct": {},
+  "ParameterizedTypeParameterizedPrecisionTimestamp": {},
+  "ParameterizedTypeParameterizedPrecisionTimestampTz": {},
+  "ParameterizedTypeParameterizedStruct": {},
+  "ParameterizedTypeParameterizedUserDefined": {},
+  "ParameterizedTypeParameterizedVarChar": {},
+  "ParameterizedTypeTypeParameter": {},
+  "PlanRel": {},
+  "PlanVersion": {},
+  "ProjectRel": {},
+  "ReadRel": {},
+  "ReadRelExtensionTable": {},
+  "ReadRelLocalFiles": {},
+  "ReadRelLocalFilesFileOrFiles": {},
+  "ReadRelLocalFilesFileOrFilesArrowReadOptions": {},
+  "ReadRelLocalFilesFileOrFilesDelimiterSeparatedTextReadOptions": {},
+  "ReadRelLocalFilesFileOrFilesDwrfReadOptions": {},
+  "ReadRelLocalFilesFileOrFilesOrcReadOptions": {},
+  "ReadRelLocalFilesFileOrFilesParquetReadOptions": {},
+  "ReadRelNamedTable": {},
+  "ReadRelVirtualTable": {
+    "__post_init__": [
+      "self"
+    ]
+  },
+  "ReferenceRel": {},
+  "Rel": {},
+  "RelCommon": {},
+  "RelCommonDirect": {},
+  "RelCommonEmit": {},
+  "RelCommonHint": {},
+  "RelCommonHintLoadedComputation": {},
+  "RelCommonHintRuntimeConstraint": {},
+  "RelCommonHintSavedComputation": {},
+  "RelCommonHintStats": {},
+  "RelRoot": {},
+  "SetRel": {},
+  "SortField": {},
+  "SortRel": {},
+  "Type": {
+    "__post_init__": [
+      "self"
+    ]
+  },
+  "TypeBinary": {},
+  "TypeBoolean": {},
+  "TypeDate": {},
+  "TypeDecimal": {},
+  "TypeFixedBinary": {},
+  "TypeFixedChar": {},
+  "TypeFp32": {},
+  "TypeFp64": {},
+  "TypeI16": {},
+  "TypeI32": {},
+  "TypeI64": {},
+  "TypeI8": {},
+  "TypeIntervalCompound": {},
+  "TypeIntervalDay": {},
+  "TypeIntervalYear": {},
+  "TypeList": {},
+  "TypeMap": {},
+  "TypeParameter": {},
+  "TypePrecisionTimestamp": {},
+  "TypePrecisionTimestampTz": {},
+  "TypeString": {},
+  "TypeStruct": {},
+  "TypeTime": {},
+  "TypeTimestamp": {},
+  "TypeTimestampTz": {},
+  "TypeUserDefined": {},
+  "TypeUuid": {},
+  "TypeVarChar": {},
+  "Version": {},
+  "WriteRel": {},
+  "AdvancedExtension": {},
+  "SimpleExtensionDeclaration": {},
+  "SimpleExtensionDeclarationExtensionFunction": {},
+  "SimpleExtensionDeclarationExtensionType": {},
+  "SimpleExtensionDeclarationExtensionTypeVariation": {},
+  "SimpleExtensionUri": {},
+  "ColumnVarOpts": {},
+  "KeyVarOpts": {},
+  "TransactionsListResponse": {},
+  "_ResourceMetadata": {},
+  "_GetResourceMetadataResponse": {},
+  "_SetResourceMetadataRequest": {},
+  "_DropResourceMetadataRequest": {},
+  "_GetColumnMetadataRequest": {},
+  "_SetColumnMetadataRequest": {},
+  "_DropColumnMetadataRequest": {},
+  "_MountFileSystemRequest": {},
+  "_MountFileSystemResponse": {},
+  "_TableFileSystemsResponse": {},
+  "TablesService": {
+    "__init__": [
+      "self",
+      "client"
+    ],
+    "list_transactions": [
+      "self",
+      "table_id"
+    ],
+    "revert_transaction": [
+      "self",
+      "table_id",
+      "txn_idx"
+    ],
+    "get_table_metadata": [
+      "self",
+      "table_id"
+    ],
+    "set_table_metadata": [
+      "self",
+      "table_id",
+      "entries"
+    ],
+    "drop_table_metadata": [
+      "self",
+      "table_id",
+      "keys"
+    ],
+    "get_column_metadata": [
+      "self",
+      "table_id",
+      "column_group",
+      "column_id"
+    ],
+    "set_column_metadata": [
+      "self",
+      "table_id",
+      "column_group",
+      "column_id",
+      "entries"
+    ],
+    "drop_column_metadata": [
+      "self",
+      "table_id",
+      "column_group",
+      "column_id",
+      "keys"
+    ],
+    "mount_file_system": [
+      "self",
+      "table_id",
+      "file_system",
+      "directory"
+    ],
+    "get_file_systems": [
+      "self",
+      "table_id"
+    ]
+  },
+  "_validate_directory_path": [
+    "path"
+  ],
+  "DirectoryPath": [],
+  "FilePath": [],
+  "FsLoc": [],
+  "BuiltinFileSystem": {},
+  "UpstreamFileSystem": {},
+  "S3FileSystem": {},
+  "VaultSecret": {},
+  "S3LikeFileSystem": {},
+  "GCSFileSystem": {},
+  "FileSystem": [],
+  "UpdateFileSystemRequest": {},
+  "UpdateFileSystemResponse": {},
+  "Mode": {
+    "READ_ONLY": [],
+    "READ_WRITE": []
+  },
+  "Mount": {},
+  "CreateMountRequest": {},
+  "CreateMountResponse": {},
+  "GetMountAndFileSystemResponse": {},
+  "FileSystemsService": {
+    "list_providers": [
+      "self"
+    ],
+    "update_file_system": [
+      "self",
+      "project_id",
+      "request"
+    ],
+    "get_file_system": [
+      "self",
+      "project_id"
+    ],
+    "create_mount": [
+      "self",
+      "project_id",
+      "request"
+    ],
+    "list_mounts": [
+      "self",
+      "project_id"
+    ],
+    "get_mount": [
+      "self",
+      "mount_id"
+    ],
+    "get_mount_and_file_system": [
+      "self",
+      "mount_id"
+    ],
+    "remove_mount": [
+      "self",
+      "mount_id"
+    ]
+  },
+  "_validate_root_uri": [
+    "uri"
+  ],
+  "UserId": [],
+  "OrgId": [],
+  "ProjectId": [],
+  "TableId": [],
+  "RoleId": [],
+  "IndexId": [],
+  "WorkerId": [],
+  "RootUri": [],
+  "DatasetName": [],
+  "TableName": [],
+  "IndexName": [],
+  "DaskComputeAuth": {},
+  "ComputeResponse": {},
+  "ComputeService": {
+    "get": [
+      "self",
+      "project_id"
+    ],
+    "update": [
+      "self",
+      "project_id",
+      "payload"
+    ]
+  },
+  "CreateProjectRequest": {},
+  "CreateProjectResponse": {},
+  "Grant": {},
+  "OrgRolePrincipalConditions": {},
+  "OrgUserPrincipalConditions": {},
+  "WorkloadPrincipalConditions": {},
+  "PrincipalConditions": [],
+  "GrantRoleRequest": {},
+  "GrantRoleResponse": {},
+  "TableResource": {},
+  "TextIndexResource": {},
+  "ProjectsService": {
+    "create": [
+      "self",
+      "request"
+    ],
+    "list": [
+      "self"
+    ],
+    "list_tables": [
+      "self",
+      "project_id",
+      "dataset",
+      "table",
+      "page_size"
+    ],
+    "list_text_indexes": [
+      "self",
+      "project_id",
+      "name"
+    ],
+    "get": [
+      "self",
+      "project_id"
+    ],
+    "drop": [
+      "self",
+      "project_id"
+    ],
+    "grant_role": [
+      "self",
+      "project_id",
+      "request"
+    ],
+    "list_grants": [
+      "self",
+      "project_id",
+      "principal"
+    ],
+    "get_grant": [
+      "self",
+      "grant_id"
+    ],
+    "revoke_grant": [
+      "self",
+      "grant_id"
+    ]
+  },
+  "log": [],
+  "E": [],
+  "PagedRequest": {},
+  "PagedResponse": {},
+  "PagedReqT": [],
+  "Paged": {
+    "__init__": [
+      "self",
+      "client",
+      "path",
+      "page_token",
+      "page_size",
+      "response_cls",
+      "params"
+    ],
+    "page": [
+      "self"
+    ],
+    "_fetch_next_page": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ]
+  },
+  "ServiceBase": {
+    "__init__": [
+      "self",
+      "client"
+    ]
+  },
+  "SpiralHTTPError": {
+    "__init__": [
+      "self",
+      "body",
+      "code"
+    ]
+  },
+  "_Client": {
+    "RequestT": [],
+    "ResponseT": [],
+    "__init__": [
+      "self",
+      "http",
+      "authn"
+    ],
+    "_handle_deprecation": [
+      "self",
+      "response",
+      "path"
+    ],
+    "get": [
+      "self",
+      "path",
+      "response_cls"
+    ],
+    "post": [
+      "self",
+      "path",
+      "req",
+      "response_cls"
+    ],
+    "put": [
+      "self",
+      "path",
+      "req",
+      "response_cls"
+    ],
+    "patch": [
+      "self",
+      "path",
+      "req",
+      "response_cls"
+    ],
+    "delete": [
+      "self",
+      "path",
+      "response_cls"
+    ],
+    "request": [
+      "self",
+      "method",
+      "path",
+      "req",
+      "response_cls"
+    ],
+    "paged": [
+      "self",
+      "path",
+      "response_cls"
+    ]
+  },
+  "TextSearchWorker": {},
+  "CreateWorkerRequest": {},
+  "CreateWorkerResponse": {},
+  "SyncIndexRequest": {},
+  "SyncIndexResponse": {},
+  "TextIndexesService": {
+    "create_worker": [
+      "self",
+      "index_id",
+      "request"
+    ],
+    "list_workers": [
+      "self",
+      "index_id"
+    ],
+    "get_worker": [
+      "self",
+      "worker_id"
+    ],
+    "shutdown_worker": [
+      "self",
+      "worker_id"
+    ],
+    "sync_index": [
+      "self",
+      "index_id",
+      "request"
+    ]
+  },
+  "OrgRole": {
+    "OWNER": [],
+    "MEMBER": [],
+    "GUEST": []
+  },
+  "Org": {},
+  "OrgMembership": {},
+  "CreateOrgRequest": {},
+  "CreateOrgResponse": {},
+  "PortalLinkIntent": {
+    "SSO": [],
+    "DIRECTORY_SYNC": [],
+    "AUDIT_LOGS": [],
+    "LOG_STREAMS": [],
+    "DOMAIN_VERIFICATION": [],
+    "BYOK": []
+  },
+  "PortalLinkRequest": {},
+  "PortalLinkResponse": {},
+  "InviteUserRequest": {},
+  "InviteUserResponse": {},
+  "OrganizationsService": {
+    "create": [
+      "self",
+      "request"
+    ],
+    "list_memberships": [
+      "self"
+    ],
+    "invite_user": [
+      "self",
+      "request"
+    ],
+    "portal_link": [
+      "self",
+      "request"
+    ]
+  },
+  "SpiralAPI": {
+    "__init__": [
+      "self",
+      "base_url",
+      "authn"
+    ],
+    "_admin": [
+      "self"
+    ],
+    "organizations": [
+      "self"
+    ],
+    "projects": [
+      "self"
+    ],
+    "file_systems": [
+      "self"
+    ],
+    "compute": [
+      "self"
+    ],
+    "workloads": [
+      "self"
+    ],
+    "tables": [
+      "self"
+    ],
+    "text_indexes": [
+      "self"
+    ]
+  },
+  "CPU": {
+    "ONE": [],
+    "TWO": [],
+    "FOUR": [],
+    "EIGHT": [],
+    "__str__": [
+      "self"
+    ]
+  },
+  "Memory": {
+    "MB_512": [],
+    "GB_1": [],
+    "GB_2": [],
+    "GB_4": [],
+    "GB_8": [],
+    "__str__": [
+      "self"
+    ]
+  },
+  "GcpRegion": {
+    "US_EAST4": [],
+    "EUROPE_WEST4": [],
+    "__str__": [
+      "self"
+    ]
+  },
+  "ResourceClass": {
+    "SMALL": [],
+    "LARGE": [],
+    "__str__": [
+      "self"
+    ]
+  },
+  "Workload": {},
+  "CreateWorkloadRequest": {},
+  "CreateWorkloadResponse": {},
+  "IssueWorkloadCredentialsResponse": {},
+  "WorkloadPolicy": {},
+  "CreateWorkloadPolicyRequest": {},
+  "CreateWorkloadPolicyResponse": {},
+  "WorkloadsService": {
+    "create": [
+      "self",
+      "project_id",
+      "request"
+    ],
+    "list": [
+      "self",
+      "project_id"
+    ],
+    "get": [
+      "self",
+      "workload_id"
+    ],
+    "deactivate": [
+      "self",
+      "workload_id"
+    ],
+    "issue_credentials": [
+      "self",
+      "workload_id"
+    ],
+    "revoke_credentials": [
+      "self",
+      "client_id"
+    ],
+    "create_policy": [
+      "self",
+      "workload_id",
+      "request"
+    ],
+    "list_policies": [
+      "self",
+      "workload_id"
+    ],
+    "remove_policy": [
+      "self",
+      "policy_id"
+    ]
+  },
+  "OrganizationDetails": {},
+  "AdminService": {
+    "sync_memberships": [
+      "self",
+      "org_id"
+    ],
+    "sync_orgs": [
+      "self"
+    ],
+    "list_orgs": [
+      "self",
+      "active"
+    ],
+    "deactivate_org": [
+      "self",
+      "org_id"
+    ],
+    "reactivate_org": [
+      "self",
+      "org_id"
+    ]
+  },
+  "NUM_SUNO_ROWS": [],
+  "SUNO_TABLE": [],
+  "NUM_FINEWEB_ROWS": [],
+  "FINEWEB_TABLE": [],
+  "NUM_EMBEDDINGS_ROWS": [],
+  "EMBEDDINGS_TABLE": [],
+  "VIDEO_PIX_FMT": [],
+  "VIDEO_CHANNELS": [],
+  "WEBVID_REPO_ID": [],
+  "WEBVID_PARTITION_PREFIX": [],
+  "WEBVID_VIDEOS_TABLE": [],
+  "WEBVID_FRAMES_TABLE": [],
+  "DEFAULT_WEBVID_TARGET_BYTES": [],
+  "DEFAULT_WEBVID_FRAME_STRIDE": [],
+  "WEBVID_NUM_SUBJECTS": [],
+  "WEBVID_DOWNLOAD_CHUNK_SIZE": [],
+  "WEBVID_USER_AGENT": [],
+  "WEBVID_REQUEST_TIMEOUT_SECONDS": [],
+  "_MICROSECONDS_PER_YEAR": [],
+  "DEFAULT_WEBVID_REFERENCE_NOW": [],
+  "DEFAULT_WEBVID_SCAN_SUBJECT_ID": [],
+  "DEFAULT_WEBVID_SCAN_SESSION_DATETIME": [],
+  "VideoMetadata": {
+    "frame_bytes": [
+      "self"
+    ],
+    "timestamp_us": [
+      "self",
+      "frame_index"
+    ]
+  },
+  "DecodedFrame": {},
+  "WebVidMetadataRow": {},
+  "PreparedWebVidVideo": {},
+  "_require_binary": [
+    "name"
+  ],
+  "_normalize_video_source": [
+    "source"
+  ],
+  "_run_json_command": [
+    "command"
+  ],
+  "_parse_frame_rate": [
+    "avg_frame_rate",
+    "r_frame_rate"
+  ],
+  "probe_video": [
+    "source"
+  ],
+  "_decode_video_frames": [
+    "metadata"
+  ],
+  "_parse_webvid_duration_us": [
+    "value"
+  ],
+  "_list_webvid_partitions": [
+    "repo_id"
+  ],
+  "_iter_webvid_metadata_rows": [
+    "repo_id"
+  ],
+  "_webvid_subject_id": [
+    "video_index"
+  ],
+  "_webvid_session_datetime": [
+    "videoid",
+    "reference_now"
+  ],
+  "_download_video_file": [
+    "client",
+    "source_url",
+    "destination"
+  ],
+  "_webvid_videos_row_to_table": [
+    "row"
+  ],
+  "_webvid_frames_batch_to_table": [
+    "subject_id",
+    "session_datetime",
+    "metadata",
+    "frames"
+  ],
+  "_decode_prepared_webvid_video": [
+    "prepared_video"
+  ],
+  "ingest_webvid_dataset": [
+    "project"
+  ],
+  "ingest_suno": [
+    "project"
+  ],
+  "ingest_fineweb": [
+    "project"
+  ],
+  "_generate_embeddings": [
+    "num_rows"
+  ],
+  "ingest_embeddings": [
+    "project"
+  ],
+  "full_scan": [
+    "sp",
+    "table"
+  ],
+  "getitem": [
+    "expr",
+    "field"
+  ],
+  "pack": [
+    "fields"
+  ],
+  "merge": [],
+  "select": [
+    "expr",
+    "names",
+    "exclude"
+  ],
+  "UDF": {
+    "__call__": [
+      "self"
+    ],
+    "name": [
+      "self"
+    ],
+    "return_type": [
+      "self",
+      "scope"
+    ],
+    "invoke": [
+      "self"
+    ]
+  },
+  "_UNSET": [],
+  "Video": [
+    "source"
+  ],
+  "_index": [
+    "expr",
+    "format"
+  ],
+  "_plan": [
+    "index_expr",
+    "selection",
+    "format"
+  ],
+  "_frames": [
+    "source",
+    "index_expr",
+    "selection",
+    "format"
+  ],
+  "read": [
+    "video_or_source",
+    "frame_indices",
+    "selection"
+  ],
+  "remux": [
+    "video_or_source",
+    "frame_indices",
+    "selection"
+  ],
+  "contains": [
+    "expr",
+    "value"
+  ],
+  "map_": [
+    "expr",
+    "transform"
+  ],
+  "any_": [
+    "expr",
+    "predicate"
+  ],
+  "all_": [
+    "expr",
+    "predicate"
+  ],
+  "slice": [
+    "array",
+    "start",
+    "stop",
+    "step"
+  ],
+  "_SliceUDF": {
+    "name": [
+      "self"
+    ],
+    "return_type": [
+      "self",
+      "scope"
+    ],
+    "invoke": [
+      "self"
+    ]
+  },
+  "substr": [
+    "expr"
+  ],
+  "extract_regex": [
+    "pattern"
+  ],
+  "_extract_regex": [
+    "arg",
+    "pattern"
+  ],
+  "expensive": [
+    "expr"
+  ],
+  "sum": [
+    "arg"
+  ],
+  "count": [
+    "arg"
+  ],
+  "first": [
+    "arg"
+  ],
+  "last": [
+    "arg"
+  ],
+  "list": [
+    "arg"
+  ],
+  "Expr": {
+    "__init__": [
+      "self",
+      "node"
+    ],
+    "__node__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "__getitem__": [
+      "self",
+      "item"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ],
+    "__lt__": [
+      "self",
+      "other"
+    ],
+    "__le__": [
+      "self",
+      "other"
+    ],
+    "__gt__": [
+      "self",
+      "other"
+    ],
+    "__ge__": [
+      "self",
+      "other"
+    ],
+    "__and__": [
+      "self",
+      "other"
+    ],
+    "__or__": [
+      "self",
+      "other"
+    ],
+    "__xor__": [
+      "self",
+      "other"
+    ],
+    "__add__": [
+      "self",
+      "other"
+    ],
+    "__sub__": [
+      "self",
+      "other"
+    ],
+    "__mul__": [
+      "self",
+      "other"
+    ],
+    "__truediv__": [
+      "self",
+      "other"
+    ],
+    "__mod__": [
+      "self",
+      "other"
+    ],
+    "__invert__": [
+      "self"
+    ],
+    "__neg__": [
+      "self"
+    ],
+    "__bool__": [
+      "self"
+    ],
+    "in_": [
+      "self",
+      "other"
+    ],
+    "contains": [
+      "self",
+      "other"
+    ],
+    "cast": [
+      "self",
+      "dtype"
+    ],
+    "select": [
+      "self"
+    ],
+    "_binary": [
+      "self",
+      "op",
+      "rhs"
+    ]
+  },
+  "Blob": [],
+  "lift": [
+    "expr"
+  ],
+  "aux": [
+    "name",
+    "dtype"
+  ],
+  "scalar": [
+    "value"
+  ],
+  "cast": [
+    "expr",
+    "dtype"
+  ],
+  "and_": [
+    "expr"
+  ],
+  "or_": [
+    "expr"
+  ],
+  "eq": [
+    "lhs",
+    "rhs"
+  ],
+  "neq": [
+    "lhs",
+    "rhs"
+  ],
+  "xor": [
+    "lhs",
+    "rhs"
+  ],
+  "lt": [
+    "lhs",
+    "rhs"
+  ],
+  "lte": [
+    "lhs",
+    "rhs"
+  ],
+  "gt": [
+    "lhs",
+    "rhs"
+  ],
+  "gte": [
+    "lhs",
+    "rhs"
+  ],
+  "negate": [
+    "expr"
+  ],
+  "not_": [
+    "expr"
+  ],
+  "is_null": [
+    "expr"
+  ],
+  "is_not_null": [
+    "expr"
+  ],
+  "add": [
+    "lhs",
+    "rhs"
+  ],
+  "subtract": [
+    "lhs",
+    "rhs"
+  ],
+  "multiply": [
+    "lhs",
+    "rhs"
+  ],
+  "divide": [
+    "lhs",
+    "rhs"
+  ],
+  "modulo": [
+    "lhs",
+    "rhs"
+  ],
+  "timestamp": [
+    "array",
+    "unit"
+  ],
+  "_TimestampUDF": {
+    "__str__": [
+      "self"
+    ],
+    "name": [
+      "self"
+    ],
+    "return_type": [
+      "self",
+      "scope"
+    ],
+    "invoke": [
+      "self"
+    ]
+  },
+  "cosine_similarity": [
+    "left",
+    "right"
+  ],
+  "dot": [
+    "left",
+    "right"
+  ],
+  "_DotUDF": {
+    "__str__": [
+      "self"
+    ],
+    "name": [
+      "self"
+    ],
+    "return_type": [
+      "self",
+      "scope"
+    ],
+    "invoke": [
+      "self"
+    ]
+  },
+  "_dot_udf": [],
+  "norm": [
+    "array"
+  ],
+  "_NormUDF": {
+    "__str__": [
+      "self"
+    ],
+    "name": [
+      "self"
+    ],
+    "return_type": [
+      "self",
+      "scope"
+    ],
+    "invoke": [
+      "self"
+    ]
+  },
+  "_norm_udf": [],
+  "_fixed_size_list_to_numpy": [
+    "caller_name",
+    "array"
+  ],
+  "find": [
+    "expr",
+    "term"
+  ],
+  "boost": [
+    "expr",
+    "factor"
+  ],
+  "TiffReadUDF": {
+    "name": [
+      "self"
+    ],
+    "return_type": [
+      "self",
+      "scope"
+    ],
+    "invoke": [
+      "self"
+    ]
+  },
+  "TiffSelectUDF": {
+    "name": [
+      "self"
+    ],
+    "return_type": [
+      "self",
+      "scope"
+    ],
+    "invoke": [
+      "self"
+    ]
+  },
+  "_return_result": [
+    "result",
+    "indexes"
+  ],
+  "_VsiOpener": {
+    "__init__": [
+      "self",
+      "file_like"
+    ],
+    "open": [
+      "self",
+      "_path",
+      "mode"
+    ],
+    "isdir": [
+      "self",
+      "_"
+    ],
+    "isfile": [
+      "self",
+      "_"
+    ],
+    "mtime": [
+      "self",
+      "_"
+    ],
+    "size": [
+      "self",
+      "_"
+    ],
+    "modified": [
+      "self",
+      "_"
+    ]
+  },
+  "DEFAULT_INLINE_THRESHOLD": [],
+  "MAX_INLINE_THRESHOLD": [],
+  "inline": [
+    "values"
+  ],
+  "external": [
+    "values"
+  ],
+  "write": [
+    "values"
+  ],
+  "bytes": [
+    "expr"
+  ],
+  "uri": [
+    "expr"
+  ],
+  "mime_type": [
+    "expr"
+  ],
+  "is_inline": [
+    "expr"
+  ],
+  "is_external": [
+    "expr"
+  ],
+  "_canonical_blob": [],
+  "_coerce_bytes": [
+    "value"
+  ]
+}
