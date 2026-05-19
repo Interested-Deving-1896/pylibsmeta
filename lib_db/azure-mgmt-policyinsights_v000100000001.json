@@ -1,0 +1,1340 @@
+{
+  "PolicyInsightsClient": {
+    "__init__": [
+      "self",
+      "credential",
+      "subscription_id",
+      "base_url"
+    ],
+    "_send_request": [
+      "self",
+      "request"
+    ],
+    "close": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self"
+    ]
+  },
+  "VERSION": [],
+  "PolicyInsightsClientConfiguration": {
+    "__init__": [
+      "self",
+      "credential",
+      "subscription_id",
+      "cloud_setting"
+    ],
+    "_configure": [
+      "self"
+    ]
+  },
+  "__version__": [],
+  "__all__": [],
+  "patch_sdk": [],
+  "_BOM": [],
+  "JSON": [],
+  "RawDeserializer": {
+    "JSON_REGEXP": [],
+    "CONTEXT_NAME": [],
+    "deserialize_from_text": [
+      "cls",
+      "data",
+      "content_type"
+    ],
+    "deserialize_from_http_generics": [
+      "cls",
+      "body_bytes",
+      "headers"
+    ]
+  },
+  "_LOGGER": [],
+  "TZ_UTC": [],
+  "_FLATTEN": [],
+  "attribute_transformer": [
+    "key",
+    "attr_desc",
+    "value"
+  ],
+  "full_restapi_key_transformer": [
+    "key",
+    "attr_desc",
+    "value"
+  ],
+  "last_restapi_key_transformer": [
+    "key",
+    "attr_desc",
+    "value"
+  ],
+  "_create_xml_node": [
+    "tag",
+    "prefix",
+    "ns"
+  ],
+  "Model": {
+    "__init__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "enable_additional_properties_sending": [
+      "cls"
+    ],
+    "is_xml_model": [
+      "cls"
+    ],
+    "_create_xml_node": [
+      "cls"
+    ],
+    "serialize": [
+      "self",
+      "keep_readonly"
+    ],
+    "as_dict": [
+      "self",
+      "keep_readonly",
+      "key_transformer"
+    ],
+    "_infer_class_models": [
+      "cls"
+    ],
+    "deserialize": [
+      "cls",
+      "data",
+      "content_type"
+    ],
+    "from_dict": [
+      "cls",
+      "data",
+      "key_extractors",
+      "content_type"
+    ],
+    "_flatten_subtype": [
+      "cls",
+      "key",
+      "objects"
+    ],
+    "_classify": [
+      "cls",
+      "response",
+      "objects"
+    ],
+    "_get_rest_key_parts": [
+      "cls",
+      "attr_key"
+    ]
+  },
+  "_decode_attribute_map_key": [
+    "key"
+  ],
+  "Serializer": {
+    "basic_types": [],
+    "_xml_basic_types_serializers": [],
+    "days": [],
+    "months": [],
+    "validation": [],
+    "__init__": [
+      "self",
+      "classes"
+    ],
+    "_serialize": [
+      "self",
+      "target_obj",
+      "data_type"
+    ],
+    "body": [
+      "self",
+      "data",
+      "data_type"
+    ],
+    "url": [
+      "self",
+      "name",
+      "data",
+      "data_type"
+    ],
+    "query": [
+      "self",
+      "name",
+      "data",
+      "data_type"
+    ],
+    "header": [
+      "self",
+      "name",
+      "data",
+      "data_type"
+    ],
+    "serialize_data": [
+      "self",
+      "data",
+      "data_type"
+    ],
+    "_get_custom_serializers": [
+      "cls",
+      "data_type"
+    ],
+    "serialize_basic": [
+      "cls",
+      "data",
+      "data_type"
+    ],
+    "serialize_unicode": [
+      "cls",
+      "data"
+    ],
+    "serialize_iter": [
+      "self",
+      "data",
+      "iter_type",
+      "div"
+    ],
+    "serialize_dict": [
+      "self",
+      "attr",
+      "dict_type"
+    ],
+    "serialize_object": [
+      "self",
+      "attr"
+    ],
+    "serialize_enum": [
+      "attr",
+      "enum_obj"
+    ],
+    "serialize_bytearray": [
+      "attr"
+    ],
+    "serialize_base64": [
+      "attr"
+    ],
+    "serialize_decimal": [
+      "attr"
+    ],
+    "serialize_long": [
+      "attr"
+    ],
+    "serialize_date": [
+      "attr"
+    ],
+    "serialize_time": [
+      "attr"
+    ],
+    "serialize_duration": [
+      "attr"
+    ],
+    "serialize_rfc": [
+      "attr"
+    ],
+    "serialize_iso": [
+      "attr"
+    ],
+    "serialize_unix": [
+      "attr"
+    ]
+  },
+  "rest_key_extractor": [
+    "attr",
+    "attr_desc",
+    "data"
+  ],
+  "rest_key_case_insensitive_extractor": [
+    "attr",
+    "attr_desc",
+    "data"
+  ],
+  "last_rest_key_extractor": [
+    "attr",
+    "attr_desc",
+    "data"
+  ],
+  "last_rest_key_case_insensitive_extractor": [
+    "attr",
+    "attr_desc",
+    "data"
+  ],
+  "attribute_key_extractor": [
+    "attr",
+    "_",
+    "data"
+  ],
+  "attribute_key_case_insensitive_extractor": [
+    "attr",
+    "_",
+    "data"
+  ],
+  "_extract_name_from_internal_type": [
+    "internal_type"
+  ],
+  "xml_key_extractor": [
+    "attr",
+    "attr_desc",
+    "data"
+  ],
+  "Deserializer": {
+    "basic_types": [],
+    "valid_date": [],
+    "__init__": [
+      "self",
+      "classes"
+    ],
+    "__call__": [
+      "self",
+      "target_obj",
+      "response_data",
+      "content_type"
+    ],
+    "_deserialize": [
+      "self",
+      "target_obj",
+      "data"
+    ],
+    "_build_additional_properties": [
+      "self",
+      "attribute_map",
+      "data"
+    ],
+    "_classify_target": [
+      "self",
+      "target",
+      "data"
+    ],
+    "failsafe_deserialize": [
+      "self",
+      "target_obj",
+      "data",
+      "content_type"
+    ],
+    "_unpack_content": [
+      "raw_data",
+      "content_type"
+    ],
+    "_instantiate_model": [
+      "self",
+      "response",
+      "attrs",
+      "additional_properties"
+    ],
+    "deserialize_data": [
+      "self",
+      "data",
+      "data_type"
+    ],
+    "deserialize_iter": [
+      "self",
+      "attr",
+      "iter_type"
+    ],
+    "deserialize_dict": [
+      "self",
+      "attr",
+      "dict_type"
+    ],
+    "deserialize_object": [
+      "self",
+      "attr"
+    ],
+    "deserialize_basic": [
+      "self",
+      "attr",
+      "data_type"
+    ],
+    "deserialize_unicode": [
+      "data"
+    ],
+    "deserialize_enum": [
+      "data",
+      "enum_obj"
+    ],
+    "deserialize_bytearray": [
+      "attr"
+    ],
+    "deserialize_base64": [
+      "attr"
+    ],
+    "deserialize_decimal": [
+      "attr"
+    ],
+    "deserialize_long": [
+      "attr"
+    ],
+    "deserialize_duration": [
+      "attr"
+    ],
+    "deserialize_date": [
+      "attr"
+    ],
+    "deserialize_time": [
+      "attr"
+    ],
+    "deserialize_rfc": [
+      "attr"
+    ],
+    "deserialize_iso": [
+      "attr"
+    ],
+    "deserialize_unix": [
+      "attr"
+    ]
+  },
+  "T": [],
+  "ClsType": [],
+  "List": [],
+  "PolicyMetadataOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "get_resource": [
+      "self",
+      "resource_name"
+    ],
+    "list": [
+      "self",
+      "query_options"
+    ]
+  },
+  "PolicyTrackedResourcesOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "list_query_results_for_management_group": [
+      "self",
+      "management_group_name",
+      "policy_tracked_resources_resource",
+      "query_options"
+    ],
+    "list_query_results_for_subscription": [
+      "self",
+      "policy_tracked_resources_resource",
+      "query_options"
+    ],
+    "list_query_results_for_resource_group": [
+      "self",
+      "resource_group_name",
+      "policy_tracked_resources_resource",
+      "query_options"
+    ],
+    "list_query_results_for_resource": [
+      "self",
+      "resource_id",
+      "policy_tracked_resources_resource",
+      "query_options"
+    ]
+  },
+  "Operations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ]
+  },
+  "RemediationsOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "list_deployments_at_management_group": [
+      "self",
+      "management_group_id",
+      "remediation_name",
+      "query_options"
+    ],
+    "cancel_at_management_group": [
+      "self",
+      "management_group_id",
+      "remediation_name"
+    ],
+    "list_for_management_group": [
+      "self",
+      "management_group_id",
+      "query_options"
+    ],
+    "create_or_update_at_management_group": [
+      "self",
+      "management_group_id",
+      "remediation_name",
+      "parameters"
+    ],
+    "get_at_management_group": [
+      "self",
+      "management_group_id",
+      "remediation_name"
+    ],
+    "delete_at_management_group": [
+      "self",
+      "management_group_id",
+      "remediation_name"
+    ],
+    "list_deployments_at_subscription": [
+      "self",
+      "remediation_name",
+      "query_options"
+    ],
+    "cancel_at_subscription": [
+      "self",
+      "remediation_name"
+    ],
+    "list_for_subscription": [
+      "self",
+      "query_options"
+    ],
+    "create_or_update_at_subscription": [
+      "self",
+      "remediation_name",
+      "parameters"
+    ],
+    "get_at_subscription": [
+      "self",
+      "remediation_name"
+    ],
+    "delete_at_subscription": [
+      "self",
+      "remediation_name"
+    ],
+    "list_deployments_at_resource_group": [
+      "self",
+      "resource_group_name",
+      "remediation_name",
+      "query_options"
+    ],
+    "cancel_at_resource_group": [
+      "self",
+      "resource_group_name",
+      "remediation_name"
+    ],
+    "list_for_resource_group": [
+      "self",
+      "resource_group_name",
+      "query_options"
+    ],
+    "create_or_update_at_resource_group": [
+      "self",
+      "resource_group_name",
+      "remediation_name",
+      "parameters"
+    ],
+    "get_at_resource_group": [
+      "self",
+      "resource_group_name",
+      "remediation_name"
+    ],
+    "delete_at_resource_group": [
+      "self",
+      "resource_group_name",
+      "remediation_name"
+    ],
+    "list_deployments_at_resource": [
+      "self",
+      "resource_id",
+      "remediation_name",
+      "query_options"
+    ],
+    "cancel_at_resource": [
+      "self",
+      "resource_id",
+      "remediation_name"
+    ],
+    "list_for_resource": [
+      "self",
+      "resource_id",
+      "query_options"
+    ],
+    "create_or_update_at_resource": [
+      "self",
+      "resource_id",
+      "remediation_name",
+      "parameters"
+    ],
+    "get_at_resource": [
+      "self",
+      "resource_id",
+      "remediation_name"
+    ],
+    "delete_at_resource": [
+      "self",
+      "resource_id",
+      "remediation_name"
+    ]
+  },
+  "PolicyStatesOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "list_query_results_for_management_group": [
+      "self",
+      "policy_states_resource",
+      "management_group_name",
+      "query_options"
+    ],
+    "summarize_for_management_group": [
+      "self",
+      "policy_states_summary_resource",
+      "management_group_name",
+      "query_options"
+    ],
+    "list_query_results_for_subscription": [
+      "self",
+      "policy_states_resource",
+      "subscription_id",
+      "query_options"
+    ],
+    "summarize_for_subscription": [
+      "self",
+      "policy_states_summary_resource",
+      "subscription_id",
+      "query_options"
+    ],
+    "list_query_results_for_resource_group": [
+      "self",
+      "policy_states_resource",
+      "subscription_id",
+      "resource_group_name",
+      "query_options"
+    ],
+    "summarize_for_resource_group": [
+      "self",
+      "policy_states_summary_resource",
+      "subscription_id",
+      "resource_group_name",
+      "query_options"
+    ],
+    "list_query_results_for_resource": [
+      "self",
+      "policy_states_resource",
+      "resource_id",
+      "query_options"
+    ],
+    "summarize_for_resource": [
+      "self",
+      "policy_states_summary_resource",
+      "resource_id",
+      "query_options"
+    ],
+    "_trigger_subscription_evaluation_initial": [
+      "self",
+      "subscription_id"
+    ],
+    "begin_trigger_subscription_evaluation": [
+      "self",
+      "subscription_id"
+    ],
+    "_trigger_resource_group_evaluation_initial": [
+      "self",
+      "subscription_id",
+      "resource_group_name"
+    ],
+    "begin_trigger_resource_group_evaluation": [
+      "self",
+      "subscription_id",
+      "resource_group_name"
+    ],
+    "list_query_results_for_policy_set_definition": [
+      "self",
+      "policy_states_resource",
+      "subscription_id",
+      "policy_set_definition_name",
+      "query_options"
+    ],
+    "summarize_for_policy_set_definition": [
+      "self",
+      "policy_states_summary_resource",
+      "subscription_id",
+      "policy_set_definition_name",
+      "query_options"
+    ],
+    "list_query_results_for_policy_definition": [
+      "self",
+      "policy_states_resource",
+      "subscription_id",
+      "policy_definition_name",
+      "query_options"
+    ],
+    "summarize_for_policy_definition": [
+      "self",
+      "policy_states_summary_resource",
+      "subscription_id",
+      "policy_definition_name",
+      "query_options"
+    ],
+    "list_query_results_for_subscription_level_policy_assignment": [
+      "self",
+      "policy_states_resource",
+      "subscription_id",
+      "policy_assignment_name",
+      "query_options"
+    ],
+    "summarize_for_subscription_level_policy_assignment": [
+      "self",
+      "policy_states_summary_resource",
+      "subscription_id",
+      "policy_assignment_name",
+      "query_options"
+    ],
+    "list_query_results_for_resource_group_level_policy_assignment": [
+      "self",
+      "policy_states_resource",
+      "subscription_id",
+      "resource_group_name",
+      "policy_assignment_name",
+      "query_options"
+    ],
+    "summarize_for_resource_group_level_policy_assignment": [
+      "self",
+      "policy_states_summary_resource",
+      "subscription_id",
+      "resource_group_name",
+      "policy_assignment_name",
+      "query_options"
+    ]
+  },
+  "PolicyEventsOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "list_query_results_for_management_group": [
+      "self",
+      "policy_events_resource",
+      "management_group_name",
+      "query_options"
+    ],
+    "list_query_results_for_subscription": [
+      "self",
+      "policy_events_resource",
+      "subscription_id",
+      "query_options"
+    ],
+    "list_query_results_for_resource_group": [
+      "self",
+      "policy_events_resource",
+      "subscription_id",
+      "resource_group_name",
+      "query_options"
+    ],
+    "list_query_results_for_resource": [
+      "self",
+      "policy_events_resource",
+      "resource_id",
+      "query_options"
+    ],
+    "list_query_results_for_policy_set_definition": [
+      "self",
+      "policy_events_resource",
+      "subscription_id",
+      "policy_set_definition_name",
+      "query_options"
+    ],
+    "list_query_results_for_policy_definition": [
+      "self",
+      "policy_events_resource",
+      "subscription_id",
+      "policy_definition_name",
+      "query_options"
+    ],
+    "list_query_results_for_subscription_level_policy_assignment": [
+      "self",
+      "policy_events_resource",
+      "subscription_id",
+      "policy_assignment_name",
+      "query_options"
+    ],
+    "list_query_results_for_resource_group_level_policy_assignment": [
+      "self",
+      "policy_events_resource",
+      "subscription_id",
+      "resource_group_name",
+      "policy_assignment_name",
+      "query_options"
+    ]
+  },
+  "PolicyRestrictionsOperations": {
+    "models": [],
+    "__init__": [
+      "self"
+    ],
+    "check_at_subscription_scope": [
+      "self",
+      "parameters"
+    ],
+    "check_at_resource_group_scope": [
+      "self",
+      "resource_group_name",
+      "parameters"
+    ]
+  },
+  "_SERIALIZER": [],
+  "build_get_resource_request": [
+    "resource_name"
+  ],
+  "build_list_request": [],
+  "build_list_query_results_for_management_group_request": [
+    "management_group_name",
+    "policy_tracked_resources_resource"
+  ],
+  "build_list_query_results_for_subscription_request": [
+    "policy_tracked_resources_resource",
+    "subscription_id"
+  ],
+  "build_list_query_results_for_resource_group_request": [
+    "resource_group_name",
+    "policy_tracked_resources_resource",
+    "subscription_id"
+  ],
+  "build_list_query_results_for_resource_request": [
+    "resource_id",
+    "policy_tracked_resources_resource"
+  ],
+  "build_list_deployments_at_management_group_request": [
+    "management_group_id",
+    "remediation_name"
+  ],
+  "build_cancel_at_management_group_request": [
+    "management_group_id",
+    "remediation_name"
+  ],
+  "build_list_for_management_group_request": [
+    "management_group_id"
+  ],
+  "build_create_or_update_at_management_group_request": [
+    "management_group_id",
+    "remediation_name"
+  ],
+  "build_get_at_management_group_request": [
+    "management_group_id",
+    "remediation_name"
+  ],
+  "build_delete_at_management_group_request": [
+    "management_group_id",
+    "remediation_name"
+  ],
+  "build_list_deployments_at_subscription_request": [
+    "remediation_name",
+    "subscription_id"
+  ],
+  "build_cancel_at_subscription_request": [
+    "remediation_name",
+    "subscription_id"
+  ],
+  "build_list_for_subscription_request": [
+    "subscription_id"
+  ],
+  "build_create_or_update_at_subscription_request": [
+    "remediation_name",
+    "subscription_id"
+  ],
+  "build_get_at_subscription_request": [
+    "remediation_name",
+    "subscription_id"
+  ],
+  "build_delete_at_subscription_request": [
+    "remediation_name",
+    "subscription_id"
+  ],
+  "build_list_deployments_at_resource_group_request": [
+    "resource_group_name",
+    "remediation_name",
+    "subscription_id"
+  ],
+  "build_cancel_at_resource_group_request": [
+    "resource_group_name",
+    "remediation_name",
+    "subscription_id"
+  ],
+  "build_list_for_resource_group_request": [
+    "resource_group_name",
+    "subscription_id"
+  ],
+  "build_create_or_update_at_resource_group_request": [
+    "resource_group_name",
+    "remediation_name",
+    "subscription_id"
+  ],
+  "build_get_at_resource_group_request": [
+    "resource_group_name",
+    "remediation_name",
+    "subscription_id"
+  ],
+  "build_delete_at_resource_group_request": [
+    "resource_group_name",
+    "remediation_name",
+    "subscription_id"
+  ],
+  "build_list_deployments_at_resource_request": [
+    "resource_id",
+    "remediation_name"
+  ],
+  "build_cancel_at_resource_request": [
+    "resource_id",
+    "remediation_name"
+  ],
+  "build_list_for_resource_request": [
+    "resource_id"
+  ],
+  "build_create_or_update_at_resource_request": [
+    "resource_id",
+    "remediation_name"
+  ],
+  "build_get_at_resource_request": [
+    "resource_id",
+    "remediation_name"
+  ],
+  "build_delete_at_resource_request": [
+    "resource_id",
+    "remediation_name"
+  ],
+  "build_next_link_request": [
+    "next_link"
+  ],
+  "build_summarize_for_management_group_request": [
+    "policy_states_summary_resource",
+    "management_group_name"
+  ],
+  "build_summarize_for_subscription_request": [
+    "policy_states_summary_resource",
+    "subscription_id"
+  ],
+  "build_summarize_for_resource_group_request": [
+    "policy_states_summary_resource",
+    "subscription_id",
+    "resource_group_name"
+  ],
+  "build_summarize_for_resource_request": [
+    "policy_states_summary_resource",
+    "resource_id"
+  ],
+  "build_trigger_subscription_evaluation_request": [
+    "subscription_id"
+  ],
+  "build_trigger_resource_group_evaluation_request": [
+    "subscription_id",
+    "resource_group_name"
+  ],
+  "build_list_query_results_for_policy_set_definition_request": [
+    "policy_states_resource",
+    "subscription_id",
+    "policy_set_definition_name"
+  ],
+  "build_summarize_for_policy_set_definition_request": [
+    "policy_states_summary_resource",
+    "subscription_id",
+    "policy_set_definition_name"
+  ],
+  "build_list_query_results_for_policy_definition_request": [
+    "policy_states_resource",
+    "subscription_id",
+    "policy_definition_name"
+  ],
+  "build_summarize_for_policy_definition_request": [
+    "policy_states_summary_resource",
+    "subscription_id",
+    "policy_definition_name"
+  ],
+  "build_list_query_results_for_subscription_level_policy_assignment_request": [
+    "policy_states_resource",
+    "subscription_id",
+    "policy_assignment_name"
+  ],
+  "build_summarize_for_subscription_level_policy_assignment_request": [
+    "policy_states_summary_resource",
+    "subscription_id",
+    "policy_assignment_name"
+  ],
+  "build_list_query_results_for_resource_group_level_policy_assignment_request": [
+    "policy_states_resource",
+    "subscription_id",
+    "resource_group_name",
+    "policy_assignment_name"
+  ],
+  "build_summarize_for_resource_group_level_policy_assignment_request": [
+    "policy_states_summary_resource",
+    "subscription_id",
+    "resource_group_name",
+    "policy_assignment_name"
+  ],
+  "build_check_at_subscription_scope_request": [
+    "subscription_id"
+  ],
+  "build_check_at_resource_group_scope_request": [
+    "resource_group_name",
+    "subscription_id"
+  ],
+  "FieldRestrictionResult": {
+    "REQUIRED": [],
+    "REMOVED": [],
+    "DENY": []
+  },
+  "PolicyEventsResourceType": {
+    "DEFAULT": []
+  },
+  "PolicyStatesResource": {
+    "DEFAULT": [],
+    "LATEST": []
+  },
+  "PolicyStatesSummaryResourceType": {
+    "LATEST": []
+  },
+  "PolicyTrackedResourcesResourceType": {
+    "DEFAULT": []
+  },
+  "ResourceDiscoveryMode": {
+    "EXISTING_NON_COMPLIANT": [],
+    "RE_EVALUATE_COMPLIANCE": []
+  },
+  "CheckRestrictionsRequest": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "CheckRestrictionsResourceDetails": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "CheckRestrictionsResult": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "CheckRestrictionsResultContentEvaluationResult": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ComplianceDetail": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ComponentEventDetails": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ComponentStateDetails": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ErrorDefinition": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ErrorDefinitionAutoGenerated": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ErrorResponse": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ErrorResponseAutoGenerated": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ExpressionEvaluationDetails": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "FieldRestriction": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "FieldRestrictions": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "IfNotExistsEvaluationDetails": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "Operation": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "OperationDisplay": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "OperationsListResults": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "PendingField": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "PolicyAssignmentSummary": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "PolicyDefinitionSummary": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "PolicyDetails": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "PolicyEvaluationDetails": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "PolicyEvaluationResult": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "PolicyEvent": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "PolicyEventsQueryResults": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "PolicyGroupSummary": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "PolicyMetadata": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "PolicyMetadataCollection": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "PolicyMetadataSlimProperties": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "PolicyMetadataProperties": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "PolicyReference": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "PolicyState": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "PolicyStatesQueryResults": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "PolicyTrackedResource": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "PolicyTrackedResourcesQueryResults": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "QueryFailure": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "QueryFailureError": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "QueryOptions": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "Remediation": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "RemediationDeployment": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "RemediationDeploymentsListResult": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "RemediationDeploymentSummary": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "RemediationFilters": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "RemediationListResult": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "SlimPolicyMetadata": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "SummarizeResults": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "Summary": {
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "SummaryResults": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "TrackedResourceModificationDetails": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "TypedErrorInfo": {
+    "_validation": [],
+    "_attribute_map": [],
+    "__init__": [
+      "self"
+    ]
+  }
+}
