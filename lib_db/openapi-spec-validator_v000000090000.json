@@ -1,0 +1,614 @@
+{
+  "get_validator_cls": [
+    "spec"
+  ],
+  "validate": [
+    "spec",
+    "base_uri",
+    "cls"
+  ],
+  "validate_url": [
+    "spec_url",
+    "cls"
+  ],
+  "validate_spec": [
+    "spec",
+    "base_uri",
+    "validator",
+    "cls",
+    "spec_url"
+  ],
+  "validate_spec_url": [
+    "spec_url",
+    "validator",
+    "cls"
+  ],
+  "__author__": [],
+  "__email__": [],
+  "__version__": [],
+  "__url__": [],
+  "__license__": [],
+  "__all__": [],
+  "logger": [],
+  "print_ok": [
+    "filename"
+  ],
+  "print_error": [
+    "filename",
+    "exc"
+  ],
+  "print_validationerror": [
+    "filename",
+    "exc",
+    "subschema_errors",
+    "index",
+    "supports_subschema_details"
+  ],
+  "should_warn_deprecated": [],
+  "warn_deprecated": [
+    "message"
+  ],
+  "main": [
+    "args"
+  ],
+  "ENV_PREFIX": [],
+  "RESOLVED_CACHE_MAXSIZE_DEFAULT": [],
+  "SCHEMA_VALIDATOR_BACKEND_DEFAULT": [],
+  "SCHEMA_VALIDATOR_BACKEND_ALLOWED": [],
+  "OpenAPISpecValidatorSettings": {
+    "model_config": [],
+    "normalize_resolved_cache_maxsize": [
+      "cls",
+      "value"
+    ],
+    "normalize_schema_validator_backend": [
+      "cls",
+      "value"
+    ]
+  },
+  "get_resolved_cache_maxsize": [],
+  "get_schema_validator_backend": [],
+  "OpenAPIError": {},
+  "OpenAPISpecValidatorError": {},
+  "read_from_stdin": [
+    "filename"
+  ],
+  "read_from_filename": [
+    "filename"
+  ],
+  "OPENAPIV2": [],
+  "OPENAPIV30": [],
+  "OPENAPIV31": [],
+  "OPENAPIV32": [],
+  "get_spec_version": [
+    "spec"
+  ],
+  "SpecVersion": {
+    "__str__": [
+      "self"
+    ]
+  },
+  "SpecVersionFinder": {
+    "pattern": [],
+    "__init__": [
+      "self",
+      "versions"
+    ],
+    "find": [
+      "self",
+      "spec"
+    ]
+  },
+  "OpenAPIVersionNotFound": {
+    "__str__": [
+      "self"
+    ]
+  },
+  "AnySchema": [],
+  "get_schema_content_v2": [],
+  "get_schema_content_v30": [],
+  "get_schema_content_v31": [],
+  "get_schema_content_v32": [],
+  "schema_v2": [],
+  "schema_v30": [],
+  "schema_v31": [],
+  "schema_v32": [],
+  "schema_v3": [],
+  "openapi_v2_schema_validator": [],
+  "openapi_v30_schema_validator": [],
+  "openapi_v31_schema_validator": [],
+  "openapi_v32_schema_validator": [],
+  "get_schema": [
+    "version"
+  ],
+  "get_schema_content": [
+    "version"
+  ],
+  "_get_jsonschema_rs_module": [],
+  "JsonschemaRsValidatorError": {},
+  "JsonschemaRsValidatorWrapper": {
+    "__init__": [
+      "self",
+      "schema",
+      "validator"
+    ],
+    "iter_errors": [
+      "self",
+      "instance"
+    ],
+    "validate": [
+      "self",
+      "instance"
+    ],
+    "is_valid": [
+      "self",
+      "instance"
+    ],
+    "_convert_rust_error": [
+      "self",
+      "rust_error",
+      "instance"
+    ],
+    "_convert_rust_error_exception": [
+      "self",
+      "rust_error",
+      "instance"
+    ]
+  },
+  "create_validator": [
+    "schema"
+  ],
+  "has_jsonschema_rs_validators": [],
+  "_use_jsonschema_rs": [],
+  "get_validator_backend": [],
+  "get_validator_for": [
+    "schema"
+  ],
+  "SpecValidatorType": [],
+  "log": [],
+  "SpecValidator": {
+    "resolver_handlers": [],
+    "__init__": [
+      "self",
+      "schema",
+      "base_uri",
+      "spec_url"
+    ],
+    "validate": [
+      "self"
+    ],
+    "is_valid": [
+      "self"
+    ],
+    "root_validator": [
+      "self"
+    ],
+    "iter_errors": [
+      "self"
+    ]
+  },
+  "OpenAPIV2SpecValidator": {
+    "schema_validator": [],
+    "keyword_validators": [],
+    "root_keywords": []
+  },
+  "OpenAPIV30SpecValidator": {
+    "schema_validator": [],
+    "keyword_validators": [],
+    "root_keywords": []
+  },
+  "OpenAPIV31SpecValidator": {
+    "schema_validator": [],
+    "keyword_validators": [],
+    "root_keywords": []
+  },
+  "OpenAPIV32SpecValidator": {
+    "schema_validator": [],
+    "keyword_validators": [],
+    "root_keywords": []
+  },
+  "SupportsValidation": {
+    "is_valid": [
+      "self",
+      "instance"
+    ],
+    "iter_errors": [
+      "self",
+      "instance",
+      "base_uri",
+      "spec_url"
+    ],
+    "validate": [
+      "self",
+      "instance",
+      "base_uri",
+      "spec_url"
+    ]
+  },
+  "P": [],
+  "T": [],
+  "wraps_errors": [
+    "func"
+  ],
+  "wraps_cached_iter": [
+    "func"
+  ],
+  "unwraps_iter": [
+    "func"
+  ],
+  "SpecValidatorProxy": {
+    "__init__": [
+      "self",
+      "cls",
+      "deprecated",
+      "use"
+    ],
+    "validate": [
+      "self",
+      "schema",
+      "base_uri",
+      "spec_url"
+    ],
+    "is_valid": [
+      "self",
+      "schema"
+    ],
+    "iter_errors": [
+      "self",
+      "schema",
+      "base_uri",
+      "spec_url"
+    ]
+  },
+  "DetectValidatorProxy": {
+    "__init__": [
+      "self",
+      "choices"
+    ],
+    "detect": [
+      "self",
+      "instance"
+    ],
+    "validate": [
+      "self",
+      "instance",
+      "base_uri",
+      "spec_url"
+    ],
+    "is_valid": [
+      "self",
+      "instance"
+    ],
+    "iter_errors": [
+      "self",
+      "instance",
+      "base_uri",
+      "spec_url"
+    ]
+  },
+  "KeywordValidator": {
+    "__init__": [
+      "self",
+      "registry"
+    ]
+  },
+  "ValueValidator": {
+    "__call__": [
+      "self",
+      "schema",
+      "value"
+    ]
+  },
+  "OpenAPIV30ValueValidator": {
+    "value_validator_cls": [],
+    "value_validator_format_checker": []
+  },
+  "OpenAPIV31ValueValidator": {
+    "value_validator_cls": [],
+    "value_validator_format_checker": []
+  },
+  "OpenAPIV32ValueValidator": {
+    "value_validator_cls": [],
+    "value_validator_format_checker": []
+  },
+  "SchemaValidator": {
+    "__init__": [
+      "self",
+      "registry"
+    ],
+    "default_validator": [
+      "self"
+    ],
+    "_collect_properties": [
+      "self",
+      "schema"
+    ],
+    "_get_schema_checker": [
+      "self",
+      "schema",
+      "schema_value"
+    ],
+    "_validate_schema_meta": [
+      "self",
+      "schema",
+      "schema_value"
+    ],
+    "__call__": [
+      "self",
+      "schema",
+      "require_properties",
+      "meta_checked"
+    ]
+  },
+  "OpenAPIV30SchemaValidator": {
+    "schema_validator_cls": [],
+    "_get_schema_checker": [
+      "self",
+      "schema",
+      "schema_value"
+    ]
+  },
+  "OpenAPIV31SchemaValidator": {
+    "default_jsonschema_dialect_id": [],
+    "schema_validator_format_checker": [],
+    "__init__": [
+      "self",
+      "registry"
+    ],
+    "_get_schema_checker": [
+      "self",
+      "schema",
+      "schema_value"
+    ],
+    "_get_schema_dialect_id": [
+      "self",
+      "schema",
+      "schema_value"
+    ],
+    "_get_validator_class_for_dialect": [
+      "self",
+      "dialect_id"
+    ],
+    "_get_default_jsonschema_dialect_id": [
+      "self",
+      "schema"
+    ],
+    "_get_spec_root": [
+      "self",
+      "schema"
+    ]
+  },
+  "OpenAPIV32SchemaValidator": {
+    "default_jsonschema_dialect_id": [],
+    "schema_validator_format_checker": []
+  },
+  "SchemasValidator": {
+    "schema_validator": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "schemas"
+    ]
+  },
+  "ParameterValidator": {
+    "schema_validator": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "parameter"
+    ]
+  },
+  "OpenAPIV2ParameterValidator": {
+    "default_validator": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "parameter"
+    ]
+  },
+  "ParametersValidator": {
+    "parameter_validator": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "parameters"
+    ]
+  },
+  "MediaTypeValidator": {
+    "schema_validator": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "mimetype",
+      "media_type"
+    ]
+  },
+  "ContentValidator": {
+    "media_type_validator": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "content"
+    ]
+  },
+  "ResponseValidator": {
+    "__call__": [
+      "self",
+      "response_code",
+      "response"
+    ]
+  },
+  "OpenAPIV2ResponseValidator": {
+    "schema_validator": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "response_code",
+      "response"
+    ]
+  },
+  "OpenAPIV3ResponseValidator": {
+    "content_validator": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "response_code",
+      "response"
+    ]
+  },
+  "ResponsesValidator": {
+    "response_validator": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "responses"
+    ]
+  },
+  "OperationValidator": {
+    "__init__": [
+      "self",
+      "registry"
+    ],
+    "responses_validator": [
+      "self"
+    ],
+    "parameters_validator": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "url",
+      "name",
+      "operation",
+      "path_parameters"
+    ],
+    "_get_path_param_names": [
+      "self",
+      "params"
+    ],
+    "_get_path_params_from_url": [
+      "self",
+      "url"
+    ]
+  },
+  "PathValidator": {
+    "OPERATIONS": [],
+    "parameters_validator": [
+      "self"
+    ],
+    "operation_validator": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "url",
+      "path_item"
+    ]
+  },
+  "OpenAPIV32PathValidator": {
+    "OPERATIONS": [],
+    "__call__": [
+      "self",
+      "url",
+      "path_item"
+    ]
+  },
+  "PathsValidator": {
+    "path_validator": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "paths"
+    ]
+  },
+  "ComponentsValidator": {
+    "schemas_validator": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "components"
+    ]
+  },
+  "TagsValidator": {
+    "__call__": [
+      "self",
+      "tags"
+    ]
+  },
+  "OpenAPIV32TagsValidator": {
+    "__call__": [
+      "self",
+      "tags"
+    ]
+  },
+  "RootValidator": {
+    "paths_validator": [
+      "self"
+    ],
+    "components_validator": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "spec"
+    ]
+  },
+  "CachedIterable": {
+    "__init__": [
+      "self",
+      "it"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__next__": [
+      "self"
+    ],
+    "__del__": [
+      "self"
+    ]
+  },
+  "CachedIterator": {
+    "__init__": [
+      "self",
+      "parent"
+    ],
+    "__next__": [
+      "self"
+    ]
+  },
+  "openapi_v2_spec_validator": [],
+  "openapi_v30_spec_validator": [],
+  "openapi_v31_spec_validator": [],
+  "openapi_v32_spec_validator": [],
+  "openapi_v3_spec_validator": [],
+  "OpenAPIV3SpecValidator": [],
+  "openapi_spec_validator_proxy": [],
+  "KeywordValidatorRegistry": {
+    "__init__": [
+      "self",
+      "keyword_validators"
+    ],
+    "__missing__": [
+      "self",
+      "keyword"
+    ]
+  },
+  "ValidatorDetectError": {},
+  "OpenAPIValidationError": {},
+  "ExtraParametersError": {},
+  "ParameterDuplicateError": {},
+  "UnresolvableParameterError": {},
+  "DuplicateOperationIDError": {}
+}
