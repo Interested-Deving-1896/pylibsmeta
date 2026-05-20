@@ -1,0 +1,2020 @@
+{
+  "_CompatFuture": {
+    "__init__": [
+      "self"
+    ],
+    "set_result": [
+      "self",
+      "result"
+    ],
+    "set_exception": [
+      "self",
+      "exception"
+    ],
+    "done": [
+      "self"
+    ],
+    "__await__": [
+      "self"
+    ],
+    "result": [
+      "self"
+    ]
+  },
+  "_get_new_future_instance": [],
+  "BaseClient": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "_create_task": [
+      "self",
+      "task"
+    ],
+    "create": [
+      "cls",
+      "config"
+    ],
+    "_create_uds_connection": [
+      "self"
+    ],
+    "close": [
+      "self",
+      "err_message"
+    ],
+    "aclose": [
+      "self",
+      "err_message"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self",
+      "exc_type",
+      "exc",
+      "tb"
+    ],
+    "_get_future": [
+      "self",
+      "callback_idx"
+    ],
+    "_get_protobuf_conn_request": [
+      "self"
+    ],
+    "_set_connection_configurations": [
+      "self"
+    ],
+    "_create_write_task": [
+      "self",
+      "request"
+    ],
+    "_write_or_buffer_request": [
+      "self",
+      "request"
+    ],
+    "_write_buffered_requests_to_socket": [
+      "self"
+    ],
+    "_encode_arg": [
+      "self",
+      "arg"
+    ],
+    "_encode_and_sum_size": [
+      "self",
+      "args_list"
+    ],
+    "_execute_command": [
+      "self",
+      "request_type",
+      "args",
+      "route"
+    ],
+    "_execute_batch": [
+      "self",
+      "commands",
+      "is_atomic",
+      "raise_on_error",
+      "retry_server_error",
+      "retry_connection_error",
+      "route",
+      "timeout"
+    ],
+    "_execute_script": [
+      "self",
+      "hash",
+      "keys",
+      "args",
+      "route"
+    ],
+    "get_pubsub_message": [
+      "self"
+    ],
+    "try_get_pubsub_message": [
+      "self"
+    ],
+    "_cancel_pubsub_futures_with_exception_safe": [
+      "self",
+      "exception"
+    ],
+    "_notification_to_pubsub_message_safe": [
+      "self",
+      "response"
+    ],
+    "_complete_pubsub_futures_safe": [
+      "self"
+    ],
+    "_write_request_await_response": [
+      "self",
+      "request"
+    ],
+    "_get_callback_index": [
+      "self"
+    ],
+    "_process_response": [
+      "self",
+      "response"
+    ],
+    "_process_push": [
+      "self",
+      "response"
+    ],
+    "_reader_loop": [
+      "self"
+    ],
+    "get_statistics": [
+      "self"
+    ],
+    "_update_connection_password": [
+      "self",
+      "password",
+      "immediate_auth"
+    ],
+    "_refresh_iam_token": [
+      "self"
+    ],
+    "_parse_pubsub_state": [
+      "self",
+      "result",
+      "is_cluster"
+    ],
+    "_get_cache_metrics": [
+      "self",
+      "metrics_type"
+    ]
+  },
+  "GlideClusterClient": {
+    "_cluster_scan": [
+      "self",
+      "cursor",
+      "match",
+      "count",
+      "type",
+      "allow_non_covered_slots"
+    ],
+    "_get_protobuf_conn_request": [
+      "self"
+    ],
+    "get_subscriptions": [
+      "self"
+    ]
+  },
+  "GlideClient": {
+    "get_subscriptions": [
+      "self"
+    ]
+  },
+  "TGlideClient": [],
+  "_glide_module": [],
+  "_legacy_modules": [],
+  "_LegacyModule": {
+    "__init__": [
+      "self",
+      "name"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ]
+  },
+  "__all__": [],
+  "_convert_to_pyo3_config": [
+    "config"
+  ],
+  "OpenTelemetry": {
+    "init": [
+      "cls",
+      "config"
+    ],
+    "is_initialized": [
+      "cls"
+    ],
+    "get_sample_percentage": [
+      "cls"
+    ],
+    "should_sample": [
+      "cls"
+    ],
+    "set_sample_percentage": [
+      "cls",
+      "percentage"
+    ]
+  },
+  "Level": {
+    "ERROR": [],
+    "WARN": [],
+    "INFO": [],
+    "DEBUG": [],
+    "TRACE": [],
+    "OFF": []
+  },
+  "Logger": {
+    "_instance": [],
+    "__init__": [
+      "self",
+      "level",
+      "file_name"
+    ],
+    "init": [
+      "cls",
+      "level",
+      "file_name"
+    ],
+    "log": [
+      "cls",
+      "log_level",
+      "log_identifier",
+      "message",
+      "err"
+    ],
+    "set_logger_config": [
+      "cls",
+      "level",
+      "file_name"
+    ]
+  },
+  "set": [
+    "client",
+    "key",
+    "path",
+    "value",
+    "set_condition"
+  ],
+  "get": [
+    "client",
+    "key",
+    "paths",
+    "options"
+  ],
+  "arrappend": [
+    "client",
+    "key",
+    "path",
+    "values"
+  ],
+  "arrindex": [
+    "client",
+    "key",
+    "path",
+    "value",
+    "options"
+  ],
+  "arrinsert": [
+    "client",
+    "key",
+    "path",
+    "index",
+    "values"
+  ],
+  "arrlen": [
+    "client",
+    "key",
+    "path"
+  ],
+  "arrpop": [
+    "client",
+    "key",
+    "options"
+  ],
+  "arrtrim": [
+    "client",
+    "key",
+    "path",
+    "start",
+    "end"
+  ],
+  "clear": [
+    "client",
+    "key",
+    "path"
+  ],
+  "debug_fields": [
+    "client",
+    "key",
+    "path"
+  ],
+  "debug_memory": [
+    "client",
+    "key",
+    "path"
+  ],
+  "delete": [
+    "client",
+    "key",
+    "path"
+  ],
+  "forget": [
+    "client",
+    "key",
+    "path"
+  ],
+  "mget": [
+    "client",
+    "keys",
+    "path"
+  ],
+  "numincrby": [
+    "client",
+    "key",
+    "path",
+    "number"
+  ],
+  "nummultby": [
+    "client",
+    "key",
+    "path",
+    "number"
+  ],
+  "objlen": [
+    "client",
+    "key",
+    "path"
+  ],
+  "objkeys": [
+    "client",
+    "key",
+    "path"
+  ],
+  "resp": [
+    "client",
+    "key",
+    "path"
+  ],
+  "strappend": [
+    "client",
+    "key",
+    "value",
+    "path"
+  ],
+  "strlen": [
+    "client",
+    "key",
+    "path"
+  ],
+  "toggle": [
+    "client",
+    "key",
+    "path"
+  ],
+  "type": [
+    "client",
+    "key",
+    "path"
+  ],
+  "create": [
+    "client",
+    "index_name",
+    "schema",
+    "options"
+  ],
+  "dropindex": [
+    "client",
+    "index_name"
+  ],
+  "list": [
+    "client"
+  ],
+  "search": [
+    "client",
+    "index_name",
+    "query",
+    "options"
+  ],
+  "aliasadd": [
+    "client",
+    "alias",
+    "index_name"
+  ],
+  "aliasdel": [
+    "client",
+    "alias"
+  ],
+  "aliasupdate": [
+    "client",
+    "alias",
+    "index_name"
+  ],
+  "info": [
+    "client",
+    "index_name",
+    "scope",
+    "shard_scope",
+    "consistency"
+  ],
+  "explain": [
+    "client",
+    "index_name",
+    "query"
+  ],
+  "explaincli": [
+    "client",
+    "index_name",
+    "query"
+  ],
+  "aggregate": [
+    "client",
+    "index_name",
+    "query",
+    "options"
+  ],
+  "profile": [
+    "client",
+    "index_name",
+    "options"
+  ],
+  "aliaslist": [
+    "client"
+  ],
+  "StandaloneCommands": {
+    "custom_command": [
+      "self",
+      "command_args"
+    ],
+    "info": [
+      "self",
+      "sections"
+    ],
+    "exec": [
+      "self",
+      "batch",
+      "raise_on_error",
+      "options"
+    ],
+    "config_resetstat": [
+      "self"
+    ],
+    "config_rewrite": [
+      "self"
+    ],
+    "client_id": [
+      "self"
+    ],
+    "ping": [
+      "self",
+      "message"
+    ],
+    "config_get": [
+      "self",
+      "parameters"
+    ],
+    "config_set": [
+      "self",
+      "parameters_map"
+    ],
+    "client_getname": [
+      "self"
+    ],
+    "dbsize": [
+      "self"
+    ],
+    "echo": [
+      "self",
+      "message"
+    ],
+    "function_load": [
+      "self",
+      "library_code",
+      "replace"
+    ],
+    "function_list": [
+      "self",
+      "library_name_pattern",
+      "with_code"
+    ],
+    "function_flush": [
+      "self",
+      "mode"
+    ],
+    "function_delete": [
+      "self",
+      "library_name"
+    ],
+    "function_kill": [
+      "self"
+    ],
+    "function_stats": [
+      "self"
+    ],
+    "function_dump": [
+      "self"
+    ],
+    "function_restore": [
+      "self",
+      "payload",
+      "policy"
+    ],
+    "time": [
+      "self"
+    ],
+    "lastsave": [
+      "self"
+    ],
+    "publish": [
+      "self",
+      "message",
+      "channel"
+    ],
+    "flushall": [
+      "self",
+      "flush_mode"
+    ],
+    "flushdb": [
+      "self",
+      "flush_mode"
+    ],
+    "copy": [
+      "self",
+      "source",
+      "destination",
+      "destinationDB",
+      "replace"
+    ],
+    "lolwut": [
+      "self",
+      "version",
+      "parameters"
+    ],
+    "random_key": [
+      "self"
+    ],
+    "wait": [
+      "self",
+      "numreplicas",
+      "timeout"
+    ],
+    "unwatch": [
+      "self"
+    ],
+    "scan": [
+      "self",
+      "cursor",
+      "match",
+      "count",
+      "type"
+    ],
+    "script_exists": [
+      "self",
+      "sha1s"
+    ],
+    "script_flush": [
+      "self",
+      "mode"
+    ],
+    "script_kill": [
+      "self"
+    ],
+    "invoke_script": [
+      "self",
+      "script",
+      "keys",
+      "args"
+    ]
+  },
+  "CoreCommands": {
+    "_execute_command": [
+      "self",
+      "request_type",
+      "args",
+      "route"
+    ],
+    "_execute_batch": [
+      "self",
+      "commands",
+      "is_atomic",
+      "raise_on_error",
+      "retry_server_error",
+      "retry_connection_error",
+      "route",
+      "timeout"
+    ],
+    "_execute_script": [
+      "self",
+      "hash",
+      "keys",
+      "args",
+      "route"
+    ],
+    "_cluster_scan": [
+      "self",
+      "cursor",
+      "match",
+      "count",
+      "type",
+      "allow_non_covered_slots"
+    ],
+    "_update_connection_password": [
+      "self",
+      "password",
+      "immediate_auth"
+    ],
+    "update_connection_password": [
+      "self",
+      "password",
+      "immediate_auth"
+    ],
+    "_refresh_iam_token": [
+      "self"
+    ],
+    "refresh_iam_token": [
+      "self"
+    ],
+    "_get_cache_metrics": [
+      "self",
+      "metrics_type"
+    ],
+    "get_cache_hit_rate": [
+      "self"
+    ],
+    "get_cache_miss_rate": [
+      "self"
+    ],
+    "get_cache_entry_count": [
+      "self"
+    ],
+    "get_cache_evictions": [
+      "self"
+    ],
+    "get_cache_total_lookups": [
+      "self"
+    ],
+    "get_cache_expirations": [
+      "self"
+    ],
+    "set": [
+      "self",
+      "key",
+      "value",
+      "conditional_set",
+      "expiry",
+      "return_old_value"
+    ],
+    "get": [
+      "self",
+      "key"
+    ],
+    "getdel": [
+      "self",
+      "key"
+    ],
+    "getrange": [
+      "self",
+      "key",
+      "start",
+      "end"
+    ],
+    "append": [
+      "self",
+      "key",
+      "value"
+    ],
+    "strlen": [
+      "self",
+      "key"
+    ],
+    "rename": [
+      "self",
+      "key",
+      "new_key"
+    ],
+    "renamenx": [
+      "self",
+      "key",
+      "new_key"
+    ],
+    "delete": [
+      "self",
+      "keys"
+    ],
+    "move": [
+      "self",
+      "key",
+      "db_index"
+    ],
+    "incr": [
+      "self",
+      "key"
+    ],
+    "incrby": [
+      "self",
+      "key",
+      "amount"
+    ],
+    "incrbyfloat": [
+      "self",
+      "key",
+      "amount"
+    ],
+    "setrange": [
+      "self",
+      "key",
+      "offset",
+      "value"
+    ],
+    "mset": [
+      "self",
+      "key_value_map"
+    ],
+    "msetnx": [
+      "self",
+      "key_value_map"
+    ],
+    "mget": [
+      "self",
+      "keys"
+    ],
+    "decr": [
+      "self",
+      "key"
+    ],
+    "decrby": [
+      "self",
+      "key",
+      "amount"
+    ],
+    "touch": [
+      "self",
+      "keys"
+    ],
+    "hset": [
+      "self",
+      "key",
+      "field_value_map"
+    ],
+    "hget": [
+      "self",
+      "key",
+      "field"
+    ],
+    "hsetnx": [
+      "self",
+      "key",
+      "field",
+      "value"
+    ],
+    "hincrby": [
+      "self",
+      "key",
+      "field",
+      "amount"
+    ],
+    "hincrbyfloat": [
+      "self",
+      "key",
+      "field",
+      "amount"
+    ],
+    "hexists": [
+      "self",
+      "key",
+      "field"
+    ],
+    "hgetall": [
+      "self",
+      "key"
+    ],
+    "hmget": [
+      "self",
+      "key",
+      "fields"
+    ],
+    "hdel": [
+      "self",
+      "key",
+      "fields"
+    ],
+    "hlen": [
+      "self",
+      "key"
+    ],
+    "hvals": [
+      "self",
+      "key"
+    ],
+    "hkeys": [
+      "self",
+      "key"
+    ],
+    "hrandfield": [
+      "self",
+      "key"
+    ],
+    "hrandfield_count": [
+      "self",
+      "key",
+      "count"
+    ],
+    "hrandfield_withvalues": [
+      "self",
+      "key",
+      "count"
+    ],
+    "hstrlen": [
+      "self",
+      "key",
+      "field"
+    ],
+    "httl": [
+      "self",
+      "key",
+      "fields"
+    ],
+    "hpttl": [
+      "self",
+      "key",
+      "fields"
+    ],
+    "hexpiretime": [
+      "self",
+      "key",
+      "fields"
+    ],
+    "hpexpiretime": [
+      "self",
+      "key",
+      "fields"
+    ],
+    "hsetex": [
+      "self",
+      "key",
+      "field_value_map",
+      "field_conditional_change",
+      "expiry"
+    ],
+    "hgetex": [
+      "self",
+      "key",
+      "fields",
+      "expiry"
+    ],
+    "hexpire": [
+      "self",
+      "key",
+      "seconds",
+      "fields",
+      "option"
+    ],
+    "hpersist": [
+      "self",
+      "key",
+      "fields"
+    ],
+    "hpexpire": [
+      "self",
+      "key",
+      "milliseconds",
+      "fields",
+      "option"
+    ],
+    "hexpireat": [
+      "self",
+      "key",
+      "unix_timestamp",
+      "fields",
+      "option"
+    ],
+    "hpexpireat": [
+      "self",
+      "key",
+      "unix_timestamp_ms",
+      "fields",
+      "option"
+    ],
+    "lpush": [
+      "self",
+      "key",
+      "elements"
+    ],
+    "lpushx": [
+      "self",
+      "key",
+      "elements"
+    ],
+    "lpop": [
+      "self",
+      "key"
+    ],
+    "lpop_count": [
+      "self",
+      "key",
+      "count"
+    ],
+    "blpop": [
+      "self",
+      "keys",
+      "timeout"
+    ],
+    "lmpop": [
+      "self",
+      "keys",
+      "direction",
+      "count"
+    ],
+    "blmpop": [
+      "self",
+      "keys",
+      "direction",
+      "timeout",
+      "count"
+    ],
+    "lrange": [
+      "self",
+      "key",
+      "start",
+      "end"
+    ],
+    "lindex": [
+      "self",
+      "key",
+      "index"
+    ],
+    "lset": [
+      "self",
+      "key",
+      "index",
+      "element"
+    ],
+    "rpush": [
+      "self",
+      "key",
+      "elements"
+    ],
+    "rpushx": [
+      "self",
+      "key",
+      "elements"
+    ],
+    "rpop": [
+      "self",
+      "key"
+    ],
+    "rpop_count": [
+      "self",
+      "key",
+      "count"
+    ],
+    "brpop": [
+      "self",
+      "keys",
+      "timeout"
+    ],
+    "linsert": [
+      "self",
+      "key",
+      "position",
+      "pivot",
+      "element"
+    ],
+    "lmove": [
+      "self",
+      "source",
+      "destination",
+      "where_from",
+      "where_to"
+    ],
+    "blmove": [
+      "self",
+      "source",
+      "destination",
+      "where_from",
+      "where_to",
+      "timeout"
+    ],
+    "sadd": [
+      "self",
+      "key",
+      "members"
+    ],
+    "select": [
+      "self",
+      "index"
+    ],
+    "srem": [
+      "self",
+      "key",
+      "members"
+    ],
+    "smembers": [
+      "self",
+      "key"
+    ],
+    "scard": [
+      "self",
+      "key"
+    ],
+    "spop": [
+      "self",
+      "key"
+    ],
+    "spop_count": [
+      "self",
+      "key",
+      "count"
+    ],
+    "sismember": [
+      "self",
+      "key",
+      "member"
+    ],
+    "smove": [
+      "self",
+      "source",
+      "destination",
+      "member"
+    ],
+    "sunion": [
+      "self",
+      "keys"
+    ],
+    "sunionstore": [
+      "self",
+      "destination",
+      "keys"
+    ],
+    "sdiffstore": [
+      "self",
+      "destination",
+      "keys"
+    ],
+    "sinter": [
+      "self",
+      "keys"
+    ],
+    "sinterstore": [
+      "self",
+      "destination",
+      "keys"
+    ],
+    "sintercard": [
+      "self",
+      "keys",
+      "limit"
+    ],
+    "sdiff": [
+      "self",
+      "keys"
+    ],
+    "smismember": [
+      "self",
+      "key",
+      "members"
+    ],
+    "ltrim": [
+      "self",
+      "key",
+      "start",
+      "end"
+    ],
+    "lrem": [
+      "self",
+      "key",
+      "count",
+      "element"
+    ],
+    "llen": [
+      "self",
+      "key"
+    ],
+    "exists": [
+      "self",
+      "keys"
+    ],
+    "unlink": [
+      "self",
+      "keys"
+    ],
+    "expire": [
+      "self",
+      "key",
+      "seconds",
+      "option"
+    ],
+    "expireat": [
+      "self",
+      "key",
+      "unix_seconds",
+      "option"
+    ],
+    "pexpire": [
+      "self",
+      "key",
+      "milliseconds",
+      "option"
+    ],
+    "pexpireat": [
+      "self",
+      "key",
+      "unix_milliseconds",
+      "option"
+    ],
+    "expiretime": [
+      "self",
+      "key"
+    ],
+    "pexpiretime": [
+      "self",
+      "key"
+    ],
+    "ttl": [
+      "self",
+      "key"
+    ],
+    "pttl": [
+      "self",
+      "key"
+    ],
+    "persist": [
+      "self",
+      "key"
+    ],
+    "type": [
+      "self",
+      "key"
+    ],
+    "xadd": [
+      "self",
+      "key",
+      "values",
+      "options"
+    ],
+    "xdel": [
+      "self",
+      "key",
+      "ids"
+    ],
+    "xtrim": [
+      "self",
+      "key",
+      "options"
+    ],
+    "xlen": [
+      "self",
+      "key"
+    ],
+    "xrange": [
+      "self",
+      "key",
+      "start",
+      "end",
+      "count"
+    ],
+    "xrevrange": [
+      "self",
+      "key",
+      "end",
+      "start",
+      "count"
+    ],
+    "xread": [
+      "self",
+      "keys_and_ids",
+      "options"
+    ],
+    "xgroup_create": [
+      "self",
+      "key",
+      "group_name",
+      "group_id",
+      "options"
+    ],
+    "xgroup_destroy": [
+      "self",
+      "key",
+      "group_name"
+    ],
+    "xgroup_create_consumer": [
+      "self",
+      "key",
+      "group_name",
+      "consumer_name"
+    ],
+    "xgroup_del_consumer": [
+      "self",
+      "key",
+      "group_name",
+      "consumer_name"
+    ],
+    "xgroup_set_id": [
+      "self",
+      "key",
+      "group_name",
+      "stream_id",
+      "entries_read"
+    ],
+    "xreadgroup": [
+      "self",
+      "keys_and_ids",
+      "group_name",
+      "consumer_name",
+      "options"
+    ],
+    "xack": [
+      "self",
+      "key",
+      "group_name",
+      "ids"
+    ],
+    "xpending": [
+      "self",
+      "key",
+      "group_name"
+    ],
+    "xpending_range": [
+      "self",
+      "key",
+      "group_name",
+      "start",
+      "end",
+      "count",
+      "options"
+    ],
+    "xclaim": [
+      "self",
+      "key",
+      "group",
+      "consumer",
+      "min_idle_time_ms",
+      "ids",
+      "options"
+    ],
+    "xclaim_just_id": [
+      "self",
+      "key",
+      "group",
+      "consumer",
+      "min_idle_time_ms",
+      "ids",
+      "options"
+    ],
+    "xautoclaim": [
+      "self",
+      "key",
+      "group_name",
+      "consumer_name",
+      "min_idle_time_ms",
+      "start",
+      "count"
+    ],
+    "xautoclaim_just_id": [
+      "self",
+      "key",
+      "group_name",
+      "consumer_name",
+      "min_idle_time_ms",
+      "start",
+      "count"
+    ],
+    "xinfo_groups": [
+      "self",
+      "key"
+    ],
+    "xinfo_consumers": [
+      "self",
+      "key",
+      "group_name"
+    ],
+    "xinfo_stream": [
+      "self",
+      "key"
+    ],
+    "xinfo_stream_full": [
+      "self",
+      "key",
+      "count"
+    ],
+    "geoadd": [
+      "self",
+      "key",
+      "members_geospatialdata",
+      "existing_options",
+      "changed"
+    ],
+    "geodist": [
+      "self",
+      "key",
+      "member1",
+      "member2",
+      "unit"
+    ],
+    "geohash": [
+      "self",
+      "key",
+      "members"
+    ],
+    "geopos": [
+      "self",
+      "key",
+      "members"
+    ],
+    "geosearch": [
+      "self",
+      "key",
+      "search_from",
+      "search_by",
+      "order_by",
+      "count",
+      "with_coord",
+      "with_dist",
+      "with_hash"
+    ],
+    "geosearchstore": [
+      "self",
+      "destination",
+      "source",
+      "search_from",
+      "search_by",
+      "count",
+      "store_dist"
+    ],
+    "zadd": [
+      "self",
+      "key",
+      "members_scores",
+      "existing_options",
+      "update_condition",
+      "changed"
+    ],
+    "zadd_incr": [
+      "self",
+      "key",
+      "member",
+      "increment",
+      "existing_options",
+      "update_condition"
+    ],
+    "zcard": [
+      "self",
+      "key"
+    ],
+    "zcount": [
+      "self",
+      "key",
+      "min_score",
+      "max_score"
+    ],
+    "zincrby": [
+      "self",
+      "key",
+      "increment",
+      "member"
+    ],
+    "zpopmax": [
+      "self",
+      "key",
+      "count"
+    ],
+    "bzpopmax": [
+      "self",
+      "keys",
+      "timeout"
+    ],
+    "zpopmin": [
+      "self",
+      "key",
+      "count"
+    ],
+    "bzpopmin": [
+      "self",
+      "keys",
+      "timeout"
+    ],
+    "zrange": [
+      "self",
+      "key",
+      "range_query",
+      "reverse"
+    ],
+    "zrange_withscores": [
+      "self",
+      "key",
+      "range_query",
+      "reverse"
+    ],
+    "zrangestore": [
+      "self",
+      "destination",
+      "source",
+      "range_query",
+      "reverse"
+    ],
+    "zrank": [
+      "self",
+      "key",
+      "member"
+    ],
+    "zrank_withscore": [
+      "self",
+      "key",
+      "member"
+    ],
+    "zrevrank": [
+      "self",
+      "key",
+      "member"
+    ],
+    "zrevrank_withscore": [
+      "self",
+      "key",
+      "member"
+    ],
+    "zrem": [
+      "self",
+      "key",
+      "members"
+    ],
+    "zremrangebyscore": [
+      "self",
+      "key",
+      "min_score",
+      "max_score"
+    ],
+    "zremrangebylex": [
+      "self",
+      "key",
+      "min_lex",
+      "max_lex"
+    ],
+    "zremrangebyrank": [
+      "self",
+      "key",
+      "start",
+      "end"
+    ],
+    "zlexcount": [
+      "self",
+      "key",
+      "min_lex",
+      "max_lex"
+    ],
+    "zscore": [
+      "self",
+      "key",
+      "member"
+    ],
+    "zmscore": [
+      "self",
+      "key",
+      "members"
+    ],
+    "zdiff": [
+      "self",
+      "keys"
+    ],
+    "zdiff_withscores": [
+      "self",
+      "keys"
+    ],
+    "zdiffstore": [
+      "self",
+      "destination",
+      "keys"
+    ],
+    "zinter": [
+      "self",
+      "keys"
+    ],
+    "zinter_withscores": [
+      "self",
+      "keys",
+      "aggregation_type"
+    ],
+    "zinterstore": [
+      "self",
+      "destination",
+      "keys",
+      "aggregation_type"
+    ],
+    "zunion": [
+      "self",
+      "keys"
+    ],
+    "zunion_withscores": [
+      "self",
+      "keys",
+      "aggregation_type"
+    ],
+    "zunionstore": [
+      "self",
+      "destination",
+      "keys",
+      "aggregation_type"
+    ],
+    "zrandmember": [
+      "self",
+      "key"
+    ],
+    "zrandmember_count": [
+      "self",
+      "key",
+      "count"
+    ],
+    "zrandmember_withscores": [
+      "self",
+      "key",
+      "count"
+    ],
+    "zmpop": [
+      "self",
+      "keys",
+      "filter",
+      "count"
+    ],
+    "bzmpop": [
+      "self",
+      "keys",
+      "modifier",
+      "timeout",
+      "count"
+    ],
+    "zintercard": [
+      "self",
+      "keys",
+      "limit"
+    ],
+    "script_show": [
+      "self",
+      "sha1"
+    ],
+    "pfadd": [
+      "self",
+      "key",
+      "elements"
+    ],
+    "pfcount": [
+      "self",
+      "keys"
+    ],
+    "pfmerge": [
+      "self",
+      "destination",
+      "source_keys"
+    ],
+    "bitcount": [
+      "self",
+      "key",
+      "options"
+    ],
+    "setbit": [
+      "self",
+      "key",
+      "offset",
+      "value"
+    ],
+    "getbit": [
+      "self",
+      "key",
+      "offset"
+    ],
+    "bitpos": [
+      "self",
+      "key",
+      "bit",
+      "options"
+    ],
+    "bitop": [
+      "self",
+      "operation",
+      "destination",
+      "keys"
+    ],
+    "bitfield": [
+      "self",
+      "key",
+      "subcommands"
+    ],
+    "bitfield_read_only": [
+      "self",
+      "key",
+      "subcommands"
+    ],
+    "object_encoding": [
+      "self",
+      "key"
+    ],
+    "object_freq": [
+      "self",
+      "key"
+    ],
+    "object_idletime": [
+      "self",
+      "key"
+    ],
+    "object_refcount": [
+      "self",
+      "key"
+    ],
+    "srandmember": [
+      "self",
+      "key"
+    ],
+    "srandmember_count": [
+      "self",
+      "key",
+      "count"
+    ],
+    "getex": [
+      "self",
+      "key",
+      "expiry"
+    ],
+    "dump": [
+      "self",
+      "key"
+    ],
+    "restore": [
+      "self",
+      "key",
+      "ttl",
+      "value",
+      "replace",
+      "absttl",
+      "idletime",
+      "frequency"
+    ],
+    "sscan": [
+      "self",
+      "key",
+      "cursor",
+      "match",
+      "count"
+    ],
+    "zscan": [
+      "self",
+      "key",
+      "cursor",
+      "match",
+      "count",
+      "no_scores"
+    ],
+    "hscan": [
+      "self",
+      "key",
+      "cursor",
+      "match",
+      "count",
+      "no_values"
+    ],
+    "fcall": [
+      "self",
+      "function",
+      "keys",
+      "arguments"
+    ],
+    "fcall_ro": [
+      "self",
+      "function",
+      "keys",
+      "arguments"
+    ],
+    "watch": [
+      "self",
+      "keys"
+    ],
+    "get_pubsub_message": [
+      "self"
+    ],
+    "try_get_pubsub_message": [
+      "self"
+    ],
+    "lcs": [
+      "self",
+      "key1",
+      "key2"
+    ],
+    "lcs_len": [
+      "self",
+      "key1",
+      "key2"
+    ],
+    "lcs_idx": [
+      "self",
+      "key1",
+      "key2",
+      "min_match_len",
+      "with_match_len"
+    ],
+    "lpos": [
+      "self",
+      "key",
+      "element",
+      "rank",
+      "count",
+      "max_len"
+    ],
+    "pubsub_channels": [
+      "self",
+      "pattern"
+    ],
+    "pubsub_numpat": [
+      "self"
+    ],
+    "pubsub_numsub": [
+      "self",
+      "channels"
+    ],
+    "sort": [
+      "self",
+      "key",
+      "by_pattern",
+      "limit",
+      "get_patterns",
+      "order",
+      "alpha"
+    ],
+    "sort_ro": [
+      "self",
+      "key",
+      "by_pattern",
+      "limit",
+      "get_patterns",
+      "order",
+      "alpha"
+    ],
+    "sort_store": [
+      "self",
+      "key",
+      "destination",
+      "by_pattern",
+      "limit",
+      "get_patterns",
+      "order",
+      "alpha"
+    ],
+    "subscribe_lazy": [
+      "self",
+      "channels"
+    ],
+    "subscribe": [
+      "self",
+      "channels",
+      "timeout_ms"
+    ],
+    "psubscribe_lazy": [
+      "self",
+      "patterns"
+    ],
+    "psubscribe": [
+      "self",
+      "patterns",
+      "timeout_ms"
+    ],
+    "unsubscribe_lazy": [
+      "self",
+      "channels"
+    ],
+    "unsubscribe": [
+      "self",
+      "channels",
+      "timeout_ms"
+    ],
+    "punsubscribe_lazy": [
+      "self",
+      "patterns"
+    ],
+    "punsubscribe": [
+      "self",
+      "patterns",
+      "timeout_ms"
+    ]
+  },
+  "ClusterCommands": {
+    "custom_command": [
+      "self",
+      "command_args",
+      "route"
+    ],
+    "info": [
+      "self",
+      "sections",
+      "route"
+    ],
+    "exec": [
+      "self",
+      "batch",
+      "raise_on_error",
+      "options"
+    ],
+    "config_resetstat": [
+      "self",
+      "route"
+    ],
+    "config_rewrite": [
+      "self",
+      "route"
+    ],
+    "client_id": [
+      "self",
+      "route"
+    ],
+    "ping": [
+      "self",
+      "message",
+      "route"
+    ],
+    "config_get": [
+      "self",
+      "parameters",
+      "route"
+    ],
+    "config_set": [
+      "self",
+      "parameters_map",
+      "route"
+    ],
+    "client_getname": [
+      "self",
+      "route"
+    ],
+    "dbsize": [
+      "self",
+      "route"
+    ],
+    "echo": [
+      "self",
+      "message",
+      "route"
+    ],
+    "function_load": [
+      "self",
+      "library_code",
+      "replace",
+      "route"
+    ],
+    "function_list": [
+      "self",
+      "library_name_pattern",
+      "with_code",
+      "route"
+    ],
+    "function_flush": [
+      "self",
+      "mode",
+      "route"
+    ],
+    "function_delete": [
+      "self",
+      "library_name",
+      "route"
+    ],
+    "function_kill": [
+      "self",
+      "route"
+    ],
+    "fcall_route": [
+      "self",
+      "function",
+      "arguments",
+      "route"
+    ],
+    "fcall_ro_route": [
+      "self",
+      "function",
+      "arguments",
+      "route"
+    ],
+    "function_stats": [
+      "self",
+      "route"
+    ],
+    "function_dump": [
+      "self",
+      "route"
+    ],
+    "function_restore": [
+      "self",
+      "payload",
+      "policy",
+      "route"
+    ],
+    "time": [
+      "self",
+      "route"
+    ],
+    "lastsave": [
+      "self",
+      "route"
+    ],
+    "publish": [
+      "self",
+      "message",
+      "channel",
+      "sharded"
+    ],
+    "pubsub_shardchannels": [
+      "self",
+      "pattern"
+    ],
+    "pubsub_shardnumsub": [
+      "self",
+      "channels"
+    ],
+    "flushall": [
+      "self",
+      "flush_mode",
+      "route"
+    ],
+    "flushdb": [
+      "self",
+      "flush_mode",
+      "route"
+    ],
+    "copy": [
+      "self",
+      "source",
+      "destination",
+      "replace",
+      "destinationDB"
+    ],
+    "lolwut": [
+      "self",
+      "version",
+      "parameters",
+      "route"
+    ],
+    "random_key": [
+      "self",
+      "route"
+    ],
+    "wait": [
+      "self",
+      "numreplicas",
+      "timeout",
+      "route"
+    ],
+    "unwatch": [
+      "self",
+      "route"
+    ],
+    "scan": [
+      "self",
+      "cursor",
+      "match",
+      "count",
+      "type",
+      "allow_non_covered_slots"
+    ],
+    "script_exists": [
+      "self",
+      "sha1s",
+      "route"
+    ],
+    "script_flush": [
+      "self",
+      "mode",
+      "route"
+    ],
+    "script_kill": [
+      "self",
+      "route"
+    ],
+    "invoke_script": [
+      "self",
+      "script",
+      "keys",
+      "args"
+    ],
+    "invoke_script_route": [
+      "self",
+      "script",
+      "args",
+      "route"
+    ],
+    "ssubscribe_lazy": [
+      "self",
+      "channels"
+    ],
+    "ssubscribe": [
+      "self",
+      "channels",
+      "timeout_ms"
+    ],
+    "sunsubscribe_lazy": [
+      "self",
+      "channels"
+    ],
+    "sunsubscribe": [
+      "self",
+      "channels",
+      "timeout_ms"
+    ]
+  }
+}

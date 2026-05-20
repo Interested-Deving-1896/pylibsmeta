@@ -1,0 +1,4474 @@
+{
+  "__all__": [],
+  "__version__": [],
+  "version": [],
+  "__version_tuple__": [],
+  "version_tuple": [],
+  "__commit_id__": [],
+  "commit_id": [],
+  "logger": [],
+  "bind": [
+    "function_name",
+    "function",
+    "method"
+  ],
+  "create_dir": [
+    "path",
+    "create_categories",
+    "verbose"
+  ],
+  "get_module_functions": [
+    "module"
+  ],
+  "_load_and_bind_module": [
+    "module_path",
+    "dirname",
+    "category_dir",
+    "verbose"
+  ],
+  "import_dir": [
+    "path",
+    "verbose"
+  ],
+  "load_indicator_module": [
+    "name"
+  ],
+  "rolling_max": [],
+  "rolling_min": [],
+  "rolling_sum": [],
+  "df": [],
+  "Strategy": {
+    "__post_init__": [
+      "self"
+    ],
+    "total_ta": [
+      "self"
+    ]
+  },
+  "AllStrategy": [],
+  "CommonStrategy": [],
+  "BasePandasObject": {
+    "__init__": [
+      "self",
+      "df"
+    ],
+    "__call__": [
+      "self",
+      "kind"
+    ]
+  },
+  "_append_dataframe": [
+    "df",
+    "result",
+    "kwargs"
+  ],
+  "AnalysisIndicators": {
+    "_adjusted": [],
+    "_cores": [],
+    "_df": [],
+    "_exchange": [],
+    "_time_range": [],
+    "_last_run": [],
+    "__init__": [
+      "self",
+      "pandas_obj"
+    ],
+    "_validate": [
+      "obj"
+    ],
+    "__call__": [
+      "self",
+      "kind",
+      "timed",
+      "version"
+    ],
+    "adjusted": [
+      "self",
+      "value"
+    ],
+    "cores": [
+      "self",
+      "value"
+    ],
+    "exchange": [
+      "self",
+      "value"
+    ],
+    "last_run": [
+      "self"
+    ],
+    "categories": [
+      "self"
+    ],
+    "datetime_ordered": [
+      "self"
+    ],
+    "reverse": [
+      "self"
+    ],
+    "time_range": [
+      "self",
+      "value"
+    ],
+    "to_utc": [
+      "self"
+    ],
+    "version": [
+      "self"
+    ],
+    "chain": [
+      "self",
+      "append"
+    ],
+    "unchain": [
+      "self"
+    ],
+    "_add_prefix_suffix": [
+      "self",
+      "result"
+    ],
+    "_append": [
+      "self",
+      "result"
+    ],
+    "_check_na_columns": [
+      "self",
+      "stdout"
+    ],
+    "_get_column": [
+      "self",
+      "series"
+    ],
+    "_indicators_by_category": [
+      "self",
+      "name"
+    ],
+    "_mp_worker": [
+      "self",
+      "arguments"
+    ],
+    "_post_process": [
+      "self",
+      "result"
+    ],
+    "_strategy_mode": [
+      "self"
+    ],
+    "_resolve_strategy_args": [
+      "self",
+      "arg"
+    ],
+    "constants": [
+      "self",
+      "append",
+      "values"
+    ],
+    "indicators": [
+      "self"
+    ],
+    "strategy": [
+      "self"
+    ],
+    "ticker": [
+      "self",
+      "ticker"
+    ],
+    "cdl_doji": [
+      "self",
+      "length",
+      "factor",
+      "scalar",
+      "drift",
+      "offset"
+    ],
+    "cdl_inside": [
+      "self",
+      "asbool",
+      "offset"
+    ],
+    "cdl_pattern": [
+      "self",
+      "name",
+      "offset"
+    ],
+    "cdl_z": [
+      "self",
+      "full",
+      "offset"
+    ],
+    "ha": [
+      "self",
+      "offset"
+    ],
+    "dsp": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "ebsw": [
+      "self",
+      "close",
+      "length",
+      "bars",
+      "offset"
+    ],
+    "ht_dcperiod": [
+      "self",
+      "close",
+      "offset"
+    ],
+    "ht_dcphase": [
+      "self",
+      "close",
+      "offset"
+    ],
+    "ht_phasor": [
+      "self",
+      "close",
+      "offset"
+    ],
+    "ht_sine": [
+      "self",
+      "close",
+      "offset"
+    ],
+    "ht_trendmode": [
+      "self",
+      "close",
+      "offset"
+    ],
+    "msw": [
+      "self",
+      "period",
+      "offset"
+    ],
+    "ao": [
+      "self",
+      "fast",
+      "slow",
+      "offset"
+    ],
+    "apo": [
+      "self",
+      "fast",
+      "slow",
+      "mamode",
+      "offset"
+    ],
+    "bias": [
+      "self",
+      "length",
+      "mamode",
+      "offset"
+    ],
+    "bop": [
+      "self",
+      "percentage",
+      "offset"
+    ],
+    "brar": [
+      "self",
+      "length",
+      "scalar",
+      "drift",
+      "offset"
+    ],
+    "cci": [
+      "self",
+      "length",
+      "c",
+      "offset"
+    ],
+    "cfo": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "cg": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "cmo": [
+      "self",
+      "length",
+      "scalar",
+      "drift",
+      "offset"
+    ],
+    "coppock": [
+      "self",
+      "length",
+      "fast",
+      "slow",
+      "offset"
+    ],
+    "cti": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "dm": [
+      "self",
+      "drift",
+      "offset",
+      "mamode"
+    ],
+    "er": [
+      "self",
+      "length",
+      "drift",
+      "offset"
+    ],
+    "eri": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "fisher": [
+      "self",
+      "length",
+      "signal",
+      "offset"
+    ],
+    "fosc": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "inertia": [
+      "self",
+      "length",
+      "rvi_length",
+      "scalar",
+      "refined",
+      "thirds",
+      "mamode",
+      "drift",
+      "offset"
+    ],
+    "kdj": [
+      "self",
+      "length",
+      "signal",
+      "offset"
+    ],
+    "lrsi": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "kst": [
+      "self",
+      "roc1",
+      "roc2",
+      "roc3",
+      "roc4",
+      "sma1",
+      "sma2",
+      "sma3",
+      "sma4",
+      "signal",
+      "offset"
+    ],
+    "macd": [
+      "self",
+      "fast",
+      "slow",
+      "signal",
+      "offset"
+    ],
+    "macdext": [
+      "self",
+      "fast",
+      "slow",
+      "signal",
+      "fastmatype",
+      "slowmatype",
+      "signalmatype",
+      "offset"
+    ],
+    "macdfix": [
+      "self",
+      "signal",
+      "offset"
+    ],
+    "mom": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "pgo": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "po": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "ppo": [
+      "self",
+      "fast",
+      "slow",
+      "scalar",
+      "mamode",
+      "offset"
+    ],
+    "psl": [
+      "self",
+      "open_",
+      "length",
+      "scalar",
+      "drift",
+      "offset"
+    ],
+    "pvo": [
+      "self",
+      "fast",
+      "slow",
+      "signal",
+      "scalar",
+      "offset"
+    ],
+    "qqe": [
+      "self",
+      "length",
+      "smooth",
+      "factor",
+      "mamode",
+      "offset"
+    ],
+    "roc": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "rocp": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "rocr": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "rocr100": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "rsi": [
+      "self",
+      "length",
+      "scalar",
+      "drift",
+      "offset"
+    ],
+    "rsx": [
+      "self",
+      "length",
+      "drift",
+      "offset"
+    ],
+    "rvgi": [
+      "self",
+      "length",
+      "swma_length",
+      "offset"
+    ],
+    "slope": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "smi": [
+      "self",
+      "fast",
+      "slow",
+      "signal",
+      "scalar",
+      "offset"
+    ],
+    "squeeze": [
+      "self",
+      "bb_length",
+      "bb_std",
+      "kc_length",
+      "kc_scalar",
+      "mom_length",
+      "mom_smooth",
+      "use_tr",
+      "mamode",
+      "offset"
+    ],
+    "squeeze_pro": [
+      "self",
+      "bb_length",
+      "bb_std",
+      "kc_length",
+      "kc_scalar_wide",
+      "kc_scalar_normal",
+      "kc_scalar_narrow",
+      "mom_length",
+      "mom_smooth",
+      "use_tr",
+      "mamode",
+      "offset"
+    ],
+    "stc": [
+      "self",
+      "ma1",
+      "ma2",
+      "osc",
+      "tclength",
+      "fast",
+      "slow",
+      "factor",
+      "offset"
+    ],
+    "stochf": [
+      "self",
+      "fastk",
+      "fastd",
+      "mamode",
+      "offset"
+    ],
+    "stoch": [
+      "self",
+      "fast_k",
+      "slow_k",
+      "slow_d",
+      "mamode",
+      "offset"
+    ],
+    "stochrsi": [
+      "self",
+      "length",
+      "rsi_length",
+      "k",
+      "d",
+      "mamode",
+      "offset"
+    ],
+    "td_seq": [
+      "self",
+      "asint",
+      "offset",
+      "show_all"
+    ],
+    "trix": [
+      "self",
+      "length",
+      "signal",
+      "scalar",
+      "drift",
+      "offset"
+    ],
+    "trixh": [
+      "self",
+      "length",
+      "signal",
+      "scalar",
+      "drift",
+      "offset"
+    ],
+    "tsi": [
+      "self",
+      "fast",
+      "slow",
+      "drift",
+      "mamode",
+      "offset"
+    ],
+    "uo": [
+      "self",
+      "fast",
+      "medium",
+      "slow",
+      "fast_w",
+      "medium_w",
+      "slow_w",
+      "drift",
+      "offset"
+    ],
+    "vwmacd": [
+      "self",
+      "fast",
+      "slow",
+      "signal",
+      "offset"
+    ],
+    "willr": [
+      "self",
+      "length",
+      "percentage",
+      "offset"
+    ],
+    "add": [
+      "self",
+      "offset"
+    ],
+    "sub": [
+      "self",
+      "offset"
+    ],
+    "div": [
+      "self",
+      "offset"
+    ],
+    "mult": [
+      "self",
+      "offset"
+    ],
+    "rolling_max": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "rolling_min": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "rolling_sum": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "maxindex": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "minindex": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "minmax": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "minmaxindex": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "acos": [
+      "self",
+      "offset"
+    ],
+    "asin": [
+      "self",
+      "offset"
+    ],
+    "atan": [
+      "self",
+      "offset"
+    ],
+    "ceil": [
+      "self",
+      "offset"
+    ],
+    "cos": [
+      "self",
+      "offset"
+    ],
+    "cosh": [
+      "self",
+      "offset"
+    ],
+    "exp": [
+      "self",
+      "offset"
+    ],
+    "floor": [
+      "self",
+      "offset"
+    ],
+    "ln": [
+      "self",
+      "offset"
+    ],
+    "log10": [
+      "self",
+      "offset"
+    ],
+    "sin": [
+      "self",
+      "offset"
+    ],
+    "sinh": [
+      "self",
+      "offset"
+    ],
+    "sqrt": [
+      "self",
+      "offset"
+    ],
+    "tan": [
+      "self",
+      "offset"
+    ],
+    "tanh": [
+      "self",
+      "offset"
+    ],
+    "npabs": [
+      "self",
+      "offset"
+    ],
+    "npround": [
+      "self",
+      "offset"
+    ],
+    "trunc": [
+      "self",
+      "offset"
+    ],
+    "todeg": [
+      "self",
+      "offset"
+    ],
+    "torad": [
+      "self",
+      "offset"
+    ],
+    "alma": [
+      "self",
+      "length",
+      "sigma",
+      "distribution_offset",
+      "offset"
+    ],
+    "dema": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "ema": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "fwma": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "hilo": [
+      "self",
+      "high_length",
+      "low_length",
+      "mamode",
+      "offset"
+    ],
+    "hl2": [
+      "self",
+      "offset"
+    ],
+    "medprice": [
+      "self",
+      "offset"
+    ],
+    "hlc3": [
+      "self",
+      "offset"
+    ],
+    "hma": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "ht_trendline": [
+      "self",
+      "close",
+      "offset"
+    ],
+    "hwma": [
+      "self",
+      "na",
+      "nb",
+      "nc",
+      "offset"
+    ],
+    "jma": [
+      "self",
+      "length",
+      "phase",
+      "offset"
+    ],
+    "kama": [
+      "self",
+      "length",
+      "fast",
+      "slow",
+      "offset"
+    ],
+    "ichimoku": [
+      "self",
+      "tenkan",
+      "kijun",
+      "senkou",
+      "include_chikou",
+      "offset"
+    ],
+    "linreg": [
+      "self",
+      "length",
+      "offset",
+      "adjust"
+    ],
+    "linregangle": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "linregintercept": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "linregslope": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "mcgd": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "mmar": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "midpoint": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "midprice": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "ohlc4": [
+      "self",
+      "offset"
+    ],
+    "avgprice": [
+      "self",
+      "offset"
+    ],
+    "typprice": [
+      "self",
+      "offset"
+    ],
+    "pwma": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "rainbow": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "rma": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "sinwma": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "ma": [
+      "self",
+      "kind",
+      "length",
+      "offset"
+    ],
+    "mama": [
+      "self",
+      "fastlimit",
+      "slowlimit",
+      "offset"
+    ],
+    "mavp": [
+      "self",
+      "periods",
+      "minperiod",
+      "maxperiod",
+      "mamode",
+      "offset"
+    ],
+    "sma": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "ssf": [
+      "self",
+      "length",
+      "poles",
+      "offset"
+    ],
+    "supertrend": [
+      "self",
+      "length",
+      "multiplier",
+      "offset"
+    ],
+    "swma": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "t3": [
+      "self",
+      "length",
+      "a",
+      "offset"
+    ],
+    "tema": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "trima": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "tsf": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "vidya": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "vwap": [
+      "self",
+      "anchor",
+      "offset"
+    ],
+    "vwma": [
+      "self",
+      "volume",
+      "length",
+      "offset"
+    ],
+    "wcp": [
+      "self",
+      "offset"
+    ],
+    "wma": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "zlma": [
+      "self",
+      "length",
+      "mamode",
+      "offset"
+    ],
+    "drawdown": [
+      "self",
+      "offset"
+    ],
+    "log_return": [
+      "self",
+      "length",
+      "cumulative",
+      "percent",
+      "offset"
+    ],
+    "percent_return": [
+      "self",
+      "length",
+      "cumulative",
+      "percent",
+      "offset"
+    ],
+    "beta": [
+      "self",
+      "benchmark",
+      "length",
+      "offset"
+    ],
+    "correl": [
+      "self",
+      "benchmark",
+      "length",
+      "offset"
+    ],
+    "entropy": [
+      "self",
+      "length",
+      "base",
+      "offset"
+    ],
+    "kurtosis": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "mad": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "md": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "median": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "quantile": [
+      "self",
+      "length",
+      "q",
+      "offset"
+    ],
+    "skew": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "stdev": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "stderr": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "tos_stdevall": [
+      "self",
+      "length",
+      "stds",
+      "offset"
+    ],
+    "variance": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "zscore": [
+      "self",
+      "length",
+      "std",
+      "offset"
+    ],
+    "adx": [
+      "self",
+      "length",
+      "lensig",
+      "mamode",
+      "scalar",
+      "drift",
+      "offset"
+    ],
+    "adxr": [
+      "self",
+      "length",
+      "lensig",
+      "mamode",
+      "scalar",
+      "drift",
+      "offset"
+    ],
+    "amat": [
+      "self",
+      "fast",
+      "slow",
+      "mamode",
+      "lookback",
+      "offset"
+    ],
+    "aroon": [
+      "self",
+      "length",
+      "scalar",
+      "offset"
+    ],
+    "chop": [
+      "self",
+      "length",
+      "atr_length",
+      "scalar",
+      "drift",
+      "offset"
+    ],
+    "cksp": [
+      "self",
+      "p",
+      "x",
+      "q",
+      "mamode",
+      "offset"
+    ],
+    "cpr": [
+      "self",
+      "method",
+      "timeframe",
+      "interval",
+      "levels",
+      "width_analysis",
+      "price_position",
+      "virgin_cpr",
+      "offset"
+    ],
+    "decay": [
+      "self",
+      "length",
+      "mode",
+      "offset"
+    ],
+    "edecay": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "decreasing": [
+      "self",
+      "length",
+      "strict",
+      "asint",
+      "offset"
+    ],
+    "dpo": [
+      "self",
+      "length",
+      "centered",
+      "offset"
+    ],
+    "increasing": [
+      "self",
+      "length",
+      "strict",
+      "asint",
+      "offset"
+    ],
+    "long_run": [
+      "self",
+      "fast",
+      "slow",
+      "length",
+      "offset"
+    ],
+    "psar": [
+      "self",
+      "af0",
+      "af",
+      "max_af",
+      "offset"
+    ],
+    "pmax": [
+      "self",
+      "length",
+      "multiplier",
+      "mamode",
+      "offset"
+    ],
+    "dx": [
+      "self",
+      "length",
+      "scalar",
+      "mamode",
+      "drift",
+      "offset"
+    ],
+    "qstick": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "sarext": [
+      "self",
+      "startvalue",
+      "offsetonreverse",
+      "accelerationinitlong",
+      "accelerationlong",
+      "accelerationmaxlong",
+      "accelerationinitshort",
+      "accelerationshort",
+      "accelerationmaxshort",
+      "offset"
+    ],
+    "short_run": [
+      "self",
+      "fast",
+      "slow",
+      "length",
+      "offset"
+    ],
+    "tsignals": [
+      "self",
+      "trend",
+      "asbool",
+      "trend_reset",
+      "trend_offset",
+      "offset"
+    ],
+    "ttm_trend": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "vhf": [
+      "self",
+      "length",
+      "drift",
+      "offset"
+    ],
+    "vortex": [
+      "self",
+      "drift",
+      "offset"
+    ],
+    "plus_dm": [
+      "self",
+      "length",
+      "drift",
+      "offset"
+    ],
+    "minus_dm": [
+      "self",
+      "length",
+      "drift",
+      "offset"
+    ],
+    "xsignals": [
+      "self",
+      "signal",
+      "xa",
+      "xb",
+      "above",
+      "long",
+      "asbool",
+      "trend_reset",
+      "trend_offset",
+      "offset"
+    ],
+    "above": [
+      "self",
+      "asint",
+      "offset"
+    ],
+    "above_value": [
+      "self",
+      "value",
+      "asint",
+      "offset"
+    ],
+    "below": [
+      "self",
+      "asint",
+      "offset"
+    ],
+    "below_value": [
+      "self",
+      "value",
+      "asint",
+      "offset"
+    ],
+    "cross": [
+      "self",
+      "above",
+      "asint",
+      "offset"
+    ],
+    "crossover": [
+      "self",
+      "asint",
+      "offset"
+    ],
+    "crossany": [
+      "self",
+      "asint",
+      "offset"
+    ],
+    "lag": [
+      "self",
+      "period",
+      "offset"
+    ],
+    "cross_value": [
+      "self",
+      "value",
+      "above",
+      "asint",
+      "offset"
+    ],
+    "aberration": [
+      "self",
+      "length",
+      "atr_length",
+      "offset"
+    ],
+    "accbands": [
+      "self",
+      "length",
+      "c",
+      "mamode",
+      "offset"
+    ],
+    "atr": [
+      "self",
+      "length",
+      "mamode",
+      "offset"
+    ],
+    "bbands": [
+      "self",
+      "length",
+      "std",
+      "mamode",
+      "offset"
+    ],
+    "ce": [
+      "self",
+      "length",
+      "multiplier",
+      "mamode",
+      "offset"
+    ],
+    "donchian": [
+      "self",
+      "lower_length",
+      "upper_length",
+      "offset"
+    ],
+    "cvi": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "hvol": [
+      "self",
+      "length",
+      "annualization",
+      "offset"
+    ],
+    "avolume": [
+      "self",
+      "length",
+      "offset"
+    ],
+    "hwc": [
+      "self",
+      "na",
+      "nb",
+      "nc",
+      "nd",
+      "scalar",
+      "offset"
+    ],
+    "kc": [
+      "self",
+      "length",
+      "scalar",
+      "mamode",
+      "offset"
+    ],
+    "massi": [
+      "self",
+      "fast",
+      "slow",
+      "offset"
+    ],
+    "natr": [
+      "self",
+      "length",
+      "mamode",
+      "scalar",
+      "offset"
+    ],
+    "pdist": [
+      "self",
+      "drift",
+      "offset"
+    ],
+    "rvi": [
+      "self",
+      "length",
+      "scalar",
+      "refined",
+      "thirds",
+      "mamode",
+      "drift",
+      "offset"
+    ],
+    "thermo": [
+      "self",
+      "long",
+      "short",
+      "length",
+      "mamode",
+      "drift",
+      "offset"
+    ],
+    "true_range": [
+      "self",
+      "drift",
+      "offset"
+    ],
+    "ui": [
+      "self",
+      "length",
+      "scalar",
+      "offset"
+    ],
+    "ad": [
+      "self",
+      "open_",
+      "signed",
+      "offset"
+    ],
+    "adosc": [
+      "self",
+      "open_",
+      "fast",
+      "slow",
+      "signed",
+      "offset"
+    ],
+    "aobv": [
+      "self",
+      "fast",
+      "slow",
+      "mamode",
+      "max_lookback",
+      "min_lookback",
+      "offset"
+    ],
+    "cmf": [
+      "self",
+      "open_",
+      "length",
+      "offset"
+    ],
+    "efi": [
+      "self",
+      "length",
+      "mamode",
+      "offset",
+      "drift"
+    ],
+    "eom": [
+      "self",
+      "length",
+      "divisor",
+      "offset",
+      "drift"
+    ],
+    "emv": [
+      "self",
+      "drift",
+      "offset"
+    ],
+    "kvo": [
+      "self",
+      "fast",
+      "slow",
+      "length_sig",
+      "mamode",
+      "offset",
+      "drift"
+    ],
+    "mfi": [
+      "self",
+      "length",
+      "drift",
+      "offset"
+    ],
+    "nvi": [
+      "self",
+      "length",
+      "initial",
+      "signed",
+      "offset"
+    ],
+    "obv": [
+      "self",
+      "offset"
+    ],
+    "pvi": [
+      "self",
+      "length",
+      "initial",
+      "signed",
+      "offset"
+    ],
+    "pvol": [
+      "self",
+      "volume",
+      "offset"
+    ],
+    "pvr": [
+      "self"
+    ],
+    "pvt": [
+      "self",
+      "offset"
+    ],
+    "vfi": [
+      "self",
+      "length",
+      "coef",
+      "vcoef",
+      "mamode",
+      "offset"
+    ],
+    "vp": [
+      "self",
+      "width",
+      "percent"
+    ],
+    "marketfi": [
+      "self",
+      "offset"
+    ],
+    "vosc": [
+      "self",
+      "fast",
+      "slow",
+      "offset"
+    ],
+    "wad": [
+      "self",
+      "offset"
+    ]
+  },
+  "name": [],
+  "__description__": [],
+  "Imports": [],
+  "_CANDLE_TOP_LEVEL": [],
+  "_VALID_CATEGORIES": [],
+  "_collect_category_indicators": [
+    "category_path",
+    "category_name"
+  ],
+  "_build_category_dict": [],
+  "Category": [],
+  "CANGLE_AGG": [],
+  "EXCHANGE_TZ": [],
+  "RATE": [],
+  "npNaN": [],
+  "_pos_float": [
+    "val",
+    "default"
+  ],
+  "_sarext_falling": [
+    "high",
+    "low",
+    "drift"
+  ],
+  "_sarext_loop": [
+    "h_arr",
+    "l_arr",
+    "m",
+    "falling",
+    "sar",
+    "ep",
+    "af0_long",
+    "af_long",
+    "max_af_long",
+    "af0_short",
+    "af_short",
+    "max_af_short",
+    "offset_on_reverse"
+  ],
+  "_sarext_native_result": [
+    "high",
+    "low",
+    "startvalue",
+    "af0_long",
+    "af_long",
+    "max_af_long",
+    "af0_short",
+    "af_short",
+    "max_af_short",
+    "offsetonreverse"
+  ],
+  "sarext": [
+    "high",
+    "low",
+    "startvalue",
+    "offsetonreverse",
+    "accelerationinitlong",
+    "accelerationlong",
+    "accelerationmaxlong",
+    "accelerationinitshort",
+    "accelerationshort",
+    "accelerationmaxshort",
+    "talib",
+    "offset"
+  ],
+  "vhf": [
+    "close",
+    "length",
+    "drift",
+    "offset"
+  ],
+  "vortex": [
+    "high",
+    "low",
+    "close",
+    "length",
+    "drift",
+    "offset"
+  ],
+  "edecay": [
+    "close",
+    "length",
+    "offset"
+  ],
+  "decreasing": [
+    "close",
+    "length",
+    "strict",
+    "asint",
+    "percent",
+    "drift",
+    "offset"
+  ],
+  "tsignals": [
+    "trend",
+    "asbool",
+    "trend_reset",
+    "trade_offset",
+    "drift",
+    "offset"
+  ],
+  "amat": [
+    "close",
+    "fast",
+    "slow",
+    "lookback",
+    "mamode",
+    "offset"
+  ],
+  "chop": [
+    "high",
+    "low",
+    "close",
+    "length",
+    "atr_length",
+    "ln",
+    "scalar",
+    "drift",
+    "offset"
+  ],
+  "_any_none": [],
+  "_cpr_add_level": [
+    "pivot_result",
+    "data",
+    "level"
+  ],
+  "_cpr_offset_and_fill": [
+    "series_dict",
+    "offset"
+  ],
+  "_cpr_build_dataframe": [
+    "pivot_result",
+    "levels",
+    "width_analysis",
+    "price_position",
+    "virgin_cpr"
+  ],
+  "cpr": [
+    "open",
+    "high",
+    "low",
+    "close",
+    "volume",
+    "method",
+    "timeframe",
+    "interval",
+    "levels",
+    "width_analysis",
+    "price_position",
+    "virgin_cpr",
+    "offset"
+  ],
+  "_calculate_classic_pivots": [
+    "prev_high",
+    "prev_low",
+    "prev_close",
+    "levels"
+  ],
+  "_calculate_camarilla_pivots": [
+    "prev_high",
+    "prev_low",
+    "prev_close",
+    "levels"
+  ],
+  "_calculate_fibonacci_pivots": [
+    "prev_high",
+    "prev_low",
+    "prev_close",
+    "levels"
+  ],
+  "_calculate_woodie_pivots": [
+    "prev_high",
+    "prev_low",
+    "prev_close",
+    "prev_open",
+    "levels"
+  ],
+  "adx": [
+    "high",
+    "low",
+    "close",
+    "length",
+    "lensig",
+    "scalar",
+    "mamode",
+    "talib",
+    "drift",
+    "offset"
+  ],
+  "short_run": [
+    "fast",
+    "slow",
+    "length",
+    "offset"
+  ],
+  "increasing": [
+    "close",
+    "length",
+    "strict",
+    "asint",
+    "percent",
+    "drift",
+    "offset"
+  ],
+  "plus_dm": [
+    "high",
+    "low",
+    "length",
+    "talib",
+    "drift",
+    "offset"
+  ],
+  "aroon": [
+    "high",
+    "low",
+    "length",
+    "scalar",
+    "talib",
+    "offset"
+  ],
+  "xsignals": [
+    "signal",
+    "xa",
+    "xb",
+    "above",
+    "long",
+    "asbool",
+    "trend_reset",
+    "trade_offset",
+    "offset"
+  ],
+  "decay": [
+    "close",
+    "kind",
+    "length",
+    "mode",
+    "offset"
+  ],
+  "ttm_trend": [
+    "high",
+    "low",
+    "close",
+    "length",
+    "offset"
+  ],
+  "_pmax_trend_arrays": [
+    "close_arr",
+    "pmax_up_arr",
+    "pmax_down_arr"
+  ],
+  "pmax": [
+    "high",
+    "low",
+    "close",
+    "length",
+    "multiplier",
+    "mamode",
+    "offset"
+  ],
+  "minus_dm": [
+    "high",
+    "low",
+    "length",
+    "talib",
+    "drift",
+    "offset"
+  ],
+  "qstick": [
+    "open_",
+    "close",
+    "length",
+    "offset"
+  ],
+  "dx": [
+    "high",
+    "low",
+    "close",
+    "length",
+    "scalar",
+    "mamode",
+    "talib",
+    "drift",
+    "offset"
+  ],
+  "cksp": [
+    "high",
+    "low",
+    "close",
+    "p",
+    "x",
+    "q",
+    "tvmode",
+    "offset"
+  ],
+  "dpo": [
+    "close",
+    "length",
+    "centered",
+    "offset"
+  ],
+  "adxr": [
+    "high",
+    "low",
+    "close",
+    "length",
+    "lensig",
+    "scalar",
+    "mamode",
+    "talib",
+    "drift",
+    "offset"
+  ],
+  "long_run": [
+    "fast",
+    "slow",
+    "length",
+    "offset"
+  ],
+  "_psar_falling": [
+    "high",
+    "low",
+    "drift"
+  ],
+  "_psar_loop": [
+    "h_arr",
+    "l_arr",
+    "m",
+    "falling",
+    "sar",
+    "ep",
+    "af0",
+    "max_af"
+  ],
+  "psar": [
+    "high",
+    "low",
+    "close",
+    "af0",
+    "af",
+    "max_af",
+    "talib",
+    "offset"
+  ],
+  "trixh": [
+    "close",
+    "length",
+    "signal",
+    "scalar",
+    "drift",
+    "offset"
+  ],
+  "_stc_compute_xmacd": [
+    "close",
+    "fast",
+    "slow",
+    "_length",
+    "ma1",
+    "ma2",
+    "osc"
+  ],
+  "stc": [
+    "close",
+    "tclength",
+    "fast",
+    "slow",
+    "factor",
+    "offset"
+  ],
+  "schaff_tc": [
+    "close",
+    "xmacd",
+    "tclength",
+    "factor"
+  ],
+  "pvo": [
+    "volume",
+    "fast",
+    "slow",
+    "signal",
+    "scalar",
+    "offset"
+  ],
+  "_stochf_native": [
+    "high",
+    "low",
+    "close",
+    "fastk",
+    "fastd",
+    "mamode"
+  ],
+  "stochf": [
+    "high",
+    "low",
+    "close",
+    "fastk",
+    "fastd",
+    "mamode",
+    "talib",
+    "offset"
+  ],
+  "bop": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "talib",
+    "offset"
+  ],
+  "rvgi": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "length",
+    "swma_length",
+    "offset"
+  ],
+  "psl": [
+    "close",
+    "open_",
+    "length",
+    "scalar",
+    "drift",
+    "offset"
+  ],
+  "brar": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "length",
+    "scalar",
+    "drift",
+    "offset"
+  ],
+  "po": [
+    "close",
+    "length",
+    "offset"
+  ],
+  "rsi": [
+    "close",
+    "length",
+    "scalar",
+    "talib",
+    "drift",
+    "offset"
+  ],
+  "fosc": [
+    "close",
+    "length",
+    "offset"
+  ],
+  "bias": [
+    "close",
+    "length",
+    "mamode",
+    "offset"
+  ],
+  "_fisher_loop": [
+    "pos_arr",
+    "m",
+    "length"
+  ],
+  "fisher": [
+    "high",
+    "low",
+    "length",
+    "signal",
+    "offset"
+  ],
+  "macdfix": [
+    "close",
+    "signal",
+    "talib",
+    "offset"
+  ],
+  "willr": [
+    "high",
+    "low",
+    "close",
+    "length",
+    "talib",
+    "offset"
+  ],
+  "_pos_int": [
+    "val",
+    "default"
+  ],
+  "_uo_native": [
+    "high",
+    "low",
+    "close",
+    "fast",
+    "medium",
+    "slow",
+    "fast_w",
+    "medium_w",
+    "slow_w",
+    "drift"
+  ],
+  "uo": [
+    "high",
+    "low",
+    "close",
+    "fast",
+    "medium",
+    "slow",
+    "fast_w",
+    "medium_w",
+    "slow_w",
+    "talib",
+    "drift",
+    "offset"
+  ],
+  "_ppo_compute": [
+    "close",
+    "fast",
+    "slow",
+    "signal",
+    "scalar",
+    "mamode",
+    "mode_talib"
+  ],
+  "ppo": [
+    "close",
+    "fast",
+    "slow",
+    "signal",
+    "scalar",
+    "mamode",
+    "talib",
+    "offset"
+  ],
+  "squeeze_pro": [
+    "high",
+    "low",
+    "close",
+    "bb_length",
+    "bb_std",
+    "kc_length",
+    "kc_scalar_wide",
+    "kc_scalar_normal",
+    "kc_scalar_narrow",
+    "mom_length",
+    "mom_smooth",
+    "use_tr",
+    "mamode",
+    "offset"
+  ],
+  "rocr": [
+    "close",
+    "length",
+    "talib",
+    "offset"
+  ],
+  "roc": [
+    "close",
+    "length",
+    "scalar",
+    "talib",
+    "offset"
+  ],
+  "stoch": [
+    "high",
+    "low",
+    "close",
+    "k",
+    "d",
+    "smooth_k",
+    "mamode",
+    "talib",
+    "offset"
+  ],
+  "_squeeze_simplify_columns": [
+    "df",
+    "n"
+  ],
+  "_squeeze_momentum": [
+    "close",
+    "high",
+    "low",
+    "kch_b",
+    "mom_length",
+    "mom_smooth",
+    "kc_length",
+    "mamode",
+    "lazybear"
+  ],
+  "_squeeze_detailed": [
+    "df",
+    "squeeze_s",
+    "kwargs",
+    "prefix"
+  ],
+  "squeeze": [
+    "high",
+    "low",
+    "close",
+    "bb_length",
+    "bb_std",
+    "kc_length",
+    "kc_scalar",
+    "mom_length",
+    "mom_smooth",
+    "use_tr",
+    "mamode",
+    "offset"
+  ],
+  "trix": [
+    "close",
+    "length",
+    "signal",
+    "scalar",
+    "talib",
+    "drift",
+    "offset"
+  ],
+  "_inertia_rvi_mode": [
+    "close",
+    "high",
+    "low",
+    "rvi_length",
+    "scalar",
+    "refined",
+    "thirds",
+    "mamode"
+  ],
+  "inertia": [
+    "close",
+    "high",
+    "low",
+    "length",
+    "rvi_length",
+    "scalar",
+    "refined",
+    "thirds",
+    "mamode",
+    "drift",
+    "offset"
+  ],
+  "cmo": [
+    "close",
+    "length",
+    "scalar",
+    "talib",
+    "drift",
+    "offset"
+  ],
+  "vwmacd": [
+    "close",
+    "volume",
+    "fast",
+    "slow",
+    "signal",
+    "offset"
+  ],
+  "tsi": [
+    "close",
+    "fast",
+    "slow",
+    "signal",
+    "scalar",
+    "mamode",
+    "drift",
+    "offset"
+  ],
+  "smi": [
+    "close",
+    "fast",
+    "slow",
+    "signal",
+    "scalar",
+    "offset"
+  ],
+  "apo": [
+    "close",
+    "fast",
+    "slow",
+    "mamode",
+    "talib",
+    "offset"
+  ],
+  "dm": [
+    "high",
+    "low",
+    "length",
+    "mamode",
+    "talib",
+    "drift",
+    "offset"
+  ],
+  "cti": [
+    "close",
+    "length",
+    "offset"
+  ],
+  "td_seq": [
+    "close",
+    "asint",
+    "offset"
+  ],
+  "ao": [
+    "high",
+    "low",
+    "fast",
+    "slow",
+    "offset"
+  ],
+  "slope": [
+    "close",
+    "length",
+    "as_angle",
+    "to_degrees",
+    "vertical",
+    "offset"
+  ],
+  "_lrsi_loop": [
+    "c_arr",
+    "n",
+    "gamma"
+  ],
+  "lrsi": [
+    "close",
+    "length",
+    "gamma",
+    "offset"
+  ],
+  "_ema_aligned": [
+    "arr",
+    "m",
+    "period",
+    "seed_end"
+  ],
+  "macd": [
+    "close",
+    "fast",
+    "slow",
+    "signal",
+    "talib",
+    "offset"
+  ],
+  "_qqe_loop": [
+    "rsi_arr",
+    "ub_arr",
+    "lb_arr",
+    "m"
+  ],
+  "qqe": [
+    "close",
+    "length",
+    "smooth",
+    "factor",
+    "mamode",
+    "drift",
+    "offset"
+  ],
+  "kdj": [
+    "high",
+    "low",
+    "close",
+    "length",
+    "signal",
+    "offset"
+  ],
+  "_MATYPE_TO_KIND": [],
+  "_UNSUPPORTED_NATIVE_MATYPES": [],
+  "_warn_unsupported_matypes": [
+    "fastmatype",
+    "slowmatype",
+    "signalmatype"
+  ],
+  "macdext": [
+    "close",
+    "fast",
+    "slow",
+    "signal",
+    "fastmatype",
+    "slowmatype",
+    "signalmatype",
+    "talib",
+    "offset"
+  ],
+  "cfo": [
+    "close",
+    "length",
+    "scalar",
+    "drift",
+    "offset"
+  ],
+  "mom": [
+    "close",
+    "length",
+    "talib",
+    "offset"
+  ],
+  "rocr100": [
+    "close",
+    "length",
+    "talib",
+    "offset"
+  ],
+  "pgo": [
+    "high",
+    "low",
+    "close",
+    "length",
+    "offset"
+  ],
+  "_rsx_loop": [
+    "c_arr",
+    "length",
+    "m"
+  ],
+  "rsx": [
+    "close",
+    "length",
+    "drift",
+    "offset"
+  ],
+  "_stochrsi_result_df": [
+    "k_series",
+    "d_series",
+    "length",
+    "rsi_length",
+    "k",
+    "d"
+  ],
+  "stochrsi": [
+    "close",
+    "length",
+    "rsi_length",
+    "k",
+    "d",
+    "mamode",
+    "talib",
+    "offset"
+  ],
+  "cci": [
+    "high",
+    "low",
+    "close",
+    "length",
+    "c",
+    "talib",
+    "offset"
+  ],
+  "cg": [
+    "close",
+    "length",
+    "offset"
+  ],
+  "eri": [
+    "high",
+    "low",
+    "close",
+    "length",
+    "offset"
+  ],
+  "rocp": [
+    "close",
+    "length",
+    "talib",
+    "offset"
+  ],
+  "coppock": [
+    "close",
+    "length",
+    "fast",
+    "slow",
+    "offset"
+  ],
+  "er": [
+    "close",
+    "length",
+    "drift",
+    "offset"
+  ],
+  "kst": [
+    "close",
+    "roc1",
+    "roc2",
+    "roc3",
+    "roc4",
+    "sma1",
+    "sma2",
+    "sma3",
+    "sma4",
+    "signal",
+    "drift",
+    "offset"
+  ],
+  "log_return": [
+    "close",
+    "length",
+    "cumulative",
+    "offset"
+  ],
+  "drawdown": [
+    "close",
+    "offset"
+  ],
+  "percent_return": [
+    "close",
+    "length",
+    "cumulative",
+    "offset"
+  ],
+  "donchian": [
+    "high",
+    "low",
+    "lower_length",
+    "upper_length",
+    "offset"
+  ],
+  "hvol": [
+    "close",
+    "length",
+    "annualization",
+    "offset"
+  ],
+  "cvi": [
+    "high",
+    "low",
+    "length",
+    "offset"
+  ],
+  "_bbands_native": [
+    "close",
+    "length",
+    "std",
+    "ddof",
+    "mamode",
+    "kwargs"
+  ],
+  "bbands": [
+    "close",
+    "length",
+    "std",
+    "ddof",
+    "mamode",
+    "talib",
+    "offset"
+  ],
+  "natr": [
+    "high",
+    "low",
+    "close",
+    "length",
+    "scalar",
+    "mamode",
+    "talib",
+    "drift",
+    "offset"
+  ],
+  "true_range": [
+    "high",
+    "low",
+    "close",
+    "talib",
+    "drift",
+    "offset"
+  ],
+  "pdist": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "drift",
+    "offset"
+  ],
+  "avolume": [
+    "close",
+    "length",
+    "offset"
+  ],
+  "accbands": [
+    "high",
+    "low",
+    "close",
+    "length",
+    "c",
+    "drift",
+    "mamode",
+    "offset"
+  ],
+  "_rvi_compute": [
+    "source",
+    "length",
+    "scalar",
+    "mode",
+    "drift"
+  ],
+  "_rvi_mode": [
+    "refined",
+    "thirds",
+    "high",
+    "low",
+    "close",
+    "length",
+    "scalar",
+    "mamode",
+    "drift"
+  ],
+  "rvi": [
+    "close",
+    "high",
+    "low",
+    "length",
+    "scalar",
+    "refined",
+    "thirds",
+    "mamode",
+    "drift",
+    "offset"
+  ],
+  "massi": [
+    "high",
+    "low",
+    "fast",
+    "slow",
+    "offset"
+  ],
+  "aberration": [
+    "high",
+    "low",
+    "close",
+    "length",
+    "atr_length",
+    "offset"
+  ],
+  "thermo": [
+    "high",
+    "low",
+    "length",
+    "long",
+    "short",
+    "mamode",
+    "drift",
+    "offset"
+  ],
+  "ui": [
+    "close",
+    "length",
+    "scalar",
+    "offset"
+  ],
+  "_hwc_loop": [
+    "c_arr",
+    "m",
+    "na",
+    "nb",
+    "nc",
+    "nd",
+    "scalar"
+  ],
+  "_hwc_build_df": [
+    "hwc_s",
+    "upper_s",
+    "lower_s",
+    "width_s",
+    "pctwidth_s",
+    "channel_eval"
+  ],
+  "hwc": [
+    "close",
+    "na",
+    "nb",
+    "nc",
+    "nd",
+    "scalar",
+    "channel_eval",
+    "offset"
+  ],
+  "atr": [
+    "high",
+    "low",
+    "close",
+    "length",
+    "mamode",
+    "talib",
+    "drift",
+    "offset"
+  ],
+  "ce": [
+    "high",
+    "low",
+    "close",
+    "length",
+    "multiplier",
+    "mamode",
+    "offset"
+  ],
+  "kc": [
+    "high",
+    "low",
+    "close",
+    "length",
+    "scalar",
+    "mamode",
+    "offset"
+  ],
+  "ht_sine": [
+    "close",
+    "offset"
+  ],
+  "msw": [
+    "close",
+    "period",
+    "offset"
+  ],
+  "_msw_native": [
+    "arr",
+    "period"
+  ],
+  "ht_phasor": [
+    "close",
+    "offset"
+  ],
+  "ht_dcperiod": [
+    "close",
+    "offset"
+  ],
+  "ht_dcphase": [
+    "close",
+    "offset"
+  ],
+  "ebsw": [
+    "close",
+    "length",
+    "bars",
+    "offset"
+  ],
+  "_hilbert_transform_loop": [
+    "close_arr",
+    "m",
+    "ht_start"
+  ],
+  "hilbert_result": [
+    "close",
+    "ht_start"
+  ],
+  "ht_trendmode": [
+    "close",
+    "offset"
+  ],
+  "dsp": [
+    "close",
+    "length",
+    "offset"
+  ],
+  "ohlc4": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "talib",
+    "offset"
+  ],
+  "vidya": [
+    "close",
+    "length",
+    "drift",
+    "offset"
+  ],
+  "rainbow": [
+    "close",
+    "length",
+    "offset"
+  ],
+  "medprice": [
+    "high",
+    "low",
+    "talib",
+    "offset"
+  ],
+  "hl2": [
+    "high",
+    "low",
+    "talib",
+    "offset"
+  ],
+  "_ssf2_loop": [
+    "c_arr",
+    "ssf_arr",
+    "m",
+    "c1",
+    "b1",
+    "a1"
+  ],
+  "_ssf3_loop": [
+    "c_arr",
+    "ssf_arr",
+    "m",
+    "c1",
+    "c2",
+    "c3",
+    "c4"
+  ],
+  "ssf": [
+    "close",
+    "length",
+    "poles",
+    "offset"
+  ],
+  "sma": [
+    "close",
+    "length",
+    "talib",
+    "offset"
+  ],
+  "vwap": [
+    "high",
+    "low",
+    "close",
+    "volume",
+    "anchor",
+    "offset"
+  ],
+  "_ZLMA_DISPATCH": [],
+  "zlma": [
+    "close",
+    "length",
+    "mamode",
+    "offset"
+  ],
+  "midprice": [
+    "high",
+    "low",
+    "length",
+    "talib",
+    "offset"
+  ],
+  "avgprice": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "talib",
+    "offset"
+  ],
+  "midpoint": [
+    "close",
+    "length",
+    "talib",
+    "offset"
+  ],
+  "sinwma": [
+    "close",
+    "length",
+    "offset"
+  ],
+  "linregintercept": [
+    "close",
+    "length",
+    "offset"
+  ],
+  "typprice": [
+    "high",
+    "low",
+    "close",
+    "talib",
+    "offset"
+  ],
+  "mmar": [
+    "close",
+    "length",
+    "offset"
+  ],
+  "ichimoku": [
+    "high",
+    "low",
+    "close",
+    "tenkan",
+    "kijun",
+    "senkou",
+    "include_chikou",
+    "offset"
+  ],
+  "hlc3": [
+    "high",
+    "low",
+    "close",
+    "talib",
+    "offset"
+  ],
+  "fwma": [
+    "close",
+    "length",
+    "asc",
+    "offset"
+  ],
+  "t3": [
+    "close",
+    "length",
+    "a",
+    "talib",
+    "offset"
+  ],
+  "rma": [
+    "close",
+    "length",
+    "offset"
+  ],
+  "linregangle": [
+    "close",
+    "length",
+    "offset"
+  ],
+  "dema": [
+    "close",
+    "length",
+    "talib",
+    "offset"
+  ],
+  "_mcgd_loop": [
+    "c_arr",
+    "n",
+    "c",
+    "length"
+  ],
+  "mcgd": [
+    "close",
+    "length",
+    "offset",
+    "c"
+  ],
+  "vwma": [
+    "close",
+    "volume",
+    "length",
+    "offset"
+  ],
+  "wma": [
+    "close",
+    "length",
+    "asc",
+    "talib",
+    "offset"
+  ],
+  "_mama_loop": [
+    "close_arr",
+    "m",
+    "fastlimit",
+    "slowlimit"
+  ],
+  "mama": [
+    "close",
+    "fastlimit",
+    "slowlimit",
+    "offset"
+  ],
+  "pwma": [
+    "close",
+    "length",
+    "asc",
+    "offset"
+  ],
+  "kama": [
+    "close",
+    "length",
+    "fast",
+    "slow",
+    "talib",
+    "drift",
+    "offset"
+  ],
+  "swma": [
+    "close",
+    "length",
+    "asc",
+    "offset"
+  ],
+  "wcp": [
+    "high",
+    "low",
+    "close",
+    "talib",
+    "offset"
+  ],
+  "tema": [
+    "close",
+    "length",
+    "talib",
+    "offset"
+  ],
+  "hma": [
+    "close",
+    "length",
+    "offset"
+  ],
+  "_jma_phase_ratio": [
+    "phase"
+  ],
+  "jma": [
+    "close",
+    "length",
+    "phase",
+    "offset"
+  ],
+  "alma": [
+    "close",
+    "length",
+    "sigma",
+    "distribution_offset",
+    "offset"
+  ],
+  "hilo": [
+    "high",
+    "low",
+    "close",
+    "high_length",
+    "low_length",
+    "mamode",
+    "offset"
+  ],
+  "_supertrend_loop": [
+    "c_arr",
+    "ub_arr",
+    "lb_arr",
+    "m"
+  ],
+  "supertrend": [
+    "high",
+    "low",
+    "close",
+    "length",
+    "multiplier",
+    "offset"
+  ],
+  "_hwma_loop": [
+    "c_arr",
+    "m",
+    "na",
+    "nb",
+    "nc"
+  ],
+  "hwma": [
+    "close",
+    "na",
+    "nb",
+    "nc",
+    "offset"
+  ],
+  "tsf": [
+    "close",
+    "length",
+    "talib",
+    "offset"
+  ],
+  "ht_trendline": [
+    "close",
+    "offset"
+  ],
+  "_mavp_sma_values": [
+    "close_arr",
+    "per_arr"
+  ],
+  "mavp": [
+    "close",
+    "periods",
+    "minperiod",
+    "maxperiod",
+    "mamode",
+    "talib",
+    "offset"
+  ],
+  "linregslope": [
+    "close",
+    "length",
+    "offset"
+  ],
+  "ema": [
+    "close",
+    "length",
+    "talib",
+    "offset"
+  ],
+  "_ema_chain": [
+    "close",
+    "length",
+    "depth"
+  ],
+  "trima": [
+    "close",
+    "length",
+    "talib",
+    "offset"
+  ],
+  "_TALIB_DISPATCH": [],
+  "_linreg_output": [
+    "windows",
+    "x_arr",
+    "x_sum",
+    "x2_sum",
+    "divisor",
+    "length",
+    "slope",
+    "intercept",
+    "angle",
+    "degrees",
+    "r",
+    "tsf"
+  ],
+  "linreg": [
+    "close",
+    "length",
+    "talib",
+    "offset"
+  ],
+  "_MA_DISPATCH": [],
+  "ma": [
+    "name",
+    "source"
+  ],
+  "stdev": [
+    "close",
+    "length",
+    "ddof",
+    "talib",
+    "offset"
+  ],
+  "quantile": [
+    "close",
+    "length",
+    "q",
+    "offset"
+  ],
+  "beta": [
+    "close",
+    "benchmark",
+    "length",
+    "offset"
+  ],
+  "zscore": [
+    "close",
+    "length",
+    "std",
+    "offset"
+  ],
+  "correl": [
+    "close",
+    "benchmark",
+    "length",
+    "offset"
+  ],
+  "tos_stdevall": [
+    "close",
+    "length",
+    "stds",
+    "ddof",
+    "offset"
+  ],
+  "stderr": [
+    "close",
+    "length",
+    "ddof",
+    "offset"
+  ],
+  "kurtosis": [
+    "close",
+    "length",
+    "offset"
+  ],
+  "md": [
+    "close",
+    "length",
+    "offset"
+  ],
+  "mad": [
+    "close",
+    "length",
+    "offset"
+  ],
+  "entropy": [
+    "close",
+    "length",
+    "base",
+    "offset"
+  ],
+  "skew": [
+    "close",
+    "length",
+    "offset"
+  ],
+  "median": [
+    "close",
+    "length",
+    "offset"
+  ],
+  "_numpy_rolling_variance": [
+    "values",
+    "length",
+    "ddof",
+    "min_periods"
+  ],
+  "variance": [
+    "close",
+    "length",
+    "ddof",
+    "talib",
+    "offset"
+  ],
+  "wilder_smooth": [
+    "raw",
+    "length"
+  ],
+  "_camelCase2Title": [
+    "x"
+  ],
+  "category_files": [
+    "category"
+  ],
+  "apply_offset": [
+    "series",
+    "offset"
+  ],
+  "apply_fill": [
+    "series"
+  ],
+  "get_drift": [
+    "x"
+  ],
+  "get_offset": [
+    "x"
+  ],
+  "is_datetime_ordered": [
+    "df"
+  ],
+  "is_percent": [
+    "x"
+  ],
+  "non_zero_range": [
+    "high",
+    "low"
+  ],
+  "recent_maximum_index": [
+    "x"
+  ],
+  "recent_minimum_index": [
+    "x"
+  ],
+  "signed_series": [
+    "series",
+    "initial"
+  ],
+  "tal_ma": [
+    "name"
+  ],
+  "unsigned_differences": [
+    "series",
+    "amount"
+  ],
+  "verify_series": [
+    "series",
+    "min_length"
+  ],
+  "_sliding_weighted_ma": [
+    "close",
+    "length",
+    "weights"
+  ],
+  "cagr": [
+    "close"
+  ],
+  "calmar_ratio": [
+    "close",
+    "method",
+    "years"
+  ],
+  "downside_deviation": [
+    "returns",
+    "benchmark_rate",
+    "tf"
+  ],
+  "jensens_alpha": [
+    "returns",
+    "benchmark_returns"
+  ],
+  "log_max_drawdown": [
+    "close"
+  ],
+  "max_drawdown": [
+    "close",
+    "method",
+    "all"
+  ],
+  "optimal_leverage": [
+    "close",
+    "benchmark_rate",
+    "period",
+    "log",
+    "capital"
+  ],
+  "pure_profit_score": [
+    "close"
+  ],
+  "sharpe_ratio": [
+    "close",
+    "benchmark_rate",
+    "log",
+    "use_cagr",
+    "period"
+  ],
+  "sortino_ratio": [
+    "close",
+    "benchmark_rate",
+    "log"
+  ],
+  "volatility": [
+    "close",
+    "tf",
+    "returns",
+    "log"
+  ],
+  "df_dates": [
+    "df",
+    "dates"
+  ],
+  "df_month_to_date": [
+    "df"
+  ],
+  "df_quarter_to_date": [
+    "df"
+  ],
+  "df_year_to_date": [
+    "df"
+  ],
+  "final_time": [
+    "stime"
+  ],
+  "get_time": [
+    "exchange",
+    "full",
+    "to_string"
+  ],
+  "total_time": [
+    "df",
+    "tf"
+  ],
+  "to_utc": [
+    "df"
+  ],
+  "mtd": [],
+  "qtd": [],
+  "ytd": [],
+  "_above_below": [
+    "series_a",
+    "series_b",
+    "above",
+    "asint",
+    "offset"
+  ],
+  "above": [
+    "series_a",
+    "series_b",
+    "asint",
+    "offset"
+  ],
+  "above_value": [
+    "series_a",
+    "value",
+    "asint",
+    "offset"
+  ],
+  "below": [
+    "series_a",
+    "series_b",
+    "asint",
+    "offset"
+  ],
+  "below_value": [
+    "series_a",
+    "value",
+    "asint",
+    "offset"
+  ],
+  "cross_value": [
+    "series_a",
+    "value",
+    "above",
+    "asint",
+    "offset"
+  ],
+  "cross": [
+    "series_a",
+    "series_b",
+    "above",
+    "asint",
+    "offset"
+  ],
+  "_add_scalar_threshold_signals": [
+    "df",
+    "indicator",
+    "value",
+    "cross_values",
+    "use_above",
+    "offset"
+  ],
+  "_add_series_signals": [
+    "df",
+    "indicator",
+    "xserie",
+    "cross_series",
+    "is_above",
+    "offset"
+  ],
+  "signals": [
+    "indicator",
+    "xa",
+    "xb",
+    "cross_values",
+    "xserie",
+    "xserie_a",
+    "xserie_b",
+    "cross_series",
+    "offset"
+  ],
+  "crossover": [
+    "series_a",
+    "series_b",
+    "asint",
+    "offset"
+  ],
+  "crossany": [
+    "series_a",
+    "series_b",
+    "asint",
+    "offset"
+  ],
+  "lag": [
+    "close",
+    "period",
+    "offset"
+  ],
+  "_assign_prev_ohlcv": [
+    "result",
+    "df",
+    "prev"
+  ],
+  "_resample_ohlcv": [
+    "df",
+    "rule"
+  ],
+  "get_previous_period_ohlcv": [
+    "df",
+    "timeframe",
+    "interval"
+  ],
+  "calculate_cpr_width": [
+    "tc",
+    "bc",
+    "pivot",
+    "narrow_threshold",
+    "wide_threshold"
+  ],
+  "calculate_price_position": [
+    "close",
+    "tc",
+    "bc"
+  ],
+  "round_to_strike": [
+    "price",
+    "round_to"
+  ],
+  "calculate_option_strikes": [
+    "tc",
+    "pivot",
+    "bc",
+    "strike_round"
+  ],
+  "detect_cpr_breakout": [
+    "close",
+    "high",
+    "low",
+    "tc",
+    "bc",
+    "lookback"
+  ],
+  "detect_cpr_rejection": [
+    "close",
+    "high",
+    "low",
+    "tc",
+    "bc",
+    "threshold"
+  ],
+  "detect_virgin_cpr": [
+    "high",
+    "low",
+    "tc",
+    "bc",
+    "lookforward"
+  ],
+  "np_rolling_moments": [
+    "values",
+    "length"
+  ],
+  "combination": [],
+  "erf": [
+    "x"
+  ],
+  "fibonacci": [
+    "n"
+  ],
+  "geometric_mean": [
+    "series"
+  ],
+  "linear_regression": [
+    "x",
+    "y"
+  ],
+  "log_geometric_mean": [
+    "series"
+  ],
+  "pascals_triangle": [
+    "n"
+  ],
+  "symmetric_triangle": [
+    "n"
+  ],
+  "weights": [
+    "w"
+  ],
+  "zero": [
+    "x"
+  ],
+  "df_error_analysis": [
+    "dfA",
+    "dfB"
+  ],
+  "_linear_regression_np": [
+    "x",
+    "y"
+  ],
+  "_linear_regression_sklearn": [
+    "x",
+    "y"
+  ],
+  "candle_color": [
+    "open_",
+    "close"
+  ],
+  "high_low_range": [
+    "high",
+    "low"
+  ],
+  "real_body": [
+    "open_",
+    "close"
+  ],
+  "yf": [
+    "ticker"
+  ],
+  "_normalize_alpha_vantage_df": [
+    "df",
+    "ticker"
+  ],
+  "av": [
+    "ticker"
+  ],
+  "_validate_two": [
+    "a",
+    "b"
+  ],
+  "add": [
+    "series_a",
+    "series_b",
+    "offset"
+  ],
+  "sub": [
+    "series_a",
+    "series_b",
+    "offset"
+  ],
+  "div": [
+    "series_a",
+    "series_b",
+    "offset"
+  ],
+  "mult": [
+    "series_a",
+    "series_b",
+    "offset"
+  ],
+  "max": [],
+  "min": [],
+  "sum": [],
+  "maxindex": [
+    "close",
+    "length",
+    "offset"
+  ],
+  "minindex": [
+    "close",
+    "length",
+    "offset"
+  ],
+  "minmax": [
+    "close",
+    "length",
+    "offset"
+  ],
+  "minmaxindex": [
+    "close",
+    "length",
+    "offset"
+  ],
+  "_transform": [
+    "close",
+    "fn",
+    "name",
+    "offset"
+  ],
+  "acos": [
+    "close",
+    "offset"
+  ],
+  "asin": [
+    "close",
+    "offset"
+  ],
+  "atan": [
+    "close",
+    "offset"
+  ],
+  "ceil": [
+    "close",
+    "offset"
+  ],
+  "cos": [
+    "close",
+    "offset"
+  ],
+  "cosh": [
+    "close",
+    "offset"
+  ],
+  "exp": [
+    "close",
+    "offset"
+  ],
+  "floor": [
+    "close",
+    "offset"
+  ],
+  "ln": [
+    "close",
+    "offset"
+  ],
+  "log10": [
+    "close",
+    "offset"
+  ],
+  "sin": [
+    "close",
+    "offset"
+  ],
+  "sinh": [
+    "close",
+    "offset"
+  ],
+  "sqrt": [
+    "close",
+    "offset"
+  ],
+  "tan": [
+    "close",
+    "offset"
+  ],
+  "tanh": [
+    "close",
+    "offset"
+  ],
+  "npabs": [
+    "close",
+    "offset"
+  ],
+  "npround": [
+    "close",
+    "offset"
+  ],
+  "trunc": [
+    "close",
+    "offset"
+  ],
+  "todeg": [
+    "close",
+    "offset"
+  ],
+  "torad": [
+    "close",
+    "offset"
+  ],
+  "cmf": [
+    "high",
+    "low",
+    "close",
+    "volume",
+    "open_",
+    "length",
+    "offset"
+  ],
+  "marketfi": [
+    "high",
+    "low",
+    "volume",
+    "offset"
+  ],
+  "vosc": [
+    "volume",
+    "fast",
+    "slow",
+    "offset"
+  ],
+  "efi": [
+    "close",
+    "volume",
+    "length",
+    "mamode",
+    "drift",
+    "offset"
+  ],
+  "eom": [
+    "high",
+    "low",
+    "close",
+    "volume",
+    "length",
+    "divisor",
+    "drift",
+    "offset"
+  ],
+  "aobv": [
+    "close",
+    "volume",
+    "fast",
+    "slow",
+    "max_lookback",
+    "min_lookback",
+    "mamode",
+    "offset"
+  ],
+  "vp": [
+    "close",
+    "volume",
+    "width"
+  ],
+  "pvr": [
+    "close",
+    "volume",
+    "offset"
+  ],
+  "emv": [
+    "high",
+    "low",
+    "volume",
+    "drift",
+    "offset"
+  ],
+  "pvol": [
+    "close",
+    "volume",
+    "offset"
+  ],
+  "pvi": [
+    "close",
+    "volume",
+    "length",
+    "initial",
+    "offset"
+  ],
+  "kvo": [
+    "high",
+    "low",
+    "close",
+    "volume",
+    "fast",
+    "slow",
+    "signal",
+    "mamode",
+    "drift",
+    "offset"
+  ],
+  "vfi": [
+    "close",
+    "volume",
+    "length",
+    "coef",
+    "vcoef",
+    "mamode",
+    "offset"
+  ],
+  "wad": [
+    "high",
+    "low",
+    "close",
+    "offset"
+  ],
+  "ad": [
+    "high",
+    "low",
+    "close",
+    "volume",
+    "open_",
+    "talib",
+    "offset"
+  ],
+  "obv": [
+    "close",
+    "volume",
+    "talib",
+    "offset"
+  ],
+  "nvi": [
+    "close",
+    "volume",
+    "length",
+    "initial",
+    "offset"
+  ],
+  "adosc": [
+    "high",
+    "low",
+    "close",
+    "volume",
+    "open_",
+    "fast",
+    "slow",
+    "talib",
+    "offset"
+  ],
+  "mfi": [
+    "high",
+    "low",
+    "close",
+    "volume",
+    "length",
+    "talib",
+    "drift",
+    "offset"
+  ],
+  "pvt": [
+    "close",
+    "volume",
+    "drift",
+    "offset"
+  ],
+  "_is_bullish_engulf": [
+    "ca",
+    "i"
+  ],
+  "_is_bearish_engulf": [
+    "ca",
+    "i"
+  ],
+  "_detect": [
+    "ca",
+    "out"
+  ],
+  "cdl_engulfing": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "cdl_3outside": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "cdl_eveningstar": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "penetration",
+    "scalar",
+    "offset"
+  ],
+  "cdl_onneck": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "cdl_identical3crows": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "cdl_sticksandwich": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "cdl_tristar": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "cdl_xsidegap3methods": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "cdl_counterattack": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "cdl_hangingman": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "cdl_3whitesoldiers": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "_hikkakemod_is_setup": [
+    "H",
+    "L",
+    "C",
+    "near_total",
+    "i"
+  ],
+  "_hikkakemod_is_confirmed": [
+    "pattern_result",
+    "pattern_idx",
+    "C",
+    "H",
+    "L",
+    "i"
+  ],
+  "cdl_hikkakemod": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "cdl_abandonedbaby": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "penetration",
+    "scalar",
+    "offset"
+  ],
+  "cdl_kicking": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "cdl_doji": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "length",
+    "factor",
+    "scalar",
+    "asint",
+    "offset"
+  ],
+  "cdl_hammer": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "cdl_takuri": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "cdl_unique3river": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "cdl_risefall3methods": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "cdl_2crows": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "cdl_3starsinsouth": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "cdl_z": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "length",
+    "full",
+    "ddof",
+    "offset"
+  ],
+  "cdl_gravestonedoji": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "cdl_ladderbottom": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "_hikkake_is_setup": [
+    "H",
+    "L",
+    "i"
+  ],
+  "_hikkake_is_confirmed": [
+    "pattern_result",
+    "pattern_idx",
+    "C",
+    "H",
+    "L",
+    "i"
+  ],
+  "cdl_hikkake": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "cdl_inside": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "asbool",
+    "offset"
+  ],
+  "cdl_spinningtop": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "cdl_longleggeddoji": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "cdl_advanceblock": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "cdl_3linestrike": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "cdl_breakaway": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "cdl_longline": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "cdl_highwave": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "cdl_inneck": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "cdl_shootingstar": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "cdl_marubozu": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "cdl_eveningdojistar": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "penetration",
+    "scalar",
+    "offset"
+  ],
+  "cdl_belthold": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "cdl_piercing": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "cdl_dojistar": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "cdl_invertedhammer": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "cdl_morningdojistar": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "penetration",
+    "scalar",
+    "offset"
+  ],
+  "cdl_shortline": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "cdl_dragonflydoji": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "cdl_upsidegap2crows": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "cdl_mathold": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "penetration",
+    "scalar",
+    "offset"
+  ],
+  "cdl_harami": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "cdl_haramicross": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "RangeType": {
+    "RealBody": [],
+    "HighLow": [],
+    "Shadows": []
+  },
+  "CandleSetting": {
+    "BodyLong": [],
+    "BodyVeryLong": [],
+    "BodyShort": [],
+    "BodyDoji": [],
+    "ShadowLong": [],
+    "ShadowVeryLong": [],
+    "ShadowShort": [],
+    "ShadowVeryShort": [],
+    "Near": [],
+    "Far": [],
+    "Equal": []
+  },
+  "CANDLE_DEFAULTS": [],
+  "AVG_PERIOD": [],
+  "AVG_FACTOR": [],
+  "CandleArrays": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "open_",
+      "high",
+      "low",
+      "close"
+    ],
+    "candle_range": [
+      "self",
+      "setting",
+      "i"
+    ],
+    "candle_average": [
+      "self",
+      "setting",
+      "period_total",
+      "i"
+    ],
+    "real_body_gap_up": [
+      "self",
+      "i2",
+      "i1"
+    ],
+    "real_body_gap_down": [
+      "self",
+      "i2",
+      "i1"
+    ],
+    "candle_gap_up": [
+      "self",
+      "i2",
+      "i1"
+    ],
+    "candle_gap_down": [
+      "self",
+      "i2",
+      "i1"
+    ]
+  },
+  "candle_avg_period": [
+    "setting"
+  ],
+  "run_pattern": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "detect_fn",
+    "name",
+    "scalar",
+    "offset"
+  ],
+  "cdl_gapsidesidewhite": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "cdl_3blackcrows": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "cdl_closingmarubozu": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "cdl_morningstar": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "penetration",
+    "scalar",
+    "offset"
+  ],
+  "cdl_thrusting": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "cdl_darkcloudcover": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "penetration",
+    "scalar",
+    "offset"
+  ],
+  "ALL_PATTERNS": [],
+  "_discover_native_patterns": [],
+  "_NATIVE_PATTERNS": [],
+  "_run_one_cdl_pattern": [
+    "n",
+    "open_",
+    "high",
+    "low",
+    "close",
+    "pta_patterns",
+    "scalar",
+    "offset",
+    "result",
+    "tala"
+  ],
+  "cdl_pattern": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "name",
+    "scalar",
+    "offset"
+  ],
+  "cdl": [],
+  "cdl_stalledpattern": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "ha": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "offset"
+  ],
+  "cdl_matchinglow": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "cdl_rickshawman": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "cdl_3inside": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "cdl_homingpigeon": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "cdl_tasukigap": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "cdl_separatinglines": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "cdl_kickingbylength": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ],
+  "cdl_concealbabyswall": [
+    "open_",
+    "high",
+    "low",
+    "close",
+    "scalar",
+    "offset"
+  ]
+}
