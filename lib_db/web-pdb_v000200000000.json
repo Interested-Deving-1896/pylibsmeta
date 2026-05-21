@@ -1,0 +1,291 @@
+{
+  "__all__": [],
+  "logger": [],
+  "_WS_MAGIC": [],
+  "_GZIP_TYPES": [],
+  "_GZIP_MIN_SIZE": [],
+  "_MAX_HEADER_SIZE": [],
+  "_WS_OUTBOUND_QUEUE_SIZE": [],
+  "_this_dir": [],
+  "_static_dir": [],
+  "_static_dir_resolved": [],
+  "_index_file": [],
+  "_OP_CONTINUATION": [],
+  "_OP_TEXT": [],
+  "_OP_BINARY": [],
+  "_OP_CLOSE": [],
+  "_OP_PING": [],
+  "_OP_PONG": [],
+  "_ws_accept_key": [
+    "key"
+  ],
+  "_ws_encode_frame": [
+    "payload",
+    "opcode"
+  ],
+  "_ws_read_frame": [
+    "reader"
+  ],
+  "_gzip_if_accepted": [
+    "body",
+    "content_type",
+    "accept_encoding"
+  ],
+  "_build_response": [
+    "status",
+    "body",
+    "content_type",
+    "extra_headers"
+  ],
+  "_WebSocketConnection": {
+    "__init__": [
+      "self",
+      "reader",
+      "writer",
+      "input_queue"
+    ],
+    "send": [
+      "self",
+      "message"
+    ],
+    "run": [
+      "self"
+    ],
+    "_reader_loop": [
+      "self"
+    ],
+    "_writer_loop": [
+      "self"
+    ]
+  },
+  "AsyncioServer": {
+    "__init__": [
+      "self",
+      "host",
+      "port",
+      "frame_data",
+      "input_queue"
+    ],
+    "_broadcast": [
+      "self",
+      "message"
+    ],
+    "broadcast": [
+      "self",
+      "message"
+    ],
+    "stop": [
+      "self"
+    ],
+    "run": [
+      "self",
+      "is_abort_requested",
+      "on_started",
+      "on_stopped"
+    ],
+    "_handle_connection": [
+      "self",
+      "reader",
+      "writer"
+    ],
+    "_process_request": [
+      "self",
+      "reader",
+      "writer"
+    ],
+    "_serve_index": [
+      "self",
+      "writer",
+      "accept_encoding"
+    ],
+    "_serve_frame_data": [
+      "self",
+      "writer",
+      "accept_encoding"
+    ],
+    "_serve_static": [
+      "self",
+      "writer",
+      "rel_path",
+      "accept_encoding"
+    ],
+    "_serve_websocket": [
+      "self",
+      "reader",
+      "writer",
+      "headers"
+    ]
+  },
+  "WebConsole": {
+    "__init__": [
+      "self",
+      "host",
+      "port",
+      "debugger"
+    ],
+    "seekable": [
+      "self"
+    ],
+    "writable": [
+      "self"
+    ],
+    "encoding": [
+      "self"
+    ],
+    "closed": [
+      "self"
+    ],
+    "readline": [
+      "self"
+    ],
+    "read": [],
+    "writeline": [
+      "self",
+      "data"
+    ],
+    "write": [],
+    "flush": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "ThreadSafeBuffer": {
+    "__init__": [
+      "self",
+      "contents"
+    ],
+    "is_dirty": [
+      "self"
+    ],
+    "contents": [
+      "self",
+      "value"
+    ]
+  },
+  "WebPdb": {
+    "active_instance": [],
+    "null": [],
+    "__init__": [
+      "self",
+      "host",
+      "port",
+      "patch_stdstreams"
+    ],
+    "do_quit": [
+      "self",
+      "arg"
+    ],
+    "do_q": [],
+    "do_exit": [],
+    "do_inspect": [
+      "self",
+      "arg"
+    ],
+    "do_i": [],
+    "_get_repr": [
+      "obj",
+      "pretty",
+      "indent"
+    ],
+    "set_continue": [
+      "self"
+    ],
+    "dispatch_return": [
+      "self",
+      "frame",
+      "arg"
+    ],
+    "get_current_frame_data": [
+      "self"
+    ],
+    "_format_variables": [
+      "self",
+      "raw_vars"
+    ],
+    "get_globals": [
+      "self"
+    ],
+    "get_locals": [
+      "self"
+    ],
+    "remove_trace": [
+      "self",
+      "frame"
+    ]
+  },
+  "set_trace": [
+    "host",
+    "port",
+    "patch_stdstreams"
+  ],
+  "post_mortem": [
+    "tb",
+    "host",
+    "port",
+    "patch_stdstreams"
+  ],
+  "catch_post_mortem": [
+    "host",
+    "port",
+    "patch_stdstreams"
+  ],
+  "ServerAdapter": {
+    "__init__": [
+      "self",
+      "host",
+      "port",
+      "system_adapter"
+    ],
+    "web_socket_input_queue": [
+      "self"
+    ],
+    "web_socket_broadcast": [
+      "self",
+      "message"
+    ],
+    "serve_forever": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "_BaseAdapter": {
+    "__init__": [
+      "self"
+    ],
+    "is_abort_requested": [
+      "self"
+    ],
+    "abort": [
+      "self"
+    ],
+    "is_aborted": [
+      "self"
+    ],
+    "on_server_started": [
+      "self",
+      "server_name",
+      "port"
+    ],
+    "on_server_stopped": [
+      "self"
+    ],
+    "on_exception": [
+      "self"
+    ]
+  },
+  "_GeneralAdapter": {
+    "is_abort_requested": [
+      "self"
+    ],
+    "on_server_started": [
+      "self",
+      "server_name",
+      "port"
+    ]
+  },
+  "SystemAdapter": []
+}
