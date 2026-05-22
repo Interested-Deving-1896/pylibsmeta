@@ -1,0 +1,253 @@
+{
+  "FILENAME": [],
+  "HEADER": [],
+  "READ_VALUES": [],
+  "test_newline_read": [],
+  "test_newline_dict_read": [],
+  "VALUES": [],
+  "test_dict_read": [],
+  "test_dict_read_line_nums": [],
+  "test_dict_read_get_fieldnames": [],
+  "test_dict_write": [],
+  "Parser": {
+    "__aiter__": [
+      "self"
+    ],
+    "line_num": [
+      "self"
+    ]
+  },
+  "AsyncStringIO": {
+    "__init__": [
+      "self",
+      "data"
+    ],
+    "read": [
+      "self",
+      "size"
+    ]
+  },
+  "test_parsing_simple": [
+    "parser"
+  ],
+  "test_parsing_escapes": [
+    "parser"
+  ],
+  "test_parsing_empty": [
+    "parser"
+  ],
+  "test_parsing_nonnumeric": [
+    "parser"
+  ],
+  "test_parsing_nonnumeric_invalid": [
+    "parser"
+  ],
+  "test_parsing_none_quoting": [
+    "parser"
+  ],
+  "test_parsing_weird_quotes": [
+    "parser"
+  ],
+  "test_parsing_strict_quoting": [
+    "parser"
+  ],
+  "test_parsing_weird_quotes_nonnumeric": [
+    "parser"
+  ],
+  "test_parsing_escape_after_quote_in_quoted": [
+    "parser"
+  ],
+  "test_parsing_escaped_crlf": [
+    "parser"
+  ],
+  "test_parsing_escaped_crlf_in_quoted": [
+    "parser"
+  ],
+  "test_parsing_consecutive_newlines": [
+    "parser"
+  ],
+  "test_parsing_line_num": [
+    "parser"
+  ],
+  "test_parsing_field_size_limit": [
+    "parser"
+  ],
+  "test_parsing_unterminated_quote": [
+    "parser"
+  ],
+  "test_parsing_unterminated_quote_non_strict": [
+    "parser"
+  ],
+  "test_parsing_eof_in_escape": [
+    "parser"
+  ],
+  "test_parsing_eof_in_escape_non_strict": [
+    "parser"
+  ],
+  "test_parsing_eof_in_quoted_escape": [
+    "parser"
+  ],
+  "test_parsing_eof_in_quoted_escape_non_strict": [
+    "parser"
+  ],
+  "test_parsing_no_newline_at_the_end": [
+    "parser"
+  ],
+  "test_parsing_quote_strings": [
+    "parser"
+  ],
+  "test_parsing_quote_strings_non_float": [
+    "parser"
+  ],
+  "test_parsing_quote_not_null": [
+    "parser"
+  ],
+  "DIALECT": [],
+  "test_dialect_read": [],
+  "test_dialect_write": [],
+  "test_simple_read": [],
+  "test_simple_line_nums": [],
+  "test_simple_write": [],
+  "ParserState": {
+    "START_RECORD": [],
+    "START_FIELD": [],
+    "IN_FIELD": [],
+    "ESCAPE": [],
+    "IN_QUOTED_FIELD": [],
+    "ESCAPE_IN_QUOTED": [],
+    "QUOTE_IN_QUOTED": [],
+    "EAT_NEWLINE": [],
+    "is_end_of_record": [
+      "self"
+    ],
+    "is_unexpected_at_eof": [
+      "self"
+    ]
+  },
+  "Decision": {
+    "CONTINUE": [],
+    "DONE": [],
+    "DONE_WITHOUT_CONSUMING": []
+  },
+  "QUOTE_MINIMAL": [],
+  "QUOTE_ALL": [],
+  "QUOTE_NONNUMERIC": [],
+  "QUOTE_NONE": [],
+  "AsyncWriter": {
+    "__init__": [
+      "self",
+      "asyncfile",
+      "dialect"
+    ],
+    "dialect": [
+      "self"
+    ],
+    "_rewrite_buffer": [
+      "self"
+    ],
+    "writerow": [
+      "self",
+      "row"
+    ],
+    "writerows": [
+      "self",
+      "rows"
+    ]
+  },
+  "AsyncDictWriter": {
+    "__init__": [
+      "self",
+      "asyncfile",
+      "fieldnames",
+      "restval",
+      "extrasaction",
+      "dialect"
+    ],
+    "dialect": [
+      "self"
+    ],
+    "_dict_to_iterable": [
+      "self",
+      "row_dict"
+    ],
+    "writeheader": [
+      "self"
+    ],
+    "writerow": [
+      "self",
+      "row"
+    ],
+    "writerows": [
+      "self",
+      "rows"
+    ]
+  },
+  "WithAsyncWrite": {
+    "write": [
+      "self",
+      "__b"
+    ]
+  },
+  "WithAsyncRead": {
+    "read": [
+      "self",
+      "__size"
+    ]
+  },
+  "DialectLike": {},
+  "CsvDialectArg": [],
+  "CsvDialectKwargs": {},
+  "__title__": [],
+  "__description__": [],
+  "__version__": [],
+  "__url__": [],
+  "__author__": [],
+  "__email__": [],
+  "__copyright__": [],
+  "__license__": [],
+  "__all__": [],
+  "AsyncReader": {
+    "__init__": [
+      "self",
+      "asyncfile",
+      "dialect"
+    ],
+    "dialect": [
+      "self"
+    ],
+    "line_num": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__anext__": [
+      "self"
+    ]
+  },
+  "AsyncDictReader": {
+    "__init__": [
+      "self",
+      "asyncfile",
+      "fieldnames",
+      "restkey",
+      "restval",
+      "dialect"
+    ],
+    "dialect": [
+      "self"
+    ],
+    "line_num": [
+      "self"
+    ],
+    "get_fieldnames": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__anext__": [
+      "self"
+    ]
+  }
+}
