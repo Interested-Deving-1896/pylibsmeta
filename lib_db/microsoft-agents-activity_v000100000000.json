@@ -1,0 +1,798 @@
+{
+  "DeliveryModes": {
+    "normal": [],
+    "notification": [],
+    "expect_replies": [],
+    "ephemeral": [],
+    "stream": []
+  },
+  "OAuthCard": {},
+  "T": [],
+  "TurnContextProtocol": {
+    "send_activity": [
+      "self",
+      "activity_or_text",
+      "speak",
+      "input_hint"
+    ],
+    "send_activities": [
+      "self",
+      "activities"
+    ],
+    "update_activity": [
+      "self",
+      "activity"
+    ],
+    "delete_activity": [
+      "self",
+      "id_or_reference"
+    ],
+    "on_send_activities": [
+      "self",
+      "handler"
+    ],
+    "on_update_activity": [
+      "self",
+      "handler"
+    ],
+    "on_delete_activity": [
+      "self",
+      "handler"
+    ],
+    "send_trace_activity": [
+      "self",
+      "name",
+      "value",
+      "value_type",
+      "label"
+    ]
+  },
+  "ExpectedReplies": {},
+  "ThumbnailCard": {},
+  "TokenExchangeInvokeResponse": {},
+  "SignInConstants": {
+    "verify_state_operation_name": [],
+    "token_exchange_operation_name": [],
+    "token_response_event_name": []
+  },
+  "InputHints": {
+    "accepting_input": [],
+    "ignoring_input": [],
+    "expecting_input": []
+  },
+  "TokenExchangeState": {
+    "get_encoded_state": [
+      "self"
+    ]
+  },
+  "logger": [],
+  "ConversationReference": {
+    "get_continuation_activity": [
+      "self"
+    ]
+  },
+  "ActionTypes": {
+    "open_url": [],
+    "im_back": [],
+    "post_back": [],
+    "play_audio": [],
+    "play_video": [],
+    "show_image": [],
+    "download_file": [],
+    "signin": [],
+    "call": [],
+    "message_back": []
+  },
+  "TokenPostResource": {},
+  "InnerHttpError": {},
+  "SemanticAction": {},
+  "Attachment": {},
+  "Fact": {},
+  "TextFormatTypes": {
+    "markdown": [],
+    "plain": [],
+    "xml": []
+  },
+  "SemanticActionsStates": {
+    "start_action": [],
+    "continue_action": [],
+    "done_action": []
+  },
+  "ContactRelationUpdateActionTypes": {
+    "add": [],
+    "remove": []
+  },
+  "ConversationsResult": {},
+  "AttachmentData": {},
+  "AttachmentInfo": {},
+  "TokenOrSignInResourceResponse": {},
+  "Activity": {
+    "_validate_channel_id": [
+      "cls",
+      "data",
+      "handler"
+    ],
+    "_serialize_sub_channel_data": [
+      "self",
+      "handler"
+    ],
+    "apply_conversation_reference": [
+      "self",
+      "reference",
+      "is_incoming"
+    ],
+    "as_contact_relation_update_activity": [
+      "self"
+    ],
+    "as_conversation_update_activity": [
+      "self"
+    ],
+    "as_end_of_conversation_activity": [
+      "self"
+    ],
+    "as_event_activity": [
+      "self"
+    ],
+    "as_handoff_activity": [
+      "self"
+    ],
+    "as_installation_update_activity": [
+      "self"
+    ],
+    "as_invoke_activity": [
+      "self"
+    ],
+    "as_message_activity": [
+      "self"
+    ],
+    "as_message_delete_activity": [
+      "self"
+    ],
+    "as_message_reaction_activity": [
+      "self"
+    ],
+    "as_message_update_activity": [
+      "self"
+    ],
+    "as_suggestion_activity": [
+      "self"
+    ],
+    "as_trace_activity": [
+      "self"
+    ],
+    "as_typing_activity": [
+      "self"
+    ],
+    "create_contact_relation_update_activity": [],
+    "create_conversation_update_activity": [],
+    "create_end_of_conversation_activity": [],
+    "create_event_activity": [],
+    "create_handoff_activity": [],
+    "create_invoke_activity": [],
+    "create_message_activity": [],
+    "create_reply": [
+      "self",
+      "text",
+      "locale"
+    ],
+    "create_trace": [
+      "self",
+      "name",
+      "value",
+      "value_type",
+      "label"
+    ],
+    "create_trace_activity": [
+      "name",
+      "value",
+      "value_type",
+      "label"
+    ],
+    "create_typing_activity": [],
+    "get_conversation_reference": [
+      "self",
+      "force_base_channel"
+    ],
+    "get_product_info_entity": [
+      "self"
+    ],
+    "get_mentions": [
+      "self"
+    ],
+    "get_reply_conversation_reference": [
+      "self",
+      "reply"
+    ],
+    "has_content": [
+      "self"
+    ],
+    "is_from_streaming_connection": [
+      "self"
+    ],
+    "__is_activity": [
+      "self",
+      "activity_type"
+    ],
+    "add_ai_metadata": [
+      "self",
+      "citations",
+      "usage_info"
+    ],
+    "is_agentic_request": [
+      "self"
+    ],
+    "get_agentic_instance_id": [
+      "self"
+    ],
+    "get_agentic_user": [
+      "self"
+    ],
+    "get_agentic_tenant_id": [
+      "self"
+    ]
+  },
+  "TextHighlight": {},
+  "TokenExchangeResource": {},
+  "InstallationUpdateActionTypes": {
+    "add": [],
+    "remove": []
+  },
+  "TokenResponse": {
+    "__bool__": [
+      "self"
+    ],
+    "is_exchangeable": [
+      "self"
+    ],
+    "_get_app_id_from_token_payload": [
+      "token_payload"
+    ]
+  },
+  "SignInResource": {},
+  "AttachmentLayoutTypes": {
+    "list": [],
+    "carousel": []
+  },
+  "Transcript": {},
+  "CallerIdConstants": {
+    "public_azure_channel": [],
+    "us_gov_channel": [],
+    "agent_to_agent_prefix": []
+  },
+  "NonEmptyString": [],
+  "ConversationResourceResponse": {},
+  "AgentsModel": {
+    "model_config": [],
+    "pick_properties": [
+      "cls",
+      "original",
+      "fields_to_copy"
+    ]
+  },
+  "PagedMembersResult": {},
+  "ActivityImportance": {
+    "low": [],
+    "normal": [],
+    "high": []
+  },
+  "BasicCard": {},
+  "MessageReactionTypes": {
+    "REACTIONS_ADDED": [],
+    "REACTIONS_REMOVED": []
+  },
+  "TokenStatus": {},
+  "ThumbnailUrl": {},
+  "AnimationCard": {},
+  "ConversationAccount": {},
+  "ConversationMembers": {},
+  "ChannelId": {
+    "__init__": [
+      "self",
+      "value"
+    ],
+    "__new__": [
+      "cls",
+      "value"
+    ],
+    "channel": [
+      "self"
+    ],
+    "sub_channel": [
+      "self"
+    ],
+    "__get_pydantic_core_schema__": [
+      "cls",
+      "source_type",
+      "handler"
+    ]
+  },
+  "CardAction": {},
+  "SuggestedActions": {},
+  "MessageReaction": {},
+  "ModelFieldHelper": {
+    "process": [
+      "self",
+      "key"
+    ]
+  },
+  "SkipIf": {
+    "__init__": [
+      "self",
+      "value",
+      "skip_condition"
+    ],
+    "process": [
+      "self",
+      "key"
+    ]
+  },
+  "SkipNone": {
+    "__init__": [
+      "self",
+      "value"
+    ]
+  },
+  "pick_model_dict": [],
+  "pick_model": [
+    "model_class"
+  ],
+  "TokenRequest": {},
+  "MessageUpdateTypes": {
+    "EDIT_MESSAGE": [],
+    "SOFT_DELETE_MESSAGE": [],
+    "UNDELETE_MESSAGE": []
+  },
+  "ReceiptCard": {},
+  "Error": {},
+  "ReceiptItem": {},
+  "__all__": [],
+  "RoleTypes": {
+    "user": [],
+    "agent": [],
+    "skill": [],
+    "connector_user": [],
+    "agentic_identity": [],
+    "agentic_user": []
+  },
+  "VideoCard": {},
+  "HeroCard": {},
+  "ActivityTypes": {
+    "message": [],
+    "contact_relation_update": [],
+    "conversation_update": [],
+    "typing": [],
+    "end_of_conversation": [],
+    "event": [],
+    "invoke": [],
+    "invoke_response": [],
+    "delete_user_data": [],
+    "message_update": [],
+    "message_delete": [],
+    "installation_update": [],
+    "message_reaction": [],
+    "suggestion": [],
+    "trace": [],
+    "handoff": [],
+    "command": [],
+    "command_result": []
+  },
+  "ErrorResponse": {},
+  "AdaptiveCardInvokeResponse": {},
+  "SigninCard": {},
+  "MediaUrl": {},
+  "ConversationUpdateTypes": {
+    "CHANNEL_CREATED": [],
+    "CHANNEL_RENAMED": [],
+    "CHANNEL_DELETED": [],
+    "CHANNEL_RESTORED": [],
+    "MEMBERS_ADDED": [],
+    "MEMBERS_REMOVED": [],
+    "TEAM_RENAMED": [],
+    "TEAM_DELETED": [],
+    "TEAM_ARCHIVED": [],
+    "TEAM_UNARCHIVED": [],
+    "TEAM_RESTORED": []
+  },
+  "_ChannelIdFieldMixin": {
+    "channel_id": [
+      "self",
+      "value"
+    ],
+    "_set_validated_channel_id": [
+      "self",
+      "data"
+    ],
+    "_validate_channel_id": [
+      "cls",
+      "data",
+      "handler"
+    ],
+    "_remove_serialized_unset_channel_id": [
+      "self",
+      "serialized"
+    ],
+    "_serialize_channel_id": [
+      "self",
+      "handler"
+    ]
+  },
+  "AttachmentView": {},
+  "InvokeResponse": {
+    "is_successful_status_code": [
+      "self"
+    ]
+  },
+  "CardImage": {},
+  "Channels": {
+    "agents": [],
+    "console": [],
+    "cortana": [],
+    "direct_line": [],
+    "direct_line_speech": [],
+    "email": [],
+    "emulator": [],
+    "facebook": [],
+    "groupme": [],
+    "kik": [],
+    "line": [],
+    "ms_teams": [],
+    "skype": [],
+    "skype_for_business": [],
+    "slack": [],
+    "sms": [],
+    "telegram": [],
+    "test": [],
+    "webchat": [],
+    "copilot_studio": [],
+    "supports_suggested_actions": [
+      "channel_id",
+      "button_cnt"
+    ],
+    "supports_card_actions": [
+      "channel_id",
+      "button_cnt"
+    ],
+    "has_message_feed": [
+      "_"
+    ],
+    "max_action_title_length": [
+      "channel_id"
+    ]
+  },
+  "ChannelAdapterProtocol": {
+    "send_activities": [
+      "self",
+      "context",
+      "activities"
+    ],
+    "update_activity": [
+      "self",
+      "context",
+      "activity"
+    ],
+    "delete_activity": [
+      "self",
+      "context",
+      "reference"
+    ],
+    "use": [
+      "self",
+      "middleware"
+    ],
+    "continue_conversation": [
+      "self",
+      "agent_id",
+      "reference",
+      "callback"
+    ],
+    "continue_conversation_with_claims": [
+      "self",
+      "claims_identity",
+      "continuation_activity",
+      "callback",
+      "audience"
+    ],
+    "create_conversation": [
+      "self",
+      "agent_app_id",
+      "channel_id",
+      "service_url",
+      "audience",
+      "conversation_parameters",
+      "callback"
+    ],
+    "run_pipeline": [
+      "self",
+      "context",
+      "callback"
+    ]
+  },
+  "AdaptiveCardInvokeAction": {},
+  "ChannelAccount": {
+    "model_config": [],
+    "properties": [
+      "self"
+    ]
+  },
+  "TokenExchangeInvokeRequest": {},
+  "ConversationParameters": {},
+  "EndOfConversationCodes": {
+    "unknown": [],
+    "completed_successfully": [],
+    "user_cancelled": [],
+    "timed_out": [],
+    "issued_invalid_message": [],
+    "channel_failed": []
+  },
+  "ResourceResponse": {},
+  "AdaptiveCardInvokeValue": {},
+  "MediaCard": {},
+  "MediaEventValue": {},
+  "ActivityEventNames": {
+    "continue_conversation": [],
+    "create_conversation": []
+  },
+  "AudioCard": {},
+  "ActivityErrorResources": {
+    "InvalidChannelIdType": [],
+    "ChannelIdProductInfoConflict": [],
+    "ChannelIdValueConflict": [],
+    "ChannelIdValueMustBeNonEmpty": [],
+    "InvalidFromPropertyType": [],
+    "InvalidRecipientType": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ConfigurationErrorResources": {
+    "InvalidLoggingConfiguration": []
+  },
+  "ErrorMessage": {
+    "__init__": [
+      "self",
+      "message_template",
+      "error_code"
+    ],
+    "format": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "activity_errors": [],
+  "configuration_errors": [],
+  "StreamInfo": {},
+  "ProductInfo": {},
+  "_to_camel_exclude_at": [
+    "k"
+  ],
+  "Entity": {
+    "model_config": [],
+    "additional_properties": [
+      "self"
+    ],
+    "_validate_model": [
+      "cls",
+      "data",
+      "handler"
+    ],
+    "_serialize_model": [
+      "self",
+      "handler",
+      "info"
+    ]
+  },
+  "Mention": {},
+  "Thing": {},
+  "Place": {},
+  "GeoCoordinates": {},
+  "validate_schema_model": [
+    "data",
+    "handler"
+  ],
+  "serialize_schema_model": [
+    "self",
+    "handler",
+    "info"
+  ],
+  "_SchemaMixin": {
+    "_validate_model": [
+      "cls",
+      "data",
+      "handler"
+    ],
+    "_serialize_model": [
+      "self",
+      "handler",
+      "info"
+    ]
+  },
+  "ClientCitationIconName": {
+    "MICROSOFT_WORD": [],
+    "MICROSOFT_EXCEL": [],
+    "MICROSOFT_POWERPOINT": [],
+    "MICROSOFT_ONENOTE": [],
+    "MICROSOFT_SHAREPOINT": [],
+    "MICROSOFT_VISIO": [],
+    "MICROSOFT_LOOP": [],
+    "MICROSOFT_WHITEBOARD": [],
+    "ADOBE_ILLUSTRATOR": [],
+    "ADOBE_PHOTOSHOP": [],
+    "ADOBE_INDESIGN": [],
+    "ADOBE_FLASH": [],
+    "SKETCH": [],
+    "SOURCE_CODE": [],
+    "IMAGE": [],
+    "GIF": [],
+    "VIDEO": [],
+    "SOUND": [],
+    "ZIP": [],
+    "TEXT": [],
+    "PDF": []
+  },
+  "ClientCitationImage": {},
+  "SensitivityPattern": {},
+  "SensitivityUsageInfo": {},
+  "ClientCitationAppearance": {},
+  "ClientCitation": {},
+  "AIEntity": {},
+  "EntityTypes": {
+    "GEO_COORDINATES": [],
+    "MENTION": [],
+    "PLACE": [],
+    "THING": [],
+    "PRODUCT_INFO": [],
+    "STREAM_INFO": []
+  },
+  "O365ConnectorCardImage": {},
+  "ConfigResponse": {},
+  "TabSubmit": {},
+  "MessagingExtensionAttachment": {},
+  "MeetingDetails": {},
+  "O365ConnectorCardFact": {},
+  "BatchOperationResponse": {},
+  "TargetedMeetingNotification": {},
+  "MessagingExtensionParameter": {},
+  "MessageActionsPayloadBody": {},
+  "MeetingNotificationResponse": {},
+  "MessageActionsPayloadApp": {},
+  "TeamsChannelDataSettings": {},
+  "TaskModuleTaskInfo": {},
+  "FileUploadInfo": {},
+  "O365ConnectorCard": {},
+  "TeamsMeetingMember": {},
+  "MeetingDetailsBase": {},
+  "MessagingExtensionResult": {},
+  "TabResponse": {},
+  "OnBehalfOf": {},
+  "TaskModuleRequestContext": {},
+  "BatchFailedEntry": {},
+  "BotConfigAuth": {},
+  "AppBasedLinkQuery": {},
+  "MessageActionsPayloadUser": {},
+  "TeamsChannelData": {},
+  "MessageActionsPayloadReaction": {},
+  "TeamsChannelAccount": {
+    "model_config": [],
+    "properties": [
+      "self"
+    ]
+  },
+  "TabSubmitData": {},
+  "TaskModuleContinueResponse": {},
+  "MessageActionsPayloadAttachment": {},
+  "MeetingTabIconSurface": {},
+  "ContentType": {
+    "UNKNOWN": [],
+    "TASK": []
+  },
+  "MeetingStageSurface": {},
+  "MeetingEndEventDetails": {},
+  "TaskModuleMessageResponse": {},
+  "O365ConnectorCardMultichoiceInput": {},
+  "TargetedMeetingNotificationValue": {},
+  "O365ConnectorCardActionQuery": {},
+  "MessagingExtensionQueryOptions": {},
+  "CacheInfo": {},
+  "O365ConnectorCardTextInput": {},
+  "O365ConnectorCardViewAction": {},
+  "MessageActionsPayloadFrom": {},
+  "ReadReceiptInfo": {
+    "is_message_read": [
+      "compare_message_id",
+      "last_read_message_id"
+    ],
+    "is_message_read_instance": [
+      "self",
+      "compare_message_id"
+    ]
+  },
+  "MeetingStartEventDetails": {},
+  "MeetingParticipantsEventDetails": {},
+  "TabRequest": {},
+  "O365ConnectorCardMultichoiceInputChoice": {},
+  "TabContext": {},
+  "O365ConnectorCardDateInput": {},
+  "TabResponseCard": {},
+  "MeetingNotificationRecipientFailureInfo": {},
+  "TaskModuleResponse": {},
+  "MeetingNotificationBase": {},
+  "TeamsPagedMembersResult": {},
+  "TabResponseCards": {},
+  "MeetingNotificationChannelData": {},
+  "TeamsMeetingParticipant": {},
+  "SurfaceType": {
+    "UNKNOWN": [],
+    "MEETING_STAGE": [],
+    "MEETING_TAB_ICON": []
+  },
+  "Surface": {},
+  "TabEntityContext": {},
+  "TeamDetails": {},
+  "MessageActionsPayloadMention": {},
+  "O365ConnectorCardActionBase": {},
+  "O365ConnectorCardOpenUri": {},
+  "O365ConnectorCardOpenUriTarget": {},
+  "TabSuggestedActions": {},
+  "BatchFailedEntriesResponse": {},
+  "ConversationList": {},
+  "MessagingExtensionQuery": {},
+  "O365ConnectorCardSection": {},
+  "ConfigResponseBase": {},
+  "MessagingExtensionActionResponse": {},
+  "FileInfoCard": {},
+  "TeamsMeetingInfo": {},
+  "MeetingParticipantInfo": {},
+  "FileConsentCard": {},
+  "MessagingExtensionResponse": {},
+  "MeetingInfo": {},
+  "TaskModuleResponseBase": {
+    "model_config": []
+  },
+  "MessageActionsPayload": {},
+  "TeamsMember": {},
+  "TeamsBatchOperationResponse": {},
+  "NotificationInfo": {},
+  "MessagingExtensionSuggestedAction": {},
+  "TenantInfo": {},
+  "MessageActionsPayloadConversation": {},
+  "O365ConnectorCardHttpPOST": {},
+  "TabResponsePayload": {},
+  "SigninStateVerificationQuery": {},
+  "O365ConnectorCardActionCard": {},
+  "ConfigTaskResponse": {},
+  "MeetingNotification": {},
+  "MeetingEventDetails": {},
+  "ChannelInfo": {},
+  "BatchOperationStateResponse": {},
+  "TaskModuleRequest": {},
+  "TeamInfo": {},
+  "TaskModuleCardResponse": {},
+  "FileDownloadInfo": {},
+  "CancelOperationResponse": {},
+  "ConfigAuthResponse": {},
+  "O365ConnectorCardInputBase": {},
+  "MessagingExtensionAction": {},
+  "FileConsentCardResponse": {},
+  "UserMeetingDetails": {},
+  "_NAME_TO_LEVEL": [],
+  "_configure_logging": [
+    "logging_config"
+  ],
+  "load_configuration_from_env": [
+    "env_vars"
+  ],
+  "_DeferredString": {
+    "__init__": [
+      "self",
+      "func"
+    ],
+    "__str__": [
+      "self"
+    ]
+  }
+}
