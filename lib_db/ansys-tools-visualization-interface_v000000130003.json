@@ -1,0 +1,1316 @@
+{
+  "__version__": [],
+  "Plotter": {
+    "__init__": [
+      "self",
+      "backend"
+    ],
+    "backend": [
+      "self"
+    ],
+    "plot_iter": [
+      "self",
+      "plotting_list"
+    ],
+    "plot": [
+      "self",
+      "plottable_object"
+    ],
+    "show": [
+      "self",
+      "plottable_object",
+      "screenshot"
+    ],
+    "animate": [
+      "self",
+      "frames",
+      "fps",
+      "loop",
+      "scalar_bar_args"
+    ],
+    "add_points": [
+      "self",
+      "points",
+      "color",
+      "size"
+    ],
+    "add_lines": [
+      "self",
+      "points",
+      "connections",
+      "color",
+      "width"
+    ],
+    "add_planes": [
+      "self",
+      "center",
+      "normal",
+      "i_size",
+      "j_size"
+    ],
+    "add_text": [
+      "self",
+      "text",
+      "position",
+      "font_size",
+      "color"
+    ],
+    "add_labels": [
+      "self",
+      "points",
+      "labels",
+      "font_size",
+      "point_size"
+    ],
+    "clear": [
+      "self"
+    ]
+  },
+  "BaseBackend": {
+    "plot": [
+      "self",
+      "plottable_object"
+    ],
+    "plot_iter": [
+      "self",
+      "plotting_list"
+    ],
+    "show": [
+      "self"
+    ],
+    "add_points": [
+      "self",
+      "points",
+      "color",
+      "size"
+    ],
+    "add_lines": [
+      "self",
+      "points",
+      "connections",
+      "color",
+      "width"
+    ],
+    "add_planes": [
+      "self",
+      "center",
+      "normal",
+      "i_size",
+      "j_size"
+    ],
+    "add_text": [
+      "self",
+      "text",
+      "position",
+      "font_size",
+      "color"
+    ],
+    "add_labels": [
+      "self",
+      "points",
+      "labels",
+      "font_size",
+      "point_size"
+    ],
+    "clear": [
+      "self"
+    ]
+  },
+  "_USD_EXTENSIONS": [],
+  "USDInterface": {
+    "__init__": [
+      "self",
+      "title",
+      "size"
+    ],
+    "_unique_prim_path": [
+      "self",
+      "prefix"
+    ],
+    "plot": [
+      "self",
+      "plottable_object"
+    ],
+    "plot_iter": [
+      "self",
+      "plotting_list"
+    ],
+    "show": [
+      "self",
+      "plottable_object",
+      "screenshot",
+      "name_filter"
+    ],
+    "add_points": [
+      "self",
+      "points",
+      "color",
+      "size"
+    ],
+    "add_lines": [
+      "self",
+      "points",
+      "connections",
+      "color",
+      "width"
+    ],
+    "add_planes": [
+      "self",
+      "center",
+      "normal",
+      "i_size",
+      "j_size"
+    ],
+    "add_text": [
+      "self",
+      "text",
+      "position",
+      "font_size",
+      "color"
+    ],
+    "add_labels": [
+      "self",
+      "points",
+      "labels",
+      "font_size",
+      "point_size"
+    ],
+    "clear": [
+      "self"
+    ]
+  },
+  "PlotlyBackend": {
+    "__init__": [
+      "self"
+    ],
+    "_pv_to_mesh3d": [
+      "self",
+      "pv_mesh"
+    ],
+    "_convert_polydata_to_mesh3d": [
+      "self",
+      "pv_mesh"
+    ],
+    "layout": [
+      "self",
+      "new_layout"
+    ],
+    "plot_iter": [
+      "self",
+      "plotting_list"
+    ],
+    "_apply_label_and_visibility": [
+      "self",
+      "trace",
+      "name",
+      "visible"
+    ],
+    "plot": [
+      "self",
+      "plottable_object",
+      "name"
+    ],
+    "set_trace_visibility": [
+      "self",
+      "name",
+      "visible"
+    ],
+    "filter_traces": [
+      "self",
+      "names"
+    ],
+    "show": [
+      "self",
+      "plottable_object",
+      "screenshot"
+    ],
+    "add_points": [
+      "self",
+      "points",
+      "color",
+      "size"
+    ],
+    "add_lines": [
+      "self",
+      "points",
+      "connections",
+      "color",
+      "width"
+    ],
+    "add_planes": [
+      "self",
+      "center",
+      "normal",
+      "i_size",
+      "j_size"
+    ],
+    "add_text": [
+      "self",
+      "text",
+      "position",
+      "font_size",
+      "color"
+    ],
+    "add_labels": [
+      "self",
+      "points",
+      "labels",
+      "font_size",
+      "point_size"
+    ],
+    "clear": [
+      "self"
+    ]
+  },
+  "PlotlyDashBackend": {
+    "__init__": [
+      "self",
+      "app"
+    ],
+    "dropdown_manager": [
+      "self"
+    ],
+    "plot": [
+      "self",
+      "plottable_object",
+      "name"
+    ],
+    "_setup_callbacks": [
+      "self"
+    ],
+    "create_dash_layout": [
+      "self"
+    ],
+    "show": [
+      "self",
+      "plottable_object",
+      "screenshot"
+    ]
+  },
+  "DashDropdownManager": {
+    "__init__": [
+      "self",
+      "fig"
+    ],
+    "add_mesh_name": [
+      "self",
+      "name"
+    ],
+    "get_mesh_names": [
+      "self"
+    ],
+    "get_visibility_args_for_meshes": [
+      "self",
+      "visible_mesh_names"
+    ],
+    "clear": [
+      "self"
+    ]
+  },
+  "ButtonManager": {
+    "__init__": [
+      "self",
+      "fig"
+    ],
+    "add_button": [
+      "self",
+      "label",
+      "x",
+      "y",
+      "xanchor",
+      "yanchor",
+      "method",
+      "args",
+      "args2"
+    ],
+    "show_hide_bbox_dict": [
+      "self",
+      "toggle"
+    ],
+    "update_layout": [
+      "self"
+    ],
+    "args_xy_view_button": [
+      "self",
+      "label",
+      "x",
+      "y"
+    ],
+    "args_xz_view_button": [
+      "self",
+      "label",
+      "x",
+      "y"
+    ],
+    "args_yz_view_button": [
+      "self",
+      "label",
+      "x",
+      "y"
+    ],
+    "args_iso_view_button": [
+      "self",
+      "label",
+      "x",
+      "y"
+    ],
+    "add_measurement_toggle_button": [
+      "self",
+      "label",
+      "x",
+      "y"
+    ],
+    "args_projection_toggle_button": [
+      "self"
+    ],
+    "args_theme_toggle_button": [
+      "self",
+      "label",
+      "x",
+      "y"
+    ]
+  },
+  "send_pl": [
+    "plotter",
+    "host",
+    "port"
+  ],
+  "send_mesh": [
+    "mesh",
+    "host",
+    "port"
+  ],
+  "TrameVisualizer": {
+    "__init__": [
+      "self"
+    ],
+    "set_scene": [
+      "self",
+      "plotter"
+    ],
+    "show": [
+      "self"
+    ]
+  },
+  "TrameService": {
+    "__init__": [
+      "self",
+      "websocket_host",
+      "websocket_port"
+    ],
+    "clear_plotter": [
+      "self"
+    ],
+    "_listener": [
+      "self",
+      "websocket"
+    ],
+    "_webserver": [
+      "self"
+    ],
+    "set_scene": [
+      "self"
+    ],
+    "_launch_trame_service": [
+      "self"
+    ],
+    "run": [
+      "self"
+    ]
+  },
+  "PyVistaInterface": {
+    "__init__": [
+      "self",
+      "scene",
+      "color_opts",
+      "num_points",
+      "enable_widgets",
+      "show_plane",
+      "use_qt",
+      "show_qt"
+    ],
+    "scene": [
+      "self"
+    ],
+    "view_xy": [
+      "self"
+    ],
+    "view_xz": [
+      "self"
+    ],
+    "view_yx": [
+      "self"
+    ],
+    "view_yz": [
+      "self"
+    ],
+    "view_zx": [
+      "self"
+    ],
+    "view_zy": [
+      "self"
+    ],
+    "enable_parallel_projection": [
+      "self"
+    ],
+    "disable_parallel_projection": [
+      "self"
+    ],
+    "clip": [
+      "self",
+      "mesh",
+      "plane"
+    ],
+    "plot_meshobject": [
+      "self",
+      "custom_object",
+      "plot_children"
+    ],
+    "plot_edges": [
+      "self",
+      "custom_object"
+    ],
+    "hide_children": [
+      "self",
+      "custom_object"
+    ],
+    "show_children": [
+      "self",
+      "custom_object"
+    ],
+    "toggle_subtree_visibility": [
+      "self",
+      "custom_object",
+      "include_root"
+    ],
+    "_set_subtree_visibility_recursive": [
+      "self",
+      "custom_object",
+      "visible"
+    ],
+    "plot": [
+      "self",
+      "plottable_object",
+      "plot_children"
+    ],
+    "plot_iter": [
+      "self",
+      "plotting_list"
+    ],
+    "show": [
+      "self",
+      "show_plane",
+      "jupyter_backend"
+    ],
+    "set_add_mesh_defaults": [
+      "self",
+      "plotting_options"
+    ],
+    "object_to_actors_map": [
+      "self"
+    ]
+  },
+  "_HAS_TRAME": [],
+  "DARK_MODE_THRESHOLD": [],
+  "PyVistaBackendInterface": {
+    "__init__": [
+      "self",
+      "use_trame",
+      "allow_picking",
+      "allow_hovering",
+      "plot_picked_names",
+      "show_plane",
+      "use_qt",
+      "show_qt",
+      "custom_picker",
+      "custom_picker_kwargs"
+    ],
+    "_cleanup": [
+      "self"
+    ],
+    "pv_interface": [
+      "self"
+    ],
+    "scene": [
+      "self"
+    ],
+    "enable_widgets": [
+      "self",
+      "dark_mode"
+    ],
+    "add_widget": [
+      "self",
+      "widget"
+    ],
+    "picker_callback": [
+      "self",
+      "actor"
+    ],
+    "hover_callback": [
+      "self",
+      "_widget",
+      "event_name"
+    ],
+    "focus_point_selection": [
+      "self",
+      "actor"
+    ],
+    "compute_edge_object_map": [
+      "self"
+    ],
+    "enable_picking": [
+      "self"
+    ],
+    "enable_set_focus_center": [
+      "self"
+    ],
+    "enable_hover": [
+      "self"
+    ],
+    "disable_picking": [
+      "self"
+    ],
+    "disable_hover": [
+      "self"
+    ],
+    "disable_center_focus": [
+      "self"
+    ],
+    "show": [
+      "self",
+      "plottable_object",
+      "screenshot",
+      "view_2d",
+      "dark_mode"
+    ],
+    "show_plotter": [
+      "self",
+      "screenshot"
+    ],
+    "plot_iter": [
+      "self",
+      "plottable_object"
+    ],
+    "plot": [
+      "self",
+      "plottable_object"
+    ],
+    "picked_operation": [
+      "self"
+    ]
+  },
+  "PyVistaBackend": {
+    "__init__": [
+      "self",
+      "use_trame",
+      "allow_picking",
+      "allow_hovering",
+      "plot_picked_names",
+      "use_qt",
+      "show_qt",
+      "custom_picker"
+    ],
+    "base_plotter": [
+      "self"
+    ],
+    "plot_iter": [
+      "self",
+      "plotting_list"
+    ],
+    "plot": [
+      "self",
+      "plottable_object"
+    ],
+    "close": [
+      "self"
+    ],
+    "create_animation": [
+      "self",
+      "frames",
+      "fps",
+      "loop",
+      "scalar_bar_args"
+    ],
+    "add_points": [
+      "self",
+      "points",
+      "color",
+      "size"
+    ],
+    "add_lines": [
+      "self",
+      "points",
+      "connections",
+      "color",
+      "width"
+    ],
+    "add_planes": [
+      "self",
+      "center",
+      "normal",
+      "i_size",
+      "j_size"
+    ],
+    "add_text": [
+      "self",
+      "text",
+      "position",
+      "font_size",
+      "color"
+    ],
+    "add_labels": [
+      "self",
+      "points",
+      "labels",
+      "font_size",
+      "point_size"
+    ],
+    "clear": [
+      "self"
+    ]
+  },
+  "AnimationState": {
+    "STOPPED": [],
+    "PLAYING": [],
+    "PAUSED": []
+  },
+  "FrameSequence": {
+    "get_frame": [
+      "self",
+      "index"
+    ],
+    "__len__": [
+      "self"
+    ]
+  },
+  "InMemoryFrameSequence": {
+    "__init__": [
+      "self",
+      "frames"
+    ],
+    "get_frame": [
+      "self",
+      "index"
+    ],
+    "__len__": [
+      "self"
+    ]
+  },
+  "Animation": {
+    "__init__": [
+      "self",
+      "plotter",
+      "frames",
+      "fps",
+      "loop",
+      "scalar_bar_args"
+    ],
+    "_calculate_global_color_scale": [
+      "self"
+    ],
+    "_is_dark_mode": [
+      "self"
+    ],
+    "state": [
+      "self"
+    ],
+    "current_frame": [
+      "self"
+    ],
+    "total_frames": [
+      "self"
+    ],
+    "fps": [
+      "self",
+      "value"
+    ],
+    "play": [
+      "self"
+    ],
+    "pause": [
+      "self"
+    ],
+    "stop": [
+      "self"
+    ],
+    "step_forward": [
+      "self"
+    ],
+    "step_backward": [
+      "self"
+    ],
+    "seek": [
+      "self",
+      "frame_index"
+    ],
+    "_start_timer": [
+      "self"
+    ],
+    "_start_animation_thread": [
+      "self"
+    ],
+    "_stop_timer": [
+      "self"
+    ],
+    "_restart_timer": [
+      "self"
+    ],
+    "_on_timer": [
+      "self"
+    ],
+    "_extract_mesh": [
+      "self",
+      "frame"
+    ],
+    "_update_display": [
+      "self"
+    ],
+    "save": [
+      "self",
+      "filename",
+      "quality",
+      "framerate",
+      "close_plotter"
+    ],
+    "_add_animation_controls": [
+      "self"
+    ],
+    "show": [
+      "self",
+      "show_controls"
+    ]
+  },
+  "AbstractPicker": {
+    "__init__": [
+      "self",
+      "plotter_backend"
+    ],
+    "pick_select_object": [
+      "self",
+      "custom_object",
+      "pt"
+    ],
+    "pick_unselect_object": [
+      "self",
+      "custom_object"
+    ],
+    "hover_select_object": [
+      "self",
+      "custom_object",
+      "pt"
+    ],
+    "hover_unselect_object": [
+      "self",
+      "custom_object"
+    ],
+    "picked_dict": [
+      "self"
+    ]
+  },
+  "Picker": {
+    "__init__": [
+      "self",
+      "plotter_backend",
+      "plot_picked_names"
+    ],
+    "pick_select_object": [
+      "self",
+      "custom_object",
+      "pt"
+    ],
+    "pick_unselect_object": [
+      "self",
+      "custom_object"
+    ],
+    "hover_select_object": [
+      "self",
+      "custom_object",
+      "actor"
+    ],
+    "hover_unselect_object": [
+      "self"
+    ],
+    "picked_dict": [
+      "self"
+    ]
+  },
+  "StopButtonConfig": {
+    "STOP": []
+  },
+  "StopButton": {
+    "__init__": [
+      "self",
+      "plotter",
+      "animation",
+      "dark_mode"
+    ],
+    "callback": [
+      "self",
+      "state"
+    ]
+  },
+  "DynamicTreeMenuWidget": {
+    "__init__": [
+      "self",
+      "plotter",
+      "position",
+      "button_size",
+      "spacing",
+      "font_size",
+      "dark_mode"
+    ],
+    "_collect_root_objects": [
+      "self"
+    ],
+    "_make_toggle_callback": [
+      "self",
+      "obj"
+    ],
+    "_add_menu_item": [
+      "self",
+      "obj",
+      "y_position",
+      "indent"
+    ],
+    "_add_object_and_children": [
+      "self",
+      "obj",
+      "y_position",
+      "indent"
+    ],
+    "_rebuild_menu": [
+      "self"
+    ],
+    "refresh": [
+      "self"
+    ],
+    "update": [
+      "self"
+    ],
+    "show_menu": [
+      "self"
+    ],
+    "hide_menu": [
+      "self"
+    ],
+    "callback": [
+      "self",
+      "state"
+    ]
+  },
+  "MeshSliderWidget": {
+    "__init__": [
+      "self",
+      "plotter_helper",
+      "dark_mode"
+    ],
+    "_meshes": [
+      "self"
+    ],
+    "callback": [
+      "self",
+      "state"
+    ],
+    "update": [
+      "self"
+    ]
+  },
+  "PlayPauseButtonConfig": {
+    "PLAY_PAUSE": []
+  },
+  "PlayPauseButton": {
+    "__init__": [
+      "self",
+      "plotter",
+      "animation",
+      "dark_mode"
+    ],
+    "callback": [
+      "self",
+      "state"
+    ],
+    "_update_icon": [
+      "self",
+      "icon_name"
+    ]
+  },
+  "SaveGifButtonConfig": {
+    "SAVE_GIF": []
+  },
+  "SaveGifButton": {
+    "__init__": [
+      "self",
+      "plotter",
+      "animation",
+      "dark_mode"
+    ],
+    "callback": [
+      "self",
+      "state"
+    ]
+  },
+  "TreeMenuToggleButton": {
+    "__init__": [
+      "self",
+      "plotter",
+      "dark_mode",
+      "tree_menu"
+    ],
+    "update": [
+      "self"
+    ],
+    "callback": [
+      "self",
+      "state"
+    ]
+  },
+  "ViewDirection": {
+    "XYPLUS": [],
+    "XYMINUS": [],
+    "XZPLUS": [],
+    "XZMINUS": [],
+    "YZPLUS": [],
+    "YZMINUS": [],
+    "ISOMETRIC": []
+  },
+  "ViewButton": {
+    "__init__": [
+      "self",
+      "plotter",
+      "direction",
+      "dark_mode"
+    ],
+    "callback": [
+      "self",
+      "state"
+    ]
+  },
+  "CameraPanDirection": {
+    "XUP": [],
+    "XDOWN": [],
+    "YUP": [],
+    "YDOWN": [],
+    "ZUP": [],
+    "ZDOWN": []
+  },
+  "DisplacementArrow": {
+    "__init__": [
+      "self",
+      "plotter",
+      "direction",
+      "dark_mode"
+    ],
+    "callback": [
+      "self",
+      "state"
+    ]
+  },
+  "ParallelProjectionButton": {
+    "__init__": [
+      "self",
+      "plotter",
+      "dark_mode"
+    ],
+    "callback": [
+      "self",
+      "state"
+    ],
+    "update": [
+      "self"
+    ]
+  },
+  "NextButtonConfig": {
+    "NEXT": []
+  },
+  "NextButton": {
+    "__init__": [
+      "self",
+      "plotter",
+      "animation",
+      "dark_mode"
+    ],
+    "callback": [
+      "self",
+      "state"
+    ]
+  },
+  "PreviousButtonConfig": {
+    "PREVIOUS": []
+  },
+  "PreviousButton": {
+    "__init__": [
+      "self",
+      "plotter",
+      "animation",
+      "dark_mode"
+    ],
+    "callback": [
+      "self",
+      "state"
+    ]
+  },
+  "MeasureWidget": {
+    "__init__": [
+      "self",
+      "plotter_helper",
+      "dark_mode"
+    ],
+    "callback": [
+      "self",
+      "state"
+    ],
+    "update": [
+      "self"
+    ]
+  },
+  "Ruler": {
+    "__init__": [
+      "self",
+      "plotter",
+      "dark_mode"
+    ],
+    "callback": [
+      "self",
+      "state"
+    ],
+    "update": [
+      "self"
+    ]
+  },
+  "ScreenshotButton": {
+    "__init__": [
+      "self",
+      "plotter",
+      "dark_mode"
+    ],
+    "callback": [
+      "self",
+      "state"
+    ],
+    "update": [
+      "self"
+    ]
+  },
+  "HideButton": {
+    "__init__": [
+      "self",
+      "plotter",
+      "dark_mode"
+    ],
+    "callback": [
+      "self",
+      "state"
+    ],
+    "update": [
+      "self"
+    ]
+  },
+  "PickRotCenterButton": {
+    "__init__": [
+      "self",
+      "plotter_helper",
+      "dark_mode"
+    ],
+    "callback": [
+      "self",
+      "state"
+    ],
+    "update": [
+      "self"
+    ]
+  },
+  "PlotterWidget": {
+    "__init__": [
+      "self",
+      "plotter"
+    ],
+    "plotter": [
+      "self"
+    ],
+    "callback": [
+      "self",
+      "state"
+    ],
+    "update": [
+      "self"
+    ]
+  },
+  "Button": {
+    "__init__": [
+      "self",
+      "plotter",
+      "button_config",
+      "dark_mode"
+    ],
+    "callback": [
+      "self",
+      "state"
+    ],
+    "update": [
+      "self"
+    ]
+  },
+  "DarkModeButton": {
+    "__init__": [
+      "self",
+      "plotter",
+      "dark_mode"
+    ],
+    "callback": [
+      "self",
+      "state"
+    ],
+    "update": [
+      "self"
+    ]
+  },
+  "MeshObjectPlot": {
+    "__init__": [
+      "self",
+      "custom_object",
+      "mesh",
+      "actor",
+      "edges",
+      "children",
+      "parent"
+    ],
+    "add_child": [
+      "self",
+      "child"
+    ],
+    "parent": [
+      "self",
+      "parent"
+    ],
+    "mesh": [
+      "self",
+      "mesh"
+    ],
+    "custom_object": [
+      "self",
+      "custom_object"
+    ],
+    "actor": [
+      "self",
+      "actor"
+    ],
+    "edges": [
+      "self",
+      "edges"
+    ],
+    "name": [
+      "self"
+    ],
+    "mesh_type": [
+      "self"
+    ],
+    "visible": [
+      "self",
+      "value"
+    ],
+    "is_visible_in_tree": [
+      "self"
+    ]
+  },
+  "EdgePlot": {
+    "__init__": [
+      "self",
+      "actor",
+      "edge_object",
+      "parent"
+    ],
+    "actor": [
+      "self"
+    ],
+    "edge_object": [
+      "self"
+    ],
+    "parent": [
+      "self",
+      "parent"
+    ],
+    "name": [
+      "self"
+    ]
+  },
+  "Color": {
+    "DEFAULT": [],
+    "PICKED": [],
+    "EDGE": [],
+    "PICKED_EDGE": []
+  },
+  "ClipPlane": {
+    "__init__": [
+      "self",
+      "normal",
+      "origin"
+    ],
+    "normal": [
+      "self",
+      "value"
+    ],
+    "origin": [
+      "self",
+      "value"
+    ]
+  },
+  "PlottingOptions": {
+    "from_kwargs": [
+      "cls",
+      "kwargs"
+    ]
+  },
+  "pd_to_vtkhdf": [
+    "pd",
+    "output_vtkhdf_file"
+  ],
+  "vtkhdf_to_pd": [
+    "input_vtkhdf_file"
+  ],
+  "ug_to_vtkhdf": [
+    "ug",
+    "output_vtkhdf_file"
+  ],
+  "vtkhdf_to_ug": [
+    "input_vtkhdf_file"
+  ],
+  "_extract_kwargs": [
+    "func",
+    "input_kwargs"
+  ],
+  "_capture_init_params": [
+    "func_or_method",
+    "locals_dict",
+    "exclude"
+  ],
+  "SingletonType": {
+    "_instances": [],
+    "__call__": [
+      "cls"
+    ]
+  },
+  "VizLogger": {
+    "_logger": [],
+    "__init__": [
+      "self",
+      "level",
+      "logger_name"
+    ],
+    "get_logger": [
+      "self"
+    ],
+    "set_level": [
+      "self",
+      "level"
+    ],
+    "enable_output": [
+      "self",
+      "stream"
+    ],
+    "add_file_handler": [
+      "self",
+      "logs_dir"
+    ]
+  },
+  "logger": []
+}
