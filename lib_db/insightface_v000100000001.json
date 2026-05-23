@@ -1,0 +1,3291 @@
+{
+  "__version__": [],
+  "main": [],
+  "model_download_command_factory": [
+    "args"
+  ],
+  "ModelDownloadCommand": {
+    "register_subcommand": [
+      "parser"
+    ],
+    "__init__": [
+      "self",
+      "model",
+      "root",
+      "force"
+    ],
+    "run": [
+      "self"
+    ]
+  },
+  "BaseInsightFaceCLICommand": {
+    "register_subcommand": [
+      "parser"
+    ],
+    "run": [
+      "self"
+    ]
+  },
+  "rec_add_mask_param_command_factory": [
+    "args"
+  ],
+  "RecAddMaskParamCommand": {
+    "register_subcommand": [
+      "parser"
+    ],
+    "__init__": [
+      "self",
+      "input",
+      "output"
+    ],
+    "run": [
+      "self"
+    ]
+  },
+  "__all__": [],
+  "Attribute": {
+    "__init__": [
+      "self",
+      "model_file",
+      "session"
+    ],
+    "prepare": [
+      "self",
+      "ctx_id"
+    ],
+    "get": [
+      "self",
+      "img",
+      "face"
+    ]
+  },
+  "Landmark": {
+    "__init__": [
+      "self",
+      "model_file",
+      "session"
+    ],
+    "prepare": [
+      "self",
+      "ctx_id"
+    ],
+    "get": [
+      "self",
+      "img",
+      "face"
+    ]
+  },
+  "_model_sha1": [],
+  "base_repo_url": [],
+  "_url_format": [],
+  "short_hash": [
+    "name"
+  ],
+  "find_params_file": [
+    "dir_path"
+  ],
+  "get_model_file": [
+    "name",
+    "root"
+  ],
+  "softmax": [
+    "z"
+  ],
+  "distance2bbox": [
+    "points",
+    "distance",
+    "max_shape"
+  ],
+  "distance2kps": [
+    "points",
+    "distance",
+    "max_shape"
+  ],
+  "RetinaFace": {
+    "__init__": [
+      "self",
+      "model_file",
+      "session"
+    ],
+    "_init_vars": [
+      "self"
+    ],
+    "prepare": [
+      "self",
+      "ctx_id"
+    ],
+    "forward": [
+      "self",
+      "img",
+      "threshold"
+    ],
+    "detect": [
+      "self",
+      "img",
+      "input_size",
+      "max_num",
+      "metric"
+    ],
+    "_detect_candidates": [
+      "self",
+      "img",
+      "input_size"
+    ],
+    "_resolve_input_sizes": [
+      "self",
+      "input_size"
+    ],
+    "_normalize_input_sizes": [
+      "input_size"
+    ],
+    "nms": [
+      "self",
+      "dets"
+    ]
+  },
+  "get_retinaface": [
+    "name",
+    "download",
+    "root"
+  ],
+  "PickableInferenceSession": {
+    "__init__": [
+      "self",
+      "model_path"
+    ],
+    "__getstate__": [
+      "self"
+    ],
+    "__setstate__": [
+      "self",
+      "values"
+    ]
+  },
+  "ModelRouter": {
+    "__init__": [
+      "self",
+      "onnx_file"
+    ],
+    "get_model": [
+      "self"
+    ]
+  },
+  "find_onnx_file": [
+    "dir_path"
+  ],
+  "get_default_providers": [],
+  "get_default_provider_options": [],
+  "get_model": [
+    "name"
+  ],
+  "ArcFaceONNX": {
+    "__init__": [
+      "self",
+      "model_file",
+      "session"
+    ],
+    "prepare": [
+      "self",
+      "ctx_id"
+    ],
+    "get": [
+      "self",
+      "img",
+      "face"
+    ],
+    "compute_sim": [
+      "self",
+      "feat1",
+      "feat2"
+    ],
+    "get_feat": [
+      "self",
+      "imgs"
+    ],
+    "forward": [
+      "self",
+      "batch_data"
+    ]
+  },
+  "DEFAULT_DET_SIZES": [],
+  "SCRFD": {
+    "__init__": [
+      "self",
+      "model_file",
+      "session"
+    ],
+    "_init_vars": [
+      "self"
+    ],
+    "prepare": [
+      "self",
+      "ctx_id"
+    ],
+    "forward": [
+      "self",
+      "img",
+      "threshold"
+    ],
+    "detect": [
+      "self",
+      "img",
+      "input_size",
+      "max_num",
+      "metric"
+    ],
+    "_detect_candidates": [
+      "self",
+      "img",
+      "input_size"
+    ],
+    "_resolve_input_sizes": [
+      "self",
+      "input_size"
+    ],
+    "_normalize_input_sizes": [
+      "input_size"
+    ],
+    "nms": [
+      "self",
+      "dets"
+    ]
+  },
+  "get_scrfd": [
+    "name",
+    "download",
+    "root"
+  ],
+  "scrfd_2p5gkps": [],
+  "INSwapper": {
+    "__init__": [
+      "self",
+      "model_file",
+      "session"
+    ],
+    "forward": [
+      "self",
+      "img",
+      "latent"
+    ],
+    "get": [
+      "self",
+      "img",
+      "target_face",
+      "source_face",
+      "paste_back"
+    ]
+  },
+  "load_BFM": [
+    "model_path"
+  ],
+  "load_BFM_info": [
+    "path"
+  ],
+  "load_uv_coords": [
+    "path"
+  ],
+  "load_pncc_code": [
+    "path"
+  ],
+  "get_organ_ind": [
+    "model_info"
+  ],
+  "estimate_shape": [
+    "x",
+    "shapeMU",
+    "shapePC",
+    "shapeEV",
+    "expression",
+    "s",
+    "R",
+    "t2d",
+    "lamb"
+  ],
+  "estimate_expression": [
+    "x",
+    "shapeMU",
+    "expPC",
+    "expEV",
+    "shape",
+    "s",
+    "R",
+    "t2d",
+    "lamb"
+  ],
+  "fit_points": [
+    "x",
+    "X_ind",
+    "model",
+    "n_sp",
+    "n_ep",
+    "max_iter"
+  ],
+  "fit_points_for_show": [
+    "x",
+    "X_ind",
+    "model",
+    "n_sp",
+    "n_ep",
+    "max_iter"
+  ],
+  "MorphabelModel": {
+    "__init__": [
+      "self",
+      "model_path",
+      "model_type"
+    ],
+    "get_shape_para": [
+      "self",
+      "type"
+    ],
+    "get_exp_para": [
+      "self",
+      "type"
+    ],
+    "generate_vertices": [
+      "self",
+      "shape_para",
+      "exp_para"
+    ],
+    "get_tex_para": [
+      "self",
+      "type"
+    ],
+    "generate_colors": [
+      "self",
+      "tex_para"
+    ],
+    "rotate": [
+      "self",
+      "vertices",
+      "angles"
+    ],
+    "transform": [
+      "self",
+      "vertices",
+      "s",
+      "angles",
+      "t3d"
+    ],
+    "transform_3ddfa": [
+      "self",
+      "vertices",
+      "s",
+      "angles",
+      "t3d"
+    ],
+    "fit": [
+      "self",
+      "x",
+      "X_ind",
+      "max_iter",
+      "isShow"
+    ]
+  },
+  "read_obj": [
+    "obj_name"
+  ],
+  "write_asc": [
+    "path",
+    "vertices"
+  ],
+  "write_obj_with_colors": [
+    "obj_name",
+    "vertices",
+    "triangles",
+    "colors"
+  ],
+  "write_obj_with_texture": [
+    "obj_name",
+    "vertices",
+    "triangles",
+    "texture",
+    "uv_coords"
+  ],
+  "write_obj_with_colors_texture": [
+    "obj_name",
+    "vertices",
+    "triangles",
+    "colors",
+    "texture",
+    "uv_coords"
+  ],
+  "get_normal": [
+    "vertices",
+    "triangles"
+  ],
+  "add_light_sh": [
+    "vertices",
+    "triangles",
+    "colors",
+    "sh_coeff"
+  ],
+  "add_light": [
+    "vertices",
+    "triangles",
+    "colors",
+    "light_positions",
+    "light_intensities"
+  ],
+  "fit_light": [
+    "image",
+    "vertices",
+    "colors",
+    "triangles",
+    "vis_ind",
+    "lamb",
+    "max_iter"
+  ],
+  "plot_mesh": [
+    "vertices",
+    "triangles",
+    "subplot",
+    "title",
+    "el",
+    "az",
+    "lwdt",
+    "dist",
+    "color"
+  ],
+  "angle2matrix": [
+    "angles"
+  ],
+  "angle2matrix_3ddfa": [
+    "angles"
+  ],
+  "rotate": [
+    "vertices",
+    "angles"
+  ],
+  "similarity_transform": [
+    "vertices",
+    "s",
+    "R",
+    "t3d"
+  ],
+  "normalize": [
+    "x"
+  ],
+  "lookat_camera": [
+    "vertices",
+    "eye",
+    "at",
+    "up"
+  ],
+  "orthographic_project": [
+    "vertices"
+  ],
+  "perspective_project": [
+    "vertices",
+    "fovy",
+    "aspect_ratio",
+    "near",
+    "far"
+  ],
+  "to_image": [
+    "vertices",
+    "h",
+    "w",
+    "is_perspective"
+  ],
+  "estimate_affine_matrix_3d23d": [
+    "X",
+    "Y"
+  ],
+  "estimate_affine_matrix_3d22d": [
+    "X",
+    "x"
+  ],
+  "P2sRt": [
+    "P"
+  ],
+  "isRotationMatrix": [
+    "R"
+  ],
+  "matrix2angle": [
+    "R"
+  ],
+  "rasterize_triangles": [
+    "vertices",
+    "triangles",
+    "h",
+    "w"
+  ],
+  "render_colors": [
+    "vertices",
+    "triangles",
+    "colors",
+    "h",
+    "w",
+    "c",
+    "BG"
+  ],
+  "render_texture": [
+    "vertices",
+    "triangles",
+    "texture",
+    "tex_coords",
+    "tex_triangles",
+    "h",
+    "w",
+    "c",
+    "mapping_type",
+    "BG"
+  ],
+  "isPointInTri": [
+    "point",
+    "tri_points"
+  ],
+  "get_point_weight": [
+    "point",
+    "tri_points"
+  ],
+  "render_colors_ras": [
+    "vertices",
+    "triangles",
+    "colors",
+    "h",
+    "w",
+    "c"
+  ],
+  "_is_auto_det_size": [
+    "det_size"
+  ],
+  "FaceAnalysis": {
+    "__init__": [
+      "self",
+      "name",
+      "root",
+      "allowed_modules"
+    ],
+    "prepare": [
+      "self",
+      "ctx_id",
+      "det_thresh",
+      "det_size"
+    ],
+    "get": [
+      "self",
+      "img",
+      "max_num",
+      "det_metric"
+    ],
+    "draw_on": [
+      "self",
+      "img",
+      "faces"
+    ]
+  },
+  "Face": {
+    "__init__": [
+      "self",
+      "d"
+    ],
+    "__setattr__": [
+      "self",
+      "name",
+      "value"
+    ],
+    "__setitem__": [],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "embedding_norm": [
+      "self"
+    ],
+    "normed_embedding": [
+      "self"
+    ],
+    "sex": [
+      "self"
+    ]
+  },
+  "MaskRenderer": {
+    "__init__": [
+      "self",
+      "name",
+      "root",
+      "insfa"
+    ],
+    "prepare": [
+      "self",
+      "ctx_id",
+      "det_thresh",
+      "det_size"
+    ],
+    "transform": [
+      "self",
+      "shape3D",
+      "R"
+    ],
+    "preprocess": [
+      "self",
+      "vertices",
+      "w",
+      "h"
+    ],
+    "project_to_2d": [
+      "self",
+      "vertices",
+      "s",
+      "angles",
+      "t"
+    ],
+    "params_to_vertices": [
+      "self",
+      "params",
+      "H",
+      "W"
+    ],
+    "draw_lmk": [
+      "self",
+      "face_image"
+    ],
+    "build_params": [
+      "self",
+      "face_image"
+    ],
+    "generate_mask_uv": [
+      "self",
+      "mask",
+      "positions"
+    ],
+    "render_mask": [
+      "self",
+      "face_image",
+      "mask_image",
+      "params",
+      "input_is_rgb",
+      "auto_blend",
+      "positions"
+    ],
+    "encode_params": [
+      "params"
+    ],
+    "decode_params": [
+      "params"
+    ]
+  },
+  "MaskAugmentation": {
+    "__init__": [
+      "self",
+      "mask_names",
+      "mask_probs",
+      "h_low",
+      "h_high",
+      "always_apply",
+      "p"
+    ],
+    "apply": [
+      "self",
+      "image",
+      "hlabel",
+      "mask_name",
+      "h_pos"
+    ],
+    "targets_as_params": [
+      "self"
+    ],
+    "get_params_dependent_on_targets": [
+      "self",
+      "params"
+    ],
+    "get_transform_init_args_names": [
+      "self"
+    ]
+  },
+  "StudioContext": {},
+  "_unique_existing_paths": [
+    "paths"
+  ],
+  "qt_plugin_root_candidates": [],
+  "configure_qt_plugin_paths": [],
+  "create_context": [
+    "args"
+  ],
+  "run_app": [
+    "args"
+  ],
+  "PageRegistry": {
+    "__init__": [
+      "self",
+      "context"
+    ],
+    "get": [
+      "self",
+      "page_key"
+    ],
+    "pages": [
+      "self"
+    ],
+    "_create_page": [
+      "self",
+      "page_key"
+    ]
+  },
+  "WorkerSignals": {
+    "result": [],
+    "error": [],
+    "progress": [],
+    "finished": []
+  },
+  "Worker": {
+    "__init__": [
+      "self",
+      "fn"
+    ],
+    "cancel": [
+      "self"
+    ],
+    "run": [
+      "self"
+    ]
+  },
+  "FirstLaunchWizard": {
+    "__init__": [
+      "self",
+      "config",
+      "parent"
+    ],
+    "browse_workspace": [
+      "self"
+    ],
+    "accept": [
+      "self"
+    ],
+    "_update_provider_availability": [
+      "self"
+    ]
+  },
+  "MainWindow": {
+    "LEGACY_PAGE_MAP": [],
+    "GLOBAL_PAGES": [],
+    "__init__": [
+      "self",
+      "context",
+      "parent"
+    ],
+    "_build_top_bar": [
+      "self"
+    ],
+    "_top_button": [
+      "self",
+      "text",
+      "callback"
+    ],
+    "_build_mode_rail": [
+      "self"
+    ],
+    "_mode_subtitle": [
+      "self",
+      "mode"
+    ],
+    "_build_menu": [
+      "self"
+    ],
+    "_build_statusbar": [
+      "self"
+    ],
+    "_mode_list_clicked": [
+      "self",
+      "item"
+    ],
+    "change_mode": [
+      "self",
+      "mode",
+      "restore_last",
+      "save"
+    ],
+    "_sync_mode_list_selection": [
+      "self"
+    ],
+    "_rebuild_sidebar": [
+      "self"
+    ],
+    "_sidebar_clicked": [
+      "self",
+      "item"
+    ],
+    "open_page": [
+      "self",
+      "page_key",
+      "from_mode_change"
+    ],
+    "_page_title": [
+      "self",
+      "page_key"
+    ],
+    "show_first_launch": [
+      "self"
+    ],
+    "auto_load_model": [
+      "self"
+    ],
+    "open_settings_dialog": [
+      "self"
+    ],
+    "_settings_saved": [
+      "self"
+    ],
+    "apply_theme": [
+      "self"
+    ],
+    "apply_language": [
+      "self"
+    ],
+    "_refresh_mode_list_texts": [
+      "self"
+    ],
+    "open_model_manager": [
+      "self",
+      "initial"
+    ],
+    "open_license_dialog": [
+      "self"
+    ],
+    "open_enterprise_help": [
+      "self"
+    ],
+    "set_status": [
+      "self",
+      "message"
+    ],
+    "refresh_statusbar": [
+      "self"
+    ],
+    "run_task": [
+      "self",
+      "title",
+      "fn",
+      "on_result",
+      "show_dialog"
+    ],
+    "closeEvent": [
+      "self",
+      "event"
+    ],
+    "_elide": [
+      "self",
+      "text",
+      "width"
+    ]
+  },
+  "ASSET_DIR": [],
+  "APP_ICON_SVG": [],
+  "APP_ICON_PNG": [],
+  "APP_ICON_ICO": [],
+  "APP_ICON_ICNS": [],
+  "app_icon_path": [],
+  "app_icon": [],
+  "configure_application_metadata": [
+    "app"
+  ],
+  "_set_windows_app_user_model_id": [],
+  "_set_process_title_best_effort": [
+    "name"
+  ],
+  "APP_NAME": [],
+  "APP_DISPLAY_NAME": [],
+  "build_parser": [],
+  "UploadPreview": {
+    "pathChanged": [],
+    "removed": [],
+    "__init__": [
+      "self",
+      "title",
+      "extensions",
+      "dialog_filter",
+      "prompt",
+      "parent"
+    ],
+    "path": [
+      "self"
+    ],
+    "set_path": [
+      "self",
+      "path",
+      "emit"
+    ],
+    "set_image": [
+      "self",
+      "image",
+      "path"
+    ],
+    "set_faces": [
+      "self",
+      "faces"
+    ],
+    "render_with_overlay": [
+      "self"
+    ],
+    "clear": [
+      "self",
+      "emit"
+    ],
+    "browse": [
+      "self"
+    ],
+    "eventFilter": [
+      "self",
+      "watched",
+      "event"
+    ],
+    "mouseReleaseEvent": [
+      "self",
+      "event"
+    ],
+    "enterEvent": [
+      "self",
+      "event"
+    ],
+    "leaveEvent": [
+      "self",
+      "event"
+    ],
+    "resizeEvent": [
+      "self",
+      "event"
+    ],
+    "_show_selected": [
+      "self",
+      "has_preview"
+    ],
+    "_placeholder_text": [
+      "self"
+    ],
+    "_language": [
+      "self"
+    ],
+    "_accepted_urls": [
+      "self",
+      "urls"
+    ],
+    "_accepts_path": [
+      "self",
+      "path"
+    ],
+    "_set_property": [
+      "self",
+      "name",
+      "value"
+    ],
+    "_update_hover_from_cursor": [
+      "self"
+    ]
+  },
+  "face_label": [
+    "name",
+    "similarity"
+  ],
+  "ThresholdSlider": {
+    "valueChanged": [],
+    "__init__": [
+      "self",
+      "value",
+      "parent"
+    ],
+    "_emit": [
+      "self",
+      "raw"
+    ],
+    "value": [
+      "self"
+    ],
+    "set_value": [
+      "self",
+      "value"
+    ]
+  },
+  "MetricCard": {
+    "__init__": [
+      "self",
+      "title",
+      "value",
+      "parent"
+    ],
+    "set_value": [
+      "self",
+      "value"
+    ]
+  },
+  "PersonCard": {
+    "__init__": [
+      "self",
+      "title",
+      "subtitle",
+      "parent"
+    ]
+  },
+  "FaceTable": {
+    "set_rows": [
+      "self",
+      "rows",
+      "columns"
+    ]
+  },
+  "_ProportionalTableSizer": {
+    "__init__": [
+      "self",
+      "table",
+      "estimated_widths",
+      "minimum_width"
+    ],
+    "update": [
+      "self",
+      "estimated_widths",
+      "minimum_width"
+    ],
+    "eventFilter": [
+      "self",
+      "watched",
+      "event"
+    ],
+    "apply": [
+      "self"
+    ]
+  },
+  "configure_table_columns": [
+    "table",
+    "estimated_widths",
+    "minimum_width"
+  ],
+  "refresh_table_columns": [
+    "table"
+  ],
+  "DropInput": {
+    "pathsChanged": [],
+    "removed": [],
+    "__init__": [
+      "self",
+      "title",
+      "mode",
+      "extensions",
+      "dialog_filter",
+      "show_select_button",
+      "parent"
+    ],
+    "paths": [
+      "self"
+    ],
+    "path": [
+      "self"
+    ],
+    "set_path": [
+      "self",
+      "path",
+      "emit"
+    ],
+    "set_paths": [
+      "self",
+      "paths",
+      "emit"
+    ],
+    "clear": [
+      "self"
+    ],
+    "browse": [
+      "self"
+    ],
+    "dragEnterEvent": [
+      "self",
+      "event"
+    ],
+    "dragMoveEvent": [
+      "self",
+      "event"
+    ],
+    "dragLeaveEvent": [
+      "self",
+      "event"
+    ],
+    "dropEvent": [
+      "self",
+      "event"
+    ],
+    "_accepted_urls": [
+      "self",
+      "urls"
+    ],
+    "_accepts_path": [
+      "self",
+      "path"
+    ],
+    "_empty_text": [
+      "self"
+    ],
+    "_selected_text": [
+      "self",
+      "paths"
+    ],
+    "eventFilter": [
+      "self",
+      "watched",
+      "event"
+    ],
+    "enterEvent": [
+      "self",
+      "event"
+    ],
+    "leaveEvent": [
+      "self",
+      "event"
+    ],
+    "_set_property": [
+      "self",
+      "name",
+      "value"
+    ],
+    "_update_hover_from_cursor": [
+      "self"
+    ]
+  },
+  "StudioProgressDialog": {
+    "__init__": [
+      "self",
+      "title",
+      "parent"
+    ],
+    "update_progress": [
+      "self",
+      "current",
+      "total",
+      "message"
+    ]
+  },
+  "numpy_to_qimage": [
+    "image"
+  ],
+  "ImageViewer": {
+    "faceClicked": [],
+    "__init__": [
+      "self",
+      "parent"
+    ],
+    "set_image": [
+      "self",
+      "image"
+    ],
+    "set_faces": [
+      "self",
+      "faces"
+    ],
+    "draw_overlays": [
+      "self"
+    ],
+    "fit_to_window": [
+      "self"
+    ],
+    "wheelEvent": [
+      "self",
+      "event"
+    ],
+    "mousePressEvent": [
+      "self",
+      "event"
+    ],
+    "render_with_overlay": [
+      "self"
+    ]
+  },
+  "SettingsDialog": {
+    "settingsSaved": [],
+    "__init__": [
+      "self",
+      "context",
+      "parent"
+    ],
+    "apply": [
+      "self"
+    ],
+    "save_and_close": [
+      "self"
+    ],
+    "_update_theme_description": [
+      "self"
+    ]
+  },
+  "ModelManagerDialog": {
+    "modelChanged": [],
+    "__init__": [
+      "self",
+      "context",
+      "parent"
+    ],
+    "open_page": [
+      "self",
+      "label"
+    ],
+    "set_status": [
+      "self",
+      "message"
+    ],
+    "run_task": [
+      "self",
+      "title",
+      "fn",
+      "on_result",
+      "show_dialog"
+    ],
+    "refresh_model_pages": [
+      "self"
+    ],
+    "_refresh_current_tab": [
+      "self",
+      "index"
+    ],
+    "refresh_statusbar": [
+      "self"
+    ]
+  },
+  "LicenseDialog": {
+    "__init__": [
+      "self",
+      "context",
+      "parent"
+    ],
+    "set_status": [
+      "self",
+      "message"
+    ]
+  },
+  "AppMode": {
+    "FACE_VERIFICATION": [],
+    "ALBUM_MANAGEMENT": [],
+    "FACE_SWAP": [],
+    "ENTERPRISE_EVALUATION": []
+  },
+  "NavigationItem": {},
+  "NavigationMode": {},
+  "GLOBAL_PAGE_TITLES": [],
+  "mode_from_value": [
+    "value"
+  ],
+  "last_page_attr": [
+    "mode"
+  ],
+  "timestamp_hhmmss": [
+    "timestamp_ms"
+  ],
+  "iter_video_frames": [
+    "path",
+    "frame_interval"
+  ],
+  "read_video_thumbnail": [
+    "path"
+  ],
+  "list_camera_indices": [
+    "max_indices"
+  ],
+  "cluster_embeddings": [
+    "embeddings",
+    "threshold",
+    "min_samples"
+  ],
+  "cluster_embeddings_dbscan": [
+    "embeddings",
+    "distance_threshold",
+    "min_samples"
+  ],
+  "find_license_text": [
+    "start"
+  ],
+  "allowed_usage_summary": [],
+  "license_summary_text": [
+    "status",
+    "model_name",
+    "provider",
+    "workspace"
+  ],
+  "FaceRecord": {
+    "to_json_dict": [
+      "self",
+      "include_embedding"
+    ]
+  },
+  "CompareResult": {
+    "to_json_dict": [
+      "self"
+    ]
+  },
+  "SearchResult": {
+    "to_json_dict": [
+      "self"
+    ]
+  },
+  "EvaluationResult": {
+    "to_json_dict": [
+      "self"
+    ]
+  },
+  "BUTTON_TOOLTIPS": [],
+  "normalize_button_text": [
+    "text"
+  ],
+  "tooltip_for_button": [
+    "text"
+  ],
+  "set_button_tooltip": [
+    "button",
+    "tooltip"
+  ],
+  "apply_button_tooltips": [
+    "widget"
+  ],
+  "LOGGER": [],
+  "ALBUM_DIRECTORIES_SETTING": [],
+  "ALBUM_RESULTS_SETTING": [],
+  "embedding_to_blob": [
+    "embedding"
+  ],
+  "blob_to_embedding": [
+    "blob",
+    "dim"
+  ],
+  "Storage": {
+    "__init__": [
+      "self",
+      "database_path"
+    ],
+    "connect": [
+      "self"
+    ],
+    "init_db": [
+      "self"
+    ],
+    "_ensure_column": [
+      "conn",
+      "table",
+      "column",
+      "definition"
+    ],
+    "add_person": [
+      "self",
+      "name",
+      "display_name",
+      "notes",
+      "tags"
+    ],
+    "update_person": [
+      "self",
+      "person_id"
+    ],
+    "delete_person": [
+      "self",
+      "person_id",
+      "delete_samples"
+    ],
+    "merge_people": [
+      "self",
+      "source_person_id",
+      "target_person_id"
+    ],
+    "add_face_sample": [
+      "self",
+      "person_id",
+      "embedding",
+      "source_image_path",
+      "crop_path",
+      "bbox",
+      "kps",
+      "det_score",
+      "quality_score",
+      "model_name",
+      "provider"
+    ],
+    "delete_face_sample": [
+      "self",
+      "sample_id"
+    ],
+    "list_people": [
+      "self"
+    ],
+    "list_face_samples": [
+      "self",
+      "person_id"
+    ],
+    "_decode_sample": [
+      "self",
+      "row"
+    ],
+    "add_media_item": [
+      "self",
+      "path",
+      "media_type",
+      "width",
+      "height",
+      "duration_ms",
+      "file_size",
+      "mtime",
+      "sha256",
+      "thumbnail",
+      "thumbnail_mime",
+      "processed_at"
+    ],
+    "add_media_face": [
+      "self",
+      "media_id",
+      "embedding",
+      "crop_path",
+      "thumbnail",
+      "thumbnail_mime",
+      "bbox",
+      "kps",
+      "det_score",
+      "quality_score",
+      "frame_index",
+      "timestamp_ms",
+      "assigned_person_id",
+      "predicted_person_id",
+      "similarity",
+      "cluster_id",
+      "status"
+    ],
+    "load_all_gallery_embeddings": [
+      "self"
+    ],
+    "search_embeddings": [
+      "self",
+      "query_embedding",
+      "top_k",
+      "threshold"
+    ],
+    "log_recognition": [
+      "self",
+      "source_type",
+      "source_path",
+      "predicted_person_id",
+      "similarity",
+      "threshold",
+      "status",
+      "payload",
+      "query_face_sample_id"
+    ],
+    "save_evaluation_run": [
+      "self",
+      "scenario",
+      "model_name",
+      "provider",
+      "threshold",
+      "dataset_summary",
+      "metrics",
+      "hardware",
+      "report_path",
+      "created_at"
+    ],
+    "list_evaluation_runs": [
+      "self"
+    ],
+    "delete_evaluation_run": [
+      "self",
+      "run_id"
+    ],
+    "get_setting": [
+      "self",
+      "key",
+      "default"
+    ],
+    "set_setting": [
+      "self",
+      "key",
+      "value"
+    ],
+    "delete_setting": [
+      "self",
+      "key"
+    ],
+    "list_album_directories": [
+      "self"
+    ],
+    "save_album_directories": [
+      "self",
+      "directories"
+    ],
+    "save_album_results": [
+      "self",
+      "clusters",
+      "cluster_items",
+      "algorithm",
+      "cluster_threshold",
+      "min_samples",
+      "min_face_size"
+    ],
+    "load_album_results": [
+      "self"
+    ],
+    "clear_album_results": [
+      "self"
+    ],
+    "delete_media_items_by_paths": [
+      "self",
+      "paths"
+    ],
+    "existing_media_paths": [
+      "self",
+      "paths"
+    ],
+    "list_media_faces": [
+      "self"
+    ],
+    "counts": [
+      "self"
+    ]
+  },
+  "APP_VERSION": [],
+  "APP_ORGANIZATION": [],
+  "APP_DOMAIN": [],
+  "APP_ID": [],
+  "APP_PROCESS_NAME": [],
+  "WINDOW_TITLE": [],
+  "SUBTITLE": [],
+  "LOCAL_PROCESSING_NOTICE": [],
+  "LICENSE_NOTICE": [],
+  "RESPONSIBLE_USE_NOTICE": [],
+  "COMMERCIAL_NOTICE": [],
+  "DEFAULT_MODEL_NAME": [],
+  "DEFAULT_PROVIDER": [],
+  "DEFAULT_DET_SIZE": [],
+  "AUTO_DET_SIZES": [],
+  "DEFAULT_THRESHOLD": [],
+  "DEFAULT_TOP_K": [],
+  "DEFAULT_LICENSE_STATUS": [],
+  "IMAGE_EXTENSIONS": [],
+  "VIDEO_EXTENSIONS": [],
+  "setup_logging": [
+    "log_dir"
+  ],
+  "get_logger": [
+    "name"
+  ],
+  "_rt": [
+    "key",
+    "language"
+  ],
+  "_value_to_text": [
+    "value"
+  ],
+  "_metric_lines": [
+    "metrics"
+  ],
+  "_markdown_escape": [
+    "value"
+  ],
+  "_markdown_table": [
+    "rows",
+    "language"
+  ],
+  "_summary_rows": [
+    "result",
+    "language"
+  ],
+  "generate_markdown_report": [
+    "result",
+    "language"
+  ],
+  "generate_html_report": [
+    "result",
+    "language"
+  ],
+  "_candidate_font_paths": [],
+  "_register_pdf_fonts": [
+    "language"
+  ],
+  "_pdf_paragraph": [
+    "text",
+    "style"
+  ],
+  "_pdf_table": [
+    "rows",
+    "styles",
+    "language",
+    "widths"
+  ],
+  "_section": [
+    "title",
+    "styles"
+  ],
+  "write_pdf_report": [
+    "result",
+    "path",
+    "language"
+  ],
+  "write_reports": [
+    "result",
+    "report_dir",
+    "language"
+  ],
+  "MULTI_FACE_REQUIRE_ONE": [],
+  "MULTI_FACE_USE_LARGEST": [],
+  "MULTI_FACE_USE_CENTERED_LARGEST": [],
+  "MULTI_FACE_SKIP": [],
+  "MULTI_FACE_POLICIES": [],
+  "DatasetValidationResult": {},
+  "hardware_info": [],
+  "_metrics_at_threshold": [
+    "rows",
+    "threshold"
+  ],
+  "recommend_threshold": [
+    "rows"
+  ],
+  "tar_at_far": [
+    "rows",
+    "target_far"
+  ],
+  "_identity_name": [
+    "folder"
+  ],
+  "_identity_dirs": [
+    "root"
+  ],
+  "_auto_split_identity_images": [
+    "identity_dir"
+  ],
+  "_normalize_multi_face_policy": [
+    "policy"
+  ],
+  "_face_bbox": [
+    "face"
+  ],
+  "_face_area": [
+    "face"
+  ],
+  "_largest_centered_face": [
+    "faces",
+    "image_shape"
+  ],
+  "_select_face_from_faces": [
+    "faces",
+    "image_shape",
+    "path",
+    "policy",
+    "stage"
+  ],
+  "select_face_by_policy": [
+    "faces",
+    "image_shape",
+    "policy",
+    "path",
+    "stage"
+  ],
+  "multi_face_policy_help": [
+    "policy"
+  ],
+  "_detect_faces_for_image": [
+    "path",
+    "engine"
+  ],
+  "_embedding_for_image": [
+    "path",
+    "engine",
+    "cache",
+    "errors",
+    "stage",
+    "multi_face_policy"
+  ],
+  "_collect_verification_specs": [
+    "root",
+    "auto_split"
+  ],
+  "_collect_identification_specs": [
+    "root",
+    "auto_split"
+  ],
+  "_validate_image_spec": [
+    "spec",
+    "engine",
+    "policy",
+    "mode_key"
+  ],
+  "_quick_validation_specs": [
+    "specs",
+    "policy"
+  ],
+  "_validation_scope_label": [
+    "policy",
+    "specs_to_check",
+    "specs"
+  ],
+  "validate_enterprise_dataset": [
+    "dataset_root",
+    "mode",
+    "auto_split",
+    "engine",
+    "multi_face_policy",
+    "progress_callback",
+    "cancel_callback"
+  ],
+  "_metrics_at_best_threshold": [
+    "rows"
+  ],
+  "_tar_far_from_scores": [
+    "positive_scores",
+    "positive_total",
+    "negative_scores",
+    "far_targets"
+  ],
+  "_far_label": [
+    "value"
+  ],
+  "run_identity_verification_evaluation": [
+    "identity_root",
+    "engine",
+    "auto_split",
+    "multi_face_policy",
+    "license_status",
+    "progress_callback",
+    "cancel_callback"
+  ],
+  "_identity_root_for_auto_split": [
+    "root"
+  ],
+  "_collect_gallery_probe_auto_split": [
+    "root"
+  ],
+  "_collect_gallery_probe_structured": [
+    "root"
+  ],
+  "_rank_identities": [
+    "query_embedding",
+    "gallery"
+  ],
+  "run_identity_identification_evaluation": [
+    "dataset_root",
+    "engine",
+    "auto_split",
+    "multi_face_policy",
+    "license_status",
+    "progress_callback",
+    "cancel_callback"
+  ],
+  "run_kyc_pairs_evaluation": [
+    "pairs_csv",
+    "engine",
+    "threshold",
+    "license_status",
+    "progress_callback",
+    "cancel_callback"
+  ],
+  "run_identification_evaluation": [
+    "gallery_folder",
+    "probe_folder",
+    "engine",
+    "threshold",
+    "ground_truth_csv",
+    "license_status",
+    "progress_callback",
+    "cancel_callback"
+  ],
+  "default_workspace": [],
+  "default_config_path": [],
+  "expand_path": [
+    "value"
+  ],
+  "workspace_paths": [
+    "workspace"
+  ],
+  "ensure_workspace": [
+    "workspace"
+  ],
+  "ModelNotLoadedError": {},
+  "FaceEngine": {
+    "__init__": [
+      "self",
+      "model_name",
+      "providers",
+      "det_size",
+      "root",
+      "custom_model_dir"
+    ],
+    "is_loaded": [
+      "self"
+    ],
+    "resolve_model_dir": [
+      "self"
+    ],
+    "load": [
+      "self"
+    ],
+    "_load_model_from_onnx": [
+      "self",
+      "onnx_file"
+    ],
+    "_shape_dim": [
+      "shape",
+      "index"
+    ],
+    "_is_scrfd_detection_outputs": [
+      "outputs"
+    ],
+    "_quiet_onnxruntime_session_options": [],
+    "_infer_embedding_dim": [
+      "self"
+    ],
+    "warmup": [
+      "self"
+    ],
+    "detect_faces": [
+      "self",
+      "image",
+      "source_path"
+    ],
+    "detect_best_face": [
+      "self",
+      "image",
+      "source_path"
+    ],
+    "compute_similarity": [
+      "self",
+      "emb1",
+      "emb2"
+    ],
+    "compare_images": [
+      "self",
+      "image1",
+      "image2",
+      "threshold",
+      "path1",
+      "path2"
+    ],
+    "get_runtime_info": [
+      "self"
+    ],
+    "_resolve_det_sizes": [
+      "self",
+      "det_size"
+    ],
+    "_det_size_label": [
+      "self"
+    ],
+    "_prepare_detection": [
+      "self"
+    ],
+    "_detect_raw": [
+      "self",
+      "image"
+    ],
+    "_detector_input_size": [
+      "self"
+    ],
+    "_nms": [
+      "boxes",
+      "scores",
+      "iou_threshold"
+    ]
+  },
+  "available_execution_providers": [],
+  "is_cuda_provider_available": [],
+  "providers_from_choice": [
+    "choice"
+  ],
+  "normalize_embedding": [
+    "embedding"
+  ],
+  "cosine_similarity": [
+    "a",
+    "b"
+  ],
+  "compare_embeddings": [
+    "a",
+    "b",
+    "threshold"
+  ],
+  "search_gallery": [
+    "query_embedding",
+    "gallery_embeddings",
+    "top_k",
+    "threshold"
+  ],
+  "aggregate_person_embeddings": [
+    "face_samples",
+    "method"
+  ],
+  "identify_face": [
+    "query_embedding",
+    "people_gallery",
+    "threshold",
+    "top_k"
+  ],
+  "INSIGHTFACE_LINK_HOSTS": [],
+  "GUI_UTM_SOURCE": [],
+  "add_gui_referrer": [
+    "url"
+  ],
+  "open_insightface_url": [
+    "url"
+  ],
+  "ThemeOption": {},
+  "THEME_OPTIONS": [],
+  "_THEME_ALIASES": [],
+  "_LIGHT_THEME": [],
+  "_DARK_THEME": [],
+  "normalize_theme": [
+    "theme"
+  ],
+  "theme_label": [
+    "theme"
+  ],
+  "theme_description": [
+    "theme"
+  ],
+  "effective_theme": [
+    "theme"
+  ],
+  "_palettes": [],
+  "application_stylesheet": [
+    "theme"
+  ],
+  "GITHUB_RELEASES_URL": [],
+  "GITHUB_LATEST_RELEASE_API": [],
+  "FALLBACK_RELEASE_TAG": [],
+  "FALLBACK_RELEASE_NAME": [],
+  "GFPGAN_MODEL_NAME": [],
+  "GFPGAN_DOWNLOAD_URL": [],
+  "ModelAsset": {
+    "stem": [
+      "self"
+    ],
+    "kind": [
+      "self"
+    ]
+  },
+  "fallback_model_assets": [],
+  "third_party_model_assets": [],
+  "merge_required_assets": [
+    "assets"
+  ],
+  "cache_file": [
+    "gui_cache_dir"
+  ],
+  "asset_from_dict": [
+    "data"
+  ],
+  "load_cached_assets": [
+    "gui_cache_dir"
+  ],
+  "save_cached_assets": [
+    "gui_cache_dir",
+    "assets",
+    "source"
+  ],
+  "refresh_model_assets": [
+    "gui_cache_dir",
+    "timeout"
+  ],
+  "local_model_status": [
+    "asset",
+    "model_root"
+  ],
+  "is_model_package_installed": [
+    "model_name",
+    "model_root"
+  ],
+  "list_installed_swap_models": [
+    "model_root"
+  ],
+  "list_installed_gfpgan_models": [
+    "model_root"
+  ],
+  "_content_range_total": [
+    "value"
+  ],
+  "_download_with_retries": [
+    "url",
+    "destination",
+    "asset_name",
+    "expected_size",
+    "progress",
+    "retries"
+  ],
+  "download_model_asset": [
+    "asset",
+    "model_root",
+    "gui_cache_dir",
+    "progress"
+  ],
+  "GFPGANRestorer": {
+    "__init__": [
+      "self",
+      "model_path",
+      "providers"
+    ],
+    "load": [
+      "self"
+    ],
+    "restore": [
+      "self",
+      "image"
+    ]
+  },
+  "FaceSwapEngine": {
+    "__init__": [
+      "self",
+      "model_path",
+      "providers",
+      "gfpgan_model_path",
+      "enable_gfpgan"
+    ],
+    "is_available": [
+      "self"
+    ],
+    "load": [
+      "self"
+    ],
+    "swap": [
+      "self",
+      "image",
+      "target_face",
+      "source_face"
+    ]
+  },
+  "utc_now_iso": [],
+  "read_image": [
+    "path"
+  ],
+  "save_image": [
+    "path",
+    "image"
+  ],
+  "encode_webp_thumbnail": [
+    "image",
+    "max_side",
+    "quality"
+  ],
+  "crop_bbox": [
+    "image",
+    "bbox",
+    "padding"
+  ],
+  "file_sha256": [
+    "path",
+    "chunk_size"
+  ],
+  "safe_json_dumps": [
+    "data"
+  ],
+  "timestamp_for_filename": [],
+  "list_images": [
+    "folder",
+    "recursive"
+  ],
+  "human_ms": [
+    "ms"
+  ],
+  "LanguageOption": {},
+  "LANGUAGE_OPTIONS": [],
+  "SUPPORTED_LANGUAGE_CODES": [],
+  "_SOURCE_PROPERTY": [],
+  "_PLACEHOLDER_PROPERTY": [],
+  "_GENERIC_BUTTON_TOOLTIP": [],
+  "normalize_language": [
+    "language"
+  ],
+  "detect_system_language": [],
+  "effective_language": [
+    "language"
+  ],
+  "language_label": [
+    "language"
+  ],
+  "tr": [
+    "text",
+    "language"
+  ],
+  "apply_translations": [
+    "root",
+    "language"
+  ],
+  "_source_text": [
+    "obj",
+    "text",
+    "prop"
+  ],
+  "_matches_source_or_translation": [
+    "source",
+    "text"
+  ],
+  "_help_source_text": [
+    "obj",
+    "text",
+    "prop"
+  ],
+  "_looks_like_generic_button_tooltip": [
+    "text"
+  ],
+  "_translate_object": [
+    "obj",
+    "lang"
+  ],
+  "_translate_object_help": [
+    "obj",
+    "lang"
+  ],
+  "_translate_action_help": [
+    "action",
+    "lang"
+  ],
+  "_generic_button_tooltip": [
+    "button",
+    "lang"
+  ],
+  "AppConfig": {
+    "__post_init__": [
+      "self"
+    ],
+    "apply_workspace_defaults": [
+      "self"
+    ],
+    "det_size_tuple": [
+      "self"
+    ],
+    "det_size_label": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "data"
+    ]
+  },
+  "load_config": [
+    "path"
+  ],
+  "save_config": [
+    "config",
+    "path"
+  ],
+  "export_json": [
+    "path",
+    "data"
+  ],
+  "export_csv": [
+    "path",
+    "rows"
+  ],
+  "export_markdown": [
+    "path",
+    "text"
+  ],
+  "export_html": [
+    "path",
+    "html"
+  ],
+  "export_annotated_image": [
+    "path",
+    "image"
+  ],
+  "_to_gray": [
+    "image"
+  ],
+  "blur_score": [
+    "image"
+  ],
+  "_bbox_area_ratio": [
+    "bbox",
+    "image_shape"
+  ],
+  "_frontal_score": [
+    "kps"
+  ],
+  "score_face": [
+    "image",
+    "bbox",
+    "kps",
+    "det_score"
+  ],
+  "CameraRecognitionPage": {
+    "__init__": [
+      "self",
+      "context",
+      "parent"
+    ],
+    "check": [
+      "self"
+    ],
+    "unavailable": [
+      "self"
+    ]
+  },
+  "IMAGE_FILTER": [],
+  "ImageOrFolderImportBox": {
+    "pathsSelected": [],
+    "__init__": [
+      "self",
+      "parent"
+    ],
+    "_show_menu": [
+      "self"
+    ],
+    "_select_image": [
+      "self"
+    ],
+    "_select_folder": [
+      "self"
+    ],
+    "dragEnterEvent": [
+      "self",
+      "event"
+    ],
+    "dragLeaveEvent": [
+      "self",
+      "event"
+    ],
+    "dropEvent": [
+      "self",
+      "event"
+    ],
+    "_accepted_urls": [
+      "self",
+      "urls"
+    ],
+    "_set_drag_active": [
+      "self",
+      "value"
+    ],
+    "eventFilter": [
+      "self",
+      "watched",
+      "event"
+    ],
+    "enterEvent": [
+      "self",
+      "event"
+    ],
+    "leaveEvent": [
+      "self",
+      "event"
+    ],
+    "_set_property": [
+      "self",
+      "name",
+      "value"
+    ],
+    "_update_hover_from_cursor": [
+      "self"
+    ]
+  },
+  "PeopleLibraryPage": {
+    "__init__": [
+      "self",
+      "context",
+      "parent"
+    ],
+    "refresh": [
+      "self"
+    ],
+    "on_person_selected": [
+      "self",
+      "current_row",
+      "current_column",
+      "previous_row",
+      "previous_column"
+    ],
+    "_populate_details": [
+      "self"
+    ],
+    "add_person": [
+      "self"
+    ],
+    "delete_person": [
+      "self"
+    ],
+    "save_details": [
+      "self"
+    ],
+    "import_paths": [
+      "self",
+      "paths"
+    ],
+    "refresh_samples": [
+      "self"
+    ],
+    "export_summary": [
+      "self"
+    ],
+    "_thumbnail_icon": [
+      "path"
+    ]
+  },
+  "AlbumPeoplePage": {
+    "__init__": [
+      "self",
+      "context",
+      "parent"
+    ],
+    "set_folder": [
+      "self",
+      "folder"
+    ],
+    "clear_folder": [
+      "self"
+    ],
+    "scan": [
+      "self"
+    ],
+    "_populate": [
+      "self"
+    ],
+    "export": [
+      "self"
+    ]
+  },
+  "DATASET_RULES_TEXT": [],
+  "DATASET_RULES_LOCAL_TEXT": [],
+  "dataset_rules_text": [
+    "language"
+  ],
+  "DatasetRulesDialog": {
+    "__init__": [
+      "self",
+      "language",
+      "parent"
+    ]
+  },
+  "EnterpriseEvalPage": {
+    "__init__": [
+      "self",
+      "context",
+      "parent"
+    ],
+    "eventFilter": [
+      "self",
+      "watched",
+      "event"
+    ],
+    "_dataset_drop_path": [
+      "self",
+      "event"
+    ],
+    "_set_dataset_drag_active": [
+      "self",
+      "active"
+    ],
+    "_on_dataset_paths_changed": [
+      "self",
+      "paths"
+    ],
+    "_update_instructions": [
+      "self"
+    ],
+    "_card": [
+      "self",
+      "title"
+    ],
+    "_field_row": [
+      "self",
+      "label",
+      "widget"
+    ],
+    "show_dataset_rules": [
+      "self"
+    ],
+    "_current_signature": [
+      "self"
+    ],
+    "_eval_mode": [
+      "self"
+    ],
+    "_multi_face_policy": [
+      "self"
+    ],
+    "_invalidate_validation": [
+      "self"
+    ],
+    "validate_dataset": [
+      "self"
+    ],
+    "run": [
+      "self"
+    ],
+    "_validation_text": [
+      "self",
+      "result"
+    ],
+    "_summary_text": [
+      "self",
+      "result",
+      "paths"
+    ],
+    "open_report_folder": [
+      "self"
+    ]
+  },
+  "GalleryUploadPanel": {
+    "pathsChanged": [],
+    "__init__": [
+      "self",
+      "parent"
+    ],
+    "paths": [
+      "self"
+    ],
+    "set_paths": [
+      "self",
+      "paths",
+      "emit"
+    ],
+    "add_paths": [
+      "self",
+      "paths"
+    ],
+    "clear": [
+      "self"
+    ],
+    "remove_selected": [
+      "self"
+    ],
+    "browse": [
+      "self"
+    ],
+    "eventFilter": [
+      "self",
+      "watched",
+      "event"
+    ],
+    "mouseReleaseEvent": [
+      "self",
+      "event"
+    ],
+    "enterEvent": [
+      "self",
+      "event"
+    ],
+    "leaveEvent": [
+      "self",
+      "event"
+    ],
+    "open_item": [
+      "self",
+      "item"
+    ],
+    "_render": [
+      "self"
+    ],
+    "resizeEvent": [
+      "self",
+      "event"
+    ],
+    "_expand_paths": [
+      "self",
+      "paths"
+    ],
+    "_accepted_urls": [
+      "self",
+      "urls"
+    ],
+    "_set_property": [
+      "self",
+      "name",
+      "value"
+    ],
+    "_update_hover_from_cursor": [
+      "self"
+    ],
+    "_icon": [
+      "path",
+      "size"
+    ],
+    "_update_single_preview": [
+      "self"
+    ],
+    "_language": [
+      "self"
+    ]
+  },
+  "VerificationPage": {
+    "__init__": [
+      "self",
+      "context",
+      "parent"
+    ],
+    "load_query": [
+      "self",
+      "path"
+    ],
+    "clear_query": [
+      "self"
+    ],
+    "set_gallery_paths": [
+      "self",
+      "paths"
+    ],
+    "clear_all": [
+      "self"
+    ],
+    "run_verification": [
+      "self"
+    ],
+    "open_result": [
+      "self",
+      "row",
+      "column"
+    ],
+    "_populate_results": [
+      "self"
+    ],
+    "_update_mode_label": [
+      "self"
+    ],
+    "_clear_gallery_embedding_cache": [
+      "self"
+    ],
+    "_build_gallery_embedding_cache": [
+      "self",
+      "gallery_paths",
+      "multi_face_policy",
+      "progress",
+      "is_cancelled"
+    ],
+    "_compare_query_to_gallery_cache": [
+      "self",
+      "query_embedding",
+      "gallery_cache",
+      "threshold"
+    ],
+    "_gallery_error_cache_item": [
+      "path",
+      "message"
+    ],
+    "_error_row": [
+      "path",
+      "message",
+      "threshold"
+    ],
+    "_multi_face_policy": [
+      "self"
+    ],
+    "_multi_face_policy_changed": [
+      "self"
+    ],
+    "_update_policy_notice": [
+      "self"
+    ]
+  },
+  "HOMEPAGE_URL": [],
+  "ENTERPRISE_HELP_URL": [],
+  "LicenseCenterPage": {
+    "__init__": [
+      "self",
+      "context",
+      "parent"
+    ],
+    "refresh": [
+      "self"
+    ],
+    "open_homepage": [
+      "self"
+    ],
+    "open_enterprise_help": [
+      "self"
+    ]
+  },
+  "ModelDownloadPage": {
+    "__init__": [
+      "self",
+      "context",
+      "parent"
+    ],
+    "refresh": [
+      "self"
+    ],
+    "populate": [
+      "self"
+    ],
+    "selected_asset": [
+      "self"
+    ],
+    "refresh_urls": [
+      "self"
+    ],
+    "download_selected": [
+      "self"
+    ],
+    "use_selected_model": [
+      "self"
+    ],
+    "open_model_folder": [
+      "self"
+    ],
+    "open_releases": [
+      "self"
+    ],
+    "_format_size": [
+      "size"
+    ]
+  },
+  "FaceSearchPage": {
+    "__init__": [
+      "self",
+      "context",
+      "parent"
+    ],
+    "load_query": [
+      "self",
+      "path"
+    ],
+    "clear_query": [
+      "self"
+    ],
+    "search": [
+      "self"
+    ],
+    "add_as_new_person": [
+      "self"
+    ],
+    "assign_existing": [
+      "self"
+    ],
+    "export_results": [
+      "self"
+    ],
+    "_thumbnail_icon": [
+      "path"
+    ]
+  },
+  "ReportsPage": {
+    "__init__": [
+      "self",
+      "context",
+      "parent"
+    ],
+    "refresh": [
+      "self"
+    ],
+    "_selected_run": [
+      "self"
+    ],
+    "open_selected": [
+      "self"
+    ],
+    "reexport_selected": [
+      "self"
+    ],
+    "delete_selected": [
+      "self"
+    ],
+    "export_summary": [
+      "self"
+    ]
+  },
+  "PlaceholderPage": {
+    "__init__": [
+      "self",
+      "context",
+      "title",
+      "description",
+      "coming_soon_text",
+      "ctas",
+      "parent"
+    ]
+  },
+  "CommercialNextStepsPage": {
+    "__init__": [
+      "self",
+      "context",
+      "parent"
+    ]
+  },
+  "FaceSwapPage": {
+    "__init__": [
+      "self",
+      "context",
+      "parent"
+    ],
+    "load_source": [
+      "self",
+      "path"
+    ],
+    "clear_source": [
+      "self"
+    ],
+    "load_target": [
+      "self",
+      "path"
+    ],
+    "clear_target": [
+      "self"
+    ],
+    "run_swap": [
+      "self"
+    ],
+    "open_result": [
+      "self"
+    ],
+    "open_result_directory": [
+      "self"
+    ],
+    "_swap_image": [
+      "self",
+      "swapper",
+      "source_native",
+      "target_image",
+      "target_path"
+    ],
+    "_swap_video": [
+      "self",
+      "swapper",
+      "source_native",
+      "target_path",
+      "progress",
+      "is_cancelled"
+    ],
+    "_resolve_swap_model_path": [
+      "self"
+    ],
+    "_clear_output": [
+      "self"
+    ],
+    "eventFilter": [
+      "self",
+      "watched",
+      "event"
+    ],
+    "_read_video_preview": [
+      "path"
+    ]
+  },
+  "ComparePage": {
+    "__init__": [
+      "self",
+      "context",
+      "parent"
+    ],
+    "load_a": [
+      "self",
+      "path"
+    ],
+    "load_b": [
+      "self",
+      "path"
+    ],
+    "clear_a": [
+      "self"
+    ],
+    "clear_b": [
+      "self"
+    ],
+    "compare": [
+      "self"
+    ],
+    "reset": [
+      "self"
+    ],
+    "_invalidate_result": [
+      "self",
+      "status"
+    ],
+    "export_result": [
+      "self"
+    ]
+  },
+  "ModelSettingsPage": {
+    "__init__": [
+      "self",
+      "context",
+      "parent"
+    ],
+    "_apply_to_config": [
+      "self"
+    ],
+    "save": [
+      "self"
+    ],
+    "test_load": [
+      "self"
+    ],
+    "warmup": [
+      "self"
+    ],
+    "refresh": [
+      "self"
+    ],
+    "_update_provider_availability": [
+      "self"
+    ],
+    "_update_model_availability": [
+      "self"
+    ],
+    "_rebuild_model_combo": [
+      "self"
+    ],
+    "_update_custom_dir_visibility": [
+      "self"
+    ],
+    "_update_swap_model_choices": [
+      "self"
+    ],
+    "_update_gfpgan_model_choices": [
+      "self"
+    ]
+  },
+  "BasePage": {
+    "__init__": [
+      "self",
+      "context",
+      "title",
+      "description",
+      "parent"
+    ],
+    "notice": [
+      "self",
+      "text"
+    ],
+    "card": [
+      "self"
+    ],
+    "row": [
+      "self"
+    ],
+    "button": [
+      "self",
+      "text",
+      "callback",
+      "enabled"
+    ],
+    "choose_file": [
+      "self",
+      "caption",
+      "filters"
+    ],
+    "choose_files": [
+      "self",
+      "caption",
+      "filters"
+    ],
+    "choose_folder": [
+      "self",
+      "caption"
+    ],
+    "save_file": [
+      "self",
+      "caption",
+      "default_name",
+      "filters"
+    ],
+    "set_status": [
+      "self",
+      "message"
+    ],
+    "show_error": [
+      "self",
+      "message"
+    ],
+    "run_task": [
+      "self",
+      "title",
+      "fn",
+      "on_result",
+      "show_dialog"
+    ],
+    "refresh": [
+      "self"
+    ]
+  },
+  "SettingsPage": {
+    "__init__": [
+      "self",
+      "context",
+      "parent"
+    ],
+    "save": [
+      "self"
+    ],
+    "open_workspace": [
+      "self"
+    ],
+    "export_settings": [
+      "self"
+    ],
+    "import_settings": [
+      "self"
+    ],
+    "reset": [
+      "self"
+    ]
+  },
+  "DEFAULT_ALBUM_MIN_FACE_SIZE": [],
+  "DEFAULT_ALBUM_COSINE_THRESHOLD": [],
+  "AlbumDirectoryList": {
+    "foldersChanged": [],
+    "__init__": [
+      "self",
+      "parent"
+    ],
+    "add_folder": [
+      "self",
+      "folder"
+    ],
+    "folders": [
+      "self"
+    ],
+    "dragEnterEvent": [
+      "self",
+      "event"
+    ],
+    "dragMoveEvent": [
+      "self",
+      "event"
+    ],
+    "dragLeaveEvent": [
+      "self",
+      "event"
+    ],
+    "dropEvent": [
+      "self",
+      "event"
+    ],
+    "_drag": [
+      "self",
+      "active"
+    ],
+    "_has_folder_urls": [
+      "event"
+    ],
+    "eventFilter": [
+      "self",
+      "watched",
+      "event"
+    ],
+    "enterEvent": [
+      "self",
+      "event"
+    ],
+    "leaveEvent": [
+      "self",
+      "event"
+    ],
+    "_set_property": [
+      "self",
+      "name",
+      "value"
+    ],
+    "_update_hover_from_cursor": [
+      "self"
+    ]
+  },
+  "AlbumPage": {
+    "__init__": [
+      "self",
+      "context",
+      "parent"
+    ],
+    "_button": [
+      "self",
+      "text",
+      "callback"
+    ],
+    "add_folder": [
+      "self"
+    ],
+    "remove_selected": [
+      "self"
+    ],
+    "clear_directories": [
+      "self"
+    ],
+    "import_refresh": [
+      "self"
+    ],
+    "rebuild_all": [
+      "self"
+    ],
+    "_run_import_refresh": [
+      "self",
+      "rebuild"
+    ],
+    "_faces_for_folders": [
+      "self",
+      "folders",
+      "min_face_size"
+    ],
+    "_cluster_faces": [
+      "self",
+      "faces",
+      "cosine_threshold",
+      "min_samples"
+    ],
+    "_save_directories": [
+      "self"
+    ],
+    "refresh": [
+      "self"
+    ],
+    "_load_saved_results": [
+      "self"
+    ],
+    "_populate_clusters": [
+      "self"
+    ],
+    "cluster_selected": [
+      "self",
+      "current_row",
+      "current_column",
+      "previous_row",
+      "previous_column"
+    ],
+    "_populate_photos": [
+      "self",
+      "cluster_id"
+    ],
+    "open_photo": [
+      "self",
+      "row",
+      "column"
+    ],
+    "_face_box_size": [
+      "bbox"
+    ],
+    "_cluster_thumbnail_icon": [
+      "self",
+      "cluster",
+      "size"
+    ],
+    "_icon_from_bytes": [
+      "data",
+      "size"
+    ]
+  },
+  "DashboardPage": {
+    "__init__": [
+      "self",
+      "context",
+      "parent"
+    ],
+    "refresh": [
+      "self"
+    ]
+  },
+  "BatchProcessingPage": {
+    "__init__": [
+      "self",
+      "context",
+      "parent"
+    ],
+    "set_folder": [
+      "self",
+      "folder"
+    ],
+    "clear_folder": [
+      "self"
+    ],
+    "start": [
+      "self"
+    ],
+    "_populate": [
+      "self"
+    ],
+    "export": [
+      "self"
+    ]
+  },
+  "MultiFacePhotoPage": {
+    "__init__": [
+      "self",
+      "context",
+      "parent"
+    ],
+    "load_photo": [
+      "self",
+      "path"
+    ],
+    "clear_photo": [
+      "self"
+    ],
+    "recognize": [
+      "self"
+    ],
+    "export_image": [
+      "self"
+    ],
+    "export_rows": [
+      "self"
+    ]
+  },
+  "VideoSearchPage": {
+    "__init__": [
+      "self",
+      "context",
+      "parent"
+    ],
+    "refresh": [
+      "self"
+    ],
+    "load_video": [
+      "self",
+      "path"
+    ],
+    "clear_video": [
+      "self"
+    ],
+    "start": [
+      "self"
+    ],
+    "_populate": [
+      "self"
+    ],
+    "export": [
+      "self"
+    ]
+  },
+  "ModeDashboardPage": {
+    "__init__": [
+      "self",
+      "context",
+      "title",
+      "description",
+      "cards",
+      "notice",
+      "parent"
+    ]
+  },
+  "FaceDashboardPage": {
+    "__init__": [
+      "self",
+      "context",
+      "parent"
+    ]
+  },
+  "AlbumDashboardPage": {
+    "__init__": [
+      "self",
+      "context",
+      "parent"
+    ]
+  },
+  "SwapDashboardPage": {
+    "__init__": [
+      "self",
+      "context",
+      "parent"
+    ]
+  },
+  "EnterpriseDashboardPage": {
+    "__init__": [
+      "self",
+      "context",
+      "parent"
+    ]
+  },
+  "BASE_REPO_URL": [],
+  "download": [
+    "sub_dir",
+    "name",
+    "force",
+    "root"
+  ],
+  "ensure_available": [
+    "sub_dir",
+    "name",
+    "root"
+  ],
+  "download_onnx": [
+    "sub_dir",
+    "model_file",
+    "force",
+    "root",
+    "download_zip"
+  ],
+  "check_sha1": [
+    "filename",
+    "sha1_hash"
+  ],
+  "download_file": [
+    "url",
+    "path",
+    "overwrite",
+    "sha1_hash"
+  ],
+  "arcface_dst": [],
+  "estimate_norm": [
+    "lmk",
+    "image_size",
+    "mode"
+  ],
+  "norm_crop": [
+    "img",
+    "landmark",
+    "image_size",
+    "mode"
+  ],
+  "norm_crop2": [
+    "img",
+    "landmark",
+    "image_size",
+    "mode"
+  ],
+  "square_crop": [
+    "im",
+    "S"
+  ],
+  "transform": [
+    "data",
+    "center",
+    "output_size",
+    "scale",
+    "rotation"
+  ],
+  "trans_points2d": [
+    "pts",
+    "M"
+  ],
+  "trans_points3d": [
+    "pts",
+    "M"
+  ],
+  "trans_points": [
+    "pts",
+    "M"
+  ],
+  "DEFAULT_MP_NAME": [],
+  "get_model_dir": [
+    "name",
+    "root"
+  ],
+  "makedirs": [
+    "path"
+  ],
+  "try_import": [
+    "package",
+    "message"
+  ],
+  "try_import_cv2": [],
+  "try_import_mmcv": [],
+  "try_import_rarfile": [],
+  "import_try_install": [
+    "package",
+    "extern_url"
+  ],
+  "try_import_dali": [],
+  "RecBuilder": {
+    "__init__": [
+      "self",
+      "path",
+      "image_size"
+    ],
+    "add": [
+      "self",
+      "imgs"
+    ],
+    "add_image": [
+      "self",
+      "img",
+      "label"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "get_object": [
+    "name"
+  ],
+  "ImageCache": {
+    "data": []
+  },
+  "get_image": [
+    "name",
+    "to_rgb",
+    "use_cache"
+  ]
+}
