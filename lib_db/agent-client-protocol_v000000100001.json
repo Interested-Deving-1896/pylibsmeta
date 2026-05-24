@@ -1,0 +1,1511 @@
+{
+  "__all__": [],
+  "AsyncHandler": [],
+  "RequestHandler": [],
+  "HandlerT": [],
+  "_warn_legacy_handler": [
+    "obj",
+    "attr"
+  ],
+  "_resolve_handler": [
+    "obj",
+    "attr"
+  ],
+  "Route": {
+    "handle": [
+      "self",
+      "params"
+    ]
+  },
+  "MessageRouter": {
+    "__init__": [
+      "self",
+      "use_unstable_protocol"
+    ],
+    "add_route": [
+      "self",
+      "route"
+    ],
+    "_make_func": [
+      "self",
+      "model",
+      "obj",
+      "attr"
+    ],
+    "route_request": [
+      "self",
+      "method",
+      "model",
+      "obj",
+      "attr",
+      "optional",
+      "default_result",
+      "adapt_result",
+      "unstable"
+    ],
+    "route_notification": [
+      "self",
+      "method",
+      "model",
+      "obj",
+      "attr",
+      "optional",
+      "unstable"
+    ],
+    "handle_extension_request": [
+      "self",
+      "handler"
+    ],
+    "handle_extension_notification": [
+      "self",
+      "handler"
+    ],
+    "__call__": [
+      "self",
+      "method",
+      "params",
+      "is_notification"
+    ]
+  },
+  "_WritePipeProtocol": {
+    "__init__": [
+      "self"
+    ],
+    "pause_writing": [
+      "self"
+    ],
+    "resume_writing": [
+      "self"
+    ],
+    "_drain_helper": [
+      "self"
+    ]
+  },
+  "_start_stdin_feeder": [
+    "loop",
+    "reader"
+  ],
+  "_StdoutTransport": {
+    "__init__": [
+      "self"
+    ],
+    "write": [
+      "self",
+      "data"
+    ],
+    "can_write_eof": [
+      "self"
+    ],
+    "is_closing": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "abort": [
+      "self"
+    ],
+    "get_extra_info": [
+      "self",
+      "name",
+      "default"
+    ]
+  },
+  "_windows_stdio_streams": [
+    "loop",
+    "limit"
+  ],
+  "_posix_stdio_streams": [
+    "loop",
+    "limit"
+  ],
+  "stdio_streams": [
+    "limit"
+  ],
+  "spawn_stdio_connection": [
+    "handler",
+    "command"
+  ],
+  "spawn_agent_process": [
+    "to_client",
+    "command"
+  ],
+  "spawn_client_process": [
+    "to_agent",
+    "command"
+  ],
+  "DEFAULT_INHERITED_ENV_VARS": [],
+  "default_environment": [],
+  "spawn_stdio_transport": [
+    "command"
+  ],
+  "ContentBlock": [],
+  "SessionUpdate": [],
+  "ToolCallContentVariant": [],
+  "text_block": [
+    "text"
+  ],
+  "image_block": [
+    "data",
+    "mime_type"
+  ],
+  "audio_block": [
+    "data",
+    "mime_type"
+  ],
+  "resource_link_block": [
+    "name",
+    "uri"
+  ],
+  "embedded_text_resource": [
+    "uri",
+    "text"
+  ],
+  "embedded_blob_resource": [
+    "uri",
+    "blob"
+  ],
+  "resource_block": [
+    "resource"
+  ],
+  "tool_content": [
+    "block"
+  ],
+  "tool_diff_content": [
+    "path",
+    "new_text",
+    "old_text"
+  ],
+  "tool_terminal_ref": [
+    "terminal_id"
+  ],
+  "plan_entry": [
+    "content"
+  ],
+  "update_plan": [
+    "entries"
+  ],
+  "update_user_message": [
+    "content"
+  ],
+  "update_user_message_text": [
+    "text"
+  ],
+  "update_agent_message": [
+    "content"
+  ],
+  "update_agent_message_text": [
+    "text"
+  ],
+  "update_agent_thought": [
+    "content"
+  ],
+  "update_agent_thought_text": [
+    "text"
+  ],
+  "update_available_commands": [
+    "commands"
+  ],
+  "update_current_mode": [
+    "current_mode_id"
+  ],
+  "session_notification": [
+    "session_id",
+    "update"
+  ],
+  "start_tool_call": [
+    "tool_call_id",
+    "title"
+  ],
+  "start_read_tool_call": [
+    "tool_call_id",
+    "title",
+    "path"
+  ],
+  "start_edit_tool_call": [
+    "tool_call_id",
+    "title",
+    "path",
+    "content"
+  ],
+  "update_tool_call": [
+    "tool_call_id"
+  ],
+  "AGENT_METHODS": [],
+  "CLIENT_METHODS": [],
+  "PROTOCOL_VERSION": [],
+  "DEFAULT_STDIO_BUFFER_LIMIT_BYTES": [],
+  "run_agent": [
+    "agent",
+    "input_stream",
+    "output_stream"
+  ],
+  "connect_to_agent": [
+    "client",
+    "input_stream",
+    "output_stream"
+  ],
+  "JsonValue": [],
+  "MethodHandler": [],
+  "DispatcherFactory": [],
+  "StreamDirection": {
+    "INCOMING": [],
+    "OUTGOING": []
+  },
+  "StreamEvent": {},
+  "StreamObserver": [],
+  "Connection": {
+    "__init__": [
+      "self",
+      "handler",
+      "writer",
+      "reader"
+    ],
+    "close": [
+      "self"
+    ],
+    "main_loop": [
+      "self"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self",
+      "exc_type",
+      "exc",
+      "tb"
+    ],
+    "add_observer": [
+      "self",
+      "observer"
+    ],
+    "send_request": [
+      "self",
+      "method",
+      "params"
+    ],
+    "send_notification": [
+      "self",
+      "method",
+      "params"
+    ],
+    "_receive_loop": [
+      "self"
+    ],
+    "_process_message": [
+      "self",
+      "message"
+    ],
+    "_notify_observers": [
+      "self",
+      "direction",
+      "message"
+    ],
+    "_on_observer_error": [
+      "self",
+      "task",
+      "exc"
+    ],
+    "_run_request": [
+      "self",
+      "message"
+    ],
+    "_run_notification": [
+      "self",
+      "message"
+    ],
+    "_handle_response": [
+      "self",
+      "message"
+    ],
+    "_on_receive_error": [
+      "self",
+      "task",
+      "exc"
+    ],
+    "_on_task_error": [
+      "self",
+      "task",
+      "exc"
+    ],
+    "_default_dispatcher_factory": [
+      "self",
+      "queue",
+      "supervisor",
+      "state",
+      "request_runner",
+      "notification_runner"
+    ],
+    "_default_sender_factory": [
+      "self",
+      "writer",
+      "supervisor"
+    ],
+    "_disconnect": [
+      "self"
+    ],
+    "_raise_if_unavailable": [
+      "self"
+    ]
+  },
+  "_DEPRECATED_NAMES": [],
+  "__getattr__": [
+    "name"
+  ],
+  "Client": {
+    "request_permission": [
+      "self",
+      "options",
+      "session_id",
+      "tool_call"
+    ],
+    "session_update": [
+      "self",
+      "session_id",
+      "update"
+    ],
+    "write_text_file": [
+      "self",
+      "content",
+      "path",
+      "session_id"
+    ],
+    "read_text_file": [
+      "self",
+      "path",
+      "session_id",
+      "limit",
+      "line"
+    ],
+    "create_terminal": [
+      "self",
+      "command",
+      "session_id",
+      "args",
+      "cwd",
+      "env",
+      "output_byte_limit"
+    ],
+    "terminal_output": [
+      "self",
+      "session_id",
+      "terminal_id"
+    ],
+    "release_terminal": [
+      "self",
+      "session_id",
+      "terminal_id"
+    ],
+    "wait_for_terminal_exit": [
+      "self",
+      "session_id",
+      "terminal_id"
+    ],
+    "kill_terminal": [
+      "self",
+      "session_id",
+      "terminal_id"
+    ],
+    "ext_method": [
+      "self",
+      "method",
+      "params"
+    ],
+    "ext_notification": [
+      "self",
+      "method",
+      "params"
+    ],
+    "on_connect": [
+      "self",
+      "conn"
+    ]
+  },
+  "Agent": {
+    "initialize": [
+      "self",
+      "protocol_version",
+      "client_capabilities",
+      "client_info"
+    ],
+    "new_session": [
+      "self",
+      "cwd",
+      "additional_directories",
+      "mcp_servers"
+    ],
+    "load_session": [
+      "self",
+      "cwd",
+      "session_id",
+      "additional_directories",
+      "mcp_servers"
+    ],
+    "list_sessions": [
+      "self",
+      "additional_directories",
+      "cursor",
+      "cwd"
+    ],
+    "set_session_mode": [
+      "self",
+      "mode_id",
+      "session_id"
+    ],
+    "set_session_model": [
+      "self",
+      "model_id",
+      "session_id"
+    ],
+    "set_config_option": [
+      "self",
+      "config_id",
+      "session_id",
+      "value"
+    ],
+    "authenticate": [
+      "self",
+      "method_id"
+    ],
+    "prompt": [
+      "self",
+      "prompt",
+      "session_id",
+      "message_id"
+    ],
+    "fork_session": [
+      "self",
+      "cwd",
+      "session_id",
+      "additional_directories",
+      "mcp_servers"
+    ],
+    "resume_session": [
+      "self",
+      "cwd",
+      "session_id",
+      "additional_directories",
+      "mcp_servers"
+    ],
+    "close_session": [
+      "self",
+      "session_id"
+    ],
+    "cancel": [
+      "self",
+      "session_id"
+    ],
+    "ext_method": [
+      "self",
+      "method",
+      "params"
+    ],
+    "ext_notification": [
+      "self",
+      "method",
+      "params"
+    ],
+    "on_connect": [
+      "self",
+      "conn"
+    ]
+  },
+  "ModelT": [],
+  "MethodT": [],
+  "ClassT": [],
+  "T": [],
+  "MultiParamModelSpec": [],
+  "_param_models_name": [
+    "models"
+  ],
+  "_param_models_field_names": [
+    "models"
+  ],
+  "model_to_kwargs": [
+    "model_obj",
+    "models"
+  ],
+  "serialize_params": [
+    "params"
+  ],
+  "normalize_result": [
+    "payload"
+  ],
+  "ensure_dict": [
+    "payload"
+  ],
+  "validate_model": [
+    "payload",
+    "model_type"
+  ],
+  "validate_model_from_dict": [
+    "payload",
+    "model_type"
+  ],
+  "validate_optional_model": [
+    "payload",
+    "model_type"
+  ],
+  "request_model": [
+    "conn",
+    "method",
+    "params",
+    "response_model"
+  ],
+  "request_model_from_dict": [
+    "conn",
+    "method",
+    "params",
+    "response_model"
+  ],
+  "request_optional_model": [
+    "conn",
+    "method",
+    "params",
+    "response_model"
+  ],
+  "notify_model": [
+    "conn",
+    "method",
+    "params"
+  ],
+  "param_model": [
+    "param_cls"
+  ],
+  "param_models": [],
+  "to_camel_case": [
+    "snake_str"
+  ],
+  "_make_legacy_func": [
+    "func",
+    "model"
+  ],
+  "_make_compatible_func": [
+    "func",
+    "model"
+  ],
+  "_make_multi_legacy_func": [
+    "func",
+    "models"
+  ],
+  "_make_multi_compatible_func": [
+    "func",
+    "models"
+  ],
+  "compatible_class": [
+    "cls"
+  ],
+  "PermissionOptionKind": [],
+  "PlanEntryPriority": [],
+  "PlanEntryStatus": [],
+  "StopReason": [],
+  "ToolCallStatus": [],
+  "ToolKind": [],
+  "BaseModel": {
+    "model_config": [],
+    "__getattr__": [
+      "self",
+      "item"
+    ]
+  },
+  "Jsonrpc": {
+    "field_2_0": []
+  },
+  "AuthCapabilities": {},
+  "AuthEnvVar": {},
+  "AuthMethodAgent": {},
+  "AuthMethodEnvVar": {},
+  "AuthMethodTerminal": {},
+  "AuthenticateRequest": {},
+  "AuthenticateResponse": {},
+  "BlobResourceContents": {},
+  "BooleanPropertySchema": {},
+  "CloseNesResponse": {},
+  "CloseSessionResponse": {},
+  "Cost": {},
+  "DeclineElicitationResponse": {},
+  "CancelElicitationResponse": {},
+  "CreateTerminalResponse": {},
+  "Diff": {},
+  "DisableProvidersRequest": {},
+  "DisableProvidersResponse": {},
+  "ElicitationAcceptAction": {},
+  "ElicitationContentValue": {},
+  "ElicitationFormCapabilities": {},
+  "ElicitationBooleanPropertySchema": {},
+  "ElicitationUrlCapabilities": {},
+  "EnumOption": {},
+  "EnvVariable": {},
+  "FileSystemCapabilities": {},
+  "HttpHeader": {},
+  "Implementation": {},
+  "IntegerPropertySchema": {},
+  "KillTerminalResponse": {},
+  "ListProvidersRequest": {},
+  "ListSessionsRequest": {},
+  "LogoutCapabilities": {},
+  "LogoutRequest": {},
+  "LogoutResponse": {},
+  "McpCapabilities": {},
+  "McpServerHttp": {},
+  "McpServerSse": {},
+  "McpServerStdio": {},
+  "ModelInfo": {},
+  "NesDiagnosticsCapabilities": {},
+  "NesDocumentDidCloseCapabilities": {},
+  "NesDocumentDidFocusCapabilities": {},
+  "NesDocumentDidOpenCapabilities": {},
+  "NesDocumentDidSaveCapabilities": {},
+  "NesEditHistoryCapabilities": {},
+  "NesEditHistoryEntry": {},
+  "NesExcerpt": {},
+  "NesJumpCapabilities": {},
+  "NesOpenFilesCapabilities": {},
+  "NesRecentFile": {},
+  "NesRecentFilesCapabilities": {},
+  "NesRelatedSnippet": {},
+  "NesRelatedSnippetsCapabilities": {},
+  "NesRenameCapabilities": {},
+  "NesRepository": {},
+  "NesSearchAndReplaceCapabilities": {},
+  "NesSearchAndReplaceSuggestion": {},
+  "NesSearchAndReplaceSuggestionVariant": {},
+  "NesUserActionsCapabilities": {},
+  "NumberPropertySchema": {},
+  "Position": {},
+  "PromptCapabilities": {},
+  "ProviderCurrentConfig": {},
+  "ProviderInfo": {},
+  "ProvidersCapabilities": {},
+  "Range": {},
+  "ReadTextFileResponse": {},
+  "ReleaseTerminalResponse": {},
+  "DeniedOutcome": {},
+  "Role": {
+    "assistant": [],
+    "user": []
+  },
+  "SelectedPermissionOutcome": {},
+  "SessionAdditionalDirectoriesCapabilities": {},
+  "SessionCloseCapabilities": {},
+  "SessionConfigBoolean": {},
+  "SessionForkCapabilities": {},
+  "SessionInfo": {},
+  "_SessionInfoUpdate": {},
+  "SessionListCapabilities": {},
+  "SessionModelState": {},
+  "SessionResumeCapabilities": {},
+  "SessionInfoUpdate": {},
+  "SetProvidersRequest": {},
+  "SetProvidersResponse": {},
+  "SetSessionConfigOptionBooleanRequest": {},
+  "SetSessionConfigOptionSelectRequest": {},
+  "SetSessionModeRequest": {},
+  "SetSessionModeResponse": {},
+  "SetSessionModelRequest": {},
+  "SetSessionModelResponse": {},
+  "StartNesResponse": {},
+  "StringPropertySchema": {},
+  "Terminal": {},
+  "TerminalExitStatus": {},
+  "TerminalOutputRequest": {},
+  "TerminalOutputResponse": {},
+  "TextDocumentContentChangeEvent": {},
+  "TextResourceContents": {},
+  "TitledMultiSelectItems": {},
+  "FileEditToolCallContent": {},
+  "TerminalToolCallContent": {},
+  "ToolCallLocation": {},
+  "UnstructuredCommandInput": {},
+  "UntitledMultiSelectItems": {},
+  "Usage": {},
+  "_UsageUpdate": {},
+  "WaitForTerminalExitRequest": {},
+  "WaitForTerminalExitResponse": {},
+  "WorkspaceFolder": {},
+  "WriteTextFileRequest": {},
+  "WriteTextFileResponse": {},
+  "AcceptNesNotification": {},
+  "AgentAuthCapabilities": {},
+  "Annotations": {},
+  "AudioContent": {},
+  "EnvVarAuthMethod": {},
+  "TerminalAuthMethod": {},
+  "AvailableCommandInput": {},
+  "CancelNotification": {},
+  "CancelRequestNotification": {},
+  "ClientNesCapabilities": {},
+  "CloseNesRequest": {},
+  "CloseSessionRequest": {},
+  "CompleteElicitationNotification": {},
+  "AudioContentBlock": {},
+  "AcceptElicitationResponse": {},
+  "CreateTerminalRequest": {},
+  "_CurrentModeUpdate": {},
+  "DidChangeDocumentNotification": {},
+  "DidCloseDocumentNotification": {},
+  "DidFocusDocumentNotification": {},
+  "DidOpenDocumentNotification": {},
+  "DidSaveDocumentNotification": {},
+  "ElicitationCapabilities": {},
+  "ElicitationStringPropertySchema": {},
+  "ElicitationNumberPropertySchema": {},
+  "ElicitationIntegerPropertySchema": {},
+  "ElicitationRequestScope": {},
+  "ElicitationSessionScope": {},
+  "ElicitationUrlSessionMode": {},
+  "ElicitationUrlRequestMode": {},
+  "ElicitationUrlMode": {},
+  "Error": {},
+  "ImageContent": {},
+  "KillTerminalRequest": {},
+  "ListProvidersResponse": {},
+  "ListSessionsResponse": {},
+  "HttpMcpServer": {},
+  "SseMcpServer": {},
+  "MultiSelectPropertySchema": {},
+  "NesContextCapabilities": {},
+  "NesDiagnostic": {},
+  "NesDocumentDidChangeCapabilities": {},
+  "NesDocumentEventCapabilities": {},
+  "NesEventCapabilities": {},
+  "NesJumpSuggestion": {},
+  "NesOpenFile": {},
+  "NesRenameSuggestion": {},
+  "NesJumpSuggestionVariant": {},
+  "NesRenameSuggestionVariant": {},
+  "NesTextEdit": {},
+  "NesUserAction": {},
+  "NewSessionRequest": {},
+  "PermissionOption": {},
+  "PlanEntry": {},
+  "PromptResponse": {},
+  "ReadTextFileRequest": {},
+  "RejectNesNotification": {},
+  "ReleaseTerminalRequest": {},
+  "AllowedOutcome": {},
+  "RequestPermissionResponse": {},
+  "ResourceLink": {},
+  "ResumeSessionRequest": {},
+  "SessionCapabilities": {},
+  "SessionConfigOptionBoolean": {},
+  "SessionConfigSelectOption": {},
+  "SessionMode": {},
+  "SessionModeState": {},
+  "CurrentModeUpdate": {},
+  "UsageUpdate": {},
+  "StartNesRequest": {},
+  "TextContent": {},
+  "AgentErrorMessage": {},
+  "AvailableCommand": {},
+  "_AvailableCommandsUpdate": {},
+  "ClientCapabilities": {},
+  "ClientNotification": {},
+  "ClientResponseMessage": {},
+  "ClientErrorMessage": {},
+  "ClientResponse": {},
+  "TextContentBlock": {},
+  "ImageContentBlock": {},
+  "ResourceContentBlock": {},
+  "CreateUrlElicitationRequest": {},
+  "ElicitationMultiSelectPropertySchema": {},
+  "ElicitationSchema": {},
+  "EmbeddedResource": {},
+  "ForkSessionRequest": {},
+  "InitializeRequest": {
+    "_coerce_protocol_version": [
+      "cls",
+      "value"
+    ]
+  },
+  "LoadSessionRequest": {},
+  "NesCapabilities": {},
+  "NesEditSuggestion": {},
+  "NesSuggestContext": {},
+  "NesEditSuggestionVariant": {},
+  "Plan": {},
+  "SessionConfigSelectGroup": {},
+  "AgentPlanUpdate": {},
+  "AvailableCommandsUpdate": {},
+  "SuggestNesRequest": {},
+  "SuggestNesResponse": {},
+  "AgentCapabilities": {},
+  "EmbeddedResourceContentBlock": {},
+  "ContentChunk": {},
+  "ElicitationFormSessionMode": {},
+  "ElicitationFormRequestMode": {},
+  "ElicitationFormMode": {},
+  "InitializeResponse": {},
+  "PromptRequest": {},
+  "SessionConfigSelect": {},
+  "UserMessageChunk": {},
+  "AgentMessageChunk": {},
+  "AgentThoughtChunk": {},
+  "ClientRequest": {},
+  "Content": {},
+  "CreateFormElicitationRequest": {},
+  "SessionConfigOptionSelect": {},
+  "SetSessionConfigOptionResponse": {},
+  "ContentToolCallContent": {},
+  "ToolCallUpdate": {},
+  "_ConfigOptionUpdate": {},
+  "ForkSessionResponse": {},
+  "LoadSessionResponse": {},
+  "NewSessionResponse": {},
+  "RequestPermissionRequest": {},
+  "ResumeSessionResponse": {},
+  "ToolCallProgress": {},
+  "ConfigOptionUpdate": {},
+  "ToolCall": {},
+  "AgentRequest": {},
+  "AgentResponseMessage": {},
+  "AgentResponse": {},
+  "ToolCallStart": {},
+  "SessionNotification": {},
+  "AgentNotification": {},
+  "RequestError": {
+    "__init__": [
+      "self",
+      "code",
+      "message",
+      "data"
+    ],
+    "parse_error": [
+      "cls",
+      "data"
+    ],
+    "invalid_request": [
+      "cls",
+      "data"
+    ],
+    "method_not_found": [
+      "cls",
+      "method"
+    ],
+    "invalid_params": [
+      "cls",
+      "data"
+    ],
+    "internal_error": [
+      "cls",
+      "data"
+    ],
+    "auth_required": [
+      "cls",
+      "data"
+    ],
+    "resource_not_found": [
+      "cls",
+      "uri"
+    ],
+    "to_error_obj": [
+      "self"
+    ]
+  },
+  "DEFAULT_TAGS": [],
+  "TRACER": [],
+  "_start_tracer_span": [
+    "name"
+  ],
+  "span_context": [
+    "name"
+  ],
+  "build_client_router": [
+    "client",
+    "use_unstable_protocol"
+  ],
+  "_CLIENT_CONNECTION_ERROR": [],
+  "ClientSideConnection": {
+    "__init__": [
+      "self",
+      "to_client",
+      "input_stream",
+      "output_stream"
+    ],
+    "initialize": [
+      "self",
+      "protocol_version",
+      "client_capabilities",
+      "client_info"
+    ],
+    "new_session": [
+      "self",
+      "cwd",
+      "additional_directories",
+      "mcp_servers"
+    ],
+    "load_session": [
+      "self",
+      "cwd",
+      "session_id",
+      "additional_directories",
+      "mcp_servers"
+    ],
+    "list_sessions": [
+      "self",
+      "additional_directories",
+      "cursor",
+      "cwd"
+    ],
+    "set_session_mode": [
+      "self",
+      "mode_id",
+      "session_id"
+    ],
+    "set_session_model": [
+      "self",
+      "model_id",
+      "session_id"
+    ],
+    "set_config_option": [
+      "self",
+      "config_id",
+      "session_id",
+      "value"
+    ],
+    "authenticate": [
+      "self",
+      "method_id"
+    ],
+    "prompt": [
+      "self",
+      "prompt",
+      "session_id",
+      "message_id"
+    ],
+    "fork_session": [
+      "self",
+      "cwd",
+      "session_id",
+      "additional_directories",
+      "mcp_servers"
+    ],
+    "resume_session": [
+      "self",
+      "cwd",
+      "session_id",
+      "additional_directories",
+      "mcp_servers"
+    ],
+    "close_session": [
+      "self",
+      "session_id"
+    ],
+    "cancel": [
+      "self",
+      "session_id"
+    ],
+    "ext_method": [
+      "self",
+      "method",
+      "params"
+    ],
+    "ext_notification": [
+      "self",
+      "method",
+      "params"
+    ],
+    "close": [
+      "self"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self",
+      "exc_type",
+      "exc",
+      "tb"
+    ],
+    "on_connect": [
+      "self",
+      "conn"
+    ]
+  },
+  "RequestRunner": [],
+  "NotificationRunner": [],
+  "MessageDispatcher": {
+    "start": [
+      "self"
+    ],
+    "stop": [
+      "self"
+    ]
+  },
+  "DefaultMessageDispatcher": {
+    "__init__": [
+      "self"
+    ],
+    "start": [
+      "self"
+    ],
+    "_run": [
+      "self"
+    ],
+    "stop": [
+      "self"
+    ],
+    "_dispatch_request": [
+      "self",
+      "message"
+    ],
+    "_dispatch_notification": [
+      "self",
+      "message"
+    ]
+  },
+  "OutgoingMessage": {},
+  "IncomingMessage": {},
+  "MessageStateStore": {
+    "register_outgoing": [
+      "self",
+      "request_id",
+      "method"
+    ],
+    "resolve_outgoing": [
+      "self",
+      "request_id",
+      "result"
+    ],
+    "reject_outgoing": [
+      "self",
+      "request_id",
+      "error"
+    ],
+    "reject_all_outgoing": [
+      "self",
+      "error"
+    ],
+    "begin_incoming": [
+      "self",
+      "method",
+      "params"
+    ],
+    "complete_incoming": [
+      "self",
+      "record",
+      "result"
+    ],
+    "fail_incoming": [
+      "self",
+      "record",
+      "error"
+    ]
+  },
+  "InMemoryMessageStateStore": {
+    "__init__": [
+      "self"
+    ],
+    "register_outgoing": [
+      "self",
+      "request_id",
+      "method"
+    ],
+    "resolve_outgoing": [
+      "self",
+      "request_id",
+      "result"
+    ],
+    "reject_outgoing": [
+      "self",
+      "request_id",
+      "error"
+    ],
+    "reject_all_outgoing": [
+      "self",
+      "error"
+    ],
+    "begin_incoming": [
+      "self",
+      "method",
+      "params"
+    ],
+    "complete_incoming": [
+      "self",
+      "record",
+      "result"
+    ],
+    "fail_incoming": [
+      "self",
+      "record",
+      "error"
+    ]
+  },
+  "MessageQueue": {
+    "publish": [
+      "self",
+      "task"
+    ],
+    "close": [
+      "self"
+    ],
+    "task_done": [
+      "self"
+    ],
+    "join": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ]
+  },
+  "InMemoryMessageQueue": {
+    "__init__": [
+      "self"
+    ],
+    "publish": [
+      "self",
+      "task"
+    ],
+    "close": [
+      "self"
+    ],
+    "join": [
+      "self"
+    ],
+    "task_done": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ]
+  },
+  "_QueueIterator": {
+    "__init__": [
+      "self",
+      "queue"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__anext__": [
+      "self"
+    ]
+  },
+  "ErrorHandler": [],
+  "TaskSupervisor": {
+    "__init__": [
+      "self"
+    ],
+    "add_error_handler": [
+      "self",
+      "handler"
+    ],
+    "create": [
+      "self",
+      "coroutine"
+    ],
+    "_on_done": [
+      "self",
+      "task",
+      "on_error"
+    ],
+    "shutdown": [
+      "self"
+    ]
+  },
+  "RpcTaskKind": {
+    "REQUEST": [],
+    "NOTIFICATION": []
+  },
+  "RpcTask": {},
+  "SenderFactory": [],
+  "_PendingSend": {},
+  "MessageSender": {
+    "__init__": [
+      "self",
+      "writer",
+      "supervisor"
+    ],
+    "send": [
+      "self",
+      "payload"
+    ],
+    "close": [
+      "self"
+    ],
+    "_loop": [
+      "self"
+    ],
+    "_on_error": [
+      "self",
+      "task",
+      "exc"
+    ]
+  },
+  "_MissingToolCallTitleError": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "_UnknownToolCallError": {
+    "__init__": [
+      "self",
+      "external_id"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "_copy_model_list": [
+    "items"
+  ],
+  "_Unset": {},
+  "UNSET": [],
+  "TrackedToolCallView": {
+    "model_config": []
+  },
+  "_TrackedToolCall": {
+    "__init__": [
+      "self"
+    ],
+    "to_view": [
+      "self"
+    ],
+    "to_tool_call_model": [
+      "self"
+    ],
+    "to_start_model": [
+      "self"
+    ],
+    "update": [
+      "self"
+    ],
+    "append_stream_text": [
+      "self",
+      "text"
+    ]
+  },
+  "ToolCallTracker": {
+    "__init__": [
+      "self"
+    ],
+    "start": [
+      "self",
+      "external_id"
+    ],
+    "progress": [
+      "self",
+      "external_id"
+    ],
+    "append_stream_text": [
+      "self",
+      "external_id",
+      "text"
+    ],
+    "forget": [
+      "self",
+      "external_id"
+    ],
+    "view": [
+      "self",
+      "external_id"
+    ],
+    "tool_call_model": [
+      "self",
+      "external_id"
+    ],
+    "_require_call": [
+      "self",
+      "external_id"
+    ]
+  },
+  "SessionNotificationMismatchError": {
+    "__init__": [
+      "self",
+      "expected",
+      "actual"
+    ]
+  },
+  "SessionSnapshotUnavailableError": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "_MutableToolCallState": {
+    "__init__": [
+      "self",
+      "tool_call_id"
+    ],
+    "apply_start": [
+      "self",
+      "update"
+    ],
+    "apply_progress": [
+      "self",
+      "update"
+    ],
+    "snapshot": [
+      "self"
+    ]
+  },
+  "ToolCallView": {
+    "model_config": []
+  },
+  "SessionSnapshot": {
+    "model_config": []
+  },
+  "SessionAccumulator": {
+    "__init__": [
+      "self"
+    ],
+    "reset": [
+      "self"
+    ],
+    "subscribe": [
+      "self",
+      "callback"
+    ],
+    "apply": [
+      "self",
+      "notification"
+    ],
+    "_ensure_session": [
+      "self",
+      "notification"
+    ],
+    "_handle_session_change": [
+      "self",
+      "session_id"
+    ],
+    "_apply_update": [
+      "self",
+      "update"
+    ],
+    "_notify_subscribers": [
+      "self",
+      "snapshot",
+      "notification"
+    ],
+    "snapshot": [
+      "self"
+    ]
+  },
+  "PermissionBrokerError": {},
+  "MissingToolCallError": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "MissingPermissionOptionsError": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "default_permission_options": [],
+  "PermissionBroker": {
+    "__init__": [
+      "self",
+      "session_id",
+      "requester"
+    ],
+    "request_for": [
+      "self",
+      "external_id"
+    ]
+  },
+  "_SET_CONFIG_OPTION_MODELS": [],
+  "_validate_set_config_option_request": [
+    "params"
+  ],
+  "_make_set_config_option_handler": [
+    "agent"
+  ],
+  "build_agent_router": [
+    "agent",
+    "use_unstable_protocol"
+  ],
+  "_AGENT_CONNECTION_ERROR": [],
+  "AgentSideConnection": {
+    "__init__": [
+      "self",
+      "to_agent",
+      "input_stream",
+      "output_stream",
+      "listening"
+    ],
+    "listen": [
+      "self"
+    ],
+    "session_update": [
+      "self",
+      "session_id",
+      "update"
+    ],
+    "request_permission": [
+      "self",
+      "options",
+      "session_id",
+      "tool_call"
+    ],
+    "read_text_file": [
+      "self",
+      "path",
+      "session_id",
+      "limit",
+      "line"
+    ],
+    "write_text_file": [
+      "self",
+      "content",
+      "path",
+      "session_id"
+    ],
+    "create_terminal": [
+      "self",
+      "command",
+      "session_id",
+      "args",
+      "cwd",
+      "env",
+      "output_byte_limit"
+    ],
+    "terminal_output": [
+      "self",
+      "session_id",
+      "terminal_id"
+    ],
+    "release_terminal": [
+      "self",
+      "session_id",
+      "terminal_id"
+    ],
+    "wait_for_terminal_exit": [
+      "self",
+      "session_id",
+      "terminal_id"
+    ],
+    "kill_terminal": [
+      "self",
+      "session_id",
+      "terminal_id"
+    ],
+    "ext_method": [
+      "self",
+      "method",
+      "params"
+    ],
+    "ext_notification": [
+      "self",
+      "method",
+      "params"
+    ],
+    "close": [
+      "self"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self",
+      "exc_type",
+      "exc",
+      "tb"
+    ],
+    "on_connect": [
+      "self",
+      "conn"
+    ]
+  }
+}
