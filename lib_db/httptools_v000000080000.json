@@ -1,0 +1,44 @@
+{
+  "__version__": [],
+  "__all__": [],
+  "HttpParserError": {},
+  "HttpParserCallbackError": {},
+  "HttpParserInvalidStatusError": {},
+  "HttpParserInvalidMethodError": {},
+  "HttpParserInvalidURLError": {},
+  "HttpParserUpgrade": {},
+  "HTTPProtocol": {
+    "on_message_begin": [
+      "self"
+    ],
+    "on_url": [
+      "self",
+      "url"
+    ],
+    "on_header": [
+      "self",
+      "name",
+      "value"
+    ],
+    "on_headers_complete": [
+      "self"
+    ],
+    "on_body": [
+      "self",
+      "body"
+    ],
+    "on_message_complete": [
+      "self"
+    ],
+    "on_chunk_header": [
+      "self"
+    ],
+    "on_chunk_complete": [
+      "self"
+    ],
+    "on_status": [
+      "self",
+      "status"
+    ]
+  }
+}
