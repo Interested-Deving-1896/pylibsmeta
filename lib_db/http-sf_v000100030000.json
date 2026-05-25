@@ -1,0 +1,335 @@
+{
+  "__all__": [],
+  "Parameters": {
+    "__str__": [
+      "self"
+    ]
+  },
+  "SingleItemType": [],
+  "Item": {
+    "__init__": [
+      "self",
+      "value"
+    ],
+    "parse": [
+      "self",
+      "data"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ],
+    "__hash__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "AllItemType": [],
+  "_itemise": [
+    "thing"
+  ],
+  "_to_functional": [
+    "thing"
+  ],
+  "_from_functional": [
+    "value"
+  ],
+  "InnerList": {
+    "__init__": [
+      "self",
+      "values"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__setitem__": [
+      "self",
+      "index",
+      "value"
+    ],
+    "append": [
+      "self",
+      "item"
+    ],
+    "insert": [
+      "self",
+      "i",
+      "item"
+    ]
+  },
+  "Dictionary": {
+    "__init__": [
+      "self",
+      "data"
+    ],
+    "parse": [
+      "self",
+      "data"
+    ],
+    "__setitem__": [
+      "self",
+      "key",
+      "value"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "List": {
+    "__init__": [
+      "self",
+      "values"
+    ],
+    "parse": [
+      "self",
+      "data"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__setitem__": [
+      "self",
+      "index",
+      "value"
+    ],
+    "append": [
+      "self",
+      "item"
+    ],
+    "insert": [
+      "self",
+      "i",
+      "item"
+    ]
+  },
+  "structures": [],
+  "TOKEN_START_CHARS": [],
+  "TOKEN_CHARS": [],
+  "parse_token": [
+    "state"
+  ],
+  "ser_token": [
+    "token"
+  ],
+  "PAREN_OPEN": [],
+  "SEMICOLON": [],
+  "EQUALS": [],
+  "parse_item": [
+    "state",
+    "on_duplicate_key"
+  ],
+  "ser_item": [
+    "item"
+  ],
+  "Token": {
+    "__init__": [
+      "self",
+      "seq"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "DisplayString": {
+    "__init__": [
+      "self",
+      "seq"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "StructuredFieldError": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "ParserState": {
+    "__init__": [
+      "self",
+      "data"
+    ],
+    "has_data": [
+      "self"
+    ],
+    "peek": [
+      "self"
+    ],
+    "consume_char": [
+      "self"
+    ]
+  },
+  "parse_date": [
+    "state"
+  ],
+  "ser_date": [
+    "inval"
+  ],
+  "MAX_INT": [],
+  "MIN_INT": [],
+  "DIGITS": [],
+  "NUMBER_START_CHARS": [],
+  "PERIOD": [],
+  "MINUS": [],
+  "INTEGER": [],
+  "DECIMAL": [],
+  "parse_integer": [
+    "state"
+  ],
+  "ser_integer": [
+    "inval"
+  ],
+  "parse_number": [
+    "state"
+  ],
+  "PAREN_CLOSE": [],
+  "INNERLIST_DELIMS": [],
+  "parse_innerlist": [
+    "state",
+    "on_duplicate_key"
+  ],
+  "ser_innerlist": [
+    "inner_list"
+  ],
+  "parse_item_or_inner_list": [
+    "state",
+    "on_duplicate_key"
+  ],
+  "ser_item_or_inner_list": [
+    "thing"
+  ],
+  "COMMA": [],
+  "parse_dictionary": [
+    "state",
+    "on_duplicate_key"
+  ],
+  "ser_dictionary": [
+    "dictionary"
+  ],
+  "DQUOTE": [],
+  "BACKSLASH": [],
+  "DQUOTEBACKSLASH": [],
+  "parse_string": [
+    "state"
+  ],
+  "ser_string": [
+    "inval"
+  ],
+  "parse_bare_item": [
+    "state"
+  ],
+  "ser_bare_item": [
+    "item"
+  ],
+  "__author__": [],
+  "__copyright__": [],
+  "__version__": [],
+  "parse": [
+    "value",
+    "name",
+    "tltype",
+    "on_duplicate_key"
+  ],
+  "ser": [
+    "structure"
+  ],
+  "PERCENT": [],
+  "parse_display_string": [
+    "state"
+  ],
+  "ser_display_string": [
+    "inval"
+  ],
+  "parser": [],
+  "structure": [],
+  "input_source": [],
+  "args": [],
+  "BYTE_DELIMIT": [],
+  "B64CONTENT": [],
+  "parse_byteseq": [
+    "state"
+  ],
+  "ser_byteseq": [
+    "byteseq"
+  ],
+  "retrofit": [],
+  "parse_params": [
+    "state",
+    "on_duplicate_key"
+  ],
+  "ser_params": [
+    "params"
+  ],
+  "QUESTION": [],
+  "ONE": [],
+  "ZERO": [],
+  "_boolean_map": [],
+  "parse_boolean": [
+    "state"
+  ],
+  "ser_boolean": [
+    "inval"
+  ],
+  "INT_DIGITS": [],
+  "FRAC_DIGITS": [],
+  "PRECISION": [],
+  "parse_decimal": [
+    "state"
+  ],
+  "ser_decimal": [
+    "input_decimal"
+  ],
+  "parse_list": [
+    "state",
+    "on_duplicate_key"
+  ],
+  "ser_list": [
+    "_list"
+  ],
+  "SPACE": [],
+  "HTTP_OWS": [],
+  "discard_ows": [
+    "state"
+  ],
+  "discard_http_ows": [
+    "state"
+  ],
+  "KEY_START_CHARS": [],
+  "KEY_CHARS": [],
+  "UPPER_CHARS": [],
+  "COMPAT": [],
+  "parse_key": [
+    "state"
+  ],
+  "ser_key": [
+    "key"
+  ],
+  "to_json": [
+    "structure"
+  ],
+  "from_json": [
+    "instr"
+  ],
+  "json_dump": [
+    "inobj"
+  ],
+  "json_load": [
+    "inobj"
+  ],
+  "adjust_field_json": [
+    "field",
+    "header_type"
+  ],
+  "adjust": [
+    "thing"
+  ]
+}
