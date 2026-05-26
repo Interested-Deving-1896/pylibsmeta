@@ -1,0 +1,402 @@
+{
+  "METRIC_EQUALS_ERR_EXPLANATION": [],
+  "METRIC_DIFF_ERR_EXPLANATION": [],
+  "METRIC_COMPARE_ERR_EXPLANATION": [],
+  "METRIC_DIFF_ERR_NONE_EXPLANATION": [],
+  "assert_metric_equal": [
+    "expected_value",
+    "metric_name",
+    "registry"
+  ],
+  "assert_metric_diff": [
+    "frozen_registry",
+    "expected_diff",
+    "metric_name",
+    "registry"
+  ],
+  "assert_metric_no_diff": [
+    "frozen_registry",
+    "expected_diff",
+    "metric_name",
+    "registry"
+  ],
+  "assert_metric_not_equal": [
+    "expected_value",
+    "metric_name",
+    "registry"
+  ],
+  "assert_metric_compare": [
+    "frozen_registry",
+    "predicate",
+    "metric_name",
+    "registry"
+  ],
+  "save_registry": [
+    "registry"
+  ],
+  "get_metric": [
+    "metric_name",
+    "registry"
+  ],
+  "get_metrics_vector": [
+    "metric_name",
+    "registry"
+  ],
+  "get_metric_vector_from_frozen_registry": [
+    "metric_name",
+    "frozen_registry"
+  ],
+  "get_metric_from_frozen_registry": [
+    "metric_name",
+    "frozen_registry"
+  ],
+  "format_labels": [
+    "labels"
+  ],
+  "format_vector": [
+    "vector"
+  ],
+  "model_inserts": [],
+  "model_updates": [],
+  "model_deletes": [],
+  "ExportModelOperationsMixin": [
+    "model_name"
+  ],
+  "Metrics": {
+    "_instance": [],
+    "get_instance": [
+      "cls"
+    ],
+    "register_metric": [
+      "self",
+      "metric_cls",
+      "name",
+      "documentation",
+      "labelnames"
+    ],
+    "__init__": [
+      "self"
+    ],
+    "register": [
+      "self"
+    ]
+  },
+  "PrometheusBeforeMiddleware": {
+    "metrics_cls": [],
+    "__init__": [
+      "self"
+    ],
+    "process_request": [
+      "self",
+      "request"
+    ],
+    "process_response": [
+      "self",
+      "request",
+      "response"
+    ]
+  },
+  "PrometheusAfterMiddleware": {
+    "metrics_cls": [],
+    "__init__": [
+      "self"
+    ],
+    "_transport": [
+      "self",
+      "request"
+    ],
+    "_method": [
+      "self",
+      "request"
+    ],
+    "label_metric": [
+      "self",
+      "metric",
+      "request",
+      "response"
+    ],
+    "process_request": [
+      "self",
+      "request"
+    ],
+    "_get_view_name": [
+      "self",
+      "request"
+    ],
+    "process_view": [
+      "self",
+      "request",
+      "view_func"
+    ],
+    "process_template_response": [
+      "self",
+      "request",
+      "response"
+    ],
+    "process_response": [
+      "self",
+      "request",
+      "response"
+    ],
+    "process_exception": [
+      "self",
+      "request",
+      "exception"
+    ]
+  },
+  "logger": [],
+  "SetupPrometheusEndpointOnPort": [
+    "port",
+    "addr"
+  ],
+  "PrometheusEndpointServer": {
+    "__init__": [
+      "self",
+      "httpd"
+    ],
+    "run": [
+      "self"
+    ]
+  },
+  "SetupPrometheusEndpointOnPortRange": [
+    "port_range",
+    "addr"
+  ],
+  "SetupPrometheusExportsFromConfig": [],
+  "ExportToDjangoView": [
+    "request"
+  ],
+  "DjangoPrometheusConfig": {
+    "name": [],
+    "verbose_name": [],
+    "ready": [
+      "self"
+    ]
+  },
+  "__all__": [],
+  "__version__": [],
+  "Time": [],
+  "TimeSince": [
+    "t"
+  ],
+  "PowersOf": [
+    "logbase",
+    "count",
+    "lower",
+    "include_zero"
+  ],
+  "urlpatterns": [],
+  "unapplied_migrations": [],
+  "applied_migrations": [],
+  "ExportMigrationsForDatabase": [
+    "alias",
+    "executor"
+  ],
+  "ExportMigrations": [],
+  "ExceptionCounterByType": {
+    "__init__": [
+      "self",
+      "counter",
+      "type_label",
+      "extra_labels"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "typ",
+      "value",
+      "traceback"
+    ]
+  },
+  "DatabaseWrapperMixin": {
+    "get_new_connection": [
+      "self"
+    ],
+    "create_cursor": [
+      "self",
+      "name"
+    ]
+  },
+  "ExportingCursorWrapper": [
+    "cursor_class",
+    "alias",
+    "vendor"
+  ],
+  "connections_total": [],
+  "connection_errors_total": [],
+  "execute_total": [],
+  "execute_many_total": [],
+  "errors_total": [],
+  "query_duration_seconds": [],
+  "DatabaseWrapper": {
+    "get_connection_params": [
+      "self"
+    ],
+    "create_cursor": [
+      "self",
+      "name"
+    ]
+  },
+  "DatabaseFeatures": {},
+  "django_cache_get_total": [],
+  "django_cache_hits_total": [],
+  "django_cache_misses_total": [],
+  "django_cache_get_fail_total": [],
+  "FileBasedCache": {
+    "get": [
+      "self",
+      "key",
+      "default",
+      "version"
+    ]
+  },
+  "MemcachedPrometheusCacheMixin": {
+    "get": [
+      "self",
+      "key",
+      "default",
+      "version"
+    ]
+  },
+  "PyLibMCCache": {},
+  "PyMemcacheCache": {},
+  "MemcachedCache": {
+    "get": [
+      "self",
+      "key",
+      "default",
+      "version"
+    ]
+  },
+  "RedisCache": {
+    "get": [
+      "self",
+      "key",
+      "default",
+      "version",
+      "client"
+    ]
+  },
+  "NativeRedisCache": {
+    "get": [
+      "self",
+      "key",
+      "default",
+      "version"
+    ]
+  },
+  "LocMemCache": {
+    "get": [
+      "self",
+      "key",
+      "default",
+      "version"
+    ]
+  },
+  "NAMESPACE": [],
+  "PROMETHEUS_LATENCY_BUCKETS": [],
+  "TestPrometheusTestCaseMixin": {
+    "registry": [
+      "self"
+    ],
+    "some_gauge": [
+      "self",
+      "registry"
+    ],
+    "some_labelled_gauge": [
+      "self",
+      "registry"
+    ],
+    "test_get_metric": [
+      "self",
+      "registry"
+    ],
+    "test_get_metrics_vector": [
+      "self",
+      "registry"
+    ],
+    "test_assert_metric_equal": [
+      "self",
+      "registry"
+    ],
+    "test_registry_saving": [
+      "self",
+      "registry",
+      "some_gauge",
+      "some_labelled_gauge"
+    ]
+  },
+  "TestDjangoPrometheus": {
+    "testPowersOf": [
+      "self"
+    ]
+  },
+  "test_port_range_available": [
+    "httpserver_mock"
+  ],
+  "test_port_range_unavailable": [
+    "httpserver_mock"
+  ],
+  "_can_import_postgis_backend": [],
+  "DummyCursor": {
+    "execute": [
+      "self"
+    ],
+    "executemany": [
+      "self",
+      "query",
+      "param_list"
+    ]
+  },
+  "TestExportingCursorWrapper": {
+    "test_wraps_cursor_class": [
+      "self"
+    ],
+    "test_double_wrapping_increases_mro": [
+      "self"
+    ]
+  },
+  "TestPostgresqlGetConnectionParams": {
+    "_make_wrapper": [
+      "self"
+    ],
+    "test_wraps_cursor_factory": [
+      "self",
+      "mock_super_params"
+    ],
+    "test_wrapping_is_single_layer": [
+      "self",
+      "mock_super_params"
+    ],
+    "test_get_new_connection_does_not_rewrap": [
+      "self",
+      "mock_super_conn"
+    ],
+    "test_create_cursor_delegates_to_django": [
+      "self",
+      "mock_django_create_cursor"
+    ]
+  },
+  "TestPostgisGetConnectionParams": {
+    "_get_django_postgis_dbwrapper": [
+      "self"
+    ],
+    "_make_wrapper": [
+      "self"
+    ],
+    "test_wraps_cursor_factory": [
+      "self"
+    ],
+    "test_wrapping_is_single_layer": [
+      "self"
+    ],
+    "test_uses_self_alias": [
+      "self"
+    ],
+    "test_create_cursor_delegates_to_django": [
+      "self"
+    ]
+  }
+}
