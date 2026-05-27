@@ -1,0 +1,1553 @@
+{
+  "configure_logging": [],
+  "get_logger": [],
+  "Settings": {
+    "TORCH_DEVICE_MODEL": [
+      "self"
+    ],
+    "MODEL_DTYPE": [
+      "self"
+    ],
+    "MODEL_DTYPE_BFLOAT": [
+      "self"
+    ],
+    "INFERENCE_MODE": [
+      "self"
+    ]
+  },
+  "settings": [],
+  "logger": [],
+  "ParsedLayoutBlock": {},
+  "_JSON_ARRAY_RE": [],
+  "_strip_fences": [
+    "text"
+  ],
+  "_coerce_bbox": [
+    "bbox"
+  ],
+  "_coerce_count": [
+    "value"
+  ],
+  "parse_layout": [
+    "text"
+  ],
+  "ParsedTableElement": {},
+  "parse_table_rec": [
+    "text"
+  ],
+  "clean_block_html": [
+    "html"
+  ],
+  "ParsedFullPageBlock": {},
+  "parse_full_page_html": [
+    "text"
+  ],
+  "denorm_bbox": [
+    "bbox",
+    "img_w",
+    "img_h",
+    "scale"
+  ],
+  "ALLOWED_TAGS": [],
+  "ALLOWED_ATTRIBUTES": [],
+  "SKIP_OCR_LABELS": [],
+  "LAYOUT_PROMPT": [],
+  "BLOCK_PROMPT": [],
+  "TABLE_REC_PROMPT": [],
+  "HIGH_ACCURACY_BBOX_PROMPT": [],
+  "PROMPT_MAPPING": [],
+  "LAYOUT_LABEL_SET": [],
+  "LAYOUT_JSON_SCHEMA": [],
+  "TABLE_REC_LABEL_SET": [],
+  "TABLE_REC_JSON_SCHEMA": [],
+  "_has_nvidia_gpu": [],
+  "_autodetect_backend": [],
+  "_build_backend": [
+    "method"
+  ],
+  "SuryaInferenceManager": {
+    "__init__": [
+      "self",
+      "method",
+      "lazy"
+    ],
+    "start": [
+      "self"
+    ],
+    "stop": [
+      "self"
+    ],
+    "generate": [
+      "self",
+      "batch"
+    ]
+  },
+  "get_default_manager": [],
+  "PROMPT_TYPE_LAYOUT": [],
+  "PROMPT_TYPE_BLOCK": [],
+  "PROMPT_TYPE_TABLE_REC": [],
+  "PROMPT_TYPE_HIGH_ACCURACY_BBOX": [],
+  "BatchInputItem": {},
+  "GenerationResult": {},
+  "BatchOutputItem": {},
+  "scale_to_fit": [
+    "img",
+    "max_size",
+    "min_size",
+    "grid_size"
+  ],
+  "detect_repeat_token": [
+    "predicted_tokens",
+    "base_max_repeats",
+    "window_size",
+    "cut_from_end",
+    "scaling_factor"
+  ],
+  "image_token_budget": [
+    "block_count",
+    "ceiling",
+    "floor"
+  ],
+  "BASELINE_VRAM_GB": [],
+  "BASELINE_MAX_BATCHED_TOKENS": [],
+  "BASELINE_MAX_NUM_SEQS": [],
+  "GPU_VRAM_GB": [],
+  "_gpu_settings": [
+    "gpu"
+  ],
+  "_resolve_docker_binary": [],
+  "_health_url": [
+    "port"
+  ],
+  "_openai_url": [
+    "port"
+  ],
+  "VllmBackend": {
+    "name": [],
+    "__init__": [
+      "self"
+    ],
+    "start": [
+      "self"
+    ],
+    "stop": [
+      "self"
+    ],
+    "generate": [
+      "self",
+      "batch"
+    ]
+  },
+  "_resolve_llama_server_binary": [],
+  "_download_gguf_files": [],
+  "LlamaCppBackend": {
+    "name": [],
+    "__init__": [
+      "self"
+    ],
+    "start": [
+      "self"
+    ],
+    "stop": [
+      "self"
+    ],
+    "generate": [
+      "self",
+      "batch"
+    ]
+  },
+  "ServerHandle": {},
+  "Backend": {
+    "start": [
+      "self"
+    ],
+    "stop": [
+      "self"
+    ],
+    "generate": [
+      "self",
+      "batch"
+    ]
+  },
+  "_cache_dir": [],
+  "_sentinel_path": [
+    "backend"
+  ],
+  "_lock_path": [
+    "backend"
+  ],
+  "find_free_port": [],
+  "probe_health": [
+    "base_url",
+    "timeout"
+  ],
+  "wait_for_health": [
+    "base_url",
+    "total_timeout",
+    "interval"
+  ],
+  "probe_model_id": [
+    "openai_base",
+    "timeout"
+  ],
+  "SpawnedServer": {},
+  "SpawnError": {},
+  "_read_sentinel": [
+    "backend"
+  ],
+  "_write_sentinel": [
+    "backend",
+    "data"
+  ],
+  "_delete_sentinel": [
+    "backend"
+  ],
+  "_stop_process": [
+    "pid",
+    "name"
+  ],
+  "_capture_server_logs": [
+    "handle",
+    "tail"
+  ],
+  "_stop_docker_container": [
+    "name"
+  ],
+  "attach_or_spawn": [
+    "backend",
+    "expected_model_name",
+    "spawn_fn",
+    "health_url_for",
+    "openai_url_for",
+    "startup_timeout"
+  ],
+  "SpawnHandle": {},
+  "encode_image_b64": [
+    "image"
+  ],
+  "_build_messages": [
+    "image",
+    "prompt"
+  ],
+  "_mean_token_prob": [
+    "logprobs_content"
+  ],
+  "_generate_one": [
+    "item",
+    "client",
+    "model_name",
+    "max_tokens_default",
+    "temperature",
+    "top_p",
+    "timeout",
+    "request_logprobs_default"
+  ],
+  "_should_retry": [
+    "result",
+    "retries",
+    "max_retries"
+  ],
+  "chat_completions_batch": [
+    "batch",
+    "client",
+    "model_name",
+    "max_tokens_default",
+    "temperature",
+    "top_p",
+    "timeout",
+    "max_workers",
+    "max_retries",
+    "request_logprobs_default"
+  ],
+  "draw_bboxes_on_image": [
+    "bboxes",
+    "image",
+    "labels",
+    "label_font_size",
+    "color"
+  ],
+  "draw_polys_on_image": [
+    "corners",
+    "image",
+    "labels",
+    "box_padding",
+    "label_offset",
+    "label_font_size",
+    "color"
+  ],
+  "filepath": [],
+  "render_text_as_html": [
+    "bboxes",
+    "texts",
+    "image_size",
+    "base_font_size",
+    "scaler"
+  ],
+  "get_font_path": [
+    "langs"
+  ],
+  "get_text_size": [
+    "text",
+    "font"
+  ],
+  "TEXT_LABELS": [],
+  "LAYOUT_PRED_RELABEL": [],
+  "LayoutPredictor": {
+    "__init__": [
+      "self",
+      "manager"
+    ],
+    "disable_tqdm": [
+      "self",
+      "value"
+    ],
+    "to": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "images",
+      "target_image_sizes",
+      "max_tokens"
+    ]
+  },
+  "LayoutBox": {},
+  "LayoutResult": {},
+  "_polygon_from_bbox": [
+    "bbox"
+  ],
+  "_intersect_bbox": [
+    "a",
+    "b"
+  ],
+  "TableRecPredictor": {
+    "__init__": [
+      "self",
+      "manager"
+    ],
+    "disable_tqdm": [
+      "self",
+      "value"
+    ],
+    "to": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "images",
+      "mode"
+    ],
+    "predict_simple": [
+      "self",
+      "images"
+    ],
+    "predict_full": [
+      "self",
+      "images",
+      "counts"
+    ]
+  },
+  "TableRow": {
+    "label": [
+      "self"
+    ]
+  },
+  "TableCol": {
+    "label": [
+      "self"
+    ]
+  },
+  "TableCell": {
+    "label": [
+      "self"
+    ]
+  },
+  "TableResult": {},
+  "VOCAB_FILES_NAMES": [],
+  "load_vocab": [
+    "vocab_file"
+  ],
+  "whitespace_tokenize": [
+    "text"
+  ],
+  "DistilBertTokenizer": {
+    "vocab_files_names": [],
+    "model_input_names": [],
+    "__init__": [
+      "self",
+      "vocab_file",
+      "do_lower_case",
+      "do_basic_tokenize",
+      "never_split",
+      "unk_token",
+      "sep_token",
+      "pad_token",
+      "cls_token",
+      "mask_token",
+      "tokenize_chinese_chars",
+      "strip_accents"
+    ],
+    "do_lower_case": [
+      "self"
+    ],
+    "vocab_size": [
+      "self"
+    ],
+    "get_vocab": [
+      "self"
+    ],
+    "_tokenize": [
+      "self",
+      "text",
+      "split_special_tokens"
+    ],
+    "_convert_token_to_id": [
+      "self",
+      "token"
+    ],
+    "_convert_id_to_token": [
+      "self",
+      "index"
+    ],
+    "convert_tokens_to_string": [
+      "self",
+      "tokens"
+    ],
+    "build_inputs_with_special_tokens": [
+      "self",
+      "token_ids_0",
+      "token_ids_1"
+    ],
+    "get_special_tokens_mask": [
+      "self",
+      "token_ids_0",
+      "token_ids_1",
+      "already_has_special_tokens"
+    ],
+    "create_token_type_ids_from_sequences": [
+      "self",
+      "token_ids_0",
+      "token_ids_1"
+    ],
+    "save_vocabulary": [
+      "self",
+      "save_directory",
+      "filename_prefix"
+    ]
+  },
+  "BasicTokenizer": {
+    "__init__": [
+      "self",
+      "do_lower_case",
+      "never_split",
+      "tokenize_chinese_chars",
+      "strip_accents",
+      "do_split_on_punc"
+    ],
+    "tokenize": [
+      "self",
+      "text",
+      "never_split"
+    ],
+    "_run_strip_accents": [
+      "self",
+      "text"
+    ],
+    "_run_split_on_punc": [
+      "self",
+      "text",
+      "never_split"
+    ],
+    "_tokenize_chinese_chars": [
+      "self",
+      "text"
+    ],
+    "_is_chinese_char": [
+      "self",
+      "cp"
+    ],
+    "_clean_text": [
+      "self",
+      "text"
+    ]
+  },
+  "WordpieceTokenizer": {
+    "__init__": [
+      "self",
+      "vocab",
+      "unk_token",
+      "max_input_chars_per_word"
+    ],
+    "tokenize": [
+      "self",
+      "text"
+    ]
+  },
+  "OCRErrorModelLoader": {
+    "__init__": [
+      "self",
+      "checkpoint"
+    ],
+    "model": [
+      "self",
+      "device",
+      "dtype",
+      "attention_implementation"
+    ],
+    "processor": [
+      "self",
+      "device",
+      "dtype"
+    ]
+  },
+  "OCRErrorPredictor": {
+    "model_loader_cls": [],
+    "batch_size": [],
+    "default_batch_sizes": [],
+    "__call__": [
+      "self",
+      "texts",
+      "batch_size"
+    ],
+    "batch_ocr_error_detection": [
+      "self",
+      "texts",
+      "batch_size"
+    ]
+  },
+  "OCRErrorDetectionResult": {},
+  "_get_unpad_data": [
+    "attention_mask"
+  ],
+  "create_sinusoidal_embeddings": [
+    "n_pos",
+    "dim",
+    "out"
+  ],
+  "Embeddings": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "forward": [
+      "self",
+      "input_ids",
+      "input_embeds"
+    ]
+  },
+  "MultiHeadSelfAttention": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "prune_heads": [
+      "self",
+      "heads"
+    ],
+    "forward": [
+      "self",
+      "query",
+      "key",
+      "value",
+      "mask",
+      "head_mask",
+      "output_attentions"
+    ]
+  },
+  "DistilBertFlashAttention2": {
+    "__init__": [
+      "self"
+    ],
+    "forward": [
+      "self",
+      "query",
+      "key",
+      "value",
+      "mask",
+      "head_mask",
+      "output_attentions"
+    ],
+    "_flash_attention_forward": [
+      "self",
+      "query_states",
+      "key_states",
+      "value_states",
+      "attention_mask",
+      "query_length",
+      "dropout",
+      "softmax_scale"
+    ],
+    "_upad_input": [
+      "self",
+      "query_layer",
+      "key_layer",
+      "value_layer",
+      "attention_mask",
+      "query_length"
+    ]
+  },
+  "FFN": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "forward": [
+      "self",
+      "input"
+    ],
+    "ff_chunk": [
+      "self",
+      "input"
+    ]
+  },
+  "DISTILBERT_ATTENTION_CLASSES": [],
+  "TransformerBlock": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "forward": [
+      "self",
+      "x",
+      "attn_mask",
+      "head_mask",
+      "output_attentions"
+    ]
+  },
+  "Transformer": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "forward": [
+      "self",
+      "x",
+      "attn_mask",
+      "head_mask",
+      "output_attentions",
+      "output_hidden_states",
+      "return_dict"
+    ]
+  },
+  "DistilBertPreTrainedModel": {
+    "config_class": [],
+    "load_tf_weights": [],
+    "base_model_prefix": [],
+    "supports_gradient_checkpointing": [],
+    "_supports_flash_attn_2": [],
+    "_init_weights": [
+      "self",
+      "module"
+    ]
+  },
+  "DistilBertModel": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "get_position_embeddings": [
+      "self"
+    ],
+    "resize_position_embeddings": [
+      "self",
+      "new_num_position_embeddings"
+    ],
+    "get_input_embeddings": [
+      "self"
+    ],
+    "set_input_embeddings": [
+      "self",
+      "new_embeddings"
+    ],
+    "_prune_heads": [
+      "self",
+      "heads_to_prune"
+    ],
+    "forward": [
+      "self",
+      "input_ids",
+      "attention_mask",
+      "head_mask",
+      "inputs_embeds",
+      "output_attentions",
+      "output_hidden_states",
+      "return_dict"
+    ]
+  },
+  "DistilBertForSequenceClassification": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "get_position_embeddings": [
+      "self"
+    ],
+    "resize_position_embeddings": [
+      "self",
+      "new_num_position_embeddings"
+    ],
+    "forward": [
+      "self",
+      "input_ids",
+      "attention_mask",
+      "head_mask",
+      "inputs_embeds",
+      "labels",
+      "output_attentions",
+      "output_hidden_states",
+      "return_dict"
+    ]
+  },
+  "ID2LABEL": [],
+  "DistilBertConfig": {
+    "model_type": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "vocab_size",
+      "max_position_embeddings",
+      "sinusoidal_pos_embds",
+      "n_layers",
+      "n_heads",
+      "dim",
+      "hidden_dim",
+      "dropout",
+      "attention_dropout",
+      "activation",
+      "initializer_range",
+      "qa_dropout",
+      "seq_classif_dropout",
+      "pad_token_id"
+    ]
+  },
+  "DistilBertOnnxConfig": {
+    "inputs": [
+      "self"
+    ]
+  },
+  "SKIP_CANON_LABELS": [],
+  "_crop_block": [
+    "image",
+    "polygon",
+    "pad"
+  ],
+  "_drop_blank_text_blocks": [
+    "image",
+    "blocks"
+  ],
+  "_detect_repeat_loop": [
+    "text",
+    "base_max_repeats",
+    "window_size",
+    "scaling_factor"
+  ],
+  "RecognitionPredictor": {
+    "__init__": [
+      "self",
+      "manager"
+    ],
+    "disable_tqdm": [
+      "self",
+      "value"
+    ],
+    "to": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "images",
+      "layout_results"
+    ],
+    "_full_page_ocr": [
+      "self",
+      "images",
+      "fallback_layout"
+    ]
+  },
+  "BlockOCRResult": {},
+  "PageOCRResult": {},
+  "ModelLoader": {
+    "__init__": [
+      "self",
+      "checkpoint"
+    ],
+    "model": [
+      "self",
+      "device",
+      "dtype",
+      "attention_implementation"
+    ],
+    "processor": [
+      "self",
+      "device",
+      "dtype"
+    ]
+  },
+  "PolygonBox": {
+    "convert_bbox_to_polygon": [
+      "cls",
+      "value"
+    ],
+    "height": [
+      "self"
+    ],
+    "width": [
+      "self"
+    ],
+    "area": [
+      "self"
+    ],
+    "bbox": [
+      "self"
+    ],
+    "rescale": [
+      "self",
+      "processor_size",
+      "image_size"
+    ],
+    "round": [
+      "self",
+      "divisor"
+    ],
+    "fit_to_bounds": [
+      "self",
+      "bounds"
+    ],
+    "expand": [
+      "self",
+      "x_margin",
+      "y_margin"
+    ],
+    "intersection_area": [
+      "self",
+      "other",
+      "x_margin",
+      "y_margin"
+    ],
+    "x_overlap": [
+      "self",
+      "other",
+      "x_margin"
+    ],
+    "y_overlap": [
+      "self",
+      "other",
+      "y_margin"
+    ],
+    "center": [
+      "self"
+    ],
+    "__hash__": [
+      "self"
+    ]
+  },
+  "BasePredictor": {
+    "model_loader_cls": [],
+    "default_batch_sizes": [],
+    "torch_dtype": [],
+    "disable_tqdm": [
+      "self",
+      "value"
+    ],
+    "__init__": [
+      "self",
+      "checkpoint",
+      "device",
+      "dtype",
+      "attention_implementation"
+    ],
+    "to": [
+      "self",
+      "device_dtype"
+    ],
+    "get_batch_size": [
+      "self"
+    ],
+    "__call__": [
+      "self"
+    ]
+  },
+  "SuryaPreTrainedModel": {
+    "_check_and_adjust_attn_implementation": [
+      "self",
+      "attn_implementation"
+    ]
+  },
+  "BLANK_WHITE_THRESHOLD": [],
+  "BLANK_PIXEL_FRACTION": [],
+  "UNIFORM_COLOR_STD": [],
+  "near_white_fraction": [
+    "image",
+    "white_threshold"
+  ],
+  "is_blank_region": [
+    "image"
+  ],
+  "LOCK_EXPIRATION": [],
+  "join_urls": [
+    "url1",
+    "url2"
+  ],
+  "get_model_name": [
+    "pretrained_model_name_or_path"
+  ],
+  "download_file": [
+    "remote_path",
+    "local_path",
+    "chunk_size"
+  ],
+  "check_manifest": [
+    "local_dir"
+  ],
+  "download_directory": [
+    "remote_path",
+    "local_dir"
+  ],
+  "S3DownloaderMixin": {
+    "s3_prefix": [],
+    "get_local_path": [
+      "cls",
+      "pretrained_model_name_or_path"
+    ],
+    "from_pretrained": [
+      "cls",
+      "pretrained_model_name_or_path"
+    ]
+  },
+  "clean_boxes": [
+    "boxes"
+  ],
+  "expand_bbox": [
+    "bbox",
+    "expansion_factor"
+  ],
+  "get_name_from_path": [
+    "path"
+  ],
+  "load_pdf": [
+    "pdf_path",
+    "page_range",
+    "dpi"
+  ],
+  "load_image": [
+    "image_path"
+  ],
+  "load_from_file": [
+    "input_path",
+    "page_range",
+    "dpi"
+  ],
+  "load_from_folder": [
+    "folder_path",
+    "page_range",
+    "dpi"
+  ],
+  "open_pdf": [
+    "pdf_filepath"
+  ],
+  "get_page_images": [
+    "doc",
+    "indices",
+    "dpi"
+  ],
+  "streamlit_app_cli": [],
+  "table_recognition_cli": [
+    "input_path",
+    "skip_table_detection",
+    "mode"
+  ],
+  "ocr_text_cli": [
+    "input_path"
+  ],
+  "_KATEX_HEAD": [],
+  "_KATEX_TAIL": [],
+  "_MATH_RE": [],
+  "_math_to_katex": [
+    "html_str"
+  ],
+  "render_ocr_html": [
+    "html_str",
+    "height"
+  ],
+  "_assemble_page_html": [
+    "page"
+  ],
+  "_show_timing": [
+    "label",
+    "elapsed_s",
+    "extra"
+  ],
+  "load_predictors_cached": [],
+  "text_detection": [
+    "img"
+  ],
+  "layout_detection": [
+    "img"
+  ],
+  "block_ocr": [
+    "img"
+  ],
+  "full_page_ocr": [
+    "img"
+  ],
+  "table_recognition": [
+    "img",
+    "mode",
+    "skip_table_detection"
+  ],
+  "ocr_errors": [
+    "pdf_file",
+    "page_count",
+    "sample_len",
+    "max_samples",
+    "max_pages"
+  ],
+  "get_page_image": [
+    "pdf_file",
+    "page_num",
+    "dpi"
+  ],
+  "page_counter": [
+    "pdf_file"
+  ],
+  "predictors": [],
+  "in_file": [],
+  "filetype": [],
+  "page_count": [],
+  "run_full_page_ocr": [],
+  "run_text_det": [],
+  "run_layout": [],
+  "run_table_rec": [],
+  "run_block_ocr": [],
+  "run_ocr_errors": [],
+  "table_mode": [],
+  "skip_table_detection": [],
+  "detect_layout_cli": [
+    "input_path"
+  ],
+  "LLAMA_CPP_REPO": [],
+  "LLAMA_CPP_REV": [],
+  "_PATCH_REGISTER_HASH_ANCHOR": [],
+  "_PATCH_REGISTER_HASH_REPLACEMENT": [],
+  "_PATCH_VOCAB_ANCHOR": [],
+  "_PATCH_VOCAB_REPLACEMENT": [],
+  "CONVERTER_PATCHES": [],
+  "patch_converter": [
+    "convert_py"
+  ],
+  "patch_checkpoint": [
+    "src",
+    "dst"
+  ],
+  "ensure_llama_cpp": [
+    "repo_dir",
+    "rev"
+  ],
+  "resolve_checkpoint": [
+    "checkpoint"
+  ],
+  "main": [],
+  "CLILoader": {
+    "__init__": [
+      "self",
+      "filepath",
+      "cli_options",
+      "highres"
+    ],
+    "common_options": [
+      "fn"
+    ],
+    "load": [
+      "self",
+      "highres"
+    ],
+    "parse_range_str": [
+      "range_str"
+    ]
+  },
+  "detect_text_cli": [
+    "input_path"
+  ],
+  "app": [],
+  "ALLOWED_EXT": [],
+  "UPLOAD_DIR": [],
+  "get_rec": [],
+  "LABEL_COLORS": [],
+  "_logo_data_url": [],
+  "_pil_to_data_url": [
+    "img",
+    "fmt"
+  ],
+  "_is_pdf": [
+    "path"
+  ],
+  "_page_count": [
+    "path"
+  ],
+  "_render_page": [
+    "path",
+    "page",
+    "dpi"
+  ],
+  "index": [],
+  "info": [],
+  "upload": [],
+  "page": [],
+  "process": [],
+  "FakeFuture": {
+    "__init__": [
+      "self",
+      "func"
+    ],
+    "result": [
+      "self"
+    ]
+  },
+  "FakeExecutor": {
+    "__init__": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self"
+    ],
+    "submit": [
+      "self",
+      "fn"
+    ]
+  },
+  "DetectionModelLoader": {
+    "__init__": [
+      "self",
+      "checkpoint"
+    ],
+    "model": [
+      "self",
+      "device",
+      "dtype",
+      "attention_implementation"
+    ],
+    "processor": [
+      "self",
+      "device",
+      "dtype"
+    ]
+  },
+  "DetectionPredictor": {
+    "model_loader_cls": [],
+    "batch_size": [],
+    "default_batch_sizes": [],
+    "__call__": [
+      "self",
+      "images",
+      "batch_size",
+      "include_maps"
+    ],
+    "prepare_image": [
+      "self",
+      "img"
+    ],
+    "batch_detection": [
+      "self",
+      "images",
+      "batch_size"
+    ]
+  },
+  "TextDetectionResult": {},
+  "SegformerImageProcessor": {
+    "model_input_names": [],
+    "__init__": [
+      "self",
+      "do_resize",
+      "size",
+      "resample",
+      "do_rescale",
+      "rescale_factor",
+      "do_normalize",
+      "image_mean",
+      "image_std",
+      "do_reduce_labels"
+    ],
+    "from_dict": [
+      "cls",
+      "image_processor_dict"
+    ],
+    "_preprocess": [
+      "self",
+      "image",
+      "do_resize",
+      "do_rescale",
+      "do_normalize",
+      "size",
+      "resample",
+      "rescale_factor",
+      "image_mean",
+      "image_std",
+      "input_data_format"
+    ],
+    "_preprocess_image": [
+      "self",
+      "image",
+      "do_resize",
+      "size",
+      "resample",
+      "do_rescale",
+      "rescale_factor",
+      "do_normalize",
+      "image_mean",
+      "image_std",
+      "data_format",
+      "input_data_format"
+    ],
+    "__call__": [
+      "self",
+      "images",
+      "segmentation_maps"
+    ],
+    "preprocess": [
+      "self",
+      "images",
+      "segmentation_maps",
+      "do_resize",
+      "size",
+      "resample",
+      "do_rescale",
+      "rescale_factor",
+      "do_normalize",
+      "image_mean",
+      "image_std",
+      "do_reduce_labels",
+      "return_tensors",
+      "data_format",
+      "input_data_format"
+    ]
+  },
+  "get_total_splits": [
+    "image_size",
+    "height"
+  ],
+  "split_image": [
+    "img",
+    "height"
+  ],
+  "get_dynamic_thresholds": [
+    "linemap",
+    "text_threshold",
+    "low_text",
+    "typical_top10_avg"
+  ],
+  "detect_boxes": [
+    "linemap",
+    "text_threshold",
+    "low_text"
+  ],
+  "get_detected_boxes": [
+    "textmap",
+    "text_threshold",
+    "low_text"
+  ],
+  "get_and_clean_boxes": [
+    "textmap",
+    "processor_size",
+    "image_size",
+    "text_threshold",
+    "low_text"
+  ],
+  "parallel_get_boxes": [
+    "preds",
+    "orig_sizes",
+    "include_maps"
+  ],
+  "val2list": [
+    "x",
+    "repeat_time"
+  ],
+  "val2tuple": [
+    "x",
+    "min_len",
+    "idx_repeat"
+  ],
+  "get_same_padding": [
+    "kernel_size"
+  ],
+  "get_padding": [
+    "kernel_size",
+    "stride",
+    "dilation"
+  ],
+  "ConvNormAct": {
+    "__init__": [
+      "self",
+      "in_channels",
+      "out_channels",
+      "kernel_size",
+      "stride",
+      "dilation",
+      "groups",
+      "bias",
+      "dropout",
+      "norm_layer",
+      "act_layer"
+    ],
+    "forward": [
+      "self",
+      "x"
+    ]
+  },
+  "DSConv": {
+    "__init__": [
+      "self",
+      "in_channels",
+      "out_channels",
+      "kernel_size",
+      "stride",
+      "use_bias",
+      "norm_layer",
+      "act_layer"
+    ],
+    "forward": [
+      "self",
+      "x"
+    ]
+  },
+  "ConvBlock": {
+    "__init__": [
+      "self",
+      "in_channels",
+      "out_channels",
+      "kernel_size",
+      "stride",
+      "mid_channels",
+      "expand_ratio",
+      "use_bias",
+      "norm_layer",
+      "act_layer"
+    ],
+    "forward": [
+      "self",
+      "x"
+    ]
+  },
+  "MBConv": {
+    "__init__": [
+      "self",
+      "in_channels",
+      "out_channels",
+      "kernel_size",
+      "stride",
+      "mid_channels",
+      "expand_ratio",
+      "use_bias",
+      "norm_layer",
+      "act_layer"
+    ],
+    "forward": [
+      "self",
+      "x"
+    ]
+  },
+  "FusedMBConv": {
+    "__init__": [
+      "self",
+      "in_channels",
+      "out_channels",
+      "kernel_size",
+      "stride",
+      "mid_channels",
+      "expand_ratio",
+      "groups",
+      "use_bias",
+      "norm_layer",
+      "act_layer"
+    ],
+    "forward": [
+      "self",
+      "x"
+    ]
+  },
+  "LiteMLA": {
+    "__init__": [
+      "self",
+      "in_channels",
+      "out_channels",
+      "heads",
+      "heads_ratio",
+      "dim",
+      "use_bias",
+      "norm_layer",
+      "act_layer",
+      "kernel_func",
+      "scales",
+      "eps"
+    ],
+    "_attn": [
+      "self",
+      "q",
+      "k",
+      "v"
+    ],
+    "forward": [
+      "self",
+      "x"
+    ]
+  },
+  "EfficientVitBlock": {
+    "__init__": [
+      "self",
+      "in_channels",
+      "heads_ratio",
+      "head_dim",
+      "expand_ratio",
+      "norm_layer",
+      "act_layer"
+    ],
+    "forward": [
+      "self",
+      "x"
+    ]
+  },
+  "ResidualBlock": {
+    "__init__": [
+      "self",
+      "main",
+      "shortcut",
+      "pre_norm"
+    ],
+    "forward": [
+      "self",
+      "x"
+    ]
+  },
+  "build_local_block": [
+    "in_channels",
+    "out_channels",
+    "stride",
+    "kernel_size",
+    "expand_ratio",
+    "norm_layer",
+    "act_layer",
+    "fewer_norm",
+    "block_type"
+  ],
+  "Stem": {
+    "__init__": [
+      "self",
+      "in_chs",
+      "out_chs",
+      "depth",
+      "stride",
+      "norm_layer",
+      "act_layer",
+      "block_type"
+    ]
+  },
+  "EfficientVitLargeStage": {
+    "__init__": [
+      "self",
+      "in_chs",
+      "out_chs",
+      "depth",
+      "stride",
+      "norm_layer",
+      "act_layer",
+      "head_dim",
+      "vit_stage",
+      "fewer_norm"
+    ],
+    "forward": [
+      "self",
+      "x"
+    ]
+  },
+  "EfficientVitLarge": {
+    "__init__": [
+      "self",
+      "config",
+      "norm_layer",
+      "act_layer"
+    ],
+    "set_grad_checkpointing": [
+      "self",
+      "enable"
+    ],
+    "forward": [
+      "self",
+      "x"
+    ]
+  },
+  "EfficientViTPreTrainedModel": {
+    "config_class": [],
+    "base_model_prefix": [],
+    "main_input_name": [],
+    "_init_weights": [
+      "self",
+      "module"
+    ]
+  },
+  "DecodeMLP": {
+    "__init__": [
+      "self",
+      "input_dim",
+      "output_dim"
+    ],
+    "forward": [
+      "self",
+      "hidden_states"
+    ]
+  },
+  "DecodeHead": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "forward": [
+      "self",
+      "encoder_hidden_states"
+    ]
+  },
+  "EfficientViTForSemanticSegmentation": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "forward": [
+      "self",
+      "pixel_values"
+    ]
+  },
+  "EfficientViTForSemanticLayoutSegmentation": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "forward": [
+      "self",
+      "pixel_values"
+    ]
+  },
+  "EfficientViTConfig": {
+    "model_type": [],
+    "__init__": [
+      "self",
+      "num_classes",
+      "num_channels",
+      "widths",
+      "head_dim",
+      "num_stages",
+      "depths",
+      "strides",
+      "hidden_sizes",
+      "patch_size",
+      "hidden_dropout_prob",
+      "attention_probs_dropout_prob",
+      "classifier_dropout_prob",
+      "layer_norm_eps",
+      "decoder_layer_hidden_size",
+      "decoder_hidden_size",
+      "semantic_loss_ignore_index",
+      "initializer_range"
+    ]
+  }
+}
