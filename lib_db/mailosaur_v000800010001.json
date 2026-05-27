@@ -1,0 +1,703 @@
+{
+  "MailosaurClient": {
+    "__init__": [
+      "self",
+      "api_key",
+      "base_url"
+    ],
+    "handle_http_error": [
+      "self",
+      "response"
+    ]
+  },
+  "VERSION": [],
+  "__author__": [],
+  "__all__": [],
+  "FilesOperations": {
+    "__init__": [
+      "self",
+      "session",
+      "base_url",
+      "handle_http_error"
+    ],
+    "get_attachment": [
+      "self",
+      "id"
+    ],
+    "get_email": [
+      "self",
+      "id"
+    ],
+    "get_preview": [
+      "self",
+      "id"
+    ]
+  },
+  "UsageOperations": {
+    "__init__": [
+      "self",
+      "session",
+      "base_url",
+      "handle_http_error"
+    ],
+    "limits": [
+      "self"
+    ],
+    "transactions": [
+      "self"
+    ]
+  },
+  "AnalysisOperations": {
+    "__init__": [
+      "self",
+      "session",
+      "base_url",
+      "handle_http_error"
+    ],
+    "spam": [
+      "self",
+      "email"
+    ],
+    "deliverability": [
+      "self",
+      "email"
+    ]
+  },
+  "PreviewsOperations": {
+    "__init__": [
+      "self",
+      "session",
+      "base_url",
+      "handle_http_error"
+    ],
+    "list_email_clients": [
+      "self"
+    ]
+  },
+  "ServersOperations": {
+    "__init__": [
+      "self",
+      "session",
+      "base_url",
+      "handle_http_error"
+    ],
+    "generate_email_address": [
+      "self",
+      "server"
+    ],
+    "list": [
+      "self"
+    ],
+    "create": [
+      "self",
+      "server_create_options"
+    ],
+    "get": [
+      "self",
+      "id"
+    ],
+    "get_password": [
+      "self",
+      "id"
+    ],
+    "update": [
+      "self",
+      "id",
+      "server"
+    ],
+    "delete": [
+      "self",
+      "id"
+    ]
+  },
+  "MessagesOperations": {
+    "__init__": [
+      "self",
+      "session",
+      "base_url",
+      "handle_http_error"
+    ],
+    "get": [
+      "self",
+      "server",
+      "criteria",
+      "timeout",
+      "received_after",
+      "dir"
+    ],
+    "get_by_id": [
+      "self",
+      "id"
+    ],
+    "delete": [
+      "self",
+      "id"
+    ],
+    "list": [
+      "self",
+      "server",
+      "page",
+      "items_per_page",
+      "received_after",
+      "dir"
+    ],
+    "delete_all": [
+      "self",
+      "server"
+    ],
+    "search": [
+      "self",
+      "server",
+      "criteria",
+      "page",
+      "items_per_page",
+      "timeout",
+      "received_after",
+      "error_on_timeout",
+      "dir"
+    ],
+    "create": [
+      "self",
+      "server",
+      "options"
+    ],
+    "forward": [
+      "self",
+      "id",
+      "options"
+    ],
+    "reply": [
+      "self",
+      "id",
+      "options"
+    ],
+    "generate_previews": [
+      "self",
+      "id",
+      "options"
+    ]
+  },
+  "DevicesOperations": {
+    "__init__": [
+      "self",
+      "session",
+      "base_url",
+      "handle_http_error"
+    ],
+    "generate_email_address": [
+      "self",
+      "server"
+    ],
+    "list": [
+      "self"
+    ],
+    "create": [
+      "self",
+      "device_create_options"
+    ],
+    "otp": [
+      "self",
+      "query"
+    ],
+    "delete": [
+      "self",
+      "id"
+    ]
+  },
+  "DeliverabilityReport": {
+    "__init__": [
+      "self",
+      "data"
+    ]
+  },
+  "Link": {
+    "__init__": [
+      "self",
+      "data"
+    ]
+  },
+  "BlockListResult": {
+    "__init__": [
+      "self",
+      "data"
+    ]
+  },
+  "DeviceCreateOptions": {
+    "__init__": [
+      "self",
+      "data"
+    ],
+    "to_json": [
+      "self"
+    ]
+  },
+  "SearchCriteria": {
+    "__init__": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ]
+  },
+  "Attachment": {
+    "__init__": [
+      "self",
+      "data"
+    ],
+    "to_json": [
+      "self"
+    ]
+  },
+  "MessageSummary": {
+    "__init__": [
+      "self",
+      "data"
+    ]
+  },
+  "DnsRecords": {
+    "__init__": [
+      "self",
+      "data"
+    ]
+  },
+  "MailosaurException": {
+    "__init__": [
+      "self",
+      "message",
+      "error_type",
+      "http_status_code",
+      "http_response_body"
+    ]
+  },
+  "PreviewListResult": {
+    "__init__": [
+      "self",
+      "data"
+    ]
+  },
+  "SpamAssassinRule": {
+    "__init__": [
+      "self",
+      "data"
+    ]
+  },
+  "OtpResult": {
+    "__init__": [
+      "self",
+      "data"
+    ]
+  },
+  "MessageForwardOptions": {
+    "__init__": [
+      "self",
+      "to",
+      "text",
+      "html",
+      "cc"
+    ],
+    "to_json": [
+      "self"
+    ]
+  },
+  "ResultEnum": {
+    "Pass": [],
+    "Warning": [],
+    "Fail": [],
+    "Timeout": []
+  },
+  "ServerCreateOptions": {
+    "__init__": [
+      "self",
+      "name"
+    ],
+    "to_json": [
+      "self"
+    ]
+  },
+  "Device": {
+    "__init__": [
+      "self",
+      "data"
+    ]
+  },
+  "Server": {
+    "__init__": [
+      "self",
+      "data"
+    ],
+    "to_json": [
+      "self"
+    ]
+  },
+  "Code": {
+    "__init__": [
+      "self",
+      "data"
+    ]
+  },
+  "SpamFilterResults": {
+    "__init__": [
+      "self",
+      "data"
+    ]
+  },
+  "MessageCreateOptions": {
+    "__init__": [
+      "self",
+      "to",
+      "send",
+      "subject",
+      "text",
+      "html",
+      "attachments",
+      "sendFrom",
+      "cc"
+    ],
+    "to_json": [
+      "self"
+    ]
+  },
+  "MessageContent": {
+    "__init__": [
+      "self",
+      "data"
+    ]
+  },
+  "SpamAssassinResult": {
+    "__init__": [
+      "self",
+      "data"
+    ]
+  },
+  "SpamAnalysisResult": {
+    "__init__": [
+      "self",
+      "data"
+    ]
+  },
+  "ServerListResult": {
+    "__init__": [
+      "self",
+      "data"
+    ]
+  },
+  "Message": {
+    "__init__": [
+      "self",
+      "data"
+    ]
+  },
+  "DeviceListResult": {
+    "__init__": [
+      "self",
+      "data"
+    ]
+  },
+  "EmailClient": {
+    "__init__": [
+      "self",
+      "data"
+    ],
+    "to_json": [
+      "self"
+    ]
+  },
+  "MessageListResult": {
+    "__init__": [
+      "self",
+      "data"
+    ]
+  },
+  "Preview": {
+    "__init__": [
+      "self",
+      "data"
+    ],
+    "to_json": [
+      "self"
+    ]
+  },
+  "UsageTransactionListResult": {
+    "__init__": [
+      "self",
+      "data"
+    ]
+  },
+  "Content": {
+    "__init__": [
+      "self",
+      "data"
+    ]
+  },
+  "Metadata": {
+    "__init__": [
+      "self",
+      "data"
+    ]
+  },
+  "Image": {
+    "__init__": [
+      "self",
+      "data"
+    ]
+  },
+  "UsageTransaction": {
+    "__init__": [
+      "self",
+      "data"
+    ]
+  },
+  "MessageReplyOptions": {
+    "__init__": [
+      "self",
+      "text",
+      "html",
+      "attachments",
+      "cc"
+    ],
+    "to_json": [
+      "self"
+    ]
+  },
+  "UsageAccountLimit": {
+    "__init__": [
+      "self",
+      "data"
+    ]
+  },
+  "UsageAccountLimits": {
+    "__init__": [
+      "self",
+      "data"
+    ]
+  },
+  "MessageHeader": {
+    "__init__": [
+      "self",
+      "data"
+    ]
+  },
+  "MessageAddress": {
+    "__init__": [
+      "self",
+      "data"
+    ]
+  },
+  "EmailClientListResult": {
+    "__init__": [
+      "self",
+      "data"
+    ]
+  },
+  "PreviewRequestOptions": {
+    "__init__": [
+      "self",
+      "email_clients"
+    ],
+    "to_json": [
+      "self"
+    ]
+  },
+  "EmailAuthenticationResult": {
+    "__init__": [
+      "self",
+      "data"
+    ]
+  },
+  "Mailer": {
+    "html": [],
+    "text": [],
+    "verified_domain": [],
+    "send_emails": [
+      "client",
+      "server",
+      "quantity"
+    ],
+    "send_email": [
+      "client",
+      "server",
+      "send_to_address"
+    ]
+  },
+  "ServersTest": {
+    "setUpClass": [
+      "self"
+    ],
+    "test_list": [
+      "self"
+    ],
+    "test_get_not_found": [
+      "self"
+    ],
+    "test_crud": [
+      "self"
+    ],
+    "test_failed_create": [
+      "self"
+    ]
+  },
+  "DevicesTest": {
+    "setUpClass": [
+      "self"
+    ],
+    "test_crud": [
+      "self"
+    ],
+    "test_otp_via_shared_secret": [
+      "self"
+    ]
+  },
+  "ErrorsTest": {
+    "setUpClass": [
+      "self"
+    ],
+    "test_unauthorized": [
+      "self"
+    ],
+    "test_not_found": [
+      "self"
+    ],
+    "test_bad_request": [
+      "self"
+    ]
+  },
+  "PreviewsTest": {
+    "setUpClass": [
+      "cls"
+    ],
+    "test_list_clients": [
+      "self"
+    ],
+    "test_generate_previews": [
+      "self"
+    ]
+  },
+  "UsageTest": {
+    "setUpClass": [
+      "self"
+    ],
+    "test_account_limits": [
+      "self"
+    ],
+    "test_transactions_list": [
+      "self"
+    ]
+  },
+  "EmailsTest": {
+    "setUpClass": [
+      "cls"
+    ],
+    "test_list": [
+      "self"
+    ],
+    "test_list_received_after": [
+      "self"
+    ],
+    "test_get": [
+      "self"
+    ],
+    "test_get_by_id": [
+      "self"
+    ],
+    "test_get_not_found": [
+      "self"
+    ],
+    "test_search_timeout_errors_suppressed": [
+      "self"
+    ],
+    "test_search_no_criteria_error": [
+      "self"
+    ],
+    "test_search_by_sent_from": [
+      "self"
+    ],
+    "test_search_by_sent_to": [
+      "self"
+    ],
+    "test_search_by_body": [
+      "self"
+    ],
+    "test_search_by_subject": [
+      "self"
+    ],
+    "test_search_with_match_all": [
+      "self"
+    ],
+    "test_search_with_match_any": [
+      "self"
+    ],
+    "test_search_with_special_characters": [
+      "self"
+    ],
+    "test_spam_analysis": [
+      "self"
+    ],
+    "test_deliverability_report": [
+      "self"
+    ],
+    "test_delete": [
+      "self"
+    ],
+    "test_create_and_send_with_text": [
+      "self"
+    ],
+    "test_create_and_send_with_html": [
+      "self"
+    ],
+    "test_create_and_send_with_cc": [
+      "self"
+    ],
+    "test_create_and_send_with_attachment": [
+      "self"
+    ],
+    "test_forward_with_text": [
+      "self"
+    ],
+    "test_forward_with_html": [
+      "self"
+    ],
+    "test_forward_with_cc": [
+      "self"
+    ],
+    "test_reply_with_text": [
+      "self"
+    ],
+    "test_reply_with_html": [
+      "self"
+    ],
+    "test_reply_with_cc": [
+      "self"
+    ],
+    "test_reply_with_attachment": [
+      "self"
+    ],
+    "validate_email": [
+      "self",
+      "email"
+    ],
+    "validate_email_summary": [
+      "self",
+      "email"
+    ],
+    "validate_html": [
+      "self",
+      "email"
+    ],
+    "validate_text": [
+      "self",
+      "email"
+    ],
+    "validate_headers": [
+      "self",
+      "email"
+    ],
+    "validate_metadata": [
+      "self",
+      "email"
+    ],
+    "validate_attachments": [
+      "self",
+      "email"
+    ]
+  }
+}
