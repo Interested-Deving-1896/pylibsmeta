@@ -1,0 +1,1930 @@
+{
+  "__version__": [],
+  "api": [],
+  "ApiException": [],
+  "main": [],
+  "__parse_body": [
+    "body"
+  ],
+  "_get_shared_topics_parser": [],
+  "_get_shared_competition_topics_parser": [],
+  "parse_competitions": [
+    "subparsers"
+  ],
+  "parse_datasets": [
+    "subparsers"
+  ],
+  "parse_kernels": [
+    "subparsers"
+  ],
+  "parse_models": [
+    "subparsers"
+  ],
+  "parse_model_instances": [
+    "subparsers"
+  ],
+  "parse_model_instance_versions": [
+    "subparsers"
+  ],
+  "parse_files": [
+    "subparsers"
+  ],
+  "parse_benchmarks": [
+    "subparsers"
+  ],
+  "parse_benchmarks_auth": [
+    "subparsers"
+  ],
+  "parse_benchmarks_init": [
+    "subparsers"
+  ],
+  "parse_benchmark_tasks": [
+    "subparsers"
+  ],
+  "parse_config": [
+    "subparsers"
+  ],
+  "parse_auth": [
+    "subparsers"
+  ],
+  "parse_forums": [
+    "subparsers"
+  ],
+  "Help": {
+    "kaggle_choices": [],
+    "competitions_choices": [],
+    "datasets_choices": [],
+    "kernels_choices": [],
+    "models_choices": [],
+    "model_instances_choices": [],
+    "model_instance_versions_choices": [],
+    "files_choices": [],
+    "benchmarks_choices": [],
+    "benchmarks_tasks_choices": [],
+    "forums_choices": [],
+    "forums_topics_choices": [],
+    "entity_topics_choices": [],
+    "config_choices": [],
+    "auth_choices": [],
+    "kaggle": [],
+    "group_competitions": [],
+    "group_datasets": [],
+    "group_kernels": [],
+    "group_models": [],
+    "group_model_instances": [],
+    "group_model_instance_versions": [],
+    "group_forums": [],
+    "group_files": [],
+    "group_benchmarks": [],
+    "group_benchmarks_tasks": [],
+    "group_config": [],
+    "group_auth": [],
+    "command_entity_topics_show": [],
+    "command_competitions_list": [],
+    "command_competitions_files": [],
+    "command_competitions_download": [],
+    "command_competitions_submit": [],
+    "command_competitions_submissions": [],
+    "command_competitions_leaderboard": [],
+    "command_competitions_episodes": [],
+    "command_competitions_episode_replay": [],
+    "command_competitions_episode_logs": [],
+    "command_competitions_pages": [],
+    "command_competitions_topics": [],
+    "command_competitions_topic_messages": [],
+    "command_forums_list": [],
+    "command_forums_topics": [],
+    "command_forums_topics_show": [],
+    "command_datasets_list": [],
+    "command_datasets_topics": [],
+    "command_datasets_files": [],
+    "command_datasets_download": [],
+    "command_datasets_new": [],
+    "command_datasets_new_version": [],
+    "command_datasets_init": [],
+    "command_datasets_metadata": [],
+    "command_datasets_status": [],
+    "command_datasets_delete": [],
+    "command_kernels_list": [],
+    "command_kernels_files": [],
+    "command_kernels_init": [],
+    "command_kernels_push": [],
+    "command_kernels_pull": [],
+    "command_kernels_output": [],
+    "command_kernels_status": [],
+    "command_kernels_logs": [],
+    "command_kernels_delete": [],
+    "command_models_files": [],
+    "command_models_topics": [],
+    "command_models_get": [],
+    "command_models_list": [],
+    "command_models_init": [],
+    "command_models_new": [],
+    "command_models_delete": [],
+    "command_models_update": [],
+    "command_benchmarks_auth": [],
+    "command_benchmarks_topics": [],
+    "command_benchmarks_init": [],
+    "command_benchmarks_tasks_push": [],
+    "command_benchmarks_tasks_run": [],
+    "command_files_upload": [],
+    "command_benchmarks_tasks_list": [],
+    "command_benchmarks_tasks_status": [],
+    "command_benchmarks_tasks_download": [],
+    "command_benchmarks_tasks_log": [],
+    "command_benchmarks_tasks_models": [],
+    "command_benchmarks_tasks_delete": [],
+    "command_benchmarks_tasks_publish": [],
+    "command_config_path": [],
+    "command_config_proxy": [],
+    "command_config_competition": [],
+    "command_config_view": [],
+    "command_config_set": [],
+    "command_config_unset": [],
+    "command_auth_login": [],
+    "command_auth_print_access_token": [],
+    "command_auth_revoke_token": [],
+    "param_downfolder": [],
+    "param_wp": [],
+    "param_proxy": [],
+    "param_quiet": [],
+    "param_sandbox": [],
+    "param_public": [],
+    "param_keep_tabular": [],
+    "param_dir_mode": [],
+    "param_delete_old_version": [],
+    "param_force": [],
+    "param_upfile": [],
+    "param_code_kernel": [],
+    "param_code_version": [],
+    "param_csv": [],
+    "param_page": [],
+    "param_page_size": [],
+    "param_page_token": [],
+    "param_search": [],
+    "param_mine": [],
+    "param_forum": [],
+    "param_topic_ref": [],
+    "param_unzip": [],
+    "param_untar": [],
+    "param_yes": [],
+    "param_competition": [],
+    "param_competition_nonempty": [],
+    "param_competition_leaderboard_view": [],
+    "param_competition_leaderboard_download": [],
+    "param_competition_file": [],
+    "param_competition_message": [],
+    "param_competition_group": [],
+    "param_competition_category": [],
+    "param_competition_sort_by": [],
+    "param_dataset": [],
+    "param_dataset_file": [],
+    "param_dataset_version_notes": [],
+    "param_dataset_status_format": [],
+    "param_dataset_upfile": [],
+    "param_dataset_sort_by": [],
+    "param_dataset_size": [],
+    "param_dataset_file_type": [],
+    "param_dataset_license": [],
+    "param_dataset_tags": [],
+    "param_dataset_user": [],
+    "param_dataset_metadata_dir": [],
+    "param_dataset_metadata_update": [],
+    "param_dataset_maxsize": [],
+    "param_dataset_minsize": [],
+    "param_kernel": [],
+    "param_kernel_init": [],
+    "param_kernel_upfile": [],
+    "param_kernel_parent": [],
+    "param_kernel_competition": [],
+    "param_kernel_dataset": [],
+    "param_kernel_timeout": [],
+    "param_kernel_user": [],
+    "param_kernel_language": [],
+    "param_kernel_type": [],
+    "param_kernel_output_type": [],
+    "param_kernel_sort_by": [],
+    "param_kernel_pull_metadata": [],
+    "param_kernel_output_file_pattern": [],
+    "param_kernel_acc": [],
+    "param_kernel_logs_follow": [],
+    "param_kernel_logs_interval": [],
+    "param_model": [],
+    "param_model_sort_by": [],
+    "param_model_owner": [],
+    "param_model_downfile": [],
+    "param_model_upfile": [],
+    "param_model_instance": [],
+    "command_model_instances_get": [],
+    "command_model_instances_init": [],
+    "command_model_instances_files": [],
+    "command_model_instances_list": [],
+    "command_model_instances_new": [],
+    "param_model_instance_downfile": [],
+    "param_model_instance_upfile": [],
+    "command_model_instances_delete": [],
+    "command_model_instances_update": [],
+    "param_model_instance_version": [],
+    "command_model_instance_versions_new": [],
+    "param_model_instance_version_upfile": [],
+    "command_model_instance_versions_delete": [],
+    "command_model_instance_versions_download": [],
+    "command_model_instance_versions_files": [],
+    "command_model_instance_versions_list": [],
+    "param_model_instance_version_notes": [],
+    "param_benchmarks_env_file": [],
+    "param_benchmarks_example_file": [],
+    "param_benchmarks_task": [],
+    "param_benchmarks_file": [],
+    "param_benchmarks_name_regex": [],
+    "param_benchmarks_model": [],
+    "param_benchmarks_wait": [],
+    "param_benchmarks_output": [],
+    "param_benchmarks_poll_interval": [],
+    "param_benchmarks_verbose": [],
+    "param_benchmarks_status": [],
+    "param_benchmarks_list_page_size": [],
+    "param_benchmarks_list_all": [],
+    "param_benchmarks_force": [],
+    "param_benchmarks_include_source": [],
+    "param_benchmarks_kaggle_dataset": [],
+    "param_benchmarks_no_publish_backing_notebook": [],
+    "param_files_upload_inbox_path": [],
+    "param_files_upload_local_paths": [],
+    "param_files_upload_no_compress": [],
+    "param_files_upload_no_resume": [],
+    "param_config_name": [],
+    "param_config_value": []
+  },
+  "KaggleApi": {
+    "__init__": [
+      "self",
+      "api_client"
+    ],
+    "competition_download_leaderboard": [
+      "self",
+      "id"
+    ],
+    "competition_view_leaderboard": [
+      "self",
+      "id"
+    ],
+    "competitions_data_download_file": [
+      "self",
+      "id",
+      "file_name"
+    ],
+    "competitions_data_download_files": [
+      "self",
+      "id"
+    ],
+    "competitions_data_list_files": [
+      "self",
+      "id"
+    ],
+    "competitions_list": [
+      "self",
+      "group",
+      "category",
+      "sort_by",
+      "page",
+      "search"
+    ],
+    "competitions_submissions_list": [
+      "self",
+      "id",
+      "page"
+    ],
+    "competitions_submissions_submit": [
+      "self",
+      "blob_file_tokens",
+      "submission_description",
+      "id"
+    ],
+    "competitions_submissions_upload": [
+      "self",
+      "file",
+      "guid",
+      "content_length",
+      "last_modified_date_utc"
+    ],
+    "competitions_submissions_url": [
+      "self",
+      "id",
+      "content_length",
+      "last_modified_date_utc"
+    ],
+    "create_inbox_file": [
+      "self",
+      "create_inbox_file_request"
+    ],
+    "datasets_create_new": [
+      "self",
+      "request"
+    ],
+    "datasets_create_version_by_id": [
+      "self",
+      "id",
+      "dataset_new_version_request"
+    ],
+    "datasets_download": [
+      "self",
+      "owner_slug",
+      "dataset_slug",
+      "dataset_version_number"
+    ],
+    "datasets_download_file": [
+      "self",
+      "owner_slug",
+      "dataset_slug",
+      "file_name",
+      "dataset_version_number"
+    ],
+    "datasets_list": [
+      "self",
+      "sort_by",
+      "size",
+      "file_type",
+      "license_name",
+      "tag_ids",
+      "search",
+      "user",
+      "mine",
+      "page",
+      "max_size",
+      "min_size"
+    ],
+    "datasets_status": [
+      "self",
+      "owner_slug",
+      "dataset_slug"
+    ],
+    "delete_model": [
+      "self",
+      "owner_slug",
+      "model_slug"
+    ],
+    "delete_model_instance": [
+      "self",
+      "owner_slug",
+      "model_slug",
+      "framework",
+      "instance_slug"
+    ],
+    "delete_model_instance_version": [
+      "self",
+      "owner_slug",
+      "model_slug",
+      "framework",
+      "instance_slug",
+      "version_number"
+    ],
+    "get_model": [
+      "self",
+      "owner_slug",
+      "model_slug"
+    ],
+    "get_model_instance": [
+      "self",
+      "owner_slug",
+      "model_slug",
+      "framework",
+      "instance_slug"
+    ],
+    "kernel_output": [
+      "self",
+      "user_name",
+      "kernel_slug"
+    ],
+    "kernel_pull": [
+      "self",
+      "user_name",
+      "kernel_slug"
+    ],
+    "kernel_push": [
+      "self",
+      "kernel_push_request"
+    ],
+    "kernel_status": [
+      "self",
+      "user_name",
+      "kernel_slug"
+    ],
+    "kernels_list": [
+      "self",
+      "page",
+      "page_size",
+      "dataset",
+      "competition",
+      "parent_kernel",
+      "search",
+      "group",
+      "user",
+      "language",
+      "kernel_type",
+      "output_type",
+      "sort_by"
+    ],
+    "metadata_get": [
+      "self",
+      "owner_slug",
+      "dataset_slug"
+    ],
+    "metadata_post": [
+      "self",
+      "owner_slug",
+      "dataset_slug",
+      "settings",
+      "request"
+    ],
+    "model_instance_versions_download": [
+      "self",
+      "owner_slug",
+      "model_slug",
+      "framework",
+      "instance_slug",
+      "version_number"
+    ],
+    "models_create_instance": [
+      "self",
+      "owner_slug",
+      "model_slug",
+      "model_new_instance_request"
+    ],
+    "models_create_instance_version": [
+      "self",
+      "owner_slug",
+      "model_slug",
+      "framework",
+      "instance_slug",
+      "model_instance_new_version_request"
+    ],
+    "models_create_new": [
+      "self",
+      "model_new_request"
+    ],
+    "models_list": [
+      "self",
+      "sort_by",
+      "search",
+      "owner",
+      "page_size",
+      "page_token"
+    ],
+    "update_model": [
+      "self",
+      "owner_slug",
+      "model_slug",
+      "model_update_request"
+    ],
+    "update_model_instance": [
+      "self",
+      "owner_slug",
+      "model_slug",
+      "framework",
+      "instance_slug",
+      "model_instance_update_request"
+    ],
+    "upload_file": [
+      "self",
+      "start_blob_upload_request"
+    ]
+  },
+  "T": [],
+  "BENCHMARKS_SYNTAX_REF": [],
+  "BENCHMARKS_EXAMPLE_TASK": [],
+  "AuthMethod": {
+    "LEGACY_API_KEY": [],
+    "ACCESS_TOKEN": [],
+    "OAUTH": [],
+    "__str__": [
+      "self"
+    ]
+  },
+  "DirectoryArchive": {
+    "__init__": [
+      "self",
+      "fullpath",
+      "fmt"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self"
+    ]
+  },
+  "ResumableUploadContext": {
+    "__init__": [
+      "self",
+      "no_resume"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_value",
+      "exc_traceback"
+    ],
+    "get_upload_info_file_path": [
+      "self",
+      "path"
+    ],
+    "new_resumable_file_upload": [
+      "self",
+      "path",
+      "start_blob_upload_request"
+    ],
+    "_create_temp_dir": [
+      "self"
+    ]
+  },
+  "ResumableFileUpload": {
+    "RESUMABLE_UPLOAD_EXPIRY_SECONDS": [],
+    "__init__": [
+      "self",
+      "path",
+      "start_blob_upload_request",
+      "context"
+    ],
+    "get_token": [
+      "self"
+    ],
+    "load": [
+      "self"
+    ],
+    "_load_previous_if_any": [
+      "self"
+    ],
+    "_is_previous_valid": [
+      "self",
+      "previous"
+    ],
+    "upload_initiated": [
+      "self",
+      "start_blob_upload_response"
+    ],
+    "upload_completed": [
+      "self"
+    ],
+    "_save": [
+      "self"
+    ],
+    "cleanup": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "other",
+      "context"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "FileList": {
+    "__init__": [
+      "self",
+      "init_dict"
+    ],
+    "from_response": [
+      "response"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "print_auth_help": [],
+  "TqdmBufferedReader": {
+    "__init__": [
+      "self",
+      "raw",
+      "progress_bar"
+    ],
+    "read": [
+      "self"
+    ],
+    "increment": [
+      "self",
+      "length"
+    ]
+  },
+  "attributes": [
+    "obj"
+  ],
+  "print_attributes": [
+    "obj"
+  ],
+  "_parse_format": [
+    "format_value"
+  ],
+  "parser": [
+    "monkeypatch",
+    "api"
+  ],
+  "_dispatch": [
+    "parser",
+    "argv"
+  ],
+  "TestTopicsListParsing": {
+    "test_competitions_topics_defaults_to_list": [
+      "self",
+      "parser"
+    ],
+    "test_datasets_topics_defaults_to_list": [
+      "self",
+      "parser"
+    ],
+    "test_models_topics_defaults_to_list": [
+      "self",
+      "parser"
+    ],
+    "test_benchmarks_topics_defaults_to_list": [
+      "self",
+      "parser"
+    ],
+    "test_forums_topics_defaults_to_list": [
+      "self",
+      "parser"
+    ],
+    "test_topics_list_with_options": [
+      "self",
+      "parser",
+      "entity",
+      "extra_args"
+    ],
+    "test_competitions_topics_list_does_not_accept_search": [
+      "self",
+      "parser"
+    ]
+  },
+  "TestTopicsShowParsing": {
+    "test_topics_show_dispatches_to_forums_topic_show_cli": [
+      "self",
+      "parser",
+      "entity"
+    ],
+    "test_topics_show_two_arg_form": [
+      "self",
+      "parser",
+      "entity"
+    ],
+    "test_topics_show_with_options": [
+      "self",
+      "parser",
+      "entity"
+    ]
+  },
+  "TestTopicsShowNoCrash": {
+    "test_topics_show_callable_with_leaked_kwargs": [
+      "self",
+      "parser",
+      "api",
+      "entity"
+    ]
+  },
+  "TestEntityListTopicsCli": {
+    "test_dataset_list_topics_cli_requires_ref": [
+      "self",
+      "api"
+    ],
+    "test_model_list_topics_cli_requires_ref": [
+      "self",
+      "api"
+    ],
+    "test_benchmark_list_topics_cli_requires_ref": [
+      "self",
+      "api"
+    ],
+    "test_list_topics_prints_no_topics_found": [
+      "self",
+      "api",
+      "capsys",
+      "method_name"
+    ],
+    "test_list_topics_shows_table": [
+      "self",
+      "api",
+      "capsys",
+      "method_name"
+    ],
+    "test_list_topics_passes_all_params": [
+      "self",
+      "api",
+      "method_name"
+    ]
+  },
+  "TestForumsTopicShowCliKwargs": {
+    "test_accepts_extra_kwargs_without_error": [
+      "self",
+      "api"
+    ],
+    "test_topic_id_parsing_bare_id": [
+      "self",
+      "api"
+    ],
+    "test_topic_id_parsing_slash_form": [
+      "self",
+      "api"
+    ],
+    "test_topic_id_multi_slash_parses_correctly": [
+      "self",
+      "api"
+    ],
+    "test_topic_id_parsing_two_arg_form": [
+      "self",
+      "api"
+    ],
+    "test_no_topic_raises_value_error": [
+      "self",
+      "api"
+    ],
+    "test_invalid_slash_ref_raises_value_error": [
+      "self",
+      "api"
+    ],
+    "test_invalid_bare_ref_raises_value_error": [
+      "self",
+      "api"
+    ]
+  },
+  "TestTopicsListSubcommand": {
+    "test_topics_list_subcommand_dispatches_correctly": [
+      "self",
+      "parser",
+      "entity",
+      "expected_func"
+    ],
+    "test_topics_list_subcommand_with_ref": [
+      "self",
+      "parser",
+      "entity",
+      "ref_key"
+    ],
+    "test_competitions_topics_list_with_c_option": [
+      "self",
+      "parser"
+    ]
+  },
+  "QUEUED": [],
+  "RUNNING": [],
+  "COMPLETED": [],
+  "ERRORED": [],
+  "RUN_QUEUED": [],
+  "RUN_RUNNING": [],
+  "RUN_COMPLETED": [],
+  "RUN_ERRORED": [],
+  "DEFAULT_TASK_CONTENT": [],
+  "mock_token": [
+    "api"
+  ],
+  "_write_task_file": [
+    "tmp_path",
+    "content",
+    "name"
+  ],
+  "_mock_jupytext": [],
+  "_push": [
+    "api",
+    "task",
+    "filepath"
+  ],
+  "_make_task": [
+    "slug",
+    "state",
+    "create_time",
+    "url",
+    "version_number"
+  ],
+  "_make_run_result": [
+    "scheduled",
+    "skipped_reason"
+  ],
+  "_make_run": [
+    "model",
+    "state",
+    "run_id",
+    "start_time",
+    "end_time",
+    "error_message"
+  ],
+  "_setup_create_response": [
+    "api",
+    "task_slug"
+  ],
+  "_setup_completed_task": [
+    "api",
+    "slug"
+  ],
+  "_setup_batch_schedule": [
+    "api",
+    "results"
+  ],
+  "_setup_available_models": [
+    "api",
+    "slugs"
+  ],
+  "_setup_paginated_response": [
+    "mock",
+    "attr_name",
+    "items",
+    "paginated_responses"
+  ],
+  "_setup_list_response": [
+    "api",
+    "tasks"
+  ],
+  "_setup_runs_response": [
+    "api",
+    "runs"
+  ],
+  "TestPush": {
+    "test_push_rejects_invalid_input": [
+      "self",
+      "api",
+      "tmp_path",
+      "task",
+      "filename",
+      "content",
+      "expected_error"
+    ],
+    "test_push_creates_task": [
+      "self",
+      "api",
+      "tmp_path",
+      "capsys",
+      "content",
+      "task_name",
+      "expected_slug"
+    ],
+    "test_push_creates_new_task_without_prompting": [
+      "self",
+      "api",
+      "tmp_path",
+      "capsys",
+      "status_code"
+    ],
+    "test_push_prefixes_relative_url": [
+      "self",
+      "api",
+      "tmp_path",
+      "capsys"
+    ],
+    "test_push_rejects_pending_task_without_wait": [
+      "self",
+      "api",
+      "tmp_path",
+      "state"
+    ],
+    "test_push_wait_monitors_pending_then_pushes": [
+      "self",
+      "api",
+      "capsys",
+      "tmp_path",
+      "state"
+    ],
+    "test_push_propagates_server_error": [
+      "self",
+      "api",
+      "tmp_path"
+    ],
+    "test_push_handles_api_error": [
+      "self",
+      "api",
+      "tmp_path"
+    ],
+    "test_push_wait_polls_until_completion": [
+      "self",
+      "api",
+      "capsys",
+      "tmp_path"
+    ],
+    "test_push_adaptive_polling": [
+      "self",
+      "api",
+      "tmp_path"
+    ],
+    "test_push_large_poll_interval_adaptive_growth": [
+      "self",
+      "api",
+      "tmp_path"
+    ],
+    "test_push_verbose_prints_sleep_info": [
+      "self",
+      "api",
+      "capsys",
+      "tmp_path"
+    ],
+    "test_push_adaptive_polling_caps_at_poll_interval": [
+      "self",
+      "api",
+      "tmp_path"
+    ],
+    "test_push_wait_times_out": [
+      "self",
+      "api",
+      "capsys",
+      "tmp_path"
+    ],
+    "test_push_rejects_non_positive_poll_interval": [
+      "self",
+      "api",
+      "tmp_path",
+      "interval"
+    ],
+    "test_push_with_kaggle_datasets": [
+      "self",
+      "api",
+      "tmp_path",
+      "capsys"
+    ],
+    "test_push_with_invalid_kaggle_dataset_warns": [
+      "self",
+      "api",
+      "tmp_path",
+      "capsys"
+    ],
+    "test_push_without_kaggle_datasets_sends_no_options": [
+      "self",
+      "api",
+      "tmp_path",
+      "capsys"
+    ],
+    "test_push_warns_when_removing_previously_attached_datasets": [
+      "self",
+      "api",
+      "tmp_path",
+      "capsys"
+    ],
+    "test_push_no_warning_when_re_push_keeps_datasets": [
+      "self",
+      "api",
+      "tmp_path",
+      "capsys"
+    ]
+  },
+  "TestRun": {
+    "test_run_rejects_non_completed_task": [
+      "self",
+      "api"
+    ],
+    "test_run_rejects_non_positive_poll_interval": [
+      "self",
+      "api",
+      "interval"
+    ],
+    "test_run_errored_task_includes_task_info": [
+      "self",
+      "api"
+    ],
+    "test_run_task_not_found": [
+      "self",
+      "api",
+      "status_code"
+    ],
+    "test_run_schedules_models": [
+      "self",
+      "api",
+      "capsys",
+      "models"
+    ],
+    "test_run_reports_skipped_with_reason": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_run_no_status_hint_when_waiting": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_run_prompts_model_selection": [
+      "self",
+      "api"
+    ],
+    "test_run_selects_multiple_models_by_number": [
+      "self",
+      "api"
+    ],
+    "test_run_rejects_empty_model_list": [
+      "self",
+      "api"
+    ],
+    "test_run_rejects_invalid_model_selection": [
+      "self",
+      "api"
+    ],
+    "test_run_eof_without_models_raises": [
+      "self",
+      "api"
+    ],
+    "test_run_model_selection_table_header": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_run_model_selection_pagination": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_run_accepts_piped_model_selection": [
+      "self",
+      "api"
+    ],
+    "test_run_wait_polls_until_completion": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_run_adaptive_polling": [
+      "self",
+      "api"
+    ],
+    "test_run_large_poll_interval_adaptive_growth": [
+      "self",
+      "api"
+    ],
+    "test_run_verbose_prints_sleep_info": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_run_adaptive_polling_caps_at_poll_interval": [
+      "self",
+      "api"
+    ],
+    "test_run_wait_times_out": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_run_wait_shows_errored_runs": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_run_invalid_model_gives_friendly_error": [
+      "self",
+      "api"
+    ]
+  },
+  "TestList": {
+    "test_list_all": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_list_retries_on_429_and_succeeds": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_list_with_name_regex_filter": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_list_with_status_filter": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_list_pagination": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_list_empty": [
+      "self",
+      "api",
+      "capsys",
+      "tasks"
+    ],
+    "test_list_table_format": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_list_pagination_prompts_for_navigation": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_list_page_size_overrides_default": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_list_all_skips_interactive_pager": [
+      "self",
+      "api",
+      "capsys"
+    ]
+  },
+  "TestStatus": {
+    "test_status_header": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_status_task_not_found": [
+      "self",
+      "api",
+      "status_code"
+    ],
+    "test_status_no_runs_message": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_status_with_model_filter": [
+      "self",
+      "api",
+      "capsys",
+      "model_input",
+      "expected"
+    ],
+    "test_status_run_table": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_status_errored_run_shows_error_message": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_status_errored_run_truncates_traceback": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_status_shows_log_hint": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_status_no_log_hint_without_runs": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_status_pagination": [
+      "self",
+      "api",
+      "capsys"
+    ]
+  },
+  "TestDownload": {
+    "_mock_download": [
+      "self",
+      "api"
+    ],
+    "test_download_task_not_found": [
+      "self",
+      "api",
+      "status_code"
+    ],
+    "test_download_to_specific_output": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_download_default_output_path": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_download_with_model_filter": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_download_skips_non_downloadable_runs": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_download_no_runs_shows_message": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_download_all_pending_shows_message": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_download_skips_existing_output": [
+      "self",
+      "api",
+      "capsys",
+      "tmp_path"
+    ],
+    "test_download_summary_counts": [
+      "self",
+      "api",
+      "capsys",
+      "tmp_path"
+    ],
+    "test_download_force_overwrites_existing_output": [
+      "self",
+      "api",
+      "capsys",
+      "tmp_path"
+    ],
+    "test_download_includes_errored_runs": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_download_pagination": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_download_extracts_zip_and_cleans_up": [
+      "self",
+      "api",
+      "capsys",
+      "tmp_path"
+    ],
+    "test_download_model_slug_at_sign_fallback": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_download_bad_zip_keeps_file_and_continues": [
+      "self",
+      "api",
+      "capsys",
+      "tmp_path"
+    ],
+    "test_download_version_zero_uses_zero": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_download_include_source_flag": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_download_include_source_default_false": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_download_bad_zip_with_force_replaces_output": [
+      "self",
+      "api",
+      "capsys",
+      "tmp_path"
+    ],
+    "test_download_all_bad_zips_shows_zero_downloaded": [
+      "self",
+      "api",
+      "capsys",
+      "tmp_path"
+    ]
+  },
+  "TestLog": {
+    "_mock_log_response": [
+      "self",
+      "api",
+      "content",
+      "content_type"
+    ],
+    "test_log_task_not_found": [
+      "self",
+      "api",
+      "status_code"
+    ],
+    "test_log_no_runs": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_log_no_runs_with_model_filter": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_log_single_run_with_header": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_log_multiple_runs_with_headers": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_log_with_model_filter": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_log_sse_stream": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_log_json_response": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_log_queued_run_server_error": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_log_json_list_with_data_key": [
+      "self",
+      "api",
+      "capsys"
+    ]
+  },
+  "TestDownloadFile": {
+    "_make_response": [
+      "self",
+      "content",
+      "headers",
+      "url"
+    ],
+    "test_download_file_with_content_length": [
+      "self",
+      "api",
+      "tmp_path"
+    ],
+    "test_download_file_missing_content_length": [
+      "self",
+      "api",
+      "tmp_path"
+    ],
+    "test_download_file_missing_content_length_skips_size_check": [
+      "self",
+      "api",
+      "tmp_path"
+    ]
+  },
+  "TestModelSlugNormalization": {
+    "test_normalize_model_slug": [
+      "self",
+      "input_slug",
+      "expected"
+    ],
+    "test_normalize_model_list_none": [
+      "self"
+    ],
+    "test_normalize_model_list_single_string": [
+      "self"
+    ],
+    "test_normalize_model_list_list_of_strings": [
+      "self"
+    ],
+    "test_run_normalizes_prefixed_model_for_api": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_run_normalizes_at_sign_model_for_api": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_status_normalizes_model_filter": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_download_normalizes_model_filter": [
+      "self",
+      "api",
+      "capsys"
+    ]
+  },
+  "TestModels": {
+    "test_models_lists_available": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_models_empty": [
+      "self",
+      "api",
+      "capsys"
+    ]
+  },
+  "TestDelete": {
+    "test_delete_prints_stub_message": [
+      "self",
+      "api",
+      "capsys",
+      "no_confirm"
+    ]
+  },
+  "TestCliArgParsing": {
+    "setup_method": [
+      "self"
+    ],
+    "_parse": [
+      "self",
+      "arg_string"
+    ],
+    "test_parse_success": [
+      "self",
+      "cmd",
+      "expected"
+    ],
+    "test_parse_error": [
+      "self",
+      "cmd"
+    ],
+    "test_parse_download_force": [
+      "self",
+      "cmd",
+      "expected"
+    ]
+  },
+  "_make_token_response": [
+    "base_uri",
+    "token",
+    "expiry_time"
+  ],
+  "TestBenchmarksAuth": {
+    "test_writes_env_file_with_yes_flag": [
+      "self",
+      "api",
+      "mock_token",
+      "capsys",
+      "tmp_path"
+    ],
+    "test_aborted_on_no_confirm": [
+      "self",
+      "api",
+      "mock_token",
+      "capsys",
+      "tmp_path"
+    ],
+    "test_confirmed_on_yes": [
+      "self",
+      "api",
+      "mock_token",
+      "capsys",
+      "tmp_path"
+    ],
+    "test_appends_to_existing_file": [
+      "self",
+      "api",
+      "mock_token",
+      "capsys",
+      "tmp_path"
+    ],
+    "test_custom_env_file": [
+      "self",
+      "api",
+      "mock_token",
+      "capsys",
+      "tmp_path"
+    ]
+  },
+  "TestBenchmarksInit": {
+    "test_writes_all_vars": [
+      "self",
+      "api",
+      "mock_token",
+      "capsys",
+      "tmp_path"
+    ],
+    "test_writes_example_file": [
+      "self",
+      "api",
+      "mock_token",
+      "capsys",
+      "tmp_path"
+    ],
+    "test_writes_reference_file": [
+      "self",
+      "api",
+      "mock_token",
+      "capsys",
+      "tmp_path"
+    ],
+    "test_skips_reference_file_if_exists": [
+      "self",
+      "api",
+      "mock_token",
+      "capsys",
+      "tmp_path"
+    ],
+    "test_skips_example_file_if_exists": [
+      "self",
+      "api",
+      "mock_token",
+      "capsys",
+      "tmp_path"
+    ],
+    "test_custom_example_file": [
+      "self",
+      "api",
+      "mock_token",
+      "capsys",
+      "tmp_path"
+    ],
+    "test_aborted_on_no_confirm": [
+      "self",
+      "api",
+      "mock_token",
+      "capsys",
+      "tmp_path"
+    ],
+    "test_appends_to_existing_file": [
+      "self",
+      "api",
+      "mock_token",
+      "capsys",
+      "tmp_path"
+    ]
+  },
+  "TestFormatExpiry": {
+    "_NOW": [],
+    "_freeze_now": [
+      "self"
+    ],
+    "test_relative_buckets": [
+      "self",
+      "expiry_iso",
+      "expected"
+    ],
+    "test_unparseable_falls_back_to_raw": [
+      "self"
+    ]
+  },
+  "TestGetTaskNamesFromFile": {
+    "test_task_name_detection": [
+      "self",
+      "source",
+      "expected"
+    ]
+  },
+  "TestStripIpythonMagics": {
+    "test_strips_line_magic": [
+      "self"
+    ],
+    "test_strips_shell_escape": [
+      "self"
+    ],
+    "test_strips_cell_magic_with_body": [
+      "self"
+    ],
+    "test_preserves_jupytext_cell_markers": [
+      "self"
+    ],
+    "test_preserves_line_count": [
+      "self"
+    ],
+    "test_mixed_magics_and_code": [
+      "self"
+    ],
+    "test_empty_source": [
+      "self"
+    ],
+    "test_no_magics": [
+      "self"
+    ]
+  },
+  "TestTruncate": {
+    "test_truncate": [
+      "self",
+      "value",
+      "max_len",
+      "expected"
+    ]
+  },
+  "TestFormatModalities": {
+    "_make_version": [
+      "self",
+      "inputs",
+      "outputs"
+    ],
+    "test_text_to_text": [
+      "self"
+    ],
+    "test_image_text_to_text_sorted_alphabetically": [
+      "self"
+    ],
+    "test_any_to_any_when_both_have_three_or_more_matching": [
+      "self"
+    ],
+    "test_unspecified_modality_skipped": [
+      "self"
+    ],
+    "test_missing_attributes_returns_empty": [
+      "self"
+    ],
+    "test_non_iterable_modalities_tolerated": [
+      "self"
+    ]
+  },
+  "TestPublish": {
+    "_setup_publish": [
+      "self",
+      "api",
+      "slug",
+      "is_public",
+      "is_notebook_published"
+    ],
+    "test_publish_success": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_publish_already_public": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_publish_already_public_notebook_not_published": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_publish_already_public_notebook_already_published": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_publish_with_backing_notebook": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_publish_without_backing_notebook": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_publish_with_backing_notebook_no_notebook": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_publish_task_not_found": [
+      "self",
+      "api",
+      "status_code"
+    ],
+    "test_publish_normalizes_task_name": [
+      "self",
+      "api",
+      "capsys"
+    ],
+    "test_publish_server_error_propagates": [
+      "self",
+      "api"
+    ]
+  },
+  "TestAuthenticate": {
+    "setUp": [
+      "self"
+    ],
+    "tearDown": [
+      "self"
+    ],
+    "test_environment_variables": [
+      "self"
+    ],
+    "test_config_actions": [
+      "self"
+    ],
+    "test_oauth_fallback_when_legacy_config_has_no_credentials": [
+      "self",
+      "mock_oauth",
+      "mock_read_config"
+    ]
+  },
+  "UploadFile": {
+    "column_types": [],
+    "attribute_map": [],
+    "__init__": [
+      "self",
+      "token",
+      "description",
+      "columns"
+    ],
+    "token": [
+      "self",
+      "token"
+    ],
+    "description": [
+      "self",
+      "description"
+    ],
+    "columns": [
+      "self",
+      "columns"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "Competition": {
+    "__init__": [
+      "self",
+      "init_dict"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "SubmitResult": {
+    "__init__": [
+      "self",
+      "init_dict"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "Submission": {
+    "__init__": [
+      "self",
+      "init_dict"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "LeaderboardEntry": {
+    "__init__": [
+      "self",
+      "init_dict"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "Dataset": {
+    "__init__": [
+      "self",
+      "init_dict"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "Model": {
+    "__init__": [
+      "self",
+      "init_dict"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "Metadata": {
+    "__init__": [
+      "self",
+      "init_info"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "DatasetVersion": {
+    "__init__": [
+      "self",
+      "init_dict"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "File": {
+    "__init__": [
+      "self",
+      "init_dict"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "get_size": [
+      "size",
+      "precision"
+    ]
+  },
+  "Tag": {
+    "__init__": [
+      "self",
+      "init_dict"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "DatasetNewVersionResponse": {
+    "__init__": [
+      "self",
+      "init_dict"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "DatasetNewResponse": {
+    "__init__": [
+      "self",
+      "init_dict"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListFilesResult": {
+    "__init__": [
+      "self",
+      "init_dict"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "Kernel": {
+    "__init__": [
+      "self",
+      "init_dict"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "KernelPushResponse": {
+    "__init__": [
+      "self",
+      "init_dict"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ModelNewResponse": {
+    "__init__": [
+      "self",
+      "init_dict"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ModelDeleteResponse": {
+    "__init__": [
+      "self",
+      "init_dict"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "parse": [
+    "string"
+  ],
+  "ResumableUploadResult": {
+    "COMPLETE": [],
+    "FAILED": [],
+    "INCOMPLETE": [],
+    "__init__": [
+      "self",
+      "result",
+      "bytes_uploaded"
+    ],
+    "Complete": [],
+    "Failed": [],
+    "Incomplete": [
+      "bytes_uploaded"
+    ]
+  }
+}
