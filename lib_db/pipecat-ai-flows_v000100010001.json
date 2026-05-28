@@ -1,0 +1,215 @@
+{
+  "FlowError": {},
+  "FlowInitializationError": {},
+  "FlowTransitionError": {},
+  "InvalidFunctionError": {},
+  "ActionError": {},
+  "FunctionActionFrame": {},
+  "ActionFinishedFrame": {},
+  "ActionManager": {
+    "__init__": [
+      "self",
+      "task",
+      "flow_manager"
+    ],
+    "_register_action": [
+      "self",
+      "action_type",
+      "handler"
+    ],
+    "execute_actions": [
+      "self",
+      "actions"
+    ],
+    "schedule_deferred_post_actions": [
+      "self",
+      "post_actions"
+    ],
+    "clear_deferred_post_actions": [
+      "self"
+    ],
+    "_execute_deferred_post_actions": [
+      "self"
+    ],
+    "_maybe_wait_for_ongoing_actions_to_finish": [
+      "self",
+      "previous_action_type",
+      "upcoming_action_type"
+    ],
+    "_handle_tts_action": [
+      "self",
+      "action"
+    ],
+    "_handle_end_action": [
+      "self",
+      "action"
+    ],
+    "_handle_function_action": [
+      "self",
+      "action"
+    ],
+    "_increment_ongoing_actions_count": [
+      "self"
+    ],
+    "_decrement_ongoing_actions_count": [
+      "self"
+    ]
+  },
+  "FlowManager": {
+    "__init__": [
+      "self"
+    ],
+    "state": [
+      "self"
+    ],
+    "transport": [
+      "self"
+    ],
+    "current_node": [
+      "self"
+    ],
+    "task": [
+      "self"
+    ],
+    "initialize": [
+      "self",
+      "initial_node"
+    ],
+    "get_current_context": [
+      "self"
+    ],
+    "register_action": [
+      "self",
+      "action_type",
+      "handler"
+    ],
+    "_register_action_from_config": [
+      "self",
+      "action"
+    ],
+    "_call_handler": [
+      "self",
+      "handler",
+      "args"
+    ],
+    "_create_transition_func": [
+      "self",
+      "name",
+      "handler"
+    ],
+    "_check_and_execute_transition": [
+      "self"
+    ],
+    "_execute_transition": [
+      "self",
+      "transition_info"
+    ],
+    "_register_function": [
+      "self",
+      "name",
+      "new_functions",
+      "handler"
+    ],
+    "set_node_from_config": [
+      "self",
+      "node_config"
+    ],
+    "_set_node": [
+      "self",
+      "node_id",
+      "node_config"
+    ],
+    "_schedule_deferred_post_actions": [
+      "self",
+      "post_actions"
+    ],
+    "_create_conversation_summary": [
+      "self",
+      "summary_prompt",
+      "context"
+    ],
+    "_update_llm_context": [
+      "self",
+      "role_message",
+      "role_messages",
+      "task_messages",
+      "functions",
+      "strategy"
+    ],
+    "_execute_actions": [
+      "self",
+      "pre_actions",
+      "post_actions"
+    ],
+    "_validate_node_config": [
+      "self",
+      "node_id",
+      "config"
+    ]
+  },
+  "__all__": [],
+  "FlowResult": {},
+  "FlowArgs": [],
+  "LegacyActionHandler": [],
+  "FlowActionHandler": [],
+  "ActionConfig": {},
+  "ContextStrategy": {
+    "APPEND": [],
+    "RESET": [],
+    "RESET_WITH_SUMMARY": []
+  },
+  "ContextStrategyConfig": {
+    "__post_init__": [
+      "self"
+    ]
+  },
+  "NodeConfig": {},
+  "ConsolidatedFunctionResult": [],
+  "ZeroArgFunctionHandler": [],
+  "LegacyFunctionHandler": [],
+  "FlowFunctionHandler": [],
+  "FunctionHandler": [],
+  "FlowsDirectFunction": [],
+  "FlowsFunctionSchema": {
+    "to_function_schema": [
+      "self"
+    ]
+  },
+  "flows_direct_function": [],
+  "FlowsDirectFunctionWrapper": {
+    "special_first_param_name": [
+      "cls"
+    ],
+    "validate_function": [
+      "cls",
+      "function"
+    ],
+    "_initialize_metadata": [
+      "self"
+    ],
+    "invoke": [
+      "self",
+      "args",
+      "flow_manager"
+    ]
+  },
+  "get_or_generate_node_name": [
+    "node_config"
+  ],
+  "LLMAdapter": {
+    "format_functions": [
+      "self",
+      "functions"
+    ],
+    "format_summary_message": [
+      "self",
+      "summary"
+    ],
+    "generate_summary": [
+      "self",
+      "llm",
+      "summary_prompt",
+      "context"
+    ]
+  }
+}
