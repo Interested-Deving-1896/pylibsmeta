@@ -1,0 +1,188 @@
+{
+  "BithumanError": {},
+  "TokenError": {},
+  "TokenExpiredError": {},
+  "TokenValidationError": {},
+  "TokenRequestError": {},
+  "AccountStatusError": {},
+  "ModelError": {},
+  "ModelNotFoundError": {},
+  "ModelLoadError": {},
+  "ModelSecurityError": {},
+  "RuntimeNotReadyError": {},
+  "__all__": [],
+  "INT16_MAX": [],
+  "AudioChunk": {
+    "__post_init__": [
+      "self"
+    ],
+    "bytes": [
+      "self"
+    ],
+    "array": [
+      "self"
+    ],
+    "duration": [
+      "self"
+    ],
+    "from_bytes": [
+      "cls",
+      "audio_bytes",
+      "sample_rate",
+      "last_chunk"
+    ]
+  },
+  "Emotion": {
+    "ANGER": [],
+    "DISGUST": [],
+    "FEAR": [],
+    "JOY": [],
+    "NEUTRAL": [],
+    "SADNESS": [],
+    "SURPRISE": []
+  },
+  "EmotionPrediction": {
+    "from_dict": [
+      "cls",
+      "data"
+    ],
+    "to_dict": [
+      "self"
+    ]
+  },
+  "VideoControl": {
+    "is_idle": [
+      "self"
+    ],
+    "is_speaking": [
+      "self"
+    ],
+    "from_audio": [
+      "cls",
+      "audio",
+      "sample_rate",
+      "last_chunk"
+    ]
+  },
+  "VideoFrame": {
+    "has_image": [
+      "self"
+    ],
+    "rgb_image": [
+      "self"
+    ]
+  },
+  "__version__": [],
+  "PathLike": [],
+  "AudioInput": [],
+  "EP": {
+    "CPU": [],
+    "AUTO": [],
+    "COREML": [],
+    "NNAPI": [],
+    "QNN": []
+  },
+  "ComposedFrame": {},
+  "_SAMPLE_RATE_HZ": [],
+  "_FPS": [],
+  "_decode_audio": [
+    "audio"
+  ],
+  "Avatar": {
+    "__init__": [
+      "self",
+      "fixture"
+    ],
+    "load": [
+      "cls",
+      "model_path",
+      "api_secret",
+      "preferred_ep",
+      "intra_op_threads",
+      "tags",
+      "fingerprint",
+      "billing_type"
+    ],
+    "frame_width": [
+      "self"
+    ],
+    "frame_height": [
+      "self"
+    ],
+    "sample_rate": [
+      "self"
+    ],
+    "samples_per_tick": [
+      "self"
+    ],
+    "fps": [
+      "self"
+    ],
+    "cluster_count": [
+      "self"
+    ],
+    "source_frame_count": [
+      "self"
+    ],
+    "active_ep": [
+      "self"
+    ],
+    "compose": [
+      "self",
+      "audio",
+      "preallocated_out",
+      "output_size"
+    ],
+    "close": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ],
+    "__del__": [
+      "self"
+    ],
+    "_require_fixture": [
+      "self"
+    ]
+  },
+  "AsyncAvatar": [],
+  "_LOOKBACK_TICKS": [],
+  "_DEFAULT_AUTH_URL": [],
+  "_STREAM_END": [],
+  "_i16_to_f32": [
+    "arr"
+  ],
+  "_resample_linear": [
+    "pcm",
+    "src_sr",
+    "dst_sr"
+  ],
+  "NativeFixtureLoaderMixin": {
+    "_register_default_audio_encoder": [
+      "cls"
+    ],
+    "_load_fixture_blocking": [
+      "self",
+      "model_path"
+    ]
+  },
+  "_THIS_DIR": [],
+  "Settings": {
+    "model_config": [],
+    "_apply_liva_idle_alias": [
+      "cls",
+      "data"
+    ]
+  },
+  "_settings": [],
+  "load_settings": [
+    "force_reload"
+  ]
+}
