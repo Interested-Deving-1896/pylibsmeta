@@ -1,0 +1,606 @@
+{
+  "TEST_PRIVATE_KEY": [],
+  "ADDRESS": [],
+  "WALLET": [],
+  "UUPS_WALLET": [],
+  "TOKEN": [],
+  "APPROVE_CALLDATA": [],
+  "BEACON": [],
+  "TestClientDepositWallet": {
+    "_client": [
+      "self"
+    ],
+    "test_get_expected_deposit_wallet": [
+      "self"
+    ],
+    "test_get_expected_deposit_wallet_returns_uups_when_factory_has_no_beacon": [
+      "self"
+    ],
+    "test_get_expected_deposit_wallet_returns_deployed_uups_wallet": [
+      "self"
+    ],
+    "test_get_expected_deposit_wallet_treats_zero_code_as_not_deployed": [
+      "self"
+    ],
+    "test_rpc_call_requires_result_key": [
+      "self"
+    ],
+    "test_rpc_call_uses_default_rpc_url_for_known_chain": [
+      "self"
+    ],
+    "test_proxy_gas_estimation_does_not_use_default_rpc_url": [
+      "self"
+    ],
+    "test_is_rpc_revert_matches_exact_error_code_3": [
+      "self"
+    ],
+    "test_get_deployed_accepts_wallet_type": [
+      "self"
+    ],
+    "test_deploy_deposit_wallet_posts_wallet_create": [
+      "self"
+    ],
+    "test_execute_deposit_wallet_batch_posts_wallet_request": [
+      "self"
+    ]
+  },
+  "TestDerive": {
+    "test_derive_safe": [
+      "self"
+    ],
+    "test_derive_deposit_wallet": [
+      "self"
+    ],
+    "test_derive_deposit_wallet_polygon_factory": [
+      "self"
+    ],
+    "test_derive_beacon_deposit_wallet_polygon_factory": [
+      "self"
+    ]
+  },
+  "TestSafe": {
+    "test_create_struct_hash": [
+      "self"
+    ],
+    "test_create_safe_signature": [
+      "self"
+    ],
+    "test_create_packed_sig": [
+      "self"
+    ]
+  },
+  "TestCreate": {
+    "test_create_safe_create_struct_hash": [
+      "self"
+    ],
+    "test_create_safe_create_signature": [
+      "self"
+    ]
+  },
+  "EXPECTED_BATCH_SIGNATURE": [],
+  "TestDepositWallet": {
+    "test_build_deposit_wallet_create_request": [
+      "self"
+    ],
+    "test_build_deposit_wallet_batch_request": [
+      "self"
+    ]
+  },
+  "TestProxy": {
+    "test_create_proxy_signature": [
+      "self"
+    ]
+  },
+  "TestSafeTx": {
+    "test_generate_struct_hash": [
+      "self"
+    ]
+  },
+  "TestConfig": {
+    "test_get_contract_config": [
+      "self"
+    ]
+  },
+  "TestEncodeProxy": {
+    "test_encode_proxy_transaction_data_single": [
+      "self"
+    ],
+    "test_encode_proxy_transaction_data_multiple": [
+      "self"
+    ]
+  },
+  "TestMultisend": {
+    "test_create_safe_multisend_transaction": [
+      "self"
+    ]
+  },
+  "FACTORY_BEACON_SELECTOR": [],
+  "DEFAULT_RPC_URLS": [],
+  "RelayClient": {
+    "__init__": [
+      "self",
+      "relayer_url",
+      "chain_id",
+      "private_key",
+      "builder_config",
+      "relay_tx_type",
+      "rpc_url"
+    ],
+    "get_nonce": [
+      "self",
+      "signer_address",
+      "signer_type"
+    ],
+    "get_relay_payload": [
+      "self",
+      "signer_address",
+      "signer_type"
+    ],
+    "get_transaction": [
+      "self",
+      "transaction_id"
+    ],
+    "get_transactions": [
+      "self"
+    ],
+    "get_deployed": [
+      "self",
+      "address",
+      "signer_type"
+    ],
+    "execute": [
+      "self",
+      "transactions",
+      "metadata"
+    ],
+    "_execute_safe_transactions": [
+      "self",
+      "transactions",
+      "metadata"
+    ],
+    "_execute_proxy_transactions": [
+      "self",
+      "transactions",
+      "metadata"
+    ],
+    "deploy": [
+      "self"
+    ],
+    "deploy_deposit_wallet": [
+      "self"
+    ],
+    "execute_deposit_wallet_batch": [
+      "self",
+      "calls",
+      "wallet_address",
+      "nonce",
+      "deadline"
+    ],
+    "poll_until_state": [
+      "self",
+      "transaction_id",
+      "states",
+      "fail_state",
+      "max_polls",
+      "poll_frequency"
+    ],
+    "_estimate_proxy_gas": [
+      "self",
+      "from_address",
+      "to",
+      "data"
+    ],
+    "_post_request": [
+      "self",
+      "method",
+      "request_path",
+      "body"
+    ],
+    "_generate_builder_headers": [
+      "self",
+      "method",
+      "request_path",
+      "body"
+    ],
+    "get_expected_safe": [
+      "self"
+    ],
+    "get_expected_proxy_wallet": [
+      "self"
+    ],
+    "get_expected_deposit_wallet": [
+      "self"
+    ],
+    "_get_deposit_wallet_factory_beacon": [
+      "self",
+      "factory"
+    ],
+    "_is_contract_deployed": [
+      "self",
+      "address"
+    ],
+    "_rpc_call": [
+      "self",
+      "method",
+      "params"
+    ],
+    "assert_signer_needed": [
+      "self"
+    ],
+    "assert_builder_creds_needed": [
+      "self"
+    ]
+  },
+  "_decode_address_return_data": [
+    "data"
+  ],
+  "_is_rpc_revert": [
+    "error"
+  ],
+  "_is_empty_bytecode": [
+    "code"
+  ],
+  "GET_NONCE": [],
+  "GET_TRANSACTION": [],
+  "GET_TRANSACTIONS": [],
+  "SUBMIT_TRANSACTION": [],
+  "GET_DEPLOYED": [],
+  "GET_RELAY_PAYLOAD": [],
+  "Signer": {
+    "__init__": [
+      "self",
+      "private_key",
+      "chain_id"
+    ],
+    "address": [
+      "self"
+    ],
+    "get_chain_id": [
+      "self"
+    ],
+    "sign": [
+      "self",
+      "message_hash"
+    ],
+    "sign_eip712_struct_hash": [
+      "self",
+      "message_hash"
+    ],
+    "sign_typed_data": [
+      "self",
+      "full_message"
+    ]
+  },
+  "RelayerClientException": {
+    "__init__": [
+      "self",
+      "msg"
+    ]
+  },
+  "RelayerApiException": {
+    "__init__": [
+      "self",
+      "resp",
+      "error_msg"
+    ],
+    "_get_message": [
+      "self",
+      "resp"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "ClientRelayerTransactionResponse": {
+    "__init__": [
+      "self",
+      "transaction_id",
+      "transaction_hash",
+      "client"
+    ],
+    "get_transaction": [
+      "self"
+    ],
+    "wait": [
+      "self"
+    ]
+  },
+  "OperationType": {
+    "Call": [],
+    "DelegateCall": []
+  },
+  "SafeTransaction": {},
+  "TransactionType": {
+    "SAFE": [],
+    "SAFE_CREATE": [],
+    "PROXY": [],
+    "WALLET": [],
+    "WALLET_CREATE": []
+  },
+  "SignatureParams": {
+    "to_dict": [
+      "self"
+    ]
+  },
+  "TransactionRequest": {
+    "to_dict": [
+      "self"
+    ]
+  },
+  "SafeTransactionArgs": {},
+  "SafeCreateTransactionArgs": {},
+  "DepositWalletCall": {
+    "to_dict": [
+      "self"
+    ]
+  },
+  "DepositWalletTransactionArgs": {},
+  "DepositWalletBatchRequest": {
+    "to_dict": [
+      "self"
+    ]
+  },
+  "DepositWalletCreateRequest": {
+    "to_dict": [
+      "self"
+    ]
+  },
+  "RelayerTransactionState": {
+    "STATE_NEW": [],
+    "STATE_EXECUTED": [],
+    "STATE_MINED": [],
+    "STATE_INVALID": [],
+    "STATE_CONFIRMED": [],
+    "STATE_FAILED": []
+  },
+  "SplitSig": {},
+  "CallType": {
+    "Invalid": [],
+    "Call": [],
+    "DelegateCall": []
+  },
+  "RelayerTxType": {
+    "SAFE": [],
+    "PROXY": []
+  },
+  "Transaction": {},
+  "ProxyTransaction": {},
+  "ProxyTransactionArgs": {},
+  "DEFAULT_GAS_LIMIT": [],
+  "estimate_gas": [
+    "rpc_url",
+    "from_address",
+    "to",
+    "data"
+  ],
+  "ContractConfig": {},
+  "CONFIG": [],
+  "get_contract_config": [
+    "chain_id"
+  ],
+  "is_proxy_config_valid": [
+    "config"
+  ],
+  "is_safe_config_valid": [
+    "config"
+  ],
+  "is_deposit_wallet_config_valid": [
+    "config"
+  ],
+  "prepend_zx": [
+    "in_str"
+  ],
+  "SAFE_INIT_CODE_HASH": [],
+  "PROXY_INIT_CODE_HASH": [],
+  "ZERO_ADDRESS": [],
+  "SAFE_FACTORY_NAME": [],
+  "DEPOSIT_WALLET_DOMAIN_NAME": [],
+  "DEPOSIT_WALLET_DOMAIN_VERSION": [],
+  "GET": [],
+  "POST": [],
+  "DELETE": [],
+  "PUT": [],
+  "request": [
+    "endpoint",
+    "method",
+    "headers",
+    "data"
+  ],
+  "post": [
+    "endpoint",
+    "headers",
+    "data"
+  ],
+  "get": [
+    "endpoint",
+    "headers",
+    "data"
+  ],
+  "delete": [
+    "endpoint",
+    "headers",
+    "data"
+  ],
+  "DEPOSIT_WALLET_TYPES": [],
+  "_call_to_typed_data": [
+    "call"
+  ],
+  "sign_batch": [
+    "signer",
+    "chain_id",
+    "wallet_address",
+    "nonce",
+    "deadline",
+    "calls"
+  ],
+  "build_deposit_wallet_batch_request": [
+    "signer",
+    "args",
+    "config"
+  ],
+  "build_deposit_wallet_create_request": [
+    "from_address",
+    "config"
+  ],
+  "aggregate_transaction": [
+    "txns",
+    "safe_multisend"
+  ],
+  "split_signature": [
+    "sig_hex"
+  ],
+  "split_and_pack_sig": [
+    "sig_hex"
+  ],
+  "create_safe_signature": [
+    "signer",
+    "struct_hash"
+  ],
+  "create_struct_hash": [
+    "chain_id",
+    "safe",
+    "to",
+    "value",
+    "data",
+    "operation",
+    "safe_tx_gas",
+    "base_gas",
+    "gas_price",
+    "gas_token",
+    "refund_receiver",
+    "nonce"
+  ],
+  "build_safe_transaction_request": [
+    "signer",
+    "args",
+    "config",
+    "metadata"
+  ],
+  "create_safe_create_signature": [
+    "signer",
+    "safe_factory",
+    "chain_id",
+    "payment_token",
+    "payment",
+    "payment_receiver"
+  ],
+  "create_safe_create_struct_hash": [
+    "safe_factory",
+    "chain_id",
+    "payment_token",
+    "payment",
+    "payment_receiver"
+  ],
+  "build_safe_create_transaction_request": [
+    "signer",
+    "args",
+    "config"
+  ],
+  "ERC1967_CONST1": [],
+  "ERC1967_CONST2": [],
+  "ERC1967_PREFIX": [],
+  "ERC1967_BEACON_CONST1": [],
+  "ERC1967_BEACON_CONST2": [],
+  "ERC1967_BEACON_CONST3": [],
+  "ERC1967_BEACON_PREFIX": [],
+  "get_create2_address": [
+    "bytecode_hash",
+    "from_address",
+    "salt"
+  ],
+  "derive": [
+    "address",
+    "safe_factory"
+  ],
+  "derive_proxy_wallet": [
+    "address",
+    "proxy_factory"
+  ],
+  "init_code_hash_erc1967": [
+    "implementation",
+    "args"
+  ],
+  "init_code_hash_erc1967_beacon": [
+    "beacon",
+    "args"
+  ],
+  "deposit_wallet_args": [
+    "owner",
+    "factory"
+  ],
+  "derive_uups_deposit_wallet": [
+    "owner",
+    "factory",
+    "implementation"
+  ],
+  "derive_deposit_wallet": [
+    "owner",
+    "factory",
+    "implementation"
+  ],
+  "derive_beacon_deposit_wallet": [
+    "owner",
+    "factory",
+    "beacon"
+  ],
+  "create_proxy_struct_hash": [
+    "from_address",
+    "to",
+    "data",
+    "tx_fee",
+    "gas_price",
+    "gas_limit",
+    "nonce",
+    "relay_hub_address",
+    "relay_address"
+  ],
+  "create_proxy_signature": [
+    "signer",
+    "struct_hash"
+  ],
+  "build_proxy_transaction_request": [
+    "signer",
+    "args",
+    "config",
+    "metadata"
+  ],
+  "BaseEIP712Model": {
+    "generate_struct_hash": [
+      "self",
+      "domain"
+    ]
+  },
+  "CreateProxy": {
+    "paymentToken": [],
+    "payment": [],
+    "paymentReceiver": [],
+    "dict": [
+      "self"
+    ]
+  },
+  "SafeTx": {
+    "to": [],
+    "value": [],
+    "data": [],
+    "operation": [],
+    "safeTxGas": [],
+    "baseGas": [],
+    "gasPrice": [],
+    "gasToken": [],
+    "refundReceiver": [],
+    "nonce": [],
+    "dict": [
+      "self"
+    ]
+  },
+  "create_safe_multisend_transaction": [
+    "txns",
+    "safe_multisend_address"
+  ],
+  "encode_proxy_transaction_data": [
+    "txns"
+  ]
+}
