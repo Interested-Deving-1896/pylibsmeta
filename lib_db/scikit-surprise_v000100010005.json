@@ -1,0 +1,502 @@
+{
+  "Dataset": {
+    "__init__": [
+      "self",
+      "reader"
+    ],
+    "load_builtin": [
+      "cls",
+      "name",
+      "prompt"
+    ],
+    "load_from_file": [
+      "cls",
+      "file_path",
+      "reader"
+    ],
+    "load_from_folds": [
+      "cls",
+      "folds_files",
+      "reader"
+    ],
+    "load_from_df": [
+      "cls",
+      "df",
+      "reader"
+    ],
+    "read_ratings": [
+      "self",
+      "file_name"
+    ],
+    "construct_trainset": [
+      "self",
+      "raw_trainset"
+    ],
+    "construct_testset": [
+      "self",
+      "raw_testset"
+    ]
+  },
+  "DatasetUserFolds": {
+    "__init__": [
+      "self",
+      "folds_files",
+      "reader"
+    ]
+  },
+  "DatasetAutoFolds": {
+    "__init__": [
+      "self",
+      "ratings_file",
+      "reader",
+      "df"
+    ],
+    "build_full_trainset": [
+      "self"
+    ]
+  },
+  "rmse": [
+    "predictions",
+    "verbose"
+  ],
+  "mse": [
+    "predictions",
+    "verbose"
+  ],
+  "mae": [
+    "predictions",
+    "verbose"
+  ],
+  "fcp": [
+    "predictions",
+    "verbose"
+  ],
+  "main": [],
+  "get_rng": [
+    "random_state"
+  ],
+  "__all__": [],
+  "__version__": [],
+  "Trainset": {
+    "__init__": [
+      "self",
+      "ur",
+      "ir",
+      "n_users",
+      "n_items",
+      "n_ratings",
+      "rating_scale",
+      "raw2inner_id_users",
+      "raw2inner_id_items"
+    ],
+    "knows_user": [
+      "self",
+      "uid"
+    ],
+    "knows_item": [
+      "self",
+      "iid"
+    ],
+    "to_inner_uid": [
+      "self",
+      "ruid"
+    ],
+    "to_raw_uid": [
+      "self",
+      "iuid"
+    ],
+    "to_inner_iid": [
+      "self",
+      "riid"
+    ],
+    "to_raw_iid": [
+      "self",
+      "iiid"
+    ],
+    "all_ratings": [
+      "self"
+    ],
+    "build_testset": [
+      "self"
+    ],
+    "build_anti_testset": [
+      "self",
+      "fill"
+    ],
+    "all_users": [
+      "self"
+    ],
+    "all_items": [
+      "self"
+    ],
+    "global_mean": [
+      "self"
+    ]
+  },
+  "Reader": {
+    "__init__": [
+      "self",
+      "name",
+      "line_format",
+      "sep",
+      "rating_scale",
+      "skip_lines"
+    ],
+    "parse_line": [
+      "self",
+      "line"
+    ]
+  },
+  "dump": [
+    "file_name",
+    "predictions",
+    "algo",
+    "verbose"
+  ],
+  "load": [
+    "file_name"
+  ],
+  "get_dataset_dir": [],
+  "BuiltinDataset": [],
+  "BUILTIN_DATASETS": [],
+  "download_builtin_dataset": [
+    "name"
+  ],
+  "AlgoBase": {
+    "__init__": [
+      "self"
+    ],
+    "fit": [
+      "self",
+      "trainset"
+    ],
+    "predict": [
+      "self",
+      "uid",
+      "iid",
+      "r_ui",
+      "clip",
+      "verbose"
+    ],
+    "default_prediction": [
+      "self"
+    ],
+    "test": [
+      "self",
+      "testset",
+      "verbose"
+    ],
+    "compute_baselines": [
+      "self"
+    ],
+    "compute_similarities": [
+      "self"
+    ],
+    "get_neighbors": [
+      "self",
+      "iid",
+      "k"
+    ]
+  },
+  "BaselineOnly": {
+    "__init__": [
+      "self",
+      "bsl_options",
+      "verbose"
+    ],
+    "fit": [
+      "self",
+      "trainset"
+    ],
+    "estimate": [
+      "self",
+      "u",
+      "i"
+    ]
+  },
+  "SymmetricAlgo": {
+    "__init__": [
+      "self",
+      "sim_options",
+      "verbose"
+    ],
+    "fit": [
+      "self",
+      "trainset"
+    ],
+    "switch": [
+      "self",
+      "u_stuff",
+      "i_stuff"
+    ]
+  },
+  "KNNBasic": {
+    "__init__": [
+      "self",
+      "k",
+      "min_k",
+      "sim_options",
+      "verbose"
+    ],
+    "fit": [
+      "self",
+      "trainset"
+    ],
+    "estimate": [
+      "self",
+      "u",
+      "i"
+    ]
+  },
+  "KNNWithMeans": {
+    "__init__": [
+      "self",
+      "k",
+      "min_k",
+      "sim_options",
+      "verbose"
+    ],
+    "fit": [
+      "self",
+      "trainset"
+    ],
+    "estimate": [
+      "self",
+      "u",
+      "i"
+    ]
+  },
+  "KNNBaseline": {
+    "__init__": [
+      "self",
+      "k",
+      "min_k",
+      "sim_options",
+      "bsl_options",
+      "verbose"
+    ],
+    "fit": [
+      "self",
+      "trainset"
+    ],
+    "estimate": [
+      "self",
+      "u",
+      "i"
+    ]
+  },
+  "KNNWithZScore": {
+    "__init__": [
+      "self",
+      "k",
+      "min_k",
+      "sim_options",
+      "verbose"
+    ],
+    "fit": [
+      "self",
+      "trainset"
+    ],
+    "estimate": [
+      "self",
+      "u",
+      "i"
+    ]
+  },
+  "NormalPredictor": {
+    "__init__": [
+      "self"
+    ],
+    "fit": [
+      "self",
+      "trainset"
+    ],
+    "estimate": [
+      "self"
+    ]
+  },
+  "PredictionImpossible": {},
+  "Prediction": {
+    "__slots__": [],
+    "__str__": [
+      "self"
+    ]
+  },
+  "cross_validate": [
+    "algo",
+    "data",
+    "measures",
+    "cv",
+    "return_train_measures",
+    "n_jobs",
+    "pre_dispatch",
+    "verbose"
+  ],
+  "fit_and_score": [
+    "algo",
+    "trainset",
+    "testset",
+    "measures",
+    "return_train_measures"
+  ],
+  "print_summary": [
+    "algo",
+    "measures",
+    "test_measures",
+    "train_measures",
+    "fit_times",
+    "test_times",
+    "n_splits"
+  ],
+  "get_cv": [
+    "cv"
+  ],
+  "KFold": {
+    "__init__": [
+      "self",
+      "n_splits",
+      "random_state",
+      "shuffle"
+    ],
+    "split": [
+      "self",
+      "data"
+    ],
+    "get_n_folds": [
+      "self"
+    ]
+  },
+  "RepeatedKFold": {
+    "__init__": [
+      "self",
+      "n_splits",
+      "n_repeats",
+      "random_state"
+    ],
+    "split": [
+      "self",
+      "data"
+    ],
+    "get_n_folds": [
+      "self"
+    ]
+  },
+  "ShuffleSplit": {
+    "__init__": [
+      "self",
+      "n_splits",
+      "test_size",
+      "train_size",
+      "random_state",
+      "shuffle"
+    ],
+    "validate_train_test_sizes": [
+      "self",
+      "test_size",
+      "train_size",
+      "n_ratings"
+    ],
+    "split": [
+      "self",
+      "data"
+    ],
+    "get_n_folds": [
+      "self"
+    ]
+  },
+  "train_test_split": [
+    "data",
+    "test_size",
+    "train_size",
+    "random_state",
+    "shuffle"
+  ],
+  "LeaveOneOut": {
+    "__init__": [
+      "self",
+      "n_splits",
+      "random_state",
+      "min_n_ratings"
+    ],
+    "split": [
+      "self",
+      "data"
+    ],
+    "get_n_folds": [
+      "self"
+    ]
+  },
+  "PredefinedKFold": {
+    "split": [
+      "self",
+      "data"
+    ],
+    "get_n_folds": [
+      "self"
+    ]
+  },
+  "BaseSearchCV": {
+    "__init__": [
+      "self",
+      "algo_class",
+      "measures",
+      "cv",
+      "refit",
+      "return_train_measures",
+      "n_jobs",
+      "pre_dispatch",
+      "joblib_verbose"
+    ],
+    "_parse_options": [
+      "self",
+      "params"
+    ],
+    "fit": [
+      "self",
+      "data"
+    ],
+    "test": [
+      "self",
+      "testset",
+      "verbose"
+    ],
+    "predict": [
+      "self"
+    ]
+  },
+  "GridSearchCV": {
+    "__init__": [
+      "self",
+      "algo_class",
+      "param_grid",
+      "measures",
+      "cv",
+      "refit",
+      "return_train_measures",
+      "n_jobs",
+      "pre_dispatch",
+      "joblib_verbose"
+    ]
+  },
+  "RandomizedSearchCV": {
+    "__init__": [
+      "self",
+      "algo_class",
+      "param_distributions",
+      "n_iter",
+      "measures",
+      "cv",
+      "refit",
+      "return_train_measures",
+      "n_jobs",
+      "pre_dispatch",
+      "random_state",
+      "joblib_verbose"
+    ],
+    "_sample_parameters": [
+      "param_distributions",
+      "n_iter",
+      "random_state"
+    ]
+  }
+}
