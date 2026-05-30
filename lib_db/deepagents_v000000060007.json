@@ -1,0 +1,1984 @@
+{
+  "logger": [],
+  "DeepAgentState": {},
+  "BASE_AGENT_PROMPT": [],
+  "_build_default_model": [],
+  "get_default_model": [],
+  "create_deep_agent": [
+    "model",
+    "tools"
+  ],
+  "resolve_model": [
+    "model"
+  ],
+  "get_model_identifier": [
+    "model"
+  ],
+  "get_model_provider": [
+    "model"
+  ],
+  "model_matches_spec": [
+    "model",
+    "spec"
+  ],
+  "_string_attr": [
+    "obj",
+    "attr"
+  ],
+  "SubagentRunStream": {
+    "__init__": [
+      "self",
+      "mux"
+    ],
+    "name": [
+      "self"
+    ],
+    "cause": [
+      "self"
+    ]
+  },
+  "AsyncSubagentRunStream": {
+    "__init__": [
+      "self",
+      "mux"
+    ],
+    "name": [
+      "self"
+    ],
+    "cause": [
+      "self"
+    ]
+  },
+  "SubagentTransformer": {
+    "__init__": [
+      "self",
+      "scope"
+    ],
+    "init": [
+      "self"
+    ],
+    "_on_register": [
+      "self",
+      "mux"
+    ],
+    "_should_track": [
+      "self",
+      "ns"
+    ],
+    "_capture_pending_from_parent": [
+      "self",
+      "event"
+    ],
+    "_on_started": [
+      "self",
+      "ns",
+      "graph_name",
+      "trigger_call_id"
+    ],
+    "_on_terminal": [
+      "self",
+      "ns",
+      "status",
+      "error"
+    ],
+    "_handle_for_event": [
+      "self",
+      "event"
+    ],
+    "process": [
+      "self",
+      "event"
+    ]
+  },
+  "__version__": [],
+  "__all__": [],
+  "_tool_name": [
+    "tool"
+  ],
+  "_apply_tool_description_overrides": [
+    "tools",
+    "overrides"
+  ],
+  "_messages_delta_reducer": [
+    "state",
+    "writes"
+  ],
+  "_validate_excluded_middleware_config": [
+    "profile"
+  ],
+  "_raise_on_name_collisions": [
+    "name_matched_types"
+  ],
+  "_apply_excluded_middleware": [
+    "stack",
+    "profile"
+  ],
+  "_verify_excluded_middleware_coverage": [
+    "profile",
+    "matched_classes",
+    "matched_names"
+  ],
+  "_format_plugin_label": [
+    "ep"
+  ],
+  "_PROVIDER_PROFILE_GROUP": [],
+  "_HARNESS_PROFILE_GROUP": [],
+  "_BOOTSTRAP_CONDITION": [],
+  "_ensure_builtin_profiles_loaded": [],
+  "_invoke_profile_plugins": [
+    "group"
+  ],
+  "validate_profile_key": [
+    "key"
+  ],
+  "register": [],
+  "ProviderProfile": {
+    "__post_init__": [
+      "self"
+    ]
+  },
+  "_ensure_provider_profiles_loaded": [],
+  "_register_provider_profile_impl": [
+    "key",
+    "profile"
+  ],
+  "register_provider_profile": [
+    "key",
+    "profile"
+  ],
+  "get_provider_profile": [
+    "spec"
+  ],
+  "apply_provider_profile": [
+    "spec",
+    "kwargs"
+  ],
+  "_merge_provider_profiles": [
+    "base",
+    "override"
+  ],
+  "OPENROUTER_MIN_VERSION": [],
+  "_OPENROUTER_APP_URL": [],
+  "_OPENROUTER_APP_TITLE": [],
+  "_OPENROUTER_ALLOW_AZURE_ENV": [],
+  "_openrouter_attribution_kwargs": [],
+  "check_openrouter_version": [],
+  "_SYSTEM_PROMPT_SUFFIX": [],
+  "_scaffolding_violation_label": [
+    "entry"
+  ],
+  "_format_scaffolding_rejection": [
+    "violations"
+  ],
+  "GeneralPurposeSubagentProfile": {
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "data"
+    ]
+  },
+  "HarnessProfileConfig": {
+    "__post_init__": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "data"
+    ],
+    "to_harness_profile": [
+      "self"
+    ],
+    "from_harness_profile": [
+      "cls",
+      "profile"
+    ]
+  },
+  "HarnessProfile": {
+    "__post_init__": [
+      "self"
+    ],
+    "materialize_extra_middleware": [
+      "self"
+    ]
+  },
+  "_apply_profile_prompt": [
+    "profile",
+    "base_prompt"
+  ],
+  "_coerce_str_or_none": [
+    "value",
+    "field_name"
+  ],
+  "_coerce_str_mapping": [
+    "value",
+    "field_name"
+  ],
+  "_coerce_frozen_strset": [
+    "value",
+    "field_name"
+  ],
+  "_coerce_general_purpose_subagent": [
+    "value"
+  ],
+  "_validate_config_middleware_string": [
+    "entry",
+    "field_name"
+  ],
+  "_serialize_runtime_excluded_middleware_entry": [
+    "entry"
+  ],
+  "_ensure_harness_profiles_loaded": [],
+  "_coerce_runtime_harness_profile": [
+    "profile"
+  ],
+  "_register_harness_profile_impl": [
+    "key",
+    "profile"
+  ],
+  "register_harness_profile": [
+    "key",
+    "profile"
+  ],
+  "_has_any_harness_profile": [],
+  "_get_harness_profile": [
+    "spec"
+  ],
+  "_resolve_middleware_seq": [
+    "middleware"
+  ],
+  "_merge_middleware": [
+    "base_middleware",
+    "override_middleware"
+  ],
+  "_merge_general_purpose_subagent_profiles": [
+    "base",
+    "override"
+  ],
+  "_merge_profiles": [
+    "base",
+    "override"
+  ],
+  "_harness_profile_for_model": [
+    "model",
+    "spec"
+  ],
+  "_derive_overflow_clip_threshold_tokens": [
+    "keep",
+    "max_input_tokens"
+  ],
+  "_find_tail_tool_message_batch": [
+    "messages"
+  ],
+  "_build_tool_call_index": [
+    "messages"
+  ],
+  "_slice_read_file_tm": [
+    "msg",
+    "original_path"
+  ],
+  "_read_file_original_path": [
+    "msg",
+    "tc_index"
+  ],
+  "_clip_one_tail_message": [
+    "msg",
+    "tc_index",
+    "backend",
+    "large_tool_results_prefix"
+  ],
+  "_aclip_one_tail_message": [
+    "msg",
+    "tc_index",
+    "backend",
+    "large_tool_results_prefix"
+  ],
+  "_clip_overflow_tail": [
+    "preserved_messages",
+    "backend"
+  ],
+  "_aclip_overflow_tail": [
+    "preserved_messages",
+    "backend"
+  ],
+  "CompactConversationSchema": {},
+  "SUMMARIZATION_SYSTEM_PROMPT": [],
+  "SummarizationEvent": {},
+  "TruncateArgsSettings": {},
+  "SummarizationState": {},
+  "SummarizationDefaults": {},
+  "compute_summarization_defaults": [
+    "model"
+  ],
+  "_DeepAgentsSummarizationMiddleware": {
+    "state_schema": [],
+    "name": [
+      "self"
+    ],
+    "__init__": [
+      "self",
+      "model"
+    ],
+    "model": [
+      "self"
+    ],
+    "token_counter": [
+      "self"
+    ],
+    "_get_profile_limits": [
+      "self"
+    ],
+    "_should_summarize": [
+      "self",
+      "messages",
+      "total_tokens"
+    ],
+    "_determine_cutoff_index": [
+      "self",
+      "messages"
+    ],
+    "_partition_messages": [
+      "self",
+      "conversation_messages",
+      "cutoff_index"
+    ],
+    "_create_summary": [
+      "self",
+      "messages_to_summarize"
+    ],
+    "_acreate_summary": [
+      "self",
+      "messages_to_summarize"
+    ],
+    "_get_backend": [
+      "self",
+      "state",
+      "runtime"
+    ],
+    "_get_thread_id": [
+      "self"
+    ],
+    "_get_history_path": [
+      "self"
+    ],
+    "_is_summary_message": [
+      "self",
+      "msg"
+    ],
+    "_filter_summary_messages": [
+      "self",
+      "messages"
+    ],
+    "_build_new_messages_with_path": [
+      "self",
+      "summary",
+      "file_path"
+    ],
+    "_get_effective_messages": [
+      "self",
+      "request"
+    ],
+    "_apply_event_to_messages": [
+      "messages",
+      "event"
+    ],
+    "_compute_state_cutoff": [
+      "event",
+      "effective_cutoff"
+    ],
+    "_should_truncate_args": [
+      "self",
+      "messages",
+      "total_tokens"
+    ],
+    "_determine_truncate_cutoff_index": [
+      "self",
+      "messages"
+    ],
+    "_truncate_tool_call": [
+      "self",
+      "tool_call"
+    ],
+    "_truncate_args": [
+      "self",
+      "messages",
+      "system_message",
+      "tools"
+    ],
+    "_offload_to_backend": [
+      "self",
+      "backend",
+      "messages"
+    ],
+    "_aoffload_to_backend": [
+      "self",
+      "backend",
+      "messages"
+    ],
+    "wrap_model_call": [
+      "self",
+      "request",
+      "handler"
+    ],
+    "awrap_model_call": [
+      "self",
+      "request",
+      "handler"
+    ]
+  },
+  "SummarizationMiddleware": [],
+  "create_summarization_middleware": [
+    "model",
+    "backend"
+  ],
+  "create_summarization_tool_middleware": [
+    "model",
+    "backend"
+  ],
+  "SummarizationToolMiddleware": {
+    "state_schema": [],
+    "__init__": [
+      "self",
+      "summarization"
+    ],
+    "_resolve_backend": [
+      "self",
+      "runtime"
+    ],
+    "_create_compact_tool": [
+      "self"
+    ],
+    "_build_compact_result": [
+      "self",
+      "runtime",
+      "to_summarize",
+      "summary",
+      "file_path",
+      "event",
+      "cutoff"
+    ],
+    "_nothing_to_compact": [
+      "tool_call_id"
+    ],
+    "_compact_error": [
+      "tool_call_id",
+      "exc"
+    ],
+    "_is_eligible_for_compaction": [
+      "self",
+      "messages"
+    ],
+    "_run_compact": [
+      "self",
+      "runtime"
+    ],
+    "_arun_compact": [
+      "self",
+      "runtime"
+    ],
+    "wrap_model_call": [
+      "self",
+      "request",
+      "handler"
+    ],
+    "awrap_model_call": [
+      "self",
+      "request",
+      "handler"
+    ]
+  },
+  "_ToolExclusionMiddleware": {
+    "__init__": [
+      "self"
+    ],
+    "wrap_model_call": [
+      "self",
+      "request",
+      "handler"
+    ],
+    "awrap_model_call": [
+      "self",
+      "request",
+      "handler"
+    ]
+  },
+  "MemoryState": {},
+  "MemoryStateUpdate": {},
+  "MEMORY_SYSTEM_PROMPT": [],
+  "_HTML_COMMENT_RE": [],
+  "_strip_html_comments": [
+    "text"
+  ],
+  "MemoryMiddleware": {
+    "state_schema": [],
+    "__init__": [
+      "self"
+    ],
+    "_get_backend": [
+      "self",
+      "state",
+      "runtime",
+      "config"
+    ],
+    "_format_agent_memory": [
+      "self",
+      "contents",
+      "template"
+    ],
+    "before_agent": [
+      "self",
+      "state",
+      "runtime",
+      "config"
+    ],
+    "abefore_agent": [
+      "self",
+      "state",
+      "runtime",
+      "config"
+    ],
+    "modify_request": [
+      "self",
+      "request"
+    ],
+    "wrap_model_call": [
+      "self",
+      "request",
+      "handler"
+    ],
+    "awrap_model_call": [
+      "self",
+      "request",
+      "handler"
+    ]
+  },
+  "SubAgent": {},
+  "CompiledSubAgent": {},
+  "DEFAULT_SUBAGENT_PROMPT": [],
+  "_EXCLUDED_STATE_KEYS": [],
+  "TaskToolSchema": {},
+  "TASK_TOOL_DESCRIPTION": [],
+  "TASK_SYSTEM_PROMPT": [],
+  "DEFAULT_GENERAL_PURPOSE_DESCRIPTION": [],
+  "_SubagentSpec": {},
+  "_subagent_tracing_context": [],
+  "_build_task_tool": [
+    "subagents",
+    "task_description"
+  ],
+  "SubAgentMiddleware": {
+    "__init__": [
+      "self"
+    ],
+    "_get_subagents": [
+      "self"
+    ],
+    "wrap_model_call": [
+      "self",
+      "request",
+      "handler"
+    ],
+    "awrap_model_call": [
+      "self",
+      "request",
+      "handler"
+    ]
+  },
+  "TOO_LARGE_TOOL_MSG": [],
+  "_create_content_preview": [
+    "content_str"
+  ],
+  "_extract_text_from_message": [
+    "message"
+  ],
+  "_build_evicted_content": [
+    "message",
+    "replacement_text"
+  ],
+  "_build_evicted_tool_message": [
+    "message",
+    "evicted_content"
+  ],
+  "_offload_tool_message_content": [
+    "message",
+    "content_str",
+    "backend",
+    "large_tool_results_prefix"
+  ],
+  "_aoffload_tool_message_content": [
+    "message",
+    "content_str",
+    "backend",
+    "large_tool_results_prefix"
+  ],
+  "PatchToolCallsMiddleware": {
+    "before_agent": [
+      "self",
+      "state",
+      "runtime"
+    ]
+  },
+  "_FS_WCMATCH_FLAGS": [],
+  "FilesystemOperation": [],
+  "FilesystemPermission": {
+    "__post_init__": [
+      "self"
+    ]
+  },
+  "_check_fs_permission": [
+    "rules",
+    "operation",
+    "path"
+  ],
+  "_filter_paths_by_permission": [
+    "rules",
+    "operation",
+    "paths"
+  ],
+  "_all_paths_scoped_to_routes": [
+    "rules",
+    "backend"
+  ],
+  "_filter_file_infos_by_permission": [
+    "rules",
+    "infos"
+  ],
+  "_filter_grep_matches_by_permission": [
+    "rules",
+    "matches"
+  ],
+  "_apply_permissions_to_ls_results": [
+    "rules",
+    "entries"
+  ],
+  "_apply_permissions_to_glob_results": [
+    "rules",
+    "matches"
+  ],
+  "EMPTY_CONTENT_WARNING": [],
+  "GLOB_TIMEOUT": [],
+  "LINE_NUMBER_WIDTH": [],
+  "DEFAULT_READ_OFFSET": [],
+  "DEFAULT_READ_LIMIT": [],
+  "READ_FILE_TRUNCATION_MSG": [],
+  "NUM_CHARS_PER_TOKEN": [],
+  "_file_data_reducer": [
+    "left",
+    "right"
+  ],
+  "_file_data_delta_reducer": [
+    "left",
+    "values"
+  ],
+  "FilesystemState": {},
+  "LsSchema": {},
+  "ReadFileSchema": {},
+  "WriteFileSchema": {},
+  "EditFileSchema": {},
+  "GlobSchema": {},
+  "GrepSchema": {},
+  "ExecuteSchema": {},
+  "LIST_FILES_TOOL_DESCRIPTION": [],
+  "READ_FILE_TOOL_DESCRIPTION": [],
+  "EDIT_FILE_TOOL_DESCRIPTION": [],
+  "WRITE_FILE_TOOL_DESCRIPTION": [],
+  "GLOB_TOOL_DESCRIPTION": [],
+  "GREP_TOOL_DESCRIPTION": [],
+  "EXECUTE_TOOL_DESCRIPTION": [],
+  "_FILESYSTEM_SYSTEM_PROMPT_TEMPLATE": [],
+  "FILESYSTEM_SYSTEM_PROMPT": [],
+  "EXECUTION_SYSTEM_PROMPT": [],
+  "supports_execution": [
+    "backend"
+  ],
+  "TOOLS_EXCLUDED_FROM_EVICTION": [],
+  "TOO_LARGE_HUMAN_MSG": [],
+  "_build_evicted_human_content": [
+    "message",
+    "replacement_text"
+  ],
+  "_build_truncated_human_message": [
+    "message",
+    "file_path"
+  ],
+  "FilesystemMiddleware": {
+    "state_schema": [],
+    "__init__": [
+      "self"
+    ],
+    "_get_backend": [
+      "self",
+      "runtime"
+    ],
+    "_create_ls_tool": [
+      "self"
+    ],
+    "_create_read_file_tool": [
+      "self"
+    ],
+    "_create_write_file_tool": [
+      "self"
+    ],
+    "_create_edit_file_tool": [
+      "self"
+    ],
+    "_create_glob_tool": [
+      "self"
+    ],
+    "_create_grep_tool": [
+      "self"
+    ],
+    "_create_execute_tool": [
+      "self"
+    ],
+    "wrap_model_call": [
+      "self",
+      "request",
+      "handler"
+    ],
+    "awrap_model_call": [
+      "self",
+      "request",
+      "handler"
+    ],
+    "_process_large_message": [
+      "self",
+      "message",
+      "resolved_backend"
+    ],
+    "_aprocess_large_message": [
+      "self",
+      "message",
+      "resolved_backend"
+    ],
+    "_get_backend_from_runtime": [
+      "self",
+      "state",
+      "runtime"
+    ],
+    "_check_eviction_needed": [
+      "self",
+      "messages"
+    ],
+    "_apply_eviction_and_truncate": [
+      "messages",
+      "write_result",
+      "file_path"
+    ],
+    "_evict_and_truncate_messages": [
+      "self",
+      "request"
+    ],
+    "_aevict_and_truncate_messages": [
+      "self",
+      "request"
+    ],
+    "_intercept_large_tool_result": [
+      "self",
+      "tool_result",
+      "runtime"
+    ],
+    "_aintercept_large_tool_result": [
+      "self",
+      "tool_result",
+      "runtime"
+    ],
+    "wrap_tool_call": [
+      "self",
+      "request",
+      "handler"
+    ],
+    "awrap_tool_call": [
+      "self",
+      "request",
+      "handler"
+    ]
+  },
+  "MAX_SKILL_FILE_SIZE": [],
+  "MAX_SKILLS_LOAD_WARNINGS": [],
+  "MAX_SKILL_LOAD_WARNING_LENGTH": [],
+  "_SKILL_LOAD_WARNING_TRUNCATION_SUFFIX": [],
+  "MAX_SKILL_NAME_LENGTH": [],
+  "MAX_SKILL_DESCRIPTION_LENGTH": [],
+  "MAX_SKILL_COMPATIBILITY_LENGTH": [],
+  "SkillSource": [],
+  "_validate_tuple_source": [
+    "source"
+  ],
+  "_source_path": [
+    "source"
+  ],
+  "_truncate_skill_load_warning": [
+    "error"
+  ],
+  "_derive_source_label": [
+    "source"
+  ],
+  "SkillMetadata": {},
+  "SkillsState": {},
+  "SkillsStateUpdate": {},
+  "_validate_skill_name": [
+    "name",
+    "directory_name"
+  ],
+  "_parse_allowed_tools": [
+    "raw_tools",
+    "skill_path"
+  ],
+  "_parse_skill_metadata": [
+    "content",
+    "skill_path",
+    "directory_name"
+  ],
+  "_validate_metadata": [
+    "raw",
+    "skill_path"
+  ],
+  "_format_skill_annotations": [
+    "skill"
+  ],
+  "_skill_metadata_from_response": [
+    "response",
+    "skill_dir_path",
+    "skill_md_path"
+  ],
+  "_format_skills_source_error": [
+    "source_path",
+    "error"
+  ],
+  "_list_skills_with_errors": [
+    "backend",
+    "source_path"
+  ],
+  "_list_skills": [
+    "backend",
+    "source_path"
+  ],
+  "_alist_skills_with_errors": [
+    "backend",
+    "source_path"
+  ],
+  "_alist_skills": [
+    "backend",
+    "source_path"
+  ],
+  "SKILLS_SYSTEM_PROMPT": [],
+  "SkillsMiddleware": {
+    "state_schema": [],
+    "__init__": [
+      "self"
+    ],
+    "_get_backend": [
+      "self",
+      "state",
+      "runtime",
+      "config"
+    ],
+    "_format_skills_locations": [
+      "self"
+    ],
+    "_format_skills_list": [
+      "self",
+      "skills"
+    ],
+    "_format_skills_load_warnings": [
+      "self",
+      "errors"
+    ],
+    "modify_request": [
+      "self",
+      "request"
+    ],
+    "before_agent": [
+      "self",
+      "state",
+      "runtime",
+      "config"
+    ],
+    "abefore_agent": [
+      "self",
+      "state",
+      "runtime",
+      "config"
+    ],
+    "wrap_model_call": [
+      "self",
+      "request",
+      "handler"
+    ],
+    "awrap_model_call": [
+      "self",
+      "request",
+      "handler"
+    ]
+  },
+  "GraderVerdict": [],
+  "RubricResult": [],
+  "_MAX_TRANSCRIPT_MESSAGES": [],
+  "_MAX_TRANSCRIPT_CHARS_PER_MESSAGE": [],
+  "_MAX_ITERATIONS_HARD_CAP": [],
+  "_PAYLOAD_CLOSER_RE": [],
+  "RUBRIC_GRADER_MESSAGE_SOURCE": [],
+  "GRADER_SYSTEM_PROMPT": [],
+  "CriterionPass": {},
+  "CriterionFail": {},
+  "CriterionEval": [],
+  "RubricEvaluation": {},
+  "RubricState": {},
+  "GraderResponse": {
+    "_check_result_consistency": [
+      "self"
+    ]
+  },
+  "RubricMiddleware": {
+    "state_schema": [],
+    "__init__": [
+      "self"
+    ],
+    "before_agent": [
+      "self",
+      "state",
+      "runtime"
+    ],
+    "abefore_agent": [
+      "self",
+      "state",
+      "runtime"
+    ],
+    "_reset_for_new_rubric": [
+      "self",
+      "state"
+    ],
+    "after_agent": [
+      "self",
+      "state",
+      "runtime"
+    ],
+    "aafter_agent": [
+      "self",
+      "state",
+      "runtime"
+    ],
+    "_prepare_evaluation": [
+      "self",
+      "state",
+      "runtime"
+    ],
+    "_finalize_evaluation": [
+      "self",
+      "graded",
+      "state",
+      "runtime",
+      "grading_run_id",
+      "iteration"
+    ],
+    "_ensure_grader": [
+      "self"
+    ],
+    "_grade": [
+      "self",
+      "state",
+      "iteration"
+    ],
+    "_agrade": [
+      "self",
+      "state",
+      "iteration"
+    ],
+    "_extract_graded": [
+      "result"
+    ],
+    "_build_grader_payload": [
+      "self",
+      "state",
+      "iteration"
+    ],
+    "_revision_prompt": [
+      "evaluation"
+    ],
+    "_build_evaluation": [
+      "self",
+      "graded",
+      "grading_run_id",
+      "iteration"
+    ],
+    "_compose_update": [
+      "self",
+      "state",
+      "evaluation",
+      "graded_result"
+    ],
+    "_handle_grader_exception": [
+      "self",
+      "runtime",
+      "state",
+      "grading_run_id",
+      "iteration",
+      "exc"
+    ],
+    "_emit": [
+      "self",
+      "runtime",
+      "event_type",
+      "grading_run_id",
+      "iteration",
+      "evaluation"
+    ]
+  },
+  "_sanitize_for_payload": [
+    "content"
+  ],
+  "_build_grader_transcript": [
+    "messages"
+  ],
+  "_role_label": [
+    "msg"
+  ],
+  "_coerce_text": [
+    "msg"
+  ],
+  "append_to_system_message": [
+    "system_message",
+    "text"
+  ],
+  "AsyncSubAgent": {},
+  "AsyncTask": {},
+  "_tasks_reducer": [
+    "existing",
+    "update"
+  ],
+  "AsyncSubAgentState": {},
+  "StartAsyncTaskSchema": {},
+  "CheckAsyncTaskSchema": {},
+  "UpdateAsyncTaskSchema": {},
+  "CancelAsyncTaskSchema": {},
+  "ListAsyncTasksSchema": {},
+  "ASYNC_TASK_TOOL_DESCRIPTION": [],
+  "ASYNC_TASK_SYSTEM_PROMPT": [],
+  "_resolve_headers": [
+    "spec"
+  ],
+  "_ClientCache": {
+    "__init__": [
+      "self",
+      "agents"
+    ],
+    "_cache_key": [
+      "self",
+      "spec"
+    ],
+    "get_sync": [
+      "self",
+      "name"
+    ],
+    "get_async": [
+      "self",
+      "name"
+    ]
+  },
+  "_validate_agent_type": [
+    "agent_map",
+    "agent_type"
+  ],
+  "_build_start_tool": [
+    "agent_map",
+    "clients",
+    "tool_description"
+  ],
+  "_build_check_result": [
+    "run",
+    "thread_id",
+    "thread_values"
+  ],
+  "_build_check_command": [
+    "result",
+    "task",
+    "tool_call_id"
+  ],
+  "_resolve_tracked_task": [
+    "task_id",
+    "runtime"
+  ],
+  "_build_check_tool": [
+    "clients"
+  ],
+  "_build_update_tool": [
+    "agent_map",
+    "clients"
+  ],
+  "_build_cancel_tool": [
+    "clients"
+  ],
+  "_TERMINAL_STATUSES": [],
+  "_fetch_live_status": [
+    "clients",
+    "task"
+  ],
+  "_afetch_live_status": [
+    "clients",
+    "task"
+  ],
+  "_format_task_entry": [
+    "task",
+    "status"
+  ],
+  "_filter_tasks": [
+    "tasks",
+    "status_filter"
+  ],
+  "_build_list_tasks_tool": [
+    "clients"
+  ],
+  "_build_async_subagent_tools": [
+    "agents"
+  ],
+  "AsyncSubAgentMiddleware": {
+    "state_schema": [],
+    "__init__": [
+      "self"
+    ],
+    "wrap_model_call": [
+      "self",
+      "request",
+      "handler"
+    ],
+    "awrap_model_call": [
+      "self",
+      "request",
+      "handler"
+    ]
+  },
+  "warn_deprecated": [
+    "since"
+  ],
+  "reset_deprecation_dedupe": [],
+  "DEFAULT_EXECUTE_TIMEOUT": [],
+  "LocalShellBackend": {
+    "__init__": [
+      "self",
+      "root_dir"
+    ],
+    "id": [
+      "self"
+    ],
+    "execute": [
+      "self",
+      "command"
+    ]
+  },
+  "_URL_COMMIT_SUFFIX_RE": [],
+  "ContextHubBackend": {
+    "__init__": [
+      "self",
+      "identifier"
+    ],
+    "_load_tree": [
+      "self"
+    ],
+    "_ensure_cache": [
+      "self"
+    ],
+    "get_linked_entries": [
+      "self"
+    ],
+    "has_prior_commits": [
+      "self"
+    ],
+    "_commit": [
+      "self",
+      "files"
+    ],
+    "_strip_prefix": [
+      "path"
+    ],
+    "read": [
+      "self",
+      "file_path",
+      "offset",
+      "limit"
+    ],
+    "write": [
+      "self",
+      "file_path",
+      "content"
+    ],
+    "edit": [
+      "self",
+      "file_path",
+      "old_string",
+      "new_string",
+      "replace_all"
+    ],
+    "ls": [
+      "self",
+      "path"
+    ],
+    "grep": [
+      "self",
+      "pattern",
+      "path",
+      "glob"
+    ],
+    "glob": [
+      "self",
+      "pattern",
+      "path"
+    ],
+    "upload_files": [
+      "self",
+      "files"
+    ],
+    "download_files": [
+      "self",
+      "paths"
+    ]
+  },
+  "StateBackend": {
+    "__init__": [
+      "self",
+      "runtime"
+    ],
+    "_get_config": [
+      "self"
+    ],
+    "_read_files": [
+      "self"
+    ],
+    "_send_files_update": [
+      "self",
+      "update"
+    ],
+    "_prepare_for_storage": [
+      "self",
+      "file_data"
+    ],
+    "ls": [
+      "self",
+      "path"
+    ],
+    "read": [
+      "self",
+      "file_path",
+      "offset",
+      "limit"
+    ],
+    "write": [
+      "self",
+      "file_path",
+      "content"
+    ],
+    "edit": [
+      "self",
+      "file_path",
+      "old_string",
+      "new_string",
+      "replace_all"
+    ],
+    "grep": [
+      "self",
+      "pattern",
+      "path",
+      "glob"
+    ],
+    "glob": [
+      "self",
+      "pattern",
+      "path"
+    ],
+    "upload_files": [
+      "self",
+      "files"
+    ],
+    "download_files": [
+      "self",
+      "paths"
+    ]
+  },
+  "_remap_grep_path": [
+    "m",
+    "route_prefix"
+  ],
+  "_strip_route_from_pattern": [
+    "pattern",
+    "route_prefix"
+  ],
+  "_remap_file_info_path": [
+    "fi",
+    "route_prefix"
+  ],
+  "_route_for_path": [],
+  "CompositeBackend": {
+    "__init__": [
+      "self",
+      "default",
+      "routes"
+    ],
+    "_get_backend_and_key": [
+      "self",
+      "key"
+    ],
+    "_coerce_ls_result": [
+      "raw"
+    ],
+    "ls": [
+      "self",
+      "path"
+    ],
+    "als": [
+      "self",
+      "path"
+    ],
+    "read": [
+      "self",
+      "file_path",
+      "offset",
+      "limit"
+    ],
+    "aread": [
+      "self",
+      "file_path",
+      "offset",
+      "limit"
+    ],
+    "_coerce_grep_result": [
+      "raw"
+    ],
+    "grep": [
+      "self",
+      "pattern",
+      "path",
+      "glob"
+    ],
+    "agrep": [
+      "self",
+      "pattern",
+      "path",
+      "glob"
+    ],
+    "glob": [
+      "self",
+      "pattern",
+      "path"
+    ],
+    "aglob": [
+      "self",
+      "pattern",
+      "path"
+    ],
+    "write": [
+      "self",
+      "file_path",
+      "content"
+    ],
+    "awrite": [
+      "self",
+      "file_path",
+      "content"
+    ],
+    "edit": [
+      "self",
+      "file_path",
+      "old_string",
+      "new_string",
+      "replace_all"
+    ],
+    "aedit": [
+      "self",
+      "file_path",
+      "old_string",
+      "new_string",
+      "replace_all"
+    ],
+    "execute": [
+      "self",
+      "command"
+    ],
+    "aexecute": [
+      "self",
+      "command"
+    ],
+    "upload_files": [
+      "self",
+      "files"
+    ],
+    "aupload_files": [
+      "self",
+      "files"
+    ],
+    "download_files": [
+      "self",
+      "paths"
+    ],
+    "adownload_files": [
+      "self",
+      "paths"
+    ]
+  },
+  "FileType": [],
+  "MAX_LINE_LENGTH": [],
+  "TOOL_RESULT_TOKEN_LIMIT": [],
+  "TRUNCATION_GUIDANCE": [],
+  "FileInfo": [],
+  "GrepMatch": [],
+  "_normalize_content": [
+    "file_data"
+  ],
+  "sanitize_tool_call_id": [
+    "tool_call_id"
+  ],
+  "format_content_with_line_numbers": [
+    "content",
+    "start_line"
+  ],
+  "check_empty_content": [
+    "content"
+  ],
+  "_get_file_type": [
+    "path"
+  ],
+  "_to_legacy_file_data": [
+    "file_data"
+  ],
+  "file_data_to_string": [
+    "file_data"
+  ],
+  "create_file_data": [
+    "content",
+    "created_at",
+    "encoding"
+  ],
+  "update_file_data": [
+    "file_data",
+    "content"
+  ],
+  "slice_read_response": [
+    "file_data",
+    "offset",
+    "limit"
+  ],
+  "perform_string_replacement": [
+    "content",
+    "old_string",
+    "new_string",
+    "replace_all"
+  ],
+  "truncate_if_too_long": [
+    "result"
+  ],
+  "to_posix_path": [
+    "path"
+  ],
+  "validate_path": [
+    "path"
+  ],
+  "_normalize_path": [
+    "path"
+  ],
+  "_filter_files_by_path": [
+    "files",
+    "normalized_path"
+  ],
+  "_glob_search_files": [
+    "files",
+    "pattern",
+    "path"
+  ],
+  "_format_grep_results": [
+    "results",
+    "output_mode"
+  ],
+  "_grep_search_files": [
+    "files",
+    "pattern",
+    "path",
+    "glob",
+    "output_mode"
+  ],
+  "grep_matches_from_files": [
+    "files",
+    "pattern",
+    "path",
+    "glob"
+  ],
+  "build_grep_results_dict": [
+    "matches"
+  ],
+  "format_grep_matches": [
+    "matches",
+    "output_mode"
+  ],
+  "FileFormat": [],
+  "FileOperationError": [],
+  "FileDownloadResponse": {},
+  "FileUploadResponse": {},
+  "FileData": {},
+  "ReadResult": {},
+  "_Unset": {},
+  "Unset": [],
+  "_normalize_files_update": [
+    "files_update"
+  ],
+  "WriteResult": {
+    "__init__": [
+      "self",
+      "error",
+      "path",
+      "files_update"
+    ]
+  },
+  "EditResult": {
+    "__init__": [
+      "self",
+      "error",
+      "path",
+      "files_update",
+      "occurrences"
+    ]
+  },
+  "LsResult": {},
+  "GrepResult": {},
+  "GlobResult": {},
+  "BackendProtocol": {
+    "ls": [
+      "self",
+      "path"
+    ],
+    "als": [
+      "self",
+      "path"
+    ],
+    "read": [
+      "self",
+      "file_path",
+      "offset",
+      "limit"
+    ],
+    "aread": [
+      "self",
+      "file_path",
+      "offset",
+      "limit"
+    ],
+    "grep": [
+      "self",
+      "pattern",
+      "path",
+      "glob"
+    ],
+    "agrep": [
+      "self",
+      "pattern",
+      "path",
+      "glob"
+    ],
+    "glob": [
+      "self",
+      "pattern",
+      "path"
+    ],
+    "aglob": [
+      "self",
+      "pattern",
+      "path"
+    ],
+    "write": [
+      "self",
+      "file_path",
+      "content"
+    ],
+    "awrite": [
+      "self",
+      "file_path",
+      "content"
+    ],
+    "edit": [
+      "self",
+      "file_path",
+      "old_string",
+      "new_string",
+      "replace_all"
+    ],
+    "aedit": [
+      "self",
+      "file_path",
+      "old_string",
+      "new_string",
+      "replace_all"
+    ],
+    "upload_files": [
+      "self",
+      "files"
+    ],
+    "aupload_files": [
+      "self",
+      "files"
+    ],
+    "download_files": [
+      "self",
+      "paths"
+    ],
+    "adownload_files": [
+      "self",
+      "paths"
+    ],
+    "ls_info": [
+      "self",
+      "path"
+    ],
+    "als_info": [
+      "self",
+      "path"
+    ],
+    "glob_info": [
+      "self",
+      "pattern",
+      "path"
+    ],
+    "aglob_info": [
+      "self",
+      "pattern",
+      "path"
+    ],
+    "grep_raw": [
+      "self",
+      "pattern",
+      "path",
+      "glob"
+    ],
+    "agrep_raw": [
+      "self",
+      "pattern",
+      "path",
+      "glob"
+    ]
+  },
+  "ExecuteResponse": {},
+  "SandboxBackendProtocol": {
+    "id": [
+      "self"
+    ],
+    "execute": [
+      "self",
+      "command"
+    ],
+    "aexecute": [
+      "self",
+      "command"
+    ]
+  },
+  "execute_accepts_timeout": [
+    "cls"
+  ],
+  "BACKEND_TYPES": [],
+  "_resolve_ripgrep_path": [],
+  "FilesystemBackend": {
+    "__init__": [
+      "self",
+      "root_dir",
+      "virtual_mode",
+      "max_file_size_mb"
+    ],
+    "_resolve_path": [
+      "self",
+      "key"
+    ],
+    "_to_virtual_path": [
+      "self",
+      "path"
+    ],
+    "ls": [
+      "self",
+      "path"
+    ],
+    "read": [
+      "self",
+      "file_path",
+      "offset",
+      "limit"
+    ],
+    "write": [
+      "self",
+      "file_path",
+      "content"
+    ],
+    "edit": [
+      "self",
+      "file_path",
+      "old_string",
+      "new_string",
+      "replace_all"
+    ],
+    "grep": [
+      "self",
+      "pattern",
+      "path",
+      "glob"
+    ],
+    "_ripgrep_search": [
+      "self",
+      "pattern",
+      "base_full",
+      "include_glob"
+    ],
+    "_python_search": [
+      "self",
+      "pattern",
+      "base_full",
+      "include_glob"
+    ],
+    "glob": [
+      "self",
+      "pattern",
+      "path"
+    ],
+    "upload_files": [
+      "self",
+      "files"
+    ],
+    "download_files": [
+      "self",
+      "paths"
+    ]
+  },
+  "_map_exception_to_standard_error": [
+    "exc"
+  ],
+  "_WIN32_ERROR_CANT_RESOLVE_FILENAME": [],
+  "_is_eloop_oserror": [
+    "exc"
+  ],
+  "_is_symlink_loop_error": [
+    "exc"
+  ],
+  "_raise_if_symlink_loop": [
+    "path"
+  ],
+  "BackendContext": {},
+  "_NamespaceRuntimeCompat": {
+    "__init__": [
+      "self",
+      "runtime",
+      "state"
+    ],
+    "runtime": [
+      "self"
+    ],
+    "state": [
+      "self"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ]
+  },
+  "NamespaceFactory": [],
+  "_NAMESPACE_COMPONENT_RE": [],
+  "_validate_namespace": [
+    "namespace"
+  ],
+  "StoreBackend": {
+    "__init__": [
+      "self",
+      "runtime"
+    ],
+    "_get_store": [
+      "self"
+    ],
+    "_get_namespace": [
+      "self"
+    ],
+    "_get_namespace_legacy": [
+      "self"
+    ],
+    "_convert_store_item_to_file_data": [
+      "self",
+      "store_item"
+    ],
+    "_convert_file_data_to_store_value": [
+      "self",
+      "file_data"
+    ],
+    "_search_store_paginated": [
+      "self",
+      "store",
+      "namespace"
+    ],
+    "ls": [
+      "self",
+      "path"
+    ],
+    "read": [
+      "self",
+      "file_path",
+      "offset",
+      "limit"
+    ],
+    "aread": [
+      "self",
+      "file_path",
+      "offset",
+      "limit"
+    ],
+    "write": [
+      "self",
+      "file_path",
+      "content"
+    ],
+    "awrite": [
+      "self",
+      "file_path",
+      "content"
+    ],
+    "edit": [
+      "self",
+      "file_path",
+      "old_string",
+      "new_string",
+      "replace_all"
+    ],
+    "aedit": [
+      "self",
+      "file_path",
+      "old_string",
+      "new_string",
+      "replace_all"
+    ],
+    "grep": [
+      "self",
+      "pattern",
+      "path",
+      "glob"
+    ],
+    "glob": [
+      "self",
+      "pattern",
+      "path"
+    ],
+    "upload_files": [
+      "self",
+      "files"
+    ],
+    "download_files": [
+      "self",
+      "paths"
+    ]
+  },
+  "_GLOB_COMMAND_TEMPLATE": [],
+  "_WRITE_CHECK_TEMPLATE": [],
+  "_EDIT_COMMAND_TEMPLATE": [],
+  "_EDIT_TMPFILE_TEMPLATE": [],
+  "_READ_COMMAND_TEMPLATE": [],
+  "BaseSandbox": {
+    "execute": [
+      "self",
+      "command"
+    ],
+    "ls": [
+      "self",
+      "path"
+    ],
+    "read": [
+      "self",
+      "file_path",
+      "offset",
+      "limit"
+    ],
+    "_write_preflight": [
+      "self",
+      "file_path"
+    ],
+    "write": [
+      "self",
+      "file_path",
+      "content"
+    ],
+    "edit": [
+      "self",
+      "file_path",
+      "old_string",
+      "new_string",
+      "replace_all"
+    ],
+    "_edit_inline": [
+      "self",
+      "file_path",
+      "old_string",
+      "new_string",
+      "replace_all"
+    ],
+    "_edit_via_upload": [
+      "self",
+      "file_path",
+      "old_string",
+      "new_string",
+      "replace_all"
+    ],
+    "_map_edit_error": [
+      "error",
+      "file_path",
+      "old_string"
+    ],
+    "grep": [
+      "self",
+      "pattern",
+      "path",
+      "glob"
+    ],
+    "glob": [
+      "self",
+      "pattern",
+      "path"
+    ],
+    "id": [
+      "self"
+    ],
+    "upload_files": [
+      "self",
+      "files"
+    ],
+    "download_files": [
+      "self",
+      "paths"
+    ]
+  },
+  "_binary_read_result": [
+    "file_path",
+    "raw"
+  ],
+  "LangSmithSandbox": {
+    "__init__": [
+      "self",
+      "sandbox"
+    ],
+    "id": [
+      "self"
+    ],
+    "execute": [
+      "self",
+      "command"
+    ],
+    "write": [
+      "self",
+      "file_path",
+      "content"
+    ],
+    "read": [
+      "self",
+      "file_path",
+      "offset",
+      "limit"
+    ],
+    "download_files": [
+      "self",
+      "paths"
+    ],
+    "upload_files": [
+      "self",
+      "files"
+    ]
+  }
+}
