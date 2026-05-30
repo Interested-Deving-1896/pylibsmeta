@@ -1,0 +1,67 @@
+{
+  "_sym_db": [],
+  "DESCRIPTOR": [],
+  "_globals": [],
+  "ModelServiceStub": {
+    "__init__": [
+      "self",
+      "channel"
+    ]
+  },
+  "ModelServiceServicer": {
+    "GetModelStatus": [
+      "self",
+      "request",
+      "context"
+    ],
+    "HandleReloadConfigRequest": [
+      "self",
+      "request",
+      "context"
+    ]
+  },
+  "add_ModelServiceServicer_to_server": [
+    "servicer",
+    "server"
+  ],
+  "_b": [],
+  "_MODELSERVICE": [],
+  "_PREDICTIONSERVICE": [],
+  "PredictionServiceStub": {
+    "__init__": [
+      "self",
+      "channel"
+    ]
+  },
+  "PredictionServiceServicer": {
+    "Classify": [
+      "self",
+      "request",
+      "context"
+    ],
+    "Regress": [
+      "self",
+      "request",
+      "context"
+    ],
+    "Predict": [
+      "self",
+      "request",
+      "context"
+    ],
+    "MultiInference": [
+      "self",
+      "request",
+      "context"
+    ],
+    "GetModelMetadata": [
+      "self",
+      "request",
+      "context"
+    ]
+  },
+  "add_PredictionServiceServicer_to_server": [
+    "servicer",
+    "server"
+  ]
+}
