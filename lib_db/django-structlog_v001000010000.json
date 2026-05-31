@@ -1,0 +1,231 @@
+{
+  "DjangoStructLogConfig": {
+    "name": [],
+    "ready": [
+      "self"
+    ]
+  },
+  "AppSettings": {
+    "PREFIX": [],
+    "CELERY_ENABLED": [
+      "self"
+    ],
+    "CELERY_DEFAULT_LOG_LEVEL": [
+      "self"
+    ],
+    "CELERY_TASK_START_LOG_LEVEL": [
+      "self"
+    ],
+    "CELERY_TASK_SUCCESS_LOG_LEVEL": [
+      "self"
+    ],
+    "CELERY_TASK_NOTICE_LOG_LEVEL": [
+      "self"
+    ],
+    "CELERY_TASK_FAILURE_LOG_LEVEL": [
+      "self"
+    ],
+    "CELERY_TASK_ERROR_LOG_LEVEL": [
+      "self"
+    ],
+    "IP_LOGGING_ENABLED": [
+      "self"
+    ],
+    "REQUEST_CANCELLED_LOG_LEVEL": [
+      "self"
+    ],
+    "STATUS_DEFAULT_LOG_LEVEL": [
+      "self"
+    ],
+    "STATUS_START_LOG_LEVEL": [
+      "self"
+    ],
+    "STATUS_2XX_LOG_LEVEL": [
+      "self"
+    ],
+    "STATUS_4XX_LOG_LEVEL": [
+      "self"
+    ],
+    "STATUS_5XX_LOG_LEVEL": [
+      "self"
+    ],
+    "COMMAND_LOGGING_ENABLED": [
+      "self"
+    ],
+    "USER_ID_FIELD": [
+      "self"
+    ]
+  },
+  "app_settings": [],
+  "logger": [],
+  "DjangoCommandReceiver": {
+    "__init__": [
+      "self"
+    ],
+    "pre_receiver": [
+      "self",
+      "sender"
+    ],
+    "post_receiver": [
+      "self",
+      "sender",
+      "outcome"
+    ],
+    "connect_signals": [
+      "self"
+    ]
+  },
+  "bind_extra_request_metadata": [],
+  "bind_extra_request_finished_metadata": [],
+  "bind_extra_request_failed_metadata": [],
+  "update_failure_response": [],
+  "name": [],
+  "VERSION": [],
+  "__version__": [],
+  "bind_extra_task_metadata": [],
+  "modify_context_before_task_publish": [],
+  "pre_task_succeeded": [],
+  "DjangoStructLogInitStep": {
+    "__init__": [
+      "self",
+      "parent"
+    ]
+  },
+  "CeleryReceiver": {
+    "__init__": [
+      "self"
+    ],
+    "receiver_before_task_publish": [
+      "self",
+      "sender",
+      "headers",
+      "body",
+      "properties",
+      "routing_key"
+    ],
+    "receiver_after_task_publish": [
+      "self",
+      "sender",
+      "headers",
+      "body",
+      "routing_key"
+    ],
+    "receiver_task_prerun": [
+      "self",
+      "task_id",
+      "task"
+    ],
+    "receiver_task_retry": [
+      "self",
+      "request",
+      "reason",
+      "einfo"
+    ],
+    "receiver_task_success": [
+      "self",
+      "result",
+      "sender"
+    ],
+    "receiver_task_failure": [
+      "self",
+      "task_id",
+      "exception",
+      "traceback",
+      "einfo",
+      "sender"
+    ],
+    "add_duration_ms": [
+      "cls",
+      "task",
+      "log_vars"
+    ],
+    "receiver_task_revoked": [
+      "self",
+      "request",
+      "terminated",
+      "signum",
+      "expired"
+    ],
+    "receiver_task_unknown": [
+      "self",
+      "message",
+      "exc",
+      "name",
+      "id"
+    ],
+    "receiver_task_rejected": [
+      "self",
+      "message",
+      "exc"
+    ],
+    "connect_signals": [
+      "self"
+    ],
+    "connect_worker_signals": [
+      "self"
+    ]
+  },
+  "__all__": [],
+  "get_request_header": [
+    "request",
+    "header_key",
+    "meta_key"
+  ],
+  "sync_streaming_content_wrapper": [
+    "streaming_content",
+    "context"
+  ],
+  "async_streaming_content_wrapper": [
+    "streaming_content",
+    "context"
+  ],
+  "RequestMiddleware": {
+    "sync_capable": [],
+    "async_capable": [],
+    "__init__": [
+      "self",
+      "get_response"
+    ],
+    "__call__": [
+      "self",
+      "request"
+    ],
+    "__acall__": [
+      "self",
+      "request"
+    ],
+    "_log_level_for_status_code": [
+      "self",
+      "status_code"
+    ],
+    "handle_response": [
+      "self",
+      "request",
+      "response"
+    ],
+    "prepare": [
+      "self",
+      "request"
+    ],
+    "bind_ip": [
+      "cls",
+      "request"
+    ],
+    "format_request": [
+      "request"
+    ],
+    "bind_user_id": [
+      "request"
+    ],
+    "process_got_request_exception": [
+      "self",
+      "sender",
+      "request"
+    ],
+    "_process_exception": [
+      "self",
+      "request",
+      "exception"
+    ]
+  }
+}
