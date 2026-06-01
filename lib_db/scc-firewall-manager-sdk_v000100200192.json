@@ -1,0 +1,1551 @@
+{
+  "RequestSerialized": [],
+  "ApiClient": {
+    "PRIMITIVE_TYPES": [],
+    "NATIVE_TYPES_MAPPING": [],
+    "_pool": [],
+    "__init__": [
+      "self",
+      "configuration",
+      "header_name",
+      "header_value",
+      "cookie"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_value",
+      "traceback"
+    ],
+    "user_agent": [
+      "self",
+      "value"
+    ],
+    "set_default_header": [
+      "self",
+      "header_name",
+      "header_value"
+    ],
+    "_default": [],
+    "get_default": [
+      "cls"
+    ],
+    "set_default": [
+      "cls",
+      "default"
+    ],
+    "param_serialize": [
+      "self",
+      "method",
+      "resource_path",
+      "path_params",
+      "query_params",
+      "header_params",
+      "body",
+      "post_params",
+      "files",
+      "auth_settings",
+      "collection_formats",
+      "_host",
+      "_request_auth"
+    ],
+    "call_api": [
+      "self",
+      "method",
+      "url",
+      "header_params",
+      "body",
+      "post_params",
+      "_request_timeout"
+    ],
+    "response_deserialize": [
+      "self",
+      "response_data",
+      "response_types_map"
+    ],
+    "sanitize_for_serialization": [
+      "self",
+      "obj"
+    ],
+    "deserialize": [
+      "self",
+      "response_text",
+      "response_type"
+    ],
+    "__deserialize": [
+      "self",
+      "data",
+      "klass"
+    ],
+    "parameters_to_tuples": [
+      "self",
+      "params",
+      "collection_formats"
+    ],
+    "parameters_to_url_query": [
+      "self",
+      "params",
+      "collection_formats"
+    ],
+    "files_parameters": [
+      "self",
+      "files"
+    ],
+    "select_header_accept": [
+      "self",
+      "accepts"
+    ],
+    "select_header_content_type": [
+      "self",
+      "content_types"
+    ],
+    "update_params_for_auth": [
+      "self",
+      "headers",
+      "queries",
+      "auth_settings",
+      "resource_path",
+      "method",
+      "body",
+      "request_auth"
+    ],
+    "_apply_auth_params": [
+      "self",
+      "headers",
+      "queries",
+      "resource_path",
+      "method",
+      "body",
+      "auth_setting"
+    ],
+    "__deserialize_file": [
+      "self",
+      "response"
+    ],
+    "__deserialize_primitive": [
+      "self",
+      "data",
+      "klass"
+    ],
+    "__deserialize_object": [
+      "self",
+      "value"
+    ],
+    "__deserialize_date": [
+      "self",
+      "string"
+    ],
+    "__deserialize_datetime": [
+      "self",
+      "string"
+    ],
+    "__deserialize_enum": [
+      "self",
+      "data",
+      "klass"
+    ],
+    "__deserialize_model": [
+      "self",
+      "data",
+      "klass"
+    ]
+  },
+  "OpenApiException": {},
+  "ApiTypeError": {
+    "__init__": [
+      "self",
+      "msg",
+      "path_to_item",
+      "valid_classes",
+      "key_type"
+    ]
+  },
+  "ApiValueError": {
+    "__init__": [
+      "self",
+      "msg",
+      "path_to_item"
+    ]
+  },
+  "ApiAttributeError": {
+    "__init__": [
+      "self",
+      "msg",
+      "path_to_item"
+    ]
+  },
+  "ApiKeyError": {
+    "__init__": [
+      "self",
+      "msg",
+      "path_to_item"
+    ]
+  },
+  "ApiException": {
+    "__init__": [
+      "self",
+      "status",
+      "reason",
+      "http_resp"
+    ],
+    "from_response": [
+      "cls"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "BadRequestException": {},
+  "NotFoundException": {},
+  "UnauthorizedException": {},
+  "ForbiddenException": {},
+  "ServiceException": {},
+  "render_path": [
+    "path_to_item"
+  ],
+  "T": [],
+  "ApiResponse": {
+    "model_config": []
+  },
+  "__version__": [],
+  "JSON_SCHEMA_VALIDATION_KEYWORDS": [],
+  "Configuration": {
+    "_default": [],
+    "__init__": [
+      "self",
+      "host",
+      "api_key",
+      "api_key_prefix",
+      "username",
+      "password",
+      "access_token",
+      "server_index",
+      "server_variables",
+      "server_operation_index",
+      "server_operation_variables",
+      "ssl_ca_cert"
+    ],
+    "__deepcopy__": [
+      "self",
+      "memo"
+    ],
+    "__setattr__": [
+      "self",
+      "name",
+      "value"
+    ],
+    "set_default": [
+      "cls",
+      "default"
+    ],
+    "get_default_copy": [
+      "cls"
+    ],
+    "get_default": [
+      "cls"
+    ],
+    "logger_file": [
+      "self",
+      "value"
+    ],
+    "debug": [
+      "self",
+      "value"
+    ],
+    "logger_format": [
+      "self",
+      "value"
+    ],
+    "get_api_key_with_prefix": [
+      "self",
+      "identifier",
+      "alias"
+    ],
+    "get_basic_auth_token": [
+      "self"
+    ],
+    "auth_settings": [
+      "self"
+    ],
+    "to_debug_report": [
+      "self"
+    ],
+    "get_host_settings": [
+      "self"
+    ],
+    "get_host_from_settings": [
+      "self",
+      "index",
+      "variables",
+      "servers"
+    ],
+    "host": [
+      "self",
+      "value"
+    ]
+  },
+  "SUPPORTED_SOCKS_PROXIES": [],
+  "RESTResponseType": [],
+  "is_socks_proxy_url": [
+    "url"
+  ],
+  "RESTResponse": {
+    "__init__": [
+      "self",
+      "resp"
+    ],
+    "read": [
+      "self"
+    ],
+    "getheaders": [
+      "self"
+    ],
+    "getheader": [
+      "self",
+      "name",
+      "default"
+    ]
+  },
+  "RESTClientObject": {
+    "__init__": [
+      "self",
+      "configuration"
+    ],
+    "request": [
+      "self",
+      "method",
+      "url",
+      "headers",
+      "body",
+      "post_params",
+      "_request_timeout"
+    ]
+  },
+  "TransactionsApi": {
+    "__init__": [
+      "self",
+      "api_client"
+    ],
+    "cancel_transaction": [
+      "self",
+      "transaction_uid",
+      "_request_timeout",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "cancel_transaction_with_http_info": [
+      "self",
+      "transaction_uid",
+      "_request_timeout",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "cancel_transaction_without_preload_content": [
+      "self",
+      "transaction_uid",
+      "_request_timeout",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "_cancel_transaction_serialize": [
+      "self",
+      "transaction_uid",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "get_transaction": [
+      "self",
+      "transaction_uid",
+      "_request_timeout",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "get_transaction_with_http_info": [
+      "self",
+      "transaction_uid",
+      "_request_timeout",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "get_transaction_without_preload_content": [
+      "self",
+      "transaction_uid",
+      "_request_timeout",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "_get_transaction_serialize": [
+      "self",
+      "transaction_uid",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ]
+  },
+  "ApplicationInsightsApi": {
+    "__init__": [
+      "self",
+      "api_client"
+    ],
+    "get_application_outages": [
+      "self",
+      "start",
+      "end",
+      "time_range",
+      "application_name",
+      "_request_timeout",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "get_application_outages_with_http_info": [
+      "self",
+      "start",
+      "end",
+      "time_range",
+      "application_name",
+      "_request_timeout",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "get_application_outages_without_preload_content": [
+      "self",
+      "start",
+      "end",
+      "time_range",
+      "application_name",
+      "_request_timeout",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "_get_application_outages_serialize": [
+      "self",
+      "start",
+      "end",
+      "time_range",
+      "application_name",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ]
+  },
+  "ObjectManagementApi": {
+    "__init__": [
+      "self",
+      "api_client"
+    ],
+    "create_object": [
+      "self",
+      "create_request",
+      "_request_timeout",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "create_object_with_http_info": [
+      "self",
+      "create_request",
+      "_request_timeout",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "create_object_without_preload_content": [
+      "self",
+      "create_request",
+      "_request_timeout",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "_create_object_serialize": [
+      "self",
+      "create_request",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "create_targets": [
+      "self",
+      "uid",
+      "targets_request",
+      "_request_timeout",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "create_targets_with_http_info": [
+      "self",
+      "uid",
+      "targets_request",
+      "_request_timeout",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "create_targets_without_preload_content": [
+      "self",
+      "uid",
+      "targets_request",
+      "_request_timeout",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "_create_targets_serialize": [
+      "self",
+      "uid",
+      "targets_request",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "delete_object": [
+      "self",
+      "uid",
+      "forced_delete",
+      "_request_timeout",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "delete_object_with_http_info": [
+      "self",
+      "uid",
+      "forced_delete",
+      "_request_timeout",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "delete_object_without_preload_content": [
+      "self",
+      "uid",
+      "forced_delete",
+      "_request_timeout",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "_delete_object_serialize": [
+      "self",
+      "uid",
+      "forced_delete",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "get_duplicate_objects": [
+      "self",
+      "uid",
+      "target_uid",
+      "_request_timeout",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "get_duplicate_objects_with_http_info": [
+      "self",
+      "uid",
+      "target_uid",
+      "_request_timeout",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "get_duplicate_objects_without_preload_content": [
+      "self",
+      "uid",
+      "target_uid",
+      "_request_timeout",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "_get_duplicate_objects_serialize": [
+      "self",
+      "uid",
+      "target_uid",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "get_issues_count": [
+      "self",
+      "q",
+      "_request_timeout",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "get_issues_count_with_http_info": [
+      "self",
+      "q",
+      "_request_timeout",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "get_issues_count_without_preload_content": [
+      "self",
+      "q",
+      "_request_timeout",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "_get_issues_count_serialize": [
+      "self",
+      "q",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "get_object": [
+      "self",
+      "uid",
+      "fields",
+      "_request_timeout",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "get_object_with_http_info": [
+      "self",
+      "uid",
+      "fields",
+      "_request_timeout",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "get_object_without_preload_content": [
+      "self",
+      "uid",
+      "fields",
+      "_request_timeout",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "_get_object_serialize": [
+      "self",
+      "uid",
+      "fields",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "get_object_usages": [
+      "self",
+      "uid",
+      "_request_timeout",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "get_object_usages_with_http_info": [
+      "self",
+      "uid",
+      "_request_timeout",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "get_object_usages_without_preload_content": [
+      "self",
+      "uid",
+      "_request_timeout",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "_get_object_usages_serialize": [
+      "self",
+      "uid",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "get_objects": [
+      "self",
+      "q",
+      "include_overrides",
+      "offset",
+      "limit",
+      "sort_by",
+      "sort",
+      "_request_timeout",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "get_objects_with_http_info": [
+      "self",
+      "q",
+      "include_overrides",
+      "offset",
+      "limit",
+      "sort_by",
+      "sort",
+      "_request_timeout",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "get_objects_without_preload_content": [
+      "self",
+      "q",
+      "include_overrides",
+      "offset",
+      "limit",
+      "sort_by",
+      "sort",
+      "_request_timeout",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "_get_objects_serialize": [
+      "self",
+      "q",
+      "include_overrides",
+      "offset",
+      "limit",
+      "sort_by",
+      "sort",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "get_override_object": [
+      "self",
+      "uid",
+      "target_uid",
+      "_request_timeout",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "get_override_object_with_http_info": [
+      "self",
+      "uid",
+      "target_uid",
+      "_request_timeout",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "get_override_object_without_preload_content": [
+      "self",
+      "uid",
+      "target_uid",
+      "_request_timeout",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "_get_override_object_serialize": [
+      "self",
+      "uid",
+      "target_uid",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "get_targets": [
+      "self",
+      "uid",
+      "q",
+      "offset",
+      "limit",
+      "_request_timeout",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "get_targets_with_http_info": [
+      "self",
+      "uid",
+      "q",
+      "offset",
+      "limit",
+      "_request_timeout",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "get_targets_without_preload_content": [
+      "self",
+      "uid",
+      "q",
+      "offset",
+      "limit",
+      "_request_timeout",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "_get_targets_serialize": [
+      "self",
+      "uid",
+      "q",
+      "offset",
+      "limit",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "modify_object": [
+      "self",
+      "uid",
+      "update_request",
+      "_request_timeout",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "modify_object_with_http_info": [
+      "self",
+      "uid",
+      "update_request",
+      "_request_timeout",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "modify_object_without_preload_content": [
+      "self",
+      "uid",
+      "update_request",
+      "_request_timeout",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ],
+    "_modify_object_serialize": [
+      "self",
+      "uid",
+      "update_request",
+      "_request_auth",
+      "_content_type",
+      "_headers",
+      "_host_index"
+    ]
+  },
+  "SourceDestinationPortsValue": {
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  },
+  "IssuesCount": {
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  },
+  "ListObjectResponse": {
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  },
+  "DuplicateGroupDto": {
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  },
+  "Icmp6Value": {
+    "icmp6_code_validate_enum": [
+      "cls",
+      "value"
+    ],
+    "icmp6_type_validate_enum": [
+      "cls",
+      "value"
+    ],
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  },
+  "PublicThousandEyesOutageDto": {
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  },
+  "PortsValue": {
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  },
+  "CreateRequest": {
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  },
+  "Target": {
+    "type_validate_enum": [
+      "cls",
+      "value"
+    ],
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  },
+  "IssuesDto": {
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  },
+  "SERVICEOBJECTVALUECONTENT_ONE_OF_SCHEMAS": [],
+  "ServiceObjectValueContent": {
+    "model_config": [],
+    "__init__": [
+      "self"
+    ],
+    "actual_instance_must_validate_oneof": [
+      "cls",
+      "v"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ]
+  },
+  "NetworkObjectContent": {
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  },
+  "ServiceObjectContent": {
+    "protocol_validate_enum": [
+      "cls",
+      "value"
+    ],
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  },
+  "GroupContent": {
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  },
+  "UnifiedObjectListView": {
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  },
+  "TargetsRequest": {
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  },
+  "AuthenticationError": {
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  },
+  "OBJECTCONTENT_ONE_OF_SCHEMAS": [],
+  "ObjectContent": {
+    "model_config": [],
+    "__init__": [
+      "self"
+    ],
+    "actual_instance_must_validate_oneof": [
+      "cls",
+      "v"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ]
+  },
+  "CdoTransaction": {
+    "cdo_transaction_status_validate_enum": [
+      "cls",
+      "value"
+    ],
+    "transaction_type_validate_enum": [
+      "cls",
+      "value"
+    ],
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  },
+  "SharedObjectValue": {
+    "object_type_validate_enum": [
+      "cls",
+      "value"
+    ],
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  },
+  "ProtocolValueContent": {
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  },
+  "Icmp4Value": {
+    "icmp4_code_validate_enum": [
+      "cls",
+      "value"
+    ],
+    "icmp4_type_validate_enum": [
+      "cls",
+      "value"
+    ],
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  },
+  "Override": {
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  },
+  "SINGLECONTENT_ONE_OF_SCHEMAS": [],
+  "SingleContent": {
+    "model_config": [],
+    "__init__": [
+      "self"
+    ],
+    "actual_instance_must_validate_oneof": [
+      "cls",
+      "v"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_str": [
+      "self"
+    ]
+  },
+  "ObjectResponse": {
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  },
+  "UrlObjectContent": {
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  },
+  "UpdateRequest": {
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  },
+  "ReferenceInfo": {
+    "object_type_validate_enum": [
+      "cls",
+      "value"
+    ],
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  },
+  "CommonApiError": {
+    "error_code_validate_enum": [
+      "cls",
+      "value"
+    ],
+    "model_config": [],
+    "to_str": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "json_str"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "obj"
+    ]
+  }
+}
