@@ -1,0 +1,3350 @@
+{
+  "_apply_bearer_authorization_override": [
+    "client_wrapper",
+    "bearer_token"
+  ],
+  "DeepgramClient": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "AsyncDeepgramClient": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "__all__": [],
+  "_TARGET_MODULES": [],
+  "_SyncTransportShim": {
+    "__init__": [
+      "self",
+      "factory"
+    ],
+    "connect": [
+      "self",
+      "url",
+      "additional_headers"
+    ]
+  },
+  "_AsyncTransportShim": {
+    "__init__": [
+      "self",
+      "factory"
+    ],
+    "_connect": [
+      "self",
+      "url",
+      "extra_headers"
+    ],
+    "__call__": [
+      "self",
+      "url",
+      "extra_headers"
+    ]
+  },
+  "install_transport": [],
+  "restore_transport": [],
+  "DeepgramClientEnvironment": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "__getattr__": [
+    "attr_name"
+  ],
+  "__dir__": [],
+  "BaseClient": {
+    "__init__": [
+      "self"
+    ],
+    "agent": [
+      "self"
+    ],
+    "auth": [
+      "self"
+    ],
+    "listen": [
+      "self"
+    ],
+    "manage": [
+      "self"
+    ],
+    "read": [
+      "self"
+    ],
+    "self_hosted": [
+      "self"
+    ],
+    "speak": [
+      "self"
+    ],
+    "voice_agent": [
+      "self"
+    ]
+  },
+  "_make_default_async_client": [
+    "timeout",
+    "follow_redirects"
+  ],
+  "AsyncBaseClient": {
+    "__init__": [
+      "self"
+    ],
+    "agent": [
+      "self"
+    ],
+    "auth": [
+      "self"
+    ],
+    "listen": [
+      "self"
+    ],
+    "manage": [
+      "self"
+    ],
+    "read": [
+      "self"
+    ],
+    "self_hosted": [
+      "self"
+    ],
+    "speak": [
+      "self"
+    ],
+    "voice_agent": [
+      "self"
+    ]
+  },
+  "__version__": [],
+  "SDK_DEFAULT_TIMEOUT": [],
+  "DefaultAsyncHttpxClient": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "SyncTransport": {
+    "send": [
+      "self",
+      "data"
+    ],
+    "recv": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "AsyncTransport": {
+    "send": [
+      "self",
+      "data"
+    ],
+    "recv": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "BadRequestError": {
+    "__init__": [
+      "self",
+      "body",
+      "headers"
+    ]
+  },
+  "TextBuilder": {
+    "__init__": [
+      "self"
+    ],
+    "text": [
+      "self",
+      "content"
+    ],
+    "pronunciation": [
+      "self",
+      "word",
+      "ipa"
+    ],
+    "pause": [
+      "self",
+      "duration_ms"
+    ],
+    "from_ssml": [
+      "self",
+      "ssml_text"
+    ],
+    "_update_counts_from_text": [
+      "self",
+      "text"
+    ],
+    "build": [
+      "self"
+    ]
+  },
+  "add_pronunciation": [
+    "text",
+    "word",
+    "ipa"
+  ],
+  "ssml_to_deepgram": [
+    "ssml_text"
+  ],
+  "validate_ipa": [
+    "ipa"
+  ],
+  "validate_pause": [
+    "duration_ms"
+  ],
+  "ManageClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "v1": [
+      "self"
+    ]
+  },
+  "AsyncManageClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "v1": [
+      "self"
+    ]
+  },
+  "RawManageClient": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "AsyncRawManageClient": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "V1Client": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "models": [
+      "self"
+    ],
+    "projects": [
+      "self"
+    ]
+  },
+  "AsyncV1Client": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "models": [
+      "self"
+    ],
+    "projects": [
+      "self"
+    ]
+  },
+  "RawV1Client": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "AsyncRawV1Client": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "ModelsClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "model_id"
+    ]
+  },
+  "AsyncModelsClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "model_id"
+    ]
+  },
+  "RawModelsClient": {
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "model_id"
+    ]
+  },
+  "AsyncRawModelsClient": {
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "model_id"
+    ]
+  },
+  "OMIT": [],
+  "ProjectsClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "project_id"
+    ],
+    "delete": [
+      "self",
+      "project_id"
+    ],
+    "update": [
+      "self",
+      "project_id"
+    ],
+    "leave": [
+      "self",
+      "project_id"
+    ],
+    "keys": [
+      "self"
+    ],
+    "members": [
+      "self"
+    ],
+    "models": [
+      "self"
+    ],
+    "requests": [
+      "self"
+    ],
+    "usage": [
+      "self"
+    ],
+    "billing": [
+      "self"
+    ]
+  },
+  "AsyncProjectsClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "project_id"
+    ],
+    "delete": [
+      "self",
+      "project_id"
+    ],
+    "update": [
+      "self",
+      "project_id"
+    ],
+    "leave": [
+      "self",
+      "project_id"
+    ],
+    "keys": [
+      "self"
+    ],
+    "members": [
+      "self"
+    ],
+    "models": [
+      "self"
+    ],
+    "requests": [
+      "self"
+    ],
+    "usage": [
+      "self"
+    ],
+    "billing": [
+      "self"
+    ]
+  },
+  "RawProjectsClient": {
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "project_id"
+    ],
+    "delete": [
+      "self",
+      "project_id"
+    ],
+    "update": [
+      "self",
+      "project_id"
+    ],
+    "leave": [
+      "self",
+      "project_id"
+    ]
+  },
+  "AsyncRawProjectsClient": {
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "project_id"
+    ],
+    "delete": [
+      "self",
+      "project_id"
+    ],
+    "update": [
+      "self",
+      "project_id"
+    ],
+    "leave": [
+      "self",
+      "project_id"
+    ]
+  },
+  "BillingClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "balances": [
+      "self"
+    ],
+    "breakdown": [
+      "self"
+    ],
+    "fields": [
+      "self"
+    ],
+    "purchases": [
+      "self"
+    ]
+  },
+  "AsyncBillingClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "balances": [
+      "self"
+    ],
+    "breakdown": [
+      "self"
+    ],
+    "fields": [
+      "self"
+    ],
+    "purchases": [
+      "self"
+    ]
+  },
+  "RawBillingClient": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "AsyncRawBillingClient": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "PurchasesClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "project_id"
+    ]
+  },
+  "AsyncPurchasesClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "project_id"
+    ]
+  },
+  "RawPurchasesClient": {
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "project_id"
+    ]
+  },
+  "AsyncRawPurchasesClient": {
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "project_id"
+    ]
+  },
+  "FieldsClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "project_id"
+    ]
+  },
+  "AsyncFieldsClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "project_id"
+    ]
+  },
+  "RawFieldsClient": {
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "project_id"
+    ]
+  },
+  "AsyncRawFieldsClient": {
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "project_id"
+    ]
+  },
+  "BalancesClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "project_id"
+    ],
+    "get": [
+      "self",
+      "project_id",
+      "balance_id"
+    ]
+  },
+  "AsyncBalancesClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "project_id"
+    ],
+    "get": [
+      "self",
+      "project_id",
+      "balance_id"
+    ]
+  },
+  "RawBalancesClient": {
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "project_id"
+    ],
+    "get": [
+      "self",
+      "project_id",
+      "balance_id"
+    ]
+  },
+  "AsyncRawBalancesClient": {
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "project_id"
+    ],
+    "get": [
+      "self",
+      "project_id",
+      "balance_id"
+    ]
+  },
+  "BreakdownClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "project_id"
+    ]
+  },
+  "AsyncBreakdownClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "project_id"
+    ]
+  },
+  "RawBreakdownClient": {
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "project_id"
+    ]
+  },
+  "AsyncRawBreakdownClient": {
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "project_id"
+    ]
+  },
+  "BreakdownListRequestDeployment": [],
+  "BreakdownListRequestGroupingItem": [],
+  "MembersClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "project_id"
+    ],
+    "delete": [
+      "self",
+      "project_id",
+      "member_id"
+    ],
+    "invites": [
+      "self"
+    ],
+    "scopes": [
+      "self"
+    ]
+  },
+  "AsyncMembersClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "project_id"
+    ],
+    "delete": [
+      "self",
+      "project_id",
+      "member_id"
+    ],
+    "invites": [
+      "self"
+    ],
+    "scopes": [
+      "self"
+    ]
+  },
+  "RawMembersClient": {
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "project_id"
+    ],
+    "delete": [
+      "self",
+      "project_id",
+      "member_id"
+    ]
+  },
+  "AsyncRawMembersClient": {
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "project_id"
+    ],
+    "delete": [
+      "self",
+      "project_id",
+      "member_id"
+    ]
+  },
+  "ScopesClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "project_id",
+      "member_id"
+    ],
+    "update": [
+      "self",
+      "project_id",
+      "member_id"
+    ]
+  },
+  "AsyncScopesClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "project_id",
+      "member_id"
+    ],
+    "update": [
+      "self",
+      "project_id",
+      "member_id"
+    ]
+  },
+  "RawScopesClient": {
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "project_id",
+      "member_id"
+    ],
+    "update": [
+      "self",
+      "project_id",
+      "member_id"
+    ]
+  },
+  "AsyncRawScopesClient": {
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "project_id",
+      "member_id"
+    ],
+    "update": [
+      "self",
+      "project_id",
+      "member_id"
+    ]
+  },
+  "InvitesClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "project_id"
+    ],
+    "create": [
+      "self",
+      "project_id"
+    ],
+    "delete": [
+      "self",
+      "project_id",
+      "email"
+    ]
+  },
+  "AsyncInvitesClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "project_id"
+    ],
+    "create": [
+      "self",
+      "project_id"
+    ],
+    "delete": [
+      "self",
+      "project_id",
+      "email"
+    ]
+  },
+  "RawInvitesClient": {
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "project_id"
+    ],
+    "create": [
+      "self",
+      "project_id"
+    ],
+    "delete": [
+      "self",
+      "project_id",
+      "email"
+    ]
+  },
+  "AsyncRawInvitesClient": {
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "project_id"
+    ],
+    "create": [
+      "self",
+      "project_id"
+    ],
+    "delete": [
+      "self",
+      "project_id",
+      "email"
+    ]
+  },
+  "RequestsClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "project_id"
+    ],
+    "get": [
+      "self",
+      "project_id",
+      "request_id"
+    ]
+  },
+  "AsyncRequestsClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "project_id"
+    ],
+    "get": [
+      "self",
+      "project_id",
+      "request_id"
+    ]
+  },
+  "RawRequestsClient": {
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "project_id"
+    ],
+    "get": [
+      "self",
+      "project_id",
+      "request_id"
+    ]
+  },
+  "AsyncRawRequestsClient": {
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "project_id"
+    ],
+    "get": [
+      "self",
+      "project_id",
+      "request_id"
+    ]
+  },
+  "RequestsListRequestDeployment": [],
+  "RequestsListRequestEndpoint": [],
+  "RequestsListRequestStatus": [],
+  "RequestsListRequestMethod": [],
+  "KeysClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "project_id"
+    ],
+    "create": [
+      "self",
+      "project_id"
+    ],
+    "get": [
+      "self",
+      "project_id",
+      "key_id"
+    ],
+    "delete": [
+      "self",
+      "project_id",
+      "key_id"
+    ]
+  },
+  "AsyncKeysClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "project_id"
+    ],
+    "create": [
+      "self",
+      "project_id"
+    ],
+    "get": [
+      "self",
+      "project_id",
+      "key_id"
+    ],
+    "delete": [
+      "self",
+      "project_id",
+      "key_id"
+    ]
+  },
+  "RawKeysClient": {
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "project_id"
+    ],
+    "create": [
+      "self",
+      "project_id"
+    ],
+    "get": [
+      "self",
+      "project_id",
+      "key_id"
+    ],
+    "delete": [
+      "self",
+      "project_id",
+      "key_id"
+    ]
+  },
+  "AsyncRawKeysClient": {
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "project_id"
+    ],
+    "create": [
+      "self",
+      "project_id"
+    ],
+    "get": [
+      "self",
+      "project_id",
+      "key_id"
+    ],
+    "delete": [
+      "self",
+      "project_id",
+      "key_id"
+    ]
+  },
+  "KeysListRequestStatus": [],
+  "UsageClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "project_id"
+    ],
+    "breakdown": [
+      "self"
+    ],
+    "fields": [
+      "self"
+    ]
+  },
+  "AsyncUsageClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "project_id"
+    ],
+    "breakdown": [
+      "self"
+    ],
+    "fields": [
+      "self"
+    ]
+  },
+  "RawUsageClient": {
+    "__init__": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "project_id"
+    ]
+  },
+  "AsyncRawUsageClient": {
+    "__init__": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "project_id"
+    ]
+  },
+  "UsageGetRequestDeployment": [],
+  "UsageGetRequestMethod": [],
+  "UsageGetRequestEndpoint": [],
+  "BreakdownGetRequestMethod": [],
+  "BreakdownGetRequestGrouping": [],
+  "BreakdownGetRequestEndpoint": [],
+  "BreakdownGetRequestDeployment": [],
+  "DeleteProjectKeyV1ResponseParams": {},
+  "SharedIntentsResultsIntentsSegmentsItemParams": {},
+  "CreateProjectDistributionCredentialsV1ResponseDistributionCredentialsParams": {},
+  "ListProjectBalancesV1ResponseParams": {},
+  "UsageBreakdownV1ResponseParams": {},
+  "ListenV1ResponseResultsChannelsItemAlternativesItemEntitiesItemParams": {},
+  "ListProjectsV1ResponseProjectsItemParams": {},
+  "ListProjectKeysV1ResponseApiKeysItemApiKeyParams": {},
+  "SpeakSettingsV1Params": {},
+  "CreateKeyV1RequestOneParams": [],
+  "ListProjectDistributionCredentialsV1ResponseDistributionCredentialsItemDistributionCredentialsParams": {},
+  "DeleteProjectV1ResponseParams": {},
+  "ElevenLabsSpeakProviderParams": {},
+  "ListProjectMemberScopesV1ResponseParams": {},
+  "ListenV1AcceptedResponseParams": {},
+  "ReadV1RequestTextParams": {},
+  "GetProjectDistributionCredentialsV1ResponseParams": {},
+  "AnthropicParams": {},
+  "ListenV1ResponseResultsChannelsItemAlternativesItemParagraphsParams": {},
+  "GetModelV1ResponseMetadataMetadataParams": {},
+  "ReadV1ResponseMetadataMetadataSummaryInfoParams": {},
+  "ListenV1ResponseMetadataSummaryInfoParams": {},
+  "SharedIntentsResultsIntentsSegmentsItemIntentsItemParams": {},
+  "DeleteProjectMemberV1ResponseParams": {},
+  "SpeakSettingsV1Provider_DeepgramParams": {},
+  "SpeakSettingsV1Provider_ElevenLabsParams": {},
+  "SpeakSettingsV1Provider_CartesiaParams": {},
+  "SpeakSettingsV1Provider_OpenAiParams": {},
+  "SpeakSettingsV1Provider_AwsPollyParams": {},
+  "SpeakSettingsV1ProviderParams": [],
+  "ReadV1RequestParams": [],
+  "GetModelV1ResponseParams": [],
+  "AgentThinkModelsV1ResponseModelsItemThreeParams": {},
+  "GetModelV1ResponseBatchParams": {},
+  "AgentThinkModelsV1ResponseModelsItemTwoParams": {},
+  "AgentThinkModelsV1ResponseModelsItemOneParams": {},
+  "ThinkSettingsV1FunctionsItemParams": {},
+  "UsageV1ResponseParams": {},
+  "ListenV1ResponseParams": {},
+  "UsageFieldsV1ResponseModelsItemParams": {},
+  "GroqParams": {},
+  "UsageBreakdownV1ResponseResolutionParams": {},
+  "CartesiaParams": {},
+  "ListenV1ResponseResultsChannelsParams": [],
+  "DeleteProjectInviteV1ResponseParams": {},
+  "ReadV1ResponseResultsSummaryParams": {},
+  "GetProjectKeyV1ResponseItemParams": {},
+  "SpeakSettingsV1EndpointParams": {},
+  "ListenV1ResponseResultsChannelsItemAlternativesItemTopicsItemParams": {},
+  "ListAgentVariablesV1ResponseParams": {},
+  "ListProjectKeysV1ResponseApiKeysItemParams": {},
+  "ListenV2LanguageHintParams": [],
+  "SharedTopicsResultsTopicsSegmentsItemTopicsItemParams": {},
+  "ListModelsV1ResponseParams": {},
+  "GetProjectKeyV1ResponseItemMemberParams": {},
+  "ListenV1ResponseResultsUtterancesItemWordsItemParams": {},
+  "ListenV1ResponseResultsSummaryParams": {},
+  "ListBillingFieldsV1ResponseParams": {},
+  "CartesiaSpeakProviderVoiceParams": {},
+  "BillingBreakdownV1ResponseResolutionParams": {},
+  "ListenV1ResponseMetadataTopicsInfoParams": {},
+  "UsageBreakdownV1ResponseResultsItemParams": {},
+  "DeepgramListenProviderV2Params": {},
+  "ListenV1ResponseMetadataIntentsInfoParams": {},
+  "ListenV1ResponseResultsChannelsItemSearchItemHitsItemParams": {},
+  "ListProjectPurchasesV1ResponseOrdersItemParams": {},
+  "ListModelsV1ResponseSttModelsParams": {},
+  "ErrorResponseLegacyErrorParams": {},
+  "LeaveProjectV1ResponseParams": {},
+  "ThinkSettingsV1FunctionsItemEndpointParams": {},
+  "BillingBreakdownV1ResponseParams": {},
+  "ListenV1ResponseResultsChannelsItemAlternativesItemWordsItemParams": {},
+  "ListProjectMembersV1ResponseParams": {},
+  "AgentThinkModelsV1ResponseParams": {},
+  "ReadV1ResponseResultsSummaryResultsParams": {},
+  "DeepgramListenProviderV1Params": {},
+  "ReadV1ResponseMetadataMetadataIntentsInfoParams": {},
+  "GetProjectKeyV1ResponseParams": {},
+  "DeepgramListenProviderV2LanguageHintParams": [],
+  "ListenV1ResponseResultsChannelsItemParams": {},
+  "UpdateProjectMemberScopesV1ResponseParams": {},
+  "ListenV1ResponseResultsChannelsItemAlternativesItemParagraphsParagraphsItemParams": {},
+  "GrantV1ResponseParams": {},
+  "UsageFieldsV1ResponseParams": {},
+  "SharedSentimentsSegmentsItemParams": {},
+  "GetProjectKeyV1ResponseItemMemberApiKeyParams": {},
+  "SharedTopicsResultsTopicsSegmentsItemParams": {},
+  "SharedIntentsResultsParams": {},
+  "CreateProjectDistributionCredentialsV1ResponseParams": {},
+  "UsageBreakdownV1ResponseResultsItemGroupingParams": {},
+  "ReadV1ResponseMetadataMetadataParams": {},
+  "SharedIntentsParams": {},
+  "GetModelV1ResponseMetadataParams": {},
+  "ListProjectMembersV1ResponseMembersItemParams": {},
+  "OpenAiSpeakProviderParams": {},
+  "OpenAiThinkProviderParams": {},
+  "ListProjectPurchasesV1ResponseParams": {},
+  "ListProjectDistributionCredentialsV1ResponseParams": {},
+  "ListProjectsV1ResponseParams": {},
+  "AwsPollySpeakProviderCredentialsParams": {},
+  "ThinkSettingsV1EndpointParams": {},
+  "GetProjectDistributionCredentialsV1ResponseDistributionCredentialsParams": {},
+  "ListProjectBalancesV1ResponseBalancesItemParams": {},
+  "UsageV1ResponseResolutionParams": {},
+  "ListProjectDistributionCredentialsV1ResponseDistributionCredentialsItemParams": {},
+  "ListenV1ResponseResultsUtterancesItemParams": {},
+  "ListenV1ResponseMetadataParams": {},
+  "ReadV1ResponseResultsParams": {},
+  "CreateProjectInviteV1ResponseParams": {},
+  "CreateAgentConfigurationV1ResponseParams": {},
+  "ReadV1ResponseResultsSummaryResultsSummaryParams": {},
+  "ListenV2KeytermParams": [],
+  "ListProjectInvitesV1ResponseParams": {},
+  "GetProjectRequestV1ResponseParams": {},
+  "SharedTopicsResultsTopicsParams": {},
+  "GetProjectDistributionCredentialsV1ResponseMemberParams": {},
+  "ListProjectRequestsV1ResponseParams": {},
+  "DeepgramParams": {},
+  "ListenV1ResponseResultsChannelsItemAlternativesItemSummariesItemParams": {},
+  "SharedIntentsResultsIntentsParams": {},
+  "ListenV1ResponseResultsParams": {},
+  "ListProjectDistributionCredentialsV1ResponseDistributionCredentialsItemMemberParams": {},
+  "ListModelsV1ResponseTtsModelsMetadataParams": {},
+  "ListenV1ResponseResultsChannelsItemSearchItemParams": {},
+  "ListAgentConfigurationsV1ResponseParams": {},
+  "ReadV1ResponseMetadataParams": {},
+  "ReadV1ResponseParams": {},
+  "SharedTopicsParams": {},
+  "ListenV1ResponseResultsChannelsItemAlternativesItemParams": {},
+  "AgentThinkModelsV1ResponseModelsItemIdParams": {},
+  "ThinkSettingsV1Provider_OpenAiParams": {},
+  "ThinkSettingsV1Provider_AwsBedrockParams": {},
+  "ThinkSettingsV1Provider_AnthropicParams": {},
+  "ThinkSettingsV1Provider_GoogleParams": {},
+  "ThinkSettingsV1Provider_GroqParams": {},
+  "ThinkSettingsV1ProviderParams": [],
+  "AwsBedrockThinkProviderCredentialsParams": {},
+  "UpdateProjectV1ResponseParams": {},
+  "BillingBreakdownV1ResponseResultsItemParams": {},
+  "ListenV1ResponseMetadataSentimentInfoParams": {},
+  "ErrorResponseModernErrorParams": {},
+  "SharedSentimentsAverageParams": {},
+  "BillingBreakdownV1ResponseResultsItemGroupingParams": {},
+  "GetProjectBalanceV1ResponseParams": {},
+  "AgentConfigurationV1Params": {},
+  "ListProjectKeysV1ResponseParams": {},
+  "GetProjectV1ResponseParams": {},
+  "CreateKeyV1ResponseParams": {},
+  "ListenV1ResponseResultsChannelsItemAlternativesItemParagraphsParagraphsItemSentencesItemParams": {},
+  "CreateProjectDistributionCredentialsV1ResponseMemberParams": {},
+  "ThinkSettingsV1ContextLengthParams": [],
+  "CreateKeyV1RequestParams": [],
+  "AwsPollySpeakProviderParams": {},
+  "SharedTopicsResultsParams": {},
+  "ListModelsV1ResponseTtsModelsParams": {},
+  "ThinkSettingsV1Params": {},
+  "ListProjectKeysV1ResponseApiKeysItemMemberParams": {},
+  "ProjectRequestResponseParams": {},
+  "GoogleParams": {},
+  "SharedSentimentsParams": {},
+  "ReadV1RequestUrlParams": {},
+  "ErrorResponseParams": [],
+  "ReadV1ResponseMetadataMetadataSentimentInfoParams": {},
+  "ListenV1ResponseResultsUtterancesParams": [],
+  "ReadV1ResponseMetadataMetadataTopicsInfoParams": {},
+  "AgentVariableV1Params": {},
+  "AwsBedrockThinkProviderParams": {},
+  "AgentThinkModelsV1ResponseModelsItemZeroParams": {},
+  "AgentThinkModelsV1ResponseModelsItemParams": [],
+  "ListProjectInvitesV1ResponseInvitesItemParams": {},
+  "VoiceAgentClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "configurations": [
+      "self"
+    ],
+    "variables": [
+      "self"
+    ]
+  },
+  "AsyncVoiceAgentClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "configurations": [
+      "self"
+    ],
+    "variables": [
+      "self"
+    ]
+  },
+  "RawVoiceAgentClient": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "AsyncRawVoiceAgentClient": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "VariablesClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "project_id"
+    ],
+    "create": [
+      "self",
+      "project_id"
+    ],
+    "get": [
+      "self",
+      "project_id",
+      "variable_id"
+    ],
+    "delete": [
+      "self",
+      "project_id",
+      "variable_id"
+    ],
+    "update": [
+      "self",
+      "project_id",
+      "variable_id"
+    ]
+  },
+  "AsyncVariablesClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "project_id"
+    ],
+    "create": [
+      "self",
+      "project_id"
+    ],
+    "get": [
+      "self",
+      "project_id",
+      "variable_id"
+    ],
+    "delete": [
+      "self",
+      "project_id",
+      "variable_id"
+    ],
+    "update": [
+      "self",
+      "project_id",
+      "variable_id"
+    ]
+  },
+  "RawVariablesClient": {
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "project_id"
+    ],
+    "create": [
+      "self",
+      "project_id"
+    ],
+    "get": [
+      "self",
+      "project_id",
+      "variable_id"
+    ],
+    "delete": [
+      "self",
+      "project_id",
+      "variable_id"
+    ],
+    "update": [
+      "self",
+      "project_id",
+      "variable_id"
+    ]
+  },
+  "AsyncRawVariablesClient": {
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "project_id"
+    ],
+    "create": [
+      "self",
+      "project_id"
+    ],
+    "get": [
+      "self",
+      "project_id",
+      "variable_id"
+    ],
+    "delete": [
+      "self",
+      "project_id",
+      "variable_id"
+    ],
+    "update": [
+      "self",
+      "project_id",
+      "variable_id"
+    ]
+  },
+  "ConfigurationsClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "project_id"
+    ],
+    "create": [
+      "self",
+      "project_id"
+    ],
+    "get": [
+      "self",
+      "project_id",
+      "agent_id"
+    ],
+    "update": [
+      "self",
+      "project_id",
+      "agent_id"
+    ],
+    "delete": [
+      "self",
+      "project_id",
+      "agent_id"
+    ]
+  },
+  "AsyncConfigurationsClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "project_id"
+    ],
+    "create": [
+      "self",
+      "project_id"
+    ],
+    "get": [
+      "self",
+      "project_id",
+      "agent_id"
+    ],
+    "update": [
+      "self",
+      "project_id",
+      "agent_id"
+    ],
+    "delete": [
+      "self",
+      "project_id",
+      "agent_id"
+    ]
+  },
+  "RawConfigurationsClient": {
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "project_id"
+    ],
+    "create": [
+      "self",
+      "project_id"
+    ],
+    "get": [
+      "self",
+      "project_id",
+      "agent_id"
+    ],
+    "update": [
+      "self",
+      "project_id",
+      "agent_id"
+    ],
+    "delete": [
+      "self",
+      "project_id",
+      "agent_id"
+    ]
+  },
+  "AsyncRawConfigurationsClient": {
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "project_id"
+    ],
+    "create": [
+      "self",
+      "project_id"
+    ],
+    "get": [
+      "self",
+      "project_id",
+      "agent_id"
+    ],
+    "update": [
+      "self",
+      "project_id",
+      "agent_id"
+    ],
+    "delete": [
+      "self",
+      "project_id",
+      "agent_id"
+    ]
+  },
+  "DeleteProjectKeyV1Response": {},
+  "SharedIntentsResultsIntentsSegmentsItem": {},
+  "CreateProjectDistributionCredentialsV1ResponseDistributionCredentials": {},
+  "ListProjectBalancesV1Response": {},
+  "UsageBreakdownV1Response": {},
+  "ListenV1ResponseResultsChannelsItemAlternativesItemEntitiesItem": {},
+  "ListProjectsV1ResponseProjectsItem": {},
+  "ListProjectKeysV1ResponseApiKeysItemApiKey": {},
+  "SpeakSettingsV1": {},
+  "CreateKeyV1RequestOne": [],
+  "OpenAiSpeakProviderVoice": [],
+  "ListenV1Encoding": [],
+  "ListenV1DetectEntities": [],
+  "ListProjectDistributionCredentialsV1ResponseDistributionCredentialsItemDistributionCredentials": {},
+  "DeleteProjectV1Response": {},
+  "ElevenLabsSpeakProvider": {},
+  "ListProjectMemberScopesV1Response": {},
+  "DeleteAgentConfigurationV1Response": [],
+  "ListenV1AcceptedResponse": {},
+  "ReadV1RequestText": {},
+  "GetProjectDistributionCredentialsV1Response": {},
+  "Anthropic": {},
+  "AgentThinkModelsV1ResponseModelsItemZeroId": [],
+  "ListenV1ResponseResultsChannelsItemAlternativesItemParagraphs": {},
+  "GetModelV1ResponseMetadataMetadata": {},
+  "ReadV1ResponseMetadataMetadataSummaryInfo": {},
+  "ListenV1ResponseMetadataSummaryInfo": {},
+  "SharedIntentsResultsIntentsSegmentsItemIntentsItem": {},
+  "DeleteProjectMemberV1Response": {},
+  "ListenV1Extra": [],
+  "SpeakSettingsV1Provider_Deepgram": {},
+  "SpeakSettingsV1Provider_ElevenLabs": {},
+  "SpeakSettingsV1Provider_Cartesia": {},
+  "SpeakSettingsV1Provider_OpenAi": {},
+  "SpeakSettingsV1Provider_AwsPolly": {},
+  "SpeakSettingsV1Provider": [],
+  "ReadV1Request": [],
+  "GetModelV1Response": [],
+  "AgentThinkModelsV1ResponseModelsItemThree": {},
+  "ListenV1MipOptOut": [],
+  "GetModelV1ResponseBatch": {},
+  "AgentThinkModelsV1ResponseModelsItemTwo": {},
+  "ListenV1Model": [],
+  "AgentThinkModelsV1ResponseModelsItemOne": {},
+  "ThinkSettingsV1FunctionsItem": {},
+  "ListenV1Numerals": [],
+  "AwsPollySpeakProviderCredentialsType": [],
+  "UsageV1Response": {},
+  "ListenV1SampleRate": [],
+  "ListenV1Response": {},
+  "UsageFieldsV1ResponseModelsItem": {},
+  "Groq": {},
+  "UsageBreakdownV1ResponseResolution": {},
+  "Cartesia": {},
+  "ListenV1ResponseResultsChannels": [],
+  "DeleteProjectInviteV1Response": {},
+  "ReadV1ResponseResultsSummary": {},
+  "GetProjectKeyV1ResponseItem": {},
+  "SpeakSettingsV1Endpoint": {},
+  "ListenV1ResponseResultsChannelsItemAlternativesItemTopicsItem": {},
+  "ListAgentVariablesV1Response": {},
+  "ListenV1Search": [],
+  "OpenAiThinkProviderReasoningMode": [],
+  "ListProjectKeysV1ResponseApiKeysItem": {},
+  "ListenV2LanguageHint": [],
+  "ErrorResponseTextError": [],
+  "DeleteAgentVariableV1Response": [],
+  "SharedTopicsResultsTopicsSegmentsItemTopicsItem": {},
+  "ListModelsV1Response": {},
+  "CartesiaSpeakProviderModelId": [],
+  "ListenV1Callback": [],
+  "AnthropicThinkProviderModel": [],
+  "ListenV1SmartFormat": [],
+  "GetProjectKeyV1ResponseItemMember": {},
+  "ListenV1ResponseResultsUtterancesItemWordsItem": {},
+  "ListenV2MipOptOut": [],
+  "ListenV1ResponseResultsSummary": {},
+  "ListenV1Multichannel": [],
+  "ListBillingFieldsV1Response": {},
+  "CartesiaSpeakProviderVoice": {},
+  "AgentThinkModelsV1ResponseModelsItemOneId": [],
+  "BillingBreakdownV1ResponseResolution": {},
+  "ListenV1ResponseMetadataTopicsInfo": {},
+  "UsageBreakdownV1ResponseResultsItem": {},
+  "ListenV2Model": [],
+  "DeepgramListenProviderV2": {},
+  "ListenV1Tag": [],
+  "ListenV1ResponseMetadataIntentsInfo": {},
+  "ListenV1ResponseResultsChannelsItemSearchItemHitsItem": {},
+  "ListProjectPurchasesV1ResponseOrdersItem": {},
+  "ListenV1CallbackMethod": [],
+  "ListModelsV1ResponseSttModels": {},
+  "ErrorResponseLegacyError": {},
+  "LeaveProjectV1Response": {},
+  "ThinkSettingsV1FunctionsItemEndpoint": {},
+  "BillingBreakdownV1Response": {},
+  "ListenV2SampleRate": [],
+  "ListenV1ResponseResultsChannelsItemAlternativesItemWordsItem": {},
+  "ListProjectMembersV1Response": {},
+  "AgentThinkModelsV1Response": {},
+  "ReadV1ResponseResultsSummaryResults": {},
+  "DeepgramListenProviderV1": {},
+  "ReadV1ResponseMetadataMetadataIntentsInfo": {},
+  "GetProjectKeyV1Response": {},
+  "DeepgramListenProviderV2LanguageHint": [],
+  "ListenV1ResponseResultsChannelsItem": {},
+  "UpdateProjectMemberScopesV1Response": {},
+  "ListenV1ResponseResultsChannelsItemAlternativesItemParagraphsParagraphsItem": {},
+  "GrantV1Response": {},
+  "UsageFieldsV1Response": {},
+  "ListenV1Punctuate": [],
+  "SharedSentimentsSegmentsItem": {},
+  "GetProjectKeyV1ResponseItemMemberApiKey": {},
+  "SpeakV1Encoding": [],
+  "SharedTopicsResultsTopicsSegmentsItem": {},
+  "SharedIntentsResults": {},
+  "CreateProjectDistributionCredentialsV1Response": {},
+  "SpeakV1Model": [],
+  "UsageBreakdownV1ResponseResultsItemGrouping": {},
+  "ReadV1ResponseMetadataMetadata": {},
+  "AgentThinkModelsV1ResponseModelsItemTwoId": [],
+  "SpeakV1MipOptOut": [],
+  "SharedIntents": {},
+  "ListenV1Language": [],
+  "ListenV1Channels": [],
+  "GetModelV1ResponseMetadata": {},
+  "ListProjectMembersV1ResponseMembersItem": {},
+  "OpenAiSpeakProvider": {},
+  "OpenAiThinkProvider": {},
+  "ListProjectPurchasesV1Response": {},
+  "ListProjectDistributionCredentialsV1Response": {},
+  "ListProjectsV1Response": {},
+  "AwsPollySpeakProviderCredentials": {},
+  "ThinkSettingsV1Endpoint": {},
+  "GetProjectDistributionCredentialsV1ResponseDistributionCredentials": {},
+  "ListProjectBalancesV1ResponseBalancesItem": {},
+  "UsageV1ResponseResolution": {},
+  "ListProjectDistributionCredentialsV1ResponseDistributionCredentialsItem": {},
+  "ListenV1ResponseResultsUtterancesItem": {},
+  "ListenV1ResponseMetadata": {},
+  "ReadV1ResponseResults": {},
+  "AwsPollySpeakProviderEngine": [],
+  "CreateProjectInviteV1Response": {},
+  "CreateAgentConfigurationV1Response": {},
+  "AwsBedrockThinkProviderCredentialsType": [],
+  "ReadV1ResponseResultsSummaryResultsSummary": {},
+  "ListenV2Keyterm": [],
+  "DeepgramSpeakProviderModel": [],
+  "ListProjectInvitesV1Response": {},
+  "GetProjectRequestV1Response": {},
+  "SharedTopicsResultsTopics": {},
+  "GetProjectDistributionCredentialsV1ResponseMember": {},
+  "ListenV1VadEvents": [],
+  "ListProjectRequestsV1Response": {},
+  "Deepgram": {},
+  "ListenV2EotThreshold": [],
+  "ListenV1ResponseResultsChannelsItemAlternativesItemSummariesItem": {},
+  "SharedIntentsResultsIntents": {},
+  "ListenV2Encoding": [],
+  "ListBillingFieldsV1ResponseDeploymentsItem": [],
+  "ListenV1ResponseResults": {},
+  "ListProjectDistributionCredentialsV1ResponseDistributionCredentialsItemMember": {},
+  "ListModelsV1ResponseTtsModelsMetadata": {},
+  "ListenV1ResponseResultsChannelsItemSearchItem": {},
+  "ListenV2Tag": [],
+  "ListenV1Replace": [],
+  "ListAgentConfigurationsV1Response": {},
+  "ListenV1Dictation": [],
+  "ReadV1ResponseMetadata": {},
+  "ListenV1InterimResults": [],
+  "ReadV1Response": {},
+  "SharedTopics": {},
+  "ListenV1ResponseResultsChannelsItemAlternativesItem": {},
+  "SpeakV1SampleRate": [],
+  "SpeakV1Response": [],
+  "AgentThinkModelsV1ResponseModelsItemId": {},
+  "ThinkSettingsV1Provider_OpenAi": {},
+  "ThinkSettingsV1Provider_AwsBedrock": {},
+  "ThinkSettingsV1Provider_Anthropic": {},
+  "ThinkSettingsV1Provider_Google": {},
+  "ThinkSettingsV1Provider_Groq": {},
+  "ThinkSettingsV1Provider": [],
+  "AwsBedrockThinkProviderCredentials": {},
+  "UpdateProjectV1Response": {},
+  "ListenV1Endpointing": [],
+  "BillingBreakdownV1ResponseResultsItem": {},
+  "ListenV1ResponseMetadataSentimentInfo": {},
+  "ErrorResponseModernError": {},
+  "ListenV1Redact": [],
+  "SharedSentimentsAverage": {},
+  "BillingBreakdownV1ResponseResultsItemGrouping": {},
+  "ListenV2EotTimeoutMs": [],
+  "GetProjectBalanceV1Response": {},
+  "AgentConfigurationV1": {},
+  "ListenV2EagerEotThreshold": [],
+  "ListProjectKeysV1Response": {},
+  "GetProjectV1Response": {},
+  "GoogleThinkProviderModel": [],
+  "CreateKeyV1Response": {},
+  "OpenAiThinkProviderModel": [],
+  "OpenAiSpeakProviderModel": [],
+  "ListenV1ProfanityFilter": [],
+  "ListenV1ResponseResultsChannelsItemAlternativesItemParagraphsParagraphsItemSentencesItem": {},
+  "CreateProjectDistributionCredentialsV1ResponseMember": {},
+  "ListenV1Keyterm": [],
+  "GroqThinkProviderReasoningMode": [],
+  "ListenV1UtteranceEndMs": [],
+  "ThinkSettingsV1ContextLength": [],
+  "CreateKeyV1Request": [],
+  "AwsPollySpeakProvider": {},
+  "SharedTopicsResults": {},
+  "AwsPollySpeakProviderVoice": [],
+  "ListenV1RequestFile": [],
+  "ListModelsV1ResponseTtsModels": {},
+  "ThinkSettingsV1": {},
+  "ListProjectKeysV1ResponseApiKeysItemMember": {},
+  "ProjectRequestResponse": {},
+  "Google": {},
+  "ListenV1Version": [],
+  "SharedSentiments": {},
+  "ReadV1RequestUrl": {},
+  "AwsBedrockThinkProviderModel": [],
+  "ErrorResponse": [],
+  "ElevenLabsSpeakProviderModelId": [],
+  "ReadV1ResponseMetadataMetadataSentimentInfo": {},
+  "ListenV1ResponseResultsUtterances": [],
+  "ReadV1ResponseMetadataMetadataTopicsInfo": {},
+  "AgentVariableV1": {},
+  "AwsBedrockThinkProvider": {},
+  "ListenV1Keywords": [],
+  "AgentThinkModelsV1ResponseModelsItemZero": {},
+  "AgentThinkModelsV1ResponseModelsItem": [],
+  "ListenV1Diarize": [],
+  "SpeakV1Speed": [],
+  "ListProjectInvitesV1ResponseInvitesItem": {},
+  "SelfHostedClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "v1": [
+      "self"
+    ]
+  },
+  "AsyncSelfHostedClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "v1": [
+      "self"
+    ]
+  },
+  "RawSelfHostedClient": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "AsyncRawSelfHostedClient": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "DistributionCredentialsClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "project_id"
+    ],
+    "create": [
+      "self",
+      "project_id"
+    ],
+    "get": [
+      "self",
+      "project_id",
+      "distribution_credentials_id"
+    ],
+    "delete": [
+      "self",
+      "project_id",
+      "distribution_credentials_id"
+    ]
+  },
+  "AsyncDistributionCredentialsClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "project_id"
+    ],
+    "create": [
+      "self",
+      "project_id"
+    ],
+    "get": [
+      "self",
+      "project_id",
+      "distribution_credentials_id"
+    ],
+    "delete": [
+      "self",
+      "project_id",
+      "distribution_credentials_id"
+    ]
+  },
+  "RawDistributionCredentialsClient": {
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "project_id"
+    ],
+    "create": [
+      "self",
+      "project_id"
+    ],
+    "get": [
+      "self",
+      "project_id",
+      "distribution_credentials_id"
+    ],
+    "delete": [
+      "self",
+      "project_id",
+      "distribution_credentials_id"
+    ]
+  },
+  "AsyncRawDistributionCredentialsClient": {
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "project_id"
+    ],
+    "create": [
+      "self",
+      "project_id"
+    ],
+    "get": [
+      "self",
+      "project_id",
+      "distribution_credentials_id"
+    ],
+    "delete": [
+      "self",
+      "project_id",
+      "distribution_credentials_id"
+    ]
+  },
+  "DistributionCredentialsCreateRequestScopesItem": [],
+  "BaseClientWrapper": {
+    "__init__": [
+      "self"
+    ],
+    "get_headers": [
+      "self"
+    ],
+    "get_custom_headers": [
+      "self"
+    ],
+    "get_environment": [
+      "self"
+    ],
+    "get_timeout": [
+      "self"
+    ]
+  },
+  "SyncClientWrapper": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "AsyncClientWrapper": {
+    "__init__": [
+      "self"
+    ],
+    "async_get_headers": [
+      "self"
+    ]
+  },
+  "_coerce_query_value": [
+    "value"
+  ],
+  "traverse_query_dict": [
+    "dict_flat",
+    "key_prefix"
+  ],
+  "single_query_encoder": [
+    "query_key",
+    "query_value"
+  ],
+  "encode_query": [
+    "query"
+  ],
+  "remove_none_from_dict": [
+    "original"
+  ],
+  "T": [],
+  "BaseHttpResponse": {
+    "__init__": [
+      "self",
+      "response"
+    ],
+    "headers": [
+      "self"
+    ],
+    "status_code": [
+      "self"
+    ]
+  },
+  "HttpResponse": {
+    "__init__": [
+      "self",
+      "response",
+      "data"
+    ],
+    "data": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "AsyncHttpResponse": {
+    "__init__": [
+      "self",
+      "response",
+      "data"
+    ],
+    "data": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "ApiError": {
+    "__init__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "IS_PYDANTIC_V2": [],
+  "parse_rfc2822_datetime": [
+    "v"
+  ],
+  "Rfc2822DateTime": {
+    "__get_validators__": [
+      "cls"
+    ],
+    "__get_pydantic_core_schema__": [
+      "cls",
+      "_source_type",
+      "_handler"
+    ]
+  },
+  "serialize_datetime": [
+    "v"
+  ],
+  "UnionMetadata": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "Model": [],
+  "_maybe_resolve_forward_ref": [
+    "type_",
+    "host"
+  ],
+  "UncheckedBaseModel": {
+    "model_construct": [
+      "cls",
+      "_fields_set"
+    ],
+    "construct": [
+      "cls",
+      "_fields_set"
+    ]
+  },
+  "_validate_collection_items_compatible": [
+    "collection",
+    "target_type"
+  ],
+  "_get_literal_field_value": [
+    "inner_type",
+    "field_name",
+    "field",
+    "object_"
+  ],
+  "_literal_fields_match_strict": [
+    "inner_type",
+    "object_"
+  ],
+  "_convert_undiscriminated_union_type": [
+    "union_type",
+    "object_",
+    "host"
+  ],
+  "_convert_union_type": [
+    "type_",
+    "object_",
+    "host"
+  ],
+  "construct_type": [],
+  "_get_is_populate_by_name": [
+    "model"
+  ],
+  "PydanticField": [],
+  "_get_model_fields": [
+    "model"
+  ],
+  "_get_field_default": [
+    "field"
+  ],
+  "SetIntStr": [],
+  "DictIntStrAny": [],
+  "jsonable_encoder": [
+    "obj",
+    "custom_encoder"
+  ],
+  "encode_path_param": [
+    "obj"
+  ],
+  "ParsingError": {
+    "__init__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "INITIAL_RETRY_DELAY_SECONDS": [],
+  "MAX_RETRY_DELAY_SECONDS": [],
+  "JITTER_FACTOR": [],
+  "_parse_retry_after": [
+    "response_headers"
+  ],
+  "_add_positive_jitter": [
+    "delay"
+  ],
+  "_add_symmetric_jitter": [
+    "delay"
+  ],
+  "_parse_x_ratelimit_reset": [
+    "response_headers"
+  ],
+  "_retry_timeout": [
+    "response",
+    "retries"
+  ],
+  "_retry_timeout_from_retries": [
+    "retries"
+  ],
+  "_should_retry": [
+    "response"
+  ],
+  "_SENSITIVE_HEADERS": [],
+  "_redact_headers": [
+    "headers"
+  ],
+  "_build_url": [
+    "base_url",
+    "path"
+  ],
+  "_maybe_filter_none_from_multipart_data": [
+    "data",
+    "request_files",
+    "force_multipart"
+  ],
+  "remove_omit_from_dict": [
+    "original",
+    "omit"
+  ],
+  "maybe_filter_request_body": [
+    "data",
+    "request_options",
+    "omit"
+  ],
+  "get_request_body": [],
+  "HttpClient": {
+    "__init__": [
+      "self"
+    ],
+    "get_base_url": [
+      "self",
+      "maybe_base_url"
+    ],
+    "request": [
+      "self",
+      "path"
+    ],
+    "stream": [
+      "self",
+      "path"
+    ]
+  },
+  "AsyncHttpClient": {
+    "__init__": [
+      "self"
+    ],
+    "_get_headers": [
+      "self"
+    ],
+    "get_base_url": [
+      "self",
+      "maybe_base_url"
+    ],
+    "request": [
+      "self",
+      "path"
+    ],
+    "stream": [
+      "self",
+      "path"
+    ]
+  },
+  "_logger": [],
+  "_get_discriminator_and_variants": [
+    "type_"
+  ],
+  "_get_field_annotation": [
+    "model",
+    "field_name"
+  ],
+  "_find_variant_by_discriminator": [
+    "variants",
+    "discriminator",
+    "discriminator_value"
+  ],
+  "_is_string_type": [
+    "type_"
+  ],
+  "parse_sse_obj": [
+    "sse",
+    "type_"
+  ],
+  "parse_obj_as": [
+    "type_",
+    "object_"
+  ],
+  "to_jsonable_with_fallback": [
+    "obj",
+    "fallback_serializer"
+  ],
+  "UniversalBaseModel": {
+    "model_construct": [
+      "cls",
+      "_fields_set"
+    ],
+    "construct": [
+      "cls",
+      "_fields_set"
+    ],
+    "json": [
+      "self"
+    ],
+    "dict": [
+      "self"
+    ]
+  },
+  "_union_list_of_pydantic_dicts": [
+    "source",
+    "destination"
+  ],
+  "deep_union_pydantic_dicts": [
+    "source",
+    "destination"
+  ],
+  "encode_by_type": [
+    "o"
+  ],
+  "update_forward_refs": [
+    "model"
+  ],
+  "AnyCallable": [],
+  "universal_root_validator": [
+    "pre"
+  ],
+  "universal_field_validator": [
+    "field_name",
+    "pre"
+  ],
+  "ForceMultipartDict": {
+    "__bool__": [
+      "self"
+    ]
+  },
+  "FORCE_MULTIPART": [],
+  "FieldMetadata": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "convert_and_respect_annotation_metadata": [],
+  "_convert_mapping": [
+    "object_",
+    "expected_type",
+    "direction"
+  ],
+  "_get_annotation": [
+    "type_"
+  ],
+  "_remove_annotations": [
+    "type_"
+  ],
+  "get_alias_to_field_mapping": [
+    "type_"
+  ],
+  "get_field_to_alias_mapping": [
+    "type_"
+  ],
+  "_get_alias_to_field_name": [
+    "field_to_hint"
+  ],
+  "_get_field_to_alias_name": [
+    "field_to_hint"
+  ],
+  "_get_alias_from_type": [
+    "type_"
+  ],
+  "_alias_key": [
+    "key",
+    "type_",
+    "direction",
+    "aliases_to_field_names"
+  ],
+  "LogLevel": [],
+  "ILogger": {
+    "debug": [
+      "self",
+      "message"
+    ],
+    "info": [
+      "self",
+      "message"
+    ],
+    "warn": [
+      "self",
+      "message"
+    ],
+    "error": [
+      "self",
+      "message"
+    ]
+  },
+  "ConsoleLogger": {
+    "__init__": [
+      "self"
+    ],
+    "debug": [
+      "self",
+      "message"
+    ],
+    "info": [
+      "self",
+      "message"
+    ],
+    "warn": [
+      "self",
+      "message"
+    ],
+    "error": [
+      "self",
+      "message"
+    ]
+  },
+  "LogConfig": {},
+  "Logger": {
+    "__init__": [
+      "self"
+    ],
+    "_should_log": [
+      "self",
+      "level"
+    ],
+    "is_debug": [
+      "self"
+    ],
+    "is_info": [
+      "self"
+    ],
+    "is_warn": [
+      "self"
+    ],
+    "is_error": [
+      "self"
+    ],
+    "debug": [
+      "self",
+      "message"
+    ],
+    "info": [
+      "self",
+      "message"
+    ],
+    "warn": [
+      "self",
+      "message"
+    ],
+    "error": [
+      "self",
+      "message"
+    ]
+  },
+  "create_logger": [
+    "config"
+  ],
+  "RequestOptions": {},
+  "EventType": {
+    "OPEN": [],
+    "MESSAGE": [],
+    "ERROR": [],
+    "CLOSE": []
+  },
+  "EventEmitterMixin": {
+    "__init__": [
+      "self"
+    ],
+    "on": [
+      "self",
+      "event_name",
+      "callback"
+    ],
+    "_emit": [
+      "self",
+      "event_name",
+      "data"
+    ],
+    "_emit_async": [
+      "self",
+      "event_name",
+      "data"
+    ]
+  },
+  "FileContent": [],
+  "File": [],
+  "convert_file_dict_to_httpx_tuples": [
+    "d"
+  ],
+  "with_content_type": [],
+  "ServerSentEvent": {
+    "json": [
+      "self"
+    ]
+  },
+  "EventSource": {
+    "__init__": [
+      "self",
+      "response"
+    ],
+    "_check_content_type": [
+      "self"
+    ],
+    "_get_charset": [
+      "self"
+    ],
+    "response": [
+      "self"
+    ],
+    "_normalize_sse_line_endings": [
+      "buf"
+    ],
+    "iter_sse": [
+      "self"
+    ],
+    "aiter_sse": [
+      "self"
+    ]
+  },
+  "connect_sse": [
+    "client",
+    "method",
+    "url"
+  ],
+  "aconnect_sse": [
+    "client",
+    "method",
+    "url"
+  ],
+  "SSEError": {},
+  "SSEDecoder": {
+    "__init__": [
+      "self"
+    ],
+    "decode": [
+      "self",
+      "line"
+    ]
+  },
+  "AgentClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "v1": [
+      "self"
+    ]
+  },
+  "AsyncAgentClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "v1": [
+      "self"
+    ]
+  },
+  "RawAgentClient": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "AsyncRawAgentClient": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "_sanitize_numeric_types": [
+    "obj"
+  ],
+  "V1SocketClientResponse": [],
+  "AsyncV1SocketClient": {
+    "__init__": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "start_listening": [
+      "self"
+    ],
+    "send_settings": [
+      "self",
+      "message"
+    ],
+    "send_update_speak": [
+      "self",
+      "message"
+    ],
+    "send_inject_user_message": [
+      "self",
+      "message"
+    ],
+    "send_inject_agent_message": [
+      "self",
+      "message"
+    ],
+    "send_function_call_response": [
+      "self",
+      "message"
+    ],
+    "send_keep_alive": [
+      "self",
+      "message"
+    ],
+    "send_update_prompt": [
+      "self",
+      "message"
+    ],
+    "send_update_think": [
+      "self",
+      "message"
+    ],
+    "send_media": [
+      "self",
+      "message"
+    ],
+    "recv": [
+      "self"
+    ],
+    "_send": [
+      "self",
+      "data"
+    ],
+    "_send_model": [
+      "self",
+      "data"
+    ]
+  },
+  "V1SocketClient": {
+    "__init__": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "start_listening": [
+      "self"
+    ],
+    "send_settings": [
+      "self",
+      "message"
+    ],
+    "send_update_speak": [
+      "self",
+      "message"
+    ],
+    "send_inject_user_message": [
+      "self",
+      "message"
+    ],
+    "send_inject_agent_message": [
+      "self",
+      "message"
+    ],
+    "send_function_call_response": [
+      "self",
+      "message"
+    ],
+    "send_keep_alive": [
+      "self",
+      "message"
+    ],
+    "send_update_prompt": [
+      "self",
+      "message"
+    ],
+    "send_update_think": [
+      "self",
+      "message"
+    ],
+    "send_media": [
+      "self",
+      "message"
+    ],
+    "recv": [
+      "self"
+    ],
+    "_send": [
+      "self",
+      "data"
+    ],
+    "_send_model": [
+      "self",
+      "data"
+    ]
+  },
+  "AgentV1SettingsAgentListenProviderV1Params": [],
+  "AgentV1SettingsParams": {},
+  "AgentV1AgentThinkingParams": {},
+  "AgentV1SettingsAgentContextContextMessagesItemFunctionCallsFunctionCallsItemParams": {},
+  "AgentV1FunctionCallRequestParams": {},
+  "AgentV1UpdateThinkThinkParams": [],
+  "AgentV1SettingsAgentContextContextParams": {},
+  "AgentV1ReceiveFunctionCallResponseParams": {},
+  "AgentV1SettingsAgentContextParams": {},
+  "ConversationHistoryMessageParams": {},
+  "AgentV1UserStartedSpeakingParams": {},
+  "AgentV1SettingsAgentParams": {},
+  "AgentV1SettingsAgentThinkParams": [],
+  "AgentV1WarningParams": {},
+  "AgentV1InjectionRefusedParams": {},
+  "AgentV1ErrorParams": {},
+  "AgentV1SettingsAgentContextListenProvider_V1Params": {},
+  "AgentV1SettingsAgentContextListenProvider_V2Params": {},
+  "AgentV1SettingsAgentContextListenProviderParams": [],
+  "AgentV1UpdateSpeakSpeakParams": [],
+  "AgentV1UpdateThinkParams": {},
+  "AgentV1SettingsAudioInputParams": {},
+  "AgentV1ConversationTextParams": {},
+  "AgentV1SendFunctionCallResponseParams": {},
+  "AgentV1SettingsAgentListenProvider_V1Params": {},
+  "AgentV1SettingsAgentListenProvider_V2Params": {},
+  "AgentV1SettingsAgentListenProviderParams": [],
+  "AgentV1SettingsAudioOutputParams": {},
+  "AgentV1InjectAgentMessageParams": {},
+  "AgentV1InjectUserMessageParams": {},
+  "AgentV1UpdateSpeakParams": {},
+  "AgentV1UpdatePromptParams": {},
+  "AgentV1SpeakUpdatedParams": {},
+  "AgentV1AgentStartedSpeakingParams": {},
+  "AgentV1FunctionCallRequestFunctionsItemParams": {},
+  "AgentV1SettingsAgentContextThinkParams": [],
+  "AgentV1ThinkUpdatedParams": {},
+  "AgentV1SettingsAgentContextMessagesItemFunctionCallsFunctionCallsItemParams": [],
+  "AgentV1SettingsFlagsParams": {},
+  "AgentV1SettingsAgentContextListenProviderV1Params": [],
+  "AgentV1AgentAudioDoneParams": {},
+  "AgentV1PromptUpdatedParams": {},
+  "AgentV1WelcomeParams": {},
+  "AgentV1SettingsAgentContextListenProviderV2Params": [],
+  "AgentV1SettingsAudioParams": {},
+  "AgentV1SettingsAgentContextMessagesItemContentParams": [],
+  "AgentV1KeepAliveParams": {},
+  "AgentV1SettingsAgentContextListenProviderV2LanguageHintParams": [],
+  "AgentV1SettingsAgentContextMessagesItemFunctionCallsParams": [],
+  "AgentV1SettingsAgentListenProviderV2Params": [],
+  "AgentV1HistoryFunctionCallsFunctionCallsItemParams": {},
+  "AgentV1SettingsAgentListenParams": {},
+  "AgentV1HistoryParams": [],
+  "AgentV1SettingsAgentContextContextMessagesItemParams": [],
+  "AgentV1SettingsAgentContextSpeakParams": [],
+  "AgentV1SettingsAgentContextListenParams": {},
+  "AgentV1HistoryContentParams": [],
+  "AgentV1SettingsAgentContextMessagesItemParams": [],
+  "AgentV1SettingsAppliedParams": {},
+  "FunctionCallHistoryMessageParams": {},
+  "AgentV1SettingsAgentSpeakParams": [],
+  "AgentV1HistoryFunctionCallsParams": [],
+  "AgentV1SettingsAgentListenProviderV1": [],
+  "AgentV1Settings": {},
+  "AgentV1AgentThinking": {},
+  "AgentV1SettingsAgentContextContextMessagesItemFunctionCallsFunctionCallsItem": {},
+  "AgentV1FunctionCallRequest": {},
+  "AgentV1UpdateThinkThink": [],
+  "AgentV1SettingsAgentContextContext": {},
+  "AgentV1ReceiveFunctionCallResponse": {},
+  "AgentV1SettingsAgentContext": {
+    "messages": [
+      "self"
+    ]
+  },
+  "ConversationHistoryMessage": {},
+  "AgentV1UserStartedSpeaking": {},
+  "AgentV1SettingsAgent": {},
+  "AgentV1SettingsAgentThink": [],
+  "AgentV1SettingsAudioOutputContainer": [],
+  "AgentV1Warning": {},
+  "AgentV1InjectionRefused": {},
+  "AgentV1InjectAgentMessageBehavior": [],
+  "AgentV1Error": {},
+  "AgentV1SettingsAgentContextListenProvider_V1": {},
+  "AgentV1SettingsAgentContextListenProvider_V2": {},
+  "AgentV1SettingsAgentContextListenProvider": [],
+  "AgentV1ConversationTextRole": [],
+  "AgentV1UpdateSpeakSpeak": [],
+  "AgentV1UpdateThink": {},
+  "AgentV1SettingsAudioInput": {},
+  "AgentV1ConversationText": {},
+  "AgentV1SendFunctionCallResponse": {},
+  "AgentV1SettingsAgentListenProvider_V1": {},
+  "AgentV1SettingsAgentListenProvider_V2": {},
+  "AgentV1SettingsAgentListenProvider": [],
+  "AgentV1SettingsAudioOutput": {},
+  "AgentV1SettingsAgentContextMessagesItemContentRole": [],
+  "AgentV1InjectAgentMessage": {},
+  "AgentV1InjectUserMessage": {},
+  "AgentV1HistoryContentRole": [],
+  "AgentV1UpdateSpeak": {},
+  "AgentV1UpdatePrompt": {},
+  "AgentV1SpeakUpdated": {},
+  "AgentV1AgentStartedSpeaking": {},
+  "AgentV1FunctionCallRequestFunctionsItem": {},
+  "AgentV1SettingsAgentContextThink": [],
+  "AgentV1ThinkUpdated": {},
+  "AgentV1SettingsAgentContextMessagesItemFunctionCallsFunctionCallsItem": [],
+  "AgentV1SettingsFlags": {},
+  "AgentV1SettingsAudioOutputEncoding": [],
+  "AgentV1SettingsAudioInputEncoding": [],
+  "AgentV1SettingsAgentContextListenProviderV1": [],
+  "AgentV1AgentAudioDone": {},
+  "AgentV1PromptUpdated": {},
+  "AgentV1Welcome": {},
+  "AgentV1SettingsAgentContextListenProviderV2": [],
+  "AgentV1SettingsAudio": {},
+  "AgentV1SettingsAgentContextMessagesItemContent": [],
+  "AgentV1KeepAlive": {},
+  "AgentV1SettingsAgentContextListenProviderV2LanguageHint": [],
+  "AgentV1SettingsAgentContextMessagesItemFunctionCalls": [],
+  "AgentV1SettingsAgentListenProviderV2": [],
+  "AgentV1SettingsAgentContextContextMessagesItemContentRole": [],
+  "AgentV1HistoryFunctionCallsFunctionCallsItem": {},
+  "AgentV1SettingsAgentListen": {},
+  "AgentV1History": [],
+  "AgentV1SettingsAgentContextContextMessagesItem": [],
+  "AgentV1SettingsAgentContextSpeak": [],
+  "AgentV1SettingsAgentContextListen": {},
+  "AgentV1HistoryContent": [],
+  "AgentV1SettingsAgentContextMessagesItem": [],
+  "AgentV1SettingsApplied": {},
+  "FunctionCallHistoryMessage": {},
+  "AgentV1SettingsAgentSpeak": [],
+  "AgentV1HistoryFunctionCalls": [],
+  "SettingsClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "think": [
+      "self"
+    ]
+  },
+  "AsyncSettingsClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "think": [
+      "self"
+    ]
+  },
+  "RawSettingsClient": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "AsyncRawSettingsClient": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "ThinkClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "models": [
+      "self"
+    ]
+  },
+  "AsyncThinkClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "models": [
+      "self"
+    ]
+  },
+  "RawThinkClient": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "AsyncRawThinkClient": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "ReadClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "v1": [
+      "self"
+    ]
+  },
+  "AsyncReadClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "v1": [
+      "self"
+    ]
+  },
+  "RawReadClient": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "AsyncRawReadClient": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "TextClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "analyze": [
+      "self"
+    ]
+  },
+  "AsyncTextClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "analyze": [
+      "self"
+    ]
+  },
+  "RawTextClient": {
+    "__init__": [
+      "self"
+    ],
+    "analyze": [
+      "self"
+    ]
+  },
+  "AsyncRawTextClient": {
+    "__init__": [
+      "self"
+    ],
+    "analyze": [
+      "self"
+    ]
+  },
+  "TextAnalyzeRequestCustomIntentMode": [],
+  "TextAnalyzeRequestCallbackMethod": [],
+  "TextAnalyzeRequestCustomTopicMode": [],
+  "TextAnalyzeRequestSummarize": [],
+  "SpeakClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "v1": [
+      "self"
+    ]
+  },
+  "AsyncSpeakClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "v1": [
+      "self"
+    ]
+  },
+  "RawSpeakClient": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "AsyncRawSpeakClient": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "AudioClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "generate": [
+      "self"
+    ]
+  },
+  "AsyncAudioClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "generate": [
+      "self"
+    ]
+  },
+  "RawAudioClient": {
+    "__init__": [
+      "self"
+    ],
+    "generate": [
+      "self"
+    ]
+  },
+  "AsyncRawAudioClient": {
+    "__init__": [
+      "self"
+    ],
+    "generate": [
+      "self"
+    ]
+  },
+  "AudioGenerateRequestModel": [],
+  "AudioGenerateRequestCallbackMethod": [],
+  "AudioGenerateRequestEncoding": [],
+  "AudioGenerateRequestContainer": [],
+  "SpeakV1ClearParams": {},
+  "SpeakV1FlushParams": {},
+  "SpeakV1CloseParams": {},
+  "SpeakV1FlushedParams": {},
+  "SpeakV1TextParams": {},
+  "SpeakV1ClearedParams": {},
+  "SpeakV1MetadataParams": {},
+  "SpeakV1WarningParams": {},
+  "SpeakV1Clear": {},
+  "SpeakV1Flush": {},
+  "SpeakV1Close": {},
+  "SpeakV1Flushed": {},
+  "SpeakV1CloseType": [],
+  "SpeakV1FlushType": [],
+  "SpeakV1FlushedType": [],
+  "SpeakV1Text": {},
+  "SpeakV1ClearedType": [],
+  "SpeakV1Cleared": {},
+  "SpeakV1ClearType": [],
+  "SpeakV1Metadata": {},
+  "SpeakV1Warning": {},
+  "AuthClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "v1": [
+      "self"
+    ]
+  },
+  "AsyncAuthClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "v1": [
+      "self"
+    ]
+  },
+  "RawAuthClient": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "AsyncRawAuthClient": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "TokensClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "grant": [
+      "self"
+    ]
+  },
+  "AsyncTokensClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "grant": [
+      "self"
+    ]
+  },
+  "RawTokensClient": {
+    "__init__": [
+      "self"
+    ],
+    "grant": [
+      "self"
+    ]
+  },
+  "AsyncRawTokensClient": {
+    "__init__": [
+      "self"
+    ],
+    "grant": [
+      "self"
+    ]
+  },
+  "ListenClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "v1": [
+      "self"
+    ],
+    "v2": [
+      "self"
+    ]
+  },
+  "AsyncListenClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "v1": [
+      "self"
+    ],
+    "v2": [
+      "self"
+    ]
+  },
+  "RawListenClient": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "AsyncRawListenClient": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "V2Client": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "connect": [
+      "self"
+    ]
+  },
+  "AsyncV2Client": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "connect": [
+      "self"
+    ]
+  },
+  "V2SocketClientResponse": [],
+  "AsyncV2SocketClient": {
+    "__init__": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "start_listening": [
+      "self"
+    ],
+    "send_media": [
+      "self",
+      "message"
+    ],
+    "send_close_stream": [
+      "self",
+      "message"
+    ],
+    "send_configure": [
+      "self",
+      "message"
+    ],
+    "recv": [
+      "self"
+    ],
+    "_send": [
+      "self",
+      "data"
+    ],
+    "_send_model": [
+      "self",
+      "data"
+    ]
+  },
+  "V2SocketClient": {
+    "__init__": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "start_listening": [
+      "self"
+    ],
+    "send_media": [
+      "self",
+      "message"
+    ],
+    "send_close_stream": [
+      "self",
+      "message"
+    ],
+    "send_configure": [
+      "self",
+      "message"
+    ],
+    "recv": [
+      "self"
+    ],
+    "_send": [
+      "self",
+      "data"
+    ],
+    "_send_model": [
+      "self",
+      "data"
+    ]
+  },
+  "RawV2Client": {
+    "__init__": [
+      "self"
+    ],
+    "connect": [
+      "self"
+    ]
+  },
+  "AsyncRawV2Client": {
+    "__init__": [
+      "self"
+    ],
+    "connect": [
+      "self"
+    ]
+  },
+  "ListenV2CloseStreamParams": {},
+  "ListenV2ConfigureSuccessParams": {},
+  "ListenV2ConfigureFailureParams": {},
+  "ListenV2TurnInfoParams": {},
+  "ListenV2ConfigureParams": {},
+  "ListenV2TurnInfoWordsItemParams": {},
+  "ListenV2ConfigureThresholdsParams": {},
+  "ListenV2ConfigureSuccessThresholdsParams": {},
+  "ListenV2FatalErrorParams": {},
+  "ListenV2ConnectedParams": {},
+  "ListenV2TurnInfoEvent": [],
+  "ListenV2CloseStream": {},
+  "ListenV2ConfigureSuccess": {},
+  "ListenV2ConfigureFailure": {},
+  "ListenV2TurnInfo": {},
+  "ListenV2Configure": {},
+  "ListenV2TurnInfoWordsItem": {},
+  "ListenV2ConfigureThresholds": {},
+  "ListenV2ConfigureSuccessThresholds": {},
+  "ListenV2FatalError": {},
+  "ListenV2CloseStreamType": [],
+  "ListenV2Connected": {},
+  "ListenV1ResultsMetadataParams": {},
+  "ListenV1ResultsChannelAlternativesItemWordsItemParams": {},
+  "ListenV1UtteranceEndParams": {},
+  "ListenV1ResultsEntitiesItemParams": {},
+  "ListenV1ResultsChannelAlternativesItemParams": {},
+  "ListenV1ResultsMetadataModelInfoParams": {},
+  "ListenV1KeepAliveParams": {},
+  "ListenV1ResultsChannelParams": {},
+  "ListenV1ResultsParams": {},
+  "ListenV1MetadataParams": {},
+  "ListenV1SpeechStartedParams": {},
+  "ListenV1CloseStreamParams": {},
+  "ListenV1FinalizeParams": {},
+  "ListenV1CloseStreamType": [],
+  "ListenV1ResultsMetadata": {},
+  "ListenV1ResultsChannelAlternativesItemWordsItem": {},
+  "ListenV1UtteranceEnd": {},
+  "ListenV1KeepAliveType": [],
+  "ListenV1ResultsEntitiesItem": {},
+  "ListenV1ResultsChannelAlternativesItem": {},
+  "ListenV1ResultsMetadataModelInfo": {},
+  "ListenV1FinalizeType": [],
+  "ListenV1KeepAlive": {},
+  "ListenV1ResultsChannel": {},
+  "ListenV1Results": {},
+  "ListenV1Metadata": {},
+  "ListenV1SpeechStarted": {},
+  "ListenV1CloseStream": {},
+  "ListenV1Finalize": {},
+  "MediaClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "transcribe_url": [
+      "self"
+    ],
+    "transcribe_file": [
+      "self"
+    ]
+  },
+  "AsyncMediaClient": {
+    "__init__": [
+      "self"
+    ],
+    "with_raw_response": [
+      "self"
+    ],
+    "transcribe_url": [
+      "self"
+    ],
+    "transcribe_file": [
+      "self"
+    ]
+  },
+  "RawMediaClient": {
+    "__init__": [
+      "self"
+    ],
+    "transcribe_url": [
+      "self"
+    ],
+    "transcribe_file": [
+      "self"
+    ]
+  },
+  "AsyncRawMediaClient": {
+    "__init__": [
+      "self"
+    ],
+    "transcribe_url": [
+      "self"
+    ],
+    "transcribe_file": [
+      "self"
+    ]
+  },
+  "MediaTranscribeResponseParams": [],
+  "MediaTranscribeRequestCustomTopicMode": [],
+  "MediaTranscribeRequestDiarizeModel": [],
+  "MediaTranscribeRequestVersion": [],
+  "MediaTranscribeRequestModel": [],
+  "MediaTranscribeRequestCustomIntentMode": [],
+  "MediaTranscribeRequestCallbackMethod": [],
+  "MediaTranscribeRequestSummarize": [],
+  "MediaTranscribeRequestEncoding": [],
+  "MediaTranscribeResponse": []
+}
