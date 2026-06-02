@@ -1,0 +1,1381 @@
+{
+  "_mock_databricks_utils": [],
+  "_mock_mlflow_utils": [],
+  "TestCamelToSnake": {
+    "test_already_snake_case_unchanged": [
+      "self"
+    ],
+    "test_camel_case_converted": [
+      "self"
+    ],
+    "test_pascal_case_converted": [
+      "self"
+    ]
+  },
+  "TestNormalizeResponseKeys": {
+    "test_camelcase_dict_converted": [
+      "self"
+    ],
+    "test_snake_case_dict_unchanged": [
+      "self"
+    ],
+    "test_nested_lists_walked": [
+      "self"
+    ],
+    "test_scalars_pass_through": [
+      "self"
+    ]
+  },
+  "TestSimilaritySearchHandlesCamelCase": {
+    "_create_index": [
+      "self"
+    ],
+    "test_camelcase_response_no_pagination": [
+      "self",
+      "mock_request",
+      "mock_token"
+    ],
+    "test_camelcase_response_with_pagination": [
+      "self",
+      "mock_request",
+      "mock_token"
+    ],
+    "test_snakecase_response_still_works": [
+      "self",
+      "mock_request",
+      "mock_token"
+    ]
+  },
+  "mock_issue_request": [],
+  "workspace_url": [],
+  "vsc_with_pat": [
+    "workspace_url"
+  ],
+  "vsc_with_sp": [
+    "workspace_url"
+  ],
+  "_build_index": [
+    "workspace_url",
+    "index_url"
+  ],
+  "vector_search_index_factory": [
+    "workspace_url"
+  ],
+  "mock_response_factory": [],
+  "TestUrlUtils": {
+    "test_adds_https_when_missing": [
+      "self"
+    ],
+    "test_leaves_https_unchanged": [
+      "self"
+    ],
+    "test_leaves_http_unchanged": [
+      "self"
+    ]
+  },
+  "TestCredentialStrategyEnum": {
+    "test_model_serving_user_credentials_exists": [
+      "self"
+    ],
+    "test_enum_membership": [
+      "self"
+    ]
+  },
+  "TestOAuthTokenUtilsAzure": {
+    "test_requires_login_and_tenant_id": [
+      "self"
+    ],
+    "test_returns_aad_response_when_no_authorization_details": [
+      "self",
+      "mock_req"
+    ],
+    "test_exchanges_at_workspace_when_authorization_details_provided": [
+      "self",
+      "mock_req"
+    ]
+  },
+  "TestOAuthTokenUtilsOAuth": {
+    "test_posts_to_oidc_token_with_client_credentials_grant": [
+      "self",
+      "mock_req"
+    ]
+  },
+  "TestRequestUtilsErrorMapping": {
+    "_patched_session": [
+      "self",
+      "response"
+    ],
+    "test_status_code_maps_to_expected_exception": [
+      "self",
+      "mock_session_factory",
+      "status_code",
+      "exc_type"
+    ],
+    "test_json_body_with_message_key_used_in_error_message": [
+      "self",
+      "mock_session_factory"
+    ],
+    "test_json_body_with_error_key_used_in_error_message": [
+      "self",
+      "mock_session_factory"
+    ],
+    "test_non_json_body_falls_back_to_text": [
+      "self",
+      "mock_session_factory"
+    ],
+    "test_authorization_header_added_when_token_provided": [
+      "self",
+      "mock_session_factory"
+    ],
+    "test_sdk_version_header_always_added": [
+      "self",
+      "mock_session_factory"
+    ]
+  },
+  "TestRequestSessionCaching": {
+    "test_same_args_returns_same_session": [
+      "self"
+    ],
+    "test_different_args_yields_different_session": [
+      "self"
+    ],
+    "test_retry_strategy_includes_429_503_504": [
+      "self"
+    ]
+  },
+  "TestIsInModelServingEnvironment": {
+    "test_returns_false_when_env_unset": [
+      "self",
+      "monkeypatch"
+    ],
+    "test_returns_true_when_legacy_env_set": [
+      "self",
+      "monkeypatch"
+    ],
+    "test_returns_true_when_canonical_env_set": [
+      "self",
+      "monkeypatch"
+    ],
+    "test_returns_false_when_env_set_to_other_value": [
+      "self",
+      "monkeypatch"
+    ]
+  },
+  "TestGetModelServingInvokerCredentials": {
+    "test_returns_none_tuple_when_not_in_env": [
+      "self",
+      "monkeypatch"
+    ],
+    "test_returns_host_and_token_when_in_env": [
+      "self",
+      "monkeypatch"
+    ],
+    "test_raises_when_in_env_with_no_token": [
+      "self",
+      "monkeypatch"
+    ]
+  },
+  "TestInvokersTokenFallback": {
+    "test_reads_from_main_thread_dict": [
+      "self"
+    ],
+    "test_returns_none_when_not_set": [
+      "self"
+    ]
+  },
+  "TestInvokersTokenFromMlflowserving": {
+    "test_uses_fetch_obo_token_when_importable": [
+      "self"
+    ],
+    "test_falls_back_on_importerror": [
+      "self"
+    ]
+  },
+  "TestAuthenticationWarning": {
+    "test_notebook_token_prints_notice": [
+      "self",
+      "capsys"
+    ],
+    "test_pat_prints_notice": [
+      "self",
+      "capsys"
+    ],
+    "test_disable_notice_silences_output": [
+      "self",
+      "capsys"
+    ],
+    "test_nothing_to_warn_about_is_silent": [
+      "self",
+      "capsys"
+    ]
+  },
+  "TestVectorSearchClientInit": {
+    "test_pat_credentials_stored": [
+      "self"
+    ],
+    "test_service_principal_credentials_stored": [
+      "self"
+    ],
+    "test_azure_login_id_defaults_to_public": [
+      "self"
+    ],
+    "test_pat_missing_workspace_url_raises_invalid_input": [
+      "self"
+    ],
+    "test_no_credentials_raises_invalid_input": [
+      "self"
+    ]
+  },
+  "TestGetTokenForRequest": {
+    "test_pat_returns_pat": [
+      "self"
+    ],
+    "test_sp_fetches_and_caches_oauth_token": [
+      "self",
+      "mock_oauth"
+    ],
+    "test_azure_sp_routes_through_azure_oauth": [
+      "self",
+      "mock_azure"
+    ],
+    "test_no_credentials_raises": [
+      "self"
+    ]
+  },
+  "TestEndpointCRUD": {
+    "test_create_endpoint_posts_payload": [
+      "self",
+      "mock_req",
+      "vsc_with_pat",
+      "workspace_url"
+    ],
+    "test_create_endpoint_rejects_both_policy_ids": [
+      "self",
+      "vsc_with_pat"
+    ],
+    "test_create_endpoint_rejects_non_int_target_qps": [
+      "self",
+      "vsc_with_pat"
+    ],
+    "test_create_endpoint_rejects_non_positive_target_qps": [
+      "self",
+      "vsc_with_pat"
+    ],
+    "test_create_endpoint_includes_target_qps_and_policy": [
+      "self",
+      "mock_req",
+      "vsc_with_pat"
+    ],
+    "test_get_endpoint_hits_endpoint_url": [
+      "self",
+      "mock_req",
+      "vsc_with_pat",
+      "workspace_url"
+    ],
+    "test_endpoint_exists_true_on_success": [
+      "self",
+      "mock_req",
+      "vsc_with_pat"
+    ],
+    "test_endpoint_exists_false_on_not_found": [
+      "self",
+      "mock_req",
+      "vsc_with_pat"
+    ],
+    "test_list_endpoints_calls_endpoints_url": [
+      "self",
+      "mock_req",
+      "vsc_with_pat",
+      "workspace_url"
+    ],
+    "test_delete_endpoint_issues_delete": [
+      "self",
+      "mock_req",
+      "vsc_with_pat",
+      "workspace_url"
+    ],
+    "test_update_endpoint_target_qps_payload": [
+      "self",
+      "mock_req",
+      "vsc_with_pat",
+      "workspace_url"
+    ],
+    "test_update_endpoint_accepts_minus_one_reset_literal": [
+      "self",
+      "mock_req",
+      "vsc_with_pat"
+    ],
+    "test_update_endpoint_rejects_empty_name": [
+      "self",
+      "vsc_with_pat"
+    ],
+    "test_update_endpoint_rejects_invalid_target_qps": [
+      "self",
+      "vsc_with_pat"
+    ],
+    "test_update_endpoint_budget_policy_uses_budget_field": [
+      "self",
+      "mock_req",
+      "vsc_with_pat",
+      "workspace_url"
+    ],
+    "test_update_endpoint_budget_policy_rejects_both": [
+      "self",
+      "vsc_with_pat"
+    ],
+    "test_update_endpoint_budget_policy_rejects_neither": [
+      "self",
+      "vsc_with_pat"
+    ]
+  },
+  "TestWaitForEndpoint": {
+    "test_polls_until_online": [
+      "self",
+      "mock_req",
+      "mock_sleep",
+      "vsc_with_pat"
+    ],
+    "test_raises_on_offline": [
+      "self",
+      "mock_req",
+      "_sleep",
+      "vsc_with_pat"
+    ]
+  },
+  "TestIndexCRUD": {
+    "test_create_delta_sync_index_returns_index": [
+      "self",
+      "mock_req",
+      "vsc_with_pat"
+    ],
+    "test_create_delta_sync_index_requires_embedding_config": [
+      "self",
+      "vsc_with_pat"
+    ],
+    "test_create_delta_sync_index_rejects_both_policy_ids": [
+      "self",
+      "vsc_with_pat"
+    ],
+    "test_create_direct_access_index_returns_index": [
+      "self",
+      "mock_req",
+      "vsc_with_pat"
+    ],
+    "test_create_direct_access_index_requires_schema": [
+      "self",
+      "vsc_with_pat"
+    ],
+    "test_get_index_returns_index_instance": [
+      "self",
+      "mock_req",
+      "vsc_with_pat"
+    ],
+    "test_get_index_requires_index_name": [
+      "self",
+      "vsc_with_pat"
+    ],
+    "test_index_exists_false_on_not_found": [
+      "self",
+      "mock_req",
+      "vsc_with_pat"
+    ],
+    "test_index_exists_true_on_success": [
+      "self",
+      "mock_req",
+      "vsc_with_pat"
+    ],
+    "test_list_indexes_url": [
+      "self",
+      "mock_req",
+      "vsc_with_pat",
+      "workspace_url"
+    ],
+    "test_delete_index_url_with_endpoint": [
+      "self",
+      "mock_req",
+      "vsc_with_pat",
+      "workspace_url"
+    ],
+    "test_delete_index_url_without_endpoint": [
+      "self",
+      "mock_req",
+      "vsc_with_pat",
+      "workspace_url"
+    ],
+    "test_update_index_budget_policy_payload": [
+      "self",
+      "mock_req",
+      "vsc_with_pat",
+      "workspace_url"
+    ],
+    "test_update_index_budget_policy_rejects_both": [
+      "self",
+      "vsc_with_pat"
+    ]
+  },
+  "TestPrivateHelpers": {
+    "test_get_index_url_with_endpoint": [
+      "self",
+      "vsc_with_pat",
+      "workspace_url"
+    ],
+    "test_get_index_url_without_endpoint": [
+      "self",
+      "vsc_with_pat",
+      "workspace_url"
+    ],
+    "test_mlserving_endpoint_name_from_resp": [
+      "self",
+      "vsc_with_pat"
+    ],
+    "test_mlserving_endpoint_name_for_query_from_resp": [
+      "self",
+      "vsc_with_pat"
+    ]
+  },
+  "TestVectorSearchException": {
+    "test_message_only": [
+      "self"
+    ],
+    "test_carries_status_code_and_response_content": [
+      "self"
+    ],
+    "test_is_subclass_of_builtin_exception": [
+      "self"
+    ]
+  },
+  "TestExceptionHierarchy": {
+    "test_subclass_of_base": [
+      "self",
+      "cls"
+    ],
+    "test_subclass_carries_fields": [
+      "self",
+      "cls"
+    ],
+    "test_base_catches_subclasses": [
+      "self"
+    ]
+  },
+  "TestResourceDoesNotExistAlias": {
+    "test_alias_is_notfound": [
+      "self"
+    ],
+    "test_alias_instance_is_notfound": [
+      "self"
+    ]
+  },
+  "_create_async_index": [
+    "workspace_url",
+    "index_url"
+  ],
+  "TestAsyncIndex": {
+    "test_upsert_calls_issue_request_with_correct_url_and_body": [
+      "self",
+      "mock_issue"
+    ],
+    "test_delete_calls_issue_request_with_correct_url_and_body": [
+      "self",
+      "mock_issue"
+    ],
+    "test_describe_calls_issue_request_with_correct_url_and_token": [
+      "self",
+      "mock_issue"
+    ],
+    "test_sync_calls_issue_request_with_correct_url_and_token": [
+      "self",
+      "mock_issue"
+    ],
+    "test_scan_calls_issue_request_with_correct_payload": [
+      "self",
+      "mock_issue"
+    ],
+    "test_similarity_search_with_query_text_basic": [
+      "self",
+      "mock_issue"
+    ],
+    "test_similarity_search_with_query_vector_basic": [
+      "self",
+      "mock_issue"
+    ],
+    "test_similarity_search_advanced_fts_fields": [
+      "self",
+      "mock_issue"
+    ],
+    "test_similarity_search_paginates_across_pages": [
+      "self",
+      "mock_issue"
+    ],
+    "test_similarity_search_with_reranker_uses_control_plane_token": [
+      "self",
+      "mock_issue"
+    ],
+    "test_concurrent_upserts_all_succeed": [
+      "self"
+    ],
+    "test_aclose_is_idempotent": [
+      "self"
+    ],
+    "test_async_with_marks_instance_closed": [
+      "self"
+    ]
+  },
+  "_FAKE_INDEX_RESP": [],
+  "TestGetAsyncIndex": {
+    "_make_client": [
+      "self"
+    ],
+    "test_returns_async_index_with_correct_fields": [
+      "self",
+      "mock_issue",
+      "_mock_oauth"
+    ],
+    "test_raises_assertion_error_when_index_name_is_none": [
+      "self",
+      "mock_issue"
+    ]
+  },
+  "_dbu": [],
+  "_mlu": [],
+  "_TEST_TABLE_ID": [],
+  "test_default_endpoint_name_formula": [],
+  "test_default_endpoint_name_truncates_to_caps": [],
+  "test_default_endpoint_name_preserves_dashes_in_index_name": [],
+  "test_default_endpoint_name_replaces_other_special_chars_with_underscore": [],
+  "test_default_endpoint_name_distinguishes_collisions": [],
+  "test_default_endpoint_name_requires_fully_qualified_name": [],
+  "_make_index_for_test": [],
+  "test_finetuned_reranker_builds_expected_top_level_reranker_block": [],
+  "test_finetuned_reranker_uses_explicit_endpoint_name": [],
+  "test_finetuned_reranker_rejects_combination_with_columns_to_rerank_kwarg": [],
+  "test_databricks_reranker_emits_base_reranker_block": [],
+  "test_deprecated_columns_to_rerank_kwarg_emits_base_reranker_block": [],
+  "_mock_response": [
+    "status_code",
+    "body",
+    "headers"
+  ],
+  "TestAsyncRequestUtils": {
+    "asyncSetUp": [
+      "self"
+    ],
+    "test_200_returns_parsed_json": [
+      "self",
+      "mock_request"
+    ],
+    "test_404_raises_NotFound": [
+      "self",
+      "mock_request"
+    ],
+    "test_400_raises_BadRequest": [
+      "self",
+      "mock_request"
+    ],
+    "test_403_raises_PermissionDenied": [
+      "self",
+      "mock_request"
+    ],
+    "test_409_raises_ResourceConflict": [
+      "self",
+      "mock_request"
+    ],
+    "test_500_raises_VectorSearchException": [
+      "self",
+      "mock_request"
+    ],
+    "test_retries_on_503_then_succeeds": [
+      "self",
+      "mock_request",
+      "mock_sleep"
+    ],
+    "test_retries_exhaust_on_429_raises_TooManyRequests": [
+      "self",
+      "mock_request",
+      "mock_sleep"
+    ],
+    "test_no_retry_on_400": [
+      "self",
+      "mock_request"
+    ],
+    "test_retry_after_header_honored": [
+      "self",
+      "mock_request",
+      "mock_sleep"
+    ],
+    "test_retry_after_decimal_honored": [
+      "self",
+      "mock_request",
+      "mock_sleep"
+    ],
+    "test_retries_on_write_timeout": [
+      "self",
+      "mock_request",
+      "mock_sleep"
+    ],
+    "test_retries_on_remote_protocol_error": [
+      "self",
+      "mock_request",
+      "mock_sleep"
+    ],
+    "test_non_json_error_body_falls_back_to_text": [
+      "self",
+      "mock_request"
+    ],
+    "test_client_is_cached_across_calls": [
+      "self"
+    ]
+  },
+  "_create_index": [
+    "workspace_url",
+    "index_url"
+  ],
+  "TestRerankerAuth": {
+    "test_reranker_uses_control_plane_token_for_self_managed_index": [
+      "self"
+    ],
+    "test_regular_query_uses_url_based_token_detection": [
+      "self"
+    ],
+    "test_regular_query_to_external_url_uses_data_plane_token": [
+      "self"
+    ],
+    "test_reranker_uses_control_plane_token_for_managed_index": [
+      "self"
+    ],
+    "test_reranker_pagination_uses_control_plane_token_for_self_managed_index": [
+      "self",
+      "mock_issue_request"
+    ]
+  },
+  "TestUpsert": {
+    "test_upsert_posts_inputs_json": [
+      "self",
+      "mock_req",
+      "vector_search_index_factory"
+    ],
+    "test_upsert_requires_list": [
+      "self",
+      "vector_search_index_factory"
+    ],
+    "test_upsert_requires_list_of_dicts": [
+      "self",
+      "vector_search_index_factory"
+    ]
+  },
+  "TestDelete": {
+    "test_delete_uses_delete_method_and_sends_primary_keys": [
+      "self",
+      "mock_req",
+      "vector_search_index_factory"
+    ],
+    "test_delete_requires_list": [
+      "self",
+      "vector_search_index_factory"
+    ]
+  },
+  "TestDescribe": {
+    "test_describe_hits_control_plane_url": [
+      "self",
+      "mock_req",
+      "vector_search_index_factory",
+      "workspace_url"
+    ]
+  },
+  "TestSync": {
+    "test_sync_posts_to_sync_url": [
+      "self",
+      "mock_req",
+      "vector_search_index_factory",
+      "workspace_url"
+    ]
+  },
+  "TestScan": {
+    "test_scan_builds_payload": [
+      "self",
+      "mock_req",
+      "vector_search_index_factory"
+    ],
+    "test_scan_without_last_primary_key_omits_field": [
+      "self",
+      "mock_req",
+      "vector_search_index_factory"
+    ]
+  },
+  "TestScanIndexDeprecation": {
+    "test_scan_index_attribute_exists": [
+      "self",
+      "vector_search_index_factory"
+    ]
+  },
+  "TestSimilaritySearch": {
+    "test_query_text_path": [
+      "self",
+      "mock_req",
+      "vector_search_index_factory"
+    ],
+    "test_query_vector_path": [
+      "self",
+      "mock_req",
+      "vector_search_index_factory"
+    ],
+    "test_filters_as_string_uses_filter_string": [
+      "self",
+      "mock_req",
+      "vector_search_index_factory"
+    ],
+    "test_filters_as_dict_serialized_to_json": [
+      "self",
+      "mock_req",
+      "vector_search_index_factory"
+    ],
+    "test_score_threshold_and_query_type_only_when_truthy": [
+      "self",
+      "mock_req",
+      "vector_search_index_factory"
+    ],
+    "test_advanced_fts_fields_only_when_provided": [
+      "self",
+      "mock_req",
+      "vector_search_index_factory"
+    ],
+    "test_columns_to_rerank_legacy_path_sets_reranker_block": [
+      "self",
+      "mock_req",
+      "vector_search_index_factory",
+      "capsys"
+    ],
+    "test_columns_to_rerank_deprecation_notice_only_once": [
+      "self",
+      "mock_req",
+      "vector_search_index_factory",
+      "capsys"
+    ],
+    "test_reranker_arg_sets_reranker_block": [
+      "self",
+      "mock_req",
+      "vector_search_index_factory",
+      "capsys"
+    ],
+    "test_both_columns_to_rerank_and_reranker_raises": [
+      "self",
+      "vector_search_index_factory"
+    ],
+    "test_pagination_accumulates_results": [
+      "self",
+      "mock_req",
+      "vector_search_index_factory"
+    ]
+  },
+  "TestWaitUntilReady": {
+    "test_polls_until_online": [
+      "self",
+      "mock_req",
+      "_sleep",
+      "vector_search_index_factory"
+    ],
+    "test_raises_on_offline": [
+      "self",
+      "mock_req",
+      "_sleep",
+      "vector_search_index_factory"
+    ]
+  },
+  "TestGetIndexUrl": {
+    "test_pat_only_returns_control_plane_url": [
+      "self"
+    ],
+    "test_sp_with_index_url_returns_index_url": [
+      "self"
+    ],
+    "test_missing_index_url_falls_back_to_control_plane": [
+      "self"
+    ]
+  },
+  "TestTokenForRequest": {
+    "test_pat_branch_returns_pat": [
+      "self",
+      "vector_search_index_factory"
+    ],
+    "test_control_plane_cache_hit_returns_cached_token": [
+      "self",
+      "vector_search_index_factory",
+      "workspace_url"
+    ],
+    "test_write_cache_hit_returns_write_token": [
+      "self",
+      "vector_search_index_factory"
+    ],
+    "test_read_cache_hit_returns_read_token": [
+      "self",
+      "vector_search_index_factory"
+    ],
+    "test_explicit_control_plane_returns_cp_token": [
+      "self",
+      "vector_search_index_factory"
+    ],
+    "test_expired_token_triggers_refetch": [
+      "self",
+      "vector_search_index_factory"
+    ]
+  },
+  "TestVectorSearchClient": {
+    "setUp": [
+      "self"
+    ],
+    "tearDown": [
+      "self"
+    ],
+    "set_valid_token": [
+      "self"
+    ],
+    "set_invalid_token": [
+      "self"
+    ],
+    "expect_invalid_client_call": [
+      "self",
+      "client"
+    ],
+    "test_model_serving_user_credentials": [
+      "self",
+      "mock_isfile"
+    ],
+    "test_model_serving_user_credentials_with_mlflowserving_import": [
+      "self",
+      "mock_isfile"
+    ],
+    "test_model_serving_user_credentials_fallback_to_thread_data": [
+      "self",
+      "mock_isfile"
+    ],
+    "test_standard_creds": [
+      "self",
+      "mock_isfile"
+    ],
+    "test_user_credentials": [
+      "self"
+    ],
+    "test_pat_credentials_skip_mlflow": [
+      "self"
+    ],
+    "test_service_principal_credentials_skip_mlflow": [
+      "self"
+    ]
+  },
+  "__path__": [],
+  "VectorSearchIndex": {
+    "__init__": [
+      "self",
+      "workspace_url",
+      "index_url",
+      "name",
+      "endpoint_name",
+      "mlserving_endpoint_name",
+      "personal_access_token",
+      "service_principal_client_id",
+      "service_principal_client_secret",
+      "azure_tenant_id",
+      "azure_login_id",
+      "use_user_passed_credentials",
+      "credential_strategy",
+      "get_reranker_url_callable",
+      "mlserving_endpoint_name_for_query",
+      "total_retries",
+      "backoff_factor",
+      "backoff_jitter"
+    ],
+    "_get_mlserving_endpoint_id": [
+      "self",
+      "mlserving_endpoint_name"
+    ],
+    "_get_token_for_request": [
+      "self",
+      "write",
+      "control_plane",
+      "index_url"
+    ],
+    "_build_query_payload": [
+      "self",
+      "columns",
+      "query_text",
+      "query_vector",
+      "filters",
+      "num_results",
+      "debug_level",
+      "score_threshold",
+      "query_type",
+      "columns_to_rerank",
+      "disable_notice",
+      "reranker",
+      "query_columns",
+      "sort_columns",
+      "facets",
+      "_query_experiment_config"
+    ],
+    "_resolve_query_url": [
+      "self",
+      "is_reranker"
+    ],
+    "_build_scan_payload": [
+      "self",
+      "num_results",
+      "last_primary_key"
+    ],
+    "_build_next_page_payload": [
+      "self",
+      "page_token"
+    ],
+    "_build_upsert_payload": [
+      "self",
+      "inputs"
+    ],
+    "_build_delete_payload": [
+      "self",
+      "primary_keys"
+    ],
+    "upsert": [
+      "self",
+      "inputs"
+    ],
+    "delete": [
+      "self",
+      "primary_keys"
+    ],
+    "describe": [
+      "self"
+    ],
+    "_get_index_id": [
+      "self"
+    ],
+    "sync": [
+      "self"
+    ],
+    "similarity_search": [
+      "self",
+      "columns",
+      "query_text",
+      "query_vector",
+      "filters",
+      "num_results",
+      "debug_level",
+      "score_threshold",
+      "query_type",
+      "columns_to_rerank",
+      "disable_notice",
+      "reranker",
+      "total_retries",
+      "backoff_factor",
+      "backoff_jitter"
+    ],
+    "wait_until_ready": [
+      "self",
+      "verbose",
+      "timeout",
+      "wait_for_updates"
+    ],
+    "scan": [
+      "self",
+      "num_results",
+      "last_primary_key"
+    ],
+    "scan_index": [
+      "self",
+      "num_results",
+      "last_primary_key"
+    ],
+    "__get_next_page": [
+      "self",
+      "index_url",
+      "page_token",
+      "control_plane"
+    ]
+  },
+  "_get_index_url": [
+    "index_url",
+    "workspace_url",
+    "index_name",
+    "personal_access_token",
+    "service_principal_client_id",
+    "service_principal_client_secret"
+  ],
+  "AsyncVectorSearchIndex": {
+    "__init__": [
+      "self",
+      "workspace_url",
+      "index_url",
+      "name",
+      "endpoint_name",
+      "mlserving_endpoint_name",
+      "personal_access_token",
+      "service_principal_client_id",
+      "service_principal_client_secret",
+      "azure_tenant_id",
+      "azure_login_id",
+      "use_user_passed_credentials",
+      "credential_strategy",
+      "get_reranker_url_callable",
+      "mlserving_endpoint_name_for_query",
+      "total_retries",
+      "backoff_factor",
+      "backoff_jitter"
+    ],
+    "upsert": [
+      "self",
+      "inputs"
+    ],
+    "delete": [
+      "self",
+      "primary_keys"
+    ],
+    "describe": [
+      "self"
+    ],
+    "sync": [
+      "self"
+    ],
+    "scan": [
+      "self",
+      "num_results",
+      "last_primary_key"
+    ],
+    "similarity_search": [
+      "self",
+      "columns",
+      "query_text",
+      "query_vector",
+      "filters",
+      "num_results",
+      "debug_level",
+      "score_threshold",
+      "query_type",
+      "columns_to_rerank",
+      "disable_notice",
+      "reranker",
+      "total_retries",
+      "backoff_factor",
+      "backoff_jitter"
+    ],
+    "aclose": [
+      "self"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self",
+      "exc_type",
+      "exc",
+      "tb"
+    ],
+    "_aget_token": [
+      "self",
+      "write",
+      "control_plane",
+      "index_url"
+    ],
+    "_aget_next_page": [
+      "self",
+      "index_url",
+      "page_token",
+      "control_plane"
+    ]
+  },
+  "VectorSearchClient": {
+    "__init__": [
+      "self",
+      "workspace_url",
+      "personal_access_token",
+      "service_principal_client_id",
+      "service_principal_client_secret",
+      "azure_tenant_id",
+      "azure_login_id",
+      "disable_notice",
+      "credential_strategy"
+    ],
+    "validate": [
+      "self",
+      "disable_notice"
+    ],
+    "_get_token_for_request": [
+      "self"
+    ],
+    "create_endpoint": [
+      "self",
+      "name",
+      "endpoint_type",
+      "budget_policy_id",
+      "usage_policy_id",
+      "target_qps"
+    ],
+    "get_endpoint": [
+      "self",
+      "name"
+    ],
+    "endpoint_exists": [
+      "self",
+      "name"
+    ],
+    "list_endpoints": [
+      "self"
+    ],
+    "delete_endpoint": [
+      "self",
+      "name"
+    ],
+    "create_endpoint_and_wait": [
+      "self",
+      "name",
+      "endpoint_type",
+      "budget_policy_id",
+      "usage_policy_id",
+      "target_qps",
+      "verbose",
+      "timeout"
+    ],
+    "wait_for_endpoint": [
+      "self",
+      "name",
+      "verbose",
+      "timeout"
+    ],
+    "update_endpoint_budget_policy": [
+      "self",
+      "name",
+      "budget_policy_id",
+      "usage_policy_id"
+    ],
+    "update_endpoint_usage_policy": [
+      "self",
+      "name",
+      "usage_policy_id"
+    ],
+    "update_endpoint": [
+      "self",
+      "name",
+      "target_qps"
+    ],
+    "list_indexes": [
+      "self",
+      "name"
+    ],
+    "create_delta_sync_index": [
+      "self",
+      "endpoint_name",
+      "index_name",
+      "primary_key",
+      "source_table_name",
+      "pipeline_type",
+      "embedding_dimension",
+      "embedding_vector_column",
+      "embedding_source_column",
+      "embedding_model_endpoint_name",
+      "sync_computed_embeddings",
+      "columns_to_sync",
+      "model_endpoint_name_for_query",
+      "budget_policy_id",
+      "usage_policy_id",
+      "index_subtype"
+    ],
+    "create_delta_sync_index_and_wait": [
+      "self",
+      "endpoint_name",
+      "index_name",
+      "primary_key",
+      "source_table_name",
+      "pipeline_type",
+      "embedding_dimension",
+      "embedding_vector_column",
+      "embedding_source_column",
+      "embedding_model_endpoint_name",
+      "sync_computed_embeddings",
+      "columns_to_sync",
+      "model_endpoint_name_for_query",
+      "budget_policy_id",
+      "usage_policy_id",
+      "verbose",
+      "timeout",
+      "index_subtype"
+    ],
+    "create_direct_access_index": [
+      "self",
+      "endpoint_name",
+      "index_name",
+      "primary_key",
+      "embedding_dimension",
+      "embedding_vector_column",
+      "schema",
+      "embedding_model_endpoint_name",
+      "budget_policy_id",
+      "usage_policy_id"
+    ],
+    "_get_index_url": [
+      "self",
+      "endpoint_name",
+      "index_name"
+    ],
+    "_get_mlserving_endpoint_name_from_resp": [
+      "self",
+      "resp"
+    ],
+    "_get_mlserving_endpoint_name_for_query_from_resp": [
+      "self",
+      "resp"
+    ],
+    "get_index": [
+      "self",
+      "endpoint_name",
+      "index_name"
+    ],
+    "get_async_index": [
+      "self",
+      "endpoint_name",
+      "index_name"
+    ],
+    "index_exists": [
+      "self",
+      "endpoint_name",
+      "index_name"
+    ],
+    "delete_index": [
+      "self",
+      "endpoint_name",
+      "index_name"
+    ],
+    "update_index_budget_policy": [
+      "self",
+      "index_name",
+      "budget_policy_id",
+      "usage_policy_id"
+    ],
+    "update_index_usage_policy": [
+      "self",
+      "index_name",
+      "usage_policy_id"
+    ],
+    "_fetch_index_params": [
+      "self",
+      "endpoint_name",
+      "index_name"
+    ]
+  },
+  "_RETRYABLE_STATUS_CODES": [],
+  "_RETRYABLE_EXCEPTIONS": [],
+  "_parse_retry_after": [
+    "value"
+  ],
+  "_get_client_for_loop": [],
+  "aclose_all_clients": [],
+  "AsyncRequestUtils": {
+    "issue_request": [
+      "url",
+      "method",
+      "token",
+      "params",
+      "json",
+      "auth",
+      "data",
+      "headers",
+      "total_retries",
+      "backoff_factor",
+      "backoff_jitter",
+      "client"
+    ]
+  },
+  "VectorSearchException": {
+    "__init__": [
+      "self",
+      "message",
+      "status_code",
+      "response_content"
+    ]
+  },
+  "InvalidInputException": {},
+  "NotFound": {},
+  "ResourceDoesNotExist": [],
+  "BadRequest": {},
+  "PermissionDenied": {},
+  "ResourceConflict": {},
+  "TooManyRequests": {},
+  "_CAMEL_TO_SNAKE_RE": [],
+  "_camel_to_snake": [
+    "name"
+  ],
+  "normalize_response_keys_to_snake_case": [
+    "value"
+  ],
+  "OAuthTokenUtils": {
+    "get_azure_oauth_token": [
+      "workspace_url",
+      "azure_tenant_id",
+      "azure_login_id",
+      "service_principal_client_id",
+      "service_principal_client_secret",
+      "authorization_details"
+    ],
+    "get_oauth_token": [
+      "workspace_url",
+      "service_principal_client_id",
+      "service_principal_client_secret",
+      "authorization_details"
+    ]
+  },
+  "_cached_get_request_session": [
+    "total_retries",
+    "backoff_factor",
+    "backoff_jitter",
+    "process_id"
+  ],
+  "RequestUtils": {
+    "session": [],
+    "issue_request": [
+      "url",
+      "method",
+      "token",
+      "params",
+      "json",
+      "verify",
+      "auth",
+      "data",
+      "headers",
+      "total_retries",
+      "backoff_factor",
+      "backoff_jitter"
+    ]
+  },
+  "UrlUtils": {
+    "add_https_if_missing": [
+      "url"
+    ]
+  },
+  "CredentialStrategy": {
+    "MODEL_SERVING_USER_CREDENTIALS": []
+  },
+  "_get_invokers_token_fallback": [],
+  "_get_invokers_token_from_mlflowserving": [],
+  "get_model_serving_invoker_credentials": [],
+  "is_in_model_serving_environment": [],
+  "authentication_warning": [
+    "notebook_token",
+    "personal_access_token",
+    "disable_notice"
+  ],
+  "_default_finetuned_endpoint_name": [
+    "index_name",
+    "table_id"
+  ],
+  "Reranker": {},
+  "DatabricksReranker": {
+    "__init__": [
+      "self",
+      "columns_to_rerank"
+    ]
+  },
+  "ExperimentalDatabricksFinetunedReranker": {
+    "__init__": [
+      "self",
+      "columns_to_rerank",
+      "endpoint_name"
+    ]
+  },
+  "__all__": [],
+  "VERSION": []
+}
