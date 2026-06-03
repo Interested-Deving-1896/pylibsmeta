@@ -1,0 +1,2097 @@
+{
+  "__version__": [],
+  "__all__": [],
+  "__protobuf__": [],
+  "Folder": {},
+  "CreateFindingRequest": {},
+  "CreateNotificationConfigRequest": {},
+  "CreateSourceRequest": {},
+  "DeleteNotificationConfigRequest": {},
+  "GetNotificationConfigRequest": {},
+  "GetOrganizationSettingsRequest": {},
+  "GetSourceRequest": {},
+  "GroupAssetsRequest": {},
+  "GroupAssetsResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "GroupFindingsRequest": {},
+  "GroupFindingsResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "GroupResult": {},
+  "ListNotificationConfigsRequest": {},
+  "ListNotificationConfigsResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "ListSourcesRequest": {},
+  "ListSourcesResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "ListAssetsRequest": {},
+  "ListAssetsResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "ListFindingsRequest": {},
+  "ListFindingsResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "SetFindingStateRequest": {},
+  "RunAssetDiscoveryRequest": {},
+  "UpdateFindingRequest": {},
+  "UpdateNotificationConfigRequest": {},
+  "UpdateOrganizationSettingsRequest": {},
+  "UpdateSourceRequest": {},
+  "UpdateSecurityMarksRequest": {},
+  "Source": {},
+  "NotificationMessage": {},
+  "OrganizationSettings": {},
+  "NotificationConfig": {},
+  "Asset": {},
+  "RunAssetDiscoveryResponse": {},
+  "Finding": {},
+  "Resource": {},
+  "SecurityMarks": {},
+  "_LOGGER": [],
+  "SecurityCenterClientMeta": {
+    "_transport_registry": [],
+    "get_transport_class": [
+      "cls",
+      "label"
+    ]
+  },
+  "SecurityCenterClient": {
+    "_get_default_mtls_endpoint": [
+      "api_endpoint"
+    ],
+    "DEFAULT_ENDPOINT": [],
+    "DEFAULT_MTLS_ENDPOINT": [],
+    "_DEFAULT_ENDPOINT_TEMPLATE": [],
+    "_DEFAULT_UNIVERSE": [],
+    "_use_client_cert_effective": [],
+    "from_service_account_info": [
+      "cls",
+      "info"
+    ],
+    "from_service_account_file": [
+      "cls",
+      "filename"
+    ],
+    "from_service_account_json": [],
+    "transport": [
+      "self"
+    ],
+    "asset_path": [
+      "organization",
+      "asset"
+    ],
+    "parse_asset_path": [
+      "path"
+    ],
+    "finding_path": [
+      "organization",
+      "source",
+      "finding"
+    ],
+    "parse_finding_path": [
+      "path"
+    ],
+    "notification_config_path": [
+      "organization",
+      "notification_config"
+    ],
+    "parse_notification_config_path": [
+      "path"
+    ],
+    "organization_settings_path": [
+      "organization"
+    ],
+    "parse_organization_settings_path": [
+      "path"
+    ],
+    "security_marks_path": [
+      "organization",
+      "asset"
+    ],
+    "parse_security_marks_path": [
+      "path"
+    ],
+    "source_path": [
+      "organization",
+      "source"
+    ],
+    "parse_source_path": [
+      "path"
+    ],
+    "topic_path": [
+      "project",
+      "topic"
+    ],
+    "parse_topic_path": [
+      "path"
+    ],
+    "common_billing_account_path": [
+      "billing_account"
+    ],
+    "parse_common_billing_account_path": [
+      "path"
+    ],
+    "common_folder_path": [
+      "folder"
+    ],
+    "parse_common_folder_path": [
+      "path"
+    ],
+    "common_organization_path": [
+      "organization"
+    ],
+    "parse_common_organization_path": [
+      "path"
+    ],
+    "common_project_path": [
+      "project"
+    ],
+    "parse_common_project_path": [
+      "path"
+    ],
+    "common_location_path": [
+      "project",
+      "location"
+    ],
+    "parse_common_location_path": [
+      "path"
+    ],
+    "get_mtls_endpoint_and_cert_source": [
+      "cls",
+      "client_options"
+    ],
+    "_read_environment_variables": [],
+    "_get_client_cert_source": [
+      "provided_cert_source",
+      "use_cert_flag"
+    ],
+    "_get_api_endpoint": [
+      "api_override",
+      "client_cert_source",
+      "universe_domain",
+      "use_mtls_endpoint"
+    ],
+    "_get_universe_domain": [
+      "client_universe_domain",
+      "universe_domain_env"
+    ],
+    "_validate_universe_domain": [
+      "self"
+    ],
+    "_add_cred_info_for_auth_errors": [
+      "self",
+      "error"
+    ],
+    "api_endpoint": [
+      "self"
+    ],
+    "universe_domain": [
+      "self"
+    ],
+    "__init__": [
+      "self"
+    ],
+    "create_source": [
+      "self",
+      "request"
+    ],
+    "create_finding": [
+      "self",
+      "request"
+    ],
+    "create_notification_config": [
+      "self",
+      "request"
+    ],
+    "delete_notification_config": [
+      "self",
+      "request"
+    ],
+    "get_iam_policy": [
+      "self",
+      "request"
+    ],
+    "get_notification_config": [
+      "self",
+      "request"
+    ],
+    "get_organization_settings": [
+      "self",
+      "request"
+    ],
+    "get_source": [
+      "self",
+      "request"
+    ],
+    "group_assets": [
+      "self",
+      "request"
+    ],
+    "group_findings": [
+      "self",
+      "request"
+    ],
+    "list_assets": [
+      "self",
+      "request"
+    ],
+    "list_findings": [
+      "self",
+      "request"
+    ],
+    "list_notification_configs": [
+      "self",
+      "request"
+    ],
+    "list_sources": [
+      "self",
+      "request"
+    ],
+    "run_asset_discovery": [
+      "self",
+      "request"
+    ],
+    "set_finding_state": [
+      "self",
+      "request"
+    ],
+    "set_iam_policy": [
+      "self",
+      "request"
+    ],
+    "test_iam_permissions": [
+      "self",
+      "request"
+    ],
+    "update_finding": [
+      "self",
+      "request"
+    ],
+    "update_notification_config": [
+      "self",
+      "request"
+    ],
+    "update_organization_settings": [
+      "self",
+      "request"
+    ],
+    "update_source": [
+      "self",
+      "request"
+    ],
+    "update_security_marks": [
+      "self",
+      "request"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "type",
+      "value",
+      "traceback"
+    ]
+  },
+  "DEFAULT_CLIENT_INFO": [],
+  "SecurityCenterAsyncClient": {
+    "DEFAULT_ENDPOINT": [],
+    "DEFAULT_MTLS_ENDPOINT": [],
+    "_DEFAULT_ENDPOINT_TEMPLATE": [],
+    "_DEFAULT_UNIVERSE": [],
+    "asset_path": [],
+    "parse_asset_path": [],
+    "finding_path": [],
+    "parse_finding_path": [],
+    "notification_config_path": [],
+    "parse_notification_config_path": [],
+    "organization_settings_path": [],
+    "parse_organization_settings_path": [],
+    "security_marks_path": [],
+    "parse_security_marks_path": [],
+    "source_path": [],
+    "parse_source_path": [],
+    "topic_path": [],
+    "parse_topic_path": [],
+    "common_billing_account_path": [],
+    "parse_common_billing_account_path": [],
+    "common_folder_path": [],
+    "parse_common_folder_path": [],
+    "common_organization_path": [],
+    "parse_common_organization_path": [],
+    "common_project_path": [],
+    "parse_common_project_path": [],
+    "common_location_path": [],
+    "parse_common_location_path": [],
+    "from_service_account_info": [
+      "cls",
+      "info"
+    ],
+    "from_service_account_file": [
+      "cls",
+      "filename"
+    ],
+    "from_service_account_json": [],
+    "get_mtls_endpoint_and_cert_source": [
+      "cls",
+      "client_options"
+    ],
+    "transport": [
+      "self"
+    ],
+    "api_endpoint": [
+      "self"
+    ],
+    "universe_domain": [
+      "self"
+    ],
+    "get_transport_class": [],
+    "__init__": [
+      "self"
+    ],
+    "create_source": [
+      "self",
+      "request"
+    ],
+    "create_finding": [
+      "self",
+      "request"
+    ],
+    "create_notification_config": [
+      "self",
+      "request"
+    ],
+    "delete_notification_config": [
+      "self",
+      "request"
+    ],
+    "get_iam_policy": [
+      "self",
+      "request"
+    ],
+    "get_notification_config": [
+      "self",
+      "request"
+    ],
+    "get_organization_settings": [
+      "self",
+      "request"
+    ],
+    "get_source": [
+      "self",
+      "request"
+    ],
+    "group_assets": [
+      "self",
+      "request"
+    ],
+    "group_findings": [
+      "self",
+      "request"
+    ],
+    "list_assets": [
+      "self",
+      "request"
+    ],
+    "list_findings": [
+      "self",
+      "request"
+    ],
+    "list_notification_configs": [
+      "self",
+      "request"
+    ],
+    "list_sources": [
+      "self",
+      "request"
+    ],
+    "run_asset_discovery": [
+      "self",
+      "request"
+    ],
+    "set_finding_state": [
+      "self",
+      "request"
+    ],
+    "set_iam_policy": [
+      "self",
+      "request"
+    ],
+    "test_iam_permissions": [
+      "self",
+      "request"
+    ],
+    "update_finding": [
+      "self",
+      "request"
+    ],
+    "update_notification_config": [
+      "self",
+      "request"
+    ],
+    "update_organization_settings": [
+      "self",
+      "request"
+    ],
+    "update_source": [
+      "self",
+      "request"
+    ],
+    "update_security_marks": [
+      "self",
+      "request"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self",
+      "exc_type",
+      "exc",
+      "tb"
+    ]
+  },
+  "GroupAssetsPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "GroupAssetsAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "GroupFindingsPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "GroupFindingsAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListAssetsPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListAssetsAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListFindingsPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListFindingsAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListNotificationConfigsPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListNotificationConfigsAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListSourcesPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListSourcesAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "_LoggingClientAIOInterceptor": {
+    "intercept_unary_unary": [
+      "self",
+      "continuation",
+      "client_call_details",
+      "request"
+    ]
+  },
+  "SecurityCenterGrpcAsyncIOTransport": {
+    "create_channel": [
+      "cls",
+      "host",
+      "credentials",
+      "credentials_file",
+      "scopes",
+      "quota_project_id"
+    ],
+    "__init__": [
+      "self"
+    ],
+    "grpc_channel": [
+      "self"
+    ],
+    "operations_client": [
+      "self"
+    ],
+    "create_source": [
+      "self"
+    ],
+    "create_finding": [
+      "self"
+    ],
+    "create_notification_config": [
+      "self"
+    ],
+    "delete_notification_config": [
+      "self"
+    ],
+    "get_iam_policy": [
+      "self"
+    ],
+    "get_notification_config": [
+      "self"
+    ],
+    "get_organization_settings": [
+      "self"
+    ],
+    "get_source": [
+      "self"
+    ],
+    "group_assets": [
+      "self"
+    ],
+    "group_findings": [
+      "self"
+    ],
+    "list_assets": [
+      "self"
+    ],
+    "list_findings": [
+      "self"
+    ],
+    "list_notification_configs": [
+      "self"
+    ],
+    "list_sources": [
+      "self"
+    ],
+    "run_asset_discovery": [
+      "self"
+    ],
+    "set_finding_state": [
+      "self"
+    ],
+    "set_iam_policy": [
+      "self"
+    ],
+    "test_iam_permissions": [
+      "self"
+    ],
+    "update_finding": [
+      "self"
+    ],
+    "update_notification_config": [
+      "self"
+    ],
+    "update_organization_settings": [
+      "self"
+    ],
+    "update_source": [
+      "self"
+    ],
+    "update_security_marks": [
+      "self"
+    ],
+    "_prep_wrapped_messages": [
+      "self",
+      "client_info"
+    ],
+    "_wrap_method": [
+      "self",
+      "func"
+    ],
+    "close": [
+      "self"
+    ],
+    "kind": [
+      "self"
+    ]
+  },
+  "SecurityCenterTransport": {
+    "AUTH_SCOPES": [],
+    "__init__": [
+      "self"
+    ],
+    "host": [
+      "self"
+    ],
+    "_prep_wrapped_messages": [
+      "self",
+      "client_info"
+    ],
+    "close": [
+      "self"
+    ],
+    "operations_client": [
+      "self"
+    ],
+    "create_source": [
+      "self"
+    ],
+    "create_finding": [
+      "self"
+    ],
+    "create_notification_config": [
+      "self"
+    ],
+    "delete_notification_config": [
+      "self"
+    ],
+    "get_iam_policy": [
+      "self"
+    ],
+    "get_notification_config": [
+      "self"
+    ],
+    "get_organization_settings": [
+      "self"
+    ],
+    "get_source": [
+      "self"
+    ],
+    "group_assets": [
+      "self"
+    ],
+    "group_findings": [
+      "self"
+    ],
+    "list_assets": [
+      "self"
+    ],
+    "list_findings": [
+      "self"
+    ],
+    "list_notification_configs": [
+      "self"
+    ],
+    "list_sources": [
+      "self"
+    ],
+    "run_asset_discovery": [
+      "self"
+    ],
+    "set_finding_state": [
+      "self"
+    ],
+    "set_iam_policy": [
+      "self"
+    ],
+    "test_iam_permissions": [
+      "self"
+    ],
+    "update_finding": [
+      "self"
+    ],
+    "update_notification_config": [
+      "self"
+    ],
+    "update_organization_settings": [
+      "self"
+    ],
+    "update_source": [
+      "self"
+    ],
+    "update_security_marks": [
+      "self"
+    ],
+    "kind": [
+      "self"
+    ]
+  },
+  "_BaseSecurityCenterRestTransport": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "_transport_registry": [],
+  "_LoggingClientInterceptor": {
+    "intercept_unary_unary": [
+      "self",
+      "continuation",
+      "client_call_details",
+      "request"
+    ]
+  },
+  "SecurityCenterGrpcTransport": {
+    "__init__": [
+      "self"
+    ],
+    "create_channel": [
+      "cls",
+      "host",
+      "credentials",
+      "credentials_file",
+      "scopes",
+      "quota_project_id"
+    ],
+    "grpc_channel": [
+      "self"
+    ],
+    "operations_client": [
+      "self"
+    ],
+    "create_source": [
+      "self"
+    ],
+    "create_finding": [
+      "self"
+    ],
+    "create_notification_config": [
+      "self"
+    ],
+    "delete_notification_config": [
+      "self"
+    ],
+    "get_iam_policy": [
+      "self"
+    ],
+    "get_notification_config": [
+      "self"
+    ],
+    "get_organization_settings": [
+      "self"
+    ],
+    "get_source": [
+      "self"
+    ],
+    "group_assets": [
+      "self"
+    ],
+    "group_findings": [
+      "self"
+    ],
+    "list_assets": [
+      "self"
+    ],
+    "list_findings": [
+      "self"
+    ],
+    "list_notification_configs": [
+      "self"
+    ],
+    "list_sources": [
+      "self"
+    ],
+    "run_asset_discovery": [
+      "self"
+    ],
+    "set_finding_state": [
+      "self"
+    ],
+    "set_iam_policy": [
+      "self"
+    ],
+    "test_iam_permissions": [
+      "self"
+    ],
+    "update_finding": [
+      "self"
+    ],
+    "update_notification_config": [
+      "self"
+    ],
+    "update_organization_settings": [
+      "self"
+    ],
+    "update_source": [
+      "self"
+    ],
+    "update_security_marks": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "kind": [
+      "self"
+    ]
+  },
+  "SecurityCenterRestInterceptor": {
+    "pre_create_finding": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_create_finding": [
+      "self",
+      "response"
+    ],
+    "post_create_finding_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_create_notification_config": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_create_notification_config": [
+      "self",
+      "response"
+    ],
+    "post_create_notification_config_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_create_source": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_create_source": [
+      "self",
+      "response"
+    ],
+    "post_create_source_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_delete_notification_config": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "pre_get_iam_policy": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_get_iam_policy": [
+      "self",
+      "response"
+    ],
+    "post_get_iam_policy_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_get_notification_config": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_get_notification_config": [
+      "self",
+      "response"
+    ],
+    "post_get_notification_config_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_get_organization_settings": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_get_organization_settings": [
+      "self",
+      "response"
+    ],
+    "post_get_organization_settings_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_get_source": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_get_source": [
+      "self",
+      "response"
+    ],
+    "post_get_source_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_group_assets": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_group_assets": [
+      "self",
+      "response"
+    ],
+    "post_group_assets_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_group_findings": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_group_findings": [
+      "self",
+      "response"
+    ],
+    "post_group_findings_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_list_assets": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_list_assets": [
+      "self",
+      "response"
+    ],
+    "post_list_assets_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_list_findings": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_list_findings": [
+      "self",
+      "response"
+    ],
+    "post_list_findings_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_list_notification_configs": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_list_notification_configs": [
+      "self",
+      "response"
+    ],
+    "post_list_notification_configs_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_list_sources": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_list_sources": [
+      "self",
+      "response"
+    ],
+    "post_list_sources_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_run_asset_discovery": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_run_asset_discovery": [
+      "self",
+      "response"
+    ],
+    "post_run_asset_discovery_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_set_finding_state": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_set_finding_state": [
+      "self",
+      "response"
+    ],
+    "post_set_finding_state_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_set_iam_policy": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_set_iam_policy": [
+      "self",
+      "response"
+    ],
+    "post_set_iam_policy_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_test_iam_permissions": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_test_iam_permissions": [
+      "self",
+      "response"
+    ],
+    "post_test_iam_permissions_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_update_finding": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_update_finding": [
+      "self",
+      "response"
+    ],
+    "post_update_finding_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_update_notification_config": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_update_notification_config": [
+      "self",
+      "response"
+    ],
+    "post_update_notification_config_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_update_organization_settings": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_update_organization_settings": [
+      "self",
+      "response"
+    ],
+    "post_update_organization_settings_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_update_security_marks": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_update_security_marks": [
+      "self",
+      "response"
+    ],
+    "post_update_security_marks_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_update_source": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_update_source": [
+      "self",
+      "response"
+    ],
+    "post_update_source_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ]
+  },
+  "SecurityCenterRestStub": {},
+  "SecurityCenterRestTransport": {
+    "__init__": [
+      "self"
+    ],
+    "operations_client": [
+      "self"
+    ],
+    "create_finding": [
+      "self"
+    ],
+    "create_notification_config": [
+      "self"
+    ],
+    "create_source": [
+      "self"
+    ],
+    "delete_notification_config": [
+      "self"
+    ],
+    "get_iam_policy": [
+      "self"
+    ],
+    "get_notification_config": [
+      "self"
+    ],
+    "get_organization_settings": [
+      "self"
+    ],
+    "get_source": [
+      "self"
+    ],
+    "group_assets": [
+      "self"
+    ],
+    "group_findings": [
+      "self"
+    ],
+    "list_assets": [
+      "self"
+    ],
+    "list_findings": [
+      "self"
+    ],
+    "list_notification_configs": [
+      "self"
+    ],
+    "list_sources": [
+      "self"
+    ],
+    "run_asset_discovery": [
+      "self"
+    ],
+    "set_finding_state": [
+      "self"
+    ],
+    "set_iam_policy": [
+      "self"
+    ],
+    "test_iam_permissions": [
+      "self"
+    ],
+    "update_finding": [
+      "self"
+    ],
+    "update_notification_config": [
+      "self"
+    ],
+    "update_organization_settings": [
+      "self"
+    ],
+    "update_security_marks": [
+      "self"
+    ],
+    "update_source": [
+      "self"
+    ],
+    "kind": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "IamBinding": {},
+  "IpRules": {},
+  "IpRule": {},
+  "Allowed": {},
+  "Denied": {},
+  "LoadBalancer": {},
+  "Connection": {},
+  "AttackPath": {},
+  "BigQueryExport": {},
+  "MuteConfig": {},
+  "BatchCreateResourceValueConfigsRequest": {},
+  "BatchCreateResourceValueConfigsResponse": {},
+  "BulkMuteFindingsRequest": {},
+  "BulkMuteFindingsResponse": {},
+  "CreateBigQueryExportRequest": {},
+  "CreateMuteConfigRequest": {},
+  "CreateResourceValueConfigRequest": {},
+  "DeleteBigQueryExportRequest": {},
+  "DeleteMuteConfigRequest": {},
+  "DeleteResourceValueConfigRequest": {},
+  "BigQueryDestination": {},
+  "ExportFindingsMetadata": {},
+  "ExportFindingsResponse": {},
+  "GetBigQueryExportRequest": {},
+  "GetMuteConfigRequest": {},
+  "GetResourceValueConfigRequest": {},
+  "ListAttackPathsRequest": {},
+  "ListAttackPathsResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "GetSimulationRequest": {},
+  "GetValuedResourceRequest": {},
+  "ListBigQueryExportsRequest": {},
+  "ListBigQueryExportsResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "ListMuteConfigsRequest": {},
+  "ListMuteConfigsResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "ListResourceValueConfigsRequest": {},
+  "ListResourceValueConfigsResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "ListValuedResourcesRequest": {},
+  "ListValuedResourcesResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "SetMuteRequest": {},
+  "UpdateBigQueryExportRequest": {},
+  "UpdateExternalSystemRequest": {},
+  "UpdateMuteConfigRequest": {},
+  "UpdateResourceValueConfigRequest": {},
+  "LogEntry": {},
+  "CloudLoggingEntry": {},
+  "Chokepoint": {},
+  "AffectedResources": {},
+  "GroupMembership": {},
+  "CloudDlpDataProfile": {},
+  "Disk": {},
+  "Exfiltration": {},
+  "ExfilResource": {},
+  "Notebook": {},
+  "Vulnerability": {},
+  "Cve": {},
+  "Reference": {},
+  "Cvssv3": {},
+  "Package": {},
+  "SecurityBulletin": {},
+  "Cwe": {},
+  "Container": {},
+  "Indicator": {},
+  "Network": {},
+  "SecurityPosture": {},
+  "ContactDetails": {},
+  "Contact": {},
+  "Compliance": {},
+  "AiModel": {},
+  "VertexAi": {},
+  "Process": {},
+  "EnvironmentVariable": {},
+  "AttackExposure": {},
+  "DataRetentionDeletionEvent": {},
+  "Database": {},
+  "ValuedResource": {},
+  "ResourceValueConfigMetadata": {},
+  "DataFlowEvent": {},
+  "CloudArmor": {},
+  "SecurityPolicy": {},
+  "Requests": {},
+  "AdaptiveProtection": {},
+  "Attack": {},
+  "Application": {},
+  "ExternalSystem": {},
+  "ToxicCombination": {},
+  "Label": {},
+  "Access": {},
+  "ServiceAccountDelegationInfo": {},
+  "Geolocation": {},
+  "MitreAttack": {},
+  "DataAccessEvent": {},
+  "CloudProvider": {
+    "CLOUD_PROVIDER_UNSPECIFIED": [],
+    "GOOGLE_CLOUD_PLATFORM": [],
+    "AMAZON_WEB_SERVICES": [],
+    "MICROSOFT_AZURE": []
+  },
+  "GcpMetadata": {},
+  "AwsMetadata": {},
+  "AzureMetadata": {},
+  "ResourcePath": {},
+  "Kubernetes": {},
+  "JobState": {
+    "JOB_STATE_UNSPECIFIED": [],
+    "PENDING": [],
+    "RUNNING": [],
+    "SUCCEEDED": [],
+    "FAILED": []
+  },
+  "Job": {},
+  "File": {},
+  "ResourceValue": {
+    "RESOURCE_VALUE_UNSPECIFIED": [],
+    "HIGH": [],
+    "MEDIUM": [],
+    "LOW": [],
+    "NONE": []
+  },
+  "ResourceValueConfig": {},
+  "KernelRootkit": {},
+  "CloudDlpInspection": {},
+  "Simulation": {},
+  "BackupDisasterRecovery": {},
+  "OrgPolicy": {},
+  "ListAttackPathsPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListAttackPathsAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListBigQueryExportsPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListBigQueryExportsAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListMuteConfigsPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListMuteConfigsAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListResourceValueConfigsPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListResourceValueConfigsAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListValuedResourcesPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListValuedResourcesAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "SecurityHealthAnalyticsCustomModule": {},
+  "CustomConfig": {},
+  "CreateSecurityHealthAnalyticsCustomModuleRequest": {},
+  "DeleteSecurityHealthAnalyticsCustomModuleRequest": {},
+  "GetEffectiveSecurityHealthAnalyticsCustomModuleRequest": {},
+  "GetSecurityHealthAnalyticsCustomModuleRequest": {},
+  "ListDescendantSecurityHealthAnalyticsCustomModulesRequest": {},
+  "ListDescendantSecurityHealthAnalyticsCustomModulesResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "ListEffectiveSecurityHealthAnalyticsCustomModulesRequest": {},
+  "ListEffectiveSecurityHealthAnalyticsCustomModulesResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "ListSecurityHealthAnalyticsCustomModulesRequest": {},
+  "ListSecurityHealthAnalyticsCustomModulesResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "SimulateSecurityHealthAnalyticsCustomModuleRequest": {},
+  "SimulateSecurityHealthAnalyticsCustomModuleResponse": {},
+  "UpdateSecurityHealthAnalyticsCustomModuleRequest": {},
+  "CreateEventThreatDetectionCustomModuleRequest": {},
+  "ValidateEventThreatDetectionCustomModuleRequest": {},
+  "ValidateEventThreatDetectionCustomModuleResponse": {},
+  "DeleteEventThreatDetectionCustomModuleRequest": {},
+  "GetEventThreatDetectionCustomModuleRequest": {},
+  "ListDescendantEventThreatDetectionCustomModulesRequest": {},
+  "ListDescendantEventThreatDetectionCustomModulesResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "ListEventThreatDetectionCustomModulesRequest": {},
+  "ListEventThreatDetectionCustomModulesResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "UpdateEventThreatDetectionCustomModuleRequest": {},
+  "GetEffectiveEventThreatDetectionCustomModuleRequest": {},
+  "ListEffectiveEventThreatDetectionCustomModulesRequest": {},
+  "ListEffectiveEventThreatDetectionCustomModulesResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "CustomModuleValidationErrors": {},
+  "CustomModuleValidationError": {},
+  "Position": {},
+  "InfoType": {},
+  "SensitivityScore": {},
+  "EffectiveEventThreatDetectionCustomModule": {},
+  "EventThreatDetectionCustomModule": {},
+  "EffectiveSecurityHealthAnalyticsCustomModule": {},
+  "ExternalExposure": {},
+  "ListDescendantSecurityHealthAnalyticsCustomModulesPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListDescendantSecurityHealthAnalyticsCustomModulesAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListEffectiveSecurityHealthAnalyticsCustomModulesPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListEffectiveSecurityHealthAnalyticsCustomModulesAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListSecurityHealthAnalyticsCustomModulesPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListSecurityHealthAnalyticsCustomModulesAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListDescendantEventThreatDetectionCustomModulesPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListDescendantEventThreatDetectionCustomModulesAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListEventThreatDetectionCustomModulesPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListEventThreatDetectionCustomModulesAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListEffectiveEventThreatDetectionCustomModulesPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListEffectiveEventThreatDetectionCustomModulesAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  }
+}

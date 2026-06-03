@@ -1,0 +1,2230 @@
+{
+  "__version__": [],
+  "__all__": [],
+  "__protobuf__": [],
+  "CreateRecognizerRequest": {},
+  "OperationMetadata": {},
+  "ListRecognizersRequest": {},
+  "ListRecognizersResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "GetRecognizerRequest": {},
+  "UpdateRecognizerRequest": {},
+  "DeleteRecognizerRequest": {},
+  "UndeleteRecognizerRequest": {},
+  "Recognizer": {},
+  "AutoDetectDecodingConfig": {},
+  "ExplicitDecodingConfig": {},
+  "SpeakerDiarizationConfig": {},
+  "CustomPromptConfig": {},
+  "RecognitionFeatures": {},
+  "TranscriptNormalization": {},
+  "TranslationConfig": {},
+  "SpeechAdaptation": {},
+  "DenoiserConfig": {},
+  "RecognitionConfig": {},
+  "RecognizeRequest": {},
+  "RecognitionResponseMetadata": {},
+  "SpeechRecognitionAlternative": {},
+  "WordInfo": {},
+  "SpeechRecognitionResult": {},
+  "RecognizeResponse": {},
+  "StreamingRecognitionFeatures": {},
+  "StreamingRecognitionConfig": {},
+  "StreamingRecognizeRequest": {},
+  "BatchRecognizeRequest": {},
+  "GcsOutputConfig": {},
+  "InlineOutputConfig": {},
+  "NativeOutputFileFormatConfig": {},
+  "VttOutputFileFormatConfig": {},
+  "SrtOutputFileFormatConfig": {},
+  "OutputFormatConfig": {},
+  "RecognitionOutputConfig": {},
+  "BatchRecognizeResponse": {},
+  "BatchRecognizeResults": {},
+  "CloudStorageResult": {},
+  "InlineResult": {},
+  "BatchRecognizeFileResult": {},
+  "BatchRecognizeTranscriptionMetadata": {},
+  "BatchRecognizeMetadata": {},
+  "BatchRecognizeFileMetadata": {},
+  "StreamingRecognitionResult": {},
+  "StreamingRecognizeResponse": {},
+  "Config": {},
+  "GetConfigRequest": {},
+  "UpdateConfigRequest": {},
+  "CustomClass": {},
+  "PhraseSet": {},
+  "CreateCustomClassRequest": {},
+  "ListCustomClassesRequest": {},
+  "ListCustomClassesResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "GetCustomClassRequest": {},
+  "UpdateCustomClassRequest": {},
+  "DeleteCustomClassRequest": {},
+  "UndeleteCustomClassRequest": {},
+  "CreatePhraseSetRequest": {},
+  "ListPhraseSetsRequest": {},
+  "ListPhraseSetsResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "GetPhraseSetRequest": {},
+  "UpdatePhraseSetRequest": {},
+  "DeletePhraseSetRequest": {},
+  "UndeletePhraseSetRequest": {},
+  "ModelFeature": {},
+  "ModelFeatures": {},
+  "ModelMetadata": {},
+  "LanguageMetadata": {},
+  "AccessMetadata": {},
+  "LocationsMetadata": {},
+  "_LOGGER": [],
+  "SpeechClientMeta": {
+    "_transport_registry": [],
+    "get_transport_class": [
+      "cls",
+      "label"
+    ]
+  },
+  "SpeechClient": {
+    "_get_default_mtls_endpoint": [
+      "api_endpoint"
+    ],
+    "DEFAULT_ENDPOINT": [],
+    "DEFAULT_MTLS_ENDPOINT": [],
+    "_DEFAULT_ENDPOINT_TEMPLATE": [],
+    "_DEFAULT_UNIVERSE": [],
+    "_use_client_cert_effective": [],
+    "from_service_account_info": [
+      "cls",
+      "info"
+    ],
+    "from_service_account_file": [
+      "cls",
+      "filename"
+    ],
+    "from_service_account_json": [],
+    "transport": [
+      "self"
+    ],
+    "config_path": [
+      "project",
+      "location"
+    ],
+    "parse_config_path": [
+      "path"
+    ],
+    "crypto_key_path": [
+      "project",
+      "location",
+      "key_ring",
+      "crypto_key"
+    ],
+    "parse_crypto_key_path": [
+      "path"
+    ],
+    "crypto_key_version_path": [
+      "project",
+      "location",
+      "key_ring",
+      "crypto_key",
+      "crypto_key_version"
+    ],
+    "parse_crypto_key_version_path": [
+      "path"
+    ],
+    "custom_class_path": [
+      "project",
+      "location",
+      "custom_class"
+    ],
+    "parse_custom_class_path": [
+      "path"
+    ],
+    "phrase_set_path": [
+      "project",
+      "location",
+      "phrase_set"
+    ],
+    "parse_phrase_set_path": [
+      "path"
+    ],
+    "recognizer_path": [
+      "project",
+      "location",
+      "recognizer"
+    ],
+    "parse_recognizer_path": [
+      "path"
+    ],
+    "common_billing_account_path": [
+      "billing_account"
+    ],
+    "parse_common_billing_account_path": [
+      "path"
+    ],
+    "common_folder_path": [
+      "folder"
+    ],
+    "parse_common_folder_path": [
+      "path"
+    ],
+    "common_organization_path": [
+      "organization"
+    ],
+    "parse_common_organization_path": [
+      "path"
+    ],
+    "common_project_path": [
+      "project"
+    ],
+    "parse_common_project_path": [
+      "path"
+    ],
+    "common_location_path": [
+      "project",
+      "location"
+    ],
+    "parse_common_location_path": [
+      "path"
+    ],
+    "get_mtls_endpoint_and_cert_source": [
+      "cls",
+      "client_options"
+    ],
+    "_read_environment_variables": [],
+    "_get_client_cert_source": [
+      "provided_cert_source",
+      "use_cert_flag"
+    ],
+    "_get_api_endpoint": [
+      "api_override",
+      "client_cert_source",
+      "universe_domain",
+      "use_mtls_endpoint"
+    ],
+    "_get_universe_domain": [
+      "client_universe_domain",
+      "universe_domain_env"
+    ],
+    "_validate_universe_domain": [
+      "self"
+    ],
+    "_add_cred_info_for_auth_errors": [
+      "self",
+      "error"
+    ],
+    "api_endpoint": [
+      "self"
+    ],
+    "universe_domain": [
+      "self"
+    ],
+    "__init__": [
+      "self"
+    ],
+    "create_recognizer": [
+      "self",
+      "request"
+    ],
+    "list_recognizers": [
+      "self",
+      "request"
+    ],
+    "get_recognizer": [
+      "self",
+      "request"
+    ],
+    "update_recognizer": [
+      "self",
+      "request"
+    ],
+    "delete_recognizer": [
+      "self",
+      "request"
+    ],
+    "undelete_recognizer": [
+      "self",
+      "request"
+    ],
+    "recognize": [
+      "self",
+      "request"
+    ],
+    "streaming_recognize": [
+      "self",
+      "requests"
+    ],
+    "batch_recognize": [
+      "self",
+      "request"
+    ],
+    "get_config": [
+      "self",
+      "request"
+    ],
+    "update_config": [
+      "self",
+      "request"
+    ],
+    "create_custom_class": [
+      "self",
+      "request"
+    ],
+    "list_custom_classes": [
+      "self",
+      "request"
+    ],
+    "get_custom_class": [
+      "self",
+      "request"
+    ],
+    "update_custom_class": [
+      "self",
+      "request"
+    ],
+    "delete_custom_class": [
+      "self",
+      "request"
+    ],
+    "undelete_custom_class": [
+      "self",
+      "request"
+    ],
+    "create_phrase_set": [
+      "self",
+      "request"
+    ],
+    "list_phrase_sets": [
+      "self",
+      "request"
+    ],
+    "get_phrase_set": [
+      "self",
+      "request"
+    ],
+    "update_phrase_set": [
+      "self",
+      "request"
+    ],
+    "delete_phrase_set": [
+      "self",
+      "request"
+    ],
+    "undelete_phrase_set": [
+      "self",
+      "request"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "type",
+      "value",
+      "traceback"
+    ],
+    "list_operations": [
+      "self",
+      "request"
+    ],
+    "get_operation": [
+      "self",
+      "request"
+    ],
+    "delete_operation": [
+      "self",
+      "request"
+    ],
+    "cancel_operation": [
+      "self",
+      "request"
+    ],
+    "get_location": [
+      "self",
+      "request"
+    ],
+    "list_locations": [
+      "self",
+      "request"
+    ]
+  },
+  "DEFAULT_CLIENT_INFO": [],
+  "SpeechAsyncClient": {
+    "DEFAULT_ENDPOINT": [],
+    "DEFAULT_MTLS_ENDPOINT": [],
+    "_DEFAULT_ENDPOINT_TEMPLATE": [],
+    "_DEFAULT_UNIVERSE": [],
+    "config_path": [],
+    "parse_config_path": [],
+    "crypto_key_path": [],
+    "parse_crypto_key_path": [],
+    "crypto_key_version_path": [],
+    "parse_crypto_key_version_path": [],
+    "custom_class_path": [],
+    "parse_custom_class_path": [],
+    "phrase_set_path": [],
+    "parse_phrase_set_path": [],
+    "recognizer_path": [],
+    "parse_recognizer_path": [],
+    "common_billing_account_path": [],
+    "parse_common_billing_account_path": [],
+    "common_folder_path": [],
+    "parse_common_folder_path": [],
+    "common_organization_path": [],
+    "parse_common_organization_path": [],
+    "common_project_path": [],
+    "parse_common_project_path": [],
+    "common_location_path": [],
+    "parse_common_location_path": [],
+    "from_service_account_info": [
+      "cls",
+      "info"
+    ],
+    "from_service_account_file": [
+      "cls",
+      "filename"
+    ],
+    "from_service_account_json": [],
+    "get_mtls_endpoint_and_cert_source": [
+      "cls",
+      "client_options"
+    ],
+    "transport": [
+      "self"
+    ],
+    "api_endpoint": [
+      "self"
+    ],
+    "universe_domain": [
+      "self"
+    ],
+    "get_transport_class": [],
+    "__init__": [
+      "self"
+    ],
+    "create_recognizer": [
+      "self",
+      "request"
+    ],
+    "list_recognizers": [
+      "self",
+      "request"
+    ],
+    "get_recognizer": [
+      "self",
+      "request"
+    ],
+    "update_recognizer": [
+      "self",
+      "request"
+    ],
+    "delete_recognizer": [
+      "self",
+      "request"
+    ],
+    "undelete_recognizer": [
+      "self",
+      "request"
+    ],
+    "recognize": [
+      "self",
+      "request"
+    ],
+    "streaming_recognize": [
+      "self",
+      "requests"
+    ],
+    "batch_recognize": [
+      "self",
+      "request"
+    ],
+    "get_config": [
+      "self",
+      "request"
+    ],
+    "update_config": [
+      "self",
+      "request"
+    ],
+    "create_custom_class": [
+      "self",
+      "request"
+    ],
+    "list_custom_classes": [
+      "self",
+      "request"
+    ],
+    "get_custom_class": [
+      "self",
+      "request"
+    ],
+    "update_custom_class": [
+      "self",
+      "request"
+    ],
+    "delete_custom_class": [
+      "self",
+      "request"
+    ],
+    "undelete_custom_class": [
+      "self",
+      "request"
+    ],
+    "create_phrase_set": [
+      "self",
+      "request"
+    ],
+    "list_phrase_sets": [
+      "self",
+      "request"
+    ],
+    "get_phrase_set": [
+      "self",
+      "request"
+    ],
+    "update_phrase_set": [
+      "self",
+      "request"
+    ],
+    "delete_phrase_set": [
+      "self",
+      "request"
+    ],
+    "undelete_phrase_set": [
+      "self",
+      "request"
+    ],
+    "list_operations": [
+      "self",
+      "request"
+    ],
+    "get_operation": [
+      "self",
+      "request"
+    ],
+    "delete_operation": [
+      "self",
+      "request"
+    ],
+    "cancel_operation": [
+      "self",
+      "request"
+    ],
+    "get_location": [
+      "self",
+      "request"
+    ],
+    "list_locations": [
+      "self",
+      "request"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self",
+      "exc_type",
+      "exc",
+      "tb"
+    ]
+  },
+  "ListRecognizersPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListRecognizersAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListCustomClassesPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListCustomClassesAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListPhraseSetsPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListPhraseSetsAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "_LoggingClientAIOInterceptor": {
+    "intercept_unary_unary": [
+      "self",
+      "continuation",
+      "client_call_details",
+      "request"
+    ]
+  },
+  "SpeechGrpcAsyncIOTransport": {
+    "create_channel": [
+      "cls",
+      "host",
+      "credentials",
+      "credentials_file",
+      "scopes",
+      "quota_project_id"
+    ],
+    "__init__": [
+      "self"
+    ],
+    "grpc_channel": [
+      "self"
+    ],
+    "operations_client": [
+      "self"
+    ],
+    "create_recognizer": [
+      "self"
+    ],
+    "list_recognizers": [
+      "self"
+    ],
+    "get_recognizer": [
+      "self"
+    ],
+    "update_recognizer": [
+      "self"
+    ],
+    "delete_recognizer": [
+      "self"
+    ],
+    "undelete_recognizer": [
+      "self"
+    ],
+    "recognize": [
+      "self"
+    ],
+    "streaming_recognize": [
+      "self"
+    ],
+    "batch_recognize": [
+      "self"
+    ],
+    "get_config": [
+      "self"
+    ],
+    "update_config": [
+      "self"
+    ],
+    "create_custom_class": [
+      "self"
+    ],
+    "list_custom_classes": [
+      "self"
+    ],
+    "get_custom_class": [
+      "self"
+    ],
+    "update_custom_class": [
+      "self"
+    ],
+    "delete_custom_class": [
+      "self"
+    ],
+    "undelete_custom_class": [
+      "self"
+    ],
+    "create_phrase_set": [
+      "self"
+    ],
+    "list_phrase_sets": [
+      "self"
+    ],
+    "get_phrase_set": [
+      "self"
+    ],
+    "update_phrase_set": [
+      "self"
+    ],
+    "delete_phrase_set": [
+      "self"
+    ],
+    "undelete_phrase_set": [
+      "self"
+    ],
+    "_prep_wrapped_messages": [
+      "self",
+      "client_info"
+    ],
+    "_wrap_method": [
+      "self",
+      "func"
+    ],
+    "close": [
+      "self"
+    ],
+    "kind": [
+      "self"
+    ],
+    "delete_operation": [
+      "self"
+    ],
+    "cancel_operation": [
+      "self"
+    ],
+    "get_operation": [
+      "self"
+    ],
+    "list_operations": [
+      "self"
+    ],
+    "list_locations": [
+      "self"
+    ],
+    "get_location": [
+      "self"
+    ]
+  },
+  "SpeechTransport": {
+    "AUTH_SCOPES": [],
+    "__init__": [
+      "self"
+    ],
+    "host": [
+      "self"
+    ],
+    "_prep_wrapped_messages": [
+      "self",
+      "client_info"
+    ],
+    "close": [
+      "self"
+    ],
+    "operations_client": [
+      "self"
+    ],
+    "create_recognizer": [
+      "self"
+    ],
+    "list_recognizers": [
+      "self"
+    ],
+    "get_recognizer": [
+      "self"
+    ],
+    "update_recognizer": [
+      "self"
+    ],
+    "delete_recognizer": [
+      "self"
+    ],
+    "undelete_recognizer": [
+      "self"
+    ],
+    "recognize": [
+      "self"
+    ],
+    "streaming_recognize": [
+      "self"
+    ],
+    "batch_recognize": [
+      "self"
+    ],
+    "get_config": [
+      "self"
+    ],
+    "update_config": [
+      "self"
+    ],
+    "create_custom_class": [
+      "self"
+    ],
+    "list_custom_classes": [
+      "self"
+    ],
+    "get_custom_class": [
+      "self"
+    ],
+    "update_custom_class": [
+      "self"
+    ],
+    "delete_custom_class": [
+      "self"
+    ],
+    "undelete_custom_class": [
+      "self"
+    ],
+    "create_phrase_set": [
+      "self"
+    ],
+    "list_phrase_sets": [
+      "self"
+    ],
+    "get_phrase_set": [
+      "self"
+    ],
+    "update_phrase_set": [
+      "self"
+    ],
+    "delete_phrase_set": [
+      "self"
+    ],
+    "undelete_phrase_set": [
+      "self"
+    ],
+    "list_operations": [
+      "self"
+    ],
+    "get_operation": [
+      "self"
+    ],
+    "cancel_operation": [
+      "self"
+    ],
+    "delete_operation": [
+      "self"
+    ],
+    "get_location": [
+      "self"
+    ],
+    "list_locations": [
+      "self"
+    ],
+    "kind": [
+      "self"
+    ]
+  },
+  "_BaseSpeechRestTransport": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "_transport_registry": [],
+  "_LoggingClientInterceptor": {
+    "intercept_unary_unary": [
+      "self",
+      "continuation",
+      "client_call_details",
+      "request"
+    ]
+  },
+  "SpeechGrpcTransport": {
+    "__init__": [
+      "self"
+    ],
+    "create_channel": [
+      "cls",
+      "host",
+      "credentials",
+      "credentials_file",
+      "scopes",
+      "quota_project_id"
+    ],
+    "grpc_channel": [
+      "self"
+    ],
+    "operations_client": [
+      "self"
+    ],
+    "create_recognizer": [
+      "self"
+    ],
+    "list_recognizers": [
+      "self"
+    ],
+    "get_recognizer": [
+      "self"
+    ],
+    "update_recognizer": [
+      "self"
+    ],
+    "delete_recognizer": [
+      "self"
+    ],
+    "undelete_recognizer": [
+      "self"
+    ],
+    "recognize": [
+      "self"
+    ],
+    "streaming_recognize": [
+      "self"
+    ],
+    "batch_recognize": [
+      "self"
+    ],
+    "get_config": [
+      "self"
+    ],
+    "update_config": [
+      "self"
+    ],
+    "create_custom_class": [
+      "self"
+    ],
+    "list_custom_classes": [
+      "self"
+    ],
+    "get_custom_class": [
+      "self"
+    ],
+    "update_custom_class": [
+      "self"
+    ],
+    "delete_custom_class": [
+      "self"
+    ],
+    "undelete_custom_class": [
+      "self"
+    ],
+    "create_phrase_set": [
+      "self"
+    ],
+    "list_phrase_sets": [
+      "self"
+    ],
+    "get_phrase_set": [
+      "self"
+    ],
+    "update_phrase_set": [
+      "self"
+    ],
+    "delete_phrase_set": [
+      "self"
+    ],
+    "undelete_phrase_set": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "delete_operation": [
+      "self"
+    ],
+    "cancel_operation": [
+      "self"
+    ],
+    "get_operation": [
+      "self"
+    ],
+    "list_operations": [
+      "self"
+    ],
+    "list_locations": [
+      "self"
+    ],
+    "get_location": [
+      "self"
+    ],
+    "kind": [
+      "self"
+    ]
+  },
+  "SpeechRestInterceptor": {
+    "pre_batch_recognize": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_batch_recognize": [
+      "self",
+      "response"
+    ],
+    "post_batch_recognize_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_create_custom_class": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_create_custom_class": [
+      "self",
+      "response"
+    ],
+    "post_create_custom_class_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_create_phrase_set": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_create_phrase_set": [
+      "self",
+      "response"
+    ],
+    "post_create_phrase_set_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_create_recognizer": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_create_recognizer": [
+      "self",
+      "response"
+    ],
+    "post_create_recognizer_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_delete_custom_class": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_delete_custom_class": [
+      "self",
+      "response"
+    ],
+    "post_delete_custom_class_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_delete_phrase_set": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_delete_phrase_set": [
+      "self",
+      "response"
+    ],
+    "post_delete_phrase_set_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_delete_recognizer": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_delete_recognizer": [
+      "self",
+      "response"
+    ],
+    "post_delete_recognizer_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_get_config": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_get_config": [
+      "self",
+      "response"
+    ],
+    "post_get_config_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_get_custom_class": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_get_custom_class": [
+      "self",
+      "response"
+    ],
+    "post_get_custom_class_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_get_phrase_set": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_get_phrase_set": [
+      "self",
+      "response"
+    ],
+    "post_get_phrase_set_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_get_recognizer": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_get_recognizer": [
+      "self",
+      "response"
+    ],
+    "post_get_recognizer_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_list_custom_classes": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_list_custom_classes": [
+      "self",
+      "response"
+    ],
+    "post_list_custom_classes_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_list_phrase_sets": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_list_phrase_sets": [
+      "self",
+      "response"
+    ],
+    "post_list_phrase_sets_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_list_recognizers": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_list_recognizers": [
+      "self",
+      "response"
+    ],
+    "post_list_recognizers_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_recognize": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_recognize": [
+      "self",
+      "response"
+    ],
+    "post_recognize_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_undelete_custom_class": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_undelete_custom_class": [
+      "self",
+      "response"
+    ],
+    "post_undelete_custom_class_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_undelete_phrase_set": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_undelete_phrase_set": [
+      "self",
+      "response"
+    ],
+    "post_undelete_phrase_set_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_undelete_recognizer": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_undelete_recognizer": [
+      "self",
+      "response"
+    ],
+    "post_undelete_recognizer_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_update_config": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_update_config": [
+      "self",
+      "response"
+    ],
+    "post_update_config_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_update_custom_class": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_update_custom_class": [
+      "self",
+      "response"
+    ],
+    "post_update_custom_class_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_update_phrase_set": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_update_phrase_set": [
+      "self",
+      "response"
+    ],
+    "post_update_phrase_set_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_update_recognizer": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_update_recognizer": [
+      "self",
+      "response"
+    ],
+    "post_update_recognizer_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_get_location": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_get_location": [
+      "self",
+      "response"
+    ],
+    "pre_list_locations": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_list_locations": [
+      "self",
+      "response"
+    ],
+    "pre_cancel_operation": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_cancel_operation": [
+      "self",
+      "response"
+    ],
+    "pre_delete_operation": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_delete_operation": [
+      "self",
+      "response"
+    ],
+    "pre_get_operation": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_get_operation": [
+      "self",
+      "response"
+    ],
+    "pre_list_operations": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_list_operations": [
+      "self",
+      "response"
+    ]
+  },
+  "SpeechRestStub": {},
+  "SpeechRestTransport": {
+    "__init__": [
+      "self"
+    ],
+    "operations_client": [
+      "self"
+    ],
+    "batch_recognize": [
+      "self"
+    ],
+    "create_custom_class": [
+      "self"
+    ],
+    "create_phrase_set": [
+      "self"
+    ],
+    "create_recognizer": [
+      "self"
+    ],
+    "delete_custom_class": [
+      "self"
+    ],
+    "delete_phrase_set": [
+      "self"
+    ],
+    "delete_recognizer": [
+      "self"
+    ],
+    "get_config": [
+      "self"
+    ],
+    "get_custom_class": [
+      "self"
+    ],
+    "get_phrase_set": [
+      "self"
+    ],
+    "get_recognizer": [
+      "self"
+    ],
+    "list_custom_classes": [
+      "self"
+    ],
+    "list_phrase_sets": [
+      "self"
+    ],
+    "list_recognizers": [
+      "self"
+    ],
+    "recognize": [
+      "self"
+    ],
+    "streaming_recognize": [
+      "self"
+    ],
+    "undelete_custom_class": [
+      "self"
+    ],
+    "undelete_phrase_set": [
+      "self"
+    ],
+    "undelete_recognizer": [
+      "self"
+    ],
+    "update_config": [
+      "self"
+    ],
+    "update_custom_class": [
+      "self"
+    ],
+    "update_phrase_set": [
+      "self"
+    ],
+    "update_recognizer": [
+      "self"
+    ],
+    "get_location": [
+      "self"
+    ],
+    "list_locations": [
+      "self"
+    ],
+    "cancel_operation": [
+      "self"
+    ],
+    "delete_operation": [
+      "self"
+    ],
+    "get_operation": [
+      "self"
+    ],
+    "list_operations": [
+      "self"
+    ],
+    "kind": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "LongRunningRecognizeRequest": {},
+  "TranscriptOutputConfig": {},
+  "RecognitionMetadata": {},
+  "SpeechContext": {},
+  "RecognitionAudio": {},
+  "LongRunningRecognizeResponse": {},
+  "LongRunningRecognizeMetadata": {},
+  "SpeechAdaptationInfo": {},
+  "ListPhraseSetRequest": {},
+  "ListPhraseSetResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "AdaptationClientMeta": {
+    "_transport_registry": [],
+    "get_transport_class": [
+      "cls",
+      "label"
+    ]
+  },
+  "AdaptationClient": {
+    "_get_default_mtls_endpoint": [
+      "api_endpoint"
+    ],
+    "DEFAULT_ENDPOINT": [],
+    "DEFAULT_MTLS_ENDPOINT": [],
+    "_DEFAULT_ENDPOINT_TEMPLATE": [],
+    "_DEFAULT_UNIVERSE": [],
+    "_use_client_cert_effective": [],
+    "from_service_account_info": [
+      "cls",
+      "info"
+    ],
+    "from_service_account_file": [
+      "cls",
+      "filename"
+    ],
+    "from_service_account_json": [],
+    "transport": [
+      "self"
+    ],
+    "crypto_key_path": [
+      "project",
+      "location",
+      "key_ring",
+      "crypto_key"
+    ],
+    "parse_crypto_key_path": [
+      "path"
+    ],
+    "crypto_key_version_path": [
+      "project",
+      "location",
+      "key_ring",
+      "crypto_key",
+      "crypto_key_version"
+    ],
+    "parse_crypto_key_version_path": [
+      "path"
+    ],
+    "custom_class_path": [
+      "project",
+      "location",
+      "custom_class"
+    ],
+    "parse_custom_class_path": [
+      "path"
+    ],
+    "phrase_set_path": [
+      "project",
+      "location",
+      "phrase_set"
+    ],
+    "parse_phrase_set_path": [
+      "path"
+    ],
+    "common_billing_account_path": [
+      "billing_account"
+    ],
+    "parse_common_billing_account_path": [
+      "path"
+    ],
+    "common_folder_path": [
+      "folder"
+    ],
+    "parse_common_folder_path": [
+      "path"
+    ],
+    "common_organization_path": [
+      "organization"
+    ],
+    "parse_common_organization_path": [
+      "path"
+    ],
+    "common_project_path": [
+      "project"
+    ],
+    "parse_common_project_path": [
+      "path"
+    ],
+    "common_location_path": [
+      "project",
+      "location"
+    ],
+    "parse_common_location_path": [
+      "path"
+    ],
+    "get_mtls_endpoint_and_cert_source": [
+      "cls",
+      "client_options"
+    ],
+    "_read_environment_variables": [],
+    "_get_client_cert_source": [
+      "provided_cert_source",
+      "use_cert_flag"
+    ],
+    "_get_api_endpoint": [
+      "api_override",
+      "client_cert_source",
+      "universe_domain",
+      "use_mtls_endpoint"
+    ],
+    "_get_universe_domain": [
+      "client_universe_domain",
+      "universe_domain_env"
+    ],
+    "_validate_universe_domain": [
+      "self"
+    ],
+    "_add_cred_info_for_auth_errors": [
+      "self",
+      "error"
+    ],
+    "api_endpoint": [
+      "self"
+    ],
+    "universe_domain": [
+      "self"
+    ],
+    "__init__": [
+      "self"
+    ],
+    "create_phrase_set": [
+      "self",
+      "request"
+    ],
+    "get_phrase_set": [
+      "self",
+      "request"
+    ],
+    "list_phrase_set": [
+      "self",
+      "request"
+    ],
+    "update_phrase_set": [
+      "self",
+      "request"
+    ],
+    "delete_phrase_set": [
+      "self",
+      "request"
+    ],
+    "create_custom_class": [
+      "self",
+      "request"
+    ],
+    "get_custom_class": [
+      "self",
+      "request"
+    ],
+    "list_custom_classes": [
+      "self",
+      "request"
+    ],
+    "update_custom_class": [
+      "self",
+      "request"
+    ],
+    "delete_custom_class": [
+      "self",
+      "request"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "type",
+      "value",
+      "traceback"
+    ],
+    "list_operations": [
+      "self",
+      "request"
+    ],
+    "get_operation": [
+      "self",
+      "request"
+    ]
+  },
+  "AdaptationAsyncClient": {
+    "DEFAULT_ENDPOINT": [],
+    "DEFAULT_MTLS_ENDPOINT": [],
+    "_DEFAULT_ENDPOINT_TEMPLATE": [],
+    "_DEFAULT_UNIVERSE": [],
+    "crypto_key_path": [],
+    "parse_crypto_key_path": [],
+    "crypto_key_version_path": [],
+    "parse_crypto_key_version_path": [],
+    "custom_class_path": [],
+    "parse_custom_class_path": [],
+    "phrase_set_path": [],
+    "parse_phrase_set_path": [],
+    "common_billing_account_path": [],
+    "parse_common_billing_account_path": [],
+    "common_folder_path": [],
+    "parse_common_folder_path": [],
+    "common_organization_path": [],
+    "parse_common_organization_path": [],
+    "common_project_path": [],
+    "parse_common_project_path": [],
+    "common_location_path": [],
+    "parse_common_location_path": [],
+    "from_service_account_info": [
+      "cls",
+      "info"
+    ],
+    "from_service_account_file": [
+      "cls",
+      "filename"
+    ],
+    "from_service_account_json": [],
+    "get_mtls_endpoint_and_cert_source": [
+      "cls",
+      "client_options"
+    ],
+    "transport": [
+      "self"
+    ],
+    "api_endpoint": [
+      "self"
+    ],
+    "universe_domain": [
+      "self"
+    ],
+    "get_transport_class": [],
+    "__init__": [
+      "self"
+    ],
+    "create_phrase_set": [
+      "self",
+      "request"
+    ],
+    "get_phrase_set": [
+      "self",
+      "request"
+    ],
+    "list_phrase_set": [
+      "self",
+      "request"
+    ],
+    "update_phrase_set": [
+      "self",
+      "request"
+    ],
+    "delete_phrase_set": [
+      "self",
+      "request"
+    ],
+    "create_custom_class": [
+      "self",
+      "request"
+    ],
+    "get_custom_class": [
+      "self",
+      "request"
+    ],
+    "list_custom_classes": [
+      "self",
+      "request"
+    ],
+    "update_custom_class": [
+      "self",
+      "request"
+    ],
+    "delete_custom_class": [
+      "self",
+      "request"
+    ],
+    "list_operations": [
+      "self",
+      "request"
+    ],
+    "get_operation": [
+      "self",
+      "request"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self",
+      "exc_type",
+      "exc",
+      "tb"
+    ]
+  },
+  "ListPhraseSetPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListPhraseSetAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "AdaptationGrpcAsyncIOTransport": {
+    "create_channel": [
+      "cls",
+      "host",
+      "credentials",
+      "credentials_file",
+      "scopes",
+      "quota_project_id"
+    ],
+    "__init__": [
+      "self"
+    ],
+    "grpc_channel": [
+      "self"
+    ],
+    "create_phrase_set": [
+      "self"
+    ],
+    "get_phrase_set": [
+      "self"
+    ],
+    "list_phrase_set": [
+      "self"
+    ],
+    "update_phrase_set": [
+      "self"
+    ],
+    "delete_phrase_set": [
+      "self"
+    ],
+    "create_custom_class": [
+      "self"
+    ],
+    "get_custom_class": [
+      "self"
+    ],
+    "list_custom_classes": [
+      "self"
+    ],
+    "update_custom_class": [
+      "self"
+    ],
+    "delete_custom_class": [
+      "self"
+    ],
+    "_prep_wrapped_messages": [
+      "self",
+      "client_info"
+    ],
+    "_wrap_method": [
+      "self",
+      "func"
+    ],
+    "close": [
+      "self"
+    ],
+    "kind": [
+      "self"
+    ],
+    "get_operation": [
+      "self"
+    ],
+    "list_operations": [
+      "self"
+    ]
+  },
+  "AdaptationTransport": {
+    "AUTH_SCOPES": [],
+    "__init__": [
+      "self"
+    ],
+    "host": [
+      "self"
+    ],
+    "_prep_wrapped_messages": [
+      "self",
+      "client_info"
+    ],
+    "close": [
+      "self"
+    ],
+    "create_phrase_set": [
+      "self"
+    ],
+    "get_phrase_set": [
+      "self"
+    ],
+    "list_phrase_set": [
+      "self"
+    ],
+    "update_phrase_set": [
+      "self"
+    ],
+    "delete_phrase_set": [
+      "self"
+    ],
+    "create_custom_class": [
+      "self"
+    ],
+    "get_custom_class": [
+      "self"
+    ],
+    "list_custom_classes": [
+      "self"
+    ],
+    "update_custom_class": [
+      "self"
+    ],
+    "delete_custom_class": [
+      "self"
+    ],
+    "list_operations": [
+      "self"
+    ],
+    "get_operation": [
+      "self"
+    ],
+    "kind": [
+      "self"
+    ]
+  },
+  "_BaseAdaptationRestTransport": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "AdaptationGrpcTransport": {
+    "__init__": [
+      "self"
+    ],
+    "create_channel": [
+      "cls",
+      "host",
+      "credentials",
+      "credentials_file",
+      "scopes",
+      "quota_project_id"
+    ],
+    "grpc_channel": [
+      "self"
+    ],
+    "create_phrase_set": [
+      "self"
+    ],
+    "get_phrase_set": [
+      "self"
+    ],
+    "list_phrase_set": [
+      "self"
+    ],
+    "update_phrase_set": [
+      "self"
+    ],
+    "delete_phrase_set": [
+      "self"
+    ],
+    "create_custom_class": [
+      "self"
+    ],
+    "get_custom_class": [
+      "self"
+    ],
+    "list_custom_classes": [
+      "self"
+    ],
+    "update_custom_class": [
+      "self"
+    ],
+    "delete_custom_class": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "get_operation": [
+      "self"
+    ],
+    "list_operations": [
+      "self"
+    ],
+    "kind": [
+      "self"
+    ]
+  },
+  "AdaptationRestInterceptor": {
+    "pre_create_custom_class": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_create_custom_class": [
+      "self",
+      "response"
+    ],
+    "post_create_custom_class_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_create_phrase_set": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_create_phrase_set": [
+      "self",
+      "response"
+    ],
+    "post_create_phrase_set_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_delete_custom_class": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "pre_delete_phrase_set": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "pre_get_custom_class": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_get_custom_class": [
+      "self",
+      "response"
+    ],
+    "post_get_custom_class_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_get_phrase_set": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_get_phrase_set": [
+      "self",
+      "response"
+    ],
+    "post_get_phrase_set_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_list_custom_classes": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_list_custom_classes": [
+      "self",
+      "response"
+    ],
+    "post_list_custom_classes_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_list_phrase_set": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_list_phrase_set": [
+      "self",
+      "response"
+    ],
+    "post_list_phrase_set_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_update_custom_class": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_update_custom_class": [
+      "self",
+      "response"
+    ],
+    "post_update_custom_class_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_update_phrase_set": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_update_phrase_set": [
+      "self",
+      "response"
+    ],
+    "post_update_phrase_set_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_get_operation": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_get_operation": [
+      "self",
+      "response"
+    ],
+    "pre_list_operations": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_list_operations": [
+      "self",
+      "response"
+    ]
+  },
+  "AdaptationRestStub": {},
+  "AdaptationRestTransport": {
+    "__init__": [
+      "self"
+    ],
+    "create_custom_class": [
+      "self"
+    ],
+    "create_phrase_set": [
+      "self"
+    ],
+    "delete_custom_class": [
+      "self"
+    ],
+    "delete_phrase_set": [
+      "self"
+    ],
+    "get_custom_class": [
+      "self"
+    ],
+    "get_phrase_set": [
+      "self"
+    ],
+    "list_custom_classes": [
+      "self"
+    ],
+    "list_phrase_set": [
+      "self"
+    ],
+    "update_custom_class": [
+      "self"
+    ],
+    "update_phrase_set": [
+      "self"
+    ],
+    "get_operation": [
+      "self"
+    ],
+    "list_operations": [
+      "self"
+    ],
+    "kind": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "SpeechHelpers": {
+    "streaming_recognize": [
+      "self",
+      "config",
+      "requests"
+    ],
+    "_streaming_request_iterable": [
+      "self",
+      "config",
+      "requests"
+    ]
+  }
+}
