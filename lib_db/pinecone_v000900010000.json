@@ -1,0 +1,4474 @@
+{
+  "__all__": [],
+  "PineconeAsyncio": [],
+  "TYPE_CHECKING": [],
+  "__version__": [],
+  "_removed_function_message": [
+    "name"
+  ],
+  "__getattr__": [
+    "name"
+  ],
+  "__dir__": [],
+  "Pinecone": {
+    "__init__": [
+      "self",
+      "api_key"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "indexes": [
+      "self"
+    ],
+    "collections": [
+      "self"
+    ],
+    "backups": [
+      "self"
+    ],
+    "restore_jobs": [
+      "self"
+    ],
+    "inference": [
+      "self"
+    ],
+    "assistants": [
+      "self"
+    ],
+    "assistant": [
+      "self"
+    ],
+    "preview": [
+      "self"
+    ],
+    "index": [
+      "self",
+      "name"
+    ],
+    "_build_index_kwargs": [
+      "self",
+      "host"
+    ],
+    "_resolve_index_host": [
+      "self"
+    ],
+    "create_index_from_backup": [
+      "self"
+    ],
+    "config": [
+      "self"
+    ],
+    "create_index": [
+      "self",
+      "name",
+      "spec",
+      "dimension",
+      "metric",
+      "timeout",
+      "deletion_protection",
+      "vector_type",
+      "tags",
+      "schema"
+    ],
+    "create_index_for_model": [
+      "self",
+      "name",
+      "cloud",
+      "region",
+      "embed",
+      "tags",
+      "deletion_protection",
+      "read_capacity",
+      "schema",
+      "timeout"
+    ],
+    "describe_index": [
+      "self",
+      "name"
+    ],
+    "list_indexes": [
+      "self"
+    ],
+    "has_index": [
+      "self",
+      "name"
+    ],
+    "configure_index": [
+      "self",
+      "name",
+      "replicas",
+      "pod_type",
+      "deletion_protection",
+      "tags",
+      "embed",
+      "read_capacity",
+      "serverless_read_capacity"
+    ],
+    "delete_index": [
+      "self",
+      "name",
+      "timeout"
+    ],
+    "create_collection": [
+      "self",
+      "name",
+      "source"
+    ],
+    "list_collections": [
+      "self"
+    ],
+    "describe_collection": [
+      "self",
+      "name"
+    ],
+    "delete_collection": [
+      "self",
+      "name"
+    ],
+    "create_backup": [
+      "self"
+    ],
+    "list_backups": [
+      "self"
+    ],
+    "describe_backup": [
+      "self"
+    ],
+    "delete_backup": [
+      "self"
+    ],
+    "list_restore_jobs": [
+      "self"
+    ],
+    "describe_restore_job": [
+      "self"
+    ],
+    "Index": [
+      "self",
+      "name",
+      "host"
+    ],
+    "IndexAsyncio": [
+      "self",
+      "host"
+    ],
+    "close": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self"
+    ]
+  },
+  "logger": [],
+  "Backups": {
+    "__init__": [
+      "self",
+      "http"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ],
+    "describe": [
+      "self"
+    ],
+    "get": [
+      "self"
+    ],
+    "delete": [
+      "self"
+    ]
+  },
+  "_POLL_INTERVAL_SECONDS": [],
+  "Indexes": {
+    "__init__": [
+      "self",
+      "http",
+      "host_cache"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ],
+    "describe": [
+      "self",
+      "name"
+    ],
+    "exists": [
+      "self",
+      "name"
+    ],
+    "delete": [
+      "self",
+      "name"
+    ],
+    "configure": [
+      "self",
+      "name"
+    ],
+    "create": [
+      "self"
+    ],
+    "_poll_until_ready": [
+      "self",
+      "name",
+      "timeout"
+    ]
+  },
+  "RestoreJobs": {
+    "__init__": [
+      "self",
+      "http"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ],
+    "describe": [
+      "self"
+    ]
+  },
+  "_AssistantNamespaceProxy": {
+    "__init__": [
+      "self",
+      "assistants"
+    ],
+    "__call__": [
+      "self",
+      "name"
+    ],
+    "__getattr__": [
+      "self",
+      "attr"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "_AsyncAssistantNamespaceProxy": {
+    "__init__": [
+      "self",
+      "assistants"
+    ],
+    "__call__": [
+      "self",
+      "name"
+    ],
+    "__getattr__": [
+      "self",
+      "attr"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "Collections": {
+    "__init__": [
+      "self",
+      "http"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ],
+    "describe": [
+      "self",
+      "name"
+    ],
+    "delete": [
+      "self",
+      "name"
+    ]
+  },
+  "_VALID_REGIONS": [],
+  "_CREATE_POLL_INTERVAL_SECONDS": [],
+  "_DELETE_POLL_INTERVAL_SECONDS": [],
+  "_UPLOAD_POLL_INTERVAL_SECONDS": [],
+  "Assistants": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "_attach_ref": [
+      "self",
+      "model"
+    ],
+    "close": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "_data_plane_http": [
+      "self",
+      "assistant_name"
+    ],
+    "_list_files_http": [
+      "self",
+      "assistant_name"
+    ],
+    "_upsert_http": [
+      "self",
+      "assistant_name"
+    ],
+    "_poll_operation_until_done": [
+      "self",
+      "upsert_http",
+      "assistant_name",
+      "operation_id",
+      "timeout"
+    ],
+    "upload_file": [
+      "self"
+    ],
+    "_poll_file_until_processed": [
+      "self",
+      "data_http",
+      "assistant_name",
+      "file_id",
+      "timeout"
+    ],
+    "describe_file": [
+      "self"
+    ],
+    "list_files": [
+      "self"
+    ],
+    "list_files_page": [
+      "self"
+    ],
+    "delete_file": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "describe": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ],
+    "list_page": [
+      "self"
+    ],
+    "update": [
+      "self"
+    ],
+    "delete": [
+      "self"
+    ],
+    "context": [
+      "self"
+    ],
+    "chat": [
+      "self"
+    ],
+    "chat_completions": [
+      "self"
+    ],
+    "_chat_streaming": [
+      "self"
+    ],
+    "_chat_completions_streaming": [
+      "self"
+    ],
+    "evaluate_alignment": [
+      "self"
+    ],
+    "_poll_until_ready": [
+      "self",
+      "name",
+      "timeout"
+    ]
+  },
+  "_AlignmentMetricsProxy": {
+    "__init__": [
+      "self",
+      "assistants"
+    ],
+    "alignment": [
+      "self",
+      "question",
+      "answer",
+      "ground_truth_answer"
+    ]
+  },
+  "_AlignmentEvaluationProxy": {
+    "__init__": [
+      "self",
+      "assistants"
+    ]
+  },
+  "AssistantsLegacyNamespaceMixin": {
+    "list_assistants": [
+      "self"
+    ],
+    "list_assistants_paginated": [
+      "self",
+      "limit",
+      "pagination_token"
+    ],
+    "describe_assistant": [
+      "self",
+      "assistant_name"
+    ],
+    "update_assistant": [
+      "self",
+      "assistant_name",
+      "instructions",
+      "metadata"
+    ],
+    "create_assistant": [
+      "self",
+      "assistant_name",
+      "instructions",
+      "metadata",
+      "region",
+      "timeout"
+    ],
+    "delete_assistant": [
+      "self",
+      "assistant_name",
+      "timeout"
+    ],
+    "evaluation": [
+      "self"
+    ]
+  },
+  "ModelResource": {
+    "__init__": [
+      "self",
+      "inference"
+    ],
+    "list": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "model"
+    ]
+  },
+  "Inference": {
+    "EmbedModel": [],
+    "RerankModel": [],
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "close": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "model": [
+      "self"
+    ],
+    "embed": [
+      "self",
+      "model",
+      "inputs",
+      "parameters"
+    ],
+    "rerank": [
+      "self",
+      "model",
+      "query",
+      "documents",
+      "rank_fields",
+      "return_documents",
+      "top_n",
+      "parameters"
+    ],
+    "list_models": [
+      "self"
+    ],
+    "get_model": [
+      "self"
+    ]
+  },
+  "PineconeError": {
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "ApiError": {
+    "__init__": [
+      "self",
+      "message",
+      "status_code",
+      "body"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "NotFoundError": {
+    "__init__": [
+      "self",
+      "message",
+      "status_code",
+      "body"
+    ]
+  },
+  "ConflictError": {
+    "__init__": [
+      "self",
+      "message",
+      "status_code",
+      "body"
+    ]
+  },
+  "UnauthorizedError": {
+    "__init__": [
+      "self",
+      "message",
+      "status_code",
+      "body"
+    ]
+  },
+  "ForbiddenError": {
+    "__init__": [
+      "self",
+      "message",
+      "status_code",
+      "body"
+    ]
+  },
+  "RateLimitError": {
+    "__init__": [
+      "self",
+      "message",
+      "status_code",
+      "body"
+    ]
+  },
+  "ServiceError": {
+    "__init__": [
+      "self",
+      "message",
+      "status_code",
+      "body"
+    ]
+  },
+  "IndexInitFailedError": {
+    "__init__": [
+      "self",
+      "index_name"
+    ]
+  },
+  "IndexTerminatedError": {
+    "__init__": [
+      "self",
+      "name",
+      "state"
+    ]
+  },
+  "PineconeTimeoutError": {},
+  "PineconeConnectionError": {},
+  "PineconeValueError": {
+    "__init__": [
+      "self",
+      "message",
+      "path"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "PineconeTypeError": {
+    "__init__": [
+      "self",
+      "message",
+      "path"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "ResponseParsingError": {
+    "__init__": [
+      "self",
+      "message",
+      "cause"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "ValidationError": [],
+  "PineconeException": [],
+  "PineconeApiException": [],
+  "NotFoundException": [],
+  "UnauthorizedException": [],
+  "ForbiddenException": [],
+  "ServiceException": [],
+  "RateLimitException": [],
+  "PineconeConfigurationError": [],
+  "PineconeProtocolError": [],
+  "PineconeApiTypeError": [],
+  "PineconeApiValueError": [],
+  "PineconeApiAttributeError": [],
+  "PineconeApiKeyError": [],
+  "ListConversionException": [],
+  "AsyncBackups": {
+    "__init__": [
+      "self",
+      "http"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ],
+    "describe": [
+      "self"
+    ],
+    "get": [
+      "self"
+    ],
+    "delete": [
+      "self"
+    ]
+  },
+  "AsyncIndex": {
+    "__init__": [
+      "self"
+    ],
+    "host": [
+      "self"
+    ],
+    "upsert_records": [
+      "self"
+    ],
+    "upsert": [
+      "self"
+    ],
+    "_upsert_one_batch": [
+      "self"
+    ],
+    "_upsert_dict_batch": [
+      "self"
+    ],
+    "upsert_from_dataframe": [
+      "self",
+      "df",
+      "namespace",
+      "batch_size",
+      "show_progress"
+    ],
+    "query": [
+      "self"
+    ],
+    "query_namespaces": [
+      "self"
+    ],
+    "fetch": [
+      "self"
+    ],
+    "fetch_by_metadata": [
+      "self"
+    ],
+    "delete": [
+      "self"
+    ],
+    "update": [
+      "self"
+    ],
+    "search": [
+      "self"
+    ],
+    "search_records": [
+      "self"
+    ],
+    "list_paginated": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ],
+    "describe_index_stats": [
+      "self"
+    ],
+    "create_namespace": [
+      "self"
+    ],
+    "describe_namespace": [
+      "self"
+    ],
+    "delete_namespace": [
+      "self"
+    ],
+    "list_namespaces_paginated": [
+      "self"
+    ],
+    "list_namespaces": [
+      "self"
+    ],
+    "_validate_import_id": [
+      "self",
+      "id"
+    ],
+    "start_import": [
+      "self",
+      "uri"
+    ],
+    "describe_import": [
+      "self",
+      "id"
+    ],
+    "cancel_import": [
+      "self",
+      "id"
+    ],
+    "list_imports": [
+      "self"
+    ],
+    "list_imports_paginated": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "AsyncIndexes": {
+    "__init__": [
+      "self",
+      "http",
+      "host_cache"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ],
+    "describe": [
+      "self",
+      "name"
+    ],
+    "exists": [
+      "self",
+      "name"
+    ],
+    "delete": [
+      "self",
+      "name"
+    ],
+    "configure": [
+      "self",
+      "name"
+    ],
+    "create": [
+      "self"
+    ],
+    "_poll_until_ready": [
+      "self",
+      "name",
+      "timeout"
+    ]
+  },
+  "AsyncRestoreJobs": {
+    "__init__": [
+      "self",
+      "http"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ],
+    "describe": [
+      "self"
+    ]
+  },
+  "AsyncCollections": {
+    "__init__": [
+      "self",
+      "http"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ],
+    "describe": [
+      "self",
+      "name"
+    ],
+    "delete": [
+      "self",
+      "name"
+    ]
+  },
+  "AsyncAssistants": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "close": [
+      "self"
+    ],
+    "_data_plane_http": [
+      "self",
+      "assistant_name"
+    ],
+    "_attach_ref": [
+      "self",
+      "model"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "describe": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ],
+    "list_page": [
+      "self"
+    ],
+    "update": [
+      "self"
+    ],
+    "delete": [
+      "self"
+    ],
+    "describe_file": [
+      "self"
+    ],
+    "list_files_page": [
+      "self"
+    ],
+    "list_files": [
+      "self"
+    ],
+    "_poll_file_until_processed": [
+      "self",
+      "data_http",
+      "assistant_name",
+      "file_id",
+      "timeout"
+    ],
+    "_list_files_http": [
+      "self",
+      "assistant_name"
+    ],
+    "_upsert_http": [
+      "self",
+      "assistant_name"
+    ],
+    "_poll_operation_until_done": [
+      "self",
+      "upsert_http",
+      "assistant_name",
+      "operation_id",
+      "timeout"
+    ],
+    "upload_file": [
+      "self"
+    ],
+    "delete_file": [
+      "self"
+    ],
+    "context": [
+      "self"
+    ],
+    "chat": [
+      "self"
+    ],
+    "_chat_streaming": [
+      "self"
+    ],
+    "chat_completions": [
+      "self"
+    ],
+    "_chat_completions_streaming": [
+      "self"
+    ],
+    "evaluate_alignment": [
+      "self"
+    ],
+    "_poll_until_ready": [
+      "self",
+      "name",
+      "timeout"
+    ]
+  },
+  "_AsyncAlignmentMetricsProxy": {
+    "__init__": [
+      "self",
+      "assistants"
+    ],
+    "alignment": [
+      "self",
+      "question",
+      "answer",
+      "ground_truth_answer"
+    ]
+  },
+  "_AsyncAlignmentEvaluationProxy": {
+    "__init__": [
+      "self",
+      "assistants"
+    ]
+  },
+  "AsyncAssistantsLegacyNamespaceMixin": {
+    "list_assistants": [
+      "self"
+    ],
+    "list_assistants_paginated": [
+      "self",
+      "limit",
+      "pagination_token"
+    ],
+    "describe_assistant": [
+      "self",
+      "assistant_name"
+    ],
+    "update_assistant": [
+      "self",
+      "assistant_name",
+      "instructions",
+      "metadata"
+    ],
+    "create_assistant": [
+      "self",
+      "assistant_name",
+      "instructions",
+      "metadata",
+      "region",
+      "timeout"
+    ],
+    "delete_assistant": [
+      "self",
+      "assistant_name",
+      "timeout"
+    ],
+    "evaluation": [
+      "self"
+    ]
+  },
+  "AsyncPinecone": {
+    "__init__": [
+      "self",
+      "api_key"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "indexes": [
+      "self"
+    ],
+    "collections": [
+      "self"
+    ],
+    "assistants": [
+      "self"
+    ],
+    "assistant": [
+      "self"
+    ],
+    "backups": [
+      "self"
+    ],
+    "restore_jobs": [
+      "self"
+    ],
+    "inference": [
+      "self"
+    ],
+    "preview": [
+      "self"
+    ],
+    "create_index_from_backup": [
+      "self"
+    ],
+    "config": [
+      "self"
+    ],
+    "create_index": [
+      "self",
+      "name",
+      "spec",
+      "dimension",
+      "metric",
+      "timeout",
+      "deletion_protection",
+      "vector_type",
+      "tags",
+      "schema"
+    ],
+    "create_index_for_model": [
+      "self",
+      "name",
+      "cloud",
+      "region",
+      "embed",
+      "tags",
+      "deletion_protection",
+      "read_capacity",
+      "schema",
+      "timeout"
+    ],
+    "describe_index": [
+      "self",
+      "name"
+    ],
+    "list_indexes": [
+      "self"
+    ],
+    "has_index": [
+      "self",
+      "name"
+    ],
+    "configure_index": [
+      "self",
+      "name",
+      "replicas",
+      "pod_type",
+      "deletion_protection",
+      "tags",
+      "embed",
+      "read_capacity",
+      "serverless_read_capacity"
+    ],
+    "delete_index": [
+      "self",
+      "name",
+      "timeout"
+    ],
+    "create_collection": [
+      "self",
+      "name",
+      "source"
+    ],
+    "list_collections": [
+      "self"
+    ],
+    "describe_collection": [
+      "self",
+      "name"
+    ],
+    "delete_collection": [
+      "self",
+      "name"
+    ],
+    "create_backup": [
+      "self"
+    ],
+    "list_backups": [
+      "self"
+    ],
+    "describe_backup": [
+      "self"
+    ],
+    "delete_backup": [
+      "self"
+    ],
+    "list_restore_jobs": [
+      "self"
+    ],
+    "describe_restore_job": [
+      "self"
+    ],
+    "IndexAsyncio": [
+      "self",
+      "host"
+    ],
+    "_build_index_kwargs": [
+      "self",
+      "host"
+    ],
+    "_resolve_index_host": [
+      "self"
+    ],
+    "index": [
+      "self",
+      "name"
+    ],
+    "close": [
+      "self"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self"
+    ]
+  },
+  "AsyncModelResource": {
+    "__init__": [
+      "self",
+      "inference"
+    ],
+    "list": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "model"
+    ]
+  },
+  "AsyncInference": {
+    "EmbedModel": [],
+    "RerankModel": [],
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "close": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "model": [
+      "self"
+    ],
+    "embed": [
+      "self",
+      "model",
+      "inputs",
+      "parameters"
+    ],
+    "rerank": [
+      "self",
+      "model",
+      "query",
+      "documents",
+      "rank_fields",
+      "return_documents",
+      "top_n",
+      "parameters"
+    ],
+    "list_models": [
+      "self"
+    ],
+    "get_model": [
+      "self"
+    ]
+  },
+  "ResponseInfo": {},
+  "ScalarValue": [],
+  "NumericValue": [],
+  "Condition": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "filter_dict"
+    ],
+    "__and__": [
+      "self",
+      "other"
+    ],
+    "__or__": [
+      "self",
+      "other"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "Field": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "name"
+    ],
+    "_require_numeric": [
+      "self",
+      "op",
+      "value"
+    ],
+    "gt": [
+      "self",
+      "value"
+    ],
+    "gte": [
+      "self",
+      "value"
+    ],
+    "lt": [
+      "self",
+      "value"
+    ],
+    "lte": [
+      "self",
+      "value"
+    ],
+    "__eq__": [
+      "self",
+      "value"
+    ],
+    "__ne__": [
+      "self",
+      "value"
+    ],
+    "is_in": [
+      "self",
+      "values"
+    ],
+    "not_in": [
+      "self",
+      "values"
+    ],
+    "exists": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "FilterBuilder": [],
+  "GrpcChannelProtocol": {
+    "__init__": [
+      "self",
+      "endpoint",
+      "api_key",
+      "api_version",
+      "version",
+      "secure",
+      "timeout_s",
+      "connect_timeout_s",
+      "max_retries",
+      "source_tag",
+      "proxy_url",
+      "on_throttle"
+    ],
+    "upsert": [
+      "self",
+      "vectors",
+      "namespace"
+    ],
+    "query": [
+      "self",
+      "top_k"
+    ],
+    "fetch": [
+      "self",
+      "ids"
+    ],
+    "delete": [
+      "self"
+    ],
+    "update": [
+      "self",
+      "id"
+    ],
+    "list": [
+      "self"
+    ],
+    "describe_index_stats": [
+      "self"
+    ],
+    "create_namespace": [
+      "self",
+      "name",
+      "schema"
+    ],
+    "describe_namespace": [
+      "self",
+      "namespace"
+    ],
+    "list_namespaces": [
+      "self"
+    ],
+    "delete_namespace": [
+      "self",
+      "namespace"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "_T": [],
+  "PineconeFuture": {
+    "__init__": [
+      "self",
+      "underlying"
+    ],
+    "_propagate_state": [
+      "self",
+      "_fut"
+    ],
+    "result": [
+      "self",
+      "timeout"
+    ],
+    "exception": [
+      "self",
+      "timeout"
+    ],
+    "cancel": [
+      "self"
+    ],
+    "cancelled": [
+      "self"
+    ],
+    "done": [
+      "self"
+    ],
+    "running": [
+      "self"
+    ],
+    "add_done_callback": [
+      "self",
+      "fn"
+    ]
+  },
+  "_build_grpc_endpoint": [
+    "host",
+    "secure"
+  ],
+  "_vector_to_grpc_dict": [
+    "v"
+  ],
+  "_dict_to_vector": [
+    "vid",
+    "data"
+  ],
+  "_dict_to_scored_vector": [
+    "data"
+  ],
+  "_dict_to_usage": [
+    "data"
+  ],
+  "_dict_to_namespace_description": [
+    "data"
+  ],
+  "GrpcIndex": {
+    "__init__": [
+      "self"
+    ],
+    "host": [
+      "self"
+    ],
+    "_get_batch_executor": [
+      "self",
+      "max_concurrency"
+    ],
+    "upsert": [
+      "self"
+    ],
+    "query": [
+      "self"
+    ],
+    "query_namespaces": [
+      "self"
+    ],
+    "fetch": [
+      "self"
+    ],
+    "fetch_by_metadata": [
+      "self"
+    ],
+    "delete": [
+      "self"
+    ],
+    "update": [
+      "self"
+    ],
+    "list_paginated": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ],
+    "describe_index_stats": [
+      "self"
+    ],
+    "upsert_from_dataframe": [
+      "self",
+      "df",
+      "namespace",
+      "batch_size",
+      "show_progress"
+    ],
+    "upsert_async": [
+      "self"
+    ],
+    "query_async": [
+      "self"
+    ],
+    "fetch_async": [
+      "self"
+    ],
+    "delete_async": [
+      "self"
+    ],
+    "update_async": [
+      "self"
+    ],
+    "query_namespaces_async": [
+      "self"
+    ],
+    "upsert_records": [
+      "self"
+    ],
+    "search": [
+      "self"
+    ],
+    "search_records": [
+      "self"
+    ],
+    "list_namespaces_paginated": [
+      "self"
+    ],
+    "list_namespaces": [
+      "self"
+    ],
+    "create_namespace": [
+      "self"
+    ],
+    "describe_namespace": [
+      "self"
+    ],
+    "delete_namespace": [
+      "self"
+    ],
+    "_validate_import_id": [
+      "self",
+      "id"
+    ],
+    "start_import": [
+      "self",
+      "uri"
+    ],
+    "describe_import": [
+      "self",
+      "id"
+    ],
+    "cancel_import": [
+      "self",
+      "id"
+    ],
+    "list_imports": [
+      "self"
+    ],
+    "list_imports_paginated": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self"
+    ]
+  },
+  "GRPCIndex": [],
+  "PineconeGrpcFuture": [],
+  "PineconeGRPC": {
+    "Index": [
+      "self",
+      "name",
+      "host"
+    ]
+  },
+  "Pagination": {},
+  "ListResponse": {},
+  "_METHODS_TO_WRAP": [],
+  "_DEFAULT_POOL_THREADS": [],
+  "_LegacyAsyncPool": {
+    "__init__": [
+      "self",
+      "num_threads"
+    ],
+    "submit": [
+      "self",
+      "func",
+      "kwargs"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "install_async_req_support": [
+    "index",
+    "pool_threads"
+  ],
+  "_build_wrapper": [
+    "name",
+    "canonical",
+    "pool"
+  ],
+  "require_non_empty": [
+    "name",
+    "value"
+  ],
+  "require_positive": [
+    "name",
+    "value"
+  ],
+  "require_in_range": [
+    "name",
+    "value",
+    "min_val",
+    "max_val"
+  ],
+  "require_max_length": [
+    "name",
+    "value",
+    "max_length"
+  ],
+  "require_one_of": [
+    "name",
+    "value",
+    "allowed"
+  ],
+  "_RESOURCE_NAME_MAX_LEN": [],
+  "_RESOURCE_NAME_CHARS": [],
+  "require_valid_resource_name": [
+    "name",
+    "value"
+  ],
+  "_MAX_WORKERS": [],
+  "T": [],
+  "_validate_batch_params": [
+    "batch_size",
+    "concurrency"
+  ],
+  "_chunk": [
+    "items",
+    "size"
+  ],
+  "_NoOpProgressBar": {
+    "update": [
+      "self",
+      "n"
+    ],
+    "set_postfix_str": [
+      "self",
+      "s"
+    ],
+    "close": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self"
+    ]
+  },
+  "_create_progress_bar": [
+    "total",
+    "desc",
+    "show"
+  ],
+  "_empty_result": [],
+  "_collect_lsn": [
+    "batch_result",
+    "lsn_reconciled_values",
+    "lsn_committed_values"
+  ],
+  "_build_aggregate": [
+    "lsn_reconciled_values",
+    "lsn_committed_values"
+  ],
+  "batch_execute": [],
+  "async_batch_execute": [],
+  "_VALID_METRICS": [],
+  "_VALID_DELETION_PROTECTION": [],
+  "_validate_deletion_protection": [
+    "deletion_protection"
+  ],
+  "IndexKwargs": {},
+  "_LegacyIndexKwargs": {},
+  "resolve_enum_value": [
+    "value"
+  ],
+  "validate_read_capacity": [
+    "read_capacity"
+  ],
+  "validate_create_inputs": [],
+  "build_create_body": [],
+  "validate_byoc_inputs": [],
+  "build_byoc_body": [],
+  "validate_integrated_inputs": [],
+  "build_integrated_body": [],
+  "_normalize_schema": [
+    "raw"
+  ],
+  "poll_index_until_ready": [
+    "describe_fn",
+    "name",
+    "timeout",
+    "poll_interval"
+  ],
+  "async_poll_index_until_ready": [
+    "describe_fn",
+    "name",
+    "timeout",
+    "poll_interval"
+  ],
+  "build_user_agent": [
+    "version",
+    "source_tag"
+  ],
+  "_MAX_REGISTRY_SIZE": [],
+  "_AdaptiveLimiter": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "ceiling"
+    ],
+    "ceiling": [
+      "self"
+    ],
+    "current_limit": [
+      "self"
+    ],
+    "report_throttled": [
+      "self"
+    ],
+    "report_success": [
+      "self"
+    ],
+    "update_ceiling": [
+      "self",
+      "ceiling"
+    ]
+  },
+  "_AdaptiveLimiterRegistry": {
+    "__slots__": [],
+    "__init__": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "host",
+      "ceiling"
+    ],
+    "report_throttled": [
+      "self",
+      "host"
+    ]
+  },
+  "_build_socket_options": [],
+  "_default_pool_size": [],
+  "_encode_json": [
+    "body"
+  ],
+  "_prepare_json_kwargs": [
+    "kwargs"
+  ],
+  "_build_headers": [
+    "config",
+    "api_version"
+  ],
+  "_SENSITIVE_HEADERS": [],
+  "_redact_headers": [
+    "headers"
+  ],
+  "_log_curl": [
+    "method",
+    "url",
+    "headers",
+    "body"
+  ],
+  "_compute_backoff": [
+    "config",
+    "attempt",
+    "prev_delay"
+  ],
+  "_compute_retry_after_delay": [
+    "config",
+    "response",
+    "attempt",
+    "prev_delay"
+  ],
+  "_notify_throttle": [
+    "config",
+    "request"
+  ],
+  "_RetryTransport": {
+    "__init__": [
+      "self"
+    ],
+    "handle_request": [
+      "self",
+      "request"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "_AsyncRetryTransport": {
+    "__init__": [
+      "self"
+    ],
+    "handle_async_request": [
+      "self",
+      "request"
+    ],
+    "aclose": [
+      "self"
+    ]
+  },
+  "_release_response_refs": [
+    "response"
+  ],
+  "_TEXT_BODY_MAX_LEN": [],
+  "_extract_message_and_error_code": [
+    "body",
+    "response"
+  ],
+  "_extract_request_id": [
+    "headers"
+  ],
+  "_raise_for_status": [
+    "response"
+  ],
+  "HTTPClient": {
+    "__init__": [
+      "self",
+      "config",
+      "api_version"
+    ],
+    "_build_url": [
+      "self",
+      "path"
+    ],
+    "get": [
+      "self",
+      "path",
+      "timeout"
+    ],
+    "post": [
+      "self",
+      "path",
+      "timeout"
+    ],
+    "put": [
+      "self",
+      "path",
+      "timeout"
+    ],
+    "patch": [
+      "self",
+      "path",
+      "timeout"
+    ],
+    "delete": [
+      "self",
+      "path",
+      "timeout"
+    ],
+    "stream": [
+      "self",
+      "method",
+      "path"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "AsyncHTTPClient": {
+    "__init__": [
+      "self",
+      "config",
+      "api_version"
+    ],
+    "_ensure_client": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "path",
+      "timeout"
+    ],
+    "post": [
+      "self",
+      "path",
+      "timeout"
+    ],
+    "put": [
+      "self",
+      "path",
+      "timeout"
+    ],
+    "patch": [
+      "self",
+      "path",
+      "timeout"
+    ],
+    "delete": [
+      "self",
+      "path",
+      "timeout"
+    ],
+    "stream": [
+      "self",
+      "method",
+      "path"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "_validate_host": [
+    "host"
+  ],
+  "_normalize_search_vector_dict": [
+    "vector"
+  ],
+  "_legacy_search_query_to_dict": [
+    "query"
+  ],
+  "_build_search_records_body": [],
+  "_vector_to_dict": [
+    "v"
+  ],
+  "validate_batch_size": [
+    "batch_size"
+  ],
+  "chunked": [
+    "items",
+    "batch_size"
+  ],
+  "with_progress": [
+    "batches"
+  ],
+  "normalize_host": [
+    "host"
+  ],
+  "normalize_source_tag": [
+    "tag"
+  ],
+  "_parse_additional_headers_env": [],
+  "RetryConfig": {},
+  "PineconeConfig": {
+    "_redact_headers": [
+      "self",
+      "headers"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__post_init__": [
+      "self"
+    ]
+  },
+  "_RECOGNIZED_KEYS": [],
+  "_from_tuple": [
+    "item"
+  ],
+  "_from_dict": [
+    "item"
+  ],
+  "_parse_sparse": [
+    "raw"
+  ],
+  "VectorFactory": {
+    "build": [
+      "item"
+    ]
+  },
+  "remap_legacy_kwargs": [
+    "kwargs"
+  ],
+  "reject_unknown_kwargs": [
+    "kwargs"
+  ],
+  "AssistantsAdapter": {
+    "to_assistant": [
+      "data"
+    ],
+    "to_assistant_list": [
+      "data"
+    ],
+    "to_file": [
+      "data"
+    ],
+    "to_operation": [
+      "data"
+    ],
+    "to_file_list": [
+      "data"
+    ],
+    "to_chat_response": [
+      "data"
+    ],
+    "to_chat_completion_response": [
+      "data"
+    ],
+    "to_context_response": [
+      "data"
+    ],
+    "to_alignment_result": [
+      "data"
+    ]
+  },
+  "decode_response": [
+    "data",
+    "type"
+  ],
+  "decode_response_lax": [
+    "data",
+    "type"
+  ],
+  "convert_response": [
+    "obj",
+    "type"
+  ],
+  "_BackupListEnvelope": {},
+  "BackupsAdapter": {
+    "to_backup": [
+      "data"
+    ],
+    "to_backup_list": [
+      "data"
+    ],
+    "to_create_index_from_backup_response": [
+      "data"
+    ]
+  },
+  "_OrganizationListEnvelope": {},
+  "_APIKeyListEnvelope": {},
+  "_ProjectListEnvelope": {},
+  "AdminAdapter": {
+    "to_organization": [
+      "data"
+    ],
+    "to_organization_list": [
+      "data"
+    ],
+    "to_project": [
+      "data"
+    ],
+    "to_project_list": [
+      "data"
+    ],
+    "to_api_key": [
+      "data"
+    ],
+    "to_api_key_with_secret": [
+      "data"
+    ],
+    "to_api_key_list": [
+      "data"
+    ]
+  },
+  "extract_response_info": [
+    "response"
+  ],
+  "VectorsAdapter": {
+    "to_upsert_response": [
+      "data"
+    ],
+    "to_query_response": [
+      "data"
+    ],
+    "to_fetch_response": [
+      "data"
+    ],
+    "to_fetch_by_metadata_response": [
+      "data"
+    ],
+    "to_stats_response": [
+      "data"
+    ],
+    "to_list_response": [
+      "data"
+    ],
+    "to_update_response": [
+      "data"
+    ],
+    "to_search_response": [
+      "data"
+    ],
+    "to_namespace_description": [
+      "data"
+    ],
+    "to_list_namespaces_response": [
+      "data"
+    ],
+    "to_delete_response": [
+      "data"
+    ]
+  },
+  "_IndexListEnvelope": {},
+  "IndexesAdapter": {
+    "to_index_model": [
+      "data"
+    ],
+    "to_index_list": [
+      "data"
+    ]
+  },
+  "_EmbedEnvelope": {},
+  "_ModelListEnvelope": {},
+  "InferenceAdapter": {
+    "to_embeddings_list": [
+      "data"
+    ],
+    "to_rerank_result": [
+      "data"
+    ],
+    "to_model_info": [
+      "data"
+    ],
+    "to_model_info_list": [
+      "data"
+    ]
+  },
+  "normalize_embed_inputs": [
+    "inputs"
+  ],
+  "normalize_rerank_documents": [
+    "documents"
+  ],
+  "_ImportListEnvelope": {},
+  "ImportsAdapter": {
+    "to_start_import_response": [
+      "data"
+    ],
+    "to_import_model": [
+      "data"
+    ],
+    "to_import_list": [
+      "data"
+    ]
+  },
+  "_RestoreJobListEnvelope": {},
+  "RestoreJobsAdapter": {
+    "to_restore_job": [
+      "data"
+    ],
+    "to_restore_job_list": [
+      "data"
+    ]
+  },
+  "_CollectionListEnvelope": {},
+  "CollectionsAdapter": {
+    "to_collection": [
+      "data"
+    ],
+    "to_collection_list": [
+      "data"
+    ]
+  },
+  "_DEFAULT_HOST": [],
+  "_VALID_CONFIG_FIELDS": [],
+  "Config": {
+    "__repr__": [
+      "self"
+    ]
+  },
+  "AsyncioInference": [],
+  "IndexEmbed": {
+    "as_dict": [
+      "self"
+    ]
+  },
+  "Index": {
+    "__init__": [
+      "self"
+    ],
+    "host": [
+      "self"
+    ],
+    "_get_batch_executor": [
+      "self",
+      "max_concurrency"
+    ],
+    "upsert": [
+      "self"
+    ],
+    "_upsert_one_batch": [
+      "self"
+    ],
+    "_upsert_dict_batch": [
+      "self"
+    ],
+    "upsert_from_dataframe": [
+      "self",
+      "df",
+      "namespace",
+      "batch_size",
+      "show_progress",
+      "timeout"
+    ],
+    "upsert_records": [
+      "self"
+    ],
+    "query": [
+      "self"
+    ],
+    "query_namespaces": [
+      "self"
+    ],
+    "fetch": [
+      "self"
+    ],
+    "fetch_by_metadata": [
+      "self"
+    ],
+    "delete": [
+      "self"
+    ],
+    "update": [
+      "self"
+    ],
+    "describe_index_stats": [
+      "self"
+    ],
+    "search": [
+      "self"
+    ],
+    "search_records": [
+      "self"
+    ],
+    "create_namespace": [
+      "self"
+    ],
+    "describe_namespace": [
+      "self"
+    ],
+    "delete_namespace": [
+      "self"
+    ],
+    "list_namespaces_paginated": [
+      "self"
+    ],
+    "list_namespaces": [
+      "self"
+    ],
+    "list_paginated": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ],
+    "_validate_import_id": [
+      "self",
+      "id"
+    ],
+    "start_import": [
+      "self",
+      "uri"
+    ],
+    "describe_import": [
+      "self",
+      "id"
+    ],
+    "cancel_import": [
+      "self",
+      "id"
+    ],
+    "list_imports": [
+      "self"
+    ],
+    "list_imports_paginated": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "PreviewIndex": {
+    "__init__": [
+      "self",
+      "host",
+      "config"
+    ],
+    "host": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "_FTS_LANGUAGES_SHORT": [],
+  "_FIELD_NAME_MAX_BYTES": [],
+  "_DESCRIPTION_MAX_BYTES": [],
+  "_validate_field_name": [
+    "name"
+  ],
+  "_validate_description": [
+    "description"
+  ],
+  "_normalize_fts_language": [
+    "language"
+  ],
+  "PreviewSchemaBuilder": {
+    "__init__": [
+      "self"
+    ],
+    "add_dense_vector_field": [
+      "self",
+      "name"
+    ],
+    "add_sparse_vector_field": [
+      "self",
+      "name"
+    ],
+    "add_string_field": [
+      "self",
+      "name"
+    ],
+    "add_string_list_field": [
+      "self",
+      "name"
+    ],
+    "add_boolean_field": [
+      "self",
+      "name"
+    ],
+    "add_float_field": [
+      "self",
+      "name"
+    ],
+    "add_custom_field": [
+      "self",
+      "name",
+      "field_definition"
+    ],
+    "build": [
+      "self"
+    ]
+  },
+  "AsyncPreviewIndex": {
+    "__init__": [
+      "self",
+      "config",
+      "host",
+      "_host_provider"
+    ],
+    "host": [
+      "self"
+    ],
+    "documents": [
+      "self"
+    ],
+    "_resolve_host": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "PreviewIndexes": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "close": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "configure": [
+      "self",
+      "name"
+    ],
+    "describe": [
+      "self",
+      "name"
+    ],
+    "list": [
+      "self"
+    ],
+    "exists": [
+      "self",
+      "name"
+    ],
+    "delete": [
+      "self",
+      "name"
+    ],
+    "create_backup": [
+      "self",
+      "index_name"
+    ],
+    "list_backups": [
+      "self",
+      "index_name"
+    ],
+    "describe_backup": [
+      "self",
+      "backup_id"
+    ]
+  },
+  "AsyncPreviewIndexes": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "close": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "configure": [
+      "self",
+      "name"
+    ],
+    "describe": [
+      "self",
+      "name"
+    ],
+    "list": [
+      "self"
+    ],
+    "exists": [
+      "self",
+      "name"
+    ],
+    "delete": [
+      "self",
+      "name"
+    ],
+    "create_backup": [
+      "self",
+      "index_name"
+    ],
+    "list_backups": [
+      "self",
+      "index_name"
+    ],
+    "describe_backup": [
+      "self",
+      "backup_id"
+    ]
+  },
+  "AsyncPreviewDocuments": {
+    "__init__": [
+      "self"
+    ],
+    "_build_http": [
+      "self",
+      "host"
+    ],
+    "_ensure_http": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "upsert": [
+      "self"
+    ],
+    "batch_upsert": [
+      "self"
+    ],
+    "search": [
+      "self"
+    ],
+    "fetch": [
+      "self"
+    ],
+    "delete": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "SchemaBuilder": [],
+  "Preview": {
+    "__init__": [
+      "self",
+      "http",
+      "config"
+    ],
+    "indexes": [
+      "self"
+    ],
+    "index": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "AsyncPreview": {
+    "__init__": [
+      "self",
+      "http",
+      "config"
+    ],
+    "indexes": [
+      "self"
+    ],
+    "index": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "_validate_documents": [
+    "documents"
+  ],
+  "PreviewDocuments": {
+    "__init__": [
+      "self"
+    ],
+    "_get_batch_executor": [
+      "self",
+      "max_concurrency"
+    ],
+    "close": [
+      "self"
+    ],
+    "upsert": [
+      "self"
+    ],
+    "batch_upsert": [
+      "self"
+    ],
+    "search": [
+      "self"
+    ],
+    "fetch": [
+      "self"
+    ],
+    "delete": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "_TAG_KEY_RE": [],
+  "_MAX_TAGS": [],
+  "_MAX_KEY_LEN": [],
+  "_MAX_VAL_LEN": [],
+  "validate_tags": [
+    "tags"
+  ],
+  "_Pagination": {},
+  "PreviewDescribeBackupAdapter": {
+    "from_response": [
+      "data"
+    ]
+  },
+  "PreviewListBackupsAdapter": {
+    "from_response": [
+      "data"
+    ]
+  },
+  "describe_backup_adapter": [],
+  "list_backups_adapter": [],
+  "_logger": [],
+  "_filter_none": [
+    "obj"
+  ],
+  "_RawIndexEnvelope": {},
+  "PreviewCreateIndexAdapter": {
+    "to_request": [
+      "request"
+    ],
+    "from_response": [
+      "data"
+    ]
+  },
+  "PreviewConfigureIndexAdapter": {
+    "to_request": [
+      "request"
+    ],
+    "from_response": [
+      "data"
+    ]
+  },
+  "PreviewDescribeIndexAdapter": {
+    "from_response": [
+      "data"
+    ]
+  },
+  "PreviewListIndexesAdapter": {
+    "from_response": [
+      "data"
+    ]
+  },
+  "create_adapter": [],
+  "configure_adapter": [],
+  "describe_adapter": [],
+  "list_adapter": [],
+  "_SearchEnvelope": {},
+  "_FetchEnvelope": {},
+  "PreviewDocumentsAdapter": {
+    "to_search_response": [
+      "response"
+    ],
+    "to_fetch_response": [
+      "response"
+    ]
+  },
+  "PreviewDenseVectorField": {},
+  "PreviewSparseVectorField": {},
+  "PreviewSemanticTextField": {},
+  "PreviewFullTextSearchConfig": {},
+  "PreviewStringField": {},
+  "PreviewStringListField": {},
+  "PreviewBooleanField": {},
+  "PreviewLegacyIntegerField": {},
+  "PreviewIntegerField": {},
+  "PreviewSchemaField": [],
+  "PreviewSchema": {},
+  "PreviewBackupModel": {
+    "__repr__": [
+      "self"
+    ],
+    "__dir__": [
+      "self"
+    ],
+    "_repr_pretty_": [
+      "self",
+      "p",
+      "cycle"
+    ],
+    "_repr_html_": [
+      "self"
+    ]
+  },
+  "PreviewCreateBackupRequest": {},
+  "PreviewIndexModel": {
+    "__repr__": [
+      "self"
+    ],
+    "__dir__": [
+      "self"
+    ],
+    "_repr_pretty_": [
+      "self",
+      "p",
+      "cycle"
+    ],
+    "_repr_html_": [
+      "self"
+    ]
+  },
+  "PreviewReadCapacityManualScaling": {},
+  "PreviewReadCapacityStatus": {},
+  "PreviewReadCapacityDedicatedInner": {},
+  "PreviewReadCapacityOnDemandResponse": {},
+  "PreviewReadCapacityDedicatedResponse": {},
+  "PreviewReadCapacity": [],
+  "PreviewUsage": {},
+  "PreviewDocument": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "data"
+    ],
+    "id": [
+      "self"
+    ],
+    "_id": [
+      "self"
+    ],
+    "score": [
+      "self"
+    ],
+    "_score": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "key",
+      "default"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "PreviewDocumentUpsertResponse": {},
+  "PreviewDocumentSearchResponse": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "matches",
+      "namespace",
+      "usage",
+      "response_info"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "_repr_html_": [
+      "self"
+    ]
+  },
+  "PreviewDocumentFetchResponse": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "documents",
+      "namespace",
+      "usage",
+      "response_info"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "PreviewSparseValues": {},
+  "PreviewManagedDeployment": {},
+  "PreviewPodDeployment": {},
+  "PreviewByocDeployment": {},
+  "PreviewDeployment": [],
+  "PreviewIndexStatus": {},
+  "PreviewCreateIndexRequest": {},
+  "PreviewConfigureIndexRequest": {},
+  "PreviewTextQuery": {
+    "__post_init__": [
+      "self"
+    ]
+  },
+  "PreviewQueryStringQuery": {},
+  "PreviewDenseVectorQuery": {},
+  "PreviewSparseVectorQuery": {},
+  "PreviewScoreByQuery": [],
+  "Projects": {
+    "__init__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "describe": [
+      "self"
+    ],
+    "describe_by_name": [
+      "self"
+    ],
+    "exists": [
+      "self"
+    ],
+    "update": [
+      "self"
+    ],
+    "_cleanup_project_resources": [
+      "self"
+    ],
+    "delete_with_cleanup": [
+      "self"
+    ],
+    "delete": [
+      "self"
+    ]
+  },
+  "Organizations": {
+    "__init__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ],
+    "describe": [
+      "self"
+    ],
+    "update": [
+      "self"
+    ],
+    "delete": [
+      "self"
+    ]
+  },
+  "_VALID_ROLES": [],
+  "_validate_roles": [
+    "roles"
+  ],
+  "ApiKeys": {
+    "__init__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "describe": [
+      "self"
+    ],
+    "update": [
+      "self"
+    ],
+    "delete": [
+      "self"
+    ]
+  },
+  "Admin": {
+    "__init__": [
+      "self"
+    ],
+    "_fetch_token": [
+      "self",
+      "client_id",
+      "client_secret"
+    ],
+    "organizations": [
+      "self"
+    ],
+    "projects": [
+      "self"
+    ],
+    "api_keys": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self"
+    ]
+  },
+  "CloudProvider": {
+    "AWS": [],
+    "GCP": [],
+    "AZURE": []
+  },
+  "Metric": {
+    "COSINE": [],
+    "EUCLIDEAN": [],
+    "DOTPRODUCT": []
+  },
+  "DeletionProtection": {
+    "ENABLED": [],
+    "DISABLED": []
+  },
+  "VectorType": {
+    "DENSE": [],
+    "SPARSE": []
+  },
+  "EmbedModel": {
+    "Multilingual_E5_Large": [],
+    "Pinecone_Sparse_English_V0": []
+  },
+  "RerankModel": {
+    "Bge_Reranker_V2_M3": [],
+    "Cohere_Rerank_3_5": [],
+    "Pinecone_Rerank_V0": []
+  },
+  "PodType": {
+    "P1_X1": [],
+    "P1_X2": [],
+    "P1_X4": [],
+    "P1_X8": [],
+    "S1_X1": [],
+    "S1_X2": [],
+    "S1_X4": [],
+    "S1_X8": [],
+    "P2_X1": [],
+    "P2_X2": [],
+    "P2_X4": [],
+    "P2_X8": []
+  },
+  "AwsRegion": {
+    "US_EAST_1": [],
+    "US_WEST_2": [],
+    "EU_WEST_1": [],
+    "EU_CENTRAL_1": [],
+    "AP_SOUTHEAST_1": []
+  },
+  "GcpRegion": {
+    "US_CENTRAL1": [],
+    "EUROPE_WEST4": []
+  },
+  "AzureRegion": {
+    "EASTUS2": [],
+    "GERMANYWESTCENTRAL": []
+  },
+  "PodIndexEnvironment": {
+    "US_WEST1_GCP": [],
+    "US_CENTRAL1_GCP": [],
+    "US_WEST4_GCP": [],
+    "US_EAST4_GCP": [],
+    "NORTHAMERICA_NORTHEAST1_GCP": [],
+    "ASIA_NORTHEAST1_GCP": [],
+    "ASIA_SOUTHEAST1_GCP": [],
+    "US_EAST1_GCP": [],
+    "EU_WEST1_GCP": [],
+    "EU_WEST4_GCP": [],
+    "US_EAST1_AWS": [],
+    "EASTUS_AZURE": []
+  },
+  "Page": {
+    "__init__": [
+      "self"
+    ],
+    "has_more": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "Paginator": {
+    "__init__": [
+      "self"
+    ],
+    "pagination_token": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "pages": [
+      "self"
+    ],
+    "to_list": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "AsyncPaginator": {
+    "__init__": [
+      "self"
+    ],
+    "pagination_token": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "pages": [
+      "self"
+    ],
+    "to_list": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "_parse_int": [
+    "value"
+  ],
+  "BatchResponseInfo": {
+    "is_reconciled": [
+      "self",
+      "target"
+    ]
+  },
+  "BatchError": {
+    "__repr__": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ]
+  },
+  "BatchResult": {
+    "has_errors": [
+      "self"
+    ],
+    "error_count": [
+      "self"
+    ],
+    "success_count": [
+      "self"
+    ],
+    "failed_items": [
+      "self"
+    ],
+    "_error_summary": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "_repr_html_": [
+      "self"
+    ]
+  },
+  "P": [],
+  "_OUTER_DIV_STYLE": [],
+  "_TITLE_STYLE": [],
+  "_TABLE_STYLE": [],
+  "_LABEL_STYLE": [],
+  "_VALUE_STYLE": [],
+  "render_table": [
+    "title",
+    "rows"
+  ],
+  "truncate_text": [
+    "value",
+    "max_chars",
+    "suffix"
+  ],
+  "abbreviate_list": [
+    "items",
+    "head",
+    "formatter"
+  ],
+  "abbreviate_dict": [
+    "d",
+    "max_keys"
+  ],
+  "HtmlBuilder": {
+    "__init__": [
+      "self",
+      "title"
+    ],
+    "row": [
+      "self",
+      "label",
+      "value"
+    ],
+    "rows": [
+      "self",
+      "items"
+    ],
+    "section": [
+      "self",
+      "title",
+      "rows",
+      "theme"
+    ],
+    "build": [
+      "self"
+    ]
+  },
+  "safe_display": [
+    "method"
+  ],
+  "_struct_to_dict_recursive": [
+    "value"
+  ],
+  "DictLikeStruct": {
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "__setitem__": [
+      "self",
+      "key",
+      "value"
+    ],
+    "__contains__": [
+      "self",
+      "key"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "key",
+      "default"
+    ],
+    "to_dict": [
+      "self"
+    ]
+  },
+  "StructDictMixin": {
+    "__len__": [
+      "self"
+    ],
+    "keys": [
+      "self"
+    ],
+    "values": [
+      "self"
+    ],
+    "items": [
+      "self"
+    ]
+  },
+  "DictMixin": [],
+  "ImportErrorMode": {
+    "CONTINUE": [],
+    "ABORT": []
+  },
+  "ImportList": {
+    "__init__": [
+      "self",
+      "imports"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "index"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ImportModel": {},
+  "StartImportResponse": {},
+  "OperationModel": {
+    "__repr__": [
+      "self"
+    ],
+    "_repr_pretty_": [
+      "self",
+      "p",
+      "cycle"
+    ],
+    "_repr_html_": [
+      "self"
+    ]
+  },
+  "Message": {
+    "__repr__": [
+      "self"
+    ],
+    "_repr_pretty_": [
+      "self",
+      "p",
+      "cycle"
+    ],
+    "_repr_html_": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "d"
+    ]
+  },
+  "StreamMessageStart": {
+    "type": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "_repr_pretty_": [
+      "self",
+      "p",
+      "cycle"
+    ],
+    "_repr_html_": [
+      "self"
+    ]
+  },
+  "StreamContentDelta": {
+    "__repr__": [
+      "self"
+    ],
+    "_repr_pretty_": [
+      "self",
+      "p",
+      "cycle"
+    ],
+    "_repr_html_": [
+      "self"
+    ]
+  },
+  "StreamContentChunk": {
+    "type": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "_repr_pretty_": [
+      "self",
+      "p",
+      "cycle"
+    ],
+    "_repr_html_": [
+      "self"
+    ]
+  },
+  "StreamCitationChunk": {
+    "type": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "_repr_pretty_": [
+      "self",
+      "p",
+      "cycle"
+    ],
+    "_repr_html_": [
+      "self"
+    ]
+  },
+  "StreamMessageEnd": {
+    "type": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "_repr_pretty_": [
+      "self",
+      "p",
+      "cycle"
+    ],
+    "_repr_html_": [
+      "self"
+    ]
+  },
+  "ChatStream": {
+    "__init__": [
+      "self",
+      "stream"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "_repr_html_": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "text": [
+      "self"
+    ],
+    "collect": [
+      "self"
+    ]
+  },
+  "AsyncChatStream": {
+    "__init__": [
+      "self",
+      "stream"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "_repr_html_": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "text": [
+      "self"
+    ],
+    "collect": [
+      "self"
+    ]
+  },
+  "ChatCompletionStream": {
+    "__init__": [
+      "self",
+      "stream"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "_repr_html_": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "text": [
+      "self"
+    ],
+    "collect": [
+      "self"
+    ]
+  },
+  "AsyncChatCompletionStream": {
+    "__init__": [
+      "self",
+      "stream"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "_repr_html_": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "text": [
+      "self"
+    ],
+    "collect": [
+      "self"
+    ]
+  },
+  "ChatCompletionStreamDelta": {
+    "__repr__": [
+      "self"
+    ],
+    "_repr_pretty_": [
+      "self",
+      "p",
+      "cycle"
+    ],
+    "_repr_html_": [
+      "self"
+    ]
+  },
+  "ChatCompletionStreamChoice": {
+    "__repr__": [
+      "self"
+    ],
+    "_repr_pretty_": [
+      "self",
+      "p",
+      "cycle"
+    ],
+    "_repr_html_": [
+      "self"
+    ]
+  },
+  "ChatCompletionStreamChunk": {
+    "__repr__": [
+      "self"
+    ],
+    "_repr_pretty_": [
+      "self",
+      "p",
+      "cycle"
+    ],
+    "_repr_html_": [
+      "self"
+    ]
+  },
+  "ContextOptions": {
+    "__repr__": [
+      "self"
+    ],
+    "_repr_pretty_": [
+      "self",
+      "p",
+      "cycle"
+    ],
+    "_repr_html_": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "d"
+    ]
+  },
+  "AssistantFileModel": {
+    "crc32c_hash": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "_repr_pretty_": [
+      "self",
+      "p",
+      "cycle"
+    ],
+    "_repr_html_": [
+      "self"
+    ]
+  },
+  "ListAssistantsResponse": {
+    "next": [
+      "self"
+    ],
+    "next_token": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "_repr_pretty_": [
+      "self",
+      "p",
+      "cycle"
+    ],
+    "_repr_html_": [
+      "self"
+    ]
+  },
+  "ListFilesResponse": {
+    "next": [
+      "self"
+    ],
+    "next_token": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "_repr_pretty_": [
+      "self",
+      "p",
+      "cycle"
+    ],
+    "_repr_html_": [
+      "self"
+    ]
+  },
+  "FileModel": [],
+  "Usage": [],
+  "TokenCounts": [],
+  "Citation": [],
+  "Reference": [],
+  "Highlight": [],
+  "MessageDelta": [],
+  "BaseStreamChatResponseChunk": [],
+  "StreamChatResponseMessageStart": [],
+  "StreamChatResponseContentDelta": [],
+  "StreamChatResponseCitation": [],
+  "StreamChatResponseMessageEnd": [],
+  "StreamingChatCompletionChunk": [],
+  "StreamingChatCompletionChoice": [],
+  "AlignmentResponse": [],
+  "Metrics": [],
+  "EvaluatedFact": [],
+  "TextBlock": [],
+  "ImageBlock": [],
+  "Image": [],
+  "PdfReference": [],
+  "TextReference": [],
+  "JsonReference": [],
+  "MarkdownReference": [],
+  "DocxReference": [],
+  "AssistantModel": {
+    "__post_init__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "_repr_pretty_": [
+      "self",
+      "p",
+      "cycle"
+    ],
+    "_repr_html_": [
+      "self"
+    ]
+  },
+  "ContextImageData": {
+    "__repr__": [
+      "self"
+    ],
+    "_repr_pretty_": [
+      "self",
+      "p",
+      "cycle"
+    ],
+    "_repr_html_": [
+      "self"
+    ]
+  },
+  "ContextImageBlock": {
+    "__repr__": [
+      "self"
+    ],
+    "_repr_pretty_": [
+      "self",
+      "p",
+      "cycle"
+    ],
+    "_repr_html_": [
+      "self"
+    ]
+  },
+  "ContextTextBlock": {
+    "__repr__": [
+      "self"
+    ],
+    "_repr_pretty_": [
+      "self",
+      "p",
+      "cycle"
+    ],
+    "_repr_html_": [
+      "self"
+    ]
+  },
+  "FileReference": {
+    "__repr__": [
+      "self"
+    ],
+    "_repr_pretty_": [
+      "self",
+      "p",
+      "cycle"
+    ],
+    "_repr_html_": [
+      "self"
+    ]
+  },
+  "PageReference": [],
+  "TextSnippet": {
+    "__repr__": [
+      "self"
+    ],
+    "_repr_pretty_": [
+      "self",
+      "p",
+      "cycle"
+    ],
+    "_repr_html_": [
+      "self"
+    ]
+  },
+  "MultimodalSnippet": {
+    "__repr__": [
+      "self"
+    ],
+    "_repr_pretty_": [
+      "self",
+      "p",
+      "cycle"
+    ],
+    "_repr_html_": [
+      "self"
+    ]
+  },
+  "ContextResponse": {
+    "__repr__": [
+      "self"
+    ],
+    "_repr_pretty_": [
+      "self",
+      "p",
+      "cycle"
+    ],
+    "_repr_html_": [
+      "self"
+    ]
+  },
+  "ChatUsage": {
+    "from_dict": [
+      "cls",
+      "d"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "_repr_pretty_": [
+      "self",
+      "p",
+      "cycle"
+    ],
+    "_repr_html_": [
+      "self"
+    ]
+  },
+  "ChatHighlight": {
+    "__repr__": [
+      "self"
+    ],
+    "_repr_pretty_": [
+      "self",
+      "p",
+      "cycle"
+    ],
+    "_repr_html_": [
+      "self"
+    ]
+  },
+  "ChatReference": {
+    "__repr__": [
+      "self"
+    ],
+    "_repr_pretty_": [
+      "self",
+      "p",
+      "cycle"
+    ],
+    "_repr_html_": [
+      "self"
+    ]
+  },
+  "ChatCitation": {
+    "__repr__": [
+      "self"
+    ],
+    "_repr_pretty_": [
+      "self",
+      "p",
+      "cycle"
+    ],
+    "_repr_html_": [
+      "self"
+    ]
+  },
+  "ChatMessage": {
+    "__repr__": [
+      "self"
+    ],
+    "_repr_pretty_": [
+      "self",
+      "p",
+      "cycle"
+    ],
+    "_repr_html_": [
+      "self"
+    ]
+  },
+  "ChatResponse": {
+    "__repr__": [
+      "self"
+    ],
+    "_repr_pretty_": [
+      "self",
+      "p",
+      "cycle"
+    ],
+    "_repr_html_": [
+      "self"
+    ]
+  },
+  "ChatCompletionMessage": {
+    "__repr__": [
+      "self"
+    ],
+    "_repr_pretty_": [
+      "self",
+      "p",
+      "cycle"
+    ],
+    "_repr_html_": [
+      "self"
+    ]
+  },
+  "ChatCompletionChoice": {
+    "__repr__": [
+      "self"
+    ],
+    "_repr_pretty_": [
+      "self",
+      "p",
+      "cycle"
+    ],
+    "_repr_html_": [
+      "self"
+    ]
+  },
+  "ChatCompletionResponse": {
+    "__repr__": [
+      "self"
+    ],
+    "_repr_pretty_": [
+      "self",
+      "p",
+      "cycle"
+    ],
+    "_repr_html_": [
+      "self"
+    ]
+  },
+  "AssistantModelLegacyMethodsMixin": {
+    "_resolve_assistants": [
+      "self"
+    ],
+    "describe_file": [
+      "self",
+      "file_id",
+      "include_url"
+    ],
+    "upload_bytes_stream": [
+      "self",
+      "stream",
+      "file_name",
+      "metadata",
+      "multimodal",
+      "timeout",
+      "file_id"
+    ],
+    "list_files": [
+      "self",
+      "filter"
+    ],
+    "list_files_paginated": [
+      "self",
+      "filter",
+      "limit",
+      "pagination_token"
+    ],
+    "upload_file": [
+      "self",
+      "file_path",
+      "metadata",
+      "multimodal",
+      "timeout",
+      "file_id"
+    ],
+    "delete_file": [
+      "self",
+      "file_id",
+      "timeout"
+    ],
+    "chat_completions": [
+      "self",
+      "messages",
+      "filter",
+      "stream",
+      "model",
+      "temperature"
+    ],
+    "context": [
+      "self",
+      "query",
+      "messages",
+      "filter",
+      "top_k",
+      "snippet_size",
+      "multimodal",
+      "include_binary_content",
+      "context_options"
+    ],
+    "chat": [
+      "self",
+      "messages",
+      "filter",
+      "stream",
+      "model",
+      "temperature",
+      "json_response",
+      "include_highlights",
+      "context_options"
+    ]
+  },
+  "EntailmentType": [],
+  "EntailmentResult": {
+    "__repr__": [
+      "self"
+    ],
+    "_repr_pretty_": [
+      "self",
+      "p",
+      "cycle"
+    ],
+    "_repr_html_": [
+      "self"
+    ]
+  },
+  "AlignmentScores": {
+    "__repr__": [
+      "self"
+    ],
+    "_repr_pretty_": [
+      "self",
+      "p",
+      "cycle"
+    ],
+    "_repr_html_": [
+      "self"
+    ]
+  },
+  "AlignmentResult": {
+    "__repr__": [
+      "self"
+    ],
+    "_repr_pretty_": [
+      "self",
+      "p",
+      "cycle"
+    ],
+    "_repr_html_": [
+      "self"
+    ]
+  },
+  "EmbedUsage": {},
+  "DenseEmbedding": {
+    "__repr__": [
+      "self"
+    ]
+  },
+  "SparseEmbedding": {
+    "__repr__": [
+      "self"
+    ]
+  },
+  "Embedding": [],
+  "EmbeddingsList": {
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "__contains__": [
+      "self",
+      "key"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ModelInfoSupportedParameter": {
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "__contains__": [
+      "self",
+      "key"
+    ]
+  },
+  "ModelInfo": {
+    "name": [
+      "self"
+    ],
+    "description": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "__contains__": [
+      "self",
+      "key"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ]
+  },
+  "RerankUsage": {},
+  "RankedDocument": {
+    "__repr__": [
+      "self"
+    ]
+  },
+  "RerankResult": {
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "__contains__": [
+      "self",
+      "key"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ModelInfoList": {
+    "__init__": [
+      "self",
+      "models"
+    ],
+    "models": [
+      "self"
+    ],
+    "names": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "CollectionDescription": {},
+  "CollectionList": {
+    "__init__": [
+      "self",
+      "collections"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "index"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "names": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "CollectionModel": {},
+  "IndexStatus": {},
+  "ServerlessSpecInfo": {},
+  "PodSpecInfo": {},
+  "ByocSpecInfo": {},
+  "IndexSpec": {},
+  "ModelIndexEmbed": {},
+  "IndexTags": {
+    "to_dict": [
+      "self"
+    ]
+  },
+  "IndexModel": {
+    "__post_init__": [
+      "self"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "__contains__": [
+      "self",
+      "key"
+    ],
+    "to_dict": [
+      "self"
+    ]
+  },
+  "IndexList": {
+    "__init__": [
+      "self",
+      "indexes"
+    ],
+    "indexes": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "index"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "names": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "EmbedConfig": {
+    "to_dict": [
+      "self"
+    ]
+  },
+  "IntegratedSpec": {},
+  "ServerlessSpec": {
+    "asdict": [
+      "self"
+    ]
+  },
+  "PodSpec": {
+    "asdict": [
+      "self"
+    ]
+  },
+  "ByocSpec": {
+    "asdict": [
+      "self"
+    ]
+  },
+  "NamespaceFieldConfig": {},
+  "NamespaceSchema": {},
+  "IndexedFields": {},
+  "NamespaceDescription": {
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "__contains__": [
+      "self",
+      "key"
+    ]
+  },
+  "ListNamespacesResponse": {
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "__contains__": [
+      "self",
+      "key"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ]
+  },
+  "OrganizationModel": {
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "__contains__": [
+      "self",
+      "key"
+    ]
+  },
+  "OrganizationList": {
+    "__init__": [
+      "self",
+      "organizations"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "index"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "names": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ProjectModel": {
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "__contains__": [
+      "self",
+      "key"
+    ]
+  },
+  "ProjectList": {
+    "__init__": [
+      "self",
+      "projects"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "index"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "names": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "APIKeyRole": {
+    "PROJECT_EDITOR": [],
+    "PROJECT_VIEWER": [],
+    "CONTROL_PLANE_EDITOR": [],
+    "CONTROL_PLANE_VIEWER": [],
+    "DATA_PLANE_EDITOR": [],
+    "DATA_PLANE_VIEWER": []
+  },
+  "APIKeyModel": {
+    "role": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "__contains__": [
+      "self",
+      "key"
+    ]
+  },
+  "APIKeyWithSecret": {
+    "__repr__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "__contains__": [
+      "self",
+      "key"
+    ]
+  },
+  "APIKeyList": {
+    "__init__": [
+      "self",
+      "api_keys"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "index"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "names": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "BackupList": {
+    "__init__": [
+      "self",
+      "backups"
+    ],
+    "data": [
+      "self"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "index"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "names": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "RestoreJobList": {
+    "__init__": [
+      "self",
+      "restore_jobs"
+    ],
+    "data": [
+      "self"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "index"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "BackupModel": {
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "__contains__": [
+      "self",
+      "key"
+    ],
+    "to_dict": [
+      "self"
+    ]
+  },
+  "RestoreJobModel": {
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "__contains__": [
+      "self",
+      "key"
+    ],
+    "to_dict": [
+      "self"
+    ]
+  },
+  "CreateIndexFromBackupResponse": {},
+  "QueryResultsAggregatorInvalidTopKError": {
+    "__init__": [
+      "self",
+      "top_k"
+    ]
+  },
+  "QueryNamespacesResults": {
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "__contains__": [
+      "self",
+      "key"
+    ]
+  },
+  "QueryResultsAggregator": {
+    "__slots__": [],
+    "__init__": [
+      "self"
+    ],
+    "add_results": [
+      "self",
+      "namespace",
+      "response"
+    ],
+    "get_results": [
+      "self"
+    ]
+  },
+  "Vector": {
+    "__post_init__": [
+      "self"
+    ],
+    "from_dict": [
+      "vector_dict"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ScoredVector": {
+    "__repr__": [
+      "self"
+    ]
+  },
+  "SparseValues": {
+    "from_dict": [
+      "sparse_values_dict"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "UpsertResponse": {
+    "_response_info": [
+      "self"
+    ],
+    "has_errors": [
+      "self"
+    ],
+    "error_count": [
+      "self"
+    ],
+    "success_count": [
+      "self"
+    ],
+    "successful_item_count": [
+      "self"
+    ],
+    "failed_items": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "QueryResponse": {
+    "_response_info": [
+      "self"
+    ],
+    "__post_init__": [
+      "self"
+    ]
+  },
+  "FetchResponse": {
+    "_response_info": [
+      "self"
+    ]
+  },
+  "FetchByMetadataResponse": {
+    "_response_info": [
+      "self"
+    ]
+  },
+  "NamespaceSummary": {},
+  "DescribeIndexStatsResponse": {
+    "_response_info": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "__contains__": [
+      "self",
+      "key"
+    ]
+  },
+  "ListItem": {},
+  "UpsertRecordsResponse": {
+    "_response_info": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "__contains__": [
+      "self",
+      "key"
+    ]
+  },
+  "UpdateResponse": {
+    "_response_info": [
+      "self"
+    ]
+  },
+  "_RerankConfigRequired": {},
+  "RerankConfig": {},
+  "_SearchInputsRequired": {},
+  "SearchInputs": {},
+  "SearchUsage": {},
+  "Hit": {
+    "id": [
+      "self"
+    ],
+    "score": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "__contains__": [
+      "self",
+      "key"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "SearchResult": {},
+  "SearchRecordsResponse": {
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "__contains__": [
+      "self",
+      "key"
+    ]
+  },
+  "SearchQuery": {
+    "to_dict": [
+      "self"
+    ],
+    "as_dict": []
+  },
+  "SearchQueryVector": {
+    "to_dict": [
+      "self"
+    ],
+    "as_dict": []
+  },
+  "SearchRerank": {
+    "to_dict": [
+      "self"
+    ],
+    "as_dict": []
+  },
+  "IndexAsyncio": []
+}
