@@ -1,0 +1,292 @@
+{
+  "__all__": [],
+  "randint_without_replacement": [
+    "q",
+    "m",
+    "s"
+  ],
+  "hashing_scalings": [
+    "m",
+    "s"
+  ],
+  "sketch_hashing": [
+    "q",
+    "m",
+    "s"
+  ],
+  "sketch_gaussian": [
+    "q",
+    "m"
+  ],
+  "qr_positive_diagonal": [
+    "A"
+  ],
+  "sketch_orthogonal": [
+    "q",
+    "m"
+  ],
+  "check_valid_sketch_method": [
+    "sketch_method"
+  ],
+  "sketch_matrix": [
+    "sketch_dimension",
+    "ambient_dimension",
+    "sketch_method"
+  ],
+  "GENERATORS_UNCONSTRAINED": [],
+  "GENERATORS_LINEARLY_INDEPENDENT": [],
+  "GENERATORS_DOUBLE_DESCENT": [],
+  "GENERATORS_NORMAL_ONLY": [],
+  "GENERATORS_DD_RECURSIVE": [],
+  "GENERATORS_DD_AND_NORMAL": [],
+  "GENERATORS_TYPE_STR": [],
+  "nearby_constraints": [
+    "A",
+    "b",
+    "x",
+    "alpha"
+  ],
+  "full_rank_generators": [
+    "A"
+  ],
+  "calculate_cone_generators": [
+    "A",
+    "verbose"
+  ],
+  "get_poll_directions": [
+    "A",
+    "b",
+    "x",
+    "alpha",
+    "include_negative_directions",
+    "verbose"
+  ],
+  "compute_lambda": [
+    "x",
+    "A",
+    "b",
+    "D",
+    "Dneg",
+    "alpha"
+  ],
+  "compute_lambda_gradf": [
+    "x",
+    "A",
+    "b",
+    "D",
+    "Dneg",
+    "alpha",
+    "true_gradf"
+  ],
+  "ds_lincons": [
+    "f",
+    "x0",
+    "A",
+    "b",
+    "rho",
+    "maxevals",
+    "alpha0",
+    "alpha_max",
+    "alpha_min",
+    "gamma_inc",
+    "gamma_dec",
+    "verbose",
+    "print_freq",
+    "rho_uses_normd",
+    "poll_normal_cone",
+    "detailed_info",
+    "true_gradf"
+  ],
+  "simplex_example": [],
+  "dd_example": [],
+  "poll_set_example": [],
+  "main": [],
+  "__version__": [],
+  "VALID_POLL_TYPES": [],
+  "DEFAULT_PARAMS": [],
+  "EXIT_ALPHA_MIN_REACHED": [],
+  "EXIT_MAXFUN_REACHED": [],
+  "poll_directions": [
+    "n",
+    "poll_type",
+    "scale_prob",
+    "scale_factor"
+  ],
+  "poll_set": [
+    "n",
+    "sketch_dim",
+    "sketch_type",
+    "poll_type",
+    "scale_prob",
+    "scale_factor"
+  ],
+  "ds": [
+    "f",
+    "x0",
+    "rho",
+    "sketch_dim",
+    "sketch_type",
+    "maxevals",
+    "poll_type",
+    "alpha0",
+    "alpha_max",
+    "alpha_min",
+    "gamma_inc",
+    "gamma_dec",
+    "verbose",
+    "print_freq",
+    "use_stochastic_three_points",
+    "poll_scale_prob",
+    "poll_scale_factor",
+    "rho_uses_normd"
+  ],
+  "OUTPUT_STRINGS": [],
+  "OptimResults": {
+    "__init__": [
+      "self",
+      "xmin",
+      "fmin",
+      "nf",
+      "exit_flag"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "solve": [
+    "f",
+    "x0",
+    "A",
+    "b",
+    "rho",
+    "sketch_dim",
+    "sketch_type",
+    "maxevals",
+    "poll_type",
+    "alpha0",
+    "alpha_max",
+    "alpha_min",
+    "gamma_inc",
+    "gamma_dec",
+    "verbose",
+    "print_freq",
+    "use_stochastic_three_points",
+    "rho_uses_normd",
+    "return_iteration_counts",
+    "poll_normal_cone",
+    "detailed_info_lincons",
+    "true_gradf"
+  ],
+  "solve_directsearch": [
+    "f",
+    "x0",
+    "A",
+    "b",
+    "rho",
+    "maxevals",
+    "poll_type",
+    "alpha0",
+    "alpha_max",
+    "alpha_min",
+    "gamma_inc",
+    "gamma_dec",
+    "verbose",
+    "print_freq",
+    "rho_uses_normd",
+    "return_iteration_counts"
+  ],
+  "solve_probabilistic_directsearch": [
+    "f",
+    "x0",
+    "rho",
+    "maxevals",
+    "alpha0",
+    "alpha_max",
+    "alpha_min",
+    "gamma_inc",
+    "gamma_dec",
+    "verbose",
+    "print_freq",
+    "rho_uses_normd",
+    "return_iteration_counts"
+  ],
+  "solve_subspace_directsearch": [
+    "f",
+    "x0",
+    "rho",
+    "sketch_dim",
+    "sketch_type",
+    "maxevals",
+    "poll_type",
+    "alpha0",
+    "alpha_max",
+    "alpha_min",
+    "gamma_inc",
+    "gamma_dec",
+    "verbose",
+    "print_freq",
+    "rho_uses_normd",
+    "return_iteration_counts"
+  ],
+  "solve_stp": [
+    "f",
+    "x0",
+    "maxevals",
+    "alpha0",
+    "alpha_min",
+    "verbose",
+    "print_freq",
+    "return_iteration_counts"
+  ],
+  "doubledescLI": [
+    "B",
+    "A"
+  ],
+  "calldoubledescLI": [
+    "Ae",
+    "Ai",
+    "Ipos",
+    "Ineg",
+    "Z"
+  ],
+  "gentech": [
+    "Ae",
+    "Ai",
+    "Z",
+    "Ap",
+    "Am"
+  ],
+  "activeconsAiZ": [
+    "x",
+    "alpha",
+    "li",
+    "ui",
+    "Ai",
+    "Z",
+    "tolfeas"
+  ],
+  "randcolZsearch": [
+    "Z",
+    "Ip",
+    "Im",
+    "nbgen"
+  ],
+  "dspfdalgo": [
+    "fun",
+    "x0",
+    "alpha0",
+    "dirgen",
+    "lb",
+    "ub",
+    "Aeq",
+    "beq",
+    "Aineq",
+    "lbineq",
+    "ubineq",
+    "seed",
+    "maxevals",
+    "ftarget",
+    "tolf",
+    "tol_feas"
+  ]
+}

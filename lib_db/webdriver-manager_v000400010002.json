@@ -1,0 +1,581 @@
+{
+  "OperaDriverManager": {
+    "__init__": [
+      "self",
+      "version",
+      "name",
+      "url",
+      "latest_release_url",
+      "opera_release_tag",
+      "download_manager",
+      "cache_manager",
+      "os_system_manager"
+    ],
+    "install": [
+      "self"
+    ],
+    "get_os_type": [
+      "self"
+    ]
+  },
+  "ChromeDriverManager": {
+    "__init__": [
+      "self",
+      "driver_version",
+      "name",
+      "url",
+      "latest_release_url",
+      "chrome_type",
+      "download_manager",
+      "cache_manager",
+      "os_system_manager"
+    ],
+    "install": [
+      "self"
+    ],
+    "get_os_type": [
+      "self"
+    ]
+  },
+  "__version__": [],
+  "IEDriverManager": {
+    "__init__": [
+      "self",
+      "version",
+      "name",
+      "url",
+      "latest_release_url",
+      "ie_release_tag",
+      "download_manager",
+      "cache_manager",
+      "os_system_manager"
+    ],
+    "install": [
+      "self"
+    ],
+    "get_os_type": [
+      "self"
+    ]
+  },
+  "EdgeChromiumDriverManager": {
+    "__init__": [
+      "self",
+      "version",
+      "name",
+      "url",
+      "latest_release_url",
+      "download_manager",
+      "cache_manager",
+      "os_system_manager"
+    ],
+    "install": [
+      "self"
+    ],
+    "get_os_type": [
+      "self"
+    ]
+  },
+  "GeckoDriverManager": {
+    "__init__": [
+      "self",
+      "version",
+      "name",
+      "url",
+      "latest_release_url",
+      "mozila_release_tag",
+      "download_manager",
+      "cache_manager",
+      "os_system_manager"
+    ],
+    "install": [
+      "self"
+    ],
+    "get_os_type": [
+      "self"
+    ],
+    "_is_linux_aarch64": [
+      "self"
+    ]
+  },
+  "OperaDriver": {
+    "__init__": [
+      "self",
+      "name",
+      "driver_version",
+      "url",
+      "latest_release_url",
+      "opera_release_tag",
+      "http_client",
+      "os_system_manager"
+    ],
+    "get_latest_release_version": [
+      "self"
+    ],
+    "get_driver_download_url": [
+      "self",
+      "os_type"
+    ],
+    "latest_release_url": [
+      "self"
+    ],
+    "tagged_release_url": [
+      "self",
+      "version"
+    ],
+    "get_browser_type": [
+      "self"
+    ]
+  },
+  "EdgeChromiumDriver": {
+    "__init__": [
+      "self",
+      "name",
+      "driver_version",
+      "url",
+      "latest_release_url",
+      "http_client",
+      "os_system_manager"
+    ],
+    "get_stable_release_version": [
+      "self"
+    ],
+    "get_latest_release_version": [
+      "self"
+    ],
+    "get_browser_type": [
+      "self"
+    ]
+  },
+  "CHROME_FOR_TESTING_LATEST_PATCH_VERSIONS_PER_BUILD_URL": [],
+  "CHROME_FOR_TESTING_LATEST_VERSIONS_PER_MILESTONE_URL": [],
+  "CHROME_FOR_TESTING_KNOWN_GOOD_VERSIONS_URL": [],
+  "CHROME_FOR_TESTING_DOWNLOAD_URL": [],
+  "CHROME_FOR_TESTING_LATEST_RELEASE_URL": [],
+  "CHROMEDRIVER_STORAGE_URL": [],
+  "CHROMEDRIVER_STORAGE_LATEST_RELEASE_URL": [],
+  "ChromeDriver": {
+    "__init__": [
+      "self",
+      "name",
+      "driver_version",
+      "url",
+      "latest_release_url",
+      "http_client",
+      "os_system_manager",
+      "chrome_type"
+    ],
+    "get_driver_download_url": [
+      "self",
+      "os_type"
+    ],
+    "get_browser_type": [
+      "self"
+    ],
+    "get_latest_release_version": [
+      "self"
+    ],
+    "_legacy_url": [
+      "self"
+    ],
+    "_legacy_latest_release_url": [
+      "self"
+    ],
+    "_latest_cft_version_for_browser_version": [
+      "self",
+      "browser_version"
+    ],
+    "_get_cft_json": [
+      "self",
+      "url"
+    ],
+    "_raise_missing_chromedriver_version": [
+      "self",
+      "browser_version",
+      "checked_urls",
+      "details"
+    ],
+    "get_url_for_version_and_platform": [
+      "self",
+      "browser_version",
+      "platform"
+    ],
+    "_parse_json_response": [
+      "self",
+      "response"
+    ]
+  },
+  "IEDriver": {
+    "__init__": [
+      "self",
+      "name",
+      "driver_version",
+      "url",
+      "latest_release_url",
+      "ie_release_tag",
+      "http_client",
+      "os_system_manager"
+    ],
+    "get_latest_release_version": [
+      "self"
+    ],
+    "get_driver_download_url": [
+      "self",
+      "os_type"
+    ],
+    "latest_release_url": [
+      "self"
+    ],
+    "tagged_release_url": [
+      "self",
+      "version"
+    ],
+    "__get_divided_version": [
+      "self",
+      "version"
+    ],
+    "get_browser_type": [
+      "self"
+    ]
+  },
+  "GeckoDriver": {
+    "__init__": [
+      "self",
+      "name",
+      "driver_version",
+      "url",
+      "latest_release_url",
+      "mozila_release_tag",
+      "http_client",
+      "os_system_manager"
+    ],
+    "get_latest_release_version": [
+      "self"
+    ],
+    "get_driver_download_url": [
+      "self",
+      "os_type"
+    ],
+    "latest_release_url": [
+      "self"
+    ],
+    "tagged_release_url": [
+      "self",
+      "version"
+    ],
+    "get_browser_type": [
+      "self"
+    ]
+  },
+  "DownloadManager": {
+    "__init__": [
+      "self",
+      "http_client"
+    ],
+    "download_file": [
+      "self",
+      "url"
+    ],
+    "http_client": [
+      "self"
+    ]
+  },
+  "WDMDownloadManager": {
+    "__init__": [
+      "self",
+      "http_client"
+    ],
+    "download_file": [
+      "self",
+      "url"
+    ],
+    "extract_filename_from_url": [
+      "url"
+    ]
+  },
+  "LinuxZipFileWithPermissions": {
+    "extract": [
+      "self",
+      "member",
+      "path",
+      "pwd"
+    ]
+  },
+  "Archive": {
+    "__init__": [
+      "self",
+      "path"
+    ]
+  },
+  "ROOT_FOLDER_NAME": [],
+  "get_default_project_root_cache_path": [],
+  "DEFAULT_PROJECT_ROOT_CACHE_PATH": [],
+  "get_default_user_home_cache_path": [],
+  "DEFAULT_USER_HOME_CACHE_PATH": [],
+  "ChromeType": {
+    "GOOGLE": [],
+    "CHROMIUM": [],
+    "BRAVE": [],
+    "MSEDGE": []
+  },
+  "OSType": {
+    "LINUX": [],
+    "MAC": [],
+    "WIN": []
+  },
+  "PATTERN": [],
+  "OperationSystemManager": {
+    "__init__": [
+      "self",
+      "os_type",
+      "architecture",
+      "os_platform"
+    ],
+    "get_os_name": [
+      "self"
+    ],
+    "get_os_architecture": [
+      "self"
+    ],
+    "get_os_type": [
+      "self"
+    ],
+    "is_arch": [
+      "self"
+    ],
+    "is_mac_os": [
+      "os_sys_type"
+    ],
+    "get_browser_version_from_os": [
+      "self",
+      "browser_type"
+    ]
+  },
+  "HttpClient": {
+    "get": [
+      "self",
+      "url",
+      "params"
+    ],
+    "validate_response": [
+      "resp"
+    ]
+  },
+  "WDMHttpClient": {
+    "__init__": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "url"
+    ]
+  },
+  "get_date_diff": [
+    "date1",
+    "date2",
+    "date_format"
+  ],
+  "linux_browser_apps_to_cmd": [],
+  "windows_browser_apps_to_cmd": [],
+  "read_version_from_cmd": [
+    "cmd",
+    "pattern"
+  ],
+  "determine_powershell": [],
+  "Driver": {
+    "__init__": [
+      "self",
+      "name",
+      "driver_version_to_download",
+      "url",
+      "latest_release_url",
+      "http_client",
+      "os_system_manager"
+    ],
+    "auth_header": [
+      "self"
+    ],
+    "get_name": [
+      "self"
+    ],
+    "get_driver_download_url": [
+      "self",
+      "os_type"
+    ],
+    "get_driver_version_to_download": [
+      "self"
+    ],
+    "get_latest_release_version": [
+      "self"
+    ],
+    "get_browser_version_from_os": [
+      "self"
+    ],
+    "get_browser_type": [
+      "self"
+    ],
+    "get_binary_name": [
+      "self",
+      "os_type"
+    ]
+  },
+  "File": {
+    "__init__": [
+      "self",
+      "stream",
+      "file_name"
+    ],
+    "filename": [
+      "self"
+    ]
+  },
+  "FileManager": {
+    "__init__": [
+      "self",
+      "os_system_manager"
+    ],
+    "save_archive_file": [
+      "self",
+      "file",
+      "directory"
+    ],
+    "unpack_archive": [
+      "self",
+      "archive_file",
+      "target_dir"
+    ],
+    "__extract_zip": [
+      "self",
+      "archive_file",
+      "to_directory"
+    ],
+    "__remove_file_dir_conflicts": [
+      "self",
+      "names",
+      "to_directory"
+    ],
+    "__extract_tar_file": [
+      "self",
+      "archive_file",
+      "to_directory"
+    ]
+  },
+  "DriverManager": {
+    "__init__": [
+      "self",
+      "download_manager",
+      "cache_manager",
+      "os_system_manager"
+    ],
+    "http_client": [
+      "self"
+    ],
+    "install": [
+      "self"
+    ],
+    "_get_driver_binary_path": [
+      "self",
+      "driver"
+    ],
+    "get_os_type": [
+      "self"
+    ],
+    "_acquire_lock": [
+      "lock_path",
+      "timeout",
+      "poll_interval"
+    ],
+    "_release_lock": [
+      "lock_fd",
+      "lock_path"
+    ]
+  },
+  "__logger": [],
+  "log": [
+    "text"
+  ],
+  "set_logger": [
+    "logger"
+  ],
+  "DriverCacheManager": {
+    "__init__": [
+      "self",
+      "root_dir",
+      "valid_range",
+      "file_manager",
+      "os_system_manager"
+    ],
+    "get_driver_lock_path": [
+      "self",
+      "driver_name",
+      "os_type"
+    ],
+    "save_archive_file": [
+      "self",
+      "file",
+      "path"
+    ],
+    "unpack_archive": [
+      "self",
+      "archive",
+      "path"
+    ],
+    "save_file_to_cache": [
+      "self",
+      "driver",
+      "file"
+    ],
+    "__get_binary": [
+      "self",
+      "files",
+      "driver_name"
+    ],
+    "__save_metadata": [
+      "self",
+      "driver",
+      "binary_path",
+      "date"
+    ],
+    "get_os_type": [
+      "self"
+    ],
+    "find_driver": [
+      "self",
+      "driver"
+    ],
+    "__find_driver_by_browser_version": [
+      "self",
+      "metadata",
+      "os_type",
+      "driver_name",
+      "browser_version"
+    ],
+    "__is_valid": [
+      "self",
+      "driver_info"
+    ],
+    "load_metadata_content": [
+      "self"
+    ],
+    "__get_metadata_key": [
+      "self",
+      "driver"
+    ],
+    "get_cache_key_driver_version": [
+      "self",
+      "driver"
+    ],
+    "__get_path": [
+      "self",
+      "driver"
+    ]
+  },
+  "str2bool": [
+    "value"
+  ],
+  "ssl_verify": [],
+  "gh_token": [],
+  "wdm_local": [],
+  "wdm_log_level": [],
+  "wdm_progress_bar": [],
+  "get_xdist_worker_id": []
+}
