@@ -1,0 +1,375 @@
+{
+  "_build_meta": [],
+  "_detect_target": [],
+  "get_requires_for_build_wheel": [
+    "config_settings"
+  ],
+  "get_requires_for_build_editable": [
+    "config_settings"
+  ],
+  "get_requires_for_build_sdist": [
+    "config_settings"
+  ],
+  "build_wheel": [
+    "wheel_directory",
+    "config_settings",
+    "metadata_directory"
+  ],
+  "build_sdist": [
+    "sdist_directory",
+    "config_settings"
+  ],
+  "prepare_metadata_for_build_wheel": [
+    "metadata_directory",
+    "config_settings"
+  ],
+  "prepare_metadata_for_build_editable": [
+    "metadata_directory",
+    "config_settings"
+  ],
+  "build_editable": [
+    "wheel_directory",
+    "config_settings",
+    "metadata_directory"
+  ],
+  "_is_parallel_target": [],
+  "_build_sdist_for": [
+    "target",
+    "outdir"
+  ],
+  "cli_build_sdists": [
+    "outdir"
+  ],
+  "cli_prepare_tests": [
+    "project_dir"
+  ],
+  "cli_run_tests": [
+    "project_dir"
+  ],
+  "_main": [
+    "argv"
+  ],
+  "NumpyBuildExt": {
+    "build_extension": [
+      "self",
+      "ext"
+    ]
+  },
+  "CudaBuildExtension": {
+    "build_extension": [
+      "self",
+      "ext"
+    ],
+    "_build_cuda_extension": [
+      "self",
+      "ext"
+    ]
+  },
+  "sz_target_name": [],
+  "get_compiler": [],
+  "is_64bit_x86": [],
+  "is_64bit_arm": [],
+  "is_big_endian": [],
+  "linux_settings": [
+    "use_cpp"
+  ],
+  "darwin_settings": [
+    "use_cpp"
+  ],
+  "windows_settings": [
+    "use_cpp"
+  ],
+  "ext_modules": [],
+  "entry_points": [],
+  "command_class": [],
+  "__version__": [],
+  "this_directory": [],
+  "install_requires": [],
+  "parse_arguments": [],
+  "wc": [
+    "file_path",
+    "args"
+  ],
+  "format_output": [
+    "counts",
+    "args",
+    "just"
+  ],
+  "get_files_from": [
+    "fn"
+  ],
+  "main": [],
+  "split_file": [
+    "file_path",
+    "lines_per_file",
+    "output_prefix",
+    "separator",
+    "number_of_files"
+  ],
+  "_random_seed_for_run": [],
+  "SEED_VALUES": [],
+  "_env_seed": [],
+  "log_test_environment": [],
+  "seed_random_generators": [
+    "seed_value"
+  ],
+  "test_library_properties": [],
+  "test_unit_construct": [
+    "native_type"
+  ],
+  "test_str_repr": [],
+  "test_unit_indexing": [],
+  "test_unit_count": [],
+  "test_unit_count_byteset": [],
+  "test_unit_contains": [],
+  "test_unit_str_rich_comparisons": [],
+  "test_unit_buffer_protocol": [],
+  "test_str_write_to": [],
+  "test_unit_split": [],
+  "test_unit_split_iterators": [],
+  "test_unit_strip": [],
+  "test_unit_strs_sequence": [],
+  "test_unit_slicing": [],
+  "test_unit_strs_rich_comparisons": [],
+  "test_unit_strs_sequence_slicing": [],
+  "test_unit_globals": [],
+  "test_string_lengths": [],
+  "test_decoding_valid_strings": [
+    "byte_string",
+    "encoding",
+    "expected"
+  ],
+  "test_decoding_exceptions": [
+    "byte_string",
+    "encoding"
+  ],
+  "test_slice_of_split": [],
+  "get_random_string": [
+    "length",
+    "variability"
+  ],
+  "is_equal_strings": [
+    "native_strings",
+    "big_strings"
+  ],
+  "check_identical": [
+    "native",
+    "big",
+    "needle",
+    "check_iterators"
+  ],
+  "test_fuzzy_repetitions": [
+    "repetitions"
+  ],
+  "test_fuzzy_substrings": [
+    "pattern_length",
+    "haystack_length",
+    "variability",
+    "seed_value"
+  ],
+  "baseline_translate": [
+    "body",
+    "lut"
+  ],
+  "translation_table_to_dict": [
+    "lut"
+  ],
+  "test_translations": [
+    "length",
+    "seed_value"
+  ],
+  "test_translations_random": [
+    "length",
+    "seed_value"
+  ],
+  "test_fill_random_slice": [
+    "seed_value"
+  ],
+  "test_fill_random_different_nonces": [],
+  "test_fill_random_alphabet": [
+    "length",
+    "seed_value"
+  ],
+  "test_hash_basic_equivalence": [
+    "body",
+    "seed_value"
+  ],
+  "test_hasher_incremental_vs_one_shot": [
+    "seed_value"
+  ],
+  "test_hasher_reset_and_hexdigest": [
+    "seed_value"
+  ],
+  "test_bytesum_random": [
+    "length",
+    "seed_value"
+  ],
+  "test_sha256": [
+    "length",
+    "seed_value"
+  ],
+  "test_hmac_sha256": [
+    "key_length",
+    "message_length",
+    "seed_value"
+  ],
+  "test_hmac_sha256_kwargs": [],
+  "test_fuzzy_sorting": [
+    "list_length",
+    "part_length",
+    "variability",
+    "seed_value"
+  ],
+  "test_str_to_pyarrow_conversion": [],
+  "test_strs_to_pyarrow_conversion": [],
+  "test_strs_pyarrow_empty": [],
+  "test_strs_pyarrow_large_strings": [],
+  "test_strs_pyarrow_fragmented_conversion": [],
+  "test_strs_from_python_basic": [
+    "container_class",
+    "view"
+  ],
+  "UINT32_MAX": [],
+  "long_repeated_string": [
+    "ctypes",
+    "fill_char",
+    "string_size"
+  ],
+  "test_strs_from_4gb_list": [],
+  "test_strs_from_4gb_generator": [],
+  "test_strs_reference_counting": [
+    "container_class",
+    "view"
+  ],
+  "test_strs_from_arrow_basic": [
+    "view"
+  ],
+  "test_strs_from_arrow_binary_array": [],
+  "test_strs_from_arrow_large_strings": [],
+  "test_strs_from_arrow_error_cases": [],
+  "test_strs_from_arrow_c_interface": [],
+  "test_strs_from_arrow_with_nulls": [],
+  "test_invalid_utf8_handling": [],
+  "test_unit_utf8_case_fold": [],
+  "test_utf8_case_fold_expansions": [
+    "input_str",
+    "expected"
+  ],
+  "_parse_case_folding_file": [],
+  "_get_case_folding_rules": [],
+  "test_utf8_case_fold_all_codepoints": [],
+  "test_utf8_case_fold_random_strings": [
+    "seed_value"
+  ],
+  "test_utf8_case_insensitive_find": [
+    "haystack",
+    "needle",
+    "expected"
+  ],
+  "test_utf8_case_insensitive_find_method": [],
+  "test_utf8_case_insensitive_find_offsets": [],
+  "test_utf8_case_insensitive_find_start_end": [],
+  "test_utf8_case_insensitive_find_bytes": [],
+  "test_utf8_case_insensitive_find_slicing": [],
+  "test_utf8_case_insensitive_find_iter": [
+    "haystack",
+    "needle",
+    "expected_matches"
+  ],
+  "test_utf8_case_insensitive_find_iter_overlapping": [],
+  "test_utf8_case_insensitive_order": [],
+  "test_unit_utf8_count": [],
+  "test_utf8_splitlines_iter": [],
+  "test_utf8_splitlines_iter_matches_python": [
+    "text"
+  ],
+  "test_utf8_split_iter": [],
+  "test_utf8_split_iter_matches_python": [
+    "text"
+  ],
+  "test_utf8_word_iter_basic": [],
+  "test_utf8_word_iter_skip_empty": [],
+  "test_utf8_word_iter_contractions": [],
+  "test_utf8_word_iter_unicode": [],
+  "test_utf8_word_iter_emoji": [],
+  "test_utf8_word_iter_numbers": [],
+  "test_utf8_word_iter_str_method": [],
+  "test_utf8_word_boundary_fuzz": [
+    "seed_value"
+  ],
+  "test_utf8_word_boundary_official_sample": [],
+  "DeviceName": [],
+  "DEVICE_NAMES": [],
+  "device_scope_and_capabilities": [
+    "device"
+  ],
+  "InputSizeConfig": [],
+  "INPUT_SIZE_CONFIGS": [],
+  "generate_string_batches": [
+    "config"
+  ],
+  "test_device_scope": [],
+  "test_to_device": [],
+  "test_to_device_unicode_complex": [],
+  "test_parameter_validation": [],
+  "baseline_levenshtein_distance": [
+    "s1",
+    "s2"
+  ],
+  "test_levenshtein_distance_insertions": [
+    "max_edit_distance",
+    "seed_value"
+  ],
+  "test_levenshtein_distances_with_simple_cases": [
+    "capabilities_mode",
+    "device_name"
+  ],
+  "test_levenshtein_distances_utf8_with_simple_cases": [
+    "capabilities_mode",
+    "device_name"
+  ],
+  "test_levenshtein_distances_with_custom_gaps": [
+    "capabilities_mode",
+    "device_name"
+  ],
+  "test_levenshtein_distances_utf8_with_custom_gaps": [
+    "capabilities_mode",
+    "device_name"
+  ],
+  "test_levenshtein_distance_random": [
+    "capabilities_mode",
+    "device_name",
+    "config",
+    "seed_value"
+  ],
+  "test_needleman_wunsch_vs_levenshtein_random": [
+    "capabilities_mode",
+    "device_name",
+    "config",
+    "seed_value"
+  ],
+  "test_needleman_wunsch_against_affine_gaps": [
+    "capabilities_mode",
+    "device_name",
+    "batch_size",
+    "seed_value"
+  ],
+  "test_smith_waterman_against_affine_gaps": [
+    "capabilities_mode",
+    "device_name",
+    "batch_size",
+    "seed_value"
+  ],
+  "test_fingerprints": [
+    "capabilities_mode",
+    "device_name",
+    "ndim"
+  ],
+  "test_fingerprints_random": [
+    "batch_size",
+    "capabilities_mode",
+    "device_name",
+    "ndim",
+    "seed_value"
+  ]
+}
