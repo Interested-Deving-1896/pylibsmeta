@@ -1,0 +1,199 @@
+{
+  "_decode_int8_embedding": [
+    "b64"
+  ],
+  "PerplexityEmbeddings": {
+    "model_config": [],
+    "lc_secrets": [
+      "self"
+    ],
+    "validate_environment": [
+      "self"
+    ],
+    "embed_documents": [
+      "self",
+      "texts"
+    ],
+    "embed_query": [
+      "self",
+      "text"
+    ],
+    "aembed_documents": [
+      "self",
+      "texts"
+    ],
+    "aembed_query": [
+      "self",
+      "text"
+    ]
+  },
+  "PerplexitySearchResults": {
+    "validate_environment": [
+      "cls",
+      "values"
+    ],
+    "_run": [
+      "self",
+      "query",
+      "max_results",
+      "country",
+      "search_domain_filter",
+      "search_recency_filter",
+      "search_after_date",
+      "search_before_date",
+      "run_manager"
+    ]
+  },
+  "__all__": [],
+  "PerplexitySearchRetriever": {
+    "validate_environment": [
+      "cls",
+      "values"
+    ],
+    "_get_relevant_documents": [
+      "self",
+      "query"
+    ]
+  },
+  "UserLocation": {},
+  "WebSearchOptions": {},
+  "MediaResponseOverrides": {},
+  "MediaResponse": {},
+  "logger": [],
+  "_MODEL_PROFILES": [],
+  "_get_default_model_profile": [
+    "model_name"
+  ],
+  "_is_pydantic_class": [
+    "obj"
+  ],
+  "_create_usage_metadata": [
+    "token_usage"
+  ],
+  "_RESPONSES_ONLY_ARGS": [],
+  "_RESPONSES_PASSTHROUGH_KEYS": [],
+  "_RESPONSES_DROP_KEYS": [],
+  "_is_builtin_tool": [
+    "tool"
+  ],
+  "_use_responses_api": [
+    "payload"
+  ],
+  "_get_attr": [
+    "obj",
+    "name",
+    "default"
+  ],
+  "_convert_responses_usage": [
+    "usage"
+  ],
+  "_extract_responses_text": [
+    "response"
+  ],
+  "_convert_responses_to_chat_result": [
+    "response"
+  ],
+  "PerplexityResponsesStreamError": {
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "_convert_responses_stream_event_to_chunk": [
+    "event"
+  ],
+  "ChatPerplexity": {
+    "model_config": [],
+    "lc_secrets": [
+      "self"
+    ],
+    "build_extra": [
+      "cls",
+      "values"
+    ],
+    "validate_environment": [
+      "self"
+    ],
+    "_resolve_model_profile": [
+      "self"
+    ],
+    "_default_params": [
+      "self"
+    ],
+    "_convert_message_to_dict": [
+      "self",
+      "message"
+    ],
+    "_create_message_dicts": [
+      "self",
+      "messages",
+      "stop"
+    ],
+    "_use_responses_api": [
+      "self",
+      "payload"
+    ],
+    "_to_responses_payload": [
+      "self",
+      "message_dicts",
+      "params"
+    ],
+    "_convert_delta_to_message_chunk": [
+      "self",
+      "_dict",
+      "default_class"
+    ],
+    "_stream": [
+      "self",
+      "messages",
+      "stop",
+      "run_manager"
+    ],
+    "_astream": [
+      "self",
+      "messages",
+      "stop",
+      "run_manager"
+    ],
+    "_generate": [
+      "self",
+      "messages",
+      "stop",
+      "run_manager"
+    ],
+    "_agenerate": [
+      "self",
+      "messages",
+      "stop",
+      "run_manager"
+    ],
+    "_invocation_params": [
+      "self"
+    ],
+    "_llm_type": [
+      "self"
+    ],
+    "with_structured_output": [
+      "self",
+      "schema"
+    ]
+  },
+  "initialize_client": [
+    "values"
+  ],
+  "strip_think_tags": [
+    "text"
+  ],
+  "ReasoningJsonOutputParser": {
+    "parse_result": [
+      "self",
+      "result"
+    ]
+  },
+  "ReasoningStructuredOutputParser": {
+    "parse_result": [
+      "self",
+      "result"
+    ]
+  }
+}
