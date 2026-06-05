@@ -1,0 +1,1593 @@
+{
+  "__version__": [],
+  "GA": {
+    "supported_int_types": [],
+    "supported_float_types": [],
+    "supported_int_float_types": [],
+    "__init__": [
+      "self",
+      "num_generations",
+      "num_parents_mating",
+      "fitness_func",
+      "fitness_batch_size",
+      "initial_population",
+      "sol_per_pop",
+      "num_genes",
+      "init_range_low",
+      "init_range_high",
+      "gene_type",
+      "parent_selection_type",
+      "keep_parents",
+      "keep_elitism",
+      "K_tournament",
+      "nsga3_num_divisions",
+      "crossover_type",
+      "crossover_probability",
+      "sbx_crossover_eta",
+      "mutation_type",
+      "mutation_probability",
+      "polynomial_mutation_eta",
+      "mutation_by_replacement",
+      "mutation_percent_genes",
+      "mutation_num_genes",
+      "random_mutation_min_val",
+      "random_mutation_max_val",
+      "gene_space",
+      "gene_constraint",
+      "sample_size",
+      "allow_duplicate_genes",
+      "on_start",
+      "on_fitness",
+      "on_parents",
+      "on_crossover",
+      "on_mutation",
+      "on_generation",
+      "on_stop",
+      "save_best_solutions",
+      "save_solutions",
+      "suppress_warnings",
+      "stop_criteria",
+      "parallel_processing",
+      "random_seed",
+      "logger"
+    ],
+    "save": [
+      "self",
+      "filename"
+    ],
+    "push_to_vilvik": [
+      "self"
+    ]
+  },
+  "load": [
+    "filename"
+  ],
+  "model_weights_as_vector": [
+    "model"
+  ],
+  "model_weights_as_dict": [
+    "model",
+    "weights_vector"
+  ],
+  "predict": [
+    "model",
+    "solution",
+    "data"
+  ],
+  "TorchGA": {
+    "__init__": [
+      "self",
+      "model",
+      "num_solutions"
+    ],
+    "create_population": [
+      "self"
+    ]
+  },
+  "model_weights_as_matrix": [
+    "model",
+    "weights_vector"
+  ],
+  "KerasGA": {
+    "__init__": [
+      "self",
+      "model",
+      "num_solutions"
+    ],
+    "create_population": [
+      "self"
+    ]
+  },
+  "Validation": {
+    "_validate_header": [
+      "self",
+      "logger",
+      "random_seed",
+      "suppress_warnings",
+      "mutation_by_replacement",
+      "sample_size",
+      "allow_duplicate_genes"
+    ],
+    "_validate_gene_space": [
+      "self",
+      "gene_space"
+    ],
+    "_validate_init_range": [
+      "self",
+      "init_range_low",
+      "init_range_high",
+      "num_genes",
+      "initial_population"
+    ],
+    "_validate_gene_type": [
+      "self",
+      "gene_type",
+      "num_genes",
+      "initial_population"
+    ],
+    "_build_initial_population": [
+      "self",
+      "initial_population",
+      "sol_per_pop",
+      "num_genes",
+      "gene_space",
+      "allow_duplicate_genes",
+      "gene_constraint"
+    ],
+    "_validate_mutation_range": [
+      "self",
+      "random_mutation_min_val",
+      "random_mutation_max_val"
+    ],
+    "_validate_gene_constraint": [
+      "self",
+      "gene_constraint"
+    ],
+    "_validate_crossover": [
+      "self",
+      "crossover_type",
+      "crossover_probability",
+      "sbx_crossover_eta"
+    ],
+    "_validate_mutation": [
+      "self",
+      "mutation_type",
+      "mutation_probability",
+      "mutation_num_genes",
+      "mutation_percent_genes",
+      "polynomial_mutation_eta"
+    ],
+    "_validate_nsga3_num_divisions": [
+      "self",
+      "parent_selection_type",
+      "nsga3_num_divisions"
+    ],
+    "_validate_parent_selection": [
+      "self",
+      "parent_selection_type",
+      "K_tournament",
+      "keep_parents",
+      "keep_elitism",
+      "nsga3_num_divisions"
+    ],
+    "_refresh_num_offspring": [
+      "self"
+    ],
+    "_validate_fitness_func": [
+      "self",
+      "fitness_func",
+      "fitness_batch_size"
+    ],
+    "_validate_callbacks": [
+      "self",
+      "on_start",
+      "on_fitness",
+      "on_parents",
+      "on_crossover",
+      "on_mutation",
+      "on_generation",
+      "on_stop"
+    ],
+    "_validate_stop_criteria": [
+      "self",
+      "stop_criteria"
+    ],
+    "_validate_parallel_processing": [
+      "self",
+      "parallel_processing"
+    ],
+    "_validate_footer": [
+      "self",
+      "num_generations",
+      "parent_selection_type",
+      "mutation_percent_genes",
+      "mutation_num_genes",
+      "save_best_solutions",
+      "save_solutions"
+    ],
+    "validate_parameters": [
+      "self",
+      "num_generations",
+      "num_parents_mating",
+      "fitness_func",
+      "fitness_batch_size",
+      "initial_population",
+      "sol_per_pop",
+      "num_genes",
+      "init_range_low",
+      "init_range_high",
+      "gene_type",
+      "parent_selection_type",
+      "keep_parents",
+      "keep_elitism",
+      "K_tournament",
+      "nsga3_num_divisions",
+      "crossover_type",
+      "crossover_probability",
+      "sbx_crossover_eta",
+      "mutation_type",
+      "mutation_probability",
+      "polynomial_mutation_eta",
+      "mutation_by_replacement",
+      "mutation_percent_genes",
+      "mutation_num_genes",
+      "random_mutation_min_val",
+      "random_mutation_max_val",
+      "gene_space",
+      "gene_constraint",
+      "sample_size",
+      "allow_duplicate_genes",
+      "on_start",
+      "on_fitness",
+      "on_parents",
+      "on_crossover",
+      "on_mutation",
+      "on_generation",
+      "on_stop",
+      "save_best_solutions",
+      "save_solutions",
+      "suppress_warnings",
+      "stop_criteria",
+      "parallel_processing",
+      "random_seed",
+      "logger"
+    ],
+    "validate_multi_stop_criteria": [
+      "self",
+      "stop_word",
+      "number"
+    ]
+  },
+  "ParentSelection": {
+    "__init__": [],
+    "steady_state_selection": [
+      "self",
+      "fitness",
+      "num_parents"
+    ],
+    "rank_selection": [
+      "self",
+      "fitness",
+      "num_parents"
+    ],
+    "random_selection": [
+      "self",
+      "fitness",
+      "num_parents"
+    ],
+    "tournament_selection": [
+      "self",
+      "fitness",
+      "num_parents"
+    ],
+    "roulette_wheel_selection": [
+      "self",
+      "fitness",
+      "num_parents"
+    ],
+    "wheel_cumulative_probs": [
+      "self",
+      "probs",
+      "num_parents"
+    ],
+    "stochastic_universal_selection": [
+      "self",
+      "fitness",
+      "num_parents"
+    ],
+    "tournament_selection_nsga2": [
+      "self",
+      "fitness",
+      "num_parents"
+    ],
+    "nsga2_selection": [
+      "self",
+      "fitness",
+      "num_parents"
+    ],
+    "nsga3_selection": [
+      "self",
+      "fitness",
+      "num_parents"
+    ],
+    "_nsga3_pick_critical_front_survivors": [
+      "self",
+      "accepted_indices",
+      "critical_front_indices",
+      "fitness",
+      "num_to_select"
+    ],
+    "_nsga3_build_parents": [
+      "self",
+      "final_indices",
+      "num_parents"
+    ],
+    "tournament_selection_nsga3": [
+      "self",
+      "fitness",
+      "num_parents"
+    ],
+    "_nsga3_pick_tournament_winner": [
+      "self",
+      "competitor_indices",
+      "fronts_indices",
+      "associations",
+      "distances",
+      "niche_counts"
+    ]
+  },
+  "_nsga3_validate_multi_objective_fitness": [
+    "fitness",
+    "supported_int_float_types",
+    "method_name"
+  ],
+  "_nsga3_accumulate_fronts": [
+    "pareto_fronts",
+    "num_parents"
+  ],
+  "GAEngine": {
+    "round_genes": [
+      "self",
+      "solutions"
+    ],
+    "initialize_population": [
+      "self",
+      "allow_duplicate_genes",
+      "gene_type",
+      "gene_constraint"
+    ],
+    "cal_pop_fitness": [
+      "self"
+    ],
+    "run": [
+      "self"
+    ],
+    "run_loop_head": [
+      "self",
+      "best_solution_fitness"
+    ],
+    "run_select_parents": [
+      "self",
+      "call_on_parents"
+    ],
+    "run_crossover": [
+      "self"
+    ],
+    "run_mutation": [
+      "self"
+    ],
+    "run_update_population": [
+      "self"
+    ],
+    "best_solution": [
+      "self",
+      "pop_fitness"
+    ],
+    "_bootstrap_nsga3_reference_points": [
+      "self"
+    ],
+    "_nsga3_grow_population": [
+      "self",
+      "required_size",
+      "num_objectives"
+    ],
+    "_nsga3_generate_extra_random_solutions": [
+      "self",
+      "count"
+    ],
+    "_nsga3_generate_single_random_gene": [
+      "self",
+      "gene_idx",
+      "partial_solution"
+    ],
+    "_nsga3_apply_gene_constraints": [
+      "self",
+      "population"
+    ],
+    "_nsga3_resolve_duplicate_genes": [
+      "self",
+      "population"
+    ]
+  },
+  "NSGA": {
+    "__init__": [
+      "self"
+    ],
+    "get_non_dominated_set": [
+      "self",
+      "curr_solutions"
+    ],
+    "non_dominated_sorting": [
+      "self",
+      "fitness"
+    ]
+  },
+  "LOGO_FILENAME": [],
+  "REPORT_DEFAULT_SECTIONS": [],
+  "REPORT_PLOTS": [],
+  "CONFIGURATION_GROUPS": [],
+  "Report": {
+    "__init__": [
+      "self"
+    ],
+    "generate_report": [
+      "self",
+      "filename",
+      "title",
+      "sections",
+      "include_plots",
+      "figure_size_inches",
+      "notes",
+      "page_size"
+    ]
+  },
+  "_pdf_report_import_reportlab": [],
+  "_pdf_report_import_matplotlib": [],
+  "_pdf_report_resolve_sections": [
+    "sections"
+  ],
+  "_pdf_report_resolve_page_size": [
+    "page_size",
+    "reportlab_modules"
+  ],
+  "_pdf_report_is_multi_objective": [
+    "ga"
+  ],
+  "_pdf_report_num_objectives": [
+    "ga"
+  ],
+  "_pdf_report_build_title_section": [
+    "ga",
+    "title",
+    "styles",
+    "modules"
+  ],
+  "_pdf_report_read_logo_bytes": [],
+  "_pdf_report_build_logo_image": [
+    "modules",
+    "target_width_inches"
+  ],
+  "_pdf_report_build_configuration_section": [
+    "ga",
+    "styles",
+    "modules"
+  ],
+  "_pdf_report_build_run_summary_section": [
+    "ga",
+    "styles",
+    "modules"
+  ],
+  "_pdf_report_build_best_solution_section": [
+    "ga",
+    "styles",
+    "modules"
+  ],
+  "_pdf_report_build_plots_section": [
+    "ga",
+    "include_plots",
+    "figure_size_inches",
+    "styles",
+    "modules",
+    "matplt"
+  ],
+  "_pdf_report_build_notes_section": [
+    "notes",
+    "styles",
+    "modules"
+  ],
+  "_pdf_report_select_plot_methods": [
+    "ga",
+    "include_plots"
+  ],
+  "_pdf_report_render_plot_to_png": [
+    "ga",
+    "plot_entry",
+    "figure_size_inches",
+    "matplt"
+  ],
+  "_pdf_report_format_value": [
+    "value"
+  ],
+  "NSGA2": {
+    "__init__": [
+      "self"
+    ],
+    "crowding_distance": [
+      "self",
+      "pareto_front",
+      "fitness"
+    ],
+    "sort_solutions_nsga2": [
+      "self",
+      "fitness",
+      "find_best_solution"
+    ]
+  },
+  "Mutation": {
+    "__init__": [
+      "self"
+    ],
+    "random_mutation": [
+      "self",
+      "offspring"
+    ],
+    "mutation_by_space": [
+      "self",
+      "offspring"
+    ],
+    "mutation_probs_by_space": [
+      "self",
+      "offspring"
+    ],
+    "mutation_process_gene_value": [
+      "self",
+      "solution",
+      "gene_idx",
+      "range_min",
+      "range_max",
+      "sample_size"
+    ],
+    "mutation_randomly": [
+      "self",
+      "offspring"
+    ],
+    "mutation_probs_randomly": [
+      "self",
+      "offspring"
+    ],
+    "polynomial_mutation": [
+      "self",
+      "offspring"
+    ],
+    "swap_mutation": [
+      "self",
+      "offspring"
+    ],
+    "inversion_mutation": [
+      "self",
+      "offspring"
+    ],
+    "scramble_mutation": [
+      "self",
+      "offspring"
+    ],
+    "adaptive_mutation_population_fitness": [
+      "self",
+      "offspring"
+    ],
+    "adaptive_mutation": [
+      "self",
+      "offspring"
+    ],
+    "adaptive_mutation_by_space": [
+      "self",
+      "offspring"
+    ],
+    "adaptive_mutation_randomly": [
+      "self",
+      "offspring"
+    ],
+    "adaptive_mutation_probs_by_space": [
+      "self",
+      "offspring"
+    ],
+    "adaptive_mutation_probs_randomly": [
+      "self",
+      "offspring"
+    ]
+  },
+  "NSGA3_ASF_EPSILON": [],
+  "NSGA3_INTERCEPT_NEAR_ZERO": [],
+  "NSGA3": {
+    "__init__": [
+      "self"
+    ],
+    "nsga3_generate_reference_points": [
+      "self",
+      "num_objectives",
+      "num_divisions"
+    ],
+    "nsga3_compute_ideal_point": [
+      "self",
+      "fitness"
+    ],
+    "nsga3_find_extreme_points": [
+      "self",
+      "fitness",
+      "ideal_point",
+      "epsilon"
+    ],
+    "nsga3_compute_intercepts": [
+      "self",
+      "extreme_points",
+      "ideal_point",
+      "fallback_fitness"
+    ],
+    "nsga3_normalize_fitness": [
+      "self",
+      "fitness",
+      "ideal_point",
+      "intercepts"
+    ],
+    "nsga3_associate_to_reference_points": [
+      "self",
+      "normalized",
+      "reference_points"
+    ],
+    "nsga3_niching_select": [
+      "self",
+      "critical_front_indices",
+      "critical_front_associations",
+      "critical_front_distances",
+      "accepted_associations",
+      "num_reference_points",
+      "num_to_select"
+    ]
+  },
+  "_nsga3_pick_target_reference_point": [
+    "niche_counts",
+    "critical_front_associations",
+    "remaining_positions"
+  ],
+  "_nsga3_pick_candidate_at_reference": [
+    "candidates_at_target",
+    "critical_front_distances",
+    "niche_count_at_target"
+  ],
+  "_nsga3_enumerate_compositions": [
+    "num_objectives",
+    "num_divisions"
+  ],
+  "Crossover": {
+    "__init__": [],
+    "single_point_crossover": [
+      "self",
+      "parents",
+      "offspring_size"
+    ],
+    "two_points_crossover": [
+      "self",
+      "parents",
+      "offspring_size"
+    ],
+    "uniform_crossover": [
+      "self",
+      "parents",
+      "offspring_size"
+    ],
+    "sbx_crossover": [
+      "self",
+      "parents",
+      "offspring_size"
+    ],
+    "scattered_crossover": [
+      "self",
+      "parents",
+      "offspring_size"
+    ]
+  },
+  "_to_min_fitness": [
+    "fitness"
+  ],
+  "_drop_dominated_under_min": [
+    "points"
+  ],
+  "_inclusive_hv": [
+    "point",
+    "reference_point"
+  ],
+  "_wfg_exclusive_hv": [
+    "point",
+    "others",
+    "reference_point"
+  ],
+  "_hv_under_min": [
+    "points",
+    "reference_point"
+  ],
+  "hypervolume": [
+    "fitness",
+    "reference_point"
+  ],
+  "_euclidean_distance_matrix": [
+    "a",
+    "b"
+  ],
+  "inverted_generational_distance": [
+    "fitness",
+    "reference_front"
+  ],
+  "generational_distance": [
+    "fitness",
+    "reference_front"
+  ],
+  "spacing": [
+    "fitness"
+  ],
+  "Knapsack": {
+    "num_objectives": [],
+    "gene_space": [],
+    "gene_type": [],
+    "__init__": [
+      "self",
+      "weights",
+      "values",
+      "capacity"
+    ],
+    "__call__": [
+      "self",
+      "ga",
+      "solution",
+      "sol_idx"
+    ]
+  },
+  "_DtlzProblem": {
+    "bounds": [],
+    "__init__": [
+      "self",
+      "num_objectives",
+      "num_distance_vars"
+    ]
+  },
+  "DTLZ1": {
+    "__init__": [
+      "self",
+      "num_objectives",
+      "num_distance_vars"
+    ],
+    "__call__": [
+      "self",
+      "ga",
+      "solution",
+      "sol_idx"
+    ]
+  },
+  "DTLZ2": {
+    "__init__": [
+      "self",
+      "num_objectives",
+      "num_distance_vars"
+    ],
+    "__call__": [
+      "self",
+      "ga",
+      "solution",
+      "sol_idx"
+    ]
+  },
+  "DTLZ3": {
+    "__init__": [
+      "self",
+      "num_objectives",
+      "num_distance_vars"
+    ],
+    "__call__": [
+      "self",
+      "ga",
+      "solution",
+      "sol_idx"
+    ]
+  },
+  "DTLZ4": {
+    "__init__": [
+      "self",
+      "num_objectives",
+      "num_distance_vars",
+      "alpha"
+    ],
+    "__call__": [
+      "self",
+      "ga",
+      "solution",
+      "sol_idx"
+    ]
+  },
+  "TSP": {
+    "num_objectives": [],
+    "gene_type": [],
+    "allow_duplicate_genes": [],
+    "__init__": [
+      "self",
+      "coordinates",
+      "distance_matrix"
+    ],
+    "_build_distance_matrix": [
+      "coordinates"
+    ],
+    "tour_length": [
+      "self",
+      "tour"
+    ],
+    "__call__": [
+      "self",
+      "ga",
+      "solution",
+      "sol_idx"
+    ]
+  },
+  "__all__": [],
+  "_ZdtProblem": {
+    "num_objectives": [],
+    "bounds": [],
+    "__init__": [
+      "self",
+      "num_genes"
+    ]
+  },
+  "ZDT1": {
+    "__init__": [
+      "self",
+      "num_genes"
+    ],
+    "__call__": [
+      "self",
+      "ga",
+      "solution",
+      "sol_idx"
+    ],
+    "pareto_front": [
+      "self",
+      "num_points"
+    ]
+  },
+  "ZDT2": {
+    "__init__": [
+      "self",
+      "num_genes"
+    ],
+    "__call__": [
+      "self",
+      "ga",
+      "solution",
+      "sol_idx"
+    ],
+    "pareto_front": [
+      "self",
+      "num_points"
+    ]
+  },
+  "ZDT3": {
+    "__init__": [
+      "self",
+      "num_genes"
+    ],
+    "__call__": [
+      "self",
+      "ga",
+      "solution",
+      "sol_idx"
+    ]
+  },
+  "ZDT4": {
+    "bounds": [],
+    "__init__": [
+      "self",
+      "num_genes"
+    ],
+    "__call__": [
+      "self",
+      "ga",
+      "solution",
+      "sol_idx"
+    ],
+    "pareto_front": [
+      "self",
+      "num_points"
+    ]
+  },
+  "ZDT6": {
+    "__init__": [
+      "self",
+      "num_genes"
+    ],
+    "__call__": [
+      "self",
+      "ga",
+      "solution",
+      "sol_idx"
+    ],
+    "pareto_front": [
+      "self",
+      "num_points"
+    ]
+  },
+  "_SingleObjectiveProblem": {
+    "num_objectives": [],
+    "__init__": [
+      "self",
+      "num_genes"
+    ]
+  },
+  "Sphere": {
+    "bounds": [],
+    "__init__": [
+      "self",
+      "num_genes"
+    ],
+    "__call__": [
+      "self",
+      "ga",
+      "solution",
+      "sol_idx"
+    ]
+  },
+  "Rastrigin": {
+    "bounds": [],
+    "__init__": [
+      "self",
+      "num_genes"
+    ],
+    "__call__": [
+      "self",
+      "ga",
+      "solution",
+      "sol_idx"
+    ]
+  },
+  "Rosenbrock": {
+    "bounds": [],
+    "__init__": [
+      "self",
+      "num_genes"
+    ],
+    "__call__": [
+      "self",
+      "ga",
+      "solution",
+      "sol_idx"
+    ]
+  },
+  "Griewank": {
+    "bounds": [],
+    "__init__": [
+      "self",
+      "num_genes"
+    ],
+    "__call__": [
+      "self",
+      "ga",
+      "solution",
+      "sol_idx"
+    ]
+  },
+  "Schwefel": {
+    "bounds": [],
+    "__init__": [
+      "self",
+      "num_genes"
+    ],
+    "__call__": [
+      "self",
+      "ga",
+      "solution",
+      "sol_idx"
+    ]
+  },
+  "Ackley": {
+    "bounds": [],
+    "__init__": [
+      "self",
+      "num_genes"
+    ],
+    "__call__": [
+      "self",
+      "ga",
+      "solution",
+      "sol_idx"
+    ]
+  },
+  "Himmelblau": {
+    "bounds": [],
+    "__init__": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "ga",
+      "solution",
+      "sol_idx"
+    ]
+  },
+  "validate_network_parameters": [
+    "num_neurons_input",
+    "num_neurons_output",
+    "num_neurons_hidden_layers",
+    "output_activation",
+    "hidden_activations",
+    "num_solutions"
+  ],
+  "create_network": [
+    "num_neurons_input",
+    "num_neurons_output",
+    "num_neurons_hidden_layers",
+    "output_activation",
+    "hidden_activations",
+    "parameters_validated"
+  ],
+  "population_as_vectors": [
+    "population_networks"
+  ],
+  "population_as_matrices": [
+    "population_networks",
+    "population_vectors"
+  ],
+  "GANN": {
+    "create_population": [
+      "self"
+    ],
+    "__init__": [
+      "self",
+      "num_solutions",
+      "num_neurons_input",
+      "num_neurons_output",
+      "num_neurons_hidden_layers",
+      "output_activation",
+      "hidden_activations"
+    ],
+    "update_population_trained_weights": [
+      "self",
+      "population_trained_weights"
+    ]
+  },
+  "supported_activation_functions": [],
+  "layers_weights": [
+    "model",
+    "initial"
+  ],
+  "layers_weights_as_matrix": [
+    "model",
+    "vector_weights"
+  ],
+  "layers_weights_as_vector": [
+    "model",
+    "initial"
+  ],
+  "update_layers_trained_weights": [
+    "model",
+    "final_weights"
+  ],
+  "CustomLogger": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "Input2D": {
+    "__init__": [
+      "self",
+      "input_shape",
+      "logger"
+    ]
+  },
+  "Conv2D": {
+    "__init__": [
+      "self",
+      "num_filters",
+      "kernel_size",
+      "previous_layer",
+      "activation_function",
+      "logger"
+    ],
+    "conv_": [
+      "self",
+      "input2D",
+      "conv_filter"
+    ],
+    "conv": [
+      "self",
+      "input2D"
+    ]
+  },
+  "AveragePooling2D": {
+    "__init__": [
+      "self",
+      "pool_size",
+      "previous_layer",
+      "stride",
+      "logger"
+    ],
+    "average_pooling": [
+      "self",
+      "input2D"
+    ]
+  },
+  "MaxPooling2D": {
+    "__init__": [
+      "self",
+      "pool_size",
+      "previous_layer",
+      "stride",
+      "logger"
+    ],
+    "max_pooling": [
+      "self",
+      "input2D"
+    ]
+  },
+  "ReLU": {
+    "__init__": [
+      "self",
+      "previous_layer",
+      "logger"
+    ],
+    "relu_layer": [
+      "self",
+      "layer_input"
+    ]
+  },
+  "Sigmoid": {
+    "__init__": [
+      "self",
+      "previous_layer",
+      "logger"
+    ],
+    "sigmoid_layer": [
+      "self",
+      "layer_input"
+    ]
+  },
+  "Flatten": {
+    "__init__": [
+      "self",
+      "previous_layer",
+      "logger"
+    ],
+    "flatten": [
+      "self",
+      "input2D"
+    ]
+  },
+  "Dense": {
+    "__init__": [
+      "self",
+      "num_neurons",
+      "previous_layer",
+      "activation_function",
+      "logger"
+    ],
+    "dense_layer": [
+      "self",
+      "layer_input"
+    ]
+  },
+  "Model": {
+    "__init__": [
+      "self",
+      "last_layer",
+      "epochs",
+      "learning_rate",
+      "logger"
+    ],
+    "get_layers": [
+      "self"
+    ],
+    "train": [
+      "self",
+      "train_inputs",
+      "train_outputs"
+    ],
+    "feed_sample": [
+      "self",
+      "sample"
+    ],
+    "update_weights": [
+      "self",
+      "network_error"
+    ],
+    "predict": [
+      "self",
+      "data_inputs"
+    ],
+    "summary": [
+      "self"
+    ]
+  },
+  "get_matplotlib": [],
+  "Plot": {
+    "__init__": [],
+    "plot_fitness": [
+      "self",
+      "title",
+      "xlabel",
+      "ylabel",
+      "linewidth",
+      "font_size",
+      "plot_type",
+      "color",
+      "label",
+      "save_dir"
+    ],
+    "plot_new_solution_rate": [
+      "self",
+      "title",
+      "xlabel",
+      "ylabel",
+      "linewidth",
+      "font_size",
+      "plot_type",
+      "color",
+      "save_dir"
+    ],
+    "plot_genes": [
+      "self",
+      "title",
+      "xlabel",
+      "ylabel",
+      "linewidth",
+      "font_size",
+      "plot_type",
+      "graph_type",
+      "fill_color",
+      "color",
+      "solutions",
+      "save_dir"
+    ],
+    "plot_pareto_front_curve": [
+      "self",
+      "title",
+      "xlabel",
+      "ylabel",
+      "zlabel",
+      "linewidth",
+      "font_size",
+      "label",
+      "color",
+      "color_fitness",
+      "grid",
+      "alpha",
+      "marker",
+      "save_dir"
+    ],
+    "_num_objectives_or_raise": [
+      "self",
+      "method_name"
+    ],
+    "_last_generation_pareto_front": [
+      "self"
+    ],
+    "_require_save_solutions": [
+      "self",
+      "method_name"
+    ],
+    "_per_generation_fitness": [
+      "self"
+    ],
+    "_per_generation_solutions": [
+      "self"
+    ],
+    "plot_pareto_front_pcp": [
+      "self",
+      "title",
+      "xlabel",
+      "ylabel",
+      "linewidth",
+      "font_size",
+      "color",
+      "alpha",
+      "grid",
+      "save_dir"
+    ],
+    "plot_pareto_front_scatter_matrix": [
+      "self",
+      "title",
+      "font_size",
+      "color",
+      "marker",
+      "alpha",
+      "grid",
+      "save_dir"
+    ],
+    "plot_pareto_front_heatmap": [
+      "self",
+      "title",
+      "xlabel",
+      "ylabel",
+      "font_size",
+      "cmap",
+      "sort_by",
+      "save_dir"
+    ],
+    "plot_fitness_band": [
+      "self",
+      "title",
+      "xlabel",
+      "ylabel",
+      "font_size",
+      "color",
+      "band_alpha",
+      "linewidth",
+      "objective_index",
+      "grid",
+      "save_dir"
+    ],
+    "plot_non_dominated_hypervolume": [
+      "self",
+      "reference_point",
+      "title",
+      "xlabel",
+      "ylabel",
+      "font_size",
+      "color",
+      "linewidth",
+      "grid",
+      "save_dir"
+    ],
+    "plot_population_diversity": [
+      "self",
+      "title",
+      "xlabel",
+      "ylabel",
+      "font_size",
+      "color",
+      "linewidth",
+      "grid",
+      "save_dir"
+    ],
+    "plot_pareto_front_evolution": [
+      "self",
+      "every_k",
+      "title",
+      "xlabel",
+      "ylabel",
+      "zlabel",
+      "font_size",
+      "cmap",
+      "marker",
+      "alpha",
+      "grid",
+      "save_dir"
+    ]
+  },
+  "Unique": {
+    "solve_duplicate_genes_randomly": [
+      "self",
+      "solution",
+      "min_val",
+      "max_val",
+      "mutation_by_replacement",
+      "gene_type",
+      "sample_size"
+    ],
+    "solve_duplicate_genes_by_space": [
+      "self",
+      "solution",
+      "gene_type",
+      "mutation_by_replacement",
+      "sample_size",
+      "build_initial_pop"
+    ],
+    "unique_int_gene_from_range": [
+      "self",
+      "solution",
+      "gene_index",
+      "min_val",
+      "max_val",
+      "mutation_by_replacement",
+      "gene_type",
+      "step"
+    ],
+    "unique_float_gene_from_range": [
+      "self",
+      "solution",
+      "gene_index",
+      "min_val",
+      "max_val",
+      "mutation_by_replacement",
+      "gene_type",
+      "sample_size"
+    ],
+    "select_unique_value": [
+      "self",
+      "gene_values",
+      "solution",
+      "gene_index"
+    ],
+    "unique_genes_by_space": [
+      "self",
+      "solution",
+      "gene_type",
+      "not_unique_indices",
+      "mutation_by_replacement",
+      "sample_size",
+      "build_initial_pop"
+    ],
+    "unique_gene_by_space": [
+      "self",
+      "solution",
+      "gene_idx",
+      "gene_type",
+      "mutation_by_replacement",
+      "sample_size",
+      "build_initial_pop"
+    ],
+    "find_two_duplicates": [
+      "self",
+      "solution",
+      "gene_space_unpacked"
+    ],
+    "unpack_gene_space": [
+      "self",
+      "range_min",
+      "range_max",
+      "sample_size_from_inf_range"
+    ],
+    "solve_duplicates_deeply": [
+      "self",
+      "solution"
+    ]
+  },
+  "Helper": {
+    "summary": [
+      "self",
+      "line_length",
+      "fill_character",
+      "line_character",
+      "line_character2",
+      "columns_equal_len",
+      "print_step_parameters",
+      "print_parameters_summary"
+    ],
+    "initialize_parents_array": [
+      "self",
+      "shape"
+    ],
+    "change_population_dtype_and_round": [
+      "self",
+      "population"
+    ],
+    "change_gene_dtype_and_round": [
+      "self",
+      "gene_index",
+      "gene_value"
+    ],
+    "mutation_change_gene_dtype_and_round": [
+      "self",
+      "random_value",
+      "gene_index",
+      "gene_value",
+      "mutation_by_replacement"
+    ],
+    "validate_gene_constraint_callable_output": [
+      "self",
+      "selected_values",
+      "values"
+    ],
+    "filter_gene_values_by_constraint": [
+      "self",
+      "values",
+      "solution",
+      "gene_idx"
+    ],
+    "get_gene_dtype": [
+      "self",
+      "gene_index"
+    ],
+    "get_random_mutation_range": [
+      "self",
+      "gene_index"
+    ],
+    "get_initial_population_range": [
+      "self",
+      "gene_index"
+    ],
+    "generate_gene_value_from_space": [
+      "self",
+      "gene_idx",
+      "mutation_by_replacement",
+      "solution",
+      "gene_value",
+      "sample_size"
+    ],
+    "generate_gene_value_randomly": [
+      "self",
+      "range_min",
+      "range_max",
+      "gene_value",
+      "gene_idx",
+      "mutation_by_replacement",
+      "sample_size",
+      "step"
+    ],
+    "generate_gene_value": [
+      "self",
+      "gene_value",
+      "gene_idx",
+      "mutation_by_replacement",
+      "solution",
+      "range_min",
+      "range_max",
+      "sample_size",
+      "step"
+    ],
+    "get_valid_gene_constraint_values": [
+      "self",
+      "range_min",
+      "range_max",
+      "gene_value",
+      "gene_idx",
+      "mutation_by_replacement",
+      "solution",
+      "sample_size",
+      "step"
+    ]
+  },
+  "sigmoid": [
+    "sop"
+  ],
+  "relu": [
+    "sop"
+  ],
+  "softmax": [
+    "layer_outputs"
+  ],
+  "GACNN": {
+    "create_population": [
+      "self"
+    ],
+    "__init__": [
+      "self",
+      "model",
+      "num_solutions"
+    ],
+    "update_population_trained_weights": [
+      "self",
+      "population_trained_weights"
+    ]
+  },
+  "layers_activations": [
+    "last_layer"
+  ],
+  "train": [
+    "num_epochs",
+    "last_layer",
+    "data_inputs",
+    "data_outputs",
+    "problem_type",
+    "learning_rate"
+  ],
+  "update_weights": [
+    "weights",
+    "network_error",
+    "learning_rate"
+  ],
+  "to_vector": [
+    "array"
+  ],
+  "to_array": [
+    "vector",
+    "shape"
+  ],
+  "InputLayer": {
+    "__init__": [
+      "self",
+      "num_inputs"
+    ]
+  },
+  "DenseLayer": {
+    "__init__": [
+      "self",
+      "num_neurons",
+      "previous_layer",
+      "activation_function"
+    ]
+  }
+}
