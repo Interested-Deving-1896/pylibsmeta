@@ -1,0 +1,1319 @@
+{
+  "DataFairnessWarning": {},
+  "__name__": [],
+  "__version__": [],
+  "_base_version": [],
+  "_get_sys_info": [],
+  "_get_deps_info": [],
+  "show_versions": [],
+  "_SPARSE_OUTPUT_FALSE": [],
+  "_get_soft_predictions": [
+    "estimator",
+    "X",
+    "predict_method"
+  ],
+  "_filter_kwargs": [
+    "func",
+    "kwargs"
+  ],
+  "validate_data": [
+    "estimator",
+    "X"
+  ],
+  "check_array": [
+    "X"
+  ],
+  "patched_more_tags": [
+    "estimator",
+    "expected_failed_checks"
+  ],
+  "parametrize_with_checks": [
+    "estimators"
+  ],
+  "logger": [],
+  "_KW_SENSITIVE_FEATURES": [],
+  "_KW_CONTROL_FEATURES": [],
+  "_MESSAGE_X_NONE": [],
+  "_MESSAGE_Y_NONE": [],
+  "_MESSAGE_SENSITIVE_FEATURES_NONE": [],
+  "_MESSAGE_X_Y_ROWS": [],
+  "_MESSAGE_X_SENSITIVE_ROWS": [],
+  "_MESSAGE_RATIO_NOT_IN_RANGE": [],
+  "_INPUT_DATA_FORMAT_ERROR_MESSAGE": [],
+  "_EMPTY_INPUT_ERROR_MESSAGE": [],
+  "_LABELS_NOT_0_1_ERROR_MESSAGE": [],
+  "_MORE_THAN_ONE_COLUMN_ERROR_MESSAGE": [],
+  "_NOT_ALLOWED_TYPE_ERROR_MESSAGE": [],
+  "_NDARRAY_NOT_TWO_DIMENSIONAL_ERROR_MESSAGE": [],
+  "_NOT_ALLOWED_MATRIX_TYPE_ERROR_MESSAGE": [],
+  "_INCONSISTENT_ARRAY_LENGTH": [],
+  "_ALLOWED_INPUT_TYPES_X": [],
+  "_ALLOWED_INPUT_TYPES_SENSITIVE_FEATURES": [],
+  "_ALLOWED_INPUT_TYPES_Y": [],
+  "_MERGE_COLUMN_SEPARATOR": [],
+  "_validate_and_reformat_input": [
+    "X",
+    "y",
+    "expect_y",
+    "expect_sensitive_features",
+    "enforce_binary_labels"
+  ],
+  "_merge_columns": [
+    "feature_columns"
+  ],
+  "_ARRAY_NOT_1D": [],
+  "_convert_to_ndarray_and_squeeze": [
+    "target"
+  ],
+  "_convert_to_ndarray_1d": [
+    "target"
+  ],
+  "_debug_colors": [],
+  "_debug_ncolors": [],
+  "_debug_colormap": [],
+  "_get_debug_color": [
+    "key"
+  ],
+  "_plot_solution": [
+    "ax",
+    "x_best",
+    "y_best",
+    "solution_label",
+    "xlabel",
+    "ylabel"
+  ],
+  "_plot_overall_tradeoff_curve": [
+    "ax",
+    "overall_tradeoff_curve"
+  ],
+  "_plot_overlap": [
+    "ax",
+    "x_grid",
+    "y_min"
+  ],
+  "_plot_curve": [
+    "ax",
+    "sensitive_feature",
+    "x_col",
+    "y_col",
+    "points"
+  ],
+  "_raise_if_not_threshold_optimizer": [
+    "obj"
+  ],
+  "plot_threshold_optimizer": [
+    "threshold_optimizer",
+    "ax",
+    "show_plot"
+  ],
+  "_plot_solution_with_tol": [
+    "threshold_optimizer",
+    "ax"
+  ],
+  "maximize_objective_with_tolerance": [
+    "dataframes",
+    "weights",
+    "tol",
+    "x_col",
+    "y_col"
+  ],
+  "DEGENERATE_LABELS_ERROR_MESSAGE": [],
+  "METRIC_DICT": [],
+  "_extend_confusion_matrix": [],
+  "_tradeoff_curve": [
+    "data",
+    "sensitive_feature_value",
+    "flip",
+    "x_metric",
+    "y_metric"
+  ],
+  "_filter_points_to_get_convex_hull": [
+    "points_sorted"
+  ],
+  "_interpolate_curve": [
+    "data",
+    "x_col",
+    "y_col",
+    "content_col",
+    "x_grid"
+  ],
+  "_get_interpolation_indices": [
+    "x_grid",
+    "x_values"
+  ],
+  "_calculate_tradeoff_points": [
+    "data",
+    "sensitive_feature_value",
+    "flip",
+    "x_metric",
+    "y_metric"
+  ],
+  "_get_scores_labels_and_counts": [
+    "data"
+  ],
+  "_get_counts": [
+    "labels"
+  ],
+  "__all__": [],
+  "ThresholdOperation": {
+    "__init__": [
+      "self",
+      "operator",
+      "threshold"
+    ],
+    "threshold": [
+      "self"
+    ],
+    "operator": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "y_hat"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "SCORE_KEY": [],
+  "LABEL_KEY": [],
+  "SENSITIVE_FEATURE_KEY": [],
+  "OUTPUT_SEPARATOR": [],
+  "_MATPLOTLIB_IMPORT_ERROR_MESSAGE": [],
+  "BASE_ESTIMATOR_NONE_ERROR_MESSAGE": [],
+  "BASE_ESTIMATOR_NOT_FITTED_WARNING": [],
+  "InterpolatedThresholder": {
+    "__init__": [
+      "self",
+      "estimator",
+      "interpolation_dict",
+      "prefit",
+      "predict_method"
+    ],
+    "fit": [
+      "self",
+      "X",
+      "y"
+    ],
+    "_pmf_predict": [
+      "self",
+      "X"
+    ],
+    "predict": [
+      "self",
+      "X"
+    ]
+  },
+  "DIFFERENT_INPUT_LENGTH_ERROR_MESSAGE": [],
+  "NON_BINARY_LABELS_ERROR_MESSAGE": [],
+  "MULTIPLE_DATA_COLUMNS_ERROR_MESSAGE": [],
+  "SENSITIVE_FEATURE_NAME_CONFLICT_DETECTED_ERROR_MESSAGE": [],
+  "SCORES_DATA_TOO_MANY_COLUMNS_ERROR_MESSAGE": [],
+  "UNEXPECTED_DATA_TYPE_ERROR_MESSAGE": [],
+  "SIMPLE_CONSTRAINTS": [],
+  "ALL_CONSTRAINTS": [],
+  "OBJECTIVES_FOR_SIMPLE_CONSTRAINTS": [],
+  "OBJECTIVES_FOR_EQUALIZED_ODDS": [],
+  "NO_CONTROL_FEATURES": [],
+  "NOT_SUPPORTED_CONSTRAINTS_ERROR_MESSAGE": [],
+  "NOT_SUPPORTED_OBJECTIVES_FOR_SIMPLE_CONSTRAINTS_ERROR_MESSAGE": [],
+  "NOT_SUPPORTED_OBJECTIVES_FOR_EQUALIZED_ODDS_ERROR_MESSAGE": [],
+  "ThresholdOptimizer": {
+    "__init__": [
+      "self"
+    ],
+    "fit": [
+      "self",
+      "X",
+      "y"
+    ],
+    "predict": [
+      "self",
+      "X"
+    ],
+    "_pmf_predict": [
+      "self",
+      "X"
+    ],
+    "_threshold_optimization_for_simple_constraints": [
+      "self",
+      "sensitive_features",
+      "labels",
+      "scores"
+    ],
+    "_threshold_optimization_for_equalized_odds": [
+      "self",
+      "sensitive_features",
+      "labels",
+      "scores"
+    ]
+  },
+  "_reformat_and_group_data": [
+    "sensitive_features",
+    "labels",
+    "scores",
+    "sensitive_feature_names"
+  ],
+  "_reformat_data_into_dict": [
+    "key",
+    "data_dict",
+    "additional_data"
+  ],
+  "_VALID_ERROR_STRING": [],
+  "_VALID_GROUPING_FUNCTION": [],
+  "_INVALID_ERRORS_VALUE_ERROR_MESSAGE": [],
+  "_INVALID_GROUPING_FUNCTION_ERROR_MESSAGE": [],
+  "_MF_CONTAINS_NON_SCALAR_ERROR_MESSAGE": [],
+  "apply_to_dataframe": [
+    "data",
+    "metric_functions",
+    "include_groups"
+  ],
+  "DisaggregatedResult": {
+    "__init__": [
+      "self",
+      "overall",
+      "by_group"
+    ],
+    "overall": [
+      "self"
+    ],
+    "by_group": [
+      "self"
+    ],
+    "apply_grouping": [
+      "self",
+      "grouping_function",
+      "control_feature_names",
+      "errors"
+    ],
+    "difference": [
+      "self",
+      "control_feature_names",
+      "method",
+      "errors"
+    ],
+    "ratio": [
+      "self",
+      "control_feature_names",
+      "method",
+      "errors"
+    ],
+    "create": [],
+    "_apply_functions": []
+  },
+  "METRICS_SPEC": [],
+  "_generated_metric_dict": [],
+  "_METRIC_FRAME_INVALID_ERROR": [],
+  "_METRIC_LENGTH_ZERO_ERROR": [],
+  "_METRICS_NOT_LIST_OR_STR_ERROR": [],
+  "_CONF_INTERVALS_MUST_BE_ARRAY": [],
+  "_CONF_INTERVALS_FLIPPED_BOUNDS_ERROR": [],
+  "_is_arraylike": [
+    "input_"
+  ],
+  "_build_legend": [
+    "ax",
+    "kind",
+    "legend_label"
+  ],
+  "_plot_df": [
+    "df",
+    "metrics",
+    "kind",
+    "subplots",
+    "legend_label",
+    "df_all_errors"
+  ],
+  "plot_metric_frame": [
+    "metric_frame"
+  ],
+  "_EMPTY_INPUT_PREDICTIONS_ERROR_MESSAGE": [],
+  "_TOO_MANY_UNIQUE_Y_VALS": [],
+  "_RESTRICTED_VALS_IF_POS_LABEL_NONE": [],
+  "_NEED_POS_LABEL_IN_Y_VALS": [],
+  "_get_labels_for_confusion_matrix": [
+    "labels",
+    "pos_label"
+  ],
+  "true_positive_rate": [
+    "y_true",
+    "y_pred",
+    "sample_weight",
+    "pos_label"
+  ],
+  "true_negative_rate": [
+    "y_true",
+    "y_pred",
+    "sample_weight",
+    "pos_label"
+  ],
+  "false_positive_rate": [
+    "y_true",
+    "y_pred",
+    "sample_weight",
+    "pos_label"
+  ],
+  "false_negative_rate": [
+    "y_true",
+    "y_pred",
+    "sample_weight",
+    "pos_label"
+  ],
+  "count": [
+    "y_true",
+    "y_pred"
+  ],
+  "mean_prediction": [
+    "y_true",
+    "y_pred",
+    "sample_weight"
+  ],
+  "selection_rate": [
+    "y_true",
+    "y_pred"
+  ],
+  "BOOTSTRAP_QUANTILE_ERROR": [],
+  "generate_single_bootstrap_sample": [],
+  "generate_bootstrap_samples": [],
+  "_calc_series_quantiles": [],
+  "_calc_dataframe_quantiles": [],
+  "_align_sample_indices": [
+    "samples"
+  ],
+  "calculate_pandas_quantiles": [
+    "quantiles",
+    "bootstrap_samples"
+  ],
+  "_SERIES_NAME_NOT_STRING": [],
+  "GroupFeature": {
+    "__init__": [
+      "self",
+      "base_name",
+      "feature_vector",
+      "index"
+    ]
+  },
+  "plot_model_comparison": [],
+  "_SF_DICT_CONVERSION_FAILURE": [],
+  "_FEATURE_LIST_NONSCALAR": [],
+  "_FEATURE_DF_COLUMN_BAD_NAME": [],
+  "_DUPLICATE_FEATURE_NAME": [],
+  "_TOO_MANY_FEATURE_DIMS": [],
+  "_SAMPLE_PARAMS_NOT_DICT": [],
+  "_SAMPLE_PARAM_KEYS_NOT_IN_FUNC_DICT": [],
+  "_COMPARE_METHODS": [],
+  "_INVALID_COMPARE_METHOD": [],
+  "_BOOTSTRAP_NEED_N_AND_CI": [],
+  "_BOOTSTRAP_N_BOOT_INT_GT_ZERO": [],
+  "_BOOTSTRAP_CI_INVALID": [],
+  "_BOOTSTRAP_NOT_INITIALIZED": [],
+  "MetricFrame": {
+    "__init__": [
+      "self"
+    ],
+    "_extract_result": [
+      "self",
+      "underlying_result",
+      "no_control_levels"
+    ],
+    "_none_to_nan": [
+      "self",
+      "target"
+    ],
+    "_populate_results": [
+      "self",
+      "raw_result"
+    ],
+    "_populate_results_ci": [
+      "self",
+      "bootstrap_samples",
+      "ci_quantiles"
+    ],
+    "overall": [
+      "self"
+    ],
+    "overall_ci": [
+      "self"
+    ],
+    "by_group": [
+      "self"
+    ],
+    "by_group_ci": [
+      "self"
+    ],
+    "control_levels": [
+      "self"
+    ],
+    "sensitive_levels": [
+      "self"
+    ],
+    "ci_quantiles": [
+      "self"
+    ],
+    "n_boot": [
+      "self"
+    ],
+    "_group": [
+      "self",
+      "disagg_result",
+      "grouping_function",
+      "errors"
+    ],
+    "_group_ci": [
+      "self",
+      "bootstrap_samples",
+      "ci_quantiles",
+      "grouping_function"
+    ],
+    "group_max": [
+      "self",
+      "errors"
+    ],
+    "group_max_ci": [
+      "self"
+    ],
+    "group_min": [
+      "self",
+      "errors"
+    ],
+    "group_min_ci": [
+      "self"
+    ],
+    "difference": [
+      "self",
+      "method",
+      "errors"
+    ],
+    "difference_ci": [
+      "self",
+      "method"
+    ],
+    "ratio": [
+      "self",
+      "method",
+      "errors"
+    ],
+    "ratio_ci": [
+      "self",
+      "method"
+    ],
+    "_get_annotated_metric_functions": [
+      "self",
+      "metric",
+      "sample_params",
+      "all_data"
+    ],
+    "_construct_annotated_metric_function": [
+      "self",
+      "func",
+      "name",
+      "sample_params",
+      "all_data"
+    ],
+    "_process_features": [
+      "self",
+      "base_name",
+      "features",
+      "sample_array"
+    ],
+    "_check_bootstrap_initialized": [
+      "self"
+    ]
+  },
+  "_module_obj": [],
+  "_core": [],
+  "_fairness": [],
+  "_base_metrics": [],
+  "demographic_parity_difference": [
+    "y_true",
+    "y_pred"
+  ],
+  "demographic_parity_ratio": [
+    "y_true",
+    "y_pred"
+  ],
+  "equalized_odds_difference": [
+    "y_true",
+    "y_pred"
+  ],
+  "equalized_odds_ratio": [
+    "y_true",
+    "y_pred"
+  ],
+  "_get_eo_frame": [
+    "y_true",
+    "y_pred",
+    "sensitive_features",
+    "sample_weight"
+  ],
+  "equal_opportunity_difference": [
+    "y_true",
+    "y_pred"
+  ],
+  "equal_opportunity_ratio": [
+    "y_true",
+    "y_pred"
+  ],
+  "R": [],
+  "_DEFAULT_NAME": [],
+  "_METRIC_FUNCTION_NONE": [],
+  "_METRIC_FUNCTION_NOT_CALLABLE": [],
+  "AnnotatedMetricFunction": {
+    "__init__": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "df"
+    ]
+  },
+  "transform_options": [],
+  "parameters_for_transforms": [],
+  "_METRIC_CALLABLE_ERROR": [],
+  "_METHOD_ARG_ERROR": [],
+  "_INVALID_TRANSFORM": [],
+  "_DerivedMetric": {
+    "__init__": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "y_true",
+      "y_pred"
+    ]
+  },
+  "make_derived_metric": [],
+  "FloatTransformer": {
+    "__init__": [
+      "self",
+      "transformer"
+    ],
+    "_check": [
+      "self",
+      "X",
+      "dtype",
+      "init"
+    ],
+    "fit": [
+      "self",
+      "X",
+      "y"
+    ],
+    "transform": [
+      "self",
+      "X"
+    ],
+    "inverse_transform": [
+      "self",
+      "y"
+    ]
+  },
+  "tensorflow": [],
+  "keras": [],
+  "TensorflowEngine": {
+    "__init__": [
+      "self",
+      "base",
+      "X",
+      "Y",
+      "A"
+    ],
+    "evaluate": [
+      "self",
+      "X"
+    ],
+    "train_step": [
+      "self",
+      "X",
+      "Y",
+      "A"
+    ],
+    "get_optimizer": [
+      "self",
+      "optim_param",
+      "model"
+    ],
+    "get_loss": [
+      "self",
+      "dist_type"
+    ],
+    "get_model": [
+      "self",
+      "list_nodes"
+    ]
+  },
+  "torch": [],
+  "PytorchEngine": {
+    "__init__": [
+      "self",
+      "base",
+      "X",
+      "Y",
+      "A"
+    ],
+    "__move_model__": [
+      "self"
+    ],
+    "shuffle": [
+      "self",
+      "X",
+      "Y",
+      "A"
+    ],
+    "evaluate": [
+      "self",
+      "X"
+    ],
+    "train_step": [
+      "self",
+      "X",
+      "Y",
+      "A"
+    ],
+    "get_optimizer": [
+      "self",
+      "optim_param",
+      "model"
+    ],
+    "get_loss": [
+      "self",
+      "dist_type"
+    ],
+    "get_model": [
+      "self",
+      "list_nodes"
+    ],
+    "validate_input": [
+      "self",
+      "X",
+      "Y",
+      "A"
+    ]
+  },
+  "_IMPORT_ERROR_MESSAGE": [],
+  "_ARG_ERROR_MESSAGE": [],
+  "_KWARG_ERROR_MESSAGE": [],
+  "_TYPE_CHECK_ERROR": [],
+  "_TYPE_COMPLIANCE_ERROR": [],
+  "_INVALID_DATA": [],
+  "_INVALID_OHE": [],
+  "_PREDICTION_FUNCTION_AMBIGUOUS": [],
+  "_DIST_TYPE_NOT_IMPLEMENTED": [],
+  "_PROGRESS_UPDATE": [],
+  "_NOT_IMPLEMENTED": [],
+  "_NO_DATA": [],
+  "_NO_LOSS": [],
+  "_MODEL_UNRECOGNIZED_STR": [],
+  "_MODEL_UNRECOGNIZED_ITEM": [],
+  "_TYPE_UNKNOWN_ERROR": [],
+  "_LIST_MODEL_UNSUPPORTED": [],
+  "_CALLBACK_RETURNS_ERROR": [],
+  "BackendEngine": {
+    "model_class": [],
+    "optim_class": [],
+    "__init__": [
+      "self",
+      "base",
+      "X",
+      "Y",
+      "A"
+    ],
+    "__init_model__": [
+      "self",
+      "model_param",
+      "loss_param",
+      "X_features",
+      "y_features",
+      "name"
+    ],
+    "__init_loss__": [
+      "self",
+      "loss_param",
+      "name"
+    ],
+    "__init_optimizers__": [
+      "self",
+      "optim_param",
+      "model",
+      "name"
+    ],
+    "shuffle": [
+      "self",
+      "X",
+      "Y",
+      "A"
+    ],
+    "evaluate": [
+      "self",
+      "X"
+    ],
+    "train_step": [
+      "self",
+      "X",
+      "Y",
+      "A"
+    ],
+    "get_optimizer": [
+      "self",
+      "optim_param",
+      "model"
+    ],
+    "get_loss": [
+      "self",
+      "dist_type"
+    ],
+    "get_model": [
+      "self",
+      "list_nodes"
+    ]
+  },
+  "_AdversarialFairness": {
+    "__init__": [
+      "self"
+    ],
+    "__setup": [
+      "self",
+      "X",
+      "y",
+      "A"
+    ],
+    "fit": [
+      "self",
+      "X",
+      "y"
+    ],
+    "partial_fit": [
+      "self",
+      "X",
+      "y"
+    ],
+    "_raw_predict": [
+      "self",
+      "X"
+    ],
+    "predict": [
+      "self",
+      "X"
+    ],
+    "_validate_input": [
+      "self",
+      "X",
+      "y",
+      "A",
+      "reinitialize"
+    ],
+    "_validate_backend": [
+      "self"
+    ],
+    "_binary_predictor_function": [
+      "self",
+      "pred"
+    ],
+    "_set_predictor_function": [
+      "self"
+    ],
+    "__sklearn_is_fitted__": [
+      "self"
+    ]
+  },
+  "AdversarialFairnessClassifier": {
+    "__init__": [
+      "self"
+    ],
+    "_more_tags": [
+      "self"
+    ],
+    "__sklearn_tags__": [
+      "self"
+    ]
+  },
+  "AdversarialFairnessRegressor": {
+    "__init__": [
+      "self"
+    ],
+    "_more_tags": [
+      "self"
+    ],
+    "__sklearn_tags__": [
+      "self"
+    ]
+  },
+  "fetch_diabetes_hospital": [],
+  "fetch_boston": [],
+  "fetch_bank_marketing": [],
+  "fetch_acs_income": [],
+  "_DOWNLOAD_DIRECTORY_NAME": [],
+  "fetch_adult": [],
+  "fetch_credit_card": [],
+  "LOGGER": [],
+  "PrototypeRepresentationLearner": {
+    "__init__": [
+      "self",
+      "n_prototypes",
+      "reconstruct_weight",
+      "target_weight",
+      "fairness_weight",
+      "random_state",
+      "tol",
+      "max_iter"
+    ],
+    "fit": [
+      "self",
+      "X",
+      "y"
+    ],
+    "_optimize": [
+      "self",
+      "X",
+      "y",
+      "sensitive_features",
+      "random_state"
+    ],
+    "_objective": [
+      "self",
+      "x",
+      "X",
+      "y",
+      "sensitive_features"
+    ],
+    "transform": [
+      "self",
+      "X"
+    ],
+    "predict_proba": [
+      "self",
+      "X"
+    ],
+    "predict": [
+      "self",
+      "X"
+    ],
+    "prototypes_": [
+      "self"
+    ],
+    "alpha_": [
+      "self"
+    ],
+    "_get_latent_mapping": [
+      "X",
+      "prototypes",
+      "dimension_weights"
+    ],
+    "_validate_X_y": [
+      "self",
+      "X",
+      "y"
+    ],
+    "__sklearn_tags__": [
+      "self"
+    ],
+    "_more_tags": [
+      "self"
+    ]
+  },
+  "CorrelationRemover": {
+    "__init__": [
+      "self"
+    ],
+    "_split_X": [
+      "self",
+      "X"
+    ],
+    "_create_lookup": [
+      "self",
+      "X"
+    ],
+    "fit": [
+      "self",
+      "X",
+      "y"
+    ],
+    "transform": [
+      "self",
+      "X"
+    ],
+    "_check_sensitive_features_in_X": [
+      "self",
+      "X"
+    ]
+  },
+  "_PRECISION": [],
+  "_LINE": [],
+  "_INDENTATION": [],
+  "_ACCURACY_MUL": [],
+  "_REGRET_CHECK_START_T": [],
+  "_REGRET_CHECK_INCREASE_T": [],
+  "_SHRINK_REGRET": [],
+  "_SHRINK_ETA": [],
+  "_MIN_ITER": [],
+  "ExponentiatedGradient": {
+    "__init__": [
+      "self",
+      "estimator",
+      "constraints"
+    ],
+    "fit": [
+      "self",
+      "X",
+      "y"
+    ],
+    "predict": [
+      "self",
+      "X",
+      "random_state"
+    ],
+    "_pmf_predict": [
+      "self",
+      "X"
+    ]
+  },
+  "_MESSAGE_BAD_OBJECTIVE": [],
+  "_PredictorAsCallable": {
+    "__init__": [
+      "self",
+      "classifier"
+    ],
+    "__call__": [
+      "self",
+      "X"
+    ]
+  },
+  "_Lagrangian": {
+    "__init__": [
+      "self"
+    ],
+    "_eval": [
+      "self",
+      "Q",
+      "lambda_vec"
+    ],
+    "eval_gap": [
+      "self",
+      "Q",
+      "lambda_hat",
+      "nu"
+    ],
+    "solve_linprog": [
+      "self",
+      "nu"
+    ],
+    "_call_oracle": [
+      "self",
+      "lambda_vec"
+    ],
+    "best_h": [
+      "self",
+      "lambda_vec"
+    ]
+  },
+  "_GapResult": {
+    "__init__": [
+      "self",
+      "L",
+      "L_low",
+      "L_high",
+      "gamma",
+      "error"
+    ],
+    "gap": [
+      "self"
+    ]
+  },
+  "_MESSAGE_BAD_COSTS": [],
+  "ErrorRate": {
+    "__init__": [
+      "self"
+    ],
+    "load_data": [
+      "self",
+      "X",
+      "y"
+    ],
+    "index": [
+      "self"
+    ],
+    "gamma": [
+      "self",
+      "predictor"
+    ],
+    "project_lambda": [
+      "self",
+      "lambda_vec"
+    ],
+    "signed_weights": [
+      "self",
+      "lambda_vec"
+    ]
+  },
+  "_GROUP_ID": [],
+  "_EVENT": [],
+  "_LABEL": [],
+  "_LOSS": [],
+  "_PREDICTION": [],
+  "_ALL": [],
+  "_SIGN": [],
+  "Moment": {
+    "__init__": [
+      "self"
+    ],
+    "load_data": [
+      "self",
+      "X",
+      "y"
+    ],
+    "total_samples": [
+      "self"
+    ],
+    "_y_as_series": [
+      "self"
+    ],
+    "index": [
+      "self"
+    ],
+    "gamma": [
+      "self",
+      "predictor"
+    ],
+    "bound": [
+      "self"
+    ],
+    "project_lambda": [
+      "self",
+      "lambda_vec"
+    ],
+    "signed_weights": [
+      "self",
+      "lambda_vec"
+    ],
+    "_moment_type": [
+      "self"
+    ],
+    "default_objective": [
+      "self"
+    ]
+  },
+  "ClassificationMoment": {
+    "_moment_type": [
+      "self"
+    ]
+  },
+  "LossMoment": {
+    "__init__": [
+      "self",
+      "loss"
+    ],
+    "_moment_type": [
+      "self"
+    ]
+  },
+  "ConditionalLossMoment": {
+    "__init__": [
+      "self",
+      "loss"
+    ],
+    "index": [
+      "self"
+    ],
+    "default_objective": [
+      "self"
+    ],
+    "load_data": [
+      "self",
+      "X",
+      "y"
+    ],
+    "gamma": [
+      "self",
+      "predictor"
+    ],
+    "bound": [
+      "self"
+    ],
+    "project_lambda": [
+      "self",
+      "lambda_vec"
+    ],
+    "signed_weights": [
+      "self",
+      "lambda_vec"
+    ]
+  },
+  "MeanLoss": {
+    "__init__": [
+      "self",
+      "loss"
+    ]
+  },
+  "BoundedGroupLoss": {
+    "__init__": [
+      "self",
+      "loss"
+    ]
+  },
+  "SquareLoss": {
+    "__init__": [
+      "self",
+      "min_val",
+      "max_val"
+    ],
+    "eval": [
+      "self",
+      "y_true",
+      "y_pred"
+    ]
+  },
+  "AbsoluteLoss": {
+    "__init__": [
+      "self",
+      "min_val",
+      "max_val"
+    ],
+    "eval": [
+      "self",
+      "y_true",
+      "y_pred"
+    ]
+  },
+  "ZeroOneLoss": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "_UPPER_BOUND_DIFF": [],
+  "_LOWER_BOUND_DIFF": [],
+  "_MESSAGE_INVALID_BOUNDS": [],
+  "_DEFAULT_DIFFERENCE_BOUND": [],
+  "_CTRL_EVENT_FORMAT": [],
+  "_combine_event_and_control": [
+    "event",
+    "control"
+  ],
+  "_merge_event_and_control_columns": [
+    "event_col",
+    "control_col"
+  ],
+  "UtilityParity": {
+    "__init__": [
+      "self"
+    ],
+    "index": [
+      "self"
+    ],
+    "default_objective": [
+      "self"
+    ],
+    "load_data": [
+      "self",
+      "X",
+      "y"
+    ],
+    "gamma": [
+      "self",
+      "predictor"
+    ],
+    "bound": [
+      "self"
+    ],
+    "project_lambda": [
+      "self",
+      "lambda_vec"
+    ],
+    "signed_weights": [
+      "self",
+      "lambda_vec"
+    ]
+  },
+  "DemographicParity": {
+    "short_name": [],
+    "load_data": [
+      "self",
+      "X",
+      "y"
+    ]
+  },
+  "TruePositiveRateParity": {
+    "short_name": [],
+    "load_data": [
+      "self",
+      "X",
+      "y"
+    ]
+  },
+  "FalsePositiveRateParity": {
+    "short_name": [],
+    "load_data": [
+      "self",
+      "X",
+      "y"
+    ]
+  },
+  "EqualizedOdds": {
+    "short_name": [],
+    "load_data": [
+      "self",
+      "X",
+      "y"
+    ]
+  },
+  "ErrorRateParity": {
+    "short_name": [],
+    "load_data": [
+      "self",
+      "X",
+      "y"
+    ]
+  },
+  "GRID_DIMENSION_WARN_THRESHOLD": [],
+  "GRID_DIMENSION_WARN_TEMPLATE": [],
+  "GRID_SIZE_WARN_TEMPLATE": [],
+  "_GridGenerator": {
+    "__init__": [
+      "self",
+      "grid_size",
+      "grid_limit",
+      "pos_basis",
+      "neg_basis",
+      "neg_allowed",
+      "force_L1_norm",
+      "grid_offset"
+    ],
+    "build_integer_grid": [
+      "self",
+      "n_units"
+    ],
+    "accumulate_integer_grid": [
+      "self",
+      "index",
+      "max_val"
+    ]
+  },
+  "TRADEOFF_OPTIMIZATION": [],
+  "GridSearch": {
+    "__init__": [
+      "self",
+      "estimator",
+      "constraints",
+      "selection_rule",
+      "constraint_weight",
+      "grid_size",
+      "grid_limit",
+      "grid_offset",
+      "grid",
+      "sample_weight_name"
+    ],
+    "fit": [
+      "self",
+      "X",
+      "y"
+    ],
+    "predict": [
+      "self",
+      "X"
+    ],
+    "predict_proba": [
+      "self",
+      "X"
+    ]
+  }
+}
