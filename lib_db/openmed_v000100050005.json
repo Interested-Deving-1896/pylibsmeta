@@ -1,0 +1,2662 @@
+{
+  "_PLACEHOLDER_SEGMENT_PATTERN": [],
+  "logger": [],
+  "list_models": [],
+  "get_model_max_length": [
+    "model_name"
+  ],
+  "analyze_text": [
+    "text",
+    "model_name"
+  ],
+  "__all__": [],
+  "__version__": [],
+  "TRUSTED_REMOTE_CODE_MODELS": [],
+  "_ALLOWLIST_ENV_VAR": [],
+  "_env_allowlist": [],
+  "is_trusted_for_remote_code": [
+    "model_name"
+  ],
+  "PrivacyFilterTorchPipeline": {
+    "DEFAULT_MODEL_ID": [],
+    "__init__": [
+      "self",
+      "model_name"
+    ],
+    "__call__": [
+      "self",
+      "text"
+    ],
+    "_normalize_batch_output": [
+      "raw_batch",
+      "expected_count"
+    ],
+    "_normalize_entity": [
+      "item",
+      "text"
+    ]
+  },
+  "validate_input": [
+    "text",
+    "min_length",
+    "max_length",
+    "allow_empty"
+  ],
+  "validate_model_name": [
+    "model_name"
+  ],
+  "validate_confidence_threshold": [
+    "threshold"
+  ],
+  "validate_output_format": [
+    "format_name"
+  ],
+  "validate_batch_size": [
+    "batch_size",
+    "max_batch_size"
+  ],
+  "_contains_suspicious_content": [
+    "text"
+  ],
+  "sanitize_filename": [
+    "filename"
+  ],
+  "setup_logging": [
+    "level",
+    "format_string",
+    "include_timestamp"
+  ],
+  "get_logger": [
+    "name"
+  ],
+  "OpenMedLogger": {
+    "__init__": [
+      "self",
+      "name"
+    ],
+    "log_model_loading": [
+      "self",
+      "model_name",
+      "status"
+    ],
+    "log_processing": [
+      "self",
+      "text_length",
+      "processing_time"
+    ],
+    "log_predictions": [
+      "self",
+      "num_entities",
+      "model_name"
+    ]
+  },
+  "F": [],
+  "TimingResult": {
+    "to_dict": [
+      "self"
+    ]
+  },
+  "ProfileReport": {
+    "total_duration": [
+      "self"
+    ],
+    "timing_count": [
+      "self"
+    ],
+    "get_timing": [
+      "self",
+      "name"
+    ],
+    "get_timings_by_prefix": [
+      "self",
+      "prefix"
+    ],
+    "summary": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "format_report": [
+      "self",
+      "include_metadata"
+    ]
+  },
+  "Profiler": {
+    "__init__": [
+      "self",
+      "enabled"
+    ],
+    "start": [
+      "self"
+    ],
+    "stop": [
+      "self"
+    ],
+    "measure": [
+      "self",
+      "name",
+      "metadata"
+    ],
+    "add_timing": [
+      "self",
+      "name",
+      "duration",
+      "metadata"
+    ],
+    "add_metadata": [
+      "self",
+      "key",
+      "value"
+    ],
+    "report": [
+      "self"
+    ],
+    "reset": [
+      "self"
+    ]
+  },
+  "get_profiler": [],
+  "enable_profiling": [],
+  "disable_profiling": [],
+  "get_profile_report": [],
+  "profile": [
+    "name"
+  ],
+  "InferenceMetrics": {
+    "tokens_per_second": [
+      "self"
+    ],
+    "chars_per_second": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ]
+  },
+  "BatchMetrics": {
+    "item_count": [
+      "self"
+    ],
+    "total_chars": [
+      "self"
+    ],
+    "total_entities": [
+      "self"
+    ],
+    "avg_time_per_item_ms": [
+      "self"
+    ],
+    "throughput_items_per_second": [
+      "self"
+    ],
+    "throughput_chars_per_second": [
+      "self"
+    ],
+    "summary": [
+      "self"
+    ],
+    "format_report": [
+      "self"
+    ]
+  },
+  "Timer": {
+    "__init__": [
+      "self"
+    ],
+    "start": [
+      "self"
+    ],
+    "stop": [
+      "self"
+    ],
+    "elapsed_ms": [
+      "self"
+    ],
+    "elapsed_s": [
+      "self"
+    ],
+    "reset": [
+      "self"
+    ]
+  },
+  "timed": [
+    "name"
+  ],
+  "MANIFEST_FILENAME": [],
+  "MANIFEST_FORMAT": [],
+  "MANIFEST_VERSION": [],
+  "_KNOWN_TOKENIZER_FILES": [],
+  "_NON_TOKENIZER_FILENAMES": [],
+  "_dedupe_keep_order": [
+    "items"
+  ],
+  "find_tokenizer_files": [
+    "model_dir"
+  ],
+  "has_local_tokenizer": [
+    "model_dir"
+  ],
+  "read_manifest": [
+    "model_dir"
+  ],
+  "load_artifact_config": [
+    "model_dir"
+  ],
+  "resolve_weight_candidates": [
+    "model_dir",
+    "config",
+    "manifest"
+  ],
+  "resolve_tokenizer_reference": [
+    "model_dir",
+    "config",
+    "manifest"
+  ],
+  "write_manifest": [
+    "model_dir"
+  ],
+  "_OPF_MODEL_TYPES": [],
+  "_convert_opf_weights": [
+    "state_dict"
+  ],
+  "_expected_opf_weight_shapes": [
+    "config"
+  ],
+  "_validate_opf_weights": [
+    "weights",
+    "config"
+  ],
+  "_infer_source_model_type": [
+    "key",
+    "model_type"
+  ],
+  "remap_key": [
+    "key",
+    "model_type"
+  ],
+  "_to_numpy": [
+    "tensor"
+  ],
+  "convert_weights": [
+    "model_id",
+    "cache_dir"
+  ],
+  "save_mlx_model": [
+    "weights",
+    "config",
+    "output_dir",
+    "quantize_bits",
+    "source_model_id",
+    "cache_dir"
+  ],
+  "save_numpy_model": [
+    "weights",
+    "config",
+    "output_dir",
+    "source_model_id",
+    "cache_dir"
+  ],
+  "_finalize_artifact": [
+    "output_dir"
+  ],
+  "convert": [
+    "model_id",
+    "output_dir",
+    "quantize_bits",
+    "cache_dir"
+  ],
+  "main": [],
+  "_tokenizer_has_list_extra_special_tokens": [
+    "reference"
+  ],
+  "_load_auto_tokenizer": [
+    "reference"
+  ],
+  "_resolve_model_max_length": [
+    "tokenizer",
+    "config"
+  ],
+  "_tokenize_with_optional_max_length": [
+    "tokenizer",
+    "max_length"
+  ],
+  "MLXTokenClassificationPipeline": {
+    "__init__": [
+      "self",
+      "model_path",
+      "tokenizer_name",
+      "aggregation_strategy"
+    ],
+    "_is_special_offset": [
+      "offset"
+    ],
+    "__call__": [
+      "self",
+      "text"
+    ],
+    "_predict_single": [
+      "self",
+      "text"
+    ],
+    "_decode_raw": [
+      "self",
+      "pred_ids",
+      "probs",
+      "offsets",
+      "text"
+    ],
+    "_decode_grouped": [
+      "self",
+      "pred_ids",
+      "probs",
+      "offsets",
+      "text"
+    ]
+  },
+  "_decode_tiktoken_offsets": [
+    "token_ids",
+    "encoding"
+  ],
+  "_trim_span_whitespace": [],
+  "_refine_privacy_filter_span": [],
+  "PrivacyFilterMLXPipeline": {
+    "__init__": [
+      "self",
+      "model_path",
+      "tokenizer_name",
+      "aggregation_strategy"
+    ],
+    "__call__": [
+      "self",
+      "text"
+    ],
+    "_predict_single": [
+      "self",
+      "text"
+    ],
+    "_predict_batch": [
+      "self",
+      "texts"
+    ],
+    "_decode_prediction": [
+      "self",
+      "token_ids",
+      "text",
+      "log_probs_py",
+      "probs_py"
+    ],
+    "_decode_raw": [
+      "self",
+      "pred_ids",
+      "probs",
+      "char_starts",
+      "char_ends",
+      "text"
+    ],
+    "_decode_grouped": [
+      "self",
+      "pred_ids",
+      "probs",
+      "char_starts",
+      "char_ends",
+      "text"
+    ]
+  },
+  "_sigmoid": [
+    "logits"
+  ],
+  "_split_words_with_offsets": [
+    "text"
+  ],
+  "_prepare_word_mask": [
+    "tokenized_inputs"
+  ],
+  "_as_batched_lists": [
+    "values"
+  ],
+  "_build_ragged_span_batch": [
+    "spans"
+  ],
+  "_suppress_overlaps": [
+    "entities"
+  ],
+  "_BaseExperimentalMLXPipeline": {
+    "__init__": [
+      "self",
+      "model_path",
+      "tokenizer_name"
+    ]
+  },
+  "GLiNERMLXPipeline": {
+    "expected_task": [],
+    "expected_family": [],
+    "predict_entities": [
+      "self",
+      "text",
+      "labels"
+    ]
+  },
+  "GLiClassMLXPipeline": {
+    "expected_task": [],
+    "expected_family": [],
+    "classify": [
+      "self",
+      "text",
+      "labels"
+    ]
+  },
+  "GLiNERRelexMLXPipeline": {
+    "expected_task": [],
+    "expected_family": [],
+    "inference": [
+      "self",
+      "text",
+      "labels",
+      "relations"
+    ]
+  },
+  "_download_preconverted_mlx_model": [
+    "repo_id",
+    "cache_dir"
+  ],
+  "_resolve_mlx_model": [
+    "model_name",
+    "config"
+  ],
+  "create_mlx_pipeline": [
+    "model_name",
+    "aggregation_strategy",
+    "config"
+  ],
+  "ProjectionMLP": {
+    "__init__": [
+      "self",
+      "input_size",
+      "output_size"
+    ],
+    "__call__": [
+      "self",
+      "x"
+    ]
+  },
+  "BidirectionalLSTM": {
+    "__init__": [
+      "self",
+      "hidden_size"
+    ],
+    "_reverse_padded": [
+      "x",
+      "lengths"
+    ],
+    "__call__": [
+      "self",
+      "x",
+      "mask"
+    ]
+  },
+  "_pad_embeddings": [
+    "rows",
+    "width"
+  ],
+  "_pad_masks": [
+    "rows",
+    "width"
+  ],
+  "extract_marker_embeddings": [
+    "token_embeds",
+    "input_ids",
+    "marker_token_id"
+  ],
+  "extract_word_embeddings": [
+    "token_embeds",
+    "words_mask"
+  ],
+  "build_candidate_span_indices": [
+    "lengths",
+    "max_width"
+  ],
+  "gather_span_endpoints": [
+    "start_hidden_states",
+    "end_hidden_states",
+    "span_idx"
+  ],
+  "build_all_entity_pairs": [
+    "span_rep",
+    "span_mask"
+  ],
+  "TokenLevelSpan": {},
+  "TokenLevelSpanResult": {
+    "span_idx": [
+      "self"
+    ],
+    "span_mask": [
+      "self"
+    ]
+  },
+  "_has_flat_overlap": [
+    "span",
+    "selected",
+    "multi_label"
+  ],
+  "_has_nested_overlap": [
+    "span",
+    "selected",
+    "multi_label"
+  ],
+  "_greedy_token_spans": [
+    "spans"
+  ],
+  "decode_token_level_spans": [
+    "token_scores"
+  ],
+  "BertEmbeddings": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "__call__": [
+      "self",
+      "input_ids",
+      "token_type_ids"
+    ]
+  },
+  "BertAttention": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "__call__": [
+      "self",
+      "x",
+      "attention_mask"
+    ]
+  },
+  "BertLayer": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "__call__": [
+      "self",
+      "x",
+      "attention_mask"
+    ]
+  },
+  "BertEncoder": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "__call__": [
+      "self",
+      "x",
+      "attention_mask"
+    ]
+  },
+  "BertForTokenClassification": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "__call__": [
+      "self",
+      "input_ids",
+      "token_type_ids",
+      "attention_mask"
+    ]
+  },
+  "load_model": [
+    "model_path"
+  ],
+  "make_log_bucket_position": [
+    "relative_pos",
+    "bucket_size",
+    "max_position"
+  ],
+  "build_relative_position": [
+    "query_layer",
+    "key_layer",
+    "bucket_size",
+    "max_position"
+  ],
+  "build_rpos": [
+    "query_layer",
+    "key_layer",
+    "relative_pos",
+    "position_buckets",
+    "max_relative_positions"
+  ],
+  "_repeat_batches": [
+    "x",
+    "batch_size"
+  ],
+  "DebertaV2Embeddings": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "__call__": [
+      "self",
+      "input_ids",
+      "token_type_ids",
+      "attention_mask"
+    ]
+  },
+  "DisentangledSelfAttention": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "transpose_for_scores": [
+      "self",
+      "x"
+    ],
+    "disentangled_attention_bias": [
+      "self",
+      "query_layer",
+      "key_layer",
+      "relative_pos",
+      "rel_embeddings",
+      "scale_factor"
+    ],
+    "__call__": [
+      "self",
+      "hidden_states",
+      "attention_mask",
+      "query_states",
+      "relative_pos",
+      "rel_embeddings"
+    ]
+  },
+  "DebertaV2Attention": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "__call__": [
+      "self",
+      "hidden_states",
+      "attention_mask",
+      "query_states",
+      "relative_pos",
+      "rel_embeddings"
+    ]
+  },
+  "DebertaV2Layer": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "_apply_activation": [
+      "self",
+      "x"
+    ],
+    "__call__": [
+      "self",
+      "hidden_states",
+      "attention_mask",
+      "query_states",
+      "relative_pos",
+      "rel_embeddings"
+    ]
+  },
+  "DebertaV2Encoder": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "get_rel_embedding": [
+      "self"
+    ],
+    "get_attention_mask": [
+      "self",
+      "attention_mask"
+    ],
+    "get_rel_pos": [
+      "self",
+      "hidden_states",
+      "query_states",
+      "relative_pos"
+    ],
+    "__call__": [
+      "self",
+      "hidden_states",
+      "attention_mask"
+    ]
+  },
+  "DebertaV2Model": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "__call__": [
+      "self",
+      "input_ids",
+      "attention_mask",
+      "token_type_ids"
+    ]
+  },
+  "DebertaV2ForTokenClassification": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "__call__": [
+      "self",
+      "input_ids",
+      "token_type_ids",
+      "attention_mask"
+    ]
+  },
+  "_param_dtype": [
+    "config"
+  ],
+  "_linear_input": [
+    "x",
+    "layer"
+  ],
+  "PrivacyFilterRMSNorm": {
+    "__init__": [
+      "self",
+      "hidden_size",
+      "eps"
+    ],
+    "__call__": [
+      "self",
+      "x"
+    ]
+  },
+  "_apply_rotary_emb": [
+    "x",
+    "cos",
+    "sin"
+  ],
+  "PrivacyFilterRotaryEmbedding": {
+    "__init__": [
+      "self"
+    ],
+    "_cos_sin": [
+      "self",
+      "num_tokens"
+    ],
+    "__call__": [
+      "self",
+      "query",
+      "key"
+    ]
+  },
+  "_topk": [
+    "values",
+    "k"
+  ],
+  "_swiglu": [
+    "x"
+  ],
+  "PrivacyFilterExpertLinear": {
+    "__init__": [
+      "self",
+      "num_experts",
+      "in_features",
+      "out_features",
+      "dtype"
+    ],
+    "__call__": [
+      "self",
+      "x",
+      "expert_indices"
+    ],
+    "to_quantized": [
+      "self",
+      "group_size",
+      "bits",
+      "mode"
+    ]
+  },
+  "PrivacyFilterQuantizedExpertLinear": {
+    "__init__": [
+      "self",
+      "num_experts",
+      "in_features",
+      "out_features"
+    ],
+    "__call__": [
+      "self",
+      "x",
+      "expert_indices"
+    ],
+    "from_expert_linear": [
+      "cls",
+      "expert_layer"
+    ]
+  },
+  "_as_bool_attention_mask": [
+    "attention_mask",
+    "shape"
+  ],
+  "_local_attention": [
+    "query",
+    "key",
+    "value",
+    "sinks"
+  ],
+  "PrivacyFilterAttentionBlock": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "__call__": [
+      "self",
+      "x"
+    ]
+  },
+  "PrivacyFilterMLPBlock": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "__call__": [
+      "self",
+      "x"
+    ]
+  },
+  "PrivacyFilterTransformerBlock": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "__call__": [
+      "self",
+      "x"
+    ]
+  },
+  "OpenAIPrivacyFilterForTokenClassification": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "__call__": [
+      "self",
+      "input_ids"
+    ]
+  },
+  "_SUPPORTED_TOKEN_CLASSIFICATION_MODEL_TYPES": [],
+  "_CUSTOM_FAMILIES": [],
+  "_ARCHITECTURE_TYPE_HINTS": [],
+  "normalize_model_type": [
+    "model_type"
+  ],
+  "resolve_artifact_task": [
+    "config",
+    "manifest"
+  ],
+  "resolve_artifact_family": [
+    "config",
+    "manifest"
+  ],
+  "resolve_model_type": [
+    "config",
+    "manifest"
+  ],
+  "normalize_model_config": [
+    "config",
+    "manifest"
+  ],
+  "build_model": [
+    "config",
+    "manifest"
+  ],
+  "_is_quantized_checkpoint": [
+    "weights"
+  ],
+  "_quantize_model_for_weights": [
+    "config",
+    "weights",
+    "manifest"
+  ],
+  "GLiNERTokenScorer": {
+    "__init__": [
+      "self",
+      "hidden_size",
+      "dropout"
+    ],
+    "__call__": [
+      "self",
+      "token_rep",
+      "label_rep"
+    ]
+  },
+  "GLiNERRelexModel": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "encode": [
+      "self",
+      "input_ids",
+      "attention_mask",
+      "words_mask"
+    ],
+    "entity_scores": [
+      "self",
+      "encoded"
+    ],
+    "relation_scores": [
+      "self",
+      "encoded",
+      "span_idx",
+      "span_mask"
+    ],
+    "__call__": [
+      "self",
+      "input_ids",
+      "attention_mask",
+      "words_mask"
+    ]
+  },
+  "GLiClassFeaturesProjector": {
+    "__init__": [
+      "self",
+      "encoder_hidden_size",
+      "hidden_size",
+      "dropout"
+    ],
+    "__call__": [
+      "self",
+      "features"
+    ]
+  },
+  "GLiClassMLPScorer": {
+    "__init__": [
+      "self",
+      "hidden_size"
+    ],
+    "__call__": [
+      "self",
+      "text_rep",
+      "label_rep"
+    ]
+  },
+  "GLiClassUniEncoderModel": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "_create_segment_ids": [
+      "self",
+      "input_ids"
+    ],
+    "_pad_rows": [
+      "self",
+      "rows",
+      "width"
+    ],
+    "_pad_mask_rows": [
+      "self",
+      "rows",
+      "width"
+    ],
+    "_extract_class_features": [
+      "self",
+      "encoder_layer",
+      "input_ids",
+      "attention_mask"
+    ],
+    "_pool_text": [
+      "self",
+      "text_embeddings",
+      "text_mask"
+    ],
+    "__call__": [
+      "self",
+      "input_ids",
+      "attention_mask"
+    ]
+  },
+  "SpanMarkerV0": {
+    "__init__": [
+      "self",
+      "hidden_size",
+      "dropout"
+    ],
+    "__call__": [
+      "self",
+      "hidden_states",
+      "span_idx"
+    ]
+  },
+  "GLiNERSpanModel": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "encode": [
+      "self",
+      "input_ids",
+      "attention_mask",
+      "words_mask"
+    ],
+    "__call__": [
+      "self",
+      "input_ids",
+      "attention_mask",
+      "words_mask",
+      "span_idx",
+      "span_mask"
+    ]
+  },
+  "BatchOperation": [],
+  "_VALID_OPERATIONS": [],
+  "BatchItem": {},
+  "BatchItemResult": {
+    "success": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ]
+  },
+  "BatchResult": {
+    "total_items": [
+      "self"
+    ],
+    "successful_items": [
+      "self"
+    ],
+    "failed_items": [
+      "self"
+    ],
+    "success_rate": [
+      "self"
+    ],
+    "average_processing_time": [
+      "self"
+    ],
+    "get_successful_results": [
+      "self"
+    ],
+    "get_failed_results": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "summary": [
+      "self"
+    ]
+  },
+  "ProgressCallback": [],
+  "BatchProcessor": {
+    "__init__": [
+      "self",
+      "model_name",
+      "operation",
+      "batch_size",
+      "config",
+      "loader",
+      "aggregation_strategy",
+      "confidence_threshold",
+      "group_entities",
+      "continue_on_error"
+    ],
+    "_default_confidence_threshold": [
+      "operation"
+    ],
+    "_get_analyze_text": [
+      "self"
+    ],
+    "_get_operation_fn": [
+      "self"
+    ],
+    "_get_shared_loader": [
+      "self"
+    ],
+    "_get_privacy_filter_pipeline": [
+      "self"
+    ],
+    "_iter_chunks": [
+      "self",
+      "items"
+    ],
+    "_create_batch_items": [
+      "self",
+      "texts",
+      "ids"
+    ],
+    "process_texts": [
+      "self",
+      "texts",
+      "ids",
+      "progress_callback"
+    ],
+    "process_files": [
+      "self",
+      "file_paths",
+      "encoding",
+      "progress_callback"
+    ],
+    "process_directory": [
+      "self",
+      "directory",
+      "pattern",
+      "recursive",
+      "encoding",
+      "progress_callback"
+    ],
+    "process_items": [
+      "self",
+      "items",
+      "progress_callback"
+    ],
+    "_process_items": [
+      "self",
+      "items",
+      "progress_callback"
+    ],
+    "_process_batch_chunk": [
+      "self",
+      "items"
+    ],
+    "_empty_item_result": [
+      "self",
+      "item"
+    ],
+    "_process_analyze_chunk": [
+      "self",
+      "items"
+    ],
+    "_process_extract_pii_chunk": [
+      "self",
+      "items"
+    ],
+    "_process_deidentify_chunk": [
+      "self",
+      "items"
+    ],
+    "_process_pii_chunk": [
+      "self",
+      "items",
+      "batch_fn"
+    ],
+    "_process_single_item": [
+      "self",
+      "item",
+      "fn"
+    ],
+    "iter_process": [
+      "self",
+      "texts",
+      "ids"
+    ]
+  },
+  "process_batch": [
+    "texts",
+    "model_name",
+    "ids",
+    "config",
+    "progress_callback"
+  ],
+  "SentenceSpan": {
+    "__post_init__": [
+      "self"
+    ]
+  },
+  "_get_segmenter": [],
+  "_fallback_spans": [
+    "text",
+    "sentences"
+  ],
+  "segment_text": [
+    "text"
+  ],
+  "_UNSET_MAX_LENGTH_SENTINEL": [],
+  "DEFAULT_MEDICAL_EXCEPTIONS": [],
+  "_MEDICAL_TOKEN_PATTERN": [],
+  "SpanToken": {},
+  "medical_tokenize": [
+    "text"
+  ],
+  "remap_predictions_to_tokens": [
+    "predictions",
+    "text",
+    "tokens"
+  ],
+  "_is_reasonable_length": [
+    "value",
+    "threshold"
+  ],
+  "infer_tokenizer_max_length": [
+    "tokenizer"
+  ],
+  "TokenizationHelper": {
+    "__init__": [
+      "self",
+      "tokenizer"
+    ],
+    "tokenize_with_alignment": [
+      "self",
+      "text",
+      "return_word_ids"
+    ],
+    "align_predictions_to_words": [
+      "self",
+      "predictions",
+      "word_ids",
+      "text",
+      "aggregation_strategy"
+    ],
+    "create_attention_masks": [
+      "self",
+      "input_ids",
+      "pad_token_id"
+    ],
+    "truncate_sequences": [
+      "self",
+      "sequences",
+      "max_length",
+      "truncation_strategy"
+    ],
+    "batch_encode": [
+      "self",
+      "texts",
+      "max_length",
+      "padding",
+      "truncation"
+    ]
+  },
+  "EntitySpan": {
+    "to_dict": [
+      "self"
+    ]
+  },
+  "AdvancedNERProcessor": {
+    "__init__": [
+      "self",
+      "min_confidence",
+      "min_length",
+      "remove_punctuation",
+      "strip_edges",
+      "merge_adjacent",
+      "max_merge_gap"
+    ],
+    "ner_filtered": [
+      "self",
+      "text",
+      "pipeline_result"
+    ],
+    "smart_group_entities": [
+      "self",
+      "tokens",
+      "text"
+    ],
+    "advanced_filter": [
+      "self",
+      "entities",
+      "text"
+    ],
+    "merge_adjacent_entities": [
+      "self",
+      "entities",
+      "original_text"
+    ],
+    "process_pipeline_output": [
+      "self",
+      "text",
+      "pipeline_output",
+      "use_smart_grouping"
+    ],
+    "create_entity_summary": [
+      "self",
+      "entities"
+    ]
+  },
+  "create_advanced_processor": [
+    "confidence_threshold"
+  ],
+  "TextProcessor": {
+    "__init__": [
+      "self",
+      "lowercase",
+      "remove_punctuation",
+      "remove_numbers",
+      "normalize_whitespace"
+    ],
+    "clean_text": [
+      "self",
+      "text"
+    ],
+    "segment_sentences": [
+      "self",
+      "text"
+    ],
+    "extract_medical_entities": [
+      "self",
+      "text"
+    ]
+  },
+  "preprocess_text": [
+    "text",
+    "lowercase",
+    "remove_punctuation",
+    "remove_numbers",
+    "normalize_whitespace"
+  ],
+  "postprocess_text": [
+    "text",
+    "capitalize_first"
+  ],
+  "_to_float": [
+    "value",
+    "default"
+  ],
+  "_to_int": [
+    "value"
+  ],
+  "EntityPrediction": {
+    "to_dict": [
+      "self"
+    ]
+  },
+  "PredictionResult": {
+    "to_dict": [
+      "self"
+    ]
+  },
+  "OutputFormatter": {
+    "__init__": [
+      "self",
+      "include_confidence",
+      "confidence_threshold",
+      "group_entities"
+    ],
+    "format_predictions": [
+      "self",
+      "predictions",
+      "original_text",
+      "model_name"
+    ],
+    "_is_word_char": [
+      "ch"
+    ],
+    "_fix_entity_spans": [
+      "entities",
+      "text"
+    ],
+    "_normalize_token_text": [
+      "self",
+      "text"
+    ],
+    "_group_adjacent_entities": [
+      "self",
+      "entities"
+    ],
+    "_merge_entities": [
+      "self",
+      "entities"
+    ],
+    "to_json": [
+      "self",
+      "result",
+      "indent"
+    ],
+    "to_html": [
+      "self",
+      "result"
+    ],
+    "_get_entity_color": [
+      "self",
+      "label"
+    ],
+    "to_csv_rows": [
+      "self",
+      "result"
+    ]
+  },
+  "format_predictions": [
+    "predictions",
+    "original_text",
+    "model_name",
+    "output_format"
+  ],
+  "SERVICE_NAME": [],
+  "ServiceTimeoutError": {
+    "__init__": [
+      "self",
+      "timeout_seconds"
+    ]
+  },
+  "_result_to_dict": [
+    "result"
+  ],
+  "_error_response": [
+    "status_code",
+    "code",
+    "message"
+  ],
+  "_format_error_field": [
+    "location"
+  ],
+  "_format_validation_details": [
+    "exc"
+  ],
+  "_attach_runtime": [
+    "app",
+    "runtime"
+  ],
+  "_get_service_runtime": [
+    "request"
+  ],
+  "_run_with_timeout": [
+    "runtime",
+    "operation"
+  ],
+  "create_app": [],
+  "_analyze_payload": [
+    "payload",
+    "runtime"
+  ],
+  "_pii_extract_payload": [
+    "payload",
+    "runtime"
+  ],
+  "_pii_deidentify_payload": [
+    "payload",
+    "runtime"
+  ],
+  "app": [],
+  "SERVICE_PRELOAD_ENV_VAR": [],
+  "SERVICE_KEEP_ALIVE_ENV_VAR": [],
+  "parse_preload_models": [
+    "raw_value"
+  ],
+  "ServiceRuntime": {
+    "from_env": [
+      "cls"
+    ],
+    "get_loader": [
+      "self"
+    ],
+    "preload": [
+      "self"
+    ],
+    "run_model_request": [
+      "self",
+      "model_name",
+      "keep_alive",
+      "operation"
+    ],
+    "begin_model_request": [
+      "self",
+      "model_name"
+    ],
+    "finish_model_request": [
+      "self",
+      "model_key",
+      "keep_alive"
+    ],
+    "unload_model": [
+      "self",
+      "model_name"
+    ],
+    "unload_all_models": [
+      "self"
+    ],
+    "loaded_models": [
+      "self"
+    ],
+    "_resolve_keep_alive_seconds": [
+      "self",
+      "keep_alive"
+    ],
+    "_resolve_model_name": [
+      "self",
+      "model_name"
+    ],
+    "_schedule_idle_unload": [
+      "self",
+      "model_key",
+      "keep_alive_seconds"
+    ],
+    "_unload_model_if_idle": [
+      "self",
+      "model_key"
+    ],
+    "_unload_model_cache": [
+      "self",
+      "model_key"
+    ],
+    "_cancel_idle_timer_locked": [
+      "self",
+      "model_key"
+    ]
+  },
+  "_DEFAULT_PII_MODEL": [],
+  "KeepAliveValue": [],
+  "_normalize_text": [
+    "value"
+  ],
+  "_normalize_model_name": [
+    "value"
+  ],
+  "_normalize_confidence_threshold": [
+    "value"
+  ],
+  "_validate_keep_alive_value": [
+    "value"
+  ],
+  "_normalize_shift_dates_payload": [
+    "values"
+  ],
+  "_StrictModel": {},
+  "_DURATION_PATTERN": [],
+  "_UNIT_SECONDS": [],
+  "parse_keep_alive": [
+    "value"
+  ],
+  "_RESOURCE_PACKAGE": [],
+  "_DEFAULT_RESOURCE": [],
+  "_GENERIC_DOMAIN": [],
+  "load_default_label_map": [
+    "overrides_path"
+  ],
+  "_load_from_resource": [],
+  "_load_from_path": [
+    "path"
+  ],
+  "_normalise_label_map": [
+    "raw"
+  ],
+  "_normalise_domain": [
+    "domain"
+  ],
+  "_deduplicate_labels": [
+    "labels"
+  ],
+  "available_domains": [
+    "label_map"
+  ],
+  "get_default_labels": [
+    "domain"
+  ],
+  "reload_default_label_map": [],
+  "MissingDependencyError": {
+    "__init__": [
+      "self",
+      "dependency",
+      "instruction"
+    ]
+  },
+  "PACKAGE_ROOT": [],
+  "DEFAULT_INDEX_PATH": [],
+  "ModelRecord": {
+    "to_dict": [
+      "self"
+    ]
+  },
+  "ModelIndex": {
+    "to_dict": [
+      "self"
+    ],
+    "unique_domains": [
+      "self"
+    ]
+  },
+  "build_index": [
+    "models_dir"
+  ],
+  "discover_models": [
+    "models_dir"
+  ],
+  "write_index": [
+    "index",
+    "path"
+  ],
+  "MODEL_CORE_FILES": [],
+  "FAMILY_HINTS": [],
+  "LANGUAGE_HINTS": [],
+  "DOMAIN_TOKENS": [],
+  "_iter_candidate_dirs": [
+    "root"
+  ],
+  "_looks_like_model_dir": [
+    "path"
+  ],
+  "_build_record": [
+    "model_path",
+    "root"
+  ],
+  "_format_model_id": [
+    "relative_path"
+  ],
+  "_guess_family": [
+    "relative_path"
+  ],
+  "_guess_domains": [
+    "relative_path"
+  ],
+  "_guess_languages": [
+    "relative_path"
+  ],
+  "_extract_notes": [
+    "model_path"
+  ],
+  "_tokenise_path": [
+    "path"
+  ],
+  "_deduplicate": [
+    "records"
+  ],
+  "load_index": [
+    "path"
+  ],
+  "TokenizerProvider": {
+    "get_tokenizer": [
+      "self"
+    ]
+  },
+  "TokenAnnotation": {
+    "to_dict": [
+      "self"
+    ]
+  },
+  "TokenClassificationResult": {
+    "labels": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ]
+  },
+  "to_token_classification": [
+    "entities",
+    "text"
+  ],
+  "_tokenize": [
+    "text",
+    "tokenizer"
+  ],
+  "_resolve_tokenizer": [
+    "tokenizer"
+  ],
+  "_simple_tokenize": [
+    "text"
+  ],
+  "_assign_entities_to_tokens": [
+    "tokens",
+    "entities"
+  ],
+  "_token_indices_for_entity": [
+    "tokens",
+    "entity"
+  ],
+  "_overlaps": [
+    "token_start",
+    "token_end",
+    "entity_start",
+    "entity_end"
+  ],
+  "_label_for_position": [
+    "label",
+    "position",
+    "span_length",
+    "scheme"
+  ],
+  "NerRequest": {},
+  "Entity": {
+    "to_dict": [
+      "self"
+    ]
+  },
+  "NerResponse": {
+    "to_dict": [
+      "self"
+    ]
+  },
+  "infer": [
+    "request"
+  ],
+  "_load_index": [
+    "index_path"
+  ],
+  "_lookup_model": [
+    "model_id",
+    "index"
+  ],
+  "_resolve_labels": [
+    "request",
+    "record"
+  ],
+  "_run_gliner_inference": [
+    "record",
+    "request",
+    "labels"
+  ],
+  "_run_gliner2_inference": [
+    "record",
+    "request",
+    "labels"
+  ],
+  "_convert_gliner_entity": [
+    "item"
+  ],
+  "_extract_position": [
+    "item",
+    "key",
+    "span_index"
+  ],
+  "_run_other_inference": [
+    "record",
+    "request"
+  ],
+  "_convert_hf_entity": [
+    "item"
+  ],
+  "_apply_threshold": [
+    "entities",
+    "threshold"
+  ],
+  "_GLINER_HINT": [],
+  "_PRIMARY_IMPORT": [],
+  "_ANCILLARY_IMPORTS": [],
+  "is_gliner_available": [
+    "force_refresh"
+  ],
+  "ensure_gliner_available": [],
+  "_check_dependencies": [],
+  "_safe_import": [
+    "module_name"
+  ],
+  "_missing_dependency": [],
+  "GLiNERHandle": {
+    "predict_entities": [
+      "self",
+      "text",
+      "labels"
+    ]
+  },
+  "load_gliner_handle": [
+    "model_id"
+  ],
+  "clear_gliner_cache": [],
+  "_load_model": [
+    "model_id",
+    "cache_dir",
+    "token"
+  ],
+  "ModelFamily": {
+    "GLINER": [],
+    "GLINER2": [],
+    "OTHER": []
+  },
+  "SupportsPrediction": {
+    "predict": [
+      "self",
+      "text"
+    ]
+  },
+  "_GLINER2_HINT": [],
+  "is_gliner2_available": [
+    "force_refresh"
+  ],
+  "ensure_gliner2_available": [],
+  "GLiNER2Handle": {
+    "predict_entities": [
+      "self",
+      "text",
+      "labels"
+    ],
+    "predict_relations": [
+      "self",
+      "text",
+      "labels"
+    ]
+  },
+  "load_gliner2_handle": [
+    "model_id"
+  ],
+  "clear_gliner2_cache": [],
+  "InferenceBackend": {
+    "is_available": [
+      "self"
+    ],
+    "create_pipeline": [
+      "self",
+      "model_name",
+      "task",
+      "aggregation_strategy"
+    ]
+  },
+  "HuggingFaceBackend": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "is_available": [
+      "self"
+    ],
+    "create_pipeline": [
+      "self",
+      "model_name",
+      "task",
+      "aggregation_strategy"
+    ]
+  },
+  "MLXBackend": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "is_available": [
+      "self"
+    ],
+    "create_pipeline": [
+      "self",
+      "model_name",
+      "task",
+      "aggregation_strategy"
+    ]
+  },
+  "get_backend": [
+    "name",
+    "config"
+  ],
+  "PRIVACY_FILTER_TORCH_FALLBACK": [],
+  "_torch_fallback_for": [
+    "model_name"
+  ],
+  "select_privacy_filter_backend": [
+    "model_name"
+  ],
+  "resolve_privacy_filter_model": [
+    "model_name",
+    "backend"
+  ],
+  "create_privacy_filter_pipeline": [
+    "model_name"
+  ],
+  "PIIPattern": {},
+  "validate_ssn": [
+    "ssn_text"
+  ],
+  "validate_luhn": [
+    "number_text"
+  ],
+  "validate_npi": [
+    "npi_text"
+  ],
+  "validate_phone_us": [
+    "phone_text"
+  ],
+  "PII_PATTERNS": [],
+  "find_context_words": [
+    "text",
+    "start",
+    "end",
+    "context_words",
+    "context_window"
+  ],
+  "find_semantic_units": [
+    "text",
+    "patterns"
+  ],
+  "calculate_dominant_label": [
+    "entities",
+    "tie_breaker"
+  ],
+  "merge_entities_with_semantic_units": [
+    "entities",
+    "text",
+    "use_semantic_patterns",
+    "patterns",
+    "prefer_model_labels",
+    "allow_semantic_only_matches",
+    "allow_label_expansion"
+  ],
+  "normalize_label": [
+    "label"
+  ],
+  "is_more_specific": [
+    "label1",
+    "label2"
+  ],
+  "_strip_bioes_prefix": [
+    "label"
+  ],
+  "_key": [
+    "label"
+  ],
+  "ModelInfo": {
+    "size_mb": [
+      "self"
+    ]
+  },
+  "OPENMED_MODELS": [],
+  "_LANGUAGE_CONFIG": [],
+  "_LOCALIZED_PII_LANGUAGE_KEYS": [],
+  "_PII_SKIP_KEYS": [],
+  "_generate_multilingual_pii_models": [],
+  "_FULL_PII_ENTITY_TYPES": [],
+  "_PORTUGUESE_PII_MODEL_SPECS": [],
+  "_build_portuguese_pii_models": [],
+  "_NEW_LANGUAGE_PII_MODEL_SPECS": [],
+  "_build_new_language_pii_models": [],
+  "CATEGORIES": [],
+  "SIZE_RECOMMENDATIONS": [],
+  "get_model_info": [
+    "model_key"
+  ],
+  "get_models_by_category": [
+    "category"
+  ],
+  "get_models_by_size": [
+    "size_category"
+  ],
+  "get_recommended_models": [
+    "use_case"
+  ],
+  "find_models_by_entity_type": [
+    "entity_type"
+  ],
+  "get_all_models": [],
+  "get_model_suggestions": [
+    "text"
+  ],
+  "list_model_categories": [],
+  "get_entity_types_by_category": [
+    "category"
+  ],
+  "get_pii_models_by_language": [
+    "lang"
+  ],
+  "get_default_pii_model": [
+    "lang"
+  ],
+  "ModelLoader": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "list_available_models": [
+      "self",
+      "include_registry",
+      "include_remote"
+    ],
+    "load_model": [
+      "self",
+      "model_name",
+      "force_reload"
+    ],
+    "create_pipeline": [
+      "self",
+      "model_name",
+      "task",
+      "aggregation_strategy",
+      "use_fast_tokenizer"
+    ],
+    "_create_hf_pipeline": [
+      "self",
+      "model_name",
+      "task",
+      "aggregation_strategy",
+      "use_fast_tokenizer"
+    ],
+    "resolve_model_name": [
+      "self",
+      "model_name"
+    ],
+    "loaded_models": [
+      "self"
+    ],
+    "unload_model": [
+      "self",
+      "model_name"
+    ],
+    "unload_all_models": [
+      "self"
+    ],
+    "get_max_sequence_length": [
+      "self",
+      "model_name"
+    ],
+    "_resolve_model_name": [
+      "self",
+      "model_name"
+    ],
+    "_get_device_id": [
+      "self"
+    ],
+    "get_registry_info": [
+      "self",
+      "model_key"
+    ],
+    "get_model_suggestions": [
+      "self",
+      "text"
+    ],
+    "list_models_by_category": [
+      "self",
+      "category"
+    ],
+    "get_model_info": [
+      "self",
+      "model_name"
+    ],
+    "_build_model_filter_kwargs": [
+      "self"
+    ],
+    "_hub_auth_kwargs": [
+      "self"
+    ],
+    "_as_existing_local_path": [
+      "self",
+      "model_name"
+    ],
+    "_local_loading_kwargs": [
+      "self",
+      "model_name",
+      "kwargs"
+    ],
+    "_build_pipeline_cache_key": [
+      "self",
+      "full_model_name"
+    ],
+    "_freeze_cache_value": [
+      "self",
+      "value"
+    ],
+    "_release_cached_memory": [
+      "self"
+    ]
+  },
+  "SpanValidationWarning": {},
+  "validate_entity_spans": [
+    "entities",
+    "text"
+  ],
+  "detect_overlapping_entities": [
+    "entities"
+  ],
+  "CONFIG_ENV_VAR": [],
+  "PROFILE_ENV_VAR": [],
+  "_xdg_config": [],
+  "DEFAULT_CONFIG_DIR": [],
+  "DEFAULT_CONFIG_PATH": [],
+  "PROFILES_DIR": [],
+  "OpenMedConfig": {
+    "__post_init__": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "config_dict"
+    ],
+    "from_profile": [
+      "cls",
+      "profile_name"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "with_profile": [
+      "self",
+      "profile_name"
+    ]
+  },
+  "_config": [],
+  "get_config": [],
+  "set_config": [
+    "config"
+  ],
+  "resolve_config_path": [
+    "path"
+  ],
+  "ensure_config_directory": [
+    "path"
+  ],
+  "_parse_value": [
+    "value"
+  ],
+  "_format_value": [
+    "value"
+  ],
+  "_load_toml": [
+    "path"
+  ],
+  "_dump_toml": [
+    "data"
+  ],
+  "load_config_from_file": [
+    "path"
+  ],
+  "save_config_to_file": [
+    "config",
+    "path"
+  ],
+  "list_profiles": [],
+  "get_profile": [
+    "profile_name"
+  ],
+  "save_profile": [
+    "profile_name",
+    "settings"
+  ],
+  "delete_profile": [
+    "profile_name"
+  ],
+  "load_config_with_profile": [
+    "profile_name",
+    "config_path"
+  ],
+  "validate_french_nir": [
+    "text"
+  ],
+  "validate_german_steuer_id": [
+    "text"
+  ],
+  "validate_italian_codice_fiscale": [
+    "text"
+  ],
+  "_DNI_LETTERS": [],
+  "validate_spanish_dni": [
+    "text"
+  ],
+  "validate_spanish_nie": [
+    "text"
+  ],
+  "validate_dutch_bsn": [
+    "text"
+  ],
+  "_VERHOEFF_D": [],
+  "_VERHOEFF_P": [],
+  "validate_aadhaar": [
+    "text"
+  ],
+  "validate_portuguese_cpf": [
+    "text"
+  ],
+  "validate_portuguese_cnpj": [
+    "text"
+  ],
+  "validate_turkish_tckn": [
+    "text"
+  ],
+  "get_patterns_for_language": [
+    "lang"
+  ],
+  "DeidentificationMethod": [],
+  "PIIEntity": {
+    "__post_init__": [
+      "self"
+    ]
+  },
+  "DeidentificationResult": {
+    "to_dict": [
+      "self"
+    ]
+  },
+  "_ACCENT_NORMALIZE_LANGS": [],
+  "_DEFAULT_EN_MODEL": [],
+  "_DAY_FIRST_LANGS": [],
+  "_PRIVACY_FILTER_FAMILY_ALIASES": [],
+  "_TRUSTED_PRIVACY_FILTER_PREFIXES": [],
+  "_normalize_model_family": [
+    "value"
+  ],
+  "_looks_like_privacy_filter_identifier": [
+    "value"
+  ],
+  "_is_privacy_filter_artifact_path": [
+    "model_name"
+  ],
+  "_uses_model_led_pii_merging": [],
+  "_prediction_result_from_privacy_filter_raw": [
+    "raw",
+    "text"
+  ],
+  "_coerce_batched_raw_outputs": [
+    "raw_outputs",
+    "expected_count"
+  ],
+  "_extract_pii_via_privacy_filter": [
+    "text"
+  ],
+  "_strip_accents": [
+    "text"
+  ],
+  "_resolve_effective_pii_model": [
+    "model_name",
+    "lang"
+  ],
+  "_prepare_pii_text": [
+    "text"
+  ],
+  "_apply_pii_smart_merging": [
+    "result",
+    "effective_model",
+    "lang"
+  ],
+  "_extract_pii_batch": [
+    "texts",
+    "model_name",
+    "confidence_threshold",
+    "config",
+    "use_smart_merging",
+    "lang",
+    "normalize_accents"
+  ],
+  "extract_pii": [
+    "text",
+    "model_name",
+    "confidence_threshold",
+    "config",
+    "use_smart_merging",
+    "lang",
+    "normalize_accents"
+  ],
+  "_resolve_deidentification_method": [
+    "method",
+    "shift_dates",
+    "date_shift_days"
+  ],
+  "_build_deidentification_result": [
+    "text",
+    "pii_result"
+  ],
+  "_deidentify_batch": [
+    "texts",
+    "method",
+    "model_name",
+    "confidence_threshold",
+    "keep_year",
+    "shift_dates",
+    "date_shift_days",
+    "keep_mapping",
+    "config",
+    "use_smart_merging",
+    "lang",
+    "normalize_accents"
+  ],
+  "deidentify": [
+    "text",
+    "method",
+    "model_name",
+    "confidence_threshold",
+    "keep_year",
+    "shift_dates",
+    "date_shift_days",
+    "keep_mapping",
+    "config",
+    "use_smart_merging",
+    "lang",
+    "normalize_accents"
+  ],
+  "_redact_entity": [
+    "entity",
+    "method",
+    "keep_year",
+    "date_shift_days",
+    "lang",
+    "anonymizer"
+  ],
+  "_resolve_fake_data_key": [
+    "entity_type",
+    "lang"
+  ],
+  "_generate_fake_pii": [
+    "entity_type",
+    "lang"
+  ],
+  "_parse_localized_month_date": [
+    "date_str",
+    "lang"
+  ],
+  "_format_localized_month_date": [
+    "new_date",
+    "lang",
+    "style"
+  ],
+  "_shift_date": [
+    "date_str",
+    "shift_days",
+    "keep_year",
+    "lang"
+  ],
+  "_shift_date_basic": [
+    "date_str",
+    "shift_days",
+    "keep_year",
+    "lang"
+  ],
+  "_format_date_like_original": [
+    "original",
+    "new_date",
+    "lang"
+  ],
+  "reidentify": [
+    "deidentified_text",
+    "mapping"
+  ],
+  "trim_span_whitespace": [
+    "start",
+    "end",
+    "text"
+  ],
+  "refine_privacy_filter_span": [
+    "label",
+    "start",
+    "end",
+    "text"
+  ],
+  "TokenLabelInfo": {
+    "__init__": [
+      "self",
+      "class_names"
+    ]
+  },
+  "build_label_info": [
+    "id2label"
+  ],
+  "zero_viterbi_biases": [],
+  "_split_boundary_label": [
+    "label"
+  ],
+  "_transition_bias": [],
+  "_is_valid_transition": [],
+  "_build_viterbi_scores": [
+    "label_info",
+    "biases"
+  ],
+  "viterbi_decode": [
+    "token_logprobs"
+  ],
+  "labels_to_token_spans": [
+    "labels_by_index",
+    "label_info"
+  ],
+  "AnonymizerConfig": {},
+  "Anonymizer": {
+    "__init__": [
+      "self",
+      "lang"
+    ],
+    "_build_faker": [
+      "self",
+      "locale"
+    ],
+    "_get_faker": [
+      "self",
+      "locale"
+    ],
+    "_derive_seed": [
+      "self",
+      "canonical_label",
+      "original_value"
+    ],
+    "surrogate": [
+      "self",
+      "original",
+      "label"
+    ]
+  },
+  "resolve_locale": [
+    "lang",
+    "locale_override"
+  ],
+  "register_clinical_provider": [
+    "provider"
+  ],
+  "extract_digit_groups": [
+    "text"
+  ],
+  "preserve_phone_format": [
+    "original"
+  ],
+  "_DATE_SEPARATORS": [],
+  "preserve_date_format": [
+    "original"
+  ],
+  "preserve_email_pattern": [
+    "original",
+    "fake_email"
+  ],
+  "preserve_id_pattern": [
+    "original"
+  ],
+  "Generator": [],
+  "_gen_person": [
+    "faker",
+    "original"
+  ],
+  "_gen_first_name": [
+    "faker",
+    "original"
+  ],
+  "_gen_last_name": [
+    "faker",
+    "original"
+  ],
+  "_gen_middle_name": [
+    "faker",
+    "original"
+  ],
+  "_gen_prefix": [
+    "faker",
+    "original"
+  ],
+  "_gen_username": [
+    "faker",
+    "original"
+  ],
+  "_gen_email": [
+    "faker",
+    "original"
+  ],
+  "_gen_phone": [
+    "faker",
+    "original"
+  ],
+  "_gen_url": [
+    "faker",
+    "original"
+  ],
+  "_gen_location": [
+    "faker",
+    "original"
+  ],
+  "_gen_street_address": [
+    "faker",
+    "original"
+  ],
+  "_gen_building_number": [
+    "faker",
+    "original"
+  ],
+  "_gen_zipcode": [
+    "faker",
+    "original"
+  ],
+  "_gen_gps": [
+    "faker",
+    "original"
+  ],
+  "_DAY_FIRST_LOCALES": [],
+  "_gen_date": [
+    "faker",
+    "original"
+  ],
+  "_gen_date_of_birth": [
+    "faker",
+    "original"
+  ],
+  "_gen_time": [
+    "faker",
+    "original"
+  ],
+  "_gen_age": [
+    "faker",
+    "original"
+  ],
+  "_LOCALE_ID_METHODS": [],
+  "_gen_id_num": [
+    "faker",
+    "original"
+  ],
+  "_gen_ssn": [
+    "faker",
+    "original"
+  ],
+  "_gen_account_number": [
+    "faker",
+    "original"
+  ],
+  "_gen_password": [
+    "faker",
+    "original"
+  ],
+  "_gen_pin": [
+    "faker",
+    "original"
+  ],
+  "_gen_api_key": [
+    "faker",
+    "original"
+  ],
+  "_gen_credit_card": [
+    "faker",
+    "original"
+  ],
+  "_gen_credit_card_issuer": [
+    "faker",
+    "original"
+  ],
+  "_gen_cvv": [
+    "faker",
+    "original"
+  ],
+  "_gen_iban": [
+    "faker",
+    "original"
+  ],
+  "_gen_bic": [
+    "faker",
+    "original"
+  ],
+  "_gen_amount": [
+    "faker",
+    "original"
+  ],
+  "_gen_currency": [
+    "faker",
+    "original"
+  ],
+  "_gen_bitcoin_address": [
+    "faker",
+    "original"
+  ],
+  "_gen_ethereum_address": [
+    "faker",
+    "original"
+  ],
+  "_gen_litecoin_address": [
+    "faker",
+    "original"
+  ],
+  "_gen_masked_number": [
+    "faker",
+    "original"
+  ],
+  "_gen_gender": [
+    "faker",
+    "original"
+  ],
+  "_gen_eye_color": [
+    "faker",
+    "original"
+  ],
+  "_gen_height": [
+    "faker",
+    "original"
+  ],
+  "_gen_organization": [
+    "faker",
+    "original"
+  ],
+  "_gen_job_title": [
+    "faker",
+    "original"
+  ],
+  "_gen_job_department": [
+    "faker",
+    "original"
+  ],
+  "_gen_occupation": [
+    "faker",
+    "original"
+  ],
+  "_gen_ip_address": [
+    "faker",
+    "original"
+  ],
+  "_gen_mac_address": [
+    "faker",
+    "original"
+  ],
+  "_gen_user_agent": [
+    "faker",
+    "original"
+  ],
+  "_gen_vin": [
+    "faker",
+    "original"
+  ],
+  "_gen_vehicle_registration": [
+    "faker",
+    "original"
+  ],
+  "_gen_imei": [
+    "faker",
+    "original"
+  ],
+  "_gen_ordinal_direction": [
+    "faker",
+    "original"
+  ],
+  "_gen_other": [
+    "faker",
+    "original"
+  ],
+  "register_label_generator": [
+    "canonical_label",
+    "generator"
+  ],
+  "_verhoeff_checksum": [
+    "digits"
+  ],
+  "AadhaarProvider": {
+    "aadhaar": [
+      "self"
+    ]
+  },
+  "GermanSteuerIdProvider": {
+    "_MAX_TRIES": [],
+    "german_steuer_id": [
+      "self"
+    ]
+  },
+  "MedicalRecordNumberProvider": {
+    "medical_record_number": [
+      "self"
+    ]
+  },
+  "_luhn_check_digit": [
+    "digits"
+  ],
+  "NPIProvider": {
+    "npi": [
+      "self"
+    ]
+  },
+  "register_clinical_providers": [
+    "faker"
+  ]
+}
