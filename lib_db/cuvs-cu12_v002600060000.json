@@ -1,0 +1,615 @@
+{
+  "__version__": [],
+  "__all__": [],
+  "_check_input_array": [
+    "cai",
+    "exp_dt",
+    "exp_rows",
+    "exp_cols",
+    "exp_row_major"
+  ],
+  "_check_memory_location": [
+    "array_like",
+    "expected_host",
+    "name"
+  ],
+  "test_brute_force_knn": [
+    "n_index_rows",
+    "n_query_rows",
+    "n_cols",
+    "k",
+    "inplace",
+    "order",
+    "metric",
+    "dtype",
+    "serialize"
+  ],
+  "create_sparse_array": [
+    "shape",
+    "sparsity"
+  ],
+  "test_prefiltered_brute_force_knn": [
+    "n_index_rows",
+    "n_query_rows",
+    "n_cols",
+    "k",
+    "sparsity",
+    "inplace",
+    "metric",
+    "dtype",
+    "filter_type"
+  ],
+  "run_hnsw_ace_build_search_test": [
+    "n_rows",
+    "n_cols",
+    "n_queries",
+    "k",
+    "dtype",
+    "metric",
+    "npartitions",
+    "ef_construction",
+    "use_disk",
+    "hierarchy",
+    "expected_recall"
+  ],
+  "test_hnsw_ace_build_search": [
+    "dtype",
+    "metric",
+    "use_disk"
+  ],
+  "test_hnsw_ace_partitions": [
+    "npartitions"
+  ],
+  "test_hnsw_ace_ef_construction": [
+    "ef_construction"
+  ],
+  "test_hnsw_ace_hierarchy": [
+    "hierarchy"
+  ],
+  "test_hnsw_ace_disk_serialize_deserialize": [],
+  "test_hnsw_ace_tiny_memory_limit_triggers_disk_mode": [],
+  "run_cagra_build_search_test": [
+    "n_rows",
+    "n_cols",
+    "n_queries",
+    "k",
+    "dtype",
+    "metric",
+    "intermediate_graph_degree",
+    "graph_degree",
+    "build_algo",
+    "array_type",
+    "compare",
+    "inplace",
+    "test_extend",
+    "search_params",
+    "compression",
+    "serialize"
+  ],
+  "test_cagra_dataset_dtype_host_device": [
+    "dtype",
+    "array_type",
+    "inplace",
+    "build_algo",
+    "metric",
+    "serialize"
+  ],
+  "test_filtered_cagra": [
+    "sparsity"
+  ],
+  "test_cagra_index_params": [
+    "params"
+  ],
+  "test_cagra_vpq_compression": [],
+  "test_cagra_ivf_pq": [
+    "internal_dtype",
+    "n_rows",
+    "n_cols",
+    "n_queries",
+    "k",
+    "dtype",
+    "metric",
+    "intermediate_graph_degree",
+    "graph_degree",
+    "build_algo"
+  ],
+  "generate_data": [
+    "shape",
+    "dtype"
+  ],
+  "calc_recall": [
+    "ann_idx",
+    "true_nn_idx"
+  ],
+  "create_sparse_bitset": [
+    "n_size",
+    "sparsity"
+  ],
+  "run_filtered_search_test": [
+    "search_module",
+    "sparsity",
+    "n_rows",
+    "n_cols",
+    "n_queries",
+    "k"
+  ],
+  "test_product_quantizer": [
+    "n_rows",
+    "n_cols",
+    "pq_bits",
+    "inplace",
+    "pq_kmeans_type",
+    "use_vq",
+    "use_subspaces",
+    "device_memory"
+  ],
+  "test_extreme_cases": [],
+  "test_recall": [
+    "use_vq",
+    "use_subspaces",
+    "pq_dim"
+  ],
+  "make_cosine": [
+    "n_samples",
+    "n_features",
+    "x_range",
+    "noise",
+    "random_state"
+  ],
+  "test_all_neighbors_device_build_quality": [
+    "algo",
+    "cluster",
+    "metric"
+  ],
+  "test_all_neighbors_host_build_quality": [
+    "algo",
+    "cluster",
+    "snmg"
+  ],
+  "run_hnsw_build_search_test": [
+    "n_rows",
+    "n_cols",
+    "n_queries",
+    "k",
+    "dtype",
+    "metric",
+    "build_algo",
+    "intermediate_graph_degree",
+    "graph_degree",
+    "hierarchy",
+    "search_params",
+    "expected_recall"
+  ],
+  "test_hnsw": [
+    "dtype",
+    "k",
+    "ef",
+    "num_threads",
+    "metric",
+    "build_algo",
+    "hierarchy"
+  ],
+  "run_hnsw_extend_test": [
+    "n_rows",
+    "add_rows",
+    "n_cols",
+    "n_queries",
+    "k",
+    "dtype",
+    "metric",
+    "build_algo",
+    "intermediate_graph_degree",
+    "graph_degree",
+    "search_params",
+    "hierarchy"
+  ],
+  "test_hnsw_extend": [
+    "dtype",
+    "k",
+    "ef",
+    "num_threads",
+    "metric",
+    "build_algo",
+    "hierarchy"
+  ],
+  "has_multiple_gpus": [],
+  "requires_multiple_gpus": [],
+  "run_mg_ivf_flat_build_search_test": [
+    "n_rows",
+    "n_cols",
+    "n_queries",
+    "k",
+    "dtype",
+    "metric",
+    "distribution_mode",
+    "search_mode",
+    "merge_mode",
+    "n_rows_per_batch",
+    "compare",
+    "add_data_on_build",
+    "search_params",
+    "n_lists"
+  ],
+  "test_mg_ivf_flat_basic": [
+    "dtype",
+    "metric",
+    "distribution_mode"
+  ],
+  "test_mg_ivf_flat_additional_metrics": [
+    "metric",
+    "distribution_mode"
+  ],
+  "test_mg_ivf_flat_dtypes": [
+    "dtype"
+  ],
+  "test_mg_ivf_flat_distribution_modes": [
+    "distribution_mode"
+  ],
+  "test_mg_ivf_flat_search_params": [
+    "search_mode",
+    "merge_mode"
+  ],
+  "test_mg_ivf_flat_metrics": [
+    "metric"
+  ],
+  "test_mg_ivf_flat_extend": [],
+  "test_mg_ivf_flat_serialize": [],
+  "test_mg_ivf_flat_distribute": [],
+  "test_memory_location_validation": [],
+  "test_parameter_validation": [],
+  "test_parameter_properties": [],
+  "test_untrained_index_error": [],
+  "test_mg_ivf_flat_with_prealloc_output": [],
+  "test_index_repr": [],
+  "test_mg_ivf_flat_simple": [],
+  "test_mg_ivf_flat_integration": [],
+  "_gen_data": [
+    "shape",
+    "dtype"
+  ],
+  "test_vamana_build_basic": [
+    "dtype"
+  ],
+  "test_vamana_build_basic_host": [
+    "dtype"
+  ],
+  "test_vamana_serialize": [
+    "tmp_path",
+    "include_dataset"
+  ],
+  "test_vamana_build_rejects_unsupported_dtype": [],
+  "test_nn_descent": [
+    "n_rows",
+    "n_cols",
+    "device_memory",
+    "dtype",
+    "inplace",
+    "return_distances"
+  ],
+  "test_nn_descent_dist_comp_dtype": [
+    "n_cols",
+    "dist_comp_dtype",
+    "dtype"
+  ],
+  "test_device_tensor_view": [
+    "dtype"
+  ],
+  "test_distance": [
+    "n_rows",
+    "n_cols",
+    "inplace",
+    "order",
+    "metric",
+    "dtype",
+    "times"
+  ],
+  "run_mg_ivf_pq_build_search_test": [
+    "n_rows",
+    "n_cols",
+    "n_queries",
+    "k",
+    "dtype",
+    "metric",
+    "distribution_mode",
+    "search_mode",
+    "merge_mode",
+    "n_rows_per_batch",
+    "compare",
+    "add_data_on_build",
+    "search_params",
+    "n_lists",
+    "pq_bits",
+    "pq_dim",
+    "codebook_kind"
+  ],
+  "test_mg_ivf_pq_basic": [
+    "dtype",
+    "metric",
+    "distribution_mode"
+  ],
+  "test_mg_ivf_pq_additional_metrics": [
+    "metric",
+    "distribution_mode"
+  ],
+  "test_mg_ivf_pq_dtypes": [
+    "dtype"
+  ],
+  "test_mg_ivf_pq_distribution_modes": [
+    "distribution_mode"
+  ],
+  "test_mg_ivf_pq_search_params": [
+    "search_mode",
+    "merge_mode"
+  ],
+  "test_mg_ivf_pq_pq_parameters": [],
+  "test_mg_ivf_pq_metrics": [
+    "metric"
+  ],
+  "test_mg_ivf_pq_extend": [],
+  "test_mg_ivf_pq_serialize": [],
+  "test_mg_ivf_pq_distribute": [],
+  "test_mg_ivf_pq_with_prealloc_output": [],
+  "test_mg_ivf_pq_simple": [],
+  "test_mg_ivf_pq_integration": [],
+  "run_ivf_flat_build_search_test": [
+    "n_rows",
+    "n_cols",
+    "n_queries",
+    "k",
+    "dtype",
+    "add_data_on_build",
+    "metric",
+    "compare",
+    "inplace",
+    "search_params",
+    "serialize"
+  ],
+  "test_ivf_flat": [
+    "inplace",
+    "dtype",
+    "metric"
+  ],
+  "test_extend": [
+    "dtype",
+    "serialize"
+  ],
+  "test_filtered_ivf_flat": [
+    "sparsity"
+  ],
+  "test_version_constants_are_populated": [],
+  "test_kmeans_fit": [
+    "n_rows",
+    "n_cols",
+    "n_clusters",
+    "dtype",
+    "hierarchical"
+  ],
+  "test_cluster_cost": [
+    "n_rows",
+    "n_cols",
+    "n_clusters",
+    "dtype"
+  ],
+  "test_fit_host_matches_fit_device": [
+    "n_rows",
+    "n_cols",
+    "n_clusters",
+    "streaming_batch_size",
+    "dtype",
+    "weighted"
+  ],
+  "test_binary_quantizer": [
+    "n_rows",
+    "n_cols",
+    "inplace",
+    "device_memory",
+    "dtype"
+  ],
+  "test_save_load_ivf_flat": [
+    "dtype"
+  ],
+  "test_save_load_cagra": [
+    "dtype"
+  ],
+  "test_save_load_ivf_pq": [],
+  "test_save_load_brute_force": [],
+  "run_save_load": [
+    "ann_module",
+    "dtype"
+  ],
+  "test_fit_transform_inverse_transform": [
+    "n_rows",
+    "n_cols"
+  ],
+  "test_fit_then_transform": [
+    "n_rows",
+    "n_cols"
+  ],
+  "test_dim_reduction": [
+    "n_rows",
+    "n_cols",
+    "n_components"
+  ],
+  "test_explained_variance": [],
+  "test_params_defaults": [],
+  "test_params_custom": [],
+  "run_refine": [
+    "n_rows",
+    "n_cols",
+    "n_queries",
+    "metric",
+    "k0",
+    "k",
+    "inplace",
+    "dtype",
+    "memory_type"
+  ],
+  "test_refine_dtypes": [
+    "n_queries",
+    "dtype",
+    "inplace",
+    "metric",
+    "memory_type"
+  ],
+  "test_refine_row_col": [
+    "params",
+    "memory_type"
+  ],
+  "test_input_dtype": [
+    "memory_type"
+  ],
+  "test_input_assertions": [
+    "params",
+    "memory_type"
+  ],
+  "_name_in_all": [
+    "parent",
+    "name"
+  ],
+  "_is_public_name": [
+    "parent",
+    "name"
+  ],
+  "_find_doctests_in_obj": [
+    "obj",
+    "finder",
+    "criteria"
+  ],
+  "DOC_STRINGS": [],
+  "_test_name_from_docstring": [
+    "docstring"
+  ],
+  "test_docstring": [
+    "docstring"
+  ],
+  "run_mg_cagra_build_search_test": [
+    "n_rows",
+    "n_cols",
+    "n_queries",
+    "k",
+    "dtype",
+    "metric",
+    "distribution_mode",
+    "search_mode",
+    "merge_mode",
+    "n_rows_per_batch",
+    "compare",
+    "search_params",
+    "graph_degree",
+    "intermediate_graph_degree"
+  ],
+  "test_mg_cagra_basic": [
+    "dtype",
+    "metric",
+    "distribution_mode"
+  ],
+  "test_mg_cagra_additional_metrics": [
+    "metric",
+    "distribution_mode"
+  ],
+  "test_mg_cagra_dtypes": [
+    "dtype"
+  ],
+  "test_mg_cagra_distribution_modes": [
+    "distribution_mode"
+  ],
+  "test_mg_cagra_search_params": [
+    "search_mode",
+    "merge_mode"
+  ],
+  "test_mg_cagra_metrics": [
+    "metric"
+  ],
+  "test_mg_cagra_serialize": [],
+  "test_mg_cagra_distribute": [],
+  "test_mg_cagra_with_prealloc_output": [],
+  "test_mg_cagra_simple": [],
+  "test_mg_cagra_integration": [],
+  "run_cagra_ace_build_search_test": [
+    "n_rows",
+    "n_cols",
+    "n_queries",
+    "k",
+    "dtype",
+    "metric",
+    "intermediate_graph_degree",
+    "graph_degree",
+    "npartitions",
+    "ef_construction",
+    "use_disk",
+    "hierarchy"
+  ],
+  "test_cagra_ace_dtypes_and_metrics": [
+    "dtype",
+    "metric",
+    "use_disk"
+  ],
+  "test_cagra_ace_partitions": [
+    "npartitions"
+  ],
+  "test_cagra_ace_ef_construction": [
+    "ef_construction"
+  ],
+  "test_cagra_ace_hierarchy": [
+    "hierarchy"
+  ],
+  "test_cagra_ace_tiny_memory_limit_triggers_disk_mode": [],
+  "test_scalar_quantizer": [
+    "n_rows",
+    "n_cols",
+    "inplace",
+    "device_memory",
+    "dtype"
+  ],
+  "run_ivf_pq_build_search_test": [
+    "n_rows",
+    "n_cols",
+    "n_queries",
+    "k",
+    "dtype",
+    "n_lists",
+    "metric",
+    "pq_bits",
+    "pq_dim",
+    "codebook_kind",
+    "add_data_on_build",
+    "n_probes",
+    "lut_dtype",
+    "internal_distance_dtype",
+    "force_random_rotation",
+    "kmeans_trainset_fraction",
+    "kmeans_n_iters",
+    "compare",
+    "inplace",
+    "array_type",
+    "serialize"
+  ],
+  "test_ivf_pq": [
+    "inplace",
+    "dtype",
+    "metric"
+  ],
+  "test_ivf_pq_search_params": [
+    "params"
+  ],
+  "test_ivf_pq_dtype": [
+    "inplace",
+    "dtype",
+    "array_type",
+    "serialize"
+  ],
+  "test_build_precomputed": [
+    "codebook_kind",
+    "metric"
+  ],
+  "test_transform": [
+    "codebook_kind",
+    "dtype",
+    "n_rows",
+    "pq_bits"
+  ],
+  "_resources_param_string": [],
+  "auto_sync_resources": [
+    "f"
+  ]
+}
