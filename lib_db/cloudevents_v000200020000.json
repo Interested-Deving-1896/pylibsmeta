@@ -1,0 +1,746 @@
+{
+  "__version__": [],
+  "BaseCloudEventException": {},
+  "CloudEventValidationError": {
+    "__init__": [
+      "self",
+      "errors"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "MissingRequiredAttributeError": {
+    "__init__": [
+      "self",
+      "attribute_name"
+    ]
+  },
+  "CustomExtensionAttributeError": {
+    "__init__": [
+      "self",
+      "attribute_name",
+      "msg"
+    ]
+  },
+  "InvalidAttributeTypeError": {
+    "__init__": [
+      "self",
+      "attribute_name",
+      "expected_type"
+    ]
+  },
+  "InvalidAttributeValueError": {
+    "__init__": [
+      "self",
+      "attribute_name",
+      "msg"
+    ]
+  },
+  "SpecVersion": [],
+  "SPECVERSION_V1_0": [],
+  "SPECVERSION_V0_3": [],
+  "EventFactory": [],
+  "BaseCloudEvent": {
+    "__init__": [
+      "self",
+      "attributes",
+      "data"
+    ],
+    "get_id": [
+      "self"
+    ],
+    "get_source": [
+      "self"
+    ],
+    "get_type": [
+      "self"
+    ],
+    "get_specversion": [
+      "self"
+    ],
+    "get_datacontenttype": [
+      "self"
+    ],
+    "get_dataschema": [
+      "self"
+    ],
+    "get_subject": [
+      "self"
+    ],
+    "get_time": [
+      "self"
+    ],
+    "get_extension": [
+      "self",
+      "extension_name"
+    ],
+    "get_data": [
+      "self"
+    ],
+    "get_attributes": [
+      "self"
+    ]
+  },
+  "CloudEvent": {
+    "__init__": [
+      "self",
+      "attributes",
+      "data"
+    ],
+    "_validate_attribute": [
+      "attributes"
+    ],
+    "_validate_required_attributes": [
+      "attributes"
+    ],
+    "_validate_optional_attributes": [
+      "attributes"
+    ],
+    "_validate_extension_attributes": [
+      "attributes"
+    ],
+    "get_id": [
+      "self"
+    ],
+    "get_source": [
+      "self"
+    ],
+    "get_type": [
+      "self"
+    ],
+    "get_specversion": [
+      "self"
+    ],
+    "get_datacontenttype": [
+      "self"
+    ],
+    "get_dataschema": [
+      "self"
+    ],
+    "get_subject": [
+      "self"
+    ],
+    "get_time": [
+      "self"
+    ],
+    "get_extension": [
+      "self",
+      "extension_name"
+    ],
+    "get_data": [
+      "self"
+    ],
+    "get_attributes": [
+      "self"
+    ],
+    "get_datacontentencoding": [
+      "self"
+    ],
+    "get_schemaurl": [
+      "self"
+    ]
+  },
+  "AMQPMessage": {},
+  "_encode_amqp_value": [
+    "value"
+  ],
+  "_decode_amqp_value": [
+    "attr_name",
+    "value"
+  ],
+  "to_binary": [
+    "event",
+    "event_format"
+  ],
+  "from_binary": [
+    "message",
+    "event_format",
+    "event_factory"
+  ],
+  "to_structured": [
+    "event",
+    "event_format"
+  ],
+  "from_structured": [
+    "message",
+    "event_format",
+    "event_factory"
+  ],
+  "from_amqp": [
+    "message",
+    "event_format",
+    "event_factory"
+  ],
+  "to_binary_event": [
+    "event",
+    "event_format"
+  ],
+  "from_binary_event": [
+    "message",
+    "event_format"
+  ],
+  "to_structured_event": [
+    "event",
+    "event_format"
+  ],
+  "from_structured_event": [
+    "message",
+    "event_format"
+  ],
+  "from_amqp_event": [
+    "message",
+    "event_format"
+  ],
+  "RabbitMQMessage": {},
+  "from_rabbitmq": [
+    "message",
+    "event_format",
+    "event_factory"
+  ],
+  "from_rabbitmq_event": [
+    "message",
+    "event_format"
+  ],
+  "_encode_header_value": [
+    "value"
+  ],
+  "_decode_header_value": [
+    "attr_name",
+    "value"
+  ],
+  "HTTPMessage": {},
+  "from_http": [
+    "message",
+    "event_format",
+    "event_factory"
+  ],
+  "from_http_event": [
+    "message",
+    "event_format"
+  ],
+  "KeyMapper": [],
+  "KafkaMessage": {},
+  "_default_key_mapper": [
+    "event"
+  ],
+  "from_kafka": [
+    "message",
+    "event_format",
+    "event_factory"
+  ],
+  "from_kafka_event": [
+    "message",
+    "event_format"
+  ],
+  "encode_header_value": [
+    "value"
+  ],
+  "decode_header_value": [
+    "attr_name",
+    "value"
+  ],
+  "get_event_factory_for_version": [
+    "specversion"
+  ],
+  "_JSONEncoderWithDatetime": {
+    "default": [
+      "self",
+      "obj"
+    ]
+  },
+  "JSONFormat": {
+    "read": [
+      "self",
+      "event_factory",
+      "data"
+    ],
+    "write": [
+      "self",
+      "event"
+    ],
+    "write_data": [
+      "self",
+      "data",
+      "datacontenttype"
+    ],
+    "read_data": [
+      "self",
+      "body",
+      "datacontenttype"
+    ],
+    "get_content_type": [
+      "self"
+    ]
+  },
+  "Format": {
+    "read": [
+      "self",
+      "event_factory",
+      "data"
+    ],
+    "write": [
+      "self",
+      "event"
+    ],
+    "write_data": [
+      "self",
+      "data",
+      "datacontenttype"
+    ],
+    "read_data": [
+      "self",
+      "body",
+      "datacontenttype"
+    ],
+    "get_content_type": [
+      "self"
+    ]
+  },
+  "GenericException": {},
+  "MissingRequiredFields": {},
+  "InvalidRequiredFields": {},
+  "InvalidStructuredJSON": {},
+  "InvalidHeadersFormat": {},
+  "DataMarshallerError": {},
+  "DataUnmarshallerError": {},
+  "IncompatibleArgumentsError": {},
+  "PydanticFeatureNotInstalled": {},
+  "_best_effort_serialize_to_json": [
+    "value"
+  ],
+  "_obj_by_version": [],
+  "to_json": [
+    "event",
+    "data_marshaller"
+  ],
+  "from_json": [
+    "event_type",
+    "data",
+    "data_unmarshaller"
+  ],
+  "_to_http": [
+    "event",
+    "format",
+    "data_marshaller"
+  ],
+  "best_effort_encode_attribute_value": [
+    "value"
+  ],
+  "from_dict": [
+    "event_type",
+    "event"
+  ],
+  "to_dict": [
+    "event"
+  ],
+  "_json_or_string": [
+    "content"
+  ],
+  "__all__": [],
+  "KeyMapperError": {},
+  "IDENTITY_MARSHALLER": [],
+  "IDENTITY_UNMARSHALLER": [],
+  "HTTPMarshaller": {
+    "__init__": [
+      "self",
+      "converters"
+    ],
+    "FromRequest": [
+      "self",
+      "event",
+      "headers",
+      "body",
+      "data_unmarshaller"
+    ],
+    "ToRequest": [
+      "self",
+      "event",
+      "converter_type",
+      "data_marshaller"
+    ]
+  },
+  "NewDefaultHTTPMarshaller": [],
+  "NewHTTPMarshaller": [
+    "converters"
+  ],
+  "UnsupportedEvent": {
+    "__init__": [
+      "self",
+      "event_class"
+    ]
+  },
+  "InvalidDataUnmarshaller": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "InvalidDataMarshaller": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "NoSuchConverter": {
+    "__init__": [
+      "self",
+      "converter_type"
+    ]
+  },
+  "UnsupportedEventConverter": {
+    "__init__": [
+      "self",
+      "content_type"
+    ]
+  },
+  "_K_co": [],
+  "_V_co": [],
+  "MarshallerType": [],
+  "UnmarshallerType": [],
+  "SupportsDuplicateItems": {
+    "items": [
+      "self"
+    ]
+  },
+  "Option": {
+    "__init__": [
+      "self",
+      "name",
+      "value",
+      "is_required"
+    ],
+    "set": [
+      "self",
+      "new_value"
+    ],
+    "get": [
+      "self"
+    ],
+    "required": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "obj"
+    ]
+  },
+  "Event": {
+    "_ce_required_fields": [],
+    "_ce_optional_fields": [],
+    "__init__": [
+      "self"
+    ],
+    "CloudEventVersion": [
+      "self"
+    ],
+    "EventType": [
+      "self"
+    ],
+    "Source": [
+      "self"
+    ],
+    "EventID": [
+      "self"
+    ],
+    "EventTime": [
+      "self"
+    ],
+    "Subject": [
+      "self"
+    ],
+    "Schema": [
+      "self"
+    ],
+    "ContentType": [
+      "self"
+    ],
+    "Data": [
+      "self"
+    ],
+    "Extensions": [
+      "self"
+    ],
+    "SetEventType": [
+      "self",
+      "eventType"
+    ],
+    "SetSource": [
+      "self",
+      "source"
+    ],
+    "SetEventID": [
+      "self",
+      "eventID"
+    ],
+    "SetEventTime": [
+      "self",
+      "eventTime"
+    ],
+    "SetSubject": [
+      "self",
+      "subject"
+    ],
+    "SetSchema": [
+      "self",
+      "schema"
+    ],
+    "SetContentType": [
+      "self",
+      "contentType"
+    ],
+    "SetData": [
+      "self",
+      "data"
+    ],
+    "SetExtensions": [
+      "self",
+      "extensions"
+    ],
+    "schema": [
+      "self",
+      "value"
+    ],
+    "subject": [
+      "self",
+      "value"
+    ]
+  },
+  "DEFAULT_SPECVERSION": [],
+  "default_time_selection_algorithm": [],
+  "default_id_selection_algorithm": [],
+  "EventGetterSetter": {
+    "CloudEventVersion": [
+      "self"
+    ],
+    "specversion": [
+      "self",
+      "value"
+    ],
+    "SetCloudEventVersion": [
+      "self",
+      "specversion"
+    ],
+    "EventType": [
+      "self"
+    ],
+    "type": [
+      "self",
+      "value"
+    ],
+    "SetEventType": [
+      "self",
+      "eventType"
+    ],
+    "Source": [
+      "self"
+    ],
+    "source": [
+      "self",
+      "value"
+    ],
+    "SetSource": [
+      "self",
+      "source"
+    ],
+    "EventID": [
+      "self"
+    ],
+    "id": [
+      "self",
+      "value"
+    ],
+    "SetEventID": [
+      "self",
+      "eventID"
+    ],
+    "EventTime": [
+      "self"
+    ],
+    "time": [
+      "self",
+      "value"
+    ],
+    "SetEventTime": [
+      "self",
+      "eventTime"
+    ],
+    "SchemaURL": [
+      "self"
+    ],
+    "schema": [
+      "self",
+      "value"
+    ],
+    "SetSchemaURL": [
+      "self",
+      "schemaURL"
+    ],
+    "Data": [
+      "self"
+    ],
+    "data": [
+      "self",
+      "value"
+    ],
+    "SetData": [
+      "self",
+      "data"
+    ],
+    "Extensions": [
+      "self"
+    ],
+    "extensions": [
+      "self",
+      "value"
+    ],
+    "SetExtensions": [
+      "self",
+      "extensions"
+    ],
+    "ContentType": [
+      "self"
+    ],
+    "content_type": [
+      "self",
+      "value"
+    ],
+    "SetContentType": [
+      "self",
+      "contentType"
+    ]
+  },
+  "BaseEvent": {
+    "Properties": [
+      "self",
+      "with_nullable"
+    ],
+    "Get": [
+      "self",
+      "key"
+    ],
+    "Set": [
+      "self",
+      "key",
+      "value"
+    ],
+    "MarshalJSON": [
+      "self",
+      "data_marshaller"
+    ],
+    "UnmarshalJSON": [
+      "self",
+      "b",
+      "data_unmarshaller"
+    ],
+    "UnmarshalBinary": [
+      "self",
+      "headers",
+      "body",
+      "data_unmarshaller"
+    ],
+    "MarshalBinary": [
+      "self",
+      "data_marshaller"
+    ]
+  },
+  "JSONHTTPCloudEventConverter": {
+    "can_read": [
+      "self",
+      "content_type",
+      "headers"
+    ],
+    "event_supported": [
+      "self",
+      "event"
+    ],
+    "read": [
+      "self",
+      "event",
+      "headers",
+      "body",
+      "data_unmarshaller"
+    ],
+    "write": [
+      "self",
+      "event",
+      "data_marshaller"
+    ]
+  },
+  "NewJSONHTTPCloudEventConverter": [],
+  "is_structured": [
+    "headers"
+  ],
+  "BinaryHTTPCloudEventConverter": {
+    "SUPPORTED_VERSIONS": [],
+    "can_read": [
+      "self",
+      "content_type",
+      "headers"
+    ],
+    "event_supported": [
+      "self",
+      "event"
+    ],
+    "read": [
+      "self",
+      "event",
+      "headers",
+      "body",
+      "data_unmarshaller"
+    ],
+    "write": [
+      "self",
+      "event",
+      "data_marshaller"
+    ]
+  },
+  "NewBinaryHTTPCloudEventConverter": [],
+  "is_binary": [
+    "headers"
+  ],
+  "has_binary_headers": [
+    "headers"
+  ],
+  "Converter": {
+    "read": [
+      "self",
+      "event",
+      "headers",
+      "body",
+      "data_unmarshaller"
+    ],
+    "event_supported": [
+      "self",
+      "event"
+    ],
+    "can_read": [
+      "self",
+      "content_type",
+      "headers"
+    ],
+    "write": [
+      "self",
+      "event",
+      "data_marshaller"
+    ]
+  },
+  "_required_by_version": [],
+  "to_binary_http": [
+    "event",
+    "data_marshaller"
+  ],
+  "to_structured_http": [
+    "event",
+    "data_marshaller"
+  ],
+  "default_marshaller": [
+    "content"
+  ],
+  "AnyCloudEvent": [],
+  "FIELD_DESCRIPTIONS": [],
+  "_ce_json_dumps": [
+    "obj"
+  ],
+  "_ce_json_loads": [
+    "data"
+  ]
+}
