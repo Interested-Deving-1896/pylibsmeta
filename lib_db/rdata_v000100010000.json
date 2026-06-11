@@ -1,0 +1,856 @@
+{
+  "write_rds": [
+    "path",
+    "data"
+  ],
+  "write_rda": [
+    "path",
+    "data"
+  ],
+  "_get_test_data_path": [],
+  "__version__": [],
+  "R_CODE_PREFIX": [],
+  "HasDoc": {},
+  "get_data_source": [
+    "function_or_class"
+  ],
+  "execute_r_data_source": [
+    "function_or_class"
+  ],
+  "read_rdata": [
+    "file_or_path"
+  ],
+  "read_rds": [
+    "file_or_path"
+  ],
+  "read_rda": [
+    "file_or_path"
+  ],
+  "get_na_value": [
+    "dtype"
+  ],
+  "is_na": [
+    "array"
+  ],
+  "mask_na_values": [
+    "array"
+  ],
+  "unparse_file": [
+    "path",
+    "r_data"
+  ],
+  "unparse_fileobj": [
+    "fileobj",
+    "r_data"
+  ],
+  "unparse_data": [
+    "r_data"
+  ],
+  "build_byte_to_str_map": [],
+  "UnparserASCII": {
+    "__init__": [
+      "self",
+      "file"
+    ],
+    "_add_line": [
+      "self",
+      "line"
+    ],
+    "unparse_magic": [
+      "self"
+    ],
+    "_unparse_array_values_raw": [
+      "self",
+      "array"
+    ],
+    "_unparse_string_characters": [
+      "self",
+      "value"
+    ]
+  },
+  "UnparserBinary": {
+    "__init__": [
+      "self",
+      "file"
+    ],
+    "unparse_magic": [
+      "self"
+    ],
+    "_unparse_array_values_raw": [
+      "self",
+      "array"
+    ],
+    "_unparse_string_characters": [
+      "self",
+      "value"
+    ]
+  },
+  "UnparserXDR": {
+    "__init__": [
+      "self",
+      "file"
+    ],
+    "unparse_magic": [
+      "self"
+    ],
+    "_unparse_array_values_raw": [
+      "self",
+      "array"
+    ],
+    "_unparse_string_characters": [
+      "self",
+      "value"
+    ]
+  },
+  "WriteableBinaryFile": {
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ],
+    "write": [
+      "msg"
+    ]
+  },
+  "pack_r_object_info": [
+    "info"
+  ],
+  "Unparser": {
+    "unparse_magic": [
+      "self"
+    ],
+    "unparse_header": [
+      "self",
+      "versions",
+      "extra"
+    ],
+    "unparse_int": [
+      "self",
+      "value"
+    ],
+    "unparse_array": [
+      "self",
+      "array"
+    ],
+    "_unparse_array_values": [
+      "self",
+      "array"
+    ],
+    "_unparse_array_values_raw": [
+      "self",
+      "array"
+    ],
+    "unparse_string": [
+      "self",
+      "value"
+    ],
+    "_unparse_string_characters": [
+      "self",
+      "value"
+    ],
+    "unparse_r_data": [
+      "self",
+      "r_data"
+    ],
+    "unparse_r_object": [
+      "self",
+      "obj"
+    ]
+  },
+  "TESTDATA_PATH": [],
+  "NATIVE_BINARY_FORMAT_VERSION": [],
+  "test_open_file": [
+    "dataset_path",
+    "rdata_format_suffix",
+    "subtests"
+  ],
+  "test_native_binary_rds_little_endian": [],
+  "test_native_binary_rds_big_endian": [],
+  "test_native_binary_rda_header": [],
+  "test_logical": [
+    "dataset_object"
+  ],
+  "test_nullable_logical": [
+    "dataset_object"
+  ],
+  "test_nullable_int": [
+    "dataset_object"
+  ],
+  "test_vector": [
+    "dataset_object"
+  ],
+  "test_named_vector": [
+    "dataset_object"
+  ],
+  "test_empty_string": [
+    "dataset_object"
+  ],
+  "test_na_string": [
+    "dataset_object"
+  ],
+  "test_complex": [
+    "dataset_object"
+  ],
+  "test_matrix": [
+    "dataset_object"
+  ],
+  "test_named_matrix": [
+    "dataset_object"
+  ],
+  "test_half_named_matrix": [
+    "dataset_object"
+  ],
+  "test_full_named_matrix": [
+    "dataset_object"
+  ],
+  "test_empty_list": [
+    "dataset_object"
+  ],
+  "test_empty_named_list": [
+    "dataset_object"
+  ],
+  "test_list": [
+    "dataset_object"
+  ],
+  "test_list_attrs": [
+    "dataset_object"
+  ],
+  "test_file": [
+    "dataset_object"
+  ],
+  "test_expression": [
+    "dataset_object"
+  ],
+  "test_builtin": [
+    "dataset_object"
+  ],
+  "test_minimal_function_uncompiled": [
+    "dataset_object"
+  ],
+  "test_minimal_function": [
+    "dataset_object"
+  ],
+  "test_empty_function_uncompiled": [
+    "dataset_object"
+  ],
+  "test_empty_function": [
+    "dataset_object"
+  ],
+  "test_function": [
+    "dataset_object"
+  ],
+  "test_function_arg": [
+    "dataset_object"
+  ],
+  "test_empty_dataframe": [
+    "dataset_object"
+  ],
+  "test_empty_dataframe_without_names": [
+    "dataset_object"
+  ],
+  "test_dataframe": [
+    "dataset_object"
+  ],
+  "test_dataframe_rownames": [
+    "dataset_object"
+  ],
+  "test_dataframe_int_rownames": [
+    "dataset_object"
+  ],
+  "test_dataframe_range_rownames": [
+    "dataset_object"
+  ],
+  "test_dataframe_dtypes": [
+    "dataset_object"
+  ],
+  "test_dataframe_dtypes_with_na": [
+    "dataset_object"
+  ],
+  "test_dataframe_float_with_na_nan": [
+    "dataset_object"
+  ],
+  "test_factor": [
+    "dataset_object"
+  ],
+  "test_ts": [
+    "dataset_object"
+  ],
+  "test_s4": [
+    "recwarn",
+    "dataset_object"
+  ],
+  "test_environment_global_default": [
+    "dataset_object"
+  ],
+  "test_environment_global_argument": [
+    "dataset_object"
+  ],
+  "test_emptyenv": [
+    "dataset_object"
+  ],
+  "test_altrep_compact_intseq": [
+    "dataset_object"
+  ],
+  "test_altrep_compact_intseq_asymmetric": [
+    "dataset_object"
+  ],
+  "test_altrep_compact_realseq": [
+    "dataset_object"
+  ],
+  "test_altrep_compact_realseq_asymmetric": [
+    "dataset_object"
+  ],
+  "test_altrep_deferred_string": [
+    "dataset_object"
+  ],
+  "test_altrep_wrap_real": [
+    "dataset_object_parsed",
+    "dataset_object"
+  ],
+  "test_altrep_wrap_real_attributes": [
+    "dataset_object_parsed",
+    "dataset_object"
+  ],
+  "test_altrep_wrap_real_class_attribute": [
+    "dataset_object_parsed",
+    "dataset_object"
+  ],
+  "test_altrep_wrap_string": [
+    "dataset_object"
+  ],
+  "test_altrep_wrap_logical": [
+    "dataset_object"
+  ],
+  "test_ascii_characters": [
+    "dataset_object"
+  ],
+  "test_nan_inf": [
+    "dataset_object"
+  ],
+  "test_encoding_utf8": [
+    "dataset_object"
+  ],
+  "test_encoding_latin1": [
+    "dataset_object"
+  ],
+  "test_encoding_bytes": [
+    "dataset_object"
+  ],
+  "test_encoding_unknown": [
+    "dataset_object",
+    "rdata_format_version"
+  ],
+  "test_namespace": [
+    "dataset_object"
+  ],
+  "test_int_is_na": [],
+  "test_float_is_na": [],
+  "test_value_is_na": [
+    "value"
+  ],
+  "test_value_is_not_na": [
+    "value"
+  ],
+  "test_int64": [],
+  "test_wrong_type": [],
+  "test_masked_array": [],
+  "test_masked_array_fill": [],
+  "test_nonmasked_array": [],
+  "valid_compressions": [],
+  "valid_formats": [],
+  "decompress_data": [
+    "data"
+  ],
+  "fnames": [],
+  "parse_file_type_and_format": [
+    "data"
+  ],
+  "test_unparse": [
+    "fname"
+  ],
+  "test_convert_to_r": [
+    "fname",
+    "expand_altrep"
+  ],
+  "test_convert_to_r_rda_missing_names": [],
+  "test_convert_to_r_rda_nonstr_names": [],
+  "test_convert_to_r_empty_rda": [],
+  "test_unparse_bad_rda": [],
+  "test_convert_to_r_bad_encoding": [],
+  "test_convert_to_r_unsupported_encoding": [],
+  "test_convert_to_r_nonstr_dict_keys": [],
+  "test_unparse_big_int": [
+    "file_format",
+    "value"
+  ],
+  "test_unparse_binary_magic_rds": [],
+  "test_unparse_binary_magic_rda": [],
+  "test_convert_dataframe_pandas_dtypes": [],
+  "test_convert_dataframe_rangeindex": [],
+  "test_convert_dataframe_rangeindex_flattened": [],
+  "test_write_file": [
+    "compression",
+    "file_format",
+    "file_type"
+  ],
+  "BinaryFileLike": {
+    "read": [
+      "self"
+    ]
+  },
+  "BinaryBufferFileLike": {
+    "buffer": [
+      "self"
+    ]
+  },
+  "AcceptableFile": [],
+  "FileTypes": {
+    "bzip2": [],
+    "gzip": [],
+    "xz": [],
+    "rdata_binary_v2": [],
+    "rdata_binary_v3": [],
+    "rdata_native_binary_v2": [],
+    "rdata_native_binary_v3": [],
+    "rdata_ascii_v2": [],
+    "rdata_ascii_v3": []
+  },
+  "magic_dict": [],
+  "file_type": [
+    "data"
+  ],
+  "RdataFormats": {
+    "XDR": [],
+    "ASCII": [],
+    "ASCII_CRLF": [],
+    "binary": []
+  },
+  "rdata_format": [
+    "data"
+  ],
+  "RObjectType": {
+    "NIL": [],
+    "SYM": [],
+    "LIST": [],
+    "CLO": [],
+    "ENV": [],
+    "PROM": [],
+    "LANG": [],
+    "SPECIAL": [],
+    "BUILTIN": [],
+    "CHAR": [],
+    "LGL": [],
+    "INT": [],
+    "REAL": [],
+    "CPLX": [],
+    "STR": [],
+    "DOT": [],
+    "ANY": [],
+    "VEC": [],
+    "EXPR": [],
+    "BCODE": [],
+    "EXTPTR": [],
+    "WEAKREF": [],
+    "RAW": [],
+    "S4": [],
+    "ALTREP": [],
+    "ATTRLIST": [],
+    "ATTRLANG": [],
+    "BASEENV": [],
+    "EMPTYENV": [],
+    "BCREPREF": [],
+    "BCREPDEF": [],
+    "NAMESPACE": [],
+    "MISSINGARG": [],
+    "GLOBALENV": [],
+    "NILVALUE": [],
+    "REF": []
+  },
+  "CharFlags": {
+    "HAS_HASH": [],
+    "BYTES": [],
+    "LATIN1": [],
+    "UTF8": [],
+    "CACHED": [],
+    "ASCII": []
+  },
+  "RVersions": {
+    "__str__": [
+      "self"
+    ]
+  },
+  "RExtraInfo": {},
+  "RObjectInfo": {},
+  "_str_internal": [
+    "obj",
+    "indent",
+    "used_references"
+  ],
+  "RObject": {
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "RData": {
+    "__str__": [
+      "self"
+    ]
+  },
+  "EnvironmentValue": {},
+  "AltRepConstructor": [],
+  "AltRepConstructorMap": [],
+  "format_float_with_scipen": [
+    "number",
+    "scipen"
+  ],
+  "deferred_string_constructor": [
+    "state"
+  ],
+  "compact_seq_constructor": [
+    "state"
+  ],
+  "compact_intseq_constructor": [
+    "state"
+  ],
+  "compact_realseq_constructor": [
+    "state"
+  ],
+  "wrap_constructor": [
+    "state"
+  ],
+  "get_altrep_name": [
+    "info"
+  ],
+  "Parser": {
+    "__init__": [
+      "self"
+    ],
+    "_parse_array": [
+      "self",
+      "dtype"
+    ],
+    "_parse_array_values": [
+      "self",
+      "dtype",
+      "length"
+    ],
+    "parse_bool": [
+      "self"
+    ],
+    "parse_int": [
+      "self"
+    ],
+    "parse_nullable_bool_array": [
+      "self"
+    ],
+    "parse_nullable_int_array": [
+      "self"
+    ],
+    "parse_double_array": [
+      "self"
+    ],
+    "parse_complex_array": [
+      "self"
+    ],
+    "parse_string": [
+      "self",
+      "length"
+    ],
+    "check_complete": [
+      "self"
+    ],
+    "parse_all": [
+      "self"
+    ],
+    "parse_versions": [
+      "self"
+    ],
+    "parse_extra_info": [
+      "self",
+      "versions"
+    ],
+    "expand_altrep_to_object": [
+      "self",
+      "info",
+      "state"
+    ],
+    "_parse_bytecode_constant": [
+      "self",
+      "reference_list",
+      "bytecode_rep_list"
+    ],
+    "_parse_bytecode": [
+      "self",
+      "reference_list",
+      "bytecode_rep_list"
+    ],
+    "_parse_vector_value": [
+      "self",
+      "reference_list",
+      "bytecode_rep_list"
+    ],
+    "parse_R_object": [
+      "self",
+      "reference_list",
+      "bytecode_rep_list",
+      "info_int"
+    ]
+  },
+  "parse_file": [
+    "file_or_path"
+  ],
+  "parse_data": [
+    "data"
+  ],
+  "parse_rdata_binary": [
+    "data"
+  ],
+  "bits": [
+    "data",
+    "start",
+    "stop"
+  ],
+  "is_special_r_object_type": [
+    "r_object_type"
+  ],
+  "parse_r_object_info": [
+    "info_int"
+  ],
+  "map_int_na": [
+    "line"
+  ],
+  "map_float_na": [
+    "line"
+  ],
+  "ParserASCII": {
+    "__init__": [
+      "self",
+      "data"
+    ],
+    "_readline": [
+      "self"
+    ],
+    "_parse_array_values": [
+      "self",
+      "dtype",
+      "length"
+    ],
+    "parse_string": [
+      "self",
+      "length"
+    ],
+    "check_complete": [
+      "self"
+    ]
+  },
+  "_BYTEORDER_MARKER_SIZE": [],
+  "_SUPPORTED_FORMAT_VERSIONS": [],
+  "ParserBinary": {
+    "__init__": [
+      "self",
+      "data"
+    ],
+    "_detect_byteorder": [
+      "data"
+    ],
+    "_parse_array_values": [
+      "self",
+      "dtype",
+      "length"
+    ],
+    "parse_string": [
+      "self",
+      "length"
+    ],
+    "check_complete": [
+      "self"
+    ]
+  },
+  "ParserXDR": {
+    "__init__": [
+      "self",
+      "data"
+    ],
+    "_parse_array_values": [
+      "self",
+      "dtype",
+      "length"
+    ],
+    "parse_string": [
+      "self",
+      "length"
+    ],
+    "check_complete": [
+      "self"
+    ]
+  },
+  "RLanguage": {},
+  "RExpression": {},
+  "RBuiltin": {},
+  "RFunction": {
+    "source": [
+      "self"
+    ]
+  },
+  "RExternalPointer": {},
+  "RBytecode": {},
+  "REnvironment": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "RNamespace": {},
+  "convert_list": [
+    "r_list",
+    "conversion_function"
+  ],
+  "convert_env": [
+    "r_env",
+    "conversion_function"
+  ],
+  "convert_attrs": [
+    "r_obj",
+    "conversion_function"
+  ],
+  "convert_vector": [
+    "r_vec",
+    "conversion_function",
+    "attrs"
+  ],
+  "safe_decode": [
+    "byte_str",
+    "encoding"
+  ],
+  "convert_char": [
+    "r_char"
+  ],
+  "convert_symbol": [
+    "r_symbol",
+    "conversion_function"
+  ],
+  "convert_array": [
+    "r_array",
+    "attrs"
+  ],
+  "_dataframe_column_transform": [
+    "source"
+  ],
+  "dataframe_constructor": [
+    "obj",
+    "attrs"
+  ],
+  "_factor_constructor_internal": [
+    "obj",
+    "attrs"
+  ],
+  "factor_constructor": [
+    "obj",
+    "attrs"
+  ],
+  "ordered_constructor": [
+    "obj",
+    "attrs"
+  ],
+  "ts_constructor": [
+    "obj",
+    "attrs"
+  ],
+  "SrcRef": {},
+  "srcref_constructor": [
+    "obj",
+    "attrs"
+  ],
+  "SrcFile": {},
+  "srcfile_constructor": [
+    "obj",
+    "attrs"
+  ],
+  "SrcFileCopy": {},
+  "srcfilecopy_constructor": [
+    "obj",
+    "attrs"
+  ],
+  "Converter": {
+    "convert": [
+      "self",
+      "data"
+    ]
+  },
+  "UnresolvedReference": {},
+  "SimpleConverter": {
+    "__init__": [
+      "self",
+      "constructor_dict"
+    ],
+    "_reset": [
+      "self"
+    ],
+    "convert": [
+      "self",
+      "data"
+    ],
+    "_convert_next": [
+      "self",
+      "data"
+    ]
+  },
+  "convert": [
+    "data",
+    "constructor_dict"
+  ],
+  "categorical_constructor": [
+    "data",
+    "converter"
+  ],
+  "rangeindex_constructor": [
+    "data",
+    "converter"
+  ],
+  "convert_pd_array_to_np_array": [
+    "pd_array"
+  ],
+  "build_r_object": [
+    "r_type"
+  ],
+  "build_r_list": [
+    "data"
+  ],
+  "build_r_char": [
+    "data"
+  ],
+  "ConverterFromPythonToR": {
+    "__init__": [
+      "self"
+    ],
+    "convert_to_r_data": [
+      "self",
+      "data"
+    ],
+    "convert_to_r_attributes": [
+      "self",
+      "data"
+    ],
+    "convert_to_r_sym": [
+      "self",
+      "name"
+    ],
+    "convert_to_r_object": [
+      "self",
+      "data"
+    ]
+  },
+  "convert_python_to_r_data": [
+    "data"
+  ],
+  "convert_python_to_r_object": [
+    "data"
+  ]
+}
