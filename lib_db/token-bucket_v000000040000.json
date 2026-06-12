@@ -1,0 +1,55 @@
+{
+  "__all__": [],
+  "__version__": [],
+  "StorageBase": {
+    "get_token_count": [
+      "self",
+      "key"
+    ],
+    "replenish": [
+      "self",
+      "key",
+      "rate",
+      "capacity"
+    ],
+    "consume": [
+      "self",
+      "key",
+      "num_tokens"
+    ]
+  },
+  "MemoryStorage": {
+    "__init__": [
+      "self"
+    ],
+    "get_token_count": [
+      "self",
+      "key"
+    ],
+    "replenish": [
+      "self",
+      "key",
+      "rate",
+      "capacity"
+    ],
+    "consume": [
+      "self",
+      "key",
+      "num_tokens"
+    ]
+  },
+  "Limiter": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "rate",
+      "capacity",
+      "storage"
+    ],
+    "consume": [
+      "self",
+      "key",
+      "num_tokens"
+    ]
+  }
+}
