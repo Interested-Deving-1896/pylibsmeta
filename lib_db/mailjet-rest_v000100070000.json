@@ -1,0 +1,385 @@
+{
+  "_route_send": [
+    "base",
+    "ver",
+    "_parts",
+    "_id_val",
+    "_action",
+    "_name"
+  ],
+  "_route_csv": [
+    "base",
+    "ver",
+    "parts",
+    "id_val",
+    "_action",
+    "name"
+  ],
+  "_route_data": [
+    "base",
+    "ver",
+    "parts",
+    "id_val",
+    "action",
+    "_name"
+  ],
+  "_route_rest": [
+    "base",
+    "ver",
+    "parts",
+    "id_val",
+    "action",
+    "_name"
+  ],
+  "Endpoint": {
+    "__post_init__": [
+      "self"
+    ],
+    "_build_csv_url": [
+      "base_url",
+      "version",
+      "resource",
+      "name_lower",
+      "id_val"
+    ],
+    "_build_url": [
+      "self",
+      "id_val",
+      "action_id"
+    ],
+    "_build_headers": [
+      "self",
+      "custom_headers"
+    ],
+    "__call__": [
+      "self",
+      "method",
+      "filters",
+      "data",
+      "headers",
+      "id",
+      "action_id",
+      "timeout",
+      "ensure_ascii",
+      "data_encoding"
+    ],
+    "get": [
+      "self",
+      "id",
+      "filters",
+      "action_id"
+    ],
+    "stream": [
+      "self",
+      "filters",
+      "chunk_size",
+      "method"
+    ],
+    "create": [
+      "self",
+      "data",
+      "id",
+      "action_id",
+      "ensure_ascii",
+      "data_encoding"
+    ],
+    "update": [
+      "self",
+      "id",
+      "data",
+      "action_id",
+      "ensure_ascii",
+      "data_encoding"
+    ],
+    "delete": [
+      "self",
+      "id",
+      "action_id"
+    ]
+  },
+  "__all__": [],
+  "Config": {
+    "__post_init__": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "key"
+    ]
+  },
+  "Route": {},
+  "RouteMapType": [],
+  "MessageBuilder": {
+    "__slots__": [],
+    "__init__": [
+      "self"
+    ],
+    "set_sender": [
+      "self",
+      "email",
+      "name"
+    ],
+    "add_recipient": [
+      "self",
+      "email",
+      "name"
+    ],
+    "add_cc": [
+      "self",
+      "email",
+      "name"
+    ],
+    "add_bcc": [
+      "self",
+      "email",
+      "name"
+    ],
+    "set_reply_to": [
+      "self",
+      "email",
+      "name"
+    ],
+    "set_subject": [
+      "self",
+      "subject"
+    ],
+    "set_content": [
+      "self",
+      "text",
+      "html"
+    ],
+    "set_headers": [
+      "self",
+      "headers"
+    ],
+    "set_template": [
+      "self",
+      "template_id",
+      "enable_language"
+    ],
+    "set_variables": [
+      "self",
+      "variables"
+    ],
+    "attach_file": [
+      "self",
+      "file_path",
+      "safe_base_dir"
+    ],
+    "build": [
+      "self"
+    ]
+  },
+  "TemplateContentBuilder": {
+    "__slots__": [],
+    "__init__": [
+      "self"
+    ],
+    "set_meta": [
+      "self",
+      "author",
+      "name",
+      "locale"
+    ],
+    "set_content": [
+      "self",
+      "text",
+      "html",
+      "mjml"
+    ],
+    "set_headers": [
+      "self",
+      "headers"
+    ],
+    "build": [
+      "self"
+    ]
+  },
+  "logger": [],
+  "logging_handler": [
+    "to_file"
+  ],
+  "parse_response": [
+    "response",
+    "log",
+    "debug"
+  ],
+  "Client": {
+    "__init__": [
+      "self",
+      "auth",
+      "config"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__dir__": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "_raise_auth_error": [
+      "code"
+    ],
+    "_build_request_kwargs": [
+      "self",
+      "method",
+      "url",
+      "filters",
+      "data",
+      "headers",
+      "timeout",
+      "ensure_ascii",
+      "data_encoding"
+    ],
+    "_prepare_request": [
+      "self",
+      "method",
+      "url"
+    ],
+    "_mock_dry_run_response": [],
+    "_handle_dry_run": [
+      "self",
+      "method",
+      "url",
+      "req_kwargs"
+    ],
+    "_execute_request": [
+      "self",
+      "method",
+      "url",
+      "req_kwargs",
+      "trace_str",
+      "trace_dict"
+    ],
+    "api_call": [
+      "self",
+      "method",
+      "url",
+      "filters",
+      "data",
+      "headers",
+      "timeout",
+      "ensure_ascii",
+      "data_encoding"
+    ],
+    "_prepare_payload": [
+      "data",
+      "ensure_ascii",
+      "data_encoding"
+    ],
+    "_log_response": [
+      "response",
+      "method",
+      "url",
+      "trace_str"
+    ],
+    "_extract_telemetry": [
+      "data",
+      "_headers"
+    ]
+  },
+  "__version__": [],
+  "ApiError": {},
+  "MailjetNetworkError": {},
+  "MailjetApiError": {
+    "__init__": [
+      "self",
+      "message",
+      "status_code",
+      "response_body"
+    ]
+  },
+  "MailjetAuthError": {},
+  "TimeoutError": {},
+  "CriticalApiError": {},
+  "AuthorizationError": {},
+  "ActionDeniedError": {},
+  "DoesNotExistError": {},
+  "ValidationError": {},
+  "ApiRateLimitError": {},
+  "EmailAddress": {},
+  "Attachment": {},
+  "SendV31Message": {},
+  "SendV31Payload": {},
+  "_get_secret_pattern": [],
+  "SecureHTTPAdapter": {
+    "init_poolmanager": [
+      "self",
+      "connections",
+      "maxsize",
+      "block"
+    ]
+  },
+  "RedactingFilter": {
+    "filter": [
+      "self",
+      "record"
+    ]
+  },
+  "SecurityGuard": {
+    "_security_audit_listener": [
+      "event",
+      "args"
+    ],
+    "enable_audit_logging": [
+      "cls"
+    ],
+    "validate_attribute_access": [
+      "class_name",
+      "name"
+    ],
+    "sanitize_log_trace": [
+      "val"
+    ],
+    "check_request_security": [
+      "kwargs"
+    ],
+    "validate_config_url": [
+      "api_url",
+      "allowed_root_domain"
+    ],
+    "validate_dx_routing": [
+      "version",
+      "name_lower",
+      "resource_lower"
+    ],
+    "validate_crlf_headers": [
+      "custom_headers"
+    ],
+    "validate_attachment_path": [
+      "file_path",
+      "safe_base_dir"
+    ],
+    "check_file_size": [
+      "path",
+      "max_size_bytes"
+    ],
+    "sanitize_segment": [
+      "segment"
+    ]
+  },
+  "clean_version": [
+    "version_str"
+  ],
+  "get_version": [
+    "version"
+  ]
+}
