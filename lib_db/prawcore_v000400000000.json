@@ -1,0 +1,247 @@
+{
+  "__version__": [],
+  "__all__": [],
+  "ACCESS_TOKEN_PATH": [],
+  "AUTHORIZATION_PATH": [],
+  "NANOSECONDS": [],
+  "REVOKE_TOKEN_PATH": [],
+  "TIMEOUT": [],
+  "WINDOW_SIZE": [],
+  "log": [],
+  "RateLimiter": {
+    "__init__": [
+      "self"
+    ],
+    "call": [
+      "self"
+    ],
+    "delay": [
+      "self"
+    ],
+    "update": [
+      "self"
+    ]
+  },
+  "PrawcoreException": {},
+  "InvalidInvocation": {},
+  "OAuthException": {
+    "__init__": [
+      "error",
+      "description"
+    ]
+  },
+  "RequestException": {
+    "__init__": [
+      "self",
+      "original_exception",
+      "request_args",
+      "request_kwargs"
+    ]
+  },
+  "ResponseException": {
+    "__init__": []
+  },
+  "BadJSON": {},
+  "BadRequest": {},
+  "Conflict": {},
+  "Forbidden": {},
+  "InsufficientScope": {},
+  "InvalidToken": {},
+  "NotFound": {},
+  "Redirect": {
+    "__init__": []
+  },
+  "ServerError": {},
+  "SpecialError": {
+    "__init__": []
+  },
+  "TooLarge": {},
+  "TooManyRequests": {
+    "__init__": []
+  },
+  "URITooLong": {},
+  "UnavailableForLegalReasons": {},
+  "Requestor": {
+    "MIN_USER_AGENT_LENGTH": [],
+    "__getattr__": [
+      "self",
+      "attribute"
+    ],
+    "__init__": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "request": [
+      "self"
+    ]
+  },
+  "BaseAuthenticator": {
+    "_auth": [
+      "self"
+    ],
+    "requestor": [
+      "self"
+    ],
+    "__init__": [
+      "self"
+    ],
+    "_post": [
+      "self"
+    ],
+    "authorize_url": [
+      "self"
+    ],
+    "revoke_token": []
+  },
+  "BaseAuthorizer": {
+    "authenticator": [
+      "self"
+    ],
+    "__init__": [
+      "self"
+    ],
+    "_clear_access_token": [
+      "self"
+    ],
+    "_request_token": [
+      "self"
+    ],
+    "_validate_authenticator": [
+      "self"
+    ],
+    "is_valid": [
+      "self"
+    ],
+    "revoke": [
+      "self"
+    ]
+  },
+  "TrustedAuthenticator": {
+    "__init__": [
+      "self"
+    ],
+    "_auth": [
+      "self"
+    ]
+  },
+  "UntrustedAuthenticator": {
+    "_auth": [
+      "self"
+    ]
+  },
+  "Authorizer": {
+    "__init__": [
+      "self"
+    ],
+    "authorize": [],
+    "refresh": [
+      "self"
+    ],
+    "revoke": [
+      "self"
+    ]
+  },
+  "ImplicitAuthorizer": {
+    "AUTHENTICATOR_CLASS": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "ReadOnlyAuthorizer": {
+    "AUTHENTICATOR_CLASS": [],
+    "__init__": [
+      "self"
+    ],
+    "refresh": [
+      "self"
+    ]
+  },
+  "ScriptAuthorizer": {
+    "AUTHENTICATOR_CLASS": [],
+    "__init__": [
+      "self"
+    ],
+    "refresh": [
+      "self"
+    ]
+  },
+  "DeviceIDAuthorizer": {
+    "AUTHENTICATOR_CLASS": [],
+    "__init__": [
+      "self"
+    ],
+    "refresh": [
+      "self"
+    ]
+  },
+  "RetryStrategy": {
+    "_sleep_seconds": [
+      "self"
+    ],
+    "consume_available_retry": [
+      "self"
+    ],
+    "should_retry_on_failure": [
+      "self"
+    ],
+    "sleep": [
+      "self"
+    ]
+  },
+  "FiniteRetryStrategy": {
+    "_sleep_seconds": [
+      "self"
+    ],
+    "consume_available_retry": [
+      "self"
+    ],
+    "should_retry_on_failure": [
+      "self"
+    ]
+  },
+  "Session": {
+    "RETRY_EXCEPTIONS": [],
+    "authorizer": [
+      "self"
+    ],
+    "_log_request": [],
+    "rate_limiter": [
+      "self"
+    ],
+    "requestor": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self"
+    ],
+    "__init__": [
+      "self"
+    ],
+    "_do_retry": [
+      "self"
+    ],
+    "_make_request": [
+      "self"
+    ],
+    "_request_with_retries": [
+      "self"
+    ],
+    "_set_header_callback": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "request": [
+      "self"
+    ]
+  },
+  "session": [],
+  "_auth_error_mapping": [],
+  "authorization_error_class": []
+}

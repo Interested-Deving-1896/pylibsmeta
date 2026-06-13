@@ -1,0 +1,64 @@
+{
+  "_memoized_token_counters": [],
+  "_NON_WHITESPACE_STRUCTURAL_SPLITTERS": [],
+  "_REGEX_ESCAPED_NON_WHITESPACE_SEMANTIC_SPLITTERS": [],
+  "_NEWLINE_RUNS": [],
+  "_TAB_RUNS": [],
+  "_WHITESPACE_RUNS": [],
+  "_NEWLINE_CHAR": [],
+  "_WHITESPACE_CHAR": [],
+  "_PRECEDER_WHITESPACE_PATTERNS": [],
+  "_split_text": [
+    "text"
+  ],
+  "merge_splits": [
+    "text",
+    "split_starts",
+    "splitter_len",
+    "cum_lens",
+    "chunk_size",
+    "token_counter",
+    "start",
+    "high"
+  ],
+  "chunk": [
+    "text",
+    "chunk_size",
+    "token_counter"
+  ],
+  "_initialize_worker": [
+    "chunk_function"
+  ],
+  "_initialize_worker_from_dill": [
+    "pickled_chunk_function"
+  ],
+  "_chunk_in_worker": [
+    "text"
+  ],
+  "Chunker": {
+    "__init__": [
+      "self",
+      "chunk_size",
+      "token_counter",
+      "chunking_model",
+      "isaacus_client"
+    ],
+    "_make_chunk_function": [
+      "self",
+      "offsets",
+      "overlap"
+    ],
+    "__call__": [
+      "self",
+      "text_or_texts",
+      "processes",
+      "progress",
+      "offsets",
+      "overlap"
+    ]
+  },
+  "chunkerify": [
+    "tokenizer_or_token_counter",
+    "chunk_size"
+  ]
+}
