@@ -1,0 +1,1236 @@
+{
+  "__version__": [],
+  "HandlerResolutionError": {},
+  "InvalidHandlerSpecError": {
+    "__init__": [
+      "self",
+      "spec",
+      "reason"
+    ]
+  },
+  "HandlerNotFoundError": {
+    "__init__": [
+      "self",
+      "spec",
+      "source"
+    ]
+  },
+  "HandlerNotCallableError": {
+    "__init__": [
+      "self",
+      "spec",
+      "handler_type"
+    ]
+  },
+  "ModuleLoadError": {
+    "__init__": [
+      "self",
+      "module_path",
+      "reason"
+    ]
+  },
+  "HandlerFileNotFoundError": {
+    "__init__": [
+      "self",
+      "file_path",
+      "search_paths"
+    ]
+  },
+  "MiddlewareError": {},
+  "MiddlewareRegistrationError": {},
+  "MiddlewareNotFoundError": {},
+  "MiddlewareConfigurationError": {},
+  "FormatterRegistrationError": {},
+  "parse_level": [
+    "level"
+  ],
+  "_get_env_log_level": [],
+  "_safe_set_level": [
+    "logger",
+    "level"
+  ],
+  "configure_root_logger": [],
+  "get_logger": [
+    "name"
+  ],
+  "logger": [],
+  "SageMakerHandlerConfig": {
+    "HANDLER_TYPE_TO_FUNCTION_NAME": [],
+    "get_env_handler": [
+      "self",
+      "handler_type"
+    ],
+    "get_customer_script_handler": [
+      "self",
+      "handler_type"
+    ]
+  },
+  "SageMakerHandlerResolver": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "_resolver": [],
+  "register_sagemaker_overrides": [],
+  "register_ping_handler": [],
+  "register_invocation_handler": [],
+  "custom_ping_handler": [],
+  "custom_invocation_handler": [],
+  "register_load_adapter_handler": [
+    "request_shape",
+    "response_shape"
+  ],
+  "register_unload_adapter_handler": [
+    "request_shape",
+    "response_shape"
+  ],
+  "inject_adapter_id": [
+    "adapter_path",
+    "append",
+    "separator"
+  ],
+  "stateful_session_manager": [
+    "engine_request_session_id_path"
+  ],
+  "register_create_session_handler": [
+    "engine_response_session_id_path",
+    "engine_request_model_cls"
+  ],
+  "register_close_session_handler": [
+    "engine_request_session_id_path",
+    "engine_request_model_cls"
+  ],
+  "bootstrap": [
+    "app"
+  ],
+  "get_sagemaker_route_config": [
+    "handler_type"
+  ],
+  "create_sagemaker_router": [],
+  "SAGEMAKER_ENV_VAR_PREFIX": [],
+  "SageMakerConfig": {
+    "model_config": [],
+    "from_env": [
+      "cls"
+    ],
+    "load_from_env_vars": [
+      "cls",
+      "data"
+    ],
+    "parse_bool_string": [
+      "cls",
+      "v"
+    ],
+    "parse_int_string": [
+      "cls",
+      "v"
+    ]
+  },
+  "SageMakerEnvVars": {
+    "CUSTOM_SCRIPT_FILENAME": [],
+    "SAGEMAKER_MODEL_PATH": []
+  },
+  "SageMakerDefaults": {
+    "SCRIPT_FILENAME": [],
+    "SCRIPT_PATH": []
+  },
+  "SAGEMAKER_ENV_CONFIG": [],
+  "SageMakerFunctionLoader": {
+    "get_function_loader": [
+      "cls"
+    ],
+    "get_custom_script_filename": [
+      "cls",
+      "default_script"
+    ],
+    "_create_function_loader": [
+      "cls",
+      "script_path"
+    ],
+    "load_function_from_spec": [
+      "cls",
+      "spec",
+      "custom_script_path"
+    ],
+    "_get_handler_from_env": [
+      "cls",
+      "env_var",
+      "custom_script_path"
+    ],
+    "get_ping_handler_from_env": [
+      "cls",
+      "custom_script_path"
+    ],
+    "get_invocation_handler_from_env": [
+      "cls",
+      "custom_script_path"
+    ],
+    "_get_handler_spec": [
+      "cls",
+      "env_var"
+    ],
+    "get_ping_handler_spec": [
+      "cls"
+    ],
+    "get_invocation_handler_spec": [
+      "cls"
+    ]
+  },
+  "create_lora_transform_decorator": [
+    "handler_type"
+  ],
+  "BaseLoRAApiTransform": {
+    "transform_request": [
+      "self",
+      "raw_request"
+    ],
+    "transform_response": [
+      "self",
+      "response",
+      "transform_request_output"
+    ],
+    "_transform_ok_response": [
+      "self",
+      "response"
+    ],
+    "_transform_error_response": [
+      "self",
+      "response"
+    ]
+  },
+  "get_lora_route_config": [
+    "handler_type"
+  ],
+  "__all__": [],
+  "get_adapter_alias_from_request_header": [
+    "raw_request"
+  ],
+  "get_adapter_name_from_request_path": [
+    "raw_request"
+  ],
+  "get_adapter_name_from_request": [
+    "transform_request_output"
+  ],
+  "LoRAHandlerType": {
+    "REGISTER_ADAPTER": [],
+    "UNREGISTER_ADAPTER": [],
+    "INJECT_ADAPTER_ID": []
+  },
+  "SageMakerLoRAApiHeader": {
+    "ADAPTER_IDENTIFIER": [],
+    "ADAPTER_ALIAS": []
+  },
+  "RequestField": {
+    "ADAPTER_NAME": []
+  },
+  "ResponseMessage": {
+    "ADAPTER_REGISTERED": [],
+    "ADAPTER_UNREGISTERED": [],
+    "ADAPTER_UPDATED": [],
+    "ADAPTER_NOT_FOUND": [],
+    "ADAPTER_INVALID_WEIGHTS": [],
+    "ADAPTER_MAX_LORA_RANK": []
+  },
+  "SageMakerRegisterLoRAAdapterRequest": {
+    "validate_name": [
+      "cls",
+      "value"
+    ],
+    "validate_src": [
+      "cls",
+      "value"
+    ]
+  },
+  "SageMakerUpdateLoRAAdapterRequest": {},
+  "SageMakerListLoRAAdaptersRequest": {},
+  "AppendOperation": {
+    "compile_jmespath_expression": [
+      "self"
+    ]
+  },
+  "BaseLoRATransformRequestOutput": {},
+  "resolve_lora_transform": [
+    "handler_type"
+  ],
+  "validate_sagemaker_register_request": [
+    "request_data"
+  ],
+  "RegisterLoRAApiTransform": {
+    "transform_request": [
+      "self",
+      "raw_request"
+    ],
+    "_transform_ok_response": [
+      "self",
+      "response"
+    ],
+    "_transform_error_response": [
+      "self",
+      "response"
+    ]
+  },
+  "InjectToBodyApiTransform": {
+    "__init__": [
+      "self",
+      "request_shape",
+      "response_shape"
+    ],
+    "transform_request": [
+      "self",
+      "raw_request"
+    ],
+    "transform_response": [
+      "self",
+      "response",
+      "transform_request_output"
+    ]
+  },
+  "validate_sagemaker_unregister_request": [
+    "raw_request"
+  ],
+  "UnregisterLoRAApiTransform": {
+    "transform_request": [
+      "self",
+      "raw_request"
+    ],
+    "_transform_ok_response": [
+      "self",
+      "response"
+    ],
+    "_transform_error_response": [
+      "self",
+      "response"
+    ]
+  },
+  "Session": {
+    "__init__": [
+      "self",
+      "session_id",
+      "session_root",
+      "expiration_ts"
+    ],
+    "put": [
+      "self",
+      "key",
+      "value"
+    ],
+    "get": [
+      "self",
+      "key",
+      "d"
+    ],
+    "remove": [
+      "self"
+    ],
+    "_path": [
+      "self",
+      "key"
+    ]
+  },
+  "SessionManager": {
+    "__init__": [
+      "self",
+      "properties"
+    ],
+    "create_session": [
+      "self"
+    ],
+    "get_session": [
+      "self",
+      "session_id"
+    ],
+    "close_session": [
+      "self",
+      "session_id"
+    ],
+    "_clean_expired_session": [
+      "self"
+    ]
+  },
+  "_init_session_manager": [
+    "config"
+  ],
+  "get_session_manager": [],
+  "init_session_manager_from_env": [],
+  "_config": [],
+  "session_manager": [],
+  "resolve_session_transform": [
+    "handler_type"
+  ],
+  "create_session_transform_decorator": [],
+  "build_session_request_shape": [
+    "session_id_path",
+    "additional_shape"
+  ],
+  "SessionRequestType": {
+    "NEW_SESSION": [],
+    "CLOSE": []
+  },
+  "SessionRequest": {
+    "model_config": []
+  },
+  "SageMakerSessionHeader": {
+    "SESSION_ID": [],
+    "NEW_SESSION_ID": [],
+    "CLOSED_SESSION_ID": []
+  },
+  "SESSION_DISABLED_ERROR_DETAIL": [],
+  "SESSION_DISABLED_LOG_MESSAGE": [],
+  "get_handler_for_request_type": [
+    "request_type"
+  ],
+  "close_session": [
+    "raw_request"
+  ],
+  "create_session": [
+    "raw_request"
+  ],
+  "get_session_id_from_request": [
+    "raw_request"
+  ],
+  "get_session": [
+    "session_manager",
+    "raw_request"
+  ],
+  "CreateSessionApiTransform": {
+    "__init__": [
+      "self",
+      "original_function",
+      "engine_request_paths",
+      "engine_response_session_id_path",
+      "engine_request_model_cls",
+      "engine_request_defaults"
+    ],
+    "validate_request": [
+      "self",
+      "raw_request"
+    ],
+    "_init_validate_sagemaker_params": [
+      "self",
+      "sagemaker_param"
+    ],
+    "_extract_additional_fields": [
+      "self",
+      "validated_request",
+      "raw_request"
+    ],
+    "_generate_successful_response_content": [
+      "self",
+      "raw_response",
+      "transform_request_output"
+    ],
+    "_transform_ok_response": [
+      "self",
+      "raw_response",
+      "transform_request_output"
+    ]
+  },
+  "create_create_session_transform": [
+    "engine_request_paths",
+    "engine_response_session_id_path",
+    "engine_request_model_cls",
+    "engine_request_defaults"
+  ],
+  "_register_create_session_handler": [
+    "engine_response_session_id_path",
+    "engine_request_model_cls"
+  ],
+  "SAGEMAKER_HEADER_PREFIX": [],
+  "to_hyphens": [
+    "field_name"
+  ],
+  "to_sagemaker_headers": [
+    "field_name"
+  ],
+  "SageMakerSessionRequestHeader": {
+    "model_config": [],
+    "validate_session_id": [
+      "cls",
+      "v"
+    ]
+  },
+  "CloseSessionApiTransform": {
+    "validate_request": [
+      "self",
+      "raw_request"
+    ],
+    "_extract_additional_fields": [
+      "self",
+      "validated_request",
+      "raw_request"
+    ],
+    "_init_validate_sagemaker_params": [
+      "self",
+      "sagemaker_param"
+    ],
+    "_generate_successful_response_content": [
+      "self",
+      "raw_response",
+      "transform_request_output"
+    ],
+    "_transform_ok_response": [
+      "self",
+      "raw_response",
+      "transform_request_output"
+    ]
+  },
+  "create_close_session_transform": [
+    "engine_request_paths",
+    "engine_request_model_cls",
+    "engine_request_defaults"
+  ],
+  "_register_close_session_handler": [
+    "engine_request_session_id_path",
+    "engine_request_model_cls"
+  ],
+  "_parse_session_request": [
+    "request_data"
+  ],
+  "SessionApiTransform": {
+    "__init__": [
+      "self",
+      "request_shape",
+      "response_shape"
+    ],
+    "_check_use_default_manager": [
+      "self"
+    ],
+    "_get_session_id_target_key": [
+      "self",
+      "request_shape"
+    ],
+    "transform_request": [
+      "self",
+      "raw_request"
+    ],
+    "transform_response": [
+      "self",
+      "response",
+      "transform_request_output"
+    ],
+    "_validate_session_id": [
+      "self",
+      "session_id",
+      "raw_request"
+    ],
+    "_process_invocations_request": [
+      "self",
+      "session_id",
+      "request_data",
+      "raw_request"
+    ],
+    "_process_session_request": [
+      "self",
+      "session_request",
+      "session_id",
+      "raw_request"
+    ],
+    "_process_request": [
+      "self",
+      "request_data",
+      "raw_request"
+    ]
+  },
+  "DEFAULT_MODEL_PATH": [],
+  "REQUIREMENTS_FILENAME": [],
+  "STANDARD_AUTO_INSTALL_REQ": [],
+  "STANDARD_PIP_ARGS": [],
+  "is_auto_install_enabled": [],
+  "resolve_python_from_command": [
+    "launch_command"
+  ],
+  "_build_install_prefix": [
+    "python"
+  ],
+  "install_requirements": [
+    "model_path",
+    "requirements_filename",
+    "pip_args",
+    "python_executable"
+  ],
+  "HandlerConfig": {
+    "get_env_handler": [
+      "self",
+      "handler_type"
+    ],
+    "get_customer_script_handler": [
+      "self",
+      "handler_type"
+    ]
+  },
+  "GenericHandlerResolver": {
+    "__init__": [
+      "self",
+      "config",
+      "registry"
+    ],
+    "_try_env_handler": [
+      "self",
+      "handler_type"
+    ],
+    "_try_decorator_handler": [
+      "self",
+      "handler_type"
+    ],
+    "_try_customer_script_handler": [
+      "self",
+      "handler_type"
+    ],
+    "resolve_handler": [
+      "self",
+      "handler_type"
+    ]
+  },
+  "create_override_decorator": [
+    "handler_type",
+    "handler_registry"
+  ],
+  "create_register_decorator": [
+    "handler_type",
+    "handler_registry"
+  ],
+  "register_handler": [
+    "name"
+  ],
+  "override_handler": [
+    "name"
+  ],
+  "HandlerRegistry": {
+    "__init__": [
+      "self"
+    ],
+    "set_handler": [
+      "self",
+      "name",
+      "handler"
+    ],
+    "set_framework_default": [
+      "self",
+      "handler_type",
+      "handler"
+    ],
+    "set_decorator_handler": [
+      "self",
+      "handler_type",
+      "handler"
+    ],
+    "get_handler": [
+      "self",
+      "name"
+    ],
+    "get_framework_default": [
+      "self",
+      "handler_type"
+    ],
+    "get_decorator_handler": [
+      "self",
+      "handler_type"
+    ],
+    "has_framework_default": [
+      "self",
+      "handler_type"
+    ],
+    "has_decorator_handler": [
+      "self",
+      "handler_type"
+    ],
+    "has_handler": [
+      "self",
+      "name"
+    ],
+    "remove_handler": [
+      "self",
+      "name"
+    ],
+    "remove_framework_default": [
+      "self",
+      "handler_type"
+    ],
+    "remove_decorator_handler": [
+      "self",
+      "handler_type"
+    ],
+    "list_handlers": [
+      "self"
+    ],
+    "list_framework_defaults": [
+      "self"
+    ],
+    "list_decorator_handlers": [
+      "self"
+    ],
+    "clear": [
+      "self"
+    ]
+  },
+  "handler_registry": [],
+  "HandlerSpec": {
+    "FUNCTION_SPEC_PATTERN": [],
+    "__init__": [
+      "self",
+      "spec"
+    ],
+    "is_router_path": [
+      "self"
+    ],
+    "is_function": [
+      "self"
+    ],
+    "is_callable": [
+      "self"
+    ],
+    "is_module_function": [
+      "self"
+    ],
+    "is_file_function": [
+      "self"
+    ],
+    "is_class_method": [
+      "self"
+    ],
+    "module_name": [
+      "self"
+    ],
+    "file_path": [
+      "self"
+    ],
+    "function_name": [
+      "self"
+    ],
+    "class_name": [
+      "self"
+    ],
+    "method_name": [
+      "self"
+    ],
+    "router_path": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "is_valid_function_spec": [
+      "self"
+    ],
+    "validate_function_spec": [
+      "self"
+    ]
+  },
+  "parse_handler_spec": [
+    "spec_string"
+  ],
+  "FastAPIEnvVars": {
+    "CUSTOM_FASTAPI_PING_HANDLER": [],
+    "CUSTOM_FASTAPI_INVOCATION_HANDLER": [],
+    "CUSTOM_PRE_PROCESS": [],
+    "CUSTOM_POST_PROCESS": [],
+    "CUSTOM_FASTAPI_MIDDLEWARE_THROTTLE": [],
+    "CUSTOM_FASTAPI_MIDDLEWARE_PRE_POST_PROCESS": []
+  },
+  "FASTAPI_ENV_CONFIG": [],
+  "serialize_request": [
+    "request",
+    "raw_request"
+  ],
+  "serialize_response": [
+    "response"
+  ],
+  "normalize_prefix": [
+    "prefix"
+  ],
+  "RouteConfig": {},
+  "mount_handlers": [
+    "router",
+    "handler_names",
+    "route_resolver"
+  ],
+  "create_router": [
+    "prefix",
+    "route_resolver"
+  ],
+  "remove_conflicting_routes": [
+    "app",
+    "router",
+    "prefix"
+  ],
+  "check_route_conflicts": [
+    "app",
+    "router",
+    "prefix"
+  ],
+  "safe_include_router": [
+    "app",
+    "router"
+  ],
+  "_create_asgi_middleware": [
+    "middleware_class"
+  ],
+  "_wrap_http_middleware": [
+    "middleware_func"
+  ],
+  "create_middleware_object": [
+    "middleware_info"
+  ],
+  "load_middlewares": [
+    "app",
+    "function_loader"
+  ],
+  "_add_middleware": [
+    "app",
+    "middleware_name"
+  ],
+  "custom_middleware": [
+    "name"
+  ],
+  "input_formatter": [
+    "func"
+  ],
+  "output_formatter": [
+    "func"
+  ],
+  "ALLOWED_MIDDLEWARE_NAMES": [],
+  "MiddlewareInfo": {
+    "__init__": [
+      "self",
+      "name",
+      "middleware"
+    ]
+  },
+  "MiddlewareRegistry": {
+    "__init__": [
+      "self"
+    ],
+    "register_middleware": [
+      "self",
+      "name",
+      "middleware"
+    ],
+    "get_middleware": [
+      "self",
+      "name"
+    ],
+    "has_middleware": [
+      "self",
+      "name"
+    ],
+    "list_middlewares": [
+      "self"
+    ],
+    "get_allowed_middleware_names": [
+      "self"
+    ],
+    "clear_middlewares": [
+      "self"
+    ],
+    "load_middlewares": [
+      "self",
+      "function_loader"
+    ],
+    "_register_middleware_with_priority": [
+      "self",
+      "middleware_name",
+      "env_loader",
+      "dec_loader"
+    ]
+  },
+  "middleware_registry": [],
+  "MiddlewareEnvironmentLoader": {
+    "__init__": [
+      "self"
+    ],
+    "load": [
+      "self",
+      "function_loader"
+    ],
+    "load_middleware": [
+      "self",
+      "name",
+      "function_loader"
+    ],
+    "_handle_pre_post_combination": [
+      "self"
+    ]
+  },
+  "BaseMiddlewareLoader": {
+    "__init__": [
+      "self"
+    ],
+    "_create_pre_post_middleware": [
+      "self",
+      "pre_process_func",
+      "post_process_func",
+      "middleware_name",
+      "log_prefix"
+    ],
+    "_combine_pre_post_middleware": [
+      "self",
+      "log_prefix"
+    ],
+    "get_middleware": [
+      "self",
+      "middleware_name"
+    ],
+    "has_middlewares": [
+      "self"
+    ]
+  },
+  "MiddlewareDecoratorLoader": {
+    "load": [
+      "self"
+    ],
+    "set_middleware": [
+      "self",
+      "name",
+      "middleware"
+    ],
+    "set_input_formatter": [
+      "self",
+      "formatter"
+    ],
+    "set_output_formatter": [
+      "self",
+      "formatter"
+    ],
+    "_handle_pre_post_combination": [
+      "self"
+    ],
+    "clear": [
+      "self"
+    ]
+  },
+  "decorator_loader": [],
+  "FunctionLoader": {
+    "__init__": [
+      "self",
+      "search_paths",
+      "module_aliases"
+    ],
+    "load_function": [
+      "self",
+      "spec"
+    ],
+    "_load_module": [
+      "self",
+      "module_path",
+      "is_file"
+    ],
+    "_get_cached_module": [
+      "self",
+      "cache_key"
+    ],
+    "load_module_from_file": [
+      "self",
+      "file_path"
+    ],
+    "_load_module_from_import": [
+      "self",
+      "module_path"
+    ],
+    "_extract_attribute_from_module": [
+      "self",
+      "module",
+      "source",
+      "attr_path"
+    ],
+    "_validate_callable": [
+      "self",
+      "result",
+      "spec"
+    ]
+  },
+  "FileLoader": {
+    "__init__": [
+      "self",
+      "search_paths"
+    ],
+    "load_function": [
+      "self",
+      "filename",
+      "attr_name"
+    ],
+    "_load_regular_module": [
+      "self",
+      "file_path"
+    ],
+    "_find_file": [
+      "self",
+      "filename"
+    ]
+  },
+  "ModuleLoader": {
+    "load_function": [
+      "self",
+      "module_path",
+      "attr_name"
+    ],
+    "_load_module": [
+      "self",
+      "module_path"
+    ],
+    "_extract_attribute": [
+      "self",
+      "module",
+      "module_path",
+      "attr_name"
+    ]
+  },
+  "BaseTransformRequestOutput": {},
+  "BaseApiTransform": {
+    "__init__": [
+      "self",
+      "request_shape",
+      "response_shape"
+    ],
+    "_transform": [
+      "self",
+      "source_data",
+      "target_shape"
+    ],
+    "intercept": [
+      "self",
+      "func",
+      "transform_request_output"
+    ],
+    "transform_request": [
+      "self",
+      "raw_request"
+    ],
+    "_transform_response": [
+      "self",
+      "response"
+    ],
+    "_transform_request": [
+      "self",
+      "request",
+      "raw_request"
+    ],
+    "transform_response": [
+      "self",
+      "response",
+      "transform_request_output"
+    ],
+    "_transform_ok_response": [
+      "self",
+      "response"
+    ],
+    "_transform_error_response": [
+      "self",
+      "response"
+    ]
+  },
+  "DEFAULT_MAX_DEPTH_TO_CREATE": [],
+  "_compile_jmespath_expressions": [
+    "shape"
+  ],
+  "set_value": [
+    "obj",
+    "path",
+    "value",
+    "create_parent",
+    "max_create_depth"
+  ],
+  "_resolve_transforms": [
+    "handler_type",
+    "transform_resolver",
+    "request_shape",
+    "response_shape"
+  ],
+  "create_transform_decorator": [
+    "handler_type",
+    "transform_resolver"
+  ],
+  "SAGEMAKER_TRANSFORMS_ENV_VAR_PREFIX": [],
+  "SageMakerTransformsDefaultsConfig": {
+    "model_config": [],
+    "from_env": [
+      "cls"
+    ],
+    "load_from_env_vars": [
+      "cls",
+      "data"
+    ],
+    "update_from_env_vars": [
+      "self"
+    ]
+  },
+  "_transform_defaults_config": [],
+  "BaseApiTransform2": {
+    "__init__": [
+      "self",
+      "original_function",
+      "engine_request_paths",
+      "engine_request_model_cls",
+      "engine_request_defaults"
+    ],
+    "_init_validate": [
+      "self",
+      "original_function",
+      "engine_request_paths",
+      "engine_request_model_cls",
+      "engine_request_defaults"
+    ],
+    "_init_validate_sagemaker_params": [
+      "self",
+      "sagemaker_param"
+    ],
+    "validate_request": [
+      "self",
+      "raw_request"
+    ],
+    "_extract_additional_fields": [
+      "self",
+      "validated_request",
+      "raw_request"
+    ],
+    "_generate_successful_response_content": [
+      "self",
+      "raw_response",
+      "transform_request_output"
+    ],
+    "_transform_sagemaker_request_to_engine": [
+      "self",
+      "transformed_request",
+      "sagemaker_request_dict"
+    ],
+    "_transform_request_defaults": [
+      "self",
+      "transformed_request"
+    ],
+    "_apply_to_raw_request": [
+      "self",
+      "raw_request",
+      "transformed_request"
+    ],
+    "transform_request": [
+      "self",
+      "validated_request",
+      "raw_request"
+    ],
+    "call": [
+      "self",
+      "transform_request_output",
+      "func",
+      "request_model_cls"
+    ],
+    "_transform_ok_response": [
+      "self",
+      "raw_response",
+      "transform_request_output"
+    ],
+    "_transform_error_response": [
+      "self",
+      "raw_response",
+      "transform_request_output"
+    ],
+    "_normalize_response": [
+      "self",
+      "raw_response"
+    ],
+    "transform_response": [
+      "self",
+      "raw_response",
+      "transform_request_output"
+    ],
+    "transform": [
+      "self",
+      "raw_request"
+    ]
+  },
+  "get_base_config_template": [
+    "program_name",
+    "log_level",
+    "framework_command",
+    "auto_restart",
+    "max_start_retries"
+  ],
+  "generate_supervisord_config": [
+    "config",
+    "launch_command",
+    "program_name"
+  ],
+  "write_supervisord_config": [
+    "config_path",
+    "config",
+    "launch_command",
+    "program_name"
+  ],
+  "_merge_custom_sections": [
+    "base_config",
+    "custom_sections"
+  ],
+  "_dict_to_ini_string": [
+    "config_dict"
+  ],
+  "PROCESS_AUTO_RECOVERY": [],
+  "PROCESS_MAX_START_RETRIES": [],
+  "LOG_LEVEL": [],
+  "SUPERVISOR_CONFIG_PATH": [],
+  "ConfigurationError": {},
+  "SupervisorConfig": {},
+  "_parse_bool": [
+    "value"
+  ],
+  "_get_env_int": [
+    "name",
+    "default",
+    "min_val",
+    "max_val"
+  ],
+  "_get_env_str": [
+    "name",
+    "default",
+    "allowed"
+  ],
+  "parse_environment_variables": [],
+  "_parse_supervisor_custom_sections": [],
+  "ProcessManager": {
+    "__init__": [
+      "self",
+      "logger"
+    ],
+    "start": [
+      "self",
+      "config_path"
+    ],
+    "terminate": [
+      "self"
+    ]
+  },
+  "SignalHandler": {
+    "__init__": [
+      "self",
+      "process_manager",
+      "logger"
+    ],
+    "setup": [
+      "self"
+    ],
+    "_restore_default_handlers": [
+      "self"
+    ]
+  },
+  "StandardSupervisor": {
+    "__init__": [
+      "self"
+    ],
+    "_setup_logging": [
+      "self"
+    ],
+    "parse_arguments": [
+      "self"
+    ],
+    "_install_dependencies": [
+      "self",
+      "launch_command"
+    ],
+    "run": [
+      "self"
+    ]
+  },
+  "_is_supervisor_enabled": [],
+  "_launch_command_directly": [],
+  "main": []
+}
