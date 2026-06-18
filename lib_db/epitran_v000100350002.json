@@ -1,0 +1,618 @@
+{
+  "logger": [],
+  "none2str": [
+    "x"
+  ],
+  "RuleFileError": {},
+  "Rules": {
+    "__init__": [
+      "self",
+      "rule_files"
+    ],
+    "_read_rule_file": [
+      "self",
+      "rule_file"
+    ],
+    "_expand_symbol_references": [
+      "self",
+      "line"
+    ],
+    "_read_rule": [
+      "self",
+      "i",
+      "line"
+    ],
+    "_compile_metathesis_rule": [
+      "self",
+      "a",
+      "X",
+      "Y"
+    ],
+    "_compile_replacement_rule": [
+      "self",
+      "a",
+      "b",
+      "X",
+      "Y"
+    ],
+    "apply": [
+      "self",
+      "text"
+    ]
+  },
+  "__all__": [],
+  "Backoff": {
+    "__init__": [
+      "self",
+      "lang_script_codes",
+      "cedict_file"
+    ],
+    "transliterate": [
+      "self",
+      "token"
+    ],
+    "trans_list": [
+      "self",
+      "token"
+    ],
+    "xsampa_list": [
+      "self",
+      "token"
+    ]
+  },
+  "MappingError": {},
+  "DatafileError": {},
+  "FeatureValueError": {},
+  "SPECIAL_LANGUAGE_BACKENDS": [],
+  "Epitran": {
+    "special": [],
+    "__init__": [
+      "self",
+      "code"
+    ],
+    "transliterate": [
+      "self",
+      "word",
+      "normpunc",
+      "ligatures"
+    ],
+    "reverse_transliterate": [
+      "self",
+      "ipa"
+    ],
+    "strict_trans": [
+      "self",
+      "word",
+      "normpunc",
+      "ligatures"
+    ],
+    "trans_list": [
+      "self",
+      "word",
+      "normpunc",
+      "ligatures"
+    ],
+    "trans_delimiter": [
+      "self",
+      "text",
+      "delimiter",
+      "normpunc",
+      "ligatures"
+    ],
+    "xsampa_list": [
+      "self",
+      "word",
+      "normpunc",
+      "ligaturize"
+    ],
+    "word_to_tuples": [
+      "self",
+      "word",
+      "normpunc",
+      "_ligaturize"
+    ]
+  },
+  "DictFirst": {
+    "__init__": [
+      "self",
+      "code1",
+      "code2",
+      "dict_fn"
+    ],
+    "_read_dictionary": [
+      "self",
+      "dict_fn"
+    ],
+    "transliterate": [
+      "self",
+      "token"
+    ]
+  },
+  "PrePostProcessor": {
+    "__init__": [
+      "self",
+      "code",
+      "fix",
+      "rev"
+    ],
+    "_read_rules": [
+      "self",
+      "code",
+      "fix",
+      "rev"
+    ],
+    "process": [
+      "self",
+      "word"
+    ]
+  },
+  "StripDiacritics": {
+    "__init__": [
+      "self",
+      "code"
+    ],
+    "_read_diacritics": [
+      "self",
+      "code"
+    ],
+    "strip_specified_diacritics": [
+      "self",
+      "word"
+    ],
+    "process": [
+      "self",
+      "word"
+    ]
+  },
+  "Flite": {
+    "__init__": [
+      "self",
+      "arpabet",
+      "ligatures"
+    ],
+    "_read_arpabet": [
+      "self",
+      "arpabet"
+    ],
+    "normalize": [
+      "self",
+      "text"
+    ],
+    "arpa_text_to_list": [
+      "self",
+      "arpa_text"
+    ],
+    "arpa_to_ipa": [
+      "self",
+      "arpa_text",
+      "ligatures"
+    ],
+    "english_g2p": [
+      "self",
+      "english"
+    ],
+    "transliterate": [
+      "self",
+      "text",
+      "normpunc",
+      "ligatures"
+    ],
+    "strict_trans": [
+      "self",
+      "text",
+      "normpunc",
+      "ligatures"
+    ],
+    "word_to_tuples": [
+      "self",
+      "word",
+      "normpunc"
+    ]
+  },
+  "FliteT2P": {
+    "english_g2p": [
+      "self",
+      "text"
+    ]
+  },
+  "FliteLexLookup": {
+    "arpa_text_to_list": [
+      "self",
+      "arpa_text"
+    ],
+    "english_g2p": [
+      "self",
+      "text"
+    ]
+  },
+  "CEDICT_URL": [],
+  "CC_CANTO_URL": [],
+  "OPENDICT_JA_URL": [],
+  "base_dir": [],
+  "cedict": [],
+  "cc_canto": [],
+  "opendict_ja": [],
+  "AFFRICATE_LIGATURES": [],
+  "convert_affricates_to_ligatures": [
+    "text"
+  ],
+  "ligaturize": [],
+  "ReRomanizer": {
+    "__init__": [
+      "self",
+      "code",
+      "table",
+      "decompose",
+      "cedict_file"
+    ],
+    "_load_reromanizer": [
+      "self",
+      "table",
+      "decompose"
+    ],
+    "reromanize_ipa": [
+      "self",
+      "tr_list"
+    ],
+    "reromanize": [
+      "self",
+      "text"
+    ]
+  },
+  "PuncNorm": {
+    "__init__": [
+      "self"
+    ],
+    "_load_punc_norm_map": [
+      "self"
+    ],
+    "norm": [
+      "self",
+      "text"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "key"
+    ]
+  },
+  "SimpleEpitran": {
+    "__init__": [
+      "self",
+      "code"
+    ],
+    "get_tones": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "_type_",
+      "_val",
+      "_trace_back"
+    ],
+    "_find_ambiguous_mappings": [
+      "self",
+      "gr_by_line"
+    ],
+    "_load_grapheme_to_phoneme_map": [
+      "self",
+      "code",
+      "rev"
+    ],
+    "_load_punc_norm_map": [
+      "self"
+    ],
+    "_build_greedy_match_regex": [
+      "self",
+      "g2p_keys"
+    ],
+    "general_trans": [
+      "self",
+      "text",
+      "filter_func",
+      "normpunc",
+      "ligatures"
+    ],
+    "contains_korean_syllables": [
+      "self",
+      "text"
+    ],
+    "is_korean": [
+      "self",
+      "text"
+    ],
+    "transliterate": [
+      "self",
+      "text",
+      "normpunc",
+      "ligatures"
+    ],
+    "general_reverse_trans": [
+      "self",
+      "text"
+    ],
+    "reverse_transliterate": [
+      "self",
+      "ipa"
+    ],
+    "strict_trans": [
+      "self",
+      "text",
+      "normpunc",
+      "ligatures"
+    ],
+    "word_to_tuples": [
+      "self",
+      "text",
+      "normpunc"
+    ],
+    "ipa_segs": [
+      "self",
+      "ipa"
+    ]
+  },
+  "Tir2PP": {
+    "__init__": [
+      "self"
+    ],
+    "apply": [
+      "self",
+      "word"
+    ]
+  },
+  "XSampa": {
+    "ipa2xs_fn": [],
+    "__init__": [
+      "self"
+    ],
+    "_read_ipa2xs": [
+      "self"
+    ],
+    "prefixes": [
+      "self",
+      "s"
+    ],
+    "longest_prefix": [
+      "self",
+      "s"
+    ],
+    "ipa2xs": [
+      "self",
+      "ipa"
+    ]
+  },
+  "supported_lang": [
+    "iso639"
+  ],
+  "get_default_mode": [
+    "iso639"
+  ],
+  "Space": {
+    "__init__": [
+      "self",
+      "code",
+      "space_names"
+    ],
+    "_load_space": [
+      "self",
+      "space_names"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "key"
+    ]
+  },
+  "MissingData": {},
+  "Epihan": {
+    "punc": [],
+    "__init__": [
+      "self"
+    ],
+    "normalize_punc": [
+      "self",
+      "text"
+    ],
+    "transliterate": [
+      "self",
+      "text",
+      "normpunc",
+      "ligatures"
+    ],
+    "strict_trans": [
+      "self",
+      "text",
+      "normpunc",
+      "ligatures"
+    ]
+  },
+  "EpihanTraditional": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "EpiCanto": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "EpiJpan": {
+    "punc": [],
+    "__init__": [
+      "self"
+    ],
+    "normalize_punc": [
+      "self",
+      "text"
+    ],
+    "transliterate": [
+      "self",
+      "text",
+      "normpunc",
+      "ligatures"
+    ]
+  },
+  "ASCII_CHARS": [],
+  "CEDictTrie": {
+    "__init__": [
+      "self",
+      "cedict_file",
+      "traditional"
+    ],
+    "_read_cedict": [
+      "self",
+      "cedict_file",
+      "traditional"
+    ],
+    "_construct_trie": [
+      "self",
+      "hanzi"
+    ],
+    "has_key": [
+      "self",
+      "key"
+    ],
+    "prefixes": [
+      "self",
+      "s"
+    ],
+    "longest_prefix": [
+      "self",
+      "s"
+    ],
+    "tokenize": [
+      "self",
+      "s"
+    ]
+  },
+  "CEDictTrieForCantonese": {
+    "_read_cedict": [
+      "self",
+      "cedict_file",
+      "traditional"
+    ]
+  },
+  "CEDictTrieForJapanese": {
+    "__init__": [
+      "self",
+      "cedict_file"
+    ],
+    "_read_cedict": [
+      "self",
+      "cedict_file"
+    ],
+    "_construct_trie": [
+      "self",
+      "character"
+    ],
+    "has_key": [
+      "self",
+      "key"
+    ],
+    "prefixes": [
+      "self",
+      "s"
+    ],
+    "longest_prefix": [
+      "self",
+      "s"
+    ],
+    "tokenize": [
+      "self",
+      "s"
+    ]
+  },
+  "VectorsWithIPASpace": {
+    "__init__": [
+      "self",
+      "code",
+      "space_names"
+    ],
+    "word_to_segs": [
+      "self",
+      "word",
+      "normpunc"
+    ]
+  },
+  "main": [
+    "fn"
+  ],
+  "normpunc": [
+    "flite",
+    "s"
+  ],
+  "add_record": [
+    "flite",
+    "ft",
+    "orth"
+  ],
+  "add_file": [
+    "flite",
+    "ft",
+    "fn"
+  ],
+  "print_space": [
+    "output",
+    "space"
+  ],
+  "build_rule": [
+    "fields"
+  ],
+  "epi": [],
+  "read_map": [
+    "fn"
+  ],
+  "is_bijection": [
+    "mapping"
+  ],
+  "RE_DERIVATION": [],
+  "RE_TR": [],
+  "RE_RES": [],
+  "RE_ASSERT_TRANS": [],
+  "RE_TUPLE": [],
+  "RE_CODE": [],
+  "extract_code": [
+    "code"
+  ],
+  "extract_pairs": [
+    "code"
+  ],
+  "tones": [],
+  "shuffle_tone": [
+    "orth",
+    "phon"
+  ],
+  "read_tokens": [
+    "fn"
+  ],
+  "read_input": [
+    "input_",
+    "langscript"
+  ],
+  "write_output": [
+    "output",
+    "space"
+  ],
+  "add_record_gen": [
+    "epi",
+    "ft",
+    "orth"
+  ],
+  "add_file_gen": [
+    "epi",
+    "ft",
+    "fn"
+  ],
+  "add_file_op": [
+    "epi",
+    "ft",
+    "fn"
+  ]
+}
