@@ -1,0 +1,316 @@
+{
+  "RisingWaveDialect_psycopg_async": {
+    "supports_statement_cache": []
+  },
+  "RisingWaveDialect_psycopg": {
+    "driver": [],
+    "supports_statement_cache": [],
+    "get_async_dialect_cls": [
+      "cls",
+      "url"
+    ]
+  },
+  "__version__": [],
+  "RisingWaveDialect_psycopg2": {
+    "driver": [],
+    "supports_statement_cache": []
+  },
+  "Requirements": {
+    "independent_connections": [],
+    "temporary_tables": [],
+    "temp_table_reflection": [],
+    "time": [],
+    "time_microseconds": [],
+    "server_side_cursors": [],
+    "foreign_keys": [],
+    "foreign_key_ddl": [],
+    "cross_schema_fk_reflection": [],
+    "self_referential_foreign_keys": [],
+    "foreign_key_constraint_reflection": [],
+    "unique_constraint_reflection": [],
+    "date_coerces_from_datetime": [],
+    "view_reflection": [],
+    "view_column_reflection": [],
+    "autoincrement_insert": [],
+    "autoincrement_without_sequence": [],
+    "identity_columns": [],
+    "identity_columns_standard": [],
+    "non_updating_cascade": [],
+    "deferrable_fks": [],
+    "boolean_col_expressions": [],
+    "nullsordering": [],
+    "standalone_binds": [],
+    "intersect": [],
+    "except_": [],
+    "window_functions": [],
+    "empty_inserts": [],
+    "returning": [],
+    "multivalues_inserts": [],
+    "emulated_lastrowid": [],
+    "dbapi_lastrowid": [],
+    "views": [],
+    "schemas": [],
+    "sequences": [],
+    "sequences_optional": [],
+    "temporary_views": [],
+    "reflects_pk_names": [],
+    "unicode_ddl": [],
+    "datetime_literals": [],
+    "datetime_historic": [],
+    "date_historic": [],
+    "precision_numerics_enotation_small": [],
+    "precision_numerics_enotation_large": [],
+    "precision_numerics_many_significant_digits": [],
+    "precision_numerics_retains_significant_digits": [],
+    "savepoints": [],
+    "two_phase_transactions": [],
+    "update_from": [],
+    "mod_operator_as_percent_sign": [],
+    "uuid_data_type": [],
+    "percent_schema_names": [],
+    "order_by_label_with_expression": [],
+    "order_by_col_from_union": [],
+    "implicitly_named_constraints": [],
+    "get_isolation_levels": [
+      "self",
+      "config"
+    ]
+  },
+  "RisingWaveDDLCompiler": {
+    "_SERIAL_KEYWORDS": [],
+    "get_column_specification": [
+      "self",
+      "column"
+    ],
+    "_has_pg_serial_autoincrement": [
+      "self",
+      "column"
+    ]
+  },
+  "RisingWaveTypeCompiler": {
+    "visit_CHAR": [
+      "self",
+      "type_"
+    ],
+    "visit_NCHAR": [
+      "self",
+      "type_"
+    ],
+    "visit_VARCHAR": [
+      "self",
+      "type_"
+    ],
+    "visit_NVARCHAR": [
+      "self",
+      "type_"
+    ],
+    "visit_NUMERIC": [
+      "self",
+      "type_"
+    ],
+    "visit_DECIMAL": [
+      "self",
+      "type_"
+    ],
+    "visit_uuid": [
+      "self",
+      "type_"
+    ],
+    "visit_UUID": [
+      "self",
+      "type_"
+    ]
+  },
+  "_type_map": [],
+  "logger": [],
+  "_warned_pg_cancel_probe": [],
+  "_RisingWaveCommon": {
+    "name": [],
+    "ddl_compiler": [],
+    "type_compiler": [],
+    "supports_native_enum": [],
+    "supports_native_uuid": [],
+    "supports_statement_cache": [],
+    "_PG_BACKEND_PID_SQL": [],
+    "_PG_TERMINATE_BACKEND_SQL": [],
+    "do_execute": [
+      "self",
+      "cursor",
+      "statement",
+      "parameters",
+      "context"
+    ],
+    "create_connect_args": [
+      "self",
+      "url"
+    ],
+    "initialize": [
+      "self",
+      "connection"
+    ],
+    "_get_server_version_info": [
+      "self",
+      "conn"
+    ],
+    "get_table_names": [
+      "self",
+      "conn",
+      "schema"
+    ],
+    "get_view_names": [
+      "self",
+      "conn",
+      "schema"
+    ],
+    "get_materialized_view_names": [
+      "self",
+      "conn",
+      "schema"
+    ],
+    "has_table": [
+      "self",
+      "conn",
+      "table_name",
+      "schema"
+    ],
+    "get_columns": [
+      "self",
+      "conn",
+      "table_name",
+      "schema"
+    ],
+    "get_table_oid": [
+      "self",
+      "connection",
+      "table_name",
+      "schema"
+    ],
+    "get_indexes": [
+      "self",
+      "conn",
+      "table_name",
+      "schema"
+    ],
+    "get_multi_columns": [
+      "self",
+      "connection",
+      "schema",
+      "filter_names",
+      "scope",
+      "kind"
+    ],
+    "get_multi_indexes": [
+      "self",
+      "connection",
+      "schema",
+      "filter_names",
+      "scope",
+      "kind"
+    ],
+    "get_multi_pk_constraint": [
+      "self",
+      "connection",
+      "schema",
+      "filter_names",
+      "scope",
+      "kind"
+    ],
+    "get_multi_foreign_keys": [
+      "self",
+      "connection",
+      "schema",
+      "filter_names",
+      "scope",
+      "kind",
+      "postgresql_ignore_search_path"
+    ],
+    "get_multi_unique_constraints": [
+      "self",
+      "connection",
+      "schema",
+      "filter_names",
+      "scope",
+      "kind"
+    ],
+    "get_multi_check_constraints": [
+      "self",
+      "connection",
+      "schema",
+      "filter_names",
+      "scope",
+      "kind"
+    ],
+    "get_multi_table_comment": [
+      "self",
+      "connection",
+      "schema",
+      "filter_names",
+      "scope",
+      "kind"
+    ],
+    "get_foreign_keys_v1": [
+      "self",
+      "conn",
+      "table_name",
+      "schema"
+    ],
+    "get_foreign_keys": [
+      "self",
+      "connection",
+      "table_name",
+      "schema",
+      "postgresql_ignore_search_path"
+    ],
+    "get_pk_constraint": [
+      "self",
+      "conn",
+      "table_name",
+      "schema"
+    ],
+    "get_unique_constraints": [
+      "self",
+      "conn",
+      "table_name",
+      "schema"
+    ],
+    "get_check_constraints": [
+      "self",
+      "conn",
+      "table_name",
+      "schema"
+    ],
+    "do_rollback_to_savepoint": [
+      "self",
+      "connection",
+      "name"
+    ],
+    "do_release_savepoint": [
+      "self",
+      "connection",
+      "name"
+    ],
+    "get_isolation_level": [
+      "self",
+      "connection"
+    ],
+    "get_isolation_level_values": [
+      "self",
+      "dbapi_conn"
+    ],
+    "get_table_comment": [
+      "self",
+      "connection",
+      "table_name",
+      "schema"
+    ],
+    "get_default_isolation_level": [
+      "self",
+      "dbapi_conn"
+    ]
+  },
+  "RisingWaveDialect": {
+    "__init__": [
+      "self"
+    ]
+  }
+}
