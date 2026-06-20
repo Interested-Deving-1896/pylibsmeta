@@ -1,0 +1,5422 @@
+{
+  "__all__": [],
+  "__version__": [],
+  "Settings": {
+    "model_config": [],
+    "settings_customise_sources": [
+      "cls",
+      "settings_cls",
+      "init_settings",
+      "env_settings",
+      "dotenv_settings",
+      "file_secret_settings"
+    ]
+  },
+  "settings": [],
+  "get_settings": [],
+  "MCPServer": [],
+  "_isolate_hud_settings": [
+    "request"
+  ],
+  "_MSG": [],
+  "_LOWERCASE_LEGACY": [],
+  "Grade": {
+    "gather": [],
+    "from_subscores": [
+      "subscores"
+    ]
+  },
+  "ContentResult": {
+    "__add__": [
+      "self",
+      "other"
+    ],
+    "to_text_blocks": [
+      "self"
+    ],
+    "to_content_blocks": [
+      "self"
+    ]
+  },
+  "ToolError": {},
+  "_NoOp": {
+    "__init__": [
+      "self"
+    ],
+    "__call__": [
+      "self"
+    ],
+    "__getattr__": [
+      "self",
+      "_name"
+    ]
+  },
+  "_LegacyCapabilityMarker": {
+    "__init__": [
+      "self"
+    ],
+    "__call__": [
+      "self"
+    ],
+    "__getattr__": [
+      "self",
+      "_name"
+    ]
+  },
+  "LegacyComputerTool": {
+    "_legacy_capability_kind": []
+  },
+  "LegacyShellTool": {
+    "_legacy_capability_kind": []
+  },
+  "_SHELL_NAME_HINTS": [],
+  "_warn": [
+    "what"
+  ],
+  "resolve_legacy_name": [
+    "module_name",
+    "name"
+  ],
+  "_alias_target": [
+    "fullname"
+  ],
+  "_make_alias_getattr": [
+    "fullname",
+    "target_name"
+  ],
+  "_make_legacy_getattr": [
+    "module_name"
+  ],
+  "_V5CompatFinder": {
+    "find_spec": [
+      "self",
+      "fullname",
+      "path",
+      "target"
+    ],
+    "create_module": [
+      "self",
+      "spec"
+    ],
+    "exec_module": [
+      "self",
+      "module"
+    ]
+  },
+  "install": [],
+  "T": [],
+  "AgentType": {
+    "CLAUDE": [],
+    "OPENAI": [],
+    "GEMINI": [],
+    "OPENAI_COMPATIBLE": [],
+    "cls": [
+      "self"
+    ],
+    "config_cls": [
+      "self"
+    ],
+    "gateway_provider": [
+      "self"
+    ],
+    "of": [
+      "cls",
+      "agent"
+    ]
+  },
+  "MCPToolCall": {
+    "__str__": [
+      "self"
+    ],
+    "__rich__": [
+      "self"
+    ]
+  },
+  "MCPToolResult": {
+    "_get_content_summary": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__rich__": [
+      "self"
+    ]
+  },
+  "STEP_SCHEMA": [],
+  "ROBOT_STEP_SCHEMA": [],
+  "TaskCall": {},
+  "Step": {
+    "model_config": [],
+    "emit": [
+      "self"
+    ]
+  },
+  "Trace": {
+    "model_config": [],
+    "final": [
+      "self",
+      "get"
+    ],
+    "collect": [
+      "self",
+      "get"
+    ],
+    "is_error": [
+      "self"
+    ],
+    "error": [
+      "self"
+    ],
+    "_number_steps": [
+      "self"
+    ],
+    "record": [
+      "self",
+      "step"
+    ],
+    "__len__": [
+      "self"
+    ]
+  },
+  "GatewayProviderInfo": {},
+  "GatewayModelInfo": {},
+  "GatewayModelsResponse": {},
+  "build_gateway_client": [
+    "provider"
+  ],
+  "list_gateway_models": [],
+  "now_iso": [],
+  "logger": [],
+  "HudException": {
+    "__init__": [
+      "self",
+      "message",
+      "response_json"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "HudRequestError": {
+    "__init__": [
+      "self",
+      "message",
+      "status_code",
+      "response_text",
+      "response_json",
+      "response_headers"
+    ],
+    "_hints_for_status": [
+      "status_code",
+      "message",
+      "response_text",
+      "response_json"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "from_httpx_error": [
+      "cls",
+      "error",
+      "context"
+    ]
+  },
+  "HudAuthenticationError": {},
+  "HudRateLimitError": {},
+  "HudTimeoutError": {},
+  "HudNetworkError": {},
+  "HudClientError": {},
+  "HudConfigError": {},
+  "HudEnvVarError": {},
+  "HudToolNotFoundError": {},
+  "HudMCPError": {},
+  "_DEFAULT_TIMEOUT": [],
+  "_DEFAULT_LIMITS": [],
+  "_handle_retry": [
+    "attempt",
+    "max_retries",
+    "retry_delay",
+    "url",
+    "error_msg"
+  ],
+  "_create_default_async_client": [],
+  "_create_default_sync_client": [],
+  "make_request": [
+    "method",
+    "url",
+    "json",
+    "api_key",
+    "max_retries",
+    "retry_delay",
+    "client"
+  ],
+  "make_request_sync": [
+    "method",
+    "url",
+    "json",
+    "api_key",
+    "max_retries",
+    "retry_delay"
+  ],
+  "LOGGER": [],
+  "_SKIP_STEMS": [],
+  "load_module": [
+    "path"
+  ],
+  "iter_modules": [
+    "path"
+  ],
+  "_unserializable_placeholder": [
+    "value"
+  ],
+  "json_safe_value": [
+    "value"
+  ],
+  "json_safe_dict": [
+    "values"
+  ],
+  "PlatformClient": {
+    "from_settings": [
+      "cls"
+    ],
+    "base_url": [
+      "self"
+    ],
+    "url": [
+      "self",
+      "path",
+      "params"
+    ],
+    "get": [
+      "self",
+      "path"
+    ],
+    "post": [
+      "self",
+      "path"
+    ],
+    "aget": [
+      "self",
+      "path"
+    ],
+    "apost": [
+      "self",
+      "path"
+    ]
+  },
+  "GOLD": [],
+  "RED": [],
+  "GREEN": [],
+  "DIM": [],
+  "YELLOW": [],
+  "TEXT": [],
+  "SECONDARY": [],
+  "Symbols": {
+    "ITEM": []
+  },
+  "HUDConsole": {
+    "sym": [],
+    "__init__": [
+      "self",
+      "logger"
+    ],
+    "header": [
+      "self",
+      "title",
+      "icon",
+      "stderr"
+    ],
+    "section_title": [
+      "self",
+      "title",
+      "stderr"
+    ],
+    "success": [
+      "self",
+      "message",
+      "stderr"
+    ],
+    "error": [
+      "self",
+      "message",
+      "stderr"
+    ],
+    "warning": [
+      "self",
+      "message",
+      "stderr"
+    ],
+    "info": [
+      "self",
+      "message",
+      "stderr"
+    ],
+    "print": [
+      "self",
+      "message",
+      "stderr"
+    ],
+    "dim_info": [
+      "self",
+      "label",
+      "value",
+      "stderr"
+    ],
+    "link": [
+      "self",
+      "url",
+      "stderr"
+    ],
+    "key_value_table": [
+      "self",
+      "data",
+      "show_header",
+      "stderr"
+    ],
+    "progress_message": [
+      "self",
+      "message",
+      "stderr"
+    ],
+    "hint": [
+      "self",
+      "hint",
+      "stderr"
+    ],
+    "status_item": [
+      "self",
+      "label",
+      "value",
+      "status",
+      "primary",
+      "stderr"
+    ],
+    "command_example": [
+      "self",
+      "command",
+      "description",
+      "stderr"
+    ],
+    "render_support_hint": [
+      "self",
+      "stderr"
+    ],
+    "render_exception": [
+      "self",
+      "error"
+    ],
+    "console": [
+      "self"
+    ],
+    "debug": [
+      "self",
+      "message",
+      "stderr"
+    ],
+    "select": [
+      "self",
+      "message",
+      "choices",
+      "default"
+    ],
+    "format_tool_call": [
+      "self",
+      "name",
+      "arguments"
+    ],
+    "format_tool_result": [
+      "self",
+      "content",
+      "is_error"
+    ],
+    "confirm": [
+      "self",
+      "message",
+      "default"
+    ]
+  },
+  "hud_console": [],
+  "Hint": {},
+  "HUD_API_KEY_MISSING": [],
+  "RATE_LIMIT_HIT": [],
+  "PRO_PLAN_REQUIRED": [],
+  "CREDITS_EXHAUSTED": [],
+  "TOOL_NOT_FOUND": [],
+  "CLIENT_NOT_INITIALIZED": [],
+  "INVALID_CONFIG": [],
+  "ENV_VAR_MISSING": [],
+  "MCP_SERVER_ERROR": [],
+  "render_hints": [
+    "hints"
+  ],
+  "test_url_prefixes_version_segment_and_joins_params": [],
+  "test_get_and_post_route_through_shared_requests": [
+    "monkeypatch"
+  ],
+  "test_requests_without_api_key_raise_authentication_error": [],
+  "test_from_settings_prepends_canonical_version": [
+    "monkeypatch"
+  ],
+  "TestHudException": {
+    "test_message_and_str": [
+      "self"
+    ],
+    "test_response_json_in_str": [
+      "self"
+    ],
+    "test_subclass_default_hints": [
+      "self"
+    ]
+  },
+  "TestHudRequestError": {
+    "test_401_adds_auth_hint": [
+      "self"
+    ],
+    "test_403_adds_auth_hint": [
+      "self"
+    ],
+    "test_403_pro_plan_message_sets_pro_hint": [
+      "self"
+    ],
+    "test_403_pro_plan_detail_sets_pro_hint": [
+      "self"
+    ],
+    "test_429_adds_rate_limit_hint": [
+      "self"
+    ],
+    "test_other_status_no_default_hints": [
+      "self"
+    ],
+    "test_explicit_hints_override_defaults": [
+      "self"
+    ],
+    "test_from_httpx_error": [
+      "self"
+    ],
+    "test_string_representation": [
+      "self"
+    ]
+  },
+  "test_output_methods_do_not_raise": [],
+  "test_debug_respects_logger_level": [],
+  "test_format_helpers_return_strings": [],
+  "test_render_exception_does_not_raise": [],
+  "test_render_exception_request_error_details": [],
+  "test_hint_objects_basic": [],
+  "test_all_hint_constants": [],
+  "test_hint_creation": [],
+  "test_hint_minimal": [],
+  "test_render_hints_none": [],
+  "test_render_hints_empty_list": [],
+  "test_render_hints_with_tips": [
+    "mock_console"
+  ],
+  "test_render_hints_with_command_examples": [
+    "mock_console"
+  ],
+  "test_render_hints_with_docs_url": [
+    "mock_console"
+  ],
+  "test_render_hints_same_title_and_message": [
+    "mock_console"
+  ],
+  "test_render_hints_different_title_and_message": [
+    "mock_console"
+  ],
+  "test_render_hints_with_custom_design": [],
+  "test_render_hints_handles_exception": [
+    "mock_console"
+  ],
+  "_create_mock_response": [
+    "status_code",
+    "json_data",
+    "raise_exception"
+  ],
+  "test_handle_retry": [],
+  "test_make_request_success": [],
+  "test_make_request_no_api_key": [],
+  "test_make_request_http_error": [],
+  "test_make_request_network_error": [],
+  "test_make_request_timeout": [],
+  "test_make_request_unexpected_error": [],
+  "test_make_request_auto_client_creation": [],
+  "test_make_request_sync_success": [],
+  "test_make_request_sync_no_api_key": [],
+  "test_make_request_sync_http_error": [],
+  "test_make_request_sync_network_error": [],
+  "test_make_request_sync_timeout": [],
+  "test_make_request_sync_unexpected_error": [],
+  "test_make_request_sync_auto_client_creation": [],
+  "test_json_safe_value_serializes_dataclass": [],
+  "test_json_safe_value_falls_back_for_unserializable_object": [],
+  "test_json_safe_dict_serializes_each_value": [],
+  "HudProtocolError": {
+    "__init__": [
+      "self",
+      "code",
+      "message"
+    ]
+  },
+  "ServerInfo": {},
+  "Manifest": {},
+  "HudClient": {
+    "PROTOCOL_VERSION": [],
+    "__init__": [
+      "self",
+      "reader",
+      "writer"
+    ],
+    "close": [
+      "self"
+    ],
+    "hello": [
+      "self"
+    ],
+    "_reachable": [
+      "self",
+      "cap"
+    ],
+    "binding": [
+      "self",
+      "ref"
+    ],
+    "open": [
+      "self",
+      "ref"
+    ],
+    "list_tasks": [
+      "self"
+    ],
+    "start_task": [
+      "self",
+      "task_id",
+      "args"
+    ],
+    "grade": [
+      "self",
+      "payload"
+    ],
+    "cancel": [
+      "self"
+    ],
+    "_call": [
+      "self",
+      "method",
+      "params"
+    ]
+  },
+  "_connect_ready": [
+    "host",
+    "port"
+  ],
+  "_runtime_ready_timeout": [
+    "runtime",
+    "default"
+  ],
+  "connect": [
+    "runtime"
+  ],
+  "HELLO_RESULT": [],
+  "test_connect_retries_through_accept_then_eof_until_the_env_serves": [],
+  "test_connect_uses_runtime_ready_timeout_param": [
+    "monkeypatch"
+  ],
+  "test_connect_gives_up_at_the_deadline_when_the_env_never_serves": [],
+  "_format_exception": [
+    "exc"
+  ],
+  "patch_json_response_error_propagation": [],
+  "patch_streamable_http_error_handling": [],
+  "patch_client_session_validation": [],
+  "patch_server_output_validation": [],
+  "suppress_fastmcp_logging": [
+    "level"
+  ],
+  "apply_all_patches": [],
+  "suppress_known_import_warnings": [],
+  "_SETUP": [],
+  "_SILENCES_JOSE": [],
+  "_LEAVES_OTHERS": [],
+  "_run_pristine": [
+    "code"
+  ],
+  "test_suppress_known_import_warnings_silences_authlib_jose_deprecation": [],
+  "test_suppress_known_import_warnings_leaves_other_warnings_untouched": [],
+  "_ARTICLES_RE": [],
+  "_WHITESPACE_RE": [],
+  "_PUNCTUATION_RE": [],
+  "normalize": [
+    "text"
+  ],
+  "exact_match": [
+    "answer",
+    "expected"
+  ],
+  "contains": [
+    "answer",
+    "substring"
+  ],
+  "contains_any": [
+    "answer",
+    "substrings"
+  ],
+  "contains_all": [
+    "answer",
+    "substrings"
+  ],
+  "numeric_match": [
+    "answer",
+    "expected"
+  ],
+  "_tokenize": [
+    "text"
+  ],
+  "f1_score": [
+    "answer",
+    "reference"
+  ],
+  "_dedupe_subscore_names": [
+    "subscores"
+  ],
+  "_combine_subscores": [
+    "subscores"
+  ],
+  "combine": [],
+  "_boolean_subscore": [
+    "name",
+    "weight",
+    "subscores",
+    "value"
+  ],
+  "combine_any": [
+    "weight",
+    "subscores"
+  ],
+  "combine_all": [
+    "weight",
+    "subscores"
+  ],
+  "SubScore": {
+    "model_config": [],
+    "score": [
+      "self"
+    ]
+  },
+  "EvaluationResult": {
+    "model_config": [],
+    "_check_subscores": [
+      "self"
+    ],
+    "from_float": [
+      "cls",
+      "value"
+    ]
+  },
+  "_SYSTEM_PROMPT": [],
+  "_Criterion": {},
+  "_Verdict": {},
+  "LLMJudgeGrader": {
+    "name": [],
+    "compute_score": [
+      "cls",
+      "answer",
+      "criteria",
+      "question",
+      "model"
+    ]
+  },
+  "_parse_criteria": [
+    "criteria"
+  ],
+  "_user_prompt": [
+    "criterion",
+    "answer",
+    "question"
+  ],
+  "_parse_verdict": [
+    "content"
+  ],
+  "_aggregate": [
+    "verdicts"
+  ],
+  "BashGrader": {
+    "name": [],
+    "compute_score": [
+      "cls",
+      "command",
+      "cwd",
+      "timeout_seconds"
+    ]
+  },
+  "Grader": {
+    "grade": [
+      "cls",
+      "weight",
+      "name"
+    ],
+    "compute_score": [
+      "cls"
+    ]
+  },
+  "_warned_no_bwrap": [],
+  "_PrefixSFTPServer": {
+    "__init__": [
+      "self",
+      "chan"
+    ],
+    "map_path": [
+      "self",
+      "path"
+    ]
+  },
+  "MountKind": [],
+  "Mount": {
+    "to_bwrap_args": [
+      "self"
+    ]
+  },
+  "_DEFAULT_USER": [],
+  "Workspace": {
+    "__init__": [
+      "self",
+      "root"
+    ],
+    "_prepare_runtime": [
+      "self"
+    ],
+    "_serve": [
+      "self"
+    ],
+    "start": [
+      "self"
+    ],
+    "_start_file_tracking": [
+      "self"
+    ],
+    "stop": [
+      "self"
+    ],
+    "ssh_url": [
+      "self"
+    ],
+    "ssh_host_pubkey": [
+      "self"
+    ],
+    "ssh_client_key_path": [
+      "self"
+    ],
+    "ssh_user": [
+      "self"
+    ],
+    "capability": [
+      "self",
+      "name"
+    ],
+    "tracks_files": [
+      "self"
+    ],
+    "file_tracking_capability": [
+      "self",
+      "name"
+    ],
+    "bwrap_available": [
+      "self"
+    ],
+    "bwrap_argv": [
+      "self",
+      "command"
+    ],
+    "shell_argv": [
+      "self",
+      "command"
+    ],
+    "_credentials_dir": [
+      "self"
+    ],
+    "_load_or_generate_host_key": [
+      "self"
+    ],
+    "_ensure_authorized_keys_file": [
+      "self"
+    ],
+    "_handle_process": [
+      "self",
+      "process"
+    ],
+    "_sftp_factory": [
+      "self",
+      "chan"
+    ]
+  },
+  "P": [],
+  "ToolKind": [],
+  "_SHELL_NAMES": [],
+  "_SHELL_CLASSES": [],
+  "_free_port": [],
+  "_port_open": [
+    "host",
+    "port",
+    "timeout"
+  ],
+  "_classify_tool": [
+    "tool"
+  ],
+  "LegacyEnvMixin": {
+    "_init_legacy": [
+      "self"
+    ],
+    "add_tool": [
+      "self",
+      "tool"
+    ],
+    "tool": [
+      "self",
+      "name_or_fn"
+    ],
+    "_ensure_tools_capability": [
+      "self"
+    ],
+    "_serve_legacy_tools": [
+      "self"
+    ],
+    "_ensure_mcp_capability": [
+      "self",
+      "tools"
+    ],
+    "_ensure_ssh_capability": [
+      "self"
+    ],
+    "_ensure_computer_capability": [
+      "self"
+    ],
+    "_cleanup_legacy_tools": [
+      "self"
+    ],
+    "scenario": [
+      "self",
+      "name",
+      "description"
+    ],
+    "__call__": [],
+    "run": [
+      "self",
+      "transport"
+    ]
+  },
+  "load_environment": [
+    "path"
+  ],
+  "send_frame": [
+    "writer",
+    "msg"
+  ],
+  "read_frame": [
+    "reader"
+  ],
+  "reply": [
+    "msg_id",
+    "result"
+  ],
+  "error": [
+    "msg_id",
+    "code",
+    "message"
+  ],
+  "_pump": [
+    "reader",
+    "writer"
+  ],
+  "splice": [
+    "a",
+    "b"
+  ],
+  "_FileTrackingHandler": {
+    "__init__": [
+      "self",
+      "tracker"
+    ],
+    "handle": [
+      "self",
+      "reader",
+      "writer"
+    ],
+    "_dispatch": [
+      "self",
+      "method"
+    ]
+  },
+  "serve_file_tracking": [
+    "tracker",
+    "host",
+    "port"
+  ],
+  "FileEntry": {},
+  "ScanBudget": {},
+  "Snapshot": {},
+  "PatchEntry": {},
+  "DiffResult": {
+    "to_dict": [
+      "self"
+    ]
+  },
+  "FileTracker": {
+    "__init__": [
+      "self",
+      "root"
+    ],
+    "take_baseline": [
+      "self"
+    ],
+    "advance_baseline": [
+      "self"
+    ],
+    "take_snapshot": [
+      "self"
+    ],
+    "get_cumulative_diff": [
+      "self"
+    ],
+    "current_manifest": [
+      "self"
+    ],
+    "_scan": [
+      "self"
+    ],
+    "_walk_directory": [
+      "self",
+      "abs_dir",
+      "files",
+      "budget"
+    ],
+    "_build_entry": [
+      "self",
+      "abs_path",
+      "rel",
+      "stat",
+      "budget"
+    ],
+    "_should_exclude": [
+      "self",
+      "rel",
+      "is_dir"
+    ],
+    "_is_secret": [
+      "self",
+      "rel"
+    ],
+    "_matches": [
+      "rel",
+      "is_dir",
+      "patterns"
+    ],
+    "_collect_gitignore_patterns": [
+      "self"
+    ],
+    "_parse_gitignore": [
+      "path"
+    ],
+    "_read_lines": [
+      "path"
+    ],
+    "_hash_file": [
+      "path",
+      "size"
+    ],
+    "_diff": [
+      "self",
+      "old",
+      "new"
+    ],
+    "_patch_text": [
+      "self",
+      "path",
+      "old_entry",
+      "new_entry",
+      "size_before",
+      "size_after"
+    ],
+    "_unified_diff": [
+      "path",
+      "old_lines",
+      "new_lines"
+    ]
+  },
+  "Answer": {
+    "model_config": []
+  },
+  "_args_json_schema": [
+    "sig"
+  ],
+  "_TaskFactory": {
+    "__init__": [
+      "self",
+      "env",
+      "id",
+      "description",
+      "func"
+    ],
+    "manifest_entry": [
+      "self"
+    ],
+    "__call__": [
+      "self"
+    ]
+  },
+  "Environment": {
+    "__init__": [
+      "self",
+      "name"
+    ],
+    "templates": [
+      "self"
+    ],
+    "template": [
+      "self"
+    ],
+    "initialize": [
+      "self",
+      "fn"
+    ],
+    "shutdown": [
+      "self",
+      "fn"
+    ],
+    "add_capability": [
+      "self",
+      "cap"
+    ],
+    "capability": [
+      "self",
+      "name"
+    ],
+    "workspace": [
+      "self",
+      "root"
+    ],
+    "start": [
+      "self"
+    ],
+    "stop": [
+      "self"
+    ]
+  },
+  "PORT_ANNOUNCEMENT": [],
+  "_jsonable": [
+    "value"
+  ],
+  "_coerce_args": [
+    "sig",
+    "args"
+  ],
+  "_build_answer": [
+    "return_type",
+    "payload"
+  ],
+  "_score_value": [
+    "result"
+  ],
+  "TaskRunner": {
+    "__init__": [
+      "self",
+      "task",
+      "args"
+    ],
+    "start": [
+      "self"
+    ],
+    "grade": [
+      "self",
+      "payload"
+    ],
+    "cancel": [
+      "self"
+    ]
+  },
+  "_NoTaskInProgress": {},
+  "_frames": [
+    "first",
+    "reader"
+  ],
+  "_ControlChannel": {
+    "__init__": [
+      "self",
+      "env"
+    ],
+    "start": [
+      "self",
+      "task_id",
+      "args"
+    ],
+    "grade": [
+      "self",
+      "payload"
+    ],
+    "cancel": [
+      "self"
+    ],
+    "session": [
+      "self",
+      "first",
+      "reader",
+      "writer"
+    ]
+  },
+  "_stream": [
+    "env",
+    "msg",
+    "reader",
+    "writer"
+  ],
+  "bind": [
+    "env",
+    "host",
+    "port"
+  ],
+  "serve": [
+    "env",
+    "host",
+    "port"
+  ],
+  "_serve_until_terminated": [
+    "env",
+    "host",
+    "port"
+  ],
+  "main": [],
+  "RobotEndpoint": {
+    "__init__": [
+      "self",
+      "bridge"
+    ],
+    "remote": [
+      "cls",
+      "host",
+      "port"
+    ],
+    "_is_remote": [
+      "self"
+    ],
+    "_local_bridge": [
+      "self"
+    ],
+    "url": [
+      "self"
+    ],
+    "capability": [
+      "self"
+    ],
+    "start": [
+      "self"
+    ],
+    "stop": [
+      "self"
+    ],
+    "reset": [
+      "self"
+    ],
+    "result": [
+      "self"
+    ],
+    "serve": [
+      "self",
+      "host",
+      "port"
+    ],
+    "_handle": [
+      "self",
+      "reader",
+      "writer"
+    ],
+    "_dispatch": [
+      "self",
+      "method",
+      "params"
+    ],
+    "connect": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "_call": [
+      "self",
+      "method",
+      "params"
+    ]
+  },
+  "SimRunner": {
+    "call": [
+      "self",
+      "fn"
+    ],
+    "shutdown": [
+      "self"
+    ]
+  },
+  "InlineSimRunner": {
+    "call": [
+      "self",
+      "fn"
+    ]
+  },
+  "ThreadSimRunner": {
+    "__init__": [
+      "self"
+    ],
+    "_record_ident": [
+      "self"
+    ],
+    "call": [
+      "self",
+      "fn"
+    ],
+    "shutdown": [
+      "self"
+    ]
+  },
+  "MainThreadSimRunner": {
+    "__init__": [
+      "self"
+    ],
+    "call": [
+      "self",
+      "fn"
+    ],
+    "drain": [
+      "self"
+    ]
+  },
+  "RobotBridge": {
+    "__init__": [
+      "self"
+    ],
+    "_reset": [
+      "self"
+    ],
+    "reset": [
+      "self"
+    ],
+    "step": [
+      "self",
+      "action"
+    ],
+    "get_observation": [
+      "self"
+    ],
+    "result": [
+      "self"
+    ],
+    "url": [
+      "self"
+    ],
+    "start": [
+      "self"
+    ],
+    "stop": [
+      "self"
+    ],
+    "_handle_client": [
+      "self",
+      "ws"
+    ],
+    "_send_observation": [
+      "self"
+    ]
+  },
+  "test_load_environment_selects_by_attr_or_env_name": [
+    "tmp_path"
+  ],
+  "test_attaching_a_workspace_writes_nothing": [
+    "tmp_path"
+  ],
+  "test_serving_publishes_the_workspace_capability": [
+    "tmp_path"
+  ],
+  "test_reconnecting_reuses_the_same_workspace": [
+    "tmp_path"
+  ],
+  "test_stop_tears_down_the_workspace": [
+    "tmp_path"
+  ],
+  "test_restarting_replaces_the_published_address_without_duplicates": [
+    "tmp_path"
+  ],
+  "test_any_initialize_hook_can_publish_a_capability": [],
+  "test_loopback_declarations_are_forwarded_and_remote_ones_pass_through": [],
+  "test_a_capability_without_a_url_is_rejected": [],
+  "test_non_capability_entries_are_rejected": [],
+  "test_modified_file_produces_a_unified_diff": [
+    "tmp_path"
+  ],
+  "test_added_and_deleted_files": [
+    "tmp_path"
+  ],
+  "test_no_changes_yields_empty_diff": [
+    "tmp_path"
+  ],
+  "test_exclude_patterns_skip_build_output": [
+    "tmp_path"
+  ],
+  "test_gitignore_is_honored": [
+    "tmp_path"
+  ],
+  "test_secret_files_are_tracked_but_content_is_never_emitted": [
+    "tmp_path"
+  ],
+  "test_per_file_diff_cap_emits_a_placeholder": [
+    "tmp_path",
+    "monkeypatch"
+  ],
+  "test_budget_skipped_files_stay_pending_until_emitted": [
+    "tmp_path",
+    "monkeypatch"
+  ],
+  "test_nested_gitignore_is_not_honored_or_leaked": [
+    "tmp_path"
+  ],
+  "test_manifest_carries_paths_and_hashes": [
+    "tmp_path"
+  ],
+  "test_to_dict_shape_matches_wire_contract": [
+    "tmp_path"
+  ],
+  "served": [
+    "env"
+  ],
+  "_Point": {},
+  "test_args_schema_captures_params_defaults_and_required": [],
+  "test_args_schema_for_no_param_task_rejects_args": [],
+  "test_args_schema_var_keyword_allows_additional": [],
+  "test_args_schema_unannotated_param_accepts_anything": [],
+  "test_input_and_returns_schemas_still_published": [],
+  "test_dict_grade_without_numeric_score_errors_loudly": [],
+  "test_non_numeric_grade_errors_loudly": [],
+  "test_score_dict_passes_through_with_extra_keys": [],
+  "test_evaluation_result_forwards_reward_and_metadata": [],
+  "test_answer_holds_parsed_content_and_raw_string": [],
+  "test_diff_snapshot_advance_roundtrip": [
+    "tmp_path"
+  ],
+  "echo_port": [],
+  "_echo_env": [
+    "port"
+  ],
+  "test_bytes_round_trip_through_the_forwarded_binding": [
+    "echo_port"
+  ],
+  "test_concurrent_tunnel_streams_do_not_interleave": [
+    "echo_port"
+  ],
+  "test_tunnel_open_for_an_unknown_capability_returns_an_error_frame": [
+    "echo_port"
+  ],
+  "test_tunnel_open_mid_session_is_not_a_method": [
+    "echo_port"
+  ],
+  "test_closing_the_client_tears_down_its_forwarders": [
+    "echo_port"
+  ],
+  "_silence_deprecation": [],
+  "_FnAgent": {
+    "__init__": [
+      "self",
+      "fn"
+    ],
+    "__call__": [
+      "self",
+      "run"
+    ]
+  },
+  "_sum_env": [],
+  "_solve_add": [
+    "prompt"
+  ],
+  "test_classify_tool_buckets": [],
+  "test_workspace_construction_has_no_runtime_side_effects": [
+    "tmp_path"
+  ],
+  "test_scenario_runs_start_to_evaluate_over_the_wire": [],
+  "test_wrong_answer_scores_zero": [],
+  "test_taskset_concurrent_grouped_rollouts": [],
+  "test_taskset_isolates_a_failing_rollout": [],
+  "test_unknown_task_raises_protocol_error": [],
+  "test_task_that_errors_in_evaluate_propagates": [],
+  "test_exception_in_body_cancels_without_evaluating": [],
+  "test_chat_scenario_yields_message_list_prompt": [],
+  "test_typed_returns_delivers_answer_envelope": [],
+  "test_legacy_tools_become_capabilities_end_to_end": [
+    "monkeypatch"
+  ],
+  "create_agent": [
+    "model"
+  ],
+  "_LAZY_EXPORTS": [],
+  "__getattr__": [
+    "name"
+  ],
+  "MessageT": [],
+  "ConfigT": [],
+  "_message_text": [
+    "message"
+  ],
+  "RunState": {},
+  "ToolAgent": {
+    "__init_subclass__": [
+      "cls"
+    ],
+    "hosted_spec": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "run"
+    ],
+    "_build_tools": [
+      "self",
+      "connections"
+    ],
+    "_loop": [
+      "self",
+      "run",
+      "state"
+    ],
+    "_dispatch_call": [
+      "self",
+      "call",
+      "state"
+    ],
+    "_initial_messages": [
+      "self",
+      "prompt"
+    ],
+    "_initialize_state": [
+      "self"
+    ],
+    "get_response": [
+      "self",
+      "state"
+    ],
+    "_format_user_text": [
+      "self",
+      "text"
+    ],
+    "_format_message": [
+      "self",
+      "role",
+      "text"
+    ],
+    "_format_result": [
+      "self",
+      "call",
+      "result",
+      "state"
+    ]
+  },
+  "Agent": {
+    "__call__": [
+      "self",
+      "run"
+    ]
+  },
+  "_model_alias": [],
+  "AgentConfig": {
+    "model_config": []
+  },
+  "ClaudeConfig": {},
+  "GeminiConfig": {},
+  "OpenAIConfig": {},
+  "OpenAIChatConfig": {},
+  "ClaudeSDKConfig": {},
+  "BrowserUseConfig": {},
+  "Citation": {
+    "model_config": []
+  },
+  "Sample": {},
+  "Usage": {},
+  "AgentStep": {
+    "_serialize_raw": [
+      "self",
+      "raw"
+    ]
+  },
+  "ToolStep": {},
+  "SubagentStep": {},
+  "StateFeature": {
+    "model_config": []
+  },
+  "ObservationStep": {
+    "from_obs": [
+      "cls",
+      "obs"
+    ]
+  },
+  "InferenceStep": {},
+  "GeminiAgent": {
+    "tool_catalog": [],
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "_initialize_state": [
+      "self"
+    ],
+    "_format_message": [
+      "self",
+      "role",
+      "text"
+    ],
+    "_format_result": [
+      "self",
+      "call",
+      "result",
+      "state"
+    ],
+    "get_response": [
+      "self",
+      "state"
+    ],
+    "_find_computer_tool": [
+      "self",
+      "state"
+    ],
+    "_make_tool_call": [
+      "self",
+      "function_call",
+      "computer_tool"
+    ]
+  },
+  "_grounding_citations": [
+    "grounding_meta"
+  ],
+  "GeminiAgentSettings": {
+    "model_config": []
+  },
+  "gemini_agent_settings": [],
+  "GeminiHostedTool": {},
+  "GeminiGoogleSearchTool": {
+    "to_params": [
+      "self"
+    ]
+  },
+  "GeminiUrlContextTool": {
+    "to_params": [
+      "self"
+    ]
+  },
+  "GeminiCodeExecutionTool": {
+    "to_params": [
+      "self"
+    ]
+  },
+  "GEMINI_READ_SPEC": [],
+  "GEMINI_SEARCH_SPEC": [],
+  "GEMINI_GLOB_SPEC": [],
+  "GEMINI_LIST_SPEC": [],
+  "GeminiReadTool": {
+    "name": [],
+    "default_spec": [
+      "cls",
+      "model"
+    ],
+    "to_params": [
+      "self"
+    ],
+    "execute": [
+      "self",
+      "arguments"
+    ]
+  },
+  "GeminiSearchTool": {
+    "name": [],
+    "default_spec": [
+      "cls",
+      "model"
+    ],
+    "to_params": [
+      "self"
+    ],
+    "execute": [
+      "self",
+      "arguments"
+    ]
+  },
+  "GeminiGlobTool": {
+    "name": [],
+    "default_spec": [
+      "cls",
+      "model"
+    ],
+    "to_params": [
+      "self"
+    ],
+    "execute": [
+      "self",
+      "arguments"
+    ]
+  },
+  "GeminiListTool": {
+    "name": [],
+    "default_spec": [
+      "cls",
+      "model"
+    ],
+    "to_params": [
+      "self"
+    ],
+    "execute": [
+      "self",
+      "arguments"
+    ]
+  },
+  "_shell_quote": [
+    "s"
+  ],
+  "GEMINI_DRAG_INSET": [],
+  "IS_MAC": [],
+  "PREDEFINED_COMPUTER_USE_FUNCTIONS": [],
+  "GEMINI_COMPUTER_SPEC": [],
+  "GeminiComputerTool": {
+    "name": [],
+    "__init__": [
+      "self"
+    ],
+    "default_spec": [
+      "cls",
+      "model"
+    ],
+    "to_params": [
+      "self"
+    ],
+    "execute": [
+      "self",
+      "arguments"
+    ],
+    "_dispatch": [
+      "self",
+      "action",
+      "args"
+    ]
+  },
+  "GeminiMCPProxyTool": {
+    "default_spec": [
+      "cls",
+      "model"
+    ],
+    "to_params": [
+      "self"
+    ]
+  },
+  "GeminiToolSpec": [],
+  "GEMINI_SHELL_SPEC": [],
+  "GEMINI_EDIT_SPEC": [],
+  "GEMINI_WRITE_SPEC": [],
+  "tool_decl": [
+    "name",
+    "description",
+    "parameters"
+  ],
+  "GeminiShellTool": {
+    "name": [],
+    "default_spec": [
+      "cls",
+      "model"
+    ],
+    "to_params": [
+      "self"
+    ],
+    "execute": [
+      "self",
+      "arguments"
+    ]
+  },
+  "GeminiEditTool": {
+    "name": [],
+    "default_spec": [
+      "cls",
+      "model"
+    ],
+    "to_params": [
+      "self"
+    ],
+    "execute": [
+      "self",
+      "arguments"
+    ]
+  },
+  "GeminiWriteTool": {
+    "name": [],
+    "default_spec": [
+      "cls",
+      "model"
+    ],
+    "to_params": [
+      "self"
+    ],
+    "execute": [
+      "self",
+      "arguments"
+    ]
+  },
+  "required_str": [
+    "arguments",
+    "key"
+  ],
+  "RecordingGemini": {
+    "__init__": [
+      "self"
+    ],
+    "screenshot": [
+      "self"
+    ],
+    "click": [
+      "self",
+      "x",
+      "y"
+    ],
+    "move": [
+      "self",
+      "x",
+      "y"
+    ],
+    "type_text": [
+      "self",
+      "text"
+    ],
+    "press_keys": [
+      "self",
+      "keys"
+    ],
+    "scroll": [
+      "self",
+      "x",
+      "y"
+    ],
+    "drag": [
+      "self",
+      "path"
+    ],
+    "wait": [
+      "self",
+      "ms"
+    ]
+  },
+  "test_default_spec": [],
+  "test_click_at": [],
+  "test_type_text_at_without_clear": [],
+  "test_scroll_at_down": [],
+  "test_key_combination": [],
+  "test_key_combination_requires_string": [],
+  "test_wait_and_drag": [],
+  "test_missing_action_errors": [],
+  "test_unknown_action_errors": [],
+  "lerobot_infer": [
+    "policy",
+    "preprocess",
+    "postprocess",
+    "batch"
+  ],
+  "Model": {
+    "reset": [
+      "self"
+    ],
+    "infer": [
+      "self",
+      "batch"
+    ],
+    "ainfer": [
+      "self",
+      "batch"
+    ]
+  },
+  "Ensembler": {
+    "__init__": [
+      "self",
+      "horizon",
+      "alpha"
+    ],
+    "reset": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "chunk"
+    ]
+  },
+  "LeRobotModel": {
+    "__init__": [
+      "self",
+      "policy",
+      "preprocess",
+      "postprocess",
+      "ensembler"
+    ],
+    "reset": [
+      "self"
+    ],
+    "infer": [
+      "self",
+      "batch"
+    ]
+  },
+  "ROBOT_PROTOCOL": [],
+  "RobotAgent": {
+    "setup_robot": [
+      "self",
+      "client"
+    ],
+    "on_episode_start": [
+      "self",
+      "run",
+      "client"
+    ],
+    "should_stop": [
+      "self",
+      "obs"
+    ],
+    "select_action": [
+      "self",
+      "obs"
+    ],
+    "__call__": [
+      "self",
+      "run"
+    ]
+  },
+  "ActionArray": [],
+  "Adapter": {
+    "__init__": [
+      "self"
+    ],
+    "bind": [
+      "self",
+      "action_space",
+      "observation_space"
+    ],
+    "reset": [
+      "self"
+    ],
+    "adapt_observation": [
+      "self",
+      "obs",
+      "prompt"
+    ],
+    "adapt_action": [
+      "self",
+      "action",
+      "obs"
+    ]
+  },
+  "LeRobotAdapter": {
+    "adapt_observation": [
+      "self",
+      "obs",
+      "prompt"
+    ],
+    "adapt_action": [
+      "self",
+      "action",
+      "obs"
+    ]
+  },
+  "CDP_PROTOCOL": [],
+  "BrowserUseAgent": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "__call__": [
+      "self",
+      "run"
+    ]
+  },
+  "_ws_to_http": [
+    "url"
+  ],
+  "OpenAIChatRunState": {},
+  "OpenAIChatAgent": {
+    "tool_catalog": [],
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "_initialize_state": [
+      "self"
+    ],
+    "_format_message": [
+      "self",
+      "role",
+      "text"
+    ],
+    "_format_result": [
+      "self",
+      "call",
+      "result",
+      "state"
+    ],
+    "get_response": [
+      "self",
+      "state"
+    ]
+  },
+  "_FilesystemTool": {
+    "default_spec": [
+      "cls",
+      "model"
+    ],
+    "to_params": [
+      "self"
+    ]
+  },
+  "ReadTool": {
+    "name": [],
+    "description": [],
+    "execute": [
+      "self",
+      "arguments"
+    ]
+  },
+  "GrepTool": {
+    "name": [],
+    "description": [],
+    "execute": [
+      "self",
+      "arguments"
+    ]
+  },
+  "GlobTool": {
+    "name": [],
+    "description": [],
+    "execute": [
+      "self",
+      "arguments"
+    ]
+  },
+  "ListTool": {
+    "name": [],
+    "description": [],
+    "execute": [
+      "self",
+      "arguments"
+    ]
+  },
+  "OpenAICompatibleMCPProxyTool": {
+    "default_spec": [
+      "cls",
+      "model"
+    ],
+    "provider_name": [
+      "self"
+    ],
+    "to_params": [
+      "self"
+    ]
+  },
+  "_TOOL_NAME_PATTERN": [],
+  "format_chat_result": [
+    "call",
+    "result"
+  ],
+  "openai_compatible_tool_name": [
+    "name"
+  ],
+  "_sanitize_schema_for_openai": [
+    "schema"
+  ],
+  "openai_compatible_tool_param": [
+    "tool"
+  ],
+  "OpenAIRunState": {},
+  "OpenAIAgent": {
+    "tool_catalog": [],
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "_initialize_state": [
+      "self"
+    ],
+    "_format_message": [
+      "self",
+      "role",
+      "text"
+    ],
+    "_format_result": [
+      "self",
+      "call",
+      "result",
+      "state"
+    ],
+    "get_response": [
+      "self",
+      "state"
+    ]
+  },
+  "DiffError": {},
+  "ActionType": [],
+  "Chunk": {},
+  "PatchAction": {},
+  "Parser": {
+    "__init__": [
+      "self",
+      "current_files",
+      "lines",
+      "index"
+    ],
+    "is_done": [
+      "self",
+      "prefixes"
+    ],
+    "read_str": [
+      "self",
+      "prefix"
+    ],
+    "parse": [
+      "self"
+    ],
+    "parse_update_file": [
+      "self",
+      "text"
+    ],
+    "parse_add_file": [
+      "self"
+    ],
+    "_peek_next_section": [
+      "self"
+    ]
+  },
+  "_find_context": [
+    "lines",
+    "context",
+    "start",
+    "eof"
+  ],
+  "_text_to_patch": [
+    "text",
+    "orig"
+  ],
+  "_apply_patch": [
+    "patch",
+    "orig",
+    "write_fn",
+    "remove_fn"
+  ],
+  "OpenAIHostedTool": {},
+  "OpenAICodeInterpreterTool": {
+    "to_params": [
+      "self"
+    ]
+  },
+  "OpenAIToolSearchTool": {
+    "to_params": [
+      "self"
+    ]
+  },
+  "_UNSUPPORTED_KEYWORDS": [],
+  "ensure_strict_json_schema": [
+    "schema"
+  ],
+  "_ensure_strict_json_schema": [
+    "json_schema"
+  ],
+  "_resolve_ref": [],
+  "_is_dict": [
+    "obj"
+  ],
+  "_is_list": [
+    "obj"
+  ],
+  "_has_more_than_n_keys": [
+    "obj",
+    "n"
+  ],
+  "OPENAI_COMPUTER_SPEC": [],
+  "last_image_data": [
+    "result"
+  ],
+  "_SCREENSHOT_ACTIONS": [],
+  "OpenAIComputerTool": {
+    "name": [],
+    "default_spec": [
+      "cls",
+      "model"
+    ],
+    "to_params": [
+      "self"
+    ],
+    "execute": [
+      "self",
+      "arguments"
+    ],
+    "_execute_one": [
+      "self",
+      "arguments"
+    ],
+    "_dispatch": [
+      "self",
+      "action_type",
+      "args"
+    ]
+  },
+  "_map_key": [
+    "key"
+  ],
+  "_hold_keys": [
+    "keys"
+  ],
+  "OpenAIMCPProxyTool": {
+    "default_spec": [
+      "cls",
+      "model"
+    ],
+    "to_params": [
+      "self"
+    ]
+  },
+  "OpenAIToolSpec": [],
+  "format_openai_result": [
+    "call",
+    "result"
+  ],
+  "OPENAI_SHELL_SPEC": [],
+  "OpenAIShellTool": {
+    "name": [],
+    "default_spec": [
+      "cls",
+      "model"
+    ],
+    "to_params": [
+      "self"
+    ],
+    "execute": [
+      "self",
+      "arguments"
+    ]
+  },
+  "_shell_result": [
+    "text"
+  ],
+  "shell_output": [
+    "stdout",
+    "stderr",
+    "exit_code"
+  ],
+  "test_empty_schema_becomes_closed_object": [],
+  "test_object_gets_additional_properties_false_and_all_required": [],
+  "test_additional_properties_true_is_converted_to_false": [],
+  "test_unsupported_keywords_are_stripped": [],
+  "test_nested_objects_are_recursively_strict": [],
+  "test_is_idempotent": [],
+  "RecordingOpenAI": {
+    "__init__": [
+      "self"
+    ],
+    "screenshot": [
+      "self"
+    ],
+    "click": [
+      "self",
+      "x",
+      "y"
+    ],
+    "move": [
+      "self",
+      "x",
+      "y"
+    ],
+    "type_text": [
+      "self",
+      "text"
+    ],
+    "press_keys": [
+      "self",
+      "keys"
+    ],
+    "scroll": [
+      "self",
+      "x",
+      "y"
+    ],
+    "drag": [
+      "self",
+      "path"
+    ],
+    "wait": [
+      "self",
+      "ms"
+    ]
+  },
+  "test_key_mapping": [],
+  "test_to_params": [],
+  "test_click_returns_screenshot": [],
+  "test_type_and_keypress": [],
+  "test_drag_and_wait": [],
+  "test_response_action_returns_text": [],
+  "test_actions_list_runs_each": [],
+  "test_empty_actions_errors": [],
+  "test_invalid_type_errors": [],
+  "FakeModels": {
+    "__init__": [
+      "self",
+      "response"
+    ],
+    "generate_content": [
+      "self"
+    ]
+  },
+  "FakeGenai": {
+    "__init__": [
+      "self",
+      "response"
+    ]
+  },
+  "_agent": [
+    "response"
+  ],
+  "_state": [
+    "agent"
+  ],
+  "test_format_message_uses_model_role": [],
+  "_api_response": [],
+  "test_get_response_text_and_function_call": [],
+  "test_get_response_done_text_only": [],
+  "test_get_response_no_candidates_raises": [],
+  "test_make_tool_call_maps_predefined_to_computer": [],
+  "test_make_tool_call_plain_function": [],
+  "test_grounding_citations": [],
+  "_Completed": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "_FakeOpenFile": {
+    "__init__": [
+      "self",
+      "store",
+      "path",
+      "mode"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self"
+    ],
+    "read": [
+      "self"
+    ],
+    "write": [
+      "self",
+      "data"
+    ]
+  },
+  "_FakeSFTP": {
+    "__init__": [
+      "self",
+      "store"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self"
+    ],
+    "open": [
+      "self",
+      "path",
+      "mode"
+    ]
+  },
+  "_Conn": {
+    "__init__": [
+      "self",
+      "completed",
+      "store"
+    ],
+    "run": [
+      "self",
+      "command",
+      "check"
+    ],
+    "start_sftp_client": [
+      "self"
+    ]
+  },
+  "_FakeSSH": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "_ssh": [],
+  "_commands": [
+    "tool"
+  ],
+  "test_openai_shell_wraps_command_with_timeout": [],
+  "test_openai_shell_runs_each_command_without_timeout": [],
+  "test_openai_shell_rejects_non_list_commands_without_running": [],
+  "test_openai_shell_to_params_is_shell_type": [],
+  "test_gemini_shell_scopes_command_to_quoted_directory": [],
+  "test_gemini_shell_runs_bare_command": [],
+  "test_gemini_shell_requires_command": [],
+  "test_claude_bash_runs_command": [],
+  "test_claude_bash_restart_is_a_noop": [],
+  "test_claude_bash_requires_command": [],
+  "test_claude_bash_to_params_carries_native_schema": [],
+  "test_claude_text_editor_creates_file": [],
+  "test_claude_text_editor_str_replace_rewrites_file": [],
+  "test_claude_text_editor_str_replace_errors_when_not_unique": [],
+  "test_gemini_edit_creates_file_when_old_string_empty": [],
+  "test_windows_shell_runs_batch_file_via_cmd": [
+    "shell"
+  ],
+  "test_posix_shell_runs_inline_with_install_check": [],
+  "_FakeFile": {
+    "__init__": [
+      "self",
+      "name",
+      "sink"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self"
+    ],
+    "write": [
+      "self",
+      "data"
+    ]
+  },
+  "_FakeConn": {
+    "__init__": [
+      "self",
+      "sink",
+      "result"
+    ],
+    "start_sftp_client": [
+      "self"
+    ],
+    "run": [
+      "self",
+      "cmd"
+    ]
+  },
+  "_fake_run": [],
+  "_STREAM_JSON": [],
+  "_agent_with_conn": [
+    "shell",
+    "conn"
+  ],
+  "test_exec_on_windows_writes_batch_and_execs_via_cmd": [],
+  "test_exec_on_bash_runs_inline_without_batch": [],
+  "test_exec_nonzero_exit_with_no_stdout_records_system_error": [],
+  "test_agent_step_raw_serializes_safely": [],
+  "test_agent_step_dump_uses_canonical_field_names": [],
+  "test_agent_step_citations_roundtrip": [],
+  "test_citation_defaults": [],
+  "test_final_query_reads_the_final_agent_turns_citations": [],
+  "test_agent_step_timing_and_error_live_on_the_skeleton": [],
+  "test_trace_dump_keeps_family_payloads": [],
+  "test_step_emit_carries_tool_call_and_result": [],
+  "_Msg": [],
+  "_FakeRun": {
+    "__init__": [
+      "self"
+    ],
+    "record": [
+      "self",
+      "step"
+    ]
+  },
+  "DictAgent": {
+    "__init__": [
+      "self",
+      "turns"
+    ],
+    "_initialize_state": [
+      "self"
+    ],
+    "get_response": [
+      "self",
+      "state"
+    ],
+    "_format_message": [
+      "self",
+      "role",
+      "text"
+    ],
+    "_format_result": [
+      "self",
+      "call",
+      "result",
+      "state"
+    ]
+  },
+  "test_init_subclass_derives_clients_from_catalog": [],
+  "test_initial_messages_formats_each_turn": [],
+  "test_dispatch_unknown_tool_returns_error_result": [],
+  "test_loop_finishes_on_done_response": [],
+  "test_loop_dispatches_tool_calls_then_finishes": [],
+  "test_loop_max_steps_is_normal_termination": [],
+  "FakeCompletions": {
+    "__init__": [
+      "self",
+      "response",
+      "error"
+    ],
+    "create": [
+      "self"
+    ]
+  },
+  "FakeOpenAI": {
+    "__init__": [
+      "self",
+      "response",
+      "error"
+    ]
+  },
+  "_response": [
+    "content",
+    "tool_calls"
+  ],
+  "test_get_response_text_only": [],
+  "test_get_response_with_tool_call": [],
+  "test_get_response_error_path": [],
+  "_FillingAgent": {
+    "__call__": [
+      "self",
+      "run"
+    ]
+  },
+  "test_agent_requires_call_implementation": [],
+  "test_agent_call_fills_trace": [],
+  "test_agent_type_maps_value_to_class_and_provider": [],
+  "test_missing_provider_dependency_points_at_agents_extra": [
+    "monkeypatch"
+  ],
+  "test_create_agent_unknown_model_raises": [
+    "monkeypatch"
+  ],
+  "test_create_agent_value_shortcut_builds_provider_agent": [
+    "monkeypatch"
+  ],
+  "test_create_agent_resolves_gateway_model_metadata": [
+    "monkeypatch"
+  ],
+  "_apply": [
+    "patch_text",
+    "orig"
+  ],
+  "test_add_file_writes_new_content": [],
+  "test_update_file_replaces_a_line_in_context": [],
+  "test_delete_file_calls_remove": [],
+  "test_update_with_move_renames_file": [],
+  "test_invalid_patch_without_sentinels_raises": [],
+  "test_update_missing_file_raises": [],
+  "test_duplicate_update_path_raises": [],
+  "FakeStream": {
+    "__init__": [
+      "self",
+      "final"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__anext__": [
+      "self"
+    ],
+    "get_final_message": [
+      "self"
+    ]
+  },
+  "FakeMessages": {
+    "__init__": [
+      "self",
+      "final"
+    ],
+    "stream": [
+      "self"
+    ]
+  },
+  "FakeAnthropic": {
+    "__init__": [
+      "self",
+      "final"
+    ]
+  },
+  "_final": [],
+  "test_format_message_shape": [],
+  "test_get_response_text_and_tool_use": [],
+  "test_get_response_done_on_text_only": [],
+  "test_get_response_collects_thinking": [],
+  "test_citation_char_location": [],
+  "test_cache_last_user_block_marks_content": [],
+  "FakeResponses": {
+    "__init__": [
+      "self",
+      "response"
+    ],
+    "create": [
+      "self"
+    ]
+  },
+  "test_format_message_shapes_user_text": [],
+  "test_get_response_parses_text_and_function_call": [],
+  "test_get_response_done_when_no_tool_calls": [],
+  "test_get_response_short_circuits_on_consumed_messages": [],
+  "test_get_response_parses_shell_call": [],
+  "ResponseType": [],
+  "DEFAULT_SYSTEM_PROMPT": [],
+  "auto_respond": [
+    "content"
+  ],
+  "_client": [],
+  "_determine_response": [
+    "agent_message"
+  ],
+  "ClaudeImageMediaType": [],
+  "ClaudeToolResultContent": [],
+  "ClaudeAgent": {
+    "tool_catalog": [],
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "_resolve_client": [
+      "self"
+    ],
+    "_initialize_state": [
+      "self"
+    ],
+    "_format_message": [
+      "self",
+      "role",
+      "text"
+    ],
+    "_format_result": [
+      "self",
+      "call",
+      "result",
+      "state"
+    ],
+    "get_response": [
+      "self",
+      "state"
+    ],
+    "_cache_last_user_block": [
+      "messages"
+    ],
+    "_citation": [
+      "citation"
+    ]
+  },
+  "WINDOWS_SHELLS": [],
+  "_POSIX_INSTALL_CHECK": [],
+  "RemoteInvocation": {},
+  "build_remote_invocation": [
+    "shell",
+    "run_cmd"
+  ],
+  "ClaudeSDKAgent": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "__call__": [
+      "self",
+      "run"
+    ],
+    "_exec": [
+      "self",
+      "run"
+    ],
+    "_build_env_vars": [
+      "self"
+    ],
+    "_write_mcp_config": [
+      "self"
+    ],
+    "_build_cli_command": [
+      "self"
+    ],
+    "_parse_stream_json": [
+      "self",
+      "run",
+      "stdout",
+      "stderr"
+    ]
+  },
+  "create_computer_mcp": [
+    "rfb"
+  ],
+  "serve_computer_mcp": [
+    "rfb",
+    "host",
+    "port"
+  ],
+  "_run": [
+    "mcp",
+    "host",
+    "port"
+  ],
+  "ClaudeToolSettings": {
+    "model_config": []
+  },
+  "claude_tool_settings": [],
+  "ClaudeHostedTool": {},
+  "ClaudeWebSearchTool": {
+    "to_params": [
+      "self"
+    ]
+  },
+  "ClaudeWebFetchTool": {
+    "to_params": [
+      "self"
+    ]
+  },
+  "ClaudeToolSearchTool": {
+    "to_params": [
+      "self"
+    ]
+  },
+  "_validate_domain_filters": [
+    "allowed_domains",
+    "blocked_domains"
+  ],
+  "_translate_key": [
+    "token"
+  ],
+  "_split_keys": [
+    "text"
+  ],
+  "_DEFAULT_COMPUTER_SPEC": [],
+  "ClaudeComputerTool": {
+    "name": [],
+    "default_spec": [
+      "cls",
+      "model"
+    ],
+    "to_params": [
+      "self"
+    ],
+    "execute": [
+      "self",
+      "arguments"
+    ],
+    "_dispatch": [
+      "self",
+      "action",
+      "arguments"
+    ],
+    "_zoom": [
+      "self",
+      "arguments"
+    ]
+  },
+  "_xy": [
+    "coordinate"
+  ],
+  "_required": [
+    "value",
+    "name"
+  ],
+  "_ms_from_seconds": [
+    "duration"
+  ],
+  "_scroll": [
+    "arguments"
+  ],
+  "_drag_path": [
+    "arguments"
+  ],
+  "_crop_png": [
+    "png",
+    "region"
+  ],
+  "ClaudeMCPProxyTool": {
+    "default_spec": [
+      "cls",
+      "model"
+    ],
+    "to_params": [
+      "self"
+    ]
+  },
+  "ClaudeToolSpec": {},
+  "CLAUDE_BASH_SPEC": [],
+  "CLAUDE_TEXT_EDITOR_SPEC": [],
+  "ClaudeBashTool": {
+    "name": [],
+    "default_spec": [
+      "cls",
+      "model"
+    ],
+    "to_params": [
+      "self"
+    ],
+    "execute": [
+      "self",
+      "arguments"
+    ]
+  },
+  "ClaudeTextEditorTool": {
+    "name": [],
+    "default_spec": [
+      "cls",
+      "model"
+    ],
+    "provider_name": [
+      "self"
+    ],
+    "to_params": [
+      "self"
+    ],
+    "execute": [
+      "self",
+      "arguments"
+    ],
+    "_str_replace": [
+      "self",
+      "path",
+      "old",
+      "new"
+    ],
+    "_insert": [
+      "self",
+      "path",
+      "line",
+      "text"
+    ]
+  },
+  "RecordingComputer": {
+    "__init__": [
+      "self"
+    ],
+    "screenshot": [
+      "self"
+    ],
+    "click": [
+      "self",
+      "x",
+      "y"
+    ],
+    "move": [
+      "self",
+      "x",
+      "y"
+    ],
+    "mouse_down": [
+      "self",
+      "button"
+    ],
+    "mouse_up": [
+      "self",
+      "button"
+    ],
+    "type_text": [
+      "self",
+      "text"
+    ],
+    "press_keys": [
+      "self",
+      "keys"
+    ],
+    "hold_key": [
+      "self",
+      "key"
+    ],
+    "scroll": [
+      "self",
+      "x",
+      "y"
+    ],
+    "drag": [
+      "self",
+      "path"
+    ],
+    "wait": [
+      "self",
+      "ms"
+    ]
+  },
+  "test_translate_key_maps_anthropic_to_x11": [],
+  "test_split_and_hold_keys": [],
+  "test_default_spec_per_model": [],
+  "test_to_params_reflects_spec_version": [],
+  "test_left_click_then_screenshot": [],
+  "test_type_action": [],
+  "test_key_action_translates_chord": [],
+  "test_mouse_move_and_down": [],
+  "test_screenshot_only": [],
+  "test_key_without_text_errors": [],
+  "test_unsupported_action_errors": [],
+  "SSHTool": {
+    "client_type": [],
+    "bash": [
+      "self",
+      "command"
+    ],
+    "file_read": [
+      "self",
+      "path"
+    ],
+    "file_write": [
+      "self",
+      "path",
+      "content"
+    ],
+    "file_list": [
+      "self",
+      "path"
+    ]
+  },
+  "Button": [],
+  "RFBTool": {
+    "client_type": [],
+    "display_width": [
+      "self"
+    ],
+    "display_height": [
+      "self"
+    ],
+    "screenshot": [
+      "self"
+    ],
+    "move": [
+      "self",
+      "x",
+      "y"
+    ],
+    "click": [
+      "self",
+      "x",
+      "y"
+    ],
+    "mouse_down": [
+      "self",
+      "button"
+    ],
+    "mouse_up": [
+      "self",
+      "button"
+    ],
+    "scroll": [
+      "self",
+      "x",
+      "y"
+    ],
+    "drag": [
+      "self",
+      "path"
+    ],
+    "type_text": [
+      "self",
+      "text"
+    ],
+    "press_keys": [
+      "self",
+      "keys"
+    ],
+    "hold_key": [
+      "self",
+      "key"
+    ],
+    "wait": [
+      "duration_ms"
+    ],
+    "_send_pointer": [
+      "self"
+    ],
+    "_with_keys": [
+      "self",
+      "keys"
+    ]
+  },
+  "HostedToolParamT_co": [],
+  "HostedTool": {
+    "supports_model": [
+      "self",
+      "model"
+    ],
+    "to_params": [
+      "self"
+    ]
+  },
+  "MCPTool": {
+    "client_type": [],
+    "__init__": [
+      "self"
+    ],
+    "provider_name": [
+      "self"
+    ],
+    "execute": [
+      "self",
+      "arguments"
+    ]
+  },
+  "ClientT": [],
+  "tool_ok": [
+    "text"
+  ],
+  "tool_err": [
+    "text"
+  ],
+  "result_text": [
+    "result"
+  ],
+  "AgentToolSpec": {
+    "supports_model": [
+      "self",
+      "model"
+    ]
+  },
+  "AgentTool": {
+    "__init__": [
+      "self"
+    ],
+    "provider_name": [
+      "self"
+    ],
+    "default_spec": [
+      "cls",
+      "model"
+    ],
+    "execute": [
+      "self",
+      "arguments"
+    ],
+    "to_params": [
+      "self"
+    ]
+  },
+  "_run_to_input": [
+    "run"
+  ],
+  "_to_inputs": [
+    "trajectories"
+  ],
+  "TrainingClient": {
+    "forward_backward": [
+      "self",
+      "trajectories"
+    ],
+    "forward": [
+      "self",
+      "trajectories"
+    ],
+    "backward": [
+      "self",
+      "forward_id",
+      "weights"
+    ],
+    "forward_backward_custom": [
+      "self",
+      "trajectories",
+      "loss_fn"
+    ],
+    "step": [
+      "self",
+      "trajectories"
+    ]
+  },
+  "BaseTrainingClient": {
+    "__init__": [
+      "self",
+      "model"
+    ],
+    "_resolve_model_id": [
+      "self"
+    ],
+    "_train_url": [
+      "self",
+      "suffix"
+    ],
+    "_post": [
+      "self",
+      "suffix",
+      "payload"
+    ],
+    "_get": [
+      "self",
+      "suffix"
+    ],
+    "available_losses": [
+      "self"
+    ],
+    "optim_step": [
+      "self"
+    ]
+  },
+  "LossFn": [],
+  "BuiltinLoss": {
+    "CROSS_ENTROPY": [],
+    "IMPORTANCE_SAMPLING": [],
+    "PPO": [],
+    "CISPO": [],
+    "DRO": []
+  },
+  "TrajectorySample": {
+    "model_config": []
+  },
+  "TrajectoryPayload": {
+    "model_config": []
+  },
+  "TrainInput": [],
+  "ForwardBackwardRequest": {
+    "model_config": []
+  },
+  "ForwardBackwardResult": {
+    "model_config": []
+  },
+  "OptimStepRequest": {
+    "model_config": []
+  },
+  "OptimStepResult": {
+    "model_config": []
+  },
+  "ForwardRequest": {
+    "model_config": []
+  },
+  "TrainingDatum": {
+    "model_config": []
+  },
+  "DatumTensors": {},
+  "ForwardResult": {
+    "model_config": []
+  },
+  "BackwardRequest": {
+    "model_config": []
+  },
+  "get_current_trace_id": [],
+  "set_trace_context": [
+    "trace_id"
+  ],
+  "FILETRACKING_SCHEMA": [],
+  "DIFF_SPAN_NAME": [],
+  "SNAPSHOT_SPAN_NAME": [],
+  "_emit": [
+    "payload",
+    "name",
+    "started_at",
+    "ended_at"
+  ],
+  "emit_file_diff": [
+    "payload"
+  ],
+  "emit_file_snapshot": [
+    "payload"
+  ],
+  "SCHEMA_ATTRIBUTE": [],
+  "PAYLOAD_ATTRIBUTE": [],
+  "TASK_RUN_ID_ATTRIBUTE": [],
+  "SpanEvent": {},
+  "Span": {
+    "model_config": []
+  },
+  "new_span_id": [],
+  "normalize_trace_id": [
+    "trace_id"
+  ],
+  "_serialize_value": [
+    "value",
+    "max_items"
+  ],
+  "instrument": [
+    "func"
+  ],
+  "_UPLOAD_WORKERS": [],
+  "_MAX_BATCH_SPANS": [],
+  "_MAX_BATCH_BYTES": [],
+  "_FLUSH_INTERVAL": [],
+  "_UPLOAD_RETRIES": [],
+  "_UPLOAD_RETRY_DELAY": [],
+  "_HTTP_TIMEOUT": [],
+  "_Marker": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "_lock": [],
+  "_local_lock": [],
+  "_export_local": [
+    "span",
+    "local_dir"
+  ],
+  "queue_span": [
+    "span"
+  ],
+  "flush": [
+    "timeout"
+  ],
+  "reset": [
+    "timeout"
+  ],
+  "_ensure_worker": [],
+  "_dispatch": [
+    "batch"
+  ],
+  "_retire": [
+    "future"
+  ],
+  "_do_upload": [
+    "task_run_id",
+    "spans",
+    "telemetry_url",
+    "api_key"
+  ],
+  "_span_bytes": [
+    "span"
+  ],
+  "test_serialize_value_simple_types": [],
+  "test_serialize_value_list": [],
+  "test_serialize_value_list_truncation": [],
+  "test_serialize_value_tuple": [],
+  "test_serialize_value_tuple_truncation": [],
+  "test_serialize_value_dict": [],
+  "test_serialize_value_dict_truncation": [],
+  "test_serialize_value_complex_object": [],
+  "test_serialize_value_fallback": [],
+  "test_serialize_value_pydantic_model_dumps_generically": [],
+  "test_instrument_async_basic": [],
+  "test_instrument_async_with_params": [],
+  "test_instrument_async_with_exception": [],
+  "test_instrument_async_no_record_args": [],
+  "test_instrument_async_no_record_result": [],
+  "test_instrument_sync_basic": [],
+  "test_instrument_sync_with_params": [],
+  "test_instrument_sync_with_exception": [],
+  "test_instrument_sync_no_record_args": [],
+  "test_instrument_sync_no_record_result": [],
+  "test_instrument_already_instrumented": [],
+  "test_instrument_marks_as_instrumented": [],
+  "test_instrument_async_complex_result": [],
+  "test_instrument_sync_complex_result": [],
+  "test_instrument_async_with_self_param": [],
+  "test_instrument_sync_with_cls_param": [],
+  "test_instrument_async_serialization_error": [],
+  "test_instrument_function_without_signature": [],
+  "test_instrument_async_result_serialization_error": [],
+  "test_instrument_without_parentheses": [],
+  "test_instrument_with_parentheses": [],
+  "test_instrument_emits_debug_span_under_trace_context": [],
+  "test_instrument_records_exception_event": [],
+  "test_instrument_emits_nothing_without_trace_context": [],
+  "test_instrument_async_with_defaults": [],
+  "test_instrument_sync_with_kwargs": [],
+  "test_instrument_async_with_varargs": [],
+  "drain_exporter": [],
+  "_RecordingUpload": {
+    "__init__": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "task_run_id",
+      "spans",
+      "telemetry_url",
+      "api_key"
+    ]
+  },
+  "_enable": [
+    "mock_settings"
+  ],
+  "TestDoUpload": {
+    "test_upload_posts_to_trace_endpoint": [
+      "self"
+    ],
+    "test_upload_swallows_request_errors": [
+      "self"
+    ]
+  },
+  "TestQueueSpan": {
+    "test_span_is_dropped": [
+      "self",
+      "api_key",
+      "enabled",
+      "attributes"
+    ],
+    "test_spans_upload_in_one_batch_per_trace": [
+      "self"
+    ],
+    "test_upload_uses_settings_api_key": [
+      "self"
+    ]
+  },
+  "TestFlush": {
+    "test_flush_is_noop_when_idle": [
+      "self"
+    ],
+    "test_flush_drains_queued_spans": [
+      "self"
+    ]
+  },
+  "_PAYLOAD": [],
+  "test_emit_noops_without_a_trace_context": [],
+  "test_emit_builds_a_schema_tagged_span": [],
+  "test_emit_snapshot_uses_the_snapshot_span_name": [],
+  "_prompt_message": [
+    "item"
+  ],
+  "Run": {
+    "__init__": [
+      "self",
+      "client",
+      "task_id",
+      "args"
+    ],
+    "client": [
+      "self"
+    ],
+    "reward": [
+      "self"
+    ],
+    "evaluation": [
+      "self"
+    ],
+    "trace_id": [
+      "self"
+    ],
+    "runtime": [
+      "self"
+    ],
+    "prompt_messages": [
+      "self"
+    ],
+    "prompt_text": [
+      "self"
+    ],
+    "record": [
+      "self",
+      "step"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self",
+      "exc_type",
+      "exc",
+      "tb"
+    ],
+    "failed": [
+      "cls",
+      "error"
+    ]
+  },
+  "rollout": [
+    "task",
+    "agent"
+  ],
+  "Task": {
+    "default_slug": [
+      "self"
+    ],
+    "run": [
+      "self",
+      "agent"
+    ]
+  },
+  "_job_name": [
+    "taskset_name",
+    "tasks",
+    "group"
+  ],
+  "Taskset": {
+    "__init__": [
+      "self",
+      "name",
+      "tasks"
+    ],
+    "api_id": [
+      "self"
+    ],
+    "from_file": [
+      "cls",
+      "path"
+    ],
+    "from_module": [
+      "cls",
+      "source"
+    ],
+    "from_api": [
+      "cls",
+      "name"
+    ],
+    "to_file": [
+      "self",
+      "path"
+    ],
+    "_scan_tasks": [
+      "module"
+    ],
+    "_load_tasks_json": [
+      "path"
+    ],
+    "_index_by_slug": [
+      "tasks"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "slug"
+    ],
+    "items": [
+      "self"
+    ],
+    "filter": [
+      "self",
+      "slugs"
+    ],
+    "exclude": [
+      "self",
+      "slugs"
+    ],
+    "environment_names": [
+      "self"
+    ],
+    "run": [
+      "self",
+      "agent"
+    ]
+  },
+  "_DRAIN_TIMEOUT": [],
+  "file_tracking_observer": [
+    "client"
+  ],
+  "_poll": [
+    "ft",
+    "interval",
+    "stop"
+  ],
+  "_emit_once": [
+    "ft"
+  ],
+  "SyncPlan": {
+    "to_apply": [
+      "self"
+    ],
+    "summary": [
+      "self"
+    ]
+  },
+  "diff": [
+    "local",
+    "remote"
+  ],
+  "resolve_taskset_id": [
+    "platform",
+    "name_or_id"
+  ],
+  "fetch_taskset_tasks": [
+    "platform",
+    "taskset_id"
+  ],
+  "_record_to_task": [
+    "record"
+  ],
+  "upload_taskset": [
+    "platform",
+    "name",
+    "tasks"
+  ],
+  "task_upload_payload": [
+    "task"
+  ],
+  "_task_signature": [
+    "task"
+  ],
+  "Job": {
+    "start": [
+      "cls",
+      "name"
+    ],
+    "reward": [
+      "self"
+    ],
+    "results": [
+      "self"
+    ]
+  },
+  "_reporting_enabled": [],
+  "job_enter": [
+    "job_id"
+  ],
+  "trace_enter": [
+    "trace_id"
+  ],
+  "trace_exit": [
+    "run"
+  ],
+  "_report": [
+    "path",
+    "payload"
+  ],
+  "RuntimeGPU": {
+    "model_config": []
+  },
+  "RuntimeResources": {
+    "model_config": []
+  },
+  "RuntimeLimits": {
+    "model_config": []
+  },
+  "RuntimeConfig": {
+    "model_config": [],
+    "with_overrides": [
+      "self",
+      "override"
+    ]
+  },
+  "Provider": {
+    "__call__": []
+  },
+  "Runtime": {
+    "__call__": [
+      "self",
+      "task"
+    ]
+  },
+  "_modal_image_from_uri": [
+    "modal",
+    "image_uri"
+  ],
+  "LocalRuntime": {
+    "__init__": [
+      "self",
+      "path"
+    ],
+    "__call__": [
+      "self",
+      "task"
+    ]
+  },
+  "DockerRuntime": {
+    "__init__": [
+      "self",
+      "image"
+    ],
+    "__call__": [
+      "self",
+      "task"
+    ]
+  },
+  "ModalRuntime": {
+    "__init__": [
+      "self",
+      "image_name"
+    ],
+    "__call__": [
+      "self",
+      "task"
+    ]
+  },
+  "DaytonaRuntime": {
+    "__init__": [
+      "self",
+      "snapshot_name"
+    ],
+    "__call__": [
+      "self",
+      "task"
+    ]
+  },
+  "_docker": [],
+  "_local": [
+    "env"
+  ],
+  "_read_port": [
+    "proc",
+    "source"
+  ],
+  "_drain": [
+    "stream"
+  ],
+  "_terminate": [
+    "proc"
+  ],
+  "_TERMINAL_TRACE_STATUSES": [],
+  "_RUNTIME_READY_TIMEOUT": [],
+  "HUDRuntime": {
+    "__init__": [
+      "self"
+    ],
+    "run": [
+      "self",
+      "task",
+      "agent"
+    ],
+    "__call__": [
+      "self",
+      "task"
+    ],
+    "_runtime_session": [
+      "self",
+      "task"
+    ],
+    "_create_runtime_session": [
+      "self",
+      "runtime_url",
+      "api_key",
+      "task"
+    ],
+    "_delete_runtime_session": [
+      "self",
+      "runtime_url",
+      "api_key",
+      "session_id"
+    ],
+    "_forward_runtime_connection": [
+      "self",
+      "runtime_url",
+      "api_key",
+      "session_id",
+      "reader",
+      "writer"
+    ]
+  },
+  "HostedRuntime": {
+    "__init__": [
+      "self"
+    ],
+    "run": [
+      "self",
+      "task",
+      "agent"
+    ],
+    "_submit_and_await": [
+      "self",
+      "task",
+      "agent"
+    ],
+    "_fold": [
+      "state",
+      "trace_id"
+    ],
+    "_await_terminal": [
+      "self",
+      "platform",
+      "trace_id"
+    ],
+    "_cancel": [
+      "self",
+      "platform",
+      "trace_id"
+    ]
+  },
+  "_runtime_tunnel_ws_url": [
+    "runtime_url",
+    "session_id"
+  ],
+  "_splice_websocket": [
+    "reader",
+    "writer",
+    "websocket"
+  ],
+  "MessageContent": [],
+  "_content_to_blocks": [
+    "content"
+  ],
+  "_blocks_to_message_content": [
+    "blocks"
+  ],
+  "Chat": {
+    "__init__": [],
+    "send": [
+      "self",
+      "message"
+    ]
+  },
+  "_row": [
+    "slug",
+    "n"
+  ],
+  "test_diff_classifies_create_update_unchanged_and_remote_only": [],
+  "test_fetched_tasks_map_canonical_export_fields": [
+    "monkeypatch"
+  ],
+  "test_resolve_taskset_id_looks_up_by_name": [
+    "monkeypatch"
+  ],
+  "test_resolve_taskset_id_passes_uuids_through": [],
+  "test_upload_taskset_posts_payload": [
+    "monkeypatch"
+  ],
+  "test_task_upload_payload_sends_env_and_bare_task_id": [],
+  "test_task_upload_payload_includes_runtime_config": [],
+  "_FakeFt": {
+    "__init__": [
+      "self"
+    ],
+    "advance": [
+      "self"
+    ],
+    "snapshot": [
+      "self"
+    ],
+    "diff": [
+      "self"
+    ]
+  },
+  "_FakeClient": {
+    "__init__": [
+      "self",
+      "ft"
+    ],
+    "binding": [
+      "self",
+      "name"
+    ],
+    "open": [
+      "self",
+      "name"
+    ]
+  },
+  "_OpenFailsClient": {
+    "binding": [
+      "self",
+      "name"
+    ],
+    "open": [
+      "self",
+      "name"
+    ]
+  },
+  "_record_emitters": [
+    "monkeypatch"
+  ],
+  "test_setup_failure_skips_polling": [
+    "monkeypatch"
+  ],
+  "test_successful_setup_anchors_and_polls": [
+    "monkeypatch"
+  ],
+  "test_open_failure_does_not_break_the_rollout": [
+    "monkeypatch"
+  ],
+  "_Recorder": {
+    "__init__": [
+      "self"
+    ],
+    "apost": [
+      "self",
+      "path"
+    ]
+  },
+  "recorder": [
+    "monkeypatch"
+  ],
+  "_run_with": [
+    "trace_id"
+  ],
+  "test_trace_exit_propagates_stop_reason_as_metadata": [
+    "recorder"
+  ],
+  "test_trace_exit_omits_metadata_when_extra_empty": [
+    "recorder"
+  ],
+  "FAKE_DOCKER_SH": [],
+  "FAKE_DOCKER_CMD": [],
+  "_port_behavior_for_windows": [
+    "port_behavior"
+  ],
+  "_docker_via": [
+    "fake_exe"
+  ],
+  "docker_log": [
+    "tmp_path",
+    "monkeypatch"
+  ],
+  "_install_fake_docker": [
+    "tmp_path"
+  ],
+  "_docker_calls": [
+    "docker_log"
+  ],
+  "_ModalImageRef": {
+    "env": [
+      "self",
+      "vars"
+    ]
+  },
+  "_FakeModalSandbox": {
+    "object_id": [],
+    "__init__": [
+      "self",
+      "calls",
+      "port"
+    ],
+    "_wait_until_ready": [
+      "self"
+    ],
+    "_tunnels": [
+      "self"
+    ],
+    "_terminate": [
+      "self"
+    ]
+  },
+  "_install_fake_modal": [
+    "monkeypatch"
+  ],
+  "_CreateSandboxFromSnapshotParams": {},
+  "_CreateSnapshotParams": {},
+  "_CreateSandboxFromImageParams": {},
+  "_DaytonaImage": {},
+  "_DaytonaResources": {},
+  "_DaytonaGpuType": {},
+  "_SessionExecuteRequest": {},
+  "_FakeDaytonaProcess": {
+    "__init__": [
+      "self",
+      "calls"
+    ],
+    "create_session": [
+      "self",
+      "session"
+    ],
+    "execute_session_command": [
+      "self",
+      "session",
+      "request"
+    ]
+  },
+  "_FakeDaytonaSandbox": {
+    "id": [],
+    "__init__": [
+      "self",
+      "calls"
+    ],
+    "create_ssh_access": [
+      "self"
+    ]
+  },
+  "_FakeDaytonaClient": {
+    "__init__": [
+      "self",
+      "calls"
+    ],
+    "create": [
+      "self",
+      "params"
+    ],
+    "delete": [
+      "self",
+      "sandbox"
+    ]
+  },
+  "_FakeSSHConnection": {
+    "__init__": [
+      "self",
+      "calls"
+    ],
+    "forward_local_port": [
+      "self",
+      "listen_host",
+      "listen_port",
+      "dest_host",
+      "dest_port"
+    ]
+  },
+  "_FakeSSHConnect": {
+    "__init__": [
+      "self",
+      "calls",
+      "args",
+      "kwargs"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self"
+    ]
+  },
+  "_install_fake_daytona": [
+    "monkeypatch"
+  ],
+  "test_acquisition_publishes_ephemeral_port_and_removes_container": [
+    "tmp_path",
+    "docker_log",
+    "monkeypatch"
+  ],
+  "test_runtime_config_supplies_image_and_resources": [
+    "tmp_path",
+    "docker_log",
+    "monkeypatch"
+  ],
+  "test_task_runtime_config_overrides_default_image": [
+    "tmp_path",
+    "docker_log",
+    "monkeypatch"
+  ],
+  "test_runtime_config_overrides_only_explicit_top_level_fields": [],
+  "test_runtime_config_rejects_unsupported_docker_fields": [],
+  "test_docker_runtime_accepts_runtime_config_defaults": [],
+  "test_modal_runtime_config_flows_into_modal_sdk": [
+    "monkeypatch"
+  ],
+  "test_modal_runtime_accepts_modal_image_uri": [
+    "monkeypatch"
+  ],
+  "test_modal_task_runtime_config_overlays_provider_defaults": [
+    "monkeypatch"
+  ],
+  "test_modal_runtime_config_image_overrides_image_name": [
+    "monkeypatch"
+  ],
+  "test_modal_runtime_can_override_workdir": [
+    "monkeypatch"
+  ],
+  "test_modal_runtime_applies_env_vars_to_image": [
+    "monkeypatch"
+  ],
+  "test_daytona_runtime_config_flows_into_daytona_sdk": [
+    "monkeypatch"
+  ],
+  "test_daytona_task_runtime_config_overlays_provider_defaults": [
+    "monkeypatch"
+  ],
+  "test_daytona_runtime_config_rejects_unsupported_fields": [
+    "monkeypatch"
+  ],
+  "test_container_that_dies_before_serving_fails_with_its_logs": [
+    "tmp_path",
+    "docker_log",
+    "monkeypatch"
+  ],
+  "_FakePlatform": {
+    "api_key": [],
+    "__init__": [
+      "self",
+      "states"
+    ],
+    "apost": [
+      "self",
+      "path"
+    ],
+    "aget": [
+      "self",
+      "path"
+    ]
+  },
+  "_FakeResponse": {
+    "__init__": [
+      "self",
+      "body"
+    ],
+    "raise_for_status": [
+      "self"
+    ],
+    "json": [
+      "self"
+    ]
+  },
+  "test_hosted_spec_serializes_full_config": [],
+  "test_hosted_spec_rejects_custom_model_client": [],
+  "test_run_rejects_non_gateway_agent": [],
+  "test_run_submits_and_polls_to_terminal": [
+    "monkeypatch"
+  ],
+  "test_run_timeout_requests_platform_cancel": [
+    "monkeypatch"
+  ],
+  "test_run_folds_completed_receipt": [
+    "monkeypatch"
+  ],
+  "test_run_folds_error_receipt": [
+    "monkeypatch"
+  ],
+  "test_scheduler_drives_provider_locally": [
+    "monkeypatch"
+  ],
+  "test_scheduler_delegates_hosted": [
+    "monkeypatch"
+  ],
+  "test_hud_runtime_drives_local_rollout": [
+    "monkeypatch"
+  ],
+  "test_runtime_session_create_payload_omits_trace_id": [
+    "monkeypatch"
+  ],
+  "test_runtime_session_sets_runtime_connection_params": [
+    "monkeypatch"
+  ],
+  "test_splice_websocket_propagates_relay_errors": [],
+  "_SUMS_ENV": [],
+  "env_file": [
+    "tmp_path_factory"
+  ],
+  "_add_task": [
+    "a",
+    "b"
+  ],
+  "test_rollout_returns_graded_run_with_trace_id": [
+    "env_file"
+  ],
+  "test_mid_run_failure_keeps_the_real_run_and_its_evidence": [
+    "env_file"
+  ],
+  "_SlowAgent": {
+    "__init__": [
+      "self",
+      "fn"
+    ],
+    "__call__": [
+      "self",
+      "run"
+    ]
+  },
+  "test_agent_loop_timeout_grades_the_partial_trajectory": [],
+  "test_pre_launch_failure_yields_a_synthesized_failed_run": [],
+  "test_provider_is_called_with_the_task_row_being_placed": [
+    "env_file"
+  ],
+  "test_task_run_schedules_a_single_task_job": [
+    "env_file"
+  ],
+  "test_task_run_has_taskset_scheduling_semantics": [
+    "env_file"
+  ],
+  "test_open_job_spans_multiple_scheduler_calls": [
+    "env_file"
+  ],
+  "_TWO_ENVS": [],
+  "test_one_spawn_serves_each_rows_env_in_a_mixed_taskset": [
+    "tmp_path_factory"
+  ],
+  "test_rollout_threads_job_and_group_ids": [
+    "env_file"
+  ],
+  "_run_with_prompt": [
+    "prompt"
+  ],
+  "test_prompt_messages_wraps_plain_text_as_one_user_turn": [],
+  "test_prompt_messages_no_prompt_is_one_empty_user_turn": [],
+  "test_prompt_messages_normalizes_chat_dicts_and_passes_through": [],
+  "test_prompt_text_flattens_text_turns_and_drops_non_text": [],
+  "test_env_task_call_returns_public_task": [],
+  "test_default_slug_is_task_id_without_args": [],
+  "test_default_slug_is_deterministic_with_args": [],
+  "test_env_serializes_as_name_reference": [],
+  "test_compact_dump_omits_unset_metadata": [],
+  "test_roundtrip_is_stable_through_plain_pydantic": [],
+  "test_runtime_config_roundtrips_as_part_of_task_row": [],
+  "test_runtime_config_rejects_unknown_fields": [],
+  "test_row_validation_rejects_malformed_entries": [],
+  "test_no_placement_defaults_to_hud_runtime": [
+    "monkeypatch"
+  ],
+  "test_taskset_is_ordered_and_keyed_by_slug": [],
+  "test_taskset_from_file_loads_json_and_jsonl": [
+    "tmp_path"
+  ],
+  "test_file_roundtrip_keeps_rows_and_env_names": [
+    "tmp_path"
+  ],
+  "test_taskset_to_file_writes_json_and_jsonl": [
+    "tmp_path"
+  ],
+  "test_taskset_from_module_collects_public_tasks": [
+    "tmp_path"
+  ],
+  "test_taskset_from_api_uses_remote_records": [
+    "monkeypatch"
+  ],
+  "_EchoAgent": {
+    "__call__": [
+      "self",
+      "run"
+    ]
+  },
+  "dummy_task": [],
+  "TestContentHelpers": {
+    "test_content_to_blocks_string": [
+      "self"
+    ],
+    "test_content_to_blocks_passthrough": [
+      "self"
+    ]
+  },
+  "TestChatConstruction": {
+    "test_requires_an_agent": [
+      "self",
+      "dummy_task"
+    ],
+    "test_messages_start_empty_and_are_the_public_history": [
+      "self",
+      "dummy_task"
+    ]
+  },
+  "_CHAT_ENV": [],
+  "chat_env_file": [
+    "tmp_path_factory"
+  ],
+  "_chat_task": [],
+  "TestSend": {
+    "test_send_runs_a_turn_and_stores_prompt_message_format": [
+      "self",
+      "chat_env_file"
+    ],
+    "test_one_job_spans_the_conversation": [
+      "self",
+      "chat_env_file"
+    ],
+    "test_failed_turn_raises_and_records_no_assistant_message": [
+      "self",
+      "chat_env_file"
+    ]
+  },
+  "_packb": [],
+  "_unpackb": [],
+  "RobotClient": {
+    "__init__": [
+      "self",
+      "capability",
+      "ws"
+    ],
+    "contract": [
+      "self"
+    ],
+    "spaces": [
+      "self"
+    ],
+    "connect": [
+      "cls",
+      "cap"
+    ],
+    "get_observation": [
+      "self"
+    ],
+    "send_action": [
+      "self",
+      "action"
+    ],
+    "send_chunk": [
+      "self",
+      "chunk"
+    ],
+    "close": [
+      "self"
+    ],
+    "_recv_loop": [
+      "self"
+    ]
+  },
+  "SSHClient": {
+    "__init__": [
+      "self",
+      "capability",
+      "conn"
+    ],
+    "connect": [
+      "cls",
+      "cap"
+    ],
+    "conn": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "CDPError": {
+    "__init__": [
+      "self",
+      "method",
+      "error"
+    ]
+  },
+  "CDPClient": {
+    "__init__": [
+      "self",
+      "capability",
+      "ws"
+    ],
+    "connect": [
+      "cls",
+      "cap"
+    ],
+    "_resolve_ws_url": [
+      "host",
+      "port",
+      "target_id",
+      "raw_url"
+    ],
+    "send": [
+      "self",
+      "method",
+      "params"
+    ],
+    "_read_loop": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "RFBClient": {
+    "__init__": [
+      "self",
+      "capability",
+      "conn",
+      "exit_stack"
+    ],
+    "connect": [
+      "cls",
+      "cap"
+    ],
+    "_open": [
+      "stack",
+      "host",
+      "port",
+      "user",
+      "password"
+    ],
+    "_reconnect": [
+      "self"
+    ],
+    "conn": [
+      "self"
+    ],
+    "width": [
+      "self"
+    ],
+    "height": [
+      "self"
+    ],
+    "screenshot_png": [
+      "self"
+    ],
+    "drain": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "FileTrackingClient": {
+    "__init__": [
+      "self",
+      "capability",
+      "reader",
+      "writer"
+    ],
+    "connect": [
+      "cls",
+      "cap"
+    ],
+    "diff": [
+      "self"
+    ],
+    "snapshot": [
+      "self"
+    ],
+    "advance": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "_call": [
+      "self",
+      "method"
+    ]
+  },
+  "MCPClient": {
+    "__init__": [
+      "self",
+      "capability",
+      "client",
+      "exit_stack"
+    ],
+    "connect": [
+      "cls",
+      "cap"
+    ],
+    "list_tools": [
+      "self"
+    ],
+    "call_tool": [
+      "self",
+      "name",
+      "arguments"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "normalize_url": [
+    "url"
+  ],
+  "Capability": {
+    "to_manifest": [
+      "self"
+    ],
+    "from_manifest": [
+      "cls",
+      "data"
+    ],
+    "ssh": [
+      "cls"
+    ],
+    "cdp": [
+      "cls"
+    ],
+    "rfb": [
+      "cls"
+    ],
+    "mcp": [
+      "cls"
+    ],
+    "filetracking": [
+      "cls"
+    ],
+    "robot": [
+      "cls"
+    ]
+  },
+  "CapabilityClient": {
+    "connect": [
+      "cls",
+      "cap"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "app": [],
+  "console": [],
+  "SUPPORT_HINT": [],
+  "set_command": [
+    "assignments"
+  ],
+  "version": [],
+  "models_app": [],
+  "list_models": [
+    "json_output"
+  ],
+  "fork_model": [
+    "source",
+    "name",
+    "json_output"
+  ],
+  "list_checkpoints": [
+    "model",
+    "json_output"
+  ],
+  "show_head": [
+    "model",
+    "set_to",
+    "json_output"
+  ],
+  "_resolve_model_id": [
+    "model"
+  ],
+  "_get_checkpoints": [
+    "model"
+  ],
+  "_set_head": [
+    "model",
+    "checkpoint_id"
+  ],
+  "task_app": [],
+  "_parse_args": [
+    "args"
+  ],
+  "_collect": [
+    "source"
+  ],
+  "_local_env_url": [
+    "port"
+  ],
+  "_spawn_target": [
+    "source"
+  ],
+  "_resolve": [
+    "task",
+    "source",
+    "url",
+    "args"
+  ],
+  "list_command": [
+    "source"
+  ],
+  "start_command": [
+    "task",
+    "source",
+    "args",
+    "url",
+    "out"
+  ],
+  "grade_command": [
+    "task",
+    "answer",
+    "answer_file",
+    "source",
+    "args",
+    "url",
+    "out"
+  ],
+  "DOCKERFILE_HUD": [],
+  "ENV_PY": [],
+  "TASKS_PY": [],
+  "PYPROJECT_TOML": [],
+  "_LOCAL_SCAFFOLD": [],
+  "_python_name": [
+    "name"
+  ],
+  "_resolve_preset": [
+    "preset",
+    "hud_console"
+  ],
+  "_write_local_scaffold": [
+    "target",
+    "env_name",
+    "hud_console"
+  ],
+  "init_command": [
+    "name",
+    "directory",
+    "force",
+    "preset"
+  ],
+  "client_app": [],
+  "_runtime": [
+    "url"
+  ],
+  "info_command": [
+    "url"
+  ],
+  "run_command": [
+    "task",
+    "args",
+    "answer",
+    "url"
+  ],
+  "sync_app": [],
+  "_taskset_target": [
+    "taskset",
+    "taskset_id",
+    "console"
+  ],
+  "_write_csv": [
+    "path",
+    "entries"
+  ],
+  "_export_taskset": [
+    "target_ref",
+    "output_path",
+    "console"
+  ],
+  "_load_local_taskset": [
+    "source"
+  ],
+  "_warn_on_linked_environment_mismatch": [
+    "taskset",
+    "platform",
+    "console"
+  ],
+  "_fetch_remote_taskset": [
+    "platform",
+    "target_ref"
+  ],
+  "_show_upload_error": [
+    "error",
+    "console"
+  ],
+  "_save_taskset_id": [
+    "result",
+    "console"
+  ],
+  "sync_tasks_command": [
+    "taskset",
+    "source",
+    "taskset_id",
+    "task_filter",
+    "exclude",
+    "yes",
+    "dry_run",
+    "force",
+    "export"
+  ],
+  "sync_env_command": [
+    "name",
+    "directory",
+    "yes"
+  ],
+  "sync_callback": [
+    "ctx"
+  ],
+  "EnvironmentPreset": {},
+  "_TARBALL_TIMEOUT": [],
+  "_is_within": [
+    "root",
+    "path"
+  ],
+  "_download_tarball": [
+    "preset"
+  ],
+  "materialize_preset": [
+    "preset",
+    "target"
+  ],
+  "_load_environment": [
+    "module"
+  ],
+  "_serve_environment": [
+    "env",
+    "host",
+    "port"
+  ],
+  "serve_command": [
+    "module",
+    "port",
+    "host",
+    "verbose"
+  ],
+  "cancel_command": [
+    "job_id",
+    "trace_id",
+    "all_jobs",
+    "yes"
+  ],
+  "DEVICE_CODE_PATH": [],
+  "DEVICE_TOKEN_PATH": [],
+  "DEFAULT_POLL_INTERVAL": [],
+  "_api_url": [],
+  "_error_code": [
+    "response"
+  ],
+  "_request_device_code": [
+    "client",
+    "hud_console"
+  ],
+  "_display_login_prompt": [
+    "hud_console"
+  ],
+  "_poll_for_token": [
+    "client",
+    "hud_console"
+  ],
+  "_persist_api_key": [
+    "hud_console",
+    "api_key"
+  ],
+  "login_command": [
+    "quiet"
+  ],
+  "_BEDROCK_ARN_PATTERN": [],
+  "_is_bedrock_arn": [
+    "model"
+  ],
+  "_resolve_model_from_catalog": [
+    "model_id"
+  ],
+  "_CONFIG_PATH": [],
+  "_PLACEMENT_CONFLICT_ERROR": [],
+  "_resolve_env_vars": [
+    "obj"
+  ],
+  "_require_bedrock_credentials": [],
+  "AgentPreset": {},
+  "_DEFAULT_CONFIG_TEMPLATE": [],
+  "_parse_config_value": [
+    "value"
+  ],
+  "_merge_agent_config": [
+    "current"
+  ],
+  "EvalConfig": {
+    "_parse_agent_type": [
+      "cls",
+      "v"
+    ],
+    "source_is_local_file": [
+      "self"
+    ],
+    "resolve_runtime": [
+      "self"
+    ],
+    "validate_api_keys": [
+      "self"
+    ],
+    "get_agent_kwargs": [
+      "self"
+    ],
+    "load": [
+      "cls",
+      "path"
+    ],
+    "merge_cli": [
+      "self"
+    ],
+    "resolve_agent_interactive": [
+      "self"
+    ],
+    "display": [
+      "self"
+    ]
+  },
+  "_build_agent": [
+    "cfg"
+  ],
+  "_python_defines_environment": [
+    "path"
+  ],
+  "_resolve_placement": [
+    "cfg",
+    "source_path"
+  ],
+  "_run_evaluation": [
+    "cfg"
+  ],
+  "eval_command": [
+    "source",
+    "agent",
+    "all",
+    "full",
+    "model",
+    "config",
+    "from_json",
+    "max_concurrent",
+    "max_steps",
+    "verbose",
+    "very_verbose",
+    "auto_respond",
+    "group_size",
+    "task_ids",
+    "yes",
+    "gateway",
+    "runtime",
+    "remote"
+  ],
+  "_VALID_RUNTIMES": [],
+  "_DeployPlan": {},
+  "_peek_env_keys": [
+    "env_path"
+  ],
+  "_parse_key_value_flags": [
+    "flags"
+  ],
+  "_normalize_runtime": [
+    "runtime",
+    "console"
+  ],
+  "_load_env_vars": [
+    "path",
+    "console"
+  ],
+  "collect_environment_variables": [
+    "directory",
+    "env_flags",
+    "env_file",
+    "console"
+  ],
+  "_validate_before_deploy": [
+    "env_source",
+    "console"
+  ],
+  "_resolve_declared_name": [
+    "env_source",
+    "console"
+  ],
+  "_resolve_environment_name": [
+    "env_source",
+    "registry_id",
+    "platform",
+    "console"
+  ],
+  "_skip_dotenv": [
+    "env_source",
+    "env_dir",
+    "source_config"
+  ],
+  "_collect_build_secrets": [
+    "secret_specs"
+  ],
+  "_create_tarball": [
+    "env_dir"
+  ],
+  "_prepare_deploy_plan": [
+    "env_source"
+  ],
+  "deploy_environment": [
+    "directory",
+    "env",
+    "env_file",
+    "no_env",
+    "no_cache",
+    "verbose",
+    "registry_id",
+    "build_args",
+    "build_secrets",
+    "runtime"
+  ],
+  "_DeployResult": {},
+  "_BuildUpload": {},
+  "_create_build_upload": [
+    "platform"
+  ],
+  "_upload_build_context": [
+    "upload_url",
+    "tarball_path"
+  ],
+  "_trigger_build": [
+    "platform"
+  ],
+  "_deploy_async": [
+    "tarball_path",
+    "no_cache",
+    "plan",
+    "platform",
+    "console",
+    "env_dir"
+  ],
+  "_save_deploy_link": [
+    "env_dir",
+    "registry_id",
+    "console",
+    "env_name"
+  ],
+  "discover_environments": [
+    "directory"
+  ],
+  "deploy_all": [
+    "directory",
+    "env",
+    "env_file",
+    "no_env",
+    "no_cache",
+    "verbose",
+    "build_args",
+    "build_secrets",
+    "runtime"
+  ],
+  "deploy_command": [
+    "directory",
+    "all_envs",
+    "env",
+    "env_file",
+    "no_env",
+    "build_args",
+    "secrets",
+    "no_cache",
+    "verbose",
+    "registry_id",
+    "runtime"
+  ],
+  "normalize_environment_name": [
+    "name"
+  ],
+  "ValidationIssue": {},
+  "EnvironmentNameReference": {},
+  "EnvironmentSource": {
+    "open": [
+      "cls",
+      "directory"
+    ],
+    "hud_dir": [
+      "self"
+    ],
+    "config_path": [
+      "self"
+    ],
+    "legacy_config_path": [
+      "self"
+    ],
+    "dockerfile": [
+      "self"
+    ],
+    "is_environment": [
+      "self"
+    ],
+    "environment_name_references": [
+      "self"
+    ],
+    "served_environment_module": [
+      "self"
+    ],
+    "served_environment_name": [
+      "self"
+    ],
+    "environment_name": [
+      "self"
+    ],
+    "load_config": [
+      "self"
+    ],
+    "save_config": [
+      "self",
+      "data"
+    ],
+    "taskset_id": [
+      "self"
+    ],
+    "iter_source_files": [
+      "self"
+    ],
+    "source_files": [
+      "self"
+    ],
+    "source_file_refs": [
+      "self"
+    ],
+    "source_hash": [
+      "self"
+    ],
+    "relative_path": [
+      "self",
+      "path"
+    ],
+    "base_image": [
+      "self"
+    ],
+    "validate": [
+      "self"
+    ],
+    "validate_pyproject_references": [
+      "self"
+    ],
+    "validate_dockerfile": [
+      "self"
+    ],
+    "_validate_project_references": [
+      "self",
+      "project"
+    ],
+    "_validate_hatch_includes": [
+      "self",
+      "targets"
+    ],
+    "_check_pyproject_copy_order": [
+      "self",
+      "copied_files",
+      "dockerfile_name"
+    ],
+    "_migrate_legacy_config": [
+      "self",
+      "data"
+    ]
+  },
+  "_dockerfile_instructions": [
+    "content"
+  ],
+  "_command_tokens": [
+    "remainder"
+  ],
+  "_dockerfile_command_tokens": [
+    "content"
+  ],
+  "_hud_serve_spec": [
+    "tokens"
+  ],
+  "_environment_call_name": [
+    "node"
+  ],
+  "_parse_base_image": [
+    "dockerfile_path"
+  ],
+  "get_config_dir": [],
+  "get_user_env_path": [],
+  "ensure_config_dir": [],
+  "parse_key_value": [
+    "item"
+  ],
+  "parse_env_file": [
+    "contents"
+  ],
+  "render_env_file": [
+    "env"
+  ],
+  "load_env_file": [
+    "path"
+  ],
+  "save_env_file": [
+    "env",
+    "path"
+  ],
+  "set_env_values": [
+    "values"
+  ],
+  "parse_ignore_file": [
+    "ignore_path"
+  ],
+  "_matches_pattern": [
+    "rel_path_str",
+    "path",
+    "pattern"
+  ],
+  "should_ignore": [
+    "path",
+    "base_path",
+    "ignore_patterns"
+  ],
+  "DEFAULT_EXCLUDES": [],
+  "create_build_context_tarball": [
+    "directory",
+    "dockerignore_path",
+    "verbose"
+  ],
+  "format_size": [
+    "size_bytes"
+  ],
+  "require_api_key": [
+    "action"
+  ],
+  "CACHE_DIR": [],
+  "VERSION_CACHE_FILE": [],
+  "CACHE_DURATION": [],
+  "PYPI_URL": [],
+  "VersionInfo": {},
+  "_is_in_virtualenv": [],
+  "_get_current_version": [],
+  "_fetch_latest_version": [],
+  "_load_cache": [],
+  "_save_cache": [
+    "info"
+  ],
+  "_compare_versions": [
+    "current",
+    "latest"
+  ],
+  "check_for_updates": [],
+  "display_update_prompt": [
+    "console"
+  ],
+  "force_version_check": [],
+  "display_build_summary": [
+    "status_response",
+    "registry_id",
+    "console",
+    "platform_url",
+    "env_name"
+  ],
+  "_display_lock_details": [
+    "rich_console",
+    "lock_data"
+  ],
+  "_display_usage_example": [
+    "rich_console",
+    "env_name",
+    "lock_data"
+  ],
+  "_format_duration": [
+    "seconds"
+  ],
+  "display_upload_progress": [
+    "uploaded_bytes",
+    "total_bytes",
+    "console"
+  ],
+  "_SUCCESS_THRESHOLD": [],
+  "_truncate": [
+    "text",
+    "max_len"
+  ],
+  "display_runs": [
+    "runs"
+  ],
+  "cancel_job": [
+    "job_id"
+  ],
+  "cancel_task": [
+    "job_id",
+    "trace_id"
+  ],
+  "cancel_all_jobs": [],
+  "stream_build_logs": [
+    "platform",
+    "build_id",
+    "console",
+    "max_reconnects"
+  ],
+  "_print_log_line": [
+    "console",
+    "message",
+    "timestamp"
+  ],
+  "poll_build_status": [
+    "platform",
+    "build_id",
+    "console",
+    "poll_interval",
+    "max_wait"
+  ],
+  "RegistryEnvironment": {
+    "from_record": [
+      "cls",
+      "data"
+    ],
+    "short_id": [
+      "self"
+    ],
+    "version_label": [
+      "self"
+    ]
+  },
+  "get_registry_environment": [
+    "platform",
+    "registry_id"
+  ],
+  "_list_records": [
+    "platform",
+    "params"
+  ],
+  "list_registry_environments": [
+    "platform"
+  ],
+  "search_registry_environments": [
+    "platform",
+    "name"
+  ],
+  "resolve_registry_environments": [
+    "platform",
+    "ref"
+  ],
+  "find_tasks_file": [
+    "tasks_file",
+    "msg"
+  ],
+  "test_find_tasks_file_with_arg": [
+    "mock_cwd"
+  ],
+  "test_find_tasks_file_no_files": [
+    "mock_cwd"
+  ],
+  "test_find_tasks_file_single_file": [
+    "mock_cwd",
+    "mock_console"
+  ],
+  "test_find_tasks_file_multiple_files": [
+    "mock_cwd",
+    "mock_console"
+  ],
+  "test_parse_env_file_basic": [],
+  "test_render_and_load_roundtrip": [
+    "tmp_path"
+  ],
+  "test_get_paths": [
+    "monkeypatch",
+    "tmp_path"
+  ],
+  "test_ensure_and_save": [
+    "tmp_path",
+    "monkeypatch"
+  ],
+  "test_compare_versions": [],
+  "test_current_version_and_virtualenv_are_typed": [],
+  "_point_cache": [
+    "monkeypatch",
+    "tmp_path"
+  ],
+  "test_cache_round_trip": [
+    "monkeypatch",
+    "tmp_path"
+  ],
+  "test_expired_cache_returns_none": [
+    "monkeypatch",
+    "tmp_path"
+  ],
+  "test_missing_cache_returns_none": [
+    "monkeypatch",
+    "tmp_path"
+  ],
+  "test_fetch_latest_version": [
+    "monkeypatch"
+  ],
+  "test_check_for_updates_fresh": [
+    "monkeypatch",
+    "tmp_path"
+  ],
+  "test_check_for_updates_skipped_in_ci": [
+    "monkeypatch"
+  ],
+  "test_display_update_prompt_outdated": [
+    "monkeypatch"
+  ],
+  "test_force_version_check_clears_cache": [
+    "monkeypatch",
+    "tmp_path"
+  ],
+  "_write": [
+    "path",
+    "content"
+  ],
+  "test_normalize_environment_name": [],
+  "test_environment_name_auto": [
+    "tmp_path"
+  ],
+  "test_detects_environment_directory": [
+    "tmp_path"
+  ],
+  "test_detects_environment_with_dockerfile_hud": [
+    "tmp_path"
+  ],
+  "test_prefers_dockerfile_hud": [
+    "tmp_path"
+  ],
+  "test_base_image_strips_stage": [
+    "tmp_path"
+  ],
+  "test_base_image_without_dockerfile_is_none": [
+    "tmp_path"
+  ],
+  "test_source_hash_changes_with_content": [
+    "tmp_path"
+  ],
+  "test_source_files_sorted": [
+    "tmp_path"
+  ],
+  "test_finds_positional_name_reference": [
+    "tmp_path"
+  ],
+  "test_finds_single_quotes_and_nested_dirs": [
+    "tmp_path"
+  ],
+  "test_keyword_name_is_matched": [
+    "tmp_path"
+  ],
+  "test_unnamed_call_reported_with_none": [
+    "tmp_path"
+  ],
+  "test_non_literal_name_reported_with_none": [
+    "tmp_path"
+  ],
+  "test_attribute_call_is_matched": [
+    "tmp_path"
+  ],
+  "test_unparseable_file_is_skipped": [
+    "tmp_path"
+  ],
+  "test_scanner_does_not_rewrite_mismatched_name": [
+    "tmp_path"
+  ],
+  "test_no_references_is_a_pass": [
+    "tmp_path"
+  ],
+  "test_served_module_parses_exec_form": [
+    "tmp_path"
+  ],
+  "test_served_module_parses_shell_form": [
+    "tmp_path"
+  ],
+  "test_served_module_defaults_when_target_omitted": [
+    "tmp_path"
+  ],
+  "test_served_module_none_without_entrypoint": [
+    "tmp_path"
+  ],
+  "test_served_name_ignores_in_process_subagent": [
+    "tmp_path"
+  ],
+  "test_served_name_none_without_dockerfile": [
+    "tmp_path"
+  ],
+  "test_no_pyproject_is_clean": [
+    "tmp_path"
+  ],
+  "test_missing_license_file_is_error": [
+    "tmp_path"
+  ],
+  "test_missing_readme_is_warning": [
+    "tmp_path"
+  ],
+  "test_all_references_present_is_clean": [
+    "tmp_path"
+  ],
+  "test_unparseable_pyproject_is_error": [
+    "tmp_path"
+  ],
+  "test_license_not_copied_before_install_is_error": [
+    "tmp_path"
+  ],
+  "test_full_copy_before_install_is_clean": [
+    "tmp_path"
+  ],
+  "test_no_dockerfile_is_clean": [
+    "tmp_path"
+  ],
+  "test_validate_environment_aggregates": [
+    "tmp_path"
+  ],
+  "test_format_duration": [],
+  "test_display_build_summary_succeeded_with_lock": [],
+  "test_display_build_summary_failed": [],
+  "test_display_build_summary_unknown_status": [],
+  "test_display_upload_progress": [],
+  "test_from_record_maps_registry_detail_response": [],
+  "test_resolve_accepts_uuid_without_lookup": [],
+  "test_get_registry_environment_treats_404_as_missing": [
+    "monkeypatch"
+  ],
+  "test_search_filters_paginated_registry_list": [
+    "monkeypatch"
+  ],
+  "test_parse_ignore_file_skips_comments_and_blanks": [
+    "tmp_path"
+  ],
+  "test_parse_ignore_file_missing": [
+    "tmp_path"
+  ],
+  "test_format_size": [],
+  "test_should_ignore_glob_and_filename": [
+    "tmp_path"
+  ],
+  "test_should_ignore_directory_pattern": [
+    "tmp_path"
+  ],
+  "test_should_ignore_negation_reincludes": [
+    "tmp_path"
+  ],
+  "test_create_build_context_tarball_excludes_secrets": [
+    "tmp_path"
+  ],
+  "TestResolveEnvironmentName": {
+    "_resolve": [
+      "tmp_path",
+      "registry_id"
+    ],
+    "test_single_declared_name_wins": [
+      "self",
+      "tmp_path"
+    ],
+    "test_repeated_same_name_is_fine": [
+      "self",
+      "tmp_path"
+    ],
+    "test_multiple_distinct_names_exit": [
+      "self",
+      "tmp_path"
+    ],
+    "test_entrypoint_disambiguates_subagent": [
+      "self",
+      "tmp_path"
+    ],
+    "test_unnamed_environment_exit": [
+      "self",
+      "tmp_path"
+    ],
+    "test_no_references_falls_back_to_directory": [
+      "self",
+      "tmp_path"
+    ],
+    "test_registry_id_name_mismatch_exit": [
+      "self",
+      "tmp_path"
+    ],
+    "test_registry_id_matching_name_passes": [
+      "self",
+      "tmp_path"
+    ],
+    "test_registry_id_supplies_name_for_legacy_env": [
+      "self",
+      "tmp_path"
+    ]
+  },
+  "TestCollectEnvironmentVariables": {
+    "test_empty_sources": [
+      "self",
+      "tmp_path"
+    ],
+    "test_env_file_loading": [
+      "self",
+      "tmp_path"
+    ],
+    "test_custom_env_file": [
+      "self",
+      "tmp_path"
+    ],
+    "test_env_flags_override": [
+      "self",
+      "tmp_path"
+    ],
+    "test_env_flag_invalid_format": [
+      "self",
+      "tmp_path"
+    ]
+  },
+  "TestDeployEnvironment": {
+    "test_no_api_key_error": [
+      "self",
+      "tmp_path"
+    ],
+    "test_no_dockerfile_error": [
+      "self",
+      "tmp_path"
+    ],
+    "test_validation_errors_exit": [
+      "self",
+      "tmp_path"
+    ]
+  },
+  "TestDeployAsync": {
+    "test_upload_url_failure": [
+      "self"
+    ],
+    "test_upload_url_network_error": [
+      "self"
+    ],
+    "test_trigger_build_sends_runtime_provider": [
+      "self"
+    ]
+  },
+  "TestSaveDeployLink": {
+    "test_saves_deploy_link": [
+      "self",
+      "tmp_path"
+    ],
+    "test_creates_hud_directory": [
+      "self",
+      "tmp_path"
+    ]
+  },
+  "TestDeployCommand": {
+    "test_command_exists": [
+      "self"
+    ],
+    "test_command_docstring": [
+      "self"
+    ]
+  },
+  "test_init_scaffolds_a_runnable_package": [
+    "tmp_path"
+  ],
+  "test_init_refuses_to_clobber_nonempty_directory": [
+    "tmp_path"
+  ],
+  "test_init_force_overwrites_existing_files": [
+    "tmp_path"
+  ],
+  "TestMainModule": {
+    "test_main_module_imports_correctly": [
+      "self"
+    ],
+    "test_main_module_executes": [
+      "self"
+    ]
+  },
+  "TestCLIMain": {
+    "test_main_module_exists": [
+      "self"
+    ],
+    "test_main_module_has_main_import": [
+      "self"
+    ]
+  },
+  "runner": [],
+  "TestCLICommands": {
+    "test_main_shows_help_when_no_args": [
+      "self"
+    ],
+    "test_version_command": [
+      "self"
+    ],
+    "test_version_import_error": [
+      "self"
+    ],
+    "test_mcp_command": [
+      "self"
+    ],
+    "test_help_command": [
+      "self"
+    ]
+  },
+  "TestMainFunction": {
+    "test_main_with_help_flag": [
+      "self"
+    ],
+    "test_main_with_no_args": [
+      "self"
+    ]
+  },
+  "test_write_csv_flattens_args": [
+    "tmp_path"
+  ],
+  "test_version_does_not_crash": [],
+  "_ARN": [],
+  "test_is_bedrock_arn": [],
+  "test_parse_agent_type_accepts_known_value": [],
+  "test_parse_agent_type_rejects_unknown": [],
+  "test_get_agent_kwargs_model_precedence_and_flags": [],
+  "test_get_agent_kwargs_requires_agent_type": [],
+  "test_validate_api_keys_noop_without_agent": [],
+  "test_validate_api_keys_openai_compatible_requires_model": [],
+  "test_validate_api_keys_remote_needs_only_hud_key": [
+    "monkeypatch"
+  ],
+  "test_validate_api_keys_remote_requires_hud_key": [
+    "monkeypatch"
+  ],
+  "test_validate_api_keys_hud_runtime_requires_hud_key": [
+    "monkeypatch"
+  ],
+  "test_validate_api_keys_hud_runtime_keeps_local_gateway": [
+    "monkeypatch"
+  ],
+  "test_resolve_placement_runtime_hud_uses_tunnel": [
+    "tmp_path",
+    "monkeypatch"
+  ],
+  "test_resolve_placement_remote_uses_hosted_runtime": [
+    "tmp_path",
+    "monkeypatch"
+  ],
+  "test_runtime_cli_override_clears_config_remote": [],
+  "test_runtime_cli_rejects_remote_flag_conflict": [],
+  "test_load_missing_writes_template": [
+    "tmp_path"
+  ],
+  "test_load_parses_sections": [
+    "tmp_path"
+  ],
+  "test_load_resolves_env_var_placeholders": [
+    "tmp_path",
+    "monkeypatch"
+  ],
+  "test_merge_cli_overrides_fields": [],
+  "test_merge_cli_namespaced_config": [],
+  "test_resolve_agent_interactive_uses_selected_preset": [
+    "monkeypatch"
+  ],
+  "test_resolve_runtime_local_file_defaults_to_local": [
+    "tmp_path"
+  ],
+  "test_resolve_runtime_slug_defaults_to_remote": [],
+  "test_resolve_runtime_explicit_runtime_is_honored": [],
+  "test_resolve_runtime_local_against_slug_errors": [],
+  "test_display_renders": [],
+  "test_eval_max_steps_lands_in_agent_config": [],
+  "test_spawn_target_serves_single_file_env": [
+    "tmp_path"
+  ],
+  "test_spawn_target_resolves_split_tasks_layout": [
+    "tmp_path"
+  ],
+  "test_spawn_target_json_uses_parent_directory": [
+    "tmp_path"
+  ],
+  "test_spawn_target_directory_is_served_as_is": [
+    "tmp_path"
+  ],
+  "TestBedrockAutoDetection": {
+    "VALID_ARN": [],
+    "test_get_agent_kwargs_detects_bedrock_arn_from_config_checkpoint_name": [
+      "self"
+    ],
+    "test_get_agent_kwargs_bedrock_arn_missing_aws_creds_exits": [
+      "self"
+    ]
+  }
+}
