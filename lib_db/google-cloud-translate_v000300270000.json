@@ -1,0 +1,1388 @@
+{
+  "__all__": [],
+  "Connection": {
+    "DEFAULT_API_ENDPOINT": [],
+    "__init__": [
+      "self",
+      "client",
+      "client_info",
+      "api_endpoint"
+    ],
+    "API_VERSION": [],
+    "API_URL_TEMPLATE": []
+  },
+  "ENGLISH_ISO_639": [],
+  "BASE": [],
+  "NMT": [],
+  "Client": {
+    "SCOPE": [],
+    "__init__": [
+      "self",
+      "target_language",
+      "credentials",
+      "_http",
+      "client_info",
+      "client_options"
+    ],
+    "get_languages": [
+      "self",
+      "target_language"
+    ],
+    "detect_language": [
+      "self",
+      "values"
+    ],
+    "translate": [
+      "self",
+      "values",
+      "target_language",
+      "format_",
+      "source_language",
+      "customization_ids",
+      "model"
+    ]
+  },
+  "__version__": [],
+  "__protobuf__": [],
+  "TranslateTextGlossaryConfig": {},
+  "TranslateTextRequest": {},
+  "TranslateTextResponse": {},
+  "Translation": {},
+  "DetectLanguageRequest": {},
+  "DetectedLanguage": {},
+  "DetectLanguageResponse": {},
+  "GetSupportedLanguagesRequest": {},
+  "SupportedLanguages": {},
+  "SupportedLanguage": {},
+  "GcsSource": {},
+  "InputConfig": {},
+  "GcsDestination": {},
+  "OutputConfig": {},
+  "DocumentInputConfig": {},
+  "DocumentOutputConfig": {},
+  "TranslateDocumentRequest": {},
+  "DocumentTranslation": {},
+  "TranslateDocumentResponse": {},
+  "BatchTranslateTextRequest": {},
+  "BatchTranslateMetadata": {},
+  "BatchTranslateResponse": {},
+  "GlossaryInputConfig": {},
+  "Glossary": {},
+  "CreateGlossaryRequest": {},
+  "GetGlossaryRequest": {},
+  "DeleteGlossaryRequest": {},
+  "ListGlossariesRequest": {},
+  "ListGlossariesResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "CreateGlossaryMetadata": {},
+  "DeleteGlossaryMetadata": {},
+  "DeleteGlossaryResponse": {},
+  "BatchTranslateDocumentRequest": {},
+  "BatchDocumentInputConfig": {},
+  "BatchDocumentOutputConfig": {},
+  "BatchTranslateDocumentResponse": {},
+  "BatchTranslateDocumentMetadata": {},
+  "RefinementEntry": {},
+  "RefineTextRequest": {},
+  "RefineTextResponse": {},
+  "_LOGGER": [],
+  "TranslationServiceAsyncClient": {
+    "DEFAULT_ENDPOINT": [],
+    "DEFAULT_MTLS_ENDPOINT": [],
+    "_DEFAULT_ENDPOINT_TEMPLATE": [],
+    "_DEFAULT_UNIVERSE": [],
+    "glossary_path": [],
+    "parse_glossary_path": [],
+    "common_billing_account_path": [],
+    "parse_common_billing_account_path": [],
+    "common_folder_path": [],
+    "parse_common_folder_path": [],
+    "common_organization_path": [],
+    "parse_common_organization_path": [],
+    "common_project_path": [],
+    "parse_common_project_path": [],
+    "common_location_path": [],
+    "parse_common_location_path": [],
+    "from_service_account_info": [
+      "cls",
+      "info"
+    ],
+    "from_service_account_file": [
+      "cls",
+      "filename"
+    ],
+    "from_service_account_json": [],
+    "get_mtls_endpoint_and_cert_source": [
+      "cls",
+      "client_options"
+    ],
+    "transport": [
+      "self"
+    ],
+    "api_endpoint": [
+      "self"
+    ],
+    "universe_domain": [
+      "self"
+    ],
+    "get_transport_class": [],
+    "__init__": [
+      "self"
+    ],
+    "translate_text": [
+      "self",
+      "request"
+    ],
+    "detect_language": [
+      "self",
+      "request"
+    ],
+    "get_supported_languages": [
+      "self",
+      "request"
+    ],
+    "translate_document": [
+      "self",
+      "request"
+    ],
+    "batch_translate_text": [
+      "self",
+      "request"
+    ],
+    "batch_translate_document": [
+      "self",
+      "request"
+    ],
+    "create_glossary": [
+      "self",
+      "request"
+    ],
+    "list_glossaries": [
+      "self",
+      "request"
+    ],
+    "get_glossary": [
+      "self",
+      "request"
+    ],
+    "delete_glossary": [
+      "self",
+      "request"
+    ],
+    "refine_text": [
+      "self",
+      "request"
+    ],
+    "list_operations": [
+      "self",
+      "request"
+    ],
+    "get_operation": [
+      "self",
+      "request"
+    ],
+    "delete_operation": [
+      "self",
+      "request"
+    ],
+    "cancel_operation": [
+      "self",
+      "request"
+    ],
+    "wait_operation": [
+      "self",
+      "request"
+    ],
+    "get_location": [
+      "self",
+      "request"
+    ],
+    "list_locations": [
+      "self",
+      "request"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self",
+      "exc_type",
+      "exc",
+      "tb"
+    ]
+  },
+  "DEFAULT_CLIENT_INFO": [],
+  "ListGlossariesPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListGlossariesAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "TranslationServiceClientMeta": {
+    "_transport_registry": [],
+    "get_transport_class": [
+      "cls",
+      "label"
+    ]
+  },
+  "TranslationServiceClient": {
+    "_get_default_mtls_endpoint": [
+      "api_endpoint"
+    ],
+    "DEFAULT_ENDPOINT": [],
+    "DEFAULT_MTLS_ENDPOINT": [],
+    "_DEFAULT_ENDPOINT_TEMPLATE": [],
+    "_DEFAULT_UNIVERSE": [],
+    "_use_client_cert_effective": [],
+    "from_service_account_info": [
+      "cls",
+      "info"
+    ],
+    "from_service_account_file": [
+      "cls",
+      "filename"
+    ],
+    "from_service_account_json": [],
+    "transport": [
+      "self"
+    ],
+    "glossary_path": [
+      "project",
+      "location",
+      "glossary"
+    ],
+    "parse_glossary_path": [
+      "path"
+    ],
+    "common_billing_account_path": [
+      "billing_account"
+    ],
+    "parse_common_billing_account_path": [
+      "path"
+    ],
+    "common_folder_path": [
+      "folder"
+    ],
+    "parse_common_folder_path": [
+      "path"
+    ],
+    "common_organization_path": [
+      "organization"
+    ],
+    "parse_common_organization_path": [
+      "path"
+    ],
+    "common_project_path": [
+      "project"
+    ],
+    "parse_common_project_path": [
+      "path"
+    ],
+    "common_location_path": [
+      "project",
+      "location"
+    ],
+    "parse_common_location_path": [
+      "path"
+    ],
+    "get_mtls_endpoint_and_cert_source": [
+      "cls",
+      "client_options"
+    ],
+    "_read_environment_variables": [],
+    "_get_client_cert_source": [
+      "provided_cert_source",
+      "use_cert_flag"
+    ],
+    "_get_api_endpoint": [
+      "api_override",
+      "client_cert_source",
+      "universe_domain",
+      "use_mtls_endpoint"
+    ],
+    "_get_universe_domain": [
+      "client_universe_domain",
+      "universe_domain_env"
+    ],
+    "_validate_universe_domain": [
+      "self"
+    ],
+    "_add_cred_info_for_auth_errors": [
+      "self",
+      "error"
+    ],
+    "api_endpoint": [
+      "self"
+    ],
+    "universe_domain": [
+      "self"
+    ],
+    "__init__": [
+      "self"
+    ],
+    "translate_text": [
+      "self",
+      "request"
+    ],
+    "detect_language": [
+      "self",
+      "request"
+    ],
+    "get_supported_languages": [
+      "self",
+      "request"
+    ],
+    "translate_document": [
+      "self",
+      "request"
+    ],
+    "batch_translate_text": [
+      "self",
+      "request"
+    ],
+    "batch_translate_document": [
+      "self",
+      "request"
+    ],
+    "create_glossary": [
+      "self",
+      "request"
+    ],
+    "list_glossaries": [
+      "self",
+      "request"
+    ],
+    "get_glossary": [
+      "self",
+      "request"
+    ],
+    "delete_glossary": [
+      "self",
+      "request"
+    ],
+    "refine_text": [
+      "self",
+      "request"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "type",
+      "value",
+      "traceback"
+    ],
+    "list_operations": [
+      "self",
+      "request"
+    ],
+    "get_operation": [
+      "self",
+      "request"
+    ],
+    "delete_operation": [
+      "self",
+      "request"
+    ],
+    "cancel_operation": [
+      "self",
+      "request"
+    ],
+    "wait_operation": [
+      "self",
+      "request"
+    ],
+    "get_location": [
+      "self",
+      "request"
+    ],
+    "list_locations": [
+      "self",
+      "request"
+    ]
+  },
+  "TranslationServiceRestInterceptor": {
+    "pre_batch_translate_document": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_batch_translate_document": [
+      "self",
+      "response"
+    ],
+    "post_batch_translate_document_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_batch_translate_text": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_batch_translate_text": [
+      "self",
+      "response"
+    ],
+    "post_batch_translate_text_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_create_glossary": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_create_glossary": [
+      "self",
+      "response"
+    ],
+    "post_create_glossary_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_delete_glossary": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_delete_glossary": [
+      "self",
+      "response"
+    ],
+    "post_delete_glossary_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_detect_language": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_detect_language": [
+      "self",
+      "response"
+    ],
+    "post_detect_language_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_get_glossary": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_get_glossary": [
+      "self",
+      "response"
+    ],
+    "post_get_glossary_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_get_supported_languages": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_get_supported_languages": [
+      "self",
+      "response"
+    ],
+    "post_get_supported_languages_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_list_glossaries": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_list_glossaries": [
+      "self",
+      "response"
+    ],
+    "post_list_glossaries_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_refine_text": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_refine_text": [
+      "self",
+      "response"
+    ],
+    "post_refine_text_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_translate_document": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_translate_document": [
+      "self",
+      "response"
+    ],
+    "post_translate_document_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_translate_text": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_translate_text": [
+      "self",
+      "response"
+    ],
+    "post_translate_text_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_get_location": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_get_location": [
+      "self",
+      "response"
+    ],
+    "pre_list_locations": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_list_locations": [
+      "self",
+      "response"
+    ],
+    "pre_cancel_operation": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_cancel_operation": [
+      "self",
+      "response"
+    ],
+    "pre_delete_operation": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_delete_operation": [
+      "self",
+      "response"
+    ],
+    "pre_get_operation": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_get_operation": [
+      "self",
+      "response"
+    ],
+    "pre_list_operations": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_list_operations": [
+      "self",
+      "response"
+    ],
+    "pre_wait_operation": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_wait_operation": [
+      "self",
+      "response"
+    ]
+  },
+  "TranslationServiceRestStub": {},
+  "TranslationServiceRestTransport": {
+    "__init__": [
+      "self"
+    ],
+    "operations_client": [
+      "self"
+    ],
+    "batch_translate_document": [
+      "self"
+    ],
+    "batch_translate_text": [
+      "self"
+    ],
+    "create_glossary": [
+      "self"
+    ],
+    "delete_glossary": [
+      "self"
+    ],
+    "detect_language": [
+      "self"
+    ],
+    "get_glossary": [
+      "self"
+    ],
+    "get_supported_languages": [
+      "self"
+    ],
+    "list_glossaries": [
+      "self"
+    ],
+    "refine_text": [
+      "self"
+    ],
+    "translate_document": [
+      "self"
+    ],
+    "translate_text": [
+      "self"
+    ],
+    "get_location": [
+      "self"
+    ],
+    "list_locations": [
+      "self"
+    ],
+    "cancel_operation": [
+      "self"
+    ],
+    "delete_operation": [
+      "self"
+    ],
+    "get_operation": [
+      "self"
+    ],
+    "list_operations": [
+      "self"
+    ],
+    "wait_operation": [
+      "self"
+    ],
+    "kind": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "_transport_registry": [],
+  "_LoggingClientInterceptor": {
+    "intercept_unary_unary": [
+      "self",
+      "continuation",
+      "client_call_details",
+      "request"
+    ]
+  },
+  "TranslationServiceGrpcTransport": {
+    "__init__": [
+      "self"
+    ],
+    "create_channel": [
+      "cls",
+      "host",
+      "credentials",
+      "credentials_file",
+      "scopes",
+      "quota_project_id"
+    ],
+    "grpc_channel": [
+      "self"
+    ],
+    "operations_client": [
+      "self"
+    ],
+    "translate_text": [
+      "self"
+    ],
+    "detect_language": [
+      "self"
+    ],
+    "get_supported_languages": [
+      "self"
+    ],
+    "translate_document": [
+      "self"
+    ],
+    "batch_translate_text": [
+      "self"
+    ],
+    "batch_translate_document": [
+      "self"
+    ],
+    "create_glossary": [
+      "self"
+    ],
+    "list_glossaries": [
+      "self"
+    ],
+    "get_glossary": [
+      "self"
+    ],
+    "delete_glossary": [
+      "self"
+    ],
+    "refine_text": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "delete_operation": [
+      "self"
+    ],
+    "cancel_operation": [
+      "self"
+    ],
+    "wait_operation": [
+      "self"
+    ],
+    "get_operation": [
+      "self"
+    ],
+    "list_operations": [
+      "self"
+    ],
+    "list_locations": [
+      "self"
+    ],
+    "get_location": [
+      "self"
+    ],
+    "kind": [
+      "self"
+    ]
+  },
+  "_LoggingClientAIOInterceptor": {
+    "intercept_unary_unary": [
+      "self",
+      "continuation",
+      "client_call_details",
+      "request"
+    ]
+  },
+  "TranslationServiceGrpcAsyncIOTransport": {
+    "create_channel": [
+      "cls",
+      "host",
+      "credentials",
+      "credentials_file",
+      "scopes",
+      "quota_project_id"
+    ],
+    "__init__": [
+      "self"
+    ],
+    "grpc_channel": [
+      "self"
+    ],
+    "operations_client": [
+      "self"
+    ],
+    "translate_text": [
+      "self"
+    ],
+    "detect_language": [
+      "self"
+    ],
+    "get_supported_languages": [
+      "self"
+    ],
+    "translate_document": [
+      "self"
+    ],
+    "batch_translate_text": [
+      "self"
+    ],
+    "batch_translate_document": [
+      "self"
+    ],
+    "create_glossary": [
+      "self"
+    ],
+    "list_glossaries": [
+      "self"
+    ],
+    "get_glossary": [
+      "self"
+    ],
+    "delete_glossary": [
+      "self"
+    ],
+    "refine_text": [
+      "self"
+    ],
+    "_prep_wrapped_messages": [
+      "self",
+      "client_info"
+    ],
+    "_wrap_method": [
+      "self",
+      "func"
+    ],
+    "close": [
+      "self"
+    ],
+    "kind": [
+      "self"
+    ],
+    "delete_operation": [
+      "self"
+    ],
+    "cancel_operation": [
+      "self"
+    ],
+    "wait_operation": [
+      "self"
+    ],
+    "get_operation": [
+      "self"
+    ],
+    "list_operations": [
+      "self"
+    ],
+    "list_locations": [
+      "self"
+    ],
+    "get_location": [
+      "self"
+    ]
+  },
+  "_BaseTranslationServiceRestTransport": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "TranslationServiceTransport": {
+    "AUTH_SCOPES": [],
+    "__init__": [
+      "self"
+    ],
+    "host": [
+      "self"
+    ],
+    "_prep_wrapped_messages": [
+      "self",
+      "client_info"
+    ],
+    "close": [
+      "self"
+    ],
+    "operations_client": [
+      "self"
+    ],
+    "translate_text": [
+      "self"
+    ],
+    "detect_language": [
+      "self"
+    ],
+    "get_supported_languages": [
+      "self"
+    ],
+    "translate_document": [
+      "self"
+    ],
+    "batch_translate_text": [
+      "self"
+    ],
+    "batch_translate_document": [
+      "self"
+    ],
+    "create_glossary": [
+      "self"
+    ],
+    "list_glossaries": [
+      "self"
+    ],
+    "get_glossary": [
+      "self"
+    ],
+    "delete_glossary": [
+      "self"
+    ],
+    "refine_text": [
+      "self"
+    ],
+    "list_operations": [
+      "self"
+    ],
+    "get_operation": [
+      "self"
+    ],
+    "cancel_operation": [
+      "self"
+    ],
+    "delete_operation": [
+      "self"
+    ],
+    "wait_operation": [
+      "self"
+    ],
+    "get_location": [
+      "self"
+    ],
+    "list_locations": [
+      "self"
+    ],
+    "kind": [
+      "self"
+    ]
+  },
+  "AdaptiveMtDataset": {},
+  "CreateAdaptiveMtDatasetRequest": {},
+  "DeleteAdaptiveMtDatasetRequest": {},
+  "GetAdaptiveMtDatasetRequest": {},
+  "ListAdaptiveMtDatasetsRequest": {},
+  "ListAdaptiveMtDatasetsResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "AdaptiveMtTranslateRequest": {},
+  "AdaptiveMtTranslation": {},
+  "AdaptiveMtTranslateResponse": {},
+  "AdaptiveMtFile": {},
+  "GetAdaptiveMtFileRequest": {},
+  "DeleteAdaptiveMtFileRequest": {},
+  "ImportAdaptiveMtFileRequest": {},
+  "ImportAdaptiveMtFileResponse": {},
+  "ListAdaptiveMtFilesRequest": {},
+  "ListAdaptiveMtFilesResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "AdaptiveMtSentence": {},
+  "ListAdaptiveMtSentencesRequest": {},
+  "ListAdaptiveMtSentencesResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "TransliterationConfig": {},
+  "RomanizeTextRequest": {},
+  "Romanization": {},
+  "RomanizeTextResponse": {},
+  "UpdateGlossaryRequest": {},
+  "GetGlossaryEntryRequest": {},
+  "DeleteGlossaryEntryRequest": {},
+  "ListGlossaryEntriesRequest": {},
+  "ListGlossaryEntriesResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "CreateGlossaryEntryRequest": {},
+  "UpdateGlossaryEntryRequest": {},
+  "UpdateGlossaryMetadata": {},
+  "ImportDataRequest": {},
+  "DatasetInputConfig": {},
+  "ImportDataMetadata": {},
+  "ExportDataRequest": {},
+  "DatasetOutputConfig": {},
+  "ExportDataMetadata": {},
+  "DeleteDatasetRequest": {},
+  "DeleteDatasetMetadata": {},
+  "GetDatasetRequest": {},
+  "ListDatasetsRequest": {},
+  "ListDatasetsResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "CreateDatasetRequest": {},
+  "CreateDatasetMetadata": {},
+  "ListExamplesRequest": {},
+  "ListExamplesResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "Example": {},
+  "BatchTransferResourcesResponse": {},
+  "Dataset": {},
+  "CreateModelRequest": {},
+  "CreateModelMetadata": {},
+  "ListModelsRequest": {},
+  "ListModelsResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "GetModelRequest": {},
+  "DeleteModelRequest": {},
+  "DeleteModelMetadata": {},
+  "Model": {},
+  "OperationState": {
+    "OPERATION_STATE_UNSPECIFIED": [],
+    "OPERATION_STATE_RUNNING": [],
+    "OPERATION_STATE_SUCCEEDED": [],
+    "OPERATION_STATE_FAILED": [],
+    "OPERATION_STATE_CANCELLING": [],
+    "OPERATION_STATE_CANCELLED": []
+  },
+  "GcsInputSource": {},
+  "FileInputSource": {},
+  "GcsOutputDestination": {},
+  "GlossaryEntry": {},
+  "GlossaryTerm": {},
+  "ListGlossaryEntriesPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListGlossaryEntriesAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListDatasetsPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListDatasetsAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListAdaptiveMtDatasetsPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListAdaptiveMtDatasetsAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListAdaptiveMtFilesPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListAdaptiveMtFilesAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListAdaptiveMtSentencesPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListAdaptiveMtSentencesAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListExamplesPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListExamplesAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListModelsPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListModelsAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  }
+}

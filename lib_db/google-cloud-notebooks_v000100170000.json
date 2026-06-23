@@ -1,0 +1,2470 @@
+{
+  "__version__": [],
+  "__all__": [],
+  "__protobuf__": [],
+  "ExecutionTemplate": {},
+  "Execution": {},
+  "Environment": {},
+  "VmImage": {},
+  "ContainerImage": {},
+  "Schedule": {},
+  "Event": {},
+  "Runtime": {},
+  "RuntimeAcceleratorConfig": {},
+  "EncryptionConfig": {},
+  "LocalDisk": {},
+  "LocalDiskInitializeParams": {},
+  "RuntimeAccessConfig": {},
+  "RuntimeSoftwareConfig": {},
+  "RuntimeMetrics": {},
+  "RuntimeShieldedInstanceConfig": {},
+  "VirtualMachine": {},
+  "VirtualMachineConfig": {},
+  "ListRuntimesRequest": {},
+  "ListRuntimesResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "GetRuntimeRequest": {},
+  "CreateRuntimeRequest": {},
+  "DeleteRuntimeRequest": {},
+  "StartRuntimeRequest": {},
+  "StopRuntimeRequest": {},
+  "SwitchRuntimeRequest": {},
+  "ResetRuntimeRequest": {},
+  "UpgradeRuntimeRequest": {},
+  "ReportRuntimeEventRequest": {},
+  "UpdateRuntimeRequest": {},
+  "RefreshRuntimeTokenInternalRequest": {},
+  "RefreshRuntimeTokenInternalResponse": {},
+  "DiagnoseRuntimeRequest": {},
+  "InstanceConfig": {},
+  "DiagnosticConfig": {},
+  "ReservationAffinity": {},
+  "Instance": {},
+  "UpgradeType": {
+    "UPGRADE_TYPE_UNSPECIFIED": [],
+    "UPGRADE_FRAMEWORK": [],
+    "UPGRADE_OS": [],
+    "UPGRADE_CUDA": [],
+    "UPGRADE_ALL": []
+  },
+  "OperationMetadata": {},
+  "ListInstancesRequest": {},
+  "ListInstancesResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "GetInstanceRequest": {},
+  "CreateInstanceRequest": {},
+  "RegisterInstanceRequest": {},
+  "SetInstanceAcceleratorRequest": {},
+  "SetInstanceMachineTypeRequest": {},
+  "UpdateInstanceConfigRequest": {},
+  "SetInstanceLabelsRequest": {},
+  "UpdateInstanceMetadataItemsRequest": {},
+  "UpdateInstanceMetadataItemsResponse": {},
+  "UpdateShieldedInstanceConfigRequest": {},
+  "DeleteInstanceRequest": {},
+  "StartInstanceRequest": {},
+  "StopInstanceRequest": {},
+  "ResetInstanceRequest": {},
+  "ReportInstanceInfoRequest": {},
+  "IsInstanceUpgradeableRequest": {},
+  "IsInstanceUpgradeableResponse": {},
+  "GetInstanceHealthRequest": {},
+  "GetInstanceHealthResponse": {},
+  "UpgradeInstanceRequest": {},
+  "RollbackInstanceRequest": {},
+  "UpgradeInstanceInternalRequest": {},
+  "ListEnvironmentsRequest": {},
+  "DiagnoseInstanceRequest": {},
+  "ListEnvironmentsResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "GetEnvironmentRequest": {},
+  "CreateEnvironmentRequest": {},
+  "DeleteEnvironmentRequest": {},
+  "ListSchedulesRequest": {},
+  "ListSchedulesResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "GetScheduleRequest": {},
+  "DeleteScheduleRequest": {},
+  "CreateScheduleRequest": {},
+  "TriggerScheduleRequest": {},
+  "ListExecutionsRequest": {},
+  "ListExecutionsResponse": {
+    "raw_page": [
+      "self"
+    ]
+  },
+  "GetExecutionRequest": {},
+  "DeleteExecutionRequest": {},
+  "CreateExecutionRequest": {},
+  "_LOGGER": [],
+  "ManagedNotebookServiceAsyncClient": {
+    "DEFAULT_ENDPOINT": [],
+    "DEFAULT_MTLS_ENDPOINT": [],
+    "_DEFAULT_ENDPOINT_TEMPLATE": [],
+    "_DEFAULT_UNIVERSE": [],
+    "runtime_path": [],
+    "parse_runtime_path": [],
+    "common_billing_account_path": [],
+    "parse_common_billing_account_path": [],
+    "common_folder_path": [],
+    "parse_common_folder_path": [],
+    "common_organization_path": [],
+    "parse_common_organization_path": [],
+    "common_project_path": [],
+    "parse_common_project_path": [],
+    "common_location_path": [],
+    "parse_common_location_path": [],
+    "from_service_account_info": [
+      "cls",
+      "info"
+    ],
+    "from_service_account_file": [
+      "cls",
+      "filename"
+    ],
+    "from_service_account_json": [],
+    "get_mtls_endpoint_and_cert_source": [
+      "cls",
+      "client_options"
+    ],
+    "transport": [
+      "self"
+    ],
+    "api_endpoint": [
+      "self"
+    ],
+    "universe_domain": [
+      "self"
+    ],
+    "get_transport_class": [],
+    "__init__": [
+      "self"
+    ],
+    "list_runtimes": [
+      "self",
+      "request"
+    ],
+    "get_runtime": [
+      "self",
+      "request"
+    ],
+    "create_runtime": [
+      "self",
+      "request"
+    ],
+    "update_runtime": [
+      "self",
+      "request"
+    ],
+    "delete_runtime": [
+      "self",
+      "request"
+    ],
+    "start_runtime": [
+      "self",
+      "request"
+    ],
+    "stop_runtime": [
+      "self",
+      "request"
+    ],
+    "switch_runtime": [
+      "self",
+      "request"
+    ],
+    "reset_runtime": [
+      "self",
+      "request"
+    ],
+    "upgrade_runtime": [
+      "self",
+      "request"
+    ],
+    "report_runtime_event": [
+      "self",
+      "request"
+    ],
+    "refresh_runtime_token_internal": [
+      "self",
+      "request"
+    ],
+    "diagnose_runtime": [
+      "self",
+      "request"
+    ],
+    "list_operations": [
+      "self",
+      "request"
+    ],
+    "get_operation": [
+      "self",
+      "request"
+    ],
+    "delete_operation": [
+      "self",
+      "request"
+    ],
+    "cancel_operation": [
+      "self",
+      "request"
+    ],
+    "set_iam_policy": [
+      "self",
+      "request"
+    ],
+    "get_iam_policy": [
+      "self",
+      "request"
+    ],
+    "test_iam_permissions": [
+      "self",
+      "request"
+    ],
+    "get_location": [
+      "self",
+      "request"
+    ],
+    "list_locations": [
+      "self",
+      "request"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self",
+      "exc_type",
+      "exc",
+      "tb"
+    ]
+  },
+  "DEFAULT_CLIENT_INFO": [],
+  "ListRuntimesPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListRuntimesAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ManagedNotebookServiceClientMeta": {
+    "_transport_registry": [],
+    "get_transport_class": [
+      "cls",
+      "label"
+    ]
+  },
+  "ManagedNotebookServiceClient": {
+    "_get_default_mtls_endpoint": [
+      "api_endpoint"
+    ],
+    "DEFAULT_ENDPOINT": [],
+    "DEFAULT_MTLS_ENDPOINT": [],
+    "_DEFAULT_ENDPOINT_TEMPLATE": [],
+    "_DEFAULT_UNIVERSE": [],
+    "_use_client_cert_effective": [],
+    "from_service_account_info": [
+      "cls",
+      "info"
+    ],
+    "from_service_account_file": [
+      "cls",
+      "filename"
+    ],
+    "from_service_account_json": [],
+    "transport": [
+      "self"
+    ],
+    "runtime_path": [
+      "project",
+      "location",
+      "runtime"
+    ],
+    "parse_runtime_path": [
+      "path"
+    ],
+    "common_billing_account_path": [
+      "billing_account"
+    ],
+    "parse_common_billing_account_path": [
+      "path"
+    ],
+    "common_folder_path": [
+      "folder"
+    ],
+    "parse_common_folder_path": [
+      "path"
+    ],
+    "common_organization_path": [
+      "organization"
+    ],
+    "parse_common_organization_path": [
+      "path"
+    ],
+    "common_project_path": [
+      "project"
+    ],
+    "parse_common_project_path": [
+      "path"
+    ],
+    "common_location_path": [
+      "project",
+      "location"
+    ],
+    "parse_common_location_path": [
+      "path"
+    ],
+    "get_mtls_endpoint_and_cert_source": [
+      "cls",
+      "client_options"
+    ],
+    "_read_environment_variables": [],
+    "_get_client_cert_source": [
+      "provided_cert_source",
+      "use_cert_flag"
+    ],
+    "_get_api_endpoint": [
+      "api_override",
+      "client_cert_source",
+      "universe_domain",
+      "use_mtls_endpoint"
+    ],
+    "_get_universe_domain": [
+      "client_universe_domain",
+      "universe_domain_env"
+    ],
+    "_validate_universe_domain": [
+      "self"
+    ],
+    "_add_cred_info_for_auth_errors": [
+      "self",
+      "error"
+    ],
+    "api_endpoint": [
+      "self"
+    ],
+    "universe_domain": [
+      "self"
+    ],
+    "__init__": [
+      "self"
+    ],
+    "list_runtimes": [
+      "self",
+      "request"
+    ],
+    "get_runtime": [
+      "self",
+      "request"
+    ],
+    "create_runtime": [
+      "self",
+      "request"
+    ],
+    "update_runtime": [
+      "self",
+      "request"
+    ],
+    "delete_runtime": [
+      "self",
+      "request"
+    ],
+    "start_runtime": [
+      "self",
+      "request"
+    ],
+    "stop_runtime": [
+      "self",
+      "request"
+    ],
+    "switch_runtime": [
+      "self",
+      "request"
+    ],
+    "reset_runtime": [
+      "self",
+      "request"
+    ],
+    "upgrade_runtime": [
+      "self",
+      "request"
+    ],
+    "report_runtime_event": [
+      "self",
+      "request"
+    ],
+    "refresh_runtime_token_internal": [
+      "self",
+      "request"
+    ],
+    "diagnose_runtime": [
+      "self",
+      "request"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "type",
+      "value",
+      "traceback"
+    ],
+    "list_operations": [
+      "self",
+      "request"
+    ],
+    "get_operation": [
+      "self",
+      "request"
+    ],
+    "delete_operation": [
+      "self",
+      "request"
+    ],
+    "cancel_operation": [
+      "self",
+      "request"
+    ],
+    "set_iam_policy": [
+      "self",
+      "request"
+    ],
+    "get_iam_policy": [
+      "self",
+      "request"
+    ],
+    "test_iam_permissions": [
+      "self",
+      "request"
+    ],
+    "get_location": [
+      "self",
+      "request"
+    ],
+    "list_locations": [
+      "self",
+      "request"
+    ]
+  },
+  "_transport_registry": [],
+  "_LoggingClientInterceptor": {
+    "intercept_unary_unary": [
+      "self",
+      "continuation",
+      "client_call_details",
+      "request"
+    ]
+  },
+  "ManagedNotebookServiceGrpcTransport": {
+    "__init__": [
+      "self"
+    ],
+    "create_channel": [
+      "cls",
+      "host",
+      "credentials",
+      "credentials_file",
+      "scopes",
+      "quota_project_id"
+    ],
+    "grpc_channel": [
+      "self"
+    ],
+    "operations_client": [
+      "self"
+    ],
+    "list_runtimes": [
+      "self"
+    ],
+    "get_runtime": [
+      "self"
+    ],
+    "create_runtime": [
+      "self"
+    ],
+    "update_runtime": [
+      "self"
+    ],
+    "delete_runtime": [
+      "self"
+    ],
+    "start_runtime": [
+      "self"
+    ],
+    "stop_runtime": [
+      "self"
+    ],
+    "switch_runtime": [
+      "self"
+    ],
+    "reset_runtime": [
+      "self"
+    ],
+    "upgrade_runtime": [
+      "self"
+    ],
+    "report_runtime_event": [
+      "self"
+    ],
+    "refresh_runtime_token_internal": [
+      "self"
+    ],
+    "diagnose_runtime": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "delete_operation": [
+      "self"
+    ],
+    "cancel_operation": [
+      "self"
+    ],
+    "get_operation": [
+      "self"
+    ],
+    "list_operations": [
+      "self"
+    ],
+    "list_locations": [
+      "self"
+    ],
+    "get_location": [
+      "self"
+    ],
+    "set_iam_policy": [
+      "self"
+    ],
+    "get_iam_policy": [
+      "self"
+    ],
+    "test_iam_permissions": [
+      "self"
+    ],
+    "kind": [
+      "self"
+    ]
+  },
+  "_LoggingClientAIOInterceptor": {
+    "intercept_unary_unary": [
+      "self",
+      "continuation",
+      "client_call_details",
+      "request"
+    ]
+  },
+  "ManagedNotebookServiceGrpcAsyncIOTransport": {
+    "create_channel": [
+      "cls",
+      "host",
+      "credentials",
+      "credentials_file",
+      "scopes",
+      "quota_project_id"
+    ],
+    "__init__": [
+      "self"
+    ],
+    "grpc_channel": [
+      "self"
+    ],
+    "operations_client": [
+      "self"
+    ],
+    "list_runtimes": [
+      "self"
+    ],
+    "get_runtime": [
+      "self"
+    ],
+    "create_runtime": [
+      "self"
+    ],
+    "update_runtime": [
+      "self"
+    ],
+    "delete_runtime": [
+      "self"
+    ],
+    "start_runtime": [
+      "self"
+    ],
+    "stop_runtime": [
+      "self"
+    ],
+    "switch_runtime": [
+      "self"
+    ],
+    "reset_runtime": [
+      "self"
+    ],
+    "upgrade_runtime": [
+      "self"
+    ],
+    "report_runtime_event": [
+      "self"
+    ],
+    "refresh_runtime_token_internal": [
+      "self"
+    ],
+    "diagnose_runtime": [
+      "self"
+    ],
+    "_prep_wrapped_messages": [
+      "self",
+      "client_info"
+    ],
+    "_wrap_method": [
+      "self",
+      "func"
+    ],
+    "close": [
+      "self"
+    ],
+    "kind": [
+      "self"
+    ],
+    "delete_operation": [
+      "self"
+    ],
+    "cancel_operation": [
+      "self"
+    ],
+    "get_operation": [
+      "self"
+    ],
+    "list_operations": [
+      "self"
+    ],
+    "list_locations": [
+      "self"
+    ],
+    "get_location": [
+      "self"
+    ],
+    "set_iam_policy": [
+      "self"
+    ],
+    "get_iam_policy": [
+      "self"
+    ],
+    "test_iam_permissions": [
+      "self"
+    ]
+  },
+  "ManagedNotebookServiceTransport": {
+    "AUTH_SCOPES": [],
+    "__init__": [
+      "self"
+    ],
+    "host": [
+      "self"
+    ],
+    "_prep_wrapped_messages": [
+      "self",
+      "client_info"
+    ],
+    "close": [
+      "self"
+    ],
+    "operations_client": [
+      "self"
+    ],
+    "list_runtimes": [
+      "self"
+    ],
+    "get_runtime": [
+      "self"
+    ],
+    "create_runtime": [
+      "self"
+    ],
+    "update_runtime": [
+      "self"
+    ],
+    "delete_runtime": [
+      "self"
+    ],
+    "start_runtime": [
+      "self"
+    ],
+    "stop_runtime": [
+      "self"
+    ],
+    "switch_runtime": [
+      "self"
+    ],
+    "reset_runtime": [
+      "self"
+    ],
+    "upgrade_runtime": [
+      "self"
+    ],
+    "report_runtime_event": [
+      "self"
+    ],
+    "refresh_runtime_token_internal": [
+      "self"
+    ],
+    "diagnose_runtime": [
+      "self"
+    ],
+    "list_operations": [
+      "self"
+    ],
+    "get_operation": [
+      "self"
+    ],
+    "cancel_operation": [
+      "self"
+    ],
+    "delete_operation": [
+      "self"
+    ],
+    "set_iam_policy": [
+      "self"
+    ],
+    "get_iam_policy": [
+      "self"
+    ],
+    "test_iam_permissions": [
+      "self"
+    ],
+    "get_location": [
+      "self"
+    ],
+    "list_locations": [
+      "self"
+    ],
+    "kind": [
+      "self"
+    ]
+  },
+  "NotebookServiceAsyncClient": {
+    "DEFAULT_ENDPOINT": [],
+    "DEFAULT_MTLS_ENDPOINT": [],
+    "_DEFAULT_ENDPOINT_TEMPLATE": [],
+    "_DEFAULT_UNIVERSE": [],
+    "environment_path": [],
+    "parse_environment_path": [],
+    "execution_path": [],
+    "parse_execution_path": [],
+    "instance_path": [],
+    "parse_instance_path": [],
+    "schedule_path": [],
+    "parse_schedule_path": [],
+    "tensorboard_path": [],
+    "parse_tensorboard_path": [],
+    "common_billing_account_path": [],
+    "parse_common_billing_account_path": [],
+    "common_folder_path": [],
+    "parse_common_folder_path": [],
+    "common_organization_path": [],
+    "parse_common_organization_path": [],
+    "common_project_path": [],
+    "parse_common_project_path": [],
+    "common_location_path": [],
+    "parse_common_location_path": [],
+    "from_service_account_info": [
+      "cls",
+      "info"
+    ],
+    "from_service_account_file": [
+      "cls",
+      "filename"
+    ],
+    "from_service_account_json": [],
+    "get_mtls_endpoint_and_cert_source": [
+      "cls",
+      "client_options"
+    ],
+    "transport": [
+      "self"
+    ],
+    "api_endpoint": [
+      "self"
+    ],
+    "universe_domain": [
+      "self"
+    ],
+    "get_transport_class": [],
+    "__init__": [
+      "self"
+    ],
+    "list_instances": [
+      "self",
+      "request"
+    ],
+    "get_instance": [
+      "self",
+      "request"
+    ],
+    "create_instance": [
+      "self",
+      "request"
+    ],
+    "register_instance": [
+      "self",
+      "request"
+    ],
+    "set_instance_accelerator": [
+      "self",
+      "request"
+    ],
+    "set_instance_machine_type": [
+      "self",
+      "request"
+    ],
+    "update_instance_config": [
+      "self",
+      "request"
+    ],
+    "update_shielded_instance_config": [
+      "self",
+      "request"
+    ],
+    "set_instance_labels": [
+      "self",
+      "request"
+    ],
+    "update_instance_metadata_items": [
+      "self",
+      "request"
+    ],
+    "delete_instance": [
+      "self",
+      "request"
+    ],
+    "start_instance": [
+      "self",
+      "request"
+    ],
+    "stop_instance": [
+      "self",
+      "request"
+    ],
+    "reset_instance": [
+      "self",
+      "request"
+    ],
+    "report_instance_info": [
+      "self",
+      "request"
+    ],
+    "is_instance_upgradeable": [
+      "self",
+      "request"
+    ],
+    "get_instance_health": [
+      "self",
+      "request"
+    ],
+    "upgrade_instance": [
+      "self",
+      "request"
+    ],
+    "rollback_instance": [
+      "self",
+      "request"
+    ],
+    "diagnose_instance": [
+      "self",
+      "request"
+    ],
+    "upgrade_instance_internal": [
+      "self",
+      "request"
+    ],
+    "list_environments": [
+      "self",
+      "request"
+    ],
+    "get_environment": [
+      "self",
+      "request"
+    ],
+    "create_environment": [
+      "self",
+      "request"
+    ],
+    "delete_environment": [
+      "self",
+      "request"
+    ],
+    "list_schedules": [
+      "self",
+      "request"
+    ],
+    "get_schedule": [
+      "self",
+      "request"
+    ],
+    "delete_schedule": [
+      "self",
+      "request"
+    ],
+    "create_schedule": [
+      "self",
+      "request"
+    ],
+    "trigger_schedule": [
+      "self",
+      "request"
+    ],
+    "list_executions": [
+      "self",
+      "request"
+    ],
+    "get_execution": [
+      "self",
+      "request"
+    ],
+    "delete_execution": [
+      "self",
+      "request"
+    ],
+    "create_execution": [
+      "self",
+      "request"
+    ],
+    "list_operations": [
+      "self",
+      "request"
+    ],
+    "get_operation": [
+      "self",
+      "request"
+    ],
+    "delete_operation": [
+      "self",
+      "request"
+    ],
+    "cancel_operation": [
+      "self",
+      "request"
+    ],
+    "set_iam_policy": [
+      "self",
+      "request"
+    ],
+    "get_iam_policy": [
+      "self",
+      "request"
+    ],
+    "test_iam_permissions": [
+      "self",
+      "request"
+    ],
+    "get_location": [
+      "self",
+      "request"
+    ],
+    "list_locations": [
+      "self",
+      "request"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self",
+      "exc_type",
+      "exc",
+      "tb"
+    ]
+  },
+  "ListInstancesPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListInstancesAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListEnvironmentsPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListEnvironmentsAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListSchedulesPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListSchedulesAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListExecutionsPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "ListExecutionsAsyncPager": {
+    "__init__": [
+      "self",
+      "method",
+      "request",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "pages": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "NotebookServiceClientMeta": {
+    "_transport_registry": [],
+    "get_transport_class": [
+      "cls",
+      "label"
+    ]
+  },
+  "NotebookServiceClient": {
+    "_get_default_mtls_endpoint": [
+      "api_endpoint"
+    ],
+    "DEFAULT_ENDPOINT": [],
+    "DEFAULT_MTLS_ENDPOINT": [],
+    "_DEFAULT_ENDPOINT_TEMPLATE": [],
+    "_DEFAULT_UNIVERSE": [],
+    "_use_client_cert_effective": [],
+    "from_service_account_info": [
+      "cls",
+      "info"
+    ],
+    "from_service_account_file": [
+      "cls",
+      "filename"
+    ],
+    "from_service_account_json": [],
+    "transport": [
+      "self"
+    ],
+    "environment_path": [
+      "project",
+      "environment"
+    ],
+    "parse_environment_path": [
+      "path"
+    ],
+    "execution_path": [
+      "project",
+      "location",
+      "execution"
+    ],
+    "parse_execution_path": [
+      "path"
+    ],
+    "instance_path": [
+      "project",
+      "instance"
+    ],
+    "parse_instance_path": [
+      "path"
+    ],
+    "schedule_path": [
+      "project",
+      "location",
+      "schedule"
+    ],
+    "parse_schedule_path": [
+      "path"
+    ],
+    "tensorboard_path": [
+      "project",
+      "location",
+      "tensorboard"
+    ],
+    "parse_tensorboard_path": [
+      "path"
+    ],
+    "common_billing_account_path": [
+      "billing_account"
+    ],
+    "parse_common_billing_account_path": [
+      "path"
+    ],
+    "common_folder_path": [
+      "folder"
+    ],
+    "parse_common_folder_path": [
+      "path"
+    ],
+    "common_organization_path": [
+      "organization"
+    ],
+    "parse_common_organization_path": [
+      "path"
+    ],
+    "common_project_path": [
+      "project"
+    ],
+    "parse_common_project_path": [
+      "path"
+    ],
+    "common_location_path": [
+      "project",
+      "location"
+    ],
+    "parse_common_location_path": [
+      "path"
+    ],
+    "get_mtls_endpoint_and_cert_source": [
+      "cls",
+      "client_options"
+    ],
+    "_read_environment_variables": [],
+    "_get_client_cert_source": [
+      "provided_cert_source",
+      "use_cert_flag"
+    ],
+    "_get_api_endpoint": [
+      "api_override",
+      "client_cert_source",
+      "universe_domain",
+      "use_mtls_endpoint"
+    ],
+    "_get_universe_domain": [
+      "client_universe_domain",
+      "universe_domain_env"
+    ],
+    "_validate_universe_domain": [
+      "self"
+    ],
+    "_add_cred_info_for_auth_errors": [
+      "self",
+      "error"
+    ],
+    "api_endpoint": [
+      "self"
+    ],
+    "universe_domain": [
+      "self"
+    ],
+    "__init__": [
+      "self"
+    ],
+    "list_instances": [
+      "self",
+      "request"
+    ],
+    "get_instance": [
+      "self",
+      "request"
+    ],
+    "create_instance": [
+      "self",
+      "request"
+    ],
+    "register_instance": [
+      "self",
+      "request"
+    ],
+    "set_instance_accelerator": [
+      "self",
+      "request"
+    ],
+    "set_instance_machine_type": [
+      "self",
+      "request"
+    ],
+    "update_instance_config": [
+      "self",
+      "request"
+    ],
+    "update_shielded_instance_config": [
+      "self",
+      "request"
+    ],
+    "set_instance_labels": [
+      "self",
+      "request"
+    ],
+    "update_instance_metadata_items": [
+      "self",
+      "request"
+    ],
+    "delete_instance": [
+      "self",
+      "request"
+    ],
+    "start_instance": [
+      "self",
+      "request"
+    ],
+    "stop_instance": [
+      "self",
+      "request"
+    ],
+    "reset_instance": [
+      "self",
+      "request"
+    ],
+    "report_instance_info": [
+      "self",
+      "request"
+    ],
+    "is_instance_upgradeable": [
+      "self",
+      "request"
+    ],
+    "get_instance_health": [
+      "self",
+      "request"
+    ],
+    "upgrade_instance": [
+      "self",
+      "request"
+    ],
+    "rollback_instance": [
+      "self",
+      "request"
+    ],
+    "diagnose_instance": [
+      "self",
+      "request"
+    ],
+    "upgrade_instance_internal": [
+      "self",
+      "request"
+    ],
+    "list_environments": [
+      "self",
+      "request"
+    ],
+    "get_environment": [
+      "self",
+      "request"
+    ],
+    "create_environment": [
+      "self",
+      "request"
+    ],
+    "delete_environment": [
+      "self",
+      "request"
+    ],
+    "list_schedules": [
+      "self",
+      "request"
+    ],
+    "get_schedule": [
+      "self",
+      "request"
+    ],
+    "delete_schedule": [
+      "self",
+      "request"
+    ],
+    "create_schedule": [
+      "self",
+      "request"
+    ],
+    "trigger_schedule": [
+      "self",
+      "request"
+    ],
+    "list_executions": [
+      "self",
+      "request"
+    ],
+    "get_execution": [
+      "self",
+      "request"
+    ],
+    "delete_execution": [
+      "self",
+      "request"
+    ],
+    "create_execution": [
+      "self",
+      "request"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "type",
+      "value",
+      "traceback"
+    ],
+    "list_operations": [
+      "self",
+      "request"
+    ],
+    "get_operation": [
+      "self",
+      "request"
+    ],
+    "delete_operation": [
+      "self",
+      "request"
+    ],
+    "cancel_operation": [
+      "self",
+      "request"
+    ],
+    "set_iam_policy": [
+      "self",
+      "request"
+    ],
+    "get_iam_policy": [
+      "self",
+      "request"
+    ],
+    "test_iam_permissions": [
+      "self",
+      "request"
+    ],
+    "get_location": [
+      "self",
+      "request"
+    ],
+    "list_locations": [
+      "self",
+      "request"
+    ]
+  },
+  "NotebookServiceGrpcTransport": {
+    "__init__": [
+      "self"
+    ],
+    "create_channel": [
+      "cls",
+      "host",
+      "credentials",
+      "credentials_file",
+      "scopes",
+      "quota_project_id"
+    ],
+    "grpc_channel": [
+      "self"
+    ],
+    "operations_client": [
+      "self"
+    ],
+    "list_instances": [
+      "self"
+    ],
+    "get_instance": [
+      "self"
+    ],
+    "create_instance": [
+      "self"
+    ],
+    "register_instance": [
+      "self"
+    ],
+    "set_instance_accelerator": [
+      "self"
+    ],
+    "set_instance_machine_type": [
+      "self"
+    ],
+    "update_instance_config": [
+      "self"
+    ],
+    "update_shielded_instance_config": [
+      "self"
+    ],
+    "set_instance_labels": [
+      "self"
+    ],
+    "update_instance_metadata_items": [
+      "self"
+    ],
+    "delete_instance": [
+      "self"
+    ],
+    "start_instance": [
+      "self"
+    ],
+    "stop_instance": [
+      "self"
+    ],
+    "reset_instance": [
+      "self"
+    ],
+    "report_instance_info": [
+      "self"
+    ],
+    "is_instance_upgradeable": [
+      "self"
+    ],
+    "get_instance_health": [
+      "self"
+    ],
+    "upgrade_instance": [
+      "self"
+    ],
+    "rollback_instance": [
+      "self"
+    ],
+    "diagnose_instance": [
+      "self"
+    ],
+    "upgrade_instance_internal": [
+      "self"
+    ],
+    "list_environments": [
+      "self"
+    ],
+    "get_environment": [
+      "self"
+    ],
+    "create_environment": [
+      "self"
+    ],
+    "delete_environment": [
+      "self"
+    ],
+    "list_schedules": [
+      "self"
+    ],
+    "get_schedule": [
+      "self"
+    ],
+    "delete_schedule": [
+      "self"
+    ],
+    "create_schedule": [
+      "self"
+    ],
+    "trigger_schedule": [
+      "self"
+    ],
+    "list_executions": [
+      "self"
+    ],
+    "get_execution": [
+      "self"
+    ],
+    "delete_execution": [
+      "self"
+    ],
+    "create_execution": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "delete_operation": [
+      "self"
+    ],
+    "cancel_operation": [
+      "self"
+    ],
+    "get_operation": [
+      "self"
+    ],
+    "list_operations": [
+      "self"
+    ],
+    "list_locations": [
+      "self"
+    ],
+    "get_location": [
+      "self"
+    ],
+    "set_iam_policy": [
+      "self"
+    ],
+    "get_iam_policy": [
+      "self"
+    ],
+    "test_iam_permissions": [
+      "self"
+    ],
+    "kind": [
+      "self"
+    ]
+  },
+  "NotebookServiceGrpcAsyncIOTransport": {
+    "create_channel": [
+      "cls",
+      "host",
+      "credentials",
+      "credentials_file",
+      "scopes",
+      "quota_project_id"
+    ],
+    "__init__": [
+      "self"
+    ],
+    "grpc_channel": [
+      "self"
+    ],
+    "operations_client": [
+      "self"
+    ],
+    "list_instances": [
+      "self"
+    ],
+    "get_instance": [
+      "self"
+    ],
+    "create_instance": [
+      "self"
+    ],
+    "register_instance": [
+      "self"
+    ],
+    "set_instance_accelerator": [
+      "self"
+    ],
+    "set_instance_machine_type": [
+      "self"
+    ],
+    "update_instance_config": [
+      "self"
+    ],
+    "update_shielded_instance_config": [
+      "self"
+    ],
+    "set_instance_labels": [
+      "self"
+    ],
+    "update_instance_metadata_items": [
+      "self"
+    ],
+    "delete_instance": [
+      "self"
+    ],
+    "start_instance": [
+      "self"
+    ],
+    "stop_instance": [
+      "self"
+    ],
+    "reset_instance": [
+      "self"
+    ],
+    "report_instance_info": [
+      "self"
+    ],
+    "is_instance_upgradeable": [
+      "self"
+    ],
+    "get_instance_health": [
+      "self"
+    ],
+    "upgrade_instance": [
+      "self"
+    ],
+    "rollback_instance": [
+      "self"
+    ],
+    "diagnose_instance": [
+      "self"
+    ],
+    "upgrade_instance_internal": [
+      "self"
+    ],
+    "list_environments": [
+      "self"
+    ],
+    "get_environment": [
+      "self"
+    ],
+    "create_environment": [
+      "self"
+    ],
+    "delete_environment": [
+      "self"
+    ],
+    "list_schedules": [
+      "self"
+    ],
+    "get_schedule": [
+      "self"
+    ],
+    "delete_schedule": [
+      "self"
+    ],
+    "create_schedule": [
+      "self"
+    ],
+    "trigger_schedule": [
+      "self"
+    ],
+    "list_executions": [
+      "self"
+    ],
+    "get_execution": [
+      "self"
+    ],
+    "delete_execution": [
+      "self"
+    ],
+    "create_execution": [
+      "self"
+    ],
+    "_prep_wrapped_messages": [
+      "self",
+      "client_info"
+    ],
+    "_wrap_method": [
+      "self",
+      "func"
+    ],
+    "close": [
+      "self"
+    ],
+    "kind": [
+      "self"
+    ],
+    "delete_operation": [
+      "self"
+    ],
+    "cancel_operation": [
+      "self"
+    ],
+    "get_operation": [
+      "self"
+    ],
+    "list_operations": [
+      "self"
+    ],
+    "list_locations": [
+      "self"
+    ],
+    "get_location": [
+      "self"
+    ],
+    "set_iam_policy": [
+      "self"
+    ],
+    "get_iam_policy": [
+      "self"
+    ],
+    "test_iam_permissions": [
+      "self"
+    ]
+  },
+  "NotebookServiceTransport": {
+    "AUTH_SCOPES": [],
+    "__init__": [
+      "self"
+    ],
+    "host": [
+      "self"
+    ],
+    "_prep_wrapped_messages": [
+      "self",
+      "client_info"
+    ],
+    "close": [
+      "self"
+    ],
+    "operations_client": [
+      "self"
+    ],
+    "list_instances": [
+      "self"
+    ],
+    "get_instance": [
+      "self"
+    ],
+    "create_instance": [
+      "self"
+    ],
+    "register_instance": [
+      "self"
+    ],
+    "set_instance_accelerator": [
+      "self"
+    ],
+    "set_instance_machine_type": [
+      "self"
+    ],
+    "update_instance_config": [
+      "self"
+    ],
+    "update_shielded_instance_config": [
+      "self"
+    ],
+    "set_instance_labels": [
+      "self"
+    ],
+    "update_instance_metadata_items": [
+      "self"
+    ],
+    "delete_instance": [
+      "self"
+    ],
+    "start_instance": [
+      "self"
+    ],
+    "stop_instance": [
+      "self"
+    ],
+    "reset_instance": [
+      "self"
+    ],
+    "report_instance_info": [
+      "self"
+    ],
+    "is_instance_upgradeable": [
+      "self"
+    ],
+    "get_instance_health": [
+      "self"
+    ],
+    "upgrade_instance": [
+      "self"
+    ],
+    "rollback_instance": [
+      "self"
+    ],
+    "diagnose_instance": [
+      "self"
+    ],
+    "upgrade_instance_internal": [
+      "self"
+    ],
+    "list_environments": [
+      "self"
+    ],
+    "get_environment": [
+      "self"
+    ],
+    "create_environment": [
+      "self"
+    ],
+    "delete_environment": [
+      "self"
+    ],
+    "list_schedules": [
+      "self"
+    ],
+    "get_schedule": [
+      "self"
+    ],
+    "delete_schedule": [
+      "self"
+    ],
+    "create_schedule": [
+      "self"
+    ],
+    "trigger_schedule": [
+      "self"
+    ],
+    "list_executions": [
+      "self"
+    ],
+    "get_execution": [
+      "self"
+    ],
+    "delete_execution": [
+      "self"
+    ],
+    "create_execution": [
+      "self"
+    ],
+    "list_operations": [
+      "self"
+    ],
+    "get_operation": [
+      "self"
+    ],
+    "cancel_operation": [
+      "self"
+    ],
+    "delete_operation": [
+      "self"
+    ],
+    "set_iam_policy": [
+      "self"
+    ],
+    "get_iam_policy": [
+      "self"
+    ],
+    "test_iam_permissions": [
+      "self"
+    ],
+    "get_location": [
+      "self"
+    ],
+    "list_locations": [
+      "self"
+    ],
+    "kind": [
+      "self"
+    ]
+  },
+  "NotebookServiceRestInterceptor": {
+    "pre_create_environment": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_create_environment": [
+      "self",
+      "response"
+    ],
+    "post_create_environment_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_create_instance": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_create_instance": [
+      "self",
+      "response"
+    ],
+    "post_create_instance_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_delete_environment": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_delete_environment": [
+      "self",
+      "response"
+    ],
+    "post_delete_environment_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_delete_instance": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_delete_instance": [
+      "self",
+      "response"
+    ],
+    "post_delete_instance_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_get_environment": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_get_environment": [
+      "self",
+      "response"
+    ],
+    "post_get_environment_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_get_instance": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_get_instance": [
+      "self",
+      "response"
+    ],
+    "post_get_instance_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_is_instance_upgradeable": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_is_instance_upgradeable": [
+      "self",
+      "response"
+    ],
+    "post_is_instance_upgradeable_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_list_environments": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_list_environments": [
+      "self",
+      "response"
+    ],
+    "post_list_environments_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_list_instances": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_list_instances": [
+      "self",
+      "response"
+    ],
+    "post_list_instances_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_register_instance": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_register_instance": [
+      "self",
+      "response"
+    ],
+    "post_register_instance_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_report_instance_info": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_report_instance_info": [
+      "self",
+      "response"
+    ],
+    "post_report_instance_info_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_reset_instance": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_reset_instance": [
+      "self",
+      "response"
+    ],
+    "post_reset_instance_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_set_instance_accelerator": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_set_instance_accelerator": [
+      "self",
+      "response"
+    ],
+    "post_set_instance_accelerator_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_set_instance_labels": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_set_instance_labels": [
+      "self",
+      "response"
+    ],
+    "post_set_instance_labels_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_set_instance_machine_type": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_set_instance_machine_type": [
+      "self",
+      "response"
+    ],
+    "post_set_instance_machine_type_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_start_instance": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_start_instance": [
+      "self",
+      "response"
+    ],
+    "post_start_instance_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_stop_instance": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_stop_instance": [
+      "self",
+      "response"
+    ],
+    "post_stop_instance_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_upgrade_instance": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_upgrade_instance": [
+      "self",
+      "response"
+    ],
+    "post_upgrade_instance_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_upgrade_instance_internal": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_upgrade_instance_internal": [
+      "self",
+      "response"
+    ],
+    "post_upgrade_instance_internal_with_metadata": [
+      "self",
+      "response",
+      "metadata"
+    ],
+    "pre_get_location": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_get_location": [
+      "self",
+      "response"
+    ],
+    "pre_list_locations": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_list_locations": [
+      "self",
+      "response"
+    ],
+    "pre_get_iam_policy": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_get_iam_policy": [
+      "self",
+      "response"
+    ],
+    "pre_set_iam_policy": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_set_iam_policy": [
+      "self",
+      "response"
+    ],
+    "pre_test_iam_permissions": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_test_iam_permissions": [
+      "self",
+      "response"
+    ],
+    "pre_cancel_operation": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_cancel_operation": [
+      "self",
+      "response"
+    ],
+    "pre_delete_operation": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_delete_operation": [
+      "self",
+      "response"
+    ],
+    "pre_get_operation": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_get_operation": [
+      "self",
+      "response"
+    ],
+    "pre_list_operations": [
+      "self",
+      "request",
+      "metadata"
+    ],
+    "post_list_operations": [
+      "self",
+      "response"
+    ]
+  },
+  "NotebookServiceRestStub": {},
+  "NotebookServiceRestTransport": {
+    "__init__": [
+      "self"
+    ],
+    "operations_client": [
+      "self"
+    ],
+    "create_environment": [
+      "self"
+    ],
+    "create_instance": [
+      "self"
+    ],
+    "delete_environment": [
+      "self"
+    ],
+    "delete_instance": [
+      "self"
+    ],
+    "get_environment": [
+      "self"
+    ],
+    "get_instance": [
+      "self"
+    ],
+    "is_instance_upgradeable": [
+      "self"
+    ],
+    "list_environments": [
+      "self"
+    ],
+    "list_instances": [
+      "self"
+    ],
+    "register_instance": [
+      "self"
+    ],
+    "report_instance_info": [
+      "self"
+    ],
+    "reset_instance": [
+      "self"
+    ],
+    "set_instance_accelerator": [
+      "self"
+    ],
+    "set_instance_labels": [
+      "self"
+    ],
+    "set_instance_machine_type": [
+      "self"
+    ],
+    "start_instance": [
+      "self"
+    ],
+    "stop_instance": [
+      "self"
+    ],
+    "upgrade_instance": [
+      "self"
+    ],
+    "upgrade_instance_internal": [
+      "self"
+    ],
+    "get_location": [
+      "self"
+    ],
+    "list_locations": [
+      "self"
+    ],
+    "get_iam_policy": [
+      "self"
+    ],
+    "set_iam_policy": [
+      "self"
+    ],
+    "test_iam_permissions": [
+      "self"
+    ],
+    "cancel_operation": [
+      "self"
+    ],
+    "delete_operation": [
+      "self"
+    ],
+    "get_operation": [
+      "self"
+    ],
+    "list_operations": [
+      "self"
+    ],
+    "kind": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "_BaseNotebookServiceRestTransport": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "DiskEncryption": {
+    "DISK_ENCRYPTION_UNSPECIFIED": [],
+    "GMEK": [],
+    "CMEK": []
+  },
+  "DiskType": {
+    "DISK_TYPE_UNSPECIFIED": [],
+    "PD_STANDARD": [],
+    "PD_SSD": [],
+    "PD_BALANCED": [],
+    "PD_EXTREME": []
+  },
+  "NetworkInterface": {},
+  "AcceleratorConfig": {},
+  "ShieldedInstanceConfig": {},
+  "GPUDriverConfig": {},
+  "DataDisk": {},
+  "BootDisk": {},
+  "ServiceAccount": {},
+  "GceSetup": {},
+  "State": {
+    "STATE_UNSPECIFIED": [],
+    "STARTING": [],
+    "PROVISIONING": [],
+    "ACTIVE": [],
+    "STOPPING": [],
+    "STOPPED": [],
+    "DELETED": [],
+    "UPGRADING": [],
+    "INITIALIZING": [],
+    "SUSPENDING": [],
+    "SUSPENDED": []
+  },
+  "HealthState": {
+    "HEALTH_STATE_UNSPECIFIED": [],
+    "HEALTHY": [],
+    "UNHEALTHY": [],
+    "AGENT_NOT_INSTALLED": [],
+    "AGENT_NOT_RUNNING": []
+  },
+  "UpgradeHistoryEntry": {},
+  "UpdateInstanceRequest": {},
+  "CheckInstanceUpgradabilityRequest": {},
+  "CheckInstanceUpgradabilityResponse": {}
+}
