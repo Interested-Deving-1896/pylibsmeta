@@ -1,0 +1,916 @@
+{
+  "pytest_addoption": [
+    "parser"
+  ],
+  "pytest_runtest_setup": [
+    "item"
+  ],
+  "datapath": [
+    "request"
+  ],
+  "g": [],
+  "repo": [],
+  "start": [],
+  "pulls": [],
+  "users": [],
+  "contrib": [],
+  "SOURCE_DIR": [],
+  "extensions": [],
+  "project": [],
+  "author": [],
+  "copyright": [],
+  "release": [],
+  "version": [],
+  "root_doc": [],
+  "master_doc": [],
+  "source_suffix": [],
+  "language": [],
+  "templates_path": [],
+  "exclude_patterns": [],
+  "pygments_style": [],
+  "todo_include_todos": [],
+  "intersphinx_mapping": [],
+  "extlinks": [],
+  "html_theme": [],
+  "html_theme_options": [],
+  "html_static_path": [],
+  "htmlhelp_basename": [],
+  "latex_elements": [],
+  "latex_documents": [],
+  "man_pages": [],
+  "texinfo_documents": [],
+  "test_access_key_delegates_to_api_key": [
+    "monkeypatch"
+  ],
+  "test_import_pandas_datareader_smoke": [],
+  "BankOfCanadaReader": {
+    "_URL": [],
+    "url": [
+      "self"
+    ],
+    "params": [
+      "self"
+    ],
+    "_sanitize_response": [
+      "response"
+    ]
+  },
+  "__all__": [],
+  "get_data_fred": [],
+  "get_data_famafrench": [],
+  "get_data_econdb": [],
+  "DataReader": [
+    "name",
+    "data_source",
+    "start",
+    "end",
+    "retry_count",
+    "pause",
+    "session",
+    "api_key"
+  ],
+  "Options": [
+    "symbol",
+    "data_source",
+    "session"
+  ],
+  "PKG": [],
+  "test": [
+    "extra_args"
+  ],
+  "deprecate_kwarg": [
+    "old_arg_name",
+    "new_arg_name"
+  ],
+  "UnstableAPIWarning": {},
+  "DEP_ERROR_MSG": [],
+  "ImmediateDeprecationError": {},
+  "_URL": [],
+  "_URL_PREFIX": [],
+  "_URL_SUFFIX": [],
+  "get_available_datasets": [],
+  "_parse_date_famafrench": [
+    "x"
+  ],
+  "FamaFrenchReader": {
+    "url": [
+      "self"
+    ],
+    "_read_zipfile": [
+      "self",
+      "url"
+    ],
+    "read": [
+      "self"
+    ],
+    "_read_one_data": [
+      "self",
+      "url",
+      "params"
+    ],
+    "get_available_datasets": [
+      "self"
+    ]
+  },
+  "EcondbReader": {
+    "_URL": [],
+    "_format": [],
+    "_show": [],
+    "__init__": [
+      "self",
+      "symbols",
+      "start",
+      "end",
+      "retry_count",
+      "pause",
+      "session",
+      "freq",
+      "api_key"
+    ],
+    "url": [
+      "self"
+    ],
+    "read": [
+      "self"
+    ]
+  },
+  "OECDReader": {
+    "_format": [],
+    "url": [
+      "self"
+    ],
+    "_read_lines": [
+      "self",
+      "out"
+    ]
+  },
+  "TYPE_CHECKING": [],
+  "__version__": [],
+  "__version_tuple__": [],
+  "version_tuple": [],
+  "SymbolWarning": {},
+  "RemoteDataError": {},
+  "_sanitize_dates": [
+    "start",
+    "end"
+  ],
+  "_init_session": [
+    "session"
+  ],
+  "FredReader": {
+    "url": [
+      "self"
+    ],
+    "read": [
+      "self"
+    ],
+    "_read": [
+      "self"
+    ]
+  },
+  "EurostatReader": {
+    "_URL": [],
+    "_STATISTICS_PREFERRED": [],
+    "url": [
+      "self"
+    ],
+    "dsd_url": [
+      "self"
+    ],
+    "statistics_url": [
+      "self"
+    ],
+    "_should_parse_datetime_index": [
+      "index"
+    ],
+    "_read_one_data": [
+      "self",
+      "url",
+      "params"
+    ],
+    "_read_statistics_response": [
+      "self"
+    ],
+    "_format_columns": [
+      "data"
+    ],
+    "_read_statistics_payload": [
+      "payload"
+    ]
+  },
+  "skip_on_exception": [
+    "exp"
+  ],
+  "_BaseReader": {
+    "_chunk_size": [],
+    "_format": [],
+    "__init__": [
+      "self",
+      "symbols",
+      "start",
+      "end",
+      "retry_count",
+      "pause",
+      "timeout",
+      "session",
+      "freq"
+    ],
+    "close": [
+      "self"
+    ],
+    "default_start_date": [
+      "self"
+    ],
+    "url": [
+      "self"
+    ],
+    "params": [
+      "self"
+    ],
+    "read": [
+      "self"
+    ],
+    "_read_one_data": [
+      "self",
+      "url",
+      "params"
+    ],
+    "_read_url_as_StringIO": [
+      "self",
+      "url",
+      "params"
+    ],
+    "_sanitize_response": [
+      "response"
+    ],
+    "_get_response": [
+      "self",
+      "url",
+      "params",
+      "headers"
+    ],
+    "_get_crumb": [
+      "self"
+    ],
+    "_output_error": [
+      "self",
+      "out"
+    ],
+    "_read_lines": [
+      "self",
+      "out"
+    ]
+  },
+  "_DailyBaseReader": {
+    "__init__": [
+      "self",
+      "symbols",
+      "start",
+      "end",
+      "retry_count",
+      "pause",
+      "session",
+      "chunksize"
+    ],
+    "_get_params": [
+      "self"
+    ],
+    "read": [
+      "self"
+    ],
+    "_dl_mult_symbols": [
+      "self",
+      "symbols"
+    ]
+  },
+  "_in_chunks": [
+    "seq",
+    "size"
+  ],
+  "_OptionBaseReader": {
+    "__init__": [
+      "self",
+      "symbol",
+      "session"
+    ],
+    "get_options_data": [
+      "self",
+      "month",
+      "year",
+      "expiry"
+    ],
+    "get_call_data": [
+      "self",
+      "month",
+      "year",
+      "expiry"
+    ],
+    "get_put_data": [
+      "self",
+      "month",
+      "year",
+      "expiry"
+    ],
+    "get_near_stock_price": [
+      "self",
+      "above_below",
+      "call",
+      "put",
+      "month",
+      "year",
+      "expiry"
+    ],
+    "get_forward_data": [
+      "self",
+      "months",
+      "call",
+      "put",
+      "near",
+      "above_below"
+    ],
+    "get_all_data": [
+      "self",
+      "call",
+      "put"
+    ]
+  },
+  "WB_API_URL": [],
+  "country_codes": [],
+  "WorldBankReader": {
+    "_format": [],
+    "__init__": [
+      "self",
+      "symbols",
+      "countries",
+      "start",
+      "end",
+      "freq",
+      "retry_count",
+      "pause",
+      "session",
+      "errors"
+    ],
+    "url": [
+      "self"
+    ],
+    "params": [
+      "self"
+    ],
+    "read": [
+      "self"
+    ],
+    "_read": [
+      "self"
+    ],
+    "_read_lines": [
+      "self",
+      "out"
+    ],
+    "get_countries": [
+      "self"
+    ],
+    "get_indicators": [
+      "self"
+    ],
+    "search": [
+      "self",
+      "string",
+      "field",
+      "case"
+    ]
+  },
+  "download": [
+    "country",
+    "indicator",
+    "start",
+    "end",
+    "freq",
+    "errors"
+  ],
+  "get_countries": [],
+  "get_indicators": [],
+  "_cached_series": [],
+  "search": [
+    "string",
+    "field",
+    "case"
+  ],
+  "_get_client": [
+    "provider"
+  ],
+  "read_macro": [
+    "provider",
+    "dataset"
+  ],
+  "search_macro_datasets": [
+    "provider",
+    "query"
+  ],
+  "describe_macro_dataset": [
+    "provider",
+    "dataset"
+  ],
+  "_MESSAGE": [],
+  "_STRUCTURE": [],
+  "_COMMON": [],
+  "_XML": [],
+  "_preferred_text": [
+    "parent",
+    "tag"
+  ],
+  "OECDClient": {
+    "provider": [],
+    "dataflow_url": [],
+    "data_url_template": [],
+    "_parse_dataflows_xml": [
+      "self",
+      "xml_bytes"
+    ],
+    "_extract_dimensions": [
+      "payload"
+    ],
+    "_build_result_from_payload": [
+      "self",
+      "dataset_id",
+      "payload",
+      "query"
+    ],
+    "_resolve_dataset": [
+      "self",
+      "dataset"
+    ],
+    "_dataset_url": [
+      "self",
+      "dataset_id",
+      "key",
+      "start",
+      "end"
+    ],
+    "search_datasets": [
+      "self",
+      "query"
+    ],
+    "describe_dataset": [
+      "self",
+      "dataset"
+    ],
+    "read": [
+      "self",
+      "dataset",
+      "start",
+      "end",
+      "filters"
+    ]
+  },
+  "MacroResult": {},
+  "EurostatClient": {
+    "provider": [],
+    "base_url": [],
+    "_parse_dataflows_xml": [
+      "self",
+      "xml_bytes"
+    ],
+    "_parse_dsd_xml": [
+      "self",
+      "xml_bytes"
+    ],
+    "_parse_dsd_metadata": [
+      "self",
+      "xml_bytes"
+    ],
+    "_format_columns": [
+      "data"
+    ],
+    "_build_result_from_payload": [
+      "self",
+      "dataset_id",
+      "data_xml",
+      "dsd_xml",
+      "query"
+    ],
+    "_dataflow_url": [
+      "self",
+      "dataset"
+    ],
+    "_dsd_url": [
+      "self",
+      "dataset"
+    ],
+    "_data_url": [
+      "self",
+      "dataset",
+      "start",
+      "end"
+    ],
+    "search_datasets": [
+      "self",
+      "query"
+    ],
+    "describe_dataset": [
+      "self",
+      "dataset"
+    ],
+    "read": [
+      "self",
+      "dataset",
+      "start",
+      "end",
+      "filters"
+    ]
+  },
+  "MacroDataError": {},
+  "MacroProviderError": {},
+  "MacroSchemaError": {},
+  "MacroNotFoundError": {},
+  "MacroClientBase": {
+    "provider": [],
+    "__init__": [
+      "self",
+      "session"
+    ],
+    "_normalize_date": [
+      "value"
+    ],
+    "_get": [
+      "self",
+      "url"
+    ],
+    "search_datasets": [
+      "self",
+      "query"
+    ],
+    "describe_dataset": [
+      "self",
+      "dataset"
+    ],
+    "read": [
+      "self",
+      "dataset"
+    ]
+  },
+  "get_filepath_or_buffer": [
+    "filepath_or_buffer",
+    "encoding",
+    "compression"
+  ],
+  "PYTHON_LT_3_10": [],
+  "read_jsdmx": [
+    "path_or_buf"
+  ],
+  "_normalize_v2_dimensions": [
+    "dimensions"
+  ],
+  "_get_indexer": [
+    "index"
+  ],
+  "_fix_quarter_values": [
+    "value"
+  ],
+  "_parse_values": [
+    "dataset",
+    "index",
+    "columns"
+  ],
+  "_parse_dimensions": [
+    "dimensions"
+  ],
+  "_GENERIC": [],
+  "_DATASET": [],
+  "_SERIES": [],
+  "_SERIES_KEY": [],
+  "_OBSERVATION": [],
+  "_VALUE": [],
+  "_OBSDIMENSION": [],
+  "_OBSVALUE": [],
+  "_CODE": [],
+  "_TIMEDIMENSION": [],
+  "read_sdmx": [
+    "path_or_buf",
+    "dtype",
+    "dsd"
+  ],
+  "_construct_series": [
+    "values",
+    "name",
+    "dsd"
+  ],
+  "_construct_index": [
+    "keys",
+    "dsd"
+  ],
+  "_parse_observations": [
+    "observations"
+  ],
+  "_parse_series_key": [
+    "series"
+  ],
+  "_get_child": [
+    "element",
+    "key"
+  ],
+  "_NAME_EN": [],
+  "_get_english_name": [
+    "element"
+  ],
+  "SDMXCode": [],
+  "_read_sdmx_dsd": [
+    "path_or_buf"
+  ],
+  "_read_zipped_sdmx": [
+    "path_or_buf"
+  ],
+  "_read_content": [
+    "path_or_buf"
+  ],
+  "TestUtils": {
+    "test_sanitize_dates": [
+      "self",
+      "input_date"
+    ],
+    "test_sanitize_dates_int": [
+      "self"
+    ],
+    "test_sanitize_invalid_dates": [
+      "self"
+    ],
+    "test_sanitize_dates_defaults": [
+      "self"
+    ]
+  },
+  "TestDeprecateKwarg": {
+    "test_old_kwarg_warns_and_maps_to_new": [
+      "self"
+    ],
+    "test_new_kwarg_passes_without_warning": [
+      "self"
+    ],
+    "test_both_old_and_new_raises_type_error": [
+      "self"
+    ],
+    "test_mapping_dict_translates_value": [
+      "self"
+    ],
+    "test_mapping_callable_translates_value": [
+      "self"
+    ],
+    "test_new_arg_name_none_warns_and_keeps_old": [
+      "self"
+    ],
+    "test_invalid_mapping_type_raises": [
+      "self"
+    ],
+    "test_import_does_not_use_private_pandas_api": [
+      "self"
+    ]
+  },
+  "pytestmark": [],
+  "TestDataReader": {
+    "test_read_fred": [
+      "self"
+    ],
+    "test_not_implemented": [
+      "self"
+    ],
+    "test_non_macro_routes_not_implemented": [
+      "self",
+      "source"
+    ],
+    "test_top_level_exports_focus_on_macro_and_factor_sources": [
+      "self"
+    ]
+  },
+  "test_api_urls": [],
+  "test_parse_statistics_payload": [],
+  "TestEurostat": {
+    "test_get_ert_h_eur_a": [
+      "self"
+    ],
+    "test_get_sts_cobp_a": [
+      "self"
+    ],
+    "test_get_nrg_pc_202": [
+      "self"
+    ],
+    "test_get_prc_hicp_manr_large_query": [
+      "self"
+    ]
+  },
+  "TestFred": {
+    "test_fred": [
+      "self"
+    ],
+    "test_fred_nan": [
+      "self"
+    ],
+    "test_fred_parts": [
+      "self"
+    ],
+    "test_fred_part2": [
+      "self"
+    ],
+    "test_invalid_series": [
+      "self"
+    ],
+    "test_fred_multi": [
+      "self"
+    ],
+    "test_fred_multi_bad_series": [
+      "self"
+    ]
+  },
+  "TestOECD": {
+    "test_get_un_den": [
+      "self"
+    ],
+    "test_get_tourism": [
+      "self"
+    ],
+    "test_oecd_invalid_symbol": [
+      "self"
+    ]
+  },
+  "TestBaseReader": {
+    "test_requests_not_monkey_patched": [
+      "self"
+    ],
+    "test_valid_retry_count": [
+      "self"
+    ],
+    "test_invalid_url": [
+      "self"
+    ],
+    "test_invalid_format": [
+      "self"
+    ],
+    "test_default_start_date": [
+      "self"
+    ],
+    "test_get_response_retries_request_exception": [
+      "self",
+      "monkeypatch"
+    ]
+  },
+  "TestDailyBaseReader": {
+    "test_get_params": [
+      "self"
+    ]
+  },
+  "TestFamaFrench": {
+    "test_get_data_sample": [
+      "self"
+    ],
+    "test_get_available_datasets": [
+      "self"
+    ],
+    "test_index": [
+      "self"
+    ],
+    "test_f_f_research": [
+      "self"
+    ],
+    "test_me_breakpoints": [
+      "self"
+    ],
+    "test_prior_2_12_breakpoints": [
+      "self"
+    ],
+    "test_any_datasets": [
+      "self"
+    ]
+  },
+  "TestBankOfCanada": {
+    "get_symbol": [
+      "currency_code",
+      "inverted"
+    ],
+    "check_bankofcanada_count": [
+      "self",
+      "code"
+    ],
+    "check_bankofcanada_valid": [
+      "self",
+      "code"
+    ],
+    "check_bankofcanada_inverted": [
+      "self",
+      "code"
+    ],
+    "test_bankofcanada_usd_count": [
+      "self"
+    ],
+    "test_bankofcanada_eur_count": [
+      "self"
+    ],
+    "test_bankofcanada_usd_valid": [
+      "self"
+    ],
+    "test_bankofcanada_eur_valid": [
+      "self"
+    ],
+    "test_bankofcanada_usd_inverted": [
+      "self"
+    ],
+    "test_bankofcanada_eur_inverted": [
+      "self"
+    ],
+    "test_bankofcanada_bad_range": [
+      "self"
+    ],
+    "test_bankofcanada_bad_url": [
+      "self"
+    ]
+  },
+  "TEST_API_KEY": [],
+  "assert_equal": [
+    "x",
+    "y"
+  ],
+  "TestEcondb": {
+    "test_override_start_end": [
+      "self"
+    ],
+    "test_infer_start_end_from_symbols": [
+      "self"
+    ],
+    "tickers": [],
+    "test_fetch_single_ticker_series": [
+      "self",
+      "ticker"
+    ],
+    "test_single_nonticker_series": [
+      "self"
+    ],
+    "test_filtered_dataset": [
+      "self"
+    ],
+    "test_australia_gdp": [
+      "self"
+    ]
+  },
+  "PD_LT_3": [],
+  "TestWB": {
+    "test_wdi_search": [
+      "self"
+    ],
+    "test_wdi_download": [
+      "self"
+    ],
+    "test_wdi_download_str": [
+      "self"
+    ],
+    "test_wdi_download_error_handling": [
+      "self"
+    ],
+    "test_wdi_download_w_retired_indicator": [
+      "self"
+    ],
+    "test_wdi_download_w_crash_inducing_countrycode": [
+      "self"
+    ],
+    "test_wdi_get_countries": [
+      "self"
+    ],
+    "test_wdi_get_indicators": [
+      "self"
+    ],
+    "test_wdi_download_monthly": [
+      "self"
+    ],
+    "test_wdi_download_quarterly": [
+      "self"
+    ]
+  },
+  "test_macro_result_fields": [],
+  "test_read_macro_rejects_unknown_provider": [],
+  "test_read_macro_routes_to_provider": [
+    "monkeypatch"
+  ],
+  "test_search_macro_datasets_routes_to_provider": [
+    "monkeypatch"
+  ],
+  "test_describe_macro_dataset_routes_to_provider": [
+    "monkeypatch"
+  ],
+  "_fixture": [],
+  "EUROSTAT_DATAFLOW_XML": [],
+  "EUROSTAT_DSD_XML": [],
+  "EUROSTAT_DATA_XML": [],
+  "test_parse_dataflows_xml": [],
+  "test_parse_dsd_xml": [],
+  "test_build_result_from_payload": [],
+  "OECD_DATAFLOW_XML": [],
+  "OECD_PAYLOAD": [],
+  "dirpath": [
+    "datapath"
+  ],
+  "test_tourism": [
+    "dirpath"
+  ],
+  "test_land_use": [
+    "dirpath"
+  ],
+  "test_quartervalue": [
+    "dirpath"
+  ],
+  "test_read_jsdmx_v2": []
+}
