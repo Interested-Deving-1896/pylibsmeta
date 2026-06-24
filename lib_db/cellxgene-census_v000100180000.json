@@ -1,0 +1,360 @@
+{
+  "_get_experiment_name": [
+    "organism"
+  ],
+  "_get_experiment": [
+    "census",
+    "organism",
+    "modality"
+  ],
+  "__all__": [],
+  "CENSUS_EMBEDDINGS_LOCATION_BASE_URI": [],
+  "get_anndata": [
+    "census",
+    "organism",
+    "measurement_name",
+    "X_name",
+    "X_layers",
+    "obsm_layers",
+    "obsp_layers",
+    "varm_layers",
+    "varp_layers",
+    "obs_value_filter",
+    "obs_coords",
+    "var_value_filter",
+    "var_coords",
+    "column_names",
+    "obs_embeddings",
+    "var_embeddings",
+    "obs_column_names",
+    "var_column_names",
+    "modality"
+  ],
+  "_get_axis_metadata": [
+    "census",
+    "axis",
+    "organism",
+    "modality"
+  ],
+  "get_obs": [
+    "census",
+    "organism"
+  ],
+  "get_var": [
+    "census",
+    "organism"
+  ],
+  "DEFAULT_CENSUS_VERSION": [],
+  "DEFAULT_S3FS_KWARGS": [],
+  "api_logger": [],
+  "_assert_mirror_supported": [
+    "mirror"
+  ],
+  "_resolve_census_locator": [
+    "locator",
+    "mirror"
+  ],
+  "_open_soma": [
+    "locator",
+    "context"
+  ],
+  "get_default_soma_context": [
+    "tiledb_config"
+  ],
+  "open_soma": [],
+  "get_source_h5ad_uri": [
+    "dataset_id"
+  ],
+  "download_source_h5ad": [
+    "dataset_id",
+    "to_path"
+  ],
+  "USER_AGENT_ENVVAR": [],
+  "_uri_join": [
+    "base",
+    "url"
+  ],
+  "_extract_census_version": [
+    "census"
+  ],
+  "_user_agent": [],
+  "get_presence_matrix": [
+    "census",
+    "organism",
+    "measurement_name",
+    "modality"
+  ],
+  "CensusVersionName": [],
+  "CensusLocator": {},
+  "CensusVersionRetraction": {},
+  "ReleaseFlag": [],
+  "ReleaseFlags": [],
+  "CensusVersionDescription": {},
+  "CensusDirectory": [],
+  "Provider": [],
+  "CensusMirrorName": [],
+  "CensusMirror": {},
+  "CensusMirrors": [],
+  "ResolvedCensusLocator": {},
+  "CELL_CENSUS_RELEASE_DIRECTORY_URL": [],
+  "CELL_CENSUS_MIRRORS_DIRECTORY_URL": [],
+  "get_census_version_description": [
+    "census_version"
+  ],
+  "get_census_version_directory": [],
+  "get_census_mirror_directory": [],
+  "_get_census_mirrors": [],
+  "NeighborObs": {},
+  "find_nearest_obs": [
+    "embedding_name",
+    "organism",
+    "census_version",
+    "query"
+  ],
+  "_resolve_embedding_index": [
+    "embedding_metadata",
+    "mirror"
+  ],
+  "predict_obs_metadata": [
+    "organism",
+    "census_version",
+    "neighbors",
+    "column_names",
+    "experiment"
+  ],
+  "CELL_CENSUS_EMBEDDINGS_MANIFEST_URL": [],
+  "get_embedding_metadata": [
+    "embedding_uri",
+    "context"
+  ],
+  "_get_embedding": [
+    "census",
+    "census_directory",
+    "census_version",
+    "embedding_uri",
+    "obs_soma_joinids",
+    "context"
+  ],
+  "get_embedding": [
+    "census_version",
+    "embedding_uri",
+    "obs_soma_joinids",
+    "context"
+  ],
+  "get_embedding_metadata_by_name": [
+    "embedding_name",
+    "organism",
+    "census_version",
+    "embedding_type"
+  ],
+  "get_all_available_embeddings": [
+    "census_version"
+  ],
+  "get_all_census_versions_with_embedding": [
+    "embedding_name",
+    "organism",
+    "embedding_type"
+  ],
+  "util_logger": [],
+  "_T": [],
+  "_EagerIterator": {
+    "__init__": [
+      "self",
+      "iterator",
+      "pool"
+    ],
+    "_begin_next": [
+      "self"
+    ],
+    "__next__": [
+      "self"
+    ],
+    "_cleanup": [
+      "self"
+    ],
+    "__del__": [
+      "self"
+    ]
+  },
+  "_EagerBufferedIterator": {
+    "__init__": [
+      "self",
+      "iterator",
+      "max_pending",
+      "pool"
+    ],
+    "__next__": [
+      "self"
+    ],
+    "_begin_next": [
+      "self"
+    ],
+    "_cleanup": [
+      "self"
+    ],
+    "__del__": [
+      "self"
+    ]
+  },
+  "mean_variance": [
+    "query",
+    "layer",
+    "axis",
+    "calculate_mean",
+    "calculate_variance",
+    "ddof",
+    "nnz_only"
+  ],
+  "MeanVarianceAccumulator": {
+    "__init__": [
+      "self",
+      "n_batches",
+      "n_samples",
+      "n_variables",
+      "ddof",
+      "nnz_only"
+    ],
+    "update": [
+      "self",
+      "var_vec",
+      "val_vec",
+      "batch_vec"
+    ],
+    "finalize": [
+      "self"
+    ]
+  },
+  "MeanAccumulator": {
+    "__init__": [
+      "self",
+      "n_samples",
+      "n_variables",
+      "nnz_only"
+    ],
+    "update": [
+      "self",
+      "var_vec",
+      "val_vec"
+    ],
+    "finalize": [
+      "self"
+    ]
+  },
+  "CountsAccumulator": {
+    "__init__": [
+      "self",
+      "n_batches",
+      "n_variables",
+      "clip_val"
+    ],
+    "update": [
+      "self",
+      "var_vec",
+      "val_vec",
+      "batch_vec"
+    ],
+    "finalize": [
+      "self"
+    ]
+  },
+  "_mbomv_update_by_batch": [
+    "batch_vec",
+    "var_vec",
+    "val_vec",
+    "n",
+    "u",
+    "M2"
+  ],
+  "_mbomv_update_single_batch": [
+    "var_vec",
+    "val_vec",
+    "n",
+    "u",
+    "M2"
+  ],
+  "_mbomv_sparse_correct_batches": [
+    "n_batches",
+    "n_samples",
+    "n",
+    "u",
+    "M2"
+  ],
+  "_mbomv_combine_batches": [
+    "n_batches",
+    "n_samples",
+    "u",
+    "M2"
+  ],
+  "_accum_clipped_counts": [
+    "counts_sum",
+    "squared_counts_sum",
+    "var_dim",
+    "data",
+    "clip_val"
+  ],
+  "_accum_clipped_counts_by_batch": [
+    "counts_sum",
+    "squared_counts_sum",
+    "batch",
+    "var_dim",
+    "data",
+    "clip_val"
+  ],
+  "_update_mean_vector": [
+    "u",
+    "var_vec",
+    "val_vec"
+  ],
+  "_update_mean_and_n_vectors": [
+    "u",
+    "n",
+    "var_vec",
+    "val_vec"
+  ],
+  "_get_batch_index": [
+    "query",
+    "batch_key",
+    "batch_key_func"
+  ],
+  "_highly_variable_genes_seurat_v3": [
+    "query",
+    "batch_key",
+    "n_top_genes",
+    "layer",
+    "span",
+    "max_loess_jitter",
+    "batch_key_func"
+  ],
+  "highly_variable_genes": [
+    "query",
+    "n_top_genes",
+    "layer",
+    "flavor",
+    "span",
+    "batch_key",
+    "max_loess_jitter",
+    "batch_key_func"
+  ],
+  "get_highly_variable_genes": [
+    "census",
+    "organism",
+    "measurement_name",
+    "X_name",
+    "obs_value_filter",
+    "obs_coords",
+    "var_value_filter",
+    "var_coords",
+    "n_top_genes",
+    "flavor",
+    "span",
+    "batch_key",
+    "max_loess_jitter",
+    "batch_key_func"
+  ],
+  "RequestLoggerPlugin": {
+    "handle_client_request": [
+      "self",
+      "request"
+    ]
+  }
+}
