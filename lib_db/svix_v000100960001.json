@@ -1,0 +1,2704 @@
+{
+  "__all__": [],
+  "__version__": [],
+  "_AUTOCONFIG_TOKEN_PREFIX_V1": [],
+  "AutoConfigError": {},
+  "_AutoConfigTokenContentV1": {},
+  "_decode_autoconfig_token_v1": [
+    "token"
+  ],
+  "AutoConfig": {
+    "__init__": [
+      "self",
+      "token",
+      "endpoint"
+    ],
+    "subscribe": [
+      "self"
+    ],
+    "subscribe_async": [
+      "self"
+    ],
+    "verify": [
+      "self",
+      "payload",
+      "headers"
+    ]
+  },
+  "AutoConfigConsumer": {
+    "__init__": [
+      "self",
+      "token",
+      "sink_in"
+    ],
+    "_subscribe_in": [
+      "self"
+    ],
+    "subscribe": [
+      "self"
+    ],
+    "subscribe_async": [
+      "self"
+    ],
+    "receive": [
+      "self",
+      "consumer_id",
+      "options"
+    ],
+    "receive_async": [
+      "self",
+      "consumer_id",
+      "options"
+    ],
+    "commit": [
+      "self",
+      "consumer_id",
+      "offset",
+      "options"
+    ],
+    "commit_async": [
+      "self",
+      "consumer_id",
+      "offset",
+      "options"
+    ]
+  },
+  "Webhook": {
+    "__init__": [
+      "self",
+      "whsecret"
+    ],
+    "verify": [
+      "self",
+      "data",
+      "headers"
+    ],
+    "sign": [
+      "self",
+      "msg_id",
+      "timestamp",
+      "data"
+    ]
+  },
+  "EndpointListOptions": {
+    "_query_params": [
+      "self"
+    ]
+  },
+  "EndpointCreateOptions": {
+    "_header_params": [
+      "self"
+    ]
+  },
+  "EndpointBulkReplayOptions": {
+    "_header_params": [
+      "self"
+    ]
+  },
+  "EndpointRecoverOptions": {
+    "_header_params": [
+      "self"
+    ]
+  },
+  "EndpointReplayMissingOptions": {
+    "_header_params": [
+      "self"
+    ]
+  },
+  "EndpointRotateSecretOptions": {
+    "_header_params": [
+      "self"
+    ]
+  },
+  "EndpointSendExampleOptions": {
+    "_header_params": [
+      "self"
+    ]
+  },
+  "EndpointGetStatsOptions": {
+    "_query_params": [
+      "self"
+    ]
+  },
+  "EndpointAsync": {
+    "list": [
+      "self",
+      "app_id",
+      "options"
+    ],
+    "create": [
+      "self",
+      "app_id",
+      "endpoint_in",
+      "options"
+    ],
+    "get": [
+      "self",
+      "app_id",
+      "endpoint_id"
+    ],
+    "update": [
+      "self",
+      "app_id",
+      "endpoint_id",
+      "endpoint_update"
+    ],
+    "delete": [
+      "self",
+      "app_id",
+      "endpoint_id"
+    ],
+    "patch": [
+      "self",
+      "app_id",
+      "endpoint_id",
+      "endpoint_patch"
+    ],
+    "bulk_replay": [
+      "self",
+      "app_id",
+      "endpoint_id",
+      "bulk_replay_in",
+      "options"
+    ],
+    "get_headers": [
+      "self",
+      "app_id",
+      "endpoint_id"
+    ],
+    "update_headers": [
+      "self",
+      "app_id",
+      "endpoint_id",
+      "endpoint_headers_in"
+    ],
+    "patch_headers": [
+      "self",
+      "app_id",
+      "endpoint_id",
+      "endpoint_headers_patch_in"
+    ],
+    "recover": [
+      "self",
+      "app_id",
+      "endpoint_id",
+      "recover_in",
+      "options"
+    ],
+    "replay_missing": [
+      "self",
+      "app_id",
+      "endpoint_id",
+      "replay_in",
+      "options"
+    ],
+    "get_secret": [
+      "self",
+      "app_id",
+      "endpoint_id"
+    ],
+    "rotate_secret": [
+      "self",
+      "app_id",
+      "endpoint_id",
+      "endpoint_secret_rotate_in",
+      "options"
+    ],
+    "send_example": [
+      "self",
+      "app_id",
+      "endpoint_id",
+      "event_example_in",
+      "options"
+    ],
+    "get_stats": [
+      "self",
+      "app_id",
+      "endpoint_id",
+      "options"
+    ],
+    "transformation_get": [
+      "self",
+      "app_id",
+      "endpoint_id"
+    ],
+    "patch_transformation": [
+      "self",
+      "app_id",
+      "endpoint_id",
+      "endpoint_transformation_patch"
+    ],
+    "transformation_partial_update": [
+      "self",
+      "app_id",
+      "endpoint_id",
+      "endpoint_transformation_in"
+    ]
+  },
+  "Endpoint": {
+    "list": [
+      "self",
+      "app_id",
+      "options"
+    ],
+    "create": [
+      "self",
+      "app_id",
+      "endpoint_in",
+      "options"
+    ],
+    "get": [
+      "self",
+      "app_id",
+      "endpoint_id"
+    ],
+    "update": [
+      "self",
+      "app_id",
+      "endpoint_id",
+      "endpoint_update"
+    ],
+    "delete": [
+      "self",
+      "app_id",
+      "endpoint_id"
+    ],
+    "patch": [
+      "self",
+      "app_id",
+      "endpoint_id",
+      "endpoint_patch"
+    ],
+    "bulk_replay": [
+      "self",
+      "app_id",
+      "endpoint_id",
+      "bulk_replay_in",
+      "options"
+    ],
+    "get_headers": [
+      "self",
+      "app_id",
+      "endpoint_id"
+    ],
+    "update_headers": [
+      "self",
+      "app_id",
+      "endpoint_id",
+      "endpoint_headers_in"
+    ],
+    "patch_headers": [
+      "self",
+      "app_id",
+      "endpoint_id",
+      "endpoint_headers_patch_in"
+    ],
+    "recover": [
+      "self",
+      "app_id",
+      "endpoint_id",
+      "recover_in",
+      "options"
+    ],
+    "replay_missing": [
+      "self",
+      "app_id",
+      "endpoint_id",
+      "replay_in",
+      "options"
+    ],
+    "get_secret": [
+      "self",
+      "app_id",
+      "endpoint_id"
+    ],
+    "rotate_secret": [
+      "self",
+      "app_id",
+      "endpoint_id",
+      "endpoint_secret_rotate_in",
+      "options"
+    ],
+    "send_example": [
+      "self",
+      "app_id",
+      "endpoint_id",
+      "event_example_in",
+      "options"
+    ],
+    "get_stats": [
+      "self",
+      "app_id",
+      "endpoint_id",
+      "options"
+    ],
+    "transformation_get": [
+      "self",
+      "app_id",
+      "endpoint_id"
+    ],
+    "patch_transformation": [
+      "self",
+      "app_id",
+      "endpoint_id",
+      "endpoint_transformation_patch"
+    ],
+    "transformation_partial_update": [
+      "self",
+      "app_id",
+      "endpoint_id",
+      "endpoint_transformation_in"
+    ]
+  },
+  "IngestSourceListOptions": {
+    "_query_params": [
+      "self"
+    ]
+  },
+  "IngestSourceCreateOptions": {
+    "_header_params": [
+      "self"
+    ]
+  },
+  "IngestSourceRotateTokenOptions": {
+    "_header_params": [
+      "self"
+    ]
+  },
+  "IngestSourceAsync": {
+    "list": [
+      "self",
+      "options"
+    ],
+    "create": [
+      "self",
+      "ingest_source_in",
+      "options"
+    ],
+    "get": [
+      "self",
+      "source_id"
+    ],
+    "update": [
+      "self",
+      "source_id",
+      "ingest_source_in"
+    ],
+    "delete": [
+      "self",
+      "source_id"
+    ],
+    "rotate_token": [
+      "self",
+      "source_id",
+      "options"
+    ]
+  },
+  "IngestSource": {
+    "list": [
+      "self",
+      "options"
+    ],
+    "create": [
+      "self",
+      "ingest_source_in",
+      "options"
+    ],
+    "get": [
+      "self",
+      "source_id"
+    ],
+    "update": [
+      "self",
+      "source_id",
+      "ingest_source_in"
+    ],
+    "delete": [
+      "self",
+      "source_id"
+    ],
+    "rotate_token": [
+      "self",
+      "source_id",
+      "options"
+    ]
+  },
+  "IngestEndpointListOptions": {
+    "_query_params": [
+      "self"
+    ]
+  },
+  "IngestEndpointCreateOptions": {
+    "_header_params": [
+      "self"
+    ]
+  },
+  "IngestEndpointRotateSecretOptions": {
+    "_header_params": [
+      "self"
+    ]
+  },
+  "IngestEndpointAsync": {
+    "list": [
+      "self",
+      "source_id",
+      "options"
+    ],
+    "create": [
+      "self",
+      "source_id",
+      "ingest_endpoint_in",
+      "options"
+    ],
+    "get": [
+      "self",
+      "source_id",
+      "endpoint_id"
+    ],
+    "update": [
+      "self",
+      "source_id",
+      "endpoint_id",
+      "ingest_endpoint_update"
+    ],
+    "delete": [
+      "self",
+      "source_id",
+      "endpoint_id"
+    ],
+    "get_headers": [
+      "self",
+      "source_id",
+      "endpoint_id"
+    ],
+    "update_headers": [
+      "self",
+      "source_id",
+      "endpoint_id",
+      "ingest_endpoint_headers_in"
+    ],
+    "get_secret": [
+      "self",
+      "source_id",
+      "endpoint_id"
+    ],
+    "rotate_secret": [
+      "self",
+      "source_id",
+      "endpoint_id",
+      "ingest_endpoint_secret_in",
+      "options"
+    ],
+    "get_transformation": [
+      "self",
+      "source_id",
+      "endpoint_id"
+    ],
+    "set_transformation": [
+      "self",
+      "source_id",
+      "endpoint_id",
+      "ingest_endpoint_transformation_patch"
+    ]
+  },
+  "IngestEndpoint": {
+    "list": [
+      "self",
+      "source_id",
+      "options"
+    ],
+    "create": [
+      "self",
+      "source_id",
+      "ingest_endpoint_in",
+      "options"
+    ],
+    "get": [
+      "self",
+      "source_id",
+      "endpoint_id"
+    ],
+    "update": [
+      "self",
+      "source_id",
+      "endpoint_id",
+      "ingest_endpoint_update"
+    ],
+    "delete": [
+      "self",
+      "source_id",
+      "endpoint_id"
+    ],
+    "get_headers": [
+      "self",
+      "source_id",
+      "endpoint_id"
+    ],
+    "update_headers": [
+      "self",
+      "source_id",
+      "endpoint_id",
+      "ingest_endpoint_headers_in"
+    ],
+    "get_secret": [
+      "self",
+      "source_id",
+      "endpoint_id"
+    ],
+    "rotate_secret": [
+      "self",
+      "source_id",
+      "endpoint_id",
+      "ingest_endpoint_secret_in",
+      "options"
+    ],
+    "get_transformation": [
+      "self",
+      "source_id",
+      "endpoint_id"
+    ],
+    "set_transformation": [
+      "self",
+      "source_id",
+      "endpoint_id",
+      "ingest_endpoint_transformation_patch"
+    ]
+  },
+  "BackgroundTaskListOptions": {
+    "_query_params": [
+      "self"
+    ]
+  },
+  "BackgroundTaskAsync": {
+    "list": [
+      "self",
+      "options"
+    ],
+    "get": [
+      "self",
+      "task_id"
+    ]
+  },
+  "BackgroundTask": {
+    "list": [
+      "self",
+      "options"
+    ],
+    "get": [
+      "self",
+      "task_id"
+    ]
+  },
+  "IngestDashboardOptions": {
+    "_header_params": [
+      "self"
+    ]
+  },
+  "IngestAsync": {
+    "endpoint": [
+      "self"
+    ],
+    "source": [
+      "self"
+    ],
+    "dashboard": [
+      "self",
+      "source_id",
+      "ingest_source_consumer_portal_access_in",
+      "options"
+    ]
+  },
+  "Ingest": {
+    "endpoint": [
+      "self"
+    ],
+    "source": [
+      "self"
+    ],
+    "dashboard": [
+      "self",
+      "source_id",
+      "ingest_source_consumer_portal_access_in",
+      "options"
+    ]
+  },
+  "EnvironmentExportOptions": {
+    "_header_params": [
+      "self"
+    ]
+  },
+  "EnvironmentImportOptions": {
+    "_header_params": [
+      "self"
+    ]
+  },
+  "EnvironmentAsync": {
+    "export": [
+      "self",
+      "options"
+    ],
+    "import_": [
+      "self",
+      "environment_in",
+      "options"
+    ]
+  },
+  "Environment": {
+    "export": [
+      "self",
+      "options"
+    ],
+    "import_": [
+      "self",
+      "environment_in",
+      "options"
+    ]
+  },
+  "DEFAULT_SERVER_URL": [],
+  "SvixOptions": {},
+  "ClientBase": {
+    "__init__": [
+      "self",
+      "auth_token",
+      "options"
+    ]
+  },
+  "SvixAsync": {
+    "application": [
+      "self"
+    ],
+    "authentication": [
+      "self"
+    ],
+    "background_task": [
+      "self"
+    ],
+    "connector": [
+      "self"
+    ],
+    "endpoint": [
+      "self"
+    ],
+    "environment": [
+      "self"
+    ],
+    "event_type": [
+      "self"
+    ],
+    "health": [
+      "self"
+    ],
+    "ingest": [
+      "self"
+    ],
+    "integration": [
+      "self"
+    ],
+    "message": [
+      "self"
+    ],
+    "message_attempt": [
+      "self"
+    ],
+    "operational_webhook": [
+      "self"
+    ],
+    "statistics": [
+      "self"
+    ],
+    "streaming": [
+      "self"
+    ],
+    "operational_webhook_endpoint": [
+      "self"
+    ]
+  },
+  "Svix": {
+    "application": [
+      "self"
+    ],
+    "authentication": [
+      "self"
+    ],
+    "background_task": [
+      "self"
+    ],
+    "connector": [
+      "self"
+    ],
+    "endpoint": [
+      "self"
+    ],
+    "environment": [
+      "self"
+    ],
+    "event_type": [
+      "self"
+    ],
+    "health": [
+      "self"
+    ],
+    "ingest": [
+      "self"
+    ],
+    "integration": [
+      "self"
+    ],
+    "message": [
+      "self"
+    ],
+    "message_attempt": [
+      "self"
+    ],
+    "operational_webhook": [
+      "self"
+    ],
+    "statistics": [
+      "self"
+    ],
+    "streaming": [
+      "self"
+    ],
+    "operational_webhook_endpoint": [
+      "self"
+    ]
+  },
+  "MessageListOptions": {
+    "_query_params": [
+      "self"
+    ]
+  },
+  "MessageCreateOptions": {
+    "_query_params": [
+      "self"
+    ],
+    "_header_params": [
+      "self"
+    ]
+  },
+  "MessageExpungeAllContentsOptions": {
+    "_header_params": [
+      "self"
+    ]
+  },
+  "MessagePrecheckOptions": {
+    "_header_params": [
+      "self"
+    ]
+  },
+  "MessageGetOptions": {
+    "_query_params": [
+      "self"
+    ]
+  },
+  "message_in_raw": [
+    "event_type",
+    "payload",
+    "content_type"
+  ],
+  "MessageAsync": {
+    "poller": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "app_id",
+      "options"
+    ],
+    "create": [
+      "self",
+      "app_id",
+      "message_in",
+      "options"
+    ],
+    "expunge_all_contents": [
+      "self",
+      "app_id",
+      "options"
+    ],
+    "precheck": [
+      "self",
+      "app_id",
+      "message_precheck_in",
+      "options"
+    ],
+    "get": [
+      "self",
+      "app_id",
+      "msg_id",
+      "options"
+    ],
+    "expunge_content": [
+      "self",
+      "app_id",
+      "msg_id"
+    ]
+  },
+  "Message": {
+    "poller": [
+      "self"
+    ],
+    "list": [
+      "self",
+      "app_id",
+      "options"
+    ],
+    "create": [
+      "self",
+      "app_id",
+      "message_in",
+      "options"
+    ],
+    "expunge_all_contents": [
+      "self",
+      "app_id",
+      "options"
+    ],
+    "precheck": [
+      "self",
+      "app_id",
+      "message_precheck_in",
+      "options"
+    ],
+    "get": [
+      "self",
+      "app_id",
+      "msg_id",
+      "options"
+    ],
+    "expunge_content": [
+      "self",
+      "app_id",
+      "msg_id"
+    ]
+  },
+  "Client": {
+    "get_headers": [
+      "self"
+    ],
+    "with_headers": [
+      "self",
+      "headers"
+    ],
+    "get_cookies": [
+      "self"
+    ],
+    "with_cookies": [
+      "self",
+      "cookies"
+    ],
+    "get_timeout": [
+      "self"
+    ],
+    "with_timeout": [
+      "self",
+      "timeout"
+    ]
+  },
+  "AuthenticatedClient": {
+    "get_headers": [
+      "self"
+    ]
+  },
+  "StreamingEventsCreateOptions": {
+    "_header_params": [
+      "self"
+    ]
+  },
+  "StreamingEventsGetOptions": {
+    "_query_params": [
+      "self"
+    ]
+  },
+  "StreamingEventsAsync": {
+    "create": [
+      "self",
+      "stream_id",
+      "create_stream_events_in",
+      "options"
+    ],
+    "get": [
+      "self",
+      "stream_id",
+      "sink_id",
+      "options"
+    ]
+  },
+  "StreamingEvents": {
+    "create": [
+      "self",
+      "stream_id",
+      "create_stream_events_in",
+      "options"
+    ],
+    "get": [
+      "self",
+      "stream_id",
+      "sink_id",
+      "options"
+    ]
+  },
+  "MessageAttemptListByEndpointOptions": {
+    "_query_params": [
+      "self"
+    ]
+  },
+  "MessageAttemptListByMsgOptions": {
+    "_query_params": [
+      "self"
+    ]
+  },
+  "MessageAttemptListAttemptedMessagesOptions": {
+    "_query_params": [
+      "self"
+    ]
+  },
+  "MessageAttemptGetOptions": {
+    "_query_params": [
+      "self"
+    ]
+  },
+  "MessageAttemptListAttemptedDestinationsOptions": {
+    "_query_params": [
+      "self"
+    ]
+  },
+  "MessageAttemptResendOptions": {
+    "_header_params": [
+      "self"
+    ]
+  },
+  "MessageAttemptAsync": {
+    "list_by_endpoint": [
+      "self",
+      "app_id",
+      "endpoint_id",
+      "options"
+    ],
+    "list_by_msg": [
+      "self",
+      "app_id",
+      "msg_id",
+      "options"
+    ],
+    "list_attempted_messages": [
+      "self",
+      "app_id",
+      "endpoint_id",
+      "options"
+    ],
+    "get": [
+      "self",
+      "app_id",
+      "msg_id",
+      "attempt_id",
+      "options"
+    ],
+    "expunge_content": [
+      "self",
+      "app_id",
+      "msg_id",
+      "attempt_id"
+    ],
+    "list_attempted_destinations": [
+      "self",
+      "app_id",
+      "msg_id",
+      "options"
+    ],
+    "resend": [
+      "self",
+      "app_id",
+      "msg_id",
+      "endpoint_id",
+      "options"
+    ]
+  },
+  "MessageAttempt": {
+    "list_by_endpoint": [
+      "self",
+      "app_id",
+      "endpoint_id",
+      "options"
+    ],
+    "list_by_msg": [
+      "self",
+      "app_id",
+      "msg_id",
+      "options"
+    ],
+    "list_attempted_messages": [
+      "self",
+      "app_id",
+      "endpoint_id",
+      "options"
+    ],
+    "get": [
+      "self",
+      "app_id",
+      "msg_id",
+      "attempt_id",
+      "options"
+    ],
+    "expunge_content": [
+      "self",
+      "app_id",
+      "msg_id",
+      "attempt_id"
+    ],
+    "list_attempted_destinations": [
+      "self",
+      "app_id",
+      "msg_id",
+      "options"
+    ],
+    "resend": [
+      "self",
+      "app_id",
+      "msg_id",
+      "endpoint_id",
+      "options"
+    ]
+  },
+  "IntegrationListOptions": {
+    "_query_params": [
+      "self"
+    ]
+  },
+  "IntegrationCreateOptions": {
+    "_header_params": [
+      "self"
+    ]
+  },
+  "IntegrationRotateKeyOptions": {
+    "_header_params": [
+      "self"
+    ]
+  },
+  "IntegrationAsync": {
+    "list": [
+      "self",
+      "app_id",
+      "options"
+    ],
+    "create": [
+      "self",
+      "app_id",
+      "integration_in",
+      "options"
+    ],
+    "get": [
+      "self",
+      "app_id",
+      "integ_id"
+    ],
+    "update": [
+      "self",
+      "app_id",
+      "integ_id",
+      "integration_update"
+    ],
+    "delete": [
+      "self",
+      "app_id",
+      "integ_id"
+    ],
+    "get_key": [
+      "self",
+      "app_id",
+      "integ_id"
+    ],
+    "rotate_key": [
+      "self",
+      "app_id",
+      "integ_id",
+      "options"
+    ]
+  },
+  "Integration": {
+    "list": [
+      "self",
+      "app_id",
+      "options"
+    ],
+    "create": [
+      "self",
+      "app_id",
+      "integration_in",
+      "options"
+    ],
+    "get": [
+      "self",
+      "app_id",
+      "integ_id"
+    ],
+    "update": [
+      "self",
+      "app_id",
+      "integ_id",
+      "integration_update"
+    ],
+    "delete": [
+      "self",
+      "app_id",
+      "integ_id"
+    ],
+    "get_key": [
+      "self",
+      "app_id",
+      "integ_id"
+    ],
+    "rotate_key": [
+      "self",
+      "app_id",
+      "integ_id",
+      "options"
+    ]
+  },
+  "OperationalWebhookAsync": {
+    "endpoint": [
+      "self"
+    ]
+  },
+  "OperationalWebhook": {
+    "endpoint": [
+      "self"
+    ]
+  },
+  "HealthAsync": {
+    "get": [
+      "self"
+    ]
+  },
+  "Health": {
+    "get": [
+      "self"
+    ]
+  },
+  "StreamingEventTypeListOptions": {
+    "_query_params": [
+      "self"
+    ]
+  },
+  "StreamingEventTypeCreateOptions": {
+    "_header_params": [
+      "self"
+    ]
+  },
+  "StreamingEventTypeDeleteOptions": {
+    "_query_params": [
+      "self"
+    ]
+  },
+  "StreamingEventTypeAsync": {
+    "list": [
+      "self",
+      "options"
+    ],
+    "create": [
+      "self",
+      "stream_event_type_in",
+      "options"
+    ],
+    "get": [
+      "self",
+      "name"
+    ],
+    "update": [
+      "self",
+      "name",
+      "stream_event_type_in"
+    ],
+    "delete": [
+      "self",
+      "name",
+      "options"
+    ],
+    "patch": [
+      "self",
+      "name",
+      "stream_event_type_patch"
+    ]
+  },
+  "StreamingEventType": {
+    "list": [
+      "self",
+      "options"
+    ],
+    "create": [
+      "self",
+      "stream_event_type_in",
+      "options"
+    ],
+    "get": [
+      "self",
+      "name"
+    ],
+    "update": [
+      "self",
+      "name",
+      "stream_event_type_in"
+    ],
+    "delete": [
+      "self",
+      "name",
+      "options"
+    ],
+    "patch": [
+      "self",
+      "name",
+      "stream_event_type_patch"
+    ]
+  },
+  "StatisticsAggregateAppStatsOptions": {
+    "_header_params": [
+      "self"
+    ]
+  },
+  "StatisticsAsync": {
+    "aggregate_app_stats": [
+      "self",
+      "app_usage_stats_in",
+      "options"
+    ],
+    "aggregate_event_types": [
+      "self"
+    ]
+  },
+  "Statistics": {
+    "aggregate_app_stats": [
+      "self",
+      "app_usage_stats_in",
+      "options"
+    ],
+    "aggregate_event_types": [
+      "self"
+    ]
+  },
+  "StreamingSinkListOptions": {
+    "_query_params": [
+      "self"
+    ]
+  },
+  "StreamingSinkCreateOptions": {
+    "_header_params": [
+      "self"
+    ]
+  },
+  "StreamingSinkRotateSecretOptions": {
+    "_header_params": [
+      "self"
+    ]
+  },
+  "StreamingSinkAsync": {
+    "list": [
+      "self",
+      "stream_id",
+      "options"
+    ],
+    "create": [
+      "self",
+      "stream_id",
+      "stream_sink_in",
+      "options"
+    ],
+    "get": [
+      "self",
+      "stream_id",
+      "sink_id"
+    ],
+    "update": [
+      "self",
+      "stream_id",
+      "sink_id",
+      "stream_sink_in"
+    ],
+    "delete": [
+      "self",
+      "stream_id",
+      "sink_id"
+    ],
+    "patch": [
+      "self",
+      "stream_id",
+      "sink_id",
+      "stream_sink_patch"
+    ],
+    "get_secret": [
+      "self",
+      "stream_id",
+      "sink_id"
+    ],
+    "rotate_secret": [
+      "self",
+      "stream_id",
+      "sink_id",
+      "endpoint_secret_rotate_in",
+      "options"
+    ],
+    "transformation_partial_update": [
+      "self",
+      "stream_id",
+      "sink_id",
+      "sink_transform_in"
+    ]
+  },
+  "StreamingSink": {
+    "list": [
+      "self",
+      "stream_id",
+      "options"
+    ],
+    "create": [
+      "self",
+      "stream_id",
+      "stream_sink_in",
+      "options"
+    ],
+    "get": [
+      "self",
+      "stream_id",
+      "sink_id"
+    ],
+    "update": [
+      "self",
+      "stream_id",
+      "sink_id",
+      "stream_sink_in"
+    ],
+    "delete": [
+      "self",
+      "stream_id",
+      "sink_id"
+    ],
+    "patch": [
+      "self",
+      "stream_id",
+      "sink_id",
+      "stream_sink_patch"
+    ],
+    "get_secret": [
+      "self",
+      "stream_id",
+      "sink_id"
+    ],
+    "rotate_secret": [
+      "self",
+      "stream_id",
+      "sink_id",
+      "endpoint_secret_rotate_in",
+      "options"
+    ],
+    "transformation_partial_update": [
+      "self",
+      "stream_id",
+      "sink_id",
+      "sink_transform_in"
+    ]
+  },
+  "AuthenticationAppPortalAccessOptions": {
+    "_header_params": [
+      "self"
+    ]
+  },
+  "AuthenticationExpireAllOptions": {
+    "_header_params": [
+      "self"
+    ]
+  },
+  "AuthenticationLogoutOptions": {
+    "_header_params": [
+      "self"
+    ]
+  },
+  "AuthenticationStreamLogoutOptions": {
+    "_header_params": [
+      "self"
+    ]
+  },
+  "AuthenticationStreamPortalAccessOptions": {
+    "_header_params": [
+      "self"
+    ]
+  },
+  "AuthenticationStreamExpireAllOptions": {
+    "_header_params": [
+      "self"
+    ]
+  },
+  "AuthenticationRotateStreamPollerTokenOptions": {
+    "_header_params": [
+      "self"
+    ]
+  },
+  "AuthenticationDashboardAccessOptions": {
+    "_header_params": [
+      "self"
+    ]
+  },
+  "AuthenticationAsync": {
+    "app_portal_access": [
+      "self",
+      "app_id",
+      "app_portal_access_in",
+      "options"
+    ],
+    "expire_all": [
+      "self",
+      "app_id",
+      "application_token_expire_in",
+      "options"
+    ],
+    "dashboard_access": [
+      "self",
+      "app_id",
+      "options"
+    ],
+    "logout": [
+      "self",
+      "options"
+    ],
+    "stream_logout": [
+      "self",
+      "options"
+    ],
+    "stream_portal_access": [
+      "self",
+      "stream_id",
+      "stream_portal_access_in",
+      "options"
+    ],
+    "stream_expire_all": [
+      "self",
+      "stream_id",
+      "stream_token_expire_in",
+      "options"
+    ],
+    "get_stream_poller_token": [
+      "self",
+      "stream_id",
+      "sink_id"
+    ],
+    "rotate_stream_poller_token": [
+      "self",
+      "stream_id",
+      "sink_id",
+      "rotate_poller_token_in",
+      "options"
+    ]
+  },
+  "Authentication": {
+    "app_portal_access": [
+      "self",
+      "app_id",
+      "app_portal_access_in",
+      "options"
+    ],
+    "expire_all": [
+      "self",
+      "app_id",
+      "application_token_expire_in",
+      "options"
+    ],
+    "dashboard_access": [
+      "self",
+      "app_id",
+      "options"
+    ],
+    "logout": [
+      "self",
+      "options"
+    ],
+    "stream_logout": [
+      "self",
+      "options"
+    ],
+    "stream_portal_access": [
+      "self",
+      "stream_id",
+      "stream_portal_access_in",
+      "options"
+    ],
+    "stream_expire_all": [
+      "self",
+      "stream_id",
+      "stream_token_expire_in",
+      "options"
+    ],
+    "get_stream_poller_token": [
+      "self",
+      "stream_id",
+      "sink_id"
+    ],
+    "rotate_stream_poller_token": [
+      "self",
+      "stream_id",
+      "sink_id",
+      "rotate_poller_token_in",
+      "options"
+    ]
+  },
+  "MessagePollerPollOptions": {
+    "_query_params": [
+      "self"
+    ]
+  },
+  "MessagePollerConsumerPollOptions": {
+    "_query_params": [
+      "self"
+    ]
+  },
+  "MessagePollerConsumerSeekOptions": {
+    "_header_params": [
+      "self"
+    ]
+  },
+  "MessagePollerAsync": {
+    "poll": [
+      "self",
+      "app_id",
+      "sink_id",
+      "options"
+    ],
+    "consumer_poll": [
+      "self",
+      "app_id",
+      "sink_id",
+      "consumer_id",
+      "options"
+    ],
+    "consumer_seek": [
+      "self",
+      "app_id",
+      "sink_id",
+      "consumer_id",
+      "polling_endpoint_consumer_seek_in",
+      "options"
+    ]
+  },
+  "MessagePoller": {
+    "poll": [
+      "self",
+      "app_id",
+      "sink_id",
+      "options"
+    ],
+    "consumer_poll": [
+      "self",
+      "app_id",
+      "sink_id",
+      "consumer_id",
+      "options"
+    ],
+    "consumer_seek": [
+      "self",
+      "app_id",
+      "sink_id",
+      "consumer_id",
+      "polling_endpoint_consumer_seek_in",
+      "options"
+    ]
+  },
+  "ConnectorListOptions": {
+    "_query_params": [
+      "self"
+    ]
+  },
+  "ConnectorCreateOptions": {
+    "_header_params": [
+      "self"
+    ]
+  },
+  "ConnectorAsync": {
+    "list": [
+      "self",
+      "options"
+    ],
+    "create": [
+      "self",
+      "connector_in",
+      "options"
+    ],
+    "get": [
+      "self",
+      "connector_id"
+    ],
+    "update": [
+      "self",
+      "connector_id",
+      "connector_update"
+    ],
+    "delete": [
+      "self",
+      "connector_id"
+    ],
+    "patch": [
+      "self",
+      "connector_id",
+      "connector_patch"
+    ]
+  },
+  "Connector": {
+    "list": [
+      "self",
+      "options"
+    ],
+    "create": [
+      "self",
+      "connector_in",
+      "options"
+    ],
+    "get": [
+      "self",
+      "connector_id"
+    ],
+    "update": [
+      "self",
+      "connector_id",
+      "connector_update"
+    ],
+    "delete": [
+      "self",
+      "connector_id"
+    ],
+    "patch": [
+      "self",
+      "connector_id",
+      "connector_patch"
+    ]
+  },
+  "OperationalWebhookEndpointListOptions": {
+    "_query_params": [
+      "self"
+    ]
+  },
+  "OperationalWebhookEndpointCreateOptions": {
+    "_header_params": [
+      "self"
+    ]
+  },
+  "OperationalWebhookEndpointRotateSecretOptions": {
+    "_header_params": [
+      "self"
+    ]
+  },
+  "OperationalWebhookEndpointAsync": {
+    "list": [
+      "self",
+      "options"
+    ],
+    "create": [
+      "self",
+      "operational_webhook_endpoint_in",
+      "options"
+    ],
+    "get": [
+      "self",
+      "endpoint_id"
+    ],
+    "update": [
+      "self",
+      "endpoint_id",
+      "operational_webhook_endpoint_update"
+    ],
+    "delete": [
+      "self",
+      "endpoint_id"
+    ],
+    "get_headers": [
+      "self",
+      "endpoint_id"
+    ],
+    "update_headers": [
+      "self",
+      "endpoint_id",
+      "operational_webhook_endpoint_headers_in"
+    ],
+    "get_secret": [
+      "self",
+      "endpoint_id"
+    ],
+    "rotate_secret": [
+      "self",
+      "endpoint_id",
+      "operational_webhook_endpoint_secret_in",
+      "options"
+    ]
+  },
+  "OperationalWebhookEndpoint": {
+    "list": [
+      "self",
+      "options"
+    ],
+    "create": [
+      "self",
+      "operational_webhook_endpoint_in",
+      "options"
+    ],
+    "get": [
+      "self",
+      "endpoint_id"
+    ],
+    "update": [
+      "self",
+      "endpoint_id",
+      "operational_webhook_endpoint_update"
+    ],
+    "delete": [
+      "self",
+      "endpoint_id"
+    ],
+    "get_headers": [
+      "self",
+      "endpoint_id"
+    ],
+    "update_headers": [
+      "self",
+      "endpoint_id",
+      "operational_webhook_endpoint_headers_in"
+    ],
+    "get_secret": [
+      "self",
+      "endpoint_id"
+    ],
+    "rotate_secret": [
+      "self",
+      "endpoint_id",
+      "operational_webhook_endpoint_secret_in",
+      "options"
+    ]
+  },
+  "StreamingAsync": {
+    "event_type": [
+      "self"
+    ],
+    "events": [
+      "self"
+    ],
+    "sink": [
+      "self"
+    ],
+    "stream": [
+      "self"
+    ],
+    "sink_headers_get": [
+      "self",
+      "stream_id",
+      "sink_id"
+    ],
+    "sink_headers_patch": [
+      "self",
+      "stream_id",
+      "sink_id",
+      "http_sink_headers_patch_in"
+    ],
+    "sink_transformation_get": [
+      "self",
+      "stream_id",
+      "sink_id"
+    ]
+  },
+  "Streaming": {
+    "event_type": [
+      "self"
+    ],
+    "events": [
+      "self"
+    ],
+    "sink": [
+      "self"
+    ],
+    "stream": [
+      "self"
+    ],
+    "sink_headers_get": [
+      "self",
+      "stream_id",
+      "sink_id"
+    ],
+    "sink_headers_patch": [
+      "self",
+      "stream_id",
+      "sink_id",
+      "http_sink_headers_patch_in"
+    ],
+    "sink_transformation_get": [
+      "self",
+      "stream_id",
+      "sink_id"
+    ]
+  },
+  "StreamingStreamListOptions": {
+    "_query_params": [
+      "self"
+    ]
+  },
+  "StreamingStreamCreateOptions": {
+    "_header_params": [
+      "self"
+    ]
+  },
+  "StreamingStreamAsync": {
+    "list": [
+      "self",
+      "options"
+    ],
+    "create": [
+      "self",
+      "stream_in",
+      "options"
+    ],
+    "get": [
+      "self",
+      "stream_id"
+    ],
+    "update": [
+      "self",
+      "stream_id",
+      "stream_in"
+    ],
+    "delete": [
+      "self",
+      "stream_id"
+    ],
+    "patch": [
+      "self",
+      "stream_id",
+      "stream_patch"
+    ]
+  },
+  "StreamingStream": {
+    "list": [
+      "self",
+      "options"
+    ],
+    "create": [
+      "self",
+      "stream_in",
+      "options"
+    ],
+    "get": [
+      "self",
+      "stream_id"
+    ],
+    "update": [
+      "self",
+      "stream_id",
+      "stream_in"
+    ],
+    "delete": [
+      "self",
+      "stream_id"
+    ],
+    "patch": [
+      "self",
+      "stream_id",
+      "stream_patch"
+    ]
+  },
+  "EventTypeListOptions": {
+    "_query_params": [
+      "self"
+    ]
+  },
+  "EventTypeCreateOptions": {
+    "_header_params": [
+      "self"
+    ]
+  },
+  "EventTypeImportOpenapiOptions": {
+    "_header_params": [
+      "self"
+    ]
+  },
+  "EventTypeDeleteOptions": {
+    "_query_params": [
+      "self"
+    ]
+  },
+  "EventTypeAsync": {
+    "list": [
+      "self",
+      "options"
+    ],
+    "create": [
+      "self",
+      "event_type_in",
+      "options"
+    ],
+    "import_openapi": [
+      "self",
+      "event_type_import_open_api_in",
+      "options"
+    ],
+    "get": [
+      "self",
+      "event_type_name"
+    ],
+    "update": [
+      "self",
+      "event_type_name",
+      "event_type_update"
+    ],
+    "delete": [
+      "self",
+      "event_type_name",
+      "options"
+    ],
+    "patch": [
+      "self",
+      "event_type_name",
+      "event_type_patch"
+    ]
+  },
+  "EventType": {
+    "list": [
+      "self",
+      "options"
+    ],
+    "create": [
+      "self",
+      "event_type_in",
+      "options"
+    ],
+    "import_openapi": [
+      "self",
+      "event_type_import_open_api_in",
+      "options"
+    ],
+    "get": [
+      "self",
+      "event_type_name"
+    ],
+    "update": [
+      "self",
+      "event_type_name",
+      "event_type_update"
+    ],
+    "delete": [
+      "self",
+      "event_type_name",
+      "options"
+    ],
+    "patch": [
+      "self",
+      "event_type_name",
+      "event_type_patch"
+    ]
+  },
+  "ApplicationListOptions": {
+    "_query_params": [
+      "self"
+    ]
+  },
+  "ApplicationCreateOptions": {
+    "_header_params": [
+      "self"
+    ]
+  },
+  "ApplicationAsync": {
+    "list": [
+      "self",
+      "options"
+    ],
+    "create": [
+      "self",
+      "application_in",
+      "options"
+    ],
+    "get_or_create": [
+      "self",
+      "application_in",
+      "options"
+    ],
+    "get": [
+      "self",
+      "app_id"
+    ],
+    "update": [
+      "self",
+      "app_id",
+      "application_in"
+    ],
+    "delete": [
+      "self",
+      "app_id"
+    ],
+    "patch": [
+      "self",
+      "app_id",
+      "application_patch"
+    ]
+  },
+  "Application": {
+    "list": [
+      "self",
+      "options"
+    ],
+    "create": [
+      "self",
+      "application_in",
+      "options"
+    ],
+    "get_or_create": [
+      "self",
+      "application_in",
+      "options"
+    ],
+    "get": [
+      "self",
+      "app_id"
+    ],
+    "update": [
+      "self",
+      "app_id",
+      "application_in"
+    ],
+    "delete": [
+      "self",
+      "app_id"
+    ],
+    "patch": [
+      "self",
+      "app_id",
+      "application_patch"
+    ]
+  },
+  "ensure_tz": [
+    "x"
+  ],
+  "sanitize_field": [
+    "v"
+  ],
+  "_serialize_single_param": [
+    "val"
+  ],
+  "serialize_params": [
+    "d"
+  ],
+  "BaseOptions": {
+    "to_dict": [
+      "self"
+    ],
+    "_query_params": [
+      "self"
+    ],
+    "_header_params": [
+      "self"
+    ]
+  },
+  "ListOptions": {},
+  "PostOptions": {},
+  "ApiBase": {
+    "__init__": [
+      "self",
+      "client"
+    ],
+    "_get_httpx_kwargs": [
+      "self",
+      "method",
+      "path",
+      "path_params",
+      "query_params",
+      "header_params",
+      "json_body"
+    ],
+    "_request_asyncio": [
+      "self",
+      "method",
+      "path",
+      "path_params",
+      "query_params",
+      "header_params",
+      "json_body"
+    ],
+    "_request_sync": [
+      "self",
+      "method",
+      "path",
+      "path_params",
+      "query_params",
+      "header_params",
+      "json_body"
+    ]
+  },
+  "_filter_response_for_errors_response": [
+    "response"
+  ],
+  "T": [],
+  "HTTPValidationError": {
+    "init_exception": [
+      "cls",
+      "response",
+      "status_code"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "src_dict"
+    ],
+    "additional_keys": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "__setitem__": [
+      "self",
+      "key",
+      "value"
+    ],
+    "__delitem__": [
+      "self",
+      "key"
+    ],
+    "__contains__": [
+      "self",
+      "key"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "HttpError": {
+    "init_exception": [
+      "cls",
+      "response",
+      "status_code"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "src_dict"
+    ],
+    "additional_keys": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "__setitem__": [
+      "self",
+      "key",
+      "value"
+    ],
+    "__delitem__": [
+      "self",
+      "key"
+    ],
+    "__contains__": [
+      "self",
+      "key"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "ValidationError": {
+    "init_exception": [
+      "cls",
+      "response",
+      "status_code"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "src_dict"
+    ],
+    "additional_keys": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "__setitem__": [
+      "self",
+      "key",
+      "value"
+    ],
+    "__delitem__": [
+      "self",
+      "key"
+    ],
+    "__contains__": [
+      "self",
+      "key"
+    ]
+  },
+  "SqsConfig": {},
+  "SinkStatus": {
+    "ENABLED": [],
+    "PAUSED": [],
+    "DISABLED": [],
+    "RETRYING": [],
+    "__str__": [
+      "self"
+    ]
+  },
+  "IngestSourceOut": {
+    "validate_model": [
+      "cls",
+      "data",
+      "handler"
+    ]
+  },
+  "MessageAttemptLog": {},
+  "ConnectorPatch": {},
+  "ApplicationIn": {},
+  "SegmentConfig": {},
+  "EndpointTransformationOut": {},
+  "VapiConfig": {},
+  "IngestEndpointSecretOut": {},
+  "PollingEndpointConsumerSeekIn": {},
+  "ConnectorProduct": {
+    "DISPATCH": [],
+    "STREAM": [],
+    "__str__": [
+      "self"
+    ]
+  },
+  "SnowflakePatchConfig": {},
+  "PollingEndpointOut": {},
+  "SlackConfig": {},
+  "IngestEndpointSecretIn": {},
+  "GoogleCloudStorageConfig": {},
+  "AdobeSignConfig": {},
+  "HubspotConfig": {},
+  "MetaConfigOut": {},
+  "GoogleCloudPubSubConfig": {},
+  "IngestMessageAttemptExhaustedEventData": {},
+  "HttpSinkHeadersPatchIn": {},
+  "EventTypePatch": {},
+  "IngestMessageAttemptFailingEventData": {},
+  "ListResponseConnectorOut": {},
+  "MessageAttemptRecoveredEventData": {},
+  "ClickhousePatchConfig": {},
+  "AppUsageStatsOut": {},
+  "ListResponseEventTypeOut": {},
+  "EndpointSecretRotateIn": {},
+  "PollerV2PollOut": {},
+  "EndpointDisabledEventData": {},
+  "ApplicationOut": {},
+  "MessagePrecheckOut": {},
+  "EndpointDeletedEventData": {},
+  "ReplayIn": {},
+  "MessageAttemptTriggerType": {
+    "SCHEDULED": [],
+    "MANUAL": [],
+    "__str__": [
+      "self"
+    ]
+  },
+  "ZoomConfig": {},
+  "MessageIn": {},
+  "AppPortalAccessIn": {},
+  "AppPortalCapability": {
+    "VIEW_BASE": [],
+    "VIEW_ENDPOINT_SECRET": [],
+    "MANAGE_ENDPOINT_SECRET": [],
+    "MANAGE_TRANSFORMATIONS": [],
+    "CREATE_ATTEMPTS": [],
+    "MANAGE_ENDPOINT": [],
+    "__str__": [
+      "self"
+    ]
+  },
+  "CreateStreamEventsOut": {},
+  "GoogleCloudPubSubPatchConfig": {},
+  "SvixConfigOut": {},
+  "EndpointTransformationPatch": {},
+  "ListResponseIntegrationOut": {},
+  "EndpointUpdatedEvent": {},
+  "BulkReplayIn": {},
+  "ListResponseMessageAttemptOut": {},
+  "SnsConfig": {},
+  "IngestMessageAttemptRecoveredEvent": {},
+  "IngestMessageAttemptExhaustedEvent": {},
+  "ClickhouseConfig": {},
+  "EventExampleIn": {},
+  "IngestEndpointTransformationOut": {},
+  "VgsConfigOut": {},
+  "MessageAttemptFailedData": {},
+  "MessageEndpointOut": {},
+  "SinkTransformIn": {},
+  "MessageAttemptFailingEvent": {},
+  "TelnyxConfig": {},
+  "EasypostConfigOut": {},
+  "EndpointTransformationIn": {},
+  "EventStreamOut": {},
+  "EndpointCreatedEvent": {},
+  "AppPortalAccessOut": {},
+  "CreateStreamEventsIn": {},
+  "EndpointDisabledEvent": {},
+  "RotateTokenOut": {},
+  "RedshiftPatchConfig": {},
+  "ShopifyConfig": {},
+  "DocusignConfigOut": {},
+  "SinkTransformationOut": {},
+  "MessageAttemptExhaustedEvent": {},
+  "RedshiftConfig": {},
+  "EndpointHeadersPatchIn": {},
+  "EventOut": {},
+  "ShopifyConfigOut": {},
+  "ListResponseEndpointOut": {},
+  "GoogleCloudStoragePatchConfig": {},
+  "SegmentConfigOut": {},
+  "IngestEndpointHeadersIn": {},
+  "StripeConfigOut": {},
+  "StreamTokenExpireIn": {},
+  "StreamPatch": {},
+  "BigQueryPatchConfig": {},
+  "EndpointEnabledEventData": {},
+  "OperationalWebhookEndpointUpdate": {},
+  "EndpointUpdatedEventData": {},
+  "StreamPortalAccessIn": {},
+  "EmptyResponse": {},
+  "ConnectorOut": {},
+  "IngestMessageAttemptRecoveredEventData": {},
+  "EndpointIn": {},
+  "StripeConfig": {},
+  "MessageAttemptExhaustedEventData": {},
+  "PandaDocConfig": {},
+  "ReplayOut": {},
+  "AirwallexConfig": {},
+  "IngestEndpointIn": {},
+  "ZoomConfigOut": {},
+  "SvixConfig": {},
+  "ListResponseIngestEndpointOut": {},
+  "IngestSourceIn": {
+    "validate_model": [
+      "cls",
+      "data",
+      "handler"
+    ]
+  },
+  "OperationalWebhookEndpointOut": {},
+  "IntegrationOut": {},
+  "ApplicationPatch": {},
+  "ListResponseStreamOut": {},
+  "HubspotConfigOut": {},
+  "AzureBlobStorageConfig": {},
+  "OperationalWebhookEndpointHeadersIn": {},
+  "VeriffConfig": {},
+  "StatusCodeClass": {
+    "CODE_NONE": [],
+    "CODE1XX": [],
+    "CODE2XX": [],
+    "CODE3XX": [],
+    "CODE4XX": [],
+    "CODE5XX": [],
+    "__str__": [
+      "self"
+    ]
+  },
+  "S3Config": {},
+  "IntegrationIn": {},
+  "EndpointDisabledTrigger": {
+    "MANUAL": [],
+    "AUTOMATIC": [],
+    "__str__": [
+      "self"
+    ]
+  },
+  "RecoverIn": {},
+  "ConnectorKind": {
+    "CUSTOM": [],
+    "AGENTIC_COMMERCE_PROTOCOL": [],
+    "CLOSE_CRM": [],
+    "CUSTOMER_IO": [],
+    "DISCORD": [],
+    "HUBSPOT": [],
+    "INNGEST": [],
+    "LOOPS": [],
+    "OTEL": [],
+    "RESEND": [],
+    "SALESFORCE": [],
+    "SEGMENT": [],
+    "SENDGRID": [],
+    "SLACK": [],
+    "TEAMS": [],
+    "TRIGGER_DEV": [],
+    "WINDMILL": [],
+    "ZAPIER": [],
+    "__str__": [
+      "self"
+    ]
+  },
+  "EndpointPatch": {},
+  "BackgroundTaskFinishedEvent2": {},
+  "SnsPatchConfig": {},
+  "OperationalWebhookEndpointHeadersOut": {},
+  "Ordering": {
+    "ASCENDING": [],
+    "DESCENDING": [],
+    "__str__": [
+      "self"
+    ]
+  },
+  "AdobeSignConfigOut": {},
+  "EndpointStats": {},
+  "EndpointOut": {},
+  "EndpointUpdate": {},
+  "IngestSourceConsumerPortalAccessIn": {},
+  "StreamIn": {},
+  "GithubConfigOut": {},
+  "StreamSinkIn": {
+    "validate_model": [
+      "cls",
+      "data",
+      "handler"
+    ]
+  },
+  "EventTypeUpdate": {},
+  "AmazonS3PatchConfig": {},
+  "EventTypeIn": {},
+  "TailscaleConfigOut": {},
+  "EventTypeOut": {},
+  "ListResponseEndpointMessageOut": {},
+  "BackgroundTaskFinishedEvent": {},
+  "MessageStatus": {
+    "SUCCESS": [],
+    "PENDING": [],
+    "FAIL": [],
+    "SENDING": [],
+    "CANCELED": [],
+    "__str__": [
+      "self"
+    ]
+  },
+  "RutterConfig": {},
+  "StreamSinkPatch": {
+    "validate_model": [
+      "cls",
+      "data",
+      "handler"
+    ]
+  },
+  "OperationalWebhookEndpointSecretIn": {},
+  "EndpointEnabledEvent": {},
+  "StreamSinkOut": {
+    "validate_model": [
+      "cls",
+      "data",
+      "handler"
+    ]
+  },
+  "OperationalWebhookEndpointIn": {},
+  "CheckbookConfig": {},
+  "IngestEndpointDisabledEventData": {},
+  "CheckbookConfigOut": {},
+  "EventTypeFromOpenApi": {},
+  "ListResponseMessageOut": {},
+  "EventTypeImportOpenApiOutData": {},
+  "EndpointMessageOut": {},
+  "IngestEndpointHeadersOut": {},
+  "MessageStatusText": {
+    "SUCCESS": [],
+    "PENDING": [],
+    "FAIL": [],
+    "SENDING": [],
+    "CANCELED": [],
+    "__str__": [
+      "self"
+    ]
+  },
+  "VapiConfigOut": {},
+  "StartingPosition": {
+    "EARLIEST": [],
+    "LATEST": [],
+    "__str__": [
+      "self"
+    ]
+  },
+  "ListResponseIngestSourceOut": {},
+  "AirwallexConfigOut": {},
+  "StreamEventTypeIn": {},
+  "IngestEndpointDisabledEvent": {},
+  "TelnyxConfigOut": {},
+  "EndpointCreatedEventData": {},
+  "ListResponseStreamSinkOut": {},
+  "MessagePrecheckIn": {},
+  "SlackConfigOut": {},
+  "EndpointSecretOut": {},
+  "BackgroundTaskStatus": {
+    "RUNNING": [],
+    "FINISHED": [],
+    "FAILED": [],
+    "__str__": [
+      "self"
+    ]
+  },
+  "MetaConfig": {},
+  "MessageAttemptOut": {},
+  "SubscribeIn": {},
+  "MessageAttemptLogEvent": {},
+  "SinkSecretOut": {},
+  "ApiTokenOut": {},
+  "AutoConfigSinkType": {
+    "validate_model": [
+      "cls",
+      "data",
+      "handler"
+    ]
+  },
+  "BackgroundTaskType": {
+    "ENDPOINT_REPLAY": [],
+    "ENDPOINT_RECOVER": [],
+    "APPLICATION_STATS": [],
+    "MESSAGE_BROADCAST": [],
+    "SDK_GENERATE": [],
+    "EVENT_TYPE_AGGREGATE": [],
+    "APPLICATION_PURGE_CONTENT": [],
+    "ENDPOINT_BULK_REPLAY": [],
+    "__str__": [
+      "self"
+    ]
+  },
+  "StreamEventTypePatch": {},
+  "MessageAttemptRecoveredEvent": {},
+  "PortIoConfig": {},
+  "EventIn": {},
+  "DocusignConfig": {},
+  "EasypostConfig": {},
+  "SinkInCommon": {},
+  "ConnectorUpdate": {},
+  "ApplicationTokenExpireIn": {},
+  "PollerV2MessageOut": {},
+  "OtelTracingPatchConfig": {},
+  "RotatePollerTokenIn": {},
+  "ListResponseBackgroundTaskOut": {},
+  "IngestEndpointTransformationPatch": {},
+  "EventTypeImportOpenApiOut": {},
+  "GithubConfig": {},
+  "ConnectorIn": {},
+  "HttpAttemptTimes": {},
+  "SinkStatusIn": {
+    "ENABLED": [],
+    "DISABLED": [],
+    "__str__": [
+      "self"
+    ]
+  },
+  "EndpointHeadersOut": {},
+  "EndpointHeadersIn": {},
+  "SqsPatchConfig": {},
+  "ExpungeAllContentsOut": {},
+  "TailscaleConfig": {},
+  "PandaDocConfigOut": {},
+  "ListResponseApplicationOut": {},
+  "IntegrationUpdate": {},
+  "RecoverOut": {},
+  "RabbitMqConfig": {},
+  "SnowflakeConfig": {},
+  "EnvironmentIn": {},
+  "IngestMessageAttemptFailingEvent": {},
+  "PortIoConfigOut": {},
+  "ListResponseOperationalWebhookEndpointOut": {},
+  "EventBridgeConfig": {},
+  "RabbitMqPatchConfig": {},
+  "DashboardAccessOut": {},
+  "IngestEndpointOut": {},
+  "BigQueryConfig": {},
+  "ListResponseMessageEndpointOut": {},
+  "VeriffConfigOut": {},
+  "SinkOtelV1Config": {},
+  "IntegrationKeyOut": {},
+  "StreamEventTypeOut": {},
+  "IngestEndpointUpdate": {},
+  "EndpointDeletedEvent": {},
+  "CronConfig": {},
+  "BackgroundTaskData": [],
+  "EventBridgePatchConfig": {},
+  "VgsConfig": {},
+  "OperationalWebhookEndpointSecretOut": {},
+  "PollingEndpointMessageOut": {},
+  "StreamOut": {},
+  "ListResponseStreamEventTypeOut": {},
+  "AggregateEventTypesOut": {},
+  "PollerV2CommitIn": {},
+  "BackgroundTaskOut": {},
+  "EnvironmentOut": {},
+  "SinkHttpConfig": {},
+  "RutterConfigOut": {},
+  "OrumIoConfigOut": {},
+  "MessageOut": {},
+  "AzureBlobStoragePatchConfig": {},
+  "MessageAttemptFailingEventData": {},
+  "HttpPatchConfig": {},
+  "OrumIoConfig": {},
+  "AppUsageStatsIn": {},
+  "BaseModel": {
+    "model_config": []
+  },
+  "EventTypeImportOpenApiIn": {},
+  "PollingEndpointConsumerSeekOut": {},
+  "MessagePollerv2ConsumerPollOptions": {
+    "_query_params": [
+      "self"
+    ]
+  },
+  "MessagePollerv2ConsumerCommitOptions": {
+    "_header_params": [
+      "self"
+    ]
+  },
+  "MessagePollerv2Async": {
+    "consumer_poll": [
+      "self",
+      "app_id",
+      "sink_id",
+      "consumer_id",
+      "options"
+    ],
+    "consumer_commit": [
+      "self",
+      "app_id",
+      "sink_id",
+      "consumer_id",
+      "poller_v2_commit_in",
+      "options"
+    ]
+  },
+  "MessagePollerv2": {
+    "consumer_poll": [
+      "self",
+      "app_id",
+      "sink_id",
+      "consumer_id",
+      "options"
+    ],
+    "consumer_commit": [
+      "self",
+      "app_id",
+      "sink_id",
+      "consumer_id",
+      "poller_v2_commit_in",
+      "options"
+    ]
+  },
+  "EndpointAutoConfigAsync": {
+    "update": [
+      "self",
+      "app_id",
+      "endpoint_id",
+      "subscribe_in"
+    ]
+  },
+  "EndpointAutoConfig": {
+    "update": [
+      "self",
+      "app_id",
+      "endpoint_id",
+      "subscribe_in"
+    ]
+  }
+}
