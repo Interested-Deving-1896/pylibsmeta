@@ -1,0 +1,3672 @@
+{
+  "T": [],
+  "logger": [],
+  "GATEWAY_REGISTRY_TIMEOUT_SECONDS": [],
+  "Supports": {
+    "model_config": [],
+    "resolve": [
+      "self"
+    ]
+  },
+  "Metadata": {
+    "model_config": []
+  },
+  "Properties": {
+    "model_config": []
+  },
+  "CacheCost": {
+    "model_config": [],
+    "get_costs": [
+      "self",
+      "core_input_cost"
+    ],
+    "validate_costs": [
+      "self"
+    ]
+  },
+  "ContextCost": {
+    "model_config": [],
+    "get_costs": [
+      "self",
+      "core_input_cost",
+      "core_output_cost",
+      "token_count"
+    ]
+  },
+  "BatchCost": {
+    "model_config": [],
+    "get_costs": [
+      "self",
+      "core_input_cost",
+      "core_output_cost"
+    ],
+    "validate_costs": [
+      "self"
+    ]
+  },
+  "CostProperties": {
+    "model_config": []
+  },
+  "BaseProviderProperties": {},
+  "all_subclasses": [
+    "cls"
+  ],
+  "get_dynamic_provider_properties_model": [],
+  "DefaultParameters": {
+    "model_config": []
+  },
+  "RawModelConfig": {
+    "model_config": [],
+    "model_dump": [
+      "self"
+    ]
+  },
+  "ModelConfig": {},
+  "ModelRegistry": [],
+  "model_config_from_json": [
+    "data"
+  ],
+  "_gateway_registry_request": [
+    "gateway_url"
+  ],
+  "_model_registry_from_gateway_payload": [
+    "payload"
+  ],
+  "_load_gateway_model_registry": [
+    "gateway_url"
+  ],
+  "path_library": [],
+  "deep_update": [
+    "base",
+    "updates"
+  ],
+  "parse_yaml_blocks": [
+    "model_blocks",
+    "registry"
+  ],
+  "_register_models": [],
+  "_provider_registry_lock": [],
+  "_imported_providers": [],
+  "register_provider": [
+    "name"
+  ],
+  "_import_all_providers": [],
+  "get_provider_registry": [],
+  "_model_registry_lock": [],
+  "get_model_registry": [],
+  "model": [
+    "model_str",
+    "override_config"
+  ],
+  "raw_model": [
+    "model_str",
+    "config"
+  ],
+  "__all__": [],
+  "RetryException": {},
+  "ImmediateRetryException": {},
+  "BackoffRetryException": {},
+  "NoRetryException": {},
+  "ImmediateRetryExhaustedError": {
+    "__init__": [
+      "self",
+      "retries",
+      "max_retries",
+      "original"
+    ]
+  },
+  "RateLimitException": {
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "MaxOutputTokensExceededError": {
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "MaxContextWindowExceededError": {
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "ContentFilterError": {
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "CONTEXT_WINDOW_PATTERN": [],
+  "is_context_window_error": [
+    "e"
+  ],
+  "ModelNoOutputError": {
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "handle_empty_response": [
+    "finish_reason",
+    "context"
+  ],
+  "InvalidStructuredOutputError": {
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "ToolCallingNotSupportedError": {
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "BadInputError": {
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "UnexpectedSystemInputError": {},
+  "GatewayMethodNotSupported": {
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "GatewayProviderError": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "NoMatchingToolCallError": {
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "RETRIABLE_EXCEPTIONS": [],
+  "RETRIABLE_EXCEPTION_CODES": [],
+  "is_retriable_error": [
+    "e"
+  ],
+  "exception_message": [
+    "exception"
+  ],
+  "MAX_LLM_LOG_LENGTH": [],
+  "MAX_LOG_HISTORY": [],
+  "round_to_milliseconds": [
+    "value"
+  ],
+  "SecondsMetric": [],
+  "ValsModel": {
+    "__rich_repr__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__str__": []
+  },
+  "create_file_logger": [
+    "name",
+    "log_file",
+    "level",
+    "console"
+  ],
+  "run_logging": [
+    "logger",
+    "log_dir",
+    "question_id"
+  ],
+  "truncate_str": [
+    "s",
+    "max_len"
+  ],
+  "get_logger": [
+    "name"
+  ],
+  "StaticResolver": {
+    "__init__": [
+      "self",
+      "mappings"
+    ],
+    "resolve": [
+      "self",
+      "host",
+      "port",
+      "family"
+    ]
+  },
+  "make_aiohttp_session": [
+    "dns_resolve"
+  ],
+  "default_aiohttp_httpx_client": [
+    "dns_resolve"
+  ],
+  "default_httpx_client": [
+    "headers"
+  ],
+  "create_openai_client_with_defaults": [
+    "api_key",
+    "base_url",
+    "dns_resolve"
+  ],
+  "create_anthropic_client_with_defaults": [
+    "api_key",
+    "base_url",
+    "default_headers"
+  ],
+  "get_context_window_for_model": [
+    "model_name"
+  ],
+  "OPENROUTER_API_URL": [],
+  "_fetched": [],
+  "MILLION": [],
+  "_fetch_openrouter_models": [],
+  "_build_model_config": [
+    "openrouter_id",
+    "api_data"
+  ],
+  "resolve_openrouter_model": [
+    "model_str"
+  ],
+  "ModelLibrarySettings": {
+    "__init__": [
+      "self"
+    ],
+    "set": [
+      "self"
+    ],
+    "unset": [
+      "self",
+      "key"
+    ],
+    "reset": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "name",
+      "default"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ]
+  },
+  "MAX_ATTRIBUTE_LENGTH": [],
+  "MAX_CONFIG_JSON_LENGTH": [],
+  "MAX_IDENTITY_JSON_LENGTH": [],
+  "MAX_IDENTITY_DEPTH": [],
+  "DEFAULT_SERVICE_NAME": [],
+  "TRACER_NAME": [],
+  "HTTP_TRACE_EXCLUDED_ROUTES": [],
+  "HTTP_TRACE_ALLOWED_ROUTES": [],
+  "SENSITIVE_ATTRIBUTE_KEYS": [],
+  "SENSITIVE_ATTRIBUTE_PARTS": [],
+  "CONFIG_FINGERPRINT_EXCLUDED_PARAM_KEYS": [],
+  "CONTENT_SAFE_ATTRIBUTE_KEYS": [],
+  "CONTENT_SAFE_SUFFIXES": [],
+  "CONTENT_BEARING_CONFIG_KEYS": [],
+  "SENTRY_TAG_ATTRIBUTE_KEYS": [],
+  "SENTRY_PROVIDER_CONFIG_ATTRIBUTE_PREFIX": [],
+  "AttributeValue": [],
+  "JsonValue": [],
+  "IdentityValidationError": {},
+  "_enabled": [],
+  "_configured": [],
+  "_httpx_instrumented": [],
+  "CONFIG_SEEN_CACHE_MAX_SIZE": [],
+  "CONFIG_SEEN_CACHE_TTL_SECONDS": [],
+  "_env_enabled": [],
+  "is_enabled": [],
+  "_load_trace_api": [],
+  "configure_telemetry": [
+    "app"
+  ],
+  "_resource_attributes": [
+    "service_name"
+  ],
+  "_otel_sampler": [
+    "sampling_module"
+  ],
+  "_httpx_method_and_path": [
+    "request_info"
+  ],
+  "_rename_httpx_span": [
+    "span",
+    "request_info"
+  ],
+  "_httpx_request_hook": [
+    "span",
+    "request_info"
+  ],
+  "_httpx_async_request_hook": [
+    "span",
+    "request_info"
+  ],
+  "_attach_sentry_search_tags": [
+    "event"
+  ],
+  "_before_send": [
+    "event",
+    "hint"
+  ],
+  "_sentry_fingerprint": [
+    "event",
+    "hint",
+    "tags"
+  ],
+  "_before_send_transaction": [
+    "event",
+    "hint"
+  ],
+  "_before_send_log": [
+    "log",
+    "_hint"
+  ],
+  "_is_sentry_tag_attribute": [
+    "key"
+  ],
+  "_sentry_search_context": [],
+  "_sentry_search_attributes": [
+    "attributes"
+  ],
+  "_merge_sentry_context": [
+    "attributes"
+  ],
+  "shutdown_telemetry": [],
+  "config_fingerprint": [
+    "model",
+    "config",
+    "params",
+    "token_retry_params"
+  ],
+  "record_config_seen": [
+    "config_hash",
+    "redacted_config"
+  ],
+  "json_attribute": [
+    "value"
+  ],
+  "normalize_identity": [
+    "identity"
+  ],
+  "_check_identity_json_size": [
+    "identity"
+  ],
+  "_normalize_identity_value": [
+    "value"
+  ],
+  "sanitize_attributes": [
+    "attributes"
+  ],
+  "_should_redact_key": [
+    "key"
+  ],
+  "_redact_mapping": [
+    "mapping"
+  ],
+  "_redact_object": [
+    "value"
+  ],
+  "_redact_config_mapping": [
+    "mapping"
+  ],
+  "_config_json_for_attribute": [
+    "redacted_config"
+  ],
+  "_mapping_keys": [
+    "value"
+  ],
+  "_prune_seen_config_hashes": [
+    "now"
+  ],
+  "is_sensitive_key": [
+    "key"
+  ],
+  "is_safe_config_attribute_key": [
+    "key"
+  ],
+  "_is_sensitive_key": [
+    "key"
+  ],
+  "_is_content_bearing_config_key": [
+    "key"
+  ],
+  "_sanitize_value": [
+    "value"
+  ],
+  "should_trace_http_route": [
+    "route"
+  ],
+  "http_server_span_name": [
+    "method",
+    "route"
+  ],
+  "_kind": [
+    "kind"
+  ],
+  "_sentry_op_for_span": [
+    "name",
+    "kind"
+  ],
+  "_sentry_origin_for_span": [
+    "name"
+  ],
+  "_span_attributes": [
+    "name",
+    "attributes",
+    "kind"
+  ],
+  "start_span": [
+    "name",
+    "attributes"
+  ],
+  "set_attributes": [
+    "attributes"
+  ],
+  "add_event": [
+    "name",
+    "attributes"
+  ],
+  "record_exception": [
+    "exc",
+    "attributes"
+  ],
+  "set_status_ok": [],
+  "set_status_error": [
+    "description"
+  ],
+  "model_attributes": [],
+  "mode_attribute": [
+    "enabled"
+  ],
+  "run_attributes": [
+    "request_context"
+  ],
+  "is_recording": [],
+  "_current_recording_span": [],
+  "_llm_logger": [],
+  "_agent_logger": [],
+  "set_logging": [
+    "enable",
+    "level",
+    "handler"
+  ],
+  "get_default_budget_tokens": [
+    "max_tokens"
+  ],
+  "THINK_TAG_RE": [],
+  "THINK_TAG_REMOVE_RE": [],
+  "THOUGHT_TAG_RE": [],
+  "THOUGHT_TAG_REMOVE_RE": [],
+  "get_reasoning_in_tag": [
+    "text"
+  ],
+  "ATIFAgent": {},
+  "ATIFMetrics": {},
+  "ATIFFinalMetrics": {},
+  "ATIFObservationResult": {},
+  "ATIFObservation": {},
+  "ATIFToolCall": {},
+  "ATIFStep": {},
+  "ATIFTrajectory": {
+    "to_json_dict": [
+      "self"
+    ],
+    "from_agent_result": [
+      "cls"
+    ]
+  },
+  "_make_step_metrics": [
+    "metadata"
+  ],
+  "_make_observation": [
+    "records"
+  ],
+  "_make_tool_calls": [
+    "turn"
+  ],
+  "DEFAULT_URL_TIMEOUT_SECONDS": [],
+  "_default_config_files": [],
+  "load_custom_model_configs": [
+    "source",
+    "registry"
+  ],
+  "load_latest_vals_model_configs": [
+    "branch"
+  ],
+  "ALL_MODELS_PATH": [],
+  "_gateway_url": [],
+  "_raise_gateway_metadata_helper_error": [
+    "helper_name"
+  ],
+  "create_config": [
+    "registry_config",
+    "override_config"
+  ],
+  "_get_model_from_registry": [
+    "registry_config",
+    "override_config"
+  ],
+  "get_registry_config": [
+    "model_str"
+  ],
+  "get_registry_model": [
+    "model_str",
+    "override_config"
+  ],
+  "get_raw_model": [
+    "model_str",
+    "config"
+  ],
+  "get_model_cost": [
+    "model_str"
+  ],
+  "_get_model_cost_cached": [
+    "model_str"
+  ],
+  "get_model_input_context_window": [
+    "model_name"
+  ],
+  "get_input_context_window_from_config": [
+    "model"
+  ],
+  "_get_model_input_context_window_cached": [
+    "model_name"
+  ],
+  "TokenDict": {},
+  "compute_model_cost": [
+    "model_str",
+    "metadata"
+  ],
+  "recompute_cost": [
+    "model_str",
+    "tokens"
+  ],
+  "get_provider_names": [],
+  "get_model_names": [
+    "provider",
+    "include_deprecated",
+    "include_alt_keys"
+  ],
+  "_get_model_names_cached": [
+    "provider",
+    "include_deprecated",
+    "include_alt_keys"
+  ],
+  "query_with_truncation_retry": [
+    "llm",
+    "doc_text",
+    "build_prompt"
+  ],
+  "concat_images": [
+    "images",
+    "max_width",
+    "max_height",
+    "resize"
+  ],
+  "trim_images": [
+    "input",
+    "max_images"
+  ],
+  "AgentStopReason": {
+    "DONE_TOOL": [],
+    "SHOULD_STOP": [],
+    "MAX_TURNS": [],
+    "MAX_TIME": [],
+    "ERROR": []
+  },
+  "AgentResult": {
+    "stop_reason": [
+      "self"
+    ],
+    "success": [
+      "self"
+    ],
+    "total_turns": [
+      "self"
+    ],
+    "error_count": [
+      "self"
+    ],
+    "tool_calls_count": [
+      "self"
+    ],
+    "tool_usage": [
+      "self"
+    ],
+    "final_retry_overhead_seconds": [
+      "self"
+    ],
+    "final_effective_duration_seconds": [
+      "self"
+    ],
+    "final_aggregated_metadata": [
+      "self"
+    ],
+    "final_compaction_metadata": [
+      "self"
+    ]
+  },
+  "Agent": {
+    "__init__": [
+      "self",
+      "llm",
+      "tools"
+    ],
+    "__rich_repr__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__str__": [],
+    "_build_log_dir": [
+      "base",
+      "name",
+      "model_name"
+    ],
+    "name": [
+      "self"
+    ],
+    "model_name": [
+      "self"
+    ],
+    "config": [
+      "self"
+    ],
+    "tool_definitions": [
+      "self"
+    ],
+    "run": [
+      "self",
+      "input"
+    ],
+    "_write_init_dir": [
+      "self",
+      "output_dir",
+      "input",
+      "state",
+      "logger"
+    ],
+    "_write_turn_dir": [
+      "self",
+      "output_dir",
+      "turn_number",
+      "turn",
+      "state",
+      "history",
+      "logger"
+    ],
+    "_write_error_turn_dir": [
+      "self",
+      "output_dir",
+      "turn_number",
+      "error_turn",
+      "logger"
+    ],
+    "_run": [
+      "self",
+      "input"
+    ],
+    "_execute_tool_calls": [
+      "self",
+      "tool_calls",
+      "state",
+      "history",
+      "logger"
+    ],
+    "_execute_tool": [
+      "self",
+      "tool_call",
+      "state",
+      "logger"
+    ]
+  },
+  "DEFAULT_COMPACTION_PROMPT": [],
+  "DEFAULT_SUMMARY_PREFIX": [],
+  "truncate_oldest": [
+    "history"
+  ],
+  "TurnMessageHook": {
+    "__call__": [
+      "self",
+      "turn_number",
+      "max_turns"
+    ]
+  },
+  "ToolFilterHook": {
+    "__call__": [
+      "self",
+      "turn_number",
+      "max_turns",
+      "tools"
+    ]
+  },
+  "TurnLimit": {
+    "model_config": [],
+    "_validate_max_turns": [
+      "cls",
+      "v"
+    ]
+  },
+  "TimeMessageHook": {
+    "__call__": [
+      "self",
+      "elapsed_seconds",
+      "max_seconds"
+    ]
+  },
+  "TimeLimit": {
+    "model_config": [],
+    "_validate_max_seconds": [
+      "cls",
+      "v"
+    ]
+  },
+  "HistoryCompaction": {
+    "_validate_threshold_tokens": [
+      "cls",
+      "v"
+    ],
+    "_validate_threshold_percentage": [
+      "cls",
+      "v"
+    ],
+    "_validate_max_failures": [
+      "cls",
+      "v"
+    ],
+    "_validate_max_compaction_context_retries": [
+      "cls",
+      "v"
+    ],
+    "_validate_one_threshold": [
+      "self"
+    ]
+  },
+  "AgentConfig": {
+    "model_config": [],
+    "_validate_max_tool_calls": [
+      "cls",
+      "v"
+    ]
+  },
+  "ToolOutput": {
+    "success": [
+      "self"
+    ]
+  },
+  "Tool": {
+    "__init_subclass__": [
+      "cls"
+    ],
+    "__init__": [
+      "self"
+    ],
+    "execute": [
+      "self",
+      "args",
+      "state",
+      "logger"
+    ],
+    "definition": [
+      "self"
+    ]
+  },
+  "ProviderTool": {
+    "execution_type": [],
+    "__init__": [
+      "self",
+      "name",
+      "body",
+      "description"
+    ],
+    "definition": [
+      "self"
+    ],
+    "execute": [
+      "self",
+      "args",
+      "state",
+      "logger"
+    ]
+  },
+  "SerializableException": {
+    "from_exception": [
+      "cls",
+      "e"
+    ]
+  },
+  "ToolCallSummary": {},
+  "ToolCallRecord": {
+    "success": [
+      "self"
+    ],
+    "to_summary": [
+      "self"
+    ]
+  },
+  "ErrorTurn": {},
+  "CompactionSummary": {
+    "success": [
+      "self"
+    ]
+  },
+  "TurnSummary": {
+    "effective_duration_seconds": [
+      "self"
+    ]
+  },
+  "AgentTurn": {
+    "effective_duration_seconds": [
+      "self"
+    ],
+    "to_summary": [
+      "self"
+    ]
+  },
+  "get_tool": [
+    "name"
+  ],
+  "list_tools": [],
+  "_build_parser": [],
+  "_load_tool_module": [
+    "module_name"
+  ],
+  "_collect_tools": [
+    "args"
+  ],
+  "_read_problem_statement": [
+    "path"
+  ],
+  "_run": [
+    "args"
+  ],
+  "main": [],
+  "TurnResult": {
+    "response_text": [
+      "self"
+    ],
+    "tool_calls": [
+      "self"
+    ]
+  },
+  "BeforeQueryHook": {
+    "__call__": [
+      "self",
+      "history",
+      "last_error"
+    ]
+  },
+  "default_before_query": [
+    "history",
+    "last_error"
+  ],
+  "ShouldStopHook": {
+    "__call__": [
+      "self",
+      "turn_result"
+    ]
+  },
+  "default_should_stop": [
+    "turn_result"
+  ],
+  "OnToolResultHook": {
+    "__call__": [
+      "self",
+      "record",
+      "state"
+    ]
+  },
+  "default_on_tool_result": [
+    "record",
+    "state"
+  ],
+  "DetermineAnswerHook": {
+    "__call__": [
+      "self",
+      "state",
+      "turns",
+      "final_error"
+    ]
+  },
+  "default_determine_answer": [
+    "state",
+    "turns",
+    "final_error"
+  ],
+  "default_compaction_hook": [
+    "llm",
+    "history_compaction"
+  ],
+  "AgentHooks": {},
+  "MIN_COMPACTION_THRESHOLD_HEADROOM_TOKENS": [],
+  "estimate_next_input_tokens": [
+    "llm",
+    "previous_turn"
+  ],
+  "EmptyCompactionSummaryError": {},
+  "CompactionHook": {
+    "__call__": [
+      "self",
+      "history"
+    ]
+  },
+  "apply_compaction": [
+    "hook",
+    "history"
+  ],
+  "resolve_threshold_tokens": [
+    "llm",
+    "cfg"
+  ],
+  "llm_summary_compactor": [
+    "llm",
+    "cfg"
+  ],
+  "ConductorConfig": {},
+  "ConductorStopReason": {
+    "AUDITOR_DONE": [],
+    "MAX_EXCHANGES": [],
+    "MAX_TIME": [],
+    "ERROR": []
+  },
+  "ConversationMessage": {},
+  "ConductorResult": {
+    "auditor_aggregated_metadata": [
+      "self"
+    ],
+    "target_aggregated_metadata": [
+      "self"
+    ],
+    "final_aggregated_metadata": [
+      "self"
+    ]
+  },
+  "DEFAULT_INITIAL_PROMPT": [],
+  "ConductorAgent": {
+    "__init__": [
+      "self",
+      "auditor",
+      "target"
+    ],
+    "__rich_repr__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__str__": [],
+    "_build_log_dir": [
+      "base",
+      "name",
+      "auditor_model",
+      "target_model"
+    ],
+    "run": [
+      "self"
+    ],
+    "_write_init_dir": [
+      "self",
+      "output_dir",
+      "state",
+      "logger"
+    ],
+    "_run": [
+      "self"
+    ]
+  },
+  "TAVILY_SEARCH_URL": [],
+  "TAVILY_TIMEOUT": [],
+  "DATE_REGEX": [],
+  "retry_on_429": [
+    "func"
+  ],
+  "TavilyWebSearch": {
+    "name": [],
+    "description": [],
+    "required": [],
+    "__init__": [
+      "self",
+      "max_end_date",
+      "tavily_api_key"
+    ],
+    "_execute_search": [
+      "self",
+      "search_query",
+      "start_date",
+      "end_date",
+      "number_of_results"
+    ],
+    "execute": [
+      "self",
+      "args",
+      "state",
+      "logger"
+    ]
+  },
+  "SubmitTool": {
+    "name": [],
+    "description": [],
+    "execute": [
+      "self",
+      "args",
+      "state",
+      "logger"
+    ]
+  },
+  "_DEFAULT_MAX_LEN": [],
+  "_CHUNK_SIZE": [],
+  "_set_resource_limits": [],
+  "_read_stream": [
+    "stream",
+    "max_len"
+  ],
+  "_wait_for_returncode": [
+    "proc",
+    "timeout"
+  ],
+  "_kill_process_group": [
+    "pgid",
+    "logger"
+  ],
+  "_cancel_tasks": [],
+  "BashTool": {
+    "name": [],
+    "description": [],
+    "required": [],
+    "__init__": [
+      "self"
+    ],
+    "execute": [
+      "self",
+      "args",
+      "state",
+      "logger"
+    ]
+  },
+  "StopTool": {
+    "name": [],
+    "description": [],
+    "execute": [
+      "self",
+      "args",
+      "state",
+      "logger"
+    ]
+  },
+  "map_amazon_finish_reason": [
+    "stop_reason"
+  ],
+  "AmazonModel": {
+    "_get_default_api_key": [
+      "self"
+    ],
+    "get_client": [
+      "self",
+      "api_key",
+      "base_url"
+    ],
+    "__init__": [
+      "self",
+      "model_name",
+      "provider"
+    ],
+    "cache_control": [],
+    "get_tool_call_ids": [
+      "self",
+      "input"
+    ],
+    "parse_input": [
+      "self",
+      "input"
+    ],
+    "parse_image": [
+      "self",
+      "image"
+    ],
+    "parse_file": [
+      "self",
+      "file"
+    ],
+    "parse_tools": [
+      "self",
+      "tools"
+    ],
+    "upload_file": [
+      "self",
+      "name",
+      "mime",
+      "bytes",
+      "type"
+    ],
+    "build_body": [
+      "self",
+      "input"
+    ],
+    "stream_response": [
+      "self",
+      "response"
+    ],
+    "_query_impl": [
+      "self",
+      "input"
+    ]
+  },
+  "map_ai21_finish_reason": [
+    "finish_reason",
+    "has_tool_calls"
+  ],
+  "AI21LabsModel": {
+    "_get_default_api_key": [
+      "self"
+    ],
+    "get_client": [
+      "self",
+      "api_key",
+      "base_url"
+    ],
+    "__init__": [
+      "self",
+      "model_name",
+      "provider"
+    ],
+    "parse_input": [
+      "self",
+      "input"
+    ],
+    "parse_image": [
+      "self",
+      "image"
+    ],
+    "parse_file": [
+      "self",
+      "file"
+    ],
+    "parse_tools": [
+      "self",
+      "tools"
+    ],
+    "upload_file": [
+      "self",
+      "name",
+      "mime",
+      "bytes",
+      "type"
+    ],
+    "build_body": [
+      "self",
+      "input"
+    ],
+    "_query_impl": [
+      "self",
+      "input"
+    ]
+  },
+  "map_mistral_finish_reason": [
+    "finish_reason"
+  ],
+  "MistralModel": {
+    "_get_default_api_key": [
+      "self"
+    ],
+    "get_client": [
+      "self",
+      "api_key",
+      "base_url"
+    ],
+    "__init__": [
+      "self",
+      "model_name",
+      "provider"
+    ],
+    "parse_input": [
+      "self",
+      "input"
+    ],
+    "parse_image": [
+      "self",
+      "image"
+    ],
+    "parse_file": [
+      "self",
+      "file"
+    ],
+    "parse_tools": [
+      "self",
+      "tools"
+    ],
+    "upload_file": [
+      "self",
+      "name",
+      "mime",
+      "bytes",
+      "type"
+    ],
+    "build_body": [
+      "self",
+      "input"
+    ],
+    "_query_impl": [
+      "self",
+      "input"
+    ]
+  },
+  "_to_json_value": [
+    "value"
+  ],
+  "_safe_search_results": [
+    "value",
+    "query_logger"
+  ],
+  "map_openai_completions_finish_reason": [
+    "finish_reason"
+  ],
+  "map_openai_responses_finish_reason": [
+    "status",
+    "incomplete_reason",
+    "has_tool_calls"
+  ],
+  "OpenAIBatchMixin": {
+    "__init__": [
+      "self",
+      "openai"
+    ],
+    "create_batch_query_request": [
+      "self",
+      "custom_id",
+      "input",
+      "output_schema"
+    ],
+    "batch_query": [
+      "self",
+      "batch_name",
+      "requests"
+    ],
+    "get_batch_results": [
+      "self",
+      "batch_id"
+    ],
+    "get_batch_progress": [
+      "self",
+      "batch_id"
+    ],
+    "cancel_batch_request": [
+      "self",
+      "batch_id"
+    ],
+    "get_batch_status": [
+      "self",
+      "batch_id"
+    ],
+    "is_batch_status_completed": [
+      "cls",
+      "batch_status"
+    ],
+    "is_batch_status_failed": [
+      "cls",
+      "batch_status"
+    ],
+    "is_batch_status_cancelled": [
+      "cls",
+      "batch_status"
+    ]
+  },
+  "OpenAIToolCallMode": [],
+  "OpenAIConfig": {},
+  "OpenAIModel": {
+    "provider_config": [],
+    "_get_default_api_key": [
+      "self"
+    ],
+    "get_client": [
+      "self",
+      "api_key",
+      "base_url"
+    ],
+    "__init__": [
+      "self",
+      "model_name",
+      "provider"
+    ],
+    "get_tool_call_ids": [
+      "self",
+      "input"
+    ],
+    "parse_input": [
+      "self",
+      "input"
+    ],
+    "parse_image": [
+      "self",
+      "image"
+    ],
+    "parse_file": [
+      "self",
+      "file"
+    ],
+    "parse_tools": [
+      "self",
+      "tools"
+    ],
+    "upload_file": [
+      "self",
+      "name",
+      "mime",
+      "bytes",
+      "type"
+    ],
+    "_build_body_completions": [
+      "self",
+      "input"
+    ],
+    "_query_completions": [
+      "self",
+      "input"
+    ],
+    "_check_deep_research_args": [
+      "self",
+      "tools"
+    ],
+    "build_body": [
+      "self",
+      "input"
+    ],
+    "_query_impl": [
+      "self",
+      "input"
+    ],
+    "get_rate_limit": [
+      "self"
+    ],
+    "query_json": [
+      "self",
+      "input",
+      "pydantic_model",
+      "output_schema"
+    ],
+    "get_embedding": [
+      "self",
+      "text",
+      "model"
+    ],
+    "moderate_content": [
+      "self",
+      "text"
+    ],
+    "_calculate_cost": [
+      "self",
+      "metadata",
+      "batch",
+      "bill_reasoning"
+    ]
+  },
+  "map_xai_finish_reason": [
+    "finish_reason"
+  ],
+  "XAIModel": {
+    "_get_default_api_key": [
+      "self"
+    ],
+    "get_client": [
+      "self",
+      "api_key",
+      "base_url"
+    ],
+    "__init__": [
+      "self",
+      "model_name",
+      "provider"
+    ],
+    "get_tool_call_ids": [
+      "self",
+      "input"
+    ],
+    "parse_input": [
+      "self",
+      "input"
+    ],
+    "parse_image": [
+      "self",
+      "image"
+    ],
+    "parse_file": [
+      "self",
+      "file"
+    ],
+    "parse_tools": [
+      "self",
+      "tools"
+    ],
+    "upload_file": [
+      "self",
+      "name",
+      "mime",
+      "bytes",
+      "type"
+    ],
+    "build_body": [
+      "self",
+      "input"
+    ],
+    "_query_impl": [
+      "self",
+      "input"
+    ],
+    "count_tokens": [
+      "self",
+      "input"
+    ],
+    "_calculate_cost": [
+      "self",
+      "metadata",
+      "batch",
+      "bill_reasoning"
+    ]
+  },
+  "AzureOpenAIModel": {
+    "_get_default_api_key": [
+      "self"
+    ],
+    "get_client": [
+      "self",
+      "api_key",
+      "base_url"
+    ],
+    "__init__": [
+      "self",
+      "model_name",
+      "provider"
+    ]
+  },
+  "FAIL_RATE": [],
+  "BATCH_EXP": [],
+  "DummyAIBatchMixin": {
+    "__init__": [
+      "self",
+      "openai"
+    ],
+    "create_batch_query_request": [
+      "self",
+      "custom_id",
+      "input",
+      "output_schema"
+    ],
+    "batch_query": [
+      "self",
+      "batch_name",
+      "requests"
+    ],
+    "get_batch_results": [
+      "self",
+      "batch_id"
+    ],
+    "_get_batch_obj": [
+      "self",
+      "batch_id"
+    ],
+    "get_batch_progress": [
+      "self",
+      "batch_id"
+    ],
+    "cancel_batch_request": [
+      "self",
+      "batch_id"
+    ],
+    "get_batch_status": [
+      "self",
+      "batch_id"
+    ],
+    "is_batch_status_completed": [
+      "cls",
+      "batch_status"
+    ],
+    "is_batch_status_cancelled": [
+      "cls",
+      "batch_status"
+    ],
+    "is_batch_status_failed": [
+      "cls",
+      "batch_status"
+    ]
+  },
+  "DummyAIModel": {
+    "_get_default_api_key": [
+      "self"
+    ],
+    "get_client": [
+      "self",
+      "api_key",
+      "base_url"
+    ],
+    "__init__": [
+      "self",
+      "model_name",
+      "provider"
+    ],
+    "parse_input": [
+      "self",
+      "input"
+    ],
+    "parse_image": [
+      "self",
+      "image"
+    ],
+    "parse_file": [
+      "self",
+      "file"
+    ],
+    "parse_tools": [
+      "self",
+      "tools"
+    ],
+    "upload_file": [
+      "self",
+      "name",
+      "mime",
+      "bytes",
+      "type"
+    ],
+    "build_body": [
+      "self",
+      "input"
+    ],
+    "mock_response": [
+      "self",
+      "body"
+    ],
+    "_query_impl": [
+      "self",
+      "input"
+    ]
+  },
+  "ANTHROPIC_FILES_BETA": [],
+  "ANTHROPIC_INTERLEAVED_THINKING_BETA": [],
+  "ANTHROPIC_SERVER_SIDE_FALLBACK_BETA": [],
+  "_json_safe_anthropic_value": [
+    "value"
+  ],
+  "map_anthropic_finish_reason": [
+    "stop_reason"
+  ],
+  "AnthropicConfig": {
+    "validate_fallback_models": [
+      "self"
+    ]
+  },
+  "AnthropicBatchMixin": {
+    "COMPLETED_RESULT_TYPES": [],
+    "__init__": [
+      "self",
+      "model"
+    ],
+    "create_batch_query_request": [
+      "self",
+      "custom_id",
+      "input",
+      "output_schema"
+    ],
+    "batch_query": [
+      "self",
+      "batch_name",
+      "requests"
+    ],
+    "get_batch_results": [
+      "self",
+      "batch_id"
+    ],
+    "get_batch_progress": [
+      "self",
+      "batch_id"
+    ],
+    "cancel_batch_request": [
+      "self",
+      "batch_id"
+    ],
+    "get_batch_status": [
+      "self",
+      "batch_id"
+    ],
+    "is_batch_status_completed": [
+      "cls",
+      "batch_status"
+    ],
+    "is_batch_status_failed": [
+      "cls",
+      "batch_status"
+    ],
+    "is_batch_status_cancelled": [
+      "cls",
+      "batch_status"
+    ]
+  },
+  "AnthropicModel": {
+    "provider_config": [],
+    "_get_default_api_key": [
+      "self"
+    ],
+    "get_client": [
+      "self",
+      "api_key",
+      "base_url"
+    ],
+    "__init__": [
+      "self",
+      "model_name",
+      "provider"
+    ],
+    "_fallback_models_for_request": [
+      "self"
+    ],
+    "get_tool_call_ids": [
+      "self",
+      "input"
+    ],
+    "parse_input": [
+      "self",
+      "input"
+    ],
+    "parse_image": [
+      "self",
+      "image"
+    ],
+    "parse_file": [
+      "self",
+      "file"
+    ],
+    "parse_tools": [
+      "self",
+      "tools"
+    ],
+    "upload_file": [
+      "self",
+      "name",
+      "mime",
+      "bytes",
+      "type"
+    ],
+    "cache_control": [],
+    "build_body": [
+      "self",
+      "input"
+    ],
+    "_query_impl": [
+      "self",
+      "input"
+    ],
+    "get_rate_limit": [
+      "self"
+    ],
+    "count_tokens": [
+      "self",
+      "input"
+    ],
+    "_calculate_cost": [
+      "self",
+      "metadata",
+      "batch",
+      "bill_reasoning"
+    ]
+  },
+  "CohereModel": {
+    "__init__": [
+      "self",
+      "model_name",
+      "provider"
+    ],
+    "_get_extra_body": [
+      "self"
+    ]
+  },
+  "VercelModel": {
+    "__init__": [
+      "self",
+      "model_name",
+      "provider"
+    ]
+  },
+  "MinimaxModel": {
+    "__init__": [
+      "self",
+      "model_name",
+      "provider"
+    ],
+    "count_tokens": [
+      "self",
+      "input"
+    ]
+  },
+  "KimiConfig": {},
+  "KimiModel": {
+    "provider_config": [],
+    "__init__": [
+      "self",
+      "model_name",
+      "provider"
+    ],
+    "_get_extra_body": [
+      "self"
+    ],
+    "_preprocess_files": [
+      "self",
+      "input"
+    ],
+    "_query_impl": [
+      "self",
+      "input"
+    ]
+  },
+  "OpenRouterModel": {
+    "__init__": [
+      "self",
+      "model_name",
+      "provider"
+    ],
+    "_get_extra_body": [
+      "self"
+    ]
+  },
+  "DeepSeekModel": {
+    "__init__": [
+      "self",
+      "model_name",
+      "provider"
+    ],
+    "_get_extra_body": [
+      "self"
+    ]
+  },
+  "XiaomiModel": {
+    "__init__": [
+      "self",
+      "model_name",
+      "provider"
+    ]
+  },
+  "ZAIConfig": {},
+  "ZAIModel": {
+    "provider_config": [],
+    "__init__": [
+      "self",
+      "model_name",
+      "provider"
+    ],
+    "_get_extra_body": [
+      "self"
+    ]
+  },
+  "MetaConfig": {},
+  "MetaModel": {
+    "provider_config": [],
+    "__init__": [
+      "self",
+      "model_name",
+      "provider"
+    ],
+    "upload_file": [
+      "self",
+      "name",
+      "mime",
+      "bytes",
+      "type"
+    ]
+  },
+  "TogetherConfig": {},
+  "TogetherModel": {
+    "provider_config": [],
+    "__init__": [
+      "self",
+      "model_name",
+      "provider"
+    ],
+    "_calculate_cost": [
+      "self",
+      "metadata",
+      "batch",
+      "bill_reasoning"
+    ]
+  },
+  "NvidiaModel": {
+    "__init__": [
+      "self",
+      "model_name",
+      "provider"
+    ],
+    "_normalize_messages_for_nvidia": [
+      "self",
+      "messages"
+    ],
+    "_normalize_input_items_for_nvidia": [
+      "self",
+      "input"
+    ],
+    "_query_impl": [
+      "self",
+      "input"
+    ],
+    "build_body": [
+      "self",
+      "input"
+    ]
+  },
+  "PoolsideModel": {
+    "__init__": [
+      "self",
+      "model_name",
+      "provider"
+    ]
+  },
+  "FireworksConfig": {},
+  "FireworksModel": {
+    "provider_config": [],
+    "__init__": [
+      "self",
+      "model_name",
+      "provider"
+    ],
+    "_calculate_cost": [
+      "self",
+      "metadata",
+      "batch",
+      "bill_reasoning"
+    ]
+  },
+  "ArceeModel": {
+    "__init__": [
+      "self",
+      "model_name",
+      "provider"
+    ]
+  },
+  "MercuryModel": {
+    "__init__": [
+      "self",
+      "model_name",
+      "provider"
+    ]
+  },
+  "AlibabaConfig": {},
+  "AlibabaModel": {
+    "provider_config": [],
+    "__init__": [
+      "self",
+      "model_name",
+      "provider"
+    ],
+    "_fix_content_null_in_messages": [
+      "self",
+      "messages"
+    ],
+    "build_body": [
+      "self",
+      "input"
+    ],
+    "_is_qwen_36_or_later": [
+      "self"
+    ],
+    "_get_extra_body": [
+      "self"
+    ],
+    "_calculate_cost": [
+      "self",
+      "metadata",
+      "batch",
+      "bill_reasoning"
+    ]
+  },
+  "PerplexityModel": {
+    "__init__": [
+      "self",
+      "model_name",
+      "provider"
+    ]
+  },
+  "extract_text_from_json_response": [
+    "response"
+  ],
+  "parse_predictions_jsonl": [
+    "jsonl"
+  ],
+  "serialize_part_to_json": [
+    "p"
+  ],
+  "serialize_content_to_json": [
+    "c"
+  ],
+  "serialize_safety_settings": [
+    "safety"
+  ],
+  "build_generation_config": [
+    "cfg"
+  ],
+  "GoogleBatchMixin": {
+    "FAILED_STATE": [],
+    "CANCELLED_STATE": [],
+    "__init__": [
+      "self",
+      "google"
+    ],
+    "create_batch_query_request": [
+      "self",
+      "custom_id",
+      "input",
+      "output_schema"
+    ],
+    "batch_query": [
+      "self",
+      "batch_name",
+      "requests"
+    ],
+    "get_batch_results": [
+      "self",
+      "batch_id"
+    ],
+    "cancel_batch_request": [
+      "self",
+      "batch_id"
+    ],
+    "get_batch_progress": [
+      "self",
+      "batch_id"
+    ],
+    "get_batch_status": [
+      "self",
+      "batch_id"
+    ],
+    "is_batch_status_completed": [
+      "cls",
+      "batch_status"
+    ],
+    "is_batch_status_failed": [
+      "cls",
+      "batch_status"
+    ],
+    "is_batch_status_cancelled": [
+      "cls",
+      "batch_status"
+    ]
+  },
+  "map_google_finish_reason": [
+    "finish_reason",
+    "has_tool_calls"
+  ],
+  "generate_tool_call_id": [
+    "tool_name"
+  ],
+  "GoogleConfig": {},
+  "GoogleModel": {
+    "provider_config": [],
+    "_get_default_api_key": [
+      "self"
+    ],
+    "get_client": [
+      "self",
+      "api_key",
+      "base_url"
+    ],
+    "__init__": [
+      "self",
+      "model_name",
+      "provider"
+    ],
+    "parse_input": [
+      "self",
+      "input"
+    ],
+    "parse_file": [
+      "self",
+      "file"
+    ],
+    "parse_image": [
+      "self",
+      "image"
+    ],
+    "parse_tools": [
+      "self",
+      "tools"
+    ],
+    "upload_file": [
+      "self",
+      "name",
+      "mime",
+      "bytes",
+      "type"
+    ],
+    "build_body": [
+      "self",
+      "input"
+    ],
+    "_query_impl": [
+      "self",
+      "input"
+    ],
+    "count_tokens": [
+      "self",
+      "input"
+    ],
+    "_calculate_cost": [
+      "self",
+      "metadata",
+      "batch",
+      "bill_reasoning"
+    ],
+    "query_json": [
+      "self",
+      "input",
+      "pydantic_model",
+      "output_schema"
+    ]
+  },
+  "ExponentialBackoffRetrier": {
+    "__init__": [
+      "self",
+      "logger",
+      "max_tries",
+      "max_time",
+      "retry_callback"
+    ],
+    "_calculate_wait_time": [
+      "self",
+      "attempt",
+      "exception"
+    ],
+    "_on_retry": [
+      "self",
+      "exception",
+      "elapsed",
+      "wait_time"
+    ],
+    "_pre_function": [
+      "self"
+    ],
+    "_post_function": [
+      "self",
+      "result"
+    ],
+    "validate": [
+      "self"
+    ]
+  },
+  "jitter": [
+    "wait"
+  ],
+  "RetrierType": [],
+  "R": [],
+  "BaseRetrier": {
+    "immediate_retry_wrapper": [
+      "func",
+      "logger"
+    ],
+    "__init__": [
+      "self",
+      "strategy",
+      "logger",
+      "max_tries",
+      "max_time",
+      "retry_callback"
+    ],
+    "_calculate_wait_time": [
+      "self",
+      "attempt",
+      "exception"
+    ],
+    "_on_retry": [
+      "self",
+      "exception",
+      "elapsed",
+      "wait_time"
+    ],
+    "_should_retry": [
+      "self",
+      "exception"
+    ],
+    "_handle_giveup": [
+      "self",
+      "exception",
+      "reason"
+    ],
+    "_pre_function": [
+      "self"
+    ],
+    "_post_function": [
+      "self",
+      "result"
+    ],
+    "execute": [
+      "self",
+      "func"
+    ],
+    "validate": [
+      "self"
+    ]
+  },
+  "retry_decorator": [
+    "retrier"
+  ],
+  "REQUIRED_ACTIVE_WORKERS": [],
+  "COMPARE_DELETE_LUA": [],
+  "REFRESH_ACTIVE_LUA": [],
+  "_Demoted": {},
+  "LoopConfig": {
+    "__init__": [
+      "self",
+      "key",
+      "limit",
+      "tokens_per_second"
+    ]
+  },
+  "_delete_active_key_if_owned": [
+    "active_key",
+    "loop_id"
+  ],
+  "_refresh_active_key_if_unowned_or_owned": [
+    "active_key",
+    "loop_id",
+    "ttl"
+  ],
+  "background_loops": [
+    "cfg",
+    "get_rate_limit_func",
+    "logger",
+    "standby"
+  ],
+  "AsyncRedisClient": {
+    "get": [
+      "self",
+      "name"
+    ],
+    "set": [
+      "self",
+      "name",
+      "value",
+      "ex"
+    ],
+    "exists": [
+      "self"
+    ],
+    "delete": [
+      "self"
+    ],
+    "expire": [
+      "self",
+      "name",
+      "time"
+    ],
+    "incr": [
+      "self",
+      "name"
+    ],
+    "lpos": [
+      "self",
+      "name",
+      "value"
+    ],
+    "rpush": [
+      "self",
+      "name"
+    ],
+    "lrem": [
+      "self",
+      "name",
+      "count",
+      "value"
+    ],
+    "lindex": [
+      "self",
+      "name",
+      "index"
+    ],
+    "lpop": [
+      "self",
+      "name"
+    ],
+    "lrange": [
+      "self",
+      "name",
+      "start",
+      "end"
+    ],
+    "blpop": [
+      "self",
+      "keys",
+      "timeout"
+    ],
+    "ttl": [
+      "self",
+      "name"
+    ],
+    "zadd": [
+      "self",
+      "name",
+      "mapping",
+      "nx"
+    ],
+    "zrem": [
+      "self",
+      "name"
+    ],
+    "zscore": [
+      "self",
+      "name",
+      "value"
+    ],
+    "zrange": [
+      "self",
+      "name",
+      "start",
+      "end"
+    ],
+    "zrangebyscore": [
+      "self",
+      "name",
+      "min",
+      "max",
+      "withscores"
+    ],
+    "sadd": [
+      "self",
+      "name"
+    ],
+    "srem": [
+      "self",
+      "name"
+    ],
+    "scard": [
+      "self",
+      "name"
+    ],
+    "smembers": [
+      "self",
+      "name"
+    ],
+    "zcard": [
+      "self",
+      "name"
+    ],
+    "hexists": [
+      "self",
+      "name",
+      "key"
+    ],
+    "hset": [
+      "self",
+      "name",
+      "mapping"
+    ],
+    "hdel": [
+      "self",
+      "name"
+    ],
+    "hgetall": [
+      "self",
+      "name"
+    ],
+    "keys": [
+      "self",
+      "pattern"
+    ],
+    "scan_iter": [
+      "self",
+      "match",
+      "count"
+    ],
+    "eval": [
+      "self",
+      "script",
+      "numkeys"
+    ],
+    "lock": [
+      "self",
+      "name",
+      "timeout"
+    ],
+    "pipeline": [
+      "self",
+      "transaction"
+    ]
+  },
+  "KEY_PREFIX": [],
+  "DEFAULT_STATUS_QUEUE_ENTRY_LIMIT": [],
+  "STATUS_PIPELINE_COMMAND_LIMIT": [],
+  "StatusPipelineCommand": [],
+  "set_redis_client": [
+    "client"
+  ],
+  "validate_redis_client": [
+    "key",
+    "missing_key_message"
+  ],
+  "scan_keys": [
+    "pattern"
+  ],
+  "_execute_status_pipeline": [
+    "commands"
+  ],
+  "get_token_keys": [],
+  "cleanup_all_keys": [],
+  "InflightRequest": {},
+  "DynamicEstimate": {},
+  "TokenRetryConfig": {},
+  "TokenRetryStatus": {},
+  "QueueEntry": {},
+  "QueueStatus": {},
+  "ModelStatus": {},
+  "Status": {},
+  "get_status": [
+    "queue_entry_limit",
+    "include_historical"
+  ],
+  "_get_token_retry_status": [],
+  "_get_status_for_token_key": [
+    "token_key",
+    "max_priority",
+    "min_priority",
+    "priority_stale_age"
+  ],
+  "_make_queue_entry": [],
+  "_get_queue_entries": [
+    "base_key",
+    "run_ids",
+    "inflight_by_run",
+    "queued_by_run",
+    "active_heads"
+  ],
+  "_get_queue_status": [
+    "inflight_by_run",
+    "queued_by_run",
+    "token_base_keys"
+  ],
+  "DEDUCT_TOKENS_LUA": [],
+  "REFILL_TOKENS_LUA": [],
+  "CORRECT_TOKENS_LUA": [],
+  "ADJUST_RATIO_LUA": [],
+  "HAS_LOWER_PRIORITY_LUA": [],
+  "INIT_TOKENS_LUA": [],
+  "TokenRetrier": {
+    "get_token_key": [
+      "client_registry_key"
+    ],
+    "get_priority_key": [
+      "client_registry_key",
+      "priority"
+    ],
+    "init_remaining_tokens": [
+      "client_registry_key",
+      "limit",
+      "limit_refresh_seconds",
+      "logger",
+      "get_rate_limit_func"
+    ],
+    "__init__": [
+      "self",
+      "logger",
+      "max_tries",
+      "max_time",
+      "retry_callback"
+    ],
+    "_telemetry_ids": [
+      "self"
+    ],
+    "_calculate_wait_time": [
+      "self",
+      "attempt",
+      "exception"
+    ],
+    "_on_retry": [
+      "self",
+      "exception",
+      "elapsed",
+      "wait_time"
+    ],
+    "_has_lower_priority_waiting": [
+      "self"
+    ],
+    "_pre_function": [
+      "self"
+    ],
+    "_adjust_dynamic_estimate_ratio": [
+      "self",
+      "actual_tokens"
+    ],
+    "_post_function": [
+      "self",
+      "result"
+    ],
+    "execute": [
+      "self",
+      "func"
+    ],
+    "validate": [
+      "self"
+    ]
+  },
+  "HOURS_24": [],
+  "BENCHMARK_NOTIFY_PROCEED": [],
+  "BENCHMARK_NOTIFY_CANCELLED": [],
+  "HEARTBEAT_INTERVAL": [],
+  "HEARTBEAT_TTL": [],
+  "QUEUE_NOTIFY_POLL_INTERVAL": [],
+  "QUEUE_WAITER_STALL_LOG_THRESHOLD": [],
+  "HEARTBEAT_STALL_LOG_THRESHOLD": [],
+  "BENCHMARK_QUEUE_DEBUG_ENABLED": [],
+  "EARLY_RELEASE_GRACE_PERIOD": [],
+  "MAX_ACTIVE_HEADS": [],
+  "ACTIVE_HEAD_SCALE_UP_THRESHOLD": [],
+  "ACTIVE_HEAD_SCALE_DOWN_THRESHOLD": [],
+  "ACTIVE_HEAD_SCALE_DOWN_INTERVAL": [],
+  "ACTIVE_HEAD_SCALE_UP_INTERVAL": [],
+  "DEFAULT_ACTIVE_HEAD_WINDOW": [],
+  "ACTIVE_HEAD_QUEUE_SCAN_LIMIT": [],
+  "EARLY_RELEASE_LUA": [],
+  "CONTROL_AND_ADMIT_HEADS_LUA": [],
+  "BenchmarkQueueCancelled": {},
+  "_lpop_long": [
+    "keys",
+    "logger",
+    "run_id"
+  ],
+  "get_active_heads_key": [
+    "base_key"
+  ],
+  "_control_and_admit_heads": [
+    "redis_client",
+    "run_queue_key",
+    "base_key",
+    "token_key",
+    "logger"
+  ],
+  "benchmark_queue": [
+    "model_registry_key",
+    "run_id",
+    "logger",
+    "enabled",
+    "total_requests",
+    "early_release",
+    "immediate_queue_release",
+    "is_cancelled"
+  ],
+  "_heartbeat": [
+    "redis_client",
+    "alive_key",
+    "run_queue_key",
+    "base_key",
+    "token_key",
+    "run_id",
+    "logger",
+    "dispatched_key",
+    "total_requests",
+    "slot_acquired",
+    "immediate_queue_release",
+    "is_cancelled"
+  ],
+  "_clean_id": [
+    "value"
+  ],
+  "_explicit_id": [
+    "value",
+    "name"
+  ],
+  "resolve_query_ids": [],
+  "GATEWAY_HTTP_MAX_ATTEMPTS": [],
+  "GATEWAY_HTTP_RETRY_INITIAL_SECONDS": [],
+  "GATEWAY_HTTP_RETRY_MAX_SECONDS": [],
+  "_dump_items": [
+    "items"
+  ],
+  "_request_items": [
+    "items"
+  ],
+  "_request_tools": [
+    "tools"
+  ],
+  "_gateway_config": [
+    "config"
+  ],
+  "_clean_optional": [
+    "value"
+  ],
+  "_request_id": [
+    "value",
+    "name"
+  ],
+  "_dump_request": [
+    "request"
+  ],
+  "_gateway_error_detail": [
+    "resp"
+  ],
+  "_is_retryable_gateway_response": [
+    "resp"
+  ],
+  "_raise_for_gateway_error_envelope": [
+    "data"
+  ],
+  "_decode_gateway_success": [
+    "resp"
+  ],
+  "_parse_query_result": [
+    "data",
+    "schema_model"
+  ],
+  "_sleep_before_gateway_retry": [
+    "attempt"
+  ],
+  "GatewayUnsupportedBatch": {
+    "__getattr__": [
+      "self",
+      "name"
+    ]
+  },
+  "GatewayLLM": {
+    "_get_default_api_key": [
+      "self"
+    ],
+    "get_client": [
+      "self",
+      "api_key",
+      "base_url"
+    ],
+    "__init__": [
+      "self",
+      "model_name",
+      "provider"
+    ],
+    "gateway_input_context_window": [
+      "self"
+    ],
+    "ensure_metadata_loaded": [
+      "self"
+    ],
+    "_post_gateway": [
+      "self",
+      "path",
+      "request_body"
+    ],
+    "aresolve_model": [
+      "self"
+    ],
+    "sync_model_metadata": [
+      "self"
+    ],
+    "__rich_repr__": [
+      "self"
+    ],
+    "query": [
+      "self",
+      "input"
+    ],
+    "init_token_retry": [
+      "self",
+      "token_retry_params"
+    ],
+    "count_tokens": [
+      "self",
+      "input"
+    ],
+    "get_rate_limit": [
+      "self"
+    ],
+    "_query_impl": [
+      "self"
+    ],
+    "build_body": [
+      "self",
+      "input"
+    ],
+    "parse_input": [
+      "self"
+    ],
+    "parse_image": [
+      "self",
+      "image"
+    ],
+    "parse_file": [
+      "self",
+      "file"
+    ],
+    "parse_tools": [
+      "self",
+      "tools"
+    ],
+    "upload_file": [
+      "self",
+      "name",
+      "mime",
+      "bytes",
+      "type"
+    ],
+    "get_embedding": [
+      "self",
+      "text",
+      "model"
+    ],
+    "moderate_content": [
+      "self",
+      "text"
+    ]
+  },
+  "BatchResult": {},
+  "LLMBatchMixin": {
+    "create_batch_query_request": [
+      "self",
+      "custom_id",
+      "input",
+      "output_schema"
+    ],
+    "batch_query": [
+      "self",
+      "batch_name",
+      "requests"
+    ],
+    "get_batch_results": [
+      "self",
+      "batch_id"
+    ],
+    "get_batch_progress": [
+      "self",
+      "batch_id"
+    ],
+    "cancel_batch_request": [
+      "self",
+      "batch_id"
+    ],
+    "get_batch_status": [
+      "self",
+      "batch_id"
+    ],
+    "is_batch_status_completed": [
+      "cls",
+      "batch_status"
+    ],
+    "is_batch_status_failed": [
+      "cls",
+      "batch_status"
+    ],
+    "is_batch_status_cancelled": [
+      "cls",
+      "batch_status"
+    ]
+  },
+  "serialize_for_tokenizing": [
+    "content"
+  ],
+  "add_optional": [
+    "a",
+    "b"
+  ],
+  "get_pretty_input_types": [
+    "input",
+    "verbose"
+  ],
+  "TIME_PATTERN": [],
+  "UNIT_TO_SECONDS": [],
+  "to_timestamp": [
+    "input_str",
+    "server_now"
+  ],
+  "_unpickle_GetChatCompletionResponse": [
+    "data"
+  ],
+  "_pickle_GetChatCompletionResponse": [
+    "msg"
+  ],
+  "DelegateOnlyException": {
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "DelegateOnly": {
+    "_get_default_api_key": [
+      "self"
+    ],
+    "get_client": [
+      "self",
+      "api_key",
+      "base_url"
+    ],
+    "init_delegate": [
+      "self",
+      "config",
+      "delegate_provider",
+      "use_completions"
+    ],
+    "__init__": [
+      "self",
+      "model_name",
+      "provider"
+    ],
+    "_get_extra_body": [
+      "self"
+    ],
+    "_query_impl": [
+      "self",
+      "input"
+    ],
+    "build_body": [
+      "self",
+      "input"
+    ],
+    "parse_input": [
+      "self",
+      "input"
+    ],
+    "parse_image": [
+      "self",
+      "image"
+    ],
+    "parse_file": [
+      "self",
+      "file"
+    ],
+    "parse_tools": [
+      "self",
+      "tools"
+    ],
+    "upload_file": [
+      "self",
+      "name",
+      "mime",
+      "bytes",
+      "type"
+    ],
+    "get_rate_limit": [
+      "self"
+    ],
+    "count_tokens": [
+      "self",
+      "input"
+    ]
+  },
+  "FileBase": {},
+  "FileWithBase64": {
+    "__rich_repr__": [
+      "self"
+    ]
+  },
+  "FileWithUrl": {},
+  "FileWithId": {},
+  "FileInput": [],
+  "ToolBody": {},
+  "ToolDefinition": {},
+  "ToolCall": {
+    "parsed_args": [
+      "self"
+    ]
+  },
+  "ToolInput": {},
+  "ToolResult": {},
+  "SystemInput": {},
+  "TextInput": {},
+  "RawResponse": {},
+  "RawInput": {},
+  "InputItem": [],
+  "validate_query_input": [
+    "input"
+  ],
+  "normalize_query_input": [
+    "input"
+  ],
+  "_": [],
+  "PydanticT": [],
+  "ProviderConfig": {
+    "model_config": [],
+    "serialize_actual": [
+      "self"
+    ]
+  },
+  "TokenRetryParams": {},
+  "LLMConfig": {},
+  "GATEWAY_CONFIG_EXCLUDED_FIELDS": [],
+  "dump_llm_config": [
+    "config"
+  ],
+  "dump_gateway_config": [
+    "config"
+  ],
+  "normalize_llm_config_for_model": [
+    "model",
+    "config"
+  ],
+  "client_registry_lock": [],
+  "SignedPickle": {},
+  "LLM": {
+    "_client_registry_key": [
+      "self",
+      "value"
+    ],
+    "_client_registry_key_model_specific": [
+      "self",
+      "value"
+    ],
+    "get_client": [
+      "self",
+      "api_key",
+      "base_url"
+    ],
+    "assign_client": [
+      "self",
+      "client"
+    ],
+    "has_client": [
+      "self"
+    ],
+    "_get_default_api_key": [
+      "self"
+    ],
+    "__init__": [
+      "self",
+      "model_name",
+      "provider"
+    ],
+    "__rich_repr__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__str__": [],
+    "metadata": [
+      "self"
+    ],
+    "input_context_window": [
+      "self"
+    ],
+    "ensure_metadata_loaded": [
+      "self"
+    ],
+    "timer_wrapper": [
+      "func"
+    ],
+    "delegate_query": [
+      "self",
+      "input"
+    ],
+    "query": [
+      "self",
+      "input"
+    ],
+    "init_token_retry": [
+      "self",
+      "token_retry_params"
+    ],
+    "_calculate_cost": [
+      "self",
+      "metadata",
+      "batch",
+      "bill_reasoning"
+    ],
+    "_query_impl": [
+      "self",
+      "input"
+    ],
+    "build_body": [
+      "self",
+      "input"
+    ],
+    "parse_input": [
+      "self",
+      "input"
+    ],
+    "parse_image": [
+      "self",
+      "image"
+    ],
+    "parse_file": [
+      "self",
+      "file"
+    ],
+    "parse_tools": [
+      "self",
+      "tools"
+    ],
+    "upload_file": [
+      "self",
+      "name",
+      "mime",
+      "bytes",
+      "type"
+    ],
+    "get_rate_limit": [
+      "self"
+    ],
+    "estimate_query_tokens": [
+      "self",
+      "input"
+    ],
+    "get_encoding": [
+      "self"
+    ],
+    "stringify_input": [
+      "self",
+      "input"
+    ],
+    "count_tokens": [
+      "self",
+      "input"
+    ],
+    "query_json": [
+      "self",
+      "input",
+      "pydantic_model"
+    ],
+    "serialize_input": [
+      "input"
+    ],
+    "deserialize_input": [
+      "data"
+    ],
+    "restore_raw_fields": [
+      "items"
+    ],
+    "_pickle_field": [
+      "value",
+      "secret"
+    ],
+    "_unpickle_field": [
+      "value",
+      "secret"
+    ]
+  },
+  "QueryPerformanceChannel": [],
+  "QueryPerformanceEventType": [],
+  "_event_belongs_to_channel": [
+    "event_type",
+    "channel"
+  ],
+  "QueryPerformanceEvent": {
+    "model_config": []
+  },
+  "QueryTimeToFirstToken": {
+    "model_config": []
+  },
+  "QueryTokensPerSecond": {
+    "model_config": [],
+    "_round_rates": [
+      "cls",
+      "value"
+    ]
+  },
+  "QueryPerformanceTimelineEntry": {
+    "model_config": [],
+    "_raw_event_type": [
+      "event"
+    ],
+    "_raw_event_timestamp_ms": [
+      "event"
+    ],
+    "_derive_timing_from_raw_events": [
+      "cls",
+      "channel",
+      "events"
+    ],
+    "derive_timing_fields": [
+      "cls",
+      "data"
+    ],
+    "validate_timeline_entry": [
+      "self"
+    ]
+  },
+  "QueryResultPerformance": {
+    "model_config": [],
+    "_minimum_ms": [
+      "values"
+    ],
+    "_compute_time_to_first_token_ms": [
+      "self"
+    ],
+    "validate_timeline_and_derive_time_to_first_token_ms": [
+      "self"
+    ]
+  },
+  "FinishReason": {
+    "STOP": [],
+    "STOP_SEQUENCE": [],
+    "MAX_TOKENS": [],
+    "CONTEXT_WINDOW_EXCEEDED": [],
+    "TOOL_CALLS": [],
+    "CONTENT_FILTER": [],
+    "GUARDRAIL": [],
+    "MALFORMED_TOOL_CALL": [],
+    "ERROR": [],
+    "UNKNOWN": []
+  },
+  "FinishReasonInfo": {},
+  "Citation": {},
+  "QueryResultExtras": {},
+  "QueryResultCost": {
+    "_round_cost": [
+      "cls",
+      "v"
+    ],
+    "total": [
+      "self"
+    ],
+    "total_input": [
+      "self"
+    ],
+    "total_output": [
+      "self"
+    ],
+    "__add__": [
+      "self",
+      "other"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "RateLimit": {
+    "token_limit_total": [
+      "self"
+    ],
+    "token_remaining_total": [
+      "self"
+    ],
+    "__rich_repr__": [
+      "self"
+    ]
+  },
+  "QueryResultMetadata": {
+    "default_duration_seconds": [
+      "self"
+    ],
+    "total_input_tokens": [
+      "self"
+    ],
+    "total_output_tokens": [
+      "self"
+    ],
+    "__add__": [
+      "self",
+      "other"
+    ]
+  },
+  "ProviderToolEvent": {},
+  "QueryResult": {
+    "output_text_str": [
+      "self"
+    ],
+    "default_reasoning": [
+      "cls",
+      "v"
+    ],
+    "search_results": [
+      "self"
+    ],
+    "__rich_repr__": [
+      "self"
+    ]
+  },
+  "_SEARCHABLE_LLM_CONFIG_KEYS": [],
+  "latency_ms": [
+    "start"
+  ],
+  "query_config_params": [
+    "config"
+  ],
+  "llm_config_telemetry_attributes": [
+    "config"
+  ],
+  "query_telemetry_attributes": [
+    "body",
+    "config"
+  ],
+  "dimension_telemetry_attributes": [
+    "dimensions"
+  ],
+  "error_telemetry_attributes": [
+    "err"
+  ],
+  "provider_error_telemetry_attributes": [
+    "err"
+  ],
+  "resolve_model": [
+    "body"
+  ],
+  "has_serialized_raw_blob": [
+    "inputs"
+  ],
+  "query_cache_config": [
+    "body"
+  ],
+  "get_query_llm": [
+    "cache",
+    "body"
+  ],
+  "DEFAULT_MAX_ACTIVE_REQUESTS": [],
+  "DEFAULT_MAX_QUEUED_REQUESTS": [],
+  "DEFAULT_QUEUE_TIMEOUT_SECONDS": [],
+  "DEFAULT_REQUEST_TIMEOUT_SECONDS": [],
+  "MAX_CAPACITY_IDENTITY_BODY_BYTES": [],
+  "MODEL_CALL_PATHS": [],
+  "CapacityRejectedError": {},
+  "CapacityQueueTimeoutError": {},
+  "GatewayRequestTimeoutError": {},
+  "CapacitySnapshot": {
+    "demand": [
+      "self"
+    ]
+  },
+  "GatewayCapacityLimiter": {
+    "__init__": [
+      "self"
+    ],
+    "from_env": [
+      "cls"
+    ],
+    "snapshot": [
+      "self"
+    ],
+    "record_current": [
+      "self"
+    ],
+    "run": [
+      "self",
+      "operation"
+    ],
+    "_acquire": [
+      "self"
+    ],
+    "_record_acquired": [
+      "self",
+      "start"
+    ],
+    "_remove_waiter": [
+      "self",
+      "waiter"
+    ],
+    "_release": [
+      "self",
+      "_wait_ms"
+    ]
+  },
+  "create_capacity_middleware": [],
+  "_attach_request_identity": [
+    "request"
+  ],
+  "_content_length": [
+    "request"
+  ],
+  "_operation_for_path": [
+    "path"
+  ],
+  "_env_int": [
+    "name",
+    "default"
+  ],
+  "_env_float": [
+    "name",
+    "default"
+  ],
+  "sign_history": [
+    "items"
+  ],
+  "verify_and_load_history": [
+    "signed_json"
+  ],
+  "env_flag": [
+    "name"
+  ],
+  "create_app": [],
+  "EXEMPT_PATHS": [],
+  "TRACE_AUTH_FAILURE_PATHS": [],
+  "create_auth_middleware": [
+    "valid_keys"
+  ],
+  "_unauthorized_response": [
+    "request",
+    "message"
+  ],
+  "ModelCache": {
+    "__init__": [
+      "self",
+      "maxsize"
+    ],
+    "_make_key": [
+      "model",
+      "config"
+    ],
+    "get_or_create": [
+      "self",
+      "model",
+      "config",
+      "factory"
+    ]
+  },
+  "startup_canary_state": [
+    "enabled"
+  ],
+  "wait_for_local_live": [
+    "client"
+  ],
+  "execute_startup_canary": [],
+  "run_startup_canary": [
+    "app",
+    "api_key"
+  ],
+  "EmbeddingModel": {
+    "get_embedding": [
+      "self",
+      "text",
+      "model"
+    ]
+  },
+  "ModerationModel": {
+    "moderate_content": [
+      "self",
+      "text"
+    ]
+  },
+  "dump_pydantic_response": [
+    "response"
+  ],
+  "ok_response": [
+    "body"
+  ],
+  "provider_call_or_error": [
+    "awaitable"
+  ],
+  "ErrorBody": {},
+  "ErrorResponse": {
+    "__init__": [
+      "self",
+      "status_code",
+      "body"
+    ]
+  },
+  "_PROVIDERS": [],
+  "_extract_provider": [
+    "msg"
+  ],
+  "map_exception_to_error": [
+    "exc"
+  ],
+  "NAMESPACE": [],
+  "DEFAULT_SERVICE": [],
+  "DEFAULT_STAGE": [],
+  "METRICS_FLUSH_INTERVAL_SECONDS": [],
+  "MetricValue": [],
+  "MetricSpec": [],
+  "DimensionSet": [],
+  "MetricPublisher": [],
+  "_GAUGE_METRICS": [],
+  "_HIGH_RESOLUTION_METRICS": [],
+  "_inflight_requests": [],
+  "_inflight_lock": [],
+  "_pending_lock": [],
+  "MetricAggregate": {
+    "add": [
+      "self",
+      "name",
+      "value"
+    ],
+    "emit_value": [
+      "self",
+      "name"
+    ]
+  },
+  "Bucket": {},
+  "_stage": [],
+  "_service": [],
+  "_dimension_value": [
+    "value"
+  ],
+  "provider_endpoint_bucket": [
+    "config"
+  ],
+  "_safe_json_value": [
+    "value"
+  ],
+  "_exclude_param_group_key": [
+    "key"
+  ],
+  "param_group": [],
+  "model_dimensions": [],
+  "service_dimensions": [],
+  "_normalize_dimensions": [
+    "dimensions"
+  ],
+  "emit_metrics": [
+    "dimensions",
+    "metrics"
+  ],
+  "record_metrics": [
+    "dimensions",
+    "metrics"
+  ],
+  "flush_metrics": [],
+  "adjust_inflight": [
+    "delta"
+  ],
+  "get_inflight": [],
+  "record_inflight": [
+    "value"
+  ],
+  "record_capacity": [],
+  "record_rejection": [
+    "reason"
+  ],
+  "publish_metrics_periodically": [
+    "stop_event",
+    "publishers"
+  ],
+  "create_metrics_middleware": [],
+  "emit_model_success": [
+    "dimensions"
+  ],
+  "emit_model_error": [
+    "dimensions"
+  ],
+  "GatewayRequestBase": {
+    "model_config": [],
+    "_normalize_config": [
+      "cls",
+      "data"
+    ],
+    "config_dict": [
+      "self"
+    ]
+  },
+  "QueryRequest": {
+    "_normalize_request_id": [
+      "cls",
+      "value",
+      "info"
+    ],
+    "_normalize_query_id": [
+      "cls",
+      "value"
+    ],
+    "_normalize_identity": [
+      "cls",
+      "value"
+    ]
+  },
+  "TokenCountRequest": {},
+  "TokenCountResponse": {},
+  "RateLimitRequest": {},
+  "RateLimitResponse": {},
+  "ModelResolveRequest": {},
+  "ModelResolveResponse": {},
+  "ProviderError": {},
+  "GatewayResponse": {
+    "_require_success_xor_error": [
+      "self"
+    ]
+  },
+  "query_result_response_body": [
+    "result"
+  ],
+  "UploadFileRequest": {},
+  "UploadFileResponse": {},
+  "EmbeddingRequest": {},
+  "EmbeddingResponse": {},
+  "ModerationRequest": {},
+  "ModerationResponse": {},
+  "UsageLedgerMode": [],
+  "DEFAULT_SCHEMA_VERSION": [],
+  "DEFAULT_NORMALIZATION_VERSION": [],
+  "DEFAULT_METADATA_SCHEMA_VERSION": [],
+  "MAX_LEDGER_JSON_LENGTH": [],
+  "DEFAULT_SHARD_COUNT": [],
+  "DEFAULT_MAX_POOL_CONNECTIONS": [],
+  "UsageLedgerWriteError": {},
+  "UsageLedger": {
+    "start": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "write_success": [
+      "self",
+      "event"
+    ]
+  },
+  "NoopUsageLedger": {
+    "enabled": [],
+    "start": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "write_success": [
+      "self",
+      "event"
+    ]
+  },
+  "_DynamoDbClientContext": {
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self",
+      "exc_type",
+      "exc",
+      "traceback"
+    ]
+  },
+  "_SqsClient": {
+    "send_message": [
+      "self"
+    ]
+  },
+  "_SqsClientContext": {
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self",
+      "exc_type",
+      "exc",
+      "traceback"
+    ]
+  },
+  "SqsUsageLedger": {
+    "enabled": [],
+    "__init__": [
+      "self"
+    ],
+    "start": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "write_success": [
+      "self",
+      "event"
+    ],
+    "_write_success": [
+      "self",
+      "event"
+    ]
+  },
+  "DynamoDbUsageLedger": {
+    "enabled": [],
+    "__init__": [
+      "self"
+    ],
+    "start": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "write_success": [
+      "self",
+      "event"
+    ],
+    "_write_success": [
+      "self",
+      "event"
+    ]
+  },
+  "create_usage_ledger_from_env": [],
+  "build_success_usage_event": [],
+  "_usage_ledger_mode": [],
+  "_isoformat": [
+    "value"
+  ],
+  "_usage_event_id": [],
+  "_shard": [
+    "usage_event_id"
+  ],
+  "_shard_count": [],
+  "_max_pool_connections": [],
+  "_bounded_json": [
+    "value"
+  ],
+  "_json_summary": [
+    "value"
+  ],
+  "_sanitize_for_ledger": [
+    "value"
+  ],
+  "_should_redact_ledger_key": [
+    "key"
+  ],
+  "_metadata_snapshot": [
+    "metadata"
+  ],
+  "_metadata_counts": [
+    "metadata"
+  ],
+  "_decimal_or_zero": [
+    "value"
+  ],
+  "format_shard": [
+    "shard"
+  ],
+  "usage_day_pk": [
+    "day",
+    "shard"
+  ],
+  "run_pk": [
+    "run_id",
+    "shard"
+  ],
+  "query_pk": [
+    "query_id"
+  ],
+  "api_key_day_pk": [
+    "fingerprint",
+    "day",
+    "shard"
+  ],
+  "benchmark_pk": [
+    "benchmark_name",
+    "shard"
+  ],
+  "agent_pk": [
+    "agent_name",
+    "shard"
+  ],
+  "dimension_sort_key": [],
+  "identity_dimension_value": [
+    "identity",
+    "key"
+  ],
+  "UsageLedgerMessageTooLarge": {},
+  "UsageLedgerMessageError": {},
+  "serialize_usage_event_message": [
+    "event"
+  ],
+  "deserialize_usage_event_message": [
+    "message"
+  ],
+  "_serialize_envelope": [
+    "event"
+  ],
+  "_summarize_bulky_fields": [
+    "event"
+  ],
+  "_json_default": [
+    "value"
+  ],
+  "_restore_event_types": [
+    "event"
+  ],
+  "handler": [
+    "event",
+    "_context"
+  ],
+  "_dynamodb_client": [],
+  "_table_name": [],
+  "_message_id": [
+    "record"
+  ],
+  "_message_body": [
+    "record"
+  ],
+  "UsageLedgerEventValidationError": {},
+  "AsyncDynamoDbClient": {
+    "put_item": [
+      "self"
+    ],
+    "get_item": [
+      "self"
+    ]
+  },
+  "SyncDynamoDbClient": {
+    "put_item": [
+      "self"
+    ],
+    "get_item": [
+      "self"
+    ]
+  },
+  "_serializer": [],
+  "_REQUIRED_USAGE_EVENT_FIELDS": [],
+  "_ALLOWED_USAGE_EVENT_FIELDS": [],
+  "put_usage_event_async": [],
+  "put_usage_event_sync": [],
+  "validate_usage_event": [
+    "event"
+  ],
+  "serialize_item": [
+    "item"
+  ],
+  "to_dynamodb_value": [
+    "value"
+  ],
+  "is_duplicate_event_async": [],
+  "is_duplicate_event_sync": [],
+  "stored_usage_event_id": [
+    "response"
+  ],
+  "is_conditional_check_failed": [
+    "exc"
+  ],
+  "TOKEN_RETRY_STATUS_CACHE_SECONDS": [],
+  "register_token_retry_routes": [
+    "app"
+  ],
+  "register_model_routes": [
+    "app"
+  ],
+  "register_provider_ops_routes": [
+    "app"
+  ],
+  "register_health_routes": [
+    "app"
+  ],
+  "_is_local_startup_canary": [
+    "request",
+    "body"
+  ],
+  "register_query_routes": [
+    "app"
+  ]
+}
