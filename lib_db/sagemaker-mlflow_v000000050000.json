@@ -1,0 +1,247 @@
+{
+  "_TRACKING_USERNAME_ENV_VAR": [],
+  "_TRACKING_PASSWORD_ENV_VAR": [],
+  "_TRACKING_TOKEN_ENV_VAR": [],
+  "_TRACKING_INSECURE_TLS_ENV_VAR": [],
+  "_TRACKING_SERVER_CERT_PATH_ENV_VAR": [],
+  "_TRACKING_CLIENT_CERT_PATH_ENV_VAR": [],
+  "host_metadata_provider": [],
+  "get_host_creds": [
+    "store_uri"
+  ],
+  "MlflowSageMakerWorkspaceStore": {
+    "__init__": [
+      "self",
+      "workspace_uri"
+    ]
+  },
+  "__version__": [],
+  "__all__": [],
+  "MlflowSageMakerException": {},
+  "ResourceTypeUnsupportedException": {
+    "__init__": [
+      "self",
+      "resource_type"
+    ]
+  },
+  "CredentialCache": {
+    "__init__": [
+      "self"
+    ],
+    "get_credentials": [
+      "self",
+      "role_arn"
+    ],
+    "set_credentials": [
+      "self",
+      "role_arn",
+      "credentials",
+      "ttl_seconds"
+    ],
+    "_cleanup_expired": [
+      "self"
+    ],
+    "clear": [
+      "self"
+    ]
+  },
+  "set_session": [
+    "session"
+  ],
+  "use_session": [
+    "session"
+  ],
+  "_get_current_session": [],
+  "MlflowSageMakerRequestHeaderProvider": {
+    "__init__": [
+      "self"
+    ],
+    "in_context": [
+      "self"
+    ],
+    "request_headers": [
+      "self"
+    ],
+    "_get_arn_header": [
+      "self"
+    ]
+  },
+  "Arn": {
+    "__init__": [
+      "self",
+      "arn"
+    ],
+    "maybe_assume_role_arn": [
+      "self"
+    ]
+  },
+  "validate_and_parse_arn": [
+    "tracking_server_arn"
+  ],
+  "get_tracking_server_url": [
+    "tracking_server_arn"
+  ],
+  "get_dns_suffix": [
+    "partition"
+  ],
+  "SageMakerMLflowHostMetadataProvider": {
+    "set_arn": [
+      "self",
+      "sagemaker_mlflow_host_arn"
+    ],
+    "construct_tracking_server_url": [
+      "self"
+    ],
+    "_validate_arn": [
+      "self"
+    ],
+    "_get_dns_suffix": [
+      "self"
+    ],
+    "_get_endpoint": [
+      "self"
+    ],
+    "maybe_assume_role_arn": [
+      "self"
+    ]
+  },
+  "MlflowSageMakerRegistryStore": {
+    "store_uri": [],
+    "__init__": [
+      "self",
+      "store_uri"
+    ]
+  },
+  "PAYLOAD_BUFFER": [],
+  "EMPTY_SHA256_HASH": [],
+  "DEFAULT_CREDENTIAL_TTL_SECONDS": [],
+  "AuthBoto": {
+    "_credential_cache": [],
+    "__init__": [
+      "self",
+      "region",
+      "service_name",
+      "assume_role_arn",
+      "boto3_session"
+    ],
+    "_resolve_session": [
+      "self"
+    ],
+    "_get_cached_credentials": [
+      "self",
+      "assume_role_arn"
+    ],
+    "__call__": [
+      "self",
+      "r"
+    ],
+    "get_request_body_header": [
+      "self",
+      "request_body"
+    ]
+  },
+  "get_presigned_url": [
+    "url_expiration_duration",
+    "session_duration"
+  ],
+  "AWS_SIGV4_PLUGIN_NAME": [],
+  "AuthProvider": {
+    "__init__": [
+      "self"
+    ],
+    "get_name": [
+      "self"
+    ],
+    "get_auth": [
+      "self"
+    ],
+    "_get_auth_service_name": [
+      "self"
+    ]
+  },
+  "MlflowSageMakerStore": {
+    "store_uri": [],
+    "__init__": [
+      "self",
+      "store_uri",
+      "artifact_uri"
+    ]
+  },
+  "logger": [],
+  "_SAGEMAKER_PRESIGNED_URL_UPLOAD_ENV_VAR": [],
+  "_PRESIGNED_UPLOAD_ENDPOINT": [],
+  "S3PresignedArtifactRepository": {
+    "__init__": [
+      "self"
+    ],
+    "_should_use_presigned": [
+      "self"
+    ],
+    "log_artifact": [
+      "self",
+      "local_file",
+      "artifact_path"
+    ],
+    "log_artifacts": [
+      "self",
+      "local_dir",
+      "artifact_path"
+    ],
+    "_extract_run_id": [
+      "self"
+    ],
+    "_get_tracking_host_creds": [
+      "self"
+    ],
+    "_build_upload_path": [
+      "self",
+      "local_file",
+      "artifact_path"
+    ],
+    "_request_presigned_url": [
+      "self",
+      "run_id",
+      "path",
+      "expiration"
+    ],
+    "_upload_via_presigned_url": [
+      "self",
+      "local_file",
+      "artifact_path"
+    ]
+  },
+  "MlflowSageMakerScorerStore": {
+    "__init__": [
+      "self",
+      "tracking_uri"
+    ]
+  },
+  "_MLFLOW_3": [],
+  "EVAL_GROUP_PREFIX": [],
+  "evaluate": [
+    "model_info"
+  ],
+  "log_evaluation_group": [
+    "model_id",
+    "evaluation_result",
+    "dataset"
+  ],
+  "_extract_dataset_info": [
+    "data"
+  ],
+  "S3DataSource": {},
+  "ModelDataSource": {},
+  "AdditionalModelDataSource": {},
+  "ModelInput": {},
+  "ContainerDefinition": {},
+  "InferenceSpecification": {},
+  "ARTIFACT_NAME": [],
+  "log_inference_specification": [
+    "model_id",
+    "inference_specification"
+  ],
+  "_populate_s3_uri": [
+    "spec",
+    "artifact_location"
+  ]
+}
