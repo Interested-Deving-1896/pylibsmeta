@@ -1,0 +1,315 @@
+{
+  "Curl": {
+    "__init__": [
+      "self",
+      "base_url",
+      "fakeheaders"
+    ],
+    "set_timeout": [
+      "self",
+      "timeout"
+    ],
+    "set_url": [
+      "self",
+      "url"
+    ],
+    "set_option": [
+      "self"
+    ],
+    "set_verbosity": [
+      "self",
+      "level"
+    ],
+    "__request": [
+      "self",
+      "relative_url"
+    ],
+    "get": [
+      "self",
+      "url",
+      "params"
+    ],
+    "head": [
+      "self",
+      "url",
+      "params"
+    ],
+    "post": [
+      "self",
+      "cgi",
+      "params"
+    ],
+    "body": [
+      "self"
+    ],
+    "header": [
+      "self"
+    ],
+    "get_info": [
+      "self"
+    ],
+    "info": [
+      "self"
+    ],
+    "answered": [
+      "self",
+      "check"
+    ],
+    "close": [
+      "self"
+    ],
+    "__del__": [
+      "self"
+    ]
+  },
+  "ConnectionRejected": {},
+  "opensocket": [
+    "curl",
+    "purpose",
+    "curl_address"
+  ],
+  "c": [],
+  "URLS": [],
+  "handles": [],
+  "m": [],
+  "fd_to_curl": [],
+  "pending": [],
+  "CURLTransport": {
+    "xmlrpc_h": [],
+    "__init__": [
+      "self",
+      "username",
+      "password"
+    ],
+    "request": [
+      "self",
+      "host",
+      "handler",
+      "request_body",
+      "verbose"
+    ]
+  },
+  "Test": {
+    "__init__": [
+      "self"
+    ],
+    "body_callback": [
+      "self",
+      "buf"
+    ]
+  },
+  "t": [],
+  "FileReader": {
+    "__init__": [
+      "self",
+      "fp"
+    ],
+    "read_callback": [
+      "self",
+      "size"
+    ]
+  },
+  "url": [],
+  "filename": [],
+  "filesize": [],
+  "sftp_server": [],
+  "keyfunction": [
+    "known_key",
+    "found_key",
+    "match"
+  ],
+  "mail_server": [],
+  "mail_from": [],
+  "mail_to": [],
+  "message": [],
+  "io": [],
+  "_free_port": [],
+  "_start_server": [
+    "port"
+  ],
+  "port": [],
+  "on_ws_chunk": [
+    "data"
+  ],
+  "num_conn": [],
+  "q": [],
+  "num_urls": [],
+  "WorkerThread": {
+    "__init__": [
+      "self",
+      "queue"
+    ],
+    "run": [
+      "self"
+    ]
+  },
+  "threads": [],
+  "state": [],
+  "socket_fn": [
+    "what",
+    "sock_fd",
+    "multi",
+    "socketp"
+  ],
+  "work": [
+    "timeout"
+  ],
+  "timer_fn": [
+    "timeout_ms"
+  ],
+  "multi": [],
+  "easy": [],
+  "_io": [],
+  "queue": [],
+  "freelist": [],
+  "num_processed": [],
+  "parts": [],
+  "SourceForgeUserSession": {
+    "login": [
+      "self",
+      "name",
+      "password"
+    ],
+    "logout": [
+      "self"
+    ],
+    "fetch_xml": [
+      "self",
+      "numid"
+    ]
+  },
+  "main": [
+    "url"
+  ],
+  "data": [],
+  "buffer": [],
+  "body": [],
+  "post_data": [],
+  "postfields": [],
+  "headers": [],
+  "header_function": [
+    "header_line"
+  ],
+  "encoding": [],
+  "file": [],
+  "__all__": [],
+  "_BLOCKED_OPTIONS": [],
+  "_BLOCKED_OPTIONS_MSG": [],
+  "_SocketState": {},
+  "AsyncCurlMulti": {
+    "__init__": [
+      "self",
+      "close_handles"
+    ],
+    "setopt": [
+      "self",
+      "option",
+      "value"
+    ],
+    "add_handle": [
+      "self",
+      "curl"
+    ],
+    "remove_handle": [
+      "self",
+      "curl"
+    ],
+    "perform": [
+      "self",
+      "curl"
+    ],
+    "futures": [
+      "self",
+      "curls"
+    ],
+    "closed": [
+      "self"
+    ],
+    "aclose": [
+      "self"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self",
+      "exc_type",
+      "exc",
+      "tb"
+    ],
+    "_ensure_loop": [
+      "self"
+    ],
+    "_on_socket": [
+      "self",
+      "what",
+      "fd",
+      "multi",
+      "socketp"
+    ],
+    "_unregister_watchers": [
+      "self",
+      "fd",
+      "state"
+    ],
+    "_unregister_fd": [
+      "self",
+      "fd",
+      "state"
+    ],
+    "_on_timer": [
+      "self",
+      "timeout_ms"
+    ],
+    "_on_notify": [
+      "self",
+      "_notification",
+      "_curl"
+    ],
+    "_drain_from_notify": [
+      "self"
+    ],
+    "_schedule_timer": [
+      "self",
+      "timeout_ms"
+    ],
+    "_cancel_timer": [
+      "self"
+    ],
+    "_on_readable": [
+      "self",
+      "fd",
+      "state"
+    ],
+    "_on_writable": [
+      "self",
+      "fd",
+      "state"
+    ],
+    "_fire_timeout": [
+      "self"
+    ],
+    "_drive": [
+      "self",
+      "fd",
+      "mask"
+    ],
+    "_fail_all_pending": [
+      "self",
+      "exc"
+    ],
+    "_drain": [
+      "self"
+    ],
+    "_resolve": [
+      "self",
+      "curl",
+      "exc"
+    ],
+    "_on_future_done": [
+      "self",
+      "curl",
+      "_future"
+    ]
+  }
+}
