@@ -1,0 +1,530 @@
+{
+  "_pvt": [],
+  "__version__": [],
+  "version": [],
+  "version_tuple": [],
+  "use_layout": [
+    "yes"
+  ],
+  "_layout_to_markdown": [
+    "doc"
+  ],
+  "_layout_to_json": [
+    "doc",
+    "image_dpi",
+    "image_format",
+    "image_path",
+    "pages",
+    "ocr_dpi",
+    "write_images",
+    "embed_images",
+    "show_progress",
+    "force_text",
+    "use_ocr",
+    "force_ocr",
+    "ocr_language",
+    "ocr_function"
+  ],
+  "_layout_to_text": [
+    "doc",
+    "filename",
+    "header",
+    "footer",
+    "pages",
+    "ignore_code",
+    "show_progress",
+    "force_text",
+    "ocr_dpi",
+    "use_ocr",
+    "force_ocr",
+    "ocr_language",
+    "ocr_function",
+    "table_format",
+    "table_max_width",
+    "table_min_col_width",
+    "page_chunks"
+  ],
+  "to_markdown": [],
+  "to_json": [],
+  "to_text": [],
+  "get_key_values": [
+    "doc",
+    "xrefs"
+  ],
+  "LlamaMarkdownReader": [],
+  "VERSION": [],
+  "VERSION_TUPLE": [],
+  "pymupdf4llm_git_branch": [],
+  "pymupdf4llm_git_comment": [],
+  "pymupdf4llm_git_diff": [],
+  "pymupdf4llm_git_diff_n": [],
+  "pymupdf4llm_git_sha": [],
+  "PDFMarkdownReader": {
+    "__init__": [
+      "self",
+      "meta_filter"
+    ],
+    "load_data": [
+      "self",
+      "file_path",
+      "extra_info"
+    ],
+    "_process_doc_page": [
+      "self",
+      "doc",
+      "extra_info",
+      "file_path",
+      "page_number",
+      "hdr_info"
+    ],
+    "_process_doc_meta": [
+      "self",
+      "doc",
+      "file_path",
+      "page_number",
+      "extra_info"
+    ]
+  },
+  "TESSERACT_FONT_NAME": [],
+  "WHITE_CHARS": [],
+  "REPLACEMENT_CHARACTER": [],
+  "TYPE3_FONT_NAME": [],
+  "BULLETS": [],
+  "FLAGS": [],
+  "extract_form_fields_with_pages": [
+    "doc",
+    "xrefs"
+  ],
+  "md_path": [
+    "folder",
+    "filename"
+  ],
+  "startswith_bullet": [
+    "text"
+  ],
+  "is_ocr_text": [
+    "span"
+  ],
+  "is_white": [
+    "text"
+  ],
+  "bbox_is_empty": [
+    "bbox"
+  ],
+  "intersect_rects": [
+    "r1",
+    "r2",
+    "bbox_only"
+  ],
+  "join_rects": [
+    "rects",
+    "bbox_only"
+  ],
+  "almost_in_bbox": [
+    "bbox",
+    "clip",
+    "portion"
+  ],
+  "are_disjoint": [
+    "bbox",
+    "cell",
+    "strict"
+  ],
+  "bbox_in_bbox": [
+    "inner",
+    "outer"
+  ],
+  "expand_bbox_by_points": [
+    "bbox",
+    "points"
+  ],
+  "iou": [
+    "r1",
+    "r2"
+  ],
+  "clean_pictures": [
+    "page",
+    "blocks"
+  ],
+  "add_image_orphans": [
+    "page",
+    "blocks"
+  ],
+  "cluster_stripes": [
+    "boxes",
+    "joined_boxes",
+    "vectors",
+    "vertical_gap"
+  ],
+  "cluster_columns_in_stripe": [
+    "stripe"
+  ],
+  "compute_reading_order": [
+    "boxes",
+    "joined_boxes",
+    "vectors",
+    "vertical_gap"
+  ],
+  "find_reading_order": [
+    "page_rect",
+    "blocks",
+    "boxes",
+    "vertical_gap"
+  ],
+  "simplify_vectors": [
+    "vectors"
+  ],
+  "find_virtual_lines": [
+    "page",
+    "table_bbox",
+    "words",
+    "vectors",
+    "link_rects"
+  ],
+  "extract_cells": [
+    "table_blocks",
+    "cell",
+    "markdown",
+    "ocrpage"
+  ],
+  "table_to_markdown": [
+    "cells"
+  ],
+  "INFO_MESSAGES": [],
+  "GRAPHICS_TEXT": [],
+  "get_table_details": [
+    "tab_dict",
+    "table_blocks"
+  ],
+  "wrap_table_for_tabulate": [
+    "table",
+    "max_width",
+    "min_col_width"
+  ],
+  "make_page_chunk": [
+    "doc",
+    "page",
+    "text",
+    "string_lengths"
+  ],
+  "omit_if_pua_char": [
+    "text"
+  ],
+  "create_list_item_levels": [
+    "layout_info"
+  ],
+  "is_monospaced": [
+    "textlines"
+  ],
+  "is_superscripted": [
+    "line"
+  ],
+  "get_plain_text": [
+    "spans"
+  ],
+  "list_item_to_text": [
+    "textlines",
+    "level"
+  ],
+  "footnote_to_text": [
+    "textlines"
+  ],
+  "code_block_to_text": [
+    "textlines"
+  ],
+  "text_to_text": [
+    "textlines",
+    "ignore_code"
+  ],
+  "picture_text_to_text": [
+    "textlines",
+    "ignore_code",
+    "clip"
+  ],
+  "fallback_text_to_text": [
+    "textlines",
+    "ignore_code",
+    "clip"
+  ],
+  "get_styled_text": [
+    "spans"
+  ],
+  "list_item_to_md": [
+    "textlines",
+    "level"
+  ],
+  "footnote_to_md": [
+    "textlines"
+  ],
+  "section_hdr_to_md": [
+    "header_level",
+    "textlines"
+  ],
+  "title_to_md": [
+    "header_level",
+    "textlines"
+  ],
+  "code_block_to_md": [
+    "textlines"
+  ],
+  "text_to_md": [
+    "textlines",
+    "ignore_code"
+  ],
+  "picture_text_to_md": [
+    "textlines",
+    "ignore_code",
+    "clip"
+  ],
+  "fallback_text_to_md": [
+    "textlines",
+    "ignore_code",
+    "clip"
+  ],
+  "TableDetails": {},
+  "LayoutBox": {},
+  "PageLayout": {},
+  "ParsedDocument": {
+    "to_markdown": [
+      "self",
+      "header",
+      "footer",
+      "write_images",
+      "embed_images",
+      "ignore_code",
+      "show_progress",
+      "page_separators",
+      "page_chunks"
+    ],
+    "to_json": [
+      "self",
+      "show_progress"
+    ],
+    "to_text": [
+      "self",
+      "header",
+      "footer",
+      "ignore_code",
+      "show_progress",
+      "page_chunks",
+      "table_format",
+      "table_max_width",
+      "table_min_col_width"
+    ]
+  },
+  "select_ocr_function": [],
+  "update_header_tags": [
+    "pages",
+    "header_fontsizes"
+  ],
+  "make_ocr_decision": [
+    "page",
+    "use_ocr"
+  ],
+  "parse_document": [
+    "doc",
+    "filename",
+    "image_dpi",
+    "ocr_dpi",
+    "image_format",
+    "image_path",
+    "pages",
+    "show_progress",
+    "embed_images",
+    "write_images",
+    "force_text",
+    "use_ocr",
+    "force_ocr",
+    "ocr_language",
+    "ocr_function"
+  ],
+  "_ProgressBar": {
+    "__init__": [
+      "self",
+      "items",
+      "progress_width"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__next__": [
+      "self"
+    ]
+  },
+  "ProgressBar": [
+    "list",
+    "progress_width"
+  ],
+  "IdentifyHeaders": {
+    "__init__": [
+      "self",
+      "doc",
+      "pages",
+      "body_limit",
+      "max_levels"
+    ],
+    "get_header_id": [
+      "self",
+      "span",
+      "page"
+    ]
+  },
+  "TocHeaders": {
+    "__init__": [
+      "self",
+      "doc"
+    ],
+    "get_header_id": [
+      "self",
+      "span",
+      "page"
+    ]
+  },
+  "Parameters": {},
+  "refine_boxes": [
+    "boxes",
+    "enlarge"
+  ],
+  "is_significant": [
+    "box",
+    "paths"
+  ],
+  "extract_images_on_page_simple": [
+    "page",
+    "parms",
+    "image_size_limit"
+  ],
+  "filter_small_images": [
+    "page",
+    "parms",
+    "image_size_limit"
+  ],
+  "extract_images_on_page_simple_drop": [
+    "page",
+    "parms",
+    "image_size_limit"
+  ],
+  "get_raw_lines": [
+    "textpage",
+    "blocks",
+    "clip",
+    "tolerance",
+    "ignore_invisible",
+    "only_horizontal"
+  ],
+  "get_text_lines": [
+    "page"
+  ],
+  "column_boxes": [
+    "page"
+  ],
+  "FONT": [],
+  "FONTNAME": [],
+  "REPLACEMENT_UNICODE": [],
+  "STROKED_TEXT": [],
+  "FILLED_TEXT": [],
+  "ocr_text": [
+    "span"
+  ],
+  "ENGINE": [],
+  "KWARGS": [],
+  "exec_ocr": [
+    "page",
+    "dpi",
+    "pixmap",
+    "language",
+    "keep_ocr_text"
+  ],
+  "OCRMode": {
+    "NEVER": [],
+    "SELECT_DROP_OLD": [],
+    "SELECT_KEEP_OLD": [],
+    "FORCE_DROP_OLD": [],
+    "FORCE_KEEP_OLD": [],
+    "SELECT_REMOVING_OLD": [],
+    "SELECT_PRESERVING_OLD": [],
+    "ALWAYS_REMOVING_OLD": [],
+    "ALWAYS_PRESERVING_OLD": [],
+    "__new__": [
+      "cls",
+      "value",
+      "description"
+    ],
+    "__init__": [
+      "self",
+      "value",
+      "description"
+    ]
+  },
+  "TESSDATA": [],
+  "GRAY": [],
+  "TEXT_STROKED": [],
+  "TEXT_FILLED": [],
+  "BLOCK_TEXT": [],
+  "BLOCK_IMAGE": [],
+  "BLOCK_VECTOR": [],
+  "BAD_CHAR_THRESHOLD": [],
+  "OCR_MODEL_THRESHOLD": [],
+  "_MODEL_PATH": [],
+  "_get_session": [],
+  "predict_ocr_probability": [
+    "features"
+  ],
+  "check_images": [
+    "image_blocks",
+    "prob",
+    "threshold"
+  ],
+  "is_ocr_span": [
+    "span"
+  ],
+  "analyze_page": [
+    "page",
+    "blocks",
+    "replace_ocr",
+    "ocr_dpi",
+    "stats"
+  ],
+  "RapidOCR_DetOnly": {
+    "__init__": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "img"
+    ],
+    "detect": [
+      "self",
+      "img"
+    ]
+  },
+  "sig": [],
+  "get_text": [
+    "pixmap",
+    "irect",
+    "language"
+  ],
+  "FEATURE_NAMES": [],
+  "SOBEL_X": [],
+  "SOBEL_Y": [],
+  "conv2d_fast": [
+    "img",
+    "kernel"
+  ],
+  "sobel_features": [
+    "gray"
+  ],
+  "sobel_features_page": [
+    "page"
+  ],
+  "compute_features": [
+    "blocks",
+    "page_rect",
+    "page"
+  ],
+  "get_pixmap": [
+    "displaylist",
+    "dpi",
+    "rects"
+  ]
+}

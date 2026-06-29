@@ -1,0 +1,223 @@
+{
+  "DigestRegexps": [],
+  "InvalidDigest": {
+    "default": [
+      "cls"
+    ]
+  },
+  "DigestUnsupported": {
+    "default": [
+      "cls"
+    ]
+  },
+  "DigestInvalidLength": {
+    "default": [
+      "cls"
+    ]
+  },
+  "DIGESTS_SIZE": [],
+  "LOWER_HEX_CHARS": [],
+  "validate_digest": [
+    "digest"
+  ],
+  "optional": [],
+  "any_times": [],
+  "capture": [],
+  "anchored": [],
+  "match": [
+    "regexp"
+  ],
+  "ALPHA_NUMERIC": [],
+  "SEPARATOR": [],
+  "LOCALHOST": [],
+  "DOMAIN_NAME_COMPONENT": [],
+  "OPTIONAL_PORT": [],
+  "TAG": [],
+  "DIGEST_PAT": [],
+  "IDENTIFIER": [],
+  "IPV6_ADDRESS": [],
+  "DOMAIN_NAME": [],
+  "HOST": [],
+  "DOMAIN_AND_PORT": [],
+  "PATH_COMPONENT": [],
+  "REMOTE_NAME": [],
+  "NAME_PAT": [],
+  "REFERENCE_PAT": [],
+  "ANCHORED_NAME_PAT": [],
+  "DIGEST_REGEXP_PATTERN": [],
+  "ImageRegexps": {
+    "ALPHA_NUMERIC_REGEXP": [],
+    "SEPARATOR_REGEXP": [],
+    "NAME_COMPONENT_REGEXP": [],
+    "HOSTNAME_COMPONENT_REGEXP": [],
+    "DOMAIN_NAME_REGEXP": [],
+    "IPV6_ADDRESS_REGEXP": [],
+    "HOST_REGEXP": [],
+    "OPTIONAL_PORT_REGEXP": [],
+    "HOSTNAME_REGEXP": [],
+    "DOMAIN_REGEXP": [],
+    "ANCHORED_HOSTNAME_REGEXP": [],
+    "ANCHORED_DOMAIN_REGEXP": [],
+    "TAG_REGEXP": [],
+    "ANCHORED_TAG_REGEXP": [],
+    "DIGEST_REGEXP": [],
+    "ANCHORED_DIGEST_REGEXP": [],
+    "REMOTE_NAME_REGEXP": [],
+    "NAME_REGEXP": [],
+    "ANCHORED_NAME_REGEXP": [],
+    "REFERENCE_REGEXP": [],
+    "IDENTIFIER_REGEXP": [],
+    "ANCHORED_IDENTIFIER_REGEXP": []
+  },
+  "__all__": [],
+  "NAME_TOTAL_LENGTH_MAX": [],
+  "DEFAULT_DOMAIN": [],
+  "LEGACY_DEFAULT_DOMAIN": [],
+  "OFFICIAL_REPO_NAME": [],
+  "INVALID_REF_CHARS_TABLE": [],
+  "InvalidReference": {
+    "default": [
+      "cls"
+    ]
+  },
+  "ReferenceInvalidFormat": {
+    "default": [
+      "cls"
+    ]
+  },
+  "TagInvalidFormat": {
+    "default": [
+      "cls"
+    ]
+  },
+  "DigestInvalidFormat": {
+    "default": [
+      "cls"
+    ]
+  },
+  "NameEmpty": {
+    "default": [
+      "cls"
+    ]
+  },
+  "NameTooLong": {
+    "default": [
+      "cls"
+    ]
+  },
+  "NameContainsUppercase": {
+    "default": [
+      "cls"
+    ]
+  },
+  "ReferenceHasNoName": {},
+  "NameNotCanonical": {
+    "default": [
+      "cls"
+    ]
+  },
+  "Repository": {
+    "__init__": [
+      "self",
+      "domain",
+      "path"
+    ],
+    "string": [
+      "self"
+    ],
+    "name": [
+      "self"
+    ]
+  },
+  "Reference": {
+    "__init__": [
+      "self",
+      "name",
+      "tag",
+      "digest"
+    ],
+    "split_hostname": [
+      "self"
+    ],
+    "string": [
+      "self"
+    ],
+    "best_reference": [
+      "self"
+    ],
+    "try_validate": [
+      "cls",
+      "s"
+    ],
+    "parse": [
+      "cls",
+      "s"
+    ],
+    "_contains_any": [
+      "s",
+      "chars"
+    ],
+    "split_docker_domain": [
+      "cls",
+      "name"
+    ],
+    "parse_normalized_named": [
+      "cls",
+      "s"
+    ],
+    "parse_named": [
+      "cls",
+      "s"
+    ],
+    "domain": [
+      "self"
+    ],
+    "path": [
+      "self"
+    ],
+    "familiar": [
+      "self"
+    ],
+    "familiar_name": [
+      "self"
+    ]
+  },
+  "NamedReference": {
+    "__init__": [
+      "self",
+      "name"
+    ],
+    "string": [
+      "self"
+    ]
+  },
+  "DigestReference": {
+    "__init__": [
+      "self",
+      "digest"
+    ],
+    "string": [
+      "self"
+    ]
+  },
+  "CanonicalReference": {
+    "__init__": [
+      "self",
+      "name",
+      "digest"
+    ],
+    "string": [
+      "self"
+    ]
+  },
+  "TaggedReference": {
+    "__init__": [
+      "self",
+      "name",
+      "tag"
+    ],
+    "string": [
+      "self"
+    ]
+  }
+}
