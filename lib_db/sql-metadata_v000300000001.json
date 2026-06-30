@@ -1,0 +1,612 @@
+{
+  "_PreservingGenerator": {
+    "TRANSFORMS": [],
+    "coalesce_sql": [
+      "self",
+      "expression"
+    ],
+    "dateadd_sql": [
+      "self",
+      "expression"
+    ],
+    "datesub_sql": [
+      "self",
+      "expression"
+    ],
+    "tsordsadd_sql": [
+      "self",
+      "expression"
+    ],
+    "not_sql": [
+      "self",
+      "expression"
+    ]
+  },
+  "_is_qualified_reference": [
+    "result"
+  ],
+  "_is_not_already_resolved_qualified_reference": [
+    "result",
+    "column"
+  ],
+  "NestedResolver": {
+    "__init__": [
+      "self",
+      "ast",
+      "parser_factory"
+    ],
+    "extract_cte_names": [
+      "self",
+      "cte_name_map"
+    ],
+    "extract_cte_bodies": [
+      "self",
+      "cte_name_map"
+    ],
+    "extract_subqueries": [
+      "ast"
+    ],
+    "resolve": [
+      "self",
+      "columns",
+      "columns_dict",
+      "columns_aliases",
+      "subqueries_names",
+      "subqueries",
+      "with_names",
+      "with_queries"
+    ],
+    "resolve_column_alias": [
+      "self",
+      "alias",
+      "columns_aliases"
+    ],
+    "_resolve_and_filter": [
+      "self",
+      "columns",
+      "drop_unqualified_aliases"
+    ],
+    "_resolve_sub_queries": [
+      "self",
+      "column"
+    ],
+    "_resolve_unqualified_through_nested": [
+      "self",
+      "col_name"
+    ],
+    "_lookup_alias_in_nested": [
+      "self",
+      "col_name",
+      "names",
+      "definitions",
+      "parser_cache",
+      "check_columns"
+    ],
+    "_resolve_nested_query": [
+      "self",
+      "subquery_alias",
+      "nested_queries_names",
+      "nested_queries",
+      "already_parsed"
+    ],
+    "_resolve_column_in_subparser": [
+      "column_name",
+      "subparser",
+      "original_ref"
+    ],
+    "_find_column_fallback": [
+      "column_name",
+      "subparser",
+      "original_ref"
+    ],
+    "_resolve_column_alias": [
+      "self",
+      "alias",
+      "columns_aliases",
+      "visited"
+    ],
+    "_nested_sources": [
+      "self"
+    ],
+    "_cte_nodes": [
+      "self"
+    ],
+    "_body_sql": [
+      "node"
+    ],
+    "_walk_subqueries": [
+      "node",
+      "names",
+      "bodies",
+      "counter"
+    ]
+  },
+  "__all__": [],
+  "InvalidQueryDefinition": {},
+  "logger": [],
+  "_SIMPLE_TYPE_MAP": [],
+  "QueryTypeExtractor": {
+    "__init__": [
+      "self",
+      "ast",
+      "raw_query",
+      "is_replace"
+    ],
+    "extract": [
+      "self"
+    ],
+    "_resolve_command_type": [
+      "root"
+    ],
+    "_raise_for_none_ast": [
+      "self"
+    ]
+  },
+  "ExtractionResult": {},
+  "_JOIN_KEYS": [],
+  "_classify_expressions_clause": [
+    "parent_type"
+  ],
+  "_classify_clause": [
+    "key",
+    "parent_type"
+  ],
+  "_dfs": [
+    "node"
+  ],
+  "_DATE_PART_FUNCTIONS": [],
+  "_is_date_part_unit": [
+    "node"
+  ],
+  "_Collector": {
+    "__slots__": [],
+    "__init__": [
+      "self"
+    ],
+    "add_column": [
+      "self",
+      "name",
+      "clause"
+    ],
+    "add_alias": [
+      "self",
+      "name",
+      "target",
+      "clause"
+    ]
+  },
+  "_SKIP_KEYS": [],
+  "ColumnExtractor": {
+    "__init__": [
+      "self",
+      "ast",
+      "table_aliases",
+      "cte_name_map"
+    ],
+    "extract": [
+      "self"
+    ],
+    "_seed_cte_names": [
+      "self"
+    ],
+    "_build_subquery_names": [
+      "self"
+    ],
+    "_walk": [
+      "self",
+      "node",
+      "clause",
+      "depth"
+    ],
+    "_walk_children": [
+      "self",
+      "node",
+      "clause",
+      "depth"
+    ],
+    "_dispatch_leaf": [
+      "self",
+      "node",
+      "clause",
+      "depth"
+    ],
+    "_process_child_key": [
+      "self",
+      "node",
+      "key",
+      "child",
+      "clause",
+      "depth"
+    ],
+    "_recurse_child": [
+      "self",
+      "child",
+      "clause",
+      "depth"
+    ],
+    "_handle_select_exprs": [
+      "self",
+      "exprs",
+      "clause",
+      "depth"
+    ],
+    "_handle_alias": [
+      "self",
+      "alias_node",
+      "clause",
+      "depth"
+    ],
+    "_handle_cte": [
+      "self",
+      "cte",
+      "depth"
+    ],
+    "_handle_insert_schema": [
+      "self",
+      "node"
+    ],
+    "_handle_join_using": [
+      "self",
+      "child"
+    ],
+    "_handle_column": [
+      "self",
+      "col",
+      "clause"
+    ],
+    "_resolve_table_alias": [
+      "self",
+      "col_table"
+    ],
+    "_column_full_name": [
+      "self",
+      "col"
+    ],
+    "_is_star_inside_function": [
+      "star"
+    ],
+    "_is_literal_values_without_subquery": [
+      "node"
+    ],
+    "_is_cte_column_alias_reference": [
+      "self",
+      "col"
+    ],
+    "_is_unqualified_alias_reference": [
+      "self",
+      "col"
+    ],
+    "_is_self_alias": [
+      "alias_name",
+      "unique_inner"
+    ],
+    "_is_standalone_star": [
+      "child",
+      "seen_stars"
+    ],
+    "_has_cte_explicit_column_definitions": [
+      "cte"
+    ],
+    "_is_cte_with_query_body": [
+      "body"
+    ],
+    "_flat_columns_select_only": [
+      "self",
+      "select"
+    ],
+    "_flat_columns": [
+      "self",
+      "node"
+    ],
+    "_collect_column_from_node": [
+      "self",
+      "child",
+      "seen_stars"
+    ]
+  },
+  "DOT_PLACEHOLDER": [],
+  "UniqueList": {
+    "__init__": [
+      "self",
+      "iterable"
+    ],
+    "append": [
+      "self",
+      "item"
+    ],
+    "extend": [
+      "self",
+      "items"
+    ],
+    "__contains__": [
+      "self",
+      "item"
+    ],
+    "__sub__": [
+      "self",
+      "other"
+    ]
+  },
+  "last_segment": [
+    "name"
+  ],
+  "_choose_tokenizer": [
+    "sql"
+  ],
+  "_has_hash_variables": [
+    "sql"
+  ],
+  "extract_comments": [
+    "sql"
+  ],
+  "_COMMENT_RE": [],
+  "_scan_gap": [
+    "sql",
+    "start",
+    "end",
+    "out"
+  ],
+  "_reconstruct_from_tokens": [
+    "sql",
+    "tokens"
+  ],
+  "strip_comments_for_parsing": [
+    "sql"
+  ],
+  "strip_comments": [
+    "sql"
+  ],
+  "Parser": {
+    "__init__": [
+      "self",
+      "sql",
+      "disable_logging"
+    ],
+    "_require_ast": [
+      "self"
+    ],
+    "_get_resolver": [
+      "self"
+    ],
+    "query": [
+      "self"
+    ],
+    "query_type": [
+      "self"
+    ],
+    "tokens": [
+      "self"
+    ],
+    "columns": [
+      "self"
+    ],
+    "columns_dict": [
+      "self"
+    ],
+    "columns_aliases": [
+      "self"
+    ],
+    "columns_aliases_dict": [
+      "self"
+    ],
+    "columns_aliases_names": [
+      "self"
+    ],
+    "output_columns": [
+      "self"
+    ],
+    "tables": [
+      "self"
+    ],
+    "tables_aliases": [
+      "self"
+    ],
+    "with_names": [
+      "self"
+    ],
+    "with_queries": [
+      "self"
+    ],
+    "subqueries": [
+      "self"
+    ],
+    "subqueries_names": [
+      "self"
+    ],
+    "_extract_int_from_node": [
+      "node"
+    ],
+    "limit_and_offset": [
+      "self"
+    ],
+    "values": [
+      "self"
+    ],
+    "values_dict": [
+      "self"
+    ],
+    "comments": [
+      "self"
+    ],
+    "without_comments": [
+      "self"
+    ],
+    "generalize": [
+      "self"
+    ],
+    "_extract_values": [
+      "self"
+    ],
+    "_convert_value": [
+      "val"
+    ],
+    "_extract_limit_regex": [
+      "self"
+    ],
+    "_extract_columns_regex": [
+      "self"
+    ],
+    "_resolve_column_alias": [
+      "self",
+      "alias"
+    ]
+  },
+  "QueryType": {
+    "INSERT": [],
+    "REPLACE": [],
+    "UPDATE": [],
+    "DELETE": [],
+    "SELECT": [],
+    "CREATE": [],
+    "ALTER": [],
+    "DROP": [],
+    "TRUNCATE": [],
+    "MERGE": []
+  },
+  "CleanResult": {},
+  "_is_wrapped": [
+    "text"
+  ],
+  "_strip_outer_parens": [
+    "sql"
+  ],
+  "_normalize_cte_names": [
+    "sql"
+  ],
+  "SqlCleaner": {
+    "preprocess_query": [
+      "sql"
+    ],
+    "clean": [
+      "sql"
+    ],
+    "_detect_malformed_with": [
+      "clean_sql"
+    ]
+  },
+  "_BAD_TABLE_NAMES": [],
+  "_BAD_COLUMN_NAMES": [],
+  "HashVarDialect": {},
+  "_RedshiftAppendParser": {
+    "_parse_alter_table_append": [
+      "self"
+    ],
+    "ALTER_PARSERS": []
+  },
+  "RedshiftAppendDialect": {
+    "Parser": []
+  },
+  "BracketedTableDialect": {},
+  "DialectParser": {
+    "parse": [
+      "self",
+      "clean_sql"
+    ],
+    "_detect_dialects": [
+      "sql"
+    ],
+    "_try_dialects": [
+      "self",
+      "clean_sql",
+      "dialects"
+    ],
+    "_parse_with_dialect": [
+      "clean_sql",
+      "dialect"
+    ],
+    "_is_degraded": [
+      "self",
+      "result",
+      "clean_sql"
+    ],
+    "_is_expected_command": [
+      "sql"
+    ],
+    "_has_parse_issues": [
+      "ast"
+    ]
+  },
+  "ASTParser": {
+    "__init__": [
+      "self",
+      "sql"
+    ],
+    "ast": [
+      "self"
+    ],
+    "_ensure_parsed": [
+      "self"
+    ],
+    "dialect": [
+      "self"
+    ],
+    "is_replace": [
+      "self"
+    ],
+    "cte_name_map": [
+      "self"
+    ],
+    "_parse": [
+      "self",
+      "sql"
+    ]
+  },
+  "_assemble_dotted_name": [
+    "catalog",
+    "db",
+    "name"
+  ],
+  "_ident_str": [
+    "node"
+  ],
+  "_collect_node_parts": [
+    "node",
+    "parts"
+  ],
+  "_bracketed_full_name": [
+    "table"
+  ],
+  "TableExtractor": {
+    "__init__": [
+      "self",
+      "ast",
+      "cte_names",
+      "dialect"
+    ],
+    "extract": [
+      "self"
+    ],
+    "extract_aliases": [
+      "self",
+      "tables"
+    ],
+    "_extract_create_target": [
+      "self"
+    ],
+    "_table_nodes": [
+      "self"
+    ],
+    "_table_full_name": [
+      "self",
+      "table"
+    ],
+    "_table_start_position": [
+      "table"
+    ]
+  },
+  "Generalizator": {
+    "__init__": [
+      "self",
+      "sql"
+    ],
+    "_normalize_likes": [
+      "sql"
+    ],
+    "without_comments": [
+      "self"
+    ],
+    "generalize": [
+      "self"
+    ]
+  }
+}
