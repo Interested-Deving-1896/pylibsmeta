@@ -1,0 +1,465 @@
+{
+  "container": [],
+  "Service": {},
+  "SubService": {},
+  "Impl": {},
+  "SubContainer": {},
+  "_T": [],
+  "MissingDependencyException": {},
+  "MissingDependencyError": {},
+  "InvalidRegistrationException": {},
+  "InvalidRegistrationError": {},
+  "InvalidFactoryError": {
+    "__init__": [
+      "self",
+      "service",
+      "factory"
+    ]
+  },
+  "InvalidSelfRegistrationError": {
+    "__init__": [
+      "self",
+      "service"
+    ]
+  },
+  "InvalidForwardReferenceException": {},
+  "InvalidForwardReferenceError": {},
+  "RegistrationScope": {
+    "__init__": [
+      "self",
+      "parent"
+    ],
+    "child": [
+      "self"
+    ],
+    "append": [
+      "self",
+      "key",
+      "value"
+    ],
+    "__get": [
+      "self",
+      "key",
+      "result"
+    ],
+    "get": [
+      "self",
+      "key"
+    ]
+  },
+  "Scope": {
+    "transient": [],
+    "singleton": []
+  },
+  "_Registration": {},
+  "_Empty": {},
+  "empty": [],
+  "_match_defaults": [
+    "spec"
+  ],
+  "_Registry": {
+    "__init__": [
+      "self",
+      "parent"
+    ],
+    "_get_needs_for_ctor": [
+      "self",
+      "cls"
+    ],
+    "register_service_and_impl": [
+      "self",
+      "service",
+      "scope",
+      "impl",
+      "resolve_args",
+      "cache"
+    ],
+    "register_service_and_instance": [
+      "self",
+      "service",
+      "instance"
+    ],
+    "register_concrete_service": [
+      "self",
+      "service",
+      "scope",
+      "resolve_args",
+      "cache"
+    ],
+    "build_context": [
+      "self",
+      "key",
+      "existing"
+    ],
+    "_update_localns": [
+      "self",
+      "service"
+    ],
+    "register": [
+      "self",
+      "service",
+      "factory",
+      "instance",
+      "scope",
+      "cache"
+    ],
+    "_ensure_forward_ref": [
+      "self",
+      "service",
+      "factory",
+      "instance"
+    ]
+  },
+  "_ResolutionTarget": {
+    "__init__": [
+      "self",
+      "key",
+      "impls"
+    ],
+    "is_generic_list": [
+      "self"
+    ],
+    "generic_parameter": [
+      "self"
+    ],
+    "next_impl": [
+      "self"
+    ]
+  },
+  "_ResolutionContext": {
+    "__init__": [
+      "self",
+      "key",
+      "impls"
+    ],
+    "target": [
+      "self",
+      "key"
+    ],
+    "has_cached": [
+      "self",
+      "key"
+    ],
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "__setitem__": [
+      "self",
+      "key",
+      "instance"
+    ],
+    "all_registrations": [
+      "self",
+      "service"
+    ]
+  },
+  "Container": {
+    "__init__": [
+      "self",
+      "registrations",
+      "auto_register"
+    ],
+    "register": [
+      "self",
+      "service",
+      "factory",
+      "instance",
+      "scope",
+      "cache"
+    ],
+    "resolve_all": [
+      "self",
+      "service"
+    ],
+    "_build_impl": [
+      "self",
+      "registration",
+      "resolution_args",
+      "context"
+    ],
+    "_should_auto_register": [
+      "self",
+      "service_key",
+      "registration"
+    ],
+    "_resolve_impl": [
+      "self",
+      "service_key",
+      "kwargs",
+      "context",
+      "default"
+    ],
+    "resolve": [
+      "self",
+      "service_key"
+    ],
+    "instantiate": [
+      "self",
+      "service_key"
+    ],
+    "child": [
+      "self"
+    ]
+  },
+  "Dependency": {},
+  "Initializable": {
+    "__init__": [
+      "self",
+      "dep"
+    ]
+  },
+  "NotInitializable": {
+    "do_thing": [
+      "self"
+    ]
+  },
+  "test_when_requesting_an_initialisable_object_that_is_not_in_the_container": [],
+  "test_when_requesting_an_uninitialisable_object_that_is_not_in_the_container": [],
+  "test_the_child_of_an_auto_registering_container_is_auto_registering": [],
+  "MessageWriter": {
+    "write": [
+      "self",
+      "msg"
+    ]
+  },
+  "MessageSpeaker": {
+    "speak": [
+      "self"
+    ]
+  },
+  "StdoutMessageWriter": {
+    "write": [
+      "self",
+      "msg"
+    ]
+  },
+  "TmpFileMessageWriter": {
+    "__init__": [
+      "self",
+      "path"
+    ],
+    "write": [
+      "self",
+      "msg"
+    ]
+  },
+  "ConnectionStringFactory": [],
+  "FancyDbMessageWriter": {
+    "__init__": [
+      "self",
+      "cstr"
+    ],
+    "write": [
+      "self",
+      "msg"
+    ]
+  },
+  "WrappingMessageWriter": {
+    "__init__": [
+      "self",
+      "wrapped",
+      "context"
+    ],
+    "write": [
+      "self",
+      "msg"
+    ]
+  },
+  "HelloWorldSpeaker": {
+    "__init__": [
+      "self",
+      "writer"
+    ],
+    "speak": [
+      "self"
+    ]
+  },
+  "test_can_resolve_a_list_of_dependencies": [],
+  "test_can_create_instance_with_no_dependencies": [],
+  "test_can_create_instance_with_auto_register": [],
+  "test_dependencies_are_injected": [],
+  "test_missing_dependencies_raise_exception": [],
+  "test_can_register_a_concrete_type": [],
+  "test_can_register_with_a_custom_factory": [],
+  "test_can_register_an_instance": [],
+  "test_resolves_instances": [],
+  "test_resolves_instances_with_singleton_scope": [],
+  "test_resolves_instances_with_prototype_scope": [],
+  "test_registering_an_instance_as_concrete_is_exception": [],
+  "test_registering_an_instance_as_factory_is_exception": [],
+  "test_registering_a_callable_as_concrete_is_exception": [],
+  "test_can_provide_arguments_to_registrations": [],
+  "test_can_provide_arguments_to_resolve": [],
+  "test_can_provide_arguments_to_resolve_having_dependencies": [],
+  "test_can_provide_typed_arguments_to_resolve": [],
+  "test_resolve_returns_the_latest_registration_for_a_service": [],
+  "test_resolve_all_returns_all_registrations_in_order": [],
+  "test_can_instatiate_with_no_dependencies": [],
+  "test_instantiate_dependencies_are_injected": [],
+  "test_can_instantiate_with_a_custom_factory": [],
+  "test_can_use_a_string_key": [],
+  "test_cant_register_non_type": [],
+  "SQLAlchemy": {},
+  "create_engine": [
+    "db_uri"
+  ],
+  "setup_doctest_context": [
+    "doctest_namespace"
+  ],
+  "Dep": {},
+  "Client": {
+    "__init__": [
+      "self",
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "test_can_create_instance_with_defaulted_kwarg": [],
+  "test_defaults_are_superseded_by_registrations": [],
+  "test_defaults_are_superseded_by_context": [],
+  "test_a_root_scope_returns_the_empty_list_when_nothing_is_registered": [],
+  "test_a_scope_contains_items": [],
+  "test_a_child_scope_extends_its_parent": [],
+  "test_resolution_can_skip_a_level": [],
+  "Parser": {
+    "parse": [
+      "self",
+      "val"
+    ]
+  },
+  "Writer": {
+    "write": [
+      "self",
+      "val"
+    ]
+  },
+  "Doer": {
+    "__init__": [
+      "self"
+    ],
+    "do": [
+      "self",
+      "val"
+    ]
+  },
+  "ListWriter": {
+    "__init__": [
+      "self",
+      "target"
+    ],
+    "write": [
+      "self",
+      "val"
+    ]
+  },
+  "ReverseParser": {
+    "parse": [
+      "self",
+      "val"
+    ]
+  },
+  "IdentityParser": {
+    "parse": [
+      "self",
+      "val"
+    ]
+  },
+  "test_can_resolve_with_kwonlyargs": [],
+  "test_can_register_with_kwonlyargs": [],
+  "Filter": {
+    "match": [
+      "self",
+      "val"
+    ]
+  },
+  "Is_A": {
+    "__init__": [
+      "self",
+      "successor",
+      "spy"
+    ],
+    "match": [
+      "self",
+      "val"
+    ]
+  },
+  "Is_B": {
+    "__init__": [
+      "self",
+      "successor",
+      "spy"
+    ],
+    "match": [
+      "self",
+      "val"
+    ]
+  },
+  "Is_C": {
+    "__init__": [
+      "self",
+      "successor",
+      "spy"
+    ],
+    "match": [
+      "self",
+      "val"
+    ]
+  },
+  "NullFilter": {
+    "__init__": [
+      "self",
+      "spy"
+    ],
+    "match": [
+      "self",
+      "val"
+    ]
+  },
+  "test_can_resolve_a_chain_of_dependencies": [],
+  "test_scoped_service_with_no_dependencies": [],
+  "test_when_overriding_a_service": [],
+  "test_when_a_child_adds_a_dependency": [],
+  "test_when_the_parent_registers_a_dependency": [],
+  "test_when_overriding_a_singleton_instance": [],
+  "test_when_inheriting_a_singleton_instance": [],
+  "ContextBag": [],
+  "ThingDoer": {
+    "__init__": [
+      "self",
+      "context"
+    ]
+  },
+  "test_when_registering_a_state_bag": [],
+  "SomeVeryHeavyDep": {},
+  "SubSystemA": {
+    "__init__": [
+      "self",
+      "d"
+    ]
+  },
+  "SubSystemB": {
+    "__init__": [
+      "self",
+      "d"
+    ]
+  },
+  "Root": {
+    "__init__": [
+      "self",
+      "a",
+      "b"
+    ]
+  },
+  "test_that_repeated_resolutions_are_cached": [],
+  "test_that_repeated_resolutions_are_not_cached_if_cache_is_disabled": [],
+  "DataAccessLayer": {
+    "val": []
+  },
+  "test_can_resolve_objects_with_forward_references": [],
+  "test_forward_references_must_be_registered_before_their_clients": [],
+  "test_forward_references_can_be_registered_as_strings": [],
+  "MyContainerSubclass": {},
+  "test_container_child": []
+}
