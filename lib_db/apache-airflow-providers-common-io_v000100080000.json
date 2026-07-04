@@ -1,0 +1,133 @@
+{
+  "__all__": [],
+  "__version__": [],
+  "get_provider_info": [],
+  "get_base_airflow_version_tuple": [],
+  "AIRFLOW_V_3_0_PLUS": [],
+  "SECTION": [],
+  "_get_base_path": [],
+  "_get_compression": [],
+  "_get_threshold": [],
+  "_get_compression_suffix": [],
+  "_sanitise_segment": [
+    "value"
+  ],
+  "_build_task_path": [
+    "scope",
+    "key"
+  ],
+  "_build_asset_path": [
+    "scope",
+    "key"
+  ],
+  "_write_to_object_storage": [
+    "path",
+    "value"
+  ],
+  "_read_from_object_storage": [
+    "path"
+  ],
+  "_is_storage_ref": [
+    "value"
+  ],
+  "_scope_path": [
+    "scope",
+    "key"
+  ],
+  "StateStoreObjectStorageBackend": {
+    "get": [
+      "self",
+      "scope",
+      "key"
+    ],
+    "set": [
+      "self",
+      "scope",
+      "key",
+      "value"
+    ],
+    "delete": [
+      "self",
+      "scope",
+      "key"
+    ],
+    "clear": [
+      "self",
+      "scope"
+    ],
+    "aget": [
+      "self",
+      "scope",
+      "key"
+    ],
+    "aset": [
+      "self",
+      "scope",
+      "key",
+      "value"
+    ],
+    "adelete": [
+      "self",
+      "scope",
+      "key"
+    ],
+    "aclear": [
+      "self",
+      "scope"
+    ],
+    "serialize_task_state_store_to_ref": [
+      "self"
+    ],
+    "deserialize_task_state_store_from_ref": [
+      "self",
+      "stored"
+    ],
+    "serialize_asset_state_store_to_ref": [
+      "self"
+    ],
+    "deserialize_asset_state_store_from_ref": [
+      "self",
+      "stored"
+    ]
+  },
+  "create_asset": [],
+  "sanitize_uri": [
+    "uri"
+  ],
+  "convert_asset_to_openlineage": [
+    "asset",
+    "lineage_context"
+  ],
+  "T": [],
+  "XComObjectStorageBackend": {
+    "_get_full_path": [
+      "data"
+    ],
+    "serialize_value": [
+      "value"
+    ],
+    "deserialize_value": [
+      "result"
+    ],
+    "purge": [
+      "xcom",
+      "session"
+    ]
+  },
+  "FileTransferOperator": {
+    "__init__": [
+      "self"
+    ],
+    "execute": [
+      "self",
+      "context"
+    ],
+    "get_openlineage_facets_on_start": [
+      "self"
+    ],
+    "_get_path": [
+      "path",
+      "conn_id"
+    ]
+  }
+}
