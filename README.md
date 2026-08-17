@@ -1,247 +1,91 @@
 # pylibsmeta
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3.9%2B-blue?logo=python" />
-  <img src="https://img.shields.io/badge/PyPI-Integrated-blue?logo=pypi" />
-  <img src="https://img.shields.io/badge/GitHub%20Actions-Automated-success?logo=githubactions" />
-  <img src="https://img.shields.io/badge/License-MIT-green" />
-  <img src="https://img.shields.io/badge/Scale-15k%2B%20Libraries-orange" />
-</p>
+[![Built with Ona](https://ona.com/build-with-ona.svg)](https://app.ona.com/#https://github.com/Interested-Deving-1896/pylibsmeta) [![KDE Eco](https://img.shields.io/badge/KDE%20Eco-certified-brightgreen?logo=kde&logoColor=white&style=flat-square)](https://eco.kde.org/) [![Blue Angel](https://img.shields.io/badge/Blue%20Angel-DE--UZ%20215-0055a4?style=flat-square)](https://www.blauer-engel.de/en/certification/criteria) [![Energy](https://api.green-coding.io/v1/ci/badge/get?repo=Interested-Deving-1896%2Fpylibsmeta&branch=main&workflow=eco-audit.yml)](https://metrics.green-coding.io/ci-index.html)
 
-<p align="center">
-  <b>Large-Scale Static Python Library Metadata Infrastructure</b><br>
-  Automated PyPI package introspection using AST parsing.<br>
-  Designed for AI autocomplete engines, IDE tooling, and static analysis systems.
-</p>
 
----
+<!-- AI:start:what-it-does -->
+_Description pending._
+<!-- AI:end:what-it-does -->
 
-## 🚀 Overview
+## Architecture
 
-`pylibsmeta` is a fully automated Python ecosystem metadata generator.
+<!-- AI:start:architecture -->
+_Architecture documentation pending._
+<!-- AI:end:architecture -->
 
-Instead of installing and executing packages, this project:
+## Install
 
-- Fetches latest package versions from PyPI
-- Downloads source distributions
-- Parses Python files using AST
-- Extracts structured symbol metadata
-- Stores version-encoded JSON outputs
-- Runs entirely via GitHub Actions
+<!-- Add installation instructions here. This section is yours — the AI will not modify it. -->
 
-The result is a scalable, version-aware static metadata database for thousands of Python libraries.
-
----
-
-## 🧠 Why This Exists
-
-Modern developer tooling requires:
-
-- Structured symbol data
-- Safe introspection (no execution)
-- Version-aware API tracking
-- Scalable automation
-
-Installing packages dynamically for introspection is slow and unsafe.
-
-`pylibsmeta` solves this using pure static AST parsing at scale.
-
----
-
-## 🔍 What Gets Extracted
-
-For each PyPI package:
-
-- Functions
-- Classes
-- Methods
-- Global variables
-
-Example output:
-
-```json
-{
-  "getLogger": ["name"],
-  "Logger": {
-    "debug": ["msg", "*args", "**kwargs"],
-    "info": ["msg", "*args", "**kwargs"]
-  }
-}
+```bash
+git clone https://github.com/Interested-Deving-1896/pylibsmeta.git
+cd pylibsmeta
 ```
 
-Each file is version encoded:
+## Usage
+
+<!-- Add usage examples here. This section is yours — the AI will not modify it. -->
+
+## Configuration
+
+<!-- Document configuration options here. This section is yours — the AI will not modify it. -->
+
+## CI
+
+<!-- AI:start:ci -->
+_CI documentation pending._
+<!-- AI:end:ci -->
+
+## Mirror chain
+
+<!-- AI:start:mirror-chain -->
+This repo is maintained in [`Interested-Deving-1896/pylibsmeta`](https://github.com/Interested-Deving-1896/pylibsmeta) and mirrored through:
 
 ```
-1.2.3 → v000100020003
+Interested-Deving-1896/pylibsmeta  ──►  OpenOS-Project-OSP/pylibsmeta  ──►  OpenOS-Project-Ecosystem-OOC/pylibsmeta
 ```
 
-Example:
+Changes flow downstream automatically via the hourly mirror chain in
+[`fork-sync-all`](https://github.com/Interested-Deving-1896/fork-sync-all).
+Direct commits to OSP or OOC are detected and opened as PRs back to `Interested-Deving-1896`.
+<!-- AI:end:mirror-chain -->
 
-```
-requests_v000200310000.json
-```
+## Contributors
 
----
+<!-- AI:start:contributors -->
+_Contributors pending._
+<!-- AI:end:contributors -->
 
-## 📦 Output Structure
+## Origins
 
-```
-lib_db/
- ├── requests_v000200310000.json
- ├── numpy_v000100260000.json
- ├── fastapi_v000000980000.json
-```
+<!-- AI:start:origins -->
+_Original project — no upstream influences recorded._
+<!-- AI:end:origins -->
 
----
+## Resources
 
-## ⚙️ Core Features
+<!-- AI:start:resources -->
+_No additional resource files found._
+<!-- AI:end:resources -->
 
-- ✅ Version encoding
-- ✅ Skip already processed versions
-- ✅ Resume system via `progress.json`
-- ✅ 5-hour safe exit (GitHub Actions limit aware)
-- ✅ Fully automated update pipeline
-- ✅ Handles 15,000+ libraries
-- ✅ No package installation
-- ✅ No code execution
-- ✅ All public variables, functions, methods and classes parsing
+## Accessibility
 
----
+<!-- AI:start:accessibility -->
+This repo uses automated accessibility auditing via `check-accessibility.yml`.
 
-## 🔄 Resume System
+Checks include: CODEOWNERS ownership coverage, README screen-reader compatibility,
+WCAG 2.1 AA HTML compliance, audio overview (espeak-ng), and Braille output (liblouis).
 
-Designed for GitHub's 6-hour workflow limit.
 
-Each run:
 
-1. Processes a batch of packages
-2. Saves progress
-3. Exits safely before timeout
-4. Resumes next scheduled run
 
-This enables large-scale processing across thousands of libraries.
+Run the [Check Accessibility](https://github.com/Interested-Deving-1896/pylibsmeta/actions/workflows/check-accessibility.yml)
+workflow to generate the first report and accessibility artifacts.
+See [DOCS/accessibility.md](https://github.com/Interested-Deving-1896/pylibsmeta/blob/main/DOCS/accessibility.md) for the full reference.
+<!-- AI:end:accessibility -->
 
----
+## License
 
-## 🤖 Automation
-
-GitHub Actions workflow supports:
-
-- Manual trigger (`workflow_dispatch`)
-- Scheduled runs (cron)
-- Incremental version updates
-- Automated rebuilds
-
-Example hourly schedule:
-
-```yaml
-schedule:
-  - cron: "0 * * * *"
-```
-
----
-
-## 🛠 Local Setup
-
-### 1️⃣ Add package list
-
-Create `l.txt`:
-
-```
-requests
-numpy
-fastapi
-django
-```
-
-### 2️⃣ Install dependencies
-
-```
-pip install -r requirements.txt
-```
-
-### 3️⃣ Run generator
-
-```
-python gen_libs.py
-```
-
----
-
-## 📊 Scale
-
-Designed to support:
-
-- ~100 packages per run
-- ~15,000+ total packages
-- Fully resumable processing
-- Long-term incremental updates
-
-This is infrastructure-level metadata generation — not a one-off script.
-
----
-
-## 💡 Use Cases
-
-- Offline AI autocomplete engines
-- Static LLM grounding datasets
-- IDE backend services
-- Library API indexing
-- Cross-version API comparison
-- Large-scale symbol search systems
-- Developer tooling backends
-
----
-
-## 🔒 Safety
-
-- No `exec`
-- No `eval`
-- No runtime execution
-- No dependency installation
-- Pure source parsing via AST
-
-Safe for automation environments.
-
----
-
-## 🧬 Roadmap
-
-### v1 (Current)
-- Function/class extraction
-- Version encoding
-- Automated scaling
-
-### v2 (Planned)
-- Type inference (basic)
-- Return value analysis
-- Symbol linking
-- Structured symbol graph
-- Docstring extraction
-- Cross-version API comparison
-- Compressed dataset builds
-- API layer for partial access
-
----
-
-## 📜 License
-
-MIT License
-
----
-
-## 🔥 Status
-
-Production-ready  
-Automated  
-Scales to thousands of libraries  
-Continuously improving  
-
----
-
-<p align="center">
-  Built for scalable developer tooling infrastructure.
-</p>
-<p align="center">
-Donate: UQDZc4_R6v2PzTDCEfHAfgBeeP1VcoQaNH49YI2ayqWfyz4m (Toncoin)
-</p>
+<!-- AI:start:license -->
+[MIT](https://github.com/Interested-Deving-1896/pylibsmeta/blob/main/LICENSE) © 2026 [Interested-Deving-1896](https://github.com/Interested-Deving-1896)
+<!-- AI:end:license -->
