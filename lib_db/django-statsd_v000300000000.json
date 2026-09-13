@@ -1,0 +1,250 @@
+{
+  "get_setting": [
+    "key",
+    "default"
+  ],
+  "STATSD_TRACK_MIDDLEWARE": [],
+  "STATSD_PREFIX": [],
+  "STATSD_DEBUG": [],
+  "STATSD_DISABLED": [],
+  "STATSD_TAGS_LIKE": [],
+  "STATSD_HOST": [],
+  "STATSD_PORT": [],
+  "STATSD_SAMPLE_RATE": [],
+  "STATSD_VIEWS_TO_SKIP": [],
+  "STATSD_TRACK_DATABASE": [],
+  "__all__": [],
+  "get_connection": [
+    "host",
+    "port",
+    "sample_rate",
+    "disabled"
+  ],
+  "get_client": [
+    "name",
+    "connection",
+    "class_"
+  ],
+  "get_timer": [
+    "name",
+    "connection"
+  ],
+  "get_counter": [
+    "name",
+    "connection"
+  ],
+  "QueryContext": [],
+  "ExecuteFunc": [],
+  "ExecuteWrapper": [],
+  "statsd_execute_wrapper": [
+    "alias"
+  ],
+  "P": [],
+  "T": [],
+  "GetResponse": [],
+  "_get_tags_like": [],
+  "is_ajax": [
+    "request"
+  ],
+  "WithTimer": {
+    "__init__": [
+      "self",
+      "timer",
+      "key"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "type_",
+      "value",
+      "traceback"
+    ]
+  },
+  "Client": {
+    "__init__": [
+      "self",
+      "prefix"
+    ],
+    "get_client": [
+      "self"
+    ],
+    "submit": [
+      "self"
+    ]
+  },
+  "Counter": {
+    "__init__": [
+      "self",
+      "prefix"
+    ],
+    "increment": [
+      "self",
+      "key",
+      "delta"
+    ],
+    "decrement": [
+      "self",
+      "key",
+      "delta"
+    ],
+    "submit": [
+      "self"
+    ]
+  },
+  "Timer": {
+    "__init__": [
+      "self",
+      "prefix"
+    ],
+    "start": [
+      "self",
+      "key"
+    ],
+    "stop": [
+      "self",
+      "key"
+    ],
+    "submit": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "key"
+    ]
+  },
+  "StatsdMiddleware": {
+    "__init__": [
+      "self",
+      "get_response"
+    ],
+    "__call__": [
+      "self",
+      "request"
+    ],
+    "_scope_get": [
+      "cls",
+      "name"
+    ],
+    "skip_view": [
+      "cls",
+      "view_name"
+    ],
+    "start": [
+      "cls",
+      "prefix"
+    ],
+    "stop": [
+      "cls"
+    ],
+    "process_request": [
+      "self",
+      "request"
+    ],
+    "process_view": [
+      "self",
+      "request",
+      "view_func",
+      "view_args",
+      "view_kwargs"
+    ],
+    "process_response": [
+      "self",
+      "request",
+      "response"
+    ],
+    "process_exception": [
+      "self",
+      "request",
+      "exception"
+    ],
+    "process_template_response": [
+      "self",
+      "request",
+      "response"
+    ],
+    "cleanup": [
+      "self",
+      "request"
+    ]
+  },
+  "StatsdMiddlewareTimer": {
+    "__init__": [
+      "self",
+      "get_response"
+    ],
+    "__call__": [
+      "self",
+      "request"
+    ],
+    "_timings": [],
+    "process_request": [
+      "self",
+      "request"
+    ],
+    "process_view": [
+      "self",
+      "request",
+      "view_func",
+      "view_args",
+      "view_kwargs"
+    ],
+    "process_response": [
+      "self",
+      "request",
+      "response"
+    ],
+    "process_exception": [
+      "self",
+      "request",
+      "exception"
+    ],
+    "process_template_response": [
+      "self",
+      "request",
+      "response"
+    ]
+  },
+  "DummyWith": {
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "type_",
+      "value",
+      "traceback"
+    ]
+  },
+  "_timings": [],
+  "_counter": [],
+  "start": [
+    "key"
+  ],
+  "stop": [
+    "key"
+  ],
+  "with_": [
+    "key"
+  ],
+  "incr": [
+    "key",
+    "value"
+  ],
+  "decr": [
+    "key",
+    "value"
+  ],
+  "wrapper": [
+    "prefix",
+    "f"
+  ],
+  "named_wrapper": [
+    "name",
+    "f"
+  ],
+  "decorator": [
+    "prefix"
+  ]
+}
