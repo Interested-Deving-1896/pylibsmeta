@@ -1,0 +1,2833 @@
+{
+  "test_commit_transaction_commit_saved_trans": [
+    "auth_client",
+    "single_transaction"
+  ],
+  "test_commit_transaction_wont_commit_if_commit_param_false": [
+    "auth_client",
+    "single_transaction"
+  ],
+  "test_client_can_be_created": [
+    "unauth_client"
+  ],
+  "test_client_has_base_url_attribute": [
+    "unauth_client"
+  ],
+  "test_client_has_app_name_attribute": [
+    "unauth_client"
+  ],
+  "test_client_has_app_version_attribute": [
+    "unauth_client"
+  ],
+  "test_client_has_machine_name_attribute": [
+    "unauth_client"
+  ],
+  "test_that_client_id_is_created": [
+    "unauth_client"
+  ],
+  "test_client_can_obtain_production_url_as_base_url": [],
+  "test_client_can_obtain_their_own_base_url": [],
+  "test_201_response_when_creating_transaction": [
+    "auth_client",
+    "tax_document"
+  ],
+  "test_response_is_proper_response_object": [
+    "auth_client",
+    "tax_document"
+  ],
+  "test_transaction_is_saved_when_commit_is_false": [
+    "auth_client",
+    "tax_document"
+  ],
+  "test_transaction_is_commited_when_commit_is_true": [
+    "auth_client",
+    "tax_document"
+  ],
+  "test_include_param_is_summary_only": [
+    "auth_client",
+    "tax_document"
+  ],
+  "test_include_param_is_addresses": [
+    "auth_client",
+    "tax_document"
+  ],
+  "test_address_fixture_import": [
+    "valid_address"
+  ],
+  "test_resolve_address_response_code_200": [
+    "auth_client",
+    "valid_address"
+  ],
+  "test_resolved_address_response_has_coordinates": [
+    "auth_client",
+    "valid_address"
+  ],
+  "test_resolve_address_response_code_400": [
+    "auth_client"
+  ],
+  "test_incomplete_resolve_address_response_code_401": [
+    "unauth_client"
+  ],
+  "test_unauthorized_resolve_address_response_code_401": [
+    "unauth_client",
+    "valid_address"
+  ],
+  "test_resolve_address_error_message": [
+    "auth_client"
+  ],
+  "test_initialize_builder_object": [
+    "auth_client"
+  ],
+  "test_with_commit_method": [
+    "mt_trans"
+  ],
+  "test_with_transaction_code_method": [
+    "mt_trans"
+  ],
+  "test_with_type_method": [
+    "mt_trans"
+  ],
+  "test_with_address_method": [
+    "mt_trans",
+    "valid_address"
+  ],
+  "test_with_line_address_method": [
+    "mt_trans",
+    "valid_address"
+  ],
+  "test_with_latlong_method": [
+    "mt_trans"
+  ],
+  "test_with_line_method": [
+    "mt_trans"
+  ],
+  "test_with_line_method_with_string_line_number": [
+    "mt_trans"
+  ],
+  "test_with_line_method_with_optional_parameters": [
+    "mt_trans"
+  ],
+  "test_with_line_method_line_number_not_null": [
+    "mt_trans"
+  ],
+  "test_with_exempt_line_method": [
+    "mt_trans"
+  ],
+  "test_with_exempt_line_method_quantity": [
+    "mt_trans"
+  ],
+  "test_with_diagnostics_method": [
+    "mt_trans"
+  ],
+  "test_with_discount_amount_method": [
+    "mt_trans"
+  ],
+  "test_with_parameter_method": [
+    "mt_trans"
+  ],
+  "test_with_line_parameter_method": [
+    "mt_trans"
+  ],
+  "test_get_most_recent_line_method": [
+    "mt_trans"
+  ],
+  "test_with_line_tax_overrride_method": [
+    "mt_trans"
+  ],
+  "test_with_separate_address_method": [
+    "mt_trans",
+    "valid_address"
+  ],
+  "test_create_adjustment_request_method": [
+    "mt_trans"
+  ],
+  "test_create_trans_without_commit": [
+    "mt_trans",
+    "valid_address"
+  ],
+  "test_create_trans_with_commit": [
+    "mt_trans",
+    "valid_address"
+  ],
+  "test_create_trans_with_two_lines": [
+    "mt_trans",
+    "valid_address",
+    "ship_from_address"
+  ],
+  "test_create_trans_with_exempt_line": [
+    "mt_trans",
+    "valid_address"
+  ],
+  "test_create_trans_with_line_address": [
+    "mt_trans",
+    "valid_address",
+    "ship_from_address"
+  ],
+  "test_username_auth": [
+    "unauth_client"
+  ],
+  "test_username_auth_2": [
+    "unauth_client"
+  ],
+  "test_account_id_auth": [
+    "unauth_client"
+  ],
+  "test_account_id_auth_2": [
+    "unauth_client"
+  ],
+  "test_bearer_token_auth": [
+    "unauth_client"
+  ],
+  "test_auth_object": [
+    "unauth_client"
+  ],
+  "test_auth_raises_value_error": [
+    "unauth_client"
+  ],
+  "test_auth_able_to_call_and_return_self": [
+    "unauth_client"
+  ],
+  "test_no_auth_if_no_cred_is_added": [
+    "unauth_client"
+  ],
+  "test_if_valid_pair_sandbox_cred_in_place": [
+    "auth_client"
+  ],
+  "TestBasicWorkFlow": {
+    "test_connection": [
+      "self",
+      "auth_client"
+    ],
+    "test_ping": [
+      "self",
+      "auth_client"
+    ],
+    "test_check_default_company_exist": [
+      "self",
+      "auth_client",
+      "init_comp_model"
+    ],
+    "test_create_transaction": [
+      "self",
+      "auth_client",
+      "tax_document"
+    ],
+    "test_verfiy_transaction": [
+      "self",
+      "auth_client"
+    ],
+    "test_commit_transaction": [
+      "self",
+      "auth_client"
+    ],
+    "test_adjust_transaction": [
+      "self",
+      "auth_client",
+      "tax_document"
+    ],
+    "test_void_transaction": [
+      "self",
+      "auth_client"
+    ]
+  },
+  "test_imports": [
+    "single_transaction",
+    "auth_client"
+  ],
+  "test_void_changes_transaction_status_to_with_model": [
+    "single_transaction",
+    "auth_client"
+  ],
+  "test_void_transaction_with_param": [
+    "single_transaction_purchase_invoice",
+    "auth_client"
+  ],
+  "test_ping_makes_connection": [
+    "unauth_client"
+  ],
+  "test_ping_auth_is_false_connection": [
+    "unauth_client"
+  ],
+  "test_ping_auth_is_true_using_client_id": [
+    "auth_client"
+  ],
+  "test_ping_auth_with_invalid_user_and_pass": [
+    "unauth_client"
+  ],
+  "test_ping_auth_with_invalid_account_id": [
+    "unauth_client"
+  ],
+  "AvataxClient": {
+    "__init__": [
+      "self",
+      "app_name",
+      "app_version",
+      "machine_name",
+      "environment",
+      "timeout_limit",
+      "is_log_req_resp_allowed",
+      "logger"
+    ],
+    "add_credentials": [
+      "self",
+      "username",
+      "password"
+    ]
+  },
+  "Mixin": {
+    "account_reset_license_key": [
+      "self",
+      "id_",
+      "model"
+    ],
+    "activate_account": [
+      "self",
+      "id_",
+      "model"
+    ],
+    "audit_account": [
+      "self",
+      "id_",
+      "include"
+    ],
+    "create_license_key": [
+      "self",
+      "id_",
+      "model"
+    ],
+    "delete_license_key": [
+      "self",
+      "id_",
+      "licensekeyname"
+    ],
+    "get_account": [
+      "self",
+      "id_",
+      "include"
+    ],
+    "get_account_configuration": [
+      "self",
+      "id_"
+    ],
+    "get_license_key": [
+      "self",
+      "id_",
+      "licensekeyname"
+    ],
+    "get_license_keys": [
+      "self",
+      "id_"
+    ],
+    "list_mrs_accounts": [
+      "self"
+    ],
+    "query_accounts": [
+      "self",
+      "include"
+    ],
+    "set_account_configuration": [
+      "self",
+      "id_",
+      "model"
+    ],
+    "resolve_address": [
+      "self",
+      "include"
+    ],
+    "resolve_address_post": [
+      "self",
+      "model"
+    ],
+    "create_a_p_config_setting": [
+      "self",
+      "companyid",
+      "model"
+    ],
+    "get_a_p_config_setting_by_company": [
+      "self",
+      "companyid",
+      "include"
+    ],
+    "query_a_p_config_setting": [
+      "self",
+      "include"
+    ],
+    "update_a_p_config_setting": [
+      "self",
+      "companyid",
+      "model"
+    ],
+    "create_ava_file_forms": [
+      "self",
+      "model"
+    ],
+    "delete_ava_file_form": [
+      "self",
+      "id_"
+    ],
+    "get_ava_file_form": [
+      "self",
+      "id_"
+    ],
+    "query_ava_file_forms": [
+      "self",
+      "include"
+    ],
+    "update_ava_file_form": [
+      "self",
+      "id_",
+      "model"
+    ],
+    "cancel_batch": [
+      "self",
+      "companyId",
+      "id_"
+    ],
+    "create_advanced_rules_batch": [
+      "self",
+      "companyId",
+      "model"
+    ],
+    "create_batches": [
+      "self",
+      "companyId",
+      "model"
+    ],
+    "create_custom_rules_batch": [
+      "self",
+      "companyId",
+      "model"
+    ],
+    "create_item_import_batch": [
+      "self",
+      "companyId",
+      "model"
+    ],
+    "create_transaction_batch": [
+      "self",
+      "companyId",
+      "model"
+    ],
+    "delete_batch": [
+      "self",
+      "companyId",
+      "id_"
+    ],
+    "download_batch": [
+      "self",
+      "companyId",
+      "batchId",
+      "id_"
+    ],
+    "get_batch": [
+      "self",
+      "companyId",
+      "id_"
+    ],
+    "list_batches_by_company": [
+      "self",
+      "companyId",
+      "include"
+    ],
+    "query_batches": [
+      "self",
+      "include"
+    ],
+    "create_cert_express_invitation": [
+      "self",
+      "companyId",
+      "customerCode",
+      "model"
+    ],
+    "get_cert_express_invitation": [
+      "self",
+      "companyId",
+      "customerCode",
+      "id_",
+      "include"
+    ],
+    "list_cert_express_invitations": [
+      "self",
+      "companyId",
+      "include"
+    ],
+    "create_certificates": [
+      "self",
+      "companyId",
+      "model",
+      "include"
+    ],
+    "delete_certificate": [
+      "self",
+      "companyId",
+      "id_"
+    ],
+    "delete_certificate_custom_fields": [
+      "self",
+      "companyId",
+      "id_",
+      "model"
+    ],
+    "download_certificate_image": [
+      "self",
+      "companyId",
+      "id_",
+      "include"
+    ],
+    "get_certificate": [
+      "self",
+      "companyId",
+      "id_",
+      "include"
+    ],
+    "get_certificate_setup": [
+      "self",
+      "companyId"
+    ],
+    "link_attributes_to_certificate": [
+      "self",
+      "companyId",
+      "id_",
+      "model"
+    ],
+    "link_customers_to_certificate": [
+      "self",
+      "companyId",
+      "id_",
+      "model"
+    ],
+    "list_attributes_for_certificate": [
+      "self",
+      "companyId",
+      "id_"
+    ],
+    "list_certificate_tax_types": [
+      "self",
+      "companyId",
+      "include"
+    ],
+    "list_customers_for_certificate": [
+      "self",
+      "companyId",
+      "id_",
+      "include"
+    ],
+    "list_custom_fields_for_certificate": [
+      "self",
+      "companyId",
+      "id_"
+    ],
+    "list_local_exempt_jurisdictions": [
+      "self",
+      "companyId",
+      "include"
+    ],
+    "query_certificates": [
+      "self",
+      "companyId",
+      "include"
+    ],
+    "request_certificate_setup": [
+      "self",
+      "companyId"
+    ],
+    "unlink_attributes_from_certificate": [
+      "self",
+      "companyId",
+      "id_",
+      "model"
+    ],
+    "unlink_customers_from_certificate": [
+      "self",
+      "companyId",
+      "id_",
+      "model"
+    ],
+    "update_certificate": [
+      "self",
+      "companyId",
+      "id_",
+      "model"
+    ],
+    "update_certificate_custom_fields": [
+      "self",
+      "companyId",
+      "id_",
+      "model"
+    ],
+    "upload_certificate_image": [
+      "self",
+      "companyId",
+      "id_"
+    ],
+    "list_location_by_account": [
+      "self",
+      "accountId",
+      "include"
+    ],
+    "get_communication_certificate": [
+      "self",
+      "companyId",
+      "certificateId"
+    ],
+    "list_communication_certificates": [
+      "self",
+      "companyId",
+      "include"
+    ],
+    "certify_integration": [
+      "self",
+      "id_"
+    ],
+    "change_filing_status": [
+      "self",
+      "id_",
+      "model"
+    ],
+    "company_initialize": [
+      "self",
+      "model"
+    ],
+    "create_companies": [
+      "self",
+      "model"
+    ],
+    "create_company_parameters": [
+      "self",
+      "companyId",
+      "model"
+    ],
+    "create_funding_request": [
+      "self",
+      "id_",
+      "model",
+      "include"
+    ],
+    "create_vat_numbers": [
+      "self",
+      "companyId",
+      "model"
+    ],
+    "delete_company": [
+      "self",
+      "id_"
+    ],
+    "delete_company_parameter": [
+      "self",
+      "companyId",
+      "id_"
+    ],
+    "delete_vat_number": [
+      "self",
+      "companyId",
+      "id_"
+    ],
+    "funding_configuration_by_company": [
+      "self",
+      "companyId"
+    ],
+    "funding_configurations_by_company_and_currency": [
+      "self",
+      "companyId",
+      "include"
+    ],
+    "get_all_customers_and_suppliers_with_country_params": [
+      "self",
+      "companyId",
+      "include"
+    ],
+    "get_company": [
+      "self",
+      "id_",
+      "include"
+    ],
+    "get_company_configuration": [
+      "self",
+      "id_"
+    ],
+    "get_company_parameter_detail": [
+      "self",
+      "companyId",
+      "id_"
+    ],
+    "get_filing_status": [
+      "self",
+      "id_"
+    ],
+    "get_vat_number": [
+      "self",
+      "companyId",
+      "id_"
+    ],
+    "list_a_c_h_entry_details_for_company": [
+      "self",
+      "id_",
+      "periodyear",
+      "periodmonth"
+    ],
+    "list_company_parameter_details": [
+      "self",
+      "companyId",
+      "include"
+    ],
+    "list_funding_requests_by_company": [
+      "self",
+      "id_"
+    ],
+    "list_mrs_companies": [
+      "self"
+    ],
+    "list_vat_numbers": [
+      "self",
+      "companyId",
+      "include"
+    ],
+    "query_companies": [
+      "self",
+      "include"
+    ],
+    "set_company_configuration": [
+      "self",
+      "id_",
+      "model"
+    ],
+    "update_company": [
+      "self",
+      "id_",
+      "model"
+    ],
+    "update_company_parameter_detail": [
+      "self",
+      "companyId",
+      "id_",
+      "model"
+    ],
+    "update_vat_number": [
+      "self",
+      "companyId",
+      "id_",
+      "model"
+    ],
+    "validate_vat_number": [
+      "self",
+      "companyId",
+      "model"
+    ],
+    "query_juris_names": [
+      "self",
+      "country",
+      "region",
+      "include"
+    ],
+    "query_rate_options": [
+      "self",
+      "country",
+      "region",
+      "include"
+    ],
+    "query_state_config": [
+      "self",
+      "include"
+    ],
+    "query_state_reporting_codes": [
+      "self",
+      "country",
+      "region",
+      "include"
+    ],
+    "query_tax_type_mappings": [
+      "self",
+      "include"
+    ],
+    "create_contacts": [
+      "self",
+      "companyId",
+      "model"
+    ],
+    "delete_contact": [
+      "self",
+      "companyId",
+      "id_"
+    ],
+    "get_contact": [
+      "self",
+      "companyId",
+      "id_"
+    ],
+    "list_contacts_by_company": [
+      "self",
+      "companyId",
+      "include"
+    ],
+    "query_contacts": [
+      "self",
+      "include"
+    ],
+    "update_contact": [
+      "self",
+      "companyId",
+      "id_",
+      "model"
+    ],
+    "bulk_upload_cost_centers": [
+      "self",
+      "companyid",
+      "model"
+    ],
+    "create_cost_center": [
+      "self",
+      "companyid",
+      "model"
+    ],
+    "delete_cost_center": [
+      "self",
+      "companyid",
+      "costcenterid"
+    ],
+    "get_cost_center_by_id": [
+      "self",
+      "companyid",
+      "costcenterid"
+    ],
+    "list_cost_centers_by_company": [
+      "self",
+      "companyid",
+      "include"
+    ],
+    "query_cost_centers": [
+      "self",
+      "include"
+    ],
+    "update_cost_center": [
+      "self",
+      "companyid",
+      "costcenterid",
+      "model"
+    ],
+    "create_currency_rounding_rules": [
+      "self",
+      "accountId",
+      "model"
+    ],
+    "delete_currency_rounding_rule": [
+      "self",
+      "accountId",
+      "id_"
+    ],
+    "get_currency_rounding_rule": [
+      "self",
+      "accountId",
+      "id_"
+    ],
+    "list_currency_rounding_rules": [
+      "self",
+      "accountId",
+      "include"
+    ],
+    "update_currency_rounding_rule": [
+      "self",
+      "accountId",
+      "id_",
+      "model"
+    ],
+    "add_ship_to_states_for_customer": [
+      "self",
+      "companyId",
+      "customerCode",
+      "model"
+    ],
+    "create_customers": [
+      "self",
+      "companyId",
+      "model"
+    ],
+    "delete_customer": [
+      "self",
+      "companyId",
+      "customerCode"
+    ],
+    "delete_custom_fields": [
+      "self",
+      "companyId",
+      "customerCode",
+      "model"
+    ],
+    "get_customer": [
+      "self",
+      "companyId",
+      "customerCode",
+      "include"
+    ],
+    "link_attributes_to_customer": [
+      "self",
+      "companyId",
+      "customerCode",
+      "model"
+    ],
+    "link_certificates_to_customer": [
+      "self",
+      "companyId",
+      "customerCode",
+      "model"
+    ],
+    "link_ship_to_customers_to_bill_customer": [
+      "self",
+      "companyId",
+      "code",
+      "model"
+    ],
+    "list_active_certificates_for_customer": [
+      "self",
+      "companyId",
+      "customerCode"
+    ],
+    "list_attributes_for_customer": [
+      "self",
+      "companyId",
+      "customerCode"
+    ],
+    "list_certificates_for_customer": [
+      "self",
+      "companyId",
+      "customerCode",
+      "include"
+    ],
+    "list_custom_fields_for_customer": [
+      "self",
+      "companyId",
+      "customerCode"
+    ],
+    "list_in_active_certificates_for_customer": [
+      "self",
+      "companyId",
+      "customerCode"
+    ],
+    "list_ship_to_states_for_customer": [
+      "self",
+      "companyId",
+      "customerCode"
+    ],
+    "list_valid_certificates_for_customer": [
+      "self",
+      "companyId",
+      "customerCode",
+      "country",
+      "region"
+    ],
+    "query_customers": [
+      "self",
+      "companyId",
+      "include"
+    ],
+    "remove_ship_to_states_for_customer": [
+      "self",
+      "companyId",
+      "customerCode",
+      "model"
+    ],
+    "unlink_attributes_from_customer": [
+      "self",
+      "companyId",
+      "customerCode",
+      "model"
+    ],
+    "unlink_certificates_from_customer": [
+      "self",
+      "companyId",
+      "customerCode",
+      "model"
+    ],
+    "update_customer": [
+      "self",
+      "companyId",
+      "customerCode",
+      "model"
+    ],
+    "update_custom_fields": [
+      "self",
+      "companyId",
+      "customerCode",
+      "model"
+    ],
+    "create_custom_rule": [
+      "self",
+      "companyId",
+      "model"
+    ],
+    "delete_custom_rule": [
+      "self",
+      "companyId",
+      "id_"
+    ],
+    "export_custom_rules": [
+      "self",
+      "companyId",
+      "include"
+    ],
+    "get_custom_rule": [
+      "self",
+      "companyId",
+      "id_"
+    ],
+    "get_custom_rule_components": [
+      "self",
+      "companyId",
+      "include"
+    ],
+    "get_custom_rule_fields": [
+      "self",
+      "companyId",
+      "include"
+    ],
+    "get_custom_rule_template": [
+      "self",
+      "companyId",
+      "model"
+    ],
+    "get_custom_rule_tokens": [
+      "self",
+      "companyId",
+      "include"
+    ],
+    "list_custom_rules": [
+      "self",
+      "companyId",
+      "include"
+    ],
+    "update_custom_rule": [
+      "self",
+      "companyId",
+      "id_",
+      "model"
+    ],
+    "validate_custom_rule": [
+      "self",
+      "companyId",
+      "model"
+    ],
+    "create_data_sources": [
+      "self",
+      "companyId",
+      "model"
+    ],
+    "delete_data_source": [
+      "self",
+      "companyId",
+      "id_"
+    ],
+    "get_data_source_by_id": [
+      "self",
+      "companyId",
+      "id_"
+    ],
+    "list_data_sources": [
+      "self",
+      "companyId",
+      "include"
+    ],
+    "query_data_sources": [
+      "self",
+      "include"
+    ],
+    "update_data_source": [
+      "self",
+      "companyId",
+      "id_",
+      "model"
+    ],
+    "get_cross_border_code": [
+      "self",
+      "country",
+      "hsCode"
+    ],
+    "list_all_marketplace_locations": [
+      "self",
+      "include"
+    ],
+    "list_all_unit_of_basis": [
+      "self",
+      "include"
+    ],
+    "list_ava_file_forms": [
+      "self",
+      "include"
+    ],
+    "list_certificate_attributes": [
+      "self",
+      "include"
+    ],
+    "list_certificate_exempt_reasons": [
+      "self",
+      "include"
+    ],
+    "list_certificate_exposure_zones": [
+      "self",
+      "include"
+    ],
+    "list_classification_parameters_usage": [
+      "self",
+      "include"
+    ],
+    "list_communications_service_types": [
+      "self",
+      "id_",
+      "include"
+    ],
+    "list_communications_transaction_types": [
+      "self",
+      "include"
+    ],
+    "list_communications_t_s_pairs": [
+      "self",
+      "include"
+    ],
+    "list_countries": [
+      "self",
+      "include"
+    ],
+    "list_cover_letters": [
+      "self",
+      "include"
+    ],
+    "list_cross_border_codes": [
+      "self",
+      "country",
+      "hsCode",
+      "include"
+    ],
+    "list_cross_border_sections": [
+      "self"
+    ],
+    "list_currencies": [
+      "self",
+      "include"
+    ],
+    "list_currency_rounding_rule_defaults": [
+      "self",
+      "include"
+    ],
+    "list_entity_use_codes": [
+      "self",
+      "include"
+    ],
+    "list_filing_frequencies": [
+      "self",
+      "include"
+    ],
+    "list_item_h_s_code_classification_status": [
+      "self"
+    ],
+    "list_item_reverse_sync_events": [
+      "self"
+    ],
+    "list_items_recommendations_status": [
+      "self"
+    ],
+    "list_items_status": [
+      "self"
+    ],
+    "list_jurisdictions": [
+      "self",
+      "include"
+    ],
+    "list_jurisdictions_by_address": [
+      "self",
+      "include"
+    ],
+    "list_jurisdictions_by_rate_type_tax_type_mapping": [
+      "self",
+      "country",
+      "taxTypeId",
+      "taxSubTypeId",
+      "include"
+    ],
+    "list_jurisdictions_hierarchy": [
+      "self",
+      "include"
+    ],
+    "list_jurisdiction_tax_types_and_sub_types": [
+      "self",
+      "country",
+      "region",
+      "jurisdictionTypeId",
+      "jurisdictionCode",
+      "include"
+    ],
+    "list_jurisdiction_types_by_rate_type_tax_type_mapping": [
+      "self",
+      "country",
+      "taxTypeId",
+      "taxSubTypeId",
+      "include"
+    ],
+    "list_location_questions_by_address": [
+      "self",
+      "include"
+    ],
+    "list_marketplace_locations": [
+      "self",
+      "include"
+    ],
+    "list_nexus": [
+      "self",
+      "include"
+    ],
+    "list_nexus_by_address": [
+      "self",
+      "include"
+    ],
+    "list_nexus_by_country": [
+      "self",
+      "country",
+      "include"
+    ],
+    "list_nexus_by_country_and_region": [
+      "self",
+      "country",
+      "region",
+      "include"
+    ],
+    "list_nexus_by_form_code": [
+      "self",
+      "formCode"
+    ],
+    "list_nexus_by_tax_type_group": [
+      "self",
+      "taxTypeGroup",
+      "include"
+    ],
+    "list_nexus_tax_type_groups": [
+      "self",
+      "include"
+    ],
+    "list_notice_customer_funding_options": [
+      "self",
+      "include"
+    ],
+    "list_notice_customer_types": [
+      "self",
+      "include"
+    ],
+    "list_notice_filingtypes": [
+      "self",
+      "include"
+    ],
+    "list_notice_priorities": [
+      "self",
+      "include"
+    ],
+    "list_notice_reasons": [
+      "self",
+      "include"
+    ],
+    "list_notice_responsibilities": [
+      "self",
+      "include"
+    ],
+    "list_notice_root_causes": [
+      "self",
+      "include"
+    ],
+    "list_notice_statuses": [
+      "self",
+      "include"
+    ],
+    "list_notice_types": [
+      "self",
+      "include"
+    ],
+    "list_parameters": [
+      "self",
+      "include"
+    ],
+    "list_parameters_by_account": [
+      "self",
+      "accountId",
+      "include"
+    ],
+    "list_parameters_by_item": [
+      "self",
+      "companyCode",
+      "itemCode",
+      "include"
+    ],
+    "list_parameters_usage": [
+      "self",
+      "include"
+    ],
+    "list_permissions": [
+      "self",
+      "include"
+    ],
+    "list_postal_codes": [
+      "self",
+      "include"
+    ],
+    "list_preferred_programs": [
+      "self",
+      "include"
+    ],
+    "list_product_classification_systems": [
+      "self",
+      "include"
+    ],
+    "list_product_classification_systems_by_company": [
+      "self",
+      "companyCode",
+      "include"
+    ],
+    "list_rate_types_by_country": [
+      "self",
+      "country",
+      "include"
+    ],
+    "list_rate_types_by_country_tax_type_tax_sub_type": [
+      "self",
+      "country",
+      "taxTypeId",
+      "taxSubTypeId",
+      "include"
+    ],
+    "list_regions": [
+      "self",
+      "include"
+    ],
+    "list_regions_by_country": [
+      "self",
+      "country",
+      "include"
+    ],
+    "list_regions_by_country_and_tax_type_and_tax_sub_type_and_rate_type": [
+      "self",
+      "companyId",
+      "country",
+      "taxTypeId",
+      "taxSubTypeId",
+      "rateTypeId",
+      "jurisdictionTypeId",
+      "include"
+    ],
+    "list_returns_parameters_usage": [
+      "self",
+      "include"
+    ],
+    "list_security_roles": [
+      "self",
+      "include"
+    ],
+    "list_subscription_types": [
+      "self",
+      "include"
+    ],
+    "list_tags": [
+      "self",
+      "include"
+    ],
+    "list_tax_authorities": [
+      "self",
+      "include"
+    ],
+    "list_tax_authority_forms": [
+      "self",
+      "include"
+    ],
+    "list_tax_authority_types": [
+      "self",
+      "include"
+    ],
+    "list_tax_codes": [
+      "self",
+      "include"
+    ],
+    "list_tax_code_types": [
+      "self",
+      "include"
+    ],
+    "list_tax_forms": [
+      "self",
+      "include"
+    ],
+    "list_tax_sub_types": [
+      "self",
+      "include"
+    ],
+    "list_tax_sub_types_by_country_and_tax_type": [
+      "self",
+      "country",
+      "taxTypeId",
+      "include"
+    ],
+    "list_tax_sub_types_by_jurisdiction_and_region": [
+      "self",
+      "jurisdictionCode",
+      "region",
+      "include"
+    ],
+    "list_tax_type_groups": [
+      "self",
+      "include"
+    ],
+    "list_tax_types_by_nexus_and_country": [
+      "self",
+      "country",
+      "include"
+    ],
+    "list_unit_of_basis_by_country_and_tax_type_and_tax_sub_type_and_rate_type": [
+      "self",
+      "country",
+      "taxTypeId",
+      "taxSubTypeId",
+      "include"
+    ],
+    "list_unit_of_measurement": [
+      "self",
+      "include"
+    ],
+    "create_distance_threshold": [
+      "self",
+      "companyId",
+      "model"
+    ],
+    "delete_distance_threshold": [
+      "self",
+      "companyId",
+      "id_"
+    ],
+    "get_distance_threshold": [
+      "self",
+      "companyId",
+      "id_"
+    ],
+    "list_distance_thresholds": [
+      "self",
+      "companyId",
+      "include"
+    ],
+    "query_distance_thresholds": [
+      "self",
+      "include"
+    ],
+    "update_distance_threshold": [
+      "self",
+      "companyId",
+      "id_",
+      "model"
+    ],
+    "create_dcv": [
+      "self",
+      "model"
+    ],
+    "filter_dcv": [
+      "self",
+      "include"
+    ],
+    "get_dcv_by_id": [
+      "self",
+      "domainControlVerificationId"
+    ],
+    "delete_afc_event_notifications": [
+      "self",
+      "model",
+      "include"
+    ],
+    "delete_event_notifications": [
+      "self",
+      "companyId",
+      "model"
+    ],
+    "get_event_notifications": [
+      "self",
+      "companyId"
+    ],
+    "list_afc_event_notifications": [
+      "self",
+      "include"
+    ],
+    "create_e_commerce_token": [
+      "self",
+      "companyId",
+      "model"
+    ],
+    "refresh_e_commerce_token": [
+      "self",
+      "companyId",
+      "model"
+    ],
+    "get_eco_nexus_thresholds": [
+      "self",
+      "companyId",
+      "include"
+    ],
+    "approve_firm_client_linkage": [
+      "self",
+      "id_"
+    ],
+    "create_and_link_new_firm_client_account": [
+      "self",
+      "model"
+    ],
+    "create_firm_client_linkage": [
+      "self",
+      "model"
+    ],
+    "delete_firm_client_linkage": [
+      "self",
+      "id_"
+    ],
+    "get_firm_client_linkage": [
+      "self",
+      "id_"
+    ],
+    "insert_firm_client_linkage": [
+      "self",
+      "model"
+    ],
+    "list_firm_client_linkage": [
+      "self",
+      "include"
+    ],
+    "reject_firm_client_linkage": [
+      "self",
+      "id_"
+    ],
+    "reset_firm_client_linkage": [
+      "self",
+      "id_"
+    ],
+    "revoke_firm_client_linkage": [
+      "self",
+      "id_"
+    ],
+    "update_firm_client_linkage": [
+      "self",
+      "model"
+    ],
+    "resolve_form_type_task": [
+      "self",
+      "include"
+    ],
+    "activate_funding_request": [
+      "self",
+      "id_",
+      "include"
+    ],
+    "funding_request_status": [
+      "self",
+      "id_",
+      "include"
+    ],
+    "bulk_upload_g_l_accounts": [
+      "self",
+      "companyid",
+      "model"
+    ],
+    "create_g_l_account": [
+      "self",
+      "companyid",
+      "model"
+    ],
+    "delete_g_l_account": [
+      "self",
+      "companyid",
+      "glaccountid"
+    ],
+    "get_g_l_account_by_id": [
+      "self",
+      "companyid",
+      "glaccountid"
+    ],
+    "list_g_l_accounts_by_company": [
+      "self",
+      "companyid",
+      "include"
+    ],
+    "update_g_l_account": [
+      "self",
+      "companyid",
+      "glaccountid",
+      "model"
+    ],
+    "a_isearch": [
+      "self",
+      "companyId",
+      "model"
+    ],
+    "batch_delete_item_classifications": [
+      "self",
+      "companyId",
+      "itemId"
+    ],
+    "batch_delete_item_custom_parameters": [
+      "self",
+      "companyId",
+      "itemId"
+    ],
+    "batch_delete_item_parameters": [
+      "self",
+      "companyId",
+      "itemId"
+    ],
+    "bulk_upload_items": [
+      "self",
+      "companyId",
+      "model"
+    ],
+    "create_item_classifications": [
+      "self",
+      "companyId",
+      "itemId",
+      "model"
+    ],
+    "create_item_custom_parameters": [
+      "self",
+      "companyId",
+      "itemId",
+      "model"
+    ],
+    "create_item_parameters": [
+      "self",
+      "companyId",
+      "itemId",
+      "model"
+    ],
+    "create_items": [
+      "self",
+      "companyId",
+      "model",
+      "include"
+    ],
+    "create_item_tags": [
+      "self",
+      "companyId",
+      "itemId",
+      "model"
+    ],
+    "create_taxcode_batch": [
+      "self",
+      "companyId",
+      "model"
+    ],
+    "create_tax_code_classification_request": [
+      "self",
+      "companyId",
+      "model"
+    ],
+    "delete_batch_tax_code_recommendations": [
+      "self",
+      "companyId",
+      "batchId"
+    ],
+    "delete_catalogue_item": [
+      "self",
+      "companyId",
+      "itemCode"
+    ],
+    "delete_h_s_code_classification_status": [
+      "self",
+      "companyId",
+      "itemId",
+      "id_"
+    ],
+    "delete_item": [
+      "self",
+      "companyId",
+      "id_"
+    ],
+    "delete_item_classification": [
+      "self",
+      "companyId",
+      "itemId",
+      "id_"
+    ],
+    "delete_item_custom_parameter": [
+      "self",
+      "companyId",
+      "itemId",
+      "id_"
+    ],
+    "delete_item_image": [
+      "self",
+      "companyId",
+      "itemId",
+      "imageId"
+    ],
+    "delete_item_parameter": [
+      "self",
+      "companyId",
+      "itemId",
+      "id_"
+    ],
+    "delete_item_tag": [
+      "self",
+      "companyId",
+      "itemId",
+      "itemTagDetailId"
+    ],
+    "delete_item_tags": [
+      "self",
+      "companyId",
+      "itemId"
+    ],
+    "dismiss_h_s_code_classification_status": [
+      "self",
+      "companyId",
+      "itemId",
+      "include"
+    ],
+    "fetch_additional_h_s_code_duty_details": [
+      "self",
+      "companyId",
+      "itemId",
+      "model"
+    ],
+    "get_batch_tax_code_recommendations": [
+      "self",
+      "companyId",
+      "batchId"
+    ],
+    "get_h_s_code_classification_s_l_a": [
+      "self",
+      "companyId"
+    ],
+    "get_item": [
+      "self",
+      "companyId",
+      "id_",
+      "include"
+    ],
+    "get_item_classification": [
+      "self",
+      "companyId",
+      "itemId",
+      "id_"
+    ],
+    "get_item_custom_parameter": [
+      "self",
+      "companyId",
+      "itemId",
+      "id_"
+    ],
+    "get_item_parameter": [
+      "self",
+      "companyId",
+      "itemId",
+      "id_"
+    ],
+    "get_item_tags": [
+      "self",
+      "companyId",
+      "itemId",
+      "include"
+    ],
+    "get_item_tax_code_recommendations": [
+      "self",
+      "companyId",
+      "itemId"
+    ],
+    "get_premium_classification": [
+      "self",
+      "companyId",
+      "itemCode",
+      "systemCode",
+      "include"
+    ],
+    "get_product_image": [
+      "self",
+      "companyId",
+      "itemId",
+      "imageId"
+    ],
+    "get_sync_tax_code_recommendations": [
+      "self",
+      "companyId",
+      "model"
+    ],
+    "initiate_h_s_code_classification": [
+      "self",
+      "companyId",
+      "model"
+    ],
+    "list_import_restrictions": [
+      "self",
+      "companyId",
+      "itemCode",
+      "countryOfImport",
+      "include"
+    ],
+    "list_item_classifications": [
+      "self",
+      "companyId",
+      "itemId",
+      "include"
+    ],
+    "list_item_custom_parameters": [
+      "self",
+      "companyId",
+      "itemId",
+      "include"
+    ],
+    "list_item_parameters": [
+      "self",
+      "companyId",
+      "itemId",
+      "include"
+    ],
+    "list_item_premium_classifications": [
+      "self",
+      "companyId",
+      "itemCode",
+      "include"
+    ],
+    "list_items_by_company": [
+      "self",
+      "companyId",
+      "include"
+    ],
+    "list_recommended_parameter_by_company_id_and_item_id": [
+      "self",
+      "companyId",
+      "itemId",
+      "include"
+    ],
+    "patch_item": [
+      "self",
+      "companyId",
+      "id_",
+      "model"
+    ],
+    "query_items": [
+      "self",
+      "include"
+    ],
+    "query_items_by_system_code": [
+      "self",
+      "companyId",
+      "systemCode",
+      "model",
+      "include"
+    ],
+    "query_items_by_tag": [
+      "self",
+      "companyId",
+      "tag",
+      "include"
+    ],
+    "sync_item_catalogue": [
+      "self",
+      "companyId",
+      "model"
+    ],
+    "sync_items": [
+      "self",
+      "companyId",
+      "model"
+    ],
+    "update_image": [
+      "self",
+      "companyId",
+      "itemId",
+      "imageId"
+    ],
+    "update_item": [
+      "self",
+      "companyId",
+      "id_",
+      "model",
+      "include"
+    ],
+    "update_item_classification": [
+      "self",
+      "companyId",
+      "itemId",
+      "id_",
+      "model"
+    ],
+    "update_item_custom_parameter": [
+      "self",
+      "companyId",
+      "itemId",
+      "id_",
+      "model"
+    ],
+    "update_item_parameter": [
+      "self",
+      "companyId",
+      "itemId",
+      "id_",
+      "model"
+    ],
+    "upload_image": [
+      "self",
+      "companyId",
+      "itemId"
+    ],
+    "upsert_item_classifications": [
+      "self",
+      "companyId",
+      "itemId",
+      "model"
+    ],
+    "upsert_item_custom_parameter": [
+      "self",
+      "companyId",
+      "itemId",
+      "model"
+    ],
+    "upsert_item_parameter": [
+      "self",
+      "companyId",
+      "itemId",
+      "model"
+    ],
+    "verify_h_s_code": [
+      "self",
+      "companyId",
+      "model"
+    ],
+    "create_reverse_sync_registration": [
+      "self",
+      "companyId",
+      "model"
+    ],
+    "delete_reverse_sync_registration": [
+      "self",
+      "companyId",
+      "registrationId"
+    ],
+    "get_reverse_sync_registration": [
+      "self",
+      "companyId",
+      "registrationId"
+    ],
+    "list_reverse_sync_registrations": [
+      "self",
+      "companyId"
+    ],
+    "update_reverse_sync_registration": [
+      "self",
+      "companyId",
+      "registrationId",
+      "model"
+    ],
+    "create_job": [
+      "self",
+      "companyId",
+      "model"
+    ],
+    "create_job_phase": [
+      "self",
+      "companyId",
+      "jobId",
+      "model"
+    ],
+    "create_job_task": [
+      "self",
+      "companyId",
+      "jobId",
+      "phaseId",
+      "model"
+    ],
+    "delete_job": [
+      "self",
+      "companyId",
+      "id_"
+    ],
+    "delete_job_phase": [
+      "self",
+      "companyId",
+      "jobId",
+      "phaseId"
+    ],
+    "delete_job_task": [
+      "self",
+      "companyId",
+      "jobId",
+      "phaseId",
+      "taskId"
+    ],
+    "get_job": [
+      "self",
+      "companyId",
+      "id_",
+      "include"
+    ],
+    "list_jobs": [
+      "self",
+      "companyId",
+      "include"
+    ],
+    "update_job": [
+      "self",
+      "companyId",
+      "id_",
+      "model"
+    ],
+    "update_job_phase": [
+      "self",
+      "companyId",
+      "jobId",
+      "phaseId",
+      "model"
+    ],
+    "update_job_task": [
+      "self",
+      "companyId",
+      "jobId",
+      "phaseId",
+      "taskId",
+      "model"
+    ],
+    "create_jurisdiction_overrides": [
+      "self",
+      "accountId",
+      "model"
+    ],
+    "delete_jurisdiction_override": [
+      "self",
+      "accountId",
+      "id_"
+    ],
+    "get_jurisdiction_override": [
+      "self",
+      "accountId",
+      "id_"
+    ],
+    "list_jurisdiction_overrides_by_account": [
+      "self",
+      "accountId",
+      "include"
+    ],
+    "query_jurisdiction_overrides": [
+      "self",
+      "include"
+    ],
+    "update_jurisdiction_override": [
+      "self",
+      "accountId",
+      "id_",
+      "model"
+    ],
+    "create_location_parameters": [
+      "self",
+      "companyId",
+      "locationId",
+      "model"
+    ],
+    "create_locations": [
+      "self",
+      "companyId",
+      "model"
+    ],
+    "delete_location": [
+      "self",
+      "companyId",
+      "id_"
+    ],
+    "delete_location_parameter": [
+      "self",
+      "companyId",
+      "locationId",
+      "id_"
+    ],
+    "get_location": [
+      "self",
+      "companyId",
+      "id_",
+      "include"
+    ],
+    "get_location_parameter": [
+      "self",
+      "companyId",
+      "locationId",
+      "id_"
+    ],
+    "list_location_parameters": [
+      "self",
+      "companyId",
+      "locationId",
+      "include"
+    ],
+    "list_locations_by_company": [
+      "self",
+      "companyId",
+      "include"
+    ],
+    "query_locations": [
+      "self",
+      "include"
+    ],
+    "update_location": [
+      "self",
+      "companyId",
+      "id_",
+      "model"
+    ],
+    "update_location_parameter": [
+      "self",
+      "companyId",
+      "locationId",
+      "id_",
+      "model"
+    ],
+    "validate_location": [
+      "self",
+      "companyId",
+      "id_"
+    ],
+    "adjust_multi_document_transaction": [
+      "self",
+      "code",
+      "type",
+      "model",
+      "include"
+    ],
+    "audit_multi_document_transaction": [
+      "self",
+      "code",
+      "type"
+    ],
+    "commit_multi_document_transaction": [
+      "self",
+      "model"
+    ],
+    "create_multi_document_transaction": [
+      "self",
+      "model",
+      "include"
+    ],
+    "get_multi_document_transaction_by_code_and_type": [
+      "self",
+      "code",
+      "type",
+      "include"
+    ],
+    "get_multi_document_transaction_by_id": [
+      "self",
+      "id_",
+      "include"
+    ],
+    "list_multi_document_transactions": [
+      "self",
+      "include"
+    ],
+    "refund_multi_document_transaction": [
+      "self",
+      "code",
+      "type",
+      "model",
+      "include"
+    ],
+    "verify_multi_document_transaction": [
+      "self",
+      "model"
+    ],
+    "void_multi_document_transaction": [
+      "self",
+      "code",
+      "type",
+      "model"
+    ],
+    "create_nexus": [
+      "self",
+      "companyId",
+      "model"
+    ],
+    "create_nexus_parameters": [
+      "self",
+      "companyId",
+      "nexusId",
+      "model"
+    ],
+    "declare_nexus_by_address": [
+      "self",
+      "companyId",
+      "model"
+    ],
+    "delete_nexus": [
+      "self",
+      "companyId",
+      "id_",
+      "include"
+    ],
+    "delete_nexus_parameter": [
+      "self",
+      "companyId",
+      "nexusId",
+      "id_"
+    ],
+    "delete_nexus_parameters": [
+      "self",
+      "companyId",
+      "nexusId"
+    ],
+    "get_nexus": [
+      "self",
+      "companyId",
+      "id_",
+      "include"
+    ],
+    "get_nexus_by_form_code": [
+      "self",
+      "companyId",
+      "formCode",
+      "include"
+    ],
+    "get_nexus_parameter": [
+      "self",
+      "companyId",
+      "nexusId",
+      "id_"
+    ],
+    "list_nexus_by_company": [
+      "self",
+      "companyId",
+      "include"
+    ],
+    "list_nexus_by_company_and_tax_type_group": [
+      "self",
+      "companyId",
+      "taxTypeGroup",
+      "include"
+    ],
+    "list_nexus_parameters": [
+      "self",
+      "companyId",
+      "nexusId",
+      "include"
+    ],
+    "query_nexus": [
+      "self",
+      "include"
+    ],
+    "update_nexus": [
+      "self",
+      "companyId",
+      "id_",
+      "model"
+    ],
+    "update_nexus_parameter": [
+      "self",
+      "companyId",
+      "nexusId",
+      "id_",
+      "model"
+    ],
+    "create_notice_responsibility_type": [
+      "self",
+      "model"
+    ],
+    "create_notice_root_cause_type": [
+      "self",
+      "model"
+    ],
+    "delete_notice_responsibility_type": [
+      "self",
+      "responsibilityId"
+    ],
+    "delete_notice_root_cause_type": [
+      "self",
+      "rootCauseId"
+    ],
+    "dismiss_notification": [
+      "self",
+      "id_"
+    ],
+    "get_notification": [
+      "self",
+      "id_"
+    ],
+    "list_notifications": [
+      "self",
+      "include"
+    ],
+    "request_new_account": [
+      "self",
+      "model"
+    ],
+    "request_new_entitlement": [
+      "self",
+      "id_",
+      "offer"
+    ],
+    "create_account": [
+      "self",
+      "model"
+    ],
+    "create_notifications": [
+      "self",
+      "model"
+    ],
+    "create_subscriptions": [
+      "self",
+      "accountId",
+      "model"
+    ],
+    "delete_account": [
+      "self",
+      "id_"
+    ],
+    "delete_notification": [
+      "self",
+      "id_"
+    ],
+    "delete_subscription": [
+      "self",
+      "accountId",
+      "id_"
+    ],
+    "list_service_types": [
+      "self",
+      "include"
+    ],
+    "reset_password": [
+      "self",
+      "userId",
+      "model",
+      "include"
+    ],
+    "update_account": [
+      "self",
+      "id_",
+      "model"
+    ],
+    "update_notification": [
+      "self",
+      "id_",
+      "model"
+    ],
+    "update_subscription": [
+      "self",
+      "accountId",
+      "id_",
+      "model"
+    ],
+    "download_audit_log_report": [
+      "self",
+      "id_"
+    ],
+    "download_report": [
+      "self",
+      "id_"
+    ],
+    "export_audit_logs": [
+      "self",
+      "model"
+    ],
+    "get_audit_log_report": [
+      "self",
+      "id_"
+    ],
+    "get_report": [
+      "self",
+      "id_"
+    ],
+    "initiate_export_document_line_report": [
+      "self",
+      "companyId",
+      "model"
+    ],
+    "list_reports": [
+      "self",
+      "include"
+    ],
+    "create_settings": [
+      "self",
+      "companyId",
+      "model"
+    ],
+    "delete_setting": [
+      "self",
+      "companyId",
+      "id_"
+    ],
+    "get_setting": [
+      "self",
+      "companyId",
+      "id_"
+    ],
+    "list_settings_by_company": [
+      "self",
+      "companyId",
+      "include"
+    ],
+    "query_settings": [
+      "self",
+      "include"
+    ],
+    "update_setting": [
+      "self",
+      "companyId",
+      "id_",
+      "model"
+    ],
+    "get_subscription": [
+      "self",
+      "accountId",
+      "id_"
+    ],
+    "list_subscriptions_by_account": [
+      "self",
+      "accountId",
+      "include"
+    ],
+    "query_subscriptions": [
+      "self",
+      "include"
+    ],
+    "create_tax_codes": [
+      "self",
+      "companyId",
+      "model"
+    ],
+    "delete_tax_code": [
+      "self",
+      "companyId",
+      "id_"
+    ],
+    "get_tax_code": [
+      "self",
+      "companyId",
+      "id_"
+    ],
+    "list_tax_codes_by_company": [
+      "self",
+      "companyId",
+      "include"
+    ],
+    "query_tax_codes": [
+      "self",
+      "include"
+    ],
+    "update_tax_code": [
+      "self",
+      "companyId",
+      "id_",
+      "model"
+    ],
+    "build_tax_content_file": [
+      "self",
+      "model"
+    ],
+    "build_tax_content_file_for_location": [
+      "self",
+      "companyId",
+      "id_",
+      "include"
+    ],
+    "download_tax_rates_by_zip_code": [
+      "self",
+      "date",
+      "include"
+    ],
+    "get_v_a_t_rates_by_country": [
+      "self",
+      "country",
+      "include"
+    ],
+    "tax_rates_by_address": [
+      "self",
+      "include"
+    ],
+    "tax_rates_by_postal_code": [
+      "self",
+      "include"
+    ],
+    "create_country_coefficients": [
+      "self",
+      "model"
+    ],
+    "create_tax_rules": [
+      "self",
+      "companyId",
+      "model"
+    ],
+    "delete_tax_rule": [
+      "self",
+      "companyId",
+      "id_"
+    ],
+    "get_tax_rule": [
+      "self",
+      "companyId",
+      "id_"
+    ],
+    "list_country_coefficients": [
+      "self",
+      "country",
+      "include"
+    ],
+    "list_tax_rules": [
+      "self",
+      "companyId",
+      "include"
+    ],
+    "query_tax_rules": [
+      "self",
+      "include"
+    ],
+    "update_tax_rule": [
+      "self",
+      "companyId",
+      "id_",
+      "model"
+    ],
+    "add_lines": [
+      "self",
+      "model",
+      "include"
+    ],
+    "adjust_transaction": [
+      "self",
+      "companyCode",
+      "transactionCode",
+      "model",
+      "include"
+    ],
+    "audit_transaction": [
+      "self",
+      "companyCode",
+      "transactionCode"
+    ],
+    "audit_transaction_with_type": [
+      "self",
+      "companyCode",
+      "transactionCode",
+      "documentType"
+    ],
+    "bulk_lock_transaction": [
+      "self",
+      "model"
+    ],
+    "change_transaction_code": [
+      "self",
+      "companyCode",
+      "transactionCode",
+      "model",
+      "include"
+    ],
+    "commit_transaction": [
+      "self",
+      "companyCode",
+      "transactionCode",
+      "model",
+      "include"
+    ],
+    "create_or_adjust_transaction": [
+      "self",
+      "model",
+      "include"
+    ],
+    "create_transaction": [
+      "self",
+      "model",
+      "include"
+    ],
+    "delete_lines": [
+      "self",
+      "model",
+      "include"
+    ],
+    "get_all_variance_report_by_company_code": [
+      "self",
+      "companyCode"
+    ],
+    "get_transaction_by_code": [
+      "self",
+      "companyCode",
+      "transactionCode",
+      "include"
+    ],
+    "get_transaction_by_code_and_type": [
+      "self",
+      "companyCode",
+      "transactionCode",
+      "documentType",
+      "include"
+    ],
+    "get_transaction_by_id": [
+      "self",
+      "id_",
+      "include"
+    ],
+    "get_variance_report_by_company_code_by_transaction_id": [
+      "self",
+      "companyCode",
+      "transactionId"
+    ],
+    "list_transactions_by_company": [
+      "self",
+      "companyCode",
+      "include"
+    ],
+    "lock_transaction": [
+      "self",
+      "companyCode",
+      "transactionCode",
+      "model",
+      "include"
+    ],
+    "refund_transaction": [
+      "self",
+      "companyCode",
+      "transactionCode",
+      "model",
+      "include"
+    ],
+    "settle_transaction": [
+      "self",
+      "companyCode",
+      "transactionCode",
+      "model",
+      "include"
+    ],
+    "uncommit_transaction": [
+      "self",
+      "companyCode",
+      "transactionCode",
+      "include"
+    ],
+    "unvoid_transaction": [
+      "self",
+      "companyCode",
+      "transactionCode",
+      "include"
+    ],
+    "variance_report": [
+      "self",
+      "companyCode",
+      "model"
+    ],
+    "verify_transaction": [
+      "self",
+      "companyCode",
+      "transactionCode",
+      "model",
+      "include"
+    ],
+    "void_transaction": [
+      "self",
+      "companyCode",
+      "transactionCode",
+      "model",
+      "include"
+    ],
+    "create_u_p_cs": [
+      "self",
+      "companyId",
+      "model"
+    ],
+    "delete_u_p_c": [
+      "self",
+      "companyId",
+      "id_"
+    ],
+    "get_u_p_c": [
+      "self",
+      "companyId",
+      "id_"
+    ],
+    "list_u_p_cs_by_company": [
+      "self",
+      "companyId",
+      "include"
+    ],
+    "query_u_p_cs": [
+      "self",
+      "include"
+    ],
+    "update_u_p_c": [
+      "self",
+      "companyId",
+      "id_",
+      "model"
+    ],
+    "delete_user_defined_field": [
+      "self",
+      "companyId",
+      "id_"
+    ],
+    "list_user_defined_fields_by_company_id": [
+      "self",
+      "companyId",
+      "include"
+    ],
+    "update_user_defined_field": [
+      "self",
+      "companyId",
+      "model",
+      "include"
+    ],
+    "change_password": [
+      "self",
+      "model"
+    ],
+    "create_users": [
+      "self",
+      "accountId",
+      "model"
+    ],
+    "delete_user": [
+      "self",
+      "id_",
+      "accountId"
+    ],
+    "get_user": [
+      "self",
+      "id_",
+      "accountId",
+      "include"
+    ],
+    "get_user_entitlements": [
+      "self",
+      "id_",
+      "accountId"
+    ],
+    "list_users_by_account": [
+      "self",
+      "accountId",
+      "include"
+    ],
+    "query_users": [
+      "self",
+      "include"
+    ],
+    "update_user": [
+      "self",
+      "id_",
+      "accountId",
+      "model"
+    ],
+    "get_my_subscription": [
+      "self",
+      "serviceTypeId"
+    ],
+    "list_my_subscriptions": [
+      "self"
+    ],
+    "ping": [
+      "self"
+    ],
+    "query_vendor_certificates": [
+      "self",
+      "companyId",
+      "include"
+    ],
+    "create_vendors": [
+      "self",
+      "companyId",
+      "model"
+    ],
+    "delete_vendor": [
+      "self",
+      "companyId",
+      "vendorCode"
+    ],
+    "get_vendor": [
+      "self",
+      "companyId",
+      "vendorCode",
+      "include"
+    ],
+    "list_certificates_for_vendor": [
+      "self",
+      "companyId",
+      "vendorCode",
+      "include"
+    ],
+    "query_vendors": [
+      "self",
+      "companyId",
+      "include"
+    ],
+    "update_vendor": [
+      "self",
+      "companyId",
+      "vendorCode",
+      "model"
+    ],
+    "find_age_verification": [
+      "self",
+      "model"
+    ],
+    "store_age_verification": [
+      "self",
+      "model"
+    ],
+    "store_if_verified": [
+      "self",
+      "model",
+      "include"
+    ],
+    "verify_age": [
+      "self",
+      "model",
+      "include"
+    ],
+    "deregister_shipment": [
+      "self",
+      "companyCode",
+      "transactionCode",
+      "include",
+      "x_avalara_version"
+    ],
+    "register_shipment": [
+      "self",
+      "companyCode",
+      "transactionCode",
+      "include",
+      "x_avalara_version"
+    ],
+    "register_shipment_if_compliant": [
+      "self",
+      "companyCode",
+      "transactionCode",
+      "include",
+      "x_avalara_version"
+    ],
+    "verify_shipment": [
+      "self",
+      "companyCode",
+      "transactionCode",
+      "include",
+      "x_avalara_version"
+    ],
+    "enqueue_batch_deregistration": [
+      "self",
+      "companyCode",
+      "batchCode",
+      "include",
+      "x_avalara_version"
+    ],
+    "enqueue_batch_registration": [
+      "self",
+      "companyCode",
+      "batchCode",
+      "include",
+      "x_avalara_version"
+    ],
+    "get_batch_registration_data": [
+      "self",
+      "include"
+    ]
+  },
+  "TransactionBuilder": {
+    "__init__": [
+      "self",
+      "client",
+      "comp_code",
+      "type_",
+      "cust_code"
+    ]
+  },
+  "ava_log": [
+    "func"
+  ],
+  "get_ava_log_entry": [
+    "result",
+    "is_log_req_resp_allowed"
+  ],
+  "decorate_all_methods": [
+    "decorator",
+    "exclude"
+  ]
+}
