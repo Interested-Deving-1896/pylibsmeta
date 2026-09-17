@@ -1,0 +1,687 @@
+{
+  "IAPIFactory": {
+    "__call__": [
+      "environ"
+    ]
+  },
+  "IAPI": {
+    "authenticate": [],
+    "challenge": [
+      "status",
+      "app_headers"
+    ],
+    "remember": [
+      "identity"
+    ],
+    "forget": [
+      "identity"
+    ],
+    "login": [
+      "credentials",
+      "identifier_name"
+    ],
+    "logout": [
+      "identifier_name"
+    ]
+  },
+  "IPlugin": {},
+  "IRequestClassifier": {
+    "__call__": [
+      "environ"
+    ]
+  },
+  "IChallengeDecider": {
+    "__call__": [
+      "environ",
+      "status",
+      "headers"
+    ]
+  },
+  "IIdentifier": {
+    "identify": [
+      "environ"
+    ],
+    "remember": [
+      "environ",
+      "identity"
+    ],
+    "forget": [
+      "environ",
+      "identity"
+    ]
+  },
+  "IAuthenticator": {
+    "authenticate": [
+      "environ",
+      "identity"
+    ]
+  },
+  "IChallenger": {
+    "challenge": [
+      "environ",
+      "status",
+      "app_headers",
+      "forget_headers"
+    ]
+  },
+  "IMetadataProvider": {
+    "add_metadata": [
+      "environ",
+      "identity"
+    ]
+  },
+  "authenticated_predicate": [],
+  "PredicateRestriction": {
+    "__init__": [
+      "self",
+      "app",
+      "predicate",
+      "enabled"
+    ],
+    "__call__": [
+      "self",
+      "environ",
+      "start_response"
+    ]
+  },
+  "make_authenticated_restriction": [
+    "app",
+    "global_config",
+    "enabled"
+  ],
+  "make_predicate_restriction": [
+    "app",
+    "global_config",
+    "predicate",
+    "enabled"
+  ],
+  "encodestring": [
+    "value"
+  ],
+  "REQUEST_METHOD": [
+    "environ"
+  ],
+  "CONTENT_TYPE": [
+    "environ"
+  ],
+  "USER_AGENT": [
+    "environ"
+  ],
+  "AUTHORIZATION": [
+    "environ"
+  ],
+  "get_cookies": [
+    "environ"
+  ],
+  "construct_url": [
+    "environ"
+  ],
+  "header_value": [
+    "environ",
+    "key"
+  ],
+  "must_decode": [
+    "value"
+  ],
+  "must_encode": [
+    "value"
+  ],
+  "WhoConfig": {
+    "__init__": [
+      "self",
+      "here"
+    ],
+    "_makePlugin": [
+      "self",
+      "name",
+      "iface",
+      "options"
+    ],
+    "_getPlugin": [
+      "self",
+      "name",
+      "iface"
+    ],
+    "_parsePluginSequence": [
+      "self",
+      "attr",
+      "proptext",
+      "iface"
+    ],
+    "parse": [
+      "self",
+      "text"
+    ]
+  },
+  "NullHandler": {
+    "emit": [
+      "self",
+      "record"
+    ]
+  },
+  "_LEVELS": [],
+  "make_api_factory_with_config": [
+    "global_conf",
+    "config_file",
+    "remote_user_key",
+    "logger"
+  ],
+  "make_middleware_with_config": [
+    "app",
+    "global_conf",
+    "config_file",
+    "log_file",
+    "log_level"
+  ],
+  "_DAV_METHODS": [],
+  "_DAV_USERAGENTS": [],
+  "default_request_classifier": [
+    "environ"
+  ],
+  "default_challenge_decider": [
+    "environ",
+    "status",
+    "headers"
+  ],
+  "passthrough_challenge_decider": [
+    "environ",
+    "status",
+    "headers"
+  ],
+  "InvalidDottedName": {
+    "__init__": [
+      "self",
+      "name"
+    ]
+  },
+  "resolveDotted": [
+    "dotted_or_ep"
+  ],
+  "DEFAULT_DIGEST": [],
+  "InvalidFieldSeparator": {
+    "__init__": [
+      "self",
+      "fieldname",
+      "separator"
+    ]
+  },
+  "_exclude_separator": [
+    "separator",
+    "value",
+    "fieldname"
+  ],
+  "AuthTicket": {
+    "__init__": [
+      "self",
+      "secret",
+      "userid",
+      "ip",
+      "tokens",
+      "user_data",
+      "time",
+      "cookie_name",
+      "secure",
+      "digest_algo"
+    ],
+    "digest": [
+      "self"
+    ],
+    "cookie_value": [
+      "self"
+    ],
+    "cookie": [
+      "self"
+    ]
+  },
+  "BadTicket": {
+    "__init__": [
+      "self",
+      "msg",
+      "expected"
+    ]
+  },
+  "TimestampNotHexInteger": {
+    "__init__": [
+      "self",
+      "timestamp",
+      "msg"
+    ]
+  },
+  "UserIDNotFollowedByBang": {
+    "__init__": [
+      "self",
+      "userid"
+    ]
+  },
+  "InvalidDigestSignature": {
+    "__init__": [
+      "self",
+      "digest",
+      "expected"
+    ]
+  },
+  "parse_ticket": [
+    "secret",
+    "ticket",
+    "ip",
+    "digest_algo"
+  ],
+  "calculate_digest": [
+    "ip",
+    "timestamp",
+    "secret",
+    "userid",
+    "tokens",
+    "user_data",
+    "digest_algo"
+  ],
+  "encode_ip_timestamp": [
+    "ip",
+    "timestamp"
+  ],
+  "maybe_encode": [
+    "s",
+    "encoding"
+  ],
+  "_STARTED": [],
+  "_ENDED": [],
+  "ChallengeDeciderRequired": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "ExactlyOneOfRequestClassifierAndClassifier": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "NoChallengersFound": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "PluggableAuthenticationMiddleware": {
+    "__init__": [
+      "self",
+      "app",
+      "identifiers",
+      "authenticators",
+      "challengers",
+      "mdproviders",
+      "request_classifier",
+      "challenge_decider",
+      "log_stream",
+      "log_level",
+      "remote_user_key",
+      "classifier"
+    ],
+    "__call__": [
+      "self",
+      "environ",
+      "start_response"
+    ]
+  },
+  "_no_op": [],
+  "wrap_generator": [
+    "result"
+  ],
+  "StartResponseWrapper": {
+    "__init__": [
+      "self",
+      "start_response"
+    ],
+    "wrap_start_response": [
+      "self",
+      "status",
+      "headers",
+      "exc_info"
+    ],
+    "finish_response": [
+      "self",
+      "extra_headers"
+    ]
+  },
+  "make_test_middleware": [
+    "app",
+    "global_conf"
+  ],
+  "get_api": [
+    "environ"
+  ],
+  "APIFactory": {
+    "__init__": [
+      "self",
+      "identifiers",
+      "authenticators",
+      "challengers",
+      "mdproviders",
+      "request_classifier",
+      "challenge_decider",
+      "remote_user_key",
+      "logger"
+    ],
+    "__call__": [
+      "self",
+      "environ"
+    ]
+  },
+  "verify": [
+    "plugin",
+    "iface"
+  ],
+  "make_registries": [
+    "identifiers",
+    "authenticators",
+    "challengers",
+    "mdproviders"
+  ],
+  "match_classification": [
+    "iface",
+    "plugins",
+    "classification"
+  ],
+  "API": {
+    "__init__": [
+      "self",
+      "environ",
+      "identifiers",
+      "authenticators",
+      "challengers",
+      "mdproviders",
+      "request_classifier",
+      "challenge_decider",
+      "remote_user_key",
+      "logger"
+    ],
+    "authenticate": [
+      "self"
+    ],
+    "challenge": [
+      "self",
+      "status",
+      "app_headers"
+    ],
+    "remember": [
+      "self",
+      "identity"
+    ],
+    "forget": [
+      "self",
+      "identity"
+    ],
+    "login": [
+      "self",
+      "credentials",
+      "identifier_name"
+    ],
+    "logout": [
+      "self",
+      "identifier_name"
+    ],
+    "_identify": [
+      "self"
+    ],
+    "_authenticate": [
+      "self",
+      "identities"
+    ],
+    "_add_metadata": [
+      "self",
+      "identity"
+    ]
+  },
+  "Identity": {
+    "__repr__": [
+      "self"
+    ],
+    "__str__": []
+  },
+  "_UTCNOW": [],
+  "_utcnow": [],
+  "ReissueTimeMustBeLowerThanTimeout": {
+    "__init__": [
+      "self",
+      "reissue_time",
+      "timeout"
+    ]
+  },
+  "ExactlyOneOfSecretOrSecretFile": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "InvalidSecretfile": {
+    "__init__": [
+      "self",
+      "secretfile"
+    ]
+  },
+  "InvalidDigestAlgo": {
+    "__init__": [
+      "self",
+      "digest_algo"
+    ]
+  },
+  "AuthTktCookiePlugin": {
+    "userid_typename": [],
+    "userid_type_decoders": [],
+    "userid_type_encoders": [],
+    "__init__": [
+      "self",
+      "secret",
+      "cookie_name",
+      "secure",
+      "include_ip",
+      "timeout",
+      "reissue_time",
+      "userid_checker",
+      "digest_algo",
+      "samesite"
+    ],
+    "identify": [
+      "self",
+      "environ"
+    ],
+    "forget": [
+      "self",
+      "environ",
+      "identity"
+    ],
+    "remember": [
+      "self",
+      "environ",
+      "identity"
+    ],
+    "authenticate": [
+      "self",
+      "environ",
+      "identity"
+    ],
+    "_get_cookies": [
+      "self",
+      "environ",
+      "value",
+      "max_age"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "_bool": [
+    "value"
+  ],
+  "make_plugin": [
+    "secret",
+    "secretfile",
+    "cookie_name",
+    "secure",
+    "include_ip",
+    "timeout",
+    "reissue_time",
+    "userid_checker",
+    "digest_algo"
+  ],
+  "BasicAuthPlugin": {
+    "__init__": [
+      "self",
+      "realm"
+    ],
+    "identify": [
+      "self",
+      "environ"
+    ],
+    "remember": [
+      "self",
+      "environ",
+      "identity"
+    ],
+    "_get_wwwauth": [
+      "self"
+    ],
+    "forget": [
+      "self",
+      "environ",
+      "identity"
+    ],
+    "challenge": [
+      "self",
+      "environ",
+      "status",
+      "app_headers",
+      "forget_headers"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "QueryRequired": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "ConnFactoryRequired": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "InvalidConnFactory": {
+    "__init__": [
+      "self",
+      "conn_factory"
+    ]
+  },
+  "default_password_compare": [
+    "cleartext_password",
+    "stored_password_hash"
+  ],
+  "make_psycopg_conn_factory": [],
+  "SQLAuthenticatorPlugin": {
+    "__init__": [
+      "self",
+      "query",
+      "conn_factory",
+      "compare_fn"
+    ],
+    "authenticate": [
+      "self",
+      "environ",
+      "identity"
+    ]
+  },
+  "SQLMetadataProviderPlugin": {
+    "__init__": [
+      "self",
+      "name",
+      "query",
+      "conn_factory",
+      "filter"
+    ],
+    "add_metadata": [
+      "self",
+      "environ",
+      "identity"
+    ]
+  },
+  "make_authenticator_plugin": [
+    "query",
+    "conn_factory",
+    "compare_fn"
+  ],
+  "make_metadata_plugin": [
+    "name",
+    "query",
+    "conn_factory",
+    "filter"
+  ],
+  "_spec": [],
+  "HAS_CRYPT": [],
+  "FilenameRequired": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "CheckFnRequired": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "_padding_for_file_lines": [],
+  "HTPasswdPlugin": {
+    "__init__": [
+      "self",
+      "filename",
+      "check"
+    ],
+    "authenticate": [
+      "self",
+      "environ",
+      "identity"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "PADDING": [],
+  "_same_string": [
+    "x",
+    "y"
+  ],
+  "crypt_check": [
+    "password",
+    "hashed"
+  ],
+  "sha1_check": [
+    "password",
+    "hashed"
+  ],
+  "plain_check": [
+    "password",
+    "hashed"
+  ],
+  "LoginUrlRequired": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "BothReasonHeaderAndReasonParamOrNeither": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "RedirectorPlugin": {
+    "__init__": [
+      "self",
+      "login_url",
+      "came_from_param",
+      "reason_param",
+      "reason_header"
+    ],
+    "challenge": [
+      "self",
+      "environ",
+      "status",
+      "app_headers",
+      "forget_headers"
+    ]
+  }
+}
