@@ -1,0 +1,1345 @@
+{
+  "check_level": [
+    "level"
+  ],
+  "EXCLUDE_RECORD_KEYS": [],
+  "resolve_logging_types": [
+    "obj"
+  ],
+  "RollbarHandler": {
+    "SUPPORTED_LEVELS": [],
+    "_history": [],
+    "__init__": [
+      "self",
+      "access_token",
+      "environment",
+      "level",
+      "history_size",
+      "history_level"
+    ],
+    "setLevel": [
+      "self",
+      "level"
+    ],
+    "setHistoryLevel": [
+      "self",
+      "level"
+    ],
+    "emit": [
+      "self",
+      "record"
+    ],
+    "_add_history": [
+      "self",
+      "record",
+      "payload_data"
+    ],
+    "_build_history_data": [
+      "self",
+      "record"
+    ]
+  },
+  "__version__": [],
+  "__log_name__": [],
+  "log": [],
+  "AsyncHTTPClient": [],
+  "passthrough_decorator": [
+    "func"
+  ],
+  "get_request": [],
+  "_get_bottle_request": [],
+  "_get_flask_request": [],
+  "_get_pyramid_request": [],
+  "_get_pylons_request": [],
+  "_get_starlette_request": [],
+  "_get_fastapi_request": [],
+  "ANONYMIZE": [],
+  "DEFAULT_LOCALS_SIZES": [],
+  "Level": [],
+  "IgnorableLevel": [],
+  "PropagationSettings": {},
+  "TracingSettings": {},
+  "NotifierSettings": {},
+  "LocalsSettings": {},
+  "SettingsParams": {},
+  "SettingsIrregular": [],
+  "Settings": {},
+  "_CURRENT_LAMBDA_CONTEXT": [],
+  "_LAST_RESPONSE_STATUS": [],
+  "_initialized": [],
+  "init": [
+    "access_token",
+    "environment",
+    "scrub_fields",
+    "url_fields"
+  ],
+  "_configure_transport": [],
+  "_requests_configuration": [],
+  "_init_tracing_propagation": [],
+  "_init_httpx_propagation": [],
+  "_init_requests_propagation": [],
+  "lambda_function": [
+    "f"
+  ],
+  "report_exc_info": [
+    "exc_info",
+    "request",
+    "extra_data",
+    "payload_data",
+    "level"
+  ],
+  "report_message": [
+    "message",
+    "level",
+    "request",
+    "extra_data",
+    "payload_data"
+  ],
+  "send_payload": [
+    "payload",
+    "access_token"
+  ],
+  "search_items": [
+    "title",
+    "return_fields",
+    "access_token",
+    "endpoint"
+  ],
+  "wait": [
+    "f"
+  ],
+  "ApiException": {},
+  "ApiError": {},
+  "Result": {
+    "__init__": [
+      "self",
+      "access_token",
+      "path",
+      "params",
+      "data"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "PagedResult": {
+    "__init__": [
+      "self",
+      "access_token",
+      "path",
+      "page_num",
+      "params",
+      "data",
+      "endpoint"
+    ],
+    "next_page": [
+      "self"
+    ],
+    "prev_page": [
+      "self"
+    ]
+  },
+  "_resolve_exception_class": [
+    "idx",
+    "filter"
+  ],
+  "_filtered_level": [
+    "exception"
+  ],
+  "_is_ignored": [
+    "exception"
+  ],
+  "_create_agent_log": [],
+  "_report_exc_info": [
+    "exc_info",
+    "request",
+    "extra_data",
+    "payload_data",
+    "level"
+  ],
+  "_walk_trace_chain": [
+    "cls",
+    "exc",
+    "trace"
+  ],
+  "_trace_data": [
+    "cls",
+    "exc",
+    "trace"
+  ],
+  "_report_message": [
+    "message",
+    "level",
+    "request",
+    "extra_data",
+    "payload_data"
+  ],
+  "_add_session_data": [
+    "data"
+  ],
+  "_add_session_attributes": [
+    "data",
+    "session_data"
+  ],
+  "_session_data_from_request": [
+    "data"
+  ],
+  "_check_config": [],
+  "_build_base_data": [
+    "request",
+    "level"
+  ],
+  "_add_person_data": [
+    "data",
+    "request"
+  ],
+  "_build_person_data": [
+    "request"
+  ],
+  "_get_func_from_frame": [
+    "frame"
+  ],
+  "_add_locals_data": [
+    "trace_data",
+    "exc_info"
+  ],
+  "_serialize_frame_data": [
+    "data"
+  ],
+  "_add_lambda_context_data": [
+    "data"
+  ],
+  "_add_request_data": [
+    "data",
+    "request"
+  ],
+  "_check_add_locals": [
+    "frame",
+    "frame_num",
+    "total_frames"
+  ],
+  "_get_actual_request": [
+    "request"
+  ],
+  "_build_request_data": [
+    "request"
+  ],
+  "_build_webob_request_data": [
+    "request"
+  ],
+  "_extract_wsgi_headers": [
+    "items"
+  ],
+  "_build_django_request_data": [
+    "request"
+  ],
+  "_build_werkzeug_request_data": [
+    "request"
+  ],
+  "_build_tornado_request_data": [
+    "request"
+  ],
+  "_build_bottle_request_data": [
+    "request"
+  ],
+  "_build_sanic_request_data": [
+    "request"
+  ],
+  "_build_falcon_request_data": [
+    "request"
+  ],
+  "_build_wsgi_request_data": [
+    "request"
+  ],
+  "_build_starlette_request_data": [
+    "request"
+  ],
+  "_build_fastapi_request_data": [
+    "request"
+  ],
+  "_filter_ip": [
+    "request_data",
+    "capture_ip"
+  ],
+  "_build_server_data": [],
+  "_transform": [
+    "obj",
+    "key"
+  ],
+  "_build_payload": [
+    "data"
+  ],
+  "_serialize_payload": [
+    "payload"
+  ],
+  "_send_payload": [
+    "payload_str",
+    "access_token"
+  ],
+  "_send_payload_thread": [
+    "payload_str",
+    "access_token"
+  ],
+  "_send_payload_pool": [
+    "payload_str",
+    "access_token"
+  ],
+  "_send_payload_thread_pool": [
+    "payload_str",
+    "access_token"
+  ],
+  "_send_payload_appengine": [
+    "payload_str",
+    "access_token"
+  ],
+  "_post_api_appengine": [
+    "path",
+    "payload_str",
+    "access_token"
+  ],
+  "_post_api": [
+    "path",
+    "payload_str",
+    "access_token"
+  ],
+  "_get_api": [
+    "path",
+    "access_token",
+    "endpoint"
+  ],
+  "_send_payload_tornado": [
+    "payload_str",
+    "access_token"
+  ],
+  "_post_api_tornado": [
+    "path",
+    "payload_str",
+    "access_token"
+  ],
+  "_send_payload_twisted": [
+    "payload_str",
+    "access_token"
+  ],
+  "_post_api_twisted": [
+    "path",
+    "payload_str",
+    "access_token"
+  ],
+  "_send_payload_httpx": [
+    "payload_str",
+    "access_token"
+  ],
+  "_send_payload_async": [
+    "payload_str",
+    "access_token"
+  ],
+  "_send_failsafe": [
+    "message",
+    "uuid",
+    "host"
+  ],
+  "_parse_response": [
+    "path",
+    "access_token",
+    "params",
+    "resp",
+    "endpoint"
+  ],
+  "_extract_user_ip_from_headers": [
+    "request"
+  ],
+  "_extract_user_ip": [
+    "request"
+  ],
+  "_wsgi_extract_user_ip": [
+    "environ"
+  ],
+  "_starlette_extract_user_ip": [
+    "request"
+  ],
+  "VERSION": [],
+  "verbose": [],
+  "_gen_report_message": [
+    "level"
+  ],
+  "CMDS": [],
+  "main": [],
+  "set_current_session": [
+    "headers"
+  ],
+  "get_current_session": [],
+  "reset_current_session": [],
+  "get_propagation_header": [],
+  "parse_session_request_baggage_headers": [
+    "headers",
+    "generate_missing"
+  ],
+  "_build_new_scope_attributes": [],
+  "_new_scope_id": [],
+  "binary_type": [],
+  "integer_types": [],
+  "number_types": [],
+  "string_types": [],
+  "sequence_types": [],
+  "force_lower": [
+    "val"
+  ],
+  "prefix_match": [
+    "key",
+    "prefixes"
+  ],
+  "key_in": [
+    "key",
+    "canonicals"
+  ],
+  "key_depth": [
+    "key",
+    "canonicals"
+  ],
+  "key_match": [
+    "key",
+    "canonical"
+  ],
+  "reverse_list_of_lists": [
+    "l",
+    "apply_each_fn"
+  ],
+  "build_key_matcher": [
+    "prefixes_or_suffixes",
+    "type",
+    "case_sensitive"
+  ],
+  "is_builtin_type": [
+    "obj"
+  ],
+  "T": [],
+  "U": [],
+  "dict_merge": [
+    "a",
+    "b",
+    "silence_errors"
+  ],
+  "circular_reference_label": [
+    "data",
+    "ref_key"
+  ],
+  "float_nan_label": [
+    "data"
+  ],
+  "float_infinity_label": [
+    "data"
+  ],
+  "unencodable_object_label": [
+    "data"
+  ],
+  "undecodable_object_label": [
+    "data"
+  ],
+  "defaultJSONEncode": [
+    "o"
+  ],
+  "_local": [],
+  "_session": [],
+  "_get_proxy_cfg": [
+    "kw"
+  ],
+  "configure_pool": [],
+  "post": [],
+  "get": [],
+  "__all__": [],
+  "HeaderValue": [],
+  "ROLLBAR_BAGGAGE_KEYS": [],
+  "normalize_exact_url": [
+    "url"
+  ],
+  "URLMatcher": {
+    "__init__": [
+      "self",
+      "enabled_urls"
+    ],
+    "matches": [
+      "self",
+      "url"
+    ]
+  },
+  "baggage_is_enabled": [
+    "enabled_headers"
+  ],
+  "_header_text": [
+    "value"
+  ],
+  "has_rollbar_baggage": [
+    "headers"
+  ],
+  "replace_rollbar_baggage": [
+    "headers",
+    "propagation_header"
+  ],
+  "CIRCULAR": [],
+  "DEFAULT": [],
+  "MAPPING": [],
+  "TUPLE": [],
+  "NAMEDTUPLE": [],
+  "LIST": [],
+  "SET": [],
+  "STRING": [],
+  "PATH": [],
+  "get_type": [
+    "obj"
+  ],
+  "KeyType": [],
+  "EventHandler": [],
+  "EventType": [],
+  "_check_type": [
+    "typ"
+  ],
+  "_add_handler": [
+    "typ",
+    "handler_fn",
+    "pos"
+  ],
+  "_remove_handler": [
+    "typ",
+    "handler_fn"
+  ],
+  "_on_event": [
+    "typ",
+    "target"
+  ],
+  "add_exception_info_handler": [
+    "handler_fn",
+    "pos"
+  ],
+  "remove_exception_info_handler": [
+    "handler_fn"
+  ],
+  "add_message_handler": [
+    "handler_fn",
+    "pos"
+  ],
+  "remove_message_handler": [
+    "handler_fn"
+  ],
+  "add_payload_handler": [
+    "handler_fn",
+    "pos"
+  ],
+  "remove_payload_handler": [
+    "handler_fn"
+  ],
+  "on_exception_info": [
+    "exc_info"
+  ],
+  "on_message": [
+    "message"
+  ],
+  "on_payload": [
+    "payload"
+  ],
+  "reset": [],
+  "wrap_func": [
+    "original",
+    "patch_fn"
+  ],
+  "unwrap_func": [
+    "func"
+  ],
+  "unmonkey_patch": [
+    "func"
+  ],
+  "wrap_callable": [
+    "owner",
+    "name",
+    "patch_fn"
+  ],
+  "unwrap_callable": [
+    "owner",
+    "name",
+    "original"
+  ],
+  "_pool": [],
+  "init_pool": [
+    "max_workers"
+  ],
+  "submit": [
+    "worker",
+    "payload_str",
+    "access_token"
+  ],
+  "_noop_circular": [
+    "a"
+  ],
+  "_noop": [
+    "a"
+  ],
+  "_noop_tuple": [
+    "a"
+  ],
+  "_noop_namedtuple": [
+    "a"
+  ],
+  "_noop_list": [
+    "a"
+  ],
+  "_noop_set": [
+    "a"
+  ],
+  "_noop_mapping": [
+    "a"
+  ],
+  "_noop_path": [
+    "a"
+  ],
+  "Handler": [],
+  "traverse": [
+    "obj",
+    "key",
+    "string_handler",
+    "tuple_handler",
+    "namedtuple_handler",
+    "list_handler",
+    "set_handler",
+    "mapping_handler",
+    "path_handler",
+    "default_handler",
+    "circular_reference_handler",
+    "allowed_circular_reference_types",
+    "memo",
+    "depth_first"
+  ],
+  "ALLOWED_HANDLERS": [],
+  "_ctx_handler": [],
+  "RollbarAsyncError": {},
+  "_post_api_httpx": [
+    "path",
+    "payload_str",
+    "access_token"
+  ],
+  "try_report": [
+    "exc_info",
+    "request",
+    "extra_data",
+    "payload_data",
+    "level"
+  ],
+  "AsyncHandler": {
+    "__init__": [
+      "self"
+    ],
+    "with_ctx_handler": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_value",
+      "traceback"
+    ]
+  },
+  "get_current_handler": [],
+  "call_later": [
+    "coro"
+  ],
+  "run": [
+    "coro"
+  ],
+  "async_receive": [
+    "message"
+  ],
+  "coroutine": [],
+  "BareMiddleware": {
+    "__init__": [
+      "self",
+      "app"
+    ],
+    "__call__": [
+      "self",
+      "scope",
+      "receive",
+      "send"
+    ]
+  },
+  "FailingTestASGIApp": {
+    "__call__": [
+      "self",
+      "scope",
+      "receive",
+      "send"
+    ],
+    "app": [
+      "self",
+      "scope",
+      "receive",
+      "send"
+    ]
+  },
+  "AsyncMock": {
+    "__call__": [
+      "self"
+    ]
+  },
+  "Transform": {
+    "default": [
+      "self",
+      "o",
+      "key"
+    ],
+    "transform_circular_reference": [
+      "self",
+      "o",
+      "key",
+      "ref_key"
+    ],
+    "transform_tuple": [
+      "self",
+      "o",
+      "key"
+    ],
+    "transform_namedtuple": [
+      "self",
+      "o",
+      "key"
+    ],
+    "transform_list": [
+      "self",
+      "o",
+      "key"
+    ],
+    "transform_dict": [
+      "self",
+      "o",
+      "key"
+    ],
+    "transform_number": [
+      "self",
+      "o",
+      "key"
+    ],
+    "transform_bytes": [
+      "self",
+      "o",
+      "key"
+    ],
+    "transform_unicode": [
+      "self",
+      "o",
+      "key"
+    ],
+    "transform_boolean": [
+      "self",
+      "o",
+      "key"
+    ],
+    "transform_path": [
+      "self",
+      "o",
+      "key"
+    ],
+    "transform_custom": [
+      "self",
+      "o",
+      "key"
+    ],
+    "rollbar_repr": [
+      "obj"
+    ]
+  },
+  "Attribute": {},
+  "ScrubTransform": {
+    "suffix_matcher": [],
+    "priority": [],
+    "__init__": [
+      "self",
+      "suffixes",
+      "redact_char",
+      "randomize_len"
+    ],
+    "in_scrub_fields": [
+      "self",
+      "key"
+    ],
+    "redact": [
+      "self",
+      "val"
+    ],
+    "default": [
+      "self",
+      "o",
+      "key"
+    ]
+  },
+  "RedactRef": {},
+  "REDACT_REF": [],
+  "ScrubRedactTransform": {
+    "priority": [],
+    "default": [
+      "self",
+      "o",
+      "key"
+    ]
+  },
+  "_ALLOWED_CIRCULAR_REFERENCE_TYPES": [],
+  "Handlers": {},
+  "transform": [
+    "obj",
+    "transforms",
+    "key",
+    "batch_transforms"
+  ],
+  "_type_name_mapping": [],
+  "_max_left_right": [
+    "max_len",
+    "seperator_len"
+  ],
+  "shorten_array": [
+    "obj",
+    "max_len"
+  ],
+  "shorten_bytes": [
+    "obj",
+    "max_len"
+  ],
+  "shorten_deque": [
+    "obj",
+    "max_len"
+  ],
+  "shorten_frozenset": [
+    "obj",
+    "max_len"
+  ],
+  "shorten_int": [
+    "obj",
+    "max_len"
+  ],
+  "shorten_list": [
+    "obj",
+    "max_len"
+  ],
+  "shorten_mapping": [
+    "obj",
+    "max_keys"
+  ],
+  "shorten_set": [
+    "obj",
+    "max_len"
+  ],
+  "shorten_string": [
+    "obj",
+    "max_len"
+  ],
+  "shorten_tuple": [
+    "obj",
+    "max_len"
+  ],
+  "ShortenerTransform": {
+    "__init__": [
+      "self",
+      "safe_repr",
+      "keys"
+    ],
+    "_get_max_size": [
+      "self",
+      "obj"
+    ],
+    "_shorten": [
+      "self",
+      "val"
+    ],
+    "_shorten_other": [
+      "self",
+      "obj"
+    ],
+    "_should_shorten": [
+      "self",
+      "val",
+      "key"
+    ],
+    "_should_drop": [
+      "self",
+      "val",
+      "key"
+    ],
+    "default": [
+      "self",
+      "o",
+      "key"
+    ]
+  },
+  "_starts_with_auth_re": [],
+  "ScrubUrlTransform": {
+    "priority": [],
+    "__init__": [
+      "self",
+      "suffixes",
+      "scrub_username",
+      "scrub_password",
+      "params_to_scrub",
+      "redact_char",
+      "randomize_len"
+    ],
+    "in_scrub_fields": [
+      "self",
+      "key"
+    ],
+    "redact": [
+      "self",
+      "url_string"
+    ],
+    "default": [
+      "self",
+      "o",
+      "key"
+    ]
+  },
+  "SerializableTransform": {
+    "priority": [],
+    "__init__": [
+      "self",
+      "safe_repr",
+      "safelist_types"
+    ],
+    "transform_circular_reference": [
+      "self",
+      "o",
+      "key",
+      "ref_key"
+    ],
+    "transform_namedtuple": [
+      "self",
+      "o",
+      "key"
+    ],
+    "transform_number": [
+      "self",
+      "o",
+      "key"
+    ],
+    "transform_bytes": [
+      "self",
+      "o",
+      "key"
+    ],
+    "transform_unicode": [
+      "self",
+      "o",
+      "key"
+    ],
+    "transform_dict": [
+      "self",
+      "o",
+      "key"
+    ],
+    "transform_custom": [
+      "self",
+      "o",
+      "key"
+    ]
+  },
+  "_NamedHandlers": {},
+  "do_transform": [
+    "transform",
+    "type_name",
+    "val",
+    "key"
+  ],
+  "string_handler": [
+    "transform",
+    "s",
+    "key"
+  ],
+  "default_handler": [
+    "transform",
+    "o",
+    "key"
+  ],
+  "BatchedTransform": {
+    "__init__": [
+      "self",
+      "transforms"
+    ],
+    "default": [
+      "self",
+      "o",
+      "key"
+    ]
+  },
+  "add_builtin_filters": [
+    "settings"
+  ],
+  "filter_rollbar_ignored_exceptions": [
+    "exc_info"
+  ],
+  "filter_by_level": [
+    "target"
+  ],
+  "Scope": [],
+  "Message": [],
+  "Receive": [],
+  "Send": [],
+  "ASGIApp": [],
+  "ReporterMiddleware": {
+    "__init__": [
+      "self",
+      "app"
+    ],
+    "__call__": [
+      "self",
+      "scope",
+      "receive",
+      "send"
+    ],
+    "_format_headers": [
+      "headers"
+    ]
+  },
+  "IntegrationBase": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "integrate": {
+    "__init__": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "obj"
+    ],
+    "_register_hook": [
+      "self"
+    ],
+    "_insert_hook": [
+      "self",
+      "func"
+    ]
+  },
+  "_InstrumentationState": {
+    "__init__": [
+      "self",
+      "enabled_urls",
+      "enabled_headers"
+    ]
+  },
+  "InstrumentedClient": {
+    "__init__": [
+      "self",
+      "enabled_urls",
+      "enabled_headers"
+    ]
+  },
+  "HTTPXContextPropagationManager": {
+    "_prepare_headers": [
+      "headers"
+    ],
+    "_inject_propagation_headers": [
+      "cls",
+      "state",
+      "args",
+      "kwargs"
+    ],
+    "_normalize_exact_url": [
+      "url"
+    ],
+    "_request_url_is_enabled": [
+      "url",
+      "enabled_urls"
+    ],
+    "_callable_chain_contains": [
+      "current",
+      "target"
+    ],
+    "_sync_wrapper": [
+      "cls",
+      "state"
+    ],
+    "_async_wrapper": [
+      "cls",
+      "state"
+    ],
+    "instrument": [
+      "cls",
+      "enabled_urls",
+      "enabled_headers"
+    ],
+    "uninstrument": [
+      "cls"
+    ],
+    "_restore_global_method": [
+      "owner",
+      "wrapper",
+      "original"
+    ],
+    "instrument_client": [
+      "cls",
+      "client",
+      "enabled_urls",
+      "enabled_headers"
+    ],
+    "uninstrument_client": [
+      "cls",
+      "client"
+    ]
+  },
+  "DEFAULT_WEB_BASE": [],
+  "BOOLEAN_SETTINGS": [],
+  "EXCEPTION_BLOCKLIST": [],
+  "handle_error": [
+    "request",
+    "exception",
+    "exc_info"
+  ],
+  "parse_settings": [
+    "settings"
+  ],
+  "rollbar_tween_factory": [
+    "pyramid_handler",
+    "registry"
+  ],
+  "patch_debugtoolbar": [
+    "settings"
+  ],
+  "includeme": [
+    "config"
+  ],
+  "create_rollbar_middleware": [
+    "app",
+    "global_config"
+  ],
+  "RollbarMiddleware": {
+    "__init__": [
+      "self",
+      "settings",
+      "app"
+    ],
+    "__call__": [
+      "self",
+      "environ",
+      "start_resp"
+    ]
+  },
+  "InstrumentedSession": {
+    "__init__": [
+      "self",
+      "enabled_urls",
+      "enabled_headers"
+    ]
+  },
+  "RequestsContextPropagationManager": {
+    "_prepare_headers": [
+      "headers"
+    ],
+    "_baggage_is_enabled": [
+      "enabled_headers"
+    ],
+    "_replace_rollbar_baggage": [
+      "cls",
+      "headers",
+      "propagation_header"
+    ],
+    "_inject_propagation_headers": [
+      "cls",
+      "state",
+      "args",
+      "kwargs"
+    ],
+    "_normalize_exact_url": [
+      "url"
+    ],
+    "_request_url_is_enabled": [
+      "cls",
+      "url",
+      "enabled_urls"
+    ],
+    "_callable_chain_contains": [
+      "current",
+      "target"
+    ],
+    "_wrapper": [
+      "cls",
+      "state"
+    ],
+    "instrument": [
+      "cls",
+      "enabled_urls",
+      "enabled_headers"
+    ],
+    "uninstrument": [
+      "cls"
+    ],
+    "instrument_session": [
+      "cls",
+      "session",
+      "enabled_urls",
+      "enabled_headers"
+    ],
+    "uninstrument_session": [
+      "cls",
+      "session"
+    ]
+  },
+  "RollbarBottleReporter": {
+    "name": [],
+    "api": [],
+    "__init__": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "callback"
+    ]
+  },
+  "add_to": [
+    "app_or_router"
+  ],
+  "RollbarLoggingRoute": {
+    "get_route_handler": [
+      "self"
+    ]
+  },
+  "_add_to_app": [
+    "app"
+  ],
+  "_add_to_router": [
+    "router"
+  ],
+  "LoggerMiddleware": {},
+  "FastAPIVersionError": {
+    "__init__": [
+      "self",
+      "version",
+      "reason"
+    ]
+  },
+  "is_current_version_higher_or_equal": [
+    "current_version",
+    "min_version"
+  ],
+  "fastapi_min_version": {
+    "__init__": [
+      "self",
+      "min_version"
+    ],
+    "__call__": [
+      "self",
+      "func"
+    ]
+  },
+  "get_installed_middlewares": [
+    "app"
+  ],
+  "has_bare_routing": [
+    "app_or_router"
+  ],
+  "BasicTests": {
+    "test_configuration": [
+      "self"
+    ]
+  },
+  "MiddlewareMixin": {
+    "__init__": [
+      "self",
+      "get_response"
+    ]
+  },
+  "rollbar_settings": [
+    "request"
+  ],
+  "DEFAULTS": [],
+  "_patch_debugview": [
+    "rollbar_web_base"
+  ],
+  "_should_ignore_404": [
+    "url"
+  ],
+  "_apply_sensitive_post_params": [
+    "request"
+  ],
+  "RollbarNotifierMiddleware": {
+    "__init__": [
+      "self",
+      "get_response"
+    ],
+    "__call__": [
+      "self",
+      "request"
+    ],
+    "_ensure_log_handler": [
+      "self"
+    ],
+    "_get_setting": [
+      "self",
+      "name",
+      "default"
+    ],
+    "get_extra_data": [
+      "self",
+      "request",
+      "exc"
+    ],
+    "get_payload_data": [
+      "self",
+      "request",
+      "exc"
+    ],
+    "process_response": [
+      "self",
+      "request",
+      "response"
+    ],
+    "process_exception": [
+      "self",
+      "request",
+      "exc"
+    ]
+  },
+  "RollbarNotifierMiddlewareOnly404": {
+    "get_extra_data": [
+      "self",
+      "request",
+      "exc"
+    ],
+    "get_payload_data": [
+      "self",
+      "request",
+      "exc"
+    ],
+    "process_response": [
+      "self",
+      "request",
+      "response"
+    ]
+  },
+  "RollbarNotifierMiddlewareExcluding404": {
+    "process_exception": [
+      "self",
+      "request",
+      "exc"
+    ]
+  },
+  "exception_handler": [
+    "job"
+  ],
+  "report_exception": [
+    "app",
+    "exception"
+  ],
+  "_hook": [
+    "request",
+    "data"
+  ],
+  "post_exception_handler": [
+    "exc",
+    "context"
+  ],
+  "get_current_request": [],
+  "store_current_request": [
+    "request_or_scope",
+    "receive"
+  ],
+  "hasuser": [
+    "request"
+  ]
+}
