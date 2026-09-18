@@ -1,0 +1,2373 @@
+{
+  "Client": {
+    "__init__": [
+      "self",
+      "provider_configs",
+      "extra_param_mode"
+    ],
+    "_copy_provider_configs": [
+      "provider_configs"
+    ],
+    "_initialize_providers": [
+      "self"
+    ],
+    "_validate_provider_key": [
+      "self",
+      "provider_key"
+    ],
+    "configure": [
+      "self",
+      "provider_configs"
+    ],
+    "chat": [
+      "self"
+    ],
+    "audio": [
+      "self"
+    ]
+  },
+  "Chat": {
+    "__init__": [
+      "self",
+      "client"
+    ],
+    "completions": [
+      "self"
+    ]
+  },
+  "Completions": {
+    "__init__": [
+      "self",
+      "client"
+    ],
+    "_active_trace_context": [
+      "self"
+    ],
+    "_emit_model_event": [
+      "self",
+      "event_type",
+      "data"
+    ],
+    "_process_mcp_configs": [
+      "self",
+      "tools"
+    ],
+    "_extract_thinking_content": [
+      "self",
+      "response"
+    ],
+    "_init_tool_runner": [
+      "self",
+      "tools",
+      "kwargs"
+    ],
+    "_emit_model_send": [
+      "self",
+      "messages",
+      "model_identifier"
+    ],
+    "_emit_model_error": [
+      "self",
+      "exc",
+      "model_identifier"
+    ],
+    "_handle_model_response": [
+      "self",
+      "response",
+      "model_identifier"
+    ],
+    "_response_tool_calls": [
+      "response"
+    ],
+    "_finalize_runner_response": [
+      "self",
+      "response",
+      "intermediate_responses",
+      "intermediate_messages",
+      "tool_policy_events",
+      "tool_events"
+    ],
+    "_tool_runner": [
+      "self",
+      "provider",
+      "model_name",
+      "model_identifier",
+      "messages",
+      "tools",
+      "max_turns",
+      "tool_policy",
+      "tool_policy_context"
+    ],
+    "_atool_runner": [
+      "self",
+      "provider",
+      "model_name",
+      "model_identifier",
+      "messages",
+      "tools",
+      "max_turns",
+      "tool_policy",
+      "tool_policy_context"
+    ],
+    "_resolve_provider": [
+      "self",
+      "model"
+    ],
+    "create": [
+      "self",
+      "model",
+      "messages"
+    ],
+    "_prepare_stream_kwargs": [
+      "self",
+      "tools",
+      "max_turns",
+      "kwargs"
+    ],
+    "_is_mcp_tool_config": [
+      "tool"
+    ],
+    "_provider_ready_tools": [
+      "tools"
+    ],
+    "acreate": [
+      "self",
+      "model",
+      "messages"
+    ]
+  },
+  "Audio": {
+    "__init__": [
+      "self",
+      "client"
+    ],
+    "transcriptions": [
+      "self"
+    ]
+  },
+  "Transcriptions": {
+    "__init__": [
+      "self",
+      "client"
+    ],
+    "create": [
+      "self"
+    ]
+  },
+  "__all__": [],
+  "LLMError": {
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "ASRError": {
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "Provider": {
+    "__init__": [
+      "self"
+    ],
+    "chat_completions_create": [
+      "self",
+      "model",
+      "messages"
+    ],
+    "achat_completions_create": [
+      "self",
+      "model",
+      "messages"
+    ],
+    "chat_completions_create_stream": [
+      "self",
+      "model",
+      "messages"
+    ],
+    "achat_completions_create_stream": [
+      "self",
+      "model",
+      "messages"
+    ]
+  },
+  "ProviderFactory": {
+    "PROVIDERS_DIR": [],
+    "create_provider": [
+      "cls",
+      "provider_key",
+      "config"
+    ],
+    "get_supported_providers": [
+      "cls"
+    ]
+  },
+  "DEFAULT_PREVIEW_CHARS": [],
+  "preview_text": [
+    "value",
+    "max_chars"
+  ],
+  "normalize_model_input": [
+    "messages"
+  ],
+  "normalize_model_response": [
+    "response"
+  ],
+  "_normalize_message": [
+    "message",
+    "preview_chars"
+  ],
+  "_content_modalities": [
+    "content"
+  ],
+  "_content_text": [
+    "content"
+  ],
+  "_response_message": [
+    "response"
+  ],
+  "_message_content": [
+    "message"
+  ],
+  "_message_tool_calls": [
+    "message"
+  ],
+  "_finish_reason": [
+    "response"
+  ],
+  "normalize_usage": [
+    "usage"
+  ],
+  "_first_int": [
+    "data"
+  ],
+  "_safe_arguments": [
+    "value"
+  ],
+  "_to_dict": [
+    "value"
+  ],
+  "TRACE_SCHEMA_VERSION": [],
+  "TraceEventType": [],
+  "_now": [],
+  "_new_id": [
+    "prefix"
+  ],
+  "TraceEvent": {
+    "to_dict": [
+      "self"
+    ]
+  },
+  "TraceSink": {
+    "emit": [
+      "self",
+      "event"
+    ]
+  },
+  "LocalTraceSink": {
+    "__init__": [
+      "self",
+      "path"
+    ],
+    "emit": [
+      "self",
+      "event"
+    ]
+  },
+  "TraceStoreSink": {
+    "__init__": [
+      "self",
+      "store"
+    ],
+    "emit": [
+      "self",
+      "event"
+    ]
+  },
+  "HttpTraceSink": {
+    "__init__": [
+      "self",
+      "endpoint"
+    ],
+    "emit": [
+      "self",
+      "event"
+    ]
+  },
+  "InMemoryTraceSink": {
+    "__init__": [
+      "self"
+    ],
+    "emit": [
+      "self",
+      "event"
+    ]
+  },
+  "configure": [],
+  "get_configured_sinks": [],
+  "emit_event": [
+    "sinks",
+    "event"
+  ],
+  "TraceStore": {
+    "append_event": [
+      "self",
+      "event"
+    ],
+    "append_events": [
+      "self",
+      "events"
+    ],
+    "append_record": [
+      "self",
+      "record"
+    ],
+    "append_records": [
+      "self",
+      "records"
+    ],
+    "import_jsonl": [
+      "self",
+      "content"
+    ],
+    "list_records": [
+      "self"
+    ],
+    "list_runs": [
+      "self"
+    ],
+    "get_run": [
+      "self",
+      "trace_id"
+    ],
+    "list_events": [
+      "self",
+      "trace_id"
+    ]
+  },
+  "JsonlTraceStore": {
+    "__init__": [
+      "self",
+      "path"
+    ],
+    "append_event": [
+      "self",
+      "event"
+    ],
+    "append_events": [
+      "self",
+      "events"
+    ],
+    "append_record": [
+      "self",
+      "record"
+    ],
+    "append_records": [
+      "self",
+      "records"
+    ],
+    "write_event": [
+      "self",
+      "event"
+    ],
+    "write_record": [
+      "self",
+      "record"
+    ],
+    "import_jsonl": [
+      "self",
+      "content"
+    ],
+    "list_records": [
+      "self"
+    ],
+    "list_runs": [
+      "self"
+    ],
+    "get_run": [
+      "self",
+      "trace_id"
+    ],
+    "list_events": [
+      "self",
+      "trace_id"
+    ]
+  },
+  "InMemoryTraceStore": {
+    "__init__": [
+      "self",
+      "records"
+    ],
+    "append_event": [
+      "self",
+      "event"
+    ],
+    "append_events": [
+      "self",
+      "events"
+    ],
+    "append_record": [
+      "self",
+      "record"
+    ],
+    "append_records": [
+      "self",
+      "records"
+    ],
+    "import_jsonl": [
+      "self",
+      "content"
+    ],
+    "list_records": [
+      "self"
+    ],
+    "list_runs": [
+      "self"
+    ],
+    "get_run": [
+      "self",
+      "trace_id"
+    ],
+    "list_events": [
+      "self",
+      "trace_id"
+    ]
+  },
+  "parse_jsonl_records": [
+    "content"
+  ],
+  "reconstruct_runs": [
+    "records"
+  ],
+  "_empty_run": [
+    "trace_id"
+  ],
+  "_merge_event_fields": [
+    "run",
+    "event"
+  ],
+  "_run_sort_key": [
+    "run"
+  ],
+  "REPO_ROOT": [],
+  "PACKAGE_UI_DIST": [],
+  "REPO_UI_DIST": [],
+  "DEFAULT_UI_DIST": [],
+  "VIEWER_HTML": [],
+  "read_trace_file": [
+    "trace_file"
+  ],
+  "ViewerTraceState": {
+    "__init__": [
+      "self",
+      "trace_file"
+    ],
+    "list_runs": [
+      "self"
+    ],
+    "get_run": [
+      "self",
+      "trace_id"
+    ],
+    "trace_sink": [
+      "self"
+    ],
+    "list_events": [
+      "self",
+      "trace_id"
+    ],
+    "import_jsonl": [
+      "self",
+      "content"
+    ],
+    "add_event": [
+      "self",
+      "record"
+    ],
+    "add_records": [
+      "self",
+      "records"
+    ]
+  },
+  "_include_selected_run": [
+    "runs",
+    "selected"
+  ],
+  "prepare_viewer_runs": [
+    "runs"
+  ],
+  "prepare_viewer_run_summaries": [
+    "runs"
+  ],
+  "_viewer_run_summary": [
+    "run"
+  ],
+  "_viewer_run_detail": [
+    "run"
+  ],
+  "_sanitize_for_viewer": [
+    "value"
+  ],
+  "_is_artifact_ref": [
+    "value"
+  ],
+  "_collect_artifact_refs": [
+    "value"
+  ],
+  "_prepare_viewer_run": [
+    "run"
+  ],
+  "_run_subtitle": [
+    "run"
+  ],
+  "_status_tone": [
+    "status"
+  ],
+  "_run_model": [
+    "run"
+  ],
+  "_latest_activity": [
+    "run"
+  ],
+  "_timeline_item": [
+    "event",
+    "run"
+  ],
+  "_display_raw_data": [
+    "data"
+  ],
+  "_event_title": [
+    "event"
+  ],
+  "_event_summary": [
+    "event",
+    "run"
+  ],
+  "_event_tone": [
+    "event"
+  ],
+  "_compact_value": [
+    "value",
+    "max_chars"
+  ],
+  "_tool_call_summary": [
+    "tool_calls",
+    "tool_count"
+  ],
+  "_run_activities": [
+    "events",
+    "run"
+  ],
+  "_run_latency": [
+    "activities"
+  ],
+  "_slowest_activity": [
+    "activities"
+  ],
+  "_tool_activity_key": [
+    "item",
+    "fallback",
+    "active_tool_keys"
+  ],
+  "_activity_base": [
+    "group",
+    "activity_type"
+  ],
+  "_tool_activity": [
+    "group"
+  ],
+  "_model_activity": [
+    "group"
+  ],
+  "_event_activity": [
+    "group"
+  ],
+  "_find_event": [
+    "events",
+    "event_type"
+  ],
+  "_first_value": [
+    "events",
+    "key"
+  ],
+  "_child_run_summary": [
+    "run"
+  ],
+  "_run_usage": [
+    "events"
+  ],
+  "_usage_summary": [
+    "usage"
+  ],
+  "_format_count": [
+    "value"
+  ],
+  "_tool_arguments_summary": [
+    "tool_name",
+    "arguments"
+  ],
+  "_tool_result_summary": [
+    "tool_name",
+    "result_preview"
+  ],
+  "_file_content_summary": [
+    "path",
+    "content",
+    "action"
+  ],
+  "_text_blob_summary": [
+    "label",
+    "value"
+  ],
+  "_parse_preview": [
+    "value"
+  ],
+  "_first_timestamp": [
+    "events"
+  ],
+  "_last_timestamp": [
+    "events"
+  ],
+  "_first_step_time": [
+    "steps"
+  ],
+  "_last_step_time": [
+    "steps"
+  ],
+  "_parse_dt": [
+    "value"
+  ],
+  "_duration_label": [
+    "start",
+    "end"
+  ],
+  "_duration_ms": [
+    "start",
+    "end"
+  ],
+  "_short_time": [
+    "value"
+  ],
+  "_artifact_payload": [
+    "artifact"
+  ],
+  "ViewerServer": {
+    "__init__": [
+      "self",
+      "trace_file",
+      "host",
+      "port",
+      "ui_dist",
+      "artifact_store",
+      "trace_store"
+    ],
+    "url": [
+      "self"
+    ],
+    "start": [
+      "self"
+    ],
+    "stop": [
+      "self"
+    ]
+  },
+  "start_viewer": [
+    "trace_file",
+    "host",
+    "port",
+    "ui_dist",
+    "artifact_store",
+    "artifact_root",
+    "trace_store"
+  ],
+  "main": [
+    "argv"
+  ],
+  "SambanovaMessageConverter": {},
+  "SambanovaProvider": {
+    "__init__": [
+      "self"
+    ],
+    "chat_completions_create": [
+      "self",
+      "model",
+      "messages"
+    ]
+  },
+  "OpenrouterProvider": {
+    "__init__": [
+      "self"
+    ],
+    "chat_completions_create": [
+      "self",
+      "model",
+      "messages"
+    ]
+  },
+  "FeatherlessProvider": {
+    "__init__": [
+      "self"
+    ],
+    "chat_completions_create": [
+      "self",
+      "model",
+      "messages"
+    ]
+  },
+  "GroqMessageConverter": {},
+  "GroqProvider": {
+    "__init__": [
+      "self"
+    ],
+    "chat_completions_create": [
+      "self",
+      "model",
+      "messages"
+    ]
+  },
+  "AzureMessageConverter": {
+    "convert_request": [
+      "messages"
+    ],
+    "convert_response": [
+      "resp_json"
+    ]
+  },
+  "AzureProvider": {
+    "__init__": [
+      "self"
+    ],
+    "chat_completions_create": [
+      "self",
+      "model",
+      "messages"
+    ]
+  },
+  "DEFAULT_MAX_TOKENS": [],
+  "DATA_URL_RE": [],
+  "AnthropicMessageConverter": {
+    "ROLE_USER": [],
+    "ROLE_ASSISTANT": [],
+    "ROLE_TOOL": [],
+    "ROLE_SYSTEM": [],
+    "FINISH_REASON_MAPPING": [],
+    "convert_request": [
+      "self",
+      "messages"
+    ],
+    "convert_response": [
+      "self",
+      "response"
+    ],
+    "convert_stream_event": [
+      "self",
+      "event",
+      "state"
+    ],
+    "_delta_chunk": [
+      "delta"
+    ],
+    "_convert_single_message": [
+      "self",
+      "msg"
+    ],
+    "_convert_dict_message": [
+      "self",
+      "msg"
+    ],
+    "_convert_message_object": [
+      "self",
+      "msg"
+    ],
+    "_convert_content": [
+      "self",
+      "content"
+    ],
+    "_convert_content_part": [
+      "self",
+      "part"
+    ],
+    "_create_tool_result_message": [
+      "self",
+      "tool_call_id",
+      "content"
+    ],
+    "_create_assistant_tool_message": [
+      "self",
+      "content",
+      "tool_calls"
+    ],
+    "_extract_system_message": [
+      "self",
+      "messages"
+    ],
+    "_get_finish_reason": [
+      "self",
+      "response"
+    ],
+    "_get_completion_usage": [
+      "self",
+      "response"
+    ],
+    "_get_message": [
+      "self",
+      "response"
+    ],
+    "convert_response_with_tool_use": [
+      "self",
+      "response"
+    ],
+    "convert_tool_spec": [
+      "self",
+      "openai_tools"
+    ]
+  },
+  "AnthropicProvider": {
+    "__init__": [
+      "self"
+    ],
+    "chat_completions_create": [
+      "self",
+      "model",
+      "messages"
+    ],
+    "chat_completions_create_stream": [
+      "self",
+      "model",
+      "messages"
+    ],
+    "achat_completions_create_stream": [
+      "self",
+      "model",
+      "messages"
+    ],
+    "_prepare_kwargs": [
+      "self",
+      "kwargs"
+    ]
+  },
+  "TogetherMessageConverter": {},
+  "TogetherProvider": {
+    "BASE_URL": [],
+    "__init__": [
+      "self"
+    ],
+    "chat_completions_create": [
+      "self",
+      "model",
+      "messages"
+    ]
+  },
+  "FINISH_REASON_MAPPING": [],
+  "CONFIG_KEYS": [],
+  "SCHEMA_KEYS": [],
+  "GeminiMessageConverter": {
+    "convert_request": [
+      "self",
+      "messages"
+    ],
+    "_as_dict": [
+      "message"
+    ],
+    "_user_parts": [
+      "self",
+      "content"
+    ],
+    "_parse_args": [
+      "raw"
+    ],
+    "_result_payload": [
+      "content"
+    ],
+    "convert_tool_spec": [
+      "self",
+      "openai_tools"
+    ],
+    "_sanitize_schema": [
+      "self",
+      "schema"
+    ],
+    "parse_candidate": [
+      "response"
+    ],
+    "map_finish_reason": [
+      "finish",
+      "has_calls"
+    ],
+    "get_completion_usage": [
+      "usage_metadata"
+    ],
+    "convert_response": [
+      "self",
+      "response"
+    ]
+  },
+  "GeminiProvider": {
+    "__init__": [
+      "self"
+    ],
+    "_request_kwargs": [
+      "self",
+      "model",
+      "messages",
+      "kwargs"
+    ],
+    "chat_completions_create": [
+      "self",
+      "model",
+      "messages"
+    ],
+    "achat_completions_create": [
+      "self",
+      "model",
+      "messages"
+    ],
+    "chat_completions_create_stream": [
+      "self",
+      "model",
+      "messages"
+    ],
+    "achat_completions_create_stream": [
+      "self",
+      "model",
+      "messages"
+    ]
+  },
+  "_StreamState": {
+    "__init__": [
+      "self"
+    ],
+    "role_chunk": [],
+    "convert": [
+      "self",
+      "chunk",
+      "converter"
+    ],
+    "final_chunk": [
+      "self",
+      "converter"
+    ]
+  },
+  "HuggingfaceProvider": {
+    "__init__": [
+      "self"
+    ],
+    "chat_completions_create": [
+      "self",
+      "model",
+      "messages"
+    ],
+    "transform_from_message": [
+      "self",
+      "message"
+    ],
+    "transform_to_message": [
+      "self",
+      "message_dict"
+    ],
+    "_normalize_response": [
+      "self",
+      "response_data"
+    ]
+  },
+  "HuggingfaceAudio": {
+    "__init__": [
+      "self",
+      "token",
+      "timeout"
+    ]
+  },
+  "XaiMessageConverter": {},
+  "XaiProvider": {
+    "BASE_URL": [],
+    "__init__": [
+      "self"
+    ],
+    "chat_completions_create": [
+      "self",
+      "model",
+      "messages"
+    ]
+  },
+  "MistralMessageConverter": {
+    "convert_response": [
+      "self",
+      "response_data"
+    ]
+  },
+  "MistralProvider": {
+    "__init__": [
+      "self"
+    ],
+    "chat_completions_create": [
+      "self",
+      "model",
+      "messages"
+    ]
+  },
+  "BedrockConfig": {
+    "INFERENCE_PARAMETERS": [],
+    "__init__": [
+      "self"
+    ],
+    "create_client": [
+      "self"
+    ]
+  },
+  "BedrockMessageConverter": {
+    "convert_request": [
+      "messages"
+    ],
+    "convert_response_tool_call": [
+      "response"
+    ],
+    "convert_tool_result": [
+      "message"
+    ],
+    "convert_assistant": [
+      "message"
+    ],
+    "convert_response": [
+      "response"
+    ],
+    "get_completion_usage": [
+      "usage_data"
+    ]
+  },
+  "AwsProvider": {
+    "__init__": [
+      "self"
+    ],
+    "convert_response": [
+      "self",
+      "response"
+    ],
+    "_convert_tool_spec": [
+      "self",
+      "kwargs"
+    ],
+    "_prepare_request_config": [
+      "self",
+      "kwargs"
+    ],
+    "chat_completions_create": [
+      "self",
+      "model",
+      "messages"
+    ]
+  },
+  "DEFAULT_TEMPERATURE": [],
+  "ENABLE_DEBUG_MESSAGES": [],
+  "GoogleMessageConverter": {
+    "convert_user_role_message": [
+      "message"
+    ],
+    "convert_assistant_role_message": [
+      "message"
+    ],
+    "convert_tool_role_message": [
+      "message"
+    ],
+    "convert_request": [
+      "messages"
+    ],
+    "convert_response": [
+      "response"
+    ]
+  },
+  "GoogleProvider": {
+    "__init__": [
+      "self"
+    ],
+    "chat_completions_create": [
+      "self",
+      "model",
+      "messages"
+    ],
+    "speech_client": [
+      "self"
+    ]
+  },
+  "GoogleAudio": {
+    "__init__": [
+      "self",
+      "provider"
+    ]
+  },
+  "OpenAICompliantMessageConverter": {
+    "tool_results_as_strings": [],
+    "convert_request": [
+      "messages"
+    ],
+    "convert_response": [
+      "self",
+      "response_data"
+    ],
+    "get_completion_usage": [
+      "self",
+      "usage_data"
+    ]
+  },
+  "_parse_base_url": [
+    "config"
+  ],
+  "OllamaProvider": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "RequestyProvider": {
+    "__init__": [
+      "self"
+    ],
+    "chat_completions_create": [
+      "self",
+      "model",
+      "messages"
+    ]
+  },
+  "EdenaiProvider": {
+    "__init__": [
+      "self"
+    ],
+    "chat_completions_create": [
+      "self",
+      "model",
+      "messages"
+    ]
+  },
+  "DeepgramProvider": {
+    "__init__": [
+      "self"
+    ],
+    "chat_completions_create": [
+      "self",
+      "model",
+      "messages"
+    ]
+  },
+  "DeepgramAudio": {
+    "__init__": [
+      "self",
+      "client"
+    ]
+  },
+  "FireworksMessageConverter": {
+    "convert_request": [
+      "messages"
+    ],
+    "convert_response": [
+      "resp_json"
+    ]
+  },
+  "FireworksProvider": {
+    "BASE_URL": [],
+    "__init__": [
+      "self"
+    ],
+    "chat_completions_create": [
+      "self",
+      "model",
+      "messages"
+    ],
+    "_normalize_response": [
+      "self",
+      "response_data"
+    ]
+  },
+  "CohereMessageConverter": {
+    "convert_request": [
+      "self",
+      "messages"
+    ],
+    "_convert_tool_content": [
+      "self",
+      "content"
+    ],
+    "convert_response": [
+      "response_data"
+    ]
+  },
+  "CohereProvider": {
+    "__init__": [
+      "self"
+    ],
+    "chat_completions_create": [
+      "self",
+      "model",
+      "messages"
+    ]
+  },
+  "CerebrasMessageConverter": {},
+  "CerebrasProvider": {
+    "__init__": [
+      "self"
+    ],
+    "chat_completions_create": [
+      "self",
+      "model",
+      "messages"
+    ]
+  },
+  "BASE_URL": [],
+  "NebiusProvider": {
+    "__init__": [
+      "self"
+    ],
+    "chat_completions_create": [
+      "self",
+      "model",
+      "messages"
+    ]
+  },
+  "WatsonxProvider": {
+    "__init__": [
+      "self"
+    ],
+    "chat_completions_create": [
+      "self",
+      "model",
+      "messages"
+    ],
+    "normalize_response": [
+      "self",
+      "response"
+    ]
+  },
+  "CrusoeProvider": {
+    "__init__": [
+      "self"
+    ],
+    "chat_completions_create": [
+      "self",
+      "model",
+      "messages"
+    ]
+  },
+  "InceptionProvider": {
+    "__init__": [
+      "self"
+    ],
+    "chat_completions_create": [
+      "self",
+      "model",
+      "messages"
+    ]
+  },
+  "DeepseekProvider": {
+    "__init__": [
+      "self"
+    ],
+    "chat_completions_create": [
+      "self",
+      "model",
+      "messages"
+    ]
+  },
+  "TongyiProvider": {
+    "__init__": [
+      "self"
+    ],
+    "chat_completions_create": [
+      "self",
+      "model",
+      "messages"
+    ]
+  },
+  "LmstudioProvider": {
+    "_DEFAULT_HOST": [],
+    "__init__": [
+      "self"
+    ]
+  },
+  "OpenaiProvider": {
+    "__init__": [
+      "self"
+    ],
+    "chat_completions_create": [
+      "self",
+      "model",
+      "messages"
+    ],
+    "achat_completions_create": [
+      "self",
+      "model",
+      "messages"
+    ],
+    "chat_completions_create_stream": [
+      "self",
+      "model",
+      "messages"
+    ],
+    "achat_completions_create_stream": [
+      "self",
+      "model",
+      "messages"
+    ]
+  },
+  "OpenAIAudio": {
+    "__init__": [
+      "self",
+      "client"
+    ]
+  },
+  "ArtifactRef": {
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "data"
+    ]
+  },
+  "Artifact": {
+    "text": [
+      "self",
+      "encoding"
+    ]
+  },
+  "ArtifactStore": {
+    "put": [
+      "self",
+      "data"
+    ],
+    "get": [
+      "self",
+      "ref"
+    ],
+    "delete": [
+      "self",
+      "ref"
+    ]
+  },
+  "InMemoryArtifactStore": {
+    "__init__": [
+      "self"
+    ],
+    "put": [
+      "self",
+      "data"
+    ],
+    "get": [
+      "self",
+      "ref"
+    ],
+    "delete": [
+      "self",
+      "ref"
+    ]
+  },
+  "FileArtifactStore": {
+    "__init__": [
+      "self",
+      "root"
+    ],
+    "put": [
+      "self",
+      "data"
+    ],
+    "get": [
+      "self",
+      "ref"
+    ],
+    "delete": [
+      "self",
+      "ref"
+    ]
+  },
+  "_artifact_id": [
+    "ref"
+  ],
+  "_to_bytes": [
+    "data"
+  ],
+  "_artifact_metadata": [
+    "payload",
+    "metadata"
+  ],
+  "SCHEMA_STATEMENTS": [],
+  "CompactionRecord": {
+    "to_dict": [
+      "self"
+    ]
+  },
+  "PostgresStateStore": {
+    "__init__": [
+      "self",
+      "connection"
+    ],
+    "from_dsn": [
+      "cls",
+      "dsn"
+    ],
+    "create_schema": [
+      "self"
+    ],
+    "save_state": [
+      "self",
+      "thread_id",
+      "state"
+    ],
+    "load_state": [
+      "self",
+      "thread_id"
+    ],
+    "delete_state": [
+      "self",
+      "thread_id"
+    ],
+    "compact_state": [
+      "self",
+      "thread_id",
+      "source_message_ids",
+      "summary_message"
+    ],
+    "list_compactions": [
+      "self",
+      "thread_id"
+    ],
+    "get_thread_head": [
+      "self",
+      "thread_id"
+    ],
+    "_load_head_for_update": [
+      "self",
+      "cursor",
+      "thread_id"
+    ],
+    "_insert_messages": [
+      "self",
+      "cursor",
+      "thread_id",
+      "messages"
+    ],
+    "_insert_message": [
+      "self",
+      "cursor",
+      "thread_id",
+      "message_id",
+      "message"
+    ],
+    "_load_messages": [
+      "self",
+      "cursor",
+      "thread_id",
+      "message_ids"
+    ]
+  },
+  "_message_artifact_refs": [
+    "message"
+  ],
+  "_state_payload_without_messages": [
+    "state"
+  ],
+  "_state_from_payload": [
+    "payload",
+    "messages"
+  ],
+  "_stored_from_row": [
+    "thread_id",
+    "state_payload",
+    "messages",
+    "row"
+  ],
+  "_decode_json": [
+    "value"
+  ],
+  "_step_ids": [
+    "state"
+  ],
+  "_replace_ordered_subsequence": [
+    "values",
+    "source",
+    "replacement"
+  ],
+  "_shared_message_prefix_length": [
+    "old_messages",
+    "new_messages"
+  ],
+  "_message_text": [
+    "message"
+  ],
+  "RunStatus": [],
+  "ToolRiskLevel": [],
+  "RunStepType": [],
+  "ensure_json_serializable": [
+    "value"
+  ],
+  "Agent": {},
+  "RunStep": {
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "data"
+    ]
+  },
+  "ToolPolicyDecision": {},
+  "ToolMetadata": {
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "data"
+    ]
+  },
+  "ToolPolicyContext": {},
+  "ToolPolicy": {
+    "evaluate": [
+      "self",
+      "context"
+    ]
+  },
+  "RunState": {
+    "add_user_message": [
+      "self",
+      "input"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "data"
+    ]
+  },
+  "RunResult": {
+    "to_state": [
+      "self"
+    ],
+    "trace_to_dict": [
+      "self"
+    ],
+    "write_trace_jsonl": [
+      "self",
+      "path"
+    ],
+    "print_trace": [
+      "self",
+      "file"
+    ]
+  },
+  "ARTIFACT_CONTENT_TYPE": [],
+  "DEFAULT_ARTIFACT_THRESHOLD_CHARS": [],
+  "DEFAULT_ARTIFACT_PREVIEW_CHARS": [],
+  "DEFAULT_ARTIFACT_FIELD_NAMES": [],
+  "dehydrate_messages": [
+    "messages",
+    "artifact_store"
+  ],
+  "hydrate_messages": [
+    "messages",
+    "artifact_store"
+  ],
+  "artifactize_value": [
+    "value",
+    "artifact_store"
+  ],
+  "hydrate_value": [
+    "value",
+    "artifact_store"
+  ],
+  "collect_artifactized_fields": [
+    "value"
+  ],
+  "_dehydrate_message": [
+    "message",
+    "artifact_store"
+  ],
+  "_hydrate_message": [
+    "message",
+    "artifact_store"
+  ],
+  "_is_artifact_content": [
+    "value"
+  ],
+  "_artifactize_value": [
+    "value",
+    "artifact_store"
+  ],
+  "_collect_artifactized_fields": [
+    "value",
+    "refs"
+  ],
+  "now": [],
+  "new_id": [
+    "prefix"
+  ],
+  "merge_tags": [],
+  "message_to_dict": [
+    "message"
+  ],
+  "messages_to_dicts": [
+    "messages"
+  ],
+  "build_input_messages": [
+    "input"
+  ],
+  "extract_final_message": [
+    "response"
+  ],
+  "extract_final_output": [
+    "response"
+  ],
+  "extract_response_messages": [
+    "response",
+    "starting_messages"
+  ],
+  "_tool_name": [
+    "value"
+  ],
+  "agent_tool": [
+    "agent"
+  ],
+  "tool": [
+    "fn"
+  ],
+  "AllowAllToolPolicy": {
+    "evaluate": [
+      "self",
+      "context"
+    ]
+  },
+  "DenyAllToolPolicy": {
+    "__init__": [
+      "self",
+      "reason"
+    ],
+    "evaluate": [
+      "self",
+      "context"
+    ]
+  },
+  "AllowToolsPolicy": {
+    "__init__": [
+      "self",
+      "allowed_tools",
+      "reason"
+    ],
+    "evaluate": [
+      "self",
+      "context"
+    ]
+  },
+  "RequireApprovalPolicy": {
+    "__init__": [
+      "self",
+      "callback"
+    ],
+    "evaluate": [
+      "self",
+      "context"
+    ]
+  },
+  "StateConflictError": {},
+  "StoredRunState": {
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "data"
+    ]
+  },
+  "StateStore": {
+    "save_state": [
+      "self",
+      "thread_id",
+      "state"
+    ],
+    "load_state": [
+      "self",
+      "thread_id"
+    ],
+    "delete_state": [
+      "self",
+      "thread_id"
+    ]
+  },
+  "InMemoryStateStore": {
+    "__init__": [
+      "self"
+    ],
+    "save_state": [
+      "self",
+      "thread_id",
+      "state"
+    ],
+    "load_state": [
+      "self",
+      "thread_id"
+    ],
+    "delete_state": [
+      "self",
+      "thread_id"
+    ]
+  },
+  "FileStateStore": {
+    "__init__": [
+      "self",
+      "root"
+    ],
+    "save_state": [
+      "self",
+      "thread_id",
+      "state"
+    ],
+    "load_state": [
+      "self",
+      "thread_id"
+    ],
+    "delete_state": [
+      "self",
+      "thread_id"
+    ],
+    "_write_stored_state": [
+      "self",
+      "stored"
+    ],
+    "_path_for": [
+      "self",
+      "thread_id"
+    ]
+  },
+  "_next_stored_state": [
+    "thread_id",
+    "state"
+  ],
+  "_assert_revision": [
+    "thread_id",
+    "current_revision",
+    "expected_revision"
+  ],
+  "ActiveRunContext": {},
+  "get_active_run_context": [],
+  "set_active_run_context": [
+    "context"
+  ],
+  "reset_active_run_context": [
+    "token"
+  ],
+  "StateNotFoundError": {},
+  "ThreadAlreadyExistsError": {},
+  "_run_blocking": [
+    "coro"
+  ],
+  "Runner": {
+    "run": [
+      "agent",
+      "input"
+    ],
+    "run_sync": [
+      "agent",
+      "input"
+    ],
+    "_run_impl": [
+      "agent",
+      "input"
+    ],
+    "continue_run": [
+      "target",
+      "input"
+    ],
+    "continue_sync": [
+      "target",
+      "input"
+    ],
+    "_continue_impl": [
+      "target",
+      "input"
+    ],
+    "_build_messages": [
+      "agent",
+      "input"
+    ],
+    "_build_response_steps": [
+      "raw_responses",
+      "trace_id"
+    ],
+    "_build_tool_steps": [
+      "response",
+      "trace_id"
+    ],
+    "_emit_trace_event": [
+      "sinks",
+      "event_type",
+      "trace_id",
+      "agent_name"
+    ],
+    "_emit_tool_event": [
+      "sinks",
+      "tool_event",
+      "trace_id",
+      "agent_name",
+      "run_name",
+      "parent_run_id",
+      "group_id",
+      "tags",
+      "metadata"
+    ]
+  },
+  "Utils": {
+    "spew": [
+      "obj"
+    ]
+  },
+  "_preview_tool_result": [
+    "value",
+    "max_chars"
+  ],
+  "_truncate_preview_value": [
+    "value",
+    "max_string_chars"
+  ],
+  "Tools": {
+    "__init__": [
+      "self",
+      "tools"
+    ],
+    "_active_trace_context": [
+      "self"
+    ],
+    "_emit_tool_trace_event": [
+      "self",
+      "event_type",
+      "data"
+    ],
+    "_artifactized_trace_value": [
+      "self",
+      "value"
+    ],
+    "_add_tool": [
+      "self",
+      "func",
+      "param_model"
+    ],
+    "tools": [
+      "self",
+      "format"
+    ],
+    "_normalize_json_schema": [
+      "cls",
+      "schema"
+    ],
+    "_resolve_local_json_schema_ref": [
+      "ref",
+      "definitions"
+    ],
+    "_flatten_nullable_json_schema": [
+      "schema"
+    ],
+    "_convert_to_tool_spec": [
+      "self",
+      "func",
+      "param_model"
+    ],
+    "__extract_param_descriptions": [
+      "self",
+      "func"
+    ],
+    "_convert_mcp_schema_to_tool_spec": [
+      "self",
+      "func"
+    ],
+    "_create_pydantic_model_from_mcp_schema": [
+      "self",
+      "func"
+    ],
+    "__infer_from_signature": [
+      "self",
+      "func"
+    ],
+    "__convert_to_openai_format": [
+      "self"
+    ],
+    "results_to_messages": [
+      "self",
+      "results",
+      "message"
+    ],
+    "execute": [
+      "self",
+      "tool_calls"
+    ],
+    "_evaluate_tool_policy": [
+      "self",
+      "tool_policy",
+      "tool_policy_context",
+      "tool_name",
+      "arguments",
+      "tool_metadata"
+    ],
+    "_prepare_tool_call": [
+      "self",
+      "tool_call",
+      "tool_policy",
+      "tool_policy_context"
+    ],
+    "_record_tool_failure": [
+      "self",
+      "ctx",
+      "exc"
+    ],
+    "_invoke_tool_sync": [
+      "self",
+      "ctx"
+    ],
+    "_invoke_tool_async": [
+      "self",
+      "ctx"
+    ],
+    "_finalize_tool_call": [
+      "self",
+      "ctx",
+      "result",
+      "results",
+      "messages"
+    ],
+    "execute_tool": [
+      "self",
+      "tool_calls",
+      "tool_policy",
+      "tool_policy_context"
+    ],
+    "aexecute_tool": [
+      "self",
+      "tool_calls",
+      "tool_policy",
+      "tool_policy_context"
+    ]
+  },
+  "MCPClient": {
+    "__init__": [
+      "self",
+      "command",
+      "args",
+      "env",
+      "server_url",
+      "headers",
+      "timeout",
+      "name"
+    ],
+    "from_config": [
+      "cls",
+      "config"
+    ],
+    "get_tools_from_config": [
+      "config"
+    ],
+    "_connect": [
+      "self"
+    ],
+    "_async_connect": [
+      "self"
+    ],
+    "_parse_sse_response": [
+      "self",
+      "response",
+      "request_id"
+    ],
+    "_send_http_request": [
+      "self",
+      "method",
+      "params"
+    ],
+    "_send_notification": [
+      "self",
+      "method",
+      "params"
+    ],
+    "_async_connect_http": [
+      "self"
+    ],
+    "list_tools": [
+      "self"
+    ],
+    "get_callable_tools": [
+      "self",
+      "allowed_tools",
+      "use_tool_prefix"
+    ],
+    "get_tool": [
+      "self",
+      "tool_name"
+    ],
+    "call_tool": [
+      "self",
+      "tool_name",
+      "arguments"
+    ],
+    "_async_call_tool": [
+      "self",
+      "tool_name",
+      "arguments"
+    ],
+    "_async_call_tool_http": [
+      "self",
+      "tool_name",
+      "arguments"
+    ],
+    "close": [
+      "self"
+    ],
+    "_async_close": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "MCPConfig": {},
+  "DEFAULT_TIMEOUT_SECONDS": [],
+  "DEFAULT_RESPONSE_BYTES_CAP": [],
+  "DEFAULT_USE_TOOL_PREFIX": [],
+  "DEFAULT_LAZY_CONNECT": [],
+  "validate_mcp_config": [
+    "config"
+  ],
+  "is_mcp_config": [
+    "obj"
+  ],
+  "get_transport_type": [
+    "config"
+  ],
+  "MCPToolWrapper": {
+    "__init__": [
+      "self",
+      "mcp_client",
+      "tool_name",
+      "tool_schema"
+    ],
+    "_create_signature": [
+      "self",
+      "input_schema"
+    ],
+    "__call__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "create_mcp_tool_wrapper": [
+    "mcp_client",
+    "tool_name",
+    "tool_schema"
+  ],
+  "json_schema_to_python_type": [
+    "schema"
+  ],
+  "mcp_schema_to_annotations": [
+    "input_schema"
+  ],
+  "create_function_signature": [
+    "func_name",
+    "annotations",
+    "docstring"
+  ],
+  "extract_parameter_descriptions": [
+    "input_schema"
+  ],
+  "build_docstring": [
+    "tool_description",
+    "parameter_descriptions"
+  ],
+  "DEFAULT_IGNORES": [],
+  "files": [],
+  "_Hunk": {},
+  "_FilePatch": {},
+  "FileToolkit": {
+    "__init__": [
+      "self"
+    ],
+    "_roots": [
+      "self"
+    ],
+    "_root_for": [
+      "self",
+      "candidate"
+    ],
+    "list_files": [
+      "self",
+      "path",
+      "pattern",
+      "recursive",
+      "max_results"
+    ],
+    "read_file": [
+      "self",
+      "path"
+    ],
+    "read_file_lines": [
+      "self",
+      "path",
+      "start_line",
+      "max_lines"
+    ],
+    "search_files": [
+      "self",
+      "query",
+      "path",
+      "pattern",
+      "max_results"
+    ],
+    "write_file": [
+      "self",
+      "path",
+      "content",
+      "overwrite"
+    ],
+    "apply_unified_diff": [
+      "self",
+      "diff"
+    ],
+    "replace_in_file": [
+      "self",
+      "path",
+      "old",
+      "new",
+      "expected_replacements"
+    ],
+    "apply_patch": [
+      "self",
+      "patch"
+    ],
+    "_resolve": [
+      "self",
+      "path"
+    ],
+    "_resolve_file": [
+      "self",
+      "path"
+    ],
+    "_relative": [
+      "self",
+      "path"
+    ],
+    "_ignored": [
+      "self",
+      "path"
+    ],
+    "_search_file": [
+      "self",
+      "path",
+      "query"
+    ],
+    "_resolve_diff_path": [
+      "self",
+      "path"
+    ],
+    "_read_patch_lines": [
+      "self",
+      "path"
+    ],
+    "_parse_unified_diff": [
+      "self",
+      "diff"
+    ],
+    "_parse_diff_file_line": [
+      "self",
+      "line",
+      "marker"
+    ],
+    "_clean_diff_path": [
+      "self",
+      "path"
+    ],
+    "_parse_hunk_header": [
+      "self",
+      "line"
+    ],
+    "_parse_hunk_range": [
+      "self",
+      "value"
+    ],
+    "_apply_hunks": [
+      "self",
+      "old_lines",
+      "hunks",
+      "path"
+    ],
+    "_apply_patch_chunks": [
+      "self",
+      "old_lines",
+      "chunks",
+      "path"
+    ],
+    "_find_line_block_matches": [
+      "self",
+      "lines",
+      "block",
+      "start"
+    ]
+  },
+  "UNSUPPORTED_SHELL_TOKENS": [],
+  "shell": [],
+  "ShellToolkit": {
+    "__init__": [
+      "self"
+    ],
+    "run_shell": [
+      "self",
+      "command",
+      "timeout_seconds"
+    ],
+    "_validate_command": [
+      "self",
+      "command"
+    ],
+    "_validate_no_shell_syntax": [
+      "self",
+      "command"
+    ],
+    "_looks_like_shell_operator": [
+      "self",
+      "token"
+    ],
+    "_output_value": [
+      "self",
+      "value"
+    ],
+    "_truncate": [
+      "self",
+      "value"
+    ],
+    "_decode_output": [
+      "self",
+      "value"
+    ]
+  },
+  "git": [],
+  "GitToolkit": {
+    "__post_init__": [
+      "self"
+    ],
+    "status": [
+      "self"
+    ],
+    "diff": [
+      "self",
+      "path",
+      "staged"
+    ],
+    "_run": [
+      "self",
+      "args"
+    ],
+    "_resolve_path": [
+      "self",
+      "path"
+    ],
+    "_clip": [
+      "self",
+      "value"
+    ]
+  },
+  "Function": {},
+  "ChatCompletionMessageToolCall": {},
+  "Message": {},
+  "CompletionTokensDetails": {},
+  "PromptTokensDetails": {},
+  "CompletionUsage": {},
+  "Word": {},
+  "Segment": {},
+  "Alternative": {},
+  "Channel": {},
+  "TranscriptionResult": {},
+  "StreamingTranscriptionChunk": {},
+  "StreamingTranscriptionResponse": [],
+  "TranscriptionResponse": [],
+  "TranscriptionOptions": {
+    "__post_init__": [
+      "self"
+    ],
+    "has_any_parameters": [
+      "self"
+    ],
+    "get_set_parameters": [
+      "self"
+    ]
+  },
+  "Choice": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "ProviderInterface": {
+    "chat_completion_create": [
+      "self",
+      "messages",
+      "model",
+      "temperature"
+    ]
+  },
+  "logger": [],
+  "GOOGLE_LANGUAGE_MAP": [],
+  "ParamValidator": {
+    "__init__": [
+      "self",
+      "extra_param_mode"
+    ],
+    "validate_and_map": [
+      "self",
+      "provider_key",
+      "params"
+    ],
+    "_transform_value": [
+      "self",
+      "provider_key",
+      "param_key",
+      "value"
+    ],
+    "_handle_unknown": [
+      "self",
+      "provider_key",
+      "unknown_params"
+    ]
+  },
+  "ChoiceDeltaFunction": {},
+  "ChoiceDeltaToolCall": {},
+  "ChoiceDelta": {},
+  "StreamChoice": {},
+  "ChatCompletionChunk": {},
+  "ChatCompletionResponse": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "ParameterMapper": {
+    "OPENAI_MAPPING": [],
+    "DEEPGRAM_MAPPING": [],
+    "GOOGLE_MAPPING": [],
+    "map_to_openai": [
+      "cls",
+      "options"
+    ],
+    "map_to_deepgram": [
+      "cls",
+      "options"
+    ],
+    "map_to_google": [
+      "cls",
+      "options"
+    ],
+    "_apply_custom_parameters": [
+      "cls",
+      "params",
+      "custom_params",
+      "provider"
+    ]
+  }
+}
