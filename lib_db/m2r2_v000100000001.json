@@ -1,0 +1,333 @@
+{
+  "M2R": [],
+  "M2R2Parser": {
+    "supported": [],
+    "parse": [
+      "self",
+      "inputstring",
+      "document"
+    ]
+  },
+  "__version__": [],
+  "PROLOG": [],
+  "_RAW_HTML_MERGE_PATTERN": [],
+  "M2R2": {
+    "__init__": [
+      "self",
+      "renderer",
+      "plugins"
+    ],
+    "parse": [
+      "self",
+      "s"
+    ],
+    "__call__": [
+      "self",
+      "s"
+    ],
+    "post_process": [
+      "self",
+      "text"
+    ]
+  },
+  "convert": [
+    "text"
+  ],
+  "DIRECTIVE_PATTERN": [],
+  "ONELINE_DIRECTIVE_PATTERN": [],
+  "RST_LITERAL_BLOCK_MARKER_PATTERN": [],
+  "VISUAL_LIST_PATTERN": [],
+  "REST_ROLE_PATTERN": [],
+  "REST_LINK_PATTERN": [],
+  "RST_FOOTNOTE_REF_PATTERN": [],
+  "INLINE_MATH_PATTERN": [],
+  "EOL_LITERAL_MARKER_PATTERN": [],
+  "LITERAL_UNDERSCORE_PATTERN": [],
+  "parse_directive": [
+    "block",
+    "match",
+    "state"
+  ],
+  "parse_oneline_directive": [
+    "block",
+    "match",
+    "state"
+  ],
+  "parse_rst_literal_block_marker": [
+    "block",
+    "match",
+    "state"
+  ],
+  "parse_autolink": [
+    "inline",
+    "match",
+    "state"
+  ],
+  "parse_rest_role": [
+    "inline",
+    "match",
+    "state"
+  ],
+  "parse_rest_link": [
+    "inline",
+    "match",
+    "state"
+  ],
+  "parse_rst_footnote_ref": [
+    "inline",
+    "match",
+    "state"
+  ],
+  "parse_inline_math": [
+    "inline",
+    "match",
+    "state"
+  ],
+  "parse_eol_literal_marker": [
+    "inline",
+    "match",
+    "state"
+  ],
+  "parse_literal_underscore": [
+    "inline",
+    "match",
+    "state"
+  ],
+  "parse_list_with_visual_indentation": [
+    "block",
+    "match",
+    "state"
+  ],
+  "configure_markdown_parser_for_rst": [
+    "markdown"
+  ],
+  "RestRenderer": {
+    "indent": [],
+    "__init__": [
+      "self"
+    ],
+    "iter_tokens": [
+      "self",
+      "tokens",
+      "state"
+    ],
+    "__call__": [
+      "self",
+      "tokens",
+      "state"
+    ],
+    "thematic_break": [
+      "self",
+      "token",
+      "state"
+    ],
+    "linebreak": [
+      "self",
+      "token",
+      "state"
+    ],
+    "paragraph": [
+      "self",
+      "token",
+      "state"
+    ],
+    "softbreak": [
+      "self",
+      "token",
+      "state"
+    ],
+    "_indent_block": [
+      "self",
+      "block"
+    ],
+    "_raw_html": [
+      "self",
+      "raw"
+    ],
+    "block_code": [
+      "self",
+      "token",
+      "state"
+    ],
+    "directive": [
+      "self",
+      "token",
+      "state"
+    ],
+    "rest_role": [
+      "self",
+      "token",
+      "state"
+    ],
+    "rest_link": [
+      "self",
+      "token",
+      "state"
+    ],
+    "rst_footnote_ref": [
+      "self",
+      "token",
+      "state"
+    ],
+    "inline_math": [
+      "self",
+      "token",
+      "state"
+    ],
+    "eol_literal_marker": [
+      "self",
+      "token",
+      "state"
+    ],
+    "standalone_hyperlink": [
+      "self",
+      "token",
+      "state"
+    ],
+    "link": [
+      "self",
+      "token",
+      "state"
+    ],
+    "heading": [
+      "self",
+      "token",
+      "state"
+    ],
+    "rest_code_block": [
+      "self",
+      "token",
+      "state"
+    ],
+    "block_quote": [
+      "self",
+      "token",
+      "state"
+    ],
+    "image": [
+      "self",
+      "token",
+      "state"
+    ],
+    "render_image": [
+      "self",
+      "token",
+      "state",
+      "target"
+    ],
+    "block_html": [
+      "self",
+      "token",
+      "state"
+    ],
+    "inline_html": [
+      "self",
+      "token",
+      "state"
+    ],
+    "codespan": [
+      "self",
+      "token",
+      "state"
+    ],
+    "strikethrough": [
+      "self",
+      "token",
+      "state"
+    ],
+    "emphasis": [
+      "self",
+      "token",
+      "state"
+    ],
+    "strong": [
+      "self",
+      "token",
+      "state"
+    ],
+    "render_emphasis": [
+      "self",
+      "token",
+      "state",
+      "marker"
+    ],
+    "list": [
+      "self",
+      "token",
+      "state"
+    ],
+    "table": [
+      "self",
+      "token",
+      "state"
+    ],
+    "_table_row_head_helper": [
+      "self",
+      "token",
+      "state"
+    ],
+    "table_head": [
+      "self",
+      "token",
+      "state"
+    ],
+    "table_body": [
+      "self",
+      "token",
+      "state"
+    ],
+    "table_row": [
+      "self",
+      "token",
+      "state"
+    ],
+    "footnote_ref": [
+      "self",
+      "token",
+      "state"
+    ],
+    "footnote_item": [
+      "self",
+      "token",
+      "state"
+    ],
+    "footnotes": [
+      "self",
+      "token",
+      "state"
+    ]
+  },
+  "warn_deprecated_config": [
+    "app"
+  ],
+  "setup": [
+    "app"
+  ],
+  "MdInclude": {
+    "required_arguments": [],
+    "optional_arguments": [],
+    "make_include_path_relative_to_working_directory": [
+      "self"
+    ],
+    "run": [
+      "self"
+    ]
+  },
+  "parse_from_file": [
+    "file",
+    "encoding"
+  ],
+  "save_to_file": [
+    "file",
+    "content",
+    "encoding",
+    "overwrite"
+  ],
+  "create_parser": [],
+  "run_m2r2": [
+    "args"
+  ],
+  "main": [
+    "argv"
+  ]
+}
