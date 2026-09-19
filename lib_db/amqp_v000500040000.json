@@ -1,0 +1,585 @@
+{
+  "RE_NUM": [],
+  "_linux_version_to_tuple": [
+    "s"
+  ],
+  "_versionatom": [
+    "s"
+  ],
+  "KNOWN_TCP_OPTS": [],
+  "LINUX_VERSION": [],
+  "__all__": [],
+  "method_t": [],
+  "method": [
+    "method_sig",
+    "args",
+    "content"
+  ],
+  "Connection": {
+    "CLASS_ID": [],
+    "Start": [],
+    "StartOk": [],
+    "Secure": [],
+    "SecureOk": [],
+    "Tune": [],
+    "TuneOk": [],
+    "Open": [],
+    "OpenOk": [],
+    "Close": [],
+    "CloseOk": [],
+    "Blocked": [],
+    "Unblocked": []
+  },
+  "Channel": {
+    "CLASS_ID": [],
+    "Open": [],
+    "OpenOk": [],
+    "Flow": [],
+    "FlowOk": [],
+    "Close": [],
+    "CloseOk": []
+  },
+  "Exchange": {
+    "CLASS_ID": [],
+    "Declare": [],
+    "DeclareOk": [],
+    "Delete": [],
+    "DeleteOk": [],
+    "Bind": [],
+    "BindOk": [],
+    "Unbind": [],
+    "UnbindOk": []
+  },
+  "Queue": {
+    "CLASS_ID": [],
+    "Declare": [],
+    "DeclareOk": [],
+    "Bind": [],
+    "BindOk": [],
+    "Purge": [],
+    "PurgeOk": [],
+    "Delete": [],
+    "DeleteOk": [],
+    "Unbind": [],
+    "UnbindOk": []
+  },
+  "Basic": {
+    "CLASS_ID": [],
+    "Qos": [],
+    "QosOk": [],
+    "Consume": [],
+    "ConsumeOk": [],
+    "Cancel": [],
+    "CancelOk": [],
+    "Publish": [],
+    "Return": [],
+    "Deliver": [],
+    "Get": [],
+    "GetOk": [],
+    "GetEmpty": [],
+    "Ack": [],
+    "Nack": [],
+    "Reject": [],
+    "RecoverAsync": [],
+    "Recover": [],
+    "RecoverOk": []
+  },
+  "Confirm": {
+    "CLASS_ID": [],
+    "Select": [],
+    "SelectOk": []
+  },
+  "Tx": {
+    "CLASS_ID": [],
+    "Select": [],
+    "SelectOk": [],
+    "Commit": [],
+    "CommitOk": [],
+    "Rollback": [],
+    "RollbackOk": []
+  },
+  "__version__": [],
+  "__author__": [],
+  "__maintainer__": [],
+  "__contact__": [],
+  "__homepage__": [],
+  "__docformat__": [],
+  "version_info_t": [],
+  "_temp": [],
+  "VERSION": [],
+  "version_info": [],
+  "_UNAVAIL": [],
+  "AMQP_PORT": [],
+  "EMPTY_BUFFER": [],
+  "SIGNED_INT_MAX": [],
+  "AMQP_PROTOCOL_HEADER": [],
+  "IPV6_LITERAL": [],
+  "DEFAULT_SOCKET_SETTINGS": [],
+  "to_host_port": [
+    "host",
+    "default"
+  ],
+  "_AbstractTransport": {
+    "__init__": [
+      "self",
+      "host",
+      "connect_timeout",
+      "read_timeout",
+      "write_timeout",
+      "socket_settings",
+      "raise_on_initial_eintr"
+    ],
+    "__slots__": [],
+    "__repr__": [
+      "self"
+    ],
+    "connect": [
+      "self"
+    ],
+    "having_timeout": [
+      "self",
+      "timeout"
+    ],
+    "_connect": [
+      "self",
+      "host",
+      "port",
+      "timeout"
+    ],
+    "_init_socket": [
+      "self",
+      "socket_settings",
+      "read_timeout",
+      "write_timeout"
+    ],
+    "_get_tcp_socket_defaults": [
+      "self",
+      "sock"
+    ],
+    "_set_socket_options": [
+      "self",
+      "socket_settings"
+    ],
+    "_read": [
+      "self",
+      "n",
+      "initial"
+    ],
+    "_setup_transport": [
+      "self"
+    ],
+    "_shutdown_transport": [
+      "self"
+    ],
+    "_write": [
+      "self",
+      "s"
+    ],
+    "close": [
+      "self"
+    ],
+    "read_frame": [
+      "self",
+      "unpack"
+    ],
+    "write": [
+      "self",
+      "s"
+    ]
+  },
+  "SSLTransport": {
+    "__init__": [
+      "self",
+      "host",
+      "connect_timeout",
+      "ssl"
+    ],
+    "__slots__": [],
+    "_setup_transport": [
+      "self"
+    ],
+    "_wrap_socket": [
+      "self",
+      "sock",
+      "context"
+    ],
+    "_wrap_context": [
+      "self",
+      "sock",
+      "sslopts",
+      "check_hostname"
+    ],
+    "_wrap_socket_sni": [
+      "self",
+      "sock",
+      "keyfile",
+      "certfile",
+      "server_side",
+      "cert_reqs",
+      "ca_certs",
+      "do_handshake_on_connect",
+      "suppress_ragged_eofs",
+      "server_hostname",
+      "ciphers",
+      "ssl_version",
+      "tls_maximum_version",
+      "tls_minimum_version"
+    ],
+    "_shutdown_transport": [
+      "self"
+    ],
+    "_read": [
+      "self",
+      "n",
+      "initial",
+      "_errnos"
+    ],
+    "_write": [
+      "self",
+      "s"
+    ]
+  },
+  "TCPTransport": {
+    "_setup_transport": [
+      "self"
+    ],
+    "_read": [
+      "self",
+      "n",
+      "initial",
+      "_errnos"
+    ]
+  },
+  "Transport": [
+    "host",
+    "connect_timeout",
+    "ssl"
+  ],
+  "Message": {
+    "CLASS_ID": [],
+    "PROPERTIES": [],
+    "__init__": [
+      "self",
+      "body",
+      "children",
+      "channel"
+    ],
+    "__slots__": [],
+    "headers": [
+      "self"
+    ],
+    "delivery_tag": [
+      "self"
+    ]
+  },
+  "ILLEGAL_TABLE_TYPE": [],
+  "ILLEGAL_TABLE_TYPE_WITH_KEY": [],
+  "ILLEGAL_TABLE_TYPE_WITH_VALUE": [],
+  "_read_item": [
+    "buf",
+    "offset"
+  ],
+  "loads": [
+    "format",
+    "buf",
+    "offset"
+  ],
+  "_flushbits": [
+    "bits",
+    "write"
+  ],
+  "dumps": [
+    "format",
+    "values"
+  ],
+  "_write_table": [
+    "d",
+    "write",
+    "bits"
+  ],
+  "_write_array": [
+    "list_",
+    "write",
+    "bits"
+  ],
+  "_write_item": [
+    "v",
+    "write",
+    "bits"
+  ],
+  "decode_properties_basic": [
+    "buf",
+    "offset"
+  ],
+  "PROPERTY_CLASSES": [],
+  "GenericContent": {
+    "CLASS_ID": [],
+    "PROPERTIES": [],
+    "__init__": [
+      "self",
+      "frame_method",
+      "frame_args"
+    ],
+    "__slots__": [],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "_load_properties": [
+      "self",
+      "class_id",
+      "buf",
+      "offset"
+    ],
+    "_serialize_properties": [
+      "self"
+    ],
+    "inbound_header": [
+      "self",
+      "buf",
+      "offset"
+    ],
+    "inbound_body": [
+      "self",
+      "buf"
+    ]
+  },
+  "set_cloexec": [
+    "fd",
+    "cloexec"
+  ],
+  "coro": [
+    "gen"
+  ],
+  "str_to_bytes": [
+    "s"
+  ],
+  "bytes_to_str": [
+    "s"
+  ],
+  "get_logger": [
+    "logger"
+  ],
+  "SASL": {
+    "mechanism": [
+      "self"
+    ],
+    "start": [
+      "self",
+      "connection"
+    ]
+  },
+  "PLAIN": {
+    "mechanism": [],
+    "__init__": [
+      "self",
+      "username",
+      "password"
+    ],
+    "__slots__": [],
+    "start": [
+      "self",
+      "connection"
+    ]
+  },
+  "AMQPLAIN": {
+    "mechanism": [],
+    "__init__": [
+      "self",
+      "username",
+      "password"
+    ],
+    "__slots__": [],
+    "start": [
+      "self",
+      "connection"
+    ]
+  },
+  "_get_gssapi_mechanism": [],
+  "GSSAPI": [],
+  "EXTERNAL": {
+    "mechanism": [],
+    "start": [
+      "self",
+      "connection"
+    ]
+  },
+  "RAW": {
+    "mechanism": [],
+    "__init__": [
+      "self",
+      "mechanism",
+      "response"
+    ],
+    "start": [
+      "self",
+      "connection"
+    ]
+  },
+  "_CONTENT_METHODS": [],
+  "FRAME_OVERHEAD": [],
+  "frame_handler": [
+    "connection",
+    "callback",
+    "unpack_from",
+    "content_methods"
+  ],
+  "Buffer": {
+    "__init__": [
+      "self",
+      "buf"
+    ],
+    "buf": [
+      "self",
+      "buf"
+    ]
+  },
+  "frame_writer": [
+    "connection",
+    "transport",
+    "pack",
+    "pack_into",
+    "range",
+    "len",
+    "bytes",
+    "str_to_bytes",
+    "text_t"
+  ],
+  "AMQP_LOGGER": [],
+  "REJECTED_MESSAGE_WITHOUT_CALLBACK": [],
+  "VDeprecationWarning": {},
+  "AMQPDeprecationWarning": {},
+  "MessageNacked": {},
+  "AMQPError": {
+    "code": [],
+    "__init__": [
+      "self",
+      "reply_text",
+      "method_sig",
+      "method_name",
+      "reply_code"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "method": [
+      "self"
+    ]
+  },
+  "ConnectionError": {},
+  "ChannelError": {},
+  "RecoverableChannelError": {},
+  "IrrecoverableChannelError": {},
+  "RecoverableConnectionError": {},
+  "IrrecoverableConnectionError": {},
+  "Blocked": {},
+  "ConsumerCancelled": {},
+  "ContentTooLarge": {
+    "code": []
+  },
+  "NoConsumers": {
+    "code": []
+  },
+  "ConnectionForced": {
+    "code": []
+  },
+  "InvalidPath": {
+    "code": []
+  },
+  "AccessRefused": {
+    "code": []
+  },
+  "NotFound": {
+    "code": []
+  },
+  "ResourceLocked": {
+    "code": []
+  },
+  "PreconditionFailed": {
+    "code": []
+  },
+  "FrameError": {
+    "code": []
+  },
+  "FrameSyntaxError": {
+    "code": []
+  },
+  "InvalidCommand": {
+    "code": []
+  },
+  "ChannelNotOpen": {
+    "code": []
+  },
+  "UnexpectedFrame": {
+    "code": []
+  },
+  "ResourceError": {
+    "code": []
+  },
+  "NotAllowed": {
+    "code": []
+  },
+  "AMQPNotImplementedError": {
+    "code": []
+  },
+  "InternalError": {
+    "code": []
+  },
+  "ERROR_MAP": [],
+  "error_for_code": [
+    "code",
+    "text",
+    "method",
+    "default"
+  ],
+  "METHOD_NAME_MAP": [],
+  "queue_declare_ok_t": [],
+  "basic_return_t": [],
+  "IGNORED_METHOD_DURING_CHANNEL_CLOSE": [],
+  "AbstractChannel": {
+    "__init__": [
+      "self",
+      "connection",
+      "channel_id"
+    ],
+    "__slots__": [],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self"
+    ],
+    "send_method": [
+      "self",
+      "sig",
+      "format",
+      "args",
+      "content",
+      "wait",
+      "callback",
+      "returns_tuple"
+    ],
+    "close": [
+      "self"
+    ],
+    "wait": [
+      "self",
+      "method",
+      "callback",
+      "timeout",
+      "returns_tuple"
+    ],
+    "dispatch_method": [
+      "self",
+      "method_sig",
+      "payload",
+      "content"
+    ],
+    "_METHODS": []
+  },
+  "W_FORCE_CONNECT": [],
+  "START_DEBUG_FMT": [],
+  "AMQP_HEARTBEAT_LOGGER": [],
+  "LIBRARY_PROPERTIES": [],
+  "NEGOTIATE_CAPABILITIES": []
+}
