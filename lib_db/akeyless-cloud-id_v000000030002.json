@@ -1,0 +1,79 @@
+{
+  "_ALIBABA_DEFAULT_REGION": [],
+  "_ALIBABA_STS_DOMAIN": [],
+  "_ALIBABA_STS_API_VERSION": [],
+  "_ALIBABA_STS_API_ACTION": [],
+  "_ALIBABA_STS_API_FORMAT": [],
+  "_ALIBABA_SIGNATURE_METHOD": [],
+  "_ALIBABA_ECS_METADATA_TOKEN_URL": [],
+  "_ALIBABA_ECS_ROLE_URL": [],
+  "_ALIBABA_ECS_METADATA_TOKEN_TTL_SECONDS": [],
+  "_ALIBABA_RAM_ROLE_NAME_ALLOWED": [],
+  "_alibaba_query_escape": [
+    "value"
+  ],
+  "_alibaba_encode_query_params": [
+    "params"
+  ],
+  "_alibaba_rpc_string_to_sign": [
+    "method",
+    "query_params"
+  ],
+  "_alibaba_sha_hmac1": [
+    "source",
+    "secret"
+  ],
+  "_resolve_alibaba_region": [],
+  "_resolve_alibaba_credentials": [],
+  "_alibaba_imdsv1_disabled": [],
+  "_alibaba_ecs_open": [
+    "url",
+    "method",
+    "headers"
+  ],
+  "_alibaba_ecs_metadata_token": [],
+  "_alibaba_ecs_get": [
+    "url",
+    "token"
+  ],
+  "_alibaba_valid_ram_role_name": [
+    "role_name"
+  ],
+  "_resolve_alibaba_ecs_ram_role": [],
+  "sign": [
+    "key",
+    "msg"
+  ],
+  "getSignatureKey": [
+    "key",
+    "dateStamp",
+    "regionName",
+    "serviceName"
+  ],
+  "CloudId": {
+    "generateAzure": [
+      "self",
+      "object_id"
+    ],
+    "generateGcp": [
+      "self",
+      "audience"
+    ],
+    "generateAlibaba": [
+      "self",
+      "access_key_id",
+      "access_key_secret",
+      "security_token",
+      "region",
+      "timestamp",
+      "nonce"
+    ],
+    "generate": [
+      "self",
+      "aws_access_id",
+      "aws_secret_access_key",
+      "security_token"
+    ]
+  },
+  "__version__": []
+}
