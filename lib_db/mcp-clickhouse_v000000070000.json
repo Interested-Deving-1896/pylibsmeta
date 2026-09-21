@@ -1,0 +1,693 @@
+{
+  "logger": [],
+  "_PAGE_TOKEN_EXPIRES_AT": [],
+  "_CLAIM_PAGE_TOKEN_IN_WORKER": [],
+  "Column": {},
+  "Table": {},
+  "result_to_table": [
+    "query_columns",
+    "result"
+  ],
+  "result_to_column": [
+    "query_columns",
+    "result"
+  ],
+  "_PendingPageToken": {},
+  "_PreparedListTablesResult": {},
+  "fetch_table_names_from_system": [
+    "client",
+    "database",
+    "like",
+    "not_like"
+  ],
+  "get_paginated_table_data": [
+    "client",
+    "database",
+    "table_names",
+    "start_idx",
+    "page_size",
+    "include_detailed_columns"
+  ],
+  "_prepare_page_token": [
+    "database",
+    "like",
+    "not_like",
+    "table_names",
+    "end_idx",
+    "include_detailed_columns"
+  ],
+  "_list_tables_impl": [
+    "client",
+    "database",
+    "like",
+    "not_like",
+    "page_token",
+    "page_size",
+    "include_detailed_columns",
+    "claimed_page_state"
+  ],
+  "_Metadata": {
+    "__init__": [
+      "self",
+      "executors",
+      "clickhouse_clients"
+    ],
+    "list_databases": [
+      "self"
+    ],
+    "_list_databases_with_config": [
+      "self",
+      "config"
+    ],
+    "list_databases_async": [
+      "self"
+    ],
+    "create_page_token": [
+      "self",
+      "database",
+      "like",
+      "not_like",
+      "table_names",
+      "end_idx",
+      "include_detailed_columns"
+    ],
+    "_commit_page_token": [
+      "self",
+      "pending_page_token"
+    ],
+    "_claim_page_token_for_request": [
+      "self",
+      "page_token",
+      "database",
+      "like",
+      "not_like",
+      "include_detailed_columns"
+    ],
+    "_restore_page_token": [
+      "self",
+      "page_token",
+      "state"
+    ],
+    "list_tables": [
+      "self",
+      "database",
+      "like",
+      "not_like",
+      "page_token",
+      "page_size",
+      "include_detailed_columns"
+    ],
+    "_list_tables_with_config": [
+      "self",
+      "config",
+      "database",
+      "like",
+      "not_like",
+      "page_token",
+      "page_size",
+      "include_detailed_columns",
+      "claimed_page_state"
+    ],
+    "list_tables_async": [
+      "self",
+      "database",
+      "like",
+      "not_like",
+      "page_token",
+      "page_size",
+      "include_detailed_columns"
+    ]
+  },
+  "_EXEMPT_REQUESTS": [],
+  "_matches": [
+    "value",
+    "patterns"
+  ],
+  "DNSRebindingProtectionMiddleware": {
+    "__init__": [
+      "self",
+      "app",
+      "allowed_hosts",
+      "allowed_origins",
+      "trusted_proxies"
+    ],
+    "__call__": [
+      "self",
+      "scope",
+      "receive",
+      "send"
+    ],
+    "_rejection_for": [
+      "self",
+      "scope",
+      "headers"
+    ],
+    "_effective_host": [
+      "self",
+      "scope",
+      "headers"
+    ],
+    "_is_trusted_peer": [
+      "self",
+      "scope"
+    ]
+  },
+  "transport_security_middleware": [
+    "mcp_config"
+  ],
+  "_process_chdb_result": [
+    "result"
+  ],
+  "chdb_initial_prompt": [],
+  "_ChDBBackend": {
+    "__init__": [
+      "self",
+      "executors"
+    ],
+    "create_chdb_client": [
+      "self"
+    ],
+    "execute_chdb_query": [
+      "self",
+      "query"
+    ],
+    "run_chdb_select_query": [
+      "self",
+      "query"
+    ],
+    "run_chdb_select_query_async": [
+      "self",
+      "query"
+    ],
+    "_init_chdb_client": [
+      "self"
+    ]
+  },
+  "CLIENT_CONFIG_OVERRIDES_KEY": [],
+  "_CLIENT_CONFIG_OVERRIDES_UNSET": [],
+  "_NESTED_CLIENT_CONFIG_KEYS": [],
+  "_REJECTED_ROLE_OVERRIDE_KEYS": [],
+  "_CLIENT_CACHE_MAXSIZE": [],
+  "_CLIENT_IDLE_PING_THRESHOLD": [],
+  "_NATIVE_PROTOCOL_PORTS": [],
+  "_GRANTS_ADVISORY_PRIVILEGES": [],
+  "_ClientCacheEntry": {},
+  "_is_connection_error": [
+    "err"
+  ],
+  "_freeze_client_config_value": [
+    "value"
+  ],
+  "_config_to_cache_key": [
+    "config"
+  ],
+  "_connection_error_hints": [
+    "error",
+    "client_config"
+  ],
+  "_format_connection_failure": [
+    "error",
+    "client_config"
+  ],
+  "_snapshot_client_config_overrides": [
+    "overrides"
+  ],
+  "_request_client_config_overrides": [
+    "ctx"
+  ],
+  "_get_client_config_overrides": [],
+  "_get_client_config_overrides_for_tool": [],
+  "_apply_client_config_overrides": [
+    "client_config",
+    "overrides"
+  ],
+  "_ResolvedClientConfig": {
+    "__init__": [
+      "self",
+      "config",
+      "overrides_applied"
+    ]
+  },
+  "_resolve_client_config": [
+    "client_config_overrides"
+  ],
+  "_close_client": [
+    "client"
+  ],
+  "_retire_client_entry_locked": [
+    "entry"
+  ],
+  "_warn_for_native_protocol_port": [
+    "config"
+  ],
+  "_create_uncached_clickhouse_client": [
+    "config"
+  ],
+  "build_query_settings": [
+    "client"
+  ],
+  "get_readonly_setting": [
+    "client"
+  ],
+  "_normalize_readonly_value": [
+    "value"
+  ],
+  "_ClickHouseClients": {
+    "__init__": [
+      "self"
+    ],
+    "_retain_client_entry": [
+      "self",
+      "entry"
+    ],
+    "_warn_if_overprivileged": [
+      "self",
+      "client"
+    ],
+    "_release_client_entry": [
+      "self",
+      "entry"
+    ],
+    "_evict_lru_entries_locked": [
+      "self"
+    ],
+    "_evict_cached_client": [
+      "self",
+      "config",
+      "failed_client"
+    ],
+    "_return_client": [
+      "self",
+      "client",
+      "config"
+    ],
+    "_prepare_client_entry": [
+      "self",
+      "entry",
+      "config"
+    ],
+    "_acquire_clickhouse_client": [
+      "self",
+      "config"
+    ],
+    "create_clickhouse_client": [
+      "self",
+      "client_config_overrides"
+    ],
+    "_clear_client_cache": [
+      "self"
+    ]
+  },
+  "__all__": [],
+  "_BUILTIN_HTTP_RAW_CLIENT": [],
+  "_SSE_DEPRECATION_MESSAGE": [],
+  "_proxy_header_trusted_hosts": [
+    "trusted_proxies"
+  ],
+  "ClickHouseFastMCP": {
+    "http_app": [
+      "self"
+    ],
+    "sse_app": [
+      "self",
+      "path",
+      "message_path",
+      "middleware"
+    ],
+    "streamable_http_app": [
+      "self",
+      "path",
+      "middleware"
+    ],
+    "run_http_async": [
+      "self"
+    ]
+  },
+  "CHDB_PROMPT": [],
+  "_JS_MAX_SAFE_INTEGER": [],
+  "_stringify_unsafe_integers": [
+    "obj",
+    "active_container_ids"
+  ],
+  "_serialize_tool_result_with_simplejson": [
+    "obj"
+  ],
+  "_serialize_tool_result_with_stdlib": [
+    "obj"
+  ],
+  "_Executors": {
+    "__init__": [
+      "self",
+      "max_workers"
+    ],
+    "shutdown": [
+      "self"
+    ]
+  },
+  "_HEALTH_CHECK_TIMEOUT_SECONDS": [],
+  "_HEALTH_RESULT_CACHE_SECONDS": [],
+  "_CLICKHOUSE_HEALTH_ERROR_BODY": [],
+  "_bounded_health_config": [
+    "config"
+  ],
+  "_retrieve_health_probe_wrapper_result": [
+    "future"
+  ],
+  "_Health": {
+    "__init__": [
+      "self",
+      "executors",
+      "clickhouse_clients"
+    ],
+    "_probe_clickhouse_health": [
+      "self",
+      "config"
+    ],
+    "_clear_completed_health_probe": [
+      "self",
+      "future"
+    ],
+    "_cache_health_probe_result": [
+      "self",
+      "future"
+    ],
+    "_cached_health_result": [
+      "self"
+    ],
+    "_clear_health_result_cache": [
+      "self"
+    ],
+    "_get_health_probe_future": [
+      "self",
+      "config"
+    ],
+    "_claim_health_probe_log": [
+      "self",
+      "future"
+    ],
+    "health_check": [
+      "self",
+      "request"
+    ]
+  },
+  "_get_mcp_server_version": [],
+  "MCP_SERVER_NAME": [],
+  "MCP_SERVER_VERSION": [],
+  "_executors": [],
+  "_clickhouse_clients": [],
+  "_queries": [],
+  "_health": [],
+  "mcp": [],
+  "_chdb_backend": [],
+  "health_check": [],
+  "_metadata": [],
+  "list_databases": [],
+  "list_databases_async": [],
+  "table_pagination_cache": [],
+  "create_page_token": [],
+  "list_tables": [],
+  "list_tables_async": [],
+  "run_query": [],
+  "run_query_async": [],
+  "create_clickhouse_client": [],
+  "_shutdown": [],
+  "create_chdb_client": [],
+  "run_chdb_select_query": [],
+  "run_chdb_select_query_async": [],
+  "_register_chdb_tools": [],
+  "setup_middleware": [
+    "mcp"
+  ],
+  "_QUERY_CANCELLATION_WAIT_SECONDS": [],
+  "_ActiveQueryState": {},
+  "_SQL_COMMENTS_AND_QUOTED_TEXT": [],
+  "_DESTRUCTIVE_KEYWORDS": [],
+  "_DETACH_KEYWORD": [],
+  "_PERMANENTLY_KEYWORD": [],
+  "_SQL_PARAMETER_NAME": [],
+  "_SQL_PARAMETER_PREFIX": [],
+  "_has_unclosed_placeholder": [
+    "query",
+    "max_scan"
+  ],
+  "_strip_comments_and_quoted_text": [
+    "query"
+  ],
+  "_validate_query_for_destructive_ops": [
+    "query"
+  ],
+  "_Queries": {
+    "__init__": [
+      "self",
+      "executors",
+      "clickhouse_clients"
+    ],
+    "_register_active_query": [
+      "self",
+      "query_id",
+      "query"
+    ],
+    "_remove_active_query": [
+      "self",
+      "query_id",
+      "state"
+    ],
+    "_mark_active_query_cancelled": [
+      "self",
+      "query_id"
+    ],
+    "execute_query": [
+      "self",
+      "query",
+      "query_id",
+      "client_config",
+      "params"
+    ],
+    "_cancel_query": [
+      "self",
+      "query_id"
+    ],
+    "_cancel_query_with_bounded_wait": [
+      "self",
+      "query_id"
+    ],
+    "_cancel_query_async": [
+      "self",
+      "query_id"
+    ],
+    "run_query": [
+      "self",
+      "query",
+      "params"
+    ],
+    "run_query_async": [
+      "self",
+      "query",
+      "params"
+    ]
+  },
+  "main": [],
+  "CLICKHOUSE_SERVER_INSTRUCTIONS": [],
+  "_HTTP_TRANSPORTS": [],
+  "_AUTH_SCOPE_FIELDS": [],
+  "_AUTH_JSON_LIST_FIELDS": [],
+  "_AUTH_INT_FIELDS": [],
+  "_LEGACY_AUTH_SCOPE_DEFAULTS": [],
+  "_LEGACY_ZERO_TIMEOUT_DEFAULTS": [],
+  "_initialize_auth_parser": [],
+  "_is_legacy_auth_name": [
+    "name"
+  ],
+  "_find_default_dotenv": [],
+  "_load_default_dotenv": [],
+  "_get_case_insensitive_value": [
+    "values",
+    "env_name"
+  ],
+  "_get_legacy_auth_file_values": [],
+  "_get_legacy_auth_env": [
+    "env_name",
+    "auth_file_values"
+  ],
+  "_parse_auth_provider_env_value": [
+    "provider_path",
+    "field_name",
+    "env_name",
+    "value"
+  ],
+  "_load_fastmcp_auth_provider": [
+    "provider_path"
+  ],
+  "_resolve_auth": [
+    "mcp_config",
+    "transport"
+  ],
+  "_IPV4_MAPPED_IPV6": [],
+  "_TLS_MODES": [],
+  "TLS_TOP_LEVEL_ONLY_KEYS": [],
+  "_normalize_tls_mode": [
+    "value"
+  ],
+  "normalize_secure_flag": [
+    "value"
+  ],
+  "_normalize_verify_flag": [
+    "value"
+  ],
+  "_effective_tls_mode": [
+    "client_config"
+  ],
+  "_effective_interface": [
+    "client_config",
+    "secure"
+  ],
+  "_dsn_tls_query_keys": [
+    "dsn"
+  ],
+  "uses_mutual_tls_auth": [
+    "client_config"
+  ],
+  "validate_client_tls_config": [
+    "client_config"
+  ],
+  "TransportType": {
+    "STDIO": [],
+    "HTTP": [],
+    "SSE": [],
+    "values": [
+      "cls"
+    ]
+  },
+  "ClickHouseConfig": {
+    "__init__": [
+      "self"
+    ],
+    "enabled": [
+      "self"
+    ],
+    "host": [
+      "self"
+    ],
+    "port": [
+      "self"
+    ],
+    "username": [
+      "self"
+    ],
+    "password": [
+      "self"
+    ],
+    "role": [
+      "self"
+    ],
+    "database": [
+      "self"
+    ],
+    "secure": [
+      "self"
+    ],
+    "verify": [
+      "self"
+    ],
+    "server_host_name": [
+      "self"
+    ],
+    "connect_timeout": [
+      "self"
+    ],
+    "send_receive_timeout": [
+      "self"
+    ],
+    "proxy_path": [
+      "self"
+    ],
+    "allow_write_access": [
+      "self"
+    ],
+    "allow_drop": [
+      "self"
+    ],
+    "ca_cert": [
+      "self"
+    ],
+    "client_cert": [
+      "self"
+    ],
+    "client_cert_key": [
+      "self"
+    ],
+    "tls_mode": [
+      "self"
+    ],
+    "get_client_config": [
+      "self"
+    ],
+    "_validate_required_vars": [
+      "self"
+    ]
+  },
+  "ChDBConfig": {
+    "__init__": [
+      "self"
+    ],
+    "enabled": [
+      "self"
+    ],
+    "data_path": [
+      "self"
+    ],
+    "get_client_config": [
+      "self"
+    ],
+    "_validate_required_vars": [
+      "self"
+    ]
+  },
+  "_CONFIG_INSTANCE": [],
+  "_CHDB_CONFIG_INSTANCE": [],
+  "get_config": [],
+  "get_chdb_config": [],
+  "_split_env_list": [
+    "name"
+  ],
+  "_LOOPBACK_BIND_HOSTS": [],
+  "_WILDCARD_BIND_HOSTS": [],
+  "_format_http_host": [
+    "host",
+    "port"
+  ],
+  "MCPServerConfig": {
+    "server_transport": [
+      "self"
+    ],
+    "bind_host": [
+      "self"
+    ],
+    "bind_port": [
+      "self"
+    ],
+    "query_timeout": [
+      "self"
+    ],
+    "max_workers": [
+      "self"
+    ],
+    "allowed_hosts": [
+      "self"
+    ],
+    "trusted_proxies": [
+      "self"
+    ],
+    "allowed_origins": [
+      "self"
+    ],
+    "auth_token": [
+      "self"
+    ],
+    "auth_disabled": [
+      "self"
+    ]
+  },
+  "_MCP_CONFIG_INSTANCE": [],
+  "get_mcp_config": []
+}
