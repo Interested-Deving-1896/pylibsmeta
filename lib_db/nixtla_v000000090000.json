@@ -1,0 +1,1636 @@
+{
+  "__version__": [],
+  "__all__": [],
+  "_transform_dict_holidays": [
+    "dict_holidays_dates"
+  ],
+  "_get_holidays_df": [
+    "dates",
+    "categories",
+    "holiday_extractor",
+    "supported_categories"
+  ],
+  "CountryHolidays": {
+    "__init__": [
+      "self",
+      "countries"
+    ],
+    "__call__": [
+      "self",
+      "dates"
+    ],
+    "__name__": [
+      "self"
+    ]
+  },
+  "SpecialDates": {
+    "__init__": [
+      "self",
+      "special_dates"
+    ],
+    "__call__": [
+      "self",
+      "dates"
+    ],
+    "__name__": [
+      "self"
+    ]
+  },
+  "logger": [],
+  "_RESULT_NOT_READY_CODES": [],
+  "ApiError": {
+    "__init__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "_is_retriable_error": [
+    "exc"
+  ],
+  "_parse_retry_after": [
+    "headers"
+  ],
+  "_resolve_nixtla_client_version": [],
+  "_retry_strategy": [
+    "max_retries",
+    "retry_interval",
+    "max_wait_time"
+  ],
+  "NixtlaClient": {
+    "__init__": [
+      "self",
+      "api_key",
+      "base_url",
+      "timeout",
+      "max_retries",
+      "retry_interval",
+      "max_wait_time"
+    ],
+    "jobs": [
+      "self"
+    ],
+    "_encode_payload": [
+      "self",
+      "payload",
+      "multithreaded_compress"
+    ],
+    "_parse_json_response": [
+      "resp",
+      "expected_status"
+    ],
+    "_make_request": [
+      "self",
+      "client",
+      "endpoint",
+      "payload",
+      "multithreaded_compress"
+    ],
+    "_make_request_with_retries": [
+      "self",
+      "client",
+      "endpoint",
+      "payload",
+      "multithreaded_compress"
+    ],
+    "_get_request": [
+      "self",
+      "client",
+      "endpoint",
+      "params",
+      "timeout"
+    ],
+    "_collect_concurrent_results": [
+      "self",
+      "requests",
+      "max_workers",
+      "transform",
+      "cancellation_event"
+    ],
+    "_dispatch_partitioned_requests": [
+      "self",
+      "client",
+      "endpoint",
+      "payloads",
+      "transform"
+    ],
+    "_make_partitioned_requests": [
+      "self",
+      "client",
+      "endpoint",
+      "payloads",
+      "_is_async_job",
+      "_poll_interval",
+      "_poll_timeout",
+      "_job_timeout_seconds"
+    ],
+    "_make_partitioned_simulate_requests": [
+      "self",
+      "client",
+      "payloads",
+      "n_paths",
+      "h",
+      "job_timeout_seconds",
+      "poll_interval",
+      "poll_timeout"
+    ],
+    "_maybe_override_model": [
+      "self",
+      "model"
+    ],
+    "_make_client": [
+      "self"
+    ],
+    "_get_model_params": [
+      "self",
+      "model",
+      "freq"
+    ],
+    "_maybe_assign_weights": [
+      "self",
+      "weights",
+      "df",
+      "x_cols"
+    ],
+    "_maybe_assign_feature_contributions": [
+      "self",
+      "expected_contributions",
+      "resp",
+      "x_cols",
+      "out_df",
+      "insample_feat_contributions"
+    ],
+    "_run_validations": [
+      "self",
+      "df",
+      "X_df",
+      "id_col",
+      "time_col",
+      "target_col",
+      "validate_api_key",
+      "freq"
+    ],
+    "validate_api_key": [
+      "self",
+      "log"
+    ],
+    "usage": [
+      "self"
+    ],
+    "list_models": [
+      "self"
+    ],
+    "finetune": [
+      "self",
+      "df",
+      "freq",
+      "id_col",
+      "time_col",
+      "target_col",
+      "finetune_steps",
+      "finetune_depth",
+      "finetune_loss",
+      "output_model_id",
+      "finetuned_model_id",
+      "model"
+    ],
+    "finetuned_models": [
+      "self",
+      "as_df"
+    ],
+    "finetuned_model": [
+      "self",
+      "finetuned_model_id"
+    ],
+    "delete_finetuned_model": [
+      "self",
+      "finetuned_model_id"
+    ],
+    "_distributed_forecast": [
+      "self",
+      "df",
+      "h",
+      "freq",
+      "id_col",
+      "time_col",
+      "target_col",
+      "X_df",
+      "level",
+      "quantiles",
+      "finetune_steps",
+      "finetune_depth",
+      "finetune_loss",
+      "finetuned_model_id",
+      "clean_ex_first",
+      "hist_exog_list",
+      "categorical_exog_list",
+      "validate_api_key",
+      "add_history",
+      "date_features",
+      "date_features_to_one_hot",
+      "model",
+      "num_partitions",
+      "feature_contributions",
+      "model_parameters",
+      "multivariate",
+      "feature_contributions_type",
+      "_job_timeout_seconds"
+    ],
+    "forecast": [
+      "self",
+      "df",
+      "h",
+      "freq",
+      "id_col",
+      "time_col",
+      "target_col",
+      "X_df",
+      "level",
+      "quantiles",
+      "finetune_steps",
+      "finetune_depth",
+      "finetune_loss",
+      "finetuned_model_id",
+      "clean_ex_first",
+      "hist_exog_list",
+      "categorical_exog_list",
+      "validate_api_key",
+      "add_history",
+      "date_features",
+      "date_features_to_one_hot",
+      "model",
+      "num_partitions",
+      "feature_contributions",
+      "model_parameters",
+      "multivariate",
+      "feature_contributions_type"
+    ],
+    "simulate": [
+      "self",
+      "df",
+      "h",
+      "freq",
+      "id_col",
+      "time_col",
+      "target_col",
+      "X_df",
+      "n_paths",
+      "quantiles",
+      "seed",
+      "finetuned_model_id",
+      "clean_ex_first",
+      "hist_exog_list",
+      "categorical_exog_list",
+      "validate_api_key",
+      "date_features",
+      "date_features_to_one_hot",
+      "model",
+      "multivariate",
+      "num_partitions",
+      "job_timeout_seconds",
+      "poll_interval",
+      "poll_timeout"
+    ],
+    "explain": [
+      "self",
+      "df",
+      "method",
+      "features",
+      "freq",
+      "id_col",
+      "time_col",
+      "target_col",
+      "categorical_exog_list",
+      "validate_api_key",
+      "job_timeout_seconds",
+      "poll_interval",
+      "poll_timeout"
+    ],
+    "_distributed_detect_anomalies": [
+      "self",
+      "df",
+      "freq",
+      "id_col",
+      "time_col",
+      "target_col",
+      "level",
+      "finetuned_model_id",
+      "clean_ex_first",
+      "validate_api_key",
+      "date_features",
+      "date_features_to_one_hot",
+      "model",
+      "num_partitions",
+      "multivariate",
+      "categorical_exog_list"
+    ],
+    "detect_anomalies": [
+      "self",
+      "df",
+      "freq",
+      "id_col",
+      "time_col",
+      "target_col",
+      "level",
+      "finetuned_model_id",
+      "clean_ex_first",
+      "validate_api_key",
+      "date_features",
+      "date_features_to_one_hot",
+      "model",
+      "num_partitions",
+      "multivariate",
+      "categorical_exog_list"
+    ],
+    "_distributed_detect_anomalies_online": [
+      "self",
+      "df",
+      "h",
+      "detection_size",
+      "threshold_method",
+      "freq",
+      "id_col",
+      "time_col",
+      "target_col",
+      "level",
+      "clean_ex_first",
+      "step_size",
+      "finetune_steps",
+      "finetune_depth",
+      "finetune_loss",
+      "finetuned_model_id",
+      "hist_exog_list",
+      "date_features",
+      "date_features_to_one_hot",
+      "model",
+      "model_parameters",
+      "refit",
+      "num_partitions",
+      "multivariate"
+    ],
+    "detect_anomalies_online": [
+      "self",
+      "df",
+      "h",
+      "detection_size",
+      "threshold_method",
+      "freq",
+      "id_col",
+      "time_col",
+      "target_col",
+      "level",
+      "clean_ex_first",
+      "step_size",
+      "finetune_steps",
+      "finetune_depth",
+      "finetune_loss",
+      "finetuned_model_id",
+      "hist_exog_list",
+      "date_features",
+      "date_features_to_one_hot",
+      "model",
+      "model_parameters",
+      "refit",
+      "num_partitions",
+      "multivariate"
+    ],
+    "_distributed_cross_validation": [
+      "self",
+      "df",
+      "h",
+      "freq",
+      "id_col",
+      "time_col",
+      "target_col",
+      "level",
+      "quantiles",
+      "validate_api_key",
+      "n_windows",
+      "step_size",
+      "finetune_steps",
+      "finetune_depth",
+      "finetune_loss",
+      "finetuned_model_id",
+      "refit",
+      "clean_ex_first",
+      "hist_exog_list",
+      "date_features",
+      "date_features_to_one_hot",
+      "model",
+      "num_partitions",
+      "model_parameters",
+      "multivariate",
+      "categorical_exog_list",
+      "_job_timeout_seconds"
+    ],
+    "cross_validation": [
+      "self",
+      "df",
+      "h",
+      "freq",
+      "id_col",
+      "time_col",
+      "target_col",
+      "level",
+      "quantiles",
+      "validate_api_key",
+      "n_windows",
+      "step_size",
+      "finetune_steps",
+      "finetune_depth",
+      "finetune_loss",
+      "finetuned_model_id",
+      "refit",
+      "clean_ex_first",
+      "hist_exog_list",
+      "date_features",
+      "date_features_to_one_hot",
+      "model",
+      "num_partitions",
+      "model_parameters",
+      "multivariate",
+      "categorical_exog_list"
+    ],
+    "plot": [
+      "self",
+      "df",
+      "forecasts_df",
+      "id_col",
+      "time_col",
+      "target_col",
+      "unique_ids",
+      "plot_random",
+      "max_ids",
+      "models",
+      "level",
+      "max_insample_length",
+      "plot_anomalies",
+      "engine",
+      "resampler_kwargs",
+      "ax"
+    ],
+    "audit_data": [
+      "df",
+      "freq",
+      "id_col",
+      "time_col",
+      "target_col",
+      "start",
+      "end"
+    ],
+    "clean_data": [
+      "self",
+      "df",
+      "fail_dict",
+      "case_specific_dict",
+      "freq",
+      "id_col",
+      "time_col",
+      "target_col",
+      "clean_case_specific",
+      "agg_dict"
+    ]
+  },
+  "_forecast_wrapper": [
+    "df",
+    "client",
+    "h",
+    "freq",
+    "id_col",
+    "time_col",
+    "target_col",
+    "level",
+    "quantiles",
+    "finetune_steps",
+    "finetune_depth",
+    "finetune_loss",
+    "finetuned_model_id",
+    "clean_ex_first",
+    "hist_exog_list",
+    "categorical_exog_list",
+    "validate_api_key",
+    "add_history",
+    "date_features",
+    "date_features_to_one_hot",
+    "model",
+    "num_partitions",
+    "feature_contributions",
+    "model_parameters",
+    "multivariate",
+    "feature_contributions_type",
+    "_is_async_job",
+    "_poll_interval",
+    "_poll_timeout",
+    "_job_timeout_seconds"
+  ],
+  "_detect_anomalies_wrapper": [
+    "df",
+    "client",
+    "freq",
+    "id_col",
+    "time_col",
+    "target_col",
+    "level",
+    "finetuned_model_id",
+    "clean_ex_first",
+    "validate_api_key",
+    "date_features",
+    "date_features_to_one_hot",
+    "model",
+    "num_partitions",
+    "multivariate",
+    "categorical_exog_list"
+  ],
+  "_detect_anomalies_online_wrapper": [
+    "df",
+    "client",
+    "h",
+    "detection_size",
+    "threshold_method",
+    "freq",
+    "id_col",
+    "time_col",
+    "target_col",
+    "level",
+    "clean_ex_first",
+    "step_size",
+    "finetune_steps",
+    "finetune_depth",
+    "finetune_loss",
+    "finetuned_model_id",
+    "hist_exog_list",
+    "date_features",
+    "date_features_to_one_hot",
+    "model",
+    "model_parameters",
+    "refit",
+    "num_partitions",
+    "multivariate"
+  ],
+  "_cross_validation_wrapper": [
+    "df",
+    "client",
+    "h",
+    "freq",
+    "id_col",
+    "time_col",
+    "target_col",
+    "level",
+    "quantiles",
+    "validate_api_key",
+    "n_windows",
+    "step_size",
+    "finetune_steps",
+    "finetune_depth",
+    "finetune_loss",
+    "finetuned_model_id",
+    "refit",
+    "clean_ex_first",
+    "hist_exog_list",
+    "date_features",
+    "date_features_to_one_hot",
+    "model",
+    "num_partitions",
+    "model_parameters",
+    "multivariate",
+    "categorical_exog_list",
+    "_is_async_job",
+    "_poll_interval",
+    "_poll_timeout",
+    "_job_timeout_seconds"
+  ],
+  "_get_schema": [
+    "df",
+    "method",
+    "id_col",
+    "time_col",
+    "target_col",
+    "level",
+    "quantiles"
+  ],
+  "_distributed_setup": [
+    "df",
+    "method",
+    "id_col",
+    "time_col",
+    "target_col",
+    "level",
+    "quantiles",
+    "num_partitions"
+  ],
+  "_date_features_by_freq": [],
+  "_coerce_positive_int": [
+    "value",
+    "name"
+  ],
+  "_validate_simulate_args": [
+    "h",
+    "n_paths",
+    "seed",
+    "num_partitions",
+    "multivariate"
+  ],
+  "_maybe_infer_freq": [
+    "df",
+    "freq",
+    "id_col",
+    "time_col"
+  ],
+  "_is_numeric_column": [
+    "df",
+    "col"
+  ],
+  "_features_with_missing_values": [
+    "df",
+    "features"
+  ],
+  "_numeric_column_array": [
+    "df",
+    "col"
+  ],
+  "_coerce_coupled_flag": [
+    "value"
+  ],
+  "_has_duplicate_keys": [
+    "df",
+    "id_col",
+    "time_col"
+  ],
+  "_validate_freq_regularity": [
+    "df",
+    "freq",
+    "id_col",
+    "time_col"
+  ],
+  "_dataframe_keys_match": [
+    "actual",
+    "expected",
+    "id_col",
+    "time_col"
+  ],
+  "_standardize_freq": [
+    "freq",
+    "processed"
+  ],
+  "_array_tails": [
+    "x",
+    "indptr",
+    "out_sizes"
+  ],
+  "_tail": [
+    "proc",
+    "n"
+  ],
+  "_time_col_tz": [
+    "df",
+    "time_col"
+  ],
+  "_is_constant_offset_timezone": [
+    "tz"
+  ],
+  "_warn_non_constant_offset": [
+    "tz"
+  ],
+  "_times_to_iso": [
+    "times",
+    "tz"
+  ],
+  "_series_starts": [
+    "df",
+    "processed",
+    "time_col",
+    "orig_indptr",
+    "sort_idxs"
+  ],
+  "_partition_series": [
+    "payload",
+    "n_part",
+    "h"
+  ],
+  "_maybe_add_date_features": [
+    "df",
+    "X_df",
+    "features",
+    "one_hot",
+    "freq",
+    "h",
+    "id_col",
+    "time_col",
+    "target_col"
+  ],
+  "_validate_exog": [
+    "df",
+    "X_df",
+    "id_col",
+    "time_col",
+    "target_col",
+    "hist_exog"
+  ],
+  "_extract_categorical_exog": [
+    "df",
+    "categorical_exog_list",
+    "id_col",
+    "time_col",
+    "target_col",
+    "X_df"
+  ],
+  "_validate_input_size": [
+    "processed",
+    "model_input_size",
+    "model_horizon"
+  ],
+  "_ensure_local_dataframe": [
+    "df"
+  ],
+  "_prepare_level_and_quantiles": [
+    "level",
+    "quantiles"
+  ],
+  "_maybe_convert_level_to_quantiles": [
+    "df",
+    "quantiles"
+  ],
+  "_align_future_exog_order": [
+    "X_future",
+    "X_indptr",
+    "X_uids",
+    "uids",
+    "id_col"
+  ],
+  "_align_future_categorical_exog": [
+    "X_df_cat_future",
+    "uids",
+    "id_col",
+    "time_col"
+  ],
+  "_preprocess": [
+    "df",
+    "X_df",
+    "h",
+    "freq",
+    "date_features",
+    "date_features_to_one_hot",
+    "id_col",
+    "time_col",
+    "target_col"
+  ],
+  "_validate_future_exog_keys": [
+    "X_df",
+    "expected",
+    "h",
+    "id_col",
+    "time_col"
+  ],
+  "_sort_categorical_values": [
+    "df_cat_vals",
+    "sort_idxs"
+  ],
+  "_log_exog_features": [
+    "futr_cols",
+    "futr_cat_cols",
+    "hist_exog_list",
+    "hist_cat_cols"
+  ],
+  "_build_exog_payload": [
+    "processed",
+    "sorted_df_cat",
+    "x_cols",
+    "futr_cols",
+    "futr_cat_cols",
+    "hist_cat_cols",
+    "X_future",
+    "X_df_cat_future",
+    "has_categorical"
+  ],
+  "_forecast_payload_to_in_sample": [
+    "payload",
+    "h",
+    "n_windows"
+  ],
+  "_get_in_sample_horizon_and_windows": [
+    "sizes",
+    "model_horizon",
+    "model_input_size",
+    "clean_ex_first",
+    "level"
+  ],
+  "_maybe_add_intervals": [
+    "df",
+    "intervals"
+  ],
+  "_maybe_drop_id": [
+    "df",
+    "id_col",
+    "drop"
+  ],
+  "_parse_in_sample_output": [
+    "in_sample_output",
+    "df",
+    "processed",
+    "id_col",
+    "time_col",
+    "target_col"
+  ],
+  "_restrict_input_samples": [
+    "level",
+    "input_size",
+    "model_horizon",
+    "h"
+  ],
+  "_extract_target_array": [
+    "df",
+    "target_col"
+  ],
+  "_process_exog_features": [
+    "processed_data",
+    "x_cols",
+    "hist_exog_list"
+  ],
+  "prepare_forecast": [
+    "client",
+    "df",
+    "h",
+    "freq",
+    "id_col",
+    "time_col",
+    "target_col",
+    "X_df",
+    "level",
+    "quantiles",
+    "finetune_steps",
+    "finetune_depth",
+    "finetune_loss",
+    "finetuned_model_id",
+    "clean_ex_first",
+    "hist_exog_list",
+    "categorical_exog_list",
+    "validate_api_key",
+    "add_history",
+    "date_features",
+    "date_features_to_one_hot",
+    "model",
+    "feature_contributions",
+    "model_parameters",
+    "multivariate",
+    "feature_contributions_type"
+  ],
+  "prepare_cross_validation": [
+    "client",
+    "df",
+    "h",
+    "freq",
+    "id_col",
+    "time_col",
+    "target_col",
+    "level",
+    "quantiles",
+    "validate_api_key",
+    "n_windows",
+    "step_size",
+    "finetune_steps",
+    "finetune_depth",
+    "finetune_loss",
+    "finetuned_model_id",
+    "refit",
+    "clean_ex_first",
+    "hist_exog_list",
+    "date_features",
+    "date_features_to_one_hot",
+    "model",
+    "model_parameters",
+    "multivariate",
+    "categorical_exog_list"
+  ],
+  "prepare_anomaly_detection": [
+    "client",
+    "df",
+    "h",
+    "detection_size",
+    "threshold_method",
+    "freq",
+    "id_col",
+    "time_col",
+    "target_col",
+    "level",
+    "clean_ex_first",
+    "step_size",
+    "finetune_steps",
+    "finetune_depth",
+    "finetune_loss",
+    "finetuned_model_id",
+    "hist_exog_list",
+    "date_features",
+    "date_features_to_one_hot",
+    "model",
+    "model_parameters",
+    "refit",
+    "multivariate"
+  ],
+  "prepare_simulate": [
+    "client",
+    "df",
+    "h",
+    "freq",
+    "id_col",
+    "time_col",
+    "target_col",
+    "X_df",
+    "n_paths",
+    "quantiles",
+    "seed",
+    "finetuned_model_id",
+    "clean_ex_first",
+    "hist_exog_list",
+    "categorical_exog_list",
+    "validate_api_key",
+    "date_features",
+    "date_features_to_one_hot",
+    "model",
+    "multivariate",
+    "method_name"
+  ],
+  "prepare_explain": [
+    "client",
+    "df",
+    "method",
+    "features",
+    "freq",
+    "id_col",
+    "time_col",
+    "target_col",
+    "categorical_exog_list",
+    "validate_api_key",
+    "method_name"
+  ],
+  "prepare_finetune_payload": [
+    "client",
+    "df",
+    "freq",
+    "id_col",
+    "time_col",
+    "target_col",
+    "finetune_steps",
+    "finetune_depth",
+    "finetune_loss",
+    "output_model_id",
+    "finetuned_model_id",
+    "model"
+  ],
+  "colab_badge": [
+    "path"
+  ],
+  "in_colab": [],
+  "AnyDFType": [],
+  "DistributedDFType": [],
+  "validate_extra_params": [
+    "value"
+  ],
+  "_PositiveInt": [],
+  "_NonNegativeInt": [],
+  "_ExtraParamDataType": [],
+  "extra_param_checker": [],
+  "_Loss": [],
+  "_Model": [],
+  "_FinetuneDepth": [],
+  "_Freq": [],
+  "_FreqType": [],
+  "_ThresholdMethod": [],
+  "_ExplainMethod": [],
+  "_FeatureContributionsType": [],
+  "_MIN_SEED": [],
+  "_MAX_SEED": [],
+  "FinetunedModel": {},
+  "_MAX_CONCURRENT_ASYNC_JOBS": [],
+  "_ANOMALY_DETECTION_ENDPOINT": [],
+  "_ONLINE_ANOMALY_DETECTION_ENDPOINT": [],
+  "METADATA_HEADER": [],
+  "CONTENT_TYPE": [],
+  "_PARQUET_SUFFIX": [],
+  "_REF_KEY": [],
+  "HEADER_BUDGET": [],
+  "MAX_BODY_BYTES": [],
+  "MAX_MEMBERS": [],
+  "MAX_METADATA_DEPTH": [],
+  "MAX_FUNC_NAME_LENGTH": [],
+  "_ZIP_EPOCH": [],
+  "ref": [
+    "key"
+  ],
+  "_collect_refs": [
+    "obj"
+  ],
+  "_validate_member_names": [
+    "names"
+  ],
+  "_normalize_pandas_index": [
+    "obj",
+    "key"
+  ],
+  "to_arrow": [
+    "obj",
+    "key"
+  ],
+  "_pack": [
+    "tables"
+  ],
+  "_unpack": [
+    "body"
+  ],
+  "_check_metadata_depth": [
+    "obj"
+  ],
+  "_encode_metadata": [
+    "metadata"
+  ],
+  "_decode_metadata": [
+    "headers"
+  ],
+  "StepResult": {
+    "__init__": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "to_pandas": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "build_result": [
+    "headers",
+    "body"
+  ],
+  "build_request": [
+    "func_name",
+    "params",
+    "data",
+    "job_timeout_seconds"
+  ],
+  "AuditDataSeverity": {
+    "FAIL": [],
+    "CASE_SPECIFIC": [],
+    "PASS": []
+  },
+  "_audit_duplicate_rows": [
+    "df",
+    "id_col",
+    "time_col"
+  ],
+  "_audit_missing_dates": [
+    "df",
+    "freq",
+    "id_col",
+    "time_col",
+    "start",
+    "end"
+  ],
+  "_audit_categorical_variables": [
+    "df",
+    "id_col",
+    "time_col"
+  ],
+  "_audit_leading_zeros": [
+    "df",
+    "id_col",
+    "time_col",
+    "target_col"
+  ],
+  "_audit_negative_values": [
+    "df",
+    "target_col"
+  ],
+  "audit_data": [
+    "df",
+    "freq",
+    "id_col",
+    "time_col",
+    "target_col",
+    "start",
+    "end"
+  ],
+  "clean_data": [
+    "df",
+    "fail_dict",
+    "case_specific_dict",
+    "freq",
+    "id_col",
+    "time_col",
+    "target_col",
+    "clean_case_specific",
+    "agg_dict"
+  ],
+  "_DEFAULT_POLL_TIMEOUT": [],
+  "_POLL_BACKOFF_START": [],
+  "_POLL_BACKOFF_CAP": [],
+  "_MIN_POLL_RETRY_INTERVAL": [],
+  "_poll_intervals": [
+    "poll_interval"
+  ],
+  "_validate_poll_settings": [
+    "poll_interval",
+    "poll_timeout"
+  ],
+  "JobStatus": {
+    "PENDING": [],
+    "RUNNING": [],
+    "SUCCEEDED": [],
+    "FAILED": [],
+    "CANCELLED": [],
+    "is_terminal": [
+      "self"
+    ]
+  },
+  "_terminal_status": [
+    "status"
+  ],
+  "JobError": {
+    "__init__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "JobTimeoutError": {
+    "__init__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "JobCancelledError": {
+    "__init__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "Job": {
+    "__init__": [
+      "self"
+    ],
+    "status": [
+      "self"
+    ],
+    "wait": [
+      "self",
+      "poll_interval",
+      "poll_timeout",
+      "cancel_on_timeout"
+    ],
+    "cancel": [
+      "self"
+    ],
+    "_cancel_best_effort": [
+      "self",
+      "reason"
+    ],
+    "_raised_by_this_job": [
+      "self",
+      "exc_val"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ]
+  },
+  "Jobs": {
+    "__init__": [
+      "self",
+      "client"
+    ],
+    "forecast": [
+      "self",
+      "df",
+      "h",
+      "freq",
+      "id_col",
+      "time_col",
+      "target_col",
+      "X_df",
+      "level",
+      "quantiles",
+      "finetune_steps",
+      "finetune_depth",
+      "finetune_loss",
+      "finetuned_model_id",
+      "clean_ex_first",
+      "hist_exog_list",
+      "categorical_exog_list",
+      "validate_api_key",
+      "date_features",
+      "date_features_to_one_hot",
+      "model",
+      "feature_contributions",
+      "model_parameters",
+      "multivariate",
+      "job_timeout_seconds"
+    ],
+    "cross_validation": [
+      "self",
+      "df",
+      "h",
+      "freq",
+      "id_col",
+      "time_col",
+      "target_col",
+      "level",
+      "quantiles",
+      "validate_api_key",
+      "n_windows",
+      "step_size",
+      "finetune_steps",
+      "finetune_depth",
+      "finetune_loss",
+      "finetuned_model_id",
+      "refit",
+      "clean_ex_first",
+      "hist_exog_list",
+      "date_features",
+      "date_features_to_one_hot",
+      "model",
+      "model_parameters",
+      "multivariate",
+      "categorical_exog_list",
+      "job_timeout_seconds"
+    ],
+    "finetune": [
+      "self",
+      "df",
+      "freq",
+      "id_col",
+      "time_col",
+      "target_col",
+      "finetune_steps",
+      "finetune_depth",
+      "finetune_loss",
+      "output_model_id",
+      "finetuned_model_id",
+      "model",
+      "job_timeout_seconds"
+    ],
+    "detect_anomalies": [
+      "self",
+      "df",
+      "h",
+      "detection_size",
+      "threshold_method",
+      "freq",
+      "id_col",
+      "time_col",
+      "target_col",
+      "level",
+      "clean_ex_first",
+      "step_size",
+      "finetune_steps",
+      "finetune_depth",
+      "finetune_loss",
+      "finetuned_model_id",
+      "hist_exog_list",
+      "date_features",
+      "date_features_to_one_hot",
+      "model",
+      "model_parameters",
+      "refit",
+      "multivariate",
+      "job_timeout_seconds"
+    ],
+    "simulate": [
+      "self",
+      "df",
+      "h",
+      "freq",
+      "id_col",
+      "time_col",
+      "target_col",
+      "X_df",
+      "n_paths",
+      "quantiles",
+      "seed",
+      "finetuned_model_id",
+      "clean_ex_first",
+      "hist_exog_list",
+      "categorical_exog_list",
+      "validate_api_key",
+      "date_features",
+      "date_features_to_one_hot",
+      "model",
+      "multivariate",
+      "job_timeout_seconds"
+    ],
+    "explain": [
+      "self",
+      "df",
+      "method",
+      "features",
+      "freq",
+      "id_col",
+      "time_col",
+      "target_col",
+      "categorical_exog_list",
+      "validate_api_key",
+      "job_timeout_seconds"
+    ],
+    "execute_step": [
+      "self",
+      "func_name",
+      "params",
+      "data",
+      "job_timeout_seconds"
+    ]
+  },
+  "_task_name": [
+    "endpoint"
+  ],
+  "_validate_job_timeout_seconds": [
+    "job_timeout_seconds"
+  ],
+  "_with_job_options": [
+    "payload",
+    "job_timeout_seconds"
+  ],
+  "_wait_for_poll": [
+    "seconds",
+    "cancellation_event"
+  ],
+  "_submit_retry_strategy": [
+    "max_retries",
+    "retry_interval",
+    "max_wait_time",
+    "cancellation_event"
+  ],
+  "_is_retriable_poll_error": [
+    "exc"
+  ],
+  "_poll_retry_strategy": [
+    "max_retries",
+    "retry_interval",
+    "max_wait_time",
+    "deadline",
+    "cancellation_event"
+  ],
+  "get_job_data": [
+    "nixtla_client",
+    "client",
+    "endpoint",
+    "job_id",
+    "timeout"
+  ],
+  "submit_job": [
+    "nixtla_client",
+    "client",
+    "endpoint",
+    "payload",
+    "multithreaded_compress"
+  ],
+  "poll_job": [
+    "nixtla_client",
+    "client",
+    "endpoint",
+    "job_id",
+    "poll_interval",
+    "poll_timeout"
+  ],
+  "run_async_job": [
+    "nixtla_client",
+    "client",
+    "endpoint",
+    "payload",
+    "poll_interval",
+    "poll_timeout",
+    "multithreaded_compress",
+    "job_timeout_seconds"
+  ],
+  "cancel_job": [
+    "client",
+    "job_id"
+  ],
+  "cancel_job_best_effort": [
+    "client",
+    "job_id",
+    "reason"
+  ],
+  "_wrap_job": [
+    "nixtla_client",
+    "job_id",
+    "endpoint",
+    "task",
+    "parse_result"
+  ],
+  "submit_and_wrap_job": [
+    "nixtla_client",
+    "endpoint",
+    "payload",
+    "job_timeout_seconds",
+    "parse_result"
+  ],
+  "submit_binary_job": [
+    "nixtla_client",
+    "client",
+    "endpoint",
+    "metadata",
+    "body"
+  ],
+  "get_job_result_bytes": [
+    "client",
+    "endpoint",
+    "job_id"
+  ],
+  "wait_for_job_result_bytes": [
+    "nixtla_client",
+    "client",
+    "endpoint",
+    "job_id",
+    "poll_interval",
+    "poll_timeout"
+  ],
+  "submit_and_wrap_binary_job": [
+    "nixtla_client",
+    "endpoint",
+    "metadata",
+    "body"
+  ],
+  "PACKAGES": [],
+  "BASE_COLUMNS": [],
+  "FORECAST_COLUMN": [],
+  "ANOMALY_COLUMN": [],
+  "SECRET_API_KEY": [],
+  "SECRET_BASE_URL": [],
+  "TRAINING_DAYS": [],
+  "TOTAL_DAYS": [],
+  "ANOMALY_DAYS": [],
+  "TEMPLATE_ACCESS_INTEGRATION": [],
+  "TEMPLATE_SP": [],
+  "DeploymentConfig": {
+    "prefix": [
+      "self"
+    ],
+    "api_host": [
+      "self"
+    ],
+    "get_security_params": [
+      "self"
+    ]
+  },
+  "ExampleTestCase": {},
+  "ask_with_defaults": [
+    "question"
+  ],
+  "show_available_objects": [
+    "session",
+    "object_type"
+  ],
+  "ensure_snowflake_object_exists": [
+    "session",
+    "object_type",
+    "name",
+    "create_sql",
+    "check_sql"
+  ],
+  "execute_sql_script": [
+    "session",
+    "script",
+    "separator"
+  ],
+  "create_snowflake_session": [
+    "connection_name"
+  ],
+  "get_config_from_session": [
+    "session"
+  ],
+  "setup_database": [
+    "session",
+    "database_arg",
+    "config_database"
+  ],
+  "setup_schema": [
+    "session",
+    "database",
+    "schema_arg",
+    "config_schema"
+  ],
+  "setup_stage": [
+    "session",
+    "stage_path_arg"
+  ],
+  "detect_package_installer": [],
+  "package_and_upload_nixtla": [
+    "session",
+    "stage",
+    "fallback_package_source"
+  ],
+  "create_security_integration": [
+    "session",
+    "config",
+    "api_key",
+    "skip_confirmation"
+  ],
+  "create_udtfs": [
+    "session",
+    "config"
+  ],
+  "create_stored_procedures": [
+    "session",
+    "config",
+    "skip_confirmation"
+  ],
+  "nixtla_finetune_handler": [
+    "session",
+    "input_data",
+    "params",
+    "max_series"
+  ],
+  "create_finetune_sproc": [
+    "session",
+    "config"
+  ],
+  "show_example_usage_scripts": [
+    "config"
+  ],
+  "get_example_test_cases": [
+    "config"
+  ],
+  "_generate_time_series": [
+    "series_id",
+    "dates",
+    "include_exog",
+    "anomalies",
+    "forecast_start_idx",
+    "trend_rate",
+    "seasonal_amplitude",
+    "seasonal_type",
+    "base_value",
+    "noise_std"
+  ],
+  "load_example_datasets": [
+    "session",
+    "config",
+    "return_dataframes"
+  ],
+  "deploy_snowflake_core": [
+    "session",
+    "config",
+    "api_key",
+    "deploy_security",
+    "deploy_package",
+    "deploy_udtfs",
+    "deploy_procedures",
+    "deploy_finetune",
+    "deploy_examples",
+    "fallback_package_source"
+  ],
+  "deploy_snowflake": [
+    "connection_name",
+    "database",
+    "schema",
+    "stage_path",
+    "integration_name",
+    "base_url"
+  ],
+  "Level": [],
+  "_TRUTHY": [],
+  "_ACTUALS": [],
+  "_PROCEDURE": [],
+  "_to_pandas": [
+    "result"
+  ],
+  "_finalize": [
+    "df",
+    "expected"
+  ],
+  "_qualify": [
+    "session",
+    "procedure"
+  ],
+  "load_actuals": [
+    "session",
+    "table"
+  ],
+  "to_anomalies_df": [
+    "result",
+    "level"
+  ],
+  "detect_anomalies": [
+    "session",
+    "table",
+    "level"
+  ]
+}
