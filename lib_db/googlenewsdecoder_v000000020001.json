@@ -1,0 +1,124 @@
+{
+  "__version__": [],
+  "gnewsdecoder": [
+    "source_url",
+    "interval",
+    "proxy",
+    "timeout"
+  ],
+  "gnews_decoder_async": [
+    "source_url",
+    "interval",
+    "proxy",
+    "timeout",
+    "concurrency"
+  ],
+  "__all__": [],
+  "GoogleDecoder": {
+    "__init__": [
+      "self",
+      "proxy",
+      "timeout",
+      "user_agent"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "get_decoding_params": [
+      "self",
+      "art_id",
+      "source_url"
+    ],
+    "_batchexecute": [
+      "self",
+      "items"
+    ],
+    "decode_google_news_url": [
+      "self",
+      "source_url",
+      "interval"
+    ],
+    "decode_google_news_urls": [
+      "self",
+      "source_urls",
+      "interval"
+    ]
+  },
+  "GoogleDecoderAsync": {
+    "__init__": [
+      "self",
+      "proxy",
+      "timeout",
+      "user_agent"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "get_decoding_params": [
+      "self",
+      "art_id",
+      "source_url"
+    ],
+    "_batchexecute": [
+      "self",
+      "items"
+    ],
+    "decode_google_news_url": [
+      "self",
+      "source_url",
+      "interval"
+    ],
+    "decode_google_news_urls": [
+      "self",
+      "source_urls",
+      "interval",
+      "concurrency"
+    ]
+  },
+  "_SG": [],
+  "_TS": [],
+  "BATCHEXECUTE_URL": [],
+  "RSS_ARTICLE_URL": [],
+  "_GARTURLREQ_CTX": [],
+  "article_id": [
+    "source_url"
+  ],
+  "params_page_url": [
+    "art_id",
+    "source_url"
+  ],
+  "next_google_hop": [
+    "current",
+    "location"
+  ],
+  "parse_signature": [
+    "html"
+  ],
+  "build_batchexecute_body": [
+    "items"
+  ],
+  "parse_batchexecute": [
+    "text"
+  ],
+  "apply_decoded": [
+    "results",
+    "pending",
+    "pairs"
+  ],
+  "ok": [],
+  "err": [
+    "message"
+  ]
+}
