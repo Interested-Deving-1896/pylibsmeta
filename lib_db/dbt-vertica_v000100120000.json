@@ -1,0 +1,112 @@
+{
+  "__path__": [],
+  "PACKAGE_PATH": [],
+  "logger": [],
+  "verticaCredentials": {
+    "type": [
+      "self"
+    ],
+    "unique_field": [
+      "self"
+    ],
+    "_connection_keys": [
+      "self"
+    ]
+  },
+  "verticaConnectionManager": {
+    "TYPE": [],
+    "open": [
+      "cls",
+      "connection"
+    ],
+    "get_response": [
+      "cls",
+      "cursor"
+    ],
+    "cancel": [
+      "self",
+      "connection"
+    ],
+    "get_result_from_cursor": [
+      "cls",
+      "cursor",
+      "limit"
+    ],
+    "execute": [
+      "self",
+      "sql",
+      "auto_begin",
+      "fetch",
+      "limit"
+    ],
+    "exception_handler": [
+      "self",
+      "sql"
+    ],
+    "data_type_code_to_name": [
+      "cls",
+      "type_code"
+    ]
+  },
+  "version": [],
+  "Plugin": [],
+  "VerticaRelation": {
+    "__post_init__": [
+      "self"
+    ],
+    "relation_max_name_length": [
+      "self"
+    ]
+  },
+  "VerticaColumn": {},
+  "VerticaConfig": {},
+  "verticaAdapter": {
+    "ConnectionManager": [],
+    "Column": [],
+    "AdapterSpecificConfigs": [],
+    "CONSTRAINT_SUPPORT": [],
+    "date_function": [
+      "cls"
+    ],
+    "convert_text_type": [
+      "cls",
+      "agate_table",
+      "col_idx"
+    ],
+    "convert_number_type": [
+      "cls",
+      "agate_table",
+      "col_idx"
+    ],
+    "convert_datetime_type": [
+      "cls",
+      "agate_table",
+      "col_idx"
+    ],
+    "standardize_grants_dict": [
+      "self",
+      "grants_table"
+    ],
+    "run_sql_for_tests": [
+      "self",
+      "sql",
+      "fetch",
+      "conn"
+    ],
+    "valid_incremental_strategies": [
+      "self"
+    ],
+    "debug_query": [
+      "self"
+    ]
+  },
+  "__all__": [],
+  "MAX_CHARACTERS_IN_IDENTIFIER": [],
+  "VerticaRelationType": {
+    "Table": [],
+    "View": [],
+    "CTE": []
+  },
+  "VerticaIncludePolicy": {},
+  "VerticaQuotePolicy": {}
+}
