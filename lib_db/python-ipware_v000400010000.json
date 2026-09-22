@@ -1,0 +1,167 @@
+{
+  "__version__": [],
+  "Algorithm": [],
+  "_VALID": [],
+  "IpWare": {
+    "__init__": [
+      "self",
+      "precedence",
+      "leftmost",
+      "proxy_count",
+      "proxy_list",
+      "algorithm"
+    ],
+    "engine": [
+      "self"
+    ],
+    "get_client_ip": [
+      "self",
+      "meta",
+      "strict"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "__all__": [],
+  "IpAddressType": [],
+  "OptionalIpAddressType": [],
+  "logger": [],
+  "IpWareMeta": {
+    "__init__": [
+      "self",
+      "precedence",
+      "leftmost"
+    ]
+  },
+  "IpWareIpAddress": {
+    "extract_ipv4": [
+      "self",
+      "ip_address"
+    ],
+    "extract_ipv6": [
+      "self",
+      "ip_address"
+    ],
+    "parse_ip_address": [
+      "self",
+      "ip_str"
+    ],
+    "get_ips_from_string": [
+      "self",
+      "ip_str",
+      "strict"
+    ]
+  },
+  "IpWareProxy": {
+    "__init__": [
+      "self",
+      "proxy_count",
+      "proxy_list"
+    ],
+    "_validate_proxy_list": [
+      "self",
+      "proxy_list"
+    ],
+    "is_proxy_count_valid": [
+      "self",
+      "ip_list",
+      "strict"
+    ],
+    "is_proxy_trusted_list_valid": [
+      "self",
+      "ip_list",
+      "strict"
+    ]
+  },
+  "IpNetworkType": [],
+  "_NAT64_WKP": [],
+  "_NAT64_LOCAL": [],
+  "_IPV4_MAPPED": [],
+  "_THIS_NETWORK": [],
+  "TIER_REJECT": [],
+  "TIER_LOOPBACK": [],
+  "TIER_LINK_LOCAL": [],
+  "TIER_PRIVATE": [],
+  "TIER_GLOBAL": [],
+  "ip_tier": [
+    "ip"
+  ],
+  "_is_port": [
+    "value"
+  ],
+  "strip_port": [
+    "value"
+  ],
+  "split_unquoted": [
+    "value",
+    "sep"
+  ],
+  "forwarded_for": [
+    "element"
+  ],
+  "clean_ip": [
+    "value"
+  ],
+  "parse_ip": [
+    "value"
+  ],
+  "unwrap_ipv4": [
+    "ip"
+  ],
+  "unwrap_ipv4_network": [
+    "net"
+  ],
+  "split_proxy_chain": [
+    "raw",
+    "strict"
+  ],
+  "OptionalIp": [],
+  "ProxyMatcher": [],
+  "_PREFIX_CHARS": [],
+  "_compile_proxy_matcher": [
+    "pattern"
+  ],
+  "_proxy_matches": [
+    "ip",
+    "matcher"
+  ],
+  "_fold": [
+    "key"
+  ],
+  "_build_folded": [
+    "meta"
+  ],
+  "ModernIpWare": {
+    "__init__": [
+      "self",
+      "precedence",
+      "leftmost",
+      "proxy_count",
+      "proxy_list"
+    ],
+    "_get_meta_values": [
+      "self",
+      "meta"
+    ],
+    "_proxy_count_valid": [
+      "self",
+      "chain",
+      "strict"
+    ],
+    "_proxy_list_valid": [
+      "self",
+      "chain",
+      "strict"
+    ],
+    "_best_from_chain": [
+      "self",
+      "chain"
+    ],
+    "get_client_ip": [
+      "self",
+      "meta",
+      "strict"
+    ]
+  }
+}
