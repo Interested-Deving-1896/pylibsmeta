@@ -1,0 +1,899 @@
+{
+  "parse_args_pixelize": [],
+  "pixelize": [],
+  "parse_args_outline_expansion": [],
+  "outline": [],
+  "command_map": [],
+  "ColoredFormatter": {
+    "COLORS": [],
+    "format": [
+      "self",
+      "record"
+    ]
+  },
+  "logger": [],
+  "ENV_VAR": [],
+  "DEFAULT": [],
+  "requested_backend": [
+    "backend"
+  ],
+  "match_color": [
+    "source",
+    "target",
+    "level"
+  ],
+  "wavelet_colorfix": [
+    "inp",
+    "target",
+    "level"
+  ],
+  "wavelet_decomposition": [
+    "inp",
+    "levels"
+  ],
+  "wavelet_blur": [
+    "inp",
+    "radius"
+  ],
+  "color_styling": [
+    "inp",
+    "saturation",
+    "contrast"
+  ],
+  "weighted_kmeans": [
+    "image",
+    "colors",
+    "weights",
+    "repeats"
+  ],
+  "kmeans": [
+    "image",
+    "colors"
+  ],
+  "maxcover": [
+    "image",
+    "colors"
+  ],
+  "color_quant": [
+    "image",
+    "colors",
+    "weights",
+    "repeats",
+    "method"
+  ],
+  "apply_chunk": [
+    "data",
+    "kernel",
+    "stride",
+    "func"
+  ],
+  "apply_chunk_torch": [
+    "data",
+    "kernel",
+    "stride",
+    "func"
+  ],
+  "sigmoid": [
+    "x"
+  ],
+  "isiterable": [
+    "x"
+  ],
+  "expansion_weight": [
+    "img",
+    "k",
+    "stride",
+    "avg_scale",
+    "dist_scale"
+  ],
+  "kernel_expansion": [],
+  "kernel_smoothing": [],
+  "outline_expansion": [
+    "img",
+    "erode",
+    "dilate",
+    "k",
+    "avg_scale",
+    "dist_scale"
+  ],
+  "nearest": [
+    "img",
+    "target_size"
+  ],
+  "bicubic": [
+    "img",
+    "target_size"
+  ],
+  "find_pixel": [
+    "chunks"
+  ],
+  "contrast_based_downscale": [
+    "img",
+    "target_size"
+  ],
+  "k_centroid_downscale": [
+    "cv2img",
+    "target_size",
+    "centroids"
+  ],
+  "center_downscale": [
+    "img",
+    "target_size"
+  ],
+  "downscale_mode": [],
+  "_srgb_to_linear": [
+    "rgb"
+  ],
+  "_linear_to_srgb": [
+    "rgb"
+  ],
+  "_rgb_to_lab_fallback": [
+    "img"
+  ],
+  "_lab_to_rgb_fallback": [
+    "lab"
+  ],
+  "rgb_to_lab": [
+    "img"
+  ],
+  "lab_to_rgb": [
+    "lab"
+  ],
+  "gaussian_kernel": [
+    "radius",
+    "device"
+  ],
+  "centroid_generator": [
+    "maxv",
+    "minv",
+    "num_centroids",
+    "device"
+  ],
+  "color_quantization_kmeans": [
+    "img",
+    "num_centroids",
+    "weights",
+    "repeat_mode"
+  ],
+  "find_nearest_palette_color": [
+    "pixel",
+    "palette"
+  ],
+  "find_nearest_palette_colors_with_distance": [
+    "pixel",
+    "palette"
+  ],
+  "error_diffusion_iter": [
+    "output",
+    "palette",
+    "kernel"
+  ],
+  "parallel_error_diffusion": [
+    "image",
+    "palette",
+    "device"
+  ],
+  "_generate_bayer_matrix": [
+    "n",
+    "device"
+  ],
+  "generate_bayer_matrix": [
+    "n",
+    "device"
+  ],
+  "ordered_dither": [
+    "image",
+    "palette",
+    "device"
+  ],
+  "parallel_dither_with_palette": [
+    "image",
+    "quantized",
+    "palette",
+    "method"
+  ],
+  "quantize_and_dither": [
+    "image",
+    "weights",
+    "num_centroids",
+    "quant_mode",
+    "dither_method",
+    "repeat_mode"
+  ],
+  "compile_warning_log_once": [],
+  "compile_wrapper": [
+    "func"
+  ],
+  "to_numpy": [
+    "tensor"
+  ],
+  "pre_resize": [
+    "img_pil",
+    "target_size",
+    "patch_size"
+  ],
+  "batched_kmeans_iter": [
+    "datas",
+    "centroids",
+    "cs",
+    "weights"
+  ],
+  "repeat_elements": [
+    "data",
+    "repeat_counts"
+  ],
+  "generate_repeat_table": [
+    "weights",
+    "N",
+    "N2"
+  ],
+  "dilate_cont": [
+    "img",
+    "kernel",
+    "iterations"
+  ],
+  "erode_cont": [
+    "img",
+    "kernel",
+    "iterations"
+  ],
+  "circle_kernel": [
+    "r"
+  ],
+  "KERNELS": [],
+  "TORCH_COMPILE": [],
+  "local_stat": [
+    "tensor",
+    "kernel",
+    "stride",
+    "stat"
+  ],
+  "normalize_weight": [
+    "weight",
+    "mode"
+  ],
+  "outline_weight_stats": [
+    "img",
+    "k",
+    "stride"
+  ],
+  "polarity_score": [
+    "l_med",
+    "bright_dist",
+    "dark_dist",
+    "avg_scale",
+    "dist_scale"
+  ],
+  "current_weight_mapping": [
+    "l_med",
+    "l_min",
+    "l_max",
+    "bright_dist",
+    "dark_dist",
+    "local_contrast",
+    "avg_scale",
+    "dist_scale",
+    "normalize"
+  ],
+  "contrast_ratio_weight_mapping": [
+    "l_med",
+    "l_min",
+    "l_max",
+    "bright_dist",
+    "dark_dist",
+    "local_contrast",
+    "avg_scale",
+    "dist_scale",
+    "normalize"
+  ],
+  "contrast_gated_weight_mapping": [
+    "l_med",
+    "l_min",
+    "l_max",
+    "bright_dist",
+    "dark_dist",
+    "local_contrast",
+    "avg_scale",
+    "dist_scale",
+    "normalize"
+  ],
+  "_WEIGHT_MAPPINGS": [],
+  "lanczos_kernel": [
+    "x",
+    "a"
+  ],
+  "compute_weights_and_indices": [
+    "in_size",
+    "out_size",
+    "scale",
+    "a",
+    "dtype",
+    "device",
+    "support_scaling"
+  ],
+  "lanczos_resize": [
+    "x",
+    "size",
+    "a",
+    "support_scaling"
+  ],
+  "find_pixel_luminance": [
+    "chunk"
+  ],
+  "contrast_downscale": [
+    "img",
+    "patch_size"
+  ],
+  "batched_kmeans": [
+    "data",
+    "num_clusters"
+  ],
+  "k_centroid_preprocess": [
+    "img_batch",
+    "b",
+    "c",
+    "h",
+    "w",
+    "height_down",
+    "width_down"
+  ],
+  "k_centroid_postprocess": [
+    "patches",
+    "kmeans_centroids",
+    "num_patches",
+    "b",
+    "c",
+    "height_down",
+    "width_down"
+  ],
+  "k_centroid_downscale_torch": [
+    "img_batch",
+    "pixel_size",
+    "centroids_k"
+  ],
+  "unsharp_mask": [
+    "x",
+    "kernel_size",
+    "sigma",
+    "amount",
+    "threshold"
+  ],
+  "laplacian_sharpen": [
+    "x",
+    "amount"
+  ],
+  "main": [],
+  "CANDIDATES": [],
+  "SUPPORTED_DTYPES": [],
+  "PROBE_SHAPE": [],
+  "_PROBED": [],
+  "_probe": [
+    "name",
+    "device"
+  ],
+  "select_context": [
+    "img_t",
+    "backend"
+  ],
+  "__all__": [],
+  "run": [
+    "ctx",
+    "img",
+    "pixel_size",
+    "thickness",
+    "mode",
+    "sharpen_mode",
+    "sharpen_factor",
+    "do_color_match",
+    "do_quant",
+    "num_colors",
+    "quant_mode",
+    "dither_mode",
+    "no_post_upscale",
+    "keep_intermediate",
+    "weight_mapping",
+    "weight_normalize",
+    "colorfix_blur",
+    "blur_impl",
+    "stats"
+  ],
+  "MODULE": [],
+  "INTERP_MODES": [],
+  "pad_replicate": [
+    "ctx",
+    "src",
+    "top",
+    "bottom",
+    "left",
+    "right"
+  ],
+  "interpolate": [
+    "ctx",
+    "src",
+    "size",
+    "mode"
+  ],
+  "lanczos_csr": [
+    "in_size",
+    "out_size",
+    "a",
+    "support_scaling"
+  ],
+  "_csr_constants": [
+    "ctx",
+    "in_size",
+    "out_size"
+  ],
+  "upscale_nearest_exact": [
+    "ctx",
+    "src",
+    "factor"
+  ],
+  "CONVERT": [],
+  "MATCH": [],
+  "BLUR": [],
+  "BLUR_TILED": [],
+  "WAVELET_LEVELS": [],
+  "BLUR_MODES": [],
+  "BLUR_IMPLS": [],
+  "TILED_SHAPES": [],
+  "SYM_RADII": [],
+  "default_blur_impl": [
+    "ctx"
+  ],
+  "luminance": [
+    "ctx",
+    "img"
+  ],
+  "lab_image": [
+    "ctx",
+    "img"
+  ],
+  "exact_blur_table": [
+    "radius"
+  ],
+  "separable_blur_table": [
+    "radius"
+  ],
+  "blur_table": [
+    "ctx",
+    "kind",
+    "radius"
+  ],
+  "blur_level": [
+    "ctx",
+    "src",
+    "dst",
+    "radius",
+    "add_src",
+    "blur",
+    "impl"
+  ],
+  "WEIGHTS": [],
+  "KMEANS": [],
+  "REPEAT": [],
+  "DITHER": [],
+  "ED_GROUP": [],
+  "KM_CHUNK": [],
+  "RP_CHUNK": [],
+  "RADIX_SHIFTS": [],
+  "quant_weights": [
+    "ctx",
+    "weight",
+    "out_size",
+    "gamma"
+  ],
+  "init_table": [
+    "num_centroids",
+    "c"
+  ],
+  "repeat_table": [
+    "ctx",
+    "weights",
+    "count"
+  ],
+  "_bayer": [],
+  "dither": [
+    "ctx",
+    "img",
+    "quantized",
+    "palette",
+    "method",
+    "ed_impl"
+  ],
+  "LAPLACIAN": [],
+  "unsharp_table": [
+    "kernel_size",
+    "sigma"
+  ],
+  "sharpen": [
+    "ctx",
+    "src",
+    "mode",
+    "amount",
+    "threshold"
+  ],
+  "CONTRAST": [],
+  "KCENTROID": [],
+  "KCENTROID_ITERS": [],
+  "STOP": [],
+  "FAN": [],
+  "MOMENT_PIXELS": [],
+  "_levels": [
+    "length"
+  ],
+  "seg_minmax": [
+    "ctx",
+    "src",
+    "seg_count",
+    "seg_len",
+    "src_offset"
+  ],
+  "seg_sum": [
+    "ctx",
+    "src",
+    "seg_count",
+    "seg_len",
+    "scale",
+    "src_offset"
+  ],
+  "stop_diff": [
+    "ctx",
+    "item_diff",
+    "items",
+    "diff",
+    "it"
+  ],
+  "lab_moments": [
+    "ctx",
+    "img",
+    "stats",
+    "slot"
+  ],
+  "LATTICE": [],
+  "WEIGHT": [],
+  "MORPH": [],
+  "SLIDING": [],
+  "MAPPINGS": [],
+  "NORMALIZE": [],
+  "LOCAL_STATS": [],
+  "STAT_PADDING": [],
+  "structuring_element": [
+    "ctx",
+    "iters"
+  ],
+  "_lattice": [
+    "ctx",
+    "lum",
+    "entry",
+    "ksize",
+    "stride",
+    "pad",
+    "outputs"
+  ],
+  "_lattice_weight": [
+    "ctx",
+    "lum",
+    "raw",
+    "lc",
+    "k",
+    "stride",
+    "mapping_id",
+    "scales"
+  ],
+  "_sliding_weight": [
+    "ctx",
+    "lum",
+    "raw",
+    "lc",
+    "k",
+    "pad_mode",
+    "mapping_id",
+    "scales"
+  ],
+  "RawWeight": {
+    "__init__": [
+      "self",
+      "ctx",
+      "raw",
+      "wmin",
+      "wmax",
+      "norm_mode"
+    ],
+    "release": [
+      "self"
+    ]
+  },
+  "normalized_weight": [
+    "ctx",
+    "rw"
+  ],
+  "morph": [
+    "ctx",
+    "src",
+    "iters",
+    "mode",
+    "do_clamp"
+  ],
+  "SHADER_ROOT": [],
+  "cache_root": [],
+  "CUDA_TOOLKIT_ROOT": [],
+  "ensure_nvrtc": [],
+  "prepare_toolchain": [],
+  "ALL_BACKENDS": [],
+  "_CONTEXTS": [],
+  "create_context": [
+    "backend",
+    "profile"
+  ],
+  "default_backend": [
+    "tensor"
+  ],
+  "get_context": [
+    "backend",
+    "tensor",
+    "profile"
+  ],
+  "BACKENDS": [],
+  "INTEROP_BACKENDS": [],
+  "BUFFER_USAGE": [],
+  "ROW_LEN": [],
+  "DeviceArray": {
+    "numel": [
+      "self"
+    ],
+    "nbytes": [
+      "self"
+    ]
+  },
+  "DispatchRecord": {},
+  "ContextStats": {
+    "reset_peaks": [
+      "self"
+    ]
+  },
+  "_TORCH_DTYPES": [],
+  "Context": {
+    "MAX_QUERIES": [],
+    "__init__": [
+      "self",
+      "backend",
+      "profile",
+      "adapter"
+    ],
+    "uses_cuda_stream": [
+      "self"
+    ],
+    "kernel": [
+      "self",
+      "module",
+      "entry"
+    ],
+    "empty": [
+      "self",
+      "shape",
+      "dtype"
+    ],
+    "release": [
+      "self"
+    ],
+    "trim": [
+      "self"
+    ],
+    "constant": [
+      "self",
+      "data",
+      "dtype"
+    ],
+    "cached_constant": [
+      "self",
+      "key",
+      "factory",
+      "dtype"
+    ],
+    "_torch_view": [
+      "self",
+      "arr"
+    ],
+    "from_torch": [
+      "self",
+      "tensor",
+      "dtype"
+    ],
+    "to_torch": [
+      "self",
+      "arr",
+      "like"
+    ],
+    "download": [
+      "self",
+      "arr"
+    ],
+    "_staging": [
+      "self",
+      "capacity",
+      "memory_type"
+    ],
+    "_enc": [
+      "self"
+    ],
+    "dispatch": [
+      "self",
+      "module",
+      "entry",
+      "threads"
+    ],
+    "dispatch_flat": [],
+    "copy": [
+      "self",
+      "src",
+      "dst"
+    ],
+    "clone": [
+      "self",
+      "src"
+    ],
+    "clear_uint": [
+      "self",
+      "arr"
+    ],
+    "flush": [
+      "self"
+    ],
+    "wait": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "NVIDIA_VENDOR_ID": [],
+  "resolve_adapter": [
+    "backend",
+    "adapter"
+  ],
+  "_LIVE_CONTEXTS": [],
+  "_close_contexts": [],
+  "_pad_bytes": [
+    "data",
+    "capacity"
+  ],
+  "_round_capacity": [
+    "nbytes"
+  ],
+  "VSWHERE": [],
+  "DISPATCH_SRC": [],
+  "ISA_FLAGS": [],
+  "ISAS": [],
+  "vcvars64": [],
+  "build_dll": [
+    "src",
+    "dll",
+    "flags"
+  ],
+  "build_dispatcher": [
+    "out_root"
+  ],
+  "CACHE_VERSION": [],
+  "_BUFFER": [],
+  "_SCALARS": [],
+  "BufferRef": {
+    "_fields_": []
+  },
+  "CpuKernel": {},
+  "shader_hash": [],
+  "entry_uniforms": [
+    "module",
+    "entry"
+  ],
+  "parse_kernel": [
+    "cpp_text",
+    "entry"
+  ],
+  "KernelLibrary": {
+    "__init__": [
+      "self",
+      "cache_root"
+    ],
+    "_builder": [
+      "self"
+    ],
+    "_build": [
+      "self",
+      "module",
+      "entry",
+      "stem"
+    ],
+    "dll_path": [
+      "self",
+      "module",
+      "entry",
+      "isa"
+    ],
+    "get": [
+      "self",
+      "module",
+      "entry",
+      "isa"
+    ]
+  },
+  "_LIBRARY": [],
+  "_DISPATCHER": [],
+  "_shared": [],
+  "CpuContext": {
+    "backend": [],
+    "uses_cuda_stream": [],
+    "__init__": [
+      "self",
+      "backend",
+      "profile",
+      "isa",
+      "threads"
+    ],
+    "empty": [
+      "self",
+      "shape",
+      "dtype"
+    ],
+    "release": [
+      "self"
+    ],
+    "trim": [
+      "self"
+    ],
+    "constant": [
+      "self",
+      "data",
+      "dtype"
+    ],
+    "cached_constant": [
+      "self",
+      "key",
+      "factory",
+      "dtype"
+    ],
+    "view": [
+      "arr"
+    ],
+    "from_torch": [
+      "self",
+      "tensor",
+      "dtype"
+    ],
+    "to_torch": [
+      "self",
+      "arr",
+      "like"
+    ],
+    "download": [
+      "self",
+      "arr"
+    ],
+    "dispatch": [
+      "self",
+      "module",
+      "entry",
+      "threads"
+    ],
+    "dispatch_flat": [],
+    "copy": [
+      "self",
+      "src",
+      "dst"
+    ],
+    "clone": [
+      "self",
+      "src"
+    ],
+    "clear_uint": [
+      "self",
+      "arr"
+    ],
+    "flush": [
+      "self"
+    ],
+    "wait": [
+      "self"
+    ]
+  }
+}
