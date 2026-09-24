@@ -1,0 +1,511 @@
+{
+  "__version__": [],
+  "BaseM2R2": {
+    "__init__": [
+      "self"
+    ],
+    "parse": [
+      "self",
+      "s"
+    ],
+    "__call__": [
+      "self",
+      "s"
+    ]
+  },
+  "M2R2": {
+    "__init__": [
+      "self",
+      "plugins"
+    ]
+  },
+  "convert": [
+    "text"
+  ],
+  "M2R": [],
+  "logger": [],
+  "VisibleHtmlTextParser": {
+    "__init__": [
+      "self"
+    ],
+    "handle_data": [
+      "self",
+      "data"
+    ]
+  },
+  "slugify_heading_like_github": [
+    "title"
+  ],
+  "assign_github_heading_slugs": [
+    "titles"
+  ],
+  "get_or_create_document_anchor_map": [
+    "env"
+  ],
+  "get_or_create_document_anchor_references": [
+    "env"
+  ],
+  "normalize_target_document_path": [
+    "link_source_docname",
+    "destination_path"
+  ],
+  "find_documents_with_changed_anchor_references": [
+    "app",
+    "env"
+  ],
+  "record_document_anchors": [
+    "app",
+    "doctree"
+  ],
+  "extract_visible_heading_text": [
+    "node"
+  ],
+  "forget_document_anchors": [
+    "app",
+    "env",
+    "docname"
+  ],
+  "merge_document_anchors": [
+    "app",
+    "env",
+    "docnames",
+    "other"
+  ],
+  "create_document_anchor_reference": [
+    "name",
+    "rawtext",
+    "text",
+    "lineno",
+    "inliner",
+    "options",
+    "content"
+  ],
+  "resolve_document_anchor_reference": [
+    "app",
+    "env",
+    "node",
+    "contnode"
+  ],
+  "register_document_anchors": [
+    "app"
+  ],
+  "_DOCUTILS_INCLUDE_OPTIONS": [],
+  "MdInclude": {
+    "required_arguments": [],
+    "optional_arguments": [],
+    "final_argument_whitespace": [],
+    "find_included_file": [
+      "self"
+    ],
+    "select_lines": [
+      "self",
+      "text"
+    ],
+    "parse_line_selection": [
+      "self",
+      "selection",
+      "line_count"
+    ],
+    "clip_text_between_markers": [
+      "self",
+      "text"
+    ],
+    "run": [
+      "self"
+    ]
+  },
+  "SphinxRestRenderer": {
+    "unlabeled_code_block_start": [],
+    "__init__": [
+      "self",
+      "document",
+      "source_path"
+    ],
+    "render_linked_text": [
+      "self",
+      "token",
+      "state",
+      "emphasis_marker"
+    ],
+    "resolve_image_token": [
+      "self",
+      "image_token"
+    ],
+    "resolve_image_path": [
+      "self",
+      "image_uri"
+    ],
+    "render_image": [
+      "self",
+      "token",
+      "state",
+      "target"
+    ]
+  },
+  "SphinxM2R2": {
+    "__init__": [
+      "self",
+      "document"
+    ]
+  },
+  "M2R2Parser": {
+    "supported": [],
+    "parse": [
+      "self",
+      "inputstring",
+      "document"
+    ]
+  },
+  "setup": [
+    "app"
+  ],
+  "validate_sphinx_config": [
+    "app"
+  ],
+  "resolve_deprecated_inline_math": [
+    "disable_inline_math"
+  ],
+  "RAW_HTML_ROLE_NAME": [],
+  "RAW_HTML_ROLE_DEFINITION": [],
+  "SubstitutionNameCollision": {},
+  "record_role_definition": [
+    "state",
+    "role_name",
+    "role_definition"
+  ],
+  "define_substitution": [
+    "state",
+    "name_prefix",
+    "directive",
+    "target_url"
+  ],
+  "rendering_link_text": [
+    "state"
+  ],
+  "is_inside_link_text": [
+    "state"
+  ],
+  "rendering_heading": [
+    "state"
+  ],
+  "flatten_to_plain_text": [
+    "token"
+  ],
+  "extract_visible_rst_token_text": [
+    "token"
+  ],
+  "escape_role_title": [
+    "text"
+  ],
+  "remove_footnote_references": [
+    "token"
+  ],
+  "merge_adjacent_raw_html_roles": [
+    "text"
+  ],
+  "remove_redundant_inline_escapes": [
+    "text"
+  ],
+  "RestRenderer": {
+    "indent": [],
+    "unlabeled_code_block_start": [],
+    "__init__": [
+      "self"
+    ],
+    "iter_tokens": [
+      "self",
+      "tokens",
+      "state"
+    ],
+    "__call__": [
+      "self",
+      "tokens",
+      "state"
+    ],
+    "thematic_break": [
+      "self",
+      "token",
+      "state"
+    ],
+    "linebreak": [
+      "self",
+      "token",
+      "state"
+    ],
+    "paragraph": [
+      "self",
+      "token",
+      "state"
+    ],
+    "softbreak": [
+      "self",
+      "token",
+      "state"
+    ],
+    "_indent_block": [
+      "self",
+      "block"
+    ],
+    "_raw_html": [
+      "self",
+      "raw",
+      "state"
+    ],
+    "block_code": [
+      "self",
+      "token",
+      "state"
+    ],
+    "directive": [
+      "self",
+      "token",
+      "state"
+    ],
+    "rest_role": [
+      "self",
+      "token",
+      "state"
+    ],
+    "rest_link": [],
+    "rst_footnote_ref": [],
+    "inline_math": [
+      "self",
+      "token",
+      "state"
+    ],
+    "eol_literal_marker": [
+      "self",
+      "token",
+      "state"
+    ],
+    "standalone_hyperlink": [
+      "self",
+      "token",
+      "state"
+    ],
+    "link": [
+      "self",
+      "token",
+      "state"
+    ],
+    "render_link": [
+      "self",
+      "token",
+      "state",
+      "emphasis_marker"
+    ],
+    "render_linked_text": [
+      "self",
+      "token",
+      "state",
+      "emphasis_marker"
+    ],
+    "render_hyperlink_reference": [
+      "self",
+      "token",
+      "state",
+      "url",
+      "emphasis_marker"
+    ],
+    "heading": [
+      "self",
+      "token",
+      "state"
+    ],
+    "rest_code_block": [
+      "self",
+      "token",
+      "state"
+    ],
+    "github_alert": [
+      "self",
+      "token",
+      "state"
+    ],
+    "block_quote": [
+      "self",
+      "token",
+      "state"
+    ],
+    "text": [
+      "self",
+      "token",
+      "state"
+    ],
+    "image": [
+      "self",
+      "token",
+      "state"
+    ],
+    "render_image": [
+      "self",
+      "token",
+      "state",
+      "target"
+    ],
+    "build_image_directive": [
+      "self",
+      "token",
+      "image_link_target"
+    ],
+    "define_image_substitution": [
+      "self",
+      "token",
+      "state",
+      "image_link_target"
+    ],
+    "block_html": [
+      "self",
+      "token",
+      "state"
+    ],
+    "inline_html": [
+      "self",
+      "token",
+      "state"
+    ],
+    "codespan": [
+      "self",
+      "token",
+      "state"
+    ],
+    "strikethrough": [
+      "self",
+      "token",
+      "state"
+    ],
+    "emphasis": [
+      "self",
+      "token",
+      "state"
+    ],
+    "strong": [
+      "self",
+      "token",
+      "state"
+    ],
+    "render_emphasis": [
+      "self",
+      "token",
+      "state",
+      "marker"
+    ],
+    "list": [
+      "self",
+      "token",
+      "state"
+    ],
+    "table": [
+      "self",
+      "token",
+      "state"
+    ],
+    "table_head": [
+      "self",
+      "token",
+      "state"
+    ],
+    "table_body": [
+      "self",
+      "token",
+      "state"
+    ],
+    "table_row": [],
+    "footnote_ref": [
+      "self",
+      "token",
+      "state"
+    ],
+    "footnote_item": [
+      "self",
+      "token",
+      "state"
+    ],
+    "footnotes": [
+      "self",
+      "token",
+      "state"
+    ],
+    "finalize_document": [
+      "self",
+      "rendered_body",
+      "markdown_state"
+    ]
+  },
+  "VISUAL_LIST_PATTERN": [],
+  "parse_block_quote_with_github_alert": [
+    "block",
+    "match",
+    "state"
+  ],
+  "parse_directive": [
+    "block",
+    "match",
+    "state"
+  ],
+  "parse_rst_literal_block_marker": [
+    "block",
+    "match",
+    "state"
+  ],
+  "parse_autolink": [
+    "inline",
+    "match",
+    "state"
+  ],
+  "parse_link_containing_reference_image": [
+    "inline",
+    "match",
+    "state"
+  ],
+  "parse_rst_inline_token": [
+    "inline",
+    "match",
+    "state"
+  ],
+  "parse_inline_math": [
+    "inline",
+    "match",
+    "state"
+  ],
+  "parse_dollar_inline_math": [
+    "inline",
+    "match",
+    "state"
+  ],
+  "parse_eol_literal_marker": [
+    "inline",
+    "match",
+    "state"
+  ],
+  "parse_literal_underscore": [
+    "inline",
+    "match",
+    "state"
+  ],
+  "parse_list_with_visual_indentation": [
+    "block",
+    "match",
+    "state"
+  ],
+  "configure_markdown_parser_for_rst": [
+    "markdown"
+  ],
+  "parse_from_file": [
+    "file",
+    "encoding"
+  ],
+  "save_to_file": [
+    "file",
+    "content",
+    "encoding",
+    "overwrite"
+  ],
+  "create_parser": [],
+  "run_m2r2": [
+    "args"
+  ],
+  "main": [
+    "argv"
+  ]
+}
