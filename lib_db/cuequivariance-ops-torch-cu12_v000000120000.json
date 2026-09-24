@@ -1,0 +1,3175 @@
+{
+  "_CHANNELS": [],
+  "_PAIR_DIM": [],
+  "_HEADS": [],
+  "_HEAD_DIM": [],
+  "_EPS": [],
+  "_INF": [],
+  "TARGET_CAPABILITIES": [],
+  "_TARGET_SMS": [],
+  "_SEQUENCE_MULTIPLE": [],
+  "_INDEX_LIMIT": [],
+  "_family": [],
+  "_extension_available": [],
+  "extension_available": [],
+  "sm100_device_compatible": [
+    "device"
+  ],
+  "shape_supported": [
+    "batch",
+    "sequence"
+  ],
+  "_tensor_ok": [
+    "tensor",
+    "shape",
+    "dtypes",
+    "device"
+  ],
+  "producer_contract": [
+    "pair_repr",
+    "transition",
+    "mask",
+    "w_ln_z",
+    "w_proj_z",
+    "b_proj_z",
+    "eps",
+    "inf"
+  ],
+  "producer_route_supported": [
+    "pair_repr",
+    "transition",
+    "mask",
+    "w_ln_z",
+    "w_proj_z",
+    "b_proj_z",
+    "eps",
+    "inf"
+  ],
+  "consumer_contract": [
+    "single_repr",
+    "cache",
+    "mask",
+    "num_heads",
+    "w_ln_a",
+    "w_proj_qkv",
+    "b_proj_qkv",
+    "w_ln_q",
+    "w_ln_k",
+    "w_proj_g",
+    "b_proj_g",
+    "w_proj_o",
+    "b_proj_o"
+  ],
+  "consumer_route_supported": [
+    "single_repr",
+    "cache",
+    "mask",
+    "num_heads",
+    "w_ln_a",
+    "w_proj_qkv",
+    "b_proj_qkv",
+    "w_ln_q",
+    "w_ln_k",
+    "w_proj_g",
+    "b_proj_g",
+    "w_proj_o",
+    "b_proj_o"
+  ],
+  "_workspace": [
+    "device",
+    "batch",
+    "sequence"
+  ],
+  "_kernel_operand": [
+    "tensor"
+  ],
+  "_require": [
+    "condition"
+  ],
+  "_pair_finalize": [
+    "pair_repr",
+    "transition",
+    "mask",
+    "w_ln_z",
+    "w_proj_z"
+  ],
+  "_pair_finalize_fake": [
+    "pair_repr",
+    "transition",
+    "mask",
+    "w_ln_z",
+    "w_proj_z"
+  ],
+  "_masked_cache_attention": [
+    "single_repr",
+    "cache",
+    "w_ln_a",
+    "w_qkv_gate",
+    "b_qkv_gate",
+    "w_ln_q",
+    "w_ln_k",
+    "w_proj_o",
+    "b_proj_o",
+    "attn_scale"
+  ],
+  "_masked_cache_attention_fake": [
+    "single_repr",
+    "cache",
+    "w_ln_a",
+    "w_qkv_gate",
+    "b_qkv_gate",
+    "w_ln_q",
+    "w_ln_k",
+    "w_proj_o",
+    "b_proj_o",
+    "attn_scale"
+  ],
+  "_PRODUCER_OP": [],
+  "_CONSUMER_OP": [],
+  "pair_finalize_kf": [
+    "pair_repr",
+    "transition",
+    "mask",
+    "w_ln_z",
+    "w_proj_z"
+  ],
+  "masked_cache_attention_kf": [
+    "single_repr",
+    "cache",
+    "w_ln_a",
+    "w_proj_qkv",
+    "b_proj_qkv",
+    "w_ln_q",
+    "w_ln_k",
+    "w_proj_g",
+    "b_proj_g",
+    "w_proj_o",
+    "b_proj_o",
+    "attn_scale"
+  ],
+  "native_block": [
+    "single_repr",
+    "pair_repr",
+    "transition",
+    "mask",
+    "w_ln_z",
+    "w_proj_z",
+    "w_ln_a",
+    "w_proj_qkv",
+    "b_proj_qkv",
+    "w_ln_q",
+    "w_ln_k",
+    "w_proj_g",
+    "b_proj_g",
+    "w_proj_o",
+    "b_proj_o",
+    "attn_scale"
+  ],
+  "attention_pair_bias_block_kf": [
+    "single_repr",
+    "pair_repr",
+    "transition",
+    "mask",
+    "w_ln_z",
+    "w_proj_z",
+    "w_ln_a",
+    "w_proj_qkv",
+    "b_proj_qkv",
+    "w_ln_q",
+    "w_ln_k",
+    "w_proj_g",
+    "b_proj_g",
+    "w_proj_o",
+    "b_proj_o",
+    "attn_scale"
+  ],
+  "__all__": [],
+  "BATCH_DIM_SHARED": [],
+  "BATCH_DIM_BATCHED": [],
+  "BATCH_DIM_INDEXED": [],
+  "BATCH_DIM_AUTO": [],
+  "_setup_context": [
+    "ctx",
+    "inputs",
+    "output"
+  ],
+  "_handle_batch_dim_auto": [
+    "batch_size",
+    "batch_dim",
+    "tensors",
+    "index_tensors"
+  ],
+  "_": [
+    "name",
+    "math_dtype",
+    "operand_extent",
+    "num_inputs",
+    "num_outputs",
+    "num_index",
+    "buffer_dim",
+    "buffer_num_segments",
+    "batch_dim",
+    "index_buffer",
+    "dtypes",
+    "num_operations",
+    "num_operands",
+    "operations",
+    "num_paths",
+    "path_indices_start",
+    "path_coefficients_start",
+    "path_indices",
+    "path_coefficients",
+    "batch_size",
+    "tensors"
+  ],
+  "_do_bwd_jit": [
+    "ctx",
+    "grad"
+  ],
+  "sleep": [
+    "seconds",
+    "input_tensor"
+  ],
+  "_PAIR_WIDTH": [],
+  "_HIDDEN": [],
+  "_PROJECTION": [],
+  "_CARRIERS": [],
+  "_INT32_SAFE_MAX_ROWS": [],
+  "_MAX_GRID_Y": [],
+  "_gate_vjp_producer_kernel": [
+    "LOGITS",
+    "GATE_BIAS",
+    "MASK_FLAT",
+    "PROJ_A",
+    "PROJ_B",
+    "SRC_A",
+    "SRC_B",
+    "sa0",
+    "sa1",
+    "sa2",
+    "sa3",
+    "sb0",
+    "sb1",
+    "sb2",
+    "sb3",
+    "DCAT",
+    "WS",
+    "M",
+    "S",
+    "TILE_C",
+    "TILE_I",
+    "TILE_J",
+    "A_TR",
+    "B_TR",
+    "WIDE_INDEX"
+  ],
+  "_check_abi": [
+    "x",
+    "parameters",
+    "mask",
+    "projected_a",
+    "projected_b",
+    "grad_a",
+    "grad_b"
+  ],
+  "_raw_layout": [
+    "grad",
+    "raw_transposed"
+  ],
+  "_projection_vjp": [
+    "x",
+    "a_p_weight",
+    "a_p_bias",
+    "a_g_weight",
+    "a_g_bias",
+    "b_p_weight",
+    "b_p_bias",
+    "b_g_weight",
+    "b_g_bias",
+    "mask",
+    "projected_a",
+    "projected_b",
+    "grad_a",
+    "grad_b",
+    "transposed_half_is_b"
+  ],
+  "_projection_vjp_fake": [
+    "x",
+    "a_p_weight",
+    "a_p_bias",
+    "a_g_weight",
+    "a_g_bias",
+    "b_p_weight",
+    "b_p_bias",
+    "b_g_weight",
+    "b_g_bias",
+    "mask",
+    "projected_a",
+    "projected_b",
+    "grad_a",
+    "grad_b",
+    "transposed_half_is_b"
+  ],
+  "warmup_a1_projection_vjp": [],
+  "ALLOW_NVTX": [],
+  "warn_eager_only": [
+    "message",
+    "stacklevel"
+  ],
+  "_ENV_FLAG_VALUES": [],
+  "env_flag": [
+    "name",
+    "default"
+  ],
+  "INT_TO_DTYPE": [],
+  "DTYPE_TO_INT": [],
+  "get_triton_float32_matmul_input_precision": [],
+  "is_in_export_mode": [],
+  "maybe_to": [
+    "arg",
+    "dtype"
+  ],
+  "get_cuda_device_capability": [
+    "device"
+  ],
+  "identity_2": [
+    "s",
+    "z"
+  ],
+  "nvtx_range": [
+    "label"
+  ],
+  "nvtx_range_push": [
+    "name"
+  ],
+  "nvtx_range_pop": [],
+  "get_operator_from_module": [
+    "module",
+    "operator_base_str",
+    "dtypes"
+  ],
+  "get_tensor_meta_data": [
+    "tensor"
+  ],
+  "maybe_detach": [
+    "tensor"
+  ],
+  "maybe_size": [
+    "tensor",
+    "dim"
+  ],
+  "maybe_empty_like": [
+    "input",
+    "create_tensor"
+  ],
+  "maybe_empty": [
+    "size",
+    "device",
+    "dtype",
+    "create_tensor"
+  ],
+  "maybe_zeros_like": [
+    "input",
+    "create_tensor"
+  ],
+  "maybe_zeros": [
+    "size",
+    "device",
+    "dtype",
+    "create_tensor"
+  ],
+  "BenchmarkMode": {
+    "FLUSH_CACHE": [],
+    "FLUSH_CACHE_PEAK_PROXY": [],
+    "ROT_BUFFER": [],
+    "ROT_BUFFER_PEAK_PROXY": []
+  },
+  "run_decoy": [
+    "f",
+    "input_dict"
+  ],
+  "run_bench": [
+    "f",
+    "input_dict",
+    "warmup_iter",
+    "run_iter",
+    "bench_mode"
+  ],
+  "TriangleMultiplicativeUpdateInferenceRoute": {},
+  "_library": [],
+  "sm90_device": [
+    "device"
+  ],
+  "_aligned_operand": [
+    "tensor"
+  ],
+  "_check_bf16": [
+    "name",
+    "tensor"
+  ],
+  "_tensor1": [
+    "tensor"
+  ],
+  "_tensor2": [
+    "tensor",
+    "dynamic_stride_dim"
+  ],
+  "_require_bfloat16": [],
+  "_MM_OUT_DTYPE_SUPPORTED": [],
+  "_PAIR_UPDATE_FINALIZE_SCHEDULES": [],
+  "_MATMUL_FOUR_STAGE_SHARED_BYTES": [],
+  "_pair_forward_persistent_min_sequence": [
+    "compute_capability",
+    "num_heads"
+  ],
+  "_TiledPairSchedule": {},
+  "_SM90_TILED_PAIR_SCHEDULE": [],
+  "_tiled_pair_path": [
+    "is_rms",
+    "pair_dim"
+  ],
+  "_has_fp32_parameter": [],
+  "_device_smem_limit": [
+    "dev"
+  ],
+  "_fit_num_stages": [
+    "dev",
+    "per_stage_bytes",
+    "want_stages",
+    "margin"
+  ],
+  "_dq_per_stage_bytes": [
+    "bn",
+    "dq_bm",
+    "bd"
+  ],
+  "_fwd_per_stage_bytes": [
+    "bn",
+    "fwd_bm",
+    "bd"
+  ],
+  "_dkdv_per_stage_bytes": [
+    "bm",
+    "dkdv_bn",
+    "bd",
+    "do_dtype"
+  ],
+  "_matmul_num_stages": [
+    "dev"
+  ],
+  "flash_smem_ok": [
+    "DH",
+    "N",
+    "dev"
+  ],
+  "_launch_matmul": [
+    "A",
+    "B",
+    "C",
+    "M",
+    "N",
+    "K",
+    "lda",
+    "ldb",
+    "ldc",
+    "a_t",
+    "b_t",
+    "add_c",
+    "use_lowp_mma",
+    "bias",
+    "round_before_bias"
+  ],
+  "run_pair_update_finalize_masked_attention_bias_narrow": [
+    "pair_repr",
+    "transition",
+    "mask",
+    "w_ln_z",
+    "w_proj_z",
+    "b_proj_z",
+    "eps",
+    "inf"
+  ],
+  "run_fwd_narrow": [
+    "s",
+    "q",
+    "k",
+    "v",
+    "z",
+    "mask",
+    "w_proj_z",
+    "w_proj_g",
+    "w_proj_o",
+    "w_ln_z",
+    "b_ln_z",
+    "b_proj_z",
+    "b_proj_g",
+    "b_proj_o",
+    "attn_scale",
+    "save_for_backward",
+    "norm_kind",
+    "save_lowp"
+  ],
+  "run_bwd_narrow": [
+    "bias",
+    "lse",
+    "o",
+    "y",
+    "g",
+    "pair_mean",
+    "pair_rstd",
+    "s",
+    "q",
+    "k",
+    "v",
+    "z",
+    "mask",
+    "w_proj_z",
+    "w_proj_g",
+    "w_proj_o",
+    "w_ln_z",
+    "b_ln_z",
+    "d_out",
+    "b_proj_z",
+    "b_proj_g",
+    "b_proj_o",
+    "attn_scale",
+    "norm_kind"
+  ],
+  "_get_device_cc": [
+    "device"
+  ],
+  "_is_cuda_device": [
+    "device"
+  ],
+  "_require_rubin_build": [
+    "device"
+  ],
+  "_require_rubin_sm100f_build": [
+    "device"
+  ],
+  "_CAPABILITY_UNSET": [],
+  "_FUSED_LAYER_NORM_BACKWARD_MIN_SEQUENCE": [],
+  "_FUSED_PAIR_PROJECTION_MASK_DTYPES": [],
+  "_attention_pair_bias_mask_from_normalized_triton_forward": [
+    "normalized",
+    "weight",
+    "bias",
+    "pair_mask",
+    "mask_value"
+  ],
+  "_device_capability": [
+    "device"
+  ],
+  "_clear_device_capability_cache": [],
+  "_fused_pair_projection_inputs_eligible": [
+    "z",
+    "mask",
+    "w_proj_z",
+    "b_proj_z",
+    "w_ln",
+    "b_ln",
+    "num_heads",
+    "multiplicity",
+    "grad_enabled"
+  ],
+  "_fused_pair_projection_cheap_eligible": [
+    "z",
+    "mask",
+    "grad_enabled",
+    "is_cached_z_proj",
+    "return_z_proj"
+  ],
+  "_recompute_backward_profitable": [
+    "z",
+    "compute_capability",
+    "w_ln",
+    "b_ln",
+    "num_heads"
+  ],
+  "_fused_layer_norm_backward_device_supported": [
+    "compute_capability"
+  ],
+  "_fused_layer_norm_backward_supported": [
+    "z",
+    "w_ln",
+    "b_ln",
+    "num_heads",
+    "is_cached_z_proj",
+    "compute_capability"
+  ],
+  "_fused_pair_projection_supported": [
+    "z",
+    "mask",
+    "grad_enabled",
+    "is_cached_z_proj",
+    "compute_capability"
+  ],
+  "_fused_pair_projection_config": [
+    "num_heads",
+    "dim_z",
+    "compute_capability"
+  ],
+  "_prepared_affine_weights_profitable": [
+    "allow_prepared_weights",
+    "pair_rows",
+    "num_heads",
+    "dim_z",
+    "compute_capability",
+    "w_ln",
+    "b_ln"
+  ],
+  "_pair_repr_to_attention_bias_triton_forward": [
+    "z",
+    "w_proj_z",
+    "b_proj_z",
+    "w_ln",
+    "b_ln",
+    "mask",
+    "num_heads",
+    "multiplicity",
+    "eps",
+    "inf",
+    "grad_enabled",
+    "return_z_proj",
+    "is_cached_z_proj",
+    "use_fused_pair_projection",
+    "allow_prepared_weights",
+    "compute_capability"
+  ],
+  "_attention_pair_bias_mask_from_normalized_op": [
+    "normalized",
+    "weight",
+    "bias",
+    "pair_mask",
+    "mask_value"
+  ],
+  "_attention_pair_bias_mask_from_normalized_fake": [
+    "normalized",
+    "weight",
+    "bias",
+    "pair_mask",
+    "mask_value"
+  ],
+  "_pair_repr_to_attention_bias_triton_op": [
+    "z",
+    "w_proj_z",
+    "b_proj_z",
+    "w_ln",
+    "b_ln",
+    "mask",
+    "num_heads",
+    "multiplicity",
+    "eps",
+    "inf",
+    "grad_enabled",
+    "return_z_proj",
+    "is_cached_z_proj",
+    "valid_optional_inputs",
+    "use_fused_pair_projection"
+  ],
+  "_pair_repr_to_attention_bias_triton_fake": [
+    "z",
+    "w_proj_z",
+    "b_proj_z",
+    "w_ln",
+    "b_ln",
+    "mask",
+    "num_heads",
+    "multiplicity",
+    "eps",
+    "inf",
+    "grad_enabled",
+    "return_z_proj",
+    "is_cached_z_proj",
+    "valid_optional_inputs",
+    "use_fused_pair_projection"
+  ],
+  "_pair_repr_to_attention_bias_setup_context": [
+    "ctx",
+    "inputs",
+    "output"
+  ],
+  "_pair_repr_to_attention_bias_autograd_backward": [
+    "ctx",
+    "grad_out_mask",
+    "grad_out_z_proj"
+  ],
+  "_APB_FLASH_RUNTIME_CAPABILITIES": [],
+  "_require_flash_module": [],
+  "_flash_wholeop_shape_rejection_reason": [],
+  "_flash_wholeop_preprojection_rejection_reason": [
+    "s",
+    "z",
+    "mask",
+    "num_heads",
+    "projected_channels",
+    "w_proj_z",
+    "w_proj_g",
+    "w_proj_o",
+    "w_ln_z",
+    "b_ln_z",
+    "b_proj_z",
+    "b_proj_g",
+    "b_proj_o",
+    "attn_scale",
+    "return_z_proj",
+    "multiplicity"
+  ],
+  "_flash_wholeop_preprojection_supported": [],
+  "_flash_wholeop_supported": [
+    "s",
+    "q",
+    "k",
+    "v",
+    "z",
+    "mask",
+    "num_heads",
+    "w_proj_z",
+    "w_proj_g",
+    "w_proj_o",
+    "w_ln_z",
+    "b_ln_z",
+    "b_proj_z",
+    "b_proj_g",
+    "b_proj_o",
+    "attn_scale",
+    "return_z_proj",
+    "multiplicity"
+  ],
+  "_flash_wholeop_projected_rejection_reason": [
+    "s",
+    "q",
+    "k",
+    "v",
+    "z",
+    "num_heads"
+  ],
+  "_flash_wholeop_projected_supported": [],
+  "_flash_runtime_available": [],
+  "_pair_update_finalize_masked_attention_bias_op": [
+    "pair_repr",
+    "transition",
+    "mask",
+    "w_ln_z",
+    "w_proj_z",
+    "b_proj_z",
+    "eps",
+    "inf"
+  ],
+  "_pair_update_finalize_masked_attention_bias_fake": [
+    "pair_repr",
+    "transition",
+    "mask",
+    "w_ln_z",
+    "w_proj_z",
+    "b_proj_z",
+    "eps",
+    "inf"
+  ],
+  "_run_flash_forward": [
+    "s",
+    "q",
+    "k",
+    "v",
+    "z",
+    "mask",
+    "w_proj_z",
+    "w_proj_g",
+    "w_proj_o",
+    "w_ln_z",
+    "b_ln_z",
+    "b_proj_z",
+    "b_proj_g",
+    "b_proj_o",
+    "attn_scale",
+    "norm_kind"
+  ],
+  "_apb_flash_fwd_op": [
+    "s",
+    "q",
+    "k",
+    "v",
+    "z",
+    "mask",
+    "w_proj_z",
+    "w_proj_g",
+    "w_proj_o",
+    "w_ln_z",
+    "b_ln_z",
+    "b_proj_z",
+    "b_proj_g",
+    "b_proj_o",
+    "attn_scale",
+    "save_for_backward",
+    "norm_kind",
+    "save_lowp"
+  ],
+  "_apb_flash_fwd_fake": [
+    "s",
+    "q",
+    "k",
+    "v",
+    "z",
+    "mask",
+    "w_proj_z",
+    "w_proj_g",
+    "w_proj_o",
+    "w_ln_z",
+    "b_ln_z",
+    "b_proj_z",
+    "b_proj_g",
+    "b_proj_o",
+    "attn_scale",
+    "save_for_backward",
+    "norm_kind",
+    "save_lowp"
+  ],
+  "_apb_flash_bwd_op": [
+    "grad_out",
+    "bias",
+    "lse",
+    "o",
+    "y",
+    "g",
+    "pair_mean",
+    "pair_rstd",
+    "s",
+    "q",
+    "k",
+    "v",
+    "z",
+    "mask",
+    "w_proj_z",
+    "w_proj_g",
+    "w_proj_o",
+    "w_ln_z",
+    "b_ln_z",
+    "b_proj_z",
+    "b_proj_g",
+    "b_proj_o",
+    "attn_scale",
+    "norm_kind"
+  ],
+  "_apb_flash_bwd_fake": [
+    "grad_out",
+    "bias",
+    "lse",
+    "o",
+    "y",
+    "g",
+    "pair_mean",
+    "pair_rstd",
+    "s",
+    "q",
+    "k",
+    "v",
+    "z",
+    "mask",
+    "w_proj_z",
+    "w_proj_g",
+    "w_proj_o",
+    "w_ln_z",
+    "b_ln_z",
+    "b_proj_z",
+    "b_proj_g",
+    "b_proj_o",
+    "attn_scale",
+    "norm_kind"
+  ],
+  "_apb_flash_setup_context": [
+    "ctx",
+    "inputs",
+    "output"
+  ],
+  "_apb_flash_backward": [
+    "ctx",
+    "grad_out"
+  ],
+  "_PROJECTION_WIDTH": [],
+  "_TILE_ROWS": [],
+  "_OUTPUT_ALIGNMENT_ELEMENTS": [],
+  "cell_supported": [
+    "batch",
+    "sequence",
+    "device_index"
+  ],
+  "_projection_config": [],
+  "_projection": [
+    "x",
+    "gate_weight",
+    "value_weight",
+    "gate_bias",
+    "value_bias"
+  ],
+  "_projection_fake": [
+    "x",
+    "gate_weight",
+    "value_weight",
+    "gate_bias",
+    "value_bias"
+  ],
+  "trimul_cutedsl_tail_projection": [
+    "x",
+    "gate_weight",
+    "value_weight",
+    "gate_bias",
+    "value_bias"
+  ],
+  "_MXFP8_UE8M0_SCALE_ONE": [],
+  "forward_kernel_input_generator": [
+    "M",
+    "N",
+    "K",
+    "dtype_input",
+    "two_inputs",
+    "precision"
+  ],
+  "forward_kernel_config_to_key": [
+    "M",
+    "N",
+    "K",
+    "dtype_input",
+    "two_inputs",
+    "precision"
+  ],
+  "forward_kernel_input_to_key": [
+    "x1",
+    "x2",
+    "w1",
+    "w2",
+    "mask",
+    "precision"
+  ],
+  "fused_sigmoid_gated_dual_gemm_forward_kernel_wrapper": [
+    "x1",
+    "x2",
+    "w1",
+    "w2",
+    "b1",
+    "b2",
+    "mask",
+    "TRANSPOSE_OUT",
+    "TILE_M",
+    "TILE_N",
+    "TILE_K",
+    "num_stages",
+    "num_warps",
+    "precision"
+  ],
+  "backward_kernel_config_to_key": [
+    "M",
+    "N",
+    "K",
+    "dtype_input",
+    "two_inputs"
+  ],
+  "backward_kernel_input_to_key": [
+    "grad_out",
+    "x1",
+    "x2",
+    "w1",
+    "w2",
+    "mask"
+  ],
+  "backard_kernel_input_generator": [
+    "M",
+    "N",
+    "K",
+    "dtype_input",
+    "two_inputs"
+  ],
+  "fused_sigmoid_gated_dual_gemm_backward_pregemm_kernel_wrapper": [
+    "grad_out",
+    "x1",
+    "x2",
+    "w1",
+    "w2",
+    "b1",
+    "b2",
+    "mask",
+    "TRANSPOSE_OUT",
+    "TILE_M",
+    "TILE_N",
+    "TILE_K",
+    "num_stages",
+    "num_warps",
+    "precision"
+  ],
+  "_fused_gated_dual_gemm": [
+    "x1",
+    "x2",
+    "w1",
+    "w2",
+    "b1",
+    "b2",
+    "mask",
+    "transpose_out",
+    "precision"
+  ],
+  "mxfp8_forward_kernel_input_generator": [
+    "M",
+    "N",
+    "K",
+    "dtype_input",
+    "two_inputs",
+    "precision",
+    "transpose_out",
+    "scale_layout",
+    "orientation",
+    "seq",
+    "batch"
+  ],
+  "mxfp8_forward_kernel_config_to_key": [
+    "M",
+    "N",
+    "K",
+    "dtype_input",
+    "two_inputs",
+    "precision",
+    "transpose_out",
+    "scale_layout",
+    "orientation",
+    "seq",
+    "batch"
+  ],
+  "mxfp8_forward_kernel_input_to_key": [
+    "x1",
+    "x2",
+    "w1",
+    "w2",
+    "mask",
+    "transpose_out",
+    "precision",
+    "scale_layout",
+    "orientation"
+  ],
+  "fused_sigmoid_gated_dual_gemm_mxfp8": [
+    "x",
+    "w1",
+    "w2",
+    "mask",
+    "transpose_out",
+    "precision",
+    "b1",
+    "b2"
+  ],
+  "fused_sigmoid_gated_dual_gemm_dual_x_mxfp8": [
+    "x1",
+    "x2",
+    "w1",
+    "w2",
+    "mask",
+    "transpose_out",
+    "precision",
+    "b1",
+    "b2"
+  ],
+  "_dual_gemm_setup_context": [
+    "ctx",
+    "inputs",
+    "output"
+  ],
+  "_dual_gemm_backward": [
+    "ctx",
+    "grad_out"
+  ],
+  "fused_sigmoid_gated_dual_gemm": [
+    "x",
+    "w1",
+    "w2",
+    "mask",
+    "transpose_out",
+    "precision",
+    "b1",
+    "b2"
+  ],
+  "fused_sigmoid_gated_dual_gemm_dual_x": [
+    "x1",
+    "x2",
+    "w1",
+    "w2",
+    "mask",
+    "transpose_out",
+    "precision",
+    "b1",
+    "b2"
+  ],
+  "_SINGLE_PASS_MAX_TILE_D": [],
+  "_ROW_TILE_ELEMENTS": [],
+  "_TRANSPOSED_TILE_ELEMENTS": [],
+  "_SINGLE_PASS_WARPS": [],
+  "_TRANSPOSED_LOAD_LAYOUTS": [],
+  "_MULTI_PASS_CONFIG": [],
+  "_SINGLE_PASS_MASKS_LANES_PAST_D": [],
+  "_forward_config": [
+    "N",
+    "D",
+    "dtype",
+    "layout"
+  ],
+  "_allocate_outputs_bwd": [
+    "x",
+    "layout"
+  ],
+  "_allocate_outputs": [
+    "x",
+    "layout"
+  ],
+  "_layer_norm_transpose": [
+    "x",
+    "w",
+    "b",
+    "eps",
+    "elementwise_affine",
+    "layout",
+    "out",
+    "mean",
+    "rstd",
+    "B",
+    "N",
+    "D"
+  ],
+  "_INTO_LAYOUTS": [],
+  "layer_norm_transpose_into": [
+    "x",
+    "w",
+    "b",
+    "out"
+  ],
+  "_layer_norm_transpose_bwd": [
+    "grad_out",
+    "x",
+    "w",
+    "mean",
+    "rstd",
+    "elementwise_affine",
+    "layout"
+  ],
+  "_layer_norm_transpose_fake": [
+    "x",
+    "w",
+    "b",
+    "eps",
+    "elementwise_affine",
+    "layout"
+  ],
+  "_layer_norm_transpose_backward": [
+    "ctx",
+    "grad_out",
+    "mean",
+    "rstd"
+  ],
+  "layer_norm_transpose": [
+    "x",
+    "w",
+    "b",
+    "eps",
+    "elementwise_affine",
+    "layout"
+  ],
+  "_MIDDLE_EPS": [],
+  "_SUPPORTED_TOKENS": [],
+  "_PROJECTION_CONFIGS": [],
+  "_JOIN_CONFIGS": [],
+  "pack_pairformer_grouped_projection": [
+    "weight"
+  ],
+  "_validate_tensor": [
+    "name",
+    "tensor",
+    "shape",
+    "device",
+    "dtype"
+  ],
+  "_validate_metadata": [
+    "normalized",
+    "normalized_t",
+    "mask",
+    "incoming_payload_weight",
+    "incoming_gate_weight",
+    "outgoing_payload_weight",
+    "outgoing_gate_weight",
+    "middle_gate_weight",
+    "middle_norm_weight",
+    "middle_norm_bias",
+    "output_weight",
+    "output_bias"
+  ],
+  "_validate_inputs": [
+    "normalized",
+    "normalized_t",
+    "mask",
+    "incoming_payload_weight",
+    "incoming_gate_weight",
+    "outgoing_payload_weight",
+    "outgoing_gate_weight",
+    "middle_gate_weight",
+    "middle_norm_weight",
+    "middle_norm_bias",
+    "output_weight",
+    "output_bias"
+  ],
+  "_project": [
+    "normalized",
+    "gate_weight",
+    "payload_weight",
+    "mask",
+    "tokens"
+  ],
+  "_join_norm_gate": [
+    "incoming",
+    "outgoing",
+    "gate_logits",
+    "weight",
+    "bias",
+    "tokens"
+  ],
+  "_implementation": [
+    "normalized",
+    "normalized_t",
+    "mask",
+    "incoming_payload_weight",
+    "incoming_gate_weight",
+    "outgoing_payload_weight",
+    "outgoing_gate_weight",
+    "middle_gate_weight",
+    "middle_norm_weight",
+    "middle_norm_bias",
+    "output_weight",
+    "output_bias"
+  ],
+  "_pairformer_combined_triangle_multiplication": [
+    "normalized",
+    "normalized_t",
+    "mask",
+    "incoming_payload_weight",
+    "incoming_gate_weight",
+    "outgoing_payload_weight",
+    "outgoing_gate_weight",
+    "middle_gate_weight",
+    "middle_norm_weight",
+    "middle_norm_bias",
+    "output_weight",
+    "output_bias"
+  ],
+  "_pairformer_combined_triangle_multiplication_fake": [
+    "normalized",
+    "normalized_t",
+    "mask",
+    "incoming_payload_weight",
+    "incoming_gate_weight",
+    "outgoing_payload_weight",
+    "outgoing_gate_weight",
+    "middle_gate_weight",
+    "middle_norm_weight",
+    "middle_norm_bias",
+    "output_weight",
+    "output_bias"
+  ],
+  "pairformer_combined_triangle_multiplication": [
+    "normalized",
+    "normalized_t",
+    "mask",
+    "incoming_payload_weight",
+    "incoming_gate_weight",
+    "outgoing_payload_weight",
+    "outgoing_gate_weight",
+    "middle_gate_weight",
+    "middle_norm_weight",
+    "middle_norm_bias",
+    "output_weight",
+    "output_bias"
+  ],
+  "_PAIR_TRITON_DTYPES": [],
+  "_INTEGER_PAIR_MASK_DTYPES": [],
+  "_validate_pair_repr_inputs": [
+    "z",
+    "mask",
+    "w_proj_z",
+    "b_proj_z",
+    "w_ln",
+    "b_ln",
+    "num_heads",
+    "multiplicity",
+    "is_cached_z_proj"
+  ],
+  "_pair_projection_requires_native_semantics": [
+    "z",
+    "mask",
+    "w_proj_z",
+    "b_proj_z",
+    "w_ln",
+    "b_ln",
+    "is_cached_z_proj"
+  ],
+  "_pair_projection_has_static_empty_plane": [
+    "z",
+    "is_cached_z_proj"
+  ],
+  "pair_repr_to_attention_bias": [
+    "z",
+    "mask",
+    "w_proj_z",
+    "b_proj_z",
+    "w_ln",
+    "b_ln",
+    "num_heads",
+    "multiplicity",
+    "eps",
+    "inf",
+    "return_z_proj",
+    "is_cached_z_proj"
+  ],
+  "_PACKAGED_DIR": [],
+  "_packaged_name": [
+    "family",
+    "arch"
+  ],
+  "_source_name": [
+    "arch"
+  ],
+  "families": [],
+  "archs": [
+    "family"
+  ],
+  "packaged_manifest": [
+    "family",
+    "arch"
+  ],
+  "source_manifest": [
+    "family",
+    "arch"
+  ],
+  "image_hashes": [
+    "manifest"
+  ],
+  "target_archs": [
+    "manifest"
+  ],
+  "toolchain_version": [
+    "manifest"
+  ],
+  "kernel_source_sha256": [
+    "manifest"
+  ],
+  "launch_abi": [
+    "manifest"
+  ],
+  "_BATCH_MIN": [],
+  "_SEQUENCE_MIN": [],
+  "_LAUNCH_ROWS_MAX": [],
+  "_ROWS_CEILING": [],
+  "row_chunks": [
+    "rows",
+    "rows_multiple",
+    "rows_floor"
+  ],
+  "_Owner": {},
+  "_OWNERS": [],
+  "owner_for_capability": [
+    "capability"
+  ],
+  "device_capability": [
+    "device"
+  ],
+  "family_available": [
+    "family"
+  ],
+  "family_available_uncached": [
+    "family"
+  ],
+  "owner_available": [
+    "capability"
+  ],
+  "_output_tail": [
+    "x0",
+    "x1",
+    "gate_weight",
+    "update_weight",
+    "gate_bias",
+    "update_bias"
+  ],
+  "_output_tail_fake": [
+    "x0",
+    "x1",
+    "gate_weight",
+    "update_weight",
+    "gate_bias",
+    "update_bias"
+  ],
+  "_OP": [],
+  "route_supported": [
+    "x0",
+    "x1",
+    "gate_weight",
+    "update_weight",
+    "gate_bias",
+    "update_bias"
+  ],
+  "trimul_output_tail_blackwell": [
+    "x0",
+    "x1",
+    "gate_weight",
+    "update_weight",
+    "gate_bias",
+    "update_bias"
+  ],
+  "_USING_CUSTOM_OP_FALLBACK": [],
+  "compat_fake": [
+    "op"
+  ],
+  "_PADDED_WIDTH": [],
+  "_ROWS_PER_PROGRAM": [],
+  "_XBLOCK": [],
+  "_NUM_WARPS": [],
+  "_NUM_STAGES": [],
+  "_ANCHOR_DIRECTIONS": [],
+  "_check_stats": [
+    "x",
+    "mean",
+    "rstd",
+    "use_stats"
+  ],
+  "_ln1_vjp": [
+    "x",
+    "weight",
+    "grad_a",
+    "grad_b",
+    "mean",
+    "rstd",
+    "has_second",
+    "use_stats",
+    "eps"
+  ],
+  "_ln1_vjp_reference": [
+    "x",
+    "weight",
+    "grad_a",
+    "grad_b",
+    "mean",
+    "rstd",
+    "has_second",
+    "use_stats",
+    "eps"
+  ],
+  "_ln1_vjp_fake": [
+    "x",
+    "weight",
+    "grad_a",
+    "grad_b",
+    "mean",
+    "rstd",
+    "has_second",
+    "use_stats",
+    "eps"
+  ],
+  "_bf16_rows": [
+    "grad",
+    "rows"
+  ],
+  "_FirstOrderVjpAnchor": {
+    "forward": [
+      "ctx",
+      "normalized",
+      "x",
+      "weight",
+      "bias",
+      "eps"
+    ],
+    "backward": [
+      "ctx",
+      "grad_a",
+      "grad_b"
+    ]
+  },
+  "ln1_vjp_admitted": [
+    "x_dtype",
+    "x_contiguous",
+    "pair_width",
+    "weight_dtype",
+    "bias_dtype"
+  ],
+  "ln1_backward_anchor": [
+    "normalized",
+    "x",
+    "weight",
+    "bias",
+    "eps"
+  ],
+  "ln1_vjp_takes_direction": [
+    "direction"
+  ],
+  "warmup_ln1_vjp": [],
+  "_OPTIONAL_INPUT_FLAGS_MASK": [],
+  "_SOFTMAX_SHIFT_INVARIANT_FLAG": [],
+  "_CAPABILITY_FLAGS_SHIFT": [],
+  "_encode_capability_flags": [
+    "capability"
+  ],
+  "_decode_capability_flags": [
+    "flags"
+  ],
+  "_FAMILY": [],
+  "_launcher": [],
+  "ln2_vjp_available": [
+    "device"
+  ],
+  "_launch": [
+    "projected_a",
+    "projected_b",
+    "contracted",
+    "norm_weight",
+    "norm_bias",
+    "grad_normalized",
+    "outgoing",
+    "eps",
+    "grad_a",
+    "grad_b",
+    "grad_weight",
+    "grad_bias"
+  ],
+  "_contraction_layer_norm_vjp": [
+    "projected_a",
+    "projected_b",
+    "contracted",
+    "norm_weight",
+    "norm_bias",
+    "grad_normalized",
+    "outgoing",
+    "eps"
+  ],
+  "_contraction_layer_norm_vjp_fake": [
+    "projected_a",
+    "projected_b",
+    "contracted",
+    "norm_weight",
+    "norm_bias",
+    "grad_normalized",
+    "outgoing",
+    "eps"
+  ],
+  "post_a5_contract_ln2_backward_anchor": [
+    "normalized",
+    "projected_a",
+    "projected_b",
+    "contracted",
+    "norm_weight",
+    "norm_bias",
+    "direction",
+    "eps"
+  ],
+  "warmup_post_a5_contract_ln2": [],
+  "_APB_PUBLIC_ACTIVATION_CAPABILITIES": [],
+  "_CompiledWholeopPolicy": {},
+  "_COMPILED_WHOLEOP_POLICIES": [],
+  "_COMPILED_TRAINING_BATCHES": [],
+  "_APB_PAIR_WIDTH": [],
+  "_APB_HEADS": [],
+  "_APB_BATCH_MAX": [],
+  "_APB_SEQUENCE_MIN": [],
+  "_APB_SEQUENCE_MAX": [],
+  "_SM90_INFERENCE_ROW_FLOOR": [],
+  "_SM90_INFERENCE_SEQUENCE_MIN": [],
+  "_SM90_TRAINING_ROW_FLOOR": [],
+  "_SM100_INFERENCE_ROW_FLOOR": [],
+  "_SM100_KF_ROW_FLOOR": [],
+  "_SM100_ROW_MAX": [],
+  "_SM120_BATCH_MIN": [],
+  "_SM120_INFERENCE_ROW_FLOOR": [],
+  "_apb_pair_update_shape_admits": [],
+  "_sm90_apb_training_admits": [
+    "compute_capability"
+  ],
+  "_sm90_pair_update_finalize_admits": [
+    "compute_capability"
+  ],
+  "_sm100_pair_update_finalize_admits": [
+    "compute_capability"
+  ],
+  "_sm120_pair_update_finalize_admits": [
+    "compute_capability"
+  ],
+  "_sm100_apb_block_kf_admits": [
+    "compute_capability"
+  ],
+  "_pair_update_finalize_admits": [
+    "compute_capability"
+  ],
+  "_pair_update_finalize_contract": [
+    "pair_repr",
+    "transition",
+    "mask",
+    "w_ln_z",
+    "w_proj_z",
+    "b_proj_z",
+    "compute_capability"
+  ],
+  "_APB_INFERENCE_STORAGE_DTYPES": [],
+  "_apb_inference_storage_contract": [
+    "activations",
+    "parameters"
+  ],
+  "_compiled_wholeop_profitable": [],
+  "_flash_inference_profitable_shape": [],
+  "_flash_inference_profitable": [
+    "q",
+    "z",
+    "compute_capability"
+  ],
+  "_flash_inference_materialization_profitable": [
+    "z"
+  ],
+  "_pair_full_apb_inference_profitable": [
+    "q",
+    "z",
+    "compute_capability"
+  ],
+  "_pair_full_apb_training_profitable": [
+    "q",
+    "z",
+    "compute_capability"
+  ],
+  "_wholeop_sequence_profitable": [
+    "sequence",
+    "compute_capability",
+    "fallback_threshold"
+  ],
+  "_wholeop_training_profitable": [],
+  "_wholeop_preprojection_profitable": [
+    "single_repr",
+    "pair_repr",
+    "num_heads",
+    "projected_channels",
+    "training",
+    "compute_capability",
+    "fallback_threshold"
+  ],
+  "_pair_full_apb_preprojection_profitable": [
+    "single_repr",
+    "pair_repr",
+    "num_heads",
+    "projected_channels",
+    "training",
+    "compute_capability",
+    "is_cached_z_proj"
+  ],
+  "_MAX_ROWS": [],
+  "_TRAINING_MIN_ROWS": [],
+  "forward_extension_available": [],
+  "_require_sm90_device": [
+    "device"
+  ],
+  "_cell_admitted": [
+    "batch",
+    "sequence",
+    "pair_width",
+    "c_hidden"
+  ],
+  "producer_extension_available": [],
+  "_rows": [
+    "x0"
+  ],
+  "_vjp_producer_impl": [
+    "x0",
+    "x1",
+    "gate_weight",
+    "update_weight",
+    "gate_bias",
+    "update_bias",
+    "grad_output"
+  ],
+  "_vjp_producer": [],
+  "_vjp_producer_fake": [
+    "x0",
+    "x1",
+    "gate_weight",
+    "update_weight",
+    "gate_bias",
+    "update_bias",
+    "grad_output"
+  ],
+  "_vjp_with_input_gradients": [
+    "x0",
+    "x1",
+    "gate_weight",
+    "update_weight",
+    "gate_bias",
+    "update_bias",
+    "grad_output"
+  ],
+  "_vjp_with_input_gradients_fake": [
+    "x0",
+    "x1",
+    "gate_weight",
+    "update_weight",
+    "gate_bias",
+    "update_bias",
+    "grad_output"
+  ],
+  "_OUTPUT_TAIL_OP": [],
+  "_VJP_PRODUCER_OP": [],
+  "_VJP_WITH_INPUT_GRADS_OP": [],
+  "_higher_order_backward": [
+    "inputs",
+    "grad_output"
+  ],
+  "_backward": [
+    "ctx",
+    "grad_output"
+  ],
+  "x0x1_training_tail_admitted": [
+    "device_index",
+    "batch",
+    "sequence",
+    "pair_width",
+    "c_hidden"
+  ],
+  "trimul_cutedsl_x0x1_training_output_tail": [
+    "x0",
+    "x1",
+    "gate_weight",
+    "update_weight",
+    "gate_bias",
+    "update_bias"
+  ],
+  "transpose_segment_setup_context": [
+    "ctx",
+    "inputs",
+    "output"
+  ],
+  "segmented_transpose_bwd": [
+    "ctx",
+    "grad_output"
+  ],
+  "segmented_transpose": [
+    "tensor",
+    "segment_info",
+    "input_contiguous_as_info"
+  ],
+  "op4_mode_mappings": [],
+  "op3_mode_mappings": [],
+  "all_mode_mappings": [],
+  "mode_mappings_to_int": [],
+  "int_mappings_to_mode": [],
+  "int_mode": [],
+  "mode_is_op4": [
+    "mode"
+  ],
+  "sort_tensor_product_info_for_operand": [
+    "path_offsets_and_dims",
+    "path_cg_values",
+    "op_idx"
+  ],
+  "path_offsets_to_csr": [
+    "path_offsets_and_dims",
+    "op_idx",
+    "op_stride"
+  ],
+  "make_tensor_product_info": [
+    "op_idx",
+    "op_stride",
+    "path_offsets",
+    "path_cg_values"
+  ],
+  "make_tensor_product_infos": [
+    "strides",
+    "path_offsets_and_dims",
+    "path_cg_values",
+    "math_dtype"
+  ],
+  "TensorProductPathData": {
+    "__init__": [
+      "self",
+      "path_csr_offsets",
+      "path_offsets",
+      "path_cg_values",
+      "math_dtype"
+    ],
+    "forward": [
+      "self"
+    ]
+  },
+  "update_batch_size": [
+    "batch_size",
+    "t"
+  ],
+  "get_batch_size": [
+    "in0",
+    "in1",
+    "in2"
+  ],
+  "tensor_product_info_as_ctype": [
+    "path_csr_offsets",
+    "path_offsets",
+    "path_cg_values"
+  ],
+  "fused_tensor_product_setup_fwd_context": [
+    "ctx",
+    "inputs",
+    "output"
+  ],
+  "fused_tensor_product_setup_bwd_context": [
+    "ctx",
+    "inputs",
+    "output"
+  ],
+  "fused_tensor_product_bwd_bwd": [
+    "ctx",
+    "grad_grads"
+  ],
+  "fused_tensor_product_bwd": [
+    "ctx",
+    "grad_output"
+  ],
+  "fused_tensor_product": [
+    "in0",
+    "in1",
+    "in2",
+    "tp_path_csr_offsets_fwd",
+    "tp_path_csr_offsets_dgrad_in0",
+    "tp_path_csr_offsets_dgrad_in1",
+    "tp_path_csr_offsets_dgrad_in2",
+    "tp_path_offsets_fwd",
+    "tp_path_offsets_dgrad_in0",
+    "tp_path_offsets_dgrad_in1",
+    "tp_path_offsets_dgrad_in2",
+    "tp_path_cg_values_fwd",
+    "tp_path_cg_values_dgrad_in0",
+    "tp_path_cg_values_dgrad_in1",
+    "tp_path_cg_values_dgrad_in2",
+    "connection_mode",
+    "output_stride"
+  ],
+  "FusedTensorProductOp4": {
+    "__init__": [
+      "self",
+      "operand_segment_modes",
+      "operand_segment_offsets",
+      "operand_segment_shapes",
+      "path_indices",
+      "path_coefficients",
+      "math_dtype"
+    ],
+    "forward": [
+      "self",
+      "in0",
+      "in1",
+      "in2"
+    ],
+    "_opcheck": [
+      "self",
+      "in0",
+      "in1",
+      "in2"
+    ]
+  },
+  "FusedTensorProductOp3": {
+    "__init__": [
+      "self",
+      "operand_segment_modes",
+      "operand_segment_offsets",
+      "operand_segment_shapes",
+      "path_indices",
+      "path_coefficients",
+      "math_dtype"
+    ],
+    "forward": [
+      "self",
+      "in0",
+      "in1"
+    ],
+    "_opcheck": [
+      "self",
+      "in0",
+      "in1"
+    ]
+  },
+  "_apply_norm": [
+    "tensor",
+    "weight",
+    "bias",
+    "eps",
+    "norm_kind",
+    "dtype"
+  ],
+  "_pair_repr_to_attention_bias_torch": [
+    "z",
+    "mask",
+    "w_proj_z",
+    "b_proj_z",
+    "w_ln",
+    "b_ln",
+    "num_heads",
+    "multiplicity",
+    "eps",
+    "inf",
+    "return_z_proj",
+    "is_cached_z_proj",
+    "norm_kind"
+  ],
+  "_prepare_attention_inputs": [
+    "single_repr",
+    "num_heads",
+    "w_ln_a",
+    "b_ln_a",
+    "w_proj_q",
+    "b_proj_q",
+    "w_proj_k",
+    "w_proj_v",
+    "eps"
+  ],
+  "_explicit_attention_with_bias": [
+    "q",
+    "k",
+    "v",
+    "bias",
+    "attn_scale"
+  ],
+  "_attention_pair_bias_torch": [
+    "single_repr",
+    "pair_repr",
+    "mask",
+    "num_heads",
+    "w_ln_a",
+    "b_ln_a",
+    "w_proj_q",
+    "b_proj_q",
+    "w_proj_k",
+    "w_proj_v",
+    "w_proj_g",
+    "w_proj_o",
+    "b_proj_o",
+    "w_proj_z",
+    "b_proj_z",
+    "w_ln_z",
+    "b_ln_z",
+    "inf",
+    "eps",
+    "attn_scale",
+    "return_z_proj",
+    "is_cached_z_proj",
+    "multiplicity"
+  ],
+  "FwdBackend": {
+    "GENERIC": [],
+    "SM100F": [],
+    "SM120F": []
+  },
+  "_TORCH_COMPILE_MODES": [],
+  "_maybe_compile": [
+    "fn"
+  ],
+  "BackendSupport": {},
+  "_fallback_threshold": [],
+  "_vectorizable_layout_ok": [
+    "t"
+  ],
+  "_is_dense_permutation": [
+    "t"
+  ],
+  "_layout_ok": [
+    "t",
+    "require_dense"
+  ],
+  "_should_use_tf32": [
+    "q"
+  ],
+  "_triangle_attention_torch": [
+    "query",
+    "key",
+    "value",
+    "bias",
+    "mask",
+    "scale",
+    "out",
+    "return_aux",
+    "actual_s_kv"
+  ],
+  "_can_run_sm100f_impl": [
+    "q",
+    "k",
+    "training",
+    "mask",
+    "actual_s_kv"
+  ],
+  "_can_run_sm100f": [
+    "q",
+    "k",
+    "mask",
+    "actual_s_kv"
+  ],
+  "_can_run_sm100f_bwd": [
+    "q",
+    "k",
+    "mask",
+    "actual_s_kv"
+  ],
+  "_can_run_sm120f": [
+    "q",
+    "k"
+  ],
+  "_select_forward_backend": [
+    "q",
+    "k",
+    "mask",
+    "actual_s_kv"
+  ],
+  "_select_backward_backend": [
+    "q",
+    "k",
+    "mask",
+    "actual_s_kv"
+  ],
+  "_can_run_sm120f_bwd": [
+    "q",
+    "k",
+    "mask",
+    "actual_s_kv"
+  ],
+  "_diagnose_triangle_attention_fallback": [
+    "dtype",
+    "device_cc",
+    "hidden_dim",
+    "s_kv",
+    "has_mask",
+    "has_kv_lengths",
+    "support",
+    "training"
+  ],
+  "_warn_triangle_attention_fallback": [
+    "reason",
+    "remedy"
+  ],
+  "_maybe_warn_dense_mask_offpath": [
+    "mask",
+    "actual_s_kv",
+    "device_cc",
+    "dtype",
+    "hidden_dim",
+    "s_kv",
+    "can_sm100f",
+    "training"
+  ],
+  "_convert_bias": [
+    "bias",
+    "q",
+    "use_direct_path",
+    "direct_path_name"
+  ],
+  "mask_to_kv_lengths": [
+    "mask"
+  ],
+  "_validate_kv_lengths": [
+    "kv_lengths",
+    "B",
+    "N",
+    "S_kv",
+    "device"
+  ],
+  "_prefix_mask_from_actual_s_kv": [
+    "actual_s_kv",
+    "S_kv"
+  ],
+  "_actual_s_kv_for_sm100f": [
+    "actual_s_kv",
+    "s_kv"
+  ],
+  "_prepare_forward_mask_and_lengths": [
+    "mask",
+    "actual_s_kv",
+    "s_kv",
+    "run_sm100f",
+    "run_sm120f",
+    "run_generic"
+  ],
+  "_zero_invalid_rows": [
+    "t",
+    "actual_s_kv",
+    "B",
+    "N"
+  ],
+  "ensure_dims": [
+    "ten",
+    "n"
+  ],
+  "triangle_attention": [
+    "q",
+    "k",
+    "v",
+    "bias",
+    "mask",
+    "scale",
+    "return_aux",
+    "kv_lengths"
+  ],
+  "_PARAMETER_NAMES": [],
+  "a5_projection_available": [
+    "device"
+  ],
+  "_dual_projection": [
+    "x",
+    "a_p_weight",
+    "a_p_bias",
+    "a_g_weight",
+    "a_g_bias",
+    "b_p_weight",
+    "b_p_bias",
+    "b_g_weight",
+    "b_g_bias",
+    "mask",
+    "transposed_half_is_b"
+  ],
+  "_dual_projection_fake": [
+    "x",
+    "a_p_weight",
+    "a_p_bias",
+    "a_g_weight",
+    "a_g_bias",
+    "b_p_weight",
+    "b_p_bias",
+    "b_g_weight",
+    "b_g_bias",
+    "mask",
+    "transposed_half_is_b"
+  ],
+  "_projection_side_vjp": [
+    "x",
+    "projection_weight",
+    "gate_weight",
+    "gate_bias",
+    "mask",
+    "projected",
+    "grad_projected"
+  ],
+  "trimul_cutedsl_projection_training_split_parameters_no_logits": [
+    "x",
+    "a_p_weight",
+    "a_p_bias",
+    "a_g_weight",
+    "a_g_bias",
+    "b_p_weight",
+    "b_p_bias",
+    "b_g_weight",
+    "b_g_bias",
+    "mask",
+    "transposed_half_is_b"
+  ],
+  "warmup": [],
+  "_ROWS_MULTIPLE": [],
+  "_ROWS_FLOOR": [],
+  "_MEASURED_BATCH_MIN": [],
+  "_MEASURED_SEQUENCE_MIN": [],
+  "_CHANNELS_MIN": [],
+  "_CHANNELS_MAX": [],
+  "_TARGET_CAPABILITY": [],
+  "width_supported": [
+    "channels",
+    "hidden"
+  ],
+  "sm120_device_compatible": [
+    "device"
+  ],
+  "kernel_available": [],
+  "trimul_sm120_inference_projection": [
+    "x",
+    "gate_weight",
+    "value_weight",
+    "gate_bias",
+    "value_bias",
+    "mask"
+  ],
+  "_MEASURED_CHANNELS": [],
+  "_ROWS_LIMIT": [],
+  "_image_available": [
+    "sm"
+  ],
+  "capability_owned": [
+    "capability"
+  ],
+  "_launcher_complete": [
+    "launcher"
+  ],
+  "extension_available_uncached": [],
+  "trimul_sm100_inference_projection": [
+    "x",
+    "gate_weight",
+    "value_weight",
+    "gate_bias",
+    "value_bias",
+    "mask"
+  ],
+  "_BREAKEVEN_TILES_SINGLE": [],
+  "_BREAKEVEN_TILES_BATCHED": [],
+  "_sm_count": [
+    "device_index"
+  ],
+  "row_floor": [
+    "batch",
+    "device_index"
+  ],
+  "padded_rows": [
+    "rows"
+  ],
+  "trimul_kf_inference_projection": [
+    "x",
+    "gate_weight",
+    "value_weight",
+    "gate_bias",
+    "value_bias",
+    "mask"
+  ],
+  "_fold_pair_projection_grad": [
+    "grad_out_mask",
+    "grad_out_z_proj",
+    "z",
+    "shape",
+    "multiplicity"
+  ],
+  "_pair_repr_to_attention_bias_general_backward": [
+    "grad_out_mask",
+    "grad_out_z_proj",
+    "z_norm",
+    "mean",
+    "rstd",
+    "z",
+    "w_proj_z",
+    "b_proj_z",
+    "w_ln",
+    "b_ln",
+    "num_heads",
+    "multiplicity",
+    "is_cached_z_proj",
+    "softmax_shift_invariant"
+  ],
+  "_pair_repr_to_attention_bias_triton_backward_recompute": [
+    "grad_projection",
+    "z",
+    "w_proj_z",
+    "w_ln",
+    "b_ln",
+    "num_heads",
+    "eps",
+    "has_proj_bias"
+  ],
+  "_pair_repr_to_attention_bias_triton_backward_recompute_fake": [
+    "grad_projection",
+    "z",
+    "w_proj_z",
+    "w_ln",
+    "b_ln",
+    "num_heads",
+    "eps",
+    "has_proj_bias"
+  ],
+  "_pair_repr_to_attention_bias_recompute_backward": [
+    "grad_out_mask",
+    "grad_out_z_proj",
+    "z",
+    "w_proj_z",
+    "b_proj_z",
+    "w_ln",
+    "b_ln",
+    "num_heads",
+    "multiplicity",
+    "eps",
+    "compute_capability",
+    "softmax_shift_invariant"
+  ],
+  "_pair_repr_to_attention_bias_layer_norm_projection_backward_fused_op": [
+    "grad_2d",
+    "z_2d",
+    "mean",
+    "rstd",
+    "w_ln",
+    "b_ln",
+    "w_proj_z",
+    "has_projection_bias"
+  ],
+  "_pair_repr_to_attention_bias_layer_norm_projection_backward_fused_fake": [
+    "grad_2d",
+    "z_2d",
+    "mean",
+    "rstd",
+    "w_ln",
+    "b_ln",
+    "w_proj_z",
+    "has_projection_bias"
+  ],
+  "_pair_repr_to_attention_bias_fused_layer_norm_projection_backward": [
+    "grad_out_mask",
+    "z",
+    "w_proj_z",
+    "b_proj_z",
+    "w_ln",
+    "b_ln",
+    "mean",
+    "rstd",
+    "num_heads",
+    "multiplicity",
+    "softmax_shift_invariant"
+  ],
+  "_DeprecatedClass": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "TensorProductUniform1d": {
+    "_migration_message": []
+  },
+  "TensorProductUniform4x1d": {
+    "_migration_message": []
+  },
+  "TensorProductUniform3x1dIndexed": {
+    "_migration_message": []
+  },
+  "TensorProductUniform4x1dIndexed": {
+    "_migration_message": []
+  },
+  "SymmetricTensorContraction": {
+    "_migration_message": []
+  },
+  "_MIN_ROWS": [],
+  "_tail_config": [],
+  "trimul_cutedsl_x0x1_output_tail": [
+    "x0",
+    "x1",
+    "gate_weight",
+    "update_weight",
+    "gate_bias",
+    "update_bias"
+  ],
+  "NS": [],
+  "torch_ops": [],
+  "__version__": [],
+  "__git_commit__": [],
+  "_tri_mul_mxfp8_einsum_cutlass": [
+    "payload",
+    "scale",
+    "direction"
+  ],
+  "_register_native_cutlass_fake": [],
+  "_has_cutlass_binding": [],
+  "_is_sm100_family_device": [
+    "device"
+  ],
+  "_cutlass_swizzled_scale_stride": [
+    "batch",
+    "seq"
+  ],
+  "triangle_mxfp8_cutlass_supported": [
+    "seq",
+    "direction",
+    "device"
+  ],
+  "triangle_mxfp8_select_backend": [
+    "seq",
+    "direction",
+    "backend",
+    "device"
+  ],
+  "triangle_mxfp8_einsum": [
+    "payload",
+    "scale"
+  ],
+  "triangle_mxfp8_einsum_cutlass": [
+    "payload",
+    "scale"
+  ],
+  "_get_workspace": [
+    "counts",
+    "device"
+  ],
+  "indexed_linear_B": [
+    "ptr_A",
+    "ptr_B",
+    "counts",
+    "transpose_B",
+    "Z",
+    "C",
+    "u",
+    "v",
+    "coefficient",
+    "workspace"
+  ],
+  "indexed_linear_C": [
+    "ptr_A",
+    "ptr_B",
+    "counts",
+    "Z",
+    "C",
+    "u",
+    "v",
+    "coefficient",
+    "workspace"
+  ],
+  "indexed_linear": [
+    "A",
+    "B",
+    "counts",
+    "u",
+    "v",
+    "C",
+    "Z",
+    "subscripts",
+    "coefficient"
+  ],
+  "_setup_context_base": [
+    "ctx",
+    "inputs",
+    "needs_grad_indices"
+  ],
+  "indexed_linear_B_backward": [
+    "ctx",
+    "grad_output"
+  ],
+  "indexed_linear_B_setup_context": [
+    "ctx",
+    "inputs",
+    "output"
+  ],
+  "indexed_linear_C_backward": [
+    "ctx",
+    "grad_output"
+  ],
+  "indexed_linear_C_setup_context": [
+    "ctx",
+    "inputs",
+    "output"
+  ],
+  "_apb_is_exporting": [],
+  "_warn_apb_native_fallback": [
+    "reason"
+  ],
+  "_activation_dtypes_are_heterogeneous": [
+    "single_repr",
+    "pair_repr"
+  ],
+  "_validate_attention_pair_bias_domain": [
+    "single_repr",
+    "pair_repr",
+    "w_proj_z",
+    "is_cached_z_proj"
+  ],
+  "_compiled_bf16_dtype_contract": [
+    "single_repr",
+    "pair_repr",
+    "parameters"
+  ],
+  "pair_update_finalize_masked_attention_bias": [
+    "pair_repr",
+    "transition",
+    "mask",
+    "w_ln_z",
+    "w_proj_z",
+    "b_proj_z",
+    "eps",
+    "inf"
+  ],
+  "pair_update_finalize_masked_attention_bias_from_modules": [
+    "pair_repr",
+    "transition",
+    "mask"
+  ],
+  "_APB_NORM_KINDS": [],
+  "_RMS_NORM_NATIVE_REASON": [],
+  "_apb_cuda_device": [
+    "device"
+  ],
+  "attention_pair_bias_shape_is_supported": [
+    "batch",
+    "sequence",
+    "single_dim",
+    "pair_dim",
+    "num_heads",
+    "head_dim",
+    "device"
+  ],
+  "attention_pair_bias_mask_from_normalized": [
+    "normalized",
+    "weight",
+    "bias",
+    "pair_mask",
+    "mask_value"
+  ],
+  "_qkv_projection": [
+    "w_proj_q",
+    "b_proj_q",
+    "w_proj_k",
+    "b_proj_k",
+    "w_proj_v",
+    "b_proj_v",
+    "w_proj_qkv",
+    "b_proj_qkv"
+  ],
+  "_module_affine": [
+    "parameter",
+    "normalized_shape",
+    "like",
+    "fill"
+  ],
+  "_norm_module_parameters": [
+    "module",
+    "role"
+  ],
+  "attention_pair_bias_from_modules": [
+    "single_repr",
+    "pair_repr",
+    "mask"
+  ],
+  "attention_pair_bias": [
+    "single_repr",
+    "pair_repr",
+    "mask",
+    "num_heads",
+    "w_ln_a",
+    "b_ln_a",
+    "w_proj_q",
+    "b_proj_q",
+    "w_proj_k",
+    "w_proj_v",
+    "w_proj_g",
+    "w_proj_o",
+    "w_proj_z",
+    "b_proj_o",
+    "b_proj_z",
+    "w_ln_z",
+    "b_ln_z",
+    "inf",
+    "eps",
+    "attn_scale",
+    "return_z_proj",
+    "is_cached_z_proj"
+  ],
+  "attention_pair_bias_masked_cache": [
+    "single_repr",
+    "pair_repr",
+    "mask",
+    "num_heads",
+    "w_ln_a",
+    "b_ln_a",
+    "w_proj_q",
+    "b_proj_q",
+    "w_proj_k",
+    "w_proj_v",
+    "w_proj_g",
+    "w_proj_o",
+    "w_proj_z",
+    "b_proj_o",
+    "b_proj_z",
+    "w_ln_z",
+    "b_ln_z",
+    "inf",
+    "eps",
+    "attn_scale",
+    "return_z_proj",
+    "is_cached_z_proj"
+  ],
+  "_attention_pair_bias_masked_cache": [],
+  "register_plugins": [],
+  "trt_to_torch_dtype_dict": [],
+  "torch_to_trt_dtype_dict": [],
+  "_to_meta_one": [
+    "desc"
+  ],
+  "_from_meta_one": [
+    "m"
+  ],
+  "_to_meta": [],
+  "_from_meta": [],
+  "_to_torch": [],
+  "_segmented_transpose_autotune": [
+    "tensor",
+    "segment_info",
+    "outputs"
+  ],
+  "_tri_attn": [
+    "q_",
+    "k_",
+    "v_",
+    "b_",
+    "mask_",
+    "actual_s_kv_",
+    "scale",
+    "ret",
+    "lse",
+    "lse_max",
+    "stream"
+  ],
+  "_pair_repr_to_attention_bias_triton_register": [
+    "z",
+    "w_proj_z",
+    "b_proj_z",
+    "w_ln",
+    "b_ln",
+    "mask",
+    "num_heads",
+    "multiplicity",
+    "eps",
+    "inf",
+    "grad_enabled",
+    "return_z_proj",
+    "is_cached_z_proj",
+    "valid_optional_inputs",
+    "use_fused_pair_projection"
+  ],
+  "_pair_repr_to_attention_bias_triton_impl": [
+    "z",
+    "w_proj_z",
+    "b_proj_z",
+    "w_ln",
+    "b_ln",
+    "mask",
+    "num_heads",
+    "multiplicity",
+    "eps",
+    "inf",
+    "grad_enabled",
+    "return_z_proj",
+    "is_cached_z_proj",
+    "valid_optional_inputs",
+    "use_fused_pair_projection",
+    "outputs",
+    "stream"
+  ],
+  "_tri_mul_update_impl": [
+    "stream",
+    "direction",
+    "eps",
+    "precision",
+    "valid_optional_inputs"
+  ],
+  "_fused_tensor_product_autotune": [
+    "in0",
+    "in1",
+    "in2",
+    "tp_path_csr_offsets_fwd",
+    "tp_path_csr_offsets_dgrad_in0",
+    "tp_path_csr_offsets_dgrad_in1",
+    "tp_path_csr_offsets_dgrad_in2",
+    "tp_path_offsets_fwd",
+    "tp_path_offsets_dgrad_in0",
+    "tp_path_offsets_dgrad_in1",
+    "tp_path_offsets_dgrad_in2",
+    "tp_path_cg_values_fwd",
+    "tp_path_cg_values_dgrad_in0",
+    "tp_path_cg_values_dgrad_in1",
+    "tp_path_cg_values_dgrad_in2",
+    "outputs"
+  ],
+  "_SM120_PROJECTION_ALONE_ROWS": [],
+  "SM90_TRAINING_PAIR_WIDTH": [],
+  "SM90_TRAINING_HIDDEN": [],
+  "SM90_TRAINING_SEQUENCE_TILE": [],
+  "SM90_TRAINING_MAX_ROWS": [],
+  "SM90_TRAINING_MIN_ROWS": [],
+  "_LOGGER": [],
+  "_EAGER_REFERENCE_ROWS": [],
+  "_REFERENCE_C_HIDDEN": [],
+  "_REFERENCE_PAIR_WIDTH_MIN": [],
+  "_REFERENCE_PAIR_WIDTH_MAX": [],
+  "TRIMUL_PRECISION_MXFP8": [],
+  "TRIMUL_PRECISION_BFLOAT16": [],
+  "_SM90_PAIR_WIDTH": [],
+  "_SM90_C_HIDDEN": [],
+  "_SM90_ROWS_MAX": [],
+  "_reference_weights": [
+    "norm_in_weight",
+    "norm_in_bias",
+    "p_in_weight",
+    "p_in_bias",
+    "g_in_weight",
+    "g_in_bias",
+    "norm_out_weight",
+    "norm_out_bias",
+    "p_out_weight",
+    "p_out_bias",
+    "g_out_weight",
+    "g_out_bias"
+  ],
+  "_input_projections": [
+    "weights"
+  ],
+  "_contraction_operands": [
+    "x_in",
+    "projections",
+    "mask"
+  ],
+  "_reference_update": [
+    "x_in",
+    "projections",
+    "mask",
+    "direction"
+  ],
+  "_tri_mul_torch": [
+    "x",
+    "direction",
+    "mask",
+    "eps"
+  ],
+  "_parse_precision": [
+    "precision_input",
+    "p_in_weight",
+    "g_in_weight"
+  ],
+  "_cuda_device": [
+    "device"
+  ],
+  "_sm90_device_index": [
+    "device"
+  ],
+  "_training_device": [
+    "device"
+  ],
+  "_training_cell_ready": [
+    "device_index",
+    "batch",
+    "sequence",
+    "pair_width",
+    "c_hidden"
+  ],
+  "_inference_a5_projection_prepared": [
+    "device_index",
+    "batch",
+    "sequence",
+    "pair_width",
+    "c_hidden"
+  ],
+  "_sm90_inference_shape_owner": [
+    "batch",
+    "sequence",
+    "pair_width",
+    "c_hidden",
+    "device"
+  ],
+  "_sm90_bf16_autocast": [],
+  "_bf16_call": [
+    "x",
+    "c_hidden",
+    "precision"
+  ],
+  "_no_owner_path": [
+    "x",
+    "c_hidden",
+    "precision"
+  ],
+  "_sm90_inference_dtypes": [],
+  "_sm90_inference_pair": [
+    "x",
+    "precision"
+  ],
+  "_sm90_inference_call": [
+    "x",
+    "mask",
+    "precision"
+  ],
+  "_sm90_inference_owner": [
+    "x",
+    "mask",
+    "precision",
+    "norm_in_weight",
+    "norm_in_bias",
+    "p_in_weight",
+    "p_in_bias",
+    "g_in_weight",
+    "g_in_bias",
+    "norm_out_weight",
+    "norm_out_bias",
+    "p_out_weight",
+    "p_out_bias",
+    "g_out_weight",
+    "g_out_bias"
+  ],
+  "_sm90_parameters_supported": [
+    "pair_width",
+    "c_hidden",
+    "device",
+    "norm_in_weight",
+    "norm_in_bias",
+    "p_in_weight",
+    "p_in_bias",
+    "g_in_weight",
+    "g_in_bias",
+    "norm_out_weight",
+    "norm_out_bias",
+    "p_out_weight",
+    "p_out_bias",
+    "g_out_weight",
+    "g_out_bias"
+  ],
+  "_shape_ints": [],
+  "_QUERY_ERRORS": [],
+  "_PREDICATE_ERRORS": [],
+  "_owner_or_none": [
+    "select"
+  ],
+  "_blackwell_stage_owners": [
+    "capability",
+    "batch",
+    "sequence",
+    "pair_width",
+    "c_hidden"
+  ],
+  "_blackwell_public_inference_shape_owner": [
+    "batch",
+    "sequence",
+    "pair_width",
+    "c_hidden",
+    "device",
+    "direction",
+    "precision",
+    "both_owners"
+  ],
+  "_blackwell_public_inference_owner": [
+    "x",
+    "direction",
+    "mask"
+  ],
+  "triangle_multiplicative_update_inference_shape_is_supported": [
+    "batch",
+    "sequence",
+    "pair_width",
+    "c_hidden",
+    "device",
+    "direction",
+    "precision"
+  ],
+  "triangle_multiplicative_update_is_supported": [
+    "x",
+    "direction",
+    "mask"
+  ],
+  "triangle_multiplicative_update_training_shape_is_supported": [
+    "batch",
+    "sequence",
+    "pair_width",
+    "c_hidden",
+    "device"
+  ],
+  "_sm90_dual_projection_cell_supported": [
+    "batch",
+    "sequence",
+    "pair_width",
+    "c_hidden",
+    "device"
+  ],
+  "prepare_triangle_multiplicative_update_inference_projection": [
+    "batch",
+    "sequence",
+    "pair_width",
+    "c_hidden",
+    "device"
+  ],
+  "_prepare_training_cell": [
+    "device_index",
+    "batch",
+    "sequence",
+    "pair_width",
+    "c_hidden"
+  ],
+  "prepare_triangle_multiplicative_update_training": [
+    "batch",
+    "sequence",
+    "pair_width",
+    "c_hidden",
+    "device"
+  ],
+  "_declined_route": [
+    "rows"
+  ],
+  "triangle_multiplicative_update_inference_route": [
+    "batch",
+    "sequence",
+    "pair_width",
+    "c_hidden",
+    "device",
+    "direction",
+    "precision"
+  ],
+  "_maybe_to_dtype": [
+    "arg",
+    "dtype"
+  ],
+  "_is_training_context": [],
+  "_split_feature_major_contraction": [
+    "a",
+    "b",
+    "direction"
+  ],
+  "_padded_feature_major_contraction": [
+    "a",
+    "b",
+    "batch",
+    "sequence",
+    "direction"
+  ],
+  "_eager_layer_norm_rows": [
+    "x",
+    "weight",
+    "bias",
+    "eps",
+    "layout",
+    "rows",
+    "padded"
+  ],
+  "_tri_mul_sm90_cutedsl_kf_inference": [
+    "x",
+    "mask",
+    "norm_in_weight",
+    "norm_in_bias",
+    "p_in_weight",
+    "p_in_bias",
+    "g_in_weight",
+    "g_in_bias",
+    "norm_out_weight",
+    "norm_out_bias",
+    "p_out_weight",
+    "p_out_bias",
+    "g_out_weight",
+    "g_out_bias",
+    "direction",
+    "eps",
+    "owner"
+  ],
+  "_blackwell_inference_contract": [
+    "x",
+    "mask",
+    "norm_in_weight",
+    "norm_in_bias",
+    "p_in_weight",
+    "p_in_bias",
+    "g_in_weight",
+    "g_in_bias",
+    "norm_out_weight",
+    "norm_out_bias",
+    "p_out_weight",
+    "p_out_bias",
+    "g_out_weight",
+    "g_out_bias",
+    "precision"
+  ],
+  "_use_blackwell_inference_route": [
+    "x",
+    "mask",
+    "norm_in_weight",
+    "norm_in_bias",
+    "p_in_weight",
+    "p_in_bias",
+    "g_in_weight",
+    "g_in_bias",
+    "norm_out_weight",
+    "norm_out_bias",
+    "p_out_weight",
+    "p_out_bias",
+    "g_out_weight",
+    "g_out_bias",
+    "precision"
+  ],
+  "_tri_mul_blackwell_inference": [
+    "x",
+    "mask",
+    "norm_in_weight",
+    "norm_in_bias",
+    "p_in_weight",
+    "p_in_bias",
+    "g_in_weight",
+    "g_in_bias",
+    "norm_out_weight",
+    "norm_out_bias",
+    "p_out_weight",
+    "p_out_bias",
+    "g_out_weight",
+    "g_out_bias",
+    "direction",
+    "eps"
+  ],
+  "_prod": [
+    "nums"
+  ],
+  "_calculate_fan": [
+    "linear_weight_shape",
+    "fan"
+  ],
+  "trunc_normal_init_": [
+    "weights",
+    "scale",
+    "fan"
+  ],
+  "lecun_normal_init_": [
+    "weights"
+  ],
+  "bias_init_zero_": [
+    "bias"
+  ],
+  "bias_init_one_": [
+    "bias"
+  ],
+  "_tri_mul_update_dispatch": [
+    "x",
+    "mask",
+    "norm_in_weight",
+    "norm_in_bias",
+    "p_in_weight",
+    "p_in_bias",
+    "g_in_weight",
+    "g_in_bias",
+    "norm_out_weight",
+    "norm_out_bias",
+    "p_out_weight",
+    "p_out_bias",
+    "g_out_weight",
+    "g_out_bias",
+    "direction",
+    "eps",
+    "precision"
+  ],
+  "_tri_mul_mxfp8_cutlass_eager_impl": [
+    "x",
+    "mask",
+    "g_in_weight",
+    "p_in_weight",
+    "g_in_bias",
+    "p_in_bias",
+    "direction"
+  ],
+  "_owner_call_boundary": [
+    "x",
+    "mask",
+    "precision"
+  ],
+  "_owner_mask_spelling": [
+    "x",
+    "mask",
+    "precision"
+  ],
+  "_owner_mask_admitted": [
+    "x",
+    "mask"
+  ],
+  "_owner_call_spelling": [
+    "x",
+    "mask",
+    "precision",
+    "p_in_weight",
+    "p_in_bias",
+    "g_in_weight",
+    "g_in_bias",
+    "p_out_weight",
+    "p_out_bias",
+    "g_out_weight",
+    "g_out_bias"
+  ],
+  "_tri_mul_update": [
+    "x",
+    "mask",
+    "norm_in_weight",
+    "norm_in_bias",
+    "p_in_weight",
+    "p_in_bias",
+    "g_in_weight",
+    "g_in_bias",
+    "norm_out_weight",
+    "norm_out_bias",
+    "p_out_weight",
+    "p_out_bias",
+    "g_out_weight",
+    "g_out_bias",
+    "direction",
+    "eps",
+    "precision"
+  ],
+  "_sm90_training_routed": [
+    "x",
+    "mask",
+    "projection_parameters",
+    "norm_parameters",
+    "output_parameters",
+    "eps"
+  ],
+  "_sm90_training_route": [
+    "x",
+    "direction",
+    "mask",
+    "norm_in_weight",
+    "norm_in_bias",
+    "a_p_weight",
+    "a_p_bias",
+    "a_g_weight",
+    "a_g_bias",
+    "b_p_weight",
+    "b_p_bias",
+    "b_g_weight",
+    "b_g_bias",
+    "norm_out_weight",
+    "norm_out_bias",
+    "p_out_weight",
+    "p_out_bias",
+    "g_out_weight",
+    "g_out_bias",
+    "eps"
+  ],
+  "triangle_multiplicative_update_split_parameters": [
+    "x",
+    "direction",
+    "mask",
+    "norm_in_weight",
+    "norm_in_bias",
+    "a_p_weight",
+    "a_p_bias",
+    "a_g_weight",
+    "a_g_bias",
+    "b_p_weight",
+    "b_p_bias",
+    "b_g_weight",
+    "b_g_bias",
+    "norm_out_weight",
+    "norm_out_bias",
+    "p_out_weight",
+    "p_out_bias",
+    "g_out_weight",
+    "g_out_bias",
+    "eps"
+  ],
+  "triangle_multiplicative_update_compiled_training_split_parameters": [
+    "x",
+    "direction",
+    "mask",
+    "norm_in_weight",
+    "norm_in_bias",
+    "a_p_weight",
+    "a_p_bias",
+    "a_g_weight",
+    "a_g_bias",
+    "b_p_weight",
+    "b_p_bias",
+    "b_g_weight",
+    "b_g_bias",
+    "norm_out_weight",
+    "norm_out_bias",
+    "p_out_weight",
+    "p_out_bias",
+    "g_out_weight",
+    "g_out_bias",
+    "eps",
+    "precision"
+  ],
+  "triangle_multiplicative_update": [
+    "x",
+    "direction",
+    "mask",
+    "norm_in_weight",
+    "norm_in_bias",
+    "p_in_weight",
+    "p_in_bias",
+    "g_in_weight",
+    "g_in_bias",
+    "norm_out_weight",
+    "norm_out_bias",
+    "p_out_weight",
+    "p_out_bias",
+    "g_out_weight",
+    "g_out_bias",
+    "eps",
+    "precision"
+  ],
+  "_typing_cleanup": []
+}
