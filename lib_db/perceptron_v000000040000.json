@@ -1,0 +1,2524 @@
+{
+  "ModalityPrompt": {
+    "get": [
+      "self",
+      "media"
+    ]
+  },
+  "CaptionPromptTemplate": {},
+  "QuestionPromptTemplate": {},
+  "OcrPromptTemplate": {},
+  "DetectPromptTemplate": {},
+  "HighLevelPromptProfile": {},
+  "PromptProfileRegistry": {
+    "__init__": [
+      "self"
+    ],
+    "register": [
+      "self",
+      "key",
+      "profile"
+    ],
+    "register_alias": [
+      "self",
+      "alias",
+      "key"
+    ],
+    "register_prefix": [
+      "self",
+      "prefix",
+      "key"
+    ],
+    "resolve": [
+      "self",
+      "model"
+    ]
+  },
+  "PROMPT_REGISTRY": [],
+  "prompt_registry": [],
+  "resolve_prompt_profile": [
+    "model"
+  ],
+  "_ISAAC_PROFILE": [],
+  "__all__": [],
+  "MULTILOOK_PATH": [],
+  "MAX_PROMPTS": [],
+  "MAX_N": [],
+  "MAX_COMPLETIONS": [],
+  "MIN_TIMEOUT": [],
+  "_FEATURE": [],
+  "_COMPLETE_FINISH_REASONS": [],
+  "MultilookUsage": {},
+  "MultilookPromptError": {
+    "from_dict": [
+      "cls",
+      "data"
+    ],
+    "to_dict": [
+      "self"
+    ]
+  },
+  "MultilookCompletion": {
+    "text": [
+      "self"
+    ],
+    "reasoning": [
+      "self"
+    ],
+    "complete": [
+      "self"
+    ],
+    "annotations": [
+      "self"
+    ],
+    "resolve_asset_idx": [
+      "self",
+      "annotation"
+    ],
+    "from_dict": [
+      "cls",
+      "data",
+      "position"
+    ],
+    "to_dict": [
+      "self"
+    ]
+  },
+  "MultilookResult": {
+    "ok": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "data",
+      "position"
+    ],
+    "to_dict": [
+      "self"
+    ]
+  },
+  "MultilookResponse": {
+    "succeeded": [
+      "self"
+    ],
+    "failed": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "data"
+    ],
+    "to_dict": [
+      "self"
+    ]
+  },
+  "_MultilookRequest": {},
+  "_reject_tool_traffic": [
+    "context"
+  ],
+  "_prompt_content": [
+    "item",
+    "index"
+  ],
+  "_prompt_items": [
+    "prompts"
+  ],
+  "_media_count": [
+    "item"
+  ],
+  "_normalize_prompts": [
+    "items"
+  ],
+  "_check_n": [
+    "n",
+    "prompt_count"
+  ],
+  "_check_temperature": [
+    "temperature",
+    "samples"
+  ],
+  "_build_request": [
+    "client"
+  ],
+  "_response_from_payload": [
+    "payload",
+    "headers",
+    "asset_counts"
+  ],
+  "create": [
+    "client"
+  ],
+  "acreate": [
+    "client"
+  ],
+  "console": [],
+  "app": [],
+  "_IMAGE_EXTENSIONS": [],
+  "_VIDEO_EXTENSIONS": [],
+  "_AUDIO_EXTENSIONS": [],
+  "_OUTPUT_FILENAMES": [],
+  "OutputFormat": {
+    "TEXT": [],
+    "JSON": []
+  },
+  "ExpectationType": {
+    "TEXT": [],
+    "POINT": [],
+    "BOX": [],
+    "POLYGON": [],
+    "CLIP": [],
+    "THINK": []
+  },
+  "ReasoningEffort": {
+    "NONE": [],
+    "MINIMAL": [],
+    "LOW": [],
+    "MEDIUM": [],
+    "HIGH": []
+  },
+  "_model_option": [],
+  "_provider_option": [],
+  "_reasoning_effort_option": [],
+  "_audio_in_video_option": [],
+  "_generation_kwargs": [],
+  "_is_url": [
+    "media"
+  ],
+  "_is_directory": [
+    "media"
+  ],
+  "_resolve_media": [
+    "media"
+  ],
+  "_has_extension": [
+    "media",
+    "extensions"
+  ],
+  "_looks_like_video": [
+    "media"
+  ],
+  "_looks_like_audio": [
+    "media"
+  ],
+  "_make_media_node": [
+    "media_input",
+    "media_data"
+  ],
+  "_media_node_or_exit": [
+    "media",
+    "output_format"
+  ],
+  "_iter_image_files": [
+    "directory"
+  ],
+  "_serialize_annotation": [
+    "annotation"
+  ],
+  "_BUCKET_BY_EXPECTS": [],
+  "_serialize_points": [
+    "points"
+  ],
+  "_bucket_for_expects": [
+    "result",
+    "expects"
+  ],
+  "_serialize_parsed": [
+    "parsed"
+  ],
+  "_normalize_usage": [
+    "usage"
+  ],
+  "_add_metadata": [
+    "payload",
+    "result"
+  ],
+  "_result_payload": [
+    "result"
+  ],
+  "_process_directory": [
+    "directory"
+  ],
+  "_caption_payload": [
+    "result"
+  ],
+  "_ocr_payload": [
+    "result"
+  ],
+  "_detect_payload": [
+    "result"
+  ],
+  "_print_errors": [
+    "errors"
+  ],
+  "_error_fields": [
+    "source"
+  ],
+  "_exit_with_error": [
+    "exc",
+    "output_format"
+  ],
+  "_call": [
+    "output_format",
+    "helper"
+  ],
+  "_seconds": [
+    "value"
+  ],
+  "_describe_point": [
+    "point"
+  ],
+  "_build_points_table": [
+    "points"
+  ],
+  "_dedupe_errors": [
+    "errors"
+  ],
+  "_coerce_result_dict": [
+    "result"
+  ],
+  "_coerce_int": [
+    "value"
+  ],
+  "_resolve_usage_tokens": [
+    "usage"
+  ],
+  "_prompt_token_details": [
+    "usage"
+  ],
+  "_status_line": [
+    "result"
+  ],
+  "_stream_render": [
+    "events"
+  ],
+  "_render_result": [
+    "result"
+  ],
+  "config": [
+    "provider",
+    "api_key",
+    "base_url",
+    "model"
+  ],
+  "caption": [
+    "media",
+    "style",
+    "stream",
+    "show_raw",
+    "audio_in_video",
+    "reasoning_effort",
+    "output_format",
+    "expects",
+    "model",
+    "provider"
+  ],
+  "ocr": [
+    "image",
+    "prompt",
+    "show_raw",
+    "output_format",
+    "reasoning_effort",
+    "model",
+    "provider"
+  ],
+  "detect": [
+    "media",
+    "classes",
+    "show_raw",
+    "output_format",
+    "stream",
+    "audio_in_video",
+    "reasoning_effort",
+    "model",
+    "provider"
+  ],
+  "question": [
+    "media",
+    "prompt",
+    "expects",
+    "stream",
+    "show_raw",
+    "audio_in_video",
+    "reasoning_effort",
+    "output_format",
+    "model",
+    "provider"
+  ],
+  "main": [],
+  "COCO_BBOX_MIN_VALUES": [],
+  "_PERCEIVE_OPTIONS": [],
+  "_check_gen_kwargs": [
+    "helper",
+    "gen_kwargs"
+  ],
+  "_NormalizedExample": {},
+  "CocoDetectResult": {},
+  "_prompt_profile_from_kwargs": [
+    "gen_kwargs"
+  ],
+  "_normalize_examples": [
+    "examples",
+    "class_order"
+  ],
+  "_run_perceive_sequence": [],
+  "_caption_sequence": [
+    "media_node",
+    "style",
+    "template"
+  ],
+  "default_caption_expects": [
+    "media_obj"
+  ],
+  "_question_sequence": [
+    "media_node",
+    "question_text",
+    "expects",
+    "template"
+  ],
+  "_ocr_sequence": [
+    "image_node_obj",
+    "prompt",
+    "template"
+  ],
+  "_run_ocr": [
+    "image_node_obj"
+  ],
+  "ocr_markdown": [
+    "image_obj"
+  ],
+  "ocr_html": [
+    "image_obj"
+  ],
+  "_detect_system_message": [
+    "classes",
+    "template",
+    "media"
+  ],
+  "_detect_sequence": [
+    "media_node"
+  ],
+  "_load_coco_annotations": [
+    "dataset_dir"
+  ],
+  "_candidate_image_roots": [
+    "dataset_dir",
+    "split"
+  ],
+  "_resolve_coco_image_path": [
+    "dataset_dir",
+    "file_name"
+  ],
+  "_sorted_categories": [
+    "categories"
+  ],
+  "_build_coco_examples": [
+    "dataset_path",
+    "payload"
+  ],
+  "detect_from_coco": [
+    "dataset_dir"
+  ],
+  "AnnotationSpec": [],
+  "_CHILD_KEYS": [],
+  "_first_present": [
+    "spec"
+  ],
+  "_mention": [
+    "spec"
+  ],
+  "_asset_idx": [
+    "spec"
+  ],
+  "_coerce_bbox": [
+    "spec"
+  ],
+  "_coerce_point": [
+    "spec"
+  ],
+  "_coerce_polygon": [
+    "spec"
+  ],
+  "_coerce_clip": [
+    "spec"
+  ],
+  "_coerce_track": [
+    "spec"
+  ],
+  "_build_collection": [
+    "spec"
+  ],
+  "coerce_annotation": [
+    "spec"
+  ],
+  "_point_sort_key": [
+    "obj",
+    "asset_idx",
+    "t"
+  ],
+  "_canonicalize_track": [
+    "track"
+  ],
+  "_canonicalize_collection": [
+    "coll"
+  ],
+  "_ranked": [
+    "mention_order"
+  ],
+  "serialize_annotations": [
+    "boxes",
+    "polygons",
+    "points",
+    "collections",
+    "mention_order"
+  ],
+  "annotate_image": [
+    "image_obj",
+    "annotations"
+  ],
+  "canonicalize_text_collections": [
+    "text"
+  ],
+  "FILE_ID_PATTERN": [],
+  "_DATA_URL_PATTERN": [],
+  "MEDIA_PART_TYPES": [],
+  "_MISSING_FORMAT": [],
+  "_TOOL_RESULT_ENTRY_TYPES": [],
+  "validate_file_id": [
+    "file_id"
+  ],
+  "validate_data_url": [
+    "url",
+    "family"
+  ],
+  "_is_url_payload": [
+    "item"
+  ],
+  "_media_part": [
+    "kind",
+    "entry"
+  ],
+  "_video_frames_part": [
+    "entry"
+  ],
+  "entry_to_part": [
+    "entry"
+  ],
+  "_assistant_turn_message": [
+    "entry"
+  ],
+  "_tool_result_message": [
+    "entry"
+  ],
+  "task_to_messages": [
+    "task"
+  ],
+  "count_assets": [
+    "messages"
+  ],
+  "_bool_or_none": [
+    "value"
+  ],
+  "_str_list": [
+    "value"
+  ],
+  "_model_fields": [
+    "data"
+  ],
+  "Model": {
+    "from_dict": [
+      "cls",
+      "data"
+    ],
+    "to_dict": [
+      "self"
+    ]
+  },
+  "ModelReasoning": {
+    "from_dict": [
+      "cls",
+      "data"
+    ],
+    "to_dict": [
+      "self"
+    ]
+  },
+  "ModelInfo": {
+    "supports": [
+      "self",
+      "capability"
+    ],
+    "from_dict": [
+      "cls",
+      "data"
+    ],
+    "to_dict": [
+      "self"
+    ]
+  },
+  "_model_path": [
+    "model_id"
+  ],
+  "_params": [
+    "extended"
+  ],
+  "_parse": [
+    "data",
+    "extended"
+  ],
+  "_parse_list": [
+    "payload",
+    "extended"
+  ],
+  "Models": {
+    "__init__": [
+      "self",
+      "client"
+    ],
+    "list": [
+      "self"
+    ],
+    "retrieve": [
+      "self",
+      "model_id"
+    ]
+  },
+  "AsyncModels": {
+    "__init__": [
+      "self",
+      "client"
+    ],
+    "list": [
+      "self"
+    ],
+    "retrieve": [
+      "self",
+      "model_id"
+    ]
+  },
+  "Settings": {
+    "_api_key_env": []
+  },
+  "_global_settings": [],
+  "_defaults": [],
+  "_default_provider": [],
+  "_from_env": [
+    "s",
+    "explicit"
+  ],
+  "configure": [],
+  "settings": [],
+  "_settings_with": [
+    "overrides"
+  ],
+  "PERCEPTRON_PROVIDER": [],
+  "REASONING_EFFORTS": [],
+  "_normalize_reasoning_effort": [
+    "value"
+  ],
+  "_PROVIDER_CONFIG": [],
+  "_RENAMED_MODELS": [],
+  "_SELECT_PERCEPTRON": [],
+  "_select_model": [
+    "provider_cfg",
+    "requested_model"
+  ],
+  "_pop_and_resolve_model": [
+    "provider_cfg",
+    "gen_kwargs"
+  ],
+  "_provider_key": [
+    "provider"
+  ],
+  "_resolve_provider": [
+    "provider"
+  ],
+  "provider_api_key": [
+    "settings",
+    "provider_cfg"
+  ],
+  "missing_api_key_message": [
+    "provider_cfg"
+  ],
+  "surface_provider_cfg": [
+    "client"
+  ],
+  "surface_model": [
+    "provider_cfg",
+    "model",
+    "settings"
+  ],
+  "SDKError": {
+    "__init__": [
+      "self",
+      "message",
+      "code",
+      "details"
+    ]
+  },
+  "TransportError": {},
+  "IncompleteStreamError": {},
+  "TimeoutError": {},
+  "AuthError": {},
+  "PermissionDeniedError": {},
+  "RateLimitError": {
+    "_code": [],
+    "__init__": [
+      "self",
+      "message",
+      "retry_after"
+    ]
+  },
+  "QuotaExceededError": {
+    "_code": [],
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "ServerError": {},
+  "BadRequestError": {},
+  "NotFoundError": {},
+  "ExpectationError": {},
+  "AnchorError": {},
+  "ParseError": {},
+  "REASONING_NOT_SUPPORTED": [],
+  "REASONING_REQUIRED_FOR_MODEL": [],
+  "REASONING_DISABLED_FOR_THINKING_MODEL": [],
+  "INVALID_REASONING_EFFORT": [],
+  "CREDENTIALS_MISSING": [],
+  "MODEL_RENAMED": [],
+  "UNSUPPORTED_PROVIDER_FEATURE": [],
+  "UNSUPPORTED_PARAMETER": [],
+  "INVALID_PARAMETER": [],
+  "INVALID_TEMPERATURE": [],
+  "INVALID_VISION_CONFIG": [],
+  "UNSUPPORTED_TOOL_CHOICE": [],
+  "UNSUPPORTED_TOOL_TYPE": [],
+  "UNSUPPORTED_TOOLS_COMBINATION": [],
+  "CONFLICTING_TOOLS": [],
+  "INVALID_TOOLS": [],
+  "DUPLICATE_TOOL_NAME": [],
+  "RESERVED_TOOL_NAME": [],
+  "CONFLICTING_STRUCTURED_OUTPUT_CONTROLS": [],
+  "UNSUPPORTED_RESPONSE_FORMAT": [],
+  "INVALID_RESPONSE_FORMAT": [],
+  "INVALID_REGEX": [],
+  "INVALID_FILE_ID": [],
+  "INVALID_DATA_URL": [],
+  "INVALID_MEDIA": [],
+  "INVALID_VIDEO_FRAMES": [],
+  "INVALID_MEDIA_PATH": [],
+  "INVALID_TOOL_RESULT": [],
+  "UNSUPPORTED_ENTRY_TYPE": [],
+  "INVALID_TOOL_ARGUMENTS": [],
+  "ANCHOR_MISSING": [],
+  "ANCHOR_UNKNOWN": [],
+  "ANCHOR_AMBIGUOUS": [],
+  "BOUNDS_OUT_OF_RANGE": [],
+  "INVALID_POLYGON": [],
+  "INSUFFICIENT_QUOTA": [],
+  "INVALID_RESPONSE": [],
+  "INVALID_STREAM_CHUNK": [],
+  "STREAM_TRUNCATED": [],
+  "STREAM_INCOMPLETE": [],
+  "TRACE_ID_HEADER": [],
+  "header_value": [
+    "headers",
+    "name"
+  ],
+  "request_id_of": [
+    "resp"
+  ],
+  "_retry_after": [
+    "headers"
+  ],
+  "_first_nonempty": [],
+  "_extract_error_metadata": [
+    "data"
+  ],
+  "_unwrap_error": [
+    "error"
+  ],
+  "_str_or_none": [
+    "value"
+  ],
+  "http_error_from_response": [
+    "resp"
+  ],
+  "stream_error_from_event": [
+    "error"
+  ],
+  "_sse_payload": [
+    "raw"
+  ],
+  "iter_sse_data": [
+    "lines"
+  ],
+  "aiter_sse_data": [
+    "lines"
+  ],
+  "_stream_truncated": [
+    "exc"
+  ],
+  "_body_cut_off": [
+    "exc"
+  ],
+  "_guarded": [
+    "items",
+    "cut_off"
+  ],
+  "_aguarded": [
+    "items",
+    "cut_off"
+  ],
+  "_LINE_END": [],
+  "_SSELineSplitter": {
+    "__init__": [
+      "self"
+    ],
+    "feed": [
+      "self",
+      "chunk"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "_split_lines": [
+    "chunks"
+  ],
+  "_asplit_lines": [
+    "chunks"
+  ],
+  "iter_response_lines": [
+    "resp"
+  ],
+  "aiter_response_lines": [
+    "resp"
+  ],
+  "iter_response_bytes": [
+    "resp",
+    "chunk_size"
+  ],
+  "aiter_response_bytes": [
+    "resp",
+    "chunk_size"
+  ],
+  "_API_KEY_CHARS": [],
+  "auth_headers": [
+    "settings",
+    "provider_cfg"
+  ],
+  "_send_failed": [
+    "exc"
+  ],
+  "resource_path": [
+    "collection",
+    "resource_id",
+    "param",
+    "suffix"
+  ],
+  "_prepare": [
+    "client",
+    "path"
+  ],
+  "_send_kwargs": [],
+  "_json_payload": [
+    "resp"
+  ],
+  "request": [
+    "client",
+    "method",
+    "path"
+  ],
+  "request_json": [
+    "client",
+    "method",
+    "path"
+  ],
+  "open_stream": [
+    "client",
+    "method",
+    "path"
+  ],
+  "stream_request": [
+    "client",
+    "method",
+    "path"
+  ],
+  "arequest": [
+    "client",
+    "method",
+    "path"
+  ],
+  "arequest_json": [
+    "client",
+    "method",
+    "path"
+  ],
+  "aopen_stream": [
+    "client",
+    "method",
+    "path"
+  ],
+  "astream_request": [
+    "client",
+    "method",
+    "path"
+  ],
+  "_RETIRED_ARGUMENTS": [],
+  "_unexpected_keyword": [
+    "func",
+    "name"
+  ],
+  "_reject_unexpected_kwargs": [
+    "func",
+    "kwargs"
+  ],
+  "JsonSchemaSpec": {},
+  "JsonSchemaFormat": {},
+  "RegexFormat": {},
+  "ResponseFormat": [],
+  "_PreparedInvocation": {},
+  "_build_response_format": [
+    "response_format"
+  ],
+  "_add_buckets": [
+    "result",
+    "content",
+    "expects",
+    "errors"
+  ],
+  "_result_metadata": [
+    "completion",
+    "usage"
+  ],
+  "_error_event": [
+    "exc"
+  ],
+  "_error_events": [
+    "exc"
+  ],
+  "_aerror_events": [
+    "exc"
+  ],
+  "_StreamProcessor": {
+    "__init__": [
+      "self"
+    ],
+    "done": [
+      "self"
+    ],
+    "feed": [
+      "self",
+      "data"
+    ],
+    "handle_payload": [
+      "self",
+      "obj"
+    ],
+    "_tool_call_events": [
+      "self",
+      "pieces"
+    ],
+    "partial": [
+      "self"
+    ],
+    "error_event": [
+      "self",
+      "exc"
+    ],
+    "terminal_event": [
+      "self"
+    ],
+    "finalize": [
+      "self"
+    ],
+    "_point_events": [
+      "self"
+    ]
+  },
+  "_task_to_openai_messages": [
+    "task"
+  ],
+  "_model_entry": [
+    "model_name",
+    "provider_cfg"
+  ],
+  "_model_capabilities": [
+    "model_name",
+    "provider_cfg"
+  ],
+  "_build_hint_content": [
+    "expects",
+    "include_reasoning"
+  ],
+  "_inject_expectation_hint": [
+    "task",
+    "expects"
+  ],
+  "_apply_reasoning_and_hints": [],
+  "_map_http_error": [],
+  "_http_client": [
+    "timeout"
+  ],
+  "_async_http_client": [
+    "timeout"
+  ],
+  "_ClientCore": {
+    "__init__": [
+      "self"
+    ],
+    "_current_loop": [
+      "self"
+    ],
+    "_session": [
+      "self"
+    ],
+    "_detach_session": [
+      "self"
+    ],
+    "_prepare_invocation": [
+      "self",
+      "task"
+    ],
+    "_build_result": [
+      "self",
+      "data",
+      "expects"
+    ],
+    "_stream_processor": [
+      "self",
+      "invocation",
+      "response"
+    ]
+  },
+  "Client": {
+    "_new_session": [
+      "self",
+      "timeout"
+    ],
+    "close": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self"
+    ],
+    "chat": [
+      "self"
+    ],
+    "files": [
+      "self"
+    ],
+    "models": [
+      "self"
+    ],
+    "generate": [
+      "self",
+      "task"
+    ],
+    "stream": [
+      "self",
+      "task"
+    ],
+    "_stream_events": [
+      "self",
+      "invocation"
+    ]
+  },
+  "AsyncClient": {
+    "_HTTP_CLIENT_TYPE": [],
+    "_new_session": [
+      "self",
+      "timeout"
+    ],
+    "_current_loop": [
+      "self"
+    ],
+    "aclose": [
+      "self"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self"
+    ],
+    "chat": [
+      "self"
+    ],
+    "files": [
+      "self"
+    ],
+    "models": [
+      "self"
+    ],
+    "generate": [
+      "self",
+      "task"
+    ],
+    "stream": [
+      "self",
+      "task"
+    ],
+    "_stream_events": [
+      "self",
+      "invocation"
+    ]
+  },
+  "json_schema_format": [
+    "schema"
+  ],
+  "regex_format": [
+    "pattern"
+  ],
+  "pydantic_format": [
+    "model"
+  ],
+  "FILE_PURPOSES": [],
+  "SORT_ORDERS": [],
+  "MAX_UPLOAD_BYTES": [],
+  "MAX_LIST_LIMIT": [],
+  "_GENERIC_MIME": [],
+  "File": {
+    "from_dict": [
+      "cls",
+      "data"
+    ],
+    "to_dict": [
+      "self"
+    ]
+  },
+  "FileList": {
+    "__iter__": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "data"
+    ],
+    "to_dict": [
+      "self"
+    ]
+  },
+  "FileDeleted": {
+    "from_dict": [
+      "cls",
+      "data"
+    ],
+    "to_dict": [
+      "self"
+    ]
+  },
+  "_PREFIX_TYPES": [],
+  "_RIFF_TYPES": [],
+  "_EBML_MAGIC": [],
+  "_MATROSKA_HEADER": [],
+  "_MATROSKA_DOCTYPE_OFFSET": [],
+  "_MP4_BRANDS": [],
+  "_QUICKTIME_BRAND": [],
+  "_AVIF_BRANDS": [],
+  "_ICO_SIZED_BOX": [],
+  "_MAX_FTYP_BOX": [],
+  "_FTYP_HEADER_BYTES": [],
+  "_MP3_FRAME_RULES": [],
+  "_MP3_HEADER_BYTES": [],
+  "_iso_bmff_type": [
+    "data"
+  ],
+  "_is_mp3_frame": [
+    "data"
+  ],
+  "_sniff_mime_type": [
+    "data"
+  ],
+  "_check_purpose": [
+    "purpose"
+  ],
+  "_too_large": [],
+  "_read_upload": [
+    "file"
+  ],
+  "_upload_fields": [
+    "file"
+  ],
+  "_list_params": [
+    "purpose",
+    "limit",
+    "order",
+    "after"
+  ],
+  "_next_cursor": [
+    "page"
+  ],
+  "_file_path": [
+    "file_id",
+    "suffix"
+  ],
+  "_download_target": [
+    "path"
+  ],
+  "_replace_when_done": [
+    "target"
+  ],
+  "Files": {
+    "__init__": [
+      "self",
+      "client"
+    ],
+    "_cfg": [
+      "self"
+    ],
+    "upload": [
+      "self",
+      "file"
+    ],
+    "list": [
+      "self"
+    ],
+    "iter": [
+      "self"
+    ],
+    "_iterate": [
+      "self",
+      "cfg",
+      "params"
+    ],
+    "retrieve": [
+      "self",
+      "file_id"
+    ],
+    "content": [
+      "self",
+      "file_id"
+    ],
+    "download": [
+      "self",
+      "file_id",
+      "path"
+    ],
+    "delete": [
+      "self",
+      "file_id"
+    ]
+  },
+  "AsyncFiles": {
+    "__init__": [
+      "self",
+      "client"
+    ],
+    "_cfg": [
+      "self"
+    ],
+    "upload": [
+      "self",
+      "file"
+    ],
+    "list": [
+      "self"
+    ],
+    "iter": [
+      "self"
+    ],
+    "_iterate": [
+      "self",
+      "cfg",
+      "params"
+    ],
+    "retrieve": [
+      "self",
+      "file_id"
+    ],
+    "content": [
+      "self",
+      "file_id"
+    ],
+    "download": [
+      "self",
+      "file_id",
+      "path"
+    ],
+    "delete": [
+      "self",
+      "file_id"
+    ]
+  },
+  "resolve_structured_expectation": [
+    "expects"
+  ],
+  "__version__": [],
+  "__getattr__": [
+    "name"
+  ],
+  "_int_or_none": [
+    "value"
+  ],
+  "_arguments_string": [
+    "value"
+  ],
+  "FunctionCall": {
+    "from_dict": [
+      "cls",
+      "data"
+    ],
+    "to_dict": [
+      "self"
+    ]
+  },
+  "ToolCall": {
+    "name": [
+      "self"
+    ],
+    "arguments": [
+      "self"
+    ],
+    "parse_arguments": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "data"
+    ],
+    "to_dict": [
+      "self"
+    ]
+  },
+  "Usage": {
+    "audio_tokens": [
+      "self"
+    ],
+    "cached_tokens": [
+      "self"
+    ],
+    "_detail": [
+      "self",
+      "name"
+    ],
+    "from_dict": [
+      "cls",
+      "data"
+    ],
+    "to_dict": [
+      "self"
+    ]
+  },
+  "ChatCompletionMessage": {
+    "from_dict": [
+      "cls",
+      "data"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "annotations": [
+      "self"
+    ]
+  },
+  "_annotations": [
+    "content",
+    "expects",
+    "strict"
+  ],
+  "Choice": {
+    "from_dict": [
+      "cls",
+      "data",
+      "position"
+    ],
+    "to_dict": [
+      "self"
+    ]
+  },
+  "ChatCompletion": {
+    "message": [
+      "self"
+    ],
+    "text": [
+      "self"
+    ],
+    "reasoning": [
+      "self"
+    ],
+    "tool_calls": [
+      "self"
+    ],
+    "finish_reason": [
+      "self"
+    ],
+    "complete": [
+      "self"
+    ],
+    "annotations": [
+      "self"
+    ],
+    "resolve_asset_idx": [
+      "self",
+      "annotation"
+    ],
+    "from_dict": [
+      "cls",
+      "data"
+    ],
+    "to_dict": [
+      "self"
+    ]
+  },
+  "_without_none": [
+    "values"
+  ],
+  "FunctionCallDelta": {
+    "from_dict": [
+      "cls",
+      "data"
+    ],
+    "to_dict": [
+      "self"
+    ]
+  },
+  "ToolCallDelta": {
+    "from_dict": [
+      "cls",
+      "data",
+      "position"
+    ],
+    "to_dict": [
+      "self"
+    ]
+  },
+  "ChoiceDelta": {
+    "from_dict": [
+      "cls",
+      "data"
+    ],
+    "to_dict": [
+      "self"
+    ]
+  },
+  "ChunkChoice": {
+    "from_dict": [
+      "cls",
+      "data",
+      "position"
+    ],
+    "to_dict": [
+      "self"
+    ]
+  },
+  "ChatCompletionChunk": {
+    "from_dict": [
+      "cls",
+      "data"
+    ],
+    "to_dict": [
+      "self"
+    ]
+  },
+  "function_tool": [
+    "name"
+  ],
+  "ChatStreamAccumulator": {
+    "__init__": [
+      "self"
+    ],
+    "feed": [
+      "self",
+      "obj"
+    ],
+    "mark_done": [
+      "self"
+    ],
+    "text": [
+      "self"
+    ],
+    "reasoning": [
+      "self"
+    ],
+    "tool_calls": [
+      "self"
+    ],
+    "snapshot": [
+      "self"
+    ]
+  },
+  "_decode_chunk": [
+    "data"
+  ],
+  "_attach_stream_context": [
+    "exc",
+    "accumulator"
+  ],
+  "_StreamBase": {
+    "__init__": [
+      "self",
+      "response",
+      "closer"
+    ],
+    "_handle_payload": [
+      "self",
+      "data"
+    ],
+    "_finish": [
+      "self"
+    ],
+    "_fail": [
+      "self",
+      "exc"
+    ],
+    "_final": [
+      "self"
+    ]
+  },
+  "ChatCompletionStream": {
+    "__init__": [
+      "self",
+      "response",
+      "closer"
+    ],
+    "_iterate": [
+      "self"
+    ],
+    "_release": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__next__": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "get_final_completion": [
+      "self"
+    ]
+  },
+  "AsyncChatCompletionStream": {
+    "__init__": [
+      "self",
+      "response",
+      "closer"
+    ],
+    "_aiterate": [
+      "self"
+    ],
+    "_release": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__anext__": [
+      "self"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "get_final_completion": [
+      "self"
+    ]
+  },
+  "_close_dropped_async_stream": [
+    "loop",
+    "closer"
+  ],
+  "_schedule_close": [
+    "loop",
+    "closer"
+  ],
+  "_close_done": [
+    "task"
+  ],
+  "_UNSUPPORTED_OPENAI_PARAMS": [],
+  "_ANNOTATION_FORMATS": [],
+  "_VISION_CONFIG_KEYS": [],
+  "_TOOL_NAME_UNSAFE": [],
+  "_RESERVED_TOOL_RECIPIENT": [],
+  "_reject_unknown_kwargs": [
+    "method",
+    "kwargs"
+  ],
+  "_sanitize_tool_name_part": [
+    "value"
+  ],
+  "tool_recipient": [
+    "name"
+  ],
+  "_validate_tools": [
+    "tools"
+  ],
+  "_validate_temperature": [
+    "temperature"
+  ],
+  "_validate_request_body": [
+    "body"
+  ],
+  "_normalize_vision_config": [
+    "vision_config"
+  ],
+  "_generation_params": [
+    "settings"
+  ],
+  "_merge_extra_body": [
+    "body",
+    "extra_body"
+  ],
+  "_message_dict": [
+    "item",
+    "index",
+    "name"
+  ],
+  "_content_ledger": [
+    "messages"
+  ],
+  "_TURN_ENTRY_TYPES": [],
+  "_PACKAGE_DIR": [],
+  "_warn_caller": [
+    "message",
+    "category"
+  ],
+  "_lower_dsl_node": [
+    "node"
+  ],
+  "_lower_content": [
+    "content",
+    "index"
+  ],
+  "_normalize_messages": [
+    "messages"
+  ],
+  "_ChatRequest": {},
+  "_completion_from_payload": [
+    "payload",
+    "headers",
+    "asset_count"
+  ],
+  "ChatCompletions": {
+    "__init__": [
+      "self",
+      "client"
+    ],
+    "create": [
+      "self"
+    ],
+    "multilook": [
+      "self"
+    ]
+  },
+  "AsyncChatCompletions": {
+    "__init__": [
+      "self",
+      "client"
+    ],
+    "create": [
+      "self"
+    ],
+    "multilook": [
+      "self"
+    ]
+  },
+  "Chat": {
+    "__init__": [
+      "self",
+      "client"
+    ]
+  },
+  "AsyncChat": {
+    "__init__": [
+      "self",
+      "client"
+    ]
+  },
+  "BOX_MIN_POINTS": [],
+  "POLYGON_MIN_POINTS": [],
+  "_LEAF_KINDS": [],
+  "_GEOMETRY_EXPECTS": [],
+  "_TAG_TOKEN": [],
+  "_ATTR": [],
+  "_COORD": [],
+  "_ASSET_IDX": [],
+  "_NUMBER": [],
+  "_TIME": [],
+  "_SPATIAL_T": [],
+  "_CLIP_T": [],
+  "_parse_attrs": [
+    "tag_attrs"
+  ],
+  "_text_attr": [
+    "attrs",
+    "key"
+  ],
+  "_asset_idx_attr": [
+    "raw"
+  ],
+  "_parse_time_value": [
+    "raw"
+  ],
+  "_time_attr": [
+    "raw"
+  ],
+  "_parse_clip_t": [
+    "raw"
+  ],
+  "_parse_coords": [
+    "body"
+  ],
+  "_parse_leaf": [
+    "tag",
+    "attrs_text",
+    "body"
+  ],
+  "_parse_clip": [
+    "attrs_text"
+  ],
+  "_authored_seconds": [
+    "value"
+  ],
+  "_authored_asset_idx": [
+    "value"
+  ],
+  "_format_t": [
+    "t"
+  ],
+  "_format_clip_time": [
+    "x"
+  ],
+  "_attr_string": [
+    "mention",
+    "t",
+    "asset_idx"
+  ],
+  "_child_asset_idx": [
+    "value",
+    "inherited"
+  ],
+  "_serialize": [
+    "obj",
+    "inherited_t",
+    "inherited_asset"
+  ],
+  "PointParser_serialize": [
+    "obj"
+  ],
+  "PointParser": {
+    "serialize": [
+      "obj"
+    ],
+    "parse": [
+      "text"
+    ]
+  },
+  "_Token": {},
+  "_tokenize": [
+    "text",
+    "start"
+  ],
+  "_pairs": [
+    "tok",
+    "nxt"
+  ],
+  "_Issue": {
+    "__post_init__": [
+      "self"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "_issue": [
+    "code",
+    "message",
+    "start",
+    "end"
+  ],
+  "_Node": {
+    "kind": [
+      "self"
+    ],
+    "all_issues": [
+      "self"
+    ]
+  },
+  "_element": [
+    "text",
+    "tok",
+    "close"
+  ],
+  "_check_children": [
+    "node"
+  ],
+  "_finish": [
+    "node",
+    "end"
+  ],
+  "_build_tree": [
+    "text",
+    "start"
+  ],
+  "_close": [
+    "stack",
+    "tok"
+  ],
+  "_family": [
+    "expects"
+  ],
+  "_incomplete": [
+    "node"
+  ],
+  "_view": [
+    "roots",
+    "family"
+  ],
+  "_clip_view": [
+    "node",
+    "elements",
+    "issues"
+  ],
+  "_segments": [
+    "text",
+    "elements"
+  ],
+  "parse_text": [
+    "text"
+  ],
+  "AnnotationParse": {},
+  "parse_annotations": [
+    "text"
+  ],
+  "_with": [
+    "obj"
+  ],
+  "_inherit": [
+    "obj"
+  ],
+  "_flatten": [
+    "values"
+  ],
+  "_flatten_into": [
+    "obj",
+    "ctx",
+    "items",
+    "tracks"
+  ],
+  "_kind_of": [
+    "obj"
+  ],
+  "_structured": [
+    "segments"
+  ],
+  "AnnotationCollection": {},
+  "collect_annotations": [
+    "text"
+  ],
+  "extract_points": [
+    "text",
+    "expected"
+  ],
+  "extract_tracks": [
+    "text",
+    "expected"
+  ],
+  "extract_clips": [
+    "text"
+  ],
+  "_closed_container_ends": [
+    "nodes",
+    "ends"
+  ],
+  "strip_tags": [
+    "text"
+  ],
+  "scan_leaves": [
+    "text"
+  ],
+  "_scan_leaves": [
+    "text",
+    "expects",
+    "start"
+  ],
+  "_scan_into": [
+    "nodes",
+    "ctx",
+    "expects",
+    "found"
+  ],
+  "resolve_asset_idx": [
+    "annotation",
+    "n_assets"
+  ],
+  "_context_repr": [
+    "mention",
+    "t",
+    "asset_idx"
+  ],
+  "_context_dict": [
+    "data",
+    "mention",
+    "t",
+    "asset_idx"
+  ],
+  "_point_fields": [
+    "point"
+  ],
+  "_as_list": [
+    "children"
+  ],
+  "_push_asset_idx": [
+    "children",
+    "asset_idx"
+  ],
+  "_lacks_asset_idx": [
+    "child"
+  ],
+  "SinglePoint": {
+    "__repr__": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ]
+  },
+  "BoundingBox": {
+    "__repr__": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ]
+  },
+  "Polygon": {
+    "__repr__": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ]
+  },
+  "Collection": {
+    "__post_init__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ]
+  },
+  "ClipTimestamp": {
+    "__repr__": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ]
+  },
+  "Clip": {
+    "__repr__": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ]
+  },
+  "Track": {
+    "__post_init__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ]
+  },
+  "_ANNOTATION_TYPES": [],
+  "pt": [
+    "x",
+    "y"
+  ],
+  "bbox": [
+    "x1",
+    "y1",
+    "x2",
+    "y2"
+  ],
+  "poly": [
+    "coords"
+  ],
+  "collection": [
+    "points"
+  ],
+  "clip": [
+    "at",
+    "until"
+  ],
+  "_track_asset_idx": [
+    "points",
+    "asset_idx"
+  ],
+  "track": [
+    "points"
+  ],
+  "NORMALIZED_COORD_MAX": [],
+  "Annotation": [],
+  "_require_dimension": [
+    "name",
+    "value"
+  ],
+  "_normalize_dimensions": [
+    "width",
+    "height"
+  ],
+  "_scale_component": [
+    "value",
+    "dimension",
+    "clamp"
+  ],
+  "_scale_point": [
+    "point",
+    "dims",
+    "clamp"
+  ],
+  "_scale_box": [
+    "box",
+    "dims",
+    "clamp"
+  ],
+  "_scale_polygon": [
+    "poly",
+    "dims",
+    "clamp"
+  ],
+  "_scale_collection": [
+    "coll",
+    "dims",
+    "clamp"
+  ],
+  "_scale_annotation": [
+    "annotation",
+    "dims",
+    "clamp"
+  ],
+  "scale_point_to_pixels": [
+    "point"
+  ],
+  "scale_box_to_pixels": [
+    "box"
+  ],
+  "scale_polygon_to_pixels": [
+    "poly"
+  ],
+  "scale_collection_to_pixels": [
+    "coll"
+  ],
+  "scale_points_to_pixels": [
+    "points"
+  ],
+  "_scale_by_asset": [
+    "annotation",
+    "sizes",
+    "asset_idx",
+    "last_asset",
+    "clamp"
+  ],
+  "scale_annotations_by_asset": [
+    "annotations",
+    "sizes"
+  ],
+  "MIN_VIDEO_FRAMES": [],
+  "MAX_VIDEO_FRAMES": [],
+  "DSLNode": {
+    "__add__": [
+      "self",
+      "other"
+    ]
+  },
+  "Text": {},
+  "System": {},
+  "Agent": {},
+  "Image": {},
+  "Video": {},
+  "Audio": {},
+  "VideoFrame": {},
+  "VideoFrames": {
+    "__post_init__": [
+      "self"
+    ]
+  },
+  "_kind": [
+    "value"
+  ],
+  "_frames_error": [
+    "message"
+  ],
+  "Media": [],
+  "ToolResult": {},
+  "PointTag": {},
+  "BoxTag": {},
+  "PolygonTag": {},
+  "Sequence": {
+    "__add__": [
+      "self",
+      "other"
+    ]
+  },
+  "block": [],
+  "text": [
+    "content"
+  ],
+  "system": [
+    "content"
+  ],
+  "agent": [
+    "content"
+  ],
+  "tool_result": [
+    "tool_call_id"
+  ],
+  "_media_source": [
+    "kind",
+    "obj",
+    "file_id"
+  ],
+  "image": [
+    "obj"
+  ],
+  "video": [
+    "obj"
+  ],
+  "audio": [
+    "obj"
+  ],
+  "_frame_image": [
+    "obj"
+  ],
+  "video_frames": [
+    "frames"
+  ],
+  "_check_anchor": [
+    "factory",
+    "image",
+    "asset",
+    "asset_idx"
+  ],
+  "_check_time": [
+    "factory",
+    "t"
+  ],
+  "point": [
+    "x",
+    "y"
+  ],
+  "box": [
+    "x1",
+    "y1",
+    "x2",
+    "y2"
+  ],
+  "polygon": [
+    "coords"
+  ],
+  "_MEDIA_NODES": [],
+  "_TAG_NODES": [],
+  "_POLYGON_MIN_VERTICES": [],
+  "_IMAGE_SIGNATURES": [],
+  "_WEBP_SIGNATURE_LENGTH": [],
+  "_PIL_FORMAT_TO_WIRE": [],
+  "_is_webp": [
+    "data"
+  ],
+  "_looks_like_image": [
+    "data"
+  ],
+  "_validate_image_bytes": [
+    "data"
+  ],
+  "_encode_bytes": [
+    "data"
+  ],
+  "_is_passthrough_url": [
+    "obj"
+  ],
+  "_read_media_file": [
+    "path",
+    "kind"
+  ],
+  "_to_b64_image": [
+    "obj"
+  ],
+  "_detect_video_format": [
+    "data"
+  ],
+  "_to_b64_video": [
+    "obj"
+  ],
+  "_WAV_SIGNATURE_LENGTH": [],
+  "_is_wav": [
+    "data"
+  ],
+  "_is_mp3": [
+    "data"
+  ],
+  "_detect_audio_format": [
+    "data"
+  ],
+  "_to_b64_audio": [
+    "obj"
+  ],
+  "_media_entry": [
+    "node"
+  ],
+  "_frame_entry": [
+    "frame"
+  ],
+  "_video_frames_entry": [
+    "node"
+  ],
+  "_tool_call_dict": [
+    "call"
+  ],
+  "_agent_entry": [
+    "node"
+  ],
+  "_tool_result_entry": [
+    "node"
+  ],
+  "_AssetLedger": {},
+  "_media_items": [
+    "item"
+  ],
+  "_asset_ledger": [
+    "items"
+  ],
+  "_anchor": [
+    "node",
+    "seen",
+    "ledger"
+  ],
+  "_report": [
+    "issues",
+    "issue"
+  ],
+  "_grid_coord": [
+    "value"
+  ],
+  "_grid_point": [
+    "label",
+    "x",
+    "y",
+    "issues"
+  ],
+  "_tag_markup": [
+    "node",
+    "asset_idx",
+    "issues"
+  ],
+  "_compile": [
+    "nodes"
+  ],
+  "PerceiveResult": {
+    "complete": [
+      "self"
+    ],
+    "as_agent": [
+      "self"
+    ],
+    "resolve_asset_idx": [
+      "self",
+      "annotation"
+    ],
+    "points_to_pixels": [
+      "self",
+      "width",
+      "height"
+    ],
+    "boxes_to_pixels": [
+      "self",
+      "width",
+      "height"
+    ],
+    "polygons_to_pixels": [
+      "self",
+      "width",
+      "height"
+    ]
+  },
+  "_client_options": [],
+  "_stream_only_options": [
+    "stream",
+    "stream_options"
+  ],
+  "_prepare_client_kwargs": [],
+  "_require_credentials": [],
+  "_with_issues": [
+    "event",
+    "issues"
+  ],
+  "_stream_with_issues": [
+    "events",
+    "issues",
+    "client"
+  ],
+  "_perceive_result_from_response": [
+    "resp",
+    "issues"
+  ],
+  "_compile_nodes_sync": [
+    "fn"
+  ],
+  "_compile_nodes_async": [
+    "fn"
+  ],
+  "_prepare_execution_context": [],
+  "_expects_structured": [
+    "expects"
+  ],
+  "_expects_reasoning": [
+    "expects"
+  ],
+  "_is_thinking_model": [
+    "model_name"
+  ],
+  "_supports_reasoning": [
+    "model_name",
+    "provider_cfg"
+  ],
+  "_requires_reasoning": [
+    "model_name",
+    "provider_cfg"
+  ],
+  "_prepare_task_with_hints": [
+    "task",
+    "expects",
+    "client_kwargs"
+  ],
+  "_collect_nodes": [
+    "value",
+    "acc"
+  ],
+  "_normalize_direct_nodes": [
+    "values"
+  ],
+  "_execute_sync_task": [],
+  "perceive": [],
+  "async_perceive": [],
+  "inspect_task": [
+    "callable_obj"
+  ],
+  "compute_mrope_pos_tensor": [
+    "ts",
+    "n_pos_dims"
+  ],
+  "event_mask": [
+    "ts",
+    "tag_fn",
+    "default"
+  ],
+  "event_mask_by_key": [
+    "ts",
+    "key",
+    "tag_index",
+    "default"
+  ],
+  "modality_mask": [
+    "ts"
+  ],
+  "ROLE_TO_IDX": [],
+  "role_mask": [
+    "ts"
+  ],
+  "tensor_stream_token_view": [
+    "ts"
+  ],
+  "reconstruct_tensor_stream_from_compact_dict": [
+    "ts",
+    "compact_dict"
+  ],
+  "set_data": [
+    "tensor_stream",
+    "stream_types",
+    "roles"
+  ],
+  "slice": [
+    "tensor_stream",
+    "start",
+    "end"
+  ],
+  "ModalityType": {
+    "modality": [
+      "self"
+    ],
+    "__lt__": [
+      "self",
+      "other"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__hash__": [
+      "self"
+    ]
+  },
+  "VisionType": {
+    "image": []
+  },
+  "TextType": {
+    "text": [],
+    "padding": []
+  },
+  "ALL_TYPES": [],
+  "Event": {
+    "dims": [
+      "self",
+      "virtual"
+    ],
+    "is_measured": [
+      "self"
+    ],
+    "slice_tokens": [
+      "self",
+      "start",
+      "end"
+    ],
+    "num_tokens": [
+      "self",
+      "partial",
+      "virtual"
+    ],
+    "shallow_copy": [
+      "self"
+    ],
+    "__hash__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ]
+  },
+  "Stream": {
+    "__len__": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "map": [
+      "self",
+      "func"
+    ],
+    "compact": [
+      "self"
+    ],
+    "map_compact": [
+      "self",
+      "event_tf"
+    ],
+    "flatten": [
+      "self"
+    ],
+    "shallow_copy": [
+      "self"
+    ],
+    "__hash__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ]
+  },
+  "TensorStream": {
+    "__post_init__": [
+      "self"
+    ],
+    "compact": [
+      "self",
+      "mode"
+    ],
+    "map": [
+      "self",
+      "event_tf"
+    ],
+    "map_compact": [
+      "self",
+      "event_tf"
+    ],
+    "flat_stream": [
+      "self"
+    ],
+    "device": [
+      "self"
+    ],
+    "shape": [
+      "self"
+    ],
+    "to": [
+      "self",
+      "device",
+      "dtype",
+      "non_blocking"
+    ],
+    "pin_memory": [
+      "self",
+      "non_blocking"
+    ],
+    "__hash__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ]
+  },
+  "collate_tensor_stream": [
+    "tensor_streams"
+  ],
+  "_schedule_stream": [
+    "stream"
+  ],
+  "create_stream": [
+    "events",
+    "priority",
+    "schedule"
+  ],
+  "merge_streams": [
+    "streams"
+  ],
+  "EventDescriptor": [],
+  "get_stream_descriptor": [
+    "stream",
+    "measure_fn"
+  ],
+  "group_streams": [
+    "stream",
+    "group_fn",
+    "schedule"
+  ],
+  "Category": [],
+  "schedule_events": [
+    "stream",
+    "priority"
+  ]
+}
