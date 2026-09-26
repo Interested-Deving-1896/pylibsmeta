@@ -1,0 +1,831 @@
+{
+  "__all__": [],
+  "linear_regression": [
+    "X",
+    "y",
+    "add_intercept",
+    "weights",
+    "coef_only",
+    "alpha",
+    "as_dataframe",
+    "remove_na",
+    "relimp"
+  ],
+  "_prepare_Xy": [
+    "X",
+    "y",
+    "remove_na"
+  ],
+  "_lstsq": [
+    "X",
+    "y"
+  ],
+  "_duplicate_columns": [
+    "X"
+  ],
+  "_relimp": [
+    "S"
+  ],
+  "logistic_regression": [
+    "X",
+    "y",
+    "coef_only",
+    "alpha",
+    "as_dataframe",
+    "remove_na"
+  ],
+  "_ols_coef": [
+    "X",
+    "y"
+  ],
+  "_point_estimate": [
+    "X_val",
+    "XM_val",
+    "M_val",
+    "y_val",
+    "idx",
+    "n_mediator",
+    "m_binary"
+  ],
+  "_bias_corrected_ci": [
+    "bootdist",
+    "sample_point",
+    "alpha"
+  ],
+  "_pval_from_bootci": [
+    "boot",
+    "estimate"
+  ],
+  "mediation_analysis": [
+    "data",
+    "x",
+    "m",
+    "y",
+    "covar",
+    "alpha",
+    "n_boot",
+    "seed",
+    "return_dist",
+    "logreg_kwargs"
+  ],
+  "chi2_independence": [
+    "data",
+    "x",
+    "y",
+    "correction"
+  ],
+  "chi2_mcnemar": [
+    "data",
+    "x",
+    "y",
+    "correction"
+  ],
+  "_dichotomize_series": [
+    "data",
+    "column"
+  ],
+  "dichotomous_crosstab": [
+    "data",
+    "x",
+    "y"
+  ],
+  "_check_alternative": [
+    "alternative"
+  ],
+  "_perm_pval": [
+    "bootstat",
+    "estimate",
+    "alternative"
+  ],
+  "print_table": [
+    "df",
+    "floatfmt",
+    "tablefmt"
+  ],
+  "_postprocess_dataframe": [
+    "df"
+  ],
+  "_round_value": [
+    "val",
+    "round_option"
+  ],
+  "_format_pairwise_matrix": [
+    "mat",
+    "mat_upper",
+    "decimals",
+    "stars",
+    "pval_stars"
+  ],
+  "_get_round_setting_for": [
+    "row",
+    "col"
+  ],
+  "_nan_mask": [
+    "x",
+    "axis"
+  ],
+  "_remove_na_single": [
+    "x",
+    "axis"
+  ],
+  "remove_na": [
+    "x",
+    "y",
+    "paired",
+    "axis"
+  ],
+  "_flatten_list": [
+    "x",
+    "include_tuple"
+  ],
+  "_check_eftype": [
+    "eftype"
+  ],
+  "_check_dataframe": [
+    "data",
+    "dv",
+    "between",
+    "within",
+    "subject",
+    "effects"
+  ],
+  "_is_mpmath_installed": [
+    "raise_error"
+  ],
+  "multivariate_normality": [
+    "X",
+    "alpha"
+  ],
+  "multivariate_ttest": [
+    "X",
+    "Y",
+    "paired"
+  ],
+  "box_m": [
+    "data",
+    "dvs",
+    "group",
+    "alpha"
+  ],
+  "tost": [
+    "x",
+    "y",
+    "bound",
+    "paired",
+    "correction"
+  ],
+  "_correl_pvalue": [
+    "r",
+    "n",
+    "k",
+    "alternative"
+  ],
+  "skipped": [
+    "x",
+    "y",
+    "corr_type"
+  ],
+  "bsmahal": [
+    "a",
+    "b",
+    "n_boot"
+  ],
+  "shepherd": [
+    "x",
+    "y",
+    "n_boot"
+  ],
+  "percbend": [
+    "x",
+    "y",
+    "beta"
+  ],
+  "bicor": [
+    "x",
+    "y",
+    "c"
+  ],
+  "corr": [
+    "x",
+    "y",
+    "alternative",
+    "method"
+  ],
+  "partial_corr": [
+    "data",
+    "x",
+    "y",
+    "covar",
+    "x_covar",
+    "y_covar",
+    "alternative",
+    "method"
+  ],
+  "pcorr": [
+    "self"
+  ],
+  "rcorr": [
+    "self",
+    "method",
+    "upper",
+    "decimals",
+    "padjust",
+    "stars",
+    "pval_stars"
+  ],
+  "rm_corr": [
+    "data",
+    "x",
+    "y",
+    "subject"
+  ],
+  "_check_rm_corr_data": [
+    "data",
+    "x",
+    "y",
+    "subject"
+  ],
+  "_dcorr": [
+    "y",
+    "n2",
+    "A",
+    "dcov2_xx"
+  ],
+  "distance_corr": [
+    "x",
+    "y",
+    "alternative",
+    "n_boot",
+    "seed"
+  ],
+  "plot_blandaltman": [
+    "x",
+    "y",
+    "agreement",
+    "xaxis",
+    "confidence",
+    "annotate",
+    "percentage",
+    "symmetric_ylim",
+    "ax"
+  ],
+  "_ppoints": [
+    "n"
+  ],
+  "qqplot": [
+    "x",
+    "dist",
+    "sparams",
+    "confidence",
+    "square",
+    "line_kwargs",
+    "ci_kwargs",
+    "ax"
+  ],
+  "plot_paired": [
+    "data",
+    "dv",
+    "within",
+    "subject",
+    "order",
+    "boxplot",
+    "boxplot_in_front",
+    "orient",
+    "ax",
+    "colors",
+    "pointplot_kwargs",
+    "boxplot_kwargs"
+  ],
+  "plot_rm_corr": [
+    "data",
+    "x",
+    "y",
+    "subject",
+    "legend",
+    "kwargs_facetgrid",
+    "kwargs_line",
+    "kwargs_scatter"
+  ],
+  "plot_circmean": [
+    "angles",
+    "square",
+    "ax",
+    "kwargs_markers",
+    "kwargs_arrow"
+  ],
+  "_D_BOUNDS": [],
+  "_solve": [
+    "func",
+    "lower",
+    "upper"
+  ],
+  "_ncf_sf": [
+    "fcrit",
+    "dof1",
+    "dof2",
+    "nc"
+  ],
+  "_power_nct": [
+    "nc",
+    "dof",
+    "alpha",
+    "alternative"
+  ],
+  "power_ttest": [
+    "d",
+    "n",
+    "power",
+    "alpha",
+    "contrast",
+    "alternative"
+  ],
+  "power_ttest2n": [
+    "nx",
+    "ny",
+    "d",
+    "power",
+    "alpha",
+    "alternative"
+  ],
+  "power_anova": [
+    "eta_squared",
+    "k",
+    "n",
+    "power",
+    "alpha"
+  ],
+  "power_rm_anova": [
+    "eta_squared",
+    "m",
+    "n",
+    "power",
+    "alpha",
+    "corr",
+    "epsilon"
+  ],
+  "power_corr": [
+    "r",
+    "n",
+    "power",
+    "alpha",
+    "alternative"
+  ],
+  "power_chi2": [
+    "dof",
+    "w",
+    "n",
+    "power",
+    "alpha"
+  ],
+  "_reject": [
+    "pvals_corrected",
+    "alpha"
+  ],
+  "_correct_finite": [
+    "pvals",
+    "alpha",
+    "correct"
+  ],
+  "fdr": [
+    "pvals",
+    "alpha",
+    "method"
+  ],
+  "bonf": [
+    "pvals",
+    "alpha"
+  ],
+  "holm": [
+    "pvals",
+    "alpha"
+  ],
+  "sidak": [
+    "pvals",
+    "alpha"
+  ],
+  "multicomp": [
+    "pvals",
+    "alpha",
+    "method"
+  ],
+  "_multicomp_triu": [
+    "mat_upper",
+    "method",
+    "alpha"
+  ],
+  "options": [],
+  "_format_bf": [
+    "bf",
+    "precision",
+    "trim"
+  ],
+  "set_default_options": [],
+  "_no_rounding": [],
+  "_checkangles": [
+    "angles"
+  ],
+  "_remove_na_weighted": [
+    "angles",
+    "w"
+  ],
+  "convert_angles": [
+    "angles",
+    "low",
+    "high",
+    "positive"
+  ],
+  "circ_axial": [
+    "angles",
+    "n"
+  ],
+  "circ_mean": [
+    "angles",
+    "w",
+    "axis"
+  ],
+  "circ_r": [
+    "angles",
+    "w",
+    "d",
+    "axis"
+  ],
+  "circ_corrcc": [
+    "x",
+    "y",
+    "correction_uniform"
+  ],
+  "circ_corrcl": [
+    "x",
+    "y"
+  ],
+  "circ_rayleigh": [
+    "angles",
+    "w",
+    "d"
+  ],
+  "circ_vtest": [
+    "angles",
+    "dir",
+    "w",
+    "d"
+  ],
+  "mad": [
+    "a",
+    "normalize",
+    "axis"
+  ],
+  "madmedianrule": [
+    "a"
+  ],
+  "mwu": [
+    "x",
+    "y",
+    "alternative"
+  ],
+  "wilcoxon": [
+    "x",
+    "y",
+    "alternative"
+  ],
+  "kruskal": [
+    "data",
+    "dv",
+    "between",
+    "detailed"
+  ],
+  "friedman": [
+    "data",
+    "dv",
+    "within",
+    "subject",
+    "method"
+  ],
+  "cochran": [
+    "data",
+    "dv",
+    "within",
+    "subject"
+  ],
+  "harrelldavis": [
+    "x",
+    "quantile",
+    "axis"
+  ],
+  "compute_esci": [
+    "stat",
+    "nx",
+    "ny",
+    "paired",
+    "eftype",
+    "confidence",
+    "decimals",
+    "alternative"
+  ],
+  "compute_bootci": [
+    "x",
+    "y",
+    "func",
+    "method",
+    "paired",
+    "confidence",
+    "n_boot",
+    "decimals",
+    "seed",
+    "return_dist"
+  ],
+  "convert_effsize": [
+    "ef",
+    "input_type",
+    "output_type",
+    "nx",
+    "ny"
+  ],
+  "compute_effsize": [
+    "x",
+    "y",
+    "paired",
+    "eftype"
+  ],
+  "compute_effsize_from_t": [
+    "tval",
+    "nx",
+    "ny",
+    "N",
+    "eftype"
+  ],
+  "cronbach_alpha": [
+    "data",
+    "items",
+    "scores",
+    "subject",
+    "nan_policy",
+    "ci"
+  ],
+  "intraclass_corr": [
+    "data",
+    "targets",
+    "raters",
+    "ratings",
+    "nan_policy"
+  ],
+  "_pairwise_test": [
+    "x",
+    "y",
+    "paired",
+    "parametric",
+    "alternative",
+    "correction",
+    "effsize",
+    "return_desc"
+  ],
+  "_padjust": [
+    "stats",
+    "padjust",
+    "alpha"
+  ],
+  "_group_arrays": [
+    "data",
+    "by",
+    "dv"
+  ],
+  "pairwise_ttests": [],
+  "pairwise_tests": [
+    "data",
+    "dv",
+    "between",
+    "within",
+    "subject",
+    "parametric",
+    "marginal",
+    "alpha",
+    "alternative",
+    "padjust",
+    "effsize",
+    "correction",
+    "nan_policy",
+    "return_desc",
+    "interaction",
+    "within_first"
+  ],
+  "ptests": [
+    "self",
+    "paired",
+    "decimals",
+    "padjust",
+    "stars",
+    "pval_stars"
+  ],
+  "pairwise_tukey": [
+    "data",
+    "dv",
+    "between",
+    "effsize"
+  ],
+  "pairwise_gameshowell": [
+    "data",
+    "dv",
+    "between",
+    "effsize"
+  ],
+  "_pairwise_between": [
+    "data",
+    "dv",
+    "between",
+    "effsize"
+  ],
+  "pairwise_corr": [
+    "data",
+    "columns",
+    "covar",
+    "alternative",
+    "method",
+    "padjust",
+    "nan_policy"
+  ],
+  "__version__": [],
+  "ttest": [
+    "x",
+    "y",
+    "paired",
+    "alternative",
+    "correction",
+    "r",
+    "confidence"
+  ],
+  "_pivot_rm": [
+    "data",
+    "dv",
+    "within",
+    "subject",
+    "between"
+  ],
+  "_gg_corrected_pval": [
+    "fval",
+    "ddof1",
+    "ddof2",
+    "eps"
+  ],
+  "rm_anova": [
+    "data",
+    "dv",
+    "within",
+    "subject",
+    "correction",
+    "detailed",
+    "effsize"
+  ],
+  "rm_anova2": [
+    "data",
+    "dv",
+    "within",
+    "subject",
+    "effsize"
+  ],
+  "anova": [
+    "data",
+    "dv",
+    "between",
+    "ss_type",
+    "detailed",
+    "effsize"
+  ],
+  "anova2": [
+    "data",
+    "dv",
+    "between",
+    "ss_type",
+    "effsize"
+  ],
+  "_check_no_empty_cells": [
+    "data",
+    "between"
+  ],
+  "_eta_squared": [
+    "ss",
+    "effsize"
+  ],
+  "_remove_unused_categories": [
+    "data"
+  ],
+  "anovan": [
+    "data",
+    "dv",
+    "between",
+    "ss_type",
+    "effsize"
+  ],
+  "welch_anova": [
+    "data",
+    "dv",
+    "between"
+  ],
+  "mixed_anova": [
+    "data",
+    "dv",
+    "within",
+    "subject",
+    "between",
+    "correction",
+    "effsize"
+  ],
+  "ancova": [
+    "data",
+    "dv",
+    "between",
+    "covar",
+    "effsize"
+  ],
+  "bayesfactor_ttest": [
+    "t",
+    "nx",
+    "ny",
+    "paired",
+    "alternative",
+    "r"
+  ],
+  "bayesfactor_pearson": [
+    "r",
+    "n",
+    "alternative",
+    "method",
+    "kappa"
+  ],
+  "bayesfactor_binom": [
+    "k",
+    "n",
+    "p",
+    "a",
+    "b"
+  ],
+  "normality": [
+    "data",
+    "dv",
+    "group",
+    "method",
+    "alpha"
+  ],
+  "homoscedasticity": [
+    "data",
+    "dv",
+    "group",
+    "method",
+    "alpha"
+  ],
+  "anderson": [],
+  "_orthonormal_contrasts": [
+    "k"
+  ],
+  "_rm_contrasts": [
+    "columns"
+  ],
+  "_contrast_cov": [
+    "data"
+  ],
+  "_mauchly": [
+    "M",
+    "df_resid",
+    "k"
+  ],
+  "_gg_epsilon": [
+    "M"
+  ],
+  "_mauchly_sphericity": [
+    "M",
+    "df_resid",
+    "k",
+    "alpha"
+  ],
+  "_long_to_wide_rm": [
+    "data",
+    "dv",
+    "within",
+    "subject"
+  ],
+  "_wide_rm": [
+    "data",
+    "dv",
+    "within",
+    "subject"
+  ],
+  "epsilon": [
+    "data",
+    "dv",
+    "within",
+    "subject",
+    "correction"
+  ],
+  "sphericity": [
+    "data",
+    "dv",
+    "within",
+    "subject",
+    "method",
+    "alpha"
+  ],
+  "ddir": [],
+  "dts": [],
+  "read_dataset": [
+    "dname"
+  ],
+  "list_dataset": []
+}
