@@ -1,0 +1,463 @@
+{
+  "__all__": [],
+  "__version__": [],
+  "LiteLLMEmbeddingsRouter": {
+    "__init__": [
+      "self"
+    ],
+    "_get_router_params": [
+      "self"
+    ],
+    "_embedding_with_retry": [
+      "self"
+    ],
+    "_aembedding_with_retry": [
+      "self"
+    ],
+    "embed_documents": [
+      "self",
+      "texts"
+    ],
+    "embed_query": [
+      "self",
+      "text"
+    ],
+    "aembed_documents": [
+      "self",
+      "texts"
+    ],
+    "aembed_query": [
+      "self",
+      "text"
+    ]
+  },
+  "logger": [],
+  "_create_retry_decorator": [
+    "max_retries"
+  ],
+  "LiteLLMEmbeddings": {
+    "model_config": [],
+    "_normalize_base_url_alias": [
+      "cls",
+      "values"
+    ],
+    "_get_litellm_params": [
+      "self"
+    ],
+    "_embedding_with_retry": [
+      "self"
+    ],
+    "_aembedding_with_retry": [
+      "self"
+    ],
+    "embed_documents": [
+      "self",
+      "texts"
+    ],
+    "embed_query": [
+      "self",
+      "text"
+    ],
+    "aembed_documents": [
+      "self",
+      "texts"
+    ],
+    "aembed_query": [
+      "self",
+      "text"
+    ]
+  },
+  "LiteLLMOCRLoader": {
+    "__init__": [
+      "self"
+    ],
+    "_prepare_document_payload": [
+      "self"
+    ],
+    "_make_ocr_request": [
+      "self",
+      "document_payload",
+      "sync"
+    ],
+    "_process_response": [
+      "self",
+      "response"
+    ],
+    "load": [
+      "self"
+    ],
+    "aload": [
+      "self"
+    ],
+    "lazy_load": [
+      "self"
+    ]
+  },
+  "_FALLBACK_SETTINGS": [],
+  "_without_none": [
+    "params"
+  ],
+  "token_usage_key_name": [],
+  "model_extra_key_name": [],
+  "_deployment_metadata": [
+    "response"
+  ],
+  "ChatLiteLLMRouter": {
+    "__init__": [
+      "self"
+    ],
+    "_route_to_responses_api": [
+      "self",
+      "model",
+      "custom_llm_provider",
+      "api_base"
+    ],
+    "_llm_type": [
+      "self"
+    ],
+    "_prepare_params_for_router": [
+      "self",
+      "params"
+    ],
+    "set_default_model": [
+      "self",
+      "model_name"
+    ],
+    "_is_claude_model": [
+      "self"
+    ],
+    "_thinking_endpoint": [
+      "self",
+      "params"
+    ],
+    "_replay_params": [
+      "self",
+      "params"
+    ],
+    "_deployments": [
+      "self",
+      "params"
+    ],
+    "_litellm_sends_manual_thinking": [
+      "self",
+      "overrides"
+    ],
+    "_group_entries": [
+      "self"
+    ],
+    "completion_with_retry": [
+      "self",
+      "run_manager"
+    ],
+    "acompletion_with_retry": [
+      "self",
+      "run_manager"
+    ],
+    "_generate": [
+      "self",
+      "messages",
+      "stop",
+      "run_manager",
+      "stream"
+    ],
+    "_stream": [
+      "self",
+      "messages",
+      "stop",
+      "run_manager"
+    ],
+    "_astream": [
+      "self",
+      "messages",
+      "stop",
+      "run_manager"
+    ],
+    "_agenerate": [
+      "self",
+      "messages",
+      "stop",
+      "run_manager",
+      "stream"
+    ],
+    "_combine_llm_outputs": [
+      "self",
+      "llm_outputs"
+    ],
+    "_create_chat_result": [
+      "self",
+      "response"
+    ]
+  },
+  "_DESTINATION_KEYS": [],
+  "_TOOL_CHOICE_KEYWORDS": [],
+  "_PROVIDER_FIELD_ALIASES": [],
+  "_provider_api_key_field": [
+    "cls",
+    "provider"
+  ],
+  "_get_field": [
+    "source",
+    "name"
+  ],
+  "_CLAUDE_HOSTS": [],
+  "_ORIGIN": [],
+  "_PREFIX": [],
+  "_AFTER_REPLY": [],
+  "_TOOL_SETTINGS": [],
+  "_REPLAY_SETTINGS": [],
+  "_SYSTEM_ROLES": [],
+  "_NON_ROUTING_PARAMS": [],
+  "_PRICING_PREFIXES": [],
+  "_BEDROCK_CLAUDE_ID": [],
+  "_endpoint_name": [
+    "model",
+    "custom_llm_provider",
+    "api_base",
+    "base_model"
+  ],
+  "_signing_endpoint": [
+    "model",
+    "custom_llm_provider",
+    "api_base",
+    "base_model"
+  ],
+  "_signed_thinking_blocks": [
+    "blocks"
+  ],
+  "_stored_thinking_blocks": [
+    "blocks",
+    "origin",
+    "prefix"
+  ],
+  "_ThinkingBlockAssembler": {
+    "__init__": [
+      "self",
+      "origin",
+      "prefix"
+    ],
+    "feed": [
+      "self",
+      "blocks",
+      "replied"
+    ],
+    "_completed": [
+      "self",
+      "blocks"
+    ],
+    "_stored": [
+      "self",
+      "blocks"
+    ]
+  },
+  "_keep_thinking_blocks": [
+    "result",
+    "response",
+    "binding"
+  ],
+  "_UndigestableError": {},
+  "_uncached": [
+    "value"
+  ],
+  "_canonical": [
+    "value"
+  ],
+  "_HistoryDigest": {
+    "__init__": [
+      "self",
+      "params",
+      "message_dicts"
+    ],
+    "add": [
+      "self",
+      "message_dict"
+    ],
+    "digest": [
+      "self"
+    ]
+  },
+  "_with_blocks": [
+    "message_dict",
+    "blocks"
+  ],
+  "_replayable_blocks": [
+    "message",
+    "message_dict",
+    "endpoint",
+    "prefix"
+  ],
+  "_replayable_turns": [
+    "messages",
+    "message_dicts",
+    "endpoint",
+    "params"
+  ],
+  "_attach_thinking_blocks": [
+    "messages",
+    "message_dicts",
+    "endpoint",
+    "params"
+  ],
+  "_cost_metadata": [
+    "response"
+  ],
+  "_rejoin_split_reply": [
+    "choices",
+    "n"
+  ],
+  "_sends_manual_thinking": [
+    "model",
+    "custom_llm_provider",
+    "api_base",
+    "params"
+  ],
+  "ChatLiteLLMException": {},
+  "_copy_containers": [
+    "value",
+    "memo"
+  ],
+  "_convert_dict_to_message": [
+    "_dict"
+  ],
+  "_convert_delta_to_message_chunk": [
+    "delta",
+    "default_class",
+    "thinking"
+  ],
+  "_lc_tool_call_to_openai_tool_call": [
+    "tool_call"
+  ],
+  "_SKIPPED_CONTENT_BLOCK_TYPES": [],
+  "_is_skipped_content_block": [
+    "block"
+  ],
+  "_convert_message_to_dict": [
+    "message"
+  ],
+  "ChatLiteLLM": {
+    "_thinking_refuses_forced_tools": [
+      "self",
+      "overrides"
+    ],
+    "_litellm_sends_manual_thinking": [
+      "self",
+      "overrides"
+    ],
+    "_is_claude_model": [
+      "self"
+    ],
+    "_default_params": [
+      "self"
+    ],
+    "_constructor_destination": [
+      "self"
+    ],
+    "_resolve_api_key": [
+      "self",
+      "model",
+      "custom_llm_provider"
+    ],
+    "_route_to_responses_api": [
+      "self",
+      "model",
+      "custom_llm_provider",
+      "api_base"
+    ],
+    "_merge_call_params": [
+      "self",
+      "params",
+      "kwargs"
+    ],
+    "_thinking_endpoint": [
+      "self",
+      "params"
+    ],
+    "_replay_params": [
+      "self",
+      "params"
+    ],
+    "_bind_thinking": [
+      "self",
+      "messages",
+      "message_dicts",
+      "params"
+    ],
+    "_client_params": [
+      "self"
+    ],
+    "completion_with_retry": [
+      "self",
+      "run_manager"
+    ],
+    "acompletion_with_retry": [
+      "self",
+      "run_manager"
+    ],
+    "_set_litellm_version": [
+      "self"
+    ],
+    "validate_environment": [
+      "cls",
+      "values"
+    ],
+    "_generate": [
+      "self",
+      "messages",
+      "stop",
+      "run_manager",
+      "stream"
+    ],
+    "_create_chat_result": [
+      "self",
+      "response"
+    ],
+    "_create_message_dicts": [
+      "self",
+      "messages",
+      "stop"
+    ],
+    "_stream": [
+      "self",
+      "messages",
+      "stop",
+      "run_manager"
+    ],
+    "_astream": [
+      "self",
+      "messages",
+      "stop",
+      "run_manager"
+    ],
+    "_agenerate": [
+      "self",
+      "messages",
+      "stop",
+      "run_manager",
+      "stream"
+    ],
+    "bind_tools": [
+      "self",
+      "tools",
+      "tool_choice"
+    ],
+    "with_structured_output": [
+      "self",
+      "schema"
+    ],
+    "_identifying_params": [
+      "self"
+    ],
+    "_get_ls_params": [
+      "self",
+      "stop"
+    ],
+    "_llm_type": [
+      "self"
+    ]
+  },
+  "_create_usage_metadata": [
+    "token_usage"
+  ],
+  "_ensure_additional_properties_false": [
+    "schema_dict"
+  ]
+}
