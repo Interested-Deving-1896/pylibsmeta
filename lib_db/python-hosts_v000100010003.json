@@ -1,0 +1,140 @@
+{
+  "PY2": [],
+  "PY3": [],
+  "safe_open": [
+    "file_path",
+    "mode",
+    "encoding",
+    "errors"
+  ],
+  "normalize_hostname": [
+    "hostname"
+  ],
+  "normalize_comment": [
+    "comment"
+  ],
+  "is_unicode_string": [
+    "s"
+  ],
+  "to_native_string": [
+    "s"
+  ],
+  "_IPV4_RE": [],
+  "_socket_address": [
+    "entry"
+  ],
+  "is_ipv4": [
+    "entry"
+  ],
+  "is_ipv6": [
+    "entry"
+  ],
+  "valid_hostnames": [
+    "hostname_list"
+  ],
+  "is_readable": [
+    "path"
+  ],
+  "dedupe_list": [
+    "seq"
+  ],
+  "HostsEntry": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "entry_type",
+      "address",
+      "comment",
+      "names"
+    ],
+    "is_real_entry": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "get_entry_type": [
+      "hosts_entry"
+    ],
+    "str_to_hostentry": [
+      "entry"
+    ]
+  },
+  "Hosts": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "path",
+      "entries"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "count": [
+      "self"
+    ],
+    "determine_hosts_path": [
+      "platform"
+    ],
+    "write": [
+      "self",
+      "path",
+      "mode"
+    ],
+    "get_hosts_by_url": [
+      "url"
+    ],
+    "exists": [
+      "self",
+      "address",
+      "names",
+      "comment"
+    ],
+    "remove_all_matching": [
+      "self",
+      "address",
+      "name",
+      "comment"
+    ],
+    "find_all_matching": [
+      "self",
+      "address",
+      "name",
+      "comment"
+    ],
+    "import_url": [
+      "self",
+      "url",
+      "force"
+    ],
+    "import_file": [
+      "self",
+      "import_file_path"
+    ],
+    "add": [
+      "self",
+      "entries",
+      "force",
+      "allow_address_duplication",
+      "allow_name_duplication",
+      "merge_names"
+    ],
+    "populate_entries": [
+      "self"
+    ]
+  },
+  "HostsException": {},
+  "UnableToWriteHosts": {},
+  "HostsEntryException": {},
+  "InvalidIPv4Address": {},
+  "InvalidIPv6Address": {},
+  "InvalidComment": {},
+  "InvalidHostsEntry": {},
+  "name": []
+}

@@ -1,0 +1,644 @@
+{
+  "__all__": [],
+  "__version__": [],
+  "is_running_in_k8s": [],
+  "_metadata": [
+    "name",
+    "namespace",
+    "labels",
+    "annotations"
+  ],
+  "namespace_manifest": [
+    "name"
+  ],
+  "opaque_secret": [
+    "name"
+  ],
+  "basic_auth_secret": [
+    "name",
+    "username",
+    "password"
+  ],
+  "docker_registry_secret": [
+    "name",
+    "server",
+    "username",
+    "password"
+  ],
+  "service_account_manifest": [
+    "name"
+  ],
+  "resource_requirements": [],
+  "MEMField": [],
+  "CPUField": [],
+  "GPUField": [],
+  "REPLICAField": [],
+  "CONCURRENCYField": [],
+  "NAMEField": [],
+  "Spec": {
+    "model_config": [],
+    "format_cpu": [
+      "self",
+      "value"
+    ],
+    "format_memory": [
+      "self",
+      "value"
+    ],
+    "format_gpu": [
+      "self",
+      "value"
+    ]
+  },
+  "ResourceSpec": {
+    "validate_minmax": [
+      "self"
+    ]
+  },
+  "_DiscoveryClient": {
+    "__init__": [
+      "self",
+      "api_client"
+    ],
+    "request": [
+      "self",
+      "method",
+      "path",
+      "body"
+    ],
+    "_validate_discovery": [
+      "route",
+      "value"
+    ]
+  },
+  "DeleteResult": {},
+  "_object_missing": [
+    "error",
+    "descriptor",
+    "name"
+  ],
+  "ResourceOperations": {
+    "__init__": [
+      "self",
+      "client",
+      "api_version",
+      "kind"
+    ],
+    "_resolve": [
+      "self",
+      "verb"
+    ],
+    "_select_namespace": [
+      "self",
+      "descriptor",
+      "body",
+      "all_namespaces"
+    ],
+    "_body": [
+      "self",
+      "body"
+    ],
+    "_write_body": [
+      "self",
+      "descriptor",
+      "body"
+    ],
+    "_validation": [
+      "field_validation",
+      "options"
+    ],
+    "_request": [
+      "self",
+      "descriptor",
+      "method"
+    ],
+    "get": [
+      "self",
+      "name"
+    ],
+    "exists": [
+      "self",
+      "name"
+    ],
+    "list": [
+      "self"
+    ],
+    "iter_items": [
+      "self"
+    ],
+    "create": [
+      "self",
+      "body"
+    ],
+    "patch": [
+      "self",
+      "name",
+      "body"
+    ],
+    "replace": [
+      "self",
+      "body"
+    ],
+    "apply": [
+      "self",
+      "body"
+    ],
+    "delete": [
+      "self",
+      "name"
+    ],
+    "watch": [
+      "self"
+    ],
+    "wait_ready": [
+      "self",
+      "name"
+    ],
+    "wait_deleted": [
+      "self",
+      "name"
+    ]
+  },
+  "KubernetesError": {},
+  "ConfigurationError": {},
+  "ClientClosedError": {},
+  "ResourceNotServedError": {},
+  "AmbiguousResourceError": {},
+  "UnsupportedOperationError": {},
+  "ApiRequestError": {
+    "__init__": [
+      "self",
+      "cause"
+    ]
+  },
+  "DiscoveryRequestError": {},
+  "ResponseFormatError": {},
+  "DiscoveryFormatError": {},
+  "PaginationError": {},
+  "WaitTimeoutError": {},
+  "WaitCancelledError": {},
+  "ResourceReplacedError": {},
+  "ResourceChangedError": {},
+  "ResourceNotReadyError": {},
+  "_Unset": {},
+  "UNSET": [],
+  "required_string": [
+    "value",
+    "field"
+  ],
+  "positive_seconds": [
+    "value",
+    "field"
+  ],
+  "KubernetesClient": {
+    "__init__": [
+      "self",
+      "api_client"
+    ],
+    "_check_transport": [
+      "api_client"
+    ],
+    "from_configuration": [
+      "cls",
+      "configuration"
+    ],
+    "from_api_client": [
+      "cls",
+      "api_client"
+    ],
+    "from_kubeconfig": [
+      "cls",
+      "config_file"
+    ],
+    "from_kubeconfig_dict": [
+      "cls",
+      "config_dict"
+    ],
+    "from_incluster": [
+      "cls"
+    ],
+    "_ensure_open": [
+      "self"
+    ],
+    "api_client": [
+      "self"
+    ],
+    "_dynamic_client": [
+      "self"
+    ],
+    "refresh_discovery": [
+      "self"
+    ],
+    "resource": [
+      "self",
+      "api_version",
+      "kind"
+    ],
+    "pods": [
+      "self"
+    ],
+    "namespaces": [
+      "self"
+    ],
+    "secrets": [
+      "self"
+    ],
+    "service_accounts": [
+      "self"
+    ],
+    "deployments": [
+      "self"
+    ],
+    "services": [
+      "self"
+    ],
+    "config_maps": [
+      "self"
+    ],
+    "jobs": [
+      "self"
+    ],
+    "cron_jobs": [
+      "self"
+    ],
+    "_close_api_client": [
+      "api_client"
+    ],
+    "close": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_value",
+      "traceback"
+    ]
+  },
+  "_StrictWatch": {
+    "unmarshal_event": [
+      "self",
+      "data",
+      "return_type"
+    ]
+  },
+  "_StrictResponse": {
+    "__init__": [
+      "self",
+      "response"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "stream": [
+      "self"
+    ]
+  },
+  "ResourceWatch": {
+    "__init__": [
+      "self",
+      "resource"
+    ],
+    "_fetch": [
+      "self"
+    ],
+    "_events": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__next__": [
+      "self"
+    ],
+    "_finish": [
+      "self"
+    ],
+    "stop": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_value",
+      "traceback"
+    ]
+  },
+  "_wait": [
+    "resource",
+    "name"
+  ],
+  "_ready": [
+    "kind",
+    "value",
+    "generation"
+  ],
+  "wait_ready": [
+    "resource",
+    "name"
+  ],
+  "wait_deleted": [
+    "resource",
+    "name"
+  ],
+  "KubernetesManager": {
+    "set_default_config": [
+      "apiserver_host",
+      "verify_ssl",
+      "token",
+      "username",
+      "password"
+    ],
+    "watch_pod": [
+      "self",
+      "name",
+      "namespace",
+      "label_selector",
+      "timeout_seconds"
+    ],
+    "__init__": [
+      "self",
+      "config_dict",
+      "configuration",
+      "config_file",
+      "context",
+      "persist_config"
+    ],
+    "check_ns_exists": [
+      "self",
+      "name"
+    ],
+    "check_sa_exists": [
+      "self",
+      "name",
+      "namespace"
+    ],
+    "check_secret_exists": [
+      "self",
+      "name",
+      "namespace"
+    ],
+    "create_namespace": [
+      "self",
+      "name",
+      "labels",
+      "annotations",
+      "timeout_seconds"
+    ],
+    "patch_namespace": [
+      "self",
+      "name",
+      "labels",
+      "annotations"
+    ],
+    "prepare_namespace": [
+      "self",
+      "name",
+      "project_id",
+      "labels",
+      "annotations",
+      "timeout_seconds",
+      "use_ns_nodeselector"
+    ],
+    "prepare_ns_resource_management": [
+      "self",
+      "namespace"
+    ],
+    "create_secret": [
+      "self",
+      "name",
+      "namespace",
+      "type",
+      "labels",
+      "annotations",
+      "data",
+      "string_data"
+    ],
+    "patch_secret": [
+      "self",
+      "name",
+      "namespace",
+      "type",
+      "labels",
+      "annotations",
+      "data",
+      "string_data"
+    ],
+    "prepare_secret": [
+      "self",
+      "name",
+      "namespace",
+      "type",
+      "labels",
+      "annotations",
+      "data",
+      "string_data"
+    ],
+    "create_opaque_secret": [
+      "self",
+      "name",
+      "namespace",
+      "labels",
+      "annotations",
+      "data",
+      "string_data"
+    ],
+    "create_dockerconfig_secret": [
+      "self",
+      "name",
+      "namespace",
+      "labels",
+      "annotations",
+      "domain",
+      "username",
+      "password"
+    ],
+    "create_image_pull_secret": [
+      "self",
+      "name",
+      "namespace",
+      "labels",
+      "domain",
+      "username",
+      "password"
+    ],
+    "create_basic_auth_secret": [
+      "self",
+      "name",
+      "namespace",
+      "labels",
+      "annotations",
+      "username",
+      "password"
+    ],
+    "_set_secret_refs": [
+      "self",
+      "secret_names"
+    ],
+    "_set_image_pull_secret_refs": [
+      "self",
+      "secret_names"
+    ],
+    "create_service_account": [
+      "self",
+      "name",
+      "namespace",
+      "labels",
+      "secret_names",
+      "image_pull_secret_names"
+    ],
+    "patch_service_account": [
+      "self",
+      "name",
+      "namespace",
+      "labels",
+      "secret_names",
+      "image_pull_secret_names"
+    ],
+    "prepare_service_account": [
+      "self",
+      "name",
+      "namespace",
+      "labels",
+      "secret_names",
+      "image_pull_secret_names"
+    ],
+    "build_resource_spec": [
+      "self",
+      "cpu_req",
+      "cpu_limit",
+      "mem_req",
+      "mem_limit",
+      "gpu_req",
+      "gpu_limit"
+    ],
+    "encode_b64": [
+      "s"
+    ],
+    "decode_b64": [
+      "s"
+    ]
+  },
+  "BaseEnum": {
+    "describe": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "cls",
+      "v"
+    ],
+    "_missing_": [
+      "cls",
+      "type"
+    ],
+    "ignore_case": [
+      "self"
+    ],
+    "of": [
+      "cls",
+      "type"
+    ]
+  },
+  "use_enum_values": [
+    "x"
+  ],
+  "ServiceType": {
+    "LoadBalancer": [],
+    "NodePort": [],
+    "ClusterIP": []
+  },
+  "ServiceStatus": {
+    "WAITING": [],
+    "RUNNING": [],
+    "STOPPED": [],
+    "COMPLETED": [],
+    "DELETED": [],
+    "UNKNOWN": [],
+    "ERROR": []
+  },
+  "PodPhase": {
+    "PENDING": [],
+    "RUNNING": [],
+    "SUCCEEDED": [],
+    "FAILED": [],
+    "UNKNOWN": []
+  },
+  "PodStatus": {
+    "PENDING": [],
+    "RUNNING": [],
+    "SUCCEEDED": [],
+    "FAILED": [],
+    "UNKNOWN": []
+  },
+  "ContainerState": {
+    "WAITING": [],
+    "RUNNING": [],
+    "TERMINATED": []
+  },
+  "ContainerStateReason": {
+    "COMPLETED": [],
+    "CRASHLOOPBACKOFF": [],
+    "OOMKILLED": [],
+    "CONTAINERSNOTREADY": [],
+    "EVICTED": []
+  },
+  "PodReason": {
+    "COMPLETED": [],
+    "CRASHLOOPBACKOFF": [],
+    "OOMKILLED": [],
+    "CONTAINERSNOTREADY": [],
+    "EVICTED": []
+  },
+  "PodConditionType": {
+    "PODSCHEDULED": [],
+    "CONTAINERSREADY": [],
+    "INITIALIZED": [],
+    "READY": []
+  },
+  "PodConditionStatus": {
+    "TRUE": [],
+    "FALSE": [],
+    "UNKNOWN": []
+  },
+  "PodConditionReason": {
+    "TRUE": [],
+    "FALSE": [],
+    "UNKNOWN": []
+  },
+  "TektonReason": {
+    "SUCCEEDED": [],
+    "FAILED": [],
+    "RUNNING": []
+  },
+  "TektonStatus": {
+    "TRUE": [],
+    "FALSE": [],
+    "UNKNOWN": []
+  },
+  "ActionStatus": {
+    "ADDED": [],
+    "MODIFIED": [],
+    "DELETED": [],
+    "ERROR": []
+  },
+  "JobResult": {
+    "SUCCESS": [],
+    "FAIL": [],
+    "UNKNOWN": []
+  }
+}
