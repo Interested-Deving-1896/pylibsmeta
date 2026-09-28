@@ -1,0 +1,2931 @@
+{
+  "_WEBHOOK_TOLERANCE_SECONDS": [],
+  "_PayloadT": [],
+  "PolarWebhookError": {},
+  "PolarWebhookVerificationError": {},
+  "PolarWebhookUnknownTypeError": {
+    "__init__": [
+      "self",
+      "event_type"
+    ]
+  },
+  "validate_event": [
+    "body",
+    "headers",
+    "secret",
+    "event_types",
+    "payload_loader"
+  ],
+  "_verify_signature": [
+    "body",
+    "headers",
+    "secret"
+  ],
+  "_signing_keys": [
+    "secret"
+  ],
+  "__version__": [],
+  "__all__": [],
+  "_EnvironmentT": [],
+  "_ModelT": [],
+  "PolarError": {
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "PolarNetworkError": {
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "PolarServerError": {
+    "__init__": [
+      "self",
+      "status_code",
+      "message"
+    ]
+  },
+  "PolarDeserializationError": {
+    "__init__": [
+      "self",
+      "error"
+    ]
+  },
+  "PolarClientError": {
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "PolarRateLimitError": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "retry_after"
+    ]
+  },
+  "resolve_base_url": [
+    "servers",
+    "environment",
+    "base_url"
+  ],
+  "BuildRequestMixin": {
+    "build_request": [
+      "self",
+      "method",
+      "url",
+      "path_params",
+      "query_params",
+      "body",
+      "request_timeout",
+      "request_access_token"
+    ]
+  },
+  "SyncClientBase": {
+    "__init__": [
+      "self",
+      "base_url",
+      "version",
+      "access_token",
+      "timeout"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ],
+    "send_request": [
+      "self",
+      "request"
+    ]
+  },
+  "AsyncClientBase": {
+    "__init__": [
+      "self",
+      "base_url",
+      "version",
+      "access_token",
+      "timeout"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ],
+    "send_request": [
+      "self",
+      "request"
+    ]
+  },
+  "SyncServiceBase": {
+    "__init__": [
+      "self",
+      "client"
+    ],
+    "from_service": [
+      "cls",
+      "service"
+    ]
+  },
+  "AsyncServiceBase": {
+    "__init__": [
+      "self",
+      "client"
+    ],
+    "from_service": [
+      "cls",
+      "service"
+    ]
+  },
+  "_load_exact_float": [
+    "data"
+  ],
+  "_retort": [],
+  "_register_extra_items_typed_dict": [
+    "model",
+    "extra_items_type"
+  ],
+  "deserialize": [
+    "data",
+    "model"
+  ],
+  "E": [],
+  "_handle_errors": [
+    "response",
+    "errors"
+  ],
+  "parse_response_json": [
+    "response",
+    "response_model",
+    "errors"
+  ],
+  "parse_response_text": [
+    "response",
+    "errors"
+  ],
+  "parse_response_none": [
+    "response",
+    "errors"
+  ],
+  "WebhookBenefitCreatedPayload": {},
+  "WebhookBenefitGrantCreatedPayload": {},
+  "WebhookBenefitGrantCycledPayload": {},
+  "WebhookBenefitGrantRevokedPayload": {},
+  "WebhookBenefitGrantUpdatedPayload": {},
+  "WebhookBenefitUpdatedPayload": {},
+  "WebhookCheckoutCreatedPayload": {},
+  "WebhookCheckoutExpiredPayload": {},
+  "WebhookCheckoutUpdatedPayload": {},
+  "WebhookCustomerCreatedPayload": {},
+  "WebhookCustomerDeletedPayload": {},
+  "WebhookCustomerSeatAssignedPayload": {},
+  "WebhookCustomerSeatClaimedPayload": {},
+  "WebhookCustomerSeatRevokedPayload": {},
+  "WebhookCustomerStateChangedPayload": {},
+  "WebhookCustomerUpdatedPayload": {},
+  "WebhookDiscountCreatedPayload": {},
+  "WebhookDiscountDeletedPayload": {},
+  "WebhookDiscountUpdatedPayload": {},
+  "WebhookMemberCreatedPayload": {},
+  "WebhookMemberDeletedPayload": {},
+  "WebhookMemberUpdatedPayload": {},
+  "WebhookOrderCreatedPayload": {},
+  "WebhookOrderPaidPayload": {},
+  "WebhookOrderRefundedPayload": {},
+  "WebhookOrderUpdatedPayload": {},
+  "WebhookOrganizationUpdatedPayload": {},
+  "WebhookProductCreatedPayload": {},
+  "WebhookProductUpdatedPayload": {},
+  "WebhookRefundCreatedPayload": {},
+  "WebhookRefundUpdatedPayload": {},
+  "WebhookSubscriptionActivePayload": {},
+  "WebhookSubscriptionCanceledPayload": {},
+  "WebhookSubscriptionCreatedPayload": {},
+  "WebhookSubscriptionCycledPayload": {},
+  "WebhookSubscriptionMigratedPayload": {},
+  "WebhookSubscriptionPastDuePayload": {},
+  "WebhookSubscriptionPausedPayload": {},
+  "WebhookSubscriptionResumedPayload": {},
+  "WebhookSubscriptionRevokedPayload": {},
+  "WebhookSubscriptionUncanceledPayload": {},
+  "WebhookSubscriptionUpdatedPayload": {},
+  "_KNOWN_EVENT_TYPES": [],
+  "_load_payload": [
+    "data"
+  ],
+  "HTTPValidationError": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CannotCreateOrganizationError": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "ResourceNotFound": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "OrganizationsUpdate403Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "SSOEnforcementRequiresConnection": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "AlreadyCanceledSubscription": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "SubscriptionLocked": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "SubscriptionsUpdate402Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "SubscriptionsUpdate403Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "SubscriptionsUpdate409Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "NotPermitted": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "ProductNotDeletable": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "OrdersFinalize402Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "OrdersFinalize403Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "OrderNotDraft": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "OrderNotEligibleForInvoice": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "MissingInvoiceBillingDetails": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "RefundedAlready": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "DisputeNotOpenError": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CheckoutsUpdate403Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "ExpiredCheckoutError": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CheckoutsClientUpdate403Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CheckoutLocked": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "PaymentError": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CheckoutsClientConfirm403Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "Unauthorized": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "RotateNotPermitted": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "BadRequest": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "AmbiguousExternalCustomerID": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "PaymentMethodSetupFailed": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerNotReady": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "PaymentMethodInUseByActiveSubscription": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerPortalCustomersCheckEmailUpdate401Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerPortalCustomersVerifyEmailUpdate401Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerPortalCustomersVerifyEmailUpdate422Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerPortalSeatsListSeats401Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerPortalSeatsListSeats403Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerPortalSeatsListSeats404Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerPortalSeatsAssignSeat400Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerPortalSeatsAssignSeat401Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerPortalSeatsAssignSeat403Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerPortalSeatsAssignSeat404Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerPortalSeatsRevokeSeat401Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerPortalSeatsRevokeSeat403Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerPortalSeatsRevokeSeat404Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerPortalSeatsResendInvitation400Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerPortalSeatsResendInvitation401Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerPortalSeatsResendInvitation403Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerPortalSeatsResendInvitation404Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerPortalSeatsListClaimedSubscriptions401Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerPortalMembersListMembers401Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerPortalMembersListMembers403Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerPortalMembersAddMember400Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerPortalMembersAddMember401Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerPortalMembersAddMember403Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerPortalMembersRemoveMember400Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerPortalMembersRemoveMember401Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerPortalMembersRemoveMember403Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerPortalMembersRemoveMember404Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerPortalMembersUpdateMember400Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerPortalMembersUpdateMember401Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerPortalMembersUpdateMember403Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerPortalMembersUpdateMember404Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "PaymentAlreadyInProgress": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "OrderNotEligibleForRetry": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "ManualRetryLimitExceeded": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "PaymentFailed": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerPortalSubscriptionsUpdate403Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerPortalSubscriptionsUpdate409Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerSeatsListSeats401Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerSeatsListSeats403Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerSeatsListSeats404Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerSeatsAssignSeat400Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerSeatsAssignSeat401Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerSeatsAssignSeat403Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerSeatsAssignSeat404Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerSeatsRevokeSeat401Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerSeatsRevokeSeat403Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerSeatsRevokeSeat404Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerSeatsResendInvitation400Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerSeatsResendInvitation401Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerSeatsResendInvitation403Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerSeatsResendInvitation404Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerSeatsGetClaimInfo400Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerSeatsGetClaimInfo403Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerSeatsGetClaimInfo404Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerSeatsClaimSeat400Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "CustomerSeatsClaimSeat403Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "EventTypesUpdate404Error": {
+    "error_type": [],
+    "__init__": [
+      "self",
+      "status_code",
+      "error"
+    ]
+  },
+  "AddressInput": {},
+  "AttachedCustomFieldCreate": {},
+  "BenefitCustomCreate": {},
+  "BenefitCustomCreateProperties": {},
+  "BenefitCustomProperties": {},
+  "BenefitCustomUpdate": {},
+  "BenefitDiscordCreate": {},
+  "BenefitDiscordCreateProperties": {},
+  "BenefitDiscordUpdate": {},
+  "BenefitDownloadablesCreate": {},
+  "BenefitDownloadablesCreateProperties": {},
+  "BenefitDownloadablesUpdate": {},
+  "BenefitFeatureFlagCreate": {},
+  "BenefitFeatureFlagCreateProperties": {},
+  "BenefitFeatureFlagProperties": {},
+  "BenefitFeatureFlagUpdate": {},
+  "BenefitGitHubRepositoryCreate": {},
+  "BenefitGitHubRepositoryCreateProperties": {},
+  "BenefitGitHubRepositoryUpdate": {},
+  "BenefitLicenseKeyActivationCreateProperties": {},
+  "BenefitLicenseKeyExpirationProperties": {},
+  "BenefitLicenseKeysCreate": {},
+  "BenefitLicenseKeysCreateProperties": {},
+  "BenefitLicenseKeysUpdate": {},
+  "BenefitMeterCreditCreate": {},
+  "BenefitMeterCreditCreateProperties": {},
+  "BenefitMeterCreditUpdate": {},
+  "BenefitSlackSharedChannelCreate": {},
+  "BenefitSlackSharedChannelCreateProperties": {},
+  "BenefitSlackSharedChannelUpdate": {},
+  "CheckoutConfirmStripe": {},
+  "CheckoutCreate": {},
+  "CheckoutLinkCreateProduct": {},
+  "CheckoutLinkCreateProductPrice": {},
+  "CheckoutLinkCreateProducts": {},
+  "CheckoutLinkUpdate": {},
+  "CheckoutUpdate": {},
+  "CheckoutUpdatePublic": {},
+  "CostMetadataInput": {},
+  "CountAggregation": {},
+  "CustomFieldCheckboxProperties": {},
+  "CustomFieldCreateCheckbox": {},
+  "CustomFieldCreateDate": {},
+  "CustomFieldCreateNumber": {},
+  "CustomFieldCreateSelect": {},
+  "CustomFieldCreateText": {},
+  "CustomFieldDateProperties": {},
+  "CustomFieldNumberProperties": {},
+  "CustomFieldSelectOption": {},
+  "CustomFieldSelectProperties": {},
+  "CustomFieldTextProperties": {},
+  "CustomFieldUpdateCheckbox": {},
+  "CustomFieldUpdateDate": {},
+  "CustomFieldUpdateNumber": {},
+  "CustomFieldUpdateSelect": {},
+  "CustomFieldUpdateText": {},
+  "CustomerBenefitGrantCustomUpdate": {},
+  "CustomerBenefitGrantDiscordPropertiesUpdate": {},
+  "CustomerBenefitGrantDiscordUpdate": {},
+  "CustomerBenefitGrantDownloadablesUpdate": {},
+  "CustomerBenefitGrantFeatureFlagUpdate": {},
+  "CustomerBenefitGrantGitHubRepositoryPropertiesUpdate": {},
+  "CustomerBenefitGrantGitHubRepositoryUpdate": {},
+  "CustomerBenefitGrantLicenseKeysUpdate": {},
+  "CustomerBenefitGrantMeterCreditUpdate": {},
+  "CustomerBenefitGrantSlackSharedChannelPropertiesUpdate": {},
+  "CustomerBenefitGrantSlackSharedChannelUpdate": {},
+  "CustomerEmailUpdateRequest": {},
+  "CustomerEmailUpdateVerifyRequest": {},
+  "CustomerIndividualCreate": {},
+  "CustomerOrderConfirmPayment": {},
+  "CustomerOrderUpdate": {},
+  "CustomerPaymentMethodConfirm": {},
+  "CustomerPaymentMethodCreate": {},
+  "CustomerPortalCustomerSettings": {},
+  "CustomerPortalCustomerUpdate": {},
+  "CustomerPortalMemberCreate": {},
+  "CustomerPortalMemberUpdate": {},
+  "CustomerPortalSubscriptionSettings": {},
+  "CustomerPortalUsageSettings": {},
+  "CustomerSeatAssign": {},
+  "CustomerSessionCustomerExternalIDCreate": {},
+  "CustomerSessionCustomerIDCreate": {},
+  "CustomerSubscriptionCancel": {},
+  "CustomerSubscriptionPause": {},
+  "CustomerSubscriptionResume": {},
+  "CustomerSubscriptionUpdateClear": {},
+  "CustomerSubscriptionUpdateProduct": {},
+  "CustomerSubscriptionUpdateSeats": {},
+  "CustomerSubscriptionUpdateUnits": {},
+  "CustomerTeamCreate": {},
+  "CustomerUpdate": {},
+  "CustomerUpdateExternalID": {},
+  "DiscountFixedCreate": {},
+  "DiscountPercentageCreate": {},
+  "DiscountUpdate": {},
+  "DownloadableFileCreate": {},
+  "EventCreateCustomer": {},
+  "EventCreateExternalCustomer": {},
+  "EventMetadataInput": {},
+  "EventTypeUpdate": {},
+  "EventsIngest": {},
+  "ExistingProductPrice": {},
+  "FilePatch": {},
+  "FileUploadCompleted": {},
+  "Filter": {},
+  "FilterClause": {},
+  "LLMMetadata": {},
+  "LicenseKeyActivate": {},
+  "LicenseKeyDeactivate": {},
+  "LicenseKeyUpdate": {},
+  "LicenseKeyValidate": {},
+  "MemberCreateFromCustomer": {},
+  "MemberOwnerCreate": {},
+  "MemberUpdate": {},
+  "MeterCreate": {},
+  "MeterUpdate": {},
+  "MetricDashboardCreate": {},
+  "MetricDashboardUpdate": {},
+  "OAuth2ClientConfiguration": {},
+  "OAuth2ClientConfigurationUpdate": {},
+  "OrderCreate": {},
+  "OrderFinalize": {},
+  "OrderUpdate": {},
+  "OrganizationAvatarFileCreate": {},
+  "OrganizationCompanyLegalEntitySchema": {},
+  "OrganizationCreate": {},
+  "OrganizationCustomerEmailSettings": {},
+  "OrganizationCustomerPortalSettings": {},
+  "OrganizationDetails": {},
+  "OrganizationDisputeSettingsUpdate": {},
+  "OrganizationFeatureSettingsUpdate": {},
+  "OrganizationIndividualLegalEntitySchema": {},
+  "OrganizationSocialLink": {},
+  "OrganizationSubscriptionSettings": {},
+  "OrganizationUpdate": {},
+  "ProductBenefitsUpdate": {},
+  "ProductCreateOneTime": {},
+  "ProductCreateRecurring": {},
+  "ProductMediaFileCreate": {},
+  "ProductPriceCustomCreate": {},
+  "ProductPriceFixedCreate": {},
+  "ProductPriceMeteredTiersCreate": {},
+  "ProductPriceMeteredUnitCreate": {},
+  "ProductPriceSeatBasedCreate": {},
+  "ProductPriceSeatTier": {},
+  "ProductPriceSeatTiersInput": {},
+  "ProductPriceUnitBasedCreate": {},
+  "ProductUpdate": {},
+  "PropertyAggregation": {},
+  "RefundCreate": {},
+  "S3FileCreateMultipart": {},
+  "S3FileCreatePart": {},
+  "S3FileUploadCompletedPart": {},
+  "SeatAssign": {},
+  "SeatClaim": {},
+  "SubscriptionCancel": {},
+  "SubscriptionCreateCustomer": {},
+  "SubscriptionCreateExternalCustomer": {},
+  "SubscriptionPause": {},
+  "SubscriptionResume": {},
+  "SubscriptionRevoke": {},
+  "SubscriptionUpdateBase": {},
+  "SubscriptionUpdateBillingPeriod": {},
+  "SubscriptionUpdateClear": {},
+  "SubscriptionUpdateSeats": {},
+  "SubscriptionUpdateUnits": {},
+  "SupportCaseAttachmentFileCreate": {},
+  "TierInput": {},
+  "TiersInput": {},
+  "UniqueAggregation": {},
+  "WebhookEndpointCreate": {},
+  "WebhookEndpointUpdate": {},
+  "Environment": [],
+  "Polar": {
+    "__init__": [
+      "self",
+      "access_token"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ]
+  },
+  "PolarAsync": {
+    "__init__": [
+      "self",
+      "access_token"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ]
+  },
+  "Address": {},
+  "AddressDict": {},
+  "AlreadyActiveSubscriptionError": {},
+  "AttachedCustomField": {},
+  "AuthorizeOrganization": {},
+  "AuthorizeResponseOrganization": {},
+  "AuthorizeResponseUser": {},
+  "AuthorizeUser": {},
+  "BalanceCreditOrderEvent": {},
+  "BalanceCreditOrderMetadata": {},
+  "BalanceDisputeEvent": {},
+  "BalanceDisputeMetadata": {},
+  "BalanceDisputeReversalEvent": {},
+  "BalanceOrderEvent": {},
+  "BalanceOrderMetadata": {},
+  "BalanceRefundEvent": {},
+  "BalanceRefundMetadata": {},
+  "BalanceRefundReversalEvent": {},
+  "BenefitCustom": {},
+  "BenefitCustomPublic": {},
+  "BenefitCustomSubscriber": {},
+  "BenefitCustomSubscriberProperties": {},
+  "BenefitCycledEvent": {},
+  "BenefitDiscord": {},
+  "BenefitDiscordProperties": {},
+  "BenefitDiscordPublic": {},
+  "BenefitDiscordSubscriber": {},
+  "BenefitDiscordSubscriberProperties": {},
+  "BenefitDownloadableFile": {},
+  "BenefitDownloadables": {},
+  "BenefitDownloadablesProperties": {},
+  "BenefitDownloadablesPublic": {},
+  "BenefitDownloadablesSubscriber": {},
+  "BenefitDownloadablesSubscriberProperties": {},
+  "BenefitFeatureFlag": {},
+  "BenefitFeatureFlagPublic": {},
+  "BenefitFeatureFlagSubscriber": {},
+  "BenefitFeatureFlagSubscriberProperties": {},
+  "BenefitGitHubRepository": {},
+  "BenefitGitHubRepositoryProperties": {},
+  "BenefitGitHubRepositoryPublic": {},
+  "BenefitGitHubRepositorySubscriber": {},
+  "BenefitGitHubRepositorySubscriberProperties": {},
+  "BenefitGrant": {},
+  "BenefitGrantCustomProperties": {},
+  "BenefitGrantCustomWebhook": {},
+  "BenefitGrantDiscordProperties": {},
+  "BenefitGrantDiscordWebhook": {},
+  "BenefitGrantDownloadablesProperties": {},
+  "BenefitGrantDownloadablesWebhook": {},
+  "BenefitGrantError": {},
+  "BenefitGrantFeatureFlagProperties": {},
+  "BenefitGrantFeatureFlagWebhook": {},
+  "BenefitGrantGitHubRepositoryProperties": {},
+  "BenefitGrantGitHubRepositoryWebhook": {},
+  "BenefitGrantLicenseKeysProperties": {},
+  "BenefitGrantLicenseKeysWebhook": {},
+  "BenefitGrantMetadata": {},
+  "BenefitGrantMeterCreditProperties": {},
+  "BenefitGrantMeterCreditWebhook": {},
+  "BenefitGrantSlackSharedChannelProperties": {},
+  "BenefitGrantSlackSharedChannelWebhook": {},
+  "BenefitGrantedEvent": {},
+  "BenefitLicenseKeyActivationProperties": {},
+  "BenefitLicenseKeys": {},
+  "BenefitLicenseKeysProperties": {},
+  "BenefitLicenseKeysPublic": {},
+  "BenefitLicenseKeysSubscriber": {},
+  "BenefitLicenseKeysSubscriberProperties": {},
+  "BenefitMeterCredit": {},
+  "BenefitMeterCreditProperties": {},
+  "BenefitMeterCreditPublic": {},
+  "BenefitMeterCreditPublicProperties": {},
+  "BenefitMeterCreditSubscriber": {},
+  "BenefitMeterCreditSubscriberProperties": {},
+  "BenefitRevokedEvent": {},
+  "BenefitSlackSharedChannel": {},
+  "BenefitSlackSharedChannelProperties": {},
+  "BenefitSlackSharedChannelPublic": {},
+  "BenefitSlackSharedChannelSubscriber": {},
+  "BenefitSlackSharedChannelSubscriberProperties": {},
+  "BenefitSubscriberOrganization": {},
+  "BenefitUpdatedEvent": {},
+  "CardPayment": {},
+  "CardPaymentMetadata": {},
+  "Checkout": {},
+  "CheckoutBillingAddressFields": {},
+  "CheckoutCreatedEvent": {},
+  "CheckoutCreatedMetadata": {},
+  "CheckoutDiscountFixedOnceForeverDuration": {},
+  "CheckoutDiscountFixedRepeatDuration": {},
+  "CheckoutDiscountPercentageOnceForeverDuration": {},
+  "CheckoutDiscountPercentageRepeatDuration": {},
+  "CheckoutLink": {},
+  "CheckoutLinkProduct": {},
+  "CheckoutOrganization": {},
+  "CheckoutProduct": {},
+  "CheckoutPublic": {},
+  "CheckoutPublicConfirmed": {},
+  "Context": {},
+  "CostMetadataOutput": {},
+  "CursorPagination": {},
+  "CustomFieldCheckbox": {},
+  "CustomFieldDate": {},
+  "CustomFieldNumber": {},
+  "CustomFieldSelect": {},
+  "CustomFieldText": {},
+  "CustomerBenefitGrantCustom": {},
+  "CustomerBenefitGrantDiscord": {},
+  "CustomerBenefitGrantDownloadables": {},
+  "CustomerBenefitGrantFeatureFlag": {},
+  "CustomerBenefitGrantGitHubRepository": {},
+  "CustomerBenefitGrantLicenseKeys": {},
+  "CustomerBenefitGrantMember": {},
+  "CustomerBenefitGrantMeterCredit": {},
+  "CustomerBenefitGrantSlackSharedChannel": {},
+  "CustomerCreatedEvent": {},
+  "CustomerCreatedMetadata": {},
+  "CustomerCustomerMeter": {},
+  "CustomerCustomerMeterMeter": {},
+  "CustomerCustomerSession": {},
+  "CustomerDeletedEvent": {},
+  "CustomerDeletedMetadata": {},
+  "CustomerEmailUpdateVerifyResponse": {},
+  "CustomerIndividual": {},
+  "CustomerMeter": {},
+  "CustomerOrder": {},
+  "CustomerOrderInvoice": {},
+  "CustomerOrderPaymentConfirmation": {},
+  "CustomerOrderPaymentStatus": {},
+  "CustomerOrderProduct": {},
+  "CustomerOrderReceipt": {},
+  "CustomerOrderSubscription": {},
+  "CustomerOrganization": {},
+  "CustomerOrganizationData": {},
+  "CustomerOrganizationFeatureSettings": {},
+  "CustomerPaymentMethodCard": {},
+  "CustomerPaymentMethodCreateRequiresActionResponse": {},
+  "CustomerPaymentMethodCreateSucceededResponse": {},
+  "CustomerPaymentMethodGeneric": {},
+  "CustomerPaymentMethodKrCard": {},
+  "CustomerPortalCustomer": {},
+  "CustomerPortalMember": {},
+  "CustomerPortalOAuthAccount": {},
+  "CustomerProduct": {},
+  "CustomerSeat": {},
+  "CustomerSeatClaimResponse": {},
+  "CustomerSession": {},
+  "CustomerStateBenefitGrant": {},
+  "CustomerStateIndividual": {},
+  "CustomerStateMeter": {},
+  "CustomerStateSubscription": {},
+  "CustomerStateSubscriptionMeter": {},
+  "CustomerStateTeam": {},
+  "CustomerSubscription": {},
+  "CustomerSubscriptionMeter": {},
+  "CustomerSubscriptionMeterMeter": {},
+  "CustomerSubscriptionProduct": {},
+  "CustomerTeam": {},
+  "CustomerUpdatedEvent": {},
+  "CustomerUpdatedFields": {},
+  "CustomerUpdatedMetadata": {},
+  "CustomerWallet": {},
+  "DiscountFixedOnceForeverDuration": {},
+  "DiscountFixedOnceForeverDurationBase": {},
+  "DiscountFixedRepeatDuration": {},
+  "DiscountFixedRepeatDurationBase": {},
+  "DiscountPercentageOnceForeverDuration": {},
+  "DiscountPercentageOnceForeverDurationBase": {},
+  "DiscountPercentageRepeatDuration": {},
+  "DiscountPercentageRepeatDurationBase": {},
+  "DiscountProduct": {},
+  "DiscountRedemptionLimitReached": {},
+  "Dispute": {},
+  "DisputeAutoAcceptNotEnabled": {},
+  "DisputeCustomer": {},
+  "DownloadableFileRead": {},
+  "DownloadableRead": {},
+  "EventMetadataOutput": {},
+  "EventName": {},
+  "EventType": {},
+  "EventTypeWithStats": {},
+  "EventsIngestResponse": {},
+  "FileDownload": {},
+  "FileUpload": {},
+  "GenericPayment": {},
+  "GrantedLicenseKey": {},
+  "InactiveSubscription": {},
+  "IntrospectTokenResponse": {},
+  "KrCardPayment": {},
+  "KrCardPaymentMetadata": {},
+  "LegacyRecurringProductPriceCustom": {},
+  "LegacyRecurringProductPriceFixed": {},
+  "LicenseKeyActivationBase": {},
+  "LicenseKeyActivationCreated": {},
+  "LicenseKeyActivationRead": {},
+  "LicenseKeyCustomer": {},
+  "LicenseKeyRead": {},
+  "LicenseKeyWithActivations": {},
+  "ListResourceBenefit": {},
+  "ListResourceBenefitDownloadableFile": {},
+  "ListResourceBenefitGrant": {},
+  "ListResourceCheckout": {},
+  "ListResourceCheckoutLink": {},
+  "ListResourceCustomField": {},
+  "ListResourceCustomer": {},
+  "ListResourceCustomerBenefitGrant": {},
+  "ListResourceCustomerCustomerMeter": {},
+  "ListResourceCustomerMeter": {},
+  "ListResourceCustomerOrder": {},
+  "ListResourceCustomerPaymentMethod": {},
+  "ListResourceCustomerPortalMember": {},
+  "ListResourceCustomerSubscription": {},
+  "ListResourceCustomerWallet": {},
+  "ListResourceDiscount": {},
+  "ListResourceDispute": {},
+  "ListResourceDownloadableRead": {},
+  "ListResourceEvent": {},
+  "ListResourceEventName": {},
+  "ListResourceEventTypeWithStats": {},
+  "ListResourceFileRead": {},
+  "ListResourceLicenseKeyRead": {},
+  "ListResourceMember": {},
+  "ListResourceMeter": {},
+  "ListResourceOrder": {},
+  "ListResourceOrganization": {},
+  "ListResourcePayment": {},
+  "ListResourcePaymentMethod": {},
+  "ListResourceProduct": {},
+  "ListResourceRefund": {},
+  "ListResourceSubscription": {},
+  "ListResourceWebhookDelivery": {},
+  "ListResourceWebhookEndpoint": {},
+  "ListResourceWithCursorPaginationEvent": {},
+  "Member": {},
+  "Meter": {},
+  "MeterCreditEvent": {},
+  "MeterCreditedMetadata": {},
+  "MeterQuantities": {},
+  "MeterQuantity": {},
+  "MeterResetEvent": {},
+  "MeterResetMetadata": {},
+  "Metric": {},
+  "MetricDashboardSchema": {},
+  "MetricPeriod": {},
+  "Metrics": {},
+  "MetricsIntervalLimit": {},
+  "MetricsIntervalsLimits": {},
+  "MetricsLimits": {},
+  "MetricsResponse": {},
+  "MetricsTotals": {},
+  "NotOpenCheckout": {},
+  "OAuth2ClientPublic": {},
+  "OffSessionChargesNotEnabled": {},
+  "Order": {},
+  "OrderCustomer": {},
+  "OrderInvoice": {},
+  "OrderItemSchema": {},
+  "OrderPaidEvent": {},
+  "OrderPaidMetadata": {},
+  "OrderProduct": {},
+  "OrderReceipt": {},
+  "OrderRefundedEvent": {},
+  "OrderRefundedMetadata": {},
+  "OrderSubscription": {},
+  "OrderUnvoidedEvent": {},
+  "OrderUnvoidedMetadata": {},
+  "OrderVoidedEvent": {},
+  "OrderVoidedMetadata": {},
+  "Organization": {},
+  "OrganizationAvatarFileRead": {},
+  "OrganizationCapabilities": {},
+  "OrganizationDisputeSettings": {},
+  "OrganizationFeatureSettings": {},
+  "OrganizationNotReadyForPayments": {},
+  "Pagination": {},
+  "PauseResumeNotAllowed": {},
+  "PaymentActionRequired": {},
+  "PaymentMethodCard": {},
+  "PaymentMethodCardMetadata": {},
+  "PaymentMethodGeneric": {},
+  "PaymentMethodKrCard": {},
+  "PaymentMethodKrCardMetadata": {},
+  "PaymentMethodRequired": {},
+  "PaymentNotReady": {},
+  "PendingSubscriptionUpdate": {},
+  "PortalAuthenticatedUser": {},
+  "Product": {},
+  "ProductMediaFileRead": {},
+  "ProductPriceCustom": {},
+  "ProductPriceFixed": {},
+  "ProductPriceMeter": {},
+  "ProductPriceMeteredTiers": {},
+  "ProductPriceMeteredUnit": {},
+  "ProductPriceSeatBased": {},
+  "ProductPriceSeatTiersOutput": {},
+  "ProductPriceUnitBased": {},
+  "Refund": {},
+  "RefundDispute": {},
+  "RevokeTokenResponse": {},
+  "RotatedLicenseKey": {},
+  "S3DownloadURL": {},
+  "S3FileUploadMultipart": {},
+  "S3FileUploadPart": {},
+  "SeatClaimInfo": {},
+  "SeatsList": {},
+  "Subscription": {},
+  "SubscriptionBillingPeriodUpdatedEvent": {},
+  "SubscriptionBillingPeriodUpdatedMetadata": {},
+  "SubscriptionCanceledEvent": {},
+  "SubscriptionCanceledMetadata": {},
+  "SubscriptionCreatedEvent": {},
+  "SubscriptionCreatedMetadata": {},
+  "SubscriptionCustomer": {},
+  "SubscriptionCycledEvent": {},
+  "SubscriptionCycledMetadata": {},
+  "SubscriptionMeter": {},
+  "SubscriptionMigratedEvent": {},
+  "SubscriptionMigratedMetadata": {},
+  "SubscriptionNotScheduledToCancel": {},
+  "SubscriptionPastDueEvent": {},
+  "SubscriptionPastDueMetadata": {},
+  "SubscriptionPausedEvent": {},
+  "SubscriptionPausedMetadata": {},
+  "SubscriptionProductUpdatedEvent": {},
+  "SubscriptionProductUpdatedMetadata": {},
+  "SubscriptionReactivatedEvent": {},
+  "SubscriptionReactivatedMetadata": {},
+  "SubscriptionReinstatedEvent": {},
+  "SubscriptionReinstatedMetadata": {},
+  "SubscriptionResumedEvent": {},
+  "SubscriptionResumedMetadata": {},
+  "SubscriptionRevokedEvent": {},
+  "SubscriptionRevokedMetadata": {},
+  "SubscriptionSeatsUpdatedEvent": {},
+  "SubscriptionSeatsUpdatedMetadata": {},
+  "SubscriptionUncanceledEvent": {},
+  "SubscriptionUncanceledMetadata": {},
+  "SubscriptionUnitsUpdatedEvent": {},
+  "SubscriptionUnitsUpdatedMetadata": {},
+  "SubscriptionUpdateClearedEvent": {},
+  "SubscriptionUpdateClearedMetadata": {},
+  "SubscriptionUpdatedEvent": {},
+  "SubscriptionUpdatedMetadata": {},
+  "SupportCaseAttachmentFileRead": {},
+  "Tier": {},
+  "Tiers": {},
+  "TokenResponse": {},
+  "TrialAlreadyRedeemed": {},
+  "UpdateSubscriptionPlanNotAllowed": {},
+  "UpdateSubscriptionSeatsNotAllowed": {},
+  "UpdateSubscriptionUnitsNotAllowed": {},
+  "UserEvent": {},
+  "UserInfoOrganization": {},
+  "UserInfoUser": {},
+  "ValidatedLicenseKey": {},
+  "ValidationError": {},
+  "WebhookDelivery": {},
+  "WebhookEndpoint": {},
+  "WebhookEvent": {},
+  "PaymentsSync": {
+    "list": [
+      "self"
+    ],
+    "iter_list": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "id"
+    ]
+  },
+  "PaymentsAsync": {
+    "list": [
+      "self"
+    ],
+    "iter_list": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "id"
+    ]
+  },
+  "CustomerMetersSync": {
+    "list": [
+      "self"
+    ],
+    "iter_list": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "id"
+    ]
+  },
+  "CustomerMetersAsync": {
+    "list": [
+      "self"
+    ],
+    "iter_list": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "id"
+    ]
+  },
+  "DisputesSync": {
+    "list": [
+      "self"
+    ],
+    "iter_list": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "id"
+    ],
+    "accept": [
+      "self",
+      "id"
+    ]
+  },
+  "DisputesAsync": {
+    "list": [
+      "self"
+    ],
+    "iter_list": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "id"
+    ],
+    "accept": [
+      "self",
+      "id"
+    ]
+  },
+  "SubscriptionsSync": {
+    "list": [
+      "self"
+    ],
+    "iter_list": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "export": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "id"
+    ],
+    "revoke": [
+      "self",
+      "id"
+    ],
+    "update": [
+      "self",
+      "id"
+    ]
+  },
+  "SubscriptionsAsync": {
+    "list": [
+      "self"
+    ],
+    "iter_list": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "export": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "id"
+    ],
+    "revoke": [
+      "self",
+      "id"
+    ],
+    "update": [
+      "self",
+      "id"
+    ]
+  },
+  "MetricsSync": {
+    "get": [
+      "self"
+    ],
+    "export": [
+      "self"
+    ],
+    "limits": [
+      "self"
+    ],
+    "list_dashboards": [
+      "self"
+    ],
+    "create_dashboard": [
+      "self"
+    ],
+    "get_dashboard": [
+      "self",
+      "id"
+    ],
+    "delete_dashboard": [
+      "self",
+      "id"
+    ],
+    "update_dashboard": [
+      "self",
+      "id"
+    ]
+  },
+  "MetricsAsync": {
+    "get": [
+      "self"
+    ],
+    "export": [
+      "self"
+    ],
+    "limits": [
+      "self"
+    ],
+    "list_dashboards": [
+      "self"
+    ],
+    "create_dashboard": [
+      "self"
+    ],
+    "get_dashboard": [
+      "self",
+      "id"
+    ],
+    "delete_dashboard": [
+      "self",
+      "id"
+    ],
+    "update_dashboard": [
+      "self",
+      "id"
+    ]
+  },
+  "CustomerSessionsSync": {
+    "create": [
+      "self"
+    ]
+  },
+  "CustomerSessionsAsync": {
+    "create": [
+      "self"
+    ]
+  },
+  "CustomerSeatsSync": {
+    "list_seats": [
+      "self"
+    ],
+    "assign_seat": [
+      "self"
+    ],
+    "revoke_seat": [
+      "self",
+      "seat_id"
+    ],
+    "resend_invitation": [
+      "self",
+      "seat_id"
+    ],
+    "get_claim_info": [
+      "self",
+      "invitation_token"
+    ],
+    "claim_seat": [
+      "self"
+    ]
+  },
+  "CustomerSeatsAsync": {
+    "list_seats": [
+      "self"
+    ],
+    "assign_seat": [
+      "self"
+    ],
+    "revoke_seat": [
+      "self",
+      "seat_id"
+    ],
+    "resend_invitation": [
+      "self",
+      "seat_id"
+    ],
+    "get_claim_info": [
+      "self",
+      "invitation_token"
+    ],
+    "claim_seat": [
+      "self"
+    ]
+  },
+  "ProductsSync": {
+    "list": [
+      "self"
+    ],
+    "iter_list": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "id"
+    ],
+    "delete": [
+      "self",
+      "id"
+    ],
+    "update": [
+      "self",
+      "id"
+    ],
+    "update_benefits": [
+      "self",
+      "id"
+    ]
+  },
+  "ProductsAsync": {
+    "list": [
+      "self"
+    ],
+    "iter_list": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "id"
+    ],
+    "delete": [
+      "self",
+      "id"
+    ],
+    "update": [
+      "self",
+      "id"
+    ],
+    "update_benefits": [
+      "self",
+      "id"
+    ]
+  },
+  "CheckoutsSync": {
+    "list": [
+      "self"
+    ],
+    "iter_list": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "id"
+    ],
+    "update": [
+      "self",
+      "id"
+    ],
+    "client_get": [
+      "self",
+      "client_secret"
+    ],
+    "client_update": [
+      "self",
+      "client_secret"
+    ],
+    "client_confirm": [
+      "self",
+      "client_secret"
+    ]
+  },
+  "CheckoutsAsync": {
+    "list": [
+      "self"
+    ],
+    "iter_list": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "id"
+    ],
+    "update": [
+      "self",
+      "id"
+    ],
+    "client_get": [
+      "self",
+      "client_secret"
+    ],
+    "client_update": [
+      "self",
+      "client_secret"
+    ],
+    "client_confirm": [
+      "self",
+      "client_secret"
+    ]
+  },
+  "EventTypesSync": {
+    "list": [
+      "self"
+    ],
+    "iter_list": [
+      "self"
+    ],
+    "update": [
+      "self",
+      "id"
+    ]
+  },
+  "EventTypesAsync": {
+    "list": [
+      "self"
+    ],
+    "iter_list": [
+      "self"
+    ],
+    "update": [
+      "self",
+      "id"
+    ]
+  },
+  "CustomFieldsSync": {
+    "list": [
+      "self"
+    ],
+    "iter_list": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "id"
+    ],
+    "delete": [
+      "self",
+      "id"
+    ],
+    "update": [
+      "self",
+      "id"
+    ]
+  },
+  "CustomFieldsAsync": {
+    "list": [
+      "self"
+    ],
+    "iter_list": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "id"
+    ],
+    "delete": [
+      "self",
+      "id"
+    ],
+    "update": [
+      "self",
+      "id"
+    ]
+  },
+  "CheckoutLinksSync": {
+    "list": [
+      "self"
+    ],
+    "iter_list": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "id"
+    ],
+    "delete": [
+      "self",
+      "id"
+    ],
+    "update": [
+      "self",
+      "id"
+    ]
+  },
+  "CheckoutLinksAsync": {
+    "list": [
+      "self"
+    ],
+    "iter_list": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "id"
+    ],
+    "delete": [
+      "self",
+      "id"
+    ],
+    "update": [
+      "self",
+      "id"
+    ]
+  },
+  "WebhooksSync": {
+    "list_webhook_endpoints": [
+      "self"
+    ],
+    "iter_list_webhook_endpoints": [
+      "self"
+    ],
+    "create_webhook_endpoint": [
+      "self"
+    ],
+    "get_webhook_endpoint": [
+      "self",
+      "id"
+    ],
+    "delete_webhook_endpoint": [
+      "self",
+      "id"
+    ],
+    "update_webhook_endpoint": [
+      "self",
+      "id"
+    ],
+    "reset_webhook_endpoint_secret": [
+      "self",
+      "id"
+    ],
+    "list_webhook_deliveries": [
+      "self"
+    ],
+    "iter_list_webhook_deliveries": [
+      "self"
+    ],
+    "redeliver_webhook_event": [
+      "self",
+      "id"
+    ]
+  },
+  "WebhooksAsync": {
+    "list_webhook_endpoints": [
+      "self"
+    ],
+    "iter_list_webhook_endpoints": [
+      "self"
+    ],
+    "create_webhook_endpoint": [
+      "self"
+    ],
+    "get_webhook_endpoint": [
+      "self",
+      "id"
+    ],
+    "delete_webhook_endpoint": [
+      "self",
+      "id"
+    ],
+    "update_webhook_endpoint": [
+      "self",
+      "id"
+    ],
+    "reset_webhook_endpoint_secret": [
+      "self",
+      "id"
+    ],
+    "list_webhook_deliveries": [
+      "self"
+    ],
+    "iter_list_webhook_deliveries": [
+      "self"
+    ],
+    "redeliver_webhook_event": [
+      "self",
+      "id"
+    ]
+  },
+  "OrganizationsSync": {
+    "list": [
+      "self"
+    ],
+    "iter_list": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "id"
+    ],
+    "update": [
+      "self",
+      "id"
+    ]
+  },
+  "OrganizationsAsync": {
+    "list": [
+      "self"
+    ],
+    "iter_list": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "id"
+    ],
+    "update": [
+      "self",
+      "id"
+    ]
+  },
+  "MetersSync": {
+    "list": [
+      "self"
+    ],
+    "iter_list": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "id"
+    ],
+    "update": [
+      "self",
+      "id"
+    ],
+    "quantities": [
+      "self",
+      "id"
+    ]
+  },
+  "MetersAsync": {
+    "list": [
+      "self"
+    ],
+    "iter_list": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "id"
+    ],
+    "update": [
+      "self",
+      "id"
+    ],
+    "quantities": [
+      "self",
+      "id"
+    ]
+  },
+  "LicenseKeysSync": {
+    "list": [
+      "self"
+    ],
+    "iter_list": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "id"
+    ],
+    "update": [
+      "self",
+      "id"
+    ],
+    "rotate": [
+      "self",
+      "id"
+    ],
+    "get_activation": [
+      "self",
+      "id",
+      "activation_id"
+    ],
+    "validate": [
+      "self"
+    ],
+    "activate": [
+      "self"
+    ],
+    "deactivate": [
+      "self"
+    ]
+  },
+  "LicenseKeysAsync": {
+    "list": [
+      "self"
+    ],
+    "iter_list": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "id"
+    ],
+    "update": [
+      "self",
+      "id"
+    ],
+    "rotate": [
+      "self",
+      "id"
+    ],
+    "get_activation": [
+      "self",
+      "id",
+      "activation_id"
+    ],
+    "validate": [
+      "self"
+    ],
+    "activate": [
+      "self"
+    ],
+    "deactivate": [
+      "self"
+    ]
+  },
+  "BenefitGrantsSync": {
+    "list": [
+      "self"
+    ],
+    "iter_list": [
+      "self"
+    ]
+  },
+  "BenefitGrantsAsync": {
+    "list": [
+      "self"
+    ],
+    "iter_list": [
+      "self"
+    ]
+  },
+  "BenefitsSync": {
+    "list": [
+      "self"
+    ],
+    "iter_list": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "id"
+    ],
+    "delete": [
+      "self",
+      "id"
+    ],
+    "update": [
+      "self",
+      "id"
+    ],
+    "files": [
+      "self",
+      "id"
+    ],
+    "iter_files": [
+      "self",
+      "id"
+    ],
+    "grants": [
+      "self",
+      "id"
+    ],
+    "iter_grants": [
+      "self",
+      "id"
+    ]
+  },
+  "BenefitsAsync": {
+    "list": [
+      "self"
+    ],
+    "iter_list": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "id"
+    ],
+    "delete": [
+      "self",
+      "id"
+    ],
+    "update": [
+      "self",
+      "id"
+    ],
+    "files": [
+      "self",
+      "id"
+    ],
+    "iter_files": [
+      "self",
+      "id"
+    ],
+    "grants": [
+      "self",
+      "id"
+    ],
+    "iter_grants": [
+      "self",
+      "id"
+    ]
+  },
+  "FilesSync": {
+    "list": [
+      "self"
+    ],
+    "iter_list": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "uploaded": [
+      "self",
+      "id_path"
+    ],
+    "delete": [
+      "self",
+      "id"
+    ],
+    "update": [
+      "self",
+      "id"
+    ]
+  },
+  "FilesAsync": {
+    "list": [
+      "self"
+    ],
+    "iter_list": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "uploaded": [
+      "self",
+      "id_path"
+    ],
+    "delete": [
+      "self",
+      "id"
+    ],
+    "update": [
+      "self",
+      "id"
+    ]
+  },
+  "RefundsSync": {
+    "list": [
+      "self"
+    ],
+    "iter_list": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ]
+  },
+  "RefundsAsync": {
+    "list": [
+      "self"
+    ],
+    "iter_list": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ]
+  },
+  "DiscountsSync": {
+    "list": [
+      "self"
+    ],
+    "iter_list": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "id"
+    ],
+    "delete": [
+      "self",
+      "id"
+    ],
+    "update": [
+      "self",
+      "id"
+    ]
+  },
+  "DiscountsAsync": {
+    "list": [
+      "self"
+    ],
+    "iter_list": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "id"
+    ],
+    "delete": [
+      "self",
+      "id"
+    ],
+    "update": [
+      "self",
+      "id"
+    ]
+  },
+  "EventsSync": {
+    "list": [
+      "self"
+    ],
+    "list_names": [
+      "self"
+    ],
+    "iter_list_names": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "id"
+    ],
+    "ingest": [
+      "self"
+    ]
+  },
+  "EventsAsync": {
+    "list": [
+      "self"
+    ],
+    "list_names": [
+      "self"
+    ],
+    "iter_list_names": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "id"
+    ],
+    "ingest": [
+      "self"
+    ]
+  },
+  "OrdersSync": {
+    "list": [
+      "self"
+    ],
+    "iter_list": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "export": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "id"
+    ],
+    "update": [
+      "self",
+      "id"
+    ],
+    "finalize": [
+      "self",
+      "id"
+    ],
+    "invoice": [
+      "self",
+      "id"
+    ],
+    "generate_invoice": [
+      "self",
+      "id"
+    ],
+    "receipt": [
+      "self",
+      "id"
+    ]
+  },
+  "OrdersAsync": {
+    "list": [
+      "self"
+    ],
+    "iter_list": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "export": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "id"
+    ],
+    "update": [
+      "self",
+      "id"
+    ],
+    "finalize": [
+      "self",
+      "id"
+    ],
+    "invoice": [
+      "self",
+      "id"
+    ],
+    "generate_invoice": [
+      "self",
+      "id"
+    ],
+    "receipt": [
+      "self",
+      "id"
+    ]
+  },
+  "Oauth2Sync": {
+    "__init__": [
+      "self"
+    ],
+    "authorize": [
+      "self"
+    ],
+    "request_token": [
+      "self"
+    ],
+    "revoke_token": [
+      "self"
+    ],
+    "introspect_token": [
+      "self"
+    ],
+    "userinfo": [
+      "self"
+    ]
+  },
+  "Oauth2Async": {
+    "__init__": [
+      "self"
+    ],
+    "authorize": [
+      "self"
+    ],
+    "request_token": [
+      "self"
+    ],
+    "revoke_token": [
+      "self"
+    ],
+    "introspect_token": [
+      "self"
+    ],
+    "userinfo": [
+      "self"
+    ]
+  },
+  "ClientsSync": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "ClientsAsync": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "MembersSync": {
+    "list": [
+      "self",
+      "id"
+    ],
+    "iter_list": [
+      "self",
+      "id"
+    ],
+    "create": [
+      "self",
+      "id"
+    ],
+    "list_external": [
+      "self",
+      "external_id"
+    ],
+    "iter_list_external": [
+      "self",
+      "external_id"
+    ],
+    "create_external": [
+      "self",
+      "external_id_path"
+    ],
+    "get": [
+      "self",
+      "id",
+      "member_id"
+    ],
+    "delete": [
+      "self",
+      "id",
+      "member_id"
+    ],
+    "update": [
+      "self",
+      "id",
+      "member_id"
+    ],
+    "get_external": [
+      "self",
+      "external_id",
+      "member_external_id"
+    ],
+    "delete_external": [
+      "self",
+      "external_id",
+      "member_external_id"
+    ],
+    "update_external": [
+      "self",
+      "external_id",
+      "member_external_id"
+    ]
+  },
+  "MembersAsync": {
+    "list": [
+      "self",
+      "id"
+    ],
+    "iter_list": [
+      "self",
+      "id"
+    ],
+    "create": [
+      "self",
+      "id"
+    ],
+    "list_external": [
+      "self",
+      "external_id"
+    ],
+    "iter_list_external": [
+      "self",
+      "external_id"
+    ],
+    "create_external": [
+      "self",
+      "external_id_path"
+    ],
+    "get": [
+      "self",
+      "id",
+      "member_id"
+    ],
+    "delete": [
+      "self",
+      "id",
+      "member_id"
+    ],
+    "update": [
+      "self",
+      "id",
+      "member_id"
+    ],
+    "get_external": [
+      "self",
+      "external_id",
+      "member_external_id"
+    ],
+    "delete_external": [
+      "self",
+      "external_id",
+      "member_external_id"
+    ],
+    "update_external": [
+      "self",
+      "external_id",
+      "member_external_id"
+    ]
+  },
+  "CustomersSync": {
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ],
+    "iter_list": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "export": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "id"
+    ],
+    "delete": [
+      "self",
+      "id"
+    ],
+    "update": [
+      "self",
+      "id"
+    ],
+    "get_external": [
+      "self",
+      "external_id"
+    ],
+    "delete_external": [
+      "self",
+      "external_id"
+    ],
+    "update_external": [
+      "self",
+      "external_id"
+    ],
+    "get_state": [
+      "self",
+      "id"
+    ],
+    "get_state_external": [
+      "self",
+      "external_id"
+    ],
+    "list_payment_methods": [
+      "self",
+      "id"
+    ],
+    "iter_list_payment_methods": [
+      "self",
+      "id"
+    ],
+    "list_payment_methods_external": [
+      "self",
+      "external_id"
+    ],
+    "iter_list_payment_methods_external": [
+      "self",
+      "external_id"
+    ]
+  },
+  "CustomersAsync": {
+    "__init__": [
+      "self"
+    ],
+    "list": [
+      "self"
+    ],
+    "iter_list": [
+      "self"
+    ],
+    "create": [
+      "self"
+    ],
+    "export": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "id"
+    ],
+    "delete": [
+      "self",
+      "id"
+    ],
+    "update": [
+      "self",
+      "id"
+    ],
+    "get_external": [
+      "self",
+      "external_id"
+    ],
+    "delete_external": [
+      "self",
+      "external_id"
+    ],
+    "update_external": [
+      "self",
+      "external_id"
+    ],
+    "get_state": [
+      "self",
+      "id"
+    ],
+    "get_state_external": [
+      "self",
+      "external_id"
+    ],
+    "list_payment_methods": [
+      "self",
+      "id"
+    ],
+    "iter_list_payment_methods": [
+      "self",
+      "id"
+    ],
+    "list_payment_methods_external": [
+      "self",
+      "external_id"
+    ],
+    "iter_list_payment_methods_external": [
+      "self",
+      "external_id"
+    ]
+  },
+  "WalletsSync": {
+    "list": [
+      "self"
+    ],
+    "iter_list": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "id"
+    ]
+  },
+  "WalletsAsync": {
+    "list": [
+      "self"
+    ],
+    "iter_list": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "id"
+    ]
+  },
+  "SeatsSync": {
+    "list_seats": [
+      "self"
+    ],
+    "assign_seat": [
+      "self"
+    ],
+    "revoke_seat": [
+      "self",
+      "seat_id"
+    ],
+    "resend_invitation": [
+      "self",
+      "seat_id"
+    ],
+    "list_claimed_subscriptions": [
+      "self"
+    ],
+    "iter_list_claimed_subscriptions": [
+      "self"
+    ]
+  },
+  "SeatsAsync": {
+    "list_seats": [
+      "self"
+    ],
+    "assign_seat": [
+      "self"
+    ],
+    "revoke_seat": [
+      "self",
+      "seat_id"
+    ],
+    "resend_invitation": [
+      "self",
+      "seat_id"
+    ],
+    "list_claimed_subscriptions": [
+      "self"
+    ],
+    "iter_list_claimed_subscriptions": [
+      "self"
+    ]
+  },
+  "CustomerSessionSync": {
+    "introspect": [
+      "self"
+    ],
+    "get_authenticated_user": [
+      "self"
+    ]
+  },
+  "CustomerSessionAsync": {
+    "introspect": [
+      "self"
+    ],
+    "get_authenticated_user": [
+      "self"
+    ]
+  },
+  "DownloadablesSync": {
+    "list": [
+      "self"
+    ],
+    "iter_list": [
+      "self"
+    ]
+  },
+  "DownloadablesAsync": {
+    "list": [
+      "self"
+    ],
+    "iter_list": [
+      "self"
+    ]
+  },
+  "CustomerPortalSync": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "CustomerPortalAsync": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "LicenseKeyMember": {}
+}

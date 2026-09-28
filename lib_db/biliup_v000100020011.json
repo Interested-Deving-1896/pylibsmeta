@@ -1,0 +1,423 @@
+{
+  "main": [],
+  "logger": [],
+  "_safe_response_status": [
+    "response"
+  ],
+  "FileInfo": {},
+  "BiliWebAsync": {
+    "__init__": [
+      "self",
+      "principal",
+      "data",
+      "submit_api",
+      "copyright",
+      "postprocessor",
+      "dtime",
+      "dynamic",
+      "lines",
+      "threads",
+      "tid",
+      "tid_v2",
+      "tags",
+      "cover_path",
+      "description",
+      "dolby",
+      "hires",
+      "no_reprint",
+      "is_only_self",
+      "charging_pay",
+      "credits",
+      "user_cookie",
+      "copyright_source",
+      "extra_fields",
+      "video_queue"
+    ],
+    "upload": [
+      "self",
+      "total_size",
+      "stop_event",
+      "output_prefix",
+      "file_name_callback",
+      "database_row_id"
+    ],
+    "creditsToDesc_v2": [
+      "self"
+    ]
+  },
+  "BiliBili": {
+    "__init__": [
+      "self",
+      "video"
+    ],
+    "myinfo": [
+      "self",
+      "cookies"
+    ],
+    "login": [
+      "self",
+      "persistence_path",
+      "user_cookie"
+    ],
+    "load": [
+      "self"
+    ],
+    "store": [
+      "self"
+    ],
+    "login_by_password": [
+      "self",
+      "username",
+      "password"
+    ],
+    "login_by_cookies": [
+      "self",
+      "cookie"
+    ],
+    "sign": [
+      "self",
+      "param"
+    ],
+    "get_key": [
+      "self"
+    ],
+    "probe": [
+      "self"
+    ],
+    "upload_stream": [
+      "self",
+      "stream_queue",
+      "file_name",
+      "total_size",
+      "lines",
+      "videos",
+      "stop_event",
+      "file_name_callback",
+      "submit_api"
+    ],
+    "upos_stream": [
+      "self",
+      "stream_queue",
+      "file_name",
+      "total_size",
+      "ret"
+    ],
+    "upload_chunk_thread": [
+      "self",
+      "url",
+      "chunk",
+      "params_clone",
+      "headers",
+      "file_name",
+      "max_retries",
+      "backoff_factor"
+    ],
+    "queue_reader_generator": [
+      "self",
+      "simple_queue",
+      "chunk_size",
+      "max_size"
+    ],
+    "submit": [
+      "self",
+      "submit_api",
+      "edit",
+      "videos"
+    ],
+    "submit_web": [
+      "self",
+      "post_data",
+      "edit"
+    ],
+    "submit_client": [
+      "self",
+      "post_data",
+      "edit"
+    ],
+    "cover_up": [
+      "self",
+      "img"
+    ],
+    "get_tags": [
+      "self",
+      "upvideo",
+      "typeid",
+      "desc",
+      "cover",
+      "groupid",
+      "vfea"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "e_t",
+      "e_v",
+      "t_b"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "Data": {
+    "__post_init__": [
+      "self",
+      "open_subtitle"
+    ],
+    "delay_time": [
+      "self",
+      "dtime"
+    ],
+    "set_tag": [
+      "self",
+      "tag"
+    ],
+    "append": [
+      "self",
+      "video"
+    ]
+  },
+  "BiliWeb": {
+    "__init__": [
+      "self",
+      "principal",
+      "data",
+      "user",
+      "user_cookie",
+      "submit_api",
+      "copyright",
+      "postprocessor",
+      "dtime",
+      "dynamic",
+      "lines",
+      "threads",
+      "tid",
+      "tid_v2",
+      "tags",
+      "cover_path",
+      "description",
+      "credits"
+    ],
+    "upload": [
+      "self",
+      "file_list",
+      "database_row_id"
+    ],
+    "creditsToDesc_v2": [
+      "self"
+    ]
+  },
+  "__all__": [],
+  "download_worker": [
+    "url"
+  ],
+  "download_with_signal_handling": [
+    "url"
+  ],
+  "video_path": [],
+  "cookie_file": [],
+  "LOGIN_FUNCTIONS": [],
+  "FLV_HEADER": [],
+  "ROUTES": [],
+  "Handler": {
+    "do_GET": [
+      "self"
+    ],
+    "log_message": [
+      "self"
+    ]
+  },
+  "server": [],
+  "closed_port": [],
+  "in_tmp_path": [
+    "tmp_path",
+    "monkeypatch"
+  ],
+  "assert_stream_gears_error": [
+    "call"
+  ],
+  "download": [
+    "url",
+    "tmp_path",
+    "segment"
+  ],
+  "test_stream_gears_error_hierarchy": [],
+  "test_login_proxy_defaults_to_none": [
+    "name"
+  ],
+  "test_download_signature": [
+    "name"
+  ],
+  "test_download_closed_port": [
+    "tmp_path",
+    "closed_port"
+  ],
+  "test_download_http_error": [
+    "server",
+    "tmp_path"
+  ],
+  "test_download_empty_response": [
+    "server",
+    "tmp_path"
+  ],
+  "test_download_truncated_flv": [
+    "server",
+    "tmp_path"
+  ],
+  "test_download_malformed_flv_tag": [
+    "server",
+    "tmp_path"
+  ],
+  "test_download_hls_error": [
+    "server",
+    "tmp_path"
+  ],
+  "test_download_plain_function_rejects_bad_segment": [
+    "server",
+    "tmp_path"
+  ],
+  "test_callback_accepts_lambda": [
+    "server",
+    "tmp_path"
+  ],
+  "test_callback_accepts_bound_method": [
+    "server",
+    "tmp_path"
+  ],
+  "test_callback_must_be_callable": [
+    "server",
+    "tmp_path"
+  ],
+  "test_callback_exception_is_reraised": [
+    "server",
+    "tmp_path"
+  ],
+  "test_py_segment_fields_are_readable": [],
+  "test_segment_accepts_dict_and_object": [
+    "server",
+    "tmp_path",
+    "segment"
+  ],
+  "upload": [
+    "tmp_path"
+  ],
+  "test_upload_invalid_extra_fields": [
+    "tmp_path",
+    "extra_fields"
+  ],
+  "test_upload_valid_extra_fields_reach_login": [
+    "tmp_path",
+    "extra_fields"
+  ],
+  "test_upload_desc_v2_accepts_dict_and_object": [
+    "tmp_path",
+    "credit"
+  ],
+  "test_upload_desc_v2_missing_field": [
+    "tmp_path"
+  ],
+  "test_login_invalid_json_raises_value_error": [
+    "name"
+  ],
+  "test_login_by_sms_failure_raises": [
+    "tmp_path",
+    "closed_port"
+  ],
+  "test_login_by_cookies_missing_file": [
+    "tmp_path"
+  ],
+  "test_login_file_defaults_to_cookies_json": [
+    "name"
+  ],
+  "test_login_by_qrcode_file_is_optional": [],
+  "test_login_by_sms_failure_does_not_write_file": [
+    "tmp_path",
+    "closed_port"
+  ],
+  "EXPORTS": [],
+  "UPLOAD_LINES": [],
+  "TIMEOUT": [],
+  "run": [
+    "args",
+    "cwd"
+  ],
+  "biliup_script": [],
+  "test_exports": [],
+  "test_upload_line_members": [],
+  "test_py_segment": [],
+  "test_config_bindings": [],
+  "test_biliup_version": [
+    "tmp_path"
+  ],
+  "test_python_m_biliup_help": [
+    "tmp_path"
+  ],
+  "free_port": [],
+  "env_without_rust_log": [],
+  "run_server": [
+    "tmp_path",
+    "global_args",
+    "env"
+  ],
+  "debug_lines": [
+    "log"
+  ],
+  "test_version_exits_zero": [
+    "tmp_path"
+  ],
+  "test_help_exits_zero": [
+    "tmp_path"
+  ],
+  "test_bad_flag_exits_nonzero": [
+    "tmp_path"
+  ],
+  "test_main_loop_returns_on_help_and_raises_system_exit_on_error": [
+    "tmp_path"
+  ],
+  "TestServer": {
+    "test_writes_ds_update_log": [
+      "self",
+      "tmp_path"
+    ],
+    "test_rust_log_flag": [
+      "self",
+      "tmp_path"
+    ],
+    "test_rust_log_env": [
+      "self",
+      "tmp_path"
+    ],
+    "test_rust_log_flag_overrides_env": [
+      "self",
+      "tmp_path"
+    ]
+  },
+  "PACKAGE_FILES": [],
+  "PYTHON_SOURCE": [],
+  "test_top_level_names": [],
+  "test_native_module_is_a_submodule": [],
+  "test_all_matches_native_module": [],
+  "is_editable_install": [],
+  "test_wheel_ships_stubs": [],
+  "test_biliup_resolves_from_python_source": [
+    "tmp_path"
+  ],
+  "test_upload_text_signature_is_accepted": [],
+  "GOOD": [],
+  "BAD": [],
+  "run_mypy": [
+    "source",
+    "tmp_path"
+  ],
+  "test_stubs_accept_valid_usage": [
+    "tmp_path"
+  ],
+  "test_stubs_reject_invalid_usage": [
+    "tmp_path"
+  ],
+  "__doc__": [],
+  "Segment": [],
+  "_CreditRequired": {},
+  "Credit": {}
+}
