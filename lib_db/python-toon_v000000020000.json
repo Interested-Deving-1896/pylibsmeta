@@ -1,0 +1,385 @@
+{
+  "LineWriter": {
+    "__init__": [
+      "self",
+      "indent_size"
+    ],
+    "push": [
+      "self",
+      "depth",
+      "content"
+    ],
+    "mark": [
+      "self"
+    ],
+    "hoist_to_list_item": [
+      "self",
+      "marker",
+      "depth"
+    ],
+    "to_string": [
+      "self"
+    ]
+  },
+  "main": [],
+  "encode_json_to_toon": [
+    "json_text",
+    "delimiter",
+    "indent"
+  ],
+  "decode_toon_to_json": [
+    "toon_text",
+    "indent",
+    "strict"
+  ],
+  "FieldEntry": [],
+  "_UNQUOTED_KEY_RE": [],
+  "_NUMERIC_LIKE_RE": [],
+  "_NEEDS_QUOTE_CHARS_RE": [],
+  "_LONE_SURROGATE_RE": [],
+  "_ESCAPES": [],
+  "encode_primitive": [
+    "value",
+    "delimiter"
+  ],
+  "format_number": [
+    "value"
+  ],
+  "check_scalar_values": [
+    "value"
+  ],
+  "escape_string": [
+    "value"
+  ],
+  "is_safe_unquoted": [
+    "value",
+    "delimiter"
+  ],
+  "encode_string_literal": [
+    "value",
+    "delimiter"
+  ],
+  "encode_key": [
+    "key"
+  ],
+  "format_fields": [
+    "fields",
+    "delimiter"
+  ],
+  "format_header": [
+    "key",
+    "length",
+    "delimiter",
+    "fields",
+    "keyed"
+  ],
+  "encode": [
+    "value",
+    "options"
+  ],
+  "resolve_options": [
+    "options"
+  ],
+  "JsonPrimitive": [],
+  "JsonObject": [],
+  "JsonArray": [],
+  "JsonValue": [],
+  "Delimiter": [],
+  "DelimiterKey": [],
+  "EncodeOptions": {},
+  "ResolvedEncodeOptions": {
+    "__init__": [
+      "self",
+      "indent",
+      "delimiter"
+    ]
+  },
+  "DecodeOptions": {
+    "__init__": [
+      "self",
+      "indent",
+      "strict"
+    ]
+  },
+  "Depth": [],
+  "normalize_value": [
+    "value"
+  ],
+  "is_json_primitive": [
+    "value"
+  ],
+  "is_json_array": [
+    "value"
+  ],
+  "is_json_object": [
+    "value"
+  ],
+  "is_array_of_primitives": [
+    "arr"
+  ],
+  "is_array_of_arrays": [
+    "arr"
+  ],
+  "is_array_of_objects": [
+    "arr"
+  ],
+  "encode_value": [
+    "value",
+    "options",
+    "writer",
+    "depth"
+  ],
+  "encode_object_fields": [
+    "obj",
+    "options",
+    "writer",
+    "depth"
+  ],
+  "encode_field": [
+    "key",
+    "value",
+    "options",
+    "writer",
+    "depth"
+  ],
+  "encode_array": [
+    "arr",
+    "options",
+    "writer",
+    "depth",
+    "key",
+    "allow_tabular"
+  ],
+  "encode_list_item": [
+    "item",
+    "options",
+    "writer",
+    "depth"
+  ],
+  "encode_object_as_list_item": [
+    "obj",
+    "options",
+    "writer",
+    "depth"
+  ],
+  "encode_keyed_object": [
+    "obj",
+    "fields",
+    "options",
+    "writer",
+    "depth",
+    "key"
+  ],
+  "encode_row": [
+    "obj",
+    "fields",
+    "options"
+  ],
+  "iter_leaves": [
+    "obj",
+    "fields"
+  ],
+  "detect_fields": [
+    "values"
+  ],
+  "detect_keyed_fields": [
+    "obj"
+  ],
+  "_NUMBER_RE": [],
+  "_BRACKET_RE": [],
+  "_HEX_DIGITS": [],
+  "_SIMPLE_ESCAPES": [],
+  "_DELIMITERS": [],
+  "_MAX_SAFE_INTEGER": [],
+  "Fields": [],
+  "ToonDecodeError": {},
+  "_MalformedHeader": {},
+  "Line": {},
+  "Header": {},
+  "decode": [
+    "input_str",
+    "options"
+  ],
+  "_split_lines": [
+    "text",
+    "indent",
+    "strict"
+  ],
+  "_Parser": {
+    "__init__": [
+      "self",
+      "lines",
+      "strict"
+    ],
+    "error": [
+      "self",
+      "line",
+      "message"
+    ],
+    "peek": [
+      "self",
+      "depth"
+    ],
+    "accept": [
+      "self",
+      "peeked",
+      "in_span"
+    ],
+    "skip_over_indented": [
+      "self",
+      "line"
+    ],
+    "assign": [
+      "self",
+      "obj",
+      "key",
+      "value",
+      "line"
+    ],
+    "value": [
+      "self",
+      "token",
+      "line"
+    ],
+    "key": [
+      "self",
+      "token",
+      "line"
+    ],
+    "parse_document": [
+      "self"
+    ],
+    "check_trailing": [
+      "self"
+    ],
+    "parse_object_body": [
+      "self",
+      "obj",
+      "depth",
+      "in_span"
+    ],
+    "parse_field_line": [
+      "self",
+      "obj",
+      "content",
+      "line",
+      "depth",
+      "in_span"
+    ],
+    "try_header": [
+      "self",
+      "content",
+      "line"
+    ],
+    "_parse_header": [
+      "self",
+      "content",
+      "bracket",
+      "key",
+      "unquoted_key"
+    ],
+    "_parse_fields": [
+      "self",
+      "text",
+      "pos",
+      "delimiter"
+    ],
+    "parse_header_value": [
+      "self",
+      "header",
+      "line",
+      "depth",
+      "in_span"
+    ],
+    "check_count": [
+      "self",
+      "header",
+      "count",
+      "line",
+      "what"
+    ],
+    "parse_tabular": [
+      "self",
+      "header",
+      "line",
+      "depth",
+      "in_span"
+    ],
+    "parse_keyed": [
+      "self",
+      "header",
+      "line",
+      "depth",
+      "in_span"
+    ],
+    "materialize": [
+      "self",
+      "fields",
+      "cells",
+      "line"
+    ],
+    "parse_list": [
+      "self",
+      "header",
+      "line",
+      "depth",
+      "in_span"
+    ],
+    "parse_list_item": [
+      "self",
+      "rest",
+      "line",
+      "depth"
+    ]
+  },
+  "_find_unquoted": [
+    "text",
+    "target",
+    "start"
+  ],
+  "_parse_quoted": [
+    "text",
+    "start"
+  ],
+  "_parse_complete_quoted": [
+    "token"
+  ],
+  "_parse_key": [
+    "token"
+  ],
+  "_parse_primitive": [
+    "token"
+  ],
+  "_parse_number": [
+    "token"
+  ],
+  "_split_delimited": [
+    "text",
+    "delimiter"
+  ],
+  "_count_leaves": [
+    "fields"
+  ],
+  "LIST_ITEM_MARKER": [],
+  "LIST_ITEM_PREFIX": [],
+  "COMMA": [],
+  "COLON": [],
+  "SPACE": [],
+  "PIPE": [],
+  "OPEN_BRACKET": [],
+  "CLOSE_BRACKET": [],
+  "OPEN_BRACE": [],
+  "CLOSE_BRACE": [],
+  "NULL_LITERAL": [],
+  "TRUE_LITERAL": [],
+  "FALSE_LITERAL": [],
+  "BACKSLASH": [],
+  "DOUBLE_QUOTE": [],
+  "NEWLINE": [],
+  "CARRIAGE_RETURN": [],
+  "TAB": [],
+  "DELIMITERS": [],
+  "DEFAULT_DELIMITER": [],
+  "__version__": [],
+  "__all__": []
+}
