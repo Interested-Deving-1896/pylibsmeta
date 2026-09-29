@@ -1,0 +1,336 @@
+{
+  "__version__": [],
+  "PROJECT_NAME": [],
+  "logger": [],
+  "ARIZE_SPACE_ID_ATTR": [],
+  "ARIZE_PROJECT_NAME_ATTR": [],
+  "ARIZE_PROJECT_TYPE_ATTR": [],
+  "SDK_LANGUAGE": [],
+  "SDK_PACKAGE_NAME": [],
+  "PYTHON_VERSION": [],
+  "_ARIZE_SPACE_ID_CONTEXT_KEY": [],
+  "_ARIZE_PROJECT_NAME_CONTEXT_KEY": [],
+  "Endpoint": {
+    "ARIZE": [],
+    "ARIZE_EUROPE": []
+  },
+  "Transport": {
+    "GRPC": [],
+    "HTTPS": [],
+    "HTTP": []
+  },
+  "EndpointType": [],
+  "set_routing_context": [
+    "space_id",
+    "project_name"
+  ],
+  "_get_routing_context": [],
+  "register": [],
+  "TracerProvider": {
+    "__init__": [
+      "self"
+    ],
+    "add_span_processor": [
+      "self"
+    ],
+    "_tracing_details": [
+      "self"
+    ]
+  },
+  "SimpleSpanProcessor": {
+    "__init__": [
+      "self",
+      "span_exporter",
+      "space_id",
+      "api_key",
+      "endpoint",
+      "transport",
+      "headers"
+    ]
+  },
+  "BatchSpanProcessor": {
+    "__init__": [
+      "self",
+      "span_exporter",
+      "space_id",
+      "api_key",
+      "endpoint",
+      "transport",
+      "headers"
+    ]
+  },
+  "ArizeRoutingSpanProcessor": {
+    "__init__": [
+      "self",
+      "api_key",
+      "endpoint",
+      "transport",
+      "batch",
+      "headers"
+    ],
+    "on_start": [
+      "self",
+      "span",
+      "parent_context"
+    ],
+    "on_end": [
+      "self",
+      "span"
+    ],
+    "shutdown": [
+      "self"
+    ],
+    "force_flush": [
+      "self",
+      "timeout_millis"
+    ],
+    "_get_or_create_processor": [
+      "self",
+      "space_id"
+    ]
+  },
+  "register_with_routing": [],
+  "HTTPSpanExporter": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "GRPCSpanExporter": {
+    "__init__": [
+      "self",
+      "space_id",
+      "api_key",
+      "endpoint"
+    ]
+  },
+  "_exporter_transport": [
+    "exporter"
+  ],
+  "_printable_headers": [
+    "headers"
+  ],
+  "_get_arize_auth_headers": [
+    "space_id",
+    "api_key"
+  ],
+  "_get_arize_sdk_metadata_headers": [],
+  "_merge_sdk_metadata_headers": [
+    "bound_args"
+  ],
+  "_validate_routing_inputs": [
+    "api_key",
+    "endpoint",
+    "transport"
+  ],
+  "_validate_inputs": [
+    "space_id",
+    "api_key",
+    "project_name",
+    "endpoint",
+    "transport",
+    "skip"
+  ],
+  "_validate_endpoint": [
+    "endpoint"
+  ],
+  "_validate_transport": [
+    "transport"
+  ],
+  "_get_class_signature": [
+    "fn"
+  ],
+  "_auto_instrument_installed_openinference_libraries": [
+    "tracer_provider"
+  ],
+  "_RFC3339_EXCESS_FRACTION": [],
+  "_DEFAULT_QUEUE_MAX_BYTES": [],
+  "_DEFAULT_QUEUE_MAX_ITEMS": [],
+  "_DEFAULT_STATUS_MAX_ITEMS": [],
+  "_DEFAULT_UPLOAD_WORKERS": [],
+  "_DEFAULT_STATUS_POLL_INTERVAL_SECONDS": [],
+  "_DEFAULT_STATUS_TIMEOUT_SECONDS": [],
+  "_DEFAULT_MAX_UPLOAD_ATTEMPTS": [],
+  "Blob": {},
+  "_BlobClient": {
+    "request_upload": [
+      "self",
+      "metadata",
+      "destination"
+    ],
+    "upload_bytes": [
+      "self",
+      "grant",
+      "data"
+    ],
+    "get_status": [
+      "self",
+      "reference",
+      "destination"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "_UploadJob": {},
+  "_StatusJob": {},
+  "_ByteBudget": {
+    "__init__": [
+      "self",
+      "maximum"
+    ],
+    "reserve": [
+      "self",
+      "size"
+    ],
+    "release": [
+      "self",
+      "size"
+    ]
+  },
+  "ArizeBlobUploader": {
+    "__init__": [
+      "self"
+    ],
+    "upload": [
+      "self",
+      "blob"
+    ],
+    "shutdown": [
+      "self",
+      "timeout_sec"
+    ],
+    "_current_destination": [
+      "self"
+    ],
+    "_ensure_workers_started_locked": [
+      "self"
+    ],
+    "_upload_worker": [
+      "self"
+    ],
+    "_schedule_status": [
+      "self",
+      "job"
+    ],
+    "_status_worker": [
+      "self"
+    ],
+    "_reschedule_status": [
+      "self",
+      "job"
+    ],
+    "_retry_or_complete": [
+      "self",
+      "job",
+      "error"
+    ],
+    "_cancel_queued_uploads": [
+      "self"
+    ],
+    "_warn_missing_destination_once": [
+      "self"
+    ],
+    "_complete_upload": [
+      "self",
+      "size"
+    ]
+  },
+  "_md5_base64": [
+    "data"
+  ],
+  "_seconds_until_expiration": [
+    "expires_at"
+  ],
+  "_is_retryable_status_error": [
+    "error"
+  ],
+  "__all__": [],
+  "ENV_ARIZE_SPACE_ID": [],
+  "ENV_ARIZE_API_KEY": [],
+  "ENV_ARIZE_PROJECT_NAME": [],
+  "ENV_ARIZE_PROJECT_TYPE": [],
+  "ENV_ARIZE_COLLECTOR_ENDPOINT": [],
+  "ENV_ARIZE_BLOB_ENDPOINT": [],
+  "ACCEPTED_PROJECT_TYPES": [],
+  "DEFAULT_PROJECT_TYPE": [],
+  "get_env_arize_space_id": [],
+  "get_env_arize_api_key": [],
+  "get_env_project_name": [],
+  "get_env_project_type": [],
+  "parse_project_type": [
+    "value"
+  ],
+  "get_env_collector_endpoint": [],
+  "get_env_blob_endpoint": [],
+  "BlobDestination": {},
+  "BlobMetadata": {},
+  "BlobGrant": {},
+  "ExistingBlobReference": {},
+  "BlobUploadResult": [],
+  "BlobStatus": {
+    "REQUESTED": [],
+    "SUCCESSFUL": [],
+    "FAILED": []
+  },
+  "BlobClientError": {},
+  "BlobTransportError": {},
+  "BlobProtocolError": {},
+  "BlobHTTPError": {
+    "__init__": [
+      "self",
+      "status_code",
+      "message"
+    ]
+  },
+  "BlobUploadError": {},
+  "_UPLOAD_PATH": [],
+  "_STATUS_PATH": [],
+  "_suppress_instrumentation": [],
+  "ArizeBlobClient": {
+    "__init__": [
+      "self"
+    ],
+    "request_upload": [
+      "self",
+      "metadata",
+      "destination"
+    ],
+    "upload_bytes": [
+      "self",
+      "grant",
+      "data"
+    ],
+    "get_status": [
+      "self",
+      "reference",
+      "destination"
+    ],
+    "close": [
+      "self"
+    ],
+    "_post": [
+      "self",
+      "path",
+      "destination",
+      "payload"
+    ]
+  },
+  "_normalize_endpoint": [
+    "endpoint"
+  ],
+  "_response_json": [
+    "response"
+  ],
+  "_error_message": [
+    "response"
+  ],
+  "_parse_grant": [
+    "grant"
+  ],
+  "_validate_reference": [
+    "reference"
+  ],
+  "_parse_status": [
+    "value"
+  ]
+}
