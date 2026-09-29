@@ -1,0 +1,772 @@
+{
+  "log": [],
+  "is_naive": [
+    "dt"
+  ],
+  "total_seconds": [
+    "delta"
+  ],
+  "guess_timezone": [
+    "dt"
+  ],
+  "remove_trailing_slash": [
+    "host"
+  ],
+  "clean": [
+    "item"
+  ],
+  "_clean_list": [
+    "list_"
+  ],
+  "_clean_dict": [
+    "dict_"
+  ],
+  "_coerce_unicode": [
+    "cmplx"
+  ],
+  "VERSION": [],
+  "ShutdownInterrupted": {},
+  "MAX_MSG_SIZE": [],
+  "BATCH_SIZE_LIMIT": [],
+  "DEFAULT_MAX_TOTAL_BACKOFF_DURATION": [],
+  "DEFAULT_MAX_RATE_LIMIT_DURATION": [],
+  "FatalError": {
+    "__init__": [
+      "self",
+      "message"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "Consumer": {
+    "log": [],
+    "__init__": [
+      "self",
+      "queue",
+      "write_key",
+      "upload_size",
+      "host",
+      "on_error",
+      "upload_interval",
+      "gzip",
+      "retries",
+      "timeout",
+      "proxies",
+      "oauth_manager",
+      "max_total_backoff_duration",
+      "max_rate_limit_duration"
+    ],
+    "run": [
+      "self"
+    ],
+    "pause": [
+      "self"
+    ],
+    "_wait": [
+      "self",
+      "seconds"
+    ],
+    "_requeue": [
+      "self",
+      "batch"
+    ],
+    "set_rate_limit_state": [
+      "self",
+      "retry_after"
+    ],
+    "clear_rate_limit_state": [
+      "self"
+    ],
+    "upload": [
+      "self"
+    ],
+    "next": [
+      "self"
+    ],
+    "request": [
+      "self",
+      "batch"
+    ]
+  },
+  "_session": [],
+  "OauthManager": {
+    "__init__": [
+      "self",
+      "client_id",
+      "client_key",
+      "key_id",
+      "auth_server",
+      "scope",
+      "timeout",
+      "max_retries"
+    ],
+    "get_token": [
+      "self"
+    ],
+    "clear_token": [
+      "self"
+    ],
+    "_request_token": [
+      "self"
+    ],
+    "_poller_loop": [
+      "self"
+    ]
+  },
+  "ID_TYPES": [],
+  "Client": {
+    "log": [],
+    "__init__": [
+      "self",
+      "write_key",
+      "host",
+      "debug",
+      "max_queue_size",
+      "send",
+      "on_error",
+      "gzip",
+      "max_retries",
+      "sync_mode",
+      "timeout",
+      "proxies",
+      "thread",
+      "upload_size",
+      "upload_interval",
+      "log_handler",
+      "oauth_client_id",
+      "oauth_client_key",
+      "oauth_key_id",
+      "oauth_auth_server",
+      "oauth_scope",
+      "max_total_backoff_duration",
+      "max_rate_limit_duration"
+    ],
+    "identify": [
+      "self",
+      "user_id",
+      "traits",
+      "context",
+      "timestamp",
+      "anonymous_id",
+      "integrations",
+      "message_id"
+    ],
+    "track": [
+      "self",
+      "user_id",
+      "event",
+      "properties",
+      "context",
+      "timestamp",
+      "anonymous_id",
+      "integrations",
+      "message_id"
+    ],
+    "alias": [
+      "self",
+      "previous_id",
+      "user_id",
+      "context",
+      "timestamp",
+      "integrations",
+      "message_id"
+    ],
+    "group": [
+      "self",
+      "user_id",
+      "group_id",
+      "traits",
+      "context",
+      "timestamp",
+      "anonymous_id",
+      "integrations",
+      "message_id"
+    ],
+    "page": [
+      "self",
+      "user_id",
+      "category",
+      "name",
+      "properties",
+      "context",
+      "timestamp",
+      "anonymous_id",
+      "integrations",
+      "message_id"
+    ],
+    "screen": [
+      "self",
+      "user_id",
+      "category",
+      "name",
+      "properties",
+      "context",
+      "timestamp",
+      "anonymous_id",
+      "integrations",
+      "message_id"
+    ],
+    "_enqueue": [
+      "self",
+      "msg"
+    ],
+    "flush": [
+      "self"
+    ],
+    "join": [
+      "self"
+    ],
+    "shutdown": [
+      "self"
+    ]
+  },
+  "require": [
+    "name",
+    "field",
+    "data_type"
+  ],
+  "stringify_id": [
+    "val"
+  ],
+  "__version__": [],
+  "write_key": [],
+  "host": [],
+  "on_error": [],
+  "debug": [],
+  "log_handler": [],
+  "send": [],
+  "sync_mode": [],
+  "max_queue_size": [],
+  "gzip": [],
+  "timeout": [],
+  "max_retries": [],
+  "oauth_client_id": [],
+  "oauth_client_key": [],
+  "oauth_key_id": [],
+  "oauth_auth_server": [],
+  "oauth_scope": [],
+  "default_client": [],
+  "track": [],
+  "identify": [],
+  "group": [],
+  "alias": [],
+  "page": [],
+  "screen": [],
+  "flush": [],
+  "join": [],
+  "shutdown": [],
+  "_proxy": [
+    "method"
+  ],
+  "MAX_RETRY_AFTER_SECONDS": [],
+  "parse_retry_after": [
+    "response"
+  ],
+  "post": [
+    "write_key",
+    "host",
+    "gzip",
+    "timeout",
+    "proxies",
+    "oauth_manager",
+    "retry_count"
+  ],
+  "APIError": {
+    "__init__": [
+      "self",
+      "status",
+      "code",
+      "message",
+      "response"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "DatetimeSerializer": {
+    "default": [
+      "self",
+      "obj"
+    ]
+  },
+  "TestClient": {
+    "fail": [
+      "self",
+      "e",
+      "batch"
+    ],
+    "setUp": [
+      "self"
+    ],
+    "test_requires_write_key": [
+      "self"
+    ],
+    "test_empty_flush": [
+      "self"
+    ],
+    "test_basic_track": [
+      "self"
+    ],
+    "test_stringifies_user_id": [
+      "self"
+    ],
+    "test_stringifies_anonymous_id": [
+      "self"
+    ],
+    "test_advanced_track": [
+      "self"
+    ],
+    "test_basic_identify": [
+      "self"
+    ],
+    "test_advanced_identify": [
+      "self"
+    ],
+    "test_basic_group": [
+      "self"
+    ],
+    "test_advanced_group": [
+      "self"
+    ],
+    "test_basic_alias": [
+      "self"
+    ],
+    "test_basic_page": [
+      "self"
+    ],
+    "test_advanced_page": [
+      "self"
+    ],
+    "test_basic_screen": [
+      "self"
+    ],
+    "test_advanced_screen": [
+      "self"
+    ],
+    "test_flush": [
+      "self"
+    ],
+    "test_shutdown": [
+      "self"
+    ],
+    "test_synchronous": [
+      "self"
+    ],
+    "test_overflow": [
+      "self"
+    ],
+    "test_success_on_invalid_write_key": [
+      "self"
+    ],
+    "test_unicode": [
+      "self"
+    ],
+    "test_numeric_user_id": [
+      "self"
+    ],
+    "test_debug": [
+      "self"
+    ],
+    "test_identify_with_date_object": [
+      "self"
+    ],
+    "test_gzip": [
+      "self"
+    ],
+    "test_user_defined_upload_size": [
+      "self"
+    ],
+    "test_user_defined_timeout": [
+      "self"
+    ],
+    "test_default_timeout_15": [
+      "self"
+    ],
+    "test_proxies": [
+      "self"
+    ],
+    "test_queue_full_returns_false": [
+      "self"
+    ],
+    "test_queue_full_does_not_raise": [
+      "self"
+    ]
+  },
+  "privatekey": [],
+  "mocked_requests_get": [],
+  "TestOauthManager": {
+    "test_oauth_success": [
+      "self",
+      "mock_post"
+    ],
+    "test_oauth_fail_unrecoverably": [
+      "self",
+      "mock_post"
+    ],
+    "test_oauth_fail_with_retries": [
+      "self",
+      "mock_post"
+    ],
+    "test_oauth_rate_limit_delay": [
+      "self",
+      "mock_sleep",
+      "mock_post"
+    ]
+  },
+  "TestOauthIntegration": {
+    "fail": [
+      "self",
+      "e",
+      "batch"
+    ],
+    "setUp": [
+      "self"
+    ],
+    "test_oauth_integration_success": [
+      "self",
+      "mock_post"
+    ],
+    "test_oauth_integration_failure": [
+      "self",
+      "mock_post"
+    ],
+    "test_oauth_integration_recovery": [
+      "self",
+      "mock_post"
+    ],
+    "test_oauth_integration_fail_bad_key": [
+      "self",
+      "mock_post"
+    ]
+  },
+  "TestModule": {
+    "setUp": [
+      "self"
+    ],
+    "test_no_write_key": [
+      "self"
+    ],
+    "test_no_host": [
+      "self"
+    ],
+    "test_track": [
+      "self"
+    ],
+    "test_identify": [
+      "self"
+    ],
+    "test_group": [
+      "self"
+    ],
+    "test_alias": [
+      "self"
+    ],
+    "test_page": [
+      "self"
+    ],
+    "test_screen": [
+      "self"
+    ],
+    "test_flush": [
+      "self"
+    ]
+  },
+  "TestUtils": {
+    "test_timezone_utils": [
+      "self"
+    ],
+    "test_clean": [
+      "self"
+    ],
+    "test_clean_with_dates": [
+      "self"
+    ],
+    "test_bytes": [
+      "cls"
+    ],
+    "test_clean_fn": [
+      "self"
+    ],
+    "test_remove_slash": [
+      "self"
+    ]
+  },
+  "TestConsumer": {
+    "test_next": [
+      "self"
+    ],
+    "test_next_limit": [
+      "self"
+    ],
+    "test_dropping_oversize_msg": [
+      "self"
+    ],
+    "test_upload": [
+      "self"
+    ],
+    "test_upload_interval": [
+      "self"
+    ],
+    "test_multiple_uploads_per_interval": [
+      "self"
+    ],
+    "test_request": [
+      "cls"
+    ],
+    "_test_request_retry": [
+      "self",
+      "consumer",
+      "expected_exception",
+      "exception_count"
+    ],
+    "test_request_retry": [
+      "self"
+    ],
+    "test_pause": [
+      "self"
+    ],
+    "test_max_batch_size": [
+      "self"
+    ],
+    "test_proxies": [
+      "cls"
+    ],
+    "test_retry_count_header_increments": [
+      "self"
+    ],
+    "test_non_retryable_4xx_status_codes": [
+      "self"
+    ],
+    "test_retryable_4xx_status_codes": [
+      "self"
+    ],
+    "test_non_retryable_5xx_status_codes": [
+      "self"
+    ],
+    "test_retryable_5xx_status_codes": [
+      "self"
+    ],
+    "test_429_sets_rate_limit_state_with_retry_after": [
+      "self"
+    ],
+    "test_retry_after_capped_at_max_retry_after_seconds": [
+      "self"
+    ],
+    "test_a_wait_that_will_not_fit_the_budget_drops_instead_of_shortening": [
+      "self"
+    ],
+    "test_a_wait_that_fits_the_budget_is_honoured_in_full": [
+      "self"
+    ],
+    "test_408_and_503_without_retry_after_use_backoff": [
+      "self"
+    ],
+    "test_503_with_retry_after_sets_rate_limit_state": [
+      "self"
+    ],
+    "test_529_with_retry_after_sets_rate_limit_state": [
+      "self"
+    ],
+    "test_stale_rate_limit_state_does_not_misroute_later_errors": [
+      "self"
+    ],
+    "test_rate_limit_wait_is_interruptible": [
+      "self"
+    ],
+    "test_shutdown_during_backoff_requeues_instead_of_dropping": [
+      "self"
+    ],
+    "test_exponential_backoff_with_jitter": [
+      "self"
+    ],
+    "test_fatal_error_not_retried": [
+      "self"
+    ],
+    "test_max_retries_exhausted": [
+      "self"
+    ],
+    "test_first_request_has_retry_count_zero": [
+      "self"
+    ],
+    "test_429_without_retry_after_uses_counted_backoff": [
+      "self"
+    ],
+    "test_408_without_retry_after_uses_backoff": [
+      "self"
+    ],
+    "test_network_error_retried_with_backoff": [
+      "self"
+    ],
+    "test_511_not_retryable_without_oauth": [
+      "self"
+    ],
+    "test_511_retryable_with_oauth": [
+      "self"
+    ],
+    "test_429_with_retry_after_does_not_count_against_backoff_budget": [
+      "self"
+    ],
+    "test_413_payload_too_large_not_retried": [
+      "self"
+    ],
+    "test_t04_429_halts_upload_iteration": [
+      "self"
+    ],
+    "test_429_without_retry_after_does_not_requeue_batch": [
+      "self"
+    ],
+    "test_retry_after_zero_uses_counted_backoff": [
+      "self"
+    ],
+    "test_t19_max_total_backoff_duration": [
+      "self"
+    ],
+    "test_t20_max_rate_limit_duration": [
+      "self"
+    ],
+    "test_rate_limit_state_cleared_on_success": [
+      "self"
+    ],
+    "test_retry_after_zero_does_not_trigger_pipeline_blocking": [
+      "self"
+    ],
+    "test_queue_full_during_429_requeue_calls_on_error": [
+      "self"
+    ],
+    "test_none_max_total_backoff_duration_rejected_by_client": [
+      "self"
+    ],
+    "test_none_max_rate_limit_duration_rejected_by_client": [
+      "self"
+    ],
+    "test_max_total_backoff_duration_zero_prevents_retry": [
+      "self"
+    ],
+    "test_parse_retry_after_http_date_in_past_returns_none": [
+      "self"
+    ],
+    "test_410_and_460_retried": [
+      "self"
+    ],
+    "test_505_not_retried": [
+      "self"
+    ],
+    "test_retries_exhausted_calls_on_error": [
+      "self"
+    ],
+    "test_default_rate_limit_budget_exceeds_the_retry_after_cap": [
+      "self"
+    ],
+    "test_client_defaults_to_the_documented_rate_limit_budget": [
+      "self"
+    ],
+    "test_non_rate_limited_failure_ends_the_episode": [
+      "self"
+    ],
+    "test_batch_after_an_ended_episode_is_still_sent": [
+      "self"
+    ]
+  },
+  "all_names": [],
+  "all": [],
+  "TestInit": {
+    "test_writeKey": [
+      "self"
+    ],
+    "test_debug": [
+      "self"
+    ],
+    "test_gzip": [
+      "self"
+    ],
+    "test_host": [
+      "self"
+    ],
+    "test_max_queue_size": [
+      "self"
+    ],
+    "test_max_retries": [
+      "self"
+    ],
+    "test_sync_mode": [
+      "self"
+    ],
+    "test_timeout": [
+      "self"
+    ],
+    "setUp": [
+      "self"
+    ]
+  },
+  "TestRequests": {
+    "test_valid_request": [
+      "self"
+    ],
+    "test_invalid_request_error": [
+      "self"
+    ],
+    "test_invalid_host": [
+      "self"
+    ],
+    "test_datetime_serialization": [
+      "self"
+    ],
+    "test_date_serialization": [
+      "self"
+    ],
+    "test_should_not_timeout": [
+      "self"
+    ],
+    "test_should_timeout": [
+      "self"
+    ],
+    "test_proxies": [
+      "self"
+    ],
+    "test_authorization_header_basic_auth": [
+      "self"
+    ],
+    "test_authorization_header_oauth": [
+      "self"
+    ],
+    "test_x_retry_count_header": [
+      "self"
+    ],
+    "test_non_200_2xx_treated_as_success": [
+      "self"
+    ],
+    "test_3xx_is_not_success": [
+      "self"
+    ],
+    "test_parse_retry_after_integer": [
+      "self"
+    ],
+    "test_parse_retry_after_capped": [
+      "self"
+    ],
+    "test_parse_retry_after_missing": [
+      "self"
+    ],
+    "test_parse_retry_after_invalid": [
+      "self"
+    ],
+    "test_parse_retry_after_http_date_future": [
+      "self"
+    ],
+    "test_parse_retry_after_http_date_past": [
+      "self"
+    ],
+    "test_oauth_token_cleared_on_511": [
+      "self"
+    ],
+    "test_api_error_includes_response": [
+      "self"
+    ]
+  },
+  "TestNonObjectErrorBody": {
+    "test_non_object_json_body_raises_apierror_not_typeerror": [
+      "self"
+    ]
+  }
+}
