@@ -1,0 +1,962 @@
+{
+  "plot_chromatogram": [
+    "c"
+  ],
+  "_annotate_ion": [
+    "mz",
+    "intensity",
+    "annotation",
+    "color_ions",
+    "annotate_ions",
+    "matched",
+    "annotation_kws",
+    "colormap",
+    "ax"
+  ],
+  "plot_spectrum": [
+    "spectrum",
+    "color_ions",
+    "annotate_ions",
+    "matched_peaks",
+    "annot_kws",
+    "mirror_intensity",
+    "grid",
+    "colormap",
+    "spine",
+    "show_unmatched_peaks",
+    "ax"
+  ],
+  "mirror_plot_spectrum": [
+    "spec_top",
+    "spec_bottom",
+    "spectrum_top_kws",
+    "spectrum_bottom_kws",
+    "ax"
+  ],
+  "DataFrameMixin": {
+    "to_df": [
+      "self",
+      "columns",
+      "export_meta_values"
+    ]
+  },
+  "spectrum_to_dataframe": [
+    "spectrum",
+    "columns",
+    "export_meta_values"
+  ],
+  "chromatogram_to_dataframe": [
+    "chromatogram",
+    "columns",
+    "export_meta_values"
+  ],
+  "experiment_to_dataframe": [
+    "experiment",
+    "long_format",
+    "include_precursor"
+  ],
+  "feature_map_to_dataframe": [
+    "feature_map",
+    "include_subordinates"
+  ],
+  "consensus_map_to_dataframe": [
+    "consensus_map"
+  ],
+  "peptide_identifications_to_df": [
+    "peps",
+    "decode_ontology",
+    "default_missing_values",
+    "export_unidentified"
+  ],
+  "update_scores_from_df": [
+    "peps",
+    "df",
+    "main_score_name"
+  ],
+  "here": [],
+  "default_openms_data_path": [],
+  "env_openms_data_path": [],
+  "_patch_pyarrow_filesystem": [],
+  "_dll_directory_handles": [],
+  "_import_submodules": [],
+  "_NESTED_ENUM_ALIASES": [],
+  "_MODULE_LEVEL_NESTED_ENUMS": [],
+  "_InterfacesNamespace": {},
+  "_interfaces": [],
+  "ParamValue": {
+    "STRING_VALUE": [],
+    "INT_VALUE": [],
+    "DOUBLE_VALUE": [],
+    "STRING_LIST": [],
+    "INT_LIST": [],
+    "DOUBLE_LIST": [],
+    "EMPTY_VALUE": [],
+    "__init__": [
+      "self",
+      "value"
+    ],
+    "isEmpty": [
+      "self"
+    ],
+    "valueType": [
+      "self"
+    ],
+    "toString": [
+      "self"
+    ],
+    "toBool": [
+      "self"
+    ],
+    "toInt": [
+      "self"
+    ],
+    "toDouble": [
+      "self"
+    ],
+    "toStringVector": [
+      "self"
+    ],
+    "toIntVector": [
+      "self"
+    ],
+    "toDoubleVector": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ]
+  },
+  "SimpleOpenMSSpectraFactory": {
+    "getSpectrumAccessOpenMSPtr": [
+      "exp"
+    ]
+  },
+  "EPSILON": [],
+  "PI": [],
+  "E": [],
+  "ELEMENTARY_CHARGE": [],
+  "e0": [],
+  "ELECTRON_MASS": [],
+  "ELECTRON_MASS_U": [],
+  "PROTON_MASS": [],
+  "PROTON_MASS_U": [],
+  "C13C12_MASSDIFF_U": [],
+  "NEUTRON_MASS": [],
+  "NEUTRON_MASS_U": [],
+  "AVOGADRO": [],
+  "NA": [],
+  "MOL": [],
+  "BOLTZMANN": [],
+  "k": [],
+  "PLANCK": [],
+  "h": [],
+  "GAS_CONSTANT": [],
+  "R": [],
+  "FARADAY": [],
+  "F": [],
+  "BOHR_RADIUS": [],
+  "a0": [],
+  "VACUUM_PERMITTIVITY": [],
+  "VACUUM_PERMEABILITY": [],
+  "SPEED_OF_LIGHT": [],
+  "c": [],
+  "GRAVITATIONAL_CONSTANT": [],
+  "FINE_STRUCTURE_CONSTANT": [],
+  "DEG_PER_RAD": [],
+  "RAD_PER_DEG": [],
+  "MM_PER_INCH": [],
+  "M_PER_FOOT": [],
+  "JOULE_PER_CAL": [],
+  "CAL_PER_JOULE": [],
+  "PRECURSOR_ERROR_PPM_USERPARAM": [],
+  "FRAGMENT_ANNOTATION_USERPARAM": [],
+  "df_columns": [
+    "self",
+    "columns",
+    "export_meta_values"
+  ],
+  "get_data_dict": [
+    "self",
+    "columns",
+    "export_meta_values"
+  ],
+  "to_df": [
+    "self",
+    "columns",
+    "export_meta_values"
+  ],
+  "get_df": [
+    "self"
+  ],
+  "get_df_columns": [
+    "self"
+  ],
+  "to_arrow": [
+    "self",
+    "columns",
+    "export_meta_values"
+  ],
+  "_deprecated_mv": [
+    "cls_name",
+    "old_name",
+    "new_name"
+  ],
+  "to_psm_df": [
+    "self",
+    "export_all_hits",
+    "include_modifications",
+    "include_peak_annotations",
+    "reference_file_name",
+    "columns",
+    "additional_score_names",
+    "scan_format"
+  ],
+  "to_qpx": [
+    "self",
+    "qpx_version",
+    "creator",
+    "software_provider",
+    "scan_format"
+  ],
+  "to_psm_arrow": [
+    "self",
+    "export_all_hits",
+    "include_modifications",
+    "include_peak_annotations",
+    "reference_file_name",
+    "columns",
+    "additional_score_names",
+    "scan_format"
+  ],
+  "to_parquet": [
+    "self",
+    "path",
+    "compression",
+    "compression_level",
+    "row_group_size",
+    "write_statistics",
+    "export_all_hits",
+    "include_modifications",
+    "include_peak_annotations",
+    "reference_file_name",
+    "columns",
+    "additional_score_names",
+    "scan_format"
+  ],
+  "psm_columns": [
+    "self"
+  ],
+  "to_psm_qpx": [
+    "self"
+  ],
+  "get_psm_columns": [
+    "self"
+  ],
+  "get_psm_df": [
+    "self"
+  ],
+  "LIST": [],
+  "TUPLE": [],
+  "_PROTEINS_0": [],
+  "_WEIGHT": [],
+  "_FEATURE_SET": [],
+  "_PEPTIDE_IDS": [],
+  "_MARKER": [],
+  "_NOTE": [],
+  "_target": [
+    "args",
+    "kwargs",
+    "pos",
+    "names"
+  ],
+  "_write_back": [
+    "target",
+    "value"
+  ],
+  "_make_apply": [
+    "rules"
+  ],
+  "_names": [
+    "rules"
+  ],
+  "_wrap": [
+    "orig",
+    "rules",
+    "static"
+  ],
+  "install": [
+    "namespace",
+    "methods"
+  ],
+  "_ChromatogramQuery": {
+    "__init__": [
+      "self",
+      "xic"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "_add_filter": [
+      "self",
+      "column",
+      "value",
+      "op"
+    ],
+    "filter_precursor_id": [
+      "self",
+      "value",
+      "op"
+    ],
+    "filter_transition_id": [
+      "self",
+      "value",
+      "op"
+    ],
+    "filter_ms_level": [
+      "self",
+      "value",
+      "op"
+    ],
+    "filter_run_id": [
+      "self",
+      "value",
+      "op"
+    ],
+    "filter_precursor_charge": [
+      "self",
+      "value",
+      "op"
+    ],
+    "filter_product_charge": [
+      "self",
+      "value",
+      "op"
+    ],
+    "filter_annotation": [
+      "self",
+      "value",
+      "op"
+    ],
+    "filter_modified_sequence": [
+      "self",
+      "value",
+      "op"
+    ],
+    "filter_transition_type": [
+      "self",
+      "value",
+      "op"
+    ],
+    "to_dict": [
+      "self",
+      "explode"
+    ],
+    "to_df": [
+      "self",
+      "explode"
+    ]
+  },
+  "__len__": [
+    "self"
+  ],
+  "get_run_dict": [
+    "self"
+  ],
+  "get_run_df": [
+    "self"
+  ],
+  "get_analyte_dict": [
+    "self",
+    "nest_transitions",
+    "columns"
+  ],
+  "get_analyte_df": [
+    "self",
+    "nest_transitions",
+    "columns"
+  ],
+  "query_chromatograms": [
+    "self"
+  ],
+  "_make_filter_spectrum": [],
+  "get_tic": [
+    "self"
+  ],
+  "intensityInRange": [
+    "self",
+    "mz_min",
+    "mz_max"
+  ],
+  "get_base_peak": [
+    "self"
+  ],
+  "_ANALYTE_COLUMN_MAP": [],
+  "_ANALYTE_REVERSE_COLUMN_MAP": [],
+  "_PRECURSOR_ANALYTE_FIELDS": [],
+  "_PRECURSOR_GROUPING_FIELDS": [],
+  "_TRANSITION_ANALYTE_FIELDS": [],
+  "_TRANSITION_GROUPING_FIELDS": [],
+  "_NUMERIC_PUSHDOWN_COLUMNS": [],
+  "_STRING_PUSHDOWN_COLUMNS": [],
+  "_compare": [
+    "lhs",
+    "rhs",
+    "op"
+  ],
+  "_value_matches": [
+    "lhs",
+    "rhs",
+    "op"
+  ],
+  "_filter_peak_map_dict": [
+    "data",
+    "filters"
+  ],
+  "_explode_peak_map_dict": [
+    "data"
+  ],
+  "_normalize_analyte_columns": [
+    "columns"
+  ],
+  "_read_metadata_columns": [
+    "self",
+    "columns"
+  ],
+  "_deduplicate_transition_lists": [
+    "group",
+    "requested_transition_fields",
+    "transition_grouping_fields"
+  ],
+  "_build_analyte_dict": [
+    "data",
+    "requested",
+    "nest_transitions"
+  ],
+  "_normalize_pushdown_value": [
+    "column",
+    "value"
+  ],
+  "_PeakMapQuery": {
+    "__init__": [
+      "self",
+      "xipm"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "_add_filter": [
+      "self",
+      "column",
+      "value",
+      "op"
+    ],
+    "filter_precursor_id": [
+      "self",
+      "value",
+      "op"
+    ],
+    "filter_transition_id": [
+      "self",
+      "value",
+      "op"
+    ],
+    "filter_ms_level": [
+      "self",
+      "value",
+      "op"
+    ],
+    "filter_run_id": [
+      "self",
+      "value",
+      "op"
+    ],
+    "filter_precursor_charge": [
+      "self",
+      "value",
+      "op"
+    ],
+    "filter_product_charge": [
+      "self",
+      "value",
+      "op"
+    ],
+    "filter_annotation": [
+      "self",
+      "value",
+      "op"
+    ],
+    "filter_modified_sequence": [
+      "self",
+      "value",
+      "op"
+    ],
+    "filter_transition_type": [
+      "self",
+      "value",
+      "op"
+    ],
+    "filter_peakmap_type": [
+      "self",
+      "value",
+      "op"
+    ],
+    "_split_filters": [
+      "self"
+    ],
+    "to_dict": [
+      "self",
+      "explode"
+    ],
+    "to_df": [
+      "self",
+      "explode"
+    ]
+  },
+  "query_peak_maps": [
+    "self"
+  ],
+  "chromatogram_df_columns": [
+    "self",
+    "columns",
+    "export_meta_values"
+  ],
+  "feature_df_columns": [
+    "self",
+    "columns"
+  ],
+  "to_chromatogram_df": [
+    "self",
+    "columns",
+    "export_meta_values"
+  ],
+  "to_feature_df": [
+    "self",
+    "columns",
+    "meta_values"
+  ],
+  "get_chromatogram_df": [
+    "self"
+  ],
+  "get_chromatogram_df_columns": [
+    "self"
+  ],
+  "get_feature_df": [
+    "self"
+  ],
+  "get_feature_df_columns": [
+    "self"
+  ],
+  "_fill_container": [
+    "container",
+    "items"
+  ],
+  "_load_with_compat": [
+    "self",
+    "filename",
+    "protein_ids",
+    "peptide_ids",
+    "stacklevel"
+  ],
+  "_store_with_compat": [
+    "self",
+    "filename",
+    "protein_ids",
+    "peptide_ids",
+    "stacklevel"
+  ],
+  "load": [
+    "self",
+    "filename",
+    "protein_ids",
+    "peptide_ids"
+  ],
+  "store": [
+    "self",
+    "filename",
+    "protein_ids",
+    "peptide_ids",
+    "document_id"
+  ],
+  "_COLUMN_ALIASES": [],
+  "_REQUIRED_COLUMNS": [],
+  "_ALIAS_TO_CANONICAL": [],
+  "_normalize_columns": [
+    "df"
+  ],
+  "_to_list": [
+    "value",
+    "dtype",
+    "np",
+    "pd"
+  ],
+  "_coerce": [
+    "x",
+    "dtype"
+  ],
+  "compounds_from_df": [
+    "df"
+  ],
+  "compounds_to_df": [
+    "compounds"
+  ],
+  "run_from_df": [
+    "self",
+    "df",
+    "features",
+    "spectra_path"
+  ],
+  "_make_getkeys_fix": [
+    "cls_name"
+  ],
+  "to_tuple": [
+    "self"
+  ],
+  "make_singleton_callable": [
+    "original_cls"
+  ],
+  "SINGLETON_CLASSES": [],
+  "_MobilogramQuery": {
+    "__init__": [
+      "self",
+      "xim"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "_format_filter_value": [
+      "value"
+    ],
+    "_add_filter": [
+      "self",
+      "column",
+      "value",
+      "op"
+    ],
+    "filter_precursor_id": [
+      "self",
+      "value",
+      "op"
+    ],
+    "filter_transition_id": [
+      "self",
+      "value",
+      "op"
+    ],
+    "filter_ms_level": [
+      "self",
+      "value",
+      "op"
+    ],
+    "filter_run_id": [
+      "self",
+      "value",
+      "op"
+    ],
+    "filter_precursor_charge": [
+      "self",
+      "value",
+      "op"
+    ],
+    "filter_product_charge": [
+      "self",
+      "value",
+      "op"
+    ],
+    "filter_annotation": [
+      "self",
+      "value",
+      "op"
+    ],
+    "filter_modified_sequence": [
+      "self",
+      "value",
+      "op"
+    ],
+    "filter_transition_type": [
+      "self",
+      "value",
+      "op"
+    ],
+    "to_dict": [
+      "self",
+      "explode"
+    ],
+    "to_df": [
+      "self",
+      "explode"
+    ]
+  },
+  "query_mobilograms": [
+    "self"
+  ],
+  "_get_prot_id_filename_from_pep_id": [
+    "self",
+    "pep_id"
+  ],
+  "get_assigned_peptide_identifications": [
+    "self"
+  ],
+  "peptide_df_columns": [
+    "self",
+    "decode_ontology"
+  ],
+  "to_peptide_df": [
+    "self",
+    "decode_ontology",
+    "default_missing_values",
+    "export_unidentified",
+    "columns"
+  ],
+  "Math": {
+    "getPPM": [
+      "mz_obs",
+      "mz_ref"
+    ],
+    "getPPMAbs": [
+      "mz_obs",
+      "mz_ref"
+    ],
+    "ppmToMass": [
+      "ppm",
+      "mz_ref"
+    ],
+    "ppmToMassAbs": [
+      "ppm",
+      "mz_ref"
+    ]
+  },
+  "_setup_convexhull": [
+    "cls"
+  ],
+  "WRAP_CLASSES": [],
+  "get_intensity_df": [
+    "self"
+  ],
+  "get_metadata_df": [
+    "self"
+  ],
+  "feature_columns": [
+    "self"
+  ],
+  "to_feature_arrow": [
+    "self",
+    "reference_file_name",
+    "columns",
+    "include_modifications",
+    "scan_format"
+  ],
+  "to_feature_parquet": [
+    "self",
+    "filename",
+    "compression"
+  ],
+  "to_feature_qpx": [
+    "self",
+    "qpx_version",
+    "creator",
+    "software_provider"
+  ],
+  "peptidoform_from_string": [
+    "cls",
+    "proforma_string"
+  ],
+  "peptidoform_from_aasequence": [
+    "cls",
+    "aas"
+  ],
+  "peptidoform_from_json": [
+    "cls",
+    "json_str"
+  ],
+  "toString": [
+    "self",
+    "mode"
+  ],
+  "toAASequence": [
+    "self",
+    "policy"
+  ],
+  "isRepresentableAsAASequence": [
+    "self"
+  ],
+  "getAASequenceConversionIssues": [
+    "self"
+  ],
+  "canCalculateMass": [
+    "self"
+  ],
+  "getMassCalculationIssues": [
+    "self"
+  ],
+  "getMonoWeight": [
+    "self"
+  ],
+  "getMZ": [
+    "self"
+  ],
+  "canGenerateSpectrum": [
+    "self"
+  ],
+  "getSpectrumGenerationIssues": [
+    "self"
+  ],
+  "generateSpectrum": [
+    "self",
+    "min_charge",
+    "max_charge",
+    "ion_types",
+    "add_losses",
+    "add_metainfo"
+  ],
+  "__repr__": [
+    "self"
+  ],
+  "__str__": [
+    "self"
+  ],
+  "peptidoform_ion_from_string": [
+    "cls",
+    "proforma_string"
+  ],
+  "peptidoform_ion_from_json": [
+    "cls",
+    "json_str"
+  ],
+  "string_dtype": [
+    "count"
+  ],
+  "addon": [
+    "class_name",
+    "method_name"
+  ],
+  "register_element_views": [
+    "class_name",
+    "singular",
+    "count_method",
+    "plural"
+  ],
+  "apply_addons": [
+    "namespace"
+  ],
+  "_import_addon_modules": [],
+  "_deprecated_alias": [
+    "cls_name",
+    "old_name",
+    "new_name",
+    "reason"
+  ],
+  "DataType": {
+    "STRING_VALUE": [],
+    "INT_VALUE": [],
+    "DOUBLE_VALUE": [],
+    "STRING_LIST": [],
+    "INT_LIST": [],
+    "DOUBLE_LIST": [],
+    "EMPTY_VALUE": []
+  },
+  "DataValue": {
+    "STRING_VALUE": [],
+    "INT_VALUE": [],
+    "DOUBLE_VALUE": [],
+    "STRING_LIST": [],
+    "INT_LIST": [],
+    "DOUBLE_LIST": [],
+    "EMPTY_VALUE": [],
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "value"
+    ],
+    "valueType": [
+      "self"
+    ],
+    "isEmpty": [
+      "self"
+    ],
+    "toInt": [
+      "self"
+    ],
+    "toDouble": [
+      "self"
+    ],
+    "toString": [
+      "self"
+    ],
+    "toBool": [
+      "self"
+    ],
+    "toStringList": [
+      "self"
+    ],
+    "toIntList": [
+      "self"
+    ],
+    "toDoubleList": [
+      "self"
+    ],
+    "_EPSILON": [],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__hash__": [
+      "self"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__bool__": [
+      "self"
+    ]
+  },
+  "arrow_columns": [
+    "self",
+    "data",
+    "format",
+    "include_precursor_info",
+    "include_ion_mobility"
+  ],
+  "_build_spectra_arrow": [
+    "exp",
+    "format",
+    "columns",
+    "ms_levels",
+    "min_rt",
+    "max_rt",
+    "min_mz",
+    "max_mz",
+    "include_precursor_info",
+    "include_ion_mobility",
+    "pa"
+  ],
+  "_build_chrom_arrow": [
+    "exp",
+    "format",
+    "columns",
+    "min_rt",
+    "max_rt",
+    "pa"
+  ],
+  "get_massql_df": [
+    "self",
+    "ion_mobility"
+  ],
+  "_rename_long_kwarg": [
+    "kwargs",
+    "caller"
+  ],
+  "get_ion_df": [
+    "self"
+  ]
+}

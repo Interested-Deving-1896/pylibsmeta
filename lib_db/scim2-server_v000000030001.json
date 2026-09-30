@@ -1,0 +1,344 @@
+{
+  "BULK_ID_PREFIX": [],
+  "Resolver": [],
+  "OperationRunner": [],
+  "replace_bulk_ids": [
+    "value",
+    "replace"
+  ],
+  "resolve_operation": [
+    "operation",
+    "replace"
+  ],
+  "BulkJob": {
+    "__init__": [
+      "self",
+      "operations",
+      "fail_on_errors",
+      "run"
+    ],
+    "stopped": [
+      "self"
+    ],
+    "run": [
+      "self"
+    ],
+    "run_operation": [
+      "self",
+      "index"
+    ],
+    "is_creation": [
+      "self",
+      "index",
+      "bulk_id"
+    ],
+    "references": [
+      "operation"
+    ],
+    "resolve": [
+      "self",
+      "index",
+      "operation"
+    ]
+  },
+  "BEARER_TOKEN_SCHEME": [],
+  "log_environ": [
+    "handler"
+  ],
+  "main": [],
+  "load_json_resource": [
+    "json_name"
+  ],
+  "load_scim_resource": [
+    "json_name",
+    "type_"
+  ],
+  "load_default_schemas": [],
+  "load_default_resource_types": [],
+  "load_default_service_provider_config": [],
+  "load_default_provider": [],
+  "SEARCH_REQUEST_PARAMETERS": [],
+  "BULK_SUCCESS_STATUS": [],
+  "SCIMApplication": {
+    "__init__": [
+      "self",
+      "backend",
+      "provider"
+    ],
+    "get_model": [
+      "self",
+      "resource_type"
+    ],
+    "get_models": [
+      "self"
+    ],
+    "get_resource_type_by_endpoint": [
+      "self",
+      "endpoint"
+    ],
+    "etag_supported": [
+      "self"
+    ],
+    "publish": [
+      "self",
+      "request",
+      "resource"
+    ],
+    "etag_header": [
+      "resource"
+    ],
+    "check_preconditions": [
+      "self",
+      "resource",
+      "method",
+      "if_match",
+      "if_none_match"
+    ],
+    "get_existing_resource": [
+      "self",
+      "resource_type",
+      "resource_id"
+    ],
+    "create": [
+      "self",
+      "resource_type",
+      "payload"
+    ],
+    "replace": [
+      "self",
+      "resource_type",
+      "resource_id",
+      "payload",
+      "if_match",
+      "if_none_match"
+    ],
+    "patch": [
+      "self",
+      "resource_type",
+      "resource_id",
+      "payload",
+      "if_match",
+      "if_none_match"
+    ],
+    "delete": [
+      "self",
+      "resource_type",
+      "resource_id",
+      "if_match",
+      "if_none_match"
+    ],
+    "call_single_resource": [
+      "self",
+      "request",
+      "resource_endpoint",
+      "resource_id"
+    ],
+    "get_response_parameters": [
+      "request",
+      "model"
+    ],
+    "build_search_request": [
+      "self",
+      "request",
+      "models"
+    ],
+    "query_resource": [
+      "self",
+      "request",
+      "resource"
+    ],
+    "call_resource": [
+      "self",
+      "request",
+      "resource_endpoint"
+    ],
+    "call_query_all": [
+      "self",
+      "request"
+    ],
+    "call_resource_search": [
+      "self",
+      "request",
+      "resource_endpoint"
+    ],
+    "ensure_supported": [
+      "capability",
+      "operation"
+    ],
+    "call_bulk": [
+      "self",
+      "request"
+    ],
+    "run_bulk_operation": [
+      "self",
+      "request",
+      "operation",
+      "resolve"
+    ],
+    "apply_bulk_operation": [
+      "self",
+      "resource_type",
+      "operation"
+    ],
+    "call_me": [
+      "self",
+      "request"
+    ],
+    "register_bearer_token": [
+      "self",
+      "token"
+    ],
+    "check_auth": [
+      "self",
+      "request"
+    ],
+    "make_response": [
+      "content",
+      "status"
+    ],
+    "error_from": [
+      "self",
+      "exception"
+    ],
+    "make_error": [
+      "self",
+      "error"
+    ],
+    "forbid_filter": [
+      "request"
+    ],
+    "call_service_provider_config": [
+      "self",
+      "request"
+    ],
+    "locate": [
+      "resource",
+      "location"
+    ],
+    "call_resource_type": [
+      "self",
+      "request",
+      "resource_type"
+    ],
+    "call_schema": [
+      "self",
+      "request",
+      "schema_id"
+    ],
+    "call_resource_types": [
+      "self",
+      "request"
+    ],
+    "call_schemas": [
+      "self",
+      "request"
+    ],
+    "wsgi_app": [
+      "self",
+      "request",
+      "environ"
+    ],
+    "__call__": [
+      "self",
+      "environ",
+      "start_response"
+    ]
+  },
+  "Backend": {
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ],
+    "query_resources": [
+      "self",
+      "search_request",
+      "resource_type"
+    ],
+    "get_resource": [
+      "self",
+      "resource_type",
+      "object_id"
+    ],
+    "delete_resource": [
+      "self",
+      "resource_type",
+      "object_id"
+    ],
+    "create_resource": [
+      "self",
+      "resource_type",
+      "resource"
+    ],
+    "update_resource": [
+      "self",
+      "resource_type",
+      "resource"
+    ]
+  },
+  "InMemoryBackend": {
+    "__init__": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ],
+    "query_resources": [
+      "self",
+      "search_request",
+      "resource_type"
+    ],
+    "_is_of_type": [
+      "self",
+      "resource",
+      "resource_type"
+    ],
+    "_get_resource_idx": [
+      "self",
+      "resource_type",
+      "object_id"
+    ],
+    "get_resource": [
+      "self",
+      "resource_type",
+      "object_id"
+    ],
+    "delete_resource": [
+      "self",
+      "resource_type",
+      "object_id"
+    ],
+    "create_resource": [
+      "self",
+      "resource_type",
+      "resource"
+    ],
+    "_check_uniqueness": [
+      "self",
+      "resource"
+    ],
+    "_unique_value": [
+      "resource",
+      "attribute"
+    ],
+    "_touch_resource": [
+      "resource",
+      "last_modified"
+    ],
+    "update_resource": [
+      "self",
+      "resource_type",
+      "resource"
+    ]
+  }
+}
