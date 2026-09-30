@@ -1,0 +1,1089 @@
+{
+  "LOG": [],
+  "STRING_TYPE": [],
+  "LIST_TYPE": [],
+  "_POLARS_DEFAULT_COMPARATORS": [],
+  "PolarsCompare": {
+    "__init__": [
+      "self",
+      "df1",
+      "df2",
+      "join_columns",
+      "abs_tol",
+      "rel_tol",
+      "df1_name",
+      "df2_name",
+      "ignore_spaces",
+      "ignore_case",
+      "cast_column_names_lower",
+      "custom_comparators"
+    ],
+    "_get_comparators": [
+      "self"
+    ],
+    "df1": [
+      "self",
+      "df1"
+    ],
+    "df2": [
+      "self",
+      "df2"
+    ],
+    "hide_sensitive_columns": [
+      "self",
+      "sensitive_columns"
+    ],
+    "_validate_dataframe": [
+      "self",
+      "index",
+      "cast_column_names_lower"
+    ],
+    "_compare": [
+      "self",
+      "ignore_spaces",
+      "ignore_case"
+    ],
+    "df1_unq_columns": [
+      "self"
+    ],
+    "df2_unq_columns": [
+      "self"
+    ],
+    "intersect_columns": [
+      "self"
+    ],
+    "_dataframe_merge": [
+      "self",
+      "ignore_spaces"
+    ],
+    "_intersect_compare": [
+      "self",
+      "ignore_spaces",
+      "ignore_case"
+    ],
+    "all_columns_match": [
+      "self"
+    ],
+    "all_rows_overlap": [
+      "self"
+    ],
+    "count_matching_rows": [
+      "self"
+    ],
+    "intersect_rows_match": [
+      "self"
+    ],
+    "matches": [
+      "self",
+      "ignore_extra_columns"
+    ],
+    "subset": [
+      "self"
+    ],
+    "sample_mismatch": [
+      "self",
+      "column",
+      "sample_count",
+      "for_display"
+    ],
+    "all_mismatch": [
+      "self",
+      "ignore_matching_cols"
+    ]
+  },
+  "columns_equal": [
+    "col_1",
+    "col_2",
+    "rel_tol",
+    "abs_tol",
+    "ignore_spaces",
+    "ignore_case",
+    "comparators"
+  ],
+  "get_merged_columns": [
+    "original_df",
+    "merged_df",
+    "suffix"
+  ],
+  "calculate_max_diff": [
+    "col_1",
+    "col_2"
+  ],
+  "generate_id_within_group": [
+    "dataframe",
+    "join_columns"
+  ],
+  "_PANDAS_DEFAULT_COMPARATORS": [],
+  "PandasCompare": {
+    "__init__": [
+      "self",
+      "df1",
+      "df2",
+      "join_columns",
+      "on_index",
+      "abs_tol",
+      "rel_tol",
+      "df1_name",
+      "df2_name",
+      "ignore_spaces",
+      "ignore_case",
+      "cast_column_names_lower",
+      "custom_comparators"
+    ],
+    "_get_comparators": [
+      "self"
+    ],
+    "df1": [
+      "self",
+      "df1"
+    ],
+    "df2": [
+      "self",
+      "df2"
+    ],
+    "hide_sensitive_columns": [
+      "self",
+      "sensitive_columns"
+    ],
+    "_validate_dataframe": [
+      "self",
+      "index",
+      "cast_column_names_lower"
+    ],
+    "_compare": [
+      "self",
+      "ignore_spaces",
+      "ignore_case"
+    ],
+    "df1_unq_columns": [
+      "self"
+    ],
+    "df2_unq_columns": [
+      "self"
+    ],
+    "intersect_columns": [
+      "self"
+    ],
+    "_dataframe_merge": [
+      "self",
+      "ignore_spaces"
+    ],
+    "_intersect_compare": [
+      "self",
+      "ignore_spaces",
+      "ignore_case"
+    ],
+    "all_columns_match": [
+      "self"
+    ],
+    "all_rows_overlap": [
+      "self"
+    ],
+    "count_matching_rows": [
+      "self"
+    ],
+    "intersect_rows_match": [
+      "self"
+    ],
+    "matches": [
+      "self",
+      "ignore_extra_columns"
+    ],
+    "subset": [
+      "self"
+    ],
+    "sample_mismatch": [
+      "self",
+      "column",
+      "sample_count",
+      "for_display"
+    ],
+    "all_mismatch": [
+      "self",
+      "ignore_matching_cols"
+    ],
+    "_select_first_n_columns": [
+      "self",
+      "df",
+      "n"
+    ],
+    "_column_names": [
+      "self",
+      "df"
+    ]
+  },
+  "NUMERIC_SNOWPARK_TYPES": [],
+  "_SNOWFLAKE_DEFAULT_COMPARATORS": [],
+  "SnowflakeCompare": {
+    "__init__": [
+      "self",
+      "session",
+      "df1",
+      "df2",
+      "join_columns",
+      "abs_tol",
+      "rel_tol",
+      "df1_name",
+      "df2_name",
+      "ignore_spaces",
+      "ignore_case",
+      "custom_comparators"
+    ],
+    "_get_comparators": [
+      "self"
+    ],
+    "df1": [
+      "self",
+      "df1"
+    ],
+    "df2": [
+      "self",
+      "df2"
+    ],
+    "_set_and_validate_sensitive_columns": [
+      "self",
+      "sensitive_columns"
+    ],
+    "hide_sensitive_columns": [
+      "self",
+      "sensitive_columns"
+    ],
+    "_validate_dataframe": [
+      "self",
+      "df_name",
+      "index"
+    ],
+    "_compare": [
+      "self",
+      "ignore_spaces",
+      "ignore_case"
+    ],
+    "df1_unq_columns": [
+      "self"
+    ],
+    "df2_unq_columns": [
+      "self"
+    ],
+    "intersect_columns": [
+      "self"
+    ],
+    "_dataframe_merge": [
+      "self",
+      "ignore_spaces"
+    ],
+    "_intersect_compare": [
+      "self",
+      "ignore_spaces",
+      "ignore_case"
+    ],
+    "_calculate_column_compare_stats": [
+      "self",
+      "column"
+    ],
+    "all_columns_match": [
+      "self"
+    ],
+    "all_rows_overlap": [
+      "self"
+    ],
+    "count_matching_rows": [
+      "self"
+    ],
+    "intersect_rows_match": [
+      "self"
+    ],
+    "matches": [
+      "self",
+      "ignore_extra_columns"
+    ],
+    "subset": [
+      "self"
+    ],
+    "sample_mismatch": [
+      "self",
+      "column",
+      "sample_count",
+      "for_display"
+    ],
+    "all_mismatch": [
+      "self",
+      "ignore_matching_cols"
+    ],
+    "_table_shape": [
+      "self",
+      "df"
+    ],
+    "_row_count": [
+      "self",
+      "df",
+      "_cache"
+    ],
+    "_select_first_n_columns": [
+      "self",
+      "df",
+      "n"
+    ],
+    "_column_names": [
+      "self",
+      "df"
+    ]
+  },
+  "calculate_null_diff": [
+    "dataframe",
+    "col_1",
+    "col_2"
+  ],
+  "_generate_id_within_group": [
+    "dataframe",
+    "join_columns",
+    "order_column_name"
+  ],
+  "_get_column_dtypes": [
+    "dataframe",
+    "col_1",
+    "col_2"
+  ],
+  "_is_comparable": [
+    "type1",
+    "type2"
+  ],
+  "temp_column_name": [],
+  "ColumnSummary": {},
+  "RowSummary": {},
+  "ColumnComparison": {},
+  "MismatchStat": {},
+  "MismatchStats": {},
+  "UniqueRowsData": {},
+  "ReportData": {
+    "render": [
+      "self",
+      "template_path"
+    ],
+    "to_html": [
+      "self",
+      "template_path"
+    ],
+    "save": [
+      "self",
+      "path",
+      "template_path"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "_SPARK_DEFAULT_COMPARATORS": [],
+  "decimal_comparator": [],
+  "NUMERIC_SPARK_TYPES": [],
+  "SparkSQLCompare": {
+    "__init__": [
+      "self",
+      "spark_session",
+      "df1",
+      "df2",
+      "join_columns",
+      "abs_tol",
+      "rel_tol",
+      "df1_name",
+      "df2_name",
+      "ignore_spaces",
+      "ignore_case",
+      "cast_column_names_lower",
+      "custom_comparators",
+      "cache_intermediates"
+    ],
+    "_get_comparators": [
+      "self"
+    ],
+    "df1": [
+      "self",
+      "df1"
+    ],
+    "df2": [
+      "self",
+      "df2"
+    ],
+    "hide_sensitive_columns": [
+      "self",
+      "sensitive_columns"
+    ],
+    "_validate_dataframe": [
+      "self",
+      "index",
+      "cast_column_names_lower"
+    ],
+    "_compare": [
+      "self",
+      "ignore_spaces",
+      "ignore_case"
+    ],
+    "df1_unq_columns": [
+      "self"
+    ],
+    "df2_unq_columns": [
+      "self"
+    ],
+    "intersect_columns": [
+      "self"
+    ],
+    "_dataframe_merge": [
+      "self",
+      "ignore_spaces"
+    ],
+    "_intersect_compare": [
+      "self",
+      "ignore_spaces",
+      "ignore_case"
+    ],
+    "all_columns_match": [
+      "self"
+    ],
+    "all_rows_overlap": [
+      "self"
+    ],
+    "count_matching_rows": [
+      "self"
+    ],
+    "intersect_rows_match": [
+      "self"
+    ],
+    "matches": [
+      "self",
+      "ignore_extra_columns"
+    ],
+    "subset": [
+      "self"
+    ],
+    "sample_mismatch": [
+      "self",
+      "column",
+      "sample_count",
+      "for_display"
+    ],
+    "all_mismatch": [
+      "self",
+      "ignore_matching_cols"
+    ],
+    "_table_shape": [
+      "self",
+      "df"
+    ],
+    "_row_count": [
+      "self",
+      "df",
+      "_cache"
+    ],
+    "_select_first_n_columns": [
+      "self",
+      "df",
+      "n"
+    ],
+    "_column_names": [
+      "self",
+      "df"
+    ]
+  },
+  "check_module_available": [
+    "module_available",
+    "extra_name"
+  ],
+  "__version__": [],
+  "__all__": [],
+  "ColumnStat": {},
+  "BaseCompare": {
+    "df1": [
+      "self",
+      "df1"
+    ],
+    "df2": [
+      "self",
+      "df2"
+    ],
+    "sensitive_columns": [
+      "self"
+    ],
+    "_set_and_validate_sensitive_columns": [
+      "self",
+      "sensitive_columns"
+    ],
+    "_mask_sensitive_column_stats": [
+      "self"
+    ],
+    "_validate_dataframe": [
+      "self",
+      "index",
+      "cast_column_names_lower"
+    ],
+    "_compare": [
+      "self",
+      "ignore_spaces",
+      "ignore_case"
+    ],
+    "df1_unq_columns": [
+      "self"
+    ],
+    "df2_unq_columns": [
+      "self"
+    ],
+    "intersect_columns": [
+      "self"
+    ],
+    "_dataframe_merge": [
+      "self",
+      "ignore_spaces"
+    ],
+    "_intersect_compare": [
+      "self",
+      "ignore_spaces",
+      "ignore_case"
+    ],
+    "all_columns_match": [
+      "self"
+    ],
+    "all_rows_overlap": [
+      "self"
+    ],
+    "count_matching_rows": [
+      "self"
+    ],
+    "intersect_rows_match": [
+      "self"
+    ],
+    "matches": [
+      "self",
+      "ignore_extra_columns"
+    ],
+    "subset": [
+      "self"
+    ],
+    "sample_mismatch": [
+      "self",
+      "column",
+      "sample_count",
+      "for_display"
+    ],
+    "all_mismatch": [
+      "self",
+      "ignore_matching_cols"
+    ],
+    "_table_shape": [
+      "self",
+      "df"
+    ],
+    "_row_count": [
+      "self",
+      "df",
+      "_cache"
+    ],
+    "_select_first_n_columns": [
+      "self",
+      "df",
+      "n"
+    ],
+    "_column_names": [
+      "self",
+      "df"
+    ],
+    "build_report_data": [
+      "self",
+      "sample_count",
+      "column_count"
+    ],
+    "report": [
+      "self",
+      "sample_count",
+      "column_count",
+      "html_file",
+      "template_path"
+    ],
+    "reveal_sensitive_columns": [
+      "self"
+    ],
+    "only_join_columns": [
+      "self"
+    ],
+    "columns_with_mismatches": [
+      "self"
+    ]
+  },
+  "_resolve_template_path": [
+    "template_name"
+  ],
+  "TABLE_GUTTER": [],
+  "fixed_width_table": [
+    "headers",
+    "rows",
+    "align"
+  ],
+  "render": [
+    "template_name"
+  ],
+  "save_html_report": [
+    "report",
+    "html_file"
+  ],
+  "df_to_str": [
+    "df",
+    "sample_count",
+    "on_index"
+  ],
+  "get_column_tolerance": [
+    "column",
+    "tol_dict"
+  ],
+  "validate_tolerance_parameter": [
+    "param_value",
+    "param_name",
+    "case_mode"
+  ],
+  "ps": [],
+  "sp": [],
+  "spf": [],
+  "DEFAULT_VALUE": [],
+  "POLARS_STRING_TYPE": [],
+  "POLARS_DATE_TYPE": [],
+  "PANDAS_STRING_TYPE": [],
+  "PANDAS_DATE_TYPES": [],
+  "PolarsStringComparator": {
+    "compare": [
+      "self",
+      "col1",
+      "col2",
+      "ignore_space",
+      "ignore_case"
+    ]
+  },
+  "PandasStringComparator": {
+    "compare": [
+      "self",
+      "col1",
+      "col2",
+      "ignore_space",
+      "ignore_case"
+    ]
+  },
+  "SparkStringComparator": {
+    "compare": [
+      "self",
+      "dataframe",
+      "col1",
+      "col2",
+      "ignore_space",
+      "ignore_case"
+    ]
+  },
+  "SnowflakeStringComparator": {
+    "compare": [
+      "self",
+      "dataframe",
+      "col1",
+      "col2",
+      "col_match",
+      "ignore_space",
+      "ignore_case"
+    ]
+  },
+  "pandas_normalize_string_column": [
+    "column",
+    "ignore_spaces",
+    "ignore_case"
+  ],
+  "polars_normalize_string_column": [
+    "column",
+    "ignore_spaces",
+    "ignore_case"
+  ],
+  "spark_normalize_string_column": [
+    "column",
+    "ignore_spaces",
+    "ignore_case"
+  ],
+  "snowpark_normalize_string_column": [
+    "column",
+    "ignore_spaces",
+    "ignore_case"
+  ],
+  "pandas_compare_string_and_date_columns": [
+    "col_1",
+    "col_2"
+  ],
+  "polars_compare_string_and_date_columns": [
+    "col_1",
+    "col_2"
+  ],
+  "NUMERIC_PANDAS_TYPES": [],
+  "PolarsNumericComparator": {
+    "compare": [
+      "self",
+      "col1",
+      "col2",
+      "rtol",
+      "atol"
+    ]
+  },
+  "PandasNumericComparator": {
+    "compare": [
+      "self",
+      "col1",
+      "col2",
+      "rtol",
+      "atol"
+    ]
+  },
+  "SparkNumericComparator": {
+    "compare": [
+      "self",
+      "dataframe",
+      "col1",
+      "col2",
+      "rtol",
+      "atol"
+    ]
+  },
+  "SnowflakeNumericComparator": {
+    "compare": [
+      "self",
+      "dataframe",
+      "col1",
+      "col2",
+      "col_match",
+      "rtol",
+      "atol"
+    ]
+  },
+  "POLARS_ARRAY_TYPE": [],
+  "PandasArrayLikeComparator": {
+    "compare": [
+      "self",
+      "col1",
+      "col2"
+    ]
+  },
+  "_array_equal": [
+    "left",
+    "right"
+  ],
+  "PolarsArrayLikeComparator": {
+    "compare": [
+      "self",
+      "col1",
+      "col2"
+    ]
+  },
+  "SparkArrayLikeComparator": {
+    "compare": [
+      "self",
+      "dataframe",
+      "col1",
+      "col2"
+    ]
+  },
+  "SnowflakeArrayLikeComparator": {
+    "compare": [
+      "self",
+      "dataframe",
+      "col1",
+      "col2",
+      "col_match"
+    ]
+  },
+  "PYSPARK_BOOLEAN_TYPE": [],
+  "SNOWFLAKE_BOOLEAN_TYPE": [],
+  "STRING_POLARS_TYPES": [],
+  "PandasBooleanComparator": {
+    "compare": [
+      "self",
+      "col1",
+      "col2"
+    ]
+  },
+  "PolarsBooleanComparator": {
+    "compare": [
+      "self",
+      "col1",
+      "col2"
+    ]
+  },
+  "SparkBooleanComparator": {
+    "_boolean_equals_numeric": [
+      "boolean_col",
+      "numeric_col",
+      "psf"
+    ],
+    "compare": [
+      "self",
+      "dataframe",
+      "col1",
+      "col2"
+    ]
+  },
+  "SnowflakeBooleanComparator": {
+    "_boolean_equals_numeric": [
+      "boolean_col",
+      "numeric_col"
+    ],
+    "compare": [
+      "self",
+      "dataframe",
+      "col1",
+      "col2",
+      "col_match"
+    ]
+  },
+  "_CONNECT_MODULE_PREFIX": [],
+  "_CONNECT_DATAFRAME_MODULE": [],
+  "is_spark_connect_dataframe": [
+    "spark_object"
+  ],
+  "is_spark_connect_object": [
+    "spark_object"
+  ],
+  "get_spark_functions": [
+    "spark_object"
+  ],
+  "get_spark_window": [
+    "spark_object"
+  ],
+  "get_spark_column_dtypes": [
+    "dataframe",
+    "col_1",
+    "col_2"
+  ],
+  "get_snowflake_column_dtypes": [
+    "dataframe",
+    "col_1",
+    "col_2"
+  ],
+  "BaseComparator": {
+    "compare": [
+      "self",
+      "col1",
+      "col2"
+    ]
+  },
+  "run_compare": [
+    "namespace"
+  ],
+  "validate_arguments": [
+    "namespace"
+  ],
+  "within_threshold": [
+    "namespace",
+    "report_data"
+  ],
+  "ALL_BACKENDS": [],
+  "FILE_BACKENDS": [],
+  "INPUT_FORMATS": [],
+  "REPORT_FORMATS": [],
+  "GROUP_INPUT": [],
+  "GROUP_JOIN": [],
+  "GROUP_BACKEND": [],
+  "GROUP_COMPARISON": [],
+  "GROUP_NAMING": [],
+  "GROUP_REPORT": [],
+  "GROUP_OUTPUT": [],
+  "GROUP_BACKEND_SPECIFIC": [],
+  "Opt": {
+    "dest": [
+      "self"
+    ],
+    "was_given": [
+      "self",
+      "namespace"
+    ],
+    "value": [
+      "self",
+      "namespace"
+    ],
+    "resolved": [
+      "self",
+      "namespace"
+    ]
+  },
+  "join_column_group": [
+    "value"
+  ],
+  "tolerance": [
+    "value"
+  ],
+  "single_char": [
+    "value"
+  ],
+  "non_negative_int": [
+    "value"
+  ],
+  "_flatten_join_columns": [
+    "raw",
+    "namespace"
+  ],
+  "_combine_tolerances": [
+    "raw",
+    "namespace"
+  ],
+  "default_dataset_name": [
+    "ref",
+    "backend"
+  ],
+  "_resolve_dataset_name": [
+    "raw",
+    "namespace"
+  ],
+  "fill_defaults": [
+    "namespace"
+  ],
+  "package_version": [],
+  "_debug_parent": [],
+  "build_parser": [],
+  "_DEFAULT_DELIMITER": [],
+  "_PLAUSIBLE_DELIMITERS": [],
+  "_NDJSON_EXTENSIONS": [],
+  "_TABLE_REF": [],
+  "infer_format": [
+    "ref",
+    "override"
+  ],
+  "infer_delimiter": [
+    "ref",
+    "override"
+  ],
+  "suspect_delimiter": [
+    "ref",
+    "namespace",
+    "frame"
+  ],
+  "_is_ndjson": [
+    "ref"
+  ],
+  "compare_kwargs": [
+    "namespace",
+    "backend"
+  ],
+  "_missing_extra": [
+    "backend",
+    "extra"
+  ],
+  "CLIBackend": {
+    "compare_cls": [
+      "self"
+    ],
+    "open_session": [
+      "self",
+      "namespace",
+      "stack"
+    ],
+    "load": [
+      "self",
+      "session",
+      "ref",
+      "namespace"
+    ],
+    "build": [
+      "self",
+      "namespace",
+      "session",
+      "left",
+      "right"
+    ]
+  },
+  "PandasBackend": {
+    "name": [],
+    "module": [],
+    "class_name": [],
+    "load": [
+      "self",
+      "session",
+      "ref",
+      "namespace"
+    ]
+  },
+  "PolarsBackend": {
+    "name": [],
+    "module": [],
+    "class_name": [],
+    "load": [
+      "self",
+      "session",
+      "ref",
+      "namespace"
+    ]
+  },
+  "SparkBackend": {
+    "name": [],
+    "module": [],
+    "class_name": [],
+    "extra": [],
+    "open_session": [
+      "self",
+      "namespace",
+      "stack"
+    ],
+    "load": [
+      "self",
+      "session",
+      "ref",
+      "namespace"
+    ],
+    "build": [
+      "self",
+      "namespace",
+      "session",
+      "left",
+      "right"
+    ]
+  },
+  "SnowflakeBackend": {
+    "name": [],
+    "module": [],
+    "class_name": [],
+    "extra": [],
+    "open_session": [
+      "self",
+      "namespace",
+      "stack"
+    ],
+    "load": [
+      "self",
+      "session",
+      "ref",
+      "namespace"
+    ],
+    "build": [
+      "self",
+      "namespace",
+      "session",
+      "left",
+      "right"
+    ]
+  },
+  "_snowflake_params": [
+    "config_path"
+  ],
+  "CLIError": {},
+  "BadArgsError": {},
+  "LoadError": {},
+  "MissingExtraError": {},
+  "OutputError": {},
+  "_json_default": [
+    "obj"
+  ],
+  "emit": [
+    "report_data",
+    "report_format",
+    "output"
+  ],
+  "print_error": [
+    "message"
+  ],
+  "print_warning": [
+    "message"
+  ],
+  "main": [
+    "argv"
+  ]
+}
