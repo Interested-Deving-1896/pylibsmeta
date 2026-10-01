@@ -1,0 +1,3785 @@
+{
+  "app": [],
+  "callback": [
+    "ctx",
+    "version_flag",
+    "context"
+  ],
+  "run": [],
+  "__all__": [],
+  "VERIFIERS_REPO": [],
+  "VERIFIERS_REF": [],
+  "VERIFIERS_CONFIG_REF": [],
+  "VERIFIERS_REQUIREMENT": [],
+  "DOWNLOAD_ATTEMPTS": [],
+  "DOWNLOAD_RETRY_DELAY_SECONDS": [],
+  "LAB_CONFIG_FOLDERS": [],
+  "SUPPORTED_AGENTS": [],
+  "LOCAL_CLAUDE_MD": [],
+  "LOCAL_CLAUDE_GUIDANCE_TEMPLATE": [],
+  "PRIME_SKILLS_MANIFEST": [],
+  "WORKSPACE_SKILLS_DIR": [],
+  "DeprecatedConfigField": [],
+  "RepoTreeEntry": [],
+  "Emit": [],
+  "Runner": [],
+  "SkillSource": {},
+  "LabSetupOptions": {},
+  "LabSetupResult": {},
+  "LabSyncOptions": {},
+  "LabSyncResult": {},
+  "LabDoctorOptions": {},
+  "LabDoctorCheck": {},
+  "LabDoctorResult": {},
+  "AGENTS_MD_SRC": [],
+  "CLAUDE_MD_SRC": [],
+  "ENVS_AGENTS_MD_SRC": [],
+  "run_lab_setup": [
+    "passthrough_args"
+  ],
+  "run_lab_sync": [
+    "passthrough_args"
+  ],
+  "run_lab_doctor": [
+    "passthrough_args"
+  ],
+  "parse_lab_setup_args": [
+    "args"
+  ],
+  "parse_lab_sync_args": [
+    "args"
+  ],
+  "parse_lab_doctor_args": [
+    "args"
+  ],
+  "run_lab_setup_service": [
+    "options"
+  ],
+  "run_lab_sync_service": [
+    "options"
+  ],
+  "run_lab_doctor_service": [
+    "options"
+  ],
+  "_run_lab_setup_steps": [
+    "options"
+  ],
+  "_run_lab_sync_steps": [
+    "options"
+  ],
+  "_sync_workspace_guidance": [
+    "workspace",
+    "agents",
+    "emit"
+  ],
+  "_ensure_claude_local_guidance": [
+    "workspace"
+  ],
+  "_sync_prime_skills": [
+    "emit"
+  ],
+  "_sync_prime_skill_source": [
+    "source",
+    "skill_name",
+    "staging_skills_dir",
+    "manifest_skills",
+    "emit"
+  ],
+  "_download_repo_directory": [
+    "repo",
+    "ref",
+    "source_path",
+    "dest",
+    "emit"
+  ],
+  "_hash_directory": [
+    "root"
+  ],
+  "_discover_skill_names": [
+    "source"
+  ],
+  "_replace_prime_skills": [
+    "skills_dir",
+    "staging_skills_dir",
+    "previous_manifest",
+    "managed_skill_names",
+    "emit"
+  ],
+  "_read_prime_skills_manifest": [
+    "skills_dir"
+  ],
+  "_copy_setup_configs": [
+    "workspace",
+    "emit"
+  ],
+  "_sync_config_templates": [
+    "workspace",
+    "emit"
+  ],
+  "_download_lab_config_folders": [
+    "dest",
+    "emit"
+  ],
+  "_copy_lab_config_folders": [
+    "source_configs",
+    "dest_configs"
+  ],
+  "_missing_cached_lab_config_folders": [
+    "source_configs"
+  ],
+  "_cached_lab_config_folder_complete": [
+    "source_configs",
+    "folder"
+  ],
+  "_global_lab_templates_dir": [],
+  "_prepare_workspace_skill_dir": [
+    "workspace",
+    "managed_skill_names",
+    "emit"
+  ],
+  "_prepare_agent_skill_dirs": [
+    "workspace",
+    "agents",
+    "managed_skill_names",
+    "emit"
+  ],
+  "_prepare_managed_skill_dir_once": [
+    "skills_dir",
+    "prepared_dirs",
+    "managed_skill_names",
+    "emit"
+  ],
+  "_prepare_managed_skill_dir": [
+    "skills_dir",
+    "managed_skill_names",
+    "emit"
+  ],
+  "_report_missing_agent_requirements": [
+    "agents",
+    "emit"
+  ],
+  "_lab_doctor_checks": [
+    "options",
+    "workspace"
+  ],
+  "_managed_skill_manifest_check": [],
+  "_global_lab_templates_check": [],
+  "_lab_template_configs_check": [
+    "name",
+    "configs_dir",
+    "remediation"
+  ],
+  "_workspace_managed_skills_check": [
+    "workspace"
+  ],
+  "_agent_managed_skills_check": [
+    "label",
+    "agent_skill_dir",
+    "agent"
+  ],
+  "_managed_skill_names_from_manifest": [],
+  "_agent_requirements_check": [
+    "agent"
+  ],
+  "_path_check": [
+    "name",
+    "path",
+    "remediation"
+  ],
+  "_gitignore_check": [
+    "workspace"
+  ],
+  "_tracked_lab_git_hygiene_check": [
+    "workspace"
+  ],
+  "_config_validity_check": [
+    "workspace"
+  ],
+  "_config_deprecated_fields_check": [
+    "workspace"
+  ],
+  "_deprecated_config_fields": [
+    "config"
+  ],
+  "_config_environment_reference_check": [
+    "workspace"
+  ],
+  "_config_environment_refs": [
+    "config"
+  ],
+  "_environment_refs_from_list": [
+    "values"
+  ],
+  "_split_env_ref": [
+    "value"
+  ],
+  "_local_environment_names": [
+    "workspace"
+  ],
+  "_environment_source_hygiene_check": [
+    "workspace"
+  ],
+  "_ensure_uv_project": [
+    "workspace",
+    "emit",
+    "runner"
+  ],
+  "_post_setup_call_to_action": [
+    "options"
+  ],
+  "_emit_to_console": [
+    "console",
+    "item"
+  ],
+  "_write_lab_docs_index": [
+    "workspace",
+    "agents"
+  ],
+  "_sync_lab_metadata": [
+    "workspace",
+    "agents"
+  ],
+  "_read_lab_metadata": [
+    "workspace"
+  ],
+  "_workspace_agents_from_metadata": [
+    "workspace"
+  ],
+  "_resolve_sync_agents": [
+    "workspace",
+    "agents"
+  ],
+  "_download_file": [
+    "url",
+    "dest",
+    "emit"
+  ],
+  "_download_json": [
+    "url"
+  ],
+  "_repo_raw_url": [
+    "repo",
+    "ref",
+    "source_path"
+  ],
+  "_github_tree_url": [
+    "repo",
+    "ref"
+  ],
+  "_normalize_repo_path": [
+    "path"
+  ],
+  "_repo_tree_entries": [
+    "repo",
+    "ref"
+  ],
+  "_read_url": [
+    "url"
+  ],
+  "_prime_package_version": [],
+  "_run_command": [
+    "command",
+    "cwd",
+    "emit"
+  ],
+  "_check_command": [
+    "command",
+    "cwd",
+    "emit",
+    "runner"
+  ],
+  "_resolve_setup_agents": [
+    "value"
+  ],
+  "_prompt_for_agents": [],
+  "_prompt_input": [
+    "prompt"
+  ],
+  "_resolve_explicit_agents": [
+    "value"
+  ],
+  "_parse_agents": [
+    "value"
+  ],
+  "_normalize_supported_agent": [
+    "raw_agent"
+  ],
+  "_global_prime_skills_dir": [],
+  "_safe_link_or_copy_managed_skill_dir": [
+    "source",
+    "target"
+  ],
+  "_skill_target_is_user_owned": [
+    "target",
+    "managed_roots"
+  ],
+  "_remove_stale_managed_skill_links": [
+    "skills_dir",
+    "managed_roots",
+    "managed_skill_names"
+  ],
+  "_remove_managed_skill_target": [
+    "target",
+    "managed_roots"
+  ],
+  "_remove_path": [
+    "path"
+  ],
+  "_is_managed_skill_target": [
+    "target",
+    "managed_roots"
+  ],
+  "_remove_if_exists": [
+    "path"
+  ],
+  "_print_lab_doctor_result": [
+    "result",
+    "console"
+  ],
+  "main": [],
+  "AgentCapabilityStatus": [],
+  "AgentInstallRequirement": {
+    "installed": [
+      "self"
+    ]
+  },
+  "AgentCapability": {
+    "missing_requirements": [
+      "self"
+    ]
+  },
+  "_ALIASES": [],
+  "AGENT_DISPLAY_ORDER": [],
+  "_AGENT_USER_SKILL_ROOTS": [],
+  "_AGENT_PROJECT_SKILL_ROOTS": [],
+  "known_agent_names": [],
+  "agent_capability": [
+    "name"
+  ],
+  "agent_user_skills_dir": [
+    "agent"
+  ],
+  "agent_project_skills_dirs": [
+    "agent",
+    "workspace"
+  ],
+  "_CHUNK": [],
+  "_MAX_QUEUED": [],
+  "GatewayError": {},
+  "_connect": [
+    "host",
+    "port",
+    "sni",
+    "cert_sha256"
+  ],
+  "_drain": [
+    "tls",
+    "stdout_fd"
+  ],
+  "relay": [
+    "gateway",
+    "cert_sha256",
+    "sni",
+    "stdin_fd",
+    "stdout_fd"
+  ],
+  "__version__": [],
+  "LAB_AGENT_SKILL_DIRS": [],
+  "LAB_GITIGNORE_PATTERNS": [],
+  "LAB_GITHUB_WORKFLOW_RELATIVE_PATH": [],
+  "LAB_GITHUB_WORKFLOW": [],
+  "LAB_TRACKED_EXACT_PATHS": [],
+  "LAB_TRACKED_PREFIXES": [],
+  "MAX_TRACKED_PATHS_TO_SHOW": [],
+  "LabHygieneOptions": {},
+  "LabHygieneResult": {},
+  "find_lab_workspace": [
+    "path"
+  ],
+  "run_lab_hygiene_preflight": [
+    "options"
+  ],
+  "write_lab_github_workflow": [
+    "workspace"
+  ],
+  "append_lab_gitignore": [
+    "workspace"
+  ],
+  "missing_lab_gitignore_patterns": [
+    "existing"
+  ],
+  "tracked_lab_hygiene_paths": [
+    "workspace"
+  ],
+  "_is_tracked_lab_hygiene_path": [
+    "relative"
+  ],
+  "_read_gitignore": [
+    "workspace"
+  ],
+  "_git_root": [
+    "workspace"
+  ],
+  "_git_tracked_paths": [
+    "git_root"
+  ],
+  "_untrack_lab_hygiene_paths": [
+    "workspace",
+    "paths"
+  ],
+  "_tracked_paths_summary": [
+    "tracked_paths"
+  ],
+  "_tracked_paths_warning": [
+    "tracked_paths"
+  ],
+  "_emit_hygiene_result": [
+    "result",
+    "emit"
+  ],
+  "get_environment_metadata": [
+    "env_path"
+  ],
+  "find_environment_metadata": [
+    "env_name",
+    "env_path",
+    "module_name"
+  ],
+  "PYPI_URL": [],
+  "CACHE_DURATION": [],
+  "NOTIFICATION_INTERVAL": [],
+  "REQUEST_TIMEOUT": [],
+  "_get_cache_file": [],
+  "_read_cache": [],
+  "_write_cache": [
+    "latest_version",
+    "last_notified",
+    "preserve_notified"
+  ],
+  "_mark_notified": [
+    "latest_version"
+  ],
+  "_should_show_notification": [
+    "cache_data"
+  ],
+  "_is_cache_valid": [
+    "cache_data"
+  ],
+  "get_latest_pypi_version": [],
+  "check_for_update": [],
+  "_venv_python": [
+    "venv_root"
+  ],
+  "resolve_workspace_python": [
+    "cwd"
+  ],
+  "DEFAULT_MODEL": [],
+  "DEFAULT_ENV_DIR_PATH": [],
+  "DEFAULT_ENDPOINTS_PATH": [],
+  "DEFAULT_MAX_CONCURRENT": [],
+  "DEFAULT_MAX_RETRIES": [],
+  "API_CLIENT_TYPES": [],
+  "CHAT_TEMPLATE_KWARG_FIELDS": [],
+  "FREEFORM_ABLATION_SWEEP_FIELDS": [],
+  "TOML_VALID_FIELDS": [],
+  "build_hosted_eval_parser": [],
+  "merge_sampling_args": [
+    "sampling_args"
+  ],
+  "_validate_headers_table": [
+    "value"
+  ],
+  "build_extra_headers": [
+    "raw"
+  ],
+  "_config_table": [
+    "value",
+    "field"
+  ],
+  "_normalize_env_config_sections": [
+    "raw"
+  ],
+  "_normalize_env_id_alias": [
+    "config",
+    "section"
+  ],
+  "_eval_env_id": [
+    "config",
+    "section"
+  ],
+  "_merge_sampling_tables": [
+    "base",
+    "override"
+  ],
+  "_normalize_sampling_args": [
+    "sampling_args",
+    "section"
+  ],
+  "_normalize_sampling_config": [
+    "config",
+    "section"
+  ],
+  "_expand_ablation": [
+    "ablation",
+    "global_defaults"
+  ],
+  "load_toml_config": [
+    "path",
+    "extra_valid_fields"
+  ],
+  "resolve_endpoints_file": [
+    "endpoints_path"
+  ],
+  "load_endpoint_models": [
+    "endpoints_path"
+  ],
+  "console": [],
+  "load_results_jsonl": [
+    "path"
+  ],
+  "push_eval_results_to_hub": [
+    "env_name",
+    "model",
+    "job_id",
+    "env_path",
+    "upstream_slug"
+  ],
+  "HELP_NOTE": [],
+  "_plain_text_console": [],
+  "is_plain_mode": [
+    "args"
+  ],
+  "PrimeConsole": {
+    "__init__": [
+      "self"
+    ],
+    "print": [
+      "self"
+    ],
+    "status": [
+      "self",
+      "status"
+    ],
+    "print_exception": [
+      "self"
+    ]
+  },
+  "get_console": [],
+  "_help_note": [
+    "obj",
+    "ctx"
+  ],
+  "_plain_option": [
+    "params"
+  ],
+  "_PlainMixin": {
+    "__init__": [
+      "self"
+    ],
+    "parse_args": [
+      "self",
+      "ctx",
+      "args"
+    ],
+    "main": [
+      "self",
+      "args",
+      "prog_name",
+      "complete_var",
+      "standalone_mode",
+      "windows_expand_args"
+    ],
+    "format_help": [
+      "self",
+      "ctx",
+      "formatter"
+    ]
+  },
+  "_PlainTyperCommand": {},
+  "COMMAND_ALIASES": [],
+  "PlainAwareTyperGroup": {
+    "get_command": [
+      "self",
+      "ctx",
+      "cmd_name"
+    ]
+  },
+  "DefaultCommandGroup": {
+    "__init__": [
+      "self"
+    ],
+    "parse_args": [
+      "self",
+      "ctx",
+      "args"
+    ]
+  },
+  "PlainTyper": {
+    "__init__": [
+      "self"
+    ],
+    "callback": [
+      "self"
+    ],
+    "command": [
+      "self",
+      "name"
+    ]
+  },
+  "optional_team_params": [
+    "config"
+  ],
+  "load_toml": [
+    "path",
+    "console"
+  ],
+  "BaseConfig": {
+    "from_sources": [
+      "cls",
+      "toml_path",
+      "console"
+    ]
+  },
+  "_ENV_VAR_NAME_PATTERN": [],
+  "validate_env_var_name": [
+    "name",
+    "item_type"
+  ],
+  "confirm_or_skip": [
+    "message",
+    "yes_flag",
+    "default"
+  ],
+  "any_provided": [],
+  "_default_display_fn": [
+    "item"
+  ],
+  "require_selection": [
+    "items",
+    "action",
+    "empty_message",
+    "item_type",
+    "display_fn",
+    "page_size"
+  ],
+  "select_item_interactive": [
+    "items",
+    "action",
+    "item_type",
+    "display_fn",
+    "page_size"
+  ],
+  "_select_item_paged": [
+    "items",
+    "action",
+    "item_type",
+    "formatter",
+    "page_size"
+  ],
+  "prompt_for_value": [
+    "prompt_text",
+    "required",
+    "hide_input"
+  ],
+  "now_utc": [],
+  "to_utc": [
+    "dt"
+  ],
+  "human_age": [
+    "created"
+  ],
+  "format_time_ago": [
+    "dt"
+  ],
+  "iso_timestamp": [
+    "dt"
+  ],
+  "sort_by_created": [
+    "items",
+    "attr",
+    "reverse"
+  ],
+  "PROGRESS_BAR_MIN_WIDTH": [],
+  "PROGRESS_BAR": [],
+  "EvalStatus": {
+    "PENDING": [],
+    "RUNNING": [],
+    "COMPLETED": [],
+    "FAILED": [],
+    "TIMEOUT": [],
+    "CANCELLED": [],
+    "terminal_statuses": [
+      "cls"
+    ],
+    "color": [
+      "self"
+    ]
+  },
+  "HostedEvalConfig": {},
+  "HostedEvalResult": {},
+  "filter_progress_bars": [
+    "text"
+  ],
+  "STATUS_MESSAGES": [],
+  "is_status_message": [
+    "text"
+  ],
+  "clean_logs": [
+    "text"
+  ],
+  "get_new_log_lines": [
+    "old_logs",
+    "new_logs"
+  ],
+  "VERIFIERS_V0": [],
+  "VERIFIERS_V1": [],
+  "VERIFIERS_V1_MIN_VERSION": [],
+  "_RUNTIME_OPTIONS": [],
+  "_EXTRA_MARKER": [],
+  "_QUOTED_LITERAL": [],
+  "parse_runtime_option": [
+    "value"
+  ],
+  "_marker_mentions_extra": [
+    "marker"
+  ],
+  "_is_extra_guarded": [
+    "requirement"
+  ],
+  "find_verifiers_requirement": [
+    "requirement_strings"
+  ],
+  "_verifiers_lower_bound": [
+    "requirement"
+  ],
+  "classify_runtime_from_metadata": [
+    "requirement_strings"
+  ],
+  "require_persistent_context": [],
+  "EnvParseError": {},
+  "ENV_VAR_REFERENCE_PATTERN": [],
+  "_expand_env_var_references": [
+    "value"
+  ],
+  "parse_env_file": [
+    "file_path",
+    "on_warning"
+  ],
+  "parse_env_arg": [
+    "arg",
+    "on_warning"
+  ],
+  "collect_env_vars": [
+    "env_args",
+    "env_files",
+    "on_warning"
+  ],
+  "PRIME_SLUG": [],
+  "ResolvedEnvironment": {},
+  "_is_config_target": [
+    "raw"
+  ],
+  "_split_version": [
+    "ref"
+  ],
+  "_is_slug_reference": [
+    "base_ref"
+  ],
+  "_split_owner_and_name": [
+    "slug"
+  ],
+  "_environment_url_from_slug": [
+    "slug"
+  ],
+  "_find_local_env_dir": [
+    "env_name",
+    "env_dir_path"
+  ],
+  "_is_valid_hash": [
+    "value"
+  ],
+  "_should_skip_directory": [
+    "name"
+  ],
+  "_compute_local_content_hash": [
+    "env_path"
+  ],
+  "_fetch_user_slug": [
+    "client"
+  ],
+  "_fetch_active_team_slug": [
+    "client",
+    "active_team_id"
+  ],
+  "_fetch_remote_env_details": [
+    "client",
+    "owner_slug",
+    "env_name",
+    "version"
+  ],
+  "_extract_remote_version_details": [
+    "details"
+  ],
+  "_resolve_local_env_display": [
+    "env_name",
+    "local_dir",
+    "client"
+  ],
+  "_choose_remote_owner": [
+    "env_name",
+    "candidates"
+  ],
+  "_resolve_environment_reference": [
+    "env_reference",
+    "env_dir_path"
+  ],
+  "validate_output_format": [
+    "output",
+    "console"
+  ],
+  "output_data_as_json": [
+    "data",
+    "console"
+  ],
+  "build_table": [
+    "title",
+    "columns",
+    "show_lines"
+  ],
+  "status_color": [
+    "status",
+    "mapping",
+    "default"
+  ],
+  "get_eval_viewer_url": [
+    "evaluation_id"
+  ],
+  "SANDBOX_STATUS_COLORS": [],
+  "POD_STATUS_COLORS": [],
+  "STOCK_STATUS_COLORS": [],
+  "DISK_STATUS_COLORS": [],
+  "DEPLOYMENT_STATUS_COLORS": [],
+  "ANSI_ESCAPE": [],
+  "strip_ansi": [
+    "text"
+  ],
+  "obfuscate_env_vars": [
+    "env_vars"
+  ],
+  "obfuscate_secrets": [
+    "secrets"
+  ],
+  "format_ip_display": [
+    "ip"
+  ],
+  "format_price": [
+    "value"
+  ],
+  "format_usd": [
+    "value"
+  ],
+  "format_price_per_mtok": [
+    "value"
+  ],
+  "format_promo_price": [
+    "original",
+    "effective"
+  ],
+  "format_resources": [
+    "cpu_cores",
+    "memory_gb",
+    "gpu_count"
+  ],
+  "format_gpu_spec": [
+    "gpu_type",
+    "gpu_count"
+  ],
+  "format_file_size": [
+    "size_bytes"
+  ],
+  "_build_json_help": [
+    "title"
+  ],
+  "json_output_help": [],
+  "json_help": [],
+  "generate_short_id": [
+    "gpu_config"
+  ],
+  "generate_short_id_disk": [
+    "disk_config"
+  ],
+  "ConfigModel": {
+    "model_config": []
+  },
+  "Config": {
+    "__init__": [
+      "self",
+      "use_context"
+    ],
+    "context_override": [
+      "self"
+    ],
+    "_strip_api_v1": [
+      "url"
+    ],
+    "_ensure_config_dir": [
+      "self"
+    ],
+    "_load_config": [
+      "self"
+    ],
+    "_save_config": [
+      "self",
+      "config"
+    ],
+    "api_key": [
+      "self"
+    ],
+    "set_api_key": [
+      "self",
+      "value"
+    ],
+    "team_id": [
+      "self"
+    ],
+    "team_id_from_env": [
+      "self"
+    ],
+    "team_name": [
+      "self"
+    ],
+    "team_role": [
+      "self"
+    ],
+    "set_team": [
+      "self",
+      "value",
+      "team_name",
+      "team_role"
+    ],
+    "user_id": [
+      "self"
+    ],
+    "user_id_from_env": [
+      "self"
+    ],
+    "user_name": [
+      "self"
+    ],
+    "set_user_id": [
+      "self",
+      "value",
+      "user_name"
+    ],
+    "base_url": [
+      "self"
+    ],
+    "set_base_url": [
+      "self",
+      "value"
+    ],
+    "frontend_url": [
+      "self"
+    ],
+    "set_frontend_url": [
+      "self",
+      "value"
+    ],
+    "inference_url": [
+      "self"
+    ],
+    "set_inference_url": [
+      "self",
+      "value"
+    ],
+    "_configured_traces_url": [
+      "self"
+    ],
+    "_stored_traces_url": [
+      "self"
+    ],
+    "traces_url": [
+      "self"
+    ],
+    "set_traces_url": [
+      "self",
+      "value"
+    ],
+    "set_traces_url_for_active_environment": [
+      "self",
+      "value"
+    ],
+    "ssh_key_path": [
+      "self"
+    ],
+    "set_ssh_key_path": [
+      "self",
+      "value"
+    ],
+    "share_resources_with_team": [
+      "self"
+    ],
+    "set_share_resources_with_team": [
+      "self",
+      "value"
+    ],
+    "current_environment": [
+      "self"
+    ],
+    "set_current_environment": [
+      "self",
+      "value"
+    ],
+    "_sanitize_environment_name": [
+      "self",
+      "name"
+    ],
+    "view": [
+      "self"
+    ],
+    "save_environment": [
+      "self",
+      "name"
+    ],
+    "delete_environment": [
+      "self",
+      "name"
+    ],
+    "load_environment": [
+      "self",
+      "name",
+      "persist"
+    ],
+    "update_current_environment_file": [
+      "self"
+    ],
+    "list_environments": [
+      "self"
+    ]
+  },
+  "default_user_agent": [],
+  "APIError": {},
+  "UnauthorizedError": {},
+  "NotFoundError": {},
+  "PaymentRequiredError": {},
+  "APITimeoutError": {},
+  "ValidationError": {
+    "__init__": [
+      "self",
+      "errors"
+    ],
+    "_format_message": [
+      "self"
+    ]
+  },
+  "APIClient": {
+    "__init__": [
+      "self",
+      "api_key",
+      "require_auth",
+      "user_agent"
+    ],
+    "_check_auth_required": [
+      "self"
+    ],
+    "request": [
+      "self",
+      "method",
+      "endpoint",
+      "params",
+      "json",
+      "timeout"
+    ],
+    "get": [
+      "self",
+      "endpoint",
+      "params",
+      "timeout"
+    ],
+    "post": [
+      "self",
+      "endpoint",
+      "json"
+    ],
+    "patch": [
+      "self",
+      "endpoint",
+      "json",
+      "params"
+    ],
+    "delete": [
+      "self",
+      "endpoint",
+      "params"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "AsyncAPIClient": {
+    "__init__": [
+      "self",
+      "api_key",
+      "require_auth",
+      "user_agent"
+    ],
+    "_check_auth_required": [
+      "self"
+    ],
+    "request": [
+      "self",
+      "method",
+      "endpoint",
+      "params",
+      "json",
+      "timeout"
+    ],
+    "get": [
+      "self",
+      "endpoint",
+      "params"
+    ],
+    "post": [
+      "self",
+      "endpoint",
+      "json"
+    ],
+    "patch": [
+      "self",
+      "endpoint",
+      "json",
+      "params"
+    ],
+    "delete": [
+      "self",
+      "endpoint",
+      "params"
+    ],
+    "aclose": [
+      "self"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "setup": [
+    "ctx"
+  ],
+  "sync": [
+    "ctx"
+  ],
+  "doctor": [
+    "ctx"
+  ],
+  "hygiene": [
+    "fix"
+  ],
+  "register_github": [],
+  "PERSONAL_TARGET": [],
+  "_select_team_by_target": [
+    "teams",
+    "target"
+  ],
+  "_switch_to_personal": [
+    "config"
+  ],
+  "_switch_to_team": [
+    "config",
+    "team"
+  ],
+  "_print_available_slugs": [
+    "teams"
+  ],
+  "switch": [
+    "target"
+  ],
+  "LIST_TEAMS_JSON_HELP": [],
+  "fetch_teams": [
+    "client"
+  ],
+  "fetch_team_members": [
+    "client",
+    "team_id"
+  ],
+  "list_teams": [
+    "limit",
+    "offset",
+    "output"
+  ],
+  "list_members": [
+    "team_id",
+    "output"
+  ],
+  "LIST_EVALS_JSON_HELP": [],
+  "EVAL_DETAIL_JSON_HELP": [],
+  "EVAL_SAMPLES_JSON_HELP": [],
+  "PUSH_EVAL_JSON_HELP": [],
+  "HOSTED_LOGS_DEFAULT_TAIL_LINES": [],
+  "HOSTED_LOGS_DEFAULT_POLL_INTERVAL_SECONDS": [],
+  "HOSTED_RUN_DEFAULT_POLL_INTERVAL_SECONDS": [],
+  "HOSTED_RUN_DEFAULT_NUM_EXAMPLES": [],
+  "HOSTED_RUN_DEFAULT_ROLLOUTS_PER_EXAMPLE": [],
+  "HOSTED_LOGS_RATE_LIMIT_THRESHOLD": [],
+  "HOSTED_LOGS_RATE_LIMIT_WAIT_SECONDS": [],
+  "HOSTED_LOGS_RETRY_WAIT_SECONDS": [],
+  "HOSTED_LOGS_STATUS_UPDATE_EVERY_POLLS": [],
+  "EVAL_TABLE_MAX_TEXT_WIDTH": [],
+  "EVAL_RUN_EXAMPLE_COMMAND": [],
+  "EVAL_HOSTED_LABEL": [],
+  "EVAL_LOCAL_LABEL": [],
+  "LOCAL_EVAL_REMOVED_MESSAGE": [],
+  "EVAL_RUN_HELP": [],
+  "HOSTED_EVAL_CONFIG_EXTRA_FIELDS": [],
+  "HOSTED_LEGACY_UNSUPPORTED_FLAGS": [],
+  "HOSTED_SUPPORTED_TOML_FIELDS": [],
+  "DefaultGroup": {
+    "format_usage": [
+      "self",
+      "ctx",
+      "formatter"
+    ]
+  },
+  "subcommands_app": [],
+  "_write_eval_run_help": [],
+  "handle_errors": [
+    "func"
+  ],
+  "_validate_output_format": [
+    "output",
+    "allowed"
+  ],
+  "format_output": [
+    "data",
+    "output"
+  ],
+  "_parse_json_object_option": [
+    "raw",
+    "option_name"
+  ],
+  "_parse_string_map_option": [
+    "raw",
+    "option_name"
+  ],
+  "_validate_json_object_field": [
+    "merged",
+    "field_name"
+  ],
+  "_coerce_hosted_headers": [
+    "raw"
+  ],
+  "_parse_hosted_eval_args": [
+    "environment",
+    "passthrough_args",
+    "sampling_args"
+  ],
+  "_reject_legacy_unsupported_hosted_flags": [
+    "passthrough_args"
+  ],
+  "_freeze_json_value": [
+    "value"
+  ],
+  "_validate_hosted_config_field": [
+    "merged",
+    "field_name",
+    "expected_type",
+    "description"
+  ],
+  "_resolve_hosted_config_model": [
+    "raw_config",
+    "config_path"
+  ],
+  "_validate_single_hosted_eval_config": [
+    "merged",
+    "config_path"
+  ],
+  "_load_hosted_eval_configs": [
+    "config_path_str"
+  ],
+  "_fetch_eval_status": [
+    "client",
+    "eval_id"
+  ],
+  "_fetch_logs": [
+    "client",
+    "eval_id"
+  ],
+  "_build_hosted_eval_config": [
+    "config"
+  ],
+  "_create_hosted_evaluations": [
+    "config",
+    "environment_ids"
+  ],
+  "_print_eval_status": [
+    "eval_data"
+  ],
+  "_parse_eval_status": [
+    "eval_data"
+  ],
+  "_handle_log_poll_error": [
+    "eval_id",
+    "exc",
+    "consecutive_errors"
+  ],
+  "_display_logs_follow": [
+    "eval_id",
+    "poll_interval"
+  ],
+  "_display_logs_once": [
+    "eval_id",
+    "tail"
+  ],
+  "_display_logs": [
+    "eval_id",
+    "tail",
+    "follow",
+    "poll_interval"
+  ],
+  "_resolve_hosted_environment": [
+    "environment"
+  ],
+  "list_evals": [
+    "output",
+    "num",
+    "page",
+    "env"
+  ],
+  "get_eval": [
+    "eval_id",
+    "output"
+  ],
+  "get_samples": [
+    "eval_id",
+    "page",
+    "num",
+    "output"
+  ],
+  "_load_eval_directory": [
+    "directory"
+  ],
+  "_has_eval_files": [
+    "directory"
+  ],
+  "_validate_eval_path": [
+    "path_str"
+  ],
+  "_discover_eval_outputs": [],
+  "_resolve_eval_viewer_url": [
+    "evaluation_id",
+    "response"
+  ],
+  "_push_samples_with_progress": [
+    "client",
+    "evaluation_id",
+    "samples"
+  ],
+  "_push_samples_accepts_progress_callback": [
+    "client"
+  ],
+  "_require_published_environment_for_eval_push": [
+    "env_name",
+    "eval_path"
+  ],
+  "_push_single_eval": [
+    "config_path",
+    "env_slug",
+    "run_id",
+    "eval_id",
+    "is_public",
+    "name"
+  ],
+  "push_eval": [
+    "config_path",
+    "env_id",
+    "run_id",
+    "eval_id",
+    "name",
+    "output",
+    "is_public"
+  ],
+  "logs_cmd": [
+    "eval_id",
+    "tail",
+    "follow",
+    "poll_interval"
+  ],
+  "stop_cmd": [
+    "eval_id"
+  ],
+  "run_eval_cmd": [
+    "ctx",
+    "environment",
+    "env_path",
+    "hosted",
+    "poll_interval",
+    "follow",
+    "timeout_minutes",
+    "allow_sandbox_access",
+    "allow_instances_access",
+    "allow_tunnel_access",
+    "custom_secrets",
+    "sampling_args",
+    "eval_name"
+  ],
+  "LIST_DISKS_JSON_HELP": [],
+  "DISK_DETAIL_JSON_HELP": [],
+  "_format_disk_for_list": [
+    "disk"
+  ],
+  "_format_disk_for_detail": [
+    "disk"
+  ],
+  "list": [
+    "limit",
+    "offset",
+    "watch",
+    "output"
+  ],
+  "get": [
+    "disk_id",
+    "output"
+  ],
+  "create": [
+    "id",
+    "size",
+    "name",
+    "country",
+    "cloud_id",
+    "data_center_id",
+    "team_id",
+    "provider_type",
+    "yes"
+  ],
+  "update": [
+    "disk_id",
+    "name"
+  ],
+  "terminate": [
+    "disk_id",
+    "yes"
+  ],
+  "HF_DATASETS_SERVER_URL": [],
+  "HF_ROWS_PAGE_LENGTH": [],
+  "LARGE_DATASET_WARN_BYTES": [],
+  "HF_REQUEST_TIMEOUT_SECONDS": [],
+  "HF_REQUEST_MAX_ATTEMPTS": [],
+  "HF_REQUEST_BACKOFF_SECONDS": [],
+  "HF_REQUEST_BACKOFF_MAX_SECONDS": [],
+  "PARTIAL_DATASET_NOTE": [],
+  "normalize_hf_dataset_id": [
+    "raw"
+  ],
+  "hf_get": [
+    "path",
+    "params"
+  ],
+  "HFDataset": {
+    "features": [
+      "self"
+    ]
+  },
+  "select_hf_config": [
+    "dataset",
+    "config"
+  ],
+  "missing_column_error": [
+    "flag",
+    "ds"
+  ],
+  "require_string_column": [
+    "ds",
+    "column"
+  ],
+  "check_split": [
+    "ds",
+    "split"
+  ],
+  "warn_if_large": [
+    "ds"
+  ],
+  "iter_hf_rows": [
+    "ds",
+    "split"
+  ],
+  "load_hf_build_specs": [
+    "dataset"
+  ],
+  "_ConfigProxy": {
+    "team_id": [
+      "self"
+    ]
+  },
+  "config": [],
+  "LIST_IMAGES_JSON_HELP": [],
+  "ImageRow": [],
+  "_aware_utc": [
+    "value"
+  ],
+  "_row_timestamp": [
+    "row"
+  ],
+  "_latest": [
+    "artifacts"
+  ],
+  "_empty_dash": [],
+  "_render_visibility": [
+    "visibility"
+  ],
+  "_render_status": [
+    "row"
+  ],
+  "_render_image_reference": [
+    "img"
+  ],
+  "_truncate_ref_left": [
+    "ref",
+    "max_width"
+  ],
+  "_image_ref_column_width": [
+    "console_width",
+    "is_team_listing"
+  ],
+  "_completed_size_mb": [
+    "row"
+  ],
+  "_display_created": [
+    "row"
+  ],
+  "push_image": [
+    "image_reference",
+    "context",
+    "dockerfile",
+    "public",
+    "private",
+    "source_image",
+    "platform_image"
+  ],
+  "list_images": [
+    "output",
+    "search",
+    "all_images",
+    "platform_image",
+    "page",
+    "num"
+  ],
+  "_looks_like_registry_host": [
+    "value"
+  ],
+  "_parse_mutable_image_reference": [
+    "image_reference"
+  ],
+  "_update_source_for_parsed_reference": [
+    "image_name",
+    "image_tag",
+    "team_id"
+  ],
+  "_current_scope_owner": [],
+  "_result_ref": [
+    "result"
+  ],
+  "_set_image_visibility": [
+    "image_reference",
+    "visibility"
+  ],
+  "BULK_VISIBILITY_BATCH_SIZE": [],
+  "_split_image_references": [
+    "values"
+  ],
+  "_parse_bulk_visibility_ref": [
+    "ref",
+    "command"
+  ],
+  "_visibility_label": [
+    "visibility"
+  ],
+  "_display_bulk_visibility_result": [
+    "succeeded",
+    "failed",
+    "visibility"
+  ],
+  "_collect_update_results": [
+    "results",
+    "succeeded",
+    "failed"
+  ],
+  "_bulk_set_image_visibility_refs": [
+    "refs",
+    "visibility"
+  ],
+  "_run_visibility_command": [
+    "image_references",
+    "visibility"
+  ],
+  "publish_image": [
+    "image_references"
+  ],
+  "unpublish_image": [
+    "image_references"
+  ],
+  "update_image": [
+    "image_reference",
+    "name",
+    "tag",
+    "to_team",
+    "to_platform",
+    "public",
+    "private",
+    "dry_run",
+    "yes"
+  ],
+  "delete_image": [
+    "image_reference",
+    "yes"
+  ],
+  "RUN_USAGE_JSON_HELP": [],
+  "_format_tokens": [
+    "value"
+  ],
+  "_derived_cost": [
+    "tokens",
+    "price_per_mtok"
+  ],
+  "_run_usage_json": [
+    "usage"
+  ],
+  "_build_run_usage_table": [
+    "usage"
+  ],
+  "run_usage_command": [
+    "run_id",
+    "output",
+    "watch",
+    "interval"
+  ],
+  "_watch_live": [
+    "fetch",
+    "run_id",
+    "interval",
+    "render"
+  ],
+  "_watch_plain": [
+    "fetch",
+    "run_id",
+    "interval",
+    "render"
+  ],
+  "_watch_json": [
+    "fetch",
+    "run_id",
+    "interval",
+    "to_json"
+  ],
+  "LEGACY_TRAINING_NOTICE": [],
+  "V1_ENV_CONFIG_FIELDS": [],
+  "RL_RUN_JSON_HELP": [],
+  "RL_MODELS_JSON_HELP": [],
+  "RL_LIST_JSON_HELP": [],
+  "RL_METRICS_JSON_HELP": [],
+  "RL_ROLLOUTS_JSON_HELP": [],
+  "RL_PROGRESS_JSON_HELP": [],
+  "RL_DISTRIBUTIONS_JSON_HELP": [],
+  "RL_CHECKPOINTS_JSON_HELP": [],
+  "HOSTED_TRAINING_LOG_STARTUP_POLL_SECONDS": [],
+  "HOSTED_TRAINING_LOG_STARTUP_POLLS": [],
+  "HOSTED_TRAINING_LOG_FOLLOW_POLL_SECONDS": [],
+  "HOSTED_TRAINING_STOP_POLL_SECONDS": [],
+  "HOSTED_TRAINING_STOP_MAX_POLLS": [],
+  "VOLUME_READY_POLL_SECONDS": [],
+  "VOLUME_READY_MAX_SECONDS": [],
+  "VOLUME_DEFAULT_SIZE": [],
+  "TERMINAL_RUN_STATUSES": [],
+  "LEVEL_STYLES": [],
+  "_SKIP_LINE": [],
+  "_MODEL_PARAM_COUNT_PATTERN": [],
+  "_model_name_sort_key": [
+    "name"
+  ],
+  "format_json_log_line": [
+    "line"
+  ],
+  "generate_rl_config_template": [
+    "environment"
+  ],
+  "_validate_env_id_value": [
+    "v"
+  ],
+  "_dict_id": [
+    "config"
+  ],
+  "_is_hub_env_id": [
+    "value"
+  ],
+  "_env_display_name": [
+    "env",
+    "index"
+  ],
+  "EnvConfig": {
+    "model_config": [],
+    "validate_environment_id": [
+      "cls",
+      "v"
+    ],
+    "parse_version_from_id": [
+      "self"
+    ],
+    "validate_env_selector": [
+      "self"
+    ],
+    "is_v1": [
+      "self"
+    ],
+    "display_name": [
+      "self"
+    ],
+    "hub_env_ids": [
+      "self"
+    ],
+    "to_api_dict": [
+      "self"
+    ]
+  },
+  "EvalEnvConfig": {
+    "validate_num_examples": [
+      "cls",
+      "v"
+    ],
+    "validate_eval_group_size_aliases": [
+      "self"
+    ],
+    "to_api_dict": [
+      "self"
+    ]
+  },
+  "TemperatureSchedulerConfig": {
+    "model_config": []
+  },
+  "SamplingConfig": {
+    "model_config": [],
+    "_reasoning_controls_mutually_exclusive": [
+      "self"
+    ]
+  },
+  "TeacherSamplingConfig": {
+    "model_config": [],
+    "_reasoning_controls_mutually_exclusive": [
+      "self"
+    ]
+  },
+  "TeacherClientConfig": {
+    "model_config": []
+  },
+  "TeacherConfig": {
+    "model_config": [],
+    "to_api_dict": [
+      "self"
+    ]
+  },
+  "EvalSamplingConfig": {
+    "model_config": [],
+    "_reasoning_controls_mutually_exclusive": [
+      "self"
+    ]
+  },
+  "EvalConfig": {
+    "model_config": [],
+    "to_api_dict": [
+      "self"
+    ]
+  },
+  "ValConfig": {
+    "model_config": [],
+    "to_api_dict": [
+      "self"
+    ]
+  },
+  "BatchFilterConfig": {
+    "model_config": []
+  },
+  "WandbConfig": {
+    "model_config": []
+  },
+  "CheckpointsConfig": {
+    "model_config": [],
+    "to_api_dict": [
+      "self"
+    ]
+  },
+  "AdaptersConfig": {
+    "model_config": [],
+    "to_api_dict": [
+      "self"
+    ]
+  },
+  "InfrastructureConfig": {
+    "model_config": [],
+    "to_api_dict": [
+      "self"
+    ]
+  },
+  "TailscaleConfig": {
+    "model_config": [],
+    "validate_hostname_prefix": [
+      "cls",
+      "v"
+    ],
+    "validate_auth_key": [
+      "cls",
+      "v"
+    ],
+    "fill_auth_key_from_env_and_validate": [
+      "self"
+    ],
+    "to_api_dict": [
+      "self"
+    ]
+  },
+  "RLConfig": {
+    "model_config": [],
+    "validate_config_consistency": [
+      "self"
+    ]
+  },
+  "_format_validation_errors": [
+    "errors"
+  ],
+  "_remove_deprecated_config_keys": [
+    "data"
+  ],
+  "_peek_toml": [
+    "config_path"
+  ],
+  "_has_full_finetune_deployment": [
+    "cfg"
+  ],
+  "_is_full_finetune": [
+    "cfg"
+  ],
+  "_looks_like_sft": [
+    "cfg"
+  ],
+  "_is_sft": [
+    "cfg"
+  ],
+  "_validate_full_finetune_deployment": [
+    "cfg",
+    "config_path"
+  ],
+  "_warn_legacy_full_finetune_type": [
+    "cfg",
+    "config_path"
+  ],
+  "_SOURCE_REF_RE": [],
+  "_source_ref_error": [
+    "ref"
+  ],
+  "_resolve_pr_ref": [
+    "pr_number"
+  ],
+  "_dispatch_full_finetune_run": [],
+  "_ensure_volume": [
+    "client",
+    "name",
+    "team_id",
+    "output",
+    "size"
+  ],
+  "load_config": [
+    "path"
+  ],
+  "RUN_STATUS_COLORS": [],
+  "_get_status_color": [
+    "status"
+  ],
+  "_render_failure_analysis": [
+    "analysis"
+  ],
+  "_format_run_for_display": [
+    "run"
+  ],
+  "create_run": [
+    "config_path",
+    "env",
+    "env_file",
+    "output",
+    "skip_action_check",
+    "yes",
+    "image_tag",
+    "gpu_type",
+    "volume",
+    "volume_size",
+    "ref",
+    "pr",
+    "full_finetune",
+    "sft"
+  ],
+  "list_models": [
+    "output",
+    "fft_only"
+  ],
+  "_render_empty_lora_message": [],
+  "_render_lora_models_table": [
+    "models"
+  ],
+  "_render_fft_models_table": [
+    "fft_models"
+  ],
+  "list_gpus": [
+    "output"
+  ],
+  "_prompt_required_text": [
+    "label",
+    "help_text",
+    "empty_error"
+  ],
+  "_prompt_optional_text": [
+    "label",
+    "help_text"
+  ],
+  "_format_model_request_feedback": [
+    "models",
+    "context"
+  ],
+  "request_models": [],
+  "_unwrap_single_schema_variant": [
+    "prop"
+  ],
+  "_resolve_schema_ref": [
+    "prop",
+    "defs"
+  ],
+  "_flatten_config_schema": [
+    "schema",
+    "defs",
+    "prefix"
+  ],
+  "_schema_type_str": [
+    "prop",
+    "defs"
+  ],
+  "RL_CONFIGS_JSON_HELP": [],
+  "list_configs": [
+    "output"
+  ],
+  "_list_runs_impl": [
+    "team",
+    "num",
+    "page",
+    "output",
+    "mine"
+  ],
+  "list_runs": [
+    "team",
+    "mine",
+    "num",
+    "page",
+    "output"
+  ],
+  "get_run": [
+    "run_id",
+    "output"
+  ],
+  "stop_run": [
+    "run_id",
+    "force"
+  ],
+  "delete_run": [
+    "run_id",
+    "force"
+  ],
+  "restart_run": [
+    "run_id",
+    "force"
+  ],
+  "_print_new_lines": [
+    "last_lines",
+    "current_lines"
+  ],
+  "_is_log_startup_error": [
+    "error"
+  ],
+  "_fetch_logs_with_startup_poll": [
+    "fetch_fn",
+    "tail",
+    "label"
+  ],
+  "_stream_logs": [
+    "fetch_fn",
+    "tail",
+    "raw",
+    "follow",
+    "label"
+  ],
+  "_handle_logs_api_error": [
+    "e"
+  ],
+  "_MAX_LOG_TAIL_LINES": [],
+  "_MAX_LOG_WINDOW_SECONDS": [],
+  "_DEFAULT_LOG_TAIL_LINES": [],
+  "_SINCE_UNIT_SECONDS": [],
+  "_parse_since": [
+    "since"
+  ],
+  "_resolve_log_query": [
+    "tail",
+    "since",
+    "all_logs"
+  ],
+  "_parse_env_qualifier_with_index": [
+    "env"
+  ],
+  "get_logs": [
+    "run_id",
+    "component",
+    "env",
+    "tail",
+    "all_logs",
+    "follow",
+    "raw",
+    "search",
+    "regex",
+    "level",
+    "since"
+  ],
+  "list_components": [
+    "run_id"
+  ],
+  "init_config": [
+    "output_path",
+    "force"
+  ],
+  "get_metrics": [
+    "run_id",
+    "min_step",
+    "max_step",
+    "limit"
+  ],
+  "get_rollouts": [
+    "run_id",
+    "step",
+    "page",
+    "num"
+  ],
+  "get_progress": [
+    "run_id"
+  ],
+  "get_distributions": [
+    "run_id",
+    "distribution_type",
+    "step"
+  ],
+  "list_checkpoints": [
+    "run_id",
+    "status_filter",
+    "output"
+  ],
+  "FeedbackCategory": [],
+  "_prompt_category": [],
+  "_prompt_message": [],
+  "_prompt_run_id": [],
+  "submit_feedback": [],
+  "feedback": [
+    "ctx"
+  ],
+  "_client": [],
+  "list_volumes": [
+    "output"
+  ],
+  "resize": [
+    "name",
+    "size"
+  ],
+  "delete": [
+    "name",
+    "yes"
+  ],
+  "_CONNECTION": [],
+  "_session_dir": [],
+  "_replace_block": [
+    "text",
+    "alias",
+    "block"
+  ],
+  "_DIRECT_HELP": [],
+  "_GATEWAY_HOST": [],
+  "_SHA256_HEX": [],
+  "_gateway_of": [
+    "session",
+    "direct"
+  ],
+  "_proxy_command": [
+    "gateway",
+    "sni"
+  ],
+  "_write_ssh_config": [
+    "session",
+    "alias",
+    "host",
+    "user",
+    "port",
+    "key",
+    "gateway"
+  ],
+  "_shell_path": [
+    "path",
+    "home_var"
+  ],
+  "_DEAD_SESSION_STATES": [],
+  "_MAX_POLL_ERRORS": [],
+  "_wait_for_connection": [
+    "client",
+    "name",
+    "session",
+    "team_id"
+  ],
+  "_stop_quietly": [
+    "client",
+    "name",
+    "session_id",
+    "team_id"
+  ],
+  "_open_session": [
+    "name",
+    "read_only",
+    "direct",
+    "allow_writable"
+  ],
+  "ssh": [
+    "name",
+    "read_only",
+    "read_write",
+    "direct"
+  ],
+  "_SAFE_REMOTE_SEGMENT": [],
+  "_remote_path": [
+    "path"
+  ],
+  "_transfer_failed": [
+    "alias",
+    "code",
+    "via_gateway"
+  ],
+  "_local_tree_has_symlink": [
+    "path"
+  ],
+  "_remote_tree_has_symlink": [
+    "alias",
+    "config",
+    "remote",
+    "via_gateway"
+  ],
+  "_transfer": [
+    "name",
+    "read_only",
+    "remote",
+    "local",
+    "upload",
+    "direct"
+  ],
+  "put": [
+    "name",
+    "local_path",
+    "remote_path",
+    "direct"
+  ],
+  "proxy": [
+    "sni",
+    "gateway",
+    "cert_sha256"
+  ],
+  "stop": [
+    "name",
+    "session_id"
+  ],
+  "MAX_FILES_TO_SHOW": [],
+  "DEFAULT_HASH_LENGTH": [],
+  "DEFAULT_LIST_LIMIT": [],
+  "MAX_TARBALL_SIZE_LIMIT": [],
+  "action_app": [],
+  "_ACTIONS_REMOVED_NOTE": [],
+  "secret_app": [],
+  "var_app": [],
+  "ENV_LIST_JSON_HELP": [],
+  "ENV_STATUS_JSON_HELP": [],
+  "ENV_INSPECT_JSON_HELP": [],
+  "ENV_SECRET_LIST_JSON_HELP": [],
+  "ENV_SECRET_DETAIL_JSON_HELP": [],
+  "ENV_SECRET_LINK_JSON_HELP": [],
+  "ENV_VAR_LIST_JSON_HELP": [],
+  "ENV_VAR_DETAIL_JSON_HELP": [],
+  "_uv_pip_command": [
+    "subcommand"
+  ],
+  "_parse_environment_slug": [
+    "environment"
+  ],
+  "_resolve_environment": [
+    "environment"
+  ],
+  "_environment_actions_removed": [],
+  "_IGNORE_LEGACY_FLAGS": [],
+  "actions_list": [
+    "environment"
+  ],
+  "actions_logs": [
+    "environment",
+    "action_id"
+  ],
+  "actions_retry": [
+    "environment",
+    "action_id"
+  ],
+  "display_upstream_environment_info": [
+    "env_path",
+    "environment_name"
+  ],
+  "_environment_ref": [
+    "owner",
+    "name"
+  ],
+  "_environment_fork_chain": [
+    "metadata",
+    "upstream"
+  ],
+  "_environment_push_metadata": [
+    "existing_metadata"
+  ],
+  "should_include_file_in_archive": [
+    "file_path",
+    "base_path"
+  ],
+  "should_include_directory_in_archive": [
+    "dir_path"
+  ],
+  "_build_gitignore_matcher": [
+    "env_path"
+  ],
+  "_collect_archive_files": [
+    "env_path"
+  ],
+  "_add_file_to_archive": [
+    "tar",
+    "file_path",
+    "arcname"
+  ],
+  "compute_content_hash": [
+    "env_path"
+  ],
+  "_print_env_inspect_examples": [
+    "owner",
+    "name",
+    "version"
+  ],
+  "list_cmd": [
+    "num",
+    "page",
+    "owner",
+    "visibility",
+    "output",
+    "search",
+    "tag",
+    "action_status",
+    "sort",
+    "order",
+    "show_actions",
+    "starred",
+    "mine"
+  ],
+  "status_cmd": [
+    "env_id",
+    "output"
+  ],
+  "_resolve_push_environment_path": [
+    "path",
+    "env_id"
+  ],
+  "_environment_resolve_data": [
+    "env_name"
+  ],
+  "_resolve_pull_environment_path": [
+    "target",
+    "env_name"
+  ],
+  "push": [
+    "env_id",
+    "path",
+    "name",
+    "owner",
+    "team",
+    "visibility",
+    "runtime",
+    "auto_bump",
+    "rc",
+    "post"
+  ],
+  "pull": [
+    "env_id",
+    "target",
+    "version"
+  ],
+  "validate_env_id": [
+    "env_id"
+  ],
+  "is_valid_url": [
+    "url"
+  ],
+  "_environment_package_download_url": [
+    "details"
+  ],
+  "normalize_package_name": [
+    "name"
+  ],
+  "extract_requires_dist_from_wheel": [
+    "wheel_path"
+  ],
+  "bump_version": [
+    "version"
+  ],
+  "bump_rc_version": [
+    "version"
+  ],
+  "bump_post_version": [
+    "version"
+  ],
+  "update_pyproject_version": [
+    "pyproject_path",
+    "new_version"
+  ],
+  "get_install_command": [
+    "tool",
+    "wheel_url",
+    "package_name",
+    "no_upgrade"
+  ],
+  "info": [
+    "env_id",
+    "version"
+  ],
+  "inspect_cmd": [
+    "env_id",
+    "source_path",
+    "version",
+    "output",
+    "max_bytes"
+  ],
+  "fetch_environment_details": [
+    "client",
+    "owner",
+    "name",
+    "version"
+  ],
+  "process_wheel_url": [
+    "wheel_url"
+  ],
+  "execute_install_command": [
+    "cmd",
+    "env_id",
+    "version",
+    "tool"
+  ],
+  "install": [
+    "env_ids",
+    "with_tool",
+    "path",
+    "no_upgrade",
+    "prerelease"
+  ],
+  "execute_uninstall_command": [
+    "cmd",
+    "env_name",
+    "tool"
+  ],
+  "uninstall": [
+    "env_name",
+    "with_tool"
+  ],
+  "version_app": [],
+  "list_versions": [
+    "env_id",
+    "full_hashes"
+  ],
+  "delete_version": [
+    "env_id",
+    "content_hash",
+    "force"
+  ],
+  "_safe_tar_extract": [
+    "tar",
+    "dest_path"
+  ],
+  "_get_env_cache_dir": [],
+  "_validate_path_component": [
+    "component",
+    "component_name"
+  ],
+  "_get_version_from_pyproject": [
+    "env_path"
+  ],
+  "_pull_and_build_private_env": [
+    "client",
+    "owner",
+    "name",
+    "version",
+    "details"
+  ],
+  "_is_environment_installed": [
+    "env_name",
+    "required_version"
+  ],
+  "_build_install_command": [
+    "name",
+    "version",
+    "simple_index_url",
+    "wheel_url",
+    "tool",
+    "no_upgrade",
+    "url_dependencies",
+    "prerelease"
+  ],
+  "_install_single_environment": [
+    "env_slug",
+    "tool",
+    "prerelease"
+  ],
+  "_get_environment_id": [
+    "client",
+    "owner",
+    "env_name"
+  ],
+  "_fetch_env_secrets": [
+    "client",
+    "env_id"
+  ],
+  "env_secret_list": [
+    "environment",
+    "output"
+  ],
+  "env_secret_create": [
+    "environment",
+    "name",
+    "value",
+    "description",
+    "output"
+  ],
+  "env_secret_update": [
+    "environment",
+    "secret_id",
+    "name",
+    "value",
+    "description",
+    "output"
+  ],
+  "env_secret_delete": [
+    "environment",
+    "secret_id",
+    "yes"
+  ],
+  "env_secret_link": [
+    "global_secret_id",
+    "environment",
+    "output"
+  ],
+  "env_secret_unlink": [
+    "global_secret_id",
+    "environment",
+    "yes"
+  ],
+  "var_list": [
+    "environment",
+    "output"
+  ],
+  "var_create": [
+    "environment",
+    "name",
+    "value",
+    "description",
+    "output"
+  ],
+  "var_update": [
+    "var_id",
+    "environment",
+    "name",
+    "value",
+    "description",
+    "output"
+  ],
+  "var_delete": [
+    "var_id",
+    "environment",
+    "yes"
+  ],
+  "PACKAGED_DOCKERFILE_PATH": [],
+  "DEFAULT_MAX_IN_FLIGHT": [],
+  "DEFAULT_BUILD_TIMEOUT_SECONDS": [],
+  "POLL_INTERVAL_SECONDS": [],
+  "UPLOAD_TIMEOUT_SECONDS": [],
+  "RATE_LIMIT_MAX_ATTEMPTS": [],
+  "RATE_LIMIT_BACKOFF_INITIAL_SECONDS": [],
+  "RATE_LIMIT_BACKOFF_MAX_SECONDS": [],
+  "MAX_CONSECUTIVE_SUBMIT_DEFERRALS": [],
+  "FAILURE_TABLE_MAX_ROWS": [],
+  "_TAG_RE": [],
+  "_BUILD_MANIFEST_KEYS": [],
+  "_SOURCE_MANIFEST_KEY": [],
+  "BulkPushValidationError": {
+    "__init__": [
+      "self",
+      "problems"
+    ]
+  },
+  "QuotaExceededError": {},
+  "SubmitRateLimited": {
+    "__init__": [
+      "self",
+      "message",
+      "retry_after"
+    ]
+  },
+  "BulkRunInterrupted": {
+    "__init__": [
+      "self",
+      "outcomes"
+    ]
+  },
+  "BuildSpec": {
+    "image_ref": [
+      "self"
+    ],
+    "to_manifest_line": [
+      "self"
+    ]
+  },
+  "BuildOutcome": {},
+  "package_build_context": [
+    "context_path",
+    "dockerfile_path"
+  ],
+  "SOURCE_RATE_LIMIT_PAUSE_SECONDS": [],
+  "_SOURCE_MANIFEST_KEYS": [],
+  "_DIGEST_RE": [],
+  "SourceBuildSpec": {
+    "image_ref": [
+      "self"
+    ],
+    "is_docker_hub": [
+      "self"
+    ],
+    "to_manifest_line": [
+      "self"
+    ]
+  },
+  "derive_source_destination": [
+    "source_ref"
+  ],
+  "_DUPLICATE_DEST_HINT": [],
+  "parse_source_manifest_row": [
+    "entry",
+    "where"
+  ],
+  "load_source_specs_from_manifest_entries": [
+    "entries",
+    "manifest_name"
+  ],
+  "load_hf_source_specs": [
+    "dataset"
+  ],
+  "submit_source_build": [
+    "client",
+    "spec"
+  ],
+  "_duplicate_ref_problems": [
+    "specs",
+    "hint"
+  ],
+  "load_manifest": [
+    "manifest_path"
+  ],
+  "_is_harbor_task_dir": [
+    "path"
+  ],
+  "discover_harbor_tasks": [
+    "root"
+  ],
+  "sanitize_image_name": [
+    "raw"
+  ],
+  "_render_name_template": [
+    "template"
+  ],
+  "load_harbor_specs": [
+    "root"
+  ],
+  "_QUOTA_DETAIL_MARKERS": [],
+  "_is_http_429": [
+    "error"
+  ],
+  "_is_quota_429": [
+    "error"
+  ],
+  "_request_with_rate_limit_retry": [
+    "client",
+    "method",
+    "path"
+  ],
+  "_submit_build": [
+    "client",
+    "spec"
+  ],
+  "_InFlightBuild": {},
+  "run_bulk_jobs": [
+    "client",
+    "specs"
+  ],
+  "run_bulk_push": [
+    "client",
+    "build_specs",
+    "source_specs"
+  ],
+  "_write_failures_manifest": [
+    "path",
+    "failures"
+  ],
+  "push_bulk": [
+    "manifest",
+    "harbor",
+    "hf_dataset",
+    "hf_split",
+    "hf_config",
+    "dockerfile_column",
+    "name_column",
+    "source_column",
+    "tag",
+    "name_template",
+    "platform_image",
+    "public",
+    "private",
+    "concurrency",
+    "build_timeout",
+    "dry_run",
+    "failures_out"
+  ],
+  "_detect_install_method": [],
+  "_run_upgrade": [
+    "method"
+  ],
+  "_installed_version_on_disk": [],
+  "upgrade": [
+    "ctx",
+    "check",
+    "force"
+  ],
+  "TEAM_ID_PATTERN": [],
+  "validate_team_id": [
+    "team_id"
+  ],
+  "view": [],
+  "set_api_key": [
+    "api_key"
+  ],
+  "set_team_id": [
+    "team_id"
+  ],
+  "remove_team_id": [],
+  "set_base_url": [
+    "url"
+  ],
+  "set_frontend_url": [
+    "url"
+  ],
+  "set_inference_url": [
+    "url"
+  ],
+  "set_traces_url": [
+    "url"
+  ],
+  "_set_environment": [
+    "env"
+  ],
+  "_save_environment": [
+    "name"
+  ],
+  "_list_environments": [],
+  "_delete_environment": [
+    "name"
+  ],
+  "set_share_resources_with_team": [
+    "enabled"
+  ],
+  "set_ssh_key_path": [
+    "path"
+  ],
+  "reset": [
+    "yes"
+  ],
+  "use_environment": [
+    "env"
+  ],
+  "save_env": [
+    "name"
+  ],
+  "delete_env": [
+    "name"
+  ],
+  "list_envs": [],
+  "error_console": [],
+  "_traces_client": [],
+  "UPLOAD_JSON_HELP": [],
+  "LIST_JSON_HELP": [],
+  "GET_JSON_HELP": [],
+  "EPISODE_MEMBERS_SHOWN": [],
+  "_parse_context": [
+    "values"
+  ],
+  "SEARCH_ROLE_STYLES": [],
+  "_search_excerpt": [
+    "match",
+    "width"
+  ],
+  "_search_table": [
+    "matches"
+  ],
+  "search_traces": [
+    "query",
+    "run_id",
+    "field",
+    "role",
+    "run_step",
+    "has_error",
+    "reward_min",
+    "reward_max",
+    "limit",
+    "cursor",
+    "output"
+  ],
+  "upload_traces": [
+    "file",
+    "episodes",
+    "context",
+    "no_compress",
+    "output"
+  ],
+  "PageT": [],
+  "_list_page": [
+    "fetch"
+  ],
+  "_check_paging": [
+    "page",
+    "cursor"
+  ],
+  "_print_empty_page": [
+    "noun",
+    "page",
+    "count"
+  ],
+  "_print_page_footer": [],
+  "_write_atomically": [
+    "dest",
+    "data"
+  ],
+  "_episode_not_found": [
+    "episode_id"
+  ],
+  "_is_episode_not_found": [
+    "error"
+  ],
+  "_user_names": [],
+  "_reject_options": [
+    "mode",
+    "given"
+  ],
+  "list_traces": [
+    "episodes",
+    "run_id",
+    "episode_id",
+    "environment_id",
+    "task_id",
+    "model_id",
+    "outcome",
+    "has_error",
+    "reward_min",
+    "reward_max",
+    "run_step",
+    "created_after",
+    "created_before",
+    "sort",
+    "page",
+    "limit",
+    "cursor",
+    "output"
+  ],
+  "get_trace": [
+    "trace_id",
+    "episodes",
+    "raw",
+    "dest",
+    "output"
+  ],
+  "_get_episode": [
+    "episode_id"
+  ],
+  "delete_traces": [
+    "trace_id",
+    "run_id",
+    "yes"
+  ],
+  "MODELS_JSON_HELP": [],
+  "_SORT_KEYS": [],
+  "_ORDER_KEYS": [],
+  "_format_cache_price": [
+    "value"
+  ],
+  "_format_token_count": [
+    "value"
+  ],
+  "_price": [
+    "m",
+    "key"
+  ],
+  "_format_serving": [
+    "value"
+  ],
+  "_sort_models": [
+    "models",
+    "sort",
+    "order"
+  ],
+  "CHAT_JSON_HELP": [],
+  "_build_messages": [
+    "message",
+    "system"
+  ],
+  "_print_stream": [
+    "chunks"
+  ],
+  "chat": [
+    "model",
+    "message",
+    "system",
+    "stream",
+    "temperature",
+    "max_tokens",
+    "output"
+  ],
+  "EVALUATE_JSON_HELP": [],
+  "_EVAL_QUESTION_TYPES": [],
+  "_parse_question": [
+    "spec"
+  ],
+  "_format_answer": [
+    "answer"
+  ],
+  "evaluate": [
+    "model",
+    "state",
+    "question",
+    "state_file",
+    "output"
+  ],
+  "TIME_FORMAT": [],
+  "TOOL_NAMES_CHARS": [],
+  "_duration": [
+    "seconds"
+  ],
+  "_size": [
+    "num_bytes"
+  ],
+  "_error_text": [
+    "error"
+  ],
+  "shared_value": [
+    "values"
+  ],
+  "page_note": [
+    "count",
+    "shared"
+  ],
+  "uploader_id": [
+    "summary"
+  ],
+  "FREE_TEXT_FLOOR": [],
+  "DROP_ORDER": [],
+  "_reward": [
+    "summary"
+  ],
+  "_error": [
+    "summary"
+  ],
+  "traces_table": [
+    "page"
+  ],
+  "episodes_table": [
+    "page"
+  ],
+  "summary_view": [
+    "summary"
+  ],
+  "_tool_name": [
+    "tool"
+  ],
+  "episode_view": [
+    "detail",
+    "members"
+  ],
+  "members_table": [
+    "members"
+  ],
+  "FORK_JSON_HELP": [],
+  "_parse_fork_source": [
+    "environment"
+  ],
+  "_build_fork_payload": [
+    "client",
+    "team"
+  ],
+  "fork": [
+    "environment",
+    "team",
+    "output"
+  ],
+  "LIST_SANDBOXES_JSON_HELP": [],
+  "SANDBOX_DETAIL_JSON_HELP": [],
+  "_TERMINAL_SANDBOX_STATUSES": [],
+  "_DEFAULT_SANDBOX_IMAGE": [],
+  "_SandboxCreateCommand": {
+    "parse_args": [
+      "self",
+      "ctx",
+      "args"
+    ]
+  },
+  "_short_duration": [
+    "seconds"
+  ],
+  "_sandbox_deadline": [
+    "sandbox"
+  ],
+  "_format_sandbox_expiry": [
+    "sandbox"
+  ],
+  "_format_sandbox_for_list": [
+    "sandbox"
+  ],
+  "_network_access_description": [
+    "allowlist",
+    "denylist"
+  ],
+  "_start_command_data": [
+    "value"
+  ],
+  "_format_start_command": [
+    "value"
+  ],
+  "_format_sandbox_for_details": [
+    "sandbox"
+  ],
+  "list_sandboxes_cmd": [
+    "team_id",
+    "status",
+    "labels",
+    "page",
+    "num",
+    "all",
+    "output"
+  ],
+  "_preview_bulk_delete_count": [
+    "sandbox_client",
+    "team_id",
+    "user_id",
+    "labels"
+  ],
+  "_display_bulk_delete_result": [
+    "result"
+  ],
+  "_bulk_delete_and_display": [
+    "sandbox_client",
+    "sandbox_ids"
+  ],
+  "network": [
+    "sandbox_id",
+    "allow",
+    "deny"
+  ],
+  "_parse_network_destinations": [
+    "value",
+    "option"
+  ],
+  "_network_policy_summary": [
+    "status"
+  ],
+  "_print_network_status": [
+    "sandbox_id",
+    "status"
+  ],
+  "logs": [
+    "sandbox_id"
+  ],
+  "upload_file": [
+    "sandbox_id",
+    "local_file",
+    "remote_path"
+  ],
+  "download_file": [
+    "sandbox_id",
+    "remote_path",
+    "local_file"
+  ],
+  "reset_cache": [
+    "yes"
+  ],
+  "ssh_connect": [
+    "sandbox_id",
+    "ssh_args",
+    "shell"
+  ],
+  "UPDATE_BULK_BATCH_SIZE": [],
+  "UPDATE_BULK_REQUEST_LIMIT": [],
+  "UPDATE_BULK_RATE_LIMIT_WINDOW_SECONDS": [],
+  "UPDATE_BULK_DISPATCH_INTERVAL_SECONDS": [],
+  "UPDATE_BULK_MAX_IN_FLIGHT": [],
+  "_MANIFEST_KEYS": [],
+  "_NESTED_MANIFEST_MODELS": [],
+  "_OWNER_MODELS": [],
+  "BulkUpdateValidationError": {
+    "__init__": [
+      "self",
+      "problems"
+    ]
+  },
+  "_BatchNotDispatched": {},
+  "_manifest_line": [
+    "item"
+  ],
+  "_model_input_keys": [
+    "model"
+  ],
+  "_nested_unknown_key_problems": [
+    "data"
+  ],
+  "load_update_manifest": [
+    "manifest_path"
+  ],
+  "_source_key": [
+    "item"
+  ],
+  "_destination_key": [
+    "item"
+  ],
+  "_duplicate_problems": [
+    "items"
+  ],
+  "_result_source_label": [
+    "item"
+  ],
+  "_print_outcomes": [
+    "outcomes"
+  ],
+  "_send_update_batch": [
+    "client",
+    "batch"
+  ],
+  "_dispatch_update_batches": [
+    "client",
+    "items"
+  ],
+  "update_bulk": [
+    "manifest",
+    "dry_run",
+    "failures_out",
+    "yes"
+  ],
+  "fetch_and_select_team": [
+    "client",
+    "config"
+  ],
+  "generate_ephemeral_keypair": [],
+  "decrypt_challenge_response": [
+    "private_key",
+    "encrypted_response"
+  ],
+  "login": [
+    "headless"
+  ],
+  "_create_tunnel_client": [],
+  "_format_tunnel_for_output": [
+    "tunnel"
+  ],
+  "start_tunnel": [
+    "port",
+    "name",
+    "labels",
+    "team_id",
+    "auth"
+  ],
+  "list_tunnels": [
+    "team_id",
+    "labels",
+    "status",
+    "sort_by",
+    "sort_order",
+    "page",
+    "num",
+    "output"
+  ],
+  "tunnel_status": [
+    "tunnel_id"
+  ],
+  "stop_tunnel": [
+    "tunnel_ids",
+    "all",
+    "labels",
+    "status",
+    "team_id",
+    "yes",
+    "only_mine"
+  ],
+  "LIST_GPU_JSON_HELP": [],
+  "LIST_AVAILABILITY_DISKS_JSON_HELP": [],
+  "LIST_GPU_TYPES_JSON_HELP": [],
+  "_format_availability_for_display": [
+    "gpu_entry"
+  ],
+  "_format_disk_for_display": [
+    "disk_entry"
+  ],
+  "gpu_types": [
+    "output"
+  ],
+  "disks": [
+    "regions",
+    "data_center_id",
+    "output"
+  ],
+  "LIST_PODS_JSON_HELP": [],
+  "POD_STATUS_JSON_HELP": [],
+  "POD_HISTORY_JSON_HELP": [],
+  "_format_pod_for_status": [
+    "status",
+    "pod_details"
+  ],
+  "_format_pod_for_list": [
+    "pod"
+  ],
+  "status": [
+    "pod_id",
+    "output"
+  ],
+  "_format_history_for_display": [
+    "history_item"
+  ],
+  "history": [
+    "limit",
+    "offset",
+    "output"
+  ],
+  "connect": [
+    "pod_id"
+  ],
+  "LIST_DEPLOYMENTS_JSON_HELP": [],
+  "API_KEYS_DOCS_URL": [],
+  "_print_inference_usage": [
+    "base_model",
+    "adapter_id"
+  ],
+  "_print_deployment_followup": [
+    "deployment_status"
+  ],
+  "_print_deployment_success": [
+    "deployment_status"
+  ],
+  "list_deployments": [
+    "team",
+    "num",
+    "page",
+    "output"
+  ],
+  "create_deployment": [
+    "ctx",
+    "model_id",
+    "checkpoint_id",
+    "yes"
+  ],
+  "delete_deployment": [
+    "ctx",
+    "model_id"
+  ],
+  "WALLET_JSON_HELP": [],
+  "_format_when": [
+    "entry"
+  ],
+  "_format_resource": [
+    "entry"
+  ],
+  "_print_header": [
+    "wallet",
+    "team_label"
+  ],
+  "_build_billings_table": [
+    "wallet"
+  ],
+  "wallet_command": [
+    "limit",
+    "output"
+  ],
+  "format_image_owner": [
+    "owner"
+  ],
+  "format_image_coordinate": [
+    "state"
+  ],
+  "whoami": [],
+  "_ENV_OVERRIDES": [],
+  "_clear_env_file": [
+    "config"
+  ],
+  "logout": [
+    "yes"
+  ],
+  "SECRET_LIST_JSON_HELP": [],
+  "SECRET_DETAIL_JSON_HELP": [],
+  "_fetch_secrets": [
+    "client",
+    "config"
+  ],
+  "secret_list": [
+    "output"
+  ],
+  "secret_create": [
+    "name",
+    "value",
+    "description",
+    "is_file",
+    "output"
+  ],
+  "secret_update": [
+    "secret_id",
+    "name",
+    "value",
+    "description",
+    "output"
+  ],
+  "secret_delete": [
+    "secret_id",
+    "yes"
+  ],
+  "secret_get": [
+    "secret_id",
+    "output"
+  ],
+  "DiskInfo": {
+    "model_config": []
+  },
+  "Disk": {
+    "model_config": []
+  },
+  "DiskList": {
+    "model_config": []
+  },
+  "DiskCreateRequest": {
+    "model_config": []
+  },
+  "DiskUpdateRequest": {
+    "model_config": []
+  },
+  "DiskDeleteResponse": {
+    "model_config": []
+  },
+  "DisksClient": {
+    "__init__": [
+      "self",
+      "client"
+    ],
+    "list": [
+      "self",
+      "offset",
+      "limit"
+    ],
+    "get": [
+      "self",
+      "disk_id"
+    ],
+    "create": [
+      "self",
+      "disk_config"
+    ],
+    "update": [
+      "self",
+      "disk_id",
+      "name"
+    ],
+    "delete": [
+      "self",
+      "disk_id"
+    ]
+  },
+  "RLModel": {
+    "model_config": [],
+    "resolve_prices": [
+      "self",
+      "category"
+    ]
+  },
+  "RLRun": {
+    "model_config": []
+  },
+  "RLCheckpoint": {
+    "model_config": []
+  },
+  "EnvServerInfo": {
+    "model_config": []
+  },
+  "RLRunPage": {
+    "model_config": []
+  },
+  "RLClient": {
+    "__init__": [
+      "self",
+      "client"
+    ],
+    "list_models": [
+      "self",
+      "team_id"
+    ],
+    "list_runs": [
+      "self",
+      "team_id"
+    ],
+    "create_run": [
+      "self",
+      "model_name",
+      "environments",
+      "rollouts_per_example",
+      "max_steps",
+      "max_tokens",
+      "temperature",
+      "temp_scheduler",
+      "extra_body",
+      "batch_size",
+      "name",
+      "wandb_entity",
+      "wandb_project",
+      "wandb_run_name",
+      "secrets",
+      "team_id",
+      "eval_config",
+      "val_config",
+      "pre_batch_filters",
+      "post_batch_filters",
+      "learning_rate",
+      "lora_alpha",
+      "max_inflight_rollouts",
+      "oversampling_factor",
+      "checkpoints_config",
+      "adapters_config",
+      "checkpoint_id",
+      "cluster_name",
+      "infrastructure_config",
+      "tailscale_config",
+      "enable_thinking",
+      "reasoning_effort",
+      "run_config",
+      "loss",
+      "teacher"
+    ],
+    "preview_run": [
+      "self",
+      "payload"
+    ],
+    "stop_run": [
+      "self",
+      "run_id"
+    ],
+    "delete_run": [
+      "self",
+      "run_id"
+    ],
+    "restart_run": [
+      "self",
+      "run_id"
+    ],
+    "list_checkpoints": [
+      "self",
+      "run_id",
+      "status_filter"
+    ],
+    "get_run": [
+      "self",
+      "run_id",
+      "timeout"
+    ],
+    "get_logs": [
+      "self",
+      "run_id",
+      "tail_lines"
+    ],
+    "list_env_servers": [
+      "self",
+      "run_id"
+    ],
+    "get_env_server_logs": [
+      "self",
+      "run_id",
+      "env_name",
+      "env_index",
+      "tail_lines"
+    ],
+    "get_metrics": [
+      "self",
+      "run_id",
+      "min_step",
+      "max_step",
+      "limit"
+    ],
+    "get_rollouts": [
+      "self",
+      "run_id",
+      "step",
+      "page",
+      "limit"
+    ],
+    "get_progress": [
+      "self",
+      "run_id"
+    ],
+    "get_distributions": [
+      "self",
+      "run_id",
+      "distribution_type",
+      "step"
+    ]
+  },
+  "InferenceAPIError": {},
+  "InferencePaymentRequiredError": {},
+  "_extract_error_message": [
+    "response"
+  ],
+  "_extract_payment_error_message": [
+    "response"
+  ],
+  "InferenceClient": {
+    "__init__": [
+      "self",
+      "api_key",
+      "team_id",
+      "inference_url",
+      "timeout",
+      "require_auth"
+    ],
+    "_require_api_key": [
+      "self"
+    ],
+    "list_models": [
+      "self"
+    ],
+    "retrieve_model": [
+      "self",
+      "model_id"
+    ],
+    "chat_completion": [
+      "self",
+      "payload",
+      "stream"
+    ],
+    "evaluation": [
+      "self",
+      "payload"
+    ]
+  },
+  "PRIME_RL_GITHUB_REPO": [],
+  "_GITHUB_API": [],
+  "HostedTrainingRunResponse": {
+    "model_config": []
+  },
+  "AvailableGpuTypesResponse": {
+    "model_config": []
+  },
+  "FFTModelClusterInfo": {
+    "model_config": []
+  },
+  "AvailableFFTModel": {
+    "model_config": []
+  },
+  "AvailableFFTModelsResponse": {
+    "model_config": []
+  },
+  "Volume": {
+    "model_config": []
+  },
+  "VolumeSessionGateway": {
+    "model_config": []
+  },
+  "VolumeSession": {
+    "model_config": []
+  },
+  "HostedTrainingClient": {
+    "__init__": [
+      "self",
+      "client"
+    ],
+    "create_run": [
+      "self",
+      "payload"
+    ],
+    "delete_run": [
+      "self",
+      "run_id"
+    ],
+    "create_volume": [
+      "self",
+      "name",
+      "size",
+      "team_id",
+      "cluster"
+    ],
+    "list_volumes": [
+      "self",
+      "team_id"
+    ],
+    "resize_volume": [
+      "self",
+      "name",
+      "size",
+      "team_id"
+    ],
+    "delete_volume": [
+      "self",
+      "name",
+      "team_id"
+    ],
+    "create_volume_session": [
+      "self",
+      "name"
+    ],
+    "get_volume_session": [
+      "self",
+      "name",
+      "session_id"
+    ],
+    "stop_volume_session": [
+      "self",
+      "name",
+      "session_id"
+    ],
+    "list_available_gpu_types": [
+      "self",
+      "team_id"
+    ],
+    "list_available_fft_models": [
+      "self",
+      "team_id"
+    ]
+  },
+  "_github_error_body": [
+    "resp"
+  ],
+  "_github_message": [
+    "resp"
+  ],
+  "_github_rate_limited": [
+    "resp"
+  ],
+  "resolve_pull_request_head": [
+    "pr_number"
+  ],
+  "build_payload_from_toml": [
+    "cfg"
+  ],
+  "DiskConfig": {
+    "model_config": []
+  },
+  "ResourceConfig": {
+    "model_config": []
+  },
+  "Prices": {
+    "model_config": [],
+    "price": [
+      "self"
+    ]
+  },
+  "GPUAvailability": {
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "model_config": []
+  },
+  "DiskAvailability": {
+    "model_config": []
+  },
+  "DEFAULT_PAGE_SIZE": [],
+  "_normalize_multi_value_option": [
+    "values"
+  ],
+  "AvailabilityClient": {
+    "__init__": [
+      "self",
+      "client"
+    ],
+    "_fetch_paginaged": [
+      "self",
+      "url",
+      "params"
+    ],
+    "get": [
+      "self",
+      "regions",
+      "gpu_count",
+      "gpu_type",
+      "disks"
+    ],
+    "get_disks": [
+      "self",
+      "regions",
+      "data_center_id",
+      "cloud_id"
+    ],
+    "get_available_gpu_types": [
+      "self"
+    ]
+  },
+  "clean_connection_fields": [
+    "v"
+  ],
+  "PortMapping": {
+    "model_config": []
+  },
+  "PodStatus": {
+    "validate_connection_fields": [
+      "cls",
+      "v"
+    ],
+    "model_config": []
+  },
+  "AttachedResource": {
+    "model_config": []
+  },
+  "Pod": {
+    "validate_connection_fields": [
+      "cls",
+      "v"
+    ],
+    "model_config": []
+  },
+  "PodList": {
+    "model_config": []
+  },
+  "PodConfig": {
+    "model_config": []
+  },
+  "HistoryObj": {
+    "model_config": []
+  },
+  "HistoryList": {
+    "model_config": []
+  },
+  "PodsClient": {
+    "__init__": [
+      "self",
+      "client"
+    ],
+    "list": [
+      "self",
+      "offset",
+      "limit"
+    ],
+    "get_status": [
+      "self",
+      "pod_ids"
+    ],
+    "get": [
+      "self",
+      "pod_id"
+    ],
+    "create": [
+      "self",
+      "pod_config"
+    ],
+    "delete": [
+      "self",
+      "pod_id"
+    ],
+    "history": [
+      "self",
+      "offset",
+      "limit"
+    ]
+  },
+  "Adapter": {
+    "model_config": []
+  },
+  "DeploymentsClient": {
+    "__init__": [
+      "self",
+      "client"
+    ],
+    "list_adapters": [
+      "self",
+      "team_id",
+      "limit",
+      "offset"
+    ],
+    "get_adapter": [
+      "self",
+      "adapter_id"
+    ],
+    "deploy_adapter": [
+      "self",
+      "adapter_id"
+    ],
+    "deploy_checkpoint": [
+      "self",
+      "checkpoint_id"
+    ],
+    "unload_adapter": [
+      "self",
+      "adapter_id"
+    ],
+    "get_deployable_models": [
+      "self"
+    ]
+  },
+  "BillingEntry": {
+    "model_config": []
+  },
+  "Wallet": {},
+  "WalletClient": {
+    "__init__": [
+      "self",
+      "client"
+    ],
+    "get": [
+      "self",
+      "limit",
+      "offset",
+      "team_id"
+    ]
+  },
+  "_format_error": [
+    "prefix",
+    "exc"
+  ],
+  "RunUsageBreakdown": {
+    "model_config": []
+  },
+  "RunPricing": {
+    "model_config": []
+  },
+  "RunUsage": {},
+  "BillingClient": {
+    "__init__": [
+      "self",
+      "client"
+    ],
+    "get_run_usage": [
+      "self",
+      "run_id"
+    ]
+  }
+}
