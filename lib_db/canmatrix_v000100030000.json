@@ -1,0 +1,1768 @@
+{
+  "setup_logger": [],
+  "set_log_level": [
+    "logger",
+    "level"
+  ],
+  "logger": [],
+  "ConfigDict": [],
+  "WithAttribute": [],
+  "CompareResult": {
+    "result": [],
+    "type": [],
+    "ref": [],
+    "changes": [],
+    "_children": [],
+    "add_child": [
+      "self",
+      "child"
+    ],
+    "children": [
+      "self"
+    ]
+  },
+  "propagate_changes": [
+    "res"
+  ],
+  "compare_db": [
+    "db1",
+    "db2",
+    "ignore"
+  ],
+  "compare_value_table": [
+    "vt1",
+    "vt2"
+  ],
+  "compare_signal_group": [
+    "sg1",
+    "sg2"
+  ],
+  "compare_define_list": [
+    "d1list",
+    "d2list"
+  ],
+  "compare_attributes": [
+    "ele1",
+    "ele2",
+    "ignore"
+  ],
+  "compare_ecu": [
+    "ecu1",
+    "ecu2",
+    "ignore"
+  ],
+  "compare_frame": [
+    "f1",
+    "f2",
+    "ignore"
+  ],
+  "compare_signal": [
+    "s1",
+    "s2",
+    "ignore"
+  ],
+  "dump_result": [
+    "res",
+    "depth"
+  ],
+  "AutosarE2EProperties": {
+    "profile": [],
+    "data_id_mode": [],
+    "data_ids": [],
+    "data_length": []
+  },
+  "Pdu": {
+    "name": [],
+    "size": [],
+    "id": [],
+    "triggering_name": [],
+    "pdu_type": [],
+    "port_type": [],
+    "signals": [],
+    "signalGroups": [],
+    "cycle_time": [],
+    "secOC_properties": [],
+    "offset_bytes": [],
+    "add_signal": [
+      "self",
+      "signal"
+    ],
+    "add_signal_group": [
+      "self",
+      "Name",
+      "Id",
+      "signalNames",
+      "e2e_properties"
+    ],
+    "get_signal_group_for_signal": [
+      "self",
+      "signal_to_find"
+    ],
+    "signal_by_name": [
+      "self",
+      "name"
+    ]
+  },
+  "Ecu": {
+    "name": [],
+    "comment": [],
+    "attributes": [],
+    "attribute": [
+      "self",
+      "attribute_name",
+      "db",
+      "default"
+    ],
+    "add_attribute": [
+      "self",
+      "attribute",
+      "value"
+    ],
+    "del_attribute": [
+      "self",
+      "attribute"
+    ],
+    "add_comment": [
+      "self",
+      "comment"
+    ]
+  },
+  "normalize_value_table": [
+    "table"
+  ],
+  "quote_aware_space_split": [
+    "in_line"
+  ],
+  "escape_aware_split": [
+    "string",
+    "delimiter"
+  ],
+  "quote_aware_comma_split": [
+    "string"
+  ],
+  "guess_value": [
+    "text_value"
+  ],
+  "get_gcd": [
+    "value1",
+    "value2"
+  ],
+  "decode_number": [
+    "value",
+    "float_factory"
+  ],
+  "arbitration_id_converter": [
+    "source"
+  ],
+  "grouper": [
+    "iterable",
+    "n",
+    "fillvalue"
+  ],
+  "unpack_bitstring": [
+    "length",
+    "is_float",
+    "is_signed",
+    "bits"
+  ],
+  "pack_bitstring": [
+    "length",
+    "is_float",
+    "value",
+    "signed"
+  ],
+  "set_attribute_with_type_conversion": [
+    "target_obj",
+    "col_head",
+    "value"
+  ],
+  "Endpoint": {
+    "server_ipv4": [],
+    "server_ipv6": [],
+    "server_port": [],
+    "client_ipv4": [],
+    "client_ipv6": [],
+    "client_port": [],
+    "ttl": []
+  },
+  "Define": {
+    "__init__": [
+      "self",
+      "definition"
+    ],
+    "set_default": [
+      "self",
+      "default"
+    ],
+    "update": [
+      "self"
+    ]
+  },
+  "Signal": {
+    "name": [],
+    "float_factory": [],
+    "start_bit": [],
+    "size": [],
+    "is_little_endian": [],
+    "is_signed": [],
+    "offset": [],
+    "factor": [],
+    "unit": [],
+    "receivers": [],
+    "comment": [],
+    "multiplex": [],
+    "mux_value": [],
+    "is_float": [],
+    "is_ascii": [],
+    "type_label": [],
+    "enumeration": [],
+    "comments": [],
+    "attributes": [],
+    "values": [],
+    "mux_val_grp": [],
+    "muxer_for_signal": [],
+    "calc_min_for_none": [],
+    "calc_max_for_none": [],
+    "cycle_time": [],
+    "initial_value": [],
+    "scale_ranges": [],
+    "min": [],
+    "short_name": [],
+    "set_default_offset": [
+      "self"
+    ],
+    "set_default_factor": [
+      "self"
+    ],
+    "set_default_initial_value": [
+      "self"
+    ],
+    "set_default_min": [
+      "self"
+    ],
+    "max": [],
+    "set_default_max": [
+      "self"
+    ],
+    "__attrs_post_init__": [
+      "self"
+    ],
+    "spn": [
+      "self"
+    ],
+    "multiplex_setter": [
+      "self",
+      "value"
+    ],
+    "multiplexer_value_in_range": [
+      "self",
+      "mux_value"
+    ],
+    "attribute": [
+      "self",
+      "attributeName",
+      "db",
+      "default"
+    ],
+    "add_comment": [
+      "self",
+      "comment"
+    ],
+    "add_receiver": [
+      "self",
+      "receiver"
+    ],
+    "del_receiver": [
+      "self",
+      "receiver"
+    ],
+    "add_attribute": [
+      "self",
+      "attribute",
+      "value"
+    ],
+    "del_attribute": [
+      "self",
+      "attribute"
+    ],
+    "add_values": [
+      "self",
+      "value",
+      "valueName"
+    ],
+    "set_startbit": [
+      "self",
+      "start_bit",
+      "bitNumbering",
+      "startLittle"
+    ],
+    "get_startbit": [
+      "self",
+      "bit_numbering",
+      "start_little"
+    ],
+    "calculate_raw_range": [
+      "self"
+    ],
+    "set_min": [
+      "self",
+      "min"
+    ],
+    "calc_min": [
+      "self"
+    ],
+    "set_max": [
+      "self",
+      "max"
+    ],
+    "calc_max": [
+      "self"
+    ],
+    "phys2raw": [
+      "self",
+      "value"
+    ],
+    "raw2phys": [
+      "self",
+      "value",
+      "decode_to_str"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "FloatFactory": {
+    "_default_float_factory": [],
+    "_float_factory": [],
+    "set_float_factory": [
+      "cls",
+      "float_factory"
+    ],
+    "get_float_factory": [
+      "cls"
+    ],
+    "get_float": [
+      "cls",
+      "value"
+    ]
+  },
+  "convert_pdu_container_to_multiplexed": [
+    "frame"
+  ],
+  "convert": [
+    "infile",
+    "out_file_name"
+  ],
+  "RawValue": [],
+  "PhysicalValue": [],
+  "OptionalRawValue": [],
+  "OptionalPhysicalValue": [],
+  "list_pgn": [
+    "db"
+  ],
+  "ids_sharing_same_pgn": [
+    "id_x",
+    "pgn_x",
+    "id_y",
+    "pgn_y"
+  ],
+  "join_frame_by_signal_start_bit": [
+    "files"
+  ],
+  "rename_frame_with_id": [
+    "source_db"
+  ],
+  "rename_frame_with_sae_acronym": [
+    "source_db",
+    "target_db"
+  ],
+  "join_frame_for_manufacturer": [
+    "db",
+    "files"
+  ],
+  "Frame": {
+    "name": [],
+    "arbitration_id": [],
+    "size": [],
+    "transmitters": [],
+    "is_complex_multiplexed": [],
+    "is_fd": [],
+    "comment": [],
+    "signals": [],
+    "mux_names": [],
+    "attributes": [],
+    "receivers": [],
+    "signalGroups": [],
+    "cycle_time": [],
+    "event_controlled_time": [],
+    "debounce_time_range": [],
+    "final_repetitions": [],
+    "repeating_time_range": [],
+    "is_j1939": [],
+    "pdus": [],
+    "pdu_name": [],
+    "header_id": [],
+    "endpoints": [],
+    "secOC_properties": [],
+    "is_multiplexed": [
+      "self"
+    ],
+    "get_multiplexer": [
+      "self"
+    ],
+    "get_multiplexer_values": [
+      "self"
+    ],
+    "get_signals_for_multiplexer_value": [
+      "self",
+      "mux_value"
+    ],
+    "is_pdu_container": [
+      "self"
+    ],
+    "get_pdu_id_values": [
+      "self"
+    ],
+    "pgn": [
+      "self",
+      "value"
+    ],
+    "priority": [
+      "self",
+      "value"
+    ],
+    "source": [
+      "self",
+      "value"
+    ],
+    "effective_cycle_time": [
+      "self"
+    ],
+    "attribute": [
+      "self",
+      "attribute_name",
+      "db",
+      "default"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "add_signal_group": [
+      "self",
+      "Name",
+      "Id",
+      "signalNames",
+      "e2e_properties"
+    ],
+    "signal_group_by_name": [
+      "self",
+      "name"
+    ],
+    "add_pdu": [
+      "self",
+      "pdu"
+    ],
+    "pdu_by_name": [
+      "self",
+      "name"
+    ],
+    "pdu_by_id": [
+      "self",
+      "pdu_id"
+    ],
+    "add_signal": [
+      "self",
+      "signal"
+    ],
+    "add_transmitter": [
+      "self",
+      "transmitter"
+    ],
+    "del_transmitter": [
+      "self",
+      "transmitter"
+    ],
+    "add_receiver": [
+      "self",
+      "receiver"
+    ],
+    "signal_by_name": [
+      "self",
+      "name"
+    ],
+    "glob_signals": [
+      "self",
+      "glob_str"
+    ],
+    "add_attribute": [
+      "self",
+      "attribute",
+      "value"
+    ],
+    "del_attribute": [
+      "self",
+      "attribute"
+    ],
+    "add_comment": [
+      "self",
+      "comment"
+    ],
+    "calc_dlc": [
+      "self"
+    ],
+    "fit_dlc": [
+      "self"
+    ],
+    "get_frame_layout": [
+      "self"
+    ],
+    "create_dummy_signals": [
+      "self"
+    ],
+    "update_receiver": [
+      "self"
+    ],
+    "signals_to_bytes": [
+      "self",
+      "data"
+    ],
+    "encode": [
+      "self",
+      "data"
+    ],
+    "bytes_to_bitstrings": [
+      "data"
+    ],
+    "bitstring_to_signal_list": [
+      "signals",
+      "big",
+      "little",
+      "size"
+    ],
+    "unpack": [
+      "self",
+      "data",
+      "allow_truncated",
+      "allow_exceeded"
+    ],
+    "_get_sub_multiplexer": [
+      "self",
+      "parent_multiplexer_name",
+      "parent_multiplexer_value"
+    ],
+    "_filter_signals_for_multiplexer": [
+      "self",
+      "multiplexer_name",
+      "multiplexer_value"
+    ],
+    "decode": [
+      "self",
+      "data"
+    ],
+    "_compress_little": [
+      "self"
+    ],
+    "compress": [
+      "self"
+    ],
+    "multiplex_signals": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "ExceptionTemplate": {
+    "__call__": [
+      "self"
+    ]
+  },
+  "StartbitLowerZero": {},
+  "EncodingComplexMultiplexed": {},
+  "MissingMuxSignal": {},
+  "DecodingComplexMultiplexed": {},
+  "DecodingFrameLength": {},
+  "ArbitrationIdOutOfRange": {},
+  "J1939NeedsExtendedIdentifier": {},
+  "DecodingContainerPdu": {},
+  "EncodingContainerPdu": {},
+  "DecodedSignal": {
+    "raw_value": [],
+    "signal": [],
+    "phys_value": [
+      "self"
+    ],
+    "named_value": [
+      "self"
+    ]
+  },
+  "AutosarSecOCProperties": {
+    "secured_i_pdu_name": [],
+    "authentic_i_pdu_name": [],
+    "auth_algorithm": [],
+    "authentic_pdu_length": [],
+    "secured_i_pdu_length": [],
+    "auth_tx_length": [],
+    "data_id": [],
+    "freshness_value_id": [],
+    "freshness_length": [],
+    "freshness_tx_length": [],
+    "use_as_cryptographic_i_pdu": [],
+    "message_link_length": [],
+    "message_link_position": [],
+    "key_id": []
+  },
+  "SignalGroup": {
+    "name": [],
+    "id": [],
+    "signals": [],
+    "e2e_properties": [],
+    "secOC_properties": [],
+    "add_signal": [
+      "self",
+      "signal"
+    ],
+    "del_signal": [
+      "self",
+      "signal"
+    ],
+    "by_name": [
+      "self",
+      "name"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "name"
+    ]
+  },
+  "copy_ecu": [
+    "ecu_or_glob",
+    "source_db",
+    "target_db"
+  ],
+  "copy_ecu_with_frames": [
+    "ecu_or_glob",
+    "source_db",
+    "target_db",
+    "rx",
+    "tx",
+    "direct_ecu_only"
+  ],
+  "copy_signal": [
+    "signal_glob",
+    "source_db",
+    "target_db"
+  ],
+  "copy_frame": [
+    "frame_id",
+    "source_db",
+    "target_db"
+  ],
+  "_check_range": [
+    "name",
+    "value",
+    "mask"
+  ],
+  "ArbitrationId": {
+    "standard_id_mask": [],
+    "extended_id_mask": [],
+    "compound_extended_mask": [],
+    "id": [],
+    "extended": [],
+    "__attrs_post_init__": [
+      "self"
+    ],
+    "j1939_pgn": [
+      "self"
+    ],
+    "pgn": [
+      "self",
+      "value"
+    ],
+    "j1939_tuple": [
+      "self"
+    ],
+    "j1939_destination": [
+      "self"
+    ],
+    "j1939_source": [
+      "self",
+      "value"
+    ],
+    "j1939_ps": [
+      "self"
+    ],
+    "j1939_pf": [
+      "self"
+    ],
+    "j1939_pdu_format": [
+      "self"
+    ],
+    "j1939_dp": [
+      "self"
+    ],
+    "j1939_edp": [
+      "self"
+    ],
+    "j1939_priority": [
+      "self",
+      "value"
+    ],
+    "j1939_str": [
+      "self"
+    ],
+    "from_compound_integer": [
+      "cls",
+      "i"
+    ],
+    "from_pgn": [
+      "cls",
+      "pgn"
+    ],
+    "from_j1939_fields": [
+      "cls",
+      "pdu_format",
+      "pdu_specific",
+      "priority",
+      "edp",
+      "dp",
+      "source_address"
+    ],
+    "from_pgn_fields": [
+      "cls",
+      "pgn",
+      "priority",
+      "source_address",
+      "destination"
+    ],
+    "to_compound_integer": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ]
+  },
+  "CanCluster": {
+    "__init__": [
+      "self"
+    ],
+    "update_frames": [
+      "self"
+    ],
+    "update_signals": [
+      "self"
+    ],
+    "update_ecus": [
+      "self"
+    ],
+    "update": [
+      "self"
+    ],
+    "ecus": [
+      "self"
+    ],
+    "frames": [
+      "self"
+    ],
+    "signals": [
+      "self"
+    ],
+    "pdu_gateway": [
+      "self",
+      "pdu_gateway_list"
+    ],
+    "signal_gateway": [
+      "self",
+      "signal_gateway_list"
+    ],
+    "get_pdu_routing_info": [
+      "self",
+      "pdu_name",
+      "strict_search"
+    ],
+    "get_signal_routing_info": [
+      "self",
+      "signal_name",
+      "strict_search"
+    ]
+  },
+  "j1939_decoder": {
+    "j1939_db": [],
+    "length": [],
+    "count_succesive_frames": [],
+    "transfered_pgn": [],
+    "_data": [],
+    "decode": [
+      "self",
+      "arbitration_id",
+      "can_data",
+      "matrix"
+    ]
+  },
+  "matrix_class": {
+    "CAN": [],
+    "FLEXRAY": [],
+    "SOMEIP": []
+  },
+  "CanMatrix": {
+    "type": [],
+    "attributes": [],
+    "ecus": [],
+    "frames": [],
+    "frames_dict_name": [],
+    "frames_dict_id": [],
+    "_frames_dict_id_extend": [],
+    "signal_defines": [],
+    "frame_defines": [],
+    "global_defines": [],
+    "env_defines": [],
+    "ecu_defines": [],
+    "value_tables": [],
+    "env_vars": [],
+    "signals": [],
+    "new_symbols": [],
+    "baudrate": [],
+    "fd_baudrate": [],
+    "vlan": [],
+    "load_errors": [],
+    "__iter__": [
+      "self"
+    ],
+    "add_env_var": [
+      "self",
+      "name",
+      "envVarDict"
+    ],
+    "add_env_attribute": [
+      "self",
+      "env_name",
+      "attribute_name",
+      "attribute_value"
+    ],
+    "contains_fd": [
+      "self"
+    ],
+    "contains_j1939": [
+      "self"
+    ],
+    "attribute": [
+      "self",
+      "attributeName",
+      "default"
+    ],
+    "add_value_table": [
+      "self",
+      "name",
+      "valueTable"
+    ],
+    "add_attribute": [
+      "self",
+      "attribute",
+      "value"
+    ],
+    "add_signal_defines": [
+      "self",
+      "type",
+      "definition"
+    ],
+    "add_frame_defines": [
+      "self",
+      "name",
+      "definition"
+    ],
+    "add_ecu_defines": [
+      "self",
+      "name",
+      "definition"
+    ],
+    "add_env_defines": [
+      "self",
+      "name",
+      "definition"
+    ],
+    "add_global_defines": [
+      "self",
+      "name",
+      "definition"
+    ],
+    "add_define_default": [
+      "self",
+      "name",
+      "value"
+    ],
+    "delete_obsolete_ecus": [
+      "self"
+    ],
+    "delete_obsolete_defines": [
+      "self"
+    ],
+    "get_frame_by_id": [
+      "self",
+      "id"
+    ],
+    "frame_by_id": [
+      "self",
+      "arbitration_id"
+    ],
+    "frame_by_header_id": [
+      "self",
+      "header_id"
+    ],
+    "frame_by_pgn": [
+      "self",
+      "pgn"
+    ],
+    "frame_by_name": [
+      "self",
+      "name"
+    ],
+    "get_frame_by_name": [
+      "self",
+      "name"
+    ],
+    "glob_frames": [
+      "self",
+      "globStr"
+    ],
+    "ecu_by_name": [
+      "self",
+      "name"
+    ],
+    "glob_ecus": [
+      "self",
+      "globStr"
+    ],
+    "add_frame": [
+      "self",
+      "frame"
+    ],
+    "remove_frame": [
+      "self",
+      "frame"
+    ],
+    "add_signal": [
+      "self",
+      "signal"
+    ],
+    "remove_signal": [
+      "self",
+      "signal"
+    ],
+    "delete_zero_signals": [
+      "self"
+    ],
+    "del_signal_attributes": [
+      "self",
+      "unwanted_attributes"
+    ],
+    "del_frame_attributes": [
+      "self",
+      "unwanted_attributes"
+    ],
+    "recalc_dlc": [
+      "self",
+      "strategy"
+    ],
+    "rename_ecu": [
+      "self",
+      "ecu_or_name",
+      "new_name"
+    ],
+    "add_ecu": [
+      "self",
+      "ecu"
+    ],
+    "del_ecu": [
+      "self",
+      "ecu_or_glob"
+    ],
+    "update_ecu_list": [
+      "self"
+    ],
+    "rename_frame": [
+      "self",
+      "frame_or_name",
+      "new_name"
+    ],
+    "del_frame": [
+      "self",
+      "frame_or_name"
+    ],
+    "rename_signal": [
+      "self",
+      "signal_or_name",
+      "new_name"
+    ],
+    "del_signal": [
+      "self",
+      "signal"
+    ],
+    "add_signal_receiver": [
+      "self",
+      "globFrame",
+      "globSignal",
+      "ecu"
+    ],
+    "del_signal_receiver": [
+      "self",
+      "globFrame",
+      "globSignal",
+      "ecu"
+    ],
+    "add_frame_transmitter": [
+      "self",
+      "globFrame",
+      "ecu"
+    ],
+    "add_frame_receiver": [
+      "self",
+      "globFrame",
+      "ecu"
+    ],
+    "del_frame_transmitter": [
+      "self",
+      "globFrame",
+      "ecu"
+    ],
+    "merge": [
+      "self",
+      "mergeArray"
+    ],
+    "set_fd_type": [
+      "self"
+    ],
+    "encode": [
+      "self",
+      "frame_id",
+      "data"
+    ],
+    "decode_pycan": [
+      "self",
+      "pycan_msg"
+    ],
+    "decode": [
+      "self",
+      "frame_id",
+      "data"
+    ],
+    "enum_attribs_to_values": [
+      "self"
+    ],
+    "enum_attribs_to_keys": [
+      "self"
+    ]
+  },
+  "__version__": [],
+  "cli_compare": [
+    "matrix1",
+    "matrix2",
+    "verbosity",
+    "silent",
+    "check_comments",
+    "check_attributes",
+    "ignore_valuetables",
+    "frames"
+  ],
+  "get_formats": [],
+  "cli_convert": [
+    "infile",
+    "outfile",
+    "silent",
+    "verbosity"
+  ],
+  "datatype_mapping": [],
+  "cmd_values": [],
+  "name_cleanup": [
+    "in_str"
+  ],
+  "get_bit_length": [
+    "data_type_code"
+  ],
+  "get_data_type_name": [
+    "data_type_code"
+  ],
+  "format_index": [
+    "index",
+    "subindex"
+  ],
+  "load": [
+    "f"
+  ],
+  "normalize_name": [
+    "name",
+    "whitespace_replacement"
+  ],
+  "format_float": [
+    "f"
+  ],
+  "check_define": [
+    "define"
+  ],
+  "create_define": [
+    "data_type",
+    "define",
+    "define_type",
+    "defaults"
+  ],
+  "create_attribute_string": [
+    "attribute",
+    "attribute_class",
+    "name",
+    "value",
+    "is_string"
+  ],
+  "create_comment_string": [
+    "comment_class",
+    "comment_ident",
+    "comment",
+    "export_encoding",
+    "export_comment_encoding",
+    "ignore_encoding_errors"
+  ],
+  "dump": [
+    "in_db",
+    "f"
+  ],
+  "_FollowUps": {},
+  "font": [],
+  "write_ecu_matrix": [
+    "ecus",
+    "sig",
+    "frame",
+    "worksheet",
+    "row",
+    "col",
+    "first_frame"
+  ],
+  "write_excel_line": [
+    "worksheet",
+    "row",
+    "col",
+    "row_array",
+    "style"
+  ],
+  "parse_value_name_column": [
+    "value_name",
+    "value_str",
+    "signal_size",
+    "float_factory"
+  ],
+  "read_additional_signal_attributes": [
+    "signal",
+    "attribute_name",
+    "attribute_value"
+  ],
+  "OdxReader": {
+    "__init__": [
+      "self"
+    ],
+    "open": [
+      "self",
+      "file"
+    ],
+    "findall": [
+      "self",
+      "xpath",
+      "root"
+    ],
+    "find": [
+      "self",
+      "xpath",
+      "root"
+    ],
+    "get_short_name": [
+      "self",
+      "element"
+    ]
+  },
+  "read_param": [
+    "eo",
+    "param",
+    "start_byte_pos"
+  ],
+  "find_param": [
+    "eo",
+    "request",
+    "param_type"
+  ],
+  "decode_compumethod": [
+    "eo",
+    "compu_method",
+    "category"
+  ],
+  "get_struct": [
+    "eo",
+    "struct_name",
+    "offset_bit"
+  ],
+  "get_odx_info": [
+    "eo",
+    "element_type"
+  ],
+  "flatten_did_info": [
+    "did_info"
+  ],
+  "ParsingError": {
+    "line_number": [],
+    "line": [],
+    "message": [],
+    "original": [],
+    "__attrs_post_init__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "DuplicateMuxIdError": {
+    "id": [],
+    "old": [],
+    "new": [],
+    "__attrs_post_init__": [
+      "self"
+    ]
+  },
+  "create_signal": [
+    "db",
+    "signal"
+  ],
+  "create_enum_from_signal_values": [
+    "signal"
+  ],
+  "get_frame_info": [
+    "db",
+    "frame"
+  ],
+  "get_signal": [
+    "db",
+    "frame",
+    "sig",
+    "motorola_bit_format"
+  ],
+  "extension": [],
+  "get_fmt": [
+    "signal"
+  ],
+  "signal_field_line": [
+    "signal"
+  ],
+  "clusterExporter": [],
+  "clusterImporter": [],
+  "_Element": [],
+  "parse_signal": [
+    "signal",
+    "mux",
+    "namespace",
+    "nodelist",
+    "float_factory"
+  ],
+  "decode_define": [
+    "line"
+  ],
+  "fx": [],
+  "te": [],
+  "ho": [],
+  "can": [],
+  "xsi": [],
+  "ns_ho": [],
+  "ns_fx": [],
+  "ns_te": [],
+  "ns_can": [],
+  "ns_xsi": [],
+  "create_short_name_desc": [
+    "parent",
+    "short_name",
+    "desc"
+  ],
+  "create_sub_element_fx": [
+    "parent",
+    "element_name",
+    "element_text"
+  ],
+  "create_sub_element_te": [
+    "parent",
+    "element_name",
+    "element_text"
+  ],
+  "create_sub_element_ho": [
+    "parent",
+    "element_name",
+    "element_text"
+  ],
+  "create_signal_instance": [
+    "parent",
+    "signal",
+    "signal_id"
+  ],
+  "create_signal_ref": [
+    "parent",
+    "signal_ref_id"
+  ],
+  "create_signal_group_element": [
+    "parent",
+    "frame",
+    "sig_group"
+  ],
+  "bits_to_byte_str": [
+    "bits",
+    "name"
+  ],
+  "create_signal_id": [
+    "frame",
+    "signal"
+  ],
+  "get_multiplexing_parts_infos": [
+    "signals",
+    "frame_name",
+    "start_pos",
+    "end_pos",
+    "seg_big_endian"
+  ],
+  "create_frame_element": [
+    "parent",
+    "frame",
+    "prefix"
+  ],
+  "create_frame_triggering": [
+    "parent",
+    "frame",
+    "prefix"
+  ],
+  "create_pdu_triggering": [
+    "parent",
+    "pdu",
+    "gen_msg_type_def",
+    "msg_nr_of_repetition_def",
+    "msg_delay_time_def",
+    "msg_cycle_time_def",
+    "prefix"
+  ],
+  "create_output_port": [
+    "parent",
+    "frame",
+    "ecu_name",
+    "prefix"
+  ],
+  "create_secoc_configuration": [
+    "frame",
+    "auth_info_tx_length_def",
+    "freshness_value_tx_length_def",
+    "data_id_def",
+    "freshness_value_length_def",
+    "spdu"
+  ],
+  "get_base_data_type": [
+    "signal"
+  ],
+  "Fe": {
+    "__init__": [
+      "self",
+      "filename"
+    ],
+    "sn": [
+      "self",
+      "tag"
+    ],
+    "get_referencable_parent": [
+      "self",
+      "xml_element"
+    ],
+    "find_parent": [
+      "self",
+      "start_element",
+      "parent_tag"
+    ],
+    "get_desc_or_longname": [
+      "self",
+      "element"
+    ],
+    "selector": [
+      "self",
+      "start_element",
+      "selector"
+    ]
+  },
+  "get_signals_for_pdu": [
+    "fe",
+    "pdu",
+    "overall_startbit"
+  ],
+  "CsvDataType": [],
+  "CsvRow": {
+    "__init__": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "__setitem__": [
+      "self",
+      "key",
+      "item"
+    ],
+    "__add__": [
+      "self",
+      "other"
+    ],
+    "write": [
+      "self",
+      "column",
+      "value"
+    ],
+    "as_list": [
+      "self"
+    ],
+    "to_csv": [
+      "self",
+      "delimiter"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "sty_header": [],
+  "sty_norm": [],
+  "sty_first_frame": [],
+  "sty_white": [],
+  "sty_green": [],
+  "sty_green_first_frame": [],
+  "sty_sender": [],
+  "sty_sender_first_frame": [],
+  "sty_sender_green": [],
+  "sty_sender_green_first_frame": [],
+  "moduleList": [],
+  "loadedFormats": [],
+  "supportedFormats": [],
+  "extensionMapping": [],
+  "loads": [
+    "string",
+    "import_type",
+    "key",
+    "encoding"
+  ],
+  "loads_flat": [
+    "string",
+    "import_type",
+    "key"
+  ],
+  "loadp": [
+    "path",
+    "import_type",
+    "key"
+  ],
+  "loadp_flat": [
+    "path",
+    "import_type",
+    "key"
+  ],
+  "load_flat": [
+    "file_object",
+    "import_type",
+    "key"
+  ],
+  "dumpp": [
+    "can_cluster",
+    "path",
+    "export_type"
+  ],
+  "_start_bit": [
+    "signal",
+    "motorola_bit_format"
+  ],
+  "to_dict": [
+    "db",
+    "export_all",
+    "native_types",
+    "motorola_bit_format",
+    "export_canard",
+    "additional_frame_columns",
+    "frame_id_as_hex"
+  ],
+  "from_dict": [
+    "data"
+  ],
+  "_MultiplexId": [],
+  "_FloatFactory": [],
+  "Earxml": {
+    "__init__": [
+      "self",
+      "preferred_languages"
+    ],
+    "fill_caches": [
+      "self",
+      "start_element",
+      "ar_path"
+    ],
+    "open": [
+      "self",
+      "filename"
+    ],
+    "findall": [
+      "self",
+      "xpath",
+      "start_element"
+    ],
+    "find": [
+      "self",
+      "xpath",
+      "start_element"
+    ],
+    "ar_path_to_x_path": [
+      "ar_path",
+      "dest_element"
+    ],
+    "get_short_name_path_of_element": [
+      "self",
+      "xml_element"
+    ],
+    "get_referencable_parent": [
+      "self",
+      "xml_element"
+    ],
+    "get_parent_with_name": [
+      "self",
+      "xml_element",
+      "tag_name"
+    ],
+    "find_references_of_type": [
+      "self",
+      "element",
+      "xml_tag",
+      "referencable_parent"
+    ],
+    "get_short_name_path": [
+      "self",
+      "shortname_path"
+    ],
+    "get_short_name": [
+      "self",
+      "element"
+    ],
+    "follow_ref": [
+      "self",
+      "start_element",
+      "element_name"
+    ],
+    "follow_all_ref": [
+      "self",
+      "start_element",
+      "element_name"
+    ],
+    "get_all_sub_by_name": [
+      "self",
+      "start_element",
+      "name"
+    ],
+    "get_sub_by_name": [
+      "self",
+      "start_element",
+      "name"
+    ],
+    "find_children_by_path": [
+      "self",
+      "from_element",
+      "path"
+    ],
+    "get_element_name": [
+      "self",
+      "parent"
+    ],
+    "get_child": [
+      "self",
+      "parent",
+      "tag_name"
+    ],
+    "get_children": [
+      "self",
+      "parent",
+      "tag_name"
+    ],
+    "get_element_desc": [
+      "self",
+      "element"
+    ],
+    "get_ecu_instance": [
+      "self",
+      "element"
+    ],
+    "selector": [
+      "self",
+      "start_element",
+      "selector"
+    ]
+  },
+  "AutosarBasePlatformTypes": {
+    "_encoding_VOID": [],
+    "_encoding_BOOLEAN": [],
+    "_encoding_IEEE753": [],
+    "_encoding_2C": [],
+    "_encoding_None": [],
+    "_base_types": [],
+    "_get_reference_of_element": [
+      "cls",
+      "element"
+    ],
+    "datatype_by_ref": [
+      "cls",
+      "basetype_ref"
+    ],
+    "encoding_by_ref": [
+      "cls",
+      "basetype_ref"
+    ]
+  },
+  "create_sub_element": [
+    "parent",
+    "element_name",
+    "text",
+    "dest"
+  ],
+  "element_exists": [
+    "parent",
+    "element_name",
+    "short_name"
+  ],
+  "get_base_type_of_signal": [
+    "signal"
+  ],
+  "frames_cache": [],
+  "get_signalgrp_and_signals": [
+    "sys_signal",
+    "sys_signal_array",
+    "frame",
+    "group_id",
+    "ea"
+  ],
+  "decode_compu_method": [
+    "compu_method",
+    "ea",
+    "float_factory"
+  ],
+  "eval_type_of_signal": [
+    "type_encoding",
+    "base_type",
+    "ea"
+  ],
+  "ar_byteorder_is_little": [
+    "in_string"
+  ],
+  "get_signals": [
+    "signal_array",
+    "frame",
+    "ea",
+    "multiplex_id",
+    "float_factory",
+    "bit_offset",
+    "generated_update_bits_init_to_1"
+  ],
+  "get_frame_from_multiplexed_ipdu": [
+    "pdu",
+    "target_frame",
+    "multiplex_translation",
+    "ea",
+    "float_factory",
+    "generated_update_bits_init_to_1"
+  ],
+  "containters_are_little_endian": [
+    "ea"
+  ],
+  "_get_secOC_properties": [
+    "ea",
+    "pdu",
+    "secured_pdu_trigger"
+  ],
+  "_add_autosar_secoc_signals_to_parent": [
+    "parent"
+  ],
+  "get_frame_from_container_ipdu": [
+    "pdu",
+    "target_frame",
+    "ea",
+    "float_factory",
+    "headers_are_littleendian",
+    "generated_update_bits_init_to_1"
+  ],
+  "store_frame_timings": [
+    "target_frame",
+    "cyclic_timing",
+    "event_timing",
+    "minimum_delay",
+    "repeats",
+    "starting_time",
+    "time_offset",
+    "repeating_time",
+    "ea",
+    "time_period",
+    "float_factory"
+  ],
+  "get_frame": [
+    "frame_triggering",
+    "ea",
+    "multiplex_translation",
+    "float_factory",
+    "headers_are_littleendian",
+    "generated_update_bits_init_to_1"
+  ],
+  "update_frame_with_pdu_triggerings": [
+    "frame",
+    "ea",
+    "frame_triggering",
+    "float_factory",
+    "generated_update_bits_init_to_1"
+  ],
+  "process_ecu": [
+    "ecu_elem",
+    "ea"
+  ],
+  "ecuc_extract_signal": [
+    "signal_node",
+    "ea"
+  ],
+  "extract_cm_from_ecuc": [
+    "com_module",
+    "ea"
+  ],
+  "decode_ethernet_helper": [
+    "ea",
+    "float_factory",
+    "generated_update_bits_init_to_1"
+  ],
+  "decode_flexray_helper": [
+    "ea",
+    "float_factory",
+    "generated_update_bits_init_to_1"
+  ],
+  "decode_can_helper": [
+    "ea",
+    "float_factory",
+    "ignore_cluster_info",
+    "generated_update_bits_init_to_1"
+  ],
+  "get_frames_nb": [
+    "ea"
+  ],
+  "get_can_trigger_nb": [
+    "ea"
+  ],
+  "get_sig_pdu_map_nb": [
+    "ea"
+  ],
+  "get_sig_ipdu_nb": [
+    "ea"
+  ],
+  "get_coorect_bits_for_signal": [
+    "frame",
+    "signal",
+    "signal_size"
+  ],
+  "create_dissect_signal": [
+    "frame",
+    "signal",
+    "indent"
+  ]
+}
