@@ -1,0 +1,400 @@
+{
+  "SensitiveDataManagementMixin": {
+    "extract_sensitive_data": [
+      "cls",
+      "form_data"
+    ]
+  },
+  "log": [],
+  "PipelineStep": {
+    "__init__": [
+      "self",
+      "filter_type",
+      "running_pipeline"
+    ],
+    "run_filter": [
+      "self"
+    ]
+  },
+  "OpenEdxPublicFilter": {
+    "filter_type": [],
+    "__repr__": [
+      "self"
+    ],
+    "get_steps_for_pipeline": [
+      "cls",
+      "pipeline",
+      "fail_silently"
+    ],
+    "get_pipeline_configuration": [
+      "cls"
+    ],
+    "get_filter_config": [
+      "cls"
+    ],
+    "run_pipeline": [
+      "cls"
+    ]
+  },
+  "OpenEdxFilterException": {
+    "__init__": [
+      "self",
+      "message",
+      "redirect_to",
+      "status_code"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "__version__": [],
+  "AccountSettingsRenderStarted": {
+    "filter_type": [],
+    "run_filter": [
+      "cls",
+      "context",
+      "template_name"
+    ]
+  },
+  "StudentRegistrationRequested": {
+    "filter_type": [],
+    "sensitive_form_data": [],
+    "run_filter": [
+      "cls",
+      "form_data"
+    ]
+  },
+  "StudentLoginRequested": {
+    "filter_type": [],
+    "run_filter": [
+      "cls",
+      "user"
+    ]
+  },
+  "CourseEnrollmentStarted": {
+    "filter_type": [],
+    "run_filter": [
+      "cls",
+      "user",
+      "course_key",
+      "mode"
+    ]
+  },
+  "CourseUnenrollmentStarted": {
+    "filter_type": [],
+    "run_filter": [
+      "cls",
+      "enrollment"
+    ]
+  },
+  "CourseEnrollmentViewStarted": {
+    "filter_type": [],
+    "run_filter": [
+      "cls",
+      "user",
+      "course_key",
+      "requester_is_backend_service"
+    ]
+  },
+  "CertificateCreationRequested": {
+    "filter_type": [],
+    "run_filter": [
+      "cls",
+      "user",
+      "course_key",
+      "mode",
+      "status",
+      "grade",
+      "generation_mode"
+    ]
+  },
+  "CertificateRenderStarted": {
+    "filter_type": [],
+    "run_filter": [
+      "cls",
+      "context",
+      "custom_template"
+    ]
+  },
+  "CohortChangeRequested": {
+    "filter_type": [],
+    "run_filter": [
+      "cls",
+      "current_membership",
+      "target_cohort"
+    ]
+  },
+  "CohortAssignmentRequested": {
+    "filter_type": [],
+    "run_filter": [
+      "cls",
+      "user",
+      "target_cohort"
+    ]
+  },
+  "CourseAboutRenderStarted": {
+    "filter_type": [],
+    "run_filter": [
+      "cls",
+      "context",
+      "template_name"
+    ]
+  },
+  "DashboardRenderStarted": {
+    "filter_type": [],
+    "run_filter": [
+      "cls",
+      "context",
+      "template_name"
+    ]
+  },
+  "VerticalBlockChildRenderStarted": {
+    "filter_type": [],
+    "run_filter": [
+      "cls",
+      "block",
+      "context"
+    ]
+  },
+  "CourseEnrollmentQuerysetRequested": {
+    "filter_type": [],
+    "run_filter": [
+      "cls",
+      "enrollments"
+    ]
+  },
+  "RenderXBlockStarted": {
+    "filter_type": [],
+    "run_filter": [
+      "cls",
+      "context",
+      "student_view_context"
+    ]
+  },
+  "VerticalBlockRenderCompleted": {
+    "filter_type": [],
+    "run_filter": [
+      "cls",
+      "block",
+      "fragment",
+      "context",
+      "view"
+    ]
+  },
+  "CourseHomeUrlCreationStarted": {
+    "filter_type": [],
+    "run_filter": [
+      "cls",
+      "course_key",
+      "course_home_url"
+    ]
+  },
+  "CourseEnrollmentAPIRenderStarted": {
+    "filter_type": [],
+    "run_filter": [
+      "cls",
+      "course_key",
+      "serialized_enrollment"
+    ]
+  },
+  "CourseRunAPIRenderStarted": {
+    "filter_type": [],
+    "run_filter": [
+      "cls",
+      "serialized_courserun"
+    ]
+  },
+  "InstructorDashboardRenderStarted": {
+    "filter_type": [],
+    "run_filter": [
+      "cls",
+      "context",
+      "template_name"
+    ]
+  },
+  "InstructorDashboardTabsRequested": {
+    "filter_type": [],
+    "run_filter": [
+      "cls",
+      "tabs",
+      "user",
+      "course_key"
+    ]
+  },
+  "ORASubmissionViewRenderStarted": {
+    "filter_type": [],
+    "run_filter": [
+      "cls",
+      "context",
+      "template_name"
+    ]
+  },
+  "IDVPageURLRequested": {
+    "filter_type": [],
+    "run_filter": [
+      "cls",
+      "url"
+    ]
+  },
+  "CourseAboutPageURLRequested": {
+    "filter_type": [],
+    "run_filter": [
+      "cls",
+      "url",
+      "org"
+    ]
+  },
+  "ScheduleQuerySetRequested": {
+    "filter_type": [],
+    "run_filter": [
+      "cls",
+      "schedules"
+    ]
+  },
+  "AccountSettingsReadOnlyFieldsRequested": {
+    "filter_type": [],
+    "run_filter": [
+      "cls",
+      "readonly_fields",
+      "user"
+    ]
+  },
+  "GradeEventContextRequested": {
+    "filter_type": [],
+    "run_filter": [
+      "cls",
+      "context",
+      "user_id",
+      "course_id"
+    ]
+  },
+  "CoursewareViewStarted": {
+    "filter_type": [],
+    "run_filter": [
+      "cls",
+      "course_key",
+      "view_name"
+    ]
+  },
+  "CourseStartDateValidationFailed": {
+    "filter_type": [],
+    "run_filter": [
+      "cls",
+      "course_key",
+      "start_date"
+    ]
+  },
+  "CoursewareAccessChecksRequested": {
+    "filter_type": [],
+    "run_filter": [
+      "cls",
+      "user",
+      "course_key"
+    ]
+  },
+  "DiscountEligibilityCheckRequested": {
+    "filter_type": [],
+    "run_filter": [
+      "cls",
+      "user",
+      "course_key"
+    ]
+  },
+  "CourseModePriceRequested": {
+    "filter_type": [],
+    "run_filter": [
+      "cls",
+      "user",
+      "course_mode_data",
+      "price"
+    ]
+  },
+  "SupportContactContextRequested": {
+    "filter_type": [],
+    "run_filter": [
+      "cls",
+      "context"
+    ]
+  },
+  "SupportEnrollmentDataRequested": {
+    "filter_type": [],
+    "run_filter": [
+      "cls",
+      "enrollments_data",
+      "user"
+    ]
+  },
+  "LMSPageURLRequested": {
+    "filter_type": [],
+    "run_filter": [
+      "cls",
+      "url",
+      "org"
+    ]
+  },
+  "LogistrationViewContextGenerated": {
+    "filter_type": [],
+    "run_filter": [
+      "cls",
+      "context"
+    ]
+  },
+  "AuthnMFEContextGenerated": {
+    "filter_type": [],
+    "run_filter": [
+      "cls",
+      "context",
+      "extra_context"
+    ]
+  },
+  "LoginAltRedirectURLRequested": {
+    "filter_type": [],
+    "run_filter": [
+      "cls",
+      "redirect_url",
+      "user"
+    ]
+  },
+  "LoginFormGenerated": {
+    "filter_type": [],
+    "run_filter": [
+      "cls",
+      "form_desc",
+      "running_pipeline",
+      "current_provider"
+    ]
+  },
+  "RegistrationFormGenerated": {
+    "filter_type": [],
+    "run_filter": [
+      "cls",
+      "form_desc",
+      "running_pipeline",
+      "current_provider"
+    ]
+  },
+  "LogistrationViewRenderCompleted": {
+    "filter_type": [],
+    "run_filter": [
+      "cls",
+      "response",
+      "context"
+    ]
+  },
+  "AccountActivationEmailContextGenerated": {
+    "filter_type": [],
+    "run_filter": [
+      "cls",
+      "user",
+      "message_context"
+    ]
+  },
+  "RunningPipelineKwargs": {},
+  "RunningPipeline": {},
+  "FormDescriptionProtocol": {
+    "override_field_properties": []
+  },
+  "ProviderConfigProtocol": {
+    "get_register_form_data": []
+  }
+}
