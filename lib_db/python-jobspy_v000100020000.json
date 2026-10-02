@@ -1,0 +1,654 @@
+{
+  "JobType": {
+    "FULL_TIME": [],
+    "PART_TIME": [],
+    "CONTRACT": [],
+    "TEMPORARY": [],
+    "INTERNSHIP": [],
+    "PER_DIEM": [],
+    "NIGHTS": [],
+    "OTHER": [],
+    "SUMMER": [],
+    "VOLUNTEER": []
+  },
+  "Country": {
+    "ARGENTINA": [],
+    "AUSTRALIA": [],
+    "AUSTRIA": [],
+    "BAHRAIN": [],
+    "BANGLADESH": [],
+    "BELGIUM": [],
+    "BULGARIA": [],
+    "BRAZIL": [],
+    "CANADA": [],
+    "CHILE": [],
+    "CHINA": [],
+    "COLOMBIA": [],
+    "COSTARICA": [],
+    "CROATIA": [],
+    "CYPRUS": [],
+    "CZECHREPUBLIC": [],
+    "DENMARK": [],
+    "ECUADOR": [],
+    "EGYPT": [],
+    "ESTONIA": [],
+    "FINLAND": [],
+    "FRANCE": [],
+    "GERMANY": [],
+    "GREECE": [],
+    "HONGKONG": [],
+    "HUNGARY": [],
+    "INDIA": [],
+    "INDONESIA": [],
+    "IRELAND": [],
+    "ISRAEL": [],
+    "ITALY": [],
+    "JAPAN": [],
+    "KUWAIT": [],
+    "LATVIA": [],
+    "LITHUANIA": [],
+    "LUXEMBOURG": [],
+    "MALAYSIA": [],
+    "MALTA": [],
+    "MEXICO": [],
+    "MOROCCO": [],
+    "NETHERLANDS": [],
+    "NEWZEALAND": [],
+    "NIGERIA": [],
+    "NORWAY": [],
+    "OMAN": [],
+    "PAKISTAN": [],
+    "PANAMA": [],
+    "PERU": [],
+    "PHILIPPINES": [],
+    "POLAND": [],
+    "PORTUGAL": [],
+    "QATAR": [],
+    "ROMANIA": [],
+    "SAUDIARABIA": [],
+    "SINGAPORE": [],
+    "SLOVAKIA": [],
+    "SLOVENIA": [],
+    "SOUTHAFRICA": [],
+    "SOUTHKOREA": [],
+    "SPAIN": [],
+    "SWEDEN": [],
+    "SWITZERLAND": [],
+    "TAIWAN": [],
+    "THAILAND": [],
+    "TURKEY": [],
+    "UKRAINE": [],
+    "UNITEDARABEMIRATES": [],
+    "UK": [],
+    "USA": [],
+    "URUGUAY": [],
+    "VENEZUELA": [],
+    "VIETNAM": [],
+    "US_CANADA": [],
+    "WORLDWIDE": [],
+    "indeed_domain_value": [
+      "self"
+    ],
+    "glassdoor_domain_value": [
+      "self"
+    ],
+    "get_glassdoor_url": [
+      "self"
+    ],
+    "from_string": [
+      "cls",
+      "country_str"
+    ]
+  },
+  "Location": {
+    "display_location": [
+      "self"
+    ]
+  },
+  "CompensationInterval": {
+    "YEARLY": [],
+    "MONTHLY": [],
+    "WEEKLY": [],
+    "DAILY": [],
+    "HOURLY": [],
+    "get_interval": [
+      "cls",
+      "pay_period"
+    ]
+  },
+  "Compensation": {},
+  "DescriptionFormat": {
+    "MARKDOWN": [],
+    "HTML": [],
+    "PLAIN": []
+  },
+  "JobPost": {},
+  "JobResponse": {},
+  "Site": {
+    "LINKEDIN": [],
+    "INDEED": [],
+    "ZIP_RECRUITER": [],
+    "GLASSDOOR": [],
+    "GOOGLE": [],
+    "BAYT": [],
+    "NAUKRI": [],
+    "BDJOBS": []
+  },
+  "SalarySource": {
+    "DIRECT_DATA": [],
+    "DESCRIPTION": []
+  },
+  "ScraperInput": {
+    "_merge_linkedin_fetch_description": [
+      "self"
+    ]
+  },
+  "Scraper": {
+    "__init__": [
+      "self",
+      "site",
+      "proxies",
+      "ca_cert",
+      "user_agent"
+    ],
+    "scrape": [
+      "self",
+      "scraper_input"
+    ]
+  },
+  "LinkedInException": {
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "IndeedException": {
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "ZipRecruiterException": {
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "GlassdoorException": {
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "GoogleJobsException": {
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "BaytException": {
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "NaukriException": {
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "BDJobsException": {
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "create_logger": [
+    "name"
+  ],
+  "RotatingProxySession": {
+    "request_timeout": [],
+    "__init__": [
+      "self",
+      "proxies"
+    ],
+    "format_proxy": [
+      "proxy"
+    ],
+    "request": [
+      "self",
+      "method",
+      "url"
+    ]
+  },
+  "RequestsRotating": {
+    "__init__": [
+      "self",
+      "proxies",
+      "clear_cookies"
+    ],
+    "request": [
+      "self",
+      "method",
+      "url"
+    ]
+  },
+  "TLSRotating": {
+    "__init__": [
+      "self",
+      "proxies"
+    ]
+  },
+  "create_session": [],
+  "set_logger_level": [
+    "verbose"
+  ],
+  "markdown_converter": [
+    "description_html"
+  ],
+  "plain_converter": [
+    "decription_html"
+  ],
+  "extract_emails_from_text": [
+    "text"
+  ],
+  "get_enum_from_job_type": [
+    "job_type_str"
+  ],
+  "remove_attributes": [
+    "tag"
+  ],
+  "extract_salary": [
+    "salary_str",
+    "lower_limit",
+    "upper_limit",
+    "hourly_threshold",
+    "monthly_threshold",
+    "enforce_annual_salary"
+  ],
+  "extract_job_type": [
+    "description"
+  ],
+  "map_str_to_site": [
+    "site_name"
+  ],
+  "get_enum_from_value": [
+    "value_str"
+  ],
+  "convert_to_annual": [
+    "job_data"
+  ],
+  "desired_order": [],
+  "scrape_jobs": [
+    "site_name",
+    "search_term",
+    "google_search_term",
+    "location",
+    "distance",
+    "is_remote",
+    "job_type",
+    "easy_apply",
+    "results_wanted",
+    "country_indeed",
+    "proxies",
+    "ca_cert",
+    "description_format",
+    "linkedin_fetch_description",
+    "linkedin_company_ids",
+    "offset",
+    "hours_old",
+    "enforce_annual_salary",
+    "verbose",
+    "user_agent",
+    "fetch_description"
+  ],
+  "jobs_per_page": [],
+  "all_countries": [],
+  "date_intervals": [],
+  "job_type_codes": [],
+  "country_aliases": [],
+  "schema_job_types": [],
+  "log": [],
+  "slugify": [
+    "text"
+  ],
+  "BaytScraper": {
+    "base_url": [],
+    "delay": [],
+    "band_delay": [],
+    "__init__": [
+      "self",
+      "proxies",
+      "ca_cert",
+      "user_agent"
+    ],
+    "scrape": [
+      "self",
+      "scraper_input"
+    ],
+    "_location": [
+      "location"
+    ],
+    "_search_url": [
+      "self",
+      "country",
+      "city",
+      "page"
+    ],
+    "_process_job": [
+      "self",
+      "job"
+    ],
+    "_parse_salary": [
+      "text"
+    ],
+    "_fetch_details": [
+      "self",
+      "job_url"
+    ]
+  },
+  "headers": [],
+  "query_template": [],
+  "parse_compensation": [
+    "data"
+  ],
+  "parse_location": [
+    "location_name"
+  ],
+  "get_cursor_for_page": [
+    "pagination_cursors",
+    "page_num"
+  ],
+  "Glassdoor": {
+    "__init__": [
+      "self",
+      "proxies",
+      "ca_cert",
+      "user_agent"
+    ],
+    "scrape": [
+      "self",
+      "scraper_input"
+    ],
+    "_fetch_jobs_page": [
+      "self",
+      "location_id",
+      "location_type",
+      "page_num",
+      "cursor"
+    ],
+    "_process_job": [
+      "self",
+      "job_data"
+    ],
+    "_fetch_job_description": [
+      "self",
+      "job_id"
+    ],
+    "_autocomplete_url": [
+      "self",
+      "term"
+    ],
+    "_get_location": [
+      "self",
+      "location",
+      "is_remote"
+    ],
+    "_add_payload": [
+      "self",
+      "location_id",
+      "location_type",
+      "page_num",
+      "cursor"
+    ]
+  },
+  "job_search_query": [],
+  "api_headers": [],
+  "job_type_keys": [],
+  "remote_keys": [],
+  "languages": [],
+  "job_types_by_key": [],
+  "get_job_type": [
+    "attributes"
+  ],
+  "get_compensation": [
+    "compensation"
+  ],
+  "is_job_remote": [
+    "job"
+  ],
+  "get_compensation_interval": [
+    "interval"
+  ],
+  "Indeed": {
+    "__init__": [
+      "self",
+      "proxies",
+      "ca_cert",
+      "user_agent"
+    ],
+    "scrape": [
+      "self",
+      "scraper_input"
+    ],
+    "_scrape_page": [
+      "self",
+      "cursor"
+    ],
+    "_build_filters": [
+      "self"
+    ],
+    "_process_job": [
+      "self",
+      "job"
+    ]
+  },
+  "pay_intervals": [],
+  "page_values": [
+    "html"
+  ],
+  "_text_rows": [
+    "data"
+  ],
+  "direct_url": [
+    "redirect_url"
+  ],
+  "ZipRecruiter": {
+    "base_url": [],
+    "delay": [],
+    "band_delay": [],
+    "__init__": [
+      "self",
+      "proxies",
+      "ca_cert",
+      "user_agent"
+    ],
+    "scrape": [
+      "self",
+      "scraper_input"
+    ],
+    "_search_params": [
+      "self"
+    ],
+    "_process_job": [
+      "self",
+      "job"
+    ],
+    "_parse_job_type": [
+      "types"
+    ],
+    "_parse_salary": [
+      "pay"
+    ],
+    "_fetch_details": [
+      "self",
+      "job_url"
+    ]
+  },
+  "currencies": [],
+  "job_type_code": [
+    "job_type_enum"
+  ],
+  "parse_job_type": [
+    "soup_job_type"
+  ],
+  "parse_job_level": [
+    "soup_job_level"
+  ],
+  "parse_company_industry": [
+    "soup_industry"
+  ],
+  "LinkedIn": {
+    "base_url": [],
+    "delay": [],
+    "band_delay": [],
+    "jobs_per_page": [],
+    "__init__": [
+      "self",
+      "proxies",
+      "ca_cert",
+      "user_agent"
+    ],
+    "scrape": [
+      "self",
+      "scraper_input"
+    ],
+    "_process_job": [
+      "self",
+      "job_card",
+      "job_id",
+      "full_descr"
+    ],
+    "_parse_salary": [
+      "text"
+    ],
+    "_get_job_details": [
+      "self",
+      "job_id"
+    ],
+    "_get_location": [
+      "self",
+      "metadata_card"
+    ]
+  },
+  "headers_initial": [],
+  "headers_jobs": [],
+  "async_param": [],
+  "find_job_info": [
+    "jobs_data"
+  ],
+  "find_job_info_initial_page": [
+    "html_text"
+  ],
+  "Google": {
+    "__init__": [
+      "self",
+      "proxies",
+      "ca_cert",
+      "user_agent"
+    ],
+    "scrape": [
+      "self",
+      "scraper_input"
+    ],
+    "_get_initial_cursor_and_jobs": [
+      "self"
+    ],
+    "_get_jobs_next_page": [
+      "self",
+      "forward_cursor"
+    ],
+    "_parse_jobs": [
+      "self",
+      "job_data"
+    ],
+    "_parse_job": [
+      "self",
+      "job_info"
+    ]
+  },
+  "search_params": [],
+  "job_types": [],
+  "description_sections": [],
+  "locations": [],
+  "BDJobs": {
+    "base_url": [],
+    "search_url": [],
+    "details_url": [],
+    "delay": [],
+    "band_delay": [],
+    "__init__": [
+      "self",
+      "proxies",
+      "ca_cert",
+      "user_agent"
+    ],
+    "scrape": [
+      "self",
+      "scraper_input"
+    ],
+    "_search_params": [
+      "self"
+    ],
+    "_process_job": [
+      "self",
+      "job"
+    ],
+    "_parse_job_type": [
+      "text"
+    ],
+    "_parse_salary": [
+      "text"
+    ],
+    "_fetch_details": [
+      "self",
+      "job_id"
+    ]
+  },
+  "job_page_headers": [],
+  "nkparam_public_key": [],
+  "_read_der": [
+    "data",
+    "i"
+  ],
+  "public_key": [],
+  "generate_nkparam": [
+    "page"
+  ],
+  "Naukri": {
+    "base_url": [],
+    "search_url": [],
+    "job_page_url": [],
+    "delay": [],
+    "band_delay": [],
+    "__init__": [
+      "self",
+      "proxies",
+      "ca_cert",
+      "user_agent"
+    ],
+    "scrape": [
+      "self",
+      "scraper_input"
+    ],
+    "_search_params": [
+      "self"
+    ],
+    "_process_job": [
+      "self",
+      "job"
+    ],
+    "_parse_job_type": [
+      "text"
+    ],
+    "_parse_salary": [
+      "salary",
+      "label"
+    ],
+    "_fetch_details": [
+      "self",
+      "job_id"
+    ]
+  }
+}
