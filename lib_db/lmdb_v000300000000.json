@@ -1,0 +1,1178 @@
+{
+  "is_win32": [],
+  "__all__": [],
+  "O_0755": [],
+  "O_0111": [],
+  "EMPTY_BYTES": [],
+  "_cached_pid": [],
+  "_update_pid_after_fork": [],
+  "_callbacks": [],
+  "_CFFI_CDEF": [],
+  "_CFFI_CDEF_PATCHED": [],
+  "_CFFI_VERIFY": [],
+  "Error": {
+    "__init__": [
+      "self",
+      "what",
+      "code"
+    ]
+  },
+  "KeyExistsError": {
+    "MDB_NAME": []
+  },
+  "NotFoundError": {
+    "MDB_NAME": []
+  },
+  "PageNotFoundError": {
+    "MDB_NAME": []
+  },
+  "CorruptedError": {
+    "MDB_NAME": []
+  },
+  "PanicError": {
+    "MDB_NAME": []
+  },
+  "VersionMismatchError": {
+    "MDB_NAME": []
+  },
+  "InvalidError": {
+    "MDB_NAME": []
+  },
+  "MapFullError": {
+    "MDB_NAME": [],
+    "MDB_HINT": []
+  },
+  "DbsFullError": {
+    "MDB_NAME": [],
+    "MDB_HINT": []
+  },
+  "ReadersFullError": {
+    "MDB_NAME": [],
+    "MDB_HINT": []
+  },
+  "TlsFullError": {
+    "MDB_NAME": []
+  },
+  "TxnFullError": {
+    "MDB_NAME": [],
+    "MDB_HINT": []
+  },
+  "CursorFullError": {
+    "MDB_NAME": []
+  },
+  "PageFullError": {
+    "MDB_NAME": []
+  },
+  "MapResizedError": {
+    "MDB_NAME": []
+  },
+  "IncompatibleError": {
+    "MDB_NAME": []
+  },
+  "BadRslotError": {
+    "MDB_NAME": []
+  },
+  "BadDbiError": {
+    "MDB_NAME": []
+  },
+  "BadTxnError": {
+    "MDB_NAME": []
+  },
+  "BadValsizeError": {
+    "MDB_NAME": []
+  },
+  "ReadonlyError": {
+    "MDB_NAME": []
+  },
+  "InvalidParameterError": {
+    "MDB_NAME": []
+  },
+  "LockError": {
+    "MDB_NAME": []
+  },
+  "MemoryError": {
+    "MDB_NAME": []
+  },
+  "DiskError": {
+    "MDB_NAME": []
+  },
+  "ProblemError": {
+    "MDB_CODE": []
+  },
+  "BadChecksumError": {
+    "MDB_CODE": []
+  },
+  "CryptoFailError": {
+    "MDB_CODE": []
+  },
+  "EnvEncryptionError": {
+    "MDB_CODE": []
+  },
+  "_error": [
+    "what",
+    "rc"
+  ],
+  "_invalid_error": [],
+  "Some_LMDB_Resource_That_Was_Deleted_Or_Closed": {
+    "__bool__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "_invalid": [],
+  "_mvbuf": [
+    "mv"
+  ],
+  "_mvstr": [
+    "mv"
+  ],
+  "preload": [
+    "mv"
+  ],
+  "enable_drop_gil": [],
+  "_engine_for_major": [
+    "lib_version"
+  ],
+  "_MDB_MAGIC": [],
+  "_sniff_data_version": [
+    "path",
+    "subdir"
+  ],
+  "_select_engine": [
+    "lib_version",
+    "data_version",
+    "path"
+  ],
+  "version": [
+    "subpatch",
+    "lib_version"
+  ],
+  "Environment": {
+    "__init__": [
+      "self",
+      "path",
+      "map_size",
+      "subdir",
+      "readonly",
+      "metasync",
+      "sync",
+      "map_async",
+      "mode",
+      "create",
+      "readahead",
+      "writemap",
+      "meminit",
+      "max_readers",
+      "max_dbs",
+      "max_spare_txns",
+      "lock",
+      "lib_version"
+    ],
+    "_init_env": [
+      "self",
+      "path",
+      "map_size",
+      "subdir",
+      "readonly",
+      "metasync",
+      "sync",
+      "map_async",
+      "mode",
+      "readahead",
+      "writemap",
+      "meminit",
+      "max_readers",
+      "max_dbs",
+      "lock"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "_1",
+      "_2",
+      "_3"
+    ],
+    "__del__": [
+      "self"
+    ],
+    "_env": [],
+    "_lib": [],
+    "_deps": [],
+    "_spare_txns": [],
+    "_dbs": [],
+    "_wait_for_write_txn": [
+      "self"
+    ],
+    "_release_write_txn": [
+      "self"
+    ],
+    "set_mapsize": [
+      "self",
+      "map_size"
+    ],
+    "close": [
+      "self"
+    ],
+    "path": [
+      "self"
+    ],
+    "copy": [
+      "self",
+      "path",
+      "compact",
+      "txn"
+    ],
+    "copyfd": [
+      "self",
+      "fd",
+      "compact",
+      "txn"
+    ],
+    "sync": [
+      "self",
+      "force"
+    ],
+    "_convert_stat": [
+      "self",
+      "st"
+    ],
+    "stat": [
+      "self"
+    ],
+    "info": [
+      "self"
+    ],
+    "flags": [
+      "self"
+    ],
+    "lib_version": [
+      "self"
+    ],
+    "max_key_size": [
+      "self"
+    ],
+    "max_readers": [
+      "self"
+    ],
+    "readers": [
+      "self"
+    ],
+    "reader_check": [
+      "self"
+    ],
+    "open_db": [
+      "self",
+      "key",
+      "txn",
+      "reverse_key",
+      "dupsort",
+      "create",
+      "integerkey",
+      "integerdup",
+      "dupfixed"
+    ],
+    "dbs": [
+      "self",
+      "txn"
+    ],
+    "begin": [
+      "self",
+      "db",
+      "parent",
+      "write",
+      "buffers"
+    ]
+  },
+  "_Database": {
+    "__init__": [
+      "self",
+      "env",
+      "txn",
+      "name",
+      "reverse_key",
+      "dupsort",
+      "create",
+      "integerkey",
+      "integerdup",
+      "dupfixed"
+    ],
+    "_load_flags": [
+      "self",
+      "txn"
+    ],
+    "flags": [
+      "self"
+    ],
+    "_invalidate": [
+      "self"
+    ]
+  },
+  "open": [],
+  "Transaction": {
+    "_env": [],
+    "_txn": [],
+    "_parent": [],
+    "_opened_dbs": [],
+    "_write": [],
+    "_mutations": [],
+    "__init__": [
+      "self",
+      "env",
+      "db",
+      "parent",
+      "write",
+      "buffers"
+    ],
+    "_invalidate": [
+      "self"
+    ],
+    "__del__": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_value",
+      "traceback"
+    ],
+    "id": [
+      "self"
+    ],
+    "stat": [
+      "self",
+      "db"
+    ],
+    "drop": [
+      "self",
+      "db",
+      "delete"
+    ],
+    "_cache_spare": [
+      "self"
+    ],
+    "commit": [
+      "self"
+    ],
+    "_forget_dbs": [
+      "self"
+    ],
+    "abort": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "key",
+      "default",
+      "db"
+    ],
+    "put": [
+      "self",
+      "key",
+      "value",
+      "dupdata",
+      "overwrite",
+      "append",
+      "db"
+    ],
+    "replace": [
+      "self",
+      "key",
+      "value",
+      "db"
+    ],
+    "pop": [
+      "self",
+      "key",
+      "db"
+    ],
+    "delete": [
+      "self",
+      "key",
+      "value",
+      "db"
+    ],
+    "cursor": [
+      "self",
+      "db"
+    ]
+  },
+  "Cursor": {
+    "__init__": [
+      "self",
+      "db",
+      "txn"
+    ],
+    "_invalidate": [
+      "self"
+    ],
+    "__del__": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "_1",
+      "_2",
+      "_3"
+    ],
+    "key": [
+      "self"
+    ],
+    "value": [
+      "self"
+    ],
+    "item": [
+      "self"
+    ],
+    "_iter": [
+      "self",
+      "op",
+      "keys",
+      "values"
+    ],
+    "iternext": [
+      "self",
+      "keys",
+      "values"
+    ],
+    "__iter__": [],
+    "iternext_dup": [
+      "self",
+      "keys",
+      "values"
+    ],
+    "iternext_nodup": [
+      "self",
+      "keys",
+      "values"
+    ],
+    "iterprev": [
+      "self",
+      "keys",
+      "values"
+    ],
+    "iterprev_dup": [
+      "self",
+      "keys",
+      "values"
+    ],
+    "iterprev_nodup": [
+      "self",
+      "keys",
+      "values"
+    ],
+    "_cursor_get": [
+      "self",
+      "op"
+    ],
+    "_cursor_get_kv": [
+      "self",
+      "op",
+      "k",
+      "v"
+    ],
+    "first": [
+      "self"
+    ],
+    "first_dup": [
+      "self"
+    ],
+    "last": [
+      "self"
+    ],
+    "last_dup": [
+      "self"
+    ],
+    "prev": [
+      "self"
+    ],
+    "prev_dup": [
+      "self"
+    ],
+    "prev_nodup": [
+      "self"
+    ],
+    "next": [
+      "self"
+    ],
+    "next_dup": [
+      "self"
+    ],
+    "next_nodup": [
+      "self"
+    ],
+    "set_key": [
+      "self",
+      "key"
+    ],
+    "set_key_dup": [
+      "self",
+      "key",
+      "value"
+    ],
+    "get": [
+      "self",
+      "key",
+      "default"
+    ],
+    "getmulti": [
+      "self",
+      "keys",
+      "dupdata",
+      "dupfixed_bytes",
+      "keyfixed",
+      "values"
+    ],
+    "set_range": [
+      "self",
+      "key"
+    ],
+    "set_range_dup": [
+      "self",
+      "key",
+      "value"
+    ],
+    "delete": [
+      "self",
+      "dupdata"
+    ],
+    "count": [
+      "self"
+    ],
+    "put": [
+      "self",
+      "key",
+      "value",
+      "dupdata",
+      "overwrite",
+      "append"
+    ],
+    "putmulti": [
+      "self",
+      "items",
+      "dupdata",
+      "overwrite",
+      "append"
+    ],
+    "replace": [
+      "self",
+      "key",
+      "value"
+    ],
+    "pop": [
+      "self",
+      "key"
+    ],
+    "_iter_from": [
+      "self",
+      "k",
+      "reverse"
+    ]
+  },
+  "_translate_invalid": [
+    "cls"
+  ],
+  "wrap": [
+    "env",
+    "executor"
+  ],
+  "_AsyncContextWrapper": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "coro"
+    ],
+    "__await__": [
+      "self"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ]
+  },
+  "_sync_method": [
+    "sync"
+  ],
+  "_async_method": [
+    "sync"
+  ],
+  "_async_method_locked": [
+    "sync"
+  ],
+  "_collect_locked": [
+    "sync"
+  ],
+  "AsyncEnvironment": {
+    "__slots__": [],
+    "_WRAPS": [],
+    "__init__": [
+      "self",
+      "env",
+      "executor"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self"
+    ],
+    "begin": [
+      "self"
+    ],
+    "path": [],
+    "lib_version": [],
+    "max_key_size": [],
+    "max_readers": [],
+    "flags": [],
+    "stat": [],
+    "info": [],
+    "close": [],
+    "copy": [],
+    "copyfd": [],
+    "sync": [],
+    "readers": [],
+    "reader_check": [],
+    "set_mapsize": [],
+    "open_db": [],
+    "dbs": [],
+    "__getattr__": [
+      "self",
+      "name"
+    ]
+  },
+  "AsyncTransaction": {
+    "__slots__": [],
+    "_WRAPS": [],
+    "__init__": [
+      "self",
+      "txn",
+      "executor",
+      "owns_executor"
+    ],
+    "_shutdown_executor": [
+      "self"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self",
+      "exc_type",
+      "_exc_val",
+      "_exc_tb"
+    ],
+    "cursor": [
+      "self"
+    ],
+    "id": [],
+    "stat": [],
+    "drop": [],
+    "get": [],
+    "put": [],
+    "replace": [],
+    "pop": [],
+    "delete": [],
+    "commit": [
+      "self"
+    ],
+    "abort": [
+      "self"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ]
+  },
+  "AsyncCursor": {
+    "__slots__": [],
+    "_WRAPS": [],
+    "__init__": [
+      "self",
+      "cursor",
+      "executor",
+      "lock"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self"
+    ],
+    "key": [],
+    "value": [],
+    "item": [],
+    "close": [],
+    "first": [],
+    "first_dup": [],
+    "last": [],
+    "last_dup": [],
+    "prev": [],
+    "prev_dup": [],
+    "prev_nodup": [],
+    "next": [],
+    "next_dup": [],
+    "next_nodup": [],
+    "set_key": [],
+    "set_key_dup": [],
+    "set_range": [],
+    "set_range_dup": [],
+    "delete": [],
+    "count": [],
+    "put": [],
+    "putmulti": [],
+    "replace": [],
+    "pop": [],
+    "get": [],
+    "getmulti": [],
+    "iternext": [],
+    "iternext_dup": [],
+    "iternext_nodup": [],
+    "iterprev": [],
+    "iterprev_dup": [],
+    "iterprev_nodup": [],
+    "__getattr__": [
+      "self",
+      "name"
+    ]
+  },
+  "_file_key": [
+    "path"
+  ],
+  "env_keys": [
+    "path",
+    "subdir"
+  ],
+  "VerifyError": {},
+  "MDB_MAGIC": [],
+  "NUM_METAS": [],
+  "CURSOR_STACK": [],
+  "SIZEOF_MDB_DB": [],
+  "P_INVALID": [],
+  "P_BRANCH": [],
+  "P_LEAF": [],
+  "P_OVERFLOW": [],
+  "P_META": [],
+  "P_DIRTY_09": [],
+  "P_LEAF2": [],
+  "P_SUBP": [],
+  "_TYPE_MASK": [],
+  "F_BIGDATA": [],
+  "F_SUBDATA": [],
+  "F_DUPDATA": [],
+  "MDB_REVERSEKEY": [],
+  "MDB_DUPSORT": [],
+  "MDB_INTEGERKEY": [],
+  "MDB_DUPFIXED": [],
+  "MDB_INTEGERDUP": [],
+  "MDB_REVERSEDUP": [],
+  "MDB_VALID": [],
+  "PERSISTENT_FLAGS": [],
+  "DUPSORT_ONLY_FLAGS": [],
+  "_ENGINES": [],
+  "_ORDER": [],
+  "_E": [],
+  "_U16": [],
+  "_U32": [],
+  "_U64": [],
+  "_even": [
+    "n"
+  ],
+  "_cmp_lexical": [
+    "a",
+    "b"
+  ],
+  "_cmp_reverse": [
+    "a",
+    "b"
+  ],
+  "_cmp_int": [
+    "a",
+    "b"
+  ],
+  "_key_cmp": [
+    "flags"
+  ],
+  "_data_cmp": [
+    "flags"
+  ],
+  "_bad_db_flags": [
+    "flags"
+  ],
+  "_Db": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "buf",
+      "off"
+    ]
+  },
+  "_Meta": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "buf",
+      "base",
+      "hdrsz"
+    ]
+  },
+  "_SubTree": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "name",
+      "db",
+      "key_cmp",
+      "dup_cmp"
+    ]
+  },
+  "_Verifier": {
+    "MAX_ERRORS": [],
+    "__init__": [
+      "self",
+      "f",
+      "filesize"
+    ],
+    "err": [
+      "self",
+      "msg"
+    ],
+    "full": [
+      "self"
+    ],
+    "_read_at": [
+      "self",
+      "off",
+      "n"
+    ],
+    "read_page": [
+      "self",
+      "pgno"
+    ],
+    "read_extent": [
+      "self",
+      "pgno",
+      "npages"
+    ],
+    "detect_engine": [
+      "self"
+    ],
+    "_read_meta": [
+      "self",
+      "pgno",
+      "psize"
+    ],
+    "load_metas": [
+      "self"
+    ],
+    "_mark_live": [
+      "self",
+      "pgno",
+      "what"
+    ],
+    "_pg_pgno": [
+      "self",
+      "buf",
+      "base"
+    ],
+    "_pg_flags": [
+      "self",
+      "buf",
+      "base"
+    ],
+    "_pg_lower": [
+      "self",
+      "buf",
+      "base"
+    ],
+    "_pg_upper": [
+      "self",
+      "buf",
+      "base"
+    ],
+    "_pg_pad": [
+      "self",
+      "buf",
+      "base"
+    ],
+    "_pg_pages": [
+      "self",
+      "buf",
+      "base"
+    ],
+    "_pg_txnid": [
+      "self",
+      "buf",
+      "base"
+    ],
+    "_numkeys": [
+      "self",
+      "lower"
+    ],
+    "_node_off": [
+      "self",
+      "buf",
+      "base",
+      "i"
+    ],
+    "_check_btree_bounds": [
+      "self",
+      "buf",
+      "base",
+      "span",
+      "where"
+    ],
+    "verify": [
+      "self"
+    ],
+    "_verify_tree": [
+      "self",
+      "name",
+      "db",
+      "key_cmp",
+      "dup_cmp",
+      "is_free"
+    ],
+    "_check_counts": [
+      "self",
+      "name",
+      "db",
+      "ctx"
+    ],
+    "_walk_page": [
+      "self",
+      "ctx",
+      "pgno",
+      "depth"
+    ],
+    "_flags_at_rest_ok": [
+      "self",
+      "flags"
+    ],
+    "_check_not_dirty": [
+      "self",
+      "name",
+      "pgno",
+      "buf",
+      "flags"
+    ],
+    "_walk_branch": [
+      "self",
+      "ctx",
+      "pgno",
+      "buf",
+      "depth"
+    ],
+    "_walk_leaf": [
+      "self",
+      "ctx",
+      "pgno",
+      "buf"
+    ],
+    "_leaf_value": [
+      "self",
+      "ctx",
+      "pgno",
+      "i",
+      "buf",
+      "o",
+      "nflags",
+      "ksize",
+      "dsize",
+      "key"
+    ],
+    "_bigdata": [
+      "self",
+      "ctx",
+      "pgno",
+      "i",
+      "buf",
+      "doff",
+      "dsize",
+      "want_bytes"
+    ],
+    "_walk_subpage": [
+      "self",
+      "ctx",
+      "pgno",
+      "i",
+      "buf",
+      "doff",
+      "dsize"
+    ],
+    "_walk_leaf2": [
+      "self",
+      "ctx",
+      "pgno",
+      "buf"
+    ],
+    "_validate_named_subdb": [
+      "self",
+      "name",
+      "pgno",
+      "i",
+      "subdb"
+    ],
+    "_validate_dup_subdb": [
+      "self",
+      "name",
+      "pgno",
+      "i",
+      "subdb"
+    ],
+    "_free_record": [
+      "self",
+      "pgno",
+      "i",
+      "key",
+      "data"
+    ],
+    "_decode_idl": [
+      "self",
+      "txnid",
+      "data"
+    ],
+    "_check_cover": [
+      "self"
+    ]
+  },
+  "_printable": [
+    "key"
+  ],
+  "resolve_data_path": [
+    "path",
+    "subdir"
+  ],
+  "verify": [
+    "path",
+    "subdir"
+  ],
+  "CONFIG": [],
+  "BUF_SIZE": [],
+  "DB": [],
+  "ENCODING": [],
+  "_to_bytes": [
+    "s"
+  ],
+  "isprint": [
+    "c"
+  ],
+  "xxd": [
+    "s"
+  ],
+  "make_parser": [],
+  "die": [
+    "fmt"
+  ],
+  "dump_cursor_to_fp": [
+    "cursor",
+    "fp"
+  ],
+  "db_map_from_args": [
+    "args"
+  ],
+  "cmd_copy": [
+    "opts",
+    "args"
+  ],
+  "cmd_copyfd": [
+    "opts",
+    "args"
+  ],
+  "all_dbs_map": [],
+  "cmd_dump": [
+    "opts",
+    "args"
+  ],
+  "restore_cursor_from_fp": [
+    "txn",
+    "fp",
+    "db"
+  ],
+  "cmd_drop": [
+    "opts",
+    "args"
+  ],
+  "cmd_readers": [
+    "opts",
+    "args"
+  ],
+  "cmd_restore": [
+    "opts",
+    "args"
+  ],
+  "delta": [
+    "hst"
+  ],
+  "SYS_BLOCK": [],
+  "_find_diskstat": [
+    "path"
+  ],
+  "DiskStatter": {
+    "FIELDS": [],
+    "__init__": [
+      "self",
+      "path"
+    ],
+    "refresh": [
+      "self"
+    ]
+  },
+  "cmd_watch": [
+    "opts",
+    "args"
+  ],
+  "cmd_warm": [
+    "opts",
+    "args"
+  ],
+  "cmd_rewrite": [
+    "opts",
+    "args"
+  ],
+  "cmd_get": [
+    "opts",
+    "args"
+  ],
+  "cmd_edit": [
+    "opts",
+    "args"
+  ],
+  "cmd_shell": [
+    "opts",
+    "args"
+  ],
+  "cmd_stat": [
+    "opts",
+    "args"
+  ],
+  "cmd_verify": [
+    "opts",
+    "args"
+  ],
+  "_get_term_width": [
+    "default"
+  ],
+  "_on_sigwinch": [],
+  "main": [
+    "argv"
+  ],
+  "_reading_docs": [],
+  "__version__": []
+}

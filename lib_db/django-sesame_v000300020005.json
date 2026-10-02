@@ -1,0 +1,194 @@
+{
+  "logger": [],
+  "__all__": [],
+  "create_token": [
+    "user",
+    "scope"
+  ],
+  "parse_token": [
+    "token",
+    "get_user",
+    "scope",
+    "max_age"
+  ],
+  "AuthenticationMiddleware": {
+    "__init__": [
+      "self",
+      "get_response"
+    ],
+    "__call__": [
+      "self",
+      "request"
+    ],
+    "process_request": [
+      "self",
+      "request"
+    ],
+    "is_safari": [
+      "request"
+    ],
+    "get_redirect": [
+      "request"
+    ]
+  },
+  "get_token": [
+    "user",
+    "scope"
+  ],
+  "get_parameters": [
+    "user",
+    "scope"
+  ],
+  "get_query_string": [
+    "user",
+    "scope"
+  ],
+  "get_user": [
+    "request_or_sesame",
+    "scope",
+    "max_age"
+  ],
+  "TIMESTAMP_OFFSET": [],
+  "pack_timestamp": [],
+  "unpack_timestamp": [
+    "data"
+  ],
+  "HASH_SIZES": [],
+  "get_revocation_key": [
+    "user"
+  ],
+  "sign": [
+    "data",
+    "key",
+    "size"
+  ],
+  "token_re": [],
+  "detect_token": [
+    "token"
+  ],
+  "BasePacker": {
+    "pack_pk": [
+      "self",
+      "user_pk"
+    ],
+    "unpack_pk": [
+      "self",
+      "data"
+    ]
+  },
+  "StructPackerMeta": {
+    "__new__": [
+      "cls",
+      "name",
+      "bases",
+      "namespace"
+    ]
+  },
+  "StructPacker": {
+    "fmt": [],
+    "pack_pk": [
+      "cls",
+      "user_pk"
+    ],
+    "unpack_pk": [
+      "cls",
+      "data"
+    ]
+  },
+  "ShortPacker": {
+    "fmt": []
+  },
+  "UnsignedShortPacker": {
+    "fmt": []
+  },
+  "LongPacker": {
+    "fmt": []
+  },
+  "IntPacker": [],
+  "UnsignedLongPacker": {
+    "fmt": []
+  },
+  "UnsignedIntPacker": [],
+  "LongLongPacker": {
+    "fmt": []
+  },
+  "UnsignedLongLongPacker": {
+    "fmt": []
+  },
+  "UUIDPacker": {
+    "pack_pk": [
+      "user_pk"
+    ],
+    "unpack_pk": [
+      "data"
+    ]
+  },
+  "BytesPacker": {
+    "pack_pk": [
+      "user_pk"
+    ],
+    "unpack_pk": [
+      "data"
+    ]
+  },
+  "StrPacker": {
+    "pack_pk": [
+      "user_pk"
+    ],
+    "unpack_pk": [
+      "data"
+    ]
+  },
+  "PACKERS": [],
+  "get_packer": [],
+  "packer": [],
+  "get_signer": [],
+  "signer": [],
+  "unsign": [
+    "token"
+  ],
+  "get_token_re": [],
+  "SesameBackendMixin": {
+    "authenticate": [
+      "self",
+      "request",
+      "sesame",
+      "scope",
+      "max_age"
+    ]
+  },
+  "ModelBackend": {
+    "get_user": [
+      "self",
+      "user_id"
+    ]
+  },
+  "LoginView": {
+    "scope": [],
+    "max_age": [],
+    "next_page": [],
+    "get": [
+      "self",
+      "request"
+    ],
+    "login_failed": [
+      "self"
+    ],
+    "login_success": [
+      "self"
+    ]
+  },
+  "authenticate": [
+    "view",
+    "scope",
+    "max_age"
+  ],
+  "DEFAULTS": [],
+  "derive_key": [
+    "secret_key",
+    "key"
+  ],
+  "load": [],
+  "check": [],
+  "reload": []
+}
