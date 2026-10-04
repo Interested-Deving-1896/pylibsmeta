@@ -1,0 +1,1531 @@
+{
+  "logger": [],
+  "SHUTDOWN_RECV": [],
+  "SHUTDOWN_SEND": [],
+  "SHUTDOWN_BOTH": [],
+  "_lib": [],
+  "_raise": [
+    "ret",
+    "what"
+  ],
+  "EBPFDivert": {
+    "__init__": [
+      "self",
+      "filter",
+      "layer",
+      "priority",
+      "flags"
+    ],
+    "register": [],
+    "is_registered": [],
+    "unregister": [],
+    "check_filter": [
+      "filter",
+      "layer"
+    ],
+    "_open_impl": [
+      "self"
+    ],
+    "_close_impl": [
+      "self"
+    ],
+    "shutdown": [
+      "self",
+      "how"
+    ],
+    "_require_handle": [
+      "self"
+    ],
+    "_buffer": [
+      "self",
+      "bufsize"
+    ],
+    "_recv_impl": [
+      "self",
+      "bufsize",
+      "timeout"
+    ],
+    "_recv_batch_impl": [
+      "self",
+      "count",
+      "bufsize",
+      "timeout"
+    ],
+    "_on_readable": [
+      "self"
+    ],
+    "_remove_reader": [
+      "self"
+    ],
+    "_wait_readable": [
+      "self",
+      "timeout"
+    ],
+    "_recv_async_impl": [
+      "self",
+      "bufsize",
+      "timeout"
+    ],
+    "_recv_batch_async_impl": [
+      "self",
+      "count",
+      "bufsize",
+      "timeout"
+    ],
+    "_send_impl": [
+      "self",
+      "packet",
+      "recalculate_checksum"
+    ],
+    "_send_batch_impl": [
+      "self",
+      "packets",
+      "recalculate_checksum"
+    ],
+    "_send_async_impl": [
+      "self",
+      "packet",
+      "recalculate_checksum"
+    ],
+    "_send_batch_async_impl": [
+      "self",
+      "packets",
+      "recalculate_checksum"
+    ],
+    "get_param": [
+      "self",
+      "name"
+    ],
+    "set_param": [
+      "self",
+      "name",
+      "value"
+    ],
+    "_stats_impl": [
+      "self"
+    ]
+  },
+  "WinDivert": {
+    "__init__": [
+      "self",
+      "filter",
+      "layer",
+      "priority",
+      "flags"
+    ],
+    "register": [],
+    "is_registered": [],
+    "unregister": [],
+    "check_filter": [
+      "filter",
+      "layer"
+    ],
+    "_open_impl": [
+      "self"
+    ],
+    "_close_impl": [
+      "self"
+    ],
+    "_recv_impl": [
+      "self",
+      "bufsize",
+      "timeout"
+    ],
+    "_recv_batch_impl": [
+      "self",
+      "count",
+      "bufsize",
+      "timeout"
+    ],
+    "_recv_async_impl": [
+      "self",
+      "bufsize",
+      "timeout"
+    ],
+    "_recv_batch_async_impl": [
+      "self",
+      "count",
+      "bufsize",
+      "timeout"
+    ],
+    "_parse_packet": [
+      "packet",
+      "recv_len",
+      "address"
+    ],
+    "_stats_impl": [
+      "self"
+    ],
+    "_send_impl": [
+      "self",
+      "packet",
+      "recalculate_checksum"
+    ],
+    "_send_async_impl": [
+      "self",
+      "packet",
+      "recalculate_checksum"
+    ],
+    "recv_ex": [
+      "self",
+      "bufsize",
+      "flags",
+      "overlapped"
+    ],
+    "send_ex": [
+      "self",
+      "packet",
+      "flags",
+      "overlapped"
+    ],
+    "get_param": [
+      "self",
+      "name"
+    ],
+    "set_param": [
+      "self",
+      "name",
+      "value"
+    ],
+    "_send_batch_impl": [
+      "self",
+      "packets",
+      "recalculate_checksum"
+    ],
+    "_send_batch_async_impl": [
+      "self",
+      "packets",
+      "recalculate_checksum"
+    ]
+  },
+  "LOOP_PREVENTION_MARK": [],
+  "DEFAULT_PACKET_BUFFER_SIZE": [],
+  "Layer": {
+    "NETWORK": [],
+    "NETWORK_FORWARD": [],
+    "FLOW": [],
+    "SOCKET": [],
+    "REFLECT": []
+  },
+  "Flag": {
+    "DEFAULT": [],
+    "SNIFF": [],
+    "DROP": [],
+    "RECV_ONLY": [],
+    "SEND_ONLY": [],
+    "NO_INSTALL": [],
+    "FRAGMENTS": []
+  },
+  "RecvFlag": {
+    "DEFAULT": [],
+    "NO_BLOCK": []
+  },
+  "Param": {
+    "QUEUE_LEN": [],
+    "QUEUE_TIME": [],
+    "QUEUE_SIZE": []
+  },
+  "Direction": {
+    "OUTBOUND": [],
+    "INBOUND": []
+  },
+  "CalcChecksumsOption": {
+    "NO_IP_CHECKSUM": [],
+    "NO_ICMP_CHECKSUM": [],
+    "NO_ICMPV6_CHECKSUM": [],
+    "NO_TCP_CHECKSUM": [],
+    "NO_UDP_CHECKSUM": [],
+    "NO_REPLACE": []
+  },
+  "Protocol": {
+    "HOPOPT": [],
+    "ICMP": [],
+    "TCP": [],
+    "UDP": [],
+    "ROUTING": [],
+    "FRAGMENT": [],
+    "AH": [],
+    "ICMPV6": [],
+    "NONE": [],
+    "DSTOPTS": []
+  },
+  "IPV6_EXT_HEADERS": [],
+  "Divert": {
+    "recv": [],
+    "recv_async": [],
+    "recv_batch": [],
+    "recv_batch_async": [],
+    "send": [],
+    "send_batch": [],
+    "send_async": [],
+    "send_batch_async": [],
+    "stats": [],
+    "filter": [],
+    "layer": [],
+    "priority": [],
+    "flags": [],
+    "open": [],
+    "close": [],
+    "__init__": [
+      "self",
+      "filter",
+      "layer",
+      "priority",
+      "flags"
+    ],
+    "_get_implementation_class": [],
+    "register": [],
+    "is_registered": [],
+    "unregister": [],
+    "check_filter": [
+      "filter",
+      "layer"
+    ],
+    "register_service": [
+      "cls"
+    ],
+    "_open_impl": [
+      "self"
+    ],
+    "_close_impl": [
+      "self"
+    ],
+    "_recv_impl": [
+      "self",
+      "bufsize",
+      "timeout"
+    ],
+    "_recv_batch_impl": [
+      "self",
+      "count",
+      "bufsize",
+      "timeout"
+    ],
+    "_recv_async_impl": [
+      "self",
+      "bufsize",
+      "timeout"
+    ],
+    "_recv_batch_async_impl": [
+      "self",
+      "count",
+      "bufsize",
+      "timeout"
+    ],
+    "_send_impl": [
+      "self",
+      "packet",
+      "recalculate_checksum"
+    ],
+    "_send_batch_impl": [
+      "self",
+      "packets",
+      "recalculate_checksum"
+    ],
+    "_send_async_impl": [
+      "self",
+      "packet",
+      "recalculate_checksum"
+    ],
+    "_send_batch_async_impl": [
+      "self",
+      "packets",
+      "recalculate_checksum"
+    ],
+    "_stats_impl": [
+      "self"
+    ],
+    "is_open": [
+      "self"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "__setattr__": [
+      "self",
+      "name",
+      "value"
+    ],
+    "__dir__": [
+      "self"
+    ]
+  },
+  "fromhex": [
+    "x"
+  ],
+  "flag_property": [
+    "name",
+    "offset",
+    "bit",
+    "docs"
+  ],
+  "raw_property": [
+    "fmt",
+    "offset",
+    "docs"
+  ],
+  "internet_checksum": [
+    "data"
+  ],
+  "SC_MANAGER_CONNECT": [],
+  "SERVICE_QUERY_STATUS": [],
+  "SERVICE_STOP": [],
+  "SERVICE_CONTROL_STOP": [],
+  "SERVICE_STATUS": {
+    "_fields_": []
+  },
+  "_get_advapi32": [],
+  "is_registered": [
+    "service_name"
+  ],
+  "stop_service": [
+    "service_name"
+  ],
+  "__author__": [],
+  "__version__": [],
+  "__all__": [],
+  "FilterString": {
+    "__call__": [
+      "self"
+    ]
+  },
+  "T": [],
+  "BaseDivert": {
+    "__init__": [
+      "self",
+      "filter",
+      "layer",
+      "priority",
+      "flags"
+    ],
+    "register": [],
+    "is_registered": [],
+    "unregister": [],
+    "check_filter": [
+      "filter",
+      "layer"
+    ],
+    "filter": [
+      "self",
+      "value"
+    ],
+    "layer": [
+      "self",
+      "value"
+    ],
+    "priority": [
+      "self",
+      "value"
+    ],
+    "flags": [
+      "self",
+      "value"
+    ],
+    "is_open": [
+      "self"
+    ],
+    "open": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "__del__": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "recv": [
+      "self",
+      "bufsize",
+      "timeout"
+    ],
+    "recv_batch": [
+      "self",
+      "count",
+      "bufsize",
+      "timeout"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__anext__": [
+      "self"
+    ],
+    "recv_async": [
+      "self",
+      "bufsize",
+      "timeout"
+    ],
+    "recv_batch_async": [
+      "self",
+      "count",
+      "bufsize",
+      "timeout"
+    ],
+    "stats": [
+      "self"
+    ],
+    "send": [
+      "self",
+      "packet",
+      "recalculate_checksum"
+    ],
+    "send_batch": [
+      "self",
+      "packets",
+      "recalculate_checksum"
+    ],
+    "send_async": [
+      "self",
+      "packet",
+      "recalculate_checksum"
+    ],
+    "send_batch_async": [
+      "self",
+      "packets",
+      "recalculate_checksum"
+    ],
+    "_open_impl": [
+      "self"
+    ],
+    "_close_impl": [
+      "self"
+    ],
+    "_recv_impl": [
+      "self",
+      "bufsize",
+      "timeout"
+    ],
+    "_recv_batch_impl": [
+      "self",
+      "count",
+      "bufsize",
+      "timeout"
+    ],
+    "_recv_async_impl": [
+      "self",
+      "bufsize",
+      "timeout"
+    ],
+    "_recv_batch_async_impl": [
+      "self",
+      "count",
+      "bufsize",
+      "timeout"
+    ],
+    "_send_impl": [
+      "self",
+      "packet",
+      "recalculate_checksum"
+    ],
+    "_send_batch_impl": [
+      "self",
+      "packets",
+      "recalculate_checksum"
+    ],
+    "_send_async_impl": [
+      "self",
+      "packet",
+      "recalculate_checksum"
+    ],
+    "_send_batch_async_impl": [
+      "self",
+      "packets",
+      "recalculate_checksum"
+    ],
+    "_stats_impl": [
+      "self"
+    ]
+  },
+  "Overlapped": {
+    "_fields_": []
+  },
+  "WinDivertAddress": {
+    "_anonymous_": [],
+    "_fields_": []
+  },
+  "ERROR_IO_PENDING": [],
+  "INFINITE": [],
+  "raise_on_error": [
+    "f"
+  ],
+  "DLL_PATH": [],
+  "WINDIVERT_FUNCTIONS": [],
+  "_init": [],
+  "_mkprox": [
+    "funcname"
+  ],
+  "__getattr__": [
+    "name"
+  ],
+  "STAT_NAMES": [],
+  "OpenOpts": {
+    "_fields_": []
+  },
+  "_FUNCTIONS": [],
+  "_candidates": [],
+  "_load": [],
+  "libebpfdivert": [],
+  "strerror": [
+    "err"
+  ],
+  "_forget_fake_handles": [
+    "monkeypatch"
+  ],
+  "test_util_fromhex": [],
+  "test_util_flag_property": [],
+  "test_util_raw_property": [],
+  "test_util_internet_checksum": [],
+  "MockDivert": {
+    "_open_impl": [
+      "self"
+    ],
+    "_close_impl": [
+      "self"
+    ],
+    "_recv_impl": [
+      "self",
+      "bufsize",
+      "timeout"
+    ],
+    "_recv_batch_impl": [
+      "self",
+      "count",
+      "bufsize",
+      "timeout"
+    ],
+    "_recv_async_impl": [
+      "self",
+      "bufsize",
+      "timeout"
+    ],
+    "_recv_batch_async_impl": [
+      "self",
+      "count",
+      "bufsize",
+      "timeout"
+    ],
+    "_send_impl": [
+      "self",
+      "packet",
+      "recalculate_checksum"
+    ],
+    "_send_batch_impl": [
+      "self",
+      "packets",
+      "recalculate_checksum"
+    ],
+    "_send_async_impl": [
+      "self",
+      "packet",
+      "recalculate_checksum"
+    ],
+    "_send_batch_async_impl": [
+      "self",
+      "packets",
+      "recalculate_checksum"
+    ],
+    "_stats_impl": [
+      "self"
+    ],
+    "register": [],
+    "is_registered": [],
+    "unregister": [],
+    "check_filter": [
+      "filter",
+      "layer"
+    ]
+  },
+  "test_base_divert_properties": [],
+  "test_base_divert_open_close": [],
+  "test_base_divert_non_str_filter": [],
+  "test_base_divert_closed_inside_context": [],
+  "test_base_divert_del_closes_leaked_handle": [],
+  "test_base_divert_async_context": [],
+  "test_base_divert_recv_errors": [],
+  "test_base_divert_recv_async_errors": [],
+  "test_base_divert_send_errors": [],
+  "test_base_divert_send_async_errors": [],
+  "test_base_divert_stats": [],
+  "test_base_divert_repr": [],
+  "test_base_divert_iter": [],
+  "test_base_divert_aiter": [],
+  "test_service_no_advapi": [],
+  "test_service_scm_fail": [],
+  "test_service_open_fail": [],
+  "test_service_control_fail": [],
+  "test_windivert_not_nt": [],
+  "test_windivert_unregister_sc_fallback": [],
+  "test_windivert_check_filter": [],
+  "test_ip_header_properties": [],
+  "test_ipv6_extension_headers": [],
+  "test_windivert_overlapped_timeout": [],
+  "test_windivert_overlapped_success": [],
+  "test_packet_no_ip": [],
+  "test_packet_truncated_ipv4": [],
+  "test_packet_truncated_ipv6": [],
+  "test_packet_truncated_tcp": [],
+  "test_packet_none_headers": [],
+  "test_packet_property_setters": [],
+  "test_windivert_check_filter_error": [],
+  "test_windivert_ex_methods": [],
+  "test_ipv6_header_properties": [],
+  "test_packet_additional_properties": [],
+  "test_packet_repr_unknown_proto": [],
+  "test_packet_icmp_none": [],
+  "test_base_divert_error_messages": [],
+  "test_ipv4_full_properties": [],
+  "test_ipv6_full_properties": [],
+  "test_tcp_full_properties": [],
+  "test_udp_full_properties": [],
+  "test_icmp_full_properties": [],
+  "test_packet_all_properties_hit": [],
+  "test_windivert_params": [],
+  "test_packet_shortcuts_hit": [],
+  "test_windivert_recv_async_mock": [],
+  "test_divert_facade_hit": [],
+  "test_windivert_batch_logic": [],
+  "test_windivert_batch_async_logic": [],
+  "test_packet_is_loopback_setter": [],
+  "test_windivert_send_async_impl": [],
+  "test_windivert_send_async_impl_error": [],
+  "test_windivert_close_errors": [],
+  "test_packet_address_props_more": [],
+  "test_windivert_register": [],
+  "test_windivert_is_registered": [],
+  "test_packet_with_wd_addr": [],
+  "test_packet_recalculate_checksums_no_headers": [],
+  "test_async_context_manager": [],
+  "test_recv_async_real": [],
+  "test_send_async_real": [],
+  "test_async_iterator": [],
+  "test_recv_batch_async": [],
+  "test_recv_async_cancellation": [],
+  "pytest_runtest_setup": [
+    "item"
+  ],
+  "pytest_runtest_teardown": [
+    "item",
+    "nextitem"
+  ],
+  "p": [
+    "raw"
+  ],
+  "ipv4_hdr": [],
+  "ipv6_hdr": [],
+  "st_ipv4": [],
+  "st_ipv6": [],
+  "st_port": [],
+  "st_payload": [],
+  "create_base_ipv4_tcp": [],
+  "test_fuzz": [
+    "raw"
+  ],
+  "test_ipv6_tcp": [],
+  "test_zerocopy_modification": [],
+  "test_payload_modification_different_length": [],
+  "test_checksum_recalculation": [],
+  "test_ipv4_fields": [],
+  "test_ipv4_fragmentation_flags": [],
+  "test_tcp_fields": [],
+  "test_metadata": [],
+  "test_ipv4_hypo": [
+    "src",
+    "dst"
+  ],
+  "test_header_raw_modification": [],
+  "test_packet_builder_ipv4_tcp": [],
+  "test_packet_builder_ipv6_udp": [],
+  "test_packet_raw_setter_accepts_any_buffer": [],
+  "test_packet_interface": [],
+  "test_packet_event_layer_address": [
+    "layer"
+  ],
+  "test_packet_setters_without_headers": [],
+  "test_packet_native_helpers_errors": [],
+  "test_open": [],
+  "test_is_registered_direct": [],
+  "test_check_filter": [],
+  "test_check_filter_invalid": [],
+  "test_windivert_unregister_fallback_mock": [],
+  "test_params_mock": [],
+  "test_divert_fluent_filter_mock": [],
+  "test_divert_fluent_filter_criteria": [
+    "criteria",
+    "expected"
+  ],
+  "test_closed_handle_errors": [],
+  "test_util_checksums": [],
+  "test_tcp_properties_all": [],
+  "test_batch_operations": [],
+  "test_divert_stats": [],
+  "test_invalid_filter_error": [],
+  "test_double_open_error": [],
+  "test_service_registration": [],
+  "test_packet_all_properties_exhaustive": [],
+  "test_windivert_open_failure_mock": [],
+  "test_windivert_params_all": [],
+  "test_dll_proxies": [],
+  "test_send_ex_basic": [],
+  "test_windivert_helpers_all": [],
+  "test_unregister_sc_failure_mock": [],
+  "test_base_divert_sync_async_mix": [],
+  "UDP_PACKET": [],
+  "_deref": [
+    "ref"
+  ],
+  "FakeLib": {
+    "__init__": [
+      "self"
+    ],
+    "ebpfdivert_open": [
+      "self",
+      "filt",
+      "layer",
+      "prio",
+      "flags",
+      "opts"
+    ],
+    "ebpfdivert_close": [
+      "self",
+      "h"
+    ],
+    "ebpfdivert_get_event_fd": [
+      "self",
+      "h"
+    ],
+    "ebpfdivert_shutdown": [
+      "self",
+      "h",
+      "how"
+    ],
+    "ebpfdivert_unregister": [
+      "self"
+    ],
+    "push": [
+      "self",
+      "data"
+    ],
+    "ebpfdivert_recv": [
+      "self",
+      "h",
+      "buf",
+      "buflen",
+      "recv_len",
+      "addr",
+      "timeout_ms"
+    ],
+    "ebpfdivert_send": [
+      "self",
+      "h",
+      "buf",
+      "length",
+      "send_len",
+      "addr"
+    ],
+    "ebpfdivert_helper_calc_checksums": [
+      "self",
+      "buf",
+      "length",
+      "addr",
+      "flags"
+    ],
+    "ebpfdivert_get_param": [
+      "self",
+      "h",
+      "param",
+      "value"
+    ],
+    "ebpfdivert_set_param": [
+      "self",
+      "h",
+      "param",
+      "value"
+    ],
+    "ebpfdivert_get_handle_stats": [
+      "self",
+      "h",
+      "values",
+      "n"
+    ],
+    "ebpfdivert_helper_compile_filter": [
+      "self",
+      "filt",
+      "layer",
+      "msg",
+      "pos"
+    ],
+    "ebpfdivert_strerror": [
+      "self",
+      "err"
+    ]
+  },
+  "lib": [],
+  "test_open_marshalling": [
+    "lib"
+  ],
+  "test_open_errors": [
+    "lib"
+  ],
+  "test_missing_library": [],
+  "test_check_filter_and_unregister": [
+    "lib"
+  ],
+  "test_recv_builds_packet": [
+    "lib"
+  ],
+  "test_recv_errors": [
+    "lib"
+  ],
+  "test_recv_batch": [
+    "lib"
+  ],
+  "test_send_round_trip_keeps_address": [
+    "lib"
+  ],
+  "test_params_stats_shutdown": [
+    "lib"
+  ],
+  "async_only_posix": [],
+  "test_recv_async_waits_for_event_fd": [
+    "lib"
+  ],
+  "test_recv_async_close_wakes_waiter": [
+    "lib"
+  ],
+  "test_send_async": [
+    "lib"
+  ],
+  "test_native_errors": [
+    "lib"
+  ],
+  "test_send_batch_counts_only_sent_packets": [
+    "lib"
+  ],
+  "test_batch_stops_at_count_and_close_is_idempotent": [
+    "lib"
+  ],
+  "test_recv_async_impl_send_only": [
+    "lib"
+  ],
+  "test_wait_readable_keeps_reader_for_other_waiters": [
+    "lib"
+  ],
+  "test_library_loader": [
+    "monkeypatch"
+  ],
+  "test_use_case_monitor": [],
+  "test_use_case_load_balancer": [],
+  "test_use_case_privacy_guard": [],
+  "test_use_case_injector": [],
+  "echo_server": [],
+  "test_drop_tcp": [
+    "echo_server"
+  ],
+  "test_modify_port": [
+    "echo_server"
+  ],
+  "test_ebpf_interception_linux": [],
+  "test_flags_behavior": [],
+  "test_tcp_port_matches_both_directions": [],
+  "test_inexact_filter_and_matches": [],
+  "test_params_and_stats_linux": [],
+  "EVENT_FLAGS": [],
+  "_recv_within": [
+    "w",
+    "timeout"
+  ],
+  "test_socket_layer_connect_event": [],
+  "test_socket_layer_blocks_connect": [],
+  "test_flow_layer": [],
+  "test_reflect_layer": [],
+  "test_event_layer_flags_validated": [],
+  "windivert_handle": [],
+  "scenario": [
+    "request"
+  ],
+  "TCPStruct": {
+    "_fields_": []
+  },
+  "TCPHeader": {
+    "__slots__": [],
+    "__match_args__": [],
+    "__repr_fields__": [],
+    "__init__": [
+      "self",
+      "packet",
+      "start"
+    ],
+    "src_port": [
+      "self",
+      "val"
+    ],
+    "dst_port": [
+      "self",
+      "val"
+    ],
+    "seq_num": [
+      "self",
+      "val"
+    ],
+    "ack_num": [
+      "self",
+      "val"
+    ],
+    "data_offset": [
+      "self",
+      "val"
+    ],
+    "reserved": [
+      "self",
+      "val"
+    ],
+    "control_bits": [
+      "self",
+      "val"
+    ],
+    "ns": [
+      "self",
+      "val"
+    ],
+    "cwr": [
+      "self",
+      "val"
+    ],
+    "ece": [
+      "self",
+      "val"
+    ],
+    "urg": [
+      "self",
+      "val"
+    ],
+    "ack": [
+      "self",
+      "val"
+    ],
+    "psh": [
+      "self",
+      "val"
+    ],
+    "rst": [
+      "self",
+      "val"
+    ],
+    "syn": [
+      "self",
+      "val"
+    ],
+    "fin": [
+      "self",
+      "val"
+    ],
+    "window": [
+      "self",
+      "val"
+    ],
+    "cksum": [
+      "self",
+      "val"
+    ],
+    "urg_ptr": [
+      "self",
+      "val"
+    ],
+    "header_len": [
+      "self"
+    ],
+    "payload_len": [
+      "self",
+      "val"
+    ]
+  },
+  "Header": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "packet",
+      "start"
+    ],
+    "raw": [
+      "self",
+      "val"
+    ]
+  },
+  "RawProtocol": {
+    "raw": [
+      "self",
+      "val"
+    ]
+  },
+  "PayloadMixin": {
+    "header_len": [
+      "self"
+    ],
+    "payload": [
+      "self",
+      "val"
+    ]
+  },
+  "PortMixin": {
+    "src_port": [
+      "self",
+      "val"
+    ],
+    "dst_port": [
+      "self",
+      "val"
+    ]
+  },
+  "UDPStruct": {
+    "_fields_": []
+  },
+  "UDPHeader": {
+    "__slots__": [],
+    "__match_args__": [],
+    "__repr_fields__": [],
+    "__init__": [
+      "self",
+      "packet",
+      "start"
+    ],
+    "src_port": [
+      "self",
+      "val"
+    ],
+    "dst_port": [
+      "self",
+      "val"
+    ],
+    "payload_len": [
+      "self",
+      "val"
+    ],
+    "cksum": [
+      "self",
+      "val"
+    ],
+    "payload": [
+      "self",
+      "val"
+    ]
+  },
+  "PacketBuilder": {
+    "__init__": [
+      "self"
+    ],
+    "ipv4": [
+      "self",
+      "src",
+      "dst",
+      "ttl"
+    ],
+    "ipv6": [
+      "self",
+      "src",
+      "dst",
+      "hop_limit"
+    ],
+    "tcp": [
+      "self",
+      "src_port",
+      "dst_port"
+    ],
+    "udp": [
+      "self",
+      "src_port",
+      "dst_port"
+    ],
+    "payload": [
+      "self",
+      "data"
+    ],
+    "build": [
+      "self"
+    ]
+  },
+  "IPv4Struct": {
+    "_fields_": []
+  },
+  "IPv6Struct": {
+    "_fields_": []
+  },
+  "IPHeader": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "packet",
+      "start"
+    ],
+    "packet_len": [
+      "self",
+      "val"
+    ],
+    "src_addr": [
+      "self",
+      "val"
+    ],
+    "dst_addr": [
+      "self",
+      "val"
+    ]
+  },
+  "IPv4Header": {
+    "_struct_type": [],
+    "_af": [],
+    "__slots__": [],
+    "__match_args__": [],
+    "__repr_fields__": [],
+    "hdr_len": [
+      "self",
+      "val"
+    ],
+    "header_len": [
+      "self"
+    ],
+    "tos": [
+      "self",
+      "val"
+    ],
+    "diff_serv": [
+      "self",
+      "val"
+    ],
+    "dscp": [
+      "self",
+      "val"
+    ],
+    "ecn": [
+      "self",
+      "val"
+    ],
+    "packet_len": [
+      "self",
+      "val"
+    ],
+    "ident": [
+      "self",
+      "val"
+    ],
+    "ttl": [
+      "self",
+      "val"
+    ],
+    "protocol": [
+      "self",
+      "val"
+    ],
+    "cksum": [
+      "self",
+      "val"
+    ],
+    "flags": [
+      "self",
+      "val"
+    ],
+    "frag_offset": [
+      "self",
+      "val"
+    ],
+    "rf": [
+      "self",
+      "val"
+    ],
+    "evil": [
+      "self",
+      "val"
+    ],
+    "reserved": [
+      "self",
+      "val"
+    ],
+    "df": [
+      "self",
+      "val"
+    ],
+    "mf": [
+      "self",
+      "val"
+    ]
+  },
+  "IPv6Header": {
+    "_struct_type": [],
+    "_af": [],
+    "__slots__": [],
+    "__repr_fields__": [],
+    "payload_len": [
+      "self",
+      "val"
+    ],
+    "packet_len": [
+      "self",
+      "val"
+    ],
+    "next_hdr": [
+      "self",
+      "val"
+    ],
+    "hop_limit": [
+      "self",
+      "val"
+    ],
+    "traffic_class": [
+      "self",
+      "val"
+    ],
+    "flow_label": [
+      "self",
+      "val"
+    ],
+    "ecn": [
+      "self",
+      "val"
+    ],
+    "diff_serv": [
+      "self",
+      "val"
+    ],
+    "dscp": [
+      "self",
+      "val"
+    ]
+  },
+  "ICMPStruct": {
+    "_fields_": []
+  },
+  "ICMPHeader": {
+    "__slots__": [],
+    "__match_args__": [],
+    "__repr_fields__": [],
+    "__init__": [
+      "self",
+      "packet",
+      "start"
+    ],
+    "type": [
+      "self",
+      "val"
+    ],
+    "code": [
+      "self",
+      "val"
+    ],
+    "cksum": [
+      "self",
+      "val"
+    ]
+  },
+  "ICMPv4Header": {
+    "__slots__": []
+  },
+  "ICMPv6Header": {
+    "__slots__": []
+  },
+  "Packet": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "raw",
+      "interface",
+      "direction",
+      "timestamp",
+      "loopback",
+      "impostor",
+      "sniffed",
+      "ip_checksum",
+      "tcp_checksum",
+      "udp_checksum",
+      "layer",
+      "event",
+      "flow",
+      "socket",
+      "reflect",
+      "wd_addr"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "raw": [
+      "self",
+      "val"
+    ],
+    "address_family": [
+      "self"
+    ],
+    "ipv4": [
+      "self"
+    ],
+    "ipv6": [
+      "self"
+    ],
+    "ip": [
+      "self"
+    ],
+    "protocol": [
+      "self"
+    ],
+    "tcp": [
+      "self"
+    ],
+    "udp": [
+      "self"
+    ],
+    "icmpv4": [
+      "self"
+    ],
+    "icmpv6": [
+      "self"
+    ],
+    "icmp": [
+      "self"
+    ],
+    "interface": [
+      "self",
+      "val"
+    ],
+    "direction": [
+      "self",
+      "val"
+    ],
+    "timestamp": [
+      "self",
+      "val"
+    ],
+    "is_loopback": [
+      "self",
+      "val"
+    ],
+    "loopback": [
+      "self",
+      "val"
+    ],
+    "is_impostor": [
+      "self",
+      "val"
+    ],
+    "impostor": [
+      "self",
+      "val"
+    ],
+    "is_sniffed": [
+      "self",
+      "val"
+    ],
+    "sniffed": [
+      "self",
+      "val"
+    ],
+    "is_inbound": [
+      "self",
+      "val"
+    ],
+    "is_outbound": [
+      "self",
+      "val"
+    ],
+    "layer": [
+      "self",
+      "val"
+    ],
+    "event": [
+      "self",
+      "val"
+    ],
+    "flow": [
+      "self",
+      "val"
+    ],
+    "socket": [
+      "self",
+      "val"
+    ],
+    "reflect": [
+      "self",
+      "val"
+    ],
+    "src_addr": [
+      "self",
+      "val"
+    ],
+    "dst_addr": [
+      "self",
+      "val"
+    ],
+    "src_port": [
+      "self",
+      "val"
+    ],
+    "dst_port": [
+      "self",
+      "val"
+    ],
+    "payload": [
+      "self",
+      "val"
+    ],
+    "ip_checksum": [
+      "self",
+      "val"
+    ],
+    "tcp_checksum": [
+      "self",
+      "val"
+    ],
+    "udp_checksum": [
+      "self",
+      "val"
+    ],
+    "icmp_checksum": [
+      "self",
+      "val"
+    ],
+    "_invalidate_checksums": [
+      "self"
+    ],
+    "is_checksum_valid": [
+      "self"
+    ],
+    "matches": [
+      "self",
+      "filter_str"
+    ],
+    "_populate_wd_addr": [
+      "self"
+    ],
+    "wd_addr": [
+      "self"
+    ],
+    "_recalculate_checksums_native": [
+      "self",
+      "flags"
+    ],
+    "recalculate_checksums": [
+      "self",
+      "flags"
+    ]
+  }
+}
