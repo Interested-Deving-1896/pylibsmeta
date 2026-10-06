@@ -1,0 +1,1395 @@
+{
+  "DEFAULT_SCHEMA": [],
+  "DEFAULT_SQL_PATH": [],
+  "DEFAULT_FETCH_SIZE": [],
+  "logger": [],
+  "BaseESIdentifierPreparer": {
+    "__init__": [
+      "self"
+    ],
+    "_omit_dummy_schema": [
+      "obj"
+    ],
+    "_render_schema_translates": [
+      "self",
+      "statement",
+      "schema_translate_map"
+    ]
+  },
+  "BaseESCompiler": {
+    "visit_fromclause": [
+      "self",
+      "fromclause"
+    ],
+    "visit_label": [
+      "self"
+    ]
+  },
+  "BaseESTypeCompiler": {
+    "process": [
+      "self",
+      "type_"
+    ],
+    "_render_field_type": [
+      "self",
+      "type_"
+    ],
+    "visit_REAL": [
+      "self",
+      "type_"
+    ],
+    "visit_NUMERIC": [
+      "self",
+      "type_"
+    ],
+    "visit_DECIMAL": [],
+    "visit_INTEGER": [],
+    "visit_SMALLINT": [],
+    "visit_BIGINT": [],
+    "visit_BOOLEAN": [],
+    "visit_TIMESTAMP": [],
+    "visit_DATE": [],
+    "visit_CHAR": [
+      "self",
+      "type_"
+    ],
+    "visit_NCHAR": [],
+    "visit_VARCHAR": [],
+    "visit_NVARCHAR": [],
+    "visit_TEXT": [],
+    "visit_DATETIME": [
+      "self",
+      "type_"
+    ],
+    "visit_TIME": [
+      "self",
+      "type_"
+    ],
+    "visit_BINARY": [
+      "self",
+      "type_"
+    ],
+    "visit_VARBINARY": [
+      "self",
+      "type_"
+    ],
+    "visit_BLOB": [
+      "self",
+      "type_"
+    ],
+    "visit_CLOB": [
+      "self",
+      "type_"
+    ],
+    "visit_NCLOB": [
+      "self",
+      "type_"
+    ]
+  },
+  "BaseESDialect": {
+    "name": [],
+    "scheme": [],
+    "driver": [],
+    "preparer": [],
+    "supports_alter": [],
+    "supports_pk_autoincrement": [],
+    "supports_default_values": [],
+    "supports_empty_insert": [],
+    "supports_unicode_statements": [],
+    "supports_unicode_binds": [],
+    "returns_unicode_strings": [],
+    "description_encoding": [],
+    "supports_native_boolean": [],
+    "supports_simple_order_by_label": [],
+    "supports_statement_cache": [],
+    "_not_supported_column_types": [],
+    "_map_parse_connection_parameters": [],
+    "import_dbapi": [
+      "cls"
+    ],
+    "dbapi": [
+      "cls"
+    ],
+    "create_connect_args": [
+      "self",
+      "url"
+    ],
+    "_get_server_version_info": [
+      "self",
+      "connection"
+    ],
+    "get_schema_names": [
+      "self",
+      "connection"
+    ],
+    "has_table": [
+      "self",
+      "connection",
+      "table_name",
+      "schema"
+    ],
+    "get_table_names": [
+      "self",
+      "connection",
+      "schema"
+    ],
+    "get_columns": [
+      "self",
+      "connection",
+      "table_name",
+      "schema"
+    ],
+    "get_view_names": [
+      "self",
+      "connection",
+      "schema"
+    ],
+    "get_table_options": [
+      "self",
+      "connection",
+      "table_name",
+      "schema"
+    ],
+    "get_pk_constraint": [
+      "self",
+      "connection",
+      "table_name",
+      "schema"
+    ],
+    "get_foreign_keys": [
+      "self",
+      "connection",
+      "table_name",
+      "schema"
+    ],
+    "get_check_constraints": [
+      "self",
+      "connection",
+      "table_name",
+      "schema"
+    ],
+    "get_table_comment": [
+      "self",
+      "connection",
+      "table_name",
+      "schema"
+    ],
+    "get_indexes": [
+      "self",
+      "connection",
+      "table_name",
+      "schema"
+    ],
+    "get_unique_constraints": [
+      "self",
+      "connection",
+      "table_name",
+      "schema"
+    ],
+    "get_view_definition": [
+      "self",
+      "connection",
+      "view_name",
+      "schema"
+    ],
+    "do_rollback": [
+      "self",
+      "dbapi_connection"
+    ],
+    "_check_unicode_returns": [
+      "self",
+      "connection",
+      "additional_tests"
+    ],
+    "_check_unicode_description": [
+      "self",
+      "connection"
+    ]
+  },
+  "ESFieldType": {},
+  "DOUBLE": {
+    "field_type_name": []
+  },
+  "FLOAT": {
+    "field_type_name": []
+  },
+  "HALF_FLOAT": {
+    "field_type_name": []
+  },
+  "SCALED_FLOAT": {
+    "field_type_name": []
+  },
+  "BYTE": {
+    "field_type_name": [],
+    "cast_type_name": []
+  },
+  "SHORT": {
+    "field_type_name": [],
+    "cast_type_name": []
+  },
+  "INTEGER": {
+    "field_type_name": [],
+    "cast_type_name": []
+  },
+  "LONG": {
+    "field_type_name": []
+  },
+  "UNSIGNED_LONG": {
+    "field_type_name": []
+  },
+  "BOOLEAN": {
+    "field_type_name": [],
+    "cast_type_name": []
+  },
+  "get_type": [
+    "data_type"
+  ],
+  "Error": {},
+  "Warning": {},
+  "InterfaceError": {},
+  "DatabaseError": {},
+  "InternalError": {},
+  "OperationalError": {},
+  "ProgrammingError": {},
+  "IntegrityError": {},
+  "DataError": {},
+  "NotSupportedError": {},
+  "UnexpectedESInitError": {},
+  "UnexpectedRequestResponse": {},
+  "__all__": [],
+  "apilevel": [],
+  "threadsafety": [],
+  "paramstyle": [],
+  "CursorDescriptionRow": [],
+  "CursorDescriptionType": [],
+  "Type": {
+    "STRING": [],
+    "NUMBER": [],
+    "BOOLEAN": [],
+    "DATETIME": []
+  },
+  "_AUTH_ERRORS": [],
+  "_QUERY_ERRORS": [],
+  "_TRUE_VALUES": [],
+  "_FALSE_VALUES": [],
+  "parse_bool_argument": [
+    "value"
+  ],
+  "_describe": [
+    "ex"
+  ],
+  "translate_transport_errors": [],
+  "check_closed": [
+    "f"
+  ],
+  "check_result": [
+    "f"
+  ],
+  "_FRACTION_RE": [],
+  "_UTC_SUFFIX_RE": [],
+  "_split_fraction": [
+    "value"
+  ],
+  "_parse_iso": [
+    "value"
+  ],
+  "parse_datetime": [
+    "value"
+  ],
+  "parse_date": [
+    "value"
+  ],
+  "parse_time": [
+    "value"
+  ],
+  "convert_rows": [
+    "columns",
+    "rows"
+  ],
+  "get_description_from_columns": [
+    "columns"
+  ],
+  "BaseConnection": {
+    "__init__": [
+      "self",
+      "host",
+      "port",
+      "path",
+      "scheme",
+      "user",
+      "password",
+      "context"
+    ],
+    "close": [
+      "self"
+    ],
+    "commit": [
+      "self"
+    ],
+    "cursor": [
+      "self"
+    ],
+    "execute": [
+      "self",
+      "operation",
+      "parameters"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self"
+    ]
+  },
+  "BaseCursor": {
+    "__init__": [
+      "self",
+      "url",
+      "es"
+    ],
+    "empty_index_names": [
+      "self"
+    ],
+    "custom_sql_to_method_dispatcher": [
+      "self",
+      "command"
+    ],
+    "rowcount": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "execute": [
+      "self",
+      "operation",
+      "parameters"
+    ],
+    "executemany": [
+      "self",
+      "operation",
+      "seq_of_parameters"
+    ],
+    "fetchone": [
+      "self"
+    ],
+    "fetchmany": [
+      "self",
+      "size"
+    ],
+    "fetchall": [
+      "self"
+    ],
+    "setinputsizes": [
+      "self",
+      "sizes"
+    ],
+    "setoutputsizes": [
+      "self",
+      "sizes"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__next__": [
+      "self"
+    ],
+    "next": [],
+    "sanitize_query": [
+      "self",
+      "query"
+    ],
+    "elastic_query": [
+      "self",
+      "query",
+      "paged"
+    ],
+    "elastic_cursor_query": [
+      "self",
+      "cursor"
+    ],
+    "close_elastic_cursor": [
+      "self",
+      "cursor"
+    ],
+    "fetch_remaining_pages": [
+      "self",
+      "response",
+      "rows_key"
+    ],
+    "_sql_request": [
+      "self",
+      "path",
+      "payload"
+    ]
+  },
+  "apply_parameters": [
+    "operation",
+    "parameters"
+  ],
+  "escape": [
+    "value"
+  ],
+  "ESCompiler": {},
+  "ESTypeCompiler": {},
+  "ESDialect": {
+    "name": [],
+    "scheme": [],
+    "driver": [],
+    "statement_compiler": [],
+    "type_compiler": [],
+    "supports_statement_cache": [],
+    "import_dbapi": [
+      "cls"
+    ],
+    "dbapi": [
+      "cls"
+    ],
+    "get_table_names": [
+      "self",
+      "connection",
+      "schema"
+    ],
+    "get_view_names": [
+      "self",
+      "connection",
+      "schema"
+    ],
+    "get_columns": [
+      "self",
+      "connection",
+      "table_name",
+      "schema"
+    ]
+  },
+  "ESHTTPDialect": [],
+  "ESHTTPSDialect": {
+    "scheme": [],
+    "default_paramstyle": [],
+    "supports_statement_cache": [],
+    "import_dbapi": [
+      "cls"
+    ]
+  },
+  "connect": [
+    "host",
+    "port",
+    "path",
+    "scheme",
+    "user",
+    "password",
+    "context"
+  ],
+  "Connection": {
+    "__init__": [
+      "self",
+      "host",
+      "port",
+      "path",
+      "scheme",
+      "user",
+      "password",
+      "context"
+    ],
+    "cursor": [
+      "self"
+    ]
+  },
+  "Cursor": {
+    "custom_sql_to_method": [],
+    "__init__": [
+      "self",
+      "url",
+      "es"
+    ],
+    "_get_value_for_col_name": [
+      "self",
+      "row",
+      "name"
+    ],
+    "get_valid_table_view_names": [
+      "self",
+      "type_filters"
+    ],
+    "get_valid_table_names": [
+      "self"
+    ],
+    "get_valid_view_names": [
+      "self"
+    ],
+    "execute": [
+      "self",
+      "operation",
+      "parameters"
+    ],
+    "_execute": [
+      "self",
+      "operation",
+      "parameters"
+    ],
+    "get_array_type_columns": [
+      "self",
+      "table_name"
+    ]
+  },
+  "convert_bool": [
+    "value"
+  ],
+  "TestDBAPI": {
+    "setUp": [
+      "self"
+    ],
+    "tearDown": [
+      "self"
+    ],
+    "test_connect_failed": [
+      "self"
+    ],
+    "test_close": [
+      "self"
+    ],
+    "test_execute_fetchall": [
+      "self"
+    ],
+    "test_execute_fetchall_paginates_past_fetch_size": [
+      "self"
+    ],
+    "test_execute_on_connect": [
+      "self"
+    ],
+    "test_commit_executes": [
+      "self"
+    ],
+    "test_executemany_not_supported": [
+      "self"
+    ],
+    "test_execute_fetchmany": [
+      "self"
+    ],
+    "test_execute_fetchone": [
+      "self"
+    ],
+    "test_execute_empty_results": [
+      "self"
+    ],
+    "test_execute_rowcount": [
+      "self"
+    ],
+    "test_execute_wrong_table": [
+      "self"
+    ],
+    "test_execute_select_all": [
+      "self"
+    ],
+    "test_boolean_description": [
+      "self"
+    ],
+    "test_number_description": [
+      "self"
+    ],
+    "test_string_description": [
+      "self"
+    ],
+    "test_datetime_description": [
+      "self"
+    ],
+    "test_simple_group_by": [
+      "self"
+    ],
+    "test_group_by_returns_every_key": [
+      "self"
+    ],
+    "test_auth": [
+      "self"
+    ],
+    "test_https": [
+      "self"
+    ],
+    "test_simple_search_with_time_zone": [
+      "self"
+    ],
+    "test_simple_search_without_time_zone": [
+      "self"
+    ]
+  },
+  "review_index": [],
+  "connection": [
+    "url",
+    "v2"
+  ],
+  "test_v2_limit_keeps_function_and_timestamp_types": [
+    "review_index"
+  ],
+  "test_legacy_grouping_alias_and_having": [
+    "review_index"
+  ],
+  "test_aggregation_at_select_size_limit": [
+    "review_index",
+    "v2",
+    "distinct"
+  ],
+  "test_aggregation_bucket_ceiling_is_not_silent": [
+    "review_index",
+    "v2",
+    "distinct"
+  ],
+  "test_elasticsearch_dst_time_zone_returns_utc": [],
+  "old_bucket_ceiling": [
+    "conn"
+  ],
+  "test_v2_limited_select_with_exactly_200_matches": [
+    "review_index",
+    "limit"
+  ],
+  "test_old_v2_450_buckets_are_not_silently_cut": [
+    "review_index",
+    "distinct"
+  ],
+  "test_select_limit_above_window_is_complete_or_refused": [
+    "review_index",
+    "v2",
+    "limit"
+  ],
+  "top_n_index": [
+    "review_index"
+  ],
+  "test_grouped_top_n_is_correct_or_refused": [
+    "top_n_index",
+    "v2"
+  ],
+  "test_custom_small_aggregation_size_limit_is_not_silent": [
+    "review_index"
+  ],
+  "test_v2_plain_and_limited_select_have_identical_types": [
+    "review_index"
+  ],
+  "test_reflected_types_cast_and_copy_to_sqlite": [],
+  "TestCursorPagination": {
+    "setUp": [
+      "self"
+    ],
+    "test_execute_follows_cursor_across_pages": [
+      "self"
+    ],
+    "test_execute_single_page_unaffected": [
+      "self"
+    ],
+    "test_cursor_closed_on_mid_pagination_error": [
+      "self"
+    ]
+  },
+  "DIALECTS": [],
+  "ODFE_PLUGINS_SQL": [],
+  "ODFE_PLUGINS_SQL_NO_AUTO_CREATE": [],
+  "LEGACY_PAGING_FAILURE": [],
+  "SYNTAX_ERROR": [],
+  "sql_answer": [
+    "rows",
+    "cursor",
+    "column_type"
+  ],
+  "FakeCluster": {
+    "__init__": [
+      "self",
+      "cursor",
+      "handler",
+      "server_version",
+      "distribution"
+    ],
+    "urlopen": [
+      "self",
+      "method",
+      "url",
+      "body"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self"
+    ],
+    "sql_requests": [
+      "self"
+    ]
+  },
+  "flights": [
+    "schema"
+  ],
+  "TestDummySchemaIsNotRendered": {
+    "test_projection_and_from_clause_omit_default_schema": [
+      "self"
+    ],
+    "test_other_schemas_are_still_rendered": [
+      "self"
+    ],
+    "test_schema_translate_map_to_default_is_omitted": [
+      "self"
+    ]
+  },
+  "TestDialectFlags": {
+    "test_statement_cache_is_enabled_on_every_concrete_dialect": [
+      "self"
+    ],
+    "test_server_version_info_is_read_from_the_cluster": [
+      "self"
+    ],
+    "test_server_version_info_is_best_effort": [
+      "self"
+    ],
+    "test_has_table_includes_views": [
+      "self"
+    ]
+  },
+  "TestReflectedTypes": {
+    "test_numeric_mapping_types": [
+      "self"
+    ],
+    "test_reflected_types_render_the_field_type": [
+      "self"
+    ],
+    "NUMERIC_AND_BOOLEAN": [],
+    "test_reflected_types_are_known_to_superset": [
+      "self"
+    ],
+    "test_cast_to_a_reflected_type_renders_a_castable_name": [
+      "self"
+    ],
+    "test_boolean_is_reflected_as_boolean": [
+      "self"
+    ],
+    "test_cast_to_generic_types_is_unchanged": [
+      "self"
+    ],
+    "test_double_is_not_rounded_by_the_result_processor": [
+      "self"
+    ]
+  },
+  "TestResultTypes": {
+    "test_unknown_result_type_does_not_raise": [
+      "self"
+    ],
+    "test_elasticsearch_datetime_normalizes_its_offset": [
+      "self"
+    ],
+    "test_opensearch_timestamp_date_and_time": [
+      "self"
+    ],
+    "test_elasticsearch_date_is_a_date": [
+      "self"
+    ],
+    "test_a_column_is_never_mixed": [
+      "self"
+    ],
+    "test_rows_untouched_without_temporal_columns": [
+      "self"
+    ]
+  },
+  "TestTransportErrors": {
+    "setUp": [
+      "self"
+    ],
+    "execute_raising": [
+      "self",
+      "error"
+    ],
+    "test_authentication_failure_is_a_dbapi_error": [
+      "self"
+    ],
+    "test_tls_failure_keeps_its_cause_in_the_message": [
+      "self"
+    ],
+    "test_other_server_errors_are_database_errors": [
+      "self"
+    ],
+    "test_listing_tolerates_missing_index_stats_privilege": [
+      "self"
+    ]
+  },
+  "TestOpenSearchCursor": {
+    "cursor": [
+      "self"
+    ],
+    "test_v2_url_values": [
+      "self"
+    ],
+    "test_select_one_is_real_sql": [
+      "self"
+    ],
+    "test_select_one_falls_back_to_ping_when_sql_rejects_it": [
+      "self"
+    ],
+    "_time_zone_payload": [
+      "self",
+      "time_zone"
+    ],
+    "test_utc_time_zone_is_accepted_silently": [
+      "self"
+    ],
+    "test_other_time_zone_warns_and_is_dropped": [
+      "self"
+    ],
+    "test_pages_are_followed": [
+      "self"
+    ],
+    "_run": [
+      "self",
+      "query",
+      "size_limit",
+      "paged_answer",
+      "unpaged_rows",
+      "server_version"
+    ],
+    "test_legacy_paging_failure_is_retried_unpaged": [
+      "self"
+    ],
+    "test_unpaged_retry_refused_when_it_may_be_truncated": [
+      "self"
+    ],
+    "test_original_error_when_size_limit_is_unreadable": [
+      "self"
+    ],
+    "test_other_errors_are_not_retried": [
+      "self"
+    ],
+    "test_group_by_is_sent_unpaged_and_returns_450_buckets": [
+      "self"
+    ],
+    "test_legacy_engine_mode_keeps_fetch_size": [
+      "self"
+    ],
+    "test_aggregations_at_select_size_limit_are_not_refused": [
+      "self"
+    ],
+    "test_unpaged_aggregations_at_bucket_limit_are_refused": [
+      "self"
+    ],
+    "test_paging_refused_for_privileges_is_retried_unpaged": [
+      "self"
+    ],
+    "test_v2_on_the_legacy_endpoint_is_not_paged": [
+      "self"
+    ],
+    "test_plain_select_is_paged": [
+      "self"
+    ],
+    "test_listing_aliases_tolerates_missing_privilege": [
+      "self"
+    ],
+    "test_has_table_without_alias_privilege": [
+      "self"
+    ]
+  },
+  "TestIsPageable": {
+    "test_plain_selects_are_pageable": [
+      "self"
+    ],
+    "test_other_statements_are_not": [
+      "self"
+    ]
+  },
+  "TestPagination": {
+    "test_stops_on_an_empty_page_that_still_has_a_cursor": [
+      "self"
+    ],
+    "test_a_repeated_cursor_is_followed": [
+      "self"
+    ]
+  },
+  "TestParseBool": {
+    "test_values": [
+      "self"
+    ]
+  },
+  "TestOpenSearchEndpointAndQualifiers": {
+    "test_modern_endpoint_by_default_with_legacy_fallback": [
+      "self"
+    ],
+    "odfe": [
+      "method",
+      "path",
+      "payload"
+    ],
+    "test_open_distro_falls_back_to_the_legacy_endpoint": [
+      "self"
+    ],
+    "test_select_one_on_open_distro_uses_the_legacy_endpoint": [
+      "self"
+    ],
+    "test_open_distro_without_index_auto_creation": [
+      "self"
+    ],
+    "test_a_missing_data_index_is_not_a_missing_endpoint": [
+      "self"
+    ],
+    "test_select_one_fails_without_a_sql_endpoint": [
+      "self"
+    ],
+    "test_other_index_name_errors_are_not_a_missing_endpoint": [
+      "self"
+    ],
+    "test_explicit_sql_path_is_never_replaced": [
+      "self"
+    ],
+    "test_single_table_columns_are_unqualified": [
+      "self"
+    ],
+    "test_qualifier_kept_when_a_label_shadows_the_column": [
+      "self"
+    ],
+    "test_correlated_references_keep_their_qualifier": [
+      "self"
+    ]
+  },
+  "FakeOpenDistro": {
+    "__init__": [
+      "self",
+      "rows",
+      "cursors"
+    ],
+    "__call__": [
+      "self",
+      "method",
+      "path",
+      "payload"
+    ]
+  },
+  "TestOpenDistroReturnsEveryRow": {
+    "run_query": [
+      "self",
+      "query",
+      "rows",
+      "cursors"
+    ],
+    "odfe_requests": [
+      "self"
+    ],
+    "test_plain_select_past_the_size_limit": [
+      "self"
+    ],
+    "test_v2_retry_stays_on_the_v2_engine": [
+      "self"
+    ],
+    "test_complete_answers_are_not_asked_again": [
+      "self"
+    ],
+    "test_beyond_one_search_window_uses_the_cursor": [
+      "self"
+    ],
+    "test_beyond_one_search_window_without_cursors_raises": [
+      "self"
+    ],
+    "test_legacy_aggregation_at_the_bucket_cap_is_asked_of_the_v2_engine": [
+      "self"
+    ]
+  },
+  "TestLimitPastTheSearchWindow": {
+    "test_rows_that_fit_in_one_window": [
+      "self"
+    ],
+    "test_rows_past_one_window_use_the_cursor_and_the_limit": [
+      "self"
+    ],
+    "test_rows_past_one_window_without_cursors_raise": [
+      "self"
+    ],
+    "test_offset_is_not_rewritten": [
+      "self"
+    ]
+  },
+  "TestStatementRewrites": {
+    "test_alias_colliding_with_a_qualified_column_is_renamed": [
+      "self"
+    ],
+    "test_subqueries_without_a_limit_get_one": [
+      "self"
+    ],
+    "test_outer_clauses_ignore_subqueries": [
+      "self"
+    ]
+  },
+  "RESULT_WINDOW_TOO_LARGE": [],
+  "FakeSubqueryCluster": {
+    "__init__": [
+      "self",
+      "inner_rows",
+      "open_distro"
+    ],
+    "__call__": [
+      "self",
+      "method",
+      "path",
+      "payload"
+    ]
+  },
+  "TestSubqueriesReturnCorrectResults": {
+    "VIRTUAL": [],
+    "run_query": [
+      "self",
+      "query",
+      "inner_rows",
+      "open_distro"
+    ],
+    "test_open_distro_virtual_dataset": [
+      "self"
+    ],
+    "test_opensearch_keeps_the_outer_limit": [
+      "self"
+    ],
+    "test_subquery_past_one_search_window_raises": [
+      "self"
+    ],
+    "probes": [
+      "self"
+    ],
+    "test_subquery_of_exactly_one_search_window_is_complete": [
+      "self"
+    ],
+    "test_open_distro_counts_up_to_the_window": [
+      "self"
+    ],
+    "test_legacy_engine_gets_a_renamed_colliding_alias": [
+      "self"
+    ]
+  },
+  "TestV2LimitedSelect": {
+    "test_limit_is_unpaged_only_in_v2": [
+      "self"
+    ],
+    "test_limited_v2_select_bypasses_size_limit": [
+      "self"
+    ]
+  },
+  "TestGroupingAliasRewrites": {
+    "test_group_by_and_having_follow_renamed_alias": [
+      "self"
+    ],
+    "test_grouping_rewrite_keeps_qualified_columns_literals_and_functions": [
+      "self"
+    ]
+  },
+  "TestResultBuffer": {
+    "test_mixed_fetches_and_reexecution": [
+      "self"
+    ],
+    "test_large_result_uses_constant_time_front_removal": [
+      "self"
+    ]
+  },
+  "TestDSTResultTypes": {
+    "test_each_rows_offset_is_normalized_independently": [
+      "self"
+    ],
+    "test_unrepresentable_column_keeps_original_offsets": [
+      "self"
+    ]
+  },
+  "TestOlderOpenSearchLimits": {
+    "test_older_aggregation_size_limit": [
+      "self"
+    ],
+    "test_explicit_select_limit_checks_the_search_window": [
+      "self"
+    ],
+    "test_unknown_version_refuses_ambiguous_aggregation": [
+      "self"
+    ]
+  },
+  "TestAdditionalReviewRegressions": {
+    "test_limited_empty_cursor_does_not_prove_completeness": [
+      "self"
+    ],
+    "test_opensearch_1_v2_keeps_its_schema_and_expands_the_size_limit": [
+      "self"
+    ],
+    "test_unreadable_version_keeps_plain_select_on_v2": [
+      "self"
+    ],
+    "test_grouped_top_n_checks_underlying_buckets": [
+      "self"
+    ],
+    "test_grouped_order_probe_respects_literals_comments_and_subqueries": [
+      "self"
+    ],
+    "test_legacy_endpoint_on_opensearch_2_checks_the_size_limit": [
+      "self"
+    ],
+    "test_open_distro_keeps_the_bucket_ceiling": [
+      "self"
+    ],
+    "test_group_key_order_is_not_probed": [
+      "self"
+    ],
+    "test_group_key_order_with_offset_checks_underlying_buckets": [
+      "self"
+    ],
+    "test_plugins_endpoint_checks_size_limit_without_distribution": [
+      "self"
+    ],
+    "test_aggregate_order_is_still_probed": [
+      "self"
+    ]
+  },
+  "TestSanitizeQuery": {
+    "_sanitize": [
+      "self",
+      "query"
+    ],
+    "test_strips_double_quoted_default_schema": [
+      "self"
+    ],
+    "test_strips_backtick_quoted_default_schema": [
+      "self"
+    ],
+    "test_no_match_is_unchanged": [
+      "self"
+    ],
+    "test_does_not_strip_unrelated_quoted_default_token": [
+      "self"
+    ],
+    "test_does_not_strip_identifier_delimiters": [
+      "self"
+    ]
+  },
+  "FIELD_TYPES": [],
+  "test_reflected_type_compiles_like_generic_type": [
+    "field_type",
+    "generic",
+    "dialect"
+  ],
+  "test_copy_reflected_table_to_sqlite": [],
+  "MockCredentials": {
+    "__init__": [
+      "self",
+      "access_key",
+      "secret_key",
+      "token"
+    ]
+  },
+  "TestSQLAlchemy": {
+    "setUp": [
+      "self"
+    ],
+    "make_columns_compliant": [
+      "self",
+      "columns"
+    ],
+    "test_simple_query": [
+      "self"
+    ],
+    "test_execute_wrong_table": [
+      "self"
+    ],
+    "test_reflection_get_tables": [
+      "self"
+    ],
+    "test_has_table": [
+      "self"
+    ],
+    "test_get_schema_names": [
+      "self"
+    ],
+    "test_reflection_get_columns": [
+      "self"
+    ],
+    "test_get_columns_exclude_arrays": [
+      "self"
+    ],
+    "test_get_view_names": [
+      "self"
+    ],
+    "test_get_alias_columns": [
+      "self"
+    ],
+    "test_get_columns_exclude_geo_point": [
+      "self"
+    ],
+    "test_select_count": [
+      "self"
+    ],
+    "test_auth": [
+      "self"
+    ],
+    "test_opendistro_aws_auth": [
+      "self",
+      "mock_aws4auth"
+    ],
+    "test_opendistro_aws_profile": [
+      "self",
+      "mock_aws4auth"
+    ],
+    "test_connection_https_and_auth": [
+      "self"
+    ],
+    "test_connection_https_and_params": [
+      "self"
+    ],
+    "test_connection_params": [
+      "self"
+    ],
+    "test_connection_params_value_error": [
+      "self"
+    ],
+    "test_connection_sniff": [
+      "self"
+    ],
+    "test_ping": [
+      "self"
+    ],
+    "test_opendistro_ping_failed": [
+      "self"
+    ]
+  },
+  "TestQuote": {
+    "test_elastic": [
+      "self"
+    ],
+    "test_opendistro": [
+      "self"
+    ]
+  },
+  "BASE_URL": [],
+  "TestData": {
+    "setUp": [
+      "self"
+    ],
+    "test_1_data_flights": [
+      "self"
+    ],
+    "test_2_data_data1": [
+      "self"
+    ],
+    "test_3_data_empty_index": [
+      "self"
+    ],
+    "test_4_alias_to_data1": [
+      "self"
+    ],
+    "test_5_data_grp": [
+      "self"
+    ]
+  },
+  "flights_columns": [],
+  "data1_columns": [],
+  "_get_client": [
+    "base_url"
+  ],
+  "import_file_to_es": [
+    "base_url",
+    "data_path",
+    "index_name",
+    "mappings_path"
+  ],
+  "set_index_settings": [
+    "base_url",
+    "index_name",
+    "mappings"
+  ],
+  "delete_index": [
+    "base_url",
+    "index_name"
+  ],
+  "delete_alias": [
+    "base_url",
+    "alias_name",
+    "index_name"
+  ],
+  "create_alias": [
+    "base_url",
+    "alias_name",
+    "index_name"
+  ],
+  "import_flights": [
+    "base_url"
+  ],
+  "import_data1": [
+    "base_url"
+  ],
+  "import_empty_index": [
+    "base_url"
+  ],
+  "GRP_KEYS": [],
+  "import_grp": [
+    "base_url"
+  ],
+  "ESTypeIdentifierPreparer": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "_LITERAL_OR_COMMENT_RE": [],
+  "_IDENT": [],
+  "_ALIAS_RE": [],
+  "_QUALIFIED_RE": [],
+  "_SUBQUERY_RE": [],
+  "_CALL_RE": [],
+  "_FIELD_RE": [],
+  "_LIMIT_RE": [],
+  "blank_literals": [
+    "query"
+  ],
+  "_depths": [
+    "text"
+  ],
+  "_top_level": [
+    "text",
+    "pattern",
+    "start"
+  ],
+  "_unquote": [
+    "identifier"
+  ],
+  "has_subquery": [
+    "query"
+  ],
+  "rename_colliding_aliases": [
+    "query"
+  ],
+  "limit_subqueries": [
+    "query",
+    "window"
+  ],
+  "OuterClauses": {},
+  "outer_clauses": [
+    "query"
+  ],
+  "_split_top_level": [
+    "text",
+    "start",
+    "end"
+  ],
+  "_normalize": [
+    "expression"
+  ],
+  "_orders_by_group_keys": [
+    "query",
+    "text",
+    "group",
+    "order"
+  ],
+  "grouped_order_probe": [
+    "query"
+  ],
+  "LEGACY_SQL_PATH": [],
+  "LEGACY_BUCKET_LIMIT": [],
+  "UNPAGED_BUCKET_LIMIT": [],
+  "OPEN_DISTRO_DEFAULT_SIZE_LIMIT": [],
+  "MAX_RESULT_WINDOW": [],
+  "_UTC_TIME_ZONE_RE": [],
+  "_AGGREGATION_RE": [],
+  "_UNPAGEABLE_RE": [],
+  "_QUOTED_RE": [],
+  "_TRAILING_LIMIT_RE": [],
+  "is_pageable": [
+    "query"
+  ],
+  "_is_result_window_error": [
+    "error"
+  ],
+  "is_utc_time_zone": [
+    "time_zone"
+  ],
+  "_MISSING_ENDPOINT_ERRORS": [],
+  "_error_details": [
+    "error"
+  ]
+}

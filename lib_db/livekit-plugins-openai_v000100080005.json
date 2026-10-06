@@ -1,0 +1,546 @@
+{
+  "logger": [],
+  "_max_session_duration": [],
+  "_delta_transcript_interval": [],
+  "SAMPLE_RATE": [],
+  "NUM_CHANNELS": [],
+  "_REALTIME_ONLY_MODELS": [],
+  "_CONTEXT_HINT_MODELS": [],
+  "_is_realtime_only": [
+    "model"
+  ],
+  "_supports_context_hints": [
+    "model"
+  ],
+  "_as_languages": [
+    "language"
+  ],
+  "_as_turn_detection": [
+    "turn_detection"
+  ],
+  "_validate_context": [
+    "model",
+    "languages",
+    "keywords"
+  ],
+  "_transcript_language": [
+    "languages"
+  ],
+  "_STTOptions": {},
+  "_transcription": [
+    "opts"
+  ],
+  "_session_update": [
+    "opts"
+  ],
+  "STT": {
+    "__init__": [
+      "self"
+    ],
+    "model": [
+      "self"
+    ],
+    "provider": [
+      "self"
+    ],
+    "with_azure": [],
+    "with_ovhcloud": [],
+    "stream": [
+      "self"
+    ],
+    "update_options": [
+      "self"
+    ],
+    "_update_session_keyterms": [
+      "self",
+      "keyterms"
+    ],
+    "_connect_ws": [
+      "self",
+      "timeout"
+    ],
+    "_close_ws": [
+      "self",
+      "ws"
+    ],
+    "aclose": [
+      "self"
+    ],
+    "_ensure_session": [
+      "self"
+    ],
+    "_recognize_impl": [
+      "self",
+      "buffer"
+    ]
+  },
+  "SpeechStream": {
+    "__init__": [
+      "self"
+    ],
+    "update_options": [
+      "self"
+    ],
+    "_send_update": [
+      "self",
+      "event"
+    ],
+    "aclose": [
+      "self"
+    ],
+    "_start_speaking": [
+      "self"
+    ],
+    "_stop_speaking": [
+      "self"
+    ],
+    "_run": [
+      "self"
+    ]
+  },
+  "AsyncAzureADTokenProvider": [],
+  "get_base_url": [
+    "base_url"
+  ],
+  "__all__": [],
+  "lk_oai_debug": [],
+  "Verbosity": [],
+  "PromptCacheRetention": [],
+  "_LLMOptions": {},
+  "LLM": {
+    "__init__": [
+      "self"
+    ],
+    "_prewarm_impl": [
+      "self"
+    ],
+    "aclose": [
+      "self"
+    ],
+    "model": [
+      "self"
+    ],
+    "provider": [
+      "self"
+    ],
+    "with_azure": [],
+    "with_cerebras": [],
+    "with_sambanova": [],
+    "with_fireworks": [],
+    "with_x_ai": [],
+    "with_openrouter": [],
+    "with_deepseek": [],
+    "with_cometapi": [],
+    "with_octo": [],
+    "with_ollama": [],
+    "with_ovhcloud": [],
+    "with_perplexity": [],
+    "with_together": [],
+    "with_telnyx": [],
+    "with_nebius": [],
+    "with_letta": [],
+    "chat": [
+      "self"
+    ]
+  },
+  "LLMStream": {
+    "__init__": [
+      "self",
+      "llm"
+    ]
+  },
+  "OpenAITool": {
+    "to_dict": [
+      "self"
+    ]
+  },
+  "WebSearch": {
+    "__post_init__": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ]
+  },
+  "FileSearch": {
+    "__post_init__": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ]
+  },
+  "CodeInterpreter": {
+    "__post_init__": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ]
+  },
+  "EmbeddingData": {},
+  "create_embeddings": [],
+  "__version__": [],
+  "DEFAULT_MODEL": [],
+  "DEFAULT_VOICE": [],
+  "RESPONSE_FORMATS": [],
+  "AUDIO_STREAM_MODELS": [],
+  "SSE_CONTENT_TYPE": [],
+  "DECODABLE_CONTENT_TYPES": [],
+  "_TTSOptions": {},
+  "TTS": {
+    "__init__": [
+      "self"
+    ],
+    "model": [
+      "self"
+    ],
+    "provider": [
+      "self"
+    ],
+    "update_options": [
+      "self"
+    ],
+    "with_azure": [],
+    "synthesize": [
+      "self",
+      "text"
+    ],
+    "prewarm": [
+      "self"
+    ],
+    "aclose": [
+      "self"
+    ]
+  },
+  "ChunkedStream": {
+    "__init__": [
+      "self"
+    ],
+    "_run": [
+      "self",
+      "output_emitter"
+    ]
+  },
+  "STTModels": [],
+  "TTSModels": [],
+  "TTSVoices": [],
+  "DalleModels": [],
+  "ChatModels": [],
+  "EmbeddingModels": [],
+  "AssistantTools": [],
+  "TelnyxChatModels": [],
+  "NebiusChatModels": [],
+  "CerebrasChatModels": [],
+  "PerplexityChatModels": [],
+  "DeepSeekChatModels": [],
+  "CometAPIChatModels": [],
+  "TogetherChatModels": [],
+  "OctoChatModels": [],
+  "XAIChatModels": [],
+  "SambaNovaChatModels": [],
+  "_supports_reasoning_effort": [
+    "model"
+  ],
+  "OpenRouterWebPlugin": {},
+  "OpenRouterProviderPreferences": {},
+  "OpenAIPlugin": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "_module": [],
+  "NOT_IN_ALL": [],
+  "__pdoc__": [],
+  "ServiceTier": [],
+  "OPENAI_RESPONSES_WS_URL": [],
+  "_WS_HEARTBEAT": [],
+  "_WS_SEND_MAX_ATTEMPTS": [],
+  "_ResponsesWebsocket": {
+    "__init__": [
+      "self",
+      "api_key",
+      "timeout",
+      "model",
+      "base_url"
+    ],
+    "_ensure_http_session": [
+      "self"
+    ],
+    "_create_ws": [
+      "self",
+      "timeout"
+    ],
+    "_close_ws": [
+      "self",
+      "ws"
+    ],
+    "aclose": [
+      "self"
+    ],
+    "generate_response": [
+      "self",
+      "msg"
+    ],
+    "_acquire_and_send": [
+      "self",
+      "data"
+    ]
+  },
+  "__getattr__": [
+    "name"
+  ],
+  "DEFAULT_BACKEND_MODEL": [],
+  "OPENAI_BASE_URL": [],
+  "_MAX_INPUT_ITEMS": [],
+  "_SILENCE_RMS": [],
+  "_MIN_SILENCE_DURATION": [],
+  "_MIN_SILENCE_MS": [],
+  "_SPEAK_NOW": [],
+  "_ASK_INSTRUCTED": [],
+  "_ASK_TYPED": [],
+  "_ASK_BARE": [],
+  "_SESSION_CLOSE_TIMEOUT": [],
+  "_CLOSING_EVENTS": [],
+  "_FATAL_ERROR_CODES": [],
+  "Role": [],
+  "GPTLiveVoices": [],
+  "ResponsesDelegationOptions": {},
+  "GPTLiveDelegation": {},
+  "_Speech": {},
+  "_LiveOptions": {},
+  "GPTLiveModel": {
+    "__init__": [
+      "self"
+    ],
+    "with_azure": [
+      "cls"
+    ],
+    "model": [
+      "self"
+    ],
+    "provider": [
+      "self"
+    ],
+    "_ensure_http_session": [
+      "self"
+    ],
+    "audio_gate": [
+      "self"
+    ],
+    "session": [
+      "self"
+    ],
+    "aclose": [
+      "self"
+    ]
+  },
+  "GPTLiveSession": {
+    "__init__": [
+      "self",
+      "duplex_model"
+    ],
+    "send_event": [
+      "self",
+      "event"
+    ],
+    "_build_delegation": [
+      "self"
+    ],
+    "_session_start_event": [
+      "self"
+    ],
+    "_send_delegation_update": [
+      "self",
+      "responses"
+    ],
+    "_main_task": [
+      "self"
+    ],
+    "_reset_for_reconnect": [
+      "self"
+    ],
+    "_create_ws_conn": [
+      "self"
+    ],
+    "_run_ws": [
+      "self",
+      "ws_conn"
+    ],
+    "_ws_send": [
+      "self",
+      "ws_conn",
+      "event"
+    ],
+    "_handle_event": [
+      "self",
+      "event"
+    ],
+    "_handle_session_started": [
+      "self",
+      "event"
+    ],
+    "_handle_output_audio_delta": [
+      "self",
+      "event"
+    ],
+    "_handle_transcript_delta": [
+      "self",
+      "role",
+      "event"
+    ],
+    "_end_speech": [
+      "self",
+      "role"
+    ],
+    "_handle_delegation_created": [
+      "self",
+      "event"
+    ],
+    "_handle_response_event": [
+      "self",
+      "envelope"
+    ],
+    "_maybe_continue_response": [
+      "self"
+    ],
+    "_handle_session_usage_updated": [
+      "self",
+      "event"
+    ],
+    "_handle_session_closed": [
+      "self",
+      "event"
+    ],
+    "_handle_usage": [
+      "self",
+      "usage"
+    ],
+    "_handle_error": [
+      "self",
+      "error"
+    ],
+    "_emit_error": [
+      "self",
+      "error",
+      "recoverable"
+    ],
+    "session_id": [
+      "self"
+    ],
+    "audio_stream": [
+      "self"
+    ],
+    "tools": [
+      "self"
+    ],
+    "push_audio": [
+      "self",
+      "frame"
+    ],
+    "append_instructions": [
+      "self",
+      "text"
+    ],
+    "append_thinking": [
+      "self",
+      "text"
+    ],
+    "append_commentary": [
+      "self",
+      "text"
+    ],
+    "_append": [
+      "self",
+      "event_cls",
+      "text",
+      "delegation_id"
+    ],
+    "mute_input": [
+      "self"
+    ],
+    "unmute_input": [
+      "self"
+    ],
+    "aclose": [
+      "self"
+    ],
+    "_update_instructions": [
+      "self",
+      "instructions"
+    ],
+    "_update_tools": [
+      "self",
+      "tools"
+    ],
+    "_append_items": [
+      "self",
+      "items"
+    ],
+    "_generate_reply": [
+      "self"
+    ],
+    "_update_options": [
+      "self"
+    ]
+  },
+  "_live_sessions_url": [
+    "base_url"
+  ],
+  "_to_tool_choice": [
+    "tool_choice"
+  ],
+  "_build_delegation_tools": [
+    "tools"
+  ],
+  "_render_item": [
+    "item"
+  ],
+  "DelegationTarget": [],
+  "InputRole": [],
+  "InputTextPart": {},
+  "OutputTextPart": {},
+  "InputItem": {},
+  "AudioFormat": {},
+  "AudioOutput": {},
+  "AudioConfig": {},
+  "ResponsesConfig": {},
+  "Delegation": {},
+  "SessionConfig": {},
+  "SessionUpdateConfig": {},
+  "SessionResource": {},
+  "SessionStartEvent": {},
+  "SessionUpdateEvent": {},
+  "InputAudioAppendEvent": {},
+  "InputAudioMuteEvent": {},
+  "InputAudioUnmuteEvent": {},
+  "_ContextAppendEvent": {
+    "_keep_delegation_id": [
+      "self",
+      "handler"
+    ]
+  },
+  "InstructionsAppendEvent": {},
+  "ThinkingAppendEvent": {},
+  "CommentaryAppendEvent": {},
+  "ResponseItemCreateEvent": {},
+  "ResponseCreateEvent": {},
+  "SessionCloseEvent": {},
+  "ClientEvent": [],
+  "SessionStartedEvent": {},
+  "OutputAudioDeltaEvent": {},
+  "TranscriptDeltaEvent": {},
+  "DelegationInfo": {},
+  "SessionDelegationCreatedEvent": {},
+  "ResponseUsage": {},
+  "ResponseSnapshot": {},
+  "OutputItem": {},
+  "ResponsesEvent": {},
+  "ResponseEventEnvelope": {},
+  "Usage": {},
+  "ContextWindow": {},
+  "SessionUsageUpdatedEvent": {},
+  "SessionClosedEvent": {},
+  "ErrorBody": {},
+  "ErrorEvent": {}
+}

@@ -1,0 +1,364 @@
+{
+  "logger": [],
+  "_Pool": [],
+  "_DrainTokenizer": {},
+  "V1SynthesisOptions": {
+    "_to_protocol": [
+      "self"
+    ]
+  },
+  "WebSocketV1Adapter": {
+    "__init__": [
+      "self"
+    ],
+    "_new_pool": [
+      "self"
+    ],
+    "stream": [
+      "self"
+    ],
+    "prewarm": [
+      "self"
+    ],
+    "update_endpoint": [
+      "self",
+      "websocket_v1_url"
+    ],
+    "aclose": [
+      "self"
+    ]
+  },
+  "_WebSocketV1SynthesizeStream": {
+    "__init__": [
+      "self"
+    ],
+    "_enqueue_tokenizer_drain": [
+      "self"
+    ],
+    "flush": [
+      "self"
+    ],
+    "end_input": [
+      "self"
+    ],
+    "aclose": [
+      "self"
+    ],
+    "_run": [
+      "self",
+      "output_emitter"
+    ]
+  },
+  "_sentence_tokenized_input_events": [
+    "input_events"
+  ],
+  "__version__": [],
+  "CODA_MODEL_TIMEOUT": [],
+  "MIST_MODEL_TIMEOUT": [],
+  "RIME_BASE_URL": [],
+  "RIME_WS_BASE_URL": [],
+  "NUM_CHANNELS": [],
+  "CODA_DEFAULT_SAMPLE_RATE": [],
+  "MIST_V2_DEFAULT_SAMPLE_RATE": [],
+  "MIST_V3_DEFAULT_SAMPLE_RATE": [],
+  "_TTSOptions": {},
+  "_CodaOptions": {},
+  "_MistOptions": {},
+  "_timeout_for_model": [
+    "model"
+  ],
+  "_default_sample_rate": [
+    "model"
+  ],
+  "_model_params": [
+    "opts"
+  ],
+  "_check_time_scale_factor_supported": [
+    "model",
+    "time_scale_factor"
+  ],
+  "_resolve_websocket_model": [
+    "websocket_url",
+    "model"
+  ],
+  "TTS": {
+    "__init__": [
+      "self"
+    ],
+    "model": [
+      "self"
+    ],
+    "provider": [
+      "self"
+    ],
+    "_ensure_session": [
+      "self"
+    ],
+    "_ws_url": [
+      "self"
+    ],
+    "prewarm": [
+      "self"
+    ],
+    "stream": [
+      "self"
+    ],
+    "_v1_synthesis_options": [
+      "self"
+    ],
+    "_legacy_synthesis_options": [
+      "self"
+    ],
+    "aclose": [
+      "self"
+    ],
+    "synthesize": [
+      "self",
+      "text"
+    ],
+    "update_options": [
+      "self"
+    ]
+  },
+  "ChunkedStream": {
+    "__init__": [
+      "self",
+      "tts",
+      "input_text",
+      "conn_options"
+    ],
+    "_run": [
+      "self",
+      "output_emitter"
+    ]
+  },
+  "TTSLangs": [],
+  "TTSModels": [],
+  "MODEL_CODA": [],
+  "MODEL_MIST_V2": [],
+  "MODEL_MIST_V3": [],
+  "DefaultMistVoice": [],
+  "DefaultCodaVoice": [],
+  "is_mist_model": [
+    "model"
+  ],
+  "supports_time_scale_factor": [
+    "model"
+  ],
+  "supports_reduce_latency": [
+    "model"
+  ],
+  "StreamTTS": {
+    "__init__": [
+      "self",
+      "parent"
+    ],
+    "model": [
+      "self"
+    ],
+    "provider": [
+      "self"
+    ],
+    "synthesize": [
+      "self",
+      "text"
+    ]
+  },
+  "T": [],
+  "PoolManager": {
+    "__init__": [
+      "self",
+      "pool"
+    ],
+    "track_stream": [
+      "self",
+      "pool",
+      "task"
+    ],
+    "replace": [
+      "self",
+      "pool"
+    ],
+    "aclose": [
+      "self"
+    ],
+    "_schedule_retired_pool_close": [
+      "self",
+      "pool"
+    ],
+    "_on_retired_pool_closed": [
+      "self",
+      "task"
+    ]
+  },
+  "WebSocketProtocol": [],
+  "RimeAudioFormat": [],
+  "BINARY_SUBPROTOCOL": [],
+  "JSON_SUBPROTOCOL": [],
+  "PROTOCOL_VERSION": [],
+  "CANCEL_TIMEOUT": [],
+  "SynthesisOptions": {},
+  "RunResult": {},
+  "Connection": {},
+  "validate_audio_format": [
+    "audio_format"
+  ],
+  "_build_mulaw_table": [],
+  "_MULAW_TABLE": [],
+  "_decode_audio": [
+    "audio_format",
+    "data"
+  ],
+  "_emitter_mime_type": [
+    "audio_format"
+  ],
+  "_EnvelopeCodec": {
+    "send_request": [
+      "self",
+      "websocket",
+      "request"
+    ],
+    "decode_response": [
+      "self",
+      "message"
+    ]
+  },
+  "_BinaryEnvelopeCodec": {
+    "subprotocol": [],
+    "send_request": [
+      "self",
+      "websocket",
+      "request"
+    ],
+    "decode_response": [
+      "self",
+      "message"
+    ]
+  },
+  "_JsonEnvelopeCodec": {
+    "subprotocol": [],
+    "send_request": [
+      "self",
+      "websocket",
+      "request"
+    ],
+    "decode_response": [
+      "self",
+      "message"
+    ]
+  },
+  "_JSON_RESPONSE_PAYLOADS": [],
+  "_validate_json_envelope": [
+    "envelope"
+  ],
+  "_codec_for_protocol": [
+    "protocol"
+  ],
+  "_ContaminatedConnection": {},
+  "_ContextCancelled": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "_is_loopback_host": [
+    "hostname"
+  ],
+  "_is_trusted_rime_host": [
+    "hostname"
+  ],
+  "validate_endpoint_host": [
+    "endpoint_url"
+  ],
+  "validate_websocket_url": [
+    "websocket_url"
+  ],
+  "_model_endpoint_identity": [
+    "websocket_url"
+  ],
+  "model_from_websocket_url": [
+    "websocket_url"
+  ],
+  "connect": [
+    "session"
+  ],
+  "close": [
+    "connection"
+  ],
+  "run_context": [
+    "connection"
+  ],
+  "_ContextState": {},
+  "_start_payload": [
+    "options"
+  ],
+  "_send_envelope": [
+    "connection",
+    "context_id",
+    "payload",
+    "value"
+  ],
+  "_receive_envelope": [
+    "connection"
+  ],
+  "_payload": [
+    "envelope"
+  ],
+  "_check_context": [
+    "envelope",
+    "expected"
+  ],
+  "_rime_error": [
+    "error"
+  ],
+  "_cancel_and_drain": [
+    "connection"
+  ],
+  "_cancel_tasks": [],
+  "LegacySynthesisOptions": {},
+  "LegacyWebSocketAdapter": {
+    "__init__": [
+      "self"
+    ],
+    "_new_pool": [
+      "self"
+    ],
+    "_connect": [
+      "self"
+    ],
+    "_close": [
+      "self",
+      "websocket"
+    ],
+    "stream": [
+      "self"
+    ],
+    "prewarm": [
+      "self"
+    ],
+    "update_endpoint": [
+      "self",
+      "websocket_url"
+    ],
+    "aclose": [
+      "self"
+    ]
+  },
+  "_LegacyWebSocketSynthesizeStream": {
+    "__init__": [
+      "self"
+    ],
+    "_run": [
+      "self",
+      "output_emitter"
+    ]
+  },
+  "__all__": [],
+  "RimePlugin": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "_module": [],
+  "NOT_IN_ALL": [],
+  "__pdoc__": []
+}
