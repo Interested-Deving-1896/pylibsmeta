@@ -1,0 +1,408 @@
+{
+  "__all__": [],
+  "_SURROGATE": [],
+  "encode": [
+    "obj"
+  ],
+  "_check_string": [
+    "value"
+  ],
+  "_Normalizer": {
+    "__init__": [
+      "self",
+      "default",
+      "sort_keys"
+    ],
+    "normalize": [
+      "self",
+      "value"
+    ],
+    "_container": [
+      "self",
+      "value"
+    ],
+    "_mapping": [
+      "self",
+      "value"
+    ],
+    "_other": [
+      "self",
+      "value"
+    ],
+    "_converted": [
+      "self",
+      "original",
+      "replacement"
+    ]
+  },
+  "_sorted_members": [
+    "value"
+  ],
+  "_convert_key": [
+    "key"
+  ],
+  "_is_primitive": [
+    "value"
+  ],
+  "_shape": [
+    "objects"
+  ],
+  "_keyed_shape": [
+    "obj"
+  ],
+  "_leaves": [
+    "obj",
+    "shape"
+  ],
+  "_Encoder": {
+    "__init__": [
+      "self",
+      "indent_size",
+      "delimiter"
+    ],
+    "emit": [
+      "self",
+      "depth",
+      "text"
+    ],
+    "root": [
+      "self",
+      "value"
+    ],
+    "primitive": [
+      "self",
+      "value"
+    ],
+    "join": [
+      "self",
+      "values"
+    ],
+    "field_list": [
+      "self",
+      "shape"
+    ],
+    "fields": [
+      "self",
+      "obj",
+      "depth"
+    ],
+    "field": [
+      "self",
+      "key",
+      "value",
+      "depth"
+    ],
+    "array": [
+      "self",
+      "prefix",
+      "array",
+      "depth"
+    ],
+    "keyed": [
+      "self",
+      "key",
+      "obj",
+      "shape",
+      "depth"
+    ],
+    "item": [
+      "self",
+      "value",
+      "depth"
+    ]
+  },
+  "ToonPydanticModel": {
+    "schema_to_toon": [
+      "cls"
+    ],
+    "model_dump_toon": [
+      "self"
+    ],
+    "model_validate_toon": [
+      "cls",
+      "text"
+    ]
+  },
+  "Delimiter": {
+    "COMMA": [],
+    "TAB": [],
+    "PIPE": [],
+    "__str__": [
+      "self"
+    ]
+  },
+  "_check_indent_size": [
+    "indent_size"
+  ],
+  "dumps": [
+    "obj"
+  ],
+  "dump": [
+    "obj",
+    "fp"
+  ],
+  "loads": [
+    "s"
+  ],
+  "load": [
+    "fp"
+  ],
+  "decode": [],
+  "_BRACKET": [],
+  "_QUOTED": [],
+  "_HEX4": [],
+  "_SIMPLE_ESCAPES": [],
+  "_MISSING": [],
+  "_Line": {},
+  "_split_lines": [
+    "text",
+    "indent_size",
+    "strict"
+  ],
+  "_Header": {},
+  "_KeyValue": {},
+  "_Scalar": {},
+  "_Malformed": {},
+  "_is_list_item": [
+    "content"
+  ],
+  "_quoted_end": [
+    "text",
+    "start"
+  ],
+  "_find_unquoted": [
+    "text",
+    "char",
+    "start"
+  ],
+  "_brace_end": [
+    "text",
+    "start"
+  ],
+  "_split": [
+    "text",
+    "delimiter"
+  ],
+  "_leaf_count": [
+    "fields"
+  ],
+  "_Parser": {
+    "__init__": [
+      "self",
+      "lines",
+      "strict",
+      "parse_int",
+      "parse_float",
+      "object_hook",
+      "object_pairs_hook"
+    ],
+    "error": [
+      "self",
+      "msg",
+      "line"
+    ],
+    "peek": [
+      "self"
+    ],
+    "take": [
+      "self"
+    ],
+    "finish": [
+      "self",
+      "obj"
+    ],
+    "assign": [
+      "self",
+      "obj",
+      "key",
+      "value",
+      "line"
+    ],
+    "scope_depth": [
+      "self",
+      "expected"
+    ],
+    "unescape": [
+      "self",
+      "body",
+      "line"
+    ],
+    "quoted": [
+      "self",
+      "token",
+      "line"
+    ],
+    "key": [
+      "self",
+      "token",
+      "line"
+    ],
+    "primitive": [
+      "self",
+      "token",
+      "line"
+    ],
+    "number": [
+      "self",
+      "token",
+      "line"
+    ],
+    "values": [
+      "self",
+      "text",
+      "delimiter",
+      "line"
+    ],
+    "classify": [
+      "self",
+      "content",
+      "line"
+    ],
+    "header": [
+      "self",
+      "content",
+      "bracket",
+      "colon",
+      "line"
+    ],
+    "literal_key_value": [
+      "self",
+      "content",
+      "line"
+    ],
+    "field_list": [
+      "self",
+      "text",
+      "pos",
+      "delimiter",
+      "line"
+    ],
+    "document": [
+      "self"
+    ],
+    "end_of_root": [
+      "self"
+    ],
+    "object_body": [
+      "self",
+      "depth",
+      "obj",
+      "parent"
+    ],
+    "orphan": [
+      "self",
+      "line"
+    ],
+    "field": [
+      "self",
+      "line",
+      "obj",
+      "depth"
+    ],
+    "field_value": [
+      "self",
+      "rest",
+      "line",
+      "depth"
+    ],
+    "header_value": [
+      "self",
+      "header",
+      "line",
+      "depth"
+    ],
+    "check_count": [
+      "self",
+      "count",
+      "header",
+      "line"
+    ],
+    "check_width": [
+      "self",
+      "cells",
+      "fields",
+      "line"
+    ],
+    "items": [
+      "self",
+      "header",
+      "line",
+      "depth",
+      "parent"
+    ],
+    "item": [
+      "self",
+      "line",
+      "depth"
+    ],
+    "rows": [
+      "self",
+      "header",
+      "line",
+      "depth",
+      "parent"
+    ],
+    "entries": [
+      "self",
+      "header",
+      "line",
+      "depth",
+      "parent"
+    ],
+    "materialize": [
+      "self",
+      "fields",
+      "cells"
+    ]
+  },
+  "ToonDecodeError": {
+    "__init__": [
+      "self",
+      "msg",
+      "line",
+      "source"
+    ],
+    "__reduce__": [
+      "self"
+    ]
+  },
+  "COMMA": [],
+  "TAB": [],
+  "PIPE": [],
+  "DELIMITERS": [],
+  "_UNQUOTED_KEY": [],
+  "_NUMERIC_LIKE": [],
+  "_NUMBER": [],
+  "_STRUCTURAL": [],
+  "_ESCAPES": [],
+  "_NEEDS_ESCAPE": [],
+  "_CANONICAL_MIN": [],
+  "_CANONICAL_MAX": [],
+  "is_number_token": [
+    "token"
+  ],
+  "_escape_char": [
+    "match"
+  ],
+  "quote": [
+    "value"
+  ],
+  "_needs_quotes": [
+    "value",
+    "delimiter"
+  ],
+  "encode_string": [
+    "value",
+    "delimiter"
+  ],
+  "encode_key": [
+    "key"
+  ],
+  "format_decimal": [
+    "value"
+  ],
+  "format_float": [
+    "value"
+  ],
+  "__toon_spec__": []
+}
