@@ -1,0 +1,1014 @@
+{
+  "main": [],
+  "templater_logger": [],
+  "FluffConfig": {},
+  "fluff_config_from_json": [
+    "json_stringified"
+  ],
+  "FormatterInterface": {},
+  "SQLTemplaterError": {
+    "__init__": [
+      "self",
+      "message",
+      "line_no",
+      "line_pos"
+    ]
+  },
+  "SQLFluffSkipFile": {},
+  "zero_slice": [
+    "i"
+  ],
+  "slice_length": [
+    "s"
+  ],
+  "offset_slice": [
+    "start",
+    "offset"
+  ],
+  "findall": [
+    "substr",
+    "in_str"
+  ],
+  "TemplatedFileSlice": {},
+  "RawFileSlice": {
+    "end_source_idx": [
+      "self"
+    ],
+    "source_slice": [
+      "self"
+    ],
+    "is_source_only_slice": [
+      "self"
+    ]
+  },
+  "TemplatedFile": {
+    "__init__": [
+      "self",
+      "source_str",
+      "fname",
+      "templated_str",
+      "sliced_file",
+      "raw_sliced"
+    ]
+  },
+  "IntermediateFileSlice": {
+    "_trim_end": [
+      "self",
+      "templated_str",
+      "target_end"
+    ],
+    "trim_ends": [
+      "self",
+      "templated_str"
+    ],
+    "try_simple": [
+      "self"
+    ],
+    "coalesce": [
+      "self"
+    ]
+  },
+  "PythonTemplater": {
+    "name": [],
+    "config_subsection": [],
+    "__init__": [
+      "self",
+      "override_context"
+    ],
+    "infer_type": [
+      "s"
+    ],
+    "get_context": [
+      "self",
+      "fname",
+      "config",
+      "context"
+    ],
+    "process": [
+      "self"
+    ],
+    "slice_file": [
+      "self",
+      "raw_str",
+      "render_func",
+      "config",
+      "append_to_templated"
+    ],
+    "_check_for_wrapped": [
+      "cls",
+      "slices",
+      "templated_str",
+      "unwrap_wrapped"
+    ],
+    "_substring_occurrences": [
+      "cls",
+      "in_str",
+      "substrings"
+    ],
+    "_sorted_occurrence_tuples": [
+      "occurrences"
+    ],
+    "_slice_template": [
+      "cls",
+      "in_str"
+    ],
+    "_split_invariants": [
+      "cls",
+      "raw_sliced",
+      "literals",
+      "raw_occurrences",
+      "templated_occurrences",
+      "templated_str"
+    ],
+    "_filter_occurrences": [
+      "file_slice",
+      "occurrences"
+    ],
+    "_coalesce_types": [
+      "elems"
+    ],
+    "_split_uniques_coalesce_rest": [
+      "cls",
+      "split_file",
+      "raw_occurrences",
+      "templ_occurrences",
+      "templated_str"
+    ]
+  },
+  "process_from_rust": [
+    "string",
+    "fname",
+    "config_string",
+    "live_context"
+  ],
+  "JinjaTrace": {},
+  "RawSliceInfo": {},
+  "JinjaTracer": {
+    "__init__": [
+      "self",
+      "raw_str",
+      "raw_sliced",
+      "raw_slice_info",
+      "sliced_file",
+      "render_func"
+    ],
+    "trace": [
+      "self",
+      "append_to_templated"
+    ],
+    "find_slice_index": [
+      "self",
+      "slice_identifier"
+    ],
+    "move_to_slice": [
+      "self",
+      "target_slice_idx",
+      "target_slice_length"
+    ],
+    "record_trace": [
+      "self",
+      "target_slice_length",
+      "slice_idx",
+      "slice_type"
+    ]
+  },
+  "JinjaTagConfiguration": {},
+  "JinjaAnalyzer": {
+    "re_open_tag": [],
+    "re_close_tag": [],
+    "__init__": [
+      "self",
+      "raw_str",
+      "env"
+    ],
+    "_get_tag_configuration": [
+      "cls",
+      "tag"
+    ],
+    "_get_jinja_tracer": [
+      "self",
+      "raw_str",
+      "raw_sliced",
+      "raw_slice_info",
+      "sliced_file",
+      "render_func"
+    ],
+    "next_slice_id": [
+      "self"
+    ],
+    "slice_info_for_literal": [
+      "self",
+      "length",
+      "prefix"
+    ],
+    "update_inside_set_call_macro_or_block": [
+      "self",
+      "block_type",
+      "trimmed_parts",
+      "m_open",
+      "m_close",
+      "tag_contents"
+    ],
+    "make_raw_slice_info": [
+      "self",
+      "unique_alternate_id",
+      "alternate_code",
+      "inside_block"
+    ],
+    "block_types": [],
+    "analyze": [
+      "self",
+      "render_func"
+    ],
+    "track_templated": [
+      "self",
+      "m_open",
+      "m_close",
+      "tag_contents"
+    ],
+    "track_call": [
+      "self",
+      "m_open",
+      "m_close",
+      "tag_contents"
+    ],
+    "track_literal": [
+      "self",
+      "raw",
+      "block_idx"
+    ],
+    "extract_tag_contents": [
+      "str_parts",
+      "m_close",
+      "m_open",
+      "str_buff"
+    ],
+    "track_block_end": [
+      "self",
+      "block_type",
+      "tag_name"
+    ],
+    "update_next_slice_indices": [
+      "self",
+      "slice_idx",
+      "block_type",
+      "tag_name"
+    ],
+    "handle_left_whitespace_stripping": [
+      "self",
+      "token",
+      "block_idx"
+    ]
+  },
+  "get_test_project_path": [],
+  "get_test_files": [
+    "project_path"
+  ],
+  "create_config": [
+    "project_path"
+  ],
+  "benchmark_old_approach": [
+    "files",
+    "config",
+    "live_context",
+    "iterations"
+  ],
+  "benchmark_cached_approach": [
+    "files",
+    "config",
+    "config_string",
+    "live_context",
+    "iterations"
+  ],
+  "benchmark_batch_approach": [
+    "files",
+    "config_string",
+    "live_context",
+    "iterations"
+  ],
+  "run_benchmark": [],
+  "DbtCompilationError": {},
+  "DbtFailedToConnectError": {},
+  "test_dbt_config_precedence": [
+    "suffix",
+    "monkeypatch"
+  ],
+  "test_dbt": [],
+  "test_dbt_compile_failure_reports_reason": [
+    "tmp_path",
+    "dbt_skip_compilation_error",
+    "exception_class",
+    "exception_msg"
+  ],
+  "test_target_and_target_path_from_env": [
+    "monkeypatch"
+  ],
+  "test_project_dir_from_env": [
+    "tmp_path",
+    "monkeypatch"
+  ],
+  "test_profiles_dir_env_precedence": [
+    "tmp_path",
+    "monkeypatch"
+  ],
+  "test_process_passes_project_dir_without_changing_cwd": [
+    "tmp_path",
+    "monkeypatch"
+  ],
+  "test_find_node_with_symlinked_local_package": [
+    "tmp_path"
+  ],
+  "test_templater_caching": [],
+  "test_batch_processing": [],
+  "test_batch_processing_empty": [],
+  "test_batch_processing_preserves_order": [],
+  "test_is_dbt_exception": [],
+  "test_templater_dbt_threads_default": [],
+  "test_templater_dbt_threads_explicit": [],
+  "test_handle_dbt_errors_returns_pickleable_native_exception": [
+    "error_class"
+  ],
+  "test_handle_dbt_errors_strips_dbt_context_from_native_exception": [],
+  "test_handle_dbt_errors_reports_connection_failure": [],
+  "_dummy_get_mp_context": [],
+  "_get_dbt_config_value": [
+    "configured",
+    "env_var_suffix",
+    "default"
+  ],
+  "DbtConfigArgs": {},
+  "is_dbt_exception": [
+    "exception"
+  ],
+  "_extract_error_detail": [
+    "exception"
+  ],
+  "T": [],
+  "handle_dbt_errors": [
+    "error_class",
+    "preamble"
+  ],
+  "DbtTemplater": {
+    "name": [],
+    "sequential_fail_limit": [],
+    "adapters": [],
+    "__init__": [
+      "self",
+      "sqlfluff_config",
+      "context",
+      "override_context"
+    ],
+    "config_pairs": [
+      "self"
+    ],
+    "_dbt_version": [
+      "self"
+    ],
+    "dbt_version": [
+      "self"
+    ],
+    "dbt_version_tuple": [
+      "self"
+    ],
+    "try_silence_dbt_logs": [
+      "self"
+    ],
+    "dbt_config": [
+      "self"
+    ],
+    "dbt_compiler": [
+      "self"
+    ],
+    "dbt_manifest": [
+      "self"
+    ],
+    "dbt_selector_method": [
+      "self"
+    ],
+    "_get_profiles_dir": [
+      "self"
+    ],
+    "_get_project_dir": [
+      "self"
+    ],
+    "_get_dbt_skip_compilation_error": [
+      "self"
+    ],
+    "_get_profile": [
+      "self"
+    ],
+    "_get_target": [
+      "self"
+    ],
+    "_get_target_path": [
+      "self"
+    ],
+    "_get_threads": [
+      "self"
+    ],
+    "_get_cli_vars": [
+      "self"
+    ],
+    "sequence_files": [
+      "self",
+      "fnames",
+      "config",
+      "formatter"
+    ],
+    "process": [
+      "self"
+    ],
+    "_find_node": [
+      "self",
+      "fname",
+      "config",
+      "dbt_dir"
+    ],
+    "_find_skip_reason": [
+      "self",
+      "fname"
+    ],
+    "_unsafe_process": [
+      "self",
+      "fname",
+      "in_str",
+      "config",
+      "dbt_dir"
+    ],
+    "connection": [
+      "self"
+    ]
+  },
+  "SnapshotExtension": {
+    "tags": [],
+    "render": [
+      "self",
+      "format_string"
+    ]
+  },
+  "_get_or_create_templater": [
+    "config",
+    "live_context"
+  ],
+  "clear_templater_cache": [],
+  "process_batch_from_rust": [
+    "files",
+    "config_string",
+    "live_context"
+  ],
+  "PYTHON_STRING": [],
+  "test__templater_python_intermediate__trim": [
+    "int_slice",
+    "templated_str",
+    "head_test",
+    "tail_test",
+    "int_test"
+  ],
+  "test__templater_python_substring_occurrences": [
+    "mainstr",
+    "substrings",
+    "positions"
+  ],
+  "test__templater_python_sorted_occurrence_tuples": [
+    "test",
+    "result"
+  ],
+  "test__templater_python_slice_template": [
+    "test",
+    "result"
+  ],
+  "test__templater_python_split_invariants": [
+    "raw_sliced",
+    "literals",
+    "raw_occurrences",
+    "templated_occurrences",
+    "templated_length",
+    "result"
+  ],
+  "test__templater_python_split_uniques_coalesce_rest": [
+    "split_file",
+    "raw_occurrences",
+    "templated_occurrences",
+    "templated_str",
+    "result",
+    "caplog"
+  ],
+  "test__templater_python_dot_notation_variables": [
+    "raw_str",
+    "result"
+  ],
+  "test__templater_python_dot_notation_fail": [
+    "context",
+    "error_string"
+  ],
+  "test__templater_python_ignore_templating": [
+    "in_str",
+    "ignore",
+    "context",
+    "expected_templated_str",
+    "raises_error"
+  ],
+  "ERROR_PREAMBLE": [],
+  "Region": [],
+  "is_sqlmesh_exception": [
+    "exception"
+  ],
+  "handle_sqlmesh_errors": [
+    "error_class",
+    "preamble"
+  ],
+  "SQLMeshTemplater": {
+    "name": [],
+    "templates_in_worker": [],
+    "sequential_fail_limit": [],
+    "__init__": [
+      "self",
+      "override_context"
+    ],
+    "config_pairs": [
+      "self"
+    ],
+    "_clear_cached_sqlmesh_context": [
+      "self"
+    ],
+    "_sqlmesh_context_key": [
+      "self",
+      "config"
+    ],
+    "_update_runtime_context": [
+      "self"
+    ],
+    "_get_project_dir": [
+      "self",
+      "config"
+    ],
+    "_get_config_name": [
+      "self"
+    ],
+    "_get_gateway_name": [
+      "self"
+    ],
+    "_get_dialect": [
+      "self"
+    ],
+    "sqlmesh_version": [
+      "self"
+    ],
+    "sqlmesh_context": [
+      "self"
+    ],
+    "process": [
+      "self"
+    ],
+    "_unsafe_process": [
+      "self",
+      "fname",
+      "in_str",
+      "config"
+    ],
+    "_locate_query_span": [
+      "self",
+      "source_str",
+      "model"
+    ],
+    "_build_query_file": [
+      "self",
+      "fname",
+      "source_str",
+      "model",
+      "span"
+    ],
+    "_resolve_model": [
+      "self",
+      "fname",
+      "model_name"
+    ],
+    "_get_model_name_from_path": [
+      "self",
+      "fname"
+    ],
+    "_skip_leading_trivia": [
+      "source"
+    ],
+    "_find_model_block_end": [
+      "source"
+    ],
+    "_skip_string": [
+      "s",
+      "i"
+    ],
+    "_skip_balanced_parens": [
+      "s",
+      "i"
+    ],
+    "_find_macro_spans": [
+      "body"
+    ],
+    "_has_jinja": [
+      "text"
+    ],
+    "_build_macro_evaluator": [
+      "self",
+      "model"
+    ],
+    "_resolve_macro_spans": [
+      "self",
+      "model",
+      "body",
+      "spans"
+    ],
+    "_render_body": [
+      "self",
+      "model"
+    ],
+    "_make_file": [
+      "self",
+      "fname",
+      "source_str",
+      "templated_str",
+      "regions"
+    ],
+    "_passthrough_file": [
+      "self",
+      "fname",
+      "source_str",
+      "header_end"
+    ],
+    "_substitute_regions": [
+      "self",
+      "source_str",
+      "start",
+      "end",
+      "spans",
+      "replacements"
+    ],
+    "_substitute_file": [
+      "self",
+      "fname",
+      "source_str",
+      "header_end",
+      "spans",
+      "replacements"
+    ],
+    "_coarse_templated_file": [
+      "self",
+      "fname",
+      "source_str",
+      "header_end",
+      "rendered_sql"
+    ],
+    "_create_literal_templated_file": [
+      "self",
+      "fname",
+      "templated_content",
+      "source_content"
+    ]
+  },
+  "FunctionWrapper": {
+    "__init__": [
+      "self",
+      "name",
+      "callable"
+    ],
+    "__call__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "is_zero_slice": [
+    "s"
+  ],
+  "UndefinedRecorder": {
+    "unsafe_callable": [],
+    "alters_data": [],
+    "__init__": [
+      "self",
+      "name",
+      "undefined_set"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__getattr__": [
+      "self",
+      "item"
+    ],
+    "__getitem__": [
+      "self",
+      "item"
+    ],
+    "__call__": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ]
+  },
+  "JinjaTemplater": {
+    "_extract_macros_from_template": [
+      "template",
+      "env",
+      "ctx"
+    ],
+    "_extract_macros_from_path": [
+      "cls",
+      "path",
+      "env",
+      "ctx",
+      "exclude_paths",
+      "config_encoding"
+    ],
+    "_extract_macros": [
+      "self",
+      "config",
+      "env",
+      "ctx"
+    ],
+    "_extract_libraries_from_config": [
+      "self",
+      "config"
+    ],
+    "_crawl_tree": [
+      "cls",
+      "tree",
+      "variable_names",
+      "raw"
+    ],
+    "_get_jinja_env": [
+      "self",
+      "config"
+    ],
+    "_get_macros_path": [
+      "self",
+      "config",
+      "key"
+    ],
+    "_get_loader_search_path": [
+      "self",
+      "config"
+    ],
+    "_get_jinja_analyzer": [
+      "self",
+      "raw_str",
+      "env",
+      "config"
+    ],
+    "_apply_dbt_builtins": [
+      "self",
+      "config"
+    ],
+    "_get_env_context": [
+      "self",
+      "fname",
+      "config",
+      "context",
+      "env"
+    ],
+    "construct_render_func": [
+      "self",
+      "fname",
+      "config",
+      "context"
+    ],
+    "_generate_violations_for_undefined_variables": [
+      "self",
+      "in_str",
+      "syntax_tree",
+      "undefined_variables"
+    ],
+    "_init_undefined_tracking": [
+      "live_context",
+      "potentially_undefined_variables",
+      "ignore_templating"
+    ],
+    "process": [
+      "self"
+    ],
+    "slice_file": [
+      "self",
+      "raw_str",
+      "render_func",
+      "config",
+      "append_to_templated"
+    ],
+    "_rectify_templated_slices": [
+      "length_deltas",
+      "sliced_template"
+    ],
+    "_calculate_variant_score": [
+      "raw_sliced",
+      "sliced_file",
+      "uncovered_slices",
+      "original_source_slices"
+    ],
+    "_handle_unreached_code": [
+      "self",
+      "in_str",
+      "render_func",
+      "uncovered_slices",
+      "append_to_templated",
+      "config"
+    ],
+    "_is_trim_tag": [
+      "raw_slice"
+    ],
+    "_is_unreached_whitespace_adjacent_to_trim_tag": [
+      "cls",
+      "raw_sliced",
+      "idx"
+    ],
+    "process_with_variants": [
+      "self"
+    ],
+    "_exclude_macros": [
+      "macro_path",
+      "exclude_macros_path"
+    ]
+  },
+  "DummyUndefined": {
+    "unsafe_callable": [],
+    "alters_data": [],
+    "__init__": [
+      "self",
+      "name"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "create": [
+      "cls",
+      "name"
+    ],
+    "__getattr__": [
+      "self",
+      "item"
+    ],
+    "_self_impl": [
+      "self"
+    ],
+    "_bool_impl": [
+      "self"
+    ],
+    "__add__": [],
+    "__sub__": [],
+    "__mul__": [],
+    "__floordiv__": [],
+    "__truediv__": [],
+    "__mod__": [],
+    "__pow__": [],
+    "__pos__": [],
+    "__neg__": [],
+    "__lshift__": [],
+    "__rshift__": [],
+    "__getitem__": [],
+    "__invert__": [],
+    "__call__": [],
+    "__and__": [],
+    "__or__": [],
+    "__xor__": [],
+    "__bool__": [],
+    "__lt__": [],
+    "__le__": [],
+    "__ge__": [],
+    "__gt__": [],
+    "__eq__": [],
+    "__ne__": [],
+    "__hash__": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ]
+  },
+  "DBTTestExtension": {
+    "tags": [],
+    "parse": [
+      "self",
+      "parser"
+    ]
+  },
+  "process_variants_from_rust": [
+    "string",
+    "fname",
+    "config_string",
+    "live_context"
+  ],
+  "RelationEmulator": {
+    "unsafe_callable": [],
+    "alters_data": [],
+    "identifier": [],
+    "schema": [],
+    "database": [],
+    "__init__": [
+      "self",
+      "identifier"
+    ],
+    "__call__": [
+      "self"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "VarEmulator": {
+    "__new__": [
+      "cls",
+      "value"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "__getitem__": [
+      "self",
+      "name"
+    ]
+  },
+  "MacroReturn": {
+    "__init__": [
+      "self",
+      "value"
+    ]
+  },
+  "_builtin_return": [
+    "value"
+  ],
+  "DbtMacroWrapper": {
+    "unsafe_callable": [],
+    "alters_data": [],
+    "__init__": [
+      "self",
+      "macro"
+    ],
+    "__call__": [
+      "self"
+    ]
+  },
+  "DBT_BUILTINS": [],
+  "ConfigAwareJinjaTemplater": {
+    "_get_jinja_analyzer": [
+      "self",
+      "raw_str",
+      "env",
+      "config"
+    ]
+  },
+  "_jinja_config": [
+    "macro_paths",
+    "library_paths"
+  ],
+  "test_jinja_literal_fast_path_skips_rendering_and_variants": [
+    "monkeypatch"
+  ],
+  "test_jinja_fully_covered_template_constructs_render_func_once": [
+    "monkeypatch"
+  ],
+  "test_jinja_literal_macro_path_error_is_preserved": [
+    "tmp_path"
+  ],
+  "test_jinja_literal_library_path_error_is_preserved": [
+    "tmp_path"
+  ],
+  "test_var_emulator_magic_methods": [],
+  "test_jinja_analyzer_receives_config": [],
+  "test_dbt_builtin_function_relation": [],
+  "test_jinja_dbt_builtin_function": [],
+  "test_jinja_loader_search_path_does_not_load_macros_globally": [
+    "tmp_path"
+  ],
+  "test_jinja_exclude_macros_from_path": [
+    "tmp_path"
+  ],
+  "test_jinja_macro_path_uses_configured_encoding": [
+    "tmp_path",
+    "monkeypatch",
+    "file_encoding",
+    "config_encoding",
+    "macro_path_is_directory"
+  ],
+  "test_jinja_macros_can_call_macros_from_other_files": [
+    "tmp_path"
+  ],
+  "test_dummy_undefined_fail_with_undefined_error": [],
+  "test_undefined_magic_methods": [],
+  "test_undefined_recorder_iter_records_name": [],
+  "test_jinja_undefined_multivar_for_loop_user_friendly_error": [],
+  "PROJECT": [],
+  "_config": [],
+  "test_plain_model_keeps_exact_literal_positions": [
+    "monkeypatch"
+  ],
+  "test_macro_scanner_ignores_strings_and_comments": [],
+  "test_batch_bridge_preserves_order_and_positions": [],
+  "test_sqlmesh_macro_model_uses_project_context": [],
+  "test_sqlmesh_inline_macros_preserve_literal_regions": [
+    "model"
+  ],
+  "test_sqlmesh_jinja_model_renders_without_source_collapse": []
+}
