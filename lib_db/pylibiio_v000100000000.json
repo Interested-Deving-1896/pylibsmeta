@@ -1,0 +1,623 @@
+{
+  "_check_null": [
+    "result",
+    "func",
+    "arguments"
+  ],
+  "_check_negative": [
+    "result",
+    "func",
+    "arguments"
+  ],
+  "_check_ptr_err": [
+    "result",
+    "func",
+    "arguments"
+  ],
+  "_check_ptr_err_allow_null": [
+    "result",
+    "func",
+    "arguments"
+  ],
+  "_isstring": [
+    "argument"
+  ],
+  "_Scan": {},
+  "_Context": {},
+  "_Device": {},
+  "_Channel": {},
+  "_ChannelsMask": {},
+  "_EventStream": {},
+  "_Buffer": {},
+  "_BufferStream": {},
+  "_Block": {},
+  "_Stream": {},
+  "_Attr": {},
+  "ContextParams": {},
+  "DataFormat": {
+    "_fields_": []
+  },
+  "EventType": {
+    "IIO_EV_TYPE_THRESH": [],
+    "IIO_EV_TYPE_MAG": [],
+    "IIO_EV_TYPE_ROC": [],
+    "IIO_EV_TYPE_THRESH_ADAPTIVE": [],
+    "IIO_EV_TYPE_MAG_ADAPTIVE": [],
+    "IIO_EV_TYPE_CHANGE": [],
+    "IIO_EV_TYPE_MAG_REFERENCED": [],
+    "IIO_EV_TYPE_GESTURE": [],
+    "IIO_EV_TYPE_FAULT": []
+  },
+  "EventDirection": {
+    "IIO_EV_DIR_EITHER": [],
+    "IIO_EV_DIR_RISING": [],
+    "IIO_EV_DIR_FALLING": [],
+    "IIO_EV_DIR_NONE": [],
+    "IIO_EV_DIR_SINGLETAP": [],
+    "IIO_EV_DIR_DOUBLETAP": [],
+    "IIO_EV_DIR_FAULT_OPENWIRE": []
+  },
+  "Event": {
+    "_fields_": [],
+    "type": [],
+    "direction": []
+  },
+  "ChannelModifier": {
+    "IIO_NO_MOD": [],
+    "IIO_MOD_X": [],
+    "IIO_MOD_Y": [],
+    "IIO_MOD_Z": [],
+    "IIO_MOD_X_AND_Y": [],
+    "IIO_MOD_X_AND_Z": [],
+    "IIO_MOD_Y_AND_Z": [],
+    "IIO_MOD_X_AND_Y_AND_Z": [],
+    "IIO_MOD_X_OR_Y": [],
+    "IIO_MOD_X_OR_Z": [],
+    "IIO_MOD_Y_OR_Z": [],
+    "IIO_MOD_X_OR_Y_OR_Z": [],
+    "IIO_MOD_LIGHT_BOTH": [],
+    "IIO_MOD_LIGHT_IR": [],
+    "IIO_MOD_ROOT_SUM_SQUARED_X_Y": [],
+    "IIO_MOD_SUM_SQUARED_X_Y_Z": [],
+    "IIO_MOD_LIGHT_CLEAR": [],
+    "IIO_MOD_LIGHT_RED": [],
+    "IIO_MOD_LIGHT_GREEN": [],
+    "IIO_MOD_LIGHT_BLUE": [],
+    "IIO_MOD_QUATERNION": [],
+    "IIO_MOD_TEMP_AMBIENT": [],
+    "IIO_MOD_TEMP_OBJECT": [],
+    "IIO_MOD_NORTH_MAGN": [],
+    "IIO_MOD_NORTH_TRUE": [],
+    "IIO_MOD_NORTH_MAGN_TILT_COMP": [],
+    "IIO_MOD_NORTH_TRUE_TILT_COMP": [],
+    "IIO_MOD_RUNNING": [],
+    "IIO_MOD_JOGGING": [],
+    "IIO_MOD_WALKING": [],
+    "IIO_MOD_STILL": [],
+    "IIO_MOD_ROOT_SUM_SQUARED_X_Y_Z": [],
+    "IIO_MOD_I": [],
+    "IIO_MOD_Q": [],
+    "IIO_MOD_CO2": [],
+    "IIO_MOD_VOC": [],
+    "IIO_MOD_LIGHT_UV": [],
+    "IIO_MOD_LIGHT_DUV": [],
+    "IIO_MOD_PM1": [],
+    "IIO_MOD_PM2P5": [],
+    "IIO_MOD_PM4": [],
+    "IIO_MOD_PM10": [],
+    "IIO_MOD_ETHANOL": [],
+    "IIO_MOD_H2": [],
+    "IIO_MOD_O2": [],
+    "IIO_MOD_LINEAR_X": [],
+    "IIO_MOD_LINEAR_Y": [],
+    "IIO_MOD_LINEAR_Z": [],
+    "IIO_MOD_PITCH": [],
+    "IIO_MOD_YAW": [],
+    "IIO_MOD_ROLL": [],
+    "IIO_MOD_LIGHT_UVA": [],
+    "IIO_MOD_LIGHT_UVB": [],
+    "IIO_MOD_RMS": [],
+    "IIO_MOD_ACTIVE": [],
+    "IIO_MOD_REACTIVE": [],
+    "IIO_MOD_APPARENT": [],
+    "IIO_MOD_QUATERNION_AXIS": []
+  },
+  "ChannelType": {
+    "IIO_VOLTAGE": [],
+    "IIO_CURRENT": [],
+    "IIO_POWER": [],
+    "IIO_ACCEL": [],
+    "IIO_ANGL_VEL": [],
+    "IIO_MAGN": [],
+    "IIO_LIGHT": [],
+    "IIO_INTENSITY": [],
+    "IIO_PROXIMITY": [],
+    "IIO_TEMP": [],
+    "IIO_INCLI": [],
+    "IIO_ROT": [],
+    "IIO_ANGL": [],
+    "IIO_TIMESTAMP": [],
+    "IIO_CAPACITANCE": [],
+    "IIO_ALTVOLTAGE": [],
+    "IIO_CCT": [],
+    "IIO_PRESSURE": [],
+    "IIO_HUMIDITYRELATIVE": [],
+    "IIO_ACTIVITY": [],
+    "IIO_STEPS": [],
+    "IIO_ENERGY": [],
+    "IIO_DISTANCE": [],
+    "IIO_VELOCITY": [],
+    "IIO_CONCENTRATION": [],
+    "IIO_RESISTANCE": [],
+    "IIO_PH": [],
+    "IIO_UVINDEX": [],
+    "IIO_ELECTRICALCONDUCTIVITY": [],
+    "IIO_COUNT": [],
+    "IIO_INDEX": [],
+    "IIO_GRAVITY": [],
+    "IIO_POSITIONRELATIVE": [],
+    "IIO_PHASE": [],
+    "IIO_MASSCONCENTRATION": [],
+    "IIO_DELTA_ANGL": [],
+    "IIO_DELTA_VELOCITY": [],
+    "IIO_COLORTEMP": [],
+    "IIO_CHROMATICITY": [],
+    "IIO_ATTENTION": [],
+    "IIO_ALTCURRENT": [],
+    "IIO_COVERAGE": [],
+    "IIO_VOLUMEFLOW": [],
+    "IIO_CHAN_TYPE_UNKNOWN": []
+  },
+  "_ScanPtr": [],
+  "_ContextPtr": [],
+  "_DevicePtr": [],
+  "_ChannelPtr": [],
+  "_ChannelsMaskPtr": [],
+  "_EventPtr": [],
+  "_EventStreamPtr": [],
+  "_BufferPtr": [],
+  "_BufferStreamPtr": [],
+  "_BlockPtr": [],
+  "_DataFormatPtr": [],
+  "_ContextParamsPtr": [],
+  "_StreamPtr": [],
+  "_AttrPtr": [],
+  "_lib": [],
+  "_libc": [],
+  "_get_backends_count": [],
+  "_get_backend": [],
+  "_scan": [],
+  "_scan_destroy": [],
+  "_scan_get_results_count": [],
+  "_scan_get_description": [],
+  "_scan_get_uri": [],
+  "_iio_has_backend": [],
+  "_iio_strerror": [],
+  "_new_ctx": [],
+  "_destroy": [],
+  "_get_name": [],
+  "_get_description": [],
+  "_get_xml": [],
+  "_get_version_major": [],
+  "_get_version_minor": [],
+  "_get_version_patch": [],
+  "_get_version_tag": [],
+  "_get_attrs_count": [],
+  "_get_attr": [],
+  "_devices_count": [],
+  "_get_device": [],
+  "_find_device": [],
+  "_set_timeout": [],
+  "_ping": [],
+  "_a_get_name": [],
+  "_a_get_fname": [],
+  "_a_get_value": [],
+  "_a_read": [],
+  "_a_write": [],
+  "_d_get_id": [],
+  "_d_get_name": [],
+  "_d_get_label": [],
+  "_d_attr_count": [],
+  "_d_get_attr": [],
+  "_d_create_evstream": [],
+  "_d_debug_attr_count": [],
+  "_d_get_debug_attr": [],
+  "_d_event_attr_count": [],
+  "_d_get_event_attr": [],
+  "_d_buffers_count": [],
+  "_d_get_buffer": [],
+  "_b_attr_count": [],
+  "_b_get_attr": [],
+  "_b_scan_elements_count": [],
+  "_b_get_scan_element": [],
+  "_d_get_context": [],
+  "_d_find_channel": [],
+  "_d_reg_write": [],
+  "_d_reg_read": [],
+  "_channels_count": [],
+  "_get_channel": [],
+  "_get_sample_size": [],
+  "_d_is_trigger": [],
+  "_d_get_trigger": [],
+  "_d_set_trigger": [],
+  "_c_get_id": [],
+  "_c_get_name": [],
+  "_c_get_label": [],
+  "_c_is_output": [],
+  "_c_is_scan_element": [],
+  "_c_attr_count": [],
+  "_c_get_attr": [],
+  "_c_event_attr_count": [],
+  "_c_get_event_attr": [],
+  "_create_channels_mask": [],
+  "_channels_mask_destroy": [],
+  "_c_enable": [],
+  "_c_disable": [],
+  "_c_is_enabled": [],
+  "_c_read": [],
+  "_c_write": [],
+  "_channel_get_device": [],
+  "_channel_get_index": [],
+  "_channel_get_data_format": [],
+  "_channel_get_modifier": [],
+  "_channel_get_type": [],
+  "_channel_refresh_format": [],
+  "_block_start": [],
+  "_block_end": [],
+  "_buffer_get_device": [],
+  "_buffer_is_output": [],
+  "_buffer_open": [],
+  "_buffer_close": [],
+  "_buffer_stream_cancel": [],
+  "_buffer_stream_start": [],
+  "_buffer_stream_stop": [],
+  "_buffer_stream_get_mask": [],
+  "_block_get_buffer_stream": [],
+  "_create_block": [],
+  "_block_destroy": [],
+  "_block_enqueue": [],
+  "_block_dequeue": [],
+  "_create_stream": [],
+  "_stream_destroy": [],
+  "_stream_get_next_block": [],
+  "_stream_cancel": [],
+  "_evstream_destroy": [],
+  "_evstream_read": [],
+  "_ev_get_channel": [],
+  "_libc_free": [],
+  "_get_lib_version": [
+    "ctx"
+  ],
+  "_has_backend": [
+    "backend"
+  ],
+  "iio_strerror": [
+    "err",
+    "buf",
+    "length"
+  ],
+  "version": [],
+  "backends": [],
+  "bindings_version": [],
+  "_IIO_Object": {
+    "__init__": [
+      "self",
+      "hdl",
+      "parent"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ]
+  },
+  "Attr": {
+    "__init__": [
+      "self",
+      "parent",
+      "attr"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "_read": [
+      "self"
+    ],
+    "_write": [
+      "self",
+      "value"
+    ],
+    "name": [],
+    "filename": [],
+    "value": []
+  },
+  "ChannelsMask": {
+    "__init__": [
+      "self",
+      "dev"
+    ],
+    "__del__": [
+      "self"
+    ],
+    "_set_channels": [
+      "self",
+      "channels"
+    ],
+    "channels": [],
+    "sample_size": [
+      "self"
+    ]
+  },
+  "Channel": {
+    "__init__": [
+      "self",
+      "dev",
+      "_channel"
+    ],
+    "read": [
+      "self",
+      "block",
+      "raw"
+    ],
+    "write": [
+      "self",
+      "block",
+      "array",
+      "raw"
+    ],
+    "id": [],
+    "name": [],
+    "label": [],
+    "attrs": [],
+    "event_attrs": [],
+    "output": [],
+    "scan_element": [],
+    "device": [
+      "self"
+    ],
+    "index": [
+      "self"
+    ],
+    "data_format": [
+      "self"
+    ],
+    "modifier": [
+      "self"
+    ],
+    "type": [
+      "self"
+    ],
+    "refresh_format": [
+      "self"
+    ]
+  },
+  "Block": {
+    "__init__": [
+      "self",
+      "buffer_stream",
+      "size",
+      "_block"
+    ],
+    "__del__": [
+      "self"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "enqueue": [
+      "self",
+      "size",
+      "cyclic"
+    ],
+    "dequeue": [
+      "self",
+      "nonblock"
+    ],
+    "read": [
+      "self"
+    ],
+    "write": [
+      "self",
+      "array"
+    ],
+    "buffer_stream": [
+      "self"
+    ]
+  },
+  "Buffer": {
+    "__init__": [
+      "self",
+      "device",
+      "_buffer"
+    ],
+    "device": [
+      "self"
+    ],
+    "output": [
+      "self"
+    ],
+    "open": [
+      "self",
+      "mask"
+    ],
+    "attrs": [],
+    "scan_elements": []
+  },
+  "BufferStream": {
+    "__init__": [
+      "self",
+      "buffer",
+      "mask",
+      "_buffer_stream"
+    ],
+    "__del__": [
+      "self"
+    ],
+    "cancel": [
+      "self"
+    ],
+    "_set_started": [
+      "self",
+      "started"
+    ],
+    "started": [],
+    "mask": [
+      "self"
+    ],
+    "buffer": [
+      "self"
+    ],
+    "create_block": [
+      "self",
+      "size"
+    ]
+  },
+  "Stream": {
+    "__init__": [
+      "self",
+      "buffer",
+      "mask",
+      "samples_count",
+      "nb_blocks"
+    ],
+    "__del__": [
+      "self"
+    ],
+    "cancel": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__next__": [
+      "self"
+    ]
+  },
+  "EventStream": {
+    "__init__": [
+      "self"
+    ],
+    "_create": [
+      "cls",
+      "device",
+      "stream"
+    ],
+    "read": [
+      "self",
+      "nonblock"
+    ]
+  },
+  "_DeviceOrTrigger": {
+    "__init__": [
+      "self",
+      "_ctx",
+      "_device"
+    ],
+    "reg_write": [
+      "self",
+      "reg",
+      "value"
+    ],
+    "reg_read": [
+      "self",
+      "reg"
+    ],
+    "find_channel": [
+      "self",
+      "name_or_id",
+      "is_output"
+    ],
+    "id": [],
+    "name": [],
+    "label": [],
+    "attrs": [],
+    "debug_attrs": [],
+    "event_attrs": [],
+    "channels": []
+  },
+  "Trigger": {
+    "__init__": [
+      "self",
+      "ctx",
+      "_device"
+    ],
+    "_get_rate": [
+      "self"
+    ],
+    "_set_rate": [
+      "self",
+      "value"
+    ],
+    "frequency": []
+  },
+  "Device": {
+    "__init__": [
+      "self",
+      "ctx",
+      "_device"
+    ],
+    "_set_trigger": [
+      "self",
+      "trigger"
+    ],
+    "_get_trigger": [
+      "self"
+    ],
+    "event_stream": [
+      "self"
+    ],
+    "trigger": [],
+    "hwmon": [],
+    "context": [
+      "self"
+    ],
+    "get_buffer": [
+      "self",
+      "idx"
+    ],
+    "buffers": []
+  },
+  "Context": {
+    "__init__": [
+      "self",
+      "_context"
+    ],
+    "__del__": [
+      "self"
+    ],
+    "set_timeout": [
+      "self",
+      "timeout"
+    ],
+    "ping": [
+      "self"
+    ],
+    "find_device": [
+      "self",
+      "name_or_id_or_label"
+    ],
+    "name": [],
+    "description": [],
+    "xml": [],
+    "version": [],
+    "attrs": [],
+    "devices": []
+  },
+  "LocalContext": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "XMLContext": {
+    "__init__": [
+      "self",
+      "xmlfile"
+    ]
+  },
+  "NetworkContext": {
+    "__init__": [
+      "self",
+      "hostname"
+    ]
+  },
+  "scan_contexts": []
+}
