@@ -1,0 +1,847 @@
+{
+  "Security": {
+    "OTP_SENT": [],
+    "COMPACT_CSV_URL": [],
+    "DETAILED_CSV_URL": [],
+    "GLOBAL_STOCKS_CSV_URL": [],
+    "__init__": [
+      "self",
+      "dhan_context"
+    ],
+    "_save_as_temp_html_file_and_open_in_browser": [
+      "self",
+      "form_html"
+    ],
+    "generate_tpin": [
+      "self"
+    ],
+    "open_browser_for_tpin": [
+      "self",
+      "isin",
+      "qty",
+      "exchange",
+      "segment",
+      "bulk"
+    ],
+    "edis_inquiry": [
+      "self",
+      "isin"
+    ],
+    "fetch_security_list": [
+      "mode",
+      "filename"
+    ],
+    "fetch_global_security_list": [
+      "filename"
+    ]
+  },
+  "DhanLogin": {
+    "AUTH_BASE_URL": [],
+    "API_BASE_URL": [],
+    "__init__": [
+      "self",
+      "client_id"
+    ],
+    "generate_login_session": [
+      "self",
+      "app_id",
+      "app_secret"
+    ],
+    "consume_token_id": [
+      "self",
+      "token_id",
+      "app_id",
+      "app_secret"
+    ],
+    "generate_token": [
+      "self",
+      "pin",
+      "totp"
+    ],
+    "renew_token": [
+      "self",
+      "access_token"
+    ],
+    "user_profile": [
+      "self",
+      "access_token"
+    ],
+    "set_ip": [
+      "self",
+      "access_token",
+      "ip",
+      "ip_flag",
+      "dhan_client_id"
+    ],
+    "modify_ip": [
+      "self",
+      "access_token",
+      "ip",
+      "ip_flag",
+      "dhan_client_id"
+    ],
+    "get_ip": [
+      "self",
+      "access_token",
+      "dhan_client_id"
+    ]
+  },
+  "Funds": {
+    "__init__": [
+      "self",
+      "dhan_context"
+    ],
+    "get_fund_limits": [
+      "self"
+    ],
+    "margin_calculator": [
+      "self",
+      "security_id",
+      "exchange_segment",
+      "transaction_type",
+      "quantity",
+      "product_type",
+      "price",
+      "trigger_price"
+    ],
+    "margin_calculator_multi": [
+      "self",
+      "scrip_list",
+      "include_position",
+      "include_order"
+    ]
+  },
+  "MarketFeed": {
+    "__init__": [
+      "self",
+      "dhan_context"
+    ],
+    "ticker_data": [
+      "self",
+      "securities"
+    ],
+    "ohlc_data": [
+      "self",
+      "securities"
+    ],
+    "quote_data": [
+      "self",
+      "securities"
+    ]
+  },
+  "Statement": {
+    "__init__": [
+      "self",
+      "dhan_context"
+    ],
+    "get_trade_book": [
+      "self",
+      "order_id"
+    ],
+    "get_trade_history": [
+      "self",
+      "from_date",
+      "to_date",
+      "page_number"
+    ],
+    "ledger_report": [
+      "self",
+      "from_date",
+      "to_date"
+    ]
+  },
+  "Order": {
+    "__init__": [
+      "self",
+      "dhan_context"
+    ],
+    "get_order_list": [
+      "self"
+    ],
+    "get_order_by_id": [
+      "self",
+      "order_id"
+    ],
+    "get_order_by_correlationID": [
+      "self",
+      "correlation_id"
+    ],
+    "modify_order": [
+      "self",
+      "order_id",
+      "order_type",
+      "leg_name",
+      "quantity",
+      "price",
+      "trigger_price",
+      "disclosed_quantity",
+      "validity"
+    ],
+    "cancel_order": [
+      "self",
+      "order_id"
+    ],
+    "place_order": [
+      "self",
+      "security_id",
+      "exchange_segment",
+      "transaction_type",
+      "quantity",
+      "order_type",
+      "product_type",
+      "price",
+      "trigger_price",
+      "disclosed_quantity",
+      "after_market_order",
+      "validity",
+      "amo_time",
+      "bo_profit_value",
+      "bo_stop_loss_Value",
+      "tag",
+      "should_slice"
+    ],
+    "place_slice_order": [
+      "self",
+      "security_id",
+      "exchange_segment",
+      "transaction_type",
+      "quantity",
+      "order_type",
+      "product_type",
+      "price",
+      "trigger_price",
+      "disclosed_quantity",
+      "after_market_order",
+      "validity",
+      "amo_time",
+      "bo_profit_value",
+      "bo_stop_loss_Value",
+      "tag"
+    ]
+  },
+  "SuperOrder": {
+    "__init__": [
+      "self",
+      "dhan_context"
+    ],
+    "get_super_order_list": [
+      "self"
+    ],
+    "modify_super_order": [
+      "self",
+      "order_id",
+      "order_type",
+      "leg_name",
+      "quantity",
+      "price",
+      "targetPrice",
+      "stopLossPrice",
+      "trailingJump"
+    ],
+    "cancel_super_order": [
+      "self",
+      "order_id",
+      "order_leg"
+    ],
+    "place_super_order": [
+      "self",
+      "security_id",
+      "exchange_segment",
+      "transaction_type",
+      "quantity",
+      "order_type",
+      "product_type",
+      "price",
+      "targetPrice",
+      "stopLossPrice",
+      "trailingJump",
+      "tag"
+    ]
+  },
+  "DhanContext": {
+    "__init__": [
+      "self",
+      "client_id",
+      "access_token",
+      "disable_ssl",
+      "pool"
+    ],
+    "get_client_id": [
+      "self"
+    ],
+    "get_access_token": [
+      "self"
+    ],
+    "get_dhan_http": [
+      "self"
+    ],
+    "get_dhan_login": [
+      "self"
+    ]
+  },
+  "FullDepth": {
+    "depth_20_feed_wss": [],
+    "depth_200_feed_wss": [],
+    "NSE": [],
+    "NSE_FNO": [],
+    "request_code": [],
+    "__init__": [
+      "self",
+      "dhan_context",
+      "instruments",
+      "depth_level"
+    ],
+    "run_forever": [
+      "self"
+    ],
+    "get_data": [
+      "self"
+    ],
+    "close_connection": [
+      "self"
+    ],
+    "connect": [
+      "self"
+    ],
+    "get_instrument_data": [
+      "self"
+    ],
+    "disconnect": [
+      "self"
+    ],
+    "validate_and_process_tuples": [
+      "self",
+      "tuples_list",
+      "batch_size"
+    ],
+    "subscribe_instruments": [
+      "self"
+    ],
+    "get_exchange_segment": [
+      "self",
+      "exchange_code"
+    ],
+    "process_data": [
+      "self",
+      "data"
+    ],
+    "process_20_depth_data": [
+      "self",
+      "data",
+      "offset"
+    ],
+    "process_200_depth_data": [
+      "self",
+      "data",
+      "offset"
+    ],
+    "process_20_depth_data_body": [
+      "self",
+      "data",
+      "is_bid"
+    ],
+    "process_200_depth_data_body": [
+      "self",
+      "data",
+      "no_of_rows",
+      "is_bid"
+    ],
+    "combine_and_format_depth": [
+      "self",
+      "bid_data",
+      "ask_data"
+    ],
+    "server_disconnection": [
+      "self",
+      "data"
+    ],
+    "pad_with_zeros": [
+      "self",
+      "data",
+      "length"
+    ],
+    "create_header": [
+      "self",
+      "feed_request_code",
+      "message_length",
+      "client_id"
+    ],
+    "utc_time": [
+      "self",
+      "epoch_time"
+    ],
+    "create_subscription_packet": [
+      "self",
+      "instruments",
+      "feed_request_code"
+    ],
+    "subscribe_symbols": [
+      "self",
+      "symbols"
+    ],
+    "unsubscribe_symbols": [
+      "self",
+      "symbols"
+    ]
+  },
+  "OrderUpdate": {
+    "__init__": [
+      "self",
+      "dhan_context"
+    ],
+    "connect_order_update": [
+      "self"
+    ],
+    "handle_order_update": [
+      "self",
+      "order_update"
+    ],
+    "connect_to_dhan_websocket_sync": [
+      "self"
+    ]
+  },
+  "GlobalStocksFeed": {
+    "global_feed_wss": [],
+    "INX_EQ": [],
+    "Disconnect": [],
+    "SubscribeTrade": [],
+    "UnsubscribeTrade": [],
+    "SubscribeOHLC": [],
+    "UnsubscribeOHLC": [],
+    "AUTH_PARTNER_CLIENT": [],
+    "AUTH_SELF": [],
+    "AUTH_PARTNER": [],
+    "PACKET_SIZES": [],
+    "__init__": [
+      "self",
+      "dhan_context",
+      "instruments",
+      "auth_type",
+      "on_connect",
+      "on_message",
+      "on_close",
+      "on_error",
+      "on_ticks"
+    ],
+    "run_forever": [
+      "self"
+    ],
+    "get_data": [
+      "self"
+    ],
+    "run": [
+      "self"
+    ],
+    "start": [
+      "self"
+    ],
+    "_run_async": [
+      "self"
+    ],
+    "_run_coroutine": [
+      "self",
+      "coro"
+    ],
+    "_is_ws_closed": [
+      "self"
+    ],
+    "connect": [
+      "self"
+    ],
+    "get_instrument_data": [
+      "self"
+    ],
+    "disconnect": [
+      "self"
+    ],
+    "close_connection": [
+      "self"
+    ],
+    "_normalize_instruments": [
+      "self",
+      "instruments"
+    ],
+    "_send_subscription": [
+      "self",
+      "request_code",
+      "instrument_pairs"
+    ],
+    "subscribe_instruments": [
+      "self"
+    ],
+    "subscribe_symbols": [
+      "self",
+      "symbols"
+    ],
+    "unsubscribe_symbols": [
+      "self",
+      "symbols"
+    ],
+    "process_data": [
+      "self",
+      "data"
+    ],
+    "_parse_header": [
+      "self",
+      "packet"
+    ],
+    "process_packet": [
+      "self",
+      "msg_code",
+      "packet"
+    ],
+    "process_trade": [
+      "self",
+      "packet"
+    ],
+    "process_ohlc": [
+      "self",
+      "packet"
+    ],
+    "process_prev_close": [
+      "self",
+      "packet"
+    ],
+    "process_circuit_limit": [
+      "self",
+      "packet"
+    ],
+    "process_52_week": [
+      "self",
+      "packet"
+    ],
+    "process_market_status": [
+      "self",
+      "packet"
+    ],
+    "process_error": [
+      "self",
+      "packet"
+    ],
+    "utc_time": [
+      "self",
+      "epoch_time"
+    ]
+  },
+  "Portfolio": {
+    "__init__": [
+      "self",
+      "dhan_context"
+    ],
+    "get_holdings": [
+      "self"
+    ],
+    "get_positions": [
+      "self"
+    ],
+    "exit_all_positions": [
+      "self"
+    ],
+    "convert_position": [
+      "self",
+      "from_product_type",
+      "exchange_segment",
+      "position_type",
+      "security_id",
+      "convert_qty",
+      "to_product_type"
+    ]
+  },
+  "HistoricalData": {
+    "__init__": [
+      "self",
+      "dhan_context"
+    ],
+    "intraday_minute_data": [
+      "self",
+      "security_id",
+      "exchange_segment",
+      "instrument_type",
+      "from_date",
+      "to_date",
+      "interval",
+      "oi"
+    ],
+    "historical_daily_data": [
+      "self",
+      "security_id",
+      "exchange_segment",
+      "instrument_type",
+      "from_date",
+      "to_date",
+      "expiry_code",
+      "oi"
+    ],
+    "expired_options_data": [
+      "self",
+      "security_id",
+      "exchange_segment",
+      "instrument_type",
+      "expiry_flag",
+      "expiry_code",
+      "strike",
+      "drv_option_type",
+      "required_data",
+      "from_date",
+      "to_date",
+      "interval"
+    ]
+  },
+  "DhanHTTP": {
+    "HTTP_DEFAULT_TIME_OUT": [],
+    "API_BASE_URL": [],
+    "__init__": [
+      "self",
+      "client_id",
+      "access_token",
+      "disable_ssl",
+      "pool"
+    ],
+    "_send_request": [
+      "self",
+      "method",
+      "endpoint",
+      "payload"
+    ],
+    "_parse_response": [
+      "self",
+      "response"
+    ],
+    "get": [
+      "self",
+      "endpoint"
+    ],
+    "post": [
+      "self",
+      "endpoint",
+      "payload"
+    ],
+    "put": [
+      "self",
+      "endpoint",
+      "payload"
+    ],
+    "delete": [
+      "self",
+      "endpoint"
+    ]
+  },
+  "OptionChain": {
+    "__init__": [
+      "self",
+      "dhan_context"
+    ],
+    "option_chain": [
+      "self",
+      "under_security_id",
+      "under_exchange_segment",
+      "expiry"
+    ],
+    "expiry_list": [
+      "self",
+      "under_security_id",
+      "under_exchange_segment"
+    ]
+  },
+  "dhanhq": {
+    "NSE": [],
+    "BSE": [],
+    "CUR": [],
+    "MCX": [],
+    "FNO": [],
+    "NSE_FNO": [],
+    "BSE_FNO": [],
+    "INDEX": [],
+    "INX": [],
+    "BUY": [],
+    "SELL": [],
+    "CNC": [],
+    "INTRA": [],
+    "MARGIN": [],
+    "CO": [],
+    "BO": [],
+    "MTF": [],
+    "LIMIT": [],
+    "MARKET": [],
+    "SL": [],
+    "SLM": [],
+    "DAY": [],
+    "IOC": [],
+    "__init__": [
+      "self",
+      "dhan_context"
+    ],
+    "convert_to_date_time": [
+      "self",
+      "epoch"
+    ]
+  },
+  "TraderControl": {
+    "__init__": [
+      "self",
+      "dhan_context"
+    ],
+    "kill_switch": [
+      "self",
+      "action"
+    ],
+    "status_kill_switch": [
+      "self"
+    ],
+    "set_pnl_exit": [
+      "self",
+      "profit_value",
+      "loss_value",
+      "product_type",
+      "enable_kill_switch"
+    ],
+    "get_pnl_exit": [
+      "self"
+    ],
+    "stop_pnl_exit": [
+      "self"
+    ]
+  },
+  "ForeverOrder": {
+    "__init__": [
+      "self",
+      "dhan_context"
+    ],
+    "place_forever": [
+      "self",
+      "security_id",
+      "exchange_segment",
+      "transaction_type",
+      "product_type",
+      "order_type",
+      "quantity",
+      "price",
+      "trigger_Price",
+      "order_flag",
+      "disclosed_quantity",
+      "validity",
+      "price1",
+      "trigger_Price1",
+      "quantity1",
+      "tag"
+    ],
+    "modify_forever": [
+      "self",
+      "order_id",
+      "order_flag",
+      "order_type",
+      "leg_name",
+      "quantity",
+      "price",
+      "trigger_price",
+      "disclosed_quantity",
+      "validity"
+    ],
+    "get_forever": [
+      "self"
+    ],
+    "cancel_forever": [
+      "self",
+      "order_id"
+    ]
+  },
+  "ConditionalOrder": {
+    "__init__": [
+      "self",
+      "dhan_context"
+    ],
+    "place_conditional_order": [
+      "self",
+      "condition",
+      "orders"
+    ],
+    "get_conditional_orders": [
+      "self"
+    ],
+    "get_conditional_order": [
+      "self",
+      "alert_id"
+    ],
+    "modify_conditional_order": [
+      "self",
+      "alert_id",
+      "condition",
+      "orders"
+    ],
+    "cancel_conditional_order": [
+      "self",
+      "alert_id"
+    ]
+  },
+  "GlobalStocks": {
+    "__init__": [
+      "self",
+      "dhan_context"
+    ],
+    "place_global_order": [
+      "self",
+      "security_id",
+      "transaction_type",
+      "order_type",
+      "quantity",
+      "price",
+      "trigger_price",
+      "stop_loss_price",
+      "target_price",
+      "amount",
+      "after_market_order",
+      "tag"
+    ],
+    "get_global_order_list": [
+      "self"
+    ],
+    "get_global_order_by_id": [
+      "self",
+      "order_id"
+    ],
+    "modify_global_order": [
+      "self",
+      "order_id",
+      "order_type",
+      "transaction_type",
+      "security_id",
+      "quantity",
+      "price",
+      "leg_name"
+    ],
+    "cancel_global_order": [
+      "self",
+      "order_id"
+    ],
+    "get_global_trades": [
+      "self"
+    ],
+    "get_global_trades_by_security": [
+      "self",
+      "security_id"
+    ],
+    "get_global_holdings": [
+      "self"
+    ],
+    "global_trans_estimate": [
+      "self",
+      "security_id",
+      "price",
+      "quantity",
+      "transaction_type"
+    ],
+    "global_margin_calculator": [
+      "self",
+      "security_id",
+      "price",
+      "quantity",
+      "transaction_type"
+    ],
+    "get_global_market_status": [
+      "self"
+    ],
+    "get_global_fund_limit": [
+      "self"
+    ]
+  }
+}
