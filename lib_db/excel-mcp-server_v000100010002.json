@@ -1,0 +1,673 @@
+{
+  "EXCEL_SUFFIXES": [],
+  "MACRO_SUFFIXES": [],
+  "TEMPLATE_SUFFIXES": [],
+  "PathPolicy": {
+    "__init__": [
+      "self",
+      "allowed_dirs"
+    ],
+    "confined": [
+      "self"
+    ],
+    "resolve": [
+      "self",
+      "raw_path"
+    ],
+    "resolve_directory": [
+      "self",
+      "raw_path"
+    ],
+    "display": [
+      "self",
+      "path"
+    ],
+    "_resolve": [
+      "self",
+      "raw_path"
+    ],
+    "allows": [
+      "self",
+      "path"
+    ]
+  },
+  "DEFAULT_HOST": [],
+  "DEFAULT_PORT": [],
+  "DEFAULT_HTTP_DIRECTORY": [],
+  "logger": [],
+  "main": [
+    "argv"
+  ],
+  "_log_warning": [
+    "message",
+    "category",
+    "filename",
+    "lineno",
+    "file",
+    "line"
+  ],
+  "_settings": [
+    "args"
+  ],
+  "_parser": [],
+  "MAX_ROW": [],
+  "MAX_COLUMN": [],
+  "CellRange": {
+    "rows": [
+      "self"
+    ],
+    "cols": [
+      "self"
+    ],
+    "size": [
+      "self"
+    ],
+    "top_left": [
+      "self"
+    ],
+    "overlaps": [
+      "self",
+      "other"
+    ],
+    "within": [
+      "self",
+      "max_cells"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "cell_name": [
+    "row",
+    "col"
+  ],
+  "parse_range": [
+    "ref"
+  ],
+  "parse_cell": [
+    "ref"
+  ],
+  "Workspace": {
+    "__init__": [
+      "self",
+      "paths",
+      "limits"
+    ],
+    "resolve": [
+      "self",
+      "raw_path"
+    ],
+    "resolve_existing": [
+      "self",
+      "raw_path"
+    ],
+    "resolve_directory": [
+      "self",
+      "raw_path"
+    ],
+    "display": [
+      "self",
+      "path"
+    ],
+    "read": [
+      "self",
+      "raw_path"
+    ],
+    "edit": [
+      "self",
+      "raw_path"
+    ],
+    "create": [
+      "self",
+      "raw_path",
+      "sheets"
+    ],
+    "store": [
+      "self",
+      "raw_path",
+      "content"
+    ],
+    "_check_overwrite": [
+      "self",
+      "path",
+      "overwrite"
+    ],
+    "_load": [
+      "self",
+      "path"
+    ]
+  },
+  "save_atomically": [
+    "workbook",
+    "path"
+  ],
+  "write_atomically": [
+    "path",
+    "content"
+  ],
+  "close_workbook": [
+    "workbook"
+  ],
+  "_restore_area_chart_axes": [
+    "workbook"
+  ],
+  "get_sheet": [
+    "workbook",
+    "name"
+  ],
+  "worksheets": [
+    "workbook"
+  ],
+  "sheet_names": [
+    "sheet"
+  ],
+  "LogLevel": [],
+  "Limits": {},
+  "Settings": {},
+  "ExcelMCPError": {},
+  "InvalidArgumentError": {},
+  "PathNotAllowedError": {},
+  "WorkbookNotFoundError": {},
+  "WorkbookExistsError": {},
+  "WorkbookError": {},
+  "SheetNotFoundError": {
+    "__init__": [
+      "self",
+      "sheet",
+      "available"
+    ]
+  },
+  "UnsafeFormulaError": {},
+  "LimitExceededError": {},
+  "MAX_DECOMPRESSED_BYTES": [],
+  "_CHUNK_SIZE": [],
+  "_PROJECT_CODE_PAGE": [],
+  "_PROJECT_VERSION": [],
+  "_MODULE_NAME": [],
+  "_MODULE_NAME_UNICODE": [],
+  "_MODULE_STREAM_NAME": [],
+  "_MODULE_STREAM_NAME_UNICODE": [],
+  "_MODULE_OFFSET": [],
+  "_MODULE_TYPE_PROCEDURAL": [],
+  "_MODULE_END": [],
+  "RawModule": {},
+  "read_project": [
+    "content"
+  ],
+  "_has_standard_sectors": [
+    "content"
+  ],
+  "_read_modules": [
+    "content"
+  ],
+  "decompress": [
+    "data"
+  ],
+  "_decompress_chunk": [
+    "data",
+    "position",
+    "end",
+    "output"
+  ],
+  "_parse_directory": [
+    "data"
+  ],
+  "_MODULE_RECORDS": [],
+  "_module_entry": [
+    "records",
+    "code_page"
+  ],
+  "_text": [
+    "records",
+    "unicode_id",
+    "mbcs_id",
+    "code_page"
+  ],
+  "_integer": [
+    "value",
+    "size"
+  ],
+  "_encoding": [
+    "code_page"
+  ],
+  "_read_stream": [
+    "ole",
+    "name"
+  ],
+  "BLOCKED_FUNCTIONS": [],
+  "_FUNCTION_PREFIXES": [],
+  "normalize_function_name": [
+    "token_value"
+  ],
+  "check_formula": [
+    "formula",
+    "sheet_names"
+  ],
+  "_check_token": [
+    "token",
+    "sheets"
+  ],
+  "_qualifiers": [
+    "reference"
+  ],
+  "_split_top_level": [
+    "text",
+    "separator"
+  ],
+  "_unquote": [
+    "name"
+  ],
+  "CellValue": [],
+  "_ISO_DATE": [],
+  "_ISO_DATETIME": [],
+  "DATE_FORMAT": [],
+  "DATETIME_FORMAT": [],
+  "to_json": [
+    "value"
+  ],
+  "to_cell": [
+    "value",
+    "sheet_names"
+  ],
+  "date_number_format": [
+    "value"
+  ],
+  "__version__": [],
+  "register": [
+    "tools",
+    "workspace"
+  ],
+  "P": [],
+  "R": [],
+  "READ_ONLY": [],
+  "ADDITIVE": [],
+  "DESTRUCTIVE": [],
+  "ToolRegistry": {
+    "__init__": [
+      "self",
+      "server",
+      "read_only"
+    ],
+    "reader": [
+      "self",
+      "title"
+    ],
+    "writer": [
+      "self",
+      "title"
+    ],
+    "destroyer": [
+      "self",
+      "title"
+    ],
+    "_register": [
+      "self",
+      "title",
+      "annotations"
+    ]
+  },
+  "_as_tool_errors": [
+    "function"
+  ],
+  "BearerTokenMiddleware": {
+    "__init__": [
+      "self",
+      "app",
+      "token"
+    ],
+    "__call__": [
+      "self",
+      "scope",
+      "receive",
+      "send"
+    ]
+  },
+  "_unauthorized": [
+    "send"
+  ],
+  "LOOPBACK_HOSTS": [],
+  "is_loopback": [
+    "host"
+  ],
+  "build_app": [
+    "server",
+    "host",
+    "token"
+  ],
+  "serve": [
+    "server",
+    "host",
+    "port",
+    "token"
+  ],
+  "ReadMode": [],
+  "WorkbookPath": [],
+  "SheetName": [],
+  "CellRef": [],
+  "RangeRef": [],
+  "LineIndex": [],
+  "LineCount": [],
+  "NewSheetName": [],
+  "AxisParam": [],
+  "XLSX_MIME": [],
+  "TOOL_MODULES": [],
+  "create_server": [
+    "settings"
+  ],
+  "_instructions": [
+    "settings",
+    "paths"
+  ],
+  "Aggregation": [],
+  "SummaryValue": {},
+  "create_summary": [
+    "source",
+    "source_ref",
+    "group_by",
+    "values",
+    "target",
+    "target_cell",
+    "max_cells"
+  ],
+  "_read_records": [
+    "sheet",
+    "area"
+  ],
+  "_column_index": [
+    "headers",
+    "name"
+  ],
+  "_aggregate": [
+    "values",
+    "aggregation"
+  ],
+  "_TABLE_NAME": [],
+  "_CELL_LIKE": [],
+  "_BUILTIN_STYLE": [],
+  "create_table": [
+    "workbook",
+    "sheet",
+    "ref",
+    "name",
+    "style",
+    "striped_rows"
+  ],
+  "table_names": [
+    "workbook"
+  ],
+  "_next_table_name": [
+    "workbook"
+  ],
+  "_validate_table_name": [
+    "workbook",
+    "name"
+  ],
+  "_validate_headers": [
+    "sheet",
+    "row",
+    "first_col",
+    "last_col"
+  ],
+  "Operator": [],
+  "ConditionalFormat": {},
+  "DataValidationRule": {},
+  "add_conditional_format": [
+    "sheet",
+    "ref",
+    "rule"
+  ],
+  "_build_conditional_rule": [
+    "rule",
+    "names"
+  ],
+  "add_data_validation": [
+    "sheet",
+    "ref",
+    "rule"
+  ],
+  "_build_validation": [
+    "rule",
+    "names"
+  ],
+  "_checked_operand": [
+    "value",
+    "names"
+  ],
+  "HorizontalAlignment": [],
+  "VerticalAlignment": [],
+  "BorderStyle": [],
+  "_HEX_COLOR": [],
+  "CellFormat": {},
+  "parse_color": [
+    "value"
+  ],
+  "format_range": [
+    "sheet",
+    "ref",
+    "style",
+    "max_cells"
+  ],
+  "_font": [
+    "current",
+    "style"
+  ],
+  "_alignment": [
+    "current",
+    "style"
+  ],
+  "_fill": [
+    "style"
+  ],
+  "_border": [
+    "style"
+  ],
+  "merge_cells": [
+    "sheet",
+    "ref",
+    "max_cells"
+  ],
+  "unmerge_cells": [
+    "sheet",
+    "ref",
+    "max_cells"
+  ],
+  "RangeData": {},
+  "WriteResult": {},
+  "CellMatch": {},
+  "FindResult": {},
+  "stored_cells": [
+    "sheet"
+  ],
+  "used_range": [
+    "sheet"
+  ],
+  "writable_cell": [
+    "sheet",
+    "row",
+    "col"
+  ],
+  "store_value": [
+    "cell",
+    "value"
+  ],
+  "read_range": [
+    "sheet",
+    "ref",
+    "max_cells"
+  ],
+  "write_range": [
+    "sheet",
+    "start_cell",
+    "rows",
+    "max_cells"
+  ],
+  "clear_range": [
+    "sheet",
+    "ref",
+    "contents",
+    "formats",
+    "max_cells"
+  ],
+  "copy_range": [
+    "source",
+    "ref",
+    "target",
+    "target_cell",
+    "max_cells"
+  ],
+  "find_cells": [
+    "sheets",
+    "query",
+    "exact",
+    "case_sensitive",
+    "max_results"
+  ],
+  "Axis": [],
+  "_INVALID_NAME_CHARACTERS": [],
+  "validate_sheet_name": [
+    "name",
+    "existing"
+  ],
+  "create_sheet": [
+    "workbook",
+    "name",
+    "position"
+  ],
+  "rename_sheet": [
+    "workbook",
+    "name",
+    "new_name"
+  ],
+  "copy_sheet": [
+    "workbook",
+    "name",
+    "new_name"
+  ],
+  "delete_sheet": [
+    "workbook",
+    "name"
+  ],
+  "insert_lines": [
+    "sheet",
+    "axis",
+    "at",
+    "count"
+  ],
+  "delete_lines": [
+    "sheet",
+    "axis",
+    "at",
+    "count"
+  ],
+  "_check_room": [
+    "needed",
+    "limit",
+    "axis"
+  ],
+  "SheetSummary": {},
+  "WorkbookInfo": {},
+  "NamedRange": {},
+  "DataValidationInfo": {},
+  "ConditionalFormatInfo": {},
+  "SheetDetails": {},
+  "WorkbookFile": {},
+  "summarize_sheet": [
+    "sheet"
+  ],
+  "describe_workbook": [
+    "workbook",
+    "display_path",
+    "size_bytes",
+    "has_vba"
+  ],
+  "describe_sheet": [
+    "sheet"
+  ],
+  "list_workbooks": [
+    "directory",
+    "recursive",
+    "limit"
+  ],
+  "encode_file": [
+    "path"
+  ],
+  "decode_workbook": [
+    "content_base64",
+    "max_bytes"
+  ],
+  "_FORMULA_ELEMENTS": [],
+  "_check_formulas": [
+    "content"
+  ],
+  "_sheet_names": [
+    "content"
+  ],
+  "_formulas": [
+    "xml",
+    "part"
+  ],
+  "MIN_AUTOFIT_WIDTH": [],
+  "MAX_AUTOFIT_WIDTH": [],
+  "ColumnWidth": {},
+  "RowHeight": {},
+  "SheetLayout": {},
+  "apply_layout": [
+    "sheet",
+    "layout"
+  ],
+  "column_letter": [
+    "column"
+  ],
+  "estimate_width": [
+    "sheet",
+    "letter"
+  ],
+  "VBA_PROJECT_PART": [],
+  "ModuleKind": [],
+  "VbaModule": {},
+  "VbaProject": {},
+  "has_vba": [
+    "path"
+  ],
+  "read_vba": [
+    "path",
+    "module",
+    "max_chars"
+  ],
+  "editor_text": [
+    "source"
+  ],
+  "_project_bytes": [
+    "path"
+  ],
+  "_document_and_form_names": [
+    "project_text"
+  ],
+  "_module": [
+    "raw",
+    "kinds"
+  ],
+  "_within_budget": [
+    "modules",
+    "max_chars"
+  ],
+  "ChartType": [],
+  "ChartOptions": {},
+  "create_chart": [
+    "sheet",
+    "data_sheet",
+    "data_ref",
+    "chart_type",
+    "anchor_cell",
+    "options"
+  ],
+  "_categorical": [
+    "sheet",
+    "area",
+    "chart_type"
+  ],
+  "_scatter": [
+    "sheet",
+    "area"
+  ]
+}
