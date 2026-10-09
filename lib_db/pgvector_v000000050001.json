@@ -1,0 +1,591 @@
+{
+  "Vector": {
+    "__init__": [],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [],
+    "dimensions": [
+      "self"
+    ],
+    "to_list": [
+      "self"
+    ],
+    "to_numpy": [
+      "self"
+    ],
+    "to_text": [
+      "self"
+    ],
+    "to_binary": [
+      "self"
+    ],
+    "from_text": [],
+    "from_binary": [],
+    "_from_text": [],
+    "_to_db": [],
+    "_from_db": []
+  },
+  "Bit": {
+    "__init__": [],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [],
+    "to_list": [
+      "self"
+    ],
+    "to_numpy": [
+      "self"
+    ],
+    "to_text": [
+      "self"
+    ],
+    "to_binary": [
+      "self"
+    ],
+    "from_text": [],
+    "from_binary": []
+  },
+  "is_ndarray": [],
+  "is_sparse_array": [],
+  "Sentinel": {},
+  "SparseVector": {
+    "__init__": [],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [],
+    "dimensions": [
+      "self"
+    ],
+    "indices": [
+      "self"
+    ],
+    "values": [
+      "self"
+    ],
+    "to_coo": [
+      "self"
+    ],
+    "to_list": [
+      "self"
+    ],
+    "to_numpy": [
+      "self"
+    ],
+    "to_text": [
+      "self"
+    ],
+    "to_binary": [
+      "self"
+    ],
+    "_from_dict": [
+      "self",
+      "d",
+      "dim"
+    ],
+    "_from_sparse": [],
+    "_from_dense": [],
+    "from_text": [],
+    "from_binary": [],
+    "_from_parts": [],
+    "_to_db": [],
+    "_from_db": []
+  },
+  "HalfVector": {
+    "__init__": [],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [],
+    "dimensions": [
+      "self"
+    ],
+    "to_list": [
+      "self"
+    ],
+    "to_numpy": [
+      "self"
+    ],
+    "to_text": [
+      "self"
+    ],
+    "to_binary": [
+      "self"
+    ],
+    "from_text": [],
+    "from_binary": [],
+    "_from_text": [],
+    "_to_db": [],
+    "_from_db": []
+  },
+  "__all__": [],
+  "VECTOR": {
+    "cache_ok": [],
+    "_string": [],
+    "__init__": [
+      "self",
+      "dim"
+    ],
+    "get_col_spec": [
+      "self"
+    ],
+    "bind_processor": [
+      "self",
+      "dialect"
+    ],
+    "literal_processor": [
+      "self",
+      "dialect"
+    ],
+    "result_processor": [
+      "self",
+      "dialect",
+      "coltype"
+    ],
+    "comparator_factory": []
+  },
+  "avg": {
+    "inherit_cache": [],
+    "package": []
+  },
+  "BIT": {
+    "impl": [],
+    "cache_ok": [],
+    "process_bind_param": [
+      "self",
+      "value",
+      "dialect"
+    ],
+    "comparator_factory": []
+  },
+  "SPARSEVEC": {
+    "cache_ok": [],
+    "_string": [],
+    "__init__": [
+      "self",
+      "dim"
+    ],
+    "get_col_spec": [
+      "self"
+    ],
+    "bind_processor": [
+      "self",
+      "dialect"
+    ],
+    "literal_processor": [
+      "self",
+      "dialect"
+    ],
+    "result_processor": [
+      "self",
+      "dialect",
+      "coltype"
+    ],
+    "comparator_factory": []
+  },
+  "HALFVEC": {
+    "cache_ok": [],
+    "_string": [],
+    "__init__": [
+      "self",
+      "dim"
+    ],
+    "get_col_spec": [
+      "self"
+    ],
+    "bind_processor": [
+      "self",
+      "dialect"
+    ],
+    "literal_processor": [
+      "self",
+      "dialect"
+    ],
+    "result_processor": [
+      "self",
+      "dialect",
+      "coltype"
+    ],
+    "comparator_factory": []
+  },
+  "register_vector": [],
+  "VectorAdapter": {
+    "__init__": [
+      "self",
+      "value"
+    ],
+    "getquoted": [
+      "self"
+    ]
+  },
+  "cast_vector": [
+    "value",
+    "cur"
+  ],
+  "register_vector_info": [],
+  "SparsevecAdapter": {
+    "__init__": [
+      "self",
+      "value"
+    ],
+    "getquoted": [
+      "self"
+    ]
+  },
+  "cast_sparsevec": [
+    "value",
+    "cur"
+  ],
+  "register_sparsevec_info": [],
+  "HalfvecAdapter": {
+    "__init__": [
+      "self",
+      "value"
+    ],
+    "getquoted": [
+      "self"
+    ]
+  },
+  "cast_halfvec": [
+    "value",
+    "cur"
+  ],
+  "register_halfvec_info": [],
+  "VectorField": {
+    "description": [],
+    "empty_strings_allowed": [],
+    "__init__": [
+      "self"
+    ],
+    "deconstruct": [
+      "self"
+    ],
+    "db_type": [
+      "self",
+      "connection"
+    ],
+    "from_db_value": [
+      "self",
+      "value",
+      "expression",
+      "connection"
+    ],
+    "to_python": [
+      "self",
+      "value"
+    ],
+    "get_prep_value": [
+      "self",
+      "value"
+    ],
+    "value_to_string": [
+      "self",
+      "obj"
+    ],
+    "formfield": [
+      "self",
+      "form_class",
+      "choices_form_class"
+    ]
+  },
+  "VectorFormField": {
+    "to_python": [
+      "self",
+      "value"
+    ]
+  },
+  "DistanceBase": {
+    "output_field": [],
+    "__init__": []
+  },
+  "BitDistanceBase": {
+    "output_field": [],
+    "__init__": []
+  },
+  "L2Distance": {
+    "function": [],
+    "arg_joiner": []
+  },
+  "MaxInnerProduct": {
+    "function": [],
+    "arg_joiner": []
+  },
+  "CosineDistance": {
+    "function": [],
+    "arg_joiner": []
+  },
+  "L1Distance": {
+    "function": [],
+    "arg_joiner": []
+  },
+  "HammingDistance": {
+    "function": [],
+    "arg_joiner": []
+  },
+  "JaccardDistance": {
+    "function": [],
+    "arg_joiner": []
+  },
+  "IvfflatIndex": {
+    "suffix": [],
+    "__init__": [
+      "self"
+    ],
+    "deconstruct": [
+      "self"
+    ],
+    "get_with_params": [
+      "self"
+    ]
+  },
+  "HnswIndex": {
+    "suffix": [],
+    "__init__": [
+      "self"
+    ],
+    "deconstruct": [
+      "self"
+    ],
+    "get_with_params": [
+      "self"
+    ]
+  },
+  "BitField": {
+    "description": [],
+    "__init__": [
+      "self"
+    ],
+    "deconstruct": [
+      "self"
+    ],
+    "db_type": [
+      "self",
+      "connection"
+    ],
+    "formfield": [
+      "self",
+      "form_class",
+      "choices_form_class"
+    ]
+  },
+  "BitFormField": {
+    "to_python": [
+      "self",
+      "value"
+    ]
+  },
+  "SparseVectorField": {
+    "description": [],
+    "empty_strings_allowed": [],
+    "__init__": [
+      "self"
+    ],
+    "deconstruct": [
+      "self"
+    ],
+    "db_type": [
+      "self",
+      "connection"
+    ],
+    "from_db_value": [
+      "self",
+      "value",
+      "expression",
+      "connection"
+    ],
+    "to_python": [
+      "self",
+      "value"
+    ],
+    "get_prep_value": [
+      "self",
+      "value"
+    ],
+    "value_to_string": [
+      "self",
+      "obj"
+    ],
+    "formfield": [
+      "self",
+      "form_class",
+      "choices_form_class"
+    ]
+  },
+  "SparseVectorWidget": {
+    "format_value": [
+      "self",
+      "value"
+    ]
+  },
+  "SparseVectorFormField": {
+    "widget": [],
+    "to_python": [
+      "self",
+      "value"
+    ]
+  },
+  "HalfVectorField": {
+    "description": [],
+    "empty_strings_allowed": [],
+    "__init__": [
+      "self"
+    ],
+    "deconstruct": [
+      "self"
+    ],
+    "db_type": [
+      "self",
+      "connection"
+    ],
+    "from_db_value": [
+      "self",
+      "value",
+      "expression",
+      "connection"
+    ],
+    "to_python": [
+      "self",
+      "value"
+    ],
+    "get_prep_value": [
+      "self",
+      "value"
+    ],
+    "value_to_string": [
+      "self",
+      "obj"
+    ],
+    "formfield": [
+      "self",
+      "form_class",
+      "choices_form_class"
+    ]
+  },
+  "HalfVectorFormField": {
+    "to_python": [
+      "self",
+      "value"
+    ]
+  },
+  "VectorExtension": {
+    "__init__": [
+      "self",
+      "hints"
+    ]
+  },
+  "FixedBitField": {
+    "field_type": [],
+    "__init__": [
+      "self",
+      "max_length"
+    ],
+    "get_modifiers": [
+      "self"
+    ],
+    "_distance": [],
+    "hamming_distance": [],
+    "jaccard_distance": []
+  },
+  "register_vector_async": [],
+  "VectorDumper": {
+    "format": [],
+    "dump": [
+      "self",
+      "obj"
+    ]
+  },
+  "VectorBinaryDumper": {
+    "format": [],
+    "dump": [
+      "self",
+      "obj"
+    ]
+  },
+  "VectorLoader": {
+    "format": [],
+    "load": [
+      "self",
+      "data"
+    ]
+  },
+  "VectorBinaryLoader": {
+    "format": [],
+    "load": [
+      "self",
+      "data"
+    ]
+  },
+  "BitDumper": {
+    "format": [],
+    "dump": [
+      "self",
+      "obj"
+    ]
+  },
+  "BitBinaryDumper": {
+    "format": [],
+    "dump": [
+      "self",
+      "obj"
+    ]
+  },
+  "register_bit_info": [],
+  "SparseVectorDumper": {
+    "format": [],
+    "dump": [
+      "self",
+      "obj"
+    ]
+  },
+  "SparseVectorBinaryDumper": {
+    "format": [],
+    "dump": [
+      "self",
+      "obj"
+    ]
+  },
+  "SparseVectorLoader": {
+    "format": [],
+    "load": [
+      "self",
+      "data"
+    ]
+  },
+  "SparseVectorBinaryLoader": {
+    "format": [],
+    "load": [
+      "self",
+      "data"
+    ]
+  },
+  "HalfVectorDumper": {
+    "format": [],
+    "dump": [
+      "self",
+      "obj"
+    ]
+  },
+  "HalfVectorBinaryDumper": {
+    "format": [],
+    "dump": [
+      "self",
+      "obj"
+    ]
+  },
+  "HalfVectorLoader": {
+    "format": [],
+    "load": [
+      "self",
+      "data"
+    ]
+  },
+  "HalfVectorBinaryLoader": {
+    "format": [],
+    "load": [
+      "self",
+      "data"
+    ]
+  }
+}
