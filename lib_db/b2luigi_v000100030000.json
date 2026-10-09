@@ -1,0 +1,1737 @@
+{
+  "__version__": [],
+  "min_python_version": [],
+  "max_python_version": [],
+  "requires": {
+    "__init__": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "task_that_requires"
+    ]
+  },
+  "inherits": {
+    "__init__": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "task_that_inherits"
+    ]
+  },
+  "POLARS_EXPR_KEY": [],
+  "serialize_with_polars_value": [
+    "value"
+  ],
+  "deserialize_with_polars_value": [
+    "value"
+  ],
+  "deterministic_polars_hash_function": [
+    "value"
+  ],
+  "_PolarsSerializationMixin": {
+    "__init__": [
+      "self"
+    ],
+    "serialize": [
+      "self",
+      "x"
+    ],
+    "parse": [
+      "self",
+      "x"
+    ]
+  },
+  "PolarsExpressionParameter": {},
+  "PolarsExpressionListParameter": {},
+  "PolarsExpressionDictParameter": {},
+  "Gbasf2Process": {
+    "_file_dir": [],
+    "__init__": [
+      "self"
+    ],
+    "get_job_status": [
+      "self"
+    ],
+    "_on_first_success_action": [
+      "self"
+    ],
+    "_on_failure_action": [
+      "self"
+    ],
+    "_reschedule_failed_jobs": [
+      "self"
+    ],
+    "_reschedule_jobs": [
+      "self",
+      "job_ids"
+    ],
+    "start_job": [
+      "self"
+    ],
+    "terminate_job": [
+      "self"
+    ],
+    "_build_gbasf2_submit_command": [
+      "self"
+    ],
+    "_write_path_to_file": [
+      "self"
+    ],
+    "_create_wrapper_steering_file": [
+      "self"
+    ],
+    "_copy_custom_steering_script": [
+      "self"
+    ],
+    "_get_gbasf2_dataset_query": [
+      "self",
+      "output_file_name"
+    ],
+    "_get_project_download_path": [
+      "base_output_dir"
+    ],
+    "_local_gb2_dataset_is_complete": [
+      "self",
+      "output_file_name",
+      "check_temp_dir"
+    ],
+    "_download_dataset": [
+      "self"
+    ],
+    "_download_logs": [
+      "self"
+    ]
+  },
+  "Gbasf2GridProjectTarget": {
+    "__init__": [
+      "self",
+      "project_name",
+      "dirac_user",
+      "gbasf2_setup_path"
+    ],
+    "exists": [
+      "self"
+    ]
+  },
+  "build_gbasf2_submit_command": [
+    "task",
+    "wrapper_file_path",
+    "pickle_file_path",
+    "gbasf2_project_name",
+    "gbasf2_custom_steering_file"
+  ],
+  "check_dataset_exists_on_grid": [
+    "gbasf2_project_name",
+    "dirac_user",
+    "gbasf2_setup_path",
+    "task"
+  ],
+  "get_gbasf2_project_job_status_dict": [
+    "gbasf2_project_name",
+    "dirac_user",
+    "gbasf2_setup_path",
+    "task"
+  ],
+  "check_project_exists": [
+    "gbasf2_project_name",
+    "dirac_user",
+    "gbasf2_setup_path",
+    "task"
+  ],
+  "run_with_gbasf2": [
+    "cmd"
+  ],
+  "get_gbasf2_env": [
+    "gbasf2_setup_path",
+    "task"
+  ],
+  "get_proxy_info": [
+    "gbasf2_setup_path",
+    "task"
+  ],
+  "get_dirac_user": [
+    "gbasf2_setup_path",
+    "task"
+  ],
+  "setup_dirac_proxy": [
+    "gbasf2_setup_path",
+    "task"
+  ],
+  "query_lpns": [
+    "ds_query",
+    "dirac_user",
+    "gbasf2_setup_path",
+    "task"
+  ],
+  "get_unique_project_name": [
+    "task"
+  ],
+  "lfn_follows_gb2v5_convention": [
+    "lfn"
+  ],
+  "_get_lfn_upto_reschedule_number": [
+    "lfn"
+  ],
+  "get_unique_lfns": [
+    "lfns"
+  ],
+  "_move_downloaded_dataset_to_output_dir": [
+    "project_download_path",
+    "output_path"
+  ],
+  "_split_all_extensions": [
+    "path"
+  ],
+  "JobStatusEncoder": {
+    "default": [
+      "self",
+      "obj"
+    ]
+  },
+  "get_job_status_dict": [
+    "project_name",
+    "user_name",
+    "group_name"
+  ],
+  "get_lfns": [
+    "dataset",
+    "user"
+  ],
+  "search_pattern_in_folder": [
+    "path",
+    "pattern"
+  ],
+  "get_alias_dict_from_variable_manager": [],
+  "write_path_and_state_to_file": [
+    "basf2_path",
+    "file_path"
+  ],
+  "CertEncoder": {
+    "default": [
+      "self",
+      "obj"
+    ]
+  },
+  "get_basf2_git_hash": [],
+  "ROOTLocalTarget": {
+    "exists": [
+      "self"
+    ]
+  },
+  "Basf2Task": {
+    "git_hash": [],
+    "get_output_file_target": [
+      "self"
+    ],
+    "get_serialized_parameters": [
+      "self"
+    ]
+  },
+  "Basf2PathTask": {
+    "num_processes": [],
+    "max_event": [],
+    "calculate_statistics": [],
+    "create_path": [
+      "self"
+    ],
+    "process": [
+      "self"
+    ],
+    "_process": [
+      "self"
+    ]
+  },
+  "SimplifiedOutputBasf2Task": {
+    "create_path": [
+      "self"
+    ],
+    "output": [
+      "self"
+    ]
+  },
+  "MergerTask": {
+    "cmd": [],
+    "keys": [],
+    "input_keys": [
+      "self"
+    ],
+    "output": [
+      "self"
+    ],
+    "process": [
+      "self"
+    ],
+    "_process": [
+      "self"
+    ]
+  },
+  "HaddTask": {
+    "cmd": []
+  },
+  "Basf2FileMergeTask": {
+    "cmd": []
+  },
+  "Basf2nTupleMergeTask": {
+    "cmd": [
+      "self"
+    ]
+  },
+  "ENTRY_POINT_GROUP": [],
+  "_plugin_entry_points": [],
+  "_BatchSystemsMeta": {
+    "__new__": [
+      "mcs",
+      "name",
+      "bases",
+      "namespace"
+    ]
+  },
+  "BatchSystems": {
+    "lsf": [],
+    "htcondor": [],
+    "slurm": [],
+    "test": [],
+    "auto": [],
+    "local": [],
+    "custom": [],
+    "__new__": [
+      "cls",
+      "value",
+      "import_path",
+      "kind"
+    ],
+    "load_process_class": [
+      "self"
+    ]
+  },
+  "SendJobWorker": {
+    "detect_batch_system": [
+      "self",
+      "task"
+    ],
+    "_create_task_process": [
+      "self",
+      "task"
+    ]
+  },
+  "SendJobWorkerSchedulerFactory": {
+    "create_worker": [
+      "self",
+      "scheduler",
+      "worker_processes",
+      "assistant"
+    ]
+  },
+  "DEFAULT_BATCH_STATUS_CACHE_TTL": [],
+  "BatchJobStatusCache": {
+    "__init__": [
+      "self"
+    ],
+    "_ttl": [
+      "self"
+    ],
+    "_expiry_time": [
+      "self",
+      "job_id",
+      "status",
+      "now"
+    ],
+    "_ask_for_job_status": [
+      "self",
+      "job_id"
+    ],
+    "seed_submitted": [
+      "self",
+      "job_ids",
+      "status"
+    ],
+    "add_job_ids": [
+      "self",
+      "job_ids"
+    ],
+    "remove_job_ids": [
+      "self",
+      "job_ids"
+    ],
+    "__missing__": [
+      "self",
+      "job_id"
+    ]
+  },
+  "HTCondorJobStatusCache": {
+    "_ask_for_job_status": [
+      "self",
+      "job_id"
+    ],
+    "_fill_from_output": [
+      "self",
+      "output"
+    ]
+  },
+  "HTCondorJobStatus": {
+    "idle": [],
+    "running": [],
+    "removed": [],
+    "completed": [],
+    "held": [],
+    "transferring_output": [],
+    "suspended": [],
+    "failed": []
+  },
+  "_batch_job_status_cache": [],
+  "HTCondorProcess": {
+    "__init__": [
+      "self"
+    ],
+    "get_job_status_for_id": [
+      "job_id"
+    ],
+    "get_job_status": [
+      "self"
+    ],
+    "start_job": [
+      "self"
+    ],
+    "terminate_job": [
+      "self"
+    ],
+    "_create_submit_file_content": [
+      "task"
+    ],
+    "_create_htcondor_submit_file": [
+      "self"
+    ]
+  },
+  "TestProcess": {
+    "__init__": [
+      "self"
+    ],
+    "get_job_status": [
+      "self"
+    ],
+    "start_job": [
+      "self"
+    ],
+    "terminate_job": [
+      "self"
+    ],
+    "get_job_output": [
+      "self"
+    ]
+  },
+  "SlurmJobStatusCache": {
+    "sacct_disabled": [],
+    "_ask_for_job_status": [
+      "self",
+      "job_id"
+    ],
+    "_fill_from_output": [
+      "self",
+      "output"
+    ],
+    "_get_SlurmJobStatus_from_string": [
+      "self",
+      "state_string"
+    ],
+    "_check_if_sacct_is_disabled_on_server": [
+      "self"
+    ]
+  },
+  "SlurmJobStatus": {
+    "completed": [],
+    "pending": [],
+    "running": [],
+    "suspended": [],
+    "preempted": [],
+    "completing": [],
+    "configuring": [],
+    "boot_fail": [],
+    "cancelled": [],
+    "deadline": [],
+    "node_fail": [],
+    "out_of_memory": [],
+    "failed": [],
+    "timeout": []
+  },
+  "SlurmProcess": {
+    "__init__": [
+      "self"
+    ],
+    "get_job_status": [
+      "self"
+    ],
+    "_get_job_status_for_id": [
+      "job_id"
+    ],
+    "start_job": [
+      "self"
+    ],
+    "terminate_job": [
+      "self"
+    ],
+    "_create_slurm_submit_file": [
+      "self",
+      "task"
+    ]
+  },
+  "LSFJobStatusCache": {
+    "_ask_for_job_status": [
+      "self",
+      "job_id"
+    ]
+  },
+  "LSFProcess": {
+    "__init__": [
+      "self"
+    ],
+    "get_job_status": [
+      "self"
+    ],
+    "_get_job_status_for_id": [
+      "job_id"
+    ],
+    "start_job": [
+      "self"
+    ],
+    "_submit_task": [
+      "task"
+    ],
+    "terminate_job": [
+      "self"
+    ]
+  },
+  "ApptainerProcess": {
+    "__init__": [
+      "self"
+    ],
+    "get_job_status": [
+      "self"
+    ],
+    "start_job": [
+      "self"
+    ],
+    "terminate_job": [
+      "self"
+    ],
+    "_write_output": [
+      "self"
+    ]
+  },
+  "logger": [],
+  "JobStatus": {
+    "running": [],
+    "successful": [],
+    "aborted": [],
+    "idle": []
+  },
+  "expand_grouped_task": [
+    "task"
+  ],
+  "write_failed_jobs_log": [
+    "task",
+    "failed_jobs"
+  ],
+  "aggregate_job_status": [
+    "statuses"
+  ],
+  "BatchProcess": {
+    "__init__": [
+      "self",
+      "task",
+      "scheduler",
+      "result_queue",
+      "worker_timeout"
+    ],
+    "exitcode": [
+      "self"
+    ],
+    "get_job_status": [
+      "self"
+    ],
+    "start_job": [
+      "self"
+    ],
+    "terminate_job": [
+      "self"
+    ],
+    "run": [
+      "self"
+    ],
+    "terminate": [
+      "self"
+    ],
+    "is_alive": [
+      "self"
+    ],
+    "_put_to_result_queue": [
+      "self",
+      "status",
+      "explanation"
+    ]
+  },
+  "create_executable_wrapper": [
+    "task"
+  ],
+  "run_task_remote": [
+    "task"
+  ],
+  "FileSystemTarget": {
+    "__init__": [
+      "self"
+    ],
+    "tmp_name": [
+      "self"
+    ],
+    "get_temporary_input": [
+      "self",
+      "task"
+    ],
+    "temporary_path": [
+      "self",
+      "task"
+    ]
+  },
+  "LocalTarget": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "_UNSET": [],
+  "SYNTHETIC_TASK_MODULE": [],
+  "product_dict": [],
+  "fill_kwargs_with_lists": [],
+  "flatten_to_file_paths": [
+    "inputs"
+  ],
+  "flatten_to_dict": [
+    "inputs"
+  ],
+  "flatten_to_dict_of_lists": [
+    "inputs"
+  ],
+  "task_iterator": [
+    "task",
+    "only_non_complete"
+  ],
+  "get_all_output_files_in_tree": [
+    "root_module",
+    "key"
+  ],
+  "get_serialized_parameters": [
+    "task",
+    "need_hidden"
+  ],
+  "create_output_file_name": [
+    "task",
+    "base_filename",
+    "result_dir",
+    "need_hidden"
+  ],
+  "get_log_file_dir": [
+    "task"
+  ],
+  "get_task_file_dir": [
+    "task"
+  ],
+  "get_filename": [],
+  "map_folder": [
+    "input_folder"
+  ],
+  "_to_dict": [
+    "d"
+  ],
+  "_flatten": [
+    "struct"
+  ],
+  "on_failure": [
+    "task",
+    "_"
+  ],
+  "add_on_failure_function": [
+    "task"
+  ],
+  "create_cmd_from_task": [
+    "task"
+  ],
+  "create_output_dirs": [
+    "task"
+  ],
+  "get_filled_params": [
+    "task"
+  ],
+  "is_subdir": [
+    "path",
+    "parent_dir"
+  ],
+  "get_apptainer_or_singularity": [
+    "task"
+  ],
+  "create_apptainer_command": [
+    "command",
+    "task"
+  ],
+  "get_luigi_logger": [],
+  "dispatch": [
+    "run_function"
+  ],
+  "DispatchableTask": {
+    "process": [
+      "self"
+    ],
+    "run": [
+      "self"
+    ]
+  },
+  "TemporaryFileContextManager": {
+    "__init__": [
+      "self",
+      "task",
+      "inputs",
+      "outputs"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self"
+    ]
+  },
+  "on_temporary_files": [
+    "run_function"
+  ],
+  "EnsuredTemporaryScratchDirectory": {
+    "__init__": [
+      "self",
+      "dir"
+    ]
+  },
+  "Task": {
+    "__init_subclass__": [
+      "cls"
+    ],
+    "add_to_output": [
+      "self",
+      "output_file_name",
+      "target_class",
+      "result_dir"
+    ],
+    "_transform_io": [
+      "input_generator"
+    ],
+    "get_all_input_file_names": [
+      "self"
+    ],
+    "get_input_file_names": [
+      "self",
+      "key"
+    ],
+    "get_input_file_names_from_dict": [
+      "self",
+      "requirement_key",
+      "key"
+    ],
+    "get_input_file_name": [
+      "self",
+      "key"
+    ],
+    "get_all_output_file_names": [
+      "self"
+    ],
+    "get_output_file_name": [
+      "self",
+      "key"
+    ],
+    "_get_input_targets": [
+      "self",
+      "key"
+    ],
+    "_get_output_target": [
+      "self",
+      "key"
+    ],
+    "_get_output_file_target": [
+      "self",
+      "base_filename",
+      "target_class",
+      "result_dir"
+    ],
+    "_resolve_output_file_target": [
+      "self",
+      "filename",
+      "target_class"
+    ],
+    "_remove_output_file_target": [
+      "self",
+      "base_filename",
+      "target_class",
+      "result_dir"
+    ],
+    "_remove_output": [
+      "self",
+      "target_class",
+      "result_dir"
+    ],
+    "remove_output": [
+      "self"
+    ],
+    "_remove_directory": [
+      "directory"
+    ],
+    "remove_log_files": [
+      "self"
+    ],
+    "remove_task_files": [
+      "self"
+    ],
+    "grouped_param_names": [
+      "cls"
+    ],
+    "has_grouped_params": [
+      "cls"
+    ]
+  },
+  "ExternalTask": {},
+  "WrapperTask": {},
+  "NotCompletedTask": {
+    "__init__": [
+      "self"
+    ],
+    "complete": [
+      "self"
+    ]
+  },
+  "_current_global_settings": [],
+  "_no_value": [],
+  "get_setting": [
+    "key",
+    "default",
+    "task",
+    "deprecated_keys"
+  ],
+  "set_setting": [
+    "key",
+    "value"
+  ],
+  "clear_setting": [
+    "key"
+  ],
+  "_setting_file_iterator": [],
+  "with_new_settings": [],
+  "_get_setting_implementation": [
+    "key",
+    "task"
+  ],
+  "DeprecatedSettingsWarning": {},
+  "_warn_deprecated_setting": [
+    "setting_name",
+    "new_name"
+  ],
+  "wrap_parameter": [],
+  "BoolParameter": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "BatchIntParameter": {
+    "next_in_enumeration": [
+      "self",
+      "value"
+    ]
+  },
+  "ensure_requests_ca_bundle": [
+    "extra"
+  ],
+  "WebDAVSystem": {
+    "__init__": [
+      "self",
+      "server_path"
+    ],
+    "exists": [
+      "self",
+      "path"
+    ],
+    "copy_file_to_remote": [
+      "self",
+      "local_path",
+      "remote_path",
+      "force"
+    ],
+    "copy_file_from_remote": [
+      "self",
+      "remote_path",
+      "local_path",
+      "force"
+    ],
+    "copy_dir_from_remote": [
+      "self",
+      "remote_path",
+      "local_path",
+      "force"
+    ],
+    "move": [
+      "self",
+      "source_path",
+      "dest_path"
+    ],
+    "mkdir": [
+      "self",
+      "path",
+      "parents",
+      "raise_if_exists"
+    ],
+    "locate": [
+      "self",
+      "path"
+    ],
+    "remove": [
+      "self",
+      "path",
+      "recursive",
+      "skip_trash"
+    ],
+    "listdir": [
+      "self",
+      "path",
+      "print_entries"
+    ],
+    "remove_dir": [
+      "self",
+      "path"
+    ]
+  },
+  "WebDAVTarget": {},
+  "XRootDError": {
+    "__init__": [
+      "self",
+      "message",
+      "xrootd_status"
+    ]
+  },
+  "XRootDSystem": {
+    "__init__": [
+      "self",
+      "server_path"
+    ],
+    "exists": [
+      "self",
+      "path"
+    ],
+    "copy_file_to_remote": [
+      "self",
+      "local_path",
+      "remote_path",
+      "force"
+    ],
+    "copy_file_from_remote": [
+      "self",
+      "remote_path",
+      "local_path",
+      "force"
+    ],
+    "copy_dir_from_remote": [
+      "self",
+      "remote_path",
+      "local_path",
+      "force"
+    ],
+    "move": [
+      "self",
+      "source_path",
+      "dest_path"
+    ],
+    "mkdir": [
+      "self",
+      "path",
+      "parents",
+      "raise_if_exists"
+    ],
+    "locate": [
+      "self",
+      "path"
+    ],
+    "remove": [
+      "self",
+      "path",
+      "recursive",
+      "skip_trash"
+    ],
+    "listdir": [
+      "self",
+      "path",
+      "print_entries"
+    ],
+    "remove_dir": [
+      "self",
+      "path"
+    ]
+  },
+  "XRootDTarget": {},
+  "RemoteFileSystem": {
+    "__init__": [
+      "self",
+      "server_path"
+    ],
+    "exists": [
+      "self",
+      "path"
+    ],
+    "copy_file_to_remote": [
+      "self",
+      "local_path",
+      "remote_path",
+      "force"
+    ],
+    "copy_file_from_remote": [
+      "self",
+      "remote_path",
+      "local_path",
+      "force"
+    ],
+    "copy_dir_from_remote": [
+      "self",
+      "remote_path",
+      "local_path",
+      "force"
+    ],
+    "move": [
+      "self",
+      "source_path",
+      "dest_path"
+    ],
+    "mkdir": [
+      "self",
+      "path",
+      "parents",
+      "raise_if_exists"
+    ],
+    "locate": [
+      "self",
+      "path"
+    ],
+    "remove": [
+      "self",
+      "path",
+      "recursive",
+      "skip_trash"
+    ],
+    "listdir": [
+      "self",
+      "path",
+      "print_entries"
+    ],
+    "remove_dir": [
+      "self",
+      "path"
+    ],
+    "rename_dont_move": [
+      "self",
+      "path",
+      "dest"
+    ]
+  },
+  "RemoteTarget": {
+    "__init__": [
+      "self",
+      "path",
+      "file_system"
+    ],
+    "base_name": [
+      "self"
+    ],
+    "fs": [
+      "self"
+    ],
+    "makedirs": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "path"
+    ],
+    "open": [
+      "self",
+      "mode"
+    ],
+    "get_temporary_input": [
+      "self",
+      "task"
+    ]
+  },
+  "TASKS_TEMPLATE": [],
+  "PARAMS_TEMPLATE": [],
+  "Defaults": {},
+  "resolve_defaults": [
+    "task_file",
+    "params_file"
+  ],
+  "cli_error_boundary": [],
+  "suggest": [
+    "bad",
+    "candidates"
+  ],
+  "partition_params": [
+    "params",
+    "accepted",
+    "override_keys"
+  ],
+  "unknown_param_error": [
+    "bad_keys",
+    "accepted",
+    "target"
+  ],
+  "warn_ignored_params": [
+    "keys",
+    "target"
+  ],
+  "check_param_applicability": [
+    "param_dict",
+    "considered",
+    "override_keys",
+    "named",
+    "target",
+    "strict"
+  ],
+  "import_from_file": [
+    "filename",
+    "module_name"
+  ],
+  "task_generator": [
+    "task_file"
+  ],
+  "is_from_task_classes": [
+    "obj"
+  ],
+  "_iter_task_subclasses": [
+    "base"
+  ],
+  "_project_task_classes": [
+    "task_file"
+  ],
+  "TaskIndex": {
+    "all_classes": [
+      "self"
+    ],
+    "qualified_name": [
+      "self",
+      "cls"
+    ],
+    "display_module": [
+      "self",
+      "cls"
+    ],
+    "completion_names": [
+      "self"
+    ],
+    "resolve": [
+      "self",
+      "name",
+      "hint_cmd"
+    ],
+    "resolve_many": [
+      "self",
+      "names",
+      "hint_cmd"
+    ]
+  },
+  "build_task_index": [
+    "task_file"
+  ],
+  "load_parameters": [
+    "filename"
+  ],
+  "expand_parameters": [
+    "config"
+  ],
+  "TaskContext": {},
+  "resolve_task_context": [
+    "task_filename",
+    "parameter_filename",
+    "params"
+  ],
+  "RemovalTargets": {},
+  "resolve_removal_targets": [
+    "task_filename",
+    "parameter_filename",
+    "params",
+    "classnames",
+    "keep",
+    "direct",
+    "with_requirements"
+  ],
+  "load_task_class": [
+    "class_name",
+    "filename"
+  ],
+  "try_instantiate": [
+    "cls",
+    "params"
+  ],
+  "build_task_list": [
+    "target_classes",
+    "index",
+    "param_dicts",
+    "direct_mode"
+  ],
+  "find_tasks_in_tree": [
+    "target_classes",
+    "root_tasks"
+  ],
+  "get_task_instance": [
+    "class_name",
+    "task_filename",
+    "parameters_file",
+    "overrides"
+  ],
+  "get_root_tasks": [
+    "task_list"
+  ],
+  "process_task_instance": [
+    "task_instance",
+    "task_file",
+    "params_file"
+  ],
+  "parse_classnames": [
+    "raw"
+  ],
+  "complete_task_names": [
+    "ctx",
+    "_param",
+    "incomplete"
+  ],
+  "split_kv_params": [
+    "items"
+  ],
+  "parse_kv_params": [
+    "items"
+  ],
+  "get_cli_arguments": [
+    "ignore_additional_command_line_args"
+  ],
+  "_TUISchedulerFactory": {
+    "__init__": [
+      "self"
+    ],
+    "create_worker": [
+      "self",
+      "scheduler",
+      "worker_processes",
+      "assistant"
+    ]
+  },
+  "_TUILogHandler": {
+    "__init__": [
+      "self",
+      "app"
+    ],
+    "emit": [
+      "self",
+      "record"
+    ]
+  },
+  "TaskInstance": {
+    "__init__": [
+      "self",
+      "task"
+    ],
+    "params_str": [
+      "self"
+    ]
+  },
+  "TaskGroup": {
+    "__init__": [
+      "self",
+      "class_name"
+    ],
+    "get_or_add": [
+      "self",
+      "task"
+    ],
+    "_STATUS_ORDER": [],
+    "sorted_instances": [
+      "self"
+    ],
+    "total": [
+      "self"
+    ],
+    "counts": [
+      "self"
+    ]
+  },
+  "_ConfirmQuitScreen": {
+    "CSS": [],
+    "BINDINGS": [],
+    "__init__": [
+      "self",
+      "message"
+    ],
+    "compose": [
+      "self"
+    ],
+    "action_confirm_yes": [
+      "self"
+    ],
+    "action_confirm_no": [
+      "self"
+    ]
+  },
+  "ProgressApp": {
+    "TITLE": [],
+    "CSS": [],
+    "BINDINGS": [],
+    "__init__": [
+      "self",
+      "task_list",
+      "run_fn",
+      "scheduler_factory"
+    ],
+    "_SPLIT_THRESHOLD": [],
+    "_first_significant_param_val": [
+      "task"
+    ],
+    "_group_key": [
+      "self",
+      "task"
+    ],
+    "_get_or_create_group": [
+      "self",
+      "class_name"
+    ],
+    "_LUIGI_TO_TUI_STATUS": [],
+    "_poll_scheduler": [
+      "self"
+    ],
+    "_mark_finished": [
+      "self"
+    ],
+    "action_toggle_fold": [
+      "self"
+    ],
+    "_clear_warning": [
+      "self"
+    ],
+    "action_cursor_up": [
+      "self"
+    ],
+    "action_cursor_down": [
+      "self"
+    ],
+    "action_toggle_debug": [
+      "self"
+    ],
+    "action_quit_tui": [
+      "self"
+    ],
+    "_on_quit_confirmed": [
+      "self",
+      "confirmed"
+    ],
+    "_interrupt_luigi": [
+      "self"
+    ],
+    "_selected_task": [
+      "self"
+    ],
+    "_open_log": [
+      "self",
+      "which"
+    ],
+    "action_open_stdout": [
+      "self"
+    ],
+    "action_open_stderr": [
+      "self"
+    ],
+    "action_close_log_view": [
+      "self"
+    ],
+    "check_action": [
+      "self",
+      "action",
+      "parameters"
+    ],
+    "_build_progress_view": [
+      "self"
+    ],
+    "_build_log_view": [
+      "self"
+    ],
+    "_build_debug_view": [
+      "self"
+    ],
+    "_refresh_display": [
+      "self"
+    ],
+    "compose": [
+      "self"
+    ],
+    "on_mount": [
+      "self"
+    ],
+    "_pre_populate": [
+      "self"
+    ],
+    "_attach_log_handler": [
+      "self"
+    ],
+    "_run_luigi": [
+      "self"
+    ]
+  },
+  "TaskFile": [],
+  "ParamsFile": [],
+  "Params": [],
+  "class_names_arg": [
+    "help_text"
+  ],
+  "__has_run_already": [],
+  "process": [
+    "task_like_elements",
+    "show_output",
+    "dry_run",
+    "test",
+    "batch",
+    "batch_runner",
+    "progress_tui",
+    "remove",
+    "remove_only",
+    "auto_confirm",
+    "keep_tasks",
+    "ignore_additional_command_line_args"
+  ],
+  "build": [],
+  "CliUserError": {
+    "__str__": [
+      "self"
+    ]
+  },
+  "console": [],
+  "_render_cli_error": [
+    "msg"
+  ],
+  "stderr_console": [],
+  "_resolve_batch_system": [
+    "name"
+  ],
+  "_build_fast_req_task": [
+    "input_file"
+  ],
+  "_build_fast_task": [
+    "exec_script",
+    "output",
+    "input_file",
+    "force",
+    "batch",
+    "extra_args",
+    "env_script",
+    "literal_path",
+    "executable"
+  ],
+  "test_task": [
+    "exec_script",
+    "output",
+    "input_file",
+    "force",
+    "batch",
+    "extra_args",
+    "env_script",
+    "settings",
+    "literal_path",
+    "executable",
+    "batch_system"
+  ],
+  "run_batch_worker": [
+    "task"
+  ],
+  "run_as_batch_worker": [
+    "task_list",
+    "cli_args"
+  ],
+  "run_batched": [
+    "task_list",
+    "kwargs"
+  ],
+  "run_local": [
+    "task_list",
+    "kwargs"
+  ],
+  "_ensure_multiprocessing_resource_tracker": [],
+  "run_with_tui": [
+    "task_list",
+    "kwargs",
+    "batch"
+  ],
+  "run_luigi": [
+    "task_list",
+    "kwargs",
+    "worker_scheduler_factory"
+  ],
+  "run_test_mode": [
+    "task_list",
+    "kwargs"
+  ],
+  "get_task_outputs": [
+    "task"
+  ],
+  "_build_parent_map": [
+    "root_tasks"
+  ],
+  "_render_task_outputs": [
+    "task_output_pairs",
+    "required_by_map",
+    "details",
+    "paths_only",
+    "links"
+  ],
+  "render_graph_tree": [
+    "task_list",
+    "show_params",
+    "show_status"
+  ],
+  "render_graph_dot": [
+    "task_list",
+    "show_params",
+    "show_status"
+  ],
+  "render_graph_summary": [
+    "task_list"
+  ],
+  "show_task_outputs": [
+    "task_list",
+    "details",
+    "paths_only",
+    "links"
+  ],
+  "show_all_outputs": [
+    "task_list",
+    "show_required_by",
+    "details",
+    "paths_only",
+    "links"
+  ],
+  "dry_run": [
+    "task_list"
+  ],
+  "_call_remove_methods": [
+    "task",
+    "methods"
+  ],
+  "_confirm_and_remove": [
+    "to_be_removed_tasks",
+    "target_tasks",
+    "matched_target_tasks",
+    "auto_confirm",
+    "keep_tasks",
+    "methods",
+    "noun"
+  ],
+  "remove_outputs": [
+    "task_list",
+    "target_tasks",
+    "auto_confirm",
+    "keep_tasks",
+    "methods",
+    "noun"
+  ],
+  "_collect_all_dependents": [
+    "task",
+    "child_to_parents"
+  ],
+  "legacy_remove_outputs": [
+    "task_list",
+    "target_tasks",
+    "only",
+    "auto_confirm",
+    "keep_tasks"
+  ],
+  "remove_requirement_outputs": [
+    "task_list",
+    "auto_confirm",
+    "keep_tasks",
+    "methods",
+    "noun"
+  ],
+  "render_task_list": [
+    "entries"
+  ],
+  "render_task_help": [
+    "cls"
+  ],
+  "get_b2luigi_version": [],
+  "_version_callback": [
+    "value"
+  ],
+  "app": [],
+  "main_callback": [
+    "version"
+  ],
+  "about": [],
+  "init": [
+    "force"
+  ],
+  "version": [],
+  "self_update": [],
+  "main": [],
+  "ParameterGenerator": {
+    "__init__": [
+      "self",
+      "values"
+    ]
+  },
+  "ZippedParameterGenerator": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "test_app": [],
+  "test": [
+    "script",
+    "output",
+    "input",
+    "force",
+    "batch",
+    "batch_system",
+    "env_script",
+    "setting",
+    "literal_path",
+    "executable",
+    "extra_args"
+  ],
+  "_raise_unresolvable_error": [
+    "name",
+    "cls",
+    "merged_params",
+    "hint"
+  ],
+  "show_app": [],
+  "show_task": [
+    "classnames",
+    "task_filename",
+    "parameter_filename",
+    "params",
+    "direct",
+    "with_requirements",
+    "details",
+    "paths_only",
+    "links"
+  ],
+  "show": [
+    "ctx",
+    "classnames",
+    "task_filename",
+    "parameter_filename",
+    "params",
+    "direct",
+    "with_requirements",
+    "details",
+    "paths_only",
+    "links"
+  ],
+  "run_app": [],
+  "_make_wrapper_task": [
+    "task_class",
+    "param_dicts"
+  ],
+  "run_task": [
+    "task_class",
+    "task_filename",
+    "parameters_file",
+    "overrides"
+  ],
+  "run": [
+    "classname",
+    "task_filename",
+    "parameter_filename",
+    "params",
+    "dry_run",
+    "batch",
+    "tui",
+    "scheduler_host",
+    "scheduler_port",
+    "workers"
+  ],
+  "cleanup_app": [],
+  "cleanup_methods": [
+    "logs_only",
+    "task_files_only"
+  ],
+  "cleanup": [
+    "classnames",
+    "task_filename",
+    "parameter_filename",
+    "yes",
+    "keep",
+    "params",
+    "direct",
+    "with_requirements",
+    "logs_only",
+    "task_files_only"
+  ],
+  "batch_runner_app": [],
+  "batch_runner": [
+    "classname",
+    "task_filename",
+    "params_filename",
+    "params",
+    "script",
+    "output_file",
+    "input_file",
+    "force",
+    "literal_path",
+    "executable",
+    "extra_arg"
+  ],
+  "tasks_app": [],
+  "_load_task_index": [
+    "task_filename"
+  ],
+  "list_tasks": [
+    "task_filename"
+  ],
+  "show_task_info": [
+    "classname",
+    "task_filename"
+  ],
+  "tasks": [
+    "ctx",
+    "task_filename"
+  ],
+  "task_info": [
+    "classname",
+    "task_filename"
+  ],
+  "remove_app": [],
+  "remove": [
+    "classnames",
+    "task_filename",
+    "parameter_filename",
+    "yes",
+    "keep",
+    "params",
+    "direct",
+    "with_requirements"
+  ],
+  "graph_app": [],
+  "graph_task": [
+    "classnames",
+    "task_filename",
+    "parameter_filename",
+    "params",
+    "output_format",
+    "with_params",
+    "show_status",
+    "summary"
+  ],
+  "graph": [
+    "ctx",
+    "classnames",
+    "task_filename",
+    "parameter_filename",
+    "params",
+    "output_format",
+    "with_params",
+    "show_status",
+    "summary"
+  ]
+}
