@@ -1,0 +1,89 @@
+{
+  "multidict": [
+    "D"
+  ],
+  "getLocalConss": [
+    "model",
+    "node"
+  ],
+  "getNLocalConss": [
+    "model",
+    "node"
+  ],
+  "get_infeasible_constraints": [
+    "orig_model",
+    "verbose"
+  ],
+  "add_piecewise_linear_cons": [
+    "model",
+    "X",
+    "Y",
+    "a",
+    "b"
+  ],
+  "set_nonlinear_objective": [
+    "model",
+    "expr",
+    "sense"
+  ],
+  "attach_primal_dual_evolution_eventhdlr": [
+    "model"
+  ],
+  "_TRACE_HANDLER_KEY": [],
+  "_TraceEventhdlr": {
+    "__init__": [
+      "self"
+    ],
+    "eventinit": [
+      "self"
+    ],
+    "eventexec": [
+      "self",
+      "event"
+    ]
+  },
+  "_attach_trace_handler": [
+    "model",
+    "trace"
+  ],
+  "_StructuredOptimizationTrace": {
+    "__init__": [
+      "self",
+      "model",
+      "path",
+      "write_run_end"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc",
+      "tb"
+    ],
+    "_handle_event": [
+      "self",
+      "event"
+    ],
+    "_snapshot_now": [
+      "self"
+    ],
+    "_write_snapshot": [
+      "self",
+      "event_type"
+    ],
+    "_write_event": [
+      "self",
+      "event_type",
+      "fields"
+    ]
+  },
+  "structured_optimization_trace": [
+    "model",
+    "path"
+  ],
+  "attach_structured_optimization_trace": [
+    "model"
+  ]
+}
