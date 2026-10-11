@@ -1,0 +1,1863 @@
+{
+  "ConstBitStore": [],
+  "_whole_number": [
+    "value"
+  ],
+  "_int_to_tibs": [
+    "i",
+    "length",
+    "signed",
+    "little_endian"
+  ],
+  "_misplaced_prefix_error": [
+    "s",
+    "prefix",
+    "example",
+    "e"
+  ],
+  "bin2bitstore": [
+    "binstring"
+  ],
+  "hex2bitstore": [
+    "hexstring"
+  ],
+  "oct2bitstore": [
+    "octstring"
+  ],
+  "int2bitstore": [
+    "i",
+    "length",
+    "signed"
+  ],
+  "intle2bitstore": [
+    "i",
+    "length",
+    "signed"
+  ],
+  "float2bitstore": [
+    "f",
+    "length",
+    "big_endian"
+  ],
+  "CACHE_SIZE": [],
+  "str_to_bitstore": [
+    "s"
+  ],
+  "bitstore_from_token": [
+    "name",
+    "token_length",
+    "value"
+  ],
+  "ue2bitstore": [
+    "i"
+  ],
+  "se2bitstore": [
+    "i"
+  ],
+  "uie2bitstore": [
+    "i"
+  ],
+  "sie2bitstore": [
+    "i"
+  ],
+  "_TIBS_BFLOAT": [],
+  "_TIBS_BFLOATLE": [],
+  "_TIBS_P4BINARY": [],
+  "_TIBS_P3BINARY": [],
+  "_TIBS_E4M3MXFP_SATURATE": [],
+  "_TIBS_E4M3MXFP_OVERFLOW": [],
+  "_TIBS_E5M2MXFP_SATURATE": [],
+  "_TIBS_E5M2MXFP_OVERFLOW": [],
+  "_TIBS_E3M2MXFP": [],
+  "_TIBS_E2M3MXFP": [],
+  "_TIBS_E2M1MXFP": [],
+  "_TIBS_E8M0MXFP": [],
+  "_TIBS_MXINT": [],
+  "bfloat2bitstore": [
+    "f",
+    "big_endian"
+  ],
+  "p4binary2bitstore": [
+    "f"
+  ],
+  "p3binary2bitstore": [
+    "f"
+  ],
+  "e4m3mxfp_saturate2bitstore": [
+    "f"
+  ],
+  "e4m3mxfp_overflow2bitstore": [
+    "f"
+  ],
+  "e5m2mxfp_saturate2bitstore": [
+    "f"
+  ],
+  "e5m2mxfp_overflow2bitstore": [
+    "f"
+  ],
+  "e3m2mxfp2bitstore": [
+    "f"
+  ],
+  "e2m3mxfp2bitstore": [
+    "f"
+  ],
+  "e2m1mxfp2bitstore": [
+    "f"
+  ],
+  "e8m0mxfp2bitstore": [
+    "f"
+  ],
+  "mxint2bitstore": [
+    "f"
+  ],
+  "NATIVE_ENDIAN_STRUCT_ERROR": [],
+  "structparser": [
+    "m"
+  ],
+  "parse_name_length_token": [
+    "fmt"
+  ],
+  "parse_single_struct_token": [
+    "fmt"
+  ],
+  "parse_single_token": [
+    "token"
+  ],
+  "preprocess_tokens": [
+    "fmt"
+  ],
+  "tokenparser": [
+    "fmt",
+    "keys"
+  ],
+  "BRACKET_RE": [],
+  "expand_brackets": [
+    "s"
+  ],
+  "ElementType": [],
+  "MutableBitStore": [],
+  "_array_to_dtype": [
+    "a"
+  ],
+  "Array": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "dtype",
+      "initializer",
+      "trailing_bits"
+    ],
+    "_reject_removed_initializer": [],
+    "from_zeros": [],
+    "from_bytes": [],
+    "data": [
+      "self",
+      "value"
+    ],
+    "itemsize": [
+      "self"
+    ],
+    "trailing_bits": [
+      "self"
+    ],
+    "dtype": [
+      "self",
+      "new_dtype"
+    ],
+    "_set_tibs_dtype": [
+      "self"
+    ],
+    "_set_dtype": [
+      "self",
+      "new_dtype"
+    ],
+    "_create_element": [
+      "self",
+      "value"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "__bool__": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "__setitem__": [
+      "self",
+      "key",
+      "value"
+    ],
+    "__delitem__": [
+      "self",
+      "key"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "astype": [
+      "self",
+      "dtype"
+    ],
+    "to_list": [
+      "self"
+    ],
+    "tolist": [
+      "self"
+    ],
+    "append": [
+      "self",
+      "x"
+    ],
+    "extend": [
+      "self",
+      "iterable"
+    ],
+    "insert": [
+      "self",
+      "i",
+      "x"
+    ],
+    "pop": [
+      "self",
+      "i"
+    ],
+    "byteswap": [
+      "self"
+    ],
+    "count": [
+      "self",
+      "value"
+    ],
+    "to_bytes": [
+      "self"
+    ],
+    "tobytes": [
+      "self"
+    ],
+    "to_file": [
+      "self",
+      "f"
+    ],
+    "tofile": [
+      "self",
+      "f"
+    ],
+    "from_file": [
+      "n"
+    ],
+    "reverse": [
+      "self"
+    ],
+    "pp": [
+      "self",
+      "fmt",
+      "width",
+      "sep",
+      "show_offset",
+      "stream",
+      "color"
+    ],
+    "equals": [
+      "self",
+      "other"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__copy__": [
+      "self"
+    ],
+    "__getstate__": [
+      "self"
+    ],
+    "__setstate__": [
+      "self",
+      "state"
+    ],
+    "_truncated_values": [
+      "values",
+      "dtype"
+    ],
+    "_bulk_pack_into": [
+      "self",
+      "new_array",
+      "values"
+    ],
+    "_apply_op_to_all_elements": [
+      "self",
+      "op",
+      "value",
+      "is_comparison",
+      "reverse"
+    ],
+    "_apply_op_to_all_elements_inplace": [
+      "self",
+      "op",
+      "value"
+    ],
+    "_apply_bitwise_op_to_all_elements": [
+      "self",
+      "op",
+      "value"
+    ],
+    "_apply_bitwise_op_to_all_elements_inplace": [
+      "self",
+      "op",
+      "value"
+    ],
+    "_apply_op_between_arrays": [
+      "self",
+      "op",
+      "other",
+      "is_comparison"
+    ],
+    "_apply_op_between_arrays_inplace": [
+      "self",
+      "op",
+      "other"
+    ],
+    "_promotetype": [
+      "cls",
+      "type1",
+      "type2"
+    ],
+    "__add__": [
+      "self",
+      "other"
+    ],
+    "__iadd__": [
+      "self",
+      "other"
+    ],
+    "__isub__": [
+      "self",
+      "other"
+    ],
+    "__sub__": [
+      "self",
+      "other"
+    ],
+    "__mul__": [
+      "self",
+      "other"
+    ],
+    "__imul__": [
+      "self",
+      "other"
+    ],
+    "__floordiv__": [
+      "self",
+      "other"
+    ],
+    "__ifloordiv__": [
+      "self",
+      "other"
+    ],
+    "__truediv__": [
+      "self",
+      "other"
+    ],
+    "__itruediv__": [
+      "self",
+      "other"
+    ],
+    "__rshift__": [
+      "self",
+      "other"
+    ],
+    "__lshift__": [
+      "self",
+      "other"
+    ],
+    "__irshift__": [
+      "self",
+      "other"
+    ],
+    "__ilshift__": [
+      "self",
+      "other"
+    ],
+    "__mod__": [
+      "self",
+      "other"
+    ],
+    "__imod__": [
+      "self",
+      "other"
+    ],
+    "__and__": [
+      "self",
+      "other"
+    ],
+    "__iand__": [
+      "self",
+      "other"
+    ],
+    "__or__": [
+      "self",
+      "other"
+    ],
+    "__ior__": [
+      "self",
+      "other"
+    ],
+    "__xor__": [
+      "self",
+      "other"
+    ],
+    "__ixor__": [
+      "self",
+      "other"
+    ],
+    "__rmul__": [
+      "self",
+      "other"
+    ],
+    "__radd__": [
+      "self",
+      "other"
+    ],
+    "__rsub__": [
+      "self",
+      "other"
+    ],
+    "__rand__": [
+      "self",
+      "other"
+    ],
+    "__ror__": [
+      "self",
+      "other"
+    ],
+    "__rxor__": [
+      "self",
+      "other"
+    ],
+    "__lt__": [
+      "self",
+      "other"
+    ],
+    "__gt__": [
+      "self",
+      "other"
+    ],
+    "__ge__": [
+      "self",
+      "other"
+    ],
+    "__le__": [
+      "self",
+      "other"
+    ],
+    "_eq_ne": [
+      "self",
+      "op",
+      "other"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ],
+    "__neg__": [
+      "self"
+    ],
+    "__abs__": [
+      "self"
+    ]
+  },
+  "validated_count": [
+    "value",
+    "description"
+  ],
+  "tidy_input_string": [
+    "s"
+  ],
+  "BitArray": {
+    "__slots__": [],
+    "__init__": [],
+    "__new__": [],
+    "from_string": [],
+    "from_dtype": [],
+    "from_bytes": [],
+    "from_bools": [],
+    "from_zeros": [],
+    "from_ones": [],
+    "from_joined": [],
+    "from_file": [],
+    "from_tibs": [],
+    "to_immutable": [
+      "self"
+    ],
+    "to_tibs": [
+      "self"
+    ],
+    "copy": [
+      "self"
+    ],
+    "_invert_all": [
+      "self"
+    ],
+    "__setattr__": [
+      "self",
+      "attribute",
+      "value"
+    ],
+    "__iadd__": [
+      "self",
+      "bs"
+    ],
+    "__copy__": [
+      "self"
+    ],
+    "_setitem_int": [
+      "self",
+      "key",
+      "value"
+    ],
+    "_setitem_slice": [
+      "self",
+      "key",
+      "value"
+    ],
+    "__setitem__": [
+      "self",
+      "key",
+      "value"
+    ],
+    "__delitem__": [
+      "self",
+      "key"
+    ],
+    "__ilshift__": [
+      "self",
+      "n"
+    ],
+    "__irshift__": [
+      "self",
+      "n"
+    ],
+    "__imul__": [
+      "self",
+      "n"
+    ],
+    "__ior__": [
+      "self",
+      "bs"
+    ],
+    "__iand__": [
+      "self",
+      "bs"
+    ],
+    "__ixor__": [
+      "self",
+      "bs"
+    ],
+    "_replace": [
+      "self",
+      "old",
+      "new",
+      "start",
+      "end",
+      "count",
+      "bytealigned"
+    ],
+    "replace": [
+      "self",
+      "old",
+      "new",
+      "start",
+      "end",
+      "count"
+    ],
+    "_validate_pos_first": [
+      "pos",
+      "method_name"
+    ],
+    "insert": [
+      "self",
+      "pos",
+      "bs"
+    ],
+    "overwrite": [
+      "self",
+      "pos",
+      "bs"
+    ],
+    "append": [
+      "self",
+      "bs"
+    ],
+    "prepend": [
+      "self",
+      "bs"
+    ],
+    "_append": [
+      "self",
+      "bs"
+    ],
+    "_prepend": [
+      "self",
+      "bs"
+    ],
+    "_normalise_positions": [
+      "pos"
+    ],
+    "reverse": [
+      "self",
+      "start",
+      "end"
+    ],
+    "set": [
+      "self",
+      "value",
+      "pos"
+    ],
+    "invert": [
+      "self",
+      "pos"
+    ],
+    "ror": [
+      "self",
+      "bits",
+      "start",
+      "end"
+    ],
+    "_ror": [
+      "self",
+      "bits",
+      "start",
+      "end"
+    ],
+    "rol": [
+      "self",
+      "bits",
+      "start",
+      "end"
+    ],
+    "_rol": [
+      "self",
+      "bits",
+      "start",
+      "end"
+    ],
+    "byteswap": [
+      "self",
+      "fmt",
+      "start",
+      "end",
+      "repeat"
+    ],
+    "clear": [
+      "self"
+    ]
+  },
+  "_NO_MORE_VALUES": [],
+  "_prepared_pack_fmt": [
+    "fmt"
+  ],
+  "_values_needed_str": [
+    "tokens",
+    "kwargs"
+  ],
+  "pack": [
+    "fmt"
+  ],
+  "should_use_color": [
+    "color"
+  ],
+  "Colour": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "use_colour"
+    ]
+  },
+  "tibs_dtype_for": [
+    "name",
+    "bitlength"
+  ],
+  "tibs_dtype_tuple_for": [
+    "specs"
+  ],
+  "_normalise_byte_import_args": [
+    "offset",
+    "length"
+  ],
+  "_validated_buffer": [
+    "buffer",
+    "offset",
+    "length"
+  ],
+  "_BitStoreBase": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "initializer"
+    ],
+    "__getstate__": [
+      "self"
+    ],
+    "from_buffer": [
+      "offset",
+      "length"
+    ],
+    "to_bytes": [
+      "self"
+    ],
+    "to_bools": [
+      "self"
+    ],
+    "read_bytes": [
+      "self",
+      "start",
+      "length"
+    ],
+    "byte_swapped": [
+      "self",
+      "start",
+      "end"
+    ],
+    "to_u": [
+      "self"
+    ],
+    "read_u": [
+      "self",
+      "start",
+      "length"
+    ],
+    "to_i": [
+      "self"
+    ],
+    "read_i": [
+      "self",
+      "start",
+      "length"
+    ],
+    "to_hex": [
+      "self"
+    ],
+    "read_hex": [
+      "self",
+      "start",
+      "length"
+    ],
+    "to_bin": [
+      "self"
+    ],
+    "read_bin": [
+      "self",
+      "start",
+      "length"
+    ],
+    "to_oct": [
+      "self"
+    ],
+    "read_oct": [
+      "self",
+      "start",
+      "length"
+    ],
+    "__add__": [],
+    "__eq__": [],
+    "__and__": [],
+    "__or__": [],
+    "__xor__": [],
+    "__invert__": [
+      "self"
+    ],
+    "__lshift__": [],
+    "__rshift__": [],
+    "find": [
+      "self",
+      "bs",
+      "start",
+      "end",
+      "bytealigned",
+      "mask"
+    ],
+    "rfind": [
+      "self",
+      "bs",
+      "start",
+      "end",
+      "bytealigned",
+      "mask"
+    ],
+    "__imul__": [],
+    "getindex": [],
+    "getslice_withstep": [],
+    "getslice": [],
+    "any": [
+      "self"
+    ],
+    "all": [
+      "self"
+    ],
+    "count": [
+      "self",
+      "value"
+    ],
+    "to_values": [
+      "self",
+      "dtype",
+      "end"
+    ],
+    "to_values_iter": [
+      "self",
+      "dtype",
+      "end"
+    ],
+    "to_value": [
+      "self",
+      "dtype",
+      "start",
+      "end"
+    ],
+    "to_value_tuple": [
+      "self",
+      "dtype",
+      "start",
+      "end"
+    ],
+    "__len__": [
+      "self"
+    ]
+  },
+  "TOKEN_CACHE_SIZE": [],
+  "Dtype": {
+    "__new__": [
+      "length"
+    ],
+    "name": [
+      "self"
+    ],
+    "length": [
+      "self"
+    ],
+    "bitlength": [
+      "self"
+    ],
+    "variable_length": [
+      "self"
+    ],
+    "return_type": [
+      "self"
+    ],
+    "is_signed": [
+      "self"
+    ],
+    "_new_from_token": [
+      "cls",
+      "token"
+    ],
+    "__hash__": [
+      "self"
+    ],
+    "_create": [
+      "cls",
+      "definition",
+      "length"
+    ],
+    "pack": [],
+    "unpack": [],
+    "__str__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__reduce__": [
+      "self"
+    ]
+  },
+  "AllowedLengths": {
+    "__init__": [
+      "self",
+      "value"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__contains__": [
+      "self",
+      "other"
+    ],
+    "__bool__": [
+      "self"
+    ],
+    "only_one_value": [
+      "self"
+    ]
+  },
+  "DtypeDefinition": {
+    "__init__": [
+      "self",
+      "name",
+      "set_fn",
+      "get_fn",
+      "return_type",
+      "is_signed",
+      "bitlength2chars_fn",
+      "variable_length",
+      "allowed_lengths",
+      "multiplier",
+      "description",
+      "read_fn",
+      "is_property"
+    ],
+    "get_dtype": [
+      "self",
+      "length"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "_mutable_property_setter": [
+    "set_fn"
+  ],
+  "Register": {
+    "__new__": [
+      "cls"
+    ],
+    "add_dtype": [
+      "cls",
+      "definition"
+    ],
+    "add_dtype_alias": [
+      "cls",
+      "name",
+      "alias"
+    ],
+    "get_dtype": [
+      "cls",
+      "name",
+      "length"
+    ],
+    "__getitem__": [
+      "cls",
+      "name"
+    ],
+    "__delitem__": [
+      "cls",
+      "name"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "dtype_register": [],
+  "_READ_FMT_CACHE_SIZE": [],
+  "Reader": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "bits",
+      "pos"
+    ],
+    "from_file": [],
+    "_validate_bits": [
+      "value"
+    ],
+    "bits": [
+      "self"
+    ],
+    "pos": [
+      "self",
+      "value"
+    ],
+    "bytepos": [
+      "self",
+      "value"
+    ],
+    "remaining": [
+      "self"
+    ],
+    "at_end": [
+      "self"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__str__": [],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "_as_int": [
+      "value",
+      "description"
+    ],
+    "_checked_pos": [
+      "self",
+      "value"
+    ],
+    "align": [],
+    "bookmark": [
+      "self"
+    ],
+    "_end_of_read": [
+      "self",
+      "needed"
+    ],
+    "_dtype_from": [
+      "fmt"
+    ],
+    "_dtype_with_length": [
+      "dtype",
+      "items"
+    ],
+    "read_value": [],
+    "_read_dtype": [
+      "self",
+      "fmt"
+    ],
+    "read_bits": [],
+    "read_list": [
+      "self",
+      "fmt"
+    ],
+    "read_array": [
+      "n"
+    ],
+    "peek_value": [],
+    "peek_bits": [],
+    "_search": [
+      "self",
+      "bs",
+      "bytealigned",
+      "backwards"
+    ],
+    "_found_or_raise": [
+      "self",
+      "found"
+    ],
+    "seek_to": [],
+    "seek_past": [],
+    "seek_back_to": [],
+    "read_to": [],
+    "read_past": []
+  },
+  "ReadError": {},
+  "__licence__": [],
+  "__version__": [],
+  "__author__": [],
+  "_hex_bits2chars": [
+    "bitlength"
+  ],
+  "_oct_bits2chars": [
+    "bitlength"
+  ],
+  "_bin_bits2chars": [
+    "bitlength"
+  ],
+  "_bytes_bits2chars": [
+    "bitlength"
+  ],
+  "_uint_bits2chars": [
+    "bitlength"
+  ],
+  "_int_bits2chars": [
+    "bitlength"
+  ],
+  "_float_bits2chars": [
+    "bitlength"
+  ],
+  "_p3binary_bits2chars": [
+    "_"
+  ],
+  "_p4binary_bits2chars": [
+    "_"
+  ],
+  "_e4m3mxfp_bits2chars": [
+    "_"
+  ],
+  "_e5m2mxfp_bits2chars": [
+    "_"
+  ],
+  "_e3m2mxfp_bits2chars": [
+    "_"
+  ],
+  "_e2m3mxfp_bits2chars": [
+    "_"
+  ],
+  "_e2m1mxfp_bits2chars": [
+    "_"
+  ],
+  "_e8m0mxfp_bits2chars": [
+    "_"
+  ],
+  "_mxint_bits2chars": [
+    "_"
+  ],
+  "_bfloat_bits2chars": [
+    "_"
+  ],
+  "_bits_bits2chars": [
+    "bitlength"
+  ],
+  "_bool_bits2chars": [
+    "_"
+  ],
+  "_dtype_definitions": [],
+  "_property_docstrings": [],
+  "_property_docstring": [],
+  "__all__": [],
+  "_TIBS_FLOATBE": [],
+  "_TIBS_FLOATLE": [],
+  "_TIBS_BFLOATBE": [],
+  "_TIBS_E4M3MXFP": [],
+  "_TIBS_E5M2MXFP": [],
+  "_ONE_BIT": [],
+  "_BitPattern": [],
+  "BitsType": [],
+  "_PROMOTED_STR_CACHE_SIZE": [],
+  "_is_bit_pattern": [
+    "value"
+  ],
+  "_open_file_source": [
+    "source"
+  ],
+  "_mmap_or_empty": [
+    "fileno"
+  ],
+  "Bits": {
+    "__slots__": [],
+    "__init__": [],
+    "__new__": [],
+    "_create_from_bitstype": [],
+    "_initialise": [
+      "length",
+      "immutable"
+    ],
+    "_reject_removed_auto": [],
+    "__getattr__": [
+      "self",
+      "attribute"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__copy__": [
+      "self"
+    ],
+    "__lt__": [
+      "self",
+      "other"
+    ],
+    "__gt__": [
+      "self",
+      "other"
+    ],
+    "__le__": [
+      "self",
+      "other"
+    ],
+    "__ge__": [
+      "self",
+      "other"
+    ],
+    "__add__": [
+      "self",
+      "bs"
+    ],
+    "__radd__": [
+      "self",
+      "bs"
+    ],
+    "__getitem__": [],
+    "__len__": [
+      "self"
+    ],
+    "__bytes__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "_repr": [
+      "self",
+      "classname",
+      "length",
+      "pos"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [],
+    "__ne__": [],
+    "__invert__": [
+      "self"
+    ],
+    "__lshift__": [],
+    "__rshift__": [],
+    "__mul__": [],
+    "_imul": [],
+    "__rmul__": [],
+    "__and__": [],
+    "__rand__": [],
+    "__or__": [],
+    "__ror__": [],
+    "__xor__": [],
+    "__rxor__": [],
+    "__contains__": [],
+    "__hash__": [
+      "self"
+    ],
+    "__bool__": [
+      "self"
+    ],
+    "_clear": [
+      "self"
+    ],
+    "_set_from_bitstype": [],
+    "_setauto": [],
+    "_setfile": [
+      "self",
+      "source",
+      "length",
+      "offset"
+    ],
+    "_setbits": [
+      "self",
+      "bs",
+      "length"
+    ],
+    "_setp3binary": [
+      "self",
+      "f"
+    ],
+    "_setp4binary": [
+      "self",
+      "f"
+    ],
+    "_sete4m3mxfp_saturate": [
+      "self",
+      "f"
+    ],
+    "_sete4m3mxfp_overflow": [
+      "self",
+      "f"
+    ],
+    "_sete5m2mxfp_saturate": [
+      "self",
+      "f"
+    ],
+    "_sete5m2mxfp_overflow": [
+      "self",
+      "f"
+    ],
+    "_sete3m2mxfp": [
+      "self",
+      "f"
+    ],
+    "_sete2m3mxfp": [
+      "self",
+      "f"
+    ],
+    "_sete2m1mxfp": [
+      "self",
+      "f"
+    ],
+    "_sete8m0mxfp": [
+      "self",
+      "f"
+    ],
+    "_setmxint": [
+      "self",
+      "f"
+    ],
+    "_setbytes": [
+      "self",
+      "data",
+      "length"
+    ],
+    "_setbytes_with_truncation": [
+      "self",
+      "data",
+      "length",
+      "offset"
+    ],
+    "_getbytes": [
+      "self"
+    ],
+    "_readbytes": [
+      "self",
+      "pos",
+      "length"
+    ],
+    "_printable_table": [],
+    "_getbytes_printable": [
+      "self"
+    ],
+    "_maybe_use_existing_length": [
+      "self",
+      "length"
+    ],
+    "_setuint": [
+      "self",
+      "uint",
+      "length"
+    ],
+    "_getuint": [
+      "self"
+    ],
+    "_readuint": [
+      "self",
+      "pos",
+      "length"
+    ],
+    "_setint": [
+      "self",
+      "int_",
+      "length"
+    ],
+    "_getint": [
+      "self"
+    ],
+    "_readint": [
+      "self",
+      "pos",
+      "length"
+    ],
+    "_setuintbe": [
+      "self",
+      "uintbe",
+      "length"
+    ],
+    "_getuintbe": [
+      "self"
+    ],
+    "_readuintbe": [
+      "self",
+      "pos",
+      "length"
+    ],
+    "_setintbe": [
+      "self",
+      "intbe",
+      "length"
+    ],
+    "_getintbe": [
+      "self"
+    ],
+    "_readintbe": [
+      "self",
+      "pos",
+      "length"
+    ],
+    "_setuintle": [
+      "self",
+      "uintle",
+      "length"
+    ],
+    "_getuintle": [
+      "self"
+    ],
+    "_readuintle": [
+      "self",
+      "pos",
+      "length"
+    ],
+    "_setintle": [
+      "self",
+      "intle",
+      "length"
+    ],
+    "_getintle": [
+      "self"
+    ],
+    "_readintle": [
+      "self",
+      "pos",
+      "length"
+    ],
+    "_getp4binary": [
+      "self"
+    ],
+    "_readp4binary": [
+      "self",
+      "pos",
+      "length"
+    ],
+    "_getp3binary": [
+      "self"
+    ],
+    "_readp3binary": [
+      "self",
+      "pos",
+      "length"
+    ],
+    "_gete4m3mxfp": [
+      "self"
+    ],
+    "_reade4m3mxfp": [
+      "self",
+      "pos",
+      "length"
+    ],
+    "_gete5m2mxfp": [
+      "self"
+    ],
+    "_reade5m2mxfp": [
+      "self",
+      "pos",
+      "length"
+    ],
+    "_gete3m2mxfp": [
+      "self"
+    ],
+    "_reade3m2mxfp": [
+      "self",
+      "pos",
+      "length"
+    ],
+    "_gete2m3mxfp": [
+      "self"
+    ],
+    "_reade2m3mxfp": [
+      "self",
+      "pos",
+      "length"
+    ],
+    "_gete2m1mxfp": [
+      "self"
+    ],
+    "_reade2m1mxfp": [
+      "self",
+      "pos",
+      "length"
+    ],
+    "_gete8m0mxfp": [
+      "self"
+    ],
+    "_reade8m0mxfp": [
+      "self",
+      "pos",
+      "length"
+    ],
+    "_getmxint": [
+      "self"
+    ],
+    "_readmxint": [
+      "self",
+      "pos",
+      "length"
+    ],
+    "_setfloat": [
+      "self",
+      "f",
+      "length",
+      "big_endian"
+    ],
+    "_setfloatbe": [
+      "self",
+      "f",
+      "length"
+    ],
+    "_getfloatbe": [
+      "self"
+    ],
+    "_readfloatbe": [
+      "self",
+      "pos",
+      "length"
+    ],
+    "_setfloatle": [
+      "self",
+      "f",
+      "length"
+    ],
+    "_getfloatle": [
+      "self"
+    ],
+    "_readfloatle": [
+      "self",
+      "pos",
+      "length"
+    ],
+    "_getbfloatbe": [
+      "self"
+    ],
+    "_readbfloatbe": [
+      "self",
+      "pos",
+      "length"
+    ],
+    "_setbfloatbe": [
+      "self",
+      "f",
+      "length"
+    ],
+    "_getbfloatle": [
+      "self"
+    ],
+    "_readbfloatle": [
+      "self",
+      "pos",
+      "length"
+    ],
+    "_setbfloatle": [
+      "self",
+      "f",
+      "length"
+    ],
+    "_setue": [
+      "self",
+      "i"
+    ],
+    "_readue": [
+      "self",
+      "pos"
+    ],
+    "_incomplete_code_error": [
+      "name",
+      "length"
+    ],
+    "_getue": [
+      "self"
+    ],
+    "_getse": [
+      "self"
+    ],
+    "_getuie": [
+      "self"
+    ],
+    "_getsie": [
+      "self"
+    ],
+    "_setse": [
+      "self",
+      "i"
+    ],
+    "_readse": [
+      "self",
+      "pos"
+    ],
+    "_setuie": [
+      "self",
+      "i"
+    ],
+    "_readuie": [
+      "self",
+      "pos"
+    ],
+    "_setsie": [
+      "self",
+      "i"
+    ],
+    "_readsie": [
+      "self",
+      "pos"
+    ],
+    "_setbool": [
+      "self",
+      "value"
+    ],
+    "_getbool": [
+      "self"
+    ],
+    "_readbool": [
+      "self",
+      "pos",
+      "length"
+    ],
+    "_getpad": [
+      "self"
+    ],
+    "_readpad": [
+      "self",
+      "pos",
+      "length"
+    ],
+    "_setpad": [
+      "self",
+      "value",
+      "length"
+    ],
+    "_setbin": [
+      "self",
+      "binstring",
+      "length"
+    ],
+    "_getbin": [
+      "self"
+    ],
+    "_readbin": [
+      "self",
+      "pos",
+      "length"
+    ],
+    "_setoct": [
+      "self",
+      "octstring",
+      "length"
+    ],
+    "_getoct": [
+      "self"
+    ],
+    "_readoct": [
+      "self",
+      "pos",
+      "length"
+    ],
+    "_sethex": [
+      "self",
+      "hexstring",
+      "length"
+    ],
+    "_gethex": [
+      "self"
+    ],
+    "_readhex": [
+      "self",
+      "pos",
+      "length"
+    ],
+    "_copy": [
+      "self"
+    ],
+    "_slice": [
+      "self",
+      "start",
+      "end"
+    ],
+    "_addright_bitstore": [],
+    "_addright": [],
+    "_addleft": [],
+    "_insert": [],
+    "_overwrite": [],
+    "_delete": [],
+    "_reversebytes": [
+      "self",
+      "start",
+      "end"
+    ],
+    "_invert": [],
+    "_ilshift": [],
+    "_irshift": [],
+    "_getbits": [
+      "self"
+    ],
+    "_validate_slice": [
+      "self",
+      "start",
+      "end"
+    ],
+    "unpack": [
+      "self",
+      "fmt"
+    ],
+    "_readlist": [
+      "self",
+      "fmt",
+      "pos"
+    ],
+    "_read_dtype_list": [
+      "self",
+      "dtypes",
+      "pos"
+    ],
+    "find": [
+      "start",
+      "end"
+    ],
+    "_find": [
+      "self",
+      "bs",
+      "start",
+      "end",
+      "bytealigned"
+    ],
+    "findall": [
+      "start",
+      "end",
+      "count"
+    ],
+    "_findall": [
+      "self",
+      "bs",
+      "start",
+      "end",
+      "count",
+      "bytealigned"
+    ],
+    "_findall_counted": [
+      "self",
+      "bs",
+      "start",
+      "end",
+      "count",
+      "bytealigned"
+    ],
+    "rfind": [
+      "start",
+      "end"
+    ],
+    "_rfind": [
+      "self",
+      "bs",
+      "start",
+      "end",
+      "bytealigned"
+    ],
+    "cut": [
+      "self",
+      "bits",
+      "start",
+      "end",
+      "count"
+    ],
+    "_cut": [
+      "self",
+      "bits",
+      "start_",
+      "end_",
+      "count"
+    ],
+    "split": [
+      "self",
+      "delimiter",
+      "start",
+      "end",
+      "count"
+    ],
+    "_split": [
+      "self",
+      "delimiter",
+      "start",
+      "end",
+      "count",
+      "bytealigned"
+    ],
+    "join": [
+      "self",
+      "sequence"
+    ],
+    "to_bools": [
+      "self"
+    ],
+    "to_bytes": [
+      "self"
+    ],
+    "tobytes": [
+      "self"
+    ],
+    "to_file": [
+      "self",
+      "f"
+    ],
+    "tofile": [
+      "self",
+      "f"
+    ],
+    "startswith": [
+      "self",
+      "prefix",
+      "start",
+      "end"
+    ],
+    "endswith": [
+      "self",
+      "suffix",
+      "start",
+      "end"
+    ],
+    "all": [
+      "self",
+      "value",
+      "pos"
+    ],
+    "any": [
+      "self",
+      "value",
+      "pos"
+    ],
+    "count": [
+      "self",
+      "value"
+    ],
+    "_format_bits": [
+      "bits",
+      "bits_per_group",
+      "sep",
+      "dtype",
+      "colour_start",
+      "colour_end",
+      "width"
+    ],
+    "_chars_per_group": [
+      "bits_per_group",
+      "fmt"
+    ],
+    "_bits_per_char": [
+      "fmt"
+    ],
+    "_pp": [
+      "self",
+      "dtype1",
+      "dtype2",
+      "bits_per_group",
+      "width",
+      "sep",
+      "format_sep",
+      "show_offset",
+      "stream",
+      "offset_factor",
+      "colour"
+    ],
+    "_process_pp_tokens": [
+      "token_list",
+      "fmt"
+    ],
+    "pp": [
+      "self",
+      "fmt",
+      "width",
+      "sep",
+      "show_offset",
+      "stream",
+      "color"
+    ],
+    "copy": [
+      "self"
+    ],
+    "from_string": [],
+    "fromstring": [],
+    "from_dtype": [],
+    "from_bytes": [],
+    "from_bools": [],
+    "from_zeros": [],
+    "from_ones": [],
+    "from_joined": [],
+    "from_file": [],
+    "from_tibs": [],
+    "to_mutable": [
+      "self"
+    ],
+    "to_immutable": [
+      "self"
+    ],
+    "to_tibs": [
+      "self"
+    ]
+  },
+  "_ACCEPTED_AUTO_TYPES": [],
+  "_prepared_fmt": [
+    "fmt"
+  ]
+}
