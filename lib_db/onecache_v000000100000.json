@@ -1,0 +1,203 @@
+{
+  "IS_PYPY": [],
+  "utcnow": [],
+  "__all__": [],
+  "_MISSING": [],
+  "CacheDecorator": {
+    "__init__": [
+      "self",
+      "maxsize",
+      "ttl",
+      "skip_args",
+      "cache_class",
+      "refresh_ttl",
+      "thread_safe",
+      "max_mem_size"
+    ],
+    "__call__": [
+      "self",
+      "func"
+    ]
+  },
+  "AsyncCacheDecorator": {
+    "__call__": [
+      "self",
+      "func"
+    ]
+  },
+  "INF": [],
+  "_Marker": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "name"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__reduce__": [
+      "self"
+    ]
+  },
+  "_marker": [
+    "name"
+  ],
+  "_KWARGS": [],
+  "_UNHASHABLE": [],
+  "CacheValue": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "value",
+      "expire_at"
+    ],
+    "expired": [
+      "self",
+      "now"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__hash__": [],
+    "__reduce__": [
+      "self"
+    ]
+  },
+  "_restore_value": [
+    "value",
+    "expire_at",
+    "size",
+    "access"
+  ],
+  "_serialize": [
+    "data"
+  ],
+  "_string_key": [
+    "args",
+    "kwargs"
+  ],
+  "_make_key": [
+    "args",
+    "kwargs"
+  ],
+  "_key_size": [
+    "key"
+  ],
+  "_default_keys": [
+    "cls"
+  ],
+  "ExpirableCache": {
+    "_lru": [],
+    "__init__": [
+      "self",
+      "size",
+      "timeout",
+      "refresh_ttl",
+      "thread_safe",
+      "max_mem_size"
+    ],
+    "cache": [
+      "self"
+    ],
+    "timeout": [
+      "self"
+    ],
+    "max_mem_size": [
+      "self"
+    ],
+    "current_size": [
+      "self"
+    ],
+    "thread_safe": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "key"
+    ],
+    "_lookup": [
+      "self",
+      "key",
+      "default"
+    ],
+    "_lookup_unlocked": [
+      "self",
+      "key",
+      "default"
+    ],
+    "set": [
+      "self",
+      "key",
+      "data"
+    ],
+    "_set_unlocked": [
+      "self",
+      "key",
+      "data"
+    ],
+    "_wrap": [
+      "self",
+      "func",
+      "skip_args"
+    ],
+    "_make_key": [
+      "self",
+      "args",
+      "kwargs"
+    ],
+    "_purge_expired": [
+      "self",
+      "now"
+    ],
+    "_evict_oldest": [
+      "self"
+    ],
+    "_remove_entry": [
+      "self",
+      "key",
+      "item"
+    ],
+    "_forget": [
+      "self",
+      "item"
+    ],
+    "_drop_all": [
+      "self"
+    ],
+    "__contains__": [
+      "self",
+      "key"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "__reduce__": [
+      "self"
+    ],
+    "clear": [
+      "self"
+    ],
+    "refresh_key_ttl": [
+      "self",
+      "key",
+      "milliseconds"
+    ],
+    "get_key": [
+      "cls"
+    ],
+    "serialize_key": [
+      "cls",
+      "data"
+    ],
+    "expire": [
+      "self"
+    ]
+  },
+  "LRUCache": {
+    "_lru": [],
+    "access": [
+      "self"
+    ]
+  }
+}
