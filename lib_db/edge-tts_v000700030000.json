@@ -1,0 +1,374 @@
+{
+  "_parse_args": [],
+  "_check_deps": [
+    "use_mpv"
+  ],
+  "_create_temp_files": [
+    "use_mpv",
+    "mp3_fname",
+    "srt_fname",
+    "debug"
+  ],
+  "_run_edge_tts": [
+    "mp3_fname",
+    "srt_fname",
+    "tts_args"
+  ],
+  "_play_media": [
+    "use_mpv",
+    "mp3_fname",
+    "srt_fname"
+  ],
+  "_cleanup": [
+    "mp3_fname",
+    "srt_fname",
+    "keep"
+  ],
+  "_main": [],
+  "play_mp3_win32": [
+    "mp3_fname"
+  ],
+  "pr_err": [
+    "msg"
+  ],
+  "__all__": [],
+  "WIN_EPOCH": [],
+  "S_TO_NS": [],
+  "_SHA256_INITIAL": [],
+  "_SHA256_STATE": [],
+  "_SHA256_SCHEDULE": [],
+  "_SHA256_ROUND_CONSTANTS": [],
+  "_SHA256_ADJUSTMENT": [],
+  "_SHA256_BLOCK_CONSTANTS": [],
+  "_SHA256_SIGMA0_ADJUSTMENT": [],
+  "_SHA256_SIGMA1_ADJUSTMENT": [],
+  "_CS64_COEFFICIENTS": [],
+  "_CS64_FACTOR": [],
+  "_CS64_ADJUSTMENT0": [],
+  "_CS64_ADJUSTMENT1": [],
+  "_U32_MASK": [],
+  "_rol16": [
+    "value"
+  ],
+  "_words_le4_even": [
+    "data"
+  ],
+  "_sigma0": [
+    "value"
+  ],
+  "_sigma1": [
+    "value"
+  ],
+  "_sha256_rounds": [
+    "state",
+    "words",
+    "first_round"
+  ],
+  "_expand_sha256_schedule": [
+    "words",
+    "first_word"
+  ],
+  "_sha256_init": [
+    "data"
+  ],
+  "_sha256_digest": [
+    "data"
+  ],
+  "_cs64_digest": [
+    "data",
+    "digest"
+  ],
+  "_token_hash": [
+    "data"
+  ],
+  "generate_sec_ms_gec_v2": [
+    "unix_timestamp"
+  ],
+  "DRM": {
+    "adj_clock_skew_seconds": [
+      "skew_seconds"
+    ],
+    "get_unix_timestamp": [],
+    "parse_rfc2616_date": [
+      "date"
+    ],
+    "handle_client_response_error": [
+      "e"
+    ],
+    "generate_sec_ms_gec": [],
+    "generate_muid": [],
+    "headers_with_muid": [
+      "headers"
+    ]
+  },
+  "LOG": [],
+  "MULTI_WS_REGEX": [],
+  "ZERO_TIMEDELTA": [],
+  "SUBTITLE_SKIP_CONDITIONS": [],
+  "SECONDS_IN_HOUR": [],
+  "SECONDS_IN_MINUTE": [],
+  "HOURS_IN_DAY": [],
+  "MICROSECONDS_IN_MILLISECOND": [],
+  "Subtitle": {
+    "__init__": [
+      "self",
+      "index",
+      "start",
+      "end",
+      "content"
+    ],
+    "__hash__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__lt__": [
+      "self",
+      "other"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "to_srt": [
+      "self",
+      "eol"
+    ]
+  },
+  "make_legal_content": [
+    "content"
+  ],
+  "timedelta_to_srt_timestamp": [
+    "timedelta_timestamp"
+  ],
+  "sort_and_reindex": [
+    "subtitles",
+    "start_index",
+    "in_place",
+    "skip"
+  ],
+  "_should_skip_sub": [
+    "subtitle"
+  ],
+  "compose": [
+    "subtitles",
+    "reindex",
+    "start_index",
+    "eol",
+    "in_place"
+  ],
+  "_ShouldSkipException": {},
+  "_SSL_CTX": [],
+  "__list_voices": [
+    "session",
+    "ssl_ctx",
+    "proxy"
+  ],
+  "list_voices": [],
+  "VoicesManager": {
+    "__init__": [
+      "self"
+    ],
+    "create": [
+      "cls",
+      "custom_voices"
+    ],
+    "find": [
+      "self"
+    ]
+  },
+  "__version__": [],
+  "__version_info__": [],
+  "SubMaker": {
+    "__init__": [
+      "self"
+    ],
+    "feed": [
+      "self",
+      "msg"
+    ],
+    "get_srt": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "EdgeTTSException": {},
+  "UnknownResponse": {},
+  "UnexpectedResponse": {},
+  "NoAudioReceived": {},
+  "WebSocketError": {},
+  "SkewAdjustmentError": {},
+  "TTSChunk": {},
+  "VoiceTag": {},
+  "Voice": {},
+  "VoicesManagerVoice": {},
+  "VoicesManagerFind": {},
+  "CommunicateState": {},
+  "get_headers_and_data": [
+    "data",
+    "header_length"
+  ],
+  "remove_incompatible_characters": [
+    "string"
+  ],
+  "connect_id": [],
+  "_find_last_newline_or_space_within_limit": [
+    "text",
+    "limit"
+  ],
+  "_find_safe_utf8_split_point": [
+    "text_segment"
+  ],
+  "_adjust_split_point_for_xml_entity": [
+    "text",
+    "split_at"
+  ],
+  "split_text_by_byte_length": [
+    "text",
+    "byte_length"
+  ],
+  "mkssml": [
+    "tc",
+    "escaped_text"
+  ],
+  "date_to_string": [],
+  "ssml_headers_plus_data": [
+    "request_id",
+    "timestamp",
+    "ssml"
+  ],
+  "Communicate": {
+    "__init__": [
+      "self",
+      "text",
+      "voice"
+    ],
+    "__parse_metadata": [
+      "self",
+      "data"
+    ],
+    "__compensate_offset": [
+      "self"
+    ],
+    "__stream": [
+      "self"
+    ],
+    "stream": [
+      "self"
+    ],
+    "save": [
+      "self",
+      "audio_fname",
+      "metadata_fname"
+    ],
+    "stream_sync": [
+      "self"
+    ],
+    "save_sync": [
+      "self",
+      "audio_fname",
+      "metadata_fname"
+    ]
+  },
+  "BASE_URL": [],
+  "TRUSTED_CLIENT_TOKEN": [],
+  "WSS_URL": [],
+  "VOICE_LIST": [],
+  "DEFAULT_VOICE": [],
+  "CHROMIUM_FULL_VERSION": [],
+  "CHROMIUM_MAJOR_VERSION": [],
+  "SEC_MS_GEC_VERSION": [],
+  "BASE_HEADERS": [],
+  "WSS_HEADERS": [],
+  "VOICE_HEADERS": [],
+  "TICKS_PER_SECOND": [],
+  "MP3_BITRATE_BPS": [],
+  "FULL_BLOCK": [],
+  "PARTIAL_BLOCKS": [],
+  "MIN_BAR_WIDTH": [],
+  "DEFAULT_WIDTH": [],
+  "format_time": [
+    "seconds"
+  ],
+  "format_bytes": [
+    "num_bytes"
+  ],
+  "render_bar": [
+    "fraction",
+    "width"
+  ],
+  "ProgressBar": {
+    "__init__": [
+      "self",
+      "text",
+      "stream",
+      "width",
+      "min_interval",
+      "time_fn"
+    ],
+    "text_fraction": [
+      "self"
+    ],
+    "fraction": [
+      "self"
+    ],
+    "_received_seconds": [
+      "self"
+    ],
+    "_estimated_total_seconds": [
+      "self"
+    ],
+    "advance": [
+      "self",
+      "spoken_text"
+    ],
+    "set_audio_timeline": [
+      "self",
+      "ticks"
+    ],
+    "add_audio_bytes": [
+      "self",
+      "num_bytes"
+    ],
+    "render": [
+      "self"
+    ],
+    "finish": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "_line": [
+      "self"
+    ],
+    "_write": [
+      "self",
+      "line",
+      "end"
+    ]
+  },
+  "_print_voices": [],
+  "_should_show_progress": [
+    "args"
+  ],
+  "_run_tts": [
+    "args"
+  ],
+  "amain": [],
+  "main": [],
+  "TTSConfig": {
+    "validate_string_param": [
+      "param_name",
+      "param_value",
+      "pattern"
+    ],
+    "__post_init__": [
+      "self"
+    ]
+  },
+  "UtilArgs": {}
+}

@@ -1,0 +1,373 @@
+{
+  "Self": [],
+  "TeradataColumn": {
+    "quoted": [
+      "self"
+    ],
+    "data_type": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "version": [],
+  "logger": [],
+  "DEFAULT_BATCH_SIZE": [],
+  "DEFAULT_VARCHAR_LENGTH": [],
+  "pandas_dtype_to_teradata": [
+    "series"
+  ],
+  "_quote_ident": [
+    "name"
+  ],
+  "infer_column_types": [
+    "df"
+  ],
+  "ddl_from_column_types": [
+    "col_types"
+  ],
+  "build_column_ddl": [
+    "df"
+  ],
+  "dataframe_to_bindings": [
+    "df"
+  ],
+  "_is_scalar_na": [
+    "value"
+  ],
+  "_as_bool": [
+    "value"
+  ],
+  "TeradataPythonJobHelper": {
+    "__init__": [
+      "self",
+      "parsed_model",
+      "credentials"
+    ],
+    "_parse_batch_size": [
+      "self",
+      "value"
+    ],
+    "submit": [
+      "self",
+      "compiled_code"
+    ]
+  },
+  "TeradataClientPythonJobHelper": {
+    "submit": [
+      "self",
+      "compiled_code"
+    ],
+    "_connect": [
+      "self"
+    ],
+    "_load_relation": [
+      "self",
+      "relation_name"
+    ],
+    "_write_dataframe": [
+      "self",
+      "df",
+      "target_relation"
+    ],
+    "_make_staging_relation": [
+      "target_relation",
+      "suffix"
+    ],
+    "_drop_if_exists": [
+      "cursor",
+      "target_relation"
+    ],
+    "_coerce_to_pandas": [
+      "self",
+      "df"
+    ]
+  },
+  "_TeradataSession": {
+    "__init__": [
+      "self",
+      "load_df_function"
+    ],
+    "table": [
+      "self",
+      "relation_name"
+    ],
+    "__call__": [
+      "self",
+      "relation_name"
+    ]
+  },
+  "LIST_SCHEMAS_MACRO_NAME": [],
+  "LIST_RELATIONS_MACRO_NAME": [],
+  "GET_CATALOG_MACRO_NAME": [],
+  "_expect_row_value": [
+    "key",
+    "row"
+  ],
+  "_catalog_filter_schemas": [
+    "used_schemas"
+  ],
+  "TeradataConfig": {},
+  "TeradataAdapter": {
+    "Relation": [],
+    "Column": [],
+    "ConnectionManager": [],
+    "CATALOG_INTEGRATIONS": [],
+    "CONSTRAINT_SUPPORT": [],
+    "date_function": [
+      "cls"
+    ],
+    "python_submission_helpers": [
+      "self"
+    ],
+    "default_python_submission_method": [
+      "self"
+    ],
+    "generate_python_submission_response": [
+      "self",
+      "submission_result"
+    ],
+    "verify_database": [
+      "self",
+      "database"
+    ],
+    "convert_text_type": [
+      "cls",
+      "agate_table",
+      "col_idx"
+    ],
+    "convert_datetime_type": [
+      "cls",
+      "agate_table",
+      "col_idx"
+    ],
+    "convert_time_type": [
+      "cls",
+      "agate_table",
+      "col_idx"
+    ],
+    "convert_date_type": [
+      "cls",
+      "agate_table",
+      "col_idx"
+    ],
+    "convert_boolean_type": [
+      "cls",
+      "agate_table",
+      "col_idx"
+    ],
+    "convert_number_type": [
+      "cls",
+      "agate_table",
+      "col_idx"
+    ],
+    "quote": [
+      "cls",
+      "identifier"
+    ],
+    "list_relations_without_caching": [
+      "self",
+      "schema_relation"
+    ],
+    "get_relation": [
+      "self",
+      "database",
+      "schema",
+      "identifier"
+    ],
+    "get_catalog": [
+      "self",
+      "relation_configs",
+      "used_schemas"
+    ],
+    "_get_one_catalog": [
+      "self",
+      "information_schema",
+      "schemas",
+      "relation_config"
+    ],
+    "_catalog_filter_table": [
+      "cls",
+      "table",
+      "used_schemas"
+    ],
+    "get_catalog_for_single_relation": [
+      "self",
+      "relation"
+    ],
+    "check_schema_exists": [
+      "self",
+      "database",
+      "schema"
+    ],
+    "update_column_sql": [
+      "self",
+      "dst_name",
+      "dst_column",
+      "clause",
+      "where_clause"
+    ],
+    "timestamp_add_sql": [
+      "self",
+      "add_to",
+      "number",
+      "interval"
+    ],
+    "string_add_sql": [
+      "self",
+      "add_to",
+      "value",
+      "location"
+    ],
+    "get_rows_different_sql": [
+      "self",
+      "relation_a",
+      "relation_b",
+      "column_names",
+      "except_operator"
+    ],
+    "standardize_grants_dict": [
+      "self",
+      "grants_table"
+    ],
+    "valid_incremental_strategies": [
+      "self"
+    ],
+    "otf_relation_exists": [
+      "self",
+      "datalake_name",
+      "otf_database",
+      "identifier"
+    ],
+    "get_otf_columns_in_relation": [
+      "self",
+      "datalake_name",
+      "otf_database",
+      "identifier"
+    ],
+    "get_otf_column_types": [
+      "self",
+      "datalake_name",
+      "otf_database",
+      "identifier"
+    ],
+    "teradata_type_to_otf_type": [
+      "self",
+      "data_type"
+    ],
+    "otf_type_promotion_allowed": [
+      "self",
+      "old_otf_type",
+      "new_otf_type"
+    ]
+  },
+  "TeradataCatalogRelation": {},
+  "TeradataDatalakeCatalogIntegration": {
+    "catalog_type": [],
+    "allows_writes": [],
+    "table_format": [],
+    "file_format": [],
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "build_relation": [
+      "self",
+      "config"
+    ]
+  },
+  "Plugin": [],
+  "TeradataCredentials": {
+    "_ALIASES": [],
+    "__post_init__": [
+      "self"
+    ],
+    "type": [
+      "self"
+    ],
+    "unique_field": [
+      "self"
+    ],
+    "_connection_keys": [
+      "self"
+    ],
+    "__pre_deserialize__": [
+      "cls",
+      "data"
+    ]
+  },
+  "TeradataConnectionManager": {
+    "TYPE": [],
+    "add_begin_query": [
+      "self"
+    ],
+    "add_commit_query": [
+      "self"
+    ],
+    "begin": [
+      "self"
+    ],
+    "commit": [
+      "self"
+    ],
+    "clear_transaction": [
+      "self"
+    ],
+    "open": [
+      "cls",
+      "connection"
+    ],
+    "get_credentials": [
+      "cls",
+      "credentials"
+    ],
+    "get_connection_kwargs": [
+      "credentials"
+    ],
+    "cancel": [
+      "self",
+      "connection"
+    ],
+    "exception_handler": [
+      "self",
+      "sql"
+    ],
+    "get_response": [
+      "cls",
+      "cursor"
+    ],
+    "add_query": [
+      "self",
+      "sql",
+      "auto_begin",
+      "bindings",
+      "abridge_sql_log"
+    ],
+    "data_type_code_to_name": [
+      "cls",
+      "type_code"
+    ],
+    "apply_query_band": [
+      "cls",
+      "handle",
+      "query_band_text"
+    ]
+  },
+  "TeradataQuotePolicy": {},
+  "TeradataIncludePolicy": {},
+  "TeradataRelation": {
+    "create_from": [
+      "cls",
+      "quoting",
+      "relation_config"
+    ],
+    "render": [
+      "self"
+    ],
+    "render_limited": [
+      "self"
+    ]
+  },
+  "PACKAGE_PATH": []
+}
