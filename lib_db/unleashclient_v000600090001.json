@@ -1,0 +1,894 @@
+{
+  "DEFAULT_MAX_QUEUE_SIZE": [],
+  "DEFAULT_TIMEOUT": [],
+  "_ShutdownMarker": {},
+  "_EventDispatcher": {
+    "__init__": [
+      "self",
+      "callback",
+      "max_size"
+    ],
+    "emit_event": [
+      "self",
+      "event"
+    ],
+    "dropped_events": [
+      "self"
+    ],
+    "close": [
+      "self",
+      "timeout"
+    ],
+    "_start_worker": [
+      "self"
+    ],
+    "_run": [
+      "self"
+    ]
+  },
+  "_ScheduledJob": [],
+  "_generated_executor_name": [],
+  "_Scheduler": {
+    "__init__": [
+      "self",
+      "scheduler",
+      "executor_name"
+    ],
+    "every": [
+      "self",
+      "interval_seconds",
+      "jitter_seconds",
+      "fn",
+      "kwargs"
+    ],
+    "cancel": [
+      "self",
+      "job"
+    ],
+    "start": [
+      "self"
+    ],
+    "shutdown": [
+      "self",
+      "wait"
+    ]
+  },
+  "MetricFlagContext": {},
+  "ImpactMetrics": {
+    "__init__": [
+      "self",
+      "engine",
+      "app_name",
+      "environment"
+    ],
+    "define_counter": [
+      "self",
+      "name",
+      "help_text"
+    ],
+    "increment_counter": [
+      "self",
+      "name",
+      "value",
+      "flag_context"
+    ],
+    "define_gauge": [
+      "self",
+      "name",
+      "help_text"
+    ],
+    "update_gauge": [
+      "self",
+      "name",
+      "value",
+      "flag_context"
+    ],
+    "define_histogram": [
+      "self",
+      "name",
+      "help_text",
+      "buckets"
+    ],
+    "observe_histogram": [
+      "self",
+      "name",
+      "value",
+      "flag_context"
+    ],
+    "collect": [
+      "self"
+    ],
+    "restore": [
+      "self",
+      "metrics"
+    ],
+    "_variant_label": [
+      "self",
+      "flag_name",
+      "context"
+    ],
+    "_resolve_labels": [
+      "self",
+      "flag_context"
+    ]
+  },
+  "_HeaderFactory": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "base": [
+      "self"
+    ],
+    "polling": [
+      "self"
+    ],
+    "metrics": [
+      "self"
+    ],
+    "streaming": [
+      "self"
+    ]
+  },
+  "RETRY_STATUSES": [],
+  "RETRYABLE_ERRORS": [],
+  "FATAL_URL_ERRORS": [],
+  "_log_resp_info": [
+    "resp"
+  ],
+  "_AsyncTransport": {
+    "__init__": [
+      "self",
+      "config",
+      "headers"
+    ],
+    "_raise_if_closed": [
+      "self"
+    ],
+    "_get_session": [
+      "self"
+    ],
+    "_timeout": [
+      "self"
+    ],
+    "aclose": [
+      "self"
+    ],
+    "fetch_features": [
+      "self",
+      "etag"
+    ],
+    "register": [
+      "self",
+      "payload"
+    ],
+    "send_metrics": [
+      "self",
+      "payload"
+    ]
+  },
+  "LOGGER": [],
+  "InstanceAllowType": {
+    "BLOCK": [],
+    "WARN": [],
+    "SILENTLY_ALLOW": []
+  },
+  "normalized_hash": [
+    "identifier",
+    "activation_group",
+    "normalizer",
+    "seed"
+  ],
+  "get_identifier": [
+    "context_key_name",
+    "context"
+  ],
+  "extract_environment_from_headers": [
+    "headers"
+  ],
+  "_AsyncMetricsReporter": {
+    "__init__": [
+      "self",
+      "config",
+      "transport",
+      "scheduler",
+      "engine",
+      "impact_metrics"
+    ],
+    "start": [
+      "self"
+    ],
+    "flush": [
+      "self"
+    ],
+    "stop": [
+      "self"
+    ]
+  },
+  "_VariantResult": {},
+  "_Evaluator": {
+    "__init__": [
+      "self",
+      "engine",
+      "enricher",
+      "config",
+      "events"
+    ],
+    "is_enabled": [
+      "self",
+      "feature_name",
+      "context",
+      "fallback_function"
+    ],
+    "get_variant": [
+      "self",
+      "feature_name",
+      "context"
+    ],
+    "feature_definitions": [
+      "self"
+    ]
+  },
+  "_FeatureStore": {
+    "__init__": [
+      "self",
+      "engine",
+      "cache",
+      "events"
+    ],
+    "cached_etag": [
+      "self"
+    ],
+    "load_from_cache": [
+      "self"
+    ],
+    "apply_fetched": [
+      "self",
+      "raw_state",
+      "etag"
+    ],
+    "apply_streamed": [
+      "self",
+      "raw_state",
+      "emit_ready"
+    ],
+    "emit_ready": [
+      "self"
+    ],
+    "_emit": [
+      "self",
+      "event"
+    ]
+  },
+  "_InstanceRegistry": {
+    "__init__": [
+      "self"
+    ],
+    "register": [
+      "self",
+      "identifier",
+      "mode"
+    ],
+    "__contains__": [
+      "self",
+      "key"
+    ],
+    "count": [
+      "self",
+      "key"
+    ],
+    "increment": [
+      "self",
+      "key"
+    ],
+    "_reset": [
+      "self"
+    ]
+  },
+  "_REGISTRY": [],
+  "_get_instance_registry": [],
+  "ExperimentalMode": {},
+  "redact_to_print_safely": [
+    "value"
+  ],
+  "UnleashConfig": {
+    "__post_init__": [
+      "self"
+    ],
+    "mode": [
+      "self"
+    ],
+    "refresh_interval_str_millis": [
+      "self"
+    ],
+    "metrics_interval_str_millis": [
+      "self"
+    ],
+    "impact_metrics_environment": [
+      "self"
+    ],
+    "instance_identifier": [
+      "self"
+    ]
+  },
+  "UnleashClientError": {},
+  "InstanceRegistryError": {},
+  "MultipleInstancesNotAllowedError": {},
+  "TransportError": {},
+  "AlreadyClosedError": {
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "_client_metadata": [
+    "config"
+  ],
+  "_build_register_payload": [
+    "config",
+    "strategies"
+  ],
+  "_build_metrics_payload": [
+    "config",
+    "bucket",
+    "impact_metrics"
+  ],
+  "FetchResult": {},
+  "_normalized_url": [
+    "url",
+    "path"
+  ],
+  "_Transport": {
+    "__init__": [
+      "self",
+      "config",
+      "headers"
+    ],
+    "fetch_features": [
+      "self",
+      "etag"
+    ],
+    "register": [
+      "self",
+      "payload"
+    ],
+    "send_metrics": [
+      "self",
+      "payload"
+    ]
+  },
+  "SDK_NAME": [],
+  "SDK_VERSION": [],
+  "REQUEST_TIMEOUT": [],
+  "REQUEST_RETRIES": [],
+  "METRIC_LAST_SENT_TIME": [],
+  "CLIENT_SPEC_VERSION": [],
+  "APPLICATION_HEADERS": [],
+  "DISABLED_VARIATION": [],
+  "REGISTER_URL": [],
+  "FEATURES_URL": [],
+  "METRICS_URL": [],
+  "STREAMING_URL": [],
+  "FAILED_STRATEGIES": [],
+  "ETAG": [],
+  "_AsyncJobFn": [],
+  "_AsyncJob": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "interval",
+      "jitter",
+      "fn",
+      "kwargs"
+    ]
+  },
+  "_AsyncScheduler": {
+    "__init__": [
+      "self"
+    ],
+    "every": [
+      "self",
+      "interval_seconds",
+      "jitter_seconds",
+      "fn",
+      "kwargs"
+    ],
+    "cancel": [
+      "self",
+      "job"
+    ],
+    "cancel_and_wait": [
+      "self",
+      "job"
+    ],
+    "start": [
+      "self"
+    ],
+    "shutdown": [
+      "self",
+      "wait"
+    ],
+    "_spawn": [
+      "self",
+      "job"
+    ],
+    "_run": [
+      "self",
+      "job"
+    ]
+  },
+  "BASE_CONTEXT_FIELDS": [],
+  "_safe_value": [
+    "value"
+  ],
+  "_ContextEnricher": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "build": [
+      "self",
+      "context"
+    ],
+    "_extract_properties": [
+      "self",
+      "context"
+    ]
+  },
+  "__getattr__": [
+    "name"
+  ],
+  "_MetricsReporter": {
+    "__init__": [
+      "self",
+      "config",
+      "transport",
+      "scheduler",
+      "engine",
+      "impact_metrics"
+    ],
+    "job": [
+      "self",
+      "value"
+    ],
+    "start": [
+      "self"
+    ],
+    "flush": [
+      "self"
+    ],
+    "stop": [
+      "self"
+    ]
+  },
+  "UnleashEventType": {
+    "FEATURE_FLAG": [],
+    "VARIANT": [],
+    "FETCHED": [],
+    "READY": []
+  },
+  "BaseEvent": {},
+  "UnleashEvent": {},
+  "UnleashReadyEvent": {},
+  "UnleashFetchedEvent": {
+    "features": [
+      "self"
+    ]
+  },
+  "BaseCache": {
+    "bootstrapped": [],
+    "set": [
+      "self",
+      "key",
+      "value"
+    ],
+    "mset": [
+      "self",
+      "data"
+    ],
+    "get": [
+      "self",
+      "key",
+      "default"
+    ],
+    "exists": [
+      "self",
+      "key"
+    ],
+    "destroy": [
+      "self"
+    ]
+  },
+  "FileCache": {
+    "__init__": [
+      "self",
+      "name",
+      "directory",
+      "request_timeout"
+    ],
+    "bootstrap_from_dict": [
+      "self",
+      "initial_config"
+    ],
+    "bootstrap_from_file": [
+      "self",
+      "initial_config_file"
+    ],
+    "bootstrap_from_url": [
+      "self",
+      "initial_config_url",
+      "headers",
+      "request_timeout"
+    ],
+    "set": [
+      "self",
+      "key",
+      "value"
+    ],
+    "mset": [
+      "self",
+      "data"
+    ],
+    "get": [
+      "self",
+      "key",
+      "default"
+    ],
+    "exists": [
+      "self",
+      "key"
+    ],
+    "destroy": [
+      "self"
+    ]
+  },
+  "OfflineConnector": {
+    "__init__": [
+      "self",
+      "store",
+      "scheduler",
+      "refresh_interval",
+      "refresh_jitter"
+    ],
+    "start": [
+      "self"
+    ],
+    "stop": [
+      "self"
+    ]
+  },
+  "BootstrapConnector": {
+    "__init__": [
+      "self",
+      "store"
+    ],
+    "start": [
+      "self"
+    ],
+    "stop": [
+      "self"
+    ]
+  },
+  "StreamingConnector": {
+    "__init__": [
+      "self",
+      "store",
+      "url",
+      "headers",
+      "request_timeout",
+      "backoff_initial",
+      "backoff_max",
+      "backoff_multiplier",
+      "backoff_jitter",
+      "custom_options"
+    ],
+    "start": [
+      "self"
+    ],
+    "stop": [
+      "self"
+    ],
+    "_run": [
+      "self"
+    ]
+  },
+  "_AsyncBaseConnector": {
+    "__init__": [
+      "self",
+      "store"
+    ],
+    "start": [
+      "self"
+    ],
+    "stop": [
+      "self"
+    ]
+  },
+  "_AsyncPollingConnector": {
+    "__init__": [
+      "self",
+      "store",
+      "transport",
+      "refresh_interval",
+      "refresh_jitter"
+    ],
+    "_fetch_and_load": [
+      "self"
+    ],
+    "start": [
+      "self"
+    ],
+    "stop": [
+      "self"
+    ]
+  },
+  "__all__": [],
+  "PollingConnector": {
+    "__init__": [
+      "self",
+      "store",
+      "scheduler",
+      "transport",
+      "refresh_interval",
+      "refresh_jitter"
+    ],
+    "_fetch_and_load": [
+      "self"
+    ],
+    "start": [
+      "self"
+    ],
+    "stop": [
+      "self"
+    ]
+  },
+  "BaseConnector": {
+    "__init__": [
+      "self",
+      "store"
+    ],
+    "start": [
+      "self"
+    ],
+    "stop": [
+      "self"
+    ]
+  },
+  "AsyncUnleashClient": {
+    "__init__": [
+      "self",
+      "url",
+      "app_name",
+      "environment",
+      "instance_id",
+      "refresh_interval",
+      "refresh_jitter",
+      "metrics_interval",
+      "metrics_jitter",
+      "disable_metrics",
+      "disable_registration",
+      "custom_headers",
+      "custom_options",
+      "request_timeout",
+      "request_retries",
+      "custom_strategies",
+      "cache_directory",
+      "project_name",
+      "verbose_log_level",
+      "cache",
+      "multiple_instance_mode",
+      "event_callback",
+      "experimental_mode",
+      "sdk_flavor",
+      "sdk_flavor_version"
+    ],
+    "is_initialized": [
+      "self"
+    ],
+    "is_enabled": [
+      "self",
+      "feature_name",
+      "context",
+      "fallback_function"
+    ],
+    "get_variant": [
+      "self",
+      "feature_name",
+      "context"
+    ],
+    "feature_definitions": [
+      "self"
+    ],
+    "initialize_client": [
+      "self",
+      "fetch_toggles"
+    ],
+    "destroy": [
+      "self"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ]
+  },
+  "INSTANCES": [],
+  "_RunState": {
+    "UNINITIALIZED": [],
+    "INITIALIZED": [],
+    "SHUTDOWN": []
+  },
+  "build_ready_callback": [
+    "event_callback"
+  ],
+  "UnleashClient": {
+    "__init__": [
+      "self",
+      "url",
+      "app_name",
+      "environment",
+      "instance_id",
+      "refresh_interval",
+      "refresh_jitter",
+      "metrics_interval",
+      "metrics_jitter",
+      "disable_metrics",
+      "disable_registration",
+      "custom_headers",
+      "custom_options",
+      "request_timeout",
+      "request_retries",
+      "custom_strategies",
+      "cache_directory",
+      "project_name",
+      "verbose_log_level",
+      "cache",
+      "scheduler",
+      "scheduler_executor",
+      "multiple_instance_mode",
+      "event_callback",
+      "experimental_mode",
+      "sdk_flavor",
+      "sdk_flavor_version"
+    ],
+    "metric_job": [
+      "self",
+      "value"
+    ],
+    "unleash_scheduler": [
+      "self",
+      "value"
+    ],
+    "unleash_executor_name": [
+      "self",
+      "value"
+    ],
+    "unleash_url": [
+      "self",
+      "value"
+    ],
+    "unleash_app_name": [
+      "self",
+      "value"
+    ],
+    "unleash_environment": [
+      "self",
+      "value"
+    ],
+    "unleash_instance_id": [
+      "self",
+      "value"
+    ],
+    "unleash_refresh_interval": [
+      "self",
+      "value"
+    ],
+    "unleash_refresh_jitter": [
+      "self",
+      "value"
+    ],
+    "unleash_metrics_interval": [
+      "self",
+      "value"
+    ],
+    "unleash_metrics_jitter": [
+      "self",
+      "value"
+    ],
+    "unleash_request_timeout": [
+      "self",
+      "value"
+    ],
+    "unleash_request_retries": [
+      "self",
+      "value"
+    ],
+    "unleash_disable_metrics": [
+      "self",
+      "value"
+    ],
+    "unleash_disable_registration": [
+      "self",
+      "value"
+    ],
+    "unleash_custom_headers": [
+      "self",
+      "value"
+    ],
+    "unleash_custom_options": [
+      "self",
+      "value"
+    ],
+    "unleash_static_context": [
+      "self",
+      "value"
+    ],
+    "unleash_project_name": [
+      "self",
+      "value"
+    ],
+    "unleash_verbose_log_level": [
+      "self",
+      "value"
+    ],
+    "unleash_sdk_flavor": [
+      "self",
+      "value"
+    ],
+    "unleash_sdk_flavor_version": [
+      "self",
+      "value"
+    ],
+    "connector_mode": [
+      "self",
+      "value"
+    ],
+    "strategy_mapping": [
+      "self",
+      "value"
+    ],
+    "unleash_metrics_interval_str_millis": [
+      "self"
+    ],
+    "connection_id": [
+      "self"
+    ],
+    "is_initialized": [
+      "self"
+    ],
+    "initialize_client": [
+      "self",
+      "fetch_toggles"
+    ],
+    "feature_definitions": [
+      "self"
+    ],
+    "destroy": [
+      "self"
+    ],
+    "_redact_to_print_safely": [
+      "value"
+    ],
+    "is_enabled": [
+      "self",
+      "feature_name",
+      "context",
+      "fallback_function"
+    ],
+    "get_variant": [
+      "self",
+      "feature_name",
+      "context"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self"
+    ]
+  }
+}
