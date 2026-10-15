@@ -1,0 +1,301 @@
+{
+  "logger": [],
+  "_max_session_duration": [],
+  "_delta_transcript_interval": [],
+  "SAMPLE_RATE": [],
+  "NUM_CHANNELS": [],
+  "_REALTIME_ONLY_MODELS": [],
+  "_CONTEXT_HINT_MODELS": [],
+  "_is_realtime_only": [
+    "model"
+  ],
+  "_supports_context_hints": [
+    "model"
+  ],
+  "_as_languages": [
+    "language"
+  ],
+  "_as_turn_detection": [
+    "turn_detection"
+  ],
+  "_validate_context": [
+    "model",
+    "languages",
+    "keywords"
+  ],
+  "_transcript_language": [
+    "languages"
+  ],
+  "_STTOptions": {},
+  "_transcription": [
+    "opts"
+  ],
+  "_session_update": [
+    "opts"
+  ],
+  "STT": {
+    "__init__": [
+      "self"
+    ],
+    "model": [
+      "self"
+    ],
+    "provider": [
+      "self"
+    ],
+    "with_azure": [],
+    "with_ovhcloud": [],
+    "stream": [
+      "self"
+    ],
+    "update_options": [
+      "self"
+    ],
+    "_update_session_keyterms": [
+      "self",
+      "keyterms"
+    ],
+    "_connect_ws": [
+      "self",
+      "timeout"
+    ],
+    "_close_ws": [
+      "self",
+      "ws"
+    ],
+    "aclose": [
+      "self"
+    ],
+    "_ensure_session": [
+      "self"
+    ],
+    "_recognize_impl": [
+      "self",
+      "buffer"
+    ]
+  },
+  "SpeechStream": {
+    "__init__": [
+      "self"
+    ],
+    "update_options": [
+      "self"
+    ],
+    "_send_update": [
+      "self",
+      "event"
+    ],
+    "aclose": [
+      "self"
+    ],
+    "_start_speaking": [
+      "self"
+    ],
+    "_stop_speaking": [
+      "self"
+    ],
+    "_run": [
+      "self"
+    ]
+  },
+  "AsyncAzureADTokenProvider": [],
+  "get_base_url": [
+    "base_url"
+  ],
+  "__all__": [],
+  "lk_oai_debug": [],
+  "Verbosity": [],
+  "PromptCacheRetention": [],
+  "_LLMOptions": {},
+  "LLM": {
+    "__init__": [
+      "self"
+    ],
+    "_prewarm_impl": [
+      "self"
+    ],
+    "aclose": [
+      "self"
+    ],
+    "model": [
+      "self"
+    ],
+    "provider": [
+      "self"
+    ],
+    "with_azure": [],
+    "with_cerebras": [],
+    "with_sambanova": [],
+    "with_fireworks": [],
+    "with_x_ai": [],
+    "with_openrouter": [],
+    "with_deepseek": [],
+    "with_cometapi": [],
+    "with_octo": [],
+    "with_ollama": [],
+    "with_ovhcloud": [],
+    "with_perplexity": [],
+    "with_together": [],
+    "with_telnyx": [],
+    "with_nebius": [],
+    "with_letta": [],
+    "chat": [
+      "self"
+    ],
+    "_resolve_prompt_cache_breakpoints": [
+      "self"
+    ]
+  },
+  "LLMStream": {
+    "__init__": [
+      "self",
+      "llm"
+    ]
+  },
+  "OpenAITool": {
+    "to_dict": [
+      "self"
+    ]
+  },
+  "WebSearch": {
+    "__post_init__": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ]
+  },
+  "FileSearch": {
+    "__post_init__": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ]
+  },
+  "CodeInterpreter": {
+    "__post_init__": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ]
+  },
+  "EmbeddingData": {},
+  "create_embeddings": [],
+  "__version__": [],
+  "DEFAULT_MODEL": [],
+  "DEFAULT_VOICE": [],
+  "RESPONSE_FORMATS": [],
+  "AUDIO_STREAM_MODELS": [],
+  "SSE_CONTENT_TYPE": [],
+  "DECODABLE_CONTENT_TYPES": [],
+  "_TTSOptions": {},
+  "TTS": {
+    "__init__": [
+      "self"
+    ],
+    "model": [
+      "self"
+    ],
+    "provider": [
+      "self"
+    ],
+    "update_options": [
+      "self"
+    ],
+    "with_azure": [],
+    "synthesize": [
+      "self",
+      "text"
+    ],
+    "prewarm": [
+      "self"
+    ],
+    "aclose": [
+      "self"
+    ]
+  },
+  "ChunkedStream": {
+    "__init__": [
+      "self"
+    ],
+    "_run": [
+      "self",
+      "output_emitter"
+    ]
+  },
+  "STTModels": [],
+  "TTSModels": [],
+  "TTSVoices": [],
+  "DalleModels": [],
+  "ChatModels": [],
+  "EmbeddingModels": [],
+  "AssistantTools": [],
+  "TelnyxChatModels": [],
+  "NebiusChatModels": [],
+  "CerebrasChatModels": [],
+  "PerplexityChatModels": [],
+  "DeepSeekChatModels": [],
+  "CometAPIChatModels": [],
+  "TogetherChatModels": [],
+  "OctoChatModels": [],
+  "XAIChatModels": [],
+  "SambaNovaChatModels": [],
+  "_supports_reasoning_effort": [
+    "model"
+  ],
+  "OpenRouterWebPlugin": {},
+  "OpenRouterProviderPreferences": {},
+  "OpenAIPlugin": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "_module": [],
+  "NOT_IN_ALL": [],
+  "__pdoc__": [],
+  "ServiceTier": [],
+  "_OPENAI_HOST": [],
+  "OPENAI_RESPONSES_WS_URL": [],
+  "_WS_HEARTBEAT": [],
+  "_WS_SEND_MAX_ATTEMPTS": [],
+  "_ResponsesWebsocket": {
+    "__init__": [
+      "self",
+      "api_key",
+      "timeout",
+      "model",
+      "base_url"
+    ],
+    "_ensure_http_session": [
+      "self"
+    ],
+    "_create_ws": [
+      "self",
+      "timeout"
+    ],
+    "_close_ws": [
+      "self",
+      "ws"
+    ],
+    "aclose": [
+      "self"
+    ],
+    "generate_response": [
+      "self",
+      "msg"
+    ],
+    "_acquire_and_send": [
+      "self",
+      "data"
+    ]
+  },
+  "GPTLiveModel": {
+    "_provider_tool_config": [
+      "self",
+      "tool"
+    ]
+  },
+  "RealtimeModel": {}
+}
