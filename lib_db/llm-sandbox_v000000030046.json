@@ -1,0 +1,2611 @@
+{
+  "_STARTUP_TIMEOUT": [],
+  "_DIAGNOSTIC_LIMIT": [],
+  "_32_BIT_POINTER_BYTES": [],
+  "_WSL2_VERSION": [],
+  "_wsl_executable": [],
+  "_distribution_version": [
+    "output",
+    "distribution"
+  ],
+  "_launcher_environment": [
+    "executable"
+  ],
+  "_runtime_path": [
+    "path",
+    "workdir"
+  ],
+  "_validate_session_options": [
+    "config",
+    "environment"
+  ],
+  "_OutboundFrame": {},
+  "_Transport": {
+    "__init__": [
+      "self",
+      "argv"
+    ],
+    "_enqueue": [
+      "self",
+      "value"
+    ],
+    "_read": [
+      "self"
+    ],
+    "_drain_stderr": [
+      "self"
+    ],
+    "_heartbeat": [
+      "self"
+    ],
+    "_write": [
+      "self"
+    ],
+    "_write_frame": [
+      "self",
+      "frame"
+    ],
+    "_check_send": [
+      "self",
+      "deadline"
+    ],
+    "send": [
+      "self",
+      "message"
+    ],
+    "receive": [
+      "self",
+      "deadline"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "Wsl2BubblewrapSession": {
+    "__init__": [
+      "self"
+    ],
+    "_verify_distribution": [
+      "self"
+    ],
+    "_worker_argv": [
+      "self"
+    ],
+    "open": [
+      "self"
+    ],
+    "_open_worker": [
+      "self",
+      "cancelled"
+    ],
+    "_close_transport": [
+      "self",
+      "expected"
+    ],
+    "close": [
+      "self"
+    ],
+    "_check_reentry": [
+      "self"
+    ],
+    "_require_open": [
+      "self"
+    ],
+    "_rpc": [
+      "self",
+      "operation",
+      "params"
+    ],
+    "_receive_response": [
+      "transport",
+      "request_id",
+      "deadline"
+    ],
+    "_is_completed_read_rejection": [
+      "operation",
+      "message"
+    ],
+    "_event_chunk": [
+      "message"
+    ],
+    "_emit_output": [
+      "self",
+      "chunk",
+      "callback"
+    ],
+    "execute_command": [
+      "self",
+      "command",
+      "workdir",
+      "on_stdout",
+      "on_stderr"
+    ],
+    "run": [
+      "self",
+      "code",
+      "libraries",
+      "timeout",
+      "on_stdout",
+      "on_stderr"
+    ],
+    "install": [
+      "self",
+      "libraries"
+    ],
+    "copy_to_runtime": [
+      "self",
+      "src",
+      "dest"
+    ],
+    "_get_file": [
+      "self",
+      "src"
+    ],
+    "copy_from_runtime": [
+      "self",
+      "src",
+      "dest"
+    ],
+    "get_archive": [
+      "self",
+      "path"
+    ],
+    "_ensure_directory_exists": [
+      "self",
+      "path"
+    ],
+    "_ensure_ownership": [
+      "self",
+      "paths"
+    ],
+    "_handle_timeout": [
+      "self"
+    ],
+    "_connect_to_existing_container": [
+      "self",
+      "container_id"
+    ],
+    "_process_non_stream_output": [
+      "self",
+      "output"
+    ],
+    "_process_stream_output": [
+      "self",
+      "output",
+      "on_stdout",
+      "on_stderr"
+    ]
+  },
+  "K8S_API_MAX_RETRIES": [],
+  "K8S_API_RETRY_DELAY": [],
+  "_k8s_api_lock": [],
+  "T": [],
+  "retry_k8s_api_call": [
+    "func"
+  ],
+  "StrEnum": {
+    "__new__": [
+      "cls",
+      "value"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "_missing_": [
+      "cls",
+      "value"
+    ]
+  },
+  "SandboxBackend": {
+    "DOCKER": [],
+    "KUBERNETES": [],
+    "PODMAN": [],
+    "MICROMAMBA": [],
+    "BUBBLEWRAP": [],
+    "NSJAIL": [],
+    "WINDOWS_MXC": [],
+    "WSL2_BUBBLEWRAP": []
+  },
+  "SupportedLanguage": {
+    "PYTHON": [],
+    "JAVA": [],
+    "JAVASCRIPT": [],
+    "CPP": [],
+    "GO": [],
+    "RUBY": [],
+    "R": []
+  },
+  "DefaultImage": {
+    "PYTHON": [],
+    "JAVA": [],
+    "JAVASCRIPT": [],
+    "CPP": [],
+    "GO": [],
+    "RUBY": [],
+    "R": []
+  },
+  "EncodingErrorsType": [],
+  "RUNTIME_START_TIMEOUT": [],
+  "RESULT_POLL_INTERVAL": [],
+  "KernelType": {
+    "IPYTHON": []
+  },
+  "InteractiveSettings": {
+    "__post_init__": [
+      "self"
+    ]
+  },
+  "_create_backend_session": [
+    "backend",
+    "runtime_configs"
+  ],
+  "InteractiveSandboxSession": {
+    "__init__": [
+      "self"
+    ],
+    "open": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "run": [
+      "self",
+      "code",
+      "libraries",
+      "timeout",
+      "on_stdout",
+      "on_stderr"
+    ],
+    "_bootstrap_runtime": [
+      "self"
+    ],
+    "_ensure_runtime_dependencies": [
+      "self"
+    ],
+    "_upload_runner_script": [
+      "self"
+    ],
+    "_start_runner_process": [
+      "self"
+    ],
+    "_stop_runner_process": [
+      "self"
+    ],
+    "_interrupt_runner": [
+      "self"
+    ],
+    "_write_remote_command": [
+      "self",
+      "remote_path",
+      "request_id",
+      "code"
+    ],
+    "_read_remote_result": [
+      "self",
+      "remote_path"
+    ],
+    "_wait_for_remote_file": [
+      "self",
+      "remote_path",
+      "timeout"
+    ],
+    "execute_command": [
+      "self",
+      "command",
+      "workdir",
+      "on_stdout",
+      "on_stderr"
+    ],
+    "execute_commands": [
+      "self",
+      "commands",
+      "workdir",
+      "on_stdout",
+      "on_stderr"
+    ],
+    "copy_to_runtime": [
+      "self",
+      "src",
+      "dest"
+    ],
+    "copy_from_runtime": [
+      "self",
+      "src",
+      "dest"
+    ],
+    "_handle_timeout": [
+      "self"
+    ],
+    "_connect_to_existing_container": [
+      "self",
+      "container_id"
+    ],
+    "_ensure_directory_exists": [
+      "self",
+      "path"
+    ],
+    "_ensure_ownership": [
+      "self",
+      "paths"
+    ],
+    "_process_non_stream_output": [
+      "self",
+      "output"
+    ],
+    "_process_stream_output": [
+      "self",
+      "output",
+      "on_stdout",
+      "on_stderr"
+    ]
+  },
+  "_INTERACTIVE_RUNNER_SCRIPT": [],
+  "_NATIVE_ARCHITECTURES": [],
+  "_X86_64_ARCHITECTURES": [],
+  "_SYSCALL_NAME": [],
+  "_NATIVE_SYSCALL_LIMIT": [],
+  "_LEGACY_X32_SYSCALLS": [],
+  "_KAFEL_SYSCALL_ALIASES": [],
+  "_mount_argument": [
+    "source",
+    "destination"
+  ],
+  "_seccomp_policy": [
+    "blocked_syscalls"
+  ],
+  "NsjailSession": {
+    "__init__": [
+      "self"
+    ],
+    "_terminate_process": [
+      "process"
+    ],
+    "_launch_command": [
+      "self",
+      "command",
+      "workdir"
+    ]
+  },
+  "BubblewrapSession": {
+    "__init__": [
+      "self"
+    ],
+    "_launch_command": [
+      "self",
+      "command",
+      "workdir"
+    ]
+  },
+  "BackendFactory": [],
+  "BackendCapabilities": {
+    "__post_init__": [
+      "self"
+    ]
+  },
+  "BackendDefinition": {},
+  "_docker_factory": [],
+  "_kubernetes_factory": [],
+  "_podman_factory": [],
+  "_micromamba_factory": [],
+  "_bubblewrap_factory": [],
+  "_nsjail_factory": [],
+  "_windows_mxc_factory": [],
+  "_wsl2_bubblewrap_factory": [],
+  "_CONTAINER_CAPABILITIES": [],
+  "_LOCAL_CAPABILITIES": [],
+  "_BACKENDS": [],
+  "_REGISTRY_LOCK": [],
+  "_normalize_name": [
+    "name"
+  ],
+  "register_backend": [
+    "name",
+    "factory"
+  ],
+  "get_backend": [
+    "name"
+  ],
+  "list_backends": [],
+  "_PROTOCOL_VERSION": [],
+  "_MAX_REQUEST_BYTES": [],
+  "_HOME_DIRECTORY": [],
+  "_SUPPORTED_LANGUAGES": [],
+  "_SESSION_OPTIONS": [],
+  "_require_windows": [],
+  "_resolve_executable": [
+    "value",
+    "label"
+  ],
+  "_host_environment": [],
+  "_session_config": [
+    "lang",
+    "options"
+  ],
+  "WindowsMxcSession": {
+    "__init__": [
+      "self"
+    ],
+    "_resolve_runtime": [
+      "self",
+      "language"
+    ],
+    "_resolve_read_roots": [
+      "self",
+      "language"
+    ],
+    "open": [
+      "self"
+    ],
+    "_initialize_workspace": [
+      "self",
+      "workspace"
+    ],
+    "_check_runtime_startup": [
+      "self"
+    ],
+    "_probe": [
+      "self"
+    ],
+    "_launcher_environment": [
+      "self"
+    ],
+    "_payload_environment": [
+      "self"
+    ],
+    "_require_open": [
+      "self"
+    ],
+    "_require_idle": [
+      "self"
+    ],
+    "_start_session_timer": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "_close_generation": [
+      "self",
+      "generation"
+    ],
+    "_execution_timeout": [
+      "self",
+      "timeout"
+    ],
+    "_runtime_path": [
+      "self",
+      "path"
+    ],
+    "execute_argv": [
+      "self",
+      "argv"
+    ],
+    "execute_command": [
+      "self",
+      "command",
+      "workdir",
+      "on_stdout",
+      "on_stderr"
+    ],
+    "run": [
+      "self",
+      "code",
+      "libraries",
+      "timeout",
+      "on_stdout",
+      "on_stderr"
+    ],
+    "environment_setup": [
+      "self"
+    ],
+    "install": [
+      "self",
+      "libraries"
+    ],
+    "python_executable_path": [
+      "self"
+    ],
+    "copy_to_runtime": [
+      "self",
+      "src",
+      "dest"
+    ],
+    "copy_from_runtime": [
+      "self",
+      "src",
+      "dest"
+    ],
+    "get_archive": [
+      "self",
+      "path"
+    ],
+    "_ensure_directory_exists": [
+      "self",
+      "path"
+    ],
+    "_ensure_ownership": [
+      "self",
+      "paths"
+    ],
+    "_handle_timeout": [
+      "self"
+    ],
+    "_connect_to_existing_container": [
+      "self",
+      "container_id"
+    ],
+    "_process_non_stream_output": [
+      "self",
+      "output"
+    ],
+    "_process_stream_output": [
+      "self",
+      "output",
+      "on_stdout",
+      "on_stderr"
+    ]
+  },
+  "DOCKER_CONFLICT_ERROR_CODES": [],
+  "EXPECTED_DEMUX_OUTPUT_LENGTH": [],
+  "DockerContainerAPI": {
+    "__init__": [
+      "self",
+      "client",
+      "stream"
+    ],
+    "create_container": [
+      "self",
+      "config"
+    ],
+    "start_container": [
+      "self",
+      "container"
+    ],
+    "stop_container": [
+      "self",
+      "container"
+    ],
+    "execute_command": [
+      "self",
+      "container",
+      "command"
+    ],
+    "copy_to_container": [
+      "self",
+      "container",
+      "src",
+      "dest"
+    ],
+    "copy_from_container": [
+      "self",
+      "container",
+      "src"
+    ]
+  },
+  "SandboxDockerSession": {
+    "__init__": [
+      "self",
+      "client",
+      "image",
+      "dockerfile",
+      "lang",
+      "keep_template",
+      "commit_container",
+      "commit_image_tag",
+      "verbose",
+      "stream",
+      "runtime_configs",
+      "workdir",
+      "security_policy",
+      "default_timeout",
+      "execution_timeout",
+      "session_timeout",
+      "container_id",
+      "skip_environment_setup",
+      "encoding_errors"
+    ],
+    "_ensure_directory_exists": [
+      "self",
+      "path"
+    ],
+    "_ensure_ownership": [
+      "self",
+      "paths"
+    ],
+    "_process_non_stream_output": [
+      "self",
+      "output"
+    ],
+    "_process_stream_output": [
+      "self",
+      "output",
+      "on_stdout",
+      "on_stderr"
+    ],
+    "_handle_timeout": [
+      "self"
+    ],
+    "_connect_to_existing_container": [
+      "self",
+      "container_id"
+    ],
+    "_prepare_image": [
+      "self"
+    ],
+    "_build_image_from_dockerfile": [
+      "self"
+    ],
+    "_get_or_pull_image": [
+      "self"
+    ],
+    "open": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "_commit_container": [
+      "self"
+    ],
+    "_cleanup_image": [
+      "self"
+    ],
+    "get_archive": [
+      "self",
+      "path"
+    ]
+  },
+  "SandboxError": {
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "ContainerError": {},
+  "SecurityError": {},
+  "ResourceError": {},
+  "ValidationError": {},
+  "ExtraArgumentsError": {
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "LanguageNotSupportedError": {
+    "__init__": [
+      "self",
+      "lang"
+    ]
+  },
+  "ImageNotFoundError": {
+    "__init__": [
+      "self",
+      "image"
+    ]
+  },
+  "NotOpenSessionError": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "LibraryInstallationNotSupportedError": {
+    "__init__": [
+      "self",
+      "lang"
+    ]
+  },
+  "CommandEmptyError": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "CommandFailedError": {
+    "__init__": [
+      "self",
+      "command",
+      "exit_code",
+      "output"
+    ]
+  },
+  "PackageManagerError": {
+    "__init__": [
+      "self",
+      "package_manager"
+    ]
+  },
+  "ImagePullError": {
+    "__init__": [
+      "self",
+      "image",
+      "error"
+    ]
+  },
+  "UnsupportedBackendError": {
+    "__init__": [
+      "self",
+      "backend"
+    ]
+  },
+  "MissingDependencyError": {
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "LanguageNotSupportPlotError": {
+    "__init__": [
+      "self",
+      "lang"
+    ]
+  },
+  "InvalidRegexPatternError": {
+    "__init__": [
+      "self",
+      "pattern"
+    ]
+  },
+  "LanguageHandlerNotInitializedError": {
+    "__init__": [
+      "self",
+      "language"
+    ]
+  },
+  "SecurityViolationError": {
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "SandboxTimeoutError": {
+    "__init__": [
+      "self",
+      "message",
+      "timeout_duration"
+    ]
+  },
+  "__all__": [],
+  "_check_dependency": [
+    "backend"
+  ],
+  "_check_pool_backend": [
+    "backend"
+  ],
+  "create_session": [
+    "backend",
+    "pool"
+  ],
+  "ArtifactSandboxSession": {
+    "__init__": [
+      "self",
+      "backend",
+      "image",
+      "dockerfile",
+      "lang"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "run": [
+      "self",
+      "code",
+      "libraries",
+      "timeout",
+      "clear_plots",
+      "on_stdout",
+      "on_stderr"
+    ],
+    "_clear_plots_in_container": [
+      "self"
+    ],
+    "clear_plots": [
+      "self"
+    ]
+  },
+  "SandboxSession": [],
+  "PodmanContainerAPI": {
+    "__init__": [
+      "self",
+      "client",
+      "stream"
+    ],
+    "execute_command": [
+      "self",
+      "container",
+      "command"
+    ]
+  },
+  "SandboxPodmanSession": {
+    "__init__": [
+      "self",
+      "client",
+      "image",
+      "dockerfile",
+      "lang",
+      "keep_template",
+      "commit_container",
+      "verbose",
+      "mounts",
+      "stream",
+      "runtime_configs",
+      "workdir",
+      "security_policy",
+      "default_timeout",
+      "execution_timeout",
+      "session_timeout",
+      "container_id",
+      "skip_environment_setup",
+      "encoding_errors"
+    ],
+    "_get_or_pull_image": [
+      "self"
+    ],
+    "_normalize_memory_limit": [
+      "self",
+      "memory"
+    ],
+    "_normalize_runtime_configs_for_podman": [
+      "self",
+      "runtime_configs"
+    ],
+    "open": [
+      "self"
+    ],
+    "_connect_to_existing_container": [
+      "self",
+      "container_id"
+    ]
+  },
+  "MicromambaContainerAPI": {
+    "__init__": [
+      "self",
+      "client",
+      "environment",
+      "stream"
+    ],
+    "execute_command": [
+      "self",
+      "container",
+      "command"
+    ]
+  },
+  "MicromambaSession": {
+    "__init__": [
+      "self",
+      "client",
+      "image",
+      "dockerfile",
+      "lang",
+      "keep_template",
+      "verbose",
+      "mounts",
+      "environment",
+      "commit_container",
+      "stream",
+      "runtime_configs",
+      "workdir",
+      "security_policy",
+      "default_timeout",
+      "execution_timeout",
+      "session_timeout",
+      "container_id",
+      "skip_environment_setup"
+    ]
+  },
+  "StreamCallback": [],
+  "FileType": {
+    "PNG": [],
+    "JPEG": [],
+    "PDF": [],
+    "SVG": [],
+    "CSV": [],
+    "JSON": [],
+    "TXT": [],
+    "HTML": []
+  },
+  "PlotOutput": {},
+  "ConsoleOutput": {
+    "text": [
+      "self"
+    ],
+    "success": [
+      "self"
+    ],
+    "to_json": [
+      "self",
+      "include_plots"
+    ]
+  },
+  "ExecutionResult": {},
+  "SH_SHELL": [],
+  "POD_STARTUP_TIMEOUT": [],
+  "KUBERNETES_POD_NOT_FOUND_ERROR_CODE": [],
+  "KUBERNETES_POD_STATUS_POLL_INTERVAL": [],
+  "KubernetesContainerAPI": {
+    "__init__": [
+      "self",
+      "client",
+      "namespace"
+    ],
+    "create_container": [
+      "self",
+      "config"
+    ],
+    "start_container": [
+      "self",
+      "container"
+    ],
+    "stop_container": [
+      "self",
+      "container"
+    ],
+    "execute_command": [
+      "self",
+      "container",
+      "command"
+    ],
+    "copy_to_container": [
+      "self",
+      "container",
+      "src",
+      "dest"
+    ],
+    "copy_from_container": [
+      "self",
+      "container",
+      "src"
+    ]
+  },
+  "SandboxKubernetesSession": {
+    "__init__": [
+      "self",
+      "client",
+      "image",
+      "lang",
+      "verbose",
+      "kube_namespace",
+      "env_vars",
+      "pod_manifest",
+      "workdir",
+      "security_policy",
+      "default_timeout",
+      "execution_timeout",
+      "session_timeout",
+      "container_id",
+      "skip_environment_setup",
+      "encoding_errors"
+    ],
+    "_default_pod_manifest": [
+      "self"
+    ],
+    "_reconfigure_with_pod_manifest": [
+      "self"
+    ],
+    "_wait_for_pod_to_start": [
+      "self",
+      "pod_id",
+      "timeout"
+    ],
+    "_validate_pod_status": [
+      "self",
+      "pod_id",
+      "pod"
+    ],
+    "_connect_to_existing_container": [
+      "self",
+      "pod_id"
+    ],
+    "_ensure_directory_exists": [
+      "self",
+      "path"
+    ],
+    "_ensure_ownership": [
+      "self",
+      "paths"
+    ],
+    "_process_non_stream_output": [
+      "self",
+      "output"
+    ],
+    "_process_stream_output": [
+      "self",
+      "output",
+      "on_stdout",
+      "on_stderr"
+    ],
+    "_handle_timeout": [
+      "self"
+    ],
+    "open": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "get_archive": [
+      "self",
+      "path"
+    ],
+    "execute_command": [
+      "self",
+      "command",
+      "workdir",
+      "on_stdout",
+      "on_stderr"
+    ],
+    "copy_to_runtime": [
+      "self",
+      "src",
+      "dest"
+    ],
+    "copy_from_runtime": [
+      "self",
+      "src",
+      "dest"
+    ]
+  },
+  "logger": [],
+  "mcp": [],
+  "_TRUE_ENV_VALUES": [],
+  "_FALSE_ENV_VALUES": [],
+  "_RUNTIME_CONFIG_ENV_VARS": [],
+  "_RUNTIME_CONFIG_SUPPORTED_BACKENDS": [],
+  "_get_backend": [],
+  "_get_commit_container": [],
+  "_get_keep_template": [],
+  "_build_commit_image_tag": [
+    "language"
+  ],
+  "_get_kube_namespace": [],
+  "_get_optional_bool_env": [
+    "var_name"
+  ],
+  "_get_optional_list_env": [
+    "var_name"
+  ],
+  "_get_optional_str_env": [
+    "var_name"
+  ],
+  "_build_cpu_runtime_configs": [
+    "cpu_units",
+    "var_name"
+  ],
+  "_parse_cpu_count_env": [
+    "value",
+    "var_name"
+  ],
+  "_parse_cpus_env": [
+    "value"
+  ],
+  "_get_runtime_configs": [],
+  "_validate_backend_runtime_configs": [
+    "backend",
+    "runtime_configs"
+  ],
+  "_supports_visualization": [
+    "language"
+  ],
+  "execute_code": [
+    "code",
+    "language",
+    "libraries",
+    "timeout"
+  ],
+  "get_supported_languages": [],
+  "get_language_details": [
+    "language"
+  ],
+  "language_details": [],
+  "main": [],
+  "LanguageExample": {},
+  "LanguageDetails": {},
+  "PROTOCOL_VERSION": [],
+  "MAX_CONTENT_BYTES": [],
+  "MAX_FRAME_BYTES": [],
+  "HEARTBEAT_INTERVAL": [],
+  "LEASE_SECONDS": [],
+  "identity": [],
+  "encode_frame": [
+    "message"
+  ],
+  "read_frame": [
+    "pipe"
+  ],
+  "validate_policy": [
+    "config",
+    "env"
+  ],
+  "_HOST_NETWORK_PATHS": [],
+  "_resolve_read_only_source": [
+    "source"
+  ],
+  "read_only_mounts": [
+    "config",
+    "workdir"
+  ],
+  "apply_resource_limits": [
+    "argv",
+    "config"
+  ],
+  "DEFAULT_READ_ONLY_PATHS": [],
+  "LocalSandboxConfig": {
+    "model_config": [],
+    "validate_read_paths": [
+      "cls",
+      "paths"
+    ],
+    "validate_python_executable": [
+      "cls",
+      "executable"
+    ],
+    "validate_environment": [
+      "cls",
+      "environment"
+    ]
+  },
+  "_verify_wsl2": [],
+  "_unescape_mount": [
+    "value"
+  ],
+  "_wsl_driver_directory": [],
+  "_validate_runtime_source": [
+    "source",
+    "destination",
+    "masked"
+  ],
+  "_validate_mounts": [
+    "config",
+    "workdir"
+  ],
+  "Worker": {
+    "__init__": [
+      "self",
+      "incoming",
+      "outgoing"
+    ],
+    "send": [
+      "self",
+      "message"
+    ],
+    "stop": [
+      "self"
+    ],
+    "_read_requests": [
+      "self"
+    ],
+    "_watch_lease": [
+      "self"
+    ],
+    "serve": [
+      "self"
+    ],
+    "dispatch": [
+      "self",
+      "request"
+    ],
+    "_open_session": [
+      "self",
+      "params"
+    ],
+    "_transfer": [
+      "operation",
+      "params",
+      "session"
+    ],
+    "_callback": [
+      "self",
+      "request_id",
+      "stream"
+    ]
+  },
+  "_GuestSession": {
+    "__init__": [
+      "self",
+      "stopped"
+    ],
+    "_require_open": [
+      "self"
+    ],
+    "_launch_command": [
+      "self",
+      "command",
+      "workdir"
+    ]
+  },
+  "_READ_SIZE": [],
+  "_POLL_INTERVAL": [],
+  "_validate_workdir": [
+    "workdir"
+  ],
+  "_validate_environment": [
+    "env_vars"
+  ],
+  "_PrivateWorkspace": {
+    "__init__": [
+      "self"
+    ],
+    "cleanup": [
+      "self"
+    ]
+  },
+  "LocalProcessSession": {
+    "__init__": [
+      "self"
+    ],
+    "_launch_command": [
+      "self",
+      "command",
+      "workdir"
+    ],
+    "_environment": [
+      "self"
+    ],
+    "_launcher_environment": [],
+    "open": [
+      "self"
+    ],
+    "_terminate_process": [
+      "process"
+    ],
+    "close": [
+      "self"
+    ],
+    "_close_generation": [
+      "self",
+      "generation"
+    ],
+    "_start_session_timer": [
+      "self"
+    ],
+    "_require_open": [
+      "self"
+    ],
+    "_require_idle": [
+      "self"
+    ],
+    "_execute_with_timeout": [
+      "self",
+      "func"
+    ],
+    "_remaining_time": [
+      "self"
+    ],
+    "run": [
+      "self",
+      "code",
+      "libraries",
+      "timeout",
+      "on_stdout",
+      "on_stderr"
+    ],
+    "execute_command": [
+      "self",
+      "command",
+      "workdir",
+      "on_stdout",
+      "on_stderr"
+    ],
+    "_execute_command": [
+      "self",
+      "command",
+      "workdir",
+      "on_stdout",
+      "on_stderr"
+    ],
+    "_collect_output": [
+      "self",
+      "process",
+      "on_stdout",
+      "on_stderr"
+    ],
+    "_append_output": [
+      "self",
+      "chunk",
+      "decoder",
+      "buffer",
+      "callback"
+    ],
+    "_require_success": [
+      "self",
+      "command"
+    ],
+    "python_executable_path": [
+      "self"
+    ],
+    "environment_setup": [
+      "self"
+    ],
+    "install": [
+      "self",
+      "libraries"
+    ],
+    "copy_to_runtime": [
+      "self",
+      "src",
+      "dest"
+    ],
+    "copy_from_runtime": [
+      "self",
+      "src",
+      "dest"
+    ],
+    "_runtime_host_path": [
+      "self",
+      "path"
+    ],
+    "get_archive": [
+      "self",
+      "path"
+    ],
+    "_ensure_directory_exists": [
+      "self",
+      "path"
+    ],
+    "_ensure_ownership": [
+      "self",
+      "paths"
+    ],
+    "_handle_timeout": [
+      "self"
+    ],
+    "_connect_to_existing_container": [
+      "self",
+      "container_id"
+    ],
+    "_process_non_stream_output": [
+      "self",
+      "output"
+    ],
+    "_process_stream_output": [
+      "self",
+      "output",
+      "on_stdout",
+      "on_stderr"
+    ]
+  },
+  "runtime_relative": [
+    "path",
+    "workdir"
+  ],
+  "_host_path": [
+    "path"
+  ],
+  "_check_entry": [
+    "info",
+    "name"
+  ],
+  "_identity": [
+    "info"
+  ],
+  "_entry_stat": [
+    "parent_fd",
+    "name"
+  ],
+  "_open_entry": [
+    "parent_fd",
+    "name"
+  ],
+  "_mkdir_at": [
+    "parent_fd",
+    "name"
+  ],
+  "_directory": [
+    "path"
+  ],
+  "safe_mkdir": [
+    "path"
+  ],
+  "_cleanup_directory": [
+    "parent_fd",
+    "name",
+    "expected"
+  ],
+  "_remove_cleanup_directory": [
+    "parent_fd",
+    "name",
+    "expected"
+  ],
+  "_lift_cleanup_directory": [
+    "root_fd",
+    "parent_fd",
+    "name"
+  ],
+  "_empty_private_tree": [
+    "root_fd"
+  ],
+  "safe_remove_tree": [
+    "path"
+  ],
+  "safe_read_file": [
+    "path",
+    "max_bytes"
+  ],
+  "_validate_tree": [
+    "fd"
+  ],
+  "_assert_unchanged": [
+    "parent_fd",
+    "name",
+    "before"
+  ],
+  "_copy_file": [
+    "source_fd",
+    "parent_fd",
+    "name"
+  ],
+  "_copy_entry": [
+    "source_fd",
+    "parent_fd",
+    "name"
+  ],
+  "safe_copy": [
+    "src",
+    "dest"
+  ],
+  "SecurityIssueSeverity": {
+    "SAFE": [],
+    "LOW": [],
+    "MEDIUM": [],
+    "HIGH": []
+  },
+  "SecurityPattern": {
+    "validate_pattern": [
+      "cls",
+      "v"
+    ]
+  },
+  "RestrictedModule": {},
+  "SecurityPolicy": {
+    "add_pattern": [
+      "self",
+      "pattern"
+    ],
+    "add_restricted_module": [
+      "self",
+      "module"
+    ]
+  },
+  "_SCMP_ACT_ALLOW": [],
+  "_SCMP_ACT_ERRNO": [],
+  "_SCMP_ACT_KILL_PROCESS": [],
+  "_SCMP_FLTATR_ACT_BADARCH": [],
+  "_SCMP_ARCH_X86_64": [],
+  "_SUPPORTED_NATIVE_ARCHES": [],
+  "_NATIVE_POINTER_SIZE": [],
+  "_BPF_INSTRUCTION_SIZE": [],
+  "_MAX_BPF_INSTRUCTIONS": [],
+  "SeccompPolicy": {
+    "model_config": [],
+    "validate_syscall_names": [
+      "cls",
+      "value"
+    ]
+  },
+  "_load_libseccomp": [],
+  "seccomp_available": [],
+  "_check_result": [
+    "result",
+    "operation"
+  ],
+  "compile_seccomp": [
+    "policy"
+  ],
+  "_compile": [
+    "pattern"
+  ],
+  "validate_package_name": [
+    "library",
+    "language"
+  ],
+  "SessionConfig": {
+    "validate_image_and_dockerfile": [
+      "self"
+    ],
+    "validate_container_id_constraints": [
+      "self"
+    ],
+    "get_execution_timeout": [
+      "self"
+    ],
+    "is_using_existing_container": [
+      "self"
+    ]
+  },
+  "CLEANUP_THREAD_TIMEOUT": [],
+  "ContainerAPI": {
+    "create_container": [
+      "self",
+      "config"
+    ],
+    "start_container": [
+      "self",
+      "container"
+    ],
+    "stop_container": [
+      "self",
+      "container"
+    ],
+    "execute_command": [
+      "self",
+      "container",
+      "command"
+    ],
+    "copy_to_container": [
+      "self",
+      "container",
+      "src",
+      "dest"
+    ],
+    "copy_from_container": [
+      "self",
+      "container",
+      "src"
+    ]
+  },
+  "TimeoutMixin": {
+    "_execute_with_timeout": [
+      "self",
+      "func"
+    ]
+  },
+  "FileOperationsMixin": {
+    "_validate_container_path": [
+      "path"
+    ],
+    "copy_to_runtime": [
+      "self",
+      "src",
+      "dest"
+    ],
+    "copy_from_runtime": [
+      "self",
+      "src",
+      "dest"
+    ],
+    "_extract_archive_safely": [
+      "self",
+      "bits",
+      "dest"
+    ],
+    "_filter_safe_members": [
+      "self",
+      "members"
+    ],
+    "_is_unsafe_path": [
+      "self",
+      "path"
+    ],
+    "_is_symlink": [
+      "self",
+      "member"
+    ],
+    "_determine_extract_path": [
+      "self",
+      "safe_members",
+      "dest"
+    ],
+    "_ensure_directory_exists": [
+      "self",
+      "path"
+    ],
+    "_ensure_ownership": [
+      "self",
+      "paths"
+    ]
+  },
+  "CommandExecutionMixin": {
+    "execute_command": [
+      "self",
+      "command",
+      "workdir",
+      "on_stdout",
+      "on_stderr"
+    ],
+    "_process_output": [
+      "self",
+      "output",
+      "is_stream",
+      "on_stdout",
+      "on_stderr"
+    ],
+    "_process_non_stream_output": [
+      "self",
+      "output"
+    ],
+    "_process_stream_output": [
+      "self",
+      "output",
+      "on_stdout",
+      "on_stderr"
+    ]
+  },
+  "PYTHON_VENV_DIR_NAME": [],
+  "PYTHON_PIP_CACHE_DIR_NAME": [],
+  "PYTHON_VENV_DIR": [],
+  "PYTHON_PIP_CACHE_DIR": [],
+  "PYTHON_CREATE_VENV_COMMAND": [],
+  "PYTHON_CREATE_PIP_CACHE_COMMAND": [],
+  "PYTHON_UPGRADE_PIP_COMMAND": [],
+  "GO_CREATE_MODULE_COMMAND": [],
+  "GO_TIDY_MODULE_COMMAND": [],
+  "BaseSession": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "_log": [
+      "self",
+      "message",
+      "level"
+    ],
+    "_check_session_timeout": [
+      "self"
+    ],
+    "_start_session_timer": [
+      "self"
+    ],
+    "_stop_session_timer": [
+      "self"
+    ],
+    "_add_restricted_module_patterns": [
+      "self"
+    ],
+    "_check_pattern_violations": [
+      "self",
+      "filtered_code"
+    ],
+    "_check_single_pattern": [
+      "self",
+      "pattern_obj",
+      "filtered_code"
+    ],
+    "_should_fail_on_violation": [
+      "self",
+      "pattern_obj"
+    ],
+    "_check_security_policy": [
+      "self",
+      "code"
+    ],
+    "is_safe": [
+      "self",
+      "code"
+    ],
+    "install": [
+      "self",
+      "libraries"
+    ],
+    "execute_commands": [
+      "self",
+      "commands",
+      "workdir",
+      "on_stdout",
+      "on_stderr"
+    ],
+    "python_executable_path": [
+      "self"
+    ],
+    "pip_executable_path": [
+      "self"
+    ],
+    "pip_cache_dir_path": [
+      "self"
+    ],
+    "environment_setup": [
+      "self"
+    ],
+    "run": [
+      "self",
+      "code",
+      "libraries",
+      "timeout",
+      "on_stdout",
+      "on_stderr"
+    ],
+    "_handle_timeout": [
+      "self"
+    ],
+    "_connect_to_existing_container": [
+      "self",
+      "container_id"
+    ],
+    "open": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ]
+  },
+  "_HOST_ENVIRONMENT_KEYS": [],
+  "windows_policy_path": [
+    "value"
+  ],
+  "explicit_environment": [
+    "environment"
+  ],
+  "WindowsMxcConfig": {
+    "model_config": [],
+    "validate_policy_paths": [
+      "cls",
+      "values"
+    ],
+    "validate_executable": [
+      "cls",
+      "value"
+    ],
+    "validate_environment": [
+      "cls",
+      "value"
+    ]
+  },
+  "_WINDOWS": [],
+  "_CREATE_SUSPENDED": [],
+  "_CREATE_NO_WINDOW": [],
+  "_POLL_SECONDS": [],
+  "_windows_library": [
+    "name"
+  ],
+  "_windows_error": [],
+  "_executable_candidates": [
+    "path",
+    "search_path"
+  ],
+  "resolve_executable": [
+    "executable"
+  ],
+  "_WindowsJob": {
+    "__init__": [
+      "self"
+    ],
+    "assign_and_resume": [
+      "self",
+      "process"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "_validated_launch": [
+    "argv",
+    "env"
+  ],
+  "ManagedProcess": {
+    "__init__": [
+      "self",
+      "argv"
+    ],
+    "terminate": [
+      "self"
+    ],
+    "_close_pipes": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_value",
+      "traceback"
+    ]
+  },
+  "_RunState": {},
+  "_PipePump": {
+    "__init__": [
+      "self",
+      "managed",
+      "payload",
+      "cancelled"
+    ],
+    "_publish": [
+      "self",
+      "name",
+      "value"
+    ],
+    "_read": [
+      "self",
+      "name",
+      "descriptor"
+    ],
+    "_write": [
+      "self"
+    ],
+    "start": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "ProcessSupervisor": {
+    "__init__": [
+      "self",
+      "max_output_bytes",
+      "encoding_errors",
+      "output_encoding"
+    ],
+    "_cancel": [
+      "self"
+    ],
+    "cancel": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "_check_run": [
+      "state",
+      "deadline"
+    ],
+    "run": [
+      "self",
+      "argv"
+    ],
+    "_collect": [
+      "self",
+      "state",
+      "deadline",
+      "payload",
+      "on_stdout",
+      "on_stderr"
+    ],
+    "_append_output": [
+      "chunk",
+      "decoder",
+      "buffer",
+      "callback"
+    ]
+  },
+  "_DWORD": [],
+  "_HANDLE": [],
+  "_BOOL": [],
+  "_READ_ATTRIBUTES": [],
+  "_READ_DATA": [],
+  "_GENERIC_READ": [],
+  "_GENERIC_WRITE": [],
+  "_DELETE": [],
+  "_SHARE_READ": [],
+  "_OPEN_EXISTING": [],
+  "_CREATE_NEW": [],
+  "_OPEN_REPARSE_POINT": [],
+  "_BACKUP_SEMANTICS": [],
+  "_DIRECTORY": [],
+  "_REPARSE_POINT": [],
+  "_FILE_TYPE_DISK": [],
+  "_FILE_DISPOSITION_INFO_EX": [],
+  "_DISPOSITION_DELETE": [],
+  "_DISPOSITION_POSIX_SEMANTICS": [],
+  "_DISPOSITION_IGNORE_READONLY": [],
+  "_CHUNK_SIZE": [],
+  "_FIRST_PRINTABLE_CHARACTER": [],
+  "_RESERVED_NAMES": [],
+  "_DEVICE_NUMBER": [],
+  "_NATIVE_WINDOWS_REQUIRED": [],
+  "_validate_components": [
+    "path"
+  ],
+  "validate_host_path": [
+    "path"
+  ],
+  "_FileInfo": {
+    "_fields_": []
+  },
+  "_SecurityAttributes": {
+    "_fields_": []
+  },
+  "_WindowsAPI": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "_api": [],
+  "_check": [
+    "result"
+  ],
+  "_native_path": [
+    "path"
+  ],
+  "_current_user_sid": [],
+  "_private_security": [],
+  "_Entry": {
+    "identity": [
+      "self"
+    ],
+    "directory": [
+      "self"
+    ],
+    "reparse": [
+      "self"
+    ]
+  },
+  "_create_directory": [
+    "path"
+  ],
+  "_pin_directory": [
+    "path"
+  ],
+  "validate_existing": [
+    "path"
+  ],
+  "_read_chunks": [
+    "entry"
+  ],
+  "_delete": [
+    "entry"
+  ],
+  "_write_all": [
+    "entry",
+    "chunks"
+  ],
+  "_write_chunks": [
+    "path",
+    "chunks"
+  ],
+  "safe_write_file": [
+    "path",
+    "content"
+  ],
+  "_reject_identity": [
+    "entry",
+    "forbidden"
+  ],
+  "_reject_copy_overlap": [
+    "source",
+    "destination"
+  ],
+  "_tree_paths": [
+    "root"
+  ],
+  "_remove_entry": [
+    "path",
+    "expected"
+  ],
+  "_remove_tree": [
+    "path",
+    "expected"
+  ],
+  "PrivateWorkspace": {
+    "__init__": [
+      "self"
+    ],
+    "cleanup": [
+      "self"
+    ]
+  },
+  "_get_r_repo": [],
+  "RHandler": {
+    "__init__": [
+      "self",
+      "logger"
+    ],
+    "inject_plot_detection_code": [
+      "self",
+      "code"
+    ],
+    "get_import_patterns": [
+      "self",
+      "module"
+    ],
+    "get_multiline_comment_patterns": [],
+    "get_inline_comment_patterns": [],
+    "get_library_installation_command": [
+      "self",
+      "library",
+      "runtime_context"
+    ]
+  },
+  "JavaScriptHandler": {
+    "__init__": [
+      "self",
+      "logger"
+    ],
+    "inject_plot_detection_code": [
+      "self",
+      "code"
+    ],
+    "run_with_artifacts": [
+      "self",
+      "container",
+      "code",
+      "libraries",
+      "enable_plotting",
+      "output_dir",
+      "timeout"
+    ],
+    "get_import_patterns": [
+      "self",
+      "module"
+    ],
+    "get_multiline_comment_patterns": [],
+    "get_inline_comment_patterns": []
+  },
+  "JavaHandler": {
+    "__init__": [
+      "self",
+      "logger"
+    ],
+    "inject_plot_detection_code": [
+      "self",
+      "code"
+    ],
+    "run_with_artifacts": [
+      "self",
+      "container",
+      "code",
+      "libraries",
+      "enable_plotting",
+      "output_dir",
+      "timeout"
+    ],
+    "get_import_patterns": [
+      "self",
+      "module"
+    ],
+    "get_multiline_comment_patterns": [],
+    "get_inline_comment_patterns": []
+  },
+  "RubyHandler": {
+    "__init__": [
+      "self",
+      "logger"
+    ],
+    "run_with_artifacts": [
+      "self",
+      "container",
+      "code",
+      "libraries",
+      "enable_plotting",
+      "output_dir",
+      "timeout"
+    ],
+    "get_import_patterns": [
+      "self",
+      "module"
+    ],
+    "get_multiline_comment_patterns": [],
+    "get_inline_comment_patterns": []
+  },
+  "CppHandler": {
+    "__init__": [
+      "self",
+      "logger"
+    ],
+    "get_execution_commands": [
+      "self",
+      "code_file",
+      "runtime_context"
+    ],
+    "get_library_installation_command": [
+      "self",
+      "library",
+      "runtime_context"
+    ],
+    "run_with_artifacts": [
+      "self",
+      "container",
+      "code",
+      "libraries",
+      "enable_plotting",
+      "output_dir",
+      "timeout"
+    ],
+    "get_import_patterns": [
+      "self",
+      "module"
+    ],
+    "get_multiline_comment_patterns": [],
+    "get_inline_comment_patterns": []
+  },
+  "GoHandler": {
+    "__init__": [
+      "self",
+      "logger"
+    ],
+    "run_with_artifacts": [
+      "self",
+      "container",
+      "code",
+      "libraries",
+      "enable_plotting",
+      "output_dir",
+      "timeout"
+    ],
+    "get_import_patterns": [
+      "self",
+      "module"
+    ],
+    "get_multiline_comment_patterns": [],
+    "get_inline_comment_patterns": []
+  },
+  "PythonHandler": {
+    "__init__": [
+      "self",
+      "logger"
+    ],
+    "get_execution_commands": [
+      "self",
+      "code_file",
+      "runtime_context"
+    ],
+    "get_library_installation_command": [
+      "self",
+      "library",
+      "runtime_context"
+    ],
+    "inject_plot_detection_code": [
+      "self",
+      "code"
+    ],
+    "get_import_patterns": [
+      "self",
+      "module"
+    ],
+    "get_multiline_comment_patterns": [],
+    "get_inline_comment_patterns": []
+  },
+  "PlotLibrary": {
+    "MATPLOTLIB": [],
+    "PLOTLY": [],
+    "SEABORN": [],
+    "CHARTJS": [],
+    "D3JS": [],
+    "JFREECHART": [],
+    "XCHART": [],
+    "ROOT": [],
+    "GONUM_PLOT": [],
+    "GRUFF": []
+  },
+  "PlotDetectionConfig": {},
+  "LanguageConfig": {},
+  "AbstractLanguageHandler": {
+    "__init__": [
+      "self",
+      "logger"
+    ],
+    "get_execution_commands": [
+      "self",
+      "code_file",
+      "runtime_context"
+    ],
+    "get_library_installation_command": [
+      "self",
+      "library",
+      "runtime_context"
+    ],
+    "inject_plot_detection_code": [
+      "self",
+      "code"
+    ],
+    "extract_plots": [
+      "self",
+      "container",
+      "output_dir"
+    ],
+    "_extract_single_plot": [
+      "self",
+      "container",
+      "file_path"
+    ],
+    "_find_target_member": [
+      "self",
+      "members",
+      "file_path"
+    ],
+    "_extract_plot_content": [
+      "self",
+      "tar",
+      "target_member",
+      "file_path"
+    ],
+    "run_with_artifacts": [
+      "self",
+      "container",
+      "code",
+      "libraries",
+      "enable_plotting",
+      "output_dir",
+      "timeout"
+    ],
+    "get_import_patterns": [
+      "self",
+      "module"
+    ],
+    "get_multiline_comment_patterns": [],
+    "get_inline_comment_patterns": [],
+    "filter_comments": [
+      "self",
+      "code"
+    ],
+    "name": [
+      "self"
+    ],
+    "file_extension": [
+      "self"
+    ],
+    "supported_plot_libraries": [
+      "self"
+    ],
+    "is_support_library_installation": [
+      "self"
+    ],
+    "is_support_plot_detection": [
+      "self"
+    ]
+  },
+  "RuntimeContext": {},
+  "LanguageHandlerFactory": {
+    "create_handler": [
+      "cls",
+      "language",
+      "logger"
+    ],
+    "get_supported_languages": [
+      "cls"
+    ],
+    "register_handler": [
+      "cls",
+      "language",
+      "handler_class"
+    ]
+  },
+  "PYTHON_PLOT_DETECTION_CODE": [],
+  "R_PLOT_DETECTION_CODE": [],
+  "NOT_FOUND_ERROR_CODE": [],
+  "KubernetesPoolManager": {
+    "__init__": [
+      "self",
+      "config",
+      "lang",
+      "image",
+      "client",
+      "namespace",
+      "pod_manifest"
+    ],
+    "_create_session_for_container": [
+      "self"
+    ],
+    "_destroy_container_impl": [
+      "self",
+      "container"
+    ],
+    "_get_container_id": [
+      "self",
+      "container"
+    ],
+    "_health_check_impl": [
+      "self",
+      "container"
+    ]
+  },
+  "ExhaustionStrategy": {
+    "FAIL_FAST": [],
+    "WAIT": [],
+    "TEMPORARY": []
+  },
+  "PoolConfig": {
+    "validate_min_pool_size": [
+      "cls",
+      "v"
+    ],
+    "model_post_init": []
+  },
+  "DockerPoolManager": {
+    "__init__": [
+      "self",
+      "config",
+      "lang",
+      "image",
+      "dockerfile",
+      "client",
+      "runtime_configs"
+    ],
+    "_create_session_for_container": [
+      "self"
+    ],
+    "_destroy_container_impl": [
+      "self",
+      "container"
+    ],
+    "_get_container_id": [
+      "self",
+      "container"
+    ],
+    "_health_check_impl": [
+      "self",
+      "container"
+    ]
+  },
+  "PoolExhaustedError": {
+    "__init__": [
+      "self",
+      "pool_size",
+      "timeout"
+    ]
+  },
+  "PoolClosedError": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "PoolHealthCheckError": {
+    "__init__": [
+      "self",
+      "container_id",
+      "reason"
+    ]
+  },
+  "SessionNotOpenError": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "DuplicateClientError": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "PooledSandboxSession": {
+    "__init__": [
+      "self",
+      "pool_manager",
+      "verbose",
+      "stream",
+      "workdir",
+      "security_policy",
+      "default_timeout",
+      "execution_timeout",
+      "session_timeout",
+      "encoding_errors"
+    ],
+    "_infer_backend_from_pool": [
+      "self"
+    ],
+    "open": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "_create_backend_session": [
+      "self",
+      "container_id"
+    ],
+    "run": [
+      "self",
+      "code",
+      "libraries",
+      "timeout",
+      "on_stdout",
+      "on_stderr"
+    ],
+    "execute_command": [
+      "self",
+      "command",
+      "workdir"
+    ],
+    "copy_to_runtime": [
+      "self",
+      "src",
+      "dest"
+    ],
+    "copy_from_runtime": [
+      "self",
+      "src",
+      "dest"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ],
+    "backend_session": [
+      "self"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ]
+  },
+  "ArtifactPooledSandboxSession": {
+    "__init__": [
+      "self",
+      "pool_manager"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "run": [
+      "self",
+      "code",
+      "libraries",
+      "timeout",
+      "clear_plots",
+      "on_stdout",
+      "on_stderr"
+    ],
+    "_clear_plots_in_container": [
+      "self"
+    ],
+    "clear_plots": [
+      "self"
+    ]
+  },
+  "PREWARMING_CHECK_INTERVAL": [],
+  "resolve_default_image": [
+    "lang",
+    "image",
+    "dockerfile"
+  ],
+  "ContainerState": {
+    "INITIALIZING": [],
+    "IDLE": [],
+    "BUSY": [],
+    "UNHEALTHY": [],
+    "REMOVING": []
+  },
+  "PooledContainer": {
+    "mark_busy": [
+      "self"
+    ],
+    "mark_idle": [
+      "self"
+    ],
+    "mark_unhealthy": [
+      "self"
+    ],
+    "mark_removing": [
+      "self"
+    ],
+    "is_available": [
+      "self"
+    ],
+    "is_expired": [
+      "self",
+      "max_lifetime",
+      "max_uses"
+    ],
+    "get_idle_time": [
+      "self"
+    ]
+  },
+  "ContainerPoolManager": {
+    "__init__": [
+      "self",
+      "client",
+      "config",
+      "lang",
+      "image"
+    ],
+    "_initialize_pool": [
+      "self"
+    ],
+    "acquire": [
+      "self"
+    ],
+    "release": [
+      "self",
+      "container"
+    ],
+    "close": [
+      "self"
+    ],
+    "get_stats": [
+      "self"
+    ],
+    "_get_idle_container": [
+      "self"
+    ],
+    "_handle_exhaustion": [
+      "self"
+    ],
+    "_wait_for_container": [
+      "self"
+    ],
+    "_create_temporary_container": [
+      "self"
+    ],
+    "_ensure_min_pool_size": [
+      "self"
+    ],
+    "_create_container": [
+      "self"
+    ],
+    "_destroy_container": [
+      "self",
+      "container"
+    ],
+    "_health_check_loop": [
+      "self"
+    ],
+    "_perform_health_checks": [
+      "self"
+    ],
+    "_prewarming_loop": [
+      "self"
+    ],
+    "_create_session_for_container": [
+      "self"
+    ],
+    "_destroy_container_impl": [
+      "self",
+      "container"
+    ],
+    "_get_container_id": [
+      "self",
+      "container"
+    ],
+    "_health_check_impl": [
+      "self",
+      "container"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ]
+  },
+  "PodmanPoolManager": {
+    "__init__": [
+      "self",
+      "config",
+      "lang",
+      "image",
+      "dockerfile",
+      "client",
+      "runtime_configs"
+    ],
+    "_create_session_for_container": [
+      "self"
+    ]
+  },
+  "create_pool_manager": [
+    "client",
+    "backend",
+    "config",
+    "lang"
+  ]
+}
