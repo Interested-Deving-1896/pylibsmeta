@@ -1,0 +1,1938 @@
+{
+  "plan_chunks": [
+    "metadata",
+    "max_batch_bytes",
+    "keep_tensor",
+    "merge_gap"
+  ],
+  "BudgetInfeasibleError": {},
+  "FileWeightStats": {
+    "resident": [
+      "self"
+    ]
+  },
+  "pipeline_depth": [
+    "queue_size"
+  ],
+  "load_depth": [
+    "queue_size",
+    "group_size"
+  ],
+  "_effective_depth": [
+    "depth",
+    "transient_multiplier",
+    "account_for_yield_clone"
+  ],
+  "_group_resident": [
+    "stats",
+    "group_size"
+  ],
+  "collect_file_stats": [
+    "metas",
+    "keep_tensor",
+    "resident_tensor"
+  ],
+  "has_non_resident": [
+    "stats"
+  ],
+  "plan_file_budgets": [
+    "stats",
+    "device_memory_budget",
+    "depth",
+    "max_batch_bytes",
+    "accumulate_resident",
+    "transient_multiplier",
+    "group_size",
+    "account_for_yield_clone",
+    "chunk_overhead"
+  ],
+  "fit_queue_size": [
+    "requested",
+    "stats",
+    "device_memory_budget",
+    "max_batch_bytes",
+    "accumulate_resident",
+    "transient_multiplier",
+    "group_size",
+    "account_for_yield_clone",
+    "chunk_overhead"
+  ],
+  "init_logger": [
+    "name"
+  ],
+  "set_debug": [],
+  "is_debug": [
+    "logger"
+  ],
+  "is_gpu_found": [],
+  "get_fs_type": [
+    "path",
+    "mounts_file"
+  ],
+  "_NETWORK_FS": [],
+  "_RAM_FS": [],
+  "ODIRECT_HINT": [],
+  "is_odirect_enabled": [
+    "path",
+    "buffered_ram_fs"
+  ],
+  "get_device_numa_node": [
+    "device"
+  ],
+  "_normalize_windows_dll_path": [
+    "path",
+    "source"
+  ],
+  "resolve_runtime_lib_name": [
+    "framework"
+  ],
+  "_resolve_windows_cudart_lib_name": [
+    "framework"
+  ],
+  "_read_exact": [
+    "fd",
+    "length",
+    "filename"
+  ],
+  "SingleGroup": {
+    "size": [
+      "self"
+    ],
+    "rank": [
+      "self"
+    ]
+  },
+  "SafeTensorsMetadata": {
+    "__init__": [
+      "self",
+      "string",
+      "header_length",
+      "size_bytes",
+      "framework",
+      "src",
+      "keep_orig_dict"
+    ],
+    "from_buffer": [
+      "self",
+      "buf",
+      "buffer_len",
+      "filename",
+      "framework"
+    ],
+    "from_fd": [
+      "self",
+      "fd",
+      "filename",
+      "framework",
+      "keep_orig_dict"
+    ],
+    "from_file": [
+      "self",
+      "filename",
+      "framework"
+    ],
+    "get_tensors": [
+      "self",
+      "gbuf",
+      "device",
+      "copy_start_offset",
+      "dtype",
+      "owner"
+    ],
+    "_get_tensors": [
+      "self",
+      "gbuf",
+      "device",
+      "copy_start_offset",
+      "dtype",
+      "names",
+      "owner"
+    ],
+    "select_byte_ranges": [
+      "self",
+      "keep_tensor",
+      "merge_gap"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "TensorFrame": {
+    "from_buffer": [
+      "self",
+      "entry"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "_val"
+    ]
+  },
+  "logger": [],
+  "ThreeFSLoader": {
+    "process_extension_config": [
+      "cls",
+      "ext_config"
+    ],
+    "__init__": [
+      "self",
+      "pg",
+      "device",
+      "mount_point",
+      "debug_log",
+      "disable_cache",
+      "framework",
+      "set_numa"
+    ]
+  },
+  "ParallelThreeFSLoader": {
+    "__init__": [
+      "self",
+      "pg",
+      "hf_weights_files",
+      "max_concurrent_producers",
+      "queue_size",
+      "use_tqdm_on_load",
+      "device",
+      "debug_log",
+      "framework"
+    ]
+  },
+  "DeviceType": {
+    "CPU": [],
+    "CUDA": [],
+    "GPU": []
+  },
+  "Device": {
+    "as_str": [
+      "self"
+    ],
+    "from_str": [
+      "cls",
+      "s"
+    ]
+  },
+  "DType": {
+    "BOOL": [],
+    "I8": [],
+    "I16": [],
+    "I32": [],
+    "I64": [],
+    "U8": [],
+    "U16": [],
+    "U32": [],
+    "U64": [],
+    "F16": [],
+    "F32": [],
+    "F64": [],
+    "BF16": [],
+    "F8_E5M2": [],
+    "F8_E4M3": [],
+    "F8_E8M0": [],
+    "F4": [],
+    "AUTO": []
+  },
+  "DTYPE_SIZES": [],
+  "owned_expert_range": [
+    "num_experts",
+    "ep_size",
+    "ep_rank"
+  ],
+  "expert_parallel_filter": [
+    "num_experts",
+    "ep_size",
+    "ep_rank",
+    "pattern"
+  ],
+  "expert_parallel_filter_from_env": [],
+  "CONFIG_ENV_VAR": [],
+  "DEFAULT_CONFIG_PATH": [],
+  "LoaderConfig": {
+    "__post_init__": [
+      "self"
+    ],
+    "_COMMON_GROUPS": [],
+    "_COMMON_FIELDS_FOR_EXTENSION": [],
+    "from_dict": [
+      "cls",
+      "data"
+    ],
+    "get_extension_config": [
+      "self",
+      "name"
+    ],
+    "_from_json": [
+      "cls",
+      "path"
+    ],
+    "from_file": [
+      "cls",
+      "path"
+    ],
+    "create_parallel_kwargs": [
+      "self"
+    ]
+  },
+  "load_config": [],
+  "KEY_SHARD_INDEX": [],
+  "KEY_SHARD_COUNT": [],
+  "KEY_SHARD_SET": [],
+  "ShardSetError": {},
+  "validate_shard_set": [
+    "metas"
+  ],
+  "WriteEntry": {},
+  "ShardPlan": {},
+  "FillFn": [],
+  "ShardMetadataFn": [],
+  "_wrap_tensor": [
+    "tensor",
+    "framework"
+  ],
+  "plain_entry": [
+    "name",
+    "tensor"
+  ],
+  "shard_paths": [
+    "base",
+    "num_shards"
+  ],
+  "_check_entry": [
+    "e"
+  ],
+  "plan_shards": [
+    "entries",
+    "paths"
+  ],
+  "write_shards": [
+    "plans",
+    "fill"
+  ],
+  "per_entry_fill": [
+    "fn",
+    "num_threads"
+  ],
+  "tensor_fill": [
+    "num_threads"
+  ],
+  "save_sharded": [
+    "entries",
+    "base"
+  ],
+  "ParallelSaver": {
+    "__init__": [
+      "self"
+    ],
+    "save": [
+      "self",
+      "tensors",
+      "base"
+    ],
+    "save_entries": [
+      "self",
+      "entries",
+      "base"
+    ]
+  },
+  "FilesBufferOnDevice": {
+    "__init__": [
+      "self",
+      "rank_loaders",
+      "pg",
+      "framework",
+      "auto_mem_delete",
+      "keep_tensor",
+      "borrowed_tensors"
+    ],
+    "close": [
+      "self"
+    ],
+    "get_filename": [
+      "self",
+      "tensor_name"
+    ],
+    "get_shape": [
+      "self",
+      "tensor_name"
+    ],
+    "_get_rank_lidx": [
+      "self",
+      "tensor_name"
+    ],
+    "_get_tensor": [
+      "self",
+      "rank",
+      "lidx",
+      "tensor_name",
+      "ret",
+      "device",
+      "dtype"
+    ],
+    "get_sharded_wrapped": [
+      "self",
+      "tensor_name",
+      "dim",
+      "device",
+      "dtype"
+    ],
+    "get_sharded": [
+      "self",
+      "tensor_name",
+      "dim",
+      "device",
+      "dtype"
+    ],
+    "get_tensor_wrapped": [
+      "self",
+      "tensor_name",
+      "device",
+      "dtype"
+    ],
+    "get_tensor": [
+      "self",
+      "tensor_name",
+      "device",
+      "dtype"
+    ],
+    "iter_local_tensors": [
+      "self",
+      "tensor_names"
+    ],
+    "_broadcast_runs": [
+      "self",
+      "tensor_names",
+      "max_bytes",
+      "max_tensors"
+    ],
+    "_iter_tensors": [
+      "self",
+      "tensor_names",
+      "max_bytes",
+      "max_tensors",
+      "drain_runs"
+    ],
+    "push_tensor": [
+      "self",
+      "tensor_name",
+      "dst_rank",
+      "device",
+      "dtype"
+    ],
+    "get_multi_cols": [
+      "self",
+      "tensor_names",
+      "dim",
+      "device",
+      "dtype"
+    ],
+    "as_dict": [
+      "self",
+      "tensor_shard_dim"
+    ]
+  },
+  "LazyTensorFactory": {
+    "__init__": [
+      "self",
+      "metadata",
+      "device",
+      "rank",
+      "local_rank",
+      "factory_idx_bits",
+      "lidx",
+      "copier",
+      "framework",
+      "disable_cache"
+    ],
+    "submit_io": [
+      "self",
+      "use_buf_register",
+      "max_copy_block_size",
+      "allow_inflight"
+    ],
+    "wait_io": [
+      "self",
+      "dtype",
+      "noalign",
+      "borrowed_tensors"
+    ],
+    "push": [
+      "self",
+      "pg",
+      "tensor_name",
+      "dst_rank",
+      "src_rank"
+    ],
+    "shuffle": [
+      "self",
+      "pg",
+      "tensor_name",
+      "dim"
+    ],
+    "shuffle_multi_cols": [
+      "self",
+      "pg",
+      "tensor_names",
+      "dim"
+    ],
+    "free_dev_ptrs": [
+      "self"
+    ],
+    "_free_buffer": [
+      "self"
+    ]
+  },
+  "enable_tqdm": [
+    "use_tqdm_on_load",
+    "framework"
+  ],
+  "_BAR_FORMAT": [],
+  "parse_time": [
+    "timestamp_ms"
+  ],
+  "TimingContext": {
+    "__init__": [
+      "self",
+      "name",
+      "logger",
+      "batch_id",
+      "threshold_ms",
+      "log_on_exit"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ]
+  },
+  "FileBatch": {
+    "__init__": [
+      "self",
+      "fb",
+      "keys",
+      "batch_id"
+    ]
+  },
+  "PipelineParallel": {
+    "__init__": [
+      "self",
+      "pg",
+      "loader",
+      "hf_weights_files",
+      "max_concurrent_producers",
+      "queue_size",
+      "use_tqdm_on_load",
+      "tensor_filter",
+      "max_batch_bytes",
+      "use_chunk_budget_as_allocation_size",
+      "device_memory_budget",
+      "accumulate_resident",
+      "resident_tensor",
+      "broadcast_run_bytes",
+      "broadcast_run_tensors",
+      "overlap_io",
+      "borrowed_tensors"
+    ],
+    "_create_batches": [
+      "self",
+      "pg"
+    ],
+    "_log_message": [
+      "self",
+      "message",
+      "is_error"
+    ],
+    "_log_error": [
+      "self",
+      "message"
+    ],
+    "_wait_consumer_processed": [
+      "self"
+    ],
+    "_put_cancellable": [
+      "self",
+      "item"
+    ],
+    "_drain_queue": [
+      "self"
+    ],
+    "_spec_to_maps": [
+      "self",
+      "spec"
+    ],
+    "_load_single_batch": [
+      "self",
+      "batch_id",
+      "file_list"
+    ],
+    "_producer_worker": [
+      "self"
+    ],
+    "_consume_single_batch": [
+      "self"
+    ],
+    "_consumer_worker": [
+      "self"
+    ],
+    "iterate_weights": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "ParallelLoader": {
+    "__init__": [
+      "self",
+      "pg",
+      "hf_weights_files",
+      "max_concurrent_producers",
+      "queue_size",
+      "use_tqdm_on_load",
+      "device",
+      "bbuf_size_kb",
+      "max_threads",
+      "nogds",
+      "set_numa",
+      "debug_log",
+      "framework",
+      "tensor_filter",
+      "all_local",
+      "max_batch_bytes",
+      "use_chunk_budget_as_allocation_size",
+      "device_memory_budget",
+      "accumulate_resident",
+      "resident_tensor",
+      "use_fgds",
+      "broadcast_run_bytes",
+      "broadcast_run_tensors",
+      "overlap_io",
+      "borrowed_tensors"
+    ]
+  },
+  "__all__": [],
+  "_resolve_loader_class": [
+    "loader_name"
+  ],
+  "AutoLoader": {
+    "__init__": [
+      "self",
+      "pg",
+      "hf_weights_files",
+      "device"
+    ],
+    "_log_config_summary": [
+      "self",
+      "device",
+      "num_files",
+      "ext_kwargs"
+    ],
+    "config": [
+      "self"
+    ],
+    "iterate_weights": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "__version__": [],
+  "_c_str_dltensor": [],
+  "_GPU_DEVICE_TYPE": [],
+  "_detect_gpu_type": [],
+  "_get_gpu_device_type": [],
+  "DLDevice": {
+    "__init__": [
+      "self",
+      "dev"
+    ],
+    "kDLCPU": [],
+    "kDLCUDA": [],
+    "kDLROCM": [],
+    "_fields_": []
+  },
+  "c_DLDataType": {
+    "__init__": [
+      "self",
+      "dtype"
+    ],
+    "kDLInt": [],
+    "kDLUInt": [],
+    "kDLFloat": [],
+    "kDLBfloat": [],
+    "kDLBool": [],
+    "_fields_": []
+  },
+  "_Holder": {
+    "__init__": [
+      "self",
+      "shape",
+      "strides",
+      "owner"
+    ],
+    "_as_manager_ctx": [
+      "self"
+    ]
+  },
+  "DLTensor": {
+    "_fields_": [],
+    "__init__": [
+      "self",
+      "dev_ptr",
+      "dev",
+      "dtype",
+      "holder"
+    ],
+    "itemsize": [
+      "self"
+    ],
+    "__array_interface__": [
+      "self"
+    ]
+  },
+  "DLManagedTensor": {
+    "_fields_": [],
+    "as_py": [
+      "self",
+      "dev_ptr",
+      "shape",
+      "strides",
+      "dtype",
+      "dev",
+      "owner"
+    ],
+    "__array_interface__": [
+      "self"
+    ]
+  },
+  "_numpy_buffer_deleter": [
+    "handle"
+  ],
+  "_numpy_pycapsule_deleter": [
+    "handle"
+  ],
+  "from_cuda_buffer": [
+    "dev_ptr",
+    "shape",
+    "strides",
+    "dtype",
+    "dev",
+    "owner"
+  ],
+  "SharedDeviceAllocation": {
+    "_metrics_lock": [],
+    "_live_count": [],
+    "_live_bytes": [],
+    "__init__": [
+      "self",
+      "gbuf",
+      "framework",
+      "device",
+      "owns_memory"
+    ],
+    "get_base_address": [
+      "self"
+    ],
+    "acquire": [
+      "self"
+    ],
+    "release": [
+      "self"
+    ],
+    "live": [
+      "self"
+    ],
+    "refcount": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "live_allocation_count": [],
+  "live_allocation_bytes": [],
+  "gl_set_numa": [],
+  "loaded_library": [],
+  "BaseSafeTensorsFileLoader": {
+    "process_extension_config": [
+      "cls",
+      "ext_config"
+    ],
+    "__init__": [
+      "self",
+      "pg",
+      "device",
+      "copier_type",
+      "set_numa",
+      "disable_cache",
+      "framework"
+    ],
+    "init_numa": [
+      "self",
+      "set_numa"
+    ],
+    "_set_chunk_plan": [
+      "self",
+      "chunk_plan"
+    ],
+    "_set_metadata_cache": [
+      "self",
+      "metadata"
+    ],
+    "reset": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "get_keys": [
+      "self"
+    ],
+    "get_shape": [
+      "self",
+      "tensor_name"
+    ],
+    "set_tensor_filter": [
+      "self",
+      "keep_tensor"
+    ],
+    "add_filenames": [
+      "self",
+      "filenames"
+    ],
+    "copy_files_to_device": [
+      "self",
+      "dtype",
+      "use_buf_register",
+      "max_copy_block_size",
+      "allow_inflight",
+      "borrowed_tensors"
+    ]
+  },
+  "SafeTensorsFileLoader": {
+    "process_extension_config": [
+      "cls",
+      "ext_config"
+    ],
+    "__init__": [
+      "self",
+      "pg",
+      "device",
+      "bbuf_size_kb",
+      "max_threads",
+      "nogds",
+      "set_numa",
+      "disable_cache",
+      "debug_log",
+      "framework",
+      "use_fgds"
+    ]
+  },
+  "fastsafe_open": {
+    "__init__": [
+      "self",
+      "filenames",
+      "framework",
+      "pg",
+      "device",
+      "nogds",
+      "debug_log",
+      "max_copy_block_size",
+      "use_fgds"
+    ],
+    "metadata": [
+      "self"
+    ],
+    "keys": [
+      "self"
+    ],
+    "get_tensor_wrapped": [
+      "self",
+      "name"
+    ],
+    "get_tensor": [
+      "self",
+      "name"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_value",
+      "tb"
+    ]
+  },
+  "_request_end": [],
+  "_warned_gds_fallback": [],
+  "GdsFileCopier": {
+    "__init__": [
+      "self",
+      "metadata",
+      "device",
+      "reader",
+      "framework",
+      "fallback_cache"
+    ],
+    "set_o_direct": [
+      "self",
+      "enable"
+    ],
+    "set_byte_ranges": [
+      "self",
+      "byte_ranges"
+    ],
+    "set_chunk": [
+      "self",
+      "byte_ranges",
+      "names",
+      "allocation_size"
+    ],
+    "chunk_transient_multiplier": [
+      "cls",
+      "paths"
+    ],
+    "chunk_device_overhead": [
+      "cls",
+      "paths"
+    ],
+    "fixed_device_overhead": [
+      "cls",
+      "paths"
+    ],
+    "enable_tensor_readiness": [
+      "self"
+    ],
+    "prepare_tensors": [
+      "self",
+      "gbuf",
+      "owner"
+    ],
+    "wait_tensor": [
+      "self",
+      "name"
+    ],
+    "submit_io": [
+      "self",
+      "use_buf_register",
+      "max_copy_block_size"
+    ],
+    "finish_io": [
+      "self"
+    ],
+    "wait_io": [
+      "self",
+      "gbuf",
+      "dtype",
+      "noalign",
+      "owner"
+    ]
+  },
+  "_inited_gds": [],
+  "init_gds": [
+    "framework"
+  ],
+  "new_gds_file_copier": [
+    "device",
+    "bbuf_size_kb",
+    "max_threads",
+    "device_memory_budget"
+  ],
+  "CopierType": [],
+  "CopierConstructFunc": [],
+  "CopierConstructorFactory": [],
+  "register_copier_constructor": [
+    "copier_type",
+    "copier_class"
+  ],
+  "get_copier_class": [
+    "copier_type"
+  ],
+  "copier_class_of": [
+    "construct"
+  ],
+  "create_copier_constructor": [
+    "copier_type",
+    "device"
+  ],
+  "_DMA_THREADS_ENV": [],
+  "_DMA_THREADS_DEFAULT": [],
+  "_DMA_PIN_CHUNK": [],
+  "_range_end": [],
+  "_dma_threads_from_env": [],
+  "_odirect_reader_usable": [
+    "path"
+  ],
+  "_dma_worker_count": [
+    "nthreads"
+  ],
+  "UnifiedMemCopier": {
+    "__init__": [
+      "self",
+      "metadata",
+      "device",
+      "framework",
+      "dma_gate"
+    ],
+    "enable_tensor_readiness": [
+      "self"
+    ],
+    "prepare_tensors": [
+      "self",
+      "gbuf",
+      "owner"
+    ],
+    "wait_tensor": [
+      "self",
+      "name"
+    ],
+    "finish_io": [
+      "self"
+    ],
+    "set_byte_ranges": [
+      "self",
+      "byte_ranges"
+    ],
+    "set_chunk": [
+      "self",
+      "byte_ranges",
+      "names",
+      "allocation_size"
+    ],
+    "chunk_transient_multiplier": [
+      "cls",
+      "paths"
+    ],
+    "fixed_device_overhead": [
+      "cls",
+      "paths"
+    ],
+    "submit_io": [
+      "self",
+      "use_buf_register",
+      "max_copy_block_size"
+    ],
+    "wait_io": [
+      "self",
+      "gbuf",
+      "dtype",
+      "noalign",
+      "owner"
+    ]
+  },
+  "is_unified_memory_system": [
+    "framework"
+  ],
+  "new_unified_copier": [
+    "device"
+  ],
+  "ThreeFSFileCopier": {
+    "__init__": [
+      "self",
+      "metadata",
+      "device",
+      "reader",
+      "framework"
+    ],
+    "submit_io": [
+      "self",
+      "use_buf_register",
+      "max_copy_block_size"
+    ],
+    "wait_io": [
+      "self",
+      "gbuf",
+      "dtype",
+      "noalign",
+      "owner"
+    ]
+  },
+  "new_threefs_file_copier": [
+    "device",
+    "mount_point",
+    "entries",
+    "io_depth",
+    "buffer_size"
+  ],
+  "ALIGN": [],
+  "ALLOC_MINIMAL": [],
+  "get_fgds_device_id": [
+    "device"
+  ],
+  "FgdsFileCopier": {
+    "__init__": [
+      "self",
+      "metadata",
+      "device",
+      "reader",
+      "framework",
+      "max_threads"
+    ],
+    "_cleanup": [
+      "self",
+      "free_gbuf"
+    ],
+    "submit_io": [
+      "self",
+      "use_buf_register",
+      "max_copy_block_size"
+    ],
+    "wait_io": [
+      "self",
+      "gbuf",
+      "dtype",
+      "noalign",
+      "owner"
+    ],
+    "finish_io": [
+      "self"
+    ]
+  },
+  "init_fgds": [
+    "framework"
+  ],
+  "new_fgds_file_copier": [
+    "device",
+    "framework",
+    "bbuf_size_kb",
+    "max_threads"
+  ],
+  "_fgds_atexit_cleanup": [],
+  "_warned_odirect_rejected": [],
+  "_open_checkpoint": [
+    "path",
+    "flags",
+    "direct"
+  ],
+  "_fd_is_odirect": [
+    "fd"
+  ],
+  "NoGdsFileCopier": {
+    "__init__": [
+      "self",
+      "metadata",
+      "device",
+      "reader",
+      "framework"
+    ],
+    "enable_tensor_readiness": [
+      "self"
+    ],
+    "prepare_tensors": [
+      "self",
+      "gbuf",
+      "owner"
+    ],
+    "wait_tensor": [
+      "self",
+      "name"
+    ],
+    "set_byte_ranges": [
+      "self",
+      "byte_ranges"
+    ],
+    "set_chunk": [
+      "self",
+      "byte_ranges",
+      "names",
+      "allocation_size"
+    ],
+    "chunk_transient_multiplier": [
+      "cls",
+      "paths"
+    ],
+    "fixed_device_overhead": [
+      "cls",
+      "paths"
+    ],
+    "submit_io": [
+      "self",
+      "use_buf_register",
+      "max_copy_block_size"
+    ],
+    "wait_io": [
+      "self",
+      "gbuf",
+      "dtype",
+      "noalign",
+      "owner"
+    ],
+    "finish_io": [
+      "self"
+    ]
+  },
+  "_loaded_library": [],
+  "load_library_func": [
+    "framework"
+  ],
+  "new_nogds_file_copier": [
+    "device",
+    "bbuf_size_kb",
+    "max_threads"
+  ],
+  "_inited_ds": [],
+  "_warned_dstorage_fallback": [],
+  "_dstorage_dll_dir_handle": [],
+  "_DSTORAGE_DLLS": [],
+  "_DSTORAGE_DLL_DIR_ENV_VAR": [],
+  "_LEGACY_DSTORAGE_DOWNLOAD_ENV_VAR": [],
+  "DirectStorageUnavailableError": {},
+  "_get_dstorage_cache_dir": [],
+  "_validate_dstorage_dll_dir": [
+    "path",
+    "source"
+  ],
+  "resolve_dstorage_dll_dir": [],
+  "load_dstorage_dlls": [],
+  "init_dstorage": [
+    "device_id",
+    "framework"
+  ],
+  "DStorageFileCopier": {
+    "__init__": [
+      "self",
+      "metadata",
+      "device",
+      "stream_reader",
+      "framework"
+    ],
+    "submit_io": [
+      "self",
+      "use_buf_register",
+      "max_copy_block_size"
+    ],
+    "wait_io": [
+      "self",
+      "gbuf",
+      "dtype",
+      "noalign",
+      "owner"
+    ]
+  },
+  "new_dstorage_copier": [
+    "device"
+  ],
+  "validated_byte_ranges": [
+    "metadata",
+    "byte_ranges"
+  ],
+  "validated_chunk_allocation_size": [
+    "byte_ranges",
+    "allocation_size"
+  ],
+  "CopierInterface": {
+    "enable_tensor_readiness": [
+      "self"
+    ],
+    "prepare_tensors": [
+      "self",
+      "gbuf",
+      "owner"
+    ],
+    "wait_tensor": [
+      "self",
+      "name"
+    ],
+    "finish_io": [
+      "self"
+    ],
+    "set_byte_ranges": [
+      "self",
+      "byte_ranges"
+    ],
+    "set_chunk": [
+      "self",
+      "byte_ranges",
+      "names",
+      "allocation_size"
+    ],
+    "chunk_transient_multiplier": [
+      "cls",
+      "paths"
+    ],
+    "chunk_device_overhead": [
+      "cls",
+      "paths"
+    ],
+    "fixed_device_overhead": [
+      "cls",
+      "paths"
+    ],
+    "submit_io": [
+      "self",
+      "use_buf_register",
+      "max_copy_block_size"
+    ],
+    "wait_io": [
+      "self",
+      "gbuf",
+      "dtype",
+      "noalign",
+      "owner"
+    ]
+  },
+  "DummyDeviceBuffer": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "ExampleCopier": {
+    "__init__": [
+      "self",
+      "metadata",
+      "device",
+      "reader",
+      "framework"
+    ],
+    "submit_io": [
+      "self",
+      "use_buf_register",
+      "max_copy_block_size"
+    ],
+    "wait_io": [
+      "self",
+      "gbuf",
+      "dtype",
+      "noalign",
+      "owner"
+    ]
+  },
+  "_fst_dtypes": [],
+  "fst_dtype": [
+    "dtype"
+  ],
+  "TorchTensor": {
+    "get_raw": [
+      "self"
+    ],
+    "get_shape": [
+      "self"
+    ],
+    "get_nbytes": [
+      "self"
+    ],
+    "copy_to_buffer": [
+      "self",
+      "buf"
+    ],
+    "contiguous": [
+      "self"
+    ],
+    "to": [
+      "self",
+      "device",
+      "dtype"
+    ],
+    "clone": [
+      "self"
+    ],
+    "detach": [
+      "self"
+    ],
+    "view": [
+      "self",
+      "dtype"
+    ],
+    "__getitem__": [
+      "self",
+      "_val"
+    ],
+    "reshape": [
+      "self",
+      "shape"
+    ],
+    "data_ptr": [
+      "self"
+    ]
+  },
+  "_needs_fp8_cast": [],
+  "_is_fp8": [
+    "dtype"
+  ],
+  "_needs_uint8_view": [
+    "dtype"
+  ],
+  "TorchProcessGroup": {
+    "size": [
+      "self"
+    ],
+    "rank": [
+      "self"
+    ],
+    "broadcast": [
+      "self",
+      "dst",
+      "rank"
+    ],
+    "scatter": [
+      "self",
+      "dst",
+      "scatter_list",
+      "src"
+    ],
+    "send": [
+      "self",
+      "t",
+      "dst_rank",
+      "tag"
+    ],
+    "recv": [
+      "self",
+      "t",
+      "src_rank",
+      "tag"
+    ]
+  },
+  "TorchOp": {
+    "synchronize_current_stream": [
+      "self",
+      "device"
+    ],
+    "_flat_source_run": [
+      "tensors",
+      "sizes"
+    ],
+    "broadcast_contiguous_run": [
+      "self",
+      "pg",
+      "source_tensors",
+      "frames",
+      "src_rank",
+      "device"
+    ],
+    "__init__": [
+      "self"
+    ],
+    "get_name": [
+      "self"
+    ],
+    "get_device": [
+      "self",
+      "device",
+      "pg"
+    ],
+    "set_device": [
+      "self",
+      "device"
+    ],
+    "alloc_tensor_memory": [
+      "self",
+      "length",
+      "dev"
+    ],
+    "free_tensor_memory": [
+      "self",
+      "gbuf",
+      "dev"
+    ],
+    "get_empty_tensor": [
+      "self",
+      "shape",
+      "dtype",
+      "device"
+    ],
+    "concat_tensors": [
+      "self",
+      "tensors",
+      "dim"
+    ],
+    "get_dtype_size": [
+      "self",
+      "dtype"
+    ],
+    "from_dlpack": [
+      "self",
+      "dl_tensor",
+      "device",
+      "dtype"
+    ],
+    "iter_buffer_views": [
+      "self",
+      "metadata",
+      "gbuf",
+      "device",
+      "copy_start_offset",
+      "names",
+      "owner"
+    ],
+    "copy_tensor": [
+      "self",
+      "dst",
+      "src"
+    ],
+    "wrap_tensor": [
+      "self",
+      "tensor"
+    ],
+    "get_cuda_ver": [
+      "self"
+    ],
+    "get_runtime_lib_dirs": [
+      "self"
+    ],
+    "get_device_ptr_align": [
+      "self"
+    ],
+    "as_workaround_dtype": [
+      "self",
+      "dtype"
+    ],
+    "get_storage_shape": [
+      "self",
+      "dtype",
+      "shape",
+      "strides"
+    ],
+    "get_native_shape": [
+      "self",
+      "dtype",
+      "st_shape"
+    ],
+    "get_native_slices": [
+      "self",
+      "dtype",
+      "st_shape",
+      "slices"
+    ],
+    "synchronize": [
+      "self",
+      "device"
+    ],
+    "get_global_rank": [
+      "self"
+    ],
+    "get_device_name": [
+      "self",
+      "index"
+    ],
+    "mmap_file_pinned": [
+      "self",
+      "filename",
+      "length",
+      "offset"
+    ],
+    "get_process_group": [
+      "self",
+      "pg"
+    ],
+    "is_equal": [
+      "self",
+      "wrapped",
+      "real"
+    ],
+    "randn": [
+      "self",
+      "s",
+      "device",
+      "dtype"
+    ],
+    "support_fp8": [
+      "self"
+    ],
+    "get_mem_used": [
+      "self"
+    ]
+  },
+  "get_framework_op": [],
+  "PaddleTensor": {
+    "get_raw": [
+      "self"
+    ],
+    "get_shape": [
+      "self"
+    ],
+    "get_nbytes": [
+      "self"
+    ],
+    "copy_to_buffer": [
+      "self",
+      "buf"
+    ],
+    "contiguous": [
+      "self"
+    ],
+    "to": [
+      "self",
+      "device",
+      "dtype"
+    ],
+    "clone": [
+      "self"
+    ],
+    "detach": [
+      "self"
+    ],
+    "view": [
+      "self",
+      "dtype"
+    ],
+    "__getitem__": [
+      "self",
+      "_val"
+    ],
+    "data_ptr": [
+      "self"
+    ]
+  },
+  "PaddleProcessGroup": {
+    "size": [
+      "self"
+    ],
+    "rank": [
+      "self"
+    ],
+    "_to_global": [
+      "self",
+      "rank"
+    ],
+    "broadcast": [
+      "self",
+      "dst",
+      "rank"
+    ],
+    "scatter": [
+      "self",
+      "dst",
+      "scatter_list",
+      "src"
+    ],
+    "send": [
+      "self",
+      "t",
+      "dst_rank",
+      "tag"
+    ],
+    "recv": [
+      "self",
+      "t",
+      "src_rank",
+      "tag"
+    ]
+  },
+  "PaddleOp": {
+    "__init__": [
+      "self"
+    ],
+    "get_name": [
+      "self"
+    ],
+    "get_device": [
+      "self",
+      "device",
+      "pg"
+    ],
+    "set_device": [
+      "self",
+      "device"
+    ],
+    "alloc_tensor_memory": [
+      "self",
+      "length",
+      "dev"
+    ],
+    "free_tensor_memory": [
+      "self",
+      "gbuf",
+      "dev"
+    ],
+    "get_empty_tensor": [
+      "self",
+      "shape",
+      "dtype",
+      "device"
+    ],
+    "concat_tensors": [
+      "self",
+      "tensors",
+      "dim"
+    ],
+    "get_dtype_size": [
+      "self",
+      "dtype"
+    ],
+    "from_dlpack": [
+      "self",
+      "dl_tensor",
+      "device",
+      "dtype"
+    ],
+    "copy_tensor": [
+      "self",
+      "dst",
+      "src"
+    ],
+    "wrap_tensor": [
+      "self",
+      "tensor"
+    ],
+    "get_cuda_ver": [
+      "self"
+    ],
+    "get_device_ptr_align": [
+      "self"
+    ],
+    "as_workaround_dtype": [
+      "self",
+      "dtype"
+    ],
+    "synchronize": [
+      "self",
+      "device"
+    ],
+    "get_global_rank": [
+      "self"
+    ],
+    "get_device_name": [
+      "self",
+      "index"
+    ],
+    "get_process_group": [
+      "self",
+      "pg"
+    ],
+    "is_equal": [
+      "self",
+      "wrapped",
+      "real"
+    ],
+    "randn": [
+      "self",
+      "s",
+      "device",
+      "dtype"
+    ],
+    "support_fp8": [
+      "self"
+    ],
+    "get_mem_used": [
+      "self"
+    ]
+  },
+  "TensorBase": {
+    "get_raw": [
+      "self"
+    ],
+    "get_shape": [
+      "self"
+    ],
+    "get_nbytes": [
+      "self"
+    ],
+    "copy_to_buffer": [
+      "self",
+      "buf"
+    ],
+    "contiguous": [
+      "self"
+    ],
+    "to": [
+      "self",
+      "device",
+      "dtype"
+    ],
+    "clone": [
+      "self"
+    ],
+    "detach": [
+      "self"
+    ],
+    "view": [
+      "self",
+      "dtype"
+    ],
+    "__getitem__": [
+      "self",
+      "_val"
+    ],
+    "reshape": [
+      "self",
+      "shape"
+    ],
+    "data_ptr": [
+      "self"
+    ]
+  },
+  "T": [],
+  "ProcessGroupBase": {
+    "size": [
+      "self"
+    ],
+    "rank": [
+      "self"
+    ],
+    "broadcast": [
+      "self",
+      "dst",
+      "rank"
+    ],
+    "scatter": [
+      "self",
+      "dst",
+      "scatter_list",
+      "src"
+    ],
+    "send": [
+      "self",
+      "t",
+      "dst_rank",
+      "tag"
+    ],
+    "recv": [
+      "self",
+      "t",
+      "src_rank",
+      "tag"
+    ]
+  },
+  "K": [],
+  "FrameworkOpBase": {
+    "broadcast_contiguous_run": [
+      "self",
+      "pg",
+      "source_tensors",
+      "frames",
+      "src_rank",
+      "device"
+    ],
+    "get_name": [
+      "self"
+    ],
+    "get_device": [
+      "self",
+      "device",
+      "pg"
+    ],
+    "set_device": [
+      "self",
+      "device"
+    ],
+    "alloc_tensor_memory": [
+      "self",
+      "length",
+      "dev"
+    ],
+    "free_tensor_memory": [
+      "self",
+      "gbuf",
+      "dev"
+    ],
+    "get_empty_tensor": [
+      "self",
+      "shape",
+      "dtype",
+      "device"
+    ],
+    "concat_tensors": [
+      "self",
+      "tensors",
+      "dim"
+    ],
+    "copy_tensor": [
+      "self",
+      "dst",
+      "src"
+    ],
+    "wrap_tensor": [
+      "self",
+      "tensor"
+    ],
+    "get_dtype_size": [
+      "self",
+      "dtype"
+    ],
+    "from_dlpack": [
+      "self",
+      "dl_tensor",
+      "device",
+      "dtype"
+    ],
+    "get_cuda_ver": [
+      "self"
+    ],
+    "get_runtime_lib_dirs": [
+      "self"
+    ],
+    "get_device_ptr_align": [
+      "self"
+    ],
+    "as_workaround_dtype": [
+      "self",
+      "dtype"
+    ],
+    "get_storage_shape": [
+      "self",
+      "dtype",
+      "shape",
+      "strides"
+    ],
+    "get_native_shape": [
+      "self",
+      "dtype",
+      "st_shape"
+    ],
+    "get_native_slices": [
+      "self",
+      "dtype",
+      "st_shape",
+      "slices"
+    ],
+    "iter_buffer_views": [
+      "self",
+      "metadata",
+      "gbuf",
+      "device",
+      "copy_start_offset",
+      "names",
+      "owner"
+    ],
+    "synchronize": [
+      "self",
+      "device"
+    ],
+    "synchronize_current_stream": [
+      "self",
+      "device"
+    ],
+    "get_global_rank": [
+      "self"
+    ],
+    "get_device_name": [
+      "self",
+      "index"
+    ],
+    "mmap_file_pinned": [
+      "self",
+      "filename",
+      "length",
+      "offset"
+    ],
+    "get_process_group": [
+      "self",
+      "pg"
+    ],
+    "is_equal": [
+      "self",
+      "wrapped",
+      "real"
+    ],
+    "randn": [
+      "self",
+      "s",
+      "device",
+      "dtype"
+    ],
+    "support_fp8": [
+      "self"
+    ],
+    "get_mem_used": [
+      "self"
+    ]
+  }
+}
