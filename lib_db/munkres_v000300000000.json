@@ -1,0 +1,1392 @@
+{
+  "__all__": [],
+  "_INF": [],
+  "_mp": [
+    "a",
+    "b",
+    "pick",
+    "neutral"
+  ],
+  "minplus": [
+    "a",
+    "b"
+  ],
+  "maxplus": [
+    "a",
+    "b"
+  ],
+  "tropical_permanent": [
+    "matrix",
+    "maximize"
+  ],
+  "rank_one_decomposition": [
+    "matrix"
+  ],
+  "solve_rank_one": [
+    "matrix"
+  ],
+  "solve_line_matching": [
+    "x",
+    "y",
+    "p"
+  ],
+  "BoundResult": {},
+  "solve_with_bound": [
+    "cost",
+    "upper",
+    "maximize"
+  ],
+  "prune_edges_by_bound": [
+    "cost",
+    "upper"
+  ],
+  "qap_cost": [
+    "flow",
+    "dist",
+    "perm"
+  ],
+  "qap_lower_bound": [
+    "flow",
+    "dist"
+  ],
+  "qap_local_search": [
+    "flow",
+    "dist",
+    "perm"
+  ],
+  "stable_matching": [
+    "proposers",
+    "receivers"
+  ],
+  "Transport": {},
+  "transport": [
+    "supply",
+    "demand",
+    "cost"
+  ],
+  "SinkhornResult": {},
+  "_logsumexp": [
+    "terms"
+  ],
+  "sinkhorn": [
+    "cost"
+  ],
+  "soft_assignment": [
+    "matrix",
+    "temperature"
+  ],
+  "_rank": [
+    "v"
+  ],
+  "minimize_failing_matrix": [
+    "matrix",
+    "fails"
+  ],
+  "TOOLS": [],
+  "_doctor": [
+    "args"
+  ],
+  "_load": [
+    "path"
+  ],
+  "run_tool": [
+    "name",
+    "args"
+  ],
+  "_FORBIDDEN_TOKENS": [],
+  "parse_number": [
+    "token"
+  ],
+  "parse_matrix": [
+    "text"
+  ],
+  "build_parser": [],
+  "main": [
+    "argv"
+  ],
+  "_read": [
+    "path"
+  ],
+  "_opt_number": [
+    "token"
+  ],
+  "_print": [
+    "result",
+    "matrix"
+  ],
+  "Topology": {
+    "unique": [
+      "self"
+    ]
+  },
+  "_scc": [
+    "n_nodes",
+    "adj"
+  ],
+  "_count_perfect": [
+    "rows",
+    "_ncols"
+  ],
+  "topology": [
+    "matrix",
+    "pairs",
+    "maximize"
+  ],
+  "edge_margins": [
+    "matrix",
+    "maximize"
+  ],
+  "_neighbours": [
+    "a",
+    "b"
+  ],
+  "energy_landscape": [
+    "matrix",
+    "eps",
+    "maximize",
+    "limit"
+  ],
+  "energy_barrier": [
+    "matrix",
+    "a",
+    "b",
+    "eps",
+    "maximize",
+    "limit"
+  ],
+  "k_best_diverse": [
+    "matrix",
+    "k",
+    "min_distance",
+    "maximize",
+    "limit"
+  ],
+  "cooling_schedule": [
+    "start",
+    "end",
+    "steps"
+  ],
+  "temperature_path": [
+    "matrix",
+    "betas"
+  ],
+  "verify_canonical": [
+    "matrix",
+    "pairs",
+    "maximize"
+  ],
+  "_dense_exact": [
+    "matrix"
+  ],
+  "monge_witness": [
+    "matrix"
+  ],
+  "inverse_monge_witness": [
+    "matrix"
+  ],
+  "is_additive": [
+    "matrix"
+  ],
+  "_monotone_dp": [
+    "a"
+  ],
+  "solve_monge": [
+    "matrix",
+    "maximize"
+  ],
+  "Fingerprint": {},
+  "fingerprint": [
+    "matrix"
+  ],
+  "QUBO": {},
+  "assignment_to_qubo": [
+    "cost",
+    "penalty"
+  ],
+  "qubo_energy": [
+    "q",
+    "bits"
+  ],
+  "decode_bits": [
+    "q",
+    "bits"
+  ],
+  "qubo_to_ising": [
+    "q"
+  ],
+  "reduce_assignment_problem": [
+    "cost"
+  ],
+  "warm_start_bits": [
+    "cost",
+    "q"
+  ],
+  "repair_bits": [
+    "cost",
+    "q",
+    "bits"
+  ],
+  "anneal_qubo": [
+    "q",
+    "seed",
+    "sweeps",
+    "t0",
+    "t1"
+  ],
+  "verify_candidate": [
+    "cost",
+    "pairs"
+  ],
+  "ExperimentRecorder": {
+    "record": [
+      "self",
+      "cost",
+      "seed",
+      "sweeps",
+      "backend"
+    ],
+    "to_json": [
+      "self"
+    ]
+  },
+  "D": [],
+  "_SAFE": [],
+  "_fits_float64": [
+    "a",
+    "np"
+  ],
+  "_AR_MAX": [],
+  "_init": [],
+  "_quick": [
+    "cost",
+    "maximize"
+  ],
+  "fast_lsa": [
+    "cost",
+    "maximize"
+  ],
+  "AssignmentSolver": {
+    "__init__": [
+      "self",
+      "shape",
+      "dtype"
+    ],
+    "solve": [
+      "self",
+      "cost",
+      "maximize"
+    ]
+  },
+  "_native_infeasible": [],
+  "_A": [],
+  "_B": [],
+  "Assignment": {
+    "__iter__": [
+      "self"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "rows": [
+      "self"
+    ],
+    "cols": [
+      "self"
+    ],
+    "as_dict": [
+      "self"
+    ],
+    "labelled": [
+      "self"
+    ]
+  },
+  "Diagnosis": {},
+  "_negated": [
+    "rows"
+  ],
+  "_gate": [
+    "threshold"
+  ],
+  "_labels": [
+    "matrix"
+  ],
+  "solve": [
+    "matrix"
+  ],
+  "_make_assignment": [
+    "original",
+    "pairs",
+    "shape"
+  ],
+  "diagnose": [
+    "matrix"
+  ],
+  "linear_sum_assignment": [
+    "cost_matrix",
+    "maximize"
+  ],
+  "_lsa_general": [
+    "cost_matrix",
+    "maximize"
+  ],
+  "build_cost_matrix": [
+    "rows",
+    "cols",
+    "cost"
+  ],
+  "InertiaResult": {},
+  "assign_with_inertia": [
+    "cost",
+    "previous",
+    "switch_cost",
+    "maximize"
+  ],
+  "TemporalAssignment": {
+    "__init__": [
+      "self",
+      "switch_cost",
+      "maximize"
+    ],
+    "step": [
+      "self",
+      "cost"
+    ]
+  },
+  "Regret": {},
+  "_validate_regret_inputs": [
+    "pairs",
+    "low",
+    "high"
+  ],
+  "regret_of": [
+    "pairs",
+    "low",
+    "high"
+  ],
+  "minimax_regret_exact": [
+    "low",
+    "high",
+    "max_n"
+  ],
+  "MAX_COLS": [],
+  "_prep": [
+    "matrix"
+  ],
+  "count_matchings": [
+    "matrix"
+  ],
+  "Gibbs": {},
+  "_NEG_INF": [],
+  "_check_beta": [
+    "beta"
+  ],
+  "_fcost": [
+    "c"
+  ],
+  "_lse": [
+    "a",
+    "b"
+  ],
+  "_log_weights": [
+    "rows",
+    "beta"
+  ],
+  "gibbs": [
+    "matrix",
+    "beta"
+  ],
+  "gibbs_sample": [
+    "matrix",
+    "beta",
+    "rng"
+  ],
+  "RepairStats": {},
+  "_q": [
+    "x"
+  ],
+  "AssignmentState": {
+    "__init__": [
+      "self",
+      "cost",
+      "maximize"
+    ],
+    "_in": [
+      "self",
+      "x"
+    ],
+    "_commit_cell": [
+      "self",
+      "row",
+      "col",
+      "raw",
+      "q"
+    ],
+    "update_cost": [
+      "self",
+      "row",
+      "col",
+      "cost"
+    ],
+    "update_costs": [
+      "self",
+      "changes"
+    ],
+    "add_row": [
+      "self",
+      "row",
+      "costs"
+    ],
+    "add_column": [
+      "self",
+      "col",
+      "costs"
+    ],
+    "remove_row": [
+      "self",
+      "row"
+    ],
+    "remove_column": [
+      "self",
+      "col"
+    ],
+    "_unmatch_row": [
+      "self",
+      "row"
+    ],
+    "_repair_duals": [
+      "self"
+    ],
+    "_augment": [
+      "self",
+      "r0"
+    ],
+    "_full_reset": [
+      "self"
+    ],
+    "solve": [
+      "self"
+    ],
+    "export_log": [
+      "self"
+    ],
+    "from_log": [
+      "cls",
+      "log"
+    ],
+    "state_at": [
+      "self",
+      "step"
+    ],
+    "rewind": [
+      "self",
+      "k"
+    ],
+    "apply": [
+      "self",
+      "delta"
+    ],
+    "snapshot": [
+      "self"
+    ],
+    "restore": [
+      "self",
+      "snap"
+    ],
+    "pairs": [
+      "self"
+    ],
+    "objective": [
+      "self"
+    ],
+    "dense": [
+      "self"
+    ],
+    "verify": [
+      "self"
+    ]
+  },
+  "Delta": {
+    "compose": [
+      "self",
+      "later"
+    ]
+  },
+  "fragility_graph": [
+    "matrix",
+    "maximize"
+  ],
+  "scenario_mass": [
+    "scenarios"
+  ],
+  "_scen": [
+    "scenarios",
+    "max_n"
+  ],
+  "pareto_assignments": [
+    "scenarios"
+  ],
+  "var_assignment": [
+    "scenarios",
+    "delta"
+  ],
+  "qap_gap": [
+    "flow",
+    "dist",
+    "restarts",
+    "seed"
+  ],
+  "qap_branch_and_bound": [
+    "flow",
+    "dist"
+  ],
+  "optimality_length": [
+    "a",
+    "b",
+    "pairs",
+    "lo",
+    "hi"
+  ],
+  "next_breakpoint": [
+    "a",
+    "b",
+    "lam",
+    "hi"
+  ],
+  "parametric_duals": [
+    "a",
+    "b",
+    "lo",
+    "hi"
+  ],
+  "parametric_degeneracy": [
+    "a",
+    "b",
+    "lo",
+    "hi"
+  ],
+  "compact_log": [
+    "log"
+  ],
+  "HistoryCache": {
+    "__init__": [
+      "self"
+    ],
+    "solve": [
+      "self",
+      "matrix"
+    ]
+  },
+  "solve_points_grid": [
+    "x",
+    "y",
+    "cell",
+    "k"
+  ],
+  "solve_memmap": [
+    "path",
+    "shape",
+    "k",
+    "dtype"
+  ],
+  "stable_optimum": [
+    "matrix",
+    "maximize",
+    "limit"
+  ],
+  "hall_violators": [
+    "matrix"
+  ],
+  "classify_cost": [
+    "matrix"
+  ],
+  "solve_group_capacity": [
+    "cost",
+    "groups",
+    "caps",
+    "maximize"
+  ],
+  "parametric_atlas": [
+    "a",
+    "b1",
+    "b2",
+    "l1",
+    "l2",
+    "maximize"
+  ],
+  "ParametricCache": {
+    "__init__": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "a",
+      "b",
+      "lo",
+      "hi",
+      "maximize"
+    ]
+  },
+  "strip_additive": [
+    "matrix"
+  ],
+  "fit_threshold": [
+    "samples",
+    "low",
+    "high"
+  ],
+  "calibrate_native_threshold": [
+    "sizes",
+    "repeat"
+  ],
+  "_scenario_costs": [
+    "scenarios",
+    "max_n"
+  ],
+  "_enumerate": [
+    "mats",
+    "n",
+    "m"
+  ],
+  "cvar_assignment": [
+    "scenarios",
+    "alpha",
+    "max_n"
+  ],
+  "mean_variance_assignment": [
+    "scenarios",
+    "lam",
+    "max_n"
+  ],
+  "solve_3d": [
+    "cost",
+    "maximize"
+  ],
+  "Transform": {},
+  "Plan": {
+    "explain": [
+      "self"
+    ]
+  },
+  "PlannedResult": {},
+  "plan": [
+    "cost",
+    "maximize"
+  ],
+  "solve_planned": [
+    "cost",
+    "maximize",
+    "verify"
+  ],
+  "versions": [],
+  "backends": [],
+  "profile_solve": [
+    "cost",
+    "maximize"
+  ],
+  "EquivalenceReport": {},
+  "check_equivalent": [
+    "cost",
+    "maximize"
+  ],
+  "BatchResult": {
+    "__init__": [
+      "self",
+      "col_ind",
+      "status"
+    ],
+    "ok": [
+      "self"
+    ]
+  },
+  "_FLOAT_EXACT": [],
+  "_ON_INFEASIBLE": [],
+  "_lossy_problems": [
+    "orig",
+    "np"
+  ],
+  "solve_batch": [
+    "costs",
+    "maximize",
+    "on_infeasible"
+  ],
+  "_solve_exact": [
+    "problem",
+    "maximize",
+    "row_out"
+  ],
+  "_ABI": [],
+  "_INT64_MAX": [],
+  "_SAFE_INT": [],
+  "_BREAKER_LIMIT": [],
+  "_log": [],
+  "_lock": [],
+  "suspended": {
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self"
+    ]
+  },
+  "_tried": [],
+  "_failures": [],
+  "_strict": [],
+  "_selftest": [
+    "mod"
+  ],
+  "report_failure": [
+    "where",
+    "exc"
+  ],
+  "safe_call": [
+    "where",
+    "fn"
+  ],
+  "native_status": [],
+  "reset_native": [],
+  "set_strict_mode": [
+    "strict"
+  ],
+  "forced_off": {
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self"
+    ]
+  },
+  "available": [],
+  "version": [],
+  "_raise_for": [
+    "rc",
+    "n",
+    "hall"
+  ],
+  "solve_dense": [
+    "n",
+    "m",
+    "edges"
+  ],
+  "solve_array": [
+    "a"
+  ],
+  "ProblemTooLargeError": {
+    "__init__": [
+      "self",
+      "message",
+      "code",
+      "details"
+    ]
+  },
+  "SolverLimits": {},
+  "estimate_memory": [
+    "n",
+    "m",
+    "representation",
+    "density"
+  ],
+  "choose_representation": [
+    "n",
+    "m",
+    "density",
+    "budget_bytes"
+  ],
+  "solve_limited": [
+    "cost",
+    "limits",
+    "maximize",
+    "verify"
+  ],
+  "latency_profile": [
+    "fn",
+    "repeat",
+    "warmup"
+  ],
+  "estimate_density": [
+    "cost",
+    "samples",
+    "rng"
+  ],
+  "_num": [
+    "v"
+  ],
+  "solve_spec": [
+    "spec"
+  ],
+  "Namespace": {
+    "__init__": [
+      "self",
+      "tree"
+    ],
+    "_walk": [
+      "self",
+      "path"
+    ],
+    "ls": [
+      "self",
+      "path"
+    ],
+    "read": [
+      "self",
+      "path"
+    ]
+  },
+  "namespace_of": [
+    "matrix",
+    "maximize"
+  ],
+  "CostSourceRegistry": {
+    "__init__": [
+      "self"
+    ],
+    "mount": [
+      "self",
+      "name",
+      "source",
+      "shape"
+    ],
+    "names": [
+      "self"
+    ],
+    "solve": [
+      "self",
+      "name",
+      "maximize"
+    ]
+  },
+  "RankMaximal": {},
+  "rank_maximal": [
+    "ranks",
+    "cost"
+  ],
+  "components": [
+    "matrix"
+  ],
+  "solve_by_components": [
+    "matrix",
+    "maximize"
+  ],
+  "LazyResult": {
+    "cells_avoided": [
+      "self"
+    ]
+  },
+  "_forbidden": [
+    "v"
+  ],
+  "solve_lazy": [
+    "n",
+    "m",
+    "cost",
+    "candidates",
+    "max_rounds",
+    "allowed",
+    "cost_rows"
+  ],
+  "solve_points": [
+    "x",
+    "y",
+    "k",
+    "squared"
+  ],
+  "CERT_VERSION": [],
+  "_digits": [
+    "n"
+  ],
+  "_frac": [
+    "x"
+  ],
+  "_exact_rows": [
+    "matrix",
+    "maximize"
+  ],
+  "problem_hash": [
+    "matrix",
+    "maximize"
+  ],
+  "Verification": {
+    "__bool__": [
+      "self"
+    ]
+  },
+  "Certificate": {
+    "verify": [
+      "self",
+      "matrix"
+    ],
+    "to_json": [
+      "self"
+    ],
+    "from_json": [
+      "cls",
+      "text"
+    ]
+  },
+  "_orient": [
+    "n",
+    "m",
+    "rows"
+  ],
+  "_check_duals": [
+    "n",
+    "m",
+    "rows",
+    "pairs",
+    "u",
+    "v",
+    "transposed",
+    "maximize",
+    "objective"
+  ],
+  "_padded_duals": [
+    "on",
+    "om",
+    "orows",
+    "mp"
+  ],
+  "certify": [
+    "matrix",
+    "pairs",
+    "maximize"
+  ],
+  "verify_pairs": [
+    "matrix",
+    "pairs",
+    "maximize"
+  ],
+  "CertificateCache": {
+    "__init__": [
+      "self",
+      "maxsize"
+    ],
+    "verify": [
+      "self",
+      "matrix",
+      "pairs",
+      "maximize"
+    ]
+  },
+  "popular_matching": [
+    "prefs"
+  ],
+  "is_popular": [
+    "prefs",
+    "matching"
+  ],
+  "hall_violator": [
+    "matrix"
+  ],
+  "optimum_diameter": [
+    "matrix",
+    "maximize",
+    "limit"
+  ],
+  "vertex_indispensability": [
+    "matrix",
+    "maximize"
+  ],
+  "explain_edge": [
+    "matrix",
+    "i",
+    "j",
+    "maximize"
+  ],
+  "near_optimal": [
+    "matrix",
+    "eps",
+    "maximize",
+    "limit"
+  ],
+  "sample_optimum": [
+    "matrix",
+    "rng",
+    "maximize",
+    "limit"
+  ],
+  "ground_state_marginals": [
+    "matrix",
+    "maximize",
+    "limit"
+  ],
+  "landscape_report": [
+    "matrix",
+    "beta",
+    "maximize"
+  ],
+  "_edges": [
+    "matrix"
+  ],
+  "min_weight_full_bipartite_matching": [
+    "biadjacency_matrix",
+    "maximize"
+  ],
+  "Market": {},
+  "market_equilibrium": [
+    "valuations"
+  ],
+  "is_competitive_equilibrium": [
+    "valuations",
+    "assignment",
+    "prices"
+  ],
+  "scenario_assignment": [
+    "scenarios",
+    "weights"
+  ],
+  "prune_dominated_scenarios": [
+    "scenarios"
+  ],
+  "robust_edges": [
+    "scenarios"
+  ],
+  "Piece": {},
+  "_line": [
+    "a",
+    "b",
+    "pairs"
+  ],
+  "parametric_assignment": [
+    "a",
+    "b",
+    "lo",
+    "hi",
+    "maximize",
+    "max_pieces"
+  ],
+  "optimality_interval": [
+    "a",
+    "b",
+    "pairs",
+    "lo",
+    "hi",
+    "maximize"
+  ],
+  "validate_transform": [
+    "original",
+    "transformed",
+    "constant",
+    "sign",
+    "maximize"
+  ],
+  "validate_passes": [
+    "matrix",
+    "maximize"
+  ],
+  "ProofStep": {},
+  "ProofGraph": {},
+  "_h": [
+    "obj"
+  ],
+  "solve_with_proof": [
+    "matrix",
+    "maximize"
+  ],
+  "verify_proof": [
+    "matrix",
+    "proof"
+  ],
+  "_PRIMES": [],
+  "crt_objective": [
+    "matrix",
+    "pairs",
+    "primes"
+  ],
+  "rational_reconstruct": [
+    "a",
+    "m"
+  ],
+  "select_backend": [
+    "needs"
+  ],
+  "__version__": [],
+  "__author__": [],
+  "__maintainer__": [],
+  "__url__": [],
+  "__copyright__": [],
+  "__license__": [],
+  "enumerate_optima": [
+    "matrix",
+    "maximize",
+    "limit"
+  ],
+  "face_dimension": [
+    "matrix",
+    "maximize",
+    "limit"
+  ],
+  "matching_distance": [
+    "a",
+    "b"
+  ],
+  "most_different_optimum": [
+    "matrix",
+    "reference",
+    "maximize",
+    "limit"
+  ],
+  "canonical_optimum": [
+    "matrix",
+    "maximize"
+  ],
+  "ReducedProblem": {},
+  "reduce_costs": [
+    "matrix"
+  ],
+  "DulmageMendelsohn": {},
+  "dulmage_mendelsohn": [
+    "matrix"
+  ],
+  "_fill_chain": [
+    "i",
+    "c0",
+    "j",
+    "tight",
+    "mp",
+    "mate_r",
+    "v",
+    "on",
+    "om"
+  ],
+  "exchange_cycles": [
+    "matrix",
+    "maximize"
+  ],
+  "DISALLOWED_PRINTVAL": [],
+  "DISALLOWED_OBJ": {
+    "__new__": [
+      "cls"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__reduce__": [
+      "self"
+    ]
+  },
+  "DISALLOWED": [],
+  "_SupportsToList": {
+    "tolist": [
+      "self"
+    ]
+  },
+  "_SupportsToNumpy": {
+    "to_numpy": [
+      "self"
+    ]
+  },
+  "_NUMBER_TYPES": [],
+  "UnsolvableMatrix": {
+    "__init__": [
+      "self",
+      "message",
+      "rows",
+      "cols"
+    ]
+  },
+  "_Infeasible": {
+    "__init__": [
+      "self",
+      "rows",
+      "cols"
+    ]
+  },
+  "_is_forbidden": [
+    "value"
+  ],
+  "_is_nonfinite": [
+    "value"
+  ],
+  "_safe_ratio": [
+    "big",
+    "small"
+  ],
+  "_as_lists": [
+    "matrix"
+  ],
+  "_validated_edges": [
+    "matrix"
+  ],
+  "_solve_raw": [
+    "n",
+    "m",
+    "edges",
+    "events",
+    "duals"
+  ],
+  "_NATIVE_MIN": [],
+  "_needs_exact": [
+    "n",
+    "m",
+    "edges"
+  ],
+  "_solve": [
+    "n",
+    "m",
+    "edges",
+    "events",
+    "duals"
+  ],
+  "_solve_dispatch": [
+    "n",
+    "m",
+    "edges",
+    "events",
+    "duals"
+  ],
+  "Munkres": {
+    "__init__": [
+      "self"
+    ],
+    "pad_matrix": [
+      "self",
+      "matrix",
+      "pad_value"
+    ],
+    "compute": [
+      "self",
+      "cost_matrix"
+    ]
+  },
+  "_explain": [
+    "bad",
+    "left",
+    "right"
+  ],
+  "_assign": [
+    "n_rows",
+    "n_cols",
+    "edges"
+  ],
+  "make_cost_matrix": [
+    "profit_matrix",
+    "inversion_function"
+  ],
+  "print_matrix": [
+    "matrix",
+    "msg"
+  ],
+  "_finite_fractions": [
+    "matrix",
+    "who"
+  ],
+  "_det": [
+    "a"
+  ],
+  "is_totally_unimodular": [
+    "matrix",
+    "max_dim"
+  ],
+  "kronecker_factors": [
+    "matrix"
+  ],
+  "is_toeplitz": [
+    "matrix"
+  ],
+  "is_circulant": [
+    "matrix"
+  ],
+  "_metric_ok": [
+    "d"
+  ],
+  "is_ultrametric": [
+    "dist"
+  ],
+  "is_tree_metric": [
+    "dist"
+  ],
+  "monge_violations": [
+    "matrix"
+  ],
+  "leftmost_row_minima": [
+    "matrix"
+  ],
+  "is_totally_monotone": [
+    "matrix"
+  ],
+  "row_minima_monotone": [
+    "matrix",
+    "check"
+  ],
+  "tropical_rank": [
+    "matrix"
+  ],
+  "Semiring": {},
+  "SEMIRINGS": [],
+  "semiring_permanent": [
+    "matrix",
+    "semiring"
+  ],
+  "DMBlocks": {},
+  "dm_blocks": [
+    "matrix"
+  ],
+  "Prices": {},
+  "shadow_prices": [
+    "matrix"
+  ],
+  "_check_cell": [
+    "matrix",
+    "row",
+    "col"
+  ],
+  "counterfactual": [
+    "matrix",
+    "row",
+    "col"
+  ],
+  "tolerance": [
+    "matrix",
+    "row",
+    "col"
+  ],
+  "k_best": [
+    "matrix",
+    "k"
+  ],
+  "bottleneck": [
+    "matrix"
+  ],
+  "_P": [],
+  "_det_mod": [
+    "m",
+    "p"
+  ],
+  "_square_pattern": [
+    "matrix"
+  ],
+  "has_perfect_matching_algebraic": [
+    "matrix",
+    "rng",
+    "p"
+  ],
+  "algebraic_optimum": [
+    "matrix",
+    "maximize",
+    "rng",
+    "p"
+  ],
+  "permanent": [
+    "matrix"
+  ],
+  "permanent_bounds": [
+    "matrix",
+    "iters"
+  ],
+  "Trace": {
+    "__len__": [
+      "self"
+    ],
+    "_words": [
+      "self"
+    ],
+    "steps": [
+      "self"
+    ],
+    "to_text": [
+      "self"
+    ],
+    "to_html": [
+      "self"
+    ]
+  }
+}
