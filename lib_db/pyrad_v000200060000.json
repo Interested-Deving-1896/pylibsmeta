@@ -1,0 +1,3009 @@
+{
+  "srv": [],
+  "req": [],
+  "ADDRESS": [],
+  "SECRET": [],
+  "ATTRIBUTES": [],
+  "client": [],
+  "attributes": [],
+  "result": [],
+  "FakeServer": {
+    "HandleAuthPacket": [
+      "self",
+      "pkt"
+    ],
+    "HandleAcctPacket": [
+      "self",
+      "pkt"
+    ],
+    "HandleCoaPacket": [
+      "self",
+      "pkt"
+    ],
+    "HandleDisconnectPacket": [
+      "self",
+      "pkt"
+    ]
+  },
+  "SendPacket": [
+    "srv",
+    "req"
+  ],
+  "create_client": [],
+  "create_request": [
+    "client",
+    "user"
+  ],
+  "print_reply": [
+    "reply"
+  ],
+  "test_auth1": [],
+  "test_multi_auth": [],
+  "FakeCoA": {
+    "HandleCoaPacket": [
+      "self",
+      "pkt"
+    ],
+    "HandleDisconnectPacket": [
+      "self",
+      "pkt"
+    ]
+  },
+  "extensions": [],
+  "autoclass_content": [],
+  "autodoc_mock_imports": [],
+  "templates_path": [],
+  "source_suffix": [],
+  "master_doc": [],
+  "project": [],
+  "copyright": [],
+  "author": [],
+  "version": [],
+  "release": [],
+  "language": [],
+  "exclude_patterns": [],
+  "pygments_style": [],
+  "todo_include_todos": [],
+  "html_theme": [],
+  "html_theme_options": [],
+  "html_static_path": [],
+  "html_logo": [],
+  "htmlhelp_basename": [],
+  "latex_elements": [],
+  "latex_documents": [],
+  "man_pages": [],
+  "texinfo_documents": [],
+  "intersphinx_mapping": [],
+  "BiDict": {
+    "__init__": [
+      "self"
+    ],
+    "Add": [
+      "self",
+      "one",
+      "two"
+    ],
+    "__DropBackward": [
+      "self",
+      "one"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "__delitem__": [
+      "self",
+      "key"
+    ],
+    "GetForward": [
+      "self",
+      "key"
+    ],
+    "HasForward": [
+      "self",
+      "key"
+    ],
+    "GetBackward": [
+      "self",
+      "key"
+    ],
+    "HasBackward": [
+      "self",
+      "key"
+    ]
+  },
+  "__docformat__": [],
+  "logger": [],
+  "DATATYPES": [],
+  "UNSUPPORTED_DATATYPES": [],
+  "ATTRIBUTE_FLAGS": [],
+  "ParseError": {
+    "__init__": [
+      "self",
+      "msg"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "Attribute": {
+    "__init__": [
+      "self",
+      "name",
+      "code",
+      "datatype",
+      "is_sub_attribute",
+      "vendor",
+      "values",
+      "encrypt",
+      "has_tag"
+    ]
+  },
+  "Dictionary": {
+    "__init__": [
+      "self",
+      "dict"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "__contains__": [
+      "self",
+      "key"
+    ],
+    "has_key": [],
+    "__SkipAttribute": [
+      "self",
+      "state",
+      "name",
+      "reason"
+    ],
+    "__ParseAttribute": [
+      "self",
+      "state",
+      "tokens"
+    ],
+    "__ParseValue": [
+      "self",
+      "state",
+      "tokens",
+      "defer"
+    ],
+    "__ParseVendor": [
+      "self",
+      "state",
+      "tokens"
+    ],
+    "__ParseBeginVendor": [
+      "self",
+      "state",
+      "tokens"
+    ],
+    "__ParseEndVendor": [
+      "self",
+      "state",
+      "tokens"
+    ],
+    "ReadDictionary": [
+      "self",
+      "file"
+    ]
+  },
+  "PacketError": {},
+  "RADIUS": {
+    "__init__": [
+      "self",
+      "hosts",
+      "dict",
+      "enforce_ma",
+      "enable_pkt_verify"
+    ],
+    "processPacket": [
+      "self",
+      "pkt"
+    ],
+    "createPacket": [
+      "self"
+    ],
+    "_createPacket": [
+      "self"
+    ],
+    "_HostSecret": [
+      "self",
+      "key"
+    ],
+    "_verifyPacket": [
+      "self",
+      "pkt"
+    ],
+    "datagramReceived": [
+      "self",
+      "datagram",
+      "source"
+    ]
+  },
+  "RADIUSAccess": {
+    "createPacket": [
+      "self"
+    ],
+    "processPacket": [
+      "self",
+      "pkt"
+    ]
+  },
+  "RADIUSAccounting": {
+    "createPacket": [
+      "self"
+    ],
+    "processPacket": [
+      "self",
+      "pkt"
+    ]
+  },
+  "_endpoint_options": [],
+  "_is_open": [
+    "protocol"
+  ],
+  "DatagramProtocolClient": {
+    "__init__": [
+      "self",
+      "server",
+      "port",
+      "logger",
+      "client",
+      "retries",
+      "timeout"
+    ],
+    "__timeout_handler__": [
+      "self"
+    ],
+    "send_packet": [
+      "self",
+      "packet",
+      "future"
+    ],
+    "__forget_request__": [
+      "self",
+      "id",
+      "future"
+    ],
+    "connection_made": [
+      "self",
+      "transport"
+    ],
+    "error_received": [
+      "self",
+      "exc"
+    ],
+    "connection_lost": [
+      "self",
+      "exc"
+    ],
+    "datagram_received": [
+      "self",
+      "data",
+      "addr"
+    ],
+    "close_transport": [
+      "self"
+    ],
+    "create_id": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__call__": [
+      "self"
+    ]
+  },
+  "ClientAsync": {
+    "__init__": [
+      "self",
+      "server",
+      "auth_port",
+      "acct_port",
+      "coa_port",
+      "secret",
+      "dict",
+      "loop",
+      "retries",
+      "timeout",
+      "logger_name",
+      "enforce_ma"
+    ],
+    "loop": [
+      "self",
+      "loop"
+    ],
+    "initialize_transports": [
+      "self",
+      "enable_acct",
+      "enable_auth",
+      "enable_coa",
+      "local_addr",
+      "local_auth_port",
+      "local_acct_port",
+      "local_coa_port"
+    ],
+    "deinitialize_transports": [
+      "self",
+      "deinit_coa",
+      "deinit_auth",
+      "deinit_acct"
+    ],
+    "CreateAuthPacket": [
+      "self"
+    ],
+    "CreateAcctPacket": [
+      "self"
+    ],
+    "CreateCoAPacket": [
+      "self"
+    ],
+    "CreatePacket": [
+      "self",
+      "id"
+    ],
+    "SendPacket": [
+      "self",
+      "pkt"
+    ],
+    "_SendEapMd5Packet": [
+      "self",
+      "pkt"
+    ],
+    "_AnswerEapMd5Challenge": [
+      "self",
+      "pkt",
+      "first",
+      "password"
+    ]
+  },
+  "RemoteHost": {
+    "__init__": [
+      "self",
+      "address",
+      "secret",
+      "name",
+      "authport",
+      "acctport",
+      "coaport"
+    ]
+  },
+  "ServerPacketError": {},
+  "CheckMessageAuthenticator": [
+    "pkt",
+    "enforce_ma"
+  ],
+  "_HostAddresses": [
+    "address"
+  ],
+  "_LookupHost": [
+    "hosts",
+    "address"
+  ],
+  "Server": {
+    "MaxPacketSize": [],
+    "__init__": [
+      "self",
+      "addresses",
+      "authport",
+      "acctport",
+      "coaport",
+      "hosts",
+      "dict",
+      "auth_enabled",
+      "acct_enabled",
+      "coa_enabled",
+      "enforce_ma",
+      "enable_pkt_verify"
+    ],
+    "_GetAddrInfo": [
+      "self",
+      "addr"
+    ],
+    "BindToAddress": [
+      "self",
+      "addr"
+    ],
+    "HandleAuthPacket": [
+      "self",
+      "pkt"
+    ],
+    "HandleAcctPacket": [
+      "self",
+      "pkt"
+    ],
+    "HandleCoaPacket": [
+      "self",
+      "pkt"
+    ],
+    "HandleDisconnectPacket": [
+      "self",
+      "pkt"
+    ],
+    "_AddSecret": [
+      "self",
+      "pkt"
+    ],
+    "_HandleAuthPacket": [
+      "self",
+      "pkt"
+    ],
+    "_HandleAcctPacket": [
+      "self",
+      "pkt"
+    ],
+    "_HandleCoaPacket": [
+      "self",
+      "pkt"
+    ],
+    "_GrabPacket": [
+      "self",
+      "pktgen",
+      "fd"
+    ],
+    "_PrepareSockets": [
+      "self"
+    ],
+    "CreateReplyPacket": [
+      "self",
+      "pkt"
+    ],
+    "_ProcessInput": [
+      "self",
+      "fd"
+    ],
+    "Run": [
+      "self"
+    ]
+  },
+  "_IFID_RE": [],
+  "_ETHER_RE": [],
+  "EncodeString": [
+    "value"
+  ],
+  "EncodeOctets": [
+    "value"
+  ],
+  "EncodeAddress": [
+    "addr"
+  ],
+  "EncodeIPv6Address": [
+    "addr"
+  ],
+  "EncodeIPv6Prefix": [
+    "value",
+    "default_prefixlen"
+  ],
+  "EncodeAscendBinary": [
+    "orig_str"
+  ],
+  "_PackInteger": [
+    "num",
+    "format",
+    "datatype"
+  ],
+  "EncodeIfId": [
+    "value"
+  ],
+  "EncodeEther": [
+    "value"
+  ],
+  "EncodeInteger": [
+    "num",
+    "format"
+  ],
+  "EncodeInteger64": [
+    "num",
+    "format"
+  ],
+  "EncodeDate": [
+    "num"
+  ],
+  "DecodeString": [
+    "value"
+  ],
+  "DecodeOctets": [
+    "value"
+  ],
+  "_CheckLength": [
+    "value",
+    "length",
+    "datatype"
+  ],
+  "DecodeAddress": [
+    "addr"
+  ],
+  "DecodeIPv6Prefix": [
+    "addr"
+  ],
+  "DecodeIPv6Address": [
+    "addr"
+  ],
+  "DecodeIfId": [
+    "value"
+  ],
+  "DecodeEther": [
+    "value"
+  ],
+  "DecodeAscendBinary": [
+    "value"
+  ],
+  "DecodeInteger": [
+    "num",
+    "format"
+  ],
+  "DecodeInteger64": [
+    "num",
+    "format"
+  ],
+  "DecodeDate": [
+    "num"
+  ],
+  "EncodeAttr": [
+    "datatype",
+    "value"
+  ],
+  "DecodeAttr": [
+    "datatype",
+    "value"
+  ],
+  "ServerType": {
+    "Auth": [],
+    "Acct": [],
+    "Coa": []
+  },
+  "DatagramProtocolServer": {
+    "__init__": [
+      "self",
+      "ip",
+      "port",
+      "logger",
+      "server",
+      "server_type",
+      "hosts",
+      "request_callback"
+    ],
+    "connection_made": [
+      "self",
+      "transport"
+    ],
+    "connection_lost": [
+      "self",
+      "exc"
+    ],
+    "send_response": [
+      "self",
+      "reply",
+      "addr"
+    ],
+    "datagram_received": [
+      "self",
+      "data",
+      "addr"
+    ],
+    "error_received": [
+      "self",
+      "exc"
+    ],
+    "close_transport": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__call__": [
+      "self"
+    ]
+  },
+  "ServerAsync": {
+    "__init__": [
+      "self",
+      "auth_port",
+      "acct_port",
+      "coa_port",
+      "hosts",
+      "dictionary",
+      "loop",
+      "logger_name",
+      "enable_pkt_verify",
+      "debug",
+      "enforce_ma"
+    ],
+    "__request_handler__": [
+      "self",
+      "protocol",
+      "req",
+      "addr"
+    ],
+    "__is_present_proto__": [
+      "self",
+      "ip",
+      "port"
+    ],
+    "CreateReplyPacket": [
+      "pkt"
+    ],
+    "loop": [
+      "self",
+      "loop"
+    ],
+    "initialize_transports": [
+      "self",
+      "enable_acct",
+      "enable_auth",
+      "enable_coa",
+      "addresses"
+    ],
+    "deinitialize_transports": [
+      "self",
+      "deinit_coa",
+      "deinit_auth",
+      "deinit_acct"
+    ],
+    "handle_auth_packet": [
+      "self",
+      "protocol",
+      "pkt",
+      "addr"
+    ],
+    "handle_acct_packet": [
+      "self",
+      "protocol",
+      "pkt",
+      "addr"
+    ],
+    "handle_coa_packet": [
+      "self",
+      "protocol",
+      "pkt",
+      "addr"
+    ],
+    "handle_disconnect_packet": [
+      "self",
+      "protocol",
+      "pkt",
+      "addr"
+    ]
+  },
+  "random_generator": [],
+  "AccessRequest": [],
+  "AccessAccept": [],
+  "AccessReject": [],
+  "AccountingRequest": [],
+  "AccountingResponse": [],
+  "AccessChallenge": [],
+  "StatusServer": [],
+  "StatusClient": [],
+  "DisconnectRequest": [],
+  "DisconnectACK": [],
+  "DisconnectNAK": [],
+  "CoARequest": [],
+  "CoAACK": [],
+  "CoANAK": [],
+  "CurrentID": [],
+  "Packet": {
+    "__init__": [
+      "self",
+      "code",
+      "id",
+      "secret",
+      "authenticator"
+    ],
+    "add_message_authenticator": [
+      "self"
+    ],
+    "get_message_authenticator": [
+      "self"
+    ],
+    "_set_message_authenticator": [
+      "self",
+      "value"
+    ],
+    "_message_authenticator_vector": [
+      "self",
+      "original_authenticator",
+      "original_code"
+    ],
+    "_refresh_message_authenticator": [
+      "self"
+    ],
+    "_zero_message_authenticator": [
+      "attr"
+    ],
+    "verify_message_authenticator": [
+      "self",
+      "secret",
+      "original_authenticator",
+      "original_code"
+    ],
+    "_PrepareReply": [
+      "self",
+      "reply",
+      "attributes"
+    ],
+    "CreateReply": [
+      "self"
+    ],
+    "_DecodeValue": [
+      "self",
+      "attr",
+      "value"
+    ],
+    "_EncodeValue": [
+      "self",
+      "attr",
+      "value"
+    ],
+    "_EncodeKeyValues": [
+      "self",
+      "key",
+      "values"
+    ],
+    "_SplitTag": [
+      "attr",
+      "value"
+    ],
+    "_EncodeKey": [
+      "self",
+      "key"
+    ],
+    "_DecodeKey": [
+      "self",
+      "key"
+    ],
+    "AddAttribute": [
+      "self",
+      "key",
+      "value"
+    ],
+    "get": [
+      "self",
+      "key",
+      "failobj"
+    ],
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "_GetTlv": [
+      "self",
+      "attr"
+    ],
+    "__contains__": [
+      "self",
+      "key"
+    ],
+    "has_key": [],
+    "__delitem__": [
+      "self",
+      "key"
+    ],
+    "__setitem__": [
+      "self",
+      "key",
+      "item"
+    ],
+    "keys": [
+      "self"
+    ],
+    "CreateAuthenticator": [],
+    "CreateID": [
+      "self"
+    ],
+    "ReplyPacket": [
+      "self"
+    ],
+    "VerifyReply": [
+      "self",
+      "reply",
+      "rawreply",
+      "enforce_ma"
+    ],
+    "_CheckAttributeLength": [
+      "key",
+      "length"
+    ],
+    "_PktEncodeAttribute": [
+      "self",
+      "key",
+      "value"
+    ],
+    "_PktEncodeTlv": [
+      "self",
+      "tlv_key",
+      "tlv_value"
+    ],
+    "_PktEncodeAttributes": [
+      "self"
+    ],
+    "_PktDecodeVendorAttribute": [
+      "self",
+      "data"
+    ],
+    "_PktSplitSubAttributes": [
+      "data",
+      "loc"
+    ],
+    "_PktDecodeTlvAttribute": [
+      "self",
+      "code",
+      "data"
+    ],
+    "_PktIsTlvAttribute": [
+      "self",
+      "code"
+    ],
+    "DecodePacket": [
+      "self",
+      "packet"
+    ],
+    "_salt_vector": [
+      "self"
+    ],
+    "_salt_en_decrypt": [
+      "self",
+      "data",
+      "salt",
+      "encrypt"
+    ],
+    "SaltCrypt": [
+      "self",
+      "value"
+    ],
+    "SaltDecrypt": [
+      "self",
+      "value"
+    ]
+  },
+  "AuthPacket": {
+    "__init__": [
+      "self",
+      "code",
+      "id",
+      "secret",
+      "authenticator",
+      "auth_type"
+    ],
+    "CreateReply": [
+      "self"
+    ],
+    "RequestPacket": [
+      "self"
+    ],
+    "PwDecrypt": [
+      "self",
+      "password"
+    ],
+    "PwCrypt": [
+      "self",
+      "password"
+    ],
+    "VerifyChapPasswd": [
+      "self",
+      "userpwd"
+    ],
+    "VerifyAuthRequest": [
+      "self"
+    ]
+  },
+  "AcctPacket": {
+    "__init__": [
+      "self",
+      "code",
+      "id",
+      "secret",
+      "authenticator"
+    ],
+    "CreateReply": [
+      "self"
+    ],
+    "VerifyAcctRequest": [
+      "self"
+    ],
+    "RequestPacket": [
+      "self"
+    ],
+    "_StatusServerPacket": [
+      "self"
+    ]
+  },
+  "CoAPacket": {
+    "__init__": [
+      "self",
+      "code",
+      "id",
+      "secret",
+      "authenticator"
+    ],
+    "CreateReply": [
+      "self"
+    ],
+    "VerifyCoARequest": [
+      "self"
+    ],
+    "RequestPacket": [
+      "self"
+    ]
+  },
+  "CreateID": [],
+  "EAP_CODE_REQUEST": [],
+  "EAP_CODE_RESPONSE": [],
+  "EAP_TYPE_IDENTITY": [],
+  "EAP_TYPE_MD5": [],
+  "_EapMd5Identity": [
+    "pkt"
+  ],
+  "_EapMd5Response": [
+    "pkt",
+    "reply",
+    "password"
+  ],
+  "Timeout": {},
+  "Client": {
+    "__init__": [
+      "self",
+      "server",
+      "authport",
+      "acctport",
+      "coaport",
+      "secret",
+      "dict",
+      "retries",
+      "timeout",
+      "enforce_ma"
+    ],
+    "bind": [
+      "self",
+      "addr"
+    ],
+    "_SocketOpen": [
+      "self"
+    ],
+    "_CloseSocket": [
+      "self"
+    ],
+    "CreateAuthPacket": [
+      "self"
+    ],
+    "CreateAcctPacket": [
+      "self"
+    ],
+    "CreateCoAPacket": [
+      "self"
+    ],
+    "_UpdateAcctDelayTime": [
+      "self",
+      "pkt"
+    ],
+    "_VerifyReply": [
+      "self",
+      "pkt",
+      "reply",
+      "rawreply",
+      "authenticators"
+    ],
+    "_SendPacket": [
+      "self",
+      "pkt",
+      "port"
+    ],
+    "_SendEapMd5Packet": [
+      "self",
+      "pkt"
+    ],
+    "SendPacket": [
+      "self",
+      "pkt"
+    ]
+  },
+  "_REPLY_CODES": [],
+  "Proxy": {
+    "_PrepareSockets": [
+      "self"
+    ],
+    "_HandleProxyPacket": [
+      "self",
+      "pkt"
+    ],
+    "_ProcessInput": [
+      "self",
+      "fd"
+    ]
+  },
+  "_Node": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "fd",
+      "name",
+      "parentdir",
+      "path"
+    ],
+    "Next": [
+      "self"
+    ]
+  },
+  "DictFile": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "fil"
+    ],
+    "__ReadNode": [
+      "self",
+      "fil",
+      "optional"
+    ],
+    "__CurDir": [
+      "self"
+    ],
+    "__GetInclude": [
+      "self",
+      "line"
+    ],
+    "Line": [
+      "self"
+    ],
+    "File": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__next__": [
+      "self"
+    ]
+  },
+  "Host": {
+    "__init__": [
+      "self",
+      "authport",
+      "acctport",
+      "coaport",
+      "dict"
+    ],
+    "CreatePacket": [
+      "self"
+    ],
+    "CreateAuthPacket": [
+      "self"
+    ],
+    "CreateAcctPacket": [
+      "self"
+    ],
+    "CreateCoAPacket": [
+      "self"
+    ],
+    "SendPacket": [
+      "self",
+      "fd",
+      "pkt"
+    ],
+    "SendReplyPacket": [
+      "self",
+      "fd",
+      "pkt"
+    ]
+  },
+  "__author__": [],
+  "__url__": [],
+  "__copyright__": [],
+  "__version__": [],
+  "__all__": [],
+  "PASSWORD": [],
+  "LOCALHOST": [],
+  "EAP_CHALLENGE": [],
+  "DICTIONARY": [],
+  "free_ports": [
+    "count"
+  ],
+  "without_reuse_port": [],
+  "RadiusServer": {
+    "__init__": [
+      "self"
+    ],
+    "handle_auth_packet": [
+      "self",
+      "protocol",
+      "pkt",
+      "addr"
+    ],
+    "eap_md5_reply": [
+      "self",
+      "pkt"
+    ],
+    "handle_acct_packet": [
+      "self",
+      "protocol",
+      "pkt",
+      "addr"
+    ],
+    "handle_coa_packet": [
+      "self",
+      "protocol",
+      "pkt",
+      "addr"
+    ],
+    "handle_disconnect_packet": [
+      "self",
+      "protocol",
+      "pkt",
+      "addr"
+    ]
+  },
+  "AsyncRoundTripTests": {
+    "setUp": [
+      "self"
+    ],
+    "run_with": [
+      "self",
+      "test",
+      "hosts",
+      "client_secret"
+    ],
+    "auth_request": [
+      "self",
+      "client",
+      "password"
+    ],
+    "testAccessAccept": [
+      "self"
+    ],
+    "eap_md5_request": [
+      "self",
+      "client",
+      "password"
+    ],
+    "testEapMd5": [
+      "self"
+    ],
+    "testEapMd5WithoutChallenge": [
+      "self"
+    ],
+    "testEapMd5LongIdentity": [
+      "self"
+    ],
+    "testEapMd5WrongPassword": [
+      "self"
+    ],
+    "testEapMd5WithoutPassword": [
+      "self"
+    ],
+    "testEapMd5Cancelled": [
+      "self"
+    ],
+    "testAccessReject": [
+      "self"
+    ],
+    "testAccounting": [
+      "self"
+    ],
+    "testCoA": [
+      "self"
+    ],
+    "testDisconnect": [
+      "self"
+    ],
+    "testPacketVerificationFailure": [
+      "self"
+    ],
+    "testPacketVerificationDisabled": [
+      "self"
+    ],
+    "testUnknownHost": [
+      "self"
+    ],
+    "testTransportsAreNotBoundTwice": [
+      "self"
+    ]
+  },
+  "AsyncClientTests": {
+    "setUp": [
+      "self"
+    ],
+    "tearDown": [
+      "self"
+    ],
+    "testNoTransportsSelected": [
+      "self"
+    ],
+    "testTransportNotInitialized": [
+      "self"
+    ],
+    "testCloseTransportCancelsRetryTask": [
+      "self"
+    ],
+    "testEapMd5TransportNotInitialized": [
+      "self"
+    ],
+    "testEapMd5SendFails": [
+      "self"
+    ],
+    "testLoopOutsideRunningLoop": [
+      "self"
+    ],
+    "testCreateAuthPacketDecodesMessageAuthenticator": [
+      "self"
+    ],
+    "testUnsupportedPacket": [
+      "self"
+    ],
+    "testCreatePacket": [
+      "self"
+    ],
+    "testPacketIdOfPendingRequestIsSkipped": [
+      "self"
+    ],
+    "testAllPacketIdsPending": [
+      "self"
+    ],
+    "testInvalidReplies": [
+      "self"
+    ],
+    "testDefaultLoop": [
+      "self"
+    ],
+    "testLoopResolvedWhenUsed": [
+      "self"
+    ],
+    "testDuplicatePacketId": [
+      "self"
+    ],
+    "testLocalAddress": [
+      "self"
+    ],
+    "testLocalAddressWithoutPort": [
+      "self"
+    ],
+    "testWithoutReusePort": [
+      "self"
+    ],
+    "testInitializeFailureCanBeRetried": [
+      "self"
+    ],
+    "testInitializeCancelledAfterConnectionMade": [
+      "self"
+    ],
+    "testRetryTimeout": [
+      "self"
+    ],
+    "mock_protocol": [
+      "self",
+      "timeout",
+      "retries"
+    ],
+    "run_with_clock_step": [
+      "self",
+      "step",
+      "timeout"
+    ],
+    "testClockStepBackwards": [
+      "self"
+    ],
+    "testClockStepForwards": [
+      "self"
+    ],
+    "testCancelledRequest": [
+      "self"
+    ],
+    "testReplyForCancelledRequest": [
+      "self"
+    ],
+    "testEncodeErrorIsNotPending": [
+      "self"
+    ],
+    "testRetrySendError": [
+      "self"
+    ],
+    "testCloseTransportFailsPendingRequests": [
+      "self"
+    ],
+    "testProtocol": [
+      "self"
+    ]
+  },
+  "AsyncServerProtocolTests": {
+    "setUp": [
+      "self"
+    ],
+    "receive": [
+      "self",
+      "server_type",
+      "pkt",
+      "source"
+    ],
+    "testDefaultHost": [
+      "self"
+    ],
+    "testMappedAddress": [
+      "self"
+    ],
+    "testGarbage": [
+      "self"
+    ],
+    "testResponsePacket": [
+      "self"
+    ],
+    "testWrongPort": [
+      "self"
+    ],
+    "testInvalidCoARequest": [
+      "self"
+    ],
+    "testProtocol": [
+      "self"
+    ]
+  },
+  "AsyncServerTests": {
+    "testLoopOutsideRunningLoop": [
+      "self"
+    ],
+    "testNoTransportsSelected": [
+      "self"
+    ],
+    "testRequestHandlerErrors": [
+      "self"
+    ],
+    "testLoopResolvedWhenUsed": [
+      "self"
+    ],
+    "testDefaultLoopAndAddress": [
+      "self"
+    ],
+    "testWithoutReusePort": [
+      "self"
+    ],
+    "testInitializeCancelledAfterConnectionMade": [
+      "self"
+    ],
+    "testInitializeFailureCanBeRetried": [
+      "self"
+    ]
+  },
+  "TrivialObject": {},
+  "SocketTests": {
+    "setUp": [
+      "self"
+    ],
+    "tearDown": [
+      "self"
+    ],
+    "testProxyFd": [
+      "self"
+    ]
+  },
+  "ProxyPacketHandlingTests": {
+    "setUp": [
+      "self"
+    ],
+    "testHandleProxyPacketUnknownHost": [
+      "self"
+    ],
+    "testHandleProxyPacketSetsSecret": [
+      "self"
+    ],
+    "testHandleProxyPacketMappedAddress": [
+      "self"
+    ],
+    "testHandleProxyPacketHandlesWrongPacket": [
+      "self"
+    ],
+    "testHandleProxyPacketRejectsRequests": [
+      "self"
+    ],
+    "testHandleProxyPacketAcceptsAllReplies": [
+      "self"
+    ]
+  },
+  "OtherTests": {
+    "setUp": [
+      "self"
+    ],
+    "tearDown": [
+      "self"
+    ],
+    "testProcessInputNonProxyPort": [
+      "self"
+    ],
+    "testProcessInput": [
+      "self"
+    ]
+  },
+  "BIND_IP": [],
+  "BIND_PORT": [],
+  "ACCT_DICTIONARY": [],
+  "EAP_DICTIONARY": [],
+  "ConstructionTests": {
+    "setUp": [
+      "self"
+    ],
+    "testSimpleConstruction": [
+      "self"
+    ],
+    "testParameterOrder": [
+      "self"
+    ],
+    "testNamedParameters": [
+      "self"
+    ]
+  },
+  "EapMd5Tests": {
+    "challenge": [],
+    "setUp": [
+      "self"
+    ],
+    "fakeSendPacket": [
+      "self",
+      "pkt",
+      "port"
+    ],
+    "reply": [
+      "self",
+      "code",
+      "attributes"
+    ],
+    "send": [
+      "self",
+      "attributes"
+    ],
+    "eapRequest": [
+      "self",
+      "eap_id",
+      "name"
+    ],
+    "testIdentity": [
+      "self"
+    ],
+    "testLongIdentity": [
+      "self"
+    ],
+    "testChallenge": [
+      "self"
+    ],
+    "testUserPasswordIsRestored": [
+      "self"
+    ],
+    "testChallengeWithName": [
+      "self"
+    ],
+    "testChallengeSplitOverEapMessages": [
+      "self"
+    ],
+    "testChallengeWithoutState": [
+      "self"
+    ],
+    "testOtherChallengeIsReturned": [
+      "self"
+    ],
+    "testMissingUserNameOrPassword": [
+      "self"
+    ],
+    "testChallengeNewIdAndAuthenticator": [
+      "self"
+    ],
+    "testChallengeIgnoredForPap": [
+      "self"
+    ]
+  },
+  "LoopbackTests": {
+    "setUp": [
+      "self"
+    ],
+    "tearDown": [
+      "self"
+    ],
+    "testClockStepBackwards": [
+      "self"
+    ],
+    "testAccountDelayUndefined": [
+      "self"
+    ],
+    "testLateReplyToEarlierAttempt": [
+      "self"
+    ],
+    "testAuthWithoutDictionary": [
+      "self"
+    ]
+  },
+  "EncodingTests": {
+    "testStringEncoding": [
+      "self"
+    ],
+    "testInvalidStringEncodingRaisesTypeError": [
+      "self"
+    ],
+    "testAddressEncoding": [
+      "self"
+    ],
+    "testInvalidAddressEncodingRaisesTypeError": [
+      "self"
+    ],
+    "testIPv6AddressEncodingRaisesValueError": [
+      "self"
+    ],
+    "testIntegerEncoding": [
+      "self"
+    ],
+    "testInteger64Encoding": [
+      "self"
+    ],
+    "testUnsignedIntegerEncoding": [
+      "self"
+    ],
+    "testInvalidIntegerEncodingRaisesTypeError": [
+      "self"
+    ],
+    "testDateEncoding": [
+      "self"
+    ],
+    "testInvalidDataEncodingRaisesTypeError": [
+      "self"
+    ],
+    "testEncodeAscendBinary": [
+      "self"
+    ],
+    "testStringDecoding": [
+      "self"
+    ],
+    "testStringDecodingOfStr": [
+      "self"
+    ],
+    "testStringDecodingInvalidUtf8ReturnsBytes": [
+      "self"
+    ],
+    "testAddressDecoding": [
+      "self"
+    ],
+    "testIntegerDecoding": [
+      "self"
+    ],
+    "testInteger64Decoding": [
+      "self"
+    ],
+    "testDateDecoding": [
+      "self"
+    ],
+    "testOctetsEncoding": [
+      "self"
+    ],
+    "testUnknownTypeEncoding": [
+      "self"
+    ],
+    "testUnknownTypeDecoding": [
+      "self"
+    ],
+    "testEncodeFunction": [
+      "self"
+    ],
+    "testDecodeFunction": [
+      "self"
+    ]
+  },
+  "DecodeLengthTests": {
+    "testFixedLengthTypes": [
+      "self"
+    ],
+    "testIPv6Address": [
+      "self"
+    ],
+    "testIPv6Prefix": [
+      "self"
+    ]
+  },
+  "OctetsEncodingTests": {
+    "testNone": [
+      "self"
+    ],
+    "testBytes": [
+      "self"
+    ],
+    "testHexBytes": [
+      "self"
+    ],
+    "testBinaryBytesStartingWithHexPrefix": [
+      "self"
+    ],
+    "testHexString": [
+      "self"
+    ],
+    "testDecimalString": [
+      "self"
+    ],
+    "testString": [
+      "self"
+    ],
+    "testTooLong": [
+      "self"
+    ],
+    "testInvalidType": [
+      "self"
+    ]
+  },
+  "StringEncodingTests": {
+    "testNone": [
+      "self"
+    ],
+    "testBytes": [
+      "self"
+    ],
+    "testLengthInOctets": [
+      "self"
+    ]
+  },
+  "IPv6EncodingTests": {
+    "ADDRESS": [],
+    "testAddress": [
+      "self"
+    ],
+    "testDecodeAddress": [
+      "self"
+    ],
+    "testPrefix": [
+      "self"
+    ],
+    "testNetaddrPrefix": [
+      "self"
+    ],
+    "testPrefixWithoutLength": [
+      "self"
+    ],
+    "testInvalidPrefix": [
+      "self"
+    ],
+    "testDecodePrefix": [
+      "self"
+    ]
+  },
+  "AscendBinaryTests": {
+    "testDelete": [
+      "self"
+    ],
+    "testIPv4Filter": [
+      "self"
+    ],
+    "testIPv6Filter": [
+      "self"
+    ],
+    "testFilterLength": [
+      "self"
+    ],
+    "testFamilyMismatch": [
+      "self"
+    ],
+    "testWhitespace": [
+      "self"
+    ],
+    "testDecode": [
+      "self"
+    ]
+  },
+  "IntegerEncodingTests": {
+    "testInvalidInteger64": [
+      "self"
+    ],
+    "testIntegerFromString": [
+      "self"
+    ],
+    "RANGES": [],
+    "testRangeLimits": [
+      "self"
+    ],
+    "testOutOfRangeRaisesValueError": [
+      "self"
+    ],
+    "testOutOfRangeDirect": [
+      "self"
+    ]
+  },
+  "InterfaceIdTests": {
+    "VALUE": [],
+    "testEncode": [
+      "self"
+    ],
+    "testEncodeInvalid": [
+      "self"
+    ],
+    "testDecode": [
+      "self"
+    ]
+  },
+  "EthernetTests": {
+    "VALUE": [],
+    "testEncode": [
+      "self"
+    ],
+    "testEncodeInvalid": [
+      "self"
+    ],
+    "testDecode": [
+      "self"
+    ]
+  },
+  "DispatchTests": {
+    "VALUES": [],
+    "testRoundTrip": [
+      "self"
+    ],
+    "testAscendBinary": [
+      "self"
+    ]
+  },
+  "BiDictTests": {
+    "setUp": [
+      "self"
+    ],
+    "testStartEmpty": [
+      "self"
+    ],
+    "testLength": [
+      "self"
+    ],
+    "testDeletion": [
+      "self"
+    ],
+    "testBackwardDeletion": [
+      "self"
+    ],
+    "testForwardAccess": [
+      "self"
+    ],
+    "testBackwardAccess": [
+      "self"
+    ],
+    "testItemAccessor": [
+      "self"
+    ],
+    "testRedefinedKey": [
+      "self"
+    ],
+    "testRedefinedKeyKeepsAlias": [
+      "self"
+    ],
+    "testAliasDeletion": [
+      "self"
+    ],
+    "testBackwardDeletionRemovesAliases": [
+      "self"
+    ]
+  },
+  "AttributeTests": {
+    "testInvalidDataType": [
+      "self"
+    ],
+    "testConstructionParameters": [
+      "self"
+    ],
+    "testNamedConstructionParameters": [
+      "self"
+    ],
+    "testValues": [
+      "self"
+    ]
+  },
+  "DictionaryInterfaceTests": {
+    "testEmptyDictionary": [
+      "self"
+    ],
+    "testContainment": [
+      "self"
+    ],
+    "testReadonlyContainer": [
+      "self"
+    ]
+  },
+  "DictionaryParsingTests": {
+    "simple_dict_values": [],
+    "setUp": [
+      "self"
+    ],
+    "testParseEmptyDictionary": [
+      "self"
+    ],
+    "testParseMultipleDictionaries": [
+      "self"
+    ],
+    "testParseSimpleDictionary": [
+      "self"
+    ],
+    "testAttributeTooFewColumnsError": [
+      "self"
+    ],
+    "testAttributeTooFewColumnsErrorHasFile": [
+      "self"
+    ],
+    "testAttributeUnknownTypeError": [
+      "self"
+    ],
+    "testAttributeUnknownVendorError": [
+      "self"
+    ],
+    "testAttributeConcatFlag": [
+      "self"
+    ],
+    "testNestedTlvIsSkipped": [
+      "self"
+    ],
+    "testSubTlvIsSkipped": [
+      "self"
+    ],
+    "testSkippedCodeKeepsTopLevelAttribute": [
+      "self"
+    ],
+    "testSubAttributeOfUnknownTlvError": [
+      "self"
+    ],
+    "testSubAttributeOfTlvOfOtherVendor": [
+      "self"
+    ],
+    "testSubAttributeOfTlvInOtherFile": [
+      "self"
+    ],
+    "testSubAttributeOfSkippedAttributeInOtherFile": [
+      "self"
+    ],
+    "testRedefinedSkippedAttributeAsTlv": [
+      "self"
+    ],
+    "testAttributeFreeRadiusFlags": [
+      "self"
+    ],
+    "testAttributeArrayIsSkipped": [
+      "self"
+    ],
+    "testAttributeVendorNamedLikeFlag": [
+      "self"
+    ],
+    "testUnsupportedDataTypeIsSkipped": [
+      "self"
+    ],
+    "testParseFreeRadiusDictionary": [
+      "self"
+    ],
+    "testAttributeOptions": [
+      "self"
+    ],
+    "testAttributeEncryptionError": [
+      "self"
+    ],
+    "testValueTooFewColumnsError": [
+      "self"
+    ],
+    "testValueForUnknownAttributeIsIgnored": [
+      "self"
+    ],
+    "testIntegerValueParsing": [
+      "self"
+    ],
+    "testDateValueParsing": [
+      "self"
+    ],
+    "testIllegalValueError": [
+      "self"
+    ],
+    "testIllegalAttributeCodeError": [
+      "self"
+    ],
+    "testIllegalVendorCodeError": [
+      "self"
+    ],
+    "testInteger64ValueParsing": [
+      "self"
+    ],
+    "testStringValueParsing": [
+      "self"
+    ],
+    "testOctetValueParsing": [
+      "self"
+    ],
+    "testTlvParsing": [
+      "self"
+    ],
+    "testSubTlvParsing": [
+      "self"
+    ],
+    "testVenderTooFewColumnsError": [
+      "self"
+    ],
+    "testVendorParsing": [
+      "self"
+    ],
+    "testVendorOptionError": [
+      "self"
+    ],
+    "testVendorFormatError": [
+      "self"
+    ],
+    "testVendorFormatIsSkipped": [
+      "self"
+    ],
+    "testVendorFormatSyntaxError": [
+      "self"
+    ],
+    "testBeginVendorTooFewColumns": [
+      "self"
+    ],
+    "testBeginVendorUnknownVendor": [
+      "self"
+    ],
+    "testBeginVendorOptionError": [
+      "self"
+    ],
+    "testBeginVendorFormatIsSkipped": [
+      "self"
+    ],
+    "testBeginVendorParsing": [
+      "self"
+    ],
+    "testEndVendorUnknownVendor": [
+      "self"
+    ],
+    "testEndVendorUnbalanced": [
+      "self"
+    ],
+    "testEndVendorParsing": [
+      "self"
+    ],
+    "testInclude": [
+      "self"
+    ],
+    "testDictFilePostParse": [
+      "self"
+    ],
+    "testDictFileParseError": [
+      "self"
+    ]
+  },
+  "DictFileIncludeTests": {
+    "setUp": [
+      "self"
+    ],
+    "write": [
+      "self",
+      "name",
+      "content"
+    ],
+    "testSelfInclude": [
+      "self"
+    ],
+    "testCyclicInclude": [
+      "self"
+    ],
+    "testIncludeTwice": [
+      "self"
+    ],
+    "testOptionalInclude": [
+      "self"
+    ],
+    "testIncludeMissingFile": [
+      "self"
+    ]
+  },
+  "load_curved": [],
+  "CurvedTests": {
+    "setUp": [
+      "self"
+    ],
+    "receive": [
+      "self",
+      "protocol",
+      "pkt",
+      "host"
+    ],
+    "testConstruction": [
+      "self"
+    ],
+    "testCreatePacket": [
+      "self"
+    ],
+    "testAccessRequest": [
+      "self"
+    ],
+    "testAccountingRequest": [
+      "self"
+    ],
+    "testWrongPacketType": [
+      "self"
+    ],
+    "testInvalidPacket": [
+      "self"
+    ],
+    "testUnknownHost": [
+      "self"
+    ],
+    "handlerRaises": [
+      "self",
+      "error"
+    ],
+    "testHandlerRaisingCurvedPacketError": [
+      "self"
+    ],
+    "testHandlerRaisingPyradPacketError": [
+      "self"
+    ],
+    "testHandlerRaisingServerPacketError": [
+      "self"
+    ],
+    "testHandlerRaisingOtherError": [
+      "self"
+    ],
+    "testDecodeRaisingOtherError": [
+      "self"
+    ],
+    "received": [
+      "self",
+      "protocol",
+      "pkt",
+      "host"
+    ],
+    "testDefaultArguments": [
+      "self"
+    ],
+    "testCreatePacketReturnsPacket": [
+      "self"
+    ],
+    "testAccessRequestIsDecodedWithSecret": [
+      "self"
+    ],
+    "testAccountingRequestIsDecodedWithSecret": [
+      "self"
+    ],
+    "testInvalidAccountingRequest": [
+      "self"
+    ],
+    "testAccountingVerificationDisabled": [
+      "self"
+    ],
+    "testMappedAddress": [
+      "self"
+    ],
+    "testBaseClassUsesGenericPacket": [
+      "self"
+    ],
+    "testCreatePacketReturningNone": [
+      "self"
+    ],
+    "testHostsMappingToSecrets": [
+      "self"
+    ],
+    "testHostsWithoutSecret": [
+      "self"
+    ],
+    "testIPv6Source": [
+      "self"
+    ]
+  },
+  "UtilityTests": {
+    "testGenerateID": [
+      "self"
+    ]
+  },
+  "PacketConstructionTests": {
+    "klass": [],
+    "setUp": [
+      "self"
+    ],
+    "testBasicConstructor": [
+      "self"
+    ],
+    "testNamedConstructor": [
+      "self"
+    ],
+    "testConstructWithDictionary": [
+      "self"
+    ],
+    "testConstructorIgnoredParameters": [
+      "self"
+    ],
+    "testSecretMustBeBytestring": [
+      "self"
+    ],
+    "testConstructorWithAttributes": [
+      "self"
+    ],
+    "testConstructorWithTlvAttribute": [
+      "self"
+    ]
+  },
+  "PacketTests": {
+    "setUp": [
+      "self"
+    ],
+    "_create_reply_with_duplicate_attributes": [
+      "self",
+      "request"
+    ],
+    "_get_attribute_bytes": [
+      "self",
+      "attr_name",
+      "value"
+    ],
+    "testCreateReply": [
+      "self"
+    ],
+    "testAttributeAccess": [
+      "self"
+    ],
+    "testAttributeValueAccess": [
+      "self"
+    ],
+    "testVendorAttributeAccess": [
+      "self"
+    ],
+    "testRawAttributeAccess": [
+      "self"
+    ],
+    "testEncryptedAttributes": [
+      "self"
+    ],
+    "testSaltCryptRoundTrip": [
+      "self"
+    ],
+    "testHasKey": [
+      "self"
+    ],
+    "testHasKeyWithUnknownKey": [
+      "self"
+    ],
+    "testDelItem": [
+      "self"
+    ],
+    "testKeys": [
+      "self"
+    ],
+    "testCreateAuthenticator": [
+      "self"
+    ],
+    "testGenerateID": [
+      "self"
+    ],
+    "testReplyPacket": [
+      "self"
+    ],
+    "testVerifyReply": [
+      "self"
+    ],
+    "testVerifyReplyDuplicateAttributes": [
+      "self"
+    ],
+    "testVerifyMessageAuthenticator": [
+      "self"
+    ],
+    "testVerifyMessageAuthenticatorDuplicateAttributes": [
+      "self"
+    ],
+    "testPktEncodeAttribute": [
+      "self"
+    ],
+    "testPktEncodeTlvAttribute": [
+      "self"
+    ],
+    "testPktEncodeLongTlvAttribute": [
+      "self"
+    ],
+    "testPktEncodeAttributes": [
+      "self"
+    ],
+    "testPktDecodeVendorAttribute": [
+      "self"
+    ],
+    "testPktDecodeTlvAttribute": [
+      "self"
+    ],
+    "testDecodePacketWithEmptyPacket": [
+      "self"
+    ],
+    "testDecodePacketWithInvalidLength": [
+      "self"
+    ],
+    "testDecodePacketShorterThanLength": [
+      "self"
+    ],
+    "testDecodePacketWithPadding": [
+      "self"
+    ],
+    "testConstructWithPaddedPacket": [
+      "self"
+    ],
+    "testVerifyReplyDecodedWithoutRawReply": [
+      "self"
+    ],
+    "testVerifyReplyDecodedWithoutRawReplyTampered": [
+      "self"
+    ],
+    "testVerifyReplyWithPadding": [
+      "self"
+    ],
+    "testDecodePacketWithTooBigPacket": [
+      "self"
+    ],
+    "testDecodePacketWithPartialAttributes": [
+      "self"
+    ],
+    "testDecodePacketWithoutAttributes": [
+      "self"
+    ],
+    "testDecodePacketWithBadAttribute": [
+      "self"
+    ],
+    "testDecodePacketWithEmptyAttribute": [
+      "self"
+    ],
+    "testDecodePacketWithAttribute": [
+      "self"
+    ],
+    "testDecodePacketWithTlvAttribute": [
+      "self"
+    ],
+    "testDecodePacketWithVendorTlvAttribute": [
+      "self"
+    ],
+    "testDecodePacketWithTlvAttributeWith2SubAttributes": [
+      "self"
+    ],
+    "testDecodePacketWithSplitTlvAttribute": [
+      "self"
+    ],
+    "testDecodePacketWithMultiValuedAttribute": [
+      "self"
+    ],
+    "testDecodePacketWithTwoAttributes": [
+      "self"
+    ],
+    "testDecodePacketWithVendorAttribute": [
+      "self"
+    ],
+    "testEncodeKeyValues": [
+      "self"
+    ],
+    "testEncodeKey": [
+      "self"
+    ],
+    "testAddAttribute": [
+      "self"
+    ],
+    "testAddAttributeWithNonStringKey": [
+      "self"
+    ]
+  },
+  "DecodeTimeout": {},
+  "MalformedAttributeDecodeTests": {
+    "setUp": [
+      "self"
+    ],
+    "tearDown": [
+      "self"
+    ],
+    "_raw": [
+      "attributes"
+    ],
+    "testVendorAttributeWithZeroLength": [
+      "self"
+    ],
+    "testVendorAttributeWithZeroLengthSecondSubAttribute": [
+      "self"
+    ],
+    "testVendorAttributeWithTooLongSubAttribute": [
+      "self"
+    ],
+    "testTlvAttributeWithZeroLength": [
+      "self"
+    ],
+    "testTlvAttributeWithTruncatedSubAttribute": [
+      "self"
+    ],
+    "testTlvAttributeWithTooLongSubAttribute": [
+      "self"
+    ],
+    "testVendorTlvAttributeWithZeroLength": [
+      "self"
+    ],
+    "testIntegerAttributeWithWrongLength": [
+      "self"
+    ]
+  },
+  "AuthPacketConstructionTests": {
+    "klass": [],
+    "testConstructorDefaults": [
+      "self"
+    ]
+  },
+  "AuthPacketTests": {
+    "setUp": [
+      "self"
+    ],
+    "testCreateReply": [
+      "self"
+    ],
+    "testRequestPacket": [
+      "self"
+    ],
+    "testRequestPacketCreatesAuthenticator": [
+      "self"
+    ],
+    "testRequestPacketCreatesID": [
+      "self"
+    ],
+    "testPwCryptEmptyPassword": [
+      "self"
+    ],
+    "testPwCryptMaximumLength": [
+      "self"
+    ],
+    "testPwCryptTooLong": [
+      "self"
+    ],
+    "testPwCryptPassword": [
+      "self"
+    ],
+    "testPwCryptSetsAuthenticator": [
+      "self"
+    ],
+    "testPwDecryptEmptyPassword": [
+      "self"
+    ],
+    "testPwDecryptPassword": [
+      "self"
+    ],
+    "testPwDecryptNamedAttribute": [
+      "self"
+    ],
+    "testPwDecryptUtf8String": [
+      "self"
+    ]
+  },
+  "AuthPacketChapTests": {
+    "setUp": [
+      "self"
+    ],
+    "testVerifyChapPasswd": [
+      "self"
+    ],
+    "testVerifyChapPasswdWithoutChapPassword": [
+      "self"
+    ],
+    "testVerifyChapPasswdWrongPassword": [
+      "self"
+    ],
+    "testVerifyChapPasswdUsesConstantTimeComparison": [
+      "self"
+    ]
+  },
+  "AcctPacketConstructionTests": {
+    "klass": [],
+    "testConstructorDefaults": [
+      "self"
+    ],
+    "testConstructorRawPacket": [
+      "self"
+    ]
+  },
+  "AcctPacketTests": {
+    "setUp": [
+      "self"
+    ],
+    "testCreateReply": [
+      "self"
+    ],
+    "testVerifyAcctRequest": [
+      "self"
+    ],
+    "testVerifyAcctRequestWithPadding": [
+      "self"
+    ],
+    "testRequestPacket": [
+      "self"
+    ],
+    "testRequestPacketSetsId": [
+      "self"
+    ],
+    "testRealisticUnknownAttributes": [
+      "self"
+    ]
+  },
+  "PacketEdgeCaseTests": {
+    "setUp": [
+      "self"
+    ],
+    "testAuthenticatorMustBeBytes": [
+      "self"
+    ],
+    "testAddMessageAuthenticatorCreatesIdAndAuthenticator": [
+      "self"
+    ],
+    "testMessageAuthenticatorWithoutAuthenticator": [
+      "self"
+    ],
+    "testVerifyMessageAuthenticatorErrors": [
+      "self"
+    ],
+    "testTaggedAttributes": [
+      "self"
+    ],
+    "tagged_dictionary": [
+      "self"
+    ],
+    "testTaggedAttributesRoundTrip": [
+      "self"
+    ],
+    "testUntaggedAttributes": [
+      "self"
+    ],
+    "testUntaggedValueLookingLikeTag": [
+      "self"
+    ],
+    "testUntaggedTunnelPasswordWithoutTag": [
+      "self"
+    ],
+    "testInvalidTag": [
+      "self"
+    ],
+    "testInvalidSaltEncryptedValue": [
+      "self"
+    ],
+    "testGetDefault": [
+      "self"
+    ],
+    "testTlvAttributeRoundTrip": [
+      "self"
+    ],
+    "testSetItemTlvSubAttribute": [
+      "self"
+    ],
+    "testTlvSubAttributeAccess": [
+      "self"
+    ],
+    "testTlvSubAttributeOfRawTlv": [
+      "self"
+    ],
+    "testVendorTlvSubAttributeAccess": [
+      "self"
+    ],
+    "testSetItemVendorTlvSubAttribute": [
+      "self"
+    ],
+    "testEapMd5MessageAuthenticator": [
+      "self"
+    ],
+    "testPwDecryptBytearray": [
+      "self"
+    ],
+    "testSaltCryptString": [
+      "self"
+    ],
+    "testVerifyChapPasswdInvalidLength": [
+      "self"
+    ],
+    "testRequestPacketCreatesId": [
+      "self"
+    ],
+    "testZeroMessageAuthenticator": [
+      "self"
+    ],
+    "testVendorAttributeWithMultipleSubAttributes": [
+      "self"
+    ],
+    "_decode": [
+      "self",
+      "attributes",
+      "code"
+    ],
+    "testVendorTlvAfterOtherSubAttribute": [
+      "self"
+    ],
+    "testVendorTlvInSeveralVendorAttributes": [
+      "self"
+    ],
+    "testEmptyTlv": [
+      "self"
+    ],
+    "testTlvUndefinedSubAttribute": [
+      "self"
+    ],
+    "testVerifyReplyWithEmptyTlv": [
+      "self"
+    ],
+    "testPwDecryptInvalidLength": [
+      "self"
+    ],
+    "testCreateReplyWithoutDictionary": [
+      "self"
+    ],
+    "testCoAReplyCodes": [
+      "self"
+    ],
+    "testDictionaryOfSubclass": [
+      "self"
+    ],
+    "testVendorAttributeWithoutDictionary": [
+      "self"
+    ],
+    "testSaltCryptWithoutAuthenticator": [
+      "self"
+    ],
+    "testSaltCryptRequestUsesZeroVector": [
+      "self"
+    ],
+    "testSaltCryptRequestRoundTrip": [
+      "self"
+    ],
+    "testSaltCryptAccessRequestAuthenticator": [
+      "self"
+    ],
+    "testVerifyAuthRequest": [
+      "self"
+    ],
+    "testAcctRequestPacketWithMessageAuthenticator": [
+      "self"
+    ],
+    "testEncodeAttributeTooLong": [
+      "self"
+    ],
+    "testEncodeVendorAttributeTooLong": [
+      "self"
+    ],
+    "testEncodeTlvAttributeTooLong": [
+      "self"
+    ],
+    "testEncodeVendorTlvAttributeTooLong": [
+      "self"
+    ],
+    "testSaltCryptTooLong": [
+      "self"
+    ],
+    "testTunnelPasswordTooLong": [
+      "self"
+    ]
+  },
+  "RoundTripTests": {
+    "setUp": [
+      "self"
+    ],
+    "tearDown": [
+      "self"
+    ],
+    "send": [
+      "self",
+      "pkt",
+      "fds"
+    ],
+    "testAuth": [
+      "self"
+    ],
+    "testAcct": [
+      "self"
+    ],
+    "testCoA": [
+      "self"
+    ],
+    "testDisconnect": [
+      "self"
+    ],
+    "testInvalidReply": [
+      "self"
+    ]
+  },
+  "RemoteHostTests": {
+    "testSimpleConstruction": [
+      "self"
+    ],
+    "testNamedConstruction": [
+      "self"
+    ]
+  },
+  "ServerConstructiontests": {
+    "testSimpleConstruction": [
+      "self"
+    ],
+    "testParameterOrder": [
+      "self"
+    ],
+    "testBindDuringConstruction": [
+      "self"
+    ]
+  },
+  "AuthPacketHandlingTests": {
+    "setUp": [
+      "self"
+    ],
+    "testHandleAuthPacketUnknownHost": [
+      "self"
+    ],
+    "testHandleAuthPacketWrongPort": [
+      "self"
+    ],
+    "testHandleAuthPacket": [
+      "self"
+    ]
+  },
+  "AcctPacketHandlingTests": {
+    "setUp": [
+      "self"
+    ],
+    "testHandleAcctPacketUnknownHost": [
+      "self"
+    ],
+    "testHandleAcctPacketWrongPort": [
+      "self"
+    ],
+    "testHandleAcctPacket": [
+      "self"
+    ]
+  },
+  "CoaPacketHandlingTests": {
+    "setUp": [
+      "self"
+    ],
+    "testHandleCoaPacket": [
+      "self"
+    ],
+    "testHandleDisconnectPacket": [
+      "self"
+    ],
+    "testHandleCoaPacketWrongPort": [
+      "self"
+    ]
+  },
+  "PacketVerificationTests": {
+    "setUp": [
+      "self"
+    ],
+    "receive": [
+      "self",
+      "handler",
+      "create",
+      "req"
+    ],
+    "acct": [
+      "self",
+      "req"
+    ],
+    "coa": [
+      "self",
+      "req"
+    ],
+    "testValidRequests": [
+      "self"
+    ],
+    "testInvalidAcctRequest": [
+      "self"
+    ],
+    "testInvalidCoARequest": [
+      "self"
+    ],
+    "testAccountingResponseOnAcctPort": [
+      "self"
+    ],
+    "testVerificationDisabled": [
+      "self"
+    ]
+  },
+  "MappedAddressTests": {
+    "setUp": [
+      "self"
+    ],
+    "testMappedAddressUsesIPv4Host": [
+      "self"
+    ],
+    "testMappedAddressIsNotDefaultHost": [
+      "self"
+    ],
+    "testExactMatchWins": [
+      "self"
+    ],
+    "testUnknownMappedAddress": [
+      "self"
+    ],
+    "testIPv6Address": [
+      "self"
+    ]
+  },
+  "ServerRunTests": {
+    "setUp": [
+      "self"
+    ],
+    "tearDown": [
+      "self"
+    ],
+    "testRunInitializes": [
+      "self"
+    ],
+    "testRunIgnoresPollErrors": [
+      "self"
+    ],
+    "testRunIgnoresServerPacketErrors": [
+      "self"
+    ],
+    "testRunIgnoresPacketErrors": [
+      "self"
+    ],
+    "testRunIgnoresHandlerErrors": [
+      "self"
+    ],
+    "testRunRunsProcessInput": [
+      "self"
+    ]
+  },
+  "forge_response_authenticator": [
+    "raw",
+    "request_authenticator"
+  ],
+  "BlastRadiusTestCase": {
+    "setUp": [
+      "self"
+    ],
+    "request": [
+      "self"
+    ],
+    "receive": [
+      "self",
+      "req"
+    ],
+    "reply": [
+      "self",
+      "req"
+    ],
+    "verify": [
+      "self",
+      "req",
+      "raw",
+      "enforce_ma"
+    ]
+  },
+  "ClientRequestTests": {
+    "testAccessRequestHasMessageAuthenticatorFirst": [
+      "self"
+    ],
+    "testStatusServerHasMessageAuthenticator": [
+      "self"
+    ],
+    "testMessageAuthenticatorOptOut": [
+      "self"
+    ],
+    "testEapMd5HasSingleMessageAuthenticator": [
+      "self"
+    ],
+    "testAsyncClientAddsMessageAuthenticator": [
+      "self"
+    ]
+  },
+  "ServerReplyTests": {
+    "testReplyHasMessageAuthenticatorFirst": [
+      "self"
+    ],
+    "testReplyEchoesProxyState": [
+      "self"
+    ],
+    "testDecodedReplyIsNotModified": [
+      "self"
+    ]
+  },
+  "ClientVerifyReplyTests": {
+    "testReplyWithMessageAuthenticator": [
+      "self"
+    ],
+    "testReplyWithInvalidMessageAuthenticator": [
+      "self"
+    ],
+    "testReplyWithoutMessageAuthenticator": [
+      "self"
+    ],
+    "testReplyWithInjectedProxyState": [
+      "self"
+    ],
+    "testReplyWithModifiedProxyState": [
+      "self"
+    ],
+    "testAccountingResponseWithoutMessageAuthenticator": [
+      "self"
+    ],
+    "testCoAAckMessageAuthenticator": [
+      "self"
+    ]
+  },
+  "AcctStatusServerTests": {
+    "status_server": [
+      "self"
+    ],
+    "testRequestHasValidMessageAuthenticator": [
+      "self"
+    ],
+    "testRequestHasRandomAuthenticator": [
+      "self"
+    ],
+    "testRequestKeepsAuthenticator": [
+      "self"
+    ],
+    "testRequestMessageAuthenticatorOptOut": [
+      "self"
+    ],
+    "testTamperedRequest": [
+      "self"
+    ],
+    "testRequestWithoutMessageAuthenticatorFailsVerification": [
+      "self"
+    ],
+    "testReply": [
+      "self"
+    ],
+    "testForgedReply": [
+      "self"
+    ]
+  },
+  "ServerRequestTests": {
+    "setUp": [
+      "self"
+    ],
+    "handle": [
+      "self",
+      "req"
+    ],
+    "testValidMessageAuthenticator": [
+      "self"
+    ],
+    "testInvalidMessageAuthenticator": [
+      "self"
+    ],
+    "testMissingMessageAuthenticator": [
+      "self"
+    ]
+  },
+  "AsyncServerRequestTests": {
+    "setUp": [
+      "self"
+    ],
+    "handle": [
+      "self",
+      "req"
+    ],
+    "testValidMessageAuthenticator": [
+      "self"
+    ],
+    "testInvalidMessageAuthenticator": [
+      "self"
+    ],
+    "testMissingMessageAuthenticator": [
+      "self"
+    ]
+  },
+  "CurvedServerRequestTests": {
+    "setUp": [
+      "self"
+    ],
+    "handle": [
+      "self",
+      "req"
+    ],
+    "testValidMessageAuthenticator": [
+      "self"
+    ],
+    "testInvalidMessageAuthenticator": [
+      "self"
+    ],
+    "testMissingMessageAuthenticator": [
+      "self"
+    ]
+  },
+  "PacketCreationTests": {
+    "setUp": [
+      "self"
+    ],
+    "testCreatePacket": [
+      "self"
+    ],
+    "testCreateAuthPacket": [
+      "self"
+    ],
+    "testCreateAcctPacket": [
+      "self"
+    ]
+  },
+  "MockPacket": {
+    "packet": [],
+    "replypacket": [],
+    "source": [],
+    "RequestPacket": [
+      "self"
+    ],
+    "ReplyPacket": [
+      "self"
+    ]
+  },
+  "MockFd": {
+    "data": [],
+    "target": [],
+    "sendto": [
+      "self",
+      "data",
+      "target"
+    ]
+  },
+  "PacketSendTest": {
+    "setUp": [
+      "self"
+    ],
+    "testSendPacket": [
+      "self"
+    ],
+    "testSendReplyPacket": [
+      "self"
+    ],
+    "testSendRealPacket": [
+      "self"
+    ]
+  },
+  "MockSocket": {
+    "__init__": [
+      "self",
+      "domain",
+      "type",
+      "data"
+    ],
+    "fileno": [
+      "self"
+    ],
+    "bind": [
+      "self",
+      "address"
+    ],
+    "recv": [
+      "self",
+      "buffer"
+    ],
+    "sendto": [
+      "self",
+      "data",
+      "target"
+    ],
+    "setsockopt": [
+      "self",
+      "level",
+      "opt",
+      "value"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "MockFinished": {},
+  "MockPoll": {
+    "results": [],
+    "__init__": [
+      "self"
+    ],
+    "register": [
+      "self",
+      "fd",
+      "options"
+    ],
+    "unregister": [
+      "self",
+      "fd"
+    ],
+    "poll": [
+      "self",
+      "timeout"
+    ]
+  },
+  "origkey": [
+    "klass"
+  ],
+  "MockClassMethod": [
+    "klass",
+    "name",
+    "myfunc"
+  ],
+  "UnmockClassMethods": [
+    "klass"
+  ],
+  "home": []
+}
