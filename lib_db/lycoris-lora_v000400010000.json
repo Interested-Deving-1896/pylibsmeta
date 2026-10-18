@@ -1,0 +1,5117 @@
+{
+  "ColoredFormatter": {
+    "COLORS": [],
+    "format": [
+      "self",
+      "record"
+    ]
+  },
+  "logger": [],
+  "info_once": [
+    "msg"
+  ],
+  "warning_once": [
+    "msg"
+  ],
+  "error_once": [
+    "msg"
+  ],
+  "create_network": [
+    "multiplier",
+    "network_dim",
+    "network_alpha",
+    "vae",
+    "text_encoder",
+    "unet",
+    "warn_on_unmatched"
+  ],
+  "create_network_from_weights": [
+    "multiplier",
+    "file",
+    "vae",
+    "text_encoder",
+    "unet",
+    "weights_sd",
+    "for_inference"
+  ],
+  "LycorisNetworkKohya": {
+    "ENABLE_CONV": [],
+    "UNET_TARGET_REPLACE_MODULE": [],
+    "UNET_TARGET_REPLACE_NAME": [],
+    "TEXT_ENCODER_TARGET_REPLACE_MODULE": [],
+    "TEXT_ENCODER_TARGET_REPLACE_NAME": [],
+    "LORA_PREFIX_UNET": [],
+    "LORA_PREFIX_TEXT_ENCODER": [],
+    "MODULE_ALGO_MAP": [],
+    "NAME_ALGO_MAP": [],
+    "USE_FNMATCH": [],
+    "TARGET_EXCLUDE_NAME": [],
+    "apply_preset": [
+      "cls",
+      "preset"
+    ],
+    "__init__": [
+      "self",
+      "text_encoder",
+      "unet",
+      "multiplier",
+      "lora_dim",
+      "conv_lora_dim",
+      "alpha",
+      "conv_alpha",
+      "use_tucker",
+      "dropout",
+      "rank_dropout",
+      "module_dropout",
+      "network_module",
+      "norm_modules",
+      "train_norm",
+      "train_t5xxl",
+      "warn_on_unmatched",
+      "train_llm_adapter"
+    ],
+    "match_fn": [
+      "self",
+      "pattern",
+      "name"
+    ],
+    "is_excluded": [
+      "self",
+      "name"
+    ],
+    "find_conf_for_name": [
+      "self",
+      "name"
+    ],
+    "load_weights": [
+      "self",
+      "file"
+    ],
+    "apply_to": [
+      "self",
+      "text_encoder",
+      "unet",
+      "apply_text_encoder",
+      "apply_unet"
+    ],
+    "merge_to": [
+      "self",
+      "text_encoder",
+      "unet",
+      "weights_sd",
+      "dtype",
+      "device"
+    ],
+    "apply_max_norm_regularization": [
+      "self",
+      "max_norm_value",
+      "device"
+    ],
+    "set_loraplus_lr_ratio": [
+      "self",
+      "loraplus_lr_ratio",
+      "loraplus_unet_lr_ratio",
+      "loraplus_text_encoder_lr_ratio"
+    ],
+    "prepare_optimizer_params": [
+      "self",
+      "text_encoder_lr",
+      "unet_lr",
+      "learning_rate"
+    ],
+    "enable_gradient_checkpointing": [
+      "self"
+    ],
+    "prepare_grad_etc": [
+      "self"
+    ],
+    "on_epoch_start": [
+      "self"
+    ],
+    "on_step_start": [
+      "self"
+    ],
+    "get_trainable_params": [
+      "self"
+    ],
+    "save_weights": [
+      "self",
+      "file",
+      "dtype",
+      "metadata"
+    ]
+  },
+  "AlgoSpec": {
+    "supports": [
+      "self",
+      "arg"
+    ]
+  },
+  "PresetValidationError": {},
+  "AlgoOverride": {
+    "from_mapping": [
+      "cls",
+      "mapping"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "validate": [
+      "self"
+    ]
+  },
+  "_copy_value": [
+    "value"
+  ],
+  "PresetConfig": {
+    "from_dict": [
+      "cls",
+      "data"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "list_algorithms": [
+      "self"
+    ]
+  },
+  "describe_algo": [
+    "name"
+  ],
+  "list_algorithms": [],
+  "FULL_UNET_MODULES": [],
+  "FULL_UNET_NAMES": [],
+  "FULL_TEXT_ENCODER_MODULES": [],
+  "BUILTIN_PRESET_CONFIGS": [],
+  "PRESET": [],
+  "list_builtin_presets": [],
+  "network_module_dict": [],
+  "deprecated_arg_dict": [],
+  "create_lycoris": [
+    "module",
+    "multiplier",
+    "linear_dim",
+    "linear_alpha",
+    "warn_on_unmatched"
+  ],
+  "create_lycoris_from_weights": [
+    "multiplier",
+    "file",
+    "module",
+    "weights_sd"
+  ],
+  "LycorisNetwork": {
+    "ENABLE_CONV": [],
+    "TARGET_REPLACE_MODULE": [],
+    "TARGET_REPLACE_NAME": [],
+    "LORA_PREFIX": [],
+    "MODULE_ALGO_MAP": [],
+    "NAME_ALGO_MAP": [],
+    "USE_FNMATCH": [],
+    "TARGET_EXCLUDE_NAME": [],
+    "apply_preset": [
+      "cls",
+      "preset"
+    ],
+    "__init__": [
+      "self",
+      "module",
+      "multiplier",
+      "lora_dim",
+      "conv_lora_dim",
+      "alpha",
+      "conv_alpha",
+      "use_tucker",
+      "dropout",
+      "rank_dropout",
+      "module_dropout",
+      "network_module",
+      "norm_modules",
+      "train_norm",
+      "init_only",
+      "warn_on_unmatched",
+      "train_llm_adapter"
+    ],
+    "match_fn": [
+      "self",
+      "pattern",
+      "name"
+    ],
+    "is_excluded": [
+      "self",
+      "name",
+      "patterns"
+    ],
+    "find_conf_for_name": [
+      "self",
+      "name"
+    ],
+    "set_multiplier": [
+      "self",
+      "multiplier"
+    ],
+    "load_weights": [
+      "self",
+      "file"
+    ],
+    "apply_to": [
+      "self"
+    ],
+    "is_mergeable": [
+      "self"
+    ],
+    "_ensure_mergeable": [
+      "self"
+    ],
+    "restore": [
+      "self"
+    ],
+    "merge_to": [
+      "self",
+      "weight"
+    ],
+    "onfly_merge": [
+      "self",
+      "weight"
+    ],
+    "onfly_restore": [
+      "self"
+    ],
+    "apply_max_norm_regularization": [
+      "self",
+      "max_norm_value",
+      "device"
+    ],
+    "enable_gradient_checkpointing": [
+      "self"
+    ],
+    "prepare_optimizer_params": [
+      "self",
+      "lr"
+    ],
+    "prepare_grad_etc": [
+      "self"
+    ],
+    "on_epoch_start": [
+      "self"
+    ],
+    "get_trainable_params": [
+      "self"
+    ],
+    "save_weights": [
+      "self",
+      "file",
+      "dtype",
+      "metadata"
+    ]
+  },
+  "SUPPORT_QUANT": [],
+  "QuantLinears": [],
+  "log_bypass": [],
+  "log_fp8_bypass": [],
+  "log_suspect": [],
+  "product": [
+    "xs"
+  ],
+  "read_preset": [
+    "preset_path"
+  ],
+  "memory_efficient_attention": [],
+  "load_bytes_in_safetensors": [
+    "tensors"
+  ],
+  "precalculate_safetensors_hashes": [
+    "state_dict"
+  ],
+  "str_bool": [
+    "val"
+  ],
+  "default": [
+    "val",
+    "d"
+  ],
+  "make_sparse": [
+    "t",
+    "sparsity"
+  ],
+  "extract_conv": [
+    "weight",
+    "mode",
+    "mode_param",
+    "device",
+    "is_cp"
+  ],
+  "extract_linear": [
+    "weight",
+    "mode",
+    "mode_param",
+    "device"
+  ],
+  "extract_diff": [
+    "base_tes",
+    "db_tes",
+    "base_unet",
+    "db_unet",
+    "mode",
+    "linear_mode_param",
+    "conv_mode_param",
+    "extract_device",
+    "use_bias",
+    "sparsity",
+    "small_conv"
+  ],
+  "re_digits": [],
+  "re_compiled": [],
+  "suffix_conversion": [],
+  "convert_diffusers_name_to_compvis": [
+    "key"
+  ],
+  "merge": [
+    "tes",
+    "unet",
+    "lyco_state_dict",
+    "scale",
+    "device"
+  ],
+  "FUNC_LIST": [],
+  "rebuild_tucker": [
+    "t",
+    "wa",
+    "wb"
+  ],
+  "factorization": [
+    "dimension",
+    "factor"
+  ],
+  "power2factorization": [
+    "dimension",
+    "factor"
+  ],
+  "tucker_weight_from_conv": [
+    "up",
+    "down",
+    "mid"
+  ],
+  "tucker_weight": [
+    "wa",
+    "wb",
+    "t"
+  ],
+  "_add_scaled": [
+    "base",
+    "delta",
+    "gamma"
+  ],
+  "add_scaled": [
+    "base",
+    "delta",
+    "gamma",
+    "backend"
+  ],
+  "_weight_decompose": [
+    "weight",
+    "dora_scale",
+    "multiplier",
+    "wd_on_out"
+  ],
+  "weight_decompose": [
+    "weight",
+    "dora_scale",
+    "multiplier",
+    "wd_on_out",
+    "backend"
+  ],
+  "apply_dora_scale": [
+    "org_weight",
+    "rebuild",
+    "dora_scale",
+    "scale"
+  ],
+  "MAX_BLOCK": [],
+  "get_r": [
+    "oft_blocks",
+    "I",
+    "constraint"
+  ],
+  "weight_gen": [
+    "org_weight",
+    "max_block_size",
+    "rescale"
+  ],
+  "_diff_weight": [
+    "org_weight",
+    "oft_blocks",
+    "rescale",
+    "constraint"
+  ],
+  "diff_weight": [
+    "org_weight"
+  ],
+  "_bypass_diff": [
+    "x",
+    "org_out",
+    "oft_blocks",
+    "rescale",
+    "constraint",
+    "need_transpose"
+  ],
+  "bypass_forward_diff": [
+    "x",
+    "org_out"
+  ],
+  "HadaWeight": {
+    "forward": [
+      "ctx",
+      "w1d",
+      "w1u",
+      "w2d",
+      "w2u",
+      "scale"
+    ],
+    "backward": [
+      "ctx",
+      "grad_out"
+    ]
+  },
+  "HadaWeightTucker": {
+    "forward": [
+      "ctx",
+      "t1",
+      "w1d",
+      "w1u",
+      "t2",
+      "w2d",
+      "w2u",
+      "scale"
+    ],
+    "backward": [
+      "ctx",
+      "grad_out"
+    ]
+  },
+  "make_weight": [
+    "w1d",
+    "w1u",
+    "w2d",
+    "w2u",
+    "scale"
+  ],
+  "make_weight_tucker": [
+    "t1",
+    "w1d",
+    "w1u",
+    "t2",
+    "w2d",
+    "w2u",
+    "scale"
+  ],
+  "make_kron": [
+    "w1",
+    "w2",
+    "scale"
+  ],
+  "_kron_weight": [
+    "w1",
+    "w1a",
+    "w1b",
+    "w2",
+    "w2a",
+    "w2b",
+    "t",
+    "scale"
+  ],
+  "_plain_w2": [
+    "w2",
+    "w2b",
+    "t"
+  ],
+  "_apply_factor_cap": [],
+  "_apply_supported": [
+    "w1",
+    "w1a",
+    "w1b",
+    "w2",
+    "w2a",
+    "w2b",
+    "t"
+  ],
+  "kron_weight": [
+    "w1",
+    "w1a",
+    "w1b",
+    "w2",
+    "w2a",
+    "w2b",
+    "t",
+    "scale",
+    "backend"
+  ],
+  "_kron_bypass": [
+    "h",
+    "w1",
+    "w1a",
+    "w1b",
+    "w2",
+    "w2a",
+    "w2b",
+    "t",
+    "scale",
+    "extra_args"
+  ],
+  "kron_bypass": [
+    "h",
+    "w1",
+    "w1a",
+    "w1b",
+    "w2",
+    "w2a",
+    "w2b",
+    "t",
+    "scale",
+    "extra_args",
+    "backend"
+  ],
+  "NormModule": {
+    "name": [],
+    "support_module": [],
+    "weight_list": [],
+    "weight_list_det": [],
+    "__init__": [
+      "self",
+      "lora_name",
+      "org_module",
+      "multiplier",
+      "rank_dropout",
+      "module_dropout",
+      "rank_dropout_scale"
+    ],
+    "make_module_from_state_dict": [
+      "cls",
+      "lora_name",
+      "orig_module",
+      "w_norm",
+      "b_norm"
+    ],
+    "make_weight": [
+      "self",
+      "scale",
+      "device"
+    ],
+    "get_diff_weight": [
+      "self",
+      "multiplier",
+      "shape",
+      "device"
+    ],
+    "get_merged_weight": [
+      "self",
+      "multiplier",
+      "shape",
+      "device"
+    ],
+    "forward": [
+      "self",
+      "x"
+    ]
+  },
+  "_ia3_weight": [
+    "org_weight",
+    "weight",
+    "on_input",
+    "multiplier",
+    "diff"
+  ],
+  "_ia3_scale": [
+    "x",
+    "weight",
+    "multiplier",
+    "diff"
+  ],
+  "IA3Module": {
+    "name": [],
+    "support_module": [],
+    "weight_list": [],
+    "weight_list_det": [],
+    "__init__": [
+      "self",
+      "lora_name",
+      "org_module",
+      "multiplier",
+      "lora_dim",
+      "alpha",
+      "dropout",
+      "rank_dropout",
+      "module_dropout",
+      "use_tucker",
+      "use_scalar",
+      "rank_dropout_scale",
+      "weight_decompose",
+      "bypass_mode",
+      "rs_lora",
+      "train_on_input"
+    ],
+    "make_module_from_state_dict": [
+      "cls",
+      "lora_name",
+      "orig_module",
+      "weight"
+    ],
+    "apply_to": [
+      "self"
+    ],
+    "make_weight": [
+      "self",
+      "multiplier",
+      "shape",
+      "device",
+      "diff"
+    ],
+    "get_diff_weight": [
+      "self",
+      "multiplier",
+      "shape",
+      "device"
+    ],
+    "get_merged_weight": [
+      "self",
+      "multiplier",
+      "shape",
+      "device"
+    ],
+    "_channel_scale": [
+      "self",
+      "x",
+      "scale",
+      "diff"
+    ],
+    "_bypass_forward": [
+      "self",
+      "x",
+      "scale",
+      "diff"
+    ],
+    "bypass_forward_diff": [
+      "self",
+      "x",
+      "scale"
+    ],
+    "bypass_forward": [
+      "self",
+      "x",
+      "scale"
+    ],
+    "forward": [
+      "self",
+      "x"
+    ]
+  },
+  "log_oft_factorize": [
+    "dim",
+    "factor",
+    "num",
+    "bdim"
+  ],
+  "DiagOFTModule": {
+    "name": [],
+    "support_module": [],
+    "weight_list": [],
+    "weight_list_det": [],
+    "__init__": [
+      "self",
+      "lora_name",
+      "org_module",
+      "multiplier",
+      "lora_dim",
+      "alpha",
+      "dropout",
+      "rank_dropout",
+      "module_dropout",
+      "use_tucker",
+      "use_scalar",
+      "rank_dropout_scale",
+      "constraint",
+      "rescaled",
+      "bypass_mode"
+    ],
+    "algo_check": [
+      "cls",
+      "state_dict",
+      "lora_name"
+    ],
+    "make_module_from_state_dict": [
+      "cls",
+      "lora_name",
+      "orig_module",
+      "oft_blocks",
+      "rescale",
+      "alpha"
+    ],
+    "I": [
+      "self"
+    ],
+    "get_r": [
+      "self"
+    ],
+    "make_weight": [
+      "self",
+      "scale",
+      "device",
+      "diff"
+    ],
+    "get_diff_weight": [
+      "self",
+      "multiplier",
+      "shape",
+      "device"
+    ],
+    "get_merged_weight": [
+      "self",
+      "multiplier",
+      "shape",
+      "device"
+    ],
+    "apply_max_norm": [
+      "self",
+      "max_norm",
+      "device"
+    ],
+    "_bypass_forward": [
+      "self",
+      "x",
+      "scale",
+      "diff"
+    ],
+    "bypass_forward_diff": [
+      "self",
+      "x",
+      "scale"
+    ],
+    "bypass_forward": [
+      "self",
+      "x",
+      "scale"
+    ],
+    "forward": [
+      "self",
+      "x"
+    ]
+  },
+  "LohaModule": {
+    "name": [],
+    "support_module": [],
+    "weight_list": [],
+    "weight_list_det": [],
+    "__init__": [
+      "self",
+      "lora_name",
+      "org_module",
+      "multiplier",
+      "lora_dim",
+      "alpha",
+      "dropout",
+      "rank_dropout",
+      "module_dropout",
+      "use_tucker",
+      "use_scalar",
+      "rank_dropout_scale",
+      "weight_decompose",
+      "wd_on_out",
+      "bypass_mode",
+      "rs_lora"
+    ],
+    "make_module_from_state_dict": [
+      "cls",
+      "lora_name",
+      "orig_module",
+      "w1a",
+      "w1b",
+      "w2a",
+      "w2b",
+      "t1",
+      "t2",
+      "alpha",
+      "dora_scale"
+    ],
+    "load_weight_hook": [
+      "self",
+      "module",
+      "incompatible_keys"
+    ],
+    "get_weight": [
+      "self",
+      "shape"
+    ],
+    "get_diff_weight": [
+      "self",
+      "multiplier",
+      "shape",
+      "device"
+    ],
+    "get_merged_weight": [
+      "self",
+      "multiplier",
+      "shape",
+      "device"
+    ],
+    "apply_weight_decompose": [
+      "self",
+      "weight",
+      "multiplier"
+    ],
+    "custom_state_dict": [
+      "self"
+    ],
+    "apply_max_norm": [
+      "self",
+      "max_norm",
+      "device"
+    ],
+    "bypass_forward_diff": [
+      "self",
+      "x",
+      "scale"
+    ],
+    "bypass_forward": [
+      "self",
+      "x",
+      "scale"
+    ],
+    "forward": [
+      "self",
+      "x"
+    ]
+  },
+  "_dylora_weight": [
+    "down",
+    "up",
+    "gamma"
+  ],
+  "DyLoraModule": {
+    "support_module": [],
+    "__init__": [
+      "self",
+      "lora_name",
+      "org_module",
+      "multiplier",
+      "lora_dim",
+      "alpha",
+      "dropout",
+      "rank_dropout",
+      "module_dropout",
+      "use_tucker",
+      "block_size",
+      "use_scalar",
+      "rank_dropout_scale",
+      "weight_decompose",
+      "bypass_mode",
+      "rs_lora",
+      "train_on_input"
+    ],
+    "load_state_dict": [
+      "self",
+      "state_dict",
+      "strict",
+      "assign"
+    ],
+    "custom_state_dict": [
+      "self"
+    ],
+    "get_weight": [
+      "self",
+      "rank"
+    ],
+    "get_random_rank_weight": [
+      "self"
+    ],
+    "get_diff_weight": [
+      "self",
+      "multiplier",
+      "shape",
+      "device",
+      "rank"
+    ],
+    "get_merged_weight": [
+      "self",
+      "multiplier",
+      "shape",
+      "device",
+      "rank"
+    ],
+    "bypass_forward_diff": [
+      "self",
+      "x",
+      "scale",
+      "rank"
+    ],
+    "bypass_forward": [
+      "self",
+      "x",
+      "scale",
+      "rank"
+    ],
+    "forward": [
+      "self",
+      "x"
+    ]
+  },
+  "log_butterfly_factorize": [
+    "dim",
+    "factor",
+    "result"
+  ],
+  "butterfly_factor": [
+    "dimension",
+    "factor"
+  ],
+  "ButterflyOFTModule": {
+    "name": [],
+    "support_module": [],
+    "weight_list": [],
+    "weight_list_det": [],
+    "__init__": [
+      "self",
+      "lora_name",
+      "org_module",
+      "multiplier",
+      "lora_dim",
+      "alpha",
+      "dropout",
+      "rank_dropout",
+      "module_dropout",
+      "use_tucker",
+      "use_scalar",
+      "rank_dropout_scale",
+      "constraint",
+      "rescaled",
+      "bypass_mode"
+    ],
+    "algo_check": [
+      "cls",
+      "state_dict",
+      "lora_name"
+    ],
+    "make_module_from_state_dict": [
+      "cls",
+      "lora_name",
+      "orig_module",
+      "oft_blocks",
+      "rescale",
+      "alpha"
+    ],
+    "I": [
+      "self"
+    ],
+    "get_r": [
+      "self"
+    ],
+    "make_weight": [
+      "self",
+      "scale",
+      "device",
+      "diff"
+    ],
+    "get_diff_weight": [
+      "self",
+      "multiplier",
+      "shape",
+      "device"
+    ],
+    "get_merged_weight": [
+      "self",
+      "multiplier",
+      "shape",
+      "device"
+    ],
+    "apply_max_norm": [
+      "self",
+      "max_norm",
+      "device"
+    ],
+    "_bypass_forward": [
+      "self",
+      "x",
+      "scale",
+      "diff"
+    ],
+    "bypass_forward_diff": [
+      "self",
+      "x",
+      "scale"
+    ],
+    "bypass_forward": [
+      "self",
+      "x",
+      "scale"
+    ],
+    "forward": [
+      "self",
+      "x"
+    ]
+  },
+  "log_bypass_override": [],
+  "FullModule": {
+    "name": [],
+    "support_module": [],
+    "weight_list": [],
+    "weight_list_det": [],
+    "__init__": [
+      "self",
+      "lora_name",
+      "org_module",
+      "multiplier",
+      "lora_dim",
+      "alpha",
+      "dropout",
+      "rank_dropout",
+      "module_dropout",
+      "use_tucker",
+      "use_scalar",
+      "rank_dropout_scale",
+      "bypass_mode"
+    ],
+    "make_module_from_state_dict": [
+      "cls",
+      "lora_name",
+      "orig_module",
+      "diff",
+      "diff_b"
+    ],
+    "org_weight": [
+      "self",
+      "value"
+    ],
+    "apply_to": [
+      "self"
+    ],
+    "restore": [
+      "self"
+    ],
+    "custom_state_dict": [
+      "self"
+    ],
+    "load_weight_prehook": [
+      "self",
+      "state_dict",
+      "prefix",
+      "local_metadata",
+      "strict",
+      "missing_keys",
+      "unexpected_keys",
+      "error_msgs"
+    ],
+    "_org_bias_tensor": [
+      "self",
+      "device",
+      "dtype"
+    ],
+    "make_weight": [
+      "self",
+      "scale",
+      "device"
+    ],
+    "get_diff_weight": [
+      "self",
+      "multiplier",
+      "shape",
+      "device"
+    ],
+    "get_merged_weight": [
+      "self",
+      "multiplier",
+      "shape",
+      "device"
+    ],
+    "forward": [
+      "self",
+      "x"
+    ]
+  },
+  "_glora_weight": [
+    "org_weight",
+    "a1",
+    "a2",
+    "b1",
+    "b2",
+    "bm",
+    "gamma"
+  ],
+  "GLoRAModule": {
+    "name": [],
+    "support_module": [],
+    "weight_list": [],
+    "weight_list_det": [],
+    "__init__": [
+      "self",
+      "lora_name",
+      "org_module",
+      "multiplier",
+      "lora_dim",
+      "alpha",
+      "dropout",
+      "rank_dropout",
+      "module_dropout",
+      "use_tucker",
+      "use_scalar",
+      "rank_dropout_scale",
+      "weight_decompose",
+      "bypass_mode",
+      "rs_lora"
+    ],
+    "make_module_from_state_dict": [
+      "cls",
+      "lora_name",
+      "orig_module",
+      "a1",
+      "a2",
+      "b1",
+      "b2",
+      "bm",
+      "alpha"
+    ],
+    "custom_state_dict": [
+      "self"
+    ],
+    "load_weight_hook": [
+      "self",
+      "module",
+      "incompatible_keys"
+    ],
+    "make_weight": [
+      "self",
+      "device"
+    ],
+    "get_diff_weight": [
+      "self",
+      "multiplier",
+      "shape",
+      "device"
+    ],
+    "get_merged_weight": [
+      "self",
+      "multiplier",
+      "shape",
+      "device"
+    ],
+    "_bypass_forward": [
+      "self",
+      "x",
+      "scale",
+      "diff"
+    ],
+    "bypass_forward_diff": [
+      "self",
+      "x",
+      "scale"
+    ],
+    "bypass_forward": [
+      "self",
+      "x",
+      "scale"
+    ],
+    "forward": [
+      "self",
+      "x"
+    ]
+  },
+  "SigType": [],
+  "set_timestep_mask": [
+    "mask",
+    "group_id"
+  ],
+  "get_timestep_mask": [
+    "group_id"
+  ],
+  "clear_timestep_mask": [
+    "group_id"
+  ],
+  "compute_timestep_mask": [
+    "timestep",
+    "max_timestep",
+    "max_rank",
+    "min_rank",
+    "alpha"
+  ],
+  "log_tlora_init": [],
+  "TLoraModule": {
+    "name": [],
+    "support_module": [],
+    "weight_list": [],
+    "weight_list_det": [],
+    "__init__": [
+      "self",
+      "lora_name",
+      "org_module",
+      "multiplier",
+      "lora_dim",
+      "alpha",
+      "dropout",
+      "rank_dropout",
+      "module_dropout",
+      "rank_dropout_scale",
+      "bypass_mode",
+      "sig_type",
+      "use_data_init",
+      "mask_group_id"
+    ],
+    "_initialize_from_svd": [
+      "self",
+      "org_module",
+      "in_dim",
+      "out_dim",
+      "flat_in_dim"
+    ],
+    "_get_mask": [
+      "self",
+      "device"
+    ],
+    "make_module_from_state_dict": [
+      "cls",
+      "lora_name",
+      "orig_module",
+      "q_weight",
+      "p_weight",
+      "lambda_weight",
+      "alpha"
+    ],
+    "custom_state_dict": [
+      "self"
+    ],
+    "get_diff_weight": [
+      "self",
+      "multiplier",
+      "shape",
+      "device"
+    ],
+    "get_merged_weight": [
+      "self",
+      "multiplier",
+      "shape",
+      "device"
+    ],
+    "orthogonality_regularization": [
+      "self"
+    ],
+    "bypass_forward_diff": [
+      "self",
+      "x",
+      "scale"
+    ],
+    "bypass_forward": [
+      "self",
+      "x",
+      "scale"
+    ],
+    "forward": [
+      "self",
+      "x"
+    ],
+    "apply_max_norm": [
+      "self",
+      "max_norm",
+      "device"
+    ]
+  },
+  "logging_force_full_matrix": [
+    "lora_dim",
+    "dim",
+    "factor"
+  ],
+  "LokrModule": {
+    "name": [],
+    "support_module": [],
+    "weight_list": [],
+    "weight_list_det": [],
+    "__init__": [
+      "self",
+      "lora_name",
+      "org_module",
+      "multiplier",
+      "lora_dim",
+      "alpha",
+      "dropout",
+      "rank_dropout",
+      "module_dropout",
+      "use_tucker",
+      "use_scalar",
+      "decompose_both",
+      "factor",
+      "rank_dropout_scale",
+      "weight_decompose",
+      "wd_on_out",
+      "full_matrix",
+      "bypass_mode",
+      "rs_lora",
+      "unbalanced_factorization"
+    ],
+    "make_module_from_state_dict": [
+      "cls",
+      "lora_name",
+      "orig_module",
+      "w1",
+      "w1a",
+      "w1b",
+      "w2",
+      "w2a",
+      "w2b",
+      "_",
+      "t2",
+      "alpha",
+      "dora_scale"
+    ],
+    "load_weight_hook": [
+      "self",
+      "module",
+      "incompatible_keys"
+    ],
+    "get_weight": [
+      "self",
+      "shape"
+    ],
+    "get_diff_weight": [
+      "self",
+      "multiplier",
+      "shape",
+      "device"
+    ],
+    "get_merged_weight": [
+      "self",
+      "multiplier",
+      "shape",
+      "device"
+    ],
+    "apply_weight_decompose": [
+      "self",
+      "weight",
+      "multiplier"
+    ],
+    "custom_state_dict": [
+      "self"
+    ],
+    "apply_max_norm": [
+      "self",
+      "max_norm",
+      "device"
+    ],
+    "bypass_forward_diff": [
+      "self",
+      "h",
+      "scale"
+    ],
+    "bypass_forward": [
+      "self",
+      "x",
+      "scale"
+    ],
+    "_rebuild_forward": [
+      "self",
+      "x"
+    ],
+    "forward": [
+      "self",
+      "x"
+    ]
+  },
+  "MODULE_LIST": [],
+  "get_module": [
+    "lyco_state_dict",
+    "lora_name"
+  ],
+  "make_module": [
+    "lyco_type",
+    "params",
+    "lora_name",
+    "orig_module"
+  ],
+  "is_weight_only_fp8_linear": [
+    "module"
+  ],
+  "is_linear_like_module": [
+    "module"
+  ],
+  "_FP8_BYPASS_ALGOS": [],
+  "is_supported_linear_module": [
+    "module",
+    "algo_name"
+  ],
+  "dequantize_weight_only_fp8": [
+    "module"
+  ],
+  "ModuleCustomSD": {
+    "__init__": [
+      "self"
+    ],
+    "load_weight_prehook": [
+      "self",
+      "state_dict",
+      "prefix",
+      "local_metadata",
+      "strict",
+      "missing_keys",
+      "unexpected_keys",
+      "error_msgs"
+    ],
+    "load_weight_hook": [
+      "self",
+      "module",
+      "incompatible_keys"
+    ],
+    "custom_state_dict": [
+      "self"
+    ],
+    "state_dict": [
+      "self"
+    ]
+  },
+  "_MergeContext": {},
+  "LycorisBaseModule": {
+    "support_module": [],
+    "weight_list": [],
+    "weight_list_det": [],
+    "__init__": [
+      "self",
+      "lora_name",
+      "org_module",
+      "multiplier",
+      "dropout",
+      "rank_dropout",
+      "module_dropout",
+      "rank_dropout_scale",
+      "bypass_mode"
+    ],
+    "parametrize": [
+      "cls",
+      "org_module",
+      "attr"
+    ],
+    "algo_check": [
+      "cls",
+      "state_dict",
+      "lora_name"
+    ],
+    "extract_state_dict": [
+      "cls",
+      "state_dict",
+      "lora_name"
+    ],
+    "make_module_from_state_dict": [
+      "cls",
+      "lora_name",
+      "orig_module"
+    ],
+    "dtype": [
+      "self"
+    ],
+    "device": [
+      "self"
+    ],
+    "org_weight": [
+      "self",
+      "value"
+    ],
+    "_current_weight": [
+      "self"
+    ],
+    "_current_bias": [
+      "self"
+    ],
+    "apply_to": [
+      "self"
+    ],
+    "restore": [
+      "self"
+    ],
+    "merge_to": [
+      "self",
+      "multiplier"
+    ],
+    "onfly_merge": [
+      "self",
+      "multiplier"
+    ],
+    "onfly_restore": [
+      "self"
+    ],
+    "get_diff_weight": [
+      "self",
+      "multiplier",
+      "shape",
+      "device"
+    ],
+    "get_merged_weight": [
+      "self",
+      "multiplier",
+      "shape",
+      "device"
+    ],
+    "apply_max_norm": [
+      "self",
+      "max_norm",
+      "device"
+    ],
+    "bypass_forward_diff": [
+      "self",
+      "x",
+      "scale"
+    ],
+    "bypass_forward": [
+      "self",
+      "x",
+      "scale"
+    ],
+    "parametrize_forward": [
+      "self",
+      "x"
+    ],
+    "forward": [
+      "self"
+    ],
+    "_prepare_merge_context": [
+      "self",
+      "precise"
+    ],
+    "_apply_merged_weights": [
+      "self",
+      "ctx",
+      "weight",
+      "bias"
+    ],
+    "_restore_merge_context": [
+      "self",
+      "ctx"
+    ],
+    "_compute_precise_result": [
+      "self",
+      "ctx",
+      "multiplier"
+    ],
+    "_apply_precise_weights": [
+      "self",
+      "ctx",
+      "weight_prec",
+      "bias_prec"
+    ],
+    "_ensure_precise_snapshot": [
+      "module",
+      "weight",
+      "bias"
+    ],
+    "_load_precise_snapshot": [
+      "module",
+      "weight_param",
+      "bias_param",
+      "device",
+      "dtype"
+    ]
+  },
+  "log_wd": [],
+  "LoConModule": {
+    "name": [],
+    "support_module": [],
+    "weight_list": [],
+    "weight_list_det": [],
+    "__init__": [
+      "self",
+      "lora_name",
+      "org_module",
+      "multiplier",
+      "lora_dim",
+      "alpha",
+      "dropout",
+      "rank_dropout",
+      "module_dropout",
+      "use_tucker",
+      "use_scalar",
+      "rank_dropout_scale",
+      "weight_decompose",
+      "wd_on_out",
+      "bypass_mode",
+      "rs_lora"
+    ],
+    "make_module_from_state_dict": [
+      "cls",
+      "lora_name",
+      "orig_module",
+      "up",
+      "down",
+      "mid",
+      "alpha",
+      "dora_scale"
+    ],
+    "load_weight_hook": [
+      "self",
+      "module",
+      "incompatible_keys"
+    ],
+    "make_weight": [
+      "self",
+      "device"
+    ],
+    "get_diff_weight": [
+      "self",
+      "multiplier",
+      "shape",
+      "device"
+    ],
+    "get_merged_weight": [
+      "self",
+      "multiplier",
+      "shape",
+      "device"
+    ],
+    "apply_weight_decompose": [
+      "self",
+      "weight",
+      "multiplier"
+    ],
+    "custom_state_dict": [
+      "self"
+    ],
+    "apply_max_norm": [
+      "self",
+      "max_norm",
+      "device"
+    ],
+    "bypass_forward_diff": [
+      "self",
+      "x",
+      "scale"
+    ],
+    "bypass_forward": [
+      "self",
+      "x",
+      "scale"
+    ],
+    "forward": [
+      "self",
+      "x"
+    ]
+  },
+  "get_ops": [
+    "backend"
+  ],
+  "GradPack": {
+    "__init__": [
+      "self",
+      "device"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "to": [
+      "self"
+    ],
+    "like": [
+      "self"
+    ]
+  },
+  "NS": [],
+  "_fresh": [
+    "outs",
+    "inputs"
+  ],
+  "ops_for": [
+    "backend",
+    "device"
+  ],
+  "_run": [
+    "backend",
+    "op",
+    "inputs"
+  ],
+  "_empty": [
+    "like"
+  ],
+  "_opt": [
+    "t",
+    "like"
+  ],
+  "_none": [
+    "t"
+  ],
+  "lora_merge_fwd": [
+    "a1",
+    "b1",
+    "a2",
+    "b2",
+    "base",
+    "gamma",
+    "mode",
+    "backend",
+    "out_dtype"
+  ],
+  "_": [
+    "grad",
+    "x",
+    "w1",
+    "w2",
+    "gamma",
+    "backend"
+  ],
+  "lora_merge_bwd": [
+    "grad",
+    "up",
+    "down",
+    "gamma",
+    "backend"
+  ],
+  "lora_bypass_fwd": [
+    "x",
+    "up",
+    "down",
+    "gamma",
+    "backend",
+    "base"
+  ],
+  "lora_bypass_bwd": [
+    "x",
+    "up",
+    "down",
+    "grad",
+    "gamma",
+    "backend"
+  ],
+  "lora_tucker_fwd": [
+    "a1",
+    "t1",
+    "b1",
+    "a2",
+    "t2",
+    "b2",
+    "gamma",
+    "backend"
+  ],
+  "loha_merge_bwd": [
+    "grad",
+    "a1",
+    "b1",
+    "a2",
+    "b2",
+    "gamma",
+    "backend"
+  ],
+  "loha_bypass_fwd": [
+    "x",
+    "a1",
+    "b1",
+    "a2",
+    "b2",
+    "gamma",
+    "backend",
+    "base"
+  ],
+  "loha_bypass_bwd": [
+    "grad",
+    "x",
+    "a1",
+    "b1",
+    "a2",
+    "b2",
+    "gamma",
+    "backend"
+  ],
+  "lokr_full_merge_fwd": [
+    "w1",
+    "w2",
+    "base",
+    "gamma",
+    "backend",
+    "out_dtype"
+  ],
+  "lokr_full_merge_bwd": [
+    "grad",
+    "w1",
+    "w2",
+    "gamma",
+    "backend"
+  ],
+  "lokr_merge_fwd": [
+    "w1a",
+    "w1b",
+    "w2a",
+    "w2b",
+    "shape",
+    "base",
+    "gamma",
+    "backend",
+    "out_dtype"
+  ],
+  "_lokr_merge_bwd": [
+    "grad",
+    "w1a",
+    "w1b",
+    "w2a",
+    "w2b",
+    "shape",
+    "gamma",
+    "backend"
+  ],
+  "lokr_merge_bwd": [
+    "grad",
+    "w1a",
+    "w1b",
+    "w2a",
+    "w2b",
+    "shape",
+    "gamma",
+    "backend"
+  ],
+  "lokr_bypass_fwd": [
+    "x",
+    "w1",
+    "w2",
+    "gamma",
+    "backend",
+    "base"
+  ],
+  "lokr_bypass_bwd": [
+    "grad",
+    "x",
+    "w1",
+    "w2",
+    "gamma",
+    "backend"
+  ],
+  "_PROBE": [],
+  "ORDER": [],
+  "ORDER_PRE_AMPERE": [],
+  "AUTO_PRE_AMPERE": [],
+  "FUSED": [],
+  "_compile_usable": [],
+  "_installed": [],
+  "device_key": [
+    "device"
+  ],
+  "pre_ampere": [
+    "device"
+  ],
+  "order_for": [
+    "device"
+  ],
+  "available_backends": [
+    "device"
+  ],
+  "fused_backends": [
+    "device"
+  ],
+  "demote": [
+    "name",
+    "device"
+  ],
+  "resolve_backend": [
+    "requested",
+    "device"
+  ],
+  "MAX_HADA_RANK": [],
+  "HALF": [],
+  "half_of": [
+    "dtypes"
+  ],
+  "resolve": [],
+  "cast_operands": [
+    "tensors",
+    "compute"
+  ],
+  "promote": [],
+  "folds": [
+    "base"
+  ],
+  "restore": [
+    "grads",
+    "dtypes"
+  ],
+  "__all__": [],
+  "_COMPILE_FAILED": [],
+  "device_of": [
+    "tensors"
+  ],
+  "on_device": [
+    "tensors"
+  ],
+  "one_family": [
+    "tensors"
+  ],
+  "half_supported": [
+    "tensors",
+    "device"
+  ],
+  "fusable": [
+    "tensors"
+  ],
+  "choose": [
+    "tensors",
+    "supported",
+    "backend"
+  ],
+  "static_scale": [
+    "gamma"
+  ],
+  "compiled": [
+    "fn"
+  ],
+  "call_compiled": [
+    "fn"
+  ],
+  "dora_fwd": [
+    "w",
+    "dscale",
+    "mult",
+    "row_axis",
+    "backend",
+    "delta"
+  ],
+  "dora_bwd": [
+    "grad",
+    "w",
+    "dscale",
+    "norms",
+    "mult",
+    "row_axis",
+    "backend",
+    "delta"
+  ],
+  "oft_fwd": [
+    "blocks",
+    "x",
+    "rescale",
+    "cscale",
+    "shift",
+    "weight",
+    "backend"
+  ],
+  "_oft_bwd": [
+    "blocks",
+    "x",
+    "grad",
+    "rescale",
+    "cscale",
+    "shift",
+    "weight",
+    "backend"
+  ],
+  "oft_bwd": [
+    "blocks",
+    "x",
+    "grad",
+    "rescale",
+    "cscale",
+    "shift",
+    "weight",
+    "backend"
+  ],
+  "boft_fwd": [
+    "blocks",
+    "x",
+    "axis",
+    "cscale",
+    "scale",
+    "rescale",
+    "diff",
+    "backend"
+  ],
+  "boft_bwd": [
+    "blocks",
+    "x",
+    "grad",
+    "axis",
+    "cscale",
+    "scale",
+    "backend"
+  ],
+  "ia3_fwd": [
+    "x",
+    "w",
+    "channel_axis",
+    "alpha",
+    "gamma",
+    "backend"
+  ],
+  "ia3_bwd": [
+    "grad",
+    "x",
+    "w",
+    "channel_axis",
+    "alpha",
+    "gamma",
+    "backend"
+  ],
+  "Device": {
+    "cp_async": [
+      "self"
+    ],
+    "pipeline_depths": [
+      "self"
+    ],
+    "query": [
+      "cls",
+      "index"
+    ],
+    "from_json": [
+      "cls",
+      "path"
+    ],
+    "to_json": [
+      "self",
+      "path"
+    ],
+    "measured": [
+      "self"
+    ]
+  },
+  "KNOWN": [],
+  "_json_path": [],
+  "resolve_device": [
+    "index"
+  ],
+  "TilePlan": {
+    "as_dict": [
+      "self"
+    ]
+  },
+  "SENTINEL_EAGER": [],
+  "SENTINEL_MATERIALIZE": [],
+  "SENTINEL_CONE": [],
+  "mma_n": [
+    "dev"
+  ],
+  "warp_tile": [
+    "bm",
+    "bn",
+    "warps",
+    "n_unit",
+    "exact"
+  ],
+  "warps_legal": [
+    "c_shapes",
+    "warps",
+    "n_unit",
+    "exact"
+  ],
+  "tilelang_legal": [
+    "cands",
+    "dev",
+    "shapes_of"
+  ],
+  "occupancy": [
+    "dev",
+    "est_regs",
+    "smem",
+    "warps"
+  ],
+  "wave_eff": [
+    "tiles",
+    "dev",
+    "cta_per_sm"
+  ],
+  "pipe_tax": [
+    "dev",
+    "cta_per_sm"
+  ],
+  "bandwidth_ms": [
+    "traffic_bytes",
+    "dev"
+  ],
+  "compute_ms": [
+    "flops",
+    "dev",
+    "pipe"
+  ],
+  "pick_limited": [
+    "bw_ms",
+    "mma_ms"
+  ],
+  "rank": [
+    "cands",
+    "topk"
+  ],
+  "BLOCK": [],
+  "WARPS": [],
+  "_ps": [
+    "s"
+  ],
+  "topk_stage": [
+    "n_blocks",
+    "s",
+    "stream",
+    "m_stages",
+    "eb",
+    "dev",
+    "topk"
+  ],
+  "topk_fused": [
+    "n_blocks",
+    "s",
+    "stream",
+    "m_stages",
+    "eb",
+    "dev",
+    "topk"
+  ],
+  "topk_grad_r": [
+    "n_blocks",
+    "s",
+    "stream",
+    "eb",
+    "dev",
+    "topk"
+  ],
+  "SHORTLIST": [],
+  "ROW_BUCKET": [],
+  "_LOADED": [],
+  "bucket_tokens": [
+    "t"
+  ],
+  "_table_path": [],
+  "_read_table": [
+    "path"
+  ],
+  "_load_table": [],
+  "_save_table": [],
+  "REPLACE_TRIES": [],
+  "REPLACE_WAIT_S": [],
+  "_write_rows": [
+    "path",
+    "rows"
+  ],
+  "_time": [
+    "fn",
+    "warmup",
+    "iters",
+    "rounds"
+  ],
+  "tuning_enabled": [],
+  "tuned": [
+    "kernel",
+    "key",
+    "shortlist_fn",
+    "runner_factory"
+  ],
+  "clear": [],
+  "_pad16": [
+    "v"
+  ],
+  "topk_rebuild": [
+    "o",
+    "i",
+    "add_base",
+    "eb",
+    "dev",
+    "topk"
+  ],
+  "topk_rebuild_bwd": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "eb",
+    "dev",
+    "topk"
+  ],
+  "topk_apply": [
+    "t",
+    "a",
+    "b",
+    "c",
+    "d",
+    "eb",
+    "dev",
+    "topk"
+  ],
+  "BLOCKS": [],
+  "ROW_BM": [],
+  "ROW_BN": [],
+  "topk_elementwise": [
+    "n",
+    "passes",
+    "dev",
+    "eb",
+    "topk"
+  ],
+  "topk_row_reduce": [
+    "rows",
+    "cols",
+    "dev",
+    "eb",
+    "topk"
+  ],
+  "_topk_stream": [
+    "rows_mixed",
+    "stream",
+    "s",
+    "k",
+    "eb",
+    "dev",
+    "grad",
+    "topk"
+  ],
+  "BLOCK_M": [],
+  "BLOCK_N": [],
+  "BLOCK_K": [],
+  "_safe": [
+    "shapes_of",
+    "bk",
+    "stages"
+  ],
+  "_rank_block": [
+    "r"
+  ],
+  "topk_bypass_fwd": [
+    "t",
+    "o",
+    "i",
+    "r",
+    "eb",
+    "dev",
+    "topk"
+  ],
+  "topk_bypass_bwd": [
+    "t",
+    "o",
+    "i",
+    "r",
+    "eb",
+    "dev",
+    "topk"
+  ],
+  "topk_merge_bwd": [
+    "o",
+    "i",
+    "r",
+    "eb",
+    "dev",
+    "topk"
+  ],
+  "topk_delta": [
+    "t",
+    "o",
+    "i",
+    "r",
+    "eb",
+    "dev",
+    "topk"
+  ],
+  "topk_delta_dw": [
+    "t",
+    "o",
+    "i",
+    "r",
+    "eb",
+    "dev",
+    "topk"
+  ],
+  "topk_hada_bwd": [
+    "o",
+    "i",
+    "r",
+    "eb",
+    "dev",
+    "topk"
+  ],
+  "topk_hada_bypass_bwd": [
+    "t",
+    "o",
+    "i",
+    "r",
+    "eb",
+    "dev",
+    "topk"
+  ],
+  "_DEFAULT_L2": [],
+  "_DEFAULT_SMEM": [],
+  "_CU_ATTR": [],
+  "DeviceInfo": {
+    "async_copy": [
+      "self"
+    ]
+  },
+  "_slug": [
+    "name"
+  ],
+  "_libcuda": [],
+  "_driver_attrs": [
+    "index"
+  ],
+  "_cuda_info": [
+    "index"
+  ],
+  "_xpu_info": [
+    "index"
+  ],
+  "device_info": [
+    "device"
+  ],
+  "_events": [
+    "kind"
+  ],
+  "_sync": [
+    "kind"
+  ],
+  "_warm_stream": [],
+  "buffer_sets": [
+    "bytes_per_call",
+    "dev",
+    "cap"
+  ],
+  "_Batch": {
+    "__init__": [
+      "self",
+      "calls",
+      "dev",
+      "pool"
+    ],
+    "run": [
+      "self"
+    ]
+  },
+  "time_candidates": [
+    "makers",
+    "sets",
+    "dev",
+    "rounds",
+    "use_graph",
+    "prune",
+    "errors"
+  ],
+  "_REG_UNIT": [],
+  "_SUB_PARTITIONS": [],
+  "_MAX_REGS_THREAD": [],
+  "_BASE_REGS": [],
+  "_DRAM_LATENCY_S": [],
+  "_LAUNCH_S": [],
+  "_FMA_ITERS": [],
+  "Work": {},
+  "Throughput": {
+    "stream_bps": [
+      "self",
+      "per_sm",
+      "active_share"
+    ]
+  },
+  "_capturing": [
+    "dev"
+  ],
+  "_best_seconds": [
+    "dev",
+    "fn",
+    "reps"
+  ],
+  "_measure": [
+    "dev"
+  ],
+  "throughput": [
+    "dev"
+  ],
+  "_smem_unit": [
+    "dev"
+  ],
+  "footprint": [
+    "dev",
+    "w"
+  ],
+  "blocks_per_sm": [
+    "dev",
+    "w"
+  ],
+  "predict": [
+    "dev",
+    "w",
+    "mma"
+  ],
+  "shared_reads": [
+    "dev",
+    "nbytes",
+    "readers"
+  ],
+  "staged": [
+    "dev",
+    "nbytes",
+    "stages"
+  ],
+  "tiled_reads": [
+    "rows",
+    "cols",
+    "k",
+    "bm",
+    "bn",
+    "e"
+  ],
+  "cdiv": [
+    "a",
+    "b"
+  ],
+  "TORCH": [],
+  "TILE_SHORTLIST": [],
+  "LAUNCH_SHORTLIST": [],
+  "LAUNCH_KEYS": [],
+  "TABLE_VERSION": [],
+  "_REPLACE_TRIES": [],
+  "Key": [],
+  "_freeze": [
+    "config"
+  ],
+  "_stamp": [],
+  "_read": [
+    "path",
+    "stamp"
+  ],
+  "_write": [
+    "path",
+    "rows",
+    "stamp"
+  ],
+  "Tuner": {
+    "__init__": [
+      "self"
+    ],
+    "_table": [
+      "self",
+      "dev"
+    ],
+    "select": [
+      "self",
+      "dev",
+      "key",
+      "plan",
+      "measure"
+    ],
+    "_tune": [
+      "self",
+      "dev",
+      "key",
+      "ranked",
+      "measure"
+    ],
+    "note_failure": [
+      "self",
+      "config",
+      "reason"
+    ],
+    "demote": [
+      "self",
+      "dev",
+      "key"
+    ],
+    "reset": [
+      "self"
+    ]
+  },
+  "shortlist": [
+    "kernels",
+    "axes",
+    "size"
+  ],
+  "_model_pick": [
+    "ranked"
+  ],
+  "tuner": [],
+  "select": [
+    "dev",
+    "key",
+    "plan",
+    "measure"
+  ],
+  "LAUNCH_ARGS": [],
+  "_AGREE_TOL": [],
+  "pad16": [
+    "n"
+  ],
+  "pow2": [
+    "n"
+  ],
+  "token_bucket": [
+    "t"
+  ],
+  "dtype_key": [
+    "dtype"
+  ],
+  "launch": [
+    "cfg"
+  ],
+  "stage_axis": [
+    "dev"
+  ],
+  "grid_configs": [
+    "dev"
+  ],
+  "copy_of": [
+    "t"
+  ],
+  "guarded": [
+    "dev",
+    "key",
+    "cfg",
+    "run",
+    "too_big"
+  ],
+  "_tensors": [
+    "result"
+  ],
+  "disagreement": [
+    "got",
+    "ref"
+  ],
+  "_warm": [
+    "run",
+    "cfg",
+    "inputs"
+  ],
+  "measurer": [
+    "dev",
+    "bytes_per_call",
+    "make_inputs",
+    "run"
+  ],
+  "chain_read_kernel": [
+    "src",
+    "out",
+    "per_prog",
+    "block"
+  ],
+  "l2_read_kernel": [
+    "src",
+    "out",
+    "n",
+    "reps",
+    "block"
+  ],
+  "fma_kernel": [
+    "out",
+    "iters",
+    "block"
+  ],
+  "DTYPE_STR": [],
+  "MIN_DIM": [],
+  "_LOCK": [],
+  "dstr": [
+    "t"
+  ],
+  "tl_dtype": [
+    "dtype"
+  ],
+  "pad_to": [
+    "n",
+    "m"
+  ],
+  "partitions": [
+    "dev",
+    "threads"
+  ],
+  "fp32_gemm_exact": [
+    "dev"
+  ],
+  "fits": [
+    "dev",
+    "half_elements"
+  ],
+  "CompileError": {},
+  "_pass_configs": [
+    "arch"
+  ],
+  "padded_cols": [
+    "t",
+    "cols"
+  ],
+  "padded_rows": [
+    "t",
+    "rows"
+  ],
+  "FUSED_MAX": [],
+  "_MAX_TILE": [],
+  "_view": [
+    "x",
+    "axis"
+  ],
+  "_stage_geometry": [
+    "i",
+    "b"
+  ],
+  "_plan": [
+    "dev",
+    "m",
+    "num",
+    "b",
+    "outer",
+    "inner",
+    "e",
+    "backward"
+  ],
+  "_splits": [
+    "dev",
+    "rows",
+    "cfg",
+    "n_ct"
+  ],
+  "_forward_stages": [
+    "cfg",
+    "dh",
+    "x",
+    "rescale",
+    "diff",
+    "save",
+    "n_stages",
+    "out_dtype"
+  ],
+  "_to_blocks": [
+    "u",
+    "k",
+    "b"
+  ],
+  "_from_blocks": [
+    "ub",
+    "k"
+  ],
+  "_torch_butterfly": [
+    "dh",
+    "x",
+    "axis",
+    "rescale",
+    "diff"
+  ],
+  "_fwd_run": [
+    "cfg",
+    "dh",
+    "blocks",
+    "x",
+    "axis",
+    "cscale",
+    "scale",
+    "rescale",
+    "diff"
+  ],
+  "_key": [
+    "name",
+    "x",
+    "axis",
+    "blocks",
+    "rescale",
+    "diff"
+  ],
+  "_deltas": [
+    "blocks",
+    "cscale",
+    "scale",
+    "cdt"
+  ],
+  "_nat_index": [
+    "i",
+    "b",
+    "g",
+    "device"
+  ],
+  "_bwd_stages": [
+    "cfg",
+    "dev",
+    "dh",
+    "x",
+    "g"
+  ],
+  "_torch_bwd": [
+    "dh",
+    "x",
+    "g",
+    "axis"
+  ],
+  "_bwd_run": [
+    "cfg",
+    "dev",
+    "dh",
+    "blocks",
+    "x",
+    "g",
+    "axis",
+    "cscale",
+    "scale"
+  ],
+  "F32": [],
+  "_block_tile": [
+    "m_s",
+    "dh",
+    "by",
+    "k",
+    "gpb",
+    "tw",
+    "g",
+    "rb",
+    "transposed",
+    "c_dt"
+  ],
+  "rows_fwd_prim": [
+    "c",
+    "b",
+    "g",
+    "bt",
+    "threads",
+    "save",
+    "last",
+    "rescale_on",
+    "diff",
+    "dts"
+  ],
+  "rows_bwd_prim": [
+    "c",
+    "b",
+    "g",
+    "bt",
+    "splits",
+    "threads",
+    "dts"
+  ],
+  "_NO_RACE": [],
+  "_layout": [
+    "x",
+    "axis"
+  ],
+  "_dt": [
+    "t"
+  ],
+  "_pick": [
+    "blocks",
+    "x",
+    "axis",
+    "name"
+  ],
+  "_run_stage": [
+    "blocks",
+    "i",
+    "src",
+    "dst",
+    "axis",
+    "trans",
+    "offset",
+    "cscale",
+    "scale",
+    "rescale",
+    "org",
+    "diff",
+    "p",
+    "last"
+  ],
+  "_bf_stage": [
+    "K",
+    "S",
+    "COLS",
+    "NB",
+    "L",
+    "TRANS",
+    "LAST",
+    "RESCALE",
+    "DIFF",
+    "dtype",
+    "cg",
+    "bn",
+    "threads"
+  ],
+  "_bf_grad": [
+    "K",
+    "S",
+    "COLS",
+    "NB",
+    "L",
+    "dtype",
+    "cg",
+    "bn",
+    "threads"
+  ],
+  "_solve": [
+    "a_s",
+    "m_s",
+    "col_s",
+    "ps"
+  ],
+  "_skew_delta": [
+    "blocks",
+    "bk",
+    "size",
+    "ps",
+    "cscale",
+    "q_s",
+    "a_s",
+    "d_s",
+    "col_s"
+  ],
+  "_delta_prim": [
+    "k",
+    "size",
+    "ps",
+    "rescale_on",
+    "threads",
+    "b_dt",
+    "c_dt"
+  ],
+  "_chain_prim": [
+    "k",
+    "size",
+    "ps",
+    "rescale_on",
+    "threads",
+    "b_dt",
+    "c_dt"
+  ],
+  "_threads": [
+    "ps"
+  ],
+  "_res": [
+    "rescale",
+    "k",
+    "s",
+    "like"
+  ],
+  "_solve_fits": [
+    "device",
+    "ps",
+    "fp32_tiles",
+    "cdt_tiles",
+    "cdt"
+  ],
+  "_skew_delta_torch": [
+    "blocks",
+    "cscale"
+  ],
+  "_torch_deltas": [
+    "blocks",
+    "rescale",
+    "cscale",
+    "cdt",
+    "mult",
+    "ps"
+  ],
+  "_torch_chain": [
+    "blocks",
+    "rescale",
+    "p",
+    "cdt",
+    "cscale"
+  ],
+  "deltas": [
+    "blocks",
+    "rescale",
+    "cscale",
+    "cdt",
+    "mult"
+  ],
+  "chain": [
+    "blocks",
+    "rescale",
+    "p",
+    "cdt",
+    "cscale"
+  ],
+  "_layouts": [
+    "x",
+    "weight"
+  ],
+  "_oft_fwd": [
+    "K",
+    "S",
+    "COLS",
+    "NB",
+    "L",
+    "rescale_on",
+    "shift",
+    "weight",
+    "dtype",
+    "cg",
+    "bn",
+    "threads"
+  ],
+  "SINGLE": [],
+  "SINGLE_MAX": [],
+  "_SECTOR": [],
+  "_rows_fwd_prim": [
+    "k",
+    "s",
+    "bch",
+    "bt",
+    "rt",
+    "threads",
+    "rescale_on",
+    "shift",
+    "dts"
+  ],
+  "_rows_bwd_prim": [
+    "k",
+    "s",
+    "bch",
+    "bt",
+    "splits",
+    "threads",
+    "rescale_on",
+    "shift",
+    "dts"
+  ],
+  "_cols_fwd_prim": [
+    "k",
+    "s",
+    "inner",
+    "bn",
+    "groups",
+    "threads",
+    "rescale_on",
+    "shift",
+    "dts"
+  ],
+  "_cols_bwd_prim": [
+    "k",
+    "s",
+    "inner",
+    "bn",
+    "groups",
+    "threads",
+    "rescale_on",
+    "shift",
+    "dts"
+  ],
+  "_rows_legal": [
+    "dev",
+    "k",
+    "s",
+    "bch",
+    "bt",
+    "threads",
+    "backward",
+    "wide"
+  ],
+  "_col_groups": [
+    "dev",
+    "outer",
+    "inner",
+    "cfg",
+    "k"
+  ],
+  "_torch_apply": [
+    "dh",
+    "x",
+    "rescale",
+    "shift",
+    "weight",
+    "out_dtype"
+  ],
+  "_alternatives": [
+    "s",
+    "wide"
+  ],
+  "_fwd": [
+    "name",
+    "blocks",
+    "x",
+    "rescale",
+    "cscale",
+    "shift",
+    "weight",
+    "out_dtype",
+    "cdt"
+  ],
+  "oft_fwd_full": [
+    "blocks",
+    "x",
+    "rescale",
+    "cscale",
+    "shift",
+    "weight"
+  ],
+  "_diag_blocks": [
+    "part",
+    "k",
+    "s",
+    "g"
+  ],
+  "_bwd_apply": [
+    "cfg",
+    "dev",
+    "dh",
+    "x",
+    "g",
+    "rescale",
+    "shift",
+    "weight"
+  ],
+  "_bwd": [
+    "name",
+    "blocks",
+    "x",
+    "grad",
+    "rescale",
+    "cscale",
+    "shift",
+    "weight",
+    "cdt"
+  ],
+  "oft_bwd_full": [
+    "blocks",
+    "x",
+    "grad",
+    "rescale",
+    "cscale",
+    "shift",
+    "weight"
+  ],
+  "APPLY": [],
+  "_RESIDENT_TILE": [],
+  "_KERNEL_DTYPES": [],
+  "_ZERO": [],
+  "_fwd_prim": [
+    "rows",
+    "cols",
+    "bm",
+    "bn",
+    "resident",
+    "threads",
+    "w_dt",
+    "d_dt",
+    "has_delta"
+  ],
+  "_bwd_prim": [
+    "rows",
+    "cols",
+    "bm",
+    "bn",
+    "resident",
+    "threads",
+    "w_dt",
+    "d_dt",
+    "has_delta"
+  ],
+  "_eager_fwd": [
+    "w",
+    "dscale",
+    "mult",
+    "delta"
+  ],
+  "_rows": [
+    "t",
+    "row_axis"
+  ],
+  "_dora_fwd": [
+    "ROWS",
+    "COLS",
+    "dtype",
+    "bm",
+    "bn",
+    "threads"
+  ],
+  "_dora_bwd": [
+    "ROWS",
+    "COLS",
+    "dtype",
+    "bm",
+    "bn",
+    "threads"
+  ],
+  "MAX_KRON_FACTOR": [],
+  "kron_factors_supported": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "_lokr_bypass_fwd": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "bt",
+    "dtype",
+    "threads"
+  ],
+  "_lokr_bypass_bwd": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "bt",
+    "dtype",
+    "threads"
+  ],
+  "_bypass_delta": [
+    "x",
+    "w1",
+    "w2",
+    "gamma"
+  ],
+  "_lokr_full_merge_fwd": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "add_base",
+    "d1",
+    "d2",
+    "odt",
+    "bm",
+    "bn",
+    "threads"
+  ],
+  "_lokr_merge_fwd": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "R1",
+    "R2",
+    "gen1",
+    "gen2",
+    "add_base",
+    "d1",
+    "d2",
+    "odt",
+    "bm",
+    "bn",
+    "threads"
+  ],
+  "_name": [
+    "dtype"
+  ],
+  "_base": [
+    "base",
+    "shape",
+    "like",
+    "odt"
+  ],
+  "_halves": [
+    "w1a",
+    "w1b",
+    "w2a",
+    "w2b",
+    "shape"
+  ],
+  "_merge_bwd_eager": [
+    "grad",
+    "w1a",
+    "w1b",
+    "w2a",
+    "w2b",
+    "gamma"
+  ],
+  "F16": [],
+  "DXN": [],
+  "ATOMIC": [],
+  "_dxn_prim": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "bt",
+    "bc",
+    "bd",
+    "threads",
+    "out_dt"
+  ],
+  "_smem": [
+    "cfg",
+    "a",
+    "b"
+  ],
+  "_dxn_run": [
+    "cfg",
+    "g",
+    "w1",
+    "w2",
+    "scale",
+    "out_dtype"
+  ],
+  "_dxn": [
+    "g",
+    "w1",
+    "w2",
+    "scale",
+    "out_dtype"
+  ],
+  "_gw1_prim": [
+    "a",
+    "b",
+    "c",
+    "bt",
+    "bc",
+    "threads"
+  ],
+  "_plan_gw1": [
+    "dev",
+    "t",
+    "a",
+    "b",
+    "c"
+  ],
+  "_gw1_run": [
+    "cfg",
+    "g",
+    "mid",
+    "a",
+    "b",
+    "c"
+  ],
+  "_grad_w1": [
+    "g",
+    "x",
+    "w1",
+    "w2",
+    "scale"
+  ],
+  "_bwd_dxn": [
+    "grad",
+    "x",
+    "w1",
+    "w2",
+    "gamma"
+  ],
+  "MAX_ROWS": [],
+  "_apply_prim": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "bt",
+    "bc",
+    "bd",
+    "threads",
+    "base_dt",
+    "out_dt"
+  ],
+  "_unit": [
+    "a",
+    "b"
+  ],
+  "_legal": [
+    "dev",
+    "cfg",
+    "a",
+    "b"
+  ],
+  "_apply": [
+    "name",
+    "flat",
+    "w1",
+    "w2",
+    "scale",
+    "base",
+    "out_dtype",
+    "alternatives"
+  ],
+  "_bypass_fwd": [
+    "O",
+    "I",
+    "R",
+    "dtype",
+    "bm",
+    "bn",
+    "bk",
+    "threads"
+  ],
+  "_bypass_bwd": [
+    "O",
+    "I",
+    "R",
+    "dtype",
+    "bm",
+    "bn",
+    "bk",
+    "threads"
+  ],
+  "_merge_bwd": [
+    "O",
+    "I",
+    "R",
+    "dtype",
+    "bm",
+    "bk",
+    "threads"
+  ],
+  "MAX_RANK": [],
+  "WHOLE": [],
+  "_merge_prim": [
+    "o",
+    "i",
+    "rp",
+    "bm",
+    "bn",
+    "threads",
+    "base_dt",
+    "out_dt"
+  ],
+  "_merge_bwd_prim": [
+    "o",
+    "i",
+    "rp",
+    "bm",
+    "bn",
+    "threads",
+    "split"
+  ],
+  "_plan_merge": [
+    "dev",
+    "o",
+    "i",
+    "r",
+    "e_w"
+  ],
+  "_merge_run": [
+    "cfg",
+    "up",
+    "down",
+    "scale",
+    "base",
+    "out_dtype"
+  ],
+  "lora_merge": [
+    "up",
+    "down",
+    "gamma",
+    "base",
+    "out_dtype"
+  ],
+  "_plan_merge_bwd": [
+    "dev",
+    "o",
+    "i",
+    "r",
+    "e_g"
+  ],
+  "_merge_bwd_run": [
+    "cfg",
+    "g2",
+    "up",
+    "down",
+    "scale"
+  ],
+  "_rebuild": [
+    "O",
+    "I",
+    "R",
+    "mode",
+    "add_base",
+    "dtype",
+    "odt",
+    "bm",
+    "bn",
+    "threads"
+  ],
+  "_rebuild_tucker": [
+    "O",
+    "I",
+    "K",
+    "R",
+    "hada",
+    "dtype",
+    "bm",
+    "bn",
+    "threads"
+  ],
+  "_loha_merge_bwd": [
+    "O",
+    "I",
+    "R",
+    "dtype",
+    "bm",
+    "bn",
+    "threads"
+  ],
+  "_bypass_prim": [
+    "o",
+    "i",
+    "rp",
+    "bm",
+    "bn",
+    "bk",
+    "threads",
+    "split",
+    "base_dt",
+    "out_dt",
+    "store_h"
+  ],
+  "_bypass": [
+    "name",
+    "flat",
+    "up",
+    "down",
+    "scale",
+    "base",
+    "out_dtype",
+    "alternatives"
+  ],
+  "_run_dxq": [
+    "cfg",
+    "g",
+    "up",
+    "down",
+    "scale"
+  ],
+  "_dxq": [
+    "g",
+    "up",
+    "down",
+    "scale"
+  ],
+  "_bwd_gemms": [
+    "x",
+    "up",
+    "down",
+    "grad",
+    "gamma"
+  ],
+  "_scale_fwd": [
+    "N",
+    "C",
+    "INNER",
+    "dtype",
+    "blk",
+    "threads"
+  ],
+  "_scale_bwd": [
+    "N",
+    "C",
+    "INNER",
+    "dtype",
+    "slices",
+    "blk",
+    "threads"
+  ],
+  "_view3": [
+    "x",
+    "channel_axis"
+  ],
+  "_common": [],
+  "SCALE": [],
+  "_bwd_last_prim": [
+    "n_ch",
+    "bc",
+    "bj",
+    "splits",
+    "threads",
+    "dts"
+  ],
+  "_bwd_first_prim": [
+    "n_ch",
+    "inner",
+    "bc",
+    "bj",
+    "splits",
+    "threads",
+    "dts"
+  ],
+  "_plan_fwd": [
+    "dev",
+    "rows",
+    "cols",
+    "e"
+  ],
+  "_plan_bwd": [
+    "dev",
+    "outer",
+    "c",
+    "inner",
+    "e"
+  ],
+  "_shape": [
+    "x",
+    "channel_axis"
+  ],
+  "_kernel_dtypes": [],
+  "_rows_cols": [
+    "x",
+    "channel_axis"
+  ],
+  "MATERIALIZE": [],
+  "_padded": [
+    "factors",
+    "rp"
+  ],
+  "loha_merge": [
+    "a1",
+    "b1",
+    "a2",
+    "b2",
+    "gamma",
+    "base",
+    "out_dtype"
+  ],
+  "_bypass_run": [
+    "cfg",
+    "x",
+    "factors",
+    "gamma",
+    "base",
+    "out_dtype"
+  ],
+  "_bypass_bwd_materialized": [
+    "grad",
+    "x",
+    "factors",
+    "gamma"
+  ],
+  "_hada_delta": [
+    "O",
+    "I",
+    "R",
+    "dtype",
+    "bm",
+    "bn",
+    "bk",
+    "threads"
+  ],
+  "_loha_bypass_bwd": [
+    "TT",
+    "O",
+    "I",
+    "R",
+    "dtype",
+    "bm",
+    "bn",
+    "threads"
+  ],
+  "_canon": [
+    "x",
+    "a1",
+    "b1",
+    "a2",
+    "b2"
+  ],
+  "_delta_run": [
+    "xc",
+    "a1c",
+    "b1c",
+    "a2c",
+    "b2c",
+    "t",
+    "o",
+    "i",
+    "r",
+    "gamma",
+    "tag"
+  ],
+  "AddScaledFn": {
+    "forward": [
+      "ctx",
+      "base",
+      "delta",
+      "gamma",
+      "backend"
+    ],
+    "backward": [
+      "ctx",
+      "grad"
+    ]
+  },
+  "norm_diff_weights": [
+    "org_w",
+    "org_b",
+    "w_norm",
+    "b_norm",
+    "multiplier",
+    "backend"
+  ],
+  "ChannelScaleFn": {
+    "forward": [
+      "ctx",
+      "x",
+      "w",
+      "channel_axis",
+      "alpha",
+      "gamma",
+      "backend"
+    ],
+    "backward": [
+      "ctx",
+      "grad"
+    ]
+  },
+  "ia3_diff_weight": [
+    "org_weight",
+    "weight",
+    "on_input",
+    "multiplier",
+    "diff",
+    "backend"
+  ],
+  "ia3_bypass": [
+    "x",
+    "weight",
+    "channel_axis",
+    "multiplier",
+    "diff",
+    "backend"
+  ],
+  "_cscale": [
+    "oft_blocks",
+    "constraint"
+  ],
+  "BlockDiagFusedFn": {
+    "forward": [
+      "ctx",
+      "blocks",
+      "x",
+      "rescale",
+      "cscale",
+      "shift",
+      "weight",
+      "backend"
+    ],
+    "backward": [
+      "ctx",
+      "grad"
+    ]
+  },
+  "diag_oft_diff_weight": [
+    "org_weight",
+    "oft_blocks",
+    "rescale",
+    "constraint",
+    "backend",
+    "diff"
+  ],
+  "diag_oft_bypass_diff": [
+    "org_out",
+    "oft_blocks",
+    "rescale",
+    "constraint",
+    "need_transpose",
+    "backend",
+    "diff"
+  ],
+  "HadaRebuildFn": {
+    "forward": [
+      "ctx",
+      "w1d",
+      "w1u",
+      "w2d",
+      "w2u",
+      "scale",
+      "backend",
+      "base"
+    ],
+    "backward": [
+      "ctx",
+      "grad"
+    ]
+  },
+  "HadaTuckerRebuildFn": {
+    "forward": [
+      "ctx",
+      "t1",
+      "w1d",
+      "w1u",
+      "t2",
+      "w2d",
+      "w2u",
+      "scale",
+      "backend"
+    ],
+    "backward": [
+      "ctx",
+      "grad"
+    ]
+  },
+  "HadaDeltaFn": {
+    "forward": [
+      "ctx",
+      "x",
+      "w1d",
+      "w1u",
+      "w2d",
+      "w2u",
+      "scale",
+      "backend",
+      "base"
+    ],
+    "backward": [
+      "ctx",
+      "grad"
+    ]
+  },
+  "_scale": [
+    "gamma"
+  ],
+  "loha_diff_weight": [
+    "w1d",
+    "w1u",
+    "w2d",
+    "w2u",
+    "t1",
+    "t2",
+    "gamma",
+    "backend",
+    "base"
+  ],
+  "loha_bypass_diff": [
+    "x",
+    "w1d",
+    "w1u",
+    "w2d",
+    "w2u",
+    "gamma",
+    "backend",
+    "base"
+  ],
+  "dylora_diff_weight": [
+    "down",
+    "up",
+    "rank",
+    "gamma",
+    "backend"
+  ],
+  "ButterflyFusedFn": {
+    "forward": [
+      "ctx",
+      "blocks",
+      "x",
+      "rescale",
+      "axis",
+      "cscale",
+      "scale",
+      "diff",
+      "backend"
+    ],
+    "backward": [
+      "ctx",
+      "grad"
+    ]
+  },
+  "boft_diff_weight": [
+    "org_weight",
+    "oft_blocks",
+    "rescale",
+    "constraint",
+    "scale",
+    "backend"
+  ],
+  "boft_bypass_diff": [
+    "org_out",
+    "oft_blocks",
+    "rescale",
+    "constraint",
+    "scale",
+    "need_transpose",
+    "backend",
+    "diff"
+  ],
+  "full_diff_weight": [
+    "org_weight",
+    "diff",
+    "multiplier",
+    "backend"
+  ],
+  "DualLowRankRebuildFn": {
+    "forward": [
+      "ctx",
+      "u",
+      "a2",
+      "b1",
+      "b2",
+      "scale",
+      "backend"
+    ],
+    "backward": [
+      "ctx",
+      "grad"
+    ]
+  },
+  "glora_diff_weight": [
+    "w",
+    "a1",
+    "a2",
+    "b1",
+    "b2",
+    "gamma",
+    "backend"
+  ],
+  "KronGenRebuildFn": {
+    "forward": [
+      "ctx",
+      "w1a",
+      "w1b",
+      "w2a",
+      "w2b",
+      "shape",
+      "scale",
+      "backend",
+      "base"
+    ],
+    "backward": [
+      "ctx",
+      "grad"
+    ]
+  },
+  "_base_grad": [
+    "grad",
+    "dtype"
+  ],
+  "KronApplyFn": {
+    "forward": [
+      "ctx",
+      "x",
+      "w1",
+      "w2",
+      "scale",
+      "backend",
+      "base"
+    ],
+    "backward": [
+      "ctx",
+      "grad"
+    ]
+  },
+  "_build_w2": [
+    "w2",
+    "w2a",
+    "w2b",
+    "t2"
+  ],
+  "rank_scale": [
+    "w1a",
+    "w2a",
+    "gamma"
+  ],
+  "lokr_kron_weight": [
+    "w1",
+    "w1a",
+    "w1b",
+    "w2",
+    "w2a",
+    "w2b",
+    "t2",
+    "scale",
+    "backend",
+    "base"
+  ],
+  "lokr_diff_weight": [
+    "w1",
+    "w1a",
+    "w1b",
+    "w2",
+    "w2a",
+    "w2b",
+    "t2",
+    "gamma",
+    "backend"
+  ],
+  "lokr_kron_bypass": [
+    "x",
+    "w1",
+    "w1a",
+    "w1b",
+    "w2",
+    "w2a",
+    "w2b",
+    "t2",
+    "scale",
+    "backend",
+    "base"
+  ],
+  "lokr_bypass_diff": [
+    "x",
+    "w1",
+    "w1a",
+    "w1b",
+    "w2",
+    "w2a",
+    "w2b",
+    "t2",
+    "gamma",
+    "backend",
+    "base"
+  ],
+  "DoraScaleFn": {
+    "forward": [
+      "ctx",
+      "w",
+      "dscale",
+      "mult",
+      "row_axis",
+      "backend",
+      "delta"
+    ],
+    "backward": [
+      "ctx",
+      "grad"
+    ]
+  },
+  "apply_dora": [
+    "weight",
+    "dora_scale",
+    "multiplier",
+    "wd_on_out",
+    "backend",
+    "delta"
+  ],
+  "LowRankRebuildFn": {
+    "forward": [
+      "ctx",
+      "up",
+      "down",
+      "scale",
+      "backend",
+      "base"
+    ],
+    "backward": [
+      "ctx",
+      "grad"
+    ]
+  },
+  "LowRankBypassFn": {
+    "forward": [
+      "ctx",
+      "x",
+      "up",
+      "down",
+      "scale",
+      "backend",
+      "base"
+    ],
+    "backward": [
+      "ctx",
+      "grad"
+    ]
+  },
+  "TuckerRebuildFn": {
+    "forward": [
+      "ctx",
+      "up",
+      "mid",
+      "down",
+      "scale",
+      "backend"
+    ],
+    "backward": [
+      "ctx",
+      "grad"
+    ]
+  },
+  "locon_diff_weight": [
+    "down",
+    "up",
+    "mid",
+    "gamma",
+    "backend",
+    "base"
+  ],
+  "locon_bypass_diff": [
+    "x",
+    "down",
+    "up",
+    "gamma",
+    "backend",
+    "base"
+  ],
+  "dot_prec": [
+    "dtype"
+  ],
+  "load2d": [
+    "ptr",
+    "rows",
+    "cols",
+    "s_row",
+    "s_col",
+    "m_row",
+    "m_col"
+  ],
+  "rank_block": [
+    "r"
+  ],
+  "_next_pow2": [
+    "x"
+  ],
+  "_bf_origin": [
+    "s",
+    "kd"
+  ],
+  "_bf_cone_kernel": [
+    "b_ptr",
+    "x_ptr",
+    "org_ptr",
+    "res_ptr",
+    "out_ptr",
+    "NB",
+    "L",
+    "N",
+    "S",
+    "M",
+    "sbm",
+    "sbk",
+    "sbi",
+    "sbj",
+    "sxb",
+    "sxl",
+    "sxa",
+    "cscale",
+    "scale",
+    "CG",
+    "RESCALE",
+    "DIFF",
+    "NBLK",
+    "PS",
+    "PC",
+    "BLOCK_N"
+  ],
+  "_stage_r": [
+    "b_ptr",
+    "sbk",
+    "sbi",
+    "sbj",
+    "pid_b",
+    "cscale",
+    "scale",
+    "S",
+    "TRANS",
+    "PS"
+  ],
+  "_bf_stage_kernel": [
+    "b_ptr",
+    "x_ptr",
+    "org_ptr",
+    "res_ptr",
+    "out_ptr",
+    "NB",
+    "L",
+    "N",
+    "S",
+    "KD",
+    "sbk",
+    "sbi",
+    "sbj",
+    "sxb",
+    "sxl",
+    "sxa",
+    "sob",
+    "sol",
+    "soa",
+    "cscale",
+    "scale",
+    "CG",
+    "TRANS_R",
+    "LAST",
+    "RESCALE",
+    "DIFF",
+    "PS",
+    "BLOCK_N"
+  ],
+  "_bf_grad_kernel": [
+    "b_ptr",
+    "g_ptr",
+    "x_ptr",
+    "gn_ptr",
+    "gb_ptr",
+    "NB",
+    "L",
+    "N",
+    "S",
+    "KD",
+    "sbk",
+    "sbi",
+    "sbj",
+    "sgb",
+    "sgl",
+    "sga",
+    "sxb",
+    "sxl",
+    "sxa",
+    "snb",
+    "snl",
+    "sna",
+    "cscale",
+    "scale",
+    "CG",
+    "PS",
+    "BLOCK_N"
+  ],
+  "CONE_MAX": [],
+  "_cone_fit": [
+    "blocks",
+    "trans",
+    "reverse",
+    "offset"
+  ],
+  "_run_cone": [
+    "blocks",
+    "x",
+    "axis",
+    "cscale",
+    "scale",
+    "rescale",
+    "diff",
+    "p",
+    "cone"
+  ],
+  "_cayley": [
+    "b_ptr",
+    "sbk",
+    "sbi",
+    "sbj",
+    "pid_k",
+    "cscale",
+    "S",
+    "PS"
+  ],
+  "_fold_rt": [
+    "r",
+    "res_ptr",
+    "srr",
+    "pid_k",
+    "S",
+    "RESCALE",
+    "SHIFT",
+    "PS"
+  ],
+  "_bd_fwd_kernel": [
+    "b_ptr",
+    "res_ptr",
+    "x_ptr",
+    "out_ptr",
+    "NB",
+    "L",
+    "K",
+    "S",
+    "COLS",
+    "sbk",
+    "sbi",
+    "sbj",
+    "srr",
+    "sxb",
+    "sxl",
+    "sxc",
+    "sob",
+    "sol",
+    "soc",
+    "cscale",
+    "CG",
+    "RESCALE",
+    "SHIFT",
+    "WEIGHT",
+    "PS",
+    "BLOCK_N"
+  ],
+  "_bd_bwd_kernel": [
+    "b_ptr",
+    "res_ptr",
+    "x_ptr",
+    "g_ptr",
+    "gx_ptr",
+    "gb_ptr",
+    "gres_ptr",
+    "NB",
+    "L",
+    "K",
+    "S",
+    "COLS",
+    "sbk",
+    "sbi",
+    "sbj",
+    "srr",
+    "sxb",
+    "sxl",
+    "sxc",
+    "sgb",
+    "sgl",
+    "sgc",
+    "cscale",
+    "CG",
+    "RESCALE",
+    "SHIFT",
+    "WEIGHT",
+    "PS",
+    "BLOCK_N"
+  ],
+  "_merged": [
+    "w_ptr",
+    "dl_ptr",
+    "off",
+    "m",
+    "has_delta"
+  ],
+  "_fwd_kernel": [
+    "w_ptr",
+    "dl_ptr",
+    "d_ptr",
+    "norm_ptr",
+    "y_ptr",
+    "rows",
+    "cols",
+    "sr",
+    "sc",
+    "mult",
+    "eps",
+    "has_delta",
+    "resident",
+    "block_m",
+    "block_n"
+  ],
+  "_bwd_kernel": [
+    "g_ptr",
+    "w_ptr",
+    "dl_ptr",
+    "d_ptr",
+    "norm_ptr",
+    "gw_ptr",
+    "gd_ptr",
+    "rows",
+    "cols",
+    "sr",
+    "sc",
+    "mult",
+    "has_delta",
+    "resident",
+    "block_m",
+    "block_n"
+  ],
+  "_axes": [
+    "w",
+    "row_axis"
+  ],
+  "_dora_fwd_kernel": [
+    "w_ptr",
+    "d_ptr",
+    "norm_ptr",
+    "y_ptr",
+    "ROWS",
+    "COLS",
+    "swr",
+    "swc",
+    "syr",
+    "syc",
+    "mult",
+    "eps",
+    "RESIDENT",
+    "BLOCK_M",
+    "BLOCK_N",
+    "BLOCK_K"
+  ],
+  "_dora_bwd_kernel": [
+    "g_ptr",
+    "w_ptr",
+    "d_ptr",
+    "norm_ptr",
+    "gw_ptr",
+    "gd_ptr",
+    "ROWS",
+    "COLS",
+    "sgr",
+    "sgc",
+    "swr",
+    "swc",
+    "sor",
+    "soc",
+    "mult",
+    "RESIDENT",
+    "BLOCK_M",
+    "BLOCK_N",
+    "BLOCK_K"
+  ],
+  "_strides2": [
+    "w",
+    "row_axis"
+  ],
+  "RESIDENT_BUDGET": [],
+  "RESIDENT_COLS": [],
+  "_resident": [
+    "cols"
+  ],
+  "_add_scaled_kernel": [
+    "base_ptr",
+    "delta_ptr",
+    "out_ptr",
+    "N",
+    "gamma",
+    "BLOCK"
+  ],
+  "_lokr_bypass_fwd_kernel": [
+    "x_ptr",
+    "w1_ptr",
+    "w2_ptr",
+    "y_ptr",
+    "T",
+    "A",
+    "B",
+    "C",
+    "D",
+    "sxt",
+    "sxi",
+    "s1a",
+    "s1b",
+    "s2c",
+    "s2d",
+    "syt",
+    "syo",
+    "gamma",
+    "PREC",
+    "BT",
+    "PA",
+    "PB",
+    "PC",
+    "PD"
+  ],
+  "_lokr_bypass_bwd_kernel": [
+    "g_ptr",
+    "x_ptr",
+    "w1_ptr",
+    "w2_ptr",
+    "gx_ptr",
+    "gw1_ptr",
+    "gw2_ptr",
+    "T",
+    "A",
+    "B",
+    "C",
+    "D",
+    "sgt",
+    "sgo",
+    "sxt",
+    "sxi",
+    "s1a",
+    "s1b",
+    "s2c",
+    "s2d",
+    "gamma",
+    "PREC",
+    "BT",
+    "PA",
+    "PB",
+    "PC",
+    "PD"
+  ],
+  "_pads": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "_lokr_full_merge_fwd_kernel": [
+    "w1a_ptr",
+    "w1b_ptr",
+    "w2a_ptr",
+    "w2b_ptr",
+    "base_ptr",
+    "out_ptr",
+    "O",
+    "I",
+    "C",
+    "D",
+    "R1",
+    "R2",
+    "s1aa",
+    "s1ar",
+    "s1br",
+    "s1bb",
+    "s2ac",
+    "s2ar",
+    "s2br",
+    "s2bd",
+    "sbo",
+    "sbi",
+    "soo",
+    "soi",
+    "gamma",
+    "ADD_BASE",
+    "GEN1",
+    "GEN2",
+    "PREC",
+    "PR",
+    "BLOCK_M",
+    "BLOCK_N",
+    "BLOCK_K"
+  ],
+  "_lokr_merge_fwd_kernel": [
+    "w1a_ptr",
+    "w1b_ptr",
+    "w2a_ptr",
+    "w2b_ptr",
+    "base_ptr",
+    "out_ptr",
+    "A",
+    "B",
+    "C",
+    "D",
+    "R1",
+    "R2",
+    "s1aa",
+    "s1ar",
+    "s1br",
+    "s1bb",
+    "s2ac",
+    "s2ar",
+    "s2br",
+    "s2bd",
+    "sbo",
+    "sbi",
+    "soo",
+    "soi",
+    "gamma",
+    "NC",
+    "ND",
+    "ADD_BASE",
+    "GEN1",
+    "GEN2",
+    "PREC",
+    "PR",
+    "UV",
+    "BLOCK_M",
+    "BLOCK_N"
+  ],
+  "_lokr_full_merge_bwd_kernel": [
+    "g_ptr",
+    "w1_ptr",
+    "w2_ptr",
+    "gw1_ptr",
+    "gw2_ptr",
+    "A",
+    "B",
+    "C",
+    "D",
+    "sgo",
+    "sgi",
+    "s1u",
+    "s1v",
+    "s2c",
+    "s2d",
+    "gamma",
+    "NC",
+    "ND",
+    "BLOCK_M",
+    "BLOCK_N",
+    "BLOCK_K"
+  ],
+  "_launch_merge_fwd": [
+    "w1a",
+    "w1b",
+    "w2a",
+    "w2b",
+    "shape",
+    "base",
+    "gamma",
+    "out_dtype"
+  ],
+  "_lokr_merge_bwd_kernel": [
+    "g_ptr",
+    "w1a_ptr",
+    "w1b_ptr",
+    "w2a_ptr",
+    "w2b_ptr",
+    "g1a_ptr",
+    "g1b_ptr",
+    "g2a_ptr",
+    "g2b_ptr",
+    "A",
+    "B",
+    "C",
+    "D",
+    "R1",
+    "R2",
+    "sgo",
+    "sgi",
+    "s1aa",
+    "s1ar",
+    "s1br",
+    "s1bb",
+    "s2ac",
+    "s2ar",
+    "s2br",
+    "s2bd",
+    "gamma",
+    "NC",
+    "ND",
+    "GA",
+    "GEN1",
+    "GEN2",
+    "PREC",
+    "PR",
+    "BLOCK_M",
+    "BLOCK_N"
+  ],
+  "_dxn_kernel": [
+    "g_ptr",
+    "w1_ptr",
+    "w2_ptr",
+    "gx_ptr",
+    "n_ptr",
+    "n_tok",
+    "n_a",
+    "n_b",
+    "n_c",
+    "n_d",
+    "s1a",
+    "s1b",
+    "s2c",
+    "s2d",
+    "scale",
+    "prec",
+    "block_t",
+    "pa",
+    "pb",
+    "block_c",
+    "block_d"
+  ],
+  "_gw1_kernel": [
+    "g_ptr",
+    "m_ptr",
+    "part_ptr",
+    "n_tok",
+    "n_a",
+    "n_b",
+    "n_c",
+    "prec",
+    "block_t",
+    "pa",
+    "pb",
+    "block_c"
+  ],
+  "_tiles": [
+    "a",
+    "b"
+  ],
+  "_plan_dxn": [
+    "dev",
+    "t",
+    "a",
+    "b",
+    "c",
+    "d",
+    "e"
+  ],
+  "_TILE_BUDGET": [],
+  "_bypass_kernel": [
+    "x_ptr",
+    "w1_ptr",
+    "w2_ptr",
+    "b_ptr",
+    "y_ptr",
+    "n_tok",
+    "n_a",
+    "n_b",
+    "n_c",
+    "n_d",
+    "sxt",
+    "sxi",
+    "s1a",
+    "s1b",
+    "s2c",
+    "s2d",
+    "sbt",
+    "sbo",
+    "syt",
+    "syo",
+    "scale",
+    "has_base",
+    "prec",
+    "block_t",
+    "block_v",
+    "block_d",
+    "block_c",
+    "block_a"
+  ],
+  "_bypass_batch_kernel": [
+    "x_ptr",
+    "w1_ptr",
+    "w2_ptr",
+    "b_ptr",
+    "y_ptr",
+    "n_tok",
+    "n_a",
+    "n_b",
+    "n_c",
+    "n_d",
+    "sxt",
+    "sxi",
+    "s1a",
+    "s1b",
+    "s2c",
+    "s2d",
+    "sbt",
+    "sbo",
+    "syt",
+    "syo",
+    "scale",
+    "has_base",
+    "prec",
+    "block_t",
+    "block_v",
+    "block_d",
+    "block_c",
+    "block_a"
+  ],
+  "_factor_blocks": [
+    "n"
+  ],
+  "_apply_run": [
+    "cfg",
+    "flat",
+    "w1",
+    "w2",
+    "scale",
+    "base2",
+    "out_dtype"
+  ],
+  "TILED": [],
+  "_merge_fwd_kernel": [
+    "w1_ptr",
+    "w2_ptr",
+    "w_ptr",
+    "out_ptr",
+    "n_out",
+    "n_in",
+    "n_c",
+    "n_d",
+    "s1u",
+    "s1v",
+    "s2c",
+    "s2d",
+    "swo",
+    "swi",
+    "soo",
+    "soi",
+    "scale",
+    "add_base",
+    "block_m",
+    "block_n"
+  ],
+  "_merge_bwd_kernel": [
+    "g_ptr",
+    "w1_ptr",
+    "w2_ptr",
+    "gw1_ptr",
+    "gw2_ptr",
+    "n_a",
+    "n_b",
+    "n_c",
+    "n_d",
+    "sgo",
+    "sgi",
+    "s1u",
+    "s1v",
+    "s2c",
+    "s2d",
+    "scale",
+    "tiles_c",
+    "tiles_d",
+    "split",
+    "block_m",
+    "block_n"
+  ],
+  "_bypass_fwd_kernel": [
+    "x_ptr",
+    "d_ptr",
+    "u_ptr",
+    "out_ptr",
+    "T",
+    "O",
+    "I",
+    "R",
+    "sxt",
+    "sxi",
+    "sdr",
+    "sdi",
+    "suo",
+    "sur",
+    "sot",
+    "soo",
+    "gamma",
+    "PREC",
+    "BR",
+    "BLOCK_M",
+    "BLOCK_N",
+    "BLOCK_K"
+  ],
+  "_bypass_bwd_kernel": [
+    "x_ptr",
+    "d_ptr",
+    "u_ptr",
+    "g_ptr",
+    "gx_ptr",
+    "gu_ptr",
+    "gd_ptr",
+    "T",
+    "O",
+    "I",
+    "R",
+    "sxt",
+    "sxi",
+    "sdr",
+    "sdi",
+    "suo",
+    "sur",
+    "sgt",
+    "sgo",
+    "gamma",
+    "PREC",
+    "BR",
+    "BLOCK_M",
+    "BLOCK_N",
+    "BLOCK_K"
+  ],
+  "_ieee": [],
+  "_merge_bwd_tile_kernel": [
+    "g_ptr",
+    "u_ptr",
+    "d_ptr",
+    "gu_ptr",
+    "gd_ptr",
+    "n_out",
+    "n_in",
+    "rank",
+    "sgo",
+    "sgi",
+    "suo",
+    "sur",
+    "sdr",
+    "sdi",
+    "prec",
+    "block_r",
+    "block_m",
+    "block_n"
+  ],
+  "_rebuild_kernel": [
+    "a1_ptr",
+    "b1_ptr",
+    "a2_ptr",
+    "b2_ptr",
+    "base_ptr",
+    "out_ptr",
+    "O",
+    "I",
+    "R",
+    "sa1o",
+    "sa1r",
+    "sb1r",
+    "sb1i",
+    "sa2o",
+    "sa2r",
+    "sb2r",
+    "sb2i",
+    "sbo",
+    "sbi",
+    "soo",
+    "soi",
+    "gamma",
+    "MODE",
+    "ADD_BASE",
+    "PREC",
+    "BR",
+    "BLOCK_M",
+    "BLOCK_N",
+    "BLOCK_K"
+  ],
+  "_rebuild_tucker_kernel": [
+    "a1_ptr",
+    "b1_ptr",
+    "t1_ptr",
+    "a2_ptr",
+    "b2_ptr",
+    "t2_ptr",
+    "out_ptr",
+    "O",
+    "I",
+    "K",
+    "R",
+    "sa1o",
+    "sa1r",
+    "sb1r",
+    "sb1i",
+    "st1p",
+    "st1q",
+    "st1k",
+    "sa2o",
+    "sa2r",
+    "sb2r",
+    "sb2i",
+    "st2p",
+    "st2q",
+    "st2k",
+    "soo",
+    "soi",
+    "sok",
+    "gamma",
+    "HADA",
+    "PREC",
+    "BR",
+    "BLOCK_M",
+    "BLOCK_N",
+    "BLOCK_K"
+  ],
+  "_loha_merge_bwd_kernel": [
+    "g_ptr",
+    "a1_ptr",
+    "b1_ptr",
+    "a2_ptr",
+    "b2_ptr",
+    "ga1_ptr",
+    "gb1_ptr",
+    "ga2_ptr",
+    "gb2_ptr",
+    "O",
+    "I",
+    "R",
+    "sgo",
+    "sgi",
+    "sa1o",
+    "sa1r",
+    "sb1r",
+    "sb1i",
+    "sa2o",
+    "sa2r",
+    "sb2r",
+    "sb2i",
+    "gamma",
+    "GA",
+    "PREC",
+    "BR",
+    "BLOCK_M",
+    "BLOCK_N",
+    "BLOCK_K"
+  ],
+  "_plan_bypass_fwd": [
+    "dev",
+    "t",
+    "o",
+    "i",
+    "r",
+    "e",
+    "has_base"
+  ],
+  "_plan_bypass_bwd": [
+    "dev",
+    "t",
+    "o",
+    "i",
+    "r",
+    "e"
+  ],
+  "_torch_bypass": [
+    "flat",
+    "u",
+    "d",
+    "scale",
+    "base2",
+    "out_dtype"
+  ],
+  "_bypass_fwd_run": [
+    "cfg",
+    "flat",
+    "u",
+    "d",
+    "scale",
+    "base2",
+    "out_dtype"
+  ],
+  "_bypass_bwd_run": [
+    "cfg",
+    "g2",
+    "flat",
+    "u",
+    "d",
+    "scale"
+  ],
+  "_scale_fwd_kernel": [
+    "x_ptr",
+    "w_ptr",
+    "y_ptr",
+    "N",
+    "C",
+    "INNER",
+    "alpha",
+    "gamma",
+    "BLOCK"
+  ],
+  "_scale_bwd_kernel": [
+    "g_ptr",
+    "x_ptr",
+    "w_ptr",
+    "gx_ptr",
+    "gw_ptr",
+    "N",
+    "C",
+    "INNER",
+    "alpha",
+    "gamma",
+    "BLOCK",
+    "SLICES"
+  ],
+  "_gen_w_tile": [
+    "a1_ptr",
+    "b1_ptr",
+    "a2_ptr",
+    "b2_ptr",
+    "ro",
+    "ri",
+    "mo",
+    "mi",
+    "R",
+    "sa1o",
+    "sa1r",
+    "sb1r",
+    "sb1i",
+    "sa2o",
+    "sa2r",
+    "sb2r",
+    "sb2i",
+    "PREC",
+    "BR"
+  ],
+  "_loha_bypass_fwd_kernel": [
+    "x_ptr",
+    "a1_ptr",
+    "b1_ptr",
+    "a2_ptr",
+    "b2_ptr",
+    "y_ptr",
+    "T",
+    "O",
+    "I",
+    "R",
+    "sxt",
+    "sxi",
+    "sa1o",
+    "sa1r",
+    "sb1r",
+    "sb1i",
+    "sa2o",
+    "sa2r",
+    "sb2r",
+    "sb2i",
+    "syt",
+    "syo",
+    "gamma",
+    "TRANS_W",
+    "PREC",
+    "BR",
+    "BLOCK_M",
+    "BLOCK_N",
+    "BLOCK_K"
+  ],
+  "_loha_bypass_bwd_dw_kernel": [
+    "g_ptr",
+    "x_ptr",
+    "a1_ptr",
+    "b1_ptr",
+    "a2_ptr",
+    "b2_ptr",
+    "ga1_ptr",
+    "gb1_ptr",
+    "ga2_ptr",
+    "gb2_ptr",
+    "T",
+    "O",
+    "I",
+    "R",
+    "sgt",
+    "sgo",
+    "sxt",
+    "sxi",
+    "sa1o",
+    "sa1r",
+    "sb1r",
+    "sb1i",
+    "sa2o",
+    "sa2r",
+    "sb2r",
+    "sb2i",
+    "gamma",
+    "PREC",
+    "BR",
+    "BLOCK_M",
+    "BLOCK_N",
+    "BLOCK_K"
+  ],
+  "_loha_bypass_bwd_kernel": [
+    "g_ptr",
+    "x_ptr",
+    "a1_ptr",
+    "b1_ptr",
+    "a2_ptr",
+    "b2_ptr",
+    "gx_ptr",
+    "ga1_ptr",
+    "gb1_ptr",
+    "ga2_ptr",
+    "gb2_ptr",
+    "T",
+    "O",
+    "I",
+    "R",
+    "sgt",
+    "sgo",
+    "sxt",
+    "sxi",
+    "sa1o",
+    "sa1r",
+    "sb1r",
+    "sb1i",
+    "sa2o",
+    "sa2r",
+    "sb2r",
+    "sb2i",
+    "sgxt",
+    "sgxi",
+    "gamma",
+    "GA",
+    "PREC",
+    "BR",
+    "BLOCK_M",
+    "BLOCK_N",
+    "BLOCK_K"
+  ],
+  "_launch_delta": [
+    "x",
+    "a1",
+    "b1",
+    "a2",
+    "b2",
+    "gamma",
+    "out_cols",
+    "trans_w"
+  ],
+  "loha_bypass_bwd_dx": [
+    "grad",
+    "a1",
+    "b1",
+    "a2",
+    "b2",
+    "gamma"
+  ],
+  "loha_bypass_bwd_dw": [
+    "grad",
+    "x",
+    "a1",
+    "b1",
+    "a2",
+    "b2",
+    "gamma"
+  ],
+  "MATERIALIZE_ADD": [],
+  "_bypass_regen_kernel": [
+    "x_ptr",
+    "a1_ptr",
+    "b1_ptr",
+    "a2_ptr",
+    "b2_ptr",
+    "b_ptr",
+    "y_ptr",
+    "n_tok",
+    "n_out",
+    "n_in",
+    "rank",
+    "sxt",
+    "sxi",
+    "sa1o",
+    "sa1r",
+    "sb1r",
+    "sb1i",
+    "sa2o",
+    "sa2r",
+    "sb2r",
+    "sb2i",
+    "sbt",
+    "sbo",
+    "syt",
+    "syo",
+    "scale",
+    "has_base",
+    "prec",
+    "block_r",
+    "block_m",
+    "block_n",
+    "block_k"
+  ],
+  "_plan_bypass": [
+    "dev",
+    "t",
+    "o",
+    "i",
+    "r",
+    "e",
+    "has_base"
+  ]
+}
