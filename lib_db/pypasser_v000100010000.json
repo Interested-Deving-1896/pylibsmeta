@@ -1,0 +1,1683 @@
+{
+  "SolverResult": {},
+  "SUPPORTED_SCHEMES": [],
+  "normalize_proxy_url": [
+    "proxy"
+  ],
+  "build_httpx_mounts": [
+    "proxy"
+  ],
+  "httpx_client_kwargs": [
+    "timeout",
+    "headers",
+    "proxy"
+  ],
+  "PyPasserError": {},
+  "RequestFailed": {},
+  "InvalidAnchorURL": {},
+  "RecaptchaTokenNotFound": {},
+  "RecaptchaResponseNotFound": {},
+  "AudioDecodeError": {},
+  "InvalidProxyURL": {},
+  "UnknownBackend": {},
+  "BackendNotAsync": {},
+  "IpBlock": {
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "ArvanChallengeError": {},
+  "ArvanBypassError": {},
+  "CloudflareError": {},
+  "CloudflareClearanceError": {},
+  "ARCaptchaError": {},
+  "ARCaptchaBlocked": {},
+  "ARCaptchaSolveFailed": {},
+  "LeminError": {},
+  "LeminSolveFailed": {},
+  "GeeTestError": {},
+  "GeeTestSolveFailed": {},
+  "RequestRateLimited": {},
+  "__version__": [],
+  "__all__": [],
+  "correlate_valid": [
+    "img",
+    "kernel"
+  ],
+  "_correlate_valid": [],
+  "score_map": [
+    "image",
+    "template"
+  ],
+  "best_match": [
+    "image",
+    "template"
+  ],
+  "best_match_in_band": [
+    "scores",
+    "center_row",
+    "tolerance"
+  ],
+  "_DEFAULT_LOW": [],
+  "_DEFAULT_HIGH": [],
+  "_gaussian": [
+    "img",
+    "size"
+  ],
+  "_sobel": [
+    "img"
+  ],
+  "sobel_magnitude": [
+    "gray"
+  ],
+  "_dilate": [
+    "mask"
+  ],
+  "_non_max_suppression": [
+    "mag",
+    "angle"
+  ],
+  "canny": [
+    "gray",
+    "low",
+    "high",
+    "blur"
+  ],
+  "SAMPLE_RATE": [],
+  "_pydub_configured": [],
+  "ensure_ffmpeg": [],
+  "convert_to_wav": [
+    "mp3_path",
+    "sample_rate"
+  ],
+  "cleanup_audio": [
+    "mp3_path"
+  ],
+  "decode_to_pcm": [
+    "audio",
+    "sample_rate"
+  ],
+  "_MODEL_LOCK": [],
+  "_vosk": [],
+  "load_model": [],
+  "recognize_pcm": [
+    "pcm",
+    "model",
+    "grammar",
+    "sample_rate"
+  ],
+  "transcribe_file": [
+    "path",
+    "model",
+    "sample_rate"
+  ],
+  "_ms": [
+    "timeout"
+  ],
+  "_is_click_geometry_error": [
+    "exc"
+  ],
+  "PlaywrightAdapter": {
+    "__init__": [
+      "self",
+      "page"
+    ],
+    "_locator": [
+      "self",
+      "css",
+      "frame"
+    ],
+    "click": [
+      "self",
+      "css",
+      "frame",
+      "timeout",
+      "force"
+    ],
+    "attr": [
+      "self",
+      "css",
+      "attribute",
+      "frame",
+      "timeout"
+    ],
+    "type": [
+      "self",
+      "css",
+      "text",
+      "frame",
+      "submit",
+      "timeout"
+    ],
+    "exists": [
+      "self",
+      "css",
+      "frame"
+    ],
+    "visible": [
+      "self",
+      "css",
+      "frame"
+    ],
+    "page_source": [
+      "self"
+    ],
+    "cookies": [
+      "self"
+    ],
+    "user_agent": [
+      "self"
+    ],
+    "frames_html": [
+      "self",
+      "url_contains"
+    ]
+  },
+  "AsyncPlaywrightAdapter": {
+    "__init__": [
+      "self",
+      "page"
+    ],
+    "_locator": [
+      "self",
+      "css",
+      "frame"
+    ],
+    "click": [
+      "self",
+      "css",
+      "frame",
+      "timeout",
+      "force"
+    ],
+    "attr": [
+      "self",
+      "css",
+      "attribute",
+      "frame",
+      "timeout"
+    ],
+    "type": [
+      "self",
+      "css",
+      "text",
+      "frame",
+      "submit",
+      "timeout"
+    ],
+    "exists": [
+      "self",
+      "css",
+      "frame"
+    ],
+    "visible": [
+      "self",
+      "css",
+      "frame"
+    ],
+    "page_source": [
+      "self"
+    ],
+    "cookies": [
+      "self"
+    ],
+    "user_agent": [
+      "self"
+    ],
+    "frames_html": [
+      "self",
+      "url_contains"
+    ]
+  },
+  "_build": [
+    "response_token",
+    "cookies",
+    "user_agent"
+  ],
+  "session_result": [
+    "adapter",
+    "response_token"
+  ],
+  "asession_result": [
+    "adapter",
+    "response_token"
+  ],
+  "BrowserAdapter": {
+    "click": [
+      "self",
+      "css",
+      "frame",
+      "timeout",
+      "force"
+    ],
+    "attr": [
+      "self",
+      "css",
+      "attribute",
+      "frame",
+      "timeout"
+    ],
+    "type": [
+      "self",
+      "css",
+      "text",
+      "frame",
+      "submit",
+      "timeout"
+    ],
+    "exists": [
+      "self",
+      "css",
+      "frame"
+    ],
+    "visible": [
+      "self",
+      "css",
+      "frame"
+    ],
+    "page_source": [
+      "self"
+    ],
+    "frames_html": [
+      "self",
+      "url_contains"
+    ],
+    "cookies": [
+      "self"
+    ],
+    "user_agent": [
+      "self"
+    ]
+  },
+  "AsyncBrowserAdapter": {
+    "click": [
+      "self",
+      "css",
+      "frame",
+      "timeout",
+      "force"
+    ],
+    "attr": [
+      "self",
+      "css",
+      "attribute",
+      "frame",
+      "timeout"
+    ],
+    "type": [
+      "self",
+      "css",
+      "text",
+      "frame",
+      "submit",
+      "timeout"
+    ],
+    "exists": [
+      "self",
+      "css",
+      "frame"
+    ],
+    "visible": [
+      "self",
+      "css",
+      "frame"
+    ],
+    "page_source": [
+      "self"
+    ],
+    "frames_html": [
+      "self",
+      "url_contains"
+    ],
+    "cookies": [
+      "self"
+    ],
+    "user_agent": [
+      "self"
+    ]
+  },
+  "_class_module": [
+    "obj"
+  ],
+  "_is_playwright_page": [
+    "marker"
+  ],
+  "detect": [
+    "obj"
+  ],
+  "adetect": [
+    "obj"
+  ],
+  "get_adapter": [
+    "backend",
+    "obj"
+  ],
+  "aget_adapter": [
+    "backend",
+    "obj"
+  ],
+  "AsyncARCaptchaSolver": {
+    "solve": [
+      "self",
+      "attempts"
+    ],
+    "_post": [
+      "self",
+      "client",
+      "path",
+      "payload",
+      "params"
+    ],
+    "_get": [
+      "self",
+      "client",
+      "path"
+    ],
+    "_create": [
+      "self",
+      "client",
+      "path"
+    ],
+    "_answer": [
+      "self",
+      "client",
+      "payload"
+    ],
+    "_solve_once": [
+      "self",
+      "client"
+    ],
+    "_answer_payload": [
+      "self",
+      "client",
+      "data"
+    ],
+    "_solve_puzzle": [
+      "self",
+      "client",
+      "content"
+    ],
+    "_solve_voice": [
+      "self",
+      "client"
+    ]
+  },
+  "rand32": [],
+  "build_bowman": [
+    "site_key",
+    "domain"
+  ],
+  "_headers": [
+    "domain",
+    "lang",
+    "ua"
+  ],
+  "_client_kwargs": [
+    "proxy",
+    "timeout",
+    "ua"
+  ],
+  "_ARCore": {
+    "__init__": [
+      "self",
+      "site_key",
+      "domain"
+    ],
+    "_bowman": [
+      "self"
+    ],
+    "_create_params": [
+      "self",
+      "bowman"
+    ],
+    "_answer_params": [
+      "self"
+    ],
+    "_puzzle_urls": [
+      "self",
+      "content"
+    ],
+    "_puzzle_payload": [
+      "self",
+      "challenge_id",
+      "x"
+    ],
+    "_voice_payload": [
+      "self",
+      "challenge_id",
+      "text"
+    ]
+  },
+  "ARCaptchaSolver": {
+    "solve": [
+      "self",
+      "attempts"
+    ],
+    "_post": [
+      "self",
+      "client",
+      "path",
+      "payload",
+      "params"
+    ],
+    "_get": [
+      "self",
+      "client",
+      "path"
+    ],
+    "_create": [
+      "self",
+      "client",
+      "path"
+    ],
+    "_answer": [
+      "self",
+      "client",
+      "payload"
+    ],
+    "_solve_once": [
+      "self",
+      "client"
+    ],
+    "_answer_payload": [
+      "self",
+      "client",
+      "data"
+    ],
+    "_solve_puzzle": [
+      "self",
+      "client",
+      "content"
+    ],
+    "_solve_voice": [
+      "self",
+      "client"
+    ]
+  },
+  "DEFAULT_MODEL": [],
+  "normalize_text": [
+    "text"
+  ],
+  "transcribe": [
+    "mp3_path",
+    "model_name"
+  ],
+  "_F_INIT": [],
+  "_rol8": [
+    "value",
+    "n"
+  ],
+  "_ror8": [
+    "value",
+    "n"
+  ],
+  "ob_encode": [
+    "obj"
+  ],
+  "db_decode": [
+    "data"
+  ],
+  "API_BASE": [],
+  "DEFAULT_UA": [],
+  "INSTANT_TYPES": [],
+  "BLOCK_TYPE": [],
+  "VOICE_TYPES": [],
+  "VOICE_ANSWER_TYPE": [],
+  "TOKEN_INPUT_SELECTOR": [],
+  "_resolve_target": [
+    "first",
+    "site_key",
+    "page"
+  ],
+  "solve": [
+    "first"
+  ],
+  "asolve": [
+    "first"
+  ],
+  "_DARK_THRESHOLD": [],
+  "_MAX_MEAN": [],
+  "_MAX_STD": [],
+  "_MIN_COMPONENT_PX": [],
+  "_MIN_SIDE": [],
+  "_MAX_SIDE": [],
+  "PuzzleSolution": {},
+  "_components": [
+    "mask"
+  ],
+  "_alpha_bbox": [
+    "piece"
+  ],
+  "_candidates": [
+    "background",
+    "expected_top"
+  ],
+  "solve_puzzle": [
+    "background",
+    "piece",
+    "y"
+  ],
+  "_POLL_INTERVAL": [],
+  "PageARCaptchaSolver": {
+    "solve": [
+      "self",
+      "page",
+      "site_key",
+      "domain",
+      "token_wait",
+      "attempts"
+    ],
+    "_read_token": [
+      "self",
+      "adapter",
+      "timeout"
+    ],
+    "_inject": [
+      "self",
+      "adapter",
+      "token"
+    ]
+  },
+  "AsyncPageARCaptchaSolver": {
+    "solve": [
+      "self",
+      "page",
+      "site_key",
+      "domain",
+      "token_wait",
+      "attempts"
+    ],
+    "_read_token": [
+      "self",
+      "adapter",
+      "timeout"
+    ],
+    "_inject": [
+      "self",
+      "adapter",
+      "token"
+    ]
+  },
+  "AsyncGeeTestV4Solver": {
+    "solve": [
+      "self",
+      "attempts"
+    ]
+  },
+  "SUPPORTED_RISK_TYPES": [],
+  "ANSWER_ORDER": [],
+  "_DECRYPT_ERROR_CODES": [],
+  "_SWEEPS": [],
+  "_V4Core": {
+    "__init__": [
+      "self",
+      "captcha_id"
+    ],
+    "_client_kwargs": [
+      "self"
+    ],
+    "_parse_load": [
+      "response"
+    ],
+    "_parse_auto": [
+      "self",
+      "probe"
+    ],
+    "_seccode": [
+      "response"
+    ],
+    "_verdict": [
+      "response"
+    ],
+    "_should_recover": [
+      "self",
+      "verdict",
+      "sweep"
+    ],
+    "_widget_script_url": [
+      "data"
+    ],
+    "_recover_key": [
+      "self",
+      "script"
+    ],
+    "_build_fields": [
+      "self",
+      "data",
+      "fields",
+      "modulus"
+    ],
+    "_trials": [
+      "self",
+      "data",
+      "images",
+      "svg"
+    ]
+  },
+  "GeeTestV4Solver": {
+    "_get_text": [
+      "self",
+      "client",
+      "url"
+    ],
+    "_get_bytes": [
+      "self",
+      "client",
+      "url"
+    ],
+    "_fetch_images": [
+      "self",
+      "client",
+      "data"
+    ],
+    "_load": [
+      "self",
+      "client"
+    ],
+    "_load_auto": [
+      "self",
+      "client"
+    ],
+    "_get_jsonp": [
+      "self",
+      "client",
+      "url",
+      "callback"
+    ],
+    "_verify": [
+      "self",
+      "client",
+      "data",
+      "w"
+    ],
+    "_script_text": [
+      "self",
+      "client",
+      "url"
+    ],
+    "_signing_key": [
+      "self",
+      "client",
+      "data"
+    ],
+    "_refresh_key": [
+      "self",
+      "client",
+      "data"
+    ],
+    "_answer": [
+      "self",
+      "method",
+      "client",
+      "data"
+    ],
+    "_voice_fallback": [
+      "self",
+      "client"
+    ],
+    "_solve_once": [
+      "self",
+      "client"
+    ],
+    "solve": [
+      "self",
+      "attempts"
+    ]
+  },
+  "Board": [],
+  "Cell": [],
+  "_neighbours": [
+    "size"
+  ],
+  "_swapped": [
+    "board",
+    "first",
+    "second"
+  ],
+  "_completes_line": [
+    "grid"
+  ],
+  "solve_board": [
+    "board"
+  ],
+  "answer_fields": [
+    "board"
+  ],
+  "_EMPTY": [],
+  "_lines": [
+    "size"
+  ],
+  "_complete_line": [
+    "board",
+    "line"
+  ],
+  "_removable": [
+    "board",
+    "token",
+    "line"
+  ],
+  "VOICE_MODEL_LANG": [],
+  "_WORDS": [],
+  "digits": [
+    "transcript"
+  ],
+  "_model": [
+    "model_path"
+  ],
+  "_USER_RESPONSE_SCALE": [],
+  "_USER_RESPONSE_OFFSET": [],
+  "_ROW_TOLERANCE": [],
+  "_to_gray": [
+    "raw"
+  ],
+  "piece_left": [
+    "background_png",
+    "piece_png",
+    "ypos"
+  ],
+  "user_response": [
+    "left"
+  ],
+  "fields": [
+    "risk_type",
+    "data",
+    "images",
+    "voice_model_path"
+  ],
+  "FRAME_COUNT": [],
+  "GRID": [],
+  "_DURATION": [],
+  "_MARK": [],
+  "Window": [],
+  "frame_windows": [
+    "svg"
+  ],
+  "passtime": [
+    "windows",
+    "duration_ms",
+    "frame"
+  ],
+  "trials": [
+    "svg"
+  ],
+  "_RATE_LIMIT_STATUSES": [],
+  "_shed": [
+    "resp"
+  ],
+  "_preferred": [],
+  "_mirror_path": [
+    "url"
+  ],
+  "_check_status": [
+    "resp",
+    "url"
+  ],
+  "request": [
+    "client",
+    "url"
+  ],
+  "arequest": [
+    "client",
+    "url"
+  ],
+  "_host_order": [],
+  "callback_name": [],
+  "parse_jsonp": [
+    "body",
+    "callback"
+  ],
+  "unwrap": [
+    "body",
+    "callback"
+  ],
+  "client_kwargs": [
+    "proxy",
+    "timeout",
+    "user_agent"
+  ],
+  "base_params": [
+    "callback",
+    "captcha_id"
+  ],
+  "load_url": [
+    "captcha_id",
+    "risk_type",
+    "lang",
+    "callback"
+  ],
+  "verify_url": [
+    "captcha_id",
+    "risk_type",
+    "lot_number",
+    "payload",
+    "process_token",
+    "w",
+    "callback"
+  ],
+  "asset_url": [
+    "path"
+  ],
+  "require_data": [
+    "data"
+  ],
+  "headers": [],
+  "_ZERO_IV": [],
+  "random_uid": [],
+  "_aes_cbc": [
+    "key",
+    "plaintext"
+  ],
+  "_rsa_encrypt_uid": [
+    "uid",
+    "modulus"
+  ],
+  "sign": [
+    "payload",
+    "pt",
+    "modulus"
+  ],
+  "_PARTIAL_MAX": [],
+  "prefix": [
+    "version",
+    "bits",
+    "hashfunc",
+    "datetime",
+    "captcha_id",
+    "lot_number"
+  ],
+  "hash_meets_bits": [
+    "digest_hex",
+    "bits"
+  ],
+  "solve_pow": [
+    "prefix_str",
+    "hashfunc",
+    "bits",
+    "max_attempts"
+  ],
+  "solve_from_detail": [
+    "detail",
+    "captcha_id",
+    "lot_number"
+  ],
+  "_DECODE_RE": [],
+  "_KEY_RE": [],
+  "_HEX_RE": [],
+  "_deobfuscate": [
+    "script"
+  ],
+  "extract_modulus": [
+    "script"
+  ],
+  "remember": [
+    "modulus"
+  ],
+  "recovered": [],
+  "current": [],
+  "reset": [],
+  "BASES": [],
+  "STATIC_BASE": [],
+  "REFERER": [],
+  "DEFAULT_LANG": [],
+  "RSA_EXPONENT": [],
+  "JS_KEY_PATTERN": [],
+  "MODULUS_MIN_HEX": [],
+  "speech_to_text": [
+    "wav_path",
+    "model_name"
+  ],
+  "_is_valid_mp3": [
+    "data"
+  ],
+  "download_audio": [
+    "link",
+    "dest_dir"
+  ],
+  "AsyncV2Solver": {
+    "__init__": [
+      "self",
+      "play",
+      "attempts",
+      "timeout",
+      "audio_step"
+    ],
+    "solve": [
+      "self",
+      "adapter"
+    ],
+    "_click_checkbox": [
+      "self",
+      "adapter"
+    ],
+    "_checkbox_available": [
+      "self",
+      "adapter"
+    ],
+    "_click_audio_button": [
+      "self",
+      "adapter"
+    ],
+    "_poll_until": [
+      "self",
+      "adapter",
+      "check",
+      "wait"
+    ],
+    "_guarded_click": [
+      "self",
+      "adapter",
+      "css",
+      "frame"
+    ],
+    "_guarded_attr": [
+      "self",
+      "adapter",
+      "css",
+      "attribute",
+      "frame"
+    ],
+    "_get_audio_link": [
+      "self",
+      "adapter",
+      "previous_link"
+    ],
+    "_wait_for_new_link": [
+      "self",
+      "adapter",
+      "previous_link"
+    ],
+    "_is_multi_solve_required": [
+      "self",
+      "adapter"
+    ],
+    "_submit_answer": [
+      "self",
+      "adapter",
+      "text"
+    ],
+    "_is_enabled": [
+      "self",
+      "adapter",
+      "css",
+      "frame"
+    ],
+    "_is_checked": [
+      "self",
+      "adapter",
+      "wait",
+      "fail_fast",
+      "until_challenge"
+    ],
+    "_looks_solved": [
+      "self",
+      "adapter"
+    ],
+    "_read_token": [
+      "self",
+      "adapter",
+      "timeout"
+    ],
+    "_result": [
+      "self",
+      "adapter"
+    ],
+    "_raise_if_ip_blocked": [
+      "self",
+      "adapter"
+    ],
+    "_is_ip_blocked": [
+      "self",
+      "adapter"
+    ]
+  },
+  "CHECKBOX_FRAME": [],
+  "AUDIO_FRAME": [],
+  "CHECKBOX_SELECTOR": [],
+  "AUDIO_BUTTON_SELECTOR": [],
+  "DOWNLOAD_SELECTOR": [],
+  "PLAY_BUTTON_SELECTOR": [],
+  "RESPONSE_SELECTOR": [],
+  "CHECKED_SELECTORS": [],
+  "IP_BLOCK_MARKERS": [],
+  "MULTI_SOLVE_MARKERS": [],
+  "GOOGLE_FRAME_URL": [],
+  "POLL_INTERVAL": [],
+  "TOKEN_SELECTORS": [],
+  "_default_audio_step": [
+    "link",
+    "dest_dir"
+  ],
+  "V2Solver": {
+    "__init__": [
+      "self",
+      "play",
+      "attempts",
+      "timeout",
+      "audio_step"
+    ],
+    "solve": [
+      "self",
+      "adapter"
+    ],
+    "_click_checkbox": [
+      "self",
+      "adapter"
+    ],
+    "_checkbox_available": [
+      "self",
+      "adapter"
+    ],
+    "_click_audio_button": [
+      "self",
+      "adapter"
+    ],
+    "_poll_until": [
+      "self",
+      "adapter",
+      "check",
+      "wait"
+    ],
+    "_guarded_click": [
+      "self",
+      "adapter",
+      "css",
+      "frame"
+    ],
+    "_guarded_attr": [
+      "self",
+      "adapter",
+      "css",
+      "attribute",
+      "frame"
+    ],
+    "_get_audio_link": [
+      "self",
+      "adapter",
+      "previous_link"
+    ],
+    "_wait_for_new_link": [
+      "self",
+      "adapter",
+      "previous_link"
+    ],
+    "_is_multi_solve_required": [
+      "self",
+      "adapter"
+    ],
+    "_submit_answer": [
+      "self",
+      "adapter",
+      "text"
+    ],
+    "_is_enabled": [
+      "self",
+      "adapter",
+      "css",
+      "frame"
+    ],
+    "_is_checked": [
+      "self",
+      "adapter",
+      "wait",
+      "fail_fast",
+      "until_challenge"
+    ],
+    "_looks_solved": [
+      "self",
+      "adapter"
+    ],
+    "_read_token": [
+      "self",
+      "adapter",
+      "timeout"
+    ],
+    "_result": [
+      "self",
+      "adapter"
+    ],
+    "_raise_if_ip_blocked": [
+      "self",
+      "adapter"
+    ],
+    "_is_ip_blocked": [
+      "self",
+      "adapter"
+    ]
+  },
+  "API_JS_URL": [],
+  "_RELEASES_RE": [],
+  "_CACHE_TTL": [],
+  "_api_name": [
+    "endpoint"
+  ],
+  "pick_release_version": [
+    "js_text"
+  ],
+  "_store": [
+    "endpoint",
+    "version"
+  ],
+  "latest_render_version": [
+    "endpoint",
+    "client",
+    "timeout"
+  ],
+  "alatest_render_version": [
+    "endpoint",
+    "client",
+    "timeout"
+  ],
+  "clear_cache": [],
+  "AsyncV3Solver": {
+    "solve": [
+      "self"
+    ],
+    "_run": [
+      "self",
+      "client"
+    ]
+  },
+  "BASE_URL": [],
+  "BASE_HEADERS": [],
+  "POST_DATA": [],
+  "ANCHOR_RE": [],
+  "ParsedAnchor": {},
+  "parse_anchor_url": [
+    "anchor_url"
+  ],
+  "_TOKEN_RE": [],
+  "_RESP_RE": [],
+  "_DEFAULT_TIMEOUT": [],
+  "_V3Core": {
+    "__init__": [
+      "self",
+      "anchor_url",
+      "proxy",
+      "timeout"
+    ],
+    "_anchor_params": [
+      "self"
+    ],
+    "_token_url": [
+      "self"
+    ],
+    "_reload_url": [
+      "self"
+    ],
+    "_post_data": [
+      "self",
+      "token"
+    ],
+    "_extract_token": [
+      "self",
+      "text"
+    ],
+    "_extract_response": [
+      "self",
+      "text"
+    ]
+  },
+  "_wrap_request_error": [
+    "exc"
+  ],
+  "V3Solver": {
+    "solve": [
+      "self"
+    ],
+    "_run": [
+      "self",
+      "client"
+    ]
+  },
+  "_TOKEN_SELECTOR": [],
+  "PageV3Solver": {
+    "solve": [
+      "self",
+      "page",
+      "timeout"
+    ]
+  },
+  "AsyncPageV3Solver": {
+    "solve": [
+      "self",
+      "page",
+      "timeout"
+    ]
+  },
+  "AsyncTurnstileSolver": {
+    "__init__": [
+      "self",
+      "attempts",
+      "timeout"
+    ],
+    "_result": [
+      "self",
+      "token",
+      "adapter"
+    ],
+    "solve": [
+      "self",
+      "adapter"
+    ],
+    "_find_widget_frame": [
+      "self",
+      "adapter",
+      "interstitial",
+      "window",
+      "deadline"
+    ],
+    "_click_checkbox": [
+      "self",
+      "adapter",
+      "frame"
+    ],
+    "_is_challenge_page": [
+      "self",
+      "adapter"
+    ],
+    "_read_token": [
+      "self",
+      "adapter"
+    ],
+    "_wait_for_token": [
+      "self",
+      "adapter",
+      "wait",
+      "until_cleared",
+      "deadline"
+    ]
+  },
+  "WIDGET_FRAME_SELECTORS": [],
+  "CHECKBOX_SELECTORS": [],
+  "ATTEMPT_WINDOW": [],
+  "CHALLENGE_PAGE_MARKERS": [],
+  "_window_left": [
+    "deadline"
+  ],
+  "_poll_limit": [
+    "window",
+    "deadline"
+  ],
+  "_ScanSchedule": {
+    "__init__": [
+      "self"
+    ],
+    "due": [
+      "self"
+    ]
+  },
+  "TurnstileSolver": {
+    "__init__": [
+      "self",
+      "attempts",
+      "timeout"
+    ],
+    "_result": [
+      "self",
+      "token",
+      "adapter"
+    ],
+    "solve": [
+      "self",
+      "adapter"
+    ],
+    "_find_widget_frame": [
+      "self",
+      "adapter",
+      "interstitial",
+      "window",
+      "deadline"
+    ],
+    "_click_checkbox": [
+      "self",
+      "adapter",
+      "frame"
+    ],
+    "_is_challenge_page": [
+      "self",
+      "adapter"
+    ],
+    "_read_token": [
+      "self",
+      "adapter"
+    ],
+    "_wait_for_token": [
+      "self",
+      "adapter",
+      "wait",
+      "until_cleared",
+      "deadline"
+    ]
+  },
+  "DEFAULT_SCREEN": [],
+  "Challenge": {},
+  "parse_layout": [
+    "raw"
+  ],
+  "parse_image": [
+    "raw"
+  ],
+  "image_url": [
+    "captcha_id",
+    "domain",
+    "challenge_id",
+    "screen"
+  ],
+  "decode_challenge": [
+    "challenge_id",
+    "body",
+    "image"
+  ],
+  "parse_verify": [
+    "payload"
+  ],
+  "check_image_response": [
+    "response"
+  ],
+  "check_verify_response": [
+    "response"
+  ],
+  "new_challenge_id": [],
+  "pre_validate_url": [],
+  "AsyncLeminSolver": {
+    "solve": [
+      "self",
+      "attempts"
+    ],
+    "_solve_once": [
+      "self",
+      "client"
+    ],
+    "_fetch": [
+      "self",
+      "client"
+    ],
+    "_download": [
+      "self",
+      "client",
+      "url"
+    ],
+    "_verify": [
+      "self",
+      "client",
+      "challenge_id",
+      "answer"
+    ]
+  },
+  "_LeminCore": {
+    "__init__": [
+      "self",
+      "captcha_id",
+      "domain"
+    ],
+    "_headers": [
+      "self",
+      "extra"
+    ],
+    "_client_kwargs": [
+      "self"
+    ],
+    "_image_url": [
+      "self",
+      "challenge_id"
+    ],
+    "_pre_validate_url": [
+      "self"
+    ],
+    "_decode_challenge": [
+      "self",
+      "challenge_id",
+      "body",
+      "image"
+    ],
+    "answer_for": [
+      "self",
+      "challenge",
+      "rng"
+    ],
+    "_destinations": [
+      "self",
+      "challenge"
+    ],
+    "_parse_verify": [
+      "self",
+      "payload"
+    ],
+    "_new_challenge_id": [
+      "self"
+    ]
+  },
+  "LeminSolver": {
+    "solve": [
+      "self",
+      "attempts"
+    ],
+    "_solve_once": [
+      "self",
+      "client"
+    ],
+    "_fetch": [
+      "self",
+      "client"
+    ],
+    "_download": [
+      "self",
+      "client",
+      "url"
+    ],
+    "_verify": [
+      "self",
+      "client",
+      "challenge_id",
+      "answer"
+    ]
+  },
+  "Point": [],
+  "js_round": [
+    "value"
+  ],
+  "b32": [
+    "value"
+  ],
+  "token": [
+    "index",
+    "left",
+    "top"
+  ],
+  "encode": [
+    "points",
+    "index"
+  ],
+  "snap": [
+    "value",
+    "grid"
+  ],
+  "drag_path": [
+    "destination"
+  ],
+  "_pad_to_minimum": [
+    "steps",
+    "home"
+  ],
+  "multi_drag_path": [
+    "destinations"
+  ],
+  "SILHOUETTE_ALPHA": [],
+  "_INTERIOR_PENALTY": [],
+  "_INTERIOR_EROSION": [],
+  "_ROW_CHUNK": [],
+  "SilhouetteInfo": {},
+  "_box_sum": [
+    "mask",
+    "height",
+    "width"
+  ],
+  "_coverage_scorer": [
+    "mask",
+    "silhouette"
+  ],
+  "silhouette": [
+    "image",
+    "scene_width"
+  ],
+  "_edge_magnitude": [
+    "scene"
+  ],
+  "_boundary_masks": [
+    "mask"
+  ],
+  "_grid_top_n": [
+    "scores",
+    "piece_ox",
+    "piece_oy",
+    "sh",
+    "sw",
+    "grid",
+    "top_n",
+    "min_score"
+  ],
+  "find_slot_by_contour": [
+    "image",
+    "scene_width",
+    "grid",
+    "top_n"
+  ],
+  "find_hole": [
+    "image",
+    "scene_width",
+    "grid",
+    "top_n",
+    "white_threshold"
+  ],
+  "destination": [
+    "slot",
+    "piece_ox",
+    "piece_oy",
+    "grid"
+  ],
+  "solve_image": [
+    "image",
+    "scene_width",
+    "grid"
+  ],
+  "SECRET": [],
+  "VERSION": [],
+  "ENC": [],
+  "BASE_PIECE": [],
+  "PIECE_MARGIN": [],
+  "HOME": [],
+  "HISTORY": [],
+  "B32_ALPHABET": [],
+  "WHITE_THRESHOLD": [],
+  "SCENE_WIDTH": [],
+  "MIN_POINTS": [],
+  "CHALLENGE_MARKERS": [],
+  "_SCRIPT_RE": [],
+  "COOKIE_ARCSJS": [],
+  "COOKIE_ARCSJSC": [],
+  "is_challenge": [
+    "html"
+  ],
+  "cookie_domain": [
+    "url"
+  ],
+  "challenge_cookies": [
+    "html"
+  ],
+  "AsyncArvanCloudBypass": {
+    "solve": [
+      "self",
+      "url",
+      "proxy",
+      "attempts"
+    ],
+    "_get": [
+      "self",
+      "client",
+      "url"
+    ]
+  },
+  "STR_SOURCES": [],
+  "_TOK": [],
+  "_NUM": [],
+  "_num": [
+    "expr"
+  ],
+  "_split_terms": [
+    "expr"
+  ],
+  "_term": [
+    "term"
+  ],
+  "_MERGE": [],
+  "decode_eval": [
+    "expr"
+  ],
+  "extract_values": [
+    "js"
+  ],
+  "_ArvanCore": {
+    "__init__": [
+      "self",
+      "timeout",
+      "user_agent"
+    ],
+    "_result": [
+      "self",
+      "client"
+    ],
+    "_client_kwargs": [
+      "self",
+      "proxy"
+    ]
+  },
+  "ArvanCloudBypass": {
+    "solve": [
+      "self",
+      "url",
+      "proxy",
+      "attempts"
+    ],
+    "_get": [
+      "self",
+      "client",
+      "url"
+    ]
+  },
+  "_context_cookies": [
+    "client"
+  ],
+  "_wall_present": [
+    "adapter"
+  ],
+  "AsyncCloudflareBypass": {
+    "__init__": [
+      "self",
+      "attempts",
+      "timeout"
+    ],
+    "solve": [
+      "self",
+      "page",
+      "backend"
+    ]
+  },
+  "DEFAULT_TIMEOUT": [],
+  "CLEARANCE_COOKIE": [],
+  "require_clearance": [
+    "result"
+  ],
+  "CloudflareBypass": {
+    "__init__": [
+      "self",
+      "attempts",
+      "timeout"
+    ],
+    "solve": [
+      "self",
+      "page",
+      "backend"
+    ]
+  }
+}
