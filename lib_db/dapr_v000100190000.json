@@ -1,0 +1,8524 @@
+{
+  "__all__": [],
+  "_safe_dist_version": [
+    "dist"
+  ],
+  "_detect_legacy_extension_dists": [],
+  "_detect_missing_bundled_files": [],
+  "_emit_legacy_warning": [
+    "message"
+  ],
+  "_check_for_legacy_extension_issues": [],
+  "DefaultJSONSerializer": {
+    "__init__": [
+      "self",
+      "ensure_ascii"
+    ],
+    "serialize": [
+      "self",
+      "obj",
+      "custom_hook"
+    ],
+    "deserialize": [
+      "self",
+      "data",
+      "data_type",
+      "custom_hook"
+    ]
+  },
+  "DaprJSONEncoder": {
+    "default": [
+      "self",
+      "obj"
+    ]
+  },
+  "DaprJSONDecoder": {
+    "datetime_regex": [],
+    "__init__": [
+      "self"
+    ],
+    "custom_scanstring": [
+      "cls",
+      "s",
+      "end",
+      "strict"
+    ]
+  },
+  "Serializer": {
+    "serialize": [
+      "self",
+      "obj",
+      "custom_hook"
+    ],
+    "deserialize": [
+      "self",
+      "data",
+      "data_type",
+      "custom_hook"
+    ]
+  },
+  "DAPR_DURATION_PARSER": [],
+  "convert_from_dapr_duration": [
+    "duration"
+  ],
+  "convert_to_dapr_duration": [
+    "td"
+  ],
+  "DaprHealth": {
+    "wait_for_sidecar": [],
+    "get_ssl_context": []
+  },
+  "DaprClient": {
+    "__init__": [
+      "self",
+      "address",
+      "headers_callback",
+      "interceptors",
+      "http_timeout_seconds",
+      "max_grpc_message_length"
+    ],
+    "invoke_method": [
+      "self",
+      "app_id",
+      "method_name",
+      "data",
+      "content_type",
+      "metadata",
+      "http_verb",
+      "http_querystring",
+      "timeout"
+    ]
+  },
+  "logger": [],
+  "MAX_RECONNECT_ATTEMPTS": [],
+  "RECONNECT_BACKOFF_INITIAL_SECONDS": [],
+  "RECONNECT_BACKOFF_MAX_SECONDS": [],
+  "_TRANSIENT_STATUS_CODES": [],
+  "_TransientStreamError": {},
+  "_current_task_is_cancelling": [],
+  "_reconnect_backoff_seconds": [
+    "reconnect_attempts"
+  ],
+  "Subscription": {
+    "__init__": [
+      "self",
+      "stub",
+      "pubsub_name",
+      "topic",
+      "metadata",
+      "dead_letter_topic"
+    ],
+    "start": [
+      "self"
+    ],
+    "reconnect_stream": [
+      "self"
+    ],
+    "next_message": [
+      "self"
+    ],
+    "_read_next_message": [
+      "self"
+    ],
+    "respond": [
+      "self",
+      "message",
+      "status"
+    ],
+    "respond_success": [
+      "self",
+      "message"
+    ],
+    "respond_retry": [
+      "self",
+      "message"
+    ],
+    "respond_drop": [
+      "self",
+      "message"
+    ],
+    "close": [
+      "self"
+    ],
+    "_close_stream": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__anext__": [
+      "self"
+    ]
+  },
+  "_ClientCallDetailsAsync": {},
+  "DaprClientTimeoutInterceptorAsync": {
+    "intercept_unary_unary": [
+      "self",
+      "continuation",
+      "client_call_details",
+      "request"
+    ]
+  },
+  "DaprClientInterceptorAsync": {
+    "__init__": [
+      "self",
+      "metadata"
+    ],
+    "_intercept_call": [
+      "self",
+      "client_call_details"
+    ],
+    "intercept_unary_unary": [
+      "self",
+      "continuation",
+      "client_call_details",
+      "request"
+    ],
+    "intercept_stream_stream": [
+      "self",
+      "continuation",
+      "client_call_details",
+      "request"
+    ]
+  },
+  "CryptoResponse": {
+    "__init__": [
+      "self",
+      "stream"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "read": [
+      "self",
+      "size"
+    ]
+  },
+  "EncryptResponse": {},
+  "DecryptResponse": {},
+  "EncryptRequestIterator": {
+    "__init__": [
+      "self",
+      "data",
+      "options"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__anext__": [
+      "self"
+    ]
+  },
+  "DecryptRequestIterator": {
+    "__init__": [
+      "self",
+      "data",
+      "options"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__anext__": [
+      "self"
+    ]
+  },
+  "DaprGrpcClientAsync": {
+    "__init__": [
+      "self",
+      "address",
+      "interceptors",
+      "max_grpc_message_length",
+      "retry_policy"
+    ],
+    "get_credentials": [],
+    "close": [
+      "self"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self",
+      "exc_type",
+      "exc_value",
+      "traceback"
+    ],
+    "_get_http_extension": [
+      "http_verb",
+      "http_querystring"
+    ],
+    "invoke_method": [
+      "self",
+      "app_id",
+      "method_name",
+      "data",
+      "content_type",
+      "metadata",
+      "http_verb",
+      "http_querystring",
+      "timeout"
+    ],
+    "invoke_binding": [
+      "self",
+      "binding_name",
+      "operation",
+      "data",
+      "binding_metadata",
+      "metadata"
+    ],
+    "publish_event": [
+      "self",
+      "pubsub_name",
+      "topic_name",
+      "data",
+      "publish_metadata",
+      "metadata",
+      "data_content_type"
+    ],
+    "publish_events": [
+      "self",
+      "pubsub_name",
+      "topic_name",
+      "data",
+      "publish_metadata",
+      "data_content_type"
+    ],
+    "subscribe": [
+      "self",
+      "pubsub_name",
+      "topic",
+      "metadata",
+      "dead_letter_topic"
+    ],
+    "subscribe_with_handler": [
+      "self",
+      "pubsub_name",
+      "topic",
+      "handler_fn",
+      "metadata",
+      "dead_letter_topic"
+    ],
+    "get_state": [
+      "self",
+      "store_name",
+      "key",
+      "state_metadata",
+      "metadata"
+    ],
+    "get_bulk_state": [
+      "self",
+      "store_name",
+      "keys",
+      "parallelism",
+      "states_metadata",
+      "metadata"
+    ],
+    "query_state": [
+      "self",
+      "store_name",
+      "query",
+      "states_metadata"
+    ],
+    "save_state": [
+      "self",
+      "store_name",
+      "key",
+      "value",
+      "etag",
+      "options",
+      "state_metadata",
+      "metadata"
+    ],
+    "save_bulk_state": [
+      "self",
+      "store_name",
+      "states",
+      "metadata"
+    ],
+    "execute_state_transaction": [
+      "self",
+      "store_name",
+      "operations",
+      "transactional_metadata",
+      "metadata"
+    ],
+    "delete_state": [
+      "self",
+      "store_name",
+      "key",
+      "etag",
+      "options",
+      "state_metadata",
+      "metadata"
+    ],
+    "get_secret": [
+      "self",
+      "store_name",
+      "key",
+      "secret_metadata",
+      "metadata"
+    ],
+    "get_bulk_secret": [
+      "self",
+      "store_name",
+      "secret_metadata",
+      "metadata"
+    ],
+    "get_configuration": [
+      "self",
+      "store_name",
+      "keys",
+      "config_metadata"
+    ],
+    "subscribe_configuration": [
+      "self",
+      "store_name",
+      "keys",
+      "handler",
+      "config_metadata"
+    ],
+    "unsubscribe_configuration": [
+      "self",
+      "store_name",
+      "id"
+    ],
+    "try_lock": [
+      "self",
+      "store_name",
+      "resource_id",
+      "lock_owner",
+      "expiry_in_seconds"
+    ],
+    "unlock": [
+      "self",
+      "store_name",
+      "resource_id",
+      "lock_owner"
+    ],
+    "encrypt": [
+      "self",
+      "data",
+      "options"
+    ],
+    "decrypt": [
+      "self",
+      "data",
+      "options"
+    ],
+    "converse_alpha1": [
+      "self",
+      "name",
+      "inputs"
+    ],
+    "converse_alpha2": [
+      "self",
+      "name",
+      "inputs"
+    ],
+    "wait": [
+      "self",
+      "timeout_s"
+    ],
+    "get_metadata": [
+      "self"
+    ],
+    "schedule_job": [
+      "self",
+      "job",
+      "overwrite"
+    ],
+    "schedule_job_alpha1": [
+      "self",
+      "job",
+      "overwrite"
+    ],
+    "get_job": [
+      "self",
+      "name"
+    ],
+    "get_job_alpha1": [
+      "self",
+      "name"
+    ],
+    "delete_job": [
+      "self",
+      "name"
+    ],
+    "delete_job_alpha1": [
+      "self",
+      "name"
+    ],
+    "set_metadata": [
+      "self",
+      "attributeName",
+      "attributeValue"
+    ],
+    "shutdown": [
+      "self"
+    ]
+  },
+  "_GRPC_AIO_POLLER_NOISE_MARKER": [],
+  "GrpcAioPollerNoiseFilter": {
+    "filter": [
+      "self",
+      "record"
+    ]
+  },
+  "silence_grpc_aio_poller_noise": [],
+  "SubscriptionMessage": {
+    "__init__": [
+      "self",
+      "msg",
+      "metadata"
+    ],
+    "id": [
+      "self"
+    ],
+    "source": [
+      "self"
+    ],
+    "type": [
+      "self"
+    ],
+    "spec_version": [
+      "self"
+    ],
+    "data_content_type": [
+      "self"
+    ],
+    "topic": [
+      "self"
+    ],
+    "pubsub_name": [
+      "self"
+    ],
+    "raw_data": [
+      "self"
+    ],
+    "extensions": [
+      "self"
+    ],
+    "data": [
+      "self"
+    ],
+    "metadata": [
+      "self"
+    ],
+    "_parse_data_content": [
+      "self"
+    ]
+  },
+  "StreamInactiveError": {},
+  "StreamCancelledError": {},
+  "StreamReconnectError": {},
+  "DEFAULT_CONTENT_TYPE": [],
+  "DAPR_REENTRANCY_ID_HEADER": [],
+  "_wrap_response": [
+    "status_code",
+    "msg",
+    "error_code",
+    "content_type"
+  ],
+  "DaprActor": {
+    "__init__": [
+      "self",
+      "app",
+      "router_tags"
+    ],
+    "init_routes": [
+      "self",
+      "router"
+    ],
+    "register_actor": [
+      "self",
+      "actor"
+    ]
+  },
+  "DaprApp": {
+    "__init__": [
+      "self",
+      "app_instance",
+      "router_tags"
+    ],
+    "subscribe": [
+      "self",
+      "pubsub",
+      "topic",
+      "metadata",
+      "route",
+      "dead_letter_topic"
+    ],
+    "_get_subscriptions": [
+      "self"
+    ]
+  },
+  "_wants_subscription_message": [
+    "func"
+  ],
+  "App": {
+    "__init__": [
+      "self",
+      "max_grpc_message_length"
+    ],
+    "__del__": [
+      "self"
+    ],
+    "add_external_service": [
+      "self",
+      "servicer_callback",
+      "external_servicer"
+    ],
+    "register_health_check": [
+      "self",
+      "health_check_callback"
+    ],
+    "run": [
+      "self",
+      "app_port",
+      "listen_address"
+    ],
+    "stop": [
+      "self"
+    ],
+    "method": [
+      "self",
+      "name"
+    ],
+    "subscribe": [
+      "self",
+      "pubsub_name",
+      "topic",
+      "metadata",
+      "dead_letter_topic",
+      "rule",
+      "disable_topic_validation"
+    ],
+    "binding": [
+      "self",
+      "name"
+    ],
+    "job_event": [
+      "self",
+      "name"
+    ]
+  },
+  "InvokeMethodCallable": [],
+  "TopicSubscribeCallable": [],
+  "BindingCallable": [],
+  "JobEventCallable": [],
+  "DELIMITER": [],
+  "Rule": {
+    "__init__": [
+      "self",
+      "match",
+      "priority"
+    ]
+  },
+  "_RegisteredSubscription": {
+    "__init__": [
+      "self",
+      "subscription",
+      "rules"
+    ]
+  },
+  "_CallbackServicer": {
+    "__init__": [
+      "self"
+    ],
+    "_get_topic_callback": [
+      "self",
+      "pubsub_name",
+      "topic",
+      "path"
+    ],
+    "register_method": [
+      "self",
+      "method",
+      "cb"
+    ],
+    "register_topic": [
+      "self",
+      "pubsub_name",
+      "topic",
+      "cb",
+      "metadata",
+      "dead_letter_topic",
+      "rule",
+      "disable_topic_validation",
+      "legacy_cloudevent"
+    ],
+    "register_binding": [
+      "self",
+      "name",
+      "cb"
+    ],
+    "register_job_event": [
+      "self",
+      "name",
+      "cb"
+    ],
+    "OnInvoke": [
+      "self",
+      "request",
+      "context"
+    ],
+    "ListTopicSubscriptions": [
+      "self",
+      "request",
+      "context"
+    ],
+    "OnTopicEvent": [
+      "self",
+      "request",
+      "context"
+    ],
+    "ListInputBindings": [
+      "self",
+      "request",
+      "context"
+    ],
+    "OnBindingEvent": [
+      "self",
+      "request",
+      "context"
+    ],
+    "_handle_job_event": [
+      "self",
+      "request",
+      "context"
+    ],
+    "OnJobEvent": [
+      "self",
+      "request",
+      "context"
+    ],
+    "OnJobEventAlpha1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "_handle_bulk_topic_event": [
+      "self",
+      "request",
+      "context"
+    ],
+    "_bulk_entry_legacy_event": [
+      "self",
+      "entry",
+      "request",
+      "invocation_metadata"
+    ],
+    "_bulk_entry_subscription_message": [
+      "self",
+      "entry",
+      "request",
+      "invocation_metadata"
+    ],
+    "OnBulkTopicEvent": [
+      "self",
+      "request",
+      "context"
+    ],
+    "OnBulkTopicEventAlpha1": [
+      "self",
+      "request",
+      "context"
+    ]
+  },
+  "HealthCheckCallable": [],
+  "_HealthCheckServicer": {
+    "__init__": [
+      "self"
+    ],
+    "register_health_check": [
+      "self",
+      "cb"
+    ],
+    "HealthCheck": [
+      "self",
+      "request",
+      "context"
+    ]
+  },
+  "wrap_response": [
+    "status",
+    "msg",
+    "error_code",
+    "content_type"
+  ],
+  "ConsistencyLevel": [],
+  "DaprSessionManager": {
+    "__init__": [
+      "self",
+      "session_id",
+      "state_store_name",
+      "dapr_client",
+      "ttl",
+      "consistency"
+    ],
+    "from_address": [
+      "cls",
+      "session_id",
+      "state_store_name",
+      "dapr_address"
+    ],
+    "_get_session_key": [
+      "self",
+      "session_id"
+    ],
+    "_get_agent_key": [
+      "self",
+      "session_id",
+      "agent_id"
+    ],
+    "_get_messages_key": [
+      "self",
+      "session_id",
+      "agent_id"
+    ],
+    "_get_manifest_key": [
+      "self",
+      "session_id"
+    ],
+    "_get_read_metadata": [
+      "self"
+    ],
+    "_get_write_metadata": [
+      "self"
+    ],
+    "_get_state_options": [
+      "self"
+    ],
+    "_read_state": [
+      "self",
+      "key"
+    ],
+    "_write_state": [
+      "self",
+      "key",
+      "data"
+    ],
+    "_delete_state": [
+      "self",
+      "key"
+    ],
+    "create_session": [
+      "self",
+      "session"
+    ],
+    "read_session": [
+      "self",
+      "session_id"
+    ],
+    "delete_session": [
+      "self",
+      "session_id"
+    ],
+    "create_agent": [
+      "self",
+      "session_id",
+      "session_agent"
+    ],
+    "read_agent": [
+      "self",
+      "session_id",
+      "agent_id"
+    ],
+    "update_agent": [
+      "self",
+      "session_id",
+      "session_agent"
+    ],
+    "create_message": [
+      "self",
+      "session_id",
+      "agent_id",
+      "session_message"
+    ],
+    "read_message": [
+      "self",
+      "session_id",
+      "agent_id",
+      "message_id"
+    ],
+    "update_message": [
+      "self",
+      "session_id",
+      "agent_id",
+      "session_message"
+    ],
+    "list_messages": [
+      "self",
+      "session_id",
+      "agent_id",
+      "limit",
+      "offset"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "WorkflowSinkConfig": {
+    "__post_init__": [
+      "self"
+    ],
+    "row_mapper": [
+      "self"
+    ]
+  },
+  "_pipelines_module": [],
+  "register_workflow_sink": [
+    "name",
+    "workflow"
+  ],
+  "DaprDatabricksError": {},
+  "SinkConfigurationError": {},
+  "MissingBusinessKeyError": {},
+  "DaprDatabricksSinkError": {},
+  "_DUPLICATE_INSTANCE_MESSAGE_MARKER": [],
+  "ScheduleOutcome": {},
+  "is_duplicate_instance_error": [
+    "error"
+  ],
+  "ensure_workflow_scheduled": [
+    "client",
+    "workflow",
+    "instance_id",
+    "payload"
+  ],
+  "_logger": [],
+  "_TO_LOCAL_ITERATOR_UNSUPPORTED_MARKER": [],
+  "DaprWorkflowBatchHandler": {
+    "__init__": [
+      "self",
+      "config"
+    ],
+    "process": [
+      "self",
+      "df",
+      "batch_id"
+    ],
+    "_iter_rows": [
+      "self",
+      "df"
+    ],
+    "_collect_fallback": [
+      "self",
+      "df"
+    ],
+    "close": [
+      "self"
+    ],
+    "_process_row": [
+      "self",
+      "row",
+      "batch_id",
+      "record_index"
+    ],
+    "_build_payload": [
+      "self",
+      "row",
+      "batch_id",
+      "instance_id"
+    ]
+  },
+  "RowLike": {
+    "asDict": [
+      "self",
+      "recursive"
+    ],
+    "__getitem__": [
+      "self",
+      "key"
+    ]
+  },
+  "BatchDataFrameLike": {
+    "toLocalIterator": [
+      "self",
+      "prefetchPartitions"
+    ],
+    "limit": [
+      "self",
+      "num"
+    ],
+    "collect": [
+      "self"
+    ]
+  },
+  "RowMapper": [],
+  "InstanceIdFactory": [],
+  "default_row_mapper": [
+    "row"
+  ],
+  "_json_safe": [
+    "value"
+  ],
+  "_CLEAN_SEGMENT_RE": [],
+  "_MAX_CLEAN_SEGMENT_LENGTH": [],
+  "_MAX_INSTANCE_ID_LENGTH": [],
+  "_HASH_LENGTH": [],
+  "sanitize_segment": [
+    "raw"
+  ],
+  "_extract_single_field": [
+    "row",
+    "field"
+  ],
+  "extract_business_key": [
+    "row",
+    "batch_id"
+  ],
+  "derive_instance_id": [],
+  "StorageEventNotification": {},
+  "parse_s3_event_notifications": [
+    "payload"
+  ],
+  "_AZURE_BLOB_SUBJECT": [],
+  "parse_azure_blob_event": [
+    "payload"
+  ],
+  "_DELETED_EVENT_NAMES": [],
+  "to_source_change_event": [
+    "notification"
+  ],
+  "EventDeduplicator": {
+    "__init__": [
+      "self"
+    ],
+    "already_seen": [
+      "self",
+      "event_id"
+    ],
+    "mark_seen": [
+      "self",
+      "event_id"
+    ],
+    "close": [
+      "self"
+    ],
+    "_key": [
+      "event_id"
+    ]
+  },
+  "_strip_quotes": [
+    "value"
+  ],
+  "T": [],
+  "to_wire": [
+    "value"
+  ],
+  "from_wire": [
+    "raw",
+    "cls"
+  ],
+  "FailureInjector": {
+    "maybe_fail_before_start": [
+      "self",
+      "document_id",
+      "attempt"
+    ],
+    "maybe_fail_during_embedding": [
+      "self",
+      "document_id",
+      "batch_index"
+    ],
+    "maybe_fail_after_embedding_before_completion": [
+      "self",
+      "document_id",
+      "batch_index"
+    ]
+  },
+  "_simulate_crash": [
+    "message"
+  ],
+  "_FIELD_SEPARATOR": [],
+  "_stable_digest": [],
+  "compute_content_hash": [
+    "data"
+  ],
+  "compute_config_hash": [
+    "config"
+  ],
+  "compute_pipeline_fingerprint": [],
+  "compute_chunk_id": [],
+  "compute_manifest_hash": [
+    "document_ids"
+  ],
+  "DocumentSplitter": {
+    "splitter_type": [
+      "self"
+    ],
+    "split": [
+      "self",
+      "document"
+    ],
+    "config": [
+      "self"
+    ],
+    "config_fingerprint": [
+      "self"
+    ]
+  },
+  "TextSplitter": {
+    "__init__": [
+      "self"
+    ],
+    "splitter_type": [
+      "self"
+    ],
+    "config": [
+      "self"
+    ],
+    "split": [
+      "self",
+      "document"
+    ]
+  },
+  "_split_recursive": [
+    "text",
+    "chunk_size",
+    "separators"
+  ],
+  "_merge_with_overlap": [
+    "pieces",
+    "chunk_size",
+    "chunk_overlap"
+  ],
+  "_NON_TERMINAL_STATUSES": [],
+  "_IngestionState": {},
+  "_ActivationState": {},
+  "_retry_policy_from": [
+    "config"
+  ],
+  "_utcnow_iso": [],
+  "_parse_iso": [
+    "value"
+  ],
+  "DurableRAGPipeline": {
+    "__init__": [
+      "self"
+    ],
+    "run_worker": [
+      "self"
+    ],
+    "shutdown_worker": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "start": [
+      "self"
+    ],
+    "activate_version": [
+      "self",
+      "version"
+    ],
+    "get_status": [
+      "self",
+      "version"
+    ],
+    "get_workflow_state": [
+      "self",
+      "instance_id"
+    ],
+    "resolve_active_version": [
+      "self"
+    ],
+    "is_ingestion_in_flight": [
+      "self",
+      "version"
+    ],
+    "_is_run_in_flight": [
+      "self",
+      "instance_id"
+    ],
+    "_stable_instance_id": [
+      "self",
+      "version"
+    ],
+    "_register_workflow_and_activities": [
+      "self"
+    ],
+    "_orchestrate_ingestion": [
+      "self",
+      "ctx",
+      "wf_input"
+    ],
+    "_orchestrate_activation": [
+      "self",
+      "ctx",
+      "wf_input"
+    ],
+    "_activity_discover_and_manifest": [
+      "self",
+      "ctx",
+      "raw"
+    ],
+    "_delete_documents_dropped_from_manifest": [
+      "self"
+    ],
+    "_activity_get_manifest_batch": [
+      "self",
+      "ctx",
+      "raw"
+    ],
+    "_activity_process_document": [
+      "self",
+      "ctx",
+      "raw"
+    ],
+    "_process_one_document": [
+      "self"
+    ],
+    "_activity_validate_version": [
+      "self",
+      "ctx",
+      "raw"
+    ],
+    "_activity_activate_version": [
+      "self",
+      "ctx",
+      "raw"
+    ],
+    "_activity_publish_activation_event": [
+      "self",
+      "ctx",
+      "raw"
+    ],
+    "_activity_register_foundry_iq_knowledge_source": [
+      "self",
+      "ctx",
+      "raw"
+    ],
+    "_activity_update_status": [
+      "self",
+      "ctx",
+      "raw"
+    ]
+  },
+  "RagError": {},
+  "OptionalDependencyError": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "RetryableError": {},
+  "NonRetryableError": {},
+  "TransientSourceError": {},
+  "SourceNotFoundError": {},
+  "SourceAccessDeniedError": {},
+  "DocumentChangedError": {},
+  "UnsupportedDocumentError": {},
+  "DocumentParseError": {},
+  "TransientEmbeddingError": {},
+  "InvalidEmbeddingRequestError": {},
+  "TransientGenerationError": {},
+  "InvalidGenerationRequestError": {},
+  "TransientVectorStoreError": {},
+  "VectorStoreError": {},
+  "VersionValidationError": {},
+  "ActivationConflictError": {},
+  "PipelineStateStore": {
+    "__init__": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "write_manifest": [
+      "self"
+    ],
+    "read_manifest_meta": [
+      "self"
+    ],
+    "read_manifest_page": [
+      "self"
+    ],
+    "read_completion": [
+      "self"
+    ],
+    "write_completion": [
+      "self"
+    ],
+    "delete_completion": [
+      "self"
+    ],
+    "read_embed_progress": [
+      "self"
+    ],
+    "write_embed_progress": [
+      "self"
+    ],
+    "delete_embed_progress": [
+      "self"
+    ],
+    "increment_attempt_count": [
+      "self"
+    ],
+    "read_status": [
+      "self"
+    ],
+    "write_status": [
+      "self",
+      "status"
+    ],
+    "read_activation": [
+      "self",
+      "pipeline_id"
+    ],
+    "write_activation": [
+      "self",
+      "record"
+    ],
+    "_manifest_meta_key": [
+      "pipeline_id",
+      "version"
+    ],
+    "_manifest_page_key": [
+      "pipeline_id",
+      "version",
+      "page_index"
+    ],
+    "_completion_key": [
+      "pipeline_id",
+      "version",
+      "document_id"
+    ],
+    "_embed_progress_key": [
+      "pipeline_id",
+      "version",
+      "document_id"
+    ],
+    "_attempts_key": [
+      "pipeline_id",
+      "version",
+      "document_id"
+    ],
+    "_status_key": [
+      "pipeline_id",
+      "version"
+    ],
+    "_activation_key": [
+      "pipeline_id"
+    ],
+    "_get_json": [
+      "self",
+      "key"
+    ],
+    "_save_json": [
+      "self",
+      "key",
+      "value"
+    ]
+  },
+  "_decode_json": [
+    "data"
+  ],
+  "_chunked": [
+    "items",
+    "size"
+  ],
+  "_AZURE_EXTRA_TRANSIENT_STATUS_CODES": [],
+  "_SYSTEM_PROMPT": [],
+  "AzureOpenAIChatClient": {
+    "__init__": [
+      "self"
+    ],
+    "generate_answer": [
+      "self",
+      "question",
+      "matches"
+    ]
+  },
+  "SourceProvider": {
+    "S3": [],
+    "AZURE_BLOB": []
+  },
+  "SourceMetadata": {},
+  "SourceDocument": {},
+  "DocumentWorkItem": {
+    "from_source_document": [
+      "cls",
+      "doc"
+    ]
+  },
+  "SourceChangeEvent": {
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "data"
+    ]
+  },
+  "Document": {},
+  "Chunk": {},
+  "VectorRecord": {},
+  "EmbeddingBatchResult": {},
+  "QueryMatch": {},
+  "UpsertResult": {},
+  "ValidationResult": {},
+  "ActivationRecord": {
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "data"
+    ]
+  },
+  "ProvenanceRecord": {
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "data"
+    ]
+  },
+  "DocumentOutcomeStatus": {
+    "COMPLETED": [],
+    "SKIPPED": [],
+    "FAILED": []
+  },
+  "DocumentOutcome": {},
+  "DocumentFailure": {},
+  "ManifestSummary": {},
+  "CompletionRecord": {
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "data"
+    ]
+  },
+  "EmbedProgressRecord": {
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "data"
+    ]
+  },
+  "PipelineStage": {
+    "DISCOVERING": [],
+    "PROCESSING_DOCUMENTS": [],
+    "VALIDATING": [],
+    "ACTIVATING": [],
+    "COMPLETED": [],
+    "FAILED": []
+  },
+  "PipelineConfig": {
+    "__post_init__": [
+      "self"
+    ],
+    "effective_manifest_page_size": [
+      "self"
+    ],
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "data"
+    ]
+  },
+  "FoundryIQKnowledgeSourceConfig": {},
+  "PipelineStatus": {
+    "to_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "data"
+    ]
+  },
+  "Citation": {},
+  "AnswerResult": {
+    "to_dict": [
+      "self"
+    ]
+  },
+  "ActiveVersionResolver": {
+    "__init__": [
+      "self"
+    ],
+    "resolve_active_version": [
+      "self"
+    ],
+    "query": [
+      "self",
+      "text"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "AzureOpenAIEmbedder": {
+    "__init__": [
+      "self"
+    ],
+    "embedding_model": [
+      "self"
+    ],
+    "deployment": [
+      "self"
+    ],
+    "config": [
+      "self"
+    ],
+    "embed_batch": [
+      "self",
+      "texts"
+    ]
+  },
+  "OpenAIEmbedder": {
+    "__init__": [
+      "self"
+    ],
+    "embedding_model": [
+      "self"
+    ],
+    "config": [
+      "self"
+    ],
+    "embed_batch": [
+      "self",
+      "texts"
+    ]
+  },
+  "AAD_SCOPE": [],
+  "DEFAULT_AZURE_API_VERSION": [],
+  "TRANSIENT_EXCEPTION_NAMES": [],
+  "INVALID_REQUEST_EXCEPTION_NAMES": [],
+  "parse_embeddings_response": [
+    "response"
+  ],
+  "classify_error": [
+    "exc"
+  ],
+  "_transient_error": [
+    "exc",
+    "retry_after",
+    "transient_cls"
+  ],
+  "build_azure_client": [],
+  "_extract_retry_after": [
+    "exc"
+  ],
+  "Embedder": {
+    "embedding_model": [
+      "self"
+    ],
+    "embed_batch": [
+      "self",
+      "texts"
+    ],
+    "config": [
+      "self"
+    ],
+    "config_fingerprint": [
+      "self"
+    ]
+  },
+  "to_langchain_documents": [
+    "documents"
+  ],
+  "from_langchain_documents": [
+    "documents"
+  ],
+  "DocumentParser": {
+    "parser_type": [
+      "self"
+    ],
+    "parse": [
+      "self",
+      "content",
+      "document"
+    ],
+    "config": [
+      "self"
+    ],
+    "config_fingerprint": [
+      "self"
+    ]
+  },
+  "_SUPPORTED_SUFFIXES": [],
+  "UnstructuredParser": {
+    "__init__": [
+      "self"
+    ],
+    "parser_type": [
+      "self"
+    ],
+    "config": [
+      "self"
+    ],
+    "parse": [
+      "self",
+      "content",
+      "document"
+    ]
+  },
+  "_group_by_page": [
+    "elements",
+    "document"
+  ],
+  "_NOT_FOUND_EXCEPTION_NAMES": [],
+  "_ACCESS_DENIED_EXCEPTION_NAMES": [],
+  "_TRANSIENT_EXCEPTION_NAMES": [],
+  "AzureBlobSource": {
+    "__init__": [
+      "self"
+    ],
+    "_as_container_client": [
+      "client",
+      "container"
+    ],
+    "_build_container_client": [],
+    "provider": [
+      "self"
+    ],
+    "list_documents": [
+      "self",
+      "prefix"
+    ],
+    "get_document": [
+      "self",
+      "document_id"
+    ],
+    "get_metadata": [
+      "self",
+      "document_id"
+    ],
+    "close": [
+      "self"
+    ],
+    "_to_source_document": [
+      "self",
+      "blob"
+    ],
+    "_to_metadata": [
+      "blob_like"
+    ],
+    "_document_id": [
+      "self",
+      "blob_name"
+    ],
+    "_blob_name_from_document_id": [
+      "self",
+      "document_id"
+    ],
+    "_classify": [
+      "exc"
+    ]
+  },
+  "_normalize_etag": [
+    "raw_etag"
+  ],
+  "_THROTTLE_CODES": [],
+  "_NOT_FOUND_CODES": [],
+  "_ACCESS_DENIED_CODES": [],
+  "S3Source": {
+    "__init__": [
+      "self"
+    ],
+    "provider": [
+      "self"
+    ],
+    "list_documents": [
+      "self",
+      "prefix"
+    ],
+    "get_document": [
+      "self",
+      "document_id"
+    ],
+    "get_metadata": [
+      "self",
+      "document_id"
+    ],
+    "close": [
+      "self"
+    ],
+    "_to_source_document": [
+      "self",
+      "key",
+      "listing_entry"
+    ],
+    "_document_id": [
+      "self",
+      "key"
+    ],
+    "_key_from_document_id": [
+      "self",
+      "document_id"
+    ],
+    "_classify": [
+      "exc"
+    ]
+  },
+  "_strip_etag": [
+    "raw_etag"
+  ],
+  "_isoformat": [
+    "value"
+  ],
+  "DocumentSource": {
+    "provider": [
+      "self"
+    ],
+    "list_documents": [
+      "self",
+      "prefix"
+    ],
+    "get_document": [
+      "self",
+      "document_id"
+    ],
+    "get_metadata": [
+      "self",
+      "document_id"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "VectorIndex": {
+    "target_index_name": [
+      "self"
+    ],
+    "store_type": [
+      "self"
+    ],
+    "upsert": [
+      "self",
+      "records",
+      "version"
+    ],
+    "delete_document": [
+      "self",
+      "document_id",
+      "version"
+    ],
+    "validate_version": [
+      "self",
+      "version"
+    ],
+    "query": [
+      "self",
+      "embedding",
+      "version"
+    ],
+    "activate_version": [
+      "self",
+      "version"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "PineconeVectorStore": {
+    "__init__": [
+      "self"
+    ],
+    "target_index_name": [
+      "self"
+    ],
+    "store_type": [
+      "self"
+    ],
+    "upsert": [
+      "self",
+      "records",
+      "version"
+    ],
+    "delete_document": [
+      "self",
+      "document_id",
+      "version"
+    ],
+    "validate_version": [
+      "self",
+      "version"
+    ],
+    "query": [
+      "self",
+      "embedding",
+      "version"
+    ],
+    "_classify": [
+      "exc"
+    ]
+  },
+  "_namespace_vector_count": [
+    "stats",
+    "version"
+  ],
+  "_batched": [
+    "items",
+    "size"
+  ],
+  "_to_pinecone_vector": [
+    "record"
+  ],
+  "_response_matches": [
+    "response"
+  ],
+  "_to_query_match": [
+    "match"
+  ],
+  "_SAFE_IDENTIFIER": [],
+  "PgVectorStore": {
+    "__init__": [
+      "self"
+    ],
+    "target_index_name": [
+      "self"
+    ],
+    "store_type": [
+      "self"
+    ],
+    "upsert": [
+      "self",
+      "records",
+      "version"
+    ],
+    "delete_document": [
+      "self",
+      "document_id",
+      "version"
+    ],
+    "validate_version": [
+      "self",
+      "version"
+    ],
+    "query": [
+      "self",
+      "embedding",
+      "version"
+    ],
+    "close": [
+      "self"
+    ],
+    "_ensure_schema": [
+      "self",
+      "conn",
+      "dimensions"
+    ],
+    "_classify": [
+      "exc"
+    ]
+  },
+  "_to_vector_literal": [
+    "embedding"
+  ],
+  "_load_metadata": [
+    "raw"
+  ],
+  "_VECTOR_FIELD_NAME": [],
+  "_VECTOR_PROFILE_NAME": [],
+  "_HNSW_ALGORITHM_NAME": [],
+  "_MANAGEMENT_API_VERSION": [],
+  "_MANAGEMENT_REQUEST_TIMEOUT_SECONDS": [],
+  "_is_not_found": [
+    "exc"
+  ],
+  "_DEFAULT_SELECT_FIELDS": [],
+  "AzureAISearchVectorStore": {
+    "__init__": [
+      "self"
+    ],
+    "target_index_name": [
+      "self"
+    ],
+    "alias_name": [
+      "self"
+    ],
+    "store_type": [
+      "self"
+    ],
+    "upsert": [
+      "self",
+      "records",
+      "version"
+    ],
+    "delete_document": [
+      "self",
+      "document_id",
+      "version"
+    ],
+    "validate_version": [
+      "self",
+      "version"
+    ],
+    "activate_version": [
+      "self",
+      "version"
+    ],
+    "register_foundry_iq_knowledge_source": [
+      "self",
+      "version"
+    ],
+    "query": [
+      "self",
+      "embedding",
+      "version"
+    ],
+    "close": [
+      "self"
+    ],
+    "_index_name_for": [
+      "self",
+      "version"
+    ],
+    "_search_client": [
+      "self",
+      "index_name"
+    ],
+    "_alias_indexes": [
+      "self"
+    ],
+    "_put_alias": [
+      "self",
+      "index_name"
+    ],
+    "_alias_url": [
+      "self"
+    ],
+    "_get_knowledge_source": [
+      "self",
+      "name"
+    ],
+    "_put_knowledge_source": [
+      "self",
+      "name",
+      "body"
+    ],
+    "_knowledge_source_url": [
+      "self",
+      "name"
+    ],
+    "_alias_headers": [
+      "self"
+    ],
+    "_ensure_index": [
+      "self",
+      "index_name",
+      "dimensions"
+    ],
+    "_upload_with_retry": [
+      "self",
+      "search_client",
+      "documents"
+    ],
+    "_classify": [
+      "exc"
+    ]
+  },
+  "_raise_for_alias_response": [
+    "response"
+  ],
+  "_resolve_credential": [
+    "credential",
+    "api_key"
+  ],
+  "_build_index_schema": [
+    "index_name",
+    "dimensions",
+    "semantic_configuration_name"
+  ],
+  "_validate_existing_schema": [
+    "existing_index",
+    "expected_dimensions"
+  ],
+  "_to_search_document": [
+    "record"
+  ],
+  "_build_odata_filter": [
+    "metadata_filter"
+  ],
+  "_escape_odata_string": [
+    "value"
+  ],
+  "TInput": [],
+  "TOutput": [],
+  "DaprWorkflowContext": {
+    "__init__": [
+      "self",
+      "ctx",
+      "logger_options"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "instance_id": [
+      "self"
+    ],
+    "current_utc_datetime": [
+      "self"
+    ],
+    "is_replaying": [
+      "self"
+    ],
+    "set_custom_status": [
+      "self",
+      "custom_status"
+    ],
+    "create_timer": [
+      "self",
+      "fire_at"
+    ],
+    "call_activity": [
+      "self",
+      "activity"
+    ],
+    "call_child_workflow": [
+      "self",
+      "workflow"
+    ],
+    "get_propagated_history": [
+      "self"
+    ],
+    "wait_for_external_event": [
+      "self",
+      "name"
+    ],
+    "continue_as_new": [
+      "self",
+      "new_input"
+    ],
+    "is_patched": [
+      "self",
+      "patch_name"
+    ]
+  },
+  "when_all": [
+    "tasks"
+  ],
+  "when_any": [
+    "tasks"
+  ],
+  "ClientInterceptor": [],
+  "SyncActivityWrapper": [],
+  "AsyncActivityWrapper": [],
+  "ActivityWrapper": [],
+  "_coerce_activity_input": [
+    "inp",
+    "input_model"
+  ],
+  "_make_activity_wrapper": [
+    "fn",
+    "logger"
+  ],
+  "WorkflowRuntime": {
+    "__init__": [
+      "self",
+      "host",
+      "port",
+      "logger_options",
+      "interceptors",
+      "maximum_concurrent_activity_work_items",
+      "maximum_concurrent_orchestration_work_items",
+      "maximum_thread_pool_workers",
+      "worker_ready_timeout",
+      "max_grpc_message_length",
+      "disable_stateful_history",
+      "history_cache_ttl",
+      "history_cache_max_instances",
+      "history_cache_max_bytes"
+    ],
+    "register_workflow": [
+      "self",
+      "fn"
+    ],
+    "register_versioned_workflow": [
+      "self",
+      "fn"
+    ],
+    "register_activity": [
+      "self",
+      "fn"
+    ],
+    "wait_for_worker_ready": [
+      "self",
+      "timeout"
+    ],
+    "start": [
+      "self"
+    ],
+    "shutdown": [
+      "self"
+    ],
+    "versioned_workflow": [
+      "self",
+      "__fn"
+    ],
+    "workflow": [
+      "self",
+      "__fn"
+    ],
+    "activity": [
+      "self",
+      "__fn"
+    ]
+  },
+  "alternate_name": [
+    "name"
+  ],
+  "TYPE_MAPPING": [],
+  "create_pydantic_model_from_schema": [
+    "schema",
+    "model_name"
+  ],
+  "RetryPolicy": {
+    "__init__": [
+      "self"
+    ],
+    "obj": [
+      "self"
+    ],
+    "first_retry_interval": [
+      "self"
+    ],
+    "max_number_of_attempts": [
+      "self"
+    ],
+    "backoff_coefficient": [
+      "self"
+    ],
+    "max_retry_interval": [
+      "self"
+    ],
+    "retry_timeout": [
+      "self"
+    ]
+  },
+  "is_model": [
+    "obj"
+  ],
+  "is_model_class": [
+    "cls"
+  ],
+  "_supports_mode_kwarg": [
+    "cls"
+  ],
+  "dump_model": [
+    "model"
+  ],
+  "coerce_to_model": [
+    "value",
+    "cls"
+  ],
+  "resolve_input": [
+    "fn"
+  ],
+  "_unwrap_optional": [
+    "annotation"
+  ],
+  "_is_pep604_union": [
+    "origin"
+  ],
+  "_NO_KEY_LISTING": [],
+  "_NO_ACTOR_STORE": [],
+  "_MIN_RUNTIME_FOR_MANAGEMENT": [],
+  "_unimplemented_message": [
+    "operation"
+  ],
+  "_listing_unsupported_message": [
+    "details"
+  ],
+  "_Unset": {
+    "__repr__": [
+      "self"
+    ]
+  },
+  "UNSET": [],
+  "WorkflowInstanceIdPage": {
+    "_from_proto": [
+      "cls",
+      "res"
+    ]
+  },
+  "WorkflowHistoryEventType": {
+    "UNKNOWN": [],
+    "EXECUTION_STARTED": [],
+    "EXECUTION_COMPLETED": [],
+    "EXECUTION_TERMINATED": [],
+    "EXECUTION_SUSPENDED": [],
+    "EXECUTION_RESUMED": [],
+    "EXECUTION_STALLED": [],
+    "TASK_SCHEDULED": [],
+    "TASK_COMPLETED": [],
+    "TASK_FAILED": [],
+    "CHILD_WORKFLOW_INSTANCE_CREATED": [],
+    "CHILD_WORKFLOW_INSTANCE_COMPLETED": [],
+    "CHILD_WORKFLOW_INSTANCE_FAILED": [],
+    "DETACHED_WORKFLOW_INSTANCE_CREATED": [],
+    "TIMER_CREATED": [],
+    "TIMER_FIRED": [],
+    "EVENT_SENT": [],
+    "EVENT_RAISED": [],
+    "CONTINUE_AS_NEW": [],
+    "WORKFLOW_STARTED": [],
+    "WORKFLOW_COMPLETED": [],
+    "_missing_": [
+      "cls",
+      "value"
+    ]
+  },
+  "_RERUNNABLE_EVENT_TYPES": [],
+  "_failure_details_of": [
+    "payload"
+  ],
+  "WorkflowHistoryEvent": {
+    "is_rerunnable": [
+      "self"
+    ],
+    "_from_proto": [
+      "cls",
+      "event"
+    ]
+  },
+  "WorkflowActivityContext": {
+    "__init__": [
+      "self",
+      "ctx"
+    ],
+    "workflow_id": [
+      "self"
+    ],
+    "task_id": [
+      "self"
+    ],
+    "get_inner_context": [
+      "self"
+    ],
+    "get_propagated_history": [
+      "self"
+    ]
+  },
+  "Activity": [],
+  "get_grpc_channel_options": [
+    "max_grpc_message_length"
+  ],
+  "getAddress": [
+    "host",
+    "port"
+  ],
+  "_MCP_METHOD_LIST_TOOLS": [],
+  "_MCP_METHOD_CALL_TOOL": [],
+  "_TRANSIENT_GRPC_CODES": [],
+  "_SCHEDULE_RETRY_INTERVAL_SECONDS": [],
+  "_is_transient_schedule_error": [
+    "exc"
+  ],
+  "MCPToolDef": {},
+  "_DaprMCPClientBase": {
+    "__init__": [
+      "self"
+    ],
+    "_process_list_tools_result": [
+      "self",
+      "mcpserver_name",
+      "serialized_output"
+    ],
+    "get_all_tools": [
+      "self"
+    ],
+    "get_server_tools": [
+      "self",
+      "server_name"
+    ],
+    "get_connected_servers": [
+      "self"
+    ]
+  },
+  "DaprMCPClient": {
+    "__init__": [
+      "self"
+    ],
+    "connect": [
+      "self",
+      "mcpserver_name"
+    ]
+  },
+  "WorkflowContext": {
+    "instance_id": [
+      "self"
+    ],
+    "current_utc_datetime": [
+      "self"
+    ],
+    "is_replaying": [
+      "self"
+    ],
+    "set_custom_status": [
+      "self",
+      "custom_status"
+    ],
+    "create_timer": [
+      "self",
+      "fire_at"
+    ],
+    "call_activity": [
+      "self",
+      "activity"
+    ],
+    "call_child_workflow": [
+      "self",
+      "orchestrator"
+    ],
+    "get_propagated_history": [
+      "self"
+    ],
+    "wait_for_external_event": [
+      "self",
+      "name"
+    ],
+    "continue_as_new": [
+      "self",
+      "new_input"
+    ]
+  },
+  "Workflow": [],
+  "WorkflowStatus": {
+    "UNKNOWN": [],
+    "RUNNING": [],
+    "COMPLETED": [],
+    "FAILED": [],
+    "TERMINATED": [],
+    "PENDING": [],
+    "SUSPENDED": [],
+    "STALLED": []
+  },
+  "WorkflowState": {
+    "__init__": [
+      "self",
+      "state"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "runtime_status": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "to_json": [
+      "self"
+    ]
+  },
+  "PropagationScope": {
+    "NONE": [],
+    "OWN_HISTORY": [],
+    "LINEAGE": []
+  },
+  "PropagationNotFoundError": {},
+  "ActivityResult": {},
+  "ChildWorkflowResult": {},
+  "_string_value_or_none": [
+    "sv"
+  ],
+  "_resolve_activity": [
+    "events",
+    "schedule_event"
+  ],
+  "_resolve_child_workflow": [
+    "events",
+    "creation_event_id",
+    "name"
+  ],
+  "WorkflowResult": {
+    "get_activities_by_name": [
+      "self",
+      "name"
+    ],
+    "get_last_activity_by_name": [
+      "self",
+      "name"
+    ],
+    "get_child_workflows_by_name": [
+      "self",
+      "name"
+    ],
+    "get_last_child_workflow_by_name": [
+      "self",
+      "name"
+    ]
+  },
+  "_HistoryChunk": {},
+  "PropagatedHistory": {
+    "__init__": [
+      "self",
+      "events",
+      "scope",
+      "chunks"
+    ],
+    "get_app_ids": [
+      "self"
+    ],
+    "_chunk_events": [
+      "self",
+      "chunk"
+    ],
+    "get_events_by_app_id": [
+      "self",
+      "app_id"
+    ],
+    "get_events_by_instance_id": [
+      "self",
+      "instance_id"
+    ],
+    "get_events_by_workflow_name": [
+      "self",
+      "workflow_name"
+    ],
+    "_make_workflow_result": [
+      "self",
+      "chunk"
+    ],
+    "get_workflows": [
+      "self"
+    ],
+    "get_workflows_by_name": [
+      "self",
+      "name"
+    ],
+    "get_last_workflow_by_name": [
+      "self",
+      "name"
+    ],
+    "from_proto": [
+      "cls",
+      "propagated_history"
+    ]
+  },
+  "DaprWorkflowClient": {
+    "__init__": [
+      "self",
+      "host",
+      "port",
+      "logger_options",
+      "max_grpc_message_length"
+    ],
+    "schedule_new_workflow": [
+      "self",
+      "workflow"
+    ],
+    "get_workflow_state": [
+      "self",
+      "instance_id"
+    ],
+    "wait_for_workflow_start": [
+      "self",
+      "instance_id"
+    ],
+    "wait_for_workflow_completion": [
+      "self",
+      "instance_id"
+    ],
+    "raise_workflow_event": [
+      "self",
+      "instance_id",
+      "event_name"
+    ],
+    "terminate_workflow": [
+      "self",
+      "instance_id"
+    ],
+    "pause_workflow": [
+      "self",
+      "instance_id"
+    ],
+    "resume_workflow": [
+      "self",
+      "instance_id"
+    ],
+    "purge_workflow": [
+      "self",
+      "instance_id",
+      "recursive"
+    ],
+    "list_workflow_instance_ids": [
+      "self"
+    ],
+    "iter_workflow_instance_ids": [
+      "self"
+    ],
+    "get_workflow_history": [
+      "self",
+      "instance_id"
+    ],
+    "rerun_workflow_from_event": [
+      "self",
+      "instance_id",
+      "event_id"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "DeterminismSeed": {
+    "to_int": [
+      "self"
+    ]
+  },
+  "derive_seed": [
+    "instance_id",
+    "orchestration_time"
+  ],
+  "deterministic_random": [
+    "instance_id",
+    "orchestration_time"
+  ],
+  "deterministic_uuid4": [
+    "rnd"
+  ],
+  "deterministic_uuid_v5": [
+    "instance_id",
+    "current_datetime",
+    "counter"
+  ],
+  "DeterministicContextMixin": {
+    "__init__": [
+      "self"
+    ],
+    "now": [
+      "self"
+    ],
+    "random": [
+      "self"
+    ],
+    "uuid4": [
+      "self"
+    ],
+    "new_guid": [
+      "self"
+    ],
+    "random_string": [
+      "self",
+      "length"
+    ],
+    "random_int": [
+      "self",
+      "min_value",
+      "max_value"
+    ],
+    "T": [],
+    "random_choice": [
+      "self",
+      "sequence"
+    ],
+    "now_with_sequence": [
+      "self"
+    ],
+    "current_utc_datetime_with_sequence": [
+      "self"
+    ]
+  },
+  "VersionNotRegisteredException": {},
+  "_log_all_threads": [
+    "logger",
+    "context"
+  ],
+  "ConcurrencyOptions": {
+    "__init__": [
+      "self",
+      "maximum_concurrent_activity_work_items",
+      "maximum_concurrent_orchestration_work_items",
+      "maximum_thread_pool_workers"
+    ]
+  },
+  "_Registry": {
+    "__init__": [
+      "self"
+    ],
+    "add_orchestrator": [
+      "self",
+      "fn",
+      "version_name",
+      "is_latest"
+    ],
+    "add_named_orchestrator": [
+      "self",
+      "name",
+      "fn",
+      "version_name",
+      "is_latest"
+    ],
+    "get_orchestrator": [
+      "self",
+      "name",
+      "version_name"
+    ],
+    "add_activity": [
+      "self",
+      "fn"
+    ],
+    "add_named_activity": [
+      "self",
+      "name",
+      "fn"
+    ],
+    "get_activity": [
+      "self",
+      "name"
+    ]
+  },
+  "OrchestratorNotRegisteredError": {},
+  "ActivityNotRegisteredError": {},
+  "_is_message_too_large": [
+    "rpc_error"
+  ],
+  "_DEFAULT_HISTORY_CACHE_TTL": [],
+  "_DEFAULT_HISTORY_CACHE_MAX_INSTANCES": [],
+  "_HISTORY_CACHE_SWEEP_INTERVAL": [],
+  "_CONNECT_HELLO_TIMEOUT": [],
+  "_RESULT_RECONNECT_WAIT": [],
+  "_RESULT_SEND_TIMEOUT": [],
+  "_STOP_DRAIN_TIMEOUT": [],
+  "_HistoryResolutionError": {},
+  "_CachedHistory": {
+    "__slots__": [],
+    "__init__": [
+      "self",
+      "events",
+      "last_access",
+      "num_bytes"
+    ]
+  },
+  "_WorkflowHistoryCache": {
+    "__init__": [
+      "self"
+    ],
+    "get": [
+      "self",
+      "instance_id"
+    ],
+    "put": [
+      "self",
+      "instance_id",
+      "events"
+    ],
+    "delete": [
+      "self",
+      "instance_id"
+    ],
+    "reset": [
+      "self"
+    ],
+    "sweep_expired": [
+      "self"
+    ],
+    "_remove": [
+      "self",
+      "instance_id"
+    ],
+    "_evict_to_fit": [
+      "self",
+      "keep"
+    ],
+    "_lru_except": [
+      "self",
+      "keep"
+    ]
+  },
+  "TaskHubGrpcWorker": {
+    "__init__": [
+      "self"
+    ],
+    "concurrency_options": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "type",
+      "value",
+      "traceback"
+    ],
+    "add_orchestrator": [
+      "self",
+      "fn"
+    ],
+    "add_activity": [
+      "self",
+      "fn"
+    ],
+    "is_worker_ready": [
+      "self"
+    ],
+    "start": [
+      "self"
+    ],
+    "_send_keepalive": [
+      "self"
+    ],
+    "_keepalive_loop": [
+      "self"
+    ],
+    "_cancel_keepalive": [
+      "keepalive_task"
+    ],
+    "_async_run_loop": [
+      "self"
+    ],
+    "_set_connection": [
+      "self",
+      "channel",
+      "stub"
+    ],
+    "_retire_connection": [
+      "self"
+    ],
+    "_has_connection_or_is_stopping": [
+      "self"
+    ],
+    "_sidecar_stub": [
+      "self",
+      "wait"
+    ],
+    "_release_call": [
+      "self",
+      "channel"
+    ],
+    "_drain_current_connection": [
+      "self",
+      "timeout"
+    ],
+    "_close_channel": [
+      "self",
+      "channel"
+    ],
+    "_send_on_current_connection": [
+      "self",
+      "send",
+      "what"
+    ],
+    "_schedule_deferred_channel_close": [
+      "self",
+      "old_channel",
+      "grace_timeout"
+    ],
+    "stop": [
+      "self"
+    ],
+    "_handle_grpc_execution_error": [
+      "self",
+      "rpc_error",
+      "request_type"
+    ],
+    "_make_stream_teardown": [
+      "self",
+      "stream"
+    ],
+    "_sweep_history_cache_loop": [
+      "self"
+    ],
+    "_resolve_history": [
+      "self",
+      "req"
+    ],
+    "_update_history_cache": [
+      "self",
+      "instance_id",
+      "committed_history",
+      "actions"
+    ],
+    "_execute_orchestrator": [
+      "self",
+      "req",
+      "completionToken",
+      "teardown_stream"
+    ],
+    "_send_orchestrator_response": [
+      "self",
+      "req",
+      "stub",
+      "res",
+      "completionToken"
+    ],
+    "_activity_span": [
+      "self",
+      "req",
+      "instance_id"
+    ],
+    "_propagated_history": [
+      "self",
+      "req"
+    ],
+    "_build_activity_result_response": [
+      "self",
+      "req",
+      "instance_id",
+      "result",
+      "completion_token"
+    ],
+    "_build_activity_failure_response": [
+      "self",
+      "req",
+      "instance_id",
+      "ex",
+      "completion_token"
+    ],
+    "_send_activity_response": [
+      "self",
+      "req",
+      "stub",
+      "res",
+      "completion_token",
+      "instance_id"
+    ],
+    "_deliver_activity_response": [
+      "self",
+      "req",
+      "res",
+      "completion_token",
+      "instance_id"
+    ],
+    "_execute_activity": [
+      "self",
+      "fn",
+      "req",
+      "completionToken"
+    ],
+    "_execute_activity_async": [
+      "self",
+      "fn",
+      "req",
+      "completionToken"
+    ]
+  },
+  "_RuntimeOrchestrationContext": {
+    "__init__": [
+      "self",
+      "instance_id"
+    ],
+    "set_propagated_history": [
+      "self",
+      "history"
+    ],
+    "get_propagated_history": [
+      "self"
+    ],
+    "run": [
+      "self",
+      "generator"
+    ],
+    "resume": [
+      "self"
+    ],
+    "set_complete": [
+      "self",
+      "result",
+      "status",
+      "is_result_encoded"
+    ],
+    "set_failed": [
+      "self",
+      "ex"
+    ],
+    "set_version_not_registered": [
+      "self"
+    ],
+    "set_continued_as_new": [
+      "self",
+      "new_input",
+      "save_events"
+    ],
+    "get_actions": [
+      "self"
+    ],
+    "next_sequence_number": [
+      "self"
+    ],
+    "_drop_optional_pending_at": [
+      "self",
+      "action_id"
+    ],
+    "app_id": [
+      "self"
+    ],
+    "instance_id": [
+      "self"
+    ],
+    "current_utc_datetime": [
+      "self",
+      "value"
+    ],
+    "is_replaying": [
+      "self"
+    ],
+    "set_custom_status": [
+      "self",
+      "custom_status"
+    ],
+    "create_timer": [
+      "self",
+      "fire_at"
+    ],
+    "create_timer_internal": [
+      "self",
+      "fire_at",
+      "retryable_task",
+      "origin"
+    ],
+    "call_activity": [
+      "self",
+      "activity"
+    ],
+    "call_sub_orchestrator": [
+      "self",
+      "orchestrator"
+    ],
+    "call_activity_function_helper": [
+      "self",
+      "id",
+      "activity_function"
+    ],
+    "wait_for_external_event": [
+      "self",
+      "name"
+    ],
+    "continue_as_new": [
+      "self",
+      "new_input"
+    ],
+    "is_patched": [
+      "self",
+      "patch_name"
+    ],
+    "_is_patched": [
+      "self",
+      "patch_name"
+    ]
+  },
+  "ExecutionResults": {
+    "__init__": [
+      "self",
+      "actions",
+      "encoded_custom_status",
+      "version_name",
+      "patches"
+    ]
+  },
+  "_OrchestrationExecutor": {
+    "__init__": [
+      "self",
+      "registry",
+      "logger"
+    ],
+    "execute": [
+      "self",
+      "instance_id",
+      "old_events",
+      "new_events",
+      "propagated_history"
+    ],
+    "process_event": [
+      "self",
+      "ctx",
+      "event"
+    ]
+  },
+  "_ActivityExecutor": {
+    "__init__": [
+      "self",
+      "logger"
+    ],
+    "_resolve": [
+      "self",
+      "fn",
+      "orchestration_id",
+      "name",
+      "task_id",
+      "encoded_input",
+      "task_execution_id",
+      "propagated_history"
+    ],
+    "_encode_output": [
+      "self",
+      "orchestration_id",
+      "name",
+      "task_id",
+      "activity_output"
+    ],
+    "execute": [
+      "self",
+      "fn",
+      "orchestration_id",
+      "name",
+      "task_id",
+      "encoded_input",
+      "task_execution_id",
+      "propagated_history"
+    ],
+    "execute_async": [
+      "self",
+      "fn",
+      "orchestration_id",
+      "name",
+      "task_id",
+      "encoded_input",
+      "task_execution_id",
+      "propagated_history"
+    ]
+  },
+  "_get_non_determinism_error": [
+    "task_id",
+    "action_name"
+  ],
+  "_get_wrong_action_type_error": [
+    "task_id",
+    "expected_method_name",
+    "action"
+  ],
+  "_get_wrong_action_name_error": [
+    "task_id",
+    "method_name",
+    "expected_task_name",
+    "actual_task_name"
+  ],
+  "_get_method_name_for_action": [
+    "action"
+  ],
+  "_get_new_event_summary": [
+    "new_events"
+  ],
+  "_get_action_summary": [
+    "new_actions"
+  ],
+  "_is_suspendable": [
+    "event"
+  ],
+  "_WorkItem": [],
+  "_AsyncWorkerManager": {
+    "__init__": [
+      "self",
+      "concurrency_options",
+      "logger"
+    ],
+    "_ensure_queues_for_current_loop": [
+      "self"
+    ],
+    "run": [
+      "self"
+    ],
+    "_consume_queue": [
+      "self",
+      "queue",
+      "semaphore",
+      "executor"
+    ],
+    "_process_work_item": [
+      "self",
+      "semaphore",
+      "queue",
+      "executor",
+      "func",
+      "args",
+      "kwargs"
+    ],
+    "_run_func": [
+      "self",
+      "func"
+    ],
+    "_run_func_on": [
+      "self",
+      "executor",
+      "func"
+    ],
+    "submit_activity": [
+      "self",
+      "func"
+    ],
+    "submit_orchestration": [
+      "self",
+      "func"
+    ],
+    "shutdown": [
+      "self"
+    ],
+    "reset_for_new_run": [
+      "self"
+    ]
+  },
+  "OrchestrationContext": {
+    "instance_id": [
+      "self"
+    ],
+    "current_utc_datetime": [
+      "self"
+    ],
+    "is_replaying": [
+      "self"
+    ],
+    "set_custom_status": [
+      "self",
+      "custom_status"
+    ],
+    "create_timer": [
+      "self",
+      "fire_at"
+    ],
+    "call_activity": [
+      "self",
+      "activity"
+    ],
+    "call_sub_orchestrator": [
+      "self",
+      "orchestrator"
+    ],
+    "wait_for_external_event": [
+      "self",
+      "name"
+    ],
+    "continue_as_new": [
+      "self",
+      "new_input"
+    ],
+    "is_patched": [
+      "self",
+      "patch_name"
+    ],
+    "get_propagated_history": [
+      "self"
+    ]
+  },
+  "FailureDetails": {
+    "__init__": [
+      "self",
+      "message",
+      "error_type",
+      "stack_trace"
+    ],
+    "message": [
+      "self"
+    ],
+    "error_type": [
+      "self"
+    ],
+    "stack_trace": [
+      "self"
+    ]
+  },
+  "TaskFailedError": {
+    "__init__": [
+      "self",
+      "message",
+      "details"
+    ],
+    "details": [
+      "self"
+    ]
+  },
+  "NonDeterminismError": {},
+  "WorkflowStateError": {},
+  "is_error_non_retryable": [
+    "error_type",
+    "policy"
+  ],
+  "Task": {
+    "__init__": [
+      "self"
+    ],
+    "is_complete": [
+      "self"
+    ],
+    "is_failed": [
+      "self"
+    ],
+    "get_result": [
+      "self"
+    ],
+    "get_exception": [
+      "self"
+    ]
+  },
+  "CompositeTask": {
+    "__init__": [
+      "self",
+      "tasks"
+    ],
+    "get_tasks": [
+      "self"
+    ],
+    "on_child_completed": [
+      "self",
+      "task"
+    ]
+  },
+  "WhenAllTask": {
+    "__init__": [
+      "self",
+      "tasks"
+    ],
+    "pending_tasks": [
+      "self"
+    ],
+    "on_child_completed": [
+      "self",
+      "task"
+    ],
+    "get_completed_tasks": [
+      "self"
+    ]
+  },
+  "CompletableTask": {
+    "__init__": [
+      "self"
+    ],
+    "complete": [
+      "self",
+      "result"
+    ],
+    "fail": [
+      "self",
+      "message",
+      "details"
+    ],
+    "cancel": [
+      "self",
+      "exc"
+    ]
+  },
+  "RetryableTask": {
+    "__init__": [
+      "self",
+      "retry_policy",
+      "start_time",
+      "is_sub_orch",
+      "task_name",
+      "encoded_input",
+      "task_execution_id",
+      "instance_id",
+      "app_id",
+      "propagation"
+    ],
+    "increment_attempt_count": [
+      "self"
+    ],
+    "compute_next_delay": [
+      "self"
+    ]
+  },
+  "TimerTask": {
+    "__init__": [
+      "self"
+    ],
+    "set_retryable_parent": [
+      "self",
+      "retryable_task"
+    ]
+  },
+  "WhenAnyTask": {
+    "__init__": [
+      "self",
+      "tasks"
+    ],
+    "on_child_completed": [
+      "self",
+      "task"
+    ]
+  },
+  "ExternalEventWithTimeoutTask": {
+    "__init__": [
+      "self",
+      "event_task",
+      "timer_task",
+      "event_name",
+      "timeout",
+      "on_timeout"
+    ],
+    "on_child_completed": [
+      "self",
+      "completed_task"
+    ]
+  },
+  "ActivityContext": {
+    "__init__": [
+      "self",
+      "orchestration_id",
+      "task_id",
+      "task_execution_id",
+      "propagated_history"
+    ],
+    "orchestration_id": [
+      "self"
+    ],
+    "task_id": [
+      "self"
+    ],
+    "task_execution_id": [
+      "self"
+    ],
+    "get_propagated_history": [
+      "self"
+    ]
+  },
+  "Orchestrator": [],
+  "get_name": [
+    "fn"
+  ],
+  "_TransientTimeout": {},
+  "OrchestrationStatus": {
+    "RUNNING": [],
+    "COMPLETED": [],
+    "FAILED": [],
+    "TERMINATED": [],
+    "CONTINUED_AS_NEW": [],
+    "PENDING": [],
+    "SUSPENDED": [],
+    "CANCELED": [],
+    "STALLED": [],
+    "__str__": [
+      "self"
+    ]
+  },
+  "OrchestrationIdReuseAction": {
+    "ERROR": [],
+    "IGNORE": [],
+    "TERMINATE": []
+  },
+  "WorkflowIdReusePolicy": {},
+  "new_task_router": [
+    "app_id"
+  ],
+  "OrchestrationFailedError": {
+    "__init__": [
+      "self",
+      "message",
+      "failure_details"
+    ],
+    "failure_details": [
+      "self"
+    ]
+  },
+  "new_orchestration_state": [
+    "instance_id",
+    "res"
+  ],
+  "_MAX_UINT32": [],
+  "_new_list_request": [
+    "page_size",
+    "continuation_token"
+  ],
+  "_new_rerun_request": [
+    "instance_id",
+    "event_id"
+  ],
+  "TaskHubGrpcClient": {
+    "__init__": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc",
+      "tb"
+    ],
+    "close": [
+      "self"
+    ],
+    "schedule_new_orchestration": [
+      "self",
+      "orchestrator"
+    ],
+    "get_orchestration_state": [
+      "self",
+      "instance_id"
+    ],
+    "wait_for_orchestration_start": [
+      "self",
+      "instance_id"
+    ],
+    "wait_for_orchestration_completion": [
+      "self",
+      "instance_id"
+    ],
+    "_TRANSIENT_RPC_CODES": [],
+    "_MAX_TRANSIENT_RETRY_SECONDS": [],
+    "_is_deadline_cancellation": [
+      "code",
+      "deadline"
+    ],
+    "_call_with_transient_retry": [
+      "self",
+      "instance_id",
+      "timeout",
+      "call_fn"
+    ],
+    "raise_orchestration_event": [
+      "self",
+      "instance_id",
+      "event_name"
+    ],
+    "terminate_orchestration": [
+      "self",
+      "instance_id"
+    ],
+    "suspend_orchestration": [
+      "self",
+      "instance_id"
+    ],
+    "resume_orchestration": [
+      "self",
+      "instance_id"
+    ],
+    "purge_orchestration": [
+      "self",
+      "instance_id",
+      "recursive"
+    ],
+    "list_instance_ids": [
+      "self"
+    ],
+    "get_instance_history": [
+      "self",
+      "instance_id"
+    ],
+    "rerun_orchestration_from_event": [
+      "self",
+      "instance_id",
+      "event_id"
+    ]
+  },
+  "AsyncTaskHubGrpcClient": {
+    "__init__": [
+      "self"
+    ],
+    "_get_stub": [
+      "self"
+    ],
+    "aclose": [
+      "self"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ],
+    "schedule_new_orchestration": [
+      "self",
+      "orchestrator"
+    ],
+    "get_orchestration_state": [
+      "self",
+      "instance_id"
+    ],
+    "wait_for_orchestration_start": [
+      "self",
+      "instance_id"
+    ],
+    "wait_for_orchestration_completion": [
+      "self",
+      "instance_id"
+    ],
+    "_TRANSIENT_RPC_CODES": [],
+    "_MAX_TRANSIENT_RETRY_SECONDS": [],
+    "_call_with_transient_retry": [
+      "self",
+      "instance_id",
+      "timeout",
+      "call_fn"
+    ],
+    "raise_orchestration_event": [
+      "self",
+      "instance_id",
+      "event_name"
+    ],
+    "terminate_orchestration": [
+      "self",
+      "instance_id"
+    ],
+    "suspend_orchestration": [
+      "self",
+      "instance_id"
+    ],
+    "resume_orchestration": [
+      "self",
+      "instance_id"
+    ],
+    "purge_orchestration": [
+      "self",
+      "instance_id",
+      "recursive"
+    ],
+    "list_instance_ids": [
+      "self"
+    ],
+    "get_instance_history": [
+      "self",
+      "instance_id"
+    ],
+    "rerun_orchestration_from_event": [
+      "self",
+      "instance_id",
+      "event_id"
+    ]
+  },
+  "get_grpc_aio_channel": [
+    "host_address",
+    "secure_channel",
+    "interceptors",
+    "options"
+  ],
+  "_ClientCallDetails": {},
+  "DefaultClientInterceptorImpl": {
+    "__init__": [
+      "self",
+      "metadata"
+    ],
+    "_intercept_call": [
+      "self",
+      "client_call_details"
+    ],
+    "intercept_unary_unary": [
+      "self",
+      "continuation",
+      "client_call_details",
+      "request"
+    ],
+    "intercept_unary_stream": [
+      "self",
+      "continuation",
+      "client_call_details",
+      "request"
+    ],
+    "intercept_stream_unary": [
+      "self",
+      "continuation",
+      "client_call_details",
+      "request_iterator"
+    ],
+    "intercept_stream_stream": [
+      "self",
+      "continuation",
+      "client_call_details",
+      "request_iterator"
+    ]
+  },
+  "_sym_db": [],
+  "DESCRIPTOR": [],
+  "_globals": [],
+  "GRPC_GENERATED_VERSION": [],
+  "GRPC_VERSION": [],
+  "_version_not_supported": [],
+  "TimerOrigin": [],
+  "_origin_kwargs": [
+    "origin"
+  ],
+  "_to_timestamp": [
+    "fire_at"
+  ],
+  "_fire_at_matches_sentinel": [
+    "ts"
+  ],
+  "is_optional_timer_action": [
+    "action"
+  ],
+  "is_optional_timer_event": [
+    "event"
+  ],
+  "new_create_timer_action": [
+    "timer_id",
+    "fire_at",
+    "origin"
+  ],
+  "new_timer_created_event": [
+    "timer_id",
+    "fire_at",
+    "origin"
+  ],
+  "new_timer_fired_event": [
+    "timer_id",
+    "fire_at"
+  ],
+  "new_workflow_started_event": [
+    "timestamp"
+  ],
+  "new_execution_started_event": [
+    "name",
+    "instance_id",
+    "encoded_input"
+  ],
+  "new_task_scheduled_event": [
+    "event_id",
+    "name",
+    "encoded_input"
+  ],
+  "new_task_completed_event": [
+    "event_id",
+    "encoded_output"
+  ],
+  "new_task_failed_event": [
+    "event_id",
+    "ex"
+  ],
+  "new_child_workflow_created_event": [
+    "event_id",
+    "name",
+    "instance_id",
+    "encoded_input"
+  ],
+  "new_child_workflow_completed_event": [
+    "event_id",
+    "encoded_output"
+  ],
+  "new_child_workflow_failed_event": [
+    "event_id",
+    "ex"
+  ],
+  "new_failure_details": [
+    "ex"
+  ],
+  "new_event_raised_event": [
+    "name",
+    "encoded_input"
+  ],
+  "new_suspend_event": [],
+  "new_resume_event": [],
+  "new_terminated_event": [],
+  "get_string_value": [
+    "val"
+  ],
+  "new_complete_workflow_action": [
+    "id",
+    "status",
+    "result",
+    "failure_details",
+    "carryover_events",
+    "router"
+  ],
+  "new_workflow_version_not_available_action": [
+    "id"
+  ],
+  "new_schedule_task_action": [
+    "id",
+    "name",
+    "encoded_input",
+    "router",
+    "task_execution_id",
+    "propagation_scope"
+  ],
+  "new_timestamp": [
+    "dt"
+  ],
+  "new_create_child_workflow_action": [
+    "id",
+    "name",
+    "instance_id",
+    "encoded_input",
+    "router",
+    "propagation_scope"
+  ],
+  "is_empty": [
+    "v"
+  ],
+  "get_orchestration_status_str": [
+    "status"
+  ],
+  "is_async_callable": [
+    "fn"
+  ],
+  "AUTO_SERIALIZED": [],
+  "SECURE_PROTOCOLS": [],
+  "INSECURE_PROTOCOLS": [],
+  "get_default_host_address": [],
+  "get_grpc_channel": [
+    "host_address",
+    "secure_channel",
+    "interceptors",
+    "options"
+  ],
+  "get_logger": [
+    "name_suffix",
+    "log_handler",
+    "log_formatter"
+  ],
+  "to_json": [
+    "obj"
+  ],
+  "from_json": [
+    "json_str"
+  ],
+  "InternalJSONEncoder": {
+    "encode": [
+      "self",
+      "obj"
+    ],
+    "default": [
+      "self",
+      "obj"
+    ]
+  },
+  "InternalJSONDecoder": {
+    "__init__": [
+      "self"
+    ],
+    "dict_to_object": [
+      "self",
+      "d"
+    ]
+  },
+  "TaskHubSidecarServiceStub": {
+    "__init__": [
+      "self",
+      "channel"
+    ]
+  },
+  "TaskHubSidecarServiceServicer": {
+    "Hello": [
+      "self",
+      "request",
+      "context"
+    ],
+    "StartInstance": [
+      "self",
+      "request",
+      "context"
+    ],
+    "GetInstance": [
+      "self",
+      "request",
+      "context"
+    ],
+    "WaitForInstanceStart": [
+      "self",
+      "request",
+      "context"
+    ],
+    "WaitForInstanceCompletion": [
+      "self",
+      "request",
+      "context"
+    ],
+    "RaiseEvent": [
+      "self",
+      "request",
+      "context"
+    ],
+    "TerminateInstance": [
+      "self",
+      "request",
+      "context"
+    ],
+    "SuspendInstance": [
+      "self",
+      "request",
+      "context"
+    ],
+    "ResumeInstance": [
+      "self",
+      "request",
+      "context"
+    ],
+    "PurgeInstances": [
+      "self",
+      "request",
+      "context"
+    ],
+    "GetWorkItems": [
+      "self",
+      "request",
+      "context"
+    ],
+    "CompleteActivityTask": [
+      "self",
+      "request",
+      "context"
+    ],
+    "CompleteOrchestratorTask": [
+      "self",
+      "request",
+      "context"
+    ],
+    "CompleteWorkflowTask": [
+      "self",
+      "request",
+      "context"
+    ],
+    "RerunWorkflowFromEvent": [
+      "self",
+      "request",
+      "context"
+    ],
+    "ListInstanceIDs": [
+      "self",
+      "request",
+      "context"
+    ],
+    "GetInstanceHistory": [
+      "self",
+      "request",
+      "context"
+    ]
+  },
+  "add_TaskHubSidecarServiceServicer_to_server": [
+    "servicer",
+    "server"
+  ],
+  "TaskHubSidecarService": {
+    "Hello": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "StartInstance": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "GetInstance": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "WaitForInstanceStart": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "WaitForInstanceCompletion": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "RaiseEvent": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "TerminateInstance": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "SuspendInstance": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "ResumeInstance": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "PurgeInstances": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "GetWorkItems": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "CompleteActivityTask": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "CompleteOrchestratorTask": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "CompleteWorkflowTask": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "RerunWorkflowFromEvent": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "ListInstanceIDs": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "GetInstanceHistory": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ]
+  },
+  "Logger": {
+    "__init__": [
+      "self",
+      "name",
+      "options"
+    ],
+    "get_options": [
+      "self"
+    ],
+    "debug": [
+      "self",
+      "msg"
+    ],
+    "info": [
+      "self",
+      "msg"
+    ],
+    "warning": [
+      "self",
+      "msg"
+    ],
+    "error": [
+      "self",
+      "msg"
+    ],
+    "exception": [
+      "self",
+      "msg"
+    ],
+    "critical": [
+      "self",
+      "msg"
+    ]
+  },
+  "LoggerOptions": {
+    "__init__": [
+      "self",
+      "log_level",
+      "log_handler",
+      "log_formatter"
+    ]
+  },
+  "DaprCheckpointer": {
+    "REGISTRY_KEY": [],
+    "__init__": [
+      "self",
+      "store_name",
+      "key_prefix"
+    ],
+    "_get_key": [
+      "self",
+      "config"
+    ],
+    "put": [
+      "self",
+      "config",
+      "checkpoint",
+      "metadata",
+      "new_versions"
+    ],
+    "put_writes": [
+      "self",
+      "config",
+      "writes",
+      "task_id",
+      "task_path"
+    ],
+    "list": [
+      "self",
+      "config"
+    ],
+    "delete_thread": [
+      "self",
+      "config"
+    ],
+    "get_tuple": [
+      "self",
+      "config"
+    ],
+    "_safe_id": [
+      "self",
+      "id"
+    ],
+    "_safe_ns": [
+      "self",
+      "ns"
+    ],
+    "_convert_checkpoint_message": [
+      "self",
+      "msg_item"
+    ],
+    "_decode_bytes": [
+      "self",
+      "obj"
+    ],
+    "_encode_blob": [
+      "self",
+      "blob"
+    ],
+    "_dump_checkpoint": [
+      "self",
+      "checkpoint"
+    ],
+    "_load_metadata": [
+      "self",
+      "metadata"
+    ],
+    "_dump_metadata": [
+      "self",
+      "metadata"
+    ],
+    "_make_safe_checkpoint_key": [
+      "self",
+      "thread_id",
+      "checkpoint_ns",
+      "checkpoint_id"
+    ]
+  },
+  "_LANGGRAPH_OPTIONAL_MODULES": [],
+  "connect_dapr": [
+    "port"
+  ],
+  "AppCallbackStub": {
+    "__init__": [
+      "self",
+      "channel"
+    ]
+  },
+  "AppCallbackServicer": {
+    "OnInvoke": [
+      "self",
+      "request",
+      "context"
+    ],
+    "ListTopicSubscriptions": [
+      "self",
+      "request",
+      "context"
+    ],
+    "OnTopicEvent": [
+      "self",
+      "request",
+      "context"
+    ],
+    "ListInputBindings": [
+      "self",
+      "request",
+      "context"
+    ],
+    "OnBindingEvent": [
+      "self",
+      "request",
+      "context"
+    ],
+    "OnBulkTopicEvent": [
+      "self",
+      "request",
+      "context"
+    ],
+    "OnJobEvent": [
+      "self",
+      "request",
+      "context"
+    ]
+  },
+  "add_AppCallbackServicer_to_server": [
+    "servicer",
+    "server"
+  ],
+  "AppCallback": {
+    "OnInvoke": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "ListTopicSubscriptions": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "OnTopicEvent": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "ListInputBindings": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "OnBindingEvent": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "OnBulkTopicEvent": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "OnJobEvent": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ]
+  },
+  "AppCallbackHealthCheckStub": {
+    "__init__": [
+      "self",
+      "channel"
+    ]
+  },
+  "AppCallbackHealthCheckServicer": {
+    "HealthCheck": [
+      "self",
+      "request",
+      "context"
+    ]
+  },
+  "add_AppCallbackHealthCheckServicer_to_server": [
+    "servicer",
+    "server"
+  ],
+  "AppCallbackHealthCheck": {
+    "HealthCheck": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ]
+  },
+  "AppCallbackAlphaStub": {
+    "__init__": [
+      "self",
+      "channel"
+    ]
+  },
+  "AppCallbackAlphaServicer": {
+    "OnBulkTopicEventAlpha1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "OnJobEventAlpha1": [
+      "self",
+      "request",
+      "context"
+    ]
+  },
+  "add_AppCallbackAlphaServicer_to_server": [
+    "servicer",
+    "server"
+  ],
+  "AppCallbackAlpha": {
+    "OnBulkTopicEventAlpha1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "OnJobEventAlpha1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ]
+  },
+  "DaprStub": {
+    "__init__": [
+      "self",
+      "channel"
+    ]
+  },
+  "DaprServicer": {
+    "InvokeService": [
+      "self",
+      "request",
+      "context"
+    ],
+    "GetState": [
+      "self",
+      "request",
+      "context"
+    ],
+    "GetBulkState": [
+      "self",
+      "request",
+      "context"
+    ],
+    "SaveState": [
+      "self",
+      "request",
+      "context"
+    ],
+    "QueryStateAlpha1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "DeleteState": [
+      "self",
+      "request",
+      "context"
+    ],
+    "DeleteBulkState": [
+      "self",
+      "request",
+      "context"
+    ],
+    "ExecuteStateTransaction": [
+      "self",
+      "request",
+      "context"
+    ],
+    "PublishEvent": [
+      "self",
+      "request",
+      "context"
+    ],
+    "BulkPublishEventAlpha1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "BulkPublishEvent": [
+      "self",
+      "request",
+      "context"
+    ],
+    "SubscribeTopicEventsAlpha1": [
+      "self",
+      "request_iterator",
+      "context"
+    ],
+    "InvokeBinding": [
+      "self",
+      "request",
+      "context"
+    ],
+    "GetSecret": [
+      "self",
+      "request",
+      "context"
+    ],
+    "GetBulkSecret": [
+      "self",
+      "request",
+      "context"
+    ],
+    "RegisterActorTimer": [
+      "self",
+      "request",
+      "context"
+    ],
+    "UnregisterActorTimer": [
+      "self",
+      "request",
+      "context"
+    ],
+    "RegisterActorReminder": [
+      "self",
+      "request",
+      "context"
+    ],
+    "UnregisterActorReminder": [
+      "self",
+      "request",
+      "context"
+    ],
+    "UnregisterActorRemindersByType": [
+      "self",
+      "request",
+      "context"
+    ],
+    "ListActorReminders": [
+      "self",
+      "request",
+      "context"
+    ],
+    "ListActorTimers": [
+      "self",
+      "request",
+      "context"
+    ],
+    "GetActorState": [
+      "self",
+      "request",
+      "context"
+    ],
+    "GetActorReminder": [
+      "self",
+      "request",
+      "context"
+    ],
+    "GetActorTimer": [
+      "self",
+      "request",
+      "context"
+    ],
+    "ExecuteActorStateTransaction": [
+      "self",
+      "request",
+      "context"
+    ],
+    "InvokeActor": [
+      "self",
+      "request",
+      "context"
+    ],
+    "SubscribeActorEventsAlpha1": [
+      "self",
+      "request_iterator",
+      "context"
+    ],
+    "GetConfigurationAlpha1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "GetConfiguration": [
+      "self",
+      "request",
+      "context"
+    ],
+    "SubscribeConfigurationAlpha1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "SubscribeConfiguration": [
+      "self",
+      "request",
+      "context"
+    ],
+    "UnsubscribeConfigurationAlpha1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "UnsubscribeConfiguration": [
+      "self",
+      "request",
+      "context"
+    ],
+    "TryLockAlpha1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "UnlockAlpha1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "EncryptAlpha1": [
+      "self",
+      "request_iterator",
+      "context"
+    ],
+    "DecryptAlpha1": [
+      "self",
+      "request_iterator",
+      "context"
+    ],
+    "GetMetadata": [
+      "self",
+      "request",
+      "context"
+    ],
+    "SetMetadata": [
+      "self",
+      "request",
+      "context"
+    ],
+    "SubtleGetKeyAlpha1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "SubtleEncryptAlpha1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "SubtleDecryptAlpha1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "SubtleWrapKeyAlpha1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "SubtleUnwrapKeyAlpha1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "SubtleSignAlpha1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "SubtleVerifyAlpha1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "StartWorkflowAlpha1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "GetWorkflowAlpha1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "PurgeWorkflowAlpha1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "TerminateWorkflowAlpha1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "PauseWorkflowAlpha1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "ResumeWorkflowAlpha1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "RaiseEventWorkflowAlpha1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "StartWorkflowBeta1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "GetWorkflowBeta1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "PurgeWorkflowBeta1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "TerminateWorkflowBeta1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "PauseWorkflowBeta1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "ResumeWorkflowBeta1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "RaiseEventWorkflowBeta1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "Shutdown": [
+      "self",
+      "request",
+      "context"
+    ],
+    "ScheduleJobAlpha1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "ScheduleJob": [
+      "self",
+      "request",
+      "context"
+    ],
+    "GetJobAlpha1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "GetJob": [
+      "self",
+      "request",
+      "context"
+    ],
+    "DeleteJobAlpha1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "DeleteJob": [
+      "self",
+      "request",
+      "context"
+    ],
+    "DeleteJobsByPrefixAlpha1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "DeleteJobsByPrefix": [
+      "self",
+      "request",
+      "context"
+    ],
+    "ListJobsAlpha1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "ListJobs": [
+      "self",
+      "request",
+      "context"
+    ],
+    "ConverseAlpha1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "ConverseAlpha2": [
+      "self",
+      "request",
+      "context"
+    ],
+    "CreateIndexAlpha1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "GetIndexAlpha1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "ListIndexesAlpha1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "DeleteIndexAlpha1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "IndexDocumentsAlpha1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "GetDocumentsAlpha1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "DeleteDocumentsAlpha1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "SearchAlpha1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "CreateCollectionAlpha1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "GetCollectionAlpha1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "ListCollectionsAlpha1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "DeleteCollectionAlpha1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "UpsertVectorsAlpha1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "DeleteVectorsAlpha1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "GetVectorsAlpha1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "QueryVectorsAlpha1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "BatchQueryVectorsAlpha1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "SetBinaryFileAlpha1": [
+      "self",
+      "request_iterator",
+      "context"
+    ],
+    "GetBinaryFileAlpha1": [
+      "self",
+      "request",
+      "context"
+    ],
+    "DeleteBinaryFileAlpha1": [
+      "self",
+      "request",
+      "context"
+    ]
+  },
+  "add_DaprServicer_to_server": [
+    "servicer",
+    "server"
+  ],
+  "Dapr": {
+    "InvokeService": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "GetState": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "GetBulkState": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "SaveState": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "QueryStateAlpha1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "DeleteState": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "DeleteBulkState": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "ExecuteStateTransaction": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "PublishEvent": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "BulkPublishEventAlpha1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "BulkPublishEvent": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "SubscribeTopicEventsAlpha1": [
+      "request_iterator",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "InvokeBinding": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "GetSecret": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "GetBulkSecret": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "RegisterActorTimer": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "UnregisterActorTimer": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "RegisterActorReminder": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "UnregisterActorReminder": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "UnregisterActorRemindersByType": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "ListActorReminders": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "ListActorTimers": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "GetActorState": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "GetActorReminder": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "GetActorTimer": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "ExecuteActorStateTransaction": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "InvokeActor": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "SubscribeActorEventsAlpha1": [
+      "request_iterator",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "GetConfigurationAlpha1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "GetConfiguration": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "SubscribeConfigurationAlpha1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "SubscribeConfiguration": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "UnsubscribeConfigurationAlpha1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "UnsubscribeConfiguration": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "TryLockAlpha1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "UnlockAlpha1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "EncryptAlpha1": [
+      "request_iterator",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "DecryptAlpha1": [
+      "request_iterator",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "GetMetadata": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "SetMetadata": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "SubtleGetKeyAlpha1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "SubtleEncryptAlpha1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "SubtleDecryptAlpha1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "SubtleWrapKeyAlpha1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "SubtleUnwrapKeyAlpha1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "SubtleSignAlpha1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "SubtleVerifyAlpha1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "StartWorkflowAlpha1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "GetWorkflowAlpha1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "PurgeWorkflowAlpha1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "TerminateWorkflowAlpha1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "PauseWorkflowAlpha1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "ResumeWorkflowAlpha1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "RaiseEventWorkflowAlpha1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "StartWorkflowBeta1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "GetWorkflowBeta1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "PurgeWorkflowBeta1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "TerminateWorkflowBeta1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "PauseWorkflowBeta1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "ResumeWorkflowBeta1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "RaiseEventWorkflowBeta1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "Shutdown": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "ScheduleJobAlpha1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "ScheduleJob": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "GetJobAlpha1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "GetJob": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "DeleteJobAlpha1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "DeleteJob": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "DeleteJobsByPrefixAlpha1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "DeleteJobsByPrefix": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "ListJobsAlpha1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "ListJobs": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "ConverseAlpha1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "ConverseAlpha2": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "CreateIndexAlpha1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "GetIndexAlpha1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "ListIndexesAlpha1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "DeleteIndexAlpha1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "IndexDocumentsAlpha1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "GetDocumentsAlpha1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "DeleteDocumentsAlpha1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "SearchAlpha1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "CreateCollectionAlpha1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "GetCollectionAlpha1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "ListCollectionsAlpha1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "DeleteCollectionAlpha1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "UpsertVectorsAlpha1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "DeleteVectorsAlpha1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "GetVectorsAlpha1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "QueryVectorsAlpha1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "BatchQueryVectorsAlpha1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "SetBinaryFileAlpha1": [
+      "request_iterator",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "GetBinaryFileAlpha1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ],
+    "DeleteBinaryFileAlpha1": [
+      "request",
+      "target",
+      "options",
+      "channel_credentials",
+      "call_credentials",
+      "insecure",
+      "compression",
+      "wait_for_ready",
+      "timeout",
+      "metadata"
+    ]
+  },
+  "ActorInterface": {},
+  "actormethod": [
+    "name"
+  ],
+  "ActorNotFoundError": {},
+  "ActorTypeNotFoundError": {},
+  "ActorMethodNotFoundError": {},
+  "ActorPayloadDecodeError": {},
+  "ActorId": {
+    "__init__": [
+      "self",
+      "actor_id"
+    ],
+    "create_random_id": [
+      "cls"
+    ],
+    "id": [
+      "self"
+    ],
+    "__hash__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ]
+  },
+  "_HTTP_TIMEOUT_FROM_SETTINGS": [],
+  "ACTOR_FACTORY_CALLBACK": [],
+  "ActorFactoryBase": {
+    "create": [
+      "self",
+      "actor_type",
+      "actor_id",
+      "actor_interface"
+    ]
+  },
+  "ActorProxyFactory": {
+    "__init__": [
+      "self",
+      "message_serializer",
+      "http_timeout_seconds",
+      "retry_policy"
+    ],
+    "create": [
+      "self",
+      "actor_type",
+      "actor_id",
+      "actor_interface"
+    ]
+  },
+  "CallableProxy": {
+    "__init__": [
+      "self",
+      "proxy",
+      "attr_call_type",
+      "message_serializer"
+    ],
+    "__call__": [
+      "self"
+    ]
+  },
+  "ActorProxy": {
+    "_default_proxy_factory": [],
+    "__init__": [
+      "self",
+      "client",
+      "actor_type",
+      "actor_id",
+      "actor_interface",
+      "message_serializer"
+    ],
+    "actor_id": [
+      "self"
+    ],
+    "actor_type": [
+      "self"
+    ],
+    "_get_default_factory_instance": [
+      "cls"
+    ],
+    "create": [
+      "cls",
+      "actor_type",
+      "actor_id",
+      "actor_interface",
+      "actor_proxy_factory"
+    ],
+    "invoke_method": [
+      "self",
+      "method",
+      "raw_body"
+    ],
+    "__getattr__": [
+      "self",
+      "name"
+    ]
+  },
+  "ActorReminderData": {
+    "__init__": [
+      "self",
+      "reminder_name",
+      "state",
+      "due_time",
+      "period",
+      "ttl",
+      "failure_policy"
+    ],
+    "reminder_name": [
+      "self"
+    ],
+    "state": [
+      "self"
+    ],
+    "due_time": [
+      "self"
+    ],
+    "period": [
+      "self"
+    ],
+    "ttl": [
+      "self"
+    ],
+    "failure_policy": [
+      "self"
+    ],
+    "as_dict": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "reminder_name",
+      "obj"
+    ]
+  },
+  "ActorRuntimeContext": {
+    "__init__": [
+      "self",
+      "actor_type_info",
+      "message_serializer",
+      "state_serializer",
+      "actor_client",
+      "actor_factory"
+    ],
+    "actor_type_info": [
+      "self"
+    ],
+    "message_serializer": [
+      "self"
+    ],
+    "state_serializer": [
+      "self"
+    ],
+    "state_provider": [
+      "self"
+    ],
+    "dapr_client": [
+      "self"
+    ],
+    "create_actor": [
+      "self",
+      "actor_id"
+    ],
+    "_default_actor_factory": [
+      "self",
+      "ctx",
+      "actor_id"
+    ]
+  },
+  "StateChangeKind": {
+    "none": [],
+    "add": [],
+    "update": [],
+    "remove": []
+  },
+  "ActorStateChange": {
+    "__init__": [
+      "self",
+      "state_name",
+      "value",
+      "change_kind",
+      "ttl_in_seconds"
+    ],
+    "state_name": [
+      "self"
+    ],
+    "value": [
+      "self"
+    ],
+    "change_kind": [
+      "self"
+    ],
+    "ttl_in_seconds": [
+      "self"
+    ]
+  },
+  "MockStateManager": {
+    "__init__": [
+      "self",
+      "actor",
+      "initstate"
+    ],
+    "add_state": [
+      "self",
+      "state_name",
+      "value"
+    ],
+    "try_add_state": [
+      "self",
+      "state_name",
+      "value"
+    ],
+    "get_state": [
+      "self",
+      "state_name"
+    ],
+    "try_get_state": [
+      "self",
+      "state_name"
+    ],
+    "set_state": [
+      "self",
+      "state_name",
+      "value"
+    ],
+    "set_state_ttl": [
+      "self",
+      "state_name",
+      "value",
+      "ttl_in_seconds"
+    ],
+    "remove_state": [
+      "self",
+      "state_name"
+    ],
+    "try_remove_state": [
+      "self",
+      "state_name"
+    ],
+    "contains_state": [
+      "self",
+      "state_name"
+    ],
+    "get_or_add_state": [
+      "self",
+      "state_name",
+      "value"
+    ],
+    "add_or_update_state": [
+      "self",
+      "state_name",
+      "value",
+      "update_value_factory"
+    ],
+    "get_state_names": [
+      "self"
+    ],
+    "clear_cache": [
+      "self"
+    ],
+    "save_state": [
+      "self"
+    ],
+    "is_state_marked_for_remove": [
+      "self",
+      "state_name"
+    ]
+  },
+  "ActorReentrancyConfig": {
+    "__init__": [
+      "self",
+      "enabled",
+      "maxStackDepth"
+    ],
+    "enabled": [
+      "self"
+    ],
+    "max_stack_depth": [
+      "self"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "ActorTypeConfig": {
+    "__init__": [
+      "self",
+      "actor_type",
+      "actor_idle_timeout",
+      "actor_scan_interval",
+      "drain_ongoing_call_timeout",
+      "drain_rebalanced_actors",
+      "reentrancy",
+      "reminders_storage_partitions"
+    ],
+    "actor_type": [
+      "self"
+    ],
+    "actor_idle_timeout": [
+      "self"
+    ],
+    "actor_scan_interval": [
+      "self"
+    ],
+    "drain_ongoing_call_timeout": [
+      "self"
+    ],
+    "drain_rebalanced_actors": [
+      "self"
+    ],
+    "reentrancy": [
+      "self"
+    ],
+    "reminders_storage_partitions": [
+      "self"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "ActorRuntimeConfig": {
+    "__init__": [
+      "self",
+      "actor_idle_timeout",
+      "actor_scan_interval",
+      "drain_ongoing_call_timeout",
+      "drain_rebalanced_actors",
+      "reentrancy",
+      "reminders_storage_partitions",
+      "actor_type_configs"
+    ],
+    "entities": [
+      "self"
+    ],
+    "actor_idle_timeout": [
+      "self"
+    ],
+    "actor_scan_interval": [
+      "self"
+    ],
+    "drain_ongoing_call_timeout": [
+      "self"
+    ],
+    "drain_rebalanced_actors": [
+      "self"
+    ],
+    "reentrancy": [
+      "self"
+    ],
+    "reminders_storage_partitions": [
+      "self"
+    ],
+    "actor_type_configs": [
+      "self"
+    ],
+    "update_entities": [
+      "self",
+      "entities"
+    ],
+    "update_actor_type_configs": [
+      "self",
+      "actor_type_configs"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "StateMetadata": {
+    "__init__": [
+      "self",
+      "value",
+      "change_kind",
+      "ttl_in_seconds"
+    ],
+    "value": [
+      "self",
+      "new_value"
+    ],
+    "change_kind": [
+      "self",
+      "new_kind"
+    ],
+    "ttl_in_seconds": [
+      "self",
+      "new_ttl_in_seconds"
+    ]
+  },
+  "_NotFoundStateMetadata": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "_is_absent": [
+    "state_metadata"
+  ],
+  "ActorStateManager": {
+    "__init__": [
+      "self",
+      "actor"
+    ],
+    "add_state": [
+      "self",
+      "state_name",
+      "value"
+    ],
+    "try_add_state": [
+      "self",
+      "state_name",
+      "value"
+    ],
+    "get_state": [
+      "self",
+      "state_name"
+    ],
+    "try_get_state": [
+      "self",
+      "state_name"
+    ],
+    "set_state": [
+      "self",
+      "state_name",
+      "value"
+    ],
+    "set_state_ttl": [
+      "self",
+      "state_name",
+      "value",
+      "ttl_in_seconds"
+    ],
+    "remove_state": [
+      "self",
+      "state_name"
+    ],
+    "try_remove_state": [
+      "self",
+      "state_name"
+    ],
+    "contains_state": [
+      "self",
+      "state_name"
+    ],
+    "get_or_add_state": [
+      "self",
+      "state_name",
+      "value"
+    ],
+    "add_or_update_state": [
+      "self",
+      "state_name",
+      "value",
+      "update_value_factory"
+    ],
+    "get_state_names": [
+      "self"
+    ],
+    "clear_cache": [
+      "self"
+    ],
+    "save_state": [
+      "self"
+    ],
+    "_refresh_default_tracker": [
+      "self",
+      "state_changes"
+    ],
+    "is_state_marked_for_remove": [
+      "self",
+      "state_name"
+    ],
+    "_get_contextual_state_tracker": [
+      "self"
+    ],
+    "set_state_context": [
+      "self",
+      "contextID"
+    ]
+  },
+  "ActorReminderFailurePolicy": {
+    "__init__": [
+      "self"
+    ],
+    "drop_policy": [
+      "cls"
+    ],
+    "constant_policy": [
+      "cls",
+      "interval",
+      "max_retries"
+    ],
+    "drop": [
+      "self"
+    ],
+    "interval": [
+      "self"
+    ],
+    "max_retries": [
+      "self"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "ActorMethodContext": {
+    "__init__": [
+      "self",
+      "method_name",
+      "call_type"
+    ],
+    "method_name": [
+      "self"
+    ],
+    "call_type": [
+      "self"
+    ],
+    "create_for_actor": [
+      "cls",
+      "method_name"
+    ],
+    "create_for_timer": [
+      "cls",
+      "method_name"
+    ],
+    "create_for_reminder": [
+      "cls",
+      "method_name"
+    ]
+  },
+  "ActorTypeInformation": {
+    "__init__": [
+      "self",
+      "name",
+      "implementation_class",
+      "actor_bases"
+    ],
+    "type_name": [
+      "self"
+    ],
+    "implementation_type": [
+      "self"
+    ],
+    "actor_interfaces": [
+      "self"
+    ],
+    "is_remindable": [
+      "self"
+    ],
+    "create": [
+      "cls",
+      "actor_class"
+    ]
+  },
+  "ActorMethodDispatcher": {
+    "__init__": [
+      "self",
+      "type_info"
+    ],
+    "dispatch": [
+      "self",
+      "actor",
+      "name"
+    ],
+    "get_arg_names": [
+      "self",
+      "name"
+    ],
+    "get_arg_types": [
+      "self",
+      "name"
+    ],
+    "get_return_type": [
+      "self",
+      "name"
+    ],
+    "_check_name_exist": [
+      "self",
+      "name"
+    ]
+  },
+  "_MAP_CHANGE_KIND_TO_OPERATION": [],
+  "StateProvider": {
+    "__init__": [
+      "self",
+      "actor_client",
+      "state_serializer"
+    ],
+    "try_load_state": [
+      "self",
+      "actor_type",
+      "actor_id",
+      "state_name",
+      "state_type"
+    ],
+    "round_trip_state_value": [
+      "self",
+      "value"
+    ],
+    "contains_state": [
+      "self",
+      "actor_type",
+      "actor_id",
+      "state_name"
+    ],
+    "save_state": [
+      "self",
+      "actor_type",
+      "actor_id",
+      "state_changes"
+    ]
+  },
+  "Remindable": {
+    "receive_reminder": [
+      "self",
+      "name",
+      "state",
+      "due_time",
+      "period",
+      "ttl"
+    ]
+  },
+  "CONTENT_TYPE_HEADER": [],
+  "JSON_CONTENT_TYPE": [],
+  "build_initial_request": [
+    "config"
+  ],
+  "_reentrancy_to_proto": [
+    "reentrancy"
+  ],
+  "_entity_config_to_proto": [
+    "type_config"
+  ],
+  "extract_reentrancy_id": [
+    "metadata"
+  ],
+  "build_reminder_fire_body": [
+    "reminder_request"
+  ],
+  "build_timer_fire_body": [
+    "timer_request"
+  ],
+  "_parse_json_value": [
+    "value",
+    "callback_kind"
+  ],
+  "_any_to_json_value": [
+    "callback_request"
+  ],
+  "_maybe_unwrap_grpc_registered_value": [
+    "value"
+  ],
+  "build_invoke_error_payload": [
+    "exception"
+  ],
+  "status_code_for_exception": [
+    "exception"
+  ],
+  "Actor": {
+    "__init__": [
+      "self",
+      "ctx",
+      "actor_id"
+    ],
+    "runtime_ctx": [
+      "self"
+    ],
+    "__get_new_timer_name": [
+      "self"
+    ],
+    "register_timer": [
+      "self",
+      "name",
+      "callback",
+      "state",
+      "due_time",
+      "period",
+      "ttl"
+    ],
+    "unregister_timer": [
+      "self",
+      "name"
+    ],
+    "register_reminder": [
+      "self",
+      "name",
+      "state",
+      "due_time",
+      "period",
+      "ttl",
+      "failure_policy"
+    ],
+    "unregister_reminder": [
+      "self",
+      "name"
+    ],
+    "_on_activate_internal": [
+      "self"
+    ],
+    "_on_deactivate_internal": [
+      "self"
+    ],
+    "_on_pre_actor_method_internal": [
+      "self",
+      "method_context"
+    ],
+    "_on_post_actor_method_internal": [
+      "self",
+      "method_context"
+    ],
+    "_on_invoke_failed_internal": [
+      "self",
+      "exception"
+    ],
+    "_reset_state_internal": [
+      "self"
+    ],
+    "_save_state_internal": [
+      "self"
+    ],
+    "_fire_timer_internal": [
+      "self",
+      "timer_callback",
+      "timer_data"
+    ],
+    "_on_activate": [
+      "self"
+    ],
+    "_on_deactivate": [
+      "self"
+    ],
+    "_on_pre_actor_method": [
+      "self",
+      "method_context"
+    ],
+    "_on_post_actor_method": [
+      "self",
+      "method_context"
+    ]
+  },
+  "get_class_method_args": [
+    "func"
+  ],
+  "get_method_arg_types": [
+    "func"
+  ],
+  "get_method_return_types": [
+    "func"
+  ],
+  "get_dispatchable_attrs_from_interface": [
+    "actor_interface",
+    "dispatch_map"
+  ],
+  "get_dispatchable_attrs": [
+    "actor_class"
+  ],
+  "is_dapr_actor": [
+    "cls"
+  ],
+  "get_actor_interfaces": [
+    "cls"
+  ],
+  "TIMER_CALLBACK": [],
+  "ActorTimerData": {
+    "__init__": [
+      "self",
+      "timer_name",
+      "callback",
+      "state",
+      "due_time",
+      "period",
+      "ttl"
+    ],
+    "timer_name": [
+      "self"
+    ],
+    "state": [
+      "self"
+    ],
+    "due_time": [
+      "self"
+    ],
+    "period": [
+      "self"
+    ],
+    "ttl": [
+      "self"
+    ],
+    "callback": [
+      "self"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "ActorCallType": {
+    "actor_interface_method": [],
+    "timer_method": [],
+    "reminder_method": []
+  },
+  "MockActor": {
+    "__init__": [
+      "self",
+      "actor_id",
+      "initstate"
+    ],
+    "register_timer": [
+      "self",
+      "name",
+      "callback",
+      "state",
+      "due_time",
+      "period",
+      "ttl"
+    ],
+    "unregister_timer": [
+      "self",
+      "name"
+    ],
+    "register_reminder": [
+      "self",
+      "name",
+      "state",
+      "due_time",
+      "period",
+      "ttl",
+      "failure_policy"
+    ],
+    "unregister_reminder": [
+      "self",
+      "name"
+    ]
+  },
+  "create_mock_actor": [
+    "cls1",
+    "actor_id",
+    "initstate"
+  ],
+  "TIMER_METHOD_NAME": [],
+  "REMINDER_METHOD_NAME": [],
+  "ActorManager": {
+    "__init__": [
+      "self",
+      "ctx"
+    ],
+    "activate_actor": [
+      "self",
+      "actor_id"
+    ],
+    "deactivate_actor": [
+      "self",
+      "actor_id"
+    ],
+    "fire_reminder": [
+      "self",
+      "actor_id",
+      "reminder_name",
+      "request_body"
+    ],
+    "fire_timer": [
+      "self",
+      "actor_id",
+      "timer_name",
+      "request_body"
+    ],
+    "dispatch": [
+      "self",
+      "actor_id",
+      "actor_method_name",
+      "request_body"
+    ],
+    "_dispatch_internal": [
+      "self",
+      "actor_id",
+      "method_context",
+      "dispatch_action"
+    ]
+  },
+  "ActorRuntime": {
+    "_actor_config": [],
+    "_actor_managers_lock": [],
+    "register_actor": [
+      "cls",
+      "actor",
+      "message_serializer",
+      "state_serializer",
+      "http_timeout_seconds",
+      "actor_factory",
+      "actor_client"
+    ],
+    "get_registered_actor_types": [
+      "cls"
+    ],
+    "deactivate": [
+      "cls",
+      "actor_type_name",
+      "actor_id"
+    ],
+    "dispatch": [
+      "cls",
+      "actor_type_name",
+      "actor_id",
+      "actor_method_name",
+      "request_body",
+      "reentrancy_id"
+    ],
+    "fire_reminder": [
+      "cls",
+      "actor_type_name",
+      "actor_id",
+      "name",
+      "state"
+    ],
+    "fire_timer": [
+      "cls",
+      "actor_type_name",
+      "actor_id",
+      "name",
+      "state"
+    ],
+    "set_actor_config": [
+      "cls",
+      "config"
+    ],
+    "get_actor_config": [
+      "cls"
+    ],
+    "_get_actor_manager": [
+      "cls",
+      "actor_type_name"
+    ]
+  },
+  "_RECONNECT_DELAY_SECONDS": [],
+  "_DRAIN_TIMEOUT_SECONDS": [],
+  "_HANDSHAKE_TIMEOUT_SECONDS": [],
+  "_GRPC_AIO_EOF": [],
+  "_log_dispatch_task_exception": [
+    "task"
+  ],
+  "_ActorCallbackRequest": {
+    "id": [
+      "self"
+    ],
+    "actor_type": [
+      "self"
+    ]
+  },
+  "_CallbackRequestT": [],
+  "_StreamSession": {
+    "__init__": [
+      "self",
+      "stream"
+    ],
+    "close": [
+      "self"
+    ],
+    "send": [
+      "self",
+      "message"
+    ]
+  },
+  "ActorGrpcHost": {
+    "__init__": [
+      "self",
+      "address",
+      "timeout_seconds",
+      "app_port"
+    ],
+    "_resolve_app_port": [
+      "app_port"
+    ],
+    "register_actor": [
+      "self",
+      "actor",
+      "message_serializer",
+      "state_serializer",
+      "actor_factory"
+    ],
+    "start": [
+      "self"
+    ],
+    "_on_run_task_done": [
+      "self",
+      "task"
+    ],
+    "stop": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ],
+    "_start_app_channel_listener": [
+      "self"
+    ],
+    "run_forever": [
+      "self"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self",
+      "exc_type",
+      "exc_value",
+      "traceback"
+    ],
+    "_create_actor_client": [
+      "self",
+      "message_serializer",
+      "state_serializer"
+    ],
+    "_run_loop": [
+      "self"
+    ],
+    "_wait_for_channel_ready": [
+      "self"
+    ],
+    "_run_session": [
+      "self"
+    ],
+    "_dispatch": [
+      "self",
+      "session",
+      "message"
+    ],
+    "_guard_and_handle": [
+      "self",
+      "session",
+      "request",
+      "handler"
+    ],
+    "_on_invoke": [
+      "self",
+      "session",
+      "request"
+    ],
+    "_on_reminder": [
+      "self",
+      "session",
+      "request"
+    ],
+    "_on_timer": [
+      "self",
+      "session",
+      "request"
+    ],
+    "_on_deactivate": [
+      "self",
+      "session",
+      "request"
+    ],
+    "_send_request_failed": [
+      "self",
+      "session",
+      "request_id",
+      "exception"
+    ],
+    "_drain_dispatch_tasks": [
+      "self"
+    ]
+  },
+  "HTTP_APP_PORT": [],
+  "GRPC_APP_PORT": [],
+  "DAPR_API_TOKEN": [],
+  "DAPR_HTTP_ENDPOINT": [],
+  "DAPR_GRPC_ENDPOINT": [],
+  "DAPR_RUNTIME_HOST": [],
+  "DAPR_HTTP_PORT": [],
+  "DAPR_GRPC_PORT": [],
+  "DAPR_API_VERSION": [],
+  "DAPR_HEALTH_TIMEOUT": [],
+  "DAPR_API_MAX_RETRIES": [],
+  "DAPR_API_TIMEOUT_SECONDS": [],
+  "DAPR_API_METHOD_INVOCATION_PROTOCOL": [],
+  "DAPR_HTTP_TIMEOUT_SECONDS": [],
+  "DAPR_GRPC_MAX_INBOUND_MESSAGE_SIZE_BYTES": [],
+  "DAPR_CONVERSATION_TOOLS_MAX_ENUM_ITEMS": [],
+  "DAPR_CONVERSATION_TOOLS_LARGE_ENUM_BEHAVIOR": [],
+  "URIParseConfig": {
+    "DEFAULT_SCHEME": [],
+    "DEFAULT_HOSTNAME": [],
+    "DEFAULT_PORT": [],
+    "DEFAULT_AUTHORITY": [],
+    "ACCEPTED_SCHEMES": []
+  },
+  "GrpcEndpoint": {
+    "__init__": [
+      "self",
+      "url"
+    ],
+    "_set_scheme": [
+      "self"
+    ],
+    "scheme": [
+      "self"
+    ],
+    "_set_hostname": [
+      "self"
+    ],
+    "hostname": [
+      "self"
+    ],
+    "_set_port": [
+      "self"
+    ],
+    "port": [
+      "self"
+    ],
+    "port_as_int": [
+      "self"
+    ],
+    "_set_endpoint": [
+      "self"
+    ],
+    "endpoint": [
+      "self"
+    ],
+    "_preprocess_uri": [
+      "self",
+      "url"
+    ],
+    "_set_tls": [
+      "self"
+    ],
+    "tls": [
+      "self"
+    ],
+    "_is_unix_socket_path": [
+      "self"
+    ],
+    "_validate_path_and_query": [
+      "self"
+    ]
+  },
+  "Settings": {
+    "__getattr__": [
+      "self",
+      "name"
+    ],
+    "__dir__": [
+      "self"
+    ]
+  },
+  "settings": [],
+  "_FromSettings": {
+    "__init__": [
+      "self",
+      "name"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "resolve": [
+      "self"
+    ]
+  },
+  "_MIN_ATTEMPT_TIMEOUT_SECONDS": [],
+  "_attempt_timeout": [
+    "deadline"
+  ],
+  "ERROR_CODE_UNKNOWN": [],
+  "ERROR_CODE_DOES_NOT_EXIST": [],
+  "DaprInternalError": {
+    "__init__": [
+      "self",
+      "message",
+      "error_code",
+      "raw_response_bytes"
+    ],
+    "as_dict": [
+      "self"
+    ],
+    "as_json_safe_dict": [
+      "self"
+    ],
+    "message": [
+      "self"
+    ],
+    "error_code": [
+      "self"
+    ],
+    "raw_response_bytes": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "StatusDetails": {
+    "__init__": [
+      "self"
+    ],
+    "as_dict": [
+      "self"
+    ]
+  },
+  "DaprHttpError": {
+    "__init__": [
+      "self",
+      "serializer",
+      "raw_response_bytes",
+      "status_code",
+      "reason"
+    ],
+    "status_code": [
+      "self"
+    ],
+    "reason": [
+      "self"
+    ],
+    "as_dict": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "DaprGrpcError": {
+    "__init__": [
+      "self",
+      "err"
+    ],
+    "_parse_details": [
+      "self"
+    ],
+    "code": [
+      "self"
+    ],
+    "details": [
+      "self"
+    ],
+    "error_code": [
+      "self"
+    ],
+    "status_details": [
+      "self"
+    ],
+    "get_grpc_status": [
+      "self"
+    ],
+    "json": [
+      "self"
+    ]
+  },
+  "serialize_status_detail": [
+    "status_detail"
+  ],
+  "DaprActorClientBase": {
+    "invoke_method": [
+      "self",
+      "actor_type",
+      "actor_id",
+      "method",
+      "data"
+    ],
+    "save_state_transactionally": [
+      "self",
+      "actor_type",
+      "actor_id",
+      "data"
+    ],
+    "get_state": [
+      "self",
+      "actor_type",
+      "actor_id",
+      "name"
+    ],
+    "register_reminder": [
+      "self",
+      "actor_type",
+      "actor_id",
+      "name",
+      "data"
+    ],
+    "unregister_reminder": [
+      "self",
+      "actor_type",
+      "actor_id",
+      "name"
+    ],
+    "register_timer": [
+      "self",
+      "actor_type",
+      "actor_id",
+      "name",
+      "data"
+    ],
+    "unregister_timer": [
+      "self",
+      "actor_type",
+      "actor_id",
+      "name"
+    ]
+  },
+  "_MAX_RETRIES_FROM_SETTINGS": [],
+  "DEFAULT_ENCODING": [],
+  "DEFAULT_JSON_CONTENT_TYPE": [],
+  "resolve_grpc_endpoint": [
+    "address"
+  ],
+  "create_aio_channel": [
+    "address"
+  ],
+  "Params": [],
+  "ConversationInput": {},
+  "ConversationMessageContent": {},
+  "_indent_lines": [
+    "title",
+    "text",
+    "indent"
+  ],
+  "HasNameAndContent": {},
+  "UserTracePrintMixin": {
+    "trace_print": [
+      "self",
+      "indent"
+    ]
+  },
+  "ConversationMessageOfDeveloper": {},
+  "ConversationMessageOfSystem": {},
+  "ConversationMessageOfUser": {},
+  "ConversationToolCallsOfFunction": {},
+  "ConversationToolCalls": {},
+  "ConversationMessageOfAssistant": {
+    "trace_print": [
+      "self",
+      "indent"
+    ]
+  },
+  "ConversationMessageOfTool": {
+    "trace_print": [
+      "self",
+      "indent"
+    ]
+  },
+  "ConversationMessage": {
+    "trace_print": [
+      "self",
+      "indent"
+    ],
+    "to_proto": [
+      "self"
+    ]
+  },
+  "ConversationInputAlpha2": {},
+  "ConversationToolsFunction": {
+    "schema_as_dict": [
+      "self"
+    ],
+    "from_function": [
+      "cls",
+      "func",
+      "register"
+    ]
+  },
+  "ConversationResultAlpha1": {},
+  "ConversationResultAlpha2Message": {},
+  "ConversationResultAlpha2Choices": {},
+  "ConversationResultAlpha2CompletionUsageCompletionTokensDetails": {},
+  "ConversationResultAlpha2CompletionUsagePromptTokensDetails": {},
+  "ConversationResultAlpha2CompletionUsage": {},
+  "ConversationResultAlpha2": {},
+  "ConversationResponseAlpha1": {},
+  "ConversationResponseAlpha2": {
+    "to_assistant_messages": [
+      "self"
+    ]
+  },
+  "ToolBackend": {
+    "invoke": [
+      "self",
+      "spec",
+      "params"
+    ],
+    "ainvoke": [
+      "self",
+      "spec",
+      "params"
+    ]
+  },
+  "FunctionBackend": {
+    "invoke": [
+      "self",
+      "spec",
+      "params"
+    ],
+    "ainvoke": [
+      "self",
+      "spec",
+      "params"
+    ]
+  },
+  "tool": [
+    "func"
+  ],
+  "ConversationTools": {
+    "invoke": [
+      "self",
+      "params"
+    ],
+    "ainvoke": [
+      "self",
+      "params"
+    ]
+  },
+  "register_tool": [
+    "name",
+    "t"
+  ],
+  "unregister_tool": [
+    "name"
+  ],
+  "get_registered_tools": [],
+  "_get_tool": [
+    "name"
+  ],
+  "execute_registered_tool": [
+    "name",
+    "params"
+  ],
+  "execute_registered_tool_async": [
+    "name",
+    "params"
+  ],
+  "create_user_message": [
+    "text"
+  ],
+  "create_system_message": [
+    "text"
+  ],
+  "create_assistant_message": [
+    "text"
+  ],
+  "create_tool_message": [
+    "tool_id",
+    "name",
+    "content"
+  ],
+  "_get_outputs_from_grpc_response": [
+    "response"
+  ],
+  "FailurePolicy": {
+    "_to_proto": [
+      "self"
+    ]
+  },
+  "DropFailurePolicy": {
+    "_to_proto": [
+      "self"
+    ]
+  },
+  "ConstantFailurePolicy": {
+    "__init__": [
+      "self",
+      "max_retries",
+      "interval_seconds"
+    ],
+    "_to_proto": [
+      "self"
+    ]
+  },
+  "Job": {
+    "_get_proto": [
+      "self"
+    ],
+    "_from_proto": [
+      "cls",
+      "job_proto"
+    ]
+  },
+  "_UNBOUNDED_WAIT_METHODS": [],
+  "_is_unbounded_wait": [
+    "method"
+  ],
+  "DaprClientTimeoutInterceptor": {
+    "intercept_unary_unary": [
+      "self",
+      "continuation",
+      "client_call_details",
+      "request"
+    ]
+  },
+  "DaprClientInterceptor": {
+    "__init__": [
+      "self",
+      "metadata"
+    ],
+    "_intercept_call": [
+      "self",
+      "client_call_details"
+    ],
+    "intercept_unary_unary": [
+      "self",
+      "continuation",
+      "client_call_details",
+      "request"
+    ],
+    "intercept_stream_stream": [
+      "self",
+      "continuation",
+      "client_call_details",
+      "request_iterator"
+    ]
+  },
+  "_python_type_to_json_schema": [
+    "python_type",
+    "field_name"
+  ],
+  "_extract_docstring_args": [
+    "func"
+  ],
+  "_has_potential_param_info": [
+    "lines"
+  ],
+  "_extract_sphinx_params": [
+    "lines"
+  ],
+  "_extract_google_numpy_params": [
+    "lines"
+  ],
+  "extract_docstring_summary": [
+    "func"
+  ],
+  "function_to_json_schema": [
+    "func",
+    "name",
+    "description"
+  ],
+  "_generate_unique_tool_call_id": [],
+  "stringify_tool_output": [
+    "value"
+  ],
+  "ToolError": {},
+  "ToolNotFoundError": {},
+  "ToolExecutionError": {},
+  "ToolArgumentError": {},
+  "_coerce_bool": [
+    "value"
+  ],
+  "_coerce_scalar": [
+    "value",
+    "expected_type"
+  ],
+  "_coerce_enum": [
+    "value",
+    "enum_type"
+  ],
+  "_coerce_literal": [
+    "value",
+    "lit_args"
+  ],
+  "_is_union": [
+    "t"
+  ],
+  "_coerce_and_validate": [
+    "value",
+    "expected_type"
+  ],
+  "bind_params_to_func": [
+    "fn",
+    "params"
+  ],
+  "Consistency": {
+    "unspecified": [],
+    "eventual": [],
+    "strong": []
+  },
+  "Concurrency": {
+    "unspecified": [],
+    "first_write": [],
+    "last_write": []
+  },
+  "StateOptions": {
+    "__init__": [
+      "self",
+      "consistency",
+      "concurrency"
+    ],
+    "get_proto": [
+      "self"
+    ]
+  },
+  "StateItem": {
+    "__init__": [
+      "self",
+      "key",
+      "value",
+      "etag",
+      "options",
+      "metadata"
+    ],
+    "key": [
+      "self"
+    ],
+    "value": [
+      "self"
+    ],
+    "etag": [
+      "self",
+      "val"
+    ],
+    "metadata": [
+      "self",
+      "meta"
+    ],
+    "options": [
+      "self",
+      "op"
+    ]
+  },
+  "TCryptoResponse": [],
+  "DaprResponse": {
+    "__init__": [
+      "self",
+      "headers"
+    ],
+    "headers": [
+      "self",
+      "val"
+    ],
+    "get_headers": [
+      "self",
+      "as_dict"
+    ]
+  },
+  "InvokeMethodResponse": {
+    "__init__": [
+      "self",
+      "data",
+      "content_type",
+      "headers",
+      "status_code"
+    ],
+    "proto": [
+      "self"
+    ],
+    "is_proto": [
+      "self"
+    ],
+    "data": [
+      "self",
+      "val"
+    ],
+    "set_data": [
+      "self",
+      "val"
+    ],
+    "text": [
+      "self"
+    ],
+    "json": [
+      "self"
+    ],
+    "content_type": [
+      "self",
+      "val"
+    ],
+    "pack": [
+      "self",
+      "val"
+    ],
+    "status_code": [
+      "self",
+      "val"
+    ],
+    "unpack": [
+      "self",
+      "message"
+    ]
+  },
+  "BindingResponse": {
+    "__init__": [
+      "self",
+      "data",
+      "binding_metadata",
+      "headers"
+    ],
+    "text": [
+      "self"
+    ],
+    "json": [
+      "self"
+    ],
+    "data": [
+      "self",
+      "val"
+    ],
+    "binding_metadata": [
+      "self"
+    ]
+  },
+  "GetSecretResponse": {
+    "__init__": [
+      "self",
+      "secret",
+      "headers"
+    ],
+    "secret": [
+      "self"
+    ]
+  },
+  "GetBulkSecretResponse": {
+    "__init__": [
+      "self",
+      "secrets",
+      "headers"
+    ],
+    "secrets": [
+      "self"
+    ]
+  },
+  "StateResponse": {
+    "__init__": [
+      "self",
+      "data",
+      "etag",
+      "headers"
+    ],
+    "text": [
+      "self"
+    ],
+    "json": [
+      "self"
+    ],
+    "etag": [
+      "self"
+    ],
+    "data": [
+      "self",
+      "val"
+    ]
+  },
+  "BulkStateItem": {
+    "__init__": [
+      "self",
+      "key",
+      "data",
+      "etag",
+      "error"
+    ],
+    "text": [
+      "self"
+    ],
+    "json": [
+      "self"
+    ],
+    "key": [
+      "self"
+    ],
+    "data": [
+      "self"
+    ],
+    "etag": [
+      "self"
+    ],
+    "error": [
+      "self"
+    ]
+  },
+  "BulkStatesResponse": {
+    "__init__": [
+      "self",
+      "items",
+      "headers"
+    ],
+    "items": [
+      "self"
+    ]
+  },
+  "QueryResponseItem": {
+    "__init__": [
+      "self",
+      "key",
+      "value",
+      "etag",
+      "error"
+    ],
+    "text": [
+      "self"
+    ],
+    "json": [
+      "self"
+    ],
+    "key": [
+      "self"
+    ],
+    "value": [
+      "self"
+    ],
+    "etag": [
+      "self"
+    ],
+    "error": [
+      "self"
+    ]
+  },
+  "QueryResponse": {
+    "__init__": [
+      "self",
+      "results",
+      "token",
+      "metadata",
+      "headers"
+    ],
+    "results": [
+      "self"
+    ],
+    "token": [
+      "self"
+    ],
+    "metadata": [
+      "self"
+    ]
+  },
+  "ConfigurationItem": {
+    "__init__": [
+      "self",
+      "value",
+      "version",
+      "metadata"
+    ],
+    "text": [
+      "self"
+    ],
+    "json": [
+      "self"
+    ],
+    "value": [
+      "self"
+    ],
+    "version": [
+      "self"
+    ],
+    "metadata": [
+      "self"
+    ]
+  },
+  "ConfigurationResponse": {
+    "__init__": [
+      "self",
+      "items",
+      "headers"
+    ],
+    "items": [
+      "self"
+    ]
+  },
+  "ConfigurationWatcher": {
+    "__init__": [
+      "self"
+    ],
+    "watch_configuration": [
+      "self",
+      "stub",
+      "store_name",
+      "keys",
+      "handler",
+      "config_metadata"
+    ],
+    "_read_subscribe_config": [
+      "self",
+      "stub",
+      "req",
+      "handler"
+    ]
+  },
+  "BulkPublishResponseFailedEntry": {
+    "__init__": [
+      "self",
+      "entry_id",
+      "error"
+    ],
+    "entry_id": [
+      "self"
+    ],
+    "error": [
+      "self"
+    ]
+  },
+  "BulkPublishResponse": {
+    "__init__": [
+      "self",
+      "failed_entries",
+      "headers"
+    ],
+    "failed_entries": [
+      "self"
+    ]
+  },
+  "TopicEventResponseStatus": {
+    "success": [],
+    "retry": [],
+    "drop": []
+  },
+  "TopicEventResponse": {
+    "__init__": [
+      "self",
+      "status",
+      "headers"
+    ],
+    "status": [
+      "self"
+    ]
+  },
+  "UnlockResponseStatus": {
+    "success": [],
+    "lock_does_not_exist": [],
+    "lock_belongs_to_others": [],
+    "internal_error": []
+  },
+  "UnlockResponse": {
+    "__init__": [
+      "self",
+      "status",
+      "headers"
+    ],
+    "status": [
+      "self"
+    ]
+  },
+  "TryLockResponse": {
+    "__init__": [
+      "self",
+      "success",
+      "client",
+      "store_name",
+      "resource_id",
+      "lock_owner",
+      "headers"
+    ],
+    "__bool__": [
+      "self"
+    ],
+    "success": [
+      "self"
+    ],
+    "__exit__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self"
+    ],
+    "__aenter__": [
+      "self"
+    ]
+  },
+  "GetMetadataResponse": {
+    "__init__": [
+      "self",
+      "application_id",
+      "active_actors_count",
+      "registered_components",
+      "extended_metadata",
+      "headers",
+      "mcp_servers"
+    ],
+    "application_id": [
+      "self"
+    ],
+    "active_actors_count": [
+      "self"
+    ],
+    "registered_components": [
+      "self"
+    ],
+    "extended_metadata": [
+      "self"
+    ]
+  },
+  "RegisteredComponents": {},
+  "MetadataMCPServer": {},
+  "EncryptOptions": {
+    "get_proto": [
+      "self"
+    ]
+  },
+  "DecryptOptions": {
+    "get_proto": [
+      "self"
+    ]
+  },
+  "DaprActorGrpcClient": {
+    "__init__": [
+      "self",
+      "timeout",
+      "address",
+      "channel",
+      "message_serializer",
+      "state_serializer"
+    ],
+    "close": [
+      "self"
+    ],
+    "invoke_method": [
+      "self",
+      "actor_type",
+      "actor_id",
+      "method",
+      "data"
+    ],
+    "save_state_transactionally": [
+      "self",
+      "actor_type",
+      "actor_id",
+      "data"
+    ],
+    "get_state": [
+      "self",
+      "actor_type",
+      "actor_id",
+      "name"
+    ],
+    "register_reminder": [
+      "self",
+      "actor_type",
+      "actor_id",
+      "name",
+      "data"
+    ],
+    "unregister_reminder": [
+      "self",
+      "actor_type",
+      "actor_id",
+      "name"
+    ],
+    "register_timer": [
+      "self",
+      "actor_type",
+      "actor_id",
+      "name",
+      "data"
+    ],
+    "unregister_timer": [
+      "self",
+      "actor_type",
+      "actor_id",
+      "name"
+    ]
+  },
+  "_to_transactional_operation": [
+    "operation",
+    "state_serializer"
+  ],
+  "_decode_reminder_state": [
+    "encoded_state"
+  ],
+  "_to_failure_policy": [
+    "policy"
+  ],
+  "DaprRequest": {
+    "__init__": [
+      "self",
+      "metadata"
+    ],
+    "metadata": [
+      "self",
+      "val"
+    ],
+    "get_metadata": [
+      "self",
+      "as_dict"
+    ]
+  },
+  "InvokeMethodRequest": {
+    "HTTP_METHODS": [],
+    "__init__": [
+      "self",
+      "data",
+      "content_type"
+    ],
+    "http_verb": [
+      "self",
+      "val"
+    ],
+    "http_querystring": [
+      "self"
+    ],
+    "is_http": [
+      "self"
+    ],
+    "proto": [
+      "self"
+    ],
+    "is_proto": [
+      "self"
+    ],
+    "pack": [
+      "self",
+      "val"
+    ],
+    "unpack": [
+      "self",
+      "message"
+    ],
+    "data": [
+      "self",
+      "val"
+    ],
+    "set_data": [
+      "self",
+      "val"
+    ],
+    "text": [
+      "self"
+    ],
+    "content_type": [
+      "self",
+      "val"
+    ]
+  },
+  "BindingRequest": {
+    "__init__": [
+      "self",
+      "data",
+      "binding_metadata"
+    ],
+    "data": [
+      "self",
+      "val"
+    ],
+    "text": [
+      "self"
+    ],
+    "binding_metadata": [
+      "self"
+    ]
+  },
+  "TransactionOperationType": {
+    "upsert": [],
+    "delete": []
+  },
+  "TransactionalStateOperation": {
+    "__init__": [
+      "self",
+      "key",
+      "data",
+      "etag",
+      "operation_type",
+      "metadata"
+    ],
+    "key": [
+      "self"
+    ],
+    "data": [
+      "self"
+    ],
+    "etag": [
+      "self"
+    ],
+    "operation_type": [
+      "self"
+    ],
+    "metadata": [
+      "self"
+    ]
+  },
+  "JobEvent": {
+    "__init__": [
+      "self",
+      "name",
+      "data"
+    ],
+    "get_data_as_string": [
+      "self",
+      "encoding"
+    ]
+  },
+  "BulkPublishEntry": {
+    "__init__": [
+      "self",
+      "event",
+      "metadata",
+      "content_type",
+      "entry_id"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "to_proto": [
+      "self",
+      "publish_metadata",
+      "data_content_type"
+    ]
+  },
+  "to_bulk_publish_entries": [
+    "data",
+    "publish_metadata",
+    "data_content_type"
+  ],
+  "MetadataDict": [],
+  "MetadataTuple": [],
+  "_GRPC_DNS_RESOLVER_ENV": [],
+  "_GRPC_DNS_RESOLVER_NATIVE": [],
+  "set_default_grpc_dns_resolver": [],
+  "tuple_to_dict": [
+    "tupledata"
+  ],
+  "unpack": [
+    "data",
+    "message"
+  ],
+  "to_bytes": [
+    "data"
+  ],
+  "to_str": [
+    "data"
+  ],
+  "validateNotNone": [],
+  "validateNotBlankString": [],
+  "WorkflowRuntimeStatus": {
+    "UNKNOWN": [],
+    "RUNNING": [],
+    "COMPLETED": [],
+    "FAILED": [],
+    "TERMINATED": [],
+    "PENDING": [],
+    "SUSPENDED": []
+  },
+  "getWorkflowRuntimeStatus": [
+    "inputString"
+  ],
+  "convert_value_to_struct": [
+    "value"
+  ],
+  "convert_value_to_grpc_any": [
+    "value"
+  ],
+  "convert_dict_to_grpc_dict_of_any": [
+    "parameters"
+  ],
+  "SUBSCRIPTION_CLOSE_TIMEOUT_SECONDS": [],
+  "DaprGrpcClient": {
+    "__init__": [
+      "self",
+      "address",
+      "interceptors",
+      "max_grpc_message_length",
+      "retry_policy"
+    ],
+    "get_credentials": [],
+    "close": [
+      "self"
+    ],
+    "__del__": [
+      "self"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_value",
+      "traceback"
+    ],
+    "_get_http_extension": [
+      "http_verb",
+      "http_querystring"
+    ],
+    "invoke_method": [
+      "self",
+      "app_id",
+      "method_name",
+      "data",
+      "content_type",
+      "metadata",
+      "http_verb",
+      "http_querystring",
+      "timeout"
+    ],
+    "invoke_binding": [
+      "self",
+      "binding_name",
+      "operation",
+      "data",
+      "binding_metadata",
+      "metadata"
+    ],
+    "publish_event": [
+      "self",
+      "pubsub_name",
+      "topic_name",
+      "data",
+      "publish_metadata",
+      "metadata",
+      "data_content_type"
+    ],
+    "publish_events": [
+      "self",
+      "pubsub_name",
+      "topic_name",
+      "data",
+      "publish_metadata",
+      "data_content_type"
+    ],
+    "subscribe": [
+      "self",
+      "pubsub_name",
+      "topic",
+      "metadata",
+      "dead_letter_topic"
+    ],
+    "subscribe_with_handler": [
+      "self",
+      "pubsub_name",
+      "topic",
+      "handler_fn",
+      "metadata",
+      "dead_letter_topic"
+    ],
+    "get_state": [
+      "self",
+      "store_name",
+      "key",
+      "state_metadata",
+      "metadata"
+    ],
+    "get_bulk_state": [
+      "self",
+      "store_name",
+      "keys",
+      "parallelism",
+      "states_metadata",
+      "metadata"
+    ],
+    "query_state": [
+      "self",
+      "store_name",
+      "query",
+      "states_metadata"
+    ],
+    "save_state": [
+      "self",
+      "store_name",
+      "key",
+      "value",
+      "etag",
+      "options",
+      "state_metadata",
+      "metadata"
+    ],
+    "save_bulk_state": [
+      "self",
+      "store_name",
+      "states",
+      "metadata"
+    ],
+    "execute_state_transaction": [
+      "self",
+      "store_name",
+      "operations",
+      "transactional_metadata",
+      "metadata"
+    ],
+    "delete_state": [
+      "self",
+      "store_name",
+      "key",
+      "etag",
+      "options",
+      "state_metadata",
+      "metadata"
+    ],
+    "get_secret": [
+      "self",
+      "store_name",
+      "key",
+      "secret_metadata",
+      "metadata"
+    ],
+    "get_bulk_secret": [
+      "self",
+      "store_name",
+      "secret_metadata",
+      "metadata"
+    ],
+    "get_configuration": [
+      "self",
+      "store_name",
+      "keys",
+      "config_metadata"
+    ],
+    "subscribe_configuration": [
+      "self",
+      "store_name",
+      "keys",
+      "handler",
+      "config_metadata"
+    ],
+    "unsubscribe_configuration": [
+      "self",
+      "store_name",
+      "id"
+    ],
+    "try_lock": [
+      "self",
+      "store_name",
+      "resource_id",
+      "lock_owner",
+      "expiry_in_seconds"
+    ],
+    "unlock": [
+      "self",
+      "store_name",
+      "resource_id",
+      "lock_owner"
+    ],
+    "encrypt": [
+      "self",
+      "data",
+      "options"
+    ],
+    "decrypt": [
+      "self",
+      "data",
+      "options"
+    ],
+    "converse_alpha1": [
+      "self",
+      "name",
+      "inputs"
+    ],
+    "converse_alpha2": [
+      "self",
+      "name",
+      "inputs"
+    ],
+    "schedule_job": [
+      "self",
+      "job",
+      "overwrite"
+    ],
+    "schedule_job_alpha1": [
+      "self",
+      "job",
+      "overwrite"
+    ],
+    "get_job": [
+      "self",
+      "name"
+    ],
+    "get_job_alpha1": [
+      "self",
+      "name"
+    ],
+    "delete_job": [
+      "self",
+      "name"
+    ],
+    "delete_job_alpha1": [
+      "self",
+      "name"
+    ],
+    "wait": [
+      "self",
+      "timeout_s"
+    ],
+    "get_metadata": [
+      "self"
+    ],
+    "set_metadata": [
+      "self",
+      "attributeName",
+      "attributeValue"
+    ],
+    "shutdown": [
+      "self"
+    ]
+  },
+  "DaprActorHttpClient": {
+    "__init__": [
+      "self",
+      "message_serializer",
+      "timeout",
+      "headers_callback",
+      "retry_policy"
+    ],
+    "invoke_method": [
+      "self",
+      "actor_type",
+      "actor_id",
+      "method",
+      "data"
+    ],
+    "save_state_transactionally": [
+      "self",
+      "actor_type",
+      "actor_id",
+      "data"
+    ],
+    "get_state": [
+      "self",
+      "actor_type",
+      "actor_id",
+      "name"
+    ],
+    "register_reminder": [
+      "self",
+      "actor_type",
+      "actor_id",
+      "name",
+      "data"
+    ],
+    "unregister_reminder": [
+      "self",
+      "actor_type",
+      "actor_id",
+      "name"
+    ],
+    "register_timer": [
+      "self",
+      "actor_type",
+      "actor_id",
+      "name",
+      "data"
+    ],
+    "unregister_timer": [
+      "self",
+      "actor_type",
+      "actor_id",
+      "name"
+    ],
+    "_get_base_url": [
+      "self",
+      "actor_type",
+      "actor_id"
+    ]
+  },
+  "DAPR_API_TOKEN_HEADER": [],
+  "USER_AGENT_HEADER": [],
+  "DAPR_USER_AGENT": [],
+  "get_api_url": [],
+  "DaprHttpClient": {
+    "__init__": [
+      "self",
+      "message_serializer",
+      "timeout",
+      "headers_callback",
+      "retry_policy"
+    ],
+    "send_bytes": [
+      "self",
+      "method",
+      "url",
+      "data",
+      "headers",
+      "query_params",
+      "timeout"
+    ],
+    "convert_to_error": [
+      "self",
+      "response"
+    ],
+    "get_ssl_context": [
+      "self"
+    ]
+  },
+  "DaprInvocationHttpClient": {
+    "__init__": [
+      "self",
+      "timeout",
+      "headers_callback",
+      "retry_policy"
+    ],
+    "invoke_method_async": [
+      "self",
+      "app_id",
+      "method_name",
+      "data",
+      "content_type",
+      "metadata",
+      "http_verb",
+      "http_querystring",
+      "timeout"
+    ],
+    "invoke_method": [
+      "self",
+      "app_id",
+      "method_name",
+      "data",
+      "content_type",
+      "metadata",
+      "http_verb",
+      "http_querystring",
+      "timeout"
+    ]
+  }
+}

@@ -1,0 +1,457 @@
+{
+  "__all__": [],
+  "__version__": [],
+  "IterationCount": {
+    "MAX_ITERATION_COUNT": [],
+    "MIN_ITERATION_COUNT": [],
+    "__init__": [
+      "self",
+      "value"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__lt__": [
+      "self",
+      "other"
+    ],
+    "__int__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "from_str": [
+      "cls",
+      "value_str"
+    ]
+  },
+  "Salt": {
+    "MIN_LENGTH": [],
+    "__init__": [
+      "self",
+      "salt"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__bytes__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "from_str": [
+      "cls",
+      "s"
+    ],
+    "create": [
+      "cls"
+    ]
+  },
+  "Nonce": {
+    "__init__": [
+      "self",
+      "nonce"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__add__": [
+      "self",
+      "other"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "startswith": [
+      "self",
+      "other"
+    ],
+    "create": [
+      "cls"
+    ]
+  },
+  "CbName": {
+    "TYPES": [],
+    "__init__": [
+      "self",
+      "cb_name"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ]
+  },
+  "CBindData": {
+    "__init__": [
+      "self",
+      "data"
+    ],
+    "__bytes__": [
+      "self"
+    ]
+  },
+  "ClientStage": {
+    "get_client_first": [],
+    "set_server_first": [],
+    "get_client_final": [],
+    "set_server_final": []
+  },
+  "ServerStage": {
+    "set_client_first": [],
+    "get_server_first": [],
+    "set_client_final": [],
+    "get_server_final": []
+  },
+  "_check_stage": [
+    "Stages",
+    "current_stage",
+    "next_stage"
+  ],
+  "Mech": [],
+  "MECHS": [],
+  "ChannelBinding": {
+    "__init__": [
+      "self",
+      "name",
+      "data"
+    ],
+    "from_ssl_socket": [
+      "cls",
+      "name",
+      "ssl_socket"
+    ],
+    "from_tuple": [
+      "cls",
+      "channel_binding"
+    ]
+  },
+  "make_channel_binding": [
+    "name",
+    "ssl_socket"
+  ],
+  "ScramMechanism": {
+    "__init__": [
+      "self",
+      "mechanism"
+    ],
+    "make_auth_info": [
+      "self",
+      "password",
+      "iteration_count",
+      "salt"
+    ],
+    "make_server": [
+      "self",
+      "auth_fn",
+      "channel_binding",
+      "s_nonce"
+    ]
+  },
+  "_make_auth_info": [
+    "hf",
+    "password",
+    "i",
+    "salt"
+  ],
+  "ScramClient": {
+    "__init__": [
+      "self",
+      "mechanisms",
+      "username",
+      "password",
+      "channel_binding",
+      "c_nonce"
+    ],
+    "_set_stage": [
+      "self",
+      "next_stage"
+    ],
+    "get_client_first": [
+      "self"
+    ],
+    "set_server_first": [
+      "self",
+      "message"
+    ],
+    "get_client_final": [
+      "self"
+    ],
+    "set_server_final": [
+      "self",
+      "message"
+    ]
+  },
+  "set_error": [
+    "f"
+  ],
+  "ScramServer": {
+    "__init__": [
+      "self",
+      "mechanism",
+      "auth_fn",
+      "cb",
+      "s_nonce"
+    ],
+    "_set_mechanism": [
+      "self",
+      "mechanism"
+    ],
+    "_set_stage": [
+      "self",
+      "next_stage"
+    ],
+    "set_client_first": [
+      "self",
+      "client_first"
+    ],
+    "get_server_first": [
+      "self"
+    ],
+    "set_client_final": [
+      "self",
+      "client_final"
+    ],
+    "get_server_final": [
+      "self"
+    ]
+  },
+  "_make_auth_message": [
+    "client_first_bare",
+    "server_first",
+    "client_final_without_proof"
+  ],
+  "_c_key_stored_key_s_key": [
+    "hf",
+    "salted_password"
+  ],
+  "_check_client_key": [
+    "hf",
+    "stored_key",
+    "auth_msg",
+    "proof"
+  ],
+  "Gs2Header": {
+    "__init__": [
+      "self",
+      "gs2_char",
+      "cb_name"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__bytes__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "make_cbind_input": [
+      "self",
+      "cb"
+    ],
+    "from_str": [
+      "cls",
+      "s"
+    ],
+    "from_binding": [
+      "cls",
+      "cb",
+      "use_binding"
+    ]
+  },
+  "PROTO_ATTRS": [],
+  "_parse_message": [
+    "msg",
+    "desc"
+  ],
+  "Username": {
+    "__init__": [
+      "self",
+      "username"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "escape": [
+      "self"
+    ],
+    "from_escaped": [
+      "cls",
+      "username"
+    ]
+  },
+  "ESCAPE_EQUALS": [],
+  "ESCAPE_COMMA": [],
+  "_username_escape": [
+    "username"
+  ],
+  "_username_unescape": [
+    "username"
+  ],
+  "AuthFn": {
+    "__init__": [
+      "self",
+      "auth_fn"
+    ],
+    "__call__": [
+      "self",
+      "username"
+    ]
+  },
+  "Password": {
+    "__init__": [
+      "self",
+      "password"
+    ],
+    "__bytes__": [
+      "self"
+    ]
+  },
+  "_make_message": [],
+  "_get_client_first": [
+    "username",
+    "c_nonce",
+    "gs2_header"
+  ],
+  "_set_client_first": [
+    "client_first",
+    "s_nonce",
+    "cb",
+    "use_binding",
+    "auth_fn"
+  ],
+  "_get_server_first": [
+    "nonce",
+    "salt",
+    "iterations"
+  ],
+  "_raise_server_error": [
+    "msg"
+  ],
+  "_set_server_first": [
+    "server_first",
+    "c_nonce"
+  ],
+  "_get_client_final": [
+    "hf",
+    "password",
+    "salt",
+    "iterations",
+    "nonce",
+    "client_first_bare",
+    "server_first",
+    "channel_binding",
+    "gs2_header"
+  ],
+  "_set_client_final": [
+    "hf",
+    "client_final",
+    "nonce",
+    "stored_key",
+    "server_key",
+    "client_first_bare",
+    "server_first",
+    "channel_binding",
+    "gs2_header"
+  ],
+  "_get_server_final": [
+    "server_signature",
+    "error"
+  ],
+  "_set_server_final": [
+    "message",
+    "server_signature"
+  ],
+  "ServerError": {
+    "INVALID_ENCODING": [],
+    "EXTENSIONS_NOT_SUPPORTED": [],
+    "INVALID_PROOF": [],
+    "CHANNEL_BINDINGS_DONT_MATCH": [],
+    "SERVER_DOES_SUPPORT_CHANNEL_BINDING": [],
+    "CHANNEL_BINDING_NOT_SUPPORTED": [],
+    "UNSUPPORTED_CHANNEL_BINDING_TYPE": [],
+    "UNKNOWN_USER": [],
+    "INVALID_USERNAME_ENCODING": [],
+    "NO_RESOURCES": [],
+    "OTHER_ERROR": []
+  },
+  "ScramException": {
+    "__init__": [
+      "self",
+      "message",
+      "server_error"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "hmac": [
+    "hf",
+    "key",
+    "msg"
+  ],
+  "pbkdf2_hmac_pure_python": [
+    "hf",
+    "password",
+    "salt",
+    "iterations"
+  ],
+  "pbkdf2_hmac_hashlib": [
+    "hf",
+    "password",
+    "salt",
+    "iterations"
+  ],
+  "hi": [
+    "hf",
+    "password",
+    "salt",
+    "iterations"
+  ],
+  "hi_pbkdf2_hmac": [
+    "pbkdf2_hmac",
+    "hf",
+    "password",
+    "salt",
+    "iterations"
+  ],
+  "h": [
+    "hf",
+    "msg"
+  ],
+  "xor": [
+    "bytes1",
+    "bytes2"
+  ],
+  "b64enc": [
+    "binary"
+  ],
+  "b64dec": [
+    "string"
+  ],
+  "uenc": [
+    "string"
+  ],
+  "saslprep": [
+    "source"
+  ]
+}
