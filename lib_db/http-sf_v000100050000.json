@@ -1,0 +1,390 @@
+{
+  "parse_item": [
+    "state",
+    "on_duplicate_key"
+  ],
+  "ser_item": [
+    "item"
+  ],
+  "EQUALS": [],
+  "COMMA": [],
+  "parse_dictionary": [
+    "state",
+    "on_duplicate_key"
+  ],
+  "ser_dictionary": [
+    "dictionary"
+  ],
+  "parser": [],
+  "structure": [],
+  "input_source": [],
+  "args": [],
+  "parse_bare_item": [
+    "state"
+  ],
+  "ser_bare_item": [
+    "item"
+  ],
+  "SEMICOLON": [],
+  "parse_params": [
+    "state",
+    "on_duplicate_key"
+  ],
+  "ser_params": [
+    "params"
+  ],
+  "retrofit": [],
+  "parse_date": [
+    "state"
+  ],
+  "ser_date": [
+    "inval"
+  ],
+  "Token": {
+    "__init__": [
+      "self",
+      "seq"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "DisplayString": {
+    "__init__": [
+      "self",
+      "seq"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "PAREN_OPEN": [],
+  "PAREN_CLOSE": [],
+  "INNERLIST_DELIMS": [],
+  "parse_innerlist": [
+    "state",
+    "on_duplicate_key"
+  ],
+  "ser_innerlist": [
+    "inner_list"
+  ],
+  "parse_item_or_inner_list": [
+    "state",
+    "on_duplicate_key"
+  ],
+  "ser_item_or_inner_list": [
+    "thing"
+  ],
+  "DQUOTE": [],
+  "BACKSLASH": [],
+  "DQUOTEBACKSLASH": [],
+  "STRING_RUN_RE": [],
+  "parse_string": [
+    "state"
+  ],
+  "ser_string": [
+    "inval"
+  ],
+  "__all__": [],
+  "Parameters": {
+    "__str__": [
+      "self"
+    ]
+  },
+  "SingleItemType": [],
+  "Item": {
+    "__init__": [
+      "self",
+      "value"
+    ],
+    "parse": [
+      "self",
+      "data"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__ne__": [
+      "self",
+      "other"
+    ],
+    "__hash__": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "AllItemType": [],
+  "_itemise": [
+    "thing"
+  ],
+  "_to_functional": [
+    "thing"
+  ],
+  "_from_functional": [
+    "value"
+  ],
+  "InnerList": {
+    "__init__": [
+      "self",
+      "values"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__setitem__": [
+      "self",
+      "index",
+      "value"
+    ],
+    "append": [
+      "self",
+      "item"
+    ],
+    "insert": [
+      "self",
+      "i",
+      "item"
+    ],
+    "extend": [
+      "self",
+      "other"
+    ],
+    "__iadd__": [
+      "self",
+      "other"
+    ],
+    "_derive": [
+      "self",
+      "values"
+    ],
+    "__copy__": [
+      "self"
+    ],
+    "copy": [
+      "self"
+    ],
+    "__add__": [
+      "self",
+      "other"
+    ],
+    "__radd__": [
+      "self",
+      "other"
+    ],
+    "__mul__": [
+      "self",
+      "n"
+    ],
+    "__rmul__": []
+  },
+  "Dictionary": {
+    "__init__": [
+      "self",
+      "data"
+    ],
+    "parse": [
+      "self",
+      "data"
+    ],
+    "__setitem__": [
+      "self",
+      "key",
+      "value"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "List": {
+    "__init__": [
+      "self",
+      "values"
+    ],
+    "parse": [
+      "self",
+      "data"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__setitem__": [
+      "self",
+      "index",
+      "value"
+    ],
+    "append": [
+      "self",
+      "item"
+    ],
+    "insert": [
+      "self",
+      "i",
+      "item"
+    ],
+    "extend": [
+      "self",
+      "other"
+    ],
+    "__iadd__": [
+      "self",
+      "other"
+    ]
+  },
+  "structures": [],
+  "INT_DIGITS": [],
+  "FRAC_DIGITS": [],
+  "PRECISION": [],
+  "_CONTEXT": [],
+  "ser_decimal": [
+    "input_decimal"
+  ],
+  "BYTE_DELIMIT": [],
+  "B64CONTENT": [],
+  "_padding_fault": [
+    "b64_content"
+  ],
+  "parse_byteseq": [
+    "state"
+  ],
+  "ser_byteseq": [
+    "byteseq"
+  ],
+  "ParserState": {
+    "__init__": [
+      "self",
+      "data"
+    ],
+    "fail": [
+      "self",
+      "message",
+      "position"
+    ]
+  },
+  "ONE": [],
+  "ZERO": [],
+  "_boolean_map": [],
+  "parse_boolean": [
+    "state"
+  ],
+  "ser_boolean": [
+    "inval"
+  ],
+  "StructuredFieldError": {
+    "__init__": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "MAX_INT": [],
+  "MIN_INT": [],
+  "DIGITS": [],
+  "NUMBER_START_CHARS": [],
+  "PERIOD": [],
+  "MINUS": [],
+  "parse_integer": [
+    "state"
+  ],
+  "ser_integer": [
+    "inval"
+  ],
+  "parse_number": [
+    "state"
+  ],
+  "SPACE": [],
+  "HTTP_OWS": [],
+  "EPOCH": [],
+  "datetime_from_timestamp": [
+    "value"
+  ],
+  "discard_ows": [
+    "state"
+  ],
+  "discard_http_ows": [
+    "state"
+  ],
+  "KEY_START_CHARS": [],
+  "KEY_CHARS": [],
+  "UPPER_CHARS": [],
+  "KEY_RE": [],
+  "KEY_COMPAT_RE": [],
+  "COMPAT": [],
+  "parse_key": [
+    "state"
+  ],
+  "ser_key": [
+    "key"
+  ],
+  "to_json": [
+    "structure"
+  ],
+  "from_json": [
+    "instr"
+  ],
+  "json_dump": [
+    "inobj"
+  ],
+  "json_load": [
+    "inobj"
+  ],
+  "adjust_field_json": [
+    "field",
+    "header_type"
+  ],
+  "adjust": [
+    "thing"
+  ],
+  "__author__": [],
+  "__copyright__": [],
+  "__version__": [],
+  "parse": [
+    "value",
+    "name",
+    "tltype",
+    "on_duplicate_key"
+  ],
+  "ser": [
+    "structure"
+  ],
+  "parse_list": [
+    "state",
+    "on_duplicate_key"
+  ],
+  "ser_list": [
+    "_list"
+  ],
+  "PERCENT": [],
+  "DISPLAY_STRING_RUN_RE": [],
+  "parse_display_string": [
+    "state"
+  ],
+  "_utf8_error_position": [
+    "state",
+    "why"
+  ],
+  "ser_display_string": [
+    "inval"
+  ],
+  "TOKEN_START_CHARS": [],
+  "TOKEN_CHARS": [],
+  "TOKEN_RE": [],
+  "parse_token": [
+    "state"
+  ],
+  "ser_token": [
+    "token"
+  ]
+}
