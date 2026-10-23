@@ -1,0 +1,1481 @@
+{
+  "CONVERSATION_ID_KEY": [],
+  "get_ambient_conversation_id": [
+    "context"
+  ],
+  "with_conversation_id": [
+    "conversation_id",
+    "context"
+  ],
+  "TelemetryHandler": {
+    "__init__": [
+      "self",
+      "tracer_provider",
+      "meter_provider",
+      "logger_provider",
+      "completion_hook",
+      "instrumentation_scope_name",
+      "instrumentation_scope_version"
+    ],
+    "should_capture_content": [
+      "self"
+    ],
+    "retrieval": [
+      "self"
+    ],
+    "inference": [
+      "self",
+      "provider"
+    ],
+    "embedding": [
+      "self",
+      "provider"
+    ],
+    "fetch_response": [
+      "self",
+      "provider"
+    ],
+    "tool": [
+      "self",
+      "name"
+    ],
+    "invoke_local_agent": [
+      "self"
+    ],
+    "invoke_remote_agent": [
+      "self",
+      "provider"
+    ],
+    "workflow": [
+      "self",
+      "name"
+    ]
+  },
+  "get_telemetry_handler": [
+    "tracer_provider",
+    "meter_provider",
+    "logger_provider",
+    "completion_hook"
+  ],
+  "_logger": [],
+  "_should_emit_event": [
+    "content_capturing_mode"
+  ],
+  "InferenceData": {},
+  "InferenceInvocation": {
+    "__init__": [
+      "self",
+      "tracer",
+      "instruments",
+      "logger",
+      "completion_hook",
+      "provider"
+    ],
+    "provider": [
+      "self"
+    ],
+    "request_model": [
+      "self"
+    ],
+    "response_model_name": [
+      "self",
+      "value"
+    ],
+    "server_address": [
+      "self"
+    ],
+    "server_port": [
+      "self"
+    ],
+    "response_id": [
+      "self",
+      "value"
+    ],
+    "finish_reasons": [
+      "self",
+      "value"
+    ],
+    "input_tokens": [
+      "self",
+      "value"
+    ],
+    "output_tokens": [
+      "self",
+      "value"
+    ],
+    "thinking_tokens": [
+      "self",
+      "value"
+    ],
+    "temperature": [
+      "self",
+      "value"
+    ],
+    "top_p": [
+      "self",
+      "value"
+    ],
+    "top_k": [
+      "self",
+      "value"
+    ],
+    "frequency_penalty": [
+      "self",
+      "value"
+    ],
+    "presence_penalty": [
+      "self",
+      "value"
+    ],
+    "max_tokens": [
+      "self",
+      "value"
+    ],
+    "stop_sequences": [
+      "self",
+      "value"
+    ],
+    "seed": [
+      "self",
+      "value"
+    ],
+    "request_choice_count": [
+      "self",
+      "value"
+    ],
+    "output_type": [
+      "self",
+      "value"
+    ],
+    "request_stream": [
+      "self",
+      "value"
+    ],
+    "ttfc_seconds": [
+      "self",
+      "value"
+    ],
+    "cache_write_input_tokens": [
+      "self",
+      "value"
+    ],
+    "cache_creation_input_tokens": [
+      "self",
+      "value"
+    ],
+    "cache_read_input_tokens": [
+      "self",
+      "value"
+    ],
+    "text_input_tokens": [
+      "self",
+      "value"
+    ],
+    "image_input_tokens": [
+      "self",
+      "value"
+    ],
+    "audio_input_tokens": [
+      "self",
+      "value"
+    ],
+    "text_output_tokens": [
+      "self",
+      "value"
+    ],
+    "image_output_tokens": [
+      "self",
+      "value"
+    ],
+    "audio_output_tokens": [
+      "self",
+      "value"
+    ],
+    "text_cache_read_input_tokens": [
+      "self",
+      "value"
+    ],
+    "image_cache_read_input_tokens": [
+      "self",
+      "value"
+    ],
+    "audio_cache_read_input_tokens": [
+      "self",
+      "value"
+    ],
+    "reasoning_level": [
+      "self",
+      "value"
+    ],
+    "previous_response_id": [
+      "self",
+      "value"
+    ],
+    "conversation_compacted": [
+      "self",
+      "value"
+    ],
+    "prompt_name": [
+      "self",
+      "value"
+    ],
+    "prompt_version": [
+      "self",
+      "value"
+    ],
+    "input_messages": [
+      "self",
+      "value"
+    ],
+    "output_messages": [
+      "self",
+      "value"
+    ],
+    "system_instruction": [
+      "self",
+      "value"
+    ],
+    "prompt_variables": [
+      "self",
+      "value"
+    ],
+    "tool_definitions": [
+      "self",
+      "value"
+    ],
+    "set_input_tokens": [
+      "self",
+      "entries"
+    ],
+    "set_output_tokens": [
+      "self",
+      "entries"
+    ],
+    "set_cache_read_input_tokens": [
+      "self",
+      "entries"
+    ],
+    "_set_modality_tokens": [
+      "self",
+      "fields",
+      "entries"
+    ],
+    "_get_message_attributes": [
+      "self"
+    ],
+    "_get_finish_reasons": [
+      "self"
+    ],
+    "_on_stream_chunk": [
+      "self",
+      "chunk_at"
+    ],
+    "_get_attributes": [
+      "self"
+    ],
+    "enrich_from_context": [
+      "self",
+      "data"
+    ],
+    "_get_metric_attributes": [
+      "self"
+    ],
+    "_get_metric_token_counts": [
+      "self"
+    ],
+    "_apply_finish": [
+      "self",
+      "error"
+    ],
+    "_maybe_create_event": [
+      "self"
+    ]
+  },
+  "SuppressedInferenceInvocation": {
+    "__init__": [
+      "self",
+      "tracer",
+      "instruments",
+      "logger",
+      "completion_hook",
+      "provider"
+    ],
+    "_on_stream_chunk": [
+      "self",
+      "chunk_at"
+    ],
+    "publish_to_context": [
+      "self",
+      "data"
+    ],
+    "_finish": [
+      "self",
+      "error"
+    ],
+    "_apply_finish": [
+      "self",
+      "error"
+    ]
+  },
+  "LLMInvocation": {},
+  "logger": [],
+  "get_content_capturing_mode": [],
+  "decode_base64": [
+    "data"
+  ],
+  "image_from_url": [
+    "url"
+  ],
+  "is_experimental_mode": [],
+  "fq_exception_type": [
+    "exception"
+  ],
+  "_GenAiJsonEncoder": {
+    "default": [
+      "self",
+      "o"
+    ]
+  },
+  "gen_ai_json_dump": [],
+  "gen_ai_json_dumps": [],
+  "_MAX_DEPTH": [],
+  "_OMIT": [],
+  "object_to_any_value": [
+    "value"
+  ],
+  "tool_arguments_to_any_value": [
+    "arguments"
+  ],
+  "_sanitize_for_any_value": [
+    "value"
+  ],
+  "_dump_model": [
+    "value"
+  ],
+  "_sanitize_object": [
+    "value"
+  ],
+  "_SIGNATURE_CACHE_MAX_SIZE": [],
+  "_inspect_signature": [],
+  "_cached_signature": [
+    "fn",
+    "drop_first"
+  ],
+  "get_signature": [
+    "func"
+  ],
+  "bind_arguments": [
+    "func",
+    "args",
+    "kwargs"
+  ],
+  "get_argument": [
+    "name",
+    "func",
+    "args",
+    "kwargs",
+    "default"
+  ],
+  "__version__": [],
+  "ContentCapturingMode": {
+    "NO_CONTENT": [],
+    "SPAN_ONLY": [],
+    "EVENT_ONLY": [],
+    "SPAN_AND_EVENT": []
+  },
+  "GenericPart": {},
+  "ToolCallRequestPart": {},
+  "ToolCallResponsePart": {},
+  "ServerToolCallPart": {},
+  "ServerToolCallResponsePart": {},
+  "TextPart": {},
+  "ReasoningPart": {},
+  "CompactionPart": {},
+  "Modality": {
+    "TEXT": [],
+    "IMAGE": [],
+    "VIDEO": [],
+    "AUDIO": [],
+    "DOCUMENT": [],
+    "__str__": [
+      "self"
+    ]
+  },
+  "BlobPart": {},
+  "FilePart": {},
+  "UriPart": {},
+  "ToolCallRequest": [],
+  "ToolCallResponse": [],
+  "ServerToolCall": [],
+  "ServerToolCallResponse": [],
+  "Text": [],
+  "Reasoning": [],
+  "Blob": [],
+  "File": [],
+  "Uri": [],
+  "FunctionToolDefinition": {},
+  "GenericToolDefinition": {},
+  "ToolDefinition": [],
+  "MessagePart": [],
+  "FinishReason": [],
+  "Role": {
+    "SYSTEM": [],
+    "USER": [],
+    "ASSISTANT": [],
+    "TOOL": []
+  },
+  "SystemInstructionPart": [],
+  "InputMessage": {},
+  "OutputMessage": {},
+  "RetrievalDocument": {},
+  "Error": {
+    "from_exception": [
+      "cls",
+      "exception",
+      "type_resolver"
+    ]
+  },
+  "__getattr__": [
+    "name"
+  ],
+  "OTEL_INSTRUMENTATION_GENAI_CAPTURE_MESSAGE_CONTENT": [],
+  "OTEL_INSTRUMENTATION_GENAI_EMIT_EVENT": [],
+  "OTEL_INSTRUMENTATION_GENAI_COMPLETION_HOOK": [],
+  "OTEL_INSTRUMENTATION_GENAI_UPLOAD_BASE_PATH": [],
+  "OTEL_INSTRUMENTATION_GENAI_UPLOAD_FORMAT": [],
+  "OTEL_INSTRUMENTATION_GENAI_UPLOAD_MAX_QUEUE_SIZE": [],
+  "ToolData": {},
+  "ToolInvocation": {
+    "__init__": [
+      "self",
+      "tracer",
+      "instruments",
+      "logger",
+      "completion_hook",
+      "name"
+    ],
+    "name": [
+      "self"
+    ],
+    "tool_type": [
+      "self"
+    ],
+    "agent_name": [
+      "self"
+    ],
+    "tool_call_id": [
+      "self",
+      "value"
+    ],
+    "tool_description": [
+      "self",
+      "value"
+    ],
+    "arguments": [
+      "self",
+      "value"
+    ],
+    "tool_result": [
+      "self",
+      "value"
+    ],
+    "_get_metric_attributes": [
+      "self"
+    ],
+    "_apply_finish": [
+      "self",
+      "error"
+    ],
+    "_record_metrics": [
+      "self"
+    ],
+    "_on_stream_chunk": [
+      "self",
+      "chunk_at"
+    ]
+  },
+  "WorkflowData": {},
+  "WorkflowInvocation": {
+    "__init__": [
+      "self",
+      "tracer",
+      "instruments",
+      "logger",
+      "completion_hook",
+      "name"
+    ],
+    "workflow_name": [
+      "self"
+    ],
+    "input_messages": [
+      "self",
+      "value"
+    ],
+    "output_messages": [
+      "self",
+      "value"
+    ],
+    "_get_messages_for_span": [
+      "self"
+    ],
+    "_get_metric_attributes": [
+      "self"
+    ],
+    "_apply_finish": [
+      "self",
+      "error"
+    ],
+    "_record_metrics": [
+      "self"
+    ]
+  },
+  "__all__": [],
+  "_ContextData": {
+    "merge": [
+      "self",
+      "other"
+    ]
+  },
+  "_is_active_completion_hook": [
+    "hook"
+  ],
+  "_resolve_suppressed_content_and_hook": [
+    "context_data",
+    "content_capturing_mode",
+    "completion_hook"
+  ],
+  "GenAIInvocation": {
+    "__init__": [
+      "self",
+      "tracer",
+      "instruments",
+      "logger",
+      "completion_hook",
+      "operation_name",
+      "span_name",
+      "span_kind",
+      "attributes",
+      "metric_attributes",
+      "error_type_resolver"
+    ],
+    "should_capture_content": [
+      "self"
+    ],
+    "_should_capture_content_on_span": [
+      "self"
+    ],
+    "context": [
+      "self"
+    ],
+    "_suspended": [
+      "self"
+    ],
+    "suspend": [
+      "self"
+    ],
+    "activate": [
+      "self"
+    ],
+    "_get_metric_attributes": [
+      "self"
+    ],
+    "_get_metric_token_counts": [
+      "self"
+    ],
+    "record_stream_chunk": [
+      "self"
+    ],
+    "_on_stream_chunk": [
+      "self",
+      "chunk_at"
+    ],
+    "_record_client_metrics": [
+      "self"
+    ],
+    "_apply_error_attributes": [
+      "self",
+      "error"
+    ],
+    "_call_completion_hook": [
+      "self"
+    ],
+    "_apply_finish": [
+      "self",
+      "error"
+    ],
+    "_finish": [
+      "self",
+      "error"
+    ],
+    "stop": [
+      "self"
+    ],
+    "fail": [
+      "self",
+      "error"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_value",
+      "traceback"
+    ]
+  },
+  "_json_dumps_unless_str": [
+    "value"
+  ],
+  "get_content_attributes": [],
+  "FetchResponseData": {},
+  "FetchResponseInvocation": {
+    "__init__": [
+      "self",
+      "tracer",
+      "instruments",
+      "logger",
+      "completion_hook",
+      "provider"
+    ],
+    "response_id": [
+      "self"
+    ],
+    "provider": [
+      "self"
+    ],
+    "server_address": [
+      "self"
+    ],
+    "server_port": [
+      "self"
+    ],
+    "request_stream": [
+      "self",
+      "value"
+    ],
+    "response_model_name": [
+      "self",
+      "value"
+    ],
+    "response_status": [
+      "self",
+      "value"
+    ],
+    "finish_reasons": [
+      "self",
+      "value"
+    ],
+    "stream_cursor": [
+      "self",
+      "value"
+    ],
+    "output_messages": [
+      "self",
+      "value"
+    ],
+    "system_instruction": [
+      "self",
+      "value"
+    ],
+    "tool_definitions": [
+      "self",
+      "value"
+    ],
+    "enrich_from_context": [
+      "self",
+      "data"
+    ],
+    "_get_metric_attributes": [
+      "self"
+    ],
+    "_get_attributes": [
+      "self"
+    ],
+    "_apply_finish": [
+      "self",
+      "error"
+    ]
+  },
+  "SuppressedFetchResponseInvocation": {
+    "__init__": [
+      "self",
+      "tracer",
+      "instruments",
+      "logger",
+      "completion_hook",
+      "provider"
+    ],
+    "_on_stream_chunk": [
+      "self",
+      "chunk_at"
+    ],
+    "publish_to_context": [
+      "self",
+      "data"
+    ],
+    "_finish": [
+      "self",
+      "error"
+    ],
+    "_apply_finish": [
+      "self",
+      "error"
+    ]
+  },
+  "AgentData": {},
+  "AgentInvocation": {
+    "__init__": [
+      "self",
+      "tracer",
+      "instruments",
+      "logger",
+      "completion_hook"
+    ],
+    "agent_name": [
+      "self"
+    ],
+    "request_model": [
+      "self"
+    ],
+    "agent_description": [
+      "self",
+      "value"
+    ],
+    "data_source_id": [
+      "self",
+      "value"
+    ],
+    "output_type": [
+      "self",
+      "value"
+    ],
+    "temperature": [
+      "self",
+      "value"
+    ],
+    "top_p": [
+      "self",
+      "value"
+    ],
+    "frequency_penalty": [
+      "self",
+      "value"
+    ],
+    "presence_penalty": [
+      "self",
+      "value"
+    ],
+    "max_tokens": [
+      "self",
+      "value"
+    ],
+    "stop_sequences": [
+      "self",
+      "value"
+    ],
+    "seed": [
+      "self",
+      "value"
+    ],
+    "choice_count": [
+      "self",
+      "value"
+    ],
+    "finish_reasons": [
+      "self",
+      "value"
+    ],
+    "input_tokens": [
+      "self",
+      "value"
+    ],
+    "output_tokens": [
+      "self",
+      "value"
+    ],
+    "input_messages": [
+      "self",
+      "value"
+    ],
+    "output_messages": [
+      "self",
+      "value"
+    ],
+    "system_instruction": [
+      "self",
+      "value"
+    ],
+    "tool_definitions": [
+      "self",
+      "value"
+    ],
+    "_get_agent_attributes": [
+      "self"
+    ],
+    "_get_request_attributes": [
+      "self"
+    ],
+    "_get_response_attributes": [
+      "self"
+    ],
+    "_get_usage_attributes": [
+      "self"
+    ],
+    "_get_content_attributes_for_span": [
+      "self"
+    ],
+    "_apply_finish": [
+      "self",
+      "error"
+    ],
+    "_record_metrics": [
+      "self"
+    ]
+  },
+  "LocalAgentInvocation": {
+    "__init__": [
+      "self",
+      "tracer",
+      "instruments",
+      "logger",
+      "completion_hook"
+    ],
+    "_get_metric_attributes": [
+      "self"
+    ],
+    "_record_metrics": [
+      "self"
+    ]
+  },
+  "RemoteAgentInvocation": {
+    "__init__": [
+      "self",
+      "tracer",
+      "instruments",
+      "logger",
+      "completion_hook",
+      "provider"
+    ],
+    "provider": [
+      "self"
+    ],
+    "server_address": [
+      "self"
+    ],
+    "server_port": [
+      "self"
+    ],
+    "agent_id": [
+      "self",
+      "value"
+    ],
+    "agent_version": [
+      "self",
+      "value"
+    ],
+    "previous_response_id": [
+      "self",
+      "value"
+    ],
+    "cache_write_input_tokens": [
+      "self",
+      "value"
+    ],
+    "cache_creation_input_tokens": [
+      "self",
+      "value"
+    ],
+    "cache_read_input_tokens": [
+      "self",
+      "value"
+    ],
+    "_get_agent_attributes": [
+      "self"
+    ],
+    "_get_request_attributes": [
+      "self"
+    ],
+    "_get_usage_attributes": [
+      "self"
+    ],
+    "_get_metric_attributes": [
+      "self"
+    ],
+    "_get_metric_token_counts": [
+      "self"
+    ],
+    "_record_metrics": [
+      "self"
+    ]
+  },
+  "_InputT": [],
+  "_ResultT": [],
+  "_Node": {
+    "_MAX_DEPTH": [],
+    "capture": [
+      "value",
+      "ancestors",
+      "depth"
+    ],
+    "__init__": [
+      "self",
+      "wrapped",
+      "children"
+    ],
+    "complete": [
+      "self"
+    ],
+    "snapshot": [
+      "self",
+      "unconsumed"
+    ]
+  },
+  "_IteratorNode": {
+    "__init__": [
+      "self",
+      "iterator",
+      "depth"
+    ],
+    "complete": [
+      "self"
+    ],
+    "snapshot": [
+      "self",
+      "unconsumed"
+    ]
+  },
+  "_RecordingIterator": {
+    "__init__": [
+      "self",
+      "iterator",
+      "node"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__next__": [
+      "self"
+    ],
+    "send": [
+      "self",
+      "value"
+    ],
+    "throw": [
+      "self"
+    ],
+    "_self_advance": [
+      "self",
+      "advance"
+    ]
+  },
+  "IteratorCapture": {
+    "__init__": [
+      "self",
+      "value",
+      "enabled"
+    ],
+    "from_property": [
+      "cls",
+      "properties",
+      "property_name",
+      "enabled"
+    ],
+    "complete": [
+      "self"
+    ],
+    "snapshot": [
+      "self"
+    ],
+    "extract": [
+      "self",
+      "extractor"
+    ]
+  },
+  "ChunkT": [],
+  "WrappedT": [],
+  "SyncStreamWrapperT": [],
+  "AsyncStreamWrapperT": [],
+  "StreamT": [],
+  "_ChunkT_co": [],
+  "_StreamTimingInvocation": {
+    "_on_stream_chunk": [
+      "self",
+      "chunk_at"
+    ],
+    "activate": [
+      "self"
+    ]
+  },
+  "_StreamingInvocation": {
+    "fail": [
+      "self",
+      "error"
+    ]
+  },
+  "InvocationT": [],
+  "_StreamWrapperMeta": {},
+  "_SyncStream": {
+    "close": [
+      "self"
+    ]
+  },
+  "_AsyncStream": {},
+  "AbandonedStreamError": {
+    "__init__": [
+      "self",
+      "message"
+    ]
+  },
+  "_StreamTelemetry": {
+    "_execution_context": [
+      "self"
+    ],
+    "_finalize_success": [
+      "self"
+    ],
+    "_finalize_failure": [
+      "self",
+      "error"
+    ],
+    "__del__": [
+      "self"
+    ],
+    "_process_chunk": [
+      "self",
+      "chunk"
+    ],
+    "_on_stream_end": [
+      "self"
+    ],
+    "_on_stream_error": [
+      "self",
+      "error"
+    ]
+  },
+  "SyncStreamWrapper": {
+    "__init__": [
+      "self",
+      "stream",
+      "invocation"
+    ],
+    "_bind_stream": [
+      "self",
+      "stream"
+    ],
+    "_set_stream": [
+      "self",
+      "stream"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ],
+    "close": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__next__": [
+      "self"
+    ],
+    "_advance": [
+      "self",
+      "read"
+    ]
+  },
+  "AsyncStreamWrapper": {
+    "__init__": [
+      "self",
+      "stream",
+      "invocation"
+    ],
+    "_bind_stream": [
+      "self",
+      "stream"
+    ],
+    "_set_stream": [
+      "self",
+      "stream"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ],
+    "_close_stream": [
+      "self"
+    ],
+    "_close": [
+      "self"
+    ],
+    "_await_close": [
+      "self",
+      "close_awaitable"
+    ],
+    "_sync_close": [
+      "self"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "__anext__": [
+      "self"
+    ],
+    "_advance": [
+      "self",
+      "read"
+    ]
+  },
+  "SyncToolStreamWrapper": {
+    "__init__": [
+      "self",
+      "stream",
+      "invocation"
+    ],
+    "__del__": [
+      "self"
+    ],
+    "_process_chunk": [
+      "self",
+      "chunk"
+    ],
+    "_on_stream_end": [
+      "self"
+    ],
+    "_on_stream_error": [
+      "self",
+      "error"
+    ]
+  },
+  "AsyncToolStreamWrapper": {
+    "__init__": [
+      "self",
+      "stream",
+      "invocation"
+    ],
+    "__del__": [
+      "self"
+    ],
+    "_process_chunk": [
+      "self",
+      "chunk"
+    ],
+    "_on_stream_end": [
+      "self"
+    ],
+    "_on_stream_error": [
+      "self",
+      "error"
+    ]
+  },
+  "_ExecutionContextFactory": [],
+  "_CloseFinalizingProxy": {
+    "__init__": [
+      "self",
+      "wrapped",
+      "finalize",
+      "execution_context"
+    ],
+    "_scope": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "_AcloseFinalizingProxy": {
+    "aclose": [
+      "self"
+    ]
+  },
+  "finalize_on_close": [
+    "wrapped",
+    "finalize",
+    "execution_context"
+  ],
+  "finalize_on_aclose": [
+    "wrapped",
+    "finalize",
+    "execution_context"
+  ],
+  "SyncStreamManagerWrapper": {
+    "__init__": [
+      "self",
+      "manager",
+      "invocation_factory"
+    ],
+    "_enter_manager": [
+      "self",
+      "invocation"
+    ],
+    "_wrap_stream": [
+      "self",
+      "stream",
+      "invocation"
+    ],
+    "__enter__": [
+      "self"
+    ],
+    "__exit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ]
+  },
+  "AsyncStreamManagerWrapper": {
+    "__init__": [
+      "self",
+      "manager",
+      "invocation_factory"
+    ],
+    "_enter_manager": [
+      "self",
+      "invocation"
+    ],
+    "_wrap_stream": [
+      "self",
+      "stream",
+      "invocation"
+    ],
+    "__aenter__": [
+      "self"
+    ],
+    "__aexit__": [
+      "self",
+      "exc_type",
+      "exc_val",
+      "exc_tb"
+    ]
+  },
+  "EmbeddingData": {},
+  "EmbeddingInvocation": {
+    "__init__": [
+      "self",
+      "tracer",
+      "instruments",
+      "logger",
+      "completion_hook",
+      "provider"
+    ],
+    "provider": [
+      "self"
+    ],
+    "request_model": [
+      "self"
+    ],
+    "server_address": [
+      "self"
+    ],
+    "server_port": [
+      "self"
+    ],
+    "response_model_name": [
+      "self",
+      "value"
+    ],
+    "dimension_count": [
+      "self",
+      "value"
+    ],
+    "encoding_formats": [
+      "self",
+      "value"
+    ],
+    "input_tokens": [
+      "self",
+      "value"
+    ],
+    "enrich_from_context": [
+      "self",
+      "data"
+    ],
+    "_get_metric_attributes": [
+      "self"
+    ],
+    "_get_metric_token_counts": [
+      "self"
+    ],
+    "_apply_finish": [
+      "self",
+      "error"
+    ]
+  },
+  "SuppressedEmbeddingInvocation": {
+    "__init__": [
+      "self",
+      "tracer",
+      "instruments",
+      "logger",
+      "completion_hook",
+      "provider"
+    ],
+    "publish_to_context": [
+      "self",
+      "data"
+    ],
+    "_finish": [
+      "self",
+      "error"
+    ],
+    "_apply_finish": [
+      "self",
+      "error"
+    ]
+  },
+  "RetrievalData": {},
+  "RetrievalInvocation": {
+    "__init__": [
+      "self",
+      "tracer",
+      "instruments",
+      "logger",
+      "completion_hook"
+    ],
+    "data_source_id": [
+      "self"
+    ],
+    "provider": [
+      "self"
+    ],
+    "request_model": [
+      "self"
+    ],
+    "server_address": [
+      "self"
+    ],
+    "server_port": [
+      "self"
+    ],
+    "top_k": [
+      "self",
+      "value"
+    ],
+    "query_text": [
+      "self",
+      "value"
+    ],
+    "documents": [
+      "self",
+      "value"
+    ],
+    "enrich_from_context": [
+      "self",
+      "data"
+    ],
+    "_get_metric_attributes": [
+      "self"
+    ],
+    "_get_content_attributes_for_span": [
+      "self"
+    ],
+    "_apply_finish": [
+      "self",
+      "error"
+    ]
+  },
+  "SuppressedRetrievalInvocation": {
+    "__init__": [
+      "self",
+      "tracer",
+      "instruments",
+      "logger",
+      "completion_hook"
+    ],
+    "publish_to_context": [
+      "self",
+      "data"
+    ],
+    "_finish": [
+      "self",
+      "error"
+    ],
+    "_apply_finish": [
+      "self",
+      "error"
+    ]
+  },
+  "_Instruments": {
+    "__init__": [
+      "self",
+      "meter"
+    ]
+  },
+  "CompletionHook": {
+    "on_completion": [
+      "self"
+    ]
+  },
+  "_NoOpCompletionHook": {
+    "on_completion": [
+      "self"
+    ]
+  },
+  "_SafeCompletionHook": {
+    "__init__": [
+      "self",
+      "wrapped"
+    ],
+    "on_completion": [
+      "self"
+    ]
+  },
+  "load_completion_hook": [],
+  "upload_completion_hook": [],
+  "GEN_AI_TOOL_DEFINITIONS": [],
+  "_MESSAGE_INDEX_KEY": [],
+  "_DEFAULT_MAX_QUEUE_SIZE": [],
+  "_DEFAULT_FORMAT": [],
+  "Format": [],
+  "Completion": {},
+  "CompletionRefs": {},
+  "JsonEncodeable": [],
+  "UploadData": [],
+  "is_message_part_list_hashable": [
+    "message_parts"
+  ],
+  "hash_tool_definitions": [
+    "tool_definitions"
+  ],
+  "UploadCompletionHook": {
+    "__init__": [
+      "self"
+    ],
+    "_submit_all": [
+      "self",
+      "upload_data"
+    ],
+    "_calculate_ref_path": [
+      "self",
+      "system_instruction",
+      "tool_definitions"
+    ],
+    "_file_exists": [
+      "self",
+      "path"
+    ],
+    "_do_upload": [
+      "self",
+      "path",
+      "contents_hashed_to_filename",
+      "json_encodeable"
+    ],
+    "on_completion": [
+      "self"
+    ],
+    "shutdown": [
+      "self"
+    ]
+  }
+}

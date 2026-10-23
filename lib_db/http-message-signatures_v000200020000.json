@@ -1,0 +1,317 @@
+{
+  "HTTPSignatureComponentResolver": {
+    "field_component_parameters": [],
+    "__init__": [
+      "self",
+      "message"
+    ],
+    "_request_resolver": [
+      "self"
+    ],
+    "_query_params": [
+      "self"
+    ],
+    "_validate_method": [
+      "method"
+    ],
+    "resolve": [
+      "self",
+      "component_node"
+    ],
+    "get_dictionary_member": [
+      "self",
+      "component_id",
+      "field_value",
+      "params"
+    ],
+    "get_method": [
+      "self"
+    ],
+    "get_target_uri": [
+      "self"
+    ],
+    "get_authority": [
+      "self"
+    ],
+    "get_scheme": [
+      "self"
+    ],
+    "get_request_target": [
+      "self"
+    ],
+    "get_path": [
+      "self"
+    ],
+    "get_query": [
+      "self"
+    ],
+    "get_query_params": [
+      "self"
+    ],
+    "get_status": [
+      "self"
+    ]
+  },
+  "HTTPSignatureKeyResolver": {
+    "resolve_public_key": [
+      "self",
+      "key_id"
+    ],
+    "resolve_private_key": [
+      "self",
+      "key_id"
+    ]
+  },
+  "HTTPSignatureAlgorithm": {
+    "__init__": [
+      "self",
+      "public_key",
+      "private_key"
+    ],
+    "sign": [
+      "self",
+      "message"
+    ],
+    "verify": [
+      "self",
+      "signature",
+      "message"
+    ]
+  },
+  "PEMKeyLoader": {
+    "load_pem_keys": [
+      "self",
+      "public_key",
+      "private_key",
+      "password"
+    ]
+  },
+  "RSA_PSS_SHA512": {
+    "algorithm_id": [],
+    "__init__": [
+      "self",
+      "public_key",
+      "private_key",
+      "password"
+    ],
+    "sign": [
+      "self",
+      "message"
+    ],
+    "verify": [
+      "self",
+      "signature",
+      "message"
+    ]
+  },
+  "RSA_V1_5_SHA256": {
+    "algorithm_id": [],
+    "__init__": [
+      "self",
+      "public_key",
+      "private_key",
+      "password"
+    ]
+  },
+  "HMAC_SHA256": {
+    "algorithm_id": [],
+    "__init__": [
+      "self",
+      "public_key",
+      "private_key",
+      "shared_secret"
+    ],
+    "sign": [
+      "self",
+      "message"
+    ],
+    "verify": [
+      "self",
+      "signature",
+      "message"
+    ]
+  },
+  "ECDSA_P256_SHA256": {
+    "algorithm_id": [],
+    "__init__": [
+      "self",
+      "public_key",
+      "private_key",
+      "password"
+    ],
+    "sign": [
+      "self",
+      "message"
+    ],
+    "signature_from_der": [
+      "signature"
+    ],
+    "verify": [
+      "self",
+      "signature",
+      "message"
+    ]
+  },
+  "ED25519": {
+    "algorithm_id": [],
+    "__init__": [
+      "self",
+      "public_key",
+      "private_key",
+      "password"
+    ],
+    "sign": [
+      "self",
+      "message"
+    ],
+    "verify": [
+      "self",
+      "signature",
+      "message"
+    ]
+  },
+  "PreparedSignature": {},
+  "VerifyResult": {},
+  "normalize_header_value": [
+    "value"
+  ],
+  "CaseInsensitiveDict": {
+    "__init__": [
+      "self",
+      "data"
+    ],
+    "__setitem__": [
+      "self",
+      "key",
+      "value"
+    ],
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "__delitem__": [
+      "self",
+      "key"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "lower_items": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "copy": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "get_header_field_lines": [
+    "headers"
+  ],
+  "get_header_fields": [
+    "headers"
+  ],
+  "_UNRESERVED": [],
+  "_SUB_DELIMS": [],
+  "_CHARS": [],
+  "_PCT_ENCODED": [],
+  "_ZONE_ID": [],
+  "_IPV6": [],
+  "_IPVFUTURE": [],
+  "_URL": [],
+  "URLParts": {
+    "authority": [
+      "self"
+    ],
+    "query_suffix": [
+      "self"
+    ]
+  },
+  "parse_url": [
+    "url"
+  ],
+  "HTTPMessageSignaturesException": {},
+  "InvalidSignature": {},
+  "logger": [],
+  "SignatureVerifyWarning": {},
+  "HTTPSignatureHandler": {
+    "__init__": [
+      "self"
+    ],
+    "_parse_signature_dictionary": [
+      "value"
+    ],
+    "_build_signature_base": [
+      "self",
+      "message"
+    ],
+    "_validate_signature_param_types": [
+      "params"
+    ]
+  },
+  "HTTPMessageSigner": {
+    "DEFAULT_SIGNATURE_LABEL": [],
+    "__init__": [
+      "self"
+    ],
+    "_parse_covered_component_ids": [
+      "self",
+      "covered_component_ids"
+    ],
+    "_armor_set_cookie": [
+      "self",
+      "message",
+      "covered_component_nodes"
+    ],
+    "sign": [
+      "self",
+      "message"
+    ],
+    "prepare": [
+      "self",
+      "message"
+    ],
+    "apply": [
+      "self",
+      "message",
+      "prepared",
+      "signature"
+    ]
+  },
+  "HTTPMessageVerifier": {
+    "_parse_dict_header": [
+      "self",
+      "header_name",
+      "headers"
+    ],
+    "_parse_integer_timestamp": [
+      "self",
+      "ts",
+      "field_name"
+    ],
+    "validate_created_and_expires": [
+      "self",
+      "sig_input",
+      "max_age"
+    ],
+    "_get_sig_inputs_and_signatures": [
+      "self",
+      "message"
+    ],
+    "_verify_one": [
+      "self"
+    ],
+    "verify": [
+      "self",
+      "message"
+    ]
+  }
+}

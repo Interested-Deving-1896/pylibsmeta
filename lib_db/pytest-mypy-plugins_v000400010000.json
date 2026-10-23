@@ -1,0 +1,324 @@
+{
+  "join_ini_configs": [
+    "base_ini_fpath",
+    "additional_mypy_config",
+    "execution_path"
+  ],
+  "join_toml_configs": [
+    "base_pyproject_toml_fpath",
+    "additional_mypy_config",
+    "execution_path"
+  ],
+  "TraceLastReprEntry": {
+    "toterminal": [
+      "self",
+      "tw"
+    ]
+  },
+  "make_files": [
+    "rootdir",
+    "files_to_create"
+  ],
+  "replace_fpath_with_module_name": [
+    "line",
+    "rootdir"
+  ],
+  "maybe_to_abspath": [
+    "rel_or_abs",
+    "rootdir"
+  ],
+  "ReturnCodes": {
+    "SUCCESS": [],
+    "FAIL": [],
+    "FATAL_ERROR": []
+  },
+  "run_mypy_typechecking": [
+    "cmd_options",
+    "stdout",
+    "stderr"
+  ],
+  "MypyExecutor": {
+    "__init__": [
+      "self"
+    ],
+    "execute": [
+      "self",
+      "mypy_cmd_options"
+    ],
+    "_typecheck_in_new_subprocess": [
+      "self",
+      "mypy_cmd_options"
+    ],
+    "_typecheck_in_same_process": [
+      "self",
+      "mypy_cmd_options"
+    ],
+    "_collect_python_path": [
+      "self",
+      "rootdir"
+    ],
+    "_collect_mypy_path": [
+      "self",
+      "rootdir"
+    ]
+  },
+  "OutputChecker": {
+    "__init__": [
+      "self",
+      "expect_fail",
+      "execution_path",
+      "expected_output"
+    ],
+    "check": [
+      "self",
+      "ret_code",
+      "stdout",
+      "stderr"
+    ]
+  },
+  "Runner": {
+    "__init__": [
+      "self"
+    ],
+    "run": [
+      "self"
+    ],
+    "_make_test_file": [
+      "self",
+      "file"
+    ],
+    "_prepare_mypy_cmd_options": [
+      "self"
+    ]
+  },
+  "YamlTestItem": {
+    "__init__": [
+      "self",
+      "name",
+      "parent",
+      "config"
+    ],
+    "remove_cache_files": [
+      "self",
+      "fpath_no_suffix"
+    ],
+    "execute_extension_hook": [
+      "self"
+    ],
+    "runtest": [
+      "self"
+    ],
+    "prepare_config_file": [
+      "self",
+      "execution_path"
+    ],
+    "repr_failure": [
+      "self",
+      "excinfo",
+      "style"
+    ],
+    "reportinfo": [
+      "self"
+    ]
+  },
+  "_rendering_env": [],
+  "temp_environ": [],
+  "temp_path": [],
+  "temp_sys_modules": [],
+  "fname_to_module": [
+    "fpath",
+    "root_path"
+  ],
+  "MIN_LINE_LENGTH_FOR_ALIGNMENT": [],
+  "OutputMatcher": {
+    "matches": [
+      "self",
+      "actual"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__format__": [
+      "self",
+      "format_spec"
+    ],
+    "__len__": [
+      "self"
+    ]
+  },
+  "TypecheckAssertionError": {
+    "__init__": [
+      "self",
+      "error_message",
+      "lineno"
+    ],
+    "first_line": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "remove_common_prefix": [
+    "lines"
+  ],
+  "_add_aligned_message": [
+    "s1",
+    "s2",
+    "error_message"
+  ],
+  "remove_empty_lines": [
+    "lines"
+  ],
+  "sorted_by_file_and_line": [
+    "lines"
+  ],
+  "assert_expected_matched_actual": [
+    "expected",
+    "actual"
+  ],
+  "extract_output_matchers_from_comments": [
+    "fname",
+    "input_lines",
+    "regex"
+  ],
+  "extract_output_matchers_from_out": [
+    "out",
+    "params",
+    "regex"
+  ],
+  "render_template": [
+    "template",
+    "data"
+  ],
+  "get_func_first_lnum": [
+    "attr"
+  ],
+  "cd": [
+    "path"
+  ],
+  "File": {},
+  "validate_schema": [
+    "data"
+  ],
+  "parse_test_files": [
+    "test_files"
+  ],
+  "parse_environment_variables": [
+    "env_vars"
+  ],
+  "parse_parametrized": [
+    "params"
+  ],
+  "SafeLineLoader": {
+    "construct_mapping": [
+      "self",
+      "node",
+      "deep"
+    ]
+  },
+  "YamlTestFile": {
+    "collect": [
+      "self"
+    ],
+    "_eval_skip": [
+      "self",
+      "skip_if"
+    ]
+  },
+  "pytest_collect_file": [
+    "file_path",
+    "parent"
+  ],
+  "pytest_addoption": [
+    "parser"
+  ],
+  "get_all_yaml_files": [
+    "dir_path"
+  ],
+  "files": [],
+  "test_yaml_files": [
+    "yaml_file"
+  ],
+  "test_mypy_config_is_not_an_object": [],
+  "test_marks_pass_closed_schema": [],
+  "test_closed_schema": [],
+  "ExpectMatchedActualTestData": {},
+  "test_render_template_with_None_value": [],
+  "expect_matched_actual_data": [],
+  "test_assert_expected_matched_actual_failures": [
+    "source_lines",
+    "actual_lines",
+    "expected_message_lines"
+  ],
+  "test_sorted_by_file_and_line_is_stable": [
+    "input_lines"
+  ],
+  "hook": [
+    "item"
+  ],
+  "test_non_test_case_files_remain": [
+    "temp_dir"
+  ],
+  "CACHE_FILES_REMOVED_TEST_DATA": [],
+  "test_cache_files_removed": [
+    "temp_dir",
+    "contents",
+    "module_fpaths_no_suffix",
+    "mypy_cache_config"
+  ],
+  "temp_dir": [],
+  "make_yaml_test_file": [],
+  "get_created_cache_files": [
+    "cache_dir",
+    "module_rel_paths_no_suffix"
+  ],
+  "test_pyproject_toml": [
+    "config_file"
+  ],
+  "test_ini_files": [
+    "config_file"
+  ],
+  "test_default": [
+    "tmp_path"
+  ],
+  "test_modify_pythonpath_only": [
+    "tmp_path"
+  ],
+  "test_no_silence_site_packages_only": [
+    "tmp_path"
+  ],
+  "test_no_silence_site_packages_and_modify_pythonpath": [
+    "tmp_path"
+  ],
+  "test_marks_filter_selects_only_marked_cases": [
+    "tmp_path"
+  ],
+  "execution_path": [
+    "tmpdir_factory"
+  ],
+  "_AssertFileContents": [],
+  "assert_file_contents": [],
+  "test_join_existing_config": [
+    "execution_path",
+    "assert_file_contents",
+    "additional_config"
+  ],
+  "test_join_missing_config": [
+    "execution_path",
+    "assert_file_contents",
+    "additional_config"
+  ],
+  "test_join_missing_config1": [
+    "execution_path",
+    "assert_file_contents"
+  ],
+  "test_join_missing_config2": [
+    "execution_path",
+    "assert_file_contents"
+  ],
+  "test_join_missing_config3": [
+    "execution_path",
+    "assert_file_contents"
+  ]
+}
