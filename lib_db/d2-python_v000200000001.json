@@ -1,0 +1,481 @@
+{
+  "Number": [],
+  "bounded": [
+    "name",
+    "value",
+    "low",
+    "high"
+  ],
+  "__all__": [],
+  "ArrowheadShape": {
+    "TRIANGLE": [],
+    "ARROW": [],
+    "DIAMOND": [],
+    "CIRCLE": [],
+    "BOX": [],
+    "CF_ONE": [],
+    "CF_ONE_REQUIRED": [],
+    "CF_MANY": [],
+    "CF_MANY_REQUIRED": [],
+    "CROSS": []
+  },
+  "Arrowhead": {
+    "__post_init__": [
+      "self"
+    ],
+    "statement": [
+      "self",
+      "key"
+    ],
+    "lines": [
+      "self",
+      "key"
+    ]
+  },
+  "Connection": {
+    "__init__": [
+      "self",
+      "shape_1",
+      "shape_2",
+      "label",
+      "direction"
+    ],
+    "statements": [
+      "self"
+    ],
+    "lines": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "_key": [
+      "self"
+    ],
+    "__hash__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ]
+  },
+  "LayoutDirection": [],
+  "ShapeType": {
+    "rectangle": [],
+    "square": [],
+    "page": [],
+    "parallelogram": [],
+    "document": [],
+    "cylinder": [],
+    "queue": [],
+    "package": [],
+    "step": [],
+    "callout": [],
+    "stored_data": [],
+    "person": [],
+    "diamond": [],
+    "oval": [],
+    "circle": [],
+    "hexagon": [],
+    "cloud": [],
+    "text": [],
+    "code": [],
+    "sql_table": [],
+    "image": [],
+    "classs": [],
+    "sequence_diagram": [],
+    "c4_person": []
+  },
+  "LabelPosition": [],
+  "NearPosition": [],
+  "Shape": {
+    "__init__": [
+      "self",
+      "name",
+      "label",
+      "shape",
+      "shapes",
+      "style",
+      "icon",
+      "connections",
+      "near",
+      "link"
+    ],
+    "add_shape": [
+      "self",
+      "shape"
+    ],
+    "add_connection": [
+      "self",
+      "connection"
+    ],
+    "members": [
+      "self"
+    ],
+    "attributes": [
+      "self"
+    ],
+    "body": [
+      "self"
+    ],
+    "statements": [
+      "self"
+    ],
+    "lines": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "FillPattern": [],
+  "TextTransform": [],
+  "Style": {
+    "__init__": [
+      "self",
+      "stroke",
+      "stroke_width",
+      "fill",
+      "shadow",
+      "opacity",
+      "stroke_dash",
+      "three_d",
+      "font_color",
+      "border_radius"
+    ],
+    "statements": [
+      "self"
+    ],
+    "lines": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "SQLConstraint": {
+    "PRIMARY_KEY": [],
+    "FOREIGN_KEY": [],
+    "UNIQUE": []
+  },
+  "SQLFieldSpec": {},
+  "SQLField": {
+    "__init__": [
+      "self",
+      "name",
+      "data_type",
+      "constraint"
+    ],
+    "statement": [
+      "self"
+    ],
+    "to_d2_format": [
+      "self"
+    ]
+  },
+  "SQLTable": {
+    "__init__": [
+      "self",
+      "name",
+      "fields",
+      "label",
+      "style",
+      "icon",
+      "near",
+      "link"
+    ],
+    "add_field": [
+      "self",
+      "name",
+      "data_type",
+      "constraint"
+    ],
+    "body": [
+      "self"
+    ]
+  },
+  "create_foreign_key_connection": [
+    "source_table",
+    "source_field",
+    "target_table",
+    "target_field",
+    "label"
+  ],
+  "Visibility": [],
+  "member": [
+    "name",
+    "visibility",
+    "type_"
+  ],
+  "ClassField": {
+    "statement": [
+      "self"
+    ],
+    "lines": [
+      "self"
+    ]
+  },
+  "ClassMethod": {
+    "statement": [
+      "self"
+    ],
+    "lines": [
+      "self"
+    ]
+  },
+  "ClassShape": {
+    "__init__": [
+      "self",
+      "name",
+      "fields",
+      "methods",
+      "label",
+      "style",
+      "icon",
+      "near",
+      "link"
+    ],
+    "add_field": [
+      "self",
+      "field"
+    ],
+    "add_method": [
+      "self",
+      "method"
+    ],
+    "members": [
+      "self"
+    ]
+  },
+  "LayoutEngine": [],
+  "Config": {
+    "__post_init__": [
+      "self"
+    ],
+    "statements": [
+      "self"
+    ],
+    "fields": [
+      "self"
+    ],
+    "lines": [
+      "self"
+    ]
+  },
+  "VarValue": [],
+  "vars_block": [
+    "fields"
+  ],
+  "entries_of": [
+    "config"
+  ],
+  "HIDDEN": [],
+  "Legend": {
+    "fields": [
+      "self"
+    ],
+    "statements": [
+      "self"
+    ],
+    "lines": [
+      "self"
+    ]
+  },
+  "Layer": {
+    "__init__": [
+      "self",
+      "name",
+      "diagram"
+    ],
+    "set_diagram": [
+      "self",
+      "diagram"
+    ],
+    "statements": [
+      "self"
+    ],
+    "lines": [
+      "self",
+      "depth"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "boards": [
+    "key",
+    "layers"
+  ],
+  "Diagram": {
+    "__init__": [
+      "self",
+      "shapes",
+      "connections",
+      "layers"
+    ],
+    "add_shape": [
+      "self",
+      "shape"
+    ],
+    "add_connection": [
+      "self",
+      "connection"
+    ],
+    "add_layer": [
+      "self",
+      "layer"
+    ],
+    "add_scenario": [
+      "self",
+      "scenario"
+    ],
+    "add_step": [
+      "self",
+      "step"
+    ],
+    "add_comment": [
+      "self",
+      "comment"
+    ],
+    "class_statements": [
+      "self"
+    ],
+    "variable_fields": [
+      "self"
+    ],
+    "statements": [
+      "self"
+    ],
+    "lines": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "RenderFormat": [],
+  "D2Error": {},
+  "find_d2": [],
+  "run_d2": [
+    "command",
+    "source"
+  ],
+  "flag": [
+    "name"
+  ],
+  "render": [
+    "diagram",
+    "format"
+  ],
+  "validate": [
+    "source"
+  ],
+  "fmt": [
+    "source"
+  ],
+  "quote": [
+    "text"
+  ],
+  "Direction": {
+    "TO": [],
+    "FROM": [],
+    "BOTH": [],
+    "NONE": []
+  },
+  "Key": {
+    "__str__": [
+      "self"
+    ]
+  },
+  "Keyword": {
+    "of": [
+      "cls",
+      "text"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "Label": {
+    "of": [
+      "cls",
+      "text"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "Url": {
+    "of": [
+      "cls",
+      "text"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "Quoted": {
+    "__str__": [
+      "self"
+    ]
+  },
+  "Color": {
+    "__post_init__": [
+      "self"
+    ],
+    "of": [
+      "cls",
+      "value"
+    ],
+    "__str__": [
+      "self"
+    ]
+  },
+  "Array": {
+    "__str__": [
+      "self"
+    ]
+  },
+  "Item": [],
+  "one_or_array": [
+    "items"
+  ],
+  "Text": {
+    "__post_init__": [
+      "self"
+    ],
+    "lines": [
+      "self"
+    ],
+    "block_lines": [
+      "self",
+      "key"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "Field": {},
+  "BlockField": {},
+  "Edge": {},
+  "Comment": {},
+  "properties": [
+    "entries"
+  ],
+  "split_label": [
+    "label"
+  ],
+  "class_references": [
+    "names"
+  ],
+  "nest": [
+    "head",
+    "body",
+    "depth"
+  ],
+  "emit": [
+    "statements",
+    "depth"
+  ]
+}
