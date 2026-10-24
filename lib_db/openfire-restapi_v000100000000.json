@@ -1,0 +1,457 @@
+{
+  "Messages": {
+    "endpoint": [],
+    "send_broadcast": [
+      "self",
+      "message"
+    ],
+    "get_unread_messages": [
+      "self",
+      "jid"
+    ]
+  },
+  "Groups": {
+    "endpoint": [],
+    "get_groups": [
+      "self"
+    ],
+    "get_group": [
+      "self",
+      "groupname"
+    ],
+    "add_group": [
+      "self",
+      "groupname",
+      "description",
+      "admins",
+      "members"
+    ],
+    "delete_group": [
+      "self",
+      "groupname"
+    ],
+    "update_group": [
+      "self",
+      "groupname",
+      "description",
+      "admins",
+      "members"
+    ]
+  },
+  "Rooms": {
+    "endpoint": [],
+    "get_rooms": [
+      "self",
+      "servicename",
+      "typeof",
+      "query",
+      "expand_groups"
+    ],
+    "get_room": [
+      "self",
+      "roomname",
+      "servicename"
+    ],
+    "get_room_participants": [
+      "self",
+      "roomname",
+      "servicename"
+    ],
+    "get_room_occupants": [
+      "self",
+      "roomname",
+      "servicename"
+    ],
+    "get_room_message_history": [
+      "self",
+      "roomname",
+      "servicename"
+    ],
+    "add_room": [
+      "self",
+      "roomname",
+      "naturalname",
+      "description",
+      "servicename",
+      "subject",
+      "password",
+      "maxusers",
+      "persistent",
+      "public",
+      "registration",
+      "visiblejids",
+      "changesubject",
+      "anycaninvite",
+      "changenickname",
+      "logenabled",
+      "registerednickname",
+      "membersonly",
+      "moderated",
+      "broadcastroles",
+      "owners",
+      "owner_groups",
+      "admins",
+      "admin_groups",
+      "members",
+      "member_groups",
+      "outcasts",
+      "outcast_groups",
+      "send_invitations"
+    ],
+    "bulk_add_rooms": [
+      "self",
+      "rooms",
+      "servicename",
+      "send_invitations"
+    ],
+    "delete_room": [
+      "self",
+      "roomname",
+      "servicename"
+    ],
+    "update_room": [
+      "self",
+      "roomname",
+      "naturalname",
+      "description",
+      "servicename",
+      "subject",
+      "password",
+      "maxusers",
+      "persistent",
+      "public",
+      "registration",
+      "visiblejids",
+      "changesubject",
+      "anycaninvite",
+      "changenickname",
+      "logenabled",
+      "registerednickname",
+      "membersonly",
+      "moderated",
+      "broadcastroles",
+      "owners",
+      "owner_groups",
+      "admins",
+      "admin_groups",
+      "members",
+      "member_groups",
+      "outcasts",
+      "outcast_groups",
+      "send_invitations"
+    ],
+    "grant_user_role": [
+      "self",
+      "roomname",
+      "username",
+      "role",
+      "servicename"
+    ],
+    "bulk_grant_users_role": [
+      "self",
+      "roomname",
+      "role",
+      "users",
+      "servicename",
+      "send_invitations"
+    ],
+    "grant_group_role": [
+      "self",
+      "roomname",
+      "groupname",
+      "role",
+      "servicename"
+    ],
+    "revoke_user_role": [
+      "self",
+      "roomname",
+      "username",
+      "role",
+      "servicename"
+    ],
+    "revoke_group_role": [
+      "self",
+      "roomname",
+      "groupname",
+      "role",
+      "servicename"
+    ],
+    "get_users_with_role": [
+      "self",
+      "roomname",
+      "role",
+      "servicename"
+    ],
+    "replace_users_with_role": [
+      "self",
+      "roomname",
+      "role",
+      "users",
+      "servicename",
+      "send_invitations"
+    ],
+    "invite": [
+      "self",
+      "roomname",
+      "name",
+      "reason"
+    ],
+    "bulk_invite": [
+      "self",
+      "roomname",
+      "names",
+      "reason"
+    ],
+    "get_chat_services": [
+      "self"
+    ],
+    "add_chat_service": [
+      "self",
+      "servicename",
+      "description",
+      "hidden"
+    ]
+  },
+  "Users": {
+    "SUBSCRIPTION_REMOVE": [],
+    "SUBSCRIPTION_NONE": [],
+    "SUBSCRIPTION_TO": [],
+    "SUBSCRIPTION_FROM": [],
+    "SUBSCRIPTION_BOTH": [],
+    "endpoint": [],
+    "get_user": [
+      "self",
+      "username"
+    ],
+    "get_users": [
+      "self",
+      "query",
+      "property_key",
+      "property_value"
+    ],
+    "add_user": [
+      "self",
+      "username",
+      "password",
+      "name",
+      "email",
+      "props"
+    ],
+    "delete_user": [
+      "self",
+      "username"
+    ],
+    "update_user": [
+      "self",
+      "username",
+      "newusername",
+      "password",
+      "name",
+      "email",
+      "props"
+    ],
+    "get_user_groups": [
+      "self",
+      "username"
+    ],
+    "add_user_groups": [
+      "self",
+      "username",
+      "groups"
+    ],
+    "add_user_group": [
+      "self",
+      "username",
+      "group"
+    ],
+    "remove_user_groups": [
+      "self",
+      "username",
+      "groups"
+    ],
+    "remove_user_group": [
+      "self",
+      "username",
+      "group"
+    ],
+    "lock_user": [
+      "self",
+      "username"
+    ],
+    "unlock_user": [
+      "self",
+      "username"
+    ],
+    "get_user_roster": [
+      "self",
+      "username"
+    ],
+    "add_user_roster_item": [
+      "self",
+      "username",
+      "jid",
+      "nickname",
+      "subscription",
+      "groups"
+    ],
+    "delete_user_roster_item": [
+      "self",
+      "username",
+      "jid"
+    ],
+    "update_user_roster_item": [
+      "self",
+      "username",
+      "jid",
+      "nickname",
+      "subscription",
+      "groups"
+    ],
+    "get_user_vcard": [
+      "self",
+      "username"
+    ],
+    "update_user_vcard": [
+      "self",
+      "username",
+      "vcard"
+    ],
+    "delete_user_vcard": [
+      "self",
+      "username"
+    ]
+  },
+  "Security": {
+    "endpoint": [],
+    "get_audit_logs": [
+      "self",
+      "username",
+      "start_time",
+      "end_time",
+      "offset",
+      "limit"
+    ]
+  },
+  "System": {
+    "endpoint": [],
+    "get_props": [
+      "self"
+    ],
+    "get_prop": [
+      "self",
+      "key"
+    ],
+    "add_prop": [
+      "self",
+      "key",
+      "value"
+    ],
+    "update_prop": [
+      "self",
+      "key",
+      "value"
+    ],
+    "delete_prop": [
+      "self",
+      "key"
+    ],
+    "get_concurrent_sessions": [
+      "self"
+    ],
+    "check_liveness": [
+      "self"
+    ],
+    "check_deadlock_liveness": [
+      "self"
+    ],
+    "check_properties_liveness": [
+      "self"
+    ],
+    "check_readiness": [
+      "self"
+    ],
+    "check_server_readiness": [
+      "self"
+    ],
+    "check_cluster_readiness": [
+      "self"
+    ],
+    "check_plugins_readiness": [
+      "self"
+    ],
+    "check_connections_readiness": [
+      "self",
+      "connection_type",
+      "encrypted"
+    ]
+  },
+  "InvalidResponseException": {},
+  "IllegalArgumentException": {},
+  "UserNotFoundException": {},
+  "UserAlreadyExistsException": {},
+  "RequestNotAuthorisedException": {},
+  "UserServiceDisabledException": {},
+  "SharedGroupException": {},
+  "PropertyNotFoundException": {},
+  "GroupAlreadyExistsException": {},
+  "GroupNotFoundException": {},
+  "RoomNotFoundException": {},
+  "NotAllowedException": {},
+  "AlreadyExistsException": {},
+  "ClusterNodeNotFoundException": {},
+  "ImproperlyConfiguredException": {},
+  "Sessions": {
+    "endpoint": [],
+    "get_sessions": [
+      "self"
+    ],
+    "get_user_sessions": [
+      "self",
+      "username"
+    ],
+    "close_user_sessions": [
+      "self",
+      "username"
+    ]
+  },
+  "__version__": [],
+  "OpenfireRestApiClient": {
+    "__init__": [
+      "self",
+      "host",
+      "auth"
+    ]
+  },
+  "EXCEPTIONS_MAP": [],
+  "Base": {
+    "endpoint": [],
+    "__init__": [
+      "self",
+      "host",
+      "auth"
+    ],
+    "_submit_request": [
+      "self",
+      "func",
+      "endpoint",
+      "args",
+      "return_response"
+    ],
+    "_parse_timestamp": [
+      "timestamp"
+    ]
+  },
+  "Clustering": {
+    "endpoint": [],
+    "get_nodes": [
+      "self"
+    ],
+    "get_node": [
+      "self",
+      "node_id"
+    ],
+    "get_status": [
+      "self"
+    ]
+  }
+}
