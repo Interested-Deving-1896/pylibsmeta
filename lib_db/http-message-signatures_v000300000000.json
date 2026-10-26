@@ -1,0 +1,717 @@
+{
+  "HTTPSignatureComponentResolver": {
+    "field_component_parameters": [],
+    "__init__": [
+      "self",
+      "message"
+    ],
+    "_request_resolver": [
+      "self"
+    ],
+    "_query_params": [
+      "self"
+    ],
+    "_validate_method": [
+      "method"
+    ],
+    "resolve": [
+      "self",
+      "component_node"
+    ],
+    "get_dictionary_member": [
+      "self",
+      "component_id",
+      "field_value",
+      "params"
+    ],
+    "get_method": [
+      "self"
+    ],
+    "get_target_uri": [
+      "self"
+    ],
+    "get_authority": [
+      "self"
+    ],
+    "get_scheme": [
+      "self"
+    ],
+    "get_request_target": [
+      "self"
+    ],
+    "get_path": [
+      "self"
+    ],
+    "get_query": [
+      "self"
+    ],
+    "get_query_params": [
+      "self"
+    ],
+    "get_status": [
+      "self"
+    ]
+  },
+  "HTTPSignatureKeyResolver": {
+    "resolve_public_key": [
+      "self",
+      "key_id"
+    ],
+    "resolve_private_key": [
+      "self",
+      "key_id"
+    ]
+  },
+  "MappingKeyResolver": {
+    "__init__": [
+      "self"
+    ],
+    "resolve_public_key": [
+      "self",
+      "key_id"
+    ],
+    "resolve_private_key": [
+      "self",
+      "key_id"
+    ]
+  },
+  "_is_content_digest": [
+    "component"
+  ],
+  "ContentDigest": {
+    "algorithm": [],
+    "_check_body": [
+      "body"
+    ],
+    "create": [
+      "cls",
+      "body"
+    ],
+    "add": [
+      "cls",
+      "headers",
+      "body"
+    ],
+    "prepare": [
+      "cls",
+      "headers",
+      "body"
+    ],
+    "_parse": [
+      "cls",
+      "value"
+    ],
+    "verify": [
+      "cls",
+      "value",
+      "body"
+    ],
+    "verify_components": [
+      "cls",
+      "covered_components",
+      "body"
+    ]
+  },
+  "HTTPSignatureAlgorithm": {
+    "__init__": [
+      "self",
+      "public_key",
+      "private_key"
+    ],
+    "sign": [
+      "self",
+      "message"
+    ],
+    "verify": [
+      "self",
+      "signature",
+      "message"
+    ]
+  },
+  "PEMKeyLoader": {
+    "load_pem_keys": [
+      "self",
+      "public_key",
+      "private_key",
+      "password"
+    ]
+  },
+  "RSA_PSS_SHA512": {
+    "algorithm_id": [],
+    "__init__": [
+      "self",
+      "public_key",
+      "private_key",
+      "password"
+    ],
+    "sign": [
+      "self",
+      "message"
+    ],
+    "verify": [
+      "self",
+      "signature",
+      "message"
+    ]
+  },
+  "RSA_V1_5_SHA256": {
+    "algorithm_id": [],
+    "__init__": [
+      "self",
+      "public_key",
+      "private_key",
+      "password"
+    ]
+  },
+  "HMAC_SHA256": {
+    "algorithm_id": [],
+    "__init__": [
+      "self",
+      "public_key",
+      "private_key",
+      "shared_secret"
+    ],
+    "sign": [
+      "self",
+      "message"
+    ],
+    "verify": [
+      "self",
+      "signature",
+      "message"
+    ]
+  },
+  "_ECDSA": {
+    "__init__": [
+      "self",
+      "public_key",
+      "private_key",
+      "password"
+    ],
+    "sign": [
+      "self",
+      "message"
+    ],
+    "signature_from_der": [
+      "cls",
+      "signature"
+    ],
+    "verify": [
+      "self",
+      "signature",
+      "message"
+    ]
+  },
+  "ECDSA_P256_SHA256": {
+    "algorithm_id": [],
+    "_curve": [],
+    "_hash": [],
+    "_coordinate_size": []
+  },
+  "ECDSA_P384_SHA384": {
+    "algorithm_id": [],
+    "_curve": [],
+    "_hash": [],
+    "_coordinate_size": []
+  },
+  "ED25519": {
+    "algorithm_id": [],
+    "__init__": [
+      "self",
+      "public_key",
+      "private_key",
+      "password"
+    ],
+    "sign": [
+      "self",
+      "message"
+    ],
+    "verify": [
+      "self",
+      "signature",
+      "message"
+    ]
+  },
+  "_Headers": {
+    "items": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__contains__": [
+      "self",
+      "name"
+    ],
+    "__setitem__": [
+      "self",
+      "name",
+      "value"
+    ],
+    "__delitem__": [
+      "self",
+      "name"
+    ]
+  },
+  "_HeaderFields": {
+    "__init__": [
+      "self",
+      "fields"
+    ],
+    "from_raw": [
+      "cls",
+      "fields"
+    ],
+    "items": [
+      "self"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__contains__": [
+      "self",
+      "name"
+    ],
+    "__setitem__": [
+      "self",
+      "name",
+      "value"
+    ],
+    "__delitem__": [
+      "self",
+      "name"
+    ]
+  },
+  "_Request": {},
+  "_Response": {},
+  "PreparedSignature": {},
+  "VerifyResult": {},
+  "normalize_header_value": [
+    "value"
+  ],
+  "CaseInsensitiveDict": {
+    "__init__": [
+      "self",
+      "data"
+    ],
+    "__setitem__": [
+      "self",
+      "key",
+      "value"
+    ],
+    "__getitem__": [
+      "self",
+      "key"
+    ],
+    "__delitem__": [
+      "self",
+      "key"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "__len__": [
+      "self"
+    ],
+    "lower_items": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "copy": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ]
+  },
+  "get_header_field_lines": [
+    "headers"
+  ],
+  "get_header_fields": [
+    "headers"
+  ],
+  "_parse_component_ids": [
+    "component_ids"
+  ],
+  "_component_identity": [
+    "node"
+  ],
+  "_UNRESERVED": [],
+  "_SUB_DELIMS": [],
+  "_CHARS": [],
+  "_PCT_ENCODED": [],
+  "_ZONE_ID": [],
+  "_IPV6": [],
+  "_IPVFUTURE": [],
+  "_URL": [],
+  "URLParts": {
+    "authority": [
+      "self"
+    ],
+    "query_suffix": [
+      "self"
+    ]
+  },
+  "parse_url": [
+    "url"
+  ],
+  "SigningOptions": {},
+  "VerificationOptions": {},
+  "SignatureHooksMode": {
+    "SIGN_REQUEST": [],
+    "VERIFY_RESPONSE": [],
+    "SIGN_REQUEST_VERIFY_RESPONSE": []
+  },
+  "adapt_message": [
+    "message"
+  ],
+  "_SyncVerifiedStream": {
+    "__init__": [
+      "self",
+      "stream",
+      "verify"
+    ],
+    "__iter__": [
+      "self"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "_AsyncVerifiedStream": {
+    "__init__": [
+      "self",
+      "stream",
+      "verify"
+    ],
+    "__aiter__": [
+      "self"
+    ],
+    "aclose": [
+      "self"
+    ]
+  },
+  "SignatureHooks": {
+    "__init__": [
+      "self",
+      "mode"
+    ],
+    "_parse_origin": [
+      "origin"
+    ],
+    "event_hooks": [
+      "self"
+    ],
+    "async_event_hooks": [
+      "self"
+    ],
+    "_check_origin": [
+      "request",
+      "origin"
+    ],
+    "sign_request": [
+      "self",
+      "request"
+    ],
+    "sign_request_async": [
+      "self",
+      "request"
+    ],
+    "_sign": [
+      "self",
+      "request",
+      "body",
+      "signer"
+    ],
+    "_verify_headers": [
+      "self",
+      "response",
+      "verifier"
+    ],
+    "_buffered_body": [
+      "response"
+    ],
+    "verify_response": [
+      "self",
+      "response"
+    ],
+    "verify_response_async": [
+      "self",
+      "response"
+    ]
+  },
+  "HTTPMessageSignaturesException": {},
+  "InvalidSignature": {},
+  "logger": [],
+  "SignatureVerifyWarning": {},
+  "HTTPSignatureHandler": {
+    "__init__": [
+      "self"
+    ],
+    "_parse_signature_dictionary": [
+      "value"
+    ],
+    "_build_signature_base": [
+      "self",
+      "message"
+    ],
+    "_validate_signature_param_types": [
+      "params"
+    ]
+  },
+  "HTTPMessageSigner": {
+    "DEFAULT_SIGNATURE_LABEL": [],
+    "__init__": [
+      "self"
+    ],
+    "_parse_covered_component_ids": [
+      "self",
+      "covered_component_ids"
+    ],
+    "_armor_set_cookie": [
+      "self",
+      "message",
+      "covered_component_nodes"
+    ],
+    "sign": [
+      "self",
+      "message"
+    ],
+    "prepare": [
+      "self",
+      "message"
+    ],
+    "apply": [
+      "self",
+      "message",
+      "prepared",
+      "signature"
+    ]
+  },
+  "HTTPMessageVerifier": {
+    "_parse_dict_header": [
+      "self",
+      "header_name",
+      "headers"
+    ],
+    "_parse_integer_timestamp": [
+      "self",
+      "ts",
+      "field_name"
+    ],
+    "validate_created_and_expires": [
+      "self",
+      "sig_input",
+      "max_age"
+    ],
+    "_get_sig_inputs_and_signatures": [
+      "self",
+      "message"
+    ],
+    "_verify_one": [
+      "self"
+    ],
+    "verify": [
+      "self",
+      "message"
+    ],
+    "verify_body": [
+      "self",
+      "message",
+      "results",
+      "body"
+    ]
+  },
+  "_SigningConfiguration": {},
+  "_BaseSigningOptions": {},
+  "_VerificationConfiguration": {},
+  "_BaseVerificationOptions": {},
+  "_SigningOptions": {},
+  "_VerificationOptions": {},
+  "_SignatureConfiguration": {
+    "__init__": [
+      "self"
+    ],
+    "_configure_signing": [
+      "self"
+    ],
+    "_configure_verification": [
+      "self"
+    ]
+  },
+  "_SignatureAdapter": {
+    "__init__": [
+      "self"
+    ],
+    "_parse_origin": [
+      "origin"
+    ],
+    "_client_options": [
+      "self"
+    ]
+  },
+  "SignatureMiddlewareMode": {
+    "SIGN_REQUEST": [],
+    "VERIFY_RESPONSE": [],
+    "SIGN_REQUEST_VERIFY_RESPONSE": []
+  },
+  "_SessionOptions": {},
+  "_BodyWriter": {
+    "__init__": [
+      "self",
+      "content",
+      "compressor"
+    ],
+    "write": [
+      "self",
+      "chunk"
+    ],
+    "write_eof": [
+      "self",
+      "chunk"
+    ],
+    "drain": [
+      "self"
+    ],
+    "enable_compression": [
+      "self",
+      "encoding",
+      "strategy"
+    ],
+    "enable_chunking": [
+      "self"
+    ],
+    "write_headers": [
+      "self",
+      "status_line",
+      "headers"
+    ]
+  },
+  "_CompressedPayload": {
+    "__init__": [
+      "self",
+      "body",
+      "content_encoding",
+      "headers"
+    ]
+  },
+  "_buffer_request": [
+    "request"
+  ],
+  "_BufferedProtocol": {
+    "pause_reading": [
+      "self"
+    ],
+    "resume_reading": [
+      "self",
+      "resume_parser"
+    ]
+  },
+  "_DecodedStream": {
+    "__init__": [
+      "self",
+      "limit",
+      "max_size"
+    ],
+    "feed_data": [
+      "self",
+      "data",
+      "size"
+    ]
+  },
+  "_decoded_content": [
+    "message",
+    "body"
+  ],
+  "_ProxyRequest": {
+    "request_target": [
+      "self"
+    ]
+  },
+  "_request_view": [
+    "request"
+  ],
+  "_outgoing_headers": [
+    "headers"
+  ],
+  "SignatureMiddleware": {
+    "__init__": [
+      "self",
+      "mode"
+    ],
+    "_parse_origin": [
+      "origin"
+    ],
+    "_check_origin": [
+      "request",
+      "origin"
+    ],
+    "session_kwargs": [
+      "self"
+    ],
+    "__call__": [
+      "self",
+      "request",
+      "handler"
+    ],
+    "verification_results": [
+      "self",
+      "response"
+    ]
+  },
+  "ServerSigningOptions": {},
+  "ServerVerificationOptions": {},
+  "ServerSignatureMiddlewareMode": {
+    "VERIFY_REQUEST": [],
+    "SIGN_RESPONSE": [],
+    "VERIFY_REQUEST_SIGN_RESPONSE": []
+  },
+  "_ApplicationOptions": {},
+  "_ServerRequest": {},
+  "_ServerState": {},
+  "ServerSignatureMiddleware": {
+    "__init__": [
+      "self",
+      "mode"
+    ],
+    "application_kwargs": [
+      "self"
+    ],
+    "_abort": [
+      "request",
+      "state"
+    ],
+    "_check_installation": [
+      "self",
+      "request"
+    ],
+    "_middleware": [
+      "self",
+      "request",
+      "handler"
+    ],
+    "_verify_request": [
+      "self",
+      "request",
+      "state"
+    ],
+    "_stage_response": [
+      "self",
+      "request",
+      "response",
+      "state"
+    ],
+    "on_response_prepare": [
+      "self",
+      "request",
+      "response"
+    ],
+    "verification_results": [
+      "self",
+      "request"
+    ]
+  }
+}
