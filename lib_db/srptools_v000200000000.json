@@ -1,0 +1,279 @@
+{
+  "SRPSessionBase": {
+    "__init__": [
+      "self",
+      "srp_context",
+      "private"
+    ],
+    "_this_public": [
+      "self"
+    ],
+    "_other_public": [],
+    "private": [
+      "self"
+    ],
+    "private_b64": [
+      "self"
+    ],
+    "private_bin": [
+      "self"
+    ],
+    "public": [
+      "self"
+    ],
+    "public_b64": [
+      "self"
+    ],
+    "public_bin": [
+      "self"
+    ],
+    "key": [
+      "self"
+    ],
+    "key_b64": [
+      "self"
+    ],
+    "key_bin": [
+      "self"
+    ],
+    "key_proof": [
+      "self"
+    ],
+    "key_proof_b64": [
+      "self"
+    ],
+    "key_proof_bin": [
+      "self"
+    ],
+    "key_proof_hash": [
+      "self"
+    ],
+    "key_proof_hash_b64": [
+      "self"
+    ],
+    "key_proof_hash_bin": [
+      "self"
+    ],
+    "_value_decode": [
+      "cls",
+      "value"
+    ],
+    "process": [
+      "self",
+      "other_public",
+      "salt"
+    ],
+    "init_base": [
+      "self",
+      "salt"
+    ],
+    "init_session_key": [
+      "self"
+    ],
+    "verify_proof": [
+      "self",
+      "key_prove"
+    ],
+    "init_common_secret": [
+      "self",
+      "other_public"
+    ],
+    "init_session_key_proof": [
+      "self"
+    ]
+  },
+  "PRESETS": [],
+  "base": [],
+  "read_secret": [
+    "value",
+    "label"
+  ],
+  "add_preset_option": [
+    "func"
+  ],
+  "common_options": [
+    "func"
+  ],
+  "server": [],
+  "client": [],
+  "get_server_private_and_public": [
+    "username",
+    "password_verifier",
+    "private",
+    "preset"
+  ],
+  "get_server_session_data": [
+    "username",
+    "password_verifier",
+    "salt",
+    "client_public",
+    "private",
+    "preset"
+  ],
+  "get_client_private_and_public": [
+    "username",
+    "password",
+    "private",
+    "preset"
+  ],
+  "get_client_session_data": [
+    "username",
+    "password",
+    "salt",
+    "server_public",
+    "private",
+    "preset"
+  ],
+  "get_user_data_triplet": [
+    "username",
+    "password",
+    "preset"
+  ],
+  "main": [],
+  "SRPServerSession": {
+    "role": [],
+    "__init__": [
+      "self",
+      "srp_context"
+    ],
+    "init_session_key": [
+      "self"
+    ],
+    "verify_proof": [
+      "self",
+      "key_proof"
+    ]
+  },
+  "value_encode": [
+    "val"
+  ],
+  "hex_from_b64": [
+    "val"
+  ],
+  "int_from_bytes": [
+    "val"
+  ],
+  "hex_from": [
+    "val"
+  ],
+  "int_from_hex": [
+    "hexstr"
+  ],
+  "int_to_bytes": [
+    "val"
+  ],
+  "b64_from": [
+    "val"
+  ],
+  "SRPException": {},
+  "SRPContext": {
+    "__init__": [
+      "self",
+      "username",
+      "password"
+    ],
+    "generator": [
+      "self"
+    ],
+    "generator_b64": [
+      "self"
+    ],
+    "prime": [
+      "self"
+    ],
+    "prime_b64": [
+      "self"
+    ],
+    "pad": [
+      "self",
+      "val"
+    ],
+    "hash": [
+      "self"
+    ],
+    "generate_random": [
+      "self",
+      "bits_len"
+    ],
+    "generate_salt": [
+      "self"
+    ],
+    "get_common_secret": [
+      "self",
+      "server_public",
+      "client_public"
+    ],
+    "get_client_premaster_secret": [
+      "self"
+    ],
+    "get_common_session_key": [
+      "self",
+      "premaster_secret"
+    ],
+    "get_server_premaster_secret": [
+      "self"
+    ],
+    "generate_client_private": [
+      "self"
+    ],
+    "generate_server_private": [
+      "self"
+    ],
+    "get_client_public": [
+      "self"
+    ],
+    "get_server_public": [
+      "self"
+    ],
+    "get_common_password_hash": [
+      "self",
+      "salt"
+    ],
+    "get_common_password_verifier": [
+      "self",
+      "password_hash"
+    ],
+    "get_common_session_key_proof": [
+      "self"
+    ],
+    "get_common_session_key_proof_hash": [
+      "self"
+    ],
+    "get_user_data_triplet": [
+      "self"
+    ]
+  },
+  "SRPClientSession": {
+    "role": [],
+    "__init__": [
+      "self",
+      "srp_context"
+    ],
+    "init_base": [
+      "self",
+      "salt"
+    ],
+    "init_session_key": [
+      "self"
+    ],
+    "verify_proof": [
+      "self",
+      "key_proof"
+    ]
+  },
+  "HASH_SHA_1": [],
+  "HASH_SHA_256": [],
+  "PRIME_1024_GEN": [],
+  "PRIME_1024": [],
+  "PRIME_1536_GEN": [],
+  "PRIME_1536": [],
+  "PRIME_2048_GEN": [],
+  "PRIME_2048": [],
+  "PRIME_3072_GEN": [],
+  "PRIME_3072": [],
+  "PRIME_4096_GEN": [],
+  "PRIME_4096": [],
+  "PRIME_6144_GEN": [],
+  "PRIME_6144": [],
+  "VERSION": []
+}

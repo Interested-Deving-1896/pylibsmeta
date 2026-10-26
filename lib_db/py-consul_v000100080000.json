@@ -1,0 +1,1120 @@
+{
+  "log": [],
+  "Check": {
+    "script": [
+      "cls",
+      "args",
+      "interval",
+      "deregister"
+    ],
+    "http": [
+      "cls",
+      "url",
+      "interval",
+      "timeout",
+      "deregister",
+      "header"
+    ],
+    "tcp": [
+      "cls",
+      "host",
+      "port",
+      "interval",
+      "timeout",
+      "deregister"
+    ],
+    "grpc": [
+      "cls",
+      "url",
+      "interval",
+      "use_tls",
+      "tls_skip_verify",
+      "timeout",
+      "deregister"
+    ],
+    "ttl": [
+      "cls",
+      "ttl"
+    ],
+    "docker": [
+      "cls",
+      "container_id",
+      "shell",
+      "script",
+      "interval",
+      "deregister"
+    ],
+    "_compat": [
+      "cls",
+      "script",
+      "interval",
+      "ttl",
+      "http",
+      "timeout",
+      "deregister"
+    ]
+  },
+  "CB": {
+    "_status": [
+      "cls",
+      "response",
+      "allow_404"
+    ],
+    "boolean": [
+      "cls"
+    ],
+    "binary": [
+      "cls"
+    ],
+    "json": [
+      "cls",
+      "postprocess",
+      "allow_404",
+      "one",
+      "decode",
+      "is_id",
+      "index"
+    ]
+  },
+  "__all__": [],
+  "HTTPClient": {
+    "__init__": [
+      "self"
+    ],
+    "_request": [
+      "self",
+      "callback",
+      "method",
+      "uri",
+      "headers",
+      "data",
+      "connections_timeout",
+      "raw"
+    ],
+    "get": [
+      "self",
+      "callback",
+      "path",
+      "params",
+      "headers",
+      "raw",
+      "connections_timeout"
+    ],
+    "put": [
+      "self",
+      "callback",
+      "path",
+      "params",
+      "data",
+      "headers",
+      "connections_timeout"
+    ],
+    "delete": [
+      "self",
+      "callback",
+      "path",
+      "params",
+      "data",
+      "headers",
+      "connections_timeout"
+    ],
+    "post": [
+      "self",
+      "callback",
+      "path",
+      "params",
+      "data",
+      "headers",
+      "connections_timeout"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "Consul": {
+    "__init__": [
+      "self"
+    ],
+    "http_connect": [
+      "self",
+      "host",
+      "port",
+      "scheme",
+      "verify",
+      "cert"
+    ],
+    "close": [
+      "self"
+    ]
+  },
+  "DEFAULT_TIMEOUT": [],
+  "DEFAULT_WAIT": [],
+  "DURATION_UNITS": [],
+  "parse_duration": [
+    "duration"
+  ],
+  "ConsulException": {},
+  "ACLDisabled": {},
+  "ACLPermissionDenied": {},
+  "NotFound": {},
+  "Timeout": {},
+  "BadRequest": {},
+  "ClientError": {},
+  "Response": [],
+  "Health": {
+    "__init__": [
+      "self",
+      "agent"
+    ],
+    "_tag_params": [
+      "tag"
+    ],
+    "_service": [
+      "self",
+      "internal_uri",
+      "index",
+      "wait",
+      "passing",
+      "tag",
+      "dc",
+      "near",
+      "token",
+      "node_meta",
+      "filter_expr",
+      "peer",
+      "merge_central_config"
+    ],
+    "service": [
+      "self",
+      "service"
+    ],
+    "connect": [
+      "self",
+      "service"
+    ],
+    "ingress": [
+      "self",
+      "service",
+      "index",
+      "wait",
+      "passing",
+      "tag",
+      "dc",
+      "near",
+      "token",
+      "node_meta",
+      "filter_expr"
+    ],
+    "checks": [
+      "self",
+      "service",
+      "index",
+      "wait",
+      "dc",
+      "near",
+      "token",
+      "node_meta",
+      "filter_expr"
+    ],
+    "state": [
+      "self",
+      "name",
+      "index",
+      "wait",
+      "dc",
+      "near",
+      "token",
+      "node_meta",
+      "filter_expr"
+    ],
+    "node": [
+      "self",
+      "node",
+      "index",
+      "wait",
+      "dc",
+      "token",
+      "filter_expr"
+    ]
+  },
+  "Intention": {},
+  "Connect": {
+    "__init__": [
+      "self",
+      "agent"
+    ]
+  },
+  "Agent": {
+    "__init__": [
+      "self",
+      "agent"
+    ],
+    "self": [
+      "self"
+    ],
+    "services": [
+      "self",
+      "filter_expr",
+      "token"
+    ],
+    "service_definition": [
+      "self",
+      "service_id"
+    ],
+    "checks": [
+      "self",
+      "filter_expr",
+      "token"
+    ],
+    "members": [
+      "self",
+      "wan"
+    ],
+    "maintenance": [
+      "self",
+      "enable",
+      "reason",
+      "token"
+    ],
+    "join": [
+      "self",
+      "address",
+      "wan",
+      "token"
+    ],
+    "force_leave": [
+      "self",
+      "node",
+      "prune",
+      "token"
+    ],
+    "leave": [
+      "self",
+      "token"
+    ],
+    "reload": [
+      "self",
+      "token"
+    ],
+    "metrics": [
+      "self",
+      "format_prometheus",
+      "token"
+    ],
+    "monitor": [
+      "self",
+      "loglevel",
+      "logjson",
+      "token"
+    ]
+  },
+  "Txn": {
+    "__init__": [
+      "self",
+      "agent"
+    ],
+    "put": [
+      "self",
+      "payload"
+    ]
+  },
+  "ConfigEntry": {},
+  "Config": {
+    "__init__": [
+      "self",
+      "agent"
+    ],
+    "set": [
+      "self",
+      "kind",
+      "name",
+      "config_entry",
+      "token",
+      "dc",
+      "cas"
+    ],
+    "get": [
+      "self",
+      "kind",
+      "name",
+      "token",
+      "dc"
+    ],
+    "list": [
+      "self",
+      "kind",
+      "token",
+      "dc",
+      "filter_expr"
+    ],
+    "delete": [
+      "self",
+      "kind",
+      "name",
+      "token",
+      "dc",
+      "cas"
+    ]
+  },
+  "Snapshot": {
+    "__init__": [
+      "self",
+      "agent"
+    ],
+    "save": [
+      "self",
+      "token",
+      "dc",
+      "stale"
+    ],
+    "restore": [
+      "self",
+      "snapshot",
+      "token",
+      "dc"
+    ]
+  },
+  "Query": {
+    "__init__": [
+      "self",
+      "agent"
+    ],
+    "list": [
+      "self",
+      "dc",
+      "token"
+    ],
+    "_query_data": [
+      "self",
+      "service",
+      "name",
+      "session",
+      "token",
+      "nearestn",
+      "datacenters",
+      "onlypassing",
+      "tags",
+      "ttl",
+      "regexp"
+    ],
+    "create": [
+      "self",
+      "service",
+      "name",
+      "dc",
+      "session",
+      "token",
+      "nearestn",
+      "datacenters",
+      "onlypassing",
+      "tags",
+      "ttl",
+      "regexp"
+    ],
+    "update": [
+      "self",
+      "query_id",
+      "service",
+      "name",
+      "dc",
+      "session",
+      "token",
+      "nearestn",
+      "datacenters",
+      "onlypassing",
+      "tags",
+      "ttl",
+      "regexp"
+    ],
+    "get": [
+      "self",
+      "query_id",
+      "token",
+      "dc"
+    ],
+    "delete": [
+      "self",
+      "query_id",
+      "token",
+      "dc"
+    ],
+    "execute": [
+      "self",
+      "query",
+      "token",
+      "dc",
+      "near",
+      "limit"
+    ],
+    "explain": [
+      "self",
+      "query",
+      "token",
+      "dc"
+    ]
+  },
+  "KV": {
+    "__init__": [
+      "self",
+      "agent"
+    ],
+    "get": [
+      "self",
+      "key",
+      "index",
+      "recurse",
+      "wait",
+      "token",
+      "consistency",
+      "keys",
+      "separator",
+      "dc",
+      "connections_timeout"
+    ],
+    "put": [
+      "self",
+      "key",
+      "value",
+      "cas",
+      "flags",
+      "acquire",
+      "release",
+      "token",
+      "dc",
+      "connections_timeout"
+    ],
+    "delete": [
+      "self",
+      "key",
+      "recurse",
+      "cas",
+      "token",
+      "dc",
+      "connections_timeout"
+    ]
+  },
+  "Session": {
+    "__init__": [
+      "self",
+      "agent"
+    ],
+    "create": [
+      "self",
+      "name",
+      "node",
+      "checks",
+      "lock_delay",
+      "behavior",
+      "ttl",
+      "dc",
+      "token"
+    ],
+    "destroy": [
+      "self",
+      "session_id",
+      "dc",
+      "token"
+    ],
+    "list": [
+      "self",
+      "index",
+      "wait",
+      "consistency",
+      "dc",
+      "token"
+    ],
+    "node": [
+      "self",
+      "node",
+      "index",
+      "wait",
+      "consistency",
+      "dc",
+      "token"
+    ],
+    "info": [
+      "self",
+      "session_id",
+      "index",
+      "wait",
+      "consistency",
+      "dc",
+      "token"
+    ],
+    "renew": [
+      "self",
+      "session_id",
+      "dc",
+      "token"
+    ]
+  },
+  "Coordinate": {
+    "__init__": [
+      "self",
+      "agent"
+    ],
+    "datacenters": [
+      "self"
+    ],
+    "nodes": [
+      "self",
+      "dc",
+      "index",
+      "wait",
+      "consistency"
+    ],
+    "node": [
+      "self",
+      "node",
+      "dc",
+      "index",
+      "wait",
+      "consistency"
+    ],
+    "update": [
+      "self",
+      "node",
+      "coord",
+      "segment",
+      "dc",
+      "token"
+    ]
+  },
+  "AutopilotConfiguration": {},
+  "AutopilotServerHealth": {},
+  "AutopilotHealth": {},
+  "KeyringResponse": {},
+  "UsageDatacenter": {},
+  "UsageResponse": {},
+  "_autopilot_health_cb": [
+    "response"
+  ],
+  "Operator": {
+    "__init__": [
+      "self",
+      "agent"
+    ],
+    "raft_config": [
+      "self"
+    ],
+    "raft_remove_peer": [
+      "self",
+      "address",
+      "peer_id",
+      "token"
+    ],
+    "raft_transfer_leader": [
+      "self",
+      "peer_id",
+      "token"
+    ],
+    "autopilot_configuration": [
+      "self",
+      "token",
+      "dc"
+    ],
+    "update_autopilot_configuration": [
+      "self",
+      "cleanup_dead_servers",
+      "last_contact_threshold",
+      "max_trailing_logs",
+      "min_quorum",
+      "server_stabilization_time",
+      "redundancy_zone_tag",
+      "disable_upgrade_migration",
+      "upgrade_version_tag",
+      "cas",
+      "token",
+      "dc"
+    ],
+    "autopilot_health": [
+      "self",
+      "token",
+      "dc"
+    ],
+    "keyring_list": [
+      "self",
+      "relay_factor",
+      "local_only",
+      "token"
+    ],
+    "keyring_install": [
+      "self",
+      "key",
+      "relay_factor",
+      "token"
+    ],
+    "keyring_use": [
+      "self",
+      "key",
+      "relay_factor",
+      "token"
+    ],
+    "keyring_remove": [
+      "self",
+      "key",
+      "relay_factor",
+      "token"
+    ],
+    "usage": [
+      "self",
+      "global_",
+      "stale",
+      "token"
+    ]
+  },
+  "Event": {
+    "__init__": [
+      "self",
+      "agent"
+    ],
+    "fire": [
+      "self",
+      "name",
+      "body",
+      "node",
+      "service",
+      "tag",
+      "dc",
+      "token"
+    ],
+    "list": [
+      "self",
+      "name",
+      "index",
+      "wait",
+      "node",
+      "service",
+      "tag"
+    ]
+  },
+  "DiscoveryChainResponse": {},
+  "DiscoveryChain": {
+    "__init__": [
+      "self",
+      "agent"
+    ],
+    "get": [
+      "self",
+      "service",
+      "compile_dc",
+      "token",
+      "override_connect_timeout",
+      "override_protocol",
+      "override_mesh_gateway_mode"
+    ]
+  },
+  "Status": {
+    "__init__": [
+      "self",
+      "agent"
+    ],
+    "leader": [
+      "self"
+    ],
+    "peers": [
+      "self"
+    ]
+  },
+  "Catalog": {
+    "__init__": [
+      "self",
+      "agent"
+    ],
+    "register": [
+      "self",
+      "node",
+      "address",
+      "service",
+      "check",
+      "dc",
+      "token",
+      "node_meta",
+      "skip_node_update",
+      "tagged_addresses"
+    ],
+    "deregister": [
+      "self",
+      "node",
+      "service_id",
+      "check_id",
+      "dc",
+      "token"
+    ],
+    "datacenters": [
+      "self"
+    ],
+    "nodes": [
+      "self",
+      "index",
+      "wait",
+      "consistency",
+      "dc",
+      "near",
+      "token",
+      "node_meta",
+      "filter_expr"
+    ],
+    "services": [
+      "self",
+      "index",
+      "wait",
+      "consistency",
+      "dc",
+      "token",
+      "node_meta",
+      "filter_expr"
+    ],
+    "node": [
+      "self",
+      "node",
+      "index",
+      "wait",
+      "consistency",
+      "dc",
+      "token",
+      "filter_expr"
+    ],
+    "_service": [
+      "self",
+      "internal_uri",
+      "index",
+      "wait",
+      "tag",
+      "consistency",
+      "dc",
+      "near",
+      "token",
+      "node_meta",
+      "filter_expr",
+      "peer",
+      "merge_central_config"
+    ],
+    "service": [
+      "self",
+      "service"
+    ],
+    "connect": [
+      "self",
+      "service"
+    ],
+    "gateway_services": [
+      "self",
+      "gateway",
+      "dc",
+      "token"
+    ]
+  },
+  "BindType": [],
+  "AclBindingRule": {},
+  "BindingRule": {
+    "__init__": [
+      "self",
+      "agent"
+    ],
+    "list": [
+      "self",
+      "auth_method",
+      "token"
+    ],
+    "read": [
+      "self",
+      "binding_rule_id",
+      "token"
+    ],
+    "delete": [
+      "self",
+      "binding_rule_id",
+      "token"
+    ],
+    "create": [
+      "self",
+      "auth_method",
+      "bind_type",
+      "bind_name",
+      "token",
+      "description",
+      "selector",
+      "bind_vars"
+    ],
+    "update": [
+      "self",
+      "binding_rule_id",
+      "auth_method",
+      "bind_type",
+      "bind_name",
+      "token",
+      "description",
+      "selector",
+      "bind_vars"
+    ]
+  },
+  "AclPolicyLink": {},
+  "AclServiceIdentity": {},
+  "AclNodeIdentity": {},
+  "AclTemplatedPolicy": {},
+  "AclRole": {},
+  "_role_body": [
+    "name",
+    "description",
+    "policies_id",
+    "policies_name",
+    "service_identities",
+    "node_identities",
+    "templated_policies"
+  ],
+  "Role": {
+    "__init__": [
+      "self",
+      "agent"
+    ],
+    "list": [
+      "self",
+      "policy",
+      "token"
+    ],
+    "read": [
+      "self",
+      "role_id",
+      "token"
+    ],
+    "read_by_name": [
+      "self",
+      "name",
+      "token"
+    ],
+    "delete": [
+      "self",
+      "role_id",
+      "token"
+    ],
+    "create": [
+      "self",
+      "name",
+      "token",
+      "description",
+      "policies_id",
+      "policies_name",
+      "service_identities",
+      "node_identities",
+      "templated_policies"
+    ],
+    "update": [
+      "self",
+      "role_id",
+      "name",
+      "token",
+      "description",
+      "policies_id",
+      "policies_name",
+      "service_identities",
+      "node_identities",
+      "templated_policies"
+    ]
+  },
+  "Policy": {
+    "__init__": [
+      "self",
+      "agent"
+    ],
+    "list": [
+      "self",
+      "token"
+    ],
+    "read": [
+      "self",
+      "uuid",
+      "token"
+    ],
+    "create": [
+      "self",
+      "name",
+      "token",
+      "description",
+      "rules"
+    ],
+    "update": [
+      "self",
+      "uuid",
+      "name",
+      "token",
+      "description",
+      "rules"
+    ],
+    "delete": [
+      "self",
+      "uuid",
+      "token"
+    ]
+  },
+  "AclAuthMethod": {},
+  "AuthMethod": {
+    "__init__": [
+      "self",
+      "agent"
+    ],
+    "list": [
+      "self",
+      "token"
+    ],
+    "read": [
+      "self",
+      "name",
+      "token"
+    ],
+    "delete": [
+      "self",
+      "name",
+      "token"
+    ],
+    "create": [
+      "self",
+      "name",
+      "method_type",
+      "token",
+      "display_name",
+      "description",
+      "config",
+      "max_token_ttl",
+      "token_locality",
+      "token_name_format"
+    ],
+    "update": [
+      "self",
+      "name",
+      "method_type",
+      "token",
+      "display_name",
+      "description",
+      "config",
+      "max_token_ttl",
+      "token_locality",
+      "token_name_format"
+    ]
+  },
+  "TemplatedPolicy": {
+    "__init__": [
+      "self",
+      "agent"
+    ],
+    "list": [
+      "self",
+      "token"
+    ],
+    "read": [
+      "self",
+      "name",
+      "token"
+    ],
+    "preview": [
+      "self",
+      "name",
+      "template_variables",
+      "token"
+    ]
+  },
+  "AclLoginResult": {},
+  "ACL": {
+    "__init__": [
+      "self",
+      "agent"
+    ],
+    "bootstrap": [
+      "self",
+      "bootstrap_secret"
+    ],
+    "login": [
+      "self",
+      "auth_method",
+      "bearer_token",
+      "meta"
+    ],
+    "logout": [
+      "self",
+      "token"
+    ]
+  },
+  "parse_identities": [
+    "node_identities"
+  ],
+  "_policy_links": [
+    "policies_id",
+    "policies_name"
+  ],
+  "_role_links": [
+    "roles_id",
+    "roles_name"
+  ],
+  "_templated_policy_entries": [
+    "templated_policies"
+  ],
+  "AclToken": {},
+  "Token": {
+    "__init__": [
+      "self",
+      "agent"
+    ],
+    "list": [
+      "self",
+      "policy",
+      "role",
+      "authmethod",
+      "servicename",
+      "token"
+    ],
+    "read": [
+      "self",
+      "accessor_id",
+      "token"
+    ],
+    "read_self": [
+      "self",
+      "token"
+    ],
+    "delete": [
+      "self",
+      "accessor_id",
+      "token"
+    ],
+    "clone": [
+      "self",
+      "accessor_id",
+      "token",
+      "description"
+    ],
+    "create": [
+      "self",
+      "token",
+      "accessor_id",
+      "secret_id",
+      "node_identities",
+      "service_identities",
+      "policies_id",
+      "description",
+      "policies_name",
+      "roles_id",
+      "roles_name",
+      "templated_policies",
+      "expiration_time",
+      "expiration_ttl",
+      "local"
+    ],
+    "update": [
+      "self",
+      "accessor_id",
+      "token",
+      "secret_id",
+      "node_identities",
+      "service_identities",
+      "description",
+      "policies_id",
+      "policies_name",
+      "roles_id",
+      "roles_name",
+      "templated_policies",
+      "expiration_time",
+      "expiration_ttl",
+      "local"
+    ]
+  }
+}
