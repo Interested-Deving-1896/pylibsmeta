@@ -1,0 +1,2588 @@
+{
+  "FLOAT32_EPS": [],
+  "create_component_search": [
+    "index"
+  ],
+  "find_component_connection_edge": [
+    "component1",
+    "component2",
+    "search_closure",
+    "raw_data",
+    "visited",
+    "rng_state",
+    "search_size",
+    "epsilon"
+  ],
+  "adjacency_matrix_representation": [
+    "neighbor_indices",
+    "neighbor_distances"
+  ],
+  "connect_graph": [
+    "graph",
+    "index",
+    "search_size",
+    "n_jobs"
+  ],
+  "_insertion_sort_pairs": [
+    "keys",
+    "values",
+    "start",
+    "end"
+  ],
+  "_forward_csr": [
+    "rows",
+    "dists"
+  ],
+  "_transpose_csr": [
+    "indptr",
+    "indices",
+    "data",
+    "n_threads"
+  ],
+  "_merge_row": [
+    "row",
+    "f_indptr",
+    "f_indices",
+    "f_data",
+    "r_indptr",
+    "r_indices",
+    "r_data",
+    "out_indices",
+    "out_data"
+  ],
+  "_prune_row": [
+    "out_data",
+    "count",
+    "max_degree"
+  ],
+  "_merge_and_prune": [
+    "f_indptr",
+    "f_indices",
+    "f_data",
+    "r_indptr",
+    "r_indices",
+    "r_data",
+    "max_degree"
+  ],
+  "_permute_csr": [
+    "indptr",
+    "indices",
+    "order"
+  ],
+  "permute_rows": [
+    "data",
+    "order"
+  ],
+  "build_search_graph": [
+    "neighbor_indices",
+    "neighbor_distances",
+    "max_degree"
+  ],
+  "permute_graph": [
+    "indptr",
+    "indices",
+    "order"
+  ],
+  "int32_bits_as_float32": [
+    "typingctx",
+    "x"
+  ],
+  "float32_bits_as_int32": [
+    "typingctx",
+    "x"
+  ],
+  "seed": [
+    "rng_state",
+    "seed"
+  ],
+  "tau_rand_int": [
+    "state"
+  ],
+  "_splitmix64": [
+    "x",
+    "v"
+  ],
+  "hash_uniform": [
+    "seed",
+    "a",
+    "b",
+    "c"
+  ],
+  "tau_rand": [
+    "state"
+  ],
+  "norm": [
+    "vec"
+  ],
+  "rejection_sample": [
+    "n_samples",
+    "pool_size",
+    "rng_state"
+  ],
+  "make_heap": [
+    "n_points",
+    "size"
+  ],
+  "EMPTY_GRAPH": [],
+  "siftdown": [
+    "heap1",
+    "heap2",
+    "elt"
+  ],
+  "deheap_sort": [
+    "indices",
+    "distances"
+  ],
+  "new_build_candidates": [
+    "current_graph",
+    "max_candidates",
+    "rng_state",
+    "n_threads"
+  ],
+  "has_been_visited": [
+    "table",
+    "candidate"
+  ],
+  "mark_visited": [
+    "table",
+    "candidate"
+  ],
+  "check_and_mark_visited": [
+    "table",
+    "candidate"
+  ],
+  "simple_heap_push": [
+    "priorities",
+    "indices",
+    "p",
+    "n"
+  ],
+  "checked_heap_push": [
+    "priorities",
+    "indices",
+    "p",
+    "n"
+  ],
+  "checked_flagged_heap_push": [
+    "priorities",
+    "indices",
+    "flags",
+    "p",
+    "n",
+    "f"
+  ],
+  "_push_candidate": [
+    "priorities",
+    "indices",
+    "row",
+    "d",
+    "n"
+  ],
+  "build_candidates_owner": [
+    "current_graph",
+    "max_candidates",
+    "rng_state",
+    "n_threads",
+    "new_candidate_indices",
+    "new_candidate_priority",
+    "old_candidate_indices",
+    "old_candidate_priority",
+    "active",
+    "reverse_dst",
+    "reverse_src",
+    "bucket_bounds"
+  ],
+  "generate_graph_update_array": [
+    "update_array",
+    "n_updates_per_thread",
+    "new_candidate_block",
+    "old_candidate_block",
+    "current_graph",
+    "data",
+    "dist",
+    "n_threads"
+  ],
+  "apply_graph_update_array": [
+    "current_graph",
+    "update_array",
+    "n_updates_per_thread",
+    "n_threads"
+  ],
+  "sort_updates_by_block": [
+    "update_array",
+    "n_updates_per_thread",
+    "sorted_updates",
+    "block_offsets",
+    "n_vertices",
+    "n_threads"
+  ],
+  "apply_sorted_graph_update_array": [
+    "current_graph",
+    "sorted_updates",
+    "block_offsets",
+    "n_threads"
+  ],
+  "sparse_generate_graph_update_array": [
+    "update_array",
+    "n_updates_per_thread",
+    "new_candidate_block",
+    "old_candidate_block",
+    "current_graph",
+    "inds",
+    "indptr",
+    "data",
+    "dist",
+    "n_threads"
+  ],
+  "initalize_heap_from_graph_indices": [
+    "heap",
+    "graph_indices",
+    "data",
+    "metric"
+  ],
+  "initalize_heap_from_graph_indices_and_distances": [
+    "heap",
+    "graph_indices",
+    "graph_distances"
+  ],
+  "sparse_initalize_heap_from_graph_indices": [
+    "heap",
+    "graph_indices",
+    "data_indptr",
+    "data_indices",
+    "data_vals",
+    "metric"
+  ],
+  "ts": [],
+  "_deheap_rows_inplace": [
+    "indices",
+    "distances"
+  ],
+  "finish_query_no_correction": [
+    "indices",
+    "distances",
+    "vertex_order"
+  ],
+  "finish_query_sqrt": [
+    "indices",
+    "distances",
+    "vertex_order"
+  ],
+  "finish_query_alternative_cosine": [
+    "indices",
+    "distances",
+    "vertex_order"
+  ],
+  "l2_normalize_rows": [
+    "X"
+  ],
+  "finish_query_alternative_hellinger": [
+    "indices",
+    "distances",
+    "vertex_order"
+  ],
+  "KIND_DENSE": [],
+  "KIND_SPARSE": [],
+  "KIND_BIT": [],
+  "CRITERION_BALANCE": [],
+  "CRITERION_EDGE_CUT": [],
+  "FALLBACK_LEAF": [],
+  "FALLBACK_RANDOM": [],
+  "FALLBACK_MEDIAN": [],
+  "ACTION_LEAF": [],
+  "ACTION_SPLIT": [],
+  "ACTION_RANDOM": [],
+  "DEFAULT_SPLIT_OPTIONS": [],
+  "SERIAL_SPLIT_OPTIONS": [],
+  "SEGMENT_SIZE": [],
+  "LOCAL_SUBTREE_BYTES": [],
+  "_U": [],
+  "_PAIR_A": [],
+  "_PAIR_B": [],
+  "_dense_euclidean_plane": [
+    "data",
+    "left",
+    "right",
+    "hyperplane_vector"
+  ],
+  "_dense_angular_plane": [
+    "data",
+    "left",
+    "right",
+    "hyperplane_vector"
+  ],
+  "_dense_euclidean_margin": [
+    "data",
+    "hyperplane_vector",
+    "hyperplane_offset",
+    "point"
+  ],
+  "_dense_angular_margin": [
+    "data",
+    "hyperplane_vector",
+    "point"
+  ],
+  "_sparse_euclidean_plane": [
+    "inds",
+    "indptr",
+    "spdata",
+    "left",
+    "right"
+  ],
+  "_sparse_angular_plane": [
+    "inds",
+    "indptr",
+    "spdata",
+    "left",
+    "right"
+  ],
+  "_sparse_plane": [
+    "inds",
+    "indptr",
+    "spdata",
+    "left",
+    "right",
+    "angular"
+  ],
+  "_sparse_margin": [
+    "inds",
+    "indptr",
+    "spdata",
+    "plane_inds",
+    "plane_data",
+    "offset",
+    "point"
+  ],
+  "_bit_plane": [
+    "data",
+    "left",
+    "right",
+    "hyperplane_vector"
+  ],
+  "_bit_margin": [
+    "data",
+    "hyperplane_vector",
+    "point"
+  ],
+  "_build_planes": [
+    "kind",
+    "angular",
+    "ddata",
+    "inds",
+    "indptr",
+    "spdata",
+    "bdata",
+    "pairs"
+  ],
+  "_margin": [
+    "kind",
+    "angular",
+    "ddata",
+    "inds",
+    "indptr",
+    "spdata",
+    "bdata",
+    "dplanes",
+    "sptr",
+    "sinds",
+    "svals",
+    "bplanes",
+    "offsets",
+    "slot",
+    "point"
+  ],
+  "_side": [
+    "margins",
+    "c",
+    "idx",
+    "rank",
+    "shift"
+  ],
+  "_random_side": [
+    "seed",
+    "point"
+  ],
+  "_node_seed": [
+    "base_seed",
+    "start",
+    "end"
+  ],
+  "_final_side": [
+    "action",
+    "margins",
+    "c",
+    "idx",
+    "rank",
+    "shift",
+    "seed",
+    "point",
+    "flip0"
+  ],
+  "_choose": [
+    "n_left",
+    "cuts",
+    "n_cand",
+    "n_points",
+    "criterion",
+    "min_balance"
+  ],
+  "_decide": [
+    "margins",
+    "base",
+    "start",
+    "end",
+    "n_cand",
+    "n_left",
+    "cuts",
+    "perm",
+    "criterion",
+    "min_balance",
+    "fallback",
+    "seed"
+  ],
+  "_count_and_cut": [
+    "margins",
+    "base",
+    "start",
+    "end",
+    "seg_start",
+    "seg_end",
+    "n_cand",
+    "perm",
+    "pos_of",
+    "neighbor_indices",
+    "need_cuts",
+    "n_left",
+    "cuts"
+  ],
+  "_segment_top3": [
+    "perm",
+    "degrees",
+    "seg_start",
+    "seg_end",
+    "top_deg",
+    "top_pos"
+  ],
+  "_node_pairs": [
+    "perm",
+    "seg_ptr",
+    "top_deg",
+    "top_pos",
+    "node_size"
+  ],
+  "_segment_margins": [
+    "kind",
+    "angular",
+    "ddata",
+    "inds",
+    "indptr",
+    "spdata",
+    "bdata",
+    "dplanes",
+    "sptr",
+    "sinds",
+    "svals",
+    "bplanes",
+    "offsets",
+    "perm",
+    "seg_node",
+    "seg_start",
+    "seg_end",
+    "n_cand",
+    "margins"
+  ],
+  "_segment_counts": [
+    "margins",
+    "perm",
+    "pos_of",
+    "neighbor_indices",
+    "need_cuts",
+    "seg_node",
+    "seg_start",
+    "seg_end",
+    "node_start",
+    "node_end",
+    "n_cand",
+    "seg_left",
+    "seg_cuts"
+  ],
+  "_decide_nodes": [
+    "margins",
+    "perm",
+    "seg_ptr",
+    "seg_left",
+    "seg_cuts",
+    "node_start",
+    "node_end",
+    "n_cand",
+    "criterion",
+    "min_balance",
+    "fallback",
+    "base_seed"
+  ],
+  "_segment_final_left": [
+    "margins",
+    "perm",
+    "seg_node",
+    "seg_start",
+    "seg_end",
+    "node_start",
+    "node_end",
+    "action",
+    "choice",
+    "shift",
+    "flip0",
+    "base_seed",
+    "seg_final_left"
+  ],
+  "_segment_scatter": [
+    "margins",
+    "perm",
+    "perm_out",
+    "pos_of",
+    "seg_node",
+    "seg_start",
+    "seg_end",
+    "node_start",
+    "node_end",
+    "action",
+    "choice",
+    "shift",
+    "flip0",
+    "base_seed",
+    "seg_left_base",
+    "seg_right_base"
+  ],
+  "_segment_copy_back": [
+    "perm",
+    "perm_out",
+    "seg_node",
+    "seg_start",
+    "seg_end",
+    "action"
+  ],
+  "SPARSE_SCATTER_BUDGET_BYTES": [],
+  "_load_planes": [
+    "ws",
+    "sptr",
+    "sinds",
+    "svals",
+    "slot0",
+    "n_cand"
+  ],
+  "_clear_planes": [
+    "ws",
+    "sptr",
+    "sinds",
+    "slot0",
+    "n_cand"
+  ],
+  "_scattered_margins": [
+    "ws",
+    "inds",
+    "indptr",
+    "spdata",
+    "offsets",
+    "slot0",
+    "n_cand",
+    "perm",
+    "pos_start",
+    "pos_end",
+    "margins",
+    "col0"
+  ],
+  "_sparse_segment_margins": [
+    "inds",
+    "indptr",
+    "spdata",
+    "sptr",
+    "sinds",
+    "svals",
+    "offsets",
+    "perm",
+    "seg_node",
+    "seg_start",
+    "seg_end",
+    "n_cand",
+    "margins",
+    "workspace"
+  ],
+  "_local_subtrees": [
+    "kind",
+    "angular",
+    "ddata",
+    "inds",
+    "indptr",
+    "spdata",
+    "bdata",
+    "perm",
+    "pos_of",
+    "degrees",
+    "neighbor_indices",
+    "d_rec",
+    "d_start",
+    "d_end",
+    "d_depth",
+    "d_next_rec",
+    "rec_leaf",
+    "rec_hub_l",
+    "rec_hub_r",
+    "rec_offset",
+    "rec_shift",
+    "rec_left",
+    "rec_right",
+    "rec_start",
+    "rec_end",
+    "leaf_size",
+    "max_depth",
+    "criterion",
+    "min_balance",
+    "fallback",
+    "base_seed",
+    "thread_ptr",
+    "thread_items",
+    "workspace",
+    "use_scatter"
+  ],
+  "_build_planes_serial": [
+    "kind",
+    "angular",
+    "ddata",
+    "inds",
+    "indptr",
+    "spdata",
+    "bdata",
+    "pairs"
+  ],
+  "_preorder": [
+    "rec_leaf",
+    "rec_left",
+    "rec_right",
+    "n_records"
+  ],
+  "_flat_children": [
+    "order",
+    "pre_of",
+    "rec_leaf",
+    "rec_left",
+    "rec_right",
+    "rec_start",
+    "rec_end"
+  ],
+  "make_hub_search_tree": [
+    "data",
+    "neighbor_indices",
+    "leaf_size",
+    "max_depth",
+    "angular",
+    "seed",
+    "criterion",
+    "min_balance",
+    "fallback",
+    "local_bytes",
+    "segment_size"
+  ],
+  "_assign_to_threads": [
+    "sizes",
+    "n_threads"
+  ],
+  "_materialise": [
+    "kind",
+    "angular",
+    "ddata",
+    "inds",
+    "indptr",
+    "spdata",
+    "bdata",
+    "order",
+    "rec_leaf",
+    "rec_hub_l",
+    "rec_hub_r",
+    "rec_offset",
+    "rec_shift",
+    "children",
+    "perm",
+    "leaf_size",
+    "rec_start",
+    "rec_end"
+  ],
+  "INT32_MIN": [],
+  "INT32_MAX": [],
+  "is_c_contiguous": [
+    "array_like"
+  ],
+  "generate_leaf_updates": [
+    "updates",
+    "n_updates_per_thread",
+    "leaf_block",
+    "current_graph",
+    "data",
+    "dist",
+    "n_threads"
+  ],
+  "init_rp_tree": [
+    "data",
+    "dist",
+    "current_graph",
+    "leaf_array",
+    "n_threads"
+  ],
+  "init_random": [
+    "n_neighbors",
+    "data",
+    "heap",
+    "dist",
+    "rng_state"
+  ],
+  "init_from_neighbor_graph": [
+    "heap",
+    "indices",
+    "distances"
+  ],
+  "process_candidates": [
+    "data",
+    "dist",
+    "current_graph",
+    "new_candidate_neighbors",
+    "old_candidate_neighbors",
+    "n_blocks",
+    "block_size",
+    "n_threads",
+    "update_array",
+    "n_updates_per_thread",
+    "sorted_updates",
+    "block_offsets",
+    "kernel"
+  ],
+  "nn_descent_internal": [
+    "current_graph",
+    "data",
+    "n_neighbors",
+    "rng_state",
+    "max_candidates",
+    "dist",
+    "n_iters",
+    "delta",
+    "verbose",
+    "kernel"
+  ],
+  "nn_descent": [
+    "data",
+    "n_neighbors",
+    "rng_state",
+    "max_candidates",
+    "dist",
+    "n_iters",
+    "delta",
+    "init_graph",
+    "rp_tree_init",
+    "leaf_array",
+    "low_memory",
+    "verbose",
+    "kernel"
+  ],
+  "_prune_edge": [
+    "prune_probability",
+    "seed",
+    "i",
+    "j",
+    "m"
+  ],
+  "diversify": [
+    "indices",
+    "distances",
+    "data",
+    "dist",
+    "rng_state",
+    "prune_probability"
+  ],
+  "diversify_squared_euclidean": [
+    "indices",
+    "distances",
+    "data",
+    "rng_state",
+    "prune_probability"
+  ],
+  "diversify_alternative_dot": [
+    "indices",
+    "distances",
+    "data",
+    "rng_state",
+    "prune_probability"
+  ],
+  "compute_degrees": [
+    "indices"
+  ],
+  "find_distance": [
+    "indices",
+    "distances",
+    "source",
+    "target"
+  ],
+  "diversify_degree_aware": [
+    "indices",
+    "distances",
+    "data",
+    "dist",
+    "max_degree",
+    "aggressiveness",
+    "alpha"
+  ],
+  "compute_degrees_csr": [
+    "graph_indptr",
+    "graph_indices"
+  ],
+  "resort_tree_indices": [
+    "tree",
+    "tree_order"
+  ],
+  "rerank": [
+    "nn_inds",
+    "queries",
+    "data",
+    "dist",
+    "n_neighbors",
+    "deheap_sort_function"
+  ],
+  "_quantize_int8_rows": [
+    "data"
+  ],
+  "_int8_code_inv_norms": [
+    "codes"
+  ],
+  "NNDescent": {
+    "__init__": [
+      "self",
+      "data",
+      "metric",
+      "metric_kwds",
+      "n_neighbors",
+      "n_trees",
+      "leaf_size",
+      "pruning_degree_multiplier",
+      "diversify_prob",
+      "diversify_method",
+      "degree_prune_aggressiveness",
+      "n_search_trees",
+      "search_tree_leaf_size",
+      "max_search_tree_depth",
+      "quantization",
+      "tree_init",
+      "init_graph",
+      "init_dist",
+      "random_state",
+      "low_memory",
+      "max_candidates",
+      "max_rptree_depth",
+      "n_iters",
+      "delta",
+      "n_jobs",
+      "compressed",
+      "parallel_batch_queries",
+      "verbose",
+      "bit_metric",
+      "angular_trees",
+      "search_tree_leaf_budget"
+    ],
+    "_build_init_forest": [
+      "self",
+      "data",
+      "n_trees",
+      "rng_state",
+      "random_state"
+    ],
+    "_set_sparse_distance_func": [
+      "self"
+    ],
+    "_uses_normalized_data": [
+      "self"
+    ],
+    "_set_distance_func": [
+      "self"
+    ],
+    "__getstate__": [
+      "self"
+    ],
+    "__setstate__": [
+      "self",
+      "d"
+    ],
+    "_init_search_graph": [
+      "self"
+    ],
+    "_init_cached_search_function": [
+      "self"
+    ],
+    "_init_search_function": [
+      "self"
+    ],
+    "_init_sparse_search_function": [
+      "self"
+    ],
+    "neighbor_graph": [
+      "self"
+    ],
+    "compress_index": [
+      "self"
+    ],
+    "prepare": [
+      "self",
+      "compile_search"
+    ],
+    "_ones_for_queries": [
+      "self",
+      "n_queries"
+    ],
+    "_build_fast_query_plan": [
+      "self"
+    ],
+    "_query_finisher": [
+      "self"
+    ],
+    "query": [
+      "self",
+      "query_data",
+      "k",
+      "epsilon",
+      "proxy_beam_size",
+      "candidate_width",
+      "rerank_width",
+      "return_distances",
+      "pre_normalized"
+    ],
+    "query_indices": [
+      "self",
+      "query_data",
+      "k",
+      "epsilon",
+      "proxy_beam_size",
+      "candidate_width",
+      "rerank_width",
+      "pre_normalized"
+    ],
+    "update": [
+      "self",
+      "xs_fresh",
+      "xs_updated",
+      "updated_indices"
+    ]
+  },
+  "PyNNDescentTransformer": {
+    "__init__": [
+      "self",
+      "n_neighbors",
+      "metric",
+      "metric_kwds",
+      "n_trees",
+      "leaf_size",
+      "search_epsilon",
+      "pruning_degree_multiplier",
+      "diversify_prob",
+      "n_search_trees",
+      "tree_init",
+      "random_state",
+      "n_jobs",
+      "low_memory",
+      "max_candidates",
+      "n_iters",
+      "early_termination_value",
+      "parallel_batch_queries",
+      "verbose"
+    ],
+    "fit": [
+      "self",
+      "X",
+      "compress_index"
+    ],
+    "transform": [
+      "self",
+      "X",
+      "y"
+    ],
+    "fit_transform": [
+      "self",
+      "X",
+      "y"
+    ]
+  },
+  "apply_hyperplane": [
+    "data",
+    "hyperplane_vector",
+    "hyperplane_offset",
+    "hyperplane_node_num",
+    "current_num_nodes",
+    "data_node_loc",
+    "rng_state"
+  ],
+  "make_euclidean_hyperplane": [
+    "data",
+    "indices",
+    "rng_state"
+  ],
+  "make_angular_hyperplane": [
+    "data",
+    "indices",
+    "rng_state"
+  ],
+  "sparse_process_candidates": [
+    "inds",
+    "indptr",
+    "data",
+    "dist",
+    "current_graph",
+    "new_candidate_neighbors",
+    "old_candidate_neighbors",
+    "n_blocks",
+    "block_size",
+    "n_threads",
+    "update_array",
+    "n_updates_per_thread"
+  ],
+  "FLOAT32_MAX": [],
+  "KERNEL_GENERIC": [],
+  "KERNEL_SQEUCLIDEAN": [],
+  "KERNEL_ALT_DOT": [],
+  "select_kernel": [
+    "dist",
+    "data"
+  ],
+  "alt_dot_from_dot": [
+    "r"
+  ],
+  "_four_sqeuclidean": [
+    "x",
+    "data",
+    "q0",
+    "q1",
+    "q2",
+    "q3"
+  ],
+  "_four_alt_dot": [
+    "x",
+    "data",
+    "q0",
+    "q1",
+    "q2",
+    "q3"
+  ],
+  "_emit": [
+    "update_array",
+    "t",
+    "idx",
+    "p",
+    "q",
+    "d",
+    "dist_thresh_p",
+    "heap_distances"
+  ],
+  "_join_row": [
+    "update_array",
+    "t",
+    "idx",
+    "max_updates",
+    "p",
+    "data_p",
+    "dist_thresh_p",
+    "candidates",
+    "start",
+    "heap_distances",
+    "data",
+    "kernel"
+  ],
+  "generate_graph_update_array_batched": [
+    "update_array",
+    "n_updates_per_thread",
+    "new_candidate_block",
+    "old_candidate_block",
+    "current_graph",
+    "data",
+    "kernel",
+    "n_threads"
+  ],
+  "four_distances": [
+    "query",
+    "data",
+    "candidates",
+    "out",
+    "kernel"
+  ],
+  "_mock_identity": [],
+  "_mock_ones": [],
+  "_dummy_cost": [],
+  "EPSILON": [],
+  "NET_SUPPLY_ERROR_TOLERANCE": [],
+  "INFINITY": [],
+  "MAX": [],
+  "dummy_cost": [],
+  "INVALID": [],
+  "ProblemStatus": {
+    "OPTIMAL": [],
+    "MAX_ITER_REACHED": [],
+    "UNBOUNDED": [],
+    "INFEASIBLE": []
+  },
+  "ArcState": {
+    "STATE_UPPER": [],
+    "STATE_TREE": [],
+    "STATE_LOWER": []
+  },
+  "SpanningTree": [],
+  "DiGraph": [],
+  "NodeArcData": [],
+  "LeavingArcData": [],
+  "isclose": [
+    "a",
+    "b",
+    "rtol",
+    "atol"
+  ],
+  "find_entering_arc": [
+    "pivot_block_size",
+    "pivot_next_arc",
+    "search_arc_num",
+    "state_vector",
+    "node_arc_data",
+    "in_arc"
+  ],
+  "find_join_node": [
+    "source",
+    "target",
+    "succ_num",
+    "parent",
+    "in_arc"
+  ],
+  "find_leaving_arc": [
+    "join",
+    "in_arc",
+    "node_arc_data",
+    "spanning_tree"
+  ],
+  "update_flow": [
+    "join",
+    "leaving_arc_data",
+    "node_arc_data",
+    "spanning_tree",
+    "in_arc"
+  ],
+  "update_spanning_tree": [
+    "spanning_tree",
+    "leaving_arc_data",
+    "join",
+    "in_arc",
+    "source"
+  ],
+  "update_potential": [
+    "leaving_arc_data",
+    "pi",
+    "cost",
+    "spanning_tree"
+  ],
+  "arc_id": [
+    "arc",
+    "graph"
+  ],
+  "construct_initial_pivots": [
+    "graph",
+    "node_arc_data",
+    "spanning_tree"
+  ],
+  "allocate_graph_structures": [
+    "n",
+    "m",
+    "use_arc_mixing"
+  ],
+  "initialize_graph_structures": [
+    "graph",
+    "node_arc_data",
+    "spanning_tree"
+  ],
+  "initialize_supply": [
+    "left_node_supply",
+    "right_node_supply",
+    "graph",
+    "supply"
+  ],
+  "set_cost": [
+    "arc",
+    "cost_val",
+    "cost",
+    "graph"
+  ],
+  "initialize_cost": [
+    "cost_matrix",
+    "graph",
+    "cost"
+  ],
+  "total_cost": [
+    "flow",
+    "cost"
+  ],
+  "network_simplex_core": [
+    "node_arc_data",
+    "spanning_tree",
+    "graph",
+    "max_iter"
+  ],
+  "right_marginal_error": [
+    "u",
+    "K",
+    "v",
+    "y"
+  ],
+  "right_marginal_error_batch": [
+    "u",
+    "K",
+    "v",
+    "y"
+  ],
+  "transport_plan": [
+    "K",
+    "u",
+    "v"
+  ],
+  "relative_change_in_plan": [
+    "old_u",
+    "old_v",
+    "new_u",
+    "new_v"
+  ],
+  "precompute_K_prime": [
+    "K",
+    "x"
+  ],
+  "K_from_cost": [
+    "cost",
+    "regularization"
+  ],
+  "sinkhorn_iterations": [
+    "x",
+    "y",
+    "u",
+    "v",
+    "K",
+    "max_iter",
+    "error_tolerance",
+    "change_tolerance"
+  ],
+  "sinkhorn_iterations_batch": [
+    "x",
+    "y",
+    "u",
+    "v",
+    "K",
+    "max_iter",
+    "error_tolerance"
+  ],
+  "sinkhorn_transport_plan": [
+    "x",
+    "y",
+    "cost",
+    "regularization",
+    "max_iter",
+    "error_tolerance",
+    "change_tolerance"
+  ],
+  "sinkhorn_distance": [
+    "x",
+    "y",
+    "cost",
+    "regularization"
+  ],
+  "sinkhorn_distance_batch": [
+    "x",
+    "y",
+    "cost",
+    "regularization"
+  ],
+  "make_fixed_cost_sinkhorn_distance": [
+    "cost",
+    "regularization"
+  ],
+  "EPS": [],
+  "FlatTree": [],
+  "dense_hyperplane_type": [],
+  "sparse_hyperplane_type": [],
+  "bit_hyperplane_type": [],
+  "offset_type": [],
+  "children_type": [],
+  "point_indices_type": [],
+  "dense_hyperplanes_list_type": [],
+  "sparse_hyperplanes_list_type": [],
+  "bit_hyperplanes_list_type": [],
+  "offsets_list_type": [],
+  "children_list_type": [],
+  "point_indices_list_type": [],
+  "angular_random_projection_split": [
+    "data",
+    "indices",
+    "rng_state"
+  ],
+  "angular_bitpacked_random_projection_split": [
+    "data",
+    "indices",
+    "rng_state"
+  ],
+  "euclidean_random_projection_split": [
+    "data",
+    "indices",
+    "rng_state"
+  ],
+  "sparse_angular_random_projection_split": [
+    "inds",
+    "indptr",
+    "data",
+    "indices",
+    "rng_state"
+  ],
+  "sparse_euclidean_random_projection_split": [
+    "inds",
+    "indptr",
+    "data",
+    "indices",
+    "rng_state"
+  ],
+  "FAST_SPLIT_THRESHOLD": [],
+  "binary_search": [
+    "sorted_arr",
+    "value"
+  ],
+  "compute_global_degrees": [
+    "neighbor_indices"
+  ],
+  "get_top_k_hub_indices": [
+    "indices",
+    "global_degrees",
+    "k"
+  ],
+  "MIN_SPLIT_BALANCE": [],
+  "euclidean_hub_split": [
+    "data",
+    "indices",
+    "neighbor_indices",
+    "global_degrees",
+    "rng_state"
+  ],
+  "angular_hub_split": [
+    "data",
+    "indices",
+    "neighbor_indices",
+    "global_degrees",
+    "rng_state"
+  ],
+  "make_hub_euclidean_tree": [
+    "data",
+    "indices",
+    "neighbor_indices",
+    "global_degrees",
+    "hyperplanes",
+    "offsets",
+    "children",
+    "point_indices",
+    "rng_state",
+    "leaf_size",
+    "max_depth"
+  ],
+  "make_hub_angular_tree": [
+    "data",
+    "indices",
+    "neighbor_indices",
+    "global_degrees",
+    "hyperplanes",
+    "offsets",
+    "children",
+    "point_indices",
+    "rng_state",
+    "leaf_size",
+    "max_depth"
+  ],
+  "make_hub_tree": [
+    "data",
+    "neighbor_indices",
+    "rng_state",
+    "leaf_size",
+    "angular",
+    "max_depth"
+  ],
+  "sparse_euclidean_hub_split": [
+    "inds",
+    "indptr",
+    "spdata",
+    "indices",
+    "neighbor_indices",
+    "global_degrees",
+    "rng_state"
+  ],
+  "sparse_angular_hub_split": [
+    "inds",
+    "indptr",
+    "spdata",
+    "indices",
+    "neighbor_indices",
+    "global_degrees",
+    "rng_state"
+  ],
+  "make_sparse_hub_euclidean_tree": [
+    "inds",
+    "indptr",
+    "spdata",
+    "indices",
+    "neighbor_indices",
+    "global_degrees",
+    "hyperplanes",
+    "offsets",
+    "children",
+    "point_indices",
+    "rng_state",
+    "leaf_size",
+    "max_depth"
+  ],
+  "make_sparse_hub_angular_tree": [
+    "inds",
+    "indptr",
+    "spdata",
+    "indices",
+    "neighbor_indices",
+    "global_degrees",
+    "hyperplanes",
+    "offsets",
+    "children",
+    "point_indices",
+    "rng_state",
+    "leaf_size",
+    "max_depth"
+  ],
+  "make_sparse_hub_tree": [
+    "inds",
+    "indptr",
+    "spdata",
+    "neighbor_indices",
+    "rng_state",
+    "leaf_size",
+    "angular",
+    "max_depth"
+  ],
+  "get_top_k_hub_indices_bit": [
+    "indices",
+    "data",
+    "global_degrees",
+    "k"
+  ],
+  "bit_hub_split": [
+    "data",
+    "indices",
+    "neighbor_indices",
+    "global_degrees",
+    "rng_state"
+  ],
+  "make_bit_hub_tree_recursive": [
+    "data",
+    "indices",
+    "neighbor_indices",
+    "global_degrees",
+    "hyperplanes",
+    "offsets",
+    "children",
+    "point_indices",
+    "rng_state",
+    "leaf_size",
+    "max_depth"
+  ],
+  "make_bit_hub_tree": [
+    "data",
+    "neighbor_indices",
+    "rng_state",
+    "leaf_size",
+    "max_depth"
+  ],
+  "make_euclidean_tree": [
+    "data",
+    "indices",
+    "hyperplanes",
+    "offsets",
+    "children",
+    "point_indices",
+    "rng_state",
+    "leaf_size",
+    "max_depth"
+  ],
+  "make_angular_tree": [
+    "data",
+    "indices",
+    "hyperplanes",
+    "offsets",
+    "children",
+    "point_indices",
+    "rng_state",
+    "leaf_size",
+    "max_depth"
+  ],
+  "make_bit_tree": [
+    "data",
+    "indices",
+    "hyperplanes",
+    "offsets",
+    "children",
+    "point_indices",
+    "rng_state",
+    "leaf_size",
+    "max_depth"
+  ],
+  "make_sparse_euclidean_tree": [
+    "inds",
+    "indptr",
+    "data",
+    "indices",
+    "hyperplanes",
+    "offsets",
+    "children",
+    "point_indices",
+    "rng_state",
+    "leaf_size",
+    "max_depth"
+  ],
+  "make_sparse_angular_tree": [
+    "inds",
+    "indptr",
+    "data",
+    "indices",
+    "hyperplanes",
+    "offsets",
+    "children",
+    "point_indices",
+    "rng_state",
+    "leaf_size",
+    "max_depth"
+  ],
+  "make_dense_tree": [
+    "data",
+    "rng_state",
+    "leaf_size",
+    "angular",
+    "max_depth"
+  ],
+  "make_sparse_tree": [
+    "inds",
+    "indptr",
+    "spdata",
+    "rng_state",
+    "leaf_size",
+    "angular",
+    "max_depth"
+  ],
+  "make_dense_bit_tree": [
+    "data",
+    "rng_state",
+    "leaf_size",
+    "angular",
+    "max_depth"
+  ],
+  "select_side": [
+    "hyperplane",
+    "offset",
+    "point",
+    "rng_state"
+  ],
+  "select_side_bit": [
+    "hyperplane",
+    "offset",
+    "point",
+    "rng_state"
+  ],
+  "search_flat_tree": [
+    "point",
+    "hyperplanes",
+    "offsets",
+    "children",
+    "indices",
+    "rng_state"
+  ],
+  "search_flat_bit_tree": [
+    "point",
+    "hyperplanes",
+    "offsets",
+    "children",
+    "indices",
+    "rng_state"
+  ],
+  "sparse_select_side_ragged": [
+    "hyperplane_inds",
+    "hyperplane_data",
+    "offset",
+    "point_inds",
+    "point_data",
+    "rng_state"
+  ],
+  "sparse_hyperplanes_to_ragged": [
+    "hyperplanes"
+  ],
+  "sparse_select_side": [
+    "hyperplane",
+    "offset",
+    "point_inds",
+    "point_data",
+    "rng_state"
+  ],
+  "search_sparse_flat_tree": [
+    "point_inds",
+    "point_data",
+    "hyperplanes",
+    "offsets",
+    "children",
+    "indices",
+    "rng_state"
+  ],
+  "make_forest": [
+    "data",
+    "n_neighbors",
+    "n_trees",
+    "leaf_size",
+    "rng_state",
+    "random_state",
+    "n_jobs",
+    "angular",
+    "bit_tree",
+    "max_depth"
+  ],
+  "get_leaves_from_tree": [
+    "tree",
+    "max_leaf_size"
+  ],
+  "rptree_leaf_array_parallel": [
+    "rp_forest"
+  ],
+  "rptree_leaf_array": [
+    "rp_forest"
+  ],
+  "recursive_convert": [
+    "tree",
+    "hyperplanes",
+    "offsets",
+    "children",
+    "indices",
+    "node_num",
+    "leaf_start",
+    "tree_node"
+  ],
+  "recursive_convert_sparse": [
+    "tree",
+    "hyperplanes",
+    "offsets",
+    "children",
+    "indices",
+    "node_num",
+    "leaf_start",
+    "tree_node"
+  ],
+  "num_nodes_and_leaves": [
+    "tree"
+  ],
+  "convert_tree_format": [
+    "tree",
+    "data_size",
+    "data_dim"
+  ],
+  "FLAT_TREE_HYPERPLANES": [],
+  "FLAT_TREE_OFFSETS": [],
+  "FLAT_TREE_CHILDREN": [],
+  "FLAT_TREE_INDICES": [],
+  "FLAT_TREE_LEAF_SIZE": [],
+  "denumbaify_tree": [
+    "tree"
+  ],
+  "renumbaify_tree": [
+    "tree"
+  ],
+  "score_tree": [
+    "tree",
+    "neighbor_indices",
+    "data",
+    "rng_state"
+  ],
+  "score_linked_tree": [
+    "tree",
+    "neighbor_indices"
+  ],
+  "popcnt_u8": [
+    "typingctx",
+    "val"
+  ],
+  "euclidean": [
+    "x",
+    "y"
+  ],
+  "squared_euclidean": [
+    "x",
+    "y"
+  ],
+  "standardised_euclidean": [
+    "x",
+    "y",
+    "sigma"
+  ],
+  "manhattan": [
+    "x",
+    "y"
+  ],
+  "chebyshev": [
+    "x",
+    "y"
+  ],
+  "minkowski": [
+    "x",
+    "y",
+    "p"
+  ],
+  "weighted_minkowski": [
+    "x",
+    "y",
+    "w",
+    "p"
+  ],
+  "mahalanobis": [
+    "x",
+    "y",
+    "vinv"
+  ],
+  "hamming": [
+    "x",
+    "y"
+  ],
+  "canberra": [
+    "x",
+    "y"
+  ],
+  "bray_curtis": [
+    "x",
+    "y"
+  ],
+  "jaccard": [
+    "x",
+    "y"
+  ],
+  "alternative_jaccard": [
+    "x",
+    "y"
+  ],
+  "correct_alternative_jaccard": [
+    "v"
+  ],
+  "matching": [
+    "x",
+    "y"
+  ],
+  "dice": [
+    "x",
+    "y"
+  ],
+  "kulsinski": [
+    "x",
+    "y"
+  ],
+  "rogers_tanimoto": [
+    "x",
+    "y"
+  ],
+  "russellrao": [
+    "x",
+    "y"
+  ],
+  "sokal_michener": [
+    "x",
+    "y"
+  ],
+  "sokal_sneath": [
+    "x",
+    "y"
+  ],
+  "haversine": [
+    "x",
+    "y"
+  ],
+  "yule": [
+    "x",
+    "y"
+  ],
+  "cosine": [
+    "x",
+    "y"
+  ],
+  "alternative_cosine": [
+    "x",
+    "y"
+  ],
+  "dot": [
+    "x",
+    "y"
+  ],
+  "direct_cosine": [
+    "x",
+    "y"
+  ],
+  "alternative_dot": [
+    "x",
+    "y"
+  ],
+  "correct_alternative_cosine": [
+    "d"
+  ],
+  "inner_product": [
+    "x",
+    "y"
+  ],
+  "alternative_inner_product": [
+    "x",
+    "y"
+  ],
+  "proxy_inner_product": [
+    "x",
+    "y"
+  ],
+  "correct_alternative_inner_product": [
+    "d"
+  ],
+  "proxy_wasserstein_1d": [
+    "x",
+    "y"
+  ],
+  "proxy_kantorovich": [
+    "x",
+    "y"
+  ],
+  "proxy_circular_kantorovich": [
+    "x",
+    "y"
+  ],
+  "proxy_jensen_shannon": [
+    "x",
+    "y"
+  ],
+  "proxy_symmetric_kl": [
+    "x",
+    "y"
+  ],
+  "proxy_sinkhorn": [
+    "x",
+    "y"
+  ],
+  "tsss": [
+    "x",
+    "y"
+  ],
+  "true_angular": [
+    "x",
+    "y"
+  ],
+  "true_angular_from_alt_cosine": [
+    "d"
+  ],
+  "correlation": [
+    "x",
+    "y"
+  ],
+  "hellinger": [
+    "x",
+    "y"
+  ],
+  "alternative_hellinger": [
+    "x",
+    "y"
+  ],
+  "correct_alternative_hellinger": [
+    "d"
+  ],
+  "rankdata": [
+    "a",
+    "method"
+  ],
+  "spearmanr": [
+    "x",
+    "y"
+  ],
+  "kantorovich": [
+    "x",
+    "y",
+    "cost",
+    "max_iter"
+  ],
+  "sinkhorn": [
+    "x",
+    "y",
+    "cost",
+    "regularization"
+  ],
+  "jensen_shannon_divergence": [
+    "x",
+    "y"
+  ],
+  "wasserstein_1d": [
+    "x",
+    "y",
+    "p"
+  ],
+  "circular_kantorovich": [
+    "x",
+    "y",
+    "p"
+  ],
+  "symmetric_kl_divergence": [
+    "x",
+    "y"
+  ],
+  "bit_hamming": [
+    "x",
+    "y"
+  ],
+  "bit_jaccard": [
+    "x",
+    "y"
+  ],
+  "quantized_uint8_sq_euclidean": [
+    "x",
+    "y",
+    "quantized_values"
+  ],
+  "quantized_uint8_alternative_cosine": [
+    "x",
+    "y",
+    "quantized_values"
+  ],
+  "quantized_uint8_alternative_dot": [
+    "x",
+    "y",
+    "quantized_values"
+  ],
+  "quantized_uint4_sq_euclidean": [
+    "x",
+    "y",
+    "quantized_values"
+  ],
+  "quantized_uint4_alternative_cosine": [
+    "x",
+    "y",
+    "quantized_values"
+  ],
+  "quantized_uint4_alternative_dot": [
+    "x",
+    "y",
+    "quantized_values"
+  ],
+  "quantized_int8_alternative_cosine": [
+    "x",
+    "y"
+  ],
+  "quantized_int8_alternative_dot": [
+    "x",
+    "y"
+  ],
+  "quantized_int8_alternative_cosine_with_norms": [
+    "x",
+    "y",
+    "inv_norm_x",
+    "inv_norm_y"
+  ],
+  "quantized_int8_direct_cosine": [
+    "x",
+    "y"
+  ],
+  "quantized_int8_direct_cosine_with_norms": [
+    "x",
+    "y",
+    "inv_norm_x",
+    "inv_norm_y"
+  ],
+  "quantized_int8_alternative_dot_with_norms": [
+    "x",
+    "y",
+    "inv_norm_x",
+    "inv_norm_y"
+  ],
+  "named_distances": [],
+  "fast_distance_alternatives": [],
+  "proxy_distances": [],
+  "quantized_distances": [],
+  "__version__": [],
+  "arr_unique": [
+    "arr"
+  ],
+  "arr_union": [
+    "ar1",
+    "ar2"
+  ],
+  "arr_intersect": [
+    "ar1",
+    "ar2"
+  ],
+  "fast_intersection_size": [
+    "ar1",
+    "ar2"
+  ],
+  "sparse_sum": [
+    "ind1",
+    "data1",
+    "ind2",
+    "data2"
+  ],
+  "sparse_diff": [
+    "ind1",
+    "data1",
+    "ind2",
+    "data2"
+  ],
+  "sparse_mul": [
+    "ind1",
+    "data1",
+    "ind2",
+    "data2"
+  ],
+  "sparse_dot_product": [
+    "ind1",
+    "data1",
+    "ind2",
+    "data2"
+  ],
+  "dense_union": [
+    "ind1",
+    "data1",
+    "ind2",
+    "data2"
+  ],
+  "_merge_sq_diff": [
+    "ind1",
+    "data1",
+    "ind2",
+    "data2"
+  ],
+  "_merge_abs_diff_reduce": [
+    "ind1",
+    "data1",
+    "ind2",
+    "data2",
+    "mode",
+    "p"
+  ],
+  "_merge_dot": [
+    "ind1",
+    "data1",
+    "ind2",
+    "data2"
+  ],
+  "_merge_sqrt_product": [
+    "ind1",
+    "data1",
+    "ind2",
+    "data2"
+  ],
+  "sparse_dot_accumulate": [
+    "start",
+    "ind1",
+    "data1",
+    "ind2",
+    "data2"
+  ],
+  "sparse_euclidean": [
+    "ind1",
+    "data1",
+    "ind2",
+    "data2"
+  ],
+  "sparse_squared_euclidean": [
+    "ind1",
+    "data1",
+    "ind2",
+    "data2"
+  ],
+  "sparse_manhattan": [
+    "ind1",
+    "data1",
+    "ind2",
+    "data2"
+  ],
+  "sparse_chebyshev": [
+    "ind1",
+    "data1",
+    "ind2",
+    "data2"
+  ],
+  "sparse_minkowski": [
+    "ind1",
+    "data1",
+    "ind2",
+    "data2",
+    "p"
+  ],
+  "sparse_hamming": [
+    "ind1",
+    "data1",
+    "ind2",
+    "data2",
+    "n_features"
+  ],
+  "sparse_canberra": [
+    "ind1",
+    "data1",
+    "ind2",
+    "data2"
+  ],
+  "sparse_bray_curtis": [
+    "ind1",
+    "data1",
+    "ind2",
+    "data2"
+  ],
+  "sparse_jaccard": [
+    "ind1",
+    "data1",
+    "ind2",
+    "data2"
+  ],
+  "sparse_alternative_jaccard": [
+    "ind1",
+    "data1",
+    "ind2",
+    "data2"
+  ],
+  "sparse_matching": [
+    "ind1",
+    "data1",
+    "ind2",
+    "data2",
+    "n_features"
+  ],
+  "sparse_dice": [
+    "ind1",
+    "data1",
+    "ind2",
+    "data2"
+  ],
+  "sparse_kulsinski": [
+    "ind1",
+    "data1",
+    "ind2",
+    "data2",
+    "n_features"
+  ],
+  "sparse_rogers_tanimoto": [
+    "ind1",
+    "data1",
+    "ind2",
+    "data2",
+    "n_features"
+  ],
+  "sparse_russellrao": [
+    "ind1",
+    "data1",
+    "ind2",
+    "data2",
+    "n_features"
+  ],
+  "sparse_sokal_michener": [
+    "ind1",
+    "data1",
+    "ind2",
+    "data2",
+    "n_features"
+  ],
+  "sparse_sokal_sneath": [
+    "ind1",
+    "data1",
+    "ind2",
+    "data2"
+  ],
+  "sparse_cosine": [
+    "ind1",
+    "data1",
+    "ind2",
+    "data2"
+  ],
+  "sparse_alternative_cosine": [
+    "ind1",
+    "data1",
+    "ind2",
+    "data2"
+  ],
+  "sparse_correct_alternative_cosine": [
+    "d"
+  ],
+  "sparse_dot": [
+    "ind1",
+    "data1",
+    "ind2",
+    "data2"
+  ],
+  "sparse_alternative_dot": [
+    "ind1",
+    "data1",
+    "ind2",
+    "data2"
+  ],
+  "sparse_correlation": [
+    "ind1",
+    "data1",
+    "ind2",
+    "data2",
+    "n_features"
+  ],
+  "sparse_hellinger": [
+    "ind1",
+    "data1",
+    "ind2",
+    "data2"
+  ],
+  "sparse_alternative_hellinger": [
+    "ind1",
+    "data1",
+    "ind2",
+    "data2"
+  ],
+  "sparse_correct_alternative_hellinger": [
+    "d"
+  ],
+  "dummy_ground_metric": [
+    "x",
+    "y"
+  ],
+  "create_ground_metric": [
+    "ground_vectors",
+    "metric"
+  ],
+  "sparse_kantorovich": [
+    "ind1",
+    "data1",
+    "ind2",
+    "data2",
+    "ground_metric"
+  ],
+  "sparse_wasserstein_1d": [
+    "ind1",
+    "data1",
+    "ind2",
+    "data2",
+    "p"
+  ],
+  "sparse_jensen_shannon_divergence": [
+    "ind1",
+    "data1",
+    "ind2",
+    "data2"
+  ],
+  "sparse_symmetric_kl_divergence": [
+    "ind1",
+    "data1",
+    "ind2",
+    "data2"
+  ],
+  "sparse_named_distances": [],
+  "sparse_need_n_features": [],
+  "sparse_fast_distance_alternatives": [],
+  "finish_query_sparse_alternative_cosine": [
+    "indices",
+    "distances",
+    "vertex_order"
+  ],
+  "finish_query_sparse_alternative_hellinger": [
+    "indices",
+    "distances",
+    "vertex_order"
+  ],
+  "_mix64": [
+    "x"
+  ],
+  "_root_seeds": [
+    "seed",
+    "n_trees"
+  ],
+  "_child_seeds": [
+    "seeds"
+  ],
+  "_two_points": [
+    "seed",
+    "size"
+  ],
+  "_dense_plane": [
+    "data",
+    "p",
+    "q",
+    "plane",
+    "angular"
+  ],
+  "_dense_planes": [
+    "data",
+    "perm",
+    "s_tree",
+    "s_start",
+    "s_end",
+    "s_seed",
+    "planes",
+    "offsets",
+    "angular"
+  ],
+  "_dense_sides": [
+    "data",
+    "assign",
+    "planes",
+    "offsets",
+    "s_seed",
+    "sides"
+  ],
+  "_dense_local_subtrees": [
+    "data",
+    "perm",
+    "leaf_mark",
+    "d_tree",
+    "d_start",
+    "d_end",
+    "d_seed",
+    "d_depth",
+    "leaf_size",
+    "max_depth",
+    "angular"
+  ],
+  "_row_norm": [
+    "indptr",
+    "values",
+    "p"
+  ],
+  "_sparse_plane_size": [
+    "inds",
+    "indptr",
+    "p",
+    "q"
+  ],
+  "_sparse_plane_fill": [
+    "inds",
+    "indptr",
+    "values",
+    "p",
+    "q",
+    "out_inds",
+    "out_values",
+    "pos",
+    "angular"
+  ],
+  "_sparse_planes": [
+    "inds",
+    "indptr",
+    "values",
+    "perm",
+    "s_tree",
+    "s_start",
+    "s_end",
+    "s_seed",
+    "angular"
+  ],
+  "_sparse_sides": [
+    "inds",
+    "indptr",
+    "values",
+    "assign",
+    "plane_ptr",
+    "plane_inds",
+    "plane_values",
+    "offsets",
+    "s_seed",
+    "sides"
+  ],
+  "_sparse_local_subtrees": [
+    "inds",
+    "indptr",
+    "values",
+    "perm",
+    "leaf_mark",
+    "d_tree",
+    "d_start",
+    "d_end",
+    "d_seed",
+    "d_depth",
+    "leaf_size",
+    "max_depth",
+    "angular"
+  ],
+  "_set_assignments": [
+    "perm",
+    "assign",
+    "n_tree",
+    "n_start",
+    "n_end",
+    "values"
+  ],
+  "_partition": [
+    "perm",
+    "sides",
+    "s_tree",
+    "s_start",
+    "s_end",
+    "lefts"
+  ],
+  "_leaves_to_array": [
+    "perm",
+    "leaf_mark"
+  ],
+  "make_hybrid_leaf_array": [
+    "data",
+    "n_trees",
+    "leaf_size",
+    "seed",
+    "angular",
+    "max_depth",
+    "local_bytes"
+  ],
+  "_array": [
+    "dtype",
+    "ndim",
+    "readonly"
+  ],
+  "_HEAP_TYPE": [],
+  "SearchIndexType": {
+    "preprocess_fields": [
+      "self",
+      "fields"
+    ]
+  },
+  "SearchIndex": {},
+  "_SEARCH_INDEX_FIELDS": [],
+  "_distance": [
+    "kernel",
+    "x",
+    "y"
+  ],
+  "_tree_leaf": [
+    "point",
+    "tree_num",
+    "tree_hyperplanes",
+    "tree_offsets",
+    "tree_children",
+    "rng_state"
+  ],
+  "_tree_spill_leaves": [
+    "point",
+    "rng_state",
+    "leaves",
+    "tree_hyperplanes",
+    "tree_offsets",
+    "tree_children",
+    "leaf_budget"
+  ],
+  "_search_one": [
+    "current_query",
+    "tree_current_query",
+    "heap_priorities",
+    "heap_indices",
+    "k",
+    "epsilon",
+    "visited",
+    "rng_state",
+    "data",
+    "indptr",
+    "indices",
+    "tree_hyperplanes",
+    "tree_offsets",
+    "tree_children",
+    "tree_indices",
+    "n_search_trees",
+    "tree_leaf_budget",
+    "n_neighbors",
+    "min_distance",
+    "kernel"
+  ],
+  "_prepare_queries": [
+    "i",
+    "query_points",
+    "tree_query_points",
+    "query_is_normalized",
+    "normalize_query",
+    "tree_normalize_query"
+  ],
+  "_search_dense_serial": [
+    "index",
+    "query_points",
+    "tree_query_points",
+    "result",
+    "k",
+    "epsilon",
+    "visited",
+    "query_is_normalized",
+    "rng_state",
+    "kernel"
+  ],
+  "search_dense_sqeuclidean": [
+    "index",
+    "query_points",
+    "tree_query_points",
+    "query_inv_norms",
+    "result",
+    "k",
+    "epsilon",
+    "visited",
+    "query_is_normalized",
+    "rng_state"
+  ],
+  "search_dense_alternative_dot": [
+    "index",
+    "query_points",
+    "tree_query_points",
+    "query_inv_norms",
+    "result",
+    "k",
+    "epsilon",
+    "visited",
+    "query_is_normalized",
+    "rng_state"
+  ],
+  "search_dense_parallel": [
+    "index",
+    "query_points",
+    "tree_query_points",
+    "query_inv_norms",
+    "result",
+    "k",
+    "epsilon",
+    "visited",
+    "query_is_normalized",
+    "rng_state"
+  ],
+  "_new_search_index": [
+    "data",
+    "indptr",
+    "indices",
+    "tree_hyperplanes",
+    "tree_offsets",
+    "tree_children",
+    "tree_indices",
+    "n_search_trees",
+    "tree_leaf_budget",
+    "n_neighbors",
+    "min_distance",
+    "normalize_query",
+    "tree_normalize_query",
+    "kernel"
+  ],
+  "_readonly": [
+    "array",
+    "dtype"
+  ],
+  "stack_search_forest": [
+    "search_forest",
+    "n_points"
+  ],
+  "make_cached_search_function": [
+    "data",
+    "indptr",
+    "indices",
+    "search_forest",
+    "tree_leaf_budget",
+    "n_neighbors",
+    "min_distance",
+    "normalize_query",
+    "tree_normalize_query",
+    "kernel",
+    "parallel"
+  ],
+  "deheap_sort_serial": [
+    "indices",
+    "distances"
+  ],
+  "deheap_sort_parallel": [
+    "indices",
+    "distances"
+  ]
+}

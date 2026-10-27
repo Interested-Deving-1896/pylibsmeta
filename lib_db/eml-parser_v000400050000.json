@@ -1,0 +1,288 @@
+{
+  "logger": [],
+  "__author__": [],
+  "__email__": [],
+  "__copyright__": [],
+  "__license__": [],
+  "PartData": {},
+  "get_public_suffix_list": [
+    "accept_unknown"
+  ],
+  "find_header_start": [
+    "data"
+  ],
+  "HeaderParsingLimitDefect": {},
+  "UnparsedHeaderValue": {
+    "__slots__": []
+  },
+  "CustomPolicy": {
+    "__init__": [
+      "self",
+      "email_regex"
+    ],
+    "header_fetch_parse": [
+      "self",
+      "name",
+      "value"
+    ],
+    "unparsed_header_value": [
+      "name",
+      "value"
+    ],
+    "fetch_fixed_header": [
+      "self",
+      "name",
+      "value"
+    ],
+    "_fetch_fixed_header": [
+      "self",
+      "name",
+      "value"
+    ]
+  },
+  "EmlParser": {
+    "MULTIPART_RECURSION_LIMIT": [],
+    "__init__": [
+      "self",
+      "include_raw_body",
+      "include_attachment_data",
+      "pconf",
+      "policy",
+      "ignore_bad_start",
+      "email_force_tld",
+      "domain_force_tld",
+      "ip_force_routable",
+      "parse_attachments",
+      "include_www",
+      "include_href"
+    ],
+    "decode_email": [
+      "self",
+      "eml_file",
+      "ignore_bad_start"
+    ],
+    "decode_email_bytes": [
+      "self",
+      "eml_file",
+      "ignore_bad_start"
+    ],
+    "guess_boundary": [
+      "payload",
+      "declared"
+    ],
+    "repair_multipart": [
+      "self",
+      "msg"
+    ],
+    "limit_header_parsing": [
+      "msg"
+    ],
+    "parse_email": [
+      "self"
+    ],
+    "string_sliding_window_loop": [
+      "body",
+      "slice_step",
+      "max_distance"
+    ],
+    "is_file_name": [
+      "self",
+      "domain"
+    ],
+    "get_valid_domain_or_ip": [
+      "self",
+      "data"
+    ],
+    "_get_valid_domain_or_ip": [
+      "self",
+      "data"
+    ],
+    "parse_authentication_results": [
+      "header"
+    ],
+    "get_share_host": [
+      "self",
+      "share"
+    ],
+    "get_obfuscated_ip": [
+      "self",
+      "host"
+    ],
+    "clean_found_uri": [
+      "self",
+      "url"
+    ],
+    "get_uri_ondata": [
+      "self",
+      "body"
+    ],
+    "headeremail2list": [
+      "self",
+      "header"
+    ],
+    "is_text_part": [
+      "msg",
+      "filename"
+    ],
+    "get_raw_body_text": [
+      "self",
+      "msg",
+      "boundary",
+      "depth"
+    ],
+    "get_file_hash": [
+      "data"
+    ],
+    "get_hash": [
+      "value",
+      "hash_type"
+    ],
+    "traverse_multipart": [
+      "self",
+      "msg",
+      "counter",
+      "depth"
+    ],
+    "prepare_multipart_part_attachment": [
+      "self",
+      "msg",
+      "counter"
+    ],
+    "get_mime_type": [
+      "data"
+    ]
+  },
+  "_BIDI_CONTROL": [],
+  "_PADDING": [],
+  "is_executable_content": [
+    "data",
+    "mime_type"
+  ],
+  "find_filename_anomalies": [
+    "filename",
+    "data",
+    "mime_type"
+  ],
+  "email_no_force_tld_regex": [],
+  "email_force_tld_regex": [],
+  "email_regex": [],
+  "email_regex_rfc2047": [],
+  "recv_dom_regex": [],
+  "_ENCODED_DOT": [],
+  "dom_regex": [],
+  "ipv4_regex": [],
+  "_IPV6_ADDRESS": [],
+  "ipv6_regex": [],
+  "findall_ipv6": [
+    "text"
+  ],
+  "url_regex_comma": [],
+  "url_regex_www_comma": [],
+  "url_regex_simple": [],
+  "url_regex_www": [],
+  "url_regex_href_attr": [],
+  "URL_HREF_TAG_ATTRS": [],
+  "URL_HREF_TAG_WINDOW": [],
+  "_url_regex_href_tag_name": [],
+  "_url_regex_href_ws_or_slash": [],
+  "findall_href": [
+    "body"
+  ],
+  "url_drop_chars_table": [],
+  "url_backslash_scheme_regex": [],
+  "escape_special_regex_chars": [],
+  "window_slice_regex": [],
+  "ipv4_obfuscated_regex": [],
+  "url_numeric_host_regex": [],
+  "multipart_boundary_guess_regex": [],
+  "xmlns_declaration_regex": [],
+  "authentication_result_regex": [],
+  "received_spf_regex": [],
+  "unc_regex": [],
+  "_CLEANLINE_CHARS": [],
+  "_DELIMITERS": [],
+  "_ANGLE_ADDRESS": [],
+  "_DATE": [],
+  "_HOST": [],
+  "_STRUCTURE": [],
+  "cleanline": [
+    "line"
+  ],
+  "get_domain_ip": [
+    "line"
+  ],
+  "_remove_comments": [
+    "line",
+    "comments",
+    "start"
+  ],
+  "_parse_date": [
+    "line",
+    "comments",
+    "separators"
+  ],
+  "parserouting": [
+    "line",
+    "email_regex"
+  ],
+  "FILE_EXTENSIONS": [],
+  "TEXT_ATTACHMENT_EXTENSIONS": [],
+  "TEXT_ATTACHMENT_CONTENT_TYPES": [],
+  "MAX_TEXT_ATTACHMENT_SIZE": [],
+  "EXECUTABLE_EXTENSIONS": [],
+  "DECOY_EXTENSIONS": [],
+  "EXECUTABLE_MIME_TYPES": [],
+  "MAX_PARSED_HEADER_SIZE": [],
+  "MAX_PARSED_HEADER_FIELDS": [],
+  "MAX_PARSED_HEADER_BYTES": [],
+  "ALWAYS_PARSED_HEADERS": [],
+  "FIELD_NAME_BYTES": [],
+  "default_date": [],
+  "_DATEUTIL_DEFAULT": [],
+  "MAX_CHARSET_DETECTION_SIZE": [],
+  "decode_field": [
+    "field"
+  ],
+  "decode_body": [
+    "data",
+    "charset"
+  ],
+  "_redetect_if_damaged": [
+    "data",
+    "text"
+  ],
+  "decode_string": [
+    "string",
+    "encoding"
+  ],
+  "normalize_attribute_url": [
+    "value"
+  ],
+  "workaround_bug_27257": [
+    "msg",
+    "header",
+    "email_regex"
+  ],
+  "workaround_field_value_parsing_errors": [
+    "msg",
+    "header"
+  ],
+  "robust_string2date": [
+    "line"
+  ],
+  "json_serial": [
+    "obj"
+  ],
+  "export_to_json": [
+    "parsed_msg",
+    "sort_keys"
+  ],
+  "rfc2047_decode": [
+    "value"
+  ],
+  "noparenthesis": [
+    "line",
+    "replacement"
+  ],
+  "__all__": []
+}
