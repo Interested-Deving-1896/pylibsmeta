@@ -1,0 +1,1751 @@
+{
+  "_match_names_check_data": [
+    "data",
+    "column",
+    "group_column"
+  ],
+  "_match_names_preprocess_data": [
+    "column",
+    "data_first",
+    "data_second",
+    "case_sensitive",
+    "punctuation_sensitive",
+    "special_character_sensitive"
+  ],
+  "_match_names_combine_data": [
+    "data_first",
+    "data_second",
+    "left_cols",
+    "right_cols"
+  ],
+  "_match_names_match_single": [
+    "matcher",
+    "data_first",
+    "data_second",
+    "name_column"
+  ],
+  "_match_names_match_group": [
+    "matcher",
+    "data_first",
+    "data_second",
+    "name_column",
+    "group_column_first",
+    "group_column_second"
+  ],
+  "match_names": [
+    "data_first",
+    "data_second",
+    "column_first",
+    "column_second",
+    "group_column_first",
+    "group_column_second",
+    "case_sensitive",
+    "punctuation_sensitive",
+    "special_character_sensitive",
+    "threshold"
+  ],
+  "_sparse_cosine_low_memory": [
+    "matrix_row",
+    "matrix_col",
+    "matrix_data",
+    "matrix_len",
+    "vector_ind",
+    "vector_data"
+  ],
+  "_sparse_cosine_top_n_standard": [
+    "matrix_a",
+    "matrix_b",
+    "number_of_rows_at_once",
+    "top_n",
+    "verbose"
+  ],
+  "sparse_cosine_top_n": [
+    "matrix_a",
+    "matrix_b",
+    "top_n",
+    "low_memory",
+    "number_of_rows",
+    "verbose"
+  ],
+  "MatchAnnotator": {
+    "__init__": [
+      "self",
+      "results",
+      "name_col",
+      "annotated_results"
+    ],
+    "annotated_results": [
+      "self"
+    ],
+    "_initiate_buttons": [
+      "self"
+    ],
+    "_no_match": [
+      "self",
+      "button"
+    ],
+    "_possible_names": [
+      "self"
+    ],
+    "_skip": [
+      "self",
+      "button"
+    ],
+    "_save_result": [
+      "self",
+      "button"
+    ],
+    "_add_button": [
+      "self",
+      "buttons",
+      "name"
+    ],
+    "_show_data": [
+      "self",
+      "buttons"
+    ],
+    "_stop": [
+      "self",
+      "button"
+    ],
+    "_define_possible_nodes": [
+      "self",
+      "selection"
+    ],
+    "start": [
+      "self",
+      "selection",
+      "fresh_start"
+    ]
+  },
+  "make_distance_metrics": [
+    "indel",
+    "discounted_levenshtein",
+    "levenshtein",
+    "jaro_winkler",
+    "tichy",
+    "cormodel_z",
+    "iterative_sub_string",
+    "baulieu_xiii",
+    "clement",
+    "dice_asymmetrici",
+    "kuhns_iii",
+    "overlap",
+    "pearson_ii",
+    "weighted_jaccard",
+    "warrens_iv",
+    "bag",
+    "rouge_l",
+    "token_distance",
+    "ratcliff_obershelp",
+    "ncd_bz2",
+    "fuzzy_wuzzy_partial_string",
+    "fuzzy_wuzzy_token_sort",
+    "fuzzy_wuzzy_token_set",
+    "editex",
+    "typo",
+    "lig_3",
+    "ssk",
+    "refined_soundex",
+    "double_metaphone"
+  ],
+  "sklearnModel": {
+    "fit": [
+      "self",
+      "X",
+      "y"
+    ],
+    "predict": [
+      "self",
+      "X"
+    ]
+  },
+  "scaler": {
+    "fit": [
+      "self",
+      "X",
+      "y"
+    ],
+    "transform": [
+      "self",
+      "X"
+    ]
+  },
+  "NameMatchingOptimiser": {
+    "__init__": [
+      "self",
+      "df_matching_data",
+      "matching_col",
+      "df_to_be_matched",
+      "to_be_matched_col",
+      "annotated_data",
+      "name_matcher"
+    ],
+    "_perform_name_matching": [
+      "self",
+      "metrics"
+    ],
+    "_annotate": [
+      "self",
+      "matches",
+      "lower_bound"
+    ],
+    "_annotate_matches": [
+      "self",
+      "data"
+    ],
+    "split_list_random_uneven": [
+      "lst",
+      "x"
+    ],
+    "cross_validate_model": [
+      "self",
+      "model_name",
+      "threshold",
+      "n_folds"
+    ],
+    "_preselect_matches": [
+      "self",
+      "matches",
+      "lower_bound"
+    ],
+    "annotate": [
+      "self",
+      "lower_bound",
+      "data_percentage",
+      "max_matches"
+    ],
+    "export_annotation": [
+      "self",
+      "file_name"
+    ],
+    "import_annotation": [
+      "self",
+      "annotations"
+    ],
+    "plot_curves": [
+      "self",
+      "absolute",
+      "return_data"
+    ],
+    "_preprocess_fit_annotations": [
+      "self"
+    ],
+    "_generate_balanced_split": [
+      "self",
+      "train_split",
+      "train_idx",
+      "scaler_instance"
+    ],
+    "fit": [
+      "self",
+      "model",
+      "dataScaler",
+      "model_args",
+      "print_results",
+      "train_split",
+      "preprocess"
+    ],
+    "predict": [
+      "self",
+      "threshold"
+    ]
+  },
+  "NameMatcher": {
+    "__init__": [
+      "self",
+      "ngrams",
+      "top_n",
+      "low_memory",
+      "number_of_rows",
+      "number_of_matches",
+      "lowercase",
+      "non_word_characters",
+      "remove_ascii",
+      "punctuations",
+      "legal_suffixes",
+      "preprocess_legal",
+      "delete_legal",
+      "make_abbreviations",
+      "common_words",
+      "cut_off_no_scoring_words",
+      "preprocess_split",
+      "begin_end_legal_pre_suffix",
+      "verbose",
+      "distance_metrics",
+      "row_numbers",
+      "return_algorithms_score",
+      "save_intermediate_results",
+      "load_intermediate_results",
+      "intermediate_results_name"
+    ],
+    "_process_punctuations_depricated": [
+      "self",
+      "non_word_characters",
+      "punctuations"
+    ],
+    "_generate_combinations": [
+      "self",
+      "list_a",
+      "list_b",
+      "ind",
+      "result"
+    ],
+    "_replace_substring": [
+      "self",
+      "name",
+      "abbreviations",
+      "long_names",
+      "begin_end",
+      "delete_names"
+    ],
+    "_replace_common_strings": [
+      "self",
+      "data",
+      "column_name"
+    ],
+    "_replace_legal_pre_suffixes_with_abbreviations": [
+      "self",
+      "data",
+      "column_name"
+    ],
+    "_combine_legal_words": [
+      "self",
+      "abbr",
+      "lgl"
+    ],
+    "set_distance_metrics": [
+      "self",
+      "metrics"
+    ],
+    "get_available_distance_metrics": [],
+    "_select_top_words": [
+      "self",
+      "word",
+      "word_counts",
+      "occurrence_count"
+    ],
+    "_preprocess_reduce": [
+      "self",
+      "to_be_matched",
+      "occurrence_count"
+    ],
+    "load_and_process_master_data": [
+      "self",
+      "column",
+      "df_matching_data",
+      "start_processing",
+      "transform"
+    ],
+    "_process_matching_data": [
+      "self",
+      "transform"
+    ],
+    "match_names": [
+      "self",
+      "to_be_matched",
+      "column_matching"
+    ],
+    "fuzzy_matches": [
+      "self",
+      "possible_matches",
+      "to_be_matched"
+    ],
+    "_score_matches": [
+      "self",
+      "to_be_matched_instance",
+      "possible_matches"
+    ],
+    "_rate_matches": [
+      "self",
+      "match_score"
+    ],
+    "_get_alternative_names": [
+      "self",
+      "match"
+    ],
+    "_process_words": [
+      "self",
+      "org_name",
+      "alt_names"
+    ],
+    "_adjust_scores": [
+      "self",
+      "match_score",
+      "match"
+    ],
+    "postprocess": [
+      "self",
+      "match"
+    ],
+    "_vectorise_data": [
+      "self",
+      "transform"
+    ],
+    "transform_data": [
+      "self"
+    ],
+    "_search_for_possible_matches": [
+      "self",
+      "to_be_matched"
+    ],
+    "unicode_to_ascii": [
+      "self",
+      "text"
+    ],
+    "preprocess": [
+      "self",
+      "df",
+      "column_name",
+      "original_name"
+    ],
+    "_preprocess_word_list": [
+      "self",
+      "terms"
+    ],
+    "_process_legal_words": [
+      "self",
+      "word_set"
+    ],
+    "_process_common_words": [
+      "self",
+      "word_set",
+      "cut_off"
+    ],
+    "_make_no_scoring_words": [
+      "self",
+      "indicator",
+      "word_set",
+      "cut_off"
+    ]
+  },
+  "test_perform_name_matching": [
+    "optimiser"
+  ],
+  "test_annotate_matches": [
+    "optimiser"
+  ],
+  "test_split_list_random_uneven": [],
+  "test_preselect_matches": [
+    "optimiser"
+  ],
+  "test_export_import_annotation": [
+    "optimiser",
+    "tmp_path"
+  ],
+  "test_cross_validate_model": [
+    "optimiser",
+    "annotated_data"
+  ],
+  "test_cross_validate_trains_on_complementary_folds": [
+    "optimiser",
+    "monkeypatch"
+  ],
+  "test_cross_validate_rejects_invalid_fold_count": [
+    "optimiser"
+  ],
+  "test_balanced_split_fits_scaler_on_training_data": [
+    "optimiser"
+  ],
+  "test_predict": [
+    "optimiser",
+    "annotated_data"
+  ],
+  "test_plot_curves": [
+    "optimiser",
+    "annotated_data"
+  ],
+  "test_integration_workflow": [
+    "optimiser",
+    "annotated_data"
+  ],
+  "set_matplotlib_backend": [],
+  "name_match": [],
+  "original_name": [],
+  "adjusted_name": [],
+  "sample_results": [],
+  "annotator": [
+    "sample_results"
+  ],
+  "optimiser": [
+    "name_match",
+    "original_name"
+  ],
+  "annotated_data": [],
+  "words": [],
+  "mat_a": [],
+  "mat_b": [],
+  "mat_c": [],
+  "mat_d": [],
+  "assert_values_in_array": [
+    "A1",
+    "A2"
+  ],
+  "result_a_b": [],
+  "result_a_b1": [],
+  "result_a_b3": [],
+  "result_c_d": [],
+  "result_c_d1": [],
+  "result_c_d4": [],
+  "test_cosine_standard": [
+    "top_n",
+    "num_rows",
+    "mat_a",
+    "mat_b",
+    "result_a_b"
+  ],
+  "test_cosine_standard1": [
+    "top_n",
+    "num_rows",
+    "mat_a",
+    "mat_b",
+    "result_a_b1"
+  ],
+  "test_cosine_standard3": [
+    "top_n",
+    "num_rows",
+    "mat_a",
+    "mat_b",
+    "result_a_b3"
+  ],
+  "test_cosine_standard_c": [
+    "top_n",
+    "num_rows",
+    "mat_c",
+    "mat_d",
+    "result_c_d"
+  ],
+  "test_cosine_standard_c4": [
+    "top_n",
+    "num_rows",
+    "mat_c",
+    "mat_d",
+    "result_c_d4"
+  ],
+  "test_cosine_standard_c1": [
+    "top_n",
+    "num_rows",
+    "mat_c",
+    "mat_d",
+    "result_c_d1"
+  ],
+  "test_cosine_top_n_cd_low_memory": [
+    "row",
+    "mat_a",
+    "mat_b"
+  ],
+  "test_cosine_top_n_cd": [
+    "top_n",
+    "num_rows",
+    "row",
+    "mat_c",
+    "mat_d"
+  ],
+  "test_cosine_top_n_ab": [
+    "top_n",
+    "num_rows",
+    "row",
+    "mat_a",
+    "mat_b"
+  ],
+  "test_indel": [
+    "string_a",
+    "string_b",
+    "expected"
+  ],
+  "test_discounted_levenshtein": [
+    "string_a",
+    "string_b",
+    "expected"
+  ],
+  "test_tichy": [
+    "string_a",
+    "string_b",
+    "expected"
+  ],
+  "test_cormodeL_z": [
+    "string_a",
+    "string_b",
+    "expected"
+  ],
+  "test_iterative_sub_string": [
+    "string_a",
+    "string_b",
+    "expected"
+  ],
+  "test_baulieu_xiii": [
+    "string_a",
+    "string_b",
+    "expected"
+  ],
+  "test_clement": [
+    "string_a",
+    "string_b",
+    "expected"
+  ],
+  "test_dice_asymmetricI": [
+    "string_a",
+    "string_b",
+    "expected"
+  ],
+  "test_kuhns_iii": [
+    "string_a",
+    "string_b",
+    "expected"
+  ],
+  "test_overlap": [
+    "string_a",
+    "string_b",
+    "expected"
+  ],
+  "test_pearson_ii": [
+    "string_a",
+    "string_b",
+    "expected"
+  ],
+  "test_weighted_jaccard": [
+    "string_a",
+    "string_b",
+    "expected"
+  ],
+  "test_warrens_iv": [
+    "string_a",
+    "string_b",
+    "expected"
+  ],
+  "test_bag": [
+    "string_a",
+    "string_b",
+    "expected"
+  ],
+  "test_rouge_l": [
+    "string_a",
+    "string_b",
+    "expected"
+  ],
+  "test_ratcliff_obershelp": [
+    "string_a",
+    "string_b",
+    "expected"
+  ],
+  "test_ncd_bz2n": [
+    "string_a",
+    "string_b",
+    "expected"
+  ],
+  "test_fuzzy_wuzzy_partial_string": [
+    "string_a",
+    "string_b",
+    "expected"
+  ],
+  "test_fuzzy_wuzzy_token_sort": [
+    "string_a",
+    "string_b",
+    "expected"
+  ],
+  "test_fuzzy_wuzzy_token_set": [
+    "string_a",
+    "string_b",
+    "expected"
+  ],
+  "test_editexn": [
+    "string_a",
+    "string_b",
+    "expected"
+  ],
+  "test_typo": [
+    "string_a",
+    "string_b",
+    "expected"
+  ],
+  "test_lig_3": [
+    "string_a",
+    "string_b",
+    "expected"
+  ],
+  "test_ssk": [
+    "string_a",
+    "string_b",
+    "expected"
+  ],
+  "test_refined_soundex": [
+    "string_a",
+    "string_b",
+    "expected"
+  ],
+  "test_double_metaphone": [
+    "string_a",
+    "string_b",
+    "expected"
+  ],
+  "test_match_names_check_data_errors": [
+    "adjusted_name",
+    "series",
+    "column",
+    "group_column"
+  ],
+  "test_match_names_check_data": [
+    "adjusted_name",
+    "series",
+    "column",
+    "group_column"
+  ],
+  "test_match_names_preprocess_data": [
+    "original_name",
+    "adjusted_name",
+    "case_sensitive",
+    "punctuation_sensitive",
+    "special_character_sensitive",
+    "result_1",
+    "result_2"
+  ],
+  "test_match_names_combine_data_1": [
+    "original_name",
+    "adjusted_name"
+  ],
+  "test_match_names_combine_data_2": [
+    "original_name",
+    "adjusted_name"
+  ],
+  "test_init_with_defaults": [
+    "sample_results"
+  ],
+  "test_init_with_annotated_results": [
+    "sample_results"
+  ],
+  "test_annotated_results_property": [
+    "annotator"
+  ],
+  "test_define_possible_nodes_random": [
+    "annotator"
+  ],
+  "test_possible_names": [
+    "annotator"
+  ],
+  "test_save_result": [
+    "annotator"
+  ],
+  "test_custom_name_column_is_used_for_annotation_and_display": [
+    "sample_results",
+    "monkeypatch"
+  ],
+  "test_start_rejects_unsupported_selection": [
+    "annotator"
+  ],
+  "test_no_match": [
+    "annotator"
+  ],
+  "test_add_button": [
+    "annotator"
+  ],
+  "test_start_fresh": [
+    "annotator"
+  ],
+  "test_skip_and_stop": [
+    "annotator"
+  ],
+  "test_full_annotation_session": [
+    "sample_results"
+  ],
+  "test_make_distance_metrics_error": [
+    "name_match",
+    "method"
+  ],
+  "test_make_distance_metrics": [
+    "name_match",
+    "method",
+    "result"
+  ],
+  "test_initialisation": [
+    "kwargs_str",
+    "result_1",
+    "result_2",
+    "result_3",
+    "result_4"
+  ],
+  "test_preprocess_reduce": [
+    "name_match",
+    "adjusted_name",
+    "occ",
+    "result_1",
+    "result_2",
+    "result_3",
+    "result_4",
+    "result_5"
+  ],
+  "test_load_and_process_master_data": [
+    "adjusted_name",
+    "col",
+    "start_pro",
+    "transform"
+  ],
+  "test_process_matching_data": [
+    "name_match",
+    "trans",
+    "common"
+  ],
+  "test_preprocess": [
+    "name_match",
+    "lower_case",
+    "non_word_characters",
+    "ascii",
+    "result_1",
+    "result_2",
+    "result_3"
+  ],
+  "test_transform_data": [
+    "name_match",
+    "low_memory",
+    "ngrams",
+    "result_1",
+    "result_2",
+    "result_3"
+  ],
+  "test_score_matches": [
+    "to_be_matched",
+    "possible_matches",
+    "metrics",
+    "result"
+  ],
+  "test_rate_matches": [
+    "number_of_matches",
+    "match_score",
+    "metrics",
+    "result"
+  ],
+  "test_vectorise_data": [
+    "name_match"
+  ],
+  "test_postprocess": [
+    "name_match",
+    "match",
+    "number_of_matches",
+    "word_set",
+    "score",
+    "result"
+  ],
+  "test_make_no_scoring_words": [
+    "name_match",
+    "indicator",
+    "non_word_characters",
+    "word_set",
+    "cut_off",
+    "result_1",
+    "result_2"
+  ],
+  "test_search_for_possible_matches_error": [
+    "adjusted_name"
+  ],
+  "test_search_for_possible_matches": [
+    "name_match",
+    "adjusted_name",
+    "top_n",
+    "low_memory",
+    "number_of_rows",
+    "result_1",
+    "result_2"
+  ],
+  "test_fuzzy_matches": [
+    "name_match",
+    "common_words",
+    "num_matches",
+    "possible_matches",
+    "matching_series",
+    "result_0",
+    "result_1"
+  ],
+  "test_do_name_matching_split": [
+    "name_match",
+    "adjusted_name"
+  ],
+  "test_do_name_matching_series": [
+    "name_match",
+    "adjusted_name"
+  ],
+  "test_do_name_matching_full": [
+    "name_match",
+    "adjusted_name"
+  ],
+  "test_do_name_matching_switch_index": [
+    "original_name",
+    "old_index",
+    "new_index",
+    "adjust",
+    "size_a",
+    "size_b",
+    "match_result"
+  ],
+  "test_do_name_matching_error": [
+    "adjusted_name"
+  ],
+  "test_do_name_matching_print": [
+    "capfd",
+    "name_match",
+    "adjusted_name",
+    "verbose"
+  ],
+  "test_select_top_words": [
+    "word",
+    "words",
+    "occurrence_count",
+    "result"
+  ],
+  "test_get_alternative_names": [
+    "match",
+    "num_of_matches",
+    "result"
+  ],
+  "test_preprocess_word_list": [
+    "preprocess_punctuations",
+    "output",
+    "input",
+    "x"
+  ],
+  "test_adjust_scores": [
+    "num_matches",
+    "match_score",
+    "match",
+    "result",
+    "y"
+  ],
+  "test_process_words": [
+    "words",
+    "string",
+    "stringlist",
+    "result_1",
+    "result_2",
+    "y"
+  ],
+  "test_process_common_words": [
+    "name_match",
+    "word_set",
+    "cut_off",
+    "result_1",
+    "result_2"
+  ],
+  "test_common_words_type_error": [
+    "common_words",
+    "error"
+  ],
+  "test_common_words_addition": [
+    "original_name",
+    "common_words",
+    "legal_suffixes"
+  ],
+  "test_process_legal_words": [
+    "word_set",
+    "result_1",
+    "result_2",
+    "result_3"
+  ],
+  "TRANSLITERATION_MAP": [],
+  "__all__": [],
+  "CharacterTokenizer": {
+    "__init__": [
+      "self",
+      "scaler"
+    ],
+    "tokenize": [
+      "self",
+      "string"
+    ]
+  },
+  "_Phonetic": {
+    "_uc_set": [],
+    "_lc_set": [],
+    "_uc_v_set": [],
+    "_lc_v_set": [],
+    "_uc_vy_set": [],
+    "_lc_vy_set": [],
+    "_delete_consecutive_repeats": [
+      "self",
+      "word"
+    ],
+    "encode": [
+      "self",
+      "word"
+    ],
+    "encode_alpha": [
+      "self",
+      "word"
+    ]
+  },
+  "RegexpTokenizer": {
+    "__init__": [
+      "self",
+      "scaler",
+      "regexp",
+      "flags"
+    ],
+    "tokenize": [
+      "self",
+      "string"
+    ]
+  },
+  "Typo": {
+    "_keyboard": [],
+    "__init__": [
+      "self",
+      "metric",
+      "cost",
+      "layout",
+      "failsafe"
+    ],
+    "dist_abs": [
+      "self",
+      "src",
+      "tar"
+    ],
+    "dist": [
+      "self",
+      "src",
+      "tar"
+    ]
+  },
+  "KuhnsIII": {
+    "__init__": [
+      "self",
+      "alphabet",
+      "tokenizer",
+      "intersection_type"
+    ],
+    "corr": [
+      "self",
+      "src",
+      "tar"
+    ],
+    "sim": [
+      "self",
+      "src",
+      "tar"
+    ]
+  },
+  "RefinedSoundex": {
+    "_trans": [],
+    "_alphabetic": [],
+    "__init__": [
+      "self",
+      "max_length",
+      "zero_pad",
+      "retain_vowels"
+    ],
+    "encode_alpha": [
+      "self",
+      "word"
+    ],
+    "encode": [
+      "self",
+      "word"
+    ]
+  },
+  "_Distance": {
+    "__init__": [
+      "self"
+    ],
+    "set_params": [
+      "self"
+    ],
+    "sim": [
+      "self",
+      "src",
+      "tar"
+    ],
+    "dist": [
+      "self",
+      "src",
+      "tar"
+    ],
+    "dist_abs": [
+      "self",
+      "src",
+      "tar"
+    ]
+  },
+  "Editex": {
+    "_letter_groups": [],
+    "_all_letters": [],
+    "__init__": [
+      "self",
+      "cost",
+      "local",
+      "taper"
+    ],
+    "_taper": [
+      "self",
+      "pos",
+      "length"
+    ],
+    "dist_abs": [
+      "self",
+      "src",
+      "tar"
+    ],
+    "dist": [
+      "self",
+      "src",
+      "tar"
+    ]
+  },
+  "WeightedJaccard": {
+    "__init__": [
+      "self",
+      "tokenizer",
+      "intersection_type",
+      "weight"
+    ],
+    "sim": [
+      "self",
+      "src",
+      "tar"
+    ]
+  },
+  "QSkipgrams": {
+    "__init__": [
+      "self",
+      "qval",
+      "start_stop",
+      "scaler",
+      "ssk_lambda"
+    ],
+    "tokenize": [
+      "self",
+      "string"
+    ]
+  },
+  "_Tokenizer": {
+    "__init__": [
+      "self",
+      "scaler"
+    ],
+    "tokenize": [
+      "self",
+      "string"
+    ],
+    "_scale_and_counterize": [
+      "self"
+    ],
+    "count": [
+      "self"
+    ],
+    "count_unique": [
+      "self"
+    ],
+    "get_counter": [
+      "self"
+    ],
+    "get_set": [
+      "self"
+    ],
+    "get_list": [
+      "self"
+    ],
+    "__repr__": [
+      "self"
+    ],
+    "__and__": [
+      "self",
+      "other"
+    ],
+    "__add__": [
+      "self",
+      "other"
+    ],
+    "__sub__": [
+      "self",
+      "other"
+    ]
+  },
+  "IterativeSubString": {
+    "__init__": [
+      "self",
+      "hamacher",
+      "normalize_strings"
+    ],
+    "corr": [
+      "self",
+      "src",
+      "tar"
+    ],
+    "sim": [
+      "self",
+      "src",
+      "tar"
+    ]
+  },
+  "RatcliffObershelp": {
+    "sim": [
+      "self",
+      "src",
+      "tar"
+    ]
+  },
+  "DamerauLevenshtein": {
+    "__init__": [
+      "self",
+      "cost",
+      "normalizer"
+    ],
+    "dist_abs": [
+      "self",
+      "src",
+      "tar"
+    ],
+    "dist": [
+      "self",
+      "src",
+      "tar"
+    ]
+  },
+  "DiscountedLevenshtein": {
+    "__init__": [
+      "self",
+      "mode",
+      "normalizer",
+      "discount_from",
+      "discount_func",
+      "vowels"
+    ],
+    "_log_discount": [
+      "discounts"
+    ],
+    "_exp_discount": [
+      "discounts"
+    ],
+    "_alignment_matrix": [
+      "self",
+      "src",
+      "tar",
+      "backtrace"
+    ],
+    "dist_abs": [
+      "self",
+      "src",
+      "tar"
+    ],
+    "dist": [
+      "self",
+      "src",
+      "tar"
+    ]
+  },
+  "BaulieuXIII": {
+    "__init__": [
+      "self",
+      "alphabet",
+      "tokenizer",
+      "intersection_type"
+    ],
+    "dist": [
+      "self",
+      "src",
+      "tar"
+    ]
+  },
+  "PearsonII": {
+    "__init__": [
+      "self",
+      "alphabet",
+      "tokenizer",
+      "intersection_type"
+    ],
+    "sim_score": [
+      "self",
+      "src",
+      "tar"
+    ],
+    "sim": [
+      "self",
+      "src",
+      "tar"
+    ]
+  },
+  "WarrensIV": {
+    "__init__": [
+      "self",
+      "alphabet",
+      "tokenizer",
+      "intersection_type"
+    ],
+    "sim": [
+      "self",
+      "src",
+      "tar"
+    ]
+  },
+  "NCDbz2": {
+    "_level": [],
+    "__init__": [
+      "self",
+      "level"
+    ],
+    "dist": [
+      "self",
+      "src",
+      "tar"
+    ]
+  },
+  "CormodeLZ": {
+    "__init__": [
+      "self"
+    ],
+    "dist_abs": [
+      "self",
+      "src",
+      "tar"
+    ],
+    "dist": [
+      "self",
+      "src",
+      "tar"
+    ]
+  },
+  "RougeL": {
+    "_lcs": [],
+    "__init__": [
+      "self"
+    ],
+    "sim": [
+      "self",
+      "src",
+      "tar",
+      "beta"
+    ]
+  },
+  "Tichy": {
+    "__init__": [
+      "self",
+      "cost"
+    ],
+    "dist_abs": [
+      "self",
+      "src",
+      "tar"
+    ],
+    "dist": [
+      "self",
+      "src",
+      "tar"
+    ]
+  },
+  "LCSseq": {
+    "__init__": [
+      "self",
+      "normalizer"
+    ],
+    "lcsseq": [
+      "self",
+      "src",
+      "tar"
+    ],
+    "sim": [
+      "self",
+      "src",
+      "tar"
+    ]
+  },
+  "FuzzyWuzzyTokenSet": {
+    "__init__": [
+      "self",
+      "tokenizer"
+    ],
+    "sim": [
+      "self",
+      "src",
+      "tar"
+    ]
+  },
+  "Overlap": {
+    "__init__": [
+      "self",
+      "tokenizer",
+      "intersection_type"
+    ],
+    "sim": [
+      "self",
+      "src",
+      "tar"
+    ]
+  },
+  "QGrams": {
+    "__init__": [
+      "self",
+      "qval",
+      "start_stop",
+      "skip",
+      "scaler"
+    ],
+    "tokenize": [
+      "self",
+      "string"
+    ]
+  },
+  "LIG3": {
+    "_lev": [],
+    "sim": [
+      "self",
+      "src",
+      "tar"
+    ]
+  },
+  "DoubleMetaphone": {
+    "__init__": [
+      "self",
+      "max_length"
+    ],
+    "encode_alpha": [
+      "self",
+      "word"
+    ],
+    "encode": [
+      "self",
+      "word"
+    ]
+  },
+  "DiceAsymmetricI": {
+    "__init__": [
+      "self",
+      "tokenizer",
+      "intersection_type"
+    ],
+    "sim": [
+      "self",
+      "src",
+      "tar"
+    ]
+  },
+  "JaroWinkler": {
+    "__init__": [
+      "self",
+      "qval",
+      "mode",
+      "long_strings",
+      "boost_threshold",
+      "scaling_factor"
+    ],
+    "sim": [
+      "self",
+      "src",
+      "tar"
+    ]
+  },
+  "Bag": {
+    "__init__": [
+      "self",
+      "tokenizer",
+      "intersection_type"
+    ],
+    "dist_abs": [
+      "self",
+      "src",
+      "tar",
+      "normalized"
+    ],
+    "dist": [
+      "self",
+      "src",
+      "tar"
+    ]
+  },
+  "FuzzyWuzzyTokenSort": {
+    "__init__": [
+      "self",
+      "tokenizer"
+    ],
+    "sim": [
+      "self",
+      "src",
+      "tar"
+    ]
+  },
+  "WhitespaceTokenizer": {
+    "__init__": [
+      "self",
+      "scaler",
+      "flags"
+    ]
+  },
+  "SSK": {
+    "__init__": [
+      "self",
+      "tokenizer",
+      "ssk_lambda"
+    ],
+    "sim_score": [
+      "self",
+      "src",
+      "tar"
+    ],
+    "sim": [
+      "self",
+      "src",
+      "tar"
+    ]
+  },
+  "FuzzyWuzzyPartialString": {
+    "sim": [
+      "self",
+      "src",
+      "tar"
+    ]
+  },
+  "Indel": {
+    "__init__": [
+      "self"
+    ],
+    "dist": [
+      "self",
+      "src",
+      "tar"
+    ]
+  },
+  "Levenshtein": {
+    "__init__": [
+      "self",
+      "mode",
+      "cost",
+      "normalizer",
+      "taper"
+    ],
+    "sim": [
+      "self",
+      "src",
+      "tar"
+    ],
+    "_taper": [
+      "self",
+      "pos",
+      "length"
+    ],
+    "_alignment_matrix": [
+      "self",
+      "src",
+      "tar",
+      "backtrace"
+    ],
+    "alignment": [
+      "self",
+      "src",
+      "tar"
+    ],
+    "dist_abs": [
+      "self",
+      "src",
+      "tar"
+    ],
+    "dist": [
+      "self",
+      "src",
+      "tar"
+    ]
+  },
+  "_TokenDistance": {
+    "__init__": [
+      "self",
+      "tokenizer",
+      "intersection_type"
+    ],
+    "_norm_none": [
+      "x",
+      "_squares",
+      "_pop"
+    ],
+    "_norm_proportional": [
+      "x",
+      "_squares",
+      "pop"
+    ],
+    "_norm_log": [
+      "x",
+      "_squares",
+      "_pop"
+    ],
+    "_norm_exp": [
+      "x",
+      "_squares",
+      "_pop"
+    ],
+    "_norm_laplace": [
+      "x",
+      "squares",
+      "_pop"
+    ],
+    "_norm_inverse": [
+      "x",
+      "_squares",
+      "pop"
+    ],
+    "_norm_complement": [
+      "x",
+      "_squares",
+      "pop"
+    ],
+    "_tokenize": [
+      "self",
+      "src",
+      "tar"
+    ],
+    "_get_tokens": [
+      "self"
+    ],
+    "_src_card": [
+      "self"
+    ],
+    "_src_only": [
+      "self"
+    ],
+    "_src_only_card": [
+      "self"
+    ],
+    "_tar_card": [
+      "self"
+    ],
+    "_tar_only": [
+      "self"
+    ],
+    "_tar_only_card": [
+      "self"
+    ],
+    "_symmetric_difference": [
+      "self"
+    ],
+    "_symmetric_difference_card": [
+      "self"
+    ],
+    "_total": [
+      "self"
+    ],
+    "_total_card": [
+      "self"
+    ],
+    "_total_complement_card": [
+      "self"
+    ],
+    "_calc_population_card": [
+      "self"
+    ],
+    "_population_card": [
+      "self"
+    ],
+    "_population_unique_card": [
+      "self"
+    ],
+    "_union": [
+      "self"
+    ],
+    "_union_card": [
+      "self"
+    ],
+    "_difference": [
+      "self"
+    ],
+    "_crisp_intersection": [
+      "self"
+    ],
+    "_soft_intersection": [
+      "self"
+    ],
+    "_fuzzy_intersection": [
+      "self"
+    ],
+    "_group_linkage_intersection": [
+      "self"
+    ],
+    "_intersection_card": [
+      "self"
+    ],
+    "_intersection": [
+      "self"
+    ],
+    "sim": [
+      "self",
+      "src",
+      "tar"
+    ]
+  },
+  "PearsonChiSquared": {
+    "__init__": [
+      "self",
+      "alphabet",
+      "tokenizer",
+      "intersection_type"
+    ],
+    "sim_score": [
+      "self",
+      "src",
+      "tar"
+    ],
+    "corr": [
+      "self",
+      "src",
+      "tar"
+    ],
+    "sim": [
+      "self",
+      "src",
+      "tar"
+    ]
+  },
+  "Hamming": {
+    "__init__": [
+      "self",
+      "diff_lens"
+    ],
+    "dist_abs": [
+      "self",
+      "src",
+      "tar"
+    ],
+    "dist": [
+      "self",
+      "src",
+      "tar"
+    ]
+  },
+  "LCPrefix": {
+    "lcprefix": [
+      "self",
+      "strings"
+    ],
+    "dist_abs": [
+      "self",
+      "src",
+      "tar"
+    ],
+    "sim": [
+      "self",
+      "src",
+      "tar"
+    ]
+  },
+  "PhoneticDistance": {
+    "__init__": [
+      "self",
+      "transforms",
+      "metric",
+      "encode_alpha"
+    ],
+    "dist_abs": [
+      "self",
+      "src",
+      "tar"
+    ],
+    "dist": [
+      "self",
+      "src",
+      "tar"
+    ]
+  },
+  "Clement": {
+    "__init__": [
+      "self",
+      "alphabet",
+      "tokenizer",
+      "intersection_type"
+    ],
+    "sim": [
+      "self",
+      "src",
+      "tar"
+    ]
+  }
+}
