@@ -1,0 +1,439 @@
+{
+  "_build_parser": [],
+  "_format_mode": [
+    "mode"
+  ],
+  "_apply": [
+    "obj",
+    "args"
+  ],
+  "_parse": [
+    "parser",
+    "argv"
+  ],
+  "main": [
+    "argv"
+  ],
+  "_reason": [
+    "exc"
+  ],
+  "_process": [
+    "obj",
+    "args",
+    "report"
+  ],
+  "__version__": [],
+  "PathType": [],
+  "ModeType": [],
+  "ModeError": {},
+  "_ModeTypeError": {},
+  "HAS_PYWIN32": [],
+  "HAS_PWD": [],
+  "_fspath": [
+    "path"
+  ],
+  "_not_found": [
+    "path"
+  ],
+  "get_mode": [
+    "path",
+    "other_sid"
+  ],
+  "get_full_mode": [
+    "path",
+    "other_sid"
+  ],
+  "copy_mode": [
+    "src",
+    "dst",
+    "other_sid"
+  ],
+  "open_new": [
+    "path",
+    "mode",
+    "perms"
+  ],
+  "_check_open_args": [
+    "binary",
+    "buffering",
+    "encoding",
+    "errors",
+    "newline"
+  ],
+  "mkdir": [
+    "path",
+    "perms"
+  ],
+  "_XNU_O_SEARCH": [],
+  "_SEARCH_FLAGS": [],
+  "_open_search_dir": [
+    "path"
+  ],
+  "_posix_create_file": [
+    "path",
+    "mode",
+    "read",
+    "append"
+  ],
+  "_win_new_object_attributes": [
+    "mode",
+    "object_type",
+    "other_sid"
+  ],
+  "_win_create_file": [
+    "path",
+    "mode",
+    "other_sid",
+    "read",
+    "append"
+  ],
+  "set_mode": [
+    "path",
+    "mode",
+    "other_sid"
+  ],
+  "_resolve_mode": [
+    "path",
+    "mode",
+    "other_sid"
+  ],
+  "_resolve_mode_with": [
+    "mode",
+    "current_mode",
+    "is_dir"
+  ],
+  "SidConflictError": {},
+  "ErrorHandler": [],
+  "_is_junction": [
+    "path"
+  ],
+  "_is_link": [
+    "path"
+  ],
+  "_not_followed": [
+    "path",
+    "why"
+  ],
+  "_PathObj": {
+    "__init__": [
+      "self",
+      "path",
+      "obj_type"
+    ],
+    "get_full_mode": [
+      "self",
+      "other_sid"
+    ],
+    "set_mode": [
+      "self",
+      "mode",
+      "other_sid"
+    ]
+  },
+  "_PosixObj": {
+    "__init__": [
+      "self",
+      "path",
+      "obj_type"
+    ],
+    "get_full_mode": [
+      "self",
+      "other_sid"
+    ],
+    "set_mode": [
+      "self",
+      "mode",
+      "other_sid"
+    ],
+    "_chmod_o_path": [
+      "self",
+      "mode"
+    ]
+  },
+  "_PosixWalker": {
+    "__init__": [
+      "self",
+      "follow_symlinks"
+    ],
+    "open_dir": [
+      "self",
+      "parent",
+      "name"
+    ],
+    "close": [
+      "self",
+      "ref"
+    ],
+    "key": [
+      "self",
+      "ref"
+    ],
+    "dir_obj": [
+      "self",
+      "ref",
+      "path"
+    ],
+    "named_obj": [
+      "self",
+      "parent",
+      "name",
+      "path",
+      "obj_type"
+    ],
+    "is_link": [
+      "self",
+      "entry"
+    ]
+  },
+  "_win_open": [
+    "path",
+    "access"
+  ],
+  "_win_final_path": [
+    "path"
+  ],
+  "_WinObj": {
+    "__init__": [
+      "self",
+      "path",
+      "obj_type",
+      "root_final"
+    ],
+    "_open": [
+      "self",
+      "access"
+    ],
+    "get_full_mode": [
+      "self",
+      "other_sid"
+    ],
+    "set_mode": [
+      "self",
+      "mode",
+      "other_sid"
+    ]
+  },
+  "_WinWalker": {
+    "__init__": [
+      "self",
+      "follow_symlinks",
+      "root"
+    ],
+    "open_dir": [
+      "self",
+      "parent",
+      "name"
+    ],
+    "close": [
+      "self",
+      "ref"
+    ],
+    "key": [
+      "self",
+      "ref"
+    ],
+    "dir_obj": [
+      "self",
+      "ref",
+      "path"
+    ],
+    "named_obj": [
+      "self",
+      "parent",
+      "name",
+      "path",
+      "obj_type"
+    ],
+    "is_link": [
+      "self",
+      "entry"
+    ]
+  },
+  "_open_dir_or_repair": [
+    "walker",
+    "apply",
+    "parent",
+    "name",
+    "path"
+  ],
+  "_visit_entry": [
+    "walker",
+    "apply",
+    "dir_ref",
+    "entry",
+    "path"
+  ],
+  "_handle_error": [
+    "on_error",
+    "path",
+    "exc"
+  ],
+  "_make_walker": [
+    "root",
+    "follow_symlinks",
+    "fail"
+  ],
+  "_call": [
+    "fail",
+    "path",
+    "apply",
+    "obj"
+  ],
+  "_first_visit": [
+    "walker",
+    "dir_ref",
+    "visited",
+    "path",
+    "fail"
+  ],
+  "_close_pending": [
+    "walker",
+    "stack"
+  ],
+  "_walk_apply": [
+    "root",
+    "apply",
+    "follow_symlinks",
+    "on_error"
+  ],
+  "set_mode_recursive": [
+    "path",
+    "mode",
+    "dir_mode",
+    "other_sid"
+  ],
+  "get_effective_mode": [
+    "current_mode",
+    "symbolic",
+    "is_dir"
+  ],
+  "_action_bits": [
+    "mode",
+    "perms",
+    "is_dir"
+  ],
+  "_apply_clause": [
+    "mode",
+    "who",
+    "actions",
+    "is_dir"
+  ],
+  "mode_to_symbolic": [
+    "mode"
+  ],
+  "get_object_type": [
+    "path"
+  ],
+  "get_owner": [
+    "path"
+  ],
+  "get_group": [
+    "path"
+  ],
+  "_win_lookup_account": [
+    "sid"
+  ],
+  "win_get_owner_sid": [
+    "path"
+  ],
+  "win_get_group_sid": [
+    "path"
+  ],
+  "win_get_other_sid": [
+    "other_sid"
+  ],
+  "_win_system_sid": [],
+  "_win_check_other_sid": [
+    "sids",
+    "system_sid"
+  ],
+  "convert_win_to_stat": [
+    "win_perm",
+    "user_type",
+    "object_type"
+  ],
+  "convert_stat_to_win": [
+    "mode",
+    "user_type",
+    "object_type"
+  ],
+  "win_get_user_type": [
+    "sid",
+    "sids"
+  ],
+  "win_get_object_sids": [
+    "path",
+    "other_sid"
+  ],
+  "_win_resolve": [
+    "path"
+  ],
+  "win_get_permissions": [
+    "path",
+    "other_sid"
+  ],
+  "_win_get_permissions": [
+    "path",
+    "object_type",
+    "other_sid"
+  ],
+  "_win_roles": [
+    "sec_des",
+    "other_sid"
+  ],
+  "_win_ace": [
+    "dacl",
+    "index"
+  ],
+  "_win_broader_sids": [
+    "other"
+  ],
+  "_win_mode_from_sd": [
+    "sec_des",
+    "object_type",
+    "other_sid"
+  ],
+  "win_set_permissions": [
+    "path",
+    "mode",
+    "other_sid"
+  ],
+  "_win_set_permissions": [
+    "path",
+    "mode",
+    "object_type",
+    "other_sid"
+  ],
+  "_win_update_sd": [
+    "sec_des",
+    "mode",
+    "object_type",
+    "other_sid"
+  ],
+  "_win_sid_display": [
+    "sid"
+  ],
+  "print_win_inheritance": [
+    "flags"
+  ],
+  "print_mode_permissions": [
+    "mode"
+  ],
+  "print_win_ace_type": [
+    "ace_type"
+  ],
+  "print_win_permissions": [
+    "win_perm",
+    "flags",
+    "object_type"
+  ],
+  "print_obj_info": [
+    "path"
+  ],
+  "_print_win_obj_info": [
+    "path"
+  ],
+  "perm_test": [
+    "mode"
+  ]
+}

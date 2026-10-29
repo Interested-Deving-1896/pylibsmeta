@@ -1,0 +1,241 @@
+{
+  "signed_edt": [
+    "binary_input_array",
+    "spacing"
+  ],
+  "slice_interpolation_axial": [
+    "binary_input_segmentation"
+  ],
+  "generate_ball": [
+    "radius",
+    "spacing",
+    "dtype"
+  ],
+  "label_with_component_sizes": [
+    "binary_image",
+    "connectivity"
+  ],
+  "cc3d_label_with_component_sizes": [
+    "binary_image",
+    "connectivity"
+  ],
+  "remove_all_but_largest_component": [
+    "binary_image",
+    "connectivity"
+  ],
+  "remove_all_but_largest_component_cc3d": [
+    "binary_image",
+    "connectivity"
+  ],
+  "generic_filter_components": [
+    "binary_image",
+    "filter_fn",
+    "connectivity"
+  ],
+  "generic_filter_components_cc3d": [
+    "binary_image",
+    "filter_fn",
+    "connectivity"
+  ],
+  "remove_components": [
+    "binary_image",
+    "threshold_size_in_pixels",
+    "threshold_type",
+    "connectivity",
+    "verbose"
+  ],
+  "remove_components_cc3d": [
+    "binary_image",
+    "threshold_size_in_pixels",
+    "threshold_type",
+    "connectivity",
+    "verbose"
+  ],
+  "gpu_binary_dilation": [
+    "binary_array",
+    "selem"
+  ],
+  "gpu_binary_erosion": [
+    "binary_array",
+    "selem"
+  ],
+  "gpu_binary_opening": [
+    "binary_array",
+    "selem"
+  ],
+  "gpu_binary_closing": [
+    "binary_array",
+    "selem"
+  ],
+  "match_instances_dice": [
+    "instances_gt",
+    "instances_pred",
+    "dice_cutoff",
+    "consume_instances"
+  ],
+  "compute_all_matches": [
+    "files_gt",
+    "files_pred",
+    "load_fn",
+    "dice_cutoff",
+    "consume_instances",
+    "num_processes"
+  ],
+  "_load_compute_matches": [
+    "image_gt",
+    "image_pred",
+    "load_fn",
+    "dice_cutoff",
+    "consume_instances"
+  ],
+  "BORDER_LABEL": [],
+  "CENTER_LABEL": [],
+  "_internal_convert_semantic_to_instance_mp": [
+    "cropped_core_instances",
+    "cropped_border",
+    "spacing"
+  ],
+  "convert_semantic_to_instanceseg_mp": [
+    "arr",
+    "spacing",
+    "small_center_threshold",
+    "isolated_border_as_separate_instance_threshold",
+    "num_processes"
+  ],
+  "convert_semantic_to_instanceseg": [
+    "arr",
+    "spacing",
+    "small_center_threshold",
+    "isolated_border_as_separate_instance_threshold"
+  ],
+  "_internal_postprocess_instance_segmentation_mp": [
+    "instance_mask",
+    "cropped_instance"
+  ],
+  "postprocess_instance_segmentation_mp": [
+    "instance_segmentation",
+    "num_processes"
+  ],
+  "postprocess_instance_segmentation": [
+    "instance_segmentation"
+  ],
+  "convert_instanceseg_to_semantic": [
+    "instance_segmentation",
+    "spacing",
+    "border_thickness"
+  ],
+  "convert_instanceseg_to_semantic_patched": [
+    "instance_segmentation",
+    "spacing",
+    "border_thickness"
+  ],
+  "_internal_convert_instanceseg_to_semantic_patched_mp": [
+    "instance_int",
+    "selem",
+    "cropped_is"
+  ],
+  "convert_instanceseg_to_semantic_patched_mp": [
+    "instance_segmentation",
+    "spacing",
+    "border_thickness",
+    "num_processes"
+  ],
+  "main_instance_to_sem": [],
+  "main_sem_to_instance": [],
+  "maybe_resample_on_gpu": [
+    "data",
+    "target_shape",
+    "return_type",
+    "compute_device",
+    "result_device",
+    "compute_precision",
+    "fallback_compute_device",
+    "fallback_result_device",
+    "fallback_compute_precision",
+    "verbose"
+  ],
+  "slicer": [
+    "arr",
+    "slices"
+  ],
+  "ptqdm": [
+    "function",
+    "iterable",
+    "processes",
+    "zipped",
+    "chunksize",
+    "desc",
+    "disable"
+  ],
+  "wrapper": [
+    "enum_iterable",
+    "function",
+    "zipped"
+  ],
+  "test_same_generic": [
+    "file_1",
+    "file_2",
+    "load_fn",
+    "verbose"
+  ],
+  "test_all_images_in_folders_same_mp": [
+    "folder_1",
+    "folder_2",
+    "load_fn",
+    "suffix",
+    "num_processes",
+    "verbose",
+    "strict"
+  ],
+  "_load_sitk": [
+    "file"
+  ],
+  "_load_npz_nnunet": [
+    "file"
+  ],
+  "pad_nd_image": [
+    "image",
+    "new_shape",
+    "mode",
+    "kwargs",
+    "return_slicer",
+    "shape_must_be_divisible_by"
+  ],
+  "pad_bbox": [
+    "bounding_box",
+    "pad_amount",
+    "array_shape"
+  ],
+  "regionprops_bbox_to_proper_bbox": [
+    "regionprops_bbox"
+  ],
+  "bounding_box_to_slice": [
+    "bounding_box"
+  ],
+  "crop_to_bbox": [
+    "array",
+    "bounding_box"
+  ],
+  "get_bbox_from_mask": [
+    "mask"
+  ],
+  "int_bbox": [
+    "bbox"
+  ],
+  "get_bbox_from_mask_npwhere": [
+    "mask"
+  ],
+  "crop_and_pad_nd": [
+    "image",
+    "bbox",
+    "pad_value",
+    "pad_mode",
+    "allow_hacky_np_workaround_for_reflect",
+    "cast_cropped_to"
+  ],
+  "insert_crop_into_image": [
+    "image",
+    "crop",
+    "bbox"
+  ]
+}

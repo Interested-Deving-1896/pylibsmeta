@@ -1,0 +1,58 @@
+{
+  "JaegerPropagator": {
+    "TRACE_ID_KEY": [],
+    "BAGGAGE_PREFIX": [],
+    "DEBUG_FLAG": [],
+    "MAX_BAGGAGE_ENTRIES": [],
+    "MAX_BAGGAGE_ENTRY_BYTES": [],
+    "MAX_BAGGAGE_TOTAL_BYTES": [],
+    "extract": [
+      "self",
+      "carrier",
+      "context",
+      "getter"
+    ],
+    "inject": [
+      "self",
+      "carrier",
+      "context",
+      "setter"
+    ],
+    "fields": [
+      "self"
+    ],
+    "_extract_baggage": [
+      "self",
+      "getter",
+      "carrier",
+      "context"
+    ],
+    "_inject_baggage": [
+      "self",
+      "setter",
+      "carrier",
+      "baggage_entries"
+    ]
+  },
+  "_limit_baggage_bytes": [
+    "pairs",
+    "max_entry_bytes",
+    "max_total_bytes"
+  ],
+  "_format_uber_trace_id": [
+    "trace_id",
+    "span_id",
+    "parent_span_id",
+    "flags"
+  ],
+  "_extract_first_element": [
+    "items"
+  ],
+  "_parse_trace_id_header": [
+    "items"
+  ],
+  "_int_from_hex_str": [
+    "identifier"
+  ],
+  "__version__": []
+}
