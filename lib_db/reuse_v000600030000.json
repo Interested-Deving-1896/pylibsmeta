@@ -1,0 +1,1437 @@
+{
+  "_LOGGER": [],
+  "_LICENSING": [],
+  "FourDigitString": [],
+  "YearRangeSeparator": [],
+  "is_four_digits": [
+    "value"
+  ],
+  "validate_four_digits": [
+    "value"
+  ],
+  "_ANY_SEPARATOR": [],
+  "YEAR_RANGE_PATTERN": [],
+  "_YEAR_RANGE_PATTERN_ANONYMISED": [],
+  "_SYMBOL_OR_C_SUBPATTERN": [],
+  "_STRING_SUBPATTERN": [],
+  "COPYRIGHT_NOTICE_PATTERN": [],
+  "_YEARS_PATTERN": [],
+  "_COMMA_SPACE_PATTERN": [],
+  "_LOOKBEHINDS": [],
+  "_YEAR_RANGE_SPLIT_PATTERN": [],
+  "_WHITESPACE_PATTERN": [],
+  "CopyrightPrefix": {
+    "SPDX": [],
+    "SPDX_C": [],
+    "SPDX_C_LOWER": [],
+    "SPDX_SYMBOL": [],
+    "SPDX_STRING": [],
+    "SPDX_STRING_C": [],
+    "SPDX_STRING_C_LOWER": [],
+    "SPDX_STRING_SYMBOL": [],
+    "SNIPPET": [],
+    "SNIPPET_C": [],
+    "SNIPPET_C_LOWER": [],
+    "SNIPPET_SYMBOL": [],
+    "SNIPPET_STRING": [],
+    "SNIPPET_STRING_C": [],
+    "SNIPPET_STRING_C_LOWER": [],
+    "SNIPPET_STRING_SYMBOL": [],
+    "STRING": [],
+    "STRING_C": [],
+    "STRING_C_LOWER": [],
+    "STRING_SYMBOL": [],
+    "SYMBOL": [],
+    "lowercase_name": [
+      "name"
+    ],
+    "uppercase_name": [
+      "name"
+    ]
+  },
+  "YearRange": {
+    "__post_init__": [
+      "self"
+    ],
+    "from_string": [
+      "cls",
+      "value"
+    ],
+    "tuple_from_string": [
+      "cls",
+      "value"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "to_string": [
+      "self",
+      "original"
+    ],
+    "__lt__": [
+      "self",
+      "other"
+    ],
+    "compact": [
+      "cls",
+      "ranges"
+    ]
+  },
+  "_most_common_prefix": [
+    "copyright_notices"
+  ],
+  "CopyrightNotice": {
+    "from_string": [
+      "cls",
+      "value"
+    ],
+    "_detect_prefix": [
+      "prefix"
+    ],
+    "from_match": [
+      "cls",
+      "value"
+    ],
+    "merge": [
+      "cls",
+      "copyright_notices"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__lt__": [
+      "self",
+      "other"
+    ],
+    "to_string": [
+      "self",
+      "original"
+    ]
+  },
+  "SpdxExpression": {
+    "__post_init__": [
+      "self",
+      "text"
+    ],
+    "is_valid": [
+      "self"
+    ],
+    "_expression": [
+      "self"
+    ],
+    "licenses": [
+      "self"
+    ],
+    "combine": [
+      "cls",
+      "spdx_expressions"
+    ],
+    "simplify": [
+      "self"
+    ],
+    "__str__": [
+      "self"
+    ],
+    "__eq__": [
+      "self",
+      "other"
+    ],
+    "__lt__": [
+      "self",
+      "other"
+    ]
+  },
+  "SourceType": {
+    "DOT_LICENSE": [],
+    "FILE_HEADER": [],
+    "DEP5": [],
+    "REUSE_TOML": []
+  },
+  "ReuseInfo": {
+    "_check_nonexistent": [
+      "self"
+    ],
+    "copy": [
+      "self"
+    ],
+    "union": [
+      "self"
+    ],
+    "contains_copyright_or_licensing": [
+      "self"
+    ],
+    "contains_copyright_xor_licensing": [
+      "self"
+    ],
+    "contains_info": [
+      "self"
+    ],
+    "__bool__": [
+      "self"
+    ],
+    "__or__": [
+      "self",
+      "value"
+    ]
+  },
+  "GlobalLicensingFound": {},
+  "Project": {
+    "_default_vcs_strategy": [
+      "self"
+    ],
+    "_default_license_map": [
+      "self"
+    ],
+    "from_directory": [
+      "cls",
+      "root",
+      "include_submodules",
+      "include_meson_subprojects"
+    ],
+    "all_files": [
+      "self",
+      "directory"
+    ],
+    "subset_files": [
+      "self",
+      "files",
+      "directory"
+    ],
+    "reuse_info_of": [
+      "self",
+      "path"
+    ],
+    "relative_from_root": [
+      "self",
+      "path"
+    ],
+    "find_global_licensing": [
+      "cls",
+      "root",
+      "include_submodules",
+      "include_meson_subprojects",
+      "vcs_strategy"
+    ],
+    "_global_licensing_from_found": [
+      "found",
+      "root"
+    ],
+    "_identifier_of_license": [
+      "self",
+      "path"
+    ],
+    "_find_licenses": [
+      "self"
+    ],
+    "_detect_vcs_strategy": [
+      "cls",
+      "root"
+    ]
+  },
+  "ReuseError": {},
+  "SpdxIdentifierNotFoundError": {},
+  "GlobalLicensingParseError": {
+    "__init__": [
+      "self"
+    ]
+  },
+  "GlobalLicensingParseTypeError": {},
+  "GlobalLicensingParseValueError": {},
+  "GlobalLicensingConflictError": {},
+  "MissingReuseInfoError": {},
+  "CommentError": {},
+  "CommentCreateError": {},
+  "CommentParseError": {},
+  "CopyrightNoticeParseError": {},
+  "YearRangeParseError": {},
+  "NoEncodingModuleError": {},
+  "format_plain": [
+    "report"
+  ],
+  "format_json": [
+    "report"
+  ],
+  "_output_lines_dict": [
+    "format_dict"
+  ],
+  "_format_lines_subset_dict": [
+    "report"
+  ],
+  "format_lines_subset": [
+    "report"
+  ],
+  "format_lines": [
+    "report"
+  ],
+  "_T": [],
+  "REUSE_TOML_VERSION": [],
+  "_TOML_KEYS": [],
+  "PrecedenceType": {
+    "AGGREGATE": [],
+    "CLOSEST": [],
+    "OVERRIDE": []
+  },
+  "_CollectionOfValidator": {
+    "__call__": [
+      "self",
+      "instance",
+      "attribute",
+      "value"
+    ]
+  },
+  "_validate_collection_of": [
+    "collection_type",
+    "value_type",
+    "optional"
+  ],
+  "_InstanceOfValidator": {
+    "__call__": [
+      "self",
+      "inst",
+      "attr",
+      "value"
+    ]
+  },
+  "_instance_of": [
+    "type_"
+  ],
+  "_str_to_global_precedence": [
+    "value"
+  ],
+  "_to_set": [
+    "value"
+  ],
+  "_to_set_any": [
+    "value"
+  ],
+  "_to_set_of_expr": [
+    "value"
+  ],
+  "_to_set_of_notice": [
+    "value"
+  ],
+  "GlobalLicensing": {
+    "from_file": [
+      "cls",
+      "path",
+      "root"
+    ],
+    "reuse_info_of": [
+      "self",
+      "path"
+    ]
+  },
+  "ReuseDep5": {
+    "from_file": [
+      "cls",
+      "path",
+      "root"
+    ],
+    "reuse_info_of": [
+      "self",
+      "path"
+    ]
+  },
+  "AnnotationsItem": {
+    "__attrs_post_init__": [
+      "self"
+    ],
+    "copyright_notices": [
+      "self"
+    ],
+    "spdx_expressions": [
+      "self"
+    ],
+    "_paths_regex": [
+      "self"
+    ],
+    "from_dict": [
+      "cls",
+      "values"
+    ],
+    "matches": [
+      "self",
+      "path"
+    ]
+  },
+  "ReuseTOML": {
+    "from_dict": [
+      "cls",
+      "values",
+      "source",
+      "root"
+    ],
+    "from_toml": [
+      "cls",
+      "toml",
+      "source",
+      "root"
+    ],
+    "from_file": [
+      "cls",
+      "path",
+      "root"
+    ],
+    "find_annotations_item": [
+      "self",
+      "path"
+    ],
+    "reuse_info_of": [
+      "self",
+      "path"
+    ],
+    "directory": [
+      "self"
+    ]
+  },
+  "NestedReuseTOML": {
+    "from_file": [
+      "cls",
+      "path",
+      "root"
+    ],
+    "reuse_info_of": [
+      "self",
+      "path"
+    ],
+    "find_reuse_tomls": [
+      "cls",
+      "path",
+      "include_submodules",
+      "include_meson_subprojects",
+      "vcs_strategy"
+    ],
+    "_find_relevant_tomls": [
+      "self",
+      "path"
+    ],
+    "_find_relevant_tomls_and_items": [
+      "self",
+      "path"
+    ]
+  },
+  "_SPDX_REPOSITORY_BASE_URL": [],
+  "download_license": [
+    "spdx_identifier"
+  ],
+  "_path_to_license_file": [
+    "spdx_identifier",
+    "project"
+  ],
+  "put_license_in_file": [
+    "spdx_identifier",
+    "destination",
+    "source"
+  ],
+  "FOSSIL_EXE": [],
+  "GIT_EXE": [],
+  "HG_EXE": [],
+  "JUJUTSU_EXE": [],
+  "PIJUL_EXE": [],
+  "_find_ancestor": [
+    "directory",
+    "ancestor",
+    "is_directory"
+  ],
+  "VCSStrategy": {
+    "__init__": [
+      "self",
+      "root"
+    ],
+    "is_ignored": [
+      "self",
+      "path"
+    ],
+    "is_submodule": [
+      "self",
+      "path"
+    ],
+    "in_repo": [
+      "cls",
+      "directory"
+    ],
+    "find_root": [
+      "cls",
+      "cwd"
+    ]
+  },
+  "VCSStrategyNone": {
+    "is_ignored": [
+      "self",
+      "path"
+    ],
+    "is_submodule": [
+      "self",
+      "path"
+    ],
+    "in_repo": [
+      "cls",
+      "directory"
+    ],
+    "find_root": [
+      "cls",
+      "cwd"
+    ]
+  },
+  "VCSStrategyFossil": {
+    "EXE": [],
+    "__init__": [
+      "self",
+      "root"
+    ],
+    "_find_all_paths_not_ignored": [
+      "self"
+    ],
+    "is_ignored": [
+      "self",
+      "path"
+    ],
+    "is_submodule": [
+      "self",
+      "path"
+    ],
+    "in_repo": [
+      "cls",
+      "directory"
+    ],
+    "find_root": [
+      "cls",
+      "cwd"
+    ]
+  },
+  "VCSStrategyGit": {
+    "EXE": [],
+    "__init__": [
+      "self",
+      "root"
+    ],
+    "_find_all_ignored_files": [
+      "self"
+    ],
+    "_find_submodules": [
+      "self"
+    ],
+    "is_ignored": [
+      "self",
+      "path"
+    ],
+    "is_submodule": [
+      "self",
+      "path"
+    ],
+    "in_repo": [
+      "cls",
+      "directory"
+    ],
+    "find_root": [
+      "cls",
+      "cwd"
+    ]
+  },
+  "VCSStrategyHg": {
+    "EXE": [],
+    "__init__": [
+      "self",
+      "root"
+    ],
+    "_find_all_ignored_files": [
+      "self"
+    ],
+    "is_ignored": [
+      "self",
+      "path"
+    ],
+    "is_submodule": [
+      "self",
+      "path"
+    ],
+    "in_repo": [
+      "cls",
+      "directory"
+    ],
+    "find_root": [
+      "cls",
+      "cwd"
+    ]
+  },
+  "VCSStrategyJujutsu": {
+    "EXE": [],
+    "__init__": [
+      "self",
+      "root"
+    ],
+    "_find_all_tracked_files": [
+      "self"
+    ],
+    "_version": [
+      "self"
+    ],
+    "is_ignored": [
+      "self",
+      "path"
+    ],
+    "is_submodule": [
+      "self",
+      "path"
+    ],
+    "in_repo": [
+      "cls",
+      "directory"
+    ],
+    "find_root": [
+      "cls",
+      "cwd"
+    ]
+  },
+  "VCSStrategyPijul": {
+    "EXE": [],
+    "__init__": [
+      "self",
+      "root"
+    ],
+    "_find_all_tracked_files": [
+      "self"
+    ],
+    "is_ignored": [
+      "self",
+      "path"
+    ],
+    "is_submodule": [
+      "self",
+      "path"
+    ],
+    "in_repo": [
+      "cls",
+      "directory"
+    ],
+    "find_root": [
+      "cls",
+      "cwd"
+    ]
+  },
+  "all_vcs_strategies": [],
+  "find_root": [
+    "cwd"
+  ],
+  "_ENCODING_MODULES": [],
+  "_MAGIC": [],
+  "_detect_magic": [
+    "module"
+  ],
+  "get_encoding_module": [],
+  "_get_encoding_module_name": [],
+  "set_encoding_module": [
+    "name"
+  ],
+  "REUSE_IGNORE_START": [],
+  "REUSE_IGNORE_END": [],
+  "SPDX_SNIPPET_INDICATOR": [],
+  "_START_PATTERN": [],
+  "_END_PATTERN": [],
+  "_ALL_MATCH_PATTERN": [],
+  "_COPYRIGHT_NOTICE_PATTERN": [],
+  "_LICENSE_IDENTIFIER_PATTERN": [],
+  "_CONTRIBUTOR_PATTERN": [],
+  "_LICENSEREF_PATTERN": [],
+  "_NEWLINE_PATTERN": [],
+  "_LINE_ENDINGS": [],
+  "_LINE_ENDINGS_ASCII": [],
+  "_LINE_ENDINGS_UTF_16_LE": [],
+  "_LINE_ENDINGS_UTF_32_LE": [],
+  "_LINE_ENDING_ENCODINGS_ASCII": [],
+  "_LINE_ENDING_ENCODINGS_UTF_16_LE": [],
+  "_LINE_ENDING_ENCODINGS_UTF_32_LE": [],
+  "CHUNK_SIZE": [],
+  "LINE_SIZE": [],
+  "HEURISTICS_CHUNK_SIZE": [],
+  "FilterBlock": {},
+  "filter_ignore_block": [
+    "text",
+    "in_ignore_block"
+  ],
+  "extract_reuse_info": [
+    "text"
+  ],
+  "_read_chunks": [
+    "fp",
+    "chunk_size",
+    "line_size",
+    "newline"
+  ],
+  "_detect_encoding_magic": [
+    "mime_encoding",
+    "chunk"
+  ],
+  "_detect_encoding_python_magic": [
+    "chunk"
+  ],
+  "_detect_encoding_file_magic": [
+    "chunk"
+  ],
+  "_detect_encoding_charset_normalizer": [
+    "chunk"
+  ],
+  "_detect_encoding_chardet": [
+    "chunk"
+  ],
+  "detect_encoding": [
+    "chunk"
+  ],
+  "detect_newline": [
+    "chunk",
+    "encoding"
+  ],
+  "reuse_info_of_file": [
+    "fp",
+    "chunk_size",
+    "line_size"
+  ],
+  "contains_reuse_info": [
+    "text"
+  ],
+  "_IGNORE_DIR_PATTERNS": [],
+  "_IGNORE_MESON_PARENT_DIR_PATTERNS": [],
+  "_IGNORE_FILE_PATTERNS": [],
+  "_IGNORE_SPDX_PATTERNS": [],
+  "is_path_ignored": [
+    "path",
+    "subset_files",
+    "include_submodules",
+    "include_meson_subprojects",
+    "include_reuse_tomls",
+    "vcs_strategy"
+  ],
+  "iter_files": [
+    "directory",
+    "subset_files",
+    "include_submodules",
+    "include_meson_subprojects",
+    "include_reuse_tomls",
+    "vcs_strategy"
+  ],
+  "_ENV": [],
+  "DEFAULT_TEMPLATE": [],
+  "_TextSections": {},
+  "_FrontmatterCommentStyle": {
+    "SHORTHAND": [],
+    "SINGLE_LINE": [],
+    "INDENT_AFTER_SINGLE": [],
+    "SHEBANGS": []
+  },
+  "_create_new_header": [
+    "reuse_info",
+    "template",
+    "template_is_commented",
+    "style",
+    "force_multi"
+  ],
+  "create_header": [
+    "reuse_info",
+    "header",
+    "template",
+    "template_is_commented",
+    "style",
+    "force_multi",
+    "merge_copyrights",
+    "replace_license"
+  ],
+  "_indices_of_newlines": [
+    "text"
+  ],
+  "_find_first_spdx_comment": [
+    "text",
+    "style"
+  ],
+  "_extract_shebang": [
+    "prefix",
+    "text"
+  ],
+  "place_header": [
+    "header",
+    "before",
+    "after",
+    "has_existing_header",
+    "double_newline_after_before"
+  ],
+  "find_and_replace_header": [
+    "text",
+    "reuse_info",
+    "template",
+    "template_is_commented",
+    "style",
+    "force_multi",
+    "merge_copyrights",
+    "replace_license"
+  ],
+  "add_new_header": [
+    "text",
+    "reuse_info",
+    "template",
+    "template_is_commented",
+    "style",
+    "force_multi",
+    "merge_copyrights"
+  ],
+  "_BASE_DIR": [],
+  "_RESOURCES_DIR": [],
+  "_LICENSES": [],
+  "_EXCEPTIONS": [],
+  "_load_license_list": [
+    "file_name"
+  ],
+  "_load_exception_list": [
+    "file_name"
+  ],
+  "ALL_MAP": [],
+  "ALL_NON_DEPRECATED_MAP": [],
+  "_SINGLE_ASTERISK_PATTERN": [],
+  "_collapse_list_if_one_item": [
+    "sequence"
+  ],
+  "_header_from_dep5_header": [
+    "header"
+  ],
+  "_copyrights_from_paragraph": [
+    "paragraph"
+  ],
+  "_convert_asterisk": [
+    "path"
+  ],
+  "_paths_from_paragraph": [
+    "paragraph"
+  ],
+  "_comment_from_paragraph": [
+    "paragraph"
+  ],
+  "_annotations_from_paragraphs": [
+    "paragraphs"
+  ],
+  "toml_from_dep5": [
+    "dep5"
+  ],
+  "setup_logging": [
+    "level"
+  ],
+  "execute_command": [
+    "command",
+    "logger",
+    "cwd"
+  ],
+  "find_licenses_directory": [
+    "root"
+  ],
+  "determine_license_path": [
+    "path"
+  ],
+  "determine_license_suffix_path": [
+    "path"
+  ],
+  "_strip_plus_from_identifier": [
+    "spdx_identifier"
+  ],
+  "_add_plus_to_identifier": [
+    "spdx_identifier"
+  ],
+  "relative_from_root": [
+    "path",
+    "root"
+  ],
+  "_checksum": [
+    "path"
+  ],
+  "cleandoc_nl": [
+    "text"
+  ],
+  "StrPath": [],
+  "LINT_VERSION": [],
+  "ENABLE_PARALLEL": [],
+  "_MultiprocessingContainer": {
+    "__init__": [
+      "self",
+      "project",
+      "do_checksum",
+      "add_license_concluded"
+    ],
+    "__call__": [
+      "self",
+      "file_"
+    ]
+  },
+  "_MultiprocessingResult": {},
+  "_generate_file_reports": [
+    "project",
+    "do_checksum",
+    "subset_files",
+    "multiprocessing",
+    "add_license_concluded"
+  ],
+  "_process_error": [
+    "error",
+    "path"
+  ],
+  "ProjectReportSubsetProtocol": {
+    "missing_licenses": [
+      "self"
+    ],
+    "invalid_spdx_expressions": [
+      "self"
+    ],
+    "files_without_licenses": [
+      "self"
+    ],
+    "files_without_copyright": [
+      "self"
+    ],
+    "is_compliant": [
+      "self"
+    ]
+  },
+  "ProjectReport": {
+    "__init__": [
+      "self",
+      "do_checksum"
+    ],
+    "to_dict_lint": [
+      "self"
+    ],
+    "bill_of_materials": [
+      "self",
+      "creator_person",
+      "creator_organization"
+    ],
+    "generate": [
+      "cls",
+      "project",
+      "do_checksum",
+      "multiprocessing",
+      "add_license_concluded"
+    ],
+    "used_licenses": [
+      "self"
+    ],
+    "bad_licenses": [
+      "self"
+    ],
+    "deprecated_licenses": [
+      "self"
+    ],
+    "unused_licenses": [
+      "self"
+    ],
+    "missing_licenses": [
+      "self"
+    ],
+    "invalid_spdx_expressions": [
+      "self"
+    ],
+    "files_without_licenses": [
+      "self"
+    ],
+    "files_without_copyright": [
+      "self"
+    ],
+    "is_compliant": [
+      "self"
+    ],
+    "recommendations": [
+      "self"
+    ]
+  },
+  "ProjectSubsetReport": {
+    "__init__": [
+      "self"
+    ],
+    "generate": [
+      "cls",
+      "project",
+      "subset_files",
+      "multiprocessing"
+    ],
+    "missing_licenses": [
+      "self"
+    ],
+    "invalid_spdx_expressions": [
+      "self"
+    ],
+    "files_without_licenses": [
+      "self"
+    ],
+    "files_without_copyright": [
+      "self"
+    ],
+    "is_compliant": [
+      "self"
+    ]
+  },
+  "FileReport": {
+    "__init__": [
+      "self",
+      "name",
+      "path",
+      "do_checksum"
+    ],
+    "to_dict_lint": [
+      "self"
+    ],
+    "generate": [
+      "cls",
+      "project",
+      "path",
+      "do_checksum",
+      "add_license_concluded"
+    ],
+    "__hash__": [
+      "self"
+    ]
+  },
+  "format_creator": [
+    "creator"
+  ],
+  "_PACKAGE_PATH": [],
+  "_LOCALE_DIR": [],
+  "_": [],
+  "gettext": [],
+  "ngettext": [],
+  "pgettext": [],
+  "npgettext": [],
+  "find_template": [
+    "project",
+    "name"
+  ],
+  "add_header_to_file": [
+    "path",
+    "reuse_info",
+    "template",
+    "template_is_commented",
+    "style",
+    "encoding",
+    "newline",
+    "force_multi",
+    "skip_existing",
+    "skip_unrecognised",
+    "fallback_dot_license",
+    "merge_copyrights",
+    "replace",
+    "replace_license",
+    "out"
+  ],
+  "__author__": [],
+  "__email__": [],
+  "__license__": [],
+  "__REUSE_version__": [],
+  "MultiLineSegments": {},
+  "CommentStyle": {
+    "SHORTHAND": [],
+    "SINGLE_LINE": [],
+    "INDENT_AFTER_SINGLE": [],
+    "MULTI_LINE": [],
+    "INDENT_BEFORE_MIDDLE": [],
+    "INDENT_AFTER_MIDDLE": [],
+    "INDENT_BEFORE_END": [],
+    "can_handle_single": [
+      "cls"
+    ],
+    "can_handle_multi": [
+      "cls"
+    ],
+    "create_comment": [
+      "cls",
+      "text",
+      "force_multi"
+    ],
+    "_create_comment_single": [
+      "cls",
+      "text"
+    ],
+    "_create_comment_multi": [
+      "cls",
+      "text"
+    ],
+    "parse_comment": [
+      "cls",
+      "text"
+    ],
+    "_parse_comment_single": [
+      "cls",
+      "text"
+    ],
+    "_remove_middle_marker": [
+      "cls",
+      "line"
+    ],
+    "_parse_comment_multi": [
+      "cls",
+      "text"
+    ],
+    "comment_at_first_character": [
+      "cls",
+      "text"
+    ]
+  },
+  "AppleScriptCommentStyle": {
+    "SHORTHAND": [],
+    "SINGLE_LINE": [],
+    "INDENT_AFTER_SINGLE": [],
+    "MULTI_LINE": []
+  },
+  "AspxCommentStyle": {
+    "SHORTHAND": [],
+    "MULTI_LINE": []
+  },
+  "BatchFileCommentStyle": {
+    "SHORTHAND": [],
+    "SINGLE_LINE": [],
+    "INDENT_AFTER_SINGLE": []
+  },
+  "BibTexCommentStyle": {
+    "SHORTHAND": [],
+    "MULTI_LINE": [],
+    "SHEBANGS": []
+  },
+  "BladeCommentStyle": {
+    "_shorthand": [],
+    "MULTI_LINE": []
+  },
+  "CCommentStyle": {
+    "SHORTHAND": [],
+    "MULTI_LINE": [],
+    "INDENT_BEFORE_MIDDLE": [],
+    "INDENT_AFTER_MIDDLE": [],
+    "INDENT_BEFORE_END": []
+  },
+  "CppCommentStyle": {
+    "SHORTHAND": [],
+    "SINGLE_LINE": [],
+    "INDENT_AFTER_SINGLE": [],
+    "MULTI_LINE": [],
+    "INDENT_BEFORE_MIDDLE": [],
+    "INDENT_AFTER_MIDDLE": [],
+    "INDENT_BEFORE_END": [],
+    "SHEBANGS": []
+  },
+  "CppSingleCommentStyle": {
+    "SHORTHAND": [],
+    "SINGLE_LINE": [],
+    "INDENT_AFTER_SINGLE": [],
+    "SHEBANGS": []
+  },
+  "EmptyCommentStyle": {
+    "create_comment": [
+      "cls",
+      "text",
+      "force_multi"
+    ],
+    "parse_comment": [
+      "cls",
+      "text"
+    ],
+    "comment_at_first_character": [
+      "cls",
+      "text"
+    ]
+  },
+  "FortranCommentStyle": {
+    "SHORTHAND": [],
+    "SINGLE_LINE": [],
+    "INDENT_AFTER_SINGLE": []
+  },
+  "ModernFortranCommentStyle": {
+    "SHORTHAND": [],
+    "SINGLE_LINE": [],
+    "INDENT_AFTER_SINGLE": []
+  },
+  "FtlCommentStyle": {
+    "SHORTHAND": [],
+    "MULTI_LINE": []
+  },
+  "HandlebarsCommentStyle": {
+    "SHORTHAND": [],
+    "MULTI_LINE": []
+  },
+  "HaskellCommentStyle": {
+    "SHORTHAND": [],
+    "SINGLE_LINE": [],
+    "INDENT_AFTER_SINGLE": [],
+    "SHEBANGS": []
+  },
+  "HtmlCommentStyle": {
+    "SHORTHAND": [],
+    "MULTI_LINE": [],
+    "SHEBANGS": []
+  },
+  "JinjaCommentStyle": {
+    "SHORTHAND": [],
+    "MULTI_LINE": []
+  },
+  "JuliaCommentStyle": {
+    "SHORTHAND": [],
+    "SINGLE_LINE": [],
+    "INDENT_AFTER_SINGLE": [],
+    "MULTI_LINE": [],
+    "SHEBANGS": []
+  },
+  "LeanCommentStyle": {
+    "SHORTHAND": [],
+    "SINGLE_LINE": [],
+    "INDENT_AFTER_SINGLE": [],
+    "MULTI_LINE": [],
+    "INDENT_BEFORE_MIDDLE": [],
+    "INDENT_AFTER_MIDDLE": [],
+    "INDENT_BEFORE_END": []
+  },
+  "LispCommentStyle": {
+    "SHORTHAND": [],
+    "SINGLE_LINE": [],
+    "SINGLE_LINE_REGEXP": [],
+    "INDENT_AFTER_SINGLE": []
+  },
+  "M4CommentStyle": {
+    "SHORTHAND": [],
+    "SINGLE_LINE": [],
+    "INDENT_AFTER_SINGLE": []
+  },
+  "MlCommentStyle": {
+    "SHORTHAND": [],
+    "MULTI_LINE": [],
+    "INDENT_BEFORE_MIDDLE": [],
+    "INDENT_AFTER_MIDDLE": [],
+    "INDENT_BEFORE_END": []
+  },
+  "PascalCommentStyle": {
+    "SHORTHAND": [],
+    "SINGLE_LINE": [],
+    "INDENT_AFTER_SINGLE": [],
+    "MULTI_LINE": [],
+    "INDENT_AFTER_MIDDLE": []
+  },
+  "PlantUmlCommentStyle": {
+    "SHORTHAND": [],
+    "SINGLE_LINE": [],
+    "INDENT_AFTER_SINGLE": [],
+    "MULTI_LINE": [],
+    "INDENT_BEFORE_MIDDLE": [],
+    "INDENT_AFTER_MIDDLE": [],
+    "INDENT_BEFORE_END": []
+  },
+  "PythonCommentStyle": {
+    "SHORTHAND": [],
+    "SINGLE_LINE": [],
+    "INDENT_AFTER_SINGLE": [],
+    "SHEBANGS": []
+  },
+  "ReStructedTextCommentStyle": {
+    "SHORTHAND": [],
+    "SINGLE_LINE": [],
+    "INDENT_AFTER_SINGLE": []
+  },
+  "SemicolonCommentStyle": {
+    "SHORTHAND": [],
+    "SINGLE_LINE": [],
+    "INDENT_AFTER_SINGLE": []
+  },
+  "TexCommentStyle": {
+    "SHORTHAND": [],
+    "SINGLE_LINE": [],
+    "INDENT_AFTER_SINGLE": [],
+    "SHEBANGS": []
+  },
+  "UncommentableCommentStyle": {},
+  "UnixManCommentStyle": {
+    "SHORTHAND": [],
+    "SINGLE_LINE": [],
+    "INDENT_AFTER_SINGLE": []
+  },
+  "VelocityCommentStyle": {
+    "SHORTHAND": [],
+    "MULTI_LINE": []
+  },
+  "VimCommentStyle": {
+    "SHORTHAND": [],
+    "SINGLE_LINE": [],
+    "INDENT_AFTER_SINGLE": []
+  },
+  "XQueryCommentStyle": {
+    "SHORTHAND": [],
+    "MULTI_LINE": [],
+    "INDENT_BEFORE_MIDDLE": [],
+    "INDENT_AFTER_MIDDLE": [],
+    "INDENT_BEFORE_END": []
+  },
+  "EXTENSION_COMMENT_STYLE_MAP": [],
+  "EXTENSION_COMMENT_STYLE_MAP_LOWERCASE": [],
+  "FILENAME_COMMENT_STYLE_MAP": [],
+  "FILENAME_COMMENT_STYLE_MAP_LOWERCASE": [],
+  "_all_style_classes": [],
+  "_result": [],
+  "NAME_STYLE_MAP": [],
+  "get_comment_style": [
+    "path"
+  ],
+  "is_uncommentable": [
+    "path"
+  ],
+  "has_style": [
+    "path"
+  ],
+  "_VERSION_TEXT": [],
+  "_HELP": [],
+  "main": [
+    "ctx",
+    "debug",
+    "suppress_deprecation",
+    "include_submodules",
+    "include_meson_subprojects",
+    "no_multiprocessing",
+    "root"
+  ],
+  "_OUTPUT_MUTEX": [],
+  "lint": [
+    "obj",
+    "quiet",
+    "json",
+    "plain",
+    "lines"
+  ],
+  "_similar_spdx_identifiers": [
+    "identifier"
+  ],
+  "_print_incorrect_spdx_identifier": [
+    "identifier",
+    "out"
+  ],
+  "_already_exists": [
+    "path"
+  ],
+  "_not_found": [
+    "path"
+  ],
+  "_could_not_download": [
+    "identifier"
+  ],
+  "_successfully_downloaded": [
+    "destination"
+  ],
+  "_ALL_MUTEX": [],
+  "download": [
+    "obj",
+    "licenses",
+    "all_",
+    "output",
+    "source"
+  ],
+  "ClickObj": {
+    "project": [
+      "self"
+    ]
+  },
+  "MutexOption": {
+    "__init__": [
+      "self"
+    ],
+    "_get_long_name": [
+      "ctx",
+      "name"
+    ],
+    "handle_parse_result": [
+      "self",
+      "ctx",
+      "opts",
+      "args"
+    ]
+  },
+  "spdx_identifier": [
+    "text"
+  ],
+  "_is_annotated_by_precedence": [
+    "path",
+    "skip_global_precedences",
+    "global_licensing"
+  ],
+  "test_mandatory_option_required": [
+    "copyright_",
+    "license_",
+    "contributor"
+  ],
+  "all_paths": [
+    "paths",
+    "recursive",
+    "project"
+  ],
+  "verify_paths_comment_style": [
+    "style",
+    "fallback_dot_license",
+    "skip_unrecognised",
+    "force_dot_license",
+    "paths"
+  ],
+  "verify_paths_line_handling": [
+    "single_line",
+    "multi_line",
+    "forced_style",
+    "paths"
+  ],
+  "get_template": [
+    "template_str",
+    "project"
+  ],
+  "get_years": [
+    "year",
+    "exclude_year"
+  ],
+  "get_reuse_info": [
+    "copyrights",
+    "licenses",
+    "contributors",
+    "copyright_prefix",
+    "years"
+  ],
+  "_YEAR_MUTEX": [],
+  "_LINE_MUTEX": [],
+  "_STYLE_MUTEX": [],
+  "_REPLACE_MUTEX": [],
+  "_SKIP_GLOBAL_MUTEX": [],
+  "annotate": [
+    "obj",
+    "copyrights",
+    "licenses",
+    "contributors",
+    "years",
+    "style",
+    "copyright_prefix",
+    "template_str",
+    "exclude_year",
+    "merge_copyrights",
+    "single_line",
+    "multi_line",
+    "recursive",
+    "no_replace",
+    "replace_license",
+    "force_dot_license",
+    "fallback_dot_license",
+    "skip_unrecognised",
+    "skip_existing",
+    "skip_global",
+    "skip_precedence",
+    "paths"
+  ],
+  "convert_dep5": [
+    "obj"
+  ],
+  "spdx": [
+    "obj",
+    "output",
+    "add_license_concluded",
+    "creator_person",
+    "creator_organization"
+  ],
+  "supported_licenses": [
+    "_obj",
+    "format_json"
+  ],
+  "lint_file": [
+    "obj",
+    "quiet",
+    "lines",
+    "files"
+  ]
+}
