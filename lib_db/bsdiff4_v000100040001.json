@@ -1,0 +1,272 @@
+{
+  "human_bytes": [
+    "n"
+  ],
+  "show_filesizes": [],
+  "main_bsdiff4": [],
+  "show_patch": [
+    "patch_path",
+    "verbose"
+  ],
+  "main_bspatch4": [],
+  "UNDER_QEMU": [],
+  "GIL_DISABLED": [],
+  "TestCoreInt64": {
+    "test_special_values": [
+      "self"
+    ],
+    "test_errors": [
+      "self"
+    ],
+    "test_random": [
+      "self"
+    ]
+  },
+  "TestSuffixArray": {
+    "test_basic": [
+      "self"
+    ],
+    "test_equal_bytes": [
+      "self"
+    ],
+    "check_data": [
+      "self",
+      "data"
+    ],
+    "test_repeated_groups": [
+      "self"
+    ],
+    "test_two_element_group": [
+      "self"
+    ],
+    "test_random": [
+      "self"
+    ]
+  },
+  "ROUND_TRIP_CASES": [],
+  "TestCoreDiffPatch": {
+    "round_trip": [
+      "self",
+      "src",
+      "dst"
+    ],
+    "test_cases": [
+      "self"
+    ],
+    "test_diff_blocks": [
+      "self"
+    ],
+    "test_diff_adjust_overlap": [
+      "self"
+    ],
+    "test_patch": [
+      "self"
+    ],
+    "test_x_y_out_of_range": [
+      "self"
+    ],
+    "test_negative_destination_length": [
+      "self"
+    ],
+    "test_invalid_control_block": [
+      "self"
+    ],
+    "test_final_state": [
+      "self"
+    ],
+    "test_src_pos_outside_source": [
+      "self"
+    ],
+    "test_src_pos_overflow": [
+      "self"
+    ]
+  },
+  "TestHelpers": {
+    "test_header": [
+      "self"
+    ],
+    "test_control_block": [
+      "self"
+    ]
+  },
+  "Example": {
+    "src": [],
+    "dst": [],
+    "data": [],
+    "header_sizes": [],
+    "control_tuples": [],
+    "diff_block": [],
+    "extra_block": []
+  },
+  "TestExample": {
+    "test_compatibility": [
+      "self"
+    ],
+    "test_header": [
+      "self"
+    ],
+    "test_read_patch": [
+      "self"
+    ],
+    "test_write_patch": [
+      "self"
+    ]
+  },
+  "TestFormat": {
+    "test_example": [
+      "self"
+    ],
+    "round_trip": [
+      "self",
+      "src",
+      "dst"
+    ],
+    "test_cases": [
+      "self"
+    ],
+    "test_extra": [
+      "self"
+    ],
+    "test_random": [
+      "self"
+    ],
+    "test_large": [
+      "self"
+    ]
+  },
+  "EMPTY": [],
+  "TestFormatErrors": {
+    "test_invalid_header": [
+      "self"
+    ],
+    "test_truncated_patch": [
+      "self"
+    ],
+    "test_negative_lengths": [
+      "self"
+    ],
+    "test_invalid_blocks": [
+      "self"
+    ],
+    "test_header_overflow": [
+      "self"
+    ]
+  },
+  "TestMutate": {
+    "test_truncated_patch": [
+      "self"
+    ],
+    "test_mutated_patch": [
+      "self"
+    ]
+  },
+  "TestFile": {
+    "setUp": [
+      "self"
+    ],
+    "tearDown": [
+      "self"
+    ],
+    "path": [
+      "self",
+      "fn"
+    ],
+    "assert_same_file_content": [
+      "self",
+      "fn1",
+      "fn2"
+    ],
+    "round_trip": [
+      "self"
+    ],
+    "write_data": [
+      "self",
+      "fn",
+      "data"
+    ],
+    "test_cases": [
+      "self"
+    ],
+    "test_inplace": [
+      "self"
+    ]
+  },
+  "NTHREADS": [],
+  "run_concurrently": [
+    "func"
+  ],
+  "TestFreeThreading": {
+    "test_gil_disabled": [
+      "self"
+    ],
+    "test_core_functions": [
+      "self"
+    ],
+    "test_format_functions": [
+      "self"
+    ]
+  },
+  "run": [
+    "verbosity"
+  ],
+  "MAGIC": [],
+  "pack_header": [
+    "control_len",
+    "diff_len",
+    "dst_len"
+  ],
+  "unpack_header": [
+    "header"
+  ],
+  "pack_control_block": [],
+  "unpack_control_block": [
+    "control_block"
+  ],
+  "check_size": [
+    "size"
+  ],
+  "read_exact": [
+    "fi",
+    "size"
+  ],
+  "read_patch": [
+    "fi"
+  ],
+  "write_patch": [
+    "fo",
+    "dst_len",
+    "control_block",
+    "diff_block",
+    "extra_block"
+  ],
+  "read_data": [
+    "path"
+  ],
+  "diff": [
+    "src_bytes",
+    "dst_bytes"
+  ],
+  "file_diff": [
+    "src_path",
+    "dst_path",
+    "patch_path"
+  ],
+  "patch": [
+    "src_bytes",
+    "patch_bytes"
+  ],
+  "file_patch_inplace": [
+    "path",
+    "patch_path"
+  ],
+  "file_patch": [
+    "src_path",
+    "dst_path",
+    "patch_path"
+  ],
+  "__version__": [],
+  "__all__": [],
+  "test": [
+    "verbosity"
+  ]
+}
